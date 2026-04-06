@@ -1,0 +1,15 @@
+Coloca aquí las imágenes de las preguntas del examen.
+
+Ejemplo de uso en el JSON:
+{
+  "id": 9,
+  "text": "De acuerdo a la imagen, ¿cuántos cubos faltan?",
+  "image": "/img/pregunta9.png",
+  "options": {"A": "2", "B": "5", "C": "3", "D": "1"},
+  "answer": "C"
+}
+
+Las imágenes deben estar en esta carpeta (public/img/) y en el JSON
+se referencian como "/img/nombre_archivo.png"
+
+Formatos soportados: .png, .jpg, .jpeg, .gif, .webp

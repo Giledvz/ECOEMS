@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Académico GV</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background:#fafaf8; color:#1a1a1a; }
+  .container { max-width:900px; margin:0 auto; padding:24px; }
+  .header { display:flex; align-items:center; gap:12px; margin-bottom:20px; }
+  .logo { width:40px; height:40px; border-radius:10px; background:#ebf4ff; display:flex; align-items:center; justify-content:center; font-weight:600; font-size:14px; color:#2c5282; }
+  .header h1 { font-size:20px; font-weight:600; }
+  .header .sub { font-size:12px; color:#888; }
+  .tabs { display:flex; gap:6px; margin-bottom:20px; }
+  .tab { padding:8px 16px; border-radius:8px; font-size:13px; font-weight:500; cursor:pointer; border:1px solid #ddd; background:#fff; color:#666; }
+  .tab.active { background:#ebf4ff; color:#2c5282; border-color:#2c5282; }
+  .drop-zone { border:2px dashed #ccc; border-radius:12px; padding:40px 20px; text-align:center; cursor:pointer; margin-bottom:16px; transition:all .2s; }
+  .drop-zone:hover, .drop-zone.over { border-color:#2c5282; background:#ebf4ff; }
+  .drop-zone p { font-size:14px; color:#666; }
+  .drop-zone small { font-size:12px; color:#999; }
+  .metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:24px; }
+  .metric { background:#f5f5f0; border-radius:10px; padding:14px 16px; }
+  .metric .label { font-size:11px; color:#888; text-transform:uppercase; letter-spacing:.3px; }
+  .metric .value { font-size:24px; font-weight:600; margin-top:4px; }
+  .metric .detail { font-size:11px; color:#999; margin-top:2px; }
+  .section-title { font-size:15px; font-weight:600; margin:24px 0 10px; }
+  .chart-wrap { position:relative; margin-bottom:24px; }
+  .chart-wrap canvas { display:block; width:100%!important; height:100%!important; }
+  .legend { display:flex; gap:14px; font-size:11px; color:#888; margin-bottom:10px; flex-wrap:wrap; }
+  .legend span { display:flex; align-items:center; gap:4px; }
+  .legend .dot { width:10px; height:10px; border-radius:3px; }
+  .bar-row { display:flex; align-items:center; gap:10px; margin-bottom:6px; }
+  .bar-label { font-size:12px; color:#666; width:150px; text-align:right; flex-shrink:0; }
+  .bar-track { flex:1; height:18px; background:#eee; border-radius:9px; overflow:hidden; }
+  .bar-fill { height:100%; border-radius:9px; transition:width .5s; }
+  .bar-pct { font-size:12px; font-weight:600; width:40px; }
+  .heatmap { overflow-x:auto; margin-bottom:24px; }
+  .ranking { margin-bottom:24px; }
+  .rank-row { display:flex; align-items:center; gap:10px; padding:8px 12px; border-radius:6px; cursor:pointer; }
+  .rank-row:hover { background:#f0f0f0; }
+  .rank-row .pos { font-size:12px; color:#999; width:24px; }
+  .rank-row .name { font-size:13px; flex:1; }
+  .rank-row .group-badge { font-size:11px; color:#888; padding:2px 8px; border-radius:4px; background:#f0f0f0; }
+  .rank-row .score { font-size:13px; font-weight:600; width:40px; text-align:right; }
+  .student-header { display:flex; align-items:center; gap:12px; margin-bottom:20px; }
+  .avatar { width:44px; height:44px; border-radius:50%; background:#ebf4ff; display:flex; align-items:center; justify-content:center; font-weight:600; font-size:15px; color:#2c5282; }
+  .student-header select { font-size:13px; padding:6px 10px; border-radius:8px; border:1px solid #ddd; }
+  .diagnosis { background:#fff; border:1px solid #eee; border-radius:12px; padding:16px 20px; margin-bottom:20px; }
+  .diagnosis p { font-size:13px; color:#666; margin-bottom:6px; }
+  .green { color:#1D9E75; } .amber { color:#EF9F27; } .red { color:#E24B4A; } .blue { color:#378ADD; }
+  .btn { padding:8px 16px; border:1px solid #ddd; border-radius:8px; font-size:12px; cursor:pointer; background:#fff; }
+  .btn:hover { background:#f0f0f0; }
+  .btn-pdf { background:#2c5282; color:#fff; border-color:#2c5282; }
+  .btn-pdf:hover { background:#1e3a5f; }
+  .q-grid { display:grid; gap:2px; font-size:11px; min-width:420px; }
+  .q-grid .hdr { font-size:10px; color:#999; padding:4px; }
+  .q-grid .cell { padding:4px; text-align:center; border-radius:3px; font-weight:500; }
+  .info-box { background:#ebf4ff; border-radius:10px; padding:16px; margin-bottom:16px; font-size:13px; color:#2c5282; }
+  .nav-btns { display:flex; gap:8px; margin-bottom:24px; flex-wrap:wrap; }
+  .hidden { display:none; }
+  @media print {
+    body { background:#fff; }
+    .no-print { display:none !important; }
+    .container { max-width:100%; padding:16px; }
+    .chart-wrap { break-inside:avoid; }
+    .metrics { break-inside:avoid; }
+    .rank-row { cursor:default; }
+    .rank-row:hover { background:transparent; }
+    .diagnosis { break-inside:avoid; }
+    .section-title { break-after:avoid; }
+    .bar-row { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">GV</div>
+    <div><h1>Dashboard Académico</h1><div class="sub">Análisis de rendimiento por examen</div></div>
+  </div>
+
+  <div id="stepJson">
+    <div class="info-box">Paso 1: Carga el JSON del examen (contiene las respuestas correctas y los temas)</div>
+    <div class="drop-zone" id="jsonZone" onclick="document.getElementById('jsonInput').click()">
+      <p>Arrastra el JSON del examen aquí o haz clic</p>
+      <small>examen_diagnostico_bachillerato.json</small>
+      <input type="file" id="jsonInput" accept=".json" style="display:none" />
+    </div>
+  </div>
+
+  <div id="stepCsv" class="hidden">
+    <div class="info-box" id="jsonStatus"></div>
+    <div class="drop-zone" id="csvZone" onclick="document.getElementById('csvInput').click()">
+      <p>Paso 2: Arrastra el CSV de resultados aquí o haz clic</p>
+      <small>resultados_examen.csv</small>
+      <input type="file" id="csvInput" accept=".csv" style="display:none" />
+    </div>
+  </div>
+
+  <div id="dashboard" class="hidden">
+    <div class="tabs no-print">
+      <div class="tab active" id="tabGeneral" onclick="switchView('general')">General</div>
+      <div class="tab" id="tabIndividual" onclick="switchView('individual')">Individual</div>
+    </div>
+
+    <div id="viewGeneral">
+      <div id="badgesArea" class="no-print" style="display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;"></div>
+      <div class="metrics" id="metricsArea"></div>
+
+      <div class="section-title">Distribución de puntajes</div>
+      <div class="chart-wrap" style="height:220px;"><canvas id="distChart"></canvas></div>
+
+      <div class="section-title">Rendimiento por tema</div>
+      <div class="legend" id="groupLegend"></div>
+      <div class="chart-wrap" style="height:280px;"><canvas id="topicBarChart"></canvas></div>
+
+      <div class="section-title">Mapa de calor · aciertos por pregunta</div>
+      <div class="heatmap" id="heatmapArea"></div>
+
+      <div class="section-title">Comparación entre grupos</div>
+      <div class="legend" id="radarLegend"></div>
+      <div class="chart-wrap" style="height:380px;"><canvas id="radarChart"></canvas></div>
+
+      <div class="section-title">Temas críticos (menos del 50% de aciertos)</div>
+      <div id="criticalTopics" style="margin-bottom:24px;"></div>
+
+      <div class="section-title">Ranking de alumnos</div>
+      <div class="ranking" id="rankingArea"></div>
+
+      <div class="nav-btns no-print">
+        <button class="btn btn-pdf" onclick="exportPDF()">Exportar PDF general</button>
+        <button class="btn" onclick="resetAll()">Cargar otro examen</button>
+      </div>
+    </div>
+
+    <div id="viewIndividual" class="hidden">
+      <div class="student-header" id="studentHeader"></div>
+      <div class="metrics" id="studentMetrics"></div>
+
+      <div class="section-title">Perfil por tema</div>
+      <div class="legend" id="studentRadarLegend"></div>
+      <div class="chart-wrap" style="height:380px;"><canvas id="studentRadarChart"></canvas></div>
+
+      <div class="section-title">Rendimiento por tema</div>
+      <div id="studentBars"></div>
+
+      <div class="section-title">Detalle pregunta por pregunta</div>
+      <div style="overflow-x:auto"><div class="q-grid" id="questionGrid"></div></div>
+
+      <div class="section-title">Diagnóstico</div>
+      <div class="diagnosis" id="diagnosisArea"></div>
+
+      <div class="nav-btns no-print">
+        <button class="btn btn-pdf" onclick="exportStudentHTML()">Descargar reporte del alumno</button>
+        <button class="btn btn-pdf" onclick="exportPDF()">Imprimir / PDF</button>
+        <button class="btn" onclick="switchView('general')">← Vista general</button>
+        <button class="btn" id="prevStudentBtn" onclick="navStudent(-1)">← Anterior</button>
+        <button class="btn" id="nextStudentBtn" onclick="navStudent(1)">Siguiente →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const COLORS = ['#378ADD','#1D9E75','#EF9F27','#534AB7','#E24B4A','#D4537E'];
+let examData = null;
+let examDate = '';
+let results = [];
+
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  const months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  const d = new Date(dateStr + 'T12:00:00');
+  if (isNaN(d)) return dateStr;
+  return `${d.getDate()} de ${months[d.getMonth()]} de ${d.getFullYear()}`;
+}
+let groupStats = [];
+let allTopicStats = [];
+let questionCols = [];
+let answerKey = {};
+let topicMap = {};
+let selectedStudent = 0;
+let charts = {};
+
+document.getElementById('jsonInput').addEventListener('change', e => loadJSON(e.target.files[0]));
+document.getElementById('csvInput').addEventListener('change', e => loadCSV(e.target.files[0]));
+['jsonZone','csvZone'].forEach(id => {
+  const el = document.getElementById(id);
+  el.addEventListener('dragover', e => { e.preventDefault(); el.classList.add('over'); });
+  el.addEventListener('dragleave', () => el.classList.remove('over'));
+  el.addEventListener('drop', e => { e.preventDefault(); el.classList.remove('over'); const f = e.dataTransfer.files[0]; if (id === 'jsonZone') loadJSON(f); else loadCSV(f); });
+});
+
+function loadJSON(file) {
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      examData = JSON.parse(e.target.result);
+      answerKey = {}; topicMap = {};
+      examDate = examData.exam?.date || new Date().toISOString().split('T')[0];
+      (examData.exam?.sections || []).forEach(sec => { sec.questions.forEach(q => { answerKey['P'+q.id] = q.answer; topicMap['P'+q.id] = sec.subject; }); });
+      document.getElementById('stepJson').classList.add('hidden');
+      document.getElementById('stepCsv').classList.remove('hidden');
+      document.getElementById('jsonStatus').textContent = `${examData.exam?.title || 'Examen'} — ${formatDate(examDate)} — ${Object.keys(answerKey).length} preguntas cargadas`;
+    } catch(err) { alert('Error: ' + err.message); }
+  };
+  reader.readAsText(file);
+}
+
+function loadCSV(file) {
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    const lines = e.target.result.trim().split('\n').filter(l => l.trim());
+    if (lines.length < 2) { alert('CSV vacío'); return; }
+    const headers = lines[0].split(',').map(h => h.trim());
+    questionCols = headers.filter(h => /^P\d+$/i.test(h));
+    const rows = lines.slice(1).map(line => { const vals = line.split(',').map(v => v.trim()); const obj = {}; headers.forEach((h,i) => obj[h] = vals[i] || ''); return obj; });
+    results = rows.map(row => {
+      const answers = {}; let correct = 0;
+      questionCols.forEach(q => { const s = (row[q]||'').toUpperCase(), c = (answerKey[q]||'').toUpperCase(), ok = s === c && s !== ''; if (ok) correct++; answers[q] = { student: s, correct: c, isCorrect: ok }; });
+      return { name: row['Alumno']||row['alumno']||'Sin nombre', group: row['Grupo']||row['grupo']||'Sin grupo', answers, correct, total: questionCols.length, score: questionCols.length > 0 ? Math.round((correct/questionCols.length)*100) : 0, timeMin: parseInt(row['Tiempo_min'])||null };
+    });
+    computeStats();
+    document.getElementById('stepCsv').classList.add('hidden');
+    document.getElementById('dashboard').classList.remove('hidden');
+    renderGeneral();
+  };
+  reader.readAsText(file);
+}
+
+function computeStats() {
+  const groups = {};
+  results.forEach(r => { if (!groups[r.group]) groups[r.group] = []; groups[r.group].push(r); });
+  groupStats = Object.entries(groups).map(([name, members]) => ({ name, members, avg: Math.round(members.reduce((s,m) => s + m.correct, 0) / members.length), topicStats: getTopicStats(members) }));
+  allTopicStats = getTopicStats(results);
+}
+
+function getTopicStats(res) {
+  const topics = {};
+  questionCols.forEach(q => { const t = topicMap[q]||'Sin tema'; if (!topics[t]) topics[t] = {correct:0,total:0}; res.forEach(r => { topics[t].total++; if (r.answers[q]?.isCorrect) topics[t].correct++; }); });
+  return Object.entries(topics).map(([name,d]) => ({ name, pct: d.total > 0 ? Math.round(d.correct/d.total*100) : 0 }));
+}
+
+function getStudentTopicStats(student) {
+  const topics = {};
+  questionCols.forEach(q => { const t = topicMap[q]||'Sin tema'; if (!topics[t]) topics[t] = {correct:0,total:0}; topics[t].total++; if (student.answers[q]?.isCorrect) topics[t].correct++; });
+  return Object.entries(topics).map(([name,d]) => ({ name, pct: d.total > 0 ? Math.round(d.correct/d.total*100) : 0 }));
+}
+
+function switchView(v) {
+  document.getElementById('viewGeneral').classList.toggle('hidden', v !== 'general');
+  document.getElementById('viewIndividual').classList.toggle('hidden', v !== 'individual');
+  document.getElementById('tabGeneral').classList.toggle('active', v === 'general');
+  document.getElementById('tabIndividual').classList.toggle('active', v === 'individual');
+  if (v === 'individual') renderIndividual();
+}
+function selectStudent(i) { selectedStudent = i; switchView('individual'); }
+function navStudent(d) { selectedStudent = Math.max(0, Math.min(results.length-1, selectedStudent+d)); renderIndividual(); }
+function resetAll() { examData=null; examDate=''; results=[]; groupStats=[]; allTopicStats=[]; document.getElementById('dashboard').classList.add('hidden'); document.getElementById('stepCsv').classList.add('hidden'); document.getElementById('stepJson').classList.remove('hidden'); Object.values(charts).forEach(c => c.destroy()); charts={}; }
+function exportPDF() { window.print(); }
+
+function exportStudentHTML() {
+  const s = results[selectedStudent];
+  if (!s) return;
+  const sts = getStudentTopicStats(s);
+  const allSorted = [...results].sort((a,b) => b.correct - a.correct);
+  const globalRank = allSorted.findIndex(r => r.name === s.name) + 1;
+  const groupMembers = results.filter(r => r.group === s.group).sort((a,b) => b.correct - a.correct);
+  const groupRank = groupMembers.findIndex(r => r.name === s.name) + 1;
+  const groupAvg = Math.round(groupMembers.reduce((sum,r) => sum+r.correct,0) / groupMembers.length);
+  const vs = s.correct - groupAvg;
+  const beatsCount = results.length - globalRank;
+  const beatsPct = results.length > 1 ? Math.round((beatsCount / (results.length - 1)) * 100) : 100;
+  const bestTopic = sts.length > 0 ? sts.reduce((a,b) => a.pct > b.pct ? a : b) : null;
+  const worstTopic = sts.length > 0 ? sts.reduce((a,b) => a.pct < b.pct ? a : b) : null;
+  const timeStr = s.timeMin ? (s.timeMin >= 60 ? Math.floor(s.timeMin/60) + 'h ' + (s.timeMin%60) + 'm' : s.timeMin + ' min') : '—';
+  const gts = getTopicStats(groupMembers);
+  const strengths = sts.filter(t => t.pct>=70).map(t => t.name);
+  const inProg = sts.filter(t => t.pct>=50&&t.pct<70).map(t => t.name);
+  const weak = sts.filter(t => t.pct<50).map(t => t.name);
+  const initials = s.name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
+  const examTitle = examData?.exam?.title || 'Examen';
+  const examGroup = examData?.exam?.group || s.group;
+
+  // Build question detail rows
+  let qRows = '';
+  questionCols.forEach(q => {
+    const a = s.answers[q];
+    const topic = (topicMap[q]||'—').substring(0,15);
+    let cells = '';
+    ['A','B','C','D'].forEach(opt => {
+      let bg='transparent',border='1px solid #eee',color='#ccc';
+      if (opt===a.correct&&opt===a.student) { bg='rgba(29,158,117,0.12)';border='1px solid rgba(29,158,117,0.3)';color='#1D9E75'; }
+      else if (opt===a.student&&opt!==a.correct) { bg='rgba(226,75,74,0.1)';border='1px solid rgba(226,75,74,0.3)';color='#E24B4A'; }
+      else if (opt===a.correct) { border='1px dashed #1D9E75';color='#1D9E75'; }
+      cells += '<div style="padding:4px;text-align:center;background:'+bg+';border:'+border+';border-radius:3px;color:'+color+';font-weight:500;">'+opt+'</div>';
+    });
+    const icon = a.isCorrect ? '✓' : '✗';
+    const iconColor = a.isCorrect ? '#1D9E75' : '#E24B4A';
+    qRows += '<div style="padding:3px;color:#666;font-size:11px;">'+q+'</div><div style="padding:3px;color:#999;font-size:10px;overflow:hidden;white-space:nowrap;">'+topic+'</div>'+cells+'<div style="padding:3px;text-align:center;color:'+iconColor+';font-weight:600;font-size:11px;">'+icon+'</div>';
+  });
+
+  // Build bars HTML
+  const barsHTML = sts.map(t => {
+    const c = t.pct>=70?'#1D9E75':t.pct>=50?'#EF9F27':'#E24B4A';
+    return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;"><span style="font-size:12px;color:#666;width:150px;text-align:right;flex-shrink:0;">'+t.name+'</span><div style="flex:1;height:18px;background:#eee;border-radius:9px;overflow:hidden;"><div style="width:'+t.pct+'%;height:100%;border-radius:9px;background:'+c+';"></div></div><span style="font-size:12px;font-weight:600;width:40px;color:'+c+';">'+t.pct+'%</span></div>';
+  }).join('');
+
+  // Diagnosis
+  let diag = '';
+  if (strengths.length) diag += '<p style="font-size:13px;color:#666;margin-bottom:6px;"><strong style="color:#1D9E75;">Fortalezas:</strong> '+strengths.join(', ')+'</p>';
+  if (inProg.length) diag += '<p style="font-size:13px;color:#666;margin-bottom:6px;"><strong style="color:#EF9F27;">En proceso:</strong> '+inProg.join(', ')+'</p>';
+  if (weak.length) diag += '<p style="font-size:13px;color:#666;margin-bottom:6px;"><strong style="color:#E24B4A;">Requiere atención:</strong> '+weak.join(', ')+'</p>';
+  if (!diag) diag = '<p style="color:#999;">Sin datos suficientes.</p>';
+
+  const html = `<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Reporte - ${s.name} - ${formatDate(examDate)}</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"><\/script>
+<style>*{margin:0;padding:0;box-sizing:border-box;}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fafaf8;color:#1a1a1a;padding:24px;max-width:800px;margin:0 auto;}
+.metric{background:#f5f5f0;border-radius:10px;padding:14px 16px;}.metric .label{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.3px;}.metric .value{font-size:24px;font-weight:600;margin-top:4px;}.metric .detail{font-size:11px;color:#999;margin-top:2px;}
+.green{color:#1D9E75;}.amber{color:#EF9F27;}.red{color:#E24B4A;}.blue{color:#378ADD;}
+h2{font-size:15px;font-weight:600;margin:24px 0 10px;}
+@media print{body{padding:16px;}}</style></head><body>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+<div style="width:44px;height:44px;border-radius:50%;background:#ebf4ff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;color:#2c5282;">${initials}</div>
+<div><div style="font-size:20px;font-weight:600;">${s.name}</div><div style="font-size:12px;color:#888;">${examGroup} — ${examTitle} — ${formatDate(examDate)}</div></div></div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0;">
+<div class="metric"><div class="label">Aciertos</div><div class="value">${s.correct}/${s.total}</div></div>
+<div class="metric"><div class="label">Mejor materia</div><div class="value green" style="font-size:16px;">${bestTopic ? bestTopic.name : '—'}</div><div class="detail">${bestTopic ? bestTopic.pct + '% de acierto' : ''}</div></div>
+<div class="metric"><div class="label">Peor materia</div><div class="value red" style="font-size:16px;">${worstTopic ? worstTopic.name : '—'}</div><div class="detail">${worstTopic ? worstTopic.pct + '% de acierto' : ''}</div></div>
+<div class="metric"><div class="label">Tiempo</div><div class="value">${timeStr}</div></div>
+<div class="metric"><div class="label">Nivel en el grupo</div><div class="value blue">${beatsPct}%</div><div class="detail">Supera al ${beatsPct}% de sus compañeros</div></div>
+<div class="metric"><div class="label">Posición</div><div class="value blue">${globalRank}/${results.length}</div><div class="detail">${groupRank}/${groupMembers.length} en ${examGroup}</div></div>
+<div class="metric"><div class="label">vs promedio grupo</div><div class="value ${vs>=0?'green':'red'}">${vs>=0?'+':''}${vs}</div><div class="detail">Prom: ${groupAvg}</div></div>
+<div class="metric"><div class="label">Materias dominadas</div><div class="value green">${sts.filter(t=>t.pct>=70).length}</div><div class="detail">de ${sts.length} materias</div></div></div>
+<h2>Perfil por tema</h2>
+<div style="display:flex;gap:14px;font-size:11px;color:#888;margin-bottom:8px;"><span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:3px;background:#378ADD;"></span>${s.name}</span><span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:3px;background:rgba(0,0,0,0.2);"></span>Promedio ${examGroup}</span></div>
+<div style="position:relative;height:380px;margin-bottom:24px;"><canvas id="radar"></canvas></div>
+<h2>Rendimiento por tema</h2>
+${barsHTML}
+<div style="display:flex;gap:14px;margin-top:8px;font-size:11px;color:#999;">
+<span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:#1D9E75;display:inline-block;"></span>Domina (≥70%)</span>
+<span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:#EF9F27;display:inline-block;"></span>En proceso (50-69%)</span>
+<span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:#E24B4A;display:inline-block;"></span>Requiere atención (<50%)</span></div>
+<h2>Detalle pregunta por pregunta</h2>
+<div style="overflow-x:auto;margin-bottom:24px;"><div style="display:grid;grid-template-columns:44px 80px repeat(4,1fr) 40px;gap:2px;font-size:11px;min-width:420px;">
+<div style="font-size:10px;color:#999;padding:4px;">N°</div><div style="font-size:10px;color:#999;padding:4px;">Tema</div><div style="font-size:10px;color:#999;padding:4px;text-align:center;">A</div><div style="font-size:10px;color:#999;padding:4px;text-align:center;">B</div><div style="font-size:10px;color:#999;padding:4px;text-align:center;">C</div><div style="font-size:10px;color:#999;padding:4px;text-align:center;">D</div><div style="font-size:10px;color:#999;padding:4px;"></div>
+${qRows}</div></div>
+<h2>Diagnóstico</h2>
+<div style="background:#fff;border:1px solid #eee;border-radius:12px;padding:16px 20px;margin-bottom:20px;">${diag}</div>
+<p style="font-size:11px;color:#ccc;text-align:center;margin-top:24px;">Generado por Dashboard Académico GV — ${formatDate(examDate)}</p>
+<script>
+new Chart(document.getElementById('radar'),{type:'radar',data:{labels:${JSON.stringify(sts.map(t=>t.name))},datasets:[{label:'${s.name}',data:${JSON.stringify(sts.map(t=>t.pct))},borderColor:'#378ADD',backgroundColor:'rgba(55,138,221,0.1)',pointRadius:3,borderWidth:2},{label:'Promedio',data:${JSON.stringify(sts.map(st=>{const m=gts.find(t=>t.name===st.name);return m?m.pct:0;}))},borderColor:'rgba(0,0,0,0.2)',backgroundColor:'rgba(0,0,0,0.03)',pointRadius:2,borderWidth:1,borderDash:[4,4]}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{r:{suggestedMin:0,suggestedMax:100,ticks:{font:{size:10},backdropColor:'transparent'},pointLabels:{font:{size:11}}}}}});
+<\/script></body></html>`;
+
+  const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Reporte_' + s.name.replace(/\s+/g, '_') + '_' + examDate + '.html';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function renderGeneral() {
+  const sorted = [...results].sort((a,b) => b.correct - a.correct);
+  const avg = Math.round(results.reduce((s,r) => s+r.correct,0) / results.length);
+  const best = sorted[0];
+  const worst = sorted[sorted.length-1];
+  let hardest = { q:'—', pct:100 };
+  questionCols.forEach(q => { const pct = Math.round(results.filter(r => r.answers[q]?.isCorrect).length/results.length*100); if (pct < hardest.pct) hardest = {q,pct}; });
+  const weakest = allTopicStats.length > 0 ? allTopicStats.reduce((a,b) => a.pct < b.pct ? a : b).name : '—';
+
+  // Median
+  const scores = results.map(r => r.correct).sort((a,b) => a-b);
+  const median = scores.length % 2 === 0 ? Math.round((scores[scores.length/2-1] + scores[scores.length/2]) / 2) : scores[Math.floor(scores.length/2)];
+
+  document.getElementById('badgesArea').innerHTML = `
+    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#ebf4ff;color:#2c5282;font-weight:500;">${formatDate(examDate)}</span>
+    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#f0f0f0;color:#666;">${results.length} alumnos</span>
+    ${groupStats.map(g => `<span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#f0f0f0;color:#666;">${g.name} · ${g.members.length}</span>`).join('')}
+    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#f0f0f0;color:#666;">${questionCols.length} preguntas</span>`;
+
+  document.getElementById('metricsArea').innerHTML = `
+    <div class="metric"><div class="label">Promedio aciertos</div><div class="value">${avg}</div><div class="detail">de ${questionCols.length} · Mediana: ${median}</div></div>
+    <div class="metric"><div class="label">Mejor puntaje</div><div class="value green">${best.correct}</div><div class="detail">${best.name}</div></div>
+    <div class="metric"><div class="label">Pregunta más difícil</div><div class="value red">${hardest.q}</div><div class="detail">${hardest.pct}% de acierto</div></div>
+    <div class="metric"><div class="label">Tema más débil</div><div class="value amber">${weakest}</div><div class="detail">${allTopicStats.find(t=>t.name===weakest)?.pct||0}% de acierto</div></div>`;
+
+  // Distribution chart
+  const maxScore = questionCols.length;
+  const bucketSize = Math.max(1, Math.round(maxScore / 10));
+  const buckets = [];
+  for (let i = 0; i < maxScore; i += bucketSize) {
+    const lo = i, hi = Math.min(i + bucketSize - 1, maxScore);
+    const count = results.filter(r => r.correct >= lo && r.correct <= hi).length;
+    buckets.push({ label: `${lo}-${hi}`, count });
+  }
+  if (charts.dist) charts.dist.destroy();
+  charts.dist = new Chart(document.getElementById('distChart'), {
+    type: 'bar',
+    data: { labels: buckets.map(b => b.label), datasets: [{ data: buckets.map(b => b.count), backgroundColor: buckets.map((b,i) => { const mid = (parseInt(b.label) + parseInt(b.label.split('-')[1])) / 2; return mid/maxScore >= 0.7 ? '#1D9E75' : mid/maxScore >= 0.4 ? '#EF9F27' : '#E24B4A'; }), borderRadius: 4 }] },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { title: { display: true, text: 'Rango de aciertos', font: { size: 11 } }, grid: { display: false } }, y: { title: { display: true, text: 'Alumnos', font: { size: 11 } }, ticks: { stepSize: 1 } } } }
+  });
+
+  // Topic bar chart
+  document.getElementById('groupLegend').innerHTML = groupStats.map((g,i) => `<span><span class="dot" style="background:${COLORS[i%COLORS.length]}"></span>${g.name} (prom. ${g.avg})</span>`).join('');
+  if (charts.topicBar) charts.topicBar.destroy();
+  charts.topicBar = new Chart(document.getElementById('topicBarChart'), {
+    type: 'bar',
+    data: { labels: allTopicStats.map(t => t.name), datasets: groupStats.map((g,i) => ({ label: g.name, data: g.topicStats.map(t => t.pct), backgroundColor: COLORS[i%COLORS.length], borderRadius: 4 })) },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { font: { size: 10 }, maxRotation: 45 }, grid: { display: false } }, y: { ticks: { callback: v => v+'%' }, max: 100 } } }
+  });
+
+  // Heatmap
+  const hm = document.getElementById('heatmapArea');
+  let html = `<div style="display:grid;grid-template-columns:100px repeat(${questionCols.length},minmax(0,1fr));gap:2px;font-size:10px;min-width:${Math.max(500,questionCols.length*24+100)}px;">`;
+  html += '<div></div>' + questionCols.map(q => `<div style="text-align:center;color:#999;">${q}</div>`).join('');
+  sorted.forEach(r => {
+    html += `<div style="color:#666;font-size:11px;display:flex;align-items:center;overflow:hidden;white-space:nowrap;">${r.name}</div>`;
+    questionCols.forEach(q => { const ok = r.answers[q]?.isCorrect; html += `<div style="background:${ok ? 'rgba(29,158,117,0.18)' : 'rgba(226,75,74,0.13)'};border-radius:3px;height:20px;display:flex;align-items:center;justify-content:center;font-size:9px;color:#888;">${ok?'✓':'✗'}</div>`; });
+  });
+  html += '</div>';
+  hm.innerHTML = html;
+
+  // Radar
+  document.getElementById('radarLegend').innerHTML = groupStats.map((g,i) => `<span><span class="dot" style="background:${COLORS[i%COLORS.length]}"></span>${g.name}</span>`).join('');
+  if (charts.radar) charts.radar.destroy();
+  charts.radar = new Chart(document.getElementById('radarChart'), {
+    type: 'radar',
+    data: { labels: allTopicStats.map(t => t.name), datasets: groupStats.map((g,i) => ({ label: g.name, data: g.topicStats.map(t => t.pct), borderColor: COLORS[i%COLORS.length], backgroundColor: COLORS[i%COLORS.length]+'18', pointRadius: 3 })) },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { r: { suggestedMin:0, suggestedMax:100, ticks: { font:{size:10}, backdropColor:'transparent' }, pointLabels: { font:{size:11} } } } }
+  });
+
+  // Critical topics
+  const critical = allTopicStats.filter(t => t.pct < 50).sort((a,b) => a.pct - b.pct);
+  document.getElementById('criticalTopics').innerHTML = critical.length > 0
+    ? critical.map(t => `<div class="bar-row"><span class="bar-label">${t.name}</span><div class="bar-track"><div class="bar-fill" style="width:${t.pct}%;background:#E24B4A;"></div></div><span class="bar-pct red">${t.pct}%</span></div>`).join('')
+    : '<p style="font-size:13px;color:#1D9E75;">Ningún tema por debajo del 50% de aciertos.</p>';
+
+  // Ranking
+  document.getElementById('rankingArea').innerHTML = sorted.map((r,i) => `
+    <div class="rank-row" onclick="selectStudent(${results.indexOf(r)})" style="${i<3?'background:#f5f5f0;':''}">
+      <span class="pos">${i+1}</span>
+      <span class="name" style="font-weight:${i<3?'600':'400'}">${r.name}</span>
+      <span class="group-badge">${r.group}</span>
+      <span class="score" style="color:${r.correct/r.total>=0.7?'#1D9E75':r.correct/r.total>=0.4?'#EF9F27':'#E24B4A'}">${r.correct}/${r.total}</span>
+    </div>`).join('');
+}
+
+function renderIndividual() {
+  const s = results[selectedStudent];
+  if (!s) return;
+  const sts = getStudentTopicStats(s);
+  const allSorted = [...results].sort((a,b) => b.correct - a.correct);
+  const globalRank = allSorted.findIndex(r => r.name === s.name) + 1;
+  const groupMembers = results.filter(r => r.group === s.group).sort((a,b) => b.correct - a.correct);
+  const groupRank = groupMembers.findIndex(r => r.name === s.name) + 1;
+  const groupAvg = Math.round(groupMembers.reduce((sum,r) => sum+r.correct,0) / groupMembers.length);
+  const vs = s.correct - groupAvg;
+  const beatsCount = results.length - globalRank;
+  const beatsPct = results.length > 1 ? Math.round((beatsCount / (results.length - 1)) * 100) : 100;
+  const bestTopic = sts.length > 0 ? sts.reduce((a,b) => a.pct > b.pct ? a : b) : null;
+  const worstTopic = sts.length > 0 ? sts.reduce((a,b) => a.pct < b.pct ? a : b) : null;
+  const timeStr = s.timeMin ? (s.timeMin >= 60 ? Math.floor(s.timeMin/60) + 'h ' + (s.timeMin%60) + 'm' : s.timeMin + ' min') : '—';
+
+  const initials = s.name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
+  document.getElementById('studentHeader').innerHTML = `
+    <div class="avatar">${initials}</div>
+    <div style="flex:1"><div style="font-size:17px;font-weight:600;">${s.name}</div><div style="font-size:12px;color:#888;">${s.group}</div></div>
+    <select class="no-print" onchange="selectedStudent=Number(this.value);renderIndividual();">${results.map((r,i) => `<option value="${i}" ${i===selectedStudent?'selected':''}>${r.name}</option>`).join('')}</select>`;
+
+  document.getElementById('studentMetrics').innerHTML = `
+    <div class="metric"><div class="label">Aciertos</div><div class="value">${s.correct}/${s.total}</div></div>
+    <div class="metric"><div class="label">Mejor materia</div><div class="value green" style="font-size:16px;">${bestTopic ? bestTopic.name : '—'}</div><div class="detail">${bestTopic ? bestTopic.pct + '% de acierto' : ''}</div></div>
+    <div class="metric"><div class="label">Peor materia</div><div class="value red" style="font-size:16px;">${worstTopic ? worstTopic.name : '—'}</div><div class="detail">${worstTopic ? worstTopic.pct + '% de acierto' : ''}</div></div>
+    <div class="metric"><div class="label">Tiempo</div><div class="value">${timeStr}</div></div>
+    <div class="metric"><div class="label">Nivel en el grupo</div><div class="value blue">${beatsPct}%</div><div class="detail">Supera al ${beatsPct}% de sus compañeros</div></div>
+    <div class="metric"><div class="label">Posición</div><div class="value blue">${globalRank}/${results.length}</div><div class="detail">${groupRank}/${groupMembers.length} en ${s.group}</div></div>
+    <div class="metric"><div class="label">vs promedio grupo</div><div class="value ${vs>=0?'green':'red'}">${vs>=0?'+':''}${vs}</div><div class="detail">Prom: ${groupAvg}</div></div>
+    <div class="metric"><div class="label">Materias dominadas</div><div class="value green">${sts.filter(t=>t.pct>=70).length}</div><div class="detail">de ${sts.length} materias</div></div>`;
+
+  // Radar
+  const gts = getTopicStats(groupMembers);
+  document.getElementById('studentRadarLegend').innerHTML = `<span><span class="dot" style="background:#378ADD"></span>${s.name}</span><span><span class="dot" style="background:rgba(0,0,0,0.2)"></span>Promedio ${s.group}</span>`;
+  if (charts.studentRadar) charts.studentRadar.destroy();
+  charts.studentRadar = new Chart(document.getElementById('studentRadarChart'), {
+    type: 'radar',
+    data: { labels: sts.map(t => t.name), datasets: [
+      { label: s.name, data: sts.map(t => t.pct), borderColor:'#378ADD', backgroundColor:'rgba(55,138,221,0.1)', pointRadius:3, borderWidth:2 },
+      { label: 'Promedio', data: sts.map(st => { const m = gts.find(t => t.name===st.name); return m?m.pct:0; }), borderColor:'rgba(0,0,0,0.2)', backgroundColor:'rgba(0,0,0,0.03)', pointRadius:2, borderWidth:1, borderDash:[4,4] }
+    ] },
+    options: { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{r:{suggestedMin:0,suggestedMax:100,ticks:{font:{size:10},backdropColor:'transparent'},pointLabels:{font:{size:11}}}} }
+  });
+
+  // Bars
+  document.getElementById('studentBars').innerHTML = sts.map(t => {
+    const c = t.pct>=70?'#1D9E75':t.pct>=50?'#EF9F27':'#E24B4A';
+    return `<div class="bar-row"><span class="bar-label">${t.name}</span><div class="bar-track"><div class="bar-fill" style="width:${t.pct}%;background:${c}"></div></div><span class="bar-pct" style="color:${c}">${t.pct}%</span></div>`;
+  }).join('') + `<div style="display:flex;gap:14px;margin-top:8px;font-size:11px;color:#999;">
+    <span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:#1D9E75;display:inline-block;"></span>Domina (≥70%)</span>
+    <span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:#EF9F27;display:inline-block;"></span>En proceso (50-69%)</span>
+    <span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:#E24B4A;display:inline-block;"></span>Requiere atención (<50%)</span></div>`;
+
+  // Question grid
+  const grid = document.getElementById('questionGrid');
+  grid.style.gridTemplateColumns = '44px 80px repeat(4,1fr) 40px';
+  let qh = '<div class="hdr">N°</div><div class="hdr">Tema</div><div class="hdr" style="text-align:center">A</div><div class="hdr" style="text-align:center">B</div><div class="hdr" style="text-align:center">C</div><div class="hdr" style="text-align:center">D</div><div class="hdr"></div>';
+  questionCols.forEach(q => {
+    const a = s.answers[q]; const topic = (topicMap[q]||'—').substring(0,12);
+    qh += `<div style="padding:3px;color:#666;">${q}</div><div style="padding:3px;color:#999;font-size:10px;overflow:hidden;white-space:nowrap;">${topic}</div>`;
+    ['A','B','C','D'].forEach(opt => {
+      let bg='transparent',border='1px solid #eee',color='#ccc';
+      if (opt===a.correct&&opt===a.student) { bg='rgba(29,158,117,0.12)';border='1px solid rgba(29,158,117,0.3)';color='#1D9E75'; }
+      else if (opt===a.student&&opt!==a.correct) { bg='rgba(226,75,74,0.1)';border='1px solid rgba(226,75,74,0.3)';color='#E24B4A'; }
+      else if (opt===a.correct) { border='1px dashed #1D9E75';color='#1D9E75'; }
+      qh += `<div class="cell" style="background:${bg};border:${border};color:${color};">${opt}</div>`;
+    });
+    qh += `<div class="cell" style="color:${a.isCorrect?'#1D9E75':'#E24B4A'};font-weight:600;">${a.isCorrect?'✓':'✗'}</div>`;
+  });
+  grid.innerHTML = qh;
+
+  // Diagnosis
+  const strengths = sts.filter(t => t.pct>=70).map(t => t.name);
+  const inProg = sts.filter(t => t.pct>=50&&t.pct<70).map(t => t.name);
+  const weak = sts.filter(t => t.pct<50).map(t => t.name);
+  let diag = '';
+  if (strengths.length) diag += `<p><strong class="green">Fortalezas:</strong> ${strengths.join(', ')}</p>`;
+  if (inProg.length) diag += `<p><strong class="amber">En proceso:</strong> ${inProg.join(', ')}</p>`;
+  if (weak.length) diag += `<p><strong class="red">Requiere atención:</strong> ${weak.join(', ')}</p>`;
+  if (!diag) diag = '<p style="color:#999;">Sin datos suficientes.</p>';
+  document.getElementById('diagnosisArea').innerHTML = diag;
+
+  document.getElementById('prevStudentBtn').disabled = selectedStudent === 0;
+  document.getElementById('nextStudentBtn').disabled = selectedStudent === results.length-1;
+}
+</script>
+</body>
+</html>
