@@ -79,7 +79,8 @@ function generateCSV() {
   if (exam.questions.length === 0) return '';
   
   const questionIds = exam.questions.map(q => q.id);
-  let header = 'Alumno,Grupo,Tiempo_min';
+  const fecha = exam.date || new Date().toISOString().split('T')[0];
+  let header = 'Fecha,Alumno,Grupo,Tiempo_min';
   questionIds.forEach(id => { header += `,P${id}`; });
   header += '\n';
 
@@ -88,7 +89,7 @@ function generateCSV() {
     const timeMin = s.submitted && s.submitTime && s.startTime
       ? Math.round((s.submitTime - s.startTime) / 60000)
       : '';
-    let row = `${s.name},${s.group},${timeMin}`;
+    let row = `${fecha},${s.name},${s.group},${timeMin}`;
     questionIds.forEach(id => {
       const ans = s.answers[id] || '';
       row += `,${ans}`;
@@ -119,6 +120,7 @@ app.post('/api/upload-exam', (req, res) => {
     
     exam.title = data.exam?.title || 'Examen';
     exam.group = data.exam?.group || 'Sin grupo';
+    exam.date = data.exam?.date || new Date().toISOString().split('T')[0];
     exam.studentList = data.exam?.students || [];
     exam.timeLimitMinutes = data.timeLimitMinutes || 180;
     
@@ -149,16 +151,24 @@ app.post('/api/upload-exam', (req, res) => {
 // Download CSV results
 app.get('/api/download-csv', (req, res) => {
   const csv = generateCSV();
+  const fecha = (exam.date || new Date().toISOString().split('T')[0]).replace(/-/g, '');
+  const filename = `resultados_${fecha}.csv`;
+  const filePath = path.join(__dirname, filename);
+  fs.writeFileSync(filePath, '\uFEFF' + csv, 'utf8');
   res.setHeader('Content-Type', 'text/csv; charset=utf-8');
-  res.setHeader('Content-Disposition', 'attachment; filename=resultados_examen.csv');
-  res.send('\uFEFF' + csv); // BOM for Excel UTF-8
+  res.setHeader('Content-Disposition', `attachment; filename=${filename}`);
+  res.send('\uFEFF' + csv);
 });
 
 // Download answer key CSV
 app.get('/api/download-key', (req, res) => {
   const csv = generateAnswerKeyCSV();
+  const fecha = (exam.date || new Date().toISOString().split('T')[0]).replace(/-/g, '');
+  const filename = `clave_respuestas_${fecha}.csv`;
+  const filePath = path.join(__dirname, filename);
+  fs.writeFileSync(filePath, '\uFEFF' + csv, 'utf8');
   res.setHeader('Content-Type', 'text/csv; charset=utf-8');
-  res.setHeader('Content-Disposition', 'attachment; filename=clave_respuestas.csv');
+  res.setHeader('Content-Disposition', `attachment; filename=${filename}`);
   res.send('\uFEFF' + csv);
 });
 

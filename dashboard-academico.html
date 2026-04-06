@@ -152,6 +152,9 @@
       <div class="section-title">Diagnóstico</div>
       <div class="diagnosis" id="diagnosisArea"></div>
 
+      <div class="section-title">Temas a reforzar</div>
+      <div id="reforzarArea"></div>
+
       <div class="nav-btns no-print">
         <button class="btn btn-pdf" onclick="exportStudentHTML()">Descargar reporte del alumno</button>
         <button class="btn btn-pdf" onclick="exportPDF()">Imprimir / PDF</button>
@@ -181,6 +184,7 @@ let allTopicStats = [];
 let questionCols = [];
 let answerKey = {};
 let topicMap = {};
+let topicNameMap = {};
 let selectedStudent = 0;
 let charts = {};
 
@@ -199,9 +203,9 @@ function loadJSON(file) {
   reader.onload = e => {
     try {
       examData = JSON.parse(e.target.result);
-      answerKey = {}; topicMap = {};
+      answerKey = {}; topicMap = {}; topicNameMap = {};
       examDate = examData.exam?.date || new Date().toISOString().split('T')[0];
-      (examData.exam?.sections || []).forEach(sec => { sec.questions.forEach(q => { answerKey['P'+q.id] = q.answer; topicMap['P'+q.id] = sec.subject; }); });
+      (examData.exam?.sections || []).forEach(sec => { sec.questions.forEach(q => { answerKey['P'+q.id] = q.answer; topicMap['P'+q.id] = sec.subject; topicNameMap['P'+q.id] = q.topic_name || sec.subject; }); });
       document.getElementById('stepJson').classList.add('hidden');
       document.getElementById('stepCsv').classList.remove('hidden');
       document.getElementById('jsonStatus').textContent = `${examData.exam?.title || 'Examen'} — ${formatDate(examDate)} — ${Object.keys(answerKey).length} preguntas cargadas`;
@@ -414,7 +418,7 @@ function renderGeneral() {
   charts.topicBar = new Chart(document.getElementById('topicBarChart'), {
     type: 'bar',
     data: { labels: allTopicStats.map(t => t.name), datasets: groupStats.map((g,i) => ({ label: g.name, data: g.topicStats.map(t => t.pct), backgroundColor: COLORS[i%COLORS.length], borderRadius: 4 })) },
-    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { font: { size: 10 }, maxRotation: 45 }, grid: { display: false } }, y: { ticks: { callback: v => v+'%' }, max: 100 } } }
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { font: { size: 10 }, maxRotation: 90, minRotation: 90 }, grid: { display: false } }, y: { ticks: { callback: v => v+'%' }, max: 100 } } }
   });
 
   // Heatmap
@@ -535,6 +539,47 @@ function renderIndividual() {
   if (weak.length) diag += `<p><strong class="red">Requiere atención:</strong> ${weak.join(', ')}</p>`;
   if (!diag) diag = '<p style="color:#999;">Sin datos suficientes.</p>';
   document.getElementById('diagnosisArea').innerHTML = diag;
+
+  // Temas a reforzar: 3 materias más bajas, top 3 temas con más errores en cada una
+  const subjectErrors = {};
+  questionCols.forEach(q => {
+    const subj = topicMap[q] || '—';
+    const tname = topicNameMap[q] || subj;
+    const ans = s.answers[q];
+    if (!subjectErrors[subj]) subjectErrors[subj] = { pct: 0, topics: {} };
+    if (!subjectErrors[subj].topics[tname]) subjectErrors[subj].topics[tname] = { wrong: 0, total: 0 };
+    subjectErrors[subj].topics[tname].total++;
+    if (!ans.isCorrect) subjectErrors[subj].topics[tname].wrong++;
+  });
+
+  // Calcular % de error por materia
+  sts.forEach(t => { if (subjectErrors[t.name]) subjectErrors[t.name].pct = t.pct; });
+
+  // 3 materias con menor % de acierto
+  const worst3 = sts.slice().sort((a,b) => a.pct - b.pct).slice(0, 3);
+
+  let reforzarHTML = '';
+  worst3.forEach(subj => {
+    const topics = subjectErrors[subj.name]?.topics || {};
+    const sorted = Object.entries(topics).sort((a,b) => b[1].wrong - a[1].wrong).slice(0, 3);
+    if (!sorted.length) return;
+    const c = subj.pct >= 70 ? '#1D9E75' : subj.pct >= 50 ? '#EF9F27' : '#E24B4A';
+    reforzarHTML += `<div style="background:#fff;border:1px solid #eee;border-radius:10px;padding:14px 16px;margin-bottom:10px;">
+      <div style="font-size:13px;font-weight:600;color:${c};margin-bottom:8px;">${subj.name} — ${subj.pct}% de acierto</div>
+      ${sorted.map(([tname, data]) => {
+        const pct = Math.round((data.wrong / data.total) * 100);
+        return `<div style="display:flex;align-items:center;gap:8px;margin-bottom:5px;">
+          <div style="flex:1;font-size:12px;color:#444;">${tname}</div>
+          <div style="font-size:11px;color:#999;">${data.wrong}/${data.total} incorrectas</div>
+          <div style="width:60px;height:8px;background:#eee;border-radius:4px;overflow:hidden;">
+            <div style="width:${pct}%;height:100%;background:${pct>=60?'#E24B4A':'#EF9F27'};border-radius:4px;"></div>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>`;
+  });
+
+  document.getElementById('reforzarArea').innerHTML = reforzarHTML || '<p style="color:#999;font-size:13px;">Sin datos suficientes.</p>';
 
   document.getElementById('prevStudentBtn').disabled = selectedStudent === 0;
   document.getElementById('nextStudentBtn').disabled = selectedStudent === results.length-1;
