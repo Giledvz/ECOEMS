@@ -73,7 +73,7 @@
   <span class="badge badge-waiting" id="phaseBadge">Esperando examen</span>
 </div>
 
-<div class="connection-info" id="connInfo" style="display:none;">
+<div class="connection-info" id="connInfo">
   <div class="label-sm">Los alumnos se conectan a:</div>
   <div class="url" id="connUrl">Cargando...</div>
 </div>
@@ -145,7 +145,6 @@ let examTimeLimit = 180;
 fetch('/api/download-csv', { method: 'HEAD' }).catch(() => {});
 const connUrl = document.getElementById('connUrl');
 connUrl.textContent = `http://${window.location.hostname}:${window.location.port || 3000}`;
-document.getElementById('connInfo').style.display = 'block';
 
 // ─── Upload Exam ────────────────────────────────────────────────────────────
 async function uploadExam(input) {
