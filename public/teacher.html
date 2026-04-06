@@ -55,9 +55,17 @@
   .dot-disconnected { background: #f87171; }
   .dot-submitted { background: #60a5fa; }
 
-  .connection-info { margin-bottom: 24px; background: #1e293b; border-radius: 12px; padding: 16px; }
-  .connection-info .url { font-size: 20px; font-weight: 700; color: #60a5fa; font-family: monospace; }
-  .connection-info .label-sm { font-size: 12px; color: #94a3b8; margin-bottom: 4px; }
+  .connection-info { margin-bottom: 24px; background: #1e293b; border-radius: 12px; padding: 20px; display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+  .connection-info .label-sm { font-size: 12px; color: #94a3b8; margin-bottom: 6px; }
+  .connection-info .url { font-size: 20px; font-weight: 700; color: #60a5fa; font-family: monospace; word-break: break-all; }
+  .conn-left { flex: 1; min-width: 220px; }
+  .conn-divider { width: 1px; background: #334155; align-self: stretch; }
+  .conn-right { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .conn-right .label-sm { text-align: center; }
+  #qrImg { border-radius: 8px; border: 3px solid #334155; display: block; }
+  .copy-btn { margin-top: 8px; padding: 6px 14px; background: #334155; border: none; border-radius: 6px; color: #e2e8f0; font-size: 13px; cursor: pointer; transition: background 0.15s; }
+  .copy-btn:hover { background: #475569; }
+  .copy-btn.copied { background: #16a34a; }
 
   .timer-display { font-size: 32px; font-weight: 700; font-family: monospace; color: #e2e8f0; text-align: center; padding: 8px; }
   .timer-warning { color: #f87171; }
@@ -74,8 +82,16 @@
 </div>
 
 <div class="connection-info" id="connInfo">
-  <div class="label-sm">Los alumnos se conectan a:</div>
-  <div class="url" id="connUrl">Cargando...</div>
+  <div class="conn-left">
+    <div class="label-sm">Los alumnos con computadora entran a:</div>
+    <div class="url" id="connUrl">Cargando...</div>
+    <button class="copy-btn" id="copyBtn" onclick="copyUrl()">Copiar link</button>
+  </div>
+  <div class="conn-divider"></div>
+  <div class="conn-right">
+    <div class="label-sm">Escanea para entrar al examen</div>
+    <img id="qrImg" src="" alt="QR" width="160" height="160" />
+  </div>
 </div>
 
 <div class="controls">
@@ -141,10 +157,30 @@ let timerInterval = null;
 let examStartTime = null;
 let examTimeLimit = 180;
 
-// Detect local IP for display
-fetch('/api/download-csv', { method: 'HEAD' }).catch(() => {});
-const connUrl = document.getElementById('connUrl');
-connUrl.textContent = `http://${window.location.hostname}:${window.location.port || 3000}`;
+// Load URL and QR code
+let studentUrl = '';
+fetch('/api/qr')
+  .then(r => r.json())
+  .then(data => {
+    studentUrl = data.url;
+    document.getElementById('connUrl').textContent = data.url;
+    document.getElementById('qrImg').src = data.qr;
+  })
+  .catch(() => {
+    const fallback = `http://${window.location.hostname}:${window.location.port || 3000}`;
+    studentUrl = fallback;
+    document.getElementById('connUrl').textContent = fallback;
+  });
+
+function copyUrl() {
+  if (!studentUrl) return;
+  navigator.clipboard.writeText(studentUrl).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = '¡Copiado!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copiar link'; btn.classList.remove('copied'); }, 2000);
+  });
+}
 
 // ─── Upload Exam ────────────────────────────────────────────────────────────
 async function uploadExam(input) {

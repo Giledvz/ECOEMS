@@ -4,6 +4,7 @@ const { Server } = require('socket.io');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
+const QRCode = require('qrcode');
 
 const app = express();
 const server = http.createServer(app);
@@ -54,7 +55,8 @@ function getStudentSummary() {
     let correct = 0;
     if (s.submitted) {
       exam.questions.forEach(q => {
-        if (s.answers[q.id] === exam.answerKey[q.id]) correct++;
+        const key = s.answerKey?.[q.id] ?? exam.answerKey[q.id];
+        if (s.answers[q.id] === key) correct++;
       });
     }
     const timeUsed = s.submitted && s.submitTime && s.startTime
@@ -91,8 +93,14 @@ function generateCSV() {
       : '';
     let row = `${fecha},${s.name},${s.group},${timeMin}`;
     questionIds.forEach(id => {
-      const ans = s.answers[id] || '';
-      row += `,${ans}`;
+      const ans = s.answers[id];
+      if (!ans || !s.optionOrders?.[id]) {
+        row += `,${ans || ''}`;
+      } else {
+        // Convert shuffled letter back to original letter for consistent CSV
+        const origLetters = Object.keys(exam.questions.find(q => q.id === id).options);
+        row += `,${s.optionOrders[id][origLetters.indexOf(ans)] || ''}`;
+      }
     });
     rows += row + '\n';
   });
@@ -172,8 +180,29 @@ app.get('/api/download-key', (req, res) => {
   res.send('\uFEFF' + csv);
 });
 
+// QR code for student URL
+app.get('/api/qr', async (req, res) => {
+  const nets = os.networkInterfaces();
+  let localIP = 'localhost';
+  outer: for (const ifaces of Object.values(nets)) {
+    for (const iface of ifaces) {
+      if (iface.family === 'IPv4' && !iface.internal) {
+        localIP = iface.address;
+        break outer;
+      }
+    }
+  }
+  const url = `http://${localIP}:${PORT}`;
+  try {
+    const dataUrl = await QRCode.toDataURL(url, { width: 256, margin: 2, color: { dark: '#0f172a', light: '#ffffff' } });
+    res.json({ qr: dataUrl, url });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Teacher page
-app.get('/teacher', (req, res) => {
+app.get('/teacher', (_req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'teacher.html'));
 });
 
@@ -232,6 +261,11 @@ io.on('connection', (socket) => {
         questionsBySubject[subj].forEach(id => questionOrder.push(id));
       });
 
+      const optionOrders = {};
+      exam.questions.forEach(q => {
+        optionOrders[q.id] = shuffle(Object.keys(q.options));
+      });
+
       exam.students[socket.id] = {
         name: cleanName,
         group: exam.group,
@@ -242,14 +276,28 @@ io.on('connection', (socket) => {
         startTime: Date.now(),
         submitTime: null,
         questionOrder,
+        optionOrders,
+        answerKey: {},
       };
     }
 
-    // Build questions in the student's stored order
+    // Build questions in the student's stored order with shuffled options
     const student = exam.students[socket.id];
-    const questionsForStudent = student.questionOrder.map(id => {
-      const q = exam.questions.find(x => x.id === id);
-      return { id: q.id, text: q.text, options: q.options, image: q.image, subject: q.subject };
+    const questionsForStudent = student.questionOrder.map(qid => {
+      const q = exam.questions.find(x => x.id === qid);
+      const origLetters = Object.keys(q.options);       // ['A','B','C','D']
+      const srcLetters  = student.optionOrders[qid];    // e.g. ['C','A','D','B']
+
+      const newOptions = {};
+      origLetters.forEach((newLetter, i) => {
+        newOptions[newLetter] = q.options[srcLetters[i]];
+      });
+
+      // Which new letter maps to the globally correct answer?
+      const correctOrig = exam.answerKey[qid];
+      student.answerKey[qid] = origLetters[srcLetters.indexOf(correctOrig)];
+
+      return { id: q.id, text: q.text, options: newOptions, image: q.image, subject: q.subject };
     });
 
     socket.emit('joined', {
@@ -298,13 +346,14 @@ io.on('connection', (socket) => {
     // Calculate score
     let correct = 0;
     exam.questions.forEach(q => {
-      if (student.answers[q.id] === exam.answerKey[q.id]) correct++;
+      const key = student.answerKey?.[q.id] ?? exam.answerKey[q.id];
+      if (student.answers[q.id] === key) correct++;
     });
-    
+
     socket.emit('examSubmitted', {
       correct,
       total: exam.questions.length,
-      answerKey: exam.answerKey,
+      answerKey: student.answerKey ?? exam.answerKey,
     });
     
     io.emit('studentsUpdate', getStudentSummary());
@@ -332,12 +381,13 @@ io.on('connection', (socket) => {
         if (sock) {
           let correct = 0;
           exam.questions.forEach(q => {
-            if (s.answers[q.id] === exam.answerKey[q.id]) correct++;
+            const key = s.answerKey?.[q.id] ?? exam.answerKey[q.id];
+            if (s.answers[q.id] === key) correct++;
           });
           sock.emit('examSubmitted', {
             correct,
             total: exam.questions.length,
-            answerKey: exam.answerKey,
+            answerKey: s.answerKey ?? exam.answerKey,
           });
         }
       }

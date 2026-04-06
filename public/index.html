@@ -330,7 +330,7 @@ function confirmSubmit() {
   if (state.marked.length > 0) msg += `Marcadas para revisar: ${state.marked.length}\n`;
   if (confirm(msg)) {
     socket.emit('submitExam');
-    setTimeout(() => { if (!state.submitted) enterReviewMode({ correct: '?', total, answerKey: {} }); }, 3000);
+    setTimeout(() => { if (!state.submitted) enterReviewMode({ correct: null, total, answerKey: {} }); }, 8000);
   }
 }
 
@@ -338,15 +338,18 @@ function enterReviewMode(data) {
   state.submitted = true;
   if (state.timerInterval) clearInterval(state.timerInterval);
   if (data && data.answerKey) state.answerKey = data.answerKey;
-  const correct = data ? data.correct : '?';
+  const correct = (data && data.correct != null) ? data.correct : null;
   const total = state.questions.length;
   const pct = total > 0 && typeof correct === 'number' ? Math.round((correct / total) * 100) : 0;
   document.getElementById('resultsName').textContent = state.name;
-  document.getElementById('scoreNum').textContent = correct;
-  document.getElementById('scoreLabel').textContent = `de ${total} aciertos`;
-  document.getElementById('resultsDetail').textContent = `Respondiste ${correct} preguntas correctamente de ${total}`;
+  document.getElementById('scoreNum').textContent = correct !== null ? correct : '—';
+  document.getElementById('scoreLabel').textContent = correct !== null ? `de ${total} aciertos` : 'examen entregado';
+  document.getElementById('resultsDetail').textContent = correct !== null
+    ? `Respondiste ${correct} preguntas correctamente de ${total}`
+    : 'Tu examen fue enviado. El resultado lo verás con tu profesor.';
   const circle = document.getElementById('scoreCircle');
-  if (correct >= 95) { circle.style.background = '#dcfce7'; circle.style.color = '#16a34a'; }
+  if (correct === null) { circle.style.background = '#f1f5f9'; circle.style.color = '#475569'; }
+  else if (correct >= 95) { circle.style.background = '#dcfce7'; circle.style.color = '#16a34a'; }
   else if (correct >= 51) { circle.style.background = '#fef9c3'; circle.style.color = '#a16207'; }
   else { circle.style.background = '#fef2f2'; circle.style.color = '#e53e3e'; }
   showScreen('resultsScreen');
