@@ -395,6 +395,9 @@ socket.on('studentsUpdate', (students) => {
 
 // Request initial student list
 socket.emit('getStudents');
+
+// Fallback: re-sync every 20 seconds in case a real-time event was missed
+setInterval(() => socket.emit('getStudents'), 20000);
 </script>
 </body>
 </html>

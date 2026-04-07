@@ -74,7 +74,27 @@
   .nav-spacer { height: 160px; }
   .conn-status { position: fixed; top: 0; left: 0; right: 0; background: #fef3c7; color: #a16207; text-align: center; font-size: 12px; padding: 4px; z-index: 100; display: none; }
   .conn-status.show { display: block; }
-  .results-screen { align-items: center; justify-content: center; gap: 16px; text-align: center; }
+  .results-screen { align-items: center; gap: 16px; text-align: center; padding-top: 32px; padding-bottom: 40px; }
+  .topic-breakdown { width: 100%; max-width: 480px; text-align: left; margin-top: 8px; }
+  .topic-breakdown h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; text-align: center; color: #444; }
+  .topic-row { margin-bottom: 12px; }
+  .topic-row-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+  .topic-name { font-size: 12px; color: #555; flex: 1; padding-right: 8px; line-height: 1.3; }
+  .topic-subject { font-size: 10px; color: #999; white-space: nowrap; }
+  .topic-pct { font-size: 13px; font-weight: 700; white-space: nowrap; margin-left: 8px; }
+  .topic-bar-bg { height: 8px; background: #ebebeb; border-radius: 4px; overflow: hidden; }
+  .topic-bar-fill { height: 100%; border-radius: 4px; transition: width 0.6s ease; }
+  .bar-green { background: #16a34a; }
+  .bar-amber { background: #eab308; }
+  .bar-red { background: #e53e3e; }
+  .topic-score-detail { font-size: 10px; color: #999; margin-top: 2px; }
+  .divider { width: 100%; max-width: 480px; border: none; border-top: 1px solid #e5e5e5; margin: 4px 0; }
+  body.dark .topic-breakdown h3 { color: #aaa; }
+  body.dark .topic-name { color: #bbb; }
+  body.dark .topic-subject { color: #666; }
+  body.dark .topic-bar-bg { background: #2a2a4a; }
+  body.dark .topic-score-detail { color: #666; }
+  body.dark .divider { border-color: #2a2a4a; }
   .dark-toggle { width: 24px; height: 24px; border-radius: 50%; border: 1px solid #ddd; background: #fff; cursor: pointer; font-size: 12px; display: flex; align-items: center; justify-content: center; opacity: 0.6; margin-left: 8px; }
   body.dark { background: #1a1a2e; color: #e0e0e0; }
   body.dark .exam-header { background: #16213e; border-color: #2a2a4a; }
@@ -184,15 +204,20 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div id="resultsScreen" class="screen results-screen">
-  <h2 style="font-size:20px; font-weight:600;">Examen entregado</h2>
-  <p id="resultsName" style="font-size:15px; color:#2c5282; font-weight:500;"></p>
-  <div id="scoreCircle" style="width:140px; height:140px; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:700;">
-    <span id="scoreNum" style="font-size:36px;">0</span>
-    <span id="scoreLabel" style="font-size:12px; font-weight:500; opacity:0.8;">de 128 aciertos</span>
+  <h2 style="font-size:26px; font-weight:700;">Examen entregado</h2>
+  <p id="resultsName" style="font-size:18px; color:#2c5282; font-weight:600;"></p>
+  <div id="scoreCircle" style="width:180px; height:180px; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:700;">
+    <span id="scoreNum" style="font-size:52px; line-height:1;">0</span>
+    <span id="scoreLabel" style="font-size:14px; font-weight:500; opacity:0.8; margin-top:4px;">de 128 aciertos</span>
   </div>
-  <p id="resultsDetail" style="font-size:14px; color:#666;"></p>
-  <button onclick="startReview()" style="padding:14px 28px; font-size:15px; font-weight:600; background:#2c5282; color:#fff; border:none; border-radius:10px; cursor:pointer; margin-top:8px;">Revisar examen</button>
-  <p style="font-size:12px; color:#999; margin-top:4px;">Navega por las preguntas y ve cuáles tuviste bien y mal</p>
+  <p id="resultsDetail" style="font-size:16px; color:#555;"></p>
+  <button onclick="startReview()" style="padding:16px 36px; font-size:17px; font-weight:600; background:#2c5282; color:#fff; border:none; border-radius:12px; cursor:pointer; margin-top:8px;">Revisar examen</button>
+  <p style="font-size:13px; color:#999; margin-top:4px;">Navega por las preguntas y ve cuáles tuviste bien y mal</p>
+  <hr class="divider" />
+  <div class="topic-breakdown" id="topicBreakdown" style="display:none;">
+    <h3>Tu rendimiento por tema</h3>
+    <div id="topicRows"></div>
+  </div>
 </div>
 
 <script>
@@ -354,6 +379,56 @@ function enterReviewMode(data) {
   else { circle.style.background = '#fef2f2'; circle.style.color = '#e53e3e'; }
   showScreen('resultsScreen');
   try { sessionStorage.removeItem('examState'); } catch(e) {}
+  if (correct !== null) renderTopicBreakdown();
+}
+
+function renderTopicBreakdown() {
+  if (!state.answerKey || Object.keys(state.answerKey).length === 0) return;
+
+  // Agrupar preguntas por tema
+  const topics = {};
+  state.questions.forEach(q => {
+    const key = q.topic_name || q.subject;
+    if (!topics[key]) topics[key] = { subject: q.subject, total: 0, correct: 0 };
+    topics[key].total++;
+    if (state.answers[q.id] === state.answerKey[q.id]) topics[key].correct++;
+  });
+
+  // Ordenar de mayor a menor rendimiento relativo
+  const sorted = Object.entries(topics).sort((a, b) => {
+    const pctA = a[1].correct / a[1].total;
+    const pctB = b[1].correct / b[1].total;
+    return pctB - pctA;
+  });
+
+  const container = document.getElementById('topicRows');
+  container.innerHTML = '';
+  sorted.forEach(([name, data]) => {
+    const pct = Math.round((data.correct / data.total) * 100);
+    const barClass = pct >= 70 ? 'bar-green' : pct >= 50 ? 'bar-amber' : 'bar-red';
+    const pctColor = pct >= 70 ? '#16a34a' : pct >= 50 ? '#a16207' : '#e53e3e';
+    const row = document.createElement('div');
+    row.className = 'topic-row';
+    row.innerHTML = `
+      <div class="topic-row-header">
+        <span class="topic-name">${name}</span>
+        <span class="topic-subject">${data.subject}</span>
+        <span class="topic-pct" style="color:${pctColor}">${pct}%</span>
+      </div>
+      <div class="topic-bar-bg"><div class="topic-bar-fill ${barClass}" style="width:0%" data-pct="${pct}"></div></div>
+      <div class="topic-score-detail">${data.correct} de ${data.total} preguntas correctas</div>
+    `;
+    container.appendChild(row);
+  });
+
+  document.getElementById('topicBreakdown').style.display = '';
+
+  // Animar barras con un pequeño delay para que se vean bonitas
+  requestAnimationFrame(() => {
+    document.querySelectorAll('.topic-bar-fill').forEach(el => {
+      el.style.width = el.dataset.pct + '%';
+    });
+  });
 }
 
 function startReview() {
