@@ -159,8 +159,8 @@ app.post('/api/upload-exam', (req, res) => {
 // Download CSV results
 app.get('/api/download-csv', (req, res) => {
   const csv = generateCSV();
-  const fecha = (exam.date || new Date().toISOString().split('T')[0]).replace(/-/g, '');
-  const filename = `resultados_${fecha}.csv`;
+  const [y, m, d] = (exam.date || new Date().toISOString().split('T')[0]).split('-');
+  const filename = `resultados_${d}${m}${y.slice(2)}.csv`;
   const filePath = path.join(__dirname, filename);
   fs.writeFileSync(filePath, '\uFEFF' + csv, 'utf8');
   res.setHeader('Content-Type', 'text/csv; charset=utf-8');
@@ -222,6 +222,8 @@ io.on('connection', (socket) => {
 
   // ── Student joins ──
   socket.on('joinExam', ({ name }) => {
+    if (exam.phase === 'closed') { socket.emit('joinError', 'El examen ya fue cerrado'); return; }
+
     const cleanName = String(name).trim().substring(0, 30);
     if (!cleanName) { socket.emit('joinError', 'Selecciona tu nombre'); return; }
 
