@@ -29,10 +29,18 @@
   .exam-screen { padding: 0; }
   .exam-header { position: sticky; top: 0; z-index: 10; background: #fff; border-bottom: 1px solid #eee; padding: 8px 16px; }
   .exam-header-top { display: flex; align-items: center; justify-content: space-between; }
-  .exam-header .counter { font-size: 13px; color: #666; flex: 1; text-align: left; }
+  .exam-header .counter { font-size: 15px; color: #666; flex: 1; text-align: left; font-weight: 600; }
   .exam-header .subject-badge { font-size: 11px; padding: 4px 10px; border-radius: 6px; background: #ebf4ff; color: #2c5282; font-weight: 500; max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center; }
-  .exam-header .timer { font-size: 13px; color: #2c5282; font-weight: 600; flex: 1; text-align: right; }
+  .exam-header .timer { font-size: 15px; color: #2c5282; font-weight: 700; flex: 1; text-align: right; }
   .exam-header .timer.warning { color: #e53e3e; }
+  @media (min-width: 600px) {
+    .exam-header .counter { font-size: 19px; }
+    .exam-header .timer { font-size: 19px; }
+  }
+  @media (min-width: 1024px) {
+    .exam-header .counter { font-size: 22px; }
+    .exam-header .timer { font-size: 22px; }
+  }
   .student-name-bar { font-size: 11px; color: #888; text-align: center; padding-top: 4px; }
   .student-name-bar strong { color: #1a1a1a; font-weight: 600; }
   .question-area { padding: 16px; }
