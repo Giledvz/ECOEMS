@@ -14,6 +14,8 @@
   .screen { display: none; min-height: 100vh; padding: 16px; }
   .screen.active { display: flex; flex-direction: column; }
   .join-screen { align-items: center; justify-content: center; gap: 16px; }
+  .join-screen > * { margin-bottom: 16px; }
+  .join-screen > *:last-child { margin-bottom: 0; }
   .join-screen h1 { font-size: 22px; font-weight: 600; text-align: center; }
   .join-screen .exam-label { font-size: 14px; color: #666; text-align: center; }
   .join-screen .group-label { font-size: 13px; padding: 6px 14px; border-radius: 8px; background: #ebf4ff; color: #2c5282; font-weight: 500; }
@@ -48,6 +50,7 @@
   .question-area { padding: 16px; }
   .question-text { font-size: 15px; line-height: 1.6; margin-bottom: 16px; }
   .options { display: flex; flex-direction: column; gap: 8px; }
+  .option-btn + .option-btn { margin-top: 8px; }
   .option-btn { display: flex; align-items: flex-start; gap: 10px; padding: 14px; background: #fff; border: 2px solid #e2e2e2; border-radius: 10px; font-size: 14px; line-height: 1.4; cursor: pointer; text-align: left; transition: all 0.15s; }
   .option-btn:active { transform: scale(0.98); }
   .option-btn.selected { border-color: #2c5282; background: #ebf4ff; }
@@ -63,7 +66,7 @@
   .nav-grid { padding: 10px 12px 8px; background: #fff; border-top: 1px solid #eee; }
   .nav-grid-inner { display: grid; grid-template-columns: repeat(auto-fill, 22px); grid-auto-rows: 22px; gap: 4px; }
   @media (max-width: 600px) { .nav-grid-inner { max-width: none; max-height: 74px; overflow-y: auto; } }
-  .nav-cell { width: 22px; height: 22px; border: 1px solid #e5e7eb; border-radius: 5px; font-size: 9px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0; }
+  .nav-cell { width: 22px; height: 22px; border: 1px solid #e5e7eb; border-radius: 5px; font-size: 9px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0; text-align: center; line-height: 22px; }
   .nav-cell.empty { background: #fff; color: #bbb; }
   .nav-cell.answered { background: #b7e1cd; color: #0a6b3d; border-color: #b7e1cd; }
   .nav-cell.marked { background: #fef3c7; color: #a16207; border-color: #eab308; }
