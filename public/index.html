@@ -236,13 +236,15 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
 const socket = io({ reconnection: true, reconnectionDelay: 1000, reconnectionAttempts: Infinity });
 
-function renderMath(text) {
+function renderMath(text, displayMode) {
   const parts = text.split(/(\$\$[^$]+?\$\$)/g);
   return parts.map(part => {
     if (part.startsWith('$$') && part.endsWith('$$')) {
-      try {
-        return katex.renderToString(part.slice(2, -2), { throwOnError: false, displayMode: true });
-      } catch(e) { return part; }
+      const inner = part.slice(2, -2);
+      if (typeof katex !== 'undefined') {
+        try { return katex.renderToString(inner, { throwOnError: false, displayMode: !!displayMode }); } catch(e) {}
+      }
+      return inner.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     }
     return part
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -291,7 +293,7 @@ function renderQuestion() {
   const q = state.questions[state.currentQ];
   document.getElementById('qCounter').textContent = `${state.currentQ + 1}/${state.questions.length}`;
   document.getElementById('qSubject').textContent = q.subject;
-  document.getElementById('qText').innerHTML = renderMath(q.text);
+  document.getElementById('qText').innerHTML = renderMath(q.text, true);
   
   const qImg = document.getElementById('qImage');
   if (q.image) { qImg.src = q.image; qImg.style.display = 'block'; }
