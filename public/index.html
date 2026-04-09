@@ -293,7 +293,7 @@ function renderQuestion() {
   const q = state.questions[state.currentQ];
   document.getElementById('qCounter').textContent = `${state.currentQ + 1}/${state.questions.length}`;
   document.getElementById('qSubject').textContent = q.subject;
-  document.getElementById('qText').innerHTML = renderMath(q.text, true);
+  document.getElementById('qText').innerHTML = renderMath(q.text);
   
   const qImg = document.getElementById('qImage');
   if (q.image) { qImg.src = q.image; qImg.style.display = 'block'; }
