@@ -234,11 +234,11 @@ document.addEventListener('DOMContentLoaded', function() {
 const socket = io({ reconnection: true, reconnectionDelay: 1000, reconnectionAttempts: Infinity });
 
 function renderMath(text) {
-  const parts = text.split(/(\$[^$\n]+\$)/g);
+  const parts = text.split(/(\$\$[^$]+?\$\$)/g);
   return parts.map(part => {
-    if (part.startsWith('$') && part.endsWith('$')) {
+    if (part.startsWith('$$') && part.endsWith('$$')) {
       try {
-        return katex.renderToString(part.slice(1, -1), { throwOnError: false });
+        return katex.renderToString(part.slice(2, -2), { throwOnError: false, displayMode: true });
       } catch(e) { return part; }
     }
     return part
