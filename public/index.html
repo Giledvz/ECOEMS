@@ -547,6 +547,12 @@ socket.on('connect', () => {
   const saved = loadState();
   if (saved && saved.name) socket.emit('joinExam', { name: saved.name });
 });
+
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden && state.name && state.questions.length > 0) {
+    socket.emit('joinExam', { name: state.name });
+  }
+});
 </script>
 </body>
 </html>
