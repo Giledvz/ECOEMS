@@ -5,12 +5,20 @@
     "date": "2026-04-08",
     "version": "1.0",
     "total_questions": 120,
-    "students": ["Alfredo","Lupita","Yuri","Gil","Oscar","Esme","Ángeles"],
+    "students": [
+      "Alfredo",
+      "Lupita",
+      "Yuri",
+      "Gil",
+      "Oscar",
+      "Esme",
+      "Ángeles"
+    ],
     "instructions": "Selecciona la opción correcta para cada pregunta. No se permite el uso de calculadora.",
     "sections": [
       {
         "subject": "Física",
-        "questions_count": 15,
+        "questions_count": 12,
         "questions": [
           {
             "id": 1,
@@ -40,19 +48,6 @@
           },
           {
             "id": 3,
-            "topic": "1.3",
-            "topic_name": "Caída libre",
-            "text": "Una pelota se suelta desde el reposo. Usando g = 10 m/s², ¿cuánto tiempo tarda en alcanzar una velocidad de 40 m/s?",
-            "options": {
-              "A": "400 s",
-              "B": "4 s",
-              "C": "0.25 s",
-              "D": "2 s"
-            },
-            "answer": "B"
-          },
-          {
-            "id": 4,
             "topic": "2.6",
             "topic_name": "Segunda Ley de Newton",
             "text": "Si se aplica una fuerza neta de 45 N sobre un cuerpo de 9 kg, ¿cuál es su aceleración?",
@@ -65,20 +60,7 @@
             "answer": "C"
           },
           {
-            "id": 5,
-            "topic": "2.6",
-            "topic_name": "Concepto de peso",
-            "text": "Un astronauta tiene una masa de 80 kg. En la Luna, donde g = 1.6 m/s², ¿cuánto pesa?",
-            "options": {
-              "A": "800 N",
-              "B": "128 N",
-              "C": "50 N",
-              "D": "784 N"
-            },
-            "answer": "B"
-          },
-          {
-            "id": 6,
+            "id": 4,
             "topic": "3.3",
             "topic_name": "Energía cinética",
             "text": "¿Cuál es la energía cinética de un cuerpo de 4 kg que se mueve a 10 m/s?",
@@ -91,7 +73,7 @@
             "answer": "C"
           },
           {
-            "id": 7,
+            "id": 5,
             "topic": "3.5",
             "topic_name": "Conservación de la energía mecánica",
             "text": "Una roca de 2 kg se deja caer desde una altura de 20 m. Usando g = 10 m/s², ¿con qué velocidad llega al suelo? (Desprecia la fricción.)",
@@ -104,20 +86,7 @@
             "answer": "B"
           },
           {
-            "id": 8,
-            "topic": "3.6",
-            "topic_name": "Conservación del ímpetu",
-            "text": "Un chico de 60 kg corre a 5 m/s. ¿Cuál es su cantidad de movimiento?",
-            "options": {
-              "A": "12 kg·m/s",
-              "B": "65 kg·m/s",
-              "C": "300 kg·m/s",
-              "D": "30 kg·m/s"
-            },
-            "answer": "C"
-          },
-          {
-            "id": 9,
+            "id": 6,
             "topic": "4.2",
             "topic_name": "Teoría cinética de los gases",
             "text": "De acuerdo con la teoría cinética de los gases, la temperatura absoluta de un gas es una medida de:",
@@ -130,7 +99,7 @@
             "answer": "B"
           },
           {
-            "id": 10,
+            "id": 7,
             "topic": "5.1",
             "topic_name": "Caracterización de ondas mecánicas",
             "text": "La relación entre la velocidad de propagación (v), la frecuencia (f) y la longitud de onda (λ) de una onda es:",
@@ -143,7 +112,7 @@
             "answer": "C"
           },
           {
-            "id": 11,
+            "id": 8,
             "topic": "6.3",
             "topic_name": "Ley de Ohm",
             "text": "Una resistencia de 6 Ω tiene una diferencia de potencial de 18 V en sus extremos. ¿Cuál es la corriente que circula por ella?",
@@ -156,7 +125,7 @@
             "answer": "D"
           },
           {
-            "id": 12,
+            "id": 9,
             "topic": "6.3",
             "topic_name": "Potencia eléctrica",
             "text": "Una plancha opera a 110 V y consume una corriente de 5 A. ¿Cuál es su potencia?",
@@ -169,7 +138,7 @@
             "answer": "C"
           },
           {
-            "id": 13,
+            "id": 10,
             "topic": "7.1",
             "topic_name": "Principio de Arquímedes",
             "text": "El principio de Arquímedes establece que un cuerpo sumergido en un fluido experimenta:",
@@ -182,7 +151,7 @@
             "answer": "B"
           },
           {
-            "id": 14,
+            "id": 11,
             "topic": "8.1",
             "topic_name": "Reflexión y refracción de la luz",
             "text": "Cuando un rayo de luz pasa de un medio menos denso a uno más denso, ¿qué le sucede a su velocidad de propagación?",
@@ -195,7 +164,7 @@
             "answer": "C"
           },
           {
-            "id": 15,
+            "id": 12,
             "topic": "9.2",
             "topic_name": "Decaimiento radiactivo",
             "text": "El decaimiento radiactivo en el que un núcleo emite una partícula compuesta por dos protones y dos neutrones se denomina desintegración:",
@@ -211,10 +180,10 @@
       },
       {
         "subject": "Matemáticas",
-        "questions_count": 25,
+        "questions_count": 24,
         "questions": [
           {
-            "id": 16,
+            "id": 13,
             "topic": "1.3",
             "topic_name": "Expresiones algebraicas",
             "text": "Al simplificar la expresión $$5x - [3 - 2(x - 4)]$$ se obtiene:",
@@ -227,7 +196,7 @@
             "answer": "A"
           },
           {
-            "id": 17,
+            "id": 14,
             "topic": "1.1",
             "topic_name": "Raíces y potencias con exponente racional",
             "text": "El valor de $$27^{\\frac{2}{3}}$$ es:",
@@ -240,7 +209,7 @@
             "answer": "C"
           },
           {
-            "id": 18,
+            "id": 15,
             "topic": "1.2",
             "topic_name": "Números complejos — multiplicación",
             "text": "El producto $$(2 + 3i)(2 - 3i)$$ es:",
@@ -253,7 +222,7 @@
             "answer": "B"
           },
           {
-            "id": 19,
+            "id": 16,
             "topic": "2",
             "topic_name": "Factorización de trinomios",
             "text": "La factorización de $$x^2 - 5x + 6$$ es:",
@@ -266,7 +235,7 @@
             "answer": "C"
           },
           {
-            "id": 20,
+            "id": 17,
             "topic": "2.1",
             "topic_name": "Binomio de Newton",
             "text": "El coeficiente del término que contiene $$x^3$$ en el desarrollo de $$(x + 2)^5$$ es:",
@@ -279,7 +248,7 @@
             "answer": "B"
           },
           {
-            "id": 21,
+            "id": 18,
             "topic": "2.2",
             "topic_name": "Teorema del residuo",
             "text": "Al dividir el polinomio $$P(x) = x^3 - 3x^2 + x - 2$$ entre $$(x - 2)$$, el residuo es:",
@@ -292,7 +261,7 @@
             "answer": "C"
           },
           {
-            "id": 22,
+            "id": 19,
             "topic": "3.2",
             "topic_name": "Ecuaciones de primer grado",
             "text": "La solución de la ecuación $$3(2x - 1) = 2(x + 5) + 7$$ es:",
@@ -305,7 +274,7 @@
             "answer": "D"
           },
           {
-            "id": 23,
+            "id": 20,
             "topic": "3.3",
             "topic_name": "Ecuaciones de segundo grado",
             "text": "Las raíces de la ecuación $$x^2 - 7x + 12 = 0$$ son:",
@@ -318,7 +287,7 @@
             "answer": "C"
           },
           {
-            "id": 24,
+            "id": 21,
             "topic": "4.1",
             "topic_name": "Desigualdades de primer grado",
             "text": "La solución de la desigualdad $$2x - 7 < x + 3$$ es:",
@@ -331,7 +300,7 @@
             "answer": "B"
           },
           {
-            "id": 25,
+            "id": 22,
             "topic": "5.1",
             "topic_name": "Sistemas de ecuaciones lineales con dos incógnitas",
             "text": "La solución del sistema $$\\begin{cases}2x + y = 7\\\\x - y = 2\\end{cases}$$ es:",
@@ -344,7 +313,7 @@
             "answer": "A"
           },
           {
-            "id": 26,
+            "id": 23,
             "topic": "6.1",
             "topic_name": "Dominio de funciones algebraicas",
             "text": "El dominio de la función $$f(x) = \\sqrt{9 - x^2}$$ es:",
@@ -357,7 +326,7 @@
             "answer": "A"
           },
           {
-            "id": 27,
+            "id": 24,
             "topic": "7.1",
             "topic_name": "Medida de un ángulo — conversión",
             "text": "¿A cuántos radianes equivalen 270°?",
@@ -370,7 +339,7 @@
             "answer": "C"
           },
           {
-            "id": 28,
+            "id": 25,
             "topic": "7.1",
             "topic_name": "Razones trigonométricas",
             "text": "En un triángulo rectángulo, si la hipotenusa mide 10 y el cateto opuesto al ángulo $$\\theta$$ mide 6, entonces $$\\text{sen}\\,\\theta$$ es:",
@@ -383,7 +352,7 @@
             "answer": "C"
           },
           {
-            "id": 29,
+            "id": 26,
             "topic": "7.2",
             "topic_name": "Identidades trigonométricas",
             "text": "Si $$\\cos\\theta = \\frac{3}{5}$$, entonces $$\\text{sen}^2\\theta$$ es:",
@@ -396,7 +365,7 @@
             "answer": "B"
           },
           {
-            "id": 30,
+            "id": 27,
             "topic": "8",
             "topic_name": "Funciones logarítmicas",
             "text": "El valor de $$\\log_2 32$$ es:",
@@ -409,7 +378,7 @@
             "answer": "D"
           },
           {
-            "id": 31,
+            "id": 28,
             "topic": "9.1",
             "topic_name": "Distancia entre dos puntos",
             "text": "La distancia entre los puntos A(1, 2) y B(4, 6) es:",
@@ -422,7 +391,7 @@
             "answer": "C"
           },
           {
-            "id": 32,
+            "id": 29,
             "topic": "9.3",
             "topic_name": "Pendiente de una recta",
             "text": "La pendiente de la recta que pasa por los puntos (2, 3) y (6, 11) es:",
@@ -435,7 +404,7 @@
             "answer": "B"
           },
           {
-            "id": 33,
+            "id": 30,
             "topic": "10",
             "topic_name": "Circunferencia",
             "text": "La ecuación $$x^2 + y^2 - 4x + 6y - 12 = 0$$ representa una circunferencia con radio:",
@@ -448,7 +417,7 @@
             "answer": "C"
           },
           {
-            "id": 34,
+            "id": 31,
             "topic": "11",
             "topic_name": "Parábola",
             "text": "La ecuación de la parábola con vértice en el origen y foco en (0, 3) es:",
@@ -461,7 +430,7 @@
             "answer": "B"
           },
           {
-            "id": 35,
+            "id": 32,
             "topic": "12",
             "topic_name": "Elipse",
             "text": "En la ecuación de la elipse $$\\frac{x^2}{25} + \\frac{y^2}{16} = 1$$, el semieje mayor mide:",
@@ -474,7 +443,7 @@
             "answer": "B"
           },
           {
-            "id": 36,
+            "id": 33,
             "topic": "13",
             "topic_name": "Hipérbola",
             "text": "En la hipérbola $$\\frac{x^2}{9} - \\frac{y^2}{16} = 1$$, las pendientes de las asíntotas son:",
@@ -487,7 +456,7 @@
             "answer": "B"
           },
           {
-            "id": 37,
+            "id": 34,
             "topic": "15",
             "topic_name": "Límites",
             "text": "El valor del límite $$\\displaystyle\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}$$ es:",
@@ -500,7 +469,7 @@
             "answer": "C"
           },
           {
-            "id": 38,
+            "id": 35,
             "topic": "16.2",
             "topic_name": "Obtención de derivadas",
             "text": "La derivada de $$f(x) = 3x^4 - 5x^2 + 2x - 7$$ es:",
@@ -513,7 +482,7 @@
             "answer": "A"
           },
           {
-            "id": 39,
+            "id": 36,
             "topic": "17.3",
             "topic_name": "Integral inmediata",
             "text": "La integral indefinida $$\\int (4x^3 - 6x)\\,dx$$ es:",
@@ -524,41 +493,15 @@
               "D": "$$x^4 - 3x + C$$"
             },
             "answer": "B"
-          },
-          {
-            "id": 40,
-            "topic": "5.2",
-            "topic_name": "Sistemas de ecuaciones lineales con tres incógnitas",
-            "text": "El método de Cramer para resolver sistemas de ecuaciones lineales utiliza:",
-            "options": {
-              "A": "Matrices inversas",
-              "B": "Eliminación gaussiana",
-              "C": "Determinantes",
-              "D": "Sustitución iterativa"
-            },
-            "answer": "C"
           }
         ]
       },
       {
         "subject": "Química",
-        "questions_count": 15,
+        "questions_count": 13,
         "questions": [
           {
-            "id": 41,
-            "topic": "1.2",
-            "topic_name": "Estructura atómica",
-            "text": "El número de protones en el núcleo de un átomo determina su:",
-            "options": {
-              "A": "Número másico",
-              "B": "Número atómico",
-              "C": "Número de neutrones",
-              "D": "Valencia"
-            },
-            "answer": "B"
-          },
-          {
-            "id": 42,
+            "id": 37,
             "topic": "1.2",
             "topic_name": "Configuraciones electrónicas",
             "text": "El número de electrones en la capa de valencia del cloro (Z = 17) es:",
@@ -571,7 +514,7 @@
             "answer": "C"
           },
           {
-            "id": 43,
+            "id": 38,
             "topic": "1.3",
             "topic_name": "Propiedades periódicas",
             "text": "La electronegatividad en la tabla periódica tiende a:",
@@ -584,7 +527,7 @@
             "answer": "A"
           },
           {
-            "id": 44,
+            "id": 39,
             "topic": "1.5",
             "topic_name": "Mol",
             "text": "¿Cuántos átomos hay en 2 moles de oxígeno (O)?",
@@ -597,7 +540,7 @@
             "answer": "B"
           },
           {
-            "id": 45,
+            "id": 40,
             "topic": "2.4",
             "topic_name": "Ácidos y bases — pH",
             "text": "Una solución acuosa con pH = 3 es:",
@@ -610,7 +553,7 @@
             "answer": "C"
           },
           {
-            "id": 46,
+            "id": 41,
             "topic": "1.3",
             "topic_name": "Tipos de enlace",
             "text": "El agua (H₂O) presenta un enlace de tipo:",
@@ -623,7 +566,7 @@
             "answer": "C"
           },
           {
-            "id": 47,
+            "id": 42,
             "topic": "2.5",
             "topic_name": "Soluciones — molaridad",
             "text": "¿Cuál es la molaridad de una solución que contiene 4 moles de NaCl disueltos en 2 litros de solución?",
@@ -636,7 +579,7 @@
             "answer": "C"
           },
           {
-            "id": 48,
+            "id": 43,
             "topic": "1.4",
             "topic_name": "Clasificación de compuestos",
             "text": "El SO₃ es un ejemplo de:",
@@ -649,7 +592,7 @@
             "answer": "C"
           },
           {
-            "id": 49,
+            "id": 44,
             "topic": "5.1",
             "topic_name": "Reacciones endotérmicas y exotérmicas",
             "text": "Una reacción química que libera calor al ambiente se denomina:",
@@ -662,7 +605,7 @@
             "answer": "C"
           },
           {
-            "id": 50,
+            "id": 45,
             "topic": "5.5",
             "topic_name": "Equilibrio químico — Ley de Le Chatelier",
             "text": "Según la Ley de Le Chatelier, si se aumenta la concentración de un reactivo en un sistema en equilibrio, el sistema:",
@@ -675,7 +618,7 @@
             "answer": "C"
           },
           {
-            "id": 51,
+            "id": 46,
             "topic": "6.2",
             "topic_name": "Alcanos, alquenos y alquinos",
             "text": "Los compuestos orgánicos que presentan únicamente enlaces simples carbono-carbono se llaman:",
@@ -688,7 +631,7 @@
             "answer": "D"
           },
           {
-            "id": 52,
+            "id": 47,
             "topic": "6.3",
             "topic_name": "Grupos funcionales",
             "text": "El grupo funcional −OH presente en compuestos orgánicos corresponde a:",
@@ -701,20 +644,7 @@
             "answer": "B"
           },
           {
-            "id": 53,
-            "topic": "5.6",
-            "topic_name": "Velocidad de reacción",
-            "text": "El aumento de temperatura en una reacción química generalmente:",
-            "options": {
-              "A": "Disminuye la velocidad de reacción",
-              "B": "No tiene efecto sobre la velocidad",
-              "C": "Aumenta la velocidad de reacción",
-              "D": "Detiene completamente la reacción"
-            },
-            "answer": "C"
-          },
-          {
-            "id": 54,
+            "id": 48,
             "topic": "2.1",
             "topic_name": "Agua — puentes de hidrógeno",
             "text": "El elevado punto de ebullición del agua (100°C) en comparación con otras moléculas de masa similar se debe principalmente a:",
@@ -727,7 +657,7 @@
             "answer": "B"
           },
           {
-            "id": 55,
+            "id": 49,
             "topic": "3.4",
             "topic_name": "Reacciones de óxido-reducción",
             "text": "En la reacción Zn + CuSO₄ → ZnSO₄ + Cu, el zinc:",
@@ -743,10 +673,10 @@
       },
       {
         "subject": "Biología",
-        "questions_count": 15,
+        "questions_count": 13,
         "questions": [
           {
-            "id": 56,
+            "id": 50,
             "topic": "1.1",
             "topic_name": "Teoría Celular",
             "text": "Uno de los postulados fundamentales de la Teoría Celular es:",
@@ -759,20 +689,7 @@
             "answer": "A"
           },
           {
-            "id": 57,
-            "topic": "1.2",
-            "topic_name": "Organelos celulares",
-            "text": "El organelo celular responsable de la síntesis de proteínas es:",
-            "options": {
-              "A": "Mitocondria",
-              "B": "Ribosoma",
-              "C": "Lisosoma",
-              "D": "Vacuola"
-            },
-            "answer": "B"
-          },
-          {
-            "id": 58,
+            "id": 51,
             "topic": "1.2",
             "topic_name": "Células procariotas y eucariotas",
             "text": "La principal diferencia entre células procariotas y eucariotas es que las procariotas:",
@@ -785,7 +702,7 @@
             "answer": "C"
           },
           {
-            "id": 59,
+            "id": 52,
             "topic": "2.2",
             "topic_name": "Fotosíntesis — fase oscura",
             "text": "En la fase oscura de la fotosíntesis, la principal reacción que ocurre es:",
@@ -798,7 +715,7 @@
             "answer": "C"
           },
           {
-            "id": 60,
+            "id": 53,
             "topic": "2.3",
             "topic_name": "Respiración anaerobia — glucólisis",
             "text": "La glucólisis, primera etapa de la respiración celular, ocurre en el:",
@@ -811,7 +728,7 @@
             "answer": "D"
           },
           {
-            "id": 61,
+            "id": 54,
             "topic": "3.1",
             "topic_name": "Ciclo celular",
             "text": "La fase S del ciclo celular se caracteriza por:",
@@ -824,7 +741,7 @@
             "answer": "B"
           },
           {
-            "id": 62,
+            "id": 55,
             "topic": "3.2",
             "topic_name": "Meiosis",
             "text": "La meiosis, a diferencia de la mitosis, produce:",
@@ -837,7 +754,7 @@
             "answer": "B"
           },
           {
-            "id": 63,
+            "id": 56,
             "topic": "4.1",
             "topic_name": "Principios de la herencia — Mendel",
             "text": "En un cruce entre dos individuos heterocigotos (Aa × Aa), ¿qué proporción fenotípica se espera en la descendencia?",
@@ -850,7 +767,7 @@
             "answer": "B"
           },
           {
-            "id": 64,
+            "id": 57,
             "topic": "3.1",
             "topic_name": "Estructura del ADN",
             "text": "Las dos cadenas de la molécula de ADN se mantienen unidas por:",
@@ -863,7 +780,7 @@
             "answer": "A"
           },
           {
-            "id": 65,
+            "id": 58,
             "topic": "5.2",
             "topic_name": "Teorías para explicar el proceso evolutivo",
             "text": "La teoría de Darwin-Wallace sobre la evolución se basa en el mecanismo de:",
@@ -876,7 +793,7 @@
             "answer": "C"
           },
           {
-            "id": 66,
+            "id": 59,
             "topic": "6.1",
             "topic_name": "Estructura del ecosistema",
             "text": "En una cadena alimentaria, los organismos que producen su propio alimento a partir de la energía solar se denominan:",
@@ -889,7 +806,7 @@
             "answer": "D"
           },
           {
-            "id": 67,
+            "id": 60,
             "topic": "2.1",
             "topic_name": "Papel del ATP en el metabolismo",
             "text": "El ATP es importante en el metabolismo celular porque:",
@@ -902,7 +819,7 @@
             "answer": "C"
           },
           {
-            "id": 68,
+            "id": 61,
             "topic": "4.2",
             "topic_name": "Mutaciones",
             "text": "Una mutación que ocurre en las células germinales de un organismo:",
@@ -915,20 +832,7 @@
             "answer": "D"
           },
           {
-            "id": 69,
-            "topic": "6.1",
-            "topic_name": "Diversidad biológica",
-            "text": "El bioma terrestre con mayor biodiversidad del planeta es:",
-            "options": {
-              "A": "El bosque templado caducifolio",
-              "B": "La sabana africana",
-              "C": "La selva tropical",
-              "D": "El bosque boreal de coníferas"
-            },
-            "answer": "C"
-          },
-          {
-            "id": 70,
+            "id": 62,
             "topic": "1.2",
             "topic_name": "Estructuras celulares — virus",
             "text": "Los virus se diferencian de los seres vivos porque:",
@@ -943,11 +847,11 @@
         ]
       },
       {
-        "subject": "Español y Literatura",
-        "questions_count": 15,
+        "subject": "Español",
+        "questions_count": 18,
         "questions": [
           {
-            "id": 71,
+            "id": 63,
             "topic": "1.2",
             "topic_name": "Función apelativa del lenguaje",
             "text": "Cuando un hablante usa el lenguaje para influir en la conducta del receptor mediante órdenes, ruegos o preguntas, se cumple la función:",
@@ -960,7 +864,7 @@
             "answer": "D"
           },
           {
-            "id": 72,
+            "id": 64,
             "topic": "2.3",
             "topic_name": "Discurso argumentativo",
             "text": "El texto argumentativo tiene como propósito principal:",
@@ -973,7 +877,7 @@
             "answer": "C"
           },
           {
-            "id": 73,
+            "id": 65,
             "topic": "3.2",
             "topic_name": "Ideas principales y secundarias",
             "text": "La idea principal de un texto es:",
@@ -986,7 +890,7 @@
             "answer": "C"
           },
           {
-            "id": 74,
+            "id": 66,
             "topic": "4.2",
             "topic_name": "Uso del sujeto",
             "text": "En la oración \"Los estudiantes de la preparatoria aprobaron el examen final\", el sujeto es:",
@@ -999,7 +903,7 @@
             "answer": "B"
           },
           {
-            "id": 75,
+            "id": 67,
             "topic": "6.2",
             "topic_name": "Sinónimos",
             "text": "El sinónimo más adecuado de la palabra \"efímero\" es:",
@@ -1012,7 +916,7 @@
             "answer": "B"
           },
           {
-            "id": 76,
+            "id": 68,
             "topic": "6.1",
             "topic_name": "Analogías",
             "text": "Completa la analogía: MÉDICO : HOSPITAL :: MAESTRO :",
@@ -1025,85 +929,7 @@
             "answer": "C"
           },
           {
-            "id": 77,
-            "topic": "1",
-            "topic_name": "Texto narrativo",
-            "text": "El texto narrativo se caracteriza principalmente por:",
-            "options": {
-              "A": "Expresar los sentimientos del autor de manera lírica",
-              "B": "Presentar hechos, personajes y conflictos en el tiempo",
-              "C": "Persuadir al lector sobre una postura determinada",
-              "D": "Describir detalladamente objetos y espacios"
-            },
-            "answer": "B"
-          },
-          {
-            "id": 78,
-            "topic": "2.1",
-            "topic_name": "Géneros literarios — épico",
-            "text": "La epopeya y la novela de aventuras son ejemplos del género literario:",
-            "options": {
-              "A": "Lírico",
-              "B": "Dramático",
-              "C": "Épico",
-              "D": "Poético"
-            },
-            "answer": "C"
-          },
-          {
-            "id": 79,
-            "topic": "1.5",
-            "topic_name": "Figuras retóricas",
-            "text": "\"Sus dientes son perlas\" es un ejemplo de:",
-            "options": {
-              "A": "Hipérbole",
-              "B": "Metáfora",
-              "C": "Antítesis",
-              "D": "Personificación"
-            },
-            "answer": "B"
-          },
-          {
-            "id": 80,
-            "topic": "2.3",
-            "topic_name": "Texto narrativo — narrador",
-            "text": "El narrador omnisciente es aquel que:",
-            "options": {
-              "A": "Solo narra lo que percibe desde fuera de los personajes",
-              "B": "Es el protagonista de la historia",
-              "C": "Conoce los pensamientos y sentimientos de todos los personajes",
-              "D": "Interviene directamente en la trama"
-            },
-            "answer": "C"
-          },
-          {
-            "id": 81,
-            "topic": "2.2",
-            "topic_name": "Realismo literario",
-            "text": "El Realismo literario del siglo XIX se caracteriza por:",
-            "options": {
-              "A": "El uso de elementos fantásticos y sobrenaturales",
-              "B": "La representación fiel y objetiva de la realidad social",
-              "C": "La exaltación de los sentimientos y la naturaleza",
-              "D": "El uso de símbolos y lenguaje hermético"
-            },
-            "answer": "B"
-          },
-          {
-            "id": 82,
-            "topic": "1.4",
-            "topic_name": "Texto dramático",
-            "text": "El texto dramático se diferencia de otros géneros por:",
-            "options": {
-              "A": "Emplear un narrador que describe los hechos",
-              "B": "Estar destinado a la representación escénica",
-              "C": "Organizarse mediante tesis y argumentos",
-              "D": "Centrarse en la expresión subjetiva del autor"
-            },
-            "answer": "B"
-          },
-          {
-            "id": 83,
+            "id": 69,
             "topic": "3.1",
             "topic_name": "Redacción — coherencia",
             "text": "La coherencia textual se refiere a:",
@@ -1116,7 +942,7 @@
             "answer": "B"
           },
           {
-            "id": 84,
+            "id": 70,
             "topic": "6.3",
             "topic_name": "Antónimos",
             "text": "El antónimo de \"diligente\" es:",
@@ -1129,7 +955,7 @@
             "answer": "D"
           },
           {
-            "id": 85,
+            "id": 71,
             "topic": "2",
             "topic_name": "Formas del discurso",
             "text": "Un texto que organiza ideas mediante tesis, argumentos y conclusión corresponde a la forma discursiva:",
@@ -1140,6 +966,259 @@
               "D": "Argumentativa"
             },
             "answer": "D"
+          },
+          {
+            "id": 72,
+            "topic": "3.2",
+            "topic_name": "Comprensión de lectura — idea principal",
+            "text": "Lee el siguiente texto:\n\n\"El agua dulce representa apenas el 2.5% del total de agua en el planeta. De ese porcentaje, casi el 70% se encuentra congelada en los polos y glaciares. El agua subterránea constituye cerca del 30%, y menos del 1% corresponde a ríos, lagos y humedales accesibles. El crecimiento poblacional y la actividad industrial han incrementado la demanda, poniendo en riesgo las reservas disponibles.\"\n\nLa idea principal del texto es:",
+            "options": {
+              "A": "El agua congelada en los polos es inaccesible para el consumo",
+              "B": "El agua dulce disponible es escasa y la demanda creciente la pone en riesgo",
+              "C": "La actividad industrial contamina la mayor parte del agua dulce",
+              "D": "Los ríos y lagos son la fuente más importante de agua dulce"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 73,
+            "topic": "3.4",
+            "topic_name": "Comprensión de lectura — inferencia de datos",
+            "text": "Lee el siguiente texto:\n\n\"El agua dulce representa apenas el 2.5% del total de agua en el planeta. De ese porcentaje, casi el 70% se encuentra congelada en los polos y glaciares. El agua subterránea constituye cerca del 30%, y menos del 1% corresponde a ríos, lagos y humedales accesibles. El crecimiento poblacional y la actividad industrial han incrementado la demanda, poniendo en riesgo las reservas disponibles.\"\n\nDel texto se puede inferir que:",
+            "options": {
+              "A": "La mayor parte del agua dulce no está disponible para uso directo",
+              "B": "El agua subterránea es más abundante que la de los océanos",
+              "C": "La población mundial ha disminuido su consumo de agua",
+              "D": "Los glaciares se derriten más rápido que los ríos"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 74,
+            "topic": "3.6",
+            "topic_name": "Comprensión de lectura — propósito del autor",
+            "text": "Lee el siguiente texto:\n\n\"El agua dulce representa apenas el 2.5% del total de agua en el planeta. De ese porcentaje, casi el 70% se encuentra congelada en los polos y glaciares. El agua subterránea constituye cerca del 30%, y menos del 1% corresponde a ríos, lagos y humedales accesibles. El crecimiento poblacional y la actividad industrial han incrementado la demanda, poniendo en riesgo las reservas disponibles.\"\n\nEl propósito del autor es:",
+            "options": {
+              "A": "Narrar la historia del aprovechamiento del agua",
+              "B": "Persuadir al lector de reducir su consumo de agua",
+              "C": "Informar sobre la distribución y disponibilidad del agua dulce",
+              "D": "Describir los métodos de purificación del agua"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 75,
+            "topic": "3.5",
+            "topic_name": "Comprensión de lectura — rasgos del personaje",
+            "text": "Lee el siguiente fragmento:\n\n\"Doña Elvira llegaba siempre antes que nadie al taller de costura. Revisaba cada máquina, preparaba los hilos y dejaba todo dispuesto para las demás. Cuando alguna aprendiz cometía un error, en lugar de reprenderla, deshacía la costura en silencio y le mostraba el procedimiento correcto, paso a paso, las veces que fuera necesario.\"\n\nDel texto se infiere que Doña Elvira es:",
+            "options": {
+              "A": "Impaciente pero eficiente en su trabajo",
+              "B": "Metódica, generosa y paciente",
+              "C": "Perfeccionista y exigente con las aprendices",
+              "D": "Tímida y reservada en su trato"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 76,
+            "topic": "1.2",
+            "topic_name": "Función referencial del lenguaje",
+            "text": "Cuando el lenguaje se utiliza para transmitir información objetiva sobre la realidad, se cumple la función:",
+            "options": {
+              "A": "Emotiva",
+              "B": "Apelativa",
+              "C": "Referencial",
+              "D": "Metalingüística"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 77,
+            "topic": "7.1",
+            "topic_name": "Ortografía — uso de b/v",
+            "text": "Selecciona la opción escrita correctamente:",
+            "options": {
+              "A": "El presidente recivió al embajador en su despacho",
+              "B": "El presidente recibió al embajador en su despacho",
+              "C": "El presidente resibió al embajador en su despacho",
+              "D": "El precidente recibió al enbajador en su despacho"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 78,
+            "topic": "7.7",
+            "topic_name": "Ortografía — acentuación",
+            "text": "¿Cuál de las siguientes palabras es esdrújula y está correctamente acentuada?",
+            "options": {
+              "A": "exámen",
+              "B": "imágen",
+              "C": "brújula",
+              "D": "volúmen"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 79,
+            "topic": "7.8",
+            "topic_name": "Ortografía — puntuación",
+            "text": "¿Cuál es la función de los dos puntos en el siguiente enunciado?\n\n\"El maestro dijo: 'Estudien para el examen'.\"",
+            "options": {
+              "A": "Separar ideas independientes",
+              "B": "Introducir una cita textual",
+              "C": "Indicar una enumeración",
+              "D": "Señalar una pausa breve"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 80,
+            "topic": "4.3",
+            "topic_name": "Gramática — uso del predicado",
+            "text": "En la oración \"Los alumnos de tercer grado presentaron el examen ayer\", el predicado es:",
+            "options": {
+              "A": "Los alumnos de tercer grado",
+              "B": "de tercer grado presentaron",
+              "C": "presentaron el examen ayer",
+              "D": "el examen ayer"
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Literatura",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 81,
+            "topic": "1",
+            "topic_name": "Texto narrativo",
+            "text": "El texto narrativo se caracteriza principalmente por:",
+            "options": {
+              "A": "Expresar los sentimientos del autor de manera lírica",
+              "B": "Presentar hechos, personajes y conflictos en el tiempo",
+              "C": "Persuadir al lector sobre una postura determinada",
+              "D": "Describir detalladamente objetos y espacios"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 82,
+            "topic": "2.1",
+            "topic_name": "Géneros literarios — épico",
+            "text": "La epopeya y la novela de aventuras son ejemplos del género literario:",
+            "options": {
+              "A": "Lírico",
+              "B": "Dramático",
+              "C": "Épico",
+              "D": "Poético"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 83,
+            "topic": "1.5",
+            "topic_name": "Figuras retóricas",
+            "text": "\"Sus dientes son perlas\" es un ejemplo de:",
+            "options": {
+              "A": "Hipérbole",
+              "B": "Metáfora",
+              "C": "Antítesis",
+              "D": "Personificación"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 84,
+            "topic": "2.3",
+            "topic_name": "Texto narrativo — narrador",
+            "text": "El narrador omnisciente es aquel que:",
+            "options": {
+              "A": "Solo narra lo que percibe desde fuera de los personajes",
+              "B": "Es el protagonista de la historia",
+              "C": "Conoce los pensamientos y sentimientos de todos los personajes",
+              "D": "Interviene directamente en la trama"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 85,
+            "topic": "2.2",
+            "topic_name": "Realismo literario",
+            "text": "El Realismo literario del siglo XIX se caracteriza por:",
+            "options": {
+              "A": "El uso de elementos fantásticos y sobrenaturales",
+              "B": "La representación fiel y objetiva de la realidad social",
+              "C": "La exaltación de los sentimientos y la naturaleza",
+              "D": "El uso de símbolos y lenguaje hermético"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 86,
+            "topic": "1.4",
+            "topic_name": "Texto dramático",
+            "text": "El texto dramático se diferencia de otros géneros por:",
+            "options": {
+              "A": "Emplear un narrador que describe los hechos",
+              "B": "Estar destinado a la representación escénica",
+              "C": "Organizarse mediante tesis y argumentos",
+              "D": "Centrarse en la expresión subjetiva del autor"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 87,
+            "topic": "1.5",
+            "topic_name": "Texto poético — rima",
+            "text": "En los versos \"En tanto que de rosa y de azucena / se muestra la color en vuestro gesto\", la rima entre \"azucena\" y otra palabra al final de un verso posterior se clasifica como:",
+            "options": {
+              "A": "Asonante, porque coinciden solo las vocales",
+              "B": "Consonante, porque coinciden vocales y consonantes desde la vocal acentuada",
+              "C": "Libre, porque no sigue un patrón definido",
+              "D": "Pareada, porque riman versos consecutivos"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 88,
+            "topic": "2.2",
+            "topic_name": "Corrientes literarias — contemporánea",
+            "text": "La obra de Gabriel García Márquez se inscribe en una corriente que mezcla lo cotidiano con lo fantástico, denominada:",
+            "options": {
+              "A": "Naturalismo",
+              "B": "Realismo mágico",
+              "C": "Romanticismo",
+              "D": "Modernismo"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 89,
+            "topic": "2.3",
+            "topic_name": "Texto narrativo — cuento y novela",
+            "text": "Una diferencia fundamental entre el cuento y la novela es que el cuento:",
+            "options": {
+              "A": "Siempre está escrito en primera persona",
+              "B": "Desarrolla múltiples líneas argumentales",
+              "C": "Se caracteriza por su brevedad y unidad de efecto",
+              "D": "Prescinde de personajes y diálogos"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 90,
+            "topic": "3.1",
+            "topic_name": "Técnicas de investigación — paráfrasis",
+            "text": "La paráfrasis consiste en:",
+            "options": {
+              "A": "Copiar textualmente las palabras de un autor entre comillas",
+              "B": "Expresar con palabras propias las ideas de otro autor",
+              "C": "Resumir un texto eliminando las ideas secundarias",
+              "D": "Comentar críticamente la postura de un autor"
+            },
+            "answer": "B"
           }
         ]
       },
@@ -1148,7 +1227,7 @@
         "questions_count": 10,
         "questions": [
           {
-            "id": 86,
+            "id": 91,
             "topic": "2.1",
             "topic_name": "La Ilustración",
             "text": "El pensamiento de la Ilustración del siglo XVIII se caracterizó por:",
@@ -1161,7 +1240,7 @@
             "answer": "B"
           },
           {
-            "id": 87,
+            "id": 92,
             "topic": "2.2",
             "topic_name": "Revolución Francesa",
             "text": "La Declaración de los Derechos del Hombre y del Ciudadano (1789) fue un producto directo de:",
@@ -1174,7 +1253,7 @@
             "answer": "B"
           },
           {
-            "id": 88,
+            "id": 93,
             "topic": "2.2",
             "topic_name": "Revolución Industrial",
             "text": "La Revolución Industrial surgió primero en:",
@@ -1187,7 +1266,7 @@
             "answer": "D"
           },
           {
-            "id": 89,
+            "id": 94,
             "topic": "4.2",
             "topic_name": "El imperialismo",
             "text": "El imperialismo europeo de finales del siglo XIX se caracterizó por:",
@@ -1200,7 +1279,7 @@
             "answer": "B"
           },
           {
-            "id": 90,
+            "id": 95,
             "topic": "5.1",
             "topic_name": "Primera Guerra Mundial",
             "text": "El detonante inmediato de la Primera Guerra Mundial fue:",
@@ -1213,7 +1292,7 @@
             "answer": "B"
           },
           {
-            "id": 91,
+            "id": 96,
             "topic": "5.2",
             "topic_name": "Revolución Socialista Rusa",
             "text": "La Revolución Bolchevique de octubre de 1917 en Rusia fue liderada por:",
@@ -1226,7 +1305,7 @@
             "answer": "C"
           },
           {
-            "id": 92,
+            "id": 97,
             "topic": "6.1",
             "topic_name": "La Crisis de 1929",
             "text": "La Gran Depresión de 1929 comenzó con:",
@@ -1239,7 +1318,7 @@
             "answer": "B"
           },
           {
-            "id": 93,
+            "id": 98,
             "topic": "7.2",
             "topic_name": "Segunda Guerra Mundial",
             "text": "El genocidio sistemático de judíos y otras minorías llevado a cabo por el régimen nazi durante la Segunda Guerra Mundial se denomina:",
@@ -1252,7 +1331,7 @@
             "answer": "D"
           },
           {
-            "id": 94,
+            "id": 99,
             "topic": "8.2",
             "topic_name": "La Guerra Fría",
             "text": "La Guerra Fría fue el período de tensión ideológica y estratégica entre:",
@@ -1265,7 +1344,7 @@
             "answer": "B"
           },
           {
-            "id": 95,
+            "id": 100,
             "topic": "9.1",
             "topic_name": "El mundo actual",
             "text": "La caída del Muro de Berlín en 1989 simbolizó principalmente:",
@@ -1284,7 +1363,7 @@
         "questions_count": 10,
         "questions": [
           {
-            "id": 96,
+            "id": 101,
             "topic": "1.2",
             "topic_name": "Conquista de México",
             "text": "La alianza entre Hernán Cortés y los tlaxcaltecas fue determinante en la conquista de México porque:",
@@ -1297,7 +1376,7 @@
             "answer": "B"
           },
           {
-            "id": 97,
+            "id": 102,
             "topic": "1.5",
             "topic_name": "Reformas Borbónicas",
             "text": "Las Reformas Borbónicas del siglo XVIII en la Nueva España buscaron principalmente:",
@@ -1310,7 +1389,7 @@
             "answer": "B"
           },
           {
-            "id": 98,
+            "id": 103,
             "topic": "2.2",
             "topic_name": "Consumación de la Independencia",
             "text": "El Plan de Iguala, proclamado por Agustín de Iturbide en 1821, garantizaba tres principios conocidos como las Tres Garantías:",
@@ -1323,7 +1402,7 @@
             "answer": "B"
           },
           {
-            "id": 99,
+            "id": 104,
             "topic": "4.2",
             "topic_name": "Constitución de 1857",
             "text": "La Constitución Política de 1857 fue promulgada durante la presidencia de:",
@@ -1336,7 +1415,7 @@
             "answer": "B"
           },
           {
-            "id": 100,
+            "id": 105,
             "topic": "4.3",
             "topic_name": "Leyes de Reforma",
             "text": "Las Leyes de Reforma promulgadas por Benito Juárez establecieron, entre otras medidas:",
@@ -1349,7 +1428,7 @@
             "answer": "B"
           },
           {
-            "id": 101,
+            "id": 106,
             "topic": "5",
             "topic_name": "El Porfiriato",
             "text": "El Porfiriato (1876−1911) se caracterizó por:",
@@ -1362,7 +1441,7 @@
             "answer": "C"
           },
           {
-            "id": 102,
+            "id": 107,
             "topic": "6.1",
             "topic_name": "Revolución Mexicana — Madero",
             "text": "El Plan de San Luis, redactado por Francisco I. Madero, convocaba a:",
@@ -1375,7 +1454,7 @@
             "answer": "B"
           },
           {
-            "id": 103,
+            "id": 108,
             "topic": "6.3",
             "topic_name": "Constitución de 1917",
             "text": "La Constitución Política de los Estados Unidos Mexicanos de 1917 fue promulgada durante el gobierno de:",
@@ -1388,7 +1467,7 @@
             "answer": "B"
           },
           {
-            "id": 104,
+            "id": 109,
             "topic": "7.3",
             "topic_name": "Cardenismo",
             "text": "Una de las acciones más trascendentes del gobierno de Lázaro Cárdenas (1934−1940) fue:",
@@ -1401,7 +1480,7 @@
             "answer": "B"
           },
           {
-            "id": 105,
+            "id": 110,
             "topic": "8.2",
             "topic_name": "México contemporáneo — milagro mexicano",
             "text": "El período económico en México conocido como \"milagro mexicano\" (1952−1970) se caracterizó por:",
@@ -1417,10 +1496,10 @@
       },
       {
         "subject": "Geografía",
-        "questions_count": 15,
+        "questions_count": 10,
         "questions": [
           {
-            "id": 106,
+            "id": 111,
             "topic": "1.2",
             "topic_name": "Coordenadas geográficas",
             "text": "Las coordenadas geográficas que permiten ubicar cualquier punto en la superficie terrestre son:",
@@ -1433,7 +1512,7 @@
             "answer": "B"
           },
           {
-            "id": 107,
+            "id": 112,
             "topic": "1.3",
             "topic_name": "Tectónica de placas",
             "text": "La teoría de la tectónica de placas explica principalmente:",
@@ -1446,20 +1525,7 @@
             "answer": "C"
           },
           {
-            "id": 108,
-            "topic": "1.3",
-            "topic_name": "Relieve terrestre",
-            "text": "La cordillera más extensa del mundo es:",
-            "options": {
-              "A": "El Himalaya",
-              "B": "Los Alpes",
-              "C": "Los Andes",
-              "D": "Las Rocosas"
-            },
-            "answer": "C"
-          },
-          {
-            "id": 109,
+            "id": 113,
             "topic": "2.2",
             "topic_name": "Cambio climático — efecto invernadero",
             "text": "El efecto invernadero es causado principalmente por la acumulación en la atmósfera de:",
@@ -1472,7 +1538,7 @@
             "answer": "C"
           },
           {
-            "id": 110,
+            "id": 114,
             "topic": "2.3",
             "topic_name": "Población mundial",
             "text": "El fenómeno por el cual la población se concentra en las ciudades se denomina:",
@@ -1485,7 +1551,7 @@
             "answer": "C"
           },
           {
-            "id": 111,
+            "id": 115,
             "topic": "2.4",
             "topic_name": "Economía mundial — trasnacionales",
             "text": "Las empresas denominadas \"trasnacionales\" son aquellas que:",
@@ -1498,33 +1564,7 @@
             "answer": "B"
           },
           {
-            "id": 112,
-            "topic": "2.1",
-            "topic_name": "Regiones naturales",
-            "text": "La región natural con mayor diversidad biológica del planeta es:",
-            "options": {
-              "A": "La tundra ártica",
-              "B": "La selva tropical",
-              "C": "El desierto",
-              "D": "La taiga siberiana"
-            },
-            "answer": "B"
-          },
-          {
-            "id": 113,
-            "topic": "1.3",
-            "topic_name": "Ciclo hidrológico",
-            "text": "El ciclo hidrológico describe:",
-            "options": {
-              "A": "El movimiento de los continentes a través del tiempo geológico",
-              "B": "La circulación continua del agua entre la atmósfera, la superficie y el subsuelo",
-              "C": "Las corrientes marinas profundas del océano",
-              "D": "La distribución de la lluvia ácida en regiones industrializadas"
-            },
-            "answer": "B"
-          },
-          {
-            "id": 114,
+            "id": 116,
             "topic": "2.2",
             "topic_name": "Contaminación atmosférica",
             "text": "La lluvia ácida se forma principalmente por la reacción del vapor de agua atmosférico con:",
@@ -1537,7 +1577,7 @@
             "answer": "B"
           },
           {
-            "id": 115,
+            "id": 117,
             "topic": "2.6",
             "topic_name": "Geografía económica de México",
             "text": "Los principales yacimientos de petróleo en México se localizan en:",
@@ -1550,7 +1590,7 @@
             "answer": "C"
           },
           {
-            "id": 116,
+            "id": 118,
             "topic": "2.5",
             "topic_name": "División política de México",
             "text": "El territorio de México está organizado políticamente en:",
@@ -1563,20 +1603,7 @@
             "answer": "B"
           },
           {
-            "id": 117,
-            "topic": "2.4",
-            "topic_name": "Globalización económica",
-            "text": "La globalización económica ha impulsado principalmente:",
-            "options": {
-              "A": "La autosuficiencia económica de los países en desarrollo",
-              "B": "La reducción de las diferencias económicas entre países",
-              "C": "La interdependencia económica entre países mediante el libre comercio",
-              "D": "El fortalecimiento de las economías locales y regionales"
-            },
-            "answer": "C"
-          },
-          {
-            "id": 118,
+            "id": 119,
             "topic": "2.1",
             "topic_name": "Fenómenos meteorológicos — ciclones",
             "text": "Los ciclones tropicales que afectan las costas mexicanas del Golfo de México y el Caribe se originan principalmente en:",
@@ -1589,7 +1616,7 @@
             "answer": "B"
           },
           {
-            "id": 119,
+            "id": 120,
             "topic": "2.1",
             "topic_name": "Recursos naturales renovables y no renovables",
             "text": "Los recursos naturales no renovables son aquellos que:",
@@ -1598,19 +1625,6 @@
               "B": "Dependen de la energía solar para su aprovechamiento",
               "C": "Se agotan o tardan millones de años en formarse",
               "D": "Requieren tecnología avanzada para su extracción"
-            },
-            "answer": "C"
-          },
-          {
-            "id": 120,
-            "topic": "2.2",
-            "topic_name": "Calentamiento global",
-            "text": "Una consecuencia directa del calentamiento global es:",
-            "options": {
-              "A": "El engrosamiento de la capa de ozono estratosférica",
-              "B": "La reducción de la actividad volcánica global",
-              "C": "El derretimiento de los glaciares y el aumento del nivel del mar",
-              "D": "La disminución de la temperatura en las zonas tropicales"
             },
             "answer": "C"
           }
