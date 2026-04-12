@@ -513,6 +513,9 @@ socket.on('state', (data) => {
 });
 
 socket.on('examLoaded', (data) => {
+  try { localStorage.removeItem('examState'); } catch(e) {}
+  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false };
+  showScreen('joinScreen');
   document.getElementById('examTitle').textContent = data.title;
   document.getElementById('examInfo').textContent = `${data.totalQuestions} preguntas`;
   if (data.group) {
