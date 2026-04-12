@@ -254,6 +254,9 @@ io.on('connection', (socket) => {
       delete exam.students[oldId];
       console.log(`${cleanName} reconectado`);
     } else {
+      // Force clear any stale client state before sending new data
+      socket.emit('examReset');
+
       // Generate shuffled question order for this student
       const questionsBySubject = {};
       exam.questions.forEach(q => {
