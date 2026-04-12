@@ -255,10 +255,10 @@ function renderMath(text, displayMode) {
 let state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false };
 
 function saveState() {
-  try { sessionStorage.setItem('examState', JSON.stringify({ name: state.name, group: state.group, answers: state.answers, marked: state.marked, currentQ: state.currentQ })); } catch(e) {}
+  try { localStorage.setItem('examState', JSON.stringify({ name: state.name, group: state.group, answers: state.answers, marked: state.marked, currentQ: state.currentQ })); } catch(e) {}
 }
 function loadState() {
-  try { const s = sessionStorage.getItem('examState'); return s ? JSON.parse(s) : null; } catch(e) { return null; }
+  try { const s = localStorage.getItem('examState'); return s ? JSON.parse(s) : null; } catch(e) { return null; }
 }
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -407,7 +407,7 @@ function enterReviewMode(data) {
   else if (correct >= 51) { circle.style.background = '#fef9c3'; circle.style.color = '#a16207'; }
   else { circle.style.background = '#fef2f2'; circle.style.color = '#e53e3e'; }
   showScreen('resultsScreen');
-  try { sessionStorage.removeItem('examState'); } catch(e) {}
+  try { localStorage.removeItem('examState'); } catch(e) {}
   if (correct !== null) renderTopicBreakdown();
 }
 
@@ -536,7 +536,7 @@ socket.on('examClosed', () => { if (!state.submitted) socket.emit('submitExam');
 socket.on('markedUpdate', (marked) => { state.marked = marked; saveState(); renderQuestion(); });
 socket.on('examReset', () => {
   state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false };
-  try { sessionStorage.removeItem('examState'); } catch(e) {}
+  try { localStorage.removeItem('examState'); } catch(e) {}
   document.getElementById('reviewBanner').style.display = 'none';
   document.getElementById('submitBtn').style.display = '';
   showScreen('joinScreen');
