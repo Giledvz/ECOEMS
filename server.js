@@ -74,6 +74,7 @@ function getStudentSummary() {
       connected: s.connected,
       correct: s.submitted ? correct : null,
       timeUsed,
+      tabSwitches: s.tabSwitches || 0,
     };
   });
 }
@@ -83,7 +84,7 @@ function generateCSV() {
   
   const questionIds = exam.questions.map(q => q.id);
   const fecha = exam.date || new Date().toISOString().split('T')[0];
-  let header = 'Fecha,Alumno,Grupo,Tiempo_min';
+  let header = 'Fecha,Alumno,Grupo,Tiempo_min,Salidas_pestaña';
   questionIds.forEach(id => { header += `,P${id}`; });
   header += '\n';
 
@@ -92,7 +93,7 @@ function generateCSV() {
     const timeMin = s.submitted && s.submitTime && s.startTime
       ? Math.round((s.submitTime - s.startTime) / 60000)
       : '';
-    let row = `${fecha},${s.name},${s.group},${timeMin}`;
+    let row = `${fecha},${s.name},${s.group},${timeMin},${s.tabSwitches || 0}`;
     questionIds.forEach(id => {
       const ans = s.answers[id];
       if (!ans || !s.optionOrders?.[id]) {
@@ -281,6 +282,7 @@ io.on('connection', (socket) => {
         questionOrder,
         optionOrders,
         answerKey: {},
+        tabSwitches: 0,
       };
     }
 
@@ -323,6 +325,14 @@ io.on('connection', (socket) => {
     if (exam.phase !== 'active') return;
     
     student.answers[questionId] = answer;
+    io.emit('studentsUpdate', getStudentSummary());
+  });
+
+  // ── Student switches tab ──
+  socket.on('tabSwitch', () => {
+    const student = exam.students[socket.id];
+    if (!student || student.submitted) return;
+    student.tabSwitches = (student.tabSwitches || 0) + 1;
     io.emit('studentsUpdate', getStudentSummary());
   });
 

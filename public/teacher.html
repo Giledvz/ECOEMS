@@ -143,6 +143,7 @@
         <th>Progreso</th>
         <th>Respondidas</th>
         <th>Aciertos</th>
+        <th>Salidas</th>
         <th>Tiempo</th>
       </tr>
     </thead>
@@ -346,6 +347,7 @@ function renderStudents(students) {
       </td>
       <td>${s.answered}/${s.total}</td>
       <td style="font-weight:${s.submitted ? '600' : '400'}; color:${s.submitted ? (s.correct/s.total >= 0.7 ? '#16a34a' : s.correct/s.total >= 0.5 ? '#a16207' : '#e53e3e') : '#94a3b8'}">${scoreStr}</td>
+      <td style="color: ${s.tabSwitches > 0 ? '#f87171' : '#94a3b8'}; font-weight: ${s.tabSwitches > 0 ? '700' : '400'}">${s.tabSwitches || 0}</td>
       <td style="color: ${s.submitted ? '#e2e8f0' : '#94a3b8'}">${timeStr}</td>
     `;
     body.appendChild(row);
