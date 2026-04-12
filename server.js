@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
-app.use(express.static(path.join(__dirname, 'public'), { etag: false, maxAge: 0 }));
+app.use(express.static(path.join(__dirname, 'public'), { etag: false, maxAge: 0, setHeaders: (res) => { res.setHeader('Cache-Control', 'no-store'); } }));
 app.use('/katex', express.static(path.join(__dirname, 'node_modules/katex/dist')));
 app.use(express.json({ limit: '10mb' }));
 
