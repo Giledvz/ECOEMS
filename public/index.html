@@ -505,7 +505,11 @@ socket.on('state', (data) => {
     document.getElementById('examInfo').textContent = 'El profesor aún no ha cargado el examen';
   }
   const saved = loadState();
-  if (saved && saved.name && data.totalQuestions > 0) socket.emit('joinExam', { name: saved.name });
+  if (saved && saved.name && data.totalQuestions > 0) {
+    socket.emit('joinExam', { name: saved.name });
+  } else if (saved && data.totalQuestions === 0) {
+    try { localStorage.removeItem('examState'); } catch(e) {}
+  }
 });
 
 socket.on('examLoaded', (data) => {
