@@ -284,6 +284,7 @@ io.on('connection', (socket) => {
         optionOrders,
         answerKey: {},
         tabSwitches: 0,
+        joinedAt: Date.now(),
       };
     }
 
@@ -324,7 +325,9 @@ io.on('connection', (socket) => {
     const student = exam.students[socket.id];
     if (!student || student.submitted) return;
     if (exam.phase !== 'active') return;
-    
+    // Block bulk answer re-sends from cached client JS (old localStorage restore)
+    if (student.joinedAt && Date.now() - student.joinedAt < 3000) return;
+
     student.answers[questionId] = answer;
     io.emit('studentsUpdate', getStudentSummary());
   });
