@@ -127,6 +127,7 @@ app.post('/api/upload-exam', (req, res) => {
   try {
     const data = req.body;
     resetExam();
+    io.emit('examReset');
     
     exam.title = data.exam?.title || 'Examen';
     exam.group = data.exam?.group || 'Sin grupo';

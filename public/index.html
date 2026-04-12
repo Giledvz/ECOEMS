@@ -549,6 +549,7 @@ socket.on('markedUpdate', (marked) => { state.marked = marked; saveState(); rend
 socket.on('examReset', () => {
   state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false };
   try { localStorage.removeItem('examState'); } catch(e) {}
+  try { sessionStorage.removeItem('examState'); } catch(e) {}
   document.getElementById('reviewBanner').style.display = 'none';
   document.getElementById('submitBtn').style.display = '';
   showScreen('joinScreen');
