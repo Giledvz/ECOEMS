@@ -24,39 +24,62 @@ function shuffle(arr) {
   return a;
 }
 
-// ─── Exam State ─────────────────────────────────────────────────────────────
-let exam = {
-  phase: 'waiting',
-  title: '',
-  group: '',
-  studentList: [],       // names from JSON
-  questions: [],
-  answerKey: {},
-  students: {},
-  timeLimitMinutes: 180,
-  startTime: null,
-};
+// ─── Multi-Room State ───────────────────────────────────────────────────────
+const rooms = new Map();       // roomCode -> room state
+const socketRoom = new Map();  // socket.id -> roomCode
 
-function resetExam() {
-  exam = {
+function generateRoomCode() {
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  let code;
+  do {
+    code = '';
+    for (let i = 0; i < 6; i++) code += chars[Math.floor(Math.random() * chars.length)];
+  } while (rooms.has(code));
+  return code;
+}
+
+function createRoom(data) {
+  const roomCode = generateRoomCode();
+  const room = {
+    roomCode,
     phase: 'waiting',
-    title: '',
-    group: '',
-    studentList: [],
+    title: data.exam?.title || 'Examen',
+    group: data.exam?.group || 'Sin grupo',
+    date: data.exam?.date || new Date().toISOString().split('T')[0],
+    studentList: data.exam?.students || [],
     questions: [],
     answerKey: {},
     students: {},
-    timeLimitMinutes: 180,
+    timeLimitMinutes: data.timeLimitMinutes || 180,
     startTime: null,
   };
+
+  const sections = data.exam?.sections || [];
+  sections.forEach(section => {
+    section.questions.forEach(q => {
+      room.questions.push({
+        id: q.id,
+        text: q.text,
+        options: q.options,
+        image: q.image || null,
+        topic: q.topic,
+        topic_name: q.topic_name || '',
+        subject: section.subject,
+      });
+      room.answerKey[q.id] = q.answer;
+    });
+  });
+
+  rooms.set(roomCode, room);
+  return room;
 }
 
-function getStudentSummary() {
-  return Object.entries(exam.students).map(([id, s]) => {
+function getStudentSummary(room) {
+  return Object.entries(room.students).map(([id, s]) => {
     let correct = 0;
     if (s.submitted) {
-      exam.questions.forEach(q => {
-        const key = s.answerKey?.[q.id] ?? exam.answerKey[q.id];
+      room.questions.forEach(q => {
+        const key = s.answerKey?.[q.id] ?? room.answerKey[q.id];
         if (s.answers[q.id] === key) correct++;
       });
     }
@@ -68,7 +91,7 @@ function getStudentSummary() {
       name: s.name,
       group: s.group,
       answered: Object.keys(s.answers).length,
-      total: exam.questions.length,
+      total: room.questions.length,
       marked: s.marked.length,
       submitted: s.submitted,
       connected: s.connected,
@@ -79,17 +102,17 @@ function getStudentSummary() {
   });
 }
 
-function generateCSV() {
-  if (exam.questions.length === 0) return '';
-  
-  const questionIds = exam.questions.map(q => q.id);
-  const fecha = exam.date || new Date().toISOString().split('T')[0];
+function generateCSV(room) {
+  if (room.questions.length === 0) return '';
+
+  const questionIds = room.questions.map(q => q.id);
+  const fecha = room.date || new Date().toISOString().split('T')[0];
   let header = 'Fecha,Alumno,Grupo,Tiempo_min,Salidas_pestaña';
   questionIds.forEach(id => { header += `,P${id}`; });
   header += '\n';
 
   let rows = '';
-  Object.values(exam.students).forEach(s => {
+  Object.values(room.students).forEach(s => {
     const timeMin = s.submitted && s.submitTime && s.startTime
       ? Math.round((s.submitTime - s.startTime) / 60000)
       : '';
@@ -99,8 +122,7 @@ function generateCSV() {
       if (!ans || !s.optionOrders?.[id]) {
         row += `,${ans || ''}`;
       } else {
-        // Convert shuffled letter back to original letter for consistent CSV
-        const origLetters = Object.keys(exam.questions.find(q => q.id === id).options);
+        const origLetters = Object.keys(room.questions.find(q => q.id === id).options);
         row += `,${s.optionOrders[id][origLetters.indexOf(ans)] || ''}`;
       }
     });
@@ -110,62 +132,64 @@ function generateCSV() {
   return header + rows;
 }
 
-function generateAnswerKeyCSV() {
-  if (exam.questions.length === 0) return '';
+function generateAnswerKeyCSV(room) {
+  if (room.questions.length === 0) return '';
   let header = 'Pregunta,Asignatura,Tema,Tema_nombre,Respuesta_correcta\n';
   let rows = '';
-  exam.questions.forEach(q => {
-    rows += `P${q.id},${q.subject},${q.topic},"${q.topic_name}",${exam.answerKey[q.id]}\n`;
+  room.questions.forEach(q => {
+    rows += `P${q.id},${q.subject},${q.topic},"${q.topic_name}",${room.answerKey[q.id]}\n`;
   });
   return header + rows;
 }
 
+function getLocalIP() {
+  const nets = os.networkInterfaces();
+  for (const ifaces of Object.values(nets)) {
+    for (const iface of ifaces) {
+      if (iface.family === 'IPv4' && !iface.internal) return iface.address;
+    }
+  }
+  return 'localhost';
+}
+
 // ─── API Endpoints ──────────────────────────────────────────────────────────
 
-// Teacher uploads exam JSON
+// Teacher uploads exam JSON → creates a new room
 app.post('/api/upload-exam', (req, res) => {
   try {
-    const data = req.body;
-    resetExam();
-    io.emit('examReset');
-    
-    exam.title = data.exam?.title || 'Examen';
-    exam.group = data.exam?.group || 'Sin grupo';
-    exam.date = data.exam?.date || new Date().toISOString().split('T')[0];
-    exam.studentList = data.exam?.students || [];
-    exam.timeLimitMinutes = data.timeLimitMinutes || 180;
-    
-    const sections = data.exam?.sections || [];
-    sections.forEach(section => {
-      section.questions.forEach(q => {
-        exam.questions.push({
-          id: q.id,
-          text: q.text,
-          options: q.options,
-          image: q.image || null,
-          topic: q.topic,
-          topic_name: q.topic_name || '',
-          subject: section.subject,
-        });
-        exam.answerKey[q.id] = q.answer;
-      });
-    });
-
-    exam.phase = 'waiting';
-    io.emit('examLoaded', { title: exam.title, group: exam.group, studentList: exam.studentList, totalQuestions: exam.questions.length });
-    res.json({ success: true, totalQuestions: exam.questions.length });
+    const room = createRoom(req.body);
+    console.log(`Sala ${room.roomCode} creada: "${room.title}" (${room.questions.length} preguntas)`);
+    res.json({ success: true, totalQuestions: room.questions.length, roomCode: room.roomCode });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
 });
 
+// List all rooms
+app.get('/api/rooms', (_req, res) => {
+  const list = [];
+  rooms.forEach(room => {
+    list.push({
+      roomCode: room.roomCode,
+      title: room.title,
+      group: room.group,
+      phase: room.phase,
+      totalQuestions: room.questions.length,
+      studentCount: Object.keys(room.students).length,
+    });
+  });
+  res.json(list);
+});
+
 // Download CSV results
 app.get('/api/download-csv', (req, res) => {
-  const csv = generateCSV();
-  const [y, m, d] = (exam.date || new Date().toISOString().split('T')[0]).split('-');
-  const filename = `resultados_${d}${m}${y.slice(2)}.csv`;
-  const filePath = path.join(__dirname, filename);
-  fs.writeFileSync(filePath, '\uFEFF' + csv, 'utf8');
+  const room = rooms.get(req.query.room);
+  if (!room) return res.status(404).json({ error: 'Sala no encontrada' });
+
+  const csv = generateCSV(room);
+  const [y, m, d] = (room.date || new Date().toISOString().split('T')[0]).split('-');
+  const filename = `resultados_${room.roomCode}_${d}${m}${y.slice(2)}.csv`;
+  fs.writeFileSync(path.join(__dirname, filename), '\uFEFF' + csv, 'utf8');
   res.setHeader('Content-Type', 'text/csv; charset=utf-8');
   res.setHeader('Content-Disposition', `attachment; filename=${filename}`);
   res.send('\uFEFF' + csv);
@@ -173,29 +197,23 @@ app.get('/api/download-csv', (req, res) => {
 
 // Download answer key CSV
 app.get('/api/download-key', (req, res) => {
-  const csv = generateAnswerKeyCSV();
-  const fecha = (exam.date || new Date().toISOString().split('T')[0]).replace(/-/g, '');
-  const filename = `clave_respuestas_${fecha}.csv`;
-  const filePath = path.join(__dirname, filename);
-  fs.writeFileSync(filePath, '\uFEFF' + csv, 'utf8');
+  const room = rooms.get(req.query.room);
+  if (!room) return res.status(404).json({ error: 'Sala no encontrada' });
+
+  const csv = generateAnswerKeyCSV(room);
+  const fecha = (room.date || new Date().toISOString().split('T')[0]).replace(/-/g, '');
+  const filename = `clave_respuestas_${room.roomCode}_${fecha}.csv`;
+  fs.writeFileSync(path.join(__dirname, filename), '\uFEFF' + csv, 'utf8');
   res.setHeader('Content-Type', 'text/csv; charset=utf-8');
   res.setHeader('Content-Disposition', `attachment; filename=${filename}`);
   res.send('\uFEFF' + csv);
 });
 
-// QR code for student URL
+// QR code (includes room code if provided)
 app.get('/api/qr', async (req, res) => {
-  const nets = os.networkInterfaces();
-  let localIP = 'localhost';
-  outer: for (const ifaces of Object.values(nets)) {
-    for (const iface of ifaces) {
-      if (iface.family === 'IPv4' && !iface.internal) {
-        localIP = iface.address;
-        break outer;
-      }
-    }
-  }
-  const url = `http://${localIP}:${PORT}`;
+  const localIP = getLocalIP();
+  let url = `http://${localIP}:${PORT}`;
+  if (req.query.room) url += `?sala=${req.query.room}`;
   try {
     const dataUrl = await QRCode.toDataURL(url, { width: 256, margin: 2, color: { dark: '#0f172a', light: '#ffffff' } });
     res.json({ qr: dataUrl, url });
@@ -211,52 +229,61 @@ app.get('/teacher', (_req, res) => {
 
 // ─── Socket.io ──────────────────────────────────────────────────────────────
 io.on('connection', (socket) => {
-  
-  // Send current state
-  socket.emit('state', {
-    phase: exam.phase,
-    title: exam.title,
-    group: exam.group,
-    studentList: exam.studentList,
-    totalQuestions: exam.questions.length,
-    startTime: exam.startTime,
-    timeLimit: exam.timeLimitMinutes,
+
+  // ── Join a room (student) ──
+  socket.on('joinRoom', ({ roomCode }) => {
+    const room = rooms.get(roomCode);
+    if (!room) { socket.emit('joinRoomError', 'Sala no encontrada'); return; }
+
+    socket.join(roomCode);
+    socketRoom.set(socket.id, roomCode);
+
+    socket.emit('roomJoined', {
+      roomCode,
+      phase: room.phase,
+      title: room.title,
+      group: room.group,
+      studentList: room.studentList,
+      totalQuestions: room.questions.length,
+      startTime: room.startTime,
+      timeLimit: room.timeLimitMinutes,
+    });
   });
 
-  // ── Student joins ──
+  // ── Student joins exam within their room ──
   socket.on('joinExam', ({ name }) => {
-    if (exam.phase === 'closed') { socket.emit('joinError', 'El examen ya fue cerrado'); return; }
+    const roomCode = socketRoom.get(socket.id);
+    const room = roomCode && rooms.get(roomCode);
+    if (!room) { socket.emit('joinError', 'Primero entra a una sala'); return; }
+
+    if (room.phase === 'closed') { socket.emit('joinError', 'El examen ya fue cerrado'); return; }
 
     const cleanName = String(name).trim().substring(0, 30);
     if (!cleanName) { socket.emit('joinError', 'Selecciona tu nombre'); return; }
 
-    // Validate name is in the student list (if list exists)
-    if (exam.studentList.length > 0) {
-      const validName = exam.studentList.find(s => s.toLowerCase() === cleanName.toLowerCase());
+    if (room.studentList.length > 0) {
+      const validName = room.studentList.find(s => s.toLowerCase() === cleanName.toLowerCase());
       if (!validName) { socket.emit('joinError', 'Tu nombre no está en la lista'); return; }
     }
 
-    const nameExists = Object.values(exam.students).some(
+    const nameExists = Object.values(room.students).some(
       s => s.name.toLowerCase() === cleanName.toLowerCase() && s.connected
     );
     if (nameExists) { socket.emit('joinError', 'Ese nombre ya está en uso'); return; }
 
-    // Check if reconnecting (same name, previously disconnected)
-    const prevEntry = Object.entries(exam.students).find(
+    const prevEntry = Object.entries(room.students).find(
       ([id, s]) => s.name.toLowerCase() === cleanName.toLowerCase() && !s.connected
     );
 
     if (prevEntry) {
-      // Transfer old data to new socket
       const [oldId, oldData] = prevEntry;
       oldData.connected = true;
-      exam.students[socket.id] = oldData;
-      delete exam.students[oldId];
-      console.log(`${cleanName} reconectado`);
+      room.students[socket.id] = oldData;
+      delete room.students[oldId];
+      console.log(`[${roomCode}] ${cleanName} reconectado`);
     } else {
-      // Generate shuffled question order for this student
       const questionsBySubject = {};
-      exam.questions.forEach(q => {
+      room.questions.forEach(q => {
         if (!questionsBySubject[q.subject]) questionsBySubject[q.subject] = [];
         questionsBySubject[q.subject].push(q.id);
       });
@@ -267,13 +294,13 @@ io.on('connection', (socket) => {
       });
 
       const optionOrders = {};
-      exam.questions.forEach(q => {
+      room.questions.forEach(q => {
         optionOrders[q.id] = shuffle(Object.keys(q.options));
       });
 
-      exam.students[socket.id] = {
+      room.students[socket.id] = {
         name: cleanName,
-        group: exam.group,
+        group: room.group,
         answers: {},
         marked: [],
         submitted: false,
@@ -288,20 +315,18 @@ io.on('connection', (socket) => {
       };
     }
 
-    // Build questions in the student's stored order with shuffled options
-    const student = exam.students[socket.id];
+    const student = room.students[socket.id];
     const questionsForStudent = student.questionOrder.map(qid => {
-      const q = exam.questions.find(x => x.id === qid);
-      const origLetters = Object.keys(q.options);       // ['A','B','C','D']
-      const srcLetters  = student.optionOrders[qid];    // e.g. ['C','A','D','B']
+      const q = room.questions.find(x => x.id === qid);
+      const origLetters = Object.keys(q.options);
+      const srcLetters = student.optionOrders[qid];
 
       const newOptions = {};
       origLetters.forEach((newLetter, i) => {
         newOptions[newLetter] = q.options[srcLetters[i]];
       });
 
-      // Which new letter maps to the globally correct answer?
-      const correctOrig = exam.answerKey[qid];
+      const correctOrig = room.answerKey[qid];
       student.answerKey[qid] = origLetters[srcLetters.indexOf(correctOrig)];
 
       return { id: q.id, text: q.text, options: newOptions, image: q.image, subject: q.subject };
@@ -309,126 +334,195 @@ io.on('connection', (socket) => {
 
     socket.emit('joined', {
       name: cleanName,
-      group: exam.group,
+      group: room.group,
       questions: questionsForStudent,
-      timeLimit: exam.timeLimitMinutes,
-      examActive: exam.phase === 'active',
-      startTime: exam.startTime,
+      timeLimit: room.timeLimitMinutes,
+      examActive: room.phase === 'active',
+      startTime: room.startTime,
+      roomCode,
     });
 
-    io.emit('studentsUpdate', getStudentSummary());
-    console.log(`${cleanName} (${exam.group}) se unió`);
+    io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
+    console.log(`[${roomCode}] ${cleanName} (${room.group}) se unió`);
   });
 
   // ── Student answers a question ──
   socket.on('answer', ({ questionId, answer }) => {
-    const student = exam.students[socket.id];
+    const roomCode = socketRoom.get(socket.id);
+    const room = roomCode && rooms.get(roomCode);
+    if (!room) return;
+    const student = room.students[socket.id];
     if (!student || student.submitted) return;
-    if (exam.phase !== 'active') return;
-    // Block bulk answer re-sends from cached client JS (old localStorage restore)
+    if (room.phase !== 'active') return;
     if (student.joinedAt && Date.now() - student.joinedAt < 3000) return;
-
     student.answers[questionId] = answer;
-    io.emit('studentsUpdate', getStudentSummary());
+    io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
   });
 
   // ── Student switches tab ──
   socket.on('tabSwitch', () => {
-    const student = exam.students[socket.id];
+    const roomCode = socketRoom.get(socket.id);
+    const room = roomCode && rooms.get(roomCode);
+    if (!room) return;
+    const student = room.students[socket.id];
     if (!student || student.submitted) return;
     student.tabSwitches = (student.tabSwitches || 0) + 1;
-    io.emit('studentsUpdate', getStudentSummary());
+    io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
   });
 
-  // ── Student marks/unmarks question for review ──
+  // ── Student marks/unmarks question ──
   socket.on('toggleMark', ({ questionId }) => {
-    const student = exam.students[socket.id];
+    const roomCode = socketRoom.get(socket.id);
+    const room = roomCode && rooms.get(roomCode);
+    if (!room) return;
+    const student = room.students[socket.id];
     if (!student || student.submitted) return;
-    
     const idx = student.marked.indexOf(questionId);
     if (idx === -1) student.marked.push(questionId);
     else student.marked.splice(idx, 1);
-    
     socket.emit('markedUpdate', student.marked);
   });
 
   // ── Student submits exam ──
   socket.on('submitExam', () => {
-    const student = exam.students[socket.id];
+    const roomCode = socketRoom.get(socket.id);
+    const room = roomCode && rooms.get(roomCode);
+    if (!room) return;
+    const student = room.students[socket.id];
     if (!student || student.submitted) return;
-    
+
     student.submitted = true;
     student.submitTime = Date.now();
-    
-    // Calculate score
+
     let correct = 0;
-    exam.questions.forEach(q => {
-      const key = student.answerKey?.[q.id] ?? exam.answerKey[q.id];
+    room.questions.forEach(q => {
+      const key = student.answerKey?.[q.id] ?? room.answerKey[q.id];
       if (student.answers[q.id] === key) correct++;
     });
 
     socket.emit('examSubmitted', {
       correct,
-      total: exam.questions.length,
-      answerKey: student.answerKey ?? exam.answerKey,
+      total: room.questions.length,
+      answerKey: student.answerKey ?? room.answerKey,
     });
-    
-    io.emit('studentsUpdate', getStudentSummary());
-    console.log(`${student.name} entregó: ${correct}/${exam.questions.length}`);
+
+    io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
+    console.log(`[${roomCode}] ${student.name} entregó: ${correct}/${room.questions.length}`);
   });
 
-  // ── Teacher controls ──
-  socket.on('startExam', () => {
-    exam.phase = 'active';
-    exam.startTime = Date.now();
-    // Set startTime for all connected students
-    Object.values(exam.students).forEach(s => { s.startTime = exam.startTime; });
-    io.emit('examStarted', { startTime: exam.startTime, timeLimit: exam.timeLimitMinutes });
-    console.log('Examen iniciado');
+  // ── Teacher: start exam ──
+  socket.on('startExam', ({ roomCode }) => {
+    const room = rooms.get(roomCode);
+    if (!room) return;
+    room.phase = 'active';
+    room.startTime = Date.now();
+    Object.values(room.students).forEach(s => { s.startTime = room.startTime; });
+    io.to(roomCode).emit('examStarted', { startTime: room.startTime, timeLimit: room.timeLimitMinutes });
+    console.log(`[${roomCode}] Examen iniciado`);
   });
 
-  socket.on('closeExam', () => {
-    exam.phase = 'closed';
-    // Auto-submit for students who haven't submitted
-    Object.entries(exam.students).forEach(([id, s]) => {
+  // ── Teacher: close exam ──
+  socket.on('closeExam', ({ roomCode }) => {
+    const room = rooms.get(roomCode);
+    if (!room) return;
+    room.phase = 'closed';
+    Object.entries(room.students).forEach(([id, s]) => {
       if (!s.submitted) {
         s.submitted = true;
         s.submitTime = Date.now();
         const sock = io.sockets.sockets.get(id);
         if (sock) {
           let correct = 0;
-          exam.questions.forEach(q => {
-            const key = s.answerKey?.[q.id] ?? exam.answerKey[q.id];
+          room.questions.forEach(q => {
+            const key = s.answerKey?.[q.id] ?? room.answerKey[q.id];
             if (s.answers[q.id] === key) correct++;
           });
           sock.emit('examSubmitted', {
             correct,
-            total: exam.questions.length,
-            answerKey: s.answerKey ?? exam.answerKey,
+            total: room.questions.length,
+            answerKey: s.answerKey ?? room.answerKey,
           });
         }
       }
     });
-    io.emit('examClosed');
-    console.log('Examen cerrado');
+    io.to(roomCode).emit('examClosed');
+    console.log(`[${roomCode}] Examen cerrado`);
   });
 
-  socket.on('resetExam', () => {
-    resetExam();
-    io.emit('examReset');
-    console.log('Examen reseteado');
+  // ── Teacher: reset exam (keep room, clear students) ──
+  socket.on('resetExam', ({ roomCode }) => {
+    const room = rooms.get(roomCode);
+    if (!room) return;
+    room.phase = 'waiting';
+    room.students = {};
+    room.startTime = null;
+    io.to(roomCode).emit('examReset');
+    console.log(`[${roomCode}] Examen reiniciado`);
   });
 
-  socket.on('getStudents', () => {
-    socket.emit('studentsUpdate', getStudentSummary());
+  // ── Teacher: delete room entirely ──
+  socket.on('deleteRoom', ({ roomCode }) => {
+    const room = rooms.get(roomCode);
+    if (!room) return;
+    io.to(roomCode).emit('roomDeleted');
+    rooms.delete(roomCode);
+    console.log(`[${roomCode}] Sala eliminada`);
+  });
+
+  // ── Teacher: get students for a room ──
+  socket.on('getStudents', ({ roomCode }) => {
+    const room = rooms.get(roomCode);
+    if (!room) return;
+    socket.emit('studentsUpdate', getStudentSummary(room));
+  });
+
+  // ── Teacher: get all rooms ──
+  socket.on('getRooms', () => {
+    const list = [];
+    rooms.forEach(room => {
+      list.push({
+        roomCode: room.roomCode,
+        title: room.title,
+        group: room.group,
+        phase: room.phase,
+        totalQuestions: room.questions.length,
+        studentCount: Object.keys(room.students).length,
+      });
+    });
+    socket.emit('roomsList', list);
+  });
+
+  // ── Teacher: watch a room (join for live updates) ──
+  socket.on('watchRoom', ({ roomCode }) => {
+    for (const r of socket.rooms) {
+      if (r !== socket.id) socket.leave(r);
+    }
+    const room = rooms.get(roomCode);
+    if (!room) return;
+    socket.join(roomCode);
+    socket.emit('roomState', {
+      roomCode: room.roomCode,
+      phase: room.phase,
+      title: room.title,
+      group: room.group,
+      totalQuestions: room.questions.length,
+      startTime: room.startTime,
+      timeLimit: room.timeLimitMinutes,
+    });
+    socket.emit('studentsUpdate', getStudentSummary(room));
   });
 
   // ── Disconnect ──
   socket.on('disconnect', () => {
-    if (exam.students[socket.id]) {
-      exam.students[socket.id].connected = false;
-      io.emit('studentsUpdate', getStudentSummary());
-      console.log(`${exam.students[socket.id].name} desconectado`);
+    const roomCode = socketRoom.get(socket.id);
+    if (roomCode) {
+      const room = rooms.get(roomCode);
+      if (room && room.students[socket.id]) {
+        room.students[socket.id].connected = false;
+        io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
+        console.log(`[${roomCode}] ${room.students[socket.id].name} desconectado`);
+      }
+      socketRoom.delete(socket.id);
     }
   });
 });
@@ -440,17 +534,12 @@ server.listen(PORT, '0.0.0.0', () => {
   console.log(`  PLATAFORMA DE EXAMEN DIGITAL`);
   console.log(`══════════════════════════════════════════`);
   console.log(`\n  Panel del profesor: http://localhost:${PORT}/teacher`);
-  
-  const nets = os.networkInterfaces();
-  Object.values(nets).forEach(ifaces => {
-    ifaces.forEach(iface => {
-      if (iface.family === 'IPv4' && !iface.internal) {
-        console.log(`\n  Los alumnos se conectan a:`);
-        console.log(`  → http://${iface.address}:${PORT}`);
-        console.log(`\n  Panel del profesor (desde otro dispositivo):`);
-        console.log(`  → http://${iface.address}:${PORT}/teacher`);
-      }
-    });
-  });
+  const localIP = getLocalIP();
+  if (localIP !== 'localhost') {
+    console.log(`\n  Los alumnos se conectan a:`);
+    console.log(`  → http://${localIP}:${PORT}`);
+    console.log(`\n  Panel del profesor (desde otro dispositivo):`);
+    console.log(`  → http://${localIP}:${PORT}/teacher`);
+  }
   console.log(`\n══════════════════════════════════════════\n`);
 });

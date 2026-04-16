@@ -8,19 +8,51 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; padding: 24px; }
-  
+
   .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
   .header h1 { font-size: 24px; font-weight: 600; }
-  .header .badge { padding: 6px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; }
+
+  /* ── Rooms Bar ── */
+  .rooms-bar { display: flex; gap: 12px; margin-bottom: 24px; overflow-x: auto; padding-bottom: 8px; align-items: stretch; }
+  .room-card { background: #1e293b; border: 2px solid #334155; border-radius: 12px; padding: 12px 16px; min-width: 200px; max-width: 260px; cursor: pointer; transition: all 0.15s; flex-shrink: 0; }
+  .room-card:hover { border-color: #475569; }
+  .room-card.selected { border-color: #3b82f6; background: #1e3a5f; }
+  .room-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+  .room-card-code { font-family: monospace; font-size: 16px; font-weight: 700; color: #60a5fa; letter-spacing: 2px; }
+  .room-card-title { font-size: 13px; color: #e2e8f0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .room-card-meta { font-size: 11px; color: #94a3b8; margin-top: 4px; }
+  .upload-card { background: #1e293b; border: 2px dashed #334155; border-radius: 12px; padding: 12px 20px; min-width: 140px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; color: #94a3b8; transition: all 0.15s; flex-shrink: 0; }
+  .upload-card:hover { border-color: #475569; color: #e2e8f0; }
+  .upload-card input[type="file"] { display: none; }
+
+  /* ── Badges ── */
+  .badge { padding: 6px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; }
+  .badge-sm { font-size: 10px; padding: 2px 8px; border-radius: 6px; font-weight: 600; }
   .badge-waiting { background: #fef3c7; color: #a16207; }
   .badge-active { background: #dcfce7; color: #16a34a; }
   .badge-closed { background: #fee2e2; color: #ef4444; }
 
+  /* ── Room Detail ── */
+  .room-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; gap: 12px; flex-wrap: wrap; }
+  .room-header-left { display: flex; align-items: center; gap: 12px; }
+  .room-header h2 { font-size: 20px; font-weight: 600; }
+
+  .connection-info { margin-bottom: 24px; background: #1e293b; border-radius: 12px; padding: 20px; display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+  .conn-left { flex: 1; min-width: 220px; }
+  .conn-left .label-sm { font-size: 12px; color: #94a3b8; margin-bottom: 6px; }
+  .room-code-big { font-family: monospace; font-size: 36px; font-weight: 700; color: #60a5fa; letter-spacing: 6px; margin-bottom: 12px; }
+  .conn-left .url { font-size: 16px; font-weight: 700; color: #60a5fa; font-family: monospace; word-break: break-all; }
+  .conn-divider { width: 1px; background: #334155; align-self: stretch; }
+  .conn-right { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .conn-right .label-sm { font-size: 12px; color: #94a3b8; text-align: center; }
+  #qrImg { border-radius: 8px; border: 3px solid #334155; display: block; }
+  .copy-btn { margin-top: 8px; padding: 6px 14px; background: #334155; border: none; border-radius: 6px; color: #e2e8f0; font-size: 13px; cursor: pointer; transition: background 0.15s; }
+  .copy-btn:hover { background: #475569; }
+  .copy-btn.copied { background: #16a34a; }
+
+  /* ── Controls ── */
   .controls { display: flex; gap: 10px; margin-bottom: 24px; flex-wrap: wrap; }
-  .controls button, .controls label { padding: 10px 20px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
-  .controls label { background: #334155; color: #e2e8f0; display: flex; align-items: center; gap: 6px; }
-  .controls label:hover { background: #475569; }
-  .controls input[type="file"] { display: none; }
+  .controls button { padding: 10px 20px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
   .btn-start { background: #16a34a; color: #fff; }
   .btn-start:hover { background: #15803d; }
   .btn-close { background: #ef4444; color: #fff; }
@@ -29,8 +61,15 @@
   .btn-download:hover { background: #1d4ed8; }
   .btn-reset { background: #475569; color: #e2e8f0; }
   .btn-reset:hover { background: #64748b; }
+  .btn-delete { background: #7f1d1d; color: #fca5a5; }
+  .btn-delete:hover { background: #991b1b; }
   button:disabled { opacity: 0.4; cursor: not-allowed; }
 
+  /* ── Timer ── */
+  .timer-display { font-size: 32px; font-weight: 700; font-family: monospace; color: #e2e8f0; text-align: center; padding: 8px; }
+  .timer-warning { color: #f87171; }
+
+  /* ── Metrics ── */
   .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
   .metric { background: #1e293b; border-radius: 12px; padding: 16px; }
   .metric .label { font-size: 12px; color: #94a3b8; margin-bottom: 4px; }
@@ -40,35 +79,19 @@
   .metric .value.amber { color: #fbbf24; }
   .metric .value.red { color: #f87171; }
 
+  /* ── Students Table ── */
   .students-section h2 { font-size: 18px; margin-bottom: 12px; }
   .students-table { width: 100%; border-collapse: collapse; }
   .students-table th { text-align: left; padding: 10px 12px; font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #334155; }
   .students-table td { padding: 10px 12px; font-size: 14px; border-bottom: 1px solid #1e293b; }
   .students-table tr:hover { background: #1e293b; }
-  
   .progress-bar { width: 100%; height: 6px; background: #334155; border-radius: 3px; overflow: hidden; }
   .progress-bar .fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
   .fill-blue { background: #3b82f6; }
-  
   .status-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
   .dot-connected { background: #4ade80; }
   .dot-disconnected { background: #f87171; }
   .dot-submitted { background: #60a5fa; }
-
-  .connection-info { margin-bottom: 24px; background: #1e293b; border-radius: 12px; padding: 20px; display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
-  .connection-info .label-sm { font-size: 12px; color: #94a3b8; margin-bottom: 6px; }
-  .connection-info .url { font-size: 20px; font-weight: 700; color: #60a5fa; font-family: monospace; word-break: break-all; }
-  .conn-left { flex: 1; min-width: 220px; }
-  .conn-divider { width: 1px; background: #334155; align-self: stretch; }
-  .conn-right { display: flex; flex-direction: column; align-items: center; gap: 6px; }
-  .conn-right .label-sm { text-align: center; }
-  #qrImg { border-radius: 8px; border: 3px solid #334155; display: block; }
-  .copy-btn { margin-top: 8px; padding: 6px 14px; background: #334155; border: none; border-radius: 6px; color: #e2e8f0; font-size: 13px; cursor: pointer; transition: background 0.15s; }
-  .copy-btn:hover { background: #475569; }
-  .copy-btn.copied { background: #16a34a; }
-
-  .timer-display { font-size: 32px; font-weight: 700; font-family: monospace; color: #e2e8f0; text-align: center; padding: 8px; }
-  .timer-warning { color: #f87171; }
 
   .empty-state { text-align: center; padding: 48px; color: #64748b; }
   .empty-state p { font-size: 14px; }
@@ -78,100 +101,253 @@
 
 <div class="header">
   <h1>Panel del Profesor</h1>
-  <span class="badge badge-waiting" id="phaseBadge">Esperando examen</span>
 </div>
 
-<div class="connection-info" id="connInfo">
-  <div class="conn-left">
-    <div class="label-sm">Los alumnos con computadora entran a:</div>
-    <div class="url" id="connUrl">Cargando...</div>
-    <button class="copy-btn" id="copyBtn" onclick="copyUrl()">Copiar link</button>
-  </div>
-  <div class="conn-divider"></div>
-  <div class="conn-right">
-    <div class="label-sm">Escanea para entrar al examen</div>
-    <img id="qrImg" src="" alt="QR" width="160" height="160" />
-  </div>
-</div>
-
-<div class="controls">
-  <label id="uploadLabel">
-    <span>📄 Cargar examen JSON</span>
+<!-- ── Rooms Bar ── -->
+<div class="rooms-bar">
+  <div id="roomsList" style="display:contents;"></div>
+  <label class="upload-card">
+    <span>+ Nueva sala</span>
     <input type="file" id="fileInput" accept=".json" onchange="uploadExam(this)" />
   </label>
-  <button class="btn-start" id="startBtn" onclick="startExam()" disabled>▶ Iniciar examen</button>
-  <button class="btn-close" id="closeBtn" onclick="closeExam()" disabled>⏹ Cerrar examen</button>
-  <button class="btn-download" id="downloadBtn" onclick="downloadCSV()" disabled>📥 Descargar CSV</button>
-  <button class="btn-download" id="downloadKeyBtn" onclick="downloadKey()" disabled>🔑 Descargar clave</button>
-  <button class="btn-reset" onclick="resetExam()">↺ Reiniciar</button>
 </div>
 
-<div id="timerArea" style="display: none;">
-  <div class="timer-display" id="teacherTimer">3:00:00</div>
+<!-- ── Room Detail (hidden until a room is selected) ── -->
+<div id="roomDetail" style="display:none;">
+
+  <div class="room-header">
+    <div class="room-header-left">
+      <h2 id="roomTitle">Examen</h2>
+      <span class="badge badge-waiting" id="phaseBadge">Esperando</span>
+    </div>
+  </div>
+
+  <div class="connection-info">
+    <div class="conn-left">
+      <div class="label-sm">Codigo de sala</div>
+      <div class="room-code-big" id="roomCodeBig">------</div>
+      <div class="label-sm">Los alumnos entran a:</div>
+      <div class="url" id="connUrl">Cargando...</div>
+      <button class="copy-btn" id="copyBtn" onclick="copyUrl()">Copiar link</button>
+    </div>
+    <div class="conn-divider"></div>
+    <div class="conn-right">
+      <div class="label-sm">Escanea para entrar a esta sala</div>
+      <img id="qrImg" src="" alt="QR" width="160" height="160" />
+    </div>
+  </div>
+
+  <div class="controls">
+    <button class="btn-start" id="startBtn" onclick="startExam()" disabled>▶ Iniciar examen</button>
+    <button class="btn-close" id="closeBtn" onclick="closeExam()" disabled>⏹ Cerrar examen</button>
+    <button class="btn-download" id="downloadBtn" onclick="downloadCSV()" disabled>📥 Descargar CSV</button>
+    <button class="btn-download" id="downloadKeyBtn" onclick="downloadKey()" disabled>🔑 Descargar clave</button>
+    <button class="btn-reset" onclick="resetExam()">↺ Reiniciar</button>
+    <button class="btn-delete" onclick="deleteRoom()">✕ Eliminar sala</button>
+  </div>
+
+  <div id="timerArea" style="display: none;">
+    <div class="timer-display" id="teacherTimer">3:00:00</div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric">
+      <div class="label">Conectados</div>
+      <div class="value blue" id="metricConnected">0</div>
+    </div>
+    <div class="metric">
+      <div class="label">Respondiendo</div>
+      <div class="value amber" id="metricAnswering">0</div>
+    </div>
+    <div class="metric">
+      <div class="label">Entregaron</div>
+      <div class="value green" id="metricSubmitted">0</div>
+    </div>
+    <div class="metric">
+      <div class="label">Desconectados</div>
+      <div class="value red" id="metricDisconnected">0</div>
+    </div>
+  </div>
+
+  <div class="students-section">
+    <h2>Alumnos</h2>
+    <div id="emptyStudents" class="empty-state">
+      <p>Esperando a que los alumnos se conecten</p>
+    </div>
+    <table class="students-table" id="studentsTable" style="display:none;">
+      <thead>
+        <tr>
+          <th>Estado</th>
+          <th>Nombre</th>
+          <th>Grupo</th>
+          <th>Progreso</th>
+          <th>Respondidas</th>
+          <th>Aciertos</th>
+          <th>Salidas</th>
+          <th>Tiempo</th>
+        </tr>
+      </thead>
+      <tbody id="studentsBody"></tbody>
+    </table>
+  </div>
 </div>
 
-<div class="metrics">
-  <div class="metric">
-    <div class="label">Conectados</div>
-    <div class="value blue" id="metricConnected">0</div>
-  </div>
-  <div class="metric">
-    <div class="label">Respondiendo</div>
-    <div class="value amber" id="metricAnswering">0</div>
-  </div>
-  <div class="metric">
-    <div class="label">Entregaron</div>
-    <div class="value green" id="metricSubmitted">0</div>
-  </div>
-  <div class="metric">
-    <div class="label">Desconectados</div>
-    <div class="value red" id="metricDisconnected">0</div>
-  </div>
-</div>
-
-<div class="students-section">
-  <h2>Alumnos</h2>
-  <div id="emptyState" class="empty-state">
-    <p>Carga un examen JSON y espera a que los alumnos se conecten</p>
-  </div>
-  <table class="students-table" id="studentsTable" style="display:none;">
-    <thead>
-      <tr>
-        <th>Estado</th>
-        <th>Nombre</th>
-        <th>Grupo</th>
-        <th>Progreso</th>
-        <th>Respondidas</th>
-        <th>Aciertos</th>
-        <th>Salidas</th>
-        <th>Tiempo</th>
-      </tr>
-    </thead>
-    <tbody id="studentsBody"></tbody>
-  </table>
+<!-- ── Empty State (no room selected) ── -->
+<div id="emptyRoomState" class="empty-state">
+  <p>Carga un examen JSON para crear una sala</p>
 </div>
 
 <script>
 const socket = io();
-let examPhase = 'waiting';
+let selectedRoom = null;
+let roomsData = [];
 let timerInterval = null;
-let examStartTime = null;
-let examTimeLimit = 180;
-
-// Load URL and QR code
 let studentUrl = '';
-fetch('/api/qr')
-  .then(r => r.json())
-  .then(data => {
-    studentUrl = data.url;
-    document.getElementById('connUrl').textContent = data.url;
-    document.getElementById('qrImg').src = data.qr;
-  })
-  .catch(() => {
-    const fallback = `http://${window.location.hostname}:${window.location.port || 3000}`;
-    studentUrl = fallback;
-    document.getElementById('connUrl').textContent = fallback;
+let pendingSelect = null;
+
+// ─── Room List ─────────────────────────────────────────────────────────────
+socket.on('connect', () => {
+  socket.emit('getRooms');
+  // Re-watch selected room on reconnect
+  if (selectedRoom) socket.emit('watchRoom', { roomCode: selectedRoom });
+});
+
+socket.on('roomsList', (rooms) => {
+  roomsData = rooms;
+  renderRoomsList();
+  if (pendingSelect) {
+    selectRoom(pendingSelect);
+    pendingSelect = null;
+  }
+});
+
+function renderRoomsList() {
+  const container = document.getElementById('roomsList');
+  container.innerHTML = '';
+  roomsData.forEach(room => {
+    const card = document.createElement('div');
+    card.className = 'room-card' + (selectedRoom === room.roomCode ? ' selected' : '');
+    card.onclick = () => selectRoom(room.roomCode);
+
+    const phaseClass = room.phase === 'active' ? 'badge-active' : room.phase === 'closed' ? 'badge-closed' : 'badge-waiting';
+    const phaseText = room.phase === 'active' ? 'En curso' : room.phase === 'closed' ? 'Cerrado' : 'Esperando';
+
+    card.innerHTML = `
+      <div class="room-card-header">
+        <span class="room-card-code">${room.roomCode}</span>
+        <span class="badge badge-sm ${phaseClass}">${phaseText}</span>
+      </div>
+      <div class="room-card-title">${room.title}</div>
+      <div class="room-card-meta">${room.studentCount} alumnos · ${room.totalQuestions} preguntas</div>
+    `;
+    container.appendChild(card);
   });
+}
+
+function selectRoom(roomCode) {
+  selectedRoom = roomCode;
+  socket.emit('watchRoom', { roomCode });
+
+  document.getElementById('roomDetail').style.display = 'block';
+  document.getElementById('emptyRoomState').style.display = 'none';
+
+  document.getElementById('roomCodeBig').textContent = roomCode;
+
+  // Fetch QR for this room
+  fetch(`/api/qr?room=${roomCode}`)
+    .then(r => r.json())
+    .then(data => {
+      studentUrl = data.url;
+      document.getElementById('connUrl').textContent = data.url;
+      document.getElementById('qrImg').src = data.qr;
+    })
+    .catch(() => {
+      const fallback = `http://${window.location.hostname}:${window.location.port || 3000}?sala=${roomCode}`;
+      studentUrl = fallback;
+      document.getElementById('connUrl').textContent = fallback;
+    });
+
+  renderRoomsList();
+}
+
+// ─── Room State (from watchRoom) ───────────────────────────────────────────
+socket.on('roomState', (data) => {
+  document.getElementById('roomTitle').textContent = data.title;
+  document.getElementById('downloadKeyBtn').disabled = false;
+  updatePhase(data.phase);
+  if (data.phase === 'active' && data.startTime) {
+    startTeacherTimer(data.startTime, data.timeLimit);
+  } else {
+    document.getElementById('timerArea').style.display = 'none';
+    if (timerInterval) clearInterval(timerInterval);
+  }
+});
+
+// ─── Upload Exam ───────────────────────────────────────────────────────────
+async function uploadExam(input) {
+  const file = input.files[0];
+  if (!file) return;
+
+  try {
+    const text = await file.text();
+    const res = await fetch('/api/upload-exam', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: text,
+    });
+    const result = await res.json();
+    if (result.success) {
+      pendingSelect = result.roomCode;
+      socket.emit('getRooms');
+    } else {
+      alert('Error: ' + result.error);
+    }
+  } catch (err) {
+    alert('Error al leer el archivo: ' + err.message);
+  }
+  input.value = '';
+}
+
+// ─── Controls ──────────────────────────────────────────────────────────────
+function startExam() {
+  if (!selectedRoom) return;
+  if (confirm('¿Iniciar el examen? Los alumnos podran empezar a contestar.')) {
+    socket.emit('startExam', { roomCode: selectedRoom });
+  }
+}
+
+function closeExam() {
+  if (!selectedRoom) return;
+  if (confirm('¿Cerrar el examen? Los alumnos que no hayan entregado se les enviara automaticamente.')) {
+    socket.emit('closeExam', { roomCode: selectedRoom });
+  }
+}
+
+function resetExam() {
+  if (!selectedRoom) return;
+  if (confirm('¿Reiniciar el examen? Se borran las respuestas pero la sala se mantiene.')) {
+    socket.emit('resetExam', { roomCode: selectedRoom });
+  }
+}
+
+function deleteRoom() {
+  if (!selectedRoom) return;
+  if (confirm(`¿Eliminar la sala ${selectedRoom}? Se perderan todos los datos.`)) {
+    socket.emit('deleteRoom', { roomCode: selectedRoom });
+    selectedRoom = null;
+    document.getElementById('roomDetail').style.display = 'none';
+    document.getElementById('emptyRoomState').style.display = 'block';
+    if (timerInterval) clearInterval(timerInterval);
+    socket.emit('getRooms');
+  }
+}
+
+function downloadCSV() {
+  if (selectedRoom) window.open(`/api/download-csv?room=${selectedRoom}`, '_blank');
+}
+function downloadKey() {
+  if (selectedRoom) window.open(`/api/download-key?room=${selectedRoom}`, '_blank');
+}
 
 function copyUrl() {
   if (!studentUrl) return;
@@ -183,65 +359,13 @@ function copyUrl() {
   });
 }
 
-// ─── Upload Exam ────────────────────────────────────────────────────────────
-async function uploadExam(input) {
-  const file = input.files[0];
-  if (!file) return;
-  
-  try {
-    const text = await file.text();
-    const data = JSON.parse(text);
-    
-    const res = await fetch('/api/upload-exam', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: text,
-    });
-    
-    const result = await res.json();
-    if (result.success) {
-      document.getElementById('startBtn').disabled = false;
-      document.getElementById('downloadKeyBtn').disabled = false;
-      updatePhase('waiting');
-      alert(`Examen cargado: ${result.totalQuestions} preguntas`);
-    } else {
-      alert('Error: ' + result.error);
-    }
-  } catch (err) {
-    alert('Error al leer el archivo: ' + err.message);
-  }
-}
-
-// ─── Controls ───────────────────────────────────────────────────────────────
-function startExam() {
-  if (confirm('¿Iniciar el examen? Los alumnos podrán empezar a contestar.')) {
-    socket.emit('startExam');
-  }
-}
-
-function closeExam() {
-  if (confirm('¿Cerrar el examen? Los alumnos que no hayan entregado se les enviará automáticamente.')) {
-    socket.emit('closeExam');
-  }
-}
-
-function resetExam() {
-  if (confirm('¿Reiniciar todo? Se perderán los datos actuales.')) {
-    socket.emit('resetExam');
-  }
-}
-
-function downloadCSV() { window.open('/api/download-csv', '_blank'); }
-function downloadKey() { window.open('/api/download-key', '_blank'); }
-
-// ─── Phase Management ───────────────────────────────────────────────────────
+// ─── Phase Management ──────────────────────────────────────────────────────
 function updatePhase(phase) {
-  examPhase = phase;
   const badge = document.getElementById('phaseBadge');
   const startBtn = document.getElementById('startBtn');
   const closeBtn = document.getElementById('closeBtn');
   const downloadBtn = document.getElementById('downloadBtn');
-  
+
   if (phase === 'waiting') {
     badge.textContent = 'Esperando inicio';
     badge.className = 'badge badge-waiting';
@@ -263,64 +387,60 @@ function updatePhase(phase) {
   }
 }
 
-// ─── Timer ──────────────────────────────────────────────────────────────────
+// ─── Timer ─────────────────────────────────────────────────────────────────
 function startTeacherTimer(startTime, limitMinutes) {
-  examStartTime = startTime;
-  examTimeLimit = limitMinutes;
   document.getElementById('timerArea').style.display = 'block';
-  
   if (timerInterval) clearInterval(timerInterval);
   timerInterval = setInterval(() => {
-    const elapsed = (Date.now() - examStartTime) / 1000;
-    const remaining = (examTimeLimit * 60) - elapsed;
-    
+    const remaining = (limitMinutes * 60) - ((Date.now() - startTime) / 1000);
     if (remaining <= 0) {
       clearInterval(timerInterval);
       document.getElementById('teacherTimer').textContent = '0:00:00';
       return;
     }
-    
     const h = Math.floor(remaining / 3600);
     const m = Math.floor((remaining % 3600) / 60);
     const s = Math.floor(remaining % 60);
-    const display = `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
     const el = document.getElementById('teacherTimer');
-    el.textContent = display;
+    el.textContent = `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
     el.className = remaining < 600 ? 'timer-display timer-warning' : 'timer-display';
   }, 1000);
 }
 
-// ─── Students Table ─────────────────────────────────────────────────────────
+// ─── Students Table ────────────────────────────────────────────────────────
 function renderStudents(students) {
   const body = document.getElementById('studentsBody');
   const table = document.getElementById('studentsTable');
-  const empty = document.getElementById('emptyState');
-  
+  const empty = document.getElementById('emptyStudents');
+
   if (!students || students.length === 0) {
     table.style.display = 'none';
     empty.style.display = 'block';
+    document.getElementById('metricConnected').textContent = '0';
+    document.getElementById('metricAnswering').textContent = '0';
+    document.getElementById('metricSubmitted').textContent = '0';
+    document.getElementById('metricDisconnected').textContent = '0';
     return;
   }
-  
+
   table.style.display = 'table';
   empty.style.display = 'none';
-  
+
   let connected = 0, answering = 0, submitted = 0, disconnected = 0;
-  
+
   body.innerHTML = '';
   students.forEach(s => {
     if (s.submitted) submitted++;
     else if (s.connected) { connected++; answering++; }
     else disconnected++;
-    
+
     const pct = s.total > 0 ? Math.round((s.answered / s.total) * 100) : 0;
-    
+
     let statusDot, statusText;
     if (s.submitted) { statusDot = 'dot-submitted'; statusText = 'Entregado'; }
     else if (s.connected) { statusDot = 'dot-connected'; statusText = 'Conectado'; }
     else { statusDot = 'dot-disconnected'; statusText = 'Desconectado'; }
-    
-    // Format time used
+
     let timeStr = '—';
     if (s.submitted && s.timeUsed !== null) {
       const th = Math.floor(s.timeUsed / 3600);
@@ -329,7 +449,6 @@ function renderStudents(students) {
       timeStr = th > 0 ? `${th}h ${String(tm).padStart(2,'0')}m` : `${tm}m ${String(ts).padStart(2,'0')}s`;
     }
 
-    // Score display
     let scoreStr = '—';
     if (s.submitted && s.correct !== null) {
       scoreStr = `${s.correct}/${s.total}`;
@@ -352,55 +471,52 @@ function renderStudents(students) {
     `;
     body.appendChild(row);
   });
-  
+
   document.getElementById('metricConnected').textContent = connected + submitted;
   document.getElementById('metricAnswering').textContent = answering;
   document.getElementById('metricSubmitted').textContent = submitted;
   document.getElementById('metricDisconnected').textContent = disconnected;
 }
 
-// ─── Socket Events ──────────────────────────────────────────────────────────
-socket.on('state', (data) => {
-  updatePhase(data.phase);
-  if (data.phase === 'active' && data.startTime) {
-    startTeacherTimer(data.startTime, data.timeLimit);
-  }
-});
-
-socket.on('examLoaded', (data) => {
-  updatePhase('waiting');
-  document.getElementById('startBtn').disabled = false;
-  document.getElementById('downloadKeyBtn').disabled = false;
-});
-
+// ─── Broadcast Events (received via watchRoom) ────────────────────────────
 socket.on('examStarted', (data) => {
   updatePhase('active');
   startTeacherTimer(data.startTime, data.timeLimit);
+  socket.emit('getRooms');
 });
 
 socket.on('examClosed', () => {
   updatePhase('closed');
   if (timerInterval) clearInterval(timerInterval);
-  window.open('/api/download-csv', '_blank');
+  if (selectedRoom) window.open(`/api/download-csv?room=${selectedRoom}`, '_blank');
+  socket.emit('getRooms');
 });
 
 socket.on('examReset', () => {
   updatePhase('waiting');
-  document.getElementById('startBtn').disabled = true;
-  document.getElementById('timerArea').style.display = 'none';
   if (timerInterval) clearInterval(timerInterval);
+  document.getElementById('timerArea').style.display = 'none';
   renderStudents([]);
+  socket.emit('getRooms');
+});
+
+socket.on('roomDeleted', () => {
+  selectedRoom = null;
+  document.getElementById('roomDetail').style.display = 'none';
+  document.getElementById('emptyRoomState').style.display = 'block';
+  if (timerInterval) clearInterval(timerInterval);
+  socket.emit('getRooms');
 });
 
 socket.on('studentsUpdate', (students) => {
   renderStudents(students);
 });
 
-// Request initial student list
-socket.emit('getStudents');
-
-// Fallback: re-sync every 20 seconds in case a real-time event was missed
-setInterval(() => socket.emit('getStudents'), 20000);
+// Periodic refresh
+setInterval(() => {
+  socket.emit('getRooms');
+  if (selectedRoom) socket.emit('getStudents', { roomCode: selectedRoom });
+}, 20000);
 </script>
 </body>
 </html>
