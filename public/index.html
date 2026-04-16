@@ -530,7 +530,11 @@ socket.on('examLoaded', (data) => {
 socket.on('joinError', (msg) => { document.getElementById('errorMsg').textContent = msg; });
 
 socket.on('joined', (data) => {
-  state.name = data.name; state.group = data.group; state.questions = data.questions; state.timeLimit = data.timeLimit;
+  // Reset exam state before applying new data (prevents stale answers from a different exam)
+  const prevName = state.name;
+  state.questions = data.questions; state.answers = {}; state.marked = []; state.currentQ = 0;
+  state.answerKey = {}; state.submitted = false; state.reviewMode = false;
+  state.name = data.name; state.group = data.group; state.timeLimit = data.timeLimit;
   const saved = loadState();
   if (saved && saved.name === data.name) {
     state.answers = saved.answers || {}; state.marked = saved.marked || []; state.currentQ = saved.currentQ || 0;
@@ -542,7 +546,17 @@ socket.on('joined', (data) => {
   else showScreen('waitingScreen');
 });
 
-socket.on('examStarted', (data) => { showScreen('examScreen'); if (!state.currentQ) state.currentQ = 0; renderQuestion(); startTimer(data.startTime, data.timeLimit); });
+socket.on('examStarted', (data) => {
+  showScreen('examScreen');
+  if (!state.currentQ) state.currentQ = 0;
+  if (state.questions.length === 0 && state.name) {
+    // Questions missing — re-request them
+    socket.emit('joinExam', { name: state.name });
+  } else {
+    renderQuestion();
+  }
+  startTimer(data.startTime, data.timeLimit);
+});
 socket.on('examSubmitted', (data) => { enterReviewMode(data); });
 socket.on('examClosed', () => { if (!state.submitted) socket.emit('submitExam'); });
 socket.on('markedUpdate', (marked) => { state.marked = marked; saveState(); renderQuestion(); });
@@ -557,8 +571,6 @@ socket.on('examReset', () => {
 socket.on('disconnect', () => { document.getElementById('connStatus').classList.add('show'); });
 socket.on('connect', () => {
   document.getElementById('connStatus').classList.remove('show');
-  const saved = loadState();
-  if (saved && saved.name) socket.emit('joinExam', { name: saved.name });
 });
 
 document.addEventListener('visibilitychange', () => {
