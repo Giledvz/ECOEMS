@@ -13,23 +13,42 @@
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a1a; min-height: 100vh; -webkit-tap-highlight-color: transparent; }
   .screen { display: none; min-height: 100vh; padding: 16px; }
   .screen.active { display: flex; flex-direction: column; }
+
+  /* ── Room Screen ── */
+  .room-screen { align-items: center; justify-content: center; gap: 16px; }
+  .room-screen > * { margin-bottom: 16px; }
+  .room-screen > *:last-child { margin-bottom: 0; }
+  .room-screen h1 { font-size: 22px; font-weight: 600; text-align: center; }
+  .room-screen .exam-label { font-size: 14px; color: #666; text-align: center; }
+  .room-screen input[type="text"] { width: 100%; max-width: 280px; padding: 14px 16px; font-size: 28px; font-weight: 700; text-align: center; letter-spacing: 6px; border: 2px solid #ddd; border-radius: 10px; outline: none; background: #fff; text-transform: uppercase; font-family: monospace; }
+  .room-screen input[type="text"]:focus { border-color: #2c5282; }
+  .room-screen .btn-join { width: 100%; max-width: 280px; padding: 14px; font-size: 16px; font-weight: 600; background: #2c5282; color: #fff; border: none; border-radius: 10px; cursor: pointer; }
+  .room-screen .btn-join:active { transform: scale(0.98); }
+
+  /* ── Join Screen ── */
   .join-screen { align-items: center; justify-content: center; gap: 16px; }
   .join-screen > * { margin-bottom: 16px; }
   .join-screen > *:last-child { margin-bottom: 0; }
   .join-screen h1 { font-size: 22px; font-weight: 600; text-align: center; }
   .join-screen .exam-label { font-size: 14px; color: #666; text-align: center; }
   .join-screen .group-label { font-size: 13px; padding: 6px 14px; border-radius: 8px; background: #ebf4ff; color: #2c5282; font-weight: 500; }
+  .join-screen .room-code-label { font-size: 13px; font-family: monospace; padding: 6px 14px; border-radius: 8px; background: #f0fdf4; color: #166534; font-weight: 600; letter-spacing: 2px; }
   .join-screen select { width: 100%; max-width: 320px; padding: 14px 16px; font-size: 16px; border: 2px solid #ddd; border-radius: 10px; outline: none; background: #fff; appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; }
   .join-screen select:focus { border-color: #2c5282; }
   .join-screen .btn-join { width: 100%; max-width: 320px; padding: 14px; font-size: 16px; font-weight: 600; background: #2c5282; color: #fff; border: none; border-radius: 10px; cursor: pointer; }
   .join-screen .btn-join:active { transform: scale(0.98); }
   .join-screen .btn-join:disabled { opacity: 0.4; cursor: not-allowed; }
+  .join-screen .btn-back { width: 100%; max-width: 320px; padding: 10px; font-size: 14px; background: none; border: 1px solid #ddd; border-radius: 10px; color: #666; cursor: pointer; }
   .error-msg { color: #e53e3e; font-size: 13px; text-align: center; }
+
+  /* ── Waiting Screen ── */
   .waiting-screen { align-items: center; justify-content: center; gap: 12px; }
   .waiting-screen h2 { font-size: 20px; }
   .waiting-screen p { font-size: 14px; color: #666; text-align: center; }
   .pulse { width: 60px; height: 60px; border-radius: 50%; background: #2c5282; animation: pulse 1.5s infinite; }
   @keyframes pulse { 0%,100% { opacity:.3; transform:scale(.9); } 50% { opacity:1; transform:scale(1.1); } }
+
+  /* ── Exam Screen ── */
   .exam-screen { padding: 0; }
   .exam-header { position: sticky; top: 0; z-index: 10; background: #fff; border-bottom: 1px solid #eee; padding: 8px 16px; }
   .exam-header-top { display: flex; align-items: center; justify-content: space-between; }
@@ -87,6 +106,8 @@
   .nav-spacer { height: 160px; }
   .conn-status { position: fixed; top: 0; left: 0; right: 0; background: #fef3c7; color: #a16207; text-align: center; font-size: 12px; padding: 4px; z-index: 100; display: none; }
   .conn-status.show { display: block; }
+
+  /* ── Results Screen ── */
   .results-screen { align-items: center; gap: 16px; text-align: center; padding-top: 32px; padding-bottom: 40px; }
   .topic-breakdown { width: 100%; max-width: 480px; text-align: left; margin-top: 8px; }
   .topic-breakdown h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; text-align: center; color: #444; }
@@ -102,14 +123,21 @@
   .bar-red { background: #e53e3e; }
   .topic-score-detail { font-size: 10px; color: #999; margin-top: 2px; }
   .divider { width: 100%; max-width: 480px; border: none; border-top: 1px solid #e5e5e5; margin: 4px 0; }
-  body.dark .topic-breakdown h3 { color: #aaa; }
-  body.dark .topic-name { color: #bbb; }
-  body.dark .topic-subject { color: #666; }
-  body.dark .topic-bar-bg { background: #2a2a4a; }
-  body.dark .topic-score-detail { color: #666; }
-  body.dark .divider { border-color: #2a2a4a; }
+
+  /* ── Dark Mode Toggle ── */
   .dark-toggle { width: 24px; height: 24px; border-radius: 50%; border: 1px solid #ddd; background: #fff; cursor: pointer; font-size: 12px; display: flex; align-items: center; justify-content: center; opacity: 0.6; margin-left: 8px; }
+
+  /* ── Dark Mode ── */
   body.dark { background: #1a1a2e; color: #e0e0e0; }
+  body.dark .room-screen .exam-label { color: #aaa; }
+  body.dark .room-screen input[type="text"] { background: #16213e; border-color: #2a2a4a; color: #e0e0e0; }
+  body.dark .join-screen .exam-label { color: #aaa; }
+  body.dark .join-screen .group-label { background: #1a3a5c; color: #7eb8f7; }
+  body.dark .join-screen .room-code-label { background: #0a2e1a; color: #6fcf97; }
+  body.dark .join-screen select { background: #16213e; border-color: #2a2a4a; color: #e0e0e0; }
+  body.dark .join-screen .btn-join { background: #2c5282; }
+  body.dark .join-screen .btn-back { border-color: #2a2a4a; color: #aaa; }
+  body.dark .waiting-screen p { color: #aaa; }
   body.dark .exam-header { background: #16213e; border-color: #2a2a4a; }
   body.dark .exam-header .counter { color: #aaa; }
   body.dark .exam-header .subject-badge { background: #1a3a5c; color: #7eb8f7; }
@@ -133,15 +161,16 @@
   body.dark .btn-prev { background: #2a2a4a; color: #e0e0e0; }
   body.dark .btn-next { background: #2c5282; }
   body.dark .conn-status { background: #3a2e0a; color: #eab308; }
-  body.dark .join-screen .exam-label { color: #aaa; }
-  body.dark .join-screen .group-label { background: #1a3a5c; color: #7eb8f7; }
-  body.dark .join-screen select { background: #16213e; border-color: #2a2a4a; color: #e0e0e0; }
-  body.dark .join-screen .btn-join { background: #2c5282; }
-  body.dark .waiting-screen p { color: #aaa; }
   body.dark .review-banner { background: #1a3a5c; color: #7eb8f7; }
   body.dark .review-legend { color: #aaa; }
   body.dark .dark-toggle { background: #16213e; border-color: #2a2a4a; color: #f0c040; opacity: 1; }
   body.dark #qImage { filter: brightness(0.9); }
+  body.dark .topic-breakdown h3 { color: #aaa; }
+  body.dark .topic-name { color: #bbb; }
+  body.dark .topic-subject { color: #666; }
+  body.dark .topic-bar-bg { background: #2a2a4a; }
+  body.dark .topic-score-detail { color: #666; }
+  body.dark .divider { border-color: #2a2a4a; }
 </style>
 </head>
 <body>
@@ -164,23 +193,38 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<div id="joinScreen" class="screen join-screen active">
-  <h1 id="examTitle">Examen Diagnóstico</h1>
-  <p class="exam-label" id="examInfo">Conectando...</p>
+<!-- ── Room Code Screen ── -->
+<div id="roomScreen" class="screen room-screen active">
+  <h1>Examen Digital</h1>
+  <p class="exam-label">Ingresa el codigo de sala</p>
+  <input type="text" id="roomCodeInput" maxlength="6" placeholder="ABC123" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" />
+  <button class="btn-join" onclick="joinRoom()">Entrar a la sala</button>
+  <div class="error-msg" id="roomErrorMsg"></div>
+</div>
+
+<!-- ── Join Screen ── -->
+<div id="joinScreen" class="screen join-screen">
+  <h1 id="examTitle">Examen</h1>
+  <p class="exam-label" id="examInfo">Cargando...</p>
+  <span class="room-code-label" id="roomCodeLabel" style="display:none;"></span>
   <span class="group-label" id="groupLabel" style="display:none;"></span>
   <select id="nameSelect" disabled>
     <option value="">Selecciona tu nombre...</option>
   </select>
   <button class="btn-join" id="joinBtn" onclick="joinExam()" disabled>Entrar</button>
   <div class="error-msg" id="errorMsg"></div>
+  <button class="btn-back" onclick="backToRoom()">Cambiar de sala</button>
 </div>
 
+<!-- ── Waiting Screen ── -->
 <div id="waitingScreen" class="screen waiting-screen">
   <div class="pulse"></div>
   <h2 id="welcomeName">Bienvenido</h2>
   <p>Espera a que el profesor inicie el examen</p>
+  <p id="waitingRoomCode" style="font-family:monospace; font-size:13px; color:#999; margin-top:8px;"></p>
 </div>
 
+<!-- ── Exam Screen ── -->
 <div id="examScreen" class="screen exam-screen">
   <div class="exam-header">
     <div class="exam-header-top">
@@ -192,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="student-name-bar" id="studentNameBar"></div>
   </div>
   <div id="reviewBanner" class="review-banner" style="display:none;">
-    Modo revisión
+    Modo revision
     <div class="review-legend">
       <span><span class="legend-dot" style="background:#b7e1cd;"></span>Correcta</span>
       <span><span class="legend-dot" style="background:#e1b7b7;"></span>Incorrecta</span>
@@ -216,6 +260,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
+<!-- ── Results Screen ── -->
 <div id="resultsScreen" class="screen results-screen">
   <h2 style="font-size:26px; font-weight:700;">Examen entregado</h2>
   <p id="resultsName" style="font-size:18px; color:#2c5282; font-weight:600;"></p>
@@ -225,7 +270,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
   <p id="resultsDetail" style="font-size:16px; color:#555;"></p>
   <button onclick="startReview()" style="padding:16px 36px; font-size:17px; font-weight:600; background:#2c5282; color:#fff; border:none; border-radius:12px; cursor:pointer; margin-top:8px;">Revisar examen</button>
-  <p style="font-size:13px; color:#999; margin-top:4px;">Navega por las preguntas y ve cuáles tuviste bien y mal</p>
+  <p style="font-size:13px; color:#999; margin-top:4px;">Navega por las preguntas y ve cuales tuviste bien y mal</p>
   <hr class="divider" />
   <div class="topic-breakdown" id="topicBreakdown" style="display:none;">
     <h3>Tu rendimiento por tema</h3>
@@ -257,10 +302,10 @@ function renderMath(text) {
   }
 }
 
-let state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false };
+let state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '' };
 
 function saveState() {
-  try { localStorage.setItem('examState', JSON.stringify({ name: state.name, group: state.group, answers: state.answers, marked: state.marked, currentQ: state.currentQ })); } catch(e) {}
+  try { localStorage.setItem('examState', JSON.stringify({ roomCode: state.roomCode, name: state.name, group: state.group, answers: state.answers, marked: state.marked, currentQ: state.currentQ })); } catch(e) {}
 }
 function loadState() {
   try { const s = localStorage.getItem('examState'); return s ? JSON.parse(s) : null; } catch(e) { return null; }
@@ -283,6 +328,31 @@ function populateNameDropdown(students) {
   document.getElementById('joinBtn').disabled = students.length === 0;
 }
 
+// ── Room entry ──
+function joinRoom() {
+  const code = document.getElementById('roomCodeInput').value.trim().toUpperCase();
+  if (!code || code.length < 4) {
+    document.getElementById('roomErrorMsg').textContent = 'Ingresa el codigo de sala';
+    return;
+  }
+  document.getElementById('roomErrorMsg').textContent = '';
+  socket.emit('joinRoom', { roomCode: code });
+}
+
+function backToRoom() {
+  state.roomCode = '';
+  try { localStorage.removeItem('examState'); } catch(e) {}
+  showScreen('roomScreen');
+}
+
+document.getElementById('roomCodeInput').addEventListener('input', () => {
+  document.getElementById('roomErrorMsg').textContent = '';
+});
+document.getElementById('roomCodeInput').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') joinRoom();
+});
+
+// ── Exam join ──
 function joinExam() {
   const name = document.getElementById('nameSelect').value;
   if (!name) { document.getElementById('errorMsg').textContent = 'Selecciona tu nombre'; return; }
@@ -293,18 +363,19 @@ document.getElementById('nameSelect').addEventListener('change', () => {
   document.getElementById('errorMsg').textContent = '';
 });
 
+// ── Question rendering ──
 function renderQuestion() {
   if (state.questions.length === 0) return;
   const q = state.questions[state.currentQ];
   document.getElementById('qCounter').textContent = `${state.currentQ + 1}/${state.questions.length}`;
   document.getElementById('qSubject').textContent = q.subject;
   document.getElementById('qText').innerHTML = renderMath(q.text);
-  
+
   const qImg = document.getElementById('qImage');
   if (q.image) { qImg.src = q.image; qImg.style.display = 'block'; }
   else { qImg.style.display = 'none'; qImg.src = ''; }
   document.getElementById('studentNameBar').innerHTML = `<strong>${state.name}</strong> — ${state.group}`;
-  
+
   const optDiv = document.getElementById('qOptions');
   optDiv.innerHTML = '';
   ['A', 'B', 'C', 'D'].forEach(letter => {
@@ -384,7 +455,7 @@ function confirmSubmit() {
   if (state.submitted) return;
   const answered = Object.keys(state.answers).length;
   const total = state.questions.length;
-  let msg = `¿Estás seguro de entregar el examen?\n\nRespondidas: ${answered} de ${total}\n`;
+  let msg = `¿Estas seguro de entregar el examen?\n\nRespondidas: ${answered} de ${total}\n`;
   if (total - answered > 0) msg += `Sin responder: ${total - answered}\n`;
   if (state.marked.length > 0) msg += `Marcadas para revisar: ${state.marked.length}\n`;
   if (confirm(msg)) {
@@ -399,13 +470,12 @@ function enterReviewMode(data) {
   if (data && data.answerKey) state.answerKey = data.answerKey;
   const correct = (data && data.correct != null) ? data.correct : null;
   const total = state.questions.length;
-  const pct = total > 0 && typeof correct === 'number' ? Math.round((correct / total) * 100) : 0;
   document.getElementById('resultsName').textContent = state.name;
   document.getElementById('scoreNum').textContent = correct !== null ? correct : '—';
   document.getElementById('scoreLabel').textContent = correct !== null ? `de ${total} aciertos` : 'examen entregado';
   document.getElementById('resultsDetail').textContent = correct !== null
     ? `Respondiste ${correct} preguntas correctamente de ${total}`
-    : 'Tu examen fue enviado. El resultado lo verás con tu profesor.';
+    : 'Tu examen fue enviado. El resultado lo veras con tu profesor.';
   const circle = document.getElementById('scoreCircle');
   if (correct === null) { circle.style.background = '#f1f5f9'; circle.style.color = '#475569'; }
   else if (correct >= 95) { circle.style.background = '#dcfce7'; circle.style.color = '#16a34a'; }
@@ -418,8 +488,6 @@ function enterReviewMode(data) {
 
 function renderTopicBreakdown() {
   if (!state.answerKey || Object.keys(state.answerKey).length === 0) return;
-
-  // Agrupar preguntas por tema
   const topics = {};
   state.questions.forEach(q => {
     const key = q.topic_name || q.subject;
@@ -427,14 +495,11 @@ function renderTopicBreakdown() {
     topics[key].total++;
     if (state.answers[q.id] === state.answerKey[q.id]) topics[key].correct++;
   });
-
-  // Ordenar de mayor a menor rendimiento relativo
   const sorted = Object.entries(topics).sort((a, b) => {
     const pctA = a[1].correct / a[1].total;
     const pctB = b[1].correct / b[1].total;
     return pctB - pctA;
   });
-
   const container = document.getElementById('topicRows');
   container.innerHTML = '';
   sorted.forEach(([name, data]) => {
@@ -454,10 +519,7 @@ function renderTopicBreakdown() {
     `;
     container.appendChild(row);
   });
-
   document.getElementById('topicBreakdown').style.display = '';
-
-  // Animar barras con un pequeño delay para que se vean bonitas
   requestAnimationFrame(() => {
     document.querySelectorAll('.topic-bar-fill').forEach(el => {
       el.style.width = el.dataset.pct + '%';
@@ -489,35 +551,15 @@ function startTimer(startTime, limitMinutes) {
   }, 1000);
 }
 
-// Socket events
-socket.on('state', (data) => {
-  if (data.totalQuestions > 0) {
-    document.getElementById('examTitle').textContent = data.title;
-    document.getElementById('examInfo').textContent = `${data.totalQuestions} preguntas`;
-    if (data.group) {
-      document.getElementById('groupLabel').textContent = data.group;
-      document.getElementById('groupLabel').style.display = '';
-    }
-    if (data.studentList && data.studentList.length > 0) {
-      populateNameDropdown(data.studentList);
-    }
-  } else {
-    document.getElementById('examInfo').textContent = 'El profesor aún no ha cargado el examen';
-  }
-  const saved = loadState();
-  if (saved && saved.name && data.totalQuestions > 0) {
-    socket.emit('joinExam', { name: saved.name });
-  } else if (saved && data.totalQuestions === 0) {
-    try { localStorage.removeItem('examState'); } catch(e) {}
-  }
-});
+// ─── Socket Events ──────────────────────────────────────────────────────────
 
-socket.on('examLoaded', (data) => {
-  try { localStorage.removeItem('examState'); } catch(e) {}
-  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false };
-  showScreen('joinScreen');
+// Room join response
+socket.on('roomJoined', (data) => {
+  state.roomCode = data.roomCode;
   document.getElementById('examTitle').textContent = data.title;
   document.getElementById('examInfo').textContent = `${data.totalQuestions} preguntas`;
+  document.getElementById('roomCodeLabel').textContent = `Sala: ${data.roomCode}`;
+  document.getElementById('roomCodeLabel').style.display = '';
   if (data.group) {
     document.getElementById('groupLabel').textContent = data.group;
     document.getElementById('groupLabel').style.display = '';
@@ -525,22 +567,35 @@ socket.on('examLoaded', (data) => {
   if (data.studentList && data.studentList.length > 0) {
     populateNameDropdown(data.studentList);
   }
+
+  // Auto-rejoin if we have a saved session for this room
+  const saved = loadState();
+  if (saved && saved.name && saved.roomCode === data.roomCode) {
+    socket.emit('joinExam', { name: saved.name });
+  } else {
+    showScreen('joinScreen');
+  }
+});
+
+socket.on('joinRoomError', (msg) => {
+  document.getElementById('roomErrorMsg').textContent = msg;
+  showScreen('roomScreen');
 });
 
 socket.on('joinError', (msg) => { document.getElementById('errorMsg').textContent = msg; });
 
 socket.on('joined', (data) => {
-  // Reset exam state before applying new data (prevents stale answers from a different exam)
-  const prevName = state.name;
   state.questions = data.questions; state.answers = {}; state.marked = []; state.currentQ = 0;
   state.answerKey = {}; state.submitted = false; state.reviewMode = false;
   state.name = data.name; state.group = data.group; state.timeLimit = data.timeLimit;
+  if (data.roomCode) state.roomCode = data.roomCode;
   const saved = loadState();
-  if (saved && saved.name === data.name) {
+  if (saved && saved.name === data.name && saved.roomCode === state.roomCode) {
     state.answers = saved.answers || {}; state.marked = saved.marked || []; state.currentQ = saved.currentQ || 0;
     Object.entries(state.answers).forEach(([qId, ans]) => { socket.emit('answer', { questionId: parseInt(qId), answer: ans }); });
   }
   document.getElementById('welcomeName').textContent = `¡Hola, ${data.name}!`;
+  document.getElementById('waitingRoomCode').textContent = `Sala: ${state.roomCode}`;
   saveState();
   if (data.examActive) { showScreen('examScreen'); renderQuestion(); if (data.startTime) startTimer(data.startTime, data.timeLimit); }
   else showScreen('waitingScreen');
@@ -550,7 +605,6 @@ socket.on('examStarted', (data) => {
   showScreen('examScreen');
   if (!state.currentQ) state.currentQ = 0;
   if (state.questions.length === 0 && state.name) {
-    // Questions missing — re-request them
     socket.emit('joinExam', { name: state.name });
   } else {
     renderQuestion();
@@ -560,17 +614,41 @@ socket.on('examStarted', (data) => {
 socket.on('examSubmitted', (data) => { enterReviewMode(data); });
 socket.on('examClosed', () => { if (!state.submitted) socket.emit('submitExam'); });
 socket.on('markedUpdate', (marked) => { state.marked = marked; saveState(); renderQuestion(); });
+
 socket.on('examReset', () => {
-  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false };
+  if (state.timerInterval) clearInterval(state.timerInterval);
+  const rc = state.roomCode;
+  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: rc };
   try { localStorage.removeItem('examState'); } catch(e) {}
-  try { sessionStorage.removeItem('examState'); } catch(e) {}
   document.getElementById('reviewBanner').style.display = 'none';
   document.getElementById('submitBtn').style.display = '';
-  showScreen('joinScreen');
+  if (rc) socket.emit('joinRoom', { roomCode: rc });
+  else showScreen('roomScreen');
 });
+
+socket.on('roomDeleted', () => {
+  if (state.timerInterval) clearInterval(state.timerInterval);
+  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '' };
+  try { localStorage.removeItem('examState'); } catch(e) {}
+  document.getElementById('reviewBanner').style.display = 'none';
+  document.getElementById('submitBtn').style.display = '';
+  showScreen('roomScreen');
+});
+
 socket.on('disconnect', () => { document.getElementById('connStatus').classList.add('show'); });
 socket.on('connect', () => {
   document.getElementById('connStatus').classList.remove('show');
+  // Auto-rejoin room on reconnect
+  const saved = loadState();
+  if (saved && saved.roomCode) {
+    socket.emit('joinRoom', { roomCode: saved.roomCode });
+  } else {
+    const params = new URLSearchParams(window.location.search);
+    const sala = params.get('sala');
+    if (sala) {
+      socket.emit('joinRoom', { roomCode: sala.toUpperCase() });
+    }
+  }
 });
 
 document.addEventListener('visibilitychange', () => {
