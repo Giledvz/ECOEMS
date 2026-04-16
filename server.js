@@ -335,6 +335,7 @@ io.on('connection', (socket) => {
     socket.emit('joined', {
       name: cleanName,
       group: room.group,
+      title: room.title,
       questions: questionsForStudent,
       timeLimit: room.timeLimitMinutes,
       examActive: room.phase === 'active',

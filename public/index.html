@@ -64,7 +64,8 @@
     .exam-header .counter { font-size: 22px; }
     .exam-header .timer { font-size: 22px; }
   }
-  .student-name-bar { font-size: 11px; color: #888; text-align: center; padding-top: 4px; }
+  .exam-title-bar { font-size: 12px; color: #2c5282; text-align: center; padding-top: 4px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .student-name-bar { font-size: 11px; color: #888; text-align: center; padding-top: 2px; }
   .student-name-bar strong { color: #1a1a1a; font-weight: 600; }
   .question-area { padding: 16px; }
   .question-text { font-size: 15px; line-height: 1.6; margin-bottom: 16px; }
@@ -93,9 +94,9 @@
   .nav-cell.review-correct { background: #b7e1cd; color: #0a6b3d; border-color: #b7e1cd; }
   .nav-cell.review-wrong { background: #e1b7b7; color: #7f1d1d; border-color: #e1b7b7; }
   .nav-cell.review-blank { background: #f0f0f0; color: #999; }
-  .nav-area { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; border-top: 1px solid #eee; z-index: 10; }
-  .nav-controls { display: flex; padding: 8px 16px; gap: 8px; }
-  .nav-controls button { flex: 1; padding: 12px; font-size: 14px; font-weight: 600; border: none; border-radius: 8px; cursor: pointer; }
+  .nav-area { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; border-top: 1px solid #eee; z-index: 10; padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .nav-controls { display: flex; padding: 8px 16px 12px; gap: 8px; }
+  .nav-controls button { flex: 1; padding: 14px 12px; font-size: 15px; font-weight: 600; border: none; border-radius: 8px; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: rgba(0,0,0,0.1); }
   .btn-prev { background: #f0f0f0; color: #333; }
   .btn-next { background: #2c5282; color: #fff; }
   .btn-submit { background: #16a34a; color: #fff; flex: 0.7 !important; font-size: 13px !important; }
@@ -103,7 +104,7 @@
   .review-banner { background: #ebf4ff; padding: 8px 16px; text-align: center; font-size: 13px; color: #2c5282; font-weight: 500; }
   .review-legend { display: flex; gap: 12px; justify-content: center; padding: 4px 0 0; font-size: 11px; color: #666; }
   .legend-dot { width: 10px; height: 10px; border-radius: 3px; display: inline-block; margin-right: 3px; vertical-align: middle; }
-  .nav-spacer { height: 160px; }
+  .nav-spacer { height: 180px; }
   .conn-status { position: fixed; top: 0; left: 0; right: 0; background: #fef3c7; color: #a16207; text-align: center; font-size: 12px; padding: 4px; z-index: 100; display: none; }
   .conn-status.show { display: block; }
 
@@ -142,6 +143,7 @@
   body.dark .exam-header .counter { color: #aaa; }
   body.dark .exam-header .subject-badge { background: #1a3a5c; color: #7eb8f7; }
   body.dark .exam-header .timer { color: #7eb8f7; }
+  body.dark .exam-title-bar { color: #7eb8f7; }
   body.dark .student-name-bar { color: #888; }
   body.dark .student-name-bar strong { color: #e0e0e0; }
   body.dark .option-btn { background: #16213e; border-color: #2a2a4a; color: #e0e0e0; }
@@ -233,6 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <button class="dark-toggle" id="darkToggle" onclick="toggleDarkMode()"></button>
       <span class="timer" id="timerDisplay">3:00:00</span>
     </div>
+    <div class="exam-title-bar" id="examTitleBar"></div>
     <div class="student-name-bar" id="studentNameBar"></div>
   </div>
   <div id="reviewBanner" class="review-banner" style="display:none;">
@@ -596,6 +599,7 @@ socket.on('joined', (data) => {
   }
   document.getElementById('welcomeName').textContent = `¡Hola, ${data.name}!`;
   document.getElementById('waitingRoomCode').textContent = `Sala: ${state.roomCode}`;
+  if (data.title) document.getElementById('examTitleBar').textContent = data.title;
   saveState();
   if (data.examActive) { showScreen('examScreen'); renderQuestion(); if (data.startTime) startTimer(data.startTime, data.timeLimit); }
   else showScreen('waitingScreen');

@@ -95,12 +95,26 @@
 
   .empty-state { text-align: center; padding: 48px; color: #64748b; }
   .empty-state p { font-size: 14px; }
+
+  /* ── Global Controls ── */
+  .global-controls { display: flex; gap: 10px; }
+  .btn-start-all { background: #16a34a; color: #fff; padding: 8px 18px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+  .btn-start-all:hover { background: #15803d; }
+  .btn-formal { background: #2563eb; color: #fff; padding: 8px 18px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+  .btn-formal:hover { background: #1d4ed8; }
+  .btn-close-all { background: #ef4444; color: #fff; padding: 8px 18px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+  .btn-close-all:hover { background: #dc2626; }
 </style>
 </head>
 <body>
 
 <div class="header">
   <h1>Panel del Profesor</h1>
+  <div class="global-controls">
+    <button class="btn-start-all" id="startAllBtn" onclick="startAll('practice')">▶ Práctica</button>
+    <button class="btn-formal" id="startAllFormalBtn" onclick="startAll('formal')">▶ Examen formal</button>
+    <button class="btn-close-all" id="closeAllBtn" onclick="closeAll()">⏹ Cerrar todos</button>
+  </div>
 </div>
 
 <!-- ── Rooms Bar ── -->
@@ -327,6 +341,31 @@ function resetExam() {
   if (!selectedRoom) return;
   if (confirm('¿Reiniciar el examen? Se borran las respuestas pero la sala se mantiene.')) {
     socket.emit('resetExam', { roomCode: selectedRoom });
+  }
+}
+
+function startAll(mode) {
+  const waiting = roomsData.filter(r => r.phase === 'waiting');
+  if (waiting.length === 0) { alert('No hay salas en espera para iniciar.'); return; }
+
+  if (mode === 'practice') {
+    const withStudents = waiting.filter(r => r.studentCount > 0);
+    if (withStudents.length === 0) { alert('No hay salas con alumnos conectados.'); return; }
+    if (confirm(`Modo práctica: iniciar ${withStudents.length} sala(s) que ya tienen alumnos conectados.`)) {
+      withStudents.forEach(r => socket.emit('startExam', { roomCode: r.roomCode }));
+    }
+  } else {
+    if (confirm(`Modo formal: iniciar las ${waiting.length} sala(s) aunque no haya alumnos conectados.`)) {
+      waiting.forEach(r => socket.emit('startExam', { roomCode: r.roomCode }));
+    }
+  }
+}
+
+function closeAll() {
+  const active = roomsData.filter(r => r.phase === 'active');
+  if (active.length === 0) { alert('No hay salas activas para cerrar.'); return; }
+  if (confirm(`¿Cerrar ${active.length} sala(s) simultáneamente?`)) {
+    active.forEach(r => socket.emit('closeExam', { roomCode: r.roomCode }));
   }
 }
 
