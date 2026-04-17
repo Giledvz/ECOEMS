@@ -332,7 +332,7 @@ io.on('connection', (socket) => {
       return { id: q.id, text: q.text, options: newOptions, image: q.image, subject: q.subject };
     });
 
-    socket.emit('joined', {
+    const joinPayload = {
       name: cleanName,
       group: room.group,
       title: room.title,
@@ -341,7 +341,20 @@ io.on('connection', (socket) => {
       examActive: room.phase === 'active',
       startTime: room.startTime,
       roomCode,
-    });
+    };
+
+    if (student.submitted) {
+      let correct = 0;
+      room.questions.forEach(q => {
+        const key = student.answerKey?.[q.id] ?? room.answerKey[q.id];
+        if (student.answers[q.id] === key) correct++;
+      });
+      joinPayload.submitted = true;
+      joinPayload.correct = correct;
+      joinPayload.answerKey = student.answerKey ?? room.answerKey;
+    }
+
+    socket.emit('joined', joinPayload);
 
     io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
     console.log(`[${roomCode}] ${cleanName} (${room.group}) se unió`);

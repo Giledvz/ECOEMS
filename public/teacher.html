@@ -141,7 +141,7 @@
       <div class="label-sm">Codigo de sala</div>
       <div class="room-code-big" id="roomCodeBig">------</div>
       <div class="label-sm">Los alumnos entran a:</div>
-      <div class="url" id="connUrl">Cargando...</div>
+      <a class="url" id="connUrl" href="#" target="_blank" rel="noopener">Cargando...</a>
       <button class="copy-btn" id="copyBtn" onclick="copyUrl()">Copiar link</button>
     </div>
     <div class="conn-divider"></div>
@@ -272,13 +272,17 @@ function selectRoom(roomCode) {
     .then(r => r.json())
     .then(data => {
       studentUrl = data.url;
-      document.getElementById('connUrl').textContent = data.url;
+      const urlEl = document.getElementById('connUrl');
+      urlEl.textContent = data.url;
+      urlEl.href = data.url;
       document.getElementById('qrImg').src = data.qr;
     })
     .catch(() => {
       const fallback = `http://${window.location.hostname}:${window.location.port || 3000}?sala=${roomCode}`;
       studentUrl = fallback;
-      document.getElementById('connUrl').textContent = fallback;
+      const urlEl = document.getElementById('connUrl');
+      urlEl.textContent = fallback;
+      urlEl.href = fallback;
     });
 
   renderRoomsList();
@@ -390,12 +394,40 @@ function downloadKey() {
 
 function copyUrl() {
   if (!studentUrl) return;
-  navigator.clipboard.writeText(studentUrl).then(() => {
-    const btn = document.getElementById('copyBtn');
+  const btn = document.getElementById('copyBtn');
+  const showCopied = () => {
     btn.textContent = '¡Copiado!';
     btn.classList.add('copied');
     setTimeout(() => { btn.textContent = 'Copiar link'; btn.classList.remove('copied'); }, 2000);
-  });
+  };
+  const showError = () => {
+    btn.textContent = 'Error al copiar';
+    setTimeout(() => { btn.textContent = 'Copiar link'; }, 2000);
+  };
+  const fallback = () => {
+    const ta = document.createElement('textarea');
+    ta.value = studentUrl;
+    ta.style.position = 'fixed';
+    ta.style.top = '0';
+    ta.style.left = '0';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    try {
+      const ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      if (ok) showCopied(); else showError();
+    } catch (e) {
+      document.body.removeChild(ta);
+      showError();
+    }
+  };
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(studentUrl).then(showCopied).catch(fallback);
+  } else {
+    fallback();
+  }
 }
 
 // ─── Phase Management ──────────────────────────────────────────────────────

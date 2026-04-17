@@ -601,7 +601,8 @@ socket.on('joined', (data) => {
   document.getElementById('waitingRoomCode').textContent = `Sala: ${state.roomCode}`;
   if (data.title) document.getElementById('examTitleBar').textContent = data.title;
   saveState();
-  if (data.examActive) { showScreen('examScreen'); renderQuestion(); if (data.startTime) startTimer(data.startTime, data.timeLimit); }
+  if (data.submitted) { enterReviewMode({ correct: data.correct, total: data.questions.length, answerKey: data.answerKey }); }
+  else if (data.examActive) { showScreen('examScreen'); renderQuestion(); if (data.startTime) startTimer(data.startTime, data.timeLimit); }
   else showScreen('waitingScreen');
 });
 
