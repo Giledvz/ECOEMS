@@ -74,6 +74,25 @@ function createRoom(data) {
   return room;
 }
 
+function buildRoomsList() {
+  const list = [];
+  rooms.forEach(room => {
+    list.push({
+      roomCode: room.roomCode,
+      title: room.title,
+      group: room.group,
+      phase: room.phase,
+      totalQuestions: room.questions.length,
+      studentCount: Object.values(room.students).filter(s => s.connected).length,
+    });
+  });
+  return list;
+}
+
+function broadcastRoomsList() {
+  io.to('teachers').emit('roomsList', buildRoomsList());
+}
+
 function getStudentSummary(room) {
   return Object.entries(room.students).map(([id, s]) => {
     let correct = 0;
@@ -159,6 +178,7 @@ app.post('/api/upload-exam', (req, res) => {
   try {
     const room = createRoom(req.body);
     console.log(`Sala ${room.roomCode} creada: "${room.title}" (${room.questions.length} preguntas)`);
+    broadcastRoomsList();
     res.json({ success: true, totalQuestions: room.questions.length, roomCode: room.roomCode });
   } catch (err) {
     res.status(400).json({ error: err.message });
@@ -357,6 +377,7 @@ io.on('connection', (socket) => {
     socket.emit('joined', joinPayload);
 
     io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
+    broadcastRoomsList();
     console.log(`[${roomCode}] ${cleanName} (${room.group}) se unió`);
   });
 
@@ -432,6 +453,7 @@ io.on('connection', (socket) => {
     room.startTime = Date.now();
     Object.values(room.students).forEach(s => { s.startTime = room.startTime; });
     io.to(roomCode).emit('examStarted', { startTime: room.startTime, timeLimit: room.timeLimitMinutes });
+    broadcastRoomsList();
     console.log(`[${roomCode}] Examen iniciado`);
   });
 
@@ -460,6 +482,7 @@ io.on('connection', (socket) => {
       }
     });
     io.to(roomCode).emit('examClosed');
+    broadcastRoomsList();
     console.log(`[${roomCode}] Examen cerrado`);
   });
 
@@ -471,6 +494,7 @@ io.on('connection', (socket) => {
     room.students = {};
     room.startTime = null;
     io.to(roomCode).emit('examReset');
+    broadcastRoomsList();
     console.log(`[${roomCode}] Examen reiniciado`);
   });
 
@@ -480,6 +504,7 @@ io.on('connection', (socket) => {
     if (!room) return;
     io.to(roomCode).emit('roomDeleted');
     rooms.delete(roomCode);
+    broadcastRoomsList();
     console.log(`[${roomCode}] Sala eliminada`);
   });
 
@@ -492,24 +517,14 @@ io.on('connection', (socket) => {
 
   // ── Teacher: get all rooms ──
   socket.on('getRooms', () => {
-    const list = [];
-    rooms.forEach(room => {
-      list.push({
-        roomCode: room.roomCode,
-        title: room.title,
-        group: room.group,
-        phase: room.phase,
-        totalQuestions: room.questions.length,
-        studentCount: Object.keys(room.students).length,
-      });
-    });
-    socket.emit('roomsList', list);
+    socket.join('teachers');
+    socket.emit('roomsList', buildRoomsList());
   });
 
   // ── Teacher: watch a room (join for live updates) ──
   socket.on('watchRoom', ({ roomCode }) => {
     for (const r of socket.rooms) {
-      if (r !== socket.id) socket.leave(r);
+      if (r !== socket.id && r !== 'teachers') socket.leave(r);
     }
     const room = rooms.get(roomCode);
     if (!room) return;
@@ -534,6 +549,7 @@ io.on('connection', (socket) => {
       if (room && room.students[socket.id]) {
         room.students[socket.id].connected = false;
         io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
+        broadcastRoomsList();
         console.log(`[${roomCode}] ${room.students[socket.id].name} desconectado`);
       }
       socketRoom.delete(socket.id);

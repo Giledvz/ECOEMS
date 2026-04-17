@@ -643,16 +643,19 @@ socket.on('roomDeleted', () => {
 socket.on('disconnect', () => { document.getElementById('connStatus').classList.add('show'); });
 socket.on('connect', () => {
   document.getElementById('connStatus').classList.remove('show');
-  // Auto-rejoin room on reconnect
+  // URL param takes priority over saved state (user explicitly opening a room link)
+  const params = new URLSearchParams(window.location.search);
+  const urlSala = params.get('sala');
   const saved = loadState();
-  if (saved && saved.roomCode) {
-    socket.emit('joinRoom', { roomCode: saved.roomCode });
-  } else {
-    const params = new URLSearchParams(window.location.search);
-    const sala = params.get('sala');
-    if (sala) {
-      socket.emit('joinRoom', { roomCode: sala.toUpperCase() });
+  if (urlSala) {
+    const code = urlSala.toUpperCase();
+    if (saved && saved.roomCode && saved.roomCode !== code) {
+      try { localStorage.removeItem('examState'); } catch(e) {}
     }
+    document.getElementById('roomCodeInput').value = code;
+    socket.emit('joinRoom', { roomCode: code });
+  } else if (saved && saved.roomCode) {
+    socket.emit('joinRoom', { roomCode: saved.roomCode });
   }
 });
 
