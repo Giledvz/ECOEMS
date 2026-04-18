@@ -1,0 +1,1635 @@
+{
+  "exam": {
+    "title": "Simulacro — Examen de Ingreso a la Licenciatura UNAM Área 1",
+    "group": "Universidad",
+    "date": "2026-04-18",
+    "version": "1.0",
+    "total_questions": 120,
+    "students": [
+      "Óscar",
+      "Alfredo",
+      "Danna"
+    ],
+    "instructions": "Selecciona la opción correcta para cada pregunta. No se permite el uso de calculadora.",
+    "sections": [
+      {
+        "subject": "Física",
+        "questions_count": 16,
+        "questions": [
+          {
+            "id": 1,
+            "topic": "1.2",
+            "topic_name": "Rapidez promedio",
+            "text": "La tripulación del Apolo XI tuvo que recorrer en tres días la distancia de $3.8 \\times 10^{15}$ km para llegar a la Luna. ¿Cuál fue la rapidez promedio de la nave?",
+            "options": {
+              "A": "$53 \\times 10^{13} \\ \\frac{km}{día}$",
+              "B": "$5.3 \\times 10^{13} \\ \\frac{km}{h}$",
+              "C": "$5.3 \\times 10^{11} \\ \\frac{km}{h}$",
+              "D": "$53 \\times 10^{11} \\ \\frac{km}{día}$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 2,
+            "topic": "1.3",
+            "topic_name": "Movimiento uniformemente acelerado",
+            "text": "Un auto arranca con una aceleración constante de $1.8 \\ \\frac{m}{s^2}$; la velocidad del auto dos segundos después de iniciar su movimiento es de",
+            "options": {
+              "A": "$0.9 \\ \\frac{m}{s}$",
+              "B": "$1.8 \\ \\frac{m}{s}$",
+              "C": "$3.2 \\ \\frac{m}{s}$",
+              "D": "$3.6 \\ \\frac{m}{s}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 3,
+            "topic": "2.6",
+            "topic_name": "Segunda ley de Newton (fuerza)",
+            "text": "Una moneda de 10 gramos es colocada sobre un plano sin fricción. Si se desea producirle una aceleración de $5 \\ \\frac{m}{s^2}$, ¿cuál es la magnitud de la fuerza que se requiere aplicar?",
+            "options": {
+              "A": "0.098 N",
+              "B": "0.05 N",
+              "C": "2 N",
+              "D": "50 N"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 4,
+            "topic": "2.6",
+            "topic_name": "Aceleración con fuerzas opuestas",
+            "text": "Sobre un objeto de 100 kg se aplican dos fuerzas (una de 20 N y otra de 30 N) con la misma dirección, pero de sentido contrario, ¿cuál es la magnitud de la aceleración del objeto?",
+            "options": {
+              "A": "$0.1 \\ \\frac{m}{s^2}$",
+              "B": "$0.2 \\ \\frac{m}{s^2}$",
+              "C": "$0.3 \\ \\frac{m}{s^2}$",
+              "D": "$0.5 \\ \\frac{m}{s^2}$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 5,
+            "topic": "2.9",
+            "topic_name": "Ley de Hooke y dinamómetro",
+            "text": "Para medir fuerzas se emplea un dinamómetro que en esencia es un resorte adecuadamente calibrado. En la calibración de todo dinamómetro se hace uso de",
+            "options": {
+              "A": "la ley de la gravitación universal.",
+              "B": "la segunda ley de Newton.",
+              "C": "el principio de la conservación de la masa.",
+              "D": "la ley de Hooke."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 6,
+            "topic": "3.1",
+            "topic_name": "Trabajo mecánico",
+            "text": "Selecciona la situación que ejemplifica la realización de un trabajo mecánico.",
+            "options": {
+              "A": "La energía empleada para elevar la temperatura de un gas a volumen constante.",
+              "B": "Los kilowatts hora gastados para mantener encendido un foco durante cierto tiempo.",
+              "C": "El aumento en la energía cinética de un objeto en movimiento circular uniforme.",
+              "D": "Al empujar una caja con fuerza constante para moverla una cierta distancia."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 7,
+            "topic": "3.3",
+            "topic_name": "Energía cinética",
+            "text": "La ecuación que permite calcular la energía cinética de una partícula de masa $m$ y velocidad $v$ es",
+            "options": {
+              "A": "$E_c = mv$",
+              "B": "$E_c = 2mv^2$",
+              "C": "$E_c = \\frac{mv}{2}$",
+              "D": "$E_c = \\frac{1}{2}mv^2$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 8,
+            "topic": "4.1.2",
+            "topic_name": "Termómetro de gas a volumen constante",
+            "text": "Un termómetro de gas a volumen constante es usado para medir la temperatura de un objeto. Cuando el termómetro está en contacto con el punto triple del agua (273.17 K), la presión en el termómetro es $8{,}500 \\times 10^4$ Pa. Cuando éste entra en contacto con otro objeto la presión es de $9{,}650 \\times 10^4$ Pa. ¿Cuál es la temperatura del objeto?\n\nConsidera:\nEl gas del termómetro se comporta como un gas ideal.",
+            "options": {
+              "A": "683 K",
+              "B": "310 K",
+              "C": "410 K",
+              "D": "241 K"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 9,
+            "topic": "4.1.3",
+            "topic_name": "Conversión Celsius a Kelvin",
+            "text": "Para convertir un valor de temperatura Celsius $T_C$ a su valor equivalente en la escala Kelvin $T_K$ de temperaturas, se emplea la expresión",
+            "options": {
+              "A": "$T_K = (T_C - 32) / 1.8$",
+              "B": "$T_K = T_C + 273$",
+              "C": "$T_K = T_C - 273$",
+              "D": "$T_K = 1.8(T_C + 273)$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 10,
+            "topic": "4.1.4",
+            "topic_name": "Capacidad térmica específica",
+            "text": "A la cantidad de calor que necesita un gramo de una sustancia para elevar su temperatura un grado Celsius, se le conoce como",
+            "options": {
+              "A": "capacidad térmica.",
+              "B": "calor latente de fusión.",
+              "C": "calor latente de vaporización.",
+              "D": "capacidad térmica específica."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 11,
+            "topic": "5.1",
+            "topic_name": "Superposición de ondas",
+            "text": "A la playa llega el oleaje del mar y en ocasiones llegan algunas olas de mayor tamaño que el promedio. Lo anterior se debe al comportamiento ondulatorio de las olas, pues una característica de éstas es que se",
+            "options": {
+              "A": "refractan.",
+              "B": "polarizan.",
+              "C": "reflejan.",
+              "D": "superponen."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 12,
+            "topic": "6.3",
+            "topic_name": "Ley de Ohm (voltaje)",
+            "text": "Por un cable, que tiene una resistencia eléctrica de 10 $\\Omega$, circula una corriente eléctrica de 10 A. ¿Cuál es el voltaje en el cable?",
+            "options": {
+              "A": "100 V",
+              "B": "20 V",
+              "C": "10 V",
+              "D": "1 V"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 13,
+            "topic": "6.4.1",
+            "topic_name": "Resistencia total en circuito",
+            "text": "Determina la resistencia total del circuito que se representa en la imagen.",
+            "options": {
+              "A": "$2.41 \\ \\Omega$",
+              "B": "$4.4 \\ \\Omega$",
+              "C": "$12 \\ \\Omega$",
+              "D": "$1.90 \\ \\Omega$"
+            },
+            "answer": "B",
+            "image": "/imagenes_area1_2022/q13_circuito.png"
+          },
+          {
+            "id": 14,
+            "topic": "7.2.1",
+            "topic_name": "Flujo volumétrico (llenado de alberca)",
+            "text": "¿En cuánto tiempo se llenará una alberca olímpica de 50 m x 25 m x 3 m, si se usa un tubo de 40 cm de diámetro por el que fluye agua a una velocidad de $4 \\ \\frac{m}{s}$?",
+            "options": {
+              "A": "0.0052 hrs.",
+              "B": "0.020 hrs.",
+              "C": "1.63 hrs.",
+              "D": "2.07 hrs."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 15,
+            "topic": "8.3",
+            "topic_name": "Lente convergente (distancia del objeto)",
+            "text": "A través de una lente convergente de 30 cm de radio pasan rayos que forman una imagen a 20 cm de distancia de la lente. ¿A qué distancia se encuentra el objeto real del lente?",
+            "options": {
+              "A": "30 cm",
+              "B": "16 cm",
+              "C": "8 cm",
+              "D": "60 cm"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 16,
+            "topic": "9.1.3",
+            "topic_name": "Modelo atómico de Bohr",
+            "text": "¿Cuál de las siguientes opciones es un postulado del modelo atómico de Bohr?",
+            "options": {
+              "A": "Los electrones en órbita circular cuando están acelerados pierden energía y caen al núcleo.",
+              "B": "Los electrones se mueven en estados estacionarios alrededor del núcleo sin perder energía.",
+              "C": "De acuerdo con la radiación beta debe haber electrones en el núcleo atómico.",
+              "D": "Un electrón en el átomo puede variar continuamente el valor de su energía."
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Literatura",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 17,
+            "topic": "1.1",
+            "topic_name": "Propiedad textual: adecuación",
+            "text": "Cuando el usuario de la lengua utiliza un lenguaje apropiado para su comunicación, reconocemos una propiedad textual denominada",
+            "options": {
+              "A": "lengua culta.",
+              "B": "lógica gramatical.",
+              "C": "lingüística.",
+              "D": "adecuación."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 18,
+            "topic": "1.3.1",
+            "topic_name": "Propósito del texto",
+            "text": "¿Cuál es el propósito del siguiente texto?\n\nLas otras olimpiadas\n\nMéxico obtuvo ayer su primera medalla de plata en la competencia de clavados sincronizados en las competencias olímpicas que se realizan en la ciudad de Londres, Inglaterra. La noticia nos llena de orgullo y ocupa ya grandes espacios en todos los medios de comunicación. Pero dentro de la euforia que nos invade, poco o nada se sabe que justamente el día anterior a la proeza que hoy celebramos, otro mexicano, Aldo Facundo Ávila –un joven de 19 años, estudiante del plantel Cosoleacaque del Colegio de Bachilleres en Veracruz–, obtuvo la medalla de bronce en la 44 edición de la Olimpiada Internacional de Química, celebrada en la ciudad de Washington, en Estados Unidos, en la que se enfrentó a 300 estudiantes procedentes de 70 países. A pesar de su importancia, y salvo honrosas excepciones, al tratarse de un logro en una disciplina científica, lo que predomina es el silencio.\n\nLa olimpiada internacional a la que me refiero fue organizada por la Sociedad Estadunidense de Química, e incluyó distintas pruebas realizadas en las aulas y los laboratorios de la Universidad de Maryland. Los campos examinados incluyeron la química orgánica, inorgánica y analítica, así como fisicoquímica, bioquímica y espectroscopia. Si bien en esta ocasión no se obtuvo una medalla de oro, el veracruzano se encuentra entre los mejores del mundo en estas disciplinas, y es un motivo de orgullo para su familia, su escuela y, a mi parecer, debe serlo para todo México.\n\nJavier Flores\nRecuperado el martes 31 de julio de 2012\nen: http://www.jornada.unam.mx/ultimas",
+            "options": {
+              "A": "Advertir.",
+              "B": "Opinar.",
+              "C": "Investigar.",
+              "D": "Narrar."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 19,
+            "topic": "1.4",
+            "topic_name": "Características del texto dramático",
+            "text": "Además del diálogo, dos características del texto dramático son",
+            "options": {
+              "A": "acotaciones y prescindir de narrador.",
+              "B": "descripción y escenografías.",
+              "C": "actos y necesitar un narrador.",
+              "D": "vestuario y personajes."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 20,
+            "topic": "1.4.5",
+            "topic_name": "Características de la comedia",
+            "text": "Selecciona la opción que resume las características de la comedia.",
+            "options": {
+              "A": "Forma dramática de temática variada en la que los personajes representan las bajas pasiones humanas, y cuyo desenlace, algunas veces, es de carácter alternativo.",
+              "B": "Forma dramática de origen griego cuyos personajes viven las adversidades de la vida cotidiana evidenciando las debilidades humanas, su desenlace es feliz.",
+              "C": "Género dramático cuyo origen se encuentra en los rituales para el dios Dionisio, sus personajes son aristócratas y cuenta con un final funesto.",
+              "D": "Género dramático de origen griego cuyos personajes representan el conflicto entre dioses y los hombres; su final puede ser feliz."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 21,
+            "topic": "2.1",
+            "topic_name": "Género épico",
+            "text": "Género literario que aborda asuntos heroicos, sus personajes se inspiran en figuras históricas y simbolizan valores universales de la colectividad.",
+            "options": {
+              "A": "Lírico.",
+              "B": "Épico.",
+              "C": "Dramático.",
+              "D": "Narrativo."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 22,
+            "topic": "2.2",
+            "topic_name": "Corriente literaria",
+            "text": "Los autores que conforman una corriente literaria",
+            "options": {
+              "A": "comparten características en cuanto a su forma de escribir y el interés por desarrollar temas similares; además, viven en una misma época.",
+              "B": "heredan el estilo de quienes los precedieron, comparten una forma de escribir y abordan un género determinado, como la dramaturgia o la novela.",
+              "C": "heredan el estilo de quienes los precedieron, comparten una forma de escribir y muestran interés por desarrollar temas similares.",
+              "D": "abordan un género determinado, como la dramaturgia o la novela, comparten el interés por desarrollar temas similares y viven en una misma época."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 23,
+            "topic": "2.2.1",
+            "topic_name": "Realismo español",
+            "text": "Escritor representativo del Realismo español.",
+            "options": {
+              "A": "Camilo José Cela.",
+              "B": "Miguel de Unamuno.",
+              "C": "Juan Valera.",
+              "D": "Antonio Machado."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 24,
+            "topic": "2.2.2",
+            "topic_name": "Obra de Balzac",
+            "text": "La obra *Papá Goriot* escrita por Honorato de Balzac, forma parte de",
+            "options": {
+              "A": "la divina comedia.",
+              "B": "grandes comedias.",
+              "C": "novelas ejemplares.",
+              "D": "la comedia humana."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 25,
+            "topic": "2.3.1",
+            "topic_name": "Narración breve fantástica",
+            "text": "Narración breve que da forma a las fantasías del ser humano.",
+            "options": {
+              "A": "Crónica.",
+              "B": "Comedia.",
+              "C": "Novela.",
+              "D": "Cuento."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 26,
+            "topic": "3.1",
+            "topic_name": "Paráfrasis",
+            "text": "La paráfrasis es un proceso de carácter",
+            "options": {
+              "A": "descriptivo.",
+              "B": "argumentativo.",
+              "C": "expositivo.",
+              "D": "interpretativo."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Química",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 27,
+            "topic": "1.1.1",
+            "topic_name": "Elementos químicos",
+            "text": "¿Cuál de las siguientes opciones presenta únicamente elementos?\n\nLa tabla periódica de los elementos se encuentra en la página 83.",
+            "options": {
+              "A": "Na(s), $Cl_2$(g), $P_4$(s)",
+              "B": "$O_2$(g), He(g), CO(g)",
+              "C": "$S_8$(g), $N_2$(g), $SO_2$(g)",
+              "D": "CO(g), Na(s), $S_8$(s)"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 28,
+            "topic": "1.2.1",
+            "topic_name": "Estructura del átomo de oxígeno",
+            "text": "El átomo de oxígeno tiene ___ protones, ___ electrones y ___ neutrones.",
+            "options": {
+              "A": "16, 16, 8",
+              "B": "8, 8, 8",
+              "C": "16, 8, 16",
+              "D": "8, 16, 16"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 29,
+            "topic": "1.3.1",
+            "topic_name": "Potencial de ionización bajo (metales)",
+            "text": "Elementos que tienden a perder sus electrones por poseer bajo potencial de ionización.",
+            "options": {
+              "A": "Ácidos.",
+              "B": "Metales.",
+              "C": "Bases.",
+              "D": "No metales."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 30,
+            "topic": "1.5.1",
+            "topic_name": "Cantidad de sustancia (moles)",
+            "text": "Determina la cantidad de sustancia que se obtiene al disolver 3.42 g de azúcar en 180 g de agua.\n\nConsidera:\nMasa molar del agua = $18 \\ \\frac{g}{mol}$\nMasa molar del azúcar = $342 \\ \\frac{g}{mol}$",
+            "options": {
+              "A": "1.01 mol",
+              "B": "10.01 mol",
+              "C": "10.10 mol",
+              "D": "1.001 mol"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 31,
+            "topic": "1.5.2",
+            "topic_name": "Masa molar (Na2SO4)",
+            "text": "¿Cuánta masa equivale a 0.1 mol de $Na_2SO_4$?",
+            "options": {
+              "A": "0.142 g",
+              "B": "1.42 g",
+              "C": "14.2 g",
+              "D": "142 g"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 32,
+            "topic": "2.1.1",
+            "topic_name": "Enlace puente de hidrógeno",
+            "text": "Al enlace que une a las moléculas de agua se le denomina",
+            "options": {
+              "A": "covalente polar.",
+              "B": "iónico.",
+              "C": "coordinado.",
+              "D": "puente de hidrógeno."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 33,
+            "topic": "2.2",
+            "topic_name": "Estructura angular del agua",
+            "text": "La estructura angular del agua ayuda a que",
+            "options": {
+              "A": "sea menos densa en estado líquido que en estado sólido.",
+              "B": "su capacidad calorífica sea baja.",
+              "C": "sea un buen disolvente de compuestos no polares.",
+              "D": "se formen puentes de hidrógeno."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 34,
+            "topic": "3.3.1",
+            "topic_name": "Combustión como oxidación",
+            "text": "La combustión es una reacción de",
+            "options": {
+              "A": "saponificación.",
+              "B": "esterificación.",
+              "C": "oxidación.",
+              "D": "reducción."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 35,
+            "topic": "4.3",
+            "topic_name": "Proteína (polímero de aminoácidos)",
+            "text": "Biomolécula responsable de la construcción del tejido muscular y es un polímero de aminoácidos.",
+            "options": {
+              "A": "Vitamina.",
+              "B": "Proteína.",
+              "C": "Triglicérido.",
+              "D": "Polinucleótido."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 36,
+            "topic": "5.1",
+            "topic_name": "Reacción exotérmica",
+            "text": "La ecuación química que representa a una reacción exotérmica es",
+            "options": {
+              "A": "$Cu_2S(s) + 2O_2(g) \\rightarrow 2Cu(s) + SO_2(g); \\ \\Delta H < 0$",
+              "B": "$Cu_2S(s) \\rightarrow 2Cu(s) + S(s); \\ \\Delta H = +79.5 \\ KJ$",
+              "C": "$Ca(OH)_2(s) \\rightarrow CaO(s) + H_2O(l); \\ \\Delta H > 0$",
+              "D": "$CaO(s) + H_2O(l) + Energía \\rightarrow Ca(OH)_2(s)$"
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Geografía",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 37,
+            "topic": "1.1",
+            "topic_name": "Finalidad de la Geografía",
+            "text": "En la actualidad, la principal finalidad de la Geografía es",
+            "options": {
+              "A": "diferenciar las causas y efectos de los hechos y fenómenos geográficos.",
+              "B": "conocer los efectos terrestres provocados por los fenómenos naturales.",
+              "C": "explicar la relación entre los elementos naturales y sociales del medio geográfico.",
+              "D": "localizar los elementos naturales y sociales sobre la superficie terrestre."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 38,
+            "topic": "1.2",
+            "topic_name": "Latitud",
+            "text": "Coordenada geográfica que permite ubicar un lugar al norte y sur del Ecuador.",
+            "options": {
+              "A": "Latitud.",
+              "B": "Altitud.",
+              "C": "Longitud.",
+              "D": "Nutación."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 39,
+            "topic": "1.3.1.2",
+            "topic_name": "Sierra Madre Occidental",
+            "text": "Al viajar de Chihuahua a Sinaloa, la cadena montañosa que se recorre, es la Sierra",
+            "options": {
+              "A": "Madre Occidental.",
+              "B": "De la Breña.",
+              "C": "Madre Oriental.",
+              "D": "Volcánica Transversal."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 40,
+            "topic": "1.3.1.3",
+            "topic_name": "Condiciones geográficas de Asia",
+            "text": "Las condiciones geográficas de las zonas pobladas en Asia se caracterizan por",
+            "options": {
+              "A": "montañas y vegetación para la silvicultura.",
+              "B": "llanuras y agua superficial para la agricultura.",
+              "C": "depresiones y aguas subterráneas para la minería.",
+              "D": "mesetas y selvas para la explotación de maderas preciosas."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 41,
+            "topic": "2.1.1",
+            "topic_name": "Región natural: taiga",
+            "text": "La taiga es una región natural que se localiza en el",
+            "options": {
+              "A": "sur de E.U.A., centro de Europa y Malasia.",
+              "B": "norte de Chile, norte de Suráfrica y Australia.",
+              "C": "norte de México, sur de Italia y sur de India.",
+              "D": "centro de Canadá, norte de Europa y Siberia."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 42,
+            "topic": "2.2",
+            "topic_name": "Aumento de CO2 en la atmósfera",
+            "text": "El aumento de bióxido de carbono en la atmósfera es ocasionado principalmente por la",
+            "options": {
+              "A": "combustión del petróleo.",
+              "B": "utilización de aerosoles.",
+              "C": "destrucción de la capa de ozono.",
+              "D": "presencia de lluvia ácida."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 43,
+            "topic": "2.3.2",
+            "topic_name": "Urbanización en Nigeria",
+            "text": "Nigeria es un país africano que por su alto índice de natalidad y niveles de pobreza tiende a la",
+            "options": {
+              "A": "urbanización.",
+              "B": "profesionalización.",
+              "C": "desnutrición.",
+              "D": "despoblación."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 44,
+            "topic": "2.4.2.1",
+            "topic_name": "Oligopolio",
+            "text": "Conjunto de empresas con pocos competidores a nivel mundial, que controlan en el mercado la producción y venta de uno o varios productos.",
+            "options": {
+              "A": "Oligopolio.",
+              "B": "Monopolio.",
+              "C": "Duopolio.",
+              "D": "Tripolio."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 45,
+            "topic": "2.5.2",
+            "topic_name": "Entidades de la República Mexicana",
+            "text": "Políticamente la República Mexicana está integrada por",
+            "options": {
+              "A": "28 entidades.",
+              "B": "29 entidades.",
+              "C": "31 entidades.",
+              "D": "32 entidades."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 46,
+            "topic": "2.6.4",
+            "topic_name": "Balanza comercial negativa",
+            "text": "Cuando la balanza comercial de pagos de México es negativa significa que",
+            "options": {
+              "A": "exporta más productos de los que importa.",
+              "B": "se realizan menos importaciones de artículos básicos.",
+              "C": "la producción permite una mayor exportación.",
+              "D": "importa más productos de los que exporta."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Matemáticas",
+        "questions_count": 26,
+        "questions": [
+          {
+            "id": 47,
+            "topic": "1.1.3",
+            "topic_name": "Simplificación de expresiones con exponentes",
+            "text": "Simplifica la expresión $\\frac{(a^2 + b)^{\\frac{3}{2}}}{a^2 + b}$",
+            "options": {
+              "A": "$\\sqrt{(a^2 + b)^6}$",
+              "B": "$(a^2 + b)^{-\\frac{1}{2}}$",
+              "C": "$\\sqrt{a^2 + b}$",
+              "D": "$a + b^{\\frac{1}{2}}$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 48,
+            "topic": "1.3.2",
+            "topic_name": "Simplificación algebraica",
+            "text": "Al simplificar la expresión algebraica $-3x - [-2(4x - 3) - (9 - x)]$ se obtiene",
+            "options": {
+              "A": "$6x + 3$",
+              "B": "$4x + 3$",
+              "C": "$10x + 3$",
+              "D": "$6x + 12$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 49,
+            "topic": "2.1",
+            "topic_name": "Desarrollo de binomio al cuadrado",
+            "text": "Desarrolla el siguiente binomio.\n\n$(x - y)^2$",
+            "options": {
+              "A": "$x^2 - y^2$",
+              "B": "$x^2 - xy + y^2$",
+              "C": "$x^2 - 2xy + y^2$",
+              "D": "$x^2 + 2xy + y^2$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 50,
+            "topic": "2.3",
+            "topic_name": "Simplificación de fracciones algebraicas",
+            "text": "Simplifica la siguiente fracción.\n\n$\\frac{-x^2 - 3x + 40}{x + 8}$",
+            "options": {
+              "A": "$x - 5$",
+              "B": "$-x + 5$",
+              "C": "$-x + 8$",
+              "D": "$x - 8$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 51,
+            "topic": "3.1",
+            "topic_name": "Ecuación lineal",
+            "text": "La expresión $2x + 3 = 7$ es una",
+            "options": {
+              "A": "inecuación.",
+              "B": "desigualdad.",
+              "C": "ecuación.",
+              "D": "identidad."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 52,
+            "topic": "3.3",
+            "topic_name": "Ecuación cuadrática",
+            "text": "Las soluciones de la ecuación $4x^2 + 16x + 15 = 0$ son",
+            "options": {
+              "A": "$x_1 = -\\frac{3}{2}, \\ x_2 = -\\frac{5}{2}$",
+              "B": "$x_1 = 3, \\ x_2 = -\\frac{5}{4}$",
+              "C": "$x_1 = \\frac{3}{2}, \\ x_2 = \\frac{5}{2}$",
+              "D": "$x_1 = -\\frac{3}{4}, \\ x_2 = 5$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 53,
+            "topic": "4.1",
+            "topic_name": "Desigualdad lineal",
+            "text": "Al resolver $-2x + 6 \\geq 16$, ¿cuál es el valor de $x$?",
+            "options": {
+              "A": "$x < -5$",
+              "B": "$x \\geq 5$",
+              "C": "$x \\leq -5$",
+              "D": "$x > 5$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 54,
+            "topic": "5.1.1",
+            "topic_name": "Sistema de ecuaciones lineales",
+            "text": "A partir del siguiente sistema de ecuaciones obtén el valor de $x$.\n\n$5x - 4y = 19$\n$7x + 3y = 18$",
+            "options": {
+              "A": "$x = -3$",
+              "B": "$x = -1$",
+              "C": "$x = 1$",
+              "D": "$x = 3$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 55,
+            "topic": "6.3",
+            "topic_name": "Función a partir de gráfica",
+            "text": "La función de la siguiente gráfica está dada por",
+            "options": {
+              "A": "$f(x) = -\\sqrt{8x - 16}$",
+              "B": "$f(x) = +\\sqrt{8x - 16}$",
+              "C": "$f(x) = -\\sqrt{-8x + 16}$",
+              "D": "$f(x) = +\\sqrt{-8x + 16}$"
+            },
+            "answer": "A",
+            "image": "/imagenes_area1_2022/q55_grafica.png"
+          },
+          {
+            "id": 56,
+            "topic": "7.1.2",
+            "topic_name": "Identidad trigonométrica de tangente",
+            "text": "En términos de $\\operatorname{sen}\\theta$ y $\\cos\\theta$, $\\tan\\theta$ es igual a",
+            "options": {
+              "A": "$\\frac{\\operatorname{sen}\\theta}{\\cos\\theta}$",
+              "B": "$\\frac{\\cos\\theta}{\\operatorname{sen}\\theta}$",
+              "C": "$\\frac{2\\operatorname{sen}\\theta}{\\cos\\theta}$",
+              "D": "$\\frac{2\\cos\\theta}{\\operatorname{sen}\\theta}$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 57,
+            "topic": "7.2.2.3",
+            "topic_name": "Desplazamiento de fase",
+            "text": "Selecciona la función que tiene un desplazamiento de fase de $\\pi$ unidades a la derecha.",
+            "options": {
+              "A": "$f(x) = \\operatorname{sen}(\\pi x)$",
+              "B": "$f(x) = \\operatorname{sen}(x + \\pi)$",
+              "C": "$f(x) = \\operatorname{sen}(x - \\pi)$",
+              "D": "$f(x) = \\pi \\operatorname{sen}(x)$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 58,
+            "topic": "8.2",
+            "topic_name": "Asíntota vertical de función logarítmica",
+            "text": "¿Cuál es la ecuación de la asíntota vertical de la función $f(x) = 2\\log(x - 3)$?",
+            "options": {
+              "A": "$x = 3$",
+              "B": "$y = -3$",
+              "C": "$x = -3$",
+              "D": "$y = 3$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 59,
+            "topic": "9.1",
+            "topic_name": "Distancia entre dos puntos",
+            "text": "¿Cuál es la distancia entre los puntos P (2, 5) y Q (4, -1)?",
+            "options": {
+              "A": "$2\\sqrt{3}$",
+              "B": "$2\\sqrt{5}$",
+              "C": "$2\\sqrt{2}$",
+              "D": "$2\\sqrt{10}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 60,
+            "topic": "9.5",
+            "topic_name": "Recta perpendicular a una gráfica",
+            "text": "Determina los puntos por donde pasa una recta perpendicular a la gráfica siguiente.",
+            "options": {
+              "A": "(0, 0) y (-2, -3)",
+              "B": "(0, 0) y (-2, 1)",
+              "C": "(0, 0) y (1, -3)",
+              "D": "(0, 0) y (1, 3)"
+            },
+            "answer": "B",
+            "image": "/imagenes_area1_2022/q60_grafica.png"
+          },
+          {
+            "id": 61,
+            "topic": "9.7",
+            "topic_name": "Ecuación de la mediatriz",
+            "text": "La ecuación ordinaria de la mediatriz del siguiente triángulo trazada desde el lado AB es",
+            "options": {
+              "A": "$y = -3x + 6$",
+              "B": "$y = -3x + 7$",
+              "C": "$y = -2x + 5$",
+              "D": "$y = -2x + 6$"
+            },
+            "answer": "C",
+            "image": "/imagenes_area1_2022/q61_triangulo.png"
+          },
+          {
+            "id": 62,
+            "topic": "10.3",
+            "topic_name": "Ecuación de circunferencia con radio dado",
+            "text": "¿Cuál de las siguientes circunferencias tiene radio igual a 3?",
+            "options": {
+              "A": "$x^2 + y^2 - 2x - 6y + 1 = 0$",
+              "B": "$x^2 + y^2 - 6x + 9y + 1 = 0$",
+              "C": "$x^2 + y^2 - 4x + 2y + 4 = 0$",
+              "D": "$x^2 + y^2 - 4x - 2y + 4 = 0$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 63,
+            "topic": "11.2",
+            "topic_name": "Ecuación de parábola",
+            "text": "La ecuación de la parábola cuyo eje focal es el eje y, con el parámetro $p = -5$ y vértice en el origen es",
+            "options": {
+              "A": "$x^2 - 20x = 0$",
+              "B": "$y^2 - 20x = 0$",
+              "C": "$y^2 + 20x = 0$",
+              "D": "$x^2 + 20y = 0$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 64,
+            "topic": "12.5",
+            "topic_name": "Centro de la elipse",
+            "text": "¿Cuál es el centro de una elipse cuya ecuación es $\\frac{(x - 2)^2}{144} + \\frac{(y - 1)^2}{64} = 1$?",
+            "options": {
+              "A": "(-2, -1)",
+              "B": "(2, 1)",
+              "C": "(1, 2)",
+              "D": "(-1, -2)"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 65,
+            "topic": "13.3",
+            "topic_name": "Ecuación de hipérbola",
+            "text": "De las siguientes ecuaciones, ¿cuál representa una hipérbola que pasa por el punto A (-8, 0) y B (8, 0)?",
+            "options": {
+              "A": "$x^2 - 64y^2 - 8 = 0$",
+              "B": "$x^2 - 8y^2 - 62 = 0$",
+              "C": "$x^2 - y^2 - 8x - 12y - 1 = 0$",
+              "D": "$x^2 - 64y^2 - 64 = 0$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 66,
+            "topic": "14.3",
+            "topic_name": "Criterio para elipse (ecuación general de segundo grado)",
+            "text": "A partir de la siguiente ecuación de segundo grado determina el criterio utilizado para representar una elipse.\n\n$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$",
+            "options": {
+              "A": "$C^2 - 4AB < 0$",
+              "B": "$B^2 - 4AC > 0$",
+              "C": "$C^2 - 4AB > 0$",
+              "D": "$B^2 - 4AC < 0$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 67,
+            "topic": "15.6",
+            "topic_name": "Continuidad de función con raíz",
+            "text": "La función $f(x) = \\sqrt{\\frac{x}{4 - x}}$ es continua en el intervalo",
+            "options": {
+              "A": "$[0, \\infty)$",
+              "B": "$[0, 4)$",
+              "C": "$(-\\infty, 4)$",
+              "D": "$[0, 4]$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 68,
+            "topic": "16.3",
+            "topic_name": "Derivada con regla de la cadena",
+            "text": "La derivada de $y = (2x^3 + 5)^4$ es",
+            "options": {
+              "A": "$y' = 12x^2$",
+              "B": "$y' = 6x^2(2x^3 + 5)^3$",
+              "C": "$y' = 8x^2(2x^3 + 5)^2$",
+              "D": "$y' = 24x^2(2x^3 + 5)^3$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 69,
+            "topic": "16.7",
+            "topic_name": "Pendiente de la tangente a curva exponencial",
+            "text": "La pendiente de la tangente a la curva $f(x) = e^{3x}$ en el punto P (0, 1) es igual a",
+            "options": {
+              "A": "0",
+              "B": "1",
+              "C": "2",
+              "D": "3"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 70,
+            "topic": "16.12",
+            "topic_name": "Aceleración en movimiento armónico",
+            "text": "La expresión $f(t) = \\cos(2t + 3)$ es una función de posición de movimiento armónico, la expresión para la aceleración es",
+            "options": {
+              "A": "$a(t) = -4\\cos(2t - 3)$",
+              "B": "$a(t) = \\cos(2t + 3)$",
+              "C": "$a(t) = -\\cos(2t + 3)$",
+              "D": "$a(t) = -4\\cos(2t + 3)$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 71,
+            "topic": "17.4",
+            "topic_name": "Integral de funciones trigonométricas",
+            "text": "La integral $\\int (2\\operatorname{sen}x + 3\\cos x) \\, dx$ es",
+            "options": {
+              "A": "$2\\operatorname{sen}x + \\cos x + C$",
+              "B": "$\\cos x + \\operatorname{sen}x + C$",
+              "C": "$2\\cos x + 3\\operatorname{sen}x + C$",
+              "D": "$-2\\cos x + 3\\operatorname{sen}x + C$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 72,
+            "topic": "17.6",
+            "topic_name": "Área bajo la curva (integral definida)",
+            "text": "Si $\\int_a^b f(x) \\, dx = \\frac{5}{2}$ y $\\int_b^a g(x) \\, dx = \\frac{4}{3}$, entonces, el área bajo la curva $I = \\int_a^b \\left[ f(x) - \\int_a^b g(x) \\right] dx$ es igual a",
+            "options": {
+              "A": "$-\\frac{7}{6}$",
+              "B": "$-\\frac{6}{7}$",
+              "C": "$\\frac{6}{7}$",
+              "D": "$\\frac{7}{6}$"
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Español",
+        "questions_count": 18,
+        "questions": [
+          {
+            "id": 73,
+            "topic": "1.1",
+            "topic_name": "Función de la lengua: referencial",
+            "text": "Identifica la función de la lengua que ejemplifica el siguiente texto.\n\nAdiós al poeta del compromiso\nMuere Mario Benedetti después de una larga vida de lucha contra la adversidad y en defensa de la alegría.",
+            "options": {
+              "A": "Expresiva.",
+              "B": "Apelativa.",
+              "C": "Referencial.",
+              "D": "Poética."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 74,
+            "topic": "1.3",
+            "topic_name": "Función poética de la lengua",
+            "text": "En el siguiente enunciado se ejemplifica la función _________ de la lengua.\n\nContra el silencio y el bullicio invento la palabra, libertad que se inventa y me inventa cada día.",
+            "options": {
+              "A": "referencial",
+              "B": "emotiva",
+              "C": "fática",
+              "D": "poética"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 75,
+            "topic": "2.1",
+            "topic_name": "Forma del discurso: descripción",
+            "text": "¿Qué forma del discurso se utiliza en el siguiente párrafo?\n\nLas patas de los artrópodos están articuladas y su cuerpo está dividido en segmentos agrupados en tres regiones principales: cabeza, tórax y abdomen. En cambio los ácaros tienen cuatro pares de patas locomotoras. El primer par lo llevan levantado hacia adelante, a manera de antenas, para detectar los estímulos que les permiten orientarse.",
+            "options": {
+              "A": "Exposición.",
+              "B": "Descripción.",
+              "C": "Narración.",
+              "D": "Argumentación."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 76,
+            "topic": "2.3",
+            "topic_name": "Forma del discurso: argumentación",
+            "text": "Identifica la forma del discurso que predomina en el siguiente texto.\n\nHablamos porque tenemos necesidad de nombrarnos, de afirmar nuestra libertad y declarar al mundo nuestro absoluto derecho a existir. Entendemos entonces que somos seres que existimos por el lenguaje en tanto seres comunitarios. Individuos que nacemos y nos relacionamos a partir de una vida en comunidad. Comunidad y comunicación no sólo son términos similares, sino también esencias que caracterizan a los seres humanos que existen en el lenguaje. Por ello el lenguaje posee una condición ontológica en el devenir del hombre histórico.",
+            "options": {
+              "A": "Argumentación.",
+              "B": "Descripción.",
+              "C": "Narración.",
+              "D": "Exposición."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 77,
+            "topic": "3.2",
+            "topic_name": "Idea principal del texto",
+            "text": "Lee el siguiente texto y contesta de la pregunta 77 a la 81.\n\nEl misterio de las joyas de concha\n\nAl igual que la turquesa, las plumas de aves exóticas y el oro, la concha (lo que conocemos como concha de mar) era un material precioso en el México prehispánico (anterior a la conquista y colonización españolas). Así lo prueban las cientos de piezas elaboradas con diversos tipos de conchas recuperadas en las distintas excavaciones a lo largo de todo el país: sólo en las excavaciones que se realizan desde 1978 en la zona arqueológica del Templo Mayor de Tenochtitlan se han recuperado más de 2,300 objetos hechos con concha. Las piezas, que han ido apareciendo en diferentes excavaciones, eran depositadas en las tumbas como ofrendas funerarias para recrear el inframundo acuático.\n\nPara los mexicas, así como para las diversas culturas de Mesoamérica, la concha tenía una connotación sagrada, pues al ser un elemento acuático se asociaba con ese líquido esencial en el desarrollo de la vida. Además, por lo difícil que resultaba su obtención, era considerada un material de lujo, al que, por ejemplo, en Tenochtitlan, sólo tenía acceso la clase gobernante.\n\nEl arqueólogo Adrián Velázquez Castro busca desde hace quince años las huellas de las herramientas empleadas por los artesanos prehispánicos en la elaboración de los objetos de concha. Y es que, a pesar de la gran cantidad de piezas recuperadas, no se han encontrado hasta ahora en la zona del Templo Mayor de Tenochtitlan restos de ningún taller o del área de producción de estos adornos. Velázquez empezó a trabajar en la clasificación de la colección de concha del Templo Mayor, pero su interés por conocer las formas de elaboración de estas piezas lo llevó a crear un proyecto de arqueología experimental que se convertiría, con el tiempo, en un taller de fabricación de concha. Con este taller se pretende conocer, mediante la reconstrucción de las piezas antiguas con conchas modernas, las técnicas con las que se trabajó este material en la época prehispánica. Gracias al taller se ha podido saber, por ejemplo, que la producción del Templo Mayor fue muy estandarizada (se utilizaron la misma técnica y los mismos materiales), fue controlada por la clase gobernante y estuvo enfocada, casi exclusivamente, a la creación de objetos ornamentales.\n\nAl principio el taller se limitó a estudiar la colección de objetos de concha del Templo Mayor, pero poco a poco se ha extendido, y ya lleva realizados más de setecientos experimentos con otros objetos de concha del México prehispánico. «En gran parte gracias al trabajo de estudiantes de arqueología, tenemos ya un buen número de colecciones estudiadas, que van desde el norte de México hasta la zona maya, desde las etapas más tempranas, durante el periodo formativo, hasta el posclásico tardío, con la conquista española», comenta Adrián Velázquez Castro.\n\nEl Universal\n\nLa idea principal del texto es que",
+            "options": {
+              "A": "la concha fue un material precioso y lujoso para las culturas prehispánicas.",
+              "B": "el taller ha trabajado con distintas muestras de conchas prehispánicas.",
+              "C": "la arqueología estudia las manifestaciones culturales antiguas.",
+              "D": "el trabajo de los estudiantes ha contribuido a obtener información veraz."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 78,
+            "topic": "3.3",
+            "topic_name": "Significado de 'inframundo acuático'",
+            "text": "La frase inframundo acuático se refiere a que _________ en el mundo de los muertos.",
+            "options": {
+              "A": "el elemento fuego no es predominante",
+              "B": "el ser es sagrado",
+              "C": "existe el agua como expresión de vida",
+              "D": "hay ríos y lagos"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 79,
+            "topic": "3.4",
+            "topic_name": "Características de la concha de mar",
+            "text": "A partir del texto se infiere que la concha de mar tiene las siguientes características.",
+            "options": {
+              "A": "Moldeables y duraderas.",
+              "B": "Maleables y efímeras.",
+              "C": "Lujosas y endebles.",
+              "D": "Exóticas e inefables."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 80,
+            "topic": "3.5",
+            "topic_name": "Interés del arqueólogo por el taller",
+            "text": "¿Cuál es el interés del arqueólogo Adrián Velázquez Castro al crear el taller de fabricación de la concha?",
+            "options": {
+              "A": "Dar a conocer los oficios prehispánicos.",
+              "B": "Continuar con la tradición mexica.",
+              "C": "Perfeccionar el trabajo manual indígena.",
+              "D": "Rescatar la manufactura precolombina."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 81,
+            "topic": "3.6",
+            "topic_name": "Intención del autor",
+            "text": "¿Cuál es la intención del autor al escribir este texto?",
+            "options": {
+              "A": "Comparar los materiales usados por las culturas prehispánicas.",
+              "B": "Crear un taller para la fabricación de la concha de mar.",
+              "C": "Divulgar los avances arqueológicos sobre las culturas prehispánicas.",
+              "D": "Revelar el misterio de las joyas de la concha de mar."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 82,
+            "topic": "4.1",
+            "topic_name": "Oración principal de un fragmento",
+            "text": "Identifica sólo la oración principal del siguiente fragmento.\n\nLa sentencia\n\nAquella noche, en la hora de la rata, el emperador soñó que había salido de su palacio y en la oscuridad caminaba por el jardín, bajo los árboles en flor. Algo se arrodilló a sus pies y le pidió amparo.\n\nWu Chéng-en",
+            "options": {
+              "A": "Aquella noche, en la hora de la rata, el emperador soñó que había salido de su palacio.",
+              "B": "El emperador soñó que había salido de su palacio y en la oscuridad caminaba por el jardín, bajo los árboles en flor.",
+              "C": "El emperador soñó.",
+              "D": "El emperador soñó que había salido de su palacio."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 83,
+            "topic": "4.3",
+            "topic_name": "Objeto directo",
+            "text": "Identifica el objeto directo del siguiente fragmento.\n\nFue al minuto 20 cuando se abrió el marcador: en un tiro de esquina, la pelota le llegó a Ernesto Sánchez, quien conectó un fuerte disparo que se anidó en la red.",
+            "options": {
+              "A": "en un tiro de esquina",
+              "B": "en la red",
+              "C": "un fuerte disparo",
+              "D": "al minuto 20"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 84,
+            "topic": "5.0",
+            "topic_name": "Mejor redacción de párrafo",
+            "text": "Elige el párrafo con la mejor redacción.",
+            "options": {
+              "A": "En este orden, la posibilidad y el origen del conocimiento son algunos problemas a considerar. Presenta el conocimiento, para iniciar, así una vertiente filosófica que no podemos soslayar si queremos profundizar en el tema.",
+              "B": "Así, la posibilidad y el origen del conocimiento son algunos problemas que presenta el conocimiento. Para iniciar, una vertiente filosófica que no podemos soslayar si queremos profundizar en el tema.",
+              "C": "El conocimiento, en el inicio, ofrece una vertiente filosófica que no podemos soslayar si queremos profundizar en el tema. En este orden, la posibilidad y el origen del conocimiento son algunos problemas a considerar.",
+              "D": "El conocimiento, en principio, ofrece una vertiente filosófica que no podemos soslayar si queremos profundizar en el tema. En este orden, la posibilidad y el origen del conocimiento son algunos problemas clave."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 85,
+            "topic": "5.0",
+            "topic_name": "Redacción apropiada",
+            "text": "Selecciona el enunciado que está redactado apropiadamente.",
+            "options": {
+              "A": "Se observa el patio techado. No es como el de las otras escuelas, al contrario, la luz del sol no entra, sólo se refleja y el calor que irradia.",
+              "B": "Se puede observar el patio, no es como el de otras escuelas porque está techado y el sol ni entra directamente, sólo irradia calor.",
+              "C": "Se puede apreciar que el patio no es como el de otras escuelas, pues está techado debido a que la luz del sol sólo es reflejada en las aulas que lo rodean.",
+              "D": "Se puede apreciar el patio que no es como el de las otras escuelas, pues del sol no se conoce más que la luz y el calor que irradia."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 86,
+            "topic": "5.0",
+            "topic_name": "Nexos y conectores",
+            "text": "Elige la opción que completa adecuadamente el siguiente párrafo.\n\nQuisieron colaborar con una obra magistral, _________ no guardaban los requisitos necesarios; _________, tuvieron que resignarse _________ la realización de una presentación más sencilla.",
+            "options": {
+              "A": "sin embargo — no obstante — a",
+              "B": "mas — por tanto — a",
+              "C": "más — en conclusión — con",
+              "D": "pero — en consecuencia — con"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 87,
+            "topic": "6.1",
+            "topic_name": "Analogía (relación semántica)",
+            "text": "De acuerdo con la relación de analogía que se establece entre las palabras subrayadas del siguiente enunciado, señala la opción que presenta una relación semejante.\n\nTu discurso barroco y con digresiones provocó aburrimiento en el auditorio y, en consecencia, un generalizado bostezo.",
+            "options": {
+              "A": "Ira — agresión.",
+              "B": "Diversión — sonrisa.",
+              "C": "Distracción — error.",
+              "D": "Impaciencia — rebelión."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 88,
+            "topic": "6.3",
+            "topic_name": "Antónimo de vociferar",
+            "text": "Antónimo de VOCIFERAR.",
+            "options": {
+              "A": "Omitir.",
+              "B": "Silenciar.",
+              "C": "Gruñir.",
+              "D": "Roncar."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 89,
+            "topic": "7.2",
+            "topic_name": "Grafías (ortografía)",
+            "text": "Elige la opción con las grafías que completan correctamente el siguiente enunciado.\n\nEs tu de___er ser ___ene___olente con los am___i___alentes y ___olu___les.",
+            "options": {
+              "A": "v — b — v — v — b — b — v",
+              "B": "b — b — v — b — v — v — b",
+              "C": "v — v — v — b — b — b — v",
+              "D": "b — v — b — v — v — v — b"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 90,
+            "topic": "7.8",
+            "topic_name": "Puntuación apropiada",
+            "text": "Elige la opción que presenta el párrafo con la puntuación apropiada.",
+            "options": {
+              "A": "El Coronel Juan Morales, se apodera de un cañón montado en uno de los ángulos, y aprovechándose de la confusión de los defensores, introduce a la fortaleza un buen número de soldados. Vuelve los cañones hacia el interior. Y empieza a disparar. Los tejanos se retiran al convento y a la iglesia, protegiéndose en barricadas de sacos de arena.",
+              "B": "El Coronel Juan Morales se apodera de un cañón montado, en uno de los ángulos, y aprovechándose, de la confusión de los defensores, introduce a la fortaleza. Un buen número de soldados. Vuelve los cañones hacia el interior y empieza a disparar. Los tejanos se retiran al convento y a la iglesia, protegiéndose en barricadas de sacos de arena.",
+              "C": "El Coronel Juan Morales se apodera de un cañón montado en uno de los ángulos y aprovechándose de la confusión de los defensores, introduce a la fortaleza un buen número de soldados. Vuelve los cañones hacia el interior y empieza a disparar. Los tejanos se retiran al convento y a la iglesia, protegiéndose en barricadas de sacos de arena.",
+              "D": "El Coronel Juan Morales se apodera de un cañón, montado en uno de los ángulos y aprovechándose de la confusión de los defensores, introduce a la fortaleza, un buen número de soldados. Vuelve los cañones hacia el interior y empieza a disparar. Los tejanos se retiran, al convento y a la iglesia. Protegiéndose en barricadas de sacos de arena."
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Biología",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 91,
+            "topic": "1.1.2",
+            "topic_name": "Teoría celular",
+            "text": "Un postulado de la Teoría celular afirma que",
+            "options": {
+              "A": "los organismos están formados por millones de células.",
+              "B": "los organismos se reproducen como células sexuales.",
+              "C": "la célula es un individuo eucarionte.",
+              "D": "la célula proviene de otra preexistente e igual."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 92,
+            "topic": "2.1.1",
+            "topic_name": "Anabolismo",
+            "text": "Se denomina anabolismo al proceso metabólico de",
+            "options": {
+              "A": "construcción, en el que se obtienen moléculas grandes a partir de otras más pequeñas.",
+              "B": "degradación, en el que se obtienen moléculas grandes a partir de otras más pequeñas.",
+              "C": "degradación, en el que las moléculas grandes se transforman en pequeñas.",
+              "D": "construcción, en el que las moléculas grandes se transforman en pequeñas."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 93,
+            "topic": "2.4.1",
+            "topic_name": "Glucólisis y ciclo de Krebs",
+            "text": "¿Qué producto de la glucólisis se incorpora al ciclo de Krebs?",
+            "options": {
+              "A": "Glucosa.",
+              "B": "Etanol.",
+              "C": "Lactato.",
+              "D": "Piruvato."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 94,
+            "topic": "3.2.1",
+            "topic_name": "División celular (mitosis)",
+            "text": "Una célula presenta un número cromosómico 46 XX. Al dividirse durante la mitosis, formará células con",
+            "options": {
+              "A": "23 X.",
+              "B": "23 XX.",
+              "C": "46 XX.",
+              "D": "46 X."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 95,
+            "topic": "4.2.3",
+            "topic_name": "Mutaciones y evolución",
+            "text": "La mayor parte de las mutaciones son inocuas o neutras y son esenciales para la",
+            "options": {
+              "A": "sucesión.",
+              "B": "replicación.",
+              "C": "evolución.",
+              "D": "transcripción."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 96,
+            "topic": "4.3",
+            "topic_name": "Ingeniería genética",
+            "text": "Es el conjunto de técnicas que hace posible el aislamiento, estudio, modificación y transferencia de genes de un organismo a otro.",
+            "options": {
+              "A": "Terapia génica.",
+              "B": "Ingeniería genética.",
+              "C": "Recombinación genética.",
+              "D": "Proyecto genoma."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 97,
+            "topic": "5.2.2",
+            "topic_name": "Adaptación biológica",
+            "text": "La _________ es el resultado de la selección natural y de la recombinación genética.",
+            "options": {
+              "A": "extinción",
+              "B": "adaptación",
+              "C": "mutación",
+              "D": "clonación"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 98,
+            "topic": "5.3",
+            "topic_name": "Estructuras vestigiales",
+            "text": "El apéndice ciego, el vello corporal y la muela del juicio en los humanos son estructuras",
+            "options": {
+              "A": "adaptativas.",
+              "B": "homólogas.",
+              "C": "vestigiales.",
+              "D": "análogas."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 99,
+            "topic": "6.1",
+            "topic_name": "Ecosistema (factores abióticos y bióticos)",
+            "text": "Un ecosistema es la unidad formada por factores abióticos y _________ en la que existen _________, donde fluye la energía y circula la materia.",
+            "options": {
+              "A": "ambientales – razas",
+              "B": "ambientales – interacciones",
+              "C": "bióticos – razas",
+              "D": "bióticos – interacciones"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 100,
+            "topic": "6.3",
+            "topic_name": "Tecnologías limpias",
+            "text": "Se denominan tecnologías __________ a aquéllas que, gracias a los avances en el campo de la biotecnología, dañan lo menos posible el medio ambiente.",
+            "options": {
+              "A": "libres",
+              "B": "limpias",
+              "C": "orgánicas",
+              "D": "naturales"
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Historia Universal",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 101,
+            "topic": "1.2",
+            "topic_name": "Periodos del positivismo",
+            "text": "¿Cuáles son los periodos en los que el positivismo clasifica la Historia?",
+            "options": {
+              "A": "Comunidades Primitivas, Esclavismo, Feudalismo, Capitalismo y Socialismo.",
+              "B": "Comunidades Primitivas, Modo de Producción Asiático, Feudalismo, Capitalismo y Comunismo.",
+              "C": "Prehistoria, Edad Antigua, Edad Media, Edad Moderna y Edad Contemporánea.",
+              "D": "Prehistoria, Antigüedad Clásica, Baja Edad Media, Alta Edad Media y Capitalismo."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 102,
+            "topic": "2.2.4",
+            "topic_name": "Revolución Industrial en Inglaterra",
+            "text": "Uno de los factores que propició el origen de la Revolución Industrial en Inglaterra, fue que",
+            "options": {
+              "A": "desarrolló la industria textil.",
+              "B": "publicó la *Riqueza de las Naciones*.",
+              "C": "triunfó en la Guerra de Siete Años.",
+              "D": "diseñó y construyó el ferrocarril."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 103,
+            "topic": "3.1",
+            "topic_name": "Revoluciones de 1830",
+            "text": "La principal demanda de las revoluciones de 1830 fue",
+            "options": {
+              "A": "la creación de estados nacionales regidos por constituciones.",
+              "B": "el surgimiento del pacto de la Santa Alianza.",
+              "C": "la independencia de las naciones de los Balcanes.",
+              "D": "el cumplimiento de los acuerdos del Congreso de Viena."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 104,
+            "topic": "4.2",
+            "topic_name": "Imperialismo en el siglo XIX",
+            "text": "La segunda mitad del siglo XIX se vio caracterizado por el Imperialismo. Como ejemplo de ello Inglaterra dominó a _________; Bélgica a _________ y Rusia a _________.",
+            "options": {
+              "A": "Pakistán – Marruecos – Angola",
+              "B": "Orange – Sajalín – Tunes",
+              "C": "Canadá – Guayana – Ts'ing-Tao",
+              "D": "India – Congo – Turkestán"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 105,
+            "topic": "5.1",
+            "topic_name": "Fin de la Primera Guerra Mundial",
+            "text": "Acuerdos que se firman para dar fin a la Primera Guerra Mundial.",
+            "options": {
+              "A": "Los Catorce Puntos de Wilson y el Tratado de Versalles.",
+              "B": "La política de Apaciguamiento y el Tratado Sykes-Picot.",
+              "C": "La Conferencia de Berlín y el Cairo.",
+              "D": "La doctrina Truman y la Conferencia de Teherán."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 106,
+            "topic": "6.1",
+            "topic_name": "Crisis de 1929",
+            "text": "La crisis de 1929 en Estados Unidos de América se produjo debido a",
+            "options": {
+              "A": "el auge del sistema keynesiano.",
+              "B": "la caída de la Bolsa de Valores.",
+              "C": "la rivalidad con Alemania.",
+              "D": "el surgimiento del fascismo."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 107,
+            "topic": "7.1",
+            "topic_name": "Orden cronológico de la Segunda Guerra Mundial",
+            "text": "Ordena cronológicamente los siguientes acontecimientos relacionados con la Segunda Guerra Mundial.\n\nI. Hitler invade Polonia.\nII. Desembarco angloamericano en Normandía.\nIII. Bombas atómicas sobre Hiroshima y Nagasaki.\nIV. Los alemanes toman París.\nV. Ataque Japonés a Pearl Harbor.",
+            "options": {
+              "A": "I, IV, V, II y III",
+              "B": "II, V, I, III y IV",
+              "C": "III, I, IV, V y II",
+              "D": "IV, III, I, II y V"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 108,
+            "topic": "8.2",
+            "topic_name": "Guerra de los Seis Días",
+            "text": "En el marco de la Guerra Fría, estalló la Guerra de los Seis Días, un conflicto que surgió en Medio Oriente entre",
+            "options": {
+              "A": "Egipto y la URSS.",
+              "B": "Israel y la URSS.",
+              "C": "Israel y Palestina.",
+              "D": "Palestina y Egipto."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 109,
+            "topic": "8.3",
+            "topic_name": "Independencia de Libia",
+            "text": "¿Qué país africano logró su independencia en 1951, después de haber estado bajo el yugo italiano, francés y británico?",
+            "options": {
+              "A": "Libia.",
+              "B": "Etiopía.",
+              "C": "Sudáfrica.",
+              "D": "Marruecos."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 110,
+            "topic": "9.2",
+            "topic_name": "Globalización",
+            "text": "Fenómeno económico que se manifiesta en una serie de tendencias recientes del desarrollo capitalista y acelera la integración de las economías nacionales.",
+            "options": {
+              "A": "Neocapitalismo.",
+              "B": "Socialismo.",
+              "C": "Globalización.",
+              "D": "Nacionalismo."
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Historia de México",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 111,
+            "topic": "1.5",
+            "topic_name": "Reformas borbónicas (intendencias)",
+            "text": "Es una de las reformas borbónicas de tipo administrativo que restó al virrey, buscó terminar con el abuso de alcaldes mayores y fomentó el comercio en la Nueva España.",
+            "options": {
+              "A": "Abolición de la alcabala.",
+              "B": "Expulsión de los jesuitas.",
+              "C": "Supresión de los consulados.",
+              "D": "Creación de las doce intendencias."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 112,
+            "topic": "2.1",
+            "topic_name": "Causas externas de la Independencia",
+            "text": "El movimiento independentista de la Nueva España tuvo como causas externas la",
+            "options": {
+              "A": "Independencia de los Estados Unidos y la Revolución Francesa.",
+              "B": "Unificación italiana y las Reformas Borbónicas.",
+              "C": "Unificación alemana y la venta de la Florida.",
+              "D": "Independencia de Haití y la anexión de Texas."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 113,
+            "topic": "3.2",
+            "topic_name": "Consecuencias de la guerra con EUA",
+            "text": "Una de las consecuencias de la guerra contra los Estados Unidos de América fue la",
+            "options": {
+              "A": "venta de La Mesilla.",
+              "B": "firma del Tratado de Guadalupe Hidalgo.",
+              "C": "firma del Tratado McLane-Ocampo.",
+              "D": "pérdida de El Chamizal."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 114,
+            "topic": "4.3",
+            "topic_name": "Leyes de Reforma (soberanía del Estado)",
+            "text": "Identifica una de las consecuencias de la promulgación de las Leyes de Reforma.",
+            "options": {
+              "A": "Promoción de las relaciones económicas con Europa.",
+              "B": "Límites de la extensión de la propiedad agraria.",
+              "C": "Ratificación de la soberanía del Estado sobre las instituciones eclesiásticas.",
+              "D": "Respaldo a los derechos de las comunidades campesinas."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 115,
+            "topic": "5.3",
+            "topic_name": "Magonismo",
+            "text": "Movimiento que se opuso al régimen porfirista manifestando su descontento a través del periódico llamado *Regeneración*.",
+            "options": {
+              "A": "Magonismo.",
+              "B": "Carrancismo.",
+              "C": "Zapatismo.",
+              "D": "Reyismo."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 116,
+            "topic": "6.2",
+            "topic_name": "Plan de San Luis",
+            "text": "Plan político con el que se inició la lucha en contra del gobierno de Porfirio Díaz.",
+            "options": {
+              "A": "San Luis.",
+              "B": "Tuxtepec.",
+              "C": "Empacadora.",
+              "D": "Ayala."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 117,
+            "topic": "7.2",
+            "topic_name": "Maximato (Partido Nacional Revolucionario)",
+            "text": "Fue una acción política importante durante el Maximato.",
+            "options": {
+              "A": "Formación del Partido Nacional Revolucionario.",
+              "B": "Creación de la Secretaría de Educación Pública.",
+              "C": "Fundación de la Secretaría de Relaciones Exteriores.",
+              "D": "Impulso de la política de Unidad Nacional."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 118,
+            "topic": "7.3",
+            "topic_name": "Gobierno de Lázaro Cárdenas",
+            "text": "Una de las acciones del gobierno de Lázaro Cárdenas fue la",
+            "options": {
+              "A": "creación del ejido colectivo.",
+              "B": "conformación del PAN.",
+              "C": "instauración del Banco de México.",
+              "D": "fundación de la comisión de carreteras."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 119,
+            "topic": "8.2",
+            "topic_name": "Milagro mexicano (1952-1970)",
+            "text": "El crecimiento económico sostenido y la construcción de infraestructura fueron características que entre 1952 y 1970 se conocieron como",
+            "options": {
+              "A": "Plan Sexenal.",
+              "B": "Desarrollo compartido.",
+              "C": "Milagro mexicano.",
+              "D": "Unidad nacional."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 120,
+            "topic": "8.3",
+            "topic_name": "Política económica 1970-1982",
+            "text": "Política económica que aplicó el gobierno mexicano de 1970 a 1982.",
+            "options": {
+              "A": "Sustitución de importaciones.",
+              "B": "Estado de Bienestar.",
+              "C": "Desarrollo estabilizador.",
+              "D": "Desarrollo compartido."
+            },
+            "answer": "D"
+          }
+        ]
+      }
+    ]
+  }
+}

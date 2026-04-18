@@ -1,0 +1,1635 @@
+{
+  "exam": {
+    "title": "Simulacro — Examen de Ingreso a la Licenciatura UNAM Área 2",
+    "group": "Universidad",
+    "date": "2026-04-18",
+    "version": "1.0",
+    "total_questions": 120,
+    "students": [
+      "Lupita"
+    ],
+    "instructions": "Selecciona la opción correcta para cada pregunta. No se permite el uso de calculadora.",
+    "sections": [
+      {
+        "subject": "Física",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 1,
+            "topic": "1.3",
+            "topic_name": "Cinemática — aceleración negativa",
+            "text": "¿Qué representa la siguiente gráfica?",
+            "image": "/imagenes_area2_2023/ext_p62_img1.png",
+            "options": {
+              "A": "La caída libre de un cuerpo desde el reposo.",
+              "B": "Un lanzamiento vertical hacia abajo.",
+              "C": "Un movimiento con aceleración positiva.",
+              "D": "Un movimiento con aceleración negativa."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 2,
+            "topic": "2.4",
+            "topic_name": "Leyes de Newton — fuerza resultante",
+            "text": "Tres caballos jalan una carreta de 500 kg en la misma dirección. Cada uno de los caballos ejerce una fuerza de 1 500 N sobre la carreta. Si no hay fricción entre la carreta y el suelo, la fuerza total con la que ésta es jalada es de",
+            "options": {
+              "A": "3 N",
+              "B": "300 N",
+              "C": "1 500 N",
+              "D": "4 500 N"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 3,
+            "topic": "2.9",
+            "topic_name": "Elasticidad — Ley de Hooke",
+            "text": "Una báscula tiene un resorte cuya constante de elasticidad es de 1 000 N/m. Si colocas en ésta una masa de 10 kg, ¿cuánto se estirará su resorte?\n\nConsidera g = 10 m/s²",
+            "options": {
+              "A": "0.10 m",
+              "B": "1.0 m",
+              "C": "0.01 m",
+              "D": "10.0 m"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 4,
+            "topic": "3.1",
+            "topic_name": "Trabajo — trabajo mecánico",
+            "text": "Una bola de billar se sube a 3 m de altura en diferentes casos, como muestran las figuras. Indica cuál de las afirmaciones que se presentan es correcta.",
+            "image": "/imagenes_area2_2023/ext_p62_img2.png",
+            "options": {
+              "A": "En el caso I se efectúa mayor trabajo.",
+              "B": "En el caso II se efectúa menor trabajo.",
+              "C": "En el caso I y III se efectúa menos trabajo que en el II.",
+              "D": "En los tres casos se efectúa igual trabajo."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 5,
+            "topic": "3.7",
+            "topic_name": "Cantidad de movimiento — colisiones",
+            "text": "Una pelota de 2 kg se desplaza hacia la izquierda con una velocidad de 10 m/s, y choca de frente con una pelota de 4 kg que viaja hacia la derecha a 2 m/s. Calcula la velocidad final si las dos pelotas se quedan pegadas después del choque.",
+            "image": "/imagenes_area2_2023/ext_p63_img2.png",
+            "options": {
+              "A": "5 m/s",
+              "B": "−8 m/s",
+              "C": "12 m/s",
+              "D": "−2 m/s"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 6,
+            "topic": "4.2.3",
+            "topic_name": "Termodinámica — densidad de un gas ideal",
+            "text": "¿Cuál es la densidad del oxígeno diatómico que está a una temperatura de 27°C y a una atmósfera de presión?\n\nConsidera:\n\nLa masa molecular del oxígeno monoatómico es 16 uma.\n\nEl valor de la constante universal del gas ideal es de 8.314 J/(mol·k)",
+            "options": {
+              "A": "0.08 kg/m³",
+              "B": "14.4 kg/m³",
+              "C": "0.6 kg/m³",
+              "D": "1.3 kg/m³"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 7,
+            "topic": "5.1",
+            "topic_name": "Ondas — superposición",
+            "text": "A la playa llega el oleaje del mar y en ocasiones llegan algunas olas de mayor tamaño que el promedio. Lo anterior se debe al comportamiento ondulatorio de las olas, pues una característica de éstas es que se",
+            "options": {
+              "A": "refractan.",
+              "B": "polarizan.",
+              "C": "reflejan.",
+              "D": "superponen."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 8,
+            "topic": "6.3",
+            "topic_name": "Electricidad — corriente en un circuito",
+            "text": "De acuerdo con la imagen, la corriente que circula por el resistor de resistencia R/2 es",
+            "image": "/imagenes_area2_2023/ext_p63_img1.png",
+            "options": {
+              "A": "V/(2R)",
+              "B": "2V/R",
+              "C": "V/(3R)",
+              "D": "3V/R"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 9,
+            "topic": "6.9",
+            "topic_name": "Óptica — espectro electromagnético",
+            "text": "El orden creciente de la longitud de onda para el color azul (z), el verde (v), el rojo (r), y la luz amarilla (a) es",
+            "options": {
+              "A": "r, a, v, z.",
+              "B": "a, v, r, z.",
+              "C": "v, a, z, r.",
+              "D": "z, v, a, r."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 10,
+            "topic": "7.1.1",
+            "topic_name": "Fluidos — presión atmosférica",
+            "text": "La presión atmosférica en el Everest disminuye comparada con la del nivel del mar porque",
+            "options": {
+              "A": "la densidad del aire cambia.",
+              "B": "la altura de la capa de aire soportada es menor.",
+              "C": "la presión hidrostática del mar influye.",
+              "D": "la densidad del aire soportada es mayor."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 11,
+            "topic": "8.2",
+            "topic_name": "Óptica — espejo convexo",
+            "text": "¿Qué tipo de imagen forma un espejo convexo?",
+            "options": {
+              "A": "Real, derecha y menor que el objeto.",
+              "B": "Virtual, invertida y mayor que el objeto.",
+              "C": "Real, invertida y menor que el objeto.",
+              "D": "Virtual, derecha y mayor que el objeto."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 12,
+            "topic": "9.1.3",
+            "topic_name": "Física moderna — modelo atómico de Bohr",
+            "text": "¿Cuál de las siguientes opciones es un postulado del modelo atómico de Bohr?",
+            "options": {
+              "A": "Los electrones en órbita circular cuando están acelerados pierden energía y caen al núcleo.",
+              "B": "Los electrones se mueven en estados estacionarios alrededor del núcleo sin perder energía.",
+              "C": "De acuerdo con la radiación beta debe haber electrones en el núcleo atómico.",
+              "D": "Un electrón en el átomo puede variar continuamente el valor de su energía."
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Literatura",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 13,
+            "topic": "1.1",
+            "topic_name": "Propiedades del texto — cabalidad",
+            "text": "La cabalidad es una propiedad del texto, consiste en que éste sea completo y tenga",
+            "options": {
+              "A": "unidad de sentido.",
+              "B": "datos comprobables.",
+              "C": "elementos de análisis.",
+              "D": "opinión del autor."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 14,
+            "topic": "1.3.1",
+            "topic_name": "Propósito del texto — texto informativo",
+            "text": "Identifica el propósito del siguiente texto.\n\nEn la ceremonia celebrada en la explanada Francisco I. Madero de la residencia oficial de Los Pinos, Calderón indicó que para los XVI Juegos Panamericanos, Guadalajara 2011, se espera que participen ocho mil quinientos atletas de cuarenta y dos países y más de doscientos cincuenta mil visitantes nacionales y extranjeros.",
+            "options": {
+              "A": "Reflexionar sobre un tema.",
+              "B": "Plasmar un sentimiento.",
+              "C": "Difundir ideas políticas.",
+              "D": "Informar oportunamente."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 15,
+            "topic": "1.5",
+            "topic_name": "Texto poético — características",
+            "text": "El texto poético tiene como característica que",
+            "options": {
+              "A": "describe una noticia sentimental e impactante.",
+              "B": "plasma un sentimiento o pensamiento a través del uso de figuras retóricas.",
+              "C": "relata hechos en forma objetiva y con un mensaje sensible.",
+              "D": "persuade al lector de tomar una actitud positiva."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 16,
+            "topic": "2.1",
+            "topic_name": "Géneros literarios — género épico",
+            "text": "¿A qué género corresponde el siguiente fragmento?\n\nArturo, el noble rey de Bretaña, cuyas proezas son para nosotros ejemplo de valor y cortesía, al llegar la fiesta que llamamos Pentecostés, la celebró con todo el fasto propio de la realeza, reuniendo a su corte en Caraduel, en el país de Gales.",
+            "options": {
+              "A": "Épico.",
+              "B": "Lírico.",
+              "C": "Tragedia.",
+              "D": "Comedia."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 17,
+            "topic": "2.2.1",
+            "topic_name": "Corrientes literarias — Realismo",
+            "text": "Corriente literaria que surge en la segunda mitad del siglo XIX, en la cual predomina la objetividad del narrador y la descripción.",
+            "options": {
+              "A": "Romanticismo.",
+              "B": "Clasicismo.",
+              "C": "Realismo.",
+              "D": "Expresionismo."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 18,
+            "topic": "2.2.2",
+            "topic_name": "Autores mexicanos — Juan Rulfo",
+            "text": "Los relatos cortos Diles que no me maten y No oyes ladrar los perros fueron escritos por",
+            "options": {
+              "A": "Juan Rulfo.",
+              "B": "Carlos Fuentes.",
+              "C": "Octavio Paz.",
+              "D": "José Agustín."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 19,
+            "topic": "2.3.1",
+            "topic_name": "Narrativa — diferencia entre cuento y novela",
+            "text": "Un cuento se diferencia de una novela porque éste tiene",
+            "options": {
+              "A": "personajes complejos y diversos clímax.",
+              "B": "desarrollo elaborado y pocos personajes.",
+              "C": "brevedad y rápido desenlace.",
+              "D": "intensidad y múltiples hilos narrativos."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 20,
+            "topic": "2.3.2",
+            "topic_name": "Narrativa — características de la novela",
+            "text": "La novela pertenece al género ________, está escrita en ________ y suele tener una estructura ________.",
+            "options": {
+              "A": "narrativo — prosa — compleja",
+              "B": "épico — verso — complicada",
+              "C": "dramático — verso — escueta",
+              "D": "lírico — prosa — simple"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 21,
+            "topic": "3.2",
+            "topic_name": "Fichas de investigación — ficha bibliográfica",
+            "text": "El siguiente ejemplo se refiere a una ficha\n\nFuentes, C. (1958). La región más transparente. México: Fondo de Cultura Económica.",
+            "options": {
+              "A": "bibliográfica.",
+              "B": "cibergráfica.",
+              "C": "hemerográfica.",
+              "D": "catalográfica."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 22,
+            "topic": "3.3",
+            "topic_name": "Fichas de investigación — ficha de cita textual",
+            "text": "¿De qué tipo es la siguiente ficha?\n\n\"lo que una persona cree de sí misma puede ser y, de hecho, generalmente, es muy distinto o incluso puede estar en total contradicción con lo que realmente es\".\n\nFromm, Erich. Grandezas y limitaciones del pensamiento de Freud. México, Siglo XXI, 1991, p.37.",
+            "options": {
+              "A": "Hemerográfica.",
+              "B": "De síntesis.",
+              "C": "Bibliográfica.",
+              "D": "De cita textual."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Química",
+        "questions_count": 13,
+        "questions": [
+          {
+            "id": 23,
+            "topic": "1.2.1",
+            "topic_name": "Estructura atómica — partículas subatómicas",
+            "text": "La especie $$^{78}_{34}Se^{2-}$$ contiene ___ protones, ___ neutrones y ___ electrones.",
+            "options": {
+              "A": "44, 34, 44",
+              "B": "34, 44, 36",
+              "C": "78, 34, 80",
+              "D": "78, 44, 36"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 24,
+            "topic": "1.5.2",
+            "topic_name": "Estequiometría — masa molar",
+            "text": "¿Cuántos gramos equivalen a 0.5 mol de ácido fosfórico, H₃PO₄?",
+            "options": {
+              "A": "49 g",
+              "B": "24 g",
+              "C": "98 g",
+              "D": "48 g"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 25,
+            "topic": "2.1",
+            "topic_name": "Enlace químico — polaridad del agua",
+            "text": "El agua es un disolvente polar debido a",
+            "options": {
+              "A": "su elevado punto de ebullición.",
+              "B": "la alta capacidad calorífica que presenta.",
+              "C": "su elevada constante dieléctrica.",
+              "D": "la estructura angular de sus moléculas."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 26,
+            "topic": "2.4.3",
+            "topic_name": "Ácidos y bases — donación de protones",
+            "text": "Sustancias que al estar en disolución donan protones.",
+            "options": {
+              "A": "Óxidos.",
+              "B": "Ácidos.",
+              "C": "Bases.",
+              "D": "Sales."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 27,
+            "topic": "2.5.2",
+            "topic_name": "Disoluciones — molaridad",
+            "text": "¿Cuál es la molaridad de una disolución que contiene 20 g de NaOH en 2 L de solución?",
+            "options": {
+              "A": "0.25 M",
+              "B": "0.50 M",
+              "C": "0.75 M",
+              "D": "1.00 M"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 28,
+            "topic": "3.2",
+            "topic_name": "Química ambiental — composición del aire",
+            "text": "Los dos principales componentes del aire son",
+            "options": {
+              "A": "oxígeno y dióxido de carbono.",
+              "B": "nitrógeno y oxígeno.",
+              "C": "ozono y dióxido de carbono.",
+              "D": "nitrógeno y ozono."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 29,
+            "topic": "3.6.3",
+            "topic_name": "Química ambiental — lluvia ácida",
+            "text": "¿Cuál de las siguientes reacciones químicas favorece la formación de la lluvia ácida?",
+            "options": {
+              "A": "NaOH → Na⁺ + OH⁻",
+              "B": "SO₃ + H₂O → H₂SO₄",
+              "C": "O₃ + NO → NO₂ + O₂",
+              "D": "N₂ + 3H₂ → 2NH₃"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 30,
+            "topic": "4.2.1",
+            "topic_name": "Química orgánica — lípidos y grupo funcional éster",
+            "text": "Los triglicéridos son un grupo de lípidos caracterizados por tener el grupo funcional",
+            "options": {
+              "A": "éter.",
+              "B": "éster.",
+              "C": "amida.",
+              "D": "alcohol."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 31,
+            "topic": "4.3.1",
+            "topic_name": "Química orgánica — aminoácidos",
+            "text": "Son los dos grupos funcionales presentes en todos los aminoácidos.",
+            "options": {
+              "A": "–COO– y –CONH₂",
+              "B": "–CHO y –CONH₂",
+              "C": "–CO– y –NH₂",
+              "D": "–COOH y –NH₂"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 32,
+            "topic": "5.3",
+            "topic_name": "Termoquímica — entalpía de reacción",
+            "text": "Calcula el valor de entalpía de la siguiente reacción.\n\n$$2ZnS_{(s)} + 3O_{2(g)} \\to 2ZnO_{(s)} + 2SO_{2(g)}$$\n\nConsidera:\n\n$$\\Delta H°_{ZnS} = -202.9 \\text{ kJ}$$\n$$\\Delta H°_{ZnO} = -348 \\text{ kJ}$$\n$$\\Delta H°_{SO_2} = -296.4 \\text{ kJ}$$\n$$\\Delta H°_{O_2} = 0 \\text{ kJ}$$",
+            "options": {
+              "A": "–883 kJ",
+              "B": "883 kJ",
+              "C": "1230 kJ",
+              "D": "–1230 kJ"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 33,
+            "topic": "5.4",
+            "topic_name": "Termoquímica — energía libre de Gibbs",
+            "text": "A presión estándar el carbono grafito es más estable que el carbono diamante. Para la transición $$C_{grafito} \\to C_{diamante}$$ se cumple que",
+            "options": {
+              "A": "$$\\Delta G° < 0$$",
+              "B": "$$\\Delta G° > 0$$",
+              "C": "$$\\Delta G° \\leq 0$$",
+              "D": "$$\\Delta G° = 0$$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 34,
+            "topic": "6.1",
+            "topic_name": "Tabla periódica — configuración electrónica",
+            "text": "De acuerdo con su posición en la tabla periódica, ¿cuántos electrones tiene el átomo de carbono en su segundo nivel de energía?",
+            "options": {
+              "A": "Dos.",
+              "B": "Cuatro.",
+              "C": "Ocho.",
+              "D": "Seis."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 35,
+            "topic": "6.3.1",
+            "topic_name": "Química orgánica — ácido carboxílico",
+            "text": "¿Cuál de los siguientes compuestos es un ácido carboxílico?",
+            "options": {
+              "A": "$$CH_3\\text{–}C(=O)\\text{–}OH$$",
+              "B": "$$CH_3\\text{–}C(=O)\\text{–}NH_2$$",
+              "C": "$$CH_3\\text{–}CH_2\\text{–}CH_3$$",
+              "D": "$$CH_3\\text{–}C(=O)\\text{–}OCH_2CH_3$$"
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Geografía",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 36,
+            "topic": "1.1",
+            "topic_name": "Geografía general — finalidad de la Geografía",
+            "text": "En la actualidad, la principal finalidad de la Geografía es",
+            "options": {
+              "A": "diferenciar las causas y efectos de los hechos y fenómenos geográficos.",
+              "B": "conocer los efectos terrestres provocados por los fenómenos naturales.",
+              "C": "explicar la relación entre los elementos naturales y sociales del medio geográfico.",
+              "D": "localizar los elementos naturales y sociales sobre la superficie terrestre."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 37,
+            "topic": "1.2",
+            "topic_name": "Coordenadas geográficas — latitud",
+            "text": "Coordenada geográfica que permite ubicar un lugar al norte y sur del Ecuador.",
+            "options": {
+              "A": "Latitud.",
+              "B": "Altitud.",
+              "C": "Longitud.",
+              "D": "Nutación."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 38,
+            "topic": "1.3",
+            "topic_name": "Ramas de la Geografía — geografía física",
+            "text": "La geografía física estudia",
+            "options": {
+              "A": "el relieve y las actividades económicas.",
+              "B": "la sociedad y los tipos de vegetación.",
+              "C": "el clima y las regiones naturales.",
+              "D": "la población y los tipos de clima."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 39,
+            "topic": "1.3.2.4",
+            "topic_name": "Hidrografía — corrientes oceánicas",
+            "text": "Movimiento de agua oceánica que regula la temperatura del planeta y favorece la actividad pesquera.",
+            "options": {
+              "A": "Olas de oscilación.",
+              "B": "Corrientes frías.",
+              "C": "Olas de traslación.",
+              "D": "Mareas vivas."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 40,
+            "topic": "2.1.1",
+            "topic_name": "Regiones naturales — taiga",
+            "text": "La taiga o bosque de coníferas se localiza en el",
+            "options": {
+              "A": "norte de Europa y norte de Asia.",
+              "B": "sur de Europa y sur de Asia.",
+              "C": "norte de África y norte de Asia.",
+              "D": "sur de América y norte de Oceanía."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 41,
+            "topic": "2.2",
+            "topic_name": "Medio ambiente — contaminación por plaguicidas",
+            "text": "El uso excesivo de plaguicidas produce la contaminación de",
+            "options": {
+              "A": "la troposfera.",
+              "B": "las aguas superficiales.",
+              "C": "la atmósfera.",
+              "D": "los lagos tectónicos."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 42,
+            "topic": "2.3",
+            "topic_name": "Demografía — migración rural-urbana en México",
+            "text": "Se caracteriza por ser la región más poblada de México y la más atrayente para la migración rural — urbana.",
+            "options": {
+              "A": "Pacífico Sur.",
+              "B": "Noroeste.",
+              "C": "Centro Sur.",
+              "D": "Sureste."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 43,
+            "topic": "2.4.1",
+            "topic_name": "Economía — países en desarrollo",
+            "text": "Características que distinguen a un país en desarrollo.",
+            "options": {
+              "A": "Desarrollo económico dependiente, exportación de materias primas e importación de productos manufacturados.",
+              "B": "Importación de materias primas agropecuarias, desarrollo económico independiente y exportación de productos tropicales.",
+              "C": "Desarrollo económico dependiente, importación de materias primas agropecuarias y exportación de productos manufacturados.",
+              "D": "Importación de materias primas agropecuarias, exportación de productos tropicales e importación de productos manufacturados."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 44,
+            "topic": "2.5.1",
+            "topic_name": "Geopolítica — desintegración de estados-nación",
+            "text": "Una de las causas principales de la desintegración de los estados—nación es",
+            "options": {
+              "A": "la pugna por la explotación de los recursos naturales.",
+              "B": "la aplicación de políticas neoliberales.",
+              "C": "el cambio de sistema económico.",
+              "D": "el descontento social de las minorías étnicas y religiosas."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 45,
+            "topic": "2.6.3",
+            "topic_name": "Industria en México — corredor del Bajío",
+            "text": "El corredor del Bajío es la principal área industrial ________ en México.",
+            "options": {
+              "A": "automotriz",
+              "B": "petroquímica",
+              "C": "maquiladora",
+              "D": "metalúrgica"
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Matemáticas",
+        "questions_count": 24,
+        "questions": [
+          {
+            "id": 46,
+            "topic": "1.1.2",
+            "topic_name": "Aritmética — algoritmo de la división",
+            "text": "Si 127 es el dividendo y 11 es el divisor en la ecuación, ¿cuánto valen el cociente c y el residuo r?\n\n$$127 = c \\cdot 11 + r$$",
+            "options": {
+              "A": "c = 11 y r = 0",
+              "B": "c = 12 y r = –5",
+              "C": "c = 10 y r = 17",
+              "D": "c = 11 y r = 6"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 47,
+            "topic": "2.3",
+            "topic_name": "Álgebra — factorización",
+            "text": "Factoriza la siguiente expresión.\n\n$$n^6 - 3n^3 - 18$$",
+            "options": {
+              "A": "$$(n^3 + 3)(n^3 - 6)$$",
+              "B": "$$(n^3 - 3)(n^3 + 6)$$",
+              "C": "$$(n^3 - 3)(n^3 - 6)$$",
+              "D": "$$(n^3 + 3)(n^3 + 6)$$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 48,
+            "topic": "3.1",
+            "topic_name": "Ecuaciones — identificación de ecuación",
+            "text": "Selecciona la expresión que corresponde a una ecuación",
+            "options": {
+              "A": "$$\\sin(x) = \\frac{1}{2}$$",
+              "B": "$$\\sin(x) = \\frac{1}{2}x$$",
+              "C": "$$\\sin^2(x) + \\cos^2(x) = 1$$",
+              "D": "$$\\sec^2(x) - \\tan^2(x) = 1$$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 49,
+            "topic": "3.3",
+            "topic_name": "Ecuaciones cuadráticas — solución",
+            "text": "Las soluciones de la ecuación $$4x^2 + 16x + 15 = 0$$ son",
+            "options": {
+              "A": "$$x_1 = -\\frac{3}{2}, \\quad x_2 = -\\frac{5}{2}$$",
+              "B": "$$x_1 = 3, \\quad x_2 = -\\frac{5}{4}$$",
+              "C": "$$x_1 = \\frac{3}{2}, \\quad x_2 = \\frac{5}{2}$$",
+              "D": "$$x_1 = -\\frac{3}{4}, \\quad x_2 = 5$$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 50,
+            "topic": "4.1",
+            "topic_name": "Desigualdades — solución de desigualdades",
+            "text": "Selecciona la desigualdad que tiene por solución al siguiente conjunto.\n\n$$\\left(-\\infty, \\frac{2}{6}\\right]$$",
+            "options": {
+              "A": "$$3x - 1 \\geq 0$$",
+              "B": "$$2x - 6 \\geq 0$$",
+              "C": "$$-3x + 1 \\geq 0$$",
+              "D": "$$-2x + 6 \\geq 0$$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 51,
+            "topic": "5.1.1",
+            "topic_name": "Sistemas de ecuaciones — método de solución",
+            "text": "A partir del siguiente sistema de ecuaciones obtén el valor de x.\n\n$$5x - 4y = 19$$\n$$7x + 3y = 18$$",
+            "options": {
+              "A": "$$x = -3$$",
+              "B": "$$x = -1$$",
+              "C": "$$x = 1$$",
+              "D": "$$x = 3$$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 52,
+            "topic": "6.2",
+            "topic_name": "Funciones — rango de una función cuadrática",
+            "text": "Determina el rango de la función $$f(x) = 5 - 3(x - 2)^2$$",
+            "options": {
+              "A": "$$y \\in \\mathbb{R}, \\; y \\geq 5$$",
+              "B": "$$x \\in \\mathbb{R}, \\; y \\in \\mathbb{R}$$",
+              "C": "$$x \\in \\mathbb{R}, \\; x \\geq 5$$",
+              "D": "$$y \\in \\mathbb{R}, \\; y \\leq 5$$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 53,
+            "topic": "7.1.2",
+            "topic_name": "Trigonometría — seno en un triángulo rectángulo",
+            "text": "¿Cuál es el seno del ángulo A en el triángulo rectángulo siguiente?",
+            "image": "/imagenes_area2_2023/ext_p69_img2.png",
+            "options": {
+              "A": "$$\\frac{3}{5}$$",
+              "B": "$$\\frac{4}{5}$$",
+              "C": "$$\\frac{5}{3}$$",
+              "D": "$$\\frac{5}{4}$$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 54,
+            "topic": "7.2.2.3",
+            "topic_name": "Trigonometría — desplazamiento de fase",
+            "text": "Selecciona la función que tiene un desplazamiento de fase de $$\\pi$$ unidades a la derecha.",
+            "options": {
+              "A": "$$f(x) = \\sin(\\pi x)$$",
+              "B": "$$f(x) = \\sin(x + \\pi)$$",
+              "C": "$$f(x) = \\sin(x - \\pi)$$",
+              "D": "$$f(x) = \\pi \\cdot \\sin(x)$$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 55,
+            "topic": "8.1",
+            "topic_name": "Funciones — dominio de función logarítmica",
+            "text": "¿Cuál es el dominio de la siguiente función?\n\n$$f(x) = \\log(x - 1)$$",
+            "options": {
+              "A": "$$x \\leq 1$$",
+              "B": "$$x < 1$$",
+              "C": "$$x > 1$$",
+              "D": "$$x \\geq 1$$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 56,
+            "topic": "9.2",
+            "topic_name": "Geometría analítica — punto medio",
+            "text": "El punto medio del segmento que une a los puntos $$A(2m, m + 1)$$ y $$B(2m, m - 1)$$ es",
+            "options": {
+              "A": "$$(0, 2)$$",
+              "B": "$$(m, 2m)$$",
+              "C": "$$(2m, m)$$",
+              "D": "$$(4m, 2m)$$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 57,
+            "topic": "9.3",
+            "topic_name": "Geometría analítica — pendiente de una recta",
+            "text": "La pendiente de la recta $$3x + 6y - 1 = 0$$ es",
+            "options": {
+              "A": "$$-3$$",
+              "B": "$$-\\frac{1}{2}$$",
+              "C": "$$\\frac{1}{2}$$",
+              "D": "$$3$$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 58,
+            "topic": "9.6",
+            "topic_name": "Geometría analítica — distancia de un punto a una recta",
+            "text": "La distancia del punto $$(-1, 1)$$ a la recta dada por la ecuación $$-3x + 4y - 8 = 0$$ es",
+            "options": {
+              "A": "0.2 unidades.",
+              "B": "2 unidades.",
+              "C": "1.25 unidades.",
+              "D": "8 unidades."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 59,
+            "topic": "10.4",
+            "topic_name": "Circunferencia — centro a partir de ecuación general",
+            "text": "Indica las coordenadas del centro de la circunferencia cuya ecuación general es $$3x^2 + 3y^2 + 12x + 30y + 6 = 0$$",
+            "options": {
+              "A": "$$C(-4, -10)$$",
+              "B": "$$C(-2, -5)$$",
+              "C": "$$C(4, 10)$$",
+              "D": "$$C(2, 5)$$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 60,
+            "topic": "11.2",
+            "topic_name": "Parábola — ecuación con vértice en el origen",
+            "text": "La ecuación de la parábola cuyo eje focal es el eje y, con el parámetro $$p = -5$$ y vértice en el origen es",
+            "options": {
+              "A": "$$x^2 - 20x = 0$$",
+              "B": "$$y^2 - 20x = 0$$",
+              "C": "$$y^2 + 20x = 0$$",
+              "D": "$$x^2 + 20y = 0$$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 61,
+            "topic": "12.1",
+            "topic_name": "Elipse — definición como lugar geométrico",
+            "text": "Lugar geométrico en el plano en el que la suma de las distancias de cualquiera de los puntos a dos puntos fijos llamados focos es una cantidad constante.",
+            "options": {
+              "A": "Elipse.",
+              "B": "Circunferencia.",
+              "C": "Hipérbola.",
+              "D": "Parábola."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 62,
+            "topic": "13.3",
+            "topic_name": "Hipérbola — ecuación con centro en el origen",
+            "text": "La ecuación de la hipérbola centrada en el origen, con lado recto 10 y vértice $$V(0, -9)$$ es",
+            "options": {
+              "A": "$$9x^2 - 5y^2 = 405$$",
+              "B": "$$5y^2 - 9x^2 = 405$$",
+              "C": "$$9x^2 - 10y^2 = 90$$",
+              "D": "$$10x^2 - 9y^2 = 90$$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 63,
+            "topic": "14.3",
+            "topic_name": "Cónicas — criterio para identificar una elipse",
+            "text": "Selecciona el criterio utilizado para definir que la ecuación de segundo grado $$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$$ represente una elipse.",
+            "options": {
+              "A": "$$C^2 - 4AB < 0$$",
+              "B": "$$B^2 - 4AC > 0$$",
+              "C": "$$C^2 - 4AB > 0$$",
+              "D": "$$B^2 - 4AC < 0$$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 64,
+            "topic": "15.4",
+            "topic_name": "Cálculo — límites",
+            "text": "Calcula el límite $$\\lim_{x \\to 0} \\frac{\\sqrt{2+x} - \\sqrt{2}}{x}$$",
+            "options": {
+              "A": "$$\\frac{\\sqrt{2}}{2}$$",
+              "B": "$$\\frac{1}{\\sqrt{2}}$$",
+              "C": "$$\\frac{1}{2}$$",
+              "D": "$$\\frac{\\sqrt{2}}{4}$$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 65,
+            "topic": "16.2",
+            "topic_name": "Cálculo diferencial — derivada de potencias",
+            "text": "La derivada de la expresión $$y = 2x^{1/2} + 6x^{1/3}$$ es",
+            "options": {
+              "A": "$$y' = 2x^{1/2} + 6x^{1/3}$$",
+              "B": "$$y' = x^{-1/2} + 2x^{-2/3}$$",
+              "C": "$$y' = -\\frac{1}{x^{1/2}} - \\frac{2}{x^{2/3}}$$",
+              "D": "$$y' = \\frac{1}{x^{1/2}} + \\frac{2}{x^{2/3}}$$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 66,
+            "topic": "16.3",
+            "topic_name": "Cálculo diferencial — derivada de función logarítmica",
+            "text": "La derivada de $$f(x) = \\ln\\sqrt{x^2+1}$$ con respecto a x es",
+            "options": {
+              "A": "$$f'(x) = \\frac{x}{2\\sqrt{x^2+1}}$$",
+              "B": "$$f'(x) = \\frac{x}{2(x^2+1)}$$",
+              "C": "$$f'(x) = \\frac{x}{x\\sqrt{x^2+1}}$$",
+              "D": "$$f'(x) = \\frac{x}{x^2+1}$$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 67,
+            "topic": "16.12",
+            "topic_name": "Cálculo diferencial — optimización (volumen máximo)",
+            "text": "Se desea fabricar una caja sin tapa con una lámina de aluminio de 10 cm x 15 cm. ¿Cuánto se deberá cortar en cada esquina de la lámina para obtener el volumen máximo?",
+            "image": "/imagenes_area2_2023/ext_p71_img1.png",
+            "options": {
+              "A": "$$\\frac{25 + 5\\sqrt{7}}{3}$$",
+              "B": "$$\\frac{25 + 5\\sqrt{43}}{3}$$",
+              "C": "$$\\frac{25 - 5\\sqrt{43}}{3}$$",
+              "D": "$$\\frac{25 - 5\\sqrt{7}}{3}$$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 68,
+            "topic": "17.3",
+            "topic_name": "Cálculo integral — integral de raíz cuadrada",
+            "text": "La $$\\int \\sqrt{x} \\, dx$$ es igual a",
+            "options": {
+              "A": "$$\\frac{1}{2\\sqrt{x}} + c$$",
+              "B": "$$\\frac{3}{2}\\sqrt{x} + c$$",
+              "C": "$$\\frac{2}{3}\\sqrt{x} + c$$",
+              "D": "$$\\frac{2}{3}x\\sqrt{x} + c$$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 69,
+            "topic": "17.4",
+            "topic_name": "Cálculo integral — integral por sustitución",
+            "text": "La $$\\int (2x - 1)^3 \\, dx$$ es igual a",
+            "options": {
+              "A": "$$\\frac{(2x-1)^2}{6} + c$$",
+              "B": "$$\\frac{(2x-1)^4}{4} + c$$",
+              "C": "$$\\frac{(2x-1)^2}{2} + c$$",
+              "D": "$$\\frac{(2x-1)^4}{8} + c$$"
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Español",
+        "questions_count": 18,
+        "questions": [
+          {
+            "id": 70,
+            "topic": "1.1",
+            "topic_name": "Funciones de la lengua — función referencial",
+            "text": "Elige la función de la lengua que predomina en el siguiente enunciado.\n\nLa Edad Media es el periodo comprendido entre el 476 d.C. y el 1453 d.C., año en que Constantinopla se rindió ante los turcos.",
+            "options": {
+              "A": "Metalingüística.",
+              "B": "Apelativa.",
+              "C": "Referencial.",
+              "D": "Expresiva."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 71,
+            "topic": "1.3",
+            "topic_name": "Funciones de la lengua — función poética",
+            "text": "En el siguiente enunciado se ejemplifica la función ________ de la lengua.\n\nContra el silencio y el bullicio invento la palabra, libertad que se inventa y me inventa cada día.",
+            "options": {
+              "A": "referencial",
+              "B": "emotiva",
+              "C": "fática",
+              "D": "poética"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 72,
+            "topic": "2.1",
+            "topic_name": "Formas del discurso — descripción",
+            "text": "¿Qué forma del discurso se utiliza en el siguiente párrafo?\n\nLas patas de los artrópodos están articuladas y su cuerpo está dividido en segmentos agrupados en tres regiones principales: cabeza, tórax y abdomen. En cambio los ácaros tienen cuatro pares de patas locomotoras. El primer par lo llevan levantado hacia adelante, a manera de antenas, para detectar los estímulos que les permiten orientarse.",
+            "options": {
+              "A": "Expositiva.",
+              "B": "Descriptiva.",
+              "C": "Narrativa.",
+              "D": "Argumentativa."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 73,
+            "topic": "2.3",
+            "topic_name": "Formas del discurso — argumentación",
+            "text": "¿Qué forma del discurso predomina en el siguiente párrafo?\n\nSi bien la educación básica no alcanza una cobertura universal en los estratos de menores ingresos, debe ponerse énfasis en los aspectos de calidad y equidad, otorgando mayores oportunidades educativas a los niños, niñas y adolescentes de los estratos bajos y medios. Ello implica dar continuidad al proceso educativo, mejorar la eficiencia interna del sistema —reduciendo el ingreso tardío y la reprobación—, y llevar a cabo políticas tendientes a aumentar la educación secundaria.",
+            "options": {
+              "A": "Narrativa.",
+              "B": "Expositiva.",
+              "C": "Argumentativa.",
+              "D": "Descriptiva."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 74,
+            "topic": "3.2",
+            "topic_name": "Comprensión lectora — idea principal",
+            "text": "Lee el siguiente texto y contesta.\n\nEl misterio de las joyas de concha\n\nAl igual que la turquesa, las plumas de aves exóticas y el oro, la concha (lo que conocemos como concha de mar) era un material precioso en el México prehispánico (anterior a la conquista y colonización españolas). Así lo prueban los cientos de piezas elaboradas con diversos tipos de conchas recuperadas en las distintas excavaciones a lo largo de todo el país: solo en las excavaciones que se realizan desde 1978 en la zona arqueológica del Templo Mayor de Tenochtitlan se han recuperado más de 2,300 objetos hechos con concha. Las piezas, que han ido apareciendo en diferentes excavaciones, eran depositadas en las tumbas como ofrendas funerarias para recrear el inframundo acuático.\n\nPara los mexicas, así como las diversas culturas de Mesoamérica, la concha tenía una connotación sagrada, pues al ser un elemento acuático se asociaba con ese líquido esencial en el desarrollo de la vida. Además, por lo difícil que resultaba su obtención, era considerada un material de lujo, al que, por ejemplo, en Tenochtitlan, solo tenía acceso la clase gobernante.\n\nEl arqueólogo Adrián Velázquez Castro busca desde hace quince años las huellas de las herramientas empleadas por los artesanos prehispánicos en la elaboración de los objetos de concha. Y es que, a pesar de la gran cantidad de piezas recuperadas, no se han encontrado hasta ahora en la zona del Templo Mayor de Tenochtitlan restos de ningún taller o del área de producción de estos adornos. Velázquez empezó a trabajar en la clasificación de la colección de objetos de concha del Templo Mayor, pero su interés por conocer las formas de elaboración de estas piezas lo llevó a crear un proyecto de arqueología experimental que se convertiría, con el tiempo, en un taller de fabricación de la concha. Con este taller se pretende conocer, mediante la reconstrucción de las piezas antiguas con conchas modernas, las técnicas con las que se trabajó este material en la época prehispánica. Gracias al taller se ha podido saber, por ejemplo, que la producción del Templo Mayor fue muy estandarizada (se utilizaron la misma técnica y los mismos materiales), fue controlada por la clase gobernante y estuvo enfocada, casi exclusivamente, a la creación de objetos ornamentales.\n\nAl principio el taller se limitó a estudiar la colección de objetos de concha del Templo Mayor, pero poco a poco se extendió, y ya lleva realizados más de setecientos experimentos con otros objetos de concha del México prehispánico. «En gran parte gracias al trabajo de estudiantes de arqueología, tenemos ya un buen número de colecciones estudiadas, que van desde el norte de México hasta la zona maya, desde las etapas más tempranas, durante el periodo formativo, hasta el posclásico tardío, con la conquista española», comenta Adrián Velázquez Castro.\n\nEl Universal\n\n---\n\nLa idea principal del texto es que",
+            "options": {
+              "A": "la concha fue un material precioso y lujoso para las culturas prehispánicas.",
+              "B": "el taller ha trabajado con distintas muestras de conchas prehispánicas.",
+              "C": "la arqueología estudia las manifestaciones culturales antiguas.",
+              "D": "el trabajo de los estudiantes ha contribuido a obtener información veraz."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 75,
+            "topic": "3.3",
+            "topic_name": "Comprensión lectora — significado en contexto",
+            "text": "Lee el siguiente texto y contesta.\n\nEl misterio de las joyas de concha\n\nAl igual que la turquesa, las plumas de aves exóticas y el oro, la concha (lo que conocemos como concha de mar) era un material precioso en el México prehispánico (anterior a la conquista y colonización españolas). Así lo prueban los cientos de piezas elaboradas con diversos tipos de conchas recuperadas en las distintas excavaciones a lo largo de todo el país: solo en las excavaciones que se realizan desde 1978 en la zona arqueológica del Templo Mayor de Tenochtitlan se han recuperado más de 2,300 objetos hechos con concha. Las piezas, que han ido apareciendo en diferentes excavaciones, eran depositadas en las tumbas como ofrendas funerarias para recrear el inframundo acuático.\n\nPara los mexicas, así como las diversas culturas de Mesoamérica, la concha tenía una connotación sagrada, pues al ser un elemento acuático se asociaba con ese líquido esencial en el desarrollo de la vida. Además, por lo difícil que resultaba su obtención, era considerada un material de lujo, al que, por ejemplo, en Tenochtitlan, solo tenía acceso la clase gobernante.\n\nEl arqueólogo Adrián Velázquez Castro busca desde hace quince años las huellas de las herramientas empleadas por los artesanos prehispánicos en la elaboración de los objetos de concha. Y es que, a pesar de la gran cantidad de piezas recuperadas, no se han encontrado hasta ahora en la zona del Templo Mayor de Tenochtitlan restos de ningún taller o del área de producción de estos adornos. Velázquez empezó a trabajar en la clasificación de la colección de objetos de concha del Templo Mayor, pero su interés por conocer las formas de elaboración de estas piezas lo llevó a crear un proyecto de arqueología experimental que se convertiría, con el tiempo, en un taller de fabricación de la concha. Con este taller se pretende conocer, mediante la reconstrucción de las piezas antiguas con conchas modernas, las técnicas con las que se trabajó este material en la época prehispánica. Gracias al taller se ha podido saber, por ejemplo, que la producción del Templo Mayor fue muy estandarizada (se utilizaron la misma técnica y los mismos materiales), fue controlada por la clase gobernante y estuvo enfocada, casi exclusivamente, a la creación de objetos ornamentales.\n\nAl principio el taller se limitó a estudiar la colección de objetos de concha del Templo Mayor, pero poco a poco se extendió, y ya lleva realizados más de setecientos experimentos con otros objetos de concha del México prehispánico. «En gran parte gracias al trabajo de estudiantes de arqueología, tenemos ya un buen número de colecciones estudiadas, que van desde el norte de México hasta la zona maya, desde las etapas más tempranas, durante el periodo formativo, hasta el posclásico tardío, con la conquista española», comenta Adrián Velázquez Castro.\n\nEl Universal\n\n---\n\nLa frase inframundo acuático se refiere a que ________ en el mundo de los muertos.",
+            "options": {
+              "A": "el elemento fuego no es predominante",
+              "B": "el ser es sagrado",
+              "C": "existe el agua como expresión de vida",
+              "D": "hay ríos y lagos"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 76,
+            "topic": "3.4",
+            "topic_name": "Comprensión lectora — inferencia",
+            "text": "Lee el siguiente texto y contesta.\n\nEl misterio de las joyas de concha\n\nAl igual que la turquesa, las plumas de aves exóticas y el oro, la concha (lo que conocemos como concha de mar) era un material precioso en el México prehispánico (anterior a la conquista y colonización españolas). Así lo prueban los cientos de piezas elaboradas con diversos tipos de conchas recuperadas en las distintas excavaciones a lo largo de todo el país: solo en las excavaciones que se realizan desde 1978 en la zona arqueológica del Templo Mayor de Tenochtitlan se han recuperado más de 2,300 objetos hechos con concha. Las piezas, que han ido apareciendo en diferentes excavaciones, eran depositadas en las tumbas como ofrendas funerarias para recrear el inframundo acuático.\n\nPara los mexicas, así como las diversas culturas de Mesoamérica, la concha tenía una connotación sagrada, pues al ser un elemento acuático se asociaba con ese líquido esencial en el desarrollo de la vida. Además, por lo difícil que resultaba su obtención, era considerada un material de lujo, al que, por ejemplo, en Tenochtitlan, solo tenía acceso la clase gobernante.\n\nEl arqueólogo Adrián Velázquez Castro busca desde hace quince años las huellas de las herramientas empleadas por los artesanos prehispánicos en la elaboración de los objetos de concha. Y es que, a pesar de la gran cantidad de piezas recuperadas, no se han encontrado hasta ahora en la zona del Templo Mayor de Tenochtitlan restos de ningún taller o del área de producción de estos adornos. Velázquez empezó a trabajar en la clasificación de la colección de objetos de concha del Templo Mayor, pero su interés por conocer las formas de elaboración de estas piezas lo llevó a crear un proyecto de arqueología experimental que se convertiría, con el tiempo, en un taller de fabricación de la concha. Con este taller se pretende conocer, mediante la reconstrucción de las piezas antiguas con conchas modernas, las técnicas con las que se trabajó este material en la época prehispánica. Gracias al taller se ha podido saber, por ejemplo, que la producción del Templo Mayor fue muy estandarizada (se utilizaron la misma técnica y los mismos materiales), fue controlada por la clase gobernante y estuvo enfocada, casi exclusivamente, a la creación de objetos ornamentales.\n\nAl principio el taller se limitó a estudiar la colección de objetos de concha del Templo Mayor, pero poco a poco se extendió, y ya lleva realizados más de setecientos experimentos con otros objetos de concha del México prehispánico. «En gran parte gracias al trabajo de estudiantes de arqueología, tenemos ya un buen número de colecciones estudiadas, que van desde el norte de México hasta la zona maya, desde las etapas más tempranas, durante el periodo formativo, hasta el posclásico tardío, con la conquista española», comenta Adrián Velázquez Castro.\n\nEl Universal\n\n---\n\nA partir del texto se infiere que la concha de mar tiene las siguientes características.",
+            "options": {
+              "A": "Moldeables y duraderas.",
+              "B": "Maleables y efímeras.",
+              "C": "Lujosas y endebles.",
+              "D": "Exóticas e inefables."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 77,
+            "topic": "3.5",
+            "topic_name": "Comprensión lectora — intención del investigador",
+            "text": "Lee el siguiente texto y contesta.\n\nEl misterio de las joyas de concha\n\nAl igual que la turquesa, las plumas de aves exóticas y el oro, la concha (lo que conocemos como concha de mar) era un material precioso en el México prehispánico (anterior a la conquista y colonización españolas). Así lo prueban los cientos de piezas elaboradas con diversos tipos de conchas recuperadas en las distintas excavaciones a lo largo de todo el país: solo en las excavaciones que se realizan desde 1978 en la zona arqueológica del Templo Mayor de Tenochtitlan se han recuperado más de 2,300 objetos hechos con concha. Las piezas, que han ido apareciendo en diferentes excavaciones, eran depositadas en las tumbas como ofrendas funerarias para recrear el inframundo acuático.\n\nPara los mexicas, así como las diversas culturas de Mesoamérica, la concha tenía una connotación sagrada, pues al ser un elemento acuático se asociaba con ese líquido esencial en el desarrollo de la vida. Además, por lo difícil que resultaba su obtención, era considerada un material de lujo, al que, por ejemplo, en Tenochtitlan, solo tenía acceso la clase gobernante.\n\nEl arqueólogo Adrián Velázquez Castro busca desde hace quince años las huellas de las herramientas empleadas por los artesanos prehispánicos en la elaboración de los objetos de concha. Y es que, a pesar de la gran cantidad de piezas recuperadas, no se han encontrado hasta ahora en la zona del Templo Mayor de Tenochtitlan restos de ningún taller o del área de producción de estos adornos. Velázquez empezó a trabajar en la clasificación de la colección de objetos de concha del Templo Mayor, pero su interés por conocer las formas de elaboración de estas piezas lo llevó a crear un proyecto de arqueología experimental que se convertiría, con el tiempo, en un taller de fabricación de la concha. Con este taller se pretende conocer, mediante la reconstrucción de las piezas antiguas con conchas modernas, las técnicas con las que se trabajó este material en la época prehispánica. Gracias al taller se ha podido saber, por ejemplo, que la producción del Templo Mayor fue muy estandarizada (se utilizaron la misma técnica y los mismos materiales), fue controlada por la clase gobernante y estuvo enfocada, casi exclusivamente, a la creación de objetos ornamentales.\n\nAl principio el taller se limitó a estudiar la colección de objetos de concha del Templo Mayor, pero poco a poco se extendió, y ya lleva realizados más de setecientos experimentos con otros objetos de concha del México prehispánico. «En gran parte gracias al trabajo de estudiantes de arqueología, tenemos ya un buen número de colecciones estudiadas, que van desde el norte de México hasta la zona maya, desde las etapas más tempranas, durante el periodo formativo, hasta el posclásico tardío, con la conquista española», comenta Adrián Velázquez Castro.\n\nEl Universal\n\n---\n\n¿Cuál es el interés del arqueólogo Adrián Velázquez Castro al crear el taller de fabricación de la concha?",
+            "options": {
+              "A": "Dar a conocer los oficios prehispánicos.",
+              "B": "Continuar con la tradición mexica.",
+              "C": "Imitar el trabajo manual indígena.",
+              "D": "Rescatar la manufactura precolombina."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 78,
+            "topic": "3.6",
+            "topic_name": "Comprensión lectora — intención del autor",
+            "text": "Lee el siguiente texto y contesta.\n\nEl misterio de las joyas de concha\n\nAl igual que la turquesa, las plumas de aves exóticas y el oro, la concha (lo que conocemos como concha de mar) era un material precioso en el México prehispánico (anterior a la conquista y colonización españolas). Así lo prueban los cientos de piezas elaboradas con diversos tipos de conchas recuperadas en las distintas excavaciones a lo largo de todo el país: solo en las excavaciones que se realizan desde 1978 en la zona arqueológica del Templo Mayor de Tenochtitlan se han recuperado más de 2,300 objetos hechos con concha. Las piezas, que han ido apareciendo en diferentes excavaciones, eran depositadas en las tumbas como ofrendas funerarias para recrear el inframundo acuático.\n\nPara los mexicas, así como las diversas culturas de Mesoamérica, la concha tenía una connotación sagrada, pues al ser un elemento acuático se asociaba con ese líquido esencial en el desarrollo de la vida. Además, por lo difícil que resultaba su obtención, era considerada un material de lujo, al que, por ejemplo, en Tenochtitlan, solo tenía acceso la clase gobernante.\n\nEl arqueólogo Adrián Velázquez Castro busca desde hace quince años las huellas de las herramientas empleadas por los artesanos prehispánicos en la elaboración de los objetos de concha. Y es que, a pesar de la gran cantidad de piezas recuperadas, no se han encontrado hasta ahora en la zona del Templo Mayor de Tenochtitlan restos de ningún taller o del área de producción de estos adornos. Velázquez empezó a trabajar en la clasificación de la colección de objetos de concha del Templo Mayor, pero su interés por conocer las formas de elaboración de estas piezas lo llevó a crear un proyecto de arqueología experimental que se convertiría, con el tiempo, en un taller de fabricación de la concha. Con este taller se pretende conocer, mediante la reconstrucción de las piezas antiguas con conchas modernas, las técnicas con las que se trabajó este material en la época prehispánica. Gracias al taller se ha podido saber, por ejemplo, que la producción del Templo Mayor fue muy estandarizada (se utilizaron la misma técnica y los mismos materiales), fue controlada por la clase gobernante y estuvo enfocada, casi exclusivamente, a la creación de objetos ornamentales.\n\nAl principio el taller se limitó a estudiar la colección de objetos de concha del Templo Mayor, pero poco a poco se extendió, y ya lleva realizados más de setecientos experimentos con otros objetos de concha del México prehispánico. «En gran parte gracias al trabajo de estudiantes de arqueología, tenemos ya un buen número de colecciones estudiadas, que van desde el norte de México hasta la zona maya, desde las etapas más tempranas, durante el periodo formativo, hasta el posclásico tardío, con la conquista española», comenta Adrián Velázquez Castro.\n\nEl Universal\n\n---\n\n¿Cuál es la intención del autor al escribir este texto?",
+            "options": {
+              "A": "Comparar los materiales usados por las culturas prehispánicas.",
+              "B": "Crear un taller para la fabricación de la concha de mar.",
+              "C": "Divulgar los avances arqueológicos sobre las culturas prehispánicas.",
+              "D": "Revelar el misterio de las joyas de la concha de mar."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 79,
+            "topic": "4.2",
+            "topic_name": "Gramática — sujeto de la oración",
+            "text": "Identifica el sujeto de la siguiente oración.\n\nLos científicos hallaron los huesos de un dinosaurio y algunos restos de otras especies.",
+            "options": {
+              "A": "Los huesos.",
+              "B": "Los científicos.",
+              "C": "Los restos.",
+              "D": "El dinosaurio."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 80,
+            "topic": "4.3",
+            "topic_name": "Gramática — predicado",
+            "text": "Elige la opción que contiene predicado.",
+            "options": {
+              "A": "Compró la computadora.",
+              "B": "Las pirámides de Teotihuacán.",
+              "C": "Hoy, mañana y siempre.",
+              "D": "Las cuentas del gran capitán."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 81,
+            "topic": "5.0",
+            "topic_name": "Redacción — uso correcto de adverbios",
+            "text": "¿Cuál de los siguientes enunciados está redactado correctamente?",
+            "options": {
+              "A": "Los papás de Ernesto no lo dejan que haga sólo las cosas.",
+              "B": "Los papás de Ernesto no dejan hacer solo sus actividades.",
+              "C": "Los papás de Ernesto no dejan que haga solo sus actividades.",
+              "D": "Los papás de Ernesto no lo dejan que haga las cosas sólo."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 82,
+            "topic": "5.0",
+            "topic_name": "Redacción — puntuación y coherencia",
+            "text": "¿Cuál de los siguientes párrafos está escrito correctamente?",
+            "options": {
+              "A": "Los personajes de la jarcha son principalmente la muchacha y el habib o amigo, como se denomina al amante. También aparece la madre y las hermanas como un rol de confidente mudo. Los temas son la ausencia del amado, la partida o llegada del amante al alba casi única referencia al exterior y la mención de alguna fiesta como la Pascua.",
+              "B": "Los personajes de la jarcha son principalmente, la muchacha y el habib, o amigo como se denomina al amante. También aparece la madre y las hermanas como un rol de confidente mudo. Los temas son la ausencia del amado la partida o llegada del amante al alba, casi única referencia al exterior, y la mención de alguna fiesta como la Pascua.",
+              "C": "Los personajes de la jarcha son, principalmente la muchacha y el habib o amigo como se denomina al amante. También, aparece la madre y las hermanas como un rol de confidente mudo. Los temas son, la ausencia del amado, la partida o llegada del amante al alba casi única referencia al exterior y la mención de alguna fiesta como la Pascua.",
+              "D": "Los personajes, de la jarcha son principalmente la muchacha y el habib o amigo, como se denomina al amante. También aparece la madre, y las hermanas como un rol de confidente mudo. Los temas son la ausencia del amado, la partida o llegada del amante, al alba casi única referencia al exterior y la mención de alguna fiesta como la Pascua."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 83,
+            "topic": "5.0",
+            "topic_name": "Redacción — redacción adecuada de un párrafo",
+            "text": "Selecciona el párrafo que presenta una redacción adecuada.",
+            "options": {
+              "A": "Amnistía Internacional hizo llegar hoy al nuevo gobernador del estado de Oaxaca una carta abierta en la cual presenta un resumen de los principales desafíos por afrontar en cuanto al cuidado de los derechos humanos, asimismo lo llama a desarrollar un plan de acción en la materia.",
+              "B": "Amnistía Internacional hizo llegar hoy al nuevo gobernador del estado de Oaxaca una carta abierta en la cual presenta un resumen de los principales desafíos por afrontar en cuanto al cuidado de los derechos humanos, así mismo lo llama a desarrollar un plan de acción en la materia.",
+              "C": "Amnistía Internacional hizo llegar hoy al nuevo gobernador del estado de Oaxaca una carta abierta en la cual presenta un resumen de los principales desafíos por afrontar en cuanto al cuidado de los derechos humanos; asimismo lo llama a desarrollar un plan de acción en la materia.",
+              "D": "Amnistía Internacional hizo llegar hoy al nuevo gobernador del estado de Oaxaca una carta abierta en la cual presenta un resumen de los principales desafíos por afrontar, en cuanto al cuidado de los derechos humanos, asimismo lo llama a desarrollar un plan de acción en la materia."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 84,
+            "topic": "6.1",
+            "topic_name": "Vocabulario — analogías",
+            "text": "Cardumen es a pez como",
+            "options": {
+              "A": "piara a enjambre.",
+              "B": "gente a persona.",
+              "C": "rebaño a abeja.",
+              "D": "parvada a horda."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 85,
+            "topic": "6.2",
+            "topic_name": "Vocabulario — sinónimos",
+            "text": "Selecciona el sinónimo de la palabra en mayúsculas.\n\nTuvo un leve ESTREMECIMIENTO de frío.",
+            "options": {
+              "A": "Ataque.",
+              "B": "Espanto.",
+              "C": "Sacudimiento.",
+              "D": "Temblor."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 86,
+            "topic": "7.1",
+            "topic_name": "Ortografía — uso correcto de grafías",
+            "text": "Elige la opción con la ortografía correcta.",
+            "options": {
+              "A": "El rebaño avanza sin cesar y ellos comienzan a rezagarse.",
+              "B": "El rebaño avanza sin cesar y ellos comiensan a resagarce.",
+              "C": "El rebaño avansa sin cesar y ellos comienzan a rezagarce.",
+              "D": "El rebaño avanza sin cesar y ellos comienzan a resagarse."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 87,
+            "topic": "7.6",
+            "topic_name": "Ortografía — prefijos y doble r",
+            "text": "¿Cuál de los siguientes enunciados está escrito correctamente?",
+            "options": {
+              "A": "Cubre el prerequisito y llegarás al puesto de vicerrector.",
+              "B": "Cubre el prerrequisito y llegarás al puesto de vicerrector.",
+              "C": "Cubre el prerrequisito y llegarás al puesto de vicerector.",
+              "D": "Cubre el prerequisito y llegarás al puesto de vicerector."
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Biología",
+        "questions_count": 13,
+        "questions": [
+          {
+            "id": 88,
+            "topic": "1.2.2",
+            "topic_name": "Célula — pared celular",
+            "text": "Estructura que protege y da soporte a las células vegetales.",
+            "options": {
+              "A": "Complejo de Golgi.",
+              "B": "Pared celular.",
+              "C": "Matriz extracelular.",
+              "D": "Membrana plasmática."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 89,
+            "topic": "2.2.1",
+            "topic_name": "Metabolismo — fotosíntesis (fase luminosa)",
+            "text": "En el proceso fotodependiente de la fotosíntesis, la clorofila participa directamente en la",
+            "options": {
+              "A": "fijación de CO₂.",
+              "B": "producción de glucosa.",
+              "C": "captación de energía lumínica.",
+              "D": "producción de oxígeno."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 90,
+            "topic": "2.4.2",
+            "topic_name": "Metabolismo — cadena respiratoria",
+            "text": "Los citocromos de la cadena respiratoria se caracterizan por la capacidad de",
+            "options": {
+              "A": "sintetizar ATP.",
+              "B": "catalizar reacciones REDOX.",
+              "C": "producir moléculas de O₂.",
+              "D": "reducir el oxígeno."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 91,
+            "topic": "3.1.2",
+            "topic_name": "Genética — información genética en el ADN",
+            "text": "La información genética codificada en el ácido desoxirribonucleico está en",
+            "options": {
+              "A": "el número de nucleótidos.",
+              "B": "la secuencia de las bases.",
+              "C": "los enlaces entre las bases.",
+              "D": "la unión entre nucleótidos."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 92,
+            "topic": "3.2",
+            "topic_name": "Reproducción — auto-perpetuación",
+            "text": "El principio de auto—perpetuación lo cumplen todos los seres vivos a través de",
+            "options": {
+              "A": "la evolución.",
+              "B": "la reproducción.",
+              "C": "el metabolismo.",
+              "D": "la homeostasis."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 93,
+            "topic": "3.2.2",
+            "topic_name": "Reproducción — contenido haploide",
+            "text": "El contenido haploide de cromosomas en organismos eucariontes",
+            "options": {
+              "A": "cambia en la meiosis.",
+              "B": "es definido por los óvulos.",
+              "C": "caracteriza a los gametos.",
+              "D": "se reduce en la meiosis."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 94,
+            "topic": "4.1",
+            "topic_name": "Genética — gametos y genotipo",
+            "text": "Tipos de gametos producidos por un progenitor con genotipo Aa — Bb.",
+            "options": {
+              "A": "AA — BB — aa — bb",
+              "B": "AB — Ab — aB — ab",
+              "C": "AA — Aa — BB — Bb",
+              "D": "Aa — Bb — aa — bb"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 95,
+            "topic": "4.2.2",
+            "topic_name": "Genética — cuerpo de Barr",
+            "text": "Si al revisar cromosomas en el microscopio encontramos un cuerpo de Barr, se trata de un cromosoma",
+            "options": {
+              "A": "femenino.",
+              "B": "acrocéntrico.",
+              "C": "masculino.",
+              "D": "telocéntrico."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 96,
+            "topic": "4.3.1",
+            "topic_name": "Biotecnología — ADN recombinante",
+            "text": "Primera proteína humana realizada con la tecnología del ADN recombinante.",
+            "options": {
+              "A": "Miosina.",
+              "B": "Hemoglobina.",
+              "C": "Queratina.",
+              "D": "Insulina."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 97,
+            "topic": "5.2",
+            "topic_name": "Evolución — ancestros de las plantas",
+            "text": "¿Cuál es la característica por la que se considera a las algas verdes como ancestros de las plantas?",
+            "options": {
+              "A": "Contienen clorofila B y ficobilina.",
+              "B": "Contienen clorofila A y clorofila C.",
+              "C": "Contienen clorofila A y clorofila B.",
+              "D": "Contienen clorofila C y ficobilina."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 98,
+            "topic": "5.4",
+            "topic_name": "Evolución — barreras reproductivas",
+            "text": "La barrera reproductiva que se presenta cuando se cruza un burro con una yegua, se llama",
+            "options": {
+              "A": "esterilidad gamética.",
+              "B": "aislamiento gamético.",
+              "C": "inviabilidad híbrida.",
+              "D": "esterilidad híbrida."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 99,
+            "topic": "6.1.1",
+            "topic_name": "Ecología — población",
+            "text": "Las garzas blancas que habitan en un pantano son un ejemplo de",
+            "options": {
+              "A": "comunidad.",
+              "B": "ecosistema.",
+              "C": "nicho ecológico.",
+              "D": "población."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 100,
+            "topic": "6.2.2",
+            "topic_name": "Ecología — ciclo hidrológico",
+            "text": "Fase del ciclo hidrológico que reabastece de agua a los ecosistemas continentales.",
+            "options": {
+              "A": "Escurrimiento hacia cuencas oceánicas.",
+              "B": "Evaporación del agua superficial de las montañas.",
+              "C": "Filtración de agua hacia el subsuelo oceánico.",
+              "D": "Condensación y precipitación sobre montañas."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Historia universal",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 101,
+            "topic": "1.2",
+            "topic_name": "Periodización — Edad Antigua y Edad Moderna",
+            "text": "La formación de las Altas Culturas agrícolas en África y Asia, de los imperios griego y romano pertenecieron a la ________, mientras que la división por feudos, así como el renacimiento artístico, la formación de los Estados europeos y la colonización de América fueron característicos de la ________.",
+            "options": {
+              "A": "Edad Media — Edad Moderna",
+              "B": "Edad Antigua — Edad Moderna",
+              "C": "Edad Moderna — Edad Contemporánea",
+              "D": "Edad Antigua — Edad Contemporánea"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 102,
+            "topic": "2.2.1",
+            "topic_name": "Independencia de las Trece Colonias — causas internas",
+            "text": "Algunas causas internas que propiciaron la Independencia de las Trece Colonias Inglesas fueron",
+            "options": {
+              "A": "la guerra del té, la promoción del ludismo y la ideología burguesa.",
+              "B": "el parlamentarismo inglés, la creación de asambleas y las ideas liberales.",
+              "C": "las barreras al comercio, los impuestos excesivos y la autodeterminación de las colonias.",
+              "D": "los excesivos aranceles a la producción, el alto impuesto al té y la Guerra de los Cien Años."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 103,
+            "topic": "3.2",
+            "topic_name": "Movimientos obreros — Cartismo",
+            "text": "¿Qué movimiento obrero planteó al parlamento inglés los derechos de los trabajadores, su representatividad y su participación política?",
+            "options": {
+              "A": "Ludismo.",
+              "B": "Socialismo.",
+              "C": "Cartismo.",
+              "D": "Sindicalismo."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 104,
+            "topic": "4.2",
+            "topic_name": "Imperialismo — causas",
+            "text": "El crecimiento de los capitales industriales en la segunda mitad del siglo XIX, el fortalecimiento de las ideas nacionalistas, el hallazgo de materias primas y mano de obra barata en países de Asia y África fueron causas del",
+            "options": {
+              "A": "Militarismo.",
+              "B": "Comunismo.",
+              "C": "Imperialismo.",
+              "D": "Sionismo."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 105,
+            "topic": "5.1",
+            "topic_name": "Primera Guerra Mundial — acuerdos de paz",
+            "text": "Los Catorce Puntos de Wilson, la creación de la Sociedad de Naciones, la búsqueda de la autodeterminación de los pueblos para la paz, así como el apoyo total a la diplomacia fueron acuerdos de paz de la",
+            "options": {
+              "A": "Guerra Fría.",
+              "B": "Segunda Guerra Mundial.",
+              "C": "Primera Guerra Mundial.",
+              "D": "Guerra de los Balcanes."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 106,
+            "topic": "6.2",
+            "topic_name": "Totalitarismos — regímenes militaristas del siglo XX",
+            "text": "Regímenes militaristas de Europa en la primera mitad del siglo XX, que se caracterizaron por ser antisocialistas, antisemitas y antidemocráticos.",
+            "options": {
+              "A": "Comunistas.",
+              "B": "Despóticos.",
+              "C": "Centralistas.",
+              "D": "Totalitarios."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 107,
+            "topic": "7.1",
+            "topic_name": "Segunda Guerra Mundial — cronología",
+            "text": "Ordena cronológicamente los siguientes acontecimientos relacionados con la Segunda Guerra Mundial.\n\nI. Hitler invade Polonia.\nII. Desembarco angloamericano en Normandía.\nIII. Bombas atómicas sobre Hiroshima y Nagasaki.\nIV. Los alemanes toman París.\nV. Ataque Japonés a Pearl Harbor.",
+            "options": {
+              "A": "I, IV, V, II y III",
+              "B": "II, V, I, III y IV",
+              "C": "III, I, IV, V y II",
+              "D": "IV, III, I, II y V"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 108,
+            "topic": "8.2",
+            "topic_name": "Guerra Fría — Guerra de los Seis Días",
+            "text": "En el marco de la Guerra Fría, estalló la Guerra de los Seis Días, un conflicto que surgió en Medio Oriente entre",
+            "options": {
+              "A": "Egipto y la URSS.",
+              "B": "Israel y la URSS.",
+              "C": "Israel y Palestina.",
+              "D": "Palestina y Egipto."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 109,
+            "topic": "8.3",
+            "topic_name": "Descolonización — independencia de Libia",
+            "text": "¿Qué país africano logró su independencia en 1951, después de haber estado bajo el yugo italiano, francés y británico?",
+            "options": {
+              "A": "Libia.",
+              "B": "Etiopía.",
+              "C": "Sudáfrica.",
+              "D": "Marruecos."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 110,
+            "topic": "9.3",
+            "topic_name": "Avances tecnológicos — Internet",
+            "text": "¿Cuál fue la aportación científica del inglés Timothy Berners Lee con el propósito de intercambiar información?",
+            "options": {
+              "A": "Radar.",
+              "B": "Genoma humano.",
+              "C": "Internet.",
+              "D": "Lector óptico."
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Historia de México",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 111,
+            "topic": "1.1",
+            "topic_name": "México prehispánico — Mesoamérica",
+            "text": "Las creencias politeístas, la existencia de técnicas agrícolas, de pueblos tributarios así como los rituales de sacrificios fueron características de",
+            "options": {
+              "A": "Centroamérica.",
+              "B": "Aridoamérica.",
+              "C": "Oasisamérica.",
+              "D": "Mesoamérica."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 112,
+            "topic": "2.2",
+            "topic_name": "Independencia — Hidalgo y Morelos",
+            "text": "Durante la etapa de iniciación de la Independencia de la Nueva España, Miguel Hidalgo promulgó la ________, y José María Morelos promulgó la ________, durante la organización del movimiento armado.",
+            "options": {
+              "A": "Constitución de Apatzingán — abolición de la esclavitud",
+              "B": "abolición de las castas — Constitución de Apatzingán",
+              "C": "Constitución de Apatzingán — abolición de las castas",
+              "D": "abolición de la esclavitud — Constitución de Apatzingán"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 113,
+            "topic": "3.4",
+            "topic_name": "México independiente — centralismo",
+            "text": "La restricción de participación política, el control del poder a manos del presidente, así como la promoción de fueros religiosos y militares fueron rasgos del grupo político",
+            "options": {
+              "A": "centralista.",
+              "B": "federalista.",
+              "C": "monopolista.",
+              "D": "libertador."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 114,
+            "topic": "4.5",
+            "topic_name": "Reforma — gobierno de Benito Juárez",
+            "text": "La pacificación del país, la aplicación de las leyes de Reforma de 1857, la apertura de escuelas de instrucción básica fueron características del gobierno de",
+            "options": {
+              "A": "Benito Juárez.",
+              "B": "Sebastián Lerdo de Tejada.",
+              "C": "Ignacio Comonfort.",
+              "D": "Miguel Miramón."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 115,
+            "topic": "5.3",
+            "topic_name": "Porfiriato — oposición maderista",
+            "text": "Grupo de oposición al régimen porfirista que peleaba por el apego a la Constitución y a la legalidad, así como por el respeto al voto y a la no reelección.",
+            "options": {
+              "A": "Maderistas.",
+              "B": "Obregonistas.",
+              "C": "Carrancistas.",
+              "D": "Villistas."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 116,
+            "topic": "6.3",
+            "topic_name": "Revolución Mexicana — Congreso Constituyente de 1917",
+            "text": "Los \"jacobinos\" del Congreso Constituyente de 1917 eran partidarios de la corriente encabezada por",
+            "options": {
+              "A": "Álvaro Obregón.",
+              "B": "Francisco Villa.",
+              "C": "Venustiano Carranza.",
+              "D": "Adolfo de la Huerta."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 117,
+            "topic": "7.1",
+            "topic_name": "México posrevolucionario — caudillismo y presidencialismo",
+            "text": "La existencia de un líder con ejército a su mando y bases de apoyo a nivel regional es una característica del ________; mientras que el ________ se distingue por el gobierno de una figura política electa a través de sufragio y con el apoyo de instituciones.",
+            "options": {
+              "A": "partidismo — populismo",
+              "B": "populismo — partidismo",
+              "C": "presidencialismo — caudillismo",
+              "D": "caudillismo — presidencialismo"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 118,
+            "topic": "7.3",
+            "topic_name": "Cardenismo — gobierno de Lázaro Cárdenas",
+            "text": "La creación del Partido Acción Nacional, la conformación del Instituto Politécnico Nacional, el reparto ejidal y el reconocimiento de la Reforma Agraria ocurrieron durante el gobierno de",
+            "options": {
+              "A": "Lázaro Cárdenas.",
+              "B": "Emilio Portes Gil.",
+              "C": "Álvaro Obregón.",
+              "D": "Plutarco Elías Calles."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 119,
+            "topic": "8.2",
+            "topic_name": "México contemporáneo — Milagro Mexicano",
+            "text": "El crecimiento económico sostenido y la construcción de infraestructura fueron características que entre 1952 y 1970 se conocieron como",
+            "options": {
+              "A": "Plan Sexenal.",
+              "B": "Desarrollo Compartido.",
+              "C": "Milagro Mexicano.",
+              "D": "Unidad Nacional."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 120,
+            "topic": "8.3",
+            "topic_name": "México contemporáneo — sexenio de Luis Echeverría",
+            "text": "La creación de instituciones como el INFONAVIT, la Universidad Autónoma Metropolitana, el Colegio de Bachilleres y el Colegio de Ciencias y Humanidades se llevó a cabo durante el sexenio de",
+            "options": {
+              "A": "Luis Echeverría Álvarez.",
+              "B": "José López Portillo.",
+              "C": "Miguel de la Madrid.",
+              "D": "Gustavo Díaz Ordaz."
+            },
+            "answer": "A"
+          }
+        ]
+      }
+    ]
+  }
+}

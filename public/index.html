@@ -296,6 +296,7 @@ function renderMath(text) {
         }
         return inner.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
       }
+      if (/<img\s/.test(part)) return part;
       return part
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
         .replace(/\n/g, '<br>');
@@ -351,6 +352,11 @@ function backToRoom() {
 document.getElementById('roomCodeInput').addEventListener('input', () => {
   document.getElementById('roomErrorMsg').textContent = '';
 });
+(function() {
+  const p = new URLSearchParams(window.location.search);
+  const s = p.get('sala');
+  if (s) document.getElementById('roomCodeInput').value = s.toUpperCase();
+})();
 document.getElementById('roomCodeInput').addEventListener('keydown', (e) => {
   if (e.key === 'Enter') joinRoom();
 });

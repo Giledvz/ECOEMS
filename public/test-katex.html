@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/katex/katex.min.css">
+<script src="/katex/katex.min.js"></script>
+<script src="/katex/contrib/auto-render.min.js"></script>
+</head>
+<body style="font-family:sans-serif;padding:20px;background:#1e293b;color:#e2e8f0;">
+
+<h2>Test 1: katex loaded?</h2>
+<div id="t1"></div>
+
+<h2>Test 2: renderToString</h2>
+<div id="t2"></div>
+
+<h2>Test 3: renderMathInElement (auto-render)</h2>
+<div id="t3">Inline: $$6.022 \times 10^{23}$$ and $$v = \dfrac{f}{\lambda}$$</div>
+
+<h2>Test 4: renderMath function</h2>
+<div id="t4"></div>
+
+<script>
+// Test 1
+document.getElementById('t1').textContent = typeof katex !== 'undefined' ? 'YES - katex loaded' : 'NO - katex NOT loaded';
+
+// Test 2
+if (typeof katex !== 'undefined') {
+  try {
+    var result = katex.renderToString('6.022 \\times 10^{23}', { throwOnError: false });
+    document.getElementById('t2').innerHTML = result;
+  } catch(e) {
+    document.getElementById('t2').textContent = 'ERROR: ' + e.message;
+  }
+}
+
+// Test 3
+if (typeof renderMathInElement !== 'undefined') {
+  renderMathInElement(document.getElementById('t3'), {
+    delimiters: [{ left: '$$', right: '$$', display: false }],
+    throwOnError: false
+  });
+} else {
+  document.getElementById('t3').textContent += ' (renderMathInElement NOT loaded)';
+}
+
+// Test 4: exact same function as index.html
+function renderMath(text) {
+  var html = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  if (typeof katex !== 'undefined') {
+    html = html.replace(/\$\$([\s\S]+?)\$\$/g, function(match, tex) {
+      try { return katex.renderToString(tex, { throwOnError: false }); }
+      catch(e) { return 'ERR:' + e.message; }
+    });
+  }
+  return html.replace(/\n/g, '<br>');
+}
+document.getElementById('t4').innerHTML = renderMath('$$v = \\dfrac{f}{\\lambda}$$');
+</script>
+</body>
+</html>
