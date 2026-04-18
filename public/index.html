@@ -287,12 +287,14 @@ const socket = io({ reconnection: true, reconnectionDelay: 1000, reconnectionAtt
 function renderMath(text) {
   if (!text) return '';
   try {
-    var parts = text.split(/(\$\$[\s\S]+?\$\$)/g);
+    var parts = text.split(/(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$)/g);
     return parts.map(function(part) {
-      if (part.indexOf('$$') === 0 && part.lastIndexOf('$$') === part.length - 2) {
-        var inner = part.slice(2, -2);
+      var isDisplay = part.indexOf('$$') === 0 && part.lastIndexOf('$$') === part.length - 2 && part.length >= 4;
+      var isInline = !isDisplay && part.length >= 2 && part.charAt(0) === '$' && part.charAt(part.length - 1) === '$' && part.indexOf('\n') === -1;
+      if (isDisplay || isInline) {
+        var inner = isDisplay ? part.slice(2, -2) : part.slice(1, -1);
         if (typeof katex !== 'undefined') {
-          try { return katex.renderToString(inner, { throwOnError: false, displayMode: false }); } catch(e) {}
+          try { return katex.renderToString(inner, { throwOnError: false, displayMode: isDisplay }); } catch(e) {}
         }
         return inner.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
       }
