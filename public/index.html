@@ -272,7 +272,10 @@ document.addEventListener('DOMContentLoaded', function() {
     <span id="scoreLabel" style="font-size:14px; font-weight:500; opacity:0.8; margin-top:4px;">de 128 aciertos</span>
   </div>
   <p id="resultsDetail" style="font-size:16px; color:#555;"></p>
-  <button onclick="startReview()" style="padding:16px 36px; font-size:17px; font-weight:600; background:#2c5282; color:#fff; border:none; border-radius:12px; cursor:pointer; margin-top:8px;">Revisar examen</button>
+  <div style="display:flex; gap:10px; margin-top:8px; flex-wrap:wrap; justify-content:center;">
+    <button onclick="startReview()" style="padding:16px 36px; font-size:17px; font-weight:600; background:#2c5282; color:#fff; border:none; border-radius:12px; cursor:pointer;">Revisar examen</button>
+    <button onclick="downloadPDF()" style="padding:16px 36px; font-size:17px; font-weight:600; background:#16a34a; color:#fff; border:none; border-radius:12px; cursor:pointer;">Descargar comprobante</button>
+  </div>
   <p style="font-size:13px; color:#999; margin-top:4px;">Navega por las preguntas y ve cuales tuviste bien y mal</p>
   <hr class="divider" />
   <div class="topic-breakdown" id="topicBreakdown" style="display:none;">
@@ -287,6 +290,8 @@ const socket = io({ reconnection: true, reconnectionDelay: 1000, reconnectionAtt
 function renderMath(text) {
   if (!text) return '';
   try {
+    // Protect escaped \$ (literal dollar signs) from LaTeX parsing
+    text = text.replace(/\\\$/g, '\x00DOLLAR\x00');
     var parts = text.split(/(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$)/g);
     return parts.map(function(part) {
       var isDisplay = part.indexOf('$$') === 0 && part.lastIndexOf('$$') === part.length - 2 && part.length >= 4;
@@ -301,14 +306,15 @@ function renderMath(text) {
       if (/<img\s/.test(part)) return part;
       return part
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
         .replace(/\n/g, '<br>');
-    }).join('');
+    }).join('').replace(/\x00DOLLAR\x00/g, '$');
   } catch(e) {
-    return text.replace(/\$\$/g, '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return text.replace(/\$\$/g, '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\x00DOLLAR\x00/g, '$');
   }
 }
 
-let state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '' };
+let state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null };
 
 function saveState() {
   try { localStorage.setItem('examState', JSON.stringify({ roomCode: state.roomCode, name: state.name, group: state.group, answers: state.answers, marked: state.marked, currentQ: state.currentQ })); } catch(e) {}
@@ -478,6 +484,9 @@ function confirmSubmit() {
 function enterReviewMode(data) {
   state.submitted = true;
   if (state.timerInterval) clearInterval(state.timerInterval);
+  if (state.startTime && !state.timeUsed) {
+    state.timeUsed = Math.round((Date.now() - state.startTime) / 1000);
+  }
   if (data && data.answerKey) state.answerKey = data.answerKey;
   const correct = (data && data.correct != null) ? data.correct : null;
   const total = state.questions.length;
@@ -538,6 +547,104 @@ function renderTopicBreakdown() {
   });
 }
 
+function downloadPDF() {
+  const correct = Object.keys(state.answerKey).length > 0
+    ? state.questions.filter(q => state.answers[q.id] === state.answerKey[q.id]).length
+    : null;
+  const total = state.questions.length;
+  let timeStr = '—';
+  if (state.timeUsed) {
+    const h = Math.floor(state.timeUsed / 3600);
+    const m = Math.floor((state.timeUsed % 3600) / 60);
+    const s = state.timeUsed % 60;
+    timeStr = h > 0 ? `${h}h ${m}m` : `${m}m ${s}s`;
+  }
+  const fecha = new Date().toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
+
+  // Group questions by subject in display order
+  const questionsHTML = state.questions.map((q, idx) => {
+    const mine = state.answers[q.id];
+    const correctAns = state.answerKey[q.id];
+    const letters = Object.keys(q.options);
+
+    const optionsHTML = letters.map(letter => {
+      const isCorrect = letter === correctAns;
+      const isMine = letter === mine;
+      let style = 'padding:6px 10px; margin:2px 0; border-radius:6px; font-size:12px;';
+      let marker = '';
+      if (isCorrect && isMine) {
+        style += ' background:#dcfce7; border:1px solid #16a34a;';
+        marker = ' ✓ (tu respuesta)';
+      } else if (isCorrect) {
+        style += ' background:#dcfce7; border:1px solid #16a34a;';
+        marker = ' ✓';
+      } else if (isMine) {
+        style += ' background:#fef2f2; border:1px solid #e53e3e;';
+        marker = ' ✗ (tu respuesta)';
+      } else {
+        style += ' background:#f8f8f8; border:1px solid #e5e5e5;';
+      }
+      return `<div style="${style}"><b>${letter}.</b> ${renderMath(q.options[letter])}${marker}</div>`;
+    }).join('');
+
+    // Truncate very long question texts (readings) for the PDF
+    let qText = q.text;
+    const maxLen = 1500;
+    if (qText.length > maxLen) {
+      const lastParagraph = qText.lastIndexOf('\n\n');
+      if (lastParagraph > maxLen * 0.3) {
+        const readingPart = qText.substring(0, lastParagraph);
+        const questionPart = qText.substring(lastParagraph);
+        // Show truncated reading + full question
+        qText = readingPart.substring(0, 300) + '\n\n[...]\n\n' + questionPart;
+      }
+    }
+
+    const imgHTML = q.image ? `<img src="${q.image}" style="max-width:280px; max-height:200px; margin:6px 0; display:block;">` : '';
+
+    return `
+      <div style="page-break-inside:avoid; margin-bottom:14px; padding:10px; border:1px solid #e5e5e5; border-radius:8px;">
+        <div style="font-size:11px; color:#666; margin-bottom:4px;">${q.subject} — Pregunta ${idx + 1}</div>
+        <div style="font-size:13px; margin-bottom:6px;">${renderMath(qText)}</div>
+        ${imgHTML}
+        ${optionsHTML}
+      </div>`;
+  }).join('');
+
+  const html = `<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<title>Comprobante — ${state.name}</title>
+<link rel="stylesheet" href="/katex.min.css">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding:20px; color:#1a1a1a; font-size:13px; }
+  @media print { body { padding:10px; } .no-print { display:none !important; } @page { margin:15mm 10mm; } }
+  .header { text-align:center; margin-bottom:20px; padding-bottom:14px; border-bottom:2px solid #2c5282; }
+  .header h1 { font-size:20px; color:#2c5282; margin-bottom:4px; }
+  .stats { display:flex; justify-content:center; gap:24px; margin-top:10px; font-size:14px; }
+  .stat-box { text-align:center; }
+  .stat-val { font-size:28px; font-weight:700; }
+  .stat-label { font-size:11px; color:#666; }
+  .print-btn { display:block; margin:20px auto; padding:14px 40px; font-size:16px; font-weight:600; background:#2c5282; color:#fff; border:none; border-radius:10px; cursor:pointer; }
+</style></head><body>
+<div class="header">
+  <h1>${state.title || 'Examen'}</h1>
+  <div style="font-size:15px; font-weight:600; margin-top:2px;">${state.name}</div>
+  <div style="font-size:12px; color:#666;">${state.group} — ${fecha}</div>
+  <div class="stats">
+    <div class="stat-box"><div class="stat-val" style="color:${correct !== null && correct >= Math.ceil(total * 0.6) ? '#16a34a' : '#e53e3e'}">${correct !== null ? correct : '—'}</div><div class="stat-label">de ${total} aciertos</div></div>
+    <div class="stat-box"><div class="stat-val">${correct !== null ? Math.round(correct / total * 100) : '—'}%</div><div class="stat-label">calificación</div></div>
+    <div class="stat-box"><div class="stat-val" style="font-size:20px; margin-top:6px;">${timeStr}</div><div class="stat-label">tiempo</div></div>
+  </div>
+</div>
+${questionsHTML}
+<button class="print-btn no-print" onclick="window.print()">Guardar como PDF</button>
+</body></html>`;
+
+  const w = window.open('', '_blank');
+  if (w) { w.document.write(html); w.document.close(); }
+  else { alert('Permite las ventanas emergentes para descargar el comprobante.'); }
+}
+
 function startReview() {
   state.reviewMode = true;
   document.getElementById('reviewBanner').style.display = '';
@@ -567,6 +674,7 @@ function startTimer(startTime, limitMinutes) {
 // Room join response
 socket.on('roomJoined', (data) => {
   state.roomCode = data.roomCode;
+  state.title = data.title || '';
   document.getElementById('examTitle').textContent = data.title;
   document.getElementById('examInfo').textContent = `${data.totalQuestions} preguntas`;
   document.getElementById('roomCodeLabel').textContent = `Sala: ${data.roomCode}`;
@@ -607,7 +715,7 @@ socket.on('joined', (data) => {
   }
   document.getElementById('welcomeName').textContent = `¡Hola, ${data.name}!`;
   document.getElementById('waitingRoomCode').textContent = `Sala: ${state.roomCode}`;
-  if (data.title) document.getElementById('examTitleBar').textContent = data.title;
+  if (data.title) { state.title = data.title; document.getElementById('examTitleBar').textContent = data.title; }
   saveState();
   if (data.submitted) { enterReviewMode({ correct: data.correct, total: data.questions.length, answerKey: data.answerKey }); }
   else if (data.examActive) { showScreen('examScreen'); renderQuestion(); if (data.startTime) startTimer(data.startTime, data.timeLimit); }
@@ -631,7 +739,7 @@ socket.on('markedUpdate', (marked) => { state.marked = marked; saveState(); rend
 socket.on('examReset', () => {
   if (state.timerInterval) clearInterval(state.timerInterval);
   const rc = state.roomCode;
-  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: rc };
+  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: rc, timeUsed: null };
   try { localStorage.removeItem('examState'); } catch(e) {}
   document.getElementById('reviewBanner').style.display = 'none';
   document.getElementById('submitBtn').style.display = '';
@@ -641,7 +749,7 @@ socket.on('examReset', () => {
 
 socket.on('roomDeleted', () => {
   if (state.timerInterval) clearInterval(state.timerInterval);
-  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '' };
+  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null };
   try { localStorage.removeItem('examState'); } catch(e) {}
   document.getElementById('reviewBanner').style.display = 'none';
   document.getElementById('submitBtn').style.display = '';

@@ -1,0 +1,1639 @@
+{
+  "exam": {
+    "title": "Simulacro — Examen de Ingreso a la Licenciatura UNAM Área 1",
+    "group": "Universidad",
+    "date": "2026-04-18",
+    "version": "1.0",
+    "total_questions": 120,
+    "students": [
+      "Óscar",
+      "Alfredo",
+      "Dana"
+    ],
+    "instructions": "Selecciona la opción correcta para cada pregunta. No se permite el uso de calculadora.",
+    "sections": [
+      {
+        "subject": "Física",
+        "questions_count": 16,
+        "questions": [
+          {
+            "id": 1,
+            "topic": "1.1",
+            "topic_name": "Movimiento rectilíneo uniforme",
+            "text": "El desplazamiento de un ferrocarril se describe en la siguiente gráfica (posición $x$ – tiempo $t$). A partir de los datos mostrados se puede deducir que el movimiento es rectilíneo con",
+            "options": {
+              "A": "aceleración constante.",
+              "B": "aceleración variable.",
+              "C": "velocidad constante.",
+              "D": "velocidad variable."
+            },
+            "answer": "C",
+            "image": "/imagenes_area1_2021/q1_grafica.jpeg"
+          },
+          {
+            "id": 2,
+            "topic": "1.3",
+            "topic_name": "Movimiento uniformemente acelerado",
+            "text": "Un objeto se deja caer desde el reposo. Si la aceleración de la gravedad es $g = 10 \\ \\frac{m}{s^2}$, ¿qué distancia habrá recorrido en los primeros 4 segundos?",
+            "options": {
+              "A": "20 m",
+              "B": "40 m",
+              "C": "60 m",
+              "D": "80 m"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 3,
+            "topic": "2.4",
+            "topic_name": "Leyes de Newton",
+            "text": "Tres caballos jalan una carreta de 500 kg en la misma dirección. Cada uno de los caballos ejerce una fuerza de 1,500 N sobre la carreta. Si no hay fricción entre la carreta y el suelo, la fuerza total con la que ésta es jalada es de",
+            "options": {
+              "A": "3 N",
+              "B": "300 N",
+              "C": "1,500 N",
+              "D": "4,500 N"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 4,
+            "topic": "2.6",
+            "topic_name": "Segunda ley de Newton",
+            "text": "Sobre un cuerpo se aplicaron diferentes fuerzas en dirección horizontal y con el mismo sentido provocando que el objeto experimentara distintas aceleraciones. Basándote en la gráfica de los resultados obtenidos y despreciando la acción de la fricción ejercida por la superficie de contacto entre el objeto y la superficie de contacto, ¿cuál es la masa del objeto?",
+            "options": {
+              "A": "1.6 kg",
+              "B": "2.5 kg",
+              "C": "3.2 kg",
+              "D": "4.0 kg"
+            },
+            "answer": "B",
+            "image": "/imagenes_area1_2021/q4_grafica.png"
+          },
+          {
+            "id": 5,
+            "topic": "3.1",
+            "topic_name": "Trabajo mecánico",
+            "text": "¿En cuál de las siguientes situaciones se realiza un trabajo mecánico?",
+            "options": {
+              "A": "Un libro permanece en reposo sobre una mesa horizontal.",
+              "B": "Una persona sostiene una maleta pesada sin desplazarse.",
+              "C": "Un caballo arrastra un trineo con fuerza constante sobre la nieve.",
+              "D": "Un satélite describe una órbita circular uniforme alrededor de la Tierra."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 6,
+            "topic": "3.7",
+            "topic_name": "Conservación de la cantidad de movimiento",
+            "text": "Un niño está parado sobre un carrito, ambos en reposo, el primero pesa 30 kg y cuando salta hacia adelante a $2 \\ \\frac{m}{s}$, el carrito es lanzado hacia atrás a $12 \\ \\frac{m}{s}$. Si se desprecia la fricción, ¿cuál es la masa del carrito?",
+            "options": {
+              "A": "6.0 kg",
+              "B": "5.0 kg",
+              "C": "2.5 kg",
+              "D": "0.8 kg"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 7,
+            "topic": "4.1.2",
+            "topic_name": "Equilibrio térmico",
+            "text": "Un sistema está en equilibrio térmico cuando",
+            "options": {
+              "A": "en un proceso su temperatura no varía.",
+              "B": "su temperatura es igual a la de otro sistema con el que está en contacto térmico.",
+              "C": "se calienta por medio de trabajo.",
+              "D": "su presión y su masa permanecen constantes."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 8,
+            "topic": "4.1.3",
+            "topic_name": "Conversión de temperatura",
+            "text": "Para convertir un valor de temperatura Fahrenheit $T_F$ a su equivalente en la escala Celsius $T_C$, se emplea la expresión",
+            "options": {
+              "A": "$T_C = T_F - 273$",
+              "B": "$T_C = \\frac{T_F - 32}{1.8}$",
+              "C": "$T_C = \\frac{T_F + 32}{1.8}$",
+              "D": "$T_C = 1.8 T_F + 32$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 9,
+            "topic": "4.1.4",
+            "topic_name": "Capacidad térmica específica",
+            "text": "A la cantidad de calor que necesita una sustancia para cambiar de estado de agregación, sin variar su temperatura, se le conoce como",
+            "options": {
+              "A": "capacidad térmica.",
+              "B": "calor sensible.",
+              "C": "calor latente.",
+              "D": "capacidad térmica específica."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 10,
+            "topic": "5.1",
+            "topic_name": "Longitud de onda",
+            "text": "Una cuerda está atada en un extremo a un punto fijo y en el otro a un vibrador, de manera que se produce un tren de ondas, como el que se muestra en la figura. ¿Cuál es la longitud de onda de la onda estacionaria?",
+            "options": {
+              "A": "$4.5 \\ \\frac{cm}{ciclo}$",
+              "B": "$90 \\ \\frac{cm}{ciclo}$",
+              "C": "$9 \\ \\frac{cm}{ciclo}$",
+              "D": "$18 \\ \\frac{cm}{ciclo}$"
+            },
+            "answer": "D",
+            "image": "/imagenes_area1_2021/q10_onda.png"
+          },
+          {
+            "id": 11,
+            "topic": "5.3",
+            "topic_name": "Interferencia de ondas",
+            "text": "Para explicar la interferencia constructiva o destructiva de dos ondas, se debe considerar",
+            "options": {
+              "A": "la amplitud de ambas ondas.",
+              "B": "la superposición entre ambas ondas.",
+              "C": "que ambas ondas sean longitudinales.",
+              "D": "que ambas ondas sean transversales."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 12,
+            "topic": "6.3",
+            "topic_name": "Ley de Ohm",
+            "text": "Un circuito consta de una pila con voltaje conocido de $V$ volts y 4 resistores conectados en serie que presentan la misma resistencia desconocida de $R$ ohms. Si por el circuito circula una corriente conocida de $I$ amperes, ¿qué expresión nos sirve para calcular el valor de $R$?",
+            "options": {
+              "A": "$R = \\frac{4V}{I}$",
+              "B": "$R = 4VI$",
+              "C": "$R = \\frac{I}{4V}$",
+              "D": "$R = \\frac{V}{4I}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 13,
+            "topic": "6.4.1",
+            "topic_name": "Resistencia en circuitos",
+            "text": "A partir del circuito que se muestra en la imagen, determina la corriente total que entrega la fuente.",
+            "options": {
+              "A": "$0.50 \\ A$",
+              "B": "$1.36 \\ A$",
+              "C": "$2.40 \\ A$",
+              "D": "$6.00 \\ A$"
+            },
+            "answer": "B",
+            "image": "/imagenes_area1_2021/q13_circuito.png"
+          },
+          {
+            "id": 14,
+            "topic": "7.2.1",
+            "topic_name": "Fluidos",
+            "text": "¿Cuál es la presión que ejerce una columna de agua de 5 m de altura? (Densidad del agua $\\rho = 1000 \\ \\frac{kg}{m^3}$, $g = 9.8 \\ \\frac{m}{s^2}$)",
+            "options": {
+              "A": "49 000 Pa",
+              "B": "5 000 Pa",
+              "C": "98 000 Pa",
+              "D": "500 Pa"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 15,
+            "topic": "8.1",
+            "topic_name": "Óptica – Refracción",
+            "text": "El índice de refracción del cuarzo es 1.544. ¿Con qué velocidad se propaga la luz en él?",
+            "options": {
+              "A": "$194{,}300 \\ \\frac{km}{s}$",
+              "B": "$19{,}430 \\ \\frac{km}{s}$",
+              "C": "$1{,}943 \\ \\frac{km}{s}$",
+              "D": "$194 \\ \\frac{km}{s}$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 16,
+            "topic": "9.1.1",
+            "topic_name": "Modelo atómico de Thomson",
+            "text": "El modelo de Thomson establece que",
+            "options": {
+              "A": "los electrones son partículas con carga negativa distribuidos uniformemente dentro de un medio homogéneo de carga positiva, haciendo que el átomo sea eléctricamente neutro.",
+              "B": "existe un átomo formado por una corteza constituida por electrones que giran alrededor de un núcleo donde se concentra la carga eléctrica positiva y la masa del átomo.",
+              "C": "los electrones se encuentran en regiones específicas a diferentes distancias del núcleo, vibrando alrededor de éste como lo hacen los planetas alrededor del Sol.",
+              "D": "existe un átomo distinto para cada elemento cuyas masas y tamaños son diferentes, que se pueden combinar en diferentes proporciones para formar más de un compuesto."
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Literatura",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 17,
+            "topic": "1.1",
+            "topic_name": "Propiedades del texto",
+            "text": "De acuerdo con su organización textual, las propiedades del texto deben presentar",
+            "options": {
+              "A": "una situación comunicativa en la que surge como una unidad de información con significado coherente, cuyas ideas tienen cohesión.",
+              "B": "un cuerpo de citas y referentes autorizados claramente documentados en el cual se apoye, lo anterior, con el fin de dar verosimilitud a éste.",
+              "C": "una serie de ideas perfectamente establecidas cuya finalidad es informar a partir de su función referencial y apelativa.",
+              "D": "un contenido acorde al pensamiento del autor, en la que las ideas se presentan en función de la subjetividad del lector."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 18,
+            "topic": "1.3.1",
+            "topic_name": "Propósito del texto",
+            "text": "Identifica el propósito del siguiente texto.\n\nEn la ceremonia celebrada en la explanada Francisco I. Madero de la residencia oficial de Los Pinos, Calderón indicó que para los XVI Juegos Panamericanos, Guadalajara 2011, se espera que participen ocho mil quinientos atletas de cuarenta y dos países y más de doscientos cincuenta mil visitantes nacionales y extranjeros.",
+            "options": {
+              "A": "Reflexionar sobre un tema.",
+              "B": "Plasmar un sentimiento.",
+              "C": "Difundir ideas políticas.",
+              "D": "Informar oportunamente."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 19,
+            "topic": "1.5.1",
+            "topic_name": "Comprensión de lectura poética",
+            "text": "En el siguiente fragmento la autora quiere expresar que\n\nAquella vida de arriba,\nque es la vida verdadera,\nhasta que esta vida muera,\nno se goza estando viva:\nmuerte, no me seas esquiva;\nviva muriendo primero,\nque muero porque no muero.",
+            "options": {
+              "A": "está deseosa de morir en esta vida para nacer a la verdadera.",
+              "B": "va a quitarse la vida porque ya no goza de ella.",
+              "C": "está molesta porque nadie viene a salvarla.",
+              "D": "piensa que es mejor la muerte por la propia mano que llegar a la vejez."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 20,
+            "topic": "2.1",
+            "topic_name": "Géneros literarios",
+            "text": "¿A qué género corresponde el siguiente fragmento?\n\nArturo, el noble rey de Bretaña, cuyas proezas son para nosotros ejemplo de valor y cortesía, al llegar la fiesta que llamamos Pentecostés, la celebró con todo el fasto propio de la realeza, reuniendo a su corte en Caraduel, en el país de Gales.",
+            "options": {
+              "A": "Épico.",
+              "B": "Lírico.",
+              "C": "Tragedia.",
+              "D": "Comedia."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 21,
+            "topic": "2.2.1",
+            "topic_name": "Realismo mexicano",
+            "text": "Son autores del realismo mexicano.",
+            "options": {
+              "A": "Benito Pérez Galdós y Leopoldo Alas \"Clarín\".",
+              "B": "Guillermo Prieto y Manuel M. Flores.",
+              "C": "Federico Gamboa y Ángel de Campo.",
+              "D": "Ignacio Ramírez y Juan Valera."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 22,
+            "topic": "2.2.1",
+            "topic_name": "Características del Realismo",
+            "text": "¿Qué características del Realismo están contenidas en el siguiente fragmento?\n\nEl remedio del malestar social y de la lucha cada vez más enconada entre pobres y ricos, ¿cuál es? La pobreza, la renuncia de todo bien material. El remedio de las injusticias que envilecen el mundo, en medio de todos esos decantados progresos políticos, ¿cuál es? Pues el no luchar con la injusticia, el entregarse a la maldad humana.\n\nPérez Galdós, B. Nazarín",
+            "options": {
+              "A": "Los valores nacionales y la exaltación del sentimiento.",
+              "B": "Los problemas de un sector de la población y el reflejo de la realidad.",
+              "C": "La objetividad del autor y la evasión de la realidad.",
+              "D": "La descripción de ambientes y el subjetivismo del autor."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 23,
+            "topic": "2.2.2",
+            "topic_name": "Literatura contemporánea",
+            "text": "Elige la opción que resume las características de la literatura contemporánea.",
+            "options": {
+              "A": "Aplica un alto sentido del mundo interior de los personajes y propone otro sentido de lo que significa la realidad y el tiempo.",
+              "B": "Presenta dos vertientes: una liberadora, que alienta la rebeldía y las luchas de independencia; y otra que se refugia en lo melancólico.",
+              "C": "Reacciona contra las corrientes académicas y románticas que le precedieron durante la primera mitad del siglo XIX.",
+              "D": "Hace énfasis en lo moral y lo social de la actuación humana, con el objetivo de combatir prejuicios mediante el conocimiento y el estudio."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 24,
+            "topic": "2.2.2",
+            "topic_name": "Autores contemporáneos",
+            "text": "Son autores representativos de la literatura contemporánea.",
+            "options": {
+              "A": "Mary Shelley y Pedro Calderón de la Barca.",
+              "B": "Juana Inés de la Cruz y Fiódor Dostoyevski.",
+              "C": "Jorge Ibargüengoitia y José Saramago.",
+              "D": "Gustave Flaubert y Oscar Wilde."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 25,
+            "topic": "3.2",
+            "topic_name": "Ficha hemerográfica",
+            "text": "Identifica la ficha hemerográfica.",
+            "options": {
+              "A": "Dosal Gómez, María Rosario, et al. *Lengua española. Español IV*. México: Patria Cultural, 2001.",
+              "B": "García Márquez, Gabriel. \"Cómo eran mis compañeros muertos en el mar\" en *Relato de un náufrago*. 7–10. Ciudad de México: De Bolsillo, 2003.",
+              "C": "Peguero, Rosario. \"La filosofía de lucro, el gran mito de la edad contemporánea: Roa Bastos\". *El país*. Ciudad de México, 31 septiembre 2005, p. 31.",
+              "D": "Ocampo de Gómez, Aurora Maura, y Ernesto Prado Velázquez. *Diccionario de escritores mexicanos*. México: UNAM, Centro de Estudios Literarios, 1967."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 26,
+            "topic": "3.3",
+            "topic_name": "Tipos de fichas de trabajo",
+            "text": "Identifica el tipo de ficha de trabajo mostrado en el ejemplo.\n\nClarke, R. (1990). Aprendizaje basado en resolución de problemas, pp., 55–62. En: K. Cox y C. Ewan (eds.) *La docencia en medicina*. Barcelona: Pamplona.\n\nEvolución del aprendizaje\n\nEste aprendizaje coloca la responsabilidad del aprendizaje en manos de los estudiantes y estimula el examen de los procesos de razonamiento clínico y de estudio autodirigido. Las funciones del profesor se modifican, evolucionando de informador a consultor. Las oportunidades de desarrollo intelectual, que ofrecen al profesorado y los estudiantes, pueden superar las reconocidas dificultades de su planificación y puesta en práctica.",
+            "options": {
+              "A": "Textual.",
+              "B": "Comentario.",
+              "C": "Reseña.",
+              "D": "Resumen."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Química",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 27,
+            "topic": "1.1.2",
+            "topic_name": "Mezclas",
+            "text": "Una medalla de bronce es un ejemplo de",
+            "options": {
+              "A": "mezcla heterogénea.",
+              "B": "mezcla homogénea.",
+              "C": "compuesto.",
+              "D": "elemento."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 28,
+            "topic": "1.3.1",
+            "topic_name": "Propiedades de los metales",
+            "text": "Es un elemento dúctil, maleable y presenta brillo.",
+            "options": {
+              "A": "Ne",
+              "B": "Si",
+              "C": "Ca",
+              "D": "Br"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 29,
+            "topic": "1.3.3.1",
+            "topic_name": "Enlace covalente no polar",
+            "text": "Al enlace que se forma entre dos átomos con igual valor de electronegatividad se le llama",
+            "options": {
+              "A": "iónico.",
+              "B": "metálico.",
+              "C": "puente de hidrógeno.",
+              "D": "covalente no polar."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 30,
+            "topic": "1.4",
+            "topic_name": "Formación de una sal",
+            "text": "¿Qué ecuación química representa la formación de una sal?",
+            "options": {
+              "A": "$SO_2 + H_2O \\rightarrow H_2SO_3$",
+              "B": "$Cl_2 + H_2O \\rightarrow 2HCl$",
+              "C": "$N_2O_5 + H_2O \\rightarrow 2HNO_3$",
+              "D": "$HCl + KOH \\rightarrow KCl + H_2O$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 31,
+            "topic": "1.5.2",
+            "topic_name": "Mol",
+            "text": "¿Cuántos mol hay en 100 g NaCl?",
+            "options": {
+              "A": "17",
+              "B": "1.7",
+              "C": "5.85",
+              "D": "58.5"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 32,
+            "topic": "2.2",
+            "topic_name": "Tensión superficial",
+            "text": "Propiedad del agua gracias a la cual un insecto puede caminar sobre ella.",
+            "options": {
+              "A": "Densidad.",
+              "B": "Tensión superficial.",
+              "C": "Polaridad de la molécula.",
+              "D": "Formación de puentes de hidrógeno."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 33,
+            "topic": "2.4.2",
+            "topic_name": "pH",
+            "text": "Al agregar unas gotas de vinagre con un valor de pH = 3.5 a un litro de agua pura, el pH de la disolución puede ser",
+            "options": {
+              "A": "muy ácido.",
+              "B": "ligeramente ácido.",
+              "C": "neutro.",
+              "D": "ligeramente básico."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 34,
+            "topic": "3.4",
+            "topic_name": "Oxidación y reducción",
+            "text": "Cuando el carbono se combina con oxígeno para formar $CO_2$, el carbono se",
+            "options": {
+              "A": "oxida al ganar electrones y el oxígeno se reduce al perder electrones.",
+              "B": "reduce al perder electrones y el oxígeno se oxida al ganar electrones.",
+              "C": "oxida al perder electrones y el oxígeno se reduce al ganar electrones.",
+              "D": "reduce al ganar electrones y el oxígeno se oxida al perder electrones."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 35,
+            "topic": "4.2.2",
+            "topic_name": "Biomoléculas",
+            "text": "Biomoléculas que sirven de reserva energética en los organismos.",
+            "options": {
+              "A": "Aminoácidos.",
+              "B": "Lípidos.",
+              "C": "Vitaminas.",
+              "D": "Carbohidratos."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 36,
+            "topic": "5.1",
+            "topic_name": "Reacciones exotérmicas",
+            "text": "Las reacciones de combustión son __________ porque __________ energía calorífica hacia los alrededores.",
+            "options": {
+              "A": "exotérmicas — liberan",
+              "B": "exotérmicas — absorben",
+              "C": "endotérmicas — liberan",
+              "D": "endotérmicas — absorben"
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Geografía",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 37,
+            "topic": "1.2.1",
+            "topic_name": "Coordenadas geográficas",
+            "text": "¿Cuáles son las latitudes y longitudes correspondientes a las ciudades de Montevideo y de Caracas?",
+            "options": {
+              "A": "Montevideo: 35° lat S – 56° long W; Caracas: 11° lat N – 67° long W",
+              "B": "Montevideo: 55° lat N – 37° long E; Caracas: 65° lat S – 11° long E",
+              "C": "Montevideo: 37° lat N – 55° long W; Caracas: 11° lat S – 65° long W",
+              "D": "Montevideo: 56° lat S – 35° long W; Caracas: 67° lat N – 11° long W"
+            },
+            "answer": "A",
+            "image": "/imagenes_area1_2021/q37_mapa.png"
+          },
+          {
+            "id": 38,
+            "topic": "1.3",
+            "topic_name": "Geografía física",
+            "text": "La geografía física estudia",
+            "options": {
+              "A": "el relieve y las actividades económicas.",
+              "B": "la sociedad y los tipos de vegetación.",
+              "C": "el clima y las regiones naturales.",
+              "D": "la población y los tipos de clima."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 39,
+            "topic": "1.3.1.2",
+            "topic_name": "Llanura de tundra",
+            "text": "Llanura de tundra que se encuentra en América.",
+            "options": {
+              "A": "Mississipi.",
+              "B": "Patagonia.",
+              "C": "Canadiense.",
+              "D": "Amazonas."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 40,
+            "topic": "1.3.2.2",
+            "topic_name": "Agua dulce",
+            "text": "Mayores concentraciones de agua dulce en nuestro planeta.",
+            "options": {
+              "A": "Ríos.",
+              "B": "Glaciares.",
+              "C": "Lagos tectónicos.",
+              "D": "Aguas subterráneas."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 41,
+            "topic": "2.1.1",
+            "topic_name": "Biomas",
+            "text": "La taiga o bosque de coníferas se localiza en el",
+            "options": {
+              "A": "norte de Europa y norte de Asia.",
+              "B": "sur de Europa y sur de Asia.",
+              "C": "norte de África y norte de Asia.",
+              "D": "sur de América y norte de Oceanía."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 42,
+            "topic": "2.2",
+            "topic_name": "Contaminación",
+            "text": "El uso excesivo de plaguicidas produce la contaminación de",
+            "options": {
+              "A": "la troposfera.",
+              "B": "las aguas superficiales.",
+              "C": "la atmósfera.",
+              "D": "los lagos tectónicos."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 43,
+            "topic": "2.2.3",
+            "topic_name": "Contaminación del agua",
+            "text": "Una de las causas principales de la contaminación del agua es la",
+            "options": {
+              "A": "alteración del cauce de los ríos.",
+              "B": "polución agroquímica.",
+              "C": "infiltración excesiva.",
+              "D": "desertificación."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 44,
+            "topic": "2.4.1.1",
+            "topic_name": "Índice de Desarrollo Humano",
+            "text": "Algunos de los principales indicadores socioeconómicos que se emplean para calcular el Índice de Desarrollo Humano son",
+            "options": {
+              "A": "ingreso per cápita, alfabetismo y esperanza de vida.",
+              "B": "poder adquisitivo, inversión directa y deuda externa.",
+              "C": "natalidad, alfabetización y acceso a internet.",
+              "D": "mortalidad, nivel de inflación y servicios médicos."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 45,
+            "topic": "2.5.1.1",
+            "topic_name": "Formación de nuevos países",
+            "text": "Una causa de la formación de nuevos países en Europa es la",
+            "options": {
+              "A": "caída de la Unión Soviética.",
+              "B": "dependencia económica.",
+              "C": "regionalización económica.",
+              "D": "expansión de la Unión Soviética."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 46,
+            "topic": "2.5.2",
+            "topic_name": "División política de México",
+            "text": "Número de entidades federativas en México en el año 2000.",
+            "options": {
+              "A": "29",
+              "B": "28",
+              "C": "31",
+              "D": "32"
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Matemáticas",
+        "questions_count": 26,
+        "questions": [
+          {
+            "id": 47,
+            "topic": "1.1.2",
+            "topic_name": "Algoritmo de la división",
+            "text": "Si 127 es el dividendo y 11 es el divisor en la ecuación, ¿cuál es el valor del cociente $c$ y el residuo $r$?",
+            "options": {
+              "A": "$c = 13$ y $r = -16$",
+              "B": "$c = 12$ y $r = -5$",
+              "C": "$c = 10$ y $r = 17$",
+              "D": "$c = 11$ y $r = 6$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 48,
+            "topic": "1.1.3",
+            "topic_name": "Simplificación de expresiones",
+            "text": "Racionaliza la expresión $\\frac{6}{\\sqrt{3}}$",
+            "options": {
+              "A": "$3\\sqrt{2}$",
+              "B": "$2\\sqrt{3}$",
+              "C": "$\\frac{\\sqrt{3}}{6}$",
+              "D": "$6\\sqrt{3}$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 49,
+            "topic": "2.1",
+            "topic_name": "Binomio al cubo",
+            "text": "Al desarrollar $(x^2 - 3y)^3$ se obtiene",
+            "options": {
+              "A": "$x^6 - 9x^4y + 27x^2y^2 + 27y^3$",
+              "B": "$x^6 + 9x^4y - 27x^2y^2 + 27y^3$",
+              "C": "$x^6 - 9x^4y + 27x^2y^2 - 27y^3$",
+              "D": "$x^6 + 9x^4y - 27x^2y^2 - 27y^3$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 50,
+            "topic": "2.3",
+            "topic_name": "Simplificación de fracciones",
+            "text": "Factoriza la expresión $x^2 - 5x - 14$",
+            "options": {
+              "A": "$(x - 7)(x + 2)$",
+              "B": "$(x + 7)(x - 2)$",
+              "C": "$(x - 7)(x - 2)$",
+              "D": "$(x + 7)(x + 2)$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 51,
+            "topic": "3.1",
+            "topic_name": "Ecuaciones e identidades",
+            "text": "Selecciona la expresión que corresponde a una ecuación.",
+            "options": {
+              "A": "$\\operatorname{sen}(x) = \\frac{1}{2}$",
+              "B": "$\\operatorname{sen}(x) = \\frac{1}{2}x$",
+              "C": "$\\operatorname{sen}^2(x) + \\cos^2(x) = 1$",
+              "D": "$\\sec^2(x) - \\tan^2(x) = 1$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 52,
+            "topic": "3.3",
+            "topic_name": "Ecuación cuadrática",
+            "text": "Los valores que satisfacen la ecuación $6x^2 - 11x - 35 = 0$, son",
+            "options": {
+              "A": "$x_1 = \\frac{5}{3}; \\quad x_2 = -\\frac{7}{2}$",
+              "B": "$x_1 = -\\frac{5}{3}; \\quad x_2 = -\\frac{7}{2}$",
+              "C": "$x_1 = -\\frac{5}{3}; \\quad x_2 = \\frac{7}{2}$",
+              "D": "$x_1 = \\frac{5}{3}; \\quad x_2 = \\frac{7}{2}$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 53,
+            "topic": "4.1",
+            "topic_name": "Desigualdades",
+            "text": "Selecciona la desigualdad que tiene por solución al conjunto $(-\\infty, \\frac{1}{3}]$",
+            "options": {
+              "A": "$3x - 1 \\geq 0$",
+              "B": "$x - 3 \\geq 0$",
+              "C": "$-3x + 1 \\geq 0$",
+              "D": "$-x + 3 \\geq 0$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 54,
+            "topic": "5.2.1",
+            "topic_name": "Sistemas de ecuaciones",
+            "text": "Soluciona el sistema de ecuaciones\n\n$\\begin{cases} 5x + 2y - z = -7 \\\\ x - 2y + 2z = 0 \\\\ 3y + z = 17 \\end{cases}$",
+            "options": {
+              "A": "$x = -2, \\ y = 3, \\ z = 5$",
+              "B": "$x = 2, \\ y = 4, \\ z = -5$",
+              "C": "$x = -2, \\ y = 4, \\ z = 5$",
+              "D": "$x = 2, \\ y = 3, \\ z = -5$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 55,
+            "topic": "6.7",
+            "topic_name": "Evaluación de funciones",
+            "text": "¿Cuál es el valor de $y$ en $x = -8$ si $y = 5x^{\\frac{2}{3}} + 3x$?",
+            "options": {
+              "A": "$-44$",
+              "B": "$8$",
+              "C": "$16$",
+              "D": "$-4$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 56,
+            "topic": "7.1.2",
+            "topic_name": "Razones trigonométricas",
+            "text": "¿Cuál es el seno del ángulo $A$ en el triángulo rectángulo que se muestra en la imagen?",
+            "options": {
+              "A": "$\\frac{3}{5}$",
+              "B": "$\\frac{4}{5}$",
+              "C": "$\\frac{5}{3}$",
+              "D": "$\\frac{5}{4}$"
+            },
+            "answer": "A",
+            "image": "/imagenes_area1_2021/q56_triangulo.jpeg"
+          },
+          {
+            "id": 57,
+            "topic": "7.1.3",
+            "topic_name": "Triángulo rectángulo 30-60-90",
+            "text": "En un triángulo rectángulo, la hipotenusa mide 10 unidades y uno de sus ángulos es de 30°. ¿Cuántas unidades mide el lado opuesto al ángulo dado?",
+            "options": {
+              "A": "6",
+              "B": "$\\frac{1}{20}$",
+              "C": "5",
+              "D": "$\\frac{15}{\\sqrt{3}}$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 58,
+            "topic": "8.1",
+            "topic_name": "Rango de una función exponencial",
+            "text": "Calcula el rango de la siguiente función $y = e^{(-5x - \\frac{1}{5})} + 5$",
+            "options": {
+              "A": "$[\\frac{1}{5}, \\infty)$",
+              "B": "$(5, \\infty)$",
+              "C": "$(-5, \\infty)$",
+              "D": "$[-\\frac{1}{5}, \\infty)$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 59,
+            "topic": "9.2",
+            "topic_name": "Punto medio",
+            "text": "Encuentra las coordenadas del punto medio entre los puntos P (0, 2) y Q (4, 6).",
+            "options": {
+              "A": "(2, 3)",
+              "B": "(2, 4)",
+              "C": "(3, 3)",
+              "D": "(3, 4)"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 60,
+            "topic": "9.6",
+            "topic_name": "Distancia de un punto a una recta",
+            "text": "La distancia del punto $(-1, 1)$ a la recta dada por la ecuación $-3x + 4y - 8 = 0$ es",
+            "options": {
+              "A": "0.2 unidades.",
+              "B": "0.7 unidades.",
+              "C": "1.2 unidades.",
+              "D": "1.4 unidades."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 61,
+            "topic": "9.6",
+            "topic_name": "Distancia perpendicular a una recta",
+            "text": "En un marco de referencia representado por un plano XY, se localiza un gasoducto sobre la recta $3x + 4y = 2$ con una fábrica en el punto (6, 6). ¿Qué longitud, en metros, se requiere para conectar perpendicularmente a la fábrica con el gasoducto?",
+            "options": {
+              "A": "7.8 m",
+              "B": "8.4 m",
+              "C": "8.0 m",
+              "D": "7.4 m"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 62,
+            "topic": "10.4",
+            "topic_name": "Centro de una circunferencia",
+            "text": "Indica las coordenadas del centro de la circunferencia cuya ecuación general es $3x^2 + 3y^2 + 12x - 30y + 6 = 0$",
+            "options": {
+              "A": "$C(-4, 10)$",
+              "B": "$C(-2, 5)$",
+              "C": "$C(4, -10)$",
+              "D": "$C(2, -5)$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 63,
+            "topic": "11.2",
+            "topic_name": "Ecuación de la parábola",
+            "text": "Selecciona la ecuación de la parábola con foco $F(1, 0)$, valor del parámetro $P = 1$ y eje focal paralelo al eje X.",
+            "options": {
+              "A": "$x^2 + 4y = 0$",
+              "B": "$x^2 - 4y = 0$",
+              "C": "$y^2 - 4x = 0$",
+              "D": "$y^2 + 4x = 0$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 64,
+            "topic": "12.1",
+            "topic_name": "Elipse",
+            "text": "Lugar geométrico en el plano de un punto cualquiera, que la suma de las distancias a dos puntos fijos, llamados focos, es una cantidad constante.",
+            "options": {
+              "A": "Elipse.",
+              "B": "Circunferencia.",
+              "C": "Hipérbola.",
+              "D": "Parábola."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 65,
+            "topic": "13.2",
+            "topic_name": "Hipérbola",
+            "text": "¿Cuánto vale $a$ en la hipérbola con ecuación $\\frac{x^2}{a^2} - \\frac{y^2}{9^2} = 1$, si $c = 41$?",
+            "options": {
+              "A": "$a = 42$",
+              "B": "$a = 36$",
+              "C": "$a = 38$",
+              "D": "$a = 40$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 66,
+            "topic": "14.4",
+            "topic_name": "Ecuación de una cónica",
+            "text": "Elige la ecuación que represente a la cónica de la figura.",
+            "options": {
+              "A": "$\\frac{(x-3)^2}{16} + \\frac{y^2}{9} = 1$",
+              "B": "$\\frac{(x-3)^2}{9} + \\frac{y^2}{16} = 1$",
+              "C": "$\\frac{(x+3)^2}{16} + \\frac{y^2}{9} = 1$",
+              "D": "$\\frac{(x+3)^2}{9} + \\frac{y^2}{16} = 1$"
+            },
+            "answer": "D",
+            "image": "/imagenes_area1_2021/q66_elipse.jpeg"
+          },
+          {
+            "id": 67,
+            "topic": "15.4",
+            "topic_name": "Límites",
+            "text": "Calcula el límite $\\lim_{x \\to 0} \\frac{\\sqrt{2+x} - \\sqrt{2}}{x}$",
+            "options": {
+              "A": "$\\frac{\\sqrt{2}}{2}$",
+              "B": "$\\frac{2}{\\sqrt{2}}$",
+              "C": "$\\frac{4}{\\sqrt{2}}$",
+              "D": "$\\frac{\\sqrt{2}}{4}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 68,
+            "topic": "16.2",
+            "topic_name": "Definición de derivada",
+            "text": "¿Cuál de las siguientes expresiones corresponde para obtener la derivada $f(x) = x^3$ en el punto $x = 3$?",
+            "options": {
+              "A": "$f'(3) = \\lim_{h \\to 0} \\frac{f(3+h) - f(3)}{h} = \\lim_{h \\to 0} \\frac{(3+h)^3 - 3^3}{h}$\n$f'(3) = \\lim_{h \\to 0} \\frac{3^3 + 3 \\cdot 3^2h + 3 \\cdot 3h^2 + h^3 - 3^3}{h}$",
+              "B": "$f'(3) = \\lim_{h \\to 0} \\frac{f(3) - f(3+h)}{h} = \\lim_{h \\to 0} \\frac{3^3 - (3+h)^3}{h}$\n$f'(3) = \\lim_{h \\to 0} \\frac{3^3 - 3^3 - 3 \\cdot 3^2h - 3 \\cdot 3h^2 - h^3}{h}$",
+              "C": "$f'(3) = \\lim_{h \\to 0} \\frac{f(3+h) + f(3)}{h} = \\lim_{h \\to 0} \\frac{(3+h)^3 + 3^3}{h}$\n$f'(3) = \\lim_{h \\to 0} \\frac{3^3 + 3 \\cdot 3^2h + 3 \\cdot 3h^2 + h^3 + 3^3}{h}$",
+              "D": "$f'(3) = \\lim_{h \\to 0} \\frac{f(3) - f(3-h)}{h} = \\lim_{h \\to 0} \\frac{3^3 - (3-h)^3}{h}$\n$f'(3) = \\lim_{h \\to 0} \\frac{3^3 - 3^3 + 3 \\cdot 3^2h - 3 \\cdot 3h^2 + h^3}{h}$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 69,
+            "topic": "16.10",
+            "topic_name": "Máximos y mínimos",
+            "text": "Indica las coordenadas de los puntos máximos y mínimos de la función $y = x(x-4)^2$, con $0 \\leq x \\leq 4$.",
+            "options": {
+              "A": "Máx $\\left(\\frac{10}{7}, \\frac{36}{14}\\right)$, mín$(4, 0)$",
+              "B": "Máx $\\left(\\frac{5}{7}, \\frac{10}{13}\\right)$, mín$(4, 4)$",
+              "C": "Máx $\\left(\\frac{8}{3}, \\frac{128}{27}\\right)$, mín$(4, 4)$",
+              "D": "Máx $\\left(\\frac{4}{3}, \\frac{256}{27}\\right)$, mín$(4, 0)$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 70,
+            "topic": "16.12",
+            "topic_name": "Optimización",
+            "text": "Se desea fabricar una caja sin tapa con la lámina que se muestra en la imagen. ¿Cuánto se deberá cortar en cada esquina de la lámina para obtener el volumen máximo?",
+            "options": {
+              "A": "$\\frac{25 + 5\\sqrt{7}}{6}$",
+              "B": "$\\frac{25 + 5\\sqrt{43}}{6}$",
+              "C": "$\\frac{25 - 5\\sqrt{43}}{6}$",
+              "D": "$\\frac{25 - 5\\sqrt{7}}{6}$"
+            },
+            "answer": "D",
+            "image": "/imagenes_area1_2021/q70_rectangulo.jpeg"
+          },
+          {
+            "id": 71,
+            "topic": "17.3",
+            "topic_name": "Integral definida",
+            "text": "El valor de la integral definida $\\int_0^2 x^2 \\, dx$ es igual a",
+            "options": {
+              "A": "$-\\frac{8}{3}$",
+              "B": "$2$",
+              "C": "$\\frac{8}{3}$",
+              "D": "$8$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 72,
+            "topic": "17.4",
+            "topic_name": "Integral por sustitución",
+            "text": "La $\\int (2x - 1)^3 \\, dx$ es igual a",
+            "options": {
+              "A": "$\\frac{(2x-1)^2}{6} + c$",
+              "B": "$\\frac{(2x-1)^4}{4} + c$",
+              "C": "$\\frac{(2x-1)^2}{2} + c$",
+              "D": "$\\frac{(2x-1)^4}{8} + c$"
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Español",
+        "questions_count": 18,
+        "questions": [
+          {
+            "id": 73,
+            "topic": "1.1",
+            "topic_name": "Funciones de la lengua",
+            "text": "Elige la función de la lengua que predomina en el siguiente enunciado.\n\nLa Edad Media es el periodo comprendido entre el 476 d.C. y el 1453 d.C., año en que Constantinopla se rindió ante los turcos.",
+            "options": {
+              "A": "Metalingüística.",
+              "B": "Apelativa.",
+              "C": "Referencial.",
+              "D": "Expresiva."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 74,
+            "topic": "1.3",
+            "topic_name": "Función poética",
+            "text": "Identifica la función de la lengua que predomina en el siguiente texto.\n\nPara Toby la muchacha rubia puede hacer lo que se le antoje. Remueve otra vez la cola, satisfecho de haberla visto, y suspira.\n\nTal vez la muchacha rubia vuelva a pasar.\n\nToby suspira de nuevo, sacude la cabeza como para espantar una mosca, mete el pincel en el tarro aplicando la cola a la madera terciada.",
+            "options": {
+              "A": "Metalingüística.",
+              "B": "Poética.",
+              "C": "Apelativa.",
+              "D": "Referencial."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 75,
+            "topic": "2.1",
+            "topic_name": "Formas del discurso",
+            "text": "Identifica la forma del discurso que predomina en el siguiente fragmento.\n\nEn verdad, el aspecto externo de Momo era un poco extraño y tal vez podía asustar algo a la gente que da mucha importancia al aseo y al orden. Era pequeña y bastante flaca, de modo que ni con la mejor voluntad se podía decir si tenía ocho años o ya doce. Tenía el pelo muy ensortijado, negro como la brea, y parecía no haberse enfrentado nunca a un peine o unas tijeras. Tenía unos ojos muy grandes, muy hermosos y también negros como la brea y unos pies del mismo color, pues casi siempre iba descalza.",
+            "options": {
+              "A": "Argumentativa.",
+              "B": "Descriptiva.",
+              "C": "Fática.",
+              "D": "Expositiva."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 76,
+            "topic": "2.3",
+            "topic_name": "Discurso argumentativo",
+            "text": "Identifica el texto en el que predomina la forma del discurso argumentativa.",
+            "options": {
+              "A": "Aprende, viaja, estudia, habla, escribe, trabaja, sube y baja, Miguel. Miguel, levántate y anda.",
+              "B": "Despiértese, que es tarde, me grita desde la puerta un hombre extraño. Despiértese usted, que buena falta le hace, le contesto yo. Pero el muy obstinado me sigue soñando.",
+              "C": "Quien no quiere pensar es un fanático; quien no puede pensar es un idiota; quien no osa pensar es un cobarde.",
+              "D": "En Español, lo contrario de IN (como prefijo privativo, claro) suele ser la misma palabra, pero sin esa sílaba.\n–Sí, ya sé: insensato y sensato, indócil y dócil, ¿no?\n–Parcialmente correcto. No olvide, muchacho, que lo contrario del invierno no es el verano sino el verano."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 77,
+            "topic": "3.2",
+            "topic_name": "Comprensión lectora",
+            "text": "Lee el texto «Metamorfosis» de Torres, Maruja, y contesta las siguientes 5 preguntas.\n\nLa mujer salió de su casa, y era una buena mujer. Lo había sido durante toda su vida. Ese día, sin embargo, una fría determinación le roía las entrañas mientras avanzaba, el bolso bien sujeto, camino del lugar donde iban a producirse los hechos.\n\nPor momentos sentía que le temblaban las piernas, pero si su cuerpo flaqueaba, su mente no se permitía vacilar. Pensó en sus hijos. Pensó en su marido, honrado y trabajador, feliz con su fútbol, su tele y su chándal para ir al campo los fines de semana. Pensó en el equipo necesario para las vacaciones, tan inminentes ya.\n\nMás decidida que nunca, atravesó la puerta de los grandes almacenes. El aire procedente del acondicionador le heló la nuca y serpenteó por un momento entre sus muslos, y ésa fue la última sensación humana que iba a experimentar en varias horas.\n\n—¡Reebaaaajaaas! —rugió.\n\nBraceó hacia la horda que bramaba en el interior. Ya no pensaba en su familia. Como el cazador, sólo alimentaba un deseo: conseguir la mejor presa; como el sabueso, únicamente aspiraba a hincar el diente en la carne más tierna. Alargó ambas manos hacia una combinación de seda sintética rebajada, puesta a mitad de precio —previamente se había colgado el bolso en bandolera—, y una manada de tiburones abrió amenazadoramente las fauces frente a ella. La mujer se aferró con todas sus fuerzas a la prenda. Vio que las manos se le habían vuelto peludas, sarmentosas y con las uñas muy largas curvadas hacia dentro, pero no le importó. Arrancó la combinación de entre los colmillos de los escualos y siguió abriéndose paso entre aullidos.\n\nEn la segunda planta tuvo que despedazarle la carótida a una rinoceronta de vestido floreado que trataba de apoderarse de una cesta para pic-nic; en la tercera, se hizo a zarpazos con dos pares de zapatillas de deportes; en la cuarta fue corrida a cornadas por una panda de búfalas que se empecinaban en conseguir una cocinita portátil a butano; en la quinta estuvo a punto de morir picoteada por una nube de avispas venenosas, pero huyó en cuanto se dio cuenta de que no necesitaba un tresillo.\n\nCuando salió a la calle, tardó unos 20 minutos en recuperar su aspecto habitual.\n\nSelecciona el enunciado que sintetiza la idea principal del texto.",
+            "options": {
+              "A": "Las personas se comportan igual, sin importar su edad o condición.",
+              "B": "Debemos comprar lo que esté a nuestro alcance, aunque no nos sea necesario.",
+              "C": "Las personas suelen transformarse en animales durante la temporada de rebajas.",
+              "D": "No debemos salir de casa porque afuera siempre es una jungla."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 78,
+            "topic": "3.3",
+            "topic_name": "Comprensión de frases",
+            "text": "«Metamorfosis» de Torres, Maruja.\n\nLa mujer salió de su casa, y era una buena mujer. Lo había sido durante toda su vida. Ese día, sin embargo, una fría determinación le roía las entrañas mientras avanzaba, el bolso bien sujeto, camino del lugar donde iban a producirse los hechos.\n\nPor momentos sentía que le temblaban las piernas, pero si su cuerpo flaqueaba, su mente no se permitía vacilar. Pensó en sus hijos. Pensó en su marido, honrado y trabajador, feliz con su fútbol, su tele y su chándal para ir al campo los fines de semana. Pensó en el equipo necesario para las vacaciones, tan inminentes ya.\n\nMás decidida que nunca, atravesó la puerta de los grandes almacenes. El aire procedente del acondicionador le heló la nuca y serpenteó por un momento entre sus muslos, y ésa fue la última sensación humana que iba a experimentar en varias horas.\n\n—¡Reebaaaajaaas! —rugió.\n\nBraceó hacia la horda que bramaba en el interior. Ya no pensaba en su familia. Como el cazador, sólo alimentaba un deseo: conseguir la mejor presa; como el sabueso, únicamente aspiraba a hincar el diente en la carne más tierna. Alargó ambas manos hacia una combinación de seda sintética rebajada, puesta a mitad de precio —previamente se había colgado el bolso en bandolera—, y una manada de tiburones abrió amenazadoramente las fauces frente a ella. La mujer se aferró con todas sus fuerzas a la prenda. Vio que las manos se le habían vuelto peludas, sarmentosas y con las uñas muy largas curvadas hacia dentro, pero no le importó. Arrancó la combinación de entre los colmillos de los escualos y siguió abriéndose paso entre aullidos.\n\nEn la segunda planta tuvo que despedazarle la carótida a una rinoceronta de vestido floreado que trataba de apoderarse de una cesta para pic-nic; en la tercera, se hizo a zarpazos con dos pares de zapatillas de deportes; en la cuarta fue corrida a cornadas por una panda de búfalas que se empecinaban en conseguir una cocinita portátil a butano; en la quinta estuvo a punto de morir picoteada por una nube de avispas venenosas, pero huyó en cuanto se dio cuenta de que no necesitaba un tresillo.\n\nCuando salió a la calle, tardó unos 20 minutos en recuperar su aspecto habitual.\n\nLa frase\n\n«Como el cazador, sólo alimentaba un deseo: conseguir la mejor presa; como el sabueso, únicamente aspiraba a hincar el diente en la carne más tierna.»\n\nSe refiere a que algunas personas",
+            "options": {
+              "A": "aparentan tener una buena educación, pero son capaces de comportarse como bestias feroces e inclusive consumar un crimen si así fuera necesario.",
+              "B": "están desesperadas por salir de sus casas, ir a los almacenes de prestigio y gastar lo que han ahorrado para la ocasión.",
+              "C": "asisten a los almacenes y, en otras ocasiones, recorren el zoológico para observar el comportamiento de diferentes especies salvajes.",
+              "D": "llegan a comportarse como verdaderos animales para obtener el mejor artículo rebajado antes que alguien más lo obtenga."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 79,
+            "topic": "3.5",
+            "topic_name": "Inferencia textual",
+            "text": "«Metamorfosis» de Torres, Maruja.\n\nLa mujer salió de su casa, y era una buena mujer. Lo había sido durante toda su vida. Ese día, sin embargo, una fría determinación le roía las entrañas mientras avanzaba, el bolso bien sujeto, camino del lugar donde iban a producirse los hechos.\n\nPor momentos sentía que le temblaban las piernas, pero si su cuerpo flaqueaba, su mente no se permitía vacilar. Pensó en sus hijos. Pensó en su marido, honrado y trabajador, feliz con su fútbol, su tele y su chándal para ir al campo los fines de semana. Pensó en el equipo necesario para las vacaciones, tan inminentes ya.\n\nMás decidida que nunca, atravesó la puerta de los grandes almacenes. El aire procedente del acondicionador le heló la nuca y serpenteó por un momento entre sus muslos, y ésa fue la última sensación humana que iba a experimentar en varias horas.\n\n—¡Reebaaaajaaas! —rugió.\n\nBraceó hacia la horda que bramaba en el interior. Ya no pensaba en su familia. Como el cazador, sólo alimentaba un deseo: conseguir la mejor presa; como el sabueso, únicamente aspiraba a hincar el diente en la carne más tierna. Alargó ambas manos hacia una combinación de seda sintética rebajada, puesta a mitad de precio —previamente se había colgado el bolso en bandolera—, y una manada de tiburones abrió amenazadoramente las fauces frente a ella. La mujer se aferró con todas sus fuerzas a la prenda. Vio que las manos se le habían vuelto peludas, sarmentosas y con las uñas muy largas curvadas hacia dentro, pero no le importó. Arrancó la combinación de entre los colmillos de los escualos y siguió abriéndose paso entre aullidos.\n\nEn la segunda planta tuvo que despedazarle la carótida a una rinoceronta de vestido floreado que trataba de apoderarse de una cesta para pic-nic; en la tercera, se hizo a zarpazos con dos pares de zapatillas de deportes; en la cuarta fue corrida a cornadas por una panda de búfalas que se empecinaban en conseguir una cocinita portátil a butano; en la quinta estuvo a punto de morir picoteada por una nube de avispas venenosas, pero huyó en cuanto se dio cuenta de que no necesitaba un tresillo.\n\nCuando salió a la calle, tardó unos 20 minutos en recuperar su aspecto habitual.\n\nEn el texto, la protagonista pierde la cabeza porque",
+            "options": {
+              "A": "siempre ha sido altanera y posesiva.",
+              "B": "prefiere los deportes extremos.",
+              "C": "siente que debe aprovechar las ofertas.",
+              "D": "quiere satisfacer a su esposo."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 80,
+            "topic": "3.5",
+            "topic_name": "Inferencia de estados de ánimo",
+            "text": "«Metamorfosis» de Torres, Maruja.\n\nLa mujer salió de su casa, y era una buena mujer. Lo había sido durante toda su vida. Ese día, sin embargo, una fría determinación le roía las entrañas mientras avanzaba, el bolso bien sujeto, camino del lugar donde iban a producirse los hechos.\n\nPor momentos sentía que le temblaban las piernas, pero si su cuerpo flaqueaba, su mente no se permitía vacilar. Pensó en sus hijos. Pensó en su marido, honrado y trabajador, feliz con su fútbol, su tele y su chándal para ir al campo los fines de semana. Pensó en el equipo necesario para las vacaciones, tan inminentes ya.\n\nMás decidida que nunca, atravesó la puerta de los grandes almacenes. El aire procedente del acondicionador le heló la nuca y serpenteó por un momento entre sus muslos, y ésa fue la última sensación humana que iba a experimentar en varias horas.\n\n—¡Reebaaaajaaas! —rugió.\n\nBraceó hacia la horda que bramaba en el interior. Ya no pensaba en su familia. Como el cazador, sólo alimentaba un deseo: conseguir la mejor presa; como el sabueso, únicamente aspiraba a hincar el diente en la carne más tierna. Alargó ambas manos hacia una combinación de seda sintética rebajada, puesta a mitad de precio —previamente se había colgado el bolso en bandolera—, y una manada de tiburones abrió amenazadoramente las fauces frente a ella. La mujer se aferró con todas sus fuerzas a la prenda. Vio que las manos se le habían vuelto peludas, sarmentosas y con las uñas muy largas curvadas hacia dentro, pero no le importó. Arrancó la combinación de entre los colmillos de los escualos y siguió abriéndose paso entre aullidos.\n\nEn la segunda planta tuvo que despedazarle la carótida a una rinoceronta de vestido floreado que trataba de apoderarse de una cesta para pic-nic; en la tercera, se hizo a zarpazos con dos pares de zapatillas de deportes; en la cuarta fue corrida a cornadas por una panda de búfalas que se empecinaban en conseguir una cocinita portátil a butano; en la quinta estuvo a punto de morir picoteada por una nube de avispas venenosas, pero huyó en cuanto se dio cuenta de que no necesitaba un tresillo.\n\nCuando salió a la calle, tardó unos 20 minutos en recuperar su aspecto habitual.\n\nEn la frase *por momentos sentía que le temblaban las piernas, pero si su cuerpo flaqueaba, su mente no se permitía vacilar*, se infiere que la mujer se sentía",
+            "options": {
+              "A": "valiente e indecisa.",
+              "B": "temerosa y decidida.",
+              "C": "decidida y valiente.",
+              "D": "temerosa e indecisa."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 81,
+            "topic": "3.6",
+            "topic_name": "Finalidad del texto",
+            "text": "«Metamorfosis» de Torres, Maruja.\n\nLa mujer salió de su casa, y era una buena mujer. Lo había sido durante toda su vida. Ese día, sin embargo, una fría determinación le roía las entrañas mientras avanzaba, el bolso bien sujeto, camino del lugar donde iban a producirse los hechos.\n\nPor momentos sentía que le temblaban las piernas, pero si su cuerpo flaqueaba, su mente no se permitía vacilar. Pensó en sus hijos. Pensó en su marido, honrado y trabajador, feliz con su fútbol, su tele y su chándal para ir al campo los fines de semana. Pensó en el equipo necesario para las vacaciones, tan inminentes ya.\n\nMás decidida que nunca, atravesó la puerta de los grandes almacenes. El aire procedente del acondicionador le heló la nuca y serpenteó por un momento entre sus muslos, y ésa fue la última sensación humana que iba a experimentar en varias horas.\n\n—¡Reebaaaajaaas! —rugió.\n\nBraceó hacia la horda que bramaba en el interior. Ya no pensaba en su familia. Como el cazador, sólo alimentaba un deseo: conseguir la mejor presa; como el sabueso, únicamente aspiraba a hincar el diente en la carne más tierna. Alargó ambas manos hacia una combinación de seda sintética rebajada, puesta a mitad de precio —previamente se había colgado el bolso en bandolera—, y una manada de tiburones abrió amenazadoramente las fauces frente a ella. La mujer se aferró con todas sus fuerzas a la prenda. Vio que las manos se le habían vuelto peludas, sarmentosas y con las uñas muy largas curvadas hacia dentro, pero no le importó. Arrancó la combinación de entre los colmillos de los escualos y siguió abriéndose paso entre aullidos.\n\nEn la segunda planta tuvo que despedazarle la carótida a una rinoceronta de vestido floreado que trataba de apoderarse de una cesta para pic-nic; en la tercera, se hizo a zarpazos con dos pares de zapatillas de deportes; en la cuarta fue corrida a cornadas por una panda de búfalas que se empecinaban en conseguir una cocinita portátil a butano; en la quinta estuvo a punto de morir picoteada por una nube de avispas venenosas, pero huyó en cuanto se dio cuenta de que no necesitaba un tresillo.\n\nCuando salió a la calle, tardó unos 20 minutos en recuperar su aspecto habitual.\n\nSe puede considerar como una finalidad del texto que las personas",
+            "options": {
+              "A": "comprendan que administrar el dinero les da derecho a gastarlo como mejor les convenga.",
+              "B": "analicen cómo se trasforma su conducta al tratar de adquirir algo que quizá no necesitan.",
+              "C": "aprendan a defenderse ante situaciones de riesgo y que obtengan siempre lo que quieren.",
+              "D": "entiendan que antes de ir de compras deben mentalizarse para luchar por lo que quieren."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 82,
+            "topic": "4.1",
+            "topic_name": "Oración principal",
+            "text": "Elige la oración principal del siguiente fragmento.\n\nDe cara a la redefinición de la izquierda, conviene la reflexión retrospectiva: En el vasto frente opositor que tomó el nombre de Frente Democrático Nacional (FDN) había fuerzas distintas y dispersas de izquierda. Nunca terminaron de integrarse aunque sí se articularon con fines electorales. Siempre fue mucho mayor la fuerza societaria que la capacidad orgánica de los partidos y su desarrollo institucional. Desde que fuimos Corriente Democrática éramos mucho más una idea, una conciencia, una propuesta, que una organización.",
+            "options": {
+              "A": "Nunca terminaron de integrarse aunque sí se articularon con fines electorales.",
+              "B": "Siempre fue mucho mayor la fuerza societaria que la capacidad orgánica de los partidos y su desarrollo institucional.",
+              "C": "Desde que fuimos Corriente Democrática éramos mucho más una idea, una conciencia, una propuesta, que una organización.",
+              "D": "En el vasto frente opositor que tomó el nombre de Frente Democrático Nacional (FDN) había fuerzas distintas y dispersas de izquierda."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 83,
+            "topic": "4.2",
+            "topic_name": "Sujeto de la oración",
+            "text": "¿Cuál es el sujeto en el siguiente enunciado?\n\nEn el siglo V San Agustín había prohibido categóricamente toda mentira, a la que consideraba pecado.",
+            "options": {
+              "A": "En el siglo V.",
+              "B": "Toda mentira.",
+              "C": "San Agustín.",
+              "D": "Consideraba pecado."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 84,
+            "topic": "5.0",
+            "topic_name": "Redacción",
+            "text": "Elige la opción con la redacción apropiada.",
+            "options": {
+              "A": "Los checoslovacos combatían en las calles y se oponían a la dictadura.",
+              "B": "Un sinnúmero de feligreses acudieron a la Villa.",
+              "C": "La creación de muchas cosas no se tenían contempladas.",
+              "D": "Los constantes flujo y reflujo de divisas provocó alarma."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 85,
+            "topic": "5.0",
+            "topic_name": "Organización textual",
+            "text": "A partir del siguiente párrafo, organiza de forma adecuada la redacción del texto.\n\nUn veneno es cualquier sustancia que al ser introducida en el cuerpo ocasiona una serie de trastornos graves y algunas veces la muerte.\n\nI. Así, el hecho de excretarlos al exterior es una ventaja biológica que utilizan algunos animales para atacar o para defenderse de sus agresores.\nII. No obstante, y por lo general, los venenos no son dañinos para los seres que los sintetizan.\nIII. Paradójicamente, esas características letales las tienen algunas proteínas producidas de manera natural en el interior del cuerpo de muchos seres vivos.",
+            "options": {
+              "A": "III, II y I",
+              "B": "II, III y I",
+              "C": "III, I y II",
+              "D": "II, I y III"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 86,
+            "topic": "5.0",
+            "topic_name": "Nexos y conectores",
+            "text": "Elige la opción que completa adecuadamente el siguiente párrafo.\n\nEl atleta entrenó durante meses para la competencia, __________ una lesión le impidió participar; __________, tuvo que conformarse __________ ver la carrera desde las gradas.",
+            "options": {
+              "A": "sin embargo — no obstante — a",
+              "B": "mas — por tanto — con",
+              "C": "más — en conclusión — por",
+              "D": "pero — por lo tanto — con"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 87,
+            "topic": "6.1",
+            "topic_name": "Analogías",
+            "text": "Elige la opción que completa correctamente la siguiente analogía.\n\nEl tiburón es un piscívoro y el león es un",
+            "options": {
+              "A": "carnívoro.",
+              "B": "cuadrúpedo.",
+              "C": "mamífero.",
+              "D": "depredador."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 88,
+            "topic": "6.3",
+            "topic_name": "Antónimos",
+            "text": "Antónimo de DIÁFANO.",
+            "options": {
+              "A": "Brillante.",
+              "B": "Opaco.",
+              "C": "Luminoso.",
+              "D": "Claro."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 89,
+            "topic": "7.1",
+            "topic_name": "Ortografía",
+            "text": "Elige la opción con la ortografía correcta.",
+            "options": {
+              "A": "El rebaño avanza sin cesar y ellos comienzan a rezagarse.",
+              "B": "El rebaño avanza sin cezar y ellos comiensan a resagarce.",
+              "C": "El rebaño avansa sin cezar y ellos comienzan a rezagarce.",
+              "D": "El rebaño avanza sin cesar y ellos comiensan a resagarse."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 90,
+            "topic": "7.9",
+            "topic_name": "Uso de mayúsculas",
+            "text": "Selecciona la opción que usa correctamente las letras mayúsculas.",
+            "options": {
+              "A": "Ante la presencia de los Príncipes de Noruega, Haakon Magnus y Mette-Marit, fue inaugurada hoy la Muestra *Kristin Jarmund. Obras Escogidas*. El trabajo de la Arquitecta se exhibirá todo este mes en la Galería José Luis Benlliure.",
+              "B": "Ante la presencia de los príncipes de Noruega, Haakon Magnus y Mette-Marit, fue inaugurada hoy la muestra *Kristin Jarmund. Obras escogidas*. El trabajo de la arquitecta se exhibirá todo este mes en la galería José Luis Benlliure.",
+              "C": "Ante la presencia de los príncipes de Noruega, Haakon Magnus y Mette-Marit, fue inaugurada hoy la muestra *Kristin Jarmund. Obras escogidas*. El trabajo de la arquitecta se exhibirá todo este mes en la Galería José Luis Benlliure.",
+              "D": "Ante la presencia de los Príncipes de Noruega, Haakon Magnus y Mette-Marit, fue inaugurada hoy la muestra *Kristin Jarmund. Obras Escogidas*. El Trabajo de la arquitecta se exhibirá todo este mes en la galería José Luis Benlliure."
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Biología",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 91,
+            "topic": "1.1.2",
+            "topic_name": "Teoría celular",
+            "text": "La Teoría celular establece que",
+            "options": {
+              "A": "todas las células provienen de la generación espontánea.",
+              "B": "las células procariotas son más evolucionadas que las eucariotas.",
+              "C": "todo ser vivo está formado por una o más células.",
+              "D": "los virus son la unidad fundamental de la vida."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 92,
+            "topic": "2.1.1",
+            "topic_name": "Anabolismo",
+            "text": "El catabolismo es un proceso metabólico que consiste en",
+            "options": {
+              "A": "sintetizar moléculas complejas a partir de moléculas simples.",
+              "B": "degradar moléculas complejas para obtener energía.",
+              "C": "almacenar energía en forma de glucógeno.",
+              "D": "transportar sustancias a través de la membrana celular."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 93,
+            "topic": "2.4.1",
+            "topic_name": "Ciclo de Krebs",
+            "text": "¿En qué estructura celular se lleva a cabo el ciclo de Krebs?",
+            "options": {
+              "A": "Citoplasma.",
+              "B": "Núcleo.",
+              "C": "Retículo endoplásmico.",
+              "D": "Matriz mitocondrial."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 94,
+            "topic": "3.2.1",
+            "topic_name": "Mitosis",
+            "text": "Una célula con 46 cromosomas que se divide por meiosis formará células con",
+            "options": {
+              "A": "92 cromosomas.",
+              "B": "46 cromosomas.",
+              "C": "23 cromosomas.",
+              "D": "12 cromosomas."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 95,
+            "topic": "4.2.3",
+            "topic_name": "Mutaciones",
+            "text": "Las mutaciones que no afectan la supervivencia del organismo se denominan",
+            "options": {
+              "A": "letales.",
+              "B": "beneficiosas.",
+              "C": "neutras.",
+              "D": "cromosómicas."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 96,
+            "topic": "4.3",
+            "topic_name": "Ingeniería genética",
+            "text": "La técnica que permite cortar y unir fragmentos de ADN de diferentes organismos para crear combinaciones nuevas se denomina",
+            "options": {
+              "A": "clonación reproductiva.",
+              "B": "tecnología del ADN recombinante.",
+              "C": "electroforesis.",
+              "D": "reacción en cadena de la polimerasa."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 97,
+            "topic": "5.2.2",
+            "topic_name": "Adaptación",
+            "text": "El proceso mediante el cual las poblaciones se ajustan a las condiciones de su ambiente a lo largo de generaciones se denomina",
+            "options": {
+              "A": "mutación.",
+              "B": "migración.",
+              "C": "adaptación.",
+              "D": "especiación."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 98,
+            "topic": "5.3",
+            "topic_name": "Estructuras vestigiales",
+            "text": "Las estructuras que provienen de un ancestro común pero que desempeñan funciones diferentes en distintas especies se denominan",
+            "options": {
+              "A": "vestigiales.",
+              "B": "análogas.",
+              "C": "homólogas.",
+              "D": "convergentes."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 99,
+            "topic": "6.1",
+            "topic_name": "Ecosistema",
+            "text": "En un ecosistema, los organismos que descomponen la materia orgánica muerta y la devuelven al suelo en forma de nutrientes se denominan",
+            "options": {
+              "A": "productores.",
+              "B": "consumidores primarios.",
+              "C": "consumidores secundarios.",
+              "D": "descomponedores."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 100,
+            "topic": "6.3",
+            "topic_name": "Tecnologías limpias",
+            "text": "La producción de biocombustibles a partir de desechos agrícolas es un ejemplo de",
+            "options": {
+              "A": "ingeniería genética.",
+              "B": "biorremediación.",
+              "C": "biotecnología.",
+              "D": "bioética."
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Historia Universal",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 101,
+            "topic": "1.2",
+            "topic_name": "Caída de Bizancio",
+            "text": "La caída de Bizancio marcó el fin",
+            "options": {
+              "A": "de la Edad Antigua.",
+              "B": "de la Edad Media.",
+              "C": "del Humanismo.",
+              "D": "del Renacimiento."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 102,
+            "topic": "2.2.4",
+            "topic_name": "Revolución Industrial",
+            "text": "Los cambios tecnológicos que se produjeron durante la Revolución Industrial fueron",
+            "options": {
+              "A": "la aplicación de energía mecánica y la explotación del acero.",
+              "B": "la utilización de la electricidad y el aprovechamiento industrial del carbón.",
+              "C": "el uso de máquinas en la producción textil y el incremento en la producción de hierro.",
+              "D": "el fortalecimiento industrial de la siderurgia y la revitalización en la producción de la agricultura."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 103,
+            "topic": "3.3",
+            "topic_name": "Nacionalismo en el siglo XIX",
+            "text": "Países que durante la segunda mitad del siglo XIX surgieron como estados independientes a partir del nacionalismo y de la unión comercial.",
+            "options": {
+              "A": "Inglaterra y Francia.",
+              "B": "Rusia y Turquía.",
+              "C": "Italia y Alemania.",
+              "D": "Alemania y Rusia."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 104,
+            "topic": "4.2",
+            "topic_name": "Imperialismo europeo",
+            "text": "La búsqueda de materias primas y la expansión del mercado mundial impulsaron",
+            "options": {
+              "A": "el imperialismo europeo.",
+              "B": "el movimiento obrero.",
+              "C": "la Revolución Industrial.",
+              "D": "la Revolución Agrícola."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 105,
+            "topic": "5.2",
+            "topic_name": "Primera Guerra Mundial",
+            "text": "Una consecuencia de la Primera Guerra Mundial fue",
+            "options": {
+              "A": "la emergencia de Estados Unidos como líder económico mundial.",
+              "B": "el surgimiento de corrientes fascistas en Italia, Alemania y Japón.",
+              "C": "el establecimiento de la Organización de las Naciones Unidas.",
+              "D": "la división de Alemania entre los vencedores capitalistas y socialistas."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 106,
+            "topic": "6.1",
+            "topic_name": "Crisis de 1929",
+            "text": "¿Cuál fue una consecuencia de la crisis económica de 1929?",
+            "options": {
+              "A": "Descenso del desempleo.",
+              "B": "Consolidación de las democracias europeas.",
+              "C": "Fortalecimiento del totalitarismo.",
+              "D": "Intervencionismo norteamericano en América Latina."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 107,
+            "topic": "7.2",
+            "topic_name": "Conferencia de Potsdam",
+            "text": "Al finalizar la Segunda Guerra Mundial en la conferencia de __________, se acordó la desmilitarización de Alemania y su división en cuatro zonas de ocupación.",
+            "options": {
+              "A": "Yalta",
+              "B": "Casablanca",
+              "C": "Potsdam",
+              "D": "Teherán"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 108,
+            "topic": "8.1",
+            "topic_name": "Guerra Fría – Bloques",
+            "text": "La OTAN, el Plan Marshall y el apoyo a regímenes democrático liberales caracterizan al bloque __________; en tanto que el bloque __________ se distingue por el Pacto de Varsovia, la Kominform y la Comecon.",
+            "options": {
+              "A": "socialista — oriental",
+              "B": "socialista — capitalista",
+              "C": "capitalista — occidental",
+              "D": "capitalista — socialista"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 109,
+            "topic": "8.2",
+            "topic_name": "Guerra Fría – Conflictos",
+            "text": "La revuelta obrera de Berlín y la Crisis de los Misiles en Cuba fueron conflictos que se presentaron durante la",
+            "options": {
+              "A": "Guerra de Crimea.",
+              "B": "Gran Guerra.",
+              "C": "Guerra Fría.",
+              "D": "Guerra del Bósforo."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 110,
+            "topic": "9.1",
+            "topic_name": "Mundo unipolar",
+            "text": "Una característica del mundo unipolar es",
+            "options": {
+              "A": "el establecimiento del sistema económico socialista.",
+              "B": "la globalización del neoliberalismo.",
+              "C": "la estabilidad económica en el mundo.",
+              "D": "El debilitamiento del neocolonialismo."
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Historia de México",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 111,
+            "topic": "1.2",
+            "topic_name": "Conquista de México",
+            "text": "Mientras que __________ participó en la conquista militar de México, __________ se ocupó de la conquista espiritual.",
+            "options": {
+              "A": "Juan de Zumárraga — Jerónimo de Aguilar",
+              "B": "Antonio de Mendoza — Toribio de Benavente",
+              "C": "Pedro de Alvarado — Bernardino de Sahagún",
+              "D": "Bartolomé de Olmedo — Cristóbal de Olid"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 112,
+            "topic": "2.1",
+            "topic_name": "Independencia de la Nueva España",
+            "text": "Una de las causas internas de la Independencia de la Nueva España fue",
+            "options": {
+              "A": "Reformas Borbónicas.",
+              "B": "Expulsión jesuita.",
+              "C": "Invasión Napoleónica.",
+              "D": "Nacionalismo criollo."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 113,
+            "topic": "3.3",
+            "topic_name": "Banco de Avío",
+            "text": "El banco de Avío tenía como propósito",
+            "options": {
+              "A": "impulsar la industrialización en el país.",
+              "B": "otorgar créditos para el desarrollo agrícola.",
+              "C": "nacionalizar los bienes de manos muertas.",
+              "D": "establecer la suspensión de la deuda externa."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 114,
+            "topic": "4.1",
+            "topic_name": "Revolución de Ayutla",
+            "text": "Con los gobiernos surgidos de la Revolución de Ayutla se establecieron los",
+            "options": {
+              "A": "conceptos conservadores de gobierno.",
+              "B": "principios de la teocracia liberal.",
+              "C": "conceptos del Estado centralista.",
+              "D": "principios liberales en el gobierno."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 115,
+            "topic": "5.2",
+            "topic_name": "Porfiriato",
+            "text": "En materia económica, el gobierno de Porfirio Díaz fue criticado por",
+            "options": {
+              "A": "las políticas de nacionalización en la minería.",
+              "B": "la crisis que se generó en el país.",
+              "C": "la prohibición a la inversión privada.",
+              "D": "las concesiones a los inversionistas extranjeros."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 116,
+            "topic": "6.3",
+            "topic_name": "Constitución de 1917",
+            "text": "Uno de los profundos cambios económicos que incluyó la Constitución de 1917 fue",
+            "options": {
+              "A": "el papel rector del Estado en el proceso económico.",
+              "B": "la gestión económica en manos de la iniciativa privada.",
+              "C": "la exclusión del Estado en la producción industrial.",
+              "D": "el apoyo estatal a las inversiones extranjeras en el país."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 117,
+            "topic": "7.1",
+            "topic_name": "Álvaro Obregón",
+            "text": "Presidente que formó su gabinete con militares destacados y restituyó a José Vasconcelos en 1921 en la Secretaría de Educación Pública.",
+            "options": {
+              "A": "Adolfo de la Huerta.",
+              "B": "Abelardo L. Rodríguez.",
+              "C": "Venustiano Carranza.",
+              "D": "Álvaro Obregón."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 118,
+            "topic": "7.3",
+            "topic_name": "Plan Sexenal",
+            "text": "La trascendencia histórica del Plan Sexenal se debe principalmente a que",
+            "options": {
+              "A": "suscribió la paz entre las facciones revolucionarias.",
+              "B": "limitó el poder del presidente de la República.",
+              "C": "sirvió de programa de gobierno a Lázaro Cárdenas.",
+              "D": "permitió la reelección de Álvaro Obregón."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 119,
+            "topic": "8.1",
+            "topic_name": "Gobierno de Manuel Ávila Camacho",
+            "text": "Acontecimiento ocurrido durante el gobierno de Manuel Ávila Camacho.",
+            "options": {
+              "A": "La aplicación de la política de Unidad Nacional.",
+              "B": "El destierro de Plutarco Elías Calles.",
+              "C": "La huelga de los ferrocarrileros.",
+              "D": "El movimiento de los maestros."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 120,
+            "topic": "8.4",
+            "topic_name": "TLCAN",
+            "text": "Por medio del Tratado de Libre Comercio de América del Norte se estableció la",
+            "options": {
+              "A": "renegociación de la deuda externa de México.",
+              "B": "elevación de impuestos en las materias primas.",
+              "C": "eliminación de aranceles entre los países firmantes.",
+              "D": "igualdad de precios de mercancías entre los miembros."
+            },
+            "answer": "C"
+          }
+        ]
+      }
+    ]
+  }
+}

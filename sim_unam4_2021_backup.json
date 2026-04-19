@@ -1,0 +1,1639 @@
+{
+  "exam": {
+    "title": "Simulacro — Examen de Ingreso a la Licenciatura UNAM Área 4",
+    "group": "Universidad",
+    "date": "2026-04-18",
+    "version": "1.0",
+    "total_questions": 120,
+    "students": [
+      "Yuri",
+      "Esme"
+    ],
+    "instructions": "Selecciona la opción correcta para cada pregunta. No se permite el uso de calculadora.",
+    "sections": [
+      {
+        "subject": "Física",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 1,
+            "topic": "1.1",
+            "topic_name": "Movimiento rectilíneo uniforme",
+            "text": "¿Cuál de los siguientes casos ejemplifica un movimiento rectilíneo uniforme?",
+            "options": {
+              "A": "Un auto que frena paulatinamente hasta detenerse.",
+              "B": "Una manzana cayendo en línea recta desde su árbol.",
+              "C": "Un tren que avanza en línea recta a razón de 2 m., cada segundo.",
+              "D": "Un auto que frena intempestivamente hasta detenerse."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 2,
+            "topic": "2.8",
+            "topic_name": "Equilibrio rotacional",
+            "text": "Un equilibrista utiliza una barra para poder caminar con mayor facilidad sobre una cuerda floja. En este ejemplo el equilibrio rotacional se da cuando",
+            "options": {
+              "A": "la barra pesa lo mismo que el equilibrista por lo que ambos se compensan.",
+              "B": "el equilibrista coloca verticalmente la barra produciendo una torca en el extremo.",
+              "C": "el equilibrista desplaza la barra hacia adelante lo que provoca un avance.",
+              "D": "la barra horizontalmente produce una torca del lado derecho que equilibra la del lado izquierdo."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 3,
+            "topic": "3.5",
+            "topic_name": "Energía cinética y potencial",
+            "text": "Una bala de cañón de 7.0 kg se dispara verticalmente hacia arriba con una rapidez de 120 $\\frac{m}{s}$. ¿Cuánta energía cinética $E_c$ tiene al salir y cuánta energía potencial $E_p$ tiene en el punto más alto de la trayectoria?",
+            "options": {
+              "A": "$E_c = 50{,}400$ J − $E_p = 50{,}400$ J",
+              "B": "$E_c = 420$ J − $E_p = 420$ J",
+              "C": "$E_c = 50{,}400$ J − $E_p = 0$ J",
+              "D": "$E_c = 420$ J − $E_p = 0$ J"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 4,
+            "topic": "4.1.3",
+            "topic_name": "Conversión Celsius a Kelvin",
+            "text": "Para convertir un valor de temperatura Celsius $T_C$ a su valor equivalente en la escala Kelvin $T_K$ de temperaturas, se emplea la expresión",
+            "options": {
+              "A": "$T_K = \\frac{(T_C - 32)}{1.8}$",
+              "B": "$T_K = T_C + 273$",
+              "C": "$T_K = T_C - 273$",
+              "D": "$T_K = 1.8 (T_C + 273)$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 5,
+            "topic": "4.1.4",
+            "topic_name": "Capacidad térmica específica",
+            "text": "A la cantidad de calor que necesita un gramo de una sustancia para elevar su temperatura un grado Celsius, se le conoce como",
+            "options": {
+              "A": "capacidad térmica.",
+              "B": "calor latente de fusión.",
+              "C": "calor latente de vaporización.",
+              "D": "capacidad térmica específica."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 6,
+            "topic": "5.1",
+            "topic_name": "Longitud de onda",
+            "text": "Una cuerda está atada en un extremo a un punto fijo y en el otro a un vibrador, de manera que se produce un tren de ondas, como el que se muestra en la figura. ¿Cuál es la longitud de onda de la onda estacionaria?",
+            "options": {
+              "A": "$4.5 \\ \\frac{cm}{ciclo}$",
+              "B": "$90 \\ \\frac{cm}{ciclo}$",
+              "C": "$9 \\ \\frac{cm}{ciclo}$",
+              "D": "$18 \\ \\frac{cm}{ciclo}$"
+            },
+            "answer": "D",
+            "image": "/imagenes_area4_2021/q6_onda.png"
+          },
+          {
+            "id": 7,
+            "topic": "6.4.1",
+            "topic_name": "Resistencia total en circuitos",
+            "text": "Determina la resistencia total del circuito que se representa en la imagen.",
+            "options": {
+              "A": "$2.41 \\ \\Omega$",
+              "B": "$4.4 \\ \\Omega$",
+              "C": "$12 \\ \\Omega$",
+              "D": "$1.90 \\ \\Omega$"
+            },
+            "answer": "B",
+            "image": "/imagenes_area4_2021/q7_circuito.png"
+          },
+          {
+            "id": 8,
+            "topic": "7.1.1",
+            "topic_name": "Presión atmosférica",
+            "text": "La presión atmosférica en la cima del Everest disminuye comparada con la del nivel del mar porque la",
+            "options": {
+              "A": "cima siempre está sujeta a fuertes vientos ascendentes.",
+              "B": "altura de la capa de aire que soporta la cima es menor.",
+              "C": "presión hidrostática del mar influye.",
+              "D": "densidad del aire soportada es mayor."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 9,
+            "topic": "8.4",
+            "topic_name": "Dualidad onda-partícula",
+            "text": "El fenómeno que por primera vez puso de manifiesto el carácter dual onda – partícula de la luz fue",
+            "options": {
+              "A": "el efecto foto eléctrico.",
+              "B": "la producción de rayos equis.",
+              "C": "el descubrimiento de los rayos catódicos.",
+              "D": "la radioactividad natural."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 10,
+            "topic": "9.1.1",
+            "topic_name": "Modelo atómico de Thomson",
+            "text": "El modelo de Thomson establece que",
+            "options": {
+              "A": "los electrones son partículas con carga negativa distribuidos uniformemente dentro de un medio homogéneo de carga positiva, haciendo que el átomo sea eléctricamente neutro.",
+              "B": "existe un átomo formado por una corteza constituida por electrones que giran alrededor de un núcleo donde se concentra la carga eléctrica positiva y la masa del átomo.",
+              "C": "los electrones se encuentran en regiones específicas a diferentes distancias del núcleo, vibrando alrededor de éste como lo hacen los planetas alrededor del Sol.",
+              "D": "existe un átomo distinto para cada elemento cuyas masas y tamaños son diferentes, que se pueden combinar en diferentes proporciones para formar más de un compuesto."
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Literatura",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 11,
+            "topic": "1.3",
+            "topic_name": "Características del texto periodístico",
+            "text": "Dar información, emitir opinión y persuadir al lector son características del texto",
+            "options": {
+              "A": "periodístico.",
+              "B": "científico.",
+              "C": "poético.",
+              "D": "literario."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 12,
+            "topic": "1.4.3",
+            "topic_name": "Personajes del texto dramático",
+            "text": "Personaje del texto dramático que realiza acciones prescindibles, pues sirven para crear ambientes y darle verosimilitud a la trama.",
+            "options": {
+              "A": "Principal.",
+              "B": "Antagonista.",
+              "C": "Incidental.",
+              "D": "Secundario."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 13,
+            "topic": "1.5.2.4",
+            "topic_name": "Figuras retóricas: antítesis",
+            "text": "¿Qué figura retórica representa la siguiente frase?\n\nAyer naciste y morirás mañana.\n\nLuís de Góngora",
+            "options": {
+              "A": "Sinestesia.",
+              "B": "Paralelismo.",
+              "C": "Prosopopeya.",
+              "D": "Antítesis."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 14,
+            "topic": "2.2",
+            "topic_name": "Corrientes literarias",
+            "text": "El término corriente literaria se define como",
+            "options": {
+              "A": "un grupo de autores que comparten idioma, nacionalidad y un espacio físico, como por ejemplo la escuela, donde desarrollan una ideología.",
+              "B": "una clasificación de escritores que comparten edad y circunstancias históricas, por lo tanto, las mismas temáticas al escribir.",
+              "C": "un conjunto de características en la temática y forma de escribir de un grupo de autores, en relación con las condiciones sociales de una determinada época.",
+              "D": "una suma de literatos de la misma nacionalidad relacionados por una serie de temáticas y estilos, en un periodo aproximado de quince años."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 15,
+            "topic": "2.2.1",
+            "topic_name": "Autores del realismo",
+            "text": "Fueron autores del realismo en España y México.",
+            "options": {
+              "A": "Juan Ramón Jiménez y Enrique González Martínez.",
+              "B": "Miguel de Cervantes Saavedra y Juan Ruiz de Alarcón",
+              "C": "José de Espronceda y Manuel Payno.",
+              "D": "Benito Pérez Galdós y Rafael Delgado."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 16,
+            "topic": "2.2.2",
+            "topic_name": "Literatura contemporánea",
+            "text": "Elige la opción que resume las características de la literatura contemporánea.",
+            "options": {
+              "A": "Aplica un alto sentido del mundo interior de los personajes y propone otro sentido de lo que significa la realidad y el tiempo.",
+              "B": "Presenta dos vertientes: una liberadora, que alienta la rebeldía y las luchas de independencia; y otra que se refugia en lo melancólico.",
+              "C": "Reacciona contra las corrientes académicas y románticas que le precedieron durante la primera mitad del siglo XIX.",
+              "D": "Hace énfasis en lo moral y lo social de la actuación humana, con el objetivo de combatir prejuicios mediante el conocimiento y el estudio."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 17,
+            "topic": "2.2.2",
+            "topic_name": "Boom latinoamericano",
+            "text": "Autor representativo del llamado \"Boom\" latinoamericano.",
+            "options": {
+              "A": "Julio Cortázar.",
+              "B": "María Luisa Bombal.",
+              "C": "Ana Lydia Vega.",
+              "D": "Jorge Volpi."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 18,
+            "topic": "2.3.2",
+            "topic_name": "Características de la novela",
+            "text": "La novela pertenece al género __________, está escrita en __________ y suele tener una estructura __________.",
+            "options": {
+              "A": "narrativo — prosa — compleja",
+              "B": "épico — verso — complicada",
+              "C": "dramático — verso — escueta",
+              "D": "lírico — prosa — simple"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 19,
+            "topic": "3.2",
+            "topic_name": "Fichas bibliográficas",
+            "text": "El siguiente ejemplo se refiere a una ficha\n\nFuentes, C. (1958). La región más transparente. México: Fondo de Cultura Económica.",
+            "options": {
+              "A": "bibliográfica.",
+              "B": "ciberográfica.",
+              "C": "hemerográfica.",
+              "D": "catalográfica."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 20,
+            "topic": "3.3",
+            "topic_name": "Tipos de fichas de trabajo",
+            "text": "¿De qué tipo es la siguiente ficha?\n\nTítulo del libro consultado: Rimas, rondas y canciones.\nAutores: Aline Trejo Rivas, Alma Rosa Pirres.\nEdición: 1ª.\nCiudad: México.\nEditorial: Editores Mexicanos Unidos.\nAño: 2007.\nPáginas: 94.\n\nConformado por apenas 92 páginas este texto de divulgación (sin mayor aparato crítico) tiene, sin embargo, como mérito principal, presentar (en su sección \"Rondas\") versiones tradicionales, extrañas o antiguas de canciones infantiles que hoy se consideran de moda. Ejemplo de ello es una versión de la muy conocida \"Chuchugua\", que se encuentra en las páginas 63–64.",
+            "options": {
+              "A": "Comentario.",
+              "B": "Textual.",
+              "C": "Paráfrasis.",
+              "D": "Resumen."
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Química",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 21,
+            "topic": "1.2",
+            "topic_name": "Modelo de Rutherford",
+            "text": "Fenómeno que antecede y da pauta al modelo de Rutherford con respecto a la estructura del átomo.",
+            "options": {
+              "A": "Radiación alfa.",
+              "B": "Cuantización de la energía.",
+              "C": "Espectros de emisión.",
+              "D": "Electrones en orbitales."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 22,
+            "topic": "1.3",
+            "topic_name": "Tabla periódica de Mendeleev",
+            "text": "La clasificación de elementos que dio origen a la tabla periódica de Mendeleev se basó en",
+            "options": {
+              "A": "el orden creciente de sus números atómicos.",
+              "B": "su reactividad frente al agua.",
+              "C": "su facilidad de oxidarse en el aire.",
+              "D": "el orden creciente de sus masas atómicas."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 23,
+            "topic": "1.4",
+            "topic_name": "Nomenclatura química",
+            "text": "La fórmula del clorato de potasio es",
+            "options": {
+              "A": "KClO",
+              "B": "$KClO_2$",
+              "C": "$KClO_3$",
+              "D": "$KClO_4$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 24,
+            "topic": "1.5.1",
+            "topic_name": "Mol y número de Avogadro",
+            "text": "Número de moléculas que hay en 3 mol de agua.",
+            "options": {
+              "A": "$9.033 \\times 10^{23}$",
+              "B": "$3.044 \\times 10^{23}$",
+              "C": "$18.066 \\times 10^{23}$",
+              "D": "$21.077 \\times 10^{23}$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 25,
+            "topic": "1.5.2",
+            "topic_name": "Masa molar",
+            "text": "¿Cuántos gramos de KCl hay en 0.1 mol?",
+            "options": {
+              "A": "0.75",
+              "B": "7.5",
+              "C": "75",
+              "D": "750"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 26,
+            "topic": "2.1.1",
+            "topic_name": "Enlace puente de hidrógeno",
+            "text": "Al enlace que une a las moléculas de agua se le denomina",
+            "options": {
+              "A": "covalente polar.",
+              "B": "iónico.",
+              "C": "coordinado.",
+              "D": "puente de hidrógeno."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 27,
+            "topic": "2.4.2",
+            "topic_name": "pH de disoluciones",
+            "text": "Al agregar unas gotas de vinagre con un valor de pH = 3.5 a un litro de agua pura, el pH de la disolución puede ser",
+            "options": {
+              "A": "muy ácido.",
+              "B": "ligeramente ácido.",
+              "C": "neutro.",
+              "D": "ligeramente básico."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 28,
+            "topic": "3.3.3",
+            "topic_name": "Óxidos ácidos",
+            "text": "En la siguiente reacción, ¿x a qué corresponde?\n$x + O_2 \\rightarrow$ óxido ácido",
+            "options": {
+              "A": "Sodio.",
+              "B": "Nitrógeno.",
+              "C": "Magnesio.",
+              "D": "Calcio"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 29,
+            "topic": "4.3",
+            "topic_name": "Proteínas",
+            "text": "Biomolécula responsable de la construcción del tejido muscular y es un polímero de aminoácidos.",
+            "options": {
+              "A": "Vitamina.",
+              "B": "Proteína.",
+              "C": "Triglicérido.",
+              "D": "Polinucleótido."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 30,
+            "topic": "5.1",
+            "topic_name": "Entalpía de reacción",
+            "text": "A partir de los siguientes valores de entalpía de reacción, indica el que representa el mayor desprendimiento de energía.",
+            "options": {
+              "A": "$\\Delta H° = -110.5 \\ \\frac{kJ}{mol}$",
+              "B": "$\\Delta H° = +33.2 \\ \\frac{kJ}{mol}$",
+              "C": "$\\Delta H° = +52.5 \\ \\frac{kJ}{mol}$",
+              "D": "$\\Delta H° = -395.7 \\ \\frac{kJ}{mol}$"
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Geografía",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 31,
+            "topic": "1.1",
+            "topic_name": "Relación hombre-naturaleza en Geografía",
+            "text": "Es un ejemplo de la relación hombre — naturaleza como objeto de estudio de la Geografía.",
+            "options": {
+              "A": "Los husos horarios son divisiones de la Tierra hechas en el siglo XIX.",
+              "B": "El clima se define por el promedio de las condiciones medias de la atmósfera.",
+              "C": "La corriente de Humboldt tiene relación con la gran riqueza pesquera de Perú.",
+              "D": "Las migraciones de las especies generadas por el cambio climático."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 32,
+            "topic": "1.3.1.2",
+            "topic_name": "Sierras de México",
+            "text": "Si vas de la Ciudad de México a Cuernavaca, la cadena montañosa que tienes que atravesar es la Sierra",
+            "options": {
+              "A": "de Guadalupe.",
+              "B": "Madre Occidental.",
+              "C": "Madre Oriental.",
+              "D": "Volcánica Transversal."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 33,
+            "topic": "1.3.1.3",
+            "topic_name": "Geografía de Asia",
+            "text": "Las condiciones geográficas de las zonas pobladas en Asia se caracterizan por",
+            "options": {
+              "A": "montañas y vegetación para la silvicultura.",
+              "B": "llanuras y agua superficial para la agricultura.",
+              "C": "depresiones y aguas subterráneas para la minería.",
+              "D": "mesetas y selvas para la explotación de maderas preciosas."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 34,
+            "topic": "1.3.2.4",
+            "topic_name": "Corrientes oceánicas",
+            "text": "Movimiento de agua oceánica que regula la temperatura del planeta y favorece la actividad pesquera.",
+            "options": {
+              "A": "Olas de oscilación.",
+              "B": "Corrientes frías.",
+              "C": "Olas de traslación.",
+              "D": "Mareas vivas."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 35,
+            "topic": "2.1.2",
+            "topic_name": "Recursos para la industria",
+            "text": "El __________ sirve para la industria pesada.",
+            "options": {
+              "A": "petróleo",
+              "B": "carbón",
+              "C": "zinc",
+              "D": "gas"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 36,
+            "topic": "2.2.1",
+            "topic_name": "Cambio climático global",
+            "text": "El cambio climático global es causado principalmente por",
+            "options": {
+              "A": "el derretimiento de glaciares.",
+              "B": "el aumento de la temperatura.",
+              "C": "la disminución del nivel marino.",
+              "D": "la desertificación de los suelos."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 37,
+            "topic": "2.3",
+            "topic_name": "Distribución poblacional de México",
+            "text": "En la distribución poblacional de México en el siglo XXI influye",
+            "options": {
+              "A": "la existencia de amplios litorales.",
+              "B": "el desarrollo de la frontera norte.",
+              "C": "la pesca en las costas del Golfo.",
+              "D": "el desarrollo petrolero del sureste."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 38,
+            "topic": "2.3.3",
+            "topic_name": "Migración internacional",
+            "text": "Los países desarrollados reciben un alto número de inmigrantes porque",
+            "options": {
+              "A": "cuentan con políticas de apoyo a la migración.",
+              "B": "presentan alta densidad de población.",
+              "C": "cuentan con abundantes recursos económicos.",
+              "D": "requieren mano de obra barata."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 39,
+            "topic": "2.5.1",
+            "topic_name": "Desintegración de estados-nación",
+            "text": "Una de las causas principales de la desintegración de los estados — nación es",
+            "options": {
+              "A": "la pugna por la explotación de los recursos naturales.",
+              "B": "la aplicación de políticas neoliberales.",
+              "C": "el cambio de sistema económico.",
+              "D": "el descontento social de las minorías étnicas y religiosas."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 40,
+            "topic": "2.6.3",
+            "topic_name": "Industria en México",
+            "text": "El corredor del Bajío es la principal área industrial __________ en México.",
+            "options": {
+              "A": "automotriz",
+              "B": "petroquímica",
+              "C": "maquiladora",
+              "D": "metalúrgica"
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Matemáticas",
+        "questions_count": 22,
+        "questions": [
+          {
+            "id": 41,
+            "topic": "1.1.2",
+            "topic_name": "División de fracciones",
+            "text": "¿Cuál es el resultado de dividir $\\frac{1}{10}$ entre $-\\frac{1}{2}$?",
+            "options": {
+              "A": "$-20$",
+              "B": "$-\\frac{1}{20}$",
+              "C": "$-\\frac{1}{5}$",
+              "D": "$-5$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 42,
+            "topic": "1.1.3",
+            "topic_name": "Raíces y potencias",
+            "text": "Calcula $\\sqrt{25^3}$",
+            "options": {
+              "A": "25",
+              "B": "125",
+              "C": "225",
+              "D": "625"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 43,
+            "topic": "2.3",
+            "topic_name": "Producto de polinomios",
+            "text": "Al realizar el siguiente producto de polinomios $(y - 1)(y + 2)$, resulta",
+            "options": {
+              "A": "$y^2 + y - 2$",
+              "B": "$y^2 - 2$",
+              "C": "$y^2 + 1$",
+              "D": "$y^2 + 2y - 1$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 44,
+            "topic": "2.4",
+            "topic_name": "Factorización de expresiones algebraicas",
+            "text": "Resuelve la siguiente operación algebraica.\n\n$\\frac{x^2 - 7x + 12}{(x^2 - 16)(x - 3)}$",
+            "options": {
+              "A": "$\\frac{1}{x - 3}$",
+              "B": "$\\frac{1}{x + 4}$",
+              "C": "$\\frac{x - 3}{x + 4}$",
+              "D": "$\\frac{x - 4}{x - 3}$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 45,
+            "topic": "3.3",
+            "topic_name": "Ecuación cuadrática: fórmula general",
+            "text": "Cuando se sustituyen los valores de la ecuación de segundo grado $3x^2 = 2x + 5$ en la fórmula\n\n$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$, los valores $a$, $b$ y $c$ son",
+            "options": {
+              "A": "$a = 3$, $b = 2$, $c = 5$",
+              "B": "$a = 3$, $b = -2$, $c = 5$",
+              "C": "$a = 3$, $b = 2$, $c = -5$",
+              "D": "$a = 3$, $b = -2$, $c = -5$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 46,
+            "topic": "4.1",
+            "topic_name": "Desigualdades lineales",
+            "text": "El conjunto solución de la desigualdad $-3x + 4 > -8$ es",
+            "options": {
+              "A": "$x \\in (\\frac{4}{3}, \\infty)$",
+              "B": "$x \\in (-9, \\infty)$",
+              "C": "$x \\in (-\\infty, \\frac{4}{3})$",
+              "D": "$x \\in (-\\infty, 4)$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 47,
+            "topic": "5.1.1",
+            "topic_name": "Sistemas de ecuaciones lineales",
+            "text": "Cinco cuadernos y ocho lapiceros cuestan \\$115; tres cuadernos y cinco lapiceros cuestan \\$70. ¿Cuál es el precio de cada cuaderno?",
+            "options": {
+              "A": "$15",
+              "B": "$10",
+              "C": "$13",
+              "D": "$12"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 48,
+            "topic": "6.1",
+            "topic_name": "Dominio de funciones polinomiales",
+            "text": "¿Cuál es el dominio de la siguiente función polinomial?\n\n$f(x) = x^3 + 2x^2 - 3x + 1$",
+            "options": {
+              "A": "$[-\\infty, \\infty]$",
+              "B": "$(-\\infty, 1)$",
+              "C": "$(-\\infty, \\infty)$",
+              "D": "$(-1, \\infty)$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 49,
+            "topic": "6.3",
+            "topic_name": "Gráficas de funciones",
+            "text": "La gráfica de $x^2 - 1 = y$ corresponde a una",
+            "options": {
+              "A": "recta.",
+              "B": "elipse.",
+              "C": "parábola.",
+              "D": "hipérbola."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 50,
+            "topic": "6.7",
+            "topic_name": "Operaciones con funciones",
+            "text": "Determina el resultado de $g(x) - f(x)$\n\nConsidera:\n$f(x) = 2x - 3y + 5$\n$g(x) = 7x + 5y - 11$",
+            "options": {
+              "A": "$9x + 2y - 6$",
+              "B": "$5x + 8y - 16$",
+              "C": "$5x - 8y + 16$",
+              "D": "$9x - 2y + 6$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 51,
+            "topic": "7.1.3",
+            "topic_name": "Trigonometría aplicada",
+            "text": "Un edificio hace una sombra como se muestra en la imagen. ¿Cuál es la altura del edificio?",
+            "options": {
+              "A": "$\\frac{4}{\\sqrt{3}}$ m",
+              "B": "2 m",
+              "C": "8 m",
+              "D": "$\\frac{\\sqrt{3}}{4}$ m"
+            },
+            "answer": "A",
+            "image": "/imagenes_area4_2021/q51_edificio.png"
+          },
+          {
+            "id": 52,
+            "topic": "7.1.3",
+            "topic_name": "Trigonometría: altura con tangente",
+            "text": "Un poste proyecta una sombra de 1.5 m de longitud en el momento en que el ángulo de elevación del sol es de 60°. ¿Cuál es la altura del poste?\n\nConsidera:\nSen 60° = $\\frac{\\sqrt{3}}{2}$\nCos 60° = $\\frac{1}{2}$\nTan 60° = $\\sqrt{3}$",
+            "options": {
+              "A": "$\\frac{3\\sqrt{3}}{2}$ m",
+              "B": "$\\frac{3}{4}$ m",
+              "C": "$\\frac{3}{8}$ m",
+              "D": "$\\frac{3\\sqrt{3}}{4}$ m"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 53,
+            "topic": "8.1",
+            "topic_name": "Dominio de función logarítmica",
+            "text": "Determina el dominio de la siguiente función.\n\n$f(x) = \\log(x)$",
+            "options": {
+              "A": "$[0, \\infty]$",
+              "B": "$(0, \\infty]$",
+              "C": "$[0, \\infty)$",
+              "D": "$(0, \\infty)$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 54,
+            "topic": "8.1",
+            "topic_name": "Dominio de función logarítmica",
+            "text": "Determina el dominio de la función\n$y = \\log(x - 2)$",
+            "options": {
+              "A": "$(2, \\infty)$",
+              "B": "$[2, \\infty)$",
+              "C": "$(-\\infty, 2)$",
+              "D": "$(-\\infty, 2]$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 55,
+            "topic": "9.1",
+            "topic_name": "Distancia entre dos puntos",
+            "text": "Calcula la distancia entre los puntos P (−1, 1) y Q (1, −1)",
+            "options": {
+              "A": "$\\sqrt{8}$",
+              "B": "2",
+              "C": "$\\sqrt{2}$",
+              "D": "4"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 56,
+            "topic": "9.1",
+            "topic_name": "Distancia entre dos puntos",
+            "text": "¿Cuál es la distancia entre los puntos A (1, 1) y B (−1, −1) en el plano cartesiano?",
+            "options": {
+              "A": "$2\\sqrt{2}$",
+              "B": "$4\\sqrt{2}$",
+              "C": "2",
+              "D": "4"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 57,
+            "topic": "10.2",
+            "topic_name": "Ecuación de la circunferencia",
+            "text": "¿Cuál de las siguientes ecuaciones corresponde a una circunferencia con centro en el origen y radio 2?",
+            "options": {
+              "A": "$x^2 + y^2 - 4 = 0$",
+              "B": "$x^2 + y^2 - 2 = 0$",
+              "C": "$x^2 - y^2 - 2 = 0$",
+              "D": "$x^2 - y^2 - 4 = 0$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 58,
+            "topic": "10.2",
+            "topic_name": "Ecuación de la circunferencia",
+            "text": "Ecuación que corresponde a una circunferencia de radio = $\\sqrt{2}$ y centro en C (0, 0)",
+            "options": {
+              "A": "$x^2 - y^2 = \\sqrt{2}$",
+              "B": "$x^2 + y^2 = \\sqrt{2}$",
+              "C": "$x^2 - y^2 = 2$",
+              "D": "$x^2 + y^2 = 2$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 59,
+            "topic": "11.1",
+            "topic_name": "Cónicas: parábola",
+            "text": "La expresión $x = 4y^2 + 8y + 2$, geométricamente representa una",
+            "options": {
+              "A": "circunferencia.",
+              "B": "hipérbola.",
+              "C": "elipse.",
+              "D": "parábola."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 60,
+            "topic": "12.5",
+            "topic_name": "Centro de una elipse",
+            "text": "Determina el centro de una elipse con la siguiente ecuación.\n\n$\\frac{(x - 2)^2}{144} + \\frac{(y - 1)^2}{64} = 1$",
+            "options": {
+              "A": "(8, 12)",
+              "B": "(2, 1)",
+              "C": "(1, 2)",
+              "D": "(12, 8)"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 61,
+            "topic": "13.1",
+            "topic_name": "Definición de hipérbola",
+            "text": "Lugar geométrico en el plano cartesiano en el que el valor absoluto de la diferencia de sus distancias a dos puntos fijos en el mismo plano resulta siempre igual a una constante, positiva y menor que la distancia entre dichos puntos fijos.",
+            "options": {
+              "A": "Circunferencia.",
+              "B": "Parábola.",
+              "C": "Elipse.",
+              "D": "Hipérbola."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 62,
+            "topic": "14.3",
+            "topic_name": "Clasificación de cónicas",
+            "text": "¿Qué tipo de cónica representa la ecuación $y^2 + 4x + 2y + 16 = 0$?",
+            "options": {
+              "A": "Parábola con vértice en el origen.",
+              "B": "Elipse con centro fuera del origen.",
+              "C": "Elipse con centro en el origen.",
+              "D": "Parábola con vértice fuera del origen."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Español",
+        "questions_count": 18,
+        "questions": [
+          {
+            "id": 63,
+            "topic": "1.2",
+            "topic_name": "Función apelativa de la lengua",
+            "text": "Identifica la función de la lengua que predomina en el siguiente texto.\n\nNovedades de febrero y marzo:\nLiteratura, teatro, música, ciencia y mucho más...\nVisita, descarga, escucha y disfruta.\nwww.descargacultura.unam.mx",
+            "options": {
+              "A": "Metalingüística.",
+              "B": "Poética.",
+              "C": "Apelativa.",
+              "D": "Expresiva."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 64,
+            "topic": "1.3",
+            "topic_name": "Función poética de la lengua",
+            "text": "A partir del fragmento, elige la opción que ejemplifique la función poética de la lengua.\n\nSu luna de miel fue un largo escalofrío. Rubia, angelical y tímida, el carácter duro de su marido heló sus soñadas niñerías de novia. Ella lo quería mucho, sin embargo, a veces con ligero estremecimiento cuando volviendo de noche juntos por la calle, echaba una furtiva mirada a la alta estatura de Jordán, mudo desde hacía una hora. Él por su parte, la amaba profundamente, sin darlo a conocer.\n\nDurante tres meses –se había casado en abril– vivieron una dicha especial. Sin duda hubiera ella deseado menos severidad en ese rígido cielo de amor, más expansiva e incauta ternura; pero el impasible semblante de su marido la contenía siempre.",
+            "options": {
+              "A": "Vivieron una dicha especial.",
+              "B": "Rubia, angelical y tímida.",
+              "C": "Su luna de miel fue un largo escalofrío.",
+              "D": "La amaba profundamente, sin darlo a conocer."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 65,
+            "topic": "2.2",
+            "topic_name": "Formas del discurso: narrativa",
+            "text": "Identifica la forma del discurso que predomina en el siguiente ejemplo.\n\nPor fin pensó que la única forma de conocer su propio valor estaba en la opinión de la gente y comenzó a peinarse y a vestirse para saber si los demás la aprobaban y reconocían que era una rana auténtica.",
+            "options": {
+              "A": "Argumentativa.",
+              "B": "Descriptiva.",
+              "C": "Emotiva.",
+              "D": "Narrativa."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 66,
+            "topic": "2.3",
+            "topic_name": "Discurso argumentativo",
+            "text": "¿Qué forma del discurso predomina en el siguiente párrafo?\n\nSi bien la educación básica no alcanza una cobertura universal en los estratos de menores ingresos, debe ponerse énfasis en los aspectos de calidad y equidad, otorgando mayores oportunidades educativas a los niños, niñas y adolescentes de los estratos bajos y medios. Ello implica dar continuidad al proceso educativo, mejorar la eficiencia interna del sistema – reduciendo el ingreso tardío y la reprobación–, y llevar a cabo políticas tendientes a aumentar la educación secundaria.",
+            "options": {
+              "A": "Sintomática.",
+              "B": "Expositiva.",
+              "C": "Argumentativa.",
+              "D": "Descriptiva."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 67,
+            "topic": "3.2",
+            "topic_name": "Idea principal del texto",
+            "text": "Lee el siguiente texto y contesta las siguientes 5 preguntas.\n\nEl ser humano ha generado 8.300 millones de toneladas de plástico\n\n(1) Los seres humanos hemos producido 8.300 millones de toneladas de plástico desde que su producción empezó a generalizarse en los años 50, una cifra que resulta equivalente al peso de 80 millones de ballenas azules o 1.000 millones de elefantes.\n\n(2) Así lo cuantifica un estudio publicado en la revista Science Advances cuyo objetivo era analizar de manera objetiva la producción, el uso y el destino final de todos los plásticos fabricados por el hombre. Y las cifras resultan apabullantes.\n\n(3) El plástico producido a lo largo de la historia empezó a generalizarse hacia 1950 y desde entonces no ha dejado de crecer. Si en 2015 se produjeron 380 millones de toneladas, las proyecciones indican que para 2050, habrá 12.000 millones de toneladas de plástico en vertederos o en el medio ambiente.\n\n(4) La vida útil de los plásticos es muy corta. La mayor parte de los producidos se utilizan en empaques, empaquetados. Los productos con mayor tiempo de vida son los de construcción.\n\n(5) El estudio señala que el 30% del plástico producido a lo largo de la historia sigue en uso y de los 5.800 millones de toneladas que ya no se usan, solo el 9% fue reciclado, el 12% se incineró y el 79% permanece acumulado en vertederos o en el medio ambiente.\n\n(6) \"La mayoría de los plásticos no son biodegradables, así que los residuos plásticos que los seres humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar de manera crítica acerca de los materiales que usamos y sobre nuestras prácticas de gestión de residuos\", asegura Jenna Jambeck, coautora del estudio e investigadora de la Universidad de Georgia.\n\nAdaptación del artículo de Cristina Sánchez, 2019.\n\n¿Cuál de las siguientes opciones corresponde a la idea principal del texto?",
+            "options": {
+              "A": "La vida útil del plástico es muy corta y su mayor mercado está en el sector del empaquetado.",
+              "B": "A partir de los años 50 ha crecido la fabricación a gran escala de productos hechos a base de plástico.",
+              "C": "El plástico producido en las últimas décadas se puede comparar con 80 millones de ballenas azules.",
+              "D": "Es importante aprender a gestionar los residuos plásticos porque son una gran amenaza en el futuro."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 68,
+            "topic": "3.3",
+            "topic_name": "Comprensión lectora",
+            "text": "El ser humano ha generado 8.300 millones de toneladas de plástico\n\n(1) Los seres humanos hemos producido 8.300 millones de toneladas de plástico desde que su producción empezó a generalizarse en los años 50, una cifra que resulta equivalente al peso de 80 millones de ballenas azules o 1.000 millones de elefantes.\n\n(2) Así lo cuantifica un estudio publicado en la revista Science Advances cuyo objetivo era analizar de manera objetiva la producción, el uso y el destino final de todos los plásticos fabricados por el hombre. Y las cifras resultan apabullantes.\n\n(3) El plástico producido a lo largo de la historia empezó a generalizarse hacia 1950 y desde entonces no ha dejado de crecer. Si en 2015 se produjeron 380 millones de toneladas, las proyecciones indican que para 2050, habrá 12.000 millones de toneladas de plástico en vertederos o en el medio ambiente.\n\n(4) La vida útil de los plásticos es muy corta. La mayor parte de los producidos se utilizan en empaques, empaquetados. Los productos con mayor tiempo de vida son los de construcción.\n\n(5) El estudio señala que el 30% del plástico producido a lo largo de la historia sigue en uso y de los 5.800 millones de toneladas que ya no se usan, solo el 9% fue reciclado, el 12% se incineró y el 79% permanece acumulado en vertederos o en el medio ambiente.\n\n(6) \"La mayoría de los plásticos no son biodegradables, así que los residuos plásticos que los seres humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar de manera crítica acerca de los materiales que usamos y sobre nuestras prácticas de gestión de residuos\", asegura Jenna Jambeck, coautora del estudio e investigadora de la Universidad de Georgia.\n\nAdaptación del artículo de Cristina Sánchez, 2019.\n\nDe acuerdo al texto, las prácticas de gestión de residuos se refieren a que",
+            "options": {
+              "A": "con el paso del tiempo nos hemos hecho más dependientes del plástico sin importar las consecuencias ocasionadas al ambiente.",
+              "B": "se deben crear más grupos de investigación que examinen las características de los desechos orgánicos.",
+              "C": "debemos conocer las características de la basura que generamos para clasificarla y reciclarla adecuadamente.",
+              "D": "los bajos precios del plástico generan una gran cantidad de desechos que tardan muchos años en biodegradarse."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 69,
+            "topic": "3.4",
+            "topic_name": "Inferencia a partir del texto",
+            "text": "El ser humano ha generado 8.300 millones de toneladas de plástico\n\n(1) Los seres humanos hemos producido 8.300 millones de toneladas de plástico desde que su producción empezó a generalizarse en los años 50, una cifra que resulta equivalente al peso de 80 millones de ballenas azules o 1.000 millones de elefantes.\n\n(2) Así lo cuantifica un estudio publicado en la revista Science Advances cuyo objetivo era analizar de manera objetiva la producción, el uso y el destino final de todos los plásticos fabricados por el hombre. Y las cifras resultan apabullantes.\n\n(3) El plástico producido a lo largo de la historia empezó a generalizarse hacia 1950 y desde entonces no ha dejado de crecer. Si en 2015 se produjeron 380 millones de toneladas, las proyecciones indican que para 2050, habrá 12.000 millones de toneladas de plástico en vertederos o en el medio ambiente.\n\n(4) La vida útil de los plásticos es muy corta. La mayor parte de los producidos se utilizan en empaques, empaquetados. Los productos con mayor tiempo de vida son los de construcción.\n\n(5) El estudio señala que el 30% del plástico producido a lo largo de la historia sigue en uso y de los 5.800 millones de toneladas que ya no se usan, solo el 9% fue reciclado, el 12% se incineró y el 79% permanece acumulado en vertederos o en el medio ambiente.\n\n(6) \"La mayoría de los plásticos no son biodegradables, así que los residuos plásticos que los seres humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar de manera crítica acerca de los materiales que usamos y sobre nuestras prácticas de gestión de residuos\", asegura Jenna Jambeck, coautora del estudio e investigadora de la Universidad de Georgia.\n\nAdaptación del artículo de Cristina Sánchez, 2019.\n\nLuego de leer el párrafo 6 se deduce que",
+            "options": {
+              "A": "las investigaciones sobre los daños que causa el plástico en el medio ambiente están encabezadas por especialistas estadounidenses.",
+              "B": "se deben tomar acciones para disminuir la producción cosmética, comercial e industrial del plástico a nivel mundial, a pesar de su bajo costo.",
+              "C": "el plástico ha aumentado considerablemente su producción a partir de los años 50 y sus residuos están acumulados en los vertederos o en el medio ambiente.",
+              "D": "el ser humano no tiene conocimiento sobre cómo debe reciclar el plástico porque no conoce sus características, por lo tanto, aumenta la contaminación ambiental."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 70,
+            "topic": "3.5",
+            "topic_name": "Comprensión de texto",
+            "text": "El ser humano ha generado 8.300 millones de toneladas de plástico\n\n(1) Los seres humanos hemos producido 8.300 millones de toneladas de plástico desde que su producción empezó a generalizarse en los años 50, una cifra que resulta equivalente al peso de 80 millones de ballenas azules o 1.000 millones de elefantes.\n\n(2) Así lo cuantifica un estudio publicado en la revista Science Advances cuyo objetivo era analizar de manera objetiva la producción, el uso y el destino final de todos los plásticos fabricados por el hombre. Y las cifras resultan apabullantes.\n\n(3) El plástico producido a lo largo de la historia empezó a generalizarse hacia 1950 y desde entonces no ha dejado de crecer. Si en 2015 se produjeron 380 millones de toneladas, las proyecciones indican que para 2050, habrá 12.000 millones de toneladas de plástico en vertederos o en el medio ambiente.\n\n(4) La vida útil de los plásticos es muy corta. La mayor parte de los producidos se utilizan en empaques, empaquetados. Los productos con mayor tiempo de vida son los de construcción.\n\n(5) El estudio señala que el 30% del plástico producido a lo largo de la historia sigue en uso y de los 5.800 millones de toneladas que ya no se usan, solo el 9% fue reciclado, el 12% se incineró y el 79% permanece acumulado en vertederos o en el medio ambiente.\n\n(6) \"La mayoría de los plásticos no son biodegradables, así que los residuos plásticos que los seres humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar de manera crítica acerca de los materiales que usamos y sobre nuestras prácticas de gestión de residuos\", asegura Jenna Jambeck, coautora del estudio e investigadora de la Universidad de Georgia.\n\nAdaptación del artículo de Cristina Sánchez, 2019.\n\nLa preocupación de la investigadora de la Universidad de Georgia consiste en que",
+            "options": {
+              "A": "las estadísticas de la acumulación de plásticos van en aumento y no se trabaja para disminuir la contaminación.",
+              "B": "hay muchos productos elaborados a base de plástico como cosméticos y materiales para la construcción.",
+              "C": "el plástico no se biodegrada de ninguna manera y permanece a nuestro alrededor en forma de contaminante.",
+              "D": "los seres humanos no hacemos conciencia sobre los graves riesgos que implica la acumulación del plástico."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 71,
+            "topic": "3.6",
+            "topic_name": "Intención del autor",
+            "text": "El ser humano ha generado 8.300 millones de toneladas de plástico\n\n(1) Los seres humanos hemos producido 8.300 millones de toneladas de plástico desde que su producción empezó a generalizarse en los años 50, una cifra que resulta equivalente al peso de 80 millones de ballenas azules o 1.000 millones de elefantes.\n\n(2) Así lo cuantifica un estudio publicado en la revista Science Advances cuyo objetivo era analizar de manera objetiva la producción, el uso y el destino final de todos los plásticos fabricados por el hombre. Y las cifras resultan apabullantes.\n\n(3) El plástico producido a lo largo de la historia empezó a generalizarse hacia 1950 y desde entonces no ha dejado de crecer. Si en 2015 se produjeron 380 millones de toneladas, las proyecciones indican que para 2050, habrá 12.000 millones de toneladas de plástico en vertederos o en el medio ambiente.\n\n(4) La vida útil de los plásticos es muy corta. La mayor parte de los producidos se utilizan en empaques, empaquetados. Los productos con mayor tiempo de vida son los de construcción.\n\n(5) El estudio señala que el 30% del plástico producido a lo largo de la historia sigue en uso y de los 5.800 millones de toneladas que ya no se usan, solo el 9% fue reciclado, el 12% se incineró y el 79% permanece acumulado en vertederos o en el medio ambiente.\n\n(6) \"La mayoría de los plásticos no son biodegradables, así que los residuos plásticos que los seres humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar de manera crítica acerca de los materiales que usamos y sobre nuestras prácticas de gestión de residuos\", asegura Jenna Jambeck, coautora del estudio e investigadora de la Universidad de Georgia.\n\nAdaptación del artículo de Cristina Sánchez, 2019.\n\nLa intención de la autora al escribir este texto es",
+            "options": {
+              "A": "comparar los diferentes tipos de contaminantes ambientales y sus consecuencias en el planeta.",
+              "B": "conocer las estadísticas de los residuos plásticos para ver cuánto han crecido en los últimos años.",
+              "C": "concientizar sobre el uso desmedido del plástico y mejorar la gestión de los desechos en el entorno.",
+              "D": "saber desde cuándo se originaron los desechos químicos y cómo se van degradando a largo plazo."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 72,
+            "topic": "4.1",
+            "topic_name": "Oración principal",
+            "text": "Selecciona la opción que contenga la oración principal del siguiente párrafo.\n\nEl mercado de Tlatelolco asombró a Cortés por su perfección y magnitud. Aunque antes los mercados se establecían cada cinco días, éste funcionaba diario. Ahí llegaban productos de todos los sitios para vender y había todo lo que el hombre podría apetecer. Ahí todo se encontraba perfectamente ordenado por calles, según la naturaleza de las cosas exhibidas para la venta. Allí se reunía la gente, allí se comía y se bebía.",
+            "options": {
+              "A": "El mercado de Tlatelolco asombró a Cortés por su perfección y magnitud.",
+              "B": "Antes los mercados se establecían cada cinco días, pero éste funcionaba diario.",
+              "C": "Allí se reunía la gente, allí se comía y se bebía.",
+              "D": "Ahí todo se encontraba perfectamente ordenado por calles."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 73,
+            "topic": "4.3",
+            "topic_name": "Complemento circunstancial",
+            "text": "En el siguiente enunciado identifica la función de las palabras en mayúsculas.\n\nEN NUESTRO PAÍS la cultura sexual tiene gran relación con la religión católica.",
+            "options": {
+              "A": "Complemento directo.",
+              "B": "Complemento indirecto.",
+              "C": "Complemento circunstancial.",
+              "D": "Complemento adnominal."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 74,
+            "topic": "5.0",
+            "topic_name": "Conectores textuales",
+            "text": "Selecciona el grupo de conectores que permite la coherencia del siguiente fragmento.\n\nEl Banco de México ya es autónomo __________ debe seguir siéndolo. El Congreso debe preocuparse por establecer la relación jurídica y política con esa institución, __________ su operación no esté disociada de los mecanismos de representación __________ son inherentes a la función pública.",
+            "options": {
+              "A": "por lo que — así — por ende",
+              "B": "por ello — dado que — los cuales",
+              "C": "así que — para que — pues",
+              "D": "y — de modo que — que"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 75,
+            "topic": "5.0",
+            "topic_name": "Redacción correcta",
+            "text": "Identifica el párrafo redactado correctamente.",
+            "options": {
+              "A": "Los campos magnéticos solar y terrestre interaccionan hasta que este último se deforma. Como cualquier ente en el universo, la Tierra responde de varias maneras ante el impacto de la actividad solar; en este caso lo hace mediante la actividad geomagnética (perturbaciones en el campo magnético terrestre).",
+              "B": "El campo magnético solar y terrestre se encuentran interaccionando hasta que este último (el campo magnético terrestre) termina deformándose. La Tierra, como cualquier ente en el universo, responde de varias maneras ante el impacto de la actividad solar; en este caso lo hace mediante perturbaciones en el campo magnético terrestre (es decir actividad geomagnética).",
+              "C": "Ante el impacto de la actividad solar (como cualquier ente en el universo), la Tierra responde de varias maneras; en este caso lo hace mediante la actividad geomagnética (perturbaciones en el campo magnético terrestre). Ello sucede porque los campos magnéticos solar y terrestre interaccionan hasta que el último se deforma.",
+              "D": "El campo magnético solar y el campo magnético terrestre interaccionan hasta que éste se deforma. Como cualquier ente en el universo, la Tierra responde de varias maneras ante el impacto de la actividad solar. Haciéndolo mediante la actividad geomagnética (esto es, perturbaciones que acontecen en el campo magnético terrestre)."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 76,
+            "topic": "5.0",
+            "topic_name": "Redacción de párrafos",
+            "text": "¿Cuál de los siguientes párrafos está redactado correctamente?",
+            "options": {
+              "A": "En la reunión se abordarán tres asuntos: diseñar un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; y buscar proveedores más cumplidos. También se harán propuestas para abrir nuevas sucursales.",
+              "B": "En la reunión se abordarán tres asuntos: cómo diseñar un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; y la búsqueda de proveedores más cumplidos. Finalmente, se harán propuestas para abrir nuevas sucursales.",
+              "C": "En la reunión se abordarán tres asuntos: el diseño de un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; y la búsqueda de proveedores más cumplidos. También se harán propuestas para abrir nuevas sucursales.",
+              "D": "En la reunión se abordarán tres asuntos: el diseño de un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; buscar proveedores más cumplidos; y también se harán propuestas para abrir nuevas sucursales."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 77,
+            "topic": "6.2",
+            "topic_name": "Sinónimos",
+            "text": "Selecciona el sinónimo de las palabras en mayúsculas.\n\nMarta veía los VESTIGIOS de un papel consumido por las llamas.",
+            "options": {
+              "A": "Pedazos.",
+              "B": "Restos.",
+              "C": "Signos.",
+              "D": "Resultados."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 78,
+            "topic": "6.4",
+            "topic_name": "Palabras homófonas",
+            "text": "Selecciona la opción que contiene únicamente palabras homófonas.",
+            "options": {
+              "A": "Numero — Número — Numeró",
+              "B": "Ixtacíhuatl — Iztacíhuatl — Iztaccíhuatl",
+              "C": "Solo — Sólo — Esté — Éste",
+              "D": "Echo — Hecho — Uno — Huno"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 79,
+            "topic": "7.4",
+            "topic_name": "Ortografía: uso de y/ll",
+            "text": "Selecciona la opción con las grafías que complementan correctamente el enunciado.\n\nLos niños que no ha___an hecho la tarea a___er porque no o___eron la indicación, tendrán que ha___ar el significado de las palabras en un diccionario de términos Caste___anos.",
+            "options": {
+              "A": "y — y — y — ll — ll",
+              "B": "ll — ll — ll — ll — y",
+              "C": "y — y — y — y — ll",
+              "D": "y — ll — y — ll — y"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 80,
+            "topic": "7.8",
+            "topic_name": "Puntuación correcta",
+            "text": "Escoge la opción que tiene la puntuación correcta.",
+            "options": {
+              "A": "Aunque parecía que Tláloc, dios azteca de la lluvia, favorece sólo a algunos y sólo a veces, la posibilidad de beber agua de cielo no se esfuma durante los meses que no llueve, ni en las zonas de sequía, porque los sistemas de almacenamiento se adaptan a cada zona y etapa.",
+              "B": "Aunque parecía, que Tláloc, dios azteca de la lluvia, favorece sólo a algunos; y sólo a veces, la posibilidad de beber agua de cielo, no se esfuma durante los meses que no llueve, ni en las zonas de sequía, porque los sistemas de almacenamiento se adaptan a cada zona y etapa.",
+              "C": "Aunque parecía que Tláloc, dios azteca de la lluvia, favorece, sólo a algunos y, sólo a veces, la posibilidad de beber agua de cielo, no se esfuma, durante los meses que, no llueve, ni en las zonas de sequía, porque los sistemas de almacenamiento se adaptan a cada zona y etapa.",
+              "D": "Aunque parecía que Tláloc, dios azteca de la lluvia, favorece sólo a algunos y sólo a veces, la posibilidad, de beber agua, de cielo, no se esfuma durante los meses que no llueve, ni en las zonas de sequía, porque los sistemas, de almacenamiento, se adaptan a cada zona y etapa."
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Biología",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 81,
+            "topic": "1.1.2",
+            "topic_name": "Teoría celular",
+            "text": "La existencia de enzimas del ciclo de Krebs, idénticas en todos los organismos de respiración aerobia, es una prueba del postulado __________ de la teoría celular.",
+            "options": {
+              "A": "funcional",
+              "B": "bioquímico",
+              "C": "anatómico",
+              "D": "estructural"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 82,
+            "topic": "2.2",
+            "topic_name": "Fotosíntesis",
+            "text": "Producto energético elaborado por las plantas en el proceso de la fotosíntesis.",
+            "options": {
+              "A": "Clorofila.",
+              "B": "Glucosa.",
+              "C": "Luz.",
+              "D": "$CO_2$."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 83,
+            "topic": "2.2.1",
+            "topic_name": "Fotosíntesis",
+            "text": "Función biológica que permite la transformación de materia inorgánica a orgánica.",
+            "options": {
+              "A": "Fotólisis.",
+              "B": "Fotosíntesis.",
+              "C": "Digestión.",
+              "D": "Absorción."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 84,
+            "topic": "3.2.1",
+            "topic_name": "Fases de la mitosis",
+            "text": "¿Cuál es la secuencia correcta de las fases de la mitosis?",
+            "options": {
+              "A": "Interfase, anafase, telofase y metafase.",
+              "B": "Metafase, profase, telofase y anafase.",
+              "C": "Anafase, metafase, profase y telofase.",
+              "D": "Profase, metafase, anafase y telofase."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 85,
+            "topic": "4.1",
+            "topic_name": "Distribución independiente",
+            "text": "Una consecuencia de la distribución independiente es la producción de gametos",
+            "options": {
+              "A": "análogos.",
+              "B": "equivalentes.",
+              "C": "idénticos.",
+              "D": "diferentes."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 86,
+            "topic": "4.3.1",
+            "topic_name": "ADN recombinante",
+            "text": "Proteína producida por tecnología del ADN recombinante.",
+            "options": {
+              "A": "Histona.",
+              "B": "Hemoglobina.",
+              "C": "Insulina.",
+              "D": "Miosina."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 87,
+            "topic": "5.2.1",
+            "topic_name": "Teorías de evolución",
+            "text": "Una limitación de la teoría de la __________ es que considera la transformación voluntaria y determinista de las especies como el mecanismo central de la evolución.",
+            "options": {
+              "A": "herencia de los caracteres adquiridos",
+              "B": "abiogénesis",
+              "C": "evolución por la selección natural",
+              "D": "panspermia"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 88,
+            "topic": "5.2.3",
+            "topic_name": "Genética de poblaciones",
+            "text": "Área del conocimiento que aporta datos para entender que la evolución genera cambios en la frecuencia, distribución y herencia de los alelos dentro de una población.",
+            "options": {
+              "A": "Biogeografía.",
+              "B": "Paleontología.",
+              "C": "Genética de poblaciones.",
+              "D": "Anatomía comparada."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 89,
+            "topic": "6.2",
+            "topic_name": "Factores del ecosistema",
+            "text": "La dinámica y el posible equilibrio de un ecosistema dependen de la interacción entre los factores __________ y __________.",
+            "options": {
+              "A": "bióticos — abióticos",
+              "B": "edáficos — atmosféricos",
+              "C": "físicos — químicos",
+              "D": "evolutivos — ecológicos"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 90,
+            "topic": "6.2.3",
+            "topic_name": "Relaciones interespecíficas: comensalismo",
+            "text": "Forma biológica de interactuar entre organismos de diferente especie, donde uno de ellos obtiene un beneficio, mientras el otro no se perjudica ni se beneficia.",
+            "options": {
+              "A": "Mutualismo.",
+              "B": "Parasitismo.",
+              "C": "Comensalismo.",
+              "D": "Depredación."
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Historia Universal",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 91,
+            "topic": "1.2",
+            "topic_name": "Caída de Constantinopla",
+            "text": "La caída de Constantinopla o Bizancio en poder de los musulmanes hacia 1453 dio inicio a la Edad",
+            "options": {
+              "A": "Media.",
+              "B": "Moderna.",
+              "C": "Antigua.",
+              "D": "Contemporánea."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 92,
+            "topic": "2.2",
+            "topic_name": "Revoluciones burguesas y capitalismo",
+            "text": "Las revoluciones burguesas de los siglos XVIII y XIX consolidaron al capitalismo porque",
+            "options": {
+              "A": "fortalecieron el liberalismo económico.",
+              "B": "permitieron el surgimiento del mercantilismo.",
+              "C": "lograron la igualdad económico-social entre la población.",
+              "D": "favorecieron la mecanización de la agricultura."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 93,
+            "topic": "3.3",
+            "topic_name": "Unificación italiana",
+            "text": "Como consecuencia de la Revolución Liberal de 1830, __________ y Víctor Manuel II lideraron una guerra contra __________, lo que trajo consigo el movimiento de unificación italiana.",
+            "options": {
+              "A": "Carlos Alberto – Prusia",
+              "B": "José Garibaldi – Austria",
+              "C": "Napoleón III – Inglaterra",
+              "D": "Carlos X – Francia"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 94,
+            "topic": "4.1",
+            "topic_name": "Capitalismo monopolista",
+            "text": "El capitalismo monopolista se originó por",
+            "options": {
+              "A": "la lucha por los mercados.",
+              "B": "el expansionismo territorial.",
+              "C": "la ideología burguesa.",
+              "D": "el auge en las comunicaciones."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 95,
+            "topic": "5.1",
+            "topic_name": "EUA en la Primera Guerra Mundial",
+            "text": "Suceso que ocasionó la entrada de los Estados Unidos de América a la Primera Guerra Mundial.",
+            "options": {
+              "A": "El hundimiento del trasatlántico Lusitania.",
+              "B": "El asesinato del archiduque Francisco Fernando.",
+              "C": "La invasión alemana a Rusia.",
+              "D": "La Revolución Bolchevique."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 96,
+            "topic": "6.2",
+            "topic_name": "Partido Nacional Socialista",
+            "text": "Partido de un país del centro de Europa que pregonaba ideas socialistas y pretendía formar una aparente unidad nacionalista.",
+            "options": {
+              "A": "Nacional Socialista.",
+              "B": "Bolchevique.",
+              "C": "Comunista.",
+              "D": "Nacional Falangista."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 97,
+            "topic": "7.2",
+            "topic_name": "Conferencias de posguerra",
+            "text": "Al finalizar la Segunda Guerra Mundial en la conferencia de __________, se acordó la desmilitarización de Alemania y su división en cuatro zonas de ocupación.",
+            "options": {
+              "A": "Yalta",
+              "B": "Casablanca",
+              "C": "Potsdam",
+              "D": "Teherán"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 98,
+            "topic": "8.1",
+            "topic_name": "Bloque socialista vs capitalista",
+            "text": "Uno de los rasgos que distinguen al bloque socialista del capitalista es",
+            "options": {
+              "A": "la falta de innovaciones tecnológicas.",
+              "B": "el intervencionismo en los asuntos del tercer mundo.",
+              "C": "la economía centralmente planificada.",
+              "D": "el escaso intercambio de mercancías con otros países."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 99,
+            "topic": "8.2",
+            "topic_name": "Guerra Fría",
+            "text": "La Guerra de Corea, la Crisis de los Misiles en Cuba y la Primavera de Praga son conflictos que se presentaron durante la",
+            "options": {
+              "A": "Gran Depresión.",
+              "B": "Guerra Fría.",
+              "C": "expansión totalitarista.",
+              "D": "descolonización mundial."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 100,
+            "topic": "9.3",
+            "topic_name": "Aportaciones científicas del siglo XX",
+            "text": "Dos de las aportaciones científicas y tecnológicas del siglo XX fueron la",
+            "options": {
+              "A": "cinematografía y fotografía.",
+              "B": "biotecnología y robótica.",
+              "C": "industria del transporte e industria química.",
+              "D": "industria textil e industria minera."
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Historia de México",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 101,
+            "topic": "1.6",
+            "topic_name": "Arquitectura novohispana: Churrigueresco",
+            "text": "Estilo arquitectónico que alcanzó su apogeo en el siglo XVIII, caracterizado por el uso de ornamentos recargados y la columna estípite.",
+            "options": {
+              "A": "Plateresco.",
+              "B": "Neoclásico.",
+              "C": "Churrigueresco.",
+              "D": "Mudéjar."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 102,
+            "topic": "2.2",
+            "topic_name": "Inicio de la Independencia",
+            "text": "Estado en el que inició la Independencia de la Nueva España, de forma anticipada.",
+            "options": {
+              "A": "Guerrero.",
+              "B": "Guanajuato.",
+              "C": "Morelos.",
+              "D": "Querétaro."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 103,
+            "topic": "3.4",
+            "topic_name": "Proyecto centralista",
+            "text": "El proyecto político centralista tenía como principio",
+            "options": {
+              "A": "restringir la participación popular en los procesos políticos.",
+              "B": "implementar los principios del liberalismo como base del Estado.",
+              "C": "incorporar a México al libre comercio e industria.",
+              "D": "suprimir los fueros y privilegios de la Iglesia."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 104,
+            "topic": "4.2",
+            "topic_name": "Constitución de 1857",
+            "text": "La Constitución de 1857 consagró los derechos",
+            "options": {
+              "A": "indígenas.",
+              "B": "eclesiásticos.",
+              "C": "sociales.",
+              "D": "individuales."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 105,
+            "topic": "5.3",
+            "topic_name": "Magonismo",
+            "text": "Movimiento que se opuso al régimen porfirista manifestando su descontento a través del periódico llamado Regeneración.",
+            "options": {
+              "A": "Magonismo.",
+              "B": "Carrancismo.",
+              "C": "Zapatismo.",
+              "D": "Reyismo."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 106,
+            "topic": "6.1",
+            "topic_name": "Movimiento maderista",
+            "text": "El Partido Antirreeleccionista, el Plan de San Luis y los Tratados de Ciudad Juárez se asocian al",
+            "options": {
+              "A": "movimiento zapatista.",
+              "B": "régimen huertista.",
+              "C": "régimen porfirista.",
+              "D": "movimiento maderista."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 107,
+            "topic": "7.2",
+            "topic_name": "El Maximato",
+            "text": "¿Qué presidente mantuvo su poder durante el Maximato?",
+            "options": {
+              "A": "Álvaro Obregón.",
+              "B": "Plutarco Elías Calles.",
+              "C": "Lázaro Cárdenas.",
+              "D": "Abelardo L. Rodríguez."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 108,
+            "topic": "7.3",
+            "topic_name": "Gobierno de Lázaro Cárdenas",
+            "text": "La principal transformación económico – social del gobierno de Lázaro Cárdenas fue",
+            "options": {
+              "A": "el modelo educativo fascista.",
+              "B": "la destrucción del ejido.",
+              "C": "el fomento a la inversión.",
+              "D": "la reforma agraria."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 109,
+            "topic": "8.1",
+            "topic_name": "Gobierno de Miguel Alemán",
+            "text": "A la llegada de Miguel Alemán a la presidencia se iniciaron en México los gobiernos de tipo",
+            "options": {
+              "A": "socialista.",
+              "B": "civil.",
+              "C": "militar.",
+              "D": "populista."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 110,
+            "topic": "8.3",
+            "topic_name": "Desarrollo compartido",
+            "text": "Política económica que aplicó el gobierno mexicano de 1970 a 1982.",
+            "options": {
+              "A": "Sustitución de importaciones.",
+              "B": "Estado de Bienestar.",
+              "C": "Desarrollo estabilizador.",
+              "D": "Desarrollo compartido."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Filosofía",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 111,
+            "topic": "1.1.3",
+            "topic_name": "Conectivos lógicos: disyunción",
+            "text": "Completa la siguiente proposición con el conectivo que le corresponde.\n\nO el maestro no calificará minuciosamente los trabajos __________ nos anotará solo una calificación al azar.",
+            "options": {
+              "A": "$\\sim \\rightarrow$",
+              "B": "$\\sim \\lor$",
+              "C": "$\\land$",
+              "D": "$\\lor$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 112,
+            "topic": "1.2",
+            "topic_name": "Inferencia lógica",
+            "text": "¿Cuál es la conclusión que se infiere del siguiente argumento?\n\nEl mole es una comida mexicana y me gustó; lo mismo los tacos al pastor, el pipián y el mole de olla. Por lo tanto,",
+            "options": {
+              "A": "la comida mexicana es de alta gastronomía.",
+              "B": "el platillo mexicano es aceptado mundialmente.",
+              "C": "mañana probaré otro platillo mexicano.",
+              "D": "toda la comida mexicana es de mi preferencia."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 113,
+            "topic": "1.2.3",
+            "topic_name": "Falacias: ad populum",
+            "text": "En el siguiente fragmento se expresa la falacia de\n\nCristina Fernández de Kirchner, en su campaña para contender a la presidencia, comunicó que el gran número de sus votantes no pueden estar equivocados, así que instó a unirse a ella.",
+            "options": {
+              "A": "ad misericordiam o por misericordia.",
+              "B": "ad populum o por el pueblo.",
+              "C": "ad ignorantiam o por ignorancia.",
+              "D": "ad baculum o por la fuerza."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 114,
+            "topic": "2.1",
+            "topic_name": "Ética hedonista",
+            "text": "¿A qué teoría moral corresponde la siguiente afirmación?\n\n... todo placer es bueno intrínsecamente y sólo el placer es intrínsecamente bueno ...",
+            "options": {
+              "A": "Hedonista.",
+              "B": "Teológica",
+              "C": "Utilitarista.",
+              "D": "Socrática."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 115,
+            "topic": "2.2",
+            "topic_name": "Responsabilidad moral",
+            "text": "De los siguientes casos, distingue cuál de ellos implica responsabilidad moral.",
+            "options": {
+              "A": "María quiere ahorrar dinero y compra una alcancía para realizar su fin.",
+              "B": "Pedro busca trabajo, camina, hace entrevistas, se prepara para los exámenes y, finalmente, no lo consigue.",
+              "C": "Rocío decide regalar una blusa roja, otra verde y una azul.",
+              "D": "Juan elige no estudiar para su examen y prefiere ir a participar en el juego de futbol de su equipo."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 116,
+            "topic": "2.2.2",
+            "topic_name": "Condiciones de responsabilidad moral",
+            "text": "Identifica las condiciones necesarias para adjudicar responsabilidad a un agente moral.",
+            "options": {
+              "A": "Conciencia y autonomía.",
+              "B": "Libertad y autonomía",
+              "C": "Conciencia y libertad.",
+              "D": "Libertad y capacidad."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 117,
+            "topic": "2.3.2",
+            "topic_name": "Subjetivismo moral",
+            "text": "¿Qué postura está representada en el siguiente caso?\n\nSi ella aborta o no, es decisión suya; más aún, lo que ella decida estará bien porque nadie puede ponerse en los zapatos de los demás y decirle qué hacer. El valor de la vida depende de quien está vivo.",
+            "options": {
+              "A": "Objetivista.",
+              "B": "Pragmatista.",
+              "C": "Subjetivista.",
+              "D": "Utilitarista."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 118,
+            "topic": "3.1.3",
+            "topic_name": "Estética objetivista",
+            "text": "Elige la opción que complete el siguiente enunciado desde la postura objetivista.\n\nLos murales de José Clemente Orozco pueden ser apreciados a partir de cada uno de sus elementos: color, composición, luz y desde ellos",
+            "options": {
+              "A": "ser apreciados en su valor histórico y contextual.",
+              "B": "interpretar los sentimientos y emociones de su creador para el espectador.",
+              "C": "ser evaluados como obras de arte de valor universal.",
+              "D": "construir una teoría de la función social del arte mexicano."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 119,
+            "topic": "3.2.2",
+            "topic_name": "Ontología",
+            "text": "Elige la afirmación que representa una sentencia ontológica.",
+            "options": {
+              "A": "El ser humano es libre por naturaleza, capaz de elección, valoración y reflexión.",
+              "B": "La naturaleza humana queda definida en sus rasgos esenciales por la racionalidad.",
+              "C": "La naturaleza humana pasa por la sensibilidad y la percepción para conocer el mundo.",
+              "D": "El ser humano es un ser simbólico capaz de crear cultura, arte y religión."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 120,
+            "topic": "3.3.3",
+            "topic_name": "Epistemología: sujeto y objeto",
+            "text": "Los elementos que hacen posible el conocimiento son",
+            "options": {
+              "A": "el sentimiento y la educación.",
+              "B": "la voluntad y la representación.",
+              "C": "el sujeto y el objeto.",
+              "D": "la bondad y la verdad."
+            },
+            "answer": "C"
+          }
+        ]
+      }
+    ]
+  }
+}
