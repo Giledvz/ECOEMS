@@ -108,6 +108,21 @@
   .conn-status { position: fixed; top: 0; left: 0; right: 0; background: #fef3c7; color: #a16207; text-align: center; font-size: 12px; padding: 4px; z-index: 100; display: none; }
   .conn-status.show { display: block; }
 
+  /* ── Submit Overlay ── */
+  .submit-overlay { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.85); z-index: 1000; display: none; align-items: center; justify-content: center; padding: 24px; }
+  .submit-overlay.show { display: flex; }
+  .submit-card { background: #fff; border-radius: 14px; padding: 28px 24px; max-width: 360px; width: 100%; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
+  .submit-card .spinner { width: 52px; height: 52px; border: 5px solid #e5e7eb; border-top-color: #2c5282; border-radius: 50%; margin: 0 auto 16px; animation: spin 1s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .submit-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: #1a1a1a; }
+  .submit-card p { font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 12px; }
+  .submit-card .attempts { font-size: 12px; color: #888; margin-top: 4px; }
+  .submit-card .warn { font-size: 13px; color: #a16207; background: #fef3c7; padding: 8px 12px; border-radius: 8px; margin-top: 12px; }
+  body.dark .submit-card { background: #16213e; color: #e0e0e0; }
+  body.dark .submit-card h3 { color: #e0e0e0; }
+  body.dark .submit-card p { color: #aaa; }
+  body.dark .submit-card .spinner { border-color: #2a2a4a; border-top-color: #7eb8f7; }
+
   /* ── Results Screen ── */
   .results-screen { align-items: center; gap: 16px; text-align: center; padding-top: 32px; padding-bottom: 40px; }
   .topic-breakdown { width: 100%; max-width: 480px; text-align: left; margin-top: 8px; }
@@ -177,6 +192,15 @@
 </head>
 <body>
 <div class="conn-status" id="connStatus">Reconectando...</div>
+<div class="submit-overlay" id="submitOverlay">
+  <div class="submit-card">
+    <div class="spinner"></div>
+    <h3>Enviando tu examen</h3>
+    <p id="submitMsg">Estamos registrando tu entrega en el servidor. Por favor, no cierres esta pagina.</p>
+    <p class="attempts" id="submitAttempts"></p>
+    <p class="warn">Manten el WiFi conectado. Se reintentara automaticamente hasta confirmar.</p>
+  </div>
+</div>
 <script>
 function toggleDarkMode() {
   document.body.classList.toggle('dark');
@@ -314,13 +338,37 @@ function renderMath(text) {
   }
 }
 
-let state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null };
+let state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null };
 
 function saveState() {
   try { localStorage.setItem('examState', JSON.stringify({ roomCode: state.roomCode, name: state.name, group: state.group, answers: state.answers, marked: state.marked, currentQ: state.currentQ })); } catch(e) {}
 }
 function loadState() {
   try { const s = localStorage.getItem('examState'); return s ? JSON.parse(s) : null; } catch(e) { return null; }
+}
+
+// Backup paralelo: persiste respuestas independientemente de examState.
+// Solo se borra cuando el server confirma la entrega con ACK, o al reset/delete explicito.
+function saveBackup(submittedFlag) {
+  try {
+    const prev = loadBackup();
+    const flag = typeof submittedFlag === 'boolean' ? submittedFlag : (prev ? !!prev.submitted : false);
+    localStorage.setItem('examBackup', JSON.stringify({
+      roomCode: state.roomCode,
+      name: state.name,
+      group: state.group,
+      answers: state.answers,
+      marked: state.marked,
+      submitted: flag,
+      timestamp: Date.now(),
+    }));
+  } catch(e) {}
+}
+function loadBackup() {
+  try { const s = localStorage.getItem('examBackup'); return s ? JSON.parse(s) : null; } catch(e) { return null; }
+}
+function clearBackup() {
+  try { localStorage.removeItem('examBackup'); } catch(e) {}
 }
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -354,6 +402,7 @@ function joinRoom() {
 function backToRoom() {
   state.roomCode = '';
   try { localStorage.removeItem('examState'); } catch(e) {}
+  clearBackup();
   showScreen('roomScreen');
 }
 
@@ -429,7 +478,7 @@ function selectAnswer(qId, letter) {
   if (state.submitted) return;
   state.answers[qId] = letter;
   socket.emit('answer', { questionId: qId, answer: letter });
-  saveState(); renderQuestion();
+  saveState(); saveBackup(); renderQuestion();
 }
 function toggleMark() {
   if (state.submitted) return;
@@ -437,7 +486,7 @@ function toggleMark() {
   socket.emit('toggleMark', { questionId: q.id });
   const idx = state.marked.indexOf(q.id);
   if (idx === -1) state.marked.push(q.id); else state.marked.splice(idx, 1);
-  saveState(); renderQuestion();
+  saveState(); saveBackup(); renderQuestion();
 }
 function prevQ() { if (state.currentQ > 0) { state.currentQ--; renderQuestion(); window.scrollTo(0,0); } }
 function nextQ() { if (state.currentQ < state.questions.length - 1) { state.currentQ++; renderQuestion(); window.scrollTo(0,0); } }
@@ -470,19 +519,65 @@ function renderNavGrid() {
 
 function confirmSubmit() {
   if (state.submitted) return;
+  if (state.submitPending) { showSubmitOverlay(); return; }
   const answered = Object.keys(state.answers).length;
   const total = state.questions.length;
   let msg = `¿Estas seguro de entregar el examen?\n\nRespondidas: ${answered} de ${total}\n`;
   if (total - answered > 0) msg += `Sin responder: ${total - answered}\n`;
   if (state.marked.length > 0) msg += `Marcadas para revisar: ${state.marked.length}\n`;
   if (confirm(msg)) {
-    socket.emit('submitExam');
-    setTimeout(() => { if (!state.submitted) enterReviewMode({ correct: null, total, answerKey: {} }); }, 8000);
+    startSubmitFlow();
   }
+}
+
+function startSubmitFlow() {
+  state.submitPending = true;
+  state.submitAttempts = 0;
+  saveBackup(true); // marca el flag de submit en el respaldo
+  showSubmitOverlay();
+  trySubmit();
+}
+
+function trySubmit() {
+  if (state.submitted) return;
+  if (!state.submitPending) return;
+  state.submitAttempts++;
+  updateSubmitOverlay();
+  let acked = false;
+  try {
+    socket.emit('submitExam', (data) => {
+      acked = true;
+      if (state.submitRetryTimer) { clearTimeout(state.submitRetryTimer); state.submitRetryTimer = null; }
+      state.submitPending = false;
+      hideSubmitOverlay();
+      if (data && data.ok) enterReviewMode(data);
+    });
+  } catch(e) {}
+  if (state.submitRetryTimer) clearTimeout(state.submitRetryTimer);
+  state.submitRetryTimer = setTimeout(() => {
+    if (!acked && state.submitPending && !state.submitted) trySubmit();
+  }, 5000);
+}
+
+function showSubmitOverlay() {
+  document.getElementById('submitOverlay').classList.add('show');
+  updateSubmitOverlay();
+}
+function hideSubmitOverlay() {
+  document.getElementById('submitOverlay').classList.remove('show');
+}
+function updateSubmitOverlay() {
+  const el = document.getElementById('submitAttempts');
+  if (!el) return;
+  if (state.submitAttempts <= 1) el.textContent = '';
+  else el.textContent = `Intento ${state.submitAttempts}`;
 }
 
 function enterReviewMode(data) {
   state.submitted = true;
+  state.submitPending = false;
+  if (state.submitRetryTimer) { clearTimeout(state.submitRetryTimer); state.submitRetryTimer = null; }
+  hideSubmitOverlay();
   if (state.timerInterval) clearInterval(state.timerInterval);
   if (state.startTime && !state.timeUsed) {
     state.timeUsed = Math.round((Date.now() - state.startTime) / 1000);
@@ -503,7 +598,8 @@ function enterReviewMode(data) {
   else { circle.style.background = '#fef2f2'; circle.style.color = '#e53e3e'; }
   showScreen('resultsScreen');
   try { localStorage.removeItem('examState'); } catch(e) {}
-  if (correct !== null) renderTopicBreakdown();
+  // Solo borrar el respaldo si el server confirmo con aciertos reales
+  if (correct !== null) { clearBackup(); renderTopicBreakdown(); }
 }
 
 function renderTopicBreakdown() {
@@ -661,7 +757,7 @@ function startTimer(startTime, limitMinutes) {
   if (state.timerInterval) clearInterval(state.timerInterval);
   state.timerInterval = setInterval(() => {
     const remaining = (state.timeLimit * 60) - ((Date.now() - state.startTime) / 1000);
-    if (remaining <= 0) { clearInterval(state.timerInterval); document.getElementById('timerDisplay').textContent = '0:00:00'; if (!state.submitted) socket.emit('submitExam'); return; }
+    if (remaining <= 0) { clearInterval(state.timerInterval); document.getElementById('timerDisplay').textContent = '0:00:00'; if (!state.submitted && !state.submitPending) startSubmitFlow(); return; }
     const h = Math.floor(remaining / 3600), m = Math.floor((remaining % 3600) / 60), s = Math.floor(remaining % 60);
     const el = document.getElementById('timerDisplay');
     el.textContent = `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
@@ -708,18 +804,46 @@ socket.on('joined', (data) => {
   state.answerKey = {}; state.submitted = false; state.reviewMode = false;
   state.name = data.name; state.group = data.group; state.timeLimit = data.timeLimit;
   if (data.roomCode) state.roomCode = data.roomCode;
+
+  // Priorizar la fuente con mas respuestas (backup sobrevive al setTimeout de entrega,
+  // examState puede haberse borrado por un enterReviewMode previo).
+  const backup = loadBackup();
   const saved = loadState();
-  if (saved && saved.name === data.name && saved.roomCode === state.roomCode) {
-    state.answers = saved.answers || {}; state.marked = saved.marked || []; state.currentQ = saved.currentQ || 0;
+  const backupValid = backup && backup.name === data.name && backup.roomCode === state.roomCode;
+  const savedValid = saved && saved.name === data.name && saved.roomCode === state.roomCode;
+  let source = null;
+  if (backupValid && savedValid) {
+    const bc = Object.keys(backup.answers || {}).length;
+    const sc = Object.keys(saved.answers || {}).length;
+    source = bc >= sc ? backup : saved;
+  } else if (backupValid) source = backup;
+  else if (savedValid) source = saved;
+
+  if (source) {
+    state.answers = source.answers || {};
+    state.marked = source.marked || [];
+    state.currentQ = source.currentQ || 0;
     Object.entries(state.answers).forEach(([qId, ans]) => { socket.emit('answer', { questionId: parseInt(qId), answer: ans }); });
   }
+
   document.getElementById('welcomeName').textContent = `¡Hola, ${data.name}!`;
   document.getElementById('waitingRoomCode').textContent = `Sala: ${state.roomCode}`;
   if (data.title) { state.title = data.title; document.getElementById('examTitleBar').textContent = data.title; }
   saveState();
-  if (data.submitted) { enterReviewMode({ correct: data.correct, total: data.questions.length, answerKey: data.answerKey }); }
-  else if (data.examActive) { showScreen('examScreen'); renderQuestion(); if (data.startTime) startTimer(data.startTime, data.timeLimit); }
-  else showScreen('waitingScreen');
+  saveBackup(backupValid && backup.submitted);
+
+  if (data.submitted) {
+    enterReviewMode({ ok: true, correct: data.correct, total: data.questions.length, answerKey: data.answerKey });
+  } else if (backupValid && backup.submitted) {
+    // El alumno ya habia apretado Entregar pero el server no lo registro. Reanudar.
+    if (data.examActive) { showScreen('examScreen'); renderQuestion(); if (data.startTime) startTimer(data.startTime, data.timeLimit); }
+    else showScreen('waitingScreen');
+    setTimeout(() => { if (!state.submitted) startSubmitFlow(); }, 600);
+  } else if (data.examActive) {
+    showScreen('examScreen'); renderQuestion(); if (data.startTime) startTimer(data.startTime, data.timeLimit);
+  } else {
+    showScreen('waitingScreen');
+  }
 });
 
 socket.on('examStarted', (data) => {
@@ -732,15 +856,18 @@ socket.on('examStarted', (data) => {
   }
   startTimer(data.startTime, data.timeLimit);
 });
-socket.on('examSubmitted', (data) => { enterReviewMode(data); });
-socket.on('examClosed', () => { if (!state.submitted) socket.emit('submitExam'); });
+socket.on('examSubmitted', (data) => { enterReviewMode({ ok: true, ...data }); });
+socket.on('examClosed', () => { if (!state.submitted && !state.submitPending) startSubmitFlow(); });
 socket.on('markedUpdate', (marked) => { state.marked = marked; saveState(); renderQuestion(); });
 
 socket.on('examReset', () => {
   if (state.timerInterval) clearInterval(state.timerInterval);
+  if (state.submitRetryTimer) { clearTimeout(state.submitRetryTimer); state.submitRetryTimer = null; }
+  hideSubmitOverlay();
   const rc = state.roomCode;
-  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: rc, timeUsed: null };
+  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: rc, timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null };
   try { localStorage.removeItem('examState'); } catch(e) {}
+  clearBackup();
   document.getElementById('reviewBanner').style.display = 'none';
   document.getElementById('submitBtn').style.display = '';
   if (rc) socket.emit('joinRoom', { roomCode: rc });
@@ -749,8 +876,11 @@ socket.on('examReset', () => {
 
 socket.on('roomDeleted', () => {
   if (state.timerInterval) clearInterval(state.timerInterval);
-  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null };
+  if (state.submitRetryTimer) { clearTimeout(state.submitRetryTimer); state.submitRetryTimer = null; }
+  hideSubmitOverlay();
+  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null };
   try { localStorage.removeItem('examState'); } catch(e) {}
+  clearBackup();
   document.getElementById('reviewBanner').style.display = 'none';
   document.getElementById('submitBtn').style.display = '';
   showScreen('roomScreen');

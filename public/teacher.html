@@ -386,10 +386,32 @@ function deleteRoom() {
 }
 
 function downloadCSV() {
-  if (selectedRoom) window.open(`/api/download-csv?room=${selectedRoom}`, '_blank');
+  if (selectedRoom) autoDownload(`/api/download-csv?room=${selectedRoom}`, `resultados_${selectedRoom}.csv`);
 }
 function downloadKey() {
-  if (selectedRoom) window.open(`/api/download-key?room=${selectedRoom}`, '_blank');
+  if (selectedRoom) autoDownload(`/api/download-key?room=${selectedRoom}`, `clave_${selectedRoom}.csv`);
+}
+
+async function autoDownload(url, fallbackName) {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const blob = await res.blob();
+    const disposition = res.headers.get('Content-Disposition') || '';
+    const m = disposition.match(/filename=([^;]+)/);
+    const filename = (m ? m[1].trim().replace(/^"|"$/g, '') : fallbackName);
+    const objUrl = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = objUrl;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(objUrl), 1500);
+  } catch (err) {
+    console.error('Descarga falló:', err);
+    window.open(url, '_blank');
+  }
 }
 
 function copyUrl() {
@@ -559,8 +581,13 @@ socket.on('examStarted', (data) => {
 socket.on('examClosed', () => {
   updatePhase('closed');
   if (timerInterval) clearInterval(timerInterval);
-  if (selectedRoom) window.open(`/api/download-csv?room=${selectedRoom}`, '_blank');
   socket.emit('getRooms');
+});
+
+// Al cerrar CUALQUIER sala (individual o via Cerrar todos), descarga CSV + clave automaticamente.
+socket.on('roomClosed', ({ roomCode }) => {
+  autoDownload(`/api/download-csv?room=${roomCode}`, `resultados_${roomCode}.csv`);
+  setTimeout(() => autoDownload(`/api/download-key?room=${roomCode}`, `clave_${roomCode}.csv`), 300);
 });
 
 socket.on('examReset', () => {

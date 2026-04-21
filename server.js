@@ -418,16 +418,19 @@ io.on('connection', (socket) => {
     socket.emit('markedUpdate', student.marked);
   });
 
-  // ── Student submits exam ──
-  socket.on('submitExam', () => {
+  // ── Student submits exam (idempotent + ACK) ──
+  socket.on('submitExam', (ack) => {
     const roomCode = socketRoom.get(socket.id);
     const room = roomCode && rooms.get(roomCode);
-    if (!room) return;
+    if (!room) { if (typeof ack === 'function') ack({ ok: false, error: 'no room' }); return; }
     const student = room.students[socket.id];
-    if (!student || student.submitted) return;
+    if (!student) { if (typeof ack === 'function') ack({ ok: false, error: 'no student' }); return; }
 
-    student.submitted = true;
-    student.submitTime = Date.now();
+    const wasSubmitted = student.submitted;
+    if (!wasSubmitted) {
+      student.submitted = true;
+      student.submitTime = Date.now();
+    }
 
     let correct = 0;
     room.questions.forEach(q => {
@@ -435,14 +438,20 @@ io.on('connection', (socket) => {
       if (student.answers[q.id] === key) correct++;
     });
 
-    socket.emit('examSubmitted', {
+    const payload = {
+      ok: true,
       correct,
       total: room.questions.length,
       answerKey: student.answerKey ?? room.answerKey,
-    });
+    };
 
-    io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
-    console.log(`[${roomCode}] ${student.name} entregó: ${correct}/${room.questions.length}`);
+    if (typeof ack === 'function') ack(payload);
+    socket.emit('examSubmitted', payload);
+
+    if (!wasSubmitted) {
+      io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
+      console.log(`[${roomCode}] ${student.name} entregó: ${correct}/${room.questions.length}`);
+    }
   });
 
   // ── Teacher: start exam ──
@@ -482,6 +491,7 @@ io.on('connection', (socket) => {
       }
     });
     io.to(roomCode).emit('examClosed');
+    io.to('teachers').emit('roomClosed', { roomCode });
     broadcastRoomsList();
     console.log(`[${roomCode}] Examen cerrado`);
   });
