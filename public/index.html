@@ -102,6 +102,10 @@
   .btn-submit { background: #16a34a; color: #fff; flex: 0.7 !important; font-size: 13px !important; }
   .btn-prev:disabled, .btn-next:disabled { opacity: 0.4; }
   .review-banner { background: #ebf4ff; padding: 8px 16px; text-align: center; font-size: 13px; color: #2c5282; font-weight: 500; }
+  .explanation-box { margin-top: 14px; padding: 12px 14px; background: #f0f9ff; border-left: 4px solid #2c5282; border-radius: 6px; font-size: 13px; line-height: 1.5; color: #1e3a5f; }
+  .explanation-box .explanation-title { font-weight: 600; margin-bottom: 6px; color: #2c5282; }
+  body.dark .explanation-box { background: #1a2a3a; border-left-color: #4a9eff; color: #cfe2f3; }
+  body.dark .explanation-box .explanation-title { color: #7eb8f7; }
   .review-legend { display: flex; gap: 12px; justify-content: center; padding: 4px 0 0; font-size: 11px; color: #666; }
   .legend-dot { width: 10px; height: 10px; border-radius: 3px; display: inline-block; margin-right: 3px; vertical-align: middle; }
   .nav-spacer { height: 180px; }
@@ -263,7 +267,10 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="student-name-bar" id="studentNameBar"></div>
   </div>
   <div id="reviewBanner" class="review-banner" style="display:none;">
-    Modo revision
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+      <span>Modo revision</span>
+      <button onclick="downloadPDF()" style="padding:8px 16px; font-size:14px; font-weight:600; background:#16a34a; color:#fff; border:none; border-radius:8px; cursor:pointer;">Descargar comprobante</button>
+    </div>
     <div class="review-legend">
       <span><span class="legend-dot" style="background:#b7e1cd;"></span>Correcta</span>
       <span><span class="legend-dot" style="background:#e1b7b7;"></span>Incorrecta</span>
@@ -274,6 +281,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="question-text" id="qText"></div>
     <img id="qImage" style="display:none; max-width:100%; margin-bottom:16px;" />
     <div class="options" id="qOptions"></div>
+    <div id="qExplanation" class="explanation-box" style="display:none;"></div>
     <button class="mark-btn" id="markBtn" onclick="toggleMark()">Marcar para revisar</button>
   </div>
   <div class="nav-spacer"></div>
@@ -338,7 +346,7 @@ function renderMath(text) {
   }
 }
 
-let state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null };
+let state = { questions: [], answers: {}, answerKey: {}, explanations: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null };
 
 function saveState() {
   try { localStorage.setItem('examState', JSON.stringify({ roomCode: state.roomCode, name: state.name, group: state.group, answers: state.answers, marked: state.marked, currentQ: state.currentQ })); } catch(e) {}
@@ -461,6 +469,16 @@ function renderQuestion() {
     optDiv.appendChild(btn);
   });
 
+  const expDiv = document.getElementById('qExplanation');
+  const expText = state.explanations && state.explanations[q.id];
+  if (state.reviewMode && expText) {
+    expDiv.innerHTML = '<div class="explanation-title">Explicación</div>' + renderMath(expText);
+    expDiv.style.display = '';
+  } else {
+    expDiv.style.display = 'none';
+    expDiv.innerHTML = '';
+  }
+
   const markBtn = document.getElementById('markBtn');
   if (state.reviewMode) { markBtn.style.display = 'none'; }
   else {
@@ -480,6 +498,24 @@ function selectAnswer(qId, letter) {
   socket.emit('answer', { questionId: qId, answer: letter });
   saveState(); saveBackup(); renderQuestion();
 }
+
+// Dev shortcut: Ctrl/Cmd+Shift+A rellena respuestas al azar y entrega
+document.addEventListener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'A' || e.key === 'a')) {
+    if (state.submitted || state.submitPending) return;
+    if (document.getElementById('examScreen').style.display === 'none') return;
+    e.preventDefault();
+    const letters = ['A', 'B', 'C', 'D'];
+    state.questions.forEach(q => {
+      const letter = letters[Math.floor(Math.random() * letters.length)];
+      state.answers[q.id] = letter;
+      socket.emit('answer', { questionId: q.id, answer: letter });
+    });
+    saveState(); saveBackup();
+    console.log('[dev] autofill aleatorio aplicado, entregando…');
+    startSubmitFlow();
+  }
+});
 function toggleMark() {
   if (state.submitted) return;
   const q = state.questions[state.currentQ];
@@ -583,6 +619,7 @@ function enterReviewMode(data) {
     state.timeUsed = Math.round((Date.now() - state.startTime) / 1000);
   }
   if (data && data.answerKey) state.answerKey = data.answerKey;
+  if (data && data.explanations) state.explanations = data.explanations;
   const correct = (data && data.correct != null) ? data.correct : null;
   const total = state.questions.length;
   document.getElementById('resultsName').textContent = state.name;
@@ -657,6 +694,40 @@ function downloadPDF() {
   }
   const fecha = new Date().toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
 
+  // Build topic breakdown (same logic as on-screen chart)
+  const topics = {};
+  state.questions.forEach(q => {
+    const key = q.topic_name || q.subject;
+    if (!topics[key]) topics[key] = { subject: q.subject, total: 0, correct: 0 };
+    topics[key].total++;
+    if (state.answers[q.id] === state.answerKey[q.id]) topics[key].correct++;
+  });
+  const sortedTopics = Object.entries(topics).sort((a, b) => {
+    return (b[1].correct / b[1].total) - (a[1].correct / a[1].total);
+  });
+  const topicRowsHTML = sortedTopics.map(([name, data]) => {
+    const pct = Math.round((data.correct / data.total) * 100);
+    const barColor = pct >= 70 ? '#16a34a' : pct >= 50 ? '#eab308' : '#e53e3e';
+    const pctColor = pct >= 70 ? '#16a34a' : pct >= 50 ? '#a16207' : '#e53e3e';
+    return `
+      <div style="margin-bottom:10px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:3px;">
+          <span style="font-size:11px; color:#555; flex:1; padding-right:8px;">${name}</span>
+          <span style="font-size:10px; color:#999; white-space:nowrap;">${data.subject}</span>
+          <span style="font-size:12px; font-weight:700; margin-left:8px; color:${pctColor};">${pct}%</span>
+        </div>
+        <div style="height:7px; background:#ebebeb; border-radius:4px; overflow:hidden;">
+          <div style="height:100%; width:${pct}%; background:${barColor}; border-radius:4px;"></div>
+        </div>
+        <div style="font-size:10px; color:#999; margin-top:2px;">${data.correct} de ${data.total} preguntas correctas</div>
+      </div>`;
+  }).join('');
+  const topicBreakdownHTML = sortedTopics.length > 0 ? `
+    <div style="margin:20px auto; max-width:480px; page-break-inside:avoid;">
+      <h3 style="font-size:14px; font-weight:600; margin-bottom:12px; text-align:center; color:#444;">Desempeño por tema</h3>
+      ${topicRowsHTML}
+    </div>` : '';
+
   // Group questions by subject in display order
   const questionsHTML = state.questions.map((q, idx) => {
     const mine = state.answers[q.id];
@@ -726,12 +797,18 @@ function downloadPDF() {
   <h1>${state.title || 'Examen'}</h1>
   <div style="font-size:15px; font-weight:600; margin-top:2px;">${state.name}</div>
   <div style="font-size:12px; color:#666;">${state.group} — ${fecha}</div>
+  <div style="display:flex; justify-content:center; margin:16px 0 10px;">
+    <div style="width:160px; height:160px; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:700; background:${correct === null ? '#f1f5f9' : correct >= 95 ? '#dcfce7' : correct >= 51 ? '#fef9c3' : '#fef2f2'}; color:${correct === null ? '#475569' : correct >= 95 ? '#16a34a' : correct >= 51 ? '#a16207' : '#e53e3e'};">
+      <span style="font-size:46px; line-height:1;">${correct !== null ? correct : '—'}</span>
+      <span style="font-size:13px; font-weight:500; opacity:0.8; margin-top:4px;">${correct !== null ? `de ${total} aciertos` : 'examen entregado'}</span>
+    </div>
+  </div>
   <div class="stats">
-    <div class="stat-box"><div class="stat-val" style="color:${correct !== null && correct >= Math.ceil(total * 0.6) ? '#16a34a' : '#e53e3e'}">${correct !== null ? correct : '—'}</div><div class="stat-label">de ${total} aciertos</div></div>
     <div class="stat-box"><div class="stat-val">${correct !== null ? Math.round(correct / total * 100) : '—'}%</div><div class="stat-label">calificación</div></div>
     <div class="stat-box"><div class="stat-val" style="font-size:20px; margin-top:6px;">${timeStr}</div><div class="stat-label">tiempo</div></div>
   </div>
 </div>
+${topicBreakdownHTML}
 ${questionsHTML}
 <button class="print-btn no-print" onclick="window.print()">Guardar como PDF</button>
 </body></html>`;
@@ -865,7 +942,7 @@ socket.on('examReset', () => {
   if (state.submitRetryTimer) { clearTimeout(state.submitRetryTimer); state.submitRetryTimer = null; }
   hideSubmitOverlay();
   const rc = state.roomCode;
-  state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: rc, timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null };
+  state = { questions: [], answers: {}, answerKey: {}, explanations: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: rc, timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null };
   try { localStorage.removeItem('examState'); } catch(e) {}
   clearBackup();
   document.getElementById('reviewBanner').style.display = 'none';

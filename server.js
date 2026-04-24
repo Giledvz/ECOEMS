@@ -65,6 +65,7 @@ function createRoom(data) {
         topic: q.topic,
         topic_name: q.topic_name || '',
         subject: section.subject,
+        explanation: q.explanation || '',
       });
       room.answerKey[q.id] = q.answer;
     });
@@ -372,6 +373,9 @@ io.on('connection', (socket) => {
       joinPayload.submitted = true;
       joinPayload.correct = correct;
       joinPayload.answerKey = student.answerKey ?? room.answerKey;
+      joinPayload.explanations = Object.fromEntries(
+        room.questions.map(q => [q.id, q.explanation || ''])
+      );
     }
 
     socket.emit('joined', joinPayload);
@@ -443,6 +447,9 @@ io.on('connection', (socket) => {
       correct,
       total: room.questions.length,
       answerKey: student.answerKey ?? room.answerKey,
+      explanations: Object.fromEntries(
+        room.questions.map(q => [q.id, q.explanation || ''])
+      ),
     };
 
     if (typeof ack === 'function') ack(payload);
@@ -486,6 +493,9 @@ io.on('connection', (socket) => {
             correct,
             total: room.questions.length,
             answerKey: s.answerKey ?? room.answerKey,
+            explanations: Object.fromEntries(
+              room.questions.map(q => [q.id, q.explanation || ''])
+            ),
           });
         }
       }
