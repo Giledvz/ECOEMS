@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 620" width="700" height="620" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="ahHollow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
+    </marker>
+    <marker id="axArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="620" fill="#ffffff"/>
+
+  <!-- Tabla de senos y cosenos -->
+  <g font-size="18" fill="#1a1a1a">
+    <!-- Bordes externos e internos -->
+    <rect x="200" y="30" width="300" height="140" fill="none" stroke="#1a1a1a" stroke-width="1.6"/>
+    <line x1="300" y1="30" x2="300" y2="170" stroke="#1a1a1a" stroke-width="1.6"/>
+    <line x1="400" y1="30" x2="400" y2="170" stroke="#1a1a1a" stroke-width="1.6"/>
+    <line x1="200" y1="65" x2="500" y2="65" stroke="#1a1a1a" stroke-width="1.6"/>
+    <line x1="200" y1="100" x2="500" y2="100" stroke="#1a1a1a" stroke-width="1.6"/>
+    <line x1="200" y1="135" x2="500" y2="135" stroke="#1a1a1a" stroke-width="1.6"/>
+
+    <!-- Encabezados -->
+    <text x="250" y="54" text-anchor="middle" font-weight="600">Ángulo</text>
+    <text x="350" y="54" text-anchor="middle" font-weight="600">Seno</text>
+    <text x="450" y="54" text-anchor="middle" font-weight="600">Coseno</text>
+
+    <!-- Filas -->
+    <text x="250" y="89" text-anchor="middle">30°</text>
+    <text x="350" y="89" text-anchor="middle">0.5</text>
+    <text x="450" y="89" text-anchor="middle">0.8</text>
+
+    <text x="250" y="124" text-anchor="middle">45°</text>
+    <text x="350" y="124" text-anchor="middle">0.7</text>
+    <text x="450" y="124" text-anchor="middle">0.7</text>
+
+    <text x="250" y="159" text-anchor="middle">75°</text>
+    <text x="350" y="159" text-anchor="middle">0.9</text>
+    <text x="450" y="159" text-anchor="middle">0.3</text>
+  </g>
+
+  <!-- Sistema de vectores. Origen en (350, 380) -->
+  <!-- Eje x (negativo y positivo) -->
+  <line x1="180" y1="380" x2="540" y2="380" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#axArrow)"/>
+  <!-- Eje y -->
+  <line x1="350" y1="580" x2="350" y2="220" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#axArrow)"/>
+
+  <!-- Etiquetas de ejes -->
+  <text x="358" y="240" font-size="20" font-style="italic">y</text>
+  <text x="552" y="386" font-size="20" font-style="italic">x</text>
+
+  <!-- Vector 8 N a 30° sobre +x (cuadrante I) -->
+  <!-- (350, 380) → +(80*0.8, -80*0.5) = (414, 340) -->
+  <line x1="350" y1="380" x2="414" y2="340" stroke="#1a1a1a" stroke-width="2.6" marker-end="url(#ahHollow)"/>
+  <text x="425" y="335" font-size="20" font-weight="600">8 N</text>
+  <!-- Arco de 30° (radio 35) -->
+  <path d="M 385 380 A 35 35 0 0 0 380.3 362.5" fill="none" stroke="#1a1a1a" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <text x="392" y="372" font-size="16">30°</text>
+
+  <!-- Vector 9 N a 75° debajo de +x (cuadrante IV) -->
+  <!-- (350, 380) → +(90*0.3, +90*0.9) = (377, 461) -->
+  <line x1="350" y1="380" x2="377" y2="461" stroke="#1a1a1a" stroke-width="2.6" marker-end="url(#ahHollow)"/>
+  <text x="395" y="465" font-size="20" font-weight="600">9 N</text>
+  <!-- Arco de 75° -->
+  <path d="M 388 380 A 38 38 0 0 1 359.8 416.7" fill="none" stroke="#1a1a1a" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <text x="380" y="420" font-size="16">75°</text>
+
+  <!-- Vector 10 N a 45° debajo de -x (cuadrante III) -->
+  <!-- (350, 380) → +(-100*0.7, +100*0.7) = (280, 450) -->
+  <line x1="350" y1="380" x2="280" y2="450" stroke="#1a1a1a" stroke-width="2.6" marker-end="url(#ahHollow)"/>
+  <text x="262" y="475" font-size="20" font-weight="600">10 N</text>
+  <!-- Arco de 45° -->
+  <path d="M 308 380 A 42 42 0 0 1 320.3 410.3" fill="none" stroke="#1a1a1a" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <text x="300" y="403" font-size="16" text-anchor="end">45°</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 440" width="540" height="440" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="540" height="440" fill="#ffffff"/>
+
+  <!-- Triángulo: C=(120,360) ángulo recto, B=(120,80), A=(440,360) -->
+  <path d="M 120 360 L 120 80 L 440 360 Z" fill="#f8fafc" stroke="#1a1a1a" stroke-width="2.2"/>
+
+  <!-- Cuadrito de ángulo recto en C -->
+  <path d="M 120 340 L 140 340 L 140 360" fill="none" stroke="#1a1a1a" stroke-width="1.8"/>
+
+  <!-- Etiquetas de vértices -->
+  <text x="105" y="385" font-size="24" font-weight="600">C</text>
+  <text x="105" y="65" font-size="24" font-weight="600">B</text>
+  <text x="448" y="385" font-size="24" font-weight="600">A</text>
+
+  <!-- Etiquetas de lados -->
+  <text x="100" y="225" text-anchor="end" font-size="22">3</text>
+  <text x="280" y="385" text-anchor="middle" font-size="22">4</text>
+  <text x="295" y="208" font-size="22" transform="rotate(-41.2 295 208)">5</text>
+</svg>

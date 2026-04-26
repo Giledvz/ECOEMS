@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 220" width="660" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="660" height="220" fill="#ffffff"/>
+
+  <!-- Tabla periódica simplificada: 18 columnas x 4 filas. Cada celda 32x40 px. -->
+  <!-- Origen: x=30, y=20. Total: 18*32=576 ancho, 4*40=160 alto. -->
+
+  <g stroke="#1a1a1a" stroke-width="1.4" fill="#ffffff">
+    <!-- Filas y columnas: dibujamos la cuadrícula completa -->
+    <g>
+      <!-- Línea horizontal superior -->
+      <line x1="30" y1="20" x2="606" y2="20"/>
+      <line x1="30" y1="60" x2="606" y2="60"/>
+      <line x1="30" y1="100" x2="606" y2="100"/>
+      <line x1="30" y1="140" x2="606" y2="140"/>
+      <line x1="30" y1="180" x2="606" y2="180"/>
+    </g>
+    <g>
+      <!-- Verticales (19 líneas) -->
+      <line x1="30"  y1="20" x2="30"  y2="180"/>
+      <line x1="62"  y1="20" x2="62"  y2="180"/>
+      <line x1="94"  y1="20" x2="94"  y2="180"/>
+      <line x1="126" y1="20" x2="126" y2="180"/>
+      <line x1="158" y1="20" x2="158" y2="180"/>
+      <line x1="190" y1="20" x2="190" y2="180"/>
+      <line x1="222" y1="20" x2="222" y2="180"/>
+      <line x1="254" y1="20" x2="254" y2="180"/>
+      <line x1="286" y1="20" x2="286" y2="180"/>
+      <line x1="318" y1="20" x2="318" y2="180"/>
+      <line x1="350" y1="20" x2="350" y2="180"/>
+      <line x1="382" y1="20" x2="382" y2="180"/>
+      <line x1="414" y1="20" x2="414" y2="180"/>
+      <line x1="446" y1="20" x2="446" y2="180"/>
+      <line x1="478" y1="20" x2="478" y2="180"/>
+      <line x1="510" y1="20" x2="510" y2="180"/>
+      <line x1="542" y1="20" x2="542" y2="180"/>
+      <line x1="574" y1="20" x2="574" y2="180"/>
+      <line x1="606" y1="20" x2="606" y2="180"/>
+    </g>
+  </g>
+
+  <!-- Símbolos de los elementos -->
+  <g font-size="20" font-weight="600" text-anchor="middle" fill="#1a1a1a">
+    <!-- Li: fila 1, columna 1 → centro celda (46, 40) -->
+    <text x="46" y="48">Li</text>
+    <!-- O: fila 1, columna 16 → centro celda (510, 40) -->
+    <text x="510" y="48">O</text>
+    <!-- Sr: fila 3, columna 2 → centro celda (78, 120) -->
+    <text x="78" y="128">Sr</text>
+    <!-- I: fila 3, columna 17 → centro celda (542, 120) -->
+    <text x="542" y="128" font-style="italic">I</text>
+  </g>
+</svg>

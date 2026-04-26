@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif" font-size="24" font-weight="600">
+  <rect width="540" height="540" fill="#ffffff"/>
+
+  <!-- Cada electrón como círculo lleno radio 2.4 -->
+  <g fill="#1a1a1a">
+
+    <!-- ============== A) H:Ö:Ö:H — H y O alineados, lone pairs arriba/abajo de cada O, enlaces H-O y O-O simples ============== -->
+    <text x="40" y="98" fill="#1a1a1a">A)</text>
+    <text x="90" y="98" fill="#1a1a1a">H</text>
+    <!-- enlace H-O₁ (2 puntos) -->
+    <circle cx="135" cy="86"  r="2.4"/>
+    <circle cx="135" cy="100" r="2.4"/>
+    <text x="155" y="98" fill="#1a1a1a">O</text>
+    <!-- lone pair arriba O₁ -->
+    <circle cx="160" cy="68" r="2.4"/>
+    <circle cx="174" cy="68" r="2.4"/>
+    <!-- lone pair abajo O₁ -->
+    <circle cx="160" cy="118" r="2.4"/>
+    <circle cx="174" cy="118" r="2.4"/>
+    <!-- enlace O₁-O₂ (2 puntos) -->
+    <circle cx="200" cy="86"  r="2.4"/>
+    <circle cx="200" cy="100" r="2.4"/>
+    <text x="220" y="98" fill="#1a1a1a">O</text>
+    <!-- lone pair arriba O₂ -->
+    <circle cx="225" cy="68" r="2.4"/>
+    <circle cx="239" cy="68" r="2.4"/>
+    <!-- lone pair abajo O₂ -->
+    <circle cx="225" cy="118" r="2.4"/>
+    <circle cx="239" cy="118" r="2.4"/>
+    <!-- enlace O₂-H (2 puntos) -->
+    <circle cx="265" cy="86"  r="2.4"/>
+    <circle cx="265" cy="100" r="2.4"/>
+    <text x="285" y="98" fill="#1a1a1a">H</text>
+
+    <!-- ============== B) H:O::O:H — doble enlace entre O's, sin lone pairs ============== -->
+    <text x="40" y="218" fill="#1a1a1a">B)</text>
+    <text x="90" y="218" fill="#1a1a1a">H</text>
+    <circle cx="135" cy="206" r="2.4"/>
+    <circle cx="135" cy="220" r="2.4"/>
+    <text x="155" y="218" fill="#1a1a1a">O</text>
+    <!-- enlace doble O-O (4 puntos en 2 columnas) -->
+    <circle cx="194" cy="206" r="2.4"/>
+    <circle cx="194" cy="220" r="2.4"/>
+    <circle cx="208" cy="206" r="2.4"/>
+    <circle cx="208" cy="220" r="2.4"/>
+    <text x="226" y="218" fill="#1a1a1a">O</text>
+    <circle cx="266" cy="206" r="2.4"/>
+    <circle cx="266" cy="220" r="2.4"/>
+    <text x="286" y="218" fill="#1a1a1a">H</text>
+
+    <!-- ============== C) H:O::Ö, H abajo (estructura ramificada incorrecta) ============== -->
+    <text x="40" y="338" fill="#1a1a1a">C)</text>
+    <text x="90" y="338" fill="#1a1a1a">H</text>
+    <circle cx="135" cy="326" r="2.4"/>
+    <circle cx="135" cy="340" r="2.4"/>
+    <text x="155" y="338" fill="#1a1a1a">O</text>
+    <!-- doble enlace O-O -->
+    <circle cx="194" cy="326" r="2.4"/>
+    <circle cx="194" cy="340" r="2.4"/>
+    <circle cx="208" cy="326" r="2.4"/>
+    <circle cx="208" cy="340" r="2.4"/>
+    <text x="226" y="338" fill="#1a1a1a">O</text>
+    <!-- lone pair arriba O₂ -->
+    <circle cx="231" cy="308" r="2.4"/>
+    <circle cx="245" cy="308" r="2.4"/>
+    <!-- H debajo del primer O (O₁) -->
+    <text x="155" y="378" fill="#1a1a1a">H</text>
+    <!-- 2 puntos de enlace entre O₁ y H (alineados verticalmente bajo O₁) -->
+    <circle cx="159" cy="350" r="2.4"/>
+    <circle cx="171" cy="350" r="2.4"/>
+
+    <!-- ============== D) :Ö:H:H:Ö: ============== -->
+    <text x="40" y="458" fill="#1a1a1a">D)</text>
+    <!-- lone pair izquierdo de O₁ -->
+    <circle cx="68" cy="446" r="2.4"/>
+    <circle cx="68" cy="460" r="2.4"/>
+    <text x="84" y="458" fill="#1a1a1a">O</text>
+    <!-- lone pair arriba de O₁ -->
+    <circle cx="89" cy="428" r="2.4"/>
+    <circle cx="103" cy="428" r="2.4"/>
+    <!-- lone pair abajo de O₁ -->
+    <circle cx="89" cy="478" r="2.4"/>
+    <circle cx="103" cy="478" r="2.4"/>
+    <!-- enlace O₁-H -->
+    <circle cx="129" cy="446" r="2.4"/>
+    <circle cx="129" cy="460" r="2.4"/>
+    <text x="148" y="458" fill="#1a1a1a">H</text>
+    <!-- "enlace" H-H -->
+    <circle cx="183" cy="446" r="2.4"/>
+    <circle cx="183" cy="460" r="2.4"/>
+    <text x="200" y="458" fill="#1a1a1a">H</text>
+    <!-- enlace H-O₂ -->
+    <circle cx="237" cy="446" r="2.4"/>
+    <circle cx="237" cy="460" r="2.4"/>
+    <text x="256" y="458" fill="#1a1a1a">O</text>
+    <!-- lone pair arriba de O₂ -->
+    <circle cx="261" cy="428" r="2.4"/>
+    <circle cx="275" cy="428" r="2.4"/>
+    <!-- lone pair abajo de O₂ -->
+    <circle cx="261" cy="478" r="2.4"/>
+    <circle cx="275" cy="478" r="2.4"/>
+    <!-- lone pair derecho de O₂ -->
+    <circle cx="297" cy="446" r="2.4"/>
+    <circle cx="297" cy="460" r="2.4"/>
+  </g>
+</svg>
