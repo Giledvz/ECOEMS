@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="700" height="420" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="700" height="420" fill="#ffffff"/>
+
+  <!-- Triángulo: A=(140,350), B=(560,350), C=(260,140) -->
+  <path d="M 140 350 L 560 350 L 260 140 Z" fill="#f8fafc" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Puntos -->
+  <circle cx="140" cy="350" r="3.5" fill="#1a1a1a"/>
+  <circle cx="560" cy="350" r="3.5" fill="#1a1a1a"/>
+  <circle cx="260" cy="140" r="3.5" fill="#1a1a1a"/>
+
+  <!-- Etiquetas de vértices -->
+  <text x="122" y="375" font-size="22" font-weight="600">A</text>
+  <text x="570" y="375" font-size="22" font-weight="600">B</text>
+  <text x="248" y="127" font-size="22" font-weight="600">C</text>
+
+  <!-- Arco ángulo A = 60° -->
+  <path d="M 190 350 A 50 50 0 0 0 165 307" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="200" y="322" font-size="17" fill="#1d4ed8" font-weight="600">60°</text>
+
+  <!-- Arco ángulo B = ? -->
+  <path d="M 525 350 A 35 35 0 0 1 531.3 330" fill="none" stroke="#c2410c" stroke-width="2"/>
+  <text x="508" y="337" text-anchor="end" font-size="17" fill="#c2410c" font-weight="600">
+    <tspan font-style="italic">B</tspan><tspan> = ?</tspan>
+  </text>
+
+  <!-- Etiquetas de lados -->
+  <!-- lado a (opuesto a A, entre B y C) -->
+  <text x="445" y="232" font-size="19" fill="#16a34a">
+    <tspan font-style="italic">a</tspan><tspan> = 6</tspan>
+  </text>
+  <!-- lado b (opuesto a B, entre A y C) -->
+  <text x="150" y="232" text-anchor="end" font-size="19" fill="#16a34a">
+    <tspan font-style="italic">b</tspan><tspan> = 4</tspan>
+  </text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="ahBlack" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="ahBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/>
+    </marker>
+    <marker id="ahRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b91c1c"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#555" stroke-width="0.9"/>
+    </pattern>
+  </defs>
+
+  <rect width="720" height="440" fill="#ffffff"/>
+
+  <!-- Surface -->
+  <line x1="40" y1="310" x2="680" y2="310" stroke="#1a1a1a" stroke-width="2.2"/>
+  <rect x="40" y="310" width="640" height="22" fill="url(#hatch)"/>
+
+  <!-- Block -->
+  <rect x="280" y="250" width="160" height="60" fill="#e8edf3" stroke="#1a1a1a" stroke-width="1.8" rx="1.5"/>
+  <text x="360" y="287" text-anchor="middle" font-size="20" font-weight="500" fill="#1a1a1a">3 kg</text>
+
+  <!-- Applied force F → right -->
+  <line x1="440" y1="280" x2="590" y2="280" stroke="#1d4ed8" stroke-width="2.4" marker-end="url(#ahBlue)"/>
+  <text x="515" y="265" text-anchor="middle" font-size="20" fill="#1d4ed8">
+    <tspan font-style="italic">F</tspan><tspan> = 18 N</tspan>
+  </text>
+
+  <!-- Friction f ← left -->
+  <line x1="280" y1="280" x2="160" y2="280" stroke="#b91c1c" stroke-width="2.4" marker-end="url(#ahRed)"/>
+  <text x="220" y="265" text-anchor="middle" font-size="20" fill="#b91c1c" font-style="italic">f</text>
+
+  <!-- Normal N ↑ -->
+  <line x1="360" y1="250" x2="360" y2="130" stroke="#1a1a1a" stroke-width="2.4" marker-end="url(#ahBlack)"/>
+  <text x="376" y="170" font-size="20" font-style="italic" fill="#1a1a1a">N</text>
+
+  <!-- Weight W ↓ -->
+  <line x1="360" y1="310" x2="360" y2="408" stroke="#1a1a1a" stroke-width="2.4" marker-end="url(#ahBlack)"/>
+  <text x="376" y="385" font-size="20" fill="#1a1a1a">
+    <tspan font-style="italic">W</tspan><tspan> = </tspan><tspan font-style="italic">mg</tspan>
+  </text>
+
+  <!-- μ label -->
+  <text x="580" y="355" font-size="17" fill="#333">
+    <tspan font-style="italic">μ</tspan><tspan> = 0.2</tspan>
+  </text>
+</svg>

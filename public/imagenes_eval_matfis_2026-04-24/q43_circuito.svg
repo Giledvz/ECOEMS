@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 340" width="700" height="340" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="700" height="340" fill="#ffffff"/>
+
+  <!-- Cable superior, R1 y tramo hasta la bifurcación -->
+  <line x1="70" y1="100" x2="140" y2="100" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M 140 100 h 6 l 6 -12 l 12 24 l 12 -24 l 12 24 l 12 -24 l 6 12 h 6" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="212" y1="100" x2="330" y2="100" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Bifurcación hacia ramas -->
+  <line x1="330" y1="100" x2="330" y2="50" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="330" y1="100" x2="330" y2="150" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Rama superior: R2 -->
+  <line x1="330" y1="50" x2="400" y2="50" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M 400 50 h 6 l 6 -12 l 12 24 l 12 -24 l 12 24 l 12 -24 l 6 12 h 6" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="472" y1="50" x2="570" y2="50" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="570" y1="50" x2="570" y2="100" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Rama inferior: R3 -->
+  <line x1="330" y1="150" x2="400" y2="150" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M 400 150 h 6 l 6 -12 l 12 24 l 12 -24 l 12 24 l 12 -24 l 6 12 h 6" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="472" y1="150" x2="570" y2="150" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="570" y1="150" x2="570" y2="100" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Cable de vuelta -->
+  <line x1="570" y1="100" x2="630" y2="100" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="630" y1="100" x2="630" y2="270" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="630" y1="270" x2="70" y2="270" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Cable que baja hacia la batería -->
+  <line x1="70" y1="100" x2="70" y2="165" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="70" y1="205" x2="70" y2="270" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Batería: dos celdas alternadas -->
+  <line x1="50" y1="170" x2="90" y2="170" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="60" y1="180" x2="80" y2="180" stroke="#1a1a1a" stroke-width="3.5"/>
+  <line x1="50" y1="192" x2="90" y2="192" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="60" y1="202" x2="80" y2="202" stroke="#1a1a1a" stroke-width="3.5"/>
+
+  <!-- Nodos de bifurcación -->
+  <circle cx="330" cy="100" r="3.2" fill="#1a1a1a"/>
+  <circle cx="570" cy="100" r="3.2" fill="#1a1a1a"/>
+
+  <!-- Etiqueta de la fuente -->
+  <text x="38" y="192" text-anchor="end" font-size="18">24 V</text>
+
+  <!-- Etiquetas de resistencias -->
+  <text x="176" y="84" text-anchor="middle" font-size="18">
+    <tspan font-style="italic">R</tspan><tspan baseline-shift="sub" font-size="13">1</tspan><tspan> = 3 Ω</tspan>
+  </text>
+  <text x="436" y="34" text-anchor="middle" font-size="18">
+    <tspan font-style="italic">R</tspan><tspan baseline-shift="sub" font-size="13">2</tspan><tspan> = 6 Ω</tspan>
+  </text>
+  <text x="436" y="184" text-anchor="middle" font-size="18">
+    <tspan font-style="italic">R</tspan><tspan baseline-shift="sub" font-size="13">3</tspan><tspan> = 6 Ω</tspan>
+  </text>
+</svg>
