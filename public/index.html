@@ -681,7 +681,19 @@ function renderTopicBreakdown() {
 }
 
 function downloadPDF() {
-  const correct = Object.keys(state.answerKey).length > 0
+  try { _downloadPDFImpl(); }
+  catch (err) {
+    console.error('downloadPDF error:', err);
+    alert('No se pudo generar el comprobante: ' + (err && err.message ? err.message : err));
+  }
+}
+
+function _downloadPDFImpl() {
+  if (!state.questions || state.questions.length === 0) {
+    alert('Aun no hay datos del examen para generar el comprobante.');
+    return;
+  }
+  const correct = Object.keys(state.answerKey || {}).length > 0
     ? state.questions.filter(q => state.answers[q.id] === state.answerKey[q.id]).length
     : null;
   const total = state.questions.length;
@@ -778,9 +790,12 @@ function downloadPDF() {
       </div>`;
   }).join('');
 
+  const origin = window.location.origin;
   const html = `<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="${origin}/">
 <title>Comprobante — ${state.name}</title>
-<link rel="stylesheet" href="/katex.min.css">
+<link rel="stylesheet" href="${origin}/katex.min.css">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding:20px; color:#1a1a1a; font-size:13px; }
@@ -792,6 +807,7 @@ function downloadPDF() {
   .stat-val { font-size:28px; font-weight:700; }
   .stat-label { font-size:11px; color:#666; }
   .print-btn { display:block; margin:20px auto; padding:14px 40px; font-size:16px; font-weight:600; background:#2c5282; color:#fff; border:none; border-radius:10px; cursor:pointer; }
+  .hint { max-width:520px; margin:12px auto 0; padding:10px 14px; background:#ebf4ff; border:1px solid #bfdbfe; border-radius:8px; color:#1e3a8a; font-size:12px; text-align:center; line-height:1.5; }
 </style></head><body>
 <div class="header">
   <h1>${state.title || 'Examen'}</h1>
@@ -807,15 +823,68 @@ function downloadPDF() {
     <div class="stat-box"><div class="stat-val">${correct !== null ? Math.round(correct / total * 100) : '—'}%</div><div class="stat-label">calificación</div></div>
     <div class="stat-box"><div class="stat-val" style="font-size:20px; margin-top:6px;">${timeStr}</div><div class="stat-label">tiempo</div></div>
   </div>
+  <p class="hint no-print">Para guardar como PDF: aprieta <b>Guardar como PDF</b> abajo, o usa <b>Compartir → Imprimir → Guardar en Archivos</b> (iPad).</p>
 </div>
 ${topicBreakdownHTML}
 ${questionsHTML}
 <button class="print-btn no-print" onclick="window.print()">Guardar como PDF</button>
 </body></html>`;
 
-  const w = window.open('', '_blank');
-  if (w) { w.document.write(html); w.document.close(); }
-  else { alert('Permite las ventanas emergentes para descargar el comprobante.'); }
+  // Iframe con srcdoc: hereda el origen de la pagina, asi las imagenes y el CSS de KaTeX
+  // (rutas relativas al server) cargan sin problema. Disparamos print directo sobre el
+  // iframe para que el usuario reciba el dialogo de impresion (Save as PDF en Mac,
+  // Compartir -> Imprimir en iPad).
+  const existing = document.getElementById('pdfIframe');
+  if (existing) existing.parentNode.removeChild(existing);
+
+  const iframe = document.createElement('iframe');
+  iframe.id = 'pdfIframe';
+  iframe.style.position = 'fixed';
+  iframe.style.left = '-10000px';
+  iframe.style.top = '0';
+  iframe.style.width = '900px';
+  iframe.style.height = '1200px';
+  iframe.style.border = '0';
+  iframe.setAttribute('aria-hidden', 'true');
+  iframe.srcdoc = html;
+
+  let triggered = false;
+  function triggerPrint() {
+    if (triggered) return;
+    triggered = true;
+    try {
+      iframe.contentWindow.focus();
+      iframe.contentWindow.print();
+    } catch (err) {
+      console.error('Print iframe failed, abriendo en ventana:', err);
+      // Fallback: abrir la misma vista en ventana nueva via blob URL
+      try {
+        const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const w = window.open(url, '_blank');
+        if (!w) {
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = `comprobante_${(state.name || 'examen').replace(/\s+/g, '_')}.html`;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        }
+        setTimeout(() => URL.revokeObjectURL(url), 60000);
+      } catch (e) { alert('No se pudo generar el comprobante.'); }
+    }
+    // Limpiar iframe despues de que el dialogo se cierre
+    setTimeout(() => { try { iframe.parentNode.removeChild(iframe); } catch(e) {} }, 10000);
+  }
+
+  iframe.onload = () => {
+    // Esperar un momento extra para que imagenes y KaTeX CSS terminen de cargar
+    setTimeout(triggerPrint, 400);
+  };
+  // Red de seguridad si onload nunca dispara
+  setTimeout(triggerPrint, 3000);
+
+  document.body.appendChild(iframe);
 }
 
 function startReview() {
