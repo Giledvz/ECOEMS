@@ -1,0 +1,1637 @@
+{
+  "exam": {
+    "title": "Simulacro — Examen de Ingreso a la Licenciatura UNAM Área 4 (2026)",
+    "group": "Universidad",
+    "date": "2026-04-26",
+    "version": "1.0",
+    "total_questions": 120,
+    "students": [
+      "Yuri",
+      "Esme"
+    ],
+    "instructions": "Selecciona la opción correcta para cada pregunta. No se permite el uso de calculadora. Para los problemas de Física usa $g=10\\,\\text{m/s}^2$ salvo que se indique otra cosa.",
+    "sections": [
+      {
+        "subject": "Física",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 1,
+            "topic": "1.2",
+            "topic_name": "Rapidez promedio",
+            "text": "La tripulación del Apolo XI tuvo que recorrer en tres días la distancia de $3.8\\times 10^{15}$ km para llegar a la Luna. ¿Cuál fue la rapidez promedio de la nave?",
+            "options": {
+              "A": "$5.3\\times 10^{13}\\,\\dfrac{\\text{km}}{\\text{día}}$",
+              "B": "$5.3\\times 10^{13}\\,\\dfrac{\\text{km}}{\\text{h}}$",
+              "C": "$5.3\\times 10^{11}\\,\\dfrac{\\text{km}}{\\text{h}}$",
+              "D": "$5.3\\times 10^{11}\\,\\dfrac{\\text{km}}{\\text{min}}$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 2,
+            "topic": "1.3",
+            "topic_name": "Aceleración media",
+            "text": "En el análisis del movimiento de un velocista, se observa que pasa de $0$ a $1.6\\,\\dfrac{\\text{m}}{\\text{s}}$ en la primera zancada, alcanza los $3.2\\,\\dfrac{\\text{m}}{\\text{s}}$ en la segunda zancada y en la tercer zancada logra $4.8\\,\\dfrac{\\text{m}}{\\text{s}}$. Si cada zancada la realizó aproximadamente $0.8$ segundos, ¿cuál fue su aceleración media?",
+            "options": {
+              "A": "$1\\,\\dfrac{\\text{m}}{\\text{s}^2}$",
+              "B": "$4\\,\\dfrac{\\text{m}}{\\text{s}^2}$",
+              "C": "$6\\,\\dfrac{\\text{m}}{\\text{s}^2}$",
+              "D": "$2\\,\\dfrac{\\text{m}}{\\text{s}^2}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 3,
+            "topic": "2.6",
+            "topic_name": "Segunda ley de Newton — fuerzas opuestas",
+            "text": "Sobre un objeto de $100\\,\\text{kg}$ se aplican dos fuerzas (una de $20\\,\\text{N}$ y otra de $30\\,\\text{N}$) con la misma dirección, pero de sentido contrario, ¿cuál es la magnitud de la aceleración del objeto?",
+            "options": {
+              "A": "$0.1\\,\\dfrac{\\text{m}}{\\text{s}^2}$",
+              "B": "$0.2\\,\\dfrac{\\text{m}}{\\text{s}^2}$",
+              "C": "$0.3\\,\\dfrac{\\text{m}}{\\text{s}^2}$",
+              "D": "$0.5\\,\\dfrac{\\text{m}}{\\text{s}^2}$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 4,
+            "topic": "2.5",
+            "topic_name": "Caída libre",
+            "text": "Una caja de $50\\,\\text{kg}$ está dentro de un elevador cuando se rompe la cuerda de acero y cae. Durante la caída, ¿cuál es la fuerza en Newtons que el piso del elevador ejerce sobre la base de la caja? Considera $g=10\\,\\dfrac{\\text{m}}{\\text{s}^2}$.",
+            "options": {
+              "A": "$5\\,000\\,\\text{N}$",
+              "B": "$50\\,\\text{N}$",
+              "C": "$5\\,\\text{N}$",
+              "D": "$0\\,\\text{N}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 5,
+            "topic": "3.7",
+            "topic_name": "Conservación del momento",
+            "text": "Un niño está parado sobre un carrito, ambos en reposo, el primero pesa $30\\,\\text{kg}$ y cuando salta hacia adelante a $2\\,\\dfrac{\\text{m}}{\\text{s}}$, el carrito es lanzado hacia atrás a $12\\,\\dfrac{\\text{m}}{\\text{s}}$. Si se desprecia la fricción, ¿cuál es la masa del carrito?",
+            "options": {
+              "A": "$6.0\\,\\text{kg}$",
+              "B": "$5.0\\,\\text{kg}$",
+              "C": "$2.5\\,\\text{kg}$",
+              "D": "$0.8\\,\\text{kg}$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 6,
+            "topic": "4.1.3",
+            "topic_name": "Conversión Celsius — Kelvin",
+            "text": "Para convertir un valor de temperatura Celsius $T_C$ a su valor equivalente en la escala Kelvin $T_K$ de temperaturas, se emplea la expresión",
+            "options": {
+              "A": "$T_K=(T_C-32)/1.8$",
+              "B": "$T_K=T_C+273$",
+              "C": "$T_K=T_C-273$",
+              "D": "$T_K=1.8(T_C+273)$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 7,
+            "topic": "4.1.4",
+            "topic_name": "Calor específico",
+            "text": "A la cantidad de calor que necesita un gramo de una sustancia para elevar su temperatura un grado Celsius, se le conoce como",
+            "options": {
+              "A": "capacidad térmica.",
+              "B": "calor latente de fusión.",
+              "C": "calor latente de vaporización.",
+              "D": "capacidad térmica específica."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 8,
+            "topic": "5.3",
+            "topic_name": "Interferencia de ondas",
+            "text": "Para explicar la interferencia constructiva o destructiva de dos ondas, se debe considerar",
+            "options": {
+              "A": "la amplitud de ambas ondas.",
+              "B": "la superposición entre ambas ondas.",
+              "C": "que ambas ondas sean longitudinales.",
+              "D": "que ambas ondas sean transversales."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 9,
+            "topic": "6.2",
+            "topic_name": "Campo eléctrico — unidades",
+            "text": "El campo eléctrico es una cantidad vectorial y su magnitud se mide en",
+            "options": {
+              "A": "$\\dfrac{\\text{N}}{\\text{kg}}$",
+              "B": "$\\dfrac{\\text{N}}{\\text{C}}$",
+              "C": "$\\dfrac{\\text{N}}{\\text{s}}$",
+              "D": "$\\dfrac{\\text{J}}{\\text{s}}$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 10,
+            "topic": "7.1.3",
+            "topic_name": "Principio de Arquímedes",
+            "text": "El Principio de Arquímedes se refiere a",
+            "options": {
+              "A": "la ganancia en fuerza que hay entre dos émbolos de diferente área transversal cuando a uno de ellos se le aplica una fuerza.",
+              "B": "el aumento de velocidad de un fluido a través de un conducto que disminuye su área transversal.",
+              "C": "la fuerza de empuje que hacia arriba recibe todo cuerpo que es sumergido total o parcialmente en un fluido.",
+              "D": "que la presión que se aplica en un punto de un fluido y se distribuye uniformemente en todas direcciones."
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Literatura",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 11,
+            "topic": "1.3.3",
+            "topic_name": "Tipos de texto periodístico",
+            "text": "¿Cómo se denomina el enunciado que se encuentra subrayado en el siguiente ejemplo?\n\nESTE MIÉRCOLES SE ESPERAN VARIAS MARCHAS EN LA CDMX\n\nLas autoridades recomiendan a la población evitar las zonas afectadas.\n\nCiudad de México, México. – La Secretaría de Gobierno de la Ciudad de México informó que este día se esperan varias marchas que afectarán la circulación vial en la ciudad...\n\nMiércoles 19 de octubre de 2016. Publimetro",
+            "options": {
+              "A": "Antetítulo o epígrafe.",
+              "B": "Encabezado o titular.",
+              "C": "Entrada o lead.",
+              "D": "Balazo o bajada."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 12,
+            "topic": "1.4",
+            "topic_name": "Texto dramático — características",
+            "text": "Además del diálogo, dos características del texto dramático son",
+            "options": {
+              "A": "acotaciones y prescindir de narrador.",
+              "B": "descripción y escenografías.",
+              "C": "actos y necesitar un narrador.",
+              "D": "vestuario y personajes."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 13,
+            "topic": "1.5",
+            "topic_name": "Texto poético",
+            "text": "El texto poético tiene como característica que",
+            "options": {
+              "A": "describe una noticia sentimental e impactante.",
+              "B": "plasma un sentimiento o pensamiento por medio de figuras retóricas.",
+              "C": "relata hechos en forma objetiva y con un mensaje sensible.",
+              "D": "persuade al lector de tomar una actitud positiva."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 14,
+            "topic": "1.5.2.1",
+            "topic_name": "Métrica del verso",
+            "text": "Identifica el metro del siguiente verso.\n\nYo sé los nombres extraños.\nJosé Martí",
+            "options": {
+              "A": "Endecasílabo.",
+              "B": "Octosílabo.",
+              "C": "Decasílabo.",
+              "D": "Heptasílabo."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 15,
+            "topic": "2.1",
+            "topic_name": "Género épico",
+            "text": "Género literario que aborda asuntos heroicos, sus personajes se inspiran en figuras históricas y simbolizan valores universales de la colectividad.",
+            "options": {
+              "A": "Lírico.",
+              "B": "Épico.",
+              "C": "Dramático.",
+              "D": "Narrativo."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 16,
+            "topic": "2.2.1",
+            "topic_name": "Realismo español",
+            "text": "Escritor representativo del Realismo español.",
+            "options": {
+              "A": "Camilo José Cela.",
+              "B": "Miguel de Unamuno.",
+              "C": "Juan Valera.",
+              "D": "Antonio Machado."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 17,
+            "topic": "2.2.2",
+            "topic_name": "Literatura contemporánea",
+            "text": "Son autores representativos de la literatura contemporánea.",
+            "options": {
+              "A": "Mary Shelley y Pedro Calderón de la Barca.",
+              "B": "Juana Inés de la Cruz y Fiódor Dostoyevski.",
+              "C": "Jorge Ibargüengoitia y José Saramago.",
+              "D": "Gustave Flaubert y Oscar Wilde."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 18,
+            "topic": "2.3.1",
+            "topic_name": "Cuento — definición",
+            "text": "Narración breve que da forma a las fantasías del ser humano.",
+            "options": {
+              "A": "Crónica.",
+              "B": "Comedia.",
+              "C": "Ensayo.",
+              "D": "Cuento."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 19,
+            "topic": "2.3.2",
+            "topic_name": "Géneros narrativos — novela",
+            "text": "La novela pertenece al género ________, está escrita en ________ y suele tener una estructura ________.",
+            "options": {
+              "A": "narrativo — prosa — compleja",
+              "B": "épico — verso — compleja",
+              "C": "dramático — verso — escueta",
+              "D": "lírico — prosa — simple"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 20,
+            "topic": "3.2",
+            "topic_name": "Ficha bibliográfica APA",
+            "text": "Elige la opción que contiene los datos precisos y ordenados en formato APA de una ficha bibliográfica.",
+            "options": {
+              "A": "DOSAL, Ma. Rosario. et al. Lengua Española. Español IV. México, Publicaciones cultural, 2009, 410 pp.",
+              "B": "Dosal, Ma. Rosario. et al. (2009). Lengua Española. Español IV. Publicaciones cultural, p. 410.",
+              "C": "Lengua Española. Español IV. (2009). DOSAL, M. R. et al. p. 410. México: Publicaciones cultural.",
+              "D": "M. R., Dosal Gómez, et al. Publicaciones cultural, Lengua Española. Español IV. pp. 410. México, 2009."
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Química",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 21,
+            "topic": "1.1.2",
+            "topic_name": "Bronce — clasificación",
+            "text": "Una medalla de bronce es un ejemplo de",
+            "options": {
+              "A": "mezcla heterogénea.",
+              "B": "mezcla homogénea.",
+              "C": "compuesto.",
+              "D": "elemento."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 22,
+            "topic": "1.3",
+            "topic_name": "Tabla periódica — Mendeleev",
+            "text": "¿Cuál fue la propiedad de la materia que utilizó Dmitri Mendeleev para organizar los elementos químicos conocidos en su tiempo?",
+            "options": {
+              "A": "Punto de ebullición.",
+              "B": "Masa atómica.",
+              "C": "Número atómico.",
+              "D": "Punto de fusión."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 23,
+            "topic": "1.3.3.1",
+            "topic_name": "Electronegatividad — enlace",
+            "text": "Enlace que se forma entre dos átomos con igual valor de electronegatividad.",
+            "options": {
+              "A": "Iónico.",
+              "B": "Metálico.",
+              "C": "Puente de hidrógeno.",
+              "D": "Covalente no polar."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 24,
+            "topic": "1.4",
+            "topic_name": "Óxidos ácidos",
+            "text": "¿Cuál de los siguientes óxidos al reaccionar con el agua da origen a un producto con características ácidas?",
+            "options": {
+              "A": "$Na_2O$",
+              "B": "$MgO$",
+              "C": "$FeO$",
+              "D": "$CO_2$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 25,
+            "topic": "1.5.2",
+            "topic_name": "Cantidad de sustancia — KCl",
+            "text": "¿Cuántos gramos de KCl hay en $0.1\\,\\text{mol}$?",
+            "options": {
+              "A": "$0.75$",
+              "B": "$7.5$",
+              "C": "$75$",
+              "D": "$0.075$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 26,
+            "topic": "2.3",
+            "topic_name": "Disolvente — agua",
+            "text": "El poder disolvente del agua se debe a los",
+            "options": {
+              "A": "electrones compartidos y su polaridad.",
+              "B": "puentes de hidrógeno y electrones compartidos.",
+              "C": "puentes de hidrógeno y su polaridad.",
+              "D": "electrones compartidos y distancia entre sus enlaces."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 27,
+            "topic": "2.4.2",
+            "topic_name": "pH — concentración",
+            "text": "¿Cuál de los siguientes valores de pH corresponde a la mayor concentración de iones $OH^-$?",
+            "options": {
+              "A": "$2$",
+              "B": "$7$",
+              "C": "$8$",
+              "D": "$13$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 28,
+            "topic": "3.6.1",
+            "topic_name": "Contaminantes — óxidos",
+            "text": "Entre los contaminantes primarios del aire se encuentran los óxidos de",
+            "options": {
+              "A": "Ca y Pb.",
+              "B": "Hg y N.",
+              "C": "C y N.",
+              "D": "N y Pb."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 29,
+            "topic": "4.3.2",
+            "topic_name": "Aminoácidos — enlace peptídico",
+            "text": "El enlace peptídico se forma al reaccionar un grupo amino de un aminoácido con un grupo ________ de otro aminoácido.",
+            "options": {
+              "A": "$-OH$",
+              "B": "$-OR$",
+              "C": "$-COOH$",
+              "D": "$-COR$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 30,
+            "topic": "5.1",
+            "topic_name": "Termoquímica — entalpía",
+            "text": "A partir de los siguientes valores de entalpía de reacción, indica cuál representa el mayor desprendimiento de energía.",
+            "options": {
+              "A": "$\\Delta H°=-110.5\\,\\dfrac{\\text{kJ}}{\\text{mol}}$",
+              "B": "$\\Delta H°=+33.2\\,\\dfrac{\\text{kJ}}{\\text{mol}}$",
+              "C": "$\\Delta H°=+52.5\\,\\dfrac{\\text{kJ}}{\\text{mol}}$",
+              "D": "$\\Delta H°=-395.7\\,\\dfrac{\\text{kJ}}{\\text{mol}}$"
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Geografía",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 31,
+            "topic": "1.1",
+            "topic_name": "Geografía aplicada",
+            "text": "En la actualidad, la principal finalidad de la Geografía es",
+            "options": {
+              "A": "diferenciar las causas y efectos de los hechos y fenómenos geográficos.",
+              "B": "conocer los efectos terrestres provocados por los fenómenos naturales.",
+              "C": "explicar la relación entre los elementos naturales y sociales del medio geográfico.",
+              "D": "localizar los elementos naturales y sociales sobre la superficie terrestre."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 32,
+            "topic": "1.2",
+            "topic_name": "Proyecciones cartográficas",
+            "text": "¿Cuál es la proyección cartográfica que se utiliza para representar a México?",
+            "options": {
+              "A": "Polar.",
+              "B": "Cilíndrica.",
+              "C": "Cónica.",
+              "D": "Azimutal."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 33,
+            "topic": "1.3.1.2",
+            "topic_name": "México — sistemas montañosos",
+            "text": "La Sierra Madre del Sur atraviesa las entidades de",
+            "options": {
+              "A": "Chiapas y Veracruz.",
+              "B": "Veracruz y Tlaxcala.",
+              "C": "Tlaxcala y Oaxaca.",
+              "D": "Oaxaca y Guerrero."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 34,
+            "topic": "1.3.1.4",
+            "topic_name": "México — minería",
+            "text": "Sonora ocupa el primer lugar en la extracción de",
+            "options": {
+              "A": "uranio.",
+              "B": "hierro.",
+              "C": "cobre.",
+              "D": "plata."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 35,
+            "topic": "2.1.1",
+            "topic_name": "Bioma — taiga",
+            "text": "La taiga o bosque boreal se localiza en el",
+            "options": {
+              "A": "norte de Europa y norte de Asia.",
+              "B": "sur de Europa y sur de Asia.",
+              "C": "norte de África y norte de Asia.",
+              "D": "sur de América y norte de Oceanía."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 36,
+            "topic": "2.3.1",
+            "topic_name": "México — densidad poblacional",
+            "text": "Estados de la República Mexicana con baja densidad de población.",
+            "options": {
+              "A": "Veracruz y Oaxaca.",
+              "B": "Oaxaca y Morelos.",
+              "C": "Morelos y Baja California Sur.",
+              "D": "Baja California Sur y Quintana Roo."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 37,
+            "topic": "2.4.1.1",
+            "topic_name": "Índice de Desarrollo Humano",
+            "text": "Algunos de los principales indicadores socioeconómicos que se emplean para calcular el Índice de Desarrollo Humano son",
+            "options": {
+              "A": "ingreso per cápita, alfabetismo y esperanza de vida.",
+              "B": "poder adquisitivo, inversión directa y deuda externa.",
+              "C": "natalidad, alfabetización y acceso a internet.",
+              "D": "mortalidad, nivel de inflación y servicios médicos."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 38,
+            "topic": "2.6",
+            "topic_name": "Sectores productivos México",
+            "text": "El sector terciario es el más importante de la economía mexicana debido a que",
+            "options": {
+              "A": "favorece el desarrollo de la industria.",
+              "B": "requiere mano de obra calificada.",
+              "C": "emplea mayor número de personas.",
+              "D": "está regulada por el gobierno."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 39,
+            "topic": "2.6.1",
+            "topic_name": "Ganadería en México",
+            "text": "En México, la zona más propicia para la crianza de cerdos es la del ________ por la primera zona con gran producción de ________, los cuales favorecen su alimentación y desarrollo.",
+            "options": {
+              "A": "norte — forrajes",
+              "B": "Bajío — cereales",
+              "C": "Noroeste — cereales",
+              "D": "Balsas — pastos"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 40,
+            "topic": "2.6.2",
+            "topic_name": "Hidrocarburos en México",
+            "text": "Zona marítima donde se obtiene petróleo y gas.",
+            "options": {
+              "A": "Poza Rica.",
+              "B": "Ciudad Madero.",
+              "C": "Sonda de Tuxpan.",
+              "D": "Sonda de Campeche."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Matemáticas",
+        "questions_count": 22,
+        "questions": [
+          {
+            "id": 41,
+            "topic": "1.1.2",
+            "topic_name": "Promedios y porcentajes",
+            "text": "Un estudiante debe obtener un promedio mínimo de $8$. Si tiene las siguientes calificaciones en los primeros $3$ parciales: $7.2$, $8.5$ y $7.9$. ¿Cuál es la mínima calificación que deberá obtener en el último parcial para aprobar el curso?",
+            "options": {
+              "A": "$8.1$",
+              "B": "$8.2$",
+              "C": "$8.4$",
+              "D": "$8.9$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 42,
+            "topic": "1.1.3",
+            "topic_name": "Radicales — multiplicación",
+            "text": "Al efectuar la multiplicación de $(\\sqrt{2})(\\sqrt{2})$ se obtiene",
+            "options": {
+              "A": "$\\sqrt{2}$",
+              "B": "$2$",
+              "C": "$4$",
+              "D": "$2\\sqrt{2}$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 43,
+            "topic": "2.1",
+            "topic_name": "Productos notables",
+            "text": "Desarrolla el siguiente binomio. $(x-y)^2$",
+            "options": {
+              "A": "$x^2-y^2$",
+              "B": "$x^2+y^2$",
+              "C": "$x^2-2xy+y^2$",
+              "D": "$x^2+2xy+y^2$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 44,
+            "topic": "2.3",
+            "topic_name": "Simplificación algebraica",
+            "text": "Al simplificar $\\dfrac{x^2-5x+6}{2ax-6a}$ se obtiene",
+            "options": {
+              "A": "$\\dfrac{(x-2)(x-3)}{2a}$",
+              "B": "$\\dfrac{x-3}{2a}$",
+              "C": "$\\dfrac{x-2}{2a}$",
+              "D": "$\\dfrac{(x-2)(x+3)}{2a}$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 45,
+            "topic": "3.2",
+            "topic_name": "Ecuaciones racionales",
+            "text": "¿Cuál es la solución de la ecuación $\\dfrac{x}{2}+5=x+3$?",
+            "options": {
+              "A": "$x=-4$",
+              "B": "$x=-2$",
+              "C": "$x=2$",
+              "D": "$x=4$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 46,
+            "topic": "4.1",
+            "topic_name": "Desigualdades — intervalos",
+            "text": "¿Cuál es el intervalo que representa el conjunto solución de $-x\\geq 5$?",
+            "options": {
+              "A": "$[-5,\\infty)$",
+              "B": "$(-\\infty,-5)$",
+              "C": "$(-\\infty,-5]$",
+              "D": "$(-5,\\infty)$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 47,
+            "topic": "5.1.1",
+            "topic_name": "Planteamiento — sistemas",
+            "text": "Cinco cuadernos y ocho lapiceros cuestan \\$115; tres cuadernos y cinco lapiceros cuestan \\$70. ¿Cuál es el precio de cada cuaderno?",
+            "options": {
+              "A": "\\$15",
+              "B": "\\$10",
+              "C": "\\$13",
+              "D": "\\$12"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 48,
+            "topic": "6.1",
+            "topic_name": "Dominio de funciones",
+            "text": "¿Cuál es el dominio de la siguiente función polinomial? $f(x)=x^3+2x^2-3x+1$",
+            "options": {
+              "A": "$[0,\\infty)$",
+              "B": "$(-\\infty,1)$",
+              "C": "$(-\\infty,\\infty)$",
+              "D": "$(-1,\\infty)$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 49,
+            "topic": "6.3",
+            "topic_name": "Identificación de cónicas — gráfica",
+            "text": "La gráfica de $x^2-1=y$ corresponde a una",
+            "options": {
+              "A": "recta.",
+              "B": "elipse.",
+              "C": "parábola.",
+              "D": "hipérbola."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 50,
+            "topic": "6.7",
+            "topic_name": "Composición de funciones",
+            "text": "Si $f(x)=\\dfrac{1}{x^2+1}$ y $g(x)=x+2$, entonces $(f\\circ g)(x)$ es igual a",
+            "options": {
+              "A": "$\\dfrac{1}{x^2+1}$",
+              "B": "$\\dfrac{1}{x^2+4x+5}$",
+              "C": "$\\dfrac{1}{x^2+5}$",
+              "D": "$\\dfrac{1}{x^2+4x+3}$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 51,
+            "topic": "7.1.2",
+            "topic_name": "Razones trigonométricas",
+            "image": "/imagenes_area4_2026/q51_triangulo.png",
+            "text": "Usando los datos del siguiente triángulo rectángulo, el seno del ángulo $P$ es igual a",
+            "options": {
+              "A": "$\\dfrac{3}{5}$",
+              "B": "$\\dfrac{4}{5}$",
+              "C": "$\\dfrac{5}{3}$",
+              "D": "$\\dfrac{5}{4}$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 52,
+            "topic": "7.1.3",
+            "topic_name": "Teorema de Pitágoras",
+            "text": "Un terreno tiene forma rectangular y sus lados miden $12\\,\\text{m}$ y $20\\,\\text{m}$. ¿Cuál es el valor de su diagonal?",
+            "options": {
+              "A": "$\\sqrt{32}$",
+              "B": "$\\sqrt{544}$",
+              "C": "$32$",
+              "D": "$16$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 53,
+            "topic": "8.1",
+            "topic_name": "Función logarítmica — dominio",
+            "text": "Determina el dominio de la función $y=\\log(x-2)$.",
+            "options": {
+              "A": "$(2,\\infty)$",
+              "B": "$[2,\\infty)$",
+              "C": "$(-\\infty,2)$",
+              "D": "$(-\\infty,2]$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 54,
+            "topic": "8.2",
+            "topic_name": "Asíntota — función logarítmica",
+            "text": "¿Cuál es la ecuación de la asíntota vertical de la función $f(x)=2\\log(x-3)$?",
+            "options": {
+              "A": "$x=3$",
+              "B": "$y=-3$",
+              "C": "$x=-3$",
+              "D": "$y=3$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 55,
+            "topic": "9.1",
+            "topic_name": "Distancia entre dos puntos",
+            "text": "¿Cuál es la distancia entre los puntos $A(1,1)$ y $B(-1,-1)$ en el plano cartesiano?",
+            "options": {
+              "A": "$2\\sqrt{2}$",
+              "B": "$4\\sqrt{2}$",
+              "C": "$2$",
+              "D": "$4$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 56,
+            "topic": "9.3",
+            "topic_name": "Pendiente de una recta",
+            "text": "Calcula la pendiente de la recta $2y-4x+3=0$.",
+            "options": {
+              "A": "$-2$",
+              "B": "$-\\dfrac{1}{2}$",
+              "C": "$\\dfrac{3}{2}$",
+              "D": "$2$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 57,
+            "topic": "10.2",
+            "topic_name": "Circunferencia — origen y radio",
+            "text": "¿Cuál es la ecuación de la circunferencia que tiene centro en el origen y radio igual a $4$?",
+            "options": {
+              "A": "$x^2+y^2+16=0$",
+              "B": "$x^2+y^2-16=0$",
+              "C": "$x^2+y^2-4=0$",
+              "D": "$x^2+y^2+4=0$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 58,
+            "topic": "10.4",
+            "topic_name": "Circunferencia — centro y radio",
+            "text": "¿Cuál es el centro y el radio de la siguiente circunferencia? $(x+3)^2+(y-2)^2=36$",
+            "options": {
+              "A": "$C(3,2);\\ r=6$",
+              "B": "$C(3,2);\\ r=36$",
+              "C": "$C(-3,2);\\ r=6$",
+              "D": "$C(-3,2);\\ r=36$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 59,
+            "topic": "11.4",
+            "topic_name": "Parábola — vértice y foco",
+            "text": "Un objeto es lanzado describiendo la parábola $(x-4)^2=12(y-3)$. ¿Cuáles son las coordenadas del vértice y el foco?",
+            "options": {
+              "A": "$V(-4,-3);\\ F(-4,-6)$",
+              "B": "$V(3,4);\\ F(6,4)$",
+              "C": "$V(4,3);\\ F(4,6)$",
+              "D": "$V(-3,-4);\\ F(-6,-4)$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 60,
+            "topic": "12.2",
+            "topic_name": "Elipse — focos",
+            "text": "Determina las coordenadas de los focos de una elipse cuya ecuación es $9x^2+y^2=9$.",
+            "options": {
+              "A": "$F_1=(-\\sqrt{8},0);\\ F_2=(\\sqrt{8},0)$",
+              "B": "$F_1=(-\\sqrt{10},0);\\ F_2=(\\sqrt{10},0)$",
+              "C": "$F_1=(0,-\\sqrt{8});\\ F_2=(0,\\sqrt{8})$",
+              "D": "$F_1=(0,-\\sqrt{10});\\ F_2=(0,\\sqrt{10})$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 61,
+            "topic": "13.1",
+            "topic_name": "Hipérbola — definición",
+            "text": "La hipérbola es el lugar geométrico de los puntos del plano, tales que la",
+            "options": {
+              "A": "suma de sus distancias a dos puntos fijos es un valor variable.",
+              "B": "diferencia de sus distancias a dos puntos fijos es un valor constante.",
+              "C": "suma de sus distancias a dos puntos fijos es un valor constante.",
+              "D": "diferencia de sus distancias a dos puntos fijos es un valor variable."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 62,
+            "topic": "14.4",
+            "topic_name": "Identificación de cónicas — traslación",
+            "text": "Al trasladar la circunferencia $x^2+y^2-36=0$ al centro $C(-2,4)$, ¿cuál sería su ecuación?",
+            "options": {
+              "A": "$(x-4)^2+(y+2)^2=36$",
+              "B": "$(x+4)^2+(y-16)^2=36$",
+              "C": "$(x+2)^2+(y-4)^2=36$",
+              "D": "$(x-2)^2+(y+4)^2=36$"
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Español",
+        "questions_count": 18,
+        "questions": [
+          {
+            "id": 63,
+            "topic": "1.1",
+            "topic_name": "Función referencial de la lengua",
+            "text": "Enunciado que ejemplifica la función referencial de la lengua.",
+            "options": {
+              "A": "¡Qué lata con esta lluvia!",
+              "B": "Seguirán las lluvias en el noreste del país.",
+              "C": "Hoy llueve mucho, y parecería que están lavando el mundo.",
+              "D": "Los maleantes fueron repelidos por otra lluvia de piedras."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 64,
+            "topic": "1.3",
+            "topic_name": "Función poética",
+            "text": "Identifica la función de la lengua presente en el siguiente fragmento.\n\nLa lengua del amor, a quien no sabe lo que es amor ¡qué bárbara parece!; pues como por instantes enmudece, tiene pausas de música suave.",
+            "options": {
+              "A": "Metalingüística.",
+              "B": "Apelativa.",
+              "C": "Poética.",
+              "D": "Fática."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 65,
+            "topic": "2.1",
+            "topic_name": "Discurso descriptivo",
+            "text": "Identifica la forma del discurso que se ejemplifica en el siguiente fragmento.\n\nFrisaba la edad de este excelente joven en los treinta y cuatro años. Era de complexión fuerte y un tanto hercúlea, con rara perfección formado, y tan arrogante, que se llevara uniforme militar ofrecería el más guerrero aspecto y talle que pueda imaginarse. Rubios el cabello y la barba, no tenía en su rostro la flemática imperturbabilidad de los sajones.",
+            "options": {
+              "A": "Expositiva.",
+              "B": "Descriptiva.",
+              "C": "Explicativa.",
+              "D": "Argumentativa."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 66,
+            "topic": "2.2",
+            "topic_name": "Discurso narrativo — predominante",
+            "text": "Señala la forma del discurso que predomina en el siguiente fragmento.\n\nDespués de la Conquista de Tenochtitlan, hacia 1529, Hernán Cortés ordenó traer frailes dominicos para que evangelizaran a los indios en las tierras con que el rey Carlos V le recompensaba por los servicios prestados a la Corona, y que incluían áreas de Coyoacán, Tacubaya y Cuajimalpa, entre otras dentro de la cuenca. Estos primeros dominicos fundaron conventos como el de San Juan Bautista (Coyoacán) y compartieron con los franciscanos el trabajo de adoctrinar a las naturales en la fe cristiana.",
+            "options": {
+              "A": "Narrativa.",
+              "B": "Descriptiva.",
+              "C": "Expositiva.",
+              "D": "Argumentativa."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 67,
+            "topic": "3.1",
+            "topic_name": "Estructura del texto",
+            "text": "Lee el siguiente texto y contesta de la pregunta 67 a la 71.\n\nLa mente colectiva\n\nEn su famosa novela Más que humano (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del Homo sapiens: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá la idea de Sturgeon no esté tan alejada de la realidad. Aunque otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia. Fuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros — y con nuestras crías — a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral. Diversas innovaciones tecnológicas — alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet — han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia. Hoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad. Conectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\nMartín Bonfil Olivera.\n\nLa estructura general del texto comprende",
+            "options": {
+              "A": "planteamiento, argumentos, desarrollo y opinión.",
+              "B": "introducción, tesis, argumentos y conclusión.",
+              "C": "introducción, planteamiento, desarrollo y opinión.",
+              "D": "planteamiento, tesis, desarrollo y conclusión."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 68,
+            "topic": "3.2",
+            "topic_name": "Idea principal del texto",
+            "text": "Lee el siguiente texto y contesta de la pregunta 67 a la 71.\n\nLa mente colectiva\n\nEn su famosa novela Más que humano (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del Homo sapiens: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá la idea de Sturgeon no esté tan alejada de la realidad. Aunque otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia. Fuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros — y con nuestras crías — a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral. Diversas innovaciones tecnológicas — alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet — han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia. Hoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad. Conectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\nMartín Bonfil Olivera.\n\nSelecciona la idea principal del segundo párrafo.",
+            "options": {
+              "A": "En la naturaleza existen \"organismos colectivos\".",
+              "B": "Muchos escritores de ciencia ficción han soñado con la humanidad podría llegar a formar un \"superorganismo\".",
+              "C": "Muchos escritores de ciencia ficción han soñado con la humanidad podría conectarse por telepatía.",
+              "D": "Las hormigas y abejas son \"organismos colectivos\"."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 69,
+            "topic": "3.3",
+            "topic_name": "Lenguaje figurado",
+            "text": "Lee el siguiente texto y contesta de la pregunta 67 a la 71.\n\nLa mente colectiva\n\nEn su famosa novela Más que humano (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del Homo sapiens: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá la idea de Sturgeon no esté tan alejada de la realidad. Aunque otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia. Fuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros — y con nuestras crías — a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral. Diversas innovaciones tecnológicas — alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet — han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia. Hoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad. Conectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\nMartín Bonfil Olivera.\n\nLa expresión \"prótesis\" mentales y culturales\", referida a las innovaciones tecnológicas implica que éstas",
+            "options": {
+              "A": "elevan las posibilidades de acción y supervivencia del hombre, ya que se replica en otros organismos.",
+              "B": "le han permitido al hombre elevar considerablemente su capacidad de comunicación y vivir mejor.",
+              "C": "son una extensión del cerebro humano que pueden generar destrucción, lo que no sucede en otros organismos.",
+              "D": "han sido creadas por el hombre, como una extensión de sus capacidades comunicativas, para vivir mejor."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 70,
+            "topic": "3.4",
+            "topic_name": "Temas en el texto",
+            "text": "Lee el siguiente texto y contesta de la pregunta 67 a la 71.\n\nLa mente colectiva\n\nEn su famosa novela Más que humano (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del Homo sapiens: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá la idea de Sturgeon no esté tan alejada de la realidad. Aunque otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia. Fuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros — y con nuestras crías — a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral. Diversas innovaciones tecnológicas — alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet — han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia. Hoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad. Conectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\nMartín Bonfil Olivera.\n\nSon temas que aborda el autor.",
+            "options": {
+              "A": "Lenguaje, industria y literatura de ficción.",
+              "B": "Lenguaje, productos culturales y tecnología.",
+              "C": "Organismos colectivos, democracia y literatura de ficción.",
+              "D": "Organismos colectivos, computadoras y productos culturales."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 71,
+            "topic": "3.6",
+            "topic_name": "Intención del autor",
+            "text": "Lee el siguiente texto y contesta de la pregunta 67 a la 71.\n\nLa mente colectiva\n\nEn su famosa novela Más que humano (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del Homo sapiens: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá la idea de Sturgeon no esté tan alejada de la realidad. Aunque otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia. Fuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros — y con nuestras crías — a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral. Diversas innovaciones tecnológicas — alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet — han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia. Hoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad. Conectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\nMartín Bonfil Olivera.\n\nLa intención principal del autor es",
+            "options": {
+              "A": "narrar cómo el hombre piensa colectivamente.",
+              "B": "informar sobre la cultura y el pensamiento colectivo.",
+              "C": "argumentar que el hombre piensa colectivamente.",
+              "D": "describir aspectos del pensamiento colectivo."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 72,
+            "topic": "4.2",
+            "topic_name": "Sujeto en una oración",
+            "text": "Identifica el sujeto de la siguiente oración.\n\nLos científicos hallaron los huesos de un dinosaurio y algunos restos de otras especies.",
+            "options": {
+              "A": "Los huesos.",
+              "B": "Los científicos.",
+              "C": "Los restos.",
+              "D": "El dinosaurio."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 73,
+            "topic": "4.3",
+            "topic_name": "Objeto directo",
+            "text": "Elige la opción que contiene el objeto directo del predicado.",
+            "options": {
+              "A": "Compró la computadora.",
+              "B": "Las pirámides de Teotihuacán.",
+              "C": "Hoy, mañana y siempre.",
+              "D": "Las cuentas del gran capitán."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 74,
+            "topic": "5.0",
+            "topic_name": "Redacción correcta — sucursales",
+            "text": "¿Cuál de los siguientes párrafos está redactado correctamente?",
+            "options": {
+              "A": "En la reunión se abordarán tres asuntos: el diseño de un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; buscar proveedores más cumplidos; y también se harán propuestas para abrir nuevas sucursales.",
+              "B": "En la reunión se abordarán tres asuntos: el diseño de un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; y la búsqueda de proveedores más cumplidos. También se harán propuestas para abrir nuevas sucursales.",
+              "C": "En la reunión se abordarán tres asuntos: diseñar un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; y buscar proveedores más cumplidos. También se harán propuestas para abrir nuevas sucursales.",
+              "D": "En la reunión se abordarán tres asuntos: cómo diseñar un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; la búsqueda de proveedores más cumplidos. Finalmente, se harán propuestas para abrir nuevas sucursales."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 75,
+            "topic": "5.0",
+            "topic_name": "Conectores en párrafo",
+            "text": "Elige la opción que completa adecuadamente el siguiente párrafo.\n\nQuisieron colaborar con una obra magistral, ________ no guardaban los requisitos necesarios; ________, tuvieron que resignarse ________ la realización de una presentación más sencilla.",
+            "options": {
+              "A": "sin embargo — no obstante — a",
+              "B": "mas — por tanto — a",
+              "C": "más — en conclusión — con",
+              "D": "pero — en consecuencia — con"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 76,
+            "topic": "5.0",
+            "topic_name": "Redacción adecuada",
+            "text": "Identifica el párrafo con la redacción adecuada.",
+            "options": {
+              "A": "El inca extranjero apresó a Inkarrí su igual no sabemos dónde lo llevó dicen que ya sólo existe la cabeza de Inkarrí algún día regresará tiene que resucitar.",
+              "B": "Dicen que ahora Inkarrí está en el Cuzco. Ignoramos quién lo habrá llevado al Cuzco, pero parece que sólo llevaron su cabeza hasta ese sitio. Y así, dicen que su cabellera está creciendo: su cuerpecito está allí resucitando hacia abajo. Cuando esté completo, volverá con nosotros.",
+              "C": "Todo fue puesto por nuestro señor Inkarrí: las montañas, los animales, la nube, la lluvia. Él creó todo lo que existe para nosotros. Formó a Womani, nuestro segundo dios, que habita en las montañas. Inkarrí formó la pampa, hirvió el vino, la chicha, el aguardiente.",
+              "D": "La carretera convirtió a Puquio, de una pequeña ciudad de terratenientes e indios, en un centro comercial activo. Las antiguas normas están siendo rotas con rapidez."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 77,
+            "topic": "6.2",
+            "topic_name": "Sinónimos — destello",
+            "text": "Sinónimo de destello.",
+            "options": {
+              "A": "Luminoso.",
+              "B": "Fulgor.",
+              "C": "Claridad.",
+              "D": "Diáfano."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 78,
+            "topic": "6.3",
+            "topic_name": "Antónimos — disperso",
+            "text": "Antónimo de DISPERSO.",
+            "options": {
+              "A": "Esparcido.",
+              "B": "Agrupado.",
+              "C": "Diseminado.",
+              "D": "Mezclado."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 79,
+            "topic": "7.7",
+            "topic_name": "Variantes ortográficas",
+            "text": "De los siguientes enunciados con variantes ortográficas, elige el que tiene la ortografía CORRECTA.",
+            "options": {
+              "A": "Notó que aquel beso era de un extraño.",
+              "B": "Los animales se detenían allí a contemplarlo.",
+              "C": "Pronto adquirió la costumbre de desvelarse.",
+              "D": "El muchacho vivía cómo un salvaje en la soledad."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 80,
+            "topic": "7.8",
+            "topic_name": "Puntuación adecuada",
+            "text": "Elige la opción que presenta el párrafo con la puntuación apropiada.",
+            "options": {
+              "A": "El Coronel Juan Morales, se apodera de un cañón montado en uno de los ángulos, y aprovechándose de la confusión de los defensores, introduce a la fortaleza un buen número de soldados. Vuelve los cañones hacia el interior. Y empieza a disparar. Los tejanos se retiran al convento y a la iglesia, protegiéndose en barricadas de sacos de arena.",
+              "B": "El Coronel Juan Morales se apodera de un cañón montado en uno de los ángulos y aprovechándose de la confusión de los defensores, introduce a la fortaleza. Un buen número de soldados vuelve los cañones hacia el interior y empieza a disparar. Los tejanos se retiran al convento y a la iglesia. Protegiéndose en barricadas de sacos de arena.",
+              "C": "El Coronel Juan Morales se apodera de un cañón montado en uno de los ángulos y aprovechándose de la confusión de los defensores, introduce a la fortaleza un buen número de soldados. Vuelve los cañones hacia el interior y empieza a disparar. Los tejanos se retiran al convento y a la iglesia, protegiéndose en barricadas de sacos de arena.",
+              "D": "El Coronel Juan Morales se apodera de un cañón montado en uno de los ángulos y aprovechándose de la confusión de los defensores. Introduce a la fortaleza un buen número de soldados. Vuelve los cañones hacia el interior y empieza a disparar. Los tejanos se retiran al convento y a la iglesia. Protegiéndose en barricadas de sacos de arena."
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Biología",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 81,
+            "topic": "1.2.2",
+            "topic_name": "Síntesis de proteínas",
+            "text": "Organelo celular cuya principal función es la síntesis de proteínas.",
+            "options": {
+              "A": "Aparato de Golgi.",
+              "B": "Mitocondria.",
+              "C": "Lisosoma.",
+              "D": "Ribosoma."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 82,
+            "topic": "2.1.2",
+            "topic_name": "Biocatalizadores — enzimas",
+            "text": "Biocatalizadores que en el mundo vivo aceleran la velocidades de cualquier reacción química.",
+            "options": {
+              "A": "Enzimas.",
+              "B": "Lípidos.",
+              "C": "Vitaminas.",
+              "D": "Carbohidratos."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 83,
+            "topic": "2.2.2",
+            "topic_name": "Fase oscura de la fotosíntesis",
+            "text": "Monosacárido que se obtiene al final de la fase oscura de la fotosíntesis.",
+            "options": {
+              "A": "Celulosa.",
+              "B": "Glucosa.",
+              "C": "Xilobiosa.",
+              "D": "Almidón."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 84,
+            "topic": "4.1",
+            "topic_name": "Nomenclatura de Mendel",
+            "text": "De acuerdo con la nomenclatura de Mendel los caracteres recesivos están representados en letras",
+            "options": {
+              "A": "minúsculas (b).",
+              "B": "mayúsculas y minúsculas (Bb).",
+              "C": "minúsculas y mayúsculas (bB).",
+              "D": "minúsculas, mayúsculas y minúsculas (bBb)."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 85,
+            "topic": "4.2",
+            "topic_name": "ADN y herencia",
+            "text": "A la información codificada en el ADN de un organismo se le denomina",
+            "options": {
+              "A": "genotipo.",
+              "B": "gameto.",
+              "C": "fenotipo.",
+              "D": "cariotipo."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 86,
+            "topic": "4.2.2",
+            "topic_name": "Herencia ligada al sexo",
+            "text": "¿Cuál de las siguientes alteraciones genéticas muestra un patrón de herencia ligada al sexo?",
+            "options": {
+              "A": "Ataxia.",
+              "B": "Discinesia.",
+              "C": "Hemofilia.",
+              "D": "Alemorfia."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 87,
+            "topic": "4.2.3",
+            "topic_name": "Mutaciones — importancia",
+            "text": "Las mutaciones son importantes porque",
+            "options": {
+              "A": "eliminan organismos débiles y enfermizos.",
+              "B": "producen la variabilidad sobre la que opera la selección natural.",
+              "C": "originan variabilidad fenotípica en los individuos menos aptos.",
+              "D": "se producen en los individuos menos aptos."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 88,
+            "topic": "4.3.1",
+            "topic_name": "ADN recombinante — productos",
+            "text": "Proteína producida por tecnología del ADN recombinante.",
+            "options": {
+              "A": "Hierro.",
+              "B": "Hemoglobina.",
+              "C": "Insulina.",
+              "D": "Miosina."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 89,
+            "topic": "5.4.2",
+            "topic_name": "Reino protista",
+            "text": "El siguiente organismo pertenece al reino protista.",
+            "options": {
+              "A": "Helecho.",
+              "B": "Alga.",
+              "C": "Levadura.",
+              "D": "Esponja."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 90,
+            "topic": "6.1.1",
+            "topic_name": "Definición de comunidad",
+            "text": "Conjunto de organismos de la misma especie que comparten una misma área geográfica y se reproducen entre sí.",
+            "options": {
+              "A": "Población.",
+              "B": "Ecosistema.",
+              "C": "Bioma.",
+              "D": "Comunidad."
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Historia Universal",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 91,
+            "topic": "1.1",
+            "topic_name": "Historia — disciplinas auxiliares",
+            "text": "Ciencia que se encarga de investigar y sistematizar los acontecimientos más relevantes de la humanidad para comprender los fenómenos sociales del presente.",
+            "options": {
+              "A": "Historia.",
+              "B": "Antropología.",
+              "C": "Sociología.",
+              "D": "Filosofía."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 92,
+            "topic": "2.2.4",
+            "topic_name": "Revolución Industrial — Inglaterra",
+            "text": "Uno de los factores que propició el origen de la Revolución Industrial en Inglaterra, fue",
+            "options": {
+              "A": "el desarrollo la industria textil.",
+              "B": "el incremento de los precios al rural.",
+              "C": "el triunfo en la Guerra de Siete Años.",
+              "D": "el diseñó y construyó el ferrocarril."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 93,
+            "topic": "3.3",
+            "topic_name": "Unificación italiana",
+            "text": "Como consecuencia de la Revolución Liberal de 1830, ________ y Víctor Manuel II lideraron una guerra contra ________, lo que trajo consigo el movimiento de unificación italiana.",
+            "options": {
+              "A": "Carlos Alberto — Prusia",
+              "B": "José Garibaldi — Austria",
+              "C": "Napoleón III — Inglaterra",
+              "D": "Carlos X — Francia"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 94,
+            "topic": "4.2",
+            "topic_name": "Imperialismo — siglo XIX",
+            "text": "Durante el siglo XIX, la búsqueda de materias primas y la expansión del mercado mundial impulsaron",
+            "options": {
+              "A": "el imperialismo europeo.",
+              "B": "el movimiento obrero.",
+              "C": "la Revolución Industrial.",
+              "D": "la Revolución Agrícola."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 95,
+            "topic": "5.1",
+            "topic_name": "Primera Guerra Mundial",
+            "text": "El incidente a partir del cual se desencadenó la Primera Guerra Mundial fue",
+            "options": {
+              "A": "el asesinato del heredero al trono del imperio austro—húngaro.",
+              "B": "la integración de la Triple Alianza.",
+              "C": "la invasión alemana a Francia.",
+              "D": "la crisis de 1929."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 96,
+            "topic": "6.1",
+            "topic_name": "Crisis de 1929 — keynesianismo",
+            "text": "La crisis de 1929 en Estados Unidos de América se produjo debido a",
+            "options": {
+              "A": "el auge del sistema keynesiano.",
+              "B": "la caída de la Bolsa de Valores.",
+              "C": "la rivalidad con Alemania.",
+              "D": "el surgimiento del fascismo."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 97,
+            "topic": "7.1",
+            "topic_name": "Segunda Guerra Mundial",
+            "text": "La invasión de Polonia, el ataque a Dinamarca y Noruega, así como la Operación Barbarroja fueron acciones de",
+            "options": {
+              "A": "la Triple Alianza.",
+              "B": "el Eje Berlín—Roma—Tokio.",
+              "C": "la Unión Soviética.",
+              "D": "Estados Unidos."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 98,
+            "topic": "8.2",
+            "topic_name": "Guerra Fría — Medio Oriente",
+            "text": "Al enfrentamiento indirecto entre la Unión de Repúblicas Soviéticas Socialistas y Estados Unidos de América, con el propósito de mantener o extender su hegemonía política y económica se le conoce como la Guerra",
+            "options": {
+              "A": "del Golfo Pérsico.",
+              "B": "árabe—israelí.",
+              "C": "de los Seis Días.",
+              "D": "Fría."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 99,
+            "topic": "8.2",
+            "topic_name": "Crisis de los Misiles",
+            "text": "El desembarco de armamento en Cuba que incluía proyectiles, cohetes y botes patrulla, provocó la",
+            "options": {
+              "A": "Revolución Sandinista.",
+              "B": "Crisis de los Misiles.",
+              "C": "Dictadura de Duvalier.",
+              "D": "Iniciativa de Defensa Estratégica."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 100,
+            "topic": "9.2",
+            "topic_name": "Globalización contemporánea",
+            "text": "Facilita el comercio mundial, se asocia con el estallido de frecuentes crisis económicas y genera una cultura unificada.",
+            "options": {
+              "A": "Socialismo.",
+              "B": "Neoliberalismo.",
+              "C": "Globalización.",
+              "D": "Comunismo."
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Historia de México",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 101,
+            "topic": "1.1",
+            "topic_name": "Mesoamérica — actividad",
+            "text": "La principal actividad económica de los pueblos de Mesoamérica fue la",
+            "options": {
+              "A": "caza.",
+              "B": "pesca.",
+              "C": "agricultura.",
+              "D": "recolección."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 102,
+            "topic": "2.1",
+            "topic_name": "Independencia — causa interna",
+            "text": "Causa interna de la Independencia de la Nueva España.",
+            "options": {
+              "A": "Invasión francesa a España.",
+              "B": "Independencia de las Trece Colonias.",
+              "C": "Consolidación de Vales Reales.",
+              "D": "Adopción de las ideas de la Ilustración."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 103,
+            "topic": "3.2",
+            "topic_name": "Santa Anna — primer conflicto",
+            "text": "Primer conflicto externo durante el gobierno de Santa Ana.",
+            "options": {
+              "A": "Expedición española.",
+              "B": "Venta de la Mesilla.",
+              "C": "Guerra de los pasteles.",
+              "D": "Guerra de Texas."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 104,
+            "topic": "4.2",
+            "topic_name": "Reforma — federalismo",
+            "text": "Proclamó la libertad de enseñanza y de prensa, prohibió a la Iglesia poseer bienes raíces y decretó un régimen republicano federal.",
+            "options": {
+              "A": "Constitución de 1824.",
+              "B": "Constitución de 1857.",
+              "C": "Constitución de 1822.",
+              "D": "Constitución de 1814."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 105,
+            "topic": "5.2",
+            "topic_name": "Porfiriato — economía",
+            "text": "En materia económica, el gobierno de Porfirio Díaz se caracterizó por",
+            "options": {
+              "A": "las políticas de nacionalización en la minería.",
+              "B": "la crisis que se generó en el país.",
+              "C": "la prohibición a la inversión privada.",
+              "D": "las concesiones a los inversionistas extranjeros."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 106,
+            "topic": "6.1",
+            "topic_name": "Porfiriato — protestas obreras",
+            "text": "Las constantes reelecciones de Porfirio Díaz y la opresión a grupos sociales como obreros, campesinos e indígenas, fueron los detonantes de",
+            "options": {
+              "A": "el Maximato.",
+              "B": "la Revolución Mexicana.",
+              "C": "el Milagro Mexicano.",
+              "D": "la Unidad Nacional."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 107,
+            "topic": "7.1",
+            "topic_name": "Revolución — Acuerdos de Bucareli",
+            "text": "Los Acuerdos de Bucareli y la creación de la Secretaría de Educación Pública fueron acciones de",
+            "options": {
+              "A": "Álvaro Obregón.",
+              "B": "Adolfo de la Huerta.",
+              "C": "Plutarco Elías Calles.",
+              "D": "Venustiano Carranza."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 108,
+            "topic": "7.3",
+            "topic_name": "Cardenismo — Plan Sexenal",
+            "text": "La creación del Instituto Politécnico Nacional, la aplicación del Plan Sexenal, el reparto ejidal y la nacionalización del petróleo fueron acciones de",
+            "options": {
+              "A": "Emilio Portes Gil.",
+              "B": "Pascual Ortiz Rubio.",
+              "C": "Álvaro Obregón.",
+              "D": "Lázaro Cárdenas."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 109,
+            "topic": "8.1",
+            "topic_name": "Manuel Ávila Camacho",
+            "text": "La principal característica económica del gobierno de Manuel Ávila Camacho fue",
+            "options": {
+              "A": "la sustitución de importaciones.",
+              "B": "el apoyo a los reclamos sindicales.",
+              "C": "el equilibrio de la balanza comercial.",
+              "D": "la expansión del mercado externo."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 110,
+            "topic": "8.3",
+            "topic_name": "Echeverría — Desarrollo Compartido",
+            "text": "Fue una acción del gobierno de Luis Echeverría como parte de la política del Desarrollo Compartido.",
+            "options": {
+              "A": "Disminución de las importaciones.",
+              "B": "Nacionalización de la banca.",
+              "C": "Privatización de la educación.",
+              "D": "Aumento de la participación de empresas privadas."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Filosofía",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 111,
+            "topic": "1.1",
+            "topic_name": "Funciones del lenguaje",
+            "text": "¿A qué tipo de función del lenguaje corresponde el siguiente texto?\n\nNo debes saquear, vender o maltratar el patrimonio artístico e histórico de nuestro país.",
+            "options": {
+              "A": "Directiva.",
+              "B": "Expresiva.",
+              "C": "Exclamativa.",
+              "D": "Declarativa."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 112,
+            "topic": "1.1.3",
+            "topic_name": "Lógica proposicional",
+            "text": "¿Cómo se simboliza la siguiente proposición?\n\nSi la llevo al cine, entonces, le pago el boleto y la llevo a su casa.",
+            "options": {
+              "A": "$R\\lor (P\\cdot Q)$",
+              "B": "$P\\to (Q\\cdot R)$",
+              "C": "$(P\\to Q)\\cdot R$",
+              "D": "$(Q\\lor R)\\cdot P$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 113,
+            "topic": "1.2.1",
+            "topic_name": "Argumentos deductivos",
+            "text": "¿Cuál de los siguientes argumentos contiene un razonamiento deductivo?",
+            "options": {
+              "A": "Todos los seres humanos requieren alimentos para vivir, si tú no te alimentas adecuadamente en poco tiempo morirás.",
+              "B": "En esa zapatería he encontrado un excelente calzado. Ahora que ves el inicio de clases, compraré mi calzado ahí.",
+              "C": "Juan está enfermo de gripa y tos. Le comenté que se llevara un suéter y no me hizo caso, ahora por eso está enfermo.",
+              "D": "La mayoría de los votantes en México ascienden a la edad de entre 18 y 30 años, por lo tanto, son los jóvenes los que eligieron este nuevo presidente."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 114,
+            "topic": "2.1",
+            "topic_name": "Actos morales",
+            "text": "De los siguientes ejemplos, ¿cuáles son actos morales?\n\nI. Decidir comprar una escultura y no una pintura para la decoración de la casa en función de los espacios.\nII. Elegir, tras una deliberación, iniciar los trámites de divorcio ante un juzgado competente.\nIII. Elegir denunciar un acto ilícito ante las autoridades por considerarlo justo.\nIV. Decidir un plan alimenticio para mantener la línea y conservarse atractivo.\nV. Decidir la fecha para la realización del examen final de mi asignatura de acuerdo al calendario.",
+            "options": {
+              "A": "II y III",
+              "B": "I y II",
+              "C": "IV y V",
+              "D": "III y V"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 115,
+            "topic": "2.2",
+            "topic_name": "Responsabilidad moral",
+            "text": "De los siguientes casos, distingue cuál de ellos implica responsabilidad moral.",
+            "options": {
+              "A": "María, que es enfermera, cae enferma por contagio y se encuentra muy grave en el hospital.",
+              "B": "Juan compró un billete de lotería que resultó ser ganador del premio mayor.",
+              "C": "Rocío decide limpiar su armario y sale a comprar cajas de cartón para guardar lo que desechará.",
+              "D": "Pedro busca trabajo para sostener a su familia, se prepara para los exámenes, pero no consigue la plaza."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 116,
+            "topic": "2.2.3",
+            "topic_name": "Ética aplicada",
+            "text": "En el siguiente caso, ¿qué debe hacer el médico para actuar de manera autónoma?\n\nEn una situación límite un médico debe decidir entre realizar una transfusión sanguínea a un paciente inconsciente y al borde de la muerte, quien por sus creencias religiosas no permite se le realicen transfusiones sanguíneas.",
+            "options": {
+              "A": "No realizar la transfusión sanguínea para evitar problemas legales con el paciente y sus familiares.",
+              "B": "Realizar la transfusión sanguínea para ser considerado un héroe ante sus colegas.",
+              "C": "Realizar la transfusión sanguínea para salvar la vida del paciente a pesar de las consecuencias.",
+              "D": "No realizar la transfusión sanguínea para conservar su trabajo."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 117,
+            "topic": "2.3.2",
+            "topic_name": "Posturas éticas",
+            "text": "¿Qué postura respecto de la naturaleza de los valores está representada en la siguiente opinión?\n\nEl valor de la vida depende de quién está vivo. Por lo tanto, si ella aborta a un nonato no se le puede juzgar mal en los zapatos de los demás y decirle qué hacer.",
+            "options": {
+              "A": "Objetivista.",
+              "B": "Pragmatista.",
+              "C": "Subjetivista.",
+              "D": "Utilitarista."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 118,
+            "topic": "3.1.2",
+            "topic_name": "Estética — categorías",
+            "text": "¿Con cuál de los siguientes conceptos estéticos puede ser valorada el ocultar de manera contemplar una tormenta en el mar en una noche oscura desde la ventana de un hotel?",
+            "options": {
+              "A": "Bello.",
+              "B": "Sublime.",
+              "C": "Cómico.",
+              "D": "Trágico."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 119,
+            "topic": "3.2.2",
+            "topic_name": "Existencialismo",
+            "text": "En el siguiente fragmento de Jean Paul Sartre, el problema central es de carácter\n\nTodo está permitido si Dios no existe y en consecuencia el hombre queda liberado, pues no se encuentra ni dentro ni fuera de él una mera posibilidad de agarrarse. Ya no tiene ninguna excusa, no hay determinismo: el hombre es libre, el hombre es libertad.",
+            "options": {
+              "A": "estético.",
+              "B": "ontológico.",
+              "C": "axiológico.",
+              "D": "político."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 120,
+            "topic": "3.3",
+            "topic_name": "Disciplinas filosóficas",
+            "text": "¿Qué disciplina filosófica tiene como objeto de estudio el conocimiento?",
+            "options": {
+              "A": "Epistemología.",
+              "B": "Lógica.",
+              "C": "Ontología.",
+              "D": "Metafísica."
+            },
+            "answer": "A"
+          }
+        ]
+      }
+    ]
+  }
+}
