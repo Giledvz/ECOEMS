@@ -1,52 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 220" width="660" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="660" height="220" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" width="720" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="720" height="200" fill="#ffffff"/>
 
-  <!-- Tabla periódica simplificada: 18 columnas x 4 filas. Cada celda 32x40 px. -->
-  <!-- Origen: x=30, y=20. Total: 18*32=576 ancho, 4*40=160 alto. -->
+  <!-- Tabla periódica simplificada: 18 columnas x 4 filas, celdas cuadradas de 36x36 px. Origen (30,30). -->
 
-  <g stroke="#1a1a1a" stroke-width="1.4" fill="#ffffff">
-    <!-- Filas y columnas: dibujamos la cuadrícula completa -->
-    <g>
-      <!-- Línea horizontal superior -->
-      <line x1="30" y1="20" x2="606" y2="20"/>
-      <line x1="30" y1="60" x2="606" y2="60"/>
-      <line x1="30" y1="100" x2="606" y2="100"/>
-      <line x1="30" y1="140" x2="606" y2="140"/>
-      <line x1="30" y1="180" x2="606" y2="180"/>
-    </g>
-    <g>
-      <!-- Verticales (19 líneas) -->
-      <line x1="30"  y1="20" x2="30"  y2="180"/>
-      <line x1="62"  y1="20" x2="62"  y2="180"/>
-      <line x1="94"  y1="20" x2="94"  y2="180"/>
-      <line x1="126" y1="20" x2="126" y2="180"/>
-      <line x1="158" y1="20" x2="158" y2="180"/>
-      <line x1="190" y1="20" x2="190" y2="180"/>
-      <line x1="222" y1="20" x2="222" y2="180"/>
-      <line x1="254" y1="20" x2="254" y2="180"/>
-      <line x1="286" y1="20" x2="286" y2="180"/>
-      <line x1="318" y1="20" x2="318" y2="180"/>
-      <line x1="350" y1="20" x2="350" y2="180"/>
-      <line x1="382" y1="20" x2="382" y2="180"/>
-      <line x1="414" y1="20" x2="414" y2="180"/>
-      <line x1="446" y1="20" x2="446" y2="180"/>
-      <line x1="478" y1="20" x2="478" y2="180"/>
-      <line x1="510" y1="20" x2="510" y2="180"/>
-      <line x1="542" y1="20" x2="542" y2="180"/>
-      <line x1="574" y1="20" x2="574" y2="180"/>
-      <line x1="606" y1="20" x2="606" y2="180"/>
-    </g>
+  <g stroke="#1a1a1a" stroke-width="1.4" fill="none">
+    <!-- Horizontales (5 líneas: top, 3 separadores, bottom) -->
+    <line x1="30" y1="30" x2="678" y2="30"/>
+    <line x1="30" y1="66" x2="678" y2="66"/>
+    <line x1="30" y1="102" x2="678" y2="102"/>
+    <line x1="30" y1="138" x2="678" y2="138"/>
+    <line x1="30" y1="174" x2="678" y2="174"/>
+
+    <!-- Verticales (19 líneas) -->
+    <line x1="30"  y1="30" x2="30"  y2="174"/>
+    <line x1="66"  y1="30" x2="66"  y2="174"/>
+    <line x1="102" y1="30" x2="102" y2="174"/>
+    <line x1="138" y1="30" x2="138" y2="174"/>
+    <line x1="174" y1="30" x2="174" y2="174"/>
+    <line x1="210" y1="30" x2="210" y2="174"/>
+    <line x1="246" y1="30" x2="246" y2="174"/>
+    <line x1="282" y1="30" x2="282" y2="174"/>
+    <line x1="318" y1="30" x2="318" y2="174"/>
+    <line x1="354" y1="30" x2="354" y2="174"/>
+    <line x1="390" y1="30" x2="390" y2="174"/>
+    <line x1="426" y1="30" x2="426" y2="174"/>
+    <line x1="462" y1="30" x2="462" y2="174"/>
+    <line x1="498" y1="30" x2="498" y2="174"/>
+    <line x1="534" y1="30" x2="534" y2="174"/>
+    <line x1="570" y1="30" x2="570" y2="174"/>
+    <line x1="606" y1="30" x2="606" y2="174"/>
+    <line x1="642" y1="30" x2="642" y2="174"/>
+    <line x1="678" y1="30" x2="678" y2="174"/>
   </g>
 
-  <!-- Símbolos de los elementos -->
-  <g font-size="20" font-weight="600" text-anchor="middle" fill="#1a1a1a">
-    <!-- Li: fila 1, columna 1 → centro celda (46, 40) -->
-    <text x="46" y="48">Li</text>
-    <!-- O: fila 1, columna 16 → centro celda (510, 40) -->
-    <text x="510" y="48">O</text>
-    <!-- Sr: fila 3, columna 2 → centro celda (78, 120) -->
-    <text x="78" y="128">Sr</text>
-    <!-- I: fila 3, columna 17 → centro celda (542, 120) -->
-    <text x="542" y="128" font-style="italic">I</text>
+  <!-- Símbolos centrados en cada celda -->
+  <g font-size="20" font-weight="600" text-anchor="middle" fill="#1a1a1a" dominant-baseline="middle">
+    <!-- Li: fila 1 (centro y=48), columna 1 (centro x=48) -->
+    <text x="48" y="50">Li</text>
+    <!-- O: fila 1, columna 16 (centro x=30+15.5*36=588) -->
+    <text x="588" y="50">O</text>
+    <!-- Sr: fila 3 (centro y=30+2.5*36=120), columna 2 (centro x=84) -->
+    <text x="84" y="122">Sr</text>
+    <!-- I: fila 3, columna 17 (centro x=30+16.5*36=624) -->
+    <text x="624" y="122" font-style="italic">I</text>
   </g>
 </svg>
