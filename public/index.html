@@ -10,6 +10,7 @@
 <script src="/katex.min.js?v=2" onerror="document.write('<script src=\'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js\'><\/script>')"></script>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scrollbar-gutter: stable; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a1a; min-height: 100vh; -webkit-tap-highlight-color: transparent; }
   .screen { display: none; min-height: 100vh; padding: 16px; }
   .screen.active { display: flex; flex-direction: column; }
@@ -368,6 +369,7 @@ function saveBackup(submittedFlag) {
       group: state.group,
       answers: state.answers,
       marked: state.marked,
+      currentQ: state.currentQ,
       submitted: flag,
       timestamp: Date.now(),
     }));
@@ -378,6 +380,22 @@ function loadBackup() {
 }
 function clearBackup() {
   try { localStorage.removeItem('examBackup'); } catch(e) {}
+}
+
+// Sesion persistente: solo roomCode + name. Sobrevive a entrega/review/refresh.
+// Solo se borra en "Cambiar de sala" o cuando el profe elimina la sala.
+function saveLastSession() {
+  try {
+    if (state.roomCode && state.name) {
+      localStorage.setItem('lastSession', JSON.stringify({ roomCode: state.roomCode, name: state.name }));
+    }
+  } catch(e) {}
+}
+function loadLastSession() {
+  try { const s = localStorage.getItem('lastSession'); return s ? JSON.parse(s) : null; } catch(e) { return null; }
+}
+function clearLastSession() {
+  try { localStorage.removeItem('lastSession'); } catch(e) {}
 }
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -412,6 +430,7 @@ function backToRoom() {
   state.roomCode = '';
   try { localStorage.removeItem('examState'); } catch(e) {}
   clearBackup();
+  clearLastSession();
   showScreen('roomScreen');
 }
 
@@ -517,6 +536,18 @@ document.addEventListener('keydown', (e) => {
     startSubmitFlow();
   }
 });
+
+// Navegación con flechas del teclado (← anterior, → siguiente)
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+  if (e.ctrlKey || e.metaKey || e.altKey || e.shiftKey) return;
+  if (!document.getElementById('examScreen').classList.contains('active')) return;
+  const tag = (e.target.tagName || '').toUpperCase();
+  if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+  e.preventDefault();
+  if (e.key === 'ArrowLeft') prevQ();
+  else nextQ();
+});
 function toggleMark() {
   if (state.submitted) return;
   const q = state.questions[state.currentQ];
@@ -525,9 +556,9 @@ function toggleMark() {
   if (idx === -1) state.marked.push(q.id); else state.marked.splice(idx, 1);
   saveState(); saveBackup(); renderQuestion();
 }
-function prevQ() { if (state.currentQ > 0) { state.currentQ--; renderQuestion(); window.scrollTo(0,0); } }
-function nextQ() { if (state.currentQ < state.questions.length - 1) { state.currentQ++; renderQuestion(); window.scrollTo(0,0); } }
-function goToQ(i) { state.currentQ = i; renderQuestion(); window.scrollTo(0,0); }
+function prevQ() { if (state.currentQ > 0) { state.currentQ--; renderQuestion(); saveState(); saveBackup(); window.scrollTo(0,0); } }
+function nextQ() { if (state.currentQ < state.questions.length - 1) { state.currentQ++; renderQuestion(); saveState(); saveBackup(); window.scrollTo(0,0); } }
+function goToQ(i) { state.currentQ = i; renderQuestion(); saveState(); saveBackup(); window.scrollTo(0,0); }
 
 function renderNavGrid() {
   const grid = document.getElementById('navGridInner');
@@ -930,12 +961,23 @@ socket.on('roomJoined', (data) => {
     populateNameDropdown(data.studentList);
   }
 
-  // Auto-rejoin if we have a saved session for this room
+  // Auto-rejoin if we have a saved session for this room.
+  // Caemos primero en examState; si está vacío (post-entrega), usamos lastSession.
   const saved = loadState();
-  if (saved && saved.name && saved.roomCode === data.roomCode) {
-    socket.emit('joinExam', { name: saved.name });
+  const last = loadLastSession();
+  let rejoinName = null;
+  if (saved && saved.name && saved.roomCode === data.roomCode) rejoinName = saved.name;
+  else if (last && last.name && last.roomCode === data.roomCode) rejoinName = last.name;
+  if (rejoinName) {
+    socket.emit('joinExam', { name: rejoinName });
   } else {
     showScreen('joinScreen');
+    // Si tenemos un nombre guardado de cualquier fuente, preseleccionarlo en el dropdown.
+    const fallbackName = (saved && saved.name) || (last && last.name);
+    if (fallbackName) {
+      const sel = document.getElementById('nameSelect');
+      if ([...sel.options].some(o => o.value === fallbackName)) sel.value = fallbackName;
+    }
   }
 });
 
@@ -978,6 +1020,7 @@ socket.on('joined', (data) => {
   if (data.title) { state.title = data.title; document.getElementById('examTitleBar').textContent = data.title; }
   saveState();
   saveBackup(backupValid && backup.submitted);
+  saveLastSession();
 
   if (data.submitted) {
     enterReviewMode({ ok: true, correct: data.correct, total: data.questions.length, answerKey: data.answerKey });
@@ -1028,6 +1071,7 @@ socket.on('roomDeleted', () => {
   state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null };
   try { localStorage.removeItem('examState'); } catch(e) {}
   clearBackup();
+  clearLastSession();
   document.getElementById('reviewBanner').style.display = 'none';
   document.getElementById('submitBtn').style.display = '';
   showScreen('roomScreen');
@@ -1040,15 +1084,19 @@ socket.on('connect', () => {
   const params = new URLSearchParams(window.location.search);
   const urlSala = params.get('sala');
   const saved = loadState();
+  const last = loadLastSession();
   if (urlSala) {
     const code = urlSala.toUpperCase();
     if (saved && saved.roomCode && saved.roomCode !== code) {
       try { localStorage.removeItem('examState'); } catch(e) {}
     }
+    if (last && last.roomCode && last.roomCode !== code) clearLastSession();
     document.getElementById('roomCodeInput').value = code;
     socket.emit('joinRoom', { roomCode: code });
   } else if (saved && saved.roomCode) {
     socket.emit('joinRoom', { roomCode: saved.roomCode });
+  } else if (last && last.roomCode) {
+    socket.emit('joinRoom', { roomCode: last.roomCode });
   }
 });
 

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" width="760" height="480" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="760" height="480" fill="#ffffff"/>
+
+  <!-- ================ GRÁFICA ================ -->
+  <!-- Origen: (100, 400). 1h = 50 px en x. 8 km = 25 px en y -->
+
+  <!-- Cuadrícula tenue -->
+  <g stroke="#e5e7eb" stroke-width="1">
+    <!-- líneas verticales cada hora (de 1 a 9) -->
+    <line x1="150" y1="60" x2="150" y2="400"/>
+    <line x1="200" y1="60" x2="200" y2="400"/>
+    <line x1="250" y1="60" x2="250" y2="400"/>
+    <line x1="300" y1="60" x2="300" y2="400"/>
+    <line x1="350" y1="60" x2="350" y2="400"/>
+    <line x1="400" y1="60" x2="400" y2="400"/>
+    <line x1="450" y1="60" x2="450" y2="400"/>
+    <line x1="500" y1="60" x2="500" y2="400"/>
+    <!-- líneas horizontales cada 8 km -->
+    <line x1="100" y1="375" x2="510" y2="375"/>
+    <line x1="100" y1="350" x2="510" y2="350"/>
+    <line x1="100" y1="325" x2="510" y2="325"/>
+    <line x1="100" y1="300" x2="510" y2="300"/>
+    <line x1="100" y1="275" x2="510" y2="275"/>
+    <line x1="100" y1="250" x2="510" y2="250"/>
+    <line x1="100" y1="225" x2="510" y2="225"/>
+    <line x1="100" y1="200" x2="510" y2="200"/>
+    <line x1="100" y1="175" x2="510" y2="175"/>
+    <line x1="100" y1="150" x2="510" y2="150"/>
+    <line x1="100" y1="125" x2="510" y2="125"/>
+    <line x1="100" y1="100" x2="510" y2="100"/>
+  </g>
+
+  <!-- Etiqueta eje y -->
+  <text x="50" y="50" font-size="16" font-weight="600">Posición (km)</text>
+
+  <!-- Eje y -->
+  <line x1="100" y1="60" x2="100" y2="400" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="100,55 95,68 105,68" fill="#1a1a1a"/>
+
+  <!-- Eje x -->
+  <line x1="100" y1="400" x2="520" y2="400" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="525,400 512,395 512,405" fill="#1a1a1a"/>
+
+  <!-- Marcas y etiquetas eje y: 32 (en y=300), 48 (y=250), 64 (y=200) -->
+  <g font-size="15">
+    <line x1="95" y1="300" x2="105" y2="300" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="88" y="305" text-anchor="end">32</text>
+    <line x1="95" y1="250" x2="105" y2="250" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="88" y="255" text-anchor="end">48</text>
+    <line x1="95" y1="200" x2="105" y2="200" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="88" y="205" text-anchor="end">64</text>
+  </g>
+
+  <!-- Marcas y etiquetas eje x: 4 (x=300), 6 (x=400), 8 (x=500) -->
+  <g font-size="15">
+    <line x1="300" y1="395" x2="300" y2="405" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="300" y="424" text-anchor="middle">4</text>
+    <line x1="400" y1="395" x2="400" y2="405" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="400" y="424" text-anchor="middle">6</text>
+    <line x1="500" y1="395" x2="500" y2="405" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="500" y="424" text-anchor="middle">8</text>
+  </g>
+
+  <!-- Etiqueta eje x -->
+  <text x="445" y="450" font-size="16" font-weight="600">Tiempo (h)</text>
+
+  <!-- Recta del movimiento (pasa por (4,32)→(300,300) y (8,64)→(500,200)) -->
+  <line x1="100" y1="400" x2="500" y2="200" stroke="#1d4ed8" stroke-width="3"/>
+
+  <!-- Puntos clave -->
+  <circle cx="300" cy="300" r="4" fill="#1d4ed8"/>
+  <circle cx="500" cy="200" r="4" fill="#1d4ed8"/>
+
+  <!-- ================ TABLA ================ -->
+  <g transform="translate(560, 90)">
+    <rect x="0" y="0" width="170" height="280" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="85" y1="0" x2="85" y2="280" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="0" y1="56" x2="170" y2="56" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="0" y1="112" x2="170" y2="112" stroke="#1a1a1a" stroke-width="1"/>
+    <line x1="0" y1="168" x2="170" y2="168" stroke="#1a1a1a" stroke-width="1"/>
+    <line x1="0" y1="224" x2="170" y2="224" stroke="#1a1a1a" stroke-width="1"/>
+
+    <!-- Cabecera -->
+    <text x="42.5" y="34" text-anchor="middle" font-size="13" font-weight="700">Posición</text>
+    <text x="42.5" y="50" text-anchor="middle" font-size="13" font-weight="700">(km)</text>
+    <text x="127.5" y="34" text-anchor="middle" font-size="13" font-weight="700">Tiempo</text>
+    <text x="127.5" y="50" text-anchor="middle" font-size="13" font-weight="700">(h)</text>
+
+    <!-- Filas -->
+    <text x="42.5" y="92" text-anchor="middle" font-size="17">32</text>
+    <text x="127.5" y="92" text-anchor="middle" font-size="17">4</text>
+
+    <text x="42.5" y="148" text-anchor="middle" font-size="17">
+      <tspan font-style="italic">d</tspan>
+      <tspan baseline-shift="sub" font-size="11">2</tspan>
+    </text>
+    <text x="127.5" y="148" text-anchor="middle" font-size="17">5</text>
+
+    <text x="42.5" y="204" text-anchor="middle" font-size="17">56</text>
+    <text x="127.5" y="204" text-anchor="middle" font-size="17">
+      <tspan font-style="italic">t</tspan>
+      <tspan baseline-shift="sub" font-size="11">3</tspan>
+    </text>
+
+    <text x="42.5" y="260" text-anchor="middle" font-size="17">64</text>
+    <text x="127.5" y="260" text-anchor="middle" font-size="17">8</text>
+  </g>
+</svg>

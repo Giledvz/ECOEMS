@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 380" width="460" height="380" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="460" height="380" fill="#ffffff"/>
+
+  <!-- Capa 1: Órbitas -->
+  <g transform="translate(230, 190)">
+    <ellipse cx="0" cy="0" rx="170" ry="60" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <ellipse cx="0" cy="0" rx="170" ry="60" fill="none" stroke="#1a1a1a" stroke-width="1.5" transform="rotate(60)"/>
+    <ellipse cx="0" cy="0" rx="170" ry="60" fill="none" stroke="#1a1a1a" stroke-width="1.5" transform="rotate(-60)"/>
+  </g>
+
+  <!-- Capa 2: Núcleo (protones, neutrón) y electrones -->
+  <g transform="translate(230, 190)">
+    <circle cx="-12" cy="-6" r="14" fill="#dc2626" stroke="#1a1a1a" stroke-width="1"/>
+    <circle cx="0" cy="12" r="14" fill="#dc2626" stroke="#1a1a1a" stroke-width="1"/>
+    <circle cx="10" cy="-8" r="14" fill="#22c55e" stroke="#1a1a1a" stroke-width="1"/>
+
+    <circle cx="170" cy="0" r="6" fill="#1d4ed8"/>
+    <circle cx="-170" cy="0" r="6" fill="#1d4ed8" transform="rotate(60)"/>
+    <circle cx="-170" cy="0" r="6" fill="#1d4ed8" transform="rotate(-60)"/>
+  </g>
+
+  <!-- Capa 3: Líneas de etiquetas (encima de los círculos: visibles hasta el centro) -->
+  <line x1="105" y1="78" x2="145" y2="43" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="120" y1="195" x2="218" y2="184" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="125" y1="315" x2="240" y2="182" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- Capa 4: Texto y rectángulos blancos -->
+  <rect x="46" y="64" width="115" height="22" fill="#ffffff"/>
+  <text x="50" y="80" font-size="18" font-weight="600" font-style="italic">I</text>
+  <text x="65" y="80" font-size="15">— Electrón</text>
+
+  <rect x="46" y="184" width="110" height="22" fill="#ffffff"/>
+  <text x="50" y="200" font-size="18" font-weight="600" font-style="italic">II</text>
+  <text x="73" y="200" font-size="15">— Protón</text>
+
+  <rect x="46" y="304" width="120" height="22" fill="#ffffff"/>
+  <text x="50" y="320" font-size="18" font-weight="600" font-style="italic">III</text>
+  <text x="80" y="320" font-size="15">— Neutrón</text>
+</svg>

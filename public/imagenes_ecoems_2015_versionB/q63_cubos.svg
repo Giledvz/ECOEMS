@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" width="720" height="720" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="720" height="720" fill="#ffffff"/>
+
+  <defs>
+    <!-- Cubo isométrico reutilizable. Origen: vértice frontal inferior. Lado=40 -->
+    <symbol id="cube" overflow="visible">
+      <!-- Cara superior -->
+      <polygon points="0,-30 35,-50 70,-30 35,-10" fill="#e2e8f0" stroke="#1a1a1a" stroke-width="1.5"/>
+      <!-- Cara frontal izquierda -->
+      <polygon points="0,-30 35,-10 35,30 0,10" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
+      <!-- Cara frontal derecha -->
+      <polygon points="35,-10 70,-30 70,10 35,30" fill="#94a3b8" stroke="#1a1a1a" stroke-width="1.5"/>
+    </symbol>
+  </defs>
+
+  <!-- FIGURA ORIGINAL (centro-arriba) -->
+  <g transform="translate(280, 60)">
+    <text x="80" y="-15" text-anchor="middle" font-size="14" font-weight="600">Figura original</text>
+    <!-- Pila base + escalonado -->
+    <use href="#cube" x="0"   y="160"/>
+    <use href="#cube" x="70"  y="160"/>
+    <use href="#cube" x="140" y="160"/>
+    <use href="#cube" x="35"  y="115"/>
+    <use href="#cube" x="105" y="115"/>
+    <use href="#cube" x="70"  y="70"/>
+  </g>
+
+  <!-- Línea separadora -->
+  <line x1="40" y1="290" x2="680" y2="290" stroke="#d1d5db" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- OPCIÓN A (rotada incorrectamente: refleja) -->
+  <g transform="translate(80, 350)">
+    <text x="0" y="-10" font-size="16" font-weight="600">a)</text>
+    <g transform="translate(40, 30)">
+      <use href="#cube" x="0"   y="160"/>
+      <use href="#cube" x="70"  y="160"/>
+      <use href="#cube" x="140" y="160"/>
+      <use href="#cube" x="0"   y="115"/>
+      <use href="#cube" x="70"  y="115"/>
+      <use href="#cube" x="0"   y="70"/>
+    </g>
+  </g>
+
+  <!-- OPCIÓN B (rotación 90° antihorario CORRECTA) -->
+  <g transform="translate(440, 350)">
+    <text x="0" y="-10" font-size="16" font-weight="600">b)</text>
+    <g transform="translate(40, 30)">
+      <use href="#cube" x="0"   y="160"/>
+      <use href="#cube" x="70"  y="160"/>
+      <use href="#cube" x="140" y="160"/>
+      <use href="#cube" x="35"  y="115"/>
+      <use href="#cube" x="105" y="115"/>
+      <use href="#cube" x="140" y="115"/>
+      <use href="#cube" x="140" y="70"/>
+    </g>
+  </g>
+
+  <!-- OPCIÓN C -->
+  <g transform="translate(80, 560)">
+    <text x="0" y="-10" font-size="16" font-weight="600">c)</text>
+    <g transform="translate(40, 30)">
+      <use href="#cube" x="0"   y="120"/>
+      <use href="#cube" x="70"  y="120"/>
+      <use href="#cube" x="140" y="120"/>
+      <use href="#cube" x="35"  y="75"/>
+      <use href="#cube" x="105" y="75"/>
+    </g>
+  </g>
+
+  <!-- OPCIÓN D -->
+  <g transform="translate(440, 560)">
+    <text x="0" y="-10" font-size="16" font-weight="600">d)</text>
+    <g transform="translate(40, 30)">
+      <use href="#cube" x="0"   y="120"/>
+      <use href="#cube" x="70"  y="120"/>
+      <use href="#cube" x="35"  y="75"/>
+      <use href="#cube" x="105" y="75"/>
+      <use href="#cube" x="70"  y="30"/>
+    </g>
+  </g>
+</svg>

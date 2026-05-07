@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="240" height="200" fill="#ffffff"/>
+
+  <defs>
+    <symbol id="cube" overflow="visible">
+      <polygon points="0,-30 35,-50 70,-30 35,-10" fill="#e2e8f0" stroke="#1a1a1a" stroke-width="1.5"/>
+      <polygon points="0,-30 35,-10 35,30 0,10" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
+      <polygon points="35,-10 70,-30 70,10 35,30" fill="#94a3b8" stroke="#1a1a1a" stroke-width="1.5"/>
+    </symbol>
+  </defs>
+
+  <g transform="translate(15, -5)">
+    <use href="#cube" x="0" y="160"/>
+    <use href="#cube" x="70" y="160"/>
+    <use href="#cube" x="140" y="160"/>
+    <use href="#cube" x="35" y="120"/>
+    <use href="#cube" x="105" y="120"/>
+    <use href="#cube" x="70" y="80"/>
+  </g>
+</svg>

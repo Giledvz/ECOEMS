@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 220" width="460" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="460" height="220" fill="#ffffff"/>
+
+  <!-- Símbolos: Na S Na -->
+  <text x="100" y="120" text-anchor="middle" font-size="44" font-weight="600">Na</text>
+  <text x="230" y="120" text-anchor="middle" font-size="44" font-weight="600">S</text>
+  <text x="360" y="120" text-anchor="middle" font-size="44" font-weight="600">Na</text>
+
+  <!-- Pares de electrones (puntos) alrededor del S: 6 electrones de valencia -->
+  <!-- Arriba (par) -->
+  <circle cx="220" cy="78" r="4" fill="#1a1a1a"/>
+  <circle cx="240" cy="78" r="4" fill="#1a1a1a"/>
+  <!-- Abajo (par) -->
+  <circle cx="220" cy="148" r="4" fill="#1a1a1a"/>
+  <circle cx="240" cy="148" r="4" fill="#1a1a1a"/>
+  <!-- Izquierda (par compartido con Na) -->
+  <circle cx="180" cy="105" r="4" fill="#1a1a1a"/>
+  <circle cx="180" cy="125" r="4" fill="#1a1a1a"/>
+  <!-- Derecha (par compartido con Na) -->
+  <circle cx="280" cy="105" r="4" fill="#1a1a1a"/>
+  <circle cx="280" cy="125" r="4" fill="#1a1a1a"/>
+
+  <!-- Etiqueta -->
+  <text x="230" y="195" text-anchor="middle" font-size="16" font-style="italic">Sulfuro de sodio</text>
+</svg>

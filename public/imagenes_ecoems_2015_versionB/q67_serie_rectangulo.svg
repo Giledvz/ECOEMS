@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 700" width="720" height="700" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="720" height="700" fill="#ffffff"/>
+
+  <defs>
+    <!-- Rejilla rectangular 4x2 con diagonales internas formando 8 triángulos -->
+    <symbol id="rectgrid" overflow="visible">
+      <!-- Bordes externos -->
+      <rect x="0" y="0" width="200" height="100" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+      <!-- División vertical media -->
+      <line x1="50" y1="0" x2="50" y2="100" stroke="#1a1a1a" stroke-width="1"/>
+      <line x1="100" y1="0" x2="100" y2="100" stroke="#1a1a1a" stroke-width="1"/>
+      <line x1="150" y1="0" x2="150" y2="100" stroke="#1a1a1a" stroke-width="1"/>
+      <!-- División horizontal -->
+      <line x1="0" y1="50" x2="200" y2="50" stroke="#1a1a1a" stroke-width="1"/>
+      <!-- Diagonales: cada celda tiene una diagonal -->
+      <line x1="0" y1="0" x2="50" y2="50" stroke="#1a1a1a" stroke-width="1"/>
+      <line x1="50" y1="0" x2="100" y2="50" stroke="#1a1a1a" stroke-width="1"/>
+      <line x1="100" y1="0" x2="150" y2="50" stroke="#1a1a1a" stroke-width="1"/>
+      <line x1="150" y1="0" x2="200" y2="50" stroke="#1a1a1a" stroke-width="1"/>
+      <line x1="0" y1="100" x2="50" y2="50" stroke="#1a1a1a" stroke-width="1"/>
+      <line x1="50" y1="100" x2="100" y2="50" stroke="#1a1a1a" stroke-width="1"/>
+      <line x1="100" y1="100" x2="150" y2="50" stroke="#1a1a1a" stroke-width="1"/>
+      <line x1="150" y1="100" x2="200" y2="50" stroke="#1a1a1a" stroke-width="1"/>
+    </symbol>
+  </defs>
+
+  <!-- Serie horizontal (3 figuras) -->
+  <!-- Figura 1: 3 triángulos rellenos -->
+  <g transform="translate(60, 60)">
+    <polygon points="0,0 50,0 0,50" fill="#1a1a1a"/>
+    <polygon points="50,50 100,50 100,100" fill="#1a1a1a"/>
+    <polygon points="100,0 150,0 150,50" fill="#1a1a1a"/>
+    <use href="#rectgrid"/>
+  </g>
+
+  <!-- Figura 2: 3 triángulos rellenos en posiciones distintas -->
+  <g transform="translate(280, 60)">
+    <polygon points="50,0 100,0 100,50" fill="#1a1a1a"/>
+    <polygon points="0,50 50,50 0,100" fill="#1a1a1a"/>
+    <polygon points="150,50 200,50 150,100" fill="#1a1a1a"/>
+    <use href="#rectgrid"/>
+  </g>
+
+  <!-- Figura 3 -->
+  <g transform="translate(500, 60)">
+    <polygon points="50,0 50,50 100,0" fill="#1a1a1a"/>
+    <polygon points="100,50 150,50 100,100" fill="#1a1a1a"/>
+    <use href="#rectgrid"/>
+  </g>
+
+  <!-- Opciones a, b, c, d (2x2) -->
+  <g font-size="16" font-weight="600">
+    <text x="40" y="270">a)</text>
+    <text x="380" y="270">b)</text>
+    <text x="40" y="490">c)</text>
+    <text x="380" y="490">d)</text>
+  </g>
+
+  <!-- Opción a -->
+  <g transform="translate(80, 290)">
+    <polygon points="0,0 50,0 50,50" fill="#1a1a1a"/>
+    <polygon points="50,50 100,50 50,100" fill="#1a1a1a"/>
+    <polygon points="150,0 200,0 200,50" fill="#1a1a1a"/>
+    <use href="#rectgrid"/>
+  </g>
+
+  <!-- Opción b -->
+  <g transform="translate(420, 290)">
+    <polygon points="0,0 50,50 0,100" fill="#1a1a1a"/>
+    <polygon points="100,0 150,0 100,50" fill="#1a1a1a"/>
+    <polygon points="150,50 200,100 150,100" fill="#1a1a1a"/>
+    <use href="#rectgrid"/>
+  </g>
+
+  <!-- Opción c -->
+  <g transform="translate(80, 510)">
+    <polygon points="0,0 50,50 0,100" fill="#1a1a1a"/>
+    <polygon points="50,0 100,0 100,50" fill="#1a1a1a"/>
+    <polygon points="150,50 200,50 150,100" fill="#1a1a1a"/>
+    <use href="#rectgrid"/>
+  </g>
+
+  <!-- Opción d -->
+  <g transform="translate(420, 510)">
+    <polygon points="50,0 100,0 50,50" fill="#1a1a1a"/>
+    <polygon points="100,50 150,50 100,100" fill="#1a1a1a"/>
+    <polygon points="150,0 200,0 200,50" fill="#1a1a1a"/>
+    <use href="#rectgrid"/>
+  </g>
+</svg>

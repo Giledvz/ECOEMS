@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" width="720" height="460" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="720" height="460" fill="#ffffff"/>
+
+  <!-- Etiquetas de filas (números 1-7) a la izquierda -->
+  <g font-size="14" text-anchor="middle">
+    <text x="40" y="55">1</text>
+    <text x="40" y="85">2</text>
+    <text x="40" y="115">3</text>
+    <text x="40" y="145">4</text>
+    <text x="40" y="175">5</text>
+    <text x="40" y="205">6</text>
+    <text x="40" y="235">7</text>
+  </g>
+
+  <!-- Cuadrícula 7 filas x 18 columnas. Cada celda 30x30 -->
+  <!-- Bloque A (grupo 1, columna 1): solo filas 1-7 -->
+  <g stroke="#1a1a1a" stroke-width="1.5" fill="#ffffff">
+    <!-- Bloque A: columna 1 -->
+    <rect x="60" y="40" width="30" height="210"/>
+    <!-- Bloque B: columna 2, filas 2-7 -->
+    <rect x="90" y="70" width="30" height="180"/>
+    <!-- Bloque D (transición): columnas 3-12, filas 4-7 -->
+    <rect x="120" y="130" width="300" height="120"/>
+    <!-- Bloque E (bloque p): columnas 13-17, filas 2-7 -->
+    <rect x="420" y="70" width="150" height="180"/>
+    <!-- Bloque F (gases nobles, columna 18): todas las filas -->
+    <rect x="570" y="40" width="30" height="210"/>
+    <!-- Bloque C (lantánidos/actínidos): abajo -->
+    <rect x="120" y="290" width="450" height="60"/>
+  </g>
+
+  <!-- Letras dentro de los bloques -->
+  <g font-size="32" font-weight="700" text-anchor="middle" font-style="italic">
+    <text x="75" y="160">A</text>
+    <text x="105" y="170">B</text>
+    <text x="270" y="200">D</text>
+    <text x="495" y="170">E</text>
+    <text x="585" y="160">F</text>
+    <text x="345" y="328">C</text>
+  </g>
+</svg>

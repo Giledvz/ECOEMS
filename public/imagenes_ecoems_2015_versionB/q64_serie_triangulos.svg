@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="720" height="560" fill="#ffffff"/>
+
+  <!-- SERIE (4 cuadros en fila) -->
+  <!-- Cada cuadro 110x110, separación 10 -->
+  <!-- Patrón: reloj de arena vertical (vacío) → corbatín horizontal (mitad rellena) → reloj de arena vertical (mitad rellena) → corbatín horizontal (vacío) -->
+
+  <!-- Cuadro 1: reloj de arena vertical, ambos triángulos blancos -->
+  <g transform="translate(60, 30)">
+    <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,10 100,10 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,100 100,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+
+  <!-- Cuadro 2: corbatín horizontal, mitad izquierda rellena -->
+  <g transform="translate(190, 30)">
+    <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,10 10,100 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="100,10 100,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+
+  <!-- Cuadro 3: reloj de arena vertical, ambos triángulos blancos (igual al 1) -->
+  <g transform="translate(320, 30)">
+    <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,10 100,10 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,100 100,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+
+  <!-- Cuadro 4: corbatín horizontal, mitad derecha rellena -->
+  <g transform="translate(450, 30)">
+    <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,10 10,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="100,10 100,100 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+
+  <!-- Cuadro 5: ¿? -->
+  <g transform="translate(580, 30)">
+    <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="6,4"/>
+    <text x="55" y="65" text-anchor="middle" font-size="36" font-weight="700">?</text>
+  </g>
+
+  <!-- OPCIONES (2x2) -->
+  <g font-size="16" font-weight="600">
+    <text x="60" y="200">a)</text>
+    <text x="380" y="200">b)</text>
+    <text x="60" y="380">c)</text>
+    <text x="380" y="380">d)</text>
+  </g>
+
+  <!-- Opción a) corbatín horizontal con mitad izquierda rellena -->
+  <g transform="translate(120, 220)">
+    <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,10 10,100 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="100,10 100,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+
+  <!-- Opción b) reloj de arena con triángulo superior negro -->
+  <g transform="translate(440, 220)">
+    <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,10 100,10 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,100 100,100 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+
+  <!-- Opción c) reloj de arena vertical con triángulo INFERIOR negro -->
+  <g transform="translate(120, 400)">
+    <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,10 100,10 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,100 100,100 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+
+  <!-- Opción d) corbatín horizontal con triángulos completos sin relleno -->
+  <g transform="translate(440, 400)">
+    <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,10 10,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="100,10 100,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="460" height="460" fill="#ffffff"/>
+
+  <!-- Prisma rectangular vertical (ortoédrico) en perspectiva isométrica simple -->
+  <!-- Cara frontal -->
+  <polygon points="150,80 270,80 270,360 150,360" fill="#f1f5f9" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Cara superior -->
+  <polygon points="150,80 195,40 315,40 270,80" fill="#e2e8f0" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Cara lateral derecha -->
+  <polygon points="270,80 315,40 315,320 270,360" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Aristas ocultas (líneas punteadas) -->
+  <line x1="150" y1="360" x2="195" y2="320" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="195" y1="320" x2="315" y2="320" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="195" y1="320" x2="195" y2="40" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <!-- Etiqueta altura: h = 8 m -->
+  <line x1="345" y1="40" x2="345" y2="320" stroke="#1d4ed8" stroke-width="1.5"/>
+  <line x1="340" y1="40" x2="350" y2="40" stroke="#1d4ed8" stroke-width="1.5"/>
+  <line x1="340" y1="320" x2="350" y2="320" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="360" y="184" font-size="20" fill="#1d4ed8">
+    <tspan font-style="italic">h</tspan><tspan> = 8 m</tspan>
+  </text>
+
+  <!-- Etiqueta área de la base -->
+  <line x1="150" y1="395" x2="270" y2="395" stroke="#16a34a" stroke-width="1.5"/>
+  <line x1="150" y1="390" x2="150" y2="400" stroke="#16a34a" stroke-width="1.5"/>
+  <line x1="270" y1="390" x2="270" y2="400" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="210" y="425" text-anchor="middle" font-size="20" fill="#16a34a">
+    <tspan font-style="italic">A</tspan><tspan font-size="13" baseline-shift="sub">b</tspan><tspan> = 120 m²</tspan>
+  </text>
+</svg>

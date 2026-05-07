@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="540" height="540" fill="#ffffff"/>
+
+  <!-- Tabla -->
+  <g stroke="#1a1a1a" stroke-width="1.5" fill="#ffffff">
+    <!-- Marco -->
+    <rect x="40" y="30" width="460" height="490"/>
+    <!-- Línea vertical de columna -->
+    <line x1="240" y1="30" x2="240" y2="520"/>
+    <!-- Líneas horizontales -->
+    <line x1="40" y1="80" x2="500" y2="80" stroke-width="2"/>
+    <line x1="40" y1="130" x2="500" y2="130"/>
+    <line x1="40" y1="180" x2="500" y2="180"/>
+    <line x1="40" y1="230" x2="500" y2="230"/>
+    <line x1="40" y1="280" x2="500" y2="280"/>
+    <line x1="40" y1="330" x2="500" y2="330"/>
+    <line x1="40" y1="380" x2="500" y2="380"/>
+    <line x1="40" y1="430" x2="500" y2="430"/>
+    <line x1="40" y1="470" x2="500" y2="470"/>
+  </g>
+
+  <!-- Cabeceras -->
+  <g font-size="16" font-weight="700" text-anchor="middle">
+    <text x="140" y="62">Descripción del IEV</text>
+    <text x="370" y="62">Frecuencia</text>
+  </g>
+
+  <!-- Filas -->
+  <g font-size="15" text-anchor="middle">
+    <text x="140" y="110">No explosiva</text>
+    <text x="370" y="110">Diaria</text>
+
+    <text x="140" y="160">Reducida</text>
+    <text x="370" y="160">Diaria</text>
+
+    <text x="140" y="210">Moderada</text>
+    <text x="370" y="210">Semanal</text>
+
+    <text x="140" y="260">Violenta</text>
+    <text x="370" y="260">Anual</text>
+
+    <text x="140" y="310">Cataclísmica</text>
+    <text x="370" y="310">Cada 10 años</text>
+
+    <text x="140" y="360">Paroxística</text>
+    <text x="370" y="360">Cada 50 años</text>
+
+    <text x="140" y="410">Colosal</text>
+    <text x="370" y="410">Cada siglo</text>
+
+    <text x="140" y="455">Supercolosal</text>
+    <text x="370" y="455">Cada milenio</text>
+
+    <text x="140" y="500">Megacolosal</text>
+    <text x="370" y="500">Entre 10 000 y 100 000 años</text>
+  </g>
+</svg>

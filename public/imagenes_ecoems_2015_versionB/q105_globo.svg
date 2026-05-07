@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="540" height="540" fill="#ffffff"/>
+
+  <defs>
+    <radialGradient id="globe" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="70%" stop-color="#bfdbfe"/>
+      <stop offset="100%" stop-color="#93c5fd"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Esfera con sombreado (la circunferencia no cambia con la rotación) -->
+  <circle cx="270" cy="270" r="200" fill="url(#globe)" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Estructura interna ligeramente inclinada (8°) -->
+  <g transform="rotate(-8 270 270)">
+    <!-- Eje terrestre (línea que pasa por ambos polos, extendida más allá) -->
+    <line x1="270" y1="30" x2="270" y2="510" stroke="#1a1a1a" stroke-width="2.5" stroke-dasharray="10,5"/>
+
+    <!-- Polos -->
+    <circle cx="270" cy="70" r="3" fill="#1a1a1a"/>
+    <circle cx="270" cy="470" r="3" fill="#1a1a1a"/>
+
+    <!-- Ecuador (solo la mitad frontal, arco inferior) -->
+    <path d="M 70 270 A 200 48 0 0 0 470 270" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+    <!-- Meridiano de Greenwich (solo la mitad frontal, arco derecho) -->
+    <path d="M 270 70 A 48 200 0 0 1 270 470" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+    <!-- Círculo Polar Ártico (solo la mitad frontal, arco inferior) -->
+    <path d="M 122 135 A 148 22 0 0 0 418 135" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+    <!-- Círculo Polar Antártico (solo la mitad frontal, arco inferior) -->
+    <path d="M 124 405 A 146 22 0 0 0 416 405" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+
+  <!-- Etiquetas con flechas (ajustadas a las nuevas posiciones de los rasgos) -->
+  <g font-size="22" font-weight="700" font-style="italic">
+    <!-- a: Círculo Polar Ártico -->
+    <text x="495" y="148">a</text>
+    <line x1="485" y1="145" x2="371" y2="138" stroke="#1a1a1a" stroke-width="1.2"/>
+    <polygon points="365,138 377,132 377,144" fill="#1a1a1a"/>
+
+    <!-- c: Meridiano de Greenwich -->
+    <text x="495" y="278">c</text>
+    <line x1="485" y1="272" x2="324" y2="264" stroke="#1a1a1a" stroke-width="1.2"/>
+    <polygon points="318,264 330,258 330,270" fill="#1a1a1a"/>
+
+    <!-- d: Ecuador -->
+    <text x="20" y="220">d</text>
+    <line x1="40" y1="225" x2="184" y2="317" stroke="#1a1a1a" stroke-width="1.2"/>
+    <polygon points="189,320 176,319 182,309" fill="#1a1a1a"/>
+
+    <!-- b: Eje terrestre (extremo inferior, ligeramente desplazado por la inclinación) -->
+    <text x="495" y="498">b</text>
+    <line x1="485" y1="495" x2="314" y2="494" stroke="#1a1a1a" stroke-width="1.2"/>
+    <polygon points="308,494 320,488 320,500" fill="#1a1a1a"/>
+
+    <!-- e: Círculo Polar Antártico -->
+    <text x="20" y="430">e</text>
+    <line x1="40" y1="425" x2="192" y2="430" stroke="#1a1a1a" stroke-width="1.2"/>
+    <polygon points="198,430 186,436 186,424" fill="#1a1a1a"/>
+  </g>
+</svg>

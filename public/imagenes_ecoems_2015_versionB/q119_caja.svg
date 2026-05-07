@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="540" height="540" fill="#ffffff"/>
+
+  <!-- Patrón en forma de cruz para una caja 10x10x20 -->
+  <!-- Cuadrado central 1 (cara superior, 10x10): x=170, y=80 -->
+  <!-- Cuadrado central 2 (cara frontal, 10x20): x=170, y=180 -->
+  <!-- Cara izquierda (10x20): x=70, y=180 -->
+  <!-- Cara derecha (10x20): x=270, y=180 -->
+  <!-- Cara trasera (10x20): x=370, y=180 -->
+  <!-- Cara inferior (10x10): x=170, y=380 -->
+  <!-- Las dimensiones reales: cada cm = 10 px → 10cm=100px, 20cm=200px -->
+
+  <g fill="#f1f5f9" stroke="#1a1a1a" stroke-width="2">
+    <!-- Cara superior (10x10) -->
+    <rect x="170" y="80" width="100" height="100"/>
+    <!-- Cara frontal (10x20) -->
+    <rect x="170" y="180" width="100" height="200"/>
+    <!-- Cara izquierda (10x20), pegada a la frontal -->
+    <rect x="70" y="180" width="100" height="200"/>
+    <!-- Cara derecha (10x20) -->
+    <rect x="270" y="180" width="100" height="200"/>
+    <!-- Cara trasera (10x20) -->
+    <rect x="370" y="180" width="100" height="200"/>
+    <!-- Cara inferior (10x10) -->
+    <rect x="170" y="380" width="100" height="100"/>
+  </g>
+
+  <!-- Etiquetas dimensionales -->
+  <!-- 10 cm horizontal arriba -->
+  <line x1="170" y1="60" x2="270" y2="60" stroke="#1d4ed8" stroke-width="1.5"/>
+  <line x1="170" y1="55" x2="170" y2="65" stroke="#1d4ed8" stroke-width="1.5"/>
+  <line x1="270" y1="55" x2="270" y2="65" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="220" y="45" text-anchor="middle" font-size="18" fill="#1d4ed8">10 cm</text>
+
+  <!-- 10 cm vertical (cara superior) -->
+  <line x1="290" y1="83" x2="290" y2="177" stroke="#1d4ed8" stroke-width="1.5"/>
+  <line x1="285" y1="83" x2="295" y2="83" stroke="#1d4ed8" stroke-width="1.5"/>
+  <line x1="285" y1="177" x2="295" y2="177" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="300" y="135" font-size="18" fill="#1d4ed8">10 cm</text>
+
+  <!-- 20 cm horizontal abajo (cara inferior, pero como referencia para el ancho de la cara frontal) -->
+  <line x1="170" y1="500" x2="370" y2="500" stroke="#16a34a" stroke-width="1.5"/>
+  <line x1="170" y1="495" x2="170" y2="505" stroke="#16a34a" stroke-width="1.5"/>
+  <line x1="370" y1="495" x2="370" y2="505" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="270" y="525" text-anchor="middle" font-size="18" fill="#16a34a">20 cm</text>
+</svg>

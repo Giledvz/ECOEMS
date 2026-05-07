@@ -34,12 +34,12 @@
             "id": 2,
             "topic": "1.3",
             "topic_name": "Movimiento uniformemente acelerado",
-            "text": "Un objeto se deja caer desde el reposo. Si la aceleración de la gravedad es $g = 10 \\ \\frac{m}{s^2}$, ¿qué distancia habrá recorrido en los primeros 4 segundos?",
+            "text": "Un auto arranca con una aceleración constante de $1.8 \\ \\frac{m}{s^2}$; la velocidad del auto dos segundos después de iniciar su movimiento es de",
             "options": {
-              "A": "20 m",
-              "B": "40 m",
-              "C": "60 m",
-              "D": "80 m"
+              "A": "$0.9 \\ \\frac{m}{s}$",
+              "B": "$1.8 \\ \\frac{m}{s}$",
+              "C": "$3.2 \\ \\frac{m}{s}$",
+              "D": "$3.6 \\ \\frac{m}{s}$"
             },
             "answer": "D"
           },
@@ -74,14 +74,14 @@
             "id": 5,
             "topic": "3.1",
             "topic_name": "Trabajo mecánico",
-            "text": "¿En cuál de las siguientes situaciones se realiza un trabajo mecánico?",
+            "text": "Selecciona la situación que ejemplifica la realización de un trabajo mecánico.",
             "options": {
-              "A": "Un libro permanece en reposo sobre una mesa horizontal.",
-              "B": "Una persona sostiene una maleta pesada sin desplazarse.",
-              "C": "Un caballo arrastra un trineo con fuerza constante sobre la nieve.",
-              "D": "Un satélite describe una órbita circular uniforme alrededor de la Tierra."
+              "A": "La energía empleada para elevar la temperatura de un gas a volumen constante.",
+              "B": "Los kilowatts hora gastados para mantener encendido un foco durante cierto tiempo.",
+              "C": "El aumento en la energía cinética de un objeto en movimiento circular uniforme.",
+              "D": "Al empujar una caja con fuerza constante para moverla a una cierta distancia."
             },
-            "answer": "C"
+            "answer": "D"
           },
           {
             "id": 6,
@@ -113,12 +113,12 @@
             "id": 8,
             "topic": "4.1.3",
             "topic_name": "Conversión de temperatura",
-            "text": "Para convertir un valor de temperatura Fahrenheit $T_F$ a su equivalente en la escala Celsius $T_C$, se emplea la expresión",
+            "text": "Para convertir un valor de temperatura Celsius $T_C$ a su valor equivalente en la escala Kelvin $T_K$ de temperaturas, se emplea la expresión",
             "options": {
-              "A": "$T_C = T_F - 273$",
-              "B": "$T_C = \\frac{T_F - 32}{1.8}$",
-              "C": "$T_C = \\frac{T_F + 32}{1.8}$",
-              "D": "$T_C = 1.8 T_F + 32$"
+              "A": "$T_K = \\frac{T_C - 32}{1.8}$",
+              "B": "$T_K = T_C + 273$",
+              "C": "$T_K = T_C - 273$",
+              "D": "$T_K = 1.8 (T_C + 273)$"
             },
             "answer": "B"
           },
@@ -126,14 +126,14 @@
             "id": 9,
             "topic": "4.1.4",
             "topic_name": "Capacidad térmica específica",
-            "text": "A la cantidad de calor que necesita una sustancia para cambiar de estado de agregación, sin variar su temperatura, se le conoce como",
+            "text": "A la cantidad de calor que necesita un gramo de una sustancia para elevar su temperatura un grado Celsius, se le conoce como",
             "options": {
               "A": "capacidad térmica.",
-              "B": "calor sensible.",
-              "C": "calor latente.",
+              "B": "calor latente de fusión.",
+              "C": "calor latente de vaporización.",
               "D": "capacidad térmica específica."
             },
-            "answer": "C"
+            "answer": "D"
           },
           {
             "id": 10,
@@ -179,12 +179,12 @@
             "id": 13,
             "topic": "6.4.1",
             "topic_name": "Resistencia en circuitos",
-            "text": "A partir del circuito que se muestra en la imagen, determina la corriente total que entrega la fuente.",
+            "text": "Determina la resistencia total del circuito que se representa en la imagen.",
             "options": {
-              "A": "$0.50 \\ A$",
-              "B": "$1.36 \\ A$",
-              "C": "$2.40 \\ A$",
-              "D": "$6.00 \\ A$"
+              "A": "$2.41 \\ \\Omega$",
+              "B": "$4.4 \\ \\Omega$",
+              "C": "$12 \\ \\Omega$",
+              "D": "$1.90 \\ \\Omega$"
             },
             "answer": "B",
             "image": "/imagenes_area1_2021/q13_circuito.png"
@@ -193,14 +193,14 @@
             "id": 14,
             "topic": "7.2.1",
             "topic_name": "Fluidos",
-            "text": "¿Cuál es la presión que ejerce una columna de agua de 5 m de altura? (Densidad del agua $\\rho = 1000 \\ \\frac{kg}{m^3}$, $g = 9.8 \\ \\frac{m}{s^2}$)",
+            "text": "¿En cuánto tiempo se llenará una alberca olímpica de 50 m x 25 m x 3 m, si se usa un tubo de 40 cm de diámetro por el que fluye agua a una velocidad de $4 \\ \\frac{m}{s}$?",
             "options": {
-              "A": "49 000 Pa",
-              "B": "5 000 Pa",
-              "C": "98 000 Pa",
-              "D": "500 Pa"
+              "A": "0.0052 hrs",
+              "B": "0.020 hrs",
+              "C": "1.63 hrs",
+              "D": "2.07 hrs"
             },
-            "answer": "A"
+            "answer": "D"
           },
           {
             "id": 15,
@@ -660,14 +660,14 @@
             "id": 48,
             "topic": "1.1.3",
             "topic_name": "Simplificación de expresiones",
-            "text": "Racionaliza la expresión $\\frac{6}{\\sqrt{3}}$",
+            "text": "Simplifica la expresión $\\frac{(a^2 + b)^{\\frac{3}{2}}}{a^2 + b}$",
             "options": {
-              "A": "$3\\sqrt{2}$",
-              "B": "$2\\sqrt{3}$",
-              "C": "$\\frac{\\sqrt{3}}{6}$",
-              "D": "$6\\sqrt{3}$"
+              "A": "$\\sqrt{(a^2 + b)^6}$",
+              "B": "$(a^2 + b)^{-\\frac{1}{2}}$",
+              "C": "$\\sqrt{a^2 + b}$",
+              "D": "$a + b^{\\frac{1}{2}}$"
             },
-            "answer": "B"
+            "answer": "C"
           },
           {
             "id": 49,
@@ -686,14 +686,14 @@
             "id": 50,
             "topic": "2.3",
             "topic_name": "Simplificación de fracciones",
-            "text": "Factoriza la expresión $x^2 - 5x - 14$",
+            "text": "Simplifica la siguiente fracción.\n\n$\\frac{-x^2 - 3x + 40}{x + 8}$",
             "options": {
-              "A": "$(x - 7)(x + 2)$",
-              "B": "$(x + 7)(x - 2)$",
-              "C": "$(x - 7)(x - 2)$",
-              "D": "$(x + 7)(x + 2)$"
+              "A": "$x - 5$",
+              "B": "$-x + 5$",
+              "C": "$-x + 8$",
+              "D": "$x - 8$"
             },
-            "answer": "A"
+            "answer": "B"
           },
           {
             "id": 51,
@@ -1163,12 +1163,12 @@
             "id": 86,
             "topic": "5.0",
             "topic_name": "Nexos y conectores",
-            "text": "Elige la opción que completa adecuadamente el siguiente párrafo.\n\nEl atleta entrenó durante meses para la competencia, __________ una lesión le impidió participar; __________, tuvo que conformarse __________ ver la carrera desde las gradas.",
+            "text": "Elige la opción que completa adecuadamente el siguiente párrafo.\n\nQuisieron colaborar con una obra magistral, __________ no guardaban los requisitos necesarios; __________, tuvieron que resignarse __________ la realización de una presentación más sencilla.",
             "options": {
               "A": "sin embargo — no obstante — a",
-              "B": "mas — por tanto — con",
-              "C": "más — en conclusión — por",
-              "D": "pero — por lo tanto — con"
+              "B": "mas — por tanto — a",
+              "C": "más — en conclusión — con",
+              "D": "pero — en consecuencia — con"
             },
             "answer": "D"
           },
@@ -1189,12 +1189,12 @@
             "id": 88,
             "topic": "6.3",
             "topic_name": "Antónimos",
-            "text": "Antónimo de DIÁFANO.",
+            "text": "Antónimo de VOCIFERAR.",
             "options": {
-              "A": "Brillante.",
-              "B": "Opaco.",
-              "C": "Luminoso.",
-              "D": "Claro."
+              "A": "Omitir.",
+              "B": "Silenciar.",
+              "C": "Gruñir.",
+              "D": "Roncar."
             },
             "answer": "B"
           },
@@ -1234,38 +1234,38 @@
             "id": 91,
             "topic": "1.1.2",
             "topic_name": "Teoría celular",
-            "text": "La Teoría celular establece que",
+            "text": "Un postulado de la Teoría celular afirma que",
             "options": {
-              "A": "todas las células provienen de la generación espontánea.",
-              "B": "las células procariotas son más evolucionadas que las eucariotas.",
-              "C": "todo ser vivo está formado por una o más células.",
-              "D": "los virus son la unidad fundamental de la vida."
+              "A": "los organismos están formados por millones de células.",
+              "B": "los organismos se reproducen por células sexuales.",
+              "C": "la célula es un individuo eucarionte.",
+              "D": "la célula proviene de otra preexistente e igual."
             },
-            "answer": "C"
+            "answer": "D"
           },
           {
             "id": 92,
             "topic": "2.1.1",
             "topic_name": "Anabolismo",
-            "text": "El catabolismo es un proceso metabólico que consiste en",
+            "text": "Se denomina anabolismo al proceso metabólico de",
             "options": {
-              "A": "sintetizar moléculas complejas a partir de moléculas simples.",
-              "B": "degradar moléculas complejas para obtener energía.",
-              "C": "almacenar energía en forma de glucógeno.",
-              "D": "transportar sustancias a través de la membrana celular."
+              "A": "construcción, en el que se obtienen moléculas grandes a partir de otras más pequeñas.",
+              "B": "degradación, en el que se obtienen moléculas grandes a partir de otras más pequeñas.",
+              "C": "degradación, en el que las moléculas grandes se transforman en pequeñas.",
+              "D": "construcción, en el que las moléculas grandes se transforman en pequeñas."
             },
-            "answer": "B"
+            "answer": "A"
           },
           {
             "id": 93,
             "topic": "2.4.1",
             "topic_name": "Ciclo de Krebs",
-            "text": "¿En qué estructura celular se lleva a cabo el ciclo de Krebs?",
+            "text": "¿Qué producto de la glucólisis se incorpora al ciclo de Krebs?",
             "options": {
-              "A": "Citoplasma.",
-              "B": "Núcleo.",
-              "C": "Retículo endoplásmico.",
-              "D": "Matriz mitocondrial."
+              "A": "Glucosa.",
+              "B": "Etanol.",
+              "C": "Lactato.",
+              "D": "Piruvato."
             },
             "answer": "D"
           },
@@ -1273,12 +1273,12 @@
             "id": 94,
             "topic": "3.2.1",
             "topic_name": "Mitosis",
-            "text": "Una célula con 46 cromosomas que se divide por meiosis formará células con",
+            "text": "Una célula presenta un número cromosómico 46 XX. Al dividirse durante la mitosis, formará células con",
             "options": {
-              "A": "92 cromosomas.",
-              "B": "46 cromosomas.",
-              "C": "23 cromosomas.",
-              "D": "12 cromosomas."
+              "A": "23 X.",
+              "B": "23 XX.",
+              "C": "46 XX.",
+              "D": "46 X."
             },
             "answer": "C"
           },
@@ -1286,12 +1286,12 @@
             "id": 95,
             "topic": "4.2.3",
             "topic_name": "Mutaciones",
-            "text": "Las mutaciones que no afectan la supervivencia del organismo se denominan",
+            "text": "La mayor parte de las mutaciones son inocuas o neutras y son esenciales para la",
             "options": {
-              "A": "letales.",
-              "B": "beneficiosas.",
-              "C": "neutras.",
-              "D": "cromosómicas."
+              "A": "sucesión.",
+              "B": "replicación.",
+              "C": "evolución.",
+              "D": "transcripción."
             },
             "answer": "C"
           },
@@ -1299,12 +1299,12 @@
             "id": 96,
             "topic": "4.3",
             "topic_name": "Ingeniería genética",
-            "text": "La técnica que permite cortar y unir fragmentos de ADN de diferentes organismos para crear combinaciones nuevas se denomina",
+            "text": "Es el conjunto de técnicas que hace posible el aislamiento, estudio, modificación y transferencia de genes de un organismo a otro.",
             "options": {
-              "A": "clonación reproductiva.",
-              "B": "tecnología del ADN recombinante.",
-              "C": "electroforesis.",
-              "D": "reacción en cadena de la polimerasa."
+              "A": "Terapia génica.",
+              "B": "Ingeniería genética.",
+              "C": "Recombinación genética.",
+              "D": "Proyecto genoma."
             },
             "answer": "B"
           },
@@ -1312,25 +1312,25 @@
             "id": 97,
             "topic": "5.2.2",
             "topic_name": "Adaptación",
-            "text": "El proceso mediante el cual las poblaciones se ajustan a las condiciones de su ambiente a lo largo de generaciones se denomina",
+            "text": "La __________ es el resultado de la selección natural y de la recombinación genética.",
             "options": {
-              "A": "mutación.",
-              "B": "migración.",
-              "C": "adaptación.",
-              "D": "especiación."
+              "A": "extinción",
+              "B": "adaptación",
+              "C": "mutación",
+              "D": "clonación"
             },
-            "answer": "C"
+            "answer": "B"
           },
           {
             "id": 98,
             "topic": "5.3",
             "topic_name": "Estructuras vestigiales",
-            "text": "Las estructuras que provienen de un ancestro común pero que desempeñan funciones diferentes en distintas especies se denominan",
+            "text": "El apéndice ciego, el vello corporal y la muela del juicio en los humanos son estructuras",
             "options": {
-              "A": "vestigiales.",
-              "B": "análogas.",
-              "C": "homólogas.",
-              "D": "convergentes."
+              "A": "adaptativas.",
+              "B": "homólogas.",
+              "C": "vestigiales.",
+              "D": "análogas."
             },
             "answer": "C"
           },
@@ -1338,12 +1338,12 @@
             "id": 99,
             "topic": "6.1",
             "topic_name": "Ecosistema",
-            "text": "En un ecosistema, los organismos que descomponen la materia orgánica muerta y la devuelven al suelo en forma de nutrientes se denominan",
+            "text": "Un ecosistema es la unidad formada por factores abióticos y __________ en la que existen __________, donde fluye la energía y circula la materia.",
             "options": {
-              "A": "productores.",
-              "B": "consumidores primarios.",
-              "C": "consumidores secundarios.",
-              "D": "descomponedores."
+              "A": "ambientales — razas",
+              "B": "ambientales — interacciones",
+              "C": "bióticos — razas",
+              "D": "bióticos — interacciones"
             },
             "answer": "D"
           },
@@ -1351,14 +1351,14 @@
             "id": 100,
             "topic": "6.3",
             "topic_name": "Tecnologías limpias",
-            "text": "La producción de biocombustibles a partir de desechos agrícolas es un ejemplo de",
+            "text": "Se denominan tecnologías __________ a aquéllas que, gracias a los avances en el campo de la biotecnología, dañan lo menos posible el medio ambiente.",
             "options": {
-              "A": "ingeniería genética.",
-              "B": "biorremediación.",
-              "C": "biotecnología.",
-              "D": "bioética."
+              "A": "libres",
+              "B": "limpias",
+              "C": "orgánicas",
+              "D": "naturales"
             },
-            "answer": "C"
+            "answer": "B"
           }
         ]
       },

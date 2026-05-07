@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 280" width="700" height="280" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="700" height="280" fill="#ffffff"/>
+
+  <!-- Caja -->
+  <rect x="270" y="100" width="160" height="80" fill="#f8fafc" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Punto central de aplicación -->
+  <circle cx="350" cy="140" r="5" fill="#1a1a1a"/>
+
+  <!-- Flecha F1 hacia la izquierda (parte de la caja, sale hacia izquierda) -->
+  <line x1="270" y1="140" x2="130" y2="140" stroke="#c2410c" stroke-width="3"/>
+  <polygon points="120,140 135,133 135,147" fill="#c2410c"/>
+
+  <!-- Etiqueta F1 -->
+  <text x="200" y="125" text-anchor="middle" font-size="20" fill="#c2410c">
+    <tspan font-style="italic">F</tspan><tspan font-size="14" baseline-shift="sub">1</tspan><tspan> = 34 N</tspan>
+  </text>
+
+  <!-- Flecha F2 hacia la derecha (parte de la caja, sale hacia derecha) -->
+  <line x1="430" y1="140" x2="570" y2="140" stroke="#1d4ed8" stroke-width="3"/>
+  <polygon points="580,140 565,133 565,147" fill="#1d4ed8"/>
+
+  <!-- Etiqueta F2 -->
+  <text x="500" y="125" text-anchor="middle" font-size="20" fill="#1d4ed8">
+    <tspan font-style="italic">F</tspan><tspan font-size="14" baseline-shift="sub">2</tspan><tspan> = 56 N</tspan>
+  </text>
+</svg>

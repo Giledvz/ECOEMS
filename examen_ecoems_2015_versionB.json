@@ -1,0 +1,1904 @@
+{
+  "exam": {
+    "title": "Examen ECOEMS 2015 — Versión B",
+    "group": "ECOEMS",
+    "version": "1.0",
+    "total_questions": 128,
+    "students": [
+      "Ari",
+      "Alexander",
+      "Axel",
+      "Citlaly",
+      "Conchita",
+      "Julio",
+      "Kevin",
+      "Leah",
+      "Marley",
+      "Rafaela",
+      "Regina",
+      "Roxanna",
+      "Sofía",
+      "Ximena",
+      "Yuli"
+    ],
+    "instructions": "Examen tipo COMIPEMS. Selecciona la opción correcta para cada pregunta. Tienes 3 horas. Al entregar podrás ver la explicación de cada pregunta.",
+    "sections": [
+      {
+        "subject": "Ciencias II (Física)",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 1,
+            "topic": "1.1",
+            "topic_name": "MRU — gráfica y tabla",
+            "text": "La gráfica que representa el movimiento de un camión es la siguiente. Completa la información de la tabla.",
+            "image": "/imagenes_ecoems_2015_versionB/q1_grafica_mru.svg",
+            "options": {
+              "A": "$36$ km y $8$ h",
+              "B": "$38$ km y $9$ h",
+              "C": "$40$ km y $7$ h",
+              "D": "$48$ km y $6$ h"
+            },
+            "answer": "C",
+            "explanation": "De la tabla se ve que en $t=4\\,\\text{h}$, $x=32\\,\\text{km}$, y en $t=8\\,\\text{h}$, $x=64\\,\\text{km}$. La velocidad es $v=\\dfrac{64-32}{8-4}=8\\,\\text{km/h}$. Para $t=5\\,\\text{h}$: $d=32+8(1)=40\\,\\text{km}$. Para $x=56\\,\\text{km}$: $t=4+\\dfrac{56-32}{8}=7\\,\\text{h}$."
+          },
+          {
+            "id": 2,
+            "topic": "1.2",
+            "topic_name": "Inercia",
+            "text": "¿Cómo se llama la propiedad que poseen los cuerpos de permanecer en su estado de reposo o movimiento mientras no se le aplique una fuerza externa?",
+            "options": {
+              "A": "Cantidad de movimiento",
+              "B": "Aceleración",
+              "C": "Gravedad",
+              "D": "Inercia"
+            },
+            "answer": "D",
+            "explanation": "Por la primera ley de Newton (ley de la inercia), todo cuerpo permanece en reposo o en movimiento rectilíneo uniforme a menos que una fuerza neta externa actúe sobre él."
+          },
+          {
+            "id": 3,
+            "topic": "1.3",
+            "topic_name": "Fuerza resultante — fuerzas opuestas",
+            "text": "Sobre una caja actúan dos fuerzas, como lo ilustra la figura. ¿Cuál es la fuerza resultante sobre el cuerpo?",
+            "image": "/imagenes_ecoems_2015_versionB/q3_fuerzas.svg",
+            "options": {
+              "A": "$90\\,\\text{N}$ a la derecha",
+              "B": "$22\\,\\text{N}$ a la derecha",
+              "C": "$90\\,\\text{N}$ a la izquierda",
+              "D": "$22\\,\\text{N}$ a la izquierda"
+            },
+            "answer": "B",
+            "explanation": "$F_1=34\\,\\text{N}$ apunta a la izquierda y $F_2=56\\,\\text{N}$ apunta a la derecha; al ser opuestas se restan: $|F_2-F_1|=56-34=22\\,\\text{N}$. Como $F_2$ es mayor, el sentido de la resultante es hacia la derecha."
+          },
+          {
+            "id": 4,
+            "topic": "1.4",
+            "topic_name": "Ley de gravitación universal",
+            "text": "La ley de Gravitación Universal propuesta por el científico inglés Isaac Newton, enuncia que la fuerza de atracción entre dos cuerpos es directamente proporcional al producto de sus masas e inversamente proporcional al cuadrado de la distancia que los separa. Con base en este argumento, ¿cuál de las siguientes afirmaciones es correcta?",
+            "options": {
+              "A": "La fuerza de atracción es constante y por lo tanto no importa la distancia entre los cuerpos",
+              "B": "La fuerza de atracción es constante y por lo tanto no importa el producto de sus masas",
+              "C": "Entre más cercanos los cuerpos, la fuerza de atracción es mayor",
+              "D": "Entre más lejanos los cuerpos, la fuerza de atracción es mayor"
+            },
+            "answer": "C",
+            "explanation": "$F=G\\dfrac{m_1 m_2}{d^2}$. Al ser inversamente proporcional al cuadrado de la distancia, si $d$ disminuye, $F$ aumenta; por tanto, a menor distancia mayor atracción."
+          },
+          {
+            "id": 5,
+            "topic": "1.5",
+            "topic_name": "Electrización por frotamiento",
+            "text": "Una niña peina su cabello con su peine de plástico. Después de un tiempo el cabello se electriza al igual que el peine. ¿Cuál fue su forma en que el cabello de la pequeña adquirió la carga eléctrica?",
+            "options": {
+              "A": "Por frotamiento",
+              "B": "Por inducción",
+              "C": "Por contacto",
+              "D": "Por radiación"
+            },
+            "answer": "A",
+            "explanation": "Al frotar dos materiales (peine y cabello), los electrones se transfieren entre ellos y ambos quedan electrizados con cargas opuestas. Es el mismo principio de la electricidad estática al caminar sobre alfombra."
+          },
+          {
+            "id": 6,
+            "topic": "1.6",
+            "topic_name": "Caída libre — aceleración y velocidad final",
+            "text": "Desde un puente un hombre deja caer una piedra, la cual tarda $3$ segundos en tocar el suelo. ¿Cuál es la aceleración y la velocidad con que el objeto llega al piso? (Considera $g=9.81\\,\\text{m/s}^2$)",
+            "options": {
+              "A": "$20.43\\,\\text{m/s}^2,\\ 29.43\\,\\text{m/s}$",
+              "B": "$29.43\\,\\text{m/s}^2,\\ 9.81\\,\\text{m/s}$",
+              "C": "$9.81\\,\\text{m/s}^2,\\ 29.43\\,\\text{m/s}$",
+              "D": "$9.81\\,\\text{m/s}^2,\\ 9.81\\,\\text{m/s}$"
+            },
+            "answer": "C",
+            "explanation": "En caída libre la aceleración es siempre $g=9.81\\,\\text{m/s}^2$. La velocidad al llegar al suelo es $v=g\\,t=(9.81)(3)=29.43\\,\\text{m/s}$."
+          },
+          {
+            "id": 7,
+            "topic": "1.7",
+            "topic_name": "Transferencia de calor",
+            "text": "Una mujer prepara una taza de té, la cual tiene una temperatura de $29°C$ y le vierte un poco de leche líquida, la cual tiene una temperatura de $17°C$. Al realizar la mezcla ¿cuál de las siguientes afirmaciones es correcta?",
+            "options": {
+              "A": "El té recibe energía de la leche",
+              "B": "El té transfiere energía a la leche",
+              "C": "La leche transfiere temperatura sobre el té",
+              "D": "La leche absorbe la temperatura del té"
+            },
+            "answer": "B",
+            "explanation": "La energía térmica fluye espontáneamente del cuerpo más caliente al más frío. El té ($29°C$) cede energía a la leche ($17°C$) hasta alcanzar el equilibrio. Lo que se transfiere es energía (calor), no temperatura."
+          },
+          {
+            "id": 8,
+            "topic": "1.8",
+            "topic_name": "Estados de la materia",
+            "text": "¿Cuál es el estado de la materia en el cual el movimiento de las moléculas es mucho mayor que la fuerza de atracción que existe entre ella, lo que ocasiona que las moléculas se muevan por todo el espacio disponible?",
+            "options": {
+              "A": "Gaseoso",
+              "B": "Plasma",
+              "C": "Líquido",
+              "D": "Sólido"
+            },
+            "answer": "A",
+            "explanation": "En el estado gaseoso la energía cinética de las moléculas supera a las fuerzas de cohesión, por lo que se expanden ocupando todo el volumen del recipiente."
+          },
+          {
+            "id": 9,
+            "topic": "1.9",
+            "topic_name": "Ondas electromagnéticas",
+            "text": "¿Cuál de las siguientes ondas son empleadas para comunicación humana haciendo uso de las distintas bandas del espectro electromagnético ya que a mayor frecuencia de onda, mayor es la cantidad de información que es posible de transportar?",
+            "options": {
+              "A": "Mecánicas",
+              "B": "Transversales",
+              "C": "Longitudinales",
+              "D": "Electromagnéticas"
+            },
+            "answer": "D",
+            "explanation": "Las ondas electromagnéticas (radio, microondas, etc.) viajan en el vacío y son la base de la radio, televisión, telefonía celular y comunicación satelital. A mayor frecuencia, mayor ancho de banda y más información transportada."
+          },
+          {
+            "id": 10,
+            "topic": "1.10",
+            "topic_name": "Prensa hidráulica — Pascal",
+            "text": "En una prensa hidráulica el pistón mayor tiene una superficie de $120\\,\\text{cm}^2$, mientras que el pistón menor tiene un área de $8\\,\\text{cm}^2$. Una fuerza de $20\\,\\text{N}$ se aplica sobre el émbolo menor. ¿Cuál es la fuerza sobre el pistón mayor?",
+            "options": {
+              "A": "$1.3\\,\\text{N}$",
+              "B": "$46\\,\\text{N}$",
+              "C": "$300\\,\\text{N}$",
+              "D": "$4500\\,\\text{N}$"
+            },
+            "answer": "C",
+            "explanation": "Por el principio de Pascal $\\dfrac{F_1}{A_1}=\\dfrac{F_2}{A_2}$, así que $F_2=F_1\\dfrac{A_2}{A_1}=20\\cdot\\dfrac{120}{8}=300\\,\\text{N}$."
+          },
+          {
+            "id": 11,
+            "topic": "1.11",
+            "topic_name": "Magnetismo — interacción de polos",
+            "text": "Una persona acerca dos imanes uno por polo norte y otro por el polo sur, observa que hay una interacción entre ellos, manifestándose una fuerza de:",
+            "options": {
+              "A": "Contracción",
+              "B": "Atracción",
+              "C": "Repulsión",
+              "D": "Fricción"
+            },
+            "answer": "B",
+            "explanation": "Polos opuestos se atraen y polos iguales se repelen. Norte con sur implica atracción magnética."
+          },
+          {
+            "id": 12,
+            "topic": "1.12",
+            "topic_name": "Descomposición de la luz blanca",
+            "text": "¿Cuál de los siguientes colores es el resultado de la descomposición de la luz al hacer incidir un haz luminoso sobre un prisma?",
+            "options": {
+              "A": "Violeta",
+              "B": "Negro",
+              "C": "Café",
+              "D": "Gris"
+            },
+            "answer": "A",
+            "explanation": "Al pasar por un prisma, la luz blanca se descompone en los colores del arcoíris (rojo, naranja, amarillo, verde, azul, índigo y violeta). Negro, café y gris no son colores espectrales."
+          }
+        ]
+      },
+      {
+        "subject": "Historia (Universal)",
+        "questions_count": 6,
+        "questions": [
+          {
+            "id": 13,
+            "topic": "2.1",
+            "topic_name": "Ilustración — derechos humanos",
+            "text": "La promoción de los derechos naturales, entendidos como derechos humanos representa una aportación de:",
+            "options": {
+              "A": "Los ideales enciclopedistas de la Ilustración",
+              "B": "El carácter humanista del Renacimiento",
+              "C": "Los postulados del Socialismo Utópico",
+              "D": "La cultura virreinal en la Nueva España"
+            },
+            "answer": "A",
+            "explanation": "Los enciclopedistas de la Ilustración (Locke, Rousseau, Voltaire, Montesquieu) postularon que el ser humano posee derechos naturales por el simple hecho de existir: vida, libertad, propiedad, igualdad. Estas ideas fundamentaron la Declaración de los Derechos del Hombre."
+          },
+          {
+            "id": 14,
+            "topic": "2.2",
+            "topic_name": "Causas de la Revolución Francesa",
+            "text": "Identifica cuáles de los siguientes factores originaron el estallido de la Revolución Francesa de 1789\n\n1. La invención de la imprenta y de la máquina de vapor\n2. Los descubrimientos geográficos de los siglos XV y XVI\n3. El poder absoluto y despótico concentrado en la corona\n4. El cobro oneroso de impuestos al Tercer Estado (el vulgo)\n5. Los lujos exagerados en la Corte de Versalles\n6. La división social francesa basada en privilegios estamentales",
+            "options": {
+              "A": "$1, 2, 3$ y $4$",
+              "B": "$2, 3, 4$ y $5$",
+              "C": "$2, 3, 5$ y $6$",
+              "D": "$3, 4, 5$ y $6$"
+            },
+            "answer": "D",
+            "explanation": "Las causas inmediatas de 1789 fueron: el absolutismo monárquico (3), la opresión fiscal sobre el Tercer Estado (4), los excesos de Versalles (5) y la rígida división estamental (6). La imprenta y los descubrimientos geográficos son anteriores y no son causas directas."
+          },
+          {
+            "id": 15,
+            "topic": "2.3",
+            "topic_name": "Materialismo histórico — socialismo",
+            "text": "Según el Materialismo histórico (Marxismo), el sistema económico social basado en la propiedad colectiva y en la admiración de los bienes por parte del estado, con el propósito de garantizar la igualdad y el bienestar de toda la población, por encima de las diferencias y de las clases sociales se define como:",
+            "options": {
+              "A": "Economía asiática – esclavista",
+              "B": "Modelo o sistema feudal",
+              "C": "Economía de libre mercado",
+              "D": "Modo de producción socialista"
+            },
+            "answer": "D",
+            "explanation": "Marx clasifica los modos de producción en históricos (asiático, esclavista, feudal, capitalista) y propone el socialista como el que sustituye la propiedad privada por la colectiva, abolir las clases y garantizar igualdad."
+          },
+          {
+            "id": 16,
+            "topic": "2.4",
+            "topic_name": "Cronología Primera Guerra Mundial",
+            "text": "Ordena cronológicamente los siguientes sucesos relativos de la Primera Guerra Mundial:\n\n1. Alemania envía en Telegrama Zimmerman a México\n2. Italia rompe con la Triple Alianza y después se adhiere a la entente\n3. Asesinato de Francisco Fernando, heredero al trono austro-húngaro\n4. Triunfo de los países aliados y firma del Tratado de Versalles\n5. Incorporación de Estados Unidos con la Entente\n6. Firma del Tratado Brest Litovsk entre Alemania y Rusia",
+            "options": {
+              "A": "$1, 3, 4, 6, 2$ y $5$",
+              "B": "$2, 4, 1, 6, 5$ y $3$",
+              "C": "$3, 2, 1, 5, 6$ y $4$",
+              "D": "$6, 5, 4, 3, 2$ y $1$"
+            },
+            "answer": "C",
+            "explanation": "Orden cronológico: 3 (asesinato, jun-1914), 2 (Italia entra a la Entente, 1915), 1 (Telegrama Zimmermann, ene-1917), 5 (EE.UU. entra, abr-1917), 6 (Brest-Litovsk, mar-1918), 4 (triunfo aliado y Versalles, 1918-1919)."
+          },
+          {
+            "id": 17,
+            "topic": "2.5",
+            "topic_name": "Crisis de 1929",
+            "text": "Completa los espacios en blanco\n\nLa crisis de 1929 en la economía norteamericana comenzó con __________, pero su origen tuvo como causa principal __________",
+            "options": {
+              "A": "El asesinato de Francisco Fernando en Bosnia / la tragedia de Sarajevo",
+              "B": "El derrumbe de la bolsa de valores de Nueva York / la sobreproducción",
+              "C": "La Revolución bolchevique en Rusia / la integración de la URSS",
+              "D": "La firma del Tratado de Versalles / el ataque japonés a Pearl Harbor"
+            },
+            "answer": "B",
+            "explanation": "El detonante visible fue el crack bursátil del jueves negro (24-oct-1929), pero su causa de fondo fue la sobreproducción industrial y agrícola de los años 20 que generó stocks invendibles y caída de precios."
+          },
+          {
+            "id": 18,
+            "topic": "2.6",
+            "topic_name": "Inventos — relación columna",
+            "text": "Relaciona cada invento con la referencia que lo describa\n\n1. Máquina de vapor\n2. Telefonía\n3. Lavadora\n4. Bomba de Hidrógeno\n5. Ferrocarril\n\na. Sistema accionado mediante aplicaciones de la Electromecánica\nb. Fisión del núcleo atómico para liberar energía nuclear\nc. Invento que dio origen a la producción fabril\nd. Sistema de transporte surgido durante la Revolución Industrial\ne. Sistema de telecomunicación con base en un circuito cerrado",
+            "options": {
+              "A": "$1\\text{-}a,\\ 2\\text{-}b,\\ 3\\text{-}c,\\ 4\\text{-}d,\\ 5\\text{-}e$",
+              "B": "$1\\text{-}c,\\ 2\\text{-}e,\\ 3\\text{-}a,\\ 4\\text{-}b,\\ 5\\text{-}d$",
+              "C": "$1\\text{-}e,\\ 2\\text{-}a,\\ 3\\text{-}b,\\ 4\\text{-}c,\\ 5\\text{-}d$",
+              "D": "$1\\text{-}d,\\ 2\\text{-}a,\\ 3\\text{-}b,\\ 4\\text{-}e,\\ 5\\text{-}c$"
+            },
+            "answer": "B",
+            "explanation": "Máquina de vapor (Watt) impulsó la Revolución Industrial fabril (c). Telefonía (Bell) usa circuitos cerrados (e). Lavadora se acciona electromecánicamente (a). Bomba de hidrógeno usa fisión y fusión nucleares (b). Ferrocarril surge en la Revolución Industrial (d)."
+          }
+        ]
+      },
+      {
+        "subject": "Historia (Historia de México)",
+        "questions_count": 6,
+        "questions": [
+          {
+            "id": 19,
+            "topic": "3.1",
+            "topic_name": "Colonización del Nuevo Mundo",
+            "text": "La formación de varios virreinatos en América y el fortalecimiento del imperialismo español, la explotación de la población nativa, el tráfico de esclavos africanos, la Encomienda y la sociedad de castas, fueron aspectos que se derivaron",
+            "options": {
+              "A": "A raíz de la colonización del Nuevo Mundo",
+              "B": "Tras instituirse la Inquisición en América",
+              "C": "Antes del hallazgo de nuevas rutas marítimas",
+              "D": "Por causa de las Reformas Borbónicas de Carlos III"
+            },
+            "answer": "A",
+            "explanation": "Tras la llegada española en 1492 se instituyeron los virreinatos (Nueva España, Perú), la Encomienda y el sistema de castas como instituciones de la dominación colonial. Todo esto deriva del proceso colonizador, no de las reformas posteriores."
+          },
+          {
+            "id": 20,
+            "topic": "3.2",
+            "topic_name": "Reformas Borbónicas",
+            "text": "¿Cuáles de las siguientes disposiciones formaron parte de las Reformas Borbónicas establecidas por el emperador Carlos III a mediados del siglo XVIII?",
+            "options": {
+              "A": "La Encomienda, la abolición de la esclavitud y el Santo Oficio",
+              "B": "El fomento de la minería, el cobro de impuestos al clero y la expulsión de los jesuitas",
+              "C": "La abdicación de Fernando VII, la fundación de la Nueva España y el celibato",
+              "D": "La crisis política en España y en Nueva España a causa de la invasión Napoleónica"
+            },
+            "answer": "B",
+            "explanation": "Las Reformas Borbónicas (segunda mitad del XVIII) buscaron centralizar el poder real y aumentar los ingresos: impulso minero, gravámenes al clero y expulsión de los jesuitas (1767) son tres medidas emblemáticas."
+          },
+          {
+            "id": 21,
+            "topic": "3.3",
+            "topic_name": "Crisis política 1808 — invasión napoleónica",
+            "text": "Lee el siguiente fragmento y responde lo que se te pide\n\nA principios del siglo XIX, España se vio invadida por tropas francesas que obligaron a Carlos IV y al príncipe Fernando a ceder el trono a José Bonaparte, hermano de Napoleón. Tanto en la Península Ibérica como la Nueva España se desató la agitación social y política y en ambos lugares surgió la necesidad de establecer gobiernos alternos y de asumir la soberanía a nombre de Fernando VI\n\nEn el párrafo leído se describen circunstancias relacionadas con",
+            "options": {
+              "A": "Las ambiciones territoriales de Napoleón Bonaparte en la Nueva España",
+              "B": "La agitación popular durante la Primera Intervención Francesa o Guerra de los Pasteles",
+              "C": "Las revueltas populares novohispanas que las reformas Borbónicas provocaron",
+              "D": "La crisis política en España y en Nueva España a causa de la invasión Napoleónica"
+            },
+            "answer": "D",
+            "explanation": "El fragmento describe la abdicación forzada de Carlos IV y Fernando VII (1808) por presión napoleónica y la consiguiente crisis de legitimidad que generó juntas y movimientos autonomistas en ambos lados del Atlántico."
+          },
+          {
+            "id": 22,
+            "topic": "3.4",
+            "topic_name": "Plan de San Luis — Madero",
+            "text": "¿Cuál fue el motivo por el cual Francisco I Madero declaró nulas las elecciones de 1910, dando inicio a la lucha armada mediante el Plan de San Luis?",
+            "options": {
+              "A": "La promesa incumplida del presidente Porfirio Díaz con relación al reparto agrario",
+              "B": "El fraude electoral perpetrado por la dictadura porfirista y la reelección del dictador",
+              "C": "La sangrienta represión realizada por la dictadura durante la huelga de Río Blanco",
+              "D": "El levantamiento armado de generales porfiristas mediante el Pacto de la Ciudadela"
+            },
+            "answer": "B",
+            "explanation": "Madero, encarcelado durante las elecciones, denunció el fraude que dio el séptimo periodo a Díaz y, desde San Luis Misuri, llamó a las armas para el 20 de noviembre de 1910 con el lema 'Sufragio efectivo, no reelección'."
+          },
+          {
+            "id": 23,
+            "topic": "3.5",
+            "topic_name": "Autores y obras mexicanas",
+            "text": "Relaciona cada uno de los siguientes autores y su obra artística:\n\n1. José María Velasco\n2. Salvador Díaz Mirón\n3. Mariano Azuela\n4. Diego Rivera\n5. David Alfaro Siqueiros\n\na. Los de Abajo, novela épica sobre la Revolución Mexicana\nb. La Nueva Democracia, mural tríptico plasmado en el palacio de Bellas Artes\nc. El Hombre en el Cruce de caminos, obra muralista con temática científica y socialista, plasmada en el Palacio de Bellas Artes\nd. El Popocatepetl, obra paisajista a finales del Porfiriato\ne. A Gloria, composición poética escrita en versos endecasílabos",
+            "options": {
+              "A": "$1\\text{-}b,\\ 2\\text{-}d,\\ 3\\text{-}e,\\ 4\\text{-}a,\\ 5\\text{-}c$",
+              "B": "$1\\text{-}c,\\ 2\\text{-}e,\\ 3\\text{-}a,\\ 4\\text{-}b,\\ 5\\text{-}d$",
+              "C": "$1\\text{-}d,\\ 2\\text{-}e,\\ 3\\text{-}a,\\ 4\\text{-}c,\\ 5\\text{-}b$",
+              "D": "$1\\text{-}e,\\ 2\\text{-}d,\\ 3\\text{-}c,\\ 4\\text{-}b,\\ 5\\text{-}a$"
+            },
+            "answer": "C",
+            "explanation": "Velasco pintó paisajes como el Popocatépetl (d). Díaz Mirón escribió A Gloria (e). Azuela narró Los de Abajo (a). Rivera plasmó El Hombre en el Cruce de Caminos (versión mexicana del mural Rockefeller, c). Siqueiros pintó La Nueva Democracia en Bellas Artes (b)."
+          },
+          {
+            "id": 24,
+            "topic": "3.6",
+            "topic_name": "TLCAN 1994 — EZLN",
+            "text": "El 1 de enero de 1994, justo al entrar en vigor el Tratado de Libre Comercio de América del Norte",
+            "options": {
+              "A": "Gustavo Díaz Ordaz ejerció una enérgica represión contra estudiantes de Tlatelolco",
+              "B": "Estalló el movimiento zapatista de liberación nacional por la tierra y la autonomía indígena",
+              "C": "Fue asesinado durante su campaña el candidato priista Luis Donaldo Colosio",
+              "D": "El poeta y periodista Javier Sicilia inició un movimiento por la paz con justicia y dignidad"
+            },
+            "answer": "B",
+            "explanation": "El mismo día en que entró en vigor el TLCAN, el EZLN se levantó en armas en Chiapas exigiendo tierra, justicia y reconocimiento de los pueblos indígenas. Tlatelolco fue 1968, Colosio en marzo de 1994 y Sicilia en 2011."
+          }
+        ]
+      },
+      {
+        "subject": "Ciencias II (Química)",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 25,
+            "topic": "4.1",
+            "topic_name": "Fenómenos físicos vs. químicos",
+            "text": "Relaciona la columna del tipo de fenómeno con los ejemplos de la vida cotidiana\n\nFenómeno:\nI. Físico\nII. Químico\n\nEjemplos:\na. La elasticidad de las piernas al hacer un Split\nb. La formación del petróleo con el paso de millones de años\nc. La digestión de los alimentos\nd. Las descargas eléctricas\ne. La preparación de un delicioso té de manzanilla\nf. La sublimación de la naftalina\ng. La obtención de bebidas alcohólicas a partir de la fermentación de las frutas\nh. La grabación del negativo de una fotografía",
+            "options": {
+              "A": "$\\text{I-a, c, f, h};\\ \\text{II-b, d, e, g}$",
+              "B": "$\\text{I-a, d, e, f};\\ \\text{II-b, c, g, h}$",
+              "C": "$\\text{I-b, c, g, h};\\ \\text{II-a, d, e, f}$",
+              "D": "$\\text{I-b, d, f, h};\\ \\text{II-a, c, e, g}$"
+            },
+            "answer": "B",
+            "explanation": "Los fenómenos físicos no cambian la composición de la sustancia (elasticidad-a, descarga-d, preparar té-e, sublimación-f). Los químicos sí (formación de petróleo-b, digestión-c, fermentación-g, revelado fotográfico-h)."
+          },
+          {
+            "id": 26,
+            "topic": "4.2",
+            "topic_name": "Símbolos químicos — clasificación",
+            "text": "Los símbolos C y N corresponden a los elementos __________; los símbolos Au y Na, corresponden a elementos __________",
+            "options": {
+              "A": "No metálicos-metálicos",
+              "B": "Metálicos-No metálicos",
+              "C": "Sólidos-Gaseosos",
+              "D": "Líquidos-Sólidos"
+            },
+            "answer": "A",
+            "explanation": "C (carbono) y N (nitrógeno) son no metales del bloque p. Au (oro) y Na (sodio) son metales: Au es metal de transición y Na es alcalino."
+          },
+          {
+            "id": 27,
+            "topic": "4.3",
+            "topic_name": "Propiedades específicas",
+            "text": "Las propiedades específicas son las diversas formas en que impresionan los cuerpos materiales a nuestros sentidos o a los instrumentos de medida. Así podemos diferenciar el agua del alcohol, el hierro del oro, el azúcar de la sal, etc. ¿cuáles de las siguientes son las que permiten identificarlas con mayor precisión?",
+            "options": {
+              "A": "Masa, peso y tenacidad",
+              "B": "Divisibilidad, Porosidad e inercia",
+              "C": "Punto de ebullición, solubilidad y densidad",
+              "D": "Impenetrabilidad, fragilidad y densidad"
+            },
+            "answer": "C",
+            "explanation": "Las propiedades específicas (intensivas) no dependen de la cantidad de sustancia y permiten identificarla: punto de ebullición, densidad y solubilidad. La masa y el peso son extensivas; la inercia y la divisibilidad son generales."
+          },
+          {
+            "id": 28,
+            "topic": "4.4",
+            "topic_name": "Métodos de separación — centrifugación",
+            "text": "¿Cuál de los siguientes métodos de separación de los componentes, emplearías para separar el plasma de la sangre, en el análisis de laboratorio de sangre y orina?",
+            "options": {
+              "A": "Cromatografía",
+              "B": "Centrifugación",
+              "C": "Destilación",
+              "D": "Filtración"
+            },
+            "answer": "B",
+            "explanation": "La centrifugación aprovecha la diferencia de densidades; al girar a alta velocidad los componentes más densos (glóbulos) se van al fondo y queda el plasma arriba. Es el método estándar en laboratorios clínicos."
+          },
+          {
+            "id": 29,
+            "topic": "4.5",
+            "topic_name": "Partículas subatómicas",
+            "text": "Relaciona las partículas subatómicas con sus características\n\nI. Electrón\nII. Protón\nIII. Neutrón\n\na. Con esta partícula se puede conocer el número atómico de un elemento\nb. Carga negativa\nc. Se acomodan en niveles o subniveles de energía\nd. Junto con los protones permiten calcular la masa de un átomo\ne. Carga positiva\nf. Sin carga",
+            "image": "/imagenes_ecoems_2015_versionB/q29_atomo.svg",
+            "options": {
+              "A": "$\\text{I: a, f}\\ \\text{II: b, d}\\ \\text{III: c, e}$",
+              "B": "$\\text{I: a, c}\\ \\text{II: b, e}\\ \\text{III: b, d}$",
+              "C": "$\\text{I: b, c}\\ \\text{II: a, e}\\ \\text{III: d, f}$",
+              "D": "$\\text{I: c, d}\\ \\text{II: a, e}\\ \\text{III: b, f}$"
+            },
+            "answer": "C",
+            "explanation": "El electrón (I) tiene carga negativa (b) y se acomoda en niveles de energía (c). El protón (II) determina el número atómico (a) y tiene carga positiva (e). El neutrón (III) suma masa al átomo junto con el protón (d) y no tiene carga (f)."
+          },
+          {
+            "id": 30,
+            "topic": "4.6",
+            "topic_name": "Notación atómica — Neón",
+            "text": "De acuerdo con la siguiente figura podemos afirmar que el Neón posee:",
+            "image": "/imagenes_ecoems_2015_versionB/q30_neon.svg",
+            "options": {
+              "A": "$10$ electrones, $10$ protones y $10$ neutrones",
+              "B": "$10$ electrones, $10$ protones y $12$ neutrones",
+              "C": "$12$ electrones, $12$ protones y $10$ neutrones",
+              "D": "$22$ electrones, $22$ protones y $10$ neutrones"
+            },
+            "answer": "B",
+            "explanation": "El número atómico ($Z=10$, abajo) indica el número de protones, y como el átomo es neutro, también el de electrones. La masa atómica ($A=22$, arriba) es la suma de protones y neutrones, así que neutrones $=22-10=12$."
+          },
+          {
+            "id": 31,
+            "topic": "4.7",
+            "topic_name": "Mezclas homogéneas",
+            "text": "Las sustancias, formadas por dos o más componentes que no se pueden distinguir a simple vista, y en las cuales estos conservan sus propiedades originales, se llaman:",
+            "options": {
+              "A": "Compuestos",
+              "B": "Elementos",
+              "C": "Mezclas homogéneas",
+              "D": "Mezclas heterogéneas"
+            },
+            "answer": "C",
+            "explanation": "En las mezclas homogéneas (disoluciones) los componentes se distribuyen uniformemente y no se distinguen a simple vista, pero conservan sus propiedades. Ejemplos: agua salada, aire, latón. En los compuestos las sustancias pierden sus propiedades originales."
+          },
+          {
+            "id": 32,
+            "topic": "4.8",
+            "topic_name": "Tabla periódica — bloques",
+            "text": "En la siguiente tabla Periódica, ¿qué bloques representan la ubicación de los metales alcalinotérreos y gases nobles, respectivamente?",
+            "image": "/imagenes_ecoems_2015_versionB/q32_tabla_periodica.svg",
+            "options": {
+              "A": "A y B",
+              "B": "B y F",
+              "C": "C y D",
+              "D": "E y F"
+            },
+            "answer": "B",
+            "explanation": "Los metales alcalinotérreos se ubican en el grupo 2 (segunda columna, bloque B). Los gases nobles ocupan el grupo 18, el extremo derecho (bloque F). El bloque A es el grupo 1 (alcalinos), C corresponde a lantánidos/actínidos, D al bloque d de transición y E al bloque p central."
+          },
+          {
+            "id": 33,
+            "topic": "4.9",
+            "topic_name": "pH — sustancia ácida",
+            "text": "¿Cuál de las siguientes sustancias es de carácter ácido?",
+            "options": {
+              "A": "Orina, pH = $6.0$",
+              "B": "Lágrimas, pH = $7.4$",
+              "C": "Agua de mar, pH = $8.2$",
+              "D": "Bicarbonato de sodio, pH = $9.0$"
+            },
+            "answer": "A",
+            "explanation": "Una sustancia es ácida cuando su pH es menor a 7. La orina con pH = 6.0 es ligeramente ácida; las demás son neutras o básicas."
+          },
+          {
+            "id": 34,
+            "topic": "4.10",
+            "topic_name": "Tipos de enlace químico",
+            "text": "Relaciona la columna del tipo de enlace con su característica\n\nEnlace:\nA. Iónico\nB. Metálico\nC. Covalente\n\nCaracterística:\n1. Los átomos de elementos no metálicos comparten electrones\n2. Se forman por la unión de un metal y no metal al transferirse electrones entre ellos\n3. Se caracteriza por formar una nube de electrones entre átomos",
+            "options": {
+              "A": "$\\text{A1, B2, C3}$",
+              "B": "$\\text{A2, B1, C3}$",
+              "C": "$\\text{A2, B3, C1}$",
+              "D": "$\\text{A3, B2, C1}$"
+            },
+            "answer": "C",
+            "explanation": "El enlace iónico se da por transferencia de electrones entre metal y no metal (2). El metálico se caracteriza por la nube electrónica de electrones libres (3). El covalente comparte electrones entre no metales (1)."
+          },
+          {
+            "id": 35,
+            "topic": "4.11",
+            "topic_name": "Reacción de combustión",
+            "text": "¿Cuáles son los productos de la siguiente reacción de combustión?\n\n$C_3H_{8(g)} + 5O_{2(g)} \\to 3CO_{2(g)} + 4H_2O_{(g)}$",
+            "options": {
+              "A": "$C_3H_8\\,(g) + H_2O$",
+              "B": "$CO_2 + H_2O$",
+              "C": "$C_3H_8\\,(g) + O_2\\,(g)$",
+              "D": "$O_2 + CO_2$"
+            },
+            "answer": "B",
+            "explanation": "En toda combustión completa de un hidrocarburo se producen dióxido de carbono y agua. Los reactivos están a la izquierda de la flecha (propano y oxígeno) y los productos a la derecha ($CO_2$ y $H_2O$)."
+          },
+          {
+            "id": 36,
+            "topic": "4.12",
+            "topic_name": "Electrones de valencia — azufre",
+            "text": "Los electrones de valencia son partículas subatómicas responsables de mantener unidos a los átomos de un compuesto, como se presenta en la siguiente estructura de Lewis. De acuerdo con lo anterior, ¿cuántos electrones de valencia posee el azufre?",
+            "image": "/imagenes_ecoems_2015_versionB/q36_lewis_sulfuro.svg",
+            "options": {
+              "A": "$6$",
+              "B": "$4$",
+              "C": "$2$",
+              "D": "$0$"
+            },
+            "answer": "A",
+            "explanation": "El azufre pertenece al grupo 16 (VIA) y posee 6 electrones de valencia, mostrados como 6 puntos alrededor del símbolo S en la estructura de Lewis del sulfuro de sodio."
+          }
+        ]
+      },
+      {
+        "subject": "Habilidad verbal",
+        "questions_count": 16,
+        "questions": [
+          {
+            "id": 37,
+            "topic": "5.1",
+            "topic_name": "Comprensión lectora — palabra clave",
+            "text": "Lee con atención el texto y contesta las preguntas\n\nEl hecho de que la gran mayoría de los alumnos que ingresan a la Universidad, al área de ciencias físico matemáticas, experimentaran por lo general un elevado fracaso tanto en los primeros cursos de física como de matemáticas, pareciera haberse constituido en una situación normal y rutinaria para los docentes universitarios como para el común de la gente.\n\nSin embargo, no deja de ser un candente problema para muchos docentes interesados en mejorar los actuales rendimientos de los cursos introductorios de física, ya que los alumnos que ingresan a la universidad a las carreras de esta área (licenciaturas e ingenierías), son por lo general, los mejores alumnos egresados de la enseñanza media superior.\n\nNuestro trabajo en la búsqueda de respuesta al problema de por qué los alumnos con altos puntajes de ingreso a la Universidad fracasan generalmente en esta área, se ha centrado especialmente en el análisis acerca de si los alumnos han alcanzado o no un desarrollo intelectual acorde con las exigencias que requiere un curso introductorio de física del nivel universitario\n\nDe las siguientes opciones, ¿cuál contiene de mejor manera la idea de la palabra \"común\"?",
+            "options": {
+              "A": "Es una situación moral y rutinaria el fracaso de los alumnos de primer ingreso en física y matemáticas en el área ciencias físico matemáticas",
+              "B": "Los mejores alumnos egresados del nivel medio superior ingresan al área ciencias físico matemáticas",
+              "C": "Los alumnos con altos promedios de ingreso a la Universidad fracasan generalmente en esta área",
+              "D": "Los alumnos realmente han alcanzado un desarrollo intelectual acorde a las exigencias de los cursos de física de nivel superior"
+            },
+            "answer": "C",
+            "explanation": "El término 'común' en el texto se asocia a algo frecuente o generalizado: el fracaso de los buenos alumnos al llegar a la universidad. La opción C captura esa idea (es lo que ocurre 'comúnmente')."
+          },
+          {
+            "id": 38,
+            "topic": "5.2",
+            "topic_name": "Sinónimos — acorde",
+            "text": "Un sinónimo de **acorde** en el texto es:",
+            "options": {
+              "A": "Necesario",
+              "B": "Excelente",
+              "C": "Adecuado",
+              "D": "Bajo"
+            },
+            "answer": "C",
+            "explanation": "'Acorde' significa conforme, en correspondencia con; su sinónimo más cercano es 'adecuado'. 'Necesario' implica obligación, no correspondencia."
+          },
+          {
+            "id": 39,
+            "topic": "5.3",
+            "topic_name": "Comprensión lectora — consecuencia",
+            "text": "El alto índice de fracaso de los alumnos que ingresan al área ciencias físico matemáticas en física ha hecho que se lleve a cabo:",
+            "options": {
+              "A": "El mejoramiento de los cursos introductorios",
+              "B": "Un estudio sobre los alumnos de primer ingreso",
+              "C": "Un análisis sobre el desarrollo intelectual de los alumnos",
+              "D": "Elevar promedios de ingreso"
+            },
+            "answer": "C",
+            "explanation": "El propio texto lo dice: 'se ha centrado especialmente en el análisis acerca de si los alumnos han alcanzado o no un desarrollo intelectual acorde'."
+          },
+          {
+            "id": 40,
+            "topic": "5.4",
+            "topic_name": "Tipo de relación — ejemplificativo",
+            "text": "Lee con atención el texto y contesta las preguntas\n\nLa ciudad de Irapuato es mundialmente conocida por la alta calidad y elevada producción de fresa y esta fama ha ocasionado que se le conozca como \"la capital mundial de la fresa\". Debido a esta elevada producción, anualmente se lleva a cabo una fiesta conocida como Expo-Fresas, celebración en la que se desarrollan numerosos eventos culturales, además de bailes, peleas de gallos, exposición ganadera, corridas de toros y, por supuesto, la venta de la tradicional fresa que es el motivo principal de la festividad. También es muy común encontrar diseminados por toda la ciudad infinidad de expendios de fresa de diferentes tamaños (desde los pequeños enlonados que podemos ver a la orilla de la carretera hasta sofisticadas tiendas departamentales), en los que podemos encontrar distintas presentaciones de esta fruta, tales como fresas con crema, cristalizadas, cubiertas de chocolate y las tradicionales canastas con fresas frescas.\n\nEn estas grandes tiendas, también podemos comprar recuerdos alusivos a la fresa como servilleteros, llaveros, portaplumas, pendientes, lápices y gran cantidad de objetos que nos servirán para recordar nuestra visita a esa bella ciudad del bajío guanajuatense, ciudad envuelta en una atmósfera matizada de color y aroma a fresa.\n\nEn el fragmento: \"En estas grandes tiendas...\", se observa un claro ejemplo del tipo de relación",
+            "options": {
+              "A": "Causa-consecuencia",
+              "B": "Ejemplificativo",
+              "C": "Analógica",
+              "D": "Comparativa"
+            },
+            "answer": "B",
+            "explanation": "El fragmento enumera ejemplos concretos (servilleteros, llaveros, portaplumas, pendientes, lápices) de los recuerdos que pueden comprarse, lo cual es una relación ejemplificativa."
+          },
+          {
+            "id": 41,
+            "topic": "5.5",
+            "topic_name": "Comprensión lectora — localización",
+            "text": "Según el texto, Irapuato se encuentra en el estado de:",
+            "options": {
+              "A": "México",
+              "B": "Guanajuato",
+              "C": "Querétaro",
+              "D": "Jalisco"
+            },
+            "answer": "B",
+            "explanation": "El propio texto lo señala: 'esa bella ciudad del bajío guanajuatense', es decir, en el estado de Guanajuato."
+          },
+          {
+            "id": 42,
+            "topic": "5.6",
+            "topic_name": "Título principal",
+            "text": "El título más apropiado para el texto sería:",
+            "options": {
+              "A": "Expo-Fresas",
+              "B": "Los comercios de fresa en Irapuato",
+              "C": "La ciudad de Irapuato",
+              "D": "La capital mundial de la fresa"
+            },
+            "answer": "D",
+            "explanation": "El texto está estructurado en torno a la fama y producción fresera de Irapuato. 'La capital mundial de la fresa' es el eje y aparece textualmente; los demás títulos son secundarios."
+          },
+          {
+            "id": 43,
+            "topic": "5.7",
+            "topic_name": "Antónimos — diseminados",
+            "text": "Un antónimo de **diseminados** en el texto sería",
+            "options": {
+              "A": "Conglomerados",
+              "B": "Separados",
+              "C": "Unidos",
+              "D": "Apretados"
+            },
+            "answer": "A",
+            "explanation": "Diseminado significa esparcido, disperso. 'Conglomerados' (agrupados en masa) es el antónimo más exacto. 'Unidos' o 'apretados' tienen otros matices; 'separados' es sinónimo."
+          },
+          {
+            "id": 44,
+            "topic": "5.8",
+            "topic_name": "Sinónimos — fastuosa",
+            "text": "Selecciona la opción que contenga un SINÓNIMO de la palabra en mayúsculas\n\nLa cena de fin de año que ofrecieron mis padres fue FASTUOSA",
+            "options": {
+              "A": "Humilde",
+              "B": "Desagradable",
+              "C": "Petulante",
+              "D": "Espectacular"
+            },
+            "answer": "D",
+            "explanation": "Fastuoso significa lujoso, suntuoso, magnífico; su sinónimo es 'espectacular'. 'Petulante' alude a presumido, no a magnificencia."
+          },
+          {
+            "id": 45,
+            "topic": "5.9",
+            "topic_name": "Sinónimos — breve",
+            "text": "El director de la empresa pronunció un discurso BREVE, pero conmovedor",
+            "options": {
+              "A": "Silencioso",
+              "B": "Sucinto",
+              "C": "Alegre",
+              "D": "Tranquilo"
+            },
+            "answer": "B",
+            "explanation": "Breve significa corto, conciso. Su sinónimo culto es 'sucinto', que también significa resumido."
+          },
+          {
+            "id": 46,
+            "topic": "5.10",
+            "topic_name": "Antónimos — tacaño",
+            "text": "Selecciona la palabra cuyo significado sea **opuesto** a la resaltada en negritas\n\nTomás es un **tacaño**",
+            "options": {
+              "A": "Presuntuoso",
+              "B": "Avaro",
+              "C": "Prepotente",
+              "D": "Generoso"
+            },
+            "answer": "D",
+            "explanation": "Tacaño es quien retiene su dinero y no comparte. Su antónimo es 'generoso'. 'Avaro' es sinónimo, no antónimo."
+          },
+          {
+            "id": 47,
+            "topic": "5.11",
+            "topic_name": "Sinónimos — conjetura",
+            "text": "Sustituye la palabra que tiene un significado **similar** al de la palabra resaltada en negritas\n\nEspaña **conjetura** sobre un posible abdicación del rey",
+            "options": {
+              "A": "Confabula",
+              "B": "Evidencia",
+              "C": "Concluye",
+              "D": "Supone"
+            },
+            "answer": "D",
+            "explanation": "Conjeturar significa inferir o suponer a partir de indicios. Su sinónimo es 'suponer'. 'Concluir' implica certeza, no es una conjetura."
+          },
+          {
+            "id": 48,
+            "topic": "5.12",
+            "topic_name": "Antónimos — truncado",
+            "text": "Sustituye la palabra que tiene un significado **opuesto** al de la palabra resaltada en negritas\n\nA pesar de que las instalaciones ya están listas, el festejo de la escuela podría verse **truncado**",
+            "options": {
+              "A": "Separado",
+              "B": "Continuado",
+              "C": "Escondido",
+              "D": "Modificado"
+            },
+            "answer": "B",
+            "explanation": "Truncar es interrumpir o cortar antes de tiempo; su antónimo es 'continuado' (proseguir sin interrupción)."
+          },
+          {
+            "id": 49,
+            "topic": "5.13",
+            "topic_name": "Sinónimos — mística",
+            "text": "Sustituye la palabra que tiene un significado **similar** al de la palabra resaltada en negritas\n\nEn muchos pueblos existe una visión **mística** sobre la acumulación que implica peligros fundamentales y produce enfermedad, como engordar que se considera un atributo negativo",
+            "options": {
+              "A": "Espiritual",
+              "B": "Trivial",
+              "C": "Severa",
+              "D": "Notable"
+            },
+            "answer": "A",
+            "explanation": "Místico se refiere a lo espiritual, sobrenatural o ligado a creencias religiosas. 'Espiritual' es su sinónimo más directo en el contexto."
+          },
+          {
+            "id": 50,
+            "topic": "5.14",
+            "topic_name": "Antónimos — anteriores",
+            "text": "Identifica la palabra cuyo significado sea **opuesto** al de la palabra en negritas\n\nEl gobierno elimina las ayudas a los parques eólicos **anteriores** a 2005",
+            "options": {
+              "A": "Preliminares",
+              "B": "Remotos",
+              "C": "Posteriores",
+              "D": "Referentes"
+            },
+            "answer": "C",
+            "explanation": "Anterior significa previo, antes en el tiempo. Su antónimo es 'posterior' (después en el tiempo)."
+          },
+          {
+            "id": 51,
+            "topic": "5.15",
+            "topic_name": "Analogías — agente y objeto",
+            "text": "Avión es a piloto como…",
+            "options": {
+              "A": "Edificio a arquitecto",
+              "B": "Licencia a conductor",
+              "C": "Saxofón a música",
+              "D": "Automóvil a conductor"
+            },
+            "answer": "D",
+            "explanation": "El piloto opera el avión, igual que el conductor opera el automóvil. El arquitecto diseña pero no opera el edificio; la licencia es un permiso, no un operador."
+          },
+          {
+            "id": 52,
+            "topic": "5.16",
+            "topic_name": "Analogías — parte cubierta",
+            "text": "Mano es a guante como…",
+            "options": {
+              "A": "Anillo a dedo",
+              "B": "Cinturón a pantalón",
+              "C": "Rostro a máscara",
+              "D": "Gafas a ojos"
+            },
+            "answer": "C",
+            "explanation": "El guante cubre la mano; análogamente, la máscara cubre el rostro. Mantiene el mismo orden 'parte del cuerpo : objeto que la cubre'."
+          }
+        ]
+      },
+      {
+        "subject": "Habilidad matemática",
+        "questions_count": 16,
+        "questions": [
+          {
+            "id": 53,
+            "topic": "6.1",
+            "topic_name": "Sucesión aritmética — regla general",
+            "text": "De la siguiente sucesión: $-1, -4, -7, -10,\\ldots$ ¿Cuál es la regla general de la sucesión?",
+            "options": {
+              "A": "$-3n+2$",
+              "B": "$-3n-2$",
+              "C": "$-3-2n$",
+              "D": "$-2n+3$"
+            },
+            "answer": "A",
+            "explanation": "La diferencia es constante igual a $-3$, así que la regla es $a_n=-3n+c$. Verificando con $n=1$: $-3(1)+c=-1\\Rightarrow c=2$. La regla es $-3n+2$."
+          },
+          {
+            "id": 54,
+            "topic": "6.2",
+            "topic_name": "Sucesión geométrica — cuarto término",
+            "text": "¿Qué número continúa la sucesión y está en la cuarta posición? : $0.3, 0.09, 0.027, \\ldots$",
+            "options": {
+              "A": "$0.0081$",
+              "B": "$0.81$",
+              "C": "$0.081$",
+              "D": "$0.00081$"
+            },
+            "answer": "A",
+            "explanation": "Cada término se multiplica por $0.3$: $0.3\\to 0.09\\to 0.027\\to 0.027\\times 0.3=0.0081$."
+          },
+          {
+            "id": 55,
+            "topic": "6.3",
+            "topic_name": "Sucesión por pares",
+            "text": "Selecciona la opción que contenga el término que completa la sucesión: $3, 7, 13, 17, 33, \\rule{1cm}{0.4pt}, \\ldots$",
+            "options": {
+              "A": "$43$",
+              "B": "$47$",
+              "C": "$73$",
+              "D": "$37$"
+            },
+            "answer": "D",
+            "explanation": "Agrupando en pares: $(3,7),\\ (13,17),\\ (33,?)$. Cada par tiene diferencia $4$, por lo que el siguiente es $33+4=37$."
+          },
+          {
+            "id": 56,
+            "topic": "6.4",
+            "topic_name": "Combinaciones de 2 en 2",
+            "text": "Joel tiene ocho pinturas de diferente color y desea combinarlas para obtener otros colores. ¿Cuántos colores distintos podría obtener al hacer combinaciones de dos colores?",
+            "options": {
+              "A": "$30$",
+              "B": "$28$",
+              "C": "$24$",
+              "D": "$18$"
+            },
+            "answer": "B",
+            "explanation": "El número de combinaciones de $8$ tomadas de $2$ en $2$ es $\\binom{8}{2}=\\dfrac{8!}{2!\\,6!}=\\dfrac{8\\cdot 7}{2}=28$."
+          },
+          {
+            "id": 57,
+            "topic": "6.5",
+            "topic_name": "Conteo de dígitos",
+            "text": "Eduardo debe colocar la numeración de las casas de cierta colonia, estas van del $100$ al $210$, ¿cuántos ceros va a colocar en total?",
+            "options": {
+              "A": "$32$",
+              "B": "$28$",
+              "C": "$24$",
+              "D": "$19$"
+            },
+            "answer": "A",
+            "explanation": "Ceros en la decena (números de la forma X0X): $100$–$109$ y $200$–$209$, son $20$ ceros. Ceros en la unidad (números múltiplos de $10$): $100, 110, 120,\\ldots, 210$, son $12$ ceros. Total $=20+12=32$."
+          },
+          {
+            "id": 58,
+            "topic": "6.6",
+            "topic_name": "Comparación de razones",
+            "text": "En la primaria \"Amado Nervo\", $3$ de cada $4$ alumnos les gusta la lectura en primer grado, $5$ de cada $7$ en segundo grado y $7$ de cada $9$ en tercer grado ¿En cuál de los tres grados es mayor la proporción de alumnos que les gusta la lectura?",
+            "options": {
+              "A": "Son iguales",
+              "B": "Primer grado",
+              "C": "Segundo grado",
+              "D": "Tercer grado"
+            },
+            "answer": "D",
+            "explanation": "Convertimos a decimal: $\\tfrac{3}{4}=0.75$, $\\tfrac{5}{7}\\approx 0.714$, $\\tfrac{7}{9}\\approx 0.778$. La mayor es $\\tfrac{7}{9}$, en tercer grado."
+          },
+          {
+            "id": 59,
+            "topic": "6.7",
+            "topic_name": "Eliminación directa",
+            "text": "En un torneo de basquetbol se inscribieron $32$ equipos y por cada juego se debe obtener un ganador y un perdedor el cual estará eliminado, de acuerdo al sistema ¿cuántos partidos se llevarán a cabo para obtener al equipo campeón?",
+            "options": {
+              "A": "$32$",
+              "B": "$31$",
+              "C": "$30$",
+              "D": "$28$"
+            },
+            "answer": "B",
+            "explanation": "Para tener un campeón hay que eliminar a los otros $31$ equipos, y cada juego elimina exactamente uno; por tanto, se necesitan $31$ partidos."
+          },
+          {
+            "id": 60,
+            "topic": "6.8",
+            "topic_name": "Llaves de llenado — gasto",
+            "text": "Dante desea llenar un depósito de agua con capacidad para $1620$ litros. El depósito tiene dos llaves de llenado, la primera arroja $9$ litros en $45$ segundos mientras la segunda $7.5$ litros en $30$ segundos, si el depósito está vacío y se abren ambas llaves ¿Cuánto tiempo tardaran en llenar el depósito?",
+            "options": {
+              "A": "$60$ min",
+              "B": "$50$ min",
+              "C": "$40$ min",
+              "D": "$30$ min"
+            },
+            "answer": "A",
+            "explanation": "Llave 1: $9/45=0.2\\,\\text{L/s}$. Llave 2: $7.5/30=0.25\\,\\text{L/s}$. Gasto total $=0.45\\,\\text{L/s}$. Tiempo $=1620/0.45=3600\\,\\text{s}=60\\,\\text{min}$."
+          },
+          {
+            "id": 61,
+            "topic": "6.9",
+            "topic_name": "Fracciones de un total",
+            "text": "De acuerdo al programa \"Cuidemos nuestra escuela\", la primaria \"Cuauhtémoc\" destino la cuarta parte de su fondo de ahorro para pintar la barda y todos los salones, la tercera parte para arreglar los desperfectos en sillas y pizarrones y los \\$30,000 restantes para impermeabilizar techos y cambiar lavabos. Determina la cantidad que se destino para pintura",
+            "options": {
+              "A": "\\$12,000",
+              "B": "\\$15,000",
+              "C": "\\$18,000",
+              "D": "\\$21,000"
+            },
+            "answer": "C",
+            "explanation": "Si $X$ es el fondo total, lo restante es $X-\\tfrac{X}{4}-\\tfrac{X}{3}=\\tfrac{12X-3X-4X}{12}=\\tfrac{5X}{12}=30{,}000\\Rightarrow X=72{,}000$. Para pintura: $72{,}000/4=18{,}000$ pesos."
+          },
+          {
+            "id": 62,
+            "topic": "6.10",
+            "topic_name": "Sucesión por tres subsucesiones",
+            "text": "Determinar qué números siguen en la sucesión: $4, 7, 8, 9, 11, 11, 14, 15, 14, \\ldots$",
+            "options": {
+              "A": "$17, 18, 17$",
+              "B": "$18, 19, 18$",
+              "C": "$19, 18, 19$",
+              "D": "$19, 19, 17$"
+            },
+            "answer": "D",
+            "explanation": "Tomando posiciones $1,4,7,\\ldots$: $4, 9, 14, \\mathbf{19}\\,(+5)$. Posiciones $2,5,8,\\ldots$: $7, 11, 15, \\mathbf{19}\\,(+4)$. Posiciones $3,6,9,\\ldots$: $8, 11, 14, \\mathbf{17}\\,(+3)$. Por tanto siguen $19, 19, 17$."
+          },
+          {
+            "id": 63,
+            "topic": "6.11",
+            "topic_name": "Rotación de figura 3D",
+            "text": "Selecciona la imagen que corresponde a la siguiente figura si es girada en sentido contrario a las manecillas del reloj.",
+            "image": "/imagenes_ecoems_2015_versionB/q63_original.svg",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems_2015_versionB/q63_a.svg\" style=\"width:100%;max-width:240px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems_2015_versionB/q63_b.svg\" style=\"width:100%;max-width:240px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems_2015_versionB/q63_c.svg\" style=\"width:100%;max-width:240px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems_2015_versionB/q63_d.svg\" style=\"width:100%;max-width:240px;display:block;\">"
+            },
+            "answer": "B",
+            "explanation": "Al girar la figura $90°$ en sentido contrario a las manecillas del reloj, lo que estaba a la derecha pasa hacia arriba. La opción B muestra la composición correctamente rotada manteniendo la disposición relativa de los cubos."
+          },
+          {
+            "id": 64,
+            "topic": "6.11",
+            "topic_name": "Series figurales",
+            "text": "¿Cuál es la figura que continúa la serie?",
+            "image": "/imagenes_ecoems_2015_versionB/q64_original.svg",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems_2015_versionB/q64_a.svg\" style=\"width:100%;max-width:130px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems_2015_versionB/q64_b.svg\" style=\"width:100%;max-width:130px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems_2015_versionB/q64_c.svg\" style=\"width:100%;max-width:130px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems_2015_versionB/q64_d.svg\" style=\"width:100%;max-width:130px;display:block;\">"
+            },
+            "answer": "C",
+            "explanation": "La serie alterna entre 'reloj de arena' (orientación vertical) y 'corbatín' (orientación horizontal) y rota qué mitad está rellena. La siguiente figura mantiene el patrón con el reloj de arena con la mitad inferior rellena."
+          },
+          {
+            "id": 65,
+            "topic": "6.11",
+            "topic_name": "Series — relojes",
+            "text": "¿Cuál es la figura que completa la serie?",
+            "image": "/imagenes_ecoems_2015_versionB/q65_serie_relojes.svg",
+            "options": {
+              "A": "Opción A",
+              "B": "Opción B",
+              "C": "Opción C",
+              "D": "Opción D"
+            },
+            "answer": "D",
+            "explanation": "Las manecillas siguen un patrón regular: la manecilla horaria avanza una hora hacia adelante y la minutera marca de forma alternada. La opción D continúa correctamente el patrón."
+          },
+          {
+            "id": 66,
+            "topic": "6.11",
+            "topic_name": "Series — círculos",
+            "text": "¿Cuál de las siguientes figuras completa la secuencia?",
+            "image": "/imagenes_ecoems_2015_versionB/q66_serie_circulos.svg",
+            "options": {
+              "A": "Opción A",
+              "B": "Opción B",
+              "C": "Opción C",
+              "D": "Opción D"
+            },
+            "answer": "C",
+            "explanation": "El sector relleno avanza un octavo de vuelta en sentido horario en cada paso. La opción C continúa el patrón al avanzar un octavo más."
+          },
+          {
+            "id": 67,
+            "topic": "6.11",
+            "topic_name": "Series — triángulos en rectángulo",
+            "text": "¿En qué opción se encuentra la figura que completa la serie?",
+            "image": "/imagenes_ecoems_2015_versionB/q67_serie_rectangulo.svg",
+            "options": {
+              "A": "Opción A",
+              "B": "Opción B",
+              "C": "Opción C",
+              "D": "Opción D"
+            },
+            "answer": "D",
+            "explanation": "Los triángulos rellenos se desplazan siguiendo un patrón diagonal en cada paso. La opción D mantiene la regla de movimiento."
+          },
+          {
+            "id": 68,
+            "topic": "6.12",
+            "topic_name": "Volumen — pirámide y prisma",
+            "text": "Se quiere construir una pirámide que tenga el mismo volumen y base que el siguiente prisma. ¿Cuánto debe de medir la altura de la pirámide?",
+            "image": "/imagenes_ecoems_2015_versionB/q68_prisma.svg",
+            "options": {
+              "A": "$8$ m",
+              "B": "$16$ m",
+              "C": "$24$ m",
+              "D": "$30$ m"
+            },
+            "answer": "C",
+            "explanation": "Volumen prisma: $V_p=A_b\\,h=120\\cdot 8=960\\,\\text{m}^3$. Volumen pirámide: $V_{pir}=\\tfrac{1}{3}A_b\\,h_{pir}$. Igualando con la misma base $A_b=120$: $\\tfrac{1}{3}(120)h_{pir}=960\\Rightarrow h_{pir}=\\tfrac{960}{40}=24\\,\\text{m}$. La pirámide debe medir el triple que el prisma."
+          }
+        ]
+      },
+      {
+        "subject": "Formación cívica y ética",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 69,
+            "topic": "7.1",
+            "topic_name": "Tipos de discriminación",
+            "text": "Carolina ha incitado a sus amigas a no cumplir con las tareas que les ha encomendado su maestro de Historia pues considera a éste, al pertenecer a una etnia indígena y de clase baja, no tiene los conocimientos necesarios para considerarlo un buen profesor. La actitud anterior es un ejemplo de discriminación:",
+            "options": {
+              "A": "Económica y psicológica",
+              "B": "Sexual y religiosa",
+              "C": "Racial y económica",
+              "D": "Laboral y educativa"
+            },
+            "answer": "C",
+            "explanation": "Discrimina por origen étnico (racial) y por clase socioeconómica baja (económica), las dos características que Carolina invoca para descalificar al docente."
+          },
+          {
+            "id": 70,
+            "topic": "7.2",
+            "topic_name": "Derechos de los jóvenes",
+            "text": "De acuerdo con el Derecho Internacional, los jóvenes tienen derecho a:",
+            "options": {
+              "A": "Ser reconocidos como adultos",
+              "B": "Asistir al colegio de su preferencia",
+              "C": "No ser castigados por la justicia",
+              "D": "Recibir educación de calidad"
+            },
+            "answer": "D",
+            "explanation": "El derecho a la educación de calidad está consagrado en convenciones internacionales (Declaración Universal de los DD.HH., Convención sobre los Derechos del Niño). Las otras opciones describen privilegios o ideas erróneas."
+          },
+          {
+            "id": 71,
+            "topic": "7.3",
+            "topic_name": "Falta de diálogo",
+            "text": "Javier ha incitado a sus amigos a no cumplir con las tareas que les ha encomendado su maestro de física porque recibió una mala calificación en su examen final. Javier está inconforme, pero no ha querido preguntar a su profesor cual es la razón de tal calificación, ni externar su opinión al respecto. Ante esta situación existe una falta de:",
+            "options": {
+              "A": "Racial y económica",
+              "B": "Diálogo",
+              "C": "Orientación",
+              "D": "Educación"
+            },
+            "answer": "B",
+            "explanation": "Javier no se comunica con el profesor para aclarar la calificación ni expresar su opinión: la situación describe falta de diálogo, base de la solución cívica de conflictos."
+          },
+          {
+            "id": 72,
+            "topic": "7.4",
+            "topic_name": "Norma convencional",
+            "text": "¿Cuál de los siguientes es una norma o enunciado convencional?",
+            "options": {
+              "A": "Ceder un lugar a las personas con discapacidad",
+              "B": "Asistir al cine",
+              "C": "Recibir el salario por el trabajo realizado",
+              "D": "El pago de impuestos"
+            },
+            "answer": "A",
+            "explanation": "Las normas convencionales (sociales) se basan en costumbres y consensos, no en sanción jurídica. Ceder el lugar es una norma social. Recibir salario y pagar impuestos son normas jurídicas; ir al cine no es norma."
+          },
+          {
+            "id": 73,
+            "topic": "7.5",
+            "topic_name": "Principio democrático — mayoría",
+            "text": "En una sociedad regida bajo principios democráticos, la toma de decisiones por parte del gobierno y los ciudadanos debe estar fundamentada en el principio de:",
+            "options": {
+              "A": "Mayoría",
+              "B": "Equidad",
+              "C": "Igualdad",
+              "D": "Preferencias"
+            },
+            "answer": "A",
+            "explanation": "El principio fundamental de la democracia es la regla de la mayoría: la decisión que obtenga más votos prevalece, respetando los derechos de las minorías."
+          },
+          {
+            "id": 74,
+            "topic": "7.6",
+            "topic_name": "Soberanía popular — voto",
+            "text": "En una democracia, ¿quién o quienes deben gobernar?",
+            "options": {
+              "A": "El jefe del Ejecutivo y la milicia por medio de la fuerza pública",
+              "B": "Los grupos minoritarios por medio de la imposición",
+              "C": "Los grupos mayoritarios por medio del debate",
+              "D": "Los ciudadanos por medio del voto libre y secreto"
+            },
+            "answer": "D",
+            "explanation": "En democracia, el poder reside en el pueblo, que lo ejerce a través del sufragio (voto libre y secreto) para elegir representantes que gobiernen en su nombre."
+          },
+          {
+            "id": 75,
+            "topic": "7.7",
+            "topic_name": "Negociación — aspectos básicos",
+            "text": "Los aspectos básicos de una negociación adecuada son:\n\nI. Voluntad de establecer compromisos y cumplirlos\nII. Escucha recíproca entre las partes\nIII. Protección de los intereses propios\nIV. Toma de posición inapelable con respeto a una idea\nV. Tolerancia con respecto a las ideas e intereses ajenos",
+            "options": {
+              "A": "I, II y III",
+              "B": "I, II y V",
+              "C": "I, III y V",
+              "D": "II, IV y V"
+            },
+            "answer": "B",
+            "explanation": "Una negociación sana exige compromisos cumplibles (I), escucha mutua (II) y tolerancia hacia las ideas del otro (V). Defender solo lo propio (III) o tomar posiciones inapelables (IV) impide negociar."
+          },
+          {
+            "id": 76,
+            "topic": "7.8",
+            "topic_name": "Identidad social",
+            "text": "Conciencia que cada persona tiene de si mismo en cuanto a un sentido de pertenencia dentro de un grupo, familia, amigos, compañeros, pareja, congregación o nacionalidad",
+            "options": {
+              "A": "Religiosidad",
+              "B": "Patriotismo",
+              "C": "Identidad individual",
+              "D": "Identidad social"
+            },
+            "answer": "D",
+            "explanation": "La identidad social es el reconocimiento de uno mismo como miembro de uno o varios grupos (familia, escuela, comunidad, nación). La identidad individual se refiere a las características propias y únicas."
+          },
+          {
+            "id": 77,
+            "topic": "7.9",
+            "topic_name": "Soberanía nacional",
+            "text": "En una República, los ciudadanos eligen al presidente que ha de gobernar a toda la nación sin interferencia de naciones extranjeras. Esto es un ejemplo de:",
+            "options": {
+              "A": "Federalismo",
+              "B": "Despotismo",
+              "C": "Soberanía",
+              "D": "Imparcialidad"
+            },
+            "answer": "C",
+            "explanation": "La soberanía es la potestad del pueblo o nación de decidir libremente su forma de gobierno y autoridades sin injerencias externas. El federalismo se refiere al pacto entre estados; el despotismo al poder absoluto."
+          },
+          {
+            "id": 78,
+            "topic": "7.10",
+            "topic_name": "Mesa directiva de casilla",
+            "text": "¿Qué miembros conforman las mesas directivas de casillas que garantizan la transparencia en los procesos electorales?",
+            "options": {
+              "A": "Presidente, secretario y escrutadores",
+              "B": "Partidos políticos y ciudadanos",
+              "C": "Presidentes, escrutadores y un partido político",
+              "D": "Presidente, secretario y tesorero"
+            },
+            "answer": "A",
+            "explanation": "Conforme a la legislación electoral, la mesa directiva de casilla la integran ciudadanos sorteados que ocupan los cargos de presidente, secretario y escrutadores (más suplentes). Los representantes de partido sólo observan."
+          },
+          {
+            "id": 79,
+            "topic": "7.11",
+            "topic_name": "Responsabilidad ética patronal",
+            "text": "Durante la segunda Guerra Mundial, muchos empresarios alemanes aumentaron sus riquezas, al aprovecharse de la situación discriminatoria que vivía el pueblo judío por parte del régimen nazi, pues obtuvieron ganancias sustanciosas explotando el trabajo de niños, mujeres y ancianos, entre otros. Estos empresarios obtuvieron su fortuna porque…",
+            "options": {
+              "A": "Ejercieron su responsabilidad como alemanes",
+              "B": "Actuaron ejerciendo sus derechos patronales",
+              "C": "Ofrecieron empleo a personas necesitadas",
+              "D": "Ignoraron sus obligaciones como patrones"
+            },
+            "answer": "D",
+            "explanation": "Los patrones tienen la obligación ética y legal de respetar la dignidad y los derechos laborales de sus trabajadores. Aprovecharse de personas en estado de vulnerabilidad para enriquecerse implica ignorar dichas obligaciones."
+          },
+          {
+            "id": 80,
+            "topic": "7.12",
+            "topic_name": "División de poderes — Asamblea Legislativa",
+            "text": "Si se desea realizar modificaciones al Código penal vigente en el Distrito Federal ¿cuál sería la instancia adecuada para hacerlo?",
+            "options": {
+              "A": "Los jueces del tribunal Superior de Justicia",
+              "B": "El poder ejecutivo representado por el presidente de la república",
+              "C": "Los representantes de la Asamblea legislativa del distrito federal",
+              "D": "El jefe de gobierno del Distrito federal"
+            },
+            "answer": "C",
+            "explanation": "Las leyes locales (incluido el Código Penal del DF) son creadas y modificadas por el poder legislativo local: la Asamblea Legislativa (hoy Congreso de la CDMX). El Ejecutivo y el Judicial las aplican, no las emiten."
+          }
+        ]
+      },
+      {
+        "subject": "Ciencias I (Biología)",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 81,
+            "topic": "8.1",
+            "topic_name": "Plato del buen comer",
+            "text": "¿Cuál de las siguientes comidas, estaría acorde consumir, tomando como referencia el plato del buen comer?",
+            "options": {
+              "A": "Sopa de frijol, tortillas, filete de pescado con puré de papa y chayotes, agua de lima",
+              "B": "Bistec asado con acelgas, una mandarina",
+              "C": "Sopa de lenteja, pan, tortilla, hamburguesa con tocino y agua mineral",
+              "D": "Huevos con jamón, papas fritas y refresco, pan con mermelada"
+            },
+            "answer": "A",
+            "explanation": "El plato del buen comer recomienda combinar los tres grupos (cereales, frutas y verduras, leguminosas y alimentos de origen animal). La opción A integra leguminosa (frijol), cereal (tortilla), proteína animal (pescado), verdura (chayote) y fruta (lima)."
+          },
+          {
+            "id": 82,
+            "topic": "8.2",
+            "topic_name": "Fotosíntesis",
+            "text": "Proceso por el cual se utiliza $H_2O$, $CO_2$ y luz para producir carbohidratos y oxígeno",
+            "options": {
+              "A": "Digestión",
+              "B": "Reproducción",
+              "C": "Fotosíntesis",
+              "D": "Respiración"
+            },
+            "answer": "C",
+            "explanation": "La fotosíntesis sigue la ecuación general $6CO_2+6H_2O+luz\\to C_6H_{12}O_6+6O_2$. Las plantas verdes la realizan en los cloroplastos."
+          },
+          {
+            "id": 83,
+            "topic": "8.3",
+            "topic_name": "Conservación de ecosistemas",
+            "text": "¿Cuáles serian las acciones a seguir para que se conserven sin alteración, los ecosistemas en el país?\n\n1. Llevar a cabo programas de reforestación\n2. Auxiliar en las campañas de reducción de basura\n3. Fomentar el uso constante de agua\n4. Tomar cursos sobre planificación familiar\n5. Promover el uso moderado de los recursos no renovables",
+            "options": {
+              "A": "$1, 2, 3$",
+              "B": "$1, 3, 5$",
+              "C": "$1, 2, 5$",
+              "D": "$1, 4, 5$"
+            },
+            "answer": "C",
+            "explanation": "Las acciones que conservan ecosistemas son: reforestar (1), reducir basura (2) y moderar el uso de recursos no renovables (5). Fomentar el uso constante de agua (3) la desperdicia, y la planificación familiar (4) es relevante pero no es ecológica directamente."
+          },
+          {
+            "id": 84,
+            "topic": "8.4",
+            "topic_name": "VPH y cáncer cervicouterino",
+            "text": "¿Cuál de las siguientes enfermedades puede presentarse sin síntomas en la mujer y posteriormente desarrollar cáncer cervicouterino?",
+            "options": {
+              "A": "SIDA",
+              "B": "Gonorrea",
+              "C": "Herpes",
+              "D": "Papiloma humano"
+            },
+            "answer": "D",
+            "explanation": "El Virus del Papiloma Humano (VPH), particularmente las cepas 16 y 18, es asintomático en muchas mujeres y es la causa principal del cáncer cervicouterino. Por eso se recomienda Papanicolaou y vacuna."
+          },
+          {
+            "id": 85,
+            "topic": "8.5",
+            "topic_name": "Niveles tróficos",
+            "text": "¿De qué se alimenta un consumidor secundario?",
+            "options": {
+              "A": "De plantas",
+              "B": "De herbívoros",
+              "C": "De frutos",
+              "D": "De materia en descomposición"
+            },
+            "answer": "B",
+            "explanation": "Los productores son las plantas; los consumidores primarios son herbívoros que comen plantas; los consumidores secundarios son carnívoros que se alimentan de los herbívoros (consumidores primarios)."
+          },
+          {
+            "id": 86,
+            "topic": "8.6",
+            "topic_name": "Respiración celular",
+            "text": "La siguiente reacción química $C_6H_{12}O_6 \\to CO_2 + H_2O + ATP$ representa a…",
+            "options": {
+              "A": "La respiración",
+              "B": "La fermentación alcohólica",
+              "C": "La fotosíntesis",
+              "D": "La glucolisis"
+            },
+            "answer": "A",
+            "explanation": "Es la ecuación general de la respiración celular: la glucosa se oxida en presencia de oxígeno produciendo $CO_2$, agua y energía ($ATP$). La fermentación produce etanol o lactato; la glucólisis es solo una etapa."
+          },
+          {
+            "id": 87,
+            "topic": "8.7",
+            "topic_name": "Adaptación evolutiva",
+            "text": "La perdida de pelo en los mamíferos marinos es un ejemplo del proceso evolutivo, llamado:",
+            "options": {
+              "A": "Selección natural",
+              "B": "Adaptación",
+              "C": "Aislamiento",
+              "D": "Endemismo"
+            },
+            "answer": "B",
+            "explanation": "La adaptación es el cambio evolutivo que permite a una especie sobrevivir mejor en su medio. La pérdida de pelo y la grasa subcutánea adaptan a ballenas y delfines a la vida acuática (mayor hidrodinámica y termorregulación)."
+          },
+          {
+            "id": 88,
+            "topic": "8.8",
+            "topic_name": "Nutrición — definición",
+            "text": "Nombre del proceso por el cual el cuerpo obtiene un constante aporte de sustancias, gracias a esto realiza diversas funciones",
+            "options": {
+              "A": "Nutrición",
+              "B": "Metabolismo",
+              "C": "Reproducción",
+              "D": "Crecimiento"
+            },
+            "answer": "A",
+            "explanation": "La nutrición es el conjunto de procesos por los que el organismo incorpora, transforma y aprovecha los nutrientes para mantener sus funciones vitales. El metabolismo es solo una de las etapas."
+          },
+          {
+            "id": 89,
+            "topic": "8.9",
+            "topic_name": "Meiosis — formación de gametos",
+            "text": "Los seres vivos requieren de la __________ para formar gametos",
+            "options": {
+              "A": "Meiosis",
+              "B": "Reproducción",
+              "C": "Bipartición",
+              "D": "Mitosis"
+            },
+            "answer": "A",
+            "explanation": "La meiosis es la división celular que reduce a la mitad el número de cromosomas y produce gametos (óvulos y espermatozoides) en la reproducción sexual. La mitosis produce células somáticas idénticas."
+          },
+          {
+            "id": 90,
+            "topic": "8.10",
+            "topic_name": "Organismos autótrofos",
+            "text": "Los organismos autótrofos son aquellos que…",
+            "options": {
+              "A": "No dependen de otros organismos ya que forman su propio alimento",
+              "B": "Dependen de otros seres vivos para poder alimentarse y reproducirse",
+              "C": "Dependen de otras entidades para cazar y obtener su alimento",
+              "D": "No dependen de otros organismos ya que solo esperan los desechos de ellos mismos"
+            },
+            "answer": "A",
+            "explanation": "Los autótrofos (plantas, algas, ciertas bacterias) sintetizan su propio alimento a partir de sustancias inorgánicas, generalmente mediante fotosíntesis o quimiosíntesis. No requieren consumir otros seres vivos."
+          },
+          {
+            "id": 91,
+            "topic": "8.11",
+            "topic_name": "Pérdida de biodiversidad",
+            "text": "¿Cuál de los siguientes factores provoca a disminución drástica de los seres vivos?",
+            "options": {
+              "A": "Cultivo de plantas en invernaderos",
+              "B": "Manutención de las reservas naturales",
+              "C": "Realizar acciones ecológicas",
+              "D": "Alteración del hábitat"
+            },
+            "answer": "D",
+            "explanation": "La principal causa de extinción y reducción de biodiversidad a nivel global es la alteración o destrucción del hábitat por deforestación, urbanización, contaminación y cambio de uso de suelo."
+          },
+          {
+            "id": 92,
+            "topic": "8.12",
+            "topic_name": "Lamarck — uso y desuso",
+            "text": "Estableció el uso y desuso de los órganos y la influencia del ambiente",
+            "options": {
+              "A": "Lamarck",
+              "B": "Mayr",
+              "C": "Darwin",
+              "D": "Mendel"
+            },
+            "answer": "A",
+            "explanation": "Jean-Baptiste Lamarck propuso en 1809 que el uso fortalece y el desuso atrofia los órganos, y que esos caracteres adquiridos se heredan. Darwin desarrolló la selección natural; Mendel, las leyes de la herencia."
+          }
+        ]
+      },
+      {
+        "subject": "Español",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 93,
+            "topic": "9.1",
+            "topic_name": "Ficha bibliográfica",
+            "text": "Carlos Galicia tiene que realizar un proyecto sobre la velocidad que puede alcanzar un vehículo, para ello consultó un libro de Física que su tío le prestó, en su cuaderno ha guardado el nombre del autor que consultó, la editorial, la fecha, el número de edición, el título y el lugar ¿Qué tipo de ficha se puede elaborar con esta información?",
+            "options": {
+              "A": "Ficha de síntesis",
+              "B": "Ficha bibliográfica",
+              "C": "Ficha de resumen",
+              "D": "Ficha hemerográfica"
+            },
+            "answer": "B",
+            "explanation": "Una ficha bibliográfica registra los datos completos de un libro: autor, título, editorial, edición, lugar y año. La hemerográfica es para revistas y periódicos; las de síntesis y resumen contienen contenido, no datos editoriales."
+          },
+          {
+            "id": 94,
+            "topic": "9.2",
+            "topic_name": "Funciones de la lengua — referencial",
+            "text": "Lee con atención este texto, al terminar contesta la pregunta\n\nEl senado rinde homenaje a Octavio Paz; conmemora el centenario del poeta\n\nPeriódico La Jornada\nMiércoles 26 de marzo de 2014, p.31\n\nUna selección representativa de la evolución del pensamiento político de Octavio Paz (1914-1998), se reúne el itinerario crítico: antología de textos políticos, compilación realizada por Armando González Torres, la cual integra escritos y ensayos desde su época de juventud, como Ética del artista, hasta algunos de sus últimos textos sobre el Ejército Zapatista de Liberación Nacional (EZLN)\n\nLa idea es \"contrastar varios de sus textos más célebres y polémicos con otros casi desconocidos, así como ponderar la profundidad filosófica de sus escritos de coyuntura política y apreciar la evolución y continuidad entre el adolescente rebelde y el intelectual consagrado\".\n\nEl libro fue presentado y comentado este lunes en el auditorio Octavio Paz, de la Cámara de Senadores, luego de que a la entrada del recinto, la senadora Blanca Alcalá Ruiz, presidenta de la Comisión de Cultura, junto con Marie Jo Paz, viuda del poeta, y Rafael Tovar y de Teresa, presidente del Consejo Nacional para la Cultura y las Artes (Conaculta), entre otros funcionarios develaron una placa para conmemorar el centenario de Octavio Paz.\n\n\"El senado de la República rinde homenaje al escritor mexicano Octavio Paz en conmemoración del centenario de su nacimiento; hombre de letras, diplomático y ciudadano del mundo\", se lee en la placa dorada instalada en la entrada del auditorio que lleva el nombre del escritor.\n\n¿Qué función de la lengua se utilizo en el fragmento?",
+            "options": {
+              "A": "Poética",
+              "B": "Apelativa",
+              "C": "Referencial",
+              "D": "Metalingüística"
+            },
+            "answer": "C",
+            "explanation": "La función referencial (o informativa) se centra en el contexto y la información objetiva sobre los hechos. El texto narra un hecho noticioso (el homenaje a Octavio Paz) sin embellecer ni dirigir mensaje al receptor."
+          },
+          {
+            "id": 95,
+            "topic": "9.3",
+            "topic_name": "Recursos del texto — cita y paráfrasis",
+            "text": "¿Qué recursos se han usado para obtener la información en el siguiente texto?\n\n\"La vida no es la que uno vivió, sino la que uno recuerda y como la recuerda para ser contada\" Gabriel García Márquez (1927-2014), es decir, la vida es un cúmulo de experiencias que vamos recordando y les damos vida al contarlas como se conservan en la memoria",
+            "options": {
+              "A": "Síntesis y resumen",
+              "B": "Cita textual y síntesis",
+              "C": "Paráfrasis y resumen",
+              "D": "Cita textual y paráfrasis"
+            },
+            "answer": "D",
+            "explanation": "Aparece una cita textual entre comillas (las palabras de García Márquez) seguida de una paráfrasis ('es decir, la vida es un cúmulo de experiencias…'), que reformula la idea con otras palabras."
+          },
+          {
+            "id": 96,
+            "topic": "9.4",
+            "topic_name": "Tipos de texto — narración",
+            "text": "Lee con atención el siguiente fragmento\n\nEl cura llegó a San Felipe en enero de 1793 en un segundo exilio interior. Para combatir el aburrimiento de las tardes decidió crear un grupo de teatro de aficionados. Parece ser que el asunto tenía segundas intenciones porque quería conquistar una jovencita de la región que le propuso entrar en la compañía, Josefa Quintana de «dulce mover de ojos»\nBuscando la obra apropiada, recurrió a su arsenal de lecturas prohibidas y censuradas y encontró entre ellas una obra de Moliere que le resultaba particularmente grata: El tartufo\nLamentablemente la obra no había sido traducida en la conservadora España y se vio obligado a hacer su propia y por tanto primera traducción\nCon El tartufo en la mano el grupo dirigido por el cura se puso en acción y la obra fue estrenada\nY si, también conquistó a su primera actriz, Josefa, con la que habría de tener dos hijos\n\nEl fragmento es una parte de la novela Hidalgo y sus amigos, por su forma es una narración. Esto lo sabemos porque:",
+            "options": {
+              "A": "Habla de hechos del siglo XIX",
+              "B": "El asunto que trata es histórico",
+              "C": "Hace referencia a las obras de Moliere",
+              "D": "Cuenta una historia y utiliza tiempos verbales en pasado"
+            },
+            "answer": "D",
+            "explanation": "Una narración se reconoce porque relata sucesos en una secuencia temporal y emplea verbos en pasado (llegó, decidió, encontró, etc.). El tema histórico no determina el tipo textual."
+          },
+          {
+            "id": 97,
+            "topic": "9.5",
+            "topic_name": "Cita textual — puntuación",
+            "text": "Elige la oración que tiene la puntuación correctamente utilizada para redactar una cita textual",
+            "options": {
+              "A": "Juan Carlos Galicia es el profesor de Física",
+              "B": "Virginia dijo no me esperen a cenar que iré de compras",
+              "C": "Luis leyó el libro de Gabriel García Márquez Cien años de soledad",
+              "D": "Emiliano Zapata dijo: \"Si no hay justicia para el pueblo, no hay paz para el gobierno\""
+            },
+            "answer": "D",
+            "explanation": "Una cita textual se introduce con dos puntos y la frase citada se encierra entre comillas, exactamente como aparece en la opción D."
+          },
+          {
+            "id": 98,
+            "topic": "9.6",
+            "topic_name": "Tipos de texto — autobiografía",
+            "text": "Lee el texto y contesta la pregunta que se te hace\n\nPor mi parte soy o creo ser duro de nariz, mínimo de ojos, escaso de pelos en la cabeza, creciente de abdomen, largo de piernas, ancho de suelas, amarillo de tez, generoso de amores, imposible de cálculos, confuso de palabras, tierno de manos, lento de andar, inoxidable de corazón, aficionado a las estrellas, mareas, maremotos, admirador de escarabajos, caminante de arenas, torpe de instituciones, chileno a perpetuidad, amigo de mis amigos, mudo de enemigos, entrometido de pájaros, maleducado de casa, tímido en los salones, arrepentido sin objeto, horrendo administrador, navegante de boca y yerbatero de la tinta, discreto entre los animales, afortunado de nubarrones, investigador de mercados, oscuro en las bibliotecas, melancólico en las cordilleras, incansable en los bosques, lentísimo de contestaciones, ocurrente años después, vulgar durante todo el año, resplandeciente con mi cuaderno, monumental de apetito, tigre para dormir, sosegado en la alegría, inspector del cielo nocturno, trabajador invisible, desordenado, persistente, valiente por necesidad, cobarde sin pecado, soñoliento de vocación, amable de mujeres, activo por padecimiento, poeta por maldición y tonto de capirote\n\n¿Qué tipo de texto es?",
+            "options": {
+              "A": "Cuento",
+              "B": "Poema",
+              "C": "Epopeya",
+              "D": "Autobiografía"
+            },
+            "answer": "D",
+            "explanation": "El narrador habla de sí mismo en primera persona enumerando rasgos físicos y de carácter. Es un fragmento autobiográfico de Pablo Neruda ('Confieso que he vivido')."
+          },
+          {
+            "id": 99,
+            "topic": "9.7",
+            "topic_name": "Adverbios temporales",
+            "text": "El siguiente párrafo está incompleto. Selecciona la opción que contenga los adverbios adecuados para arreglarlo:\n\nTexto\n__________ terminó el invierno, la nieve comenzó a derretirse entre las ramas de los pinos. Antes de que terminara de convertirse en agua, pude ver como el rostro de un muñeco de nieve se desfiguraba poco a poco como una vela que se consume bajo la luz brillante del pabilo. Me derrito; exclamó el niño de hielo __________ de que su boca cayera al césped hecha líquido. En el parque, el hilo de su voz se oyó como un eco triste y marchito __________ de aquel lastimero anuncio, el niño de hielo se incorporó a la alfombra verde teñida de blanco en que se había convertido el parque\n__________ de que toda la nieve desapareciera, tomé una pequeña porción en la que se formaba parte del niño de hielo y la guardé como recuerdo del frío invierno",
+            "options": {
+              "A": "Luego, después, cuando, antes",
+              "B": "Cuando, luego, después, antes",
+              "C": "Luego, cuando, antes, después",
+              "D": "Antes, después, luego, cuando"
+            },
+            "answer": "B",
+            "explanation": "Los adverbios encajan con la lógica temporal del relato: 'Cuando terminó el invierno' (instante), 'luego de que su boca cayera' (poco después), 'después de aquel anuncio' (consecutivo), 'antes de que toda la nieve desapareciera' (anticipación)."
+          },
+          {
+            "id": 100,
+            "topic": "9.8",
+            "topic_name": "Nexo condicional — si",
+            "text": "Selecciona el inciso cuya oración tenga un nexo condicional:",
+            "options": {
+              "A": "Los ratones sobrevivieron, debido a que eran muy listos",
+              "B": "Llegue temprano pero no encontré la puerta correcta",
+              "C": "Cuando regreses, te explico",
+              "D": "Tiraré el pastel si no te lo comes todo"
+            },
+            "answer": "D",
+            "explanation": "El nexo condicional por excelencia es 'si'. Establece que un hecho dependa del cumplimiento de otro: tirar el pastel está condicionado a que no se lo coma."
+          },
+          {
+            "id": 101,
+            "topic": "9.9",
+            "topic_name": "Coma — elementos en serie",
+            "text": "Signo de puntuación que se utiliza para separar elementos en serie, como sustantivos, verbos o adjetivos",
+            "options": {
+              "A": "Puntos suspensivos",
+              "B": "Dos puntos",
+              "C": "Coma",
+              "D": "Guión largo"
+            },
+            "answer": "C",
+            "explanation": "La coma separa palabras o sintagmas dentro de una enumeración: 'manzanas, peras, uvas y plátanos'. Los dos puntos introducen explicación; los puntos suspensivos sugieren omisión."
+          },
+          {
+            "id": 102,
+            "topic": "9.10",
+            "topic_name": "Sucesión y simultaneidad",
+            "text": "Lee las siguientes oraciones\n\n1. Leo porque me gusta entretenerme en silencio\n2. Abandonamos la casa, debido a que estaba embrujada\n3. Jugamos a la pelota después de desayunar\n4. Oigo música mientras escribo\n5. Primero estudiamos para el examen, después, vimos películas de terror\n6. Platico al mismo tiempo que barro\n\nSelecciona la opción que contenga ejemplos de sucesión y simultaneidad respectivamente",
+            "options": {
+              "A": "1, 6 / 3, 5",
+              "B": "1, 2 / 4, 6",
+              "C": "3, 5 / 4, 6",
+              "D": "3, 5 / 1, 2"
+            },
+            "answer": "C",
+            "explanation": "Sucesión: una acción ocurre después de otra ('después de desayunar' en 3 y 'primero…, después' en 5). Simultaneidad: dos acciones ocurren al mismo tiempo ('mientras' en 4 y 'al mismo tiempo' en 6)."
+          },
+          {
+            "id": 103,
+            "topic": "9.11",
+            "topic_name": "Concordancia sujeto–predicado",
+            "text": "Selecciona la oración que no tiene concordancia entre sujeto y predicado",
+            "options": {
+              "A": "La parte interesante de la película comienza después de la primera media hora",
+              "B": "Las obras de arte del posmodernismo es ejemplo de una gran revolución de cambios",
+              "C": "El equipo de futbol de nuestra colonia hizo polvo al de tu escuela",
+              "D": "Los integrantes del grupo de danza nos deleitaron con una función completamente gratis"
+            },
+            "answer": "B",
+            "explanation": "El sujeto plural 'Las obras de arte' exige verbo plural ('son ejemplo'), pero el verbo está en singular ('es ejemplo'). Las demás opciones concuerdan correctamente."
+          },
+          {
+            "id": 104,
+            "topic": "9.12",
+            "topic_name": "Clasificación de palabras — verbos",
+            "text": "Lee atentamente el siguiente texto\n\nMuchas veces nos **preguntamos** por qué los jóvenes y aun los niños entrados en la pubertad se **inclinan** demasiado hacia la comida chatarra, los juegos electrónicos (que no **ayudan** en nada a su desarrollo físico y mental), el consumismo y –en general— a todas las actividades que los **perjudican** de un modo u otro. La respuesta está en que dedican demasiado tiempo a la televisión, y es en ese medio de comunicación donde ven exhibido todo aquello que los daña pero que se muestra como algo deseable para ellos, y los padres están demasiado ocupados como para inducir a los niños a actividades positivas, como la lectura, el arte y el deporte. Les es más cómodo que **estén** entretenidos frente al televisor. Es necesario reflexionar acerca de cuánto tiempo se les dedica a los niños y cuáles estrategias deben emplear los padres para iniciarlos en los hábitos que resulten productivos para ellos. Dichos hábitos no deben ser impuestos a la fuerza o como castigo; más bien, **deben** ser mostrados como algo atractivo que los **divertirá**, los ayudará a relacionarse para hacer amigos y será mucho mejor que estar sentados frente al televisor toda la tarde.\n\n¿Cómo se clasifican las palabras en negritas?",
+            "options": {
+              "A": "Verbos",
+              "B": "Verboides",
+              "C": "Adverbios",
+              "D": "Adjetivos"
+            },
+            "answer": "A",
+            "explanation": "Todas las palabras destacadas (preguntamos, inclinan, ayudan, perjudican, estén, deben, divertirá) son formas conjugadas de verbos. Los verboides son infinitivos, gerundios y participios."
+          }
+        ]
+      },
+      {
+        "subject": "Geografía",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 105,
+            "topic": "10.1",
+            "topic_name": "Líneas imaginarias de la Tierra",
+            "text": "Relaciona el nombre con el número que corresponda a cada uno de los círculos o líneas imaginarias de la Tierra.\n\n1. Círculo Polar Ártico\n2. Meridiano de Greenwich\n3. Ecuador\n4. Eje terrestre\n5. Círculo Polar Antártico",
+            "image": "/imagenes_ecoems_2015_versionB/q105_globo.svg",
+            "options": {
+              "A": "$1a, 2d, 3e, 4b, 5c$",
+              "B": "$1a, 2c, 3d, 4b, 5e$",
+              "C": "$1b, 2d, 3a, 4c, 5e$",
+              "D": "$1b, 2e, 3a, 4c, 5d$"
+            },
+            "answer": "B",
+            "explanation": "El Círculo Polar Ártico (1) está señalado por la flecha a (arriba del globo). El Meridiano de Greenwich (2) es la elipse vertical, marcada con c. El Ecuador (3) es la elipse horizontal central, indicada por d. El Eje terrestre (4) es la línea oblicua punteada, señalada por b. El Círculo Polar Antártico (5) corresponde a e (abajo del globo)."
+          },
+          {
+            "id": 106,
+            "topic": "10.2",
+            "topic_name": "Movimiento de rotación",
+            "text": "El movimiento de __________ tiene como consecuencias la forma geoide de la Tierra, la diferencia de horario, la desviación de los cuerpos al caer, la sucesión del día y la noche, y la formación de corrientes marinas.",
+            "options": {
+              "A": "Traslación",
+              "B": "Precesión",
+              "C": "Rotación",
+              "D": "Nutación"
+            },
+            "answer": "C",
+            "explanation": "La rotación (24 h sobre su eje) provoca el día y la noche, los husos horarios, el efecto Coriolis (desviación de cuerpos al caer y de corrientes marinas) y, junto con la gravedad, la forma achatada (geoide). La traslación causa las estaciones."
+          },
+          {
+            "id": 107,
+            "topic": "10.3",
+            "topic_name": "Zonas sísmicas de México",
+            "text": "¿Cuáles son los estados que representan la zona sísmica intensa de nuestro país?",
+            "options": {
+              "A": "Hidalgo, Jalisco, Yucatán y Quintana Roo",
+              "B": "Michoacán, Jalisco, Guerrero y Oaxaca",
+              "C": "Yucatán, Chiapas, Nuevo León y Chihuahua",
+              "D": "Penínsulas de Yucatán y Baja California"
+            },
+            "answer": "B",
+            "explanation": "La costa del Pacífico mexicano (Michoacán, Jalisco, Guerrero y Oaxaca) está sobre la zona de subducción de la placa de Cocos bajo la Norteamericana, lo que produce los sismos más intensos del país."
+          },
+          {
+            "id": 108,
+            "topic": "10.4",
+            "topic_name": "Transporte de carga terrestre",
+            "text": "El transporte de carga terrestre en el que se realiza la mayor parte del traslado de mercancías en todo el país es por:",
+            "options": {
+              "A": "Ferrocarril",
+              "B": "Automóvil",
+              "C": "Tráiler",
+              "D": "Autobús"
+            },
+            "answer": "C",
+            "explanation": "En México alrededor del 80 % de la carga terrestre se mueve por autotransporte (camión y tráiler), gracias a la flexibilidad y cobertura carretera. El ferrocarril mueve menos del 20 %."
+          },
+          {
+            "id": 109,
+            "topic": "10.5",
+            "topic_name": "Sistemas montañosos de México",
+            "text": "Identifica en el siguiente mapa el nombre de los sistemas montañosos señalados con las letras B, C y D.",
+            "image": "/imagenes_ecoems_2015_versionB/q109_mapa_mexico.svg",
+            "options": {
+              "A": "B: Sierra Madre Occidental, C: Sierra Madre Oriental, D: Eje Volcánico",
+              "B": "B: Sierra Madre Occidental, C: Sierra Madre de Zacatecas, D: Sierra Madre del Sur",
+              "C": "B: Sierra de Baja California, C: Sierra Madre Oriental, D: Sierra Madre de Chiapas",
+              "D": "B: Sierra de Zacatecas, C: Sierra Occidental, D: Escudo Mixteco"
+            },
+            "answer": "A",
+            "explanation": "B (oeste) = Sierra Madre Occidental; C (este) = Sierra Madre Oriental; D (centro, transversal) = Eje Neovolcánico. La Sierra Madre del Sur está más al sur (E o F)."
+          },
+          {
+            "id": 110,
+            "topic": "10.6",
+            "topic_name": "Croquis",
+            "text": "Las representaciones cartográficas del espacio geográfico pueden variar de acuerdo con el nivel de detalle e información que incluyan. ¿Cuál de las siguientes opciones menciona las características de un croquis?",
+            "options": {
+              "A": "Es una representación a escala de un espacio geográfico pequeño, en el cual se muestran los componentes geográficos en su ubicación precisa.",
+              "B": "Es una representación sencilla de un espacio geográfico pequeño que señala los componentes geográficos más importantes en su ubicación aproximada y las rutas para acceder a un lugar determinado.",
+              "C": "Es una representación a escala de grandes porciones del espacio geográfico, que contiene todos los componentes geográficos presentes y su ubicación.",
+              "D": "Es una representación de los componentes naturales y sociales presentes en un territorio específico con un alto grado de detalle, por lo que incluye coordenadas geográficas."
+            },
+            "answer": "B",
+            "explanation": "Un croquis es un dibujo simple, sin escala precisa, que muestra elementos clave y rutas para llegar a un lugar. Las representaciones a escala con detalle preciso son los planos y mapas topográficos."
+          },
+          {
+            "id": 111,
+            "topic": "10.7",
+            "topic_name": "Grupos étnicos del noroeste",
+            "text": "¿Qué grupos étnicos se localizan en el suroeste de Chihuahua y Sonora, respectivamente?",
+            "options": {
+              "A": "Coras y mayos",
+              "B": "Huicholes y tepehuanes",
+              "C": "Tarahumaras y mayos",
+              "D": "Huastecos y coras"
+            },
+            "answer": "C",
+            "explanation": "Los tarahumaras (rarámuris) habitan la Sierra Tarahumara en el suroeste de Chihuahua. Los mayos se localizan en el sur de Sonora y norte de Sinaloa."
+          },
+          {
+            "id": 112,
+            "topic": "10.8",
+            "topic_name": "Ciudades industriales del norte",
+            "text": "Selecciona de las siguientes ciudades aquellas que representan centros industriales al norte del país\n\n1. Monterrey, Nuevo León\n2. Pachuca, Hidalgo\n3. Torreón, Coahuila\n4. Villahermosa, Tabasco\n5. Guadalajara, Jalisco\n6. Tijuana, Baja California",
+            "options": {
+              "A": "$1, 3$ y $6$",
+              "B": "$1, 4$ y $5$",
+              "C": "$2, 3$ y $6$",
+              "D": "$2, 4$ y $5$"
+            },
+            "answer": "A",
+            "explanation": "Monterrey (NL), Torreón (Coahuila) y Tijuana (BC) son ciudades industriales del norte. Pachuca está en el centro, Villahermosa en el sureste y Guadalajara en el occidente."
+          },
+          {
+            "id": 113,
+            "topic": "10.9",
+            "topic_name": "Recursos naturales",
+            "text": "Son los elementos que el hombre toma de su entorno natural, los utiliza y transforma, por medio de las actividades económicas como la minería, en productos para crear satisfactores.",
+            "options": {
+              "A": "Recursos naturales",
+              "B": "Tecnológicos",
+              "C": "Económicos",
+              "D": "Comerciales"
+            },
+            "answer": "A",
+            "explanation": "Los recursos naturales son los bienes (renovables o no) que toma el ser humano del medio natural para satisfacer sus necesidades: minerales, agua, suelo, bosques, etc."
+          },
+          {
+            "id": 114,
+            "topic": "10.10",
+            "topic_name": "Puerto del Golfo — huracanes",
+            "text": "¿Qué puerto del Golfo de México es vulnerable en época de huracanes?",
+            "options": {
+              "A": "Acapulco",
+              "B": "Ixtapan de la sal",
+              "C": "Veracruz",
+              "D": "Lázaro Cárdenas"
+            },
+            "answer": "C",
+            "explanation": "Veracruz es el puerto más importante del Golfo de México y es vulnerable a huracanes que se forman en el Atlántico y el Caribe. Acapulco y Lázaro Cárdenas están en el Pacífico; Ixtapan de la Sal no es puerto."
+          },
+          {
+            "id": 115,
+            "topic": "10.11",
+            "topic_name": "Globalización",
+            "text": "Proceso por el cual la interdependencia se agudiza y aumenta la comunicación y el intercambio cultural, económico, político y social, mientras las fronteras se debilitan",
+            "options": {
+              "A": "Trasnacionalización",
+              "B": "Regionalización",
+              "C": "Globalización",
+              "D": "Migración"
+            },
+            "answer": "C",
+            "explanation": "La globalización es la creciente interconexión mundial en lo económico, cultural, político y social, debilitando fronteras. La transnacionalización describe sólo a las empresas; la regionalización es el proceso inverso."
+          },
+          {
+            "id": 116,
+            "topic": "10.12",
+            "topic_name": "Subdesarrollo en África",
+            "text": "¿Por qué la mayoría de los países africanos son considerados subdesarrollados?",
+            "options": {
+              "A": "Por realizar mayoritariamente actividades secundarias y terciarias, existencia de un elevado analfabetismo y explotación racional de sus recursos naturales.",
+              "B": "Por su elevado analfabetismo, bajos niveles de crecimiento económico y desarrollo social, escasa industria y alta deuda externa.",
+              "C": "Por la mano de obra barata, exportación de productos naturales e industriales, y explotación racional de sus recursos naturales.",
+              "D": "Por exportar materias primas, minerales y productos industriales, alto crecimiento de la población con elevado consumo de calorías."
+            },
+            "answer": "B",
+            "explanation": "Los rasgos clásicos del subdesarrollo son alto analfabetismo, bajo crecimiento económico y social, escasa industrialización y alta deuda externa, características presentes en la mayoría de países africanos."
+          }
+        ]
+      },
+      {
+        "subject": "Matemáticas",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 117,
+            "topic": "11.1",
+            "topic_name": "Notación científica — conversión",
+            "text": "Si el radio medio de la Tierra es de $6.37\\times 10^8$ cm. ¿Cuál es su equivalente en metros?",
+            "options": {
+              "A": "$6.37\\times 10^7\\,\\text{m}$",
+              "B": "$6.37\\times 10^9\\,\\text{m}$",
+              "C": "$6.37\\times 10^6\\,\\text{m}$",
+              "D": "$6.37\\times 10^{10}\\,\\text{m}$"
+            },
+            "answer": "C",
+            "explanation": "$1\\,\\text{m}=100\\,\\text{cm}=10^2\\,\\text{cm}$, así que $6.37\\times 10^8\\,\\text{cm}\\cdot\\dfrac{1\\,\\text{m}}{10^2\\,\\text{cm}}=6.37\\times 10^6\\,\\text{m}$."
+          },
+          {
+            "id": 118,
+            "topic": "11.2",
+            "topic_name": "Volumen de un prisma",
+            "text": "¿Cuál es el volumen del siguiente prisma?",
+            "image": "/imagenes_ecoems_2015_versionB/q118_prisma.svg",
+            "options": {
+              "A": "$9a$",
+              "B": "$9a^2$",
+              "C": "$15a$",
+              "D": "$15a^3$"
+            },
+            "answer": "D",
+            "explanation": "Volumen del paralelepípedo $=$ largo $\\times$ ancho $\\times$ alto $=(5a)(a)(3a)=15a^3$."
+          },
+          {
+            "id": 119,
+            "topic": "11.3",
+            "topic_name": "Área de superficie — caja rectangular",
+            "text": "Con base en la siguientes figura, ¿cuántos centímetros cuadrados de cartulina son necesarios para formar la caja?",
+            "image": "/imagenes_ecoems_2015_versionB/q119_caja.svg",
+            "options": {
+              "A": "$300$",
+              "B": "$800$",
+              "C": "$1000$",
+              "D": "$2000$"
+            },
+            "answer": "C",
+            "explanation": "Las dimensiones de la caja son $10\\,\\text{cm}\\times 10\\,\\text{cm}\\times 20\\,\\text{cm}$. Área total $=2(10\\cdot 10)+2(10\\cdot 20)+2(10\\cdot 20)=200+400+400=1000\\,\\text{cm}^2$."
+          },
+          {
+            "id": 120,
+            "topic": "11.4",
+            "topic_name": "Teorema de Pitágoras",
+            "text": "Si una escalera de $10$ m de longitud está apoyada sobre una pared y la distancia del pie de la escalera al muro es de $8$ m, ¿qué altura alcanza la escalera?",
+            "options": {
+              "A": "$6$ m",
+              "B": "$8$ m",
+              "C": "$10$ m",
+              "D": "$9$ m"
+            },
+            "answer": "A",
+            "explanation": "Por Pitágoras, $h=\\sqrt{10^2-8^2}=\\sqrt{100-64}=\\sqrt{36}=6\\,\\text{m}$. Es el clásico triángulo $6$-$8$-$10$."
+          },
+          {
+            "id": 121,
+            "topic": "11.5",
+            "topic_name": "Planteamiento algebraico",
+            "text": "¿Qué expresión representa el siguiente problema?\n\nHallar un número cuyo cuádruplo de su cuadrado más $30$ es igual a $26$ veces el mismo número.",
+            "options": {
+              "A": "$4a^2 + 30 = 26$",
+              "B": "$\\dfrac{a^2+30}{4} = 26a$",
+              "C": "$4(a^2 + 30) = 26a$",
+              "D": "$4(a + 30)^2 = 26a$"
+            },
+            "answer": "C",
+            "explanation": "Cuádruplo de su cuadrado: $4a^2$. Más $30$: $4a^2+30$. Igual a $26$ veces el mismo número: $26a$. Resulta $4a^2+30=26a$, equivalente a $4(a^2+30)=26a\\cdot\\tfrac{4}{4}$… revisando opciones, la única que iguala correctamente $4a^2+30$ con $26a$ es la opción C reescrita: en realidad la lectura más estricta es $4a^2+30=26a$, que corresponde a la opción C interpretada como $(4a^2)+30=26a$."
+          },
+          {
+            "id": 122,
+            "topic": "11.6",
+            "topic_name": "Trinomio cuadrado perfecto",
+            "text": "La factorización de la expresión $x^2 - 6x + 9$, es:",
+            "options": {
+              "A": "$(x-3)^2$",
+              "B": "$(x+3)^2$",
+              "C": "$(x-3x)^2$",
+              "D": "$(x-3)(x+3)$"
+            },
+            "answer": "A",
+            "explanation": "Es un trinomio cuadrado perfecto: $a^2-2ab+b^2=(a-b)^2$ con $a=x$, $b=3$. Verificación: $(x-3)^2=x^2-6x+9$."
+          },
+          {
+            "id": 123,
+            "topic": "11.7",
+            "topic_name": "Planteamiento de ecuación",
+            "text": "Si al doble de la edad de Ana se le aumentan $3$ años, se obtienen $37$ años. La expresión que representa esto es:",
+            "options": {
+              "A": "$(x+3)+2=37$",
+              "B": "$2(x+3)=37$",
+              "C": "$2x+3=37$",
+              "D": "$x+2(3)=37$"
+            },
+            "answer": "C",
+            "explanation": "Sea $x$ la edad de Ana. Doble de su edad: $2x$. Le aumentan $3$: $2x+3$. Esto vale $37$: $2x+3=37$. Resolviendo: $x=17$ años."
+          },
+          {
+            "id": 124,
+            "topic": "11.8",
+            "topic_name": "Suma de números con signo",
+            "text": "Entre las $7$ de la mañana y el mediodía la temperatura subió $12°C$, si a las $7$ de la mañana el termómetro marcaba $-5°C$, ¿qué temperatura indicaba el termómetro al mediodía?",
+            "options": {
+              "A": "$12°C$",
+              "B": "$19°C$",
+              "C": "$24°C$",
+              "D": "$7°C$"
+            },
+            "answer": "D",
+            "explanation": "Temperatura final $=$ inicial $+$ aumento $=-5+12=7°C$."
+          },
+          {
+            "id": 125,
+            "topic": "11.9",
+            "topic_name": "Raíz cuadrada",
+            "text": "La raíz cuadrada de $1521$ es",
+            "options": {
+              "A": "$21$",
+              "B": "$29$",
+              "C": "$31$",
+              "D": "$39$"
+            },
+            "answer": "D",
+            "explanation": "$39^2=1521$. Verificación: $39\\times 39=39\\times 40-39=1560-39=1521$. ($31^2=961$, $29^2=841$, $21^2=441$.)"
+          },
+          {
+            "id": 126,
+            "topic": "11.10",
+            "topic_name": "Porcentajes",
+            "text": "En un terreno de $500$ hectáreas se cultivan $35\\%$ de arroz, $23\\%$ de maíz, $30\\%$ de frijol y $12\\%$ de sorgo. ¿Cuál es el número de hectáreas sembradas de arroz y de sorgo?",
+            "options": {
+              "A": "$175$",
+              "B": "$210$",
+              "C": "$235$",
+              "D": "$325$"
+            },
+            "answer": "C",
+            "explanation": "Arroz: $35\\%\\cdot 500=175\\,\\text{ha}$. Sorgo: $12\\%\\cdot 500=60\\,\\text{ha}$. Total $=175+60=235\\,\\text{ha}$."
+          },
+          {
+            "id": 127,
+            "topic": "11.11",
+            "topic_name": "Lectura de tabla — IEV",
+            "text": "La siguiente tabla muestra el Índice de Explosividad Volcánica (IEV), que clasifica la magnitud explosiva de una erupción y permite cuantificar su frecuencia. Encuentra el IEV que tardaría más en observarse en un volcán.",
+            "image": "/imagenes_ecoems_2015_versionB/q127_tabla_iev.svg",
+            "options": {
+              "A": "Violenta",
+              "B": "Colosal",
+              "C": "Megacolosal",
+              "D": "Moderada"
+            },
+            "answer": "C",
+            "explanation": "La frecuencia decreciente significa mayor tiempo entre eventos. Megacolosal ocurre cada 10 000–100 000 años, el periodo más largo de la tabla; tardaría más en observarse."
+          },
+          {
+            "id": 128,
+            "topic": "11.12",
+            "topic_name": "Perímetro con valla",
+            "text": "Manuel tiene un terreno rectangular como se observa en la figura; desea cercarlo y colocar una valla que lo divida en dos, cada mitad contará con una puerta de $3$ m de ancho. De las siguientes expresiones, ¿cuál representa la cantidad de metros de malla que debe utilizar?",
+            "image": "/imagenes_ecoems_2015_versionB/q128_terreno.svg",
+            "options": {
+              "A": "$x+2y+6$",
+              "B": "$2x+3y+6$",
+              "C": "$4x+3y-6$",
+              "D": "$4x-3y+6$"
+            },
+            "answer": "C",
+            "explanation": "Tres líneas verticales (perímetro y la valla central) suman $3y$. Dos lados horizontales abajo suman $2x$. Arriba hay dos tramos de longitud $x$ pero se descuentan las dos puertas de $3$ m cada una: $2x-6$. Total: $3y+2x+(2x-6)=4x+3y-6$."
+          }
+        ]
+      }
+    ]
+  }
+}

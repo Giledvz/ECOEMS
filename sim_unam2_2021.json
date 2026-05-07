@@ -298,14 +298,14 @@
             "id": 22,
             "topic": "3.3",
             "topic_name": "Ficha de cita textual",
-            "text": "¿De qué tipo es la siguiente ficha?\n\nEl autor sostiene que la identidad no es algo fijo, sino un proceso dinámico que se construye a lo largo de la vida en interacción con los demás. Distingue entre identidad personal y social.\n\nFromm, Erich. El miedo a la libertad, Paidós, Buenos Aires, 2005, pp. 35-41.",
+            "text": "¿De qué tipo es la siguiente ficha?\n\n\"lo que una persona cree de sí misma puede ser y, de hecho, generalmente es muy distinto o incluso puede estar en total contradicción con lo que realmente es\".\n\nFromm, Erich. Grandezas y limitaciones del pensamiento de Freud. México, Siglo XXI, 1991, p.37.",
             "options": {
-              "A": "De cita textual.",
-              "B": "De resumen.",
+              "A": "Hemerográfica.",
+              "B": "De síntesis.",
               "C": "Bibliográfica.",
-              "D": "Hemerográfica."
+              "D": "De cita textual."
             },
-            "answer": "B"
+            "answer": "D"
           }
         ]
       },
@@ -317,12 +317,12 @@
             "id": 23,
             "topic": "1.2.1",
             "topic_name": "Estructura atómica",
-            "text": "¿Cuál es la configuración electrónica del elemento con número atómico 11 (sodio)?",
+            "text": "La especie $^{78}_{34}Se^{2-}$ contiene ____ protones, ____ neutrones y ____ electrones.",
             "options": {
-              "A": "$1s^2 2s^2 2p^6 3s^2$",
-              "B": "$1s^2 2s^2 2p^6 3s^1$",
-              "C": "$1s^2 2s^2 2p^5 3s^2$",
-              "D": "$1s^2 2s^2 2p^6$"
+              "A": "44, 34, 44",
+              "B": "34, 44, 36",
+              "C": "78, 34, 80",
+              "D": "78, 44, 36"
             },
             "answer": "B"
           },
@@ -330,14 +330,14 @@
             "id": 24,
             "topic": "1.5.2",
             "topic_name": "Mol y masa molar",
-            "text": "¿Cuántas moléculas hay en 2 moles de agua ($H_2O$)?",
+            "text": "¿Cuántos gramos equivalen a 0.5 mol de ácido fosfórico, $H_3PO_4$?",
             "options": {
-              "A": "$6.022 \\times 10^{23}$",
-              "B": "$3.011 \\times 10^{23}$",
-              "C": "$12.044 \\times 10^{23}$",
-              "D": "$18.066 \\times 10^{23}$"
+              "A": "49 g",
+              "B": "24 g",
+              "C": "98 g",
+              "D": "48 g"
             },
-            "answer": "C"
+            "answer": "A"
           },
           {
             "id": 25,
@@ -356,14 +356,14 @@
             "id": 26,
             "topic": "2.4.3",
             "topic_name": "Ácidos y bases",
-            "text": "Sustancias que al estar en disolución aceptan protones o donan iones hidroxilo.",
+            "text": "Sustancias que al estar en disolución donan protones.",
             "options": {
-              "A": "Ácidos.",
-              "B": "Sales.",
+              "A": "Óxidos.",
+              "B": "Ácidos.",
               "C": "Bases.",
-              "D": "Óxidos."
+              "D": "Sales."
             },
-            "answer": "C"
+            "answer": "B"
           },
           {
             "id": 27,
@@ -395,12 +395,12 @@
             "id": 29,
             "topic": "3.6.3",
             "topic_name": "Lluvia ácida",
-            "text": "¿Cuál de los siguientes compuestos es el principal responsable de la destrucción de la capa de ozono?",
+            "text": "¿Cuál de las siguientes reacciones químicas favorece la formación de la lluvia ácida?",
             "options": {
-              "A": "Dióxido de carbono ($CO_2$).",
-              "B": "Clorofluorocarbonos (CFC).",
-              "C": "Metano ($CH_4$).",
-              "D": "Monóxido de carbono ($CO$)."
+              "A": "$NaOH \\rightarrow Na^+ + OH^-$",
+              "B": "$SO_3 + H_2O \\rightarrow H_2CO_4$",
+              "C": "$O_3 + NO \\rightarrow NO_2 + O_2$",
+              "D": "$N_2 + 3H_2 \\rightarrow 2NH_3$"
             },
             "answer": "B"
           },
@@ -422,14 +422,14 @@
             "id": 31,
             "topic": "4.2.1",
             "topic_name": "Lípidos",
-            "text": "Los monosacáridos, disacáridos y polisacáridos son clasificaciones de",
+            "text": "Los triglicéridos son un grupo de lípidos caracterizados por tener el grupo funcional",
             "options": {
-              "A": "lípidos.",
-              "B": "proteínas.",
-              "C": "carbohidratos.",
-              "D": "ácidos nucleicos."
+              "A": "éter.",
+              "B": "éster.",
+              "C": "amida.",
+              "D": "alcohol."
             },
-            "answer": "C"
+            "answer": "B"
           },
           {
             "id": 32,
@@ -584,14 +584,14 @@
             "id": 43,
             "topic": "2.3",
             "topic_name": "Regiones de México",
-            "text": "La región económica de México que concentra la mayor producción petrolera del país es",
+            "text": "Se caracteriza por ser la región más poblada de México y la más atrayente para la migración rural – urbana.",
             "options": {
-              "A": "Centro Sur.",
-              "B": "Golfo de México.",
-              "C": "Noroeste.",
-              "D": "Pacífico Sur."
+              "A": "Pacífico Sur.",
+              "B": "Noroeste.",
+              "C": "Centro Sur.",
+              "D": "Sureste."
             },
-            "answer": "B"
+            "answer": "D"
           },
           {
             "id": 44,
@@ -655,14 +655,14 @@
             "id": 48,
             "topic": "3.1",
             "topic_name": "Ecuaciones e identidades",
-            "text": "Selecciona la expresión que corresponde a una identidad trigonométrica.",
+            "text": "Selecciona la expresión que corresponde a una ecuación",
             "options": {
-              "A": "$\\operatorname{sen}(x) = \\frac{\\sqrt{3}}{2}$",
-              "B": "$\\cos(2x) = 1$",
-              "C": "$1 + \\tan^2(x) = \\sec^2(x)$",
-              "D": "$\\tan(x) = 3$"
+              "A": "$\\operatorname{sen}(x) = \\frac{1}{2}$",
+              "B": "$\\operatorname{sen}(x) = \\frac{1}{2}x$",
+              "C": "$\\operatorname{sen}^2(x) + \\cos^2(x) = 1$",
+              "D": "$\\sec^2(x) - \\tan^2(x) = 1$"
             },
-            "answer": "C"
+            "answer": "A"
           },
           {
             "id": 49,
@@ -915,14 +915,14 @@
             "id": 68,
             "topic": "17.4",
             "topic_name": "Integral trigonométrica",
-            "text": "La $\\int \\operatorname{sen} 5x \\ dx$ es igual a",
+            "text": "La $\\int \\cos 8x \\ dx$ es igual a",
             "options": {
-              "A": "$\\cos 5x + c$",
-              "B": "$5\\cos 5x + c$",
-              "C": "$-\\frac{\\cos 5x}{5} + c$",
-              "D": "$-5\\cos x + c$"
+              "A": "$-\\operatorname{sen}8x + c$",
+              "B": "$-8\\operatorname{sen}x + c$",
+              "C": "$\\frac{\\operatorname{sen}x}{8} + c$",
+              "D": "$\\frac{\\operatorname{sen}8x}{8} + c$"
             },
-            "answer": "C"
+            "answer": "D"
           },
           {
             "id": 69,
@@ -1116,12 +1116,12 @@
             "id": 83,
             "topic": "5.0",
             "topic_name": "Redacción correcta",
-            "text": "Selecciona la oración que tiene la puntuación correcta.",
+            "text": "¿Cuál de los siguientes párrafos está escrito correctamente?",
             "options": {
-              "A": "Los planetas interiores, Mercurio, Venus, Tierra y Marte, son rocosos; en cambio, los exteriores son gaseosos.",
-              "B": "Los planetas interiores Mercurio Venus Tierra y Marte son rocosos, en cambio los exteriores, son gaseosos.",
-              "C": "Los planetas interiores: Mercurio, Venus Tierra y Marte son rocosos, en cambio los exteriores son, gaseosos.",
-              "D": "Los planetas interiores, Mercurio Venus, Tierra y Marte, son rocosos en cambio, los exteriores son gaseosos."
+              "A": "La jarcha es una composición lírica popular de la España musulmana, que constituye la parte final de otra composición culta en lengua árabe o hebrea, llamada moaxaja.",
+              "B": "La jarcha, es una composición lírica popular de la España musulmana que constituye la parte final, de otra composición culta en lengua árabe o hebrea llamada moaxaja.",
+              "C": "La jarcha es una composición lírica, popular de la España musulmana que constituye la parte final de otra composición, culta en lengua árabe o hebrea llamada moaxaja.",
+              "D": "La jarcha es una composición lírica popular, de la España musulmana que constituye, la parte final de otra composición culta en lengua árabe o hebrea llamada moaxaja."
             },
             "answer": "A"
           },
@@ -1239,14 +1239,14 @@
             "id": 92,
             "topic": "3.2.2",
             "topic_name": "Células haploides",
-            "text": "La meiosis es un tipo de división celular que produce",
+            "text": "El contenido haploide de cromosomas en organismos eucariontes",
             "options": {
-              "A": "dos células diploides genéticamente iguales.",
-              "B": "cuatro células haploides genéticamente diferentes.",
-              "C": "dos células haploides genéticamente iguales.",
-              "D": "cuatro células diploides genéticamente diferentes."
+              "A": "cambia en la meiosis.",
+              "B": "es definido por el espermatozoide.",
+              "C": "caracteriza a los gametos.",
+              "D": "se reduce en la meiosis."
             },
-            "answer": "B"
+            "answer": "C"
           },
           {
             "id": 93,
@@ -1278,14 +1278,14 @@
             "id": 95,
             "topic": "4.2.2",
             "topic_name": "Cuerpo de Barr",
-            "text": "En la especie humana, el sexo del individuo está determinado por",
+            "text": "Si al revisar cromosomas en el microscopio encontramos un cuerpo de Barr, se trata de un cromosoma",
             "options": {
-              "A": "el cromosoma aportado por la madre.",
-              "B": "el cromosoma sexual aportado por el padre.",
-              "C": "la cantidad de autosomas.",
-              "D": "el número total de cromosomas."
+              "A": "de un individuo masculino.",
+              "B": "metacéntrico.",
+              "C": "acrocéntrico.",
+              "D": "de un individuo femenino."
             },
-            "answer": "B"
+            "answer": "D"
           },
           {
             "id": 96,
@@ -1317,14 +1317,14 @@
             "id": 98,
             "topic": "5.4",
             "topic_name": "Esterilidad híbrida",
-            "text": "Cuando dos poblaciones no pueden reproducirse entre sí porque ocupan hábitats diferentes en la misma zona, se trata de un aislamiento",
+            "text": "La barrera reproductiva que se presenta cuando se cruza un burro con una yegua, se llama",
             "options": {
-              "A": "temporal.",
-              "B": "mecánico.",
-              "C": "ecológico.",
-              "D": "gamético."
+              "A": "aislamiento ecológico.",
+              "B": "aislamiento gamético.",
+              "C": "inviabilidad híbrida.",
+              "D": "esterilidad híbrida."
             },
-            "answer": "C"
+            "answer": "D"
           },
           {
             "id": 99,
@@ -1440,12 +1440,12 @@
             "id": 107,
             "topic": "7.1",
             "topic_name": "Cronología de la Segunda Guerra Mundial",
-            "text": "Ordena cronológicamente los siguientes acontecimientos del siglo XX.\n\nI. Fin de la Primera Guerra Mundial.\nII. Caída del Muro de Berlín.\nIII. Inicio de la Revolución Rusa.\nIV. Creación de la Organización de las Naciones Unidas.\nV. Lanzamiento del Sputnik.",
+            "text": "Ordena cronológicamente los siguientes acontecimientos relacionados con la Segunda Guerra Mundial.\n\nI. Hitler invade Polonia.\nII. Desembarco angloamericano en Normandía.\nIII. Bombas atómicas sobre Hiroshima y Nagasaki.\nIV. Los alemanes toman París.\nV. Ataque Japonés a Pearl Harbor.",
             "options": {
-              "A": "III, I, IV, V y II",
-              "B": "I, III, IV, V y II",
-              "C": "III, IV, I, V y II",
-              "D": "I, III, V, IV y II"
+              "A": "I, IV, V, II y III",
+              "B": "II, V, I, III y IV",
+              "C": "III, I, IV, V y II",
+              "D": "IV, III, I, II y V"
             },
             "answer": "A"
           },
@@ -1466,14 +1466,14 @@
             "id": 109,
             "topic": "8.3",
             "topic_name": "Independencia africana",
-            "text": "¿Qué país africano estuvo sometido al régimen del apartheid hasta 1994?",
+            "text": "¿Qué país africano logró su independencia en 1951, después de haber estado bajo el yugo italiano, francés y británico?",
             "options": {
               "A": "Libia.",
               "B": "Etiopía.",
               "C": "Sudáfrica.",
-              "D": "Nigeria."
+              "D": "Marruecos."
             },
-            "answer": "C"
+            "answer": "A"
           },
           {
             "id": 110,
@@ -1602,11 +1602,11 @@
             "id": 119,
             "topic": "8.2",
             "topic_name": "Milagro mexicano",
-            "text": "La política económica implementada por el presidente Luis Echeverría (1970-1976), caracterizada por un mayor gasto público y participación estatal, se conoció como",
+            "text": "El crecimiento económico sostenido y la construcción de infraestructura fueron características que entre 1952 y 1970 se conocieron como",
             "options": {
-              "A": "Milagro mexicano.",
-              "B": "Desarrollo estabilizador.",
-              "C": "Desarrollo compartido.",
+              "A": "Plan Sexenal.",
+              "B": "Desarrollo compartido.",
+              "C": "Milagro mexicano.",
               "D": "Unidad nacional."
             },
             "answer": "C"
