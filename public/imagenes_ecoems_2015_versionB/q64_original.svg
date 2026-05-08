@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 170" width="660" height="170" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
   <rect width="660" height="170" fill="#ffffff"/>
 
-  <!-- Cuadro 1: reloj de arena vertical, vacío -->
+  <!-- Cuadro 1: vertical, TOP negro -->
   <g transform="translate(20, 30)">
     <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-    <polygon points="10,10 100,10 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,10 100,10 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
     <polygon points="10,100 100,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
   </g>
 
-  <!-- Cuadro 2: corbatín, izquierda rellena -->
+  <!-- Cuadro 2: horizontal, DERECHA negro -->
   <g transform="translate(150, 30)">
     <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-    <polygon points="10,10 10,100 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
-    <polygon points="100,10 100,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,10 10,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="100,10 100,100 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
   </g>
 
-  <!-- Cuadro 3: reloj de arena, superior rellena -->
+  <!-- Cuadro 3: vertical, TOP negro (igual al 1) -->
   <g transform="translate(280, 30)">
     <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
     <polygon points="10,10 100,10 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
     <polygon points="10,100 100,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
   </g>
 
-  <!-- Cuadro 4: corbatín, derecha rellena -->
+  <!-- Cuadro 4: horizontal, IZQUIERDA negro -->
   <g transform="translate(410, 30)">
     <rect width="110" height="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-    <polygon points="10,10 10,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-    <polygon points="100,10 100,100 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="10,10 10,100 55,55" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+    <polygon points="100,10 100,100 55,55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
   </g>
 
   <!-- Cuadro 5: ? -->
