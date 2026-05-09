@@ -13,11 +13,13 @@
   <!-- Abajo (par) -->
   <circle cx="220" cy="148" r="4" fill="#1a1a1a"/>
   <circle cx="240" cy="148" r="4" fill="#1a1a1a"/>
-  <!-- Izquierda (par compartido con Na) -->
-  <circle cx="180" cy="105" r="4" fill="#1a1a1a"/>
+  <!-- Izquierda (par compartido con Na): cross arriba (Na) + dot abajo (S) -->
+  <line x1="175" y1="100" x2="185" y2="110" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <line x1="175" y1="110" x2="185" y2="100" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
   <circle cx="180" cy="125" r="4" fill="#1a1a1a"/>
-  <!-- Derecha (par compartido con Na) -->
-  <circle cx="280" cy="105" r="4" fill="#1a1a1a"/>
+  <!-- Derecha (par compartido con Na): cross arriba (Na) + dot abajo (S) -->
+  <line x1="275" y1="100" x2="285" y2="110" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <line x1="275" y1="110" x2="285" y2="100" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
   <circle cx="280" cy="125" r="4" fill="#1a1a1a"/>
 
   <!-- Etiqueta -->

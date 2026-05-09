@@ -341,6 +341,7 @@ function renderMath(text) {
       return part
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
         .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
+        .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
         .replace(/\n/g, '<br>');
     }).join('').replace(/\x00DOLLAR\x00/g, '$');
   } catch(e) {

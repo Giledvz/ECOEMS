@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="540" height="540" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 0 580 540" width="580" height="540" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect x="-30" y="0" width="580" height="540" fill="#ffffff"/>
 
   <!-- Patrón en forma de cruz para una caja 10x10x20 -->
   <!-- Cuadrado central 1 (cara superior, 10x10): x=170, y=80 -->
@@ -38,9 +38,9 @@
   <line x1="285" y1="177" x2="295" y2="177" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="300" y="135" font-size="18" fill="#1d4ed8">10 cm</text>
 
-  <!-- 20 cm horizontal abajo (cara inferior, pero como referencia para el ancho de la cara frontal) -->
-  <line x1="170" y1="500" x2="370" y2="500" stroke="#16a34a" stroke-width="1.5"/>
-  <line x1="170" y1="495" x2="170" y2="505" stroke="#16a34a" stroke-width="1.5"/>
-  <line x1="370" y1="495" x2="370" y2="505" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="270" y="525" text-anchor="middle" font-size="18" fill="#16a34a">20 cm</text>
+  <!-- 20 cm vertical (altura de la cara lateral = altura de la caja) -->
+  <line x1="50" y1="183" x2="50" y2="377" stroke="#16a34a" stroke-width="1.5"/>
+  <line x1="45" y1="183" x2="55" y2="183" stroke="#16a34a" stroke-width="1.5"/>
+  <line x1="45" y1="377" x2="55" y2="377" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="40" y="285" text-anchor="end" font-size="18" fill="#16a34a">20 cm</text>
 </svg>
