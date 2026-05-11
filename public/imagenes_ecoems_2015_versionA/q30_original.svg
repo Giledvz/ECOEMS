@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 110" width="580" height="110" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="580" height="110" fill="#ffffff"/>
+
+  <defs>
+    <symbol id="sqS" overflow="visible"><rect x="-6" y="-6" width="12" height="12" fill="none" stroke="#1a1a1a" stroke-width="1"/></symbol>
+    <symbol id="circS" overflow="visible"><circle cx="0" cy="0" r="6" fill="none" stroke="#1a1a1a" stroke-width="1"/></symbol>
+    <symbol id="circF" overflow="visible"><circle cx="0" cy="0" r="6" fill="#1a1a1a"/></symbol>
+    <symbol id="triS" overflow="visible"><polygon points="0,-7 7,5 -7,5" fill="#1a1a1a"/></symbol>
+    <symbol id="hexS" overflow="visible"><polygon points="6,0 3,5.2 -3,5.2 -6,0 -3,-5.2 3,-5.2" fill="none" stroke="#1a1a1a" stroke-width="1"/></symbol>
+    <symbol id="pentS" overflow="visible"><polygon points="0,-7 6.7,-2.2 4.1,5.7 -4.1,5.7 -6.7,-2.2" fill="#1a1a1a"/></symbol>
+  </defs>
+
+  <g transform="translate(15, 15)">
+    <!-- Cuadro 1 (división +) -->
+    <g transform="translate(0, 0)">
+      <rect width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+      <line x1="40" y1="0" x2="40" y2="80" stroke="#1a1a1a" stroke-width="0.6"/>
+      <line x1="0" y1="40" x2="80" y2="40" stroke="#1a1a1a" stroke-width="0.6"/>
+      <use href="#sqS" x="20" y="15"/>
+      <use href="#triS" x="60" y="15"/>
+      <use href="#circF" x="20" y="60"/>
+      <use href="#hexS" x="60" y="60"/>
+    </g>
+    <!-- Cuadro 2 -->
+    <g transform="translate(110, 0)">
+      <rect width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+      <line x1="40" y1="0" x2="40" y2="80" stroke="#1a1a1a" stroke-width="0.6"/>
+      <line x1="0" y1="40" x2="80" y2="40" stroke="#1a1a1a" stroke-width="0.6"/>
+      <use href="#triS" x="60" y="15"/>
+      <use href="#circS" x="20" y="15"/>
+      <use href="#hexS" x="60" y="60"/>
+      <use href="#circF" x="20" y="60"/>
+    </g>
+    <!-- Cuadro 3 (división X) -->
+    <g transform="translate(220, 0)">
+      <rect width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="80" y2="80" stroke="#1a1a1a" stroke-width="0.6"/>
+      <line x1="80" y1="0" x2="0" y2="80" stroke="#1a1a1a" stroke-width="0.6"/>
+      <use href="#triS" x="40" y="15"/>
+      <use href="#circS" x="20" y="40"/>
+      <use href="#circF" x="60" y="40"/>
+      <use href="#pentS" x="40" y="65"/>
+    </g>
+    <!-- Cuadro 4 -->
+    <g transform="translate(330, 0)">
+      <rect width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+      <line x1="40" y1="0" x2="40" y2="80" stroke="#1a1a1a" stroke-width="0.6"/>
+      <line x1="0" y1="40" x2="80" y2="40" stroke="#1a1a1a" stroke-width="0.6"/>
+      <use href="#circF" x="20" y="20"/>
+      <use href="#circS" x="60" y="20"/>
+      <use href="#sqS" x="20" y="60"/>
+      <use href="#circF" x="60" y="60"/>
+    </g>
+    <!-- Cuadro 5 (división X) -->
+    <g transform="translate(440, 0)">
+      <rect width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="80" y2="80" stroke="#1a1a1a" stroke-width="0.6"/>
+      <line x1="80" y1="0" x2="0" y2="80" stroke="#1a1a1a" stroke-width="0.6"/>
+      <use href="#circS" x="40" y="15"/>
+      <use href="#pentS" x="60" y="40"/>
+      <use href="#circF" x="20" y="40"/>
+      <use href="#sqS" x="40" y="65"/>
+    </g>
+  </g>
+</svg>

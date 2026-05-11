@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="80" height="80" fill="#ffffff"/>
+  <defs>
+    <symbol id="d30sq" overflow="visible"><rect x="-6" y="-6" width="12" height="12" fill="none" stroke="#1a1a1a" stroke-width="1"/></symbol>
+    <symbol id="d30cs" overflow="visible"><circle cx="0" cy="0" r="6" fill="none" stroke="#1a1a1a" stroke-width="1"/></symbol>
+    <symbol id="d30cf" overflow="visible"><circle cx="0" cy="0" r="6" fill="#1a1a1a"/></symbol>
+    <symbol id="d30tr" overflow="visible"><polygon points="0,-7 7,5 -7,5" fill="#1a1a1a"/></symbol>
+  </defs>
+  <rect width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="40" y1="0" x2="40" y2="80" stroke="#1a1a1a" stroke-width="0.6"/>
+  <line x1="0" y1="40" x2="80" y2="40" stroke="#1a1a1a" stroke-width="0.6"/>
+  <use href="#d30sq" x="20" y="20"/>
+  <use href="#d30tr" x="60" y="20"/>
+  <use href="#d30cf" x="20" y="60"/>
+  <use href="#d30cs" x="60" y="60"/>
+</svg>

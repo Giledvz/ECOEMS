@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" width="140" height="140" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="140" height="140" fill="#ffffff"/>
+  <defs>
+    <symbol id="cubeD26" overflow="visible">
+      <polygon points="0,-15 17,-25 34,-15 17,-5" fill="#e2e8f0" stroke="#1a1a1a" stroke-width="1.2"/>
+      <polygon points="0,-15 17,-5 17,15 0,5" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.2"/>
+      <polygon points="17,-5 34,-15 34,5 17,15" fill="#94a3b8" stroke="#1a1a1a" stroke-width="1.2"/>
+    </symbol>
+  </defs>
+  <!-- Sólido (3) — correcto: 2 abajo + 1 atrás + 1 columna a la izquierda subiendo -->
+  <g transform="translate(20, 20)">
+    <use href="#cubeD26" x="0" y="80"/>
+    <use href="#cubeD26" x="34" y="80"/>
+    <use href="#cubeD26" x="17" y="60"/>
+    <use href="#cubeD26" x="0" y="50"/>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 320" width="460" height="320" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="460" height="320" fill="#ffffff"/>
+
+  <!-- Origen (60, 270). Cada celda 30 px. Eje x: 0..10 s. Eje y: 0..6 m/s -->
+  <!-- Cuadrícula -->
+  <g stroke="#cbd5e1" stroke-width="0.5">
+    <line x1="60" y1="60" x2="360" y2="60"/>
+    <line x1="60" y1="90" x2="360" y2="90"/>
+    <line x1="60" y1="120" x2="360" y2="120"/>
+    <line x1="60" y1="150" x2="360" y2="150"/>
+    <line x1="60" y1="180" x2="360" y2="180"/>
+    <line x1="60" y1="210" x2="360" y2="210"/>
+    <line x1="60" y1="240" x2="360" y2="240"/>
+    <line x1="90" y1="60" x2="90" y2="270"/>
+    <line x1="120" y1="60" x2="120" y2="270"/>
+    <line x1="150" y1="60" x2="150" y2="270"/>
+    <line x1="180" y1="60" x2="180" y2="270"/>
+    <line x1="210" y1="60" x2="210" y2="270"/>
+    <line x1="240" y1="60" x2="240" y2="270"/>
+    <line x1="270" y1="60" x2="270" y2="270"/>
+    <line x1="300" y1="60" x2="300" y2="270"/>
+    <line x1="330" y1="60" x2="330" y2="270"/>
+  </g>
+
+  <!-- Ejes -->
+  <line x1="60" y1="270" x2="370" y2="270" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="60" y1="270" x2="60" y2="50" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- Etiquetas eje x: 0,2,4,6,8,10 -->
+  <text x="60" y="290" text-anchor="middle" font-size="14">0</text>
+  <text x="120" y="290" text-anchor="middle" font-size="14">2</text>
+  <text x="180" y="290" text-anchor="middle" font-size="14">4</text>
+  <text x="240" y="290" text-anchor="middle" font-size="14">6</text>
+  <text x="300" y="290" text-anchor="middle" font-size="14">8</text>
+  <text x="360" y="290" text-anchor="middle" font-size="14">10</text>
+  <text x="395" y="275" font-size="14" font-style="italic">t (s)</text>
+
+  <!-- Etiquetas eje y: 2,4,6 -->
+  <text x="50" y="215" text-anchor="end" font-size="14">2</text>
+  <text x="50" y="155" text-anchor="end" font-size="14">4</text>
+  <text x="50" y="95" text-anchor="end" font-size="14">6</text>
+  <text x="48" y="40" text-anchor="middle" font-size="14" font-style="italic">v (m/s)</text>
+
+  <!-- Curva: (0,0) → (4,4) [A: subiendo] → (8,4) [B: constante] → (10,0) [C: bajando] -->
+  <polyline points="60,270 180,150 300,150 360,270" fill="none" stroke="#1a1a1a" stroke-width="2.2"/>
+
+  <!-- Marcadores A, B, C -->
+  <circle cx="120" cy="210" r="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="120" y="216" text-anchor="middle" font-size="16" font-weight="700">A</text>
+
+  <circle cx="240" cy="135" r="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="240" y="141" text-anchor="middle" font-size="16" font-weight="700">B</text>
+
+  <circle cx="335" cy="200" r="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="335" y="206" text-anchor="middle" font-size="16" font-weight="700">C</text>
+</svg>

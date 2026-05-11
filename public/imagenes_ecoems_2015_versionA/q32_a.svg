@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 200" width="180" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="180" height="200" fill="#ffffff"/>
+  <defs>
+    <symbol id="penA" overflow="visible"><polygon points="0,-12 11.4,-3.7 7.0,9.7 -7.0,9.7 -11.4,-3.7" fill="#1a1a1a"/></symbol>
+    <symbol id="triA" overflow="visible"><polygon points="0,-10 11,8 -11,8" fill="#1a1a1a"/></symbol>
+  </defs>
+  <!-- Cruz vertical: 4 caras verticales + 1 izquierda -->
+  <g stroke="#1a1a1a" stroke-width="1.2" fill="none">
+    <rect x="60" y="20" width="40" height="40"/>
+    <rect x="60" y="60" width="40" height="40"/>
+    <rect x="20" y="60" width="40" height="40"/>
+    <rect x="100" y="60" width="40" height="40"/>
+    <rect x="60" y="100" width="40" height="40"/>
+    <rect x="60" y="140" width="40" height="40"/>
+  </g>
+  <use href="#penA" x="80" y="40"/>
+  <use href="#triA" x="40" y="82"/>
+  <line x1="65" y1="120" x2="95" y2="120" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="65" y1="125" x2="95" y2="125" stroke="#1a1a1a" stroke-width="1.5"/>
+</svg>
