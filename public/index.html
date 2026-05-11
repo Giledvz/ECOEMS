@@ -739,26 +739,25 @@ function _downloadPDFImpl() {
   }
   const fecha = new Date().toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
 
-  // Build topic breakdown (same logic as on-screen chart)
-  const topics = {};
+  // Build subject breakdown
+  const subjects = {};
   state.questions.forEach(q => {
-    const key = q.topic_name || q.subject;
-    if (!topics[key]) topics[key] = { subject: q.subject, total: 0, correct: 0 };
-    topics[key].total++;
-    if (state.answers[q.id] === state.answerKey[q.id]) topics[key].correct++;
+    const key = q.subject;
+    if (!subjects[key]) subjects[key] = { total: 0, correct: 0 };
+    subjects[key].total++;
+    if (state.answers[q.id] === state.answerKey[q.id]) subjects[key].correct++;
   });
-  const sortedTopics = Object.entries(topics).sort((a, b) => {
+  const sortedSubjects = Object.entries(subjects).sort((a, b) => {
     return (b[1].correct / b[1].total) - (a[1].correct / a[1].total);
   });
-  const topicRowsHTML = sortedTopics.map(([name, data]) => {
+  const subjectRowsHTML = sortedSubjects.map(([name, data]) => {
     const pct = Math.round((data.correct / data.total) * 100);
     const barColor = pct >= 70 ? '#16a34a' : pct >= 50 ? '#eab308' : '#e53e3e';
     const pctColor = pct >= 70 ? '#16a34a' : pct >= 50 ? '#a16207' : '#e53e3e';
     return `
       <div style="margin-bottom:10px;">
         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:3px;">
-          <span style="font-size:11px; color:#555; flex:1; padding-right:8px;">${name}</span>
-          <span style="font-size:10px; color:#999; white-space:nowrap;">${data.subject}</span>
+          <span style="font-size:12px; color:#555; flex:1; padding-right:8px;">${name}</span>
           <span style="font-size:12px; font-weight:700; margin-left:8px; color:${pctColor};">${pct}%</span>
         </div>
         <div style="height:7px; background:#ebebeb; border-radius:4px; overflow:hidden;">
@@ -767,10 +766,10 @@ function _downloadPDFImpl() {
         <div style="font-size:10px; color:#999; margin-top:2px;">${data.correct} de ${data.total} preguntas correctas</div>
       </div>`;
   }).join('');
-  const topicBreakdownHTML = sortedTopics.length > 0 ? `
+  const topicBreakdownHTML = sortedSubjects.length > 0 ? `
     <div style="margin:20px auto; max-width:480px; page-break-inside:avoid;">
-      <h3 style="font-size:14px; font-weight:600; margin-bottom:12px; text-align:center; color:#444;">Desempeño por tema</h3>
-      ${topicRowsHTML}
+      <h3 style="font-size:14px; font-weight:600; margin-bottom:12px; text-align:center; color:#444;">Desempeño por materia</h3>
+      ${subjectRowsHTML}
     </div>` : '';
 
   // Group questions by subject in display order

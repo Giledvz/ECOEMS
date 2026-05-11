@@ -5,7 +5,10 @@ const path = require('path');
 const fs = require('fs');
 const os = require('os');
 const QRCode = require('qrcode');
+const katex = require('katex');
+const puppeteer = require('puppeteer');
 
+const PORT = 3000;
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
@@ -248,6 +251,248 @@ app.get('/teacher', (_req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'teacher.html'));
 });
 
+// ─── Comprobante PDF (server-side render con Puppeteer) ────────────────────
+
+// Replica de renderMath() en /public/index.html (mismas reglas para KaTeX,
+// markdown ligero y escape HTML).
+function renderMath(text) {
+  if (!text) return '';
+  try {
+    text = String(text).replace(/\\\$/g, '\x00DOLLAR\x00');
+    const parts = text.split(/(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$)/g);
+    return parts.map(part => {
+      const isDisplay = part.indexOf('$$') === 0 && part.lastIndexOf('$$') === part.length - 2 && part.length >= 4;
+      const isInline = !isDisplay && part.length >= 2 && part.charAt(0) === '$' && part.charAt(part.length - 1) === '$' && part.indexOf('\n') === -1;
+      if (isDisplay || isInline) {
+        const inner = isDisplay ? part.slice(2, -2) : part.slice(1, -1);
+        try {
+          return katex.renderToString(inner, { throwOnError: false, displayMode: isDisplay });
+        } catch (e) {
+          return inner.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+      }
+      if (/<img\s/.test(part)) return part;
+      return part
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
+        .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
+        .replace(/\n/g, '<br>');
+    }).join('').replace(/\x00DOLLAR\x00/g, '$');
+  } catch (e) {
+    return String(text).replace(/\$\$/g, '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\x00DOLLAR\x00/g, '$');
+  }
+}
+
+// Construye el HTML del comprobante igual que _downloadPDFImpl() del cliente.
+function buildComprobanteHTML(room, student) {
+  const origin = `http://localhost:${PORT}`;
+
+  const questionsForStudent = student.questionOrder.map(qid => {
+    const q = room.questions.find(x => x.id === qid);
+    const origLetters = Object.keys(q.options);
+    const srcLetters = student.optionOrders[qid];
+    const newOptions = {};
+    origLetters.forEach((newLetter, i) => {
+      newOptions[newLetter] = q.options[srcLetters[i]];
+    });
+    return {
+      id: q.id,
+      text: q.text,
+      options: newOptions,
+      image: q.image,
+      subject: q.subject,
+      topic_name: q.topic_name,
+    };
+  });
+
+  const answerKey = student.answerKey || {};
+  const answers = student.answers || {};
+  const total = questionsForStudent.length;
+  let correct = 0;
+  questionsForStudent.forEach(q => { if (answers[q.id] === answerKey[q.id]) correct++; });
+
+  let timeStr = '—';
+  if (student.submitTime && student.startTime) {
+    const used = Math.floor((student.submitTime - student.startTime) / 1000);
+    const h = Math.floor(used / 3600);
+    const m = Math.floor((used % 3600) / 60);
+    const s = used % 60;
+    timeStr = h > 0 ? `${h}h ${m}m` : `${m}m ${s}s`;
+  }
+
+  const fecha = new Date().toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
+
+  const subjects = {};
+  questionsForStudent.forEach(q => {
+    const key = q.subject;
+    if (!subjects[key]) subjects[key] = { total: 0, correct: 0 };
+    subjects[key].total++;
+    if (answers[q.id] === answerKey[q.id]) subjects[key].correct++;
+  });
+  const sortedSubjects = Object.entries(subjects).sort((a, b) => (b[1].correct / b[1].total) - (a[1].correct / a[1].total));
+  const subjectRowsHTML = sortedSubjects.map(([name, data]) => {
+    const pct = Math.round((data.correct / data.total) * 100);
+    const barColor = pct >= 70 ? '#16a34a' : pct >= 50 ? '#eab308' : '#e53e3e';
+    const pctColor = pct >= 70 ? '#16a34a' : pct >= 50 ? '#a16207' : '#e53e3e';
+    return `
+      <div style="margin-bottom:10px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:3px;">
+          <span style="font-size:12px; color:#555; flex:1; padding-right:8px;">${name}</span>
+          <span style="font-size:12px; font-weight:700; margin-left:8px; color:${pctColor};">${pct}%</span>
+        </div>
+        <div style="height:7px; background:#ebebeb; border-radius:4px; overflow:hidden;">
+          <div style="height:100%; width:${pct}%; background:${barColor}; border-radius:4px;"></div>
+        </div>
+        <div style="font-size:10px; color:#999; margin-top:2px;">${data.correct} de ${data.total} preguntas correctas</div>
+      </div>`;
+  }).join('');
+  const topicBreakdownHTML = sortedSubjects.length > 0 ? `
+    <div style="margin:20px auto; max-width:480px; page-break-inside:avoid;">
+      <h3 style="font-size:14px; font-weight:600; margin-bottom:12px; text-align:center; color:#444;">Desempeño por materia</h3>
+      ${subjectRowsHTML}
+    </div>` : '';
+
+  const questionsHTML = questionsForStudent.map((q, idx) => {
+    const mine = answers[q.id];
+    const correctAns = answerKey[q.id];
+    const letters = Object.keys(q.options);
+    const optionsHTML = letters.map(letter => {
+      const isCorrect = letter === correctAns;
+      const isMine = letter === mine;
+      let style = 'padding:6px 10px; margin:2px 0; border-radius:6px; font-size:12px;';
+      let marker = '';
+      if (isCorrect && isMine) { style += ' background:#dcfce7; border:1px solid #16a34a;'; marker = ' ✓ (tu respuesta)'; }
+      else if (isCorrect) { style += ' background:#dcfce7; border:1px solid #16a34a;'; marker = ' ✓'; }
+      else if (isMine) { style += ' background:#fef2f2; border:1px solid #e53e3e;'; marker = ' ✗ (tu respuesta)'; }
+      else { style += ' background:#f8f8f8; border:1px solid #e5e5e5;'; }
+      return `<div style="${style}"><b>${letter}.</b> ${renderMath(q.options[letter])}${marker}</div>`;
+    }).join('');
+
+    let qText = q.text || '';
+    const maxLen = 1500;
+    if (qText.length > maxLen) {
+      const lastParagraph = qText.lastIndexOf('\n\n');
+      if (lastParagraph > maxLen * 0.3) {
+        const readingPart = qText.substring(0, lastParagraph);
+        const questionPart = qText.substring(lastParagraph);
+        qText = readingPart.substring(0, 300) + '\n\n[...]\n\n' + questionPart;
+      }
+    }
+    const imgHTML = q.image ? `<img src="${q.image}" style="max-width:280px; max-height:200px; margin:6px 0; display:block;">` : '';
+
+    return `
+      <div style="page-break-inside:avoid; margin-bottom:14px; padding:10px; border:1px solid #e5e5e5; border-radius:8px;">
+        <div style="font-size:11px; color:#666; margin-bottom:4px;">${q.subject} — Pregunta ${idx + 1}</div>
+        <div style="font-size:13px; margin-bottom:6px;">${renderMath(qText)}</div>
+        ${imgHTML}
+        ${optionsHTML}
+      </div>`;
+  }).join('');
+
+  return `<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="${origin}/">
+<title>Comprobante — ${student.name}</title>
+<link rel="stylesheet" href="${origin}/katex/katex.min.css">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding:20px; color:#1a1a1a; font-size:13px; }
+  @page { margin:15mm 10mm; }
+  .header { text-align:center; margin-bottom:20px; padding-bottom:14px; border-bottom:2px solid #2c5282; }
+  .header h1 { font-size:20px; color:#2c5282; margin-bottom:4px; }
+  .stats { display:flex; justify-content:center; gap:24px; margin-top:10px; font-size:14px; }
+  .stat-box { text-align:center; }
+  .stat-val { font-size:28px; font-weight:700; }
+  .stat-label { font-size:11px; color:#666; }
+</style></head><body>
+<div class="header">
+  <h1>${room.title || 'Examen'}</h1>
+  <div style="font-size:15px; font-weight:600; margin-top:2px;">${student.name}</div>
+  <div style="font-size:12px; color:#666;">${room.group} — ${fecha}</div>
+  <div style="display:flex; justify-content:center; margin:16px 0 10px;">
+    <div style="width:160px; height:160px; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:700; background:${correct >= 95 ? '#dcfce7' : correct >= 51 ? '#fef9c3' : '#fef2f2'}; color:${correct >= 95 ? '#16a34a' : correct >= 51 ? '#a16207' : '#e53e3e'};">
+      <span style="font-size:46px; line-height:1;">${correct}</span>
+      <span style="font-size:13px; font-weight:500; opacity:0.8; margin-top:4px;">de ${total} aciertos</span>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat-box"><div class="stat-val">${total > 0 ? Math.round(correct / total * 100) : 0}%</div><div class="stat-label">calificación</div></div>
+    <div class="stat-box"><div class="stat-val" style="font-size:20px; margin-top:6px;">${timeStr}</div><div class="stat-label">tiempo</div></div>
+  </div>
+</div>
+${topicBreakdownHTML}
+${questionsHTML}
+</body></html>`;
+}
+
+// Manager: navegador único, cola secuencial, dedup por (sala, alumno).
+let pdfBrowser = null;
+const pdfQueue = [];
+let pdfQueueRunning = false;
+const pdfEnqueued = new Set();
+
+async function getPdfBrowser() {
+  if (pdfBrowser && pdfBrowser.connected !== false) return pdfBrowser;
+  pdfBrowser = await puppeteer.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  });
+  return pdfBrowser;
+}
+
+async function runPdfQueue() {
+  if (pdfQueueRunning) return;
+  pdfQueueRunning = true;
+  while (pdfQueue.length > 0) {
+    const task = pdfQueue.shift();
+    try { await task(); } catch (e) { console.error('PDF queue task error:', e); }
+  }
+  pdfQueueRunning = false;
+}
+
+function safeFilename(name) {
+  return String(name).replace(/[^\wÀ-ſ]+/g, '_').substring(0, 60) || 'alumno';
+}
+
+function enqueueComprobantePDF(room, student) {
+  if (!student || !student.submitted || !student.name) return;
+  const key = `${room.roomCode}:${student.name.toLowerCase()}`;
+  if (pdfEnqueued.has(key)) return;
+  pdfEnqueued.add(key);
+
+  pdfQueue.push(async () => {
+    let page = null;
+    try {
+      const browser = await getPdfBrowser();
+      page = await browser.newPage();
+      const html = buildComprobanteHTML(room, student);
+      await page.setContent(html, { waitUntil: 'networkidle0', timeout: 30000 });
+      const dateStr = (room.date || new Date().toISOString().split('T')[0]).replace(/-/g, '');
+      const folder = path.join(__dirname, 'comprobantes', `${room.roomCode}_${dateStr}`);
+      fs.mkdirSync(folder, { recursive: true });
+      const filePath = path.join(folder, `${safeFilename(student.name)}.pdf`);
+      await page.pdf({
+        path: filePath,
+        format: 'A4',
+        margin: { top: '15mm', bottom: '15mm', left: '10mm', right: '10mm' },
+        printBackground: true,
+      });
+      console.log(`[${room.roomCode}] PDF guardado: ${path.relative(__dirname, filePath)}`);
+    } catch (err) {
+      console.error(`[${room.roomCode}] PDF falló para ${student.name}:`, err.message);
+      pdfEnqueued.delete(key); // permite reintento
+    } finally {
+      if (page) { try { await page.close(); } catch (e) {} }
+    }
+  });
+  runPdfQueue();
+}
+
+process.on('SIGINT', async () => {
+  if (pdfBrowser) { try { await pdfBrowser.close(); } catch (e) {} }
+  process.exit(0);
+});
+
 // ─── Socket.io ──────────────────────────────────────────────────────────────
 io.on('connection', (socket) => {
 
@@ -458,6 +703,7 @@ io.on('connection', (socket) => {
     if (!wasSubmitted) {
       io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
       console.log(`[${roomCode}] ${student.name} entregó: ${correct}/${room.questions.length}`);
+      enqueueComprobantePDF(room, student);
     }
   });
 
@@ -504,6 +750,9 @@ io.on('connection', (socket) => {
     io.to('teachers').emit('roomClosed', { roomCode });
     broadcastRoomsList();
     console.log(`[${roomCode}] Examen cerrado`);
+    // Asegura PDF para todos los alumnos que entregaron (incluye los que se
+    // auto-entregaron al cerrar; dedup interno evita generar dos veces).
+    Object.values(room.students).forEach(s => { if (s.submitted) enqueueComprobantePDF(room, s); });
   });
 
   // ── Teacher: reset exam (keep room, clear students) ──
@@ -578,7 +827,6 @@ io.on('connection', (socket) => {
 });
 
 // ─── Start Server ───────────────────────────────────────────────────────────
-const PORT = 3000;
 server.listen(PORT, '0.0.0.0', () => {
   console.log(`\n══════════════════════════════════════════`);
   console.log(`  PLATAFORMA DE EXAMEN DIGITAL`);
