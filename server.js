@@ -254,13 +254,48 @@ app.get('/teacher', (_req, res) => {
 // ─── Comprobante PDF (server-side render con Puppeteer) ────────────────────
 
 // Replica de renderMath() en /public/index.html (mismas reglas para KaTeX,
-// markdown ligero y escape HTML).
+// markdown ligero, tablas y escape HTML).
+function renderInlineMath(text) {
+  const parts = text.split(/(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$)/g);
+  return parts.map(p => {
+    const isDisplay = p.indexOf('$$') === 0 && p.lastIndexOf('$$') === p.length - 2 && p.length >= 4;
+    const isInline = !isDisplay && p.length >= 2 && p.charAt(0) === '$' && p.charAt(p.length - 1) === '$' && p.indexOf('\n') === -1;
+    if (isDisplay || isInline) {
+      const inner = isDisplay ? p.slice(2, -2) : p.slice(1, -1);
+      try { return katex.renderToString(inner, { throwOnError: false, displayMode: false }); }
+      catch (e) { return inner.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+    }
+    return p.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
+      .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>');
+  }).join('');
+}
+
+function renderMarkdownTable(block) {
+  const lines = block.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+  if (lines.length < 2) return block;
+  const parseCells = line => line.replace(/^\||\|$/g, '').split('|').map(c => c.trim());
+  const header = parseCells(lines[0]);
+  const body = lines.slice(2).map(parseCells);
+  const cellStyle = 'border:1px solid #cbd5e0; padding:6px 12px; text-align:center;';
+  const headStyle = cellStyle + ' background:#edf2f7; font-weight:600;';
+  const thead = '<thead><tr>' + header.map(c => `<th style="${headStyle}">${renderInlineMath(c)}</th>`).join('') + '</tr></thead>';
+  const tbody = '<tbody>' + body.map(row => '<tr>' + row.map(c => `<td style="${cellStyle}">${renderInlineMath(c)}</td>`).join('') + '</tr>').join('') + '</tbody>';
+  return `<table style="border-collapse:collapse; margin:12px 0; font-size:inherit;">${thead}${tbody}</table>`;
+}
+
 function renderMath(text) {
   if (!text) return '';
   try {
     text = String(text).replace(/\\\$/g, '\x00DOLLAR\x00');
+    const tables = [];
+    text = text.replace(/(?:^|\n)(\|[^\n]+\|[ \t]*\n\|[-:\s|]+\|[ \t]*\n(?:\|[^\n]+\|[ \t]*(?:\n|$))+)/g, (match, block) => {
+      const html = renderMarkdownTable(block);
+      const idx = tables.push(html) - 1;
+      return '\n\x00TBL' + idx + '\x00\n';
+    });
     const parts = text.split(/(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$)/g);
-    return parts.map(part => {
+    let out = parts.map(part => {
       const isDisplay = part.indexOf('$$') === 0 && part.lastIndexOf('$$') === part.length - 2 && part.length >= 4;
       const isInline = !isDisplay && part.length >= 2 && part.charAt(0) === '$' && part.charAt(part.length - 1) === '$' && part.indexOf('\n') === -1;
       if (isDisplay || isInline) {
@@ -277,7 +312,9 @@ function renderMath(text) {
         .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
         .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
         .replace(/\n/g, '<br>');
-    }).join('').replace(/\x00DOLLAR\x00/g, '$');
+    }).join('');
+    out = out.replace(/(?:<br>)?\x00TBL(\d+)\x00(?:<br>)?/g, (m, i) => tables[Number(i)]);
+    return out.replace(/\x00DOLLAR\x00/g, '$');
   } catch (e) {
     return String(text).replace(/\$\$/g, '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\x00DOLLAR\x00/g, '$');
   }
