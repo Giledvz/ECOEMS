@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 140" width="460" height="140" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="460" height="140" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrR" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <polygon points="0,0 12,5 0,10" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arrL" markerWidth="12" markerHeight="10" refX="2" refY="5" orient="auto">
+      <polygon points="12,0 0,5 12,10" fill="#1a1a1a"/>
+    </marker>
+  </defs>
+
+  <!-- Caja -->
+  <rect x="170" y="50" width="120" height="50" fill="#f1f5f9" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="230" cy="75" r="3" fill="#1a1a1a"/>
+
+  <!-- F1 (27 N) — actúa sobre la caja apuntando a la derecha desde la izquierda -->
+  <line x1="60" y1="75" x2="165" y2="75" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrR)"/>
+  <text x="60" y="40" font-size="20" font-style="italic">F₁ = 27 N</text>
+
+  <!-- F2 (42 N) — actúa sobre la caja apuntando a la izquierda desde la derecha -->
+  <line x1="400" y1="75" x2="295" y2="75" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrL)"/>
+  <text x="320" y="40" font-size="20" font-style="italic">F₂ = 42 N</text>
+</svg>

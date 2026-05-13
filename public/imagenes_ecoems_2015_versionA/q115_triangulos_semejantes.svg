@@ -2,29 +2,30 @@
   <rect width="460" height="280" fill="#ffffff"/>
 
   <!-- Triángulo grande ABC: B=(60,220), A=(420,220), C=(180,40) -->
-  <!-- AR está en CA, con CR=5 (px scaling: 1cm = 13px aprox). C-R distancia visual = 30. R = (220, 70). Q en BA con BQ=78 (6cm), QA=156 (12cm). Q=(60+78,220)=(138,220) -->
+  <!-- CA = 300 px = 15 cm (1 cm = 20 px). CR = 5 cm = 100 px → R = (260, 100). -->
+  <!-- Q en BA: BQ=6 cm = 120 px → Q = (180, 220). -->
 
   <polygon points="60,220 420,220 180,40" fill="none" stroke="#1a1a1a" stroke-width="2"/>
 
   <!-- Línea QR (paralela a BC) -->
-  <line x1="138" y1="220" x2="220" y2="70" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="180" y1="220" x2="260" y2="100" stroke="#1a1a1a" stroke-width="2"/>
 
   <!-- Etiquetas de vértices -->
   <text x="180" y="32" text-anchor="middle" font-size="18" font-weight="600">C</text>
   <text x="50" y="232" text-anchor="end" font-size="18" font-weight="600">B</text>
   <text x="430" y="232" text-anchor="start" font-size="18" font-weight="600">A</text>
-  <text x="225" y="62" text-anchor="start" font-size="18" font-weight="600">R</text>
-  <text x="138" y="240" text-anchor="middle" font-size="18" font-weight="600">Q</text>
+  <text x="268" y="98" text-anchor="start" font-size="18" font-weight="600">R</text>
+  <text x="180" y="240" text-anchor="middle" font-size="18" font-weight="600">Q</text>
 
-  <!-- Etiqueta 5cm (CR) -->
-  <text x="200" y="60" text-anchor="end" font-size="15">5 cm</text>
+  <!-- Etiqueta 5 cm (CR, perpendicular al lado para no tocarlo ni quedar pegado a C) -->
+  <text x="240" y="56" text-anchor="middle" font-size="15">5 cm</text>
 
-  <!-- Etiqueta 8.4cm (CB) -->
-  <text x="105" y="125" text-anchor="middle" font-size="15">8.4 cm</text>
+  <!-- Etiqueta 8.4 cm (CB, separada del lado para no encimarse) -->
+  <text x="85" y="120" text-anchor="middle" font-size="15">8.4 cm</text>
 
-  <!-- Etiqueta 6cm (BQ) -->
-  <text x="99" y="240" text-anchor="middle" font-size="15">6 cm</text>
+  <!-- Etiqueta 6 cm (BQ) -->
+  <text x="120" y="240" text-anchor="middle" font-size="15">6 cm</text>
 
-  <!-- Etiqueta 12cm (QA) -->
-  <text x="279" y="240" text-anchor="middle" font-size="15">12 cm</text>
+  <!-- Etiqueta 12 cm (QA) -->
+  <text x="300" y="240" text-anchor="middle" font-size="15">12 cm</text>
 </svg>

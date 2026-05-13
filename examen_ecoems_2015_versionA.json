@@ -426,8 +426,8 @@
               "C": "<img src=\"/imagenes_ecoems_2015_versionA/q27_c.svg\" style=\"width:100%;max-width:120px;display:block;\">",
               "D": "<img src=\"/imagenes_ecoems_2015_versionA/q27_d.svg\" style=\"width:100%;max-width:120px;display:block;\">"
             },
-            "answer": "D",
-            "explanation": "El patrón rota la figura $90°$ en sentido horario en cada paso; la siguiente figura tiene el triángulo apuntando hacia abajo en la posición correspondiente."
+            "answer": "A",
+            "explanation": "El triángulo gris rota $90°$ en sentido contrario a las manecillas del reloj en cada paso (TD → RR → BU → LL), por lo que el siguiente vuelve a TD (centrado arriba, vértice apuntando hacia abajo). Los cuadrados también continúan su patrón: en la siguiente figura el negro va a TR y el blanco a TL. Sólo la opción A cumple ambas condiciones."
           },
           {
             "id": 28,
@@ -471,8 +471,8 @@
               "C": "<img src=\"/imagenes_ecoems_2015_versionA/q30_c.svg\" style=\"width:100%;max-width:120px;display:block;\">",
               "D": "<img src=\"/imagenes_ecoems_2015_versionA/q30_d.svg\" style=\"width:100%;max-width:120px;display:block;\">"
             },
-            "answer": "A",
-            "explanation": "El patrón rota las figuras y agrega una división diagonal; sólo la opción A respeta el ciclo de rotación y la posición de los símbolos."
+            "answer": "C",
+            "explanation": "La secuencia alterna entre cuadros con grilla + y cuadros con grilla X, y cada figura se mueve manteniendo el patrón de figuras llenas y vacías. La opción C es la única que respeta tanto el tipo de grilla (+ que continúa después de la X) como las posiciones y rellenos correctos de cada símbolo."
           },
           {
             "id": 31,
@@ -1090,35 +1090,32 @@
           },
           {
             "id": 71,
-            "_to_replace": true,
-            "_replace_reason": "Duplicado con V.B Q2 (1ª ley de Newton — inercia)",
             "topic": "6.3",
-            "topic_name": "PENDIENTE — reemplazar duplicado",
-            "text": "[PLACEHOLDER — esta pregunta es duplicada de V.B y debe reemplazarse]",
+            "topic_name": "Leyes de Newton — primera ley",
+            "text": "El enunciado, *todo cuerpo tiende a permanecer en reposo o movimiento mientras no exista una fuerza externa que lo modifique*, corresponde a:",
             "options": {
-              "A": "[opción A pendiente]",
-              "B": "[opción B pendiente]",
-              "C": "[opción C pendiente]",
-              "D": "[opción D pendiente]"
+              "A": "La primera ley de Newton o también llamada ley de la inercia",
+              "B": "La segunda ley de Newton o también conocida como ley de la masa inercial",
+              "C": "La tercera ley de Newton o también llamada ley de la acción y la reacción",
+              "D": "Ley de la gravitación universal"
             },
             "answer": "A",
-            "explanation": "Pregunta pendiente de reemplazar."
+            "explanation": "La primera ley de Newton (ley de la inercia) establece que un cuerpo mantiene su estado de reposo o movimiento rectilíneo uniforme a menos que una fuerza externa actúe sobre él."
           },
           {
             "id": 72,
-            "_to_replace": true,
-            "_replace_reason": "Duplicado con V.B Q3 (fuerzas opuestas en una caja)",
             "topic": "6.4",
-            "topic_name": "PENDIENTE — reemplazar duplicado",
-            "text": "[PLACEHOLDER — esta pregunta es duplicada de V.B y debe reemplazarse]",
+            "topic_name": "Fuerza resultante — fuerzas opuestas",
+            "text": "Sobre una caja actúan dos fuerzas, como lo ilustra la figura. ¿Cuál es la fuerza resultante sobre el cuerpo?",
+            "image": "/imagenes_ecoems_2015_versionA/q72_fuerzas.svg",
             "options": {
-              "A": "[opción A pendiente]",
-              "B": "[opción B pendiente]",
-              "C": "[opción C pendiente]",
-              "D": "[opción D pendiente]"
+              "A": "$15\\,\\text{N}$ a la derecha",
+              "B": "$69\\,\\text{N}$ a la derecha",
+              "C": "$15\\,\\text{N}$ a la izquierda",
+              "D": "$69\\,\\text{N}$ a la izquierda"
             },
-            "answer": "A",
-            "explanation": "Pregunta pendiente de reemplazar."
+            "answer": "C",
+            "explanation": "$F_1=27\\,\\text{N}$ apunta a la derecha y $F_2=42\\,\\text{N}$ apunta a la izquierda; al ser opuestas se restan: $|F_2-F_1|=42-27=15\\,\\text{N}$. Como $F_2$ es mayor, el sentido de la resultante es hacia la izquierda."
           },
           {
             "id": 73,
@@ -1165,19 +1162,17 @@
           },
           {
             "id": 76,
-            "_to_replace": true,
-            "_replace_reason": "Duplicado con V.B Q9 (ondas electromagnéticas — comunicación)",
             "topic": "6.8",
-            "topic_name": "PENDIENTE — reemplazar duplicado",
-            "text": "[PLACEHOLDER — esta pregunta es duplicada de V.B y debe reemplazarse]",
+            "topic_name": "Ondas electromagnéticas",
+            "text": "Las ondas __________ son aquellas que no necesitan ningún medio elástico para propagarse y son empleadas comúnmente en la comunicación humana haciendo uso de las distintas bandas del espectro electromagnético.",
             "options": {
-              "A": "[opción A pendiente]",
-              "B": "[opción B pendiente]",
-              "C": "[opción C pendiente]",
-              "D": "[opción D pendiente]"
+              "A": "mecánicas",
+              "B": "transversales",
+              "C": "longitudinales",
+              "D": "electromagnéticas"
             },
-            "answer": "A",
-            "explanation": "Pregunta pendiente de reemplazar."
+            "answer": "D",
+            "explanation": "Las ondas electromagnéticas (radio, microondas, luz, etc.) no requieren un medio material para propagarse; viajan a través del vacío. Por eso son las empleadas en telecomunicaciones."
           },
           {
             "id": 77,
@@ -1224,19 +1219,17 @@
           },
           {
             "id": 80,
-            "_to_replace": true,
-            "_replace_reason": "Duplicado con V.B Q12 (descomposición de la luz por prisma)",
             "topic": "6.12",
-            "topic_name": "PENDIENTE — reemplazar duplicado",
-            "text": "[PLACEHOLDER — esta pregunta es duplicada de V.B y debe reemplazarse]",
+            "topic_name": "Óptica — descomposición de la luz blanca",
+            "text": "Isaac Newton demostró que la luz blanca está compuesta por diversos colores al hacer incidir un haz de luz blanca a través de un prisma de vidrio; el científico inglés observó que la luz que salía se descomponía en los colores rojo, naranja, amarillo, verde, azul, violeta y __________.",
             "options": {
-              "A": "[opción A pendiente]",
-              "B": "[opción B pendiente]",
-              "C": "[opción C pendiente]",
-              "D": "[opción D pendiente]"
+              "A": "magenta",
+              "B": "blanco",
+              "C": "negro",
+              "D": "añil"
             },
-            "answer": "A",
-            "explanation": "Pregunta pendiente de reemplazar."
+            "answer": "D",
+            "explanation": "El espectro visible de la luz blanca al pasar por un prisma contiene siete colores principales: rojo, naranja, amarillo, verde, azul, añil y violeta."
           }
         ]
       },
@@ -1458,19 +1451,17 @@
           },
           {
             "id": 94,
-            "_to_replace": true,
-            "_replace_reason": "Duplicado con V.B Q14 (factores Revolución Francesa)",
             "topic": "8.2",
-            "topic_name": "PENDIENTE — reemplazar duplicado",
-            "text": "[PLACEHOLDER — esta pregunta es duplicada de V.B y debe reemplazarse]",
+            "topic_name": "Revolución Francesa — factores",
+            "text": "¿Cuáles, entre los siguientes factores, dieron origen a la Revolución Francesa de 1789?\n\n1. Los descubrimientos geográficos de los siglos XV y XVI.\n2. La invención de la imprenta y de la máquina de vapor.\n3. El poder absoluto y despótico concentrado en la Corona.\n4. La división social francesa con base en privilegios estamentales.\n5. Los lujos exagerados de la corte versallesca.\n6. El cobro oneroso de impuestos al Tercer Estado o vulgo.\n7. Las demandas laborales impulsadas por el movimiento ludista.",
             "options": {
-              "A": "[opción A pendiente]",
-              "B": "[opción B pendiente]",
-              "C": "[opción C pendiente]",
-              "D": "[opción D pendiente]"
+              "A": "$1, 3, 4$ y $7$",
+              "B": "$2, 3, 4$ y $5$",
+              "C": "$3, 4, 5$ y $6$",
+              "D": "$3, 4, 5$ y $7$"
             },
-            "answer": "A",
-            "explanation": "Pregunta pendiente de reemplazar."
+            "answer": "C",
+            "explanation": "Los factores que originaron la Revolución Francesa son: (3) el poder absolutista de Luis XVI, (4) la rígida división estamental con privilegios para la nobleza y el clero, (5) el derroche de la corte de Versalles y (6) el cobro abusivo de impuestos al Tercer Estado. Los descubrimientos geográficos, la imprenta y el movimiento ludista corresponden a otros contextos históricos."
           },
           {
             "id": 95,
@@ -1504,19 +1495,17 @@
           },
           {
             "id": 97,
-            "_to_replace": true,
-            "_replace_reason": "Duplicado con V.B Q16 (sucesos de las guerras mundiales)",
             "topic": "8.5",
-            "topic_name": "PENDIENTE — reemplazar duplicado",
-            "text": "[PLACEHOLDER — esta pregunta es duplicada de V.B y debe reemplazarse]",
+            "topic_name": "Guerras mundiales — orden cronológico",
+            "text": "Ordena cronológicamente los siguientes sucesos de la Primera y Segunda guerras mundiales.\n\n1. Asesinato del archiduque Francisco Fernando en Sarajevo, Bosnia.\n2. Hundimiento del Lusitania, envío del Telegrama Zimmermann e intervención de Estados Unidos para apoyar al bando de los Aliados.\n3. Formación de bloques militares: Triple Alianza y Triple Entente.\n4. Ataque nipón a la flota norteamericana en Pearl Harbor en el Pacífico.\n5. Invasión alemana a Polonia e inicio de la Segunda Guerra Mundial.\n6. Firma del Tratado de Versalles y transformación del mapa geopolítico europeo.",
             "options": {
-              "A": "[opción A pendiente]",
-              "B": "[opción B pendiente]",
-              "C": "[opción C pendiente]",
-              "D": "[opción D pendiente]"
+              "A": "$3, 1, 2, 6, 5$ y $4$",
+              "B": "$1, 3, 5, 6, 4$ y $2$",
+              "C": "$2, 1, 6, 5, 4$ y $3$",
+              "D": "$4, 5, 6, 2, 3$ y $1$"
             },
             "answer": "A",
-            "explanation": "Pregunta pendiente de reemplazar."
+            "explanation": "Cronología: (3) formación de Triple Alianza/Entente (antes de 1914) → (1) asesinato de Francisco Fernando (1914) → (2) Lusitania, Telegrama Zimmermann y entrada de EE.UU. (1915-1917) → (6) Tratado de Versalles (1919) → (5) invasión a Polonia (1939) → (4) Pearl Harbor (1941)."
           },
           {
             "id": 98,
@@ -1550,19 +1539,17 @@
           },
           {
             "id": 100,
-            "_to_replace": true,
-            "_replace_reason": "Duplicado con V.B Q20 (Reformas Borbónicas Carlos III)",
             "topic": "8.8",
-            "topic_name": "PENDIENTE — reemplazar duplicado",
-            "text": "[PLACEHOLDER — esta pregunta es duplicada de V.B y debe reemplazarse]",
+            "topic_name": "Reformas Borbónicas — Carlos III",
+            "text": "Completa el espacio en blanco.\n\nSegún las disposiciones establecidas por el monarca español Carlos III en 1767, __________ dieron origen a un mayor cobro de impuestos al comercio y a los bienes inmuebles del clero, así como al fomento de la minería y al establecimiento de doce intendencias en la Nueva España.",
             "options": {
-              "A": "[opción A pendiente]",
-              "B": "[opción B pendiente]",
-              "C": "[opción C pendiente]",
-              "D": "[opción D pendiente]"
+              "A": "la Encomienda y la esclavitud",
+              "B": "la expulsión de los jesuitas y la Inquisición",
+              "C": "la Constitución de Cádiz y el sistema de raya",
+              "D": "las Reformas Borbónicas"
             },
-            "answer": "A",
-            "explanation": "Pregunta pendiente de reemplazar."
+            "answer": "D",
+            "explanation": "Las Reformas Borbónicas, impulsadas por Carlos III en la segunda mitad del siglo XVIII, modernizaron la administración colonial: aumentaron impuestos al comercio y al clero, fomentaron la minería y reorganizaron el virreinato con el sistema de intendencias (1786)."
           },
           {
             "id": 101,
@@ -1795,10 +1782,10 @@
             "topic_name": "Estadística — gráfica de barras",
             "text": "Olivia tiene una recaudería y a ella le gustan las Matemáticas. Para conocer qué verdura se vende más, realiza la siguiente gráfica de frecuencias que muestra la cantidad de kilos vendidos en una semana.\n\n| Verdura | zanahoria | calabaza | jitomate | papa | chiles |\n|---|---|---|---|---|---|\n| kilogramos | $45$ | $30$ | $80$ | $55$ | $60$ |\n\nCon base en la tabla, indica ¿qué gráfica de barras la representa?",
             "options": {
-              "A": "<img src=\"/imagenes_ecoems_2015_versionA/q116_a.svg\" style=\"width:100%;max-width:280px;display:block;\">",
-              "B": "<img src=\"/imagenes_ecoems_2015_versionA/q116_b.svg\" style=\"width:100%;max-width:280px;display:block;\">",
-              "C": "<img src=\"/imagenes_ecoems_2015_versionA/q116_c.svg\" style=\"width:100%;max-width:280px;display:block;\">",
-              "D": "<img src=\"/imagenes_ecoems_2015_versionA/q116_d.svg\" style=\"width:100%;max-width:280px;display:block;\">"
+              "A": "<img src=\"/imagenes_ecoems_2015_versionA/q116_a.svg\" style=\"width:600px;max-width:100%;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems_2015_versionA/q116_b.svg\" style=\"width:600px;max-width:100%;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems_2015_versionA/q116_c.svg\" style=\"width:600px;max-width:100%;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems_2015_versionA/q116_d.svg\" style=\"width:600px;max-width:100%;display:block;\">"
             },
             "answer": "A",
             "explanation": "La gráfica correcta debe mostrar las alturas en el orden: zanahoria $45$, calabaza $30$, jitomate $80$, papa $55$, chiles $60$. Sólo la opción A respeta esos valores."
@@ -1912,35 +1899,33 @@
           },
           {
             "id": 124,
-            "_to_replace": true,
-            "_replace_reason": "Duplicado con V.B Q32 (tabla periódica — alcalinos/alcalinotérreos y gases nobles)",
             "topic": "10.8",
-            "topic_name": "PENDIENTE — reemplazar duplicado",
-            "text": "[PLACEHOLDER — esta pregunta es duplicada de V.B y debe reemplazarse]",
+            "topic_name": "Tabla periódica — alcalinos y gases nobles",
+            "text": "En la siguiente Tabla periódica, ¿qué bloques representan la ubicación de los metales alcalinos y los gases nobles respectivamente?",
+            "image": "/imagenes_ecoems_2015_versionA/q124_tabla_periodica.svg",
             "options": {
-              "A": "[opción A pendiente]",
-              "B": "[opción B pendiente]",
-              "C": "[opción C pendiente]",
-              "D": "[opción D pendiente]"
+              "A": "A y D",
+              "B": "A y F",
+              "C": "B y F",
+              "D": "C y E"
             },
-            "answer": "A",
-            "explanation": "Pregunta pendiente de reemplazar."
+            "answer": "B",
+            "explanation": "Los metales alcalinos están en el grupo 1 (primera columna del bloque s, representado por A), y los gases nobles están en el grupo 18 (última columna del bloque p, representado por F)."
           },
           {
             "id": 125,
-            "_to_replace": true,
-            "_replace_reason": "Duplicado con V.B Q36 (estructura de Lewis Na₂S)",
             "topic": "10.9",
-            "topic_name": "PENDIENTE — reemplazar duplicado",
-            "text": "[PLACEHOLDER — esta pregunta es duplicada de V.B y debe reemplazarse]",
+            "topic_name": "Estructura de Lewis — enlace químico",
+            "text": "Los __________ son las partículas subatómicas responsables de mantener unidos a los átomos de un compuesto, como se presenta en la siguiente estructura de Lewis.",
+            "image": "/imagenes_ecoems_2015_versionA/q125_lewis_sulfuro.svg",
             "options": {
-              "A": "[opción A pendiente]",
-              "B": "[opción B pendiente]",
-              "C": "[opción C pendiente]",
-              "D": "[opción D pendiente]"
+              "A": "electrones de valencia",
+              "B": "electrones internos",
+              "C": "neutrones",
+              "D": "protones"
             },
             "answer": "A",
-            "explanation": "Pregunta pendiente de reemplazar."
+            "explanation": "Los enlaces químicos se forman por la interacción de los electrones de valencia (los del nivel más externo). En la estructura de Lewis del sulfuro de sodio (Na₂S), los pares de electrones compartidos entre los átomos son electrones de valencia."
           },
           {
             "id": 126,

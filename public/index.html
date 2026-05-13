@@ -1091,6 +1091,7 @@ socket.on('examStarted', (data) => {
 socket.on('examSubmitted', (data) => { enterReviewMode({ ok: true, ...data }); });
 socket.on('examClosed', () => { if (!state.submitted && !state.submitPending) startSubmitFlow(); });
 socket.on('markedUpdate', (marked) => { state.marked = marked; saveState(); renderQuestion(); });
+socket.on('examReloaded', () => { window.location.reload(); });
 
 socket.on('examReset', () => {
   if (state.timerInterval) clearInterval(state.timerInterval);

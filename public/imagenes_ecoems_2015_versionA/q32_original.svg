@@ -2,15 +2,18 @@
   <rect width="200" height="200" fill="#ffffff"/>
   <g transform="translate(40, 30)">
     <!-- Cubo isométrico -->
-    <polygon points="0,40 60,10 120,40 60,70" fill="#e2e8f0" stroke="#1a1a1a" stroke-width="1.5"/>
-    <polygon points="0,40 60,70 60,140 0,110" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
-    <polygon points="60,70 120,40 120,110 60,140" fill="#94a3b8" stroke="#1a1a1a" stroke-width="1.5"/>
-    <!-- Pentágono en cara frontal-izq -->
-    <polygon points="30,95 41,103 37,116 23,116 19,103" fill="#1a1a1a" transform="rotate(-8 30 105)"/>
-    <!-- Triángulo en cara frontal-der -->
-    <polygon points="80,82 92,94 80,106" fill="#1a1a1a" transform="rotate(8 88 94)"/>
-    <!-- Doble línea en cara superior -->
-    <line x1="20" y1="35" x2="38" y2="25" stroke="#1a1a1a" stroke-width="1.5"/>
-    <line x1="22" y1="40" x2="40" y2="30" stroke="#1a1a1a" stroke-width="1.5"/>
+    <polygon points="0,40 60,10 120,40 60,70" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <polygon points="0,40 60,70 60,140 0,110" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <polygon points="60,70 120,40 120,110 60,140" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+
+    <!-- Triángulo: base en arista trasera-derecha, apex tocando la arista que comparte con la cara frontal -->
+    <polygon points="60,10 120,40 35,57.5" fill="#1a1a1a"/>
+
+    <!-- Pentágono más grande en cara frontal con skew isométrico, gris medio-oscuro -->
+    <polygon points="30,62 57,95 46,121 14,104 3,68" fill="#555555"/>
+
+    <!-- Dos barras como polígonos en la cara derecha, gap arriba = gap entre barras (~3.5 px) -->
+    <polygon points="60,73.5 120,43.5 120,50.5 60,80.5" fill="#1a1a1a"/>
+    <polygon points="60,84 120,54 120,61 60,91" fill="#1a1a1a"/>
   </g>
 </svg>

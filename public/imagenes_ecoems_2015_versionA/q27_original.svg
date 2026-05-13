@@ -1,39 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 110" width="600" height="110" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
   <rect width="600" height="110" fill="#ffffff"/>
-  <!-- 5 cuadros (4 imagen + 1 con ?) -->
+
   <g transform="translate(20, 15)">
-    <!-- Cuadro 1: triángulo arriba-izq apuntando hacia derecha, cuadrado abajo-der -->
+    <!-- Cuadro 1: negro BL + blanco BR + triángulo TD -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
-      <line x1="0" y1="0" x2="80" y2="80" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="3,3"/>
-      <line x1="80" y1="0" x2="0" y2="80" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="3,3"/>
-      <polygon points="10,30 30,10 30,30" fill="#1a1a1a"/>
-      <rect x="50" y="50" width="22" height="22" fill="#1a1a1a"/>
+      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+      <rect x="0" y="54" width="26" height="26" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
+      <rect x="54" y="54" width="26" height="26" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <polygon points="27,0 53,0 40,26" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
     </g>
-    <!-- Cuadro 2 -->
+
+    <!-- Cuadro 2: negro TL + blanco BR + triángulo RR -->
     <g transform="translate(115, 0)">
-      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
-      <line x1="0" y1="0" x2="80" y2="80" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="3,3"/>
-      <line x1="80" y1="0" x2="0" y2="80" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="3,3"/>
-      <polygon points="50,10 70,30 50,30" fill="#1a1a1a"/>
-      <rect x="8" y="50" width="22" height="22" fill="#1a1a1a"/>
+      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+      <rect x="0" y="0" width="26" height="26" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
+      <rect x="54" y="54" width="26" height="26" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <polygon points="54,27 54,53 80,40" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
     </g>
-    <!-- Cuadro 3 -->
+
+    <!-- Cuadro 3: negro TL + blanco BL + triángulo BU -->
     <g transform="translate(230, 0)">
-      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
-      <line x1="0" y1="0" x2="80" y2="80" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="3,3"/>
-      <line x1="80" y1="0" x2="0" y2="80" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="3,3"/>
-      <polygon points="50,50 70,50 50,70" fill="#1a1a1a"/>
-      <rect x="8" y="8" width="22" height="22" fill="#1a1a1a"/>
+      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+      <rect x="0" y="0" width="26" height="26" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
+      <rect x="0" y="54" width="26" height="26" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <polygon points="27,80 53,80 40,54" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
     </g>
-    <!-- Cuadro 4 -->
+
+    <!-- Cuadro 4: negro TR + blanco BL + triángulo LL -->
     <g transform="translate(345, 0)">
-      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
-      <line x1="0" y1="0" x2="80" y2="80" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="3,3"/>
-      <line x1="80" y1="0" x2="0" y2="80" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="3,3"/>
-      <polygon points="10,50 30,50 30,70" fill="#1a1a1a"/>
-      <rect x="50" y="8" width="22" height="22" fill="#1a1a1a"/>
+      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+      <rect x="54" y="0" width="26" height="26" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
+      <rect x="0" y="54" width="26" height="26" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <polygon points="26,27 26,53 0,40" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
     </g>
+
     <!-- Cuadro 5: ? -->
     <g transform="translate(460, 0)">
       <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5,3"/>

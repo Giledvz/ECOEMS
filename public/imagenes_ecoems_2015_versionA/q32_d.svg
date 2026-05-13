@@ -1,20 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="200" height="200" fill="#ffffff"/>
-  <defs>
-    <symbol id="penD" overflow="visible"><polygon points="0,-12 11.4,-3.7 7.0,9.7 -7.0,9.7 -11.4,-3.7" fill="#1a1a1a"/></symbol>
-    <symbol id="triD" overflow="visible"><polygon points="0,-10 11,8 -11,8" fill="#1a1a1a"/></symbol>
-  </defs>
-  <!-- Cruz vertical con cara extra a la derecha -->
-  <g stroke="#1a1a1a" stroke-width="1.2" fill="none">
-    <rect x="60" y="20" width="40" height="40"/>
-    <rect x="60" y="60" width="40" height="40"/>
-    <rect x="20" y="60" width="40" height="40"/>
-    <rect x="100" y="60" width="40" height="40"/>
-    <rect x="60" y="100" width="40" height="40"/>
-    <rect x="60" y="140" width="40" height="40"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 170" width="130" height="170" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="130" height="170" fill="#ffffff"/>
+  <g transform="translate(5, 5)">
+    <!-- Cruz de la red del cubo -->
+    <rect x="40" y="0" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="0" y="40" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="40" y="40" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="80" y="40" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="40" y="80" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="40" y="120" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+
+    <!-- L2: pentágono (vértice apuntando a la derecha) -->
+    <polygon points="76,60 64.94,75.22 47.06,69.41 47.06,50.59 64.94,44.78" fill="#555555"/>
+
+    <!-- L3: triángulo apuntando a la izquierda, base = lado derecho del cuadro -->
+    <polygon points="120,40 120,80 80,60" fill="#1a1a1a"/>
+
+    <!-- B1: dos barras verticales pegadas al borde derecho -->
+    <rect x="72" y="80" width="5" height="40" fill="#1a1a1a"/>
+    <rect x="64" y="80" width="5" height="40" fill="#1a1a1a"/>
   </g>
-  <use href="#penD" x="80" y="82"/>
-  <use href="#triD" x="120" y="82"/>
-  <line x1="65" y1="40" x2="95" y2="40" stroke="#1a1a1a" stroke-width="1.5"/>
-  <line x1="65" y1="45" x2="95" y2="45" stroke="#1a1a1a" stroke-width="1.5"/>
 </svg>

@@ -1,20 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="200" height="160" fill="#ffffff"/>
-  <defs>
-    <symbol id="penB" overflow="visible"><polygon points="0,-12 11.4,-3.7 7.0,9.7 -7.0,9.7 -11.4,-3.7" fill="#1a1a1a"/></symbol>
-    <symbol id="triB" overflow="visible"><polygon points="0,-10 11,8 -11,8" fill="#1a1a1a"/></symbol>
-  </defs>
-  <!-- Cruz horizontal con cabeza arriba y pie abajo -->
-  <g stroke="#1a1a1a" stroke-width="1.2" fill="none">
-    <rect x="80" y="10" width="40" height="40"/>
-    <rect x="0" y="50" width="40" height="40"/>
-    <rect x="40" y="50" width="40" height="40"/>
-    <rect x="80" y="50" width="40" height="40"/>
-    <rect x="120" y="50" width="40" height="40"/>
-    <rect x="80" y="90" width="40" height="40"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 170" width="130" height="170" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="130" height="170" fill="#ffffff"/>
+  <g transform="translate(5, 5)">
+    <!-- Cruz de la red del cubo -->
+    <rect x="40" y="0" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="0" y="40" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="40" y="40" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="80" y="40" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="40" y="80" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="40" y="120" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+
+    <!-- T: dos barras verticales (rotadas 90° respecto a la versión horizontal), pegadas al borde derecho -->
+    <rect x="71" y="0" width="5" height="40" fill="#1a1a1a"/>
+    <rect x="63" y="0" width="5" height="40" fill="#1a1a1a"/>
+
+    <!-- L1: triángulo apuntando a la izquierda, base = lado derecho del cuadro -->
+    <polygon points="40,40 40,80 0,60" fill="#1a1a1a"/>
+
+    <!-- L2: pentágono (vértice apuntando a la derecha) -->
+    <polygon points="76,60 64.94,75.22 47.06,69.41 47.06,50.59 64.94,44.78" fill="#555555"/>
   </g>
-  <use href="#penB" x="100" y="72"/>
-  <use href="#triB" x="140" y="72"/>
-  <line x1="85" y1="28" x2="115" y2="28" stroke="#1a1a1a" stroke-width="1.5"/>
-  <line x1="85" y1="33" x2="115" y2="33" stroke="#1a1a1a" stroke-width="1.5"/>
 </svg>

@@ -41,7 +41,7 @@ function generateRoomCode() {
   return code;
 }
 
-function createRoom(data) {
+function createRoom(data, jsonFilename = null) {
   const roomCode = generateRoomCode();
   const room = {
     roomCode,
@@ -55,6 +55,7 @@ function createRoom(data) {
     students: {},
     timeLimitMinutes: data.timeLimitMinutes || 180,
     startTime: null,
+    jsonFilename,
   };
 
   const sections = data.exam?.sections || [];
@@ -180,13 +181,68 @@ function getLocalIP() {
 // Teacher uploads exam JSON → creates a new room
 app.post('/api/upload-exam', (req, res) => {
   try {
-    const room = createRoom(req.body);
-    console.log(`Sala ${room.roomCode} creada: "${room.title}" (${room.questions.length} preguntas)`);
+    const filename = req.headers['x-exam-filename'] || null;
+    const room = createRoom(req.body, filename);
+    console.log(`Sala ${room.roomCode} creada: "${room.title}" (${room.questions.length} preguntas)${filename ? ` [archivo: ${filename}]` : ''}`);
     broadcastRoomsList();
     res.json({ success: true, totalQuestions: room.questions.length, roomCode: room.roomCode });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
+});
+
+// DEV ONLY: re-read the JSON file from disk and update room.questions/answerKey
+// without resetting students, answers, or phase. Bloqueado en fase 'active'.
+app.post('/api/dev-reload/:roomCode', (req, res) => {
+  const room = rooms.get(req.params.roomCode);
+  if (!room) return res.status(404).json({ error: 'Sala no encontrada' });
+  if (room.phase === 'active') return res.status(400).json({ error: 'No se puede recargar con el examen activo' });
+  if (!room.jsonFilename) return res.status(400).json({ error: 'Sala sin archivo asociado (re-súbela)' });
+
+  const filepath = path.join(__dirname, room.jsonFilename);
+  if (!fs.existsSync(filepath)) return res.status(404).json({ error: `No encuentro: ${room.jsonFilename}` });
+
+  let data;
+  try { data = JSON.parse(fs.readFileSync(filepath, 'utf8')); }
+  catch (err) { return res.status(400).json({ error: `JSON inválido: ${err.message}` }); }
+
+  const newQuestions = [];
+  const newAnswerKey = {};
+  (data.exam?.sections || []).forEach(section => {
+    (section.questions || []).forEach(q => {
+      newQuestions.push({
+        id: q.id, text: q.text, options: q.options, image: q.image || null,
+        topic: q.topic, topic_name: q.topic_name || '',
+        subject: section.subject, explanation: q.explanation || '',
+      });
+      newAnswerKey[q.id] = q.answer;
+    });
+  });
+
+  // Validar que la estructura no cambió (#preguntas e IDs iguales)
+  if (newQuestions.length !== room.questions.length) {
+    return res.status(400).json({ error: `El número de preguntas cambió (${room.questions.length} → ${newQuestions.length}). Re-súbelo como sala nueva.` });
+  }
+  const oldIds = room.questions.map(q => q.id).join(',');
+  const newIds = newQuestions.map(q => q.id).join(',');
+  if (oldIds !== newIds) {
+    return res.status(400).json({ error: 'Los IDs de las preguntas cambiaron. Re-súbelo como sala nueva.' });
+  }
+
+  // Reemplazar contenido
+  room.questions = newQuestions;
+  room.answerKey = newAnswerKey;
+  room.title = data.exam?.title || room.title;
+  room.group = data.exam?.group || room.group;
+
+  // Limpiar dedup de la clave para que se regenere con el contenido nuevo
+  pdfEnqueued.delete(`${room.roomCode}:__answerkey__`);
+
+  // Notificar a los clientes de esa sala que recarguen su página
+  io.to(room.roomCode).emit('examReloaded');
+
+  console.log(`[${room.roomCode}] JSON recargado desde ${room.jsonFilename}`);
+  res.json({ success: true });
 });
 
 // List all rooms
@@ -462,6 +518,67 @@ ${questionsHTML}
 </body></html>`;
 }
 
+function buildAnswerKeyHTML(room) {
+  const origin = `http://localhost:${PORT}`;
+  const questions = room.questions;
+  const answerKey = room.answerKey;
+  const fecha = new Date().toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
+
+  const questionsHTML = questions.map((q, idx) => {
+    const correctAns = answerKey[q.id];
+    const letters = Object.keys(q.options);
+    const optionsHTML = letters.map(letter => {
+      const isCorrect = letter === correctAns;
+      let style = 'padding:6px 10px; margin:2px 0; border-radius:6px; font-size:12px;';
+      let marker = '';
+      if (isCorrect) { style += ' background:#dcfce7; border:1px solid #16a34a;'; marker = ' ✓'; }
+      else { style += ' background:#f8f8f8; border:1px solid #e5e5e5;'; }
+      return `<div style="${style}"><b>${letter}.</b> ${renderMath(q.options[letter])}${marker}</div>`;
+    }).join('');
+
+    let qText = q.text || '';
+    const maxLen = 1500;
+    if (qText.length > maxLen) {
+      const lastParagraph = qText.lastIndexOf('\n\n');
+      if (lastParagraph > maxLen * 0.3) {
+        const readingPart = qText.substring(0, lastParagraph);
+        const questionPart = qText.substring(lastParagraph);
+        qText = readingPart.substring(0, 300) + '\n\n[...]\n\n' + questionPart;
+      }
+    }
+    const imgHTML = q.image ? `<img src="${q.image}" style="max-width:280px; max-height:200px; margin:6px 0; display:block;">` : '';
+
+    return `
+      <div style="page-break-inside:avoid; margin-bottom:14px; padding:10px; border:1px solid #e5e5e5; border-radius:8px;">
+        <div style="font-size:11px; color:#666; margin-bottom:4px;">${q.subject} — Pregunta ${idx + 1}</div>
+        <div style="font-size:13px; margin-bottom:6px;">${renderMath(qText)}</div>
+        ${imgHTML}
+        ${optionsHTML}
+      </div>`;
+  }).join('');
+
+  return `<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="${origin}/">
+<title>Clave de respuestas — ${room.title || 'Examen'}</title>
+<link rel="stylesheet" href="${origin}/katex/katex.min.css">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding:20px; color:#1a1a1a; font-size:13px; }
+  @page { margin:15mm 10mm; }
+  .header { text-align:center; margin-bottom:20px; padding-bottom:14px; border-bottom:2px solid #2c5282; }
+  .header h1 { font-size:20px; color:#2c5282; margin-bottom:4px; }
+  .header h2 { font-size:16px; color:#16a34a; margin-top:10px; font-weight:600; }
+</style></head><body>
+<div class="header">
+  <h1>${room.title || 'Examen'}</h1>
+  <div style="font-size:12px; color:#666;">${room.group} — ${fecha}</div>
+  <h2>Clave de respuestas</h2>
+</div>
+${questionsHTML}
+</body></html>`;
+}
+
 // Manager: navegador único, cola secuencial, dedup por (sala, alumno).
 let pdfBrowser = null;
 const pdfQueue = [];
@@ -524,6 +641,95 @@ function enqueueComprobantePDF(room, student) {
   });
   runPdfQueue();
 }
+
+function enqueueAnswerKeyPDF(room) {
+  if (!room) return;
+  const key = `${room.roomCode}:__answerkey__`;
+  if (pdfEnqueued.has(key)) return;
+  pdfEnqueued.add(key);
+
+  pdfQueue.push(async () => {
+    let page = null;
+    try {
+      const browser = await getPdfBrowser();
+      page = await browser.newPage();
+      const html = buildAnswerKeyHTML(room);
+      await page.setContent(html, { waitUntil: 'networkidle0', timeout: 30000 });
+      const dateStr = (room.date || new Date().toISOString().split('T')[0]).replace(/-/g, '');
+      const folder = path.join(__dirname, 'comprobantes', `${room.roomCode}_${dateStr}`);
+      fs.mkdirSync(folder, { recursive: true });
+      const filePath = path.join(folder, `clave_de_respuestas.pdf`);
+      await page.pdf({
+        path: filePath,
+        format: 'A4',
+        margin: { top: '15mm', bottom: '15mm', left: '10mm', right: '10mm' },
+        printBackground: true,
+      });
+      console.log(`[${room.roomCode}] Clave de respuestas guardada: ${path.relative(__dirname, filePath)}`);
+    } catch (err) {
+      console.error(`[${room.roomCode}] Clave de respuestas falló:`, err.message);
+      pdfEnqueued.delete(key);
+    } finally {
+      if (page) { try { await page.close(); } catch (e) {} }
+    }
+  });
+  runPdfQueue();
+}
+
+// ─── Limpieza automática de comprobantes ────────────────────────────────────
+// Borra archivos de alumnos en carpetas de comprobantes con más de N días.
+// Conserva siempre `clave_de_respuestas.pdf`. Si la carpeta queda vacía, la borra.
+const COMPROBANTES_RETENTION_DAYS = 14;
+
+function cleanupOldComprobantes() {
+  const root = path.join(__dirname, 'comprobantes');
+  if (!fs.existsSync(root)) return;
+
+  const now = Date.now();
+  const cutoffMs = COMPROBANTES_RETENTION_DAYS * 24 * 60 * 60 * 1000;
+  let filesDeleted = 0;
+  let foldersTouched = 0;
+  let foldersRemoved = 0;
+
+  for (const entry of fs.readdirSync(root, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    // Folder name format: <roomCode>_<YYYYMMDD>
+    const m = entry.name.match(/_(\d{4})(\d{2})(\d{2})$/);
+    if (!m) continue;
+    const folderDate = new Date(`${m[1]}-${m[2]}-${m[3]}T00:00:00`);
+    if (isNaN(folderDate.getTime())) continue;
+    if (now - folderDate.getTime() < cutoffMs) continue;
+
+    const folderPath = path.join(root, entry.name);
+    let deletedHere = 0;
+    for (const file of fs.readdirSync(folderPath)) {
+      if (file === 'clave_de_respuestas.pdf') continue;
+      try {
+        fs.unlinkSync(path.join(folderPath, file));
+        filesDeleted++;
+        deletedHere++;
+      } catch (err) {
+        console.error(`[Cleanup] No pude borrar ${file}: ${err.message}`);
+      }
+    }
+    if (deletedHere > 0) foldersTouched++;
+    // Si la carpeta quedó vacía (sin clave tampoco), eliminarla
+    try {
+      if (fs.readdirSync(folderPath).length === 0) {
+        fs.rmdirSync(folderPath);
+        foldersRemoved++;
+      }
+    } catch (err) {}
+  }
+
+  if (filesDeleted > 0 || foldersRemoved > 0) {
+    console.log(`[Cleanup] Borrados ${filesDeleted} comprobante(s) en ${foldersTouched} carpeta(s) (>${COMPROBANTES_RETENTION_DAYS} días). ${foldersRemoved} carpeta(s) vacía(s) eliminada(s).`);
+  }
+}
+
+// Corre al arrancar (con pequeño delay para no bloquear el inicio) y cada 24h.
+setTimeout(cleanupOldComprobantes, 5000);
+setInterval(cleanupOldComprobantes, 24 * 60 * 60 * 1000);
 
 process.on('SIGINT', async () => {
   if (pdfBrowser) { try { await pdfBrowser.close(); } catch (e) {} }
@@ -741,6 +947,7 @@ io.on('connection', (socket) => {
       io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
       console.log(`[${roomCode}] ${student.name} entregó: ${correct}/${room.questions.length}`);
       enqueueComprobantePDF(room, student);
+      enqueueAnswerKeyPDF(room);
     }
   });
 
@@ -790,6 +997,7 @@ io.on('connection', (socket) => {
     // Asegura PDF para todos los alumnos que entregaron (incluye los que se
     // auto-entregaron al cerrar; dedup interno evita generar dos veces).
     Object.values(room.students).forEach(s => { if (s.submitted) enqueueComprobantePDF(room, s); });
+    enqueueAnswerKeyPDF(room);
   });
 
   // ── Teacher: reset exam (keep room, clear students) ──
@@ -802,6 +1010,24 @@ io.on('connection', (socket) => {
     io.to(roomCode).emit('examReset');
     broadcastRoomsList();
     console.log(`[${roomCode}] Examen reiniciado`);
+
+    // Reset = se asume que es una prueba: borra toda la carpeta de comprobantes
+    // (incluida la clave). La clave se regenerará en cuanto entregue alguien.
+    const dateStr = (room.date || new Date().toISOString().split('T')[0]).replace(/-/g, '');
+    const folderPath = path.join(__dirname, 'comprobantes', `${roomCode}_${dateStr}`);
+    if (fs.existsSync(folderPath)) {
+      try {
+        fs.rmSync(folderPath, { recursive: true, force: true });
+        console.log(`[${roomCode}] Reset: carpeta de comprobantes eliminada`);
+      } catch (err) {
+        console.error(`[${roomCode}] No pude borrar carpeta: ${err.message}`);
+      }
+    }
+
+    // Limpia todo el dedup de la sala para que regenere desde cero.
+    for (const key of [...pdfEnqueued]) {
+      if (key.startsWith(`${roomCode}:`)) pdfEnqueued.delete(key);
+    }
   });
 
   // ── Teacher: delete room entirely ──

@@ -5,10 +5,10 @@
   <rect x="170" y="20" width="120" height="32" fill="#bfdbfe" stroke="#1a1a1a" stroke-width="1.5"/>
   <text x="230" y="42" text-anchor="middle" font-size="18">Alcalinidad</text>
 
-  <!-- Flecha vertical -->
-  <line x1="230" y1="55" x2="230" y2="495" stroke="#1a1a1a" stroke-width="2"/>
-  <polygon points="225,55 235,55 230,46" fill="#1a1a1a"/>
-  <polygon points="225,495 235,495 230,504" fill="#1a1a1a"/>
+  <!-- Flecha vertical (tocando las cajas, sin entrar) -->
+  <line x1="230" y1="61" x2="230" y2="489" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="225,61 235,61 230,52" fill="#1a1a1a"/>
+  <polygon points="225,489 235,489 230,498" fill="#1a1a1a"/>
 
   <!-- Marcas de la escala 0-14 (15 niveles); y rango 65→485, así cada paso = (485-65)/14 = 30 px -->
   <!-- pH 14 arriba -->

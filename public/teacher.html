@@ -157,6 +157,7 @@
     <button class="btn-download" id="downloadBtn" onclick="downloadCSV()" disabled>📥 Descargar CSV</button>
     <button class="btn-download" id="downloadKeyBtn" onclick="downloadKey()" disabled>🔑 Descargar clave</button>
     <button class="btn-reset" onclick="resetExam()">↺ Reiniciar</button>
+    <button class="btn-reset" onclick="reloadJSON()" title="Re-lee el JSON desde disco y actualiza el contenido sin perder respuestas">🔄 Recargar JSON</button>
     <button class="btn-delete" onclick="deleteRoom()">✕ Eliminar sala</button>
   </div>
 
@@ -310,7 +311,7 @@ async function uploadExam(input) {
     const text = await file.text();
     const res = await fetch('/api/upload-exam', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'X-Exam-Filename': file.name },
       body: text,
     });
     const result = await res.json();
@@ -341,9 +342,24 @@ function closeExam() {
   }
 }
 
+async function reloadJSON() {
+  if (!selectedRoom) return;
+  try {
+    const res = await fetch(`/api/dev-reload/${selectedRoom}`, { method: 'POST' });
+    const data = await res.json();
+    if (data.success) {
+      alert('JSON recargado. Los alumnos verán el contenido nuevo al instante.');
+    } else {
+      alert('Error: ' + (data.error || 'desconocido'));
+    }
+  } catch (err) {
+    alert('Error al recargar: ' + err.message);
+  }
+}
+
 function resetExam() {
   if (!selectedRoom) return;
-  if (confirm('¿Reiniciar el examen? Se borran las respuestas pero la sala se mantiene.')) {
+  if (confirm('¿Reiniciar el examen? Se borrarán las respuestas y todos los comprobantes guardados (incluida la clave de respuestas).')) {
     socket.emit('resetExam', { roomCode: selectedRoom });
   }
 }
