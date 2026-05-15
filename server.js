@@ -64,6 +64,7 @@ function createRoom(data, jsonFilename = null) {
       room.questions.push({
         id: q.id,
         text: q.text,
+        context: q.context || null,
         options: q.options,
         image: q.image || null,
         topic: q.topic,
@@ -838,7 +839,7 @@ io.on('connection', (socket) => {
       const correctOrig = room.answerKey[qid];
       student.answerKey[qid] = origLetters[srcLetters.indexOf(correctOrig)];
 
-      return { id: q.id, text: q.text, options: newOptions, image: q.image, subject: q.subject };
+      return { id: q.id, text: q.text, context: q.context || null, options: newOptions, image: q.image, subject: q.subject };
     });
 
     const joinPayload = {

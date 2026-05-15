@@ -1,20 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="240" height="240" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="220" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="160" height="160" fill="#ffffff"/>
   <defs>
-    <symbol id="cube" overflow="visible">
-      <polygon points="0,-30 35,-50 70,-30 35,-10" fill="#e2e8f0" stroke="#1a1a1a" stroke-width="1.5"/>
-      <polygon points="0,-30 35,-10 35,30 0,10" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
-      <polygon points="35,-10 70,-30 70,10 35,30" fill="#94a3b8" stroke="#1a1a1a" stroke-width="1.5"/>
+    <!-- Cubo en proyección cabinet con cámara un poco más elevada -->
+    <!-- depth offset = (10, -14) en vez de (10, -10): se ve más la cara superior -->
+    <symbol id="cubeUnit" overflow="visible">
+      <polygon points="0,0 20,0 20,-20 0,-20" fill="#ffffff" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="20,0 30,-14 30,-34 20,-20" fill="#d8d8d8" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="0,-20 20,-20 30,-34 10,-34" fill="#ffffff" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="miter"/>
     </symbol>
   </defs>
-  <g transform="rotate(90 120 120)">
-  <g transform="translate(15, 10)">
-    <use href="#cube" x="0" y="160"/>
-    <use href="#cube" x="70" y="160"/>
-    <use href="#cube" x="140" y="160"/>
-    <use href="#cube" x="35" y="120"/>
-    <use href="#cube" x="105" y="120"/>
-    <use href="#cube" x="70" y="80"/>
-  </g>
-  </g>
+
+  <!-- Opción D: cresta diagonal — pico de altura 4 a lo largo de la diagonal -->
+  <!-- screen_x = 30 + 20a + 10b ; screen_y = 150 - 14b - 20c -->
+  <!-- Render order: y desc, z asc, x asc -->
+  <!-- y=4 (back row) -->
+  <use href="#cubeUnit" x="60" y="108"/>
+  <use href="#cubeUnit" x="80" y="88"/>
+  <use href="#cubeUnit" x="100" y="68"/>
+  <!-- y=3 -->
+  <use href="#cubeUnit" x="50" y="102"/>
+  <use href="#cubeUnit" x="70" y="82"/>
+  <use href="#cubeUnit" x="90" y="62"/>
+  <!-- y=2 -->
+  <use href="#cubeUnit" x="40" y="96"/>
+  <use href="#cubeUnit" x="60" y="76"/>
+  <!-- y=1 (front) -->
+  <use href="#cubeUnit" x="30" y="90"/>
 </svg>

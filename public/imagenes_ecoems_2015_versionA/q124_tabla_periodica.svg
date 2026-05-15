@@ -12,21 +12,20 @@
     <text x="40" y="235">7</text>
   </g>
 
-  <!-- Cuadrícula 7 filas x 18 columnas. Cada celda 30x30 -->
-  <!-- Bloque A (grupo 1, columna 1): solo filas 1-7 -->
-  <g stroke="#1a1a1a" stroke-width="1.5" fill="#ffffff">
-    <!-- Bloque A: columna 1 -->
-    <rect x="60" y="40" width="30" height="210"/>
-    <!-- Bloque B: columna 2, filas 2-7 -->
-    <rect x="90" y="70" width="30" height="180"/>
-    <!-- Bloque D (transición): columnas 3-12, filas 4-7 -->
-    <rect x="120" y="130" width="300" height="120"/>
-    <!-- Bloque E (bloque p): columnas 13-17, filas 2-7 -->
-    <rect x="420" y="70" width="150" height="180"/>
-    <!-- Bloque F (gases nobles, columna 18): todas las filas -->
-    <rect x="570" y="40" width="30" height="210"/>
-    <!-- Bloque C (lantánidos/actínidos): abajo -->
-    <rect x="120" y="290" width="450" height="60"/>
+  <!-- Cuadrícula 7 filas x 18 columnas. Colores pastel tenues para cada bloque. -->
+  <g stroke="#1a1a1a" stroke-width="1.5">
+    <!-- Bloque A: columna 1 (metales alcalinos) — rosa tenue -->
+    <rect x="60" y="40" width="30" height="210" fill="#fde2e2"/>
+    <!-- Bloque B: columna 2, filas 2-7 (alcalinotérreos) — durazno tenue -->
+    <rect x="90" y="70" width="30" height="180" fill="#fef0d4"/>
+    <!-- Bloque D (transición): columnas 3-12, filas 4-7 — amarillo tenue -->
+    <rect x="120" y="130" width="300" height="120" fill="#fef9d8"/>
+    <!-- Bloque E (bloque p): columnas 13-17, filas 2-7 — azul tenue -->
+    <rect x="420" y="70" width="150" height="180" fill="#e2f0fd"/>
+    <!-- Bloque F (gases nobles, columna 18) — lila tenue -->
+    <rect x="570" y="40" width="30" height="210" fill="#efe5fb"/>
+    <!-- Bloque C (lantánidos/actínidos): abajo — verde tenue -->
+    <rect x="120" y="290" width="450" height="60" fill="#e0f5e9"/>
   </g>
 
   <!-- Letras dentro de los bloques -->

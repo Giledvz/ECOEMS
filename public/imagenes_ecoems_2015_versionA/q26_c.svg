@@ -1,16 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" width="140" height="140" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="140" height="140" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 160" width="140" height="160" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="140" height="160" fill="#ffffff"/>
   <defs>
-    <symbol id="cubeC26" overflow="visible">
-      <polygon points="0,-15 17,-25 34,-15 17,-5" fill="#e2e8f0" stroke="#1a1a1a" stroke-width="1.2"/>
-      <polygon points="0,-15 17,-5 17,15 0,5" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.2"/>
-      <polygon points="17,-5 34,-15 34,5 17,15" fill="#94a3b8" stroke="#1a1a1a" stroke-width="1.2"/>
+    <symbol id="cubeUnit" overflow="visible">
+      <polygon points="0,0 20,0 20,-20 0,-20" fill="#ffffff" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="20,0 30,-10 30,-30 20,-20" fill="#d8d8d8" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="0,-20 20,-20 30,-30 10,-30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="miter"/>
     </symbol>
   </defs>
-  <!-- Sólido (1): pirámide chica - 2 abajo + 1 arriba -->
-  <g transform="translate(40, 40)">
-    <use href="#cubeC26" x="0" y="60"/>
-    <use href="#cubeC26" x="34" y="60"/>
-    <use href="#cubeC26" x="17" y="40"/>
-  </g>
+
+  <!-- Sólido 3: 111 + 211 + 311 + 221 (soporte) + 222 + 321 + 322 + 223 -->
+  <!-- Render order: back row first, columns bottom-to-top, then front -->
+  <!-- (2,2,1) → 0-based (1,1,0): (60, 110) -->
+  <use href="#cubeUnit" x="60" y="110"/>
+  <!-- (2,2,2) → (1,1,1): (60, 90) -->
+  <use href="#cubeUnit" x="60" y="90"/>
+  <!-- (2,2,3) → (1,1,2): (60, 70) -->
+  <use href="#cubeUnit" x="60" y="70"/>
+  <!-- (3,2,1) → (2,1,0): (80, 110) -->
+  <use href="#cubeUnit" x="80" y="110"/>
+  <!-- (3,2,2) → (2,1,1): (80, 90) -->
+  <use href="#cubeUnit" x="80" y="90"/>
+  <!-- (1,1,1) → (0,0,0): (30, 120) — front-left -->
+  <use href="#cubeUnit" x="30" y="120"/>
+  <!-- (2,1,1) → (1,0,0): (50, 120) — front-middle -->
+  <use href="#cubeUnit" x="50" y="120"/>
+  <!-- (3,1,1) → (2,0,0): (70, 120) — front-right -->
+  <use href="#cubeUnit" x="70" y="120"/>
 </svg>

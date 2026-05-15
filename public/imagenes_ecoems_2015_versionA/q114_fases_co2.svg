@@ -1,15 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" width="480" height="380" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="480" height="380" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="540" height="380" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="540" height="380" fill="#ffffff"/>
 
-  <!-- Origen (60, 320). Eje x: -60..50 °C; eje y: 0..80 atm -->
-  <!-- Cuadrícula -->
+  <!-- Cuadrícula (referencia) -->
   <g stroke="#cbd5e1" stroke-width="0.4">
-    <line x1="60" y1="80" x2="420" y2="80"/>
-    <line x1="60" y1="120" x2="420" y2="120"/>
-    <line x1="60" y1="160" x2="420" y2="160"/>
-    <line x1="60" y1="200" x2="420" y2="200"/>
-    <line x1="60" y1="240" x2="420" y2="240"/>
-    <line x1="60" y1="280" x2="420" y2="280"/>
+    <line x1="60" y1="80"  x2="460" y2="80"/>
+    <line x1="60" y1="120" x2="460" y2="120"/>
+    <line x1="60" y1="160" x2="460" y2="160"/>
+    <line x1="60" y1="200" x2="460" y2="200"/>
+    <line x1="60" y1="240" x2="460" y2="240"/>
+    <line x1="60" y1="280" x2="460" y2="280"/>
     <line x1="100" y1="60" x2="100" y2="320"/>
     <line x1="140" y1="60" x2="140" y2="320"/>
     <line x1="180" y1="60" x2="180" y2="320"/>
@@ -18,40 +17,42 @@
     <line x1="300" y1="60" x2="300" y2="320"/>
     <line x1="340" y1="60" x2="340" y2="320"/>
     <line x1="380" y1="60" x2="380" y2="320"/>
+    <line x1="420" y1="60" x2="420" y2="320"/>
   </g>
 
-  <!-- Ejes principales -->
-  <line x1="60" y1="320" x2="430" y2="320" stroke="#1a1a1a" stroke-width="1.8"/>
-  <line x1="60" y1="320" x2="60" y2="50" stroke="#1a1a1a" stroke-width="1.8"/>
+  <!-- Ejes principales con punta de flecha -->
+  <defs>
+    <marker id="arrowAxis" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0,0 10,4 0,8" fill="#1a1a1a"/>
+    </marker>
+  </defs>
+  <line x1="60" y1="320" x2="475" y2="320" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
+  <line x1="60" y1="320" x2="60" y2="45"  stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
 
-  <!-- Etiquetas eje x: -57, 20, 31 -->
-  <text x="60" y="338" text-anchor="middle" font-size="13" font-style="italic">-57</text>
+  <!-- Etiquetas eje x -->
+  <text x="60"  y="338" text-anchor="middle" font-size="13" font-style="italic">-57</text>
   <text x="280" y="338" text-anchor="middle" font-size="13" font-style="italic">20</text>
   <text x="324" y="338" text-anchor="middle" font-size="13" font-style="italic">31</text>
-  <text x="455" y="328" font-size="14" font-style="italic">T (°C)</text>
+  <text x="490" y="324" font-size="14" font-style="italic">T (°C)</text>
 
-  <!-- Etiquetas eje y: 52, 56, 73 -->
+  <!-- Etiquetas eje y -->
   <text x="50" y="252" text-anchor="end" font-size="13" font-style="italic">52</text>
   <text x="50" y="232" text-anchor="end" font-size="13" font-style="italic">56</text>
   <text x="50" y="142" text-anchor="end" font-size="13" font-style="italic">73</text>
-  <text x="48" y="40" text-anchor="middle" font-size="14" font-style="italic">P (atm)</text>
+  <text x="58" y="38" text-anchor="middle" font-size="14" font-style="italic">P (atm)</text>
 
-  <!-- Curva sublimación: desde (-60°C, 0) sube hasta punto triple (-56.6°C, 5.2 atm) -->
-  <!-- Curva fusión: desde punto triple (~225, 230) sube casi vertical -->
-  <!-- Curva vaporización: desde punto triple sube hasta punto crítico (31°C, 73 atm) -->
+  <!-- Líneas auxiliares -->
+  <line x1="60" y1="170" x2="460" y2="170" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="65" y1="60"  x2="65"  y2="320" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="3,3"/>
 
-  <!-- Líneas auxiliares para 60atm y -57°C -->
-  <line x1="60" y1="170" x2="430" y2="170" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="3,3"/>
-  <line x1="65" y1="60" x2="65" y2="320" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <!-- Curva sublimación (S/V): de (60,320) al punto triple (66,244) -->
+  <path d="M 60 320 Q 60 285, 66 244" fill="none" stroke="#1a1a1a" stroke-width="2"/>
 
-  <!-- Punto triple aproximado en (-56.6, 5.2) → (66, 244) -->
-  <!-- Punto crítico en (31, 73) → (324, 152) -->
-  <!-- Curva sólido-gas (sublimación): de (60,320) a (66, 244) -->
-  <path d="M 60 320 Q 60 280, 66 244" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <!-- Curva sólido-líquido (fusión): casi vertical de (66, 244) hacia arriba -->
-  <path d="M 66 244 L 80 60" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <!-- Curva líquido-gas (vaporización): de (66, 244) hasta punto crítico (324, 152) -->
-  <path d="M 66 244 Q 200 230, 324 152" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Curva fusión (S/L): casi vertical con ligera curvatura a la derecha -->
+  <path d="M 66 244 Q 70 150, 82 60" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Curva vaporización (L/V): cóncava arriba, del punto triple al punto crítico (324,152) -->
+  <path d="M 66 244 C 160 244, 250 220, 324 152" fill="none" stroke="#1a1a1a" stroke-width="2"/>
 
   <!-- Etiquetas de regiones -->
   <text x="100" y="160" font-size="20" font-weight="700">S</text>

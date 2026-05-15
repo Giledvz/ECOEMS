@@ -1,20 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="240" height="240" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="220" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="160" height="160" fill="#ffffff"/>
   <defs>
-    <symbol id="cube" overflow="visible">
-      <polygon points="0,-30 35,-50 70,-30 35,-10" fill="#e2e8f0" stroke="#1a1a1a" stroke-width="1.5"/>
-      <polygon points="0,-30 35,-10 35,30 0,10" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
-      <polygon points="35,-10 70,-30 70,10 35,30" fill="#94a3b8" stroke="#1a1a1a" stroke-width="1.5"/>
+    <symbol id="cubeUnit" overflow="visible">
+      <polygon points="0,0 20,0 20,-20 0,-20" fill="#ffffff" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="20,0 30,-10 30,-30 20,-20" fill="#d8d8d8" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="0,-20 20,-20 30,-30 10,-30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="miter"/>
     </symbol>
   </defs>
-  <g>
-  <g transform="translate(15, 10)">
-    <use href="#cube" x="0" y="160"/>
-    <use href="#cube" x="70" y="160"/>
-    <use href="#cube" x="140" y="160"/>
-    <use href="#cube" x="35" y="120"/>
-    <use href="#cube" x="105" y="120"/>
-    <use href="#cube" x="70" y="80"/>
-  </g>
-  </g>
+
+  <!-- Figura: 211+112+123+134+222+233+321+332+431 -->
+  <!-- Render order: y desc, z asc, x asc -->
+  <!-- y=3 (back row) -->
+  <!-- (4,3,1) → (3,2,0): (105, 110) -->
+  <use href="#cubeUnit" x="105" y="110"/>
+  <!-- (3,3,2) → (2,2,1): (85, 90) -->
+  <use href="#cubeUnit" x="85" y="90"/>
+  <!-- (2,3,3) → (1,2,2): (65, 70) -->
+  <use href="#cubeUnit" x="65" y="70"/>
+  <!-- (1,3,4) → (0,2,3): (45, 50) -->
+  <use href="#cubeUnit" x="45" y="50"/>
+  <!-- y=2 (middle row) -->
+  <!-- (3,2,1) → (2,1,0): (75, 120) -->
+  <use href="#cubeUnit" x="75" y="120"/>
+  <!-- (2,2,2) → (1,1,1): (55, 100) -->
+  <use href="#cubeUnit" x="55" y="100"/>
+  <!-- (1,2,3) → (0,1,2): (35, 80) -->
+  <use href="#cubeUnit" x="35" y="80"/>
+  <!-- y=1 (front row) -->
+  <!-- (2,1,1) → (1,0,0): (45, 130) -->
+  <use href="#cubeUnit" x="45" y="130"/>
+  <!-- (1,1,2) → (0,0,1): (25, 110) -->
+  <use href="#cubeUnit" x="25" y="110"/>
 </svg>
