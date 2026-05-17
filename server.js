@@ -759,6 +759,7 @@ io.on('connection', (socket) => {
       totalQuestions: room.questions.length,
       startTime: room.startTime,
       timeLimit: room.timeLimitMinutes,
+      serverTime: Date.now(),
     });
   });
 
@@ -855,6 +856,7 @@ io.on('connection', (socket) => {
       startTime: room.startTime,
       roomCode,
       cancelled: !!student.cancelled,
+      serverTime: Date.now(),
     };
 
     if (student.submitted) {
@@ -901,10 +903,10 @@ io.on('connection', (socket) => {
     if (!student || student.submitted || student.cancelled) return;
     student.tabSwitches = (student.tabSwitches || 0) + 1;
     socket.emit('tabSwitchCount', { count: student.tabSwitches });
-    if (student.tabSwitches >= 4) {
+    if (student.tabSwitches >= 3) {
       student.cancelled = true;
       socket.emit('examCancelled');
-      console.log(`[${roomCode}] ${student.name} cancelado por 4 salidas`);
+      console.log(`[${roomCode}] ${student.name} cancelado por 3 salidas`);
     }
     io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
   });
@@ -983,7 +985,7 @@ io.on('connection', (socket) => {
     room.phase = 'active';
     room.startTime = Date.now();
     Object.values(room.students).forEach(s => { s.startTime = room.startTime; });
-    io.to(roomCode).emit('examStarted', { startTime: room.startTime, timeLimit: room.timeLimitMinutes });
+    io.to(roomCode).emit('examStarted', { startTime: room.startTime, timeLimit: room.timeLimitMinutes, serverTime: Date.now() });
     broadcastRoomsList();
     console.log(`[${roomCode}] Examen iniciado`);
   });

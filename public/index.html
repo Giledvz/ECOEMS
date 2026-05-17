@@ -439,7 +439,7 @@ function renderMath(text) {
   }
 }
 
-let state = { questions: [], answers: {}, answerKey: {}, explanations: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null };
+let state = { questions: [], answers: {}, answerKey: {}, explanations: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null, clockOffset: 0 };
 
 function saveState() {
   try { localStorage.setItem('examState', JSON.stringify({ roomCode: state.roomCode, name: state.name, group: state.group, answers: state.answers, marked: state.marked, currentQ: state.currentQ })); } catch(e) {}
@@ -1032,7 +1032,7 @@ function startTimer(startTime, limitMinutes) {
   state.startTime = startTime; state.timeLimit = limitMinutes;
   if (state.timerInterval) clearInterval(state.timerInterval);
   state.timerInterval = setInterval(() => {
-    const remaining = (state.timeLimit * 60) - ((Date.now() - state.startTime) / 1000);
+    const remaining = (state.timeLimit * 60) - (((Date.now() + state.clockOffset) - state.startTime) / 1000);
     if (remaining <= 0) { clearInterval(state.timerInterval); document.getElementById('timerDisplay').textContent = '0:00:00'; if (!state.submitted && !state.submitPending) startSubmitFlow(); return; }
     const h = Math.floor(remaining / 3600), m = Math.floor((remaining % 3600) / 60), s = Math.floor(remaining % 60);
     const el = document.getElementById('timerDisplay');
@@ -1091,6 +1091,8 @@ socket.on('joined', (data) => {
   state.answerKey = {}; state.submitted = false; state.reviewMode = false;
   state.name = data.name; state.group = data.group; state.timeLimit = data.timeLimit;
   if (data.roomCode) state.roomCode = data.roomCode;
+  // Calibrar reloj contra el servidor para que el timer no expire si el dispositivo del alumno tiene la fecha/hora mal.
+  state.clockOffset = data.serverTime ? (data.serverTime - Date.now()) : 0;
 
   // Priorizar la fuente con mas respuestas (backup sobrevive al setTimeout de entrega,
   // examState puede haberse borrado por un enterReviewMode previo).
@@ -1141,7 +1143,7 @@ function showTabWarn(count) {
   const icon = document.getElementById('tabWarnIcon');
   const title = document.getElementById('tabWarnTitle');
   const msg = document.getElementById('tabWarnMsg');
-  if (count === 3) {
+  if (count === 2) {
     card.classList.add('danger');
     icon.textContent = '🚨';
     title.textContent = '¡Última advertencia!';
@@ -1159,12 +1161,13 @@ function showCancelOverlay() { document.getElementById('cancelOverlay').classLis
 function hideCancelOverlay() { document.getElementById('cancelOverlay').classList.remove('show'); }
 
 socket.on('tabSwitchCount', ({ count }) => {
-  if (count === 3) showTabWarn(count);
+  if (count === 1 || count === 2) showTabWarn(count);
 });
 socket.on('examCancelled', () => { showCancelOverlay(); });
 socket.on('examRestored', () => { hideCancelOverlay(); });
 
 socket.on('examStarted', (data) => {
+  if (data.serverTime) state.clockOffset = data.serverTime - Date.now();
   showScreen('examScreen');
   if (!state.currentQ) state.currentQ = 0;
   if (state.questions.length === 0 && state.name) {
