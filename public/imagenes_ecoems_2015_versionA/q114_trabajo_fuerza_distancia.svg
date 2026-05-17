@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="600" height="400" fill="#ffffff"/>
+
+  <!-- Cuadrícula sutil -->
+  <g stroke="#e5e7eb" stroke-width="0.4">
+    <line x1="80" y1="130" x2="520" y2="130"/>
+    <line x1="80" y1="200" x2="520" y2="200"/>
+    <line x1="80" y1="270" x2="520" y2="270"/>
+    <line x1="168" y1="60" x2="168" y2="340"/>
+    <line x1="256" y1="60" x2="256" y2="340"/>
+    <line x1="344" y1="60" x2="344" y2="340"/>
+    <line x1="432" y1="60" x2="432" y2="340"/>
+    <line x1="520" y1="60" x2="520" y2="340"/>
+  </g>
+
+  <!-- Área bajo la curva entre A y B = Trabajo -->
+  <rect x="212" y="200" width="220" height="140" fill="#bfdbfe" opacity="0.55"/>
+  <text x="322" y="275" text-anchor="middle" font-size="15" font-style="italic" fill="#1e40af">W = F · Δd</text>
+
+  <!-- Marcador de flecha -->
+  <defs>
+    <marker id="arrowAxis" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0,0 10,4 0,8" fill="#1a1a1a"/>
+    </marker>
+  </defs>
+
+  <!-- Ejes -->
+  <line x1="80" y1="340" x2="545" y2="340" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
+  <line x1="80" y1="340" x2="80"  y2="50"  stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
+
+  <!-- Títulos de los ejes -->
+  <text x="560" y="345" font-size="14" font-style="italic">d (m)</text>
+  <text x="50"  y="50"  text-anchor="middle" font-size="14" font-style="italic">F (N)</text>
+
+  <!-- Etiquetas del eje Y -->
+  <text x="72" y="344" text-anchor="end" font-size="12" font-style="italic">0</text>
+  <text x="72" y="274" text-anchor="end" font-size="12" font-style="italic">5</text>
+  <text x="72" y="204" text-anchor="end" font-size="12" font-style="italic">10</text>
+  <text x="72" y="134" text-anchor="end" font-size="12" font-style="italic">15</text>
+
+  <!-- Etiquetas del eje X -->
+  <text x="80"  y="358" text-anchor="middle" font-size="12" font-style="italic">0</text>
+  <text x="168" y="358" text-anchor="middle" font-size="12" font-style="italic">2</text>
+  <text x="212" y="358" text-anchor="middle" font-size="13" font-weight="700">3</text>
+  <text x="256" y="358" text-anchor="middle" font-size="12" font-style="italic">4</text>
+  <text x="344" y="358" text-anchor="middle" font-size="12" font-style="italic">6</text>
+  <text x="432" y="358" text-anchor="middle" font-size="13" font-weight="700">8</text>
+  <text x="520" y="358" text-anchor="middle" font-size="12" font-style="italic">10</text>
+
+  <!-- Línea horizontal F = 10 N (la función) -->
+  <line x1="80" y1="200" x2="520" y2="200" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Líneas auxiliares punteadas desde A y B hasta el eje X -->
+  <line x1="212" y1="200" x2="212" y2="340" stroke="#1a1a1a" stroke-width="0.7" stroke-dasharray="3,3"/>
+  <line x1="432" y1="200" x2="432" y2="340" stroke="#1a1a1a" stroke-width="0.7" stroke-dasharray="3,3"/>
+
+  <!-- Puntos A y B -->
+  <circle cx="212" cy="200" r="4.5" fill="#1a1a1a"/>
+  <circle cx="432" cy="200" r="4.5" fill="#1a1a1a"/>
+
+  <!-- Etiquetas A y B -->
+  <text x="212" y="188" text-anchor="middle" font-size="17" font-weight="700">A</text>
+  <text x="432" y="188" text-anchor="middle" font-size="17" font-weight="700">B</text>
+</svg>

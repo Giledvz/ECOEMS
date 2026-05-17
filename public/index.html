@@ -133,6 +133,29 @@
   body.dark .submit-card p { color: #aaa; }
   body.dark .submit-card .spinner { border-color: #2a2a4a; border-top-color: #7eb8f7; }
 
+  /* ── Tab warning toast / cancellation overlay ── */
+  .tab-warn-overlay { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.7); z-index: 1100; display: none; align-items: center; justify-content: center; padding: 24px; }
+  .tab-warn-overlay.show { display: flex; }
+  .tab-warn-card { background: #fff; border-radius: 14px; padding: 24px 22px; max-width: 380px; width: 100%; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.3); border-top: 6px solid #eab308; }
+  .tab-warn-card.danger { border-top-color: #e53e3e; }
+  .tab-warn-icon { font-size: 38px; margin-bottom: 8px; }
+  .tab-warn-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: #1a1a1a; }
+  .tab-warn-card p { font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 16px; }
+  .tab-warn-card button { background: #2c5282; color: #fff; border: 0; padding: 10px 22px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
+  body.dark .tab-warn-card { background: #16213e; color: #e0e0e0; }
+  body.dark .tab-warn-card h3 { color: #e0e0e0; }
+  body.dark .tab-warn-card p { color: #aaa; }
+
+  .cancel-overlay { position: fixed; inset: 0; background: rgba(127, 29, 29, 0.95); z-index: 1200; display: none; align-items: center; justify-content: center; padding: 24px; }
+  .cancel-overlay.show { display: flex; }
+  .cancel-card { background: #fff; border-radius: 14px; padding: 32px 26px; max-width: 420px; width: 100%; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+  .cancel-icon { font-size: 56px; margin-bottom: 12px; color: #e53e3e; }
+  .cancel-card h2 { font-size: 22px; font-weight: 800; margin-bottom: 10px; color: #b91c1c; }
+  .cancel-card p { font-size: 15px; color: #444; line-height: 1.55; margin-bottom: 8px; }
+  body.dark .cancel-card { background: #16213e; }
+  body.dark .cancel-card h2 { color: #fca5a5; }
+  body.dark .cancel-card p { color: #cbd5e1; }
+
   /* ── Results Screen ── */
   .results-screen { align-items: center; gap: 16px; text-align: center; padding-top: 32px; padding-bottom: 40px; }
   .topic-breakdown { width: 100%; max-width: 480px; text-align: left; margin-top: 8px; }
@@ -209,6 +232,24 @@
     <p id="submitMsg">Estamos registrando tu entrega en el servidor. Por favor, no cierres esta pagina.</p>
     <p class="attempts" id="submitAttempts"></p>
     <p class="warn">Manten el WiFi conectado. Se reintentara automaticamente hasta confirmar.</p>
+  </div>
+</div>
+
+<div class="tab-warn-overlay" id="tabWarnOverlay">
+  <div class="tab-warn-card" id="tabWarnCard">
+    <div class="tab-warn-icon" id="tabWarnIcon">⚠️</div>
+    <h3 id="tabWarnTitle">Aviso</h3>
+    <p id="tabWarnMsg"></p>
+    <button onclick="hideTabWarn()">Entendido</button>
+  </div>
+</div>
+
+<div class="cancel-overlay" id="cancelOverlay">
+  <div class="cancel-card">
+    <div class="cancel-icon">⛔</div>
+    <h2>Examen cancelado</h2>
+    <p>Has salido del examen <strong>4 veces</strong>.</p>
+    <p>Tu examen ha sido <strong>cancelado</strong>. Acude con tu profesor para más información.</p>
   </div>
 </div>
 <script>
@@ -1091,7 +1132,37 @@ socket.on('joined', (data) => {
   } else {
     showScreen('waitingScreen');
   }
+
+  if (data.cancelled) showCancelOverlay();
 });
+
+function showTabWarn(count) {
+  const card = document.getElementById('tabWarnCard');
+  const icon = document.getElementById('tabWarnIcon');
+  const title = document.getElementById('tabWarnTitle');
+  const msg = document.getElementById('tabWarnMsg');
+  if (count === 3) {
+    card.classList.add('danger');
+    icon.textContent = '🚨';
+    title.textContent = '¡Última advertencia!';
+    msg.innerHTML = `Has salido del examen <strong>${count} veces</strong>.<br>Si sales <strong>una vez más</strong>, tu examen será <strong>cancelado</strong>.`;
+  } else {
+    card.classList.remove('danger');
+    icon.textContent = '⚠️';
+    title.textContent = 'Aviso';
+    msg.innerHTML = `Has salido del examen <strong>${count} ${count === 1 ? 'vez' : 'veces'}</strong>. Permanece en esta pestaña.`;
+  }
+  document.getElementById('tabWarnOverlay').classList.add('show');
+}
+function hideTabWarn() { document.getElementById('tabWarnOverlay').classList.remove('show'); }
+function showCancelOverlay() { document.getElementById('cancelOverlay').classList.add('show'); }
+function hideCancelOverlay() { document.getElementById('cancelOverlay').classList.remove('show'); }
+
+socket.on('tabSwitchCount', ({ count }) => {
+  if (count === 3) showTabWarn(count);
+});
+socket.on('examCancelled', () => { showCancelOverlay(); });
+socket.on('examRestored', () => { hideCancelOverlay(); });
 
 socket.on('examStarted', (data) => {
   showScreen('examScreen');

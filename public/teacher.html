@@ -92,6 +92,9 @@
   .dot-connected { background: #4ade80; }
   .dot-disconnected { background: #f87171; }
   .dot-submitted { background: #60a5fa; }
+  .dot-cancelled { background: #dc2626; box-shadow: 0 0 6px #dc2626; }
+  .btn-restore { background: #16a34a; color: #fff; border: 0; padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer; margin-left: 8px; }
+  .btn-restore:hover { background: #15803d; }
 
   .empty-state { text-align: center; padding: 48px; color: #64748b; }
   .empty-state p { font-size: 14px; }
@@ -342,6 +345,13 @@ function closeExam() {
   }
 }
 
+function restoreStudent(studentId, studentName) {
+  if (!selectedRoom) return;
+  if (confirm(`¿Restaurar el examen de ${studentName}? Su contador de salidas se reiniciará a 0.`)) {
+    socket.emit('restoreStudent', { roomCode: selectedRoom, studentId });
+  }
+}
+
 async function reloadJSON() {
   if (!selectedRoom) return;
   try {
@@ -546,7 +556,8 @@ function renderStudents(students) {
     const pct = s.total > 0 ? Math.round((s.answered / s.total) * 100) : 0;
 
     let statusDot, statusText;
-    if (s.submitted) { statusDot = 'dot-submitted'; statusText = 'Entregado'; }
+    if (s.cancelled) { statusDot = 'dot-cancelled'; statusText = 'Cancelado'; }
+    else if (s.submitted) { statusDot = 'dot-submitted'; statusText = 'Entregado'; }
     else if (s.connected) { statusDot = 'dot-connected'; statusText = 'Conectado'; }
     else { statusDot = 'dot-disconnected'; statusText = 'Desconectado'; }
 
@@ -563,9 +574,13 @@ function renderStudents(students) {
       scoreStr = `${s.correct}/${s.total}`;
     }
 
+    const restoreBtn = s.cancelled
+      ? `<button class="btn-restore" onclick="restoreStudent('${s.id}', '${s.name.replace(/'/g, "\\'")}')">Restaurar</button>`
+      : '';
+
     const row = document.createElement('tr');
     row.innerHTML = `
-      <td><span class="status-dot ${statusDot}"></span>${statusText}</td>
+      <td><span class="status-dot ${statusDot}"></span>${statusText}${restoreBtn}</td>
       <td>${s.name}</td>
       <td>${s.group}</td>
       <td>

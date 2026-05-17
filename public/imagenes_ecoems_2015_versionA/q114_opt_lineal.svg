@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 150" width="220" height="150" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="220" height="150" fill="#ffffff"/>
+  <defs>
+    <marker id="arrowS" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#1a1a1a"/>
+    </marker>
+  </defs>
+  <!-- Línea punteada horizontal a $50 -->
+  <line x1="20" y1="95" x2="200" y2="95" stroke="#9ca3af" stroke-width="0.7" stroke-dasharray="3,3"/>
+  <!-- Ejes -->
+  <line x1="20" y1="125" x2="205" y2="125" stroke="#1a1a1a" stroke-width="1.5" marker-end="url(#arrowS)"/>
+  <line x1="20" y1="125" x2="20"  y2="15"  stroke="#1a1a1a" stroke-width="1.5" marker-end="url(#arrowS)"/>
+  <!-- Etiquetas de ejes -->
+  <text x="210" y="138" font-size="11" font-style="italic">d</text>
+  <text x="10"  y="13"  font-size="11" font-style="italic">C</text>
+  <!-- Etiqueta $50 -->
+  <text x="16" y="99" text-anchor="end" font-size="10" font-style="italic">50</text>
+  <line x1="17" y1="95" x2="22" y2="95" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Recta correcta: parte de (20, 95) con pendiente positiva -->
+  <line x1="20" y1="95" x2="200" y2="25" stroke="#1a1a1a" stroke-width="2"/>
+</svg>

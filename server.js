@@ -123,6 +123,7 @@ function getStudentSummary(room) {
       correct: s.submitted ? correct : null,
       timeUsed,
       tabSwitches: s.tabSwitches || 0,
+      cancelled: !!s.cancelled,
     };
   });
 }
@@ -212,7 +213,8 @@ app.post('/api/dev-reload/:roomCode', (req, res) => {
   (data.exam?.sections || []).forEach(section => {
     (section.questions || []).forEach(q => {
       newQuestions.push({
-        id: q.id, text: q.text, options: q.options, image: q.image || null,
+        id: q.id, text: q.text, context: q.context || null,
+        options: q.options, image: q.image || null,
         topic: q.topic, topic_name: q.topic_name || '',
         subject: section.subject, explanation: q.explanation || '',
       });
@@ -821,6 +823,7 @@ io.on('connection', (socket) => {
         optionOrders,
         answerKey: {},
         tabSwitches: 0,
+        cancelled: false,
         joinedAt: Date.now(),
       };
     }
@@ -851,6 +854,7 @@ io.on('connection', (socket) => {
       examActive: room.phase === 'active',
       startTime: room.startTime,
       roomCode,
+      cancelled: !!student.cancelled,
     };
 
     if (student.submitted) {
@@ -880,7 +884,7 @@ io.on('connection', (socket) => {
     const room = roomCode && rooms.get(roomCode);
     if (!room) return;
     const student = room.students[socket.id];
-    if (!student || student.submitted) return;
+    if (!student || student.submitted || student.cancelled) return;
     if (room.phase !== 'active') return;
     if (student.joinedAt && Date.now() - student.joinedAt < 3000) return;
     student.answers[questionId] = answer;
@@ -892,10 +896,30 @@ io.on('connection', (socket) => {
     const roomCode = socketRoom.get(socket.id);
     const room = roomCode && rooms.get(roomCode);
     if (!room) return;
+    if (room.phase !== 'active') return;
     const student = room.students[socket.id];
-    if (!student || student.submitted) return;
+    if (!student || student.submitted || student.cancelled) return;
     student.tabSwitches = (student.tabSwitches || 0) + 1;
+    socket.emit('tabSwitchCount', { count: student.tabSwitches });
+    if (student.tabSwitches >= 4) {
+      student.cancelled = true;
+      socket.emit('examCancelled');
+      console.log(`[${roomCode}] ${student.name} cancelado por 4 salidas`);
+    }
     io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
+  });
+
+  // ── Teacher restores a cancelled student ──
+  socket.on('restoreStudent', ({ roomCode, studentId }) => {
+    const room = rooms.get(roomCode);
+    if (!room) return;
+    const student = room.students[studentId];
+    if (!student) return;
+    student.cancelled = false;
+    student.tabSwitches = 0;
+    io.to(studentId).emit('examRestored');
+    io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
+    console.log(`[${roomCode}] ${student.name} restaurado por profesor`);
   });
 
   // ── Student marks/unmarks question ──
@@ -904,7 +928,7 @@ io.on('connection', (socket) => {
     const room = roomCode && rooms.get(roomCode);
     if (!room) return;
     const student = room.students[socket.id];
-    if (!student || student.submitted) return;
+    if (!student || student.submitted || student.cancelled) return;
     const idx = student.marked.indexOf(questionId);
     if (idx === -1) student.marked.push(questionId);
     else student.marked.splice(idx, 1);
