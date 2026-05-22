@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 130" width="440" height="130" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="440" height="130" fill="#ffffff"/>
+  <g transform="translate(20, 30)">
+    <!-- 9 triángulos equiláteros en zigzag, base s=40, altura h=34.64 -->
+    <!-- Puntos arriba: B(20,0), D(60,0), F(100,0), H(140,0), J(180,0)  → para 5 puntos arriba
+         Puntos abajo: A(0,h), C(40,h), E(80,h), G(120,h), I(160,h), K(200,h)
+         Pero la imagen tiene 5 arriba (B,D,F,H,J) y 6 abajo (A,C,E,G,I,K). Necesitamos 9 triángulos.
+         Con 9 triángulos en zigzag necesitamos 5 vértices arriba + 6 abajo = 11 vértices, 9 triángulos.
+         s=40, h≈34.64 -->
+    <g stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linejoin="round">
+      <!-- Contorno superior (línea que une todos los vértices superiores e inferiores) -->
+      <!-- Mejor: dibujo el contorno externo y luego las aristas internas (los dobleces) -->
+      <!-- Contorno externo: A→B→D→F→H→J→K→I→G→E→C→A -->
+      <polygon points="0,40 20,0 60,0 100,0 140,0 180,0 200,40 160,40 120,40 80,40 40,40" />
+      <!-- Aristas internas (dobleces) en línea punteada -->
+      <g stroke-dasharray="3,3">
+        <line x1="20" y1="0" x2="40" y2="40"/>
+        <line x1="40" y1="40" x2="60" y2="0"/>
+        <line x1="60" y1="0" x2="80" y2="40"/>
+        <line x1="80" y1="40" x2="100" y2="0"/>
+        <line x1="100" y1="0" x2="120" y2="40"/>
+        <line x1="120" y1="40" x2="140" y2="0"/>
+        <line x1="140" y1="0" x2="160" y2="40"/>
+        <line x1="160" y1="40" x2="180" y2="0"/>
+      </g>
+    </g>
+    <!-- Etiquetas de vértices superiores (B, D, F, H, J) -->
+    <g font-size="13" font-style="italic" text-anchor="middle">
+      <text x="20" y="-8">B</text>
+      <text x="60" y="-8">D</text>
+      <text x="100" y="-8">F</text>
+      <text x="140" y="-8">H</text>
+      <text x="180" y="-8">J</text>
+    </g>
+    <!-- Etiquetas de vértices inferiores (A, C, E, G, I, K) -->
+    <g font-size="13" font-style="italic" text-anchor="middle">
+      <text x="0" y="58">A</text>
+      <text x="40" y="58">C</text>
+      <text x="80" y="58">E</text>
+      <text x="120" y="58">G</text>
+      <text x="160" y="58">I</text>
+      <text x="200" y="58">K</text>
+    </g>
+    <!-- Números de dobleces 1..8: cada uno en el centroide del triángulo correspondiente
+         (los impares quedan arriba sobre la base B-D-F-H-J; los pares abajo sobre A-C-E-G-I-K) -->
+    <g font-size="11" text-anchor="middle">
+      <text x="33" y="15">1</text>
+      <text x="53" y="32">2</text>
+      <text x="73" y="15">3</text>
+      <text x="93" y="32">4</text>
+      <text x="113" y="15">5</text>
+      <text x="133" y="32">6</text>
+      <text x="153" y="15">7</text>
+      <text x="173" y="32">8</text>
+    </g>
+  </g>
+</svg>

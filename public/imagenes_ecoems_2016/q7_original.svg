@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 36" width="260" height="36" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="260" height="36" fill="#ffffff"/>
+  <!-- Cuatro cajas: 0=●●●, 1=●●○, 2=●○●, 3=●○○ (blanco=○ vale 1; negro=● vale 0) -->
+
+  <!-- 0: ●●● -->
+  <rect x="6" y="8" width="50" height="20" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
+  <circle cx="18" cy="18" r="5" fill="#1a1a1a"/>
+  <circle cx="31" cy="18" r="5" fill="#1a1a1a"/>
+  <circle cx="44" cy="18" r="5" fill="#1a1a1a"/>
+
+  <!-- 1: ●●○ -->
+  <rect x="72" y="8" width="50" height="20" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
+  <circle cx="84" cy="18" r="5" fill="#1a1a1a"/>
+  <circle cx="97" cy="18" r="5" fill="#1a1a1a"/>
+  <circle cx="110" cy="18" r="5" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
+
+  <!-- 2: ●○● -->
+  <rect x="138" y="8" width="50" height="20" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
+  <circle cx="150" cy="18" r="5" fill="#1a1a1a"/>
+  <circle cx="163" cy="18" r="5" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
+  <circle cx="176" cy="18" r="5" fill="#1a1a1a"/>
+
+  <!-- 3: ●○○ -->
+  <rect x="204" y="8" width="50" height="20" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
+  <circle cx="216" cy="18" r="5" fill="#1a1a1a"/>
+  <circle cx="229" cy="18" r="5" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
+  <circle cx="242" cy="18" r="5" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
+</svg>

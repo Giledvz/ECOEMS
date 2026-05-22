@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" width="360" height="240" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="360" height="240" fill="#ffffff"/>
+  <!-- Unidad u = 25 px. Rectángulo total 13u × 8u = 325 × 200. -->
+  <!-- Coords:  x = 15..340 (ancho 325), y = 20..220 (alto 200). -->
+  <g stroke="#1a1a1a" stroke-width="1.5" fill="none">
+    <!-- Cuadrado grande 8×8 izquierda: 15..215, 20..220 -->
+    <rect x="15" y="20" width="200" height="200"/>
+    <!-- Cuadrado 5×5 arriba derecha: 215..340, 20..145 -->
+    <rect x="215" y="20" width="125" height="125"/>
+    <!-- Cuadrado 3×3 abajo derecha: 265..340, 145..220 -->
+    <rect x="265" y="145" width="75" height="75"/>
+    <!-- Cuadrado 2×2 (sin divisiones internas): 215..265, 170..220 -->
+    <rect x="215" y="170" width="50" height="50"/>
+    <!-- Cuadrado 1×1 blanco arriba del 2×2 (izquierda): 215..240, 145..170 -->
+    <rect x="215" y="145" width="25" height="25"/>
+  </g>
+  <!-- Cuadrado 1×1 negro arriba del 2×2 (derecha): 240..265, 145..170 -->
+  <rect x="240" y="145" width="25" height="25" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 170" width="180" height="170" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="180" height="170" fill="#ffffff"/>
+  <g stroke="#dddddd" stroke-width="0.7" fill="none">
+    <line x1="40" y1="20" x2="40" y2="140"/>
+    <line x1="60" y1="20" x2="60" y2="140"/>
+    <line x1="80" y1="20" x2="80" y2="140"/>
+    <line x1="100" y1="20" x2="100" y2="140"/>
+    <line x1="120" y1="20" x2="120" y2="140"/>
+    <line x1="140" y1="20" x2="140" y2="140"/>
+    <line x1="160" y1="20" x2="160" y2="140"/>
+    <line x1="20" y1="40" x2="160" y2="40"/>
+    <line x1="20" y1="60" x2="160" y2="60"/>
+    <line x1="20" y1="80" x2="160" y2="80"/>
+    <line x1="20" y1="100" x2="160" y2="100"/>
+    <line x1="20" y1="120" x2="160" y2="120"/>
+  </g>
+  <g stroke="#1a1a1a" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <line x1="20" y1="140" x2="165" y2="140"/>
+    <line x1="20" y1="140" x2="20" y2="15"/>
+  </g>
+  <polygon points="165,140 157,136 157,144" fill="#1a1a1a"/>
+  <polygon points="20,15 16,23 24,23" fill="#1a1a1a"/>
+  <!-- Recta B: intersección y > 0 (en y=100) con pendiente positiva moderada -->
+  <line x1="20" y1="100" x2="150" y2="40" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="0" y="26" font-size="17" font-style="italic">$</text>
+  <text x="90" y="162" font-size="13" font-style="italic" text-anchor="middle">Tiempo</text>
+</svg>

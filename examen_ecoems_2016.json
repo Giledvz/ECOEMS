@@ -1,0 +1,1898 @@
+{
+  "exam": {
+    "title": "Examen ECOEMS 2016 — Versión 3",
+    "group": "ECOEMS",
+    "version": "1.0",
+    "total_questions": 128,
+    "students": [
+      "Ari",
+      "Alexander",
+      "Axel",
+      "Citlaly",
+      "Conchita",
+      "Julio",
+      "Kevin",
+      "Leah",
+      "Marley",
+      "Rafaela",
+      "Regina",
+      "Roxanna",
+      "Sofía",
+      "Ximena",
+      "Yuli"
+    ],
+    "instructions": "Examen tipo COMIPEMS. Selecciona la opción correcta para cada pregunta. Tienes 3 horas. Al entregar podrás ver la explicación de cada pregunta.",
+    "sections": [
+      {
+        "subject": "Habilidad matemática",
+        "questions_count": 16,
+        "questions": [
+          {
+            "id": 1,
+            "topic": "HM.1",
+            "topic_name": "Sucesiones numéricas",
+            "text": "Selecciona el número que completa correctamente la siguiente sucesión.\n\n$$98,\\ 79,\\ 71,\\ 64,\\ \\_\\_\\_$$",
+            "options": {
+              "A": "55",
+              "B": "56",
+              "C": "57",
+              "D": "58"
+            },
+            "answer": "D",
+            "explanation": "Las diferencias son $-9, -8, -7, -6$, por lo que el siguiente término es $64 - 6 = 58$."
+          },
+          {
+            "id": 2,
+            "topic": "HM.2",
+            "topic_name": "Sucesiones numéricas",
+            "text": "Indica cuáles son los dos números que completan correctamente la sucesión.\n\n$$-4.3,\\ \\_\\_\\_,\\ \\_\\_\\_,\\ 2.6,\\ 4.9$$",
+            "options": {
+              "A": "-3.0, -0.3",
+              "B": "-2.0, 0.3",
+              "C": "-0.2, 1.3",
+              "D": "0, 1.3"
+            },
+            "answer": "B",
+            "explanation": "La sucesión tiene razón aritmética $+2.3$: $-4.3, -2.0, 0.3, 2.6, 4.9$."
+          },
+          {
+            "id": 3,
+            "topic": "HM.3",
+            "topic_name": "Evaluación de expresiones",
+            "text": "¿Cuál es la sucesión que se genera al sustituir $x$ por $1, 2, 3$ y $4$ en la siguiente expresión?\n\n$$-\\frac{1}{x}(-1)^x$$",
+            "options": {
+              "A": "$1,\\ -\\frac{1}{2},\\ \\frac{1}{3},\\ -\\frac{1}{4}$",
+              "B": "$1,\\ \\frac{1}{2},\\ \\frac{1}{3},\\ \\frac{1}{4}$",
+              "C": "$-1,\\ \\frac{1}{2},\\ -\\frac{1}{3},\\ \\frac{1}{4}$",
+              "D": "$-1,\\ -\\frac{1}{2},\\ -\\frac{1}{3},\\ -\\frac{1}{4}$"
+            },
+            "answer": "A",
+            "explanation": "Para $x=1$: $-\\frac{1}{1}(-1)^1 = 1$. Para $x=2$: $-\\frac{1}{2}(-1)^2 = -\\frac{1}{2}$. Para $x=3$: $-\\frac{1}{3}(-1)^3 = \\frac{1}{3}$. Para $x=4$: $-\\frac{1}{4}(-1)^4 = -\\frac{1}{4}$."
+          },
+          {
+            "id": 4,
+            "topic": "HM.4",
+            "topic_name": "Sucesiones con regla general",
+            "text": "¿A cuánto equivale $x_9$ (el elemento nueve) en la siguiente sucesión?\n\n$$x_1 = 2,\\ x_2 = 5,\\ x_3 = 10,\\ x_4 = 17,\\ \\ldots$$",
+            "options": {
+              "A": "61",
+              "B": "76",
+              "C": "82",
+              "D": "99"
+            },
+            "answer": "C",
+            "explanation": "El patrón es $x_n = n^2 + 1$. Entonces $x_9 = 9^2 + 1 = 82$."
+          },
+          {
+            "id": 5,
+            "topic": "HM.5",
+            "topic_name": "Series espaciales — polígonos",
+            "image": "/imagenes_ecoems_2016/q5_original.svg",
+            "text": "Selecciona entre las opciones la figura siguiente de esta serie:",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems_2016/q5_a.svg\" style=\"width:100%;max-width:90px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems_2016/q5_b.svg\" style=\"width:100%;max-width:90px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems_2016/q5_c.svg\" style=\"width:100%;max-width:90px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems_2016/q5_d.svg\" style=\"width:100%;max-width:90px;display:block;\">"
+            },
+            "answer": "C",
+            "explanation": "Dos cualidades no cambian en la serie: el círculo es negro y el polígono blanco. El número de lados sigue 6, 5, 4, 3 (triángulo). El patrón inscrito/circunscrito alterna: inscrito, circunscrito, inscrito, circunscrito → el cuarto elemento es un triángulo blanco circunscrito al círculo negro (círculo dentro del triángulo)."
+          },
+          {
+            "id": 6,
+            "topic": "HM.6",
+            "topic_name": "Series espaciales — cruces y rectángulos",
+            "image": "/imagenes_ecoems_2016/q6_original.svg",
+            "text": "Selecciona la figura que corresponde al elemento siguiente de esta serie.",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems_2016/q6_a.svg\" style=\"width:100%;max-width:100px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems_2016/q6_b.svg\" style=\"width:100%;max-width:100px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems_2016/q6_c.svg\" style=\"width:100%;max-width:100px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems_2016/q6_d.svg\" style=\"width:100%;max-width:100px;display:block;\">"
+            },
+            "answer": "B",
+            "explanation": "La parte constante es la cruz (+). Las dos partes variables (rectángulo y línea vertical) avanzan en sentido horario alrededor de la cruz; la figura completa la serie con rectángulo abajo-izq y línea arriba-der."
+          },
+          {
+            "id": 7,
+            "topic": "HM.7",
+            "topic_name": "Series espaciales — representación binaria",
+            "image": "/imagenes_ecoems_2016/q7_original.svg",
+            "text": "Esta serie de figuras es una forma de representar los números binarios: 0, 1, 2 y 3.\n\n¿Cuál es el siguiente elemento de esta serie, es decir, la opción que representa el número 4?",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems_2016/q7_a.svg\" style=\"width:100%;max-width:80px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems_2016/q7_b.svg\" style=\"width:100%;max-width:80px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems_2016/q7_c.svg\" style=\"width:100%;max-width:80px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems_2016/q7_d.svg\" style=\"width:100%;max-width:80px;display:block;\">"
+            },
+            "answer": "D",
+            "explanation": "En esta notación binaria los círculos negros valen 0 y los blancos valen 1, con valor posicional (el de la izquierda vale más). El número 4 en binario es 100, que se representa con un círculo blanco a la izquierda y dos negros: ○●●."
+          },
+          {
+            "id": 8,
+            "topic": "HM.8",
+            "topic_name": "Series espaciales — hexágonos",
+            "image": "/imagenes_ecoems_2016/q8_original.svg",
+            "text": "Selecciona la figura que corresponde al elemento siguiente de esta serie.",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems_2016/q8_a.svg\" style=\"width:100%;max-width:100px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems_2016/q8_b.svg\" style=\"width:100%;max-width:100px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems_2016/q8_c.svg\" style=\"width:100%;max-width:100px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems_2016/q8_d.svg\" style=\"width:100%;max-width:100px;display:block;\">"
+            },
+            "answer": "A",
+            "explanation": "El círculo gira 120° antihorario y alterna blanco/negro: en el elemento 4 ha completado 360° y vuelve a su color negro inicial. Los dos triángulos cercanos al círculo comparten su color (negros) y el lejano es blanco."
+          },
+          {
+            "id": 9,
+            "topic": "HM.9",
+            "topic_name": "Razonamiento espacial — cubos",
+            "image": "/imagenes_ecoems_2016/q9_original.svg",
+            "text": "Si cambiaras la posición de solamente un cubo de esta figura, ¿cuál cuerpo no podrías formar?",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems_2016/q9_a.svg\" style=\"width:100%;max-width:180px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems_2016/q9_b.svg\" style=\"width:100%;max-width:180px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems_2016/q9_c.svg\" style=\"width:100%;max-width:180px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems_2016/q9_d.svg\" style=\"width:100%;max-width:180px;display:block;\">"
+            },
+            "answer": "C",
+            "explanation": "Sólo se permite mover un cubo. La opción C requiere mover dos cubos para conseguirse desde la figura de referencia."
+          },
+          {
+            "id": 10,
+            "topic": "HM.10",
+            "topic_name": "Vistas ortogonales — pieza 3D",
+            "image": "/imagenes_ecoems_2016/q10_original.svg",
+            "text": "Si colocaras esta pieza mecánica tridimensional sobre su base más grande, ¿cómo se vería desde arriba?",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems_2016/q10_a.svg\" style=\"width:100%;max-width:120px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems_2016/q10_b.svg\" style=\"width:100%;max-width:120px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems_2016/q10_c.svg\" style=\"width:100%;max-width:120px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems_2016/q10_d.svg\" style=\"width:100%;max-width:120px;display:block;\">"
+            },
+            "answer": "D",
+            "explanation": "Reconstruye mentalmente la pieza en 3D apoyada sobre su base más grande. La vista superior muestra un cuadrado con un escalón pequeño en la esquina inferior derecha (correspondiente al cubo pequeño)."
+          },
+          {
+            "id": 11,
+            "topic": "HM.11",
+            "topic_name": "Desarrollos planos — cubo",
+            "text": "Si trazaras las figuras mostradas sobre cartón y las recortas por su perímetro, ¿cuál no te serviría para construir un cubo al doblar el cartón por las aristas?",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems_2016/q11_a.svg\" style=\"width:100%;max-width:120px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems_2016/q11_b.svg\" style=\"width:100%;max-width:120px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems_2016/q11_c.svg\" style=\"width:100%;max-width:120px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems_2016/q11_d.svg\" style=\"width:100%;max-width:120px;display:block;\">"
+            },
+            "answer": "D",
+            "explanation": "El desarrollo D no puede formar un cubo: al doblarlo, un lado queda doble y a otra cara le falta su pieza. Los otros tres patrones (A, B, C) sí son desarrollos válidos del cubo."
+          },
+          {
+            "id": 12,
+            "topic": "HM.12",
+            "topic_name": "Razonamiento espacial — dobleces",
+            "image": "/imagenes_ecoems_2016/q12_tira_triangulos.svg",
+            "text": "La siguiente figura representa una tira de papel con nueve triángulos equiláteros. Si doblaras el primer triángulo sucesivamente por las aristas numeradas, ¿en qué posición quedaría el vértice $A$ después del sexto doblez?",
+            "options": {
+              "A": "F",
+              "B": "G",
+              "C": "H",
+              "D": "I"
+            },
+            "answer": "B",
+            "explanation": "Haciendo el ejercicio físicamente (o siguiendo la tabla de posiciones del vértice A para cada doblez): doblez 1→D, 2→D, 3→D, 4→G, 5→G, 6→G. Después del sexto doblez, A queda en G."
+          },
+          {
+            "id": 13,
+            "topic": "HM.13",
+            "topic_name": "Geometría — ángulos",
+            "image": "/imagenes_ecoems_2016/q13_pentagono.svg",
+            "text": "¿Cuánto mide el ángulo $\\alpha$?",
+            "options": {
+              "A": "$45°$",
+              "B": "$60°$",
+              "C": "$72°$",
+              "D": "$90°$"
+            },
+            "answer": "C",
+            "explanation": "El ángulo exterior de un pentágono regular es $\\frac{360°}{5} = 72°$."
+          },
+          {
+            "id": 14,
+            "topic": "HM.14",
+            "topic_name": "Geometría — áreas",
+            "image": "/imagenes_ecoems_2016/q14_cuadrados_anidados.svg",
+            "text": "El área del cuadrado negro es igual a 1. ¿Cuál es el área del cuadrado más grande (en la posición izquierda)?",
+            "options": {
+              "A": "25",
+              "B": "36",
+              "C": "49",
+              "D": "64"
+            },
+            "answer": "D",
+            "explanation": "Si el cuadrado negro mide 1, su lado mide 1. Los dos cuadrados pequeños adyacentes miden lado 1; el cuadrado inferior derecho contiguo mide lado 2; el cuadrado superior derecho mide lado 3; el cuadrado superior derecho que cierra el rectángulo mide lado 5; y el cuadrado grande izquierdo mide lado 8. Área $= 8^2 = 64$."
+          },
+          {
+            "id": 15,
+            "topic": "HM.15",
+            "topic_name": "Razonamiento — patrones en tablas",
+            "text": "¿Cuál es el número faltante en la celda vacía?\n\n| Col 1 | Col 2 | Col 3 |\n|:-:|:-:|:-:|\n| 3 | 6 | $\\frac{1}{2}$ |\n| 4 | 12 | $\\frac{1}{3}$ |\n| 5 | __ | $\\frac{1}{4}$ |",
+            "options": {
+              "A": "18",
+              "B": "20",
+              "C": "24",
+              "D": "30"
+            },
+            "answer": "B",
+            "explanation": "El patrón de la tercera columna es $\\frac{\\text{col 1}}{\\text{col 2}}$ simplificado: $\\frac{3}{6}=\\frac{1}{2}$, $\\frac{4}{12}=\\frac{1}{3}$, entonces $\\frac{5}{20}=\\frac{1}{4}$. El número faltante es 20."
+          },
+          {
+            "id": 16,
+            "topic": "HM.16",
+            "topic_name": "Problemas de edades — sistema de ecuaciones",
+            "text": "La edad de un niño es la sexta parte de la edad de su abuela y ocho años después será la cuarta parte de la edad que tenga entonces la abuela. ¿Cuál es la edad actual del niño?",
+            "options": {
+              "A": "6",
+              "B": "8",
+              "C": "10",
+              "D": "12"
+            },
+            "answer": "D",
+            "explanation": "Sea $n$ la edad del niño y $a$ la de la abuela. Entonces $n=\\frac{a}{6}$ y $n+8=\\frac{1}{4}(a+8)$. De la primera: $a=6n$. Sustituyendo: $4(n+8)=6n+8 \\Rightarrow 4n+32=6n+8 \\Rightarrow 2n=24 \\Rightarrow n=12$."
+          }
+        ]
+      },
+      {
+        "subject": "Matemáticas",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 17,
+            "topic": "M.1",
+            "topic_name": "Jerarquía de operaciones",
+            "text": "¿Cuál es el valor de $x$ en la siguiente expresión matemática?\n\n$$x = 1 - 2(1-2) - 2(2-1) - 1$$",
+            "options": {
+              "A": "$-1$",
+              "B": "$0$",
+              "C": "$1$",
+              "D": "$2$"
+            },
+            "answer": "B",
+            "explanation": "$x = 1 - 2(-1) - 2(1) - 1 = 1 + 2 - 2 - 1 = 0$."
+          },
+          {
+            "id": 18,
+            "topic": "M.2",
+            "topic_name": "Mínimo común múltiplo",
+            "text": "¿Cuál de las siguientes opciones es el mínimo común múltiplo de 9 y 12?\n\n$$\\text{mcm}(9, 12) = $$",
+            "options": {
+              "A": "9",
+              "B": "12",
+              "C": "36",
+              "D": "108"
+            },
+            "answer": "C",
+            "explanation": "Factorizando: $9 = 3^2$, $12 = 2^2 \\cdot 3$. El mcm toma los factores con mayor exponente: $2^2 \\cdot 3^2 = 4 \\cdot 9 = 36$."
+          },
+          {
+            "id": 19,
+            "topic": "M.3",
+            "topic_name": "Porcentajes",
+            "text": "Si un examen contiene 128 preguntas de opción múltiple y logras obtener 112 aciertos, ¿cuál es tu porcentaje de respuestas incorrectas?",
+            "options": {
+              "A": "11.2 %",
+              "B": "12.5 %",
+              "C": "87.5 %",
+              "D": "112.0 %"
+            },
+            "answer": "B",
+            "explanation": "Porcentaje de aciertos: $\\frac{112}{128} \\times 100\\% = 87.5\\%$. Porcentaje de incorrectas: $100\\% - 87.5\\% = 12.5\\%$."
+          },
+          {
+            "id": 20,
+            "topic": "M.4",
+            "topic_name": "Sistemas de ecuaciones",
+            "text": "¿Cuánto vale $a$ en este sistema de ecuaciones?\n\n$$a + 3b = 15$$\n$$2a - b = 2$$",
+            "options": {
+              "A": "2",
+              "B": "3",
+              "C": "4",
+              "D": "5"
+            },
+            "answer": "B",
+            "explanation": "Multiplicando la segunda ecuación por 3: $6a - 3b = 6$. Sumando con la primera: $7a = 21$, por lo que $a = 3$."
+          },
+          {
+            "id": 21,
+            "topic": "M.5",
+            "topic_name": "Productos notables — diferencia de cuadrados",
+            "text": "Selecciona la opción que indica cuál producto notable equivale a este binomio: $4x^2 - 4y^2$",
+            "options": {
+              "A": "$(2x + 2y)^2$",
+              "B": "$(2x - 2y)^2$",
+              "C": "$2(x - y)^2$",
+              "D": "$(2x + 2y)(2x - 2y)$"
+            },
+            "answer": "D",
+            "explanation": "$4x^2 - 4y^2 = (2x)^2 - (2y)^2 = (2x+2y)(2x-2y)$, diferencia de cuadrados."
+          },
+          {
+            "id": 22,
+            "topic": "M.6",
+            "topic_name": "Promedio aritmético",
+            "text": "¿Cuál es el promedio de los siguientes números?\n\n$$0.15,\\ 0.25,\\ 0.2,\\ 0.5,\\ 1.0$$",
+            "options": {
+              "A": "0.32",
+              "B": "0.40",
+              "C": "0.42",
+              "D": "0.45"
+            },
+            "answer": "C",
+            "explanation": "Suma: $0.15 + 0.25 + 0.2 + 0.5 + 1.0 = 2.10$. Promedio: $\\frac{2.10}{5} = 0.42$."
+          },
+          {
+            "id": 23,
+            "topic": "M.7",
+            "topic_name": "Probabilidad clásica",
+            "image": "/imagenes_ecoems_2016/q23_domino.svg",
+            "text": "El juego de dominó contiene 28 fichas. ¿Cuál es la probabilidad de extraer al azar una ficha con el mismo número de puntos en ambos lados?",
+            "options": {
+              "A": "7 %",
+              "B": "25 %",
+              "C": "28 %",
+              "D": "66 %"
+            },
+            "answer": "B",
+            "explanation": "Hay 7 \"mulas\" (0:0, 1:1, ..., 6:6) de 28 fichas totales. Probabilidad: $\\frac{7}{28} = 0.25 = 25\\%$."
+          },
+          {
+            "id": 24,
+            "topic": "M.8",
+            "topic_name": "Funciones lineales — gráfica",
+            "text": "Un teléfono celular cuesta \\$ 500 de enganche y \\$ 50 mensuales durante 10 meses. Selecciona entre las opciones la gráfica que representa esta función.",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems_2016/q24_a.svg\" style=\"width:100%;max-width:180px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems_2016/q24_b.svg\" style=\"width:100%;max-width:180px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems_2016/q24_c.svg\" style=\"width:100%;max-width:180px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems_2016/q24_d.svg\" style=\"width:100%;max-width:180px;display:block;\">"
+            },
+            "answer": "B",
+            "explanation": "La función es $y = 500 + 50x$. En $x=0$, $y=500$ (enganche). La gráfica es una recta con ordenada al origen 500 y pendiente positiva 50."
+          },
+          {
+            "id": 25,
+            "topic": "M.9",
+            "topic_name": "Regla de tres — proporcionalidad directa",
+            "image": "/imagenes_ecoems_2016/q25_balin_barra.svg",
+            "text": "Un balín se desplaza sobre una barra acanalada horizontal a 20 cm cada 4 segundos. ¿En cuántos segundos habrá recorrido 160 cm?",
+            "options": {
+              "A": "20 s",
+              "B": "32 s",
+              "C": "64 s",
+              "D": "86 s"
+            },
+            "answer": "B",
+            "explanation": "Regla de tres directa: si en 4 s recorre 20 cm, en $x$ segundos recorre 160 cm. $x = \\frac{160 \\cdot 4}{20} = 32$ s."
+          },
+          {
+            "id": 26,
+            "topic": "M.10",
+            "topic_name": "Trabajo conjunto",
+            "text": "Un albañil construye $12\\ \\text{m}^2$ de muro en 3 días y otro, $10\\ \\text{m}^2$ de muro en 5 días. ¿En cuánto tiempo pueden construir los dos albañiles juntos un muro de $54\\ \\text{m}^2$?",
+            "options": {
+              "A": "3 días",
+              "B": "6 días",
+              "C": "9 días",
+              "D": "12 días"
+            },
+            "answer": "C",
+            "explanation": "Rendimientos: $\\frac{12}{3} = 4$ y $\\frac{10}{5} = 2$ m²/día. Juntos: $4 + 2 = 6$ m²/día. Tiempo: $\\frac{54}{6} = 9$ días."
+          },
+          {
+            "id": 27,
+            "topic": "M.11",
+            "topic_name": "Triángulos semejantes",
+            "text": "En un día soleado, un poste de 9 m de altura proyecta una sombra de 3 m de largo. Si al mismo tiempo un edificio adjunto proyecta una sombra de 12 m, ¿cuál es la altura del edificio?",
+            "options": {
+              "A": "30 m",
+              "B": "32 m",
+              "C": "34 m",
+              "D": "36 m"
+            },
+            "answer": "D",
+            "explanation": "Triángulos semejantes: $\\frac{9}{3} = \\frac{x}{12} \\Rightarrow x = \\frac{12 \\cdot 9}{3} = 36$ m."
+          },
+          {
+            "id": 28,
+            "topic": "M.12",
+            "topic_name": "Trigonometría y Pitágoras",
+            "text": "En un triángulo rectángulo,\n\n$$\\cos\\alpha = \\frac{4}{5}$$\n\n¿Cuánto mide el cateto opuesto?",
+            "options": {
+              "A": "3",
+              "B": "4",
+              "C": "5",
+              "D": "6"
+            },
+            "answer": "A",
+            "explanation": "$\\cos\\alpha = \\frac{\\text{cateto adyacente}}{\\text{hipotenusa}} = \\frac{4}{5}$. Por Pitágoras: $b^2 = 5^2 - 4^2 = 25 - 16 = 9$, por lo que el cateto opuesto vale 3."
+          }
+        ]
+      },
+      {
+        "subject": "Ciencias II (Física)",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 29,
+            "topic": "F.1",
+            "topic_name": "Método científico — hipótesis",
+            "text": "¿Qué es una hipótesis?",
+            "options": {
+              "A": "Una pregunta acerca de un fenómeno natural",
+              "B": "Una suposición razonable acerca de la respuesta a una pregunta",
+              "C": "Una predicción",
+              "D": "Una conclusión experimentalmente verificable"
+            },
+            "answer": "B",
+            "explanation": "Una hipótesis es una suposición razonable acerca de la respuesta a una pregunta. Para que sea científica debe referirse a la comprensión de la naturaleza y ser susceptible de probarse experimentalmente."
+          },
+          {
+            "id": 30,
+            "topic": "F.2",
+            "topic_name": "MRU — velocidad constante",
+            "text": "Analiza la tabla siguiente.\n\n| Tiempo (s) | Desplazamiento (m) |\n|:-:|:-:|\n| 0 | 0 |\n| 1 | 25 |\n| 2 | 50 |\n| 3 | 75 |\n| 4 | 100 |\n\nSe puede concluir que el cuerpo en movimiento tiene:",
+            "options": {
+              "A": "Rapidez constante mayor que cero",
+              "B": "Velocidad constante mayor que cero",
+              "C": "Velocidad variable",
+              "D": "Aceleración constante mayor que cero"
+            },
+            "answer": "B",
+            "explanation": "La velocidad ($v=d/t$) es constante e igual a 25 m/s. Como hay dirección implícita en el desplazamiento (vector), se trata de velocidad constante, no sólo rapidez."
+          },
+          {
+            "id": 31,
+            "topic": "F.3",
+            "topic_name": "MRUA — aceleración constante",
+            "image": "/imagenes_ecoems_2016/q31_grafica_parabolica.svg",
+            "text": "Analiza la tabla y la gráfica siguientes.\n\n| Tiempo (s) | Desplazamiento (m) |\n|:-:|:-:|\n| 0 | 0 |\n| 2 | 20 |\n| 4 | 80 |\n| 6 | 180 |\n| 8 | 320 |\n| 10 | 500 |\n\nSe puede concluir que el cuerpo en movimiento tiene:",
+            "options": {
+              "A": "Rapidez constante mayor que cero",
+              "B": "Velocidad constante mayor que cero",
+              "C": "Aceleración constante mayor que cero",
+              "D": "Aceleración variable"
+            },
+            "answer": "C",
+            "explanation": "La aceleración $a = d/t^2$ es constante e igual a 5 m/s² (por ejemplo $20/4 = 5$, $80/16 = 5$, $180/36 = 5$). La gráfica parabólica $d \\propto t^2$ confirma MRUA."
+          },
+          {
+            "id": 32,
+            "topic": "F.4",
+            "topic_name": "Leyes de Newton — inercia",
+            "text": "La sonda *Voyager 1* viaja por el espacio exterior en movimiento rectilíneo uniforme. Indica cuál concepto de la física explica la causa de tal movimiento.",
+            "options": {
+              "A": "Inercia",
+              "B": "Peso",
+              "C": "Masa",
+              "D": "Combustible"
+            },
+            "answer": "A",
+            "explanation": "La inercia es la tendencia de un cuerpo a permanecer en reposo o en movimiento rectilíneo uniforme mientras no actúe sobre él una fuerza. En el espacio exterior, donde no hay fuerzas significativas, la sonda mantiene su movimiento por inercia."
+          },
+          {
+            "id": 33,
+            "topic": "F.5",
+            "topic_name": "Segunda ley de Newton",
+            "text": "Al aplicar una fuerza de 4 newtons, un cuerpo experimenta una aceleración de $2\\ \\text{m/s}^2$. ¿Cuál es la masa de ese cuerpo?",
+            "options": {
+              "A": "2 kg",
+              "B": "4 kg",
+              "C": "6 kg",
+              "D": "8 kg"
+            },
+            "answer": "A",
+            "explanation": "$F = ma \\Rightarrow m = F/a = 4\\ \\text{N} / 2\\ \\text{m/s}^2 = 2$ kg."
+          },
+          {
+            "id": 34,
+            "topic": "F.6",
+            "topic_name": "Energía mecánica — péndulo",
+            "image": "/imagenes_ecoems_2016/q34_pendulo.svg",
+            "text": "Si simbolizamos energía potencial como EP y energía cinética como EC, ¿cómo es la energía mecánica de la masa colgante de un péndulo que se está balanceando, cuando está en la posición más alta de su movimiento?",
+            "options": {
+              "A": "EP máxima, EC mínima",
+              "B": "EP disminuye, EC aumenta",
+              "C": "EP mínima, EC máxima",
+              "D": "EP aumenta, EC disminuye"
+            },
+            "answer": "A",
+            "explanation": "En la posición más alta, el péndulo está momentáneamente detenido (velocidad = 0), por lo que EC es mínima (cero). La altura es máxima, por lo que EP es máxima."
+          },
+          {
+            "id": 35,
+            "topic": "F.7",
+            "topic_name": "Principio de Pascal — gato hidráulico",
+            "text": "Un gato hidráulico tiene un área de entrada de $0.01\\ \\text{m}^2$ y un área de salida de $1\\ \\text{m}^2$. Si con un pistón se aplica una fuerza de entrada de 10 N, ¿cuál es la fuerza de salida?",
+            "options": {
+              "A": "1 N",
+              "B": "10 N",
+              "C": "100 N",
+              "D": "1 000 N"
+            },
+            "answer": "D",
+            "explanation": "Principio de Pascal: $\\frac{F_e}{A_e} = \\frac{F_s}{A_s}$. $F_s = \\frac{F_e \\cdot A_s}{A_e} = \\frac{10 \\cdot 1}{0.01} = 1\\,000$ N."
+          },
+          {
+            "id": 36,
+            "topic": "F.8",
+            "topic_name": "Electrostática — cargas",
+            "text": "Si al hacer un experimento observas que dos esferitas de dos diferentes péndulos eléctricos se atraen entre sí, ¿qué puedes concluir al respecto?",
+            "options": {
+              "A": "Que ambas esferitas son eléctricamente neutras",
+              "B": "Que ambas esferitas tienen carga eléctrica negativa",
+              "C": "Que ambas esferitas tienen carga eléctrica positiva",
+              "D": "Que ambas esferitas tienen carga eléctrica de diferente signo"
+            },
+            "answer": "D",
+            "explanation": "Las cargas eléctricas de diferente signo se atraen entre sí; las del mismo signo se repelen; las neutras no se atraen."
+          },
+          {
+            "id": 37,
+            "topic": "F.9",
+            "topic_name": "Termodinámica — temperatura",
+            "text": "La magnitud que indica qué tan caliente o frío está un cuerpo en comparación con un patrón de medida se denomina:",
+            "options": {
+              "A": "Temperatura",
+              "B": "Calor",
+              "C": "Energía interna",
+              "D": "Punto de ebullición"
+            },
+            "answer": "A",
+            "explanation": "Temperatura es la magnitud que indica qué tan caliente o frío está un cuerpo respecto a un patrón. El calor es energía que se transfiere por diferencia de temperatura."
+          },
+          {
+            "id": 38,
+            "topic": "F.10",
+            "topic_name": "Transferencia de calor",
+            "text": "¿Cómo transfiere calor el viento?",
+            "options": {
+              "A": "Por conducción",
+              "B": "Por convección",
+              "C": "Por radiación",
+              "D": "Por un cambio de estado"
+            },
+            "answer": "B",
+            "explanation": "La convección es la forma de transferencia de calor en fluidos (líquidos y gases). El viento, al ser aire en movimiento, transfiere calor por convección."
+          },
+          {
+            "id": 39,
+            "topic": "F.11",
+            "topic_name": "Modelos atómicos",
+            "text": "¿Qué modelo atómico logró explicar cómo se emite la luz al pasar un electrón desde un nivel de mayor energía a un nivel de menor energía?",
+            "options": {
+              "A": "Modelo atómico de Dalton",
+              "B": "Modelo atómico de Thomson",
+              "C": "Modelo atómico de Rutherford",
+              "D": "Modelo atómico de Bohr"
+            },
+            "answer": "D",
+            "explanation": "El modelo atómico de Bohr explica que al saltar un electrón de un nivel de mayor energía a uno de menor energía se emite un fotón de luz."
+          },
+          {
+            "id": 40,
+            "topic": "F.12",
+            "topic_name": "Espectro electromagnético",
+            "text": "¿Qué tipo de ondas electromagnéticas se utilizan en telefonía celular y televisión por satélite?",
+            "options": {
+              "A": "Microondas",
+              "B": "Infrarrojo",
+              "C": "Ultravioleta",
+              "D": "Rayos X"
+            },
+            "answer": "A",
+            "explanation": "Las microondas son ondas electromagnéticas utilizadas en comunicaciones telefónicas de larga distancia, telefonía celular y televisión por satélite."
+          }
+        ]
+      },
+      {
+        "subject": "Ciencias III (Química)",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 41,
+            "topic": "Q.1",
+            "topic_name": "Separación de mezclas",
+            "text": "Con la finalidad de separar los componentes de una mezcla de agua y aceite se utiliza una bureta y dos vasos de precipitados. Esto se consigue porque el aceite no se disuelve en el agua y ambas sustancias tienen diferente densidad. ¿Cómo se denomina este método de separación de mezclas?",
+            "options": {
+              "A": "Decantación",
+              "B": "Destilación",
+              "C": "Filtración",
+              "D": "Cristalización"
+            },
+            "answer": "A",
+            "explanation": "La decantación se utiliza para separar dos líquidos insolubles entre sí, como agua y aceite, aprovechando su diferencia de densidad."
+          },
+          {
+            "id": 42,
+            "topic": "Q.2",
+            "topic_name": "Cambios químicos vs. físicos",
+            "text": "Selecciona el fenómeno natural que no es un cambio químico.",
+            "options": {
+              "A": "La combustión de la madera",
+              "B": "La digestión de los alimentos en el estómago",
+              "C": "La oxidación de una rebanada de manzana al contacto con el aire",
+              "D": "La descomposición de la luz blanca en las luces de colores del arcoíris"
+            },
+            "answer": "D",
+            "explanation": "La descomposición de la luz blanca en colores es un fenómeno físico (separación por refracción), no una reacción química. Las otras tres opciones implican reacciones químicas."
+          },
+          {
+            "id": 43,
+            "topic": "Q.3",
+            "topic_name": "Estructura atómica — número de masa",
+            "text": "El isótopo más abundante del carbono es $^{12}\\text{C}$, el cual está constituido por 6 protones, 6 neutrones y 6 electrones. ¿Cuál es su número de masa?",
+            "options": {
+              "A": "6",
+              "B": "12",
+              "C": "18",
+              "D": "24"
+            },
+            "answer": "B",
+            "explanation": "El número de masa es la suma de protones y neutrones: $6 + 6 = 12$. Los electrones no se cuentan."
+          },
+          {
+            "id": 44,
+            "topic": "Q.4",
+            "topic_name": "Símbolos químicos",
+            "text": "Indica cuáles son los símbolos químicos de los elementos potasio, sodio y azufre.",
+            "options": {
+              "A": "P, S, A",
+              "B": "K, S, A",
+              "C": "K, Na, S",
+              "D": "P, Na, S"
+            },
+            "answer": "C",
+            "explanation": "Potasio: K (del latín *kalium*); Sodio: Na (del latín *natrium*); Azufre: S (del latín *sulphur*)."
+          },
+          {
+            "id": 45,
+            "topic": "Q.5",
+            "topic_name": "Enlace químico — electrones de valencia",
+            "text": "¿Qué propiedades químicas presenta un átomo que posee un electrón de valencia?",
+            "options": {
+              "A": "Es un elemento metálico y tiende a perder su único electrón de valencia al formar un enlace químico",
+              "B": "Es un elemento metálico y tiende a ganar un protón para formar un ion positivo",
+              "C": "Es un elemento halógeno y tiende a ganar un electrón de valencia al formar un enlace químico",
+              "D": "Es un gas noble y tiende a no reaccionar químicamente"
+            },
+            "answer": "A",
+            "explanation": "Los elementos con un electrón de valencia (como Na, K) son metálicos y tienden a perder ese electrón al formar enlaces, originando cationes."
+          },
+          {
+            "id": 46,
+            "topic": "Q.6",
+            "topic_name": "Ley de conservación de la masa",
+            "text": "Selecciona la reacción química que no cumple con la ley de conservación de la masa.",
+            "options": {
+              "A": "$2\\ \\text{H}_2 + \\text{O}_2 \\to 2\\ \\text{H}_2\\text{O}$",
+              "B": "$\\text{NaOH} + \\text{HCl} \\to \\text{NaCl} + \\text{H}_2\\text{O}$",
+              "C": "$\\text{H}_2\\text{O} + \\text{CO}_2 \\to \\text{H}_2\\text{CO}_3$",
+              "D": "$2\\ \\text{H}_2\\text{S} + 3\\ \\text{O}_2 \\to 2\\ \\text{H}_2\\text{O} + \\text{SO}_2$"
+            },
+            "answer": "D",
+            "explanation": "En D, reactivos: 4 H, 2 S, 6 O; productos: 4 H, 1 S, 4 O. No está balanceada (faltan átomos de S y O en los productos). Lo correcto sería $2\\,\\text{H}_2\\text{S} + 3\\,\\text{O}_2 \\to 2\\,\\text{H}_2\\text{O} + 2\\,\\text{SO}_2$."
+          },
+          {
+            "id": 47,
+            "topic": "Q.7",
+            "topic_name": "Tipos de reacciones químicas",
+            "text": "Según esta ecuación química, al suministrar energía a dos moléculas de agua $(2\\ \\text{H}_2\\text{O})$ se producen dos moléculas de hidrógeno $(2\\ \\text{H}_2)$ y una molécula de oxígeno $(\\text{O}_2)$.\n\n$$2\\ \\text{H}_2\\text{O} + \\text{Energía} \\to 2\\ \\text{H}_2 + \\text{O}_2$$\n\n¿Qué podemos concluir acerca de esta reacción?",
+            "options": {
+              "A": "Es exotérmica",
+              "B": "Es endotérmica",
+              "C": "Es una reacción de neutralización",
+              "D": "Es una reacción de polimerización"
+            },
+            "answer": "B",
+            "explanation": "Una reacción endotérmica absorbe energía (como esta, donde se necesita aporte de energía para romper las moléculas de agua). Una exotérmica libera energía."
+          },
+          {
+            "id": 48,
+            "topic": "Q.8",
+            "topic_name": "Tabla periódica — electronegatividad",
+            "text": "Selecciona entre las opciones el elemento más electronegativo.",
+            "options": {
+              "A": "He",
+              "B": "K",
+              "C": "Fr",
+              "D": "F"
+            },
+            "answer": "D",
+            "explanation": "Excluyendo gases nobles (He), la electronegatividad aumenta hacia arriba y a la derecha en la tabla periódica. Flúor (F) tiene el valor más alto: 4.0."
+          },
+          {
+            "id": 49,
+            "topic": "Q.9",
+            "topic_name": "Clasificación de elementos",
+            "text": "Es un elemento semimetálico muy utilizado en la industria electrónica.",
+            "options": {
+              "A": "Silicio",
+              "B": "Hierro",
+              "C": "Cobre",
+              "D": "Carbono"
+            },
+            "answer": "A",
+            "explanation": "El silicio es un semimetal con propiedades de semiconductor, base de los microcircuitos en celulares, computadoras y otros dispositivos electrónicos."
+          },
+          {
+            "id": 50,
+            "topic": "Q.10",
+            "topic_name": "Propiedades periódicas",
+            "image": "/imagenes_ecoems_2016/q50_tabla_periodica.svg",
+            "text": "¿Qué propiedad de los elementos ilustra esta tabla periódica?",
+            "options": {
+              "A": "Aumento de número atómico",
+              "B": "Aumento de masa atómica",
+              "C": "Aumento de electronegatividad",
+              "D": "Aumento de carácter metálico"
+            },
+            "answer": "D",
+            "explanation": "El carácter metálico aumenta de derecha a izquierda y de arriba hacia abajo en la tabla periódica, en sentido opuesto a la electronegatividad."
+          },
+          {
+            "id": 51,
+            "topic": "Q.11",
+            "topic_name": "Ácidos y bases",
+            "text": "Selecciona la propiedad química que no presenta un ácido.",
+            "options": {
+              "A": "Posee un sabor agrio característico",
+              "B": "Es irritante al hacer contacto con la piel",
+              "C": "En solución acuosa, el papel indicador adquiere un color rojo",
+              "D": "pH > 7"
+            },
+            "answer": "D",
+            "explanation": "Los ácidos tienen pH menor que 7. Un pH > 7 corresponde a sustancias básicas. Las otras tres propiedades sí son características de los ácidos."
+          },
+          {
+            "id": 52,
+            "topic": "Q.12",
+            "topic_name": "Reacciones redox",
+            "text": "Analiza la siguiente reacción redox:\n\n$$\\text{Cu}_{(s)} + 2\\,\\text{Ag}^+_{(ac)} \\to \\text{Cu}^{2+}_{(ac)} + 2\\,\\text{Ag}_{(s)}$$\n\n¿Cuál catión se reduce?",
+            "options": {
+              "A": "Cu",
+              "B": "$\\text{Ag}^+$",
+              "C": "$\\text{Cu}^{2+}$",
+              "D": "Ag"
+            },
+            "answer": "B",
+            "explanation": "Reducirse significa ganar electrones. $\\text{Ag}^+ + e^- \\to \\text{Ag}$ es la semirreacción de reducción. El cobre se oxida (pierde electrones)."
+          }
+        ]
+      },
+      {
+        "subject": "Ciencias I (Biología)",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 53,
+            "topic": "B.1",
+            "topic_name": "Características de los seres vivos",
+            "text": "Es la capacidad de los seres vivos de regular sus procesos internos para permanecer en un estado estable y funcionar normalmente, aun cuando haya cambios en el ambiente.",
+            "options": {
+              "A": "Irritabilidad",
+              "B": "Homeostasis",
+              "C": "Metabolismo",
+              "D": "Evolución"
+            },
+            "answer": "B",
+            "explanation": "La homeostasis es la capacidad de los seres vivos de regular sus procesos internos para permanecer en un estado estable. Un ejemplo es la temperatura corporal de 37 °C."
+          },
+          {
+            "id": 54,
+            "topic": "B.2",
+            "topic_name": "Evolución — Darwin",
+            "text": "Los organismos que constituyen una especie no son idénticos entre sí, sino que tienen diferencias sutiles. Aquellos organismos que sobreviven y se reproducen son más aptos por estar mejor adaptados al ambiente que aquellos que no, y heredan a su progenie las características que confieren tal aptitud. En consecuencia, las características de esos organismos más aptos son más comunes entre la población en la siguiente generación, y menos comunes las de los menos aptos. ¿Cómo denominó Charles Darwin a este proceso de supervivencia de los más aptos?",
+            "options": {
+              "A": "Uso y desuso de los órganos",
+              "B": "Herencia de los caracteres adquiridos",
+              "C": "El origen de las especies",
+              "D": "Selección natural"
+            },
+            "answer": "D",
+            "explanation": "Darwin acuñó el término selección natural para describir el proceso en el que los organismos más aptos sobreviven y heredan sus características."
+          },
+          {
+            "id": 55,
+            "topic": "B.3",
+            "topic_name": "Fotosíntesis",
+            "text": "¿Qué necesitan todas las plantas para realizar la fotosíntesis en los cloroplastos?",
+            "options": {
+              "A": "Agua y dióxido de carbono",
+              "B": "Agua y oxígeno",
+              "C": "Luz, agua y dióxido de carbono",
+              "D": "Luz, agua y oxígeno"
+            },
+            "answer": "C",
+            "explanation": "La fotosíntesis requiere luz solar, agua del suelo y dióxido de carbono del aire para producir glucosa y oxígeno."
+          },
+          {
+            "id": 56,
+            "topic": "B.4",
+            "topic_name": "Genética — fenotipo y genotipo",
+            "text": "Es el conjunto de todos los caracteres visibles de un organismo.",
+            "options": {
+              "A": "Fenotipo",
+              "B": "Genotipo",
+              "C": "Cariotipo",
+              "D": "Genoma"
+            },
+            "answer": "A",
+            "explanation": "El fenotipo es el conjunto de caracteres visibles de un organismo. El genotipo es el conjunto de genes; el cariotipo, el conjunto de cromosomas; y el genoma, toda la información en el ADN."
+          },
+          {
+            "id": 57,
+            "topic": "B.5",
+            "topic_name": "Ácidos nucleicos — ADN",
+            "text": "En el ADN, la información genética se almacena en la secuencia de:",
+            "options": {
+              "A": "Aminoácidos",
+              "B": "Cromosomas",
+              "C": "Las bases nitrogenadas: adenina, guanina, citosina y timina",
+              "D": "Las bases nitrogenadas: adenina, guanina, citosina y uracilo"
+            },
+            "answer": "C",
+            "explanation": "El ADN almacena la información genética en una secuencia de cuatro bases nitrogenadas: adenina (A), guanina (G), citosina (C) y timina (T). El uracilo (U) está en el ARN, no en el ADN."
+          },
+          {
+            "id": 58,
+            "topic": "B.6",
+            "topic_name": "Bioenergética — ATP",
+            "text": "La principal molécula portátil para el suministro de energía en todos los procesos celulares, la cual es un producto de glucólisis, fotosíntesis y respiración, se denomina:",
+            "options": {
+              "A": "Agua",
+              "B": "Glucosa",
+              "C": "Vitamina C",
+              "D": "ATP (adenosín trifosfato)"
+            },
+            "answer": "D",
+            "explanation": "El ATP es la molécula portátil para el suministro de energía en las células, producto de glucólisis, fotosíntesis y respiración."
+          },
+          {
+            "id": 59,
+            "topic": "B.7",
+            "topic_name": "Reproducción humana — orden cronológico",
+            "text": "Ordena de manera cronológica estos procesos referentes a la reproducción humana:\n\n*a*. Implantación del embrión en el útero\n*b*. Ovulación\n*c*. Formación de aparatos y sistemas\n*d*. Parto\n*e*. Fecundación",
+            "options": {
+              "A": "$e, b, c, a, d$",
+              "B": "$b, e, a, c, d$",
+              "C": "$b, e, c, a, d$",
+              "D": "$e, b, c, d, a$"
+            },
+            "answer": "B",
+            "explanation": "El orden correcto es: 1) Ovulación, 2) Fecundación, 3) Implantación del embrión en el útero, 4) Formación de aparatos y sistemas, 5) Parto."
+          },
+          {
+            "id": 60,
+            "topic": "B.8",
+            "topic_name": "Nutrición",
+            "text": "A diferencia de las carnes, las frutas y verduras son alimentos básicos en una dieta saludable porque contienen principalmente:",
+            "options": {
+              "A": "Vitaminas y minerales",
+              "B": "Proteínas",
+              "C": "Carbohidratos",
+              "D": "Grasas"
+            },
+            "answer": "A",
+            "explanation": "Las frutas y verduras son las principales fuentes de vitaminas y minerales en la dieta. Las carnes aportan proteínas; los cereales, carbohidratos."
+          },
+          {
+            "id": 61,
+            "topic": "B.9",
+            "topic_name": "Enfermedades — obesidad",
+            "text": "Es una enfermedad crónica que se caracteriza por una acumulación excesiva de grasa en el cuerpo. Su causa es una alimentación inadecuada por un consumo abundante de grasas, carbohidratos y alimentos \"chatarra\". Predispone al paciente a enfermedades cardiovasculares y diabetes, entre otras. Se puede prevenir con base en una alimentación adecuada.",
+            "options": {
+              "A": "Anorexia nerviosa",
+              "B": "Bulimia",
+              "C": "Infarto",
+              "D": "Obesidad"
+            },
+            "answer": "D",
+            "explanation": "La obesidad es la enfermedad crónica caracterizada por acumulación excesiva de grasa por alimentación inadecuada, que predispone a enfermedades cardiovasculares y diabetes."
+          },
+          {
+            "id": 62,
+            "topic": "B.10",
+            "topic_name": "Ecología — niveles de organización",
+            "text": "Selecciona la opción que presenta ordenados de menor a mayor complejidad los niveles de organización de los seres vivos, los cuales son el campo de estudio de la ecología.",
+            "options": {
+              "A": "Población, comunidad, ecosistema, biosfera",
+              "B": "Comunidad, población, ecosistema, biosfera",
+              "C": "Ecosistema, población, comunidad, biosfera",
+              "D": "Biosfera, ecosistema, población, comunidad"
+            },
+            "answer": "A",
+            "explanation": "De menor a mayor complejidad: Población (organismos de una especie) → Comunidad (todas las poblaciones de un ecosistema) → Ecosistema (comunidad + ambiente) → Biosfera (todos los ecosistemas)."
+          },
+          {
+            "id": 63,
+            "topic": "B.11",
+            "topic_name": "Ecosistemas — biodiversidad",
+            "text": "Es el ecosistema con la mayor biodiversidad del planeta.",
+            "options": {
+              "A": "Sabana",
+              "B": "Bosque templado",
+              "C": "Bosque tropical lluvioso",
+              "D": "Tundra"
+            },
+            "answer": "C",
+            "explanation": "El bosque tropical lluvioso (selva) es el ecosistema con mayor biodiversidad, ubicado en latitudes tropicales con alta luz, lluvia abundante y suelo siempre húmedo."
+          },
+          {
+            "id": 64,
+            "topic": "B.12",
+            "topic_name": "Desarrollo sustentable",
+            "text": "Es el progreso que consiste en satisfacer las necesidades de las generaciones actuales, sin comprometer la capacidad de las generaciones futuras de satisfacer las suyas.",
+            "options": {
+              "A": "Revolución Industrial",
+              "B": "Globalización",
+              "C": "Explotación de los recursos naturales",
+              "D": "Desarrollo sustentable"
+            },
+            "answer": "D",
+            "explanation": "Esta es la definición clásica de desarrollo sustentable (Informe Brundtland, 1987)."
+          }
+        ]
+      },
+      {
+        "subject": "Habilidad verbal",
+        "questions_count": 16,
+        "questions": [
+          {
+            "id": 65,
+            "topic": "HV.1",
+            "topic_name": "Comprensión de lectura — inferencia",
+            "context": "Brown, Dan, *El símbolo perdido*, Planeta Internacional, México, 2009, p. 52-54.\n\n**Capítulo 7**\n\nKatherine Solomon cruzó a toda velocidad el estacionamiento bajo la fría lluvia, deseando llevar puesto algo más que unos pantalones vaqueros y un suéter de cashmere. Al acercarse a la entrada principal del edificio, el estruendo de los gigantescos purificadores de aire se hizo más intenso. Pero ella a penas los oyó, en sus oídos todavía resonaba la llamada que acababa de recibir.\n\n\"Lo que su hermano cree que está escondido en Washington... puede ser encontrado.\"\n\nA Katherine le pareció algo casi imposible de creer. Ella y el hombre que la había llamado todavía tenían muchas cosas que discutir y habían acordado hacerlo esa misma tarde.\n\nAl llegar a la puerta principal, sintió la misma excitación que siempre sentía al entrar en el pantagruélico edificio. \"Nadie sabe que este lugar está aquí.\" En el letrero de entrada decía:\n\nCENTRO DE APOYO DEL MUSEO SMITHSONIAN (SMSC)\n\nA pesar de contar con más de una docena de enormes museos en el National Mall, la colección de la Smithsonian Institution era tan grande que sólo un 2 por ciento podía ser exhibida al mismo tiempo. El 98 por ciento restante tenía que ser almacenado en algún lugar. Y ese lugar... era *éste*.\n\nEra de esperar, pues, que este edificio albergara una diversidad de objetos asombrosamente variada: Budas gigantes, códices manuscritos, dardos envenenados de Nueva Guinea, cuchillos con joyas incrustadas, un kayak hecho de barbas de ballena. Igual de alucinantes eran los tesoros naturales del edificio: esqueletos de plesiosaurio, una inestimable colección de meteoritos, un calamar gigante e incluso una colección de calaveras de elefante que había traído de un safari africano el mismo Teddy Roosevelt.\n\nPero el secretario de la Smithsonian, Peter Solomon, no había traído a su hermana al SMSC por nada de eso. La había traído a este lugar no para *contemplar* maravillas científicas, sino para crearlas. Y eso era exactamente lo que Katherine había estado haciendo los últimos tres años.\n\nEn lo más profundo de este edificio, en la oscuridad de sus más remotos recovecos, había un pequeño laboratorio científico sin igual en todo el mundo. Los recientes descubrimientos que Katherine había hecho en el campo de la ciencia noética tenían ramificaciones en cualquier disciplina: de la física a la historia, pasando por la filosofía o la religión. \"Pronto todo cambiará\", pensó ella.\n\nAl entrar Katherine en el vestíbulo, el guardia de recepción escondió rápidamente un transistor y se quitó los auriculares de las orejas.\n\n—¡Señora Solomon! —dijo con una amplia sonrisa.\n\n—¿Los pieles rojas?\n\nSintiéndose culpable, el guardia se sonrojó.\n\n—El previo al partido.\n\nElla sonrió.\n\n—No diré nada —se dirigió al detector de metales y vació sus bolsillos. Cuando se quitó el Cartier de oro de la muñeca sintió la habitual punzada de tristeza. Era un regalo que le había hecho su madre por su cumpleaños dieciocho. Hacía casi diez años que había muerto de forma violenta... en sus brazos.\n\n—Esto... ¿señora Solomon? —susurró el guardia en tono burlón—. ¿Nos contará algún día lo que hace ahí dentro?\n\nElla levantó la mirada.\n\n—Algún día, Kyle. Pero no esta noche.\n\n—Vamos —insistió—. ¿Un laboratorio secreto... en un museo secreto? Debe de estar haciendo usted algo bastante interesante.\n\n\"Mucho más que interesante\", pensó Katherine mientras recogía sus cosas. La verdad era que Katherine estaba haciendo una ciencia tan avanzada que ya casi ni parecía ciencia.",
+            "text": "¿Por qué Katherine Solomon apenas oyó el estruendo de los gigantescos purificadores de aire del edificio?",
+            "options": {
+              "A": "Porque los purificadores tenían un sistema amortiguador de ruido",
+              "B": "Porque Katherine tenía una deficiencia auditiva",
+              "C": "Porque Katherine estaba concentrada en un mensaje que acababa de recibir por teléfono",
+              "D": "Porque el sistema de purificación de aire se apagaba automáticamente al abrir la puerta de entrada del edificio"
+            },
+            "answer": "C",
+            "explanation": "El texto dice: «en sus oídos todavía resonaba la llamada que acababa de recibir», lo que indica que estaba concentrada en el mensaje telefónico."
+          },
+          {
+            "id": 66,
+            "topic": "HV.2",
+            "topic_name": "Comprensión de lectura — detalle textual",
+            "text": "¿Cuál de las siguientes piezas no formaba parte de la colección de objetos almacenados en la Smithsonian Institution?",
+            "options": {
+              "A": "Dardo envenenado de Nueva Guinea",
+              "B": "Kayak hecho de barbas de ballena",
+              "C": "Esqueleto de plesiosaurio",
+              "D": "Roca lunar"
+            },
+            "answer": "D",
+            "explanation": "El texto enumera Budas gigantes, códices, dardos de Nueva Guinea, kayak, esqueletos de plesiosaurio, meteoritos, calamar gigante y calaveras de elefante — pero no menciona ninguna roca lunar."
+          },
+          {
+            "id": 67,
+            "topic": "HV.3",
+            "topic_name": "Comprensión de lectura — inferencia",
+            "text": "¿Qué se puede inferir que es un *Cartier*?",
+            "options": {
+              "A": "Un bolso",
+              "B": "Un anillo",
+              "C": "Un reloj",
+              "D": "Un teléfono celular"
+            },
+            "answer": "C",
+            "explanation": "El texto dice: «Cuando se quitó el Cartier de oro de la muñeca». Es un Cartier de oro que se usa en la muñeca: se infiere que es un reloj."
+          },
+          {
+            "id": 68,
+            "topic": "HV.4",
+            "topic_name": "Comprensión de lectura — detalle textual",
+            "text": "¿En dónde hacía su trabajo secreto Katherine Solomon en la Smithsonian Institution?",
+            "options": {
+              "A": "En el estacionamiento",
+              "B": "En el almacén de objetos",
+              "C": "En una oficina custodiada por un guardia",
+              "D": "En un laboratorio científico"
+            },
+            "answer": "D",
+            "explanation": "El texto dice: «había un pequeño laboratorio científico sin igual en todo el mundo. Los recientes descubrimientos que Katherine había hecho en el campo de la ciencia noética...»."
+          },
+          {
+            "id": 69,
+            "topic": "HV.5",
+            "topic_name": "Comprensión de lectura — tema principal",
+            "context": "Braun, Eliezer e Irma Gallardo, *Ciencias 2. Física*, Trillas, México, 2014.\n\nA diferencia de todos los demás líquidos, el agua helada no se dilata cuando se calienta, sino que ¡hace exactamente lo contrario! Cuando el hielo se derrite a 0 °C, empieza a contraerse, al menos hasta alcanzar una temperatura de 4 °C; sólo hasta después sí comienza a dilatarse por calentamiento y así continúa hasta el punto de ebullición.\n\nEs por esta razón que los hielos flotan en el agua; su densidad es menor que la del agua porque se dilatan antes de congelarse. De no tener el agua este comportamiento inusual, los hielos se hundirían.\n\nPor debajo de 0 °C, el hielo sí se contrae por enfriamiento. Y por encima de 4 °C, el agua sí se dilata por calentamiento. La contracción por calentamiento únicamente ocurre entre 0 y 4 °C en el agua.\n\nLa explicación de este comportamiento del agua está en la estructura cristalina del hielo. Las moléculas de agua forman hexágonos cuando se congelan y se desbaratan los cristales de hielo cuando se derriten.\n\nEste fenómeno tiene enorme importancia biológica. Cuando la temperatura en el aire desciende por debajo de 0 °C, ríos y mares no se congelan totalmente, sólo la superficie, el agua por debajo de la superficie y hasta el fondo permanece líquida a una temperatura entre 0 y 4 °C, una temperatura fría, pero que significa la supervivencia de las especies acuáticas en climas gélidos.",
+            "text": "¿Cuál es el tema principal de este texto?",
+            "options": {
+              "A": "La dilatación del agua al calentarse de 0 a 4 °C",
+              "B": "La contracción del agua al calentarse de 0 a 4 °C",
+              "C": "La flotabilidad del hielo por su densidad",
+              "D": "La fusión de los cristales de hielo"
+            },
+            "answer": "B",
+            "explanation": "Todos los párrafos giran en torno al fenómeno de que el agua se contrae cuando se calienta de 0 a 4 °C, fenómeno opuesto al de los demás líquidos."
+          },
+          {
+            "id": 70,
+            "topic": "HV.6",
+            "topic_name": "Comprensión de lectura — énfasis",
+            "text": "¿En qué pone énfasis el autor de este texto?",
+            "options": {
+              "A": "En la densidad del agua",
+              "B": "En la estructura cristalina del hielo",
+              "C": "En la supervivencia de las especies acuáticas en climas gélidos",
+              "D": "En el comportamiento diferente del agua en comparación con los demás líquidos"
+            },
+            "answer": "C",
+            "explanation": "En el párrafo 5 se afirma: «Este fenómeno tiene enorme importancia biológica... significa la supervivencia de las especies acuáticas en climas gélidos». Ese es el énfasis del autor."
+          },
+          {
+            "id": 71,
+            "topic": "HV.7",
+            "topic_name": "Comprensión de lectura — subtemas",
+            "text": "¿Cuáles son los subtemas principales de este texto?",
+            "options": {
+              "A": "La densidad del hielo y el punto de ebullición del agua",
+              "B": "La densidad del hielo y la estructura cristalina del agua",
+              "C": "La densidad del hielo, la estructura cristalina del hielo y la importancia biológica de la contracción del agua al calentarse de 0 a 4 °C",
+              "D": "El punto de ebullición del agua, la flotabilidad de los hielos en agua y la congelación de ríos y mares"
+            },
+            "answer": "C",
+            "explanation": "El tema principal es la contracción del agua de 0 a 4 °C. Los subtemas son: densidad del hielo (párr. 2), estructura cristalina del hielo (párr. 4), e importancia biológica (párr. 5). El punto de ebullición no es un subtema."
+          },
+          {
+            "id": 72,
+            "topic": "HV.8",
+            "topic_name": "Analogías",
+            "text": "**VACA – LECHE**",
+            "options": {
+              "A": "Compositor – canción",
+              "B": "Piloto – avión",
+              "C": "Gallina – huevo",
+              "D": "Miel – abeja"
+            },
+            "answer": "C",
+            "explanation": "Una vaca produce leche; análogamente una gallina produce huevo. La categoría es animal–alimento."
+          },
+          {
+            "id": 73,
+            "topic": "HV.9",
+            "topic_name": "Analogías",
+            "text": "**CAMPESINO – ARADO**",
+            "options": {
+              "A": "Televisor – electricidad",
+              "B": "Lápiz – dibujo",
+              "C": "Silla – madera",
+              "D": "Carpintero – martillo"
+            },
+            "answer": "D",
+            "explanation": "Un campesino trabaja con un arado (persona–herramienta de trabajo); un carpintero trabaja con un martillo."
+          },
+          {
+            "id": 74,
+            "topic": "HV.10",
+            "topic_name": "Analogías",
+            "text": "**REGLA – MEDIR**",
+            "options": {
+              "A": "Escultor – esculpir",
+              "B": "Comunicar – Teléfono",
+              "C": "Medicamento – prescribir",
+              "D": "Estetoscopio – oír"
+            },
+            "answer": "D",
+            "explanation": "Una regla sirve para medir (instrumento–verbo); un estetoscopio sirve para oír."
+          },
+          {
+            "id": 75,
+            "topic": "HV.11",
+            "topic_name": "Antónimos",
+            "text": "Una solución es una mezcla *homogénea*.",
+            "options": {
+              "A": "Uniforme",
+              "B": "Heterogénea",
+              "C": "Invariable",
+              "D": "Regular"
+            },
+            "answer": "B",
+            "explanation": "El antónimo de *homogénea* es *heterogénea*. Las otras opciones son sinónimos de homogénea."
+          },
+          {
+            "id": 76,
+            "topic": "HV.12",
+            "topic_name": "Antónimos",
+            "text": "La ley del nuevo impuesto fue *derogada*.",
+            "options": {
+              "A": "Eliminada",
+              "B": "Censurada",
+              "C": "Promulgada",
+              "D": "Excluida"
+            },
+            "answer": "C",
+            "explanation": "*Derogar* significa abolir o anular una ley; su antónimo es *promulgar* (publicar formalmente una ley)."
+          },
+          {
+            "id": 77,
+            "topic": "HV.13",
+            "topic_name": "Antónimos",
+            "text": "Fue así como *concluyó* su trabajo.",
+            "options": {
+              "A": "Terminó",
+              "B": "Comenzó",
+              "C": "Finalizó",
+              "D": "Acabó"
+            },
+            "answer": "B",
+            "explanation": "El antónimo de *concluyó* (terminó) es *comenzó*. Los demás son sinónimos."
+          },
+          {
+            "id": 78,
+            "topic": "HV.14",
+            "topic_name": "Sinónimos",
+            "text": "Louis Pasteur fue *precursor* de la bacteriología.",
+            "options": {
+              "A": "Seguidor",
+              "B": "Partidario",
+              "C": "Simpatizante",
+              "D": "Pionero"
+            },
+            "answer": "D",
+            "explanation": "*Precursor* significa quien va por delante (pionero). Las otras opciones no expresan ese matiz de adelantarse en el tiempo."
+          },
+          {
+            "id": 79,
+            "topic": "HV.15",
+            "topic_name": "Sinónimos",
+            "text": "Su ensayo fue *conciso*.",
+            "options": {
+              "A": "Breve",
+              "B": "Extenso",
+              "C": "Vasto",
+              "D": "Amplio"
+            },
+            "answer": "A",
+            "explanation": "*Conciso* significa breve, expresado con pocas palabras. Las otras opciones son antónimos."
+          },
+          {
+            "id": 80,
+            "topic": "HV.16",
+            "topic_name": "Sinónimos",
+            "text": "Es un profesor *competente*.",
+            "options": {
+              "A": "Inepto",
+              "B": "Calificado",
+              "C": "Incapaz",
+              "D": "Torpe"
+            },
+            "answer": "B",
+            "explanation": "*Competente* significa capaz, calificado para una tarea. Las otras opciones son antónimos."
+          }
+        ]
+      },
+      {
+        "subject": "Español",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 81,
+            "topic": "E.1",
+            "topic_name": "Nexos — función",
+            "context": "Rowling, J.K., *Harry Potter y la Órden del Fénix*, Salamandra, Barcelona, 2004, p. 89.\n\n**5\nLa Órden del Fénix**\n\n—¿Tú...?\n—Sí, mi querida y anciana madre —afirmó Sirius—. Llevamos a cabo un encantamiento de presencia permanente en la parte de atrás del lienzo, *pero* creemos que ha hecho un encantamiento de presencia permanente en la parte de atrás del lienzo. Rápido, vamos abajo antes de que despierten todos otra vez.\n—*Pero* ¿qué hace aquí un retrato de tu madre? —preguntó Harry, desconcertado, *mientras* salían por una puerta del vestíbulo y bajaban un tramo de estrechos escalones de piedra seguidos de los demás.\n—¿No te lo ha dicho nadie? Ésta era la casa de mis padres —respondió Sirius —. *Pero* soy el único Black que queda, de modo que ahora es mía. Se la ofrecí a Dumbledore como cuartel general; es lo único medianamente útil que he podido hacer.\n[...]",
+            "text": "¿Cuál es la función de los nexos escritos en cursivas?",
+            "options": {
+              "A": "Introducen ideas",
+              "B": "Encadenan argumentos",
+              "C": "Establecen una relación temporal",
+              "D": "Tienen un sentido causal"
+            },
+            "answer": "B",
+            "explanation": "*Pero* es un nexo adversativo que encadena dos oraciones en oposición o de significado contrario. También funcionan como adversativos: no obstante, sin embargo, aunque, sino..."
+          },
+          {
+            "id": 82,
+            "topic": "E.2",
+            "topic_name": "Nexos — función",
+            "text": "¿Cuál es la función del nexo subrayado?\n\n(El nexo subrayado es *mientras*.)",
+            "options": {
+              "A": "Establece una relación de simultaneidad",
+              "B": "Tiene un carácter concesivo",
+              "C": "Determina una condición",
+              "D": "Confiere un significado de finalidad"
+            },
+            "answer": "A",
+            "explanation": "*Mientras* establece relación de simultaneidad temporal entre dos acciones."
+          },
+          {
+            "id": 83,
+            "topic": "E.3",
+            "topic_name": "Nexos — función causal",
+            "context": "Frank, Ana, *Diario de Ana Frank*, Tomo, México, 2014, p. 209.\n\n**Viernes 16 de junio de 1944**\n\nQuerida Kitty:\nLa señora van Daan está desesperada, habla de cárcel, de ahorcarse, de suicidio y de meterse una bala en la cabeza. Está celosa *porque* Peter confía en mí y no en ella. Se siente humillada *porque* Dussel no responde a sus insinuaciones.",
+            "text": "¿Cuál es la función de los nexos escritos en cursivas?",
+            "options": {
+              "A": "Introducen ideas",
+              "B": "Relacionan temporalmente los enunciados",
+              "C": "Encadenan argumentos con sentido causal",
+              "D": "Indican comparación"
+            },
+            "answer": "C",
+            "explanation": "*Porque* encadena argumentos con sentido causal. Otros nexos causales: ya que, por consiguiente."
+          },
+          {
+            "id": 84,
+            "topic": "E.4",
+            "topic_name": "Análisis gramatical — clase de palabra",
+            "text": "Analiza gramaticalmente esta oración:\n\n*Próximamente presentaré un examen interesante.*\n\n¿Qué clase de palabra es *próximamente*?",
+            "options": {
+              "A": "Adjetivo",
+              "B": "Adverbio",
+              "C": "Preposición",
+              "D": "Sustantivo"
+            },
+            "answer": "B",
+            "explanation": "*Próximamente* es un adverbio (de tiempo) que modifica al verbo *presentaré*. Los adverbios son invariables y modifican el significado de un verbo, adjetivo u otro adverbio."
+          },
+          {
+            "id": 85,
+            "topic": "E.5",
+            "topic_name": "Análisis gramatical — tiempo verbal",
+            "text": "Analiza gramaticalmente esta oración:\n\n*Nadie diría que así ocurrieron los hechos.*\n\n¿En qué tiempo está conjugado el verbo *decir*?",
+            "options": {
+              "A": "Pretérito",
+              "B": "Copretérito",
+              "C": "Pospretérito",
+              "D": "Futuro"
+            },
+            "answer": "C",
+            "explanation": "*Diría* es la forma del pospretérito (también llamado condicional) del verbo *decir*. Presente: dice. Pretérito: dijo. Copretérito: decía. Pospretérito: diría. Futuro: dirá."
+          },
+          {
+            "id": 86,
+            "topic": "E.6",
+            "topic_name": "Sintaxis — oración principal y subordinada",
+            "text": "Analiza gramaticalmente esta oración:\n\n*El avión que está aterrizando, viene de París.*\n\n¿Cuál es la oración principal?",
+            "options": {
+              "A": "Avión",
+              "B": "El avión que está aterrizando",
+              "C": "Viene de París",
+              "D": "El avión viene de París"
+            },
+            "answer": "D",
+            "explanation": "Es una oración compuesta: principal *El avión viene de París*, y subordinada *que está aterrizando* (responde a cuál avión)."
+          },
+          {
+            "id": 87,
+            "topic": "E.7",
+            "topic_name": "Sintaxis — yuxtaposición",
+            "text": "Analiza gramaticalmente esta oración:\n\n*Tenemos servicio de internet; solicita tu clave.*\n\n¿Cuál es el separador de esta oración compuesta?",
+            "options": {
+              "A": "Internet",
+              "B": "; (punto y coma)",
+              "C": "Solicita",
+              "D": ". (punto)"
+            },
+            "answer": "B",
+            "explanation": "Es una oración compuesta por yuxtaposición: dos oraciones unidas sin nexo, separadas por punto y coma (;)."
+          },
+          {
+            "id": 88,
+            "topic": "E.8",
+            "topic_name": "Signos de puntuación — función",
+            "text": "Selecciona los enunciados que corresponden a las funciones de los signos de puntuación.\n\n1. Significar. La puntuación correcta evita ambigüedades al expresar ideas.\n2. Marcar pausas. La puntuación correcta marca pausas que facilitan la lectura.\n3. Desarrollar un estilo literario.\n4. Separar siempre el sujeto y el predicado.",
+            "options": {
+              "A": "1",
+              "B": "1, 2",
+              "C": "1, 2, 3",
+              "D": "1, 2, 3, 4"
+            },
+            "answer": "B",
+            "explanation": "Los signos de puntuación sirven para significar (evitar ambigüedades) y marcar pausas. No tienen como función desarrollar un estilo literario, y en oraciones simples no se separan sujeto y predicado con puntuación."
+          },
+          {
+            "id": 89,
+            "topic": "E.9",
+            "topic_name": "Signos de puntuación — dos puntos",
+            "text": "Es el signo de puntuación que se utiliza antes de una enumeración, al introducir una cita textual y al definir un concepto sin haber nexo verbal.",
+            "options": {
+              "A": "Coma (,)",
+              "B": "Punto y coma (;)",
+              "C": "Dos puntos (:)",
+              "D": "Puntos suspensivos (...)"
+            },
+            "answer": "C",
+            "explanation": "Los dos puntos (:) se usan antes de enumeraciones, al introducir citas textuales y al definir un concepto sin nexo verbal."
+          },
+          {
+            "id": 90,
+            "topic": "E.10",
+            "topic_name": "Signos de puntuación — paréntesis",
+            "text": "Analiza el siguiente párrafo y después selecciona el signo de puntuación que se debe utilizar para completar correctamente la expresión.\n\n**Ortografía** ___ del griego *orthos*, correcto; *grapho*, escribir ___ significa escribir correctamente.",
+            "options": {
+              "A": "Coma",
+              "B": "Dos puntos",
+              "C": "Paréntesis",
+              "D": "Comillas"
+            },
+            "answer": "C",
+            "explanation": "Los paréntesis () se utilizan para encerrar información intercalada con sentido explicativo independiente, como fechas, siglas y significados breves."
+          },
+          {
+            "id": 91,
+            "topic": "E.11",
+            "topic_name": "Acento diacrítico",
+            "text": "Selecciona la oración que muestra la escritura correcta del acento diacrítico.",
+            "options": {
+              "A": "No se como programar un robot.",
+              "B": "No sé como programar un robot.",
+              "C": "No se cómo programar un robot.",
+              "D": "No sé cómo programar un robot."
+            },
+            "answer": "D",
+            "explanation": "*Sé* (verbo saber) lleva tilde diacrítica para distinguirse de *se* (pronombre). *Cómo* (adverbio interrogativo indirecto) lleva tilde diacrítica para distinguirse de *como* (adverbio relativo)."
+          },
+          {
+            "id": 92,
+            "topic": "E.12",
+            "topic_name": "Coherencia textual — ordenar párrafos",
+            "text": "Ordena los siguientes párrafos en una secuencia lógica de exposición.\n\n1. La palabra *adyacente* significa contiguo o junto. Dos ángulos se llaman adyacentes si comparten un lado, esto es, si tienen un lado común.\n2. Pero ¿qué es \"adyacente\"?\n3. En la antigüedad, Euclides tuvo la brillante idea de definir el ángulo recto y adoptarlo como unidad de medida. Tal definición fue más o menos así:\n4. El uso actual del ángulo recto como unidad de medida es fundamental en el campo de la geometría.\n5. Cuando una línea recta que incide sobre otra, hace que los ángulos adyacentes sean iguales, cada uno de los ángulos es **recto**, y ambas líneas rectas son perpendiculares entre sí.",
+            "options": {
+              "A": "$4, 3, 2, 1, 5$",
+              "B": "$3, 5, 2, 1, 4$",
+              "C": "$2, 1, 4, 5, 3$",
+              "D": "$1, 5, 2, 4, 3$"
+            },
+            "answer": "B",
+            "explanation": "El orden lógico expositivo es: (3) Euclides definió el ángulo recto así → (5) cuando una línea recta incide y los ángulos adyacentes son iguales, son rectos → (2) pero ¿qué es adyacente? → (1) adyacente significa contiguo → (4) el uso del ángulo recto es fundamental en geometría."
+          }
+        ]
+      },
+      {
+        "subject": "Historia Universal y de México",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 93,
+            "topic": "H.1",
+            "topic_name": "Conquista de Constantinopla y nuevas rutas",
+            "text": "En 1453, los otomanos conquistaron la ciudad de Constantinopla, capital del Imperio Bizantino. Era un punto clave de las redes comerciales entre Europa y Asia. Los otomanos bloquearon la ruta comercial de Europa a Asia por Constantinopla. Fue entonces cuando los europeos buscaron nuevas rutas comerciales para tener acceso a los productos asiáticos.\n\n¿Cuál fue la trascendencia de haber buscado y encontrado nuevas rutas comerciales a finales del siglo XV y durante el siglo XVI?",
+            "options": {
+              "A": "Surgió el feudalismo en Europa",
+              "B": "Los europeos tuvieron acceso a productos asiáticos",
+              "C": "Comenzó la revolución industrial con la fabricación de barcos",
+              "D": "Surgieron los imperios coloniales e inició la integración económica del mundo"
+            },
+            "answer": "D",
+            "explanation": "En la búsqueda de nuevas rutas, Colón descubrió América (1492), Vasco da Gama llegó a la India por mar. Esto generó imperios coloniales europeos y el inicio de la integración económica mundial."
+          },
+          {
+            "id": 94,
+            "topic": "H.2",
+            "topic_name": "Absolutismo",
+            "text": "Se consolidó en el siglo XVII en casi toda Europa y se caracterizaba por la creación de monarquías en las que el rey tenía un poder ilimitado y un ejército propio. Proclamaban que el Estado les pertenecía por \"derecho divino\".\n\n¿Cómo se denominó este periodo histórico?",
+            "options": {
+              "A": "Feudalismo",
+              "B": "Edad Media",
+              "C": "Absolutismo",
+              "D": "Pluralismo"
+            },
+            "answer": "C",
+            "explanation": "El absolutismo se consolidó en el siglo XVII. Su mejor ejemplo es Luis XIV de Francia (\"El Estado soy yo\")."
+          },
+          {
+            "id": 95,
+            "topic": "H.3",
+            "topic_name": "Revolución Francesa",
+            "text": "Sucedió en el periodo de 1789 a 1799 y trajo consigo la aprobación de la \"Declaración de los derechos del hombre y el ciudadano\", la cual en esencia establece que la nación está formada por individuos que son iguales ante la ley.",
+            "options": {
+              "A": "Independencia de la Trece Colonias Inglesas",
+              "B": "Revolución Francesa",
+              "C": "Revolución Mexicana",
+              "D": "Revolución Rusa"
+            },
+            "answer": "B",
+            "explanation": "La Revolución Francesa (1789-1799) trajo consigo la Declaración de los derechos del hombre y el ciudadano."
+          },
+          {
+            "id": 96,
+            "topic": "H.4",
+            "topic_name": "Revolución Industrial",
+            "text": "Es el nombre asignado al desarrollo tecnológico que transformó a la producción artesanal (escasa y cara) en producción industrial (abundante y barata) en serie. Comenzó con la invención de máquinas hiladoras y tejedoras en la industria textil, seguida por la expansión del comercio, el desarrollo de trenes y barcos de vapor y otros numerosos avances tecnológicos en el periodo de 1750 a 1850. Después de haberse originado en Gran Bretaña, se extendió al resto de Europa y a todo el mundo.",
+            "options": {
+              "A": "Colonialización",
+              "B": "Capitalismo",
+              "C": "Revolución Industrial",
+              "D": "Globalización"
+            },
+            "answer": "C",
+            "explanation": "La Revolución Industrial es el desarrollo tecnológico que transformó la producción artesanal en industrial, originada en Gran Bretaña entre 1750 y 1850."
+          },
+          {
+            "id": 97,
+            "topic": "H.5",
+            "topic_name": "Segunda Guerra Mundial",
+            "text": "Hecho histórico que ocurrió en 1941 y significó la entrada de Estados Unidos de América al bando aliado durante la Segunda Guerra Mundial.",
+            "options": {
+              "A": "Bombardeo japonés a Pearl Harbor",
+              "B": "Invasión de Alemania a Polonia",
+              "C": "Invasión de Alemania a la URSS",
+              "D": "Bombardeo atómico de Estados Unidos de América a Japón"
+            },
+            "answer": "A",
+            "explanation": "En 1941, Japón bombardeó Pearl Harbor (Hawái); con este hecho EUA entró en la Segunda Guerra Mundial en el bando aliado."
+          },
+          {
+            "id": 98,
+            "topic": "H.6",
+            "topic_name": "Guerra Fría",
+            "text": "Conflicto entre Estados Unidos de América y la Unión de Repúblicas Soviéticas Socialistas (URSS) que duró desde la terminación de la Segunda Guerra Mundial hasta la disolución de la URSS en 1991, en el que no se llegó al uso de las armas, pero sí hubo un riesgo latente de lanzamiento de misiles nucleares. Las dos superpotencias pretendían establecer sus modelos de gobierno en todo el planeta: el capitalismo y el socialismo.",
+            "options": {
+              "A": "La Gran Depresión",
+              "B": "Guerra Fría",
+              "C": "Nazismo",
+              "D": "Globalización"
+            },
+            "answer": "B",
+            "explanation": "La Guerra Fría fue el periodo de tensión política, económica, militar e informativa entre EUA y la URSS, desde el fin de la Segunda Guerra Mundial hasta 1991."
+          },
+          {
+            "id": 99,
+            "topic": "H.7",
+            "topic_name": "Culturas mesoamericanas",
+            "text": "¿Qué cultura creó los libros del *Chilam Balam* y el *Popol Vuh*?",
+            "options": {
+              "A": "Olmeca",
+              "B": "Zapoteca",
+              "C": "Mexica",
+              "D": "Maya"
+            },
+            "answer": "D",
+            "explanation": "Los mayas, asentados en la península de Yucatán, escribieron en maya el *Chilam Balam* y el *Popol Vuh* durante la colonia."
+          },
+          {
+            "id": 100,
+            "topic": "H.8",
+            "topic_name": "Castas en la Nueva España",
+            "text": "Ordena de mayor a menor jerarquía estas seis castas de la Nueva España, las cuales se establecieron con base en un origen étnico:\n\n1. Mestizo\n2. Negro\n3. Español\n4. Indio\n5. Criollo\n6. Castizo",
+            "options": {
+              "A": "$4, 3, 5, 2, 1, 6$",
+              "B": "$3, 5, 1, 6, 4, 2$",
+              "C": "$2, 4, 1, 6, 3, 5$",
+              "D": "$1, 6, 3, 5, 4, 2$"
+            },
+            "answer": "B",
+            "explanation": "Orden jerárquico de mayor a menor: Español → Criollo → Mestizo → Castizo → Indio → Negro."
+          },
+          {
+            "id": 101,
+            "topic": "H.9",
+            "topic_name": "Economía Nueva España",
+            "text": "¿Cuáles fueron los principales productos de exportación de la Nueva España?",
+            "options": {
+              "A": "Maíz, cacao y especias",
+              "B": "Diamantes",
+              "C": "Esclavos",
+              "D": "Oro y plata"
+            },
+            "answer": "D",
+            "explanation": "La Nueva España exportaba principalmente metales preciosos (oro y plata) al Imperio Español, en especial plata, extraída de centros mineros como Zacatecas, Pachuca y Taxco."
+          },
+          {
+            "id": 102,
+            "topic": "H.10",
+            "topic_name": "Constitución de 1917",
+            "text": "Primer Jefe del Ejército Constitucionalista y encargado del Poder Ejecutivo de la Nación que decretó el 5 de febrero de 1917 la Constitución Política de los Estados Unidos Mexicanos.",
+            "options": {
+              "A": "Venustiano Carranza",
+              "B": "Francisco I. Madero",
+              "C": "Porfirio Díaz",
+              "D": "Benito Juárez"
+            },
+            "answer": "A",
+            "explanation": "Venustiano Carranza fue Jefe del Ejército Constitucionalista, derrocó a Victoriano Huerta y como encargado del Poder Ejecutivo decretó la Constitución de 1917."
+          },
+          {
+            "id": 103,
+            "topic": "H.11",
+            "topic_name": "Revolución Mexicana — Plan de Ayala",
+            "text": "Identifica el punto central del *Plan de Ayala*, un documento promulgado en 1911 por Emiliano Zapata.",
+            "options": {
+              "A": "Sufragio efectivo, no reelección.",
+              "B": "La tierra es de quien la trabaja.",
+              "C": "¡Viva México!",
+              "D": "Si los gobernantes no cumplen con la voluntad popular, entonces el pueblo tiene derecho a la rebelión."
+            },
+            "answer": "B",
+            "explanation": "El Plan de Ayala (1911) de Emiliano Zapata exigía la restitución de tierras a los campesinos. Su lema central: \"La tierra es de quien la trabaja\"."
+          },
+          {
+            "id": 104,
+            "topic": "H.12",
+            "topic_name": "Expropiación petrolera",
+            "text": "Presidente de México que el 18 de marzo de 1938 decretó la expropiación petrolera.",
+            "options": {
+              "A": "Pascual Ortiz Rubio",
+              "B": "Lázaro Cárdenas del Río",
+              "C": "Miguel Alemán Valdés",
+              "D": "Adolfo López Mateos"
+            },
+            "answer": "B",
+            "explanation": "El general Lázaro Cárdenas del Río (presidente 1934-1940) decretó la expropiación petrolera el 18 de marzo de 1938."
+          }
+        ]
+      },
+      {
+        "subject": "Geografía",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 105,
+            "topic": "G.1",
+            "topic_name": "Componentes del espacio geográfico",
+            "text": "Componente económico del espacio geográfico cuyo objetivo es explotar los recursos naturales:",
+            "options": {
+              "A": "Industria",
+              "B": "Comercio",
+              "C": "Minería",
+              "D": "Telecomunicaciones"
+            },
+            "answer": "C",
+            "explanation": "La minería es el componente económico cuyo objetivo es explotar recursos naturales (minerales). La industria los transforma; el comercio los intercambia."
+          },
+          {
+            "id": 106,
+            "topic": "G.2",
+            "topic_name": "Representaciones cartográficas",
+            "text": "Representación de la Tierra con simbología, orientación, proyección y escala.",
+            "options": {
+              "A": "Plano",
+              "B": "Mapa",
+              "C": "Fotografía aérea",
+              "D": "Globo terráqueo"
+            },
+            "answer": "B",
+            "explanation": "El mapa es la representación de la Tierra con simbología, orientación, proyección y escala. El plano es para áreas pequeñas; el globo no usa proyección plana; la fotografía aérea es una imagen."
+          },
+          {
+            "id": 107,
+            "topic": "G.3",
+            "topic_name": "Tectónica de placas",
+            "text": "Así se denomina el deslizamiento de una placa tectónica por debajo de otra.",
+            "options": {
+              "A": "Dorsal",
+              "B": "Plegamiento",
+              "C": "Subducción",
+              "D": "Expansión"
+            },
+            "answer": "C",
+            "explanation": "La subducción es el deslizamiento de una placa tectónica por debajo de otra. Las dorsales son elevaciones del fondo oceánico; los plegamientos forman montañas."
+          },
+          {
+            "id": 108,
+            "topic": "G.4",
+            "topic_name": "Ciclo hidrológico",
+            "text": "Es la etapa del ciclo hidrológico que explica la formación de cuerpos subterráneos de agua.",
+            "options": {
+              "A": "Evaporación",
+              "B": "Precipitación",
+              "C": "Escurrimiento",
+              "D": "Infiltración"
+            },
+            "answer": "D",
+            "explanation": "La infiltración es la etapa en que el agua pasa a través de las partículas del suelo y forma cuerpos subterráneos de agua."
+          },
+          {
+            "id": 109,
+            "topic": "G.5",
+            "topic_name": "Vulnerabilidad ante desastres",
+            "text": "Es un factor principal que hace más vulnerable a la población en caso de un desastre natural, como sismo, huracán, inundación, erupción volcánica o algún otro.",
+            "options": {
+              "A": "Pobreza",
+              "B": "Analfabetismo",
+              "C": "Inseguridad",
+              "D": "Turismo"
+            },
+            "answer": "A",
+            "explanation": "La pobreza es el principal factor que hace vulnerable a la población ante desastres naturales: las casas se construyen con escasos recursos en zonas de riesgo."
+          },
+          {
+            "id": 110,
+            "topic": "G.6",
+            "topic_name": "Biodiversidad de México",
+            "text": "Estados que cuentan con la mayor biodiversidad de México:",
+            "options": {
+              "A": "Sonora y Sinaloa",
+              "B": "Jalisco y Michoacán",
+              "C": "Estado de México y Ciudad de México",
+              "D": "Oaxaca y Chiapas"
+            },
+            "answer": "D",
+            "explanation": "La mayor biodiversidad de México está en el bosque tropical lluvioso del sureste, principalmente en Oaxaca y Chiapas, entre el golfo de México y el Pacífico."
+          },
+          {
+            "id": 111,
+            "topic": "G.7",
+            "topic_name": "Geografía industrial de México",
+            "text": "Son dos grandes ciudades industriales ubicadas en el norte de México.",
+            "options": {
+              "A": "Monterrey, Nuevo León, y Torreón, Coahuila",
+              "B": "Manzanillo, Colima, y Guadalajara, Jalisco",
+              "C": "Toluca, Estado de México, y la Ciudad de México",
+              "D": "Mérida, Yucatán, y Cancún, Quintana Roo"
+            },
+            "answer": "A",
+            "explanation": "Monterrey y Torreón son dos grandes ciudades industriales del norte. Manzanillo y Guadalajara están en el occidente; Toluca y CDMX en el centro; Mérida y Cancún en el oriente (turísticas)."
+          },
+          {
+            "id": 112,
+            "topic": "G.8",
+            "topic_name": "Soberanía marítima",
+            "text": "Es el sector del océano que tiene un ancho de 12 millas náuticas, en el que un Estado ejerce plena soberanía.",
+            "options": {
+              "A": "Aguas interiores",
+              "B": "Mar territorial",
+              "C": "Zona Económica exclusiva",
+              "D": "Alta mar"
+            },
+            "answer": "B",
+            "explanation": "El mar territorial es el sector de 12 millas náuticas donde un Estado ejerce plena soberanía. La zona económica exclusiva se extiende hasta 200 millas."
+          },
+          {
+            "id": 113,
+            "topic": "G.9",
+            "topic_name": "Organismos internacionales",
+            "text": "Asociación de gobierno global fundada en 1945, que facilita la cooperación en asuntos como paz y seguridad internacional, derechos humanos y desarrollo económico y social:",
+            "options": {
+              "A": "Organización Mundial de Comercio",
+              "B": "Fondo Monetario Internacional",
+              "C": "Banco Mundial",
+              "D": "Organización de las Naciones Unidas"
+            },
+            "answer": "D",
+            "explanation": "La ONU fue constituida en 1945 con el objetivo principal de evitar otra guerra mundial y atender asuntos de derecho internacional, paz, seguridad y derechos humanos."
+          },
+          {
+            "id": 114,
+            "topic": "G.10",
+            "topic_name": "Geografía social mundial",
+            "text": "Es el continente con la mayor tasa de mortalidad y el menor desarrollo social del mundo.",
+            "options": {
+              "A": "Europa",
+              "B": "Asia",
+              "C": "África",
+              "D": "América"
+            },
+            "answer": "C",
+            "explanation": "África tiene la mayor mortalidad y el menor desarrollo social del mundo. En desarrollo social: Europa > América > Asia > África."
+          },
+          {
+            "id": 115,
+            "topic": "G.11",
+            "topic_name": "Globalización",
+            "text": "Desarrollo tecnológico que ha fundamentado la globalización.",
+            "options": {
+              "A": "Teléfono",
+              "B": "Televisión",
+              "C": "Computadora",
+              "D": "Internet"
+            },
+            "answer": "D",
+            "explanation": "Internet es la tecnología que ha permitido la comunicación eficiente y de bajo costo de datos, imágenes y sonidos a escala mundial, fundamentando la globalización."
+          },
+          {
+            "id": 116,
+            "topic": "G.12",
+            "topic_name": "Calidad de vida",
+            "text": "¿Cuál de los siguientes países tiene la más alta calidad de vida?",
+            "options": {
+              "A": "Egipto",
+              "B": "China",
+              "C": "Noruega",
+              "D": "México"
+            },
+            "answer": "C",
+            "explanation": "Noruega tiene la más alta calidad de vida, considerando factores como salud, bienestar material, estabilidad política y libertad."
+          }
+        ]
+      },
+      {
+        "subject": "Formación cívica y ética",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 117,
+            "topic": "FCE.1",
+            "topic_name": "Ciudad de México — nueva entidad",
+            "text": "Por decreto publicado el 29 de enero de 2016 en el *Diario Oficial de la Federación*, el antiguo Distrito Federal se denomina actualmente:",
+            "options": {
+              "A": "Ciudad de México",
+              "B": "Estado de México",
+              "C": "Zona Metropolitana",
+              "D": "Capital de los Estados Unidos Mexicanos"
+            },
+            "answer": "A",
+            "explanation": "Por decreto del 29 de enero de 2016, el antiguo Distrito Federal pasó a denominarse Ciudad de México, una nueva entidad federativa."
+          },
+          {
+            "id": 118,
+            "topic": "FCE.2",
+            "topic_name": "Reforma política",
+            "text": "La reforma __________ que puso fin al antiguo Distrito Federal incluye crear una Constitución para esta nueva entidad federativa.",
+            "options": {
+              "A": "Económica",
+              "B": "Política",
+              "C": "Social",
+              "D": "Ecológica"
+            },
+            "answer": "B",
+            "explanation": "Es una reforma política porque cambia condiciones administrativas para beneficios generales. Una reforma económica afecta lo financiero; una social, lo demográfico; una ecológica, el ambiente."
+          },
+          {
+            "id": 119,
+            "topic": "FCE.3",
+            "topic_name": "Ética y corrupción",
+            "text": "A cambio de un soborno, un funcionario público otorga una licencia de funcionamiento para un negocio que no cumple con todos los requisitos previstos por la ley.\n\n¿Cómo es la conducta de tal funcionario?",
+            "options": {
+              "A": "Cívica",
+              "B": "Ética",
+              "C": "No ética",
+              "D": "Antiestética"
+            },
+            "answer": "C",
+            "explanation": "La ética es el conjunto de reglas morales que rigen la conducta humana. Quien acepta un soborno antepone un beneficio personal a su obligación: su conducta es *no ética*."
+          },
+          {
+            "id": 120,
+            "topic": "FCE.4",
+            "topic_name": "Ceremonias cívicas",
+            "text": "La noche del 15 de septiembre de cada año, el pueblo de México se reúne en las plazas públicas para entonar el himno nacional y dar el Grito de Independencia como parte de una fiesta. ¿Qué tipo de ceremonia se celebra entonces?",
+            "options": {
+              "A": "Política",
+              "B": "Cívica",
+              "C": "Ética",
+              "D": "Laica"
+            },
+            "answer": "B",
+            "explanation": "Las ceremonias cívicas fortalecen la identidad ciudadana usando símbolos nacionales (bandera, himno) o regionales (música, danza). El Grito de Independencia es ceremonia cívica."
+          },
+          {
+            "id": 121,
+            "topic": "FCE.5",
+            "topic_name": "Valoración estética",
+            "text": "De los siguientes enunciados, ¿cuál expresa una valoración estética?",
+            "options": {
+              "A": "En el dibujo del \"Hombre de Vitruvio\", Leonardo da Vinci realza con algunos trazos auxiliares la simetría y las proporciones del cuerpo humano.",
+              "B": "En un triángulo rectángulo, la suma de los cuadrados de los catetos es igual al cuadrado de la hipotenusa.",
+              "C": "Artículo 123. Toda persona tiene derecho al trabajo digno y socialmente útil.",
+              "D": "Poder Legislativo es el órgano de gobierno encargado de hacer y reformar las leyes."
+            },
+            "answer": "A",
+            "explanation": "Lo estético es lo relativo a la percepción y apreciación de la belleza. La opción A se refiere a la simetría y proporciones del Hombre de Vitruvio: valoración estética. Las otras son matemáticas, jurídicas o políticas."
+          },
+          {
+            "id": 122,
+            "topic": "FCE.6",
+            "topic_name": "Postura constitucional",
+            "text": "En los Estados Unidos Mexicanos, toda persona tiene derecho al trabajo digno y socialmente útil. Esto es un ejemplo de una postura:",
+            "options": {
+              "A": "Cívica",
+              "B": "Laica",
+              "C": "Dictatorial",
+              "D": "Constitucional"
+            },
+            "answer": "D",
+            "explanation": "El derecho al trabajo digno y socialmente útil está consagrado en el Artículo 123 de la Constitución Política de los Estados Unidos Mexicanos. Es una postura constitucional."
+          },
+          {
+            "id": 123,
+            "topic": "FCE.7",
+            "topic_name": "Relaciones internacionales",
+            "text": "Es una profesión cuyo objetivo es representar y velar por los intereses de un Estado y de su nación en relación con otro Estado u organismo internacional.",
+            "options": {
+              "A": "Nacionalismo",
+              "B": "Intolerancia",
+              "C": "Diplomacia",
+              "D": "Justicia"
+            },
+            "answer": "C",
+            "explanation": "La diplomacia es la profesión que representa y vela por los intereses de un Estado y su nación frente a otros Estados u organismos internacionales."
+          },
+          {
+            "id": 124,
+            "topic": "FCE.8",
+            "topic_name": "Acoso sexual",
+            "text": "Es la manifestación de una serie de conductas compulsivas de solicitud de favores sexuales, las cuales se dirigen a una persona en contra de su consentimiento.",
+            "options": {
+              "A": "Acoso",
+              "B": "Abuso",
+              "C": "Extorsión",
+              "D": "Secuestro"
+            },
+            "answer": "A",
+            "explanation": "El acoso sexual es la manifestación de conductas compulsivas de solicitud de favores sexuales en contra del consentimiento de la víctima."
+          },
+          {
+            "id": 125,
+            "topic": "FCE.9",
+            "topic_name": "Discriminación racial",
+            "text": "Algunos amigos acuerdan excluir a un joven de pertenecer a su grupo por su aspecto indígena. Su actitud es un ejemplo de discriminación:",
+            "options": {
+              "A": "Económica",
+              "B": "Racial",
+              "C": "Religiosa",
+              "D": "Sexual"
+            },
+            "answer": "B",
+            "explanation": "Es discriminación racial porque el joven indígena está siendo excluido por su raza, no por su dinero, religión o sexo."
+          },
+          {
+            "id": 126,
+            "topic": "FCE.10",
+            "topic_name": "Normas sociales",
+            "text": "Saludar, vestirse adecuadamente y ser puntual en una cita son ejemplos de normas:",
+            "options": {
+              "A": "Morales",
+              "B": "Jurídicas",
+              "C": "Religiosas",
+              "D": "Sociales"
+            },
+            "answer": "D",
+            "explanation": "Las normas sociales son aquellas que la costumbre origina, como saludar, vestirse de modo apropiado y ser puntual."
+          },
+          {
+            "id": 127,
+            "topic": "FCE.11",
+            "topic_name": "Instituciones electorales",
+            "text": "Es el organismo público autónomo encargado de las elecciones federales, es decir, la elección del Presidente de la República, los Diputados y Senadores que integran el Congreso de la Unión, así como de organizar, en coordinación con los organismos electorales de las entidades federativas, las elecciones locales.",
+            "options": {
+              "A": "Congreso de la Unión",
+              "B": "Tribunal Electoral del Poder Judicial de la Federación",
+              "C": "Instituto Nacional Electoral",
+              "D": "Instituto Federal Electoral"
+            },
+            "answer": "C",
+            "explanation": "El Instituto Nacional Electoral (INE) es el organismo público autónomo encargado desde 2014 de las elecciones federales y locales. En 2014, el IFE se transformó en INE por reforma constitucional."
+          },
+          {
+            "id": 128,
+            "topic": "FCE.12",
+            "topic_name": "Formas de gobierno — democracia",
+            "text": "¿Qué clase de gobierno tiene una nación cuyos representantes han sido elegidos por medio del voto universal, libre, directo y secreto?",
+            "options": {
+              "A": "Nacionalista",
+              "B": "Democrático",
+              "C": "Dictatorial",
+              "D": "Fundamentalista"
+            },
+            "answer": "B",
+            "explanation": "En un gobierno democrático los representantes son elegidos por el pueblo mediante el voto universal, libre, directo y secreto."
+          }
+        ]
+      }
+    ]
+  }
+}

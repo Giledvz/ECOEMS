@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="240" height="200" fill="#ffffff"/>
+  <!-- Pentágono regular centrado, radio r=70, centro (110, 90) -->
+  <!-- Vértices del pentágono regular comenzando desde arriba, sentido horario:
+       (110, 20)        ángulo 90°
+       (176.6, 68.4)    ángulo 18°
+       (151.1, 146.6)   ángulo -54°
+       (68.9, 146.6)    ángulo -126° (234°)
+       (43.4, 68.4)     ángulo 162°
+       Pero queremos un lado horizontal abajo. Rotamos: vértice inferior derecho en (151.1, 146.6)
+       y vértice inferior izquierdo en (68.9, 146.6). El lado entre ellos es horizontal. Bien. -->
+  <g stroke="#1a1a1a" stroke-width="2.2" fill="none" stroke-linejoin="round">
+    <polygon points="110,20 176.6,68.4 151.1,146.6 68.9,146.6 43.4,68.4"/>
+    <!-- Línea recta horizontal exterior tangente al vértice inferior derecho (151.1, 146.6) -->
+    <line x1="151.1" y1="146.6" x2="225" y2="146.6"/>
+  </g>
+  <!-- Ángulo alpha: arco entre el lado del pentágono (151.1,146.6)→(176.6,68.4) y la horizontal hacia la derecha -->
+  <!-- El lado superior derecho forma un ángulo con la horizontal extendida.
+       Vector del lado externo (extendido hacia arriba-derecha): dirección de (151.1,146.6) → (176.6,68.4):
+       dx=25.5, dy=-78.2 → ángulo desde el eje x positivo: atan2(-78.2,25.5) ≈ -71.94° (es decir, sube 71.94°)
+       Ángulo exterior (entre la prolongación de la base hacia la derecha y el lado del pentágono que sube) = 72°.
+       Arco pequeño marcando alpha. -->
+  <path d="M 173,146.6 A 22,22 0 0 0 158,124" fill="none" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="186" y="135" font-size="16" font-style="italic">α</text>
+</svg>
