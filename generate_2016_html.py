@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
-"""Generate examen_ecoems_2015_versionA_con_respuestas.html from V.A JSON."""
+"""Generate examen_ecoems_2016_con_respuestas.html from 2016 JSON."""
 import json
+import os
 import re
 import html as html_lib
 
-VA_PATH = '/Users/giledvz/Documents/ECOEMS/examen_ecoems_2015_versionA.json'
-OUT_PATH = '/Users/giledvz/Documents/ECOEMS/public/examen_ecoems_2015_versionA_con_respuestas.html'
+BASE = os.path.dirname(os.path.abspath(__file__))
+IN_PATH = os.path.join(BASE, 'examen_ecoems_2016.json')
+OUT_PATH = os.path.join(BASE, 'public', 'examen_ecoems_2016_con_respuestas.html')
+PUBLIC_DIR = os.path.join(BASE, 'public') + '/'
 
 
 def md_table_to_html(text):
-    """Convert simple markdown tables in text to HTML <table>."""
     lines = text.split('\n')
     out = []
     i = 0
     while i < len(lines):
         line = lines[i].strip()
-        # Detect a markdown table: header row, separator row, then data rows
         if '|' in line and i + 1 < len(lines) and re.match(r'^\s*\|?(\s*:?-+:?\s*\|)+\s*:?-+:?\s*\|?\s*$', lines[i + 1]):
             header = [c.strip() for c in line.strip('|').split('|')]
             rows = []
@@ -38,14 +39,11 @@ def md_table_to_html(text):
 
 
 def render_inline(text):
-    """Apply minimal markdown: **bold**, line breaks, tables."""
     if not text:
         return ''
     text = md_table_to_html(text)
-    # Bold **x** y *x* (ambos renderizados como negrita)
     text = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', text)
     text = re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)', r'<em>\1</em>', text)
-    # Replace remaining newlines (outside tables) with <br>
     parts = re.split(r'(<table.*?</table>)', text, flags=re.DOTALL)
     new_parts = []
     for p in parts:
@@ -65,11 +63,9 @@ def is_placeholder(q):
 
 
 def render_option_value(val):
-    """Render an option value — could be plain text or HTML (e.g. <img>)."""
     if val is None:
         return ''
     s = str(val)
-    # Fix absolute web paths in any embedded <img src="/..."> so <base> resolves them
     s = re.sub(r'src="/(imagenes_)', r'src="\1', s)
     return render_inline(s)
 
@@ -102,7 +98,6 @@ def render_question(q):
         parts.append(f'<div class="qcontext">{render_inline(context)}</div>')
     parts.append(f'<div class="qtext">{render_inline(text)}</div>')
     if img:
-        # Strip leading / so <base> tag resolves it within /public/
         img_src = img.lstrip('/')
         parts.append(f'<img class="qimage" src="{html_lib.escape(img_src)}" alt=""/>')
     parts.append('<div class="options">')
@@ -122,33 +117,19 @@ def render_question(q):
 
 
 def main():
-    with open(VA_PATH) as f:
+    with open(IN_PATH) as f:
         data = json.load(f)
 
-    # Walk all questions, preserving order and grouping by subject
-    sections = []  # list of (subject_name, [questions])
-
-    def walk(node):
-        if isinstance(node, dict):
-            if 'subject' in node and isinstance(node.get('questions'), list):
-                sections.append((node['subject'], node['questions']))
-                return
-            for v in node.values():
-                walk(v)
-        elif isinstance(node, list):
-            for item in node:
-                walk(item)
-
-    walk(data)
-
+    sections = [(s['subject'], s['questions']) for s in data['exam']['sections']]
     total = sum(len(qs) for _, qs in sections)
     placeholders = sum(1 for _, qs in sections for q in qs if is_placeholder(q))
+    title = data['exam'].get('title', 'Examen ECOEMS 2016')
 
     html = f"""<!DOCTYPE html>
 <html><head>
 <meta charset="UTF-8">
-<title>Examen ECOEMS 2015 — Versión A (con respuestas)</title>
-<base href="file:///Users/giledvz/Documents/ECOEMS/public/">
+<title>{html_lib.escape(title)} (con respuestas)</title>
+<base href="file://{PUBLIC_DIR}">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
@@ -164,6 +145,16 @@ def main():
   .question.placeholder .qheader {{ color: #92400e; font-weight: bold; }}
   .qtext {{ margin-bottom: 8px; }}
   .qimage {{ max-width: 400px; max-height: 280px; display: block; margin: 8px 0; }}
+  .qimage[src*="q50_tabla_periodica"] {{ width: 567px; max-width: 100%; max-height: none; height: auto; }}
+  .qimage[src*="q5_original"],
+  .qimage[src*="q13_pentagono"] {{ width: 378px; max-width: 100%; max-height: none; height: auto; }}
+  .qimage[src*="q6_original"],
+  .qimage[src*="q7_original"],
+  .qimage[src*="q8_original"] {{ width: 410px; max-width: 100%; max-height: none; height: auto; }}
+  .qimage[src*="q9_original"],
+  .qimage[src*="q10_original"] {{ width: 284px; max-width: 100%; max-height: none; height: auto; }}
+  .qimage[src*="q12_tira_triangulos"] {{ width: 693px; max-width: 100%; max-height: none; height: auto; }}
+  .qimage[src*="q14_cuadrados_anidados"] {{ width: 567px; max-width: 100%; max-height: none; height: auto; }}
   .options {{ margin-left: 16px; }}
   .option {{ padding: 4px 8px; margin: 2px 0; border-radius: 4px; }}
   .option.correct {{ background: #c8f0c8; font-weight: bold; }}
@@ -182,8 +173,8 @@ def main():
   }}
 </style>
 </head><body>
-<h1>Examen ECOEMS 2015 — Versión A</h1>
-<p class="summary">{total} preguntas con respuestas marcadas (✓) — <b>{placeholders} pendientes</b> resaltadas en amarillo</p>
+<h1>{html_lib.escape(title)}</h1>
+<p class="summary">{total} preguntas con respuestas marcadas (✓){' — <b>' + str(placeholders) + ' pendientes</b> resaltadas en amarillo' if placeholders else ''}</p>
 """
 
     for subj, qs in sections:

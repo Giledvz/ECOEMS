@@ -843,7 +843,7 @@ io.on('connection', (socket) => {
       const correctOrig = room.answerKey[qid];
       student.answerKey[qid] = origLetters[srcLetters.indexOf(correctOrig)];
 
-      return { id: q.id, text: q.text, context: q.context || null, options: newOptions, image: q.image, subject: q.subject };
+      return { id: q.id, text: q.text, context: q.context || null, options: newOptions, image: q.image, subject: q.subject, topic_name: q.topic_name || '' };
     });
 
     const joinPayload = {

@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<title>Examen ECOEMS 2016 — Versión 3 (con respuestas)</title>
+<base href="file:///Users/giledvz/ECOEMS/public/">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+  body { font-family: 'Latin Modern Roman', Georgia, 'Times New Roman', serif; max-width: 850px; margin: 20px auto; padding: 0 20px; line-height: 1.4; }
+  h1 { text-align: center; margin-bottom: 4px; }
+  .summary { text-align: center; color: #666; margin-bottom: 20px; }
+  h2.subject { background: #2c3e50; color: white; padding: 8px 12px; margin: 32px 0 12px 0; border-radius: 4px; page-break-before: auto; }
+  .question { margin-bottom: 20px; padding: 12px; border: 1px solid #ddd; page-break-inside: avoid; border-radius: 4px; }
+  .question.placeholder { border-color: #d97706; background: #fef3c7; }
+  .qheader { color: #666; font-size: 13px; margin-bottom: 6px; font-style: italic; }
+  .question.placeholder .qheader { color: #92400e; font-weight: bold; }
+  .qtext { margin-bottom: 8px; }
+  .qimage { max-width: 400px; max-height: 280px; display: block; margin: 8px 0; }
+  .qimage[src*="q50_tabla_periodica"] { width: 567px; max-width: 100%; max-height: none; height: auto; }
+  .qimage[src*="q5_original"],
+  .qimage[src*="q13_pentagono"] { width: 378px; max-width: 100%; max-height: none; height: auto; }
+  .qimage[src*="q6_original"],
+  .qimage[src*="q7_original"],
+  .qimage[src*="q8_original"] { width: 410px; max-width: 100%; max-height: none; height: auto; }
+  .qimage[src*="q9_original"],
+  .qimage[src*="q10_original"] { width: 284px; max-width: 100%; max-height: none; height: auto; }
+  .qimage[src*="q12_tira_triangulos"] { width: 693px; max-width: 100%; max-height: none; height: auto; }
+  .qimage[src*="q14_cuadrados_anidados"] { width: 567px; max-width: 100%; max-height: none; height: auto; }
+  .options { margin-left: 16px; }
+  .option { padding: 4px 8px; margin: 2px 0; border-radius: 4px; }
+  .option.correct { background: #c8f0c8; font-weight: bold; }
+  .option.correct::before { content: "✓ "; }
+  .option img { max-width: 200px; max-height: 200px; vertical-align: middle; }
+  .qexplanation { margin-top: 8px; padding: 6px 10px; background: #f5f5f5; font-size: 13px; border-left: 3px solid #999; }
+  .qcontext { background: #f8f4e8; border-left: 4px solid #b08d57; padding: 10px 14px; margin: 8px 0 12px 0; font-size: 14px; text-align: justify; }
+  .qcontext strong { color: #6b4423; }
+  .qtable { border-collapse: collapse; margin: 8px 0; }
+  .qtable th, .qtable td { border: 1px solid #ccc; padding: 4px 8px; text-align: center; }
+  .qtable th { background: #eee; }
+  @media print {
+    body { margin: 0; max-width: none; }
+    .question { page-break-inside: avoid; }
+    h2.subject { page-break-after: avoid; }
+  }
+</style>
+</head><body>
+<h1>Examen ECOEMS 2016 — Versión 3</h1>
+<p class="summary">128 preguntas con respuestas marcadas (✓)</p>
+
+<h2 class="subject">Habilidad matemática (16 preguntas)</h2>
+<div class="question">
+<div class="qheader">Pregunta 1 · HM.1 — Sucesiones numéricas</div>
+<div class="qtext">Selecciona el número que completa correctamente la siguiente sucesión.<br><br>$$98,\ 79,\ 71,\ 64,\ \_\_\_$$</div>
+<div class="options">
+<div class="option"><b>A)</b> 55</div>
+<div class="option"><b>B)</b> 56</div>
+<div class="option"><b>C)</b> 57</div>
+<div class="option correct"><b>D)</b> 58</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Las diferencias son $-9, -8, -7, -6$, por lo que el siguiente término es $64 - 6 = 58$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 2 · HM.2 — Sucesiones numéricas</div>
+<div class="qtext">Indica cuáles son los dos números que completan correctamente la sucesión.<br><br>$$-4.3,\ \_\_\_,\ \_\_\_,\ 2.6,\ 4.9$$</div>
+<div class="options">
+<div class="option"><b>A)</b> -3.0, -0.3</div>
+<div class="option correct"><b>B)</b> -2.0, 0.3</div>
+<div class="option"><b>C)</b> -0.2, 1.3</div>
+<div class="option"><b>D)</b> 0, 1.3</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La sucesión tiene razón aritmética $+2.3$: $-4.3, -2.0, 0.3, 2.6, 4.9$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 3 · HM.3 — Evaluación de expresiones</div>
+<div class="qtext">¿Cuál es la sucesión que se genera al sustituir $x$ por $1, 2, 3$ y $4$ en la siguiente expresión?<br><br>$$-\frac{1}{x}(-1)^x$$</div>
+<div class="options">
+<div class="option correct"><b>A)</b> $1,\ -\frac{1}{2},\ \frac{1}{3},\ -\frac{1}{4}$</div>
+<div class="option"><b>B)</b> $1,\ \frac{1}{2},\ \frac{1}{3},\ \frac{1}{4}$</div>
+<div class="option"><b>C)</b> $-1,\ \frac{1}{2},\ -\frac{1}{3},\ \frac{1}{4}$</div>
+<div class="option"><b>D)</b> $-1,\ -\frac{1}{2},\ -\frac{1}{3},\ -\frac{1}{4}$</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Para $x=1$: $-\frac{1}{1}(-1)^1 = 1$. Para $x=2$: $-\frac{1}{2}(-1)^2 = -\frac{1}{2}$. Para $x=3$: $-\frac{1}{3}(-1)^3 = \frac{1}{3}$. Para $x=4$: $-\frac{1}{4}(-1)^4 = -\frac{1}{4}$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 4 · HM.4 — Sucesiones con regla general</div>
+<div class="qtext">¿A cuánto equivale $x_9$ (el elemento nueve) en la siguiente sucesión?<br><br>$$x_1 = 2,\ x_2 = 5,\ x_3 = 10,\ x_4 = 17,\ \ldots$$</div>
+<div class="options">
+<div class="option"><b>A)</b> 61</div>
+<div class="option"><b>B)</b> 76</div>
+<div class="option correct"><b>C)</b> 82</div>
+<div class="option"><b>D)</b> 99</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El patrón es $x_n = n^2 + 1$. Entonces $x_9 = 9^2 + 1 = 82$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 5 · HM.5 — Series espaciales — polígonos</div>
+<div class="qtext">Selecciona entre las opciones la figura siguiente de esta serie:</div>
+<img class="qimage" src="imagenes_ecoems_2016/q5_original.svg" alt=""/>
+<div class="options">
+<div class="option"><b>A)</b> <img src="imagenes_ecoems_2016/q5_a.svg" style="width:100%;max-width:142px;display:block;"></div>
+<div class="option"><b>B)</b> <img src="imagenes_ecoems_2016/q5_b.svg" style="width:100%;max-width:142px;display:block;"></div>
+<div class="option correct"><b>C)</b> <img src="imagenes_ecoems_2016/q5_c.svg" style="width:100%;max-width:142px;display:block;"></div>
+<div class="option"><b>D)</b> <img src="imagenes_ecoems_2016/q5_d.svg" style="width:100%;max-width:142px;display:block;"></div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Dos cualidades no cambian en la serie: el círculo es negro y el polígono blanco. El número de lados sigue 6, 5, 4, 3 (triángulo). El patrón inscrito/circunscrito alterna: inscrito, circunscrito, inscrito, circunscrito → el cuarto elemento es un triángulo blanco circunscrito al círculo negro (círculo dentro del triángulo).</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 6 · HM.6 — Series espaciales — cruces y rectángulos</div>
+<div class="qtext">Selecciona la figura que corresponde al elemento siguiente de esta serie.</div>
+<img class="qimage" src="imagenes_ecoems_2016/q6_original.svg" alt=""/>
+<div class="options">
+<div class="option"><b>A)</b> <img src="imagenes_ecoems_2016/q6_a.svg" style="width:100%;max-width:158px;display:block;"></div>
+<div class="option correct"><b>B)</b> <img src="imagenes_ecoems_2016/q6_b.svg" style="width:100%;max-width:158px;display:block;"></div>
+<div class="option"><b>C)</b> <img src="imagenes_ecoems_2016/q6_c.svg" style="width:100%;max-width:158px;display:block;"></div>
+<div class="option"><b>D)</b> <img src="imagenes_ecoems_2016/q6_d.svg" style="width:100%;max-width:158px;display:block;"></div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La parte constante es la cruz (+). Las dos partes variables (rectángulo y línea vertical) avanzan en sentido horario alrededor de la cruz; la figura completa la serie con rectángulo abajo-izq y línea arriba-der.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 7 · HM.7 — Series espaciales — representación binaria</div>
+<div class="qtext">Esta serie de figuras es una forma de representar los números binarios: 0, 1, 2 y 3.<br><br>¿Cuál es el siguiente elemento de esta serie, es decir, la opción que representa el número 4?</div>
+<img class="qimage" src="imagenes_ecoems_2016/q7_original.svg" alt=""/>
+<div class="options">
+<div class="option"><b>A)</b> <img src="imagenes_ecoems_2016/q7_a.svg" style="width:100%;max-width:126px;display:block;"></div>
+<div class="option"><b>B)</b> <img src="imagenes_ecoems_2016/q7_b.svg" style="width:100%;max-width:126px;display:block;"></div>
+<div class="option"><b>C)</b> <img src="imagenes_ecoems_2016/q7_c.svg" style="width:100%;max-width:126px;display:block;"></div>
+<div class="option correct"><b>D)</b> <img src="imagenes_ecoems_2016/q7_d.svg" style="width:100%;max-width:126px;display:block;"></div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> En esta notación binaria los círculos negros valen 0 y los blancos valen 1, con valor posicional (el de la izquierda vale más). El número 4 en binario es 100, que se representa con un círculo blanco a la izquierda y dos negros: ○●●.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 8 · HM.8 — Series espaciales — hexágonos</div>
+<div class="qtext">Selecciona la figura que corresponde al elemento siguiente de esta serie.</div>
+<img class="qimage" src="imagenes_ecoems_2016/q8_original.svg" alt=""/>
+<div class="options">
+<div class="option correct"><b>A)</b> <img src="imagenes_ecoems_2016/q8_a.svg" style="width:100%;max-width:158px;display:block;"></div>
+<div class="option"><b>B)</b> <img src="imagenes_ecoems_2016/q8_b.svg" style="width:100%;max-width:158px;display:block;"></div>
+<div class="option"><b>C)</b> <img src="imagenes_ecoems_2016/q8_c.svg" style="width:100%;max-width:158px;display:block;"></div>
+<div class="option"><b>D)</b> <img src="imagenes_ecoems_2016/q8_d.svg" style="width:100%;max-width:158px;display:block;"></div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El círculo gira 120° antihorario y alterna blanco/negro: en el elemento 4 ha completado 360° y vuelve a su color negro inicial. Los dos triángulos cercanos al círculo comparten su color (negros) y el lejano es blanco.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 9 · HM.9 — Razonamiento espacial — cubos</div>
+<div class="qtext">Si cambiaras la posición de solamente un cubo de esta figura, ¿cuál cuerpo no podrías formar?</div>
+<img class="qimage" src="imagenes_ecoems_2016/q9_original.svg" alt=""/>
+<div class="options">
+<div class="option"><b>A)</b> <img src="imagenes_ecoems_2016/q9_a.svg" style="width:100%;max-width:284px;display:block;"></div>
+<div class="option"><b>B)</b> <img src="imagenes_ecoems_2016/q9_b.svg" style="width:100%;max-width:284px;display:block;"></div>
+<div class="option correct"><b>C)</b> <img src="imagenes_ecoems_2016/q9_c.svg" style="width:100%;max-width:284px;display:block;"></div>
+<div class="option"><b>D)</b> <img src="imagenes_ecoems_2016/q9_d.svg" style="width:100%;max-width:284px;display:block;"></div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Sólo se permite mover un cubo. La opción C requiere mover dos cubos para conseguirse desde la figura de referencia.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 10 · HM.10 — Vistas ortogonales — pieza 3D</div>
+<div class="qtext">Si colocaras esta pieza mecánica tridimensional sobre su base más grande, ¿cómo se vería desde arriba?</div>
+<img class="qimage" src="imagenes_ecoems_2016/q10_original.svg" alt=""/>
+<div class="options">
+<div class="option"><b>A)</b> <img src="imagenes_ecoems_2016/q10_a.svg" style="width:100%;max-width:189px;display:block;"></div>
+<div class="option"><b>B)</b> <img src="imagenes_ecoems_2016/q10_b.svg" style="width:100%;max-width:189px;display:block;"></div>
+<div class="option"><b>C)</b> <img src="imagenes_ecoems_2016/q10_c.svg" style="width:100%;max-width:189px;display:block;"></div>
+<div class="option correct"><b>D)</b> <img src="imagenes_ecoems_2016/q10_d.svg" style="width:100%;max-width:189px;display:block;"></div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Reconstruye mentalmente la pieza en 3D apoyada sobre su base más grande. La vista superior muestra un cuadrado con un escalón pequeño en la esquina inferior derecha (correspondiente al cubo pequeño).</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 11 · HM.11 — Desarrollos planos — cubo</div>
+<div class="qtext">Si trazaras las figuras mostradas sobre cartón y las recortas por su perímetro, ¿cuál no te serviría para construir un cubo al doblar el cartón por las aristas?</div>
+<div class="options">
+<div class="option"><b>A)</b> <img src="imagenes_ecoems_2016/q11_a.svg" style="width:100%;max-width:189px;display:block;"></div>
+<div class="option"><b>B)</b> <img src="imagenes_ecoems_2016/q11_b.svg" style="width:100%;max-width:189px;display:block;"></div>
+<div class="option"><b>C)</b> <img src="imagenes_ecoems_2016/q11_c.svg" style="width:100%;max-width:189px;display:block;"></div>
+<div class="option correct"><b>D)</b> <img src="imagenes_ecoems_2016/q11_d.svg" style="width:100%;max-width:189px;display:block;"></div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El desarrollo D no puede formar un cubo: al doblarlo, un lado queda doble y a otra cara le falta su pieza. Los otros tres patrones (A, B, C) sí son desarrollos válidos del cubo.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 12 · HM.12 — Razonamiento espacial — dobleces</div>
+<div class="qtext">La siguiente figura representa una tira de papel con nueve triángulos equiláteros. Si doblaras el primer triángulo sucesivamente por las aristas numeradas, ¿en qué posición quedaría el vértice $A$ después del sexto doblez?</div>
+<img class="qimage" src="imagenes_ecoems_2016/q12_tira_triangulos.svg" alt=""/>
+<div class="options">
+<div class="option"><b>A)</b> F</div>
+<div class="option correct"><b>B)</b> G</div>
+<div class="option"><b>C)</b> H</div>
+<div class="option"><b>D)</b> I</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Haciendo el ejercicio físicamente (o siguiendo la tabla de posiciones del vértice A para cada doblez): doblez 1→D, 2→D, 3→D, 4→G, 5→G, 6→G. Después del sexto doblez, A queda en G.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 13 · HM.13 — Geometría — ángulos</div>
+<div class="qtext">¿Cuánto mide el ángulo $\alpha$?</div>
+<img class="qimage" src="imagenes_ecoems_2016/q13_pentagono.svg" alt=""/>
+<div class="options">
+<div class="option"><b>A)</b> $45°$</div>
+<div class="option"><b>B)</b> $60°$</div>
+<div class="option correct"><b>C)</b> $72°$</div>
+<div class="option"><b>D)</b> $90°$</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El ángulo exterior de un pentágono regular es $\frac{360°}{5} = 72°$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 14 · HM.14 — Geometría — áreas</div>
+<div class="qtext">El área del cuadrado negro es igual a 1. ¿Cuál es el área del cuadrado más grande (en la posición izquierda)?</div>
+<img class="qimage" src="imagenes_ecoems_2016/q14_cuadrados_anidados.svg" alt=""/>
+<div class="options">
+<div class="option"><b>A)</b> 25</div>
+<div class="option"><b>B)</b> 36</div>
+<div class="option"><b>C)</b> 49</div>
+<div class="option correct"><b>D)</b> 64</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Si el cuadrado negro mide 1, su lado mide 1. Los dos cuadrados pequeños adyacentes miden lado 1; el cuadrado inferior derecho contiguo mide lado 2; el cuadrado superior derecho mide lado 3; el cuadrado superior derecho que cierra el rectángulo mide lado 5; y el cuadrado grande izquierdo mide lado 8. Área $= 8^2 = 64$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 15 · HM.15 — Razonamiento — patrones en tablas</div>
+<div class="qtext">¿Cuál es el número faltante en la celda vacía?<br><br><table class="qtable"><thead><tr><th>Col 1</th><th>Col 2</th><th>Col 3</th></tr></thead><tbody><tr><td>3</td><td>6</td><td>$\frac{1}{2}$</td></tr><tr><td>4</td><td>12</td><td>$\frac{1}{3}$</td></tr><tr><td>5</td><td>__</td><td>$\frac{1}{4}$</td></tr></tbody></table></div>
+<div class="options">
+<div class="option"><b>A)</b> 18</div>
+<div class="option correct"><b>B)</b> 20</div>
+<div class="option"><b>C)</b> 24</div>
+<div class="option"><b>D)</b> 30</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El patrón de la tercera columna es $\frac{\text{col 1}}{\text{col 2}}$ simplificado: $\frac{3}{6}=\frac{1}{2}$, $\frac{4}{12}=\frac{1}{3}$, entonces $\frac{5}{20}=\frac{1}{4}$. El número faltante es 20.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 16 · HM.16 — Problemas de edades — sistema de ecuaciones</div>
+<div class="qtext">La edad de un niño es la sexta parte de la edad de su abuela y ocho años después será la cuarta parte de la edad que tenga entonces la abuela. ¿Cuál es la edad actual del niño?</div>
+<div class="options">
+<div class="option"><b>A)</b> 6</div>
+<div class="option"><b>B)</b> 8</div>
+<div class="option"><b>C)</b> 10</div>
+<div class="option correct"><b>D)</b> 12</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Sea $n$ la edad del niño y $a$ la de la abuela. Entonces $n=\frac{a}{6}$ y $n+8=\frac{1}{4}(a+8)$. De la primera: $a=6n$. Sustituyendo: $4(n+8)=6n+8 \Rightarrow 4n+32=6n+8 \Rightarrow 2n=24 \Rightarrow n=12$.</div>
+</div>
+
+<h2 class="subject">Matemáticas (12 preguntas)</h2>
+<div class="question">
+<div class="qheader">Pregunta 17 · M.1 — Jerarquía de operaciones</div>
+<div class="qtext">¿Cuál es el valor de $x$ en la siguiente expresión matemática?<br><br>$$x = 1 - 2(1-2) - 2(2-1) - 1$$</div>
+<div class="options">
+<div class="option"><b>A)</b> $-1$</div>
+<div class="option correct"><b>B)</b> $0$</div>
+<div class="option"><b>C)</b> $1$</div>
+<div class="option"><b>D)</b> $2$</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> $x = 1 - 2(-1) - 2(1) - 1 = 1 + 2 - 2 - 1 = 0$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 18 · M.2 — Mínimo común múltiplo</div>
+<div class="qtext">¿Cuál de las siguientes opciones es el mínimo común múltiplo de 9 y 12?<br><br>$$\text{mcm}(9, 12) = $$</div>
+<div class="options">
+<div class="option"><b>A)</b> 9</div>
+<div class="option"><b>B)</b> 12</div>
+<div class="option correct"><b>C)</b> 36</div>
+<div class="option"><b>D)</b> 108</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Factorizando: $9 = 3^2$, $12 = 2^2 \cdot 3$. El mcm toma los factores con mayor exponente: $2^2 \cdot 3^2 = 4 \cdot 9 = 36$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 19 · M.3 — Porcentajes</div>
+<div class="qtext">Si un examen contiene 128 preguntas de opción múltiple y logras obtener 112 aciertos, ¿cuál es tu porcentaje de respuestas incorrectas?</div>
+<div class="options">
+<div class="option"><b>A)</b> 11.2 %</div>
+<div class="option correct"><b>B)</b> 12.5 %</div>
+<div class="option"><b>C)</b> 87.5 %</div>
+<div class="option"><b>D)</b> 112.0 %</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Porcentaje de aciertos: $\frac{112}{128} \times 100\% = 87.5\%$. Porcentaje de incorrectas: $100\% - 87.5\% = 12.5\%$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 20 · M.4 — Sistemas de ecuaciones</div>
+<div class="qtext">¿Cuánto vale $a$ en este sistema de ecuaciones?<br><br>$$a + 3b = 15$$<br>$$2a - b = 2$$</div>
+<div class="options">
+<div class="option"><b>A)</b> 2</div>
+<div class="option correct"><b>B)</b> 3</div>
+<div class="option"><b>C)</b> 4</div>
+<div class="option"><b>D)</b> 5</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Multiplicando la segunda ecuación por 3: $6a - 3b = 6$. Sumando con la primera: $7a = 21$, por lo que $a = 3$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 21 · M.5 — Productos notables — diferencia de cuadrados</div>
+<div class="qtext">Selecciona la opción que indica cuál producto notable equivale a este binomio: $4x^2 - 4y^2$</div>
+<div class="options">
+<div class="option"><b>A)</b> $(2x + 2y)^2$</div>
+<div class="option"><b>B)</b> $(2x - 2y)^2$</div>
+<div class="option"><b>C)</b> $2(x - y)^2$</div>
+<div class="option correct"><b>D)</b> $(2x + 2y)(2x - 2y)$</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> $4x^2 - 4y^2 = (2x)^2 - (2y)^2 = (2x+2y)(2x-2y)$, diferencia de cuadrados.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 22 · M.6 — Promedio aritmético</div>
+<div class="qtext">¿Cuál es el promedio de los siguientes números?<br><br>$$0.15,\ 0.25,\ 0.2,\ 0.5,\ 1.0$$</div>
+<div class="options">
+<div class="option"><b>A)</b> 0.32</div>
+<div class="option"><b>B)</b> 0.40</div>
+<div class="option correct"><b>C)</b> 0.42</div>
+<div class="option"><b>D)</b> 0.45</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Suma: $0.15 + 0.25 + 0.2 + 0.5 + 1.0 = 2.10$. Promedio: $\frac{2.10}{5} = 0.42$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 23 · M.7 — Probabilidad clásica</div>
+<div class="qtext">El juego de dominó contiene 28 fichas. ¿Cuál es la probabilidad de extraer al azar una ficha con el mismo número de puntos en ambos lados?</div>
+<img class="qimage" src="imagenes_ecoems_2016/q23_domino.svg" alt=""/>
+<div class="options">
+<div class="option"><b>A)</b> 7 %</div>
+<div class="option correct"><b>B)</b> 25 %</div>
+<div class="option"><b>C)</b> 28 %</div>
+<div class="option"><b>D)</b> 66 %</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Hay 7 "mulas" (0:0, 1:1, ..., 6:6) de 28 fichas totales. Probabilidad: $\frac{7}{28} = 0.25 = 25\%$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 24 · M.8 — Funciones lineales — gráfica</div>
+<div class="qtext">Un teléfono celular cuesta \$ 500 de enganche y \$ 50 mensuales durante 10 meses. Selecciona entre las opciones la gráfica que representa esta función.</div>
+<div class="options">
+<div class="option"><b>A)</b> <img src="imagenes_ecoems_2016/q24_a.svg" style="width:100%;max-width:180px;display:block;"></div>
+<div class="option correct"><b>B)</b> <img src="imagenes_ecoems_2016/q24_b.svg" style="width:100%;max-width:180px;display:block;"></div>
+<div class="option"><b>C)</b> <img src="imagenes_ecoems_2016/q24_c.svg" style="width:100%;max-width:180px;display:block;"></div>
+<div class="option"><b>D)</b> <img src="imagenes_ecoems_2016/q24_d.svg" style="width:100%;max-width:180px;display:block;"></div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La función es $y = 500 + 50x$. En $x=0$, $y=500$ (enganche). La gráfica es una recta con ordenada al origen 500 y pendiente positiva 50.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 25 · M.9 — Regla de tres — proporcionalidad directa</div>
+<div class="qtext">Un balín se desplaza sobre una barra acanalada horizontal a 20 cm cada 4 segundos. ¿En cuántos segundos habrá recorrido 160 cm?</div>
+<img class="qimage" src="imagenes_ecoems_2016/q25_balin_barra.svg" alt=""/>
+<div class="options">
+<div class="option"><b>A)</b> 20 s</div>
+<div class="option correct"><b>B)</b> 32 s</div>
+<div class="option"><b>C)</b> 64 s</div>
+<div class="option"><b>D)</b> 86 s</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Regla de tres directa: si en 4 s recorre 20 cm, en $x$ segundos recorre 160 cm. $x = \frac{160 \cdot 4}{20} = 32$ s.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 26 · M.10 — Trabajo conjunto</div>
+<div class="qtext">Un albañil construye $12\ \text{m}^2$ de muro en 3 días y otro, $10\ \text{m}^2$ de muro en 5 días. ¿En cuánto tiempo pueden construir los dos albañiles juntos un muro de $54\ \text{m}^2$?</div>
+<div class="options">
+<div class="option"><b>A)</b> 3 días</div>
+<div class="option"><b>B)</b> 6 días</div>
+<div class="option correct"><b>C)</b> 9 días</div>
+<div class="option"><b>D)</b> 12 días</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Rendimientos: $\frac{12}{3} = 4$ y $\frac{10}{5} = 2$ m²/día. Juntos: $4 + 2 = 6$ m²/día. Tiempo: $\frac{54}{6} = 9$ días.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 27 · M.11 — Triángulos semejantes</div>
+<div class="qtext">En un día soleado, un poste de 9 m de altura proyecta una sombra de 3 m de largo. Si al mismo tiempo un edificio adjunto proyecta una sombra de 12 m, ¿cuál es la altura del edificio?</div>
+<div class="options">
+<div class="option"><b>A)</b> 30 m</div>
+<div class="option"><b>B)</b> 32 m</div>
+<div class="option"><b>C)</b> 34 m</div>
+<div class="option correct"><b>D)</b> 36 m</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Triángulos semejantes: $\frac{9}{3} = \frac{x}{12} \Rightarrow x = \frac{12 \cdot 9}{3} = 36$ m.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 28 · M.12 — Trigonometría y Pitágoras</div>
+<div class="qtext">En un triángulo rectángulo,<br><br>$$\cos\alpha = \frac{4}{5}$$<br><br>¿Cuánto mide el cateto opuesto?</div>
+<div class="options">
+<div class="option correct"><b>A)</b> 3</div>
+<div class="option"><b>B)</b> 4</div>
+<div class="option"><b>C)</b> 5</div>
+<div class="option"><b>D)</b> 6</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> $\cos\alpha = \frac{\text{cateto adyacente}}{\text{hipotenusa}} = \frac{4}{5}$. Por Pitágoras: $b^2 = 5^2 - 4^2 = 25 - 16 = 9$, por lo que el cateto opuesto vale 3.</div>
+</div>
+
+<h2 class="subject">Ciencias II (Física) (12 preguntas)</h2>
+<div class="question">
+<div class="qheader">Pregunta 29 · F.1 — Método científico — hipótesis</div>
+<div class="qtext">¿Qué es una hipótesis?</div>
+<div class="options">
+<div class="option"><b>A)</b> Una pregunta acerca de un fenómeno natural</div>
+<div class="option correct"><b>B)</b> Una suposición razonable acerca de la respuesta a una pregunta</div>
+<div class="option"><b>C)</b> Una predicción</div>
+<div class="option"><b>D)</b> Una conclusión experimentalmente verificable</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Una hipótesis es una suposición razonable acerca de la respuesta a una pregunta. Para que sea científica debe referirse a la comprensión de la naturaleza y ser susceptible de probarse experimentalmente.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 30 · F.2 — MRU — velocidad constante</div>
+<div class="qtext">Analiza la tabla siguiente.<br><br><table class="qtable"><thead><tr><th>Tiempo (s)</th><th>Desplazamiento (m)</th></tr></thead><tbody><tr><td>0</td><td>0</td></tr><tr><td>1</td><td>25</td></tr><tr><td>2</td><td>50</td></tr><tr><td>3</td><td>75</td></tr><tr><td>4</td><td>100</td></tr></tbody></table><br><br>Se puede concluir que el cuerpo en movimiento tiene:</div>
+<div class="options">
+<div class="option"><b>A)</b> Rapidez constante mayor que cero</div>
+<div class="option correct"><b>B)</b> Velocidad constante mayor que cero</div>
+<div class="option"><b>C)</b> Velocidad variable</div>
+<div class="option"><b>D)</b> Aceleración constante mayor que cero</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La velocidad ($v=d/t$) es constante e igual a 25 m/s. Como hay dirección implícita en el desplazamiento (vector), se trata de velocidad constante, no sólo rapidez.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 31 · F.3 — MRUA — aceleración constante</div>
+<div class="qtext">Analiza la tabla y la gráfica siguientes.<br><br><table class="qtable"><thead><tr><th>Tiempo (s)</th><th>Desplazamiento (m)</th></tr></thead><tbody><tr><td>0</td><td>0</td></tr><tr><td>2</td><td>20</td></tr><tr><td>4</td><td>80</td></tr><tr><td>6</td><td>180</td></tr><tr><td>8</td><td>320</td></tr><tr><td>10</td><td>500</td></tr></tbody></table><br><br>Se puede concluir que el cuerpo en movimiento tiene:</div>
+<img class="qimage" src="imagenes_ecoems_2016/q31_grafica_parabolica.svg" alt=""/>
+<div class="options">
+<div class="option"><b>A)</b> Rapidez constante mayor que cero</div>
+<div class="option"><b>B)</b> Velocidad constante mayor que cero</div>
+<div class="option correct"><b>C)</b> Aceleración constante mayor que cero</div>
+<div class="option"><b>D)</b> Aceleración variable</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La aceleración $a = d/t^2$ es constante e igual a 5 m/s² (por ejemplo $20/4 = 5$, $80/16 = 5$, $180/36 = 5$). La gráfica parabólica $d \propto t^2$ confirma MRUA.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 32 · F.4 — Leyes de Newton — inercia</div>
+<div class="qtext">La sonda <em>Voyager 1</em> viaja por el espacio exterior en movimiento rectilíneo uniforme. Indica cuál concepto de la física explica la causa de tal movimiento.</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Inercia</div>
+<div class="option"><b>B)</b> Peso</div>
+<div class="option"><b>C)</b> Masa</div>
+<div class="option"><b>D)</b> Combustible</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La inercia es la tendencia de un cuerpo a permanecer en reposo o en movimiento rectilíneo uniforme mientras no actúe sobre él una fuerza. En el espacio exterior, donde no hay fuerzas significativas, la sonda mantiene su movimiento por inercia.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 33 · F.5 — Segunda ley de Newton</div>
+<div class="qtext">Al aplicar una fuerza de 4 newtons, un cuerpo experimenta una aceleración de $2\ \text{m/s}^2$. ¿Cuál es la masa de ese cuerpo?</div>
+<div class="options">
+<div class="option correct"><b>A)</b> 2 kg</div>
+<div class="option"><b>B)</b> 4 kg</div>
+<div class="option"><b>C)</b> 6 kg</div>
+<div class="option"><b>D)</b> 8 kg</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> $F = ma \Rightarrow m = F/a = 4\ \text{N} / 2\ \text{m/s}^2 = 2$ kg.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 34 · F.6 — Energía mecánica — péndulo</div>
+<div class="qtext">Si simbolizamos energía potencial como EP y energía cinética como EC, ¿cómo es la energía mecánica de la masa colgante de un péndulo que se está balanceando, cuando está en la posición más alta de su movimiento?</div>
+<img class="qimage" src="imagenes_ecoems_2016/q34_pendulo.svg" alt=""/>
+<div class="options">
+<div class="option correct"><b>A)</b> EP máxima, EC mínima</div>
+<div class="option"><b>B)</b> EP disminuye, EC aumenta</div>
+<div class="option"><b>C)</b> EP mínima, EC máxima</div>
+<div class="option"><b>D)</b> EP aumenta, EC disminuye</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> En la posición más alta, el péndulo está momentáneamente detenido (velocidad = 0), por lo que EC es mínima (cero). La altura es máxima, por lo que EP es máxima.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 35 · F.7 — Principio de Pascal — gato hidráulico</div>
+<div class="qtext">Un gato hidráulico tiene un área de entrada de $0.01\ \text{m}^2$ y un área de salida de $1\ \text{m}^2$. Si con un pistón se aplica una fuerza de entrada de 10 N, ¿cuál es la fuerza de salida?</div>
+<div class="options">
+<div class="option"><b>A)</b> 1 N</div>
+<div class="option"><b>B)</b> 10 N</div>
+<div class="option"><b>C)</b> 100 N</div>
+<div class="option correct"><b>D)</b> 1 000 N</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Principio de Pascal: $\frac{F_e}{A_e} = \frac{F_s}{A_s}$. $F_s = \frac{F_e \cdot A_s}{A_e} = \frac{10 \cdot 1}{0.01} = 1\,000$ N.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 36 · F.8 — Electrostática — cargas</div>
+<div class="qtext">Si al hacer un experimento observas que dos esferitas de dos diferentes péndulos eléctricos se atraen entre sí, ¿qué puedes concluir al respecto?</div>
+<div class="options">
+<div class="option"><b>A)</b> Que ambas esferitas son eléctricamente neutras</div>
+<div class="option"><b>B)</b> Que ambas esferitas tienen carga eléctrica negativa</div>
+<div class="option"><b>C)</b> Que ambas esferitas tienen carga eléctrica positiva</div>
+<div class="option correct"><b>D)</b> Que ambas esferitas tienen carga eléctrica de diferente signo</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Las cargas eléctricas de diferente signo se atraen entre sí; las del mismo signo se repelen; las neutras no se atraen.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 37 · F.9 — Termodinámica — temperatura</div>
+<div class="qtext">La magnitud que indica qué tan caliente o frío está un cuerpo en comparación con un patrón de medida se denomina:</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Temperatura</div>
+<div class="option"><b>B)</b> Calor</div>
+<div class="option"><b>C)</b> Energía interna</div>
+<div class="option"><b>D)</b> Punto de ebullición</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Temperatura es la magnitud que indica qué tan caliente o frío está un cuerpo respecto a un patrón. El calor es energía que se transfiere por diferencia de temperatura.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 38 · F.10 — Transferencia de calor</div>
+<div class="qtext">¿Cómo transfiere calor el viento?</div>
+<div class="options">
+<div class="option"><b>A)</b> Por conducción</div>
+<div class="option correct"><b>B)</b> Por convección</div>
+<div class="option"><b>C)</b> Por radiación</div>
+<div class="option"><b>D)</b> Por un cambio de estado</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La convección es la forma de transferencia de calor en fluidos (líquidos y gases). El viento, al ser aire en movimiento, transfiere calor por convección.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 39 · F.11 — Modelos atómicos</div>
+<div class="qtext">¿Qué modelo atómico logró explicar cómo se emite la luz al pasar un electrón desde un nivel de mayor energía a un nivel de menor energía?</div>
+<div class="options">
+<div class="option"><b>A)</b> Modelo atómico de Dalton</div>
+<div class="option"><b>B)</b> Modelo atómico de Thomson</div>
+<div class="option"><b>C)</b> Modelo atómico de Rutherford</div>
+<div class="option correct"><b>D)</b> Modelo atómico de Bohr</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El modelo atómico de Bohr explica que al saltar un electrón de un nivel de mayor energía a uno de menor energía se emite un fotón de luz.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 40 · F.12 — Espectro electromagnético</div>
+<div class="qtext">¿Qué tipo de ondas electromagnéticas se utilizan en telefonía celular y televisión por satélite?</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Microondas</div>
+<div class="option"><b>B)</b> Infrarrojo</div>
+<div class="option"><b>C)</b> Ultravioleta</div>
+<div class="option"><b>D)</b> Rayos X</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Las microondas son ondas electromagnéticas utilizadas en comunicaciones telefónicas de larga distancia, telefonía celular y televisión por satélite.</div>
+</div>
+
+<h2 class="subject">Ciencias III (Química) (12 preguntas)</h2>
+<div class="question">
+<div class="qheader">Pregunta 41 · Q.1 — Separación de mezclas</div>
+<div class="qtext">Con la finalidad de separar los componentes de una mezcla de agua y aceite se utiliza una bureta y dos vasos de precipitados. Esto se consigue porque el aceite no se disuelve en el agua y ambas sustancias tienen diferente densidad. ¿Cómo se denomina este método de separación de mezclas?</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Decantación</div>
+<div class="option"><b>B)</b> Destilación</div>
+<div class="option"><b>C)</b> Filtración</div>
+<div class="option"><b>D)</b> Cristalización</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La decantación se utiliza para separar dos líquidos insolubles entre sí, como agua y aceite, aprovechando su diferencia de densidad.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 42 · Q.2 — Cambios químicos vs. físicos</div>
+<div class="qtext">Selecciona el fenómeno natural que no es un cambio químico.</div>
+<div class="options">
+<div class="option"><b>A)</b> La combustión de la madera</div>
+<div class="option"><b>B)</b> La digestión de los alimentos en el estómago</div>
+<div class="option"><b>C)</b> La oxidación de una rebanada de manzana al contacto con el aire</div>
+<div class="option correct"><b>D)</b> La descomposición de la luz blanca en las luces de colores del arcoíris</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La descomposición de la luz blanca en colores es un fenómeno físico (separación por refracción), no una reacción química. Las otras tres opciones implican reacciones químicas.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 43 · Q.3 — Estructura atómica — número de masa</div>
+<div class="qtext">El isótopo más abundante del carbono es $^{12}\text{C}$, el cual está constituido por 6 protones, 6 neutrones y 6 electrones. ¿Cuál es su número de masa?</div>
+<div class="options">
+<div class="option"><b>A)</b> 6</div>
+<div class="option correct"><b>B)</b> 12</div>
+<div class="option"><b>C)</b> 18</div>
+<div class="option"><b>D)</b> 24</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El número de masa es la suma de protones y neutrones: $6 + 6 = 12$. Los electrones no se cuentan.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 44 · Q.4 — Símbolos químicos</div>
+<div class="qtext">Indica cuáles son los símbolos químicos de los elementos potasio, sodio y azufre.</div>
+<div class="options">
+<div class="option"><b>A)</b> P, S, A</div>
+<div class="option"><b>B)</b> K, S, A</div>
+<div class="option correct"><b>C)</b> K, Na, S</div>
+<div class="option"><b>D)</b> P, Na, S</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Potasio: K (del latín <em>kalium</em>); Sodio: Na (del latín <em>natrium</em>); Azufre: S (del latín <em>sulphur</em>).</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 45 · Q.5 — Enlace químico — electrones de valencia</div>
+<div class="qtext">¿Qué propiedades químicas presenta un átomo que posee un electrón de valencia?</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Es un elemento metálico y tiende a perder su único electrón de valencia al formar un enlace químico</div>
+<div class="option"><b>B)</b> Es un elemento metálico y tiende a ganar un protón para formar un ion positivo</div>
+<div class="option"><b>C)</b> Es un elemento halógeno y tiende a ganar un electrón de valencia al formar un enlace químico</div>
+<div class="option"><b>D)</b> Es un gas noble y tiende a no reaccionar químicamente</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Los elementos con un electrón de valencia (como Na, K) son metálicos y tienden a perder ese electrón al formar enlaces, originando cationes.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 46 · Q.6 — Ley de conservación de la masa</div>
+<div class="qtext">Selecciona la reacción química que no cumple con la ley de conservación de la masa.</div>
+<div class="options">
+<div class="option"><b>A)</b> $2\ \text{H}_2 + \text{O}_2 \to 2\ \text{H}_2\text{O}$</div>
+<div class="option"><b>B)</b> $\text{NaOH} + \text{HCl} \to \text{NaCl} + \text{H}_2\text{O}$</div>
+<div class="option"><b>C)</b> $\text{H}_2\text{O} + \text{CO}_2 \to \text{H}_2\text{CO}_3$</div>
+<div class="option correct"><b>D)</b> $2\ \text{H}_2\text{S} + 3\ \text{O}_2 \to 2\ \text{H}_2\text{O} + \text{SO}_2$</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> En D, reactivos: 4 H, 2 S, 6 O; productos: 4 H, 1 S, 4 O. No está balanceada (faltan átomos de S y O en los productos). Lo correcto sería $2\,\text{H}_2\text{S} + 3\,\text{O}_2 \to 2\,\text{H}_2\text{O} + 2\,\text{SO}_2$.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 47 · Q.7 — Tipos de reacciones químicas</div>
+<div class="qtext">Según esta ecuación química, al suministrar energía a dos moléculas de agua $(2\ \text{H}_2\text{O})$ se producen dos moléculas de hidrógeno $(2\ \text{H}_2)$ y una molécula de oxígeno $(\text{O}_2)$.<br><br>$$2\ \text{H}_2\text{O} + \text{Energía} \to 2\ \text{H}_2 + \text{O}_2$$<br><br>¿Qué podemos concluir acerca de esta reacción?</div>
+<div class="options">
+<div class="option"><b>A)</b> Es exotérmica</div>
+<div class="option correct"><b>B)</b> Es endotérmica</div>
+<div class="option"><b>C)</b> Es una reacción de neutralización</div>
+<div class="option"><b>D)</b> Es una reacción de polimerización</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Una reacción endotérmica absorbe energía (como esta, donde se necesita aporte de energía para romper las moléculas de agua). Una exotérmica libera energía.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 48 · Q.8 — Tabla periódica — electronegatividad</div>
+<div class="qtext">Selecciona entre las opciones el elemento más electronegativo.</div>
+<div class="options">
+<div class="option"><b>A)</b> He</div>
+<div class="option"><b>B)</b> K</div>
+<div class="option"><b>C)</b> Fr</div>
+<div class="option correct"><b>D)</b> F</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Excluyendo gases nobles (He), la electronegatividad aumenta hacia arriba y a la derecha en la tabla periódica. Flúor (F) tiene el valor más alto: 4.0.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 49 · Q.9 — Clasificación de elementos</div>
+<div class="qtext">Es un elemento semimetálico muy utilizado en la industria electrónica.</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Silicio</div>
+<div class="option"><b>B)</b> Hierro</div>
+<div class="option"><b>C)</b> Cobre</div>
+<div class="option"><b>D)</b> Carbono</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El silicio es un semimetal con propiedades de semiconductor, base de los microcircuitos en celulares, computadoras y otros dispositivos electrónicos.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 50 · Q.10 — Propiedades periódicas</div>
+<div class="qtext">¿Qué propiedad de los elementos ilustra esta tabla periódica?</div>
+<img class="qimage" src="imagenes_ecoems_2016/q50_tabla_periodica.svg" alt=""/>
+<div class="options">
+<div class="option"><b>A)</b> Aumento de número atómico</div>
+<div class="option"><b>B)</b> Aumento de masa atómica</div>
+<div class="option"><b>C)</b> Aumento de electronegatividad</div>
+<div class="option correct"><b>D)</b> Aumento de carácter metálico</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El carácter metálico aumenta de derecha a izquierda y de arriba hacia abajo en la tabla periódica, en sentido opuesto a la electronegatividad.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 51 · Q.11 — Ácidos y bases</div>
+<div class="qtext">Selecciona la propiedad química que no presenta un ácido.</div>
+<div class="options">
+<div class="option"><b>A)</b> Posee un sabor agrio característico</div>
+<div class="option"><b>B)</b> Es irritante al hacer contacto con la piel</div>
+<div class="option"><b>C)</b> En solución acuosa, el papel indicador adquiere un color rojo</div>
+<div class="option correct"><b>D)</b> pH > 7</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Los ácidos tienen pH menor que 7. Un pH > 7 corresponde a sustancias básicas. Las otras tres propiedades sí son características de los ácidos.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 52 · Q.12 — Reacciones redox</div>
+<div class="qtext">Analiza la siguiente reacción redox:<br><br>$$\text{Cu}_{(s)} + 2\,\text{Ag}^+_{(ac)} \to \text{Cu}^{2+}_{(ac)} + 2\,\text{Ag}_{(s)}$$<br><br>¿Cuál catión se reduce?</div>
+<div class="options">
+<div class="option"><b>A)</b> Cu</div>
+<div class="option correct"><b>B)</b> $\text{Ag}^+$</div>
+<div class="option"><b>C)</b> $\text{Cu}^{2+}$</div>
+<div class="option"><b>D)</b> Ag</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Reducirse significa ganar electrones. $\text{Ag}^+ + e^- \to \text{Ag}$ es la semirreacción de reducción. El cobre se oxida (pierde electrones).</div>
+</div>
+
+<h2 class="subject">Ciencias I (Biología) (12 preguntas)</h2>
+<div class="question">
+<div class="qheader">Pregunta 53 · B.1 — Características de los seres vivos</div>
+<div class="qtext">Es la capacidad de los seres vivos de regular sus procesos internos para permanecer en un estado estable y funcionar normalmente, aun cuando haya cambios en el ambiente.</div>
+<div class="options">
+<div class="option"><b>A)</b> Irritabilidad</div>
+<div class="option correct"><b>B)</b> Homeostasis</div>
+<div class="option"><b>C)</b> Metabolismo</div>
+<div class="option"><b>D)</b> Evolución</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La homeostasis es la capacidad de los seres vivos de regular sus procesos internos para permanecer en un estado estable. Un ejemplo es la temperatura corporal de 37 °C.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 54 · B.2 — Evolución — Darwin</div>
+<div class="qtext">Los organismos que constituyen una especie no son idénticos entre sí, sino que tienen diferencias sutiles. Aquellos organismos que sobreviven y se reproducen son más aptos por estar mejor adaptados al ambiente que aquellos que no, y heredan a su progenie las características que confieren tal aptitud. En consecuencia, las características de esos organismos más aptos son más comunes entre la población en la siguiente generación, y menos comunes las de los menos aptos. ¿Cómo denominó Charles Darwin a este proceso de supervivencia de los más aptos?</div>
+<div class="options">
+<div class="option"><b>A)</b> Uso y desuso de los órganos</div>
+<div class="option"><b>B)</b> Herencia de los caracteres adquiridos</div>
+<div class="option"><b>C)</b> El origen de las especies</div>
+<div class="option correct"><b>D)</b> Selección natural</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Darwin acuñó el término selección natural para describir el proceso en el que los organismos más aptos sobreviven y heredan sus características.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 55 · B.3 — Fotosíntesis</div>
+<div class="qtext">¿Qué necesitan todas las plantas para realizar la fotosíntesis en los cloroplastos?</div>
+<div class="options">
+<div class="option"><b>A)</b> Agua y dióxido de carbono</div>
+<div class="option"><b>B)</b> Agua y oxígeno</div>
+<div class="option correct"><b>C)</b> Luz, agua y dióxido de carbono</div>
+<div class="option"><b>D)</b> Luz, agua y oxígeno</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La fotosíntesis requiere luz solar, agua del suelo y dióxido de carbono del aire para producir glucosa y oxígeno.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 56 · B.4 — Genética — fenotipo y genotipo</div>
+<div class="qtext">Es el conjunto de todos los caracteres visibles de un organismo.</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Fenotipo</div>
+<div class="option"><b>B)</b> Genotipo</div>
+<div class="option"><b>C)</b> Cariotipo</div>
+<div class="option"><b>D)</b> Genoma</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El fenotipo es el conjunto de caracteres visibles de un organismo. El genotipo es el conjunto de genes; el cariotipo, el conjunto de cromosomas; y el genoma, toda la información en el ADN.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 57 · B.5 — Ácidos nucleicos — ADN</div>
+<div class="qtext">En el ADN, la información genética se almacena en la secuencia de:</div>
+<div class="options">
+<div class="option"><b>A)</b> Aminoácidos</div>
+<div class="option"><b>B)</b> Cromosomas</div>
+<div class="option correct"><b>C)</b> Las bases nitrogenadas: adenina, guanina, citosina y timina</div>
+<div class="option"><b>D)</b> Las bases nitrogenadas: adenina, guanina, citosina y uracilo</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El ADN almacena la información genética en una secuencia de cuatro bases nitrogenadas: adenina (A), guanina (G), citosina (C) y timina (T). El uracilo (U) está en el ARN, no en el ADN.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 58 · B.6 — Bioenergética — ATP</div>
+<div class="qtext">La principal molécula portátil para el suministro de energía en todos los procesos celulares, la cual es un producto de glucólisis, fotosíntesis y respiración, se denomina:</div>
+<div class="options">
+<div class="option"><b>A)</b> Agua</div>
+<div class="option"><b>B)</b> Glucosa</div>
+<div class="option"><b>C)</b> Vitamina C</div>
+<div class="option correct"><b>D)</b> ATP (adenosín trifosfato)</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El ATP es la molécula portátil para el suministro de energía en las células, producto de glucólisis, fotosíntesis y respiración.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 59 · B.7 — Reproducción humana — orden cronológico</div>
+<div class="qtext">Ordena de manera cronológica estos procesos referentes a la reproducción humana:<br><br><em>a</em>. Implantación del embrión en el útero<br><em>b</em>. Ovulación<br><em>c</em>. Formación de aparatos y sistemas<br><em>d</em>. Parto<br><em>e</em>. Fecundación</div>
+<div class="options">
+<div class="option"><b>A)</b> $e, b, c, a, d$</div>
+<div class="option correct"><b>B)</b> $b, e, a, c, d$</div>
+<div class="option"><b>C)</b> $b, e, c, a, d$</div>
+<div class="option"><b>D)</b> $e, b, c, d, a$</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El orden correcto es: 1) Ovulación, 2) Fecundación, 3) Implantación del embrión en el útero, 4) Formación de aparatos y sistemas, 5) Parto.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 60 · B.8 — Nutrición</div>
+<div class="qtext">A diferencia de las carnes, las frutas y verduras son alimentos básicos en una dieta saludable porque contienen principalmente:</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Vitaminas y minerales</div>
+<div class="option"><b>B)</b> Proteínas</div>
+<div class="option"><b>C)</b> Carbohidratos</div>
+<div class="option"><b>D)</b> Grasas</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Las frutas y verduras son las principales fuentes de vitaminas y minerales en la dieta. Las carnes aportan proteínas; los cereales, carbohidratos.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 61 · B.9 — Enfermedades — obesidad</div>
+<div class="qtext">Es una enfermedad crónica que se caracteriza por una acumulación excesiva de grasa en el cuerpo. Su causa es una alimentación inadecuada por un consumo abundante de grasas, carbohidratos y alimentos "chatarra". Predispone al paciente a enfermedades cardiovasculares y diabetes, entre otras. Se puede prevenir con base en una alimentación adecuada.</div>
+<div class="options">
+<div class="option"><b>A)</b> Anorexia nerviosa</div>
+<div class="option"><b>B)</b> Bulimia</div>
+<div class="option"><b>C)</b> Infarto</div>
+<div class="option correct"><b>D)</b> Obesidad</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La obesidad es la enfermedad crónica caracterizada por acumulación excesiva de grasa por alimentación inadecuada, que predispone a enfermedades cardiovasculares y diabetes.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 62 · B.10 — Ecología — niveles de organización</div>
+<div class="qtext">Selecciona la opción que presenta ordenados de menor a mayor complejidad los niveles de organización de los seres vivos, los cuales son el campo de estudio de la ecología.</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Población, comunidad, ecosistema, biosfera</div>
+<div class="option"><b>B)</b> Comunidad, población, ecosistema, biosfera</div>
+<div class="option"><b>C)</b> Ecosistema, población, comunidad, biosfera</div>
+<div class="option"><b>D)</b> Biosfera, ecosistema, población, comunidad</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> De menor a mayor complejidad: Población (organismos de una especie) → Comunidad (todas las poblaciones de un ecosistema) → Ecosistema (comunidad + ambiente) → Biosfera (todos los ecosistemas).</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 63 · B.11 — Ecosistemas — biodiversidad</div>
+<div class="qtext">Es el ecosistema con la mayor biodiversidad del planeta.</div>
+<div class="options">
+<div class="option"><b>A)</b> Sabana</div>
+<div class="option"><b>B)</b> Bosque templado</div>
+<div class="option correct"><b>C)</b> Bosque tropical lluvioso</div>
+<div class="option"><b>D)</b> Tundra</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El bosque tropical lluvioso (selva) es el ecosistema con mayor biodiversidad, ubicado en latitudes tropicales con alta luz, lluvia abundante y suelo siempre húmedo.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 64 · B.12 — Desarrollo sustentable</div>
+<div class="qtext">Es el progreso que consiste en satisfacer las necesidades de las generaciones actuales, sin comprometer la capacidad de las generaciones futuras de satisfacer las suyas.</div>
+<div class="options">
+<div class="option"><b>A)</b> Revolución Industrial</div>
+<div class="option"><b>B)</b> Globalización</div>
+<div class="option"><b>C)</b> Explotación de los recursos naturales</div>
+<div class="option correct"><b>D)</b> Desarrollo sustentable</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Esta es la definición clásica de desarrollo sustentable (Informe Brundtland, 1987).</div>
+</div>
+
+<h2 class="subject">Habilidad verbal (16 preguntas)</h2>
+<div class="question">
+<div class="qheader">Pregunta 65 · HV.1 — Comprensión de lectura — inferencia</div>
+<div class="qcontext">Brown, Dan, <em>El símbolo perdido</em>, Planeta Internacional, México, 2009, p. 52-54.<br><br><strong>Capítulo 7</strong><br><br>Katherine Solomon cruzó a toda velocidad el estacionamiento bajo la fría lluvia, deseando llevar puesto algo más que unos pantalones vaqueros y un suéter de cashmere. Al acercarse a la entrada principal del edificio, el estruendo de los gigantescos purificadores de aire se hizo más intenso. Pero ella apenas los oyó, en sus oídos todavía resonaba la llamada que acababa de recibir.<br><br>"Lo que su hermano cree que está escondido en Washington... puede ser encontrado."<br><br>A Katherine le pareció algo casi imposible de creer. Ella y el hombre que la había llamado todavía tenían muchas cosas que discutir y habían acordado hacerlo esa misma tarde.<br><br>Al llegar a la puerta principal, sintió la misma excitación que siempre sentía al entrar en el pantagruélico edificio. "Nadie sabe que este lugar está aquí." En el letrero de entrada decía:<br><br>CENTRO DE APOYO DEL MUSEO SMITHSONIAN (SMSC)<br><br>A pesar de contar con más de una docena de enormes museos en el National Mall, la colección de la Smithsonian Institution era tan grande que sólo un 2 por ciento podía ser exhibida al mismo tiempo. El 98 por ciento restante tenía que ser almacenado en algún lugar. Y ese lugar... era <em>éste</em>.<br><br>Era de esperar, pues, que este edificio albergara una diversidad de objetos asombrosamente variada: Budas gigantes, códices manuscritos, dardos envenenados de Nueva Guinea, cuchillos con joyas incrustadas, un kayak hecho de barbas de ballena. Igual de alucinantes eran los tesoros naturales del edificio: esqueletos de plesiosaurio, una inestimable colección de meteoritos, un calamar gigante e incluso una colección de calaveras de elefante que había traído de un safari africano el mismo Teddy Roosevelt.<br><br>Pero el secretario de la Smithsonian, Peter Solomon, no había traído a su hermana al SMSC por nada de eso. La había traído a este lugar no para <em>contemplar</em> maravillas científicas, sino para crearlas. Y eso era exactamente lo que Katherine había estado haciendo los últimos tres años.<br><br>En lo más profundo de este edificio, en la oscuridad de sus más remotos recovecos, había un pequeño laboratorio científico sin igual en todo el mundo. Los recientes descubrimientos que Katherine había hecho en el campo de la ciencia noética tenían ramificaciones en cualquier disciplina: de la física a la historia, pasando por la filosofía o la religión. "Pronto todo cambiará", pensó ella.<br><br>Al entrar Katherine en el vestíbulo, el guardia de recepción escondió rápidamente un transistor y se quitó los auriculares de las orejas.<br><br>—¡Señora Solomon! —dijo con una amplia sonrisa.<br><br>—¿Los pieles rojas?<br><br>Sintiéndose culpable, el guardia se sonrojó.<br><br>—El previo al partido.<br><br>Ella sonrió.<br><br>—No diré nada —se dirigió al detector de metales y vació sus bolsillos. Cuando se quitó el Cartier de oro de la muñeca sintió la habitual punzada de tristeza. Era un regalo que le había hecho su madre por su cumpleaños dieciocho. Hacía casi diez años que había muerto de forma violenta... en sus brazos.<br><br>—Esto... ¿señora Solomon? —susurró el guardia en tono burlón—. ¿Nos contará algún día lo que hace ahí dentro?<br><br>Ella levantó la mirada.<br><br>—Algún día, Kyle. Pero no esta noche.<br><br>—Vamos —insistió—. ¿Un laboratorio secreto... en un museo secreto? Debe de estar haciendo usted algo bastante interesante.<br><br>"Mucho más que interesante", pensó Katherine mientras recogía sus cosas. La verdad era que Katherine estaba haciendo una ciencia tan avanzada que ya casi ni parecía ciencia.</div>
+<div class="qtext">¿Por qué Katherine Solomon apenas oyó el estruendo de los gigantescos purificadores de aire del edificio?</div>
+<div class="options">
+<div class="option"><b>A)</b> Porque los purificadores tenían un sistema amortiguador de ruido</div>
+<div class="option"><b>B)</b> Porque Katherine tenía una deficiencia auditiva</div>
+<div class="option correct"><b>C)</b> Porque Katherine estaba concentrada en un mensaje que acababa de recibir por teléfono</div>
+<div class="option"><b>D)</b> Porque el sistema de purificación de aire se apagaba automáticamente al abrir la puerta de entrada del edificio</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El texto dice: «en sus oídos todavía resonaba la llamada que acababa de recibir», lo que indica que estaba concentrada en el mensaje telefónico.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 66 · HV.2 — Comprensión de lectura — detalle textual</div>
+<div class="qcontext">Brown, Dan, <em>El símbolo perdido</em>, Planeta Internacional, México, 2009, p. 52-54.<br><br><strong>Capítulo 7</strong><br><br>Katherine Solomon cruzó a toda velocidad el estacionamiento bajo la fría lluvia, deseando llevar puesto algo más que unos pantalones vaqueros y un suéter de cashmere. Al acercarse a la entrada principal del edificio, el estruendo de los gigantescos purificadores de aire se hizo más intenso. Pero ella apenas los oyó, en sus oídos todavía resonaba la llamada que acababa de recibir.<br><br>"Lo que su hermano cree que está escondido en Washington... puede ser encontrado."<br><br>A Katherine le pareció algo casi imposible de creer. Ella y el hombre que la había llamado todavía tenían muchas cosas que discutir y habían acordado hacerlo esa misma tarde.<br><br>Al llegar a la puerta principal, sintió la misma excitación que siempre sentía al entrar en el pantagruélico edificio. "Nadie sabe que este lugar está aquí." En el letrero de entrada decía:<br><br>CENTRO DE APOYO DEL MUSEO SMITHSONIAN (SMSC)<br><br>A pesar de contar con más de una docena de enormes museos en el National Mall, la colección de la Smithsonian Institution era tan grande que sólo un 2 por ciento podía ser exhibida al mismo tiempo. El 98 por ciento restante tenía que ser almacenado en algún lugar. Y ese lugar... era <em>éste</em>.<br><br>Era de esperar, pues, que este edificio albergara una diversidad de objetos asombrosamente variada: Budas gigantes, códices manuscritos, dardos envenenados de Nueva Guinea, cuchillos con joyas incrustadas, un kayak hecho de barbas de ballena. Igual de alucinantes eran los tesoros naturales del edificio: esqueletos de plesiosaurio, una inestimable colección de meteoritos, un calamar gigante e incluso una colección de calaveras de elefante que había traído de un safari africano el mismo Teddy Roosevelt.<br><br>Pero el secretario de la Smithsonian, Peter Solomon, no había traído a su hermana al SMSC por nada de eso. La había traído a este lugar no para <em>contemplar</em> maravillas científicas, sino para crearlas. Y eso era exactamente lo que Katherine había estado haciendo los últimos tres años.<br><br>En lo más profundo de este edificio, en la oscuridad de sus más remotos recovecos, había un pequeño laboratorio científico sin igual en todo el mundo. Los recientes descubrimientos que Katherine había hecho en el campo de la ciencia noética tenían ramificaciones en cualquier disciplina: de la física a la historia, pasando por la filosofía o la religión. "Pronto todo cambiará", pensó ella.<br><br>Al entrar Katherine en el vestíbulo, el guardia de recepción escondió rápidamente un transistor y se quitó los auriculares de las orejas.<br><br>—¡Señora Solomon! —dijo con una amplia sonrisa.<br><br>—¿Los pieles rojas?<br><br>Sintiéndose culpable, el guardia se sonrojó.<br><br>—El previo al partido.<br><br>Ella sonrió.<br><br>—No diré nada —se dirigió al detector de metales y vació sus bolsillos. Cuando se quitó el Cartier de oro de la muñeca sintió la habitual punzada de tristeza. Era un regalo que le había hecho su madre por su cumpleaños dieciocho. Hacía casi diez años que había muerto de forma violenta... en sus brazos.<br><br>—Esto... ¿señora Solomon? —susurró el guardia en tono burlón—. ¿Nos contará algún día lo que hace ahí dentro?<br><br>Ella levantó la mirada.<br><br>—Algún día, Kyle. Pero no esta noche.<br><br>—Vamos —insistió—. ¿Un laboratorio secreto... en un museo secreto? Debe de estar haciendo usted algo bastante interesante.<br><br>"Mucho más que interesante", pensó Katherine mientras recogía sus cosas. La verdad era que Katherine estaba haciendo una ciencia tan avanzada que ya casi ni parecía ciencia.</div>
+<div class="qtext">¿Cuál de las siguientes piezas no formaba parte de la colección de objetos almacenados en la Smithsonian Institution?</div>
+<div class="options">
+<div class="option"><b>A)</b> Dardo envenenado de Nueva Guinea</div>
+<div class="option"><b>B)</b> Kayak hecho de barbas de ballena</div>
+<div class="option"><b>C)</b> Esqueleto de plesiosaurio</div>
+<div class="option correct"><b>D)</b> Roca lunar</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El texto enumera Budas gigantes, códices, dardos de Nueva Guinea, kayak, esqueletos de plesiosaurio, meteoritos, calamar gigante y calaveras de elefante — pero no menciona ninguna roca lunar.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 67 · HV.3 — Comprensión de lectura — inferencia</div>
+<div class="qcontext">Brown, Dan, <em>El símbolo perdido</em>, Planeta Internacional, México, 2009, p. 52-54.<br><br><strong>Capítulo 7</strong><br><br>Katherine Solomon cruzó a toda velocidad el estacionamiento bajo la fría lluvia, deseando llevar puesto algo más que unos pantalones vaqueros y un suéter de cashmere. Al acercarse a la entrada principal del edificio, el estruendo de los gigantescos purificadores de aire se hizo más intenso. Pero ella apenas los oyó, en sus oídos todavía resonaba la llamada que acababa de recibir.<br><br>"Lo que su hermano cree que está escondido en Washington... puede ser encontrado."<br><br>A Katherine le pareció algo casi imposible de creer. Ella y el hombre que la había llamado todavía tenían muchas cosas que discutir y habían acordado hacerlo esa misma tarde.<br><br>Al llegar a la puerta principal, sintió la misma excitación que siempre sentía al entrar en el pantagruélico edificio. "Nadie sabe que este lugar está aquí." En el letrero de entrada decía:<br><br>CENTRO DE APOYO DEL MUSEO SMITHSONIAN (SMSC)<br><br>A pesar de contar con más de una docena de enormes museos en el National Mall, la colección de la Smithsonian Institution era tan grande que sólo un 2 por ciento podía ser exhibida al mismo tiempo. El 98 por ciento restante tenía que ser almacenado en algún lugar. Y ese lugar... era <em>éste</em>.<br><br>Era de esperar, pues, que este edificio albergara una diversidad de objetos asombrosamente variada: Budas gigantes, códices manuscritos, dardos envenenados de Nueva Guinea, cuchillos con joyas incrustadas, un kayak hecho de barbas de ballena. Igual de alucinantes eran los tesoros naturales del edificio: esqueletos de plesiosaurio, una inestimable colección de meteoritos, un calamar gigante e incluso una colección de calaveras de elefante que había traído de un safari africano el mismo Teddy Roosevelt.<br><br>Pero el secretario de la Smithsonian, Peter Solomon, no había traído a su hermana al SMSC por nada de eso. La había traído a este lugar no para <em>contemplar</em> maravillas científicas, sino para crearlas. Y eso era exactamente lo que Katherine había estado haciendo los últimos tres años.<br><br>En lo más profundo de este edificio, en la oscuridad de sus más remotos recovecos, había un pequeño laboratorio científico sin igual en todo el mundo. Los recientes descubrimientos que Katherine había hecho en el campo de la ciencia noética tenían ramificaciones en cualquier disciplina: de la física a la historia, pasando por la filosofía o la religión. "Pronto todo cambiará", pensó ella.<br><br>Al entrar Katherine en el vestíbulo, el guardia de recepción escondió rápidamente un transistor y se quitó los auriculares de las orejas.<br><br>—¡Señora Solomon! —dijo con una amplia sonrisa.<br><br>—¿Los pieles rojas?<br><br>Sintiéndose culpable, el guardia se sonrojó.<br><br>—El previo al partido.<br><br>Ella sonrió.<br><br>—No diré nada —se dirigió al detector de metales y vació sus bolsillos. Cuando se quitó el Cartier de oro de la muñeca sintió la habitual punzada de tristeza. Era un regalo que le había hecho su madre por su cumpleaños dieciocho. Hacía casi diez años que había muerto de forma violenta... en sus brazos.<br><br>—Esto... ¿señora Solomon? —susurró el guardia en tono burlón—. ¿Nos contará algún día lo que hace ahí dentro?<br><br>Ella levantó la mirada.<br><br>—Algún día, Kyle. Pero no esta noche.<br><br>—Vamos —insistió—. ¿Un laboratorio secreto... en un museo secreto? Debe de estar haciendo usted algo bastante interesante.<br><br>"Mucho más que interesante", pensó Katherine mientras recogía sus cosas. La verdad era que Katherine estaba haciendo una ciencia tan avanzada que ya casi ni parecía ciencia.</div>
+<div class="qtext">¿Qué se puede inferir que es un <em>Cartier</em>?</div>
+<div class="options">
+<div class="option"><b>A)</b> Un bolso</div>
+<div class="option"><b>B)</b> Un anillo</div>
+<div class="option correct"><b>C)</b> Un reloj</div>
+<div class="option"><b>D)</b> Un teléfono celular</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El texto dice: «Cuando se quitó el Cartier de oro de la muñeca». Es un Cartier de oro que se usa en la muñeca: se infiere que es un reloj.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 68 · HV.4 — Comprensión de lectura — detalle textual</div>
+<div class="qcontext">Brown, Dan, <em>El símbolo perdido</em>, Planeta Internacional, México, 2009, p. 52-54.<br><br><strong>Capítulo 7</strong><br><br>Katherine Solomon cruzó a toda velocidad el estacionamiento bajo la fría lluvia, deseando llevar puesto algo más que unos pantalones vaqueros y un suéter de cashmere. Al acercarse a la entrada principal del edificio, el estruendo de los gigantescos purificadores de aire se hizo más intenso. Pero ella apenas los oyó, en sus oídos todavía resonaba la llamada que acababa de recibir.<br><br>"Lo que su hermano cree que está escondido en Washington... puede ser encontrado."<br><br>A Katherine le pareció algo casi imposible de creer. Ella y el hombre que la había llamado todavía tenían muchas cosas que discutir y habían acordado hacerlo esa misma tarde.<br><br>Al llegar a la puerta principal, sintió la misma excitación que siempre sentía al entrar en el pantagruélico edificio. "Nadie sabe que este lugar está aquí." En el letrero de entrada decía:<br><br>CENTRO DE APOYO DEL MUSEO SMITHSONIAN (SMSC)<br><br>A pesar de contar con más de una docena de enormes museos en el National Mall, la colección de la Smithsonian Institution era tan grande que sólo un 2 por ciento podía ser exhibida al mismo tiempo. El 98 por ciento restante tenía que ser almacenado en algún lugar. Y ese lugar... era <em>éste</em>.<br><br>Era de esperar, pues, que este edificio albergara una diversidad de objetos asombrosamente variada: Budas gigantes, códices manuscritos, dardos envenenados de Nueva Guinea, cuchillos con joyas incrustadas, un kayak hecho de barbas de ballena. Igual de alucinantes eran los tesoros naturales del edificio: esqueletos de plesiosaurio, una inestimable colección de meteoritos, un calamar gigante e incluso una colección de calaveras de elefante que había traído de un safari africano el mismo Teddy Roosevelt.<br><br>Pero el secretario de la Smithsonian, Peter Solomon, no había traído a su hermana al SMSC por nada de eso. La había traído a este lugar no para <em>contemplar</em> maravillas científicas, sino para crearlas. Y eso era exactamente lo que Katherine había estado haciendo los últimos tres años.<br><br>En lo más profundo de este edificio, en la oscuridad de sus más remotos recovecos, había un pequeño laboratorio científico sin igual en todo el mundo. Los recientes descubrimientos que Katherine había hecho en el campo de la ciencia noética tenían ramificaciones en cualquier disciplina: de la física a la historia, pasando por la filosofía o la religión. "Pronto todo cambiará", pensó ella.<br><br>Al entrar Katherine en el vestíbulo, el guardia de recepción escondió rápidamente un transistor y se quitó los auriculares de las orejas.<br><br>—¡Señora Solomon! —dijo con una amplia sonrisa.<br><br>—¿Los pieles rojas?<br><br>Sintiéndose culpable, el guardia se sonrojó.<br><br>—El previo al partido.<br><br>Ella sonrió.<br><br>—No diré nada —se dirigió al detector de metales y vació sus bolsillos. Cuando se quitó el Cartier de oro de la muñeca sintió la habitual punzada de tristeza. Era un regalo que le había hecho su madre por su cumpleaños dieciocho. Hacía casi diez años que había muerto de forma violenta... en sus brazos.<br><br>—Esto... ¿señora Solomon? —susurró el guardia en tono burlón—. ¿Nos contará algún día lo que hace ahí dentro?<br><br>Ella levantó la mirada.<br><br>—Algún día, Kyle. Pero no esta noche.<br><br>—Vamos —insistió—. ¿Un laboratorio secreto... en un museo secreto? Debe de estar haciendo usted algo bastante interesante.<br><br>"Mucho más que interesante", pensó Katherine mientras recogía sus cosas. La verdad era que Katherine estaba haciendo una ciencia tan avanzada que ya casi ni parecía ciencia.</div>
+<div class="qtext">¿En dónde hacía su trabajo secreto Katherine Solomon en la Smithsonian Institution?</div>
+<div class="options">
+<div class="option"><b>A)</b> En el estacionamiento</div>
+<div class="option"><b>B)</b> En el almacén de objetos</div>
+<div class="option"><b>C)</b> En una oficina custodiada por un guardia</div>
+<div class="option correct"><b>D)</b> En un laboratorio científico</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El texto dice: «había un pequeño laboratorio científico sin igual en todo el mundo. Los recientes descubrimientos que Katherine había hecho en el campo de la ciencia noética...».</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 69 · HV.5 — Comprensión de lectura — tema principal</div>
+<div class="qcontext">Braun, Eliezer e Irma Gallardo, <em>Ciencias 2. Física</em>, Trillas, México, 2014.<br><br>A diferencia de todos los demás líquidos, el agua helada no se dilata cuando se calienta, sino que ¡hace exactamente lo contrario! Cuando el hielo se derrite a 0 °C, empieza a contraerse, al menos hasta alcanzar una temperatura de 4 °C; sólo hasta después sí comienza a dilatarse por calentamiento y así continúa hasta el punto de ebullición.<br><br>Es por esta razón que los hielos flotan en el agua; su densidad es menor que la del agua porque se dilatan antes de congelarse. De no tener el agua este comportamiento inusual, los hielos se hundirían.<br><br>Por debajo de 0 °C, el hielo sí se contrae por enfriamiento. Y por encima de 4 °C, el agua sí se dilata por calentamiento. La contracción por calentamiento únicamente ocurre entre 0 y 4 °C en el agua.<br><br>La explicación de este comportamiento del agua está en la estructura cristalina del hielo. Las moléculas de agua forman hexágonos cuando se congelan y se desbaratan los cristales de hielo cuando se derriten.<br><br>Este fenómeno tiene enorme importancia biológica. Cuando la temperatura en el aire desciende por debajo de 0 °C, ríos y mares no se congelan totalmente, sólo la superficie, el agua por debajo de la superficie y hasta el fondo permanece líquida a una temperatura entre 0 y 4 °C, una temperatura fría, pero que significa la supervivencia de las especies acuáticas en climas gélidos.</div>
+<div class="qtext">¿Cuál es el tema principal de este texto?</div>
+<div class="options">
+<div class="option"><b>A)</b> La dilatación del agua al calentarse de 0 a 4 °C</div>
+<div class="option correct"><b>B)</b> La contracción del agua al calentarse de 0 a 4 °C</div>
+<div class="option"><b>C)</b> La flotabilidad del hielo por su densidad</div>
+<div class="option"><b>D)</b> La fusión de los cristales de hielo</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Todos los párrafos giran en torno al fenómeno de que el agua se contrae cuando se calienta de 0 a 4 °C, fenómeno opuesto al de los demás líquidos.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 70 · HV.6 — Comprensión de lectura — énfasis</div>
+<div class="qcontext">Braun, Eliezer e Irma Gallardo, <em>Ciencias 2. Física</em>, Trillas, México, 2014.<br><br>A diferencia de todos los demás líquidos, el agua helada no se dilata cuando se calienta, sino que ¡hace exactamente lo contrario! Cuando el hielo se derrite a 0 °C, empieza a contraerse, al menos hasta alcanzar una temperatura de 4 °C; sólo hasta después sí comienza a dilatarse por calentamiento y así continúa hasta el punto de ebullición.<br><br>Es por esta razón que los hielos flotan en el agua; su densidad es menor que la del agua porque se dilatan antes de congelarse. De no tener el agua este comportamiento inusual, los hielos se hundirían.<br><br>Por debajo de 0 °C, el hielo sí se contrae por enfriamiento. Y por encima de 4 °C, el agua sí se dilata por calentamiento. La contracción por calentamiento únicamente ocurre entre 0 y 4 °C en el agua.<br><br>La explicación de este comportamiento del agua está en la estructura cristalina del hielo. Las moléculas de agua forman hexágonos cuando se congelan y se desbaratan los cristales de hielo cuando se derriten.<br><br>Este fenómeno tiene enorme importancia biológica. Cuando la temperatura en el aire desciende por debajo de 0 °C, ríos y mares no se congelan totalmente, sólo la superficie, el agua por debajo de la superficie y hasta el fondo permanece líquida a una temperatura entre 0 y 4 °C, una temperatura fría, pero que significa la supervivencia de las especies acuáticas en climas gélidos.</div>
+<div class="qtext">¿En qué pone énfasis el autor de este texto?</div>
+<div class="options">
+<div class="option"><b>A)</b> En la densidad del agua</div>
+<div class="option"><b>B)</b> En la estructura cristalina del hielo</div>
+<div class="option correct"><b>C)</b> En la supervivencia de las especies acuáticas en climas gélidos</div>
+<div class="option"><b>D)</b> En el comportamiento diferente del agua en comparación con los demás líquidos</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> En el párrafo 5 se afirma: «Este fenómeno tiene enorme importancia biológica... significa la supervivencia de las especies acuáticas en climas gélidos». Ese es el énfasis del autor.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 71 · HV.7 — Comprensión de lectura — subtemas</div>
+<div class="qcontext">Braun, Eliezer e Irma Gallardo, <em>Ciencias 2. Física</em>, Trillas, México, 2014.<br><br>A diferencia de todos los demás líquidos, el agua helada no se dilata cuando se calienta, sino que ¡hace exactamente lo contrario! Cuando el hielo se derrite a 0 °C, empieza a contraerse, al menos hasta alcanzar una temperatura de 4 °C; sólo hasta después sí comienza a dilatarse por calentamiento y así continúa hasta el punto de ebullición.<br><br>Es por esta razón que los hielos flotan en el agua; su densidad es menor que la del agua porque se dilatan antes de congelarse. De no tener el agua este comportamiento inusual, los hielos se hundirían.<br><br>Por debajo de 0 °C, el hielo sí se contrae por enfriamiento. Y por encima de 4 °C, el agua sí se dilata por calentamiento. La contracción por calentamiento únicamente ocurre entre 0 y 4 °C en el agua.<br><br>La explicación de este comportamiento del agua está en la estructura cristalina del hielo. Las moléculas de agua forman hexágonos cuando se congelan y se desbaratan los cristales de hielo cuando se derriten.<br><br>Este fenómeno tiene enorme importancia biológica. Cuando la temperatura en el aire desciende por debajo de 0 °C, ríos y mares no se congelan totalmente, sólo la superficie, el agua por debajo de la superficie y hasta el fondo permanece líquida a una temperatura entre 0 y 4 °C, una temperatura fría, pero que significa la supervivencia de las especies acuáticas en climas gélidos.</div>
+<div class="qtext">¿Cuáles son los subtemas principales de este texto?</div>
+<div class="options">
+<div class="option"><b>A)</b> La densidad del hielo y el punto de ebullición del agua</div>
+<div class="option"><b>B)</b> La densidad del hielo y la estructura cristalina del agua</div>
+<div class="option correct"><b>C)</b> La densidad del hielo, la estructura cristalina del hielo y la importancia biológica de la contracción del agua al calentarse de 0 a 4 °C</div>
+<div class="option"><b>D)</b> El punto de ebullición del agua, la flotabilidad de los hielos en agua y la congelación de ríos y mares</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El tema principal es la contracción del agua de 0 a 4 °C. Los subtemas son: densidad del hielo (párr. 2), estructura cristalina del hielo (párr. 4), e importancia biológica (párr. 5). El punto de ebullición no es un subtema.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 72 · HV.8 — Analogías</div>
+<div class="qtext"><strong>Completa la siguiente analogía.</strong><br><br><strong>VACA – LECHE</strong></div>
+<div class="options">
+<div class="option"><b>A)</b> Compositor – canción</div>
+<div class="option"><b>B)</b> Piloto – avión</div>
+<div class="option correct"><b>C)</b> Gallina – huevo</div>
+<div class="option"><b>D)</b> Miel – abeja</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Una vaca produce leche; análogamente una gallina produce huevo. La categoría es animal–alimento.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 73 · HV.9 — Analogías</div>
+<div class="qtext"><strong>Completa la siguiente analogía.</strong><br><br><strong>CAMPESINO – ARADO</strong></div>
+<div class="options">
+<div class="option"><b>A)</b> Televisor – electricidad</div>
+<div class="option"><b>B)</b> Lápiz – dibujo</div>
+<div class="option"><b>C)</b> Silla – madera</div>
+<div class="option correct"><b>D)</b> Carpintero – martillo</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Un campesino trabaja con un arado (persona–herramienta de trabajo); un carpintero trabaja con un martillo.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 74 · HV.10 — Analogías</div>
+<div class="qtext"><strong>Completa la siguiente analogía.</strong><br><br><strong>REGLA – MEDIR</strong></div>
+<div class="options">
+<div class="option"><b>A)</b> Escultor – esculpir</div>
+<div class="option"><b>B)</b> Comunicar – Teléfono</div>
+<div class="option"><b>C)</b> Medicamento – prescribir</div>
+<div class="option correct"><b>D)</b> Estetoscopio – oír</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Una regla sirve para medir (instrumento–verbo); un estetoscopio sirve para oír.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 75 · HV.11 — Antónimos</div>
+<div class="qtext"><strong>Selecciona el antónimo de la palabra resaltada.</strong><br><br>Una solución es una mezcla <em>homogénea</em>.</div>
+<div class="options">
+<div class="option"><b>A)</b> Uniforme</div>
+<div class="option correct"><b>B)</b> Heterogénea</div>
+<div class="option"><b>C)</b> Invariable</div>
+<div class="option"><b>D)</b> Regular</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El antónimo de <em>homogénea</em> es <em>heterogénea</em>. Las otras opciones son sinónimos de homogénea.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 76 · HV.12 — Antónimos</div>
+<div class="qtext"><strong>Selecciona el antónimo de la palabra resaltada.</strong><br><br>La ley del nuevo impuesto fue <em>derogada</em>.</div>
+<div class="options">
+<div class="option"><b>A)</b> Eliminada</div>
+<div class="option"><b>B)</b> Censurada</div>
+<div class="option correct"><b>C)</b> Promulgada</div>
+<div class="option"><b>D)</b> Excluida</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> <em>Derogar</em> significa abolir o anular una ley; su antónimo es <em>promulgar</em> (publicar formalmente una ley).</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 77 · HV.13 — Antónimos</div>
+<div class="qtext"><strong>Selecciona el antónimo de la palabra resaltada.</strong><br><br>Fue así como <em>concluyó</em> su trabajo.</div>
+<div class="options">
+<div class="option"><b>A)</b> Terminó</div>
+<div class="option correct"><b>B)</b> Comenzó</div>
+<div class="option"><b>C)</b> Finalizó</div>
+<div class="option"><b>D)</b> Acabó</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El antónimo de <em>concluyó</em> (terminó) es <em>comenzó</em>. Los demás son sinónimos.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 78 · HV.14 — Sinónimos</div>
+<div class="qtext"><strong>Selecciona el sinónimo de la palabra resaltada.</strong><br><br>Louis Pasteur fue <em>precursor</em> de la bacteriología.</div>
+<div class="options">
+<div class="option"><b>A)</b> Seguidor</div>
+<div class="option"><b>B)</b> Partidario</div>
+<div class="option"><b>C)</b> Simpatizante</div>
+<div class="option correct"><b>D)</b> Pionero</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> <em>Precursor</em> significa quien va por delante (pionero). Las otras opciones no expresan ese matiz de adelantarse en el tiempo.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 79 · HV.15 — Sinónimos</div>
+<div class="qtext"><strong>Selecciona el sinónimo de la palabra resaltada.</strong><br><br>Su ensayo fue <em>conciso</em>.</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Breve</div>
+<div class="option"><b>B)</b> Extenso</div>
+<div class="option"><b>C)</b> Vasto</div>
+<div class="option"><b>D)</b> Amplio</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> <em>Conciso</em> significa breve, expresado con pocas palabras. Las otras opciones son antónimos.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 80 · HV.16 — Sinónimos</div>
+<div class="qtext"><strong>Selecciona el sinónimo de la palabra resaltada.</strong><br><br>Es un profesor <em>competente</em>.</div>
+<div class="options">
+<div class="option"><b>A)</b> Inepto</div>
+<div class="option correct"><b>B)</b> Calificado</div>
+<div class="option"><b>C)</b> Incapaz</div>
+<div class="option"><b>D)</b> Torpe</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> <em>Competente</em> significa capaz, calificado para una tarea. Las otras opciones son antónimos.</div>
+</div>
+
+<h2 class="subject">Español (12 preguntas)</h2>
+<div class="question">
+<div class="qheader">Pregunta 81 · E.1 — Nexos — función</div>
+<div class="qcontext">Rowling, J.K., <em>Harry Potter y la Orden del Fénix</em>, Salamandra, Barcelona, 2004, p. 89.<br><br><strong>5<br>La Orden del Fénix</strong><br><br>—¿Tú...?<br>—Sí, mi querida y anciana madre —afirmó Sirius—. Llevamos a cabo un encantamiento de presencia permanente en la parte de atrás del lienzo, <em>pero</em> creemos que ha hecho un encantamiento de presencia permanente en la parte de atrás del lienzo. Rápido, vamos abajo antes de que despierten todos otra vez.<br>—<em>Pero</em> ¿qué hace aquí un retrato de tu madre? —preguntó Harry, desconcertado, <em>mientras</em> salían por una puerta del vestíbulo y bajaban un tramo de estrechos escalones de piedra seguidos de los demás.<br>—¿No te lo ha dicho nadie? Ésta era la casa de mis padres —respondió Sirius —. <em>Pero</em> soy el único Black que queda, de modo que ahora es mía. Se la ofrecí a Dumbledore como cuartel general; es lo único medianamente útil que he podido hacer.<br>[...]</div>
+<div class="qtext">¿Cuál es la función de los nexos escritos en cursivas?</div>
+<div class="options">
+<div class="option"><b>A)</b> Introducen ideas</div>
+<div class="option correct"><b>B)</b> Encadenan argumentos</div>
+<div class="option"><b>C)</b> Establecen una relación temporal</div>
+<div class="option"><b>D)</b> Tienen un sentido causal</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> <em>Pero</em> es un nexo adversativo que encadena dos oraciones en oposición o de significado contrario. También funcionan como adversativos: no obstante, sin embargo, aunque, sino...</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 82 · E.2 — Nexos — función</div>
+<div class="qcontext">Rowling, J.K., <em>Harry Potter y la Orden del Fénix</em>, Salamandra, Barcelona, 2004, p. 89.<br><br><strong>5<br>La Orden del Fénix</strong><br><br>—¿Tú...?<br>—Sí, mi querida y anciana madre —afirmó Sirius—. Llevamos a cabo un encantamiento de presencia permanente en la parte de atrás del lienzo, <em>pero</em> creemos que ha hecho un encantamiento de presencia permanente en la parte de atrás del lienzo. Rápido, vamos abajo antes de que despierten todos otra vez.<br>—<em>Pero</em> ¿qué hace aquí un retrato de tu madre? —preguntó Harry, desconcertado, <em>mientras</em> salían por una puerta del vestíbulo y bajaban un tramo de estrechos escalones de piedra seguidos de los demás.<br>—¿No te lo ha dicho nadie? Ésta era la casa de mis padres —respondió Sirius —. <em>Pero</em> soy el único Black que queda, de modo que ahora es mía. Se la ofrecí a Dumbledore como cuartel general; es lo único medianamente útil que he podido hacer.<br>[...]</div>
+<div class="qtext">¿Cuál es la función del nexo subrayado?<br><br>(El nexo subrayado es <em>mientras</em>.)</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Establece una relación de simultaneidad</div>
+<div class="option"><b>B)</b> Tiene un carácter concesivo</div>
+<div class="option"><b>C)</b> Determina una condición</div>
+<div class="option"><b>D)</b> Confiere un significado de finalidad</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> <em>Mientras</em> establece relación de simultaneidad temporal entre dos acciones.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 83 · E.3 — Nexos — función causal</div>
+<div class="qcontext">Frank, Ana, <em>Diario de Ana Frank</em>, Tomo, México, 2014, p. 209.<br><br><strong>Viernes 16 de junio de 1944</strong><br><br>Querida Kitty:<br>La señora van Daan está desesperada, habla de cárcel, de ahorcarse, de suicidio y de meterse una bala en la cabeza. Está celosa <em>porque</em> Peter confía en mí y no en ella. Se siente humillada <em>porque</em> Dussel no responde a sus insinuaciones.</div>
+<div class="qtext">¿Cuál es la función de los nexos escritos en cursivas?</div>
+<div class="options">
+<div class="option"><b>A)</b> Introducen ideas</div>
+<div class="option"><b>B)</b> Relacionan temporalmente los enunciados</div>
+<div class="option correct"><b>C)</b> Encadenan argumentos con sentido causal</div>
+<div class="option"><b>D)</b> Indican comparación</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> <em>Porque</em> encadena argumentos con sentido causal. Otros nexos causales: ya que, por consiguiente.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 84 · E.4 — Análisis gramatical — clase de palabra</div>
+<div class="qtext">Analiza gramaticalmente esta oración:<br><br><em>Próximamente presentaré un examen interesante.</em><br><br>¿Qué clase de palabra es <em>próximamente</em>?</div>
+<div class="options">
+<div class="option"><b>A)</b> Adjetivo</div>
+<div class="option correct"><b>B)</b> Adverbio</div>
+<div class="option"><b>C)</b> Preposición</div>
+<div class="option"><b>D)</b> Sustantivo</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> <em>Próximamente</em> es un adverbio (de tiempo) que modifica al verbo <em>presentaré</em>. Los adverbios son invariables y modifican el significado de un verbo, adjetivo u otro adverbio.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 85 · E.5 — Análisis gramatical — tiempo verbal</div>
+<div class="qtext">Analiza gramaticalmente esta oración:<br><br><em>Nadie diría que así ocurrieron los hechos.</em><br><br>¿En qué tiempo está conjugado el verbo <em>decir</em>?</div>
+<div class="options">
+<div class="option"><b>A)</b> Pretérito</div>
+<div class="option"><b>B)</b> Copretérito</div>
+<div class="option correct"><b>C)</b> Pospretérito</div>
+<div class="option"><b>D)</b> Futuro</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> <em>Diría</em> es la forma del pospretérito (también llamado condicional) del verbo <em>decir</em>. Presente: dice. Pretérito: dijo. Copretérito: decía. Pospretérito: diría. Futuro: dirá.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 86 · E.6 — Sintaxis — oración principal y subordinada</div>
+<div class="qtext">Analiza gramaticalmente esta oración:<br><br><em>El avión que está aterrizando, viene de París.</em><br><br>¿Cuál es la oración principal?</div>
+<div class="options">
+<div class="option"><b>A)</b> Avión</div>
+<div class="option"><b>B)</b> El avión que está aterrizando</div>
+<div class="option"><b>C)</b> Viene de París</div>
+<div class="option correct"><b>D)</b> El avión viene de París</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Es una oración compuesta: principal <em>El avión viene de París</em>, y subordinada <em>que está aterrizando</em> (responde a cuál avión).</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 87 · E.7 — Sintaxis — yuxtaposición</div>
+<div class="qtext">Analiza gramaticalmente esta oración:<br><br><em>Tenemos servicio de internet; solicita tu clave.</em><br><br>¿Cuál es el separador de esta oración compuesta?</div>
+<div class="options">
+<div class="option"><b>A)</b> Internet</div>
+<div class="option correct"><b>B)</b> ; (punto y coma)</div>
+<div class="option"><b>C)</b> Solicita</div>
+<div class="option"><b>D)</b> . (punto)</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Es una oración compuesta por yuxtaposición: dos oraciones unidas sin nexo, separadas por punto y coma (;).</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 88 · E.8 — Signos de puntuación — función</div>
+<div class="qtext">Selecciona los enunciados que corresponden a las funciones de los signos de puntuación.<br><br>1. Significar. La puntuación correcta evita ambigüedades al expresar ideas.<br>2. Marcar pausas. La puntuación correcta marca pausas que facilitan la lectura.<br>3. Desarrollar un estilo literario.<br>4. Separar siempre el sujeto y el predicado.</div>
+<div class="options">
+<div class="option"><b>A)</b> 1</div>
+<div class="option correct"><b>B)</b> 1, 2</div>
+<div class="option"><b>C)</b> 1, 2, 3</div>
+<div class="option"><b>D)</b> 1, 2, 3, 4</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Los signos de puntuación sirven para significar (evitar ambigüedades) y marcar pausas. No tienen como función desarrollar un estilo literario, y en oraciones simples no se separan sujeto y predicado con puntuación.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 89 · E.9 — Signos de puntuación — dos puntos</div>
+<div class="qtext">Es el signo de puntuación que se utiliza antes de una enumeración, al introducir una cita textual y al definir un concepto sin haber nexo verbal.</div>
+<div class="options">
+<div class="option"><b>A)</b> Coma (,)</div>
+<div class="option"><b>B)</b> Punto y coma (;)</div>
+<div class="option correct"><b>C)</b> Dos puntos (:)</div>
+<div class="option"><b>D)</b> Puntos suspensivos (...)</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Los dos puntos (:) se usan antes de enumeraciones, al introducir citas textuales y al definir un concepto sin nexo verbal.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 90 · E.10 — Signos de puntuación — paréntesis</div>
+<div class="qtext">Analiza el siguiente párrafo y después selecciona el signo de puntuación que se debe utilizar para completar correctamente la expresión.<br><br><strong>Ortografía</strong> ___ del griego <em>orthos</em>, correcto; <em>grapho</em>, escribir ___ significa escribir correctamente.</div>
+<div class="options">
+<div class="option"><b>A)</b> Coma</div>
+<div class="option"><b>B)</b> Dos puntos</div>
+<div class="option correct"><b>C)</b> Paréntesis</div>
+<div class="option"><b>D)</b> Comillas</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Los paréntesis () se utilizan para encerrar información intercalada con sentido explicativo independiente, como fechas, siglas y significados breves.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 91 · E.11 — Acento diacrítico</div>
+<div class="qtext">Selecciona la oración que muestra la escritura correcta del acento diacrítico.</div>
+<div class="options">
+<div class="option"><b>A)</b> No se como programar un robot.</div>
+<div class="option"><b>B)</b> No sé como programar un robot.</div>
+<div class="option"><b>C)</b> No se cómo programar un robot.</div>
+<div class="option correct"><b>D)</b> No sé cómo programar un robot.</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> <em>Sé</em> (verbo saber) lleva tilde diacrítica para distinguirse de <em>se</em> (pronombre). <em>Cómo</em> (adverbio interrogativo indirecto) lleva tilde diacrítica para distinguirse de <em>como</em> (adverbio relativo).</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 92 · E.12 — Coherencia textual — ordenar párrafos</div>
+<div class="qtext">Ordena los siguientes párrafos en una secuencia lógica de exposición.<br><br>1. La palabra <em>adyacente</em> significa contiguo o junto. Dos ángulos se llaman adyacentes si comparten un lado, esto es, si tienen un lado común.<br>2. Pero ¿qué es "adyacente"?<br>3. En la antigüedad, Euclides tuvo la brillante idea de definir el ángulo recto y adoptarlo como unidad de medida. Tal definición fue más o menos así:<br>4. El uso actual del ángulo recto como unidad de medida es fundamental en el campo de la geometría.<br>5. Cuando una línea recta que incide sobre otra, hace que los ángulos adyacentes sean iguales, cada uno de los ángulos es <strong>recto</strong>, y ambas líneas rectas son perpendiculares entre sí.</div>
+<div class="options">
+<div class="option"><b>A)</b> $4, 3, 2, 1, 5$</div>
+<div class="option correct"><b>B)</b> $3, 5, 2, 1, 4$</div>
+<div class="option"><b>C)</b> $2, 1, 4, 5, 3$</div>
+<div class="option"><b>D)</b> $1, 5, 2, 4, 3$</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El orden lógico expositivo es: (3) Euclides definió el ángulo recto así → (5) cuando una línea recta incide y los ángulos adyacentes son iguales, son rectos → (2) pero ¿qué es adyacente? → (1) adyacente significa contiguo → (4) el uso del ángulo recto es fundamental en geometría.</div>
+</div>
+
+<h2 class="subject">Historia Universal y de México (12 preguntas)</h2>
+<div class="question">
+<div class="qheader">Pregunta 93 · H.1 — Conquista de Constantinopla y nuevas rutas</div>
+<div class="qtext">En 1453, los otomanos conquistaron la ciudad de Constantinopla, capital del Imperio Bizantino. Era un punto clave de las redes comerciales entre Europa y Asia. Los otomanos bloquearon la ruta comercial de Europa a Asia por Constantinopla. Fue entonces cuando los europeos buscaron nuevas rutas comerciales para tener acceso a los productos asiáticos.<br><br>¿Cuál fue la trascendencia de haber buscado y encontrado nuevas rutas comerciales a finales del siglo XV y durante el siglo XVI?</div>
+<div class="options">
+<div class="option"><b>A)</b> Surgió el feudalismo en Europa</div>
+<div class="option"><b>B)</b> Los europeos tuvieron acceso a productos asiáticos</div>
+<div class="option"><b>C)</b> Comenzó la revolución industrial con la fabricación de barcos</div>
+<div class="option correct"><b>D)</b> Surgieron los imperios coloniales e inició la integración económica del mundo</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> En la búsqueda de nuevas rutas, Colón descubrió América (1492), Vasco da Gama llegó a la India por mar. Esto generó imperios coloniales europeos y el inicio de la integración económica mundial.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 94 · H.2 — Absolutismo</div>
+<div class="qtext">Se consolidó en el siglo XVII en casi toda Europa y se caracterizaba por la creación de monarquías en las que el rey tenía un poder ilimitado y un ejército propio. Proclamaban que el Estado les pertenecía por "derecho divino".<br><br>¿Cómo se denominó este periodo histórico?</div>
+<div class="options">
+<div class="option"><b>A)</b> Feudalismo</div>
+<div class="option"><b>B)</b> Edad Media</div>
+<div class="option correct"><b>C)</b> Absolutismo</div>
+<div class="option"><b>D)</b> Pluralismo</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El absolutismo se consolidó en el siglo XVII. Su mejor ejemplo es Luis XIV de Francia ("El Estado soy yo").</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 95 · H.3 — Revolución Francesa</div>
+<div class="qtext">Sucedió en el periodo de 1789 a 1799 y trajo consigo la aprobación de la "Declaración de los derechos del hombre y el ciudadano", la cual en esencia establece que la nación está formada por individuos que son iguales ante la ley.</div>
+<div class="options">
+<div class="option"><b>A)</b> Independencia de las Trece Colonias Inglesas</div>
+<div class="option correct"><b>B)</b> Revolución Francesa</div>
+<div class="option"><b>C)</b> Revolución Mexicana</div>
+<div class="option"><b>D)</b> Revolución Rusa</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La Revolución Francesa (1789-1799) trajo consigo la Declaración de los derechos del hombre y el ciudadano.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 96 · H.4 — Revolución Industrial</div>
+<div class="qtext">Es el nombre asignado al desarrollo tecnológico que transformó a la producción artesanal (escasa y cara) en producción industrial (abundante y barata) en serie. Comenzó con la invención de máquinas hiladoras y tejedoras en la industria textil, seguida por la expansión del comercio, el desarrollo de trenes y barcos de vapor y otros numerosos avances tecnológicos en el periodo de 1750 a 1850. Después de haberse originado en Gran Bretaña, se extendió al resto de Europa y a todo el mundo.</div>
+<div class="options">
+<div class="option"><b>A)</b> Colonialización</div>
+<div class="option"><b>B)</b> Capitalismo</div>
+<div class="option correct"><b>C)</b> Revolución Industrial</div>
+<div class="option"><b>D)</b> Globalización</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La Revolución Industrial es el desarrollo tecnológico que transformó la producción artesanal en industrial, originada en Gran Bretaña entre 1750 y 1850.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 97 · H.5 — Segunda Guerra Mundial</div>
+<div class="qtext">Hecho histórico que ocurrió en 1941 y significó la entrada de Estados Unidos de América al bando aliado durante la Segunda Guerra Mundial.</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Bombardeo japonés a Pearl Harbor</div>
+<div class="option"><b>B)</b> Invasión de Alemania a Polonia</div>
+<div class="option"><b>C)</b> Invasión de Alemania a la URSS</div>
+<div class="option"><b>D)</b> Bombardeo atómico de Estados Unidos de América a Japón</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> En 1941, Japón bombardeó Pearl Harbor (Hawái); con este hecho EUA entró en la Segunda Guerra Mundial en el bando aliado.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 98 · H.6 — Guerra Fría</div>
+<div class="qtext">Conflicto entre Estados Unidos de América y la Unión de Repúblicas Soviéticas Socialistas (URSS) que duró desde la terminación de la Segunda Guerra Mundial hasta la disolución de la URSS en 1991, en el que no se llegó al uso de las armas, pero sí hubo un riesgo latente de lanzamiento de misiles nucleares. Las dos superpotencias pretendían establecer sus modelos de gobierno en todo el planeta: el capitalismo y el socialismo.</div>
+<div class="options">
+<div class="option"><b>A)</b> La Gran Depresión</div>
+<div class="option correct"><b>B)</b> Guerra Fría</div>
+<div class="option"><b>C)</b> Nazismo</div>
+<div class="option"><b>D)</b> Globalización</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La Guerra Fría fue el periodo de tensión política, económica, militar e informativa entre EUA y la URSS, desde el fin de la Segunda Guerra Mundial hasta 1991.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 99 · H.7 — Culturas mesoamericanas</div>
+<div class="qtext">¿Qué cultura creó los libros del <em>Chilam Balam</em> y el <em>Popol Vuh</em>?</div>
+<div class="options">
+<div class="option"><b>A)</b> Olmeca</div>
+<div class="option"><b>B)</b> Zapoteca</div>
+<div class="option"><b>C)</b> Mexica</div>
+<div class="option correct"><b>D)</b> Maya</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Los mayas, asentados en la península de Yucatán, escribieron en maya el <em>Chilam Balam</em> y el <em>Popol Vuh</em> durante la colonia.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 100 · H.8 — Castas en la Nueva España</div>
+<div class="qtext">Ordena de mayor a menor jerarquía estas seis castas de la Nueva España, las cuales se establecieron con base en un origen étnico:<br><br>1. Mestizo<br>2. Negro<br>3. Español<br>4. Indio<br>5. Criollo<br>6. Castizo</div>
+<div class="options">
+<div class="option"><b>A)</b> $4, 3, 5, 2, 1, 6$</div>
+<div class="option correct"><b>B)</b> $3, 5, 1, 6, 4, 2$</div>
+<div class="option"><b>C)</b> $2, 4, 1, 6, 3, 5$</div>
+<div class="option"><b>D)</b> $1, 6, 3, 5, 4, 2$</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Orden jerárquico de mayor a menor: Español → Criollo → Mestizo → Castizo → Indio → Negro.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 101 · H.9 — Economía Nueva España</div>
+<div class="qtext">¿Cuáles fueron los principales productos de exportación de la Nueva España?</div>
+<div class="options">
+<div class="option"><b>A)</b> Maíz, cacao y especias</div>
+<div class="option"><b>B)</b> Diamantes</div>
+<div class="option"><b>C)</b> Esclavos</div>
+<div class="option correct"><b>D)</b> Oro y plata</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La Nueva España exportaba principalmente metales preciosos (oro y plata) al Imperio Español, en especial plata, extraída de centros mineros como Zacatecas, Pachuca y Taxco.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 102 · H.10 — Constitución de 1917</div>
+<div class="qtext">Primer Jefe del Ejército Constitucionalista y encargado del Poder Ejecutivo de la Nación que decretó el 5 de febrero de 1917 la Constitución Política de los Estados Unidos Mexicanos.</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Venustiano Carranza</div>
+<div class="option"><b>B)</b> Francisco I. Madero</div>
+<div class="option"><b>C)</b> Porfirio Díaz</div>
+<div class="option"><b>D)</b> Benito Juárez</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Venustiano Carranza fue Jefe del Ejército Constitucionalista, derrocó a Victoriano Huerta y como encargado del Poder Ejecutivo decretó la Constitución de 1917.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 103 · H.11 — Revolución Mexicana — Plan de Ayala</div>
+<div class="qtext">Identifica el punto central del <em>Plan de Ayala</em>, un documento promulgado en 1911 por Emiliano Zapata.</div>
+<div class="options">
+<div class="option"><b>A)</b> Sufragio efectivo, no reelección.</div>
+<div class="option correct"><b>B)</b> La tierra es de quien la trabaja.</div>
+<div class="option"><b>C)</b> ¡Viva México!</div>
+<div class="option"><b>D)</b> Si los gobernantes no cumplen con la voluntad popular, entonces el pueblo tiene derecho a la rebelión.</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El Plan de Ayala (1911) de Emiliano Zapata exigía la restitución de tierras a los campesinos. Su lema central: "La tierra es de quien la trabaja".</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 104 · H.12 — Expropiación petrolera</div>
+<div class="qtext">Presidente de México que el 18 de marzo de 1938 decretó la expropiación petrolera.</div>
+<div class="options">
+<div class="option"><b>A)</b> Pascual Ortiz Rubio</div>
+<div class="option correct"><b>B)</b> Lázaro Cárdenas del Río</div>
+<div class="option"><b>C)</b> Miguel Alemán Valdés</div>
+<div class="option"><b>D)</b> Adolfo López Mateos</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El general Lázaro Cárdenas del Río (presidente 1934-1940) decretó la expropiación petrolera el 18 de marzo de 1938.</div>
+</div>
+
+<h2 class="subject">Geografía (12 preguntas)</h2>
+<div class="question">
+<div class="qheader">Pregunta 105 · G.1 — Componentes del espacio geográfico</div>
+<div class="qtext">Componente económico del espacio geográfico cuyo objetivo es explotar los recursos naturales:</div>
+<div class="options">
+<div class="option"><b>A)</b> Industria</div>
+<div class="option"><b>B)</b> Comercio</div>
+<div class="option correct"><b>C)</b> Minería</div>
+<div class="option"><b>D)</b> Telecomunicaciones</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La minería es el componente económico cuyo objetivo es explotar recursos naturales (minerales). La industria los transforma; el comercio los intercambia.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 106 · G.2 — Representaciones cartográficas</div>
+<div class="qtext">Representación de la Tierra con simbología, orientación, proyección y escala.</div>
+<div class="options">
+<div class="option"><b>A)</b> Plano</div>
+<div class="option correct"><b>B)</b> Mapa</div>
+<div class="option"><b>C)</b> Fotografía aérea</div>
+<div class="option"><b>D)</b> Globo terráqueo</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El mapa es la representación de la Tierra con simbología, orientación, proyección y escala. El plano es para áreas pequeñas; el globo no usa proyección plana; la fotografía aérea es una imagen.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 107 · G.3 — Tectónica de placas</div>
+<div class="qtext">Así se denomina el deslizamiento de una placa tectónica por debajo de otra.</div>
+<div class="options">
+<div class="option"><b>A)</b> Dorsal</div>
+<div class="option"><b>B)</b> Plegamiento</div>
+<div class="option correct"><b>C)</b> Subducción</div>
+<div class="option"><b>D)</b> Expansión</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La subducción es el deslizamiento de una placa tectónica por debajo de otra. Las dorsales son elevaciones del fondo oceánico; los plegamientos forman montañas.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 108 · G.4 — Ciclo hidrológico</div>
+<div class="qtext">Es la etapa del ciclo hidrológico que explica la formación de cuerpos subterráneos de agua.</div>
+<div class="options">
+<div class="option"><b>A)</b> Evaporación</div>
+<div class="option"><b>B)</b> Precipitación</div>
+<div class="option"><b>C)</b> Escurrimiento</div>
+<div class="option correct"><b>D)</b> Infiltración</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La infiltración es la etapa en que el agua pasa a través de las partículas del suelo y forma cuerpos subterráneos de agua.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 109 · G.5 — Vulnerabilidad ante desastres</div>
+<div class="qtext">Es un factor principal que hace más vulnerable a la población en caso de un desastre natural, como sismo, huracán, inundación, erupción volcánica o algún otro.</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Pobreza</div>
+<div class="option"><b>B)</b> Analfabetismo</div>
+<div class="option"><b>C)</b> Inseguridad</div>
+<div class="option"><b>D)</b> Turismo</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La pobreza es el principal factor que hace vulnerable a la población ante desastres naturales: las casas se construyen con escasos recursos en zonas de riesgo.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 110 · G.6 — Biodiversidad de México</div>
+<div class="qtext">Estados que cuentan con la mayor biodiversidad de México:</div>
+<div class="options">
+<div class="option"><b>A)</b> Sonora y Sinaloa</div>
+<div class="option"><b>B)</b> Jalisco y Michoacán</div>
+<div class="option"><b>C)</b> Estado de México y Ciudad de México</div>
+<div class="option correct"><b>D)</b> Oaxaca y Chiapas</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La mayor biodiversidad de México está en el bosque tropical lluvioso del sureste, principalmente en Oaxaca y Chiapas, entre el golfo de México y el Pacífico.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 111 · G.7 — Geografía industrial de México</div>
+<div class="qtext">Son dos grandes ciudades industriales ubicadas en el norte de México.</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Monterrey, Nuevo León, y Torreón, Coahuila</div>
+<div class="option"><b>B)</b> Manzanillo, Colima, y Guadalajara, Jalisco</div>
+<div class="option"><b>C)</b> Toluca, Estado de México, y la Ciudad de México</div>
+<div class="option"><b>D)</b> Mérida, Yucatán, y Cancún, Quintana Roo</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Monterrey y Torreón son dos grandes ciudades industriales del norte. Manzanillo y Guadalajara están en el occidente; Toluca y CDMX en el centro; Mérida y Cancún en el oriente (turísticas).</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 112 · G.8 — Soberanía marítima</div>
+<div class="qtext">Es el sector del océano que tiene un ancho de 12 millas náuticas, en el que un Estado ejerce plena soberanía.</div>
+<div class="options">
+<div class="option"><b>A)</b> Aguas interiores</div>
+<div class="option correct"><b>B)</b> Mar territorial</div>
+<div class="option"><b>C)</b> Zona Económica exclusiva</div>
+<div class="option"><b>D)</b> Alta mar</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El mar territorial es el sector de 12 millas náuticas donde un Estado ejerce plena soberanía. La zona económica exclusiva se extiende hasta 200 millas.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 113 · G.9 — Organismos internacionales</div>
+<div class="qtext">Asociación de gobierno global fundada en 1945, que facilita la cooperación en asuntos como paz y seguridad internacional, derechos humanos y desarrollo económico y social:</div>
+<div class="options">
+<div class="option"><b>A)</b> Organización Mundial de Comercio</div>
+<div class="option"><b>B)</b> Fondo Monetario Internacional</div>
+<div class="option"><b>C)</b> Banco Mundial</div>
+<div class="option correct"><b>D)</b> Organización de las Naciones Unidas</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La ONU fue constituida en 1945 con el objetivo principal de evitar otra guerra mundial y atender asuntos de derecho internacional, paz, seguridad y derechos humanos.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 114 · G.10 — Geografía social mundial</div>
+<div class="qtext">Es el continente con la mayor tasa de mortalidad y el menor desarrollo social del mundo.</div>
+<div class="options">
+<div class="option"><b>A)</b> Europa</div>
+<div class="option"><b>B)</b> Asia</div>
+<div class="option correct"><b>C)</b> África</div>
+<div class="option"><b>D)</b> América</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> África tiene la mayor mortalidad y el menor desarrollo social del mundo. En desarrollo social: Europa > América > Asia > África.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 115 · G.11 — Globalización</div>
+<div class="qtext">Desarrollo tecnológico que ha fundamentado la globalización.</div>
+<div class="options">
+<div class="option"><b>A)</b> Teléfono</div>
+<div class="option"><b>B)</b> Televisión</div>
+<div class="option"><b>C)</b> Computadora</div>
+<div class="option correct"><b>D)</b> Internet</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Internet es la tecnología que ha permitido la comunicación eficiente y de bajo costo de datos, imágenes y sonidos a escala mundial, fundamentando la globalización.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 116 · G.12 — Calidad de vida</div>
+<div class="qtext">¿Cuál de los siguientes países tiene la más alta calidad de vida?</div>
+<div class="options">
+<div class="option"><b>A)</b> Egipto</div>
+<div class="option"><b>B)</b> China</div>
+<div class="option correct"><b>C)</b> Noruega</div>
+<div class="option"><b>D)</b> México</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Noruega tiene la más alta calidad de vida, considerando factores como salud, bienestar material, estabilidad política y libertad.</div>
+</div>
+
+<h2 class="subject">Formación cívica y ética (12 preguntas)</h2>
+<div class="question">
+<div class="qheader">Pregunta 117 · FCE.1 — Ciudad de México — nueva entidad</div>
+<div class="qtext">Por decreto publicado el 29 de enero de 2016 en el <em>Diario Oficial de la Federación</em>, el antiguo Distrito Federal se denomina actualmente:</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Ciudad de México</div>
+<div class="option"><b>B)</b> Estado de México</div>
+<div class="option"><b>C)</b> Zona Metropolitana</div>
+<div class="option"><b>D)</b> Capital de los Estados Unidos Mexicanos</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Por decreto del 29 de enero de 2016, el antiguo Distrito Federal pasó a denominarse Ciudad de México, una nueva entidad federativa.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 118 · FCE.2 — Reforma política</div>
+<div class="qtext">La reforma __________ que puso fin al antiguo Distrito Federal incluye crear una Constitución para esta nueva entidad federativa.</div>
+<div class="options">
+<div class="option"><b>A)</b> Económica</div>
+<div class="option correct"><b>B)</b> Política</div>
+<div class="option"><b>C)</b> Social</div>
+<div class="option"><b>D)</b> Ecológica</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Es una reforma política porque cambia condiciones administrativas para beneficios generales. Una reforma económica afecta lo financiero; una social, lo demográfico; una ecológica, el ambiente.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 119 · FCE.3 — Ética y corrupción</div>
+<div class="qtext">A cambio de un soborno, un funcionario público otorga una licencia de funcionamiento para un negocio que no cumple con todos los requisitos previstos por la ley.<br><br>¿Cómo es la conducta de tal funcionario?</div>
+<div class="options">
+<div class="option"><b>A)</b> Cívica</div>
+<div class="option"><b>B)</b> Ética</div>
+<div class="option correct"><b>C)</b> No ética</div>
+<div class="option"><b>D)</b> Antiestética</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La ética es el conjunto de reglas morales que rigen la conducta humana. Quien acepta un soborno antepone un beneficio personal a su obligación: su conducta es <em>no ética</em>.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 120 · FCE.4 — Ceremonias cívicas</div>
+<div class="qtext">La noche del 15 de septiembre de cada año, el pueblo de México se reúne en las plazas públicas para entonar el himno nacional y dar el Grito de Independencia como parte de una fiesta. ¿Qué tipo de ceremonia se celebra entonces?</div>
+<div class="options">
+<div class="option"><b>A)</b> Política</div>
+<div class="option correct"><b>B)</b> Cívica</div>
+<div class="option"><b>C)</b> Ética</div>
+<div class="option"><b>D)</b> Laica</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Las ceremonias cívicas fortalecen la identidad ciudadana usando símbolos nacionales (bandera, himno) o regionales (música, danza). El Grito de Independencia es ceremonia cívica.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 121 · FCE.5 — Valoración estética</div>
+<div class="qtext">De los siguientes enunciados, ¿cuál expresa una valoración estética?</div>
+<div class="options">
+<div class="option correct"><b>A)</b> En el dibujo del "Hombre de Vitruvio", Leonardo da Vinci realza con algunos trazos auxiliares la simetría y las proporciones del cuerpo humano.</div>
+<div class="option"><b>B)</b> En un triángulo rectángulo, la suma de los cuadrados de los catetos es igual al cuadrado de la hipotenusa.</div>
+<div class="option"><b>C)</b> Artículo 123. Toda persona tiene derecho al trabajo digno y socialmente útil.</div>
+<div class="option"><b>D)</b> Poder Legislativo es el órgano de gobierno encargado de hacer y reformar las leyes.</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Lo estético es lo relativo a la percepción y apreciación de la belleza. La opción A se refiere a la simetría y proporciones del Hombre de Vitruvio: valoración estética. Las otras son matemáticas, jurídicas o políticas.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 122 · FCE.6 — Postura constitucional</div>
+<div class="qtext">En los Estados Unidos Mexicanos, toda persona tiene derecho al trabajo digno y socialmente útil. Esto es un ejemplo de una postura:</div>
+<div class="options">
+<div class="option"><b>A)</b> Cívica</div>
+<div class="option"><b>B)</b> Laica</div>
+<div class="option"><b>C)</b> Dictatorial</div>
+<div class="option correct"><b>D)</b> Constitucional</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El derecho al trabajo digno y socialmente útil está consagrado en el Artículo 123 de la Constitución Política de los Estados Unidos Mexicanos. Es una postura constitucional.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 123 · FCE.7 — Relaciones internacionales</div>
+<div class="qtext">Es una profesión cuyo objetivo es representar y velar por los intereses de un Estado y de su nación en relación con otro Estado u organismo internacional.</div>
+<div class="options">
+<div class="option"><b>A)</b> Nacionalismo</div>
+<div class="option"><b>B)</b> Intolerancia</div>
+<div class="option correct"><b>C)</b> Diplomacia</div>
+<div class="option"><b>D)</b> Justicia</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> La diplomacia es la profesión que representa y vela por los intereses de un Estado y su nación frente a otros Estados u organismos internacionales.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 124 · FCE.8 — Acoso sexual</div>
+<div class="qtext">Es la manifestación de una serie de conductas compulsivas de solicitud de favores sexuales, las cuales se dirigen a una persona en contra de su consentimiento.</div>
+<div class="options">
+<div class="option correct"><b>A)</b> Acoso</div>
+<div class="option"><b>B)</b> Abuso</div>
+<div class="option"><b>C)</b> Extorsión</div>
+<div class="option"><b>D)</b> Secuestro</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El acoso sexual es la manifestación de conductas compulsivas de solicitud de favores sexuales en contra del consentimiento de la víctima.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 125 · FCE.9 — Discriminación racial</div>
+<div class="qtext">Algunos amigos acuerdan excluir a un joven de pertenecer a su grupo por su aspecto indígena. Su actitud es un ejemplo de discriminación:</div>
+<div class="options">
+<div class="option"><b>A)</b> Económica</div>
+<div class="option correct"><b>B)</b> Racial</div>
+<div class="option"><b>C)</b> Religiosa</div>
+<div class="option"><b>D)</b> Sexual</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Es discriminación racial porque el joven indígena está siendo excluido por su raza, no por su dinero, religión o sexo.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 126 · FCE.10 — Normas sociales</div>
+<div class="qtext">Saludar, vestirse adecuadamente y ser puntual en una cita son ejemplos de normas:</div>
+<div class="options">
+<div class="option"><b>A)</b> Morales</div>
+<div class="option"><b>B)</b> Jurídicas</div>
+<div class="option"><b>C)</b> Religiosas</div>
+<div class="option correct"><b>D)</b> Sociales</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> Las normas sociales son aquellas que la costumbre origina, como saludar, vestirse de modo apropiado y ser puntual.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 127 · FCE.11 — Instituciones electorales</div>
+<div class="qtext">Es el organismo público autónomo encargado de las elecciones federales, es decir, la elección del Presidente de la República, los Diputados y Senadores que integran el Congreso de la Unión, así como de organizar, en coordinación con los organismos electorales de las entidades federativas, las elecciones locales.</div>
+<div class="options">
+<div class="option"><b>A)</b> Congreso de la Unión</div>
+<div class="option"><b>B)</b> Tribunal Electoral del Poder Judicial de la Federación</div>
+<div class="option correct"><b>C)</b> Instituto Nacional Electoral</div>
+<div class="option"><b>D)</b> Instituto Federal Electoral</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> El Instituto Nacional Electoral (INE) es el organismo público autónomo encargado desde 2014 de las elecciones federales y locales. En 2014, el IFE se transformó en INE por reforma constitucional.</div>
+</div>
+<div class="question">
+<div class="qheader">Pregunta 128 · FCE.12 — Formas de gobierno — democracia</div>
+<div class="qtext">¿Qué clase de gobierno tiene una nación cuyos representantes han sido elegidos por medio del voto universal, libre, directo y secreto?</div>
+<div class="options">
+<div class="option"><b>A)</b> Nacionalista</div>
+<div class="option correct"><b>B)</b> Democrático</div>
+<div class="option"><b>C)</b> Dictatorial</div>
+<div class="option"><b>D)</b> Fundamentalista</div>
+</div>
+<div class="qexplanation"><b>Explicación:</b> En un gobierno democrático los representantes son elegidos por el pueblo mediante el voto universal, libre, directo y secreto.</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$',  right: '$',  display: false}
+    ],
+    throwOnError: false
+  });
+});
+</script>
+</body></html>
