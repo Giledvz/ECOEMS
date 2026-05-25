@@ -582,7 +582,9 @@ function renderQuestion() {
     ctxDiv.style.display = 'none';
   }
   const topicDiv = document.getElementById('qTopic');
-  if (q.topic_name) {
+  // Ocultar topic_name durante el examen (no dar pistas del tema).
+  // Mostrarlo en modo revisión post-entrega para que el alumno/profesor sepa de qué era cada pregunta.
+  if (q.topic_name && state.reviewMode) {
     topicDiv.textContent = q.topic_name;
     topicDiv.style.display = 'inline-block';
   } else {
