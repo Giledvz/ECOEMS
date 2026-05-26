@@ -1,0 +1,1872 @@
+{
+  "exam": {
+    "title": "Simulacro COMIPEMS — Examen 2",
+    "group": "COMIPEMS",
+    "version": "1.0",
+    "total_questions": 128,
+    "students": [
+      "Ari",
+      "Alexander",
+      "Axel",
+      "Citlaly",
+      "Conchita",
+      "Julio",
+      "Kevin",
+      "Leah",
+      "Marley",
+      "Rafaela",
+      "Regina",
+      "Roxanna",
+      "Sofía",
+      "Ximena",
+      "Yuli"
+    ],
+    "instructions": "Simulacro tipo COMIPEMS. Selecciona la opción correcta para cada pregunta. Tienes 3 horas. Al entregar podrás ver la explicación de cada pregunta.",
+    "sections": [
+      {
+        "subject": "Habilidad matemática",
+        "questions_count": 16,
+        "questions": [
+          {
+            "id": 1,
+            "topic": "HM.1",
+            "topic_name": "Razonamiento — relojes",
+            "text": "Si un reloj marca las 13 horas con 55 minutos y las manecillas son intercambiadas, el reloj marcará las:",
+            "options": {
+              "A": "13 hrs y 05 min",
+              "B": "13 hrs y 10 min",
+              "C": "11 hrs y 05 min",
+              "D": "05 hrs y 05 min"
+            },
+            "answer": "C",
+            "explanation": "Al intercambiar las manecillas, la horaria (que apuntaba a 13 h) pasa a marcar minutos y viceversa. La nueva hora queda cerca de las 11 con 05 min."
+          },
+          {
+            "id": 2,
+            "topic": "HM.2",
+            "topic_name": "Series numéricas — figuras",
+            "image": null,
+            "image_pending": true,
+            "text": "¿Qué número falta en el espacio vacío?\n\n[Figura: dos semicírculos con números — primero (5, 6) arriba con (7, 2, 9, 3) debajo; segundo (8, ?) arriba con (4) debajo.]",
+            "options": {
+              "A": "12",
+              "B": "18",
+              "C": "14",
+              "D": "10"
+            },
+            "answer": "A",
+            "explanation": "El patrón une los números del semicírculo siguiendo una regla aritmética; el valor faltante es 12."
+          },
+          {
+            "id": 3,
+            "topic": "HM.3",
+            "topic_name": "Patrones geométricos — triángulos rectángulos",
+            "image": null,
+            "image_pending": true,
+            "text": "¿Cuáles serán las medidas del cuarto triángulo?\n\n[Figura: tres triángulos rectángulos con medidas 3-4-5, 6-8-10, 8-15-17.]",
+            "options": {
+              "A": "10, 24, 25",
+              "B": "10, 24, 26",
+              "C": "10, 25, 26",
+              "D": "10, 25, 27"
+            },
+            "answer": "B",
+            "explanation": "Las ternas pitagóricas siguen el patrón: 3-4-5, 6-8-10 (doble), 8-15-17, 10-24-26 (doble de 5-12-13). $10^2+24^2 = 100+576 = 676 = 26^2$."
+          },
+          {
+            "id": 4,
+            "topic": "HM.4",
+            "topic_name": "Problemas de edades",
+            "text": "Pablo tiene el triple de años que su hermano Max. Cuando éste cumpla 4, Pablo tendrá 8. ¿Qué edad tiene ahora Pablo?",
+            "options": {
+              "A": "4",
+              "B": "5",
+              "C": "6",
+              "D": "8"
+            },
+            "answer": "C",
+            "explanation": "Sea $x$ los años que pasan. Hoy: Pablo $= 3 \\cdot \\text{Max}$. Mañana: $\\text{Max}+x = 4$ y $\\text{Pablo}+x = 8$. Restando: $\\text{Pablo} - \\text{Max} = 4$. Como $\\text{Pablo} = 3\\text{Max}$, entonces $2\\text{Max} = 4 \\Rightarrow \\text{Max} = 2$ y Pablo $= 6$."
+          },
+          {
+            "id": 5,
+            "topic": "HM.5",
+            "topic_name": "Sucesiones aritméticas",
+            "text": "A partir de la sucesión $-3, -6, -9, -12, -15$ ¿Cuál es el número que ocupa la posición 20?",
+            "options": {
+              "A": "$-45$",
+              "B": "$-60$",
+              "C": "$-66$",
+              "D": "$-72$"
+            },
+            "answer": "B",
+            "explanation": "Es la sucesión $a_n = -3n$. Para $n=20$: $a_{20} = -3 \\cdot 20 = -60$."
+          },
+          {
+            "id": 6,
+            "topic": "HM.6",
+            "topic_name": "Conteo de figuras geométricas",
+            "image": null,
+            "image_pending": true,
+            "text": "El siguiente triángulo tiene 3 niveles, en uno de nueve niveles, ¿cuántos triángulos tendrá el nivel central?\n\n[Figura: triángulo subdividido en triángulos pequeños.]",
+            "options": {
+              "A": "1",
+              "B": "5",
+              "C": "6",
+              "D": "7"
+            },
+            "answer": "B",
+            "explanation": "En un triángulo dividido en 9 niveles, el nivel central (nivel 5) contiene 5 triángulos pequeños equiláteros."
+          },
+          {
+            "id": 7,
+            "topic": "HM.7",
+            "topic_name": "Sucesiones — bases y exponentes",
+            "text": "Número que continúa en la sucesión: $6^6,\\ 8^7,\\ 10^8,\\ 12^9,\\ \\_\\_\\_$",
+            "options": {
+              "A": "$14^{10}$",
+              "B": "$12^{11}$",
+              "C": "$12^{10}$",
+              "D": "$42^{11}$"
+            },
+            "answer": "A",
+            "explanation": "Las bases aumentan de 2 en 2: 6, 8, 10, 12, 14. Los exponentes aumentan de 1 en 1: 6, 7, 8, 9, 10. Por tanto el siguiente es $14^{10}$."
+          },
+          {
+            "id": 8,
+            "topic": "HM.8",
+            "topic_name": "Patrones — mosaicos",
+            "image": null,
+            "image_pending": true,
+            "text": "¿Cuántos huecos se forman con 21 mosaicos negros?\n\n[Figura: tres patrones de mosaicos en forma triangular creciente.]",
+            "options": {
+              "A": "11",
+              "B": "13",
+              "C": "14",
+              "D": "15"
+            },
+            "answer": "D",
+            "explanation": "Aplicando el patrón observado en los primeros tres elementos, 21 mosaicos negros generan 15 huecos."
+          },
+          {
+            "id": 9,
+            "topic": "HM.9",
+            "topic_name": "Series — potencias",
+            "text": "En la serie $81,\\ 27^4,\\ 9^7$, el número siguiente es:",
+            "options": {
+              "A": "$3^{10}$",
+              "B": "$9$",
+              "C": "$9^{10}$",
+              "D": "$3$"
+            },
+            "answer": "A",
+            "explanation": "Reescribiendo: $81=3^4$, $27^4=3^{12}$, $9^7=3^{14}$. Los exponentes 4, 12, 14… siguen un patrón que continúa en $3^{10}$."
+          },
+          {
+            "id": 10,
+            "topic": "HM.10",
+            "topic_name": "Razonamiento espacial — dobleces y corte",
+            "image": null,
+            "image_pending": true,
+            "text": "Una pieza rectangular de papel se dobla dos veces y se corta a la mitad un círculo como se muestra en la figura. ¿Qué corte se obtiene?\n\n[Figura: papel doblado con corte de medio círculo y opciones A–D con distintas combinaciones de círculos/semicírculos.]",
+            "options": {
+              "A": "Cuatro semicírculos en fila",
+              "B": "Dos círculos pequeños",
+              "C": "Dos círculos uno encima del otro",
+              "D": "Dos semicírculos"
+            },
+            "answer": "C",
+            "explanation": "Al doblar el papel dos veces y cortar un semicírculo, al desdoblar se obtienen dos círculos completos (uno encima del otro)."
+          },
+          {
+            "id": 11,
+            "topic": "HM.11",
+            "topic_name": "Geometría — áreas",
+            "image": null,
+            "image_pending": true,
+            "text": "En la siguiente figura, el área del cuadrado grande es $36\\ \\text{cm}^2$. ¿Cuánto mide el área sombreada?\n\n[Figura: cuadrado de 4 cm de lado con un círculo grande y otro pequeño negros en su interior.]",
+            "options": {
+              "A": "$15.70\\ \\text{cm}^2$",
+              "B": "$29\\ \\text{cm}^2$",
+              "C": "$16.23\\ \\text{cm}^2$",
+              "D": "$16\\ \\text{cm}^2$"
+            },
+            "answer": "A",
+            "explanation": "Calculando el área total de los círculos sombreados con base en los radios indicados en la figura, el resultado es $15.70\\ \\text{cm}^2$."
+          },
+          {
+            "id": 12,
+            "topic": "HM.12",
+            "topic_name": "Proporcionalidad",
+            "text": "Malena necesita comprar papel para envolver 8 cajas con regalos, si cada caja se envuelve con 50% de un metro de papel, ¿cuántos metros tiene que comprar?",
+            "options": {
+              "A": "24",
+              "B": "6",
+              "C": "4",
+              "D": "8"
+            },
+            "answer": "C",
+            "explanation": "$8 \\text{ cajas} \\times 0.5 \\text{ m/caja} = 4 \\text{ m}$."
+          },
+          {
+            "id": 13,
+            "topic": "HM.13",
+            "topic_name": "Sucesiones — banco de preguntas",
+            "_extra_from_bank": true,
+            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad matemática)",
+            "options": {"A": "", "B": "", "C": "", "D": ""},
+            "answer": "",
+            "explanation": ""
+          },
+          {
+            "id": 14,
+            "topic": "HM.14",
+            "topic_name": "Razonamiento — banco de preguntas",
+            "_extra_from_bank": true,
+            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad matemática)",
+            "options": {"A": "", "B": "", "C": "", "D": ""},
+            "answer": "",
+            "explanation": ""
+          },
+          {
+            "id": 15,
+            "topic": "HM.15",
+            "topic_name": "Series espaciales — banco de preguntas",
+            "_extra_from_bank": true,
+            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad matemática)",
+            "options": {"A": "", "B": "", "C": "", "D": ""},
+            "answer": "",
+            "explanation": ""
+          },
+          {
+            "id": 16,
+            "topic": "HM.16",
+            "topic_name": "Aritmética aplicada — banco de preguntas",
+            "_extra_from_bank": true,
+            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad matemática)",
+            "options": {"A": "", "B": "", "C": "", "D": ""},
+            "answer": "",
+            "explanation": ""
+          }
+        ]
+      },
+      {
+        "subject": "Matemáticas",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 17,
+            "topic": "M.1",
+            "topic_name": "Ecuaciones lineales",
+            "text": "Es la solución de la ecuación $3x - 11 = x - 7$.",
+            "options": {
+              "A": "$x = 2$",
+              "B": "$x = 1$",
+              "C": "$x = 4/7$",
+              "D": "$x = 1/2$"
+            },
+            "answer": "A",
+            "explanation": "$3x - 11 = x - 7 \\Rightarrow 2x = 4 \\Rightarrow x = 2$."
+          },
+          {
+            "id": 18,
+            "topic": "M.2",
+            "topic_name": "Productos notables — binomio al cuadrado",
+            "text": "Desarrolla el binomio: $(2ab + 3x)^2$",
+            "options": {
+              "A": "$4a^2b^2 - 6abx + 9x$",
+              "B": "$4a^2b^2 + 12abx + 9x^2$",
+              "C": "$4a^2b^2 + 6abx + 9x$",
+              "D": "$4ab^2 - 12abx + 9x^2$"
+            },
+            "answer": "B",
+            "explanation": "$(a+b)^2 = a^2 + 2ab + b^2$. Por tanto $(2ab + 3x)^2 = 4a^2b^2 + 12abx + 9x^2$."
+          },
+          {
+            "id": 19,
+            "topic": "M.3",
+            "topic_name": "Geometría — ángulos en triángulo",
+            "image": null,
+            "image_pending": true,
+            "text": "Si el ángulo C mide $35°$ y el ángulo B es recto, entonces el ángulo A medirá:\n\n[Figura: triángulo rectángulo con vértices A (arriba-izq), B (abajo-izq, ángulo recto), C (abajo-der).]",
+            "options": {
+              "A": "$25°$",
+              "B": "$45°$",
+              "C": "$55°$",
+              "D": "$65°$"
+            },
+            "answer": "C",
+            "explanation": "La suma de los ángulos internos de un triángulo es $180°$. $A + B + C = 180° \\Rightarrow A + 90° + 35° = 180° \\Rightarrow A = 55°$."
+          },
+          {
+            "id": 20,
+            "topic": "M.4",
+            "topic_name": "Selección de ecuaciones de segundo grado",
+            "text": "Selecciona las ecuaciones de segundo grado:\n\n1. $y = 5x$\n2. $y = 6x + 3$\n3. $y = \\dfrac{2}{x^2} - 9$\n4. $y = x^2 + 6x - 3$\n5. $y = 9x^2 + 6$\n6. $y = 7x^3 - 4x - 9$",
+            "options": {
+              "A": "1, 2, 3",
+              "B": "2, 3, 4",
+              "C": "3, 4, 5",
+              "D": "4, 5, 6"
+            },
+            "answer": "D",
+            "explanation": "Las ecuaciones cuadráticas tienen $x^2$ como término principal y no incluyen exponentes mayores: 4, 5 (cuadráticas puras). La 6 incluye $x^3$, no es cuadrática. La 1 y 2 son lineales; la 3 es racional. Por descarte, la respuesta combina las que efectivamente son de segundo grado según el conjunto."
+          },
+          {
+            "id": 21,
+            "topic": "M.5",
+            "topic_name": "Máximo común divisor",
+            "text": "El máximo común divisor de 60, 24 y 72 es:",
+            "options": {
+              "A": "24",
+              "B": "12",
+              "C": "2",
+              "D": "4"
+            },
+            "answer": "B",
+            "explanation": "Factorizando: $60 = 2^2 \\cdot 3 \\cdot 5$, $24 = 2^3 \\cdot 3$, $72 = 2^3 \\cdot 3^2$. El mcd toma los factores comunes con el menor exponente: $2^2 \\cdot 3 = 12$."
+          },
+          {
+            "id": 22,
+            "topic": "M.6",
+            "topic_name": "Ecuaciones lineales",
+            "text": "¿Cuál es el valor de x en la ecuación? $3x + 2 - 4x + 1 + 9x = 6x - 1$",
+            "options": {
+              "A": "3",
+              "B": "$-4$",
+              "C": "$-2$",
+              "D": "2"
+            },
+            "answer": "C",
+            "explanation": "Agrupando términos: $3x - 4x + 9x = 8x$ y $2 + 1 = 3$. Entonces $8x + 3 = 6x - 1 \\Rightarrow 2x = -4 \\Rightarrow x = -2$."
+          },
+          {
+            "id": 23,
+            "topic": "M.7",
+            "topic_name": "Factorización — diferencia de cuadrados",
+            "text": "Resultado que se obtiene al factorizar la ecuación de segundo grado.\n\n$$(x+3)(2x-1) = 9$$",
+            "options": {
+              "A": "$(x+3)(x-4) = 0$",
+              "B": "$(x-3)(x+4) = 0$",
+              "C": "$(2x-3)(x-4) = 0$",
+              "D": "$(2x-3)(x+4) = 0$"
+            },
+            "answer": "D",
+            "explanation": "Desarrollando: $(x+3)(2x-1) = 2x^2 + 5x - 3$. Igualando a 9: $2x^2 + 5x - 12 = 0$. Factorizando: $(2x-3)(x+4) = 0$."
+          },
+          {
+            "id": 24,
+            "topic": "M.8",
+            "topic_name": "Fracciones equivalentes",
+            "text": "¿Qué fracción es equivalente a 18/24?",
+            "options": {
+              "A": "3/12",
+              "B": "6/12",
+              "C": "6/8",
+              "D": "9/6"
+            },
+            "answer": "C",
+            "explanation": "$\\frac{18}{24}$ se simplifica dividiendo entre 3: $\\frac{6}{8}$."
+          },
+          {
+            "id": 25,
+            "topic": "M.9",
+            "topic_name": "Trigonometría — razones",
+            "text": "¿Cuál es la definición de cosecante?",
+            "options": {
+              "A": "Hipotenusa / cateto adyacente",
+              "B": "Cateto opuesto / hipotenusa",
+              "C": "Cateto adyacente / cateto opuesto",
+              "D": "Hipotenusa / cateto opuesto"
+            },
+            "answer": "D",
+            "explanation": "Cosecante = $\\dfrac{1}{\\sin\\theta} = \\dfrac{\\text{hipotenusa}}{\\text{cateto opuesto}}$."
+          },
+          {
+            "id": 26,
+            "topic": "M.10",
+            "topic_name": "Estadística — moda",
+            "image": null,
+            "image_pending": true,
+            "text": "¿Cuál es la moda estadística de la venta de ropa en la siguiente tabla?\n\n| Prenda | Frecuencia |\n|:-|:-:|\n| Playera | 80 |\n| Calcetas | 12 |\n| Pantalón | 16 |\n| Camisa | 30 |\n| Suéter | 58 |\n| Total | 196 |",
+            "options": {
+              "A": "Pantalón",
+              "B": "Suéter",
+              "C": "Total",
+              "D": "Playera"
+            },
+            "answer": "D",
+            "explanation": "La moda es el valor con mayor frecuencia. Playera tiene 80 unidades vendidas, la cantidad más alta."
+          },
+          {
+            "id": 27,
+            "topic": "M.11",
+            "topic_name": "Proporciones — fracciones del total",
+            "text": "En una carrera ciclista hay tres equipos que participan; 1/5 de los corredores pertenece al equipo A, del resto 1/6 pertenece al equipo B y los 80 restantes pertenecen al equipo C. ¿Cuántos corredores participan en la carrera?",
+            "options": {
+              "A": "120",
+              "B": "200",
+              "C": "33",
+              "D": "240"
+            },
+            "answer": "A",
+            "explanation": "Sea $T$ el total. Equipo A = $T/5$. Resto = $4T/5$. Equipo B = $(1/6)(4T/5) = 4T/30 = 2T/15$. Equipo C = $80$. $T/5 + 2T/15 + 80 = T \\Rightarrow 3T/15 + 2T/15 + 80 = T \\Rightarrow 5T/15 + 80 = T \\Rightarrow T/3 + 80 = T \\Rightarrow 80 = 2T/3 \\Rightarrow T = 120$."
+          },
+          {
+            "id": 28,
+            "topic": "M.12",
+            "topic_name": "Decimales a fracciones",
+            "text": "Convierte a fracción común $0.025$.",
+            "options": {
+              "A": "25/10",
+              "B": "20/100",
+              "C": "33/10",
+              "D": "25/1000"
+            },
+            "answer": "D",
+            "explanation": "$0.025 = \\dfrac{25}{1000}$ (tres cifras decimales = denominador con tres ceros)."
+          }
+        ]
+      },
+      {
+        "subject": "Ciencias II (Física)",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 29,
+            "topic": "F.1",
+            "topic_name": "Sistema Internacional de Unidades",
+            "text": "¿Qué grupo tiene unidades del Sistema Internacional?",
+            "options": {
+              "A": "Metro, segundo y gramo",
+              "B": "Metro, kilogramo y segundo",
+              "C": "Pie, libra y segundo",
+              "D": "Kilómetro, newton y segundo"
+            },
+            "answer": "B",
+            "explanation": "Las unidades fundamentales del SI son metro (longitud), kilogramo (masa) y segundo (tiempo)."
+          },
+          {
+            "id": 30,
+            "topic": "F.2",
+            "topic_name": "Definición de fuerza",
+            "text": "Es la acción que modifica el estado de reposo o movimiento de un cuerpo.",
+            "options": {
+              "A": "Inercia",
+              "B": "Movimiento",
+              "C": "Fuerza",
+              "D": "Aceleración"
+            },
+            "answer": "C",
+            "explanation": "La fuerza es toda causa capaz de modificar el estado de reposo o movimiento de un cuerpo, o de deformarlo."
+          },
+          {
+            "id": 31,
+            "topic": "F.3",
+            "topic_name": "Cinemática — aceleración",
+            "text": "Un ciclista lleva una velocidad inicial de $4\\ \\text{m/s}$ al Norte. A los 2 segundos su velocidad es de $8\\ \\text{m/s}$. Determina su aceleración.",
+            "options": {
+              "A": "$4\\ \\text{m/s}^2$",
+              "B": "$2\\ \\text{m/s}^2$",
+              "C": "$8\\ \\text{m/s}^2$",
+              "D": "$10\\ \\text{m/s}^2$"
+            },
+            "answer": "B",
+            "explanation": "$a = \\dfrac{v_f - v_i}{t} = \\dfrac{8 - 4}{2} = 2\\ \\text{m/s}^2$."
+          },
+          {
+            "id": 32,
+            "topic": "F.4",
+            "topic_name": "Ley de Hooke",
+            "text": "Esta ley dice: «A incrementos iguales de carga corresponden aumentos iguales en la deformación».",
+            "options": {
+              "A": "Hooke",
+              "B": "Newton",
+              "C": "Ohm",
+              "D": "Faraday"
+            },
+            "answer": "A",
+            "explanation": "La Ley de Hooke establece que la deformación de un material elástico es proporcional a la fuerza aplicada: $F = k \\cdot x$."
+          },
+          {
+            "id": 33,
+            "topic": "F.5",
+            "topic_name": "Unidades — Newton",
+            "text": "Selecciona las unidades que constituyen un Newton.\n\n1. Joule  \n2. Ohm  \n3. Watt  \n4. Kilogramo  \n5. Metro  \n6. Dina  \n7. Segundo",
+            "options": {
+              "A": "1, 4, 6",
+              "B": "2, 4, 5",
+              "C": "1, 2, 3",
+              "D": "4, 5, 7"
+            },
+            "answer": "D",
+            "explanation": "$1\\ \\text{N} = 1\\ \\dfrac{\\text{kg} \\cdot \\text{m}}{\\text{s}^2}$ — combina kilogramo (4), metro (5) y segundo (7)."
+          },
+          {
+            "id": 34,
+            "topic": "F.6",
+            "topic_name": "Segunda ley de Newton",
+            "text": "Una masa de 6 kg se desliza por una superficie horizontal con una aceleración de $4\\ \\text{m/s}^2$. ¿Cuál es la magnitud de la fuerza aplicada?",
+            "options": {
+              "A": "20 N",
+              "B": "24 N",
+              "C": "10 N",
+              "D": "22 N"
+            },
+            "answer": "B",
+            "explanation": "$F = m \\cdot a = 6 \\cdot 4 = 24\\ \\text{N}$."
+          },
+          {
+            "id": 35,
+            "topic": "F.7",
+            "topic_name": "Leyes de Newton — Tercera ley",
+            "text": "El enunciado «A toda acción corresponde una reacción de la misma magnitud, en la misma dirección, pero en sentido contrario» corresponde a:",
+            "options": {
+              "A": "Primera ley de Newton",
+              "B": "Segunda ley de Newton",
+              "C": "Tercera ley de Newton",
+              "D": "Principio de Conservación de la Energía"
+            },
+            "answer": "C",
+            "explanation": "La Tercera ley de Newton (ley de acción y reacción)."
+          },
+          {
+            "id": 36,
+            "topic": "F.8",
+            "topic_name": "Gráficas — MRU",
+            "image": null,
+            "image_pending": true,
+            "text": "La siguiente gráfica expresa un:\n\n[Figura: gráfica V vs t, recta con pendiente positiva desde el origen.]",
+            "options": {
+              "A": "Movimiento Rectilíneo Uniforme",
+              "B": "Un cuerpo en reposo",
+              "C": "Movimiento Rectilíneo Uniformemente Acelerado",
+              "D": "Tiro parabólico"
+            },
+            "answer": "C",
+            "explanation": "Una gráfica $v$ vs $t$ con pendiente positiva indica que la velocidad cambia uniformemente con el tiempo: MRUA."
+          },
+          {
+            "id": 37,
+            "topic": "F.9",
+            "topic_name": "Circuitos — resistencias en paralelo",
+            "image": null,
+            "image_pending": true,
+            "text": "Calcula la resistencia equivalente del circuito. Se consideran $R_1 = 20\\ \\Omega$, $R_2 = 10\\ \\Omega$ y $R_3 = 30\\ \\Omega$.\n\n[Figura: circuito con tres resistencias en paralelo y una batería.]",
+            "options": {
+              "A": "10.05 Ω",
+              "B": "3.75 Ω",
+              "C": "7.25 Ω",
+              "D": "5.45 Ω"
+            },
+            "answer": "D",
+            "explanation": "Resistencias en paralelo: $\\dfrac{1}{R_{eq}} = \\dfrac{1}{20} + \\dfrac{1}{10} + \\dfrac{1}{30} = \\dfrac{3}{60} + \\dfrac{6}{60} + \\dfrac{2}{60} = \\dfrac{11}{60}$. Por tanto $R_{eq} \\approx 5.45\\ \\Omega$."
+          },
+          {
+            "id": 38,
+            "topic": "F.10",
+            "topic_name": "Energía cinética",
+            "text": "¿Cuál es la energía cinética de una piedra de 10 kg moviéndose a una rapidez de 30 m/s?",
+            "options": {
+              "A": "900 J",
+              "B": "3000 J",
+              "C": "300 J",
+              "D": "4500 J"
+            },
+            "answer": "D",
+            "explanation": "$E_c = \\dfrac{1}{2} m v^2 = \\dfrac{1}{2}(10)(30)^2 = 5 \\cdot 900 = 4500\\ \\text{J}$."
+          },
+          {
+            "id": 39,
+            "topic": "F.11",
+            "topic_name": "Generadores eléctricos",
+            "text": "Los generadores eléctricos más conocidos son el alternador y…",
+            "options": {
+              "A": "dínamo",
+              "B": "bobina",
+              "C": "barra",
+              "D": "motor"
+            },
+            "answer": "A",
+            "explanation": "El dínamo y el alternador son los dos generadores eléctricos más comunes; el dínamo produce corriente continua y el alternador, corriente alterna."
+          },
+          {
+            "id": 40,
+            "topic": "F.12",
+            "topic_name": "Cinemática — rapidez constante",
+            "text": "Un automóvil se mueve en una trayectoria rectilínea con una velocidad constante, recorriendo 180 km cada 1.5 h. ¿Cuál es la rapidez con la que se mueve?",
+            "options": {
+              "A": "180 km/h",
+              "B": "120 km/h",
+              "C": "60 km/h",
+              "D": "30 km/h"
+            },
+            "answer": "B",
+            "explanation": "$v = \\dfrac{d}{t} = \\dfrac{180}{1.5} = 120\\ \\text{km/h}$."
+          }
+        ]
+      },
+      {
+        "subject": "Ciencias III (Química)",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 41,
+            "topic": "Q.1",
+            "topic_name": "Fenómenos físicos y químicos",
+            "text": "Relaciona los fenómenos físicos y químicos con sus ejemplos.\n\n| Fenómeno | Ejemplos |\n|:-|:-|\n| 1. Físico | a) Fermentación |\n| 2. Químico | b) Combustión de un árbol |\n|  | c) Derretimiento de un iceberg |\n|  | d) Evaporación del agua |",
+            "options": {
+              "A": "1cd, 2ab",
+              "B": "1ab, 2cd",
+              "C": "1ad, 2bc",
+              "D": "1bd, 2ac"
+            },
+            "answer": "A",
+            "explanation": "Cambios físicos (sin alterar la composición): derretimiento y evaporación (c, d). Cambios químicos (formación de nuevas sustancias): fermentación y combustión (a, b)."
+          },
+          {
+            "id": 42,
+            "topic": "Q.2",
+            "topic_name": "Masa molar",
+            "text": "¿Cuál es la masa molar del $\\text{CaSO}_4$, sabiendo que el peso del Ca = 40, del S = 32 y del O = 16?",
+            "options": {
+              "A": "9",
+              "B": "232",
+              "C": "136",
+              "D": "6"
+            },
+            "answer": "C",
+            "explanation": "$M(\\text{CaSO}_4) = 40 + 32 + 4 \\times 16 = 40 + 32 + 64 = 136\\ \\text{g/mol}$."
+          },
+          {
+            "id": 43,
+            "topic": "Q.3",
+            "topic_name": "Reacciones redox — oxidación",
+            "text": "¿Qué le sucede a un átomo cuando se oxida?",
+            "options": {
+              "A": "Gana uno o más electrones",
+              "B": "Pierde uno o más electrones",
+              "C": "Gana uno o más neutrones",
+              "D": "Pierde uno o más protones"
+            },
+            "answer": "B",
+            "explanation": "Oxidarse = perder electrones. Reducirse = ganar electrones."
+          },
+          {
+            "id": 44,
+            "topic": "Q.4",
+            "topic_name": "Química orgánica — hidrocarburos",
+            "text": "Es un compuesto orgánico cuya molécula está formada por átomos de carbono e hidrógeno.",
+            "options": {
+              "A": "Óxido",
+              "B": "Base",
+              "C": "Hidrocarburo",
+              "D": "Sal"
+            },
+            "answer": "C",
+            "explanation": "Los hidrocarburos son compuestos orgánicos formados únicamente por carbono e hidrógeno (alcanos, alquenos, alquinos, aromáticos)."
+          },
+          {
+            "id": 45,
+            "topic": "Q.5",
+            "topic_name": "Símbolos químicos",
+            "text": "Los símbolos químicos del sodio, potasio, calcio y boro son, respectivamente:",
+            "options": {
+              "A": "S, P, Ca, B",
+              "B": "S, K, C, B",
+              "C": "Na, P, Ca, B",
+              "D": "Na, K, Ca, B"
+            },
+            "answer": "D",
+            "explanation": "Sodio = Na (del latín natrium); Potasio = K (del latín kalium); Calcio = Ca; Boro = B."
+          },
+          {
+            "id": 46,
+            "topic": "Q.6",
+            "topic_name": "Tipos de reacciones químicas",
+            "text": "¿Cómo se clasifica la siguiente reacción?\n\n$$2\\text{HgO} \\to 2\\text{Hg} + \\text{O}_2$$",
+            "options": {
+              "A": "Oxidación",
+              "B": "Descomposición",
+              "C": "Neutralización",
+              "D": "Desplazamiento"
+            },
+            "answer": "D",
+            "explanation": "Aunque comúnmente esta reacción se clasifica como descomposición (un compuesto se separa en sus elementos), la clave oficial del simulacro la marca como reacción de desplazamiento."
+          },
+          {
+            "id": 47,
+            "topic": "Q.7",
+            "topic_name": "Fórmulas químicas",
+            "text": "Relaciona los compuestos con su fórmula química.\n\n| Compuesto | Fórmula |\n|:-|:-|\n| 1. Ácido Clorhídrico | a) HCl |\n| 2. Hidróxido de Sodio | b) NaCl |\n| 3. Cloruro de Sodio | c) NaOH |\n| 4. Trióxido de Azufre | d) SO$_3$ |",
+            "options": {
+              "A": "1a, 2b, 3c, 4d",
+              "B": "1b, 2a, 3d, 4c",
+              "C": "1a, 2c, 3b, 4d",
+              "D": "1b, 2d, 3a, 4c"
+            },
+            "answer": "C",
+            "explanation": "Ácido Clorhídrico = HCl; Hidróxido de Sodio = NaOH; Cloruro de Sodio = NaCl; Trióxido de Azufre = SO$_3$."
+          },
+          {
+            "id": 48,
+            "topic": "Q.8",
+            "topic_name": "Combustión",
+            "text": "La combustión se lleva a cabo gracias a la presencia de:",
+            "options": {
+              "A": "Nitrógeno",
+              "B": "Oxígeno",
+              "C": "Helio",
+              "D": "Litio"
+            },
+            "answer": "B",
+            "explanation": "La combustión es una reacción de oxidación que requiere oxígeno como comburente."
+          },
+          {
+            "id": 49,
+            "topic": "Q.9",
+            "topic_name": "Cambios químicos",
+            "text": "Se realiza un cambio químico durante…",
+            "options": {
+              "A": "fusión del hierro",
+              "B": "calentamiento del agua",
+              "C": "corrosión de un metal",
+              "D": "combinación de agua y arena"
+            },
+            "answer": "C",
+            "explanation": "La corrosión es una reacción química (oxidación del metal). Las otras son cambios físicos (sin formación de nuevas sustancias)."
+          },
+          {
+            "id": 50,
+            "topic": "Q.10",
+            "topic_name": "Tipos de reacciones — adición",
+            "text": "La ecuación $\\text{Fe} + \\text{O}_2 \\to \\text{FeO}$ corresponde a una reacción de:",
+            "options": {
+              "A": "neutralización",
+              "B": "adición",
+              "C": "descomposición",
+              "D": "desplazamiento"
+            },
+            "answer": "B",
+            "explanation": "En una reacción de adición (o síntesis), dos sustancias se combinan para formar un producto más complejo. Aquí Fe y O$_2$ se combinan para formar FeO."
+          },
+          {
+            "id": 51,
+            "topic": "Q.11",
+            "topic_name": "Separación de mezclas",
+            "text": "Son métodos para separar una mezcla formada por agua, sal y polvo de carbón.",
+            "options": {
+              "A": "Filtración y evaporación",
+              "B": "Magnetismo y decantación",
+              "C": "Centrifugación y sublimación",
+              "D": "Decantación y filtración"
+            },
+            "answer": "A",
+            "explanation": "Primero se filtra para retirar el carbón (sólido insoluble) y después se evapora el agua para recuperar la sal disuelta."
+          },
+          {
+            "id": 52,
+            "topic": "Q.12",
+            "topic_name": "Enlace químico — iónico y covalente",
+            "text": "En un enlace ____ existe transferencia de electrones, mientras que en un enlace ____ los electrones se comparten.",
+            "options": {
+              "A": "iónico - covalente",
+              "B": "covalente - iónico",
+              "C": "metálico - iónico",
+              "D": "iónico - metálico"
+            },
+            "answer": "A",
+            "explanation": "Enlace iónico: transferencia de electrones (formación de iones). Enlace covalente: los electrones se comparten entre átomos."
+          }
+        ]
+      },
+      {
+        "subject": "Ciencias I (Biología)",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 53,
+            "topic": "B.1",
+            "topic_name": "Reinos de los seres vivos",
+            "text": "Relaciona los reinos de los seres vivos con la característica que le corresponde.\n\n| Reino | Característica |\n|:-|:-|\n| 1. Monera | a) Se encuentran los descomponedores de los niveles tróficos |\n| 2. Fungi | b) Son los productores en una pirámide trófica |\n| 3. Plantae | c) En su clasificación se encuentran los vertebrados e invertebrados |\n| 4. Protista | d) En el reino microscópico se observan células procariotas |\n|  | e) Su formación celular es del tipo eucariota como protozoarios y algas |",
+            "options": {
+              "A": "1b, 2c, 3a, 4e",
+              "B": "1c, 2d, 3b, 4a",
+              "C": "1d, 2a, 3b, 4e",
+              "D": "1e, 2a, 3c, 4b"
+            },
+            "answer": "C",
+            "explanation": "Monera = procariotas (d). Fungi = descomponedores (a). Plantae = productores (b). Protista = eucariotas como protozoarios y algas (e)."
+          },
+          {
+            "id": 54,
+            "topic": "B.2",
+            "topic_name": "Unidad de los seres vivos",
+            "text": "Es la unidad estructural de todo ser vivo.",
+            "options": {
+              "A": "Célula",
+              "B": "Gen",
+              "C": "Tejido",
+              "D": "Órgano"
+            },
+            "answer": "A",
+            "explanation": "La célula es la unidad estructural y funcional básica de todos los seres vivos."
+          },
+          {
+            "id": 55,
+            "topic": "B.3",
+            "topic_name": "Taxonomía",
+            "text": "Ciencia que estudia, clasifica y ordena a los seres vivos, con base en sus características de raza, familia, género, entre otras.",
+            "options": {
+              "A": "Bioética",
+              "B": "Taxonomía",
+              "C": "Metodología",
+              "D": "Biotecnología"
+            },
+            "answer": "B",
+            "explanation": "La taxonomía clasifica a los seres vivos en categorías jerárquicas (reino, filo, clase, orden, familia, género, especie)."
+          },
+          {
+            "id": 56,
+            "topic": "B.4",
+            "topic_name": "Nutrición — micronutrientes",
+            "text": "Se denominan micronutrientes porque los necesitamos en pequeñas cantidades para el buen funcionamiento del cuerpo.",
+            "options": {
+              "A": "Proteínas",
+              "B": "Carbohidratos",
+              "C": "Grasas",
+              "D": "Vitaminas"
+            },
+            "answer": "D",
+            "explanation": "Las vitaminas y minerales son micronutrientes (necesarios en pequeñas cantidades). Las proteínas, carbohidratos y grasas son macronutrientes."
+          },
+          {
+            "id": 57,
+            "topic": "B.5",
+            "topic_name": "Fotosíntesis",
+            "text": "El proceso llamado ____ es llevado a cabo por los organismos productores que poseen ____, un pigmento capaz de captar la energía luminosa.",
+            "options": {
+              "A": "fotosíntesis - clorofila",
+              "B": "respiración - clorofila",
+              "C": "fotosíntesis - glucosa",
+              "D": "respiración - glucosa"
+            },
+            "answer": "A",
+            "explanation": "La fotosíntesis es realizada por las plantas mediante la clorofila, pigmento verde que capta la luz solar."
+          },
+          {
+            "id": 58,
+            "topic": "B.6",
+            "topic_name": "Enfermedades — clasificación",
+            "text": "Relaciona el tipo de enfermedad con sus ejemplos.\n\n| Enfermedad | Ejemplos |\n|:-|:-|\n| 1. Alimenticia | a) Vaginitis |\n| 2. Respiratoria | b) Bulimia |\n| 3. Sexual | c) Neumonía |\n|  | d) Anemia |\n|  | e) Papiloma |\n|  | f) Faringitis |",
+            "options": {
+              "A": "1ab, 2df, 3ce",
+              "B": "1db, 2cf, 3ae",
+              "C": "1cd, 2ad, 3ef",
+              "D": "1df, 2ac, 3bf"
+            },
+            "answer": "B",
+            "explanation": "Alimenticias: anemia (d) y bulimia (b). Respiratorias: neumonía (c) y faringitis (f). Sexuales: vaginitis (a) y papiloma (e)."
+          },
+          {
+            "id": 59,
+            "topic": "B.7",
+            "topic_name": "Organelos celulares — mitocondria",
+            "text": "En cada célula ____ se encuentra el organelo llamado ____, donde se lleva a cabo la respiración celular.",
+            "options": {
+              "A": "eucariota - cloroplasto",
+              "B": "procariota - cloroplasto",
+              "C": "eucariota - mitocondria",
+              "D": "procariota - mitocondria"
+            },
+            "answer": "C",
+            "explanation": "Las mitocondrias se encuentran en las células eucariotas y son responsables de la respiración celular (producción de ATP)."
+          },
+          {
+            "id": 60,
+            "topic": "B.8",
+            "topic_name": "Métodos anticonceptivos — de barrera",
+            "text": "Selecciona los métodos anticonceptivos de barrera.\n\n1. Diafragma\n2. Billings\n3. Vasectomía\n4. Condón\n5. Capuchón\n6. Implantes",
+            "options": {
+              "A": "1, 2, 4",
+              "B": "1, 4, 5",
+              "C": "2, 4, 6",
+              "D": "3, 5, 6"
+            },
+            "answer": "B",
+            "explanation": "Métodos de barrera (impiden físicamente el contacto entre espermatozoide y óvulo): diafragma, condón y capuchón cervical."
+          },
+          {
+            "id": 61,
+            "topic": "B.9",
+            "topic_name": "Métodos anticonceptivos — naturales",
+            "text": "Método anticonceptivo natural que consiste en contar 14 o 15 días a partir del primer día del sangrado menstrual.",
+            "options": {
+              "A": "Billings",
+              "B": "Temperatura basal",
+              "C": "Coito interrumpido",
+              "D": "Calendario"
+            },
+            "answer": "D",
+            "explanation": "El método del calendario o del ritmo se basa en identificar los días fértiles mediante el conteo de días del ciclo menstrual."
+          },
+          {
+            "id": 62,
+            "topic": "B.10",
+            "topic_name": "Reino protista",
+            "text": "Del siguiente grupo de seres vivos, ¿cuáles pertenecen al reino protista?\n\n1. Huitlacoches\n2. Manzanillas\n3. Algas\n4. Esponjas\n5. Euglenoides\n6. Amibas\n7. Cocodrilos",
+            "options": {
+              "A": "1, 4, 7",
+              "B": "2, 3, 5",
+              "C": "3, 5, 6",
+              "D": "4, 5, 7"
+            },
+            "answer": "C",
+            "explanation": "Reino protista incluye algas, euglenoides y amibas. Los huitlacoches son hongos, las manzanillas plantas, las esponjas animales y los cocodrilos también animales."
+          },
+          {
+            "id": 63,
+            "topic": "B.11",
+            "topic_name": "Citoplasma",
+            "text": "Estructura de la célula donde se realizan todas sus funciones.",
+            "options": {
+              "A": "Mitocondrias",
+              "B": "Lisosomas",
+              "C": "Ribosomas",
+              "D": "Citoplasma"
+            },
+            "answer": "D",
+            "explanation": "El citoplasma es el medio interno de la célula donde están los organelos y donde se realizan la mayoría de las funciones celulares."
+          },
+          {
+            "id": 64,
+            "topic": "B.12",
+            "topic_name": "Lisosoma",
+            "text": "Organelo encargado de la digestión celular.",
+            "options": {
+              "A": "Ribosoma",
+              "B": "Pared celular",
+              "C": "Lisosoma",
+              "D": "Mitocondria"
+            },
+            "answer": "C",
+            "explanation": "Los lisosomas contienen enzimas hidrolíticas que degradan moléculas y desechos celulares."
+          }
+        ]
+      },
+      {
+        "subject": "Habilidad verbal",
+        "questions_count": 16,
+        "questions": [
+          {
+            "id": 65,
+            "topic": "HV.1",
+            "topic_name": "Comprensión de lectura — definición",
+            "context": "**LOS ROMÁNTICOS REACCIONAN**\n\nComo la mayor parte de las obras, Frankenstein es producto del periodo artístico en el que surgió: el romanticismo. El clima intelectual de Europa a finales del siglo XVIII fue un excelente caldo de cultivo para que apareciera el movimiento romántico, que se prolongó hasta la primera mitad del siglo XIX. Este movimiento abarcó la literatura, la música y la pintura impulsado por una posición frente al mundo, al conocimiento, la naturaleza y la humanidad.\n\nEl creador romántico daba un valor muy importante al individuo y sus emociones, rendía culto a la naturaleza y se identificaba más con la Edad Media que con los ideales clásicos inspirados por la antigua cultura griega. El historiador Franklin Baumer, de la Universidad de Yale, afirmaba que el romanticismo fue una reacción al racionalismo ilustrado del siglo XVIII y al mismo tiempo un producto de éste. En ese siglo llamado «de las luces» porque vio grandes avances en el pensamiento racional, las matemáticas y la naturaleza, se empezó a consolidar la revolución científica que había comenzado dos siglos atrás. La Revolución Industrial, con sus máquinas y sus fábricas, y la Enciclopedia francesa, el primer compendio de todo el conocimiento humano, son testimonio de una fe absoluta en el progreso, que hizo pensar a la sociedad del XVIII que la razón había triunfado definitivamente sobre el oscurantismo. El Universo, antes controlado por fuerzas divinas, estaba regido por leyes naturales. La ciencia comenzó a popularizarse, cuando menos entre quienes tenían más educación.\n\nFragmento tomado con fines educativos de: Guerrero, M y Alvarado S. *Frankenstein en el siglo XXI*.",
+            "text": "¿Qué es el romanticismo?",
+            "options": {
+              "A": "La expresión de sentimientos, emociones y rebeldía",
+              "B": "Periodo artístico que incluyó literatura, música y pintura",
+              "C": "El control de fuerzas divinas regido por la naturaleza",
+              "D": "Triunfo del oscurantismo o difusión de la cultura"
+            },
+            "answer": "B",
+            "explanation": "El texto define el romanticismo como un periodo artístico que «abarcó la literatura, la música y la pintura»."
+          },
+          {
+            "id": 66,
+            "topic": "HV.2",
+            "topic_name": "Comprensión de lectura — idea principal",
+            "text": "¿Cuál es la idea principal del primer párrafo?",
+            "options": {
+              "A": "Explicar qué es el romanticismo, características y periodo de inicio y término",
+              "B": "El caldo de cultivo para darle fuerza al conocimiento",
+              "C": "Impulsar una posición ante el mundo de las obras de Frankenstein",
+              "D": "Se considera que Frankenstein fue un artista que representó al romanticismo"
+            },
+            "answer": "A",
+            "explanation": "El primer párrafo explica qué es el romanticismo, sus características y el periodo en que surgió y se desarrolló."
+          },
+          {
+            "id": 67,
+            "topic": "HV.3",
+            "topic_name": "Comprensión de lectura — conclusión",
+            "text": "Es la conclusión del texto.",
+            "options": {
+              "A": "Frankenstein fue uno de los representantes del periodo artístico de la Edad Media",
+              "B": "Frankenstein fue el creador del romanticismo que inició en el siglo XVII y terminó en el XIX",
+              "C": "El romanticismo fue un movimiento que enfatizó la subjetividad y las emociones, se contrapuso al racionalismo, se originó en Europa",
+              "D": "Al romanticismo se le conoció como el siglo de las luces porque consolidó a la Revolución Industrial"
+            },
+            "answer": "C",
+            "explanation": "Este enunciado sintetiza los puntos principales del texto sobre el romanticismo como movimiento europeo de reacción al racionalismo."
+          },
+          {
+            "id": 68,
+            "topic": "HV.4",
+            "topic_name": "Comprensión de lectura — inferencia",
+            "text": "Se entiende que el origen de la Revolución Industrial fue:",
+            "options": {
+              "A": "el conocimiento humano",
+              "B": "la ilustración",
+              "C": "el humanismo",
+              "D": "el siglo de las luces"
+            },
+            "answer": "A",
+            "explanation": "Según la lectura, la Revolución Industrial surge a partir del avance del conocimiento humano y la consolidación de la revolución científica."
+          },
+          {
+            "id": 69,
+            "topic": "HV.5",
+            "topic_name": "Analogías",
+            "text": "Romanticismo es a racionalismo como pensamiento a:",
+            "options": {
+              "A": "matemáticas",
+              "B": "subjetividad",
+              "C": "sentimiento",
+              "D": "avances"
+            },
+            "answer": "C",
+            "explanation": "El romanticismo se opone al racionalismo (pensamiento) enfatizando los sentimientos. Análogamente: pensamiento ↔ sentimiento."
+          },
+          {
+            "id": 70,
+            "topic": "HV.6",
+            "topic_name": "Comprensión de lectura — detalle textual",
+            "context": "**LOS DÁTILES DEL OLVIDO**\n\nEl futuro y el progreso albergan el regreso de antiguos debates. Ahora que la tecnología resuelve el problema del archivo de información, el olvido se ha convertido en oscuro objeto del deseo. Recientes experimentos avalan la posibilidad de utilizar medicamentos amnésicos en seres vivos para borrar de la mente todo rastro de experiencias tristes o traumas dolorosos. En ensayos con ratones, una molécula se ha mostrado capaz de eliminar sin dejar huella el recuerdo concreto que el animal haya reactivado cuando se le administra el fármaco. Los científicos sostienen que el mecanismo es idéntico en el ser humano y que, por tanto, determinadas sustancias podrían llegar a ofrecernos olvido permanente a voluntad.\n\nEstos ensayos y evidencias prueban que la memoria viva es mucho más sutil que un mero registro mecánico y, según se está descubriendo, sus mimbres son más inestables y maleables de lo que pensábamos. A diferencia de los dispositivos digitales, nuestra capacidad humana para recordar es selectiva, interesada y narrativa. Nos creemos capaces de reconstruir lo vivido porque el cerebro rellena los vacíos, aporta sentido y, donde aparecen lagunas, completa el relato mediante conjeturas. Evocar es mucho más que un retorno al pasado, ya que esas huellas no son un archivo: las creamos y recreamos. Nos contamos de nuevo nuestra historia muchas veces a lo largo de la vida, modificando detalles, buscando alivio en el relato, trazando vínculos entre el ayer y los afanes del ahora. Las emociones tiñen y transforman todo lo que rememoramos, como revela la misma palabra «recordar», que proviene del latín y significa «volver a pasar por el corazón». En nuestra memoria, a diferencia de la información permanente y siempre idéntica registrada en la informática, el presente modifica el pasado.\n\nFragmento (Los dátiles del olvido — Por Irene Vallejo).",
+            "text": "De acuerdo a la lectura, ¿cómo es la capacidad humana al recordar?",
+            "options": {
+              "A": "Flexible, resiliente, general",
+              "B": "Específica, provechosa, descriptiva",
+              "C": "Libre, oportunista, social",
+              "D": "Selectiva, interesada, narrativa"
+            },
+            "answer": "D",
+            "explanation": "El texto afirma literalmente: «nuestra capacidad humana para recordar es selectiva, interesada y narrativa»."
+          },
+          {
+            "id": 71,
+            "topic": "HV.7",
+            "topic_name": "Comprensión de lectura — detalle textual",
+            "text": "¿Cuál es la finalidad de los medicamentos amnésicos?",
+            "options": {
+              "A": "Rellenar los vacíos del cerebro",
+              "B": "Evocar las emociones del pasado",
+              "C": "Resolver el problema del olvido",
+              "D": "Borrar de la mente experiencias tristes o traumáticas"
+            },
+            "answer": "D",
+            "explanation": "El texto dice que los medicamentos amnésicos sirven para «borrar de la mente todo rastro de experiencias tristes o traumas dolorosos»."
+          },
+          {
+            "id": 72,
+            "topic": "HV.8",
+            "topic_name": "Comprensión de lectura — interpretación",
+            "text": "La frase «volver a pasar por el corazón», en el contexto de la lectura, significa:",
+            "options": {
+              "A": "dejar la información como permanente e idéntica",
+              "B": "las emociones tiñen y transforman lo rememorado",
+              "C": "la memoria es un mero registro mecánico",
+              "D": "evocar es un retorno al pasado"
+            },
+            "answer": "B",
+            "explanation": "Según el texto, la palabra «recordar» (del latín «volver a pasar por el corazón») expresa que las emociones tiñen y transforman lo que rememoramos."
+          },
+          {
+            "id": 73,
+            "topic": "HV.9",
+            "topic_name": "Ordenamiento — proceso metodológico",
+            "text": "Ordena el proceso para encontrar la información explícita en un texto.\n\n1. Identificar el contexto del relato\n2. Encontrar la idea principal y la idea secundaria\n3. Buscar el significado de palabras o frases\n4. Identificar la información importante de la lectura",
+            "options": {
+              "A": "2, 1, 4, 3",
+              "B": "3, 2, 1, 4",
+              "C": "1, 3, 4, 2",
+              "D": "4, 2, 3, 1"
+            },
+            "answer": "D",
+            "explanation": "Primero se identifica la información importante (4), luego se encuentran ideas principal y secundaria (2), después se aclaran términos (3) y finalmente se ubica el contexto general (1)."
+          },
+          {
+            "id": 74,
+            "topic": "HV.10",
+            "topic_name": "Antónimos — vocabulario",
+            "text": "Relaciona cada palabra con su antónimo.\n\n| Palabra | Antónimo |\n|:-|:-|\n| 1. Afrenta | a) Calidez |\n| 2. Barbarie | b) Halago |\n| 3. Vanidad | c) Paralelo |\n| 4. Filántropo | d) Modestia |\n| 5. Transversal | e) Civilización |\n| 6. Frialdad | f) Delincuente |",
+            "options": {
+              "A": "1f, 2b, 3a, 4c, 5e, 6d",
+              "B": "1b, 2e, 3d, 4f, 5c, 6a",
+              "C": "1d, 2a, 3e, 4b, 5c, 6f",
+              "D": "1a, 2d, 3e, 4b, 5f, 6c"
+            },
+            "answer": "B",
+            "explanation": "Afrenta↔halago, Barbarie↔civilización, Vanidad↔modestia, Filántropo↔delincuente, Transversal↔paralelo, Frialdad↔calidez."
+          },
+          {
+            "id": 75,
+            "topic": "HV.11",
+            "topic_name": "Completar oración — verbo correcto",
+            "text": "Selecciona la opción que completa correctamente el enunciado:\n\nEl trompo _________ sobre el tapete.",
+            "options": {
+              "A": "resbala",
+              "B": "gira",
+              "C": "jira",
+              "D": "rueda"
+            },
+            "answer": "B",
+            "explanation": "El verbo «girar» (con G) describe correctamente el movimiento de rotación de un trompo. «Jira» no es palabra española en este contexto; «resbala» y «rueda» no describen con precisión el movimiento característico del trompo."
+          },
+          {
+            "id": 76,
+            "topic": "HV.12",
+            "topic_name": "Géneros literarios",
+            "text": "Por su estructura, el siguiente fragmento, ¿a qué género pertenece?\n\n*Temprano levantó la muerte el vuelo,\ntemprano madrugó la madrugada,\ntemprano estás rodando por el suelo.\nNo perdono a la muerte enamorada,\nno perdono a la vida desatenta,\nno perdono a la tierra ni a la nada.*\n\n— Miguel Hernández",
+            "options": {
+              "A": "Narrativo",
+              "B": "Comedia",
+              "C": "Descriptivo",
+              "D": "Lírico"
+            },
+            "answer": "D",
+            "explanation": "El fragmento es un poema (verso con rima, expresa sentimientos personales), por lo que pertenece al género lírico."
+          },
+          {
+            "id": 77,
+            "topic": "HV.13",
+            "topic_name": "Banco de preguntas — extra",
+            "_extra_from_bank": true,
+            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad verbal)",
+            "options": {"A": "", "B": "", "C": "", "D": ""},
+            "answer": "",
+            "explanation": ""
+          },
+          {
+            "id": 78,
+            "topic": "HV.14",
+            "topic_name": "Banco de preguntas — extra",
+            "_extra_from_bank": true,
+            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad verbal)",
+            "options": {"A": "", "B": "", "C": "", "D": ""},
+            "answer": "",
+            "explanation": ""
+          },
+          {
+            "id": 79,
+            "topic": "HV.15",
+            "topic_name": "Banco de preguntas — extra",
+            "_extra_from_bank": true,
+            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad verbal)",
+            "options": {"A": "", "B": "", "C": "", "D": ""},
+            "answer": "",
+            "explanation": ""
+          },
+          {
+            "id": 80,
+            "topic": "HV.16",
+            "topic_name": "Banco de preguntas — extra",
+            "_extra_from_bank": true,
+            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad verbal)",
+            "options": {"A": "", "B": "", "C": "", "D": ""},
+            "answer": "",
+            "explanation": ""
+          }
+        ]
+      },
+      {
+        "subject": "Español",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 81,
+            "topic": "E.1",
+            "topic_name": "Tipos de texto — literarios",
+            "text": "Son textos que divierten y entretienen con historias reales o imaginarias.",
+            "options": {
+              "A": "Científicos",
+              "B": "Periodísticos",
+              "C": "Literarios",
+              "D": "Tecnológicos"
+            },
+            "answer": "C",
+            "explanation": "Los textos literarios (cuentos, novelas, poesía) tienen una finalidad estética y entretienen mediante historias reales o ficticias."
+          },
+          {
+            "id": 82,
+            "topic": "E.2",
+            "topic_name": "Signos de puntuación — función",
+            "text": "Señales que delimitan las frases y oraciones dentro de un párrafo o texto:",
+            "options": {
+              "A": "comillas",
+              "B": "interrogaciones",
+              "C": "signos de puntuación",
+              "D": "admiraciones"
+            },
+            "answer": "C",
+            "explanation": "Los signos de puntuación (coma, punto, punto y coma, dos puntos…) delimitan frases y oraciones dentro de un texto."
+          },
+          {
+            "id": 83,
+            "topic": "E.3",
+            "topic_name": "Nexos — función",
+            "text": "Relaciona los nexos con la descripción de su función.\n\n| Nexo | Función |\n|:-|:-|\n| 1. y | a) Da una idea de opción |\n| 2. u | b) Designa una cosa sin emplear su nombre |\n| 3. de | c) Une dos palabras o dos conjuntos de palabras |\n|  | d) Relaciona dos palabras que se complementan |",
+            "options": {
+              "A": "1a, 2d, 3b",
+              "B": "1b, 2c, 3a",
+              "C": "1c, 2a, 3d",
+              "D": "1d, 2b, 3c"
+            },
+            "answer": "C",
+            "explanation": "«y» une dos palabras (c). «u» da idea de opción (a, equivale a «o» ante palabra que empieza por «o»). «de» relaciona palabras que se complementan (d)."
+          },
+          {
+            "id": 84,
+            "topic": "E.4",
+            "topic_name": "Elementos del cuento",
+            "text": "Son los tres elementos principales del cuento.",
+            "options": {
+              "A": "Personajes primarios, secundarios y terciarios",
+              "B": "Planteamiento, clímax y desenlace",
+              "C": "Trama, secuencias y personajes",
+              "D": "Historia, acciones y personajes"
+            },
+            "answer": "B",
+            "explanation": "Los tres momentos estructurales clásicos del cuento son: planteamiento (inicio), clímax (nudo) y desenlace (final)."
+          },
+          {
+            "id": 85,
+            "topic": "E.5",
+            "topic_name": "Acentuación — sílaba tónica",
+            "text": "La sílaba sobre la cual recae el acento se conoce como:",
+            "options": {
+              "A": "diptongo",
+              "B": "tónica",
+              "C": "átona",
+              "D": "aguda"
+            },
+            "answer": "B",
+            "explanation": "La sílaba tónica es la que recibe el acento prosódico (mayor intensidad). Las átonas son las demás."
+          },
+          {
+            "id": 86,
+            "topic": "E.6",
+            "topic_name": "Análisis gramatical — adjetivo",
+            "text": "En la siguiente oración, ¿cuál es la función de la palabra en negritas?\n\nLos girasoles de los cuadros de Van Gogh son ligeramente **distintos** a los normales.",
+            "options": {
+              "A": "Sustantivo",
+              "B": "Verbo",
+              "C": "Adjetivo",
+              "D": "Adverbio"
+            },
+            "answer": "C",
+            "explanation": "«Distintos» califica al sustantivo «girasoles», por tanto es adjetivo calificativo."
+          },
+          {
+            "id": 87,
+            "topic": "E.7",
+            "topic_name": "Signos de interrogación — uso",
+            "text": "¿Cuál de las siguientes oraciones debe llevar signos de interrogación?",
+            "options": {
+              "A": "No entendí qué me dijiste",
+              "B": "Cuando le dije, me entendió",
+              "C": "Quienes saben escuchar, saben respetar",
+              "D": "Quienes trabajaron en la fábrica de Río Blanco"
+            },
+            "answer": "A",
+            "explanation": "La oración A contiene «qué» con tilde, indicio de pregunta indirecta. En sentido directo se enuncia como «¿Qué me dijiste?»."
+          },
+          {
+            "id": 88,
+            "topic": "E.8",
+            "topic_name": "Puntuación en párrafos",
+            "text": "Elige la opción que coloca los signos de puntuación de manera correcta en el siguiente párrafo:\n\n«Los aminoácidos alzaron la vista y observaron___ a lo lejos, algo que parecía ser un inmenso condado. Entonces echaron a nadar con todas sus fuerzas___ A medida que se aproximaban al condado, éste se veía más y más grande. Finalmente llegaron a la entrada. Ahí había un enorme letrero que decía___ ‘Bienvenido al condado más grande del Cuerpo Humano___ el Hígado’.» (Frenk, 2003, pág. 27)",
+            "options": {
+              "A": "; - : - . - ;",
+              "B": ", - . - , - ,",
+              "C": "; - : - : - ;",
+              "D": ", - . - : - ,"
+            },
+            "answer": "D",
+            "explanation": "Después de «observaron» va coma; al final de «fuerzas» va punto; antes de la cita textual van dos puntos; entre «Humano» y «el Hígado» (aposición) va coma."
+          },
+          {
+            "id": 89,
+            "topic": "E.9",
+            "topic_name": "Recursos discursivos",
+            "text": "¿Qué recurso discursivo predomina en el siguiente fragmento?\n\n«Y el hombre… Pobre… ¡pobre! Vuelve los ojos, como cuando por sobre el hombro nos llama una palmada; vuelve los ojos locos y todo lo vivido se empoza, como charco de culpa, en la mirada».\n\n— César Vallejo",
+            "options": {
+              "A": "Argumentativo",
+              "B": "Narrativo",
+              "C": "Comparativo",
+              "D": "Monólogo"
+            },
+            "answer": "C",
+            "explanation": "El fragmento utiliza comparaciones (símiles): «como cuando por sobre el hombro…», «como charco de culpa…», siendo el recurso predominante."
+          },
+          {
+            "id": 90,
+            "topic": "E.10",
+            "topic_name": "Investigación — pasos metodológicos",
+            "text": "Ordena los pasos para obtener información sobre la historia del cuento.\n\n1. Recopilar datos de los libros para saber las referencias\n2. Definir que la búsqueda debe ser específicamente sobre el cuento\n3. Consultar libros y tomar apuntes de la información relevante\n4. Plantear las siguientes preguntas: ¿Qué es el cuento?, ¿Cuáles son sus características?, ¿Qué cambios ha tenido el cuento a lo largo del tiempo?",
+            "options": {
+              "A": "1, 3, 2, 4",
+              "B": "2, 4, 3, 1",
+              "C": "3, 1, 4, 2",
+              "D": "4, 2, 1, 3"
+            },
+            "answer": "C",
+            "explanation": "Según la clave del simulacro, el orden es: consultar libros (3), recopilar datos (1), plantear preguntas (4), definir la búsqueda (2)."
+          },
+          {
+            "id": 91,
+            "topic": "E.11",
+            "topic_name": "Tiempos verbales — pretérito",
+            "text": "Completa la siguiente oración con verbos en pretérito:\n\nJuan _________ demasiado, no puso su despertador, _________ el vuelo hacia Nueva York.",
+            "options": {
+              "A": "durmió - compartió",
+              "B": "comió - quería",
+              "C": "durmió - perdió",
+              "D": "corrió - compró"
+            },
+            "answer": "C",
+            "explanation": "La oración expresa una consecuencia lógica: Juan durmió demasiado y por eso perdió el vuelo. Ambos verbos están en pretérito."
+          },
+          {
+            "id": 92,
+            "topic": "E.12",
+            "topic_name": "Tipos de texto — clasificación",
+            "text": "Relaciona el tipo de texto con sus ejemplos.\n\n| Texto | Ejemplos |\n|:-|:-|\n| 1. Legal | a) Formulario |\n| 2. Publicitario | b) Cartel |\n|  | c) Tarjeta |\n|  | d) Comercial |\n|  | e) Antología |\n|  | f) Título profesional |",
+            "options": {
+              "A": "1ab, 2ce",
+              "B": "1af, 2bd",
+              "C": "1bd, 2ce",
+              "D": "1de, 2af"
+            },
+            "answer": "B",
+            "explanation": "Textos legales: formulario (a) y título profesional (f). Textos publicitarios: cartel (b) y comercial (d)."
+          }
+        ]
+      },
+      {
+        "subject": "Historia Universal y de México",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 93,
+            "topic": "H.1",
+            "topic_name": "Culturas mesoamericanas — Mayas",
+            "text": "¿Cuáles son algunas de las aportaciones Mayas más importantes?",
+            "options": {
+              "A": "Brújula y papel",
+              "B": "Número cero y predicción de eclipses",
+              "C": "Compás y ábaco",
+              "D": "Imán e imprenta"
+            },
+            "answer": "C",
+            "explanation": "Nota: la respuesta marcada por la hoja del simulacro es C, pero históricamente las aportaciones mayas más reconocidas son el número cero, el calendario y la predicción de eclipses (opción B)."
+          },
+          {
+            "id": 94,
+            "topic": "H.2",
+            "topic_name": "Capitalismo — burguesía",
+            "text": "Sector social que durante el capitalismo acaparó el comercio, la industria y la riqueza.",
+            "options": {
+              "A": "Siervos",
+              "B": "Nobles",
+              "C": "Burguesía",
+              "D": "Proletariado"
+            },
+            "answer": "C",
+            "explanation": "La burguesía emerge como clase dominante durante el capitalismo industrial, controlando los medios de producción y el comercio."
+          },
+          {
+            "id": 95,
+            "topic": "H.3",
+            "topic_name": "Guerra Fría",
+            "text": "Fenómeno de la posguerra que se caracterizó por el armamentismo, las amenazas y ataques verbales entre EU y la URSS, sin llegar a la violencia:",
+            "options": {
+              "A": "Guerra Fría",
+              "B": "Bloques Económicos",
+              "C": "Primavera de Praga",
+              "D": "Pacto de Varsovia"
+            },
+            "answer": "A",
+            "explanation": "La Guerra Fría fue el conflicto político, militar e ideológico entre Estados Unidos y la URSS (1947-1991) sin enfrentamiento armado directo."
+          },
+          {
+            "id": 96,
+            "topic": "H.4",
+            "topic_name": "Nueva España — minería",
+            "text": "Actividad económica que generó mayor riqueza en la Nueva España durante el siglo XVIII.",
+            "options": {
+              "A": "Ganadería",
+              "B": "Agricultura",
+              "C": "Comercio",
+              "D": "Minería"
+            },
+            "answer": "D",
+            "explanation": "La minería (principalmente plata, en Zacatecas, Guanajuato, Taxco) fue la actividad económica que generó mayor riqueza para la Corona española durante el siglo XVIII."
+          },
+          {
+            "id": 97,
+            "topic": "H.5",
+            "topic_name": "Horizontes culturales — Mesoamérica",
+            "text": "Relaciona los horizontes culturales con su característica.\n\n| Horizonte | Característica |\n|:-|:-|\n| 1. Preclásico | a) Aparece el estado teocrático |\n| 2. Clásico | b) Se generaliza el sacrificio humano |\n| 3. Postclásico | c) Se inventa un sistema de escritura |",
+            "options": {
+              "A": "1b, 2c, 3a",
+              "B": "1c, 2a, 3b",
+              "C": "1a, 2b, 3c",
+              "D": "1c, 2b, 3a"
+            },
+            "answer": "B",
+            "explanation": "Preclásico: se inventa la escritura (c, olmecas). Clásico: aparece el estado teocrático (a, mayas/teotihuacanos). Postclásico: se generaliza el sacrificio humano (b, mexicas)."
+          },
+          {
+            "id": 98,
+            "topic": "H.6",
+            "topic_name": "Constitución de 1857",
+            "text": "El 5 de febrero de 1857 se promulgó la ____ que establecía una República ____ y ____ compuesta por 24 estados.",
+            "options": {
+              "A": "ley - central - demagógica",
+              "B": "ley - absolutista - democrática",
+              "C": "constitución - federal - democrática",
+              "D": "constitución - demagógica - federal"
+            },
+            "answer": "B",
+            "explanation": "Nota: la hoja marca la opción B, aunque históricamente la Constitución del 5 de febrero de 1857 era federal y democrática (opción C). Verificar con la fuente original."
+          },
+          {
+            "id": 99,
+            "topic": "H.7",
+            "topic_name": "Revolución Mexicana — Planes políticos",
+            "text": "Relaciona cada Plan con su objetivo.\n\n| Plan | Objetivo |\n|:-|:-|\n| 1. De Ayala | a) Desconocer al presidente Venustiano Carranza |\n| 2. De Guadalupe | b) Devolver las tierras a los campesinos |\n| 3. De Agua Prieta | c) Desconocer a Victoriano Huerta |",
+            "options": {
+              "A": "1a, 2b, 3c",
+              "B": "1b, 2c, 3a",
+              "C": "1c, 2a, 3b",
+              "D": "1c, 2b, 3a"
+            },
+            "answer": "B",
+            "explanation": "Plan de Ayala (1911, Zapata): devolver tierras a campesinos (b). Plan de Guadalupe (1913, Carranza): desconocer a Huerta (c). Plan de Agua Prieta (1920): desconocer a Carranza (a)."
+          },
+          {
+            "id": 100,
+            "topic": "H.8",
+            "topic_name": "Sufragio femenino en México",
+            "text": "¿En qué año logró la mujer el derecho al voto en México?",
+            "options": {
+              "A": "1953",
+              "B": "1951",
+              "C": "1960",
+              "D": "1968"
+            },
+            "answer": "A",
+            "explanation": "El derecho al voto pleno de la mujer en México se obtuvo en 1953 con la reforma al artículo 34 constitucional."
+          },
+          {
+            "id": 101,
+            "topic": "H.9",
+            "topic_name": "Cronología — culturas mesoamericanas",
+            "text": "Ordena de manera secuencial el surgimiento de las siguientes culturas.\n\n1. Tolteca\n2. Mexica\n3. Olmeca\n4. Teotihuacana",
+            "options": {
+              "A": "1, 2, 3, 4",
+              "B": "3, 4, 1, 2",
+              "C": "2, 3, 4, 1",
+              "D": "4, 1, 2, 3"
+            },
+            "answer": "D",
+            "explanation": "Nota: la hoja marca D, pero el orden cronológico real de surgimiento es: Olmeca (Preclásico, ~1500 a.C.), Teotihuacana (Clásico, ~150 a.C.), Tolteca (Postclásico, ~900 d.C.), Mexica (Postclásico tardío, ~1300 d.C.) → opción B (3, 4, 1, 2)."
+          },
+          {
+            "id": 102,
+            "topic": "H.10",
+            "topic_name": "Leyes de Reforma",
+            "text": "Relaciona las leyes de Reforma con su postulado.\n\n| Ley | Postulado |\n|:-|:-|\n| 1. Lerdo | a) Suprimir los tribunales especiales |\n| 2. Juárez | b) Libertad de practicar y elegir el culto que desee |\n| 3. Libertad de culto | c) Otorgar al presidente la facultad de cerrar el Congreso y suprimir la Suprema Corte |\n|  | d) Desamortizar los bienes eclesiásticos |",
+            "options": {
+              "A": "1c, 2b, 3d",
+              "B": "1b, 2c, 3a",
+              "C": "1a, 2d, 3c",
+              "D": "1d, 2a, 3b"
+            },
+            "answer": "D",
+            "explanation": "Ley Lerdo (1856): desamortización de bienes eclesiásticos (d). Ley Juárez (1855): supresión de tribunales especiales (a). Ley de Libertad de Culto (1860): libertad de practicar el culto que se elija (b)."
+          },
+          {
+            "id": 103,
+            "topic": "H.11",
+            "topic_name": "Revolución Mexicana — caudillos",
+            "text": "Selecciona los caudillos que participaron en la Revolución Mexicana.\n\n1. Francisco Villa\n2. Miguel Hidalgo\n3. Emiliano Zapata\n4. Vicente Guerrero\n5. Venustiano Carranza",
+            "options": {
+              "A": "1, 2, 4",
+              "B": "1, 3, 5",
+              "C": "2, 3, 4",
+              "D": "2, 4, 5"
+            },
+            "answer": "C",
+            "explanation": "Nota: la hoja marca C, pero los caudillos de la Revolución Mexicana fueron Villa (1), Zapata (3) y Carranza (5) → opción B. Hidalgo y Guerrero pertenecen a la Independencia de México (1810)."
+          },
+          {
+            "id": 104,
+            "topic": "H.12",
+            "topic_name": "Industrialización mexicana",
+            "text": "El proceso de industrialización en México se vio favorecido por la:",
+            "options": {
+              "A": "Conquista",
+              "B": "Independencia",
+              "C": "Primera Guerra Mundial",
+              "D": "Segunda Guerra Mundial"
+            },
+            "answer": "D",
+            "explanation": "Durante la Segunda Guerra Mundial (1939-1945), México sustituyó importaciones y desarrolló su industria nacional al disminuir las exportaciones europeas y estadounidenses al país."
+          }
+        ]
+      },
+      {
+        "subject": "Geografía",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 105,
+            "topic": "G.1",
+            "topic_name": "Categorías del espacio geográfico",
+            "text": "Relaciona las categorías de análisis del espacio geográfico con su definición.\n\n| Categoría | Definición |\n|:-|:-|\n| 1. Lugar | a) Espacio homogéneo con identidad y características especiales y únicas |\n| 2. Medio | b) Imagen que distingue e identifica a un espacio geográfico |\n| 3. Paisaje | c) Ámbito local de interacción del ser humano con lo que le rodea |\n| 4. Región | d) Resultado de la relación entre la naturaleza y la sociedad |\n|  | e) Espacio delimitado en términos políticos y administrativos por los grupos humanos |",
+            "options": {
+              "A": "1b, 2c, 3a, 4e",
+              "B": "1a, 2e, 3d, 4b",
+              "C": "1e, 2a, 3c, 4d",
+              "D": "1c, 2d, 3b, 4a"
+            },
+            "answer": "D",
+            "explanation": "Lugar = ámbito local de interacción (c). Medio = relación naturaleza-sociedad (d). Paisaje = imagen identificable (b). Región = espacio homogéneo con identidad (a)."
+          },
+          {
+            "id": 106,
+            "topic": "G.2",
+            "topic_name": "Coordenadas geográficas — latitud",
+            "text": "La latitud calcula la ____ entre cualquier punto de la superficie terrestre con respecto al ____ y se mide en ____, de 0 a 90.",
+            "options": {
+              "A": "longitud - meridiano 0° - millas",
+              "B": "distancia - ecuador - grados",
+              "C": "velocidad - polo - kilómetros",
+              "D": "altitud - mar - metros"
+            },
+            "answer": "A",
+            "explanation": "Nota: la hoja marca A, pero geográficamente la latitud es la distancia angular medida en grados desde el ecuador, de 0° (ecuador) a 90° (polos) → opción B."
+          },
+          {
+            "id": 107,
+            "topic": "G.3",
+            "topic_name": "Líneas imaginarias — Ecuador",
+            "text": "Línea imaginaria de la Tierra que la divide en hemisferio norte y hemisferio sur.",
+            "options": {
+              "A": "Ecuador",
+              "B": "Eje",
+              "C": "Trópico de Cáncer",
+              "D": "Trópico de Capricornio"
+            },
+            "answer": "A",
+            "explanation": "El Ecuador es la línea de 0° de latitud que divide la Tierra en los hemisferios norte y sur."
+          },
+          {
+            "id": 108,
+            "topic": "G.4",
+            "topic_name": "Hidrografía — América",
+            "text": "Es el río más caudaloso de América.",
+            "options": {
+              "A": "Misisipi",
+              "B": "Amazonas",
+              "C": "Colorado",
+              "D": "Panamá"
+            },
+            "answer": "B",
+            "explanation": "El río Amazonas es el más caudaloso del mundo y de América, con un caudal promedio de ~209,000 m³/s."
+          },
+          {
+            "id": 109,
+            "topic": "G.5",
+            "topic_name": "Ciclo hidrológico — infiltración",
+            "text": "El ciclo hidrológico tiene como proceso la evaporación, condensación, precipitación, el escurrimiento y la…",
+            "options": {
+              "A": "filtración",
+              "B": "erosión",
+              "C": "salinidad",
+              "D": "transpiración"
+            },
+            "answer": "A",
+            "explanation": "La infiltración (o filtración del agua a través del suelo) cierra el ciclo hidrológico junto con la evaporación, condensación, precipitación y escurrimiento."
+          },
+          {
+            "id": 110,
+            "topic": "G.6",
+            "topic_name": "Océanos — extensión",
+            "text": "Ordena los océanos de mayor a menor extensión.\n\n1. Ártico\n2. Índico\n3. Pacífico\n4. Atlántico",
+            "options": {
+              "A": "3, 2, 1, 4",
+              "B": "3, 4, 2, 1",
+              "C": "4, 3, 2, 1",
+              "D": "4, 3, 1, 2"
+            },
+            "answer": "B",
+            "explanation": "Pacífico (~165 millones km²) > Atlántico (~106) > Índico (~70) > Ártico (~14) → orden: 3, 4, 2, 1."
+          },
+          {
+            "id": 111,
+            "topic": "G.7",
+            "topic_name": "Sistema de Posicionamiento Global (GPS)",
+            "text": "Sistema que gira alrededor de la Tierra para determinar las coordenadas geográficas de cualquier punto de su superficie.",
+            "options": {
+              "A": "World Position System",
+              "B": "Global Position System",
+              "C": "Geographical Position System",
+              "D": "International Position System"
+            },
+            "answer": "B",
+            "explanation": "GPS = Global Positioning System (Sistema de Posicionamiento Global), red de satélites que permite determinar coordenadas en cualquier punto del planeta."
+          },
+          {
+            "id": 112,
+            "topic": "G.8",
+            "topic_name": "Proyecciones cartográficas",
+            "image": null,
+            "image_pending": true,
+            "text": "Relaciona las proyecciones cartográficas con su imagen.\n\n| Proyección |\n|:-|\n| 1. Cónica |\n| 2. Cilíndrica |\n| 3. Azimutal |\n\n[Figura: cuatro imágenes A–D de proyecciones cartográficas distintas.]",
+            "options": {
+              "A": "1a, 2d, 3c",
+              "B": "1b, 2a, 3d",
+              "C": "1c, 2b, 3a",
+              "D": "1b, 2a, 3c"
+            },
+            "answer": "B",
+            "explanation": "Proyección cónica: cono sobre el globo. Cilíndrica: cilindro envolvente. Azimutal: plano tangente en un punto. Según la clave del simulacro, la combinación correcta es 1b, 2a, 3d."
+          },
+          {
+            "id": 113,
+            "topic": "G.9",
+            "topic_name": "Países megadiversos",
+            "text": "Selecciona 3 países considerados megadiversos.\n\n1. Rusia\n2. Argentina\n3. Brasil\n4. Canadá\n5. Indonesia\n6. Japón\n7. Madagascar",
+            "options": {
+              "A": "1, 4, 6",
+              "B": "2, 3, 5",
+              "C": "3, 5, 7",
+              "D": "3, 4, 5"
+            },
+            "answer": "A",
+            "explanation": "Nota: la hoja marca A, pero los países megadiversos del listado son Brasil (3), Indonesia (5) y Madagascar (7) → opción C. Brasil e Indonesia son dos de los 17 países megadiversos reconocidos."
+          },
+          {
+            "id": 114,
+            "topic": "G.10",
+            "topic_name": "Tectónica de placas — México",
+            "text": "Estados de la República Mexicana afectados por la zona de desplazamiento horizontal entre la placa del Pacífico y la placa Norteamericana.",
+            "options": {
+              "A": "Yucatán y Quintana Roo",
+              "B": "Veracruz y Oaxaca",
+              "C": "Estado de México y Ciudad de México",
+              "D": "Baja California y Baja California Sur"
+            },
+            "answer": "C",
+            "explanation": "Nota: la hoja marca C, pero la falla de San Andrés (desplazamiento horizontal entre placas del Pacífico y Norteamericana) afecta a Baja California y Baja California Sur → opción D."
+          },
+          {
+            "id": 115,
+            "topic": "G.11",
+            "topic_name": "Actividades económicas primarias",
+            "text": "Relaciona la actividad económica con su definición.\n\n| Actividad | Definición |\n|:-|:-|\n| 1. Agricultura | a) Consiste en obtener madera y productos derivados como carbón, celulosa y caucho |\n| 2. Ganadería | b) Se desarrolla a partir de la crianza y el manejo de especies animales domesticadas |\n| 3. Forestal | c) Es la extracción de peces y otras especies acuáticas de los cuerpos de agua oceánica y continental |\n|  | d) Actividades para obtener alimentos y materias primas del cultivo de vegetales, legumbres y cereales |",
+            "options": {
+              "A": "1a, 2c, 3d",
+              "B": "1b, 2d, 3a",
+              "C": "1d, 2b, 3a",
+              "D": "1c, 2d, 3b"
+            },
+            "answer": "B",
+            "explanation": "Nota: la hoja marca B, pero la correspondencia correcta es: Agricultura = cultivo de vegetales (d), Ganadería = crianza de animales (b), Forestal = obtención de madera (a) → opción C."
+          },
+          {
+            "id": 116,
+            "topic": "G.12",
+            "topic_name": "Geografía política de México",
+            "text": "Estados de la República Mexicana que hacen frontera con Guatemala.",
+            "options": {
+              "A": "Chiapas, Tabasco, Campeche",
+              "B": "Yucatán, Quintana Roo, Tabasco",
+              "C": "Chiapas, Yucatán, Tabasco",
+              "D": "Tabasco, Veracruz, Tamaulipas"
+            },
+            "answer": "C",
+            "explanation": "Nota: la hoja marca C, pero los estados que limitan con Guatemala son Chiapas, Tabasco y Campeche → opción A. Yucatán no comparte frontera con Guatemala."
+          }
+        ]
+      },
+      {
+        "subject": "Formación cívica y ética",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 117,
+            "topic": "FCE.1",
+            "topic_name": "Himno Nacional — autores",
+            "text": "Relaciona los personajes con su aporte al Himno Nacional Mexicano.\n\n| Personaje | Aporte |\n|:-|:-|\n| 1. Jaime Nunó | a) Creó la letra |\n| 2. Antonio López de Santa Anna | b) Musicalizó la letra |\n| 3. Francisco González Bocanegra | c) Ordenó se entonara en la batalla de Puebla |\n|  | d) Convocó a su elaboración |",
+            "options": {
+              "A": "1b, 2d, 3a",
+              "B": "1d, 2a, 3b",
+              "C": "1c, 2b, 3a",
+              "D": "1c, 2a, 3d"
+            },
+            "answer": "A",
+            "explanation": "Jaime Nunó musicalizó la letra (b); Santa Anna convocó al concurso para su elaboración (d); Francisco González Bocanegra creó la letra (a)."
+          },
+          {
+            "id": 118,
+            "topic": "FCE.2",
+            "topic_name": "Constitución — garantías individuales",
+            "text": "Los artículos 1° al 9° de la Constitución Mexicana hacen referencia a:",
+            "options": {
+              "A": "Poder ejecutivo",
+              "B": "Estados de la federación",
+              "C": "Inviolabilidad de la constitución",
+              "D": "Garantías individuales"
+            },
+            "answer": "D",
+            "explanation": "Los primeros artículos de la Constitución consagran los derechos fundamentales o garantías individuales de las personas."
+          },
+          {
+            "id": 119,
+            "topic": "FCE.3",
+            "topic_name": "Tipos de violencia",
+            "text": "Relaciona los tipos de violencia con su característica.\n\n| Violencia | Característica |\n|:-|:-|\n| 1. Bullying | a) Sometimiento forzoso de personas con fines de prostitución |\n| 2. Acoso | b) Persecución que se genera en la escuela en contra de algún compañero o compañera |\n| 3. Abuso | c) Amenaza constante para provocar miedo y subordinación |\n| 4. Explotación sexual | d) Hacer uso de los bienes de otra persona o de la misma persona |",
+            "options": {
+              "A": "1c, 2b, 3a, 4d",
+              "B": "1b, 2c, 3d, 4a",
+              "C": "1a, 2d, 3b, 4c",
+              "D": "1d, 2b, 3c, 4a"
+            },
+            "answer": "B",
+            "explanation": "Bullying: persecución escolar (b). Acoso: amenaza constante (c). Abuso: uso indebido de bienes/persona (d). Explotación sexual: sometimiento forzoso para prostitución (a)."
+          },
+          {
+            "id": 120,
+            "topic": "FCE.4",
+            "topic_name": "Artículo 40 constitucional",
+            "text": "Selecciona las características políticas básicas que establece el Artículo 40 constitucional, de acuerdo con el tipo de gobierno en México.\n\n1. Representativa\n2. Democrática\n3. Sexenal\n4. Federal\n5. Popular\n6. Laica",
+            "options": {
+              "A": "1, 2, 3, 5",
+              "B": "1, 3, 4, 5",
+              "C": "1, 3, 5, 6",
+              "D": "1, 2, 4, 6"
+            },
+            "answer": "B",
+            "explanation": "Nota: la hoja marca B, pero según el Artículo 40 reformado, la república mexicana se constituye como representativa, democrática, laica y federal → opción D (1, 2, 4, 6)."
+          },
+          {
+            "id": 121,
+            "topic": "FCE.5",
+            "topic_name": "Empatía",
+            "text": "Capacidad mental y afectiva que tiene un sujeto para identificarse con el estado de ánimo y sentimientos del otro.",
+            "options": {
+              "A": "Empatía",
+              "B": "Solidaridad",
+              "C": "Amistad",
+              "D": "Confianza"
+            },
+            "answer": "A",
+            "explanation": "La empatía es la capacidad de ponerse en el lugar del otro, comprendiendo sus emociones y estado de ánimo."
+          },
+          {
+            "id": 122,
+            "topic": "FCE.6",
+            "topic_name": "Artículos constitucionales — derechos",
+            "text": "Relaciona los artículos con los derechos contenidos en la Carta Magna.\n\n| Artículo | Derecho |\n|:-|:-|\n| 1. Art. 1 | a) Todo ciudadano tiene derecho a recibir servicios de salud de calidad |\n| 2. Art. 3 | b) Todo individuo tiene derecho a recibir educación |\n| 3. Art. 123 | c) Toda persona tiene derecho al trabajo digno y socialmente útil |\n|  | d) Toda discriminación por origen étnico, nacionalidad, género y edad queda prohibida |",
+            "options": {
+              "A": "1a, 2b, 3c",
+              "B": "1b, 2a, 3d",
+              "C": "1d, 2a, 3c",
+              "D": "1d, 2b, 3c"
+            },
+            "answer": "D",
+            "explanation": "Art. 1: prohíbe la discriminación (d). Art. 3: derecho a la educación (b). Art. 123: derecho al trabajo digno (c)."
+          },
+          {
+            "id": 123,
+            "topic": "FCE.7",
+            "topic_name": "Patrimonio mundial — Chichén Itzá",
+            "text": "Es considerada una de las siete nuevas maravillas del mundo moderno.",
+            "options": {
+              "A": "Palenque",
+              "B": "Chichén-Itzá",
+              "C": "Teotihuacán",
+              "D": "Monte Albán"
+            },
+            "answer": "B",
+            "explanation": "Chichén Itzá fue declarada una de las Siete Nuevas Maravillas del Mundo Moderno en 2007."
+          },
+          {
+            "id": 124,
+            "topic": "FCE.8",
+            "topic_name": "Valores estéticos",
+            "text": "Selecciona los valores estéticos.\n\n1. Democracia\n2. Sensibilidad\n3. Creatividad\n4. Altruismo\n5. Belleza\n6. Arte",
+            "options": {
+              "A": "1, 2, 3, 4",
+              "B": "2, 3, 4, 5",
+              "C": "2, 3, 5, 6",
+              "D": "3, 4, 5, 6"
+            },
+            "answer": "C",
+            "explanation": "Los valores estéticos se relacionan con la apreciación de la belleza y el arte: sensibilidad (2), creatividad (3), belleza (5) y arte (6). Democracia y altruismo son valores cívicos y morales, no estéticos."
+          },
+          {
+            "id": 125,
+            "topic": "FCE.9",
+            "topic_name": "Tipos de normas — jurídicas",
+            "text": "¿Qué tipo de norma es el uso del cinturón de seguridad?",
+            "options": {
+              "A": "Jurídica",
+              "B": "Social",
+              "C": "Escolar",
+              "D": "Familiar"
+            },
+            "answer": "A",
+            "explanation": "El uso del cinturón de seguridad está establecido por leyes de tránsito; su incumplimiento conlleva sanción legal, por lo que es una norma jurídica."
+          },
+          {
+            "id": 126,
+            "topic": "FCE.10",
+            "topic_name": "Autonomía y libertad",
+            "text": "Es la capacidad de actuar de manera autónoma, aún ante las presiones de otras personas.",
+            "options": {
+              "A": "Democracia",
+              "B": "Libertad",
+              "C": "Independencia",
+              "D": "Responsabilidad"
+            },
+            "answer": "B",
+            "explanation": "La libertad es la facultad de decidir y actuar de manera autónoma, sin coerción externa."
+          },
+          {
+            "id": 127,
+            "topic": "FCE.11",
+            "topic_name": "Jornada electoral",
+            "text": "Ordena las etapas de una jornada electoral.\n\n1. Contar los votos y llenar las actas correspondientes\n2. Identificar a los electores y entregarles las boletas para votar\n3. Llevar las actas al comité para cotejar los resultados\n4. Votar de manera libre y secreta",
+            "options": {
+              "A": "1, 3, 2, 4",
+              "B": "2, 1, 3, 4",
+              "C": "2, 4, 1, 3",
+              "D": "1, 2, 4, 3"
+            },
+            "answer": "A",
+            "explanation": "Nota: la hoja marca A, pero el orden lógico de una jornada electoral es: identificar y entregar boletas (2) → votar libremente (4) → contar votos y llenar actas (1) → llevar las actas al comité (3) → opción C."
+          },
+          {
+            "id": 128,
+            "topic": "FCE.12",
+            "topic_name": "Derechos de niñas, niños y adolescentes",
+            "text": "Para proteger a uno de los sectores más vulnerables de nuestra sociedad, en el año 2000 se promulgó una ley en México. ¿A quiénes protege esa Ley?",
+            "options": {
+              "A": "Ambiente",
+              "B": "Animales",
+              "C": "Adultos mayores",
+              "D": "Niñas, niños y adolescentes"
+            },
+            "answer": "D",
+            "explanation": "En 2000 se promulgó en México la Ley para la Protección de los Derechos de Niñas, Niños y Adolescentes."
+          }
+        ]
+      }
+    ]
+  }
+}
