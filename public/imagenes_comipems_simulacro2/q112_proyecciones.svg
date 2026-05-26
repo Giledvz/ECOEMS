@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 160" width="460" height="160" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="460" height="160" fill="#ffffff"/>
+
+  <!-- Cada panel ~110 px de ancho -->
+
+  <!-- a) Cilíndrica: mapa rectangular con paralelos rectos -->
+  <g stroke="#1a1a1a" stroke-width="1.4" fill="none">
+    <rect x="20" y="40" width="80" height="60"/>
+    <!-- Meridianos verticales -->
+    <line x1="40" y1="40" x2="40" y2="100"/>
+    <line x1="60" y1="40" x2="60" y2="100"/>
+    <line x1="80" y1="40" x2="80" y2="100"/>
+    <!-- Paralelos horizontales -->
+    <line x1="20" y1="55" x2="100" y2="55"/>
+    <line x1="20" y1="70" x2="100" y2="70" stroke-width="1.8"/>
+    <line x1="20" y1="85" x2="100" y2="85"/>
+  </g>
+  <text x="60" y="125" font-size="13" text-anchor="middle">a</text>
+
+  <!-- b) Cónica: arcos concéntricos + radios rectos divergentes -->
+  <g stroke="#1a1a1a" stroke-width="1.4" fill="none">
+    <!-- Centro ficticio arriba en (170, -10), radios y arcos -->
+    <path d="M 130,100 A 60,60 0 0 1 210,100"/>
+    <path d="M 120,90 A 80,80 0 0 1 220,90"/>
+    <path d="M 113,80 A 100,100 0 0 1 227,80"/>
+    <!-- Radios (meridianos) -->
+    <line x1="170" y1="40" x2="120" y2="90"/>
+    <line x1="170" y1="40" x2="170" y2="100"/>
+    <line x1="170" y1="40" x2="220" y2="90"/>
+  </g>
+  <text x="170" y="125" font-size="13" text-anchor="middle">b</text>
+
+  <!-- c) Azimutal (polar): círculo con radios y círculos concéntricos -->
+  <g stroke="#1a1a1a" stroke-width="1.4" fill="none">
+    <circle cx="290" cy="70" r="32"/>
+    <circle cx="290" cy="70" r="20"/>
+    <circle cx="290" cy="70" r="8"/>
+    <!-- Radios -->
+    <line x1="290" y1="38" x2="290" y2="102"/>
+    <line x1="258" y1="70" x2="322" y2="70"/>
+    <line x1="267" y1="47" x2="313" y2="93"/>
+    <line x1="267" y1="93" x2="313" y2="47"/>
+  </g>
+  <text x="290" y="125" font-size="13" text-anchor="middle">c</text>
+
+  <!-- d) Pseudocilíndrica (tipo Mollweide / elipse) -->
+  <g stroke="#1a1a1a" stroke-width="1.4" fill="none">
+    <ellipse cx="400" cy="70" rx="40" ry="30"/>
+    <!-- Meridianos curvos -->
+    <path d="M 400,40 Q 384,70 400,100"/>
+    <path d="M 400,40 Q 416,70 400,100"/>
+    <!-- Paralelos rectos -->
+    <line x1="362" y1="55" x2="438" y2="55"/>
+    <line x1="360" y1="70" x2="440" y2="70" stroke-width="1.7"/>
+    <line x1="362" y1="85" x2="438" y2="85"/>
+  </g>
+  <text x="400" y="125" font-size="13" text-anchor="middle">d</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="240" height="200" fill="#ffffff"/>
+  <!-- Cuadrado 6 cm × 6 cm (escala: 1 cm = 24 px). Cuadrado de 144x144 centrado-ish. -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <rect x="48" y="28" width="144" height="144"/>
+  </g>
+  <!-- Círculo grande sombreado: radio 2 cm = 48 px, centro a ~(96, 100) -->
+  <circle cx="96" cy="100" r="48" fill="#1a1a1a"/>
+  <!-- Círculo pequeño sombreado: radio 1 cm = 24 px, centro en (168, 148) (cerca de esquina inf-der pero dentro) -->
+  <circle cx="168" cy="148" r="24" fill="#1a1a1a"/>
+  <!-- Etiqueta de lado -->
+  <text x="120" y="194" font-size="13" text-anchor="middle">6 cm</text>
+</svg>

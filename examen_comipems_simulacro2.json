@@ -45,9 +45,8 @@
             "id": 2,
             "topic": "HM.2",
             "topic_name": "Series numéricas — figuras",
-            "image": null,
-            "image_pending": true,
-            "text": "¿Qué número falta en el espacio vacío?\n\n[Figura: dos semicírculos con números — primero (5, 6) arriba con (7, 2, 9, 3) debajo; segundo (8, ?) arriba con (4) debajo.]",
+            "image": "/imagenes_comipems_simulacro2/q2_semicirculos.svg",
+            "text": "¿Qué número falta en el espacio vacío?",
             "options": {
               "A": "12",
               "B": "18",
@@ -61,9 +60,8 @@
             "id": 3,
             "topic": "HM.3",
             "topic_name": "Patrones geométricos — triángulos rectángulos",
-            "image": null,
-            "image_pending": true,
-            "text": "¿Cuáles serán las medidas del cuarto triángulo?\n\n[Figura: tres triángulos rectángulos con medidas 3-4-5, 6-8-10, 8-15-17.]",
+            "image": "/imagenes_comipems_simulacro2/q3_triangulos_pitagoricos.svg",
+            "text": "¿Cuáles serán las medidas del cuarto triángulo?",
             "options": {
               "A": "10, 24, 25",
               "B": "10, 24, 26",
@@ -105,9 +103,8 @@
             "id": 6,
             "topic": "HM.6",
             "topic_name": "Conteo de figuras geométricas",
-            "image": null,
-            "image_pending": true,
-            "text": "El siguiente triángulo tiene 3 niveles, en uno de nueve niveles, ¿cuántos triángulos tendrá el nivel central?\n\n[Figura: triángulo subdividido en triángulos pequeños.]",
+            "image": "/imagenes_comipems_simulacro2/q6_triangulo_niveles.svg",
+            "text": "El siguiente triángulo tiene 3 niveles, en uno de nueve niveles, ¿cuántos triángulos tendrá el nivel central?",
             "options": {
               "A": "1",
               "B": "5",
@@ -135,9 +132,8 @@
             "id": 8,
             "topic": "HM.8",
             "topic_name": "Patrones — mosaicos",
-            "image": null,
-            "image_pending": true,
-            "text": "¿Cuántos huecos se forman con 21 mosaicos negros?\n\n[Figura: tres patrones de mosaicos en forma triangular creciente.]",
+            "image": "/imagenes_comipems_simulacro2/q8_mosaicos.svg",
+            "text": "¿Cuántos huecos se forman con 21 mosaicos negros?",
             "options": {
               "A": "11",
               "B": "13",
@@ -165,9 +161,8 @@
             "id": 10,
             "topic": "HM.10",
             "topic_name": "Razonamiento espacial — dobleces y corte",
-            "image": null,
-            "image_pending": true,
-            "text": "Una pieza rectangular de papel se dobla dos veces y se corta a la mitad un círculo como se muestra en la figura. ¿Qué corte se obtiene?\n\n[Figura: papel doblado con corte de medio círculo y opciones A–D con distintas combinaciones de círculos/semicírculos.]",
+            "image": "/imagenes_comipems_simulacro2/q10_papel_doblez.svg",
+            "text": "Una pieza rectangular de papel se dobla dos veces y se corta a la mitad un círculo como se muestra en la figura. ¿Qué corte se obtiene?",
             "options": {
               "A": "Cuatro semicírculos en fila",
               "B": "Dos círculos pequeños",
@@ -181,9 +176,8 @@
             "id": 11,
             "topic": "HM.11",
             "topic_name": "Geometría — áreas",
-            "image": null,
-            "image_pending": true,
-            "text": "En la siguiente figura, el área del cuadrado grande es $36\\ \\text{cm}^2$. ¿Cuánto mide el área sombreada?\n\n[Figura: cuadrado de 4 cm de lado con un círculo grande y otro pequeño negros en su interior.]",
+            "image": "/imagenes_comipems_simulacro2/q11_cuadrado_circulos.svg",
+            "text": "En la siguiente figura, el área del cuadrado grande es $36\\ \\text{cm}^2$. ¿Cuánto mide el área sombreada?",
             "options": {
               "A": "$15.70\\ \\text{cm}^2$",
               "B": "$29\\ \\text{cm}^2$",
@@ -210,41 +204,57 @@
           {
             "id": 13,
             "topic": "HM.13",
-            "topic_name": "Sucesiones — banco de preguntas",
-            "_extra_from_bank": true,
-            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad matemática)",
-            "options": {"A": "", "B": "", "C": "", "D": ""},
-            "answer": "",
+            "topic_name": "banco_preguntas/bachillerato_2021 — id 1",
+            "text": "¿Cuáles son los números que continúan la sucesión?\n\n-0.9, 0.08, -0.007, 0.0006, -0.00005, ...",
+            "options": {
+              "A": "0.00004, -0.000003",
+              "B": "0.000004, -0.000003",
+              "C": "0.0000004, -0.00000003",
+              "D": "0.000004, -0.0000003"
+            },
+            "answer": "D",
             "explanation": ""
           },
           {
             "id": 14,
             "topic": "HM.14",
-            "topic_name": "Razonamiento — banco de preguntas",
-            "_extra_from_bank": true,
-            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad matemática)",
-            "options": {"A": "", "B": "", "C": "", "D": ""},
-            "answer": "",
-            "explanation": ""
+            "topic_name": "banco_preguntas/bachillerato_2021 — id 13",
+            "text": "El número que falta es\n\n|  9 | 13 |  4 |\n|---:|---:|---:|\n| 20 | 28 |  8 |\n| 35 |  ? | 16 |",
+            "options": {
+              "A": "51",
+              "B": "54",
+              "C": "57",
+              "D": "60"
+            },
+            "answer": "A",
+            "explanation": "Patrón: en cada fila, la columna del medio es la suma de las otras dos. 9+4=13, 20+8=28, por tanto 35+16=51."
           },
           {
             "id": 15,
             "topic": "HM.15",
-            "topic_name": "Series espaciales — banco de preguntas",
-            "_extra_from_bank": true,
-            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad matemática)",
-            "options": {"A": "", "B": "", "C": "", "D": ""},
-            "answer": "",
+            "topic_name": "banco_preguntas/bachillerato_2021 — id 14",
+            "text": "Un jardinero tiene que podar un campo de fútbol. Si lo hace a razón de 2/3 por día, ¿en cuántos días terminará?",
+            "options": {
+              "A": "2",
+              "B": "2.5",
+              "C": "3",
+              "D": "1.5"
+            },
+            "answer": "D",
             "explanation": ""
           },
           {
             "id": 16,
             "topic": "HM.16",
-            "topic_name": "Aritmética aplicada — banco de preguntas",
-            "_extra_from_bank": true,
-            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad matemática)",
-            "options": {"A": "", "B": "", "C": "", "D": ""},
-            "answer": "",
+            "topic_name": "banco_preguntas/bachillerato_2021 — id 16",
+            "text": "El 40% de una población tiene coche, y 2/5 de ésta lo utiliza diario. ¿Qué porcentaje de la población no lo usa diario?",
+            "options": {
+              "A": "24%",
+              "B": "8%",
+              "C": "16%",
+              "D": "32%"
+            },
+            "answer": "A",
             "explanation": ""
           }
         ]
@@ -285,9 +295,8 @@
             "id": 19,
             "topic": "M.3",
             "topic_name": "Geometría — ángulos en triángulo",
-            "image": null,
-            "image_pending": true,
-            "text": "Si el ángulo C mide $35°$ y el ángulo B es recto, entonces el ángulo A medirá:\n\n[Figura: triángulo rectángulo con vértices A (arriba-izq), B (abajo-izq, ángulo recto), C (abajo-der).]",
+            "image": "/imagenes_comipems_simulacro2/q19_triangulo_abc.svg",
+            "text": "Si el ángulo C mide $35°$ y el ángulo B es recto, entonces el ángulo A medirá:",
             "options": {
               "A": "$25°$",
               "B": "$45°$",
@@ -386,7 +395,6 @@
             "topic": "M.10",
             "topic_name": "Estadística — moda",
             "image": null,
-            "image_pending": true,
             "text": "¿Cuál es la moda estadística de la venta de ropa en la siguiente tabla?\n\n| Prenda | Frecuencia |\n|:-|:-:|\n| Playera | 80 |\n| Calcetas | 12 |\n| Pantalón | 16 |\n| Camisa | 30 |\n| Suéter | 58 |\n| Total | 196 |",
             "options": {
               "A": "Pantalón",
@@ -533,9 +541,8 @@
             "id": 36,
             "topic": "F.8",
             "topic_name": "Gráficas — MRU",
-            "image": null,
-            "image_pending": true,
-            "text": "La siguiente gráfica expresa un:\n\n[Figura: gráfica V vs t, recta con pendiente positiva desde el origen.]",
+            "image": "/imagenes_comipems_simulacro2/q36_grafica_v_t.svg",
+            "text": "La siguiente gráfica expresa un:",
             "options": {
               "A": "Movimiento Rectilíneo Uniforme",
               "B": "Un cuerpo en reposo",
@@ -549,9 +556,8 @@
             "id": 37,
             "topic": "F.9",
             "topic_name": "Circuitos — resistencias en paralelo",
-            "image": null,
-            "image_pending": true,
-            "text": "Calcula la resistencia equivalente del circuito. Se consideran $R_1 = 20\\ \\Omega$, $R_2 = 10\\ \\Omega$ y $R_3 = 30\\ \\Omega$.\n\n[Figura: circuito con tres resistencias en paralelo y una batería.]",
+            "image": "/imagenes_comipems_simulacro2/q37_circuito_paralelo.svg",
+            "text": "Calcula la resistencia equivalente del circuito. Se consideran $R_1 = 20\\ \\Omega$, $R_2 = 10\\ \\Omega$ y $R_3 = 30\\ \\Omega$.",
             "options": {
               "A": "10.05 Ω",
               "B": "3.75 Ω",
@@ -690,8 +696,8 @@
               "C": "Neutralización",
               "D": "Desplazamiento"
             },
-            "answer": "D",
-            "explanation": "Aunque comúnmente esta reacción se clasifica como descomposición (un compuesto se separa en sus elementos), la clave oficial del simulacro la marca como reacción de desplazamiento."
+            "answer": "B",
+            "explanation": "Es una reacción de descomposición: un solo compuesto (HgO) se separa en sus elementos (Hg y O₂). Nota: la hoja del simulacro marca D (desplazamiento), pero ese tipo requiere AB + C → AC + B."
           },
           {
             "id": 47,
@@ -1130,42 +1136,62 @@
           {
             "id": 77,
             "topic": "HV.13",
-            "topic_name": "Banco de preguntas — extra",
-            "_extra_from_bank": true,
-            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad verbal)",
-            "options": {"A": "", "B": "", "C": "", "D": ""},
-            "answer": "",
-            "explanation": ""
+            "topic_name": "banco_preguntas/bachillerato_2021 — id 77",
+            "text": "El autor del texto se propone",
+            "options": {
+              "A": "alertar a los internautas.",
+              "B": "prevenir la enfermedad.",
+              "C": "imponer una idea.",
+              "D": "motivar a los internautas adictos."
+            },
+            "answer": "A",
+            "explanation": "",
+            "context": "Internet Addiction Disorder\nDesorden clínico de la misma categoría que el alcoholismo.\nLa adicción a Internet pasará de ser un mal hábito a figurar entre los \"desórdenes clínicos\" como el alcoholismo o la ludopatía, según un manual de diagnóstico elaborado por varios psicólogos chinos del Hospital General de Pekín.\nLos síntomas principales, según publicó el diario oficial China Dialy, son navegar en Internet por más de seis horas al día y la tensión y el enfado generados en el usuario cuando no puede conectarse a la red.\nLos internautas dedican su tiempo a cinco actividades: juegos on-line, visitar páginas pornográficas, redes sociales, compras por Internet y navegación en general.\nEl rotativo informó que, en caso de ser aprobado por el Ministerio de Salud, el manual se convertirá en el primero del mundo en su género.\nUna investigación realizada el año pasado por la compañía InterActiveCorp, reveló que el 42% de los internautas chinos se confesó \"adictos\" a la red, al igual que el 18% de los estadounidenses.\nEl tratamiento para esta adicción es: prohibir la conexión a Internet a los pacientes, antes de proceder a desarrollar la ayuda psicológica, y complementarla con actividades en grupo para ayudarlos a socializar en la vida real.\nLa falta de calor familiar y la ausencia de compañía y juegos reales son las principales razones para convertirse en un adicto a Internet.\nChina es el país con mayor número de internautas del mundo: 221 millones."
           },
           {
             "id": 78,
             "topic": "HV.14",
-            "topic_name": "Banco de preguntas — extra",
-            "_extra_from_bank": true,
-            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad verbal)",
-            "options": {"A": "", "B": "", "C": "", "D": ""},
-            "answer": "",
-            "explanation": ""
+            "topic_name": "banco_preguntas/bachillerato_2021 — id 78",
+            "text": "Con base en el texto anterior, ¿cuál de las siguientes ideas es la conclusión del texto?",
+            "options": {
+              "A": "Los chinos señalan que permanecer horas en la red es una adicción.",
+              "B": "La adicción a Internet es semejante al alcoholismo.",
+              "C": "China es el país con mayor número de internautas del mundo.",
+              "D": "Las encuestas revelan que hay muchos internautas adictos."
+            },
+            "answer": "C",
+            "explanation": "",
+            "context": "Internet Addiction Disorder\nDesorden clínico de la misma categoría que el alcoholismo.\nLa adicción a Internet pasará de ser un mal hábito a figurar entre los \"desórdenes clínicos\" como el alcoholismo o la ludopatía, según un manual de diagnóstico elaborado por varios psicólogos chinos del Hospital General de Pekín.\nLos síntomas principales, según publicó el diario oficial China Dialy, son navegar en Internet por más de seis horas al día y la tensión y el enfado generados en el usuario cuando no puede conectarse a la red.\nLos internautas dedican su tiempo a cinco actividades: juegos on-line, visitar páginas pornográficas, redes sociales, compras por Internet y navegación en general.\nEl rotativo informó que, en caso de ser aprobado por el Ministerio de Salud, el manual se convertirá en el primero del mundo en su género.\nUna investigación realizada el año pasado por la compañía InterActiveCorp, reveló que el 42% de los internautas chinos se confesó \"adictos\" a la red, al igual que el 18% de los estadounidenses.\nEl tratamiento para esta adicción es: prohibir la conexión a Internet a los pacientes, antes de proceder a desarrollar la ayuda psicológica, y complementarla con actividades en grupo para ayudarlos a socializar en la vida real.\nLa falta de calor familiar y la ausencia de compañía y juegos reales son las principales razones para convertirse en un adicto a Internet.\nChina es el país con mayor número de internautas del mundo: 221 millones."
           },
           {
             "id": 79,
             "topic": "HV.15",
-            "topic_name": "Banco de preguntas — extra",
-            "_extra_from_bank": true,
-            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad verbal)",
-            "options": {"A": "", "B": "", "C": "", "D": ""},
-            "answer": "",
-            "explanation": ""
+            "topic_name": "banco_preguntas/bachillerato_2021 — id 79",
+            "text": "Con base en el texto anterior: Psicólogos chinos han elaborado un manual de diagnóstico, este enunciado es",
+            "options": {
+              "A": "una referencia.",
+              "B": "una explicación.",
+              "C": "un resultado.",
+              "D": "un hecho."
+            },
+            "answer": "D",
+            "explanation": "",
+            "context": "Internet Addiction Disorder\nDesorden clínico de la misma categoría que el alcoholismo.\nLa adicción a Internet pasará de ser un mal hábito a figurar entre los \"desórdenes clínicos\" como el alcoholismo o la ludopatía, según un manual de diagnóstico elaborado por varios psicólogos chinos del Hospital General de Pekín.\nLos síntomas principales, según publicó el diario oficial China Dialy, son navegar en Internet por más de seis horas al día y la tensión y el enfado generados en el usuario cuando no puede conectarse a la red.\nLos internautas dedican su tiempo a cinco actividades: juegos on-line, visitar páginas pornográficas, redes sociales, compras por Internet y navegación en general.\nEl rotativo informó que, en caso de ser aprobado por el Ministerio de Salud, el manual se convertirá en el primero del mundo en su género.\nUna investigación realizada el año pasado por la compañía InterActiveCorp, reveló que el 42% de los internautas chinos se confesó \"adictos\" a la red, al igual que el 18% de los estadounidenses.\nEl tratamiento para esta adicción es: prohibir la conexión a Internet a los pacientes, antes de proceder a desarrollar la ayuda psicológica, y complementarla con actividades en grupo para ayudarlos a socializar en la vida real.\nLa falta de calor familiar y la ausencia de compañía y juegos reales son las principales razones para convertirse en un adicto a Internet.\nChina es el país con mayor número de internautas del mundo: 221 millones."
           },
           {
             "id": 80,
             "topic": "HV.16",
-            "topic_name": "Banco de preguntas — extra",
-            "_extra_from_bank": true,
-            "text": "Pendiente: pregunta adicional del banco_preguntas/bachillerato_2021.json (Habilidad verbal)",
-            "options": {"A": "", "B": "", "C": "", "D": ""},
-            "answer": "",
-            "explanation": ""
+            "topic_name": "banco_preguntas/bachillerato_2021 — id 80",
+            "text": "En el siguiente enunciado, la palabra subrayada significa\n\nEl ROTATIVO informó que en caso de ser aprobado por el Ministerio de Salud, el manual se convertirá en el primero en el mundo.",
+            "options": {
+              "A": "periodista.",
+              "B": "periódico.",
+              "C": "instrumento.",
+              "D": "noticia."
+            },
+            "answer": "B",
+            "explanation": "",
+            "context": null
           }
         ]
       },
@@ -1358,8 +1384,8 @@
               "C": "Compás y ábaco",
               "D": "Imán e imprenta"
             },
-            "answer": "C",
-            "explanation": "Nota: la respuesta marcada por la hoja del simulacro es C, pero históricamente las aportaciones mayas más reconocidas son el número cero, el calendario y la predicción de eclipses (opción B)."
+            "answer": "B",
+            "explanation": "Los mayas son célebres por sus aportaciones matemáticas y astronómicas: el concepto del cero (independiente del usado en India) y la predicción de eclipses solares y lunares con alta precisión. La brújula, papel, compás, ábaco e imprenta son aportaciones de la antigua China."
           },
           {
             "id": 94,
@@ -1428,8 +1454,8 @@
               "C": "constitución - federal - democrática",
               "D": "constitución - demagógica - federal"
             },
-            "answer": "B",
-            "explanation": "Nota: la hoja marca la opción B, aunque históricamente la Constitución del 5 de febrero de 1857 era federal y democrática (opción C). Verificar con la fuente original."
+            "answer": "C",
+            "explanation": "La Constitución del 5 de febrero de 1857 estableció a México como una república federal y democrática, con 24 estados. La opción B es inconsistente (absolutista no puede coexistir con democrática) y además no era \"ley\" sino \"constitución\"."
           },
           {
             "id": 99,
@@ -1470,8 +1496,8 @@
               "C": "2, 3, 4, 1",
               "D": "4, 1, 2, 3"
             },
-            "answer": "D",
-            "explanation": "Nota: la hoja marca D, pero el orden cronológico real de surgimiento es: Olmeca (Preclásico, ~1500 a.C.), Teotihuacana (Clásico, ~150 a.C.), Tolteca (Postclásico, ~900 d.C.), Mexica (Postclásico tardío, ~1300 d.C.) → opción B (3, 4, 1, 2)."
+            "answer": "B",
+            "explanation": "Orden cronológico de surgimiento: Olmeca (Preclásico, ~1500 a.C.) → Teotihuacana (Clásico, ~150 a.C.) → Tolteca (Postclásico, ~900 d.C.) → Mexica (Postclásico tardío, ~1300 d.C.). Secuencia: 3, 4, 1, 2."
           },
           {
             "id": 102,
@@ -1498,8 +1524,8 @@
               "C": "2, 3, 4",
               "D": "2, 4, 5"
             },
-            "answer": "C",
-            "explanation": "Nota: la hoja marca C, pero los caudillos de la Revolución Mexicana fueron Villa (1), Zapata (3) y Carranza (5) → opción B. Hidalgo y Guerrero pertenecen a la Independencia de México (1810)."
+            "answer": "B",
+            "explanation": "Los caudillos de la Revolución Mexicana (1910–1920) fueron Francisco Villa, Emiliano Zapata y Venustiano Carranza. Miguel Hidalgo y Vicente Guerrero pertenecen a la guerra de Independencia (1810–1821)."
           },
           {
             "id": 104,
@@ -1546,8 +1572,8 @@
               "C": "velocidad - polo - kilómetros",
               "D": "altitud - mar - metros"
             },
-            "answer": "A",
-            "explanation": "Nota: la hoja marca A, pero geográficamente la latitud es la distancia angular medida en grados desde el ecuador, de 0° (ecuador) a 90° (polos) → opción B."
+            "answer": "B",
+            "explanation": "La latitud es la distancia angular de un punto respecto al ecuador, medida en grados de 0° (sobre el ecuador) hasta 90° (en los polos). La opción A describe la longitud, no la latitud."
           },
           {
             "id": 107,
@@ -1623,9 +1649,8 @@
             "id": 112,
             "topic": "G.8",
             "topic_name": "Proyecciones cartográficas",
-            "image": null,
-            "image_pending": true,
-            "text": "Relaciona las proyecciones cartográficas con su imagen.\n\n| Proyección |\n|:-|\n| 1. Cónica |\n| 2. Cilíndrica |\n| 3. Azimutal |\n\n[Figura: cuatro imágenes A–D de proyecciones cartográficas distintas.]",
+            "image": "/imagenes_comipems_simulacro2/q112_proyecciones.svg",
+            "text": "Relaciona las proyecciones cartográficas con su imagen.\n\n| Proyección |\n|:-|\n| 1. Cónica |\n| 2. Cilíndrica |\n| 3. Azimutal |",
             "options": {
               "A": "1a, 2d, 3c",
               "B": "1b, 2a, 3d",
@@ -1646,8 +1671,8 @@
               "C": "3, 5, 7",
               "D": "3, 4, 5"
             },
-            "answer": "A",
-            "explanation": "Nota: la hoja marca A, pero los países megadiversos del listado son Brasil (3), Indonesia (5) y Madagascar (7) → opción C. Brasil e Indonesia son dos de los 17 países megadiversos reconocidos."
+            "answer": "C",
+            "explanation": "Brasil, Indonesia y Madagascar son tres de los 17 países megadiversos reconocidos por Conservation International. Rusia, Canadá y Japón no están en esa lista."
           },
           {
             "id": 114,
@@ -1660,8 +1685,8 @@
               "C": "Estado de México y Ciudad de México",
               "D": "Baja California y Baja California Sur"
             },
-            "answer": "C",
-            "explanation": "Nota: la hoja marca C, pero la falla de San Andrés (desplazamiento horizontal entre placas del Pacífico y Norteamericana) afecta a Baja California y Baja California Sur → opción D."
+            "answer": "D",
+            "explanation": "La zona de desplazamiento horizontal entre la placa del Pacífico y la Norteamericana (sistema de la falla de San Andrés) atraviesa la península de Baja California, afectando a Baja California y Baja California Sur."
           },
           {
             "id": 115,
@@ -1674,8 +1699,8 @@
               "C": "1d, 2b, 3a",
               "D": "1c, 2d, 3b"
             },
-            "answer": "B",
-            "explanation": "Nota: la hoja marca B, pero la correspondencia correcta es: Agricultura = cultivo de vegetales (d), Ganadería = crianza de animales (b), Forestal = obtención de madera (a) → opción C."
+            "answer": "C",
+            "explanation": "Agricultura = cultivo de vegetales, legumbres y cereales (d). Ganadería = crianza de animales domesticados (b). Forestal = obtención de madera y derivados (a). Secuencia: 1d, 2b, 3a."
           },
           {
             "id": 116,
@@ -1688,8 +1713,8 @@
               "C": "Chiapas, Yucatán, Tabasco",
               "D": "Tabasco, Veracruz, Tamaulipas"
             },
-            "answer": "C",
-            "explanation": "Nota: la hoja marca C, pero los estados que limitan con Guatemala son Chiapas, Tabasco y Campeche → opción A. Yucatán no comparte frontera con Guatemala."
+            "answer": "A",
+            "explanation": "Los estados de la República Mexicana que hacen frontera con Guatemala son Chiapas, Tabasco y Campeche. Yucatán no limita con Guatemala (queda al norte de Campeche)."
           }
         ]
       },
@@ -1750,8 +1775,8 @@
               "C": "1, 3, 5, 6",
               "D": "1, 2, 4, 6"
             },
-            "answer": "B",
-            "explanation": "Nota: la hoja marca B, pero según el Artículo 40 reformado, la república mexicana se constituye como representativa, democrática, laica y federal → opción D (1, 2, 4, 6)."
+            "answer": "D",
+            "explanation": "El Artículo 40 constitucional establece que México es una República representativa, democrática, laica y federal. La duración sexenal del Ejecutivo pertenece al Artículo 83, no al 40."
           },
           {
             "id": 121,
@@ -1848,8 +1873,8 @@
               "C": "2, 4, 1, 3",
               "D": "1, 2, 4, 3"
             },
-            "answer": "A",
-            "explanation": "Nota: la hoja marca A, pero el orden lógico de una jornada electoral es: identificar y entregar boletas (2) → votar libremente (4) → contar votos y llenar actas (1) → llevar las actas al comité (3) → opción C."
+            "answer": "C",
+            "explanation": "Orden lógico de una jornada electoral: 1) identificar al elector y entregarle la boleta (2), 2) votar de manera libre y secreta (4), 3) contar los votos y llenar las actas (1), 4) llevar las actas al comité para cotejar los resultados (3). Secuencia: 2, 4, 1, 3."
           },
           {
             "id": 128,

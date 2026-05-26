@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" width="280" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="280" height="200" fill="#ffffff"/>
+  <!-- Triángulo rectángulo: A arriba-izq, B abajo-izq (recto), C abajo-der.
+       Cateto vertical AB = 110, cateto horizontal BC = 157 (≈ AB·tan(55°)) -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linejoin="round">
+    <polygon points="50,30 50,160 230,160"/>
+  </g>
+  <!-- Marca de ángulo recto en B -->
+  <polyline points="50,148 62,148 62,160" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <!-- Arco para el ángulo C = 35° (medido desde el cateto horizontal hacia la hipotenusa) -->
+  <path d="M 200,160 A 30,30 0 0 0 208.4,142.8" stroke="#1a1a1a" stroke-width="1.4" fill="none"/>
+  <text x="195" y="153" font-size="13">35°</text>
+  <!-- Etiquetas de vértices -->
+  <text x="38" y="26" font-size="16" font-style="italic">A</text>
+  <text x="38" y="175" font-size="16" font-style="italic">B</text>
+  <text x="234" y="175" font-size="16" font-style="italic">C</text>
+</svg>

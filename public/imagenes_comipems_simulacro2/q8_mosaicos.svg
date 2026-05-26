@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="420" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="420" height="200" fill="#ffffff"/>
+  <!-- Patrón triangular de mosaicos. n mosaicos negros forman un triángulo equilátero,
+       con huecos blancos hacia abajo. Para n=3 (fila base): 3 negros, 1 hueco.
+       Tres patrones crecientes: n=3, 6, 10 (triangulares con n_filas=2,3,4). -->
+
+  <!-- Helper: mosaico negro = triángulo equilátero "punta arriba" de lado L=20.
+       Hueco = triángulo "punta abajo" del mismo lado. -->
+
+  <!-- Patrón 1 (2 filas) en x=40, base y=130 -->
+  <g stroke="#1a1a1a" stroke-width="1.4">
+    <!-- Fila base: 2 negros + 1 hueco entre ellos -->
+    <polygon points="40,130 60,130 50,112.7" fill="#5a3a8a"/>
+    <polygon points="60,130 80,130 70,112.7" fill="#5a3a8a"/>
+    <!-- Triángulo punta abajo (hueco) -->
+    <polygon points="50,112.7 70,112.7 60,130" fill="none"/>
+    <!-- Fila superior: 1 negro -->
+    <polygon points="50,112.7 70,112.7 60,95.4" fill="#5a3a8a"/>
+  </g>
+  <text x="60" y="155" font-size="13" text-anchor="middle">3</text>
+
+  <!-- Patrón 2 (3 filas) en x=140, base y=130 -->
+  <g stroke="#1a1a1a" stroke-width="1.4">
+    <!-- Fila base: 3 negros + 2 huecos -->
+    <polygon points="140,130 160,130 150,112.7" fill="#5a3a8a"/>
+    <polygon points="160,130 180,130 170,112.7" fill="#5a3a8a"/>
+    <polygon points="180,130 200,130 190,112.7" fill="#5a3a8a"/>
+    <polygon points="150,112.7 170,112.7 160,130" fill="none"/>
+    <polygon points="170,112.7 190,112.7 180,130" fill="none"/>
+    <!-- Fila 2: 2 negros + 1 hueco -->
+    <polygon points="150,112.7 170,112.7 160,95.4" fill="#5a3a8a"/>
+    <polygon points="170,112.7 190,112.7 180,95.4" fill="#5a3a8a"/>
+    <polygon points="160,95.4 180,95.4 170,112.7" fill="none"/>
+    <!-- Fila 3: 1 negro -->
+    <polygon points="160,95.4 180,95.4 170,78.1" fill="#5a3a8a"/>
+  </g>
+  <text x="170" y="155" font-size="13" text-anchor="middle">6</text>
+
+  <!-- Patrón 3 (4 filas) en x=260, base y=130 -->
+  <g stroke="#1a1a1a" stroke-width="1.4">
+    <!-- Fila base: 4 negros + 3 huecos -->
+    <polygon points="260,130 280,130 270,112.7" fill="#5a3a8a"/>
+    <polygon points="280,130 300,130 290,112.7" fill="#5a3a8a"/>
+    <polygon points="300,130 320,130 310,112.7" fill="#5a3a8a"/>
+    <polygon points="320,130 340,130 330,112.7" fill="#5a3a8a"/>
+    <polygon points="270,112.7 290,112.7 280,130" fill="none"/>
+    <polygon points="290,112.7 310,112.7 300,130" fill="none"/>
+    <polygon points="310,112.7 330,112.7 320,130" fill="none"/>
+    <!-- Fila 2: 3 negros + 2 huecos -->
+    <polygon points="270,112.7 290,112.7 280,95.4" fill="#5a3a8a"/>
+    <polygon points="290,112.7 310,112.7 300,95.4" fill="#5a3a8a"/>
+    <polygon points="310,112.7 330,112.7 320,95.4" fill="#5a3a8a"/>
+    <polygon points="280,95.4 300,95.4 290,112.7" fill="none"/>
+    <polygon points="300,95.4 320,95.4 310,112.7" fill="none"/>
+    <!-- Fila 3: 2 negros + 1 hueco -->
+    <polygon points="280,95.4 300,95.4 290,78.1" fill="#5a3a8a"/>
+    <polygon points="300,95.4 320,95.4 310,78.1" fill="#5a3a8a"/>
+    <polygon points="290,78.1 310,78.1 300,95.4" fill="none"/>
+    <!-- Fila 4: 1 negro -->
+    <polygon points="290,78.1 310,78.1 300,60.8" fill="#5a3a8a"/>
+  </g>
+  <text x="300" y="155" font-size="13" text-anchor="middle">10</text>
+
+  <text x="380" y="100" font-size="32" text-anchor="middle">…</text>
+</svg>

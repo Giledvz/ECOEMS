@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" width="400" height="180" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <rect width="400" height="180" fill="#ffffff"/>
+
+  <!-- Paso 1: rectángulo original -->
+  <g stroke="#1a1a1a" stroke-width="1.6" fill="none">
+    <rect x="20" y="50" width="80" height="80"/>
+  </g>
+  <text x="60" y="148" font-size="11" text-anchor="middle">papel</text>
+
+  <!-- Flecha -->
+  <g stroke="#1a1a1a" stroke-width="1.4" fill="#1a1a1a">
+    <line x1="110" y1="90" x2="135" y2="90"/>
+    <polygon points="135,90 129,86 129,94"/>
+  </g>
+
+  <!-- Paso 2: doblez 1 (horizontal, dobla hacia arriba) -->
+  <g stroke="#1a1a1a" stroke-width="1.6" fill="none">
+    <rect x="145" y="70" width="80" height="40"/>
+    <!-- Línea punteada del primer doblez -->
+    <line x1="145" y1="50" x2="225" y2="50" stroke-dasharray="3,2"/>
+    <line x1="145" y1="50" x2="145" y2="70" stroke-dasharray="3,2"/>
+    <line x1="225" y1="50" x2="225" y2="70" stroke-dasharray="3,2"/>
+  </g>
+
+  <!-- Flecha -->
+  <g stroke="#1a1a1a" stroke-width="1.4" fill="#1a1a1a">
+    <line x1="235" y1="90" x2="260" y2="90"/>
+    <polygon points="260,90 254,86 254,94"/>
+  </g>
+
+  <!-- Paso 3: doblez 2 (vertical) + corte de medio círculo -->
+  <g stroke="#1a1a1a" stroke-width="1.6" fill="none">
+    <rect x="270" y="70" width="40" height="40"/>
+    <!-- Línea punteada del segundo doblez -->
+    <line x1="310" y1="50" x2="350" y2="50" stroke-dasharray="3,2"/>
+    <line x1="310" y1="70" x2="350" y2="70" stroke-dasharray="3,2"/>
+    <line x1="350" y1="50" x2="350" y2="110" stroke-dasharray="3,2"/>
+    <line x1="310" y1="110" x2="350" y2="110" stroke-dasharray="3,2"/>
+    <!-- Medio círculo cortado en la esquina inferior-izquierda (sobre el doblez vertical izquierdo y la base horizontal interior, que es donde están los dobleces) -->
+    <path d="M 270,98 A 12,12 0 0 0 294,98 Z" fill="#ffffff" stroke="#1a1a1a"/>
+  </g>
+  <text x="335" y="148" font-size="11" text-anchor="middle">corte ½ círculo</text>
+</svg>
