@@ -5,13 +5,258 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>Examen</title>
+<script>
+  /* Anti-flash: aplica data-theme antes del primer paint para que el body
+     no se renderee en light por 1 frame antes de saltar a dark. */
+  (function () {
+    var p = localStorage.getItem('ecoems-theme-pref') || 'auto';
+    var d = p === 'auto'
+      ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+      : p;
+    var r = document.documentElement;
+    r.setAttribute('data-theme', d);
+    r.setAttribute('data-theme-pref', p);
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <script src="/socket.io/socket.io.js"></script>
 <link rel="stylesheet" href="/katex.min.css?v=2">
 <script src="/katex.min.js?v=2" onerror="document.write('<script src=\'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js\'><\/script>')"></script>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scrollbar-gutter: stable; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f0; color: #1a1a1a; min-height: 100vh; -webkit-tap-highlight-color: transparent; }
+  /* === 1 · TOKENS LIGHT === */
+  :root {
+    color-scheme: light;
+
+    /* ── Tipografía ── */
+    --font-family-display: 'Fraunces', serif;
+    --font-family-body: 'IBM Plex Sans', sans-serif;
+    --font-family-mono: 'IBM Plex Mono', monospace;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-size-11: 0.6875rem;
+    --font-size-12: 0.75rem;
+    --font-size-13: 0.8125rem;
+    --font-size-14: 0.875rem;
+    --font-size-15: 0.9375rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+    --font-size-32: 2rem;
+    --font-size-40: 2.5rem;
+    --font-size-48: 3rem;
+    --line-height-tight: 1.05;
+    --line-height-snug: 1.15;
+    --line-height-heading: 1.3;
+    --line-height-base: 1.5;
+    --line-height-relaxed: 1.6;
+    --line-height-loose: 1.65;
+    --tracking-tighter: -0.025em;
+    --tracking-tight: -0.015em;
+    --tracking-snug: -0.01em;
+    --tracking-normal: 0;
+    --tracking-meta: 0.02em;
+    --tracking-eyebrow: 0.08em;
+    --tracking-display-eyebrow: 0.12em;
+
+    /* ── Espaciado (base 4) ── */
+    --space-1: 0.25rem;   --space-2: 0.5rem;    --space-3: 0.75rem;
+    --space-4: 1rem;      --space-5: 1.25rem;   --space-6: 1.5rem;
+    --space-7: 2rem;      --space-8: 2.5rem;    --space-9: 3rem;
+    --space-10: 4rem;     --space-11: 5rem;     --space-12: 6rem;
+
+    /* ── Containers ── */
+    --container-narrow: 40rem;
+    --container-base:   47.5rem;
+    --container-wide:   67.5rem;
+    --container-full:   80rem;
+
+    /* ── Radius ── */
+    --radius-sm:   2px;
+    --radius-md:   4px;
+    --radius-lg:   8px;
+    --radius-pill: 999px;
+
+    /* ── Bordes ── */
+    --border-thin:   1px;
+    --border-medium: 2px;
+    --border-thick:  3px;
+
+    /* ── Motion ── */
+    --motion-instant: 0ms;
+    --motion-fast:    120ms;
+    --motion-base:    180ms;
+    --motion-slow:    280ms;
+    --motion-ease-standard:    cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-ease-in:          cubic-bezier(0.4, 0, 1, 1);
+    --motion-ease-emphasized:  cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    /* ── Iconos ── */
+    --icon-stroke-width: 1.5;
+    --icon-size-sm:  14px;
+    --icon-size-md:  16px;
+    --icon-size-lg:  18px;
+    --icon-size-xl:  20px;
+    --icon-size-2xl: 24px;
+
+    /* ── z-index ── */
+    --z-base: 1; --z-raised: 10; --z-nav: 100; --z-tooltip: 200; --z-modal: 300;
+
+    /* ── Primitivos color · LIGHT ── */
+    --crema-50:  #faf7f0;
+    --crema-100: #f8f3e8;
+    --crema-200: #f5efe4;
+    --crema-300: #efe7d8;
+    --crema-400: #e6dcc4;
+    --crema-500: #d9ccae;
+    --crema-600: #c9bda3;
+    --crema-700: #a89880;
+    --crema-800: #8c7556;
+    --crema-900: #6b5a44;
+
+    --ink-100: #c9bda3;
+    --ink-300: #8c7556;
+    --ink-500: #7a6448;
+    --ink-700: #4a3f33;
+    --ink-900: #1f1a16;
+
+    --accent-conac:           #6b3a2e;
+    --accent-conac-soft:      #8c5240;
+    --accent-terracota:       #c2410c;
+    --accent-terracota-soft:  #dd6638;
+
+    --state-ok:      #4a6b3f;   --state-ok-bg:   #e7ecd9;
+    --state-err:     #9c3525;   --state-err-bg:  #f1dcd4;
+    --state-warn:    #8a5208;   --state-warn-bg: #f1e6c4;
+
+    --cat-blue:   #2d4f7a;
+    --cat-amber:  #8a5a1e;
+    --cat-coral:  #8c4a3a;
+    --cat-teal:   #2d5c63;
+    --cat-purple: #7a4a6b;
+    --cat-navy:   #2d3955;
+
+    --grain-1: rgba(140, 117, 86, 0.04);
+    --grain-2: rgba(107, 58, 46, 0.03);
+    --selection-bg: rgba(107, 58, 46, 0.18);
+
+    /* ── Semánticos color ── */
+    --color-bg-page:           var(--crema-200);
+    --color-bg-raised:         var(--crema-100);
+    --color-bg-hover:          var(--crema-300);
+    --color-bg-tooltip:        var(--crema-50);
+    --color-bg-input:          var(--crema-100);
+    --color-bg-input-disabled: var(--crema-400);
+
+    --color-text-primary:     var(--ink-900);
+    --color-text-secondary:   var(--ink-700);
+    --color-text-meta:        var(--ink-500);
+    --color-text-meta-large:  var(--ink-300);
+    --color-text-placeholder: var(--ink-100);
+    --color-text-on-dark:     var(--crema-100);
+
+    --color-accent:              var(--accent-conac);
+    --color-accent-soft:         var(--accent-conac-soft);
+    --color-accent-strong:       var(--accent-terracota);
+    --color-accent-strong-soft:  var(--accent-terracota-soft);
+
+    --color-border-subtle: var(--crema-500);
+    --color-border:        var(--crema-600);
+    --color-border-strong: var(--crema-700);
+    --color-border-focus:  var(--accent-conac);
+
+    --color-state-ok:    var(--state-ok);    --color-state-ok-bg:   var(--state-ok-bg);
+    --color-state-err:   var(--state-err);   --color-state-err-bg:  var(--state-err-bg);
+    --color-state-warn:  var(--state-warn);  --color-state-warn-bg: var(--state-warn-bg);
+
+    --color-selection-bg:   var(--selection-bg);
+    --color-selection-text: var(--ink-900);
+  }
+
+  /* === 1 · TOKENS DARK === */
+  [data-theme="dark"] {
+    color-scheme: dark;
+
+    --crema-50:  #2a2420;
+    --crema-100: #221d1a;
+    --crema-200: #1a1614;
+    --crema-300: #231e1b;
+    --crema-400: #2e2823;
+    --crema-500: #3a3229;
+    --crema-600: #4a3f33;
+    --crema-700: #6b5a44;
+    --crema-800: #8a7861;
+    --crema-900: #a89880;
+
+    --ink-100: #4a3f33;
+    --ink-300: #8a7861;
+    --ink-500: #a89880;
+    --ink-700: #d9cbb0;
+    --ink-900: #efe4cf;
+
+    --accent-conac:          #c79a82;
+    --accent-conac-soft:     #a07a64;
+    --accent-terracota:      #dd8055;
+    --accent-terracota-soft: #c2663d;
+
+    --state-ok:    #a3bd92;   --state-ok-bg:   #2a3526;
+    --state-err:   #d68a73;   --state-err-bg:  #3a2622;
+    --state-warn:  #d4a04a;   --state-warn-bg: #3a3020;
+
+    --cat-blue:   #7e9ec1;
+    --cat-amber:  #d4a04a;
+    --cat-coral:  #c7836b;
+    --cat-teal:   #7eb0b5;
+    --cat-purple: #b08299;
+    --cat-navy:   #8090b0;
+
+    --grain-1: rgba(140, 117, 86, 0.05);
+    --grain-2: rgba(199, 154, 130, 0.04);
+    --selection-bg: rgba(199, 154, 130, 0.22);
+    --color-selection-text: var(--ink-900);
+  }
+
+  /* === 2 · RESET + BASE === */
+  *, *::before, *::after { box-sizing: border-box; }
+  * { margin: 0; padding: 0; }
+  html {
+    scrollbar-gutter: stable;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-page);
+    background-image:
+      radial-gradient(at 20% 30%, var(--grain-1) 0, transparent 50%),
+      radial-gradient(at 80% 70%, var(--grain-2) 0, transparent 50%);
+    background-attachment: fixed;
+    -webkit-tap-highlight-color: transparent;
+    transition:
+      background-color var(--motion-slow) var(--motion-ease-emphasized),
+      color var(--motion-slow) var(--motion-ease-emphasized);
+  }
+  ::selection { background: var(--color-selection-bg); color: var(--color-selection-text); }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* === 3 · ESTILOS HEREDADOS (se irán refactorizando en próximas etapas) === */
   .screen { display: none; min-height: 100vh; padding: 16px; }
   .screen.active { display: flex; flex-direction: column; }
 
