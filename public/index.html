@@ -1334,6 +1334,20 @@
     <p class="overlay-card__body">Tu examen ha sido <strong>cancelado</strong>. Acude con tu profesor para más información.</p>
   </div>
 </div>
+
+<div class="overlay" id="confirmSubmitOverlay">
+  <div class="overlay-card overlay-card--warn">
+    <div class="overlay-card__icon" aria-hidden="true">?</div>
+    <h2 class="overlay-card__title">¿Entregar examen?</h2>
+    <p class="overlay-card__body">Respondidas: <strong id="confirmSubmitAnswered">0 de 0</strong></p>
+    <p class="overlay-card__body" id="confirmSubmitMissingWrap" style="display:none;">Sin responder: <strong id="confirmSubmitMissing">0</strong></p>
+    <p class="overlay-card__body" id="confirmSubmitMarkedWrap" style="display:none;">Marcadas para revisar: <strong id="confirmSubmitMarked">0</strong></p>
+    <div class="overlay-card__actions" style="display:flex; gap:var(--space-3);">
+      <button class="btn btn--ghost" onclick="hideConfirmSubmit()" type="button">Cancelar</button>
+      <button class="btn btn--primary" onclick="confirmSubmitAccept()" type="button">Sí, entregar</button>
+    </div>
+  </div>
+</div>
 <script>
 // Sistema de tema: data-theme + data-theme-pref en <html>, localStorage 'ecoems-theme-pref'.
 // El anti-flash script en <head> ya aplica el tema antes del primer paint.
@@ -1370,6 +1384,48 @@ __THEME_MQL.addEventListener('change', () => {
 document.addEventListener('DOMContentLoaded', function() {
   __applyTheme(__getThemePref());
 });
+
+// ─── Diálogo Tercial para reemplazar alert() nativo ─────────────────────────
+function appAlert(options) {
+  const o = typeof options === 'string' ? { body: options } : (options || {});
+  const variant = o.variant === 'err' ? 'overlay-card--danger'
+                : o.variant === 'ok'  ? 'overlay-card--info'
+                : 'overlay-card--warn';
+  const icon = o.variant === 'err' ? '!' : o.variant === 'ok' ? '✓' : '!';
+  return new Promise((resolve) => {
+    let overlay = document.getElementById('__appAlertOverlay');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.id = '__appAlertOverlay';
+      overlay.className = 'overlay';
+      document.body.appendChild(overlay);
+    }
+    overlay.innerHTML = `
+      <div class="overlay-card ${variant}">
+        <div class="overlay-card__icon" aria-hidden="true">${icon}</div>
+        <h2 class="overlay-card__title"></h2>
+        <p class="overlay-card__body"></p>
+        <div class="overlay-card__actions">
+          <button class="btn btn--primary" data-action="ok" type="button">Entendido</button>
+        </div>
+      </div>
+    `;
+    overlay.querySelector('.overlay-card__title').textContent = o.title || 'Aviso';
+    overlay.querySelector('.overlay-card__body').innerHTML = (o.body || '').replace(/\n/g, '<br>');
+    overlay.classList.add('show');
+    function close() {
+      overlay.classList.remove('show');
+      document.removeEventListener('keydown', onKey);
+      resolve();
+    }
+    function onKey(e) {
+      if (e.key === 'Escape' || e.key === 'Enter') close();
+    }
+    overlay.querySelector('[data-action="ok"]').onclick = close;
+    overlay.onclick = (e) => { if (e.target === overlay) close(); };
+    document.addEventListener('keydown', onKey);
+  });
+}
 </script>
 
 <!-- ── Room Code Screen ── -->
@@ -1894,12 +1950,30 @@ function confirmSubmit() {
   if (state.submitPending) { showSubmitOverlay(); return; }
   const answered = Object.keys(state.answers).length;
   const total = state.questions.length;
-  let msg = `¿Estas seguro de entregar el examen?\n\nRespondidas: ${answered} de ${total}\n`;
-  if (total - answered > 0) msg += `Sin responder: ${total - answered}\n`;
-  if (state.marked.length > 0) msg += `Marcadas para revisar: ${state.marked.length}\n`;
-  if (confirm(msg)) {
-    startSubmitFlow();
+  const missing = total - answered;
+  document.getElementById('confirmSubmitAnswered').textContent = `${answered} de ${total}`;
+  const missingWrap = document.getElementById('confirmSubmitMissingWrap');
+  if (missing > 0) {
+    document.getElementById('confirmSubmitMissing').textContent = missing;
+    missingWrap.style.display = '';
+  } else {
+    missingWrap.style.display = 'none';
   }
+  const markedWrap = document.getElementById('confirmSubmitMarkedWrap');
+  if (state.marked.length > 0) {
+    document.getElementById('confirmSubmitMarked').textContent = state.marked.length;
+    markedWrap.style.display = '';
+  } else {
+    markedWrap.style.display = 'none';
+  }
+  document.getElementById('confirmSubmitOverlay').classList.add('show');
+}
+function hideConfirmSubmit() {
+  document.getElementById('confirmSubmitOverlay').classList.remove('show');
+}
+function confirmSubmitAccept() {
+  hideConfirmSubmit();
+  startSubmitFlow();
 }
 
 function startSubmitFlow() {
@@ -2045,14 +2119,14 @@ function downloadPDF() {
   } catch (err) {
     console.error('downloadPDF error:', err);
     restore();
-    alert('No se pudo generar el comprobante: ' + (err && err.message ? err.message : err));
+    appAlert({ title: 'No se pudo generar el comprobante', body: (err && err.message) || String(err), variant: 'err' });
   }
 }
 
 async function _downloadPDFImpl(onDone) {
   const done = typeof onDone === 'function' ? onDone : () => {};
   if (!state.questions || state.questions.length === 0) {
-    alert('Aun no hay datos del examen para generar el comprobante.');
+    appAlert({ title: 'Aún no hay datos del examen', body: 'No se puede generar el comprobante por el momento.', variant: 'err' });
     done();
     return;
   }
@@ -2498,7 +2572,7 @@ async function _downloadPDFImpl(onDone) {
       setTimeout(() => URL.revokeObjectURL(url), 60000);
     } catch (e) {
       console.error('Fallback HTML download failed:', e);
-      alert('No se pudo generar el comprobante.');
+      appAlert({ title: 'No se pudo generar el comprobante', body: 'Intenta de nuevo en unos segundos.', variant: 'err' });
     }
   }
 
