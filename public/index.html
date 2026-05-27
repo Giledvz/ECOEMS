@@ -32,6 +32,8 @@
 <script src="/socket.io/socket.io.js"></script>
 <link rel="stylesheet" href="/katex.min.css?v=2">
 <script src="/katex.min.js?v=2" onerror="document.write('<script src=\'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js\'><\/script>')"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" defer></script>
 <style>
   /* === 1 · TOKENS LIGHT === */
   :root {
@@ -136,9 +138,9 @@
     --accent-terracota:       #c2410c;
     --accent-terracota-soft:  #dd6638;
 
-    --state-ok:      #4a6b3f;   --state-ok-bg:   #e7ecd9;
-    --state-err:     #9c3525;   --state-err-bg:  #f1dcd4;
-    --state-warn:    #8a5208;   --state-warn-bg: #f1e6c4;
+    --state-ok:      #5a8045;   --state-ok-bg:   #e7ecd9;
+    --state-err:     #b8362c;   --state-err-bg:  #f1dcd4;
+    --state-warn:    #b8862e;   --state-warn-bg: #f1e6c4;
 
     --cat-blue:   #2d4f7a;
     --cat-amber:  #8a5a1e;
@@ -877,6 +879,16 @@
     border-color: var(--color-state-warn);
     color: var(--color-state-warn);
   }
+  .exam-grid__cell.is-wrong {
+    background-color: var(--color-state-err-bg);
+    border-color: var(--color-state-err);
+    color: var(--color-state-err);
+  }
+  .exam-grid__cell.is-unanswered {
+    background-color: var(--color-border-subtle);
+    border-color: var(--color-border-strong);
+    color: var(--color-text-meta);
+  }
   .exam-grid__cell.is-current {
     box-shadow: inset 0 0 0 var(--border-medium) var(--color-accent);
     border-color: var(--color-accent);
@@ -982,69 +994,275 @@
   }
   .conn-status.show { display: block; }
 
-  /* ── Submit Overlay ── */
-  .submit-overlay { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.85); z-index: 1000; display: none; align-items: center; justify-content: center; padding: 24px; }
-  .submit-overlay.show { display: flex; }
-  .submit-card { background: #fff; border-radius: 14px; padding: 28px 24px; max-width: 360px; width: 100%; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
-  .submit-card .spinner { width: 52px; height: 52px; border: 5px solid #e5e7eb; border-top-color: #2c5282; border-radius: 50%; margin: 0 auto 16px; animation: spin 1s linear infinite; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .submit-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: #1a1a1a; }
-  .submit-card p { font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 12px; }
-  .submit-card .attempts { font-size: 12px; color: #888; margin-top: 4px; }
-  .submit-card .warn { font-size: 13px; color: #a16207; background: #fef3c7; padding: 8px 12px; border-radius: 8px; margin-top: 12px; }
-  [data-theme="dark"] .submit-card { background: #16213e; color: #e0e0e0; }
-  [data-theme="dark"] .submit-card h3 { color: #e0e0e0; }
-  [data-theme="dark"] .submit-card p { color: #aaa; }
-  [data-theme="dark"] .submit-card .spinner { border-color: #2a2a4a; border-top-color: #7eb8f7; }
+  /* ── Overlays unificados (submit / tab-warn / cancel) ── */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    z-index: var(--z-modal);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-5);
+    background-color: color-mix(in srgb, var(--ink-900) 65%, transparent);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  .overlay.show { display: flex; }
+  .overlay-card {
+    background-color: var(--color-bg-raised);
+    border: var(--border-thin) solid var(--color-border);
+    border-top: var(--border-medium) solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: center;
+    text-align: center;
+  }
+  .overlay-card--info   { border-top-color: var(--color-accent); }
+  .overlay-card--warn   { border-top-color: var(--color-state-warn); }
+  .overlay-card--danger,
+  .overlay-card.danger  { border-top-color: var(--color-state-err); }
 
-  /* ── Tab warning toast / cancellation overlay ── */
-  .tab-warn-overlay { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.7); z-index: 1100; display: none; align-items: center; justify-content: center; padding: 24px; }
-  .tab-warn-overlay.show { display: flex; }
-  .tab-warn-card { background: #fff; border-radius: 14px; padding: 24px 22px; max-width: 380px; width: 100%; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.3); border-top: 6px solid #eab308; }
-  .tab-warn-card.danger { border-top-color: #e53e3e; }
-  .tab-warn-icon { font-size: 38px; margin-bottom: 8px; }
-  .tab-warn-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: #1a1a1a; }
-  .tab-warn-card p { font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 16px; }
-  .tab-warn-card button { background: #2c5282; color: #fff; border: 0; padding: 10px 22px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
-  [data-theme="dark"] .tab-warn-card { background: #16213e; color: #e0e0e0; }
-  [data-theme="dark"] .tab-warn-card h3 { color: #e0e0e0; }
-  [data-theme="dark"] .tab-warn-card p { color: #aaa; }
+  .overlay-card__icon {
+    width: 44px; height: 44px;
+    border-radius: var(--radius-pill);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 1;
+    background-color: var(--color-bg-hover);
+    color: var(--color-text-meta);
+  }
+  .overlay-card--warn .overlay-card__icon,
+  .overlay-card.warn  .overlay-card__icon {
+    background-color: var(--color-state-warn-bg);
+    color: var(--color-state-warn);
+  }
+  .overlay-card--danger .overlay-card__icon,
+  .overlay-card.danger  .overlay-card__icon {
+    background-color: var(--color-state-err-bg);
+    color: var(--color-state-err);
+  }
+  .overlay-card__title {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-heading);
+    margin: 0;
+  }
+  .overlay-card__body {
+    font-size: var(--font-size-15);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-loose);
+    margin: 0;
+  }
+  .overlay-card__body strong { color: var(--color-text-primary); }
+  .overlay-card__meta {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-13);
+    color: var(--color-text-meta);
+    font-variant-numeric: tabular-nums;
+    margin: 0;
+  }
+  .overlay-card__spinner {
+    width: 44px; height: 44px;
+    border: 2px solid var(--color-border-subtle);
+    border-top-color: var(--color-accent);
+    border-radius: 50%;
+    animation: overlay-spin 1s linear infinite;
+  }
+  @keyframes overlay-spin { to { transform: rotate(360deg); } }
+  .overlay-card__actions { margin-top: var(--space-2); }
 
-  .cancel-overlay { position: fixed; inset: 0; background: rgba(127, 29, 29, 0.95); z-index: 1200; display: none; align-items: center; justify-content: center; padding: 24px; }
-  .cancel-overlay.show { display: flex; }
-  .cancel-card { background: #fff; border-radius: 14px; padding: 32px 26px; max-width: 420px; width: 100%; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
-  .cancel-icon { font-size: 56px; margin-bottom: 12px; color: #e53e3e; }
-  .cancel-card h2 { font-size: 22px; font-weight: 800; margin-bottom: 10px; color: #b91c1c; }
-  .cancel-card p { font-size: 15px; color: #444; line-height: 1.55; margin-bottom: 8px; }
-  [data-theme="dark"] .cancel-card { background: #16213e; }
-  [data-theme="dark"] .cancel-card h2 { color: #fca5a5; }
-  [data-theme="dark"] .cancel-card p { color: #cbd5e1; }
+  /* Toggle de tema flotante (visible en pantallas pre-examen). Se oculta cuando
+     examScreen está activo (la barra sticky ya tiene su propio toggle). */
+  .theme-toggle--floating {
+    position: fixed;
+    top: var(--space-4);
+    right: var(--space-4);
+    z-index: var(--z-nav);
+  }
+  body:has(#examScreen.active) .theme-toggle--floating { display: none; }
 
-  /* ── Results Screen ── */
-  .results-screen { align-items: center; gap: 16px; text-align: center; padding-top: 32px; padding-bottom: 40px; }
-  .topic-breakdown { width: 100%; max-width: 480px; text-align: left; margin-top: 8px; }
-  .topic-breakdown h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; text-align: center; color: #444; }
-  .topic-row { margin-bottom: 12px; }
-  .topic-row-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
-  .topic-name { font-size: 12px; color: #555; flex: 1; padding-right: 8px; line-height: 1.3; }
-  .topic-subject { font-size: 10px; color: #999; white-space: nowrap; }
-  .topic-pct { font-size: 13px; font-weight: 700; white-space: nowrap; margin-left: 8px; }
-  .topic-bar-bg { height: 8px; background: #ebebeb; border-radius: 4px; overflow: hidden; }
-  .topic-bar-fill { height: 100%; border-radius: 4px; transition: width 0.6s ease; }
-  .bar-green { background: #16a34a; }
-  .bar-amber { background: #eab308; }
-  .bar-red { background: #e53e3e; }
-  .topic-score-detail { font-size: 10px; color: #999; margin-top: 2px; }
-  .divider { width: 100%; max-width: 480px; border: none; border-top: 1px solid #e5e5e5; margin: 4px 0; }
+  /* ── Results Screen — pantalla post-envío editorial ── */
+  .results-screen {
+    padding-block: var(--space-8);
+    align-items: center;
+  }
+  .results-screen__main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-7);
+    text-align: center;
+  }
 
-  /* ── Dark Mode (heredado: imagen + breakdown — se completará en etapa 5) ── */
+  /* Hero con score grande */
+  .result-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+  }
+  .result-hero__name {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-medium);
+    font-style: italic;
+    color: var(--color-accent);
+    margin: 0;
+  }
+  .result-score {
+    font-family: var(--font-family-display);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-text-primary);
+    margin-top: var(--space-2);
+    display: inline-flex;
+    align-items: baseline;
+    gap: var(--space-1);
+  }
+  .result-score__num {
+    font-size: var(--font-size-48);
+    font-variant-numeric: tabular-nums;
+    color: inherit;
+    transition: color var(--motion-slow) var(--motion-ease-emphasized);
+  }
+  .result-score__max {
+    font-size: var(--font-size-24);
+    color: var(--color-text-meta);
+    font-weight: var(--font-weight-medium);
+  }
+  .result-score[data-state="ok"]   .result-score__num { color: var(--color-state-ok); }
+  .result-score[data-state="warn"] .result-score__num { color: var(--color-state-warn); }
+  .result-score[data-state="err"]  .result-score__num { color: var(--color-state-err); }
+  .result-score[data-state="pending"] .result-score__num { color: var(--color-text-meta); }
+  .result-score__pct {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-15);
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text-meta-large);
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+  .result-hero__detail {
+    font-size: var(--font-size-15);
+    color: var(--color-text-secondary);
+    margin: 0;
+    max-width: 38ch;
+  }
+  .result-hero__hint {
+    font-size: var(--font-size-13);
+    color: var(--color-text-meta);
+    margin: 0;
+  }
+
+  /* Acciones */
+  .result-cta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: center;
+  }
+  .result-actions {
+    display: flex;
+    gap: var(--space-3);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 600px) {
+    .result-actions { flex-direction: column; align-items: stretch; }
+    .result-actions .btn { width: 100%; }
+  }
+
+  /* Breakdown por tema */
+  .result-breakdown {
+    padding-top: var(--space-7);
+    border-top: var(--border-thin) solid var(--color-border);
+    text-align: left;
+  }
+  .result-breakdown__title {
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-5) 0;
+    text-align: center;
+  }
+  .topic-rows {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .topic-row {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding-bottom: var(--space-4);
+    border-bottom: var(--border-thin) dotted var(--color-border);
+  }
+  .topic-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .topic-row__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--space-3);
+  }
+  .topic-row__name {
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-snug);
+    flex: 1;
+  }
+  .topic-row__pct {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-15);
+    font-variant-numeric: tabular-nums;
+    font-weight: var(--font-weight-medium);
+    white-space: nowrap;
+    color: var(--color-text-meta);
+  }
+  .topic-row[data-state="ok"]   .topic-row__pct { color: var(--color-state-ok); }
+  .topic-row[data-state="warn"] .topic-row__pct { color: var(--color-state-warn); }
+  .topic-row[data-state="err"]  .topic-row__pct { color: var(--color-state-err); }
+  .topic-row__bar {
+    height: 4px;
+    background-color: var(--color-border-subtle);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+  }
+  .topic-row__fill {
+    height: 100%;
+    width: 0%;
+    background-color: var(--color-text-meta);
+    border-radius: inherit;
+    transition: width var(--motion-slow) var(--motion-ease-standard);
+  }
+  .topic-row[data-state="ok"]   .topic-row__fill { background-color: var(--color-state-ok); }
+  .topic-row[data-state="warn"] .topic-row__fill { background-color: var(--color-state-warn); }
+  .topic-row[data-state="err"]  .topic-row__fill { background-color: var(--color-state-err); }
+  .topic-row__meta {
+    display: flex;
+    justify-content: flex-end;
+    font-size: var(--font-size-13);
+    color: var(--color-text-meta);
+  }
+  .topic-row__count {
+    font-family: var(--font-family-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Filtro de imagen en dark (heredado, separado del breakdown) */
   [data-theme="dark"] #qImage { filter: brightness(0.9); }
-  [data-theme="dark"] .topic-breakdown h3 { color: #aaa; }
-  [data-theme="dark"] .topic-name { color: #bbb; }
-  [data-theme="dark"] .topic-subject { color: #666; }
-  [data-theme="dark"] .topic-bar-bg { background: #2a2a4a; }
-  [data-theme="dark"] .topic-score-detail { color: #666; }
-  [data-theme="dark"] .divider { border-color: #2a2a4a; }
   #qImage[src*="q50_tabla_periodica"] { width: 567px; max-width: 100%; height: auto; }
   #qImage[src*="q5_original"],
   #qImage[src*="q13_pentagono"] { width: 378px; max-width: 100%; height: auto; }
@@ -1059,31 +1277,61 @@
 </head>
 <body>
 <div class="conn-status" id="connStatus">Reconectando...</div>
-<div class="submit-overlay" id="submitOverlay">
-  <div class="submit-card">
-    <div class="spinner"></div>
-    <h3>Enviando tu examen</h3>
-    <p id="submitMsg">Estamos registrando tu entrega en el servidor. Por favor, no cierres esta pagina.</p>
-    <p class="attempts" id="submitAttempts"></p>
-    <p class="warn">Manten el WiFi conectado. Se reintentara automaticamente hasta confirmar.</p>
+
+<button class="dark-toggle theme-toggle--floating" id="darkToggleFloating" onclick="toggleDarkMode()" aria-label="Cambiar modo de color" type="button">
+  <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 2v2"/>
+    <path d="M12 20v2"/>
+    <path d="m4.93 4.93 1.41 1.41"/>
+    <path d="m17.66 17.66 1.41 1.41"/>
+    <path d="M2 12h2"/>
+    <path d="M20 12h2"/>
+    <path d="m6.34 17.66-1.41 1.41"/>
+    <path d="m19.07 4.93-1.41 1.41"/>
+  </svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+  </svg>
+  <svg class="icon-sunmoon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4"/>
+    <path d="M12 2v2"/>
+    <path d="M12 20v2"/>
+    <path d="m4.9 4.9 1.4 1.4"/>
+    <path d="m17.7 17.7 1.4 1.4"/>
+    <path d="M2 12h2"/>
+    <path d="M20 12h2"/>
+    <path d="m6.3 17.7-1.4 1.4"/>
+    <path d="m19.1 4.9-1.4 1.4"/>
+  </svg>
+</button>
+<div class="overlay" id="submitOverlay">
+  <div class="overlay-card overlay-card--info">
+    <div class="overlay-card__spinner" aria-hidden="true"></div>
+    <h3 class="overlay-card__title">Enviando tu examen</h3>
+    <p class="overlay-card__body" id="submitMsg">Estamos registrando tu entrega en el servidor. Por favor, no cierres esta página.</p>
+    <p class="overlay-card__meta" id="submitAttempts"></p>
+    <p class="overlay-card__body"><span class="tag tag--warn">Mantén el WiFi conectado. Se reintentará hasta confirmar.</span></p>
   </div>
 </div>
 
-<div class="tab-warn-overlay" id="tabWarnOverlay">
-  <div class="tab-warn-card" id="tabWarnCard">
-    <div class="tab-warn-icon" id="tabWarnIcon">⚠️</div>
-    <h3 id="tabWarnTitle">Aviso</h3>
-    <p id="tabWarnMsg"></p>
-    <button onclick="hideTabWarn()">Entendido</button>
+<div class="overlay" id="tabWarnOverlay">
+  <div class="overlay-card overlay-card--warn" id="tabWarnCard">
+    <div class="overlay-card__icon" id="tabWarnIcon" aria-hidden="true">!</div>
+    <h3 class="overlay-card__title" id="tabWarnTitle">Aviso</h3>
+    <p class="overlay-card__body" id="tabWarnMsg"></p>
+    <div class="overlay-card__actions">
+      <button class="btn btn--primary" onclick="hideTabWarn()">Entendido</button>
+    </div>
   </div>
 </div>
 
-<div class="cancel-overlay" id="cancelOverlay">
-  <div class="cancel-card">
-    <div class="cancel-icon">⛔</div>
-    <h2>Examen cancelado</h2>
-    <p>Has salido del examen <strong>4 veces</strong>.</p>
-    <p>Tu examen ha sido <strong>cancelado</strong>. Acude con tu profesor para más información.</p>
+<div class="overlay" id="cancelOverlay">
+  <div class="overlay-card overlay-card--danger">
+    <div class="overlay-card__icon" aria-hidden="true">✕</div>
+    <h2 class="overlay-card__title">Examen cancelado</h2>
+    <p class="overlay-card__body">Has salido del examen <strong id="cancelCount">3 veces</strong>.</p>
+    <p class="overlay-card__body">Tu examen ha sido <strong>cancelado</strong>. Acude con tu profesor para más información.</p>
   </div>
 </div>
 <script>
@@ -1252,23 +1500,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <!-- ── Results Screen ── -->
 <div id="resultsScreen" class="screen results-screen">
-  <h2 style="font-size:26px; font-weight:700;">Examen entregado</h2>
-  <p id="resultsName" style="font-size:18px; color:#2c5282; font-weight:600;"></p>
-  <div id="scoreCircle" style="width:180px; height:180px; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:700;">
-    <span id="scoreNum" style="font-size:52px; line-height:1;">0</span>
-    <span id="scoreLabel" style="font-size:14px; font-weight:500; opacity:0.8; margin-top:4px;">de 128 aciertos</span>
-  </div>
-  <p id="resultsDetail" style="font-size:16px; color:#555;"></p>
-  <div style="display:flex; gap:10px; margin-top:8px; flex-wrap:wrap; justify-content:center;">
-    <button onclick="startReview()" style="padding:16px 36px; font-size:17px; font-weight:600; background:#2c5282; color:#fff; border:none; border-radius:12px; cursor:pointer;">Revisar examen</button>
-    <button onclick="downloadPDF()" style="padding:16px 36px; font-size:17px; font-weight:600; background:#16a34a; color:#fff; border:none; border-radius:12px; cursor:pointer;">Descargar comprobante</button>
-  </div>
-  <p style="font-size:13px; color:#999; margin-top:4px;">Navega por las preguntas y ve cuales tuviste bien y mal</p>
-  <hr class="divider" />
-  <div class="topic-breakdown" id="topicBreakdown" style="display:none;">
-    <h3>Tu rendimiento por tema</h3>
-    <div id="topicRows"></div>
-  </div>
+  <main class="container container--base results-screen__main">
+    <header class="result-hero">
+      <span class="eyebrow">Examen entregado</span>
+      <p class="result-hero__name" id="resultsName"></p>
+      <div class="result-score" id="scoreBlock">
+        <span class="result-score__num" id="scoreNum">0</span>
+        <span class="result-score__max" id="scoreMax"> / 128</span>
+      </div>
+      <p class="result-score__pct" id="scorePct"></p>
+      <p class="result-hero__detail" id="resultsDetail"></p>
+    </header>
+
+    <div class="result-cta">
+      <div class="result-actions">
+        <button class="btn btn--primary" onclick="startReview()">Revisar examen</button>
+        <button class="btn btn--secondary" onclick="downloadPDF()">Descargar comprobante</button>
+      </div>
+      <p class="result-hero__hint">Navega por las preguntas para ver cuáles tuviste bien y cuáles mal.</p>
+    </div>
+
+    <section class="result-breakdown" id="topicBreakdown" style="display:none;">
+      <h3 class="result-breakdown__title">Rendimiento por materia</h3>
+      <ul class="topic-rows" id="topicRows"></ul>
+    </section>
+  </main>
 </div>
 
 <script>
@@ -1613,9 +1869,9 @@ function renderNavGrid() {
     if (state.reviewMode) {
       const correct = state.answerKey[q.id];
       const mine = state.answers[q.id];
-      if (!mine) { /* sin responder, neutro */ }
+      if (!mine) cls += ' is-unanswered';
       else if (mine === correct) cls += ' is-answered';
-      else cls += ' is-marked';  /* incorrecta usa el mismo amarillo de marcado para distinción */
+      else cls += ' is-wrong';
     } else {
       if (state.marked.includes(q.id)) cls += ' is-marked';
       else if (state.answers[q.id]) cls += ' is-answered';
@@ -1704,15 +1960,21 @@ function enterReviewMode(data) {
   const total = state.questions.length;
   document.getElementById('resultsName').textContent = state.name;
   document.getElementById('scoreNum').textContent = correct !== null ? correct : '—';
-  document.getElementById('scoreLabel').textContent = correct !== null ? `de ${total} aciertos` : 'examen entregado';
-  document.getElementById('resultsDetail').textContent = correct !== null
-    ? `Respondiste ${correct} preguntas correctamente de ${total}`
-    : 'Tu examen fue enviado. El resultado lo veras con tu profesor.';
-  const circle = document.getElementById('scoreCircle');
-  if (correct === null) { circle.style.background = '#f1f5f9'; circle.style.color = '#475569'; }
-  else if (correct >= 95) { circle.style.background = '#dcfce7'; circle.style.color = '#16a34a'; }
-  else if (correct >= 51) { circle.style.background = '#fef9c3'; circle.style.color = '#a16207'; }
-  else { circle.style.background = '#fef2f2'; circle.style.color = '#e53e3e'; }
+  document.getElementById('scoreMax').textContent = ` / ${total}`;
+  const pctEl = document.getElementById('scorePct');
+  const detailEl = document.getElementById('resultsDetail');
+  const scoreBlock = document.getElementById('scoreBlock');
+  if (correct === null) {
+    scoreBlock.setAttribute('data-state', 'pending');
+    pctEl.textContent = '';
+    detailEl.textContent = 'Tu examen fue enviado. El resultado lo verás con tu profesor.';
+  } else {
+    const pct = Math.round((correct / total) * 100);
+    const state2 = pct >= 70 ? 'ok' : pct >= 50 ? 'warn' : 'err';
+    scoreBlock.setAttribute('data-state', state2);
+    pctEl.textContent = `${pct}%`;
+    detailEl.textContent = `Respondiste ${correct} de ${total} preguntas correctamente.`;
+  }
   showScreen('resultsScreen');
   try { localStorage.removeItem('examState'); } catch(e) {}
   // Solo borrar el respaldo si el server confirmo con aciertos reales
@@ -1721,14 +1983,14 @@ function enterReviewMode(data) {
 
 function renderTopicBreakdown() {
   if (!state.answerKey || Object.keys(state.answerKey).length === 0) return;
-  const topics = {};
+  const subjects = {};
   state.questions.forEach(q => {
-    const key = q.topic_name || q.subject;
-    if (!topics[key]) topics[key] = { subject: q.subject, total: 0, correct: 0 };
-    topics[key].total++;
-    if (state.answers[q.id] === state.answerKey[q.id]) topics[key].correct++;
+    const key = q.subject || 'Sin materia';
+    if (!subjects[key]) subjects[key] = { total: 0, correct: 0 };
+    subjects[key].total++;
+    if (state.answers[q.id] === state.answerKey[q.id]) subjects[key].correct++;
   });
-  const sorted = Object.entries(topics).sort((a, b) => {
+  const sorted = Object.entries(subjects).sort((a, b) => {
     const pctA = a[1].correct / a[1].total;
     const pctB = b[1].correct / b[1].total;
     return pctB - pctA;
@@ -1737,40 +1999,61 @@ function renderTopicBreakdown() {
   container.innerHTML = '';
   sorted.forEach(([name, data]) => {
     const pct = Math.round((data.correct / data.total) * 100);
-    const barClass = pct >= 70 ? 'bar-green' : pct >= 50 ? 'bar-amber' : 'bar-red';
-    const pctColor = pct >= 70 ? '#16a34a' : pct >= 50 ? '#a16207' : '#e53e3e';
-    const row = document.createElement('div');
-    row.className = 'topic-row';
-    row.innerHTML = `
-      <div class="topic-row-header">
-        <span class="topic-name">${name}</span>
-        <span class="topic-subject">${data.subject}</span>
-        <span class="topic-pct" style="color:${pctColor}">${pct}%</span>
+    const rowState = pct >= 70 ? 'ok' : pct >= 50 ? 'warn' : 'err';
+    const li = document.createElement('li');
+    li.className = 'topic-row';
+    li.setAttribute('data-state', rowState);
+    li.innerHTML = `
+      <div class="topic-row__head">
+        <span class="topic-row__name"></span>
+        <span class="topic-row__pct">${pct}%</span>
       </div>
-      <div class="topic-bar-bg"><div class="topic-bar-fill ${barClass}" style="width:0%" data-pct="${pct}"></div></div>
-      <div class="topic-score-detail">${data.correct} de ${data.total} preguntas correctas</div>
+      <div class="topic-row__bar"><div class="topic-row__fill" data-pct="${pct}"></div></div>
+      <div class="topic-row__meta">
+        <span class="topic-row__count">${data.correct} de ${data.total} aciertos</span>
+      </div>
     `;
-    container.appendChild(row);
+    li.querySelector('.topic-row__name').textContent = name;
+    container.appendChild(li);
   });
   document.getElementById('topicBreakdown').style.display = '';
   requestAnimationFrame(() => {
-    document.querySelectorAll('.topic-bar-fill').forEach(el => {
+    document.querySelectorAll('.topic-row__fill').forEach(el => {
       el.style.width = el.dataset.pct + '%';
     });
   });
 }
 
 function downloadPDF() {
-  try { _downloadPDFImpl(); }
-  catch (err) {
+  // Deshabilitar todos los botones de descarga para evitar doble clic, y avisar
+  // al alumno que está procesando (la generación del PDF tarda varios segundos).
+  const btns = document.querySelectorAll('button[onclick="downloadPDF()"]');
+  const original = [];
+  btns.forEach(btn => {
+    original.push({ el: btn, text: btn.textContent, disabled: btn.disabled });
+    btn.disabled = true;
+    btn.textContent = 'Generando PDF…';
+  });
+  const restore = () => {
+    original.forEach(({ el, text, disabled }) => {
+      el.textContent = text;
+      el.disabled = disabled;
+    });
+  };
+  try {
+    _downloadPDFImpl(restore);
+  } catch (err) {
     console.error('downloadPDF error:', err);
+    restore();
     alert('No se pudo generar el comprobante: ' + (err && err.message ? err.message : err));
   }
 }
 
-function _downloadPDFImpl() {
+async function _downloadPDFImpl(onDone) {
+  const done = typeof onDone === 'function' ? onDone : () => {};
   if (!state.questions || state.questions.length === 0) {
     alert('Aun no hay datos del examen para generar el comprobante.');
+    done();
     return;
   }
   const correct = Object.keys(state.answerKey || {}).length > 0
@@ -1786,6 +2069,25 @@ function _downloadPDFImpl() {
   }
   const fecha = new Date().toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
 
+  // Pre-fetch de SVGs: los inline en el HTML del comprobante porque html2canvas
+  // no escala bien <img src=*.svg> (dibuja a tamaño natural, recorta al rect del img).
+  // Inline le pasa al rasterizador DOM nativo, que escala perfecto vía CSS.
+  const svgCache = {};
+  const svgUrls = [...new Set(state.questions.filter(q => q.image && q.image.toLowerCase().endsWith('.svg')).map(q => q.image))];
+  await Promise.all(svgUrls.map(async url => {
+    try {
+      const r = await fetch(url);
+      if (!r.ok) return;
+      let txt = await r.text();
+      // Quitar width/height del <svg> raíz para que respete el tamaño del contenedor.
+      txt = txt.replace(/<svg([^>]*)\swidth="[^"]*"/i, '<svg$1').replace(/<svg([^>]*)\sheight="[^"]*"/i, '<svg$1');
+      svgCache[url] = txt;
+    } catch (e) {
+      console.warn('[comprobante] no se pudo cargar SVG:', url, e);
+    }
+  }));
+  console.log('[comprobante] SVGs inline:', Object.keys(svgCache).length, '/', svgUrls.length);
+
   // Build subject breakdown
   const subjects = {};
   state.questions.forEach(q => {
@@ -1797,29 +2099,32 @@ function _downloadPDFImpl() {
   const sortedSubjects = Object.entries(subjects).sort((a, b) => {
     return (b[1].correct / b[1].total) - (a[1].correct / a[1].total);
   });
+  // Estado global del score: ok ≥70%, warn 50-69%, err <50%, pending si no hay correct.
+  const overallPct = correct !== null ? Math.round((correct / total) * 100) : null;
+  const overallState = correct === null
+    ? 'pending'
+    : (overallPct >= 70 ? 'ok' : overallPct >= 50 ? 'warn' : 'err');
+
   const subjectRowsHTML = sortedSubjects.map(([name, data]) => {
     const pct = Math.round((data.correct / data.total) * 100);
-    const barColor = pct >= 70 ? '#16a34a' : pct >= 50 ? '#eab308' : '#e53e3e';
-    const pctColor = pct >= 70 ? '#16a34a' : pct >= 50 ? '#a16207' : '#e53e3e';
+    const st = pct >= 70 ? 'ok' : pct >= 50 ? 'warn' : 'err';
     return `
-      <div style="margin-bottom:10px;">
-        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:3px;">
-          <span style="font-size:12px; color:#555; flex:1; padding-right:8px;">${name}</span>
-          <span style="font-size:12px; font-weight:700; margin-left:8px; color:${pctColor};">${pct}%</span>
+      <div class="subject-row" data-state="${st}">
+        <div class="subject-row__head">
+          <span class="subject-row__name">${name}</span>
+          <span class="subject-row__pct">${pct}%</span>
         </div>
-        <div style="height:7px; background:#ebebeb; border-radius:4px; overflow:hidden;">
-          <div style="height:100%; width:${pct}%; background:${barColor}; border-radius:4px;"></div>
-        </div>
-        <div style="font-size:10px; color:#999; margin-top:2px;">${data.correct} de ${data.total} preguntas correctas</div>
+        <div class="subject-row__bar"><div class="subject-row__fill" style="width:${pct}%"></div></div>
+        <div class="subject-row__count">${data.correct} de ${data.total} aciertos</div>
       </div>`;
   }).join('');
   const topicBreakdownHTML = sortedSubjects.length > 0 ? `
-    <div style="margin:20px auto; max-width:480px; page-break-inside:avoid;">
-      <h3 style="font-size:14px; font-weight:600; margin-bottom:12px; text-align:center; color:#444;">Desempeño por materia</h3>
-      ${subjectRowsHTML}
-    </div>` : '';
+    <section class="section">
+      <h2 class="section__title">Rendimiento por materia</h2>
+      <div class="subject-rows">${subjectRowsHTML}</div>
+    </section>` : '';
 
-  // Group questions by subject in display order
+  // Detalle de respuestas: una "card" por pregunta con eyebrow, texto y opciones tipo review.
   const questionsHTML = state.questions.map((q, idx) => {
     const mine = state.answers[q.id];
     const correctAns = state.answerKey[q.id];
@@ -1828,24 +2133,16 @@ function _downloadPDFImpl() {
     const optionsHTML = letters.map(letter => {
       const isCorrect = letter === correctAns;
       const isMine = letter === mine;
-      let style = 'padding:6px 10px; margin:2px 0; border-radius:6px; font-size:12px;';
+      let cls = 'option';
       let marker = '';
-      if (isCorrect && isMine) {
-        style += ' background:#dcfce7; border:1px solid #16a34a;';
-        marker = ' ✓ (tu respuesta)';
-      } else if (isCorrect) {
-        style += ' background:#dcfce7; border:1px solid #16a34a;';
-        marker = ' ✓';
-      } else if (isMine) {
-        style += ' background:#fef2f2; border:1px solid #e53e3e;';
-        marker = ' ✗ (tu respuesta)';
-      } else {
-        style += ' background:#f8f8f8; border:1px solid #e5e5e5;';
-      }
-      return `<div style="${style}"><b>${letter}.</b> ${renderMath(q.options[letter])}${marker}</div>`;
+      if (isCorrect && isMine)      { cls += ' option--correct';   marker = ' Tu respuesta'; }
+      else if (isCorrect)           { cls += ' option--correct';   marker = ' Correcta'; }
+      else if (isMine)              { cls += ' option--incorrect'; marker = ' Tu respuesta'; }
+      // sin marker para neutrales
+      return `<div class="${cls}"><span class="option__letter">${letter}</span><span class="option__text">${renderMath(q.options[letter])}</span>${marker ? `<span class="option__marker">${marker}</span>` : ''}</div>`;
     }).join('');
 
-    // Truncate very long question texts (readings) for the PDF
+    // Trunca lecturas muy largas para no inflar el PDF (mismo umbral que antes).
     let qText = q.text;
     const maxLen = 1500;
     if (qText.length > maxLen) {
@@ -1853,117 +2150,471 @@ function _downloadPDFImpl() {
       if (lastParagraph > maxLen * 0.3) {
         const readingPart = qText.substring(0, lastParagraph);
         const questionPart = qText.substring(lastParagraph);
-        // Show truncated reading + full question
         qText = readingPart.substring(0, 300) + '\n\n[...]\n\n' + questionPart;
       }
     }
 
-    const imgHTML = q.image ? `<img src="${q.image}" style="max-width:280px; max-height:200px; margin:6px 0; display:block;">` : '';
-
+    let imgHTML = '';
+    if (q.image) {
+      if (q.image.toLowerCase().endsWith('.svg') && svgCache[q.image]) {
+        // Inline el SVG: html2canvas escala bien el DOM nativo, mal los <img src=.svg>.
+        imgHTML = `<div class="question__svg">${svgCache[q.image]}</div>`;
+      } else {
+        imgHTML = `<img class="question__img" src="${q.image}" alt="">`;
+      }
+    }
     return `
-      <div style="page-break-inside:avoid; margin-bottom:14px; padding:10px; border:1px solid #e5e5e5; border-radius:8px;">
-        <div style="font-size:11px; color:#666; margin-bottom:4px;">${q.subject} — Pregunta ${idx + 1}</div>
-        <div style="font-size:13px; margin-bottom:6px;">${renderMath(qText)}</div>
+      <article class="question">
+        <div class="question__head">${q.subject} — Pregunta ${idx + 1}</div>
+        <div class="question__text">${renderMath(qText)}</div>
         ${imgHTML}
-        ${optionsHTML}
-      </div>`;
+        <div class="question__options">${optionsHTML}</div>
+      </article>`;
   }).join('');
 
-  const origin = window.location.origin;
-  const html = `<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="${origin}/">
-<title>Comprobante — ${state.name}</title>
-<link rel="stylesheet" href="${origin}/katex.min.css">
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding:20px; color:#1a1a1a; font-size:13px; }
-  @media print { body { padding:10px; } .no-print { display:none !important; } @page { margin:15mm 10mm; } }
-  .header { text-align:center; margin-bottom:20px; padding-bottom:14px; border-bottom:2px solid #2c5282; }
-  .header h1 { font-size:20px; color:#2c5282; margin-bottom:4px; }
-  .stats { display:flex; justify-content:center; gap:24px; margin-top:10px; font-size:14px; }
-  .stat-box { text-align:center; }
-  .stat-val { font-size:28px; font-weight:700; }
-  .stat-label { font-size:11px; color:#666; }
-  .print-btn { display:block; margin:20px auto; padding:14px 40px; font-size:16px; font-weight:600; background:#2c5282; color:#fff; border:none; border-radius:10px; cursor:pointer; }
-  .hint { max-width:520px; margin:12px auto 0; padding:10px 14px; background:#ebf4ff; border:1px solid #bfdbfe; border-radius:8px; color:#1e3a8a; font-size:12px; text-align:center; line-height:1.5; }
-</style></head><body>
-<div class="header">
-  <h1>${state.title || 'Examen'}</h1>
-  <div style="font-size:15px; font-weight:600; margin-top:2px;">${state.name}</div>
-  <div style="font-size:12px; color:#666;">${state.group} — ${fecha}</div>
-  <div style="display:flex; justify-content:center; margin:16px 0 10px;">
-    <div style="width:160px; height:160px; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:700; background:${correct === null ? '#f1f5f9' : correct >= 95 ? '#dcfce7' : correct >= 51 ? '#fef9c3' : '#fef2f2'}; color:${correct === null ? '#475569' : correct >= 95 ? '#16a34a' : correct >= 51 ? '#a16207' : '#e53e3e'};">
-      <span style="font-size:46px; line-height:1;">${correct !== null ? correct : '—'}</span>
-      <span style="font-size:13px; font-weight:500; opacity:0.8; margin-top:4px;">${correct !== null ? `de ${total} aciertos` : 'examen entregado'}</span>
-    </div>
-  </div>
-  <div class="stats">
-    <div class="stat-box"><div class="stat-val">${correct !== null ? Math.round(correct / total * 100) : '—'}%</div><div class="stat-label">calificación</div></div>
-    <div class="stat-box"><div class="stat-val" style="font-size:20px; margin-top:6px;">${timeStr}</div><div class="stat-label">tiempo</div></div>
-  </div>
-  <p class="hint no-print">Para guardar como PDF: aprieta <b>Guardar como PDF</b> abajo, o usa <b>Compartir → Imprimir → Guardar en Archivos</b> (iPad).</p>
-</div>
-${topicBreakdownHTML}
-${questionsHTML}
-<button class="print-btn no-print" onclick="window.print()">Guardar como PDF</button>
-</body></html>`;
-
-  // Iframe con srcdoc: hereda el origen de la pagina, asi las imagenes y el CSS de KaTeX
-  // (rutas relativas al server) cargan sin problema. Disparamos print directo sobre el
-  // iframe para que el usuario reciba el dialogo de impresion (Save as PDF en Mac,
-  // Compartir -> Imprimir en iPad).
-  const existing = document.getElementById('pdfIframe');
-  if (existing) existing.parentNode.removeChild(existing);
-
-  const iframe = document.createElement('iframe');
-  iframe.id = 'pdfIframe';
-  iframe.style.position = 'fixed';
-  iframe.style.left = '-10000px';
-  iframe.style.top = '0';
-  iframe.style.width = '900px';
-  iframe.style.height = '1200px';
-  iframe.style.border = '0';
-  iframe.setAttribute('aria-hidden', 'true');
-  iframe.srcdoc = html;
-
-  let triggered = false;
-  function triggerPrint() {
-    if (triggered) return;
-    triggered = true;
-    try {
-      iframe.contentWindow.focus();
-      iframe.contentWindow.print();
-    } catch (err) {
-      console.error('Print iframe failed, abriendo en ventana:', err);
-      // Fallback: abrir la misma vista en ventana nueva via blob URL
-      try {
-        const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
-        const url = URL.createObjectURL(blob);
-        const w = window.open(url, '_blank');
-        if (!w) {
-          const a = document.createElement('a');
-          a.href = url;
-          a.download = `comprobante_${(state.name || 'examen').replace(/\s+/g, '_')}.html`;
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-        }
-        setTimeout(() => URL.revokeObjectURL(url), 60000);
-      } catch (e) { alert('No se pudo generar el comprobante.'); }
+  // CSS scoped a .comprobante-doc para no contaminar el resto de la página.
+  // El comprobante se monta en el DOM principal (no iframe) para que html2canvas
+  // pueda leer los estilos correctamente al rasterizar.
+  const docCSS = `
+    .comprobante-doc {
+      --crema-100: #f8f3e8;
+      --crema-200: #f5efe4;
+      --crema-300: #efe7d8;
+      --crema-500: #d9ccae;
+      --crema-600: #c9bda3;
+      --ink-300:   #8c7556;
+      --ink-500:   #7a6448;
+      --ink-700:   #4a3f33;
+      --ink-900:   #1f1a16;
+      --accent-conac: #6b3a2e;
+      --state-ok:    #5a8045;  --state-ok-bg:   #e7ecd9;
+      --state-warn:  #b8862e;  --state-warn-bg: #f1e6c4;
+      --state-err:   #b8362c;  --state-err-bg:  #f1dcd4;
+      font-family: 'IBM Plex Sans', sans-serif;
+      background-color: var(--crema-100);
+      color: var(--ink-900);
+      font-size: 13px;
+      line-height: 1.55;
+      padding: 24px 28px;
+      /* 740px = ancho útil de letter @ 96dpi con 10mm de margen por lado. */
+      width: 740px;
+      box-sizing: border-box;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      margin: 0 auto;
     }
-    // Limpiar iframe despues de que el dialogo se cierre
-    setTimeout(() => { try { iframe.parentNode.removeChild(iframe); } catch(e) {} }, 10000);
+    .comprobante-doc *, .comprobante-doc *::before, .comprobante-doc *::after { box-sizing: border-box; }
+    .comprobante-doc h1, .comprobante-doc h2, .comprobante-doc h3 {
+      font-family: 'Fraunces', serif; font-weight: 600; line-height: 1.15;
+      letter-spacing: -0.005em; margin: 0;
+    }
+    .comprobante-doc p { margin: 0; }
+    /* Negritas e itálicas explícitas: el texto del examen usa <b> e <i> (de
+       Markdown ** y *). Sin estas reglas, heredan --color-text-primary del
+       documento padre, que en dark mode es cream claro → invisible en el
+       comprobante (que siempre tiene bg crema claro). */
+    .comprobante-doc b,
+    .comprobante-doc strong {
+      font-weight: 600;
+      color: var(--ink-900);
+    }
+    .comprobante-doc i,
+    .comprobante-doc em {
+      font-style: italic;
+      color: var(--ink-900);
+    }
+
+    .comprobante-doc .eyebrow {
+      font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--ink-300); font-weight: 500; display: inline-block;
+    }
+
+    .comprobante-doc .hero {
+      text-align: center; padding-bottom: 24px;
+      border-bottom: 1px solid var(--crema-500); margin-bottom: 28px;
+    }
+    .comprobante-doc .hero__exam {
+      font-family: 'Fraunces', serif; font-size: 17px; font-weight: 500;
+      color: var(--ink-500); margin: 8px 0 2px;
+    }
+    .comprobante-doc .hero__name {
+      font-family: 'Fraunces', serif; font-style: italic; font-size: 26px;
+      font-weight: 500; color: var(--accent-conac); margin-top: 6px;
+    }
+    .comprobante-doc .hero__meta {
+      font-family: 'IBM Plex Mono', monospace; font-size: 11px;
+      color: var(--ink-300); margin-top: 6px; letter-spacing: 0.04em;
+    }
+
+    .comprobante-doc .score {
+      display: inline-flex; align-items: baseline; gap: 2px;
+      margin-top: 22px; font-family: 'Fraunces', serif;
+      font-weight: 600; line-height: 1;
+    }
+    .comprobante-doc .score__num { font-size: 52px; color: var(--ink-900); }
+    .comprobante-doc .score__max {
+      font-size: 24px; color: var(--ink-300); font-weight: 500; margin-left: 4px;
+    }
+    .comprobante-doc .score[data-state="ok"]      .score__num { color: var(--state-ok); }
+    .comprobante-doc .score[data-state="warn"]    .score__num { color: var(--state-warn); }
+    .comprobante-doc .score[data-state="err"]     .score__num { color: var(--state-err); }
+    .comprobante-doc .score[data-state="pending"] .score__num { color: var(--ink-300); }
+    .comprobante-doc .score__pct {
+      font-family: 'IBM Plex Mono', monospace; font-size: 13px;
+      color: var(--ink-500); margin-top: 6px; letter-spacing: 0.04em;
+    }
+    .comprobante-doc .hero__detail {
+      font-size: 13px; color: var(--ink-500); margin: 10px auto 0;
+      max-width: 42ch;
+    }
+
+    .comprobante-doc .stats {
+      display: flex; justify-content: center; gap: 40px;
+      margin-top: 20px; padding-top: 16px;
+      border-top: 1px dotted var(--crema-600);
+    }
+    .comprobante-doc .stat {
+      display: flex; flex-direction: column; align-items: center; gap: 2px;
+    }
+    .comprobante-doc .stat__label {
+      font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--ink-300); font-weight: 500;
+    }
+    .comprobante-doc .stat__value {
+      font-family: 'IBM Plex Mono', monospace; font-size: 17px;
+      font-weight: 500; color: var(--ink-900); font-variant-numeric: tabular-nums;
+    }
+
+    .comprobante-doc .section { margin-top: 32px; page-break-inside: avoid; }
+    .comprobante-doc .section__title {
+      font-family: 'Fraunces', serif; font-size: 18px; font-weight: 500;
+      color: var(--ink-900); text-align: center; margin-bottom: 18px;
+    }
+
+    .comprobante-doc .subject-rows {
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .comprobante-doc .subject-row {
+      padding-bottom: 12px;
+      border-bottom: 1px dotted var(--crema-600);
+      page-break-inside: avoid;
+    }
+    .comprobante-doc .subject-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .comprobante-doc .subject-row__head {
+      display: flex; justify-content: space-between; align-items: baseline;
+      margin-bottom: 6px; gap: 12px;
+    }
+    .comprobante-doc .subject-row__name {
+      font-size: 14px; font-weight: 500; color: var(--ink-900); flex: 1;
+    }
+    .comprobante-doc .subject-row__pct {
+      font-family: 'IBM Plex Mono', monospace; font-size: 14px;
+      font-weight: 500; font-variant-numeric: tabular-nums;
+      color: var(--ink-500);
+    }
+    .comprobante-doc .subject-row[data-state="ok"]   .subject-row__pct { color: var(--state-ok); }
+    .comprobante-doc .subject-row[data-state="warn"] .subject-row__pct { color: var(--state-warn); }
+    .comprobante-doc .subject-row[data-state="err"]  .subject-row__pct { color: var(--state-err); }
+    .comprobante-doc .subject-row__bar {
+      height: 4px; background-color: var(--crema-500);
+      border-radius: 999px; overflow: hidden;
+    }
+    .comprobante-doc .subject-row__fill {
+      height: 100%; border-radius: inherit; background-color: var(--ink-300);
+    }
+    .comprobante-doc .subject-row[data-state="ok"]   .subject-row__fill { background-color: var(--state-ok); }
+    .comprobante-doc .subject-row[data-state="warn"] .subject-row__fill { background-color: var(--state-warn); }
+    .comprobante-doc .subject-row[data-state="err"]  .subject-row__fill { background-color: var(--state-err); }
+    .comprobante-doc .subject-row__count {
+      font-family: 'IBM Plex Mono', monospace; font-size: 11px;
+      color: var(--ink-500); margin-top: 6px; text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .comprobante-doc .question {
+      margin-bottom: 14px; padding: 14px 16px;
+      background-color: #faf7f0;
+      border: 1px solid var(--crema-500); border-radius: 6px;
+      page-break-inside: avoid;
+    }
+    .comprobante-doc .question__head {
+      font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--ink-300); font-weight: 500; margin-bottom: 6px;
+    }
+    .comprobante-doc .question__text {
+      font-size: 13px; color: var(--ink-900);
+      margin-bottom: 8px; line-height: 1.55;
+    }
+    .comprobante-doc .question__img {
+      width: 200px; height: auto; max-height: 200px;
+      margin: 8px 0; display: block;
+    }
+    .comprobante-doc .question__svg {
+      width: 220px;
+      margin: 8px 0;
+    }
+    .comprobante-doc .question__svg svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-height: 180px;
+    }
+    .comprobante-doc .question__options {
+      display: flex; flex-direction: column; gap: 4px; margin-top: 6px;
+    }
+    .comprobante-doc .option {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 8px 12px;
+      border: 1px solid var(--crema-500); border-left-width: 3px;
+      border-radius: 4px; font-size: 12px;
+      background-color: transparent; color: var(--ink-700);
+    }
+    .comprobante-doc .option__letter {
+      font-family: 'IBM Plex Mono', monospace; font-weight: 500;
+      color: var(--ink-300); min-width: 14px;
+    }
+    .comprobante-doc .option__text { flex: 1; }
+    .comprobante-doc .option__marker {
+      font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--ink-300); font-weight: 500;
+      white-space: nowrap; margin-left: 4px;
+    }
+    .comprobante-doc .option--correct {
+      background-color: var(--state-ok-bg); border-color: var(--state-ok);
+    }
+    .comprobante-doc .option--correct .option__letter,
+    .comprobante-doc .option--correct .option__marker { color: var(--state-ok); }
+    .comprobante-doc .option--incorrect {
+      background-color: var(--state-err-bg); border-color: var(--state-err);
+    }
+    .comprobante-doc .option--incorrect .option__letter,
+    .comprobante-doc .option--incorrect .option__marker { color: var(--state-err); }
+
+    .comprobante-doc .katex { color: inherit; }
+  `;
+
+  const docInner = `
+    <header class="hero">
+      <span class="eyebrow">Comprobante de examen</span>
+      <div class="hero__exam">${state.title || 'Examen'}</div>
+      <div class="hero__name">${state.name}</div>
+      <div class="hero__meta">${state.group} · ${fecha}</div>
+      <div class="score" data-state="${overallState}">
+        <span class="score__num">${correct !== null ? correct : '—'}</span>
+        <span class="score__max"> / ${total}</span>
+      </div>
+      ${correct !== null ? `<div class="score__pct">${overallPct}%</div>` : ''}
+      <p class="hero__detail">${
+        correct !== null
+          ? `Respondió ${correct} de ${total} preguntas correctamente.`
+          : 'Examen entregado. El resultado lo verá con su profesor.'
+      }</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat__label">Calificación</span>
+          <span class="stat__value">${correct !== null ? `${overallPct}%` : '—'}</span>
+        </div>
+        <div class="stat">
+          <span class="stat__label">Tiempo</span>
+          <span class="stat__value">${timeStr}</span>
+        </div>
+      </div>
+    </header>
+    ${topicBreakdownHTML}
+    <section class="section">
+      <h2 class="section__title">Detalle de respuestas</h2>
+      ${questionsHTML}
+    </section>
+  `;
+
+  // html2canvas necesita el nodo VISIBLE en el documento para rasterizarlo bien
+  // (off-screen via `left:-10000px` produce canvas en blanco). Lo montamos en
+  // top:0 / left:0 y cubrimos todo con un overlay de carga que también le da
+  // feedback al alumno de que está procesando.
+  ['comprobanteDoc', 'comprobanteDocStyle', 'comprobanteLoader'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.parentNode.removeChild(el);
+  });
+
+  const styleEl = document.createElement('style');
+  styleEl.id = 'comprobanteDocStyle';
+  styleEl.textContent = docCSS;
+  document.head.appendChild(styleEl);
+
+  // Overlay primero: cubre todo el viewport con z-index altísimo. Bajo él
+  // pondremos el comprobante, que se renderiza en flujo normal del documento.
+  const loader = document.createElement('div');
+  loader.id = 'comprobanteLoader';
+  loader.className = 'overlay show';
+  loader.style.zIndex = '999999';
+  loader.innerHTML = `
+    <div class="overlay-card overlay-card--info">
+      <div class="overlay-card__spinner" aria-hidden="true"></div>
+      <h3 class="overlay-card__title">Generando comprobante</h3>
+      <p class="overlay-card__body">Estamos preparando tu PDF. Esto puede tardar unos segundos.</p>
+    </div>
+  `;
+  document.body.appendChild(loader);
+
+  // Comprobante en flujo normal (sin position: fixed). html2canvas tiene problemas
+  // capturando elementos fixed/offscreen; en flujo normal lee bien las dimensiones.
+  // El loader (z-index altísimo) lo oculta visualmente.
+  const root = document.createElement('div');
+  root.id = 'comprobanteDoc';
+  root.className = 'comprobante-doc';
+  root.setAttribute('aria-hidden', 'true');
+  root.style.width = '740px';
+  root.style.margin = '0';
+  root.innerHTML = docInner;
+  document.body.appendChild(root);
+
+  const fileBase = `comprobante_${(state.name || 'examen').replace(/\s+/g, '_')}`;
+
+  function cleanup() {
+    try { root.parentNode && root.parentNode.removeChild(root); } catch (e) {}
+    try { styleEl.parentNode && styleEl.parentNode.removeChild(styleEl); } catch (e) {}
+    try { loader.parentNode && loader.parentNode.removeChild(loader); } catch (e) {}
   }
 
-  iframe.onload = () => {
-    // Esperar un momento extra para que imagenes y KaTeX CSS terminen de cargar
-    setTimeout(triggerPrint, 400);
-  };
-  // Red de seguridad si onload nunca dispara
-  setTimeout(triggerPrint, 3000);
+  function downloadAsHTML() {
+    try {
+      const origin = window.location.origin;
+      const fullHTML = `<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comprobante — ${state.name}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="${origin}/katex.min.css">
+<style>${docCSS}</style></head><body><div class="comprobante-doc">${docInner}</div></body></html>`;
+      const blob = new Blob([fullHTML], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${fileBase}.html`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 60000);
+    } catch (e) {
+      console.error('Fallback HTML download failed:', e);
+      alert('No se pudo generar el comprobante.');
+    }
+  }
 
-  document.body.appendChild(iframe);
+  async function triggerSave() {
+    try {
+      // html2canvas y jsPDF vienen bundled en html2pdf.bundle.js. Los usamos
+      // directo y hacemos el slicing por páginas manualmente, así controlamos
+      // exactamente el ancho y la posición horizontal del contenido en el PDF.
+      const h2c = window.html2canvas;
+      const jsPDFCtor = (window.jspdf && window.jspdf.jsPDF) || window.jsPDF;
+      if (!h2c || !jsPDFCtor) {
+        console.warn('html2canvas o jsPDF no disponibles, descargando como HTML.');
+        downloadAsHTML();
+        return;
+      }
+      if (document.fonts && document.fonts.ready) {
+        try { await document.fonts.ready; } catch (e) {}
+      }
+      console.log('[comprobante] root size:', root.offsetWidth, 'x', root.offsetHeight);
+
+      // 1) Rasterizar el comprobante completo en un canvas.
+      const canvas = await h2c(root, {
+        scale: 2,
+        useCORS: true,
+        logging: true,
+        backgroundColor: '#f8f3e8',
+        windowWidth: root.offsetWidth
+      });
+      console.log('[comprobante] canvas size:', canvas.width, 'x', canvas.height);
+
+      // 2) Construir el PDF letter con márgenes de 10mm.
+      const pdf = new jsPDFCtor({
+        orientation: 'portrait',
+        unit: 'mm',
+        format: 'letter',
+        compress: true
+      });
+      const pageW = pdf.internal.pageSize.getWidth();   // 215.9
+      const pageH = pdf.internal.pageSize.getHeight();  // 279.4
+      const margin = 10;
+      const usableW = pageW - 2 * margin;               // 195.9 mm
+      const usableH = pageH - 2 * margin;               // 259.4 mm
+
+      // El canvas se escala a usableW mm de ancho. Mantenemos aspect ratio.
+      // 3) Buscar puntos de corte seguros: bordes inferiores de cards que no
+      // queremos dividir (.question, .subject-row, .hero, .section).
+      // Posiciones en CSS px relativas al root → multiplicar por scale (2) para
+      // pasar a canvas px.
+      const SCALE = 2;
+      const rootRect = root.getBoundingClientRect();
+      const breakPoints = [0];
+      root.querySelectorAll('.question, .subject-row, .hero, .stats, .section__title').forEach(el => {
+        const r = el.getBoundingClientRect();
+        breakPoints.push((r.bottom - rootRect.top) * SCALE);
+      });
+      breakPoints.push(canvas.height);
+      breakPoints.sort((a, b) => a - b);
+
+      // Construir las páginas: para cada una, intentamos cortar lo más cerca
+      // posible del límite natural pero en un punto seguro.
+      const pxPerMM = canvas.width / usableW;
+      const sliceHpx = Math.floor(usableH * pxPerMM);
+      const pages = [];
+      let curStart = 0;
+      while (curStart < canvas.height - 0.5) {
+        const naturalEnd = curStart + sliceHpx;
+        if (naturalEnd >= canvas.height) {
+          pages.push({ start: curStart, end: canvas.height });
+          break;
+        }
+        // Punto de corte: el último breakPoint <= naturalEnd y > curStart.
+        // Si no hay (un elemento es más alto que una página), forzamos en naturalEnd.
+        let cut = naturalEnd;
+        for (const bp of breakPoints) {
+          if (bp > curStart + 50 && bp <= naturalEnd) cut = bp;
+        }
+        pages.push({ start: curStart, end: cut });
+        curStart = cut;
+      }
+      console.log('[comprobante] páginas a generar:', pages.length);
+
+      // 4) Pintar cada página: bg crema + slice del canvas.
+      const BG = '#f8f3e8';
+      for (let i = 0; i < pages.length; i++) {
+        if (i > 0) pdf.addPage();
+        // Fondo crema en toda la página (cubre los márgenes del PDF).
+        pdf.setFillColor(248, 243, 232);
+        pdf.rect(0, 0, pageW, pageH, 'F');
+
+        const { start, end } = pages[i];
+        const srcH = end - start;
+        const tmp = document.createElement('canvas');
+        tmp.width = canvas.width;
+        tmp.height = srcH;
+        const tctx = tmp.getContext('2d');
+        tctx.fillStyle = BG;
+        tctx.fillRect(0, 0, tmp.width, tmp.height);
+        tctx.drawImage(canvas, 0, start, canvas.width, srcH, 0, 0, canvas.width, srcH);
+        const sliceData = tmp.toDataURL('image/jpeg', 0.9);
+        const sliceHmm = (srcH / canvas.width) * usableW;
+        pdf.addImage(sliceData, 'JPEG', margin, margin, usableW, sliceHmm);
+      }
+
+      pdf.save(`${fileBase}.pdf`);
+    } catch (err) {
+      console.error('PDF falló, cayendo a descarga HTML:', err);
+      downloadAsHTML();
+    } finally {
+      cleanup();
+      done();
+    }
+  }
+
+  // Pequeña espera para que las fuentes Google ya cargadas en la página
+  // se apliquen y KaTeX se asiente antes de rasterizar.
+  setTimeout(triggerSave, 400);
 }
 
 function startReview() {
@@ -2084,6 +2735,10 @@ socket.on('joined', (data) => {
     state.marked = source.marked || [];
     state.currentQ = source.currentQ || 0;
     Object.entries(state.answers).forEach(([qId, ans]) => { socket.emit('answer', { questionId: parseInt(qId), answer: ans }); });
+  } else if (data.submitted && data.answers) {
+    // Post-submit: localStorage y backup ya están borrados, así que las
+    // respuestas del alumno solo viven en el server.
+    state.answers = data.answers;
   }
 
   document.getElementById('welcomeName').textContent = `¡Hola, ${data.name}!`;
@@ -2114,14 +2769,13 @@ function showTabWarn(count) {
   const icon = document.getElementById('tabWarnIcon');
   const title = document.getElementById('tabWarnTitle');
   const msg = document.getElementById('tabWarnMsg');
+  icon.textContent = '!';
   if (count === 2) {
     card.classList.add('danger');
-    icon.textContent = '🚨';
     title.textContent = '¡Última advertencia!';
     msg.innerHTML = `Has salido del examen <strong>${count} veces</strong>.<br>Si sales <strong>una vez más</strong>, tu examen será <strong>cancelado</strong>.`;
   } else {
     card.classList.remove('danger');
-    icon.textContent = '⚠️';
     title.textContent = 'Aviso';
     msg.innerHTML = `Has salido del examen <strong>${count} ${count === 1 ? 'vez' : 'veces'}</strong>. Permanece en esta pestaña.`;
   }
@@ -2132,9 +2786,17 @@ function showCancelOverlay() { document.getElementById('cancelOverlay').classLis
 function hideCancelOverlay() { document.getElementById('cancelOverlay').classList.remove('show'); }
 
 socket.on('tabSwitchCount', ({ count }) => {
+  state.tabSwitches = count;
   if (count === 1 || count === 2) showTabWarn(count);
 });
-socket.on('examCancelled', () => { showCancelOverlay(); });
+socket.on('examCancelled', () => {
+  // El conteo llega vía tabSwitchCount justo antes; si está, lo usamos para que
+  // el overlay refleje el número real (no asume un umbral fijo).
+  const n = state.tabSwitches;
+  const el = document.getElementById('cancelCount');
+  if (el && n) el.textContent = `${n} ${n === 1 ? 'vez' : 'veces'}`;
+  showCancelOverlay();
+});
 socket.on('examRestored', () => { hideCancelOverlay(); });
 
 socket.on('examStarted', (data) => {
@@ -2210,7 +2872,9 @@ document.addEventListener('visibilitychange', () => {
   if (document.hidden && state.name && !state.submitted && !window.__previewMode) {
     socket.emit('tabSwitch');
   }
-  if (!document.hidden && state.name && state.questions.length > 0) {
+  // No re-emitir joinExam si ya entregaste: el server reenviaría 'joined' que
+  // borra state.answers/answerKey y el breakdown queda vacío.
+  if (!document.hidden && state.name && state.questions.length > 0 && !state.submitted) {
     socket.emit('joinExam', { name: state.name });
   }
 });

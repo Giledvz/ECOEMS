@@ -867,6 +867,7 @@ io.on('connection', (socket) => {
       });
       joinPayload.submitted = true;
       joinPayload.correct = correct;
+      joinPayload.answers = student.answers || {};
       joinPayload.answerKey = student.answerKey ?? room.answerKey;
       joinPayload.explanations = Object.fromEntries(
         room.questions.map(q => [q.id, q.explanation || ''])
