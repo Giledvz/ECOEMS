@@ -620,37 +620,38 @@
     letter-spacing: 0;
   }
 
-  /* exam-timer: SVG circular countdown.
-     pathLength="100" normaliza geometría → stroke-dashoffset es escala 0-100. */
+  /* exam-timer: pill rectangular con tiempo restante.
+     Color según tiempo restante: ok (verde) > 1h, warn (amarillo) 30m-1h, err (rojo) <30m. */
   .exam-timer {
-    position: relative;
-    width: 40px; height: 40px;
+    display: inline-flex;
+    align-items: center;
     flex-shrink: 0;
-  }
-  .exam-timer__svg { width: 100%; height: 100%; transform: rotate(-90deg); }
-  .exam-timer__track { fill: none; stroke: var(--color-border); stroke-width: 3; }
-  .exam-timer__fill {
-    fill: none;
-    stroke: var(--color-accent);
-    stroke-width: 3;
-    stroke-linecap: round;
+    padding: var(--space-1) var(--space-3);
+    border: var(--border-thin) solid var(--color-state-ok);
+    border-radius: var(--radius-pill);
+    background-color: transparent;
+    color: var(--color-state-ok);
     transition:
-      stroke-dashoffset var(--motion-base) linear,
-      stroke var(--motion-slow) var(--motion-ease-emphasized);
+      color var(--motion-slow) var(--motion-ease-emphasized),
+      border-color var(--motion-slow) var(--motion-ease-emphasized);
   }
-  .exam-timer--critical .exam-timer__fill { stroke: var(--color-state-err); }
   .exam-timer__num {
-    position: absolute; inset: 0;
-    display: flex; align-items: center; justify-content: center;
     font-family: var(--font-family-mono);
-    font-size: 10px;
+    font-size: var(--font-size-13);
     font-weight: var(--font-weight-medium);
-    color: var(--color-text-secondary);
+    color: inherit;
     font-variant-numeric: tabular-nums;
-    transition: color var(--motion-slow) var(--motion-ease-emphasized);
-    letter-spacing: -0.02em;
+    letter-spacing: 0.02em;
+    line-height: 1;
   }
-  .exam-timer--critical .exam-timer__num { color: var(--color-state-err); }
+  .exam-timer--warn {
+    color: var(--color-state-warn);
+    border-color: var(--color-state-warn);
+  }
+  .exam-timer--critical {
+    color: var(--color-state-err);
+    border-color: var(--color-state-err);
+  }
 
   /* exam-progress: barra lineal */
   .exam-progress {
@@ -811,26 +812,34 @@
     border-color: var(--color-state-warn);
   }
 
-  /* exam-nav: prev / next / submit en footer sticky */
-  .exam-nav {
+  /* exam-footer: wrapper sticky bottom para grid + nav. Ambos quedan fijos al pie.
+     margin-top: auto empuja al fondo del flex column .exam-screen aunque la pregunta
+     sea corta; sticky se activa al hacer scroll en preguntas largas. */
+  .exam-footer {
     position: sticky;
     bottom: 0;
+    margin-top: auto;
     z-index: var(--z-raised);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-3);
-    padding: var(--space-3) var(--space-5);
     background-color: color-mix(in srgb, var(--color-bg-page) 92%, transparent);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-top: var(--border-thin) solid var(--color-border);
   }
+
+  /* exam-nav: prev / next / submit (parte inferior del footer).
+     Flex con flex:1 en cada botón → se reparte natural con 2 o 3 botones. */
+  .exam-nav {
+    display: flex;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-5);
+  }
+  .exam-nav .btn { flex: 1; }
   @media (min-width: 760px) { .exam-nav { padding: var(--space-4) var(--space-7); } }
 
-  /* exam-grid: cuadrícula de navegación entre preguntas */
+  /* exam-grid: cuadrícula de navegación entre preguntas (parte superior del footer) */
   .exam-grid {
     padding: var(--space-3) var(--space-5);
-    border-top: var(--border-thin) dotted var(--color-border);
+    border-bottom: var(--border-thin) dotted var(--color-border);
   }
   @media (min-width: 760px) { .exam-grid { padding: var(--space-3) var(--space-7); } }
   .exam-grid__inner {
@@ -873,15 +882,15 @@
     border-color: var(--color-accent);
   }
 
-  /* dark-toggle (botón en exam-status) */
+  /* dark-toggle (botón en exam-status) — patrón Tercial: 3 iconos (sun/moon/sunmoon)
+     visibles según data-theme-pref. El ícono muestra el ESTADO ACTUAL, no la acción. */
   .dark-toggle {
-    width: 28px; height: 28px;
+    width: 32px; height: 32px;
     border-radius: var(--radius-pill);
     border: var(--border-thin) solid var(--color-border);
     background-color: transparent;
     cursor: pointer;
-    font-size: 13px;
-    display: flex; align-items: center; justify-content: center;
+    display: inline-flex; align-items: center; justify-content: center;
     color: var(--color-text-meta);
     transition:
       border-color var(--motion-fast) var(--motion-ease-standard),
@@ -889,6 +898,23 @@
     padding: 0;
   }
   .dark-toggle:hover { border-color: var(--color-border-strong); color: var(--color-text-primary); }
+  .dark-toggle svg {
+    width: 16px; height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: none;
+  }
+  /* Sin pref / light → sol */
+  .dark-toggle .icon-sun { display: block; }
+  /* Pref = dark → luna */
+  [data-theme-pref="dark"] .dark-toggle .icon-sun { display: none; }
+  [data-theme-pref="dark"] .dark-toggle .icon-moon { display: block; }
+  /* Pref = auto → sunmoon */
+  [data-theme-pref="auto"] .dark-toggle .icon-sun { display: none; }
+  [data-theme-pref="auto"] .dark-toggle .icon-sunmoon { display: block; }
 
   /* === 6 · ESTILOS HEREDADOS (se irán refactorizando en próximas etapas) === */
 
@@ -1061,24 +1087,38 @@
   </div>
 </div>
 <script>
-// Sistema de tema: data-theme en <html> + localStorage 'ecoems-theme-pref'.
+// Sistema de tema: data-theme + data-theme-pref en <html>, localStorage 'ecoems-theme-pref'.
 // El anti-flash script en <head> ya aplica el tema antes del primer paint.
+// Ciclo del toggle: light → dark → auto → light. El ícono muestra el ESTADO ACTUAL.
 const __THEME_KEY = 'ecoems-theme-pref';
-function __getThemePref() { return localStorage.getItem(__THEME_KEY) || 'auto'; }
+const __THEME_VALID = ['light', 'dark', 'auto'];
+const __THEME_ORDER = ['light', 'dark', 'auto'];
+const __THEME_MQL = window.matchMedia('(prefers-color-scheme: dark)');
+function __getThemePref() {
+  const stored = localStorage.getItem(__THEME_KEY);
+  return __THEME_VALID.includes(stored) ? stored : 'auto';
+}
 function __applyTheme(pref) {
   const applied = pref === 'auto'
-    ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+    ? (__THEME_MQL.matches ? 'dark' : 'light')
     : pref;
   document.documentElement.setAttribute('data-theme', applied);
   document.documentElement.setAttribute('data-theme-pref', pref);
-  const btn = document.getElementById('darkToggle');
-  if (btn) btn.textContent = applied === 'dark' ? '☀' : '☾';
 }
-function __setTheme(pref) { localStorage.setItem(__THEME_KEY, pref); __applyTheme(pref); }
+function __setTheme(pref) {
+  if (!__THEME_VALID.includes(pref)) return;
+  localStorage.setItem(__THEME_KEY, pref);
+  __applyTheme(pref);
+}
 function toggleDarkMode() {
-  const current = document.documentElement.getAttribute('data-theme');
-  __setTheme(current === 'dark' ? 'light' : 'dark');
+  const current = __getThemePref();
+  const next = __THEME_ORDER[(__THEME_ORDER.indexOf(current) + 1) % __THEME_ORDER.length];
+  __setTheme(next);
 }
+// En modo 'auto' reacciona en vivo a cambios del sistema
+__THEME_MQL.addEventListener('change', () => {
+  if (__getThemePref() === 'auto') __applyTheme('auto');
+});
 document.addEventListener('DOMContentLoaded', function() {
   __applyTheme(__getThemePref());
 });
@@ -1137,14 +1177,34 @@ document.addEventListener('DOMContentLoaded', function() {
         <span class="tag" id="qSubject">Materia</span>
       </div>
       <div class="exam-status__right">
-        <button class="dark-toggle" id="darkToggle" onclick="toggleDarkMode()" aria-label="Cambiar tema"></button>
-        <div class="exam-timer" id="examTimer" aria-label="Tiempo restante">
-          <svg class="exam-timer__svg" viewBox="0 0 36 36">
-            <circle class="exam-timer__track" cx="18" cy="18" r="16"/>
-            <circle class="exam-timer__fill"  cx="18" cy="18" r="16"
-                    pathLength="100" stroke-dasharray="100"
-                    stroke-dashoffset="0"/>
+        <button class="dark-toggle" id="darkToggle" onclick="toggleDarkMode()" aria-label="Cambiar modo de color" type="button">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2"/>
+            <path d="M12 20v2"/>
+            <path d="m4.93 4.93 1.41 1.41"/>
+            <path d="m17.66 17.66 1.41 1.41"/>
+            <path d="M2 12h2"/>
+            <path d="M20 12h2"/>
+            <path d="m6.34 17.66-1.41 1.41"/>
+            <path d="m19.07 4.93-1.41 1.41"/>
           </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sunmoon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4"/>
+            <path d="M12 2v2"/>
+            <path d="M12 20v2"/>
+            <path d="m4.9 4.9 1.4 1.4"/>
+            <path d="m17.7 17.7 1.4 1.4"/>
+            <path d="M2 12h2"/>
+            <path d="M20 12h2"/>
+            <path d="m6.3 17.7-1.4 1.4"/>
+            <path d="m19.1 4.9-1.4 1.4"/>
+          </svg>
+        </button>
+        <div class="exam-timer" id="examTimer" aria-label="Tiempo restante">
           <span class="exam-timer__num" id="timerDisplay">3:00:00</span>
         </div>
       </div>
@@ -1178,14 +1238,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <button class="btn btn--secondary exam-mark" id="markBtn" onclick="toggleMark()">Marcar para revisar</button>
   </article>
 
-  <div class="exam-grid">
-    <div class="exam-grid__inner" id="navGridInner"></div>
-  </div>
-
-  <div class="exam-nav">
-    <button class="btn btn--ghost" id="prevBtn" onclick="prevQ()">← Anterior</button>
-    <button class="btn btn--primary" id="nextBtn" onclick="nextQ()">Siguiente →</button>
-    <button class="btn btn--primary" id="submitBtn" onclick="confirmSubmit()" style="display:none;">Entregar</button>
+  <div class="exam-footer">
+    <div class="exam-grid">
+      <div class="exam-grid__inner" id="navGridInner"></div>
+    </div>
+    <div class="exam-nav">
+      <button class="btn btn--ghost" id="prevBtn" onclick="prevQ()">← Anterior</button>
+      <button class="btn btn--primary" id="nextBtn" onclick="nextQ()">Siguiente →</button>
+      <button class="btn btn--secondary" id="submitBtn" onclick="confirmSubmit()">Entregar</button>
+    </div>
   </div>
 </div>
 
@@ -1472,6 +1533,7 @@ function renderQuestion() {
   }
   document.getElementById('prevBtn').disabled = state.currentQ === 0;
   document.getElementById('nextBtn').disabled = state.currentQ === state.questions.length - 1;
+  document.getElementById('submitBtn').style.display = state.reviewMode ? 'none' : '';
   renderNavGrid();
 }
 
@@ -1510,6 +1572,22 @@ document.addEventListener('keydown', (e) => {
   e.preventDefault();
   if (e.key === 'ArrowLeft') prevQ();
   else nextQ();
+});
+
+// Selección de opción con teclas 1/2/3/4 → A/B/C/D
+document.addEventListener('keydown', (e) => {
+  if (!['1', '2', '3', '4'].includes(e.key)) return;
+  if (e.ctrlKey || e.metaKey || e.altKey || e.shiftKey) return;
+  if (!document.getElementById('examScreen').classList.contains('active')) return;
+  if (state.submitted || state.reviewMode) return;
+  const tag = (e.target.tagName || '').toUpperCase();
+  if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+  const q = state.questions[state.currentQ];
+  if (!q) return;
+  const letter = ['A', 'B', 'C', 'D'][parseInt(e.key, 10) - 1];
+  if (!q.options || !q.options[letter]) return;
+  e.preventDefault();
+  selectAnswer(q.id, letter);
 });
 function toggleMark() {
   if (state.submitted) return;
@@ -1893,10 +1971,9 @@ function startReview() {
   document.getElementById('reviewBanner').style.display = '';
   const score = document.getElementById('scoreNum').textContent;
   document.getElementById('timerDisplay').textContent = `${score}/${state.questions.length}`;
-  document.getElementById('examTimer').classList.remove('exam-timer--critical');
-  // Reset SVG fill to "full" (no consumido)
-  const fill = document.querySelector('.exam-timer__fill');
-  if (fill) fill.setAttribute('stroke-dashoffset', '0');
+  const timerEl = document.getElementById('examTimer');
+  timerEl.classList.remove('exam-timer--critical');
+  timerEl.classList.remove('exam-timer--warn');
   document.getElementById('submitBtn').style.display = 'none';
   state.currentQ = 0;
   showScreen('examScreen');
@@ -1908,13 +1985,11 @@ function startTimer(startTime, limitMinutes) {
   if (state.timerInterval) clearInterval(state.timerInterval);
   const totalSeconds = state.timeLimit * 60;
   const timerEl = document.getElementById('examTimer');
-  const fillEl = document.querySelector('.exam-timer__fill');
   state.timerInterval = setInterval(() => {
     const remaining = totalSeconds - (((Date.now() + state.clockOffset) - state.startTime) / 1000);
     if (remaining <= 0) {
       clearInterval(state.timerInterval);
       document.getElementById('timerDisplay').textContent = '0:00';
-      if (fillEl) fillEl.setAttribute('stroke-dashoffset', '100');
       if (timerEl) timerEl.classList.add('exam-timer--critical');
       if (!state.submitted && !state.submitPending) startSubmitFlow();
       return;
@@ -1923,15 +1998,16 @@ function startTimer(startTime, limitMinutes) {
     const m = Math.floor((remaining % 3600) / 60);
     const s = Math.floor(remaining % 60);
     const el = document.getElementById('timerDisplay');
-    // Texto compacto para que entre en círculo 40x40: si queda hora, mostrar h:mm; si no, mm:ss
+    // Con horas mostrar h:mm:ss (con segundero); sin horas, mm:ss.
     el.textContent = h > 0
-      ? `${h}:${String(m).padStart(2,'0')}`
+      ? `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`
       : `${m}:${String(s).padStart(2,'0')}`;
-    if (timerEl) timerEl.classList.toggle('exam-timer--critical', remaining < 600);
-    // Actualizar relleno SVG: dashoffset va de 0 (lleno) a 100 (vacío)
-    if (fillEl) {
-      const consumedPct = (1 - remaining / totalSeconds) * 100;
-      fillEl.setAttribute('stroke-dashoffset', String(consumedPct));
+    if (timerEl) {
+      // Umbrales: <30m crítico (rojo), 30m-1h advertencia (amarillo), >1h ok (verde por default)
+      const critical = remaining < 1800;
+      const warn = !critical && remaining < 3600;
+      timerEl.classList.toggle('exam-timer--critical', critical);
+      timerEl.classList.toggle('exam-timer--warn', warn);
     }
   }, 1000);
 }
@@ -2063,9 +2139,12 @@ socket.on('examRestored', () => { hideCancelOverlay(); });
 
 socket.on('examStarted', (data) => {
   if (data.serverTime) state.clockOffset = data.serverTime - Date.now();
+  // Si el alumno todavía no ha seleccionado nombre, dejarlo en joinScreen.
+  // Cuando elija nombre y emita joinExam, el server le devolverá los datos del examen activo.
+  if (!state.name) return;
   showScreen('examScreen');
   if (!state.currentQ) state.currentQ = 0;
-  if (state.questions.length === 0 && state.name) {
+  if (state.questions.length === 0) {
     socket.emit('joinExam', { name: state.name });
   } else {
     renderQuestion();
