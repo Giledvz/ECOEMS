@@ -3,120 +3,1098 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>Panel del Profesor — Examen</title>
+<script>
+  /* Anti-flash: aplica data-theme antes del primer paint para que el panel no
+     se renderee en light por 1 frame antes de saltar a dark. Comparte la misma
+     llave que el examen (ecoems-theme-pref) para que la preferencia se herede. */
+  (function () {
+    var KEY = 'ecoems-theme-pref';
+    var p = localStorage.getItem(KEY) || 'auto';
+    var d = p === 'auto'
+      ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+      : p;
+    var r = document.documentElement;
+    r.setAttribute('data-theme', d);
+    r.setAttribute('data-theme-pref', p);
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <script src="/socket.io/socket.io.js"></script>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; padding: 24px; }
+  /* === 1 · TOKENS LIGHT === */
+  :root {
+    color-scheme: light;
 
-  .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
-  .header h1 { font-size: 24px; font-weight: 600; }
+    /* Tipografía */
+    --font-family-display: 'Fraunces', serif;
+    --font-family-body: 'IBM Plex Sans', sans-serif;
+    --font-family-mono: 'IBM Plex Mono', monospace;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-size-11: 0.6875rem;
+    --font-size-12: 0.75rem;
+    --font-size-13: 0.8125rem;
+    --font-size-14: 0.875rem;
+    --font-size-15: 0.9375rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+    --font-size-32: 2rem;
+    --font-size-40: 2.5rem;
+    --font-size-48: 3rem;
+    --line-height-tight: 1.05;
+    --line-height-snug: 1.15;
+    --line-height-heading: 1.3;
+    --line-height-base: 1.5;
+    --line-height-relaxed: 1.6;
+    --line-height-loose: 1.65;
+    --tracking-tight: -0.015em;
+    --tracking-snug: -0.01em;
+    --tracking-meta: 0.02em;
+    --tracking-eyebrow: 0.08em;
+    --tracking-display-eyebrow: 0.12em;
 
-  /* ── Rooms Bar ── */
-  .rooms-bar { display: flex; gap: 12px; margin-bottom: 24px; overflow-x: auto; padding-bottom: 8px; align-items: stretch; }
-  .room-card { background: #1e293b; border: 2px solid #334155; border-radius: 12px; padding: 12px 16px; min-width: 200px; max-width: 260px; cursor: pointer; transition: all 0.15s; flex-shrink: 0; }
-  .room-card:hover { border-color: #475569; }
-  .room-card.selected { border-color: #3b82f6; background: #1e3a5f; }
-  .room-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
-  .room-card-code { font-family: monospace; font-size: 16px; font-weight: 700; color: #60a5fa; letter-spacing: 2px; }
-  .room-card-title { font-size: 13px; color: #e2e8f0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .room-card-meta { font-size: 11px; color: #94a3b8; margin-top: 4px; }
-  .upload-card { background: #1e293b; border: 2px dashed #334155; border-radius: 12px; padding: 12px 20px; min-width: 140px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; color: #94a3b8; transition: all 0.15s; flex-shrink: 0; }
-  .upload-card:hover { border-color: #475569; color: #e2e8f0; }
+    /* Espaciado (base 4) */
+    --space-1: 0.25rem;   --space-2: 0.5rem;    --space-3: 0.75rem;
+    --space-4: 1rem;      --space-5: 1.25rem;   --space-6: 1.5rem;
+    --space-7: 2rem;      --space-8: 2.5rem;    --space-9: 3rem;
+    --space-10: 4rem;     --space-11: 5rem;     --space-12: 6rem;
+
+    /* Containers */
+    --container-narrow: 40rem;
+    --container-base:   47.5rem;
+    --container-wide:   67.5rem;
+    --container-full:   80rem;
+
+    /* Radius */
+    --radius-sm:   2px;
+    --radius-md:   4px;
+    --radius-lg:   8px;
+    --radius-pill: 999px;
+
+    /* Bordes */
+    --border-thin:   1px;
+    --border-medium: 2px;
+    --border-thick:  3px;
+
+    /* Motion */
+    --motion-instant: 0ms;
+    --motion-fast:    120ms;
+    --motion-base:    180ms;
+    --motion-slow:    280ms;
+    --motion-ease-standard:    cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-ease-emphasized:  cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    /* Iconos */
+    --icon-stroke-width: 1.5;
+    --icon-size-sm:  14px;
+    --icon-size-md:  16px;
+    --icon-size-lg:  18px;
+    --icon-size-xl:  20px;
+    --icon-size-2xl: 24px;
+
+    /* z-index */
+    --z-base: 1; --z-raised: 10; --z-nav: 100; --z-tooltip: 200; --z-modal: 300;
+
+    /* Primitivos color · LIGHT */
+    --crema-50:  #faf7f0;
+    --crema-100: #f8f3e8;
+    --crema-200: #f5efe4;
+    --crema-300: #efe7d8;
+    --crema-400: #e6dcc4;
+    --crema-500: #d9ccae;
+    --crema-600: #c9bda3;
+    --crema-700: #a89880;
+    --crema-800: #8c7556;
+    --crema-900: #6b5a44;
+
+    --ink-100: #c9bda3;
+    --ink-300: #8c7556;
+    --ink-500: #7a6448;
+    --ink-700: #4a3f33;
+    --ink-900: #1f1a16;
+
+    --accent-conac:           #6b3a2e;
+    --accent-conac-soft:      #8c5240;
+    --accent-terracota:       #c2410c;
+    --accent-terracota-soft:  #dd6638;
+
+    --state-ok:      #5a8045;   --state-ok-bg:   #e7ecd9;
+    --state-err:     #b8362c;   --state-err-bg:  #f1dcd4;
+    --state-warn:    #b8862e;   --state-warn-bg: #f1e6c4;
+
+    --grain-1: rgba(140, 117, 86, 0.04);
+    --grain-2: rgba(107, 58, 46, 0.03);
+    --selection-bg: rgba(107, 58, 46, 0.18);
+
+    /* Semánticos color */
+    --color-bg-page:           var(--crema-200);
+    --color-bg-raised:         var(--crema-100);
+    --color-bg-hover:          var(--crema-300);
+    --color-bg-input:          var(--crema-100);
+    --color-bg-input-disabled: var(--crema-400);
+
+    --color-text-primary:     var(--ink-900);
+    --color-text-secondary:   var(--ink-700);
+    --color-text-meta:        var(--ink-500);
+    --color-text-meta-large:  var(--ink-300);
+    --color-text-placeholder: var(--ink-100);
+
+    --color-accent:              var(--accent-conac);
+    --color-accent-soft:         var(--accent-conac-soft);
+    --color-accent-strong:       var(--accent-terracota);
+    --color-accent-strong-soft:  var(--accent-terracota-soft);
+
+    --color-border-subtle: var(--crema-500);
+    --color-border:        var(--crema-600);
+    --color-border-strong: var(--crema-700);
+    --color-border-focus:  var(--accent-conac);
+
+    --color-state-ok:    var(--state-ok);    --color-state-ok-bg:   var(--state-ok-bg);
+    --color-state-err:   var(--state-err);   --color-state-err-bg:  var(--state-err-bg);
+    --color-state-warn:  var(--state-warn);  --color-state-warn-bg: var(--state-warn-bg);
+
+    --color-selection-bg:   var(--selection-bg);
+    --color-selection-text: var(--ink-900);
+  }
+
+  /* === 1 · TOKENS DARK === */
+  [data-theme="dark"] {
+    color-scheme: dark;
+
+    --crema-50:  #2a2420;
+    --crema-100: #221d1a;
+    --crema-200: #1a1614;
+    --crema-300: #231e1b;
+    --crema-400: #2e2823;
+    --crema-500: #3a3229;
+    --crema-600: #4a3f33;
+    --crema-700: #6b5a44;
+    --crema-800: #8a7861;
+    --crema-900: #a89880;
+
+    --ink-100: #4a3f33;
+    --ink-300: #8a7861;
+    --ink-500: #a89880;
+    --ink-700: #d9cbb0;
+    --ink-900: #efe4cf;
+
+    --accent-conac:          #c79a82;
+    --accent-conac-soft:     #a07a64;
+    --accent-terracota:      #dd8055;
+    --accent-terracota-soft: #c2663d;
+
+    --state-ok:    #a3bd92;   --state-ok-bg:   #2a3526;
+    --state-err:   #d68a73;   --state-err-bg:  #3a2622;
+    --state-warn:  #d4a04a;   --state-warn-bg: #3a3020;
+
+    --grain-1: rgba(140, 117, 86, 0.05);
+    --grain-2: rgba(199, 154, 130, 0.04);
+    --selection-bg: rgba(199, 154, 130, 0.22);
+    --color-selection-text: var(--ink-900);
+  }
+
+  /* === 2 · RESET + BASE === */
+  *, *::before, *::after { box-sizing: border-box; }
+  * { margin: 0; padding: 0; }
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    min-height: 100vh;
+    padding: var(--space-6);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-page);
+    background-image:
+      radial-gradient(at 20% 30%, var(--grain-1) 0, transparent 50%),
+      radial-gradient(at 80% 70%, var(--grain-2) 0, transparent 50%);
+    background-attachment: fixed;
+    -webkit-tap-highlight-color: transparent;
+    transition:
+      background-color var(--motion-slow) var(--motion-ease-emphasized),
+      color var(--motion-slow) var(--motion-ease-emphasized);
+  }
+  ::selection { background: var(--color-selection-bg); color: var(--color-selection-text); }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* === 3 · TIPOGRAFÍA EDITORIAL === */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-display);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-heading);
+  }
+  h1 { font-size: var(--font-size-32); line-height: var(--line-height-tight);
+       letter-spacing: var(--tracking-tight); font-variation-settings: "opsz" 64; }
+  h2 { font-size: var(--font-size-24); line-height: var(--line-height-snug);
+       letter-spacing: var(--tracking-snug); font-variation-settings: "opsz" 32; }
+  h1 em, h2 em, h3 em { font-style: italic; color: var(--color-accent); }
+  code, kbd, samp { font-family: var(--font-family-mono); font-size: 0.9em; }
+
+  /* Focus visible (a11y) */
+  :focus { outline: none; }
+  :focus-visible {
+    outline: var(--border-medium) solid var(--color-border-focus);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Utilities */
+  .eyebrow {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--tracking-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-text-meta-large);
+  }
+  .meta { font-size: var(--font-size-13); color: var(--color-text-meta); }
+
+  /* === 4 · BOTONES TERCIAL === */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-medium);
+    line-height: 1;
+    padding: var(--space-3) var(--space-5);
+    border: var(--border-thin) solid transparent;
+    border-radius: var(--radius-md);
+    background-color: transparent;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    transition:
+      background-color var(--motion-fast) var(--motion-ease-standard),
+      border-color var(--motion-fast) var(--motion-ease-standard),
+      color var(--motion-fast) var(--motion-ease-standard);
+  }
+  .btn:disabled,
+  .btn[aria-disabled="true"] { opacity: 0.4; cursor: not-allowed; }
+  .btn__icon {
+    width: var(--icon-size-md); height: var(--icon-size-md);
+    fill: none;
+    stroke: currentColor;
+    stroke-width: var(--icon-stroke-width);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+  }
+
+  .btn--primary {
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-page);
+    border-color: var(--color-text-primary);
+  }
+  .btn--primary:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+
+  .btn--secondary {
+    border-color: var(--color-border);
+    color: var(--color-text-primary);
+  }
+  .btn--secondary:hover {
+    border-color: var(--color-border-strong);
+    background-color: var(--color-bg-hover);
+  }
+
+  .btn--ghost {
+    color: var(--color-text-meta);
+  }
+  .btn--ghost:hover {
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-hover);
+  }
+
+  /* Modificador semántico para acciones destructivas: aplica el tono err
+     manteniendo el variant base (--ghost / --secondary). */
+  .btn--danger {
+    color: var(--color-state-err);
+  }
+  .btn--danger:hover {
+    color: var(--color-state-err);
+    background-color: var(--color-state-err-bg);
+    border-color: var(--color-state-err);
+  }
+
+  /* === 5 · TAGS / BADGES TERCIAL === */
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--tracking-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-text-meta-large);
+    border: var(--border-thin) solid var(--color-border);
+    border-radius: var(--radius-pill);
+    padding: var(--space-1) var(--space-3);
+    background-color: transparent;
+    text-decoration: none;
+    transition:
+      color var(--motion-fast) var(--motion-ease-standard),
+      border-color var(--motion-fast) var(--motion-ease-standard);
+  }
+  .tag--ok   { color: var(--color-state-ok);   border-color: var(--color-state-ok); }
+  .tag--warn { color: var(--color-state-warn); border-color: var(--color-state-warn); }
+  .tag--err  { color: var(--color-state-err);  border-color: var(--color-state-err); }
+  .tag--mono { font-family: var(--font-family-mono); letter-spacing: 0.05em; text-transform: none; }
+
+  /* === 6 · DARK TOGGLE (3 iconos Lucide: sun / moon / sunmoon) === */
+  .dark-toggle {
+    width: 32px; height: 32px;
+    border-radius: var(--radius-pill);
+    border: var(--border-thin) solid var(--color-border);
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--color-text-meta);
+    transition:
+      border-color var(--motion-fast) var(--motion-ease-standard),
+      color var(--motion-fast) var(--motion-ease-standard);
+    padding: 0;
+  }
+  .dark-toggle:hover { border-color: var(--color-border-strong); color: var(--color-text-primary); }
+  .dark-toggle svg {
+    width: 16px; height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: none;
+  }
+  .dark-toggle .icon-sun { display: block; }
+  [data-theme-pref="dark"] .dark-toggle .icon-sun { display: none; }
+  [data-theme-pref="dark"] .dark-toggle .icon-moon { display: block; }
+  [data-theme-pref="auto"] .dark-toggle .icon-sun { display: none; }
+  [data-theme-pref="auto"] .dark-toggle .icon-sunmoon { display: block; }
+  .theme-toggle--floating {
+    position: fixed;
+    top: var(--space-5);
+    right: var(--space-5);
+    z-index: var(--z-nav);
+  }
+
+  /* === 7 · HEADER === */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-5);
+    margin-bottom: var(--space-7);
+    padding-right: 56px; /* deja espacio al toggle flotante */
+    flex-wrap: wrap;
+  }
+  .header h1 {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-32);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    letter-spacing: var(--tracking-tight);
+    line-height: var(--line-height-tight);
+  }
+  .global-controls { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+
+  /* === 8 · ROOMS BAR + CARDS === */
+  .rooms-bar {
+    display: flex;
+    gap: var(--space-3);
+    margin-bottom: var(--space-7);
+    overflow-x: auto;
+    padding-bottom: var(--space-2);
+    align-items: stretch;
+  }
+  .room-card {
+    background-color: var(--color-bg-raised);
+    border: var(--border-thin) solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4);
+    min-width: 220px;
+    max-width: 280px;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    transition:
+      border-color var(--motion-fast) var(--motion-ease-standard),
+      background-color var(--motion-fast) var(--motion-ease-standard);
+  }
+  .room-card:hover { border-color: var(--color-border-strong); }
+  .room-card.selected {
+    border-color: var(--color-accent);
+    background-color: var(--color-bg-hover);
+  }
+  .room-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .room-card-code {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-accent);
+    letter-spacing: 0.12em;
+  }
+  .room-card-title {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .room-card-meta {
+    font-size: var(--font-size-12);
+    color: var(--color-text-meta);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Card "+ Nueva sala" para subir JSON */
+  .upload-card {
+    background-color: transparent;
+    border: var(--border-thin) dashed var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4) var(--space-5);
+    min-width: 160px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-13);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-meta);
+    flex-shrink: 0;
+    transition:
+      border-color var(--motion-fast) var(--motion-ease-standard),
+      color var(--motion-fast) var(--motion-ease-standard);
+  }
+  .upload-card:hover {
+    border-color: var(--color-accent);
+    color: var(--color-text-primary);
+  }
   .upload-card input[type="file"] { display: none; }
+  .upload-card svg {
+    width: var(--icon-size-md); height: var(--icon-size-md);
+    fill: none; stroke: currentColor; stroke-width: 1.5;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
 
-  /* ── Badges ── */
-  .badge { padding: 6px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; }
-  .badge-sm { font-size: 10px; padding: 2px 8px; border-radius: 6px; font-weight: 600; }
-  .badge-waiting { background: #fef3c7; color: #a16207; }
-  .badge-active { background: #dcfce7; color: #16a34a; }
-  .badge-closed { background: #fee2e2; color: #ef4444; }
+  /* Badge dentro de room-card: usa el sistema .tag pero más compacto.
+     Mantenemos las clases legacy .badge-* mapeadas a .tag para no romper el JS. */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--tracking-eyebrow);
+    text-transform: uppercase;
+    border: var(--border-thin) solid var(--color-border);
+    border-radius: var(--radius-pill);
+    padding: var(--space-1) var(--space-3);
+    color: var(--color-text-meta-large);
+    background-color: transparent;
+  }
+  .badge-sm { font-size: 10px; padding: 1px var(--space-2); }
+  .badge-waiting { color: var(--color-state-warn); border-color: var(--color-state-warn); }
+  .badge-active  { color: var(--color-state-ok);   border-color: var(--color-state-ok); }
+  .badge-closed  { color: var(--color-state-err);  border-color: var(--color-state-err); }
 
-  /* ── Room Detail ── */
-  .room-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; gap: 12px; flex-wrap: wrap; }
-  .room-header-left { display: flex; align-items: center; gap: 12px; }
-  .room-header h2 { font-size: 20px; font-weight: 600; }
+  /* === 10 · ROOM DETAIL — HEADER === */
+  .room-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-5);
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+  .room-header-left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+  .room-header h2 {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    letter-spacing: var(--tracking-snug);
+  }
 
-  .connection-info { margin-bottom: 24px; background: #1e293b; border-radius: 12px; padding: 20px; display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
-  .conn-left { flex: 1; min-width: 220px; }
-  .conn-left .label-sm { font-size: 12px; color: #94a3b8; margin-bottom: 6px; }
-  .room-code-big { font-family: monospace; font-size: 36px; font-weight: 700; color: #60a5fa; letter-spacing: 6px; margin-bottom: 12px; }
-  .conn-left .url { font-size: 16px; font-weight: 700; color: #60a5fa; font-family: monospace; word-break: break-all; }
-  .conn-divider { width: 1px; background: #334155; align-self: stretch; }
-  .conn-right { display: flex; flex-direction: column; align-items: center; gap: 6px; }
-  .conn-right .label-sm { font-size: 12px; color: #94a3b8; text-align: center; }
-  #qrImg { border-radius: 8px; border: 3px solid #334155; display: block; }
-  .copy-btn { margin-top: 8px; padding: 6px 14px; background: #334155; border: none; border-radius: 6px; color: #e2e8f0; font-size: 13px; cursor: pointer; transition: background 0.15s; }
-  .copy-btn:hover { background: #475569; }
-  .copy-btn.copied { background: #16a34a; }
+  /* === 11 · CONNECTION INFO === */
+  .connection-info {
+    margin-bottom: var(--space-7);
+    background-color: var(--color-bg-raised);
+    border: var(--border-thin) solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    display: flex;
+    gap: var(--space-7);
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .conn-left {
+    flex: 1;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .label-sm {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--tracking-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-text-meta-large);
+  }
+  .room-code-big {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-48);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-accent);
+    letter-spacing: 0.08em;
+    line-height: var(--line-height-tight);
+    margin-block: var(--space-1) var(--space-3);
+  }
+  .conn-left .url {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-14);
+    color: var(--color-text-primary);
+    word-break: break-all;
+    text-decoration: none;
+    transition: color var(--motion-fast) var(--motion-ease-standard);
+  }
+  .conn-left .url:hover { color: var(--color-accent); text-decoration: underline; }
+  .conn-divider {
+    width: 1px;
+    background-color: var(--color-border);
+    align-self: stretch;
+  }
+  .conn-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .conn-right .label-sm { text-align: center; }
+  #qrImg {
+    border-radius: var(--radius-md);
+    border: var(--border-thin) solid var(--color-border);
+    padding: var(--space-2);
+    background-color: var(--color-bg-page);
+    display: block;
+  }
+  /* .copy-btn: usa el patrón .btn--secondary chico */
+  .copy-btn {
+    margin-top: var(--space-3);
+    align-self: flex-start;
+    padding: var(--space-2) var(--space-4);
+    background-color: transparent;
+    border: var(--border-thin) solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-13);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition:
+      border-color var(--motion-fast) var(--motion-ease-standard),
+      background-color var(--motion-fast) var(--motion-ease-standard);
+  }
+  .copy-btn:hover {
+    border-color: var(--color-border-strong);
+    background-color: var(--color-bg-hover);
+  }
+  .copy-btn.copied {
+    color: var(--color-state-ok);
+    border-color: var(--color-state-ok);
+    background-color: var(--color-state-ok-bg);
+  }
 
-  /* ── Controls ── */
-  .controls { display: flex; gap: 10px; margin-bottom: 24px; flex-wrap: wrap; }
-  .controls button { padding: 10px 20px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
-  .btn-start { background: #16a34a; color: #fff; }
-  .btn-start:hover { background: #15803d; }
-  .btn-close { background: #ef4444; color: #fff; }
-  .btn-close:hover { background: #dc2626; }
-  .btn-download { background: #2563eb; color: #fff; }
-  .btn-download:hover { background: #1d4ed8; }
-  .btn-reset { background: #475569; color: #e2e8f0; }
-  .btn-reset:hover { background: #64748b; }
-  .btn-delete { background: #7f1d1d; color: #fca5a5; }
-  .btn-delete:hover { background: #991b1b; }
-  button:disabled { opacity: 0.4; cursor: not-allowed; }
+  /* === 12 · CONTROLS DEL EXAMEN === */
+  .controls {
+    display: flex;
+    gap: var(--space-3);
+    margin-bottom: var(--space-7);
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  /* Las clases legacy .btn-start/.btn-close/.btn-download/.btn-reset/.btn-delete
+     se mantienen para no tocar el JS. Las redefinimos como variantes Tercial. */
+  .btn-start, .btn-close, .btn-download, .btn-reset, .btn-delete {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-medium);
+    line-height: 1;
+    padding: var(--space-3) var(--space-5);
+    border: var(--border-thin) solid transparent;
+    border-radius: var(--radius-md);
+    background-color: transparent;
+    cursor: pointer;
+    transition:
+      background-color var(--motion-fast) var(--motion-ease-standard),
+      border-color var(--motion-fast) var(--motion-ease-standard),
+      color var(--motion-fast) var(--motion-ease-standard);
+  }
+  .btn-start {
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-page);
+    border-color: var(--color-text-primary);
+  }
+  .btn-start:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+  .btn-close, .btn-download {
+    border-color: var(--color-border);
+    color: var(--color-text-primary);
+  }
+  .btn-close:hover, .btn-download:hover {
+    border-color: var(--color-border-strong);
+    background-color: var(--color-bg-hover);
+  }
+  .btn-reset { color: var(--color-text-meta); }
+  .btn-reset:hover {
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-hover);
+  }
+  .btn-delete { color: var(--color-state-err); }
+  .btn-delete:hover {
+    color: var(--color-state-err);
+    background-color: var(--color-state-err-bg);
+    border-color: var(--color-state-err);
+  }
+  .controls button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+  .controls button svg {
+    width: var(--icon-size-md); height: var(--icon-size-md);
+    fill: none; stroke: currentColor;
+    stroke-width: var(--icon-stroke-width);
+    stroke-linecap: round; stroke-linejoin: round;
+    flex-shrink: 0;
+  }
 
-  /* ── Timer ── */
-  .timer-display { font-size: 32px; font-weight: 700; font-family: monospace; color: #e2e8f0; text-align: center; padding: 8px; }
-  .timer-warning { color: #f87171; }
+  /* === 13 · TIMER === */
+  #timerArea {
+    margin-bottom: var(--space-7);
+    display: flex;
+    justify-content: center;
+  }
+  .timer-display {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-3) var(--space-6);
+    border: var(--border-thin) solid var(--color-state-ok);
+    border-radius: var(--radius-pill);
+    background-color: transparent;
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-state-ok);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    transition:
+      color var(--motion-slow) var(--motion-ease-emphasized),
+      border-color var(--motion-slow) var(--motion-ease-emphasized);
+  }
+  .timer-warning {
+    color: var(--color-state-err);
+    border-color: var(--color-state-err);
+  }
 
-  /* ── Metrics ── */
-  .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
-  .metric { background: #1e293b; border-radius: 12px; padding: 16px; }
-  .metric .label { font-size: 12px; color: #94a3b8; margin-bottom: 4px; }
-  .metric .value { font-size: 28px; font-weight: 700; }
-  .metric .value.green { color: #4ade80; }
-  .metric .value.blue { color: #60a5fa; }
-  .metric .value.amber { color: #fbbf24; }
-  .metric .value.red { color: #f87171; }
+  /* === 14 · MÉTRICAS === */
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+    margin-bottom: var(--space-7);
+  }
+  .metric {
+    background-color: var(--color-bg-raised);
+    border: var(--border-thin) solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .metric .label {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--tracking-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-text-meta-large);
+  }
+  .metric .value {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-32);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    font-variant-numeric: tabular-nums;
+    line-height: var(--line-height-tight);
+  }
+  .metric .value.blue  { color: var(--color-accent); }
+  .metric .value.amber { color: var(--color-state-warn); }
+  .metric .value.green { color: var(--color-state-ok); }
+  .metric .value.red   { color: var(--color-state-err); }
 
-  /* ── Students Table ── */
-  .students-section h2 { font-size: 18px; margin-bottom: 12px; }
-  .students-table { width: 100%; border-collapse: collapse; }
-  .students-table th { text-align: left; padding: 10px 12px; font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #334155; }
-  .students-table td { padding: 10px 12px; font-size: 14px; border-bottom: 1px solid #1e293b; }
-  .students-table tr:hover { background: #1e293b; }
-  .progress-bar { width: 100%; height: 6px; background: #334155; border-radius: 3px; overflow: hidden; }
-  .progress-bar .fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
-  .fill-blue { background: #3b82f6; }
-  .status-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
-  .dot-connected { background: #4ade80; }
-  .dot-disconnected { background: #f87171; }
-  .dot-submitted { background: #60a5fa; }
-  .dot-cancelled { background: #dc2626; box-shadow: 0 0 6px #dc2626; }
-  .btn-restore { background: #16a34a; color: #fff; border: 0; padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer; margin-left: 8px; }
-  .btn-restore:hover { background: #15803d; }
+  /* === 15 · TABLA DE ALUMNOS === */
+  .students-section h2 {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-4);
+  }
+  .students-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .students-table th {
+    text-align: left;
+    padding: var(--space-3) var(--space-4);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--tracking-eyebrow);
+    text-transform: uppercase;
+    color: var(--color-text-meta-large);
+    border-bottom: var(--border-thin) solid var(--color-border);
+  }
+  .students-table td {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--font-size-14);
+    color: var(--color-text-primary);
+    border-bottom: var(--border-thin) dotted var(--color-border);
+  }
+  .students-table tr:hover td { background-color: var(--color-bg-hover); }
 
-  .empty-state { text-align: center; padding: 48px; color: #64748b; }
-  .empty-state p { font-size: 14px; }
+  /* Progress bar dentro de la tabla */
+  .progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-border-subtle);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+  }
+  .progress-bar .fill {
+    height: 100%;
+    border-radius: inherit;
+    transition: width var(--motion-slow) var(--motion-ease-standard);
+  }
+  .fill-blue { background-color: var(--color-accent); }
 
-  /* ── Global Controls ── */
-  .global-controls { display: flex; gap: 10px; }
-  .btn-start-all { background: #16a34a; color: #fff; padding: 8px 18px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
-  .btn-start-all:hover { background: #15803d; }
-  .btn-formal { background: #2563eb; color: #fff; padding: 8px 18px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
-  .btn-formal:hover { background: #1d4ed8; }
-  .btn-close-all { background: #ef4444; color: #fff; padding: 8px 18px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
-  .btn-close-all:hover { background: #dc2626; }
+  /* Status dot */
+  .status-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-right: var(--space-2);
+    vertical-align: middle;
+  }
+  .dot-connected    { background-color: var(--color-state-ok); }
+  .dot-disconnected { background-color: var(--color-state-err); }
+  .dot-submitted    { background-color: var(--color-accent); }
+  .dot-cancelled    {
+    background-color: var(--color-state-err);
+    box-shadow: 0 0 0 3px var(--color-state-err-bg);
+  }
+
+  /* Botón "Restaurar" en la celda de estado */
+  .btn-restore {
+    margin-left: var(--space-2);
+    padding: var(--space-1) var(--space-3);
+    background-color: transparent;
+    border: var(--border-thin) solid var(--color-state-ok);
+    border-radius: var(--radius-md);
+    color: var(--color-state-ok);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition:
+      background-color var(--motion-fast) var(--motion-ease-standard);
+  }
+  .btn-restore:hover { background-color: var(--color-state-ok-bg); }
+
+  /* Celdas de score con color semántico (en lugar de inline styles del JS) */
+  .score-cell { font-family: var(--font-family-mono); font-variant-numeric: tabular-nums; }
+  .score-cell--ok   { color: var(--color-state-ok);   font-weight: var(--font-weight-medium); }
+  .score-cell--warn { color: var(--color-state-warn); font-weight: var(--font-weight-medium); }
+  .score-cell--err  { color: var(--color-state-err);  font-weight: var(--font-weight-medium); }
+  .score-cell--pending { color: var(--color-text-meta); }
+  .tabs-cell { font-family: var(--font-family-mono); font-variant-numeric: tabular-nums; color: var(--color-text-meta); }
+  .tabs-cell--alert { color: var(--color-state-err); font-weight: var(--font-weight-medium); }
+  .time-cell { font-family: var(--font-family-mono); font-variant-numeric: tabular-nums; color: var(--color-text-meta); }
+  .time-cell--submitted { color: var(--color-text-primary); }
+
+  /* === 16 · CARDS DE ALUMNOS (versión móvil) === */
+  .students-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .student-card {
+    background-color: var(--color-bg-raised);
+    border: var(--border-thin) solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .student-card__head {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+  .student-card__status-text {
+    font-size: var(--font-size-13);
+    color: var(--color-text-meta);
+    flex-shrink: 0;
+  }
+  .student-card__name {
+    flex: 1;
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .student-card__group {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-12);
+    color: var(--color-text-meta);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .student-card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: var(--font-size-13);
+    color: var(--color-text-meta);
+    gap: var(--space-3);
+  }
+  .student-card__count {
+    font-family: var(--font-family-mono);
+    font-variant-numeric: tabular-nums;
+  }
+  .student-card__alerts {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    font-size: var(--font-size-12);
+  }
+  .student-card__alert {
+    font-family: var(--font-family-mono);
+    color: var(--color-state-err);
+  }
+  .student-card .btn-restore { align-self: flex-start; }
+
+  /* === 17 · OVERLAYS TERCIAL (confirm / alert genéricos) === */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    z-index: var(--z-modal);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-5);
+    background-color: color-mix(in srgb, var(--ink-900) 65%, transparent);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  .overlay.show { display: flex; }
+  .overlay-card {
+    background-color: var(--color-bg-raised);
+    border: var(--border-thin) solid var(--color-border);
+    border-top: var(--border-medium) solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: center;
+    text-align: center;
+  }
+  .overlay-card--info   { border-top-color: var(--color-accent); }
+  .overlay-card--warn   { border-top-color: var(--color-state-warn); }
+  .overlay-card--danger { border-top-color: var(--color-state-err); }
+  .overlay-card__icon {
+    width: 44px; height: 44px;
+    border-radius: var(--radius-pill);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 1;
+    background-color: var(--color-bg-hover);
+    color: var(--color-text-meta);
+  }
+  .overlay-card--info   .overlay-card__icon { background-color: var(--color-bg-hover); color: var(--color-accent); }
+  .overlay-card--warn   .overlay-card__icon { background-color: var(--color-state-warn-bg); color: var(--color-state-warn); }
+  .overlay-card--danger .overlay-card__icon { background-color: var(--color-state-err-bg); color: var(--color-state-err); }
+  .overlay-card__title {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-heading);
+    margin: 0;
+  }
+  .overlay-card__body {
+    font-size: var(--font-size-15);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-loose);
+    margin: 0;
+  }
+  .overlay-card__body strong { color: var(--color-text-primary); }
+  .overlay-card__actions {
+    margin-top: var(--space-2);
+    display: flex;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* === 9 · EMPTY STATE === */
+  .empty-state {
+    text-align: center;
+    padding: var(--space-10) var(--space-5);
+    color: var(--color-text-meta);
+    font-size: var(--font-size-14);
+  }
+  .empty-state p { font-family: var(--font-family-body); }
+
+  /* === 18 · RESPONSIVE — MÓVIL (< 760px) === */
+  /* Por defecto (escritorio): mostrar tabla, ocultar cards */
+  @media (min-width: 760px) {
+    .students-cards { display: none !important; }
+  }
+  @media (max-width: 759px) {
+    body { padding: var(--space-4); }
+
+    /* Header: sólo título + toggle. Ocultar controles globales en móvil
+       (esos son acciones de setup, mejor hacerlas desde escritorio). */
+    .header { padding-right: 48px; margin-bottom: var(--space-5); }
+    .header h1 { font-size: var(--font-size-24); }
+    .global-controls { display: none; }
+
+    /* Rooms-bar: cards un poco más compactas */
+    .room-card { min-width: 180px; padding: var(--space-3); }
+    .room-code-big { font-size: var(--font-size-40); }
+
+    /* Connection-info: stack vertical, sin QR ni divider */
+    .connection-info { flex-direction: column; gap: var(--space-4); padding: var(--space-5); }
+    .conn-divider { display: none; }
+    .conn-right { display: none; }
+    .copy-btn { align-self: stretch; text-align: center; }
+
+    /* Controls: ocultar acciones admin destructivas / raras en móvil */
+    .btn-reset, .btn-delete { display: none; }
+    .controls { gap: var(--space-2); }
+    .controls button { padding: var(--space-3) var(--space-4); flex: 1; min-width: 0; }
+
+    /* Métricas en 2x2 */
+    .metrics { grid-template-columns: 1fr 1fr; }
+    .metric { padding: var(--space-4); }
+    .metric .value { font-size: var(--font-size-24); }
+
+    /* Tabla → cards */
+    .students-table { display: none !important; }
+    .students-cards { display: flex; }
+
+    /* Theme toggle un poco más pegado */
+    .theme-toggle--floating { top: var(--space-3); right: var(--space-3); }
+  }
 </style>
 </head>
 <body>
 
+<!-- Toggle flotante de tema (shared con index.html) -->
+<button class="dark-toggle theme-toggle--floating" id="darkToggleFloating" onclick="toggleDarkMode()" aria-label="Cambiar modo de color" type="button">
+  <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 2v2"/><path d="M12 20v2"/>
+    <path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/>
+    <path d="M2 12h2"/><path d="M20 12h2"/>
+    <path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+  </svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+  </svg>
+  <svg class="icon-sunmoon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4"/>
+    <path d="M12 2v2"/><path d="M12 20v2"/>
+    <path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/>
+    <path d="M2 12h2"/><path d="M20 12h2"/>
+    <path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/>
+  </svg>
+</button>
+
 <div class="header">
-  <h1>Panel del Profesor</h1>
+  <h1>Panel del <em>profesor</em></h1>
   <div class="global-controls">
-    <button class="btn-start-all" id="startAllBtn" onclick="startAll('practice')">▶ Práctica</button>
-    <button class="btn-formal" id="startAllFormalBtn" onclick="startAll('formal')">▶ Examen formal</button>
-    <button class="btn-close-all" id="closeAllBtn" onclick="closeAll()">⏹ Cerrar todos</button>
+    <button class="btn btn--secondary" id="startAllBtn" onclick="startAll('practice')" type="button">
+      <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+      Práctica
+    </button>
+    <button class="btn btn--primary" id="startAllFormalBtn" onclick="startAll('formal')" type="button">
+      <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+      Examen formal
+    </button>
+    <button class="btn btn--ghost btn--danger" id="closeAllBtn" onclick="closeAll()" type="button">
+      <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="1.5"/></svg>
+      Cerrar todos
+    </button>
   </div>
 </div>
 
@@ -124,7 +1102,8 @@
 <div class="rooms-bar">
   <div id="roomsList" style="display:contents;"></div>
   <label class="upload-card">
-    <span>+ Nueva sala</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+    <span>Nueva sala</span>
     <input type="file" id="fileInput" accept=".json" onchange="uploadExam(this)" />
   </label>
 </div>
@@ -155,13 +1134,34 @@
   </div>
 
   <div class="controls">
-    <button class="btn-start" id="startBtn" onclick="startExam()" disabled>▶ Iniciar examen</button>
-    <button class="btn-close" id="closeBtn" onclick="closeExam()" disabled>⏹ Cerrar examen</button>
-    <button class="btn-download" id="downloadBtn" onclick="downloadCSV()" disabled>📥 Descargar CSV</button>
-    <button class="btn-download" id="downloadKeyBtn" onclick="downloadKey()" disabled>🔑 Descargar clave</button>
-    <button class="btn-reset" onclick="resetExam()">↺ Reiniciar</button>
-    <button class="btn-reset" onclick="reloadJSON()" title="Re-lee el JSON desde disco y actualiza el contenido sin perder respuestas">🔄 Recargar JSON</button>
-    <button class="btn-delete" onclick="deleteRoom()">✕ Eliminar sala</button>
+    <button class="btn-start" id="startBtn" onclick="startExam()" type="button" disabled>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+      Iniciar examen
+    </button>
+    <button class="btn-close" id="closeBtn" onclick="closeExam()" type="button" disabled>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="1.5"/></svg>
+      Cerrar examen
+    </button>
+    <button class="btn-download" id="downloadBtn" onclick="downloadCSV()" type="button" disabled>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Descargar CSV
+    </button>
+    <button class="btn-download" id="downloadKeyBtn" onclick="downloadKey()" type="button" disabled>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg>
+      Descargar clave
+    </button>
+    <button class="btn-reset" onclick="resetExam()" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><polyline points="3 3 3 8 8 8"/></svg>
+      Reiniciar
+    </button>
+    <button class="btn-reset" onclick="reloadJSON()" type="button" title="Re-lee el JSON desde disco y actualiza el contenido sin perder respuestas">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><polyline points="21 3 21 8 16 8"/></svg>
+      Recargar JSON
+    </button>
+    <button class="btn-delete" onclick="deleteRoom()" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="3 6 5 6 21 6"/><path d="m19 6-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
+      Eliminar sala
+    </button>
   </div>
 
   <div id="timerArea" style="display: none;">
@@ -207,6 +1207,7 @@
       </thead>
       <tbody id="studentsBody"></tbody>
     </table>
+    <div class="students-cards" id="studentsCards" style="display:none;"></div>
   </div>
 </div>
 
@@ -216,6 +1217,126 @@
 </div>
 
 <script>
+// ─── Sistema de tema ────────────────────────────────────────────────────────
+// Comparte storage con el examen ('ecoems-theme-pref'). El anti-flash en <head>
+// ya aplicó data-theme antes del primer paint. Ciclo del toggle: light → dark → auto.
+const __THEME_KEY = 'ecoems-theme-pref';
+const __THEME_VALID = ['light', 'dark', 'auto'];
+const __THEME_ORDER = ['light', 'dark', 'auto'];
+const __THEME_MQL = window.matchMedia('(prefers-color-scheme: dark)');
+function __getThemePref() {
+  const stored = localStorage.getItem(__THEME_KEY);
+  return __THEME_VALID.includes(stored) ? stored : 'auto';
+}
+function __applyTheme(pref) {
+  const applied = pref === 'auto'
+    ? (__THEME_MQL.matches ? 'dark' : 'light')
+    : pref;
+  document.documentElement.setAttribute('data-theme', applied);
+  document.documentElement.setAttribute('data-theme-pref', pref);
+}
+function __setTheme(pref) {
+  if (!__THEME_VALID.includes(pref)) return;
+  localStorage.setItem(__THEME_KEY, pref);
+  __applyTheme(pref);
+}
+function toggleDarkMode() {
+  const current = __getThemePref();
+  const next = __THEME_ORDER[(__THEME_ORDER.indexOf(current) + 1) % __THEME_ORDER.length];
+  __setTheme(next);
+}
+__THEME_MQL.addEventListener('change', () => {
+  if (__getThemePref() === 'auto') __applyTheme('auto');
+});
+document.addEventListener('DOMContentLoaded', function() {
+  __applyTheme(__getThemePref());
+});
+
+// ─── Diálogos Tercial (reemplazan confirm/alert nativos) ────────────────────
+function __overlayEnsure() {
+  let el = document.getElementById('__appDialog');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = '__appDialog';
+    el.className = 'overlay';
+    document.body.appendChild(el);
+  }
+  return el;
+}
+function appConfirm(options) {
+  const o = typeof options === 'string' ? { body: options } : (options || {});
+  const variant = o.danger ? 'overlay-card--danger' : 'overlay-card--warn';
+  const icon = o.danger ? '!' : '?';
+  return new Promise((resolve) => {
+    const overlay = __overlayEnsure();
+    overlay.innerHTML = `
+      <div class="overlay-card ${variant}">
+        <div class="overlay-card__icon" aria-hidden="true">${icon}</div>
+        <h2 class="overlay-card__title"></h2>
+        <p class="overlay-card__body"></p>
+        <div class="overlay-card__actions">
+          <button class="btn btn--ghost" data-action="cancel" type="button"></button>
+          <button class="btn btn--primary" data-action="accept" type="button"></button>
+        </div>
+      </div>
+    `;
+    overlay.querySelector('.overlay-card__title').textContent = o.title || '¿Estás seguro?';
+    overlay.querySelector('.overlay-card__body').innerHTML = (o.body || '').replace(/\n/g, '<br>');
+    overlay.querySelector('[data-action="cancel"]').textContent = o.cancelText || 'Cancelar';
+    const accept = overlay.querySelector('[data-action="accept"]');
+    accept.textContent = o.confirmText || 'Aceptar';
+    if (o.danger) accept.className = 'btn btn--ghost btn--danger';
+    overlay.classList.add('show');
+    function close(result) {
+      overlay.classList.remove('show');
+      document.removeEventListener('keydown', onKey);
+      resolve(result);
+    }
+    function onKey(e) {
+      if (e.key === 'Escape') close(false);
+      else if (e.key === 'Enter') close(true);
+    }
+    overlay.querySelector('[data-action="accept"]').onclick = () => close(true);
+    overlay.querySelector('[data-action="cancel"]').onclick = () => close(false);
+    overlay.onclick = (e) => { if (e.target === overlay) close(false); };
+    document.addEventListener('keydown', onKey);
+  });
+}
+function appAlert(options) {
+  const o = typeof options === 'string' ? { body: options } : (options || {});
+  const variant = o.variant === 'err' ? 'overlay-card--danger'
+                : o.variant === 'ok'  ? 'overlay-card--info'
+                : 'overlay-card--warn';
+  const icon = o.variant === 'err' ? '!' : o.variant === 'ok' ? '✓' : '!';
+  return new Promise((resolve) => {
+    const overlay = __overlayEnsure();
+    overlay.innerHTML = `
+      <div class="overlay-card ${variant}">
+        <div class="overlay-card__icon" aria-hidden="true">${icon}</div>
+        <h2 class="overlay-card__title"></h2>
+        <p class="overlay-card__body"></p>
+        <div class="overlay-card__actions">
+          <button class="btn btn--primary" data-action="ok" type="button">Entendido</button>
+        </div>
+      </div>
+    `;
+    overlay.querySelector('.overlay-card__title').textContent = o.title || 'Aviso';
+    overlay.querySelector('.overlay-card__body').innerHTML = (o.body || '').replace(/\n/g, '<br>');
+    overlay.classList.add('show');
+    function close() {
+      overlay.classList.remove('show');
+      document.removeEventListener('keydown', onKey);
+      resolve();
+    }
+    function onKey(e) {
+      if (e.key === 'Escape' || e.key === 'Enter') close();
+    }
+    overlay.querySelector('[data-action="ok"]').onclick = close;
+    overlay.onclick = (e) => { if (e.target === overlay) close(); };
+    document.addEventListener('keydown', onKey);
+  });
+}
+
 const socket = io();
 let selectedRoom = null;
 let roomsData = [];
@@ -322,34 +1443,43 @@ async function uploadExam(input) {
       pendingSelect = result.roomCode;
       socket.emit('getRooms');
     } else {
-      alert('Error: ' + result.error);
+      appAlert({ title: 'No se pudo subir el examen', body: result.error, variant: 'err' });
     }
   } catch (err) {
-    alert('Error al leer el archivo: ' + err.message);
+    appAlert({ title: 'Error al leer el archivo', body: err.message, variant: 'err' });
   }
   input.value = '';
 }
 
 // ─── Controls ──────────────────────────────────────────────────────────────
-function startExam() {
+async function startExam() {
   if (!selectedRoom) return;
-  if (confirm('¿Iniciar el examen? Los alumnos podran empezar a contestar.')) {
-    socket.emit('startExam', { roomCode: selectedRoom });
-  }
+  const ok = await appConfirm({
+    title: '¿Iniciar el examen?',
+    body: 'Los alumnos podrán empezar a contestar de inmediato.',
+    confirmText: 'Iniciar'
+  });
+  if (ok) socket.emit('startExam', { roomCode: selectedRoom });
 }
 
-function closeExam() {
+async function closeExam() {
   if (!selectedRoom) return;
-  if (confirm('¿Cerrar el examen? Los alumnos que no hayan entregado se les enviara automaticamente.')) {
-    socket.emit('closeExam', { roomCode: selectedRoom });
-  }
+  const ok = await appConfirm({
+    title: '¿Cerrar el examen?',
+    body: 'Los alumnos que no hayan entregado se les enviará automáticamente.',
+    confirmText: 'Cerrar examen'
+  });
+  if (ok) socket.emit('closeExam', { roomCode: selectedRoom });
 }
 
-function restoreStudent(studentId, studentName) {
+async function restoreStudent(studentId, studentName) {
   if (!selectedRoom) return;
-  if (confirm(`¿Restaurar el examen de ${studentName}? Su contador de salidas se reiniciará a 0.`)) {
-    socket.emit('restoreStudent', { roomCode: selectedRoom, studentId });
-  }
+  const ok = await appConfirm({
+    title: `¿Restaurar a ${studentName}?`,
+    body: 'Su contador de salidas regresará a una salida antes del umbral de cancelación.',
+    confirmText: 'Restaurar'
+  });
+  if (ok) socket.emit('restoreStudent', { roomCode: selectedRoom, studentId });
 }
 
 async function reloadJSON() {
@@ -358,50 +1488,75 @@ async function reloadJSON() {
     const res = await fetch(`/api/dev-reload/${selectedRoom}`, { method: 'POST' });
     const data = await res.json();
     if (data.success) {
-      alert('JSON recargado. Los alumnos verán el contenido nuevo al instante.');
+      appAlert({ title: 'JSON recargado', body: 'Los alumnos verán el contenido nuevo al instante.', variant: 'ok' });
     } else {
-      alert('Error: ' + (data.error || 'desconocido'));
+      appAlert({ title: 'No se pudo recargar', body: data.error || 'Error desconocido', variant: 'err' });
     }
   } catch (err) {
-    alert('Error al recargar: ' + err.message);
+    appAlert({ title: 'Error al recargar', body: err.message, variant: 'err' });
   }
 }
 
-function resetExam() {
+async function resetExam() {
   if (!selectedRoom) return;
-  if (confirm('¿Reiniciar el examen? Se borrarán las respuestas y todos los comprobantes guardados (incluida la clave de respuestas).')) {
-    socket.emit('resetExam', { roomCode: selectedRoom });
-  }
+  const ok = await appConfirm({
+    title: '¿Reiniciar el examen?',
+    body: 'Se borrarán las respuestas y todos los comprobantes guardados (incluida la clave de respuestas).',
+    confirmText: 'Reiniciar',
+    danger: true
+  });
+  if (ok) socket.emit('resetExam', { roomCode: selectedRoom });
 }
 
-function startAll(mode) {
+async function startAll(mode) {
   const waiting = roomsData.filter(r => r.phase === 'waiting');
-  if (waiting.length === 0) { alert('No hay salas en espera para iniciar.'); return; }
+  if (waiting.length === 0) {
+    return appAlert({ title: 'No hay salas en espera', body: 'No hay salas pendientes para iniciar.' });
+  }
 
   if (mode === 'practice') {
     const withStudents = waiting.filter(r => r.studentCount > 0);
-    if (withStudents.length === 0) { alert('No hay salas con alumnos conectados.'); return; }
-    if (confirm(`Modo práctica: iniciar ${withStudents.length} sala(s) que ya tienen alumnos conectados.`)) {
-      withStudents.forEach(r => socket.emit('startExam', { roomCode: r.roomCode }));
+    if (withStudents.length === 0) {
+      return appAlert({ title: 'Sin alumnos conectados', body: 'No hay salas con alumnos conectados en este momento.' });
     }
+    const ok = await appConfirm({
+      title: 'Modo práctica',
+      body: `Se iniciarán <strong>${withStudents.length} sala(s)</strong> que ya tienen alumnos conectados.`,
+      confirmText: 'Iniciar todas'
+    });
+    if (ok) withStudents.forEach(r => socket.emit('startExam', { roomCode: r.roomCode }));
   } else {
-    if (confirm(`Modo formal: iniciar las ${waiting.length} sala(s) aunque no haya alumnos conectados.`)) {
-      waiting.forEach(r => socket.emit('startExam', { roomCode: r.roomCode }));
-    }
+    const ok = await appConfirm({
+      title: 'Modo examen formal',
+      body: `Se iniciarán las <strong>${waiting.length} sala(s)</strong> aunque no haya alumnos conectados.`,
+      confirmText: 'Iniciar todas'
+    });
+    if (ok) waiting.forEach(r => socket.emit('startExam', { roomCode: r.roomCode }));
   }
 }
 
-function closeAll() {
+async function closeAll() {
   const active = roomsData.filter(r => r.phase === 'active');
-  if (active.length === 0) { alert('No hay salas activas para cerrar.'); return; }
-  if (confirm(`¿Cerrar ${active.length} sala(s) simultáneamente?`)) {
-    active.forEach(r => socket.emit('closeExam', { roomCode: r.roomCode }));
+  if (active.length === 0) {
+    return appAlert({ title: 'No hay salas activas', body: 'No hay salas en curso para cerrar.' });
   }
+  const ok = await appConfirm({
+    title: '¿Cerrar todas las salas?',
+    body: `Se cerrarán <strong>${active.length} sala(s)</strong> simultáneamente.`,
+    confirmText: 'Cerrar todas'
+  });
+  if (ok) active.forEach(r => socket.emit('closeExam', { roomCode: r.roomCode }));
 }
 
-function deleteRoom() {
+async function deleteRoom() {
   if (!selectedRoom) return;
-  if (confirm(`¿Eliminar la sala ${selectedRoom}? Se perderan todos los datos.`)) {
+  const ok = await appConfirm({
+    title: `¿Eliminar la sala ${selectedRoom}?`,
+    body: 'Se perderán todos los datos de la sala. Esta acción no se puede deshacer.',
+    confirmText: 'Eliminar',
+    danger: true
+  });
+  if (ok) {
     socket.emit('deleteRoom', { roomCode: selectedRoom });
     selectedRoom = null;
     document.getElementById('roomDetail').style.display = 'none';
@@ -530,10 +1685,12 @@ function startTeacherTimer(startTime, limitMinutes) {
 function renderStudents(students) {
   const body = document.getElementById('studentsBody');
   const table = document.getElementById('studentsTable');
+  const cards = document.getElementById('studentsCards');
   const empty = document.getElementById('emptyStudents');
 
   if (!students || students.length === 0) {
     table.style.display = 'none';
+    cards.style.display = 'none';
     empty.style.display = 'block';
     document.getElementById('metricConnected').textContent = '0';
     document.getElementById('metricAnswering').textContent = '0';
@@ -542,12 +1699,16 @@ function renderStudents(students) {
     return;
   }
 
-  table.style.display = 'table';
+  // Reset display: el CSS media query decide cuál se ve. Limpiamos inline
+  // display:none que el caso "0 alumnos" pueda haber dejado.
+  table.style.display = '';
+  cards.style.display = '';
   empty.style.display = 'none';
 
   let connected = 0, answering = 0, submitted = 0, disconnected = 0;
 
   body.innerHTML = '';
+  cards.innerHTML = '';
   students.forEach(s => {
     if (s.submitted) submitted++;
     else if (s.connected) { connected++; answering++; }
@@ -578,6 +1739,15 @@ function renderStudents(students) {
       ? `<button class="btn-restore" onclick="restoreStudent('${s.id}', '${s.name.replace(/'/g, "\\'")}')">Restaurar</button>`
       : '';
 
+    // Clases semánticas para aciertos / salidas / tiempo
+    let scoreCls = 'score-cell score-cell--pending';
+    if (s.submitted && s.correct !== null) {
+      const r = s.correct / s.total;
+      scoreCls = 'score-cell ' + (r >= 0.7 ? 'score-cell--ok' : r >= 0.5 ? 'score-cell--warn' : 'score-cell--err');
+    }
+    const tabsCls = s.tabSwitches > 0 ? 'tabs-cell tabs-cell--alert' : 'tabs-cell';
+    const timeCls = s.submitted ? 'time-cell time-cell--submitted' : 'time-cell';
+
     const row = document.createElement('tr');
     row.innerHTML = `
       <td><span class="status-dot ${statusDot}"></span>${statusText}${restoreBtn}</td>
@@ -589,11 +1759,36 @@ function renderStudents(students) {
         </div>
       </td>
       <td>${s.answered}/${s.total}</td>
-      <td style="font-weight:${s.submitted ? '600' : '400'}; color:${s.submitted ? (s.correct/s.total >= 0.7 ? '#16a34a' : s.correct/s.total >= 0.5 ? '#a16207' : '#e53e3e') : '#94a3b8'}">${scoreStr}</td>
-      <td style="color: ${s.tabSwitches > 0 ? '#f87171' : '#94a3b8'}; font-weight: ${s.tabSwitches > 0 ? '700' : '400'}">${s.tabSwitches || 0}</td>
-      <td style="color: ${s.submitted ? '#e2e8f0' : '#94a3b8'}">${timeStr}</td>
+      <td class="${scoreCls}">${scoreStr}</td>
+      <td class="${tabsCls}">${s.tabSwitches || 0}</td>
+      <td class="${timeCls}">${timeStr}</td>
     `;
     body.appendChild(row);
+
+    // Versión móvil: card por alumno (solo lo esencial — nombre, estado,
+    // progreso, aciertos, salidas si las hay, botón Restaurar si cancelled).
+    const alerts = [];
+    if (s.tabSwitches > 0) alerts.push(`<span class="student-card__alert">${s.tabSwitches} salida${s.tabSwitches === 1 ? '' : 's'}</span>`);
+    if (s.submitted && timeStr !== '—') alerts.push(`<span class="student-card__count">${timeStr}</span>`);
+
+    const card = document.createElement('div');
+    card.className = 'student-card';
+    card.innerHTML = `
+      <div class="student-card__head">
+        <span class="status-dot ${statusDot}"></span>
+        <span class="student-card__name">${s.name}</span>
+        <span class="student-card__group">${s.group}</span>
+      </div>
+      <div class="student-card__status-text">${statusText}</div>
+      <div class="progress-bar"><div class="fill fill-blue" style="width: ${pct}%"></div></div>
+      <div class="student-card__meta">
+        <span class="student-card__count">${s.answered}/${s.total} respondidas</span>
+        <span class="${scoreCls}">${scoreStr}</span>
+      </div>
+      ${alerts.length ? `<div class="student-card__alerts">${alerts.join('')}</div>` : ''}
+      ${restoreBtn}
+    `;
+    cards.appendChild(card);
   });
 
   document.getElementById('metricConnected').textContent = connected + submitted;

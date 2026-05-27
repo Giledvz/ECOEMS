@@ -867,6 +867,7 @@ io.on('connection', (socket) => {
       });
       joinPayload.submitted = true;
       joinPayload.correct = correct;
+      joinPayload.answers = student.answers || {};
       joinPayload.answerKey = student.answerKey ?? room.answerKey;
       joinPayload.explanations = Object.fromEntries(
         room.questions.map(q => [q.id, q.explanation || ''])
@@ -918,10 +919,13 @@ io.on('connection', (socket) => {
     const student = room.students[studentId];
     if (!student) return;
     student.cancelled = false;
-    student.tabSwitches = 0;
+    // Dejar el contador a una salida antes del umbral (3 = cancela), así una más cancela.
+    student.tabSwitches = 2;
     io.to(studentId).emit('examRestored');
+    // Mostrar al alumno restaurado el aviso de "última oportunidad".
+    io.to(studentId).emit('tabSwitchCount', { count: 2 });
     io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
-    console.log(`[${roomCode}] ${student.name} restaurado por profesor`);
+    console.log(`[${roomCode}] ${student.name} restaurado por profesor (queda 1 salida)`);
   });
 
   // ── Student marks/unmarks question ──
