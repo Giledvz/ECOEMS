@@ -977,8 +977,12 @@
     grid-template-columns: repeat(auto-fill, 24px);
     grid-auto-rows: 24px;
     gap: var(--space-1);
-    max-height: 96px;
+    max-height: 144px;
     overflow-y: auto;
+  }
+  /* En tablet/desktop la cuadrícula cabe entera sin scroll interno. */
+  @media (min-width: 760px) {
+    .exam-grid__inner { max-height: none; }
   }
   .exam-grid__cell {
     width: 24px; height: 24px;
@@ -2264,6 +2268,10 @@ function handleOptionClick(e, btn, qId, letter) {
   // Con candado: en touch primer tap revela, segundo selecciona.
   // En mouse el hover ya reveló visualmente, así que click selecciona directo.
   if (__lastPointerType === 'touch' && btn.dataset.revealed !== 'true') {
+    // Solo una opción revelada a la vez en touch: cerrar las demás.
+    document.querySelectorAll('#qOptions .exam-option--locked').forEach(o => {
+      if (o !== btn) delete o.dataset.revealed;
+    });
     btn.dataset.revealed = 'true';
   } else {
     selectAnswer(qId, letter);
