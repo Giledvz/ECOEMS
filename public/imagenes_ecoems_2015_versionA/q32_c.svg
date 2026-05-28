@@ -1,22 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 170" width="130" height="170" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="130" height="170" fill="#ffffff"/>
-  <g transform="translate(5, 5)">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 170" width="130" height="170" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<g transform="translate(5, 5)">
     <!-- Cruz de la red del cubo -->
-    <rect x="40" y="0" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
-    <rect x="0" y="40" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
-    <rect x="40" y="40" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
-    <rect x="80" y="40" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
-    <rect x="40" y="80" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
-    <rect x="40" y="120" width="40" height="40" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="40" y="0" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="0" y="40" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="40" y="40" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="80" y="40" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="40" y="80" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="40" y="120" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"/>
 
     <!-- L1: pentágono (vértice apuntando a la derecha) -->
     <polygon points="36,60 24.94,75.22 7.06,69.41 7.06,50.59 24.94,44.78" fill="#555555"/>
 
     <!-- L3: triángulo apuntando hacia arriba, base = lado inferior, apex en lado superior -->
-    <polygon points="80,80 120,80 100,40" fill="#1a1a1a"/>
+    <polygon points="80,80 120,80 100,40" fill="currentColor"/>
 
     <!-- B1: dos barras verticales pegadas al borde derecho -->
-    <rect x="72" y="80" width="5" height="40" fill="#1a1a1a"/>
-    <rect x="64" y="80" width="5" height="40" fill="#1a1a1a"/>
+    <rect x="72" y="80" width="5" height="40" fill="currentColor"/>
+    <rect x="64" y="80" width="5" height="40" fill="currentColor"/>
   </g>
 </svg>

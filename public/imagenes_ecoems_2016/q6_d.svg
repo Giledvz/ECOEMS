@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 90" width="80" height="90" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="80" height="90" fill="#ffffff"/>
-  <!-- d) rect en C2 (arriba-izq), línea en C4 (abajo-der) -->
-  <g transform="translate(40, 45)" stroke="#1a1a1a" fill="none" stroke-width="1.6" stroke-linecap="round">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 90" width="80" height="90" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- d) rect en C2 (arriba-izq), línea en C4 (abajo-der) -->
+  <g transform="translate(40, 45)" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round">
     <line x1="-30" y1="0" x2="30" y2="0"/>
     <line x1="0" y1="-30" x2="0" y2="30"/>
   </g>
-  <rect x="14" y="25" width="22" height="10" fill="#1a1a1a"/>
-  <line x1="55" y1="52" x2="55" y2="68" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="14" y="25" width="22" height="10" fill="currentColor"/>
+  <line x1="55" y1="52" x2="55" y2="68" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
 </svg>

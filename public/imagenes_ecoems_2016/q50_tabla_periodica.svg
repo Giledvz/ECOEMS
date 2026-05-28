@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" width="360" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="360" height="220" fill="#ffffff"/>
-  <!-- Tabla periódica simplificada (representación icónica) -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" width="360" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Tabla periódica simplificada (representación icónica) -->
   <!-- Celdas con color morado claro (#b88fd9), trazos suaves. Tamaño de celda 14×14 -->
   <g fill="#b88fd9" stroke="#7a4f9c" stroke-width="0.8">
     <!-- Fila 1: H (col 1), He (col 18) -->
@@ -75,12 +74,12 @@
     <line x1="58" y1="128" x2="72" y2="156"/>
   </g>
   <!-- Flecha horizontal de DERECHA a IZQUIERDA (arriba de la tabla) -->
-  <g stroke="#1a1a1a" stroke-width="1.8" fill="#1a1a1a">
+  <g stroke="currentColor" stroke-width="1.8" fill="currentColor">
     <line x1="290" y1="18" x2="30" y2="18" stroke-linecap="round"/>
     <polygon points="30,18 38,14 38,22"/>
   </g>
   <!-- Flecha vertical de ARRIBA hacia ABAJO (a la izquierda de la tabla) -->
-  <g stroke="#1a1a1a" stroke-width="1.8" fill="#1a1a1a">
+  <g stroke="currentColor" stroke-width="1.8" fill="currentColor">
     <line x1="18" y1="20" x2="18" y2="178" stroke-linecap="round"/>
     <polygon points="18,178 14,170 22,170"/>
   </g>

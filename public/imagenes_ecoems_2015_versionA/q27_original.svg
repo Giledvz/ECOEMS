@@ -1,42 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 110" width="600" height="110" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="600" height="110" fill="#ffffff"/>
-
-  <g transform="translate(20, 15)">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 110" width="600" height="110" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<g transform="translate(20, 15)">
     <!-- Cuadro 1: negro BL + blanco BR + triángulo TD -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-      <rect x="0" y="54" width="26" height="26" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
-      <rect x="54" y="54" width="26" height="26" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
-      <polygon points="27,0 53,0 40,26" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
+      <rect x="0" y="0" width="80" height="80" fill="none" stroke="currentColor" stroke-width="2"/>
+      <rect x="0" y="54" width="26" height="26" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+<polygon points="27,0 53,0 40,26" fill="#cbd5e1" stroke="currentColor" stroke-width="1.5"/>
     </g>
 
     <!-- Cuadro 2: negro TL + blanco BR + triángulo RR -->
     <g transform="translate(115, 0)">
-      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-      <rect x="0" y="0" width="26" height="26" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
-      <rect x="54" y="54" width="26" height="26" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
-      <polygon points="54,27 54,53 80,40" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
+      <rect x="0" y="0" width="80" height="80" fill="none" stroke="currentColor" stroke-width="2"/>
+      <rect x="0" y="0" width="26" height="26" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+<polygon points="54,27 54,53 80,40" fill="#cbd5e1" stroke="currentColor" stroke-width="1.5"/>
     </g>
 
     <!-- Cuadro 3: negro TL + blanco BL + triángulo BU -->
     <g transform="translate(230, 0)">
-      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-      <rect x="0" y="0" width="26" height="26" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
-      <rect x="0" y="54" width="26" height="26" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
-      <polygon points="27,80 53,80 40,54" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
+      <rect x="0" y="0" width="80" height="80" fill="none" stroke="currentColor" stroke-width="2"/>
+      <rect x="0" y="0" width="26" height="26" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+<polygon points="27,80 53,80 40,54" fill="#cbd5e1" stroke="currentColor" stroke-width="1.5"/>
     </g>
 
     <!-- Cuadro 4: negro TR + blanco BL + triángulo LL -->
     <g transform="translate(345, 0)">
-      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-      <rect x="54" y="0" width="26" height="26" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
-      <rect x="0" y="54" width="26" height="26" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
-      <polygon points="26,27 26,53 0,40" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="1.5"/>
+      <rect x="0" y="0" width="80" height="80" fill="none" stroke="currentColor" stroke-width="2"/>
+      <rect x="54" y="0" width="26" height="26" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+<polygon points="26,27 26,53 0,40" fill="#cbd5e1" stroke="currentColor" stroke-width="1.5"/>
     </g>
 
     <!-- Cuadro 5: ? -->
     <g transform="translate(460, 0)">
-      <rect x="0" y="0" width="80" height="80" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5,3"/>
+      <rect x="0" y="0" width="80" height="80" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="5,3"/>
       <text x="40" y="55" text-anchor="middle" font-size="40" font-weight="700">?</text>
     </g>
   </g>

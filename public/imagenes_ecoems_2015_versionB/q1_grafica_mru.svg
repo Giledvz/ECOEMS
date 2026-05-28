@@ -1,7 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" width="760" height="480" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="760" height="480" fill="#ffffff"/>
-
-  <!-- ================ GRÁFICA ================ -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" width="760" height="480" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- ================ GRÁFICA ================ -->
   <!-- Origen: (100, 400). 1h = 50 px en x. 8 km = 25 px en y -->
 
   <!-- Cuadrícula tenue -->
@@ -34,30 +32,30 @@
   <text x="50" y="50" font-size="16" font-weight="600">Posición (km)</text>
 
   <!-- Eje y -->
-  <line x1="100" y1="60" x2="100" y2="400" stroke="#1a1a1a" stroke-width="2"/>
-  <polygon points="100,55 95,68 105,68" fill="#1a1a1a"/>
+  <line x1="100" y1="60" x2="100" y2="400" stroke="currentColor" stroke-width="2"/>
+  <polygon points="100,55 95,68 105,68" fill="currentColor"/>
 
   <!-- Eje x -->
-  <line x1="100" y1="400" x2="520" y2="400" stroke="#1a1a1a" stroke-width="2"/>
-  <polygon points="525,400 512,395 512,405" fill="#1a1a1a"/>
+  <line x1="100" y1="400" x2="520" y2="400" stroke="currentColor" stroke-width="2"/>
+  <polygon points="525,400 512,395 512,405" fill="currentColor"/>
 
   <!-- Marcas y etiquetas eje y: 32 (en y=300), 48 (y=250), 64 (y=200) -->
   <g font-size="15">
-    <line x1="95" y1="300" x2="105" y2="300" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="95" y1="300" x2="105" y2="300" stroke="currentColor" stroke-width="2"/>
     <text x="88" y="305" text-anchor="end">32</text>
-    <line x1="95" y1="250" x2="105" y2="250" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="95" y1="250" x2="105" y2="250" stroke="currentColor" stroke-width="2"/>
     <text x="88" y="255" text-anchor="end">48</text>
-    <line x1="95" y1="200" x2="105" y2="200" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="95" y1="200" x2="105" y2="200" stroke="currentColor" stroke-width="2"/>
     <text x="88" y="205" text-anchor="end">64</text>
   </g>
 
   <!-- Marcas y etiquetas eje x: 4 (x=300), 6 (x=400), 8 (x=500) -->
   <g font-size="15">
-    <line x1="300" y1="395" x2="300" y2="405" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="300" y1="395" x2="300" y2="405" stroke="currentColor" stroke-width="2"/>
     <text x="300" y="424" text-anchor="middle">4</text>
-    <line x1="400" y1="395" x2="400" y2="405" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="400" y1="395" x2="400" y2="405" stroke="currentColor" stroke-width="2"/>
     <text x="400" y="424" text-anchor="middle">6</text>
-    <line x1="500" y1="395" x2="500" y2="405" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="500" y1="395" x2="500" y2="405" stroke="currentColor" stroke-width="2"/>
     <text x="500" y="424" text-anchor="middle">8</text>
   </g>
 
@@ -73,12 +71,11 @@
 
   <!-- ================ TABLA ================ -->
   <g transform="translate(560, 90)">
-    <rect x="0" y="0" width="170" height="280" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
-    <line x1="85" y1="0" x2="85" y2="280" stroke="#1a1a1a" stroke-width="2"/>
-    <line x1="0" y1="56" x2="170" y2="56" stroke="#1a1a1a" stroke-width="2"/>
-    <line x1="0" y1="112" x2="170" y2="112" stroke="#1a1a1a" stroke-width="1"/>
-    <line x1="0" y1="168" x2="170" y2="168" stroke="#1a1a1a" stroke-width="1"/>
-    <line x1="0" y1="224" x2="170" y2="224" stroke="#1a1a1a" stroke-width="1"/>
+<line x1="85" y1="0" x2="85" y2="280" stroke="currentColor" stroke-width="2"/>
+    <line x1="0" y1="56" x2="170" y2="56" stroke="currentColor" stroke-width="2"/>
+    <line x1="0" y1="112" x2="170" y2="112" stroke="currentColor" stroke-width="1"/>
+    <line x1="0" y1="168" x2="170" y2="168" stroke="currentColor" stroke-width="1"/>
+    <line x1="0" y1="224" x2="170" y2="224" stroke="currentColor" stroke-width="1"/>
 
     <!-- Cabecera -->
     <text x="42.5" y="34" text-anchor="middle" font-size="13" font-weight="700">Posición</text>

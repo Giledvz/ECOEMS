@@ -1,7 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="600" height="400" fill="#ffffff"/>
-
-  <!-- Cuadrícula sutil -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Cuadrícula sutil -->
   <g stroke="#e5e7eb" stroke-width="0.4">
     <line x1="80" y1="130" x2="520" y2="130"/>
     <line x1="80" y1="200" x2="520" y2="200"/>
@@ -20,13 +18,13 @@
   <!-- Marcador de flecha -->
   <defs>
     <marker id="arrowAxis" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <polygon points="0,0 10,4 0,8" fill="#1a1a1a"/>
+      <polygon points="0,0 10,4 0,8" fill="currentColor"/>
     </marker>
   </defs>
 
   <!-- Ejes -->
-  <line x1="80" y1="340" x2="545" y2="340" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
-  <line x1="80" y1="340" x2="80"  y2="50"  stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
+  <line x1="80" y1="340" x2="545" y2="340" stroke="currentColor" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
+  <line x1="80" y1="340" x2="80"  y2="50"  stroke="currentColor" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
 
   <!-- Títulos de los ejes -->
   <text x="560" y="345" font-size="14" font-style="italic">d (m)</text>
@@ -48,15 +46,15 @@
   <text x="520" y="358" text-anchor="middle" font-size="12" font-style="italic">10</text>
 
   <!-- Línea horizontal F = 10 N (la función) -->
-  <line x1="80" y1="200" x2="520" y2="200" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="80" y1="200" x2="520" y2="200" stroke="currentColor" stroke-width="2"/>
 
   <!-- Líneas auxiliares punteadas desde A y B hasta el eje X -->
-  <line x1="212" y1="200" x2="212" y2="340" stroke="#1a1a1a" stroke-width="0.7" stroke-dasharray="3,3"/>
-  <line x1="432" y1="200" x2="432" y2="340" stroke="#1a1a1a" stroke-width="0.7" stroke-dasharray="3,3"/>
+  <line x1="212" y1="200" x2="212" y2="340" stroke="currentColor" stroke-width="0.7" stroke-dasharray="3,3"/>
+  <line x1="432" y1="200" x2="432" y2="340" stroke="currentColor" stroke-width="0.7" stroke-dasharray="3,3"/>
 
   <!-- Puntos A y B -->
-  <circle cx="212" cy="200" r="4.5" fill="#1a1a1a"/>
-  <circle cx="432" cy="200" r="4.5" fill="#1a1a1a"/>
+  <circle cx="212" cy="200" r="4.5" fill="currentColor"/>
+  <circle cx="432" cy="200" r="4.5" fill="currentColor"/>
 
   <!-- Etiquetas A y B -->
   <text x="212" y="188" text-anchor="middle" font-size="17" font-weight="700">A</text>

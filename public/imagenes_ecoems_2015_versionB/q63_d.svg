@@ -1,12 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="220" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="160" height="160" fill="#ffffff"/>
-  <defs>
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="220" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<defs>
     <!-- Cubo en proyección cabinet con cámara un poco más elevada -->
     <!-- depth offset = (10, -14) en vez de (10, -10): se ve más la cara superior -->
     <symbol id="cubeUnit" overflow="visible">
-      <polygon points="0,0 20,0 20,-20 0,-20" fill="#ffffff" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="miter"/>
-      <polygon points="20,0 30,-14 30,-34 20,-20" fill="#d8d8d8" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="miter"/>
-      <polygon points="0,-20 20,-20 30,-34 10,-34" fill="#ffffff" stroke="#1a1a1a" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="0,0 20,0 20,-20 0,-20" fill="#ffffff" stroke="currentColor" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="20,0 30,-14 30,-34 20,-20" fill="#d8d8d8" stroke="currentColor" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="0,-20 20,-20 30,-34 10,-34" fill="#ffffff" stroke="currentColor" stroke-width="1" stroke-linejoin="miter"/>
     </symbol>
   </defs>
 

@@ -1,36 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 220" width="250" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="250" height="220" fill="#ffffff"/>
-
-  <g transform="translate(20, 20)">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 220" width="250" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<g transform="translate(20, 20)">
     <!-- Vista superior (2x2) -->
     <g>
-      <rect x="0" y="0" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <rect x="30" y="0" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <rect x="0" y="30" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <rect x="30" y="30" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <text x="30" y="80" text-anchor="middle" font-size="14" font-style="italic">Superior</text>
+
+
+
+<text x="30" y="80" text-anchor="middle" font-size="14" font-style="italic">Superior</text>
     </g>
     <!-- Vista frontal -->
     <g transform="translate(130, 0)">
-      <rect x="0" y="30" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <rect x="30" y="30" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <rect x="60" y="30" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <rect x="0" y="0" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <text x="45" y="80" text-anchor="middle" font-size="14" font-style="italic">Frontal</text>
+
+
+
+<text x="45" y="80" text-anchor="middle" font-size="14" font-style="italic">Frontal</text>
     </g>
     <!-- Vista lateral izquierda -->
     <g transform="translate(0, 110)">
-      <rect x="0" y="0" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <rect x="0" y="30" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <rect x="30" y="30" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <text x="30" y="80" text-anchor="middle" font-size="12" font-style="italic">Lateral izquierda</text>
+
+
+<text x="30" y="80" text-anchor="middle" font-size="12" font-style="italic">Lateral izquierda</text>
     </g>
     <!-- Vista lateral derecha -->
     <g transform="translate(140, 110)">
-      <rect x="0" y="30" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <rect x="30" y="0" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <rect x="30" y="30" width="30" height="30" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.2"/>
-      <text x="30" y="80" text-anchor="middle" font-size="12" font-style="italic">Lateral derecha</text>
+
+
+<text x="30" y="80" text-anchor="middle" font-size="12" font-style="italic">Lateral derecha</text>
     </g>
   </g>
 </svg>

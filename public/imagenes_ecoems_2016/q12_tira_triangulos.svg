@@ -1,13 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 130" width="440" height="130" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="440" height="130" fill="#ffffff"/>
-  <g transform="translate(20, 30)">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 130" width="440" height="130" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<g transform="translate(20, 30)">
     <!-- 9 triángulos equiláteros en zigzag, base s=40, altura h=34.64 -->
     <!-- Puntos arriba: B(20,0), D(60,0), F(100,0), H(140,0), J(180,0)  → para 5 puntos arriba
          Puntos abajo: A(0,h), C(40,h), E(80,h), G(120,h), I(160,h), K(200,h)
          Pero la imagen tiene 5 arriba (B,D,F,H,J) y 6 abajo (A,C,E,G,I,K). Necesitamos 9 triángulos.
          Con 9 triángulos en zigzag necesitamos 5 vértices arriba + 6 abajo = 11 vértices, 9 triángulos.
          s=40, h≈34.64 -->
-    <g stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linejoin="round">
+    <g stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round">
       <!-- Contorno superior (línea que une todos los vértices superiores e inferiores) -->
       <!-- Mejor: dibujo el contorno externo y luego las aristas internas (los dobleces) -->
       <!-- Contorno externo: A→B→D→F→H→J→K→I→G→E→C→A -->

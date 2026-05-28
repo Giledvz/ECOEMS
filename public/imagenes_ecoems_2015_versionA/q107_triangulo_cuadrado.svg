@@ -1,24 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" width="360" height="320" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="360" height="320" fill="#ffffff"/>
-
-  <!-- Cuadrado principal de lado x -->
-  <rect x="100" y="50" width="200" height="200" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" width="360" height="320" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Cuadrado principal de lado x -->
+  <rect x="100" y="50" width="200" height="200" fill="none" stroke="currentColor" stroke-width="2"/>
 
   <!-- Triángulo sombreado: base x/3 arriba (lado izquierdo), vértice abajo -->
-  <polygon points="100,50 167,50 133,250" fill="#1a1a1a"/>
+  <polygon points="100,50 167,50 133,250" fill="currentColor"/>
 
   <!-- Etiqueta x/3 (base, alineada con el triángulo) -->
-  <line x1="100" y1="35" x2="167" y2="35" stroke="#1a1a1a" stroke-width="1.5"/>
-  <line x1="100" y1="30" x2="100" y2="40" stroke="#1a1a1a" stroke-width="1.5"/>
-  <line x1="167" y1="30" x2="167" y2="40" stroke="#1a1a1a" stroke-width="1.5"/>
-  <text x="133" y="22" text-anchor="middle" font-size="20" fill="#1a1a1a">x/3</text>
+  <line x1="100" y1="35" x2="167" y2="35" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="100" y1="30" x2="100" y2="40" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="167" y1="30" x2="167" y2="40" stroke="currentColor" stroke-width="1.5"/>
+  <text x="133" y="22" text-anchor="middle" font-size="20" fill="currentColor">x/3</text>
 
   <!-- Etiqueta x (lado derecho) -->
-  <line x1="320" y1="50" x2="320" y2="250" stroke="#1a1a1a" stroke-width="1.5"/>
-  <line x1="315" y1="50" x2="325" y2="50" stroke="#1a1a1a" stroke-width="1.5"/>
-  <line x1="315" y1="250" x2="325" y2="250" stroke="#1a1a1a" stroke-width="1.5"/>
-  <text x="335" y="155" font-size="20" fill="#1a1a1a">x</text>
+  <line x1="320" y1="50" x2="320" y2="250" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="315" y1="50" x2="325" y2="50" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="315" y1="250" x2="325" y2="250" stroke="currentColor" stroke-width="1.5"/>
+  <text x="335" y="155" font-size="20" fill="currentColor">x</text>
 
   <!-- Etiqueta x (base inferior) -->
-  <text x="200" y="285" text-anchor="middle" font-size="20" fill="#1a1a1a">x</text>
+  <text x="200" y="285" text-anchor="middle" font-size="20" fill="currentColor">x</text>
 </svg>

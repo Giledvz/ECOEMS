@@ -1,13 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 460" width="700" height="460" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 460" width="700" height="460" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
   <defs>
     <marker id="axArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
     </marker>
   </defs>
-
-  <rect width="700" height="460" fill="#ffffff"/>
-
-  <!-- Cuadrícula punteada -->
+<!-- Cuadrícula punteada -->
   <g stroke="#9ca3af" stroke-width="0.9" stroke-dasharray="4 4">
     <!-- Verticales (cada 0.1 s) -->
     <line x1="200" y1="400" x2="200" y2="60"/>
@@ -23,11 +20,11 @@
   </g>
 
   <!-- Ejes -->
-  <line x1="80" y1="400" x2="640" y2="400" stroke="#1a1a1a" stroke-width="2" marker-end="url(#axArrow)"/>
-  <line x1="80" y1="400" x2="80" y2="40" stroke="#1a1a1a" stroke-width="2" marker-end="url(#axArrow)"/>
+  <line x1="80" y1="400" x2="640" y2="400" stroke="currentColor" stroke-width="2" marker-end="url(#axArrow)"/>
+  <line x1="80" y1="400" x2="80" y2="40" stroke="currentColor" stroke-width="2" marker-end="url(#axArrow)"/>
 
   <!-- Tics eje X y números -->
-  <g font-size="17" text-anchor="middle" fill="#1a1a1a">
+  <g font-size="17" text-anchor="middle" fill="currentColor">
     <text x="80" y="425">0</text>
     <text x="200" y="425">0.1</text>
     <text x="320" y="425">0.2</text>
@@ -36,7 +33,7 @@
   </g>
 
   <!-- Tics eje Y y números -->
-  <g font-size="17" text-anchor="end" fill="#1a1a1a">
+  <g font-size="17" text-anchor="end" fill="currentColor">
     <text x="68" y="406">0</text>
     <text x="68" y="338">5</text>
     <text x="68" y="270">10</text>
@@ -54,5 +51,5 @@
   </text>
 
   <!-- Línea recta: (0,0) a (0.4, 25) → (80, 400) a (560, 60) -->
-  <line x1="80" y1="400" x2="560" y2="60" stroke="#1a1a1a" stroke-width="3"/>
+  <line x1="80" y1="400" x2="560" y2="60" stroke="currentColor" stroke-width="3"/>
 </svg>

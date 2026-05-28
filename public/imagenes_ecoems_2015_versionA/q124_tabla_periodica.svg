@@ -1,7 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" width="720" height="460" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="720" height="460" fill="#ffffff"/>
-
-  <!-- Etiquetas de filas (números 1-7) a la izquierda -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" width="720" height="460" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Etiquetas de filas (números 1-7) a la izquierda -->
   <g font-size="14" text-anchor="middle">
     <text x="40" y="55">1</text>
     <text x="40" y="85">2</text>
@@ -13,7 +11,7 @@
   </g>
 
   <!-- Cuadrícula 7 filas x 18 columnas. Colores pastel tenues para cada bloque. -->
-  <g stroke="#1a1a1a" stroke-width="1.5">
+  <g stroke="currentColor" stroke-width="1.5">
     <!-- Bloque A: columna 1 (metales alcalinos) — rosa tenue -->
     <rect x="60" y="40" width="30" height="210" fill="#fde2e2"/>
     <!-- Bloque B: columna 2, filas 2-7 (alcalinotérreos) — durazno tenue -->

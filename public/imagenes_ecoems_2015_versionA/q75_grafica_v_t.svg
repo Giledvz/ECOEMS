@@ -1,7 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 320" width="460" height="320" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="460" height="320" fill="#ffffff"/>
-
-  <!-- Origen (60, 270). Cada celda 30 px. Eje x: 0..10 s. Eje y: 0..6 m/s -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 320" width="460" height="320" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Origen (60, 270). Cada celda 30 px. Eje x: 0..10 s. Eje y: 0..6 m/s -->
   <!-- Cuadrícula -->
   <g stroke="#cbd5e1" stroke-width="0.5">
     <line x1="60" y1="60" x2="360" y2="60"/>
@@ -23,8 +21,8 @@
   </g>
 
   <!-- Ejes -->
-  <line x1="60" y1="270" x2="370" y2="270" stroke="#1a1a1a" stroke-width="1.5"/>
-  <line x1="60" y1="270" x2="60" y2="50" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="60" y1="270" x2="370" y2="270" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="60" y1="270" x2="60" y2="50" stroke="currentColor" stroke-width="1.5"/>
 
   <!-- Etiquetas eje x: 0,2,4,6,8,10 -->
   <text x="60" y="290" text-anchor="middle" font-size="14">0</text>
@@ -42,15 +40,15 @@
   <text x="48" y="40" text-anchor="middle" font-size="14" font-style="italic">v (m/s)</text>
 
   <!-- Curva: (0,0) → (4,4) [A: subiendo] → (8,4) [B: constante] → (10,0) [C: bajando] -->
-  <polyline points="60,270 180,150 300,150 360,270" fill="none" stroke="#1a1a1a" stroke-width="2.2"/>
+  <polyline points="60,270 180,150 300,150 360,270" fill="none" stroke="currentColor" stroke-width="2.2"/>
 
   <!-- Marcadores A, B, C -->
-  <circle cx="120" cy="210" r="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <circle cx="120" cy="210" r="14" fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
   <text x="120" y="216" text-anchor="middle" font-size="16" font-weight="700">A</text>
 
-  <circle cx="240" cy="150" r="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <circle cx="240" cy="150" r="14" fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
   <text x="240" y="156" text-anchor="middle" font-size="16" font-weight="700">B</text>
 
-  <circle cx="335" cy="220" r="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <circle cx="335" cy="220" r="14" fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
   <text x="335" y="226" text-anchor="middle" font-size="16" font-weight="700">C</text>
 </svg>

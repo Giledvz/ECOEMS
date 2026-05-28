@@ -1,77 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 180" width="250" height="180" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="250" height="180" fill="#ffffff"/>
-  <!-- Tabla triangular de las 28 fichas del dominó.
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 180" width="250" height="180" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Tabla triangular de las 28 fichas del dominó.
        Mulas (diagonal: 0:0, 1:1, ..., 6:6) resaltadas con gris más oscuro. -->
   <g font-size="11" text-anchor="middle">
     <!-- Estilo: celda 30×22, margen 8, gris claro general, mulas gris medio -->
     <!-- Fila 1: 0:0 (mula) -->
-    <rect x="10" y="10" width="30" height="22" fill="#bcbcbc" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="10" y="10" width="30" height="22" fill="#bcbcbc" stroke="currentColor" stroke-width="0.7"/>
     <text x="25" y="25">0:0</text>
 
     <!-- Fila 2: 0:1, 1:1(mula) -->
-    <rect x="10" y="32" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="10" y="32" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="25" y="47">0:1</text>
-    <rect x="40" y="32" width="30" height="22" fill="#bcbcbc" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="40" y="32" width="30" height="22" fill="#bcbcbc" stroke="currentColor" stroke-width="0.7"/>
     <text x="55" y="47">1:1</text>
 
     <!-- Fila 3: 0:2, 1:2, 2:2(mula) -->
-    <rect x="10" y="54" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="10" y="54" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="25" y="69">0:2</text>
-    <rect x="40" y="54" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="40" y="54" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="55" y="69">1:2</text>
-    <rect x="70" y="54" width="30" height="22" fill="#bcbcbc" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="70" y="54" width="30" height="22" fill="#bcbcbc" stroke="currentColor" stroke-width="0.7"/>
     <text x="85" y="69">2:2</text>
 
     <!-- Fila 4: 0:3..3:3 -->
-    <rect x="10" y="76" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="10" y="76" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="25" y="91">0:3</text>
-    <rect x="40" y="76" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="40" y="76" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="55" y="91">1:3</text>
-    <rect x="70" y="76" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="70" y="76" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="85" y="91">2:3</text>
-    <rect x="100" y="76" width="30" height="22" fill="#bcbcbc" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="100" y="76" width="30" height="22" fill="#bcbcbc" stroke="currentColor" stroke-width="0.7"/>
     <text x="115" y="91">3:3</text>
 
     <!-- Fila 5: 0:4..4:4 -->
-    <rect x="10" y="98" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="10" y="98" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="25" y="113">0:4</text>
-    <rect x="40" y="98" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="40" y="98" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="55" y="113">1:4</text>
-    <rect x="70" y="98" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="70" y="98" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="85" y="113">2:4</text>
-    <rect x="100" y="98" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="100" y="98" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="115" y="113">3:4</text>
-    <rect x="130" y="98" width="30" height="22" fill="#bcbcbc" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="130" y="98" width="30" height="22" fill="#bcbcbc" stroke="currentColor" stroke-width="0.7"/>
     <text x="145" y="113">4:4</text>
 
     <!-- Fila 6: 0:5..5:5 -->
-    <rect x="10" y="120" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="10" y="120" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="25" y="135">0:5</text>
-    <rect x="40" y="120" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="40" y="120" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="55" y="135">1:5</text>
-    <rect x="70" y="120" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="70" y="120" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="85" y="135">2:5</text>
-    <rect x="100" y="120" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="100" y="120" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="115" y="135">3:5</text>
-    <rect x="130" y="120" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="130" y="120" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="145" y="135">4:5</text>
-    <rect x="160" y="120" width="30" height="22" fill="#bcbcbc" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="160" y="120" width="30" height="22" fill="#bcbcbc" stroke="currentColor" stroke-width="0.7"/>
     <text x="175" y="135">5:5</text>
 
     <!-- Fila 7: 0:6..6:6 -->
-    <rect x="10" y="142" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="10" y="142" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="25" y="157">0:6</text>
-    <rect x="40" y="142" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="40" y="142" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="55" y="157">1:6</text>
-    <rect x="70" y="142" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="70" y="142" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="85" y="157">2:6</text>
-    <rect x="100" y="142" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="100" y="142" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="115" y="157">3:6</text>
-    <rect x="130" y="142" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="130" y="142" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="145" y="157">4:6</text>
-    <rect x="160" y="142" width="30" height="22" fill="#ededed" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="160" y="142" width="30" height="22" fill="#ededed" stroke="currentColor" stroke-width="0.7"/>
     <text x="175" y="157">5:6</text>
-    <rect x="190" y="142" width="30" height="22" fill="#bcbcbc" stroke="#1a1a1a" stroke-width="0.7"/>
+    <rect x="190" y="142" width="30" height="22" fill="#bcbcbc" stroke="currentColor" stroke-width="0.7"/>
     <text x="205" y="157">6:6</text>
   </g>
 </svg>

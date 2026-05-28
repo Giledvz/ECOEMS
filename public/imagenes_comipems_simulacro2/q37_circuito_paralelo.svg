@@ -1,36 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="320" height="220" fill="#ffffff"/>
-  <g stroke="#1a1a1a" stroke-width="1.8" fill="none">
-    <!-- Pila en el lado izquierdo (en vertical) -->
-    <!-- Línea larga (terminal positivo arriba) y línea corta (negativo abajo) -->
-    <line x1="35" y1="70" x2="65" y2="70"/>
-    <line x1="40" y1="80" x2="60" y2="80"/>
-    <!-- Cable desde terminal + sube y va a la derecha al rail superior -->
-    <line x1="50" y1="70" x2="50" y2="40"/>
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <g stroke="currentColor" stroke-width="1.8" fill="none">
+    <!-- Pila izquierda centrada verticalmente: + arriba (línea larga), − abajo (corta) -->
+    <line x1="35" y1="110" x2="65" y2="110"/>
+    <line x1="40" y1="120" x2="60" y2="120"/>
+    <!-- Cable + → rail superior -->
+    <line x1="50" y1="110" x2="50" y2="40"/>
     <line x1="50" y1="40" x2="280" y2="40"/>
-    <!-- Cable desde terminal − baja y va al rail inferior -->
-    <line x1="50" y1="80" x2="50" y2="190"/>
+    <!-- Cable − → rail inferior -->
+    <line x1="50" y1="120" x2="50" y2="190"/>
     <line x1="50" y1="190" x2="280" y2="190"/>
-    <!-- Rail derecho cerrando el circuito (donde se ramifica) -->
+    <!-- Rail derecho cerrando el circuito -->
     <line x1="280" y1="40" x2="280" y2="190"/>
-    <!-- Tres resistencias en paralelo: R1, R2, R3 entre los rails -->
-    <!-- R1 en x=110 -->
-    <line x1="110" y1="40" x2="110" y2="70"/>
-    <rect x="98" y="70" width="24" height="60" fill="#ffffff"/>
-    <line x1="110" y1="130" x2="110" y2="190"/>
+
+    <!-- R1 en x=110: cable + zigzag centrado + cable -->
+    <line x1="110" y1="40" x2="110" y2="87"/>
+    <path d="M 110,87 L 117,95 L 103,105 L 117,115 L 103,125 L 117,135 L 110,143"/>
+    <line x1="110" y1="143" x2="110" y2="190"/>
+
     <!-- R2 en x=170 -->
-    <line x1="170" y1="40" x2="170" y2="70"/>
-    <rect x="158" y="70" width="24" height="60" fill="#ffffff"/>
-    <line x1="170" y1="130" x2="170" y2="190"/>
+    <line x1="170" y1="40" x2="170" y2="87"/>
+    <path d="M 170,87 L 177,95 L 163,105 L 177,115 L 163,125 L 177,135 L 170,143"/>
+    <line x1="170" y1="143" x2="170" y2="190"/>
+
     <!-- R3 en x=230 -->
-    <line x1="230" y1="40" x2="230" y2="70"/>
-    <rect x="218" y="70" width="24" height="60" fill="#ffffff"/>
-    <line x1="230" y1="130" x2="230" y2="190"/>
+    <line x1="230" y1="40" x2="230" y2="87"/>
+    <path d="M 230,87 L 237,95 L 223,105 L 237,115 L 223,125 L 237,135 L 230,143"/>
+    <line x1="230" y1="143" x2="230" y2="190"/>
   </g>
-  <!-- Etiquetas -->
-  <text x="13" y="79" font-size="14">+</text>
-  <text x="13" y="100" font-size="14">−</text>
-  <text x="110" y="155" font-size="13" text-anchor="middle" font-style="italic">R₁ = 20Ω</text>
-  <text x="170" y="155" font-size="13" text-anchor="middle" font-style="italic">R₂ = 10Ω</text>
-  <text x="230" y="155" font-size="13" text-anchor="middle" font-style="italic">R₃ = 30Ω</text>
+
+  <!-- Polaridad de la pila -->
+  <text x="13" y="119" font-size="14" font-weight="bold">+</text>
+  <text x="13" y="140" font-size="14" font-weight="bold">−</text>
+
+  <!-- Etiquetas R1, R2, R3 al lado derecho de cada zigzag, a mitad de altura -->
+  <text x="123" y="119" font-size="12" font-style="italic" font-weight="bold">R₁</text>
+  <text x="183" y="119" font-size="12" font-style="italic" font-weight="bold">R₂</text>
+  <text x="243" y="119" font-size="12" font-style="italic" font-weight="bold">R₃</text>
 </svg>

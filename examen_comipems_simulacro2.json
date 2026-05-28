@@ -133,7 +133,7 @@
             "topic": "HM.8",
             "topic_name": "Patrones — mosaicos",
             "image": "/imagenes_comipems_simulacro2/q8_mosaicos.svg",
-            "text": "¿Cuántos huecos se forman con 21 mosaicos negros?",
+            "text": "¿Cuántos huecos se forman con 21 mosaicos morados?",
             "options": {
               "A": "11",
               "B": "13",
@@ -219,7 +219,7 @@
             "id": 14,
             "topic": "HM.14",
             "topic_name": "banco_preguntas/bachillerato_2021 — id 13",
-            "text": "El número que falta es\n\n|  9 | 13 |  4 |\n|---:|---:|---:|\n| 20 | 28 |  8 |\n| 35 |  ? | 16 |",
+            "text": "El número que falta es\n\n|  |  |  |\n|:-:|:-:|:-:|\n|  9 | 13 |  4 |\n| 20 | 28 |  8 |\n| 35 |  ? | 16 |",
             "options": {
               "A": "51",
               "B": "54",
@@ -233,7 +233,7 @@
             "id": 15,
             "topic": "HM.15",
             "topic_name": "banco_preguntas/bachillerato_2021 — id 14",
-            "text": "Un jardinero tiene que podar un campo de fútbol. Si lo hace a razón de 2/3 por día, ¿en cuántos días terminará?",
+            "text": "Un jardinero tiene que podar un campo de fútbol. Si lo hace a razón de $\\dfrac{2}{3}$ por día, ¿en cuántos días terminará?",
             "options": {
               "A": "2",
               "B": "2.5",
@@ -247,7 +247,7 @@
             "id": 16,
             "topic": "HM.16",
             "topic_name": "banco_preguntas/bachillerato_2021 — id 16",
-            "text": "El 40% de una población tiene coche, y 2/5 de ésta lo utiliza diario. ¿Qué porcentaje de la población no lo usa diario?",
+            "text": "El 40% de una población tiene coche, y $\\dfrac{2}{5}$ de ésta lo utiliza diario. ¿Qué porcentaje de la población no lo usa diario?",
             "options": {
               "A": "24%",
               "B": "8%",
@@ -271,8 +271,8 @@
             "options": {
               "A": "$x = 2$",
               "B": "$x = 1$",
-              "C": "$x = 4/7$",
-              "D": "$x = 1/2$"
+              "C": "$x = \\dfrac{4}{7}$",
+              "D": "$x = \\dfrac{1}{2}$"
             },
             "answer": "A",
             "explanation": "$3x - 11 = x - 7 \\Rightarrow 2x = 4 \\Rightarrow x = 2$."
@@ -310,7 +310,7 @@
             "id": 20,
             "topic": "M.4",
             "topic_name": "Selección de ecuaciones de segundo grado",
-            "text": "Selecciona las ecuaciones de segundo grado:\n\n1. $y = 5x$\n2. $y = 6x + 3$\n3. $y = \\dfrac{2}{x^2} - 9$\n4. $y = x^2 + 6x - 3$\n5. $y = 9x^2 + 6$\n6. $y = 7x^3 - 4x - 9$",
+            "text": "Selecciona las ecuaciones de segundo grado:\n\n|  |  |\n|:-|:-|\n| 1. $y = 5x$ | 2. $y = 6x + 3$ |\n| 3. $y = \\dfrac{2}{x^2} - 9$ | 4. $y = x^2 + 6x - 3$ |\n| 5. $y = 9x^2 + 6$ | 6. $y = 7x^3 - 4x - 9$ |",
             "options": {
               "A": "1, 2, 3",
               "B": "2, 3, 4",
@@ -366,12 +366,12 @@
             "id": 24,
             "topic": "M.8",
             "topic_name": "Fracciones equivalentes",
-            "text": "¿Qué fracción es equivalente a 18/24?",
+            "text": "¿Qué fracción es equivalente a $\\dfrac{18}{24}$?",
             "options": {
-              "A": "3/12",
-              "B": "6/12",
-              "C": "6/8",
-              "D": "9/6"
+              "A": "$\\dfrac{3}{12}$",
+              "B": "$\\dfrac{6}{12}$",
+              "C": "$\\dfrac{6}{8}$",
+              "D": "$\\dfrac{9}{6}$"
             },
             "answer": "C",
             "explanation": "$\\frac{18}{24}$ se simplifica dividiendo entre 3: $\\frac{6}{8}$."
@@ -382,10 +382,10 @@
             "topic_name": "Trigonometría — razones",
             "text": "¿Cuál es la definición de cosecante?",
             "options": {
-              "A": "Hipotenusa / cateto adyacente",
-              "B": "Cateto opuesto / hipotenusa",
-              "C": "Cateto adyacente / cateto opuesto",
-              "D": "Hipotenusa / cateto opuesto"
+              "A": "$\\dfrac{\\text{Hipotenusa}}{\\text{cateto adyacente}}$",
+              "B": "$\\dfrac{\\text{Cateto opuesto}}{\\text{hipotenusa}}$",
+              "C": "$\\dfrac{\\text{Cateto adyacente}}{\\text{cateto opuesto}}$",
+              "D": "$\\dfrac{\\text{Hipotenusa}}{\\text{cateto opuesto}}$"
             },
             "answer": "D",
             "explanation": "Cosecante = $\\dfrac{1}{\\sin\\theta} = \\dfrac{\\text{hipotenusa}}{\\text{cateto opuesto}}$."
@@ -409,7 +409,7 @@
             "id": 27,
             "topic": "M.11",
             "topic_name": "Proporciones — fracciones del total",
-            "text": "En una carrera ciclista hay tres equipos que participan; 1/5 de los corredores pertenece al equipo A, del resto 1/6 pertenece al equipo B y los 80 restantes pertenecen al equipo C. ¿Cuántos corredores participan en la carrera?",
+            "text": "En una carrera ciclista hay tres equipos que participan; $\\dfrac{1}{5}$ de los corredores pertenece al equipo A, del resto $\\dfrac{1}{6}$ pertenece al equipo B y los 80 restantes pertenecen al equipo C. ¿Cuántos corredores participan en la carrera?",
             "options": {
               "A": "120",
               "B": "200",
@@ -425,10 +425,10 @@
             "topic_name": "Decimales a fracciones",
             "text": "Convierte a fracción común $0.025$.",
             "options": {
-              "A": "25/10",
-              "B": "20/100",
-              "C": "33/10",
-              "D": "25/1000"
+              "A": "$\\dfrac{25}{10}$",
+              "B": "$\\dfrac{20}{100}$",
+              "C": "$\\dfrac{33}{10}$",
+              "D": "$\\dfrac{25}{1000}$"
             },
             "answer": "D",
             "explanation": "$0.025 = \\dfrac{25}{1000}$ (tres cifras decimales = denominador con tres ceros)."
@@ -990,7 +990,8 @@
               "D": "Se considera que Frankenstein fue un artista que representó al romanticismo"
             },
             "answer": "A",
-            "explanation": "El primer párrafo explica qué es el romanticismo, sus características y el periodo en que surgió y se desarrolló."
+            "explanation": "El primer párrafo explica qué es el romanticismo, sus características y el periodo en que surgió y se desarrolló.",
+            "context": "**LOS ROMÁNTICOS REACCIONAN**\n\nComo la mayor parte de las obras, Frankenstein es producto del periodo artístico en el que surgió: el romanticismo. El clima intelectual de Europa a finales del siglo XVIII fue un excelente caldo de cultivo para que apareciera el movimiento romántico, que se prolongó hasta la primera mitad del siglo XIX. Este movimiento abarcó la literatura, la música y la pintura impulsado por una posición frente al mundo, al conocimiento, la naturaleza y la humanidad.\n\nEl creador romántico daba un valor muy importante al individuo y sus emociones, rendía culto a la naturaleza y se identificaba más con la Edad Media que con los ideales clásicos inspirados por la antigua cultura griega. El historiador Franklin Baumer, de la Universidad de Yale, afirmaba que el romanticismo fue una reacción al racionalismo ilustrado del siglo XVIII y al mismo tiempo un producto de éste. En ese siglo llamado «de las luces» porque vio grandes avances en el pensamiento racional, las matemáticas y la naturaleza, se empezó a consolidar la revolución científica que había comenzado dos siglos atrás. La Revolución Industrial, con sus máquinas y sus fábricas, y la Enciclopedia francesa, el primer compendio de todo el conocimiento humano, son testimonio de una fe absoluta en el progreso, que hizo pensar a la sociedad del XVIII que la razón había triunfado definitivamente sobre el oscurantismo. El Universo, antes controlado por fuerzas divinas, estaba regido por leyes naturales. La ciencia comenzó a popularizarse, cuando menos entre quienes tenían más educación.\n\nFragmento tomado con fines educativos de: Guerrero, M y Alvarado S. *Frankenstein en el siglo XXI*."
           },
           {
             "id": 67,
@@ -1004,7 +1005,8 @@
               "D": "Al romanticismo se le conoció como el siglo de las luces porque consolidó a la Revolución Industrial"
             },
             "answer": "C",
-            "explanation": "Este enunciado sintetiza los puntos principales del texto sobre el romanticismo como movimiento europeo de reacción al racionalismo."
+            "explanation": "Este enunciado sintetiza los puntos principales del texto sobre el romanticismo como movimiento europeo de reacción al racionalismo.",
+            "context": "**LOS ROMÁNTICOS REACCIONAN**\n\nComo la mayor parte de las obras, Frankenstein es producto del periodo artístico en el que surgió: el romanticismo. El clima intelectual de Europa a finales del siglo XVIII fue un excelente caldo de cultivo para que apareciera el movimiento romántico, que se prolongó hasta la primera mitad del siglo XIX. Este movimiento abarcó la literatura, la música y la pintura impulsado por una posición frente al mundo, al conocimiento, la naturaleza y la humanidad.\n\nEl creador romántico daba un valor muy importante al individuo y sus emociones, rendía culto a la naturaleza y se identificaba más con la Edad Media que con los ideales clásicos inspirados por la antigua cultura griega. El historiador Franklin Baumer, de la Universidad de Yale, afirmaba que el romanticismo fue una reacción al racionalismo ilustrado del siglo XVIII y al mismo tiempo un producto de éste. En ese siglo llamado «de las luces» porque vio grandes avances en el pensamiento racional, las matemáticas y la naturaleza, se empezó a consolidar la revolución científica que había comenzado dos siglos atrás. La Revolución Industrial, con sus máquinas y sus fábricas, y la Enciclopedia francesa, el primer compendio de todo el conocimiento humano, son testimonio de una fe absoluta en el progreso, que hizo pensar a la sociedad del XVIII que la razón había triunfado definitivamente sobre el oscurantismo. El Universo, antes controlado por fuerzas divinas, estaba regido por leyes naturales. La ciencia comenzó a popularizarse, cuando menos entre quienes tenían más educación.\n\nFragmento tomado con fines educativos de: Guerrero, M y Alvarado S. *Frankenstein en el siglo XXI*."
           },
           {
             "id": 68,
@@ -1018,7 +1020,8 @@
               "D": "el siglo de las luces"
             },
             "answer": "A",
-            "explanation": "Según la lectura, la Revolución Industrial surge a partir del avance del conocimiento humano y la consolidación de la revolución científica."
+            "explanation": "Según la lectura, la Revolución Industrial surge a partir del avance del conocimiento humano y la consolidación de la revolución científica.",
+            "context": "**LOS ROMÁNTICOS REACCIONAN**\n\nComo la mayor parte de las obras, Frankenstein es producto del periodo artístico en el que surgió: el romanticismo. El clima intelectual de Europa a finales del siglo XVIII fue un excelente caldo de cultivo para que apareciera el movimiento romántico, que se prolongó hasta la primera mitad del siglo XIX. Este movimiento abarcó la literatura, la música y la pintura impulsado por una posición frente al mundo, al conocimiento, la naturaleza y la humanidad.\n\nEl creador romántico daba un valor muy importante al individuo y sus emociones, rendía culto a la naturaleza y se identificaba más con la Edad Media que con los ideales clásicos inspirados por la antigua cultura griega. El historiador Franklin Baumer, de la Universidad de Yale, afirmaba que el romanticismo fue una reacción al racionalismo ilustrado del siglo XVIII y al mismo tiempo un producto de éste. En ese siglo llamado «de las luces» porque vio grandes avances en el pensamiento racional, las matemáticas y la naturaleza, se empezó a consolidar la revolución científica que había comenzado dos siglos atrás. La Revolución Industrial, con sus máquinas y sus fábricas, y la Enciclopedia francesa, el primer compendio de todo el conocimiento humano, son testimonio de una fe absoluta en el progreso, que hizo pensar a la sociedad del XVIII que la razón había triunfado definitivamente sobre el oscurantismo. El Universo, antes controlado por fuerzas divinas, estaba regido por leyes naturales. La ciencia comenzó a popularizarse, cuando menos entre quienes tenían más educación.\n\nFragmento tomado con fines educativos de: Guerrero, M y Alvarado S. *Frankenstein en el siglo XXI*."
           },
           {
             "id": 69,
@@ -1061,7 +1064,8 @@
               "D": "Borrar de la mente experiencias tristes o traumáticas"
             },
             "answer": "D",
-            "explanation": "El texto dice que los medicamentos amnésicos sirven para «borrar de la mente todo rastro de experiencias tristes o traumas dolorosos»."
+            "explanation": "El texto dice que los medicamentos amnésicos sirven para «borrar de la mente todo rastro de experiencias tristes o traumas dolorosos».",
+            "context": "**LOS DÁTILES DEL OLVIDO**\n\nEl futuro y el progreso albergan el regreso de antiguos debates. Ahora que la tecnología resuelve el problema del archivo de información, el olvido se ha convertido en oscuro objeto del deseo. Recientes experimentos avalan la posibilidad de utilizar medicamentos amnésicos en seres vivos para borrar de la mente todo rastro de experiencias tristes o traumas dolorosos. En ensayos con ratones, una molécula se ha mostrado capaz de eliminar sin dejar huella el recuerdo concreto que el animal haya reactivado cuando se le administra el fármaco. Los científicos sostienen que el mecanismo es idéntico en el ser humano y que, por tanto, determinadas sustancias podrían llegar a ofrecernos olvido permanente a voluntad.\n\nEstos ensayos y evidencias prueban que la memoria viva es mucho más sutil que un mero registro mecánico y, según se está descubriendo, sus mimbres son más inestables y maleables de lo que pensábamos. A diferencia de los dispositivos digitales, nuestra capacidad humana para recordar es selectiva, interesada y narrativa. Nos creemos capaces de reconstruir lo vivido porque el cerebro rellena los vacíos, aporta sentido y, donde aparecen lagunas, completa el relato mediante conjeturas. Evocar es mucho más que un retorno al pasado, ya que esas huellas no son un archivo: las creamos y recreamos. Nos contamos de nuevo nuestra historia muchas veces a lo largo de la vida, modificando detalles, buscando alivio en el relato, trazando vínculos entre el ayer y los afanes del ahora. Las emociones tiñen y transforman todo lo que rememoramos, como revela la misma palabra «recordar», que proviene del latín y significa «volver a pasar por el corazón». En nuestra memoria, a diferencia de la información permanente y siempre idéntica registrada en la informática, el presente modifica el pasado.\n\nFragmento (Los dátiles del olvido — Por Irene Vallejo)."
           },
           {
             "id": 72,
@@ -1075,7 +1079,8 @@
               "D": "evocar es un retorno al pasado"
             },
             "answer": "B",
-            "explanation": "Según el texto, la palabra «recordar» (del latín «volver a pasar por el corazón») expresa que las emociones tiñen y transforman lo que rememoramos."
+            "explanation": "Según el texto, la palabra «recordar» (del latín «volver a pasar por el corazón») expresa que las emociones tiñen y transforman lo que rememoramos.",
+            "context": "**LOS DÁTILES DEL OLVIDO**\n\nEl futuro y el progreso albergan el regreso de antiguos debates. Ahora que la tecnología resuelve el problema del archivo de información, el olvido se ha convertido en oscuro objeto del deseo. Recientes experimentos avalan la posibilidad de utilizar medicamentos amnésicos en seres vivos para borrar de la mente todo rastro de experiencias tristes o traumas dolorosos. En ensayos con ratones, una molécula se ha mostrado capaz de eliminar sin dejar huella el recuerdo concreto que el animal haya reactivado cuando se le administra el fármaco. Los científicos sostienen que el mecanismo es idéntico en el ser humano y que, por tanto, determinadas sustancias podrían llegar a ofrecernos olvido permanente a voluntad.\n\nEstos ensayos y evidencias prueban que la memoria viva es mucho más sutil que un mero registro mecánico y, según se está descubriendo, sus mimbres son más inestables y maleables de lo que pensábamos. A diferencia de los dispositivos digitales, nuestra capacidad humana para recordar es selectiva, interesada y narrativa. Nos creemos capaces de reconstruir lo vivido porque el cerebro rellena los vacíos, aporta sentido y, donde aparecen lagunas, completa el relato mediante conjeturas. Evocar es mucho más que un retorno al pasado, ya que esas huellas no son un archivo: las creamos y recreamos. Nos contamos de nuevo nuestra historia muchas veces a lo largo de la vida, modificando detalles, buscando alivio en el relato, trazando vínculos entre el ayer y los afanes del ahora. Las emociones tiñen y transforman todo lo que rememoramos, como revela la misma palabra «recordar», que proviene del latín y significa «volver a pasar por el corazón». En nuestra memoria, a diferencia de la información permanente y siempre idéntica registrada en la informática, el presente modifica el pasado.\n\nFragmento (Los dátiles del olvido — Por Irene Vallejo)."
           },
           {
             "id": 73,

@@ -1,9 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" width="720" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="720" height="200" fill="#ffffff"/>
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" width="720" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Tabla periódica simplificada: 18 columnas x 4 filas, celdas cuadradas de 36x36 px. Origen (30,30). -->
 
-  <!-- Tabla periódica simplificada: 18 columnas x 4 filas, celdas cuadradas de 36x36 px. Origen (30,30). -->
-
-  <g stroke="#1a1a1a" stroke-width="1.4" fill="none">
+  <g stroke="currentColor" stroke-width="1.4" fill="none">
     <!-- Horizontales (5 líneas: top, 3 separadores, bottom) -->
     <line x1="30" y1="30" x2="678" y2="30"/>
     <line x1="30" y1="66" x2="678" y2="66"/>
@@ -34,7 +32,7 @@
   </g>
 
   <!-- Símbolos centrados en cada celda -->
-  <g font-size="20" font-weight="600" text-anchor="middle" fill="#1a1a1a" dominant-baseline="middle">
+  <g font-size="20" font-weight="600" text-anchor="middle" fill="currentColor" dominant-baseline="middle">
     <!-- Li: fila 1 (centro y=48), columna 1 (centro x=48) -->
     <text x="48" y="50">Li</text>
     <!-- O: fila 1, columna 16 (centro x=30+15.5*36=588) -->

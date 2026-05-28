@@ -1,7 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 0 580 540" width="580" height="540" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect x="-30" y="0" width="580" height="540" fill="#ffffff"/>
-
-  <!-- Patrón en forma de cruz para una caja 10x10x20 -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="-30 0 580 540" width="580" height="540" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Patrón en forma de cruz para una caja 10x10x20 -->
   <!-- Cuadrado central 1 (cara superior, 10x10): x=170, y=80 -->
   <!-- Cuadrado central 2 (cara frontal, 10x20): x=170, y=180 -->
   <!-- Cara izquierda (10x20): x=70, y=180 -->
@@ -10,7 +8,7 @@
   <!-- Cara inferior (10x10): x=170, y=380 -->
   <!-- Las dimensiones reales: cada cm = 10 px → 10cm=100px, 20cm=200px -->
 
-  <g fill="#f1f5f9" stroke="#1a1a1a" stroke-width="2">
+  <g fill="#f1f5f9" stroke="currentColor" stroke-width="2">
     <!-- Cara superior (10x10) -->
     <rect x="170" y="80" width="100" height="100"/>
     <!-- Cara frontal (10x20) -->

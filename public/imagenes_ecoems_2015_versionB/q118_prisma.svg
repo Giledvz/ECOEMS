@@ -1,18 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="600" height="380" fill="#ffffff"/>
-
-  <!-- Prisma rectangular (paralelepípedo) en perspectiva isométrica -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Prisma rectangular (paralelepípedo) en perspectiva isométrica -->
   <!-- Cara frontal grande (5a x 3a) -->
-  <polygon points="100,100 470,100 470,250 100,250" fill="#f1f5f9" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="100,100 470,100 470,250 100,250" fill="#f1f5f9" stroke="currentColor" stroke-width="2"/>
   <!-- Cara superior (5a x a) -->
-  <polygon points="100,100 145,55 515,55 470,100" fill="#e2e8f0" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="100,100 145,55 515,55 470,100" fill="#e2e8f0" stroke="currentColor" stroke-width="2"/>
   <!-- Cara lateral derecha (a x 3a) -->
-  <polygon points="470,100 515,55 515,205 470,250" fill="#cbd5e1" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="470,100 515,55 515,205 470,250" fill="#cbd5e1" stroke="currentColor" stroke-width="2"/>
 
   <!-- Aristas ocultas -->
-  <line x1="100" y1="250" x2="145" y2="205" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
-  <line x1="145" y1="205" x2="515" y2="205" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
-  <line x1="145" y1="205" x2="145" y2="55" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="100" y1="250" x2="145" y2="205" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="145" y1="205" x2="515" y2="205" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="145" y1="205" x2="145" y2="55" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
 
   <!-- Etiqueta 3a (altura, derecha) -->
   <line x1="545" y1="55" x2="545" y2="205" stroke="#1d4ed8" stroke-width="1.5"/>

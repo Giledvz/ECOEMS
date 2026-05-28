@@ -1,25 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="680" height="320" fill="#ffffff"/>
-
-  <!-- 1. Evaporación: cápsula sobre trípode con mechero -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- 1. Evaporación: cápsula sobre trípode con mechero -->
   <g transform="translate(20, 30)">
     <!-- Vapor -->
     <path d="M 30 70 Q 33 55 30 40 Q 27 25 30 10" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="3 2"/>
     <path d="M 50 65 Q 53 50 50 35 Q 47 20 50 5" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="3 2"/>
     <path d="M 70 70 Q 73 55 70 40 Q 67 25 70 10" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="3 2"/>
     <!-- Cápsula de porcelana -->
-    <ellipse cx="50" cy="78" rx="32" ry="6" fill="#f3f4f6" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 18 78 Q 50 102 82 78" fill="#f3f4f6" stroke="#1a1a1a" stroke-width="1.5"/>
+    <ellipse cx="50" cy="78" rx="32" ry="6" fill="#f3f4f6" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M 18 78 Q 50 102 82 78" fill="#f3f4f6" stroke="currentColor" stroke-width="1.5"/>
     <!-- Líquido dentro -->
     <path d="M 23 80 Q 50 95 77 80 Q 50 86 23 80 Z" fill="#3b82f6" stroke="none"/>
     <!-- Trípode (3 patas y aro) -->
-    <line x1="22" y1="88" x2="14" y2="135" stroke="#1a1a1a" stroke-width="1.5"/>
-    <line x1="78" y1="88" x2="86" y2="135" stroke="#1a1a1a" stroke-width="1.5"/>
-    <line x1="50" y1="90" x2="50" y2="135" stroke="#1a1a1a" stroke-width="1.5"/>
-    <line x1="12" y1="137" x2="88" y2="137" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="22" y1="88" x2="14" y2="135" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="78" y1="88" x2="86" y2="135" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="50" y1="90" x2="50" y2="135" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="12" y1="137" x2="88" y2="137" stroke="currentColor" stroke-width="2"/>
     <!-- Mechero Bunsen -->
-    <rect x="40" y="155" width="20" height="30" fill="#475569" stroke="#1a1a1a" stroke-width="1.2"/>
-    <rect x="35" y="183" width="30" height="5" fill="#475569" stroke="#1a1a1a" stroke-width="1.2"/>
+    <rect x="40" y="155" width="20" height="30" fill="#475569" stroke="currentColor" stroke-width="1.2"/>
+    <rect x="35" y="183" width="30" height="5" fill="#475569" stroke="currentColor" stroke-width="1.2"/>
     <!-- Llama -->
     <path d="M 40 155 Q 45 138 50 145 Q 55 132 60 155 Z" fill="#fbbf24" stroke="#dc2626" stroke-width="1.2"/>
     <path d="M 43 155 Q 47 147 50 150 Q 53 142 57 155 Z" fill="#fef08a"/>
@@ -29,23 +27,23 @@
   <!-- 2. Filtración: embudo con filtro cónico sobre matraz Erlenmeyer -->
   <g transform="translate(155, 30)">
     <!-- Embudo de vidrio -->
-    <polygon points="15,30 85,30 55,90 45,90" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <polygon points="15,30 85,30 55,90 45,90" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
     <!-- Borde superior del embudo -->
-    <ellipse cx="50" cy="30" rx="35" ry="3" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <ellipse cx="50" cy="30" rx="35" ry="3" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
     <!-- Papel filtro cónico (cream/dashed) -->
     <polygon points="20,33 80,33 50,82" fill="#fef3c7" stroke="#9ca3af" stroke-width="1"/>
     <!-- Sólidos retenidos -->
-    <circle cx="38" cy="50" r="3" fill="#57534e" stroke="#1a1a1a" stroke-width="0.8"/>
-    <circle cx="55" cy="54" r="2.5" fill="#57534e" stroke="#1a1a1a" stroke-width="0.8"/>
-    <circle cx="48" cy="62" r="2" fill="#57534e" stroke="#1a1a1a" stroke-width="0.8"/>
+    <circle cx="38" cy="50" r="3" fill="#57534e" stroke="currentColor" stroke-width="0.8"/>
+    <circle cx="55" cy="54" r="2.5" fill="#57534e" stroke="currentColor" stroke-width="0.8"/>
+    <circle cx="48" cy="62" r="2" fill="#57534e" stroke="currentColor" stroke-width="0.8"/>
     <!-- Tubo del embudo -->
-    <rect x="45" y="90" width="10" height="22" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="45" y="90" width="10" height="22" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
     <!-- Gota cayendo -->
     <path d="M 50 116 Q 47 122 50 126 Q 53 122 50 116 Z" fill="#3b82f6"/>
     <!-- Matraz Erlenmeyer -->
-    <ellipse cx="50" cy="132" rx="8" ry="2" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 42 132 L 22 192 L 78 192 L 58 132" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
-    <line x1="22" y1="192" x2="78" y2="192" stroke="#1a1a1a" stroke-width="1.5"/>
+    <ellipse cx="50" cy="132" rx="8" ry="2" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M 42 132 L 22 192 L 78 192 L 58 132" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="22" y1="192" x2="78" y2="192" stroke="currentColor" stroke-width="1.5"/>
     <!-- Líquido filtrado (limpio) -->
     <path d="M 28 168 L 22 192 L 78 192 L 72 168 Z" fill="#3b82f6" stroke="none"/>
     <text x="50" y="215" text-anchor="middle" font-size="14" font-weight="600">Filtración</text>
@@ -54,62 +52,62 @@
   <!-- 3. Decantación: embudo de separación pera con dos fases -->
   <g transform="translate(290, 30)">
     <!-- Cuello superior con tapa -->
-    <rect x="44" y="20" width="12" height="6" fill="#475569" stroke="#1a1a1a" stroke-width="1.2"/>
-    <rect x="42" y="26" width="16" height="14" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="44" y="20" width="12" height="6" fill="#475569" stroke="currentColor" stroke-width="1.2"/>
+    <rect x="42" y="26" width="16" height="14" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
     <!-- Cuerpo pera -->
-    <path d="M 42 40 Q 22 50 22 90 Q 22 130 50 142 Q 78 130 78 90 Q 78 50 58 40 Z" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <path d="M 42 40 Q 22 50 22 90 Q 22 130 50 142 Q 78 130 78 90 Q 78 50 58 40 Z" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
     <!-- Fase superior: aceite (amarillo ámbar) -->
     <path d="M 23 65 Q 50 70 77 65 L 77 90 Q 50 95 23 90 Z" fill="#fcd34d" stroke="none"/>
     <!-- Línea de separación -->
-    <path d="M 22 90 Q 50 95 78 90" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+    <path d="M 22 90 Q 50 95 78 90" fill="none" stroke="currentColor" stroke-width="1"/>
     <!-- Fase inferior: agua (azul) -->
     <path d="M 22 90 Q 50 95 78 90 Q 78 130 50 142 Q 22 130 22 90 Z" fill="#3b82f6" stroke="none"/>
     <!-- Pico inferior y llave -->
-    <line x1="46" y1="142" x2="46" y2="152" stroke="#1a1a1a" stroke-width="1.5"/>
-    <line x1="54" y1="142" x2="54" y2="152" stroke="#1a1a1a" stroke-width="1.5"/>
+    <line x1="46" y1="142" x2="46" y2="152" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="54" y1="142" x2="54" y2="152" stroke="currentColor" stroke-width="1.5"/>
     <!-- Llave (palanca horizontal) -->
-    <rect x="36" y="152" width="28" height="6" fill="#475569" stroke="#1a1a1a" stroke-width="1.2"/>
+    <rect x="36" y="152" width="28" height="6" fill="#475569" stroke="currentColor" stroke-width="1.2"/>
     <!-- Tubo de salida -->
-    <rect x="48" y="158" width="4" height="14" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.2"/>
+    <rect x="48" y="158" width="4" height="14" fill="#f0f9ff" stroke="currentColor" stroke-width="1.2"/>
     <text x="50" y="215" text-anchor="middle" font-size="14" font-weight="600">Decantación</text>
   </g>
 
   <!-- 4. Destilación: matraz, condensador con camisa, matraz colector -->
   <g transform="translate(420, 30)">
     <!-- Mesa -->
-    <line x1="-5" y1="190" x2="165" y2="190" stroke="#1a1a1a" stroke-width="1.5"/>
+    <line x1="-5" y1="190" x2="165" y2="190" stroke="currentColor" stroke-width="1.5"/>
     <!-- Matraz de destilación (balón redondo con cuello) -->
-    <circle cx="25" cy="115" r="22" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <circle cx="25" cy="115" r="22" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
     <!-- Líquido dentro -->
     <path d="M 7 122 Q 25 138 43 122 Q 25 132 7 122 Z" fill="#3b82f6" stroke="none"/>
     <!-- Cuello del balón -->
-    <line x1="20" y1="94" x2="20" y2="72" stroke="#1a1a1a" stroke-width="1.5"/>
-    <line x1="30" y1="94" x2="30" y2="72" stroke="#1a1a1a" stroke-width="1.5"/>
-    <ellipse cx="25" cy="72" rx="5" ry="2" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <line x1="20" y1="94" x2="20" y2="72" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="30" y1="94" x2="30" y2="72" stroke="currentColor" stroke-width="1.5"/>
+    <ellipse cx="25" cy="72" rx="5" ry="2" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
     <!-- Salida lateral hacia condensador -->
-    <path d="M 28 100 Q 45 85 60 80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 33 108 Q 48 92 62 87" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <path d="M 28 100 Q 45 85 60 80" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M 33 108 Q 48 92 62 87" fill="none" stroke="currentColor" stroke-width="1.5"/>
     <!-- Condensador (camisa exterior + tubo interior) -->
-    <rect x="60" y="78" width="65" height="14" fill="#dbeafe" stroke="#1a1a1a" stroke-width="1.5"/>
-    <line x1="60" y1="82" x2="125" y2="82" stroke="#1a1a1a" stroke-width="0.8"/>
-    <line x1="60" y1="88" x2="125" y2="88" stroke="#1a1a1a" stroke-width="0.8"/>
+    <rect x="60" y="78" width="65" height="14" fill="#dbeafe" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="60" y1="82" x2="125" y2="82" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="60" y1="88" x2="125" y2="88" stroke="currentColor" stroke-width="0.8"/>
     <!-- Entrada de agua (abajo izquierda del condensador) -->
     <path d="M 65 92 Q 60 100 62 108" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
     <text x="50" y="115" font-size="9" fill="#3b82f6">H₂O</text>
     <!-- Salida de agua (arriba derecha) -->
     <path d="M 120 78 Q 124 70 122 62" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
     <!-- Tubo de salida del condensador -->
-    <line x1="125" y1="82" x2="140" y2="105" stroke="#1a1a1a" stroke-width="1.5"/>
-    <line x1="125" y1="88" x2="140" y2="111" stroke="#1a1a1a" stroke-width="1.5"/>
+    <line x1="125" y1="82" x2="140" y2="105" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="125" y1="88" x2="140" y2="111" stroke="currentColor" stroke-width="1.5"/>
     <!-- Matraz colector -->
-    <ellipse cx="142" cy="108" rx="5" ry="2" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 137 108 L 128 165 L 156 165 L 147 108" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
-    <line x1="128" y1="165" x2="156" y2="165" stroke="#1a1a1a" stroke-width="1.5"/>
+    <ellipse cx="142" cy="108" rx="5" ry="2" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M 137 108 L 128 165 L 156 165 L 147 108" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="128" y1="165" x2="156" y2="165" stroke="currentColor" stroke-width="1.5"/>
     <!-- Destilado recogido -->
     <path d="M 132 148 L 128 165 L 156 165 L 152 148 Z" fill="#bfdbfe" stroke="none"/>
     <!-- Mechero -->
-    <rect x="15" y="155" width="20" height="30" fill="#475569" stroke="#1a1a1a" stroke-width="1.2"/>
-    <rect x="10" y="183" width="30" height="5" fill="#475569" stroke="#1a1a1a" stroke-width="1.2"/>
+    <rect x="15" y="155" width="20" height="30" fill="#475569" stroke="currentColor" stroke-width="1.2"/>
+    <rect x="10" y="183" width="30" height="5" fill="#475569" stroke="currentColor" stroke-width="1.2"/>
     <path d="M 17 155 Q 22 142 25 148 Q 28 138 33 155 Z" fill="#fbbf24" stroke="#dc2626" stroke-width="1.2"/>
     <path d="M 20 155 Q 23 148 25 150 Q 27 145 30 155 Z" fill="#fef08a"/>
     <text x="80" y="215" text-anchor="middle" font-size="14" font-weight="600">Destilación</text>
@@ -118,10 +116,10 @@
   <!-- 5. Tamizado: cilindro con malla, partículas grandes arriba, finas abajo -->
   <g transform="translate(595, 30)">
     <!-- Tamiz (cilindro corto) -->
-    <ellipse cx="35" cy="60" rx="35" ry="8" fill="#f3f4f6" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 0 60 L 0 90 Q 0 96 7 99 L 63 99 Q 70 96 70 90 L 70 60" fill="#e5e7eb" stroke="#1a1a1a" stroke-width="1.5"/>
+    <ellipse cx="35" cy="60" rx="35" ry="8" fill="#f3f4f6" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M 0 60 L 0 90 Q 0 96 7 99 L 63 99 Q 70 96 70 90 L 70 60" fill="#e5e7eb" stroke="currentColor" stroke-width="1.5"/>
     <!-- Borde superior (anillo) -->
-    <ellipse cx="35" cy="60" rx="35" ry="8" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <ellipse cx="35" cy="60" rx="35" ry="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
     <!-- Malla (cuadrícula) -->
     <ellipse cx="35" cy="95" rx="33" ry="5" fill="#fef9c3" stroke="#9ca3af" stroke-width="1"/>
     <line x1="8" y1="93" x2="62" y2="93" stroke="#9ca3af" stroke-width="0.5"/>
@@ -132,18 +130,18 @@
     <line x1="45" y1="90" x2="45" y2="100" stroke="#9ca3af" stroke-width="0.5"/>
     <line x1="55" y1="90" x2="55" y2="100" stroke="#9ca3af" stroke-width="0.5"/>
     <!-- Partículas grandes (piedras) retenidas en la malla -->
-    <ellipse cx="20" cy="85" rx="6" ry="4" fill="#78716c" stroke="#1a1a1a" stroke-width="1"/>
-    <ellipse cx="38" cy="82" rx="7" ry="5" fill="#78716c" stroke="#1a1a1a" stroke-width="1"/>
-    <ellipse cx="52" cy="86" rx="5" ry="4" fill="#78716c" stroke="#1a1a1a" stroke-width="1"/>
+    <ellipse cx="20" cy="85" rx="6" ry="4" fill="#78716c" stroke="currentColor" stroke-width="1"/>
+    <ellipse cx="38" cy="82" rx="7" ry="5" fill="#78716c" stroke="currentColor" stroke-width="1"/>
+    <ellipse cx="52" cy="86" rx="5" ry="4" fill="#78716c" stroke="currentColor" stroke-width="1"/>
     <!-- Partículas pequeñas cayendo -->
     <circle cx="20" cy="115" r="1.2" fill="#a8a29e"/>
     <circle cx="30" cy="120" r="1" fill="#a8a29e"/>
     <circle cx="40" cy="118" r="1.3" fill="#a8a29e"/>
     <circle cx="50" cy="125" r="1" fill="#a8a29e"/>
     <!-- Recipiente colector -->
-    <ellipse cx="35" cy="145" rx="28" ry="4" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
-    <path d="M 7 145 L 12 180 L 58 180 L 63 145" fill="#f0f9ff" stroke="#1a1a1a" stroke-width="1.5"/>
-    <line x1="12" y1="180" x2="58" y2="180" stroke="#1a1a1a" stroke-width="1.5"/>
+    <ellipse cx="35" cy="145" rx="28" ry="4" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M 7 145 L 12 180 L 58 180 L 63 145" fill="#f0f9ff" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="12" y1="180" x2="58" y2="180" stroke="currentColor" stroke-width="1.5"/>
     <!-- Partículas finas acumuladas en el fondo -->
     <path d="M 13 168 L 12 180 L 58 180 L 57 168 Z" fill="#d6d3d1" stroke="none"/>
     <text x="35" y="215" text-anchor="middle" font-size="14" font-weight="600">Tamizado</text>

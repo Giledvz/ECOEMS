@@ -1,7 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="600" height="400" fill="#ffffff"/>
-
-  <!-- Cuadrícula sutil -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Cuadrícula sutil -->
   <g stroke="#e5e7eb" stroke-width="0.4">
     <line x1="90" y1="80"  x2="510" y2="80"/>
     <line x1="90" y1="120" x2="510" y2="120"/>
@@ -20,13 +18,13 @@
   <!-- Marcador de flecha -->
   <defs>
     <marker id="arrowAxis" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <polygon points="0,0 10,4 0,8" fill="#1a1a1a"/>
+      <polygon points="0,0 10,4 0,8" fill="currentColor"/>
     </marker>
   </defs>
 
   <!-- Ejes -->
-  <line x1="90" y1="330" x2="525" y2="330" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
-  <line x1="90" y1="330" x2="90"  y2="55"  stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
+  <line x1="90" y1="330" x2="525" y2="330" stroke="currentColor" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
+  <line x1="90" y1="330" x2="90"  y2="55"  stroke="currentColor" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
 
   <!-- Títulos de los ejes -->
   <text x="540" y="334" font-size="13" font-style="italic">T (°C)</text>
@@ -51,14 +49,14 @@
 
   <!-- Líneas auxiliares (dashed) -->
   <!-- Punto triple (96, 254) -->
-  <line x1="90" y1="254" x2="96" y2="254" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="3,3"/>
-  <line x1="96" y1="254" x2="96" y2="330" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="90" y1="254" x2="96" y2="254" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="96" y1="254" x2="96" y2="330" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3,3"/>
   <!-- Intermedio (322, 236) -->
-  <line x1="90"  y1="236" x2="322" y2="236" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="3,3"/>
-  <line x1="322" y1="236" x2="322" y2="330" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="90"  y1="236" x2="322" y2="236" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="322" y1="236" x2="322" y2="330" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3,3"/>
   <!-- Punto crítico (354, 164) -->
-  <line x1="90"  y1="164" x2="354" y2="164" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="3,3"/>
-  <line x1="354" y1="164" x2="354" y2="330" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="90"  y1="164" x2="354" y2="164" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="354" y1="164" x2="354" y2="330" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3,3"/>
 
   <!-- Curva sublimación (S/V): Clausius-Clapeyron realista -->
   <path d="M 90.0,286.0
@@ -66,7 +64,7 @@
            L 93.5,272.0
            L 94.8,264.0
            L 96.0,254.0"
-        fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
 
   <!-- Curva fusión (S/L): pendiente positiva (~8 atm/°C), casi vertical con ligera inclinación derecha -->
   <path d="M 96.0,254.0
@@ -76,7 +74,7 @@
            L 108.0,116.9
            L 111.0,82.6
            L 112.0,70.0"
-        fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
 
   <!-- Curva vaporización (L/V): P(T) = 52 + 0.196·exp(0.1508·T) -->
   <path d="M 96.0,254.00
@@ -94,12 +92,12 @@
            L 348.2,187.37
            L 351.1,176.55
            L 354.0,164.00"
-        fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
 
   <!-- Puntos de referencia (dots) -->
-  <circle cx="96"  cy="254" r="3.5" fill="#1a1a1a"/>
-  <circle cx="322" cy="236" r="3.5" fill="#1a1a1a"/>
-  <circle cx="354" cy="164" r="3.5" fill="#1a1a1a"/>
+  <circle cx="96"  cy="254" r="3.5" fill="currentColor"/>
+  <circle cx="322" cy="236" r="3.5" fill="currentColor"/>
+  <circle cx="354" cy="164" r="3.5" fill="currentColor"/>
 
   <!-- Etiquetas de los puntos -->
   <text x="115" y="278" font-size="13" font-style="italic">Punto triple</text>

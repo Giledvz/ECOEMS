@@ -1,13 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
   <defs>
     <marker id="axArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
     </marker>
   </defs>
-
-  <rect width="700" height="500" fill="#ffffff"/>
-
-  <!-- Cuadrícula: eje X cada 1 s (0 a 5), eje Y cada 2 m/s (0 a 10) -->
+<!-- Cuadrícula: eje X cada 1 s (0 a 5), eje Y cada 2 m/s (0 a 10) -->
   <g stroke="#d1d5db" stroke-width="0.8">
     <!-- Verticales (cada 1 s, escala: 100 px por segundo) -->
     <line x1="180" y1="430" x2="180" y2="60"/>
@@ -23,11 +20,11 @@
   </g>
 
   <!-- Ejes -->
-  <line x1="80" y1="430" x2="640" y2="430" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#axArrow)"/>
-  <line x1="80" y1="430" x2="80" y2="50" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#axArrow)"/>
+  <line x1="80" y1="430" x2="640" y2="430" stroke="currentColor" stroke-width="1.8" marker-end="url(#axArrow)"/>
+  <line x1="80" y1="430" x2="80" y2="50" stroke="currentColor" stroke-width="1.8" marker-end="url(#axArrow)"/>
 
   <!-- Tics eje X -->
-  <g stroke="#1a1a1a" stroke-width="1.5">
+  <g stroke="currentColor" stroke-width="1.5">
     <line x1="80" y1="430" x2="80" y2="436"/>
     <line x1="180" y1="430" x2="180" y2="436"/>
     <line x1="280" y1="430" x2="280" y2="436"/>
@@ -37,7 +34,7 @@
   </g>
 
   <!-- Tics eje Y -->
-  <g stroke="#1a1a1a" stroke-width="1.5">
+  <g stroke="currentColor" stroke-width="1.5">
     <line x1="80" y1="430" x2="74" y2="430"/>
     <line x1="80" y1="356" x2="74" y2="356"/>
     <line x1="80" y1="282" x2="74" y2="282"/>
@@ -46,7 +43,7 @@
   </g>
 
   <!-- Números eje X -->
-  <g font-size="16" text-anchor="middle" fill="#1a1a1a">
+  <g font-size="16" text-anchor="middle" fill="currentColor">
     <text x="80" y="456">0</text>
     <text x="180" y="456">1</text>
     <text x="280" y="456">2</text>
@@ -56,7 +53,7 @@
   </g>
 
   <!-- Números eje Y -->
-  <g font-size="16" text-anchor="end" fill="#1a1a1a">
+  <g font-size="16" text-anchor="end" fill="currentColor">
     <text x="68" y="436">0</text>
     <text x="68" y="362">2</text>
     <text x="68" y="288">4</text>
@@ -66,7 +63,7 @@
   </g>
 
   <!-- Tic y línea de cuadrícula para 10 (en el borde) -->
-  <line x1="80" y1="60" x2="74" y2="60" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="80" y1="60" x2="74" y2="60" stroke="currentColor" stroke-width="1.5"/>
   <line x1="80" y1="60" x2="620" y2="60" stroke="#d1d5db" stroke-width="0.8"/>
 
   <!-- Etiqueta eje X -->
