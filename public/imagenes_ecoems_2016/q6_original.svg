@@ -1,27 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 90" width="260" height="90" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="260" height="90" fill="#ffffff"/>
-
-  <!-- Elemento 1: cruz (40,45); rect en C2 (centro 25,30); línea en C1 (centro 55,30) -->
-  <g transform="translate(40, 45)" stroke="#1a1a1a" fill="none" stroke-width="1.6" stroke-linecap="round">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 90" width="260" height="90" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Elemento 1: cruz (40,45); rect en C2 (centro 25,30); línea en C1 (centro 55,30) -->
+  <g transform="translate(40, 45)" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round">
     <line x1="-30" y1="0" x2="30" y2="0"/>
     <line x1="0" y1="-30" x2="0" y2="30"/>
   </g>
-  <rect x="14" y="25" width="22" height="10" fill="#1a1a1a"/>
-  <line x1="55" y1="22" x2="55" y2="38" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="14" y="25" width="22" height="10" fill="currentColor"/>
+  <line x1="55" y1="22" x2="55" y2="38" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
 
   <!-- Elemento 2: cruz (130,45); rect en C1 (centro 145,30); línea en C3 (centro 115,60) -->
-  <g transform="translate(130, 45)" stroke="#1a1a1a" fill="none" stroke-width="1.6" stroke-linecap="round">
+  <g transform="translate(130, 45)" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round">
     <line x1="-30" y1="0" x2="30" y2="0"/>
     <line x1="0" y1="-30" x2="0" y2="30"/>
   </g>
-  <rect x="134" y="25" width="22" height="10" fill="#1a1a1a"/>
-  <line x1="115" y1="52" x2="115" y2="68" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="134" y="25" width="22" height="10" fill="currentColor"/>
+  <line x1="115" y1="52" x2="115" y2="68" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
 
   <!-- Elemento 3: cruz (220,45); rect en C4 (centro 235,60); línea en C1 (centro 235,30) -->
-  <g transform="translate(220, 45)" stroke="#1a1a1a" fill="none" stroke-width="1.6" stroke-linecap="round">
+  <g transform="translate(220, 45)" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round">
     <line x1="-30" y1="0" x2="30" y2="0"/>
     <line x1="0" y1="-30" x2="0" y2="30"/>
   </g>
-  <rect x="224" y="55" width="22" height="10" fill="#1a1a1a"/>
-  <line x1="235" y1="22" x2="235" y2="38" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="224" y="55" width="22" height="10" fill="currentColor"/>
+  <line x1="235" y1="22" x2="235" y2="38" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
 </svg>

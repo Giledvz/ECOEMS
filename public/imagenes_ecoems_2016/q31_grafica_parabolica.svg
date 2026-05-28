@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" width="320" height="240" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="320" height="240" fill="#ffffff"/>
-  <!-- Ejes: origen en (50, 200), eje x hasta (290, 200), eje y hasta (50, 20) -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" width="320" height="240" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Ejes: origen en (50, 200), eje x hasta (290, 200), eje y hasta (50, 20) -->
   <!-- Cuadrícula -->
   <g stroke="#dddddd" stroke-width="0.8" fill="none">
     <!-- líneas verticales cada 20px -->
@@ -26,17 +25,17 @@
     <line x1="50" y1="180" x2="290" y2="180"/>
   </g>
   <!-- Ejes -->
-  <g stroke="#1a1a1a" stroke-width="1.6" fill="none">
+  <g stroke="currentColor" stroke-width="1.6" fill="none">
     <line x1="50" y1="200" x2="290" y2="200" stroke-linecap="round"/>
     <line x1="50" y1="200" x2="50" y2="20" stroke-linecap="round"/>
     <!-- Puntas de flecha -->
-    <polygon points="290,200 282,196 282,204" fill="#1a1a1a"/>
-    <polygon points="50,20 46,28 54,28" fill="#1a1a1a"/>
+    <polygon points="290,200 282,196 282,204" fill="currentColor"/>
+    <polygon points="50,20 46,28 54,28" fill="currentColor"/>
   </g>
   <!-- Parábola exacta d = 5t². Bézier cuadrática: punto de control en la intersección
        de las tangentes en los extremos (origen y (10, 500)). Tangente inicial horizontal,
        tangente final pendiente 100; se cruzan en (5, 0) matemáticas → (150, 200) SVG. -->
-  <path d="M 50,200 Q 150,200 250,20" stroke="#1a1a1a" stroke-width="2.2" fill="none"/>
+  <path d="M 50,200 Q 150,200 250,20" stroke="currentColor" stroke-width="2.2" fill="none"/>
   <!-- Etiquetas de ejes -->
   <text x="170" y="222" font-size="13" font-style="italic" text-anchor="middle">Tiempo</text>
   <text x="35" y="110" font-size="13" font-style="italic" text-anchor="middle" transform="rotate(-90, 35, 110)">Desplazamiento</text>

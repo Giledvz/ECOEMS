@@ -1,20 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 200" width="380" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="380" height="200" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 200" width="380" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif" fill="currentColor">
+  <!-- Sin fondo: hereda el color de la página. Stroke y text usan currentColor → cambian con el tema. -->
 
-  <!-- Figura 1: semicírculo izquierdo
-       Semicírculo superior (arco arriba) dividido en dos celdas: 5 y 6
-       Semicírculo inferior (arco abajo) dividido en cuatro celdas: 7, 2, 9, 3 -->
-  <g stroke="#1a1a1a" stroke-width="1.6" fill="none">
-    <!-- Arco superior, radio 60, centro (90, 100) -->
+  <!-- Figura 1 -->
+  <g stroke="currentColor" stroke-width="1.6" fill="none">
     <path d="M 30,100 A 60,60 0 0 1 150,100 Z"/>
-    <!-- División vertical del semicírculo superior -->
     <line x1="90" y1="100" x2="90" y2="40"/>
-    <!-- Arco inferior con divisiones (4 secciones) -->
     <path d="M 30,100 A 60,60 0 0 0 150,100 Z"/>
     <line x1="60" y1="151.96" x2="90" y2="100"/>
     <line x1="120" y1="151.96" x2="90" y2="100"/>
   </g>
-  <!-- Números figura 1 -->
   <text x="65" y="78" font-size="16" text-anchor="middle">5</text>
   <text x="115" y="78" font-size="16" text-anchor="middle">6</text>
   <text x="50" y="130" font-size="14" text-anchor="middle">7</text>
@@ -22,10 +16,8 @@
   <text x="103" y="142" font-size="14" text-anchor="middle">9</text>
   <text x="130" y="130" font-size="14" text-anchor="middle">3</text>
 
-  <!-- Figura 2: semicírculo derecho con la incógnita
-       Superior: 8 y ?
-       Inferior: ?, ?, ?, 4 (solo el último visible)  -->
-  <g stroke="#1a1a1a" stroke-width="1.6" fill="none">
+  <!-- Figura 2 -->
+  <g stroke="currentColor" stroke-width="1.6" fill="none">
     <path d="M 230,100 A 60,60 0 0 1 350,100 Z"/>
     <line x1="290" y1="100" x2="290" y2="40"/>
     <path d="M 230,100 A 60,60 0 0 0 350,100 Z"/>

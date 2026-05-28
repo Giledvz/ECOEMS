@@ -1,18 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="320" height="320" fill="#ffffff"/>
-
-  <!-- Tres circunferencias tangentes entre sí. Radio = 50 px = 10 cm. Centros forman triángulo equilátero de lado 100 px = 20 cm.
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Tres circunferencias tangentes entre sí. Radio = 50 px = 10 cm. Centros forman triángulo equilátero de lado 100 px = 20 cm.
        Centro 1 (arriba):           (160, 102)
        Centro 2 (abajo izquierda):  (110, 188.6)
        Centro 3 (abajo derecha):    (210, 188.6)  -->
 
-  <circle cx="160" cy="102" r="50" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <circle cx="110" cy="188.6" r="50" fill="none" stroke="#1a1a1a" stroke-width="2"/>
-  <circle cx="210" cy="188.6" r="50" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="160" cy="102" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="110" cy="188.6" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="210" cy="188.6" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
 
   <!-- Triángulo equilátero uniendo los tres centros -->
-  <polygon points="160,102 110,188.6 210,188.6" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="160,102 110,188.6 210,188.6" fill="none" stroke="currentColor" stroke-width="2"/>
 
   <!-- Mediana punteada (de un vértice al punto medio del lado opuesto) -->
-  <line x1="160" y1="102" x2="160" y2="188.6" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="160" y1="102" x2="160" y2="188.6" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3"/>
 </svg>

@@ -1,19 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="200" height="200" fill="#ffffff"/>
-  <g transform="translate(40, 30)">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<g transform="translate(40, 30)">
     <!-- Cubo isométrico -->
-    <polygon points="0,40 60,10 120,40 60,70" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
-    <polygon points="0,40 60,70 60,140 0,110" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
-    <polygon points="60,70 120,40 120,110 60,140" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <polygon points="0,40 60,10 120,40 60,70" fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
+    <polygon points="0,40 60,70 60,140 0,110" fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
+    <polygon points="60,70 120,40 120,110 60,140" fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
 
     <!-- Triángulo: base en arista trasera-derecha, apex tocando la arista que comparte con la cara frontal -->
-    <polygon points="60,10 120,40 35,57.5" fill="#1a1a1a"/>
+    <polygon points="60,10 120,40 35,57.5" fill="currentColor"/>
 
     <!-- Pentágono más grande en cara frontal con skew isométrico, gris medio-oscuro -->
     <polygon points="30,62 57,95 46,121 14,104 3,68" fill="#555555"/>
 
     <!-- Dos barras como polígonos en la cara derecha, gap arriba = gap entre barras (~3.5 px) -->
-    <polygon points="60,73.5 120,43.5 120,50.5 60,80.5" fill="#1a1a1a"/>
-    <polygon points="60,84 120,54 120,61 60,91" fill="#1a1a1a"/>
+    <polygon points="60,73.5 120,43.5 120,50.5 60,80.5" fill="currentColor"/>
+    <polygon points="60,84 120,54 120,61 60,91" fill="currentColor"/>
   </g>
 </svg>

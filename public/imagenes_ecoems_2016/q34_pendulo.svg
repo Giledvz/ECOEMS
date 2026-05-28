@@ -1,19 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" width="260" height="180" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="260" height="180" fill="#ffffff"/>
-  <!-- Punto de sujeción: barra horizontal arriba -->
-  <g stroke="#1a1a1a" stroke-width="2" fill="#1a1a1a">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" width="260" height="180" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Punto de sujeción: barra horizontal arriba -->
+  <g stroke="currentColor" stroke-width="2" fill="currentColor">
     <rect x="110" y="18" width="40" height="6"/>
   </g>
   <!-- Cuerda desde (130,24) hacia la masa en posición más alta (izquierda) -->
   <!-- Longitud de cuerda L=120, ángulo 50° desde la vertical -->
   <!-- Masa: ( 130 - 120*sin(50°), 24 + 120*cos(50°) ) = (130-91.93, 24+77.13) ≈ (38, 101) -->
-  <line x1="130" y1="24" x2="38" y2="101" stroke="#1a1a1a" stroke-width="1.6"/>
-  <circle cx="38" cy="101" r="11" fill="#1a1a1a"/>
+  <line x1="130" y1="24" x2="38" y2="101" stroke="currentColor" stroke-width="1.6"/>
+  <circle cx="38" cy="101" r="11" fill="currentColor"/>
   <!-- Posición simétrica (derecha) en trayectoria, punteada (círculo vacío con guion) -->
-  <g stroke="#1a1a1a" stroke-width="1.2" stroke-dasharray="3,3" fill="none">
+  <g stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,3" fill="none">
     <line x1="130" y1="24" x2="222" y2="101"/>
     <circle cx="222" cy="101" r="11"/>
   </g>
   <!-- Arco punteado describiendo trayectoria del balanceo -->
-  <path d="M 38,101 A 120,120 0 0 0 222,101" stroke="#1a1a1a" stroke-width="1.0" stroke-dasharray="2,3" fill="none"/>
+  <path d="M 38,101 A 120,120 0 0 0 222,101" stroke="currentColor" stroke-width="1.0" stroke-dasharray="2,3" fill="none"/>
 </svg>

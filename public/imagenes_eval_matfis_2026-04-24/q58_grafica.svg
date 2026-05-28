@@ -1,13 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
   <defs>
     <marker id="axArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
     </marker>
   </defs>
-
-  <rect width="700" height="500" fill="#ffffff"/>
-
-  <!-- Cuadrícula -->
+<!-- Cuadrícula -->
   <g stroke="#d1d5db" stroke-width="0.8">
     <!-- Verticales (cada 1 s) -->
     <line x1="162.86" y1="430" x2="162.86" y2="60"/>
@@ -26,11 +23,11 @@
   </g>
 
   <!-- Ejes -->
-  <line x1="80" y1="430" x2="640" y2="430" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#axArrow)"/>
-  <line x1="80" y1="430" x2="80" y2="50" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#axArrow)"/>
+  <line x1="80" y1="430" x2="640" y2="430" stroke="currentColor" stroke-width="1.8" marker-end="url(#axArrow)"/>
+  <line x1="80" y1="430" x2="80" y2="50" stroke="currentColor" stroke-width="1.8" marker-end="url(#axArrow)"/>
 
   <!-- Tics eje X -->
-  <g stroke="#1a1a1a" stroke-width="1.5">
+  <g stroke="currentColor" stroke-width="1.5">
     <line x1="80" y1="430" x2="80" y2="436"/>
     <line x1="162.86" y1="430" x2="162.86" y2="436"/>
     <line x1="245.71" y1="430" x2="245.71" y2="436"/>
@@ -41,7 +38,7 @@
   </g>
 
   <!-- Tics eje Y -->
-  <g stroke="#1a1a1a" stroke-width="1.5">
+  <g stroke="currentColor" stroke-width="1.5">
     <line x1="80" y1="430" x2="74" y2="430"/>
     <line x1="80" y1="374.29" x2="74" y2="374.29"/>
     <line x1="80" y1="318.57" x2="74" y2="318.57"/>
@@ -52,7 +49,7 @@
   </g>
 
   <!-- Números eje X -->
-  <g font-size="16" text-anchor="middle" fill="#1a1a1a">
+  <g font-size="16" text-anchor="middle" fill="currentColor">
     <text x="80" y="456">0</text>
     <text x="162.86" y="456">1</text>
     <text x="245.71" y="456">2</text>
@@ -63,7 +60,7 @@
   </g>
 
   <!-- Números eje Y -->
-  <g font-size="16" text-anchor="end" fill="#1a1a1a">
+  <g font-size="16" text-anchor="end" fill="currentColor">
     <text x="68" y="436">0</text>
     <text x="68" y="380.29">5</text>
     <text x="68" y="324.57">10</text>

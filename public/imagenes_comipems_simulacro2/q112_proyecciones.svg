@@ -1,10 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 160" width="460" height="160" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="460" height="160" fill="#ffffff"/>
-
-  <!-- Cada panel ~110 px de ancho -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 160" width="460" height="160" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Cada panel ~110 px de ancho -->
 
   <!-- a) Cilíndrica: mapa rectangular con paralelos rectos -->
-  <g stroke="#1a1a1a" stroke-width="1.4" fill="none">
+  <g stroke="currentColor" stroke-width="1.4" fill="none">
     <rect x="20" y="40" width="80" height="60"/>
     <!-- Meridianos verticales -->
     <line x1="40" y1="40" x2="40" y2="100"/>
@@ -18,7 +16,7 @@
   <text x="60" y="125" font-size="13" text-anchor="middle">a</text>
 
   <!-- b) Cónica: arcos concéntricos + radios rectos divergentes -->
-  <g stroke="#1a1a1a" stroke-width="1.4" fill="none">
+  <g stroke="currentColor" stroke-width="1.4" fill="none">
     <!-- Centro ficticio arriba en (170, -10), radios y arcos -->
     <path d="M 130,100 A 60,60 0 0 1 210,100"/>
     <path d="M 120,90 A 80,80 0 0 1 220,90"/>
@@ -31,7 +29,7 @@
   <text x="170" y="125" font-size="13" text-anchor="middle">b</text>
 
   <!-- c) Azimutal (polar): círculo con radios y círculos concéntricos -->
-  <g stroke="#1a1a1a" stroke-width="1.4" fill="none">
+  <g stroke="currentColor" stroke-width="1.4" fill="none">
     <circle cx="290" cy="70" r="32"/>
     <circle cx="290" cy="70" r="20"/>
     <circle cx="290" cy="70" r="8"/>
@@ -44,7 +42,7 @@
   <text x="290" y="125" font-size="13" text-anchor="middle">c</text>
 
   <!-- d) Pseudocilíndrica (tipo Mollweide / elipse) -->
-  <g stroke="#1a1a1a" stroke-width="1.4" fill="none">
+  <g stroke="currentColor" stroke-width="1.4" fill="none">
     <ellipse cx="400" cy="70" rx="40" ry="30"/>
     <!-- Meridianos curvos -->
     <path d="M 400,40 Q 384,70 400,100"/>

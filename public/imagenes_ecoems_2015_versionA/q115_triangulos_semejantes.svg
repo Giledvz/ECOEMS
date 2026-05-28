@@ -1,14 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 280" width="460" height="280" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="460" height="280" fill="#ffffff"/>
-
-  <!-- Triángulo grande ABC: B=(60,220), A=(420,220), C=(180,40) -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 280" width="460" height="280" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Triángulo grande ABC: B=(60,220), A=(420,220), C=(180,40) -->
   <!-- CA = 300 px = 15 cm (1 cm = 20 px). CR = 5 cm = 100 px → R = (260, 100). -->
   <!-- Q en BA: BQ=6 cm = 120 px → Q = (180, 220). -->
 
-  <polygon points="60,220 420,220 180,40" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <polygon points="60,220 420,220 180,40" fill="none" stroke="currentColor" stroke-width="2"/>
 
   <!-- Línea QR (paralela a BC) -->
-  <line x1="180" y1="220" x2="260" y2="100" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="180" y1="220" x2="260" y2="100" stroke="currentColor" stroke-width="2"/>
 
   <!-- Etiquetas de vértices -->
   <text x="180" y="32" text-anchor="middle" font-size="18" font-weight="600">C</text>

@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" width="280" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="280" height="200" fill="#ffffff"/>
-  <!-- Cuadrícula tenue -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" width="280" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Cuadrícula tenue -->
   <g stroke="#dddddd" stroke-width="0.8" fill="none">
     <line x1="80" y1="20"  x2="80"  y2="170"/>
     <line x1="110" y1="20" x2="110" y2="170"/>
@@ -14,14 +13,14 @@
     <line x1="50" y1="140" x2="260" y2="140"/>
   </g>
   <!-- Ejes -->
-  <g stroke="#1a1a1a" stroke-width="1.6" fill="#1a1a1a">
+  <g stroke="currentColor" stroke-width="1.6" fill="currentColor">
     <line x1="50" y1="170" x2="260" y2="170" stroke-linecap="round"/>
     <line x1="50" y1="170" x2="50"  y2="20"  stroke-linecap="round"/>
     <polygon points="260,170 252,166 252,174"/>
     <polygon points="50,20 46,28 54,28"/>
   </g>
   <!-- Recta con pendiente positiva desde el origen -->
-  <line x1="50" y1="170" x2="240" y2="30" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="50" y1="170" x2="240" y2="30" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
   <!-- Etiquetas -->
   <text x="266" y="174" font-size="14" font-style="italic">t</text>
   <text x="40"  y="20"  font-size="14" font-style="italic">v</text>

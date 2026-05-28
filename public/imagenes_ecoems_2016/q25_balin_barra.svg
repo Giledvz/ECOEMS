@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 90" width="220" height="90" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-  <rect width="220" height="90" fill="#ffffff"/>
-  <defs>
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 90" width="220" height="90" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<defs>
     <!-- Gradiente metálico plateado para el balín. Luz desde arriba-izquierda. -->
     <radialGradient id="balin" cx="35%" cy="28%" r="70%">
       <stop offset="0%" stop-color="#ffffff"/>
@@ -16,19 +15,19 @@
     </radialGradient>
   </defs>
   <!-- Barra acanalada (acortada) -->
-  <g stroke="#1a1a1a" stroke-width="1.8" fill="none" stroke-linecap="round">
+  <g stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round">
     <line x1="25" y1="60" x2="195" y2="60"/>
     <line x1="25" y1="60" x2="25" y2="67"/>
     <line x1="195" y1="60" x2="195" y2="67"/>
   </g>
   <!-- Sombra del balín sobre la barra -->
-  <ellipse cx="50" cy="62" rx="11" ry="2" fill="#1a1a1a" opacity="0.32"/>
+  <ellipse cx="50" cy="62" rx="11" ry="2" fill="currentColor" opacity="0.32"/>
   <!-- Balín metálico -->
-  <circle cx="50" cy="50" r="10" fill="url(#balin)" stroke="#1a1a1a" stroke-width="0.6"/>
+  <circle cx="50" cy="50" r="10" fill="url(#balin)" stroke="currentColor" stroke-width="0.6"/>
   <!-- Highlight especular -->
   <ellipse cx="46" cy="46" rx="4.2" ry="3" fill="url(#balin_highlight)"/>
   <!-- Flecha indicando sentido del movimiento -->
-  <g stroke="#1a1a1a" stroke-width="1.8" fill="#1a1a1a">
+  <g stroke="currentColor" stroke-width="1.8" fill="currentColor">
     <line x1="68" y1="50" x2="125" y2="50" stroke-linecap="round"/>
     <polygon points="125,50 117,46 117,54"/>
   </g>
