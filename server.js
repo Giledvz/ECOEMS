@@ -41,7 +41,7 @@ function generateRoomCode() {
   return code;
 }
 
-function createRoom(data, jsonFilename = null) {
+function createRoom(data, jsonFilename = null, lockedOptions = false) {
   const roomCode = generateRoomCode();
   const room = {
     roomCode,
@@ -56,6 +56,7 @@ function createRoom(data, jsonFilename = null) {
     timeLimitMinutes: data.timeLimitMinutes || 180,
     startTime: null,
     jsonFilename,
+    lockedOptions: !!lockedOptions,
   };
 
   const sections = data.exam?.sections || [];
@@ -184,8 +185,9 @@ function getLocalIP() {
 app.post('/api/upload-exam', (req, res) => {
   try {
     const filename = req.headers['x-exam-filename'] || null;
-    const room = createRoom(req.body, filename);
-    console.log(`Sala ${room.roomCode} creada: "${room.title}" (${room.questions.length} preguntas)${filename ? ` [archivo: ${filename}]` : ''}`);
+    const lockedOptions = req.headers['x-locked-options'] === '1';
+    const room = createRoom(req.body, filename, lockedOptions);
+    console.log(`Sala ${room.roomCode} creada: "${room.title}" (${room.questions.length} preguntas${lockedOptions ? ', candado activado' : ''})${filename ? ` [archivo: ${filename}]` : ''}`);
     broadcastRoomsList();
     res.json({ success: true, totalQuestions: room.questions.length, roomCode: room.roomCode });
   } catch (err) {
@@ -759,6 +761,7 @@ io.on('connection', (socket) => {
       totalQuestions: room.questions.length,
       startTime: room.startTime,
       timeLimit: room.timeLimitMinutes,
+      lockedOptions: !!room.lockedOptions,
       serverTime: Date.now(),
     });
   });
@@ -856,6 +859,7 @@ io.on('connection', (socket) => {
       startTime: room.startTime,
       roomCode,
       cancelled: !!student.cancelled,
+      lockedOptions: !!room.lockedOptions,
       serverTime: Date.now(),
     };
 

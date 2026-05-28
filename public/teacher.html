@@ -129,8 +129,6 @@
     --state-err:     #b8362c;   --state-err-bg:  #f1dcd4;
     --state-warn:    #b8862e;   --state-warn-bg: #f1e6c4;
 
-    --grain-1: rgba(140, 117, 86, 0.04);
-    --grain-2: rgba(107, 58, 46, 0.03);
     --selection-bg: rgba(107, 58, 46, 0.18);
 
     /* Semánticos color */
@@ -194,8 +192,6 @@
     --state-err:   #d68a73;   --state-err-bg:  #3a2622;
     --state-warn:  #d4a04a;   --state-warn-bg: #3a3020;
 
-    --grain-1: rgba(140, 117, 86, 0.05);
-    --grain-2: rgba(199, 154, 130, 0.04);
     --selection-bg: rgba(199, 154, 130, 0.22);
     --color-selection-text: var(--ink-900);
   }
@@ -218,16 +214,27 @@
     line-height: var(--line-height-relaxed);
     color: var(--color-text-primary);
     background-color: var(--color-bg-page);
-    background-image:
-      radial-gradient(at 20% 30%, var(--grain-1) 0, transparent 50%),
-      radial-gradient(at 80% 70%, var(--grain-2) 0, transparent 50%);
-    background-attachment: fixed;
     -webkit-tap-highlight-color: transparent;
     transition:
       background-color var(--motion-slow) var(--motion-ease-emphasized),
       color var(--motion-slow) var(--motion-ease-emphasized);
   }
   ::selection { background: var(--color-selection-bg); color: var(--color-selection-text); }
+
+  /* Scrollbar Tercial: pill coñac sobre track transparente.
+     Firefox usa scrollbar-color/-width; WebKit usa los pseudo-elementos. */
+  * { scrollbar-width: thin; scrollbar-color: var(--color-border-strong) transparent; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-border-strong);
+    border-radius: var(--radius-pill);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover { background-color: var(--color-accent-soft); background-clip: padding-box; }
+  ::-webkit-scrollbar-corner { background: transparent; }
+
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
@@ -1431,11 +1438,22 @@ async function uploadExam(input) {
   const file = input.files[0];
   if (!file) return;
 
+  // Modo entrenamiento ECOEMS: opciones con candado que se revelan al hover (desktop)
+  // o tap (mobile). Réplica del mecanismo del examen oficial 2026.
+  const lockedOptions = await appConfirm({
+    title: 'Modo entrenamiento ECOEMS',
+    body: '¿Crear esta sala con candado en las opciones?\n\nLos alumnos verán cada opción bloqueada hasta hacer hover (escritorio) o tap (móvil). Replica el mecanismo del examen oficial para entrenarlos.',
+    confirmText: 'Sí, con candado',
+    cancelText: 'No, opciones abiertas',
+  });
+
   try {
     const text = await file.text();
+    const headers = { 'Content-Type': 'application/json', 'X-Exam-Filename': file.name };
+    if (lockedOptions) headers['X-Locked-Options'] = '1';
     const res = await fetch('/api/upload-exam', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'X-Exam-Filename': file.name },
+      headers,
       body: text,
     });
     const result = await res.json();

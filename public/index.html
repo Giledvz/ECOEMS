@@ -149,8 +149,6 @@
     --cat-purple: #7a4a6b;
     --cat-navy:   #2d3955;
 
-    --grain-1: rgba(140, 117, 86, 0.04);
-    --grain-2: rgba(107, 58, 46, 0.03);
     --selection-bg: rgba(107, 58, 46, 0.18);
 
     /* ── Semánticos color ── */
@@ -224,8 +222,6 @@
     --cat-purple: #b08299;
     --cat-navy:   #8090b0;
 
-    --grain-1: rgba(140, 117, 86, 0.05);
-    --grain-2: rgba(199, 154, 130, 0.04);
     --selection-bg: rgba(199, 154, 130, 0.22);
     --color-selection-text: var(--ink-900);
 
@@ -253,16 +249,27 @@
     line-height: var(--line-height-relaxed);
     color: var(--color-text-primary);
     background-color: var(--color-bg-page);
-    background-image:
-      radial-gradient(at 20% 30%, var(--grain-1) 0, transparent 50%),
-      radial-gradient(at 80% 70%, var(--grain-2) 0, transparent 50%);
-    background-attachment: fixed;
     -webkit-tap-highlight-color: transparent;
     transition:
       background-color var(--motion-slow) var(--motion-ease-emphasized),
       color var(--motion-slow) var(--motion-ease-emphasized);
   }
   ::selection { background: var(--color-selection-bg); color: var(--color-selection-text); }
+
+  /* Scrollbar Tercial: pill coñac sobre track transparente.
+     Firefox usa scrollbar-color/-width; WebKit usa los pseudo-elementos. */
+  * { scrollbar-width: thin; scrollbar-color: var(--color-border-strong) transparent; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-border-strong);
+    border-radius: var(--radius-pill);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover { background-color: var(--color-accent-soft); background-clip: padding-box; }
+  ::-webkit-scrollbar-corner { background: transparent; }
+
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
@@ -767,6 +774,7 @@
   .exam-question {
     margin-block: var(--space-6);
     padding-inline: var(--space-5);
+    contain: layout paint;
   }
   @media (min-width: 760px) { .exam-question { padding-inline: var(--space-7); } }
   .exam-question__topic {
@@ -896,6 +904,28 @@
   }
   .exam-option--incorrect .exam-option__icon { opacity: 1; color: var(--color-state-err); }
   .exam-option--neutral { pointer-events: none; opacity: 0.55; }
+
+  /* exam-option--locked: modo entrenamiento ECOEMS.
+     Texto oculto por default; revela con hover (desktop) o tap (mobile via data-revealed).
+     Icono de candado visible mientras está bloqueada. */
+  .exam-option--locked .exam-option__text {
+    opacity: 0;
+    transition: opacity var(--motion-base) var(--motion-ease-standard);
+  }
+  .exam-option__lock {
+    width: var(--icon-size-md); height: var(--icon-size-md);
+    flex-shrink: 0;
+    fill: none; stroke: currentColor;
+    stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+    color: var(--color-text-meta);
+    transition: opacity var(--motion-base) var(--motion-ease-standard);
+  }
+  @media (hover: hover) {
+    .exam-option--locked:hover .exam-option__text { opacity: 1; }
+    .exam-option--locked:hover .exam-option__lock { opacity: 0; }
+  }
+  .exam-option--locked[data-revealed="true"] .exam-option__text { opacity: 1; }
+  .exam-option--locked[data-revealed="true"] .exam-option__lock { opacity: 0; }
 
   /* mark-btn migrado a btn--secondary con variante --marked */
   .exam-mark {
@@ -2044,12 +2074,8 @@ document.getElementById('nameSelect').addEventListener('keydown', (e) => {
   });
   trigger.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); setOpen(true); }
-    else if (e.key === 'Enter') {
-      if (isOpen()) {
-        e.preventDefault();
-        const li = panel.children[activeIdx];
-        if (li) { setValue(li.dataset.value, true); setOpen(false); trigger.focus(); }
-      } else if (native.value && !document.getElementById('joinBtn').disabled) {
+    else if (e.key === 'Enter' && !isOpen()) {
+      if (native.value && !document.getElementById('joinBtn').disabled) {
         e.preventDefault();
         joinExam();
       }
@@ -2057,7 +2083,8 @@ document.getElementById('nameSelect').addEventListener('keydown', (e) => {
       e.preventDefault(); setOpen(false);
     }
   });
-  // Cuando el panel está abierto, capturamos arrow keys a nivel de documento.
+  // Cuando el panel está abierto, capturamos arrow keys + Enter a nivel de documento
+  // para que funcione independientemente de dónde esté el foco (trigger, panel, body).
   document.addEventListener('keydown', (e) => {
     if (!isOpen()) return;
     if (e.key === 'ArrowDown') {
@@ -2068,6 +2095,12 @@ document.getElementById('nameSelect').addEventListener('keydown', (e) => {
       e.preventDefault();
       activeIdx = Math.max(0, activeIdx - 1);
       updateActive();
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      const li = panel.children[activeIdx];
+      if (li) { setValue(li.dataset.value, true); setOpen(false); trigger.focus(); }
+    } else if (e.key === 'Escape') {
+      e.preventDefault(); setOpen(false); trigger.focus();
     }
   });
 
@@ -2145,6 +2178,7 @@ function renderQuestion() {
   optList.innerHTML = '';
   const CHECK_SVG = '<svg class="exam-option__icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>';
   const CROSS_SVG = '<svg class="exam-option__icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+  const LOCK_SVG = '<svg class="exam-option__lock" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
   ['A', 'B', 'C', 'D'].forEach(letter => {
     const li = document.createElement('li');
     const btn = document.createElement('button');
@@ -2158,8 +2192,13 @@ function renderQuestion() {
       else if (letter === correct) { btn.className = 'exam-option exam-option--correct'; icon = CHECK_SVG; }
       else { btn.className = 'exam-option exam-option--neutral'; }
     } else {
-      btn.className = 'exam-option' + (state.answers[q.id] === letter ? ' exam-option--selected' : '');
-      btn.onclick = () => selectAnswer(q.id, letter);
+      const isSelected = state.answers[q.id] === letter;
+      const isLocked = state.lockedOptions && !isSelected;
+      btn.className = 'exam-option'
+        + (isSelected ? ' exam-option--selected' : '')
+        + (isLocked ? ' exam-option--locked' : '');
+      btn.onclick = (e) => handleOptionClick(e, btn, q.id, letter);
+      if (isLocked) icon = LOCK_SVG;
     }
     btn.innerHTML = `<span class="exam-option__letter">${letter}</span><span class="exam-option__text">${renderMath(q.options[letter])}</span>${icon}`;
     li.appendChild(btn);
@@ -2188,6 +2227,15 @@ function renderQuestion() {
   document.getElementById('nextBtn').disabled = state.currentQ === state.questions.length - 1;
   document.getElementById('submitBtn').style.display = state.reviewMode ? 'none' : '';
   renderNavGrid();
+
+  // Workaround Safari: backdrop-filter del sticky guarda paint stale del render anterior.
+  // Toggle de visibility fuerza al navegador a invalidar el compositing layer.
+  const article = document.querySelector('.exam-question');
+  if (article) {
+    article.style.visibility = 'hidden';
+    void article.offsetHeight;
+    article.style.visibility = '';
+  }
 }
 
 function selectAnswer(qId, letter) {
@@ -2195,6 +2243,31 @@ function selectAnswer(qId, letter) {
   state.answers[qId] = letter;
   socket.emit('answer', { questionId: qId, answer: letter });
   saveState(); saveBackup(); renderQuestion();
+}
+
+// Captura el tipo de input al iniciar el click ('mouse' | 'touch' | 'pen').
+// Se usa para distinguir el flow de opciones con candado: en touch primer
+// tap revela, segundo selecciona; en mouse el hover ya reveló, click selecciona.
+let __lastPointerType = 'mouse';
+document.addEventListener('pointerdown', (e) => {
+  if (e.target && e.target.closest && e.target.closest('.exam-option')) {
+    __lastPointerType = e.pointerType || 'mouse';
+  }
+}, true);
+
+function handleOptionClick(e, btn, qId, letter) {
+  // Sin candado o ya seleccionada: click selecciona directo.
+  if (!btn.classList.contains('exam-option--locked')) {
+    selectAnswer(qId, letter);
+    return;
+  }
+  // Con candado: en touch primer tap revela, segundo selecciona.
+  // En mouse el hover ya reveló visualmente, así que click selecciona directo.
+  if (__lastPointerType === 'touch' && btn.dataset.revealed !== 'true') {
+    btn.dataset.revealed = 'true';
+  } else {
+    selectAnswer(qId, letter);
+  }
 }
 
 // Dev shortcut: Ctrl/Cmd+Shift+A rellena respuestas al azar y entrega
@@ -3155,6 +3228,7 @@ socket.on('joined', (data) => {
   state.questions = data.questions; state.answers = {}; state.marked = []; state.currentQ = 0;
   state.answerKey = {}; state.submitted = false; state.reviewMode = false;
   state.name = data.name; state.group = data.group; state.timeLimit = data.timeLimit;
+  state.lockedOptions = !!data.lockedOptions;
   if (data.roomCode) state.roomCode = data.roomCode;
   // Calibrar reloj contra el servidor para que el timer no expire si el dispositivo del alumno tiene la fecha/hora mal.
   state.clockOffset = data.serverTime ? (data.serverTime - Date.now()) : 0;
