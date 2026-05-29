@@ -1,27 +1,32 @@
-<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" width="280" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-<!-- Cuadrícula tenue -->
-  <g stroke="#dddddd" stroke-width="0.8" fill="none">
-    <line x1="80" y1="20"  x2="80"  y2="170"/>
-    <line x1="110" y1="20" x2="110" y2="170"/>
-    <line x1="140" y1="20" x2="140" y2="170"/>
-    <line x1="170" y1="20" x2="170" y2="170"/>
-    <line x1="200" y1="20" x2="200" y2="170"/>
-    <line x1="230" y1="20" x2="230" y2="170"/>
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 260" width="280" height="260" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Cuadrícula tenue (extendida hacia abajo del eje X) -->
+  <g stroke="currentColor" stroke-opacity="0.22" stroke-width="0.8" fill="none">
+    <!-- Verticales (extienden hasta y=230 para cubrir los 2 cuadros debajo del eje x) -->
+    <line x1="80"  y1="20" x2="80"  y2="230"/>
+    <line x1="110" y1="20" x2="110" y2="230"/>
+    <line x1="140" y1="20" x2="140" y2="230"/>
+    <line x1="170" y1="20" x2="170" y2="230"/>
+    <line x1="200" y1="20" x2="200" y2="230"/>
+    <line x1="230" y1="20" x2="230" y2="230"/>
+    <!-- Horizontales arriba del eje X -->
     <line x1="50" y1="50"  x2="260" y2="50"/>
     <line x1="50" y1="80"  x2="260" y2="80"/>
     <line x1="50" y1="110" x2="260" y2="110"/>
     <line x1="50" y1="140" x2="260" y2="140"/>
+    <!-- Horizontales abajo del eje X (cuadros negativos de v) -->
+    <line x1="50" y1="200" x2="260" y2="200"/>
+    <line x1="50" y1="230" x2="260" y2="230"/>
   </g>
   <!-- Ejes -->
   <g stroke="currentColor" stroke-width="1.6" fill="currentColor">
     <line x1="50" y1="170" x2="260" y2="170" stroke-linecap="round"/>
-    <line x1="50" y1="170" x2="50"  y2="20"  stroke-linecap="round"/>
+    <line x1="50" y1="20"  x2="50"  y2="230" stroke-linecap="round"/>
     <polygon points="260,170 252,166 252,174"/>
     <polygon points="50,20 46,28 54,28"/>
   </g>
-  <!-- Recta con pendiente positiva desde el origen -->
-  <line x1="50" y1="170" x2="240" y2="30" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-  <!-- Etiquetas -->
-  <text x="266" y="174" font-size="14" font-style="italic">t</text>
-  <text x="40"  y="20"  font-size="14" font-style="italic">v</text>
+  <!-- Recta: empieza en (50, 230) — segundo cuadro debajo del eje x — y sube con pendiente positiva -->
+  <line x1="50" y1="230" x2="240" y2="30" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Etiquetas: t a la derecha de la flecha del eje X; v centrada arriba de la flecha del eje Y -->
+  <text x="266" y="175" font-size="18" font-style="italic">t</text>
+  <text x="50"  y="12"  font-size="18" font-style="italic" text-anchor="middle">v</text>
 </svg>

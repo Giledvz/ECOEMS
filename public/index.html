@@ -515,9 +515,10 @@
     gap: var(--space-3);
     transition: background-color var(--motion-fast) var(--motion-ease-standard);
   }
-  .select-custom__option:hover,
+  .select-custom__option:hover { background-color: var(--color-bg-hover); }
   .select-custom__option[data-active="true"] {
-    background-color: var(--color-bg-hover);
+    background-color: color-mix(in srgb, var(--color-accent) 14%, transparent);
+    color: var(--color-accent);
   }
   .select-custom__option-check {
     width: 16px; height: 16px;
@@ -799,6 +800,8 @@
     color: var(--color-text-secondary);
   }
   .exam-question__context strong { color: var(--color-accent); }
+  .exam-question__context em,
+  .exam-question__context i { color: var(--color-accent); font-weight: var(--font-weight-medium); }
   .exam-question__statement {
     margin-top: var(--space-3);
     font-family: var(--font-family-body);
@@ -825,7 +828,7 @@
   .exam-options {
     --letter-size: 28px;
     display: flex; flex-direction: column; gap: var(--space-3);
-    margin: var(--space-5) 0; padding: 0; list-style: none;
+    margin: var(--space-7) 0 var(--space-5); padding: 0; list-style: none;
   }
   .exam-option {
     display: grid;
@@ -1751,6 +1754,8 @@ function renderInlineMath(text) {
     }
     return p.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
       .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
+      .replace(/&lt;br\s*\/?&gt;/g, '<br>')
+      .replace(/&lt;img\s+([^&]*?)\/?&gt;/g, '<img $1>')
       .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
       .replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g, '$1<b>$2</b>');
   }).join('');
@@ -1760,6 +1765,35 @@ function renderInlineMath(text) {
 // Necesario para que el SVG herede color del tema (currentColor).
 // Conservamos width/height del SVG para que renderee a tamaño natural.
 const __svgCache = {};
+// Busca <img src="...svg"> dentro de un elemento y los reemplaza inline para que
+// hereden currentColor. Conserva width/height del <img> en el nuevo <svg>.
+async function inlineSVGsInElement(el) {
+  if (!el) return;
+  const imgs = el.querySelectorAll('img[src$=".svg"], img[src*=".svg?"]');
+  for (const img of imgs) {
+    const src = img.getAttribute('src');
+    if (!src) continue;
+    try {
+      const svgText = await loadInlineSVG(src);
+      if (!svgText) continue;
+      const tmp = document.createElement('div');
+      tmp.innerHTML = svgText;
+      const newSvg = tmp.querySelector('svg');
+      if (!newSvg) continue;
+      // Preserva width/height del <img> original si los traía
+      const w = img.getAttribute('width');
+      const h = img.getAttribute('height');
+      if (w) newSvg.setAttribute('width', w);
+      if (h) newSvg.setAttribute('height', h);
+      // Quita height fija del SVG si solo se pasa width, para mantener aspect ratio
+      if (w && !h) newSvg.removeAttribute('height');
+      img.replaceWith(newSvg);
+    } catch (e) {
+      console.warn('[inlineSVG] error con', src, e);
+    }
+  }
+}
+
 async function loadInlineSVG(url) {
   if (__svgCache[url] !== undefined) return __svgCache[url];
   try {
@@ -2166,6 +2200,8 @@ function renderQuestion() {
     topicDiv.style.display = 'none';
   }
   document.getElementById('qText').innerHTML = renderMath(q.text);
+  inlineSVGsInElement(document.getElementById('qText'));
+  inlineSVGsInElement(document.getElementById('qContext'));
 
   const qImg = document.getElementById('qImage');
   const qImgSvg = document.getElementById('qImageSvg');

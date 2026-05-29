@@ -1,12 +1,38 @@
-<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-<!-- Cuadrado 6 cm × 6 cm (escala: 1 cm = 24 px). Cuadrado de 144x144 centrado-ish. -->
-  <g stroke="currentColor" stroke-width="2" fill="none">
-    <rect x="48" y="28" width="144" height="144"/>
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" width="260" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Cuadrado 6 cm × 6 cm dividido en cuadrícula 2×2 (cada cuadrante 3 cm × 3 cm).
+     Escala: 1 cm = 24 px. Cuadrado 144×144 px en posición (60, 30).
+     Círculo grande (r=2 cm = 48 px) en cuadrante superior-derecho, tangente
+     a lado superior y lado derecho.
+     Círculo chico (r=1 cm = 24 px) en cuadrante inferior-izquierdo, tangente
+     a lado izquierdo y lado inferior.
+     Área sombreada = π·2² + π·1² = 5π ≈ 15.70 cm². -->
+
+  <g stroke="currentColor" stroke-width="1.8" fill="none">
+    <!-- Cuadrado externo -->
+    <rect x="60" y="30" width="144" height="144"/>
+    <!-- División horizontal: tangente al círculo grande (abajo) y al chico (arriba) en y=126 -->
+    <line x1="60" y1="126" x2="204" y2="126"/>
+    <!-- División vertical: tangente al círculo grande (izq) y al chico (der) en x=108 -->
+    <line x1="108" y1="30" x2="108" y2="174"/>
   </g>
-  <!-- Círculo grande sombreado: radio 2 cm = 48 px, centro a ~(96, 100) -->
-  <circle cx="96" cy="100" r="48" fill="currentColor"/>
-  <!-- Círculo pequeño sombreado: radio 1 cm = 24 px, centro en (168, 148) (cerca de esquina inf-der pero dentro) -->
-  <circle cx="168" cy="148" r="24" fill="currentColor"/>
-  <!-- Etiqueta de lado -->
-  <text x="120" y="194" font-size="13" text-anchor="middle">6 cm</text>
+
+  <!-- Círculo grande sombreado: r=48, centro (156, 78). Tangente a top y right. -->
+  <circle cx="156" cy="78" r="48" fill="currentColor"/>
+  <!-- Círculo chico sombreado: r=24, centro (84, 150). Tangente a left y bottom. -->
+  <circle cx="84" cy="150" r="24" fill="currentColor"/>
+
+  <!-- Líneas de dimensión del cuadrante que contiene al círculo grande: 4 cm × 4 cm
+       (de x=108 a x=204 arriba, de y=30 a y=126 a la derecha) -->
+  <g stroke="currentColor" stroke-width="1.2" fill="none">
+    <!-- Arriba: línea de dimensión horizontal en y=18 con ticks verticales en x=108 y x=204 -->
+    <line x1="108" y1="18" x2="204" y2="18"/>
+    <line x1="108" y1="14" x2="108" y2="22"/>
+    <line x1="204" y1="14" x2="204" y2="22"/>
+    <!-- Derecha: línea de dimensión vertical en x=222 con ticks horizontales en y=30 y y=126 -->
+    <line x1="222" y1="30" x2="222" y2="126"/>
+    <line x1="218" y1="30" x2="226" y2="30"/>
+    <line x1="218" y1="126" x2="226" y2="126"/>
+  </g>
+  <text x="156" y="11" font-size="13" text-anchor="middle">4 cm</text>
+  <text x="232" y="82" font-size="13" text-anchor="start">4 cm</text>
 </svg>
