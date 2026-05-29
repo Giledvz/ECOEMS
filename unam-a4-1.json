@@ -1,12 +1,13 @@
 {
   "exam": {
-    "title": "Simulacro — Examen de Ingreso a la Licenciatura UNAM Área 2 (2011)",
+    "title": "UNAM Área 4 - 1",
     "group": "Universidad",
     "date": "2026-04-22",
     "version": "1.0",
     "total_questions": 120,
     "students": [
-      "Lupita"
+      "Yuri",
+      "Esme"
     ],
     "instructions": "Selecciona la opción correcta para cada pregunta. No se permite el uso de calculadora.",
     "sections": [
@@ -252,320 +253,294 @@
       },
       {
         "subject": "Matemáticas",
-        "questions_count": 24,
+        "questions_count": 22,
         "questions": [
           {
             "id": 19,
-            "topic": "1.1.3",
-            "topic_name": "Leyes de los exponentes",
-            "text": "Simplifica la expresión $\\dfrac{(a^2+b)^{3/2}}{a^2+b}$",
+            "topic": "1.1.1",
+            "topic_name": "Operaciones con números reales",
+            "text": "A las 3 a.m. de un día de invierno se reporta una temperatura de $-3\\,°C$, a las 12 del día la temperatura ya es de $15\\,°C$, ¿de cuántos grados fue la diferencia de temperaturas?",
             "options": {
-              "A": "$\\dfrac{a^3+b^{3/2}}{a^2+b}$",
-              "B": "$(a^2+b)^{-1/2}$",
-              "C": "$\\sqrt{a^2+b}$",
-              "D": "$(a^2+b)^3$"
+              "A": "$18\\,°C$",
+              "B": "$12\\,°C$",
+              "C": "$5\\,°C$",
+              "D": "$-12\\,°C$"
             },
-            "answer": "C"
+            "answer": "A"
           },
           {
             "id": 20,
-            "topic": "1.3.3",
-            "topic_name": "Leyes de los exponentes",
-            "text": "La expresión $\\left(\\dfrac{a^n}{a^m}\\right)^n$ se reduce a",
+            "topic": "1.1.2",
+            "topic_name": "Problemas con fracciones",
+            "text": "El estacionamiento de un supermercado tiene espacio para $1{,}000$ carros. El jueves hubo $200$ autos compactos y algunos de tamaño estándar. El estacionamiento estuvo ocupado $\\dfrac{3}{4}$ partes del total. ¿Cuántos autos de tamaño estándar había en el estacionamiento el jueves?",
             "options": {
-              "A": "$a^{n^2}-a^{mn}$",
-              "B": "$a^{n^2-mn}$",
-              "C": "$a^{2n-mn}$",
-              "D": "$a^{2n}-a^{mn}$"
+              "A": "500",
+              "B": "550",
+              "C": "600",
+              "D": "650"
             },
             "answer": "B"
           },
           {
             "id": 21,
-            "topic": "2.1",
-            "topic_name": "Productos notables",
-            "text": "Al desarrollar $(x^2-3y)^3$ se obtiene",
+            "topic": "1.1.3",
+            "topic_name": "Radicales",
+            "text": "Al efectuar la multiplicación de $(\\sqrt{2})(\\sqrt{2})$ se obtiene",
             "options": {
-              "A": "$x^6-9x^5y+27x^4y^2-27y^3$",
-              "B": "$x^6+9x^4y-27x^2y^2+27y^3$",
-              "C": "$x^6-9x^4y+27x^2y^2-27y^3$",
-              "D": "$x^6-9x^3y^2+27x^2y^3-27y^3$"
+              "A": "$\\sqrt{2}$",
+              "B": "$2$",
+              "C": "$4$",
+              "D": "$2\\sqrt{2}$"
             },
-            "answer": "C"
+            "answer": "B"
           },
           {
             "id": 22,
-            "topic": "2.3",
-            "topic_name": "Simplificación de expresiones algebraicas",
-            "text": "Simplificando $\\dfrac{x^2-5x+6}{2ax-6a}$ se obtiene",
+            "topic": "2.1",
+            "topic_name": "Productos notables",
+            "text": "Al desarrollar el binomio $(x-y)^2$ se obtiene",
             "options": {
-              "A": "$\\dfrac{(x-2)(x-3)}{2a}$",
-              "B": "$\\dfrac{(x-3)}{2a(x-2)}$",
-              "C": "$\\dfrac{(x-2)}{2a}$",
-              "D": "$\\dfrac{(x-2)^2}{2a}$"
+              "A": "$x^2-y^2$",
+              "B": "$x^2-xy+y^2$",
+              "C": "$x^2-2xy+y^2$",
+              "D": "$x^2+2xy+y^2$"
             },
             "answer": "C"
           },
           {
             "id": 23,
-            "topic": "3.3",
-            "topic_name": "Ecuación de segundo grado",
-            "text": "Las raíces de la ecuación $4x^2+16x+15=0$ son",
+            "topic": "2.3",
+            "topic_name": "Simplificación algebraica",
+            "text": "Al simplificar $\\dfrac{x^2+3x-40}{x+8}$ se obtiene",
             "options": {
-              "A": "$x_1=-\\dfrac{3}{2}, \\ x_2=-\\dfrac{5}{2}$",
-              "B": "$x_1=3, \\ x_2=-\\dfrac{5}{4}$",
-              "C": "$x_1=\\dfrac{3}{2}, \\ x_2=\\dfrac{5}{2}$",
-              "D": "$x_1=-\\dfrac{3}{4}, \\ x_2=5$"
+              "A": "$x-40$",
+              "B": "$x-5$",
+              "C": "$x+8$",
+              "D": "$x-2$"
             },
-            "answer": "A"
+            "answer": "B"
           },
           {
             "id": 24,
-            "topic": "4.1",
-            "topic_name": "Desigualdades lineales",
-            "text": "La solución de la desigualdad $3x-5>x+6$ es",
+            "topic": "3.2",
+            "topic_name": "Ecuaciones racionales",
+            "text": "Resuelve la siguiente ecuación $5+\\dfrac{z}{z+2}=1$",
             "options": {
-              "A": "$x>\\dfrac{11}{2}$",
-              "B": "$x>\\dfrac{1}{2}$",
-              "C": "$x>\\dfrac{2}{11}$",
-              "D": "$x>-\\dfrac{2}{11}$"
+              "A": "$-\\dfrac{8}{5}$",
+              "B": "$\\dfrac{5}{8}$",
+              "C": "$-\\dfrac{4}{3}$",
+              "D": "$\\dfrac{8}{5}$"
             },
             "answer": "A"
           },
           {
             "id": 25,
-            "topic": "5.1.1",
-            "topic_name": "Sistemas de ecuaciones lineales",
-            "text": "El valor de $x$ que resuelve el sistema\n\n$5x-4y=19$\n$7x+3y=18$\n\nes",
+            "topic": "3.3",
+            "topic_name": "Planteamiento algebraico",
+            "text": "Cinco veces un número más $21$ es igual a tres veces ese número menos $11$. Calcula el número.",
             "options": {
-              "A": "$x=-3$",
-              "B": "$x=-1$",
-              "C": "$x=-\\dfrac{43}{129}$",
-              "D": "$x=3$"
+              "A": "$16$",
+              "B": "$10$",
+              "C": "$8$",
+              "D": "$-16$"
             },
             "answer": "D"
           },
           {
             "id": 26,
-            "topic": "6.3",
-            "topic_name": "Funciones — tangentes a curvas",
-            "text": "De las gráficas siguientes, ¿cuál de las rectas trazadas NO es tangente?",
-            "image": "/imagenes_area2_2011/q26_tangentes.png",
+            "topic": "4.1",
+            "topic_name": "Desigualdades",
+            "text": "La frase cuando mucho tengo \\$50.00, si $x$ representa el número de pesos que tengo, $x$ satisface la expresión:",
             "options": {
-              "A": "I",
-              "B": "II",
-              "C": "III",
-              "D": "IV"
+              "A": "$x=50$",
+              "B": "$x>50$",
+              "C": "$x\\leq 50$",
+              "D": "$x<50$"
             },
-            "answer": "A"
+            "answer": "C"
           },
           {
             "id": 27,
-            "topic": "7.1.1",
-            "topic_name": "Conversión grados a radianes",
-            "text": "Expresa $45°$ en radianes.",
+            "topic": "5.1.1",
+            "topic_name": "Sistemas de ecuaciones — determinante",
+            "text": "Escribe el determinante principal asociado al sistema\n\n$10x-5y=-5$\n$4x+y=-5$",
             "options": {
-              "A": "$\\dfrac{1}{4}\\pi$",
-              "B": "$\\dfrac{2}{3}\\pi$",
-              "C": "$\\dfrac{1}{2}\\pi$",
-              "D": "$\\dfrac{4}{3}\\pi$"
+              "A": "$\\begin{vmatrix}-5 & 5\\\\ -5 & 1\\end{vmatrix}$",
+              "B": "$\\begin{vmatrix}10 & -5\\\\ 4 & -5\\end{vmatrix}$",
+              "C": "$\\begin{vmatrix}-5 & -5\\\\ 4 & 1\\end{vmatrix}$",
+              "D": "$\\begin{vmatrix}10 & -5\\\\ 4 & 1\\end{vmatrix}$"
             },
-            "answer": "A"
+            "answer": "D"
           },
           {
             "id": 28,
-            "topic": "7.2.2.3",
-            "topic_name": "Desplazamiento de fase",
-            "text": "La función que tiene un desplazamiento de fase de $\\pi$ unidades a la derecha es",
+            "topic": "6.1",
+            "topic_name": "Dominio y rango de funciones",
+            "text": "Obtener el dominio y el rango de la siguiente función $y=\\dfrac{-5}{-\\sqrt{x+2}}$",
             "options": {
-              "A": "$f(x)=\\operatorname{sen}(x-\\pi)$",
-              "B": "$f(x)=\\operatorname{sen}(x+\\pi)$",
-              "C": "$f(x)=\\operatorname{sen}(\\pi x)$",
-              "D": "$f(x)=\\pi\\operatorname{sen}(x)$"
+              "A": "D: $x>-2$, R: $y>0$",
+              "B": "D: $x\\geq -2$, R: $y\\leq 0$",
+              "C": "D: $x<-2$, R: $y\\geq 0$",
+              "D": "D: $x<0$, R: $y=0$"
             },
             "answer": "A"
           },
           {
             "id": 29,
-            "topic": "9.1",
-            "topic_name": "Distancia entre dos puntos",
-            "text": "La distancia entre los puntos $P(2,5)$ y $Q(4,-1)$ es",
+            "topic": "6.7",
+            "topic_name": "Composición de funciones",
+            "text": "Si $f(x)=\\dfrac{1}{x^2-1}$ y $g(x)=x+2$ entonces $(f\\circ g)(x)$ es igual a",
             "options": {
-              "A": "$\\sqrt{12}$",
-              "B": "$\\sqrt{20}$",
-              "C": "$\\sqrt{32}$",
-              "D": "$\\sqrt{40}$"
+              "A": "$\\dfrac{1}{x^2+2}$",
+              "B": "$\\dfrac{1}{x^2+3}$",
+              "C": "$\\dfrac{1}{x^2+5}$",
+              "D": "$\\dfrac{1}{x^2+4x+3}$"
             },
             "answer": "D"
           },
           {
             "id": 30,
-            "topic": "9.2",
-            "topic_name": "Punto medio",
-            "text": "El punto medio del segmento que une los puntos $(2m, m+1)$ y $(2m, m-1)$ es",
+            "topic": "7.1.2",
+            "topic_name": "Razones trigonométricas",
+            "text": "En el triángulo mostrado en la figura el valor de $\\operatorname{sen} B$ es",
+            "image": "/imagenes_unam-a4-1/q30_triangulo.png",
             "options": {
-              "A": "$(0,2)$",
-              "B": "$(m, 2m)$",
-              "C": "$(2m, m)$",
-              "D": "$(4m, 2m)$"
+              "A": "$\\dfrac{2}{\\sqrt{5}}$",
+              "B": "$\\dfrac{1}{\\sqrt{5}}$",
+              "C": "$\\dfrac{\\sqrt{5}}{2}$",
+              "D": "$\\dfrac{1}{2}$"
             },
-            "answer": "C"
+            "answer": "A"
           },
           {
             "id": 31,
-            "topic": "9.7",
-            "topic_name": "Ecuación de la recta — mediatriz",
-            "text": "La ecuación ordinaria de la mediatriz del siguiente triángulo trazada desde el lado AB es",
-            "image": "/imagenes_area2_2011/q31_triangulo.png",
+            "topic": "7.1.5",
+            "topic_name": "Ley de senos — triángulo oblicuángulo",
+            "text": "En el triángulo oblicuángulo siguiente, el ángulo $A$ mide $40°$, el ángulo $C$ $100°$, el lado $c$ mide $20$ metros. La magnitud del lado $a$ es",
+            "image": "/imagenes_unam-a4-1/q31_triangulo_obl.png",
             "options": {
-              "A": "$y=-3x+6$",
-              "B": "$y=-3x+7$",
-              "C": "$y=-2x+5$",
-              "D": "$y=-2x+6$"
-            },
-            "answer": "C"
-          },
-          {
-            "id": 32,
-            "topic": "10.2",
-            "topic_name": "Ecuación de la circunferencia",
-            "text": "La ecuación de la circunferencia que tiene centro en el origen y radio $r$, está dada por",
-            "options": {
-              "A": "$x^2+y^2+r^2=0$",
-              "B": "$x^2+y^2-r^2=0$",
-              "C": "$x^2+y^2-r=0$",
-              "D": "$x^2+y^2+r=0$"
+              "A": "$5.17\\,m$",
+              "B": "$13.05\\,m$",
+              "C": "$18.34\\,m$",
+              "D": "$30.64\\,m$"
             },
             "answer": "B"
           },
           {
-            "id": 33,
-            "topic": "11.2",
-            "topic_name": "Ecuación de la parábola",
-            "text": "La ecuación de la parábola con vértice en el origen, eje focal paralelo al eje Y y que pasa por el punto $P(4,-2)$ es",
+            "id": 32,
+            "topic": "8.1",
+            "topic_name": "Función logaritmo — dominio",
+            "text": "Sea la función $y=\\log(x-2)$, el dominio de la función es",
             "options": {
-              "A": "$x^2=-8y$",
-              "B": "$y^2=8x$",
-              "C": "$x^2=8y$",
-              "D": "$y^2=-8x$"
+              "A": "$(2,\\infty)$",
+              "B": "$[2,\\infty)$",
+              "C": "$(-\\infty, 2)$",
+              "D": "$(-\\infty, 2]$"
             },
             "answer": "A"
+          },
+          {
+            "id": 33,
+            "topic": "9.3",
+            "topic_name": "Ecuación de la recta — pendiente",
+            "text": "Calcula la pendiente de la recta $2y-4x+3=0$",
+            "options": {
+              "A": "$-2$",
+              "B": "$-\\dfrac{1}{2}$",
+              "C": "$\\dfrac{3}{2}$",
+              "D": "$2$"
+            },
+            "answer": "D"
           },
           {
             "id": 34,
-            "topic": "11.3",
-            "topic_name": "Ecuación de la parábola — vértice fuera del origen",
-            "text": "La ecuación de la parábola con vértice $V(3,4)$, parámetro $p$ igual a 5 y eje focal paralelo al eje Y es",
+            "topic": "9.4",
+            "topic_name": "Ecuación de la recta por gráfica",
+            "text": "Elige la ecuación que describe la siguiente gráfica.",
+            "image": "/imagenes_unam-a4-1/q34_recta.png",
             "options": {
-              "A": "$x^2-6x-20y+89=0$",
-              "B": "$y^2-6x-20y+89=0$",
-              "C": "$x^2-20x-6y+89=0$",
-              "D": "$y^2-6x+20y+89=0$"
+              "A": "$y=x-\\dfrac{1}{2}$",
+              "B": "$y=\\dfrac{3}{2}x-\\dfrac{1}{2}$",
+              "C": "$y=-\\dfrac{1}{2}x-1$",
+              "D": "$y=\\dfrac{x}{2}-1$"
             },
-            "answer": "A"
+            "answer": "D"
           },
           {
             "id": 35,
-            "topic": "13.3",
-            "topic_name": "Hipérbola — identificación por gráfica",
-            "text": "¿Qué ecuación corresponde a la siguiente gráfica?",
-            "image": "/imagenes_area2_2011/q35_hiperbola.png",
+            "topic": "10.2",
+            "topic_name": "Ecuación de la circunferencia — origen",
+            "text": "Ecuación que corresponde a una circunferencia de radio $=\\sqrt{2}$ y centro en $(0,0)$.",
             "options": {
-              "A": "$x^2-y=1$",
-              "B": "$y^2+x^2=1$",
-              "C": "$x^2-y^2=1$",
-              "D": "$x^2-y^2=-1$"
+              "A": "$x^2+y^2=2\\sqrt{2}$",
+              "B": "$x^2+y^2=\\sqrt{2}$",
+              "C": "$x^2+y^2=4$",
+              "D": "$x^2+y^2=2$"
             },
-            "answer": "C"
+            "answer": "D"
           },
           {
             "id": 36,
-            "topic": "14.3",
-            "topic_name": "Identificación de cónicas",
-            "text": "La ecuación $y^2+8x-6y+25=0$ representa una",
+            "topic": "10.4",
+            "topic_name": "Circunferencia — centro y radio",
+            "text": "Indica el centro y el radio de la siguiente circunferencia $x^2+y^2=20$",
             "options": {
-              "A": "parábola.",
-              "B": "elipse.",
-              "C": "hipérbola.",
-              "D": "recta."
+              "A": "$C(0,0), \\ r=20$",
+              "B": "$C(1,1), \\ r=20$",
+              "C": "$C(-1,-1), \\ r=\\sqrt{20}$",
+              "D": "$C(0,0), \\ r=\\sqrt{20}$"
             },
-            "answer": "A"
+            "answer": "D"
           },
           {
             "id": 37,
-            "topic": "15.2",
-            "topic_name": "Límites",
-            "text": "Completa la frase siguiente.\n\nLa condición que debe cumplir $x$ cuando se aproxima a $b$ para que $f(x)$ se acerque al límite $L$ es que ______.",
+            "topic": "11.4",
+            "topic_name": "Parábola — vértice",
+            "text": "Calcula el vértice de la siguiente parábola $(y-3)^2=12x-24$",
             "options": {
-              "A": "$x\\neq b$",
-              "B": "$x=b$",
-              "C": "$x\\leq b$",
-              "D": "$x\\geq b$"
+              "A": "$(2,3)$",
+              "B": "$(3,2)$",
+              "C": "$(-3,-2)$",
+              "D": "$(-2,-3)$"
             },
             "answer": "A"
           },
           {
             "id": 38,
-            "topic": "16.3",
-            "topic_name": "Derivadas — polinomios",
-            "text": "La $\\dfrac{d}{dx}(x^3+8x+5)$ es igual a",
+            "topic": "12.2",
+            "topic_name": "Elipse — focos",
+            "text": "La ecuación de una elipse es $9x^2+y^2=9$, indica cuáles son las coordenadas de los focos de la misma.",
             "options": {
-              "A": "$3x+8x$",
-              "B": "$3x^2+8$",
-              "C": "$3x^2$",
-              "D": "$3x^2+8x+1$"
+              "A": "$(\\pm\\sqrt{8}, 0)$",
+              "B": "$(\\pm 3, 0)$",
+              "C": "$(0, \\pm\\sqrt{8})$",
+              "D": "$(0, \\pm 3)$"
             },
-            "answer": "B"
+            "answer": "C"
           },
           {
             "id": 39,
-            "topic": "16.8",
-            "topic_name": "Derivadas — velocidad",
-            "text": "El movimiento de una partícula está regido por la expresión $f(t)=16t^2+6t+12$ que depende del tiempo $t$ medido en segundos. ¿Cuál es la velocidad de la partícula en $t=3\\,s$?",
+            "topic": "13.1",
+            "topic_name": "Hipérbola — definición",
+            "text": "Si un punto en el plano cartesiano se mueve de tal manera que el valor absoluto de la diferencia de sus distancias a dos puntos fijos, en el mismo plano, resulta siempre igual a una constante, positiva y menor que la distancia entre dichos puntos fijos; entonces describe una",
             "options": {
-              "A": "$x'(t)=96\\,m/s$",
-              "B": "$x'(t)=6\\,m/s$",
-              "C": "$x'(t)=102\\,m/s$",
-              "D": "$x'(t)=90\\,m/s$"
+              "A": "circunferencia.",
+              "B": "parábola.",
+              "C": "elipse.",
+              "D": "hipérbola."
             },
-            "answer": "C"
+            "answer": "D"
           },
           {
             "id": 40,
-            "topic": "16.9",
-            "topic_name": "Máximos y mínimos",
-            "text": "El punto máximo de $y=\\operatorname{sen}(x)$ en $(-\\infty, \\infty)$ es",
+            "topic": "14.1",
+            "topic_name": "Secciones cónicas",
+            "text": "Una sección cónica es",
             "options": {
-              "A": "$1$",
-              "B": "$\\dfrac{\\sqrt{3}}{2}$",
-              "C": "$\\dfrac{1}{2}$",
-              "D": "$0$"
-            },
-            "answer": "A"
-          },
-          {
-            "id": 41,
-            "topic": "17.3",
-            "topic_name": "Integral definida",
-            "text": "El valor de la integral definida $\\displaystyle\\int_0^2 x^2\\,dx$ es igual a",
-            "options": {
-              "A": "$0$",
-              "B": "$2$",
-              "C": "$\\dfrac{8}{3}$",
-              "D": "$8$"
-            },
-            "answer": "C"
-          },
-          {
-            "id": 42,
-            "topic": "17.4",
-            "topic_name": "Integrales trigonométricas",
-            "text": "La integral $\\displaystyle\\int (2\\operatorname{sen} x+3\\cos x)\\,dx$ es",
-            "options": {
-              "A": "$2\\operatorname{sen} x+\\cos x+C$",
-              "B": "$\\cos x+\\operatorname{sen} x+C$",
-              "C": "$2\\cos x+3\\operatorname{sen} x+C$",
-              "D": "$-2\\cos x+3\\operatorname{sen} x+C$"
+              "A": "la línea recta.",
+              "B": "el triángulo.",
+              "C": "el cono.",
+              "D": "la parábola."
             },
             "answer": "D"
           }
@@ -573,10 +548,10 @@
       },
       {
         "subject": "Física",
-        "questions_count": 12,
+        "questions_count": 10,
         "questions": [
           {
-            "id": 43,
+            "id": 41,
             "topic": "1.2",
             "topic_name": "Rapidez y velocidad",
             "text": "Para una velocidad constante, la rapidez es",
@@ -589,7 +564,7 @@
             "answer": "C"
           },
           {
-            "id": 44,
+            "id": 42,
             "topic": "2.10",
             "topic_name": "Energía potencial gravitatoria",
             "text": "Suponiendo que la aceleración gravitatoria en la Luna es seis veces menor que en la Tierra, la energía potencial que posee un cuerpo en la Luna es ______ que la energía potencial que éste tendría en la Tierra.",
@@ -602,21 +577,7 @@
             "answer": "B"
           },
           {
-            "id": 45,
-            "topic": "3.1",
-            "topic_name": "Trabajo mecánico",
-            "text": "Una bola de billar se sube a $3\\,m$ de altura en diferentes casos, como muestran las figuras. Indica cuál de las afirmaciones que se presentan es correcta.",
-            "image": "/imagenes_area2_2011/q45_casos.png",
-            "options": {
-              "A": "En el caso I se efectúa mayor trabajo.",
-              "B": "En el caso II se efectúa menor trabajo.",
-              "C": "En el caso I y III se efectúa menos trabajo que en el II.",
-              "D": "En los tres casos se efectúa igual trabajo."
-            },
-            "answer": "D"
-          },
-          {
-            "id": 46,
+            "id": 43,
             "topic": "3.7",
             "topic_name": "Conservación del momento lineal",
             "text": "Un niño que pesa $30\\,kg$ está quieto en un carrito, cuando el niño salta hacia adelante a $2\\,m/s$, el carrito es lanzado hacia atrás a $12\\,m/s$. ¿Cuál es la masa del carrito? (Desprecia la fricción).",
@@ -629,20 +590,7 @@
             "answer": "B"
           },
           {
-            "id": 47,
-            "topic": "4.2",
-            "topic_name": "Variables de estado de un gas",
-            "text": "Las variables macroscópicas que hacen que un gas modifique su volumen son",
-            "options": {
-              "A": "presión y temperatura.",
-              "B": "temperatura y energía interna.",
-              "C": "energía cinética molecular y energía potencial.",
-              "D": "energía potencial y presión."
-            },
-            "answer": "A"
-          },
-          {
-            "id": 48,
+            "id": 44,
             "topic": "4.2",
             "topic_name": "Teoría cinética molecular",
             "text": "La Teoría Cinética de los Gases predice una temperatura para la cual todas las partículas del gas cesan su movimiento aleatorio. ¿Cuál es esa temperatura?",
@@ -655,7 +603,7 @@
             "answer": "C"
           },
           {
-            "id": 49,
+            "id": 45,
             "topic": "5.1",
             "topic_name": "Tipos de onda",
             "text": "Relaciona los tipos de onda con la característica que les corresponde.\n\nTipos de onda\nI. Longitudinal.\nII. Transversal.\nIII. Electromagnética.\n\nCaracterísticas\na. No necesita de un medio para transmitirse.\nb. Las partículas vibran en ángulo recto a la dirección de la onda.\nc. Las partículas vibran paralelamente a la dirección de la onda.",
@@ -668,7 +616,7 @@
             "answer": "D"
           },
           {
-            "id": 50,
+            "id": 46,
             "topic": "6.2",
             "topic_name": "Campo eléctrico — unidades",
             "text": "El campo eléctrico es una cantidad vectorial y su magnitud se mide en",
@@ -681,7 +629,7 @@
             "answer": "B"
           },
           {
-            "id": 51,
+            "id": 47,
             "topic": "6.6",
             "topic_name": "Inducción electromagnética",
             "text": "Si el flujo magnético en cierta región está cambiando con el tiempo, entonces",
@@ -694,7 +642,7 @@
             "answer": "D"
           },
           {
-            "id": 52,
+            "id": 48,
             "topic": "7.1.1",
             "topic_name": "Hidrostática — presión atmosférica",
             "text": "La presión atmosférica disminuye en el Everest comparada con la del nivel del mar porque la",
@@ -707,7 +655,7 @@
             "answer": "B"
           },
           {
-            "id": 53,
+            "id": 49,
             "topic": "8.4",
             "topic_name": "Dualidad onda-partícula",
             "text": "Actualmente se concibe a la luz con un comportamiento dual, esto se refiere a que se le considera como",
@@ -720,7 +668,7 @@
             "answer": "A"
           },
           {
-            "id": 54,
+            "id": 50,
             "topic": "9.2.1",
             "topic_name": "Historia de la física — Madame Curie",
             "text": "¿En qué áreas recibió Madame Curie el premio Nobel?",
@@ -736,349 +684,271 @@
       },
       {
         "subject": "Química",
-        "questions_count": 13,
+        "questions_count": 10,
         "questions": [
           {
-            "id": 55,
-            "topic": "1.21",
-            "topic_name": "Estructura atómica — isótopos e iones",
-            "text": "La especie $^{78}_{34}Se^{2-}$ contiene",
+            "id": 51,
+            "topic": "1.1.1",
+            "topic_name": "Clasificación de la materia — elementos",
+            "text": "¿En cuál de las siguientes opciones hay materiales formados únicamente por elementos?",
             "options": {
-              "A": "44 protones, 34 neutrones y 44 electrones.",
-              "B": "34 protones, 44 neutrones y 36 electrones.",
-              "C": "78 protones, 34 neutrones y 80 electrones.",
-              "D": "78 protones, 44 neutrones y 36 electrones."
+              "A": "$Na(g), \\ Cl_2(g), \\ P_4(s)$",
+              "B": "$O_2(g), \\ He(g), \\ CO(g)$",
+              "C": "$S_8(g), \\ N_2(g), \\ SO_2(g)$",
+              "D": "$CO(g), \\ Na(s), \\ S_8(s)$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 52,
+            "topic": "1.1.2",
+            "topic_name": "Mezclas",
+            "text": "El aire es un ejemplo de",
+            "options": {
+              "A": "molécula.",
+              "B": "mezcla.",
+              "C": "compuesto.",
+              "D": "elemento."
             },
             "answer": "B"
           },
           {
-            "id": 56,
-            "topic": "1.2.3",
-            "topic_name": "Tabla periódica — configuración electrónica",
-            "text": "El elemento con número atómico 17 y configuración electrónica $1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^5$ se clasifica en la familia",
+            "id": 53,
+            "topic": "1.3",
+            "topic_name": "Tabla periódica — periodos",
+            "text": "Los ordenamientos horizontales en la Tabla Periódica se llaman",
             "options": {
-              "A": "III A",
-              "B": "III B",
-              "C": "II A",
-              "D": "VII A"
+              "A": "grupos.",
+              "B": "familias.",
+              "C": "niveles.",
+              "D": "periodos."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 54,
+            "topic": "1.4",
+            "topic_name": "Reacciones de neutralización",
+            "text": "¿Cuál reacción representa la formación de una sal?",
+            "options": {
+              "A": "$SO_2+H_2O\\to H_2SO_3$",
+              "B": "$Cl_2+H_2O\\to HCl$",
+              "C": "$N_2O_5+H_2O\\to 2HNO_3$",
+              "D": "$HCl+KOH\\to KCl+H_2O$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 55,
+            "topic": "2.4",
+            "topic_name": "Ácidos y bases",
+            "text": "¿Cuál de las siguientes sustancias es un ácido?",
+            "options": {
+              "A": "HCl",
+              "B": "NaOH",
+              "C": "NaCl",
+              "D": "$Cl_2$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 56,
+            "topic": "2.4.2",
+            "topic_name": "pH y concentración de iones",
+            "text": "¿Cuál de los siguientes valores de pH corresponde a la mayor concentración de iones $OH^-$?",
+            "options": {
+              "A": "2",
+              "B": "7",
+              "C": "8",
+              "D": "13"
             },
             "answer": "D"
           },
           {
             "id": 57,
-            "topic": "2.4.1",
-            "topic_name": "Neutralización — estequiometría",
-            "text": "En la reacción de neutralización del ácido clorhídrico,\n\n$HCl+NaOH\\to NaCl+H_2O$\n\n¿cuántos mL de una disolución de hidróxido de sodio $0.01\\,M$ se necesitan para neutralizar $10\\,mL$ de una disolución de ácido clorhídrico $0.02\\,M$?",
+            "topic": "3.3.3",
+            "topic_name": "Óxidos ácidos",
+            "text": "En la siguiente reacción $x+O_2\\to$ óxido ácido, $x$ es",
             "options": {
-              "A": "2",
-              "B": "5",
-              "C": "10",
-              "D": "20"
-            },
-            "answer": "D"
-          },
-          {
-            "id": 58,
-            "topic": "2.5.2",
-            "topic_name": "Disoluciones — porcentaje en volumen",
-            "text": "Una botella de brandy de $946\\,mL$ tiene una concentración del $38\\%$ en volumen de alcohol. Los mililitros de alcohol presentes en la botella son",
-            "options": {
-              "A": "24.84",
-              "B": "38.00",
-              "C": "359.48",
-              "D": "586.52"
-            },
-            "answer": "C"
-          },
-          {
-            "id": 59,
-            "topic": "3.3.1",
-            "topic_name": "Reacciones — combustión",
-            "text": "El aire está compuesto aproximadamente por $80\\%$ de nitrógeno y $20\\%$ de oxígeno, al quemar metano, ¿qué sucede con la mezcla resultante?",
-            "options": {
-              "A": "Aumenta la cantidad de nitrógeno.",
-              "B": "Aumenta el por ciento de nitrógeno.",
-              "C": "Disminuye la cantidad de oxígeno.",
-              "D": "Aumenta la cantidad de oxígeno."
-            },
-            "answer": "C"
-          },
-          {
-            "id": 60,
-            "topic": "3.4",
-            "topic_name": "Reacciones — óxido reducción",
-            "text": "La participación del cobre en la siguiente reacción $Cu+2AgNO_3\\to Cu(NO_3)_2+2Ag$ es de",
-            "options": {
-              "A": "catalizador.",
-              "B": "agente oxidante.",
-              "C": "agente reductor.",
-              "D": "elemento que se reduce y se oxida."
-            },
-            "answer": "C"
-          },
-          {
-            "id": 61,
-            "topic": "4.1",
-            "topic_name": "Biomoléculas — carbohidratos",
-            "text": "Principales fuentes de energía, generalmente se consumen en forma de almidones y azúcares.",
-            "options": {
-              "A": "Lípidos.",
-              "B": "Vitaminas.",
-              "C": "Carbohidratos.",
-              "D": "Proteínas."
-            },
-            "answer": "C"
-          },
-          {
-            "id": 62,
-            "topic": "4.3",
-            "topic_name": "Biomoléculas — proteínas",
-            "text": "¿Cuál de los siguientes compuestos es una proteína?",
-            "options": {
-              "A": "Caseína.",
-              "B": "Sacarosa.",
-              "C": "Almidón.",
-              "D": "Colesterol."
-            },
-            "answer": "A"
-          },
-          {
-            "id": 63,
-            "topic": "5.3",
-            "topic_name": "Termoquímica — calor específico",
-            "text": "El calor que se requiere para incrementar la temperatura de $50\\,g$ de agua líquida de $25\\,°C$ a $45\\,°C$ es:\n\nCalor específico del agua $=4.18\\,\\dfrac{J}{g°C}$",
-            "options": {
-              "A": "$116\\,J$",
-              "B": "$209\\,J$",
-              "C": "$209\\,kJ$",
-              "D": "$4{,}180\\,J$"
-            },
-            "answer": "D"
-          },
-          {
-            "id": 64,
-            "topic": "5.5",
-            "topic_name": "Equilibrio químico",
-            "text": "En las reacciones en equilibrio químico",
-            "options": {
-              "A": "las concentraciones de reactivos y productos son constantes.",
-              "B": "las concentraciones de reactivos son mayores que en los productos.",
-              "C": "las concentraciones de reactivos son menores que en los productos.",
-              "D": "la velocidad a la derecha es menor que la velocidad a la izquierda."
-            },
-            "answer": "A"
-          },
-          {
-            "id": 65,
-            "topic": "6.1.2",
-            "topic_name": "Química orgánica — hidrocarburos",
-            "text": "La fórmula del acetileno o etino es",
-            "options": {
-              "A": "$HC\\equiv CH$",
-              "B": "$H_2C=CH_2$",
-              "C": "$CH_3-CH_3$",
-              "D": "$CH_3-C\\equiv CH$"
-            },
-            "answer": "A"
-          },
-          {
-            "id": 66,
-            "topic": "6.2",
-            "topic_name": "Hidrocarburos — alcanos",
-            "text": "Los hidrocarburos más simples, reciben el nombre de",
-            "options": {
-              "A": "alquenos.",
-              "B": "alcanos.",
-              "C": "aromáticos.",
-              "D": "alquinos."
+              "A": "sodio.",
+              "B": "nitrógeno.",
+              "C": "magnesio.",
+              "D": "calcio."
             },
             "answer": "B"
           },
           {
-            "id": 67,
-            "topic": "6.3.1",
-            "topic_name": "Grupos funcionales — ácido carboxílico",
-            "text": "¿Cuál de los siguientes compuestos es un ácido carboxílico?",
+            "id": 58,
+            "topic": "4.1",
+            "topic_name": "Biomoléculas — carbohidratos",
+            "text": "El azúcar común (sacarosa) es un alimento constituido por",
             "options": {
-              "A": "$CH_3-\\overset{\\displaystyle O}{\\overset{\\displaystyle \\|}{C}}-OH$",
-              "B": "$CH_3-\\overset{\\displaystyle O}{\\overset{\\displaystyle \\|}{C}}-NH_2$",
-              "C": "$CH_3-CH_2-CH_3$",
-              "D": "$CH_3-\\overset{\\displaystyle O}{\\overset{\\displaystyle \\|}{C}}-OCH_2CH_3$"
+              "A": "sólo lípidos.",
+              "B": "sólo carbohidratos.",
+              "C": "proteínas y carbohidratos.",
+              "D": "lípidos y carbohidratos."
             },
-            "answer": "A"
+            "answer": "B"
+          },
+          {
+            "id": 59,
+            "topic": "4.3",
+            "topic_name": "Biomoléculas — proteínas",
+            "text": "Una proteína está formada por",
+            "options": {
+              "A": "una serie de enzimas.",
+              "B": "una cadena de aminoácidos.",
+              "C": "un polímero de carbohidratos.",
+              "D": "un conjunto de triglicéridos."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 60,
+            "topic": "5.1",
+            "topic_name": "Termoquímica",
+            "text": "Con respecto a los intercambios de energía en una reacción química, ¿cuál de los siguientes enunciados es verdadero?",
+            "options": {
+              "A": "En una reacción endotérmica se desprende energía.",
+              "B": "En una reacción química se rompen y forman enlaces.",
+              "C": "En una reacción exotérmica se absorbe energía.",
+              "D": "En una reacción de combustión se absorbe calor."
+            },
+            "answer": "B"
           }
         ]
       },
       {
         "subject": "Biología",
-        "questions_count": 13,
+        "questions_count": 10,
         "questions": [
           {
-            "id": 68,
-            "topic": "1.1",
-            "topic_name": "Teoría celular",
-            "text": "Las células son unidades",
+            "id": 61,
+            "topic": "1.2.2",
+            "topic_name": "Organelos celulares — ribosoma",
+            "text": "Organelo celular cuya principal función es la síntesis de proteínas.",
             "options": {
-              "A": "centrales y anatómicas.",
-              "B": "originales y microscópicas.",
-              "C": "funcionales y lógicas.",
-              "D": "estructurales y fisiológicas."
+              "A": "Aparato de Golgi.",
+              "B": "Mitocondria.",
+              "C": "Lisosoma.",
+              "D": "Ribosoma."
             },
             "answer": "D"
           },
           {
-            "id": 69,
-            "topic": "1.2.3",
-            "topic_name": "Célula eucarionte — ventajas",
-            "text": "La ventaja evolutiva más importante de los organismos eucariontes con respecto a los procariontes es la",
+            "id": 62,
+            "topic": "2.1.2",
+            "topic_name": "Metabolismo energético — ATP",
+            "text": "Sustancia que interviene en las transacciones energéticas de la célula.",
             "options": {
-              "A": "compartimentalización del citoplasma.",
-              "B": "respiración anaerobia.",
-              "C": "presencia de metabolismo.",
-              "D": "síntesis de proteínas."
+              "A": "AMP",
+              "B": "NAD",
+              "C": "FAD",
+              "D": "ATP"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 63,
+            "topic": "3.3.2",
+            "topic_name": "Reproducción sexual — ventajas",
+            "text": "¿Cuál o cuáles de las siguientes características son ventajas biológicas de la reproducción sexual?\n\nI. Permite la producción de descendientes idénticos al progenitor.\nII. Propicia la variabilidad genética por el intercambio genético durante la meiosis y la fecundación.\nIII. Mantiene la condición diploide de la especie por la unión de gametos de diferente progenitor.",
+            "options": {
+              "A": "III",
+              "B": "I y II",
+              "C": "I, II y III",
+              "D": "II y III"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 64,
+            "topic": "4.1",
+            "topic_name": "Genética mendeliana — nomenclatura",
+            "text": "De acuerdo con la nomenclatura de Mendel los caracteres recesivos están representados en letras",
+            "options": {
+              "A": "minúsculas (b).",
+              "B": "mayúsculas y minúsculas (Bb).",
+              "C": "minúsculas y mayúsculas (bB).",
+              "D": "minúsculas, mayúsculas y minúsculas (bBb)."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 65,
+            "topic": "4.2.3",
+            "topic_name": "Mutaciones y selección natural",
+            "text": "Las mutaciones son importantes porque",
+            "options": {
+              "A": "eliminan organismos débiles y enfermizos.",
+              "B": "producen la variabilidad sobre la que opera la selección natural.",
+              "C": "originan variabilidad no heredable.",
+              "D": "se producen en los individuos menos aptos."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 66,
+            "topic": "4.3",
+            "topic_name": "Ingeniería genética",
+            "text": "Al conjunto de técnicas que hacen posible el aislamiento, estudio, modificación y transferencia de genes de un organismo a otro se le llama",
+            "options": {
+              "A": "ingeniería genética.",
+              "B": "recombinación genética.",
+              "C": "proyecto genoma.",
+              "D": "terapia génica."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 67,
+            "topic": "5.1.1",
+            "topic_name": "Origen de la vida — Oparin-Haldane",
+            "text": "En la segunda mitad del siglo XX, la Teoría Quimiosintética formulada por Oparin y Haldane permitió",
+            "options": {
+              "A": "el descubrimiento de la estructura tridimensional de los ácidos nucleicos.",
+              "B": "la apertura de un nuevo campo de conocimiento, la biología celular.",
+              "C": "demostrar de manera experimental que la materia orgánica evolucionó a partir de moléculas simples.",
+              "D": "demostrar la evolución biológica de las células eucariontes."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 68,
+            "topic": "5.4.2",
+            "topic_name": "Clasificación de los seres vivos — reinos",
+            "text": "Los organismos pertenecientes a los reinos fungi, vegetal y animal presentan células de tipo",
+            "options": {
+              "A": "procarióticas.",
+              "B": "heterótrofas.",
+              "C": "eucarióticas.",
+              "D": "autótrofas."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 69,
+            "topic": "6.1.1",
+            "topic_name": "Ecología — población",
+            "text": "El conjunto de organismos que comparten la misma área física y se reproducen forman",
+            "options": {
+              "A": "una población.",
+              "B": "un ecosistema.",
+              "C": "un bioma.",
+              "D": "una raza."
             },
             "answer": "A"
           },
           {
             "id": 70,
-            "topic": "2.1.2",
-            "topic_name": "Metabolismo — ATP",
-            "text": "Cuando se hidroliza el ATP se forma",
-            "options": {
-              "A": "AMP",
-              "B": "ADP",
-              "C": "GTP",
-              "D": "UTP"
-            },
-            "answer": "B"
-          },
-          {
-            "id": 71,
-            "topic": "2.4.1",
-            "topic_name": "Respiración celular — ciclo de Krebs",
-            "text": "De la glucólisis se producen 2 moléculas de ácido pirúvico, las cuales deben ser transformadas químicamente a ______ para ingresar al ciclo de Krebs.",
-            "options": {
-              "A": "acetil Co A",
-              "B": "NADH",
-              "C": "$FADH_2$",
-              "D": "ácido oxalacético"
-            },
-            "answer": "D"
-          },
-          {
-            "id": 72,
-            "topic": "3.1.2",
-            "topic_name": "Ácidos nucleicos — nucleótidos",
-            "text": "Los nucleótidos son unidades formadas por",
-            "options": {
-              "A": "un ácido nucleico, un azúcar pentosa y un grupo fosfato.",
-              "B": "un ácido desoxirribonucleico, un azúcar pentosa y un fosfato.",
-              "C": "un ácido ribonucleico, un azúcar hexosa y un grupo fosfato.",
-              "D": "una base nitrogenada, un azúcar pentosa y un grupo fosfato."
-            },
-            "answer": "D"
-          },
-          {
-            "id": 73,
-            "topic": "3.1.3",
-            "topic_name": "Síntesis de proteínas — ARNt",
-            "text": "La función del $ARN_t$ es",
-            "options": {
-              "A": "transportar un aminoácido específico al polipéptido en crecimiento.",
-              "B": "llevar la información de la secuencia de aminoácidos de la proteína desde el ADN hasta el ribosoma.",
-              "C": "inhibir la expresión de un gen.",
-              "D": "realizar las reacciones de catálisis en los ribosomas."
-            },
-            "answer": "A"
-          },
-          {
-            "id": 74,
-            "topic": "3.3.2",
-            "topic_name": "Reproducción sexual — ventajas",
-            "text": "Una importante ventaja de la reproducción sexual es que",
-            "options": {
-              "A": "permite la estabilidad génica.",
-              "B": "produce únicamente células diploides.",
-              "C": "es fuente de variación genética.",
-              "D": "permite la estabilidad fenotípica."
-            },
-            "answer": "C"
-          },
-          {
-            "id": 75,
-            "topic": "4.1",
-            "topic_name": "Genética mendeliana — codominancia",
-            "text": "¿Qué resulta de la cruza de dos plantas homocigotas, una con flores rojas y alta, la otra con flores blancas y enana? (Considere que el color es codominante y ser enana es recesivo).",
-            "options": {
-              "A": "25% alta, rojas, 50% mediana rosas, 25% enanas, blancas.",
-              "B": "50% altas, rojas; 50% enanas blancas.",
-              "C": "75% altas, rosas; 25% enanas, rosas.",
-              "D": "100% altas; rosas"
-            },
-            "answer": "D"
-          },
-          {
-            "id": 76,
-            "topic": "4.2.3",
-            "topic_name": "Mutaciones — evolución",
-            "text": "Las mutaciones son consideradas fuente de",
-            "options": {
-              "A": "especiación y alopatría.",
-              "B": "variación y reproducción.",
-              "C": "variación y evolución.",
-              "D": "evolución y especiación."
-            },
-            "answer": "C"
-          },
-          {
-            "id": 77,
-            "topic": "5.4",
-            "topic_name": "Aislamiento reproductivo — esterilidad híbrida",
-            "text": "La barrera reproductiva que se presenta cuando se cruza un burro con una yegua, se llama",
-            "options": {
-              "A": "aislamiento ecológico.",
-              "B": "aislamiento gamético.",
-              "C": "inviabilidad híbrida.",
-              "D": "esterilidad híbrida."
-            },
-            "answer": "D"
-          },
-          {
-            "id": 78,
-            "topic": "5.4.2",
-            "topic_name": "Clasificación — protozoarios",
-            "text": "Los protozoarios se clasifican con base en",
-            "options": {
-              "A": "los organelos de locomoción.",
-              "B": "el tipo de respiración.",
-              "C": "su forma de nutrición.",
-              "D": "su forma de reproducción."
-            },
-            "answer": "A"
-          },
-          {
-            "id": 79,
-            "topic": "6.1.1",
-            "topic_name": "Ecología — población",
-            "text": "Las garzas blancas que habitan en un pantano son un ejemplo de",
-            "options": {
-              "A": "comunidad.",
-              "B": "ecosistema.",
-              "C": "nicho ecológico.",
-              "D": "población."
-            },
-            "answer": "D"
-          },
-          {
-            "id": 80,
             "topic": "6.2.1",
-            "topic_name": "Ecología — flujo de energía",
-            "text": "En un ecosistema en equilibrio dinámico",
+            "topic_name": "Ecología — cadenas alimenticias",
+            "text": "Forman el primer eslabón en una cadena alimenticia.",
             "options": {
-              "A": "la energía fluye en una dirección y los nutrimentos se reciclan.",
-              "B": "la energía entra en forma de calor metabólico para los organismos.",
-              "C": "la energía y los nutrientes fluyen en diferentes direcciones.",
-              "D": "se recicla la energía pero no la materia."
+              "A": "Productores.",
+              "B": "Consumidores.",
+              "C": "Descomponedores.",
+              "D": "Depredadores."
             },
             "answer": "A"
           }
@@ -1089,7 +959,7 @@
         "questions_count": 10,
         "questions": [
           {
-            "id": 81,
+            "id": 71,
             "topic": "2.2.3",
             "topic_name": "Doctrina Monroe",
             "text": "En su llamada Doctrina Monroe, el presidente norteamericano James Monroe sostiene el",
@@ -1102,7 +972,7 @@
             "answer": "B"
           },
           {
-            "id": 82,
+            "id": 72,
             "topic": "3.2",
             "topic_name": "Movimientos obreros — Cartismo",
             "text": "Movimiento obrero que planteaba al parlamento inglés los derechos de los trabajadores a través de la Carta del Pueblo.",
@@ -1115,7 +985,7 @@
             "answer": "C"
           },
           {
-            "id": 83,
+            "id": 73,
             "topic": "4.2",
             "topic_name": "Imperialismo — siglo XIX",
             "text": "La segunda mitad del siglo XIX se vio caracterizado por el imperialismo. Como ejemplo de ello Inglaterra dominó a ______; Bélgica a ______ y Rusia a ______.",
@@ -1128,7 +998,7 @@
             "answer": "D"
           },
           {
-            "id": 84,
+            "id": 74,
             "topic": "5.2",
             "topic_name": "Primera Guerra Mundial — consecuencias",
             "text": "Una consecuencia de la Primera Guerra Mundial fue la",
@@ -1141,7 +1011,7 @@
             "answer": "C"
           },
           {
-            "id": 85,
+            "id": 75,
             "topic": "6.2",
             "topic_name": "Nazismo — ascenso",
             "text": "La ideología nacional socialista se fortaleció en Alemania porque",
@@ -1154,7 +1024,7 @@
             "answer": "A"
           },
           {
-            "id": 86,
+            "id": 76,
             "topic": "7.1",
             "topic_name": "Regímenes totalitarios",
             "text": "Relaciona a los personajes con los regímenes totalitarios que los representan.\n\nPersonajes\nI. Hiroito.\nII. Mussolini.\nIII. Hitler.\n\nRegímenes\na. Nazismo.\nb. Militarismo.\nc. Fascismo.",
@@ -1167,7 +1037,7 @@
             "answer": "D"
           },
           {
-            "id": 87,
+            "id": 77,
             "topic": "8.2",
             "topic_name": "Guerra Fría",
             "text": "Una característica de la Guerra Fría es",
@@ -1180,7 +1050,7 @@
             "answer": "B"
           },
           {
-            "id": 88,
+            "id": 78,
             "topic": "8.2",
             "topic_name": "Tratado de Tlatelolco",
             "text": "Al documento que firmaron 14 países latinoamericanos comprometiéndose a no fabricar, recibir, almacenar ni probar armas nucleares y sólo hacer uso de la energía atómica con fines pacíficos se le conoce con el nombre de",
@@ -1193,7 +1063,7 @@
             "answer": "A"
           },
           {
-            "id": 89,
+            "id": 79,
             "topic": "9.1",
             "topic_name": "Fin del siglo XX — Europa del Este",
             "text": "Hecho que se consideró como el inicio de los cambios políticos a finales del siglo XX en la Europa del este.",
@@ -1206,7 +1076,7 @@
             "answer": "C"
           },
           {
-            "id": 90,
+            "id": 80,
             "topic": "9.2",
             "topic_name": "Globalización",
             "text": "Tendencia al ascenso en el comportamiento de las distintas economías nacionales y abiertas con mercados libres de toda presencia estatal.",
@@ -1225,7 +1095,7 @@
         "questions_count": 10,
         "questions": [
           {
-            "id": 91,
+            "id": 81,
             "topic": "2.1",
             "topic_name": "Independencia de México — causas",
             "text": "Además de la Conspiración de Querétaro, algunas causas de la Independencia de México son",
@@ -1238,7 +1108,7 @@
             "answer": "C"
           },
           {
-            "id": 92,
+            "id": 82,
             "topic": "3.4",
             "topic_name": "Federalismo y centralismo",
             "text": "Relaciona las formas de gobierno con las características que le corresponden.\n\nForma de gobierno\nI. Federalismo\nII. Centralismo\n\nCaracterísticas\na. La república se integra cuando, mediante un pacto, se asocian varios estados independientes.\nb. El territorio se divide en departamentos en lugar de estados.\nc. Cada estado cuenta con fincas departamentales.\nd. Cada estado cuenta con una Constitución política estatal.",
@@ -1251,7 +1121,7 @@
             "answer": "B"
           },
           {
-            "id": 93,
+            "id": 83,
             "topic": "4.1",
             "topic_name": "Revolución de Ayutla",
             "text": "Consecuencia de la Revolución de Ayutla.",
@@ -1264,7 +1134,7 @@
             "answer": "A"
           },
           {
-            "id": 94,
+            "id": 84,
             "topic": "4.2",
             "topic_name": "Constitución de 1857",
             "text": "La Constitución de 1857:\n\nI. Proclamaba la libertad de enseñanza y prensa.\nII. Restablecía los fueros eclesiásticos.\nIII. Establecía un régimen centralista.\nIV. Prohibía a la Iglesia poseer bienes raíces.\nV. Establecía un régimen republicano federal.",
@@ -1277,7 +1147,7 @@
             "answer": "B"
           },
           {
-            "id": 95,
+            "id": 85,
             "topic": "5.1",
             "topic_name": "Porfiriato — primer gobierno",
             "text": "Medidas de la política interna del primer gobierno de Porfirio Díaz.",
@@ -1290,7 +1160,7 @@
             "answer": "A"
           },
           {
-            "id": 96,
+            "id": 86,
             "topic": "6.1",
             "topic_name": "Revolución Mexicana — antecedentes",
             "text": "El Círculo Liberal organizado por Camilo Arriaga en 1901 tuvo como finalidad",
@@ -1303,7 +1173,7 @@
             "answer": "A"
           },
           {
-            "id": 97,
+            "id": 87,
             "topic": "7.2",
             "topic_name": "Maximato",
             "text": "¿A qué presidente se le conoce por extender su poder durante el Maximato?",
@@ -1316,7 +1186,7 @@
             "answer": "B"
           },
           {
-            "id": 98,
+            "id": 88,
             "topic": "7.3",
             "topic_name": "Gobierno de Lázaro Cárdenas",
             "text": "Una de las obras más destacada del gobierno del general Lázaro Cárdenas fue la",
@@ -1329,7 +1199,7 @@
             "answer": "A"
           },
           {
-            "id": 99,
+            "id": 89,
             "topic": "8.2",
             "topic_name": "Milagro mexicano",
             "text": "Un crecimiento económico sostenido de más del 6% anual, en promedio y, la construcción de infraestructura, fueron hechos que entre 1952 y 1970 se conocieron como",
@@ -1342,7 +1212,7 @@
             "answer": "C"
           },
           {
-            "id": 100,
+            "id": 90,
             "topic": "8.4",
             "topic_name": "Neoliberalismo en México",
             "text": "El gobierno económico neoliberal se inicio con los gobiernos de",
@@ -1361,7 +1231,7 @@
         "questions_count": 10,
         "questions": [
           {
-            "id": 101,
+            "id": 91,
             "topic": "1.1",
             "topic_name": "Elementos del texto — tema",
             "text": "Materia de la que trata un texto.",
@@ -1374,7 +1244,7 @@
             "answer": "B"
           },
           {
-            "id": 102,
+            "id": 92,
             "topic": "1.4",
             "topic_name": "Géneros literarios — drama",
             "text": "Texto que se elabora para ser representado, en él aparecen fuerzas que entran en conflicto y se resuelve finalmente en el desenlace.",
@@ -1387,7 +1257,7 @@
             "answer": "C"
           },
           {
-            "id": 103,
+            "id": 93,
             "topic": "1.4.4",
             "topic_name": "Subgéneros dramáticos — tragedia",
             "text": "Texto dramático en el que el personaje principal pierde la esperanza y ninguna de sus acciones ayudarán, por bien intencionadas que sean, a solucionar sus problemas.",
@@ -1400,7 +1270,7 @@
             "answer": "A"
           },
           {
-            "id": 104,
+            "id": 94,
             "topic": "1.5.2",
             "topic_name": "Análisis poético — tema",
             "text": "Lee con atención el siguiente fragmento, tomado de un poema de Netzahualcóyotl.\n\n¿Es verdad, es verdad que se vive en la tierra?\n¡No para siempre aquí: un momento en la tierra!\nSi es jade, se hace astillas,\nSi es oro se destruye;\nSi es un plumaje de quetzal, se rasga.\n¡No para siempre aquí: un momento en la tierra!\n\nEl tema del texto anterior es",
@@ -1413,7 +1283,7 @@
             "answer": "A"
           },
           {
-            "id": 105,
+            "id": 95,
             "topic": "2.1",
             "topic_name": "Género épico",
             "text": "Lee el siguiente texto:\n\nArturo, el noble rey de Bretaña, cuyas proezas son para nosotros ejemplos de valor y cortesía, al llegar la fiesta que llamamos Pentecostés, la celebró con todo el fasto propio de la realeza, reuniendo a su corte en Caraduel, en el país de Gales...\n\nEl fragmento anterior corresponde al género",
@@ -1426,7 +1296,7 @@
             "answer": "A"
           },
           {
-            "id": 106,
+            "id": 96,
             "topic": "2.2.1",
             "topic_name": "Corrientes literarias — realismo",
             "text": "Movimiento literario que surge en la segunda mitad del siglo XIX, como reacción ante el individualismo extremo y el idealismo que caracterizó al Romanticismo.",
@@ -1439,7 +1309,7 @@
             "answer": "C"
           },
           {
-            "id": 107,
+            "id": 97,
             "topic": "2.3.1",
             "topic_name": "Narrativa — cuento",
             "text": "Lee con atención el siguiente fragmento y elige a qué género pertenece.\n\nEl guardagujas\n\nEl forastero llegó sin aliento a la estación desierta. Su gran valija, que nadie quiso conducir, le había fatigado en extremo. Se enjugó el rostro con un pañuelo, y con la mano en visera miró los rieles que se perdían en el horizonte. Desalentado y pensativo consultó su reloj: la hora justa en que el tren debía de partir.\n\nJuan José Arreola",
@@ -1452,7 +1322,7 @@
             "answer": "B"
           },
           {
-            "id": 108,
+            "id": 98,
             "topic": "2.3.1",
             "topic_name": "Narrativa — cuento clásico",
             "text": "Elige la opción que contiene las características del cuento clásico.\n\nI. La intriga se vive intensamente desde el inicio.\nII. Existen uno o varios nudos.\nIII. Las acciones son ejecutadas por pocos personajes.\nIV. Su estructura está constituida por un planteamiento, nudo y un desenlace.\nV. Al lado de la historia principal se desarrollan otras.",
@@ -1465,7 +1335,7 @@
             "answer": "B"
           },
           {
-            "id": 109,
+            "id": 99,
             "topic": "2.3.2",
             "topic_name": "Novela — rasgos",
             "text": "Los rasgos característicos de la novela son género",
@@ -1478,7 +1348,7 @@
             "answer": "A"
           },
           {
-            "id": 110,
+            "id": 100,
             "topic": "3.3",
             "topic_name": "Fichas bibliográficas",
             "text": "La siguiente es una ficha:\n\nFernández Moreno, César. América Latina en su literatura. México, Siglo Veintiuno Editores, 1976, p. 25.",
@@ -1497,7 +1367,7 @@
         "questions_count": 10,
         "questions": [
           {
-            "id": 111,
+            "id": 101,
             "topic": "1.3.1",
             "topic_name": "Tectónica de placas",
             "text": "El desplazamiento de los continentes se explica como consecuencia de las corrientes de convección del",
@@ -1510,7 +1380,7 @@
             "answer": "A"
           },
           {
-            "id": 112,
+            "id": 102,
             "topic": "1.3.1.2",
             "topic_name": "Relieve de México",
             "text": "La Sierra Madre del Sur atraviesa las entidades de",
@@ -1523,7 +1393,7 @@
             "answer": "D"
           },
           {
-            "id": 113,
+            "id": 103,
             "topic": "1.3.1.4",
             "topic_name": "Reservas energéticas mundiales",
             "text": "En el mundo las mayores reservas de energéticos se localizan en",
@@ -1536,7 +1406,7 @@
             "answer": "D"
           },
           {
-            "id": 114,
+            "id": 104,
             "topic": "1.3.2.2",
             "topic_name": "Recursos hídricos — agua dulce",
             "text": "Las mayores reservas de agua dulce en nuestro planeta las representan",
@@ -1549,7 +1419,7 @@
             "answer": "B"
           },
           {
-            "id": 115,
+            "id": 105,
             "topic": "2.1.1",
             "topic_name": "Climas mundiales — selva",
             "text": "La región natural resultado del clima Af ubicada en la Cuenca del Congo es la",
@@ -1562,7 +1432,7 @@
             "answer": "D"
           },
           {
-            "id": 116,
+            "id": 106,
             "topic": "2.2",
             "topic_name": "Efecto invernadero",
             "text": "El aumento de bióxido de carbono en la atmósfera que origina el efecto invernadero se debe a",
@@ -1575,7 +1445,7 @@
             "answer": "A"
           },
           {
-            "id": 117,
+            "id": 107,
             "topic": "2.3.1",
             "topic_name": "Geografía de la población",
             "text": "Las dos áreas de mayor concentración de la población en el mundo son:\n\nI. Asia Oriental.\nII. Europa Occidental.\nIII. Asia Occidental.\nIV. Asia Meridional.\nV. Europa Meridional.",
@@ -1588,7 +1458,7 @@
             "answer": "A"
           },
           {
-            "id": 118,
+            "id": 108,
             "topic": "2.5.1.1",
             "topic_name": "Desintegración de la URSS",
             "text": "Países que surgieron como resultado de la desintegración de la Unión de Repúblicas Socialistas Soviéticas.",
@@ -1601,7 +1471,7 @@
             "answer": "D"
           },
           {
-            "id": 119,
+            "id": 109,
             "topic": "2.6.1",
             "topic_name": "Actividades económicas — ganadería",
             "text": "Los cultivos de forrajes en la Comarca Lagunera ubicada entre Coahuila y Durango favorecen la actividad ganadera principalmente",
@@ -1614,7 +1484,7 @@
             "answer": "C"
           },
           {
-            "id": 120,
+            "id": 110,
             "topic": "2.6.2",
             "topic_name": "Petróleo y gas en México",
             "text": "Zona marítima donde se obtiene petróleo y gas.",
@@ -1625,6 +1495,142 @@
               "D": "Sonda de Campeche."
             },
             "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Filosofía",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 111,
+            "topic": "1.1",
+            "topic_name": "Funciones del lenguaje",
+            "text": "Lee el ejemplo y reconoce a qué tipo de función del lenguaje pertenece.\n\nSacar la lengua es de mala educación pero es más, saquear, vender o maltratar el patrimonio artístico e histórico de nuestro país.",
+            "options": {
+              "A": "Expresiva.",
+              "B": "Interrogativa.",
+              "C": "Informativa.",
+              "D": "Exclamativa."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 112,
+            "topic": "1.1.3",
+            "topic_name": "Lógica — simbolización de proposiciones",
+            "text": "Cuál de las siguientes simbolizaciones corresponde a la proposición:\n\nSi no estudio y repruebo, entonces trabajo.",
+            "options": {
+              "A": "$E\\wedge (R\\to T)$",
+              "B": "$(\\sim E\\wedge R)\\to T$",
+              "C": "$(\\sim E\\supset R)\\to T$",
+              "D": "$\\sim(E\\wedge R)\\to T$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 113,
+            "topic": "1.2",
+            "topic_name": "Lógica — estructura del argumento",
+            "text": "\"Todos los estudiantes son inteligentes. Juan es estudiante. Luego, ______\".\n\n¿Qué parte del argumento anterior se suprimió?",
+            "options": {
+              "A": "Las premisas.",
+              "B": "La conclusión.",
+              "C": "Los conectivos.",
+              "D": "La validez."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 114,
+            "topic": "1.2.3",
+            "topic_name": "Lógica — falacias",
+            "text": "Los policías pidieron mejor sueldo al gobierno y un uniforme.\n\nEn el ejemplo anterior se presenta una falacia ¿en qué consiste?",
+            "options": {
+              "A": "Hay una falta de claridad en el orden y uso de los conceptos.",
+              "B": "Existe una diferencia entre los sentimientos y la petición.",
+              "C": "Se justifica la premisa con la misma conclusión.",
+              "D": "Hay una información faltante que no permite la conclusión."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 115,
+            "topic": "2.1.1",
+            "topic_name": "Ética — problema de justicia",
+            "text": "Lee con atención el siguiente fragmento.\n\nSéneca escribió: cuando los finales de los buenos son malos, cuando se le obliga a Sócrates a morir en la cárcel, a Rutitio a vivir en el destierro, a Pompeyo y a Cicerón a entregar su cabeza a sus clientes, a aquel Catón viva imagen de la virtud, a esliarse sobre la espada haciendo manifiesto que a la vez se acababa con él y con la república, por fuerza ha de atormentar que la fortuna distribuya viendo las cosas malas que han padecido los mejores.\n\nEl fragmento anterior alude a un problema de justicia en términos",
+            "options": {
+              "A": "políticos.",
+              "B": "morales.",
+              "C": "ontológicos.",
+              "D": "legales."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 116,
+            "topic": "2.1.2",
+            "topic_name": "Ética — normas",
+            "text": "Tipos de normas que regulan la conducta humana.",
+            "options": {
+              "A": "Moral, jurídica, social y religiosa.",
+              "B": "Jurídica, social, económica y estética.",
+              "C": "Estética, moral, colectiva y religiosa.",
+              "D": "Religiosa, colectiva, heterónoma y económica."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 117,
+            "topic": "2.3.3",
+            "topic_name": "Axiología — valores",
+            "text": "¿Cuál de las siguientes definiciones propone una visión objetiva-subjetiva de los valores?",
+            "options": {
+              "A": "Los valores son las cualidades que surgen de la relación entre un individuo y las propiedades que posee una cosa o situación.",
+              "B": "Los valores son entidades a priori, independientes de los bienes, universales, y no varían a través del tiempo.",
+              "C": "Los valores dependen del agrado, interés, deseo y actitud que están en el individuo que emite un juicio axiológico.",
+              "D": "Los valores son instancias históricas y son arbitrarios; por esta razón, es posible que cada sujeto tenga los propios."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 118,
+            "topic": "3.1.2",
+            "topic_name": "Estética — categorías",
+            "text": "Edipo Rey de Sófocles y Hamlet de Shakespeare se pueden calificar con la categoría estética de lo",
+            "options": {
+              "A": "bello.",
+              "B": "trágico.",
+              "C": "cómico.",
+              "D": "sublime."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 119,
+            "topic": "3.2.1",
+            "topic_name": "Ontología",
+            "text": "Se trata de expresar el concepto rigurosamente general de ente, si no en su contenido, al menos en su forma; y se trata, además, de fijar lo que se debe de entender por el ser de este ente.\n\nEl texto anterior hace referencia a una problemática",
+            "options": {
+              "A": "estética.",
+              "B": "epistemológica.",
+              "C": "ontológica.",
+              "D": "axiológica."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 120,
+            "topic": "3.3.1",
+            "topic_name": "Epistemología",
+            "text": "¿Qué disciplina filosófica tiene como objeto de estudio el conocimiento?",
+            "options": {
+              "A": "Epistemología.",
+              "B": "Lógica.",
+              "C": "Ética.",
+              "D": "Metafísica."
+            },
+            "answer": "A"
           }
         ]
       }
