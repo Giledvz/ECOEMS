@@ -67,6 +67,7 @@ function createRoom(data, jsonFilename = null, lockedOptions = false) {
         text: q.text,
         context: q.context || null,
         options: q.options,
+        option_images: q.option_images || null,
         image: q.image || null,
         topic: q.topic,
         topic_name: q.topic_name || '',
@@ -839,14 +840,16 @@ io.on('connection', (socket) => {
       const srcLetters = student.optionOrders[qid];
 
       const newOptions = {};
+      const newOptionImages = q.option_images ? {} : null;
       origLetters.forEach((newLetter, i) => {
         newOptions[newLetter] = q.options[srcLetters[i]];
+        if (newOptionImages) newOptionImages[newLetter] = q.option_images[srcLetters[i]] || null;
       });
 
       const correctOrig = room.answerKey[qid];
       student.answerKey[qid] = origLetters[srcLetters.indexOf(correctOrig)];
 
-      return { id: q.id, text: q.text, context: q.context || null, options: newOptions, image: q.image, subject: q.subject, topic_name: q.topic_name || '' };
+      return { id: q.id, text: q.text, context: q.context || null, options: newOptions, option_images: newOptionImages, image: q.image, subject: q.subject, topic_name: q.topic_name || '' };
     });
 
     const joinPayload = {

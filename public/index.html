@@ -868,6 +868,15 @@
   }
   .exam-option__text { min-width: 0; word-wrap: break-word; }
   .exam-option__text img { max-width: 100%; }
+  .exam-option__img {
+    display: flex; align-items: center; justify-content: flex-start;
+    min-width: 0;
+    transition: opacity var(--motion-base) var(--motion-ease-standard);
+  }
+  .exam-option__img svg, .exam-option__img img {
+    max-width: 100%; max-height: 80px;
+    display: block;
+  }
   .exam-option__icon {
     width: var(--icon-size-md); height: var(--icon-size-md);
     flex-shrink: 0; opacity: 0;
@@ -2204,9 +2213,29 @@ function renderQuestion() {
       btn.onclick = (e) => handleOptionClick(e, btn, q.id, letter);
       if (isLocked) icon = LOCK_SVG;
     }
-    btn.innerHTML = `<span class="exam-option__letter">${letter}</span><span class="exam-option__text">${renderMath(q.options[letter])}</span>${icon}`;
+    // Si la pregunta tiene option_images, el contenido es la imagen inline.
+    // Si no, es el texto renderizado (KaTeX/markdown).
+    const imgPath = q.option_images && q.option_images[letter];
+    const contentHTML = imgPath
+      ? `<span class="exam-option__img" data-img-path="${imgPath}"></span>`
+      : `<span class="exam-option__text">${renderMath(q.options[letter])}</span>`;
+    btn.innerHTML = `<span class="exam-option__letter">${letter}</span>${contentHTML}${icon}`;
     li.appendChild(btn);
     optList.appendChild(li);
+  });
+
+  // Lazy-load de los SVGs de las opciones (cuando existen).
+  optList.querySelectorAll('.exam-option__img[data-img-path]').forEach(span => {
+    const path = span.dataset.imgPath;
+    if (!path) return;
+    if (/\.svg$/i.test(path)) {
+      loadInlineSVG(path).then(svg => {
+        if (svg) span.innerHTML = svg;
+        else span.innerHTML = `<img src="${path}" alt="">`;
+      }).catch(() => { span.innerHTML = `<img src="${path}" alt="">`; });
+    } else {
+      span.innerHTML = `<img src="${path}" alt="">`;
+    }
   });
 
   const expDiv = document.getElementById('qExplanation');
