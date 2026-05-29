@@ -1,64 +1,92 @@
-<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="420" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-<!-- Patrón triangular de mosaicos. n mosaicos negros forman un triángulo equilátero,
-       con huecos blancos hacia abajo. Para n=3 (fila base): 3 negros, 1 hueco.
-       Tres patrones crecientes: n=3, 6, 10 (triangulares con n_filas=2,3,4). -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 144" width="460" height="144" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- 3 pirámides de cuadrados centradas, intercalando mosaicos (oscuros) y huecos.
+     Cada pirámide tiene n pisos donde el piso k tiene 2k-1 cuadrados con patrón
+     D L D L ... D (alternados empezando con D). Mosaicos = T(n), huecos = T(n-1).
+     F1 n=3 → 6 mosaicos, 3 huecos. F2 n=4 → 10, 6. F3 n=5 → 15, 10. -->
 
-  <!-- Helper: mosaico negro = triángulo equilátero "punta arriba" de lado L=20.
-       Hueco = triángulo "punta abajo" del mismo lado. -->
+  <style>
+    .mosaico { fill: currentColor; stroke: currentColor; stroke-width: 1.4; }
+    .hueco   { fill: none; stroke: currentColor; stroke-width: 1.4; }
+  </style>
 
-  <!-- Patrón 1 (2 filas) en x=40, base y=130 -->
-  <g stroke="currentColor" stroke-width="1.4">
-    <!-- Fila base: 2 negros + 1 hueco entre ellos -->
-    <polygon points="40,130 60,130 50,112.7" fill="#5a3a8a"/>
-    <polygon points="60,130 80,130 70,112.7" fill="#5a3a8a"/>
-    <!-- Triángulo punta abajo (hueco) -->
-    <polygon points="50,112.7 70,112.7 60,130" fill="none"/>
-    <!-- Fila superior: 1 negro -->
-    <polygon points="50,112.7 70,112.7 60,95.4" fill="#5a3a8a"/>
+  <!-- Figura 1: 3 pisos (1, 3, 5), centro x=60, base y=110, lado 16 -->
+  <!-- Piso 1 (cima) -->
+  <rect class="mosaico" x="52" y="62" width="16" height="16"/>
+  <!-- Piso 2 -->
+  <rect class="mosaico" x="36" y="78" width="16" height="16"/>
+  <rect class="hueco"   x="52" y="78" width="16" height="16"/>
+  <rect class="mosaico" x="68" y="78" width="16" height="16"/>
+  <!-- Piso 3 (base) -->
+  <rect class="mosaico" x="20" y="94" width="16" height="16"/>
+  <rect class="hueco"   x="36" y="94" width="16" height="16"/>
+  <rect class="mosaico" x="52" y="94" width="16" height="16"/>
+  <rect class="hueco"   x="68" y="94" width="16" height="16"/>
+  <rect class="mosaico" x="84" y="94" width="16" height="16"/>
+
+  <!-- Figura 2: 4 pisos (1, 3, 5, 7), centro x=186, base y=110 -->
+  <!-- Piso 1 -->
+  <rect class="mosaico" x="178" y="46" width="16" height="16"/>
+  <!-- Piso 2 -->
+  <rect class="mosaico" x="162" y="62" width="16" height="16"/>
+  <rect class="hueco"   x="178" y="62" width="16" height="16"/>
+  <rect class="mosaico" x="194" y="62" width="16" height="16"/>
+  <!-- Piso 3 -->
+  <rect class="mosaico" x="146" y="78" width="16" height="16"/>
+  <rect class="hueco"   x="162" y="78" width="16" height="16"/>
+  <rect class="mosaico" x="178" y="78" width="16" height="16"/>
+  <rect class="hueco"   x="194" y="78" width="16" height="16"/>
+  <rect class="mosaico" x="210" y="78" width="16" height="16"/>
+  <!-- Piso 4 (base) -->
+  <rect class="mosaico" x="130" y="94" width="16" height="16"/>
+  <rect class="hueco"   x="146" y="94" width="16" height="16"/>
+  <rect class="mosaico" x="162" y="94" width="16" height="16"/>
+  <rect class="hueco"   x="178" y="94" width="16" height="16"/>
+  <rect class="mosaico" x="194" y="94" width="16" height="16"/>
+  <rect class="hueco"   x="210" y="94" width="16" height="16"/>
+  <rect class="mosaico" x="226" y="94" width="16" height="16"/>
+
+  <!-- Figura 3: 5 pisos (1, 3, 5, 7, 9), centro x=344, base y=110 -->
+  <!-- Piso 1 -->
+  <rect class="mosaico" x="336" y="30" width="16" height="16"/>
+  <!-- Piso 2 -->
+  <rect class="mosaico" x="320" y="46" width="16" height="16"/>
+  <rect class="hueco"   x="336" y="46" width="16" height="16"/>
+  <rect class="mosaico" x="352" y="46" width="16" height="16"/>
+  <!-- Piso 3 -->
+  <rect class="mosaico" x="304" y="62" width="16" height="16"/>
+  <rect class="hueco"   x="320" y="62" width="16" height="16"/>
+  <rect class="mosaico" x="336" y="62" width="16" height="16"/>
+  <rect class="hueco"   x="352" y="62" width="16" height="16"/>
+  <rect class="mosaico" x="368" y="62" width="16" height="16"/>
+  <!-- Piso 4 -->
+  <rect class="mosaico" x="288" y="78" width="16" height="16"/>
+  <rect class="hueco"   x="304" y="78" width="16" height="16"/>
+  <rect class="mosaico" x="320" y="78" width="16" height="16"/>
+  <rect class="hueco"   x="336" y="78" width="16" height="16"/>
+  <rect class="mosaico" x="352" y="78" width="16" height="16"/>
+  <rect class="hueco"   x="368" y="78" width="16" height="16"/>
+  <rect class="mosaico" x="384" y="78" width="16" height="16"/>
+  <!-- Piso 5 (base) -->
+  <rect class="mosaico" x="272" y="94" width="16" height="16"/>
+  <rect class="hueco"   x="288" y="94" width="16" height="16"/>
+  <rect class="mosaico" x="304" y="94" width="16" height="16"/>
+  <rect class="hueco"   x="320" y="94" width="16" height="16"/>
+  <rect class="mosaico" x="336" y="94" width="16" height="16"/>
+  <rect class="hueco"   x="352" y="94" width="16" height="16"/>
+  <rect class="mosaico" x="368" y="94" width="16" height="16"/>
+  <rect class="hueco"   x="384" y="94" width="16" height="16"/>
+  <rect class="mosaico" x="400" y="94" width="16" height="16"/>
+
+  <!-- Puntos suspensivos para indicar continuación -->
+  <g fill="currentColor">
+    <circle cx="430" cy="102" r="2"/>
+    <circle cx="440" cy="102" r="2"/>
+    <circle cx="450" cy="102" r="2"/>
   </g>
-  <text x="60" y="155" font-size="13" text-anchor="middle">3</text>
 
-  <!-- Patrón 2 (3 filas) en x=140, base y=130 -->
-  <g stroke="currentColor" stroke-width="1.4">
-    <!-- Fila base: 3 negros + 2 huecos -->
-    <polygon points="140,130 160,130 150,112.7" fill="#5a3a8a"/>
-    <polygon points="160,130 180,130 170,112.7" fill="#5a3a8a"/>
-    <polygon points="180,130 200,130 190,112.7" fill="#5a3a8a"/>
-    <polygon points="150,112.7 170,112.7 160,130" fill="none"/>
-    <polygon points="170,112.7 190,112.7 180,130" fill="none"/>
-    <!-- Fila 2: 2 negros + 1 hueco -->
-    <polygon points="150,112.7 170,112.7 160,95.4" fill="#5a3a8a"/>
-    <polygon points="170,112.7 190,112.7 180,95.4" fill="#5a3a8a"/>
-    <polygon points="160,95.4 180,95.4 170,112.7" fill="none"/>
-    <!-- Fila 3: 1 negro -->
-    <polygon points="160,95.4 180,95.4 170,78.1" fill="#5a3a8a"/>
-  </g>
-  <text x="170" y="155" font-size="13" text-anchor="middle">6</text>
-
-  <!-- Patrón 3 (4 filas) en x=260, base y=130 -->
-  <g stroke="currentColor" stroke-width="1.4">
-    <!-- Fila base: 4 negros + 3 huecos -->
-    <polygon points="260,130 280,130 270,112.7" fill="#5a3a8a"/>
-    <polygon points="280,130 300,130 290,112.7" fill="#5a3a8a"/>
-    <polygon points="300,130 320,130 310,112.7" fill="#5a3a8a"/>
-    <polygon points="320,130 340,130 330,112.7" fill="#5a3a8a"/>
-    <polygon points="270,112.7 290,112.7 280,130" fill="none"/>
-    <polygon points="290,112.7 310,112.7 300,130" fill="none"/>
-    <polygon points="310,112.7 330,112.7 320,130" fill="none"/>
-    <!-- Fila 2: 3 negros + 2 huecos -->
-    <polygon points="270,112.7 290,112.7 280,95.4" fill="#5a3a8a"/>
-    <polygon points="290,112.7 310,112.7 300,95.4" fill="#5a3a8a"/>
-    <polygon points="310,112.7 330,112.7 320,95.4" fill="#5a3a8a"/>
-    <polygon points="280,95.4 300,95.4 290,112.7" fill="none"/>
-    <polygon points="300,95.4 320,95.4 310,112.7" fill="none"/>
-    <!-- Fila 3: 2 negros + 1 hueco -->
-    <polygon points="280,95.4 300,95.4 290,78.1" fill="#5a3a8a"/>
-    <polygon points="300,95.4 320,95.4 310,78.1" fill="#5a3a8a"/>
-    <polygon points="290,78.1 310,78.1 300,95.4" fill="none"/>
-    <!-- Fila 4: 1 negro -->
-    <polygon points="290,78.1 310,78.1 300,60.8" fill="#5a3a8a"/>
-  </g>
-  <text x="300" y="155" font-size="13" text-anchor="middle">10</text>
-
-  <text x="380" y="100" font-size="32" text-anchor="middle">…</text>
+  <!-- Leyenda: muestra qué es mosaico y qué es hueco. Útil sobre todo en dark. -->
+  <rect class="mosaico" x="160" y="126" width="12" height="12"/>
+  <text x="178" y="136" font-size="12">mosaico</text>
+  <rect class="hueco"   x="240" y="126" width="12" height="12"/>
+  <text x="258" y="136" font-size="12">hueco</text>
 </svg>

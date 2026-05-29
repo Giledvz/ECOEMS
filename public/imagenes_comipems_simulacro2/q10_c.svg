@@ -1,0 +1,13 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 110" width="170" height="110" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Opción C: papel desdoblado con 2 círculos, lado a lado (horizontalmente).
+     Rectángulo 130×70. 2 círculos radio 12, centrados en y=55, separados horizontalmente. -->
+
+  <g stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Rectángulo 130×70 en (20,20) a (150,90). -->
+    <rect x="20" y="20" width="130" height="70"/>
+
+    <!-- 2 círculos lado a lado, separados ~46 px entre bordes. -->
+    <circle cx="50" cy="55" r="12"/>
+    <circle cx="120" cy="55" r="12"/>
+  </g>
+</svg>

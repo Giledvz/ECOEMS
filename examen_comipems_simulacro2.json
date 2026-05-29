@@ -54,7 +54,7 @@
               "D": "10"
             },
             "answer": "A",
-            "explanation": "El patrón une los números del semicírculo siguiendo una regla aritmética; el valor faltante es 12."
+            "explanation": "En cada círculo el número de arriba es la diferencia entre el de la izquierda y el de la derecha: 5 = 7 − 2, 6 = 9 − 3. Para el tercer círculo, 8 = ? − 4, así que ? = 8 + 4 = 12."
           },
           {
             "id": 3,
@@ -133,7 +133,7 @@
             "topic": "HM.8",
             "topic_name": "Patrones — mosaicos",
             "image": "/imagenes_comipems_simulacro2/q8_mosaicos.svg",
-            "text": "¿Cuántos huecos se forman con 21 mosaicos morados?",
+            "text": "¿Cuántos huecos se forman con 21 mosaicos?",
             "options": {
               "A": "11",
               "B": "13",
@@ -166,11 +166,11 @@
             "options": {
               "A": "Cuatro semicírculos en fila",
               "B": "Dos círculos pequeños",
-              "C": "Dos círculos uno encima del otro",
+              "C": "Dos círculos uno al lado del otro",
               "D": "Dos semicírculos"
             },
             "answer": "C",
-            "explanation": "Al doblar el papel dos veces y cortar un semicírculo, al desdoblar se obtienen dos círculos completos (uno encima del otro)."
+            "explanation": "Al doblar el papel dos veces y cortar un semicírculo, al desdoblar se obtienen dos círculos completos (uno al lado del otro)."
           },
           {
             "id": 11,

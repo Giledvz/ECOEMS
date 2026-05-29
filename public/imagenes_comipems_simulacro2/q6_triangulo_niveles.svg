@@ -1,24 +1,17 @@
-<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" width="260" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-<!-- Triángulo grande equilátero subdividido en niveles (n=3 → 9 triángulos pequeños) -->
-  <!-- Vértices del triángulo grande: arriba (130, 30), abajo-izq (50, 190), abajo-der (210, 190). Lado = 160. -->
-  <!-- Altura de cada nivel: (190-30)/3 ≈ 53.3. Lado de cada triángulo pequeño = 160/3 ≈ 53.3 -->
-  <!-- Vértices de la grilla:
-       Nivel 0 (arriba): (130, 30)
-       Nivel 1: (103.3, 83.3), (156.7, 83.3)
-       Nivel 2: (76.7, 136.7), (130, 136.7), (183.3, 136.7)
-       Nivel 3: (50, 190), (103.3, 190), (156.7, 190), (210, 190)
-  -->
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 166" width="260" height="166" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- 6 triángulos isósceles separados, arreglo piramidal (3 + 2 + 1).
+     Cada triángulo: base 70, ángulos base 50° → altura = 35·tan(50°) ≈ 42.
+     Gap horizontal y vertical entre triángulos: 8 px. -->
+
   <g stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round">
-    <!-- Triángulo grande (perímetro) -->
-    <polygon points="130,30 50,190 210,190"/>
-    <!-- Líneas horizontales -->
-    <line x1="103.3" y1="83.3"  x2="156.7" y2="83.3"/>
-    <line x1="76.7"  y1="136.7" x2="183.3" y2="136.7"/>
-    <!-- Líneas diagonales hacia abajo-izquierda (paralelas al lado derecho) -->
-    <line x1="156.7" y1="83.3"  x2="103.3" y2="190"/>
-    <line x1="183.3" y1="136.7" x2="156.7" y2="190"/>
-    <!-- Líneas diagonales hacia abajo-derecha (paralelas al lado izquierdo) -->
-    <line x1="103.3" y1="83.3"  x2="156.7" y2="190"/>
-    <line x1="76.7"  y1="136.7" x2="103.3" y2="190"/>
+    <!-- Fila inferior (3) -->
+    <polygon points="17,154 87,154 52,112"/>
+    <polygon points="95,154 165,154 130,112"/>
+    <polygon points="173,154 243,154 208,112"/>
+    <!-- Fila media (2) -->
+    <polygon points="56,104 126,104 91,62"/>
+    <polygon points="134,104 204,104 169,62"/>
+    <!-- Cima (1) -->
+    <polygon points="95,54 165,54 130,12"/>
   </g>
 </svg>

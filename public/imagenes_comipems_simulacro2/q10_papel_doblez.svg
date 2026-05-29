@@ -1,41 +1,60 @@
-<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" width="400" height="180" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-<!-- Paso 1: rectángulo original -->
-  <g stroke="currentColor" stroke-width="1.6" fill="none">
-    <rect x="20" y="50" width="80" height="80"/>
-  </g>
-  <text x="60" y="148" font-size="11" text-anchor="middle">papel</text>
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 400 130" width="400" height="130" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Dos figuras lado a lado:
+     FIGURA 1 (izquierda): papel doblado en cuartos sin corte.
+     FIGURA 2 (derecha): mismo papel + medio círculo cortado en el borde superior (top edge).
+     Offset horizontal de la figura 2 = +200 px respecto a la figura 1. -->
 
-  <!-- Flecha -->
-  <g stroke="currentColor" stroke-width="1.4" fill="currentColor">
-    <line x1="110" y1="90" x2="135" y2="90"/>
-    <polygon points="135,90 129,86 129,94"/>
-  </g>
+  <g stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round" stroke-linecap="round">
 
-  <!-- Paso 2: doblez 1 (horizontal, dobla hacia arriba) -->
-  <g stroke="currentColor" stroke-width="1.6" fill="none">
-    <rect x="145" y="70" width="80" height="40"/>
-    <!-- Línea punteada del primer doblez -->
-    <line x1="145" y1="50" x2="225" y2="50" stroke-dasharray="3,2"/>
-    <line x1="145" y1="50" x2="145" y2="70" stroke-dasharray="3,2"/>
-    <line x1="225" y1="50" x2="225" y2="70" stroke-dasharray="3,2"/>
-  </g>
+    <!-- ═══════ FIGURA 1 — sin corte ═══════ -->
+    <!-- Bottom: (30,100) → (160,100) -->
+    <line x1="30" y1="100" x2="160" y2="100"/>
+    <!-- Right: (160,30) → (160,100) -->
+    <line x1="160" y1="30" x2="160" y2="100"/>
+    <!-- Top: (30,30) → (160,30) -->
+    <line x1="30" y1="30" x2="160" y2="30"/>
+    <!-- Lado izquierdo desde y=63.53 hasta (30,100) -->
+    <line x1="30" y1="63.53" x2="30" y2="100"/>
+    <!-- Unión endpoint línea 3 con punto (20, 63.53) -->
+    <line x1="130.78" y1="71.73" x2="20" y2="63.53"/>
+    <!-- Línea 7° desde (30,100) → (132.5, 87.42) -->
+    <line x1="30" y1="100" x2="132.5" y2="87.42"/>
+    <!-- Conexión (132.5, 87.42) → (160, 30) -->
+    <line x1="132.5" y1="87.42" x2="160" y2="30"/>
+    <!-- Línea 3: (160, 30) → (130.78, 71.73) -->
+    <line x1="160" y1="30" x2="130.78" y2="71.73"/>
+    <!-- Línea 4: (160, 30) → (128.73, 63.53) -->
+    <line x1="160" y1="30" x2="128.73" y2="63.53"/>
+    <!-- Línea 5: (30, 30) → (-1.27, 63.53) -->
+    <line x1="30" y1="30" x2="-1.27" y2="63.53"/>
+    <!-- Unión horizontal: (-1.27, 63.53) → (128.73, 63.53) -->
+    <line x1="-1.27" y1="63.53" x2="128.73" y2="63.53"/>
 
-  <!-- Flecha -->
-  <g stroke="currentColor" stroke-width="1.4" fill="currentColor">
-    <line x1="235" y1="90" x2="260" y2="90"/>
-    <polygon points="260,90 254,86 254,94"/>
-  </g>
+    <!-- ═══════ FIGURA 2 — con medio círculo cortado en el top (offset x +200) ═══════ -->
+    <!-- Bottom: (230,100) → (360,100) -->
+    <line x1="230" y1="100" x2="360" y2="100"/>
+    <!-- Right: (360,30) → (360,100) -->
+    <line x1="360" y1="30" x2="360" y2="100"/>
+    <!-- Top con medio círculo cortado: tramo, arc hacia abajo, tramo.
+         Centro del semicírculo en (275, 30), radio 14 → endpoints (261, 30) y (289, 30).
+         sweep-flag=0 → arco curvándose hacia abajo (mayor y en SVG). -->
+    <path d="M 230,30 L 261,30 A 14,14 0 0 0 289,30 L 360,30"/>
+    <!-- Lado izquierdo desde y=63.53 hasta (230,100) -->
+    <line x1="230" y1="63.53" x2="230" y2="100"/>
+    <!-- Unión endpoint línea 3 con punto (220, 63.53) -->
+    <line x1="330.78" y1="71.73" x2="220" y2="63.53"/>
+    <!-- Línea 7° desde (230,100) → (332.5, 87.42) -->
+    <line x1="230" y1="100" x2="332.5" y2="87.42"/>
+    <!-- Conexión (332.5, 87.42) → (360, 30) -->
+    <line x1="332.5" y1="87.42" x2="360" y2="30"/>
+    <!-- Línea 3: (360, 30) → (330.78, 71.73) -->
+    <line x1="360" y1="30" x2="330.78" y2="71.73"/>
+    <!-- Línea 4: (360, 30) → (328.73, 63.53) -->
+    <line x1="360" y1="30" x2="328.73" y2="63.53"/>
+    <!-- Línea 5: (230, 30) → (198.73, 63.53) -->
+    <line x1="230" y1="30" x2="198.73" y2="63.53"/>
+    <!-- Unión horizontal: (198.73, 63.53) → (328.73, 63.53) -->
+    <line x1="198.73" y1="63.53" x2="328.73" y2="63.53"/>
 
-  <!-- Paso 3: doblez 2 (vertical) + corte de medio círculo -->
-  <g stroke="currentColor" stroke-width="1.6" fill="none">
-    <rect x="270" y="70" width="40" height="40"/>
-    <!-- Línea punteada del segundo doblez -->
-    <line x1="310" y1="50" x2="350" y2="50" stroke-dasharray="3,2"/>
-    <line x1="310" y1="70" x2="350" y2="70" stroke-dasharray="3,2"/>
-    <line x1="350" y1="50" x2="350" y2="110" stroke-dasharray="3,2"/>
-    <line x1="310" y1="110" x2="350" y2="110" stroke-dasharray="3,2"/>
-    <!-- Medio círculo cortado en la esquina inferior-izquierda (sobre el doblez vertical izquierdo y la base horizontal interior, que es donde están los dobleces) -->
-    <path d="M 270,98 A 12,12 0 0 0 294,98 Z" fill="#ffffff" stroke="currentColor"/>
   </g>
-  <text x="335" y="148" font-size="11" text-anchor="middle">corte ½ círculo</text>
 </svg>
