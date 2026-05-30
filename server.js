@@ -331,7 +331,7 @@ function renderInlineMath(text) {
       .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
       .replace(/&lt;br\s*\/?&gt;/g, '<br>')
       .replace(/&lt;img\s+([^&]*?)\/?&gt;/g, '<img $1 style="max-width:100%;height:auto;">')
-      .replace(/_{3,}/g, m => `<span style="display:inline-block; width:${(m.length * 0.85).toFixed(2)}em; height:1.5px; background-color:currentColor; vertical-align:0.18em; margin:0 0.18em;"></span>`)
+      .replace(/_{3,}/g, m => `<span style="display:inline-block; width:${(m.length * 0.85).toFixed(2)}em; height:2.5px; background-color:currentColor; vertical-align:-0.08em; margin:0 0.18em;"></span>`)
       .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>');
   }).join('');
 }
@@ -375,7 +375,7 @@ function renderMath(text) {
       return part
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
         .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
-        .replace(/_{3,}/g, m => `<span style="display:inline-block; width:${(m.length * 0.85).toFixed(2)}em; height:1.5px; background-color:currentColor; vertical-align:0.18em; margin:0 0.18em;"></span>`)
+        .replace(/_{3,}/g, m => `<span style="display:inline-block; width:${(m.length * 0.85).toFixed(2)}em; height:2.5px; background-color:currentColor; vertical-align:-0.08em; margin:0 0.18em;"></span>`)
         .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
         .replace(/\n/g, '<br>');
     }).join('');
@@ -913,7 +913,6 @@ io.on('connection', (socket) => {
     const student = room.students[socket.id];
     if (!student || student.submitted || student.cancelled) return;
     if (room.phase !== 'active') return;
-    if (student.joinedAt && Date.now() - student.joinedAt < 3000) return;
     student.answers[questionId] = answer;
     io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
   });
