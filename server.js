@@ -329,6 +329,9 @@ function renderInlineMath(text) {
     }
     return p.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
       .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
+      .replace(/&lt;br\s*\/?&gt;/g, '<br>')
+      .replace(/&lt;img\s+([^&]*?)\/?&gt;/g, '<img $1 style="max-width:100%;height:auto;">')
+      .replace(/_{3,}/g, m => `<span style="display:inline-block; width:${(m.length * 0.85).toFixed(2)}em; height:1.5px; background-color:currentColor; vertical-align:0.18em; margin:0 0.18em;"></span>`)
       .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>');
   }).join('');
 }
@@ -372,6 +375,7 @@ function renderMath(text) {
       return part
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
         .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
+        .replace(/_{3,}/g, m => `<span style="display:inline-block; width:${(m.length * 0.85).toFixed(2)}em; height:1.5px; background-color:currentColor; vertical-align:0.18em; margin:0 0.18em;"></span>`)
         .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
         .replace(/\n/g, '<br>');
     }).join('');
@@ -394,10 +398,17 @@ function buildComprobanteHTML(room, student) {
     origLetters.forEach((newLetter, i) => {
       newOptions[newLetter] = q.options[srcLetters[i]];
     });
+    const newOptionImages = q.option_images ? {} : null;
+    if (newOptionImages) {
+      origLetters.forEach((newLetter, i) => {
+        newOptionImages[newLetter] = q.option_images[srcLetters[i]] || null;
+      });
+    }
     return {
       id: q.id,
       text: q.text,
       options: newOptions,
+      option_images: newOptionImages,
       image: q.image,
       subject: q.subject,
       topic_name: q.topic_name,
@@ -464,7 +475,10 @@ function buildComprobanteHTML(room, student) {
       else if (isCorrect) { style += ' background:#dcfce7; border:1px solid #16a34a;'; marker = ' ✓'; }
       else if (isMine) { style += ' background:#fef2f2; border:1px solid #e53e3e;'; marker = ' ✗ (tu respuesta)'; }
       else { style += ' background:#f8f8f8; border:1px solid #e5e5e5;'; }
-      return `<div style="${style}"><b>${letter}.</b> ${renderMath(q.options[letter])}${marker}</div>`;
+      const optImg = q.option_images && q.option_images[letter]
+        ? `<img src="${q.option_images[letter]}" style="max-width:140px;max-height:80px;margin-left:8px;vertical-align:middle;display:inline-block;">`
+        : '';
+      return `<div style="${style}"><b>${letter}.</b> ${renderMath(q.options[letter])}${optImg}${marker}</div>`;
     }).join('');
 
     let qText = q.text || '';
@@ -539,7 +553,10 @@ function buildAnswerKeyHTML(room) {
       let marker = '';
       if (isCorrect) { style += ' background:#dcfce7; border:1px solid #16a34a;'; marker = ' ✓'; }
       else { style += ' background:#f8f8f8; border:1px solid #e5e5e5;'; }
-      return `<div style="${style}"><b>${letter}.</b> ${renderMath(q.options[letter])}${marker}</div>`;
+      const optImg = q.option_images && q.option_images[letter]
+        ? `<img src="${q.option_images[letter]}" style="max-width:140px;max-height:80px;margin-left:8px;vertical-align:middle;display:inline-block;">`
+        : '';
+      return `<div style="${style}"><b>${letter}.</b> ${renderMath(q.options[letter])}${optImg}${marker}</div>`;
     }).join('');
 
     let qText = q.text || '';
