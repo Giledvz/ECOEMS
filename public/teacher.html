@@ -744,7 +744,11 @@
       color var(--motion-slow) var(--motion-ease-emphasized),
       border-color var(--motion-slow) var(--motion-ease-emphasized);
   }
-  .timer-warning {
+  .timer-display--warn {
+    color: var(--color-state-warn);
+    border-color: var(--color-state-warn);
+  }
+  .timer-display--critical {
     color: var(--color-state-err);
     border-color: var(--color-state-err);
   }
@@ -1722,7 +1726,11 @@ function startTeacherTimer(startTime, limitMinutes) {
     const s = Math.floor(remaining % 60);
     const el = document.getElementById('teacherTimer');
     el.textContent = `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-    el.className = remaining < 600 ? 'timer-display timer-warning' : 'timer-display';
+    // Umbrales iguales al timer del alumno: <30m crítico (rojo), 30m-1h advertencia (amarillo), >1h ok (verde por default).
+    const critical = remaining < 1800;
+    const warn = !critical && remaining < 3600;
+    el.classList.toggle('timer-display--critical', critical);
+    el.classList.toggle('timer-display--warn', warn);
   }, 1000);
 }
 
