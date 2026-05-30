@@ -13,6 +13,14 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
+// Branch de git para badge ambiente (dev vs main) en el cliente.
+let GIT_BRANCH = 'unknown';
+try {
+  const { execSync } = require('child_process');
+  GIT_BRANCH = execSync('git rev-parse --abbrev-ref HEAD', { cwd: __dirname, encoding: 'utf8' }).trim();
+} catch (e) {}
+console.log(`Branch: ${GIT_BRANCH}`);
+
 app.use(express.static(path.join(__dirname, 'public'), { etag: false, maxAge: 0, setHeaders: (res) => { res.setHeader('Cache-Control', 'no-store'); } }));
 app.use('/katex', express.static(path.join(__dirname, 'node_modules/katex/dist')));
 app.use(express.json({ limit: '10mb' }));
@@ -183,6 +191,11 @@ function getLocalIP() {
 // ─── API Endpoints ──────────────────────────────────────────────────────────
 
 // Teacher uploads exam JSON → creates a new room
+// Versión del server (branch de git) — cliente la usa para mostrar badge ambiente.
+app.get('/api/version', (_req, res) => {
+  res.json({ branch: GIT_BRANCH });
+});
+
 app.post('/api/upload-exam', (req, res) => {
   try {
     const filename = req.headers['x-exam-filename'] || null;

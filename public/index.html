@@ -1417,10 +1417,36 @@
   #qImage[src*="q10_original"] { width: 284px; max-width: 100%; height: auto; }
   #qImage[src*="q12_tira_triangulos"] { width: 693px; max-width: 100%; height: auto; }
   #qImage[src*="q14_cuadrados_anidados"] { width: 567px; max-width: 100%; height: auto; }
+  /* env-badge: muestra branch git cuando NO es main. Esquina inferior-derecha. */
+  .env-badge {
+    position: fixed; bottom: 6px; right: 8px;
+    padding: 2px 6px;
+    font-family: var(--font-family-mono);
+    font-size: 9px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--color-state-warn);
+    border: 1px solid var(--color-state-warn);
+    border-radius: 3px;
+    background: var(--color-bg-page);
+    z-index: 10000;
+    opacity: 0.7;
+    pointer-events: none;
+  }
 </style>
 </head>
 <body>
 <div class="conn-status" id="connStatus">Reconectando...</div>
+<script>
+  // Badge ambiente: muestra branch git si no es main (sirve para no confundir dev con prod).
+  fetch('/api/version').then(r => r.json()).then(d => {
+    if (d.branch && d.branch !== 'main') {
+      const b = document.createElement('div');
+      b.className = 'env-badge';
+      b.textContent = d.branch;
+      document.body.appendChild(b);
+    }
+  }).catch(() => {});
+</script>
 
 <button class="dark-toggle theme-toggle--floating" id="darkToggleFloating" onclick="toggleDarkMode()" aria-label="Cambiar modo de color" type="button">
   <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
