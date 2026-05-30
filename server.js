@@ -324,7 +324,7 @@ function renderInlineMath(text) {
     const isInline = !isDisplay && p.length >= 2 && p.charAt(0) === '$' && p.charAt(p.length - 1) === '$' && p.indexOf('\n') === -1;
     if (isDisplay || isInline) {
       const inner = isDisplay ? p.slice(2, -2) : p.slice(1, -1);
-      try { return katex.renderToString(inner, { throwOnError: false, displayMode: false }); }
+      try { return katex.renderToString(inner, { throwOnError: false, displayMode: false, macros: { "\\sen": "\\operatorname{sen}", "\\tg": "\\operatorname{tg}" } }); }
       catch (e) { return inner.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
     }
     return p.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -366,7 +366,7 @@ function renderMath(text) {
       if (isDisplay || isInline) {
         const inner = isDisplay ? part.slice(2, -2) : part.slice(1, -1);
         try {
-          return katex.renderToString(inner, { throwOnError: false, displayMode: isDisplay });
+          return katex.renderToString(inner, { throwOnError: false, displayMode: isDisplay, macros: { "\\sen": "\\operatorname{sen}", "\\tg": "\\operatorname{tg}" } });
         } catch (e) {
           return inner.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
         }

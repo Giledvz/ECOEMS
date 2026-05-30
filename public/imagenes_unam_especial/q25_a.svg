@@ -1,0 +1,20 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="200" height="120" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Opción A: recta creciente que pasa por el origen, de (-3,-3) a (3,3).
+     Sistema: origen en (100,70), 14 px/unidad. -->
+  <g stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round">
+    <!-- Eje x -->
+    <line x1="40" y1="70" x2="160" y2="70"/>
+    <polygon points="160,70 155,67 155,73" fill="currentColor" stroke="none"/>
+    <!-- Eje y -->
+    <line x1="100" y1="110" x2="100" y2="10"/>
+    <polygon points="100,10 97,15 103,15" fill="currentColor" stroke="none"/>
+    <!-- Gráfica: recta de (-3,-3) a (3,3) -->
+    <line x1="58" y1="112" x2="142" y2="28" stroke-width="1.8"/>
+  </g>
+  <!-- Dots en los extremos -->
+  <circle cx="58" cy="112" r="2.5" fill="currentColor"/>
+  <circle cx="142" cy="28" r="2.5" fill="currentColor"/>
+  <!-- Labels -->
+  <text x="164" y="74" font-size="10" font-style="italic">x</text>
+  <text x="92" y="12" font-size="10" font-style="italic">y</text>
+</svg>
