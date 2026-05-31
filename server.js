@@ -400,6 +400,276 @@ function renderMath(text) {
 }
 
 // Construye el HTML del comprobante igual que _downloadPDFImpl() del cliente.
+// CSS Tercial compartido por comprobante + clave de respuestas.
+const TERCIAL_PDF_CSS = `
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --crema-100: #faf6ec; --crema-200: #f4ecd8; --crema-300: #ede2c5;
+    --ink-300: #8c7556; --ink-500: #7a6448; --ink-700: #4a3f33; --ink-900: #1f1a16;
+    --accent-conac: #6b3a2e; --accent-terracota: #c2410c;
+    --state-ok: #5a8045; --state-ok-bg: #e7ecd9;
+    --state-err: #b8362c; --state-err-bg: #f1dcd4;
+    --state-warn: #b8862e; --state-warn-bg: #f1e6c4;
+    --cat-coral: #8c4a3a;
+  }
+  @page {
+    size: letter;
+    margin: 0.85in 0.9in 1in 0.9in;
+  }
+  body {
+    font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+    background-color: var(--crema-200);
+    color: var(--ink-900);
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .exam-pdf {
+    max-width: 6.7in;
+    margin: 0 auto;
+    padding: 0.4in 0;
+  }
+
+  /* Hero */
+  .exam-pdf__hero {
+    border-top: 3px solid var(--cat-coral);
+    padding-top: 0.4in;
+    margin-bottom: 0.35in;
+  }
+  .exam-pdf__eyebrow {
+    font-size: 10pt;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-300);
+    margin: 0 0 12pt;
+  }
+  .exam-pdf__title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 32pt;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink-900);
+    margin: 0 0 12pt;
+    font-variation-settings: "opsz" 96;
+  }
+  .exam-pdf__title em {
+    font-style: italic;
+    color: var(--accent-conac);
+  }
+  .exam-pdf__meta {
+    font-size: 11pt;
+    color: var(--ink-500);
+    margin: 0;
+    font-variant-numeric: tabular-nums;
+  }
+  .exam-pdf__meta strong {
+    font-weight: 500;
+    color: var(--ink-700);
+  }
+
+  /* Score block — Tercial editorial */
+  .score-block {
+    margin: 0.4in 0 0.45in;
+    padding: 18pt 0;
+    border-top: 1px solid var(--ink-300);
+    border-bottom: 1px solid var(--ink-300);
+    text-align: center;
+    page-break-inside: avoid;
+  }
+  .score-block__eyebrow {
+    font-size: 9pt;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-300);
+    margin: 0 0 6pt;
+  }
+  .score-block__big {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 52pt;
+    line-height: 1;
+    color: var(--accent-conac);
+    font-variant-numeric: lining-nums;
+    margin: 0;
+  }
+  .score-block__sub {
+    margin-top: 6pt;
+    font-size: 10.5pt;
+    color: var(--ink-500);
+    letter-spacing: 0.02em;
+  }
+  .score-block__sub strong {
+    font-weight: 500;
+    color: var(--ink-700);
+  }
+
+  /* Breakdown por materia — barras finas coñac/crema */
+  .breakdown {
+    margin-bottom: 0.4in;
+    page-break-inside: avoid;
+  }
+  .breakdown__title {
+    font-size: 9pt;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-300);
+    margin: 0 0 14pt;
+  }
+  .breakdown__row {
+    margin-bottom: 11pt;
+  }
+  .breakdown__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4pt;
+    font-size: 10.5pt;
+    color: var(--ink-700);
+  }
+  .breakdown__name { font-weight: 500; }
+  .breakdown__pct {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10pt;
+    font-weight: 500;
+    color: var(--ink-700);
+    font-variant-numeric: tabular-nums;
+  }
+  .breakdown__bar {
+    height: 2.5pt;
+    background-color: var(--crema-300);
+    border-radius: 1pt;
+    overflow: hidden;
+  }
+  .breakdown__fill {
+    height: 100%;
+    background-color: var(--accent-conac);
+    border-radius: 1pt;
+  }
+  .breakdown__meta {
+    margin-top: 3pt;
+    font-size: 9pt;
+    color: var(--ink-300);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Lista de ejercicios */
+  .exam-pdf__exercises {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: exercise;
+  }
+  .exam-pdf__exercise {
+    counter-increment: exercise;
+    display: grid;
+    grid-template-columns: 0.42in minmax(0, 1fr);
+    column-gap: 16pt;
+    margin-bottom: 22pt;
+    page-break-inside: avoid;
+  }
+  .exam-pdf__exercise::before {
+    content: counter(exercise) ".";
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 17pt;
+    color: var(--accent-conac);
+    text-align: right;
+    line-height: 1.1;
+    padding-top: 1pt;
+    font-variant-numeric: lining-nums;
+  }
+  .exam-pdf__body {
+    font-size: 11pt;
+    line-height: 1.5;
+    color: var(--ink-900);
+    min-width: 0;
+  }
+  .exam-pdf__subject {
+    display: block;
+    font-size: 8.5pt;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-300);
+    margin-bottom: 4pt;
+  }
+  .exam-pdf__body p { margin: 0 0 6pt; }
+  .exam-pdf__figure {
+    margin: 8pt 0;
+  }
+  .exam-pdf__figure img,
+  .exam-pdf__figure svg {
+    max-width: 100%;
+    max-height: 180pt;
+  }
+
+  /* Opciones con estado */
+  .exam-pdf__choices {
+    list-style: none;
+    padding: 0;
+    margin: 8pt 0 0;
+  }
+  .exam-pdf__choice {
+    display: flex;
+    align-items: flex-start;
+    gap: 8pt;
+    padding: 5pt 8pt;
+    margin-bottom: 2pt;
+    border-radius: 4pt;
+    font-size: 10.5pt;
+    line-height: 1.45;
+    color: var(--ink-700);
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+  .exam-pdf__choice--correct {
+    background-color: var(--state-ok-bg);
+    border-color: var(--state-ok);
+  }
+  .exam-pdf__choice--incorrect {
+    background-color: var(--state-err-bg);
+    border-color: var(--state-err);
+  }
+  .exam-pdf__choice__letter {
+    font-weight: 500;
+    color: var(--ink-500);
+    flex-shrink: 0;
+    min-width: 18pt;
+  }
+  .exam-pdf__choice--correct .exam-pdf__choice__letter { color: var(--state-ok); }
+  .exam-pdf__choice--incorrect .exam-pdf__choice__letter { color: var(--state-err); }
+  .exam-pdf__choice__text { flex: 1; min-width: 0; }
+  .exam-pdf__choice__text img {
+    max-width: 140pt;
+    max-height: 80pt;
+    margin-left: 6pt;
+    vertical-align: middle;
+  }
+  .exam-pdf__choice__marker {
+    flex-shrink: 0;
+    font-size: 9pt;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-300);
+  }
+  .exam-pdf__choice--correct .exam-pdf__choice__marker { color: var(--state-ok); }
+  .exam-pdf__choice--incorrect .exam-pdf__choice__marker { color: var(--state-err); }
+
+  /* Answer-final (clave del profesor) */
+  .answer-final {
+    display: inline-block;
+    border-bottom: 2px solid var(--accent-conac);
+    padding-bottom: 1px;
+    line-height: 1.2;
+  }
+`;
+
 function buildComprobanteHTML(room, student) {
   const origin = `http://localhost:${PORT}`;
 
@@ -433,6 +703,7 @@ function buildComprobanteHTML(room, student) {
   const total = questionsForStudent.length;
   let correct = 0;
   questionsForStudent.forEach(q => { if (answers[q.id] === answerKey[q.id]) correct++; });
+  const pct = total > 0 ? Math.round(correct / total * 100) : 0;
 
   let timeStr = '—';
   if (student.submitTime && student.startTime) {
@@ -453,27 +724,23 @@ function buildComprobanteHTML(room, student) {
     if (answers[q.id] === answerKey[q.id]) subjects[key].correct++;
   });
   const sortedSubjects = Object.entries(subjects).sort((a, b) => (b[1].correct / b[1].total) - (a[1].correct / a[1].total));
-  const subjectRowsHTML = sortedSubjects.map(([name, data]) => {
-    const pct = Math.round((data.correct / data.total) * 100);
-    const barColor = pct >= 70 ? '#16a34a' : pct >= 50 ? '#eab308' : '#e53e3e';
-    const pctColor = pct >= 70 ? '#16a34a' : pct >= 50 ? '#a16207' : '#e53e3e';
+  const breakdownRowsHTML = sortedSubjects.map(([name, data]) => {
+    const subjectPct = Math.round((data.correct / data.total) * 100);
     return `
-      <div style="margin-bottom:10px;">
-        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:3px;">
-          <span style="font-size:12px; color:#555; flex:1; padding-right:8px;">${name}</span>
-          <span style="font-size:12px; font-weight:700; margin-left:8px; color:${pctColor};">${pct}%</span>
+      <div class="breakdown__row">
+        <div class="breakdown__head">
+          <span class="breakdown__name">${name}</span>
+          <span class="breakdown__pct">${subjectPct}%</span>
         </div>
-        <div style="height:7px; background:#ebebeb; border-radius:4px; overflow:hidden;">
-          <div style="height:100%; width:${pct}%; background:${barColor}; border-radius:4px;"></div>
-        </div>
-        <div style="font-size:10px; color:#999; margin-top:2px;">${data.correct} de ${data.total} preguntas correctas</div>
+        <div class="breakdown__bar"><div class="breakdown__fill" style="width:${subjectPct}%;"></div></div>
+        <div class="breakdown__meta">${data.correct} de ${data.total} aciertos</div>
       </div>`;
   }).join('');
-  const topicBreakdownHTML = sortedSubjects.length > 0 ? `
-    <div style="margin:20px auto; max-width:480px; page-break-inside:avoid;">
-      <h3 style="font-size:14px; font-weight:600; margin-bottom:12px; text-align:center; color:#444;">Desempeño por materia</h3>
-      ${subjectRowsHTML}
-    </div>` : '';
+  const breakdownHTML = sortedSubjects.length > 0 ? `
+    <section class="breakdown">
+      <p class="breakdown__title">Por materia</p>
+      ${breakdownRowsHTML}
+    </section>` : '';
 
   const questionsHTML = questionsForStudent.map((q, idx) => {
     const mine = answers[q.id];
@@ -482,16 +749,15 @@ function buildComprobanteHTML(room, student) {
     const optionsHTML = letters.map(letter => {
       const isCorrect = letter === correctAns;
       const isMine = letter === mine;
-      let style = 'padding:6px 10px; margin:2px 0; border-radius:6px; font-size:12px;';
+      let cls = 'exam-pdf__choice';
       let marker = '';
-      if (isCorrect && isMine) { style += ' background:#dcfce7; border:1px solid #16a34a;'; marker = ' ✓ (tu respuesta)'; }
-      else if (isCorrect) { style += ' background:#dcfce7; border:1px solid #16a34a;'; marker = ' ✓'; }
-      else if (isMine) { style += ' background:#fef2f2; border:1px solid #e53e3e;'; marker = ' ✗ (tu respuesta)'; }
-      else { style += ' background:#f8f8f8; border:1px solid #e5e5e5;'; }
+      if (isCorrect) { cls += ' exam-pdf__choice--correct'; marker = isMine ? 'Tu respuesta · correcta' : 'Correcta'; }
+      else if (isMine) { cls += ' exam-pdf__choice--incorrect'; marker = 'Tu respuesta'; }
       const optImg = q.option_images && q.option_images[letter]
-        ? `<img src="${q.option_images[letter]}" style="max-width:140px;max-height:80px;margin-left:8px;vertical-align:middle;display:inline-block;">`
+        ? `<img src="${q.option_images[letter]}" alt="">`
         : '';
-      return `<div style="${style}"><b>${letter}.</b> ${renderMath(q.options[letter])}${optImg}${marker}</div>`;
+      const markerHTML = marker ? `<span class="exam-pdf__choice__marker">${marker}</span>` : '';
+      return `<li class="${cls}"><span class="exam-pdf__choice__letter">${letter}.</span><span class="exam-pdf__choice__text">${renderMath(q.options[letter])}${optImg}</span>${markerHTML}</li>`;
     }).join('');
 
     let qText = q.text || '';
@@ -504,50 +770,46 @@ function buildComprobanteHTML(room, student) {
         qText = readingPart.substring(0, 300) + '\n\n[...]\n\n' + questionPart;
       }
     }
-    const imgHTML = q.image ? `<img src="${q.image}" style="max-width:280px; max-height:200px; margin:6px 0; display:block;">` : '';
+    const imgHTML = q.image ? `<figure class="exam-pdf__figure"><img src="${q.image}" alt=""></figure>` : '';
 
     return `
-      <div style="page-break-inside:avoid; margin-bottom:14px; padding:10px; border:1px solid #e5e5e5; border-radius:8px;">
-        <div style="font-size:11px; color:#666; margin-bottom:4px;">${q.subject} — Pregunta ${idx + 1}</div>
-        <div style="font-size:13px; margin-bottom:6px;">${renderMath(qText)}</div>
+      <li class="exam-pdf__exercise"><div class="exam-pdf__body">
+        <span class="exam-pdf__subject">${q.subject}</span>
+        <p>${renderMath(qText)}</p>
         ${imgHTML}
-        ${optionsHTML}
-      </div>`;
+        <ol class="exam-pdf__choices">${optionsHTML}</ol>
+      </div></li>`;
   }).join('');
 
-  return `<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+  return `<!DOCTYPE html><html lang="es" data-theme="light"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
 <base href="${origin}/">
 <title>Comprobante — ${student.name}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="${origin}/katex/katex.min.css">
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding:20px; color:#1a1a1a; font-size:13px; }
-  @page { margin:15mm 10mm; }
-  .header { text-align:center; margin-bottom:20px; padding-bottom:14px; border-bottom:2px solid #2c5282; }
-  .header h1 { font-size:20px; color:#2c5282; margin-bottom:4px; }
-  .stats { display:flex; justify-content:center; gap:24px; margin-top:10px; font-size:14px; }
-  .stat-box { text-align:center; }
-  .stat-val { font-size:28px; font-weight:700; }
-  .stat-label { font-size:11px; color:#666; }
-</style></head><body>
-<div class="header">
-  <h1>${room.title || 'Examen'}</h1>
-  <div style="font-size:15px; font-weight:600; margin-top:2px;">${student.name}</div>
-  <div style="font-size:12px; color:#666;">${room.group} — ${fecha}</div>
-  <div style="display:flex; justify-content:center; margin:16px 0 10px;">
-    <div style="width:160px; height:160px; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:700; background:${correct >= 95 ? '#dcfce7' : correct >= 51 ? '#fef9c3' : '#fef2f2'}; color:${correct >= 95 ? '#16a34a' : correct >= 51 ? '#a16207' : '#e53e3e'};">
-      <span style="font-size:46px; line-height:1;">${correct}</span>
-      <span style="font-size:13px; font-weight:500; opacity:0.8; margin-top:4px;">de ${total} aciertos</span>
-    </div>
-  </div>
-  <div class="stats">
-    <div class="stat-box"><div class="stat-val">${total > 0 ? Math.round(correct / total * 100) : 0}%</div><div class="stat-label">calificación</div></div>
-    <div class="stat-box"><div class="stat-val" style="font-size:20px; margin-top:6px;">${timeStr}</div><div class="stat-label">tiempo</div></div>
-  </div>
-</div>
-${topicBreakdownHTML}
-${questionsHTML}
+<style>${TERCIAL_PDF_CSS}</style></head><body>
+<main class="exam-pdf">
+
+  <header class="exam-pdf__hero">
+    <p class="exam-pdf__eyebrow">Comprobante de examen · ${room.group || 'Examen'}</p>
+    <h1 class="exam-pdf__title">${room.title || 'Examen'}</h1>
+    <p class="exam-pdf__meta"><strong>${student.name}</strong> · ${fecha} · Tiempo: ${timeStr}</p>
+  </header>
+
+  <section class="score-block">
+    <p class="score-block__eyebrow">Resultado</p>
+    <p class="score-block__big">${correct} <span style="color:var(--ink-300); font-style:normal; font-family:'IBM Plex Sans',sans-serif; font-size:24pt; font-weight:400;">/ ${total}</span></p>
+    <p class="score-block__sub"><strong>${pct}%</strong> · ${correct} de ${total} aciertos</p>
+  </section>
+
+  ${breakdownHTML}
+
+  <ol class="exam-pdf__exercises">${questionsHTML}</ol>
+
+</main>
 </body></html>`;
 }
 
@@ -562,14 +824,15 @@ function buildAnswerKeyHTML(room) {
     const letters = Object.keys(q.options);
     const optionsHTML = letters.map(letter => {
       const isCorrect = letter === correctAns;
-      let style = 'padding:6px 10px; margin:2px 0; border-radius:6px; font-size:12px;';
-      let marker = '';
-      if (isCorrect) { style += ' background:#dcfce7; border:1px solid #16a34a;'; marker = ' ✓'; }
-      else { style += ' background:#f8f8f8; border:1px solid #e5e5e5;'; }
+      const cls = isCorrect ? 'exam-pdf__choice exam-pdf__choice--correct' : 'exam-pdf__choice';
       const optImg = q.option_images && q.option_images[letter]
-        ? `<img src="${q.option_images[letter]}" style="max-width:140px;max-height:80px;margin-left:8px;vertical-align:middle;display:inline-block;">`
+        ? `<img src="${q.option_images[letter]}" alt="">`
         : '';
-      return `<div style="${style}"><b>${letter}.</b> ${renderMath(q.options[letter])}${optImg}${marker}</div>`;
+      const textHTML = isCorrect
+        ? `<span class="answer-final">${renderMath(q.options[letter])}${optImg}</span>`
+        : `${renderMath(q.options[letter])}${optImg}`;
+      const markerHTML = isCorrect ? '<span class="exam-pdf__choice__marker">Correcta</span>' : '';
+      return `<li class="${cls}"><span class="exam-pdf__choice__letter">${letter}.</span><span class="exam-pdf__choice__text">${textHTML}</span>${markerHTML}</li>`;
     }).join('');
 
     let qText = q.text || '';
@@ -582,36 +845,38 @@ function buildAnswerKeyHTML(room) {
         qText = readingPart.substring(0, 300) + '\n\n[...]\n\n' + questionPart;
       }
     }
-    const imgHTML = q.image ? `<img src="${q.image}" style="max-width:280px; max-height:200px; margin:6px 0; display:block;">` : '';
+    const imgHTML = q.image ? `<figure class="exam-pdf__figure"><img src="${q.image}" alt=""></figure>` : '';
 
     return `
-      <div style="page-break-inside:avoid; margin-bottom:14px; padding:10px; border:1px solid #e5e5e5; border-radius:8px;">
-        <div style="font-size:11px; color:#666; margin-bottom:4px;">${q.subject} — Pregunta ${idx + 1}</div>
-        <div style="font-size:13px; margin-bottom:6px;">${renderMath(qText)}</div>
+      <li class="exam-pdf__exercise"><div class="exam-pdf__body">
+        <span class="exam-pdf__subject">${q.subject}</span>
+        <p>${renderMath(qText)}</p>
         ${imgHTML}
-        ${optionsHTML}
-      </div>`;
+        <ol class="exam-pdf__choices">${optionsHTML}</ol>
+      </div></li>`;
   }).join('');
 
-  return `<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+  return `<!DOCTYPE html><html lang="es" data-theme="light"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
 <base href="${origin}/">
 <title>Clave de respuestas — ${room.title || 'Examen'}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="${origin}/katex/katex.min.css">
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding:20px; color:#1a1a1a; font-size:13px; }
-  @page { margin:15mm 10mm; }
-  .header { text-align:center; margin-bottom:20px; padding-bottom:14px; border-bottom:2px solid #2c5282; }
-  .header h1 { font-size:20px; color:#2c5282; margin-bottom:4px; }
-  .header h2 { font-size:16px; color:#16a34a; margin-top:10px; font-weight:600; }
-</style></head><body>
-<div class="header">
-  <h1>${room.title || 'Examen'}</h1>
-  <div style="font-size:12px; color:#666;">${room.group} — ${fecha}</div>
-  <h2>Clave de respuestas</h2>
-</div>
-${questionsHTML}
+<style>${TERCIAL_PDF_CSS}</style></head><body>
+<main class="exam-pdf">
+
+  <header class="exam-pdf__hero">
+    <p class="exam-pdf__eyebrow">Clave · profesor · ${room.group || 'Examen'}</p>
+    <h1 class="exam-pdf__title">${room.title || 'Examen'} — <em>Respuestas</em></h1>
+    <p class="exam-pdf__meta">${fecha} · ${questions.length} preguntas</p>
+  </header>
+
+  <ol class="exam-pdf__exercises">${questionsHTML}</ol>
+
+</main>
 </body></html>`;
 }
 
