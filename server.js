@@ -196,6 +196,15 @@ app.get('/api/version', (_req, res) => {
   res.json({ branch: GIT_BRANCH });
 });
 
+// DEBUG: devuelve el HTML del comprobante de la primera persona enviada en la sala.
+app.get('/api/debug-comprobante/:roomCode', (req, res) => {
+  const room = rooms.get(req.params.roomCode);
+  if (!room) return res.status(404).send('Sala no encontrada');
+  const student = Object.values(room.students).find(s => s.submitted);
+  if (!student) return res.status(404).send('No hay estudiante con entrega en esta sala');
+  res.type('html').send(buildComprobanteHTML(room, student));
+});
+
 app.post('/api/upload-exam', (req, res) => {
   try {
     const filename = req.headers['x-exam-filename'] || null;
@@ -921,6 +930,8 @@ function enqueueComprobantePDF(room, student) {
       const browser = await getPdfBrowser();
       page = await browser.newPage();
       const html = buildComprobanteHTML(room, student);
+      // DEBUG: dump del HTML para inspección
+      try { fs.writeFileSync('/tmp/last-comprobante.html', html); } catch(e) {}
       await page.setContent(html, { waitUntil: 'networkidle0', timeout: 30000 });
       const dateStr = (room.date || new Date().toISOString().split('T')[0]).replace(/-/g, '');
       const folder = path.join(__dirname, 'comprobantes', `${room.roomCode}_${dateStr}`);
