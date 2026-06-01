@@ -32,6 +32,7 @@
 <script src="/socket.io/socket.io.js"></script>
 <link rel="stylesheet" href="/katex.min.css?v=2">
 <script src="/katex.min.js?v=2" onerror="document.write('<script src=\'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js\'><\/script>')"></script>
+<script src="/shared/markdown-render.js?v=1"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" defer></script>
 <style>
@@ -176,6 +177,13 @@
     --color-border:        var(--crema-600);
     --color-border-strong: var(--crema-700);
     --color-border-focus:  var(--accent-conac);
+
+    /* ── Markdown tables (compartido con server PDF vía /shared/markdown-render.js) ── */
+    --md-text:     var(--color-text-primary);
+    --md-border:   var(--color-border);
+    --md-th-bg:    var(--color-bg-elevated);
+    --md-table-bg: var(--color-bg-raised);
+    --md-font:     var(--font-family-body);
 
     --color-state-ok:    var(--state-ok);    --color-state-ok-bg:   var(--state-ok-bg);
     --color-state-err:   var(--state-err);   --color-state-err-bg:  var(--state-err-bg);
@@ -1766,27 +1774,9 @@ function appAlert(options) {
 <script>
 const socket = io({ reconnection: true, reconnectionDelay: 1000, reconnectionAttempts: Infinity });
 
-function renderInlineMath(text) {
-  var parts = text.split(/(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$)/g);
-  return parts.map(function(p) {
-    var isDisplay = p.indexOf('$$') === 0 && p.lastIndexOf('$$') === p.length - 2 && p.length >= 4;
-    var isInline = !isDisplay && p.length >= 2 && p.charAt(0) === '$' && p.charAt(p.length - 1) === '$' && p.indexOf('\n') === -1;
-    if (isDisplay || isInline) {
-      var inner = isDisplay ? p.slice(2, -2) : p.slice(1, -1);
-      if (typeof katex !== 'undefined') {
-        try { return katex.renderToString(inner, { throwOnError: false, displayMode: false, macros: { "\\sen": "\\operatorname{sen}", "\\tg": "\\operatorname{tg}" } }); } catch(e) {}
-      }
-      return inner.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    }
-    return p.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-      .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
-      .replace(/&lt;br\s*\/?&gt;/g, '<br>')
-      .replace(/&lt;img\s+([^&]*?)\/?&gt;/g, '<img $1>')
-      .replace(/_{3,}/g, m => `<span style="display:inline-block;border-bottom:1px solid currentColor;width:${m.length * 0.5}em;height:1.5px;background-color:currentColor;vertical-align:0.18em;"></span>`)
-      .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
-      .replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g, '$1<b>$2</b>');
-  }).join('');
-}
+// Renderers de markdown/KaTeX/tablas: compartidos con el server PDF.
+// Definidos en /shared/markdown-render.js para evitar duplicación.
+const { renderInlineMath, renderMarkdownTable, renderMath } = window.MdRender;
 
 // Cache + fetch de SVGs para inlinearlos en lugar de usar <img src>.
 // Necesario para que el SVG herede color del tema (currentColor).
@@ -1836,142 +1826,8 @@ async function loadInlineSVG(url) {
   }
 }
 
-function renderMarkdownTable(block) {
-  var lines = block.split('\n').map(function(l){ return l.trim(); }).filter(function(l){ return l.length > 0; });
-  if (lines.length < 2) return block;
-  var parseCells = function(line) {
-    return line.replace(/^\||\|$/g, '').split('|').map(function(c){ return c.trim(); });
-  };
-  var header = parseCells(lines[0]);
-  var separator = parseCells(lines[1]);
-  var body = lines.slice(2).map(parseCells);
-
-  // Alineación por columna desde la fila separadora del markdown.
-  // :-  = left, :-: = center, -: = right, - = default (center, convención ECOEMS).
-  var aligns = separator.map(function(s) {
-    var t = s.trim();
-    var startsCol = t.charAt(0) === ':';
-    var endsCol = t.charAt(t.length - 1) === ':';
-    if (startsCol && endsCol) return 'center';
-    if (endsCol) return 'right';
-    if (startsCol) return 'left';
-    return 'center';
-  });
-
-  // Si todos los cells del header están vacíos, omitimos el <thead>.
-  var headerless = header.every(function(c){ return c === ''; });
-  // Si hay celdas vacías en el cuerpo, omitimos las líneas horizontales entre
-  // filas (las verticales y el separador del header se mantienen).
-  var hasEmptyBodyCells = body.some(function(row){ return row.some(function(c){ return c === ''; }); });
-
-  // Detectar columnas con "trailing empty cells": items contiguos al principio
-  // seguidos de celdas vacías al final. En esas columnas fusionamos los items
-  // en una sola celda con rowspan que abarca todo el body, y los centramos
-  // verticalmente (visualmente queda como un grupo centrado en lugar de
-  // alineado arriba con espacio vacío abajo).
-  var nCols = aligns.length;
-  var nRows = body.length;
-  var mergedCol = [];
-  for (var ci = 0; ci < nCols; ci++) {
-    var items = [];
-    var sawEmpty = false;
-    var skipMerge = false;
-    for (var ri = 0; ri < nRows; ri++) {
-      var v = body[ri][ci];
-      if (v === '') sawEmpty = true;
-      else {
-        if (sawEmpty) { skipMerge = true; break; } // empty intercalado: no fusionar
-        items.push(v);
-      }
-    }
-    mergedCol[ci] = (!skipMerge && sawEmpty && items.length > 0) ? items : null;
-  }
-
-  function makeCellStyle(i, isHeader) {
-    var s = 'padding:10px 14px; font-variant-numeric:tabular-nums; color:var(--color-text-primary); text-align:' + aligns[i] + '; vertical-align:middle;';
-    if (i > 0) s += ' border-left:1px solid var(--color-border);';
-    if (!isHeader && !hasEmptyBodyCells) {
-      s += ' border-bottom:1px solid var(--color-border);';
-    }
-    return s;
-  }
-  function makeHeadStyle(i) {
-    // Headers siempre centrados (convención editorial), independientemente
-    // de la alineación del body especificada en el markdown.
-    var base = makeCellStyle(i, true).replace(/text-align:[^;]+;/, 'text-align:center;');
-    return base + ' background-color:var(--color-bg-elevated); font-weight:500; letter-spacing:0.02em; border-bottom:1px solid var(--color-border);';
-  }
-  var tableStyle = 'border-collapse:collapse; margin:14px 0; font-size:inherit; font-family:var(--font-family-body); background-color:var(--color-bg-raised); border:1px solid var(--color-border);';
-
-  var thead = headerless ? '' :
-    '<thead><tr>' + header.map(function(c, i){ return '<th style="'+makeHeadStyle(i)+'">'+renderInlineMath(c)+'</th>'; }).join('') + '</tr></thead>';
-
-  var bodyRowsHtml = body.map(function(row, ri) {
-    var cells = row.map(function(c, i) {
-      if (mergedCol[i]) {
-        if (ri === 0) {
-          // Render una sola vez como rowspan; vertical-align:middle centra
-          // el bloque de items verticalmente en la altura combinada.
-          var inner = mergedCol[i].map(function(it){
-            return '<div>' + renderInlineMath(it) + '</div>';
-          }).join('<div style="height:22px"></div>');
-          return '<td rowspan="' + nRows + '" style="' + makeCellStyle(i, false) + '">' + inner + '</td>';
-        }
-        return ''; // las demás filas no renderizan esta columna (cubierta por rowspan)
-      }
-      return '<td style="' + makeCellStyle(i, false) + '">' + renderInlineMath(c) + '</td>';
-    }).join('');
-    return '<tr>' + cells + '</tr>';
-  }).join('');
-
-  return '<table style="'+tableStyle+'">'+thead+'<tbody>'+bodyRowsHtml+'</tbody></table>';
-}
-
-function renderMath(text) {
-  if (!text) return '';
-  try {
-    // Protect escaped \$ (literal dollar signs) from LaTeX parsing
-    text = text.replace(/\\\$/g, '\x00DOLLAR\x00');
-    // Extract Markdown tables before any other processing
-    var tables = [];
-    text = text.replace(/(?:^|\n)(\|[^\n]+\|[ \t]*\n\|[-:\s|]+\|[ \t]*\n(?:\|[^\n]+\|[ \t]*(?:\n|$))+)/g, function(match, block) {
-      var html = renderMarkdownTable(block);
-      var idx = tables.push(html) - 1;
-      return '\n\x00TBL' + idx + '\x00\n';
-    });
-    var parts = text.split(/(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$)/g);
-    var out = parts.map(function(part) {
-      var isDisplay = part.indexOf('$$') === 0 && part.lastIndexOf('$$') === part.length - 2 && part.length >= 4;
-      var isInline = !isDisplay && part.length >= 2 && part.charAt(0) === '$' && part.charAt(part.length - 1) === '$' && part.indexOf('\n') === -1;
-      if (isDisplay || isInline) {
-        var inner = isDisplay ? part.slice(2, -2) : part.slice(1, -1);
-        if (typeof katex !== 'undefined') {
-          try { return katex.renderToString(inner, { throwOnError: false, displayMode: isDisplay, macros: { "\\sen": "\\operatorname{sen}", "\\tg": "\\operatorname{tg}" } }); } catch(e) {}
-        }
-        return inner.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-      }
-      if (/<img\s/.test(part)) return part;
-      return part
-        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-        .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
-        // Fill-in-the-blank: 3+ underscores seguidos → línea continua justo
-        // sobre la baseline. Color del mismo token que usa el texto.
-        // Ancho: 0.85em por underscore (más underscores en el JSON = línea
-        // más larga).
-        .replace(/_{3,}/g, function(m){
-          var w = (m.length * 0.85).toFixed(2);
-          return '<span style="display:inline-block; width:' + w + 'em; height:1.5px; background-color:var(--color-text-primary); vertical-align:0; margin:0 0.18em;"></span>';
-        })
-        .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
-        .replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g, '$1<i>$2</i>')
-        .replace(/\n/g, '<br>');
-    }).join('');
-    out = out.replace(/(?:<br>)?\x00TBL(\d+)\x00(?:<br>)?/g, function(m, i){ return tables[Number(i)]; });
-    return out.replace(/\x00DOLLAR\x00/g, '$');
-  } catch(e) {
-    return text.replace(/\$\$/g, '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\x00DOLLAR\x00/g, '$');
-  }
-}
+// renderMarkdownTable y renderMath viven en /shared/markdown-render.js
+// (compartido con server.js para que el PDF y el examen rendereen igual).
 
 let state = { questions: [], answers: {}, answerKey: {}, explanations: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null, clockOffset: 0 };
 
@@ -2112,8 +1968,10 @@ document.getElementById('nameSelect').addEventListener('keydown', (e) => {
     trigger.setAttribute('aria-expanded', String(o));
     panel.hidden = !o;
     if (o) {
+      // Si hay opción ya seleccionada, highlighteamos esa. Si no, abrimos SIN
+      // ningún item highlighteado — la primera flecha abajo elige el primero.
       const sel = [...panel.children].findIndex(li => li.getAttribute('aria-selected') === 'true');
-      activeIdx = sel >= 0 ? sel : 0;
+      activeIdx = sel;
       updateActive();
     }
   }
@@ -2147,11 +2005,21 @@ document.getElementById('nameSelect').addEventListener('keydown', (e) => {
     if (!wrap.contains(e.target)) setOpen(false);
   });
   trigger.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); setOpen(true); }
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (!isOpen()) setOpen(true);
+    }
     else if (e.key === 'Enter' && !isOpen()) {
       if (native.value && !document.getElementById('joinBtn').disabled) {
         e.preventDefault();
         joinExam();
+      } else {
+        // Detener propagación: si solo hacemos preventDefault, el handler global
+        // del document ve el mismo Enter con panel YA abierto y selecciona la
+        // primera opción + cierra el panel inmediatamente.
+        e.preventDefault();
+        e.stopPropagation();
+        setOpen(true);
       }
     } else if (e.key === 'Escape' && isOpen()) {
       e.preventDefault(); setOpen(false);
@@ -2177,6 +2045,24 @@ document.getElementById('nameSelect').addEventListener('keydown', (e) => {
       e.preventDefault(); setOpen(false); trigger.focus();
     }
   });
+  // Enter "global" en joinScreen: si el panel está cerrado y no hay nombre
+  // seleccionado, abre la lista aunque el foco no esté en el trigger
+  // (ej. después de hacer click en blanco). El handler propio del trigger se
+  // ejecuta primero y hace stopPropagation si abre el panel — solo llegamos
+  // aquí cuando el foco está en otro lado.
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter') return;
+    if (isOpen()) return;
+    if (native.value) return;
+    if (e.target === trigger) return;
+    const joinScreen = document.getElementById('joinScreen');
+    if (!joinScreen || !joinScreen.classList.contains('active')) return;
+    const af = document.activeElement;
+    if (af && (af.tagName === 'INPUT' || af.tagName === 'TEXTAREA' || af.tagName === 'SELECT')) return;
+    e.preventDefault();
+    setOpen(true);
+    trigger.focus();
+  });
 
   // API pública para que populateNameDropdown / código de auto-rejoin la usen.
   wrap.__populate = function(students) {
@@ -2199,6 +2085,9 @@ document.getElementById('nameSelect').addEventListener('keydown', (e) => {
     if (!native.value || ![...native.options].some(o => o.value === native.value)) {
       setValue('', false);
     }
+    // No movemos el foco al trigger automáticamente — queda sin highlight visual.
+    // El handler global de Enter en joinScreen (más abajo) abre la lista igual
+    // sin necesidad de que el trigger tenga foco.
   };
   wrap.__setValue = function(v) { setValue(v, false); };
 })();
