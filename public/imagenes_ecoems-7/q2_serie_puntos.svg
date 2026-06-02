@@ -1,0 +1,39 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="360" height="120" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Serie de puntos: patrón (n+1)² - 1 (cuadrado de lado n+1 menos la esquina inferior derecha).
+     Posición 1: 2×2 - 1 = 3 puntos.
+     Posición 2: 3×3 - 1 = 8 puntos.
+     Posición 3: 4×4 - 1 = 15 puntos.
+     Espaciado: 18px centro-a-centro · Radio: 5 · Centros verticales: 40. -->
+
+  <!-- Figura 1: 2×2 menos esquina inferior derecha (3 puntos) -->
+  <circle cx="11" cy="31" r="5"/>
+  <circle cx="29" cy="31" r="5"/>
+  <circle cx="11" cy="49" r="5"/>
+
+  <!-- Figura 2: 3×3 menos esquina inferior derecha (8 puntos) -->
+  <circle cx="82"  cy="22" r="5"/>
+  <circle cx="100" cy="22" r="5"/>
+  <circle cx="118" cy="22" r="5"/>
+  <circle cx="82"  cy="40" r="5"/>
+  <circle cx="100" cy="40" r="5"/>
+  <circle cx="118" cy="40" r="5"/>
+  <circle cx="82"  cy="58" r="5"/>
+  <circle cx="100" cy="58" r="5"/>
+
+  <!-- Figura 3: 4×4 menos esquina inferior derecha (15 puntos) -->
+  <circle cx="173" cy="13" r="5"/>
+  <circle cx="191" cy="13" r="5"/>
+  <circle cx="209" cy="13" r="5"/>
+  <circle cx="227" cy="13" r="5"/>
+  <circle cx="173" cy="31" r="5"/>
+  <circle cx="191" cy="31" r="5"/>
+  <circle cx="209" cy="31" r="5"/>
+  <circle cx="227" cy="31" r="5"/>
+  <circle cx="173" cy="49" r="5"/>
+  <circle cx="191" cy="49" r="5"/>
+  <circle cx="209" cy="49" r="5"/>
+  <circle cx="227" cy="49" r="5"/>
+  <circle cx="173" cy="67" r="5"/>
+  <circle cx="191" cy="67" r="5"/>
+  <circle cx="209" cy="67" r="5"/>
+</svg>

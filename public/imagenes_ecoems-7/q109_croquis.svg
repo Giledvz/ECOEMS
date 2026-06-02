@@ -1,0 +1,57 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" width="380" height="338" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Croquis urbano: representación esquemática de calles con nombres.
+     Grid de 4×3 manzanas (cuadras). Calles verticales: x=40, 120, 200, 280;
+     calles horizontales: y=40, 120, 200, 280.
+     Tres bloques destacados (sombreados): JUÁREZ 222 (arriba-der), Centro de
+     Tlalpan (centro-der), CASA CHATA (centro-izq). -->
+
+  <!-- Manzanas (rectángulos con borde) -->
+  <g stroke="currentColor" stroke-width="1.4" fill="none">
+    <rect x="40"  y="40"  width="80" height="80"/>
+    <rect x="120" y="40"  width="80" height="80"/>
+    <rect x="200" y="40"  width="80" height="80"/>
+    <rect x="40"  y="120" width="80" height="80"/>
+    <rect x="120" y="120" width="80" height="80"/>
+    <rect x="200" y="120" width="80" height="80"/>
+    <rect x="40"  y="200" width="80" height="80"/>
+    <rect x="120" y="200" width="80" height="80"/>
+    <rect x="200" y="200" width="80" height="80"/>
+  </g>
+
+  <!-- Bloques destacados (rellenos con currentColor + opacity) -->
+  <g fill="currentColor" fill-opacity="0.30" stroke="currentColor" stroke-width="1.4">
+    <rect x="200" y="40"  width="80" height="40"/>
+    <rect x="200" y="160" width="80" height="40"/>
+    <rect x="40"  y="160" width="80" height="40"/>
+  </g>
+
+  <!-- Etiquetas de calles -->
+  <g font-size="11" text-anchor="middle">
+    <!-- Calles horizontales: nombre al lado del eje de calle -->
+    <text x="160" y="32">Juárez</text>
+    <text x="160" y="112">Morelos</text>
+    <text x="160" y="192">Hidalgo</text>
+    <text x="160" y="296">Allende</text>
+  </g>
+
+  <!-- Calle vertical (Calz. de Tlalpan) — texto rotado 90° -->
+  <text x="20" y="160" font-size="11" text-anchor="middle"
+        transform="rotate(-90 20 160)">Calz. de Tlalpan</text>
+
+  <!-- Etiquetas de los bloques destacados -->
+  <g font-size="10" text-anchor="middle" font-weight="bold">
+    <text x="240" y="66">JUÁREZ 222</text>
+    <text x="240" y="186">Centro de Tlalpan</text>
+    <text x="80"  y="186">CASA CHATA</text>
+  </g>
+
+  <!-- Rosa de los vientos (norte arriba a la derecha) -->
+  <g transform="translate(320, 305)">
+    <circle r="10" fill="none" stroke="currentColor" stroke-width="1"/>
+    <polygon points="0,-10 -3,2 0,0 3,2" fill="currentColor"/>
+    <text x="0" y="-13" font-size="10" text-anchor="middle">N</text>
+  </g>
+
+  <!-- Atribución -->
+  <text x="350" y="318" font-size="9" text-anchor="end" font-style="italic">(Social, 2015)</text>
+</svg>

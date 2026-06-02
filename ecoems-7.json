@@ -42,8 +42,8 @@
             "id": 2,
             "topic": "HM.2",
             "topic_name": "Sucesiones — figuras (puntos)",
-            "image_pending": true,
-            "text": "Con base en la serie, ¿cuántos puntos tendrá la posición ocho?\n\n[Figura: serie de puntos en patrón creciente]",
+            "image": "/imagenes_ecoems-7/q2_serie_puntos.svg",
+            "text": "Con base en la serie, ¿cuántos puntos tendrá la posición ocho?",
             "options": {
               "A": "45",
               "B": "64",
@@ -83,8 +83,8 @@
             "id": 5,
             "topic": "HM.5",
             "topic_name": "Sucesiones — distribución circular",
-            "image_pending": true,
-            "text": "¿Cuál es el número que falta?\n\n[Figura: círculo dividido en 6 sectores con: ?, 15, 16, 36, 45, 48; los opuestos cumplen razón ×3]",
+            "image": "/imagenes_ecoems-7/q5_circulo_6_sectores.svg",
+            "text": "¿Cuál es el número que falta?",
             "options": {
               "A": "12",
               "B": "18",
@@ -97,8 +97,8 @@
             "id": 6,
             "topic": "HM.6",
             "topic_name": "Sucesiones — pares (top y abajo)",
-            "image_pending": true,
-            "text": "¿Qué números deben aparecer en la última figura?\n\n[Figuras: óvalos arriba con 2, 5, 8, ? y triángulos abajo con 8, 20, 32, ?]",
+            "image": "/imagenes_ecoems-7/q6_pares_ovalo_triangulo.svg",
+            "text": "¿Qué números deben aparecer en la última figura?",
             "options": {
               "A": "11, 44",
               "B": "13, 40",
@@ -150,8 +150,8 @@
             "id": 10,
             "topic": "HM.10",
             "topic_name": "Conteo — cuadrados en figura",
-            "image_pending": true,
-            "text": "¿Cuántos cuadrados hay en la siguiente figura?\n\n[Figura: cuadrado con diagonales y mediatrices que forman patrón en estrella]",
+            "image": "/imagenes_ecoems-7/q10_cuadrado_estrella.svg",
+            "text": "¿Cuántos cuadrados hay en la siguiente figura?",
             "options": {
               "A": "5",
               "B": "6",
@@ -315,8 +315,8 @@
             "id": 22,
             "topic": "M.6",
             "topic_name": "Geometría — ángulos en triángulo",
-            "image_pending": true,
-            "text": "De acuerdo con la figura, contesta los siguientes reactivos.\n\n[Figura: triángulo ABC con ángulos x+10°, x+13° en la base y 3x+7° en el vértice C; ángulo exterior y]\n\n¿Cuál es el valor de x?",
+            "image": "/imagenes_ecoems-7/q22_triangulo_angulos.svg",
+            "text": "De acuerdo con la figura, contesta los siguientes reactivos.\n\n¿Cuál es el valor de x?",
             "options": {
               "A": "60°",
               "B": "50°",
@@ -355,8 +355,8 @@
             "id": 25,
             "topic": "M.9",
             "topic_name": "Geometría — Pitágoras (frente de casa)",
-            "image_pending": true,
-            "context": "Analiza el frente de la casa y las dimensiones de las figuras que la componen, contesta los reactivos 25 y 26.\n\n[Figura: frente de casa con techo triangular cuya hipotenusa mide $\\sqrt{404}\\,u$ y altura 2u; tres ventanas de 1u × 2u; altura del cuerpo varía entre 3u y 4u]",
+            "image": "/imagenes_ecoems-7/q25_frente_casa.svg",
+            "context": "Analiza el frente de la casa y las dimensiones de las figuras que la componen, contesta los reactivos 25 y 26.",
             "text": "¿Cuál es la longitud de la base del triángulo?",
             "options": {
               "A": "17 u",
@@ -370,8 +370,8 @@
             "id": 26,
             "topic": "M.10",
             "topic_name": "Geometría — área (frente de casa)",
-            "image_pending": true,
-            "context": "Analiza el frente de la casa y las dimensiones de las figuras que la componen, contesta los reactivos 25 y 26.\n\n[Figura: frente de casa con techo triangular cuya hipotenusa mide $\\sqrt{404}\\,u$ y altura 2u; tres ventanas de 1u × 2u; altura del cuerpo varía entre 3u y 4u]",
+            "image": "/imagenes_ecoems-7/q25_frente_casa.svg",
+            "context": "Analiza el frente de la casa y las dimensiones de las figuras que la componen, contesta los reactivos 25 y 26.",
             "text": "¿Cuál es el área total del frente de la casa?",
             "options": {
               "A": "$70\\,u^2$",
@@ -432,12 +432,12 @@
             "topic_name": "Transmisión de calor",
             "text": "La conducción, ___ y ___ son las formas de transmisión de calor.",
             "options": {
-              "A": "temperatura - propagación",
-              "B": "propagación - convección",
-              "C": "convección - radiación",
-              "D": "reflexión - temperatura"
+              "A": "convección - radiación",
+              "B": "convección - frotamiento",
+              "C": "radiación - inducción",
+              "D": "inducción - frotamiento"
             },
-            "answer": "C"
+            "answer": "A"
           },
           {
             "id": 31,
@@ -456,13 +456,13 @@
             "id": 32,
             "topic": "F.4",
             "topic_name": "Ondas — componentes",
-            "image_pending": true,
-            "text": "Relaciona los números de la imagen de onda con sus componentes.\n\n[Figura: onda senoidal con números 1, 2, 3, 4, 5, 6 etiquetando cresta, amplitud, longitud, valle, nodo, ciclo]\n\nComponentes: a) Periodo, b) Longitud de onda, c) Cresta, d) Valle, e) Amplitud, f) Ciclo, g) Nodo",
+            "image": "/imagenes_ecoems-7/q32_onda_componentes.svg",
+            "text": "Relaciona los números de la imagen de onda con sus componentes.",
             "options": {
-              "A": "1a, 2d, 3b, 4c, 5g, 6f",
-              "B": "1b, 2g, 3f, 4d, 5e, 6c",
-              "C": "1d, 2e, 3a, 4f, 5b, 6g",
-              "D": "1e, 2c, 3d, 4g, 5a, 6b"
+              "A": "1b, 2g, 3f, 4d, 5e, 6c",
+              "B": "1a, 2d, 3b, 4g, 5c, 6e",
+              "C": "1b, 2e, 3a, 4c, 5g, 6d",
+              "D": "1f, 2c, 3b, 4d, 5e, 6g"
             },
             "answer": "A"
           },
@@ -536,9 +536,9 @@
             "id": 38,
             "topic": "F.10",
             "topic_name": "Gráfica v vs t — velocidad constante",
-            "image_pending": true,
-            "context": "El comportamiento de un automovilista se muestra en la siguiente gráfica.\n\n[Figura: gráfica velocidad vs. tiempo con puntos 1-7 marcando segmentos]",
-            "text": "En cuáles puntos de la gráfica el automóvil se desplaza a velocidad constante de:",
+            "image": "/imagenes_ecoems-7/q38_grafica_v_t.svg",
+            "context": "El comportamiento de un automovilista se muestra en la siguiente gráfica.",
+            "text": "¿En cuál de los siguientes tramos el automóvil se desplaza a velocidad constante?",
             "options": {
               "A": "1 - 2",
               "B": "3 - 4",
@@ -551,9 +551,9 @@
             "id": 39,
             "topic": "F.11",
             "topic_name": "Gráfica v vs t — aceleración",
-            "image_pending": true,
-            "context": "El comportamiento de un automovilista se muestra en la siguiente gráfica.\n\n[Figura: gráfica velocidad vs. tiempo con puntos 1-7 marcando segmentos]",
-            "text": "En cuáles puntos de la gráfica el automóvil acelera",
+            "image": "/imagenes_ecoems-7/q38_grafica_v_t.svg",
+            "context": "El comportamiento de un automovilista se muestra en la siguiente gráfica.",
+            "text": "¿En cuál de los siguientes tramos el automóvil acelera?",
             "options": {
               "A": "1 - 2",
               "B": "2 - 3",
@@ -1381,7 +1381,7 @@
             "text": "Durante el periodo entre guerras (1920/1939), en Italia, Alemania y España surge el ___ como un movimiento político y social alternativo.",
             "options": {
               "A": "fascismo",
-              "B": "fabianismo",
+              "B": "comunismo",
               "C": "absolutismo",
               "D": "federalismo"
             },
@@ -1514,8 +1514,8 @@
             "id": 109,
             "topic": "G.5",
             "topic_name": "Escala de mapas — local",
-            "image_pending": true,
-            "text": "En el siguiente croquis, ¿qué tipo de escala se representa?\n\n[Figura: croquis urbano con calles Juárez, Tlalpan, Hidalgo, Morelos, Casa Chata, Allende]",
+            "image": "/imagenes_ecoems-7/q109_croquis.svg",
+            "text": "En el siguiente croquis, ¿qué tipo de escala se representa?",
             "options": {
               "A": "Mundial",
               "B": "Nacional",

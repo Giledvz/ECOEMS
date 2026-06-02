@@ -1,0 +1,68 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="-50 0 600 220" width="780" height="286" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Onda senoidal extendida hacia la IZQUIERDA del origen para liberar espacio
+     al "4". Ahora la onda tiene un valle extra en x=10 (a la izquierda del
+     eje Y), perfecto para etiquetar.
+     Eje X de x=-40 a x=370. Eje Y en x=40.
+     Crestas en (70,60), (190,60), (310,60). Valles en (10,160), (130,160), (250,160).
+     Nodos en x=-20, 40, 100, 160, 220, 280, 340.
+     Amplitud visual 50 px. -->
+
+  <!-- Ejes con flechas -->
+  <g stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round">
+    <line x1="-40" y1="110" x2="370" y2="110"/>
+    <polygon points="370,110 364,107 364,113" fill="currentColor" stroke="none"/>
+    <line x1="40" y1="180" x2="40" y2="40"/>
+    <polygon points="40,40 37,46 43,46" fill="currentColor" stroke="none"/>
+  </g>
+
+  <!-- Onda: medio ciclo extra a la izquierda (valle en x=10) + 2.5 ciclos a la derecha -->
+  <path d="M -20 110 Q 10 210 40 110 Q 70 10 100 110 Q 130 210 160 110 Q 190 10 220 110 Q 250 210 280 110 Q 310 10 340 110"
+        stroke="currentColor" stroke-width="1.8" fill="none"/>
+
+  <!-- Distancia eje-Y a fin del primer ciclo etiquetada con "3" (Ciclo).
+       Un ciclo completo va de un nodo al siguiente nodo equivalente:
+       de (40,110) origen hasta (160,110) primer nodo equivalente. -->
+  <path d="M 40 168 L 40 180 L 160 180 L 160 168"
+        stroke="currentColor" stroke-width="1.2" fill="none"/>
+  <text x="100" y="196" font-size="13" text-anchor="middle">3</text>
+
+  <!-- Distancia cresta-a-cresta etiquetada con "1" (Periodo).
+       Crestas en x=70 y x=190. Corchete arriba. -->
+  <path d="M 70 52 L 70 40 L 190 40 L 190 52"
+        stroke="currentColor" stroke-width="1.2" fill="none"/>
+  <text x="130" y="32" font-size="13" text-anchor="middle">1</text>
+
+  <!-- Amplitud etiquetada con "5".
+       Flecha doble vertical de la cresta (y=60) al eje X (y=110) en x=190. -->
+  <line x1="190" y1="60" x2="190" y2="110" stroke="currentColor" stroke-width="1.2"/>
+  <polygon points="190,60 187,66 193,66" fill="currentColor"/>
+  <polygon points="190,110 187,104 193,104" fill="currentColor"/>
+  <text x="197" y="89" font-size="13">5</text>
+
+  <!-- Etiqueta "6" señalando la cresta extra (310,60). Flecha vertical limpia. -->
+  <line x1="310" y1="38" x2="310" y2="51" stroke="currentColor" stroke-width="1.2"/>
+  <polygon points="310,54 307,49 313,49" fill="currentColor"/>
+  <text x="310" y="32" font-size="13" text-anchor="middle">6</text>
+
+  <!-- Etiqueta "4" señalando el valle NUEVO a la izquierda del origen (10,160).
+       Flecha simétrica apuntando NE al valle (punta a 2 px de separación). -->
+  <line x1="-8" y1="180" x2="5" y2="167" stroke="currentColor" stroke-width="1.2"/>
+  <polygon points="8,164 2,165 5,170" fill="currentColor"/>
+  <text x="-12" y="186" font-size="13" text-anchor="end">4</text>
+
+  <!-- Etiqueta "2" señalando el nodo en x=280, texto del lado derecho. -->
+  <line x1="300" y1="130" x2="287" y2="117" stroke="currentColor" stroke-width="1.2"/>
+  <polygon points="283,113 289,115 286,119" fill="currentColor"/>
+  <text x="303" y="134" font-size="13">2</text>
+
+  <!-- Componentes (incisos a-g) a la derecha de la gráfica, en columna sin tabla -->
+  <g font-size="13">
+    <text x="420" y="60">a) Periodo</text>
+    <text x="420" y="80">b) Longitud de onda</text>
+    <text x="420" y="100">c) Cresta</text>
+    <text x="420" y="120">d) Valle</text>
+    <text x="420" y="140">e) Amplitud</text>
+    <text x="420" y="160">f) Ciclo</text>
+    <text x="420" y="180">g) Nodo</text>
+  </g>
+</svg>

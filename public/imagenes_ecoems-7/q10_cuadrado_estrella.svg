@@ -1,0 +1,31 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="280" height="280" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Cuadrado de lado 160 (vertices: (20,20)–(180,180), centro (100,100)).
+     Mediatrices vertical y horizontal por el centro → 4 cuadrantes pequeños.
+     Cada cuadrante tiene 2 diagonales formando una X interna.
+     Total de cuadrados visibles: 1 grande + 4 cuadrantes = 5 (respuesta A). -->
+
+  <g stroke="currentColor" stroke-width="1.6" fill="none">
+    <!-- Cuadrado externo -->
+    <rect x="20" y="20" width="160" height="160"/>
+
+    <!-- Mediatrices -->
+    <line x1="100" y1="20"  x2="100" y2="180"/>
+    <line x1="20"  y1="100" x2="180" y2="100"/>
+
+    <!-- Diagonales internas del cuadrante superior-izquierdo -->
+    <line x1="20"  y1="20"  x2="100" y2="100"/>
+    <line x1="20"  y1="100" x2="100" y2="20"/>
+
+    <!-- Diagonales internas del cuadrante superior-derecho -->
+    <line x1="100" y1="20"  x2="180" y2="100"/>
+    <line x1="100" y1="100" x2="180" y2="20"/>
+
+    <!-- Diagonales internas del cuadrante inferior-izquierdo -->
+    <line x1="20"  y1="100" x2="100" y2="180"/>
+    <line x1="20"  y1="180" x2="100" y2="100"/>
+
+    <!-- Diagonales internas del cuadrante inferior-derecho -->
+    <line x1="100" y1="100" x2="180" y2="180"/>
+    <line x1="100" y1="180" x2="180" y2="100"/>
+  </g>
+</svg>

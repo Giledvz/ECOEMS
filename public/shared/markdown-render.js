@@ -140,7 +140,10 @@
         var isDisplay = part.indexOf('$$') === 0 && part.lastIndexOf('$$') === part.length - 2 && part.length >= 4;
         var isInline = !isDisplay && part.length >= 2 && part.charAt(0) === '$' && part.charAt(part.length - 1) === '$' && part.indexOf('\n') === -1;
         if (isDisplay || isInline) {
-          var inner = isDisplay ? part.slice(2, -2) : part.slice(1, -1);
+          // Restaurar placeholder a "\$" antes de pasar a KaTeX (KaTeX entiende
+          // \$ como signo de peso literal). Sin esto, el placeholder queda dentro
+          // del math expression y KaTeX falla con error visible en rojo.
+          var inner = (isDisplay ? part.slice(2, -2) : part.slice(1, -1)).replace(/\x00DOLLAR\x00/g, '\\$');
           if (katexLib) {
             try { return katexLib.renderToString(inner, { throwOnError: false, displayMode: isDisplay, macros: { "\\sen": "\\operatorname{sen}", "\\tg": "\\operatorname{tg}" } }); } catch(e) {}
           }

@@ -1,0 +1,27 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="300" height="300" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Círculo dividido en 6 sectores por 3 diámetros: vertical + 2 diagonales a ±30° del horizontal.
+     Centro (100, 100), radio 80. Etiquetas en posiciones a radio ~50 desde el centro.
+     Sectores y valores (en sentido horario desde superior izquierdo):
+       sup-izq = ? (incógnita) · sup-der = 15 · med-der = 16 ·
+       inf-der = 36 · inf-izq = 45 · med-izq = 48
+     Los opuestos cumplen razón ×3: (?, 36), (15, 45), (16, 48) → ? = 12. -->
+
+  <g stroke="currentColor" stroke-width="1.6" fill="none">
+    <circle cx="100" cy="100" r="80"/>
+    <!-- Diámetro vertical -->
+    <line x1="100" y1="20" x2="100" y2="180"/>
+    <!-- Diámetro 30°-210° (esquina sup-der ↔ esquina inf-izq) -->
+    <line x1="169" y1="60" x2="31" y2="140"/>
+    <!-- Diámetro 150°-330° (esquina sup-izq ↔ esquina inf-der) -->
+    <line x1="31" y1="60" x2="169" y2="140"/>
+  </g>
+
+  <g font-size="18" text-anchor="middle" dominant-baseline="middle">
+    <text x="75"  y="57">?</text>
+    <text x="125" y="57">15</text>
+    <text x="150" y="100">16</text>
+    <text x="125" y="143">36</text>
+    <text x="75"  y="143">45</text>
+    <text x="50"  y="100">48</text>
+  </g>
+</svg>

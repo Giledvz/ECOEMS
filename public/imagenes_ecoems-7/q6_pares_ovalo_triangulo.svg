@@ -1,0 +1,46 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 130" width="400" height="163" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- 4 pares óvalo-triángulo, conectados por línea vertical.
+     Patrón: triángulo = óvalo × 4. Óvalos en progresión +3.
+     Par 1: 2/8 · Par 2: 5/20 · Par 3: 8/32 · Par 4: ?/? (respuesta: 11/44).
+     Cada grupo centrado en cx = 45, 125, 205, 285. Óvalo en y=30 (rx=22, ry=14).
+     Triángulo: vértice superior (cx, 65), base inferior (cx±25, 115). -->
+
+  <g stroke="currentColor" stroke-width="1.6" fill="none">
+    <!-- Grupo 1 (cx = 45) -->
+    <ellipse cx="45" cy="30" rx="22" ry="14"/>
+    <line x1="45" y1="44" x2="45" y2="65"/>
+    <polygon points="45,65 20,115 70,115"/>
+
+    <!-- Grupo 2 (cx = 125) -->
+    <ellipse cx="125" cy="30" rx="22" ry="14"/>
+    <line x1="125" y1="44" x2="125" y2="65"/>
+    <polygon points="125,65 100,115 150,115"/>
+
+    <!-- Grupo 3 (cx = 205) -->
+    <ellipse cx="205" cy="30" rx="22" ry="14"/>
+    <line x1="205" y1="44" x2="205" y2="65"/>
+    <polygon points="205,65 180,115 230,115"/>
+
+    <!-- Grupo 4 (cx = 285) — par vacío (la incógnita) -->
+    <ellipse cx="285" cy="30" rx="22" ry="14"/>
+    <line x1="285" y1="44" x2="285" y2="65"/>
+    <polygon points="285,65 260,115 310,115"/>
+  </g>
+
+  <g font-family="'IBM Plex Sans', sans-serif" font-size="16" text-anchor="middle"
+     style="font-variant-numeric: tabular-nums;">
+    <!-- IBM Plex Sans: usa lining figures (todos los números a misma altura
+         cap-height) por default, evitando el problema de old-style figures de
+         Latin Modern/Georgia donde 2,5,3,4,7,9 quedan bajos vs 6,8.
+         Óvalos: cy=30, baseline en y=36 con compensación vertical. -->
+    <text x="45"  y="36">2</text>
+    <text x="125" y="36">5</text>
+    <text x="205" y="36">8</text>
+    <text x="285" y="36">?</text>
+    <!-- Triángulos: número adentro, hacia la base donde el triángulo es ancho -->
+    <text x="45"  y="105">8</text>
+    <text x="125" y="105">20</text>
+    <text x="205" y="105">32</text>
+    <text x="285" y="105">?</text>
+  </g>
+</svg>

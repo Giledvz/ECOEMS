@@ -1,0 +1,37 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" width="380" height="245" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<!-- Triángulo ABC con A=(40,150) base-izq, B=(200,150) base-der, C=(140,40) cima.
+     La base AB se extiende más allá de B hasta x=260 para mostrar el ángulo
+     exterior y. Arcos en cada vértice (radio 18 internos, 22 externo). -->
+
+  <g stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round">
+    <!-- Lados del triángulo -->
+    <polygon points="40,150 200,150 140,40"/>
+    <!-- Prolongación de la base más allá de B -->
+    <line x1="200" y1="150" x2="260" y2="150"/>
+  </g>
+
+  <!-- Arcos indicadores de ángulos (interiores radio 18, exterior y radio 22) -->
+  <g stroke="currentColor" stroke-width="1.4" fill="none">
+    <!-- Ángulo interior A: de AB (este) a AC (NE) -->
+    <path d="M 58 150 A 18 18 0 0 0 52.1 136.7"/>
+    <!-- Ángulo interior B: de BA (oeste) a BC (NW) -->
+    <path d="M 182 150 A 18 18 0 0 1 191.38 134.20"/>
+    <!-- Ángulo interior C: de CB (SE) a CA (SW) -->
+    <path d="M 148.62 55.80 A 18 18 0 0 1 127.89 53.32"/>
+    <!-- Ángulo exterior y: de prolongación (este) a BC (NW), por el norte (afuera) -->
+    <path d="M 222 150 A 22 22 0 0 0 189.46 130.68"/>
+  </g>
+
+  <!-- Etiquetas de vértices (italic, convención editorial para letras geométricas) -->
+  <text x="32"  y="166" font-size="16" font-style="italic">A</text>
+  <text x="204" y="166" font-size="16" font-style="italic">B</text>
+  <text x="135" y="32"  font-size="16" font-style="italic">C</text>
+
+  <!-- Medidas de ángulos: alejadas de los lados para no tocarlos -->
+  <text x="88"  y="140" font-size="14" text-anchor="middle"><tspan font-style="italic">x</tspan> + 10°</text>
+  <text x="158" y="140" font-size="14" text-anchor="middle"><tspan font-style="italic">x</tspan> + 13°</text>
+  <text x="135" y="86"  font-size="14" text-anchor="middle">3<tspan font-style="italic">x</tspan> + 7°</text>
+
+  <!-- Ángulo exterior y: en el espacio externo, en la dirección NE desde B -->
+  <text x="220" y="122" font-size="16" font-style="italic">y</text>
+</svg>
