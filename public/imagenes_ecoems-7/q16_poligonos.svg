@@ -1,0 +1,22 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="500" height="156" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <!-- 5 polígonos en fila: triángulo, rombo, triángulo, trapecio, hexágono.
+       Valores 3, 6, 7, 4 debajo de los primeros 4; ? bajo el hexágono. -->
+  <g stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="miter">
+    <polygon points="30,5 10,52 50,52"/>
+    <polygon points="90,5 117,30 90,55 63,30"/>
+    <!-- diagonal horizontal del rombo y línea horizontal del triángulo a y=30 -->
+    <line x1="63" y1="30" x2="117" y2="30"/>
+    <line x1="139.4" y1="30" x2="160.6" y2="30"/>
+    <line x1="251" y1="30" x2="289" y2="30"/>
+    <polygon points="150,5 130,52 170,52"/>
+    <polygon points="185,30 235,30 225,52 195,52"/>
+    <polygon points="270,8 289,19 289,41 270,52 251,41 251,19"/>
+  </g>
+  <g font-size="14" font-style="italic" text-anchor="middle" fill="currentColor">
+    <text x="30" y="82">3</text>
+    <text x="90" y="82">6</text>
+    <text x="150" y="82">7</text>
+    <text x="210" y="82">4</text>
+    <text x="270" y="82">?</text>
+  </g>
+</svg>

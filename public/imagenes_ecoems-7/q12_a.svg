@@ -1,0 +1,16 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 110" width="130" height="110">
+  <!-- Vista lateral izquierda: fila 3-ancha × 2 alta + 1 cubo arriba en medio.
+       7 cubos. CORRECTA. -->
+  <g stroke="currentColor" stroke-width="1.5">
+    <!-- Z=1 (base) -->
+    <rect x="10" y="70" width="30" height="30" fill="#efe7d8"/>
+    <rect x="40" y="70" width="30" height="30" fill="#efe7d8"/>
+    <rect x="70" y="70" width="30" height="30" fill="#efe7d8"/>
+    <!-- Z=2 -->
+    <rect x="10" y="40" width="30" height="30" fill="#efe7d8"/>
+    <rect x="40" y="40" width="30" height="30" fill="#efe7d8"/>
+    <rect x="70" y="40" width="30" height="30" fill="#efe7d8"/>
+    <!-- Z=3 (cubo arriba en medio) -->
+    <rect x="40" y="10" width="30" height="30" fill="#efe7d8"/>
+  </g>
+</svg>

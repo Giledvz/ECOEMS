@@ -1,57 +1,115 @@
-<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" width="380" height="338" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-<!-- Croquis urbano: representación esquemática de calles con nombres.
-     Grid de 4×3 manzanas (cuadras). Calles verticales: x=40, 120, 200, 280;
-     calles horizontales: y=40, 120, 200, 280.
-     Tres bloques destacados (sombreados): JUÁREZ 222 (arriba-der), Centro de
-     Tlalpan (centro-der), CASA CHATA (centro-izq). -->
-
-  <!-- Manzanas (rectángulos con borde) -->
-  <g stroke="currentColor" stroke-width="1.4" fill="none">
-    <rect x="40"  y="40"  width="80" height="80"/>
-    <rect x="120" y="40"  width="80" height="80"/>
-    <rect x="200" y="40"  width="80" height="80"/>
-    <rect x="40"  y="120" width="80" height="80"/>
-    <rect x="120" y="120" width="80" height="80"/>
-    <rect x="200" y="120" width="80" height="80"/>
-    <rect x="40"  y="200" width="80" height="80"/>
-    <rect x="120" y="200" width="80" height="80"/>
-    <rect x="200" y="200" width="80" height="80"/>
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 305" width="400" height="320" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <!-- Croquis local de un barrio. 3 calles horizontales × 3 verticales con nombres. -->
+  <!-- Calles: líneas dobles con cortes en los cruces para parecer calles reales. -->
+  <g stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="butt">
+    <!-- Horizontales segmentadas: cortan en x=90-100, 190-200, 290-300 -->
+    <!-- y=60 (top de Juárez) -->
+    <line x1="20" y1="60" x2="90" y2="60"/>
+    <line x1="100" y1="60" x2="190" y2="60"/>
+    <line x1="200" y1="60" x2="290" y2="60"/>
+    <line x1="300" y1="60" x2="360" y2="60"/>
+    <!-- y=70 -->
+    <line x1="20" y1="70" x2="90" y2="70"/>
+    <line x1="100" y1="70" x2="190" y2="70"/>
+    <line x1="200" y1="70" x2="290" y2="70"/>
+    <line x1="300" y1="70" x2="360" y2="70"/>
+    <!-- y=150 (Hidalgo) -->
+    <line x1="20" y1="150" x2="90" y2="150"/>
+    <line x1="100" y1="150" x2="190" y2="150"/>
+    <line x1="200" y1="150" x2="290" y2="150"/>
+    <line x1="300" y1="150" x2="360" y2="150"/>
+    <!-- y=160 -->
+    <line x1="20" y1="160" x2="90" y2="160"/>
+    <line x1="100" y1="160" x2="190" y2="160"/>
+    <line x1="200" y1="160" x2="290" y2="160"/>
+    <line x1="300" y1="160" x2="360" y2="160"/>
+    <!-- y=240 (Allende) -->
+    <line x1="20" y1="240" x2="90" y2="240"/>
+    <line x1="100" y1="240" x2="190" y2="240"/>
+    <line x1="200" y1="240" x2="290" y2="240"/>
+    <line x1="300" y1="240" x2="360" y2="240"/>
+    <!-- y=250 -->
+    <line x1="20" y1="250" x2="90" y2="250"/>
+    <line x1="100" y1="250" x2="190" y2="250"/>
+    <line x1="200" y1="250" x2="290" y2="250"/>
+    <line x1="300" y1="250" x2="360" y2="250"/>
+    <!-- Verticales segmentadas: cortan en y=60-70, 150-160, 240-250 -->
+    <!-- x=90 (Morelos) -->
+    <line x1="90" y1="20" x2="90" y2="60"/>
+    <line x1="90" y1="70" x2="90" y2="150"/>
+    <line x1="90" y1="160" x2="90" y2="240"/>
+    <line x1="90" y1="250" x2="90" y2="270"/>
+    <!-- x=100 -->
+    <line x1="100" y1="20" x2="100" y2="60"/>
+    <line x1="100" y1="70" x2="100" y2="150"/>
+    <line x1="100" y1="160" x2="100" y2="240"/>
+    <line x1="100" y1="250" x2="100" y2="270"/>
+    <!-- x=190 (Tlalpan) -->
+    <line x1="190" y1="20" x2="190" y2="60"/>
+    <line x1="190" y1="70" x2="190" y2="150"/>
+    <line x1="190" y1="160" x2="190" y2="240"/>
+    <line x1="190" y1="250" x2="190" y2="270"/>
+    <!-- x=200 -->
+    <line x1="200" y1="20" x2="200" y2="60"/>
+    <line x1="200" y1="70" x2="200" y2="150"/>
+    <line x1="200" y1="160" x2="200" y2="240"/>
+    <line x1="200" y1="250" x2="200" y2="270"/>
+    <!-- x=290 (Casa Chata) -->
+    <line x1="290" y1="20" x2="290" y2="60"/>
+    <line x1="290" y1="70" x2="290" y2="150"/>
+    <line x1="290" y1="160" x2="290" y2="240"/>
+    <line x1="290" y1="250" x2="290" y2="270"/>
+    <!-- x=300 -->
+    <line x1="300" y1="20" x2="300" y2="60"/>
+    <line x1="300" y1="70" x2="300" y2="150"/>
+    <line x1="300" y1="160" x2="300" y2="240"/>
+    <line x1="300" y1="250" x2="300" y2="270"/>
   </g>
 
-  <!-- Bloques destacados (rellenos con currentColor + opacity) -->
-  <g fill="currentColor" fill-opacity="0.30" stroke="currentColor" stroke-width="1.4">
-    <rect x="200" y="40"  width="80" height="40"/>
-    <rect x="200" y="160" width="80" height="40"/>
-    <rect x="40"  y="160" width="80" height="40"/>
+  <!-- Flechas de sentido (estilo q32: línea + triángulo) -->
+  <g stroke="currentColor" stroke-width="1.2" fill="currentColor">
+    <!-- Juárez: → -->
+    <line x1="45" y1="65" x2="60" y2="65"/>
+    <polygon points="63,65 60,62 60,68" stroke="none"/>
+    <!-- Hidalgo: ← -->
+    <line x1="245" y1="155" x2="230" y2="155"/>
+    <polygon points="227,155 230,152 230,158" stroke="none"/>
+    <!-- Allende: → -->
+    <line x1="135" y1="245" x2="150" y2="245"/>
+    <polygon points="153,245 150,242 150,248" stroke="none"/>
+    <!-- Morelos: ↓ -->
+    <line x1="95" y1="195" x2="95" y2="210"/>
+    <polygon points="95,213 92,210 98,210" stroke="none"/>
+    <!-- Tlalpan: ↑ -->
+    <line x1="195" y1="115" x2="195" y2="100"/>
+    <polygon points="195,97 192,100 198,100" stroke="none"/>
+    <!-- Casa Chata: ↓ -->
+    <line x1="295" y1="195" x2="295" y2="210"/>
+    <polygon points="295,213 292,210 298,210" stroke="none"/>
   </g>
 
-  <!-- Etiquetas de calles -->
-  <g font-size="11" text-anchor="middle">
-    <!-- Calles horizontales: nombre al lado del eje de calle -->
-    <text x="160" y="32">Juárez</text>
-    <text x="160" y="112">Morelos</text>
-    <text x="160" y="192">Hidalgo</text>
-    <text x="160" y="296">Allende</text>
+  <!-- Etiquetas de calles dentro del trazo (entre las dos paralelas) -->
+  <g font-size="8" font-style="italic" text-anchor="middle">
+    <!-- Horizontales: en segmentos sin flecha -->
+    <text x="240" y="68">Juárez</text>
+    <text x="140" y="158">Hidalgo</text>
+    <text x="240" y="248">Allende</text>
+    <!-- Verticales: rotadas, baseline central para no salirse del trazo -->
+    <text transform="translate(95, 110) rotate(-90)" dominant-baseline="central">Morelos</text>
+    <text transform="translate(195, 200) rotate(-90)" dominant-baseline="central">Tlalpan</text>
+    <text transform="translate(295, 110) rotate(-90)" dominant-baseline="central">Casa Chata</text>
   </g>
 
-  <!-- Calle vertical (Calz. de Tlalpan) — texto rotado 90° -->
-  <text x="20" y="160" font-size="11" text-anchor="middle"
-        transform="rotate(-90 20 160)">Calz. de Tlalpan</text>
-
-  <!-- Etiquetas de los bloques destacados -->
-  <g font-size="10" text-anchor="middle" font-weight="bold">
-    <text x="240" y="66">JUÁREZ 222</text>
-    <text x="240" y="186">Centro de Tlalpan</text>
-    <text x="80"  y="186">CASA CHATA</text>
+  <!-- Escala gráfica abajo a la izquierda (debajo de las calles) -->
+  <g transform="translate(20, 295)" stroke="currentColor" stroke-width="1.2" fill="none">
+    <line x1="0" y1="0" x2="80" y2="0"/>
+    <line x1="0" y1="-3" x2="0" y2="3"/>
+    <line x1="40" y1="-3" x2="40" y2="3"/>
+    <line x1="80" y1="-3" x2="80" y2="3"/>
+    <g font-size="9" text-anchor="middle" fill="currentColor" stroke="none">
+      <text x="0" y="-6">0</text>
+      <text x="40" y="-6">100</text>
+      <text x="80" y="-6">200 m</text>
+    </g>
   </g>
-
-  <!-- Rosa de los vientos (norte arriba a la derecha) -->
-  <g transform="translate(320, 305)">
-    <circle r="10" fill="none" stroke="currentColor" stroke-width="1"/>
-    <polygon points="0,-10 -3,2 0,0 3,2" fill="currentColor"/>
-    <text x="0" y="-13" font-size="10" text-anchor="middle">N</text>
-  </g>
-
-  <!-- Atribución -->
-  <text x="350" y="318" font-size="9" text-anchor="end" font-style="italic">(Social, 2015)</text>
 </svg>

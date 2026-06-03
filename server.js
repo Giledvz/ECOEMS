@@ -303,6 +303,21 @@ app.get('/api/download-csv', (req, res) => {
   res.send('\uFEFF' + csv);
 });
 
+// Download the server-generated comprobante PDF for a student.
+// El cliente lo prefiere a html2canvas (que falla con canvas >4096px en iOS).
+app.get('/api/comprobante-pdf', (req, res) => {
+  const roomCode = req.query.room;
+  const studentName = req.query.name;
+  if (!roomCode || !studentName) return res.status(400).json({ error: 'Falta room o name' });
+  const room = rooms.get(roomCode);
+  if (!room) return res.status(404).json({ error: 'Sala no encontrada' });
+  const dateStr = (room.date || new Date().toISOString().split('T')[0]).replace(/-/g, '');
+  const folder = path.join(__dirname, 'comprobantes', `${room.roomCode}_${dateStr}`);
+  const filePath = path.join(folder, `${safeFilename(studentName)}.pdf`);
+  if (!fs.existsSync(filePath)) return res.status(404).json({ error: 'PDF aún no generado' });
+  res.download(filePath, `comprobante_${safeFilename(studentName)}.pdf`);
+});
+
 // Download answer key CSV
 app.get('/api/download-key', (req, res) => {
   const room = rooms.get(req.query.room);

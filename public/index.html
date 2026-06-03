@@ -2523,12 +2523,42 @@ function downloadPDF() {
       el.disabled = disabled;
     });
   };
+  // Intenta primero el PDF generado por el server (Puppeteer). Si está disponible,
+  // descargamos eso — en iOS/iPad el canvas de html2canvas se quema con exámenes
+  // largos (límite ~4096px → PDF en blanco). Fallback a html2canvas si el server
+  // todavía no terminó de generarlo.
+  tryDownloadServerPDF()
+    .then(ok => {
+      if (ok) { restore(); return; }
+      try { _downloadPDFImpl(restore); }
+      catch (err) {
+        console.error('downloadPDF error:', err);
+        restore();
+        appAlert({ title: 'No se pudo generar el comprobante', body: (err && err.message) || String(err), variant: 'err' });
+      }
+    });
+}
+
+async function tryDownloadServerPDF() {
   try {
-    _downloadPDFImpl(restore);
-  } catch (err) {
-    console.error('downloadPDF error:', err);
-    restore();
-    appAlert({ title: 'No se pudo generar el comprobante', body: (err && err.message) || String(err), variant: 'err' });
+    if (!state.roomCode || !state.name) return false;
+    const url = `/api/comprobante-pdf?room=${encodeURIComponent(state.roomCode)}&name=${encodeURIComponent(state.name)}`;
+    const resp = await fetch(url);
+    if (!resp.ok) return false;
+    const blob = await resp.blob();
+    const objUrl = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = objUrl;
+    a.download = `comprobante_${state.name.replace(/[^\wÀ-ſ]+/g, '_').substring(0, 60)}.pdf`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(objUrl), 1000);
+    console.log('[comprobante] descargado del server');
+    return true;
+  } catch (e) {
+    console.warn('[comprobante] server PDF falló, intento html2canvas:', e);
+    return false;
   }
 }
 

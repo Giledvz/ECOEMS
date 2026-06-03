@@ -68,16 +68,15 @@
           {
             "id": 4,
             "topic": "HM.4",
-            "topic_name": "Razonamiento espacial — completar figura",
-            "image_pending": true,
-            "text": "¿Cuál de las opciones completa la figura?\n\n[Figura: media circunferencia dividida; 4 opciones de mitades]",
+            "topic_name": "Sucesiones — cuadrados de números pares",
+            "text": "Selecciona el número que continúa la siguiente sucesión:\n\n4, 16, 36, 64, ___",
             "options": {
-              "A": "A",
-              "B": "B",
-              "C": "C",
-              "D": "D"
+              "A": "81",
+              "B": "96",
+              "C": "100",
+              "D": "128"
             },
-            "answer": "B"
+            "answer": "C"
           },
           {
             "id": 5,
@@ -177,13 +176,13 @@
             "id": 12,
             "topic": "HM.12",
             "topic_name": "Razonamiento espacial — vistas",
-            "image_pending": true,
-            "text": "Una vista lateral izquierda de la figura es:\n\n[Figura: estructura 3D de cubos apilados; 4 opciones de vistas 2D]",
+            "image": "/imagenes_ecoems-7/q12_original.svg",
+            "text": "Una vista lateral izquierda de la figura es:",
             "options": {
-              "A": "A",
-              "B": "B",
-              "C": "C",
-              "D": "D"
+              "A": "<img src=\"/imagenes_ecoems-7/q12_a.svg\" style=\"width:100%;max-width:160px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems-7/q12_b.svg\" style=\"width:100%;max-width:160px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems-7/q12_c.svg\" style=\"width:100%;max-width:160px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems-7/q12_d.svg\" style=\"width:100%;max-width:160px;display:block;\">"
             },
             "answer": "A"
           },
@@ -217,8 +216,8 @@
             "id": 15,
             "topic": "HM.15",
             "topic_name": "Razonamiento espacial — conteo de bloques",
-            "image_pending": true,
-            "text": "En la siguiente figura los tabiques de color están contenidos en toda la fila. Determina el número de tabiques de color que existen en total.\n\n[Figura: estructura 3D rectangular con cubos coloreados]",
+            "image": "/imagenes_ecoems-7/q15_tabiques.svg",
+            "text": "En la siguiente figura los tabiques de color están contenidos en toda la fila. Determina el número de tabiques de color que existen en total.",
             "options": {
               "A": "21",
               "B": "22",
@@ -231,8 +230,8 @@
             "id": 16,
             "topic": "HM.16",
             "topic_name": "Polígonos — ángulos internos",
-            "image_pending": true,
-            "text": "El valor numérico de los ángulos internos que se colocará bajo el último dibujo es:\n\n[Figura: 5 polígonos con valores 3, 6, 7, 4 bajo los primeros; hexágono al final con valor desconocido]",
+            "image": "/imagenes_ecoems-7/q16_poligonos.svg",
+            "text": "El valor numérico de los ángulos internos que se colocará bajo el último dibujo es:",
             "options": {
               "A": "3",
               "B": "5",
@@ -356,7 +355,7 @@
             "topic": "M.9",
             "topic_name": "Geometría — Pitágoras (frente de casa)",
             "image": "/imagenes_ecoems-7/q25_frente_casa.svg",
-            "context": "Analiza el frente de la casa y las dimensiones de las figuras que la componen, contesta los reactivos 25 y 26.",
+            "context": "Analiza el frente de la casa y las dimensiones de las figuras que la componen.",
             "text": "¿Cuál es la longitud de la base del triángulo?",
             "options": {
               "A": "17 u",
@@ -371,7 +370,7 @@
             "topic": "M.10",
             "topic_name": "Geometría — área (frente de casa)",
             "image": "/imagenes_ecoems-7/q25_frente_casa.svg",
-            "context": "Analiza el frente de la casa y las dimensiones de las figuras que la componen, contesta los reactivos 25 y 26.",
+            "context": "Analiza el frente de la casa y las dimensiones de las figuras que la componen.",
             "text": "¿Cuál es el área total del frente de la casa?",
             "options": {
               "A": "$70\\,u^2$",
@@ -482,16 +481,15 @@
           {
             "id": 34,
             "topic": "F.6",
-            "topic_name": "Dinámica — par de fuerzas",
-            "image_pending": true,
-            "text": "¿Qué imagen representa un par de fuerzas?\n\n[Figura: 4 fotos — A) ciclista, B) puente colgante, C) motocicleta, D) motocicleta]",
+            "topic_name": "Tercera ley de Newton — par acción-reacción",
+            "text": "Indica qué afirmación resulta correcta, ante el hecho de que un boxeador golpee un saco de arena.",
             "options": {
-              "A": "A",
-              "B": "B",
-              "C": "C",
-              "D": "D"
+              "A": "El saco de arena golpea al boxeador con una fuerza mayor que el golpe de éste.",
+              "B": "El boxeador ejerce una fuerza mayor que la del saco de arena para poder moverlo.",
+              "C": "El saco de arena absorbe el golpe del boxeador sin efectuar ninguna fuerza.",
+              "D": "El saco de arena devuelve el golpe al boxeador con la misma intensidad pero en sentido contrario."
             },
-            "answer": "B"
+            "answer": "D"
           },
           {
             "id": 35,
@@ -565,8 +563,8 @@
           {
             "id": 40,
             "topic": "1.2.bank",
-            "topic_name": "banco",
-            "text": "La gráfica representa la velocidad de un vehículo en km/h con el paso del tiempo. ¿En cuál de los intervalos de tiempo el vehículo se desplaza con mayor aceleración?\n\n(La gráfica muestra: de 0 a 1 h sube rápido de 0 a 60 km/h; de 1 a 2 h permanece en 60 km/h; de 2 a 3 h sube ligeramente a 80 km/h; de 3 a 4 h se mantiene en 80; de 4 a 5 h sube a 120 km/h)",
+            "topic_name": "Cinemática — aceleración en gráfica v-t",
+            "text": "La gráfica representa la velocidad de un vehículo en km/h con el paso del tiempo. ¿En cuál de los intervalos de tiempo el vehículo se desplaza con mayor aceleración?",
             "options": {
               "A": "0 – 1 h",
               "B": "1 – 2 h",
@@ -574,7 +572,8 @@
               "D": "4 – 5 h"
             },
             "answer": "A",
-            "_extra_from_bank": true
+            "_extra_from_bank": true,
+            "image": "/imagenes_ecoems-7/q40_grafica_v_t.svg"
           }
         ]
       },
@@ -841,8 +840,7 @@
             "id": 60,
             "topic": "B.8",
             "topic_name": "Cadena alimenticia — consumidor primario",
-            "image_pending": true,
-            "context": "Observa la figura, analiza y contesta los reactivos 60 al 62.\n\n[Figura: cadena alimenticia Sol → Productor → Herbívoro → Carnívoro → Carnívoro → nutrientes → Desintegrador]",
+            "context": "Observa la figura, analiza y contesta los reactivos relacionados.",
             "text": "En una cadena alimenticia el consumidor primario siempre es:",
             "options": {
               "A": "desintegrador",
@@ -850,14 +848,14 @@
               "C": "herbívoro",
               "D": "productor"
             },
-            "answer": "C"
+            "answer": "C",
+            "image": "/imagenes_ecoems-7/q60_cadena_alimenticia.svg"
           },
           {
             "id": 61,
             "topic": "B.9",
             "topic_name": "Cadena alimenticia — origen energético",
-            "image_pending": true,
-            "context": "Observa la figura, analiza y contesta los reactivos 60 al 62.\n\n[Figura: cadena alimenticia Sol → Productor → Herbívoro → Carnívoro → Carnívoro → nutrientes → Desintegrador]",
+            "context": "Observa la figura, analiza y contesta los reactivos relacionados.",
             "text": "En una cadena alimenticia la secuencia energética comienza con el siguiente elemento:",
             "options": {
               "A": "desintegrador",
@@ -865,14 +863,14 @@
               "C": "productor",
               "D": "sol"
             },
-            "answer": "D"
+            "answer": "D",
+            "image": "/imagenes_ecoems-7/q60_cadena_alimenticia.svg"
           },
           {
             "id": 62,
             "topic": "B.10",
             "topic_name": "Cadena alimenticia — reino desintegradores",
-            "image_pending": true,
-            "context": "Observa la figura, analiza y contesta los reactivos 60 al 62.\n\n[Figura: cadena alimenticia Sol → Productor → Herbívoro → Carnívoro → Carnívoro → nutrientes → Desintegrador]",
+            "context": "Observa la figura, analiza y contesta los reactivos relacionados.",
             "text": "Generalmente los organismos desintegradores pertenecen al reino:",
             "options": {
               "A": "animalia",
@@ -880,7 +878,8 @@
               "C": "protista",
               "D": "fungi"
             },
-            "answer": "D"
+            "answer": "D",
+            "image": "/imagenes_ecoems-7/q60_cadena_alimenticia.svg"
           },
           {
             "id": 63,
@@ -918,7 +917,7 @@
             "id": 65,
             "topic": "HV.1",
             "topic_name": "Tipos de relatos — mito",
-            "context": "Lee el texto y contesta los reactivos del 65 al 67.\n\nLa profesora Laura en la clase de español pide a sus alumnos que participen con relatos.\n\nLucía inicia con una narración fantástica que hace referencia a seres divinos que dieron vida a los pueblos de la antigua Grecia.\n\nLilia relata hechos históricos de los antepasados que se han transmitido de generación en generación, mencionando en su aportación la historia \"La llorona\".\n\nFrancisco comienza su participación con: Había una vez…\n\nGuillermo hace una recopilación por escrito de las participaciones de sus compañeras para elaborar un álbum y presentar su trabajo.",
+            "context": "Lee el texto y contesta los reactivos relacionados.\n\nLa profesora Laura en la clase de español pide a sus alumnos que participen con relatos.\n\nLucía inicia con una narración fantástica que hace referencia a seres divinos que dieron vida a los pueblos de la antigua Grecia.\n\nLilia relata hechos históricos de los antepasados que se han transmitido de generación en generación, mencionando en su aportación la historia \"La llorona\".\n\nFrancisco comienza su participación con: Había una vez…\n\nGuillermo hace una recopilación por escrito de las participaciones de sus compañeras para elaborar un álbum y presentar su trabajo.",
             "text": "La participación que hace Lucía en su exposición pertenece a:",
             "options": {
               "A": "mito",
@@ -932,7 +931,7 @@
             "id": 66,
             "topic": "HV.2",
             "topic_name": "Tipos de relatos — leyenda",
-            "context": "Lee el texto y contesta los reactivos del 65 al 67.\n\nLa profesora Laura en la clase de español pide a sus alumnos que participen con relatos.\n\nLucía inicia con una narración fantástica que hace referencia a seres divinos que dieron vida a los pueblos de la antigua Grecia.\n\nLilia relata hechos históricos de los antepasados que se han transmitido de generación en generación, mencionando en su aportación la historia \"La llorona\".\n\nFrancisco comienza su participación con: Había una vez…\n\nGuillermo hace una recopilación por escrito de las participaciones de sus compañeras para elaborar un álbum y presentar su trabajo.",
+            "context": "Lee el texto y contesta los reactivos relacionados.\n\nLa profesora Laura en la clase de español pide a sus alumnos que participen con relatos.\n\nLucía inicia con una narración fantástica que hace referencia a seres divinos que dieron vida a los pueblos de la antigua Grecia.\n\nLilia relata hechos históricos de los antepasados que se han transmitido de generación en generación, mencionando en su aportación la historia \"La llorona\".\n\nFrancisco comienza su participación con: Había una vez…\n\nGuillermo hace una recopilación por escrito de las participaciones de sus compañeras para elaborar un álbum y presentar su trabajo.",
             "text": "La intervención que tiene Lilia, ¿a qué tipo de relato corresponde?",
             "options": {
               "A": "Mito",
@@ -946,7 +945,7 @@
             "id": 67,
             "topic": "HV.3",
             "topic_name": "Tipos de texto — antología",
-            "context": "Lee el texto y contesta los reactivos del 65 al 67.\n\nLa profesora Laura en la clase de español pide a sus alumnos que participen con relatos.\n\nLucía inicia con una narración fantástica que hace referencia a seres divinos que dieron vida a los pueblos de la antigua Grecia.\n\nLilia relata hechos históricos de los antepasados que se han transmitido de generación en generación, mencionando en su aportación la historia \"La llorona\".\n\nFrancisco comienza su participación con: Había una vez…\n\nGuillermo hace una recopilación por escrito de las participaciones de sus compañeras para elaborar un álbum y presentar su trabajo.",
+            "context": "Lee el texto y contesta los reactivos relacionados.\n\nLa profesora Laura en la clase de español pide a sus alumnos que participen con relatos.\n\nLucía inicia con una narración fantástica que hace referencia a seres divinos que dieron vida a los pueblos de la antigua Grecia.\n\nLilia relata hechos históricos de los antepasados que se han transmitido de generación en generación, mencionando en su aportación la historia \"La llorona\".\n\nFrancisco comienza su participación con: Había una vez…\n\nGuillermo hace una recopilación por escrito de las participaciones de sus compañeras para elaborar un álbum y presentar su trabajo.",
             "text": "¿Cuál es el trabajo que realizará Guillermo?",
             "options": {
               "A": "Mito",
@@ -1226,7 +1225,7 @@
             "id": 88,
             "topic": "E.8",
             "topic_name": "Comprensión lectora — fábula del leñador",
-            "context": "Lee el texto y contesta los reactivos 88 y 89.\n\nA un campesino se le cayó su hacha en un río, y apenado se puso a llorar.\n\nEl espíritu de las aguas se compadeció de él y presentándole un hacha de oro, le preguntó:\n— ¿Es ésta tu hacha? El campesino respondió:\n— No, no es la mía.\n\nEl espíritu de las aguas le presentó un hacha de plata.\n— Tampoco es ésa —dijo el campesino.\n\nEntonces el espíritu de las aguas le presentó su propia hacha de hierro.\nViéndola el campesino exclamó:\n— ¡Ésa es la mía!\n\nPara recompensarlo por su honradez, el espíritu de las aguas le dio las tres hachas.\n\nDe regreso a su casa, el campesino mostró su regalo, contando su aventura a sus amigos. Uno de ellos quiso probar suerte; fue a la orilla del río, dejó caer su hacha y rompió a llorar.\n\nEl espíritu de las aguas le presentó un hacha de oro y le preguntó:\n— ¿Es ésta tu hacha?\n\nEl campesino, lleno de alegría respondió:\n— Sí, sí, es la mía.\n\nEl espíritu no le dio el hacha de oro ni la suya de hierro, en castigo de su mentira.",
+            "context": "Lee el texto y contesta los reactivos relacionados.\n\nA un campesino se le cayó su hacha en un río, y apenado se puso a llorar.\n\nEl espíritu de las aguas se compadeció de él y presentándole un hacha de oro, le preguntó:\n— ¿Es ésta tu hacha? El campesino respondió:\n— No, no es la mía.\n\nEl espíritu de las aguas le presentó un hacha de plata.\n— Tampoco es ésa —dijo el campesino.\n\nEntonces el espíritu de las aguas le presentó su propia hacha de hierro.\nViéndola el campesino exclamó:\n— ¡Ésa es la mía!\n\nPara recompensarlo por su honradez, el espíritu de las aguas le dio las tres hachas.\n\nDe regreso a su casa, el campesino mostró su regalo, contando su aventura a sus amigos. Uno de ellos quiso probar suerte; fue a la orilla del río, dejó caer su hacha y rompió a llorar.\n\nEl espíritu de las aguas le presentó un hacha de oro y le preguntó:\n— ¿Es ésta tu hacha?\n\nEl campesino, lleno de alegría respondió:\n— Sí, sí, es la mía.\n\nEl espíritu no le dio el hacha de oro ni la suya de hierro, en castigo de su mentira.",
             "text": "El hacha que se le cayó al campesino en el río era de:",
             "options": {
               "A": "oro",
@@ -1240,7 +1239,7 @@
             "id": 89,
             "topic": "E.9",
             "topic_name": "Comprensión lectora — moraleja",
-            "context": "Lee el texto y contesta los reactivos 88 y 89.\n\nA un campesino se le cayó su hacha en un río, y apenado se puso a llorar.\n\nEl espíritu de las aguas se compadeció de él y presentándole un hacha de oro, le preguntó:\n— ¿Es ésta tu hacha? El campesino respondió:\n— No, no es la mía.\n\nEl espíritu de las aguas le presentó un hacha de plata.\n— Tampoco es ésa —dijo el campesino.\n\nEntonces el espíritu de las aguas le presentó su propia hacha de hierro.\nViéndola el campesino exclamó:\n— ¡Ésa es la mía!\n\nPara recompensarlo por su honradez, el espíritu de las aguas le dio las tres hachas.\n\nDe regreso a su casa, el campesino mostró su regalo, contando su aventura a sus amigos. Uno de ellos quiso probar suerte; fue a la orilla del río, dejó caer su hacha y rompió a llorar.\n\nEl espíritu de las aguas le presentó un hacha de oro y le preguntó:\n— ¿Es ésta tu hacha?\n\nEl campesino, lleno de alegría respondió:\n— Sí, sí, es la mía.\n\nEl espíritu no le dio el hacha de oro ni la suya de hierro, en castigo de su mentira.",
+            "context": "Lee el texto y contesta los reactivos relacionados.\n\nA un campesino se le cayó su hacha en un río, y apenado se puso a llorar.\n\nEl espíritu de las aguas se compadeció de él y presentándole un hacha de oro, le preguntó:\n— ¿Es ésta tu hacha? El campesino respondió:\n— No, no es la mía.\n\nEl espíritu de las aguas le presentó un hacha de plata.\n— Tampoco es ésa —dijo el campesino.\n\nEntonces el espíritu de las aguas le presentó su propia hacha de hierro.\nViéndola el campesino exclamó:\n— ¡Ésa es la mía!\n\nPara recompensarlo por su honradez, el espíritu de las aguas le dio las tres hachas.\n\nDe regreso a su casa, el campesino mostró su regalo, contando su aventura a sus amigos. Uno de ellos quiso probar suerte; fue a la orilla del río, dejó caer su hacha y rompió a llorar.\n\nEl espíritu de las aguas le presentó un hacha de oro y le preguntó:\n— ¿Es ésta tu hacha?\n\nEl campesino, lleno de alegría respondió:\n— Sí, sí, es la mía.\n\nEl espíritu no le dio el hacha de oro ni la suya de hierro, en castigo de su mentira.",
             "text": "El espíritu de las aguas le dio las tres hachas al campesino ¿por qué?",
             "options": {
               "A": "Mintió",
@@ -1567,7 +1566,7 @@
             "id": 113,
             "topic": "G.9",
             "topic_name": "Ciclo hidrológico",
-            "context": "Lee el texto y contesta los reactivos del 113 al 115.\n\n¿Cuánta agua hay sobre (y dentro) de la Tierra?\nCerca del 70 por ciento de la superficie del planeta está cubierta de agua, misma que existe en el aire en forma de vapor y en el suelo como hidratante de la tierra, debido a los mantos acuíferos el suministro de agua de nuestro planeta está constantemente en movimiento, de un lugar a otro y de una forma a otra.\nCuando vemos el agua a nuestro alrededor la vemos en los arroyos, en los ríos, y en los lagos, esta se conoce como \"agua superficial,\" cuando la lluvia cae, llena estos ríos y lagos y aún después de semanas sin lluvia el agua sigue fluyendo por estos suministros que se encuentran en gran cantidad de forma subterránea bajo nuestros pies.\nAunque observemos agua únicamente en la superficie de la Tierra, hay mucha más agua que permanece adentro que en la superficie. Es más, una parte del agua que vemos fluyendo en los ríos, viene de filtraciones del agua subterránea, la cual se deposita en los ríos. El agua de la precipitación pluvial se filtra dentro de la tierra y recarga los mantos acuíferos, y al mismo tiempo el agua de los acuíferos subterráneos recarga a los ríos a través de filtraciones.",
+            "context": "Lee el texto y contesta los reactivos relacionados.\n\n¿Cuánta agua hay sobre (y dentro) de la Tierra?\nCerca del 70 por ciento de la superficie del planeta está cubierta de agua, misma que existe en el aire en forma de vapor y en el suelo como hidratante de la tierra, debido a los mantos acuíferos el suministro de agua de nuestro planeta está constantemente en movimiento, de un lugar a otro y de una forma a otra.\nCuando vemos el agua a nuestro alrededor la vemos en los arroyos, en los ríos, y en los lagos, esta se conoce como \"agua superficial,\" cuando la lluvia cae, llena estos ríos y lagos y aún después de semanas sin lluvia el agua sigue fluyendo por estos suministros que se encuentran en gran cantidad de forma subterránea bajo nuestros pies.\nAunque observemos agua únicamente en la superficie de la Tierra, hay mucha más agua que permanece adentro que en la superficie. Es más, una parte del agua que vemos fluyendo en los ríos, viene de filtraciones del agua subterránea, la cual se deposita en los ríos. El agua de la precipitación pluvial se filtra dentro de la tierra y recarga los mantos acuíferos, y al mismo tiempo el agua de los acuíferos subterráneos recarga a los ríos a través de filtraciones.",
             "text": "Cuando hablamos de que el agua en el planeta existe en forma de vapor, de ríos y de lluvia nos referimos a que cumple un ciclo:",
             "options": {
               "A": "meteorológico",
@@ -1581,7 +1580,7 @@
             "id": 114,
             "topic": "G.10",
             "topic_name": "Agua superficial",
-            "context": "Lee el texto y contesta los reactivos del 113 al 115.\n\n¿Cuánta agua hay sobre (y dentro) de la Tierra?\nCerca del 70 por ciento de la superficie del planeta está cubierta de agua, misma que existe en el aire en forma de vapor y en el suelo como hidratante de la tierra, debido a los mantos acuíferos el suministro de agua de nuestro planeta está constantemente en movimiento, de un lugar a otro y de una forma a otra.\nCuando vemos el agua a nuestro alrededor la vemos en los arroyos, en los ríos, y en los lagos, esta se conoce como \"agua superficial,\" cuando la lluvia cae, llena estos ríos y lagos y aún después de semanas sin lluvia el agua sigue fluyendo por estos suministros que se encuentran en gran cantidad de forma subterránea bajo nuestros pies.\nAunque observemos agua únicamente en la superficie de la Tierra, hay mucha más agua que permanece adentro que en la superficie. Es más, una parte del agua que vemos fluyendo en los ríos, viene de filtraciones del agua subterránea, la cual se deposita en los ríos. El agua de la precipitación pluvial se filtra dentro de la tierra y recarga los mantos acuíferos, y al mismo tiempo el agua de los acuíferos subterráneos recarga a los ríos a través de filtraciones.",
+            "context": "Lee el texto y contesta los reactivos relacionados.\n\n¿Cuánta agua hay sobre (y dentro) de la Tierra?\nCerca del 70 por ciento de la superficie del planeta está cubierta de agua, misma que existe en el aire en forma de vapor y en el suelo como hidratante de la tierra, debido a los mantos acuíferos el suministro de agua de nuestro planeta está constantemente en movimiento, de un lugar a otro y de una forma a otra.\nCuando vemos el agua a nuestro alrededor la vemos en los arroyos, en los ríos, y en los lagos, esta se conoce como \"agua superficial,\" cuando la lluvia cae, llena estos ríos y lagos y aún después de semanas sin lluvia el agua sigue fluyendo por estos suministros que se encuentran en gran cantidad de forma subterránea bajo nuestros pies.\nAunque observemos agua únicamente en la superficie de la Tierra, hay mucha más agua que permanece adentro que en la superficie. Es más, una parte del agua que vemos fluyendo en los ríos, viene de filtraciones del agua subterránea, la cual se deposita en los ríos. El agua de la precipitación pluvial se filtra dentro de la tierra y recarga los mantos acuíferos, y al mismo tiempo el agua de los acuíferos subterráneos recarga a los ríos a través de filtraciones.",
             "text": "Según la lectura el agua superficial se encuentra en…\n\n1. Mares\n2. Arroyos\n3. Estanques\n4. Ríos\n5. Fosas\n6. Pozos\n7. Lagos",
             "options": {
               "A": "1, 2, 4",
@@ -1595,7 +1594,7 @@
             "id": 115,
             "topic": "G.11",
             "topic_name": "Comprensión lectora — agua",
-            "context": "Lee el texto y contesta los reactivos del 113 al 115.\n\n¿Cuánta agua hay sobre (y dentro) de la Tierra?\nCerca del 70 por ciento de la superficie del planeta está cubierta de agua, misma que existe en el aire en forma de vapor y en el suelo como hidratante de la tierra, debido a los mantos acuíferos el suministro de agua de nuestro planeta está constantemente en movimiento, de un lugar a otro y de una forma a otra.\nCuando vemos el agua a nuestro alrededor la vemos en los arroyos, en los ríos, y en los lagos, esta se conoce como \"agua superficial,\" cuando la lluvia cae, llena estos ríos y lagos y aún después de semanas sin lluvia el agua sigue fluyendo por estos suministros que se encuentran en gran cantidad de forma subterránea bajo nuestros pies.\nAunque observemos agua únicamente en la superficie de la Tierra, hay mucha más agua que permanece adentro que en la superficie. Es más, una parte del agua que vemos fluyendo en los ríos, viene de filtraciones del agua subterránea, la cual se deposita en los ríos. El agua de la precipitación pluvial se filtra dentro de la tierra y recarga los mantos acuíferos, y al mismo tiempo el agua de los acuíferos subterráneos recarga a los ríos a través de filtraciones.",
+            "context": "Lee el texto y contesta los reactivos relacionados.\n\n¿Cuánta agua hay sobre (y dentro) de la Tierra?\nCerca del 70 por ciento de la superficie del planeta está cubierta de agua, misma que existe en el aire en forma de vapor y en el suelo como hidratante de la tierra, debido a los mantos acuíferos el suministro de agua de nuestro planeta está constantemente en movimiento, de un lugar a otro y de una forma a otra.\nCuando vemos el agua a nuestro alrededor la vemos en los arroyos, en los ríos, y en los lagos, esta se conoce como \"agua superficial,\" cuando la lluvia cae, llena estos ríos y lagos y aún después de semanas sin lluvia el agua sigue fluyendo por estos suministros que se encuentran en gran cantidad de forma subterránea bajo nuestros pies.\nAunque observemos agua únicamente en la superficie de la Tierra, hay mucha más agua que permanece adentro que en la superficie. Es más, una parte del agua que vemos fluyendo en los ríos, viene de filtraciones del agua subterránea, la cual se deposita en los ríos. El agua de la precipitación pluvial se filtra dentro de la tierra y recarga los mantos acuíferos, y al mismo tiempo el agua de los acuíferos subterráneos recarga a los ríos a través de filtraciones.",
             "text": "¿Cuáles de los siguientes enunciados son verdaderos de acuerdo a la lectura?\n\n1. El 90% de la Tierra es agua\n2. Los mantos acuíferos son reservas de agua de la Tierra\n3. El agua superficial está en mares y océanos\n4. El agua de lluvia recarga los mantos acuíferos\n5. Parte del agua que fluye en los ríos viene de agua subterránea",
             "options": {
               "A": "1, 3, 5",
@@ -1667,7 +1666,7 @@
             "id": 120,
             "topic": "FCE.4",
             "topic_name": "Libertad — límites",
-            "context": "Lee el texto y contesta los reactivos del 120 al 123.\n\n**Libertad para elegir y decidir**\n\n\"La libertad no es un regalo, es un bien natural del ser humano. Pero, como todo bien preciado, debemos aprender a hacer buen uso de ella. La libertad no significa poder hacer lo que se quiera. Vivimos en sociedad y debemos aprender a diferenciar los entresijos que ésta alberga, entender que abarca gran cantidad de seres diferentes, con diversas formas de pensar y sentir.\n\nComprender esto significa saber que existen normas de convivencia que necesitamos aprender a respetar para no interferir en la libertad de los demás, así como saber establecer ciertos límites y entablar una comunicación civilizada con las demás personas\" (Daniel, 2014).",
+            "context": "Lee el texto y contesta los reactivos relacionados.\n\n**Libertad para elegir y decidir**\n\n\"La libertad no es un regalo, es un bien natural del ser humano. Pero, como todo bien preciado, debemos aprender a hacer buen uso de ella. La libertad no significa poder hacer lo que se quiera. Vivimos en sociedad y debemos aprender a diferenciar los entresijos que ésta alberga, entender que abarca gran cantidad de seres diferentes, con diversas formas de pensar y sentir.\n\nComprender esto significa saber que existen normas de convivencia que necesitamos aprender a respetar para no interferir en la libertad de los demás, así como saber establecer ciertos límites y entablar una comunicación civilizada con las demás personas\" (Daniel, 2014).",
             "text": "Son importantes los ___ porque garantizan la libertad.",
             "options": {
               "A": "principios",
@@ -1681,7 +1680,7 @@
             "id": 121,
             "topic": "FCE.5",
             "topic_name": "Libertad — naturaleza",
-            "context": "Lee el texto y contesta los reactivos del 120 al 123.\n\n**Libertad para elegir y decidir**\n\n\"La libertad no es un regalo, es un bien natural del ser humano. Pero, como todo bien preciado, debemos aprender a hacer buen uso de ella. La libertad no significa poder hacer lo que se quiera. Vivimos en sociedad y debemos aprender a diferenciar los entresijos que ésta alberga, entender que abarca gran cantidad de seres diferentes, con diversas formas de pensar y sentir.\n\nComprender esto significa saber que existen normas de convivencia que necesitamos aprender a respetar para no interferir en la libertad de los demás, así como saber establecer ciertos límites y entablar una comunicación civilizada con las demás personas\" (Daniel, 2014).",
+            "context": "Lee el texto y contesta los reactivos relacionados.\n\n**Libertad para elegir y decidir**\n\n\"La libertad no es un regalo, es un bien natural del ser humano. Pero, como todo bien preciado, debemos aprender a hacer buen uso de ella. La libertad no significa poder hacer lo que se quiera. Vivimos en sociedad y debemos aprender a diferenciar los entresijos que ésta alberga, entender que abarca gran cantidad de seres diferentes, con diversas formas de pensar y sentir.\n\nComprender esto significa saber que existen normas de convivencia que necesitamos aprender a respetar para no interferir en la libertad de los demás, así como saber establecer ciertos límites y entablar una comunicación civilizada con las demás personas\" (Daniel, 2014).",
             "text": "La libertad no es un regalo, es un bien ___ del ser humano.",
             "options": {
               "A": "común",
@@ -1695,7 +1694,7 @@
             "id": 122,
             "topic": "FCE.6",
             "topic_name": "Normas de convivencia",
-            "context": "Lee el texto y contesta los reactivos del 120 al 123.\n\n**Libertad para elegir y decidir**\n\n\"La libertad no es un regalo, es un bien natural del ser humano. Pero, como todo bien preciado, debemos aprender a hacer buen uso de ella. La libertad no significa poder hacer lo que se quiera. Vivimos en sociedad y debemos aprender a diferenciar los entresijos que ésta alberga, entender que abarca gran cantidad de seres diferentes, con diversas formas de pensar y sentir.\n\nComprender esto significa saber que existen normas de convivencia que necesitamos aprender a respetar para no interferir en la libertad de los demás, así como saber establecer ciertos límites y entablar una comunicación civilizada con las demás personas\" (Daniel, 2014).",
+            "context": "Lee el texto y contesta los reactivos relacionados.\n\n**Libertad para elegir y decidir**\n\n\"La libertad no es un regalo, es un bien natural del ser humano. Pero, como todo bien preciado, debemos aprender a hacer buen uso de ella. La libertad no significa poder hacer lo que se quiera. Vivimos en sociedad y debemos aprender a diferenciar los entresijos que ésta alberga, entender que abarca gran cantidad de seres diferentes, con diversas formas de pensar y sentir.\n\nComprender esto significa saber que existen normas de convivencia que necesitamos aprender a respetar para no interferir en la libertad de los demás, así como saber establecer ciertos límites y entablar una comunicación civilizada con las demás personas\" (Daniel, 2014).",
             "text": "Es un ejemplo de norma de convivencia.",
             "options": {
               "A": "La recompensa es la aceptación social y armónica",
@@ -1709,7 +1708,7 @@
             "id": 123,
             "topic": "FCE.7",
             "topic_name": "Libertad — convivencia",
-            "context": "Lee el texto y contesta los reactivos del 120 al 123.\n\n**Libertad para elegir y decidir**\n\n\"La libertad no es un regalo, es un bien natural del ser humano. Pero, como todo bien preciado, debemos aprender a hacer buen uso de ella. La libertad no significa poder hacer lo que se quiera. Vivimos en sociedad y debemos aprender a diferenciar los entresijos que ésta alberga, entender que abarca gran cantidad de seres diferentes, con diversas formas de pensar y sentir.\n\nComprender esto significa saber que existen normas de convivencia que necesitamos aprender a respetar para no interferir en la libertad de los demás, así como saber establecer ciertos límites y entablar una comunicación civilizada con las demás personas\" (Daniel, 2014).",
+            "context": "Lee el texto y contesta los reactivos relacionados.\n\n**Libertad para elegir y decidir**\n\n\"La libertad no es un regalo, es un bien natural del ser humano. Pero, como todo bien preciado, debemos aprender a hacer buen uso de ella. La libertad no significa poder hacer lo que se quiera. Vivimos en sociedad y debemos aprender a diferenciar los entresijos que ésta alberga, entender que abarca gran cantidad de seres diferentes, con diversas formas de pensar y sentir.\n\nComprender esto significa saber que existen normas de convivencia que necesitamos aprender a respetar para no interferir en la libertad de los demás, así como saber establecer ciertos límites y entablar una comunicación civilizada con las demás personas\" (Daniel, 2014).",
             "text": "La libertad implica la elección y la toma de decisiones, el uso de la inteligencia y una ___ con las demás personas.",
             "options": {
               "A": "comunicación",
