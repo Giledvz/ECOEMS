@@ -157,7 +157,7 @@
               "C": "8",
               "D": "10"
             },
-            "answer": "A"
+            "answer": "D"
           },
           {
             "id": 11,
@@ -301,7 +301,7 @@
             "id": 21,
             "topic": "M.5",
             "topic_name": "Engranes — vueltas",
-            "text": "Dos ruedas dentadas engranan una con otra. La primera tiene 32 dientes y la segunda 48. La máquina se pone en movimiento.\n\n¿Después de cuántas vueltas las ruedas vuelven a alcanzar la posición original?",
+            "text": "Dos ruedas dentadas engranan una con otra. La primera tiene 32 dientes y la segunda 48.\n\n¿Cuántos dientes deben engranarse como mínimo para que ambas ruedas vuelvan a su posición original?",
             "options": {
               "A": "4",
               "B": "48",
@@ -341,7 +341,7 @@
             "id": 24,
             "topic": "M.8",
             "topic_name": "Álgebra — expresiones",
-            "text": "Hace cinco años, una madre tenía tres veces la edad de su hija Karla.\n\nRelaciona la expresión algebraica con su respectivo significado.\n\n| Expresión | Significa |\n|---|:---|\n| 1. $x$ | a) La edad actual de Karla |\n| 2. $x - 5$ | b) La edad de Karla hace 5 años |\n| 3. $3(x - 5)$ | c) La edad de la madre dentro de cinco años |\n| | d) La edad de la madre hace tres años |",
+            "text": "Hace cinco años, una madre tenía tres veces la edad de su hija Karla.\n\nRelaciona la expresión algebraica con su respectivo significado.\n\n| Expresión | Significa |\n|---|:---|\n| 1. $x$ | a) La edad actual de Karla |\n| 2. $x - 5$ | b) La edad de Karla hace 5 años |\n| 3. $3(x - 5)$ | c) La edad de la madre dentro de cinco años |\n| | d) La edad de la madre hace cinco años |",
             "options": {
               "A": "1a, 2c, 3d",
               "B": "1a, 2b, 3d",
@@ -703,12 +703,12 @@
             "topic": "Q.10",
             "topic_name": "Medicamentos — antipirético",
             "context": "La aspirina es un producto utilizado en todo el mundo debido a sus propiedades y está formado por Carbono, Hidrógeno y Oxígeno.",
-            "text": "Si afecta a la temperatura del cuerpo, ocasiona que:",
+            "text": "Por su efecto antipirético, la aspirina actúa sobre la temperatura corporal haciendo que ésta:",
             "options": {
               "A": "aumente",
               "B": "disminuya",
-              "C": "evita que disminuya",
-              "D": "inhibe las náuseas"
+              "C": "permanezca igual",
+              "D": "fluctúe"
             },
             "answer": "B"
           },
@@ -788,7 +788,7 @@
             "id": 56,
             "topic": "B.4",
             "topic_name": "Salud — tabaquismo",
-            "text": "Selecciona entre las siguientes enfermedades las que están relacionadas con el tabaquismo.\n\n1. Enfisema\n2. Gastroenteritis\n3. Arteriosclerosis\n4. Bronquitis crónica\n5. Inflamación de órganos genitales\n6. Enfermedad pulmonar obstructiva crónica",
+            "text": "Selecciona entre las siguientes enfermedades las que están relacionadas con el tabaquismo.\n\n1. Enfisema\n2. Gastroenteritis\n3. Arteriosclerosis\n4. Diabetes\n5. Inflamación de órganos genitales\n6. Enfermedad pulmonar obstructiva crónica",
             "options": {
               "A": "1, 3, 6",
               "B": "2, 3, 4",
@@ -1302,7 +1302,7 @@
             "text": "¿Cuál es el nombre del autor de la obra llamada \"La Gioconda\"?",
             "options": {
               "A": "Miguel Ángel",
-              "B": "Rene Descartes",
+              "B": "René Descartes",
               "C": "Leonardo da Vinci",
               "D": "Maquiavelo"
             },
@@ -1476,10 +1476,10 @@
             "topic_name": "Ríos de México",
             "text": "Ordena de mayor a menor los ríos de México considerando su longitud.\n\n1. Conchos\n2. Balsas\n3. Bravo\n4. Lerma",
             "options": {
-              "A": "1, 4, 5, 3",
+              "A": "1, 4, 2, 3",
               "B": "1, 2, 4, 3",
-              "C": "2, 3, 4, 5",
-              "D": "3, 1, 2, 4"
+              "C": "3, 2, 4, 1",
+              "D": "3, 4, 2, 1"
             },
             "answer": "D"
           },
@@ -1552,13 +1552,13 @@
           {
             "id": 112,
             "topic": "G.8",
-            "topic_name": "Componentes del espacio geográfico",
-            "text": "Son los componentes del espacio geográfico:",
+            "topic_name": "Zona económica exclusiva",
+            "text": "Área con una amplitud de 200 millas náuticas sobre la cual un Estado tiene derechos especiales para su exploración, explotación y utilización de recursos.",
             "options": {
-              "A": "económicos, culturales y sociales",
-              "B": "naturales, sociales y culturales",
-              "C": "culturales, sociales y económicos",
-              "D": "naturales, sociales y económicos"
+              "A": "Plataforma continental",
+              "B": "Mar territorial",
+              "C": "Aguas internacionales",
+              "D": "Zona económica exclusiva"
             },
             "answer": "D"
           },
@@ -1697,19 +1697,19 @@
             "context": "Lee el texto y contesta los reactivos relacionados.\n\n**Libertad para elegir y decidir**\n\n\"La libertad no es un regalo, es un bien natural del ser humano. Pero, como todo bien preciado, debemos aprender a hacer buen uso de ella. La libertad no significa poder hacer lo que se quiera. Vivimos en sociedad y debemos aprender a diferenciar los entresijos que ésta alberga, entender que abarca gran cantidad de seres diferentes, con diversas formas de pensar y sentir.\n\nComprender esto significa saber que existen normas de convivencia que necesitamos aprender a respetar para no interferir en la libertad de los demás, así como saber establecer ciertos límites y entablar una comunicación civilizada con las demás personas\" (Daniel, 2014).",
             "text": "Es un ejemplo de norma de convivencia.",
             "options": {
-              "A": "La recompensa es la aceptación social y armónica",
-              "B": "Es la conciencia de cada persona",
-              "C": "Establece derechos y señalan deberes",
-              "D": "Respeto por convicción y conciencia"
+              "A": "Respetar el turno de palabra al hablar en grupo",
+              "B": "Sentir empatía por las demás personas",
+              "C": "Conocer la Constitución del país",
+              "D": "Tener libertad de pensamiento"
             },
-            "answer": "C"
+            "answer": "A"
           },
           {
             "id": 123,
             "topic": "FCE.7",
             "topic_name": "Libertad — convivencia",
             "context": "Lee el texto y contesta los reactivos relacionados.\n\n**Libertad para elegir y decidir**\n\n\"La libertad no es un regalo, es un bien natural del ser humano. Pero, como todo bien preciado, debemos aprender a hacer buen uso de ella. La libertad no significa poder hacer lo que se quiera. Vivimos en sociedad y debemos aprender a diferenciar los entresijos que ésta alberga, entender que abarca gran cantidad de seres diferentes, con diversas formas de pensar y sentir.\n\nComprender esto significa saber que existen normas de convivencia que necesitamos aprender a respetar para no interferir en la libertad de los demás, así como saber establecer ciertos límites y entablar una comunicación civilizada con las demás personas\" (Daniel, 2014).",
-            "text": "La libertad implica la elección y la toma de decisiones, el uso de la inteligencia y una ___ con las demás personas.",
+            "text": "La libertad implica la elección y la toma de decisiones, el uso de la inteligencia y ___ con las demás personas.",
             "options": {
               "A": "comunicación",
               "B": "convivencia",
