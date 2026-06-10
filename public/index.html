@@ -266,11 +266,11 @@
 
   /* Scrollbar Tercial: pill coñac sobre track transparente.
      Firefox usa scrollbar-color/-width; WebKit usa los pseudo-elementos. */
-  * { scrollbar-width: thin; scrollbar-color: var(--color-border-strong) transparent; }
+  * { scrollbar-width: thin; scrollbar-color: var(--color-border-subtle) transparent; }
   ::-webkit-scrollbar { width: 10px; height: 10px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb {
-    background-color: var(--color-border-strong);
+    background-color: var(--color-border-subtle);
     border-radius: var(--radius-pill);
     border: 2px solid transparent;
     background-clip: padding-box;
@@ -885,7 +885,7 @@
     transition: opacity var(--motion-base) var(--motion-ease-standard);
   }
   .exam-option__img svg, .exam-option__img img {
-    max-width: 100%; max-height: 80px;
+    max-width: 100%; max-height: 200px;
     display: block;
   }
   .exam-option__icon {
@@ -1826,6 +1826,20 @@ async function loadInlineSVG(url) {
   }
 }
 
+// Precarga todos los SVGs del examen (figura de pregunta + opciones) al
+// __svgCache. Así, al navegar, loadInlineSVG resuelve desde caché en el mismo
+// frame (antes del paint) y no hay parpadeo/pop-in de imágenes.
+function prefetchExamSVGs(questions) {
+  const urls = new Set();
+  (questions || []).forEach(q => {
+    if (q.image && /\.svg$/i.test(q.image)) urls.add(q.image);
+    if (q.option_images) Object.values(q.option_images).forEach(p => {
+      if (p && /\.svg$/i.test(p)) urls.add(p);
+    });
+  });
+  urls.forEach(u => { loadInlineSVG(u); });
+}
+
 // renderMarkdownTable y renderMath viven en /shared/markdown-render.js
 // (compartido con server.js para que el PDF y el examen rendereen igual).
 
@@ -2093,8 +2107,12 @@ document.getElementById('nameSelect').addEventListener('keydown', (e) => {
 })();
 
 // ── Question rendering ──
+let __renderSeq = 0;
 function renderQuestion() {
   if (state.questions.length === 0) return;
+  // Token de secuencia: invalida callbacks async (SVG inline) de renders previos
+  // para que no escriban contenido viejo en el DOM tras cambiar de pregunta.
+  const mySeq = ++__renderSeq;
   const q = state.questions[state.currentQ];
   document.getElementById('qCounter').textContent = `${state.currentQ + 1}/${state.questions.length}`;
   document.getElementById('qSubject').textContent = q.subject;
@@ -2129,9 +2147,10 @@ function renderQuestion() {
     if (/\.svg$/i.test(q.image)) {
       // Inline el SVG para que herede color del tema (currentColor).
       loadInlineSVG(q.image).then(svg => {
+        if (mySeq !== __renderSeq) return; // render obsoleto: no escribir
         if (svg) { qImgSvg.innerHTML = svg; qImgSvg.style.display = 'block'; }
         else { qImg.src = q.image; qImg.style.display = 'block'; }
-      }).catch(() => { qImg.src = q.image; qImg.style.display = 'block'; });
+      }).catch(() => { if (mySeq === __renderSeq) { qImg.src = q.image; qImg.style.display = 'block'; } });
     } else {
       qImg.src = q.image;
       qImg.style.display = 'block';
@@ -2182,13 +2201,16 @@ function renderQuestion() {
     if (!path) return;
     if (/\.svg$/i.test(path)) {
       loadInlineSVG(path).then(svg => {
+        if (mySeq !== __renderSeq) return; // render obsoleto: no escribir
         if (svg) span.innerHTML = svg;
         else span.innerHTML = `<img src="${path}" alt="">`;
-      }).catch(() => { span.innerHTML = `<img src="${path}" alt="">`; });
+      }).catch(() => { if (mySeq === __renderSeq) span.innerHTML = `<img src="${path}" alt="">`; });
     } else {
       span.innerHTML = `<img src="${path}" alt="">`;
     }
   });
+
+  adaptBlankWidths(q);
 
   const expDiv = document.getElementById('qExplanation');
   const expText = state.explanations && state.explanations[q.id];
@@ -3148,6 +3170,42 @@ async function _downloadPDFImpl(onDone) {
   setTimeout(triggerSave, 400);
 }
 
+// Líneas de relleno adaptativas: cada blanco (___) se ajusta a la opción (o
+// parte de opción) más larga que puede ir ahí, + 3px, medido con la tipografía
+// real de las opciones. Sólo con opciones de texto puro (sin imágenes).
+// Si hay N blancos y las opciones son "a / b / ..." con N partes, cada blanco
+// se mide contra su parte correspondiente (p. ej. "Tipo / propósito").
+function adaptBlankWidths(q) {
+  const blanks = document.querySelectorAll('#qText .md-blank, #qContext .md-blank');
+  if (!blanks.length) return;
+  const optVals = Object.values(q.options || {});
+  if (!optVals.length || q.option_images || optVals.some(v => /<img/i.test(v))) return;
+
+  const meas = document.createElement('span');
+  meas.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;left:-9999px;top:0;';
+  const ref = document.querySelector('.exam-option__text');
+  if (ref) {
+    const cs = getComputedStyle(ref);
+    meas.style.font = cs.font;
+    meas.style.letterSpacing = cs.letterSpacing;
+  }
+  document.body.appendChild(meas);
+  const widthOf = (s) => { meas.innerHTML = renderMath(s); return meas.offsetWidth; };
+
+  // ¿Todas las opciones se parten en tantas partes como blancos? → por columna.
+  const parts = optVals.map(v => v.split(/\s*\/\s*/));
+  const perBlank = blanks.length > 1 && parts.every(p => p.length === blanks.length);
+
+  blanks.forEach((b, i) => {
+    let max = 0;
+    if (perBlank) parts.forEach(p => { max = Math.max(max, widthOf(p[i])); });
+    else optVals.forEach(v => { max = Math.max(max, widthOf(v)); });
+    b.style.width = Math.min(max + 3, 420) + 'px';
+  });
+
+  document.body.removeChild(meas);
+}
+
 function startReview() {
   state.reviewMode = true;
   document.getElementById('reviewBanner').style.display = '';
@@ -3245,6 +3303,7 @@ socket.on('joinError', (msg) => { document.getElementById('errorMsg').textConten
 
 socket.on('joined', (data) => {
   state.questions = data.questions; state.answers = {}; state.marked = []; state.currentQ = 0;
+  prefetchExamSVGs(state.questions);
   state.answerKey = {}; state.submitted = false; state.reviewMode = false;
   state.name = data.name; state.group = data.group; state.timeLimit = data.timeLimit;
   state.lockedOptions = !!data.lockedOptions;

@@ -84,13 +84,19 @@
             "topic_name": "Serie espacial — completar",
             "text": "Selecciona entre las opciones la figura que completa correctamente esta serie:",
             "options": {
-              "A": "<img src=\"/imagenes_ecoems-8/q5_a.svg\" style=\"width:100%;max-width:110px;display:block;\">",
-              "B": "<img src=\"/imagenes_ecoems-8/q5_b.svg\" style=\"width:100%;max-width:110px;display:block;\">",
-              "C": "<img src=\"/imagenes_ecoems-8/q5_c.svg\" style=\"width:100%;max-width:110px;display:block;\">",
-              "D": "<img src=\"/imagenes_ecoems-8/q5_d.svg\" style=\"width:100%;max-width:110px;display:block;\">"
+              "A": "Cuadro con ■ abajo-izq, ○ abajo-der y ⊣ arriba-der",
+              "B": "Cuadro con ■ arriba-izq, ○ abajo-izq y ⊥ arriba-der",
+              "C": "Cuadro con ■ abajo-izq, ○ arriba-izq y ⊢ arriba-der",
+              "D": "Cuadro con ■ abajo-izq, ○ arriba-izq y ⊤ arriba-der"
             },
             "answer": "C",
-            "image": "/imagenes_ecoems-8/q5_serie.svg"
+            "image": "/imagenes_ecoems-8/q5_serie.svg",
+            "option_images": {
+              "A": "/imagenes_ecoems-8/q5_a.svg",
+              "B": "/imagenes_ecoems-8/q5_b.svg",
+              "C": "/imagenes_ecoems-8/q5_c.svg",
+              "D": "/imagenes_ecoems-8/q5_d.svg"
+            }
           },
           {
             "id": 6,
@@ -98,13 +104,19 @@
             "topic_name": "Serie espacial — pentágonos",
             "text": "Selecciona entre las opciones el elemento siguiente de esta serie espacial.",
             "options": {
-              "A": "<img src=\"/imagenes_ecoems-8/q6_a.svg\" style=\"width:100%;max-width:110px;display:block;\">",
-              "B": "<img src=\"/imagenes_ecoems-8/q6_b.svg\" style=\"width:100%;max-width:110px;display:block;\">",
-              "C": "<img src=\"/imagenes_ecoems-8/q6_c.svg\" style=\"width:100%;max-width:110px;display:block;\">",
-              "D": "<img src=\"/imagenes_ecoems-8/q6_d.svg\" style=\"width:100%;max-width:110px;display:block;\">"
+              "A": "Pentágono con cuadrado dentro del círculo",
+              "B": "Pentágono con triángulo invertido dentro del círculo",
+              "C": "Pentágono con raya vertical dentro del círculo",
+              "D": "Pentágono con equis dentro del círculo"
             },
             "answer": "A",
-            "image": "/imagenes_ecoems-8/q6_serie.svg"
+            "image": "/imagenes_ecoems-8/q6_serie.svg",
+            "option_images": {
+              "A": "/imagenes_ecoems-8/q6_a.svg",
+              "B": "/imagenes_ecoems-8/q6_b.svg",
+              "C": "/imagenes_ecoems-8/q6_c.svg",
+              "D": "/imagenes_ecoems-8/q6_d.svg"
+            }
           },
           {
             "id": 7,
@@ -168,13 +180,19 @@
             "topic_name": "Cubos — figura no formable",
             "text": "Si cambiaras la posición de solamente un cubo de la siguiente figura, ¿cuál cuerpo no podrías formar?",
             "options": {
-              "A": "<img src=\"/imagenes_ecoems-8/q11_a.svg\" style=\"width:100%;max-width:220px;display:block;\">",
-              "B": "<img src=\"/imagenes_ecoems-8/q11_b.svg\" style=\"width:100%;max-width:220px;display:block;\">",
-              "C": "<img src=\"/imagenes_ecoems-8/q11_c.svg\" style=\"width:100%;max-width:220px;display:block;\">",
-              "D": "<img src=\"/imagenes_ecoems-8/q11_d.svg\" style=\"width:100%;max-width:220px;display:block;\">"
+              "A": "Fila de 3 cubos al fondo con 2 cubos encima de los primeros",
+              "B": "Fila de 3 cubos al frente con torres de 2 en los extremos",
+              "C": "Fila de 3 cubos al fondo con torre de 3 en el centro",
+              "D": "Escuadra de 4 cubos con torre de 2 al fondo"
             },
             "answer": "C",
-            "image": "/imagenes_ecoems-8/q11_original.svg"
+            "image": "/imagenes_ecoems-8/q11_original.svg",
+            "option_images": {
+              "A": "/imagenes_ecoems-8/q11_a.svg",
+              "B": "/imagenes_ecoems-8/q11_b.svg",
+              "C": "/imagenes_ecoems-8/q11_c.svg",
+              "D": "/imagenes_ecoems-8/q11_d.svg"
+            }
           },
           {
             "id": 12,
@@ -385,12 +403,18 @@
             "topic_name": "Función lineal — gráfica",
             "text": "El precio de una página impresa en papel es $\\$1$; por consiguiente, el precio de imprimir seis páginas es $\\$6$. Selecciona entre las opciones la gráfica que representa correctamente esta función.",
             "options": {
-              "A": "<img src=\"/imagenes_ecoems-8/q27_a.svg\" style=\"width:100%;max-width:150px;display:block;\">",
-              "B": "<img src=\"/imagenes_ecoems-8/q27_b.svg\" style=\"width:100%;max-width:150px;display:block;\">",
-              "C": "<img src=\"/imagenes_ecoems-8/q27_c.svg\" style=\"width:100%;max-width:150px;display:block;\">",
-              "D": "<img src=\"/imagenes_ecoems-8/q27_d.svg\" style=\"width:100%;max-width:150px;display:block;\">"
+              "A": "Recta creciente que pasa por el origen",
+              "B": "Recta horizontal constante",
+              "C": "Recta decreciente",
+              "D": "Recta creciente que no pasa por el origen"
             },
-            "answer": "A"
+            "answer": "A",
+            "option_images": {
+              "A": "/imagenes_ecoems-8/q27_a.svg",
+              "B": "/imagenes_ecoems-8/q27_b.svg",
+              "C": "/imagenes_ecoems-8/q27_c.svg",
+              "D": "/imagenes_ecoems-8/q27_d.svg"
+            }
           },
           {
             "id": 28,
@@ -578,7 +602,7 @@
             "id": 41,
             "topic": "Q.1",
             "topic_name": "Métodos de separación — filtración",
-            "text": "Con la finalidad de limpiar una pequeña muestra de agua turbia en un laboratorio, se monta el siguiente aparato. Un anillo se sujeta a un soporte universal para sostener un embudo con un cono de papel filtro y carbón.\n\nEl agua que pasa a través del carbón y del papel filtro, escurre limpia en un vaso de precipitados.\n\n¿Cómo se denomina este método de separación del agua?",
+            "text": "Con la finalidad de limpiar una pequeña muestra de agua turbia en un laboratorio, se monta el siguiente aparato. Un anillo se sujeta a un soporte universal para sostener un embudo con un cono de papel filtro y carbón.\n\nEl agua que pasa a través del carbón y del papel filtro escurre limpia en un vaso de precipitados.\n\n¿Cómo se denomina este método de separación del agua?",
             "options": {
               "A": "Precipitación",
               "B": "Decantación",
@@ -998,12 +1022,12 @@
             "id": 72,
             "topic": "HV.8",
             "topic_name": "A Brief History — propósito del texto",
-            "text": "Aun cuando solamente has leído un fragmento de la obra *A brief history of the mind*, de William Calvin, es posible concluir que este texto ___________ tiene el propósito de ___________.",
+            "text": "Aun cuando solamente has leído un fragmento de la obra *A Brief History of the Mind*, de William Calvin, es posible concluir que este texto ___________ tiene el propósito de ___________.",
             "options": {
-              "A": "Legal / proporcionar diversos antecedentes de un problema judicial africano.",
-              "B": "Publicitario / describir la trama de una película de ciencia ficción.",
+              "A": "Legal / proporcionar diversos antecedentes de un problema judicial africano",
+              "B": "Publicitario / describir la trama de una película de ciencia ficción",
               "C": "Administrativo / resumir datos para una toma de decisiones",
-              "D": "Académico / divulgar científicamente cómo fue la evolución de la mente humana."
+              "D": "Académico / divulgar científicamente cómo fue la evolución de la mente humana"
             },
             "answer": "D"
           },
@@ -1271,7 +1295,7 @@
               "A": "Archivar los libros de una biblioteca",
               "B": "Citar una fuente de información",
               "C": "Transcribir información de un libro",
-              "D": "Identificar una obra y registrar datos extraídos de ella."
+              "D": "Identificar una obra y registrar datos extraídos de ella"
             },
             "answer": "D"
           }
@@ -1289,7 +1313,7 @@
               "A": "A los pueblos bárbaros, especialmente las tribus germánicas",
               "B": "A los árabes",
               "C": "A los griegos",
-              "D": "A los mismos romanos en un golpe de estado"
+              "D": "A los mismos romanos en un golpe de Estado"
             },
             "answer": "A"
           },
@@ -1741,18 +1765,18 @@
               "A": "La igualdad",
               "B": "La religión",
               "C": "La disciplina",
-              "D": "El respeto, la solidaridad, la tolerancia, la cooperación y libertad"
+              "D": "El respeto, la solidaridad, la tolerancia, la cooperación y la libertad"
             },
             "answer": "D"
           },
           {
             "id": 128,
             "topic": "FCE.12",
-            "topic_name": "Jefe de gobierno DF",
-            "text": "El jefe de gobierno del Distrito Federal es nombrado o electo por:",
+            "topic_name": "Jefe de gobierno CDMX",
+            "text": "El jefe de gobierno de la Ciudad de México es nombrado o electo por:",
             "options": {
-              "A": "Los ciudadanos que habitan en el Distrito Federal",
-              "B": "La Asamblea Legislativa",
+              "A": "Los ciudadanos que habitan en la Ciudad de México",
+              "B": "El Congreso de la Ciudad de México",
               "C": "El Congreso de la Unión",
               "D": "El presidente de los Estados Unidos Mexicanos"
             },

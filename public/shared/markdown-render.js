@@ -25,7 +25,7 @@
         .replace(/&lt;br\s*\/?&gt;/g, '<br>')
         .replace(/&lt;img\s+([^&]*?)\/?&gt;/g, '<img $1>')
         .replace(/_{3,}/g, function(m) {
-          return '<span style="display:inline-block;border-bottom:1px solid currentColor;width:' + (m.length * 1.3) + 'em;height:1.5px;background-color:currentColor;vertical-align:0.18em;"></span>';
+          return '<span class="md-blank" style="display:inline-block;border-bottom:1px solid currentColor;width:' + (m.length * 1.3) + 'em;height:1.5px;background-color:currentColor;vertical-align:0.18em;"></span>';
         })
         .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
         .replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g, '$1<b>$2</b>');
@@ -158,7 +158,7 @@
           // Ancho: 0.85em por underscore.
           .replace(/_{3,}/g, function(m){
             var w = (m.length * 2.2).toFixed(2);
-            return '<span style="display:inline-block; width:' + w + 'em; height:1.5px; background-color:var(--md-text); vertical-align:0; margin:0 0.18em;"></span>';
+            return '<span class="md-blank" style="display:inline-block; width:' + w + 'em; height:1.5px; background-color:var(--md-text); vertical-align:0; margin:0 0.18em;"></span>';
           })
           .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
           .replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g, '$1<i>$2</i>')

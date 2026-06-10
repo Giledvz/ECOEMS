@@ -240,6 +240,7 @@ app.post('/api/dev-reload/:roomCode', (req, res) => {
       newQuestions.push({
         id: q.id, text: q.text, context: q.context || null,
         options: q.options, image: q.image || null,
+        option_images: q.option_images || null,
         topic: q.topic, topic_name: q.topic_name || '',
         subject: section.subject, explanation: q.explanation || '',
       });
