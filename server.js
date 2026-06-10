@@ -49,11 +49,12 @@ function generateRoomCode() {
   return code;
 }
 
-function createRoom(data, jsonFilename = null, lockedOptions = false) {
+function createRoom(data, jsonFilename = null, lockedOptions = false, opts = {}) {
   const roomCode = generateRoomCode();
   const room = {
     roomCode,
     phase: 'waiting',
+    mode: opts.mode === 'practice' ? 'practice' : 'exam',
     title: data.exam?.title || 'Examen',
     group: data.exam?.group || 'Sin grupo',
     date: data.exam?.date || new Date().toISOString().split('T')[0],
@@ -86,8 +87,91 @@ function createRoom(data, jsonFilename = null, lockedOptions = false) {
     });
   });
 
+  // Modo práctica (Carrusel): preguntas filtradas por materia y barajadas en
+  // miscelánea UNA sola vez — todos los participantes ven la misma pregunta
+  // con las mismas letras, para poder discutirla en voz alta.
+  if (room.mode === 'practice') {
+    const subjects = Array.isArray(opts.subjects) && opts.subjects.length ? opts.subjects : null;
+    if (subjects) {
+      room.questions = room.questions.filter(q => subjects.includes(q.subject));
+    }
+    room.questions = shuffle(room.questions);
+    room.practice = {
+      idx: 0,
+      phase: 'answering',   // 'answering' | 'revealed'
+      turnQueue: [],        // nombres en orden de llegada (estable ante reconexión)
+      turnPos: 0,
+      turnManual: false,    // true si el profe asignó el turno a mano (Siguiente lo respeta)
+      scores: {},           // nombre -> { correct, answered }
+      lastResult: null,     // { qid, name, answer, correctAnswer, isCorrect, explanation }
+    };
+  }
+
   rooms.set(roomCode, room);
   return room;
+}
+
+// ─── Modo práctica (Carrusel): helpers ──────────────────────────────────────
+function practiceTurnName(room) {
+  const p = room.practice;
+  if (!p || p.turnQueue.length === 0) return null;
+  return p.turnQueue[p.turnPos % p.turnQueue.length];
+}
+
+function isNameConnected(room, name) {
+  return Object.values(room.students).some(s => s.connected && s.name === name);
+}
+
+// Avanza el turno al siguiente alumno conectado (máximo una vuelta completa;
+// si nadie está conectado, avanza una posición y el cliente muestra el estado).
+function advancePracticeTurn(room) {
+  const p = room.practice;
+  if (!p || p.turnQueue.length === 0) return;
+  for (let i = 0; i < p.turnQueue.length; i++) {
+    p.turnPos = (p.turnPos + 1) % p.turnQueue.length;
+    if (isNameConnected(room, practiceTurnName(room))) return;
+  }
+}
+
+function buildPracticeState(room) {
+  const p = room.practice;
+  if (!p) return null;
+  const finished = p.idx >= room.questions.length;
+  const q = finished ? null : room.questions[p.idx];
+  return {
+    idx: p.idx,
+    total: room.questions.length,
+    qid: q ? q.id : null,
+    subject: q ? q.subject : null,
+    phase: finished ? 'finished' : p.phase,
+    turnName: practiceTurnName(room),
+    turnConnected: practiceTurnName(room) ? isNameConnected(room, practiceTurnName(room)) : false,
+    turnQueue: p.turnQueue,
+    scores: p.scores,
+    lastResult: p.lastResult,
+  };
+}
+
+// Estado extendido SOLO para el panel del profesor: incluye la pregunta
+// completa y la respuesta correcta (el alumno la recibe hasta el revelado).
+function buildPracticeTeacherState(room) {
+  const p = room.practice;
+  const q = (p && p.idx < room.questions.length) ? room.questions[p.idx] : null;
+  return {
+    roomCode: room.roomCode,
+    state: buildPracticeState(room),
+    question: q ? {
+      id: q.id, text: q.text, context: q.context, options: q.options,
+      option_images: q.option_images, image: q.image, subject: q.subject,
+      topic_name: q.topic_name || '', explanation: q.explanation || '',
+    } : null,
+    correctAnswer: q ? room.answerKey[q.id] : null,
+  };
+}
+
+function broadcastPractice(room) {
+  io.to(room.roomCode).emit('practiceState', buildPracticeState(room));
+  io.to('teachers').emit('practiceTeacherState', buildPracticeTeacherState(room));
 }
 
 function buildRoomsList() {
@@ -98,6 +182,7 @@ function buildRoomsList() {
       title: room.title,
       group: room.group,
       phase: room.phase,
+      mode: room.mode || 'exam',
       totalQuestions: room.questions.length,
       studentCount: Object.values(room.students).filter(s => s.connected).length,
     });
@@ -209,10 +294,22 @@ app.post('/api/upload-exam', (req, res) => {
   try {
     const filename = req.headers['x-exam-filename'] || null;
     const lockedOptions = req.headers['x-locked-options'] === '1';
-    const room = createRoom(req.body, filename, lockedOptions);
-    console.log(`Sala ${room.roomCode} creada: "${room.title}" (${room.questions.length} preguntas${lockedOptions ? ', candado activado' : ''})${filename ? ` [archivo: ${filename}]` : ''}`);
+    const mode = req.headers['x-mode'] === 'practice' ? 'practice' : 'exam';
+    // x-subjects: encodeURIComponent(JSON.stringify([...materias])) — filtro
+    // de materias para el modo práctica.
+    let subjects = null;
+    if (req.headers['x-subjects']) {
+      try { subjects = JSON.parse(decodeURIComponent(req.headers['x-subjects'])); } catch (e) {}
+    }
+    const room = createRoom(req.body, filename, lockedOptions, { mode, subjects });
+    if (room.questions.length === 0) {
+      rooms.delete(room.roomCode);
+      return res.status(400).json({ error: 'La selección no dejó ninguna pregunta' });
+    }
+    const modeTag = mode === 'practice' ? ', modo práctica' : '';
+    console.log(`Sala ${room.roomCode} creada: "${room.title}" (${room.questions.length} preguntas${lockedOptions ? ', candado activado' : ''}${modeTag})${filename ? ` [archivo: ${filename}]` : ''}`);
     broadcastRoomsList();
-    res.json({ success: true, totalQuestions: room.questions.length, roomCode: room.roomCode });
+    res.json({ success: true, totalQuestions: room.questions.length, roomCode: room.roomCode, mode: room.mode });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
@@ -223,6 +320,7 @@ app.post('/api/upload-exam', (req, res) => {
 app.post('/api/dev-reload/:roomCode', (req, res) => {
   const room = rooms.get(req.params.roomCode);
   if (!room) return res.status(404).json({ error: 'Sala no encontrada' });
+  if (room.mode === 'practice') return res.status(400).json({ error: 'Recargar no aplica a salas de práctica (las preguntas van filtradas y barajadas); crea la sala de nuevo' });
   if (room.phase === 'active') return res.status(400).json({ error: 'No se puede recargar con el examen activo' });
   if (!room.jsonFilename) return res.status(400).json({ error: 'Sala sin archivo asociado (re-súbela)' });
 
@@ -1018,6 +1116,7 @@ io.on('connection', (socket) => {
     socket.emit('roomJoined', {
       roomCode,
       phase: room.phase,
+      mode: room.mode || 'exam',
       title: room.title,
       group: room.group,
       studentList: room.studentList,
@@ -1061,21 +1160,31 @@ io.on('connection', (socket) => {
       delete room.students[oldId];
       console.log(`[${roomCode}] ${cleanName} reconectado`);
     } else {
-      const questionsBySubject = {};
-      room.questions.forEach(q => {
-        if (!questionsBySubject[q.subject]) questionsBySubject[q.subject] = [];
-        questionsBySubject[q.subject].push(q.id);
-      });
-      const shuffledSubjects = shuffle(Object.keys(questionsBySubject));
-      const questionOrder = [];
-      shuffledSubjects.forEach(subj => {
-        questionsBySubject[subj].forEach(id => questionOrder.push(id));
-      });
-
+      let questionOrder;
       const optionOrders = {};
-      room.questions.forEach(q => {
-        optionOrders[q.id] = shuffle(Object.keys(q.options));
-      });
+      if (room.mode === 'practice') {
+        // Práctica: orden global de la sala y opciones SIN barajar — todos ven
+        // exactamente lo mismo para poder discutirlo en voz alta.
+        questionOrder = room.questions.map(q => q.id);
+        room.questions.forEach(q => {
+          optionOrders[q.id] = Object.keys(q.options);
+        });
+      } else {
+        const questionsBySubject = {};
+        room.questions.forEach(q => {
+          if (!questionsBySubject[q.subject]) questionsBySubject[q.subject] = [];
+          questionsBySubject[q.subject].push(q.id);
+        });
+        const shuffledSubjects = shuffle(Object.keys(questionsBySubject));
+        questionOrder = [];
+        shuffledSubjects.forEach(subj => {
+          questionsBySubject[subj].forEach(id => questionOrder.push(id));
+        });
+
+        room.questions.forEach(q => {
+          optionOrders[q.id] = shuffle(Object.keys(q.options));
+        });
+      }
 
       room.students[socket.id] = {
         name: cleanName,
@@ -1114,10 +1223,23 @@ io.on('connection', (socket) => {
       return { id: q.id, text: q.text, context: q.context || null, options: newOptions, option_images: newOptionImages, image: q.image, subject: q.subject, topic_name: q.topic_name || '' };
     });
 
+    // Práctica: registrar en la cola de turnos (por nombre, estable ante
+    // reconexión) e inicializar marcador. Usa el nombre canónico del registro
+    // del alumno (en reconexión puede teclearlo con otras mayúsculas).
+    if (room.mode === 'practice' && room.practice) {
+      const p = room.practice;
+      const canonical = room.students[socket.id].name;
+      if (!p.turnQueue.some(n => n.toLowerCase() === canonical.toLowerCase())) {
+        p.turnQueue.push(canonical);
+      }
+      if (!p.scores[canonical]) p.scores[canonical] = { correct: 0, answered: 0 };
+    }
+
     const joinPayload = {
       name: cleanName,
       group: room.group,
       title: room.title,
+      mode: room.mode || 'exam',
       questions: questionsForStudent,
       timeLimit: room.timeLimitMinutes,
       examActive: room.phase === 'active',
@@ -1128,7 +1250,11 @@ io.on('connection', (socket) => {
       serverTime: Date.now(),
     };
 
-    if (student.submitted) {
+    if (room.mode === 'practice') {
+      joinPayload.practice = buildPracticeState(room);
+    }
+
+    if (room.mode !== 'practice' && student.submitted) {
       let correct = 0;
       room.questions.forEach(q => {
         const key = student.answerKey?.[q.id] ?? room.answerKey[q.id];
@@ -1146,6 +1272,7 @@ io.on('connection', (socket) => {
     socket.emit('joined', joinPayload);
 
     io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
+    if (room.mode === 'practice') broadcastPractice(room);
     broadcastRoomsList();
     console.log(`[${roomCode}] ${cleanName} (${room.group}) se unió`);
   });
@@ -1155,6 +1282,7 @@ io.on('connection', (socket) => {
     const roomCode = socketRoom.get(socket.id);
     const room = roomCode && rooms.get(roomCode);
     if (!room) return;
+    if (room.mode === 'practice') return; // práctica usa practiceAnswer
     const student = room.students[socket.id];
     if (!student || student.submitted || student.cancelled) return;
     if (room.phase !== 'active') return;
@@ -1162,11 +1290,70 @@ io.on('connection', (socket) => {
     io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
   });
 
+  // ── Práctica (Carrusel): el alumno en turno contesta la pregunta actual ──
+  socket.on('practiceAnswer', ({ answer }) => {
+    const roomCode = socketRoom.get(socket.id);
+    const room = roomCode && rooms.get(roomCode);
+    if (!room || room.mode !== 'practice' || !room.practice) return;
+    if (room.phase !== 'active') return;
+    const p = room.practice;
+    if (p.phase !== 'answering' || p.idx >= room.questions.length) return;
+    const student = room.students[socket.id];
+    if (!student) return;
+    const turnName = practiceTurnName(room);
+    if (!turnName || student.name.toLowerCase() !== turnName.toLowerCase()) return; // no es su turno
+    const q = room.questions[p.idx];
+    if (!Object.prototype.hasOwnProperty.call(q.options, answer)) return;
+    const correctAnswer = room.answerKey[q.id];
+    const isCorrect = answer === correctAnswer;
+    if (!p.scores[student.name]) p.scores[student.name] = { correct: 0, answered: 0 };
+    p.scores[student.name].answered++;
+    if (isCorrect) p.scores[student.name].correct++;
+    p.lastResult = { qid: q.id, name: student.name, answer, correctAnswer, isCorrect, explanation: q.explanation || '' };
+    p.phase = 'revealed';
+    p.turnManual = false; // la asignación manual (si la hubo) ya se cumplió
+    broadcastPractice(room);
+    console.log(`[${roomCode}] Carrusel: ${student.name} → ${answer} en P${q.id} (${isCorrect ? 'correcta' : `incorrecta, era ${correctAnswer}`})`);
+  });
+
+  // ── Práctica (Carrusel): el profesor avanza a la siguiente pregunta ──
+  socket.on('practiceNext', ({ roomCode }) => {
+    const room = rooms.get(roomCode);
+    if (!room || room.mode !== 'practice' || !room.practice) return;
+    if (room.phase !== 'active') return;
+    const p = room.practice;
+    if (p.idx < room.questions.length) p.idx++;
+    p.phase = 'answering';
+    p.lastResult = null;
+    // Si el profe asignó turno a mano y aún no se cumple, la siguiente pregunta
+    // la contesta ese alumno (no se rota encima de la asignación).
+    if (p.idx < room.questions.length) {
+      if (p.turnManual) p.turnManual = false;
+      else advancePracticeTurn(room);
+    }
+    broadcastPractice(room);
+    console.log(`[${roomCode}] Carrusel: pregunta ${Math.min(p.idx + 1, room.questions.length)}/${room.questions.length}, turno de ${practiceTurnName(room) || '—'}`);
+  });
+
+  // ── Práctica (Carrusel): el profesor reasigna el turno ──
+  socket.on('practiceSetTurn', ({ roomCode, name }) => {
+    const room = rooms.get(roomCode);
+    if (!room || room.mode !== 'practice' || !room.practice) return;
+    const p = room.practice;
+    const i = p.turnQueue.findIndex(n => n.toLowerCase() === String(name).toLowerCase());
+    if (i === -1) return;
+    p.turnPos = i;
+    p.turnManual = true;
+    broadcastPractice(room);
+    console.log(`[${roomCode}] Carrusel: turno reasignado a ${p.turnQueue[i]}`);
+  });
+
   // ── Student switches tab ──
   socket.on('tabSwitch', () => {
     const roomCode = socketRoom.get(socket.id);
     const room = roomCode && rooms.get(roomCode);
     if (!room) return;
+    if (room.mode === 'practice') return; // sesión guiada: sin candado de pestañas
     if (room.phase !== 'active') return;
     const student = room.students[socket.id];
     if (!student || student.submitted || student.cancelled) return;
@@ -1214,6 +1401,7 @@ io.on('connection', (socket) => {
     const roomCode = socketRoom.get(socket.id);
     const room = roomCode && rooms.get(roomCode);
     if (!room) { if (typeof ack === 'function') ack({ ok: false, error: 'no room' }); return; }
+    if (room.mode === 'practice') { if (typeof ack === 'function') ack({ ok: false, error: 'practice mode' }); return; }
     const student = room.students[socket.id];
     if (!student) { if (typeof ack === 'function') ack({ ok: false, error: 'no student' }); return; }
 
@@ -1258,14 +1446,25 @@ io.on('connection', (socket) => {
     room.startTime = Date.now();
     Object.values(room.students).forEach(s => { s.startTime = room.startTime; });
     io.to(roomCode).emit('examStarted', { startTime: room.startTime, timeLimit: room.timeLimitMinutes, serverTime: Date.now() });
+    if (room.mode === 'practice') broadcastPractice(room);
     broadcastRoomsList();
-    console.log(`[${roomCode}] Examen iniciado`);
+    console.log(`[${roomCode}] ${room.mode === 'practice' ? 'Práctica iniciada' : 'Examen iniciado'}`);
   });
 
   // ── Teacher: close exam ──
   socket.on('closeExam', ({ roomCode }) => {
     const room = rooms.get(roomCode);
     if (!room) return;
+    // Práctica: cerrar es solo terminar la sesión — sin auto-entrega, sin
+    // comprobantes PDF ni clave. Se envía el marcador final a todos.
+    if (room.mode === 'practice') {
+      room.phase = 'closed';
+      io.to(roomCode).emit('practiceClosed', { scores: room.practice?.scores || {} });
+      io.to('teachers').emit('roomClosed', { roomCode, mode: 'practice' });
+      broadcastRoomsList();
+      console.log(`[${roomCode}] Práctica cerrada`);
+      return;
+    }
     room.phase = 'closed';
     Object.entries(room.students).forEach(([id, s]) => {
       if (!s.submitted) {
@@ -1290,7 +1489,7 @@ io.on('connection', (socket) => {
       }
     });
     io.to(roomCode).emit('examClosed');
-    io.to('teachers').emit('roomClosed', { roomCode });
+    io.to('teachers').emit('roomClosed', { roomCode, mode: 'exam' });
     broadcastRoomsList();
     console.log(`[${roomCode}] Examen cerrado`);
     // Asegura PDF para todos los alumnos que entregaron (incluye los que se
@@ -1306,6 +1505,9 @@ io.on('connection', (socket) => {
     room.phase = 'waiting';
     room.students = {};
     room.startTime = null;
+    if (room.mode === 'practice' && room.practice) {
+      room.practice = { idx: 0, phase: 'answering', turnQueue: [], turnPos: 0, scores: {}, lastResult: null };
+    }
     io.to(roomCode).emit('examReset');
     broadcastRoomsList();
     console.log(`[${roomCode}] Examen reiniciado`);
@@ -1363,6 +1565,7 @@ io.on('connection', (socket) => {
     socket.emit('roomState', {
       roomCode: room.roomCode,
       phase: room.phase,
+      mode: room.mode || 'exam',
       title: room.title,
       group: room.group,
       totalQuestions: room.questions.length,
@@ -1370,6 +1573,7 @@ io.on('connection', (socket) => {
       timeLimit: room.timeLimitMinutes,
     });
     socket.emit('studentsUpdate', getStudentSummary(room));
+    if (room.mode === 'practice') socket.emit('practiceTeacherState', buildPracticeTeacherState(room));
   });
 
   // ── Disconnect ──
@@ -1380,6 +1584,7 @@ io.on('connection', (socket) => {
       if (room && room.students[socket.id]) {
         room.students[socket.id].connected = false;
         io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
+        if (room.mode === 'practice') broadcastPractice(room); // refresca indicador de turno conectado
         broadcastRoomsList();
         console.log(`[${roomCode}] ${room.students[socket.id].name} desconectado`);
       }

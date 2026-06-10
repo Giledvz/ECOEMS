@@ -947,6 +947,49 @@
   .exam-option--locked[data-revealed="true"] .exam-option__text { opacity: 1; }
   .exam-option--locked[data-revealed="true"] .exam-option__lock { opacity: 0; }
 
+  /* exam-option--spectator: modo práctica (Carrusel). El alumno que NO está en
+     turno ve las opciones legibles (para pensar junto al compañero) pero sin
+     poder interactuar; un candado tenue indica que no es su turno. */
+  .exam-option--spectator { pointer-events: none; }
+  .exam-option--spectator .exam-option__lock { opacity: 0.55; }
+
+  /* ── Modo práctica (Carrusel): banner de turno + marcador ── */
+  .practice-bar { margin: var(--space-4) 0 0; }
+  .practice-turn {
+    background-color: var(--color-bg-raised);
+    border: 1px solid var(--color-border-subtle);
+    border-left: 3px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    padding: var(--space-4) var(--space-5);
+  }
+  .practice-turn--mine,
+  .practice-turn--ok { border-left-color: var(--state-ok); background-color: var(--state-ok-bg); }
+  .practice-turn--err { border-left-color: var(--state-err); background-color: var(--state-err-bg); }
+  .practice-turn__hint {
+    display: block; margin-top: var(--space-2);
+    font-size: var(--font-size-12, 12px);
+    color: var(--color-text-meta);
+  }
+  .practice-scores {
+    display: flex; flex-wrap: wrap; gap: var(--space-2);
+    margin-top: var(--space-3);
+  }
+  .practice-chip {
+    font-size: var(--font-size-12, 12px);
+    padding: 3px 12px;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-pill);
+    color: var(--color-text-secondary);
+    background-color: var(--color-bg-raised);
+  }
+  .practice-chip--me { border-color: var(--color-accent); color: var(--color-text-primary); }
+  .practice-final { margin-top: var(--space-3); display: flex; flex-direction: column; gap: var(--space-2); max-width: 420px; }
+  .practice-final__row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding-bottom: var(--space-1);
+  }
+
   /* mark-btn migrado a btn--secondary con variante --marked */
   .exam-mark {
     margin-top: var(--space-3);
@@ -1719,6 +1762,12 @@ function appAlert(options) {
     </div>
   </div>
 
+  <!-- Modo práctica (Carrusel): turno actual + marcador -->
+  <div id="practiceBar" class="practice-bar" style="display:none;">
+    <div class="practice-turn" id="practiceTurn"></div>
+    <div class="practice-scores" id="practiceScores"></div>
+  </div>
+
   <article class="exam-question">
     <div class="exam-question__context" id="qContext" style="display:none;"></div>
     <div class="exam-question__topic" id="qTopic" style="display:none;"></div>
@@ -2168,7 +2217,26 @@ function renderQuestion() {
     const btn = document.createElement('button');
     btn.type = 'button';
     let icon = '';
-    if (state.reviewMode) {
+    if (state.mode === 'practice') {
+      // Carrusel: solo el alumno en turno puede contestar; al revelarse, todos
+      // ven la correcta (y la elegida si fue incorrecta).
+      const pr = state.practice || {};
+      const r = pr.lastResult;
+      const isRevealed = pr.phase === 'revealed' && r && r.qid === q.id;
+      const myTurn = pr.phase === 'answering' && pr.turnName
+        && pr.turnName.toLowerCase() === (state.name || '').toLowerCase();
+      if (isRevealed) {
+        if (letter === r.correctAnswer) { btn.className = 'exam-option exam-option--correct'; icon = CHECK_SVG; }
+        else if (letter === r.answer) { btn.className = 'exam-option exam-option--incorrect'; icon = CROSS_SVG; }
+        else { btn.className = 'exam-option exam-option--neutral'; }
+      } else if (myTurn) {
+        btn.className = 'exam-option';
+        btn.onclick = () => { socket.emit('practiceAnswer', { answer: letter }); };
+      } else {
+        btn.className = 'exam-option exam-option--spectator';
+        icon = LOCK_SVG;
+      }
+    } else if (state.reviewMode) {
       const correct = state.answerKey[q.id];
       const mine = state.answers[q.id];
       if (letter === correct && letter === mine) { btn.className = 'exam-option exam-option--correct'; icon = CHECK_SVG; }
@@ -2212,33 +2280,52 @@ function renderQuestion() {
 
   adaptBlankWidths(q);
 
+  const isPractice = state.mode === 'practice';
+
   const expDiv = document.getElementById('qExplanation');
   const expText = state.explanations && state.explanations[q.id];
+  const pr = state.practice || {};
+  const practiceExp = isPractice && pr.phase === 'revealed' && pr.lastResult
+    && pr.lastResult.qid === q.id ? pr.lastResult.explanation : '';
   if (state.reviewMode && expText) {
     expDiv.innerHTML = '<div class="explanation-title">Explicación</div>' + renderMath(expText);
+    expDiv.style.display = '';
+  } else if (practiceExp) {
+    expDiv.innerHTML = '<div class="explanation-title">Explicación</div>' + renderMath(practiceExp);
     expDiv.style.display = '';
   } else {
     expDiv.style.display = 'none';
     expDiv.innerHTML = '';
   }
 
+  // Carrusel: sin cronómetro, sin marcar, sin navegación ni entrega — el
+  // ritmo lo lleva el profesor.
+  document.getElementById('examTimer').style.display = isPractice ? 'none' : '';
+  document.querySelector('.exam-footer').style.display = isPractice ? 'none' : '';
+  const practiceBarEl = document.getElementById('practiceBar');
+  if (practiceBarEl) practiceBarEl.style.display = isPractice ? '' : 'none';
+
   const markBtn = document.getElementById('markBtn');
-  if (state.reviewMode) { markBtn.style.display = 'none'; }
+  if (state.reviewMode || isPractice) { markBtn.style.display = 'none'; }
   else {
     markBtn.style.display = '';
     const isMarked = state.marked.includes(q.id);
     markBtn.className = 'btn btn--secondary exam-mark' + (isMarked ? ' exam-mark--marked' : '');
     markBtn.textContent = isMarked ? '★ Marcada para revisar' : '☆ Marcar para revisar';
   }
-  document.getElementById('prevBtn').disabled = state.currentQ === 0;
-  document.getElementById('nextBtn').disabled = state.currentQ === state.questions.length - 1;
-  document.getElementById('submitBtn').style.display = state.reviewMode ? 'none' : '';
-  renderNavGrid();
+  if (!isPractice) {
+    document.getElementById('prevBtn').disabled = state.currentQ === 0;
+    document.getElementById('nextBtn').disabled = state.currentQ === state.questions.length - 1;
+    document.getElementById('submitBtn').style.display = state.reviewMode ? 'none' : '';
+    renderNavGrid();
+  }
 
   // Workaround Safari: backdrop-filter del sticky guarda paint stale del render anterior.
   // Toggle de visibility fuerza al navegador a invalidar el compositing layer.
   const article = document.querySelector('.exam-question');
   if (article) {
+    // Restaurar visibilidad (renderPracticeFinal la oculta al terminar un Carrusel).
+    article.style.display = '';
     article.style.visibility = 'hidden';
     void article.offsetHeight;
     article.style.visibility = '';
@@ -3206,6 +3293,69 @@ function adaptBlankWidths(q) {
   document.body.removeChild(meas);
 }
 
+// ── Modo práctica (Carrusel) ─────────────────────────────────────────────────
+// Aplica el estado que manda el server: pregunta actual sincronizada, turno y
+// marcador. Re-renderea la pregunta (con candado para espectadores o revelado).
+const escHTML = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+let __practiceLastIdx = -1;
+function applyPracticeState(st) {
+  if (!st) return;
+  state.practice = st;
+  if (st.phase === 'finished') { renderPracticeFinal(st.scores); return; }
+  const article = document.querySelector('.exam-question');
+  if (article) article.style.display = '';
+  if (state.questions.length === 0) return;
+  state.currentQ = Math.min(st.idx, state.questions.length - 1);
+  renderQuestion();
+  renderPracticeBar();
+  // Scroll arriba solo al cambiar de pregunta (no al revelarse la respuesta).
+  if (st.idx !== __practiceLastIdx) { window.scrollTo(0, 0); __practiceLastIdx = st.idx; }
+}
+
+function renderPracticeBar() {
+  const pr = state.practice;
+  if (!pr) return;
+  const turnEl = document.getElementById('practiceTurn');
+  const scoresEl = document.getElementById('practiceScores');
+  const r = pr.lastResult;
+  if (pr.phase === 'revealed' && r) {
+    const ok = r.isCorrect;
+    turnEl.className = 'practice-turn ' + (ok ? 'practice-turn--ok' : 'practice-turn--err');
+    turnEl.innerHTML = `<strong>${escHTML(r.name)}</strong> contestó <strong>${escHTML(r.answer)}</strong> — `
+      + (ok ? '<strong>¡Correcta!</strong>' : `incorrecta · la respuesta era <strong>${escHTML(r.correctAnswer)}</strong>`)
+      + '<span class="practice-turn__hint">Escuchen la explicación del profesor; él avanza a la siguiente.</span>';
+  } else {
+    const mine = pr.turnName && pr.turnName.toLowerCase() === (state.name || '').toLowerCase();
+    turnEl.className = 'practice-turn' + (mine ? ' practice-turn--mine' : '');
+    turnEl.innerHTML = mine
+      ? `<strong>¡Tu turno, ${escHTML(state.name)}!</strong> Elige una opción.`
+      : `Turno de <strong>${escHTML(pr.turnName || '—')}</strong>${pr.turnConnected === false && pr.turnName ? ' <span class="practice-turn__hint">(desconectado — el profesor puede saltar el turno)</span>' : ''}`;
+  }
+  const entries = Object.entries(pr.scores || {});
+  entries.sort((a, b) => b[1].correct - a[1].correct || a[0].localeCompare(b[0]));
+  scoresEl.innerHTML = entries.map(([n, s]) =>
+    `<span class="practice-chip${n.toLowerCase() === (state.name || '').toLowerCase() ? ' practice-chip--me' : ''}">${escHTML(n)} <strong>${s.correct}</strong></span>`
+  ).join('');
+}
+
+// Tabla final de posiciones (cuando se acaban las preguntas o el profesor cierra).
+function renderPracticeFinal(scores) {
+  showScreen('examScreen');
+  const article = document.querySelector('.exam-question');
+  if (article) article.style.display = 'none';
+  document.getElementById('examTimer').style.display = 'none';
+  document.querySelector('.exam-footer').style.display = 'none';
+  document.getElementById('practiceBar').style.display = '';
+  const entries = Object.entries(scores || {}).sort((a, b) => b[1].correct - a[1].correct || a[0].localeCompare(b[0]));
+  const rows = entries.map(([n, s], i) =>
+    `<div class="practice-final__row"><span>${i + 1}. ${escHTML(n)}</span><strong>${s.correct}/${s.answered}</strong></div>`
+  ).join('');
+  const turnEl = document.getElementById('practiceTurn');
+  turnEl.className = 'practice-turn practice-turn--mine';
+  turnEl.innerHTML = `<strong>¡Carrusel terminado!</strong> Así quedó el marcador (aciertos/participaciones):<div class="practice-final">${rows || '<em>Sin participaciones</em>'}</div>`;
+  document.getElementById('practiceScores').innerHTML = '';
+}
+
 function startReview() {
   state.reviewMode = true;
   document.getElementById('reviewBanner').style.display = '';
@@ -3257,6 +3407,7 @@ function startTimer(startTime, limitMinutes) {
 // Room join response
 socket.on('roomJoined', (data) => {
   state.roomCode = data.roomCode;
+  state.mode = data.mode || 'exam';
   state.title = data.title || '';
   document.getElementById('examTitle').textContent = data.title;
   document.getElementById('examInfo').textContent = `${data.totalQuestions} preguntas`;
@@ -3307,9 +3458,28 @@ socket.on('joined', (data) => {
   state.answerKey = {}; state.submitted = false; state.reviewMode = false;
   state.name = data.name; state.group = data.group; state.timeLimit = data.timeLimit;
   state.lockedOptions = !!data.lockedOptions;
+  state.mode = data.mode || 'exam';
   if (data.roomCode) state.roomCode = data.roomCode;
   // Calibrar reloj contra el servidor para que el timer no expire si el dispositivo del alumno tiene la fecha/hora mal.
   state.clockOffset = data.serverTime ? (data.serverTime - Date.now()) : 0;
+
+  // Modo práctica (Carrusel): sin restore de respuestas, sin timer, sin entrega.
+  // El estado de la sesión (pregunta actual, turno, marcador) lo manda el server.
+  if (state.mode === 'practice') {
+    document.getElementById('welcomeName').textContent = `¡Hola, ${data.name}!`;
+    document.getElementById('waitingRoomCode').textContent = `Sala: ${state.roomCode}`;
+    if (data.title) { state.title = data.title; document.getElementById('examTitleBar').textContent = data.title; }
+    document.getElementById('studentNameBar').innerHTML = `<strong>${state.name}</strong> · ${state.group}`;
+    saveLastSession();
+    if (data.examActive) {
+      showScreen('examScreen');
+      applyPracticeState(data.practice);
+    } else {
+      state.practice = data.practice || null;
+      showScreen('waitingScreen');
+    }
+    return;
+  }
 
   // Priorizar la fuente con mas respuestas (backup sobrevive al setTimeout de entrega,
   // examState puede haberse borrado por un enterReviewMode previo).
@@ -3410,6 +3580,13 @@ socket.on('examStarted', (data) => {
   // Si el alumno todavía no ha seleccionado nombre, dejarlo en joinScreen.
   // Cuando elija nombre y emita joinExam, el server le devolverá los datos del examen activo.
   if (!state.name) return;
+  if (state.mode === 'practice') {
+    // Sin cronómetro: la sesión la marca el profesor. El practiceState que el
+    // server emite justo después pinta la primera pregunta.
+    showScreen('examScreen');
+    if (state.practice) applyPracticeState(state.practice);
+    return;
+  }
   showScreen('examScreen');
   if (!state.currentQ) state.currentQ = 0;
   if (state.questions.length === 0) {
@@ -3418,6 +3595,22 @@ socket.on('examStarted', (data) => {
     renderQuestion();
   }
   startTimer(data.startTime, data.timeLimit);
+});
+
+// ── Modo práctica (Carrusel) ──
+socket.on('practiceState', (st) => {
+  if (state.mode !== 'practice' || !state.name) { state.practice = st; return; }
+  if (document.getElementById('waitingScreen').classList.contains('active') && st.phase !== 'finished') {
+    // Aún en sala de espera (la práctica no ha iniciado): solo guardar estado.
+    state.practice = st;
+    return;
+  }
+  applyPracticeState(st);
+});
+
+socket.on('practiceClosed', ({ scores }) => {
+  if (state.mode !== 'practice') return;
+  renderPracticeFinal(scores);
 });
 socket.on('examSubmitted', (data) => { enterReviewMode({ ok: true, ...data }); });
 socket.on('examClosed', () => { if (!state.submitted && !state.submitPending) startSubmitFlow(); });
@@ -3475,7 +3668,7 @@ socket.on('connect', () => {
 });
 
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden && state.name && !state.submitted && !window.__previewMode) {
+  if (document.hidden && state.name && !state.submitted && !window.__previewMode && state.mode !== 'practice') {
     socket.emit('tabSwitch');
   }
   // No re-emitir joinExam si ya entregaste: el server reenviaría 'joined' que
