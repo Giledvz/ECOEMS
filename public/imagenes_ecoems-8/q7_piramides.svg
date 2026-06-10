@@ -1,0 +1,27 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 235 130" width="320" height="177" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <!-- Pirámides de cuadrados (1, 4, 9) con separación de 3px entre cuadros. -->
+  <g stroke="currentColor" stroke-width="1.4" fill="none">
+    <!-- 1 nivel -->
+    <rect x="15" y="84" width="16" height="16"/>
+    <!-- 2 niveles -->
+    <rect x="55" y="84" width="16" height="16"/>
+    <rect x="74" y="84" width="16" height="16"/>
+    <rect x="93" y="84" width="16" height="16"/>
+    <rect x="74" y="65" width="16" height="16"/>
+    <!-- 3 niveles -->
+    <rect x="125" y="84" width="16" height="16"/>
+    <rect x="144" y="84" width="16" height="16"/>
+    <rect x="163" y="84" width="16" height="16"/>
+    <rect x="182" y="84" width="16" height="16"/>
+    <rect x="201" y="84" width="16" height="16"/>
+    <rect x="144" y="65" width="16" height="16"/>
+    <rect x="163" y="65" width="16" height="16"/>
+    <rect x="182" y="65" width="16" height="16"/>
+    <rect x="163" y="46" width="16" height="16"/>
+  </g>
+  <g font-size="10" text-anchor="middle" fill="currentColor">
+    <text x="23" y="118">1 nivel</text>
+    <text x="82" y="118">2 niveles</text>
+    <text x="171" y="118">3 niveles</text>
+  </g>
+</svg>

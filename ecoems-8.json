@@ -1,0 +1,1765 @@
+{
+  "exam": {
+    "title": "ECOEMS 8",
+    "group": "Ingreso a nivel medio superior",
+    "date": "2026-06-09",
+    "total_questions": 128,
+    "students": [
+      "Ari",
+      "Alexander",
+      "Axel",
+      "Citlaly",
+      "Conchita",
+      "Julio",
+      "Kevin",
+      "Leah",
+      "Marley",
+      "Rafaela",
+      "Regina",
+      "Roxanna",
+      "Sofía",
+      "Ximena",
+      "Yuli"
+    ],
+    "sections": [
+      {
+        "subject": "Habilidad matemática",
+        "questions": [
+          {
+            "id": 1,
+            "topic": "HM.1",
+            "topic_name": "Cuadrado mágico",
+            "text": "¿Qué número completa correctamente este cuadrado mágico?",
+            "options": {
+              "A": "0",
+              "B": "5",
+              "C": "10",
+              "D": "15"
+            },
+            "answer": "B",
+            "image": "/imagenes_ecoems-8/q1_cuadrado_magico.svg"
+          },
+          {
+            "id": 2,
+            "topic": "HM.2",
+            "topic_name": "Sucesión interleaved",
+            "text": "Selecciona el número que continúa correctamente la siguiente sucesión.\n\n3, 9, 5, 11, 7, 13, ___",
+            "options": {
+              "A": "9",
+              "B": "11",
+              "C": "13",
+              "D": "15"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 3,
+            "topic": "HM.3",
+            "topic_name": "Sucesión — diferencia constante",
+            "text": "Selecciona el número que completa correctamente la siguiente sucesión.\n\n$3,\\, \\dfrac{3}{2},\\, 0,\\, \\rule{1cm}{0.4pt}$",
+            "options": {
+              "A": "$\\dfrac{1}{2}$",
+              "B": "$\\dfrac{1}{3}$",
+              "C": "$\\dfrac{2}{3}$",
+              "D": "$-\\dfrac{3}{2}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 4,
+            "topic": "HM.4",
+            "topic_name": "Sucesión por sustitución",
+            "text": "Indica cuál es la sucesión que se genera al sustituir $x$ por $-2, -1, 0, 1$ y $2$ en la siguiente expresión:\n\n$2x^2 + 1$",
+            "options": {
+              "A": "-9, -3, 1, 3, 9",
+              "B": "9, 3, 1, 3, 9",
+              "C": "-9, -3, 0, 3, 9",
+              "D": "9, 3, 0, 3, 9"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 5,
+            "topic": "HM.5",
+            "topic_name": "Serie espacial — completar",
+            "text": "Selecciona entre las opciones la figura que completa correctamente esta serie:",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems-8/q5_a.svg\" style=\"width:100%;max-width:110px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems-8/q5_b.svg\" style=\"width:100%;max-width:110px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems-8/q5_c.svg\" style=\"width:100%;max-width:110px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems-8/q5_d.svg\" style=\"width:100%;max-width:110px;display:block;\">"
+            },
+            "answer": "C",
+            "image": "/imagenes_ecoems-8/q5_serie.svg"
+          },
+          {
+            "id": 6,
+            "topic": "HM.6",
+            "topic_name": "Serie espacial — pentágonos",
+            "text": "Selecciona entre las opciones el elemento siguiente de esta serie espacial.",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems-8/q6_a.svg\" style=\"width:100%;max-width:110px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems-8/q6_b.svg\" style=\"width:100%;max-width:110px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems-8/q6_c.svg\" style=\"width:100%;max-width:110px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems-8/q6_d.svg\" style=\"width:100%;max-width:110px;display:block;\">"
+            },
+            "answer": "A",
+            "image": "/imagenes_ecoems-8/q6_serie.svg"
+          },
+          {
+            "id": 7,
+            "topic": "HM.7",
+            "topic_name": "Sucesión — cuadrados",
+            "text": "La siguiente figura representa una serie de pirámides. ¿Cuántos cuadrados son necesarios para construir una pirámide plana de 12 niveles?",
+            "options": {
+              "A": "100",
+              "B": "121",
+              "C": "144",
+              "D": "169"
+            },
+            "answer": "C",
+            "image": "/imagenes_ecoems-8/q7_piramides.svg"
+          },
+          {
+            "id": 8,
+            "topic": "HM.8",
+            "topic_name": "Sistema de numeración — símbolos",
+            "text": "En un extraño sistema de numeración, hay un primer símbolo que representa el número 38. ¿Qué número representa el segundo símbolo?",
+            "options": {
+              "A": "16",
+              "B": "49",
+              "C": "55",
+              "D": "94"
+            },
+            "answer": "D",
+            "image": "/imagenes_ecoems-8/q8_simbolos.svg"
+          },
+          {
+            "id": 9,
+            "topic": "HM.9",
+            "topic_name": "Conteo de triángulos",
+            "text": "¿Cuántos triángulos en total contiene esta figura?",
+            "options": {
+              "A": "6",
+              "B": "10",
+              "C": "13",
+              "D": "16"
+            },
+            "answer": "D",
+            "image": "/imagenes_ecoems-8/q9_triangulos.svg"
+          },
+          {
+            "id": 10,
+            "topic": "HM.10",
+            "topic_name": "Dado rodando",
+            "text": "En un dado, la suma de puntos de dos lados opuestos es siete. Al rodar el dado de esta figura sobre las casillas siguiendo el sentido de las flechas, ¿cuántos puntos tiene el lado superior en la posición final?",
+            "options": {
+              "A": "5",
+              "B": "4",
+              "C": "3",
+              "D": "2"
+            },
+            "answer": "A",
+            "image": "/imagenes_ecoems-8/q10_dado.svg"
+          },
+          {
+            "id": 11,
+            "topic": "HM.11",
+            "topic_name": "Cubos — figura no formable",
+            "text": "Si cambiaras la posición de solamente un cubo de la siguiente figura, ¿cuál cuerpo no podrías formar?",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems-8/q11_a.svg\" style=\"width:100%;max-width:220px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems-8/q11_b.svg\" style=\"width:100%;max-width:220px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems-8/q11_c.svg\" style=\"width:100%;max-width:220px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems-8/q11_d.svg\" style=\"width:100%;max-width:220px;display:block;\">"
+            },
+            "answer": "C",
+            "image": "/imagenes_ecoems-8/q11_original.svg"
+          },
+          {
+            "id": 12,
+            "topic": "HM.12",
+            "topic_name": "Cuadrados sobrepuestos — área",
+            "text": "Dos cuadrados idénticos están sobrepuestos de modo que un vértice del cuadrado inferior coincide con el centro del cuadrado superior y la figura resultante es perfectamente simétrica. ¿A qué fracción del área del cuadrado corresponde el área sombreada?",
+            "options": {
+              "A": "$\\dfrac{1}{3}$",
+              "B": "$\\dfrac{1}{4}$",
+              "C": "$\\dfrac{1}{5}$",
+              "D": "$\\dfrac{1}{6}$"
+            },
+            "answer": "B",
+            "image": "/imagenes_ecoems-8/q12_sobrepuestos.svg"
+          },
+          {
+            "id": 13,
+            "topic": "HM.13",
+            "topic_name": "Tabla — número faltante",
+            "text": "En la siguiente tabla, ¿cuál es el número faltante en la celda vacía?\n\n| | | |\n|---|---|---|\n| 20 | 8 | 12 |\n| 40 | 14 | 26 |\n| 60 | ? | 38 |",
+            "options": {
+              "A": "22",
+              "B": "24",
+              "C": "26",
+              "D": "28"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 14,
+            "topic": "HM.14",
+            "topic_name": "Lógica — desigualdades",
+            "text": "De los números $a$, $b$ y $c$ sabemos que $a$ es mayor que $b$ y menor que $c$; por consiguiente, podemos concluir que",
+            "options": {
+              "A": "$b$ y $c$ son iguales",
+              "B": "$c$ es mayor que $b$",
+              "C": "$b$ es mayor que $c$",
+              "D": "$a$ es el mayor de los tres"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 15,
+            "topic": "HM.15",
+            "topic_name": "Área sombreada — círculos",
+            "text": "Selecciona entre las cuatro opciones la expresión matemática que representa el área sombreada de esta figura en el interior del cuadrado. El radio de cada círculo es igual a uno ($r = 1$).",
+            "options": {
+              "A": "$4\\pi - 4$",
+              "B": "$\\pi - 1$",
+              "C": "$1 - 4\\pi$",
+              "D": "$4 - \\pi$"
+            },
+            "answer": "D",
+            "image": "/imagenes_ecoems-8/q15_circulos_cuadrado.svg"
+          },
+          {
+            "id": 16,
+            "topic": "HM.16",
+            "topic_name": "Perímetro — figura con ángulos rectos",
+            "text": "En la siguiente figura, todos los ángulos son rectos y los lados largos miden el doble que los lados cortos. Si el área total de la figura es 200, ¿cuánto mide el perímetro?",
+            "options": {
+              "A": "80",
+              "B": "76",
+              "C": "72",
+              "D": "68"
+            },
+            "answer": "A",
+            "image": "/imagenes_ecoems-8/q16_figura_perimetro.svg"
+          }
+        ]
+      },
+      {
+        "subject": "Matemáticas",
+        "questions": [
+          {
+            "id": 17,
+            "topic": "M.1",
+            "topic_name": "Operación aritmética con signos",
+            "text": "Indica cuál es el valor de $m$ en la siguiente operación aritmética.\n\n$m = -3(-2+1) - 2(-1-2)$",
+            "options": {
+              "A": "-3",
+              "B": "0",
+              "C": "3",
+              "D": "9"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 18,
+            "topic": "M.2",
+            "topic_name": "Mínimo común múltiplo",
+            "text": "¿Cuál de las siguientes opciones es el mínimo común múltiplo de 12 y 15?\n\n$\\operatorname{mcm}(12, 15) =$",
+            "options": {
+              "A": "180",
+              "B": "120",
+              "C": "60",
+              "D": "30"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 19,
+            "topic": "M.3",
+            "topic_name": "Porcentaje en examen",
+            "text": "Si un examen consiste en 128 preguntas de opción múltiple y obtienes 100 aciertos, ¿cuál es tu porcentaje de respuestas incorrectas?",
+            "options": {
+              "A": "100%",
+              "B": "78.125%",
+              "C": "28%",
+              "D": "21.875%"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 20,
+            "topic": "M.4",
+            "topic_name": "Caja de ahorros — saldo",
+            "text": "La caja de ahorros comenzó la semana con un monto de $\\$12{,}000$. Si\n\n- el lunes depositaron $\\$2{,}600$\n- el martes retiraron $\\$6{,}100$\n- el miércoles depositaron $\\$4{,}000$\n- el jueves retiraron $\\$6{,}200$\n- el viernes retiraron $\\$800$\n\n¿Cuánto dinero había en la caja el fin de semana?",
+            "options": {
+              "A": "$\\$4{,}000$",
+              "B": "$\\$5{,}500$",
+              "C": "$\\$12{,}300$",
+              "D": "$\\$13{,}100$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 21,
+            "topic": "M.5",
+            "topic_name": "Promedio — incógnita",
+            "text": "Si el promedio de $a$, $\\dfrac{1}{4}$ y $\\dfrac{1}{2}$ es $\\dfrac{1}{3}$, ¿cuánto vale $a$?",
+            "options": {
+              "A": "$\\dfrac{1}{8}$",
+              "B": "$\\dfrac{1}{4}$",
+              "C": "$\\dfrac{1}{3}$",
+              "D": "$\\dfrac{1}{2}$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 22,
+            "topic": "M.6",
+            "topic_name": "Trabajo conjunto",
+            "text": "Si un adulto lava un elefante en 3 horas y un niño lava el mismo elefante en 6 horas, ¿en cuánto tiempo lavan al elefante el adulto y el niño juntos?",
+            "options": {
+              "A": "6 horas",
+              "B": "3 horas",
+              "C": "2 horas",
+              "D": "1 hora"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 23,
+            "topic": "M.7",
+            "topic_name": "Ecuación factorizada",
+            "text": "Analiza cuidadosamente este binomio conjugado:\n\n$(x+1)(x-1) = 0$\n\n¿Cuánto vale $x$?",
+            "options": {
+              "A": "0",
+              "B": "1",
+              "C": "-1",
+              "D": "$\\pm 1$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 24,
+            "topic": "M.8",
+            "topic_name": "Producto algebraico",
+            "text": "¿Cuál es el producto de esta multiplicación?\n\n$(a+b)(2a-1) =$",
+            "options": {
+              "A": "$3a + b - 1$",
+              "B": "$2a^2 + 2ab - 2a - a - b$",
+              "C": "$2a^2 + 2ab - 1$",
+              "D": "$2a^2 + 2ab - a - b$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 25,
+            "topic": "M.9",
+            "topic_name": "Probabilidad — suma de dos dados",
+            "text": "¿Cuál es la probabilidad de que al lanzar dos dados, la suma de puntos de las caras superiores sea siete?",
+            "options": {
+              "A": "$\\dfrac{1}{2}$",
+              "B": "$\\dfrac{1}{3}$",
+              "C": "$\\dfrac{1}{6}$",
+              "D": "$\\dfrac{1}{12}$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 26,
+            "topic": "M.10",
+            "topic_name": "Trigonometría — cateto adyacente",
+            "text": "En un triángulo rectángulo,\n\n$\\operatorname{sen}\\alpha = \\dfrac{3}{5}$\n\n¿Cuánto mide el cateto adyacente?",
+            "options": {
+              "A": "2",
+              "B": "4",
+              "C": "6",
+              "D": "8"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 27,
+            "topic": "M.11",
+            "topic_name": "Función lineal — gráfica",
+            "text": "El precio de una página impresa en papel es $\\$1$; por consiguiente, el precio de imprimir seis páginas es $\\$6$. Selecciona entre las opciones la gráfica que representa correctamente esta función.",
+            "options": {
+              "A": "<img src=\"/imagenes_ecoems-8/q27_a.svg\" style=\"width:100%;max-width:150px;display:block;\">",
+              "B": "<img src=\"/imagenes_ecoems-8/q27_b.svg\" style=\"width:100%;max-width:150px;display:block;\">",
+              "C": "<img src=\"/imagenes_ecoems-8/q27_c.svg\" style=\"width:100%;max-width:150px;display:block;\">",
+              "D": "<img src=\"/imagenes_ecoems-8/q27_d.svg\" style=\"width:100%;max-width:150px;display:block;\">"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 28,
+            "topic": "M.12",
+            "topic_name": "Ángulo inscrito",
+            "text": "¿Cuánto mide el ángulo inscrito $ABC$?",
+            "options": {
+              "A": "15°",
+              "B": "30°",
+              "C": "45°",
+              "D": "60°"
+            },
+            "answer": "C",
+            "image": "/imagenes_ecoems-8/q28_angulo_inscrito.svg"
+          }
+        ]
+      },
+      {
+        "subject": "Ciencias II (Física)",
+        "questions": [
+          {
+            "id": 29,
+            "topic": "F.1",
+            "topic_name": "Peso vs masa",
+            "text": "Es la fuerza que se ejerce sobre los cuerpos a causa de la atracción gravitacional.",
+            "options": {
+              "A": "Masa",
+              "B": "Peso",
+              "C": "Densidad",
+              "D": "Presión atmosférica"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 30,
+            "topic": "F.2",
+            "topic_name": "Cambios de estado — condensación",
+            "text": "Es el cambio de estado de gas a líquido.",
+            "options": {
+              "A": "Fusión",
+              "B": "Ebullición",
+              "C": "Evaporación",
+              "D": "Condensación"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 31,
+            "topic": "F.3",
+            "topic_name": "Velocidad y aceleración — tabla",
+            "text": "Analiza la siguiente tabla.\n\n| Tiempo (s) | Desplazamiento (m) |\n|---|---|\n| 1 | 10 |\n| 2 | 20 |\n| 20 | 200 |\n\nLa velocidad es el desplazamiento en función del tiempo: $\\mathbf{v} = \\mathbf{d}/t$\n\nLa aceleración es el desplazamiento sobre el cuadrado del tiempo: $\\mathbf{a} = \\mathbf{d}/t^2$\n\nPor consiguiente, el móvil tiene:",
+            "options": {
+              "A": "Velocidad constante mayor que cero",
+              "B": "Velocidad variable",
+              "C": "Aceleración constante mayor que cero",
+              "D": "Aceleración variable"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 32,
+            "topic": "F.4",
+            "topic_name": "Aceleración — plano inclinado",
+            "text": "Al deslizarse sobre un plano inclinado, un balín pasa de una velocidad inicial de 0 m/s a una velocidad final de 2 m/s en dos segundos. ¿Cuál es la aceleración del balín en este experimento?",
+            "options": {
+              "A": "$1\\,\\text{m/s}^2$",
+              "B": "$2\\,\\text{m/s}^2$",
+              "C": "$3\\,\\text{m/s}^2$",
+              "D": "$4\\,\\text{m/s}^2$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 33,
+            "topic": "F.5",
+            "topic_name": "Gráficas de movimiento",
+            "text": "Relaciona los tipos de movimiento con sus gráficas de desplazamiento en función del tiempo.\n\ni. Movimiento rectilíneo uniforme\nii. Movimiento uniformemente acelerado",
+            "options": {
+              "A": "i: a, b   ii: c, d",
+              "B": "i: a, c   ii: b, d",
+              "C": "i: b, d   ii: a, c",
+              "D": "i: c, d   ii: a, b"
+            },
+            "answer": "B",
+            "image": "/imagenes_ecoems-8/q33_graficas_movimiento.svg"
+          },
+          {
+            "id": 34,
+            "topic": "F.6",
+            "topic_name": "Energía potencial",
+            "text": "Indica cuál de las siguientes formas de energía se refiere a aquella que está almacenada en un cuerpo y se mantiene lista para hacer trabajo.",
+            "options": {
+              "A": "Potencial",
+              "B": "Cinética",
+              "C": "Eléctrica",
+              "D": "Calorífica"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 35,
+            "topic": "F.7",
+            "topic_name": "Transmisión del calor — convección",
+            "text": "Es la forma de transmisión del calor por el viento y las corrientes marinas.",
+            "options": {
+              "A": "Conducción",
+              "B": "Convección",
+              "C": "Radiación",
+              "D": "Evaporación"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 36,
+            "topic": "F.8",
+            "topic_name": "Presión atmosférica",
+            "text": "Analiza cuidadosamente las siguientes afirmaciones referentes a la presión atmosférica y determina cuáles son ciertas.\n\ni. Actúa sólo verticalmente, de arriba hacia abajo.\nii. Actúa en todas direcciones en cualquier punto dentro de la atmósfera.\niii. Es mayor a nivel del mar que en la cima de una montaña.\niv. Es mayor en la cima de una montaña que a nivel del mar.\nv. Empuja al líquido en un vaso al succionar tal líquido con un popote.",
+            "options": {
+              "A": "i y iv",
+              "B": "ii y iii",
+              "C": "ii y iv",
+              "D": "ii, iii y v"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 37,
+            "topic": "F.9",
+            "topic_name": "Principio de Pascal — recipientes",
+            "text": "Los tres recipientes de la siguiente figura contienen agua a un mismo nivel y están sobre una superficie horizontal. ¿Cómo son las presiones en el fondo de los recipientes?",
+            "options": {
+              "A": "$P_a > P_b > P_c$",
+              "B": "$P_a < P_b < P_c$",
+              "C": "$P_a = P_b = P_c$",
+              "D": "$P_a < P_b > P_c$"
+            },
+            "answer": "C",
+            "image": "/imagenes_ecoems-8/q37_recipientes.svg"
+          },
+          {
+            "id": 38,
+            "topic": "F.10",
+            "topic_name": "Materiales conductores",
+            "text": "Selecciona entre las siguientes opciones el material que sea el mejor conductor tanto de la electricidad como del calor.",
+            "options": {
+              "A": "Plástico",
+              "B": "Tela",
+              "C": "Madera",
+              "D": "Cobre"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 39,
+            "topic": "F.11",
+            "topic_name": "Corriente y campo magnético",
+            "text": "¿Qué sucede cuando se hace pasar una corriente por un conductor?",
+            "options": {
+              "A": "La resistencia desaparece totalmente",
+              "B": "Los protones fluyen rápidamente a lo largo del material conductor",
+              "C": "Se crea un campo magnético alrededor del conductor",
+              "D": "La aguja de una brújula cercana permanece estática"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 40,
+            "topic": "F.12",
+            "topic_name": "Reflexión — ángulos",
+            "text": "Cuando un rayo de luz incide sobre un espejo plano, el ángulo de incidencia es:",
+            "options": {
+              "A": "Igual al ángulo de reflexión",
+              "B": "Menor que el ángulo de reflexión",
+              "C": "Mayor que el ángulo de reflexión",
+              "D": "Dos veces el ángulo de reflexión"
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Ciencias III (Química)",
+        "questions": [
+          {
+            "id": 41,
+            "topic": "Q.1",
+            "topic_name": "Métodos de separación — filtración",
+            "text": "Con la finalidad de limpiar una pequeña muestra de agua turbia en un laboratorio, se monta el siguiente aparato. Un anillo se sujeta a un soporte universal para sostener un embudo con un cono de papel filtro y carbón.\n\nEl agua que pasa a través del carbón y del papel filtro, escurre limpia en un vaso de precipitados.\n\n¿Cómo se denomina este método de separación del agua?",
+            "options": {
+              "A": "Precipitación",
+              "B": "Decantación",
+              "C": "Filtración",
+              "D": "Cristalización"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 42,
+            "topic": "Q.2",
+            "topic_name": "Mezclas",
+            "text": "Es un ejemplo de mezcla.",
+            "options": {
+              "A": "Aire",
+              "B": "Agua pura",
+              "C": "Cloruro de sodio",
+              "D": "Sulfato de cobre"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 43,
+            "topic": "Q.3",
+            "topic_name": "Solución — soluto",
+            "text": "Por el fenómeno físico llamado difusión, al adicionar pigmento vegetal rojo en polvo a un recipiente con agua, toda el agua del recipiente se colorea de rojo. ¿Qué parte constituyente de la solución formada es el pigmento vegetal?",
+            "options": {
+              "A": "Solvente",
+              "B": "Soluto",
+              "C": "Reactivo",
+              "D": "Producto"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 44,
+            "topic": "Q.4",
+            "topic_name": "Elementos químicos",
+            "text": "Son sustancias que no es posible descomponer en otras más simples por métodos químicos.",
+            "options": {
+              "A": "Elementos",
+              "B": "Compuestos",
+              "C": "Mezclas",
+              "D": "Soluciones"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 45,
+            "topic": "Q.5",
+            "topic_name": "Estructura atómica",
+            "text": "Correlaciona las siguientes columnas referentes a la estructura atómica.\n\n| Partícula | Características |\n|---|---|\n| i. Electrón | a) Posee carga positiva |\n| ii. Protón | b) Posee carga negativa |\n| iii. Neutrón | c) No posee carga |\n| | d) Está en el núcleo |\n| | e) Está alrededor del núcleo |",
+            "options": {
+              "A": "i: a,d   ii: b,e   iii: c,d",
+              "B": "i: a,e   ii: b,e   iii: c,e",
+              "C": "i: b,d   ii: c,d   iii: c,e",
+              "D": "i: b,e   ii: a,d   iii: c,d"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 46,
+            "topic": "Q.6",
+            "topic_name": "Número atómico",
+            "text": "Un isótopo del carbono contiene seis protones, seis electrones y ocho neutrones.\n\n¿Cuál es su número atómico?",
+            "options": {
+              "A": "6",
+              "B": "8",
+              "C": "12",
+              "D": "20"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 47,
+            "topic": "Q.7",
+            "topic_name": "Símbolos químicos",
+            "text": "Selecciona entre las opciones los símbolos químicos de sodio, azufre y potasio.",
+            "options": {
+              "A": "S, As y P",
+              "B": "Na, S y P",
+              "C": "Na, S y K",
+              "D": "Na, Su y K"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 48,
+            "topic": "Q.8",
+            "topic_name": "Tabla periódica — metales",
+            "text": "En la tabla periódica, ¿en qué posición están los elementos que poseen las propiedades más altamente metálicas?",
+            "options": {
+              "A": "En la columna de la izquierda",
+              "B": "En las columnas del centro",
+              "C": "En la columna de la derecha",
+              "D": "En el periodo 1"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 49,
+            "topic": "Q.9",
+            "topic_name": "Enlace covalente",
+            "text": "En la molécula de agua, los enlaces químicos entre el hidrógeno y el oxígeno (H–O–H) son muy estables y es necesario suministrar energía para romperlos. Indica de qué tipo son estos enlaces.",
+            "options": {
+              "A": "Puente de hidrógeno",
+              "B": "Covalente",
+              "C": "Iónico",
+              "D": "Electronegativo"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 50,
+            "topic": "Q.10",
+            "topic_name": "Escala de pH",
+            "text": "Al medir el pH de una solución, ¿qué medida se espera obtener si se trata de un ácido?",
+            "options": {
+              "A": "De 7",
+              "B": "Mayor que 7",
+              "C": "Menor que 7",
+              "D": "De 0 a 14"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 51,
+            "topic": "Q.11",
+            "topic_name": "Reacción de neutralización",
+            "text": "La reacción de hidróxido de potasio (KOH) y ácido clorhídrico (HCl) produce la sal denominada cloruro de potasio (KCl) y agua (H₂O).\n\nLa ecuación que simboliza esta reacción es:\n\n$\\text{KOH} + \\text{HCl} \\rightarrow \\text{KCl} + \\text{H}_2\\text{O}$\n\n¿Cómo se denominan las reacciones de este tipo?",
+            "options": {
+              "A": "Enzimática",
+              "B": "De hidrólisis",
+              "C": "De polimerización",
+              "D": "De neutralización"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 52,
+            "topic": "Q.12",
+            "topic_name": "Oxidación química",
+            "text": "¿Exactamente a qué se refiere la oxidación química de un átomo?",
+            "options": {
+              "A": "A ganar electrones",
+              "B": "A perder electrones",
+              "C": "A reaccionar exclusivamente con oxígeno",
+              "D": "A la formación de una cáscara alrededor del átomo"
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Ciencias I (Biología)",
+        "questions": [
+          {
+            "id": 53,
+            "topic": "B.1",
+            "topic_name": "Ecología",
+            "text": "Es la rama de la biología que estudia las relaciones de los organismos entre sí y con el ambiente en el que viven.",
+            "options": {
+              "A": "Botánica",
+              "B": "Zoología",
+              "C": "Ecología",
+              "D": "Taxonomía"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 54,
+            "topic": "B.2",
+            "topic_name": "Conocimiento empírico",
+            "text": "Indica cuál de las siguientes opciones es un ejemplo de conocimiento empírico.",
+            "options": {
+              "A": "La sucesión del día y la noche.",
+              "B": "El ciclo del agua.",
+              "C": "Los cuerpos pesados caen más rápido que los cuerpos ligeros.",
+              "D": "La energía es igual a la masa por el cuadrado de la velocidad de la luz, $E = mc^2$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 55,
+            "topic": "B.3",
+            "topic_name": "Método científico — hipótesis",
+            "text": "Al trabajar con el método científico experimental, es frecuente elaborar una hipótesis como una posible respuesta a una pregunta inicial.\n\n¿Qué es una hipótesis?",
+            "options": {
+              "A": "Una observación",
+              "B": "Una suposición razonable",
+              "C": "Una predicción",
+              "D": "Una conclusión"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 56,
+            "topic": "B.4",
+            "topic_name": "Selección natural — Darwin",
+            "text": "¿Cuál de las siguientes opciones se refiere al proceso de selección natural propuesto por Charles Darwin en su teoría de evolución?",
+            "options": {
+              "A": "Los organismos más aptos sobreviven por estar mejor adaptados al ambiente.",
+              "B": "Los organismos de una especie son diferentes entre sí.",
+              "C": "Es una explicación del origen de la vida.",
+              "D": "Los organismos se mantienen sin cambios de una generación a la siguiente."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 57,
+            "topic": "B.5",
+            "topic_name": "Fotosíntesis — productos",
+            "text": "¿Cuáles son los productos de la fotosíntesis?",
+            "options": {
+              "A": "Luz, agua y dióxido de carbono",
+              "B": "Agua y dióxido de carbono",
+              "C": "Oxígeno y dióxido de carbono",
+              "D": "Glucosa y oxígeno"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 58,
+            "topic": "B.6",
+            "topic_name": "Autótrofos",
+            "text": "¿Cómo se denominan los seres vivos que son capaces de sobrevivir en la Tierra sin depender de otros para su nutrición?",
+            "options": {
+              "A": "Autótrofos",
+              "B": "Heterótrofos",
+              "C": "Hongos",
+              "D": "Aerobios"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 59,
+            "topic": "B.7",
+            "topic_name": "ARN — base uracilo",
+            "text": "Es una base nitrogenada que forma parte del ARN pero no del ADN.",
+            "options": {
+              "A": "Adenina",
+              "B": "Guanina",
+              "C": "Citosina",
+              "D": "Uracilo"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 60,
+            "topic": "B.8",
+            "topic_name": "Enfermedades parasitarias",
+            "text": "Las enfermedades humanas tienen diversas causas. ¿Cuál de las siguientes enfermedades está clasificada como parasitaria?",
+            "options": {
+              "A": "Varicela",
+              "B": "Sarampión",
+              "C": "Hepatitis B",
+              "D": "Ascariasis"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 61,
+            "topic": "B.9",
+            "topic_name": "Caracteres sexuales primarios femeninos",
+            "text": "Selecciona entre las opciones aquella que describe los caracteres sexuales primarios femeninos.",
+            "options": {
+              "A": "Estrógenos",
+              "B": "Ovarios, oviductos, matriz y vagina",
+              "C": "Ciclo menstrual",
+              "D": "Desarrollo de senos"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 62,
+            "topic": "B.10",
+            "topic_name": "Genética — leyes de Mendel",
+            "text": "Si dos plantas se cruzan y ambas tienen genotipo Rr para color de la flor (R = rojo y r = blanco) y siguen las leyes de Mendel, el fenotipo esperado para las flores de la progenie es:",
+            "options": {
+              "A": "100% rojas",
+              "B": "100% blancas",
+              "C": "75% rojas y 25% blancas",
+              "D": "25% rojas, 50% rosas y 25% blancas"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 63,
+            "topic": "B.11",
+            "topic_name": "Mitosis",
+            "text": "Es la división de una célula eucariótica en dos células hijas idénticas más pequeñas.",
+            "options": {
+              "A": "Reproducción",
+              "B": "Ciclo celular",
+              "C": "Mitosis",
+              "D": "Meiosis"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 64,
+            "topic": "B.12",
+            "topic_name": "Anticonceptivo quirúrgico",
+            "text": "¿Cuál de los siguientes métodos anticonceptivos es quirúrgico?",
+            "options": {
+              "A": "Preservativo (condón)",
+              "B": "Vasectomía",
+              "C": "Dispositivo intrauterino (DIU)",
+              "D": "Píldora del día siguiente"
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Habilidad verbal",
+        "questions": [
+          {
+            "id": 65,
+            "topic": "HV.1",
+            "topic_name": "Cien años de soledad — protección",
+            "context": "Lee el siguiente fragmento literario, tomado de la obra:\n\nGarcía Márquez, Gabriel, *Cien años de soledad*, Alfaguara, España, 2009, p. 469-471.\n\nDespués contesta las preguntas relacionadas.\n\n\"…El primero de la estirpe está amarrado a un árbol y al último se lo están comiendo las hormigas. Aureliano no había sido más lúcido en ningún acto de su vida que cuando olvidó a sus muertos y el dolor de sus muertos, y volvió a clavar las puertas y las ventanas con las crucetas de Fernanda para no dejarse perturbar por ninguna tentación del mundo, porque entonces sabía que en los pergaminos de Melquíades estaba escrito su destino. […] La protección final, que Aureliano empezaba a vislumbrar cuando se dejó confundir por el amor de Amaranta Úrsula, radicaba en que Melquíades no había ordenado los hechos en el tiempo convencional de los hombres, sino que concentró un siglo de episodios, de modo que todos coexistieran en un instante. […] Solo entonces descubrió que Amaranta Úrsula no era su hermana, sino su tía. […] Sin embargo, antes de llegar al verso final ya había comprendido que no saldría jamás de ese cuarto, pues estaba previsto que la ciudad de los espejos (o los espejismos) sería arrasada por el viento y desterrada de la memoria de los hombres en el instante en que Aureliano Babilonia acabara de descifrar los pergaminos, y que todo lo escrito en ellos era irrepetible desde siempre y para siempre, porque las estirpes condenadas a cien años de soledad no tenían una segunda oportunidad sobre la tierra.\"",
+            "text": "Además de haber escrito los pergaminos en sánscrito y utilizado claves en versos, Melquíades aplicó una protección:",
+            "options": {
+              "A": "Cronológica",
+              "B": "Jeroglífica",
+              "C": "Matemática",
+              "D": "Musical"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 66,
+            "topic": "HV.2",
+            "topic_name": "Cien años — parentesco",
+            "context": "Lee el siguiente fragmento literario, tomado de la obra:\n\nGarcía Márquez, Gabriel, *Cien años de soledad*, Alfaguara, España, 2009, p. 469-471.\n\nDespués contesta las preguntas relacionadas.\n\n\"…El primero de la estirpe está amarrado a un árbol y al último se lo están comiendo las hormigas. […] Solo entonces descubrió que Amaranta Úrsula no era su hermana, sino su tía.\"",
+            "text": "Aureliano Babilonia siempre había creído que Amaranta Úrsula era su:",
+            "options": {
+              "A": "Hija",
+              "B": "Hermana",
+              "C": "Prima",
+              "D": "Tía"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 67,
+            "topic": "HV.3",
+            "topic_name": "Cien años — Macondo",
+            "context": "Lee el siguiente fragmento literario, tomado de la obra:\n\nGarcía Márquez, Gabriel, *Cien años de soledad*, Alfaguara, España, 2009, p. 469-471.\n\nDespués contesta las preguntas relacionadas.\n\n\"…la ciudad de los espejos (o los espejismos) sería arrasada por el viento y desterrada de la memoria de los hombres…\"",
+            "text": "¿Con qué otro nombre se hace referencia a Macondo?",
+            "options": {
+              "A": "Riohacha",
+              "B": "Ciudad de los espejos",
+              "C": "Babilonia",
+              "D": "Macedonia"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 68,
+            "topic": "HV.4",
+            "topic_name": "Cien años — descifrar pergaminos",
+            "context": "Lee el siguiente fragmento literario, tomado de la obra:\n\nGarcía Márquez, Gabriel, *Cien años de soledad*, Alfaguara, España, 2009, p. 469-471.\n\nDespués contesta las preguntas relacionadas.\n\n\"…en el instante en que Aureliano Babilonia acabara de descifrar los pergaminos…\"",
+            "text": "¿Quién descifró los pergaminos?",
+            "options": {
+              "A": "Amaranta Úrsula",
+              "B": "Dos gemelos póstumos",
+              "C": "Francis Drake",
+              "D": "Aureliano Babilonia"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 69,
+            "topic": "HV.5",
+            "topic_name": "A Brief History — desarrollo",
+            "context": "Lee el texto siguiente, traducido de la obra:\n\nCalvin, William, *A Brief History of the Mind*, OUP, Estados Unidos de América, 2004.\n\nDespués, contesta las preguntas relacionadas.\n\n**Triple comienzo hace cerca de 2.5 millones de años**\n\n*Clima cambiante, fabricación de herramientas y cerebros más grandes*\n\n(I) Hace cerca de 2.5 millones de años había muchas nuevas especies en África. Fue entonces cuando ocurrieron tres hechos importantes: una edad de hielo, la fabricación de herramientas y el surgimiento de cerebros más grandes.\n\n(II) El clima se había estado enfriando gradualmente y la sequía se extendió por todo el hábitat del simio erecto. Esto creó en los densos bosques lluviosos algunas zonas escasamente arboladas en donde antes habían sido continuos, mientras que los bosques seguían sobreviviendo solamente en suelos particularmente fértiles o en tierras altas que efectivamente alcanzaban las nubes lluviosas que pasaban. Esta subdivisión significó que hubiera más bordes boscosos que alguna vez en el pasado, creando así más bosques escasamente arbolados y más simios viviendo ahí.\n\n(III) En el periodo desde hace tres millones de años a hace dos millones de años, el clima se volvió caótico. Hace 2.51 millones de años, el hielo invernal de los mares nórdicos se extendió hacia el sur hasta Francia. Este punto cronológico es tan bueno como cualquier otro para decir que la edad de hielo \"había comenzado\".\n\n(IV) En África, el problema no era el hielo, puesto que éste permaneció confinado en las cimas de lugares como los montes Kenia y Kilimanjaro, visible en un día claro pero sin interferir en la vida de la mayoría de homínidos. A nivel del mar, la temperatura del aire era solamente unos cuantos grados menos alta, lo que incluso debió haber sido más agradable. El problema africano fue que cayó menos lluvia. Algunos densos bosques lluviosos se redujeron 80%. La mayoría de los lagos africanos del este, incluso el inmenso lago Victoria, finalmente se secaron.\n\n(V) Mucho de lo que sabemos acerca de la evolución de homínidos en este periodo, proviene de cavernas de roca caliza en Sudáfrica o de las orillas de viejos lagos del valle de la Grieta en el norte, en especial una serie de sitios fósiles que van desde Laetoli, 3° al sur del ecuador, a Hadar, 11° al norte del ecuador. También han sido descubiertos antiguos fósiles de homínidos en el norte del lago Chad, medio continente al oeste de la Grieta. Es improbable que los bosques preserven huesos; nuestros mejores hallazgos en evolución de los homínidos ocurren en sitios donde los sedimentos de un lago fluyente sepultaron un cadáver, o donde alguien quedó atrapado en una cueva y las estalactitas gotearon sobre sus huesos, sellándolos en piedra.",
+            "text": "A diferencia del párrafo I que es la introducción, ¿qué tema específico se desarrolla en los párrafos II, III y IV?",
+            "options": {
+              "A": "Clima cambiante hace millones de años",
+              "B": "Fabricación de herramientas de piedra",
+              "C": "Cerebros más grandes",
+              "D": "Fosilización"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 70,
+            "topic": "HV.6",
+            "topic_name": "A Brief History — edad de hielo",
+            "context": "Lee el texto siguiente, traducido de la obra:\n\nCalvin, William, *A Brief History of the Mind*, OUP, Estados Unidos de América, 2004.\n\nDespués, contesta las preguntas relacionadas.\n\n(IV) En África, el problema no era el hielo… El problema africano fue que cayó menos lluvia. Algunos densos bosques lluviosos se redujeron 80%. La mayoría de los lagos africanos del este, incluso el inmenso lago Victoria, finalmente se secaron.",
+            "text": "¿Cuál fue un efecto principal de la edad de hielo sobre el clima africano?",
+            "options": {
+              "A": "La temperatura bajó notablemente.",
+              "B": "Los bosques lluviosos se extendieron.",
+              "C": "La sequía devastó bosques y secó lagos.",
+              "D": "En realidad, la edad de hielo no tuvo ningún efecto sobre el clima africano."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 71,
+            "topic": "HV.7",
+            "topic_name": "A Brief History — fósiles",
+            "context": "Lee el texto siguiente, traducido de la obra:\n\nCalvin, William, *A Brief History of the Mind*, OUP, Estados Unidos de América, 2004.\n\nDespués, contesta las preguntas relacionadas.\n\n(V) … Es improbable que los bosques preserven huesos; nuestros mejores hallazgos en evolución de los homínidos ocurren en sitios donde los sedimentos de un lago fluyente sepultaron un cadáver, o donde alguien quedó atrapado en una cueva y las estalactitas gotearon sobre sus huesos, sellándolos en piedra.",
+            "text": "Según esta lectura, ¿en dónde es menos probable que se preserven los huesos como fósiles?",
+            "options": {
+              "A": "En el hielo",
+              "B": "En el bosque",
+              "C": "En los sedimentos de un lago",
+              "D": "En cavernas de roca caliza"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 72,
+            "topic": "HV.8",
+            "topic_name": "A Brief History — propósito del texto",
+            "text": "Aun cuando solamente has leído un fragmento de la obra *A brief history of the mind*, de William Calvin, es posible concluir que este texto ___________ tiene el propósito de ___________.",
+            "options": {
+              "A": "Legal / proporcionar diversos antecedentes de un problema judicial africano.",
+              "B": "Publicitario / describir la trama de una película de ciencia ficción.",
+              "C": "Administrativo / resumir datos para una toma de decisiones",
+              "D": "Académico / divulgar científicamente cómo fue la evolución de la mente humana."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 73,
+            "topic": "HV.9",
+            "topic_name": "Sinónimo — coma",
+            "text": "Selecciona la opción cuyo SIGNIFICADO sea el más parecido al de la expresión en cursivas.\n\nEl paciente estaba *en estado de coma*.",
+            "options": {
+              "A": "Dormido",
+              "B": "Inconsciente",
+              "C": "Moribundo",
+              "D": "Muerto"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 74,
+            "topic": "HV.10",
+            "topic_name": "Significado — web",
+            "text": "Selecciona la opción cuyo SIGNIFICADO sea el más parecido al de la expresión en cursivas.\n\nHay libros electrónicos en la *web*.",
+            "options": {
+              "A": "Red mundial de comunicación",
+              "B": "Dirección electrónica",
+              "C": "Librería",
+              "D": "Memoria"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 75,
+            "topic": "HV.11",
+            "topic_name": "Analogía — ojo, luz",
+            "text": "Selecciona el par de palabras que corresponde a una relación ANÁLOGA al par que se muestra en mayúsculas.\n\nOJO – LUZ",
+            "options": {
+              "A": "Piel – tacto",
+              "B": "Cerebro – música",
+              "C": "Oído – sonido",
+              "D": "Retina – visión"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 76,
+            "topic": "HV.12",
+            "topic_name": "Analogía — juguete, plástico",
+            "text": "Selecciona el par de palabras que corresponde a una relación ANÁLOGA al par que se muestra en mayúsculas.\n\nJUGUETE – PLÁSTICO",
+            "options": {
+              "A": "Gallina – huevo",
+              "B": "Cabina – avión",
+              "C": "Mesa – madera",
+              "D": "Ropa – camisa"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 77,
+            "topic": "HV.13",
+            "topic_name": "Antónimo — medicinal",
+            "text": "Selecciona entre las opciones el ANTÓNIMO de la palabra en cursivas.\n\nLa hierbabuena es una planta *medicinal*.",
+            "options": {
+              "A": "Tóxica",
+              "B": "Curativa",
+              "C": "Remedial",
+              "D": "Terapéutica"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 78,
+            "topic": "HV.14",
+            "topic_name": "Antónimo — heterogénea",
+            "text": "Selecciona entre las opciones el ANTÓNIMO de la palabra en cursivas.\n\nEsa mezcla de sonidos es *heterogénea*.",
+            "options": {
+              "A": "Variada",
+              "B": "Monótona",
+              "C": "Múltiple",
+              "D": "Diversa"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 79,
+            "topic": "HV.15",
+            "topic_name": "Sinónimo — exclusiva",
+            "text": "Selecciona entre las opciones el SINÓNIMO que pueda sustituir correctamente a la palabra en cursivas.\n\nEs una facultad *exclusiva* del poder legislativo.",
+            "options": {
+              "A": "Única",
+              "B": "Compartida",
+              "C": "Legal",
+              "D": "Democrática"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 80,
+            "topic": "HV.16",
+            "topic_name": "Sinónimo — finito",
+            "text": "Selecciona entre las opciones el SINÓNIMO que pueda sustituir correctamente a la palabra en cursivas.\n\nEl universo es *finito*.",
+            "options": {
+              "A": "Terso",
+              "B": "Limitado",
+              "C": "Extenso",
+              "D": "Antiguo"
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Español",
+        "questions": [
+          {
+            "id": 81,
+            "topic": "E.1",
+            "topic_name": "Pedro Páramo — motivo",
+            "context": "Lee el siguiente fragmento literario, tomado de la obra:\n\nRulfo, Juan, *Pedro Páramo*, RM y Fundación Juan Rulfo, México, 2009, p. 5-8.\n\nDespués, contesta las preguntas relacionadas.\n\n\"Vine a Comala porque me dijeron que acá vivía mi padre, un tal Pedro Páramo. Mi madre me lo dijo. Y yo le prometí que vendría a verlo en cuanto ella muriera. Le apreté sus manos en señal de que lo haría, pues ella estaba por morirse y yo en un plan de prometerlo todo. […]\"",
+            "text": "¿Por qué fue el hijo de Pedro Páramo a Comala?",
+            "options": {
+              "A": "Porque se lo prometió a su madre antes de morir.",
+              "B": "Porque siempre había querido conocer a su padre, Pedro Páramo.",
+              "C": "Porque deseaba exigir a su padre lo que le correspondía de herencia.",
+              "D": "Porque su padre, Pedro Páramo, acababa de morir."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 82,
+            "topic": "E.2",
+            "topic_name": "Pedro Páramo — afirmación no incluida",
+            "context": "Lee el siguiente fragmento literario, tomado de la obra:\n\nRulfo, Juan, *Pedro Páramo*, RM y Fundación Juan Rulfo, México, 2009, p. 5-8.",
+            "text": "¿Cuál de las siguientes afirmaciones no está incluida en este fragmento literario?",
+            "options": {
+              "A": "Pedro Páramo ya había muerto también.",
+              "B": "Comala es un pueblo.",
+              "C": "Cerca de Comala se cultiva maíz.",
+              "D": "El clima de Comala es bastante cálido."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 83,
+            "topic": "E.3",
+            "topic_name": "Pedro Páramo — relación con arriero",
+            "context": "Lee el siguiente fragmento literario, tomado de la obra:\n\nRulfo, Juan, *Pedro Páramo*, RM y Fundación Juan Rulfo, México, 2009, p. 5-8.\n\n\"—Yo también soy hijo de Pedro Páramo —me dijo.\"",
+            "text": "Según el fragmento literario, además de ir ambos a Comala, ¿qué otra cosa tenían en común el hijo de Pedro Páramo y el arriero?",
+            "options": {
+              "A": "Ambos eran arrieros",
+              "B": "Ambos habían nacido en Comala",
+              "C": "Ambos iban a Comala a conocer a su padre",
+              "D": "Ambos eran hijos de Pedro Páramo"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 84,
+            "topic": "E.4",
+            "topic_name": "Pedro Páramo — propósito del texto",
+            "text": "Este texto ___________ tiene como propósito ___________.",
+            "options": {
+              "A": "Legal / proporcionar diversos antecedentes de la paternidad responsable",
+              "B": "Publicitario / describir el pueblo de Comala como destino turístico",
+              "C": "Administrativo / resumir datos para una toma de decisiones",
+              "D": "Académico / novelar en español aspectos de la idiosincrasia mexicana"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 85,
+            "topic": "E.5",
+            "topic_name": "Signos de puntuación",
+            "text": "Gramaticalmente, ¿cuál es la finalidad de los signos de puntuación?\n\ni. Separar sujetos de predicados\nii. Evitar ambigüedades en las ideas\niii. Marcar las pausas que faciliten la lectura\niv. Desarrollar un estilo literario",
+            "options": {
+              "A": "i",
+              "B": "ii y iii",
+              "C": "i, ii y iii",
+              "D": "ii, iii y iv"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 86,
+            "topic": "E.6",
+            "topic_name": "Punto y seguido",
+            "text": "¿Qué signo de puntuación indica la terminación de una idea completa y el inicio de otra en el mismo párrafo?",
+            "options": {
+              "A": "Coma",
+              "B": "Punto y coma",
+              "C": "Punto y seguido",
+              "D": "Puntos suspensivos"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 87,
+            "topic": "E.7",
+            "topic_name": "Análisis gramatical — sujeto",
+            "text": "Analiza gramaticalmente esta oración:\n\n*Le apreté sus manos en señal de que lo haría.*\n\n¿Cuál es el sujeto?",
+            "options": {
+              "A": "Yo",
+              "B": "Ella",
+              "C": "Sus manos",
+              "D": "Señal"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 88,
+            "topic": "E.8",
+            "topic_name": "Tiempo verbal — copretérito",
+            "text": "Analiza gramaticalmente esta oración:\n\n*Acá vivía mi padre, un tal Pedro Páramo.*\n\n¿En qué tiempo está conjugado el verbo?",
+            "options": {
+              "A": "Presente",
+              "B": "Pretérito",
+              "C": "Copretérito",
+              "D": "Pospretérito"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 89,
+            "topic": "E.9",
+            "topic_name": "Adverbio",
+            "text": "Analiza gramaticalmente esta oración:\n\n*El suelo siempre está muy húmedo en el bosque.*\n\n¿Cuál es el adverbio?",
+            "options": {
+              "A": "El",
+              "B": "Suelo",
+              "C": "Siempre",
+              "D": "Húmedo"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 90,
+            "topic": "E.10",
+            "topic_name": "Acento diacrítico",
+            "text": "Selecciona entre las opciones la oración que no está escrita correctamente en cuanto a acento diacrítico.",
+            "options": {
+              "A": "El premio no es para mi, sino para ti.",
+              "B": "Él prefiere trabajar que estudiar.",
+              "C": "¿Cómo se resuelve este problema?",
+              "D": "Quien a buen árbol se arrima, buena sombra le cobija."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 91,
+            "topic": "E.11",
+            "topic_name": "Función apelativa",
+            "text": "Identifica la función de la lengua que predomina en el siguiente párrafo:\n\n*¡Diles que no me maten, Justino! Anda, vete a decirles eso. Que por caridad. Así diles. Diles que lo hagan por caridad.*",
+            "options": {
+              "A": "Referencial",
+              "B": "Apelativa",
+              "C": "Poética",
+              "D": "Emotiva"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 92,
+            "topic": "E.12",
+            "topic_name": "Ficha bibliográfica",
+            "text": "¿Cuál es el objetivo de una ficha bibliográfica?",
+            "options": {
+              "A": "Archivar los libros de una biblioteca",
+              "B": "Citar una fuente de información",
+              "C": "Transcribir información de un libro",
+              "D": "Identificar una obra y registrar datos extraídos de ella."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Historia Universal y de México",
+        "questions": [
+          {
+            "id": 93,
+            "topic": "H.1",
+            "topic_name": "Caída Imperio romano",
+            "text": "¿A quiénes se atribuye el derrocamiento del Imperio romano de Occidente?",
+            "options": {
+              "A": "A los pueblos bárbaros, especialmente las tribus germánicas",
+              "B": "A los árabes",
+              "C": "A los griegos",
+              "D": "A los mismos romanos en un golpe de estado"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 94,
+            "topic": "H.2",
+            "topic_name": "Reforma protestante",
+            "text": "El movimiento de la Reforma religiosa protestante fue iniciado por:",
+            "options": {
+              "A": "Miguel Servet",
+              "B": "Martín Lutero",
+              "C": "Enrique VIII",
+              "D": "Juan Calvino"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 95,
+            "topic": "H.3",
+            "topic_name": "Revolución industrial",
+            "text": "¿Cómo se denomina la transición histórica mundial de producción artesanal a producción industrial con base en el desarrollo de la tecnología?",
+            "options": {
+              "A": "Colonización",
+              "B": "Capitalismo",
+              "C": "Revolución industrial",
+              "D": "Globalización"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 96,
+            "topic": "H.4",
+            "topic_name": "Derechos Humanos — Revolución francesa",
+            "text": "Los Derechos Humanos, que otorgan a cada persona la garantía de una vida digna por su simple condición humana, surgieron con la:",
+            "options": {
+              "A": "Revolución mexicana",
+              "B": "Revolución francesa",
+              "C": "Revolución rusa",
+              "D": "Globalización"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 97,
+            "topic": "H.5",
+            "topic_name": "Triple Alianza — 1ª Guerra Mundial",
+            "text": "Durante la Primera Guerra Mundial (1914-1918) se formaron la Triple Alianza y la Triple Entente. ¿Qué países constituyeron la Triple Alianza?",
+            "options": {
+              "A": "Alemania, Austria-Hungría e Italia",
+              "B": "Alemania, Austria-Hungría y Rusia",
+              "C": "Alemania, Italia y Japón",
+              "D": "Francia, Gran Bretaña y Rusia"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 98,
+            "topic": "H.6",
+            "topic_name": "Segunda Guerra Mundial — fin",
+            "text": "La Segunda Guerra Mundial (1939-1945) resultó ser el conflicto armado más sangriento de la historia. Comenzó con la invasión de Alemania a Polonia y concluyó con:",
+            "options": {
+              "A": "El suicidio de Adolf Hitler",
+              "B": "La muerte de Francisco Franco",
+              "C": "El bombardeo de Japón a Pearl Harbor",
+              "D": "El bombardeo atómico de Estados Unidos de América a Japón"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 99,
+            "topic": "H.7",
+            "topic_name": "Castas Nueva España",
+            "text": "En las castas de la Nueva España, un hijo de español e india se clasificaba como:",
+            "options": {
+              "A": "Indígena",
+              "B": "Criollo",
+              "C": "Mestizo",
+              "D": "Castizo"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 100,
+            "topic": "H.8",
+            "topic_name": "Economía Nueva España",
+            "text": "El saqueo que España hacía en la Nueva España fue determinante para que la economía tuviera una intensa actividad en:",
+            "options": {
+              "A": "Cultivo de especias",
+              "B": "Cultivo de maíz",
+              "C": "Extracción de metales",
+              "D": "Explotación petrolera"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 101,
+            "topic": "H.9",
+            "topic_name": "Independencia — Morelos",
+            "text": "En 1811, al morir Miguel Hidalgo, el iniciador de la Independencia de México, el estratega militar que continuó con el movimiento insurgente fue:",
+            "options": {
+              "A": "José María Morelos",
+              "B": "Emiliano Zapata",
+              "C": "Francisco Villa",
+              "D": "Benito Juárez"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 102,
+            "topic": "H.10",
+            "topic_name": "Consumación Independencia",
+            "text": "La consumación de la Independencia de México fue en 1821. Indica quién entró a la Ciudad de México acompañado por el ejército trigarante:",
+            "options": {
+              "A": "Vicente Guerrero",
+              "B": "José María Morelos",
+              "C": "Agustín de Iturbide",
+              "D": "Francisco Javier Mina"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 103,
+            "topic": "H.11",
+            "topic_name": "Porfirio Díaz",
+            "text": "Fue presidente de México en 1876, de 1877 a 1880 y de 1884 a 1911, etapa en la que se desarrolló en el país el capitalismo, hubo prosperidad económica y se constituyeron diversas instituciones culturales, pero con violaciones a los derechos humanos.",
+            "options": {
+              "A": "Antonio López de Santa Anna",
+              "B": "Maximiliano de Habsburgo",
+              "C": "Benito Juárez",
+              "D": "Porfirio Díaz"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 104,
+            "topic": "H.12",
+            "topic_name": "Plan de San Luis",
+            "text": "Selecciona entre las opciones el documento que llamaba a levantarse en armas el 20 de noviembre de 1910, para iniciar la Revolución mexicana.",
+            "options": {
+              "A": "Sentimientos de la Nación",
+              "B": "Plan de San Luis",
+              "C": "Plan de Ayala",
+              "D": "Constitución Política de los Estados Unidos Mexicanos"
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Geografía",
+        "questions": [
+          {
+            "id": 105,
+            "topic": "G.1",
+            "topic_name": "Latitud",
+            "text": "La latitud se mide desde el ___________ y su valor máximo es de ___________.",
+            "options": {
+              "A": "Meridiano 0° / 180° E y 180° O",
+              "B": "Meridiano 0° / 90° N y 90° S",
+              "C": "Ecuador / 180° N y 180° S",
+              "D": "Ecuador / 90° N y 90° S"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 106,
+            "topic": "G.2",
+            "topic_name": "Rotación — husos horarios",
+            "text": "Cuando en México son las 12:00 horas, en París son las 19:00 horas. Esta diferencia de horario es una consecuencia del movimiento de:",
+            "options": {
+              "A": "Revolución",
+              "B": "Rotación",
+              "C": "Traslación",
+              "D": "Precesión"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 107,
+            "topic": "G.3",
+            "topic_name": "Dorsal — placas tectónicas",
+            "text": "Es causa de una mayor separación entre América y Europa, relacionada con las placas tectónicas:",
+            "options": {
+              "A": "Dorsal",
+              "B": "Plegamiento",
+              "C": "Expansión",
+              "D": "Subducción"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 108,
+            "topic": "G.4",
+            "topic_name": "Sismicidad",
+            "text": "Las zonas de mayor sismicidad en el planeta tienen en común estar ubicadas en:",
+            "options": {
+              "A": "Grandes planicies",
+              "B": "Mesetas entre montañas",
+              "C": "Depresiones relativas",
+              "D": "Límites de placas tectónicas"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 109,
+            "topic": "G.5",
+            "topic_name": "Vulcanismo secundario",
+            "text": "Son manifestaciones secundarias de vulcanismo.",
+            "options": {
+              "A": "Aguas termales y géiseres",
+              "B": "Roca caliza y arena",
+              "C": "Ceniza y lluvia ácida",
+              "D": "Tierras fértiles y lluvia abundante"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 110,
+            "topic": "G.6",
+            "topic_name": "Estados — selva",
+            "text": "Estado mexicano en el que predominan las zonas selváticas.",
+            "options": {
+              "A": "Durango",
+              "B": "Veracruz",
+              "C": "Chiapas",
+              "D": "Yucatán"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 111,
+            "topic": "G.7",
+            "topic_name": "Estratosfera — ozono",
+            "text": "Es la capa de la atmósfera en donde la luz ultravioleta transforma las moléculas de oxígeno en ozono. La capa de ozono a su vez absorbe la luz ultravioleta, impidiendo que tal radiación finalmente alcance la superficie terrestre.",
+            "options": {
+              "A": "Troposfera",
+              "B": "Estratosfera",
+              "C": "Mesosfera",
+              "D": "Exosfera"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 112,
+            "topic": "G.8",
+            "topic_name": "Clima — elementos",
+            "text": "La luz solar, la presión, la temperatura, el viento y la humedad son elementos de:",
+            "options": {
+              "A": "La litosfera",
+              "B": "La hidrosfera",
+              "C": "El clima",
+              "D": "El ciclo del agua"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 113,
+            "topic": "G.9",
+            "topic_name": "Continente — crecimiento poblacional",
+            "text": "Es el continente con mayor crecimiento poblacional.",
+            "options": {
+              "A": "Europa",
+              "B": "Asia",
+              "C": "África",
+              "D": "América"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 114,
+            "topic": "G.10",
+            "topic_name": "Esperanza de vida",
+            "text": "¿Cuál es el continente cuya población tiene la mayor esperanza de vida?",
+            "options": {
+              "A": "Europa",
+              "B": "Asia",
+              "C": "África",
+              "D": "América"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 115,
+            "topic": "G.11",
+            "topic_name": "Puertos de altura",
+            "text": "Son los principales puertos de altura en México para la actividad de comercio exterior.",
+            "options": {
+              "A": "Cancún y Acapulco",
+              "B": "Acapulco y Veracruz",
+              "C": "Veracruz y Manzanillo",
+              "D": "Manzanillo y La Paz"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 116,
+            "topic": "G.12",
+            "topic_name": "Producto agrícola México",
+            "text": "Históricamente ha sido el principal producto agrícola de México.",
+            "options": {
+              "A": "Frijol",
+              "B": "Trigo",
+              "C": "Papa",
+              "D": "Maíz"
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Formación cívica y ética",
+        "questions": [
+          {
+            "id": 117,
+            "topic": "FCE.1",
+            "topic_name": "Narcotráfico — ilegal",
+            "text": "El narcotráfico es una actividad:",
+            "options": {
+              "A": "Ilegal",
+              "B": "Cívica",
+              "C": "Ética",
+              "D": "No ética"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 118,
+            "topic": "FCE.2",
+            "topic_name": "Soborno — no ética",
+            "text": "Si un policía acepta un soborno a cambio de liberar a un delincuente, está mostrando una conducta:",
+            "options": {
+              "A": "Ilegal",
+              "B": "Cívica",
+              "C": "Ética",
+              "D": "No ética"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 119,
+            "topic": "FCE.3",
+            "topic_name": "Honrar a héroes — cívico",
+            "text": "Honrar a los héroes de la Independencia de México es un acto:",
+            "options": {
+              "A": "Ilegal",
+              "B": "Cívico",
+              "C": "Ético",
+              "D": "No ético"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 120,
+            "topic": "FCE.4",
+            "topic_name": "Educación laica",
+            "text": "La educación pública no debe orientarse a la religión. Esto es una postura:",
+            "options": {
+              "A": "Política",
+              "B": "Cívica",
+              "C": "Laica",
+              "D": "Discriminante"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 121,
+            "topic": "FCE.5",
+            "topic_name": "Normas morales",
+            "text": "Las normas ___________ tienen la característica de referirse a las acciones o los caracteres de las personas desde el punto de vista de la bondad o la malicia.",
+            "options": {
+              "A": "Morales",
+              "B": "Jurídicas",
+              "C": "Religiosas",
+              "D": "Sociales"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 122,
+            "topic": "FCE.6",
+            "topic_name": "Constitución — esclavitud",
+            "text": "La esclavitud está prohibida en los Estados Unidos Mexicanos. Esto es un ejemplo de una postura:",
+            "options": {
+              "A": "Cívica",
+              "B": "Laica",
+              "C": "Dictatorial",
+              "D": "Constitucional"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 123,
+            "topic": "FCE.7",
+            "topic_name": "Maltrato físico",
+            "text": "Es el tipo de maltrato fundamental que ocurre cuando alguien utiliza la fuerza, un arma o algún objeto para someter a otra persona:",
+            "options": {
+              "A": "Físico",
+              "B": "Familiar",
+              "C": "Social",
+              "D": "Psicológico"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 124,
+            "topic": "FCE.8",
+            "topic_name": "Maltrato psicológico",
+            "text": "Es el tipo de maltrato fundamental que ocurre cuando alguien utiliza expresiones de intimidación, groserías, gritos y amenazas en contra de otra persona para discriminarla:",
+            "options": {
+              "A": "Físico",
+              "B": "Familiar",
+              "C": "Social",
+              "D": "Psicológico"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 125,
+            "topic": "FCE.9",
+            "topic_name": "Cooperación",
+            "text": "El trabajo comunitario para lograr objetivos específicos en beneficio de todos se denomina:",
+            "options": {
+              "A": "Tolerancia",
+              "B": "Responsabilidad",
+              "C": "Respeto",
+              "D": "Cooperación"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 126,
+            "topic": "FCE.10",
+            "topic_name": "Respeto",
+            "text": "La consideración del valor de otra persona, capaz de normar una conducta semejante en reciprocidad, se denomina:",
+            "options": {
+              "A": "Tolerancia",
+              "B": "Responsabilidad",
+              "C": "Respeto",
+              "D": "Cooperación"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 127,
+            "topic": "FCE.11",
+            "topic_name": "Convivencia social — valores",
+            "text": "La convivencia social está sustentada en:",
+            "options": {
+              "A": "La igualdad",
+              "B": "La religión",
+              "C": "La disciplina",
+              "D": "El respeto, la solidaridad, la tolerancia, la cooperación y libertad"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 128,
+            "topic": "FCE.12",
+            "topic_name": "Jefe de gobierno DF",
+            "text": "El jefe de gobierno del Distrito Federal es nombrado o electo por:",
+            "options": {
+              "A": "Los ciudadanos que habitan en el Distrito Federal",
+              "B": "La Asamblea Legislativa",
+              "C": "El Congreso de la Unión",
+              "D": "El presidente de los Estados Unidos Mexicanos"
+            },
+            "answer": "A"
+          }
+        ]
+      }
+    ]
+  }
+}

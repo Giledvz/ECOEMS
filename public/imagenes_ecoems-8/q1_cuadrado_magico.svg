@@ -1,0 +1,20 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="180" height="180" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <!-- Cuadrado mágico 3×3: 4,9,2 / 3,?,7 / 8,1,6. Celda vacía en el centro. -->
+  <g stroke="currentColor" stroke-width="1.5" fill="none">
+    <rect x="15" y="15" width="120" height="120"/>
+    <line x1="55" y1="15" x2="55" y2="135"/>
+    <line x1="95" y1="15" x2="95" y2="135"/>
+    <line x1="15" y1="55" x2="135" y2="55"/>
+    <line x1="15" y1="95" x2="135" y2="95"/>
+  </g>
+  <g font-size="18" text-anchor="middle" fill="currentColor">
+    <text x="35" y="41">4</text>
+    <text x="75" y="41">9</text>
+    <text x="115" y="41">2</text>
+    <text x="35" y="81">3</text>
+    <text x="115" y="81">7</text>
+    <text x="35" y="121">8</text>
+    <text x="75" y="121">1</text>
+    <text x="115" y="121">6</text>
+  </g>
+</svg>

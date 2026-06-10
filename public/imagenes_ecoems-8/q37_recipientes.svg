@@ -1,0 +1,30 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 165" width="400" height="206" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <!-- Tres recipientes con agua al mismo nivel (y=40) sobre superficie horizontal.
+       a: angosto recto · b: trapecio ancho arriba · c: ancho. -->
+  <!-- Agua (relleno suave) -->
+  <g fill="currentColor" opacity="0.18">
+    <rect x="31" y="40" width="23" height="90"/>
+    <polygon points="82,40 148,40 130,130 100,130"/>
+    <polygon points="176,40 289,40 280,130 185,130"/>
+  </g>
+  <!-- Línea de superficie del agua -->
+  <g stroke="currentColor" stroke-width="1" opacity="0.6">
+    <line x1="31" y1="40" x2="54" y2="40"/>
+    <line x1="82" y1="40" x2="148" y2="40"/>
+    <line x1="176" y1="40" x2="289" y2="40"/>
+  </g>
+  <!-- Paredes de los recipientes (abiertos arriba) -->
+  <g stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="miter">
+    <polyline points="30,28 30,130 55,130 55,28"/>
+    <polyline points="80,28 100,130 130,130 150,28"/>
+    <polyline points="174,28 185,130 280,130 291,28"/>
+  </g>
+  <!-- Superficie horizontal -->
+  <line x1="12" y1="132" x2="308" y2="132" stroke="currentColor" stroke-width="2.5"/>
+  <!-- Etiquetas -->
+  <g font-size="14" font-style="italic" text-anchor="middle" fill="currentColor">
+    <text x="42" y="155">a</text>
+    <text x="115" y="155">b</text>
+    <text x="232" y="155">c</text>
+  </g>
+</svg>

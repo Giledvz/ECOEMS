@@ -1,0 +1,15 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 140" width="180" height="140" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+<defs>
+    <g id="cube">
+      <polygon points="0,-20 17.32,-30 0,-40 -17.32,-30" fill="#efe7d8" stroke="#1f1a16" stroke-width="1.5"/>
+      <polygon points="0,0 -17.32,-10 -17.32,-30 0,-20" fill="#c9bda3" stroke="#1f1a16" stroke-width="1.5"/>
+      <polygon points="0,0 17.32,-10 17.32,-30 0,-20" fill="#a89880" stroke="#1f1a16" stroke-width="1.5"/>
+    </g>
+  </defs>
+  <!-- d) 211, 221, 121, 321, 322 -->
+  <use href="#cube" transform="translate(107.32, 80)"/>  <!-- (3,2,1) -->
+  <use href="#cube" transform="translate(107.32, 60)"/>  <!-- (3,2,2) -->
+  <use href="#cube" transform="translate(90, 90)"/>      <!-- (2,2,1) -->
+  <use href="#cube" transform="translate(107.32, 100)"/> <!-- (2,1,1) -->
+  <use href="#cube" transform="translate(72.68, 100)"/>  <!-- (1,2,1) -->
+</svg>

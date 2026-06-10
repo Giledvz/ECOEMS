@@ -1,0 +1,20 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <!-- Cuadrado de lado 2r con un círculo r=1 centrado en cada esquina.
+       Área sombreada: el "diamante" central = cuadrado − 4 cuartos de círculo. -->
+  <!-- Región sombreada (4 arcos cóncavos hacia las esquinas) -->
+  <path d="M 150 90
+           A 60 60 0 0 0 210 150
+           A 60 60 0 0 0 150 210
+           A 60 60 0 0 0 90 150
+           A 60 60 0 0 0 150 90 Z"
+        fill="currentColor"/>
+  <!-- Círculos en las esquinas -->
+  <g stroke="currentColor" stroke-width="2" fill="none">
+    <circle cx="90" cy="90" r="60"/>
+    <circle cx="210" cy="90" r="60"/>
+    <circle cx="90" cy="210" r="60"/>
+    <circle cx="210" cy="210" r="60"/>
+  </g>
+  <!-- Cuadrado -->
+  <rect x="90" y="90" width="120" height="120" stroke="currentColor" stroke-width="2.5" fill="none"/>
+</svg>

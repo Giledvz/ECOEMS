@@ -1,0 +1,27 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 210" width="260" height="248" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <!-- Círculo centro (105,105) r=80. A arriba, C a la derecha, B abajo-izquierda
+       (~225°). Ejes de simetría punteados. Ángulo inscrito en B hacia A y C. -->
+  <circle cx="105" cy="105" r="80" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.45"/>
+  <!-- Ejes de simetría (diámetros punteados) -->
+  <g stroke="currentColor" stroke-width="1" stroke-dasharray="4,3" opacity="0.5">
+    <line x1="25" y1="105" x2="185" y2="105"/>
+    <line x1="105" y1="25" x2="105" y2="185"/>
+  </g>
+  <!-- Lados del ángulo inscrito: B→A y B→C -->
+  <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <line x1="48.4" y1="161.6" x2="105" y2="25"/>
+    <line x1="48.4" y1="161.6" x2="185" y2="105"/>
+  </g>
+  <!-- Puntos -->
+  <g fill="currentColor">
+    <circle cx="105" cy="25" r="2.5"/>
+    <circle cx="185" cy="105" r="2.5"/>
+    <circle cx="48.4" cy="161.6" r="2.5"/>
+  </g>
+  <!-- Etiquetas -->
+  <g font-size="15" font-style="italic" fill="currentColor">
+    <text x="105" y="16" text-anchor="middle">A</text>
+    <text x="195" y="110">C</text>
+    <text x="34" y="177">B</text>
+  </g>
+</svg>
