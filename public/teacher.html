@@ -1073,6 +1073,7 @@
     padding: 3px 0; font-size: var(--font-size-13, 13px);
   }
   .practice-q-head { display: flex; gap: var(--space-2); align-items: center; flex-wrap: wrap; margin-bottom: var(--space-3); }
+  .practice-limit-note { margin-left: auto; font-size: var(--font-size-12); color: var(--color-text-meta); }
   .practice-result { font-size: var(--font-size-13, 13px); font-weight: 600; }
   .practice-result--ok { color: var(--color-state-ok); }
   .practice-result--err { color: var(--color-state-err); }
@@ -1099,6 +1100,13 @@
     color: var(--color-text-secondary);
   }
   .practice-next { width: 100%; justify-content: center; }
+  .practice-next svg {
+    width: var(--icon-size-md); height: var(--icon-size-md);
+    fill: none; stroke: currentColor;
+    stroke-width: var(--icon-stroke-width);
+    stroke-linecap: round; stroke-linejoin: round;
+    flex-shrink: 0;
+  }
   /* Selector de materias al crear sala Carrusel */
   .subject-pick {
     display: flex; flex-direction: column; gap: var(--space-2);
@@ -1313,6 +1321,7 @@
         <span class="badge badge-sm badge-waiting" id="pQNum">—</span>
         <span class="tag" id="pQSubject"></span>
         <span class="practice-result" id="pResult"></span>
+        <span class="practice-limit-note" id="pLimitNote"></span>
       </div>
       <div class="practice-q-text" id="pQText"></div>
       <div id="pQImage" class="practice-q-img"></div>
@@ -1655,6 +1664,17 @@ function renderPracticePanel() {
   const expEl = document.getElementById('pExplanation');
   const resEl = document.getElementById('pResult');
   const nextBtn = document.getElementById('pNextBtn');
+
+  // Nota de equidad: cuántas se juegan y cuántas tocan por alumno.
+  const noteEl = document.getElementById('pLimitNote');
+  const li = practiceData.limitInfo;
+  if (li && li.perStudent) {
+    noteEl.textContent = li.limit < li.totalAvailable
+      ? `se juegan ${li.limit} de ${li.totalAvailable} · ${li.perStudent} por alumno (${li.participants})`
+      : `${li.perStudent} preguntas por alumno (${li.participants})`;
+  } else {
+    noteEl.textContent = '';
+  }
 
   if (st.phase === 'finished' || !q) {
     numEl.textContent = `${st.total}/${st.total}`;

@@ -104,6 +104,7 @@ function createRoom(data, jsonFilename = null, lockedOptions = false, opts = {})
       turnManual: false,    // true si el profe asignó el turno a mano (Siguiente lo respeta)
       scores: {},           // nombre -> { correct, answered }
       lastResult: null,     // { qid, name, answer, correctAnswer, isCorrect, explanation }
+      limit: null,          // corte de equidad: se fija al iniciar (múltiplo de participantes)
     };
   }
 
@@ -133,14 +134,24 @@ function advancePracticeTurn(room) {
   }
 }
 
+// Corte de equidad: cuántas preguntas se juegan en la sesión. Se fija al
+// iniciar como el mayor múltiplo del número de participantes que cabe en el
+// total — así, con rotación estricta, todos contestan exactamente las mismas.
+function practiceLimit(room) {
+  const p = room.practice;
+  if (!p) return room.questions.length;
+  return p.limit ?? room.questions.length;
+}
+
 function buildPracticeState(room) {
   const p = room.practice;
   if (!p) return null;
-  const finished = p.idx >= room.questions.length;
+  const limit = practiceLimit(room);
+  const finished = p.idx >= limit;
   const q = finished ? null : room.questions[p.idx];
   return {
     idx: p.idx,
-    total: room.questions.length,
+    total: limit,
     qid: q ? q.id : null,
     subject: q ? q.subject : null,
     phase: finished ? 'finished' : p.phase,
@@ -156,7 +167,9 @@ function buildPracticeState(room) {
 // completa y la respuesta correcta (el alumno la recibe hasta el revelado).
 function buildPracticeTeacherState(room) {
   const p = room.practice;
-  const q = (p && p.idx < room.questions.length) ? room.questions[p.idx] : null;
+  const limit = practiceLimit(room);
+  const q = (p && p.idx < limit) ? room.questions[p.idx] : null;
+  const participants = p ? p.turnQueue.length : 0;
   return {
     roomCode: room.roomCode,
     state: buildPracticeState(room),
@@ -166,6 +179,12 @@ function buildPracticeTeacherState(room) {
       topic_name: q.topic_name || '', explanation: q.explanation || '',
     } : null,
     correctAnswer: q ? room.answerKey[q.id] : null,
+    limitInfo: {
+      limit,
+      totalAvailable: room.questions.length,
+      participants,
+      perStudent: participants > 0 && p && p.limit ? Math.floor(limit / participants) : null,
+    },
   };
 }
 
@@ -1297,7 +1316,7 @@ io.on('connection', (socket) => {
     if (!room || room.mode !== 'practice' || !room.practice) return;
     if (room.phase !== 'active') return;
     const p = room.practice;
-    if (p.phase !== 'answering' || p.idx >= room.questions.length) return;
+    if (p.phase !== 'answering' || p.idx >= practiceLimit(room)) return;
     const student = room.students[socket.id];
     if (!student) return;
     const turnName = practiceTurnName(room);
@@ -1322,17 +1341,18 @@ io.on('connection', (socket) => {
     if (!room || room.mode !== 'practice' || !room.practice) return;
     if (room.phase !== 'active') return;
     const p = room.practice;
-    if (p.idx < room.questions.length) p.idx++;
+    const limit = practiceLimit(room);
+    if (p.idx < limit) p.idx++;
     p.phase = 'answering';
     p.lastResult = null;
     // Si el profe asignó turno a mano y aún no se cumple, la siguiente pregunta
     // la contesta ese alumno (no se rota encima de la asignación).
-    if (p.idx < room.questions.length) {
+    if (p.idx < limit) {
       if (p.turnManual) p.turnManual = false;
       else advancePracticeTurn(room);
     }
     broadcastPractice(room);
-    console.log(`[${roomCode}] Carrusel: pregunta ${Math.min(p.idx + 1, room.questions.length)}/${room.questions.length}, turno de ${practiceTurnName(room) || '—'}`);
+    console.log(`[${roomCode}] Carrusel: pregunta ${Math.min(p.idx + 1, limit)}/${limit}, turno de ${practiceTurnName(room) || '—'}`);
   });
 
   // ── Práctica (Carrusel): el profesor reasigna el turno ──
@@ -1446,7 +1466,17 @@ io.on('connection', (socket) => {
     room.startTime = Date.now();
     Object.values(room.students).forEach(s => { s.startTime = room.startTime; });
     io.to(roomCode).emit('examStarted', { startTime: room.startTime, timeLimit: room.timeLimitMinutes, serverTime: Date.now() });
-    if (room.mode === 'practice') broadcastPractice(room);
+    if (room.mode === 'practice' && room.practice) {
+      // Corte de equidad: mayor múltiplo de los participantes presentes que
+      // cabe en el total de preguntas (todos contestan exactamente lo mismo).
+      const p = room.practice;
+      const n = p.turnQueue.length;
+      const total = room.questions.length;
+      const cut = n > 0 ? Math.floor(total / n) * n : total;
+      p.limit = cut > 0 ? cut : total;
+      if (n > 0) console.log(`[${roomCode}] Carrusel: ${p.limit} de ${total} preguntas (${n} participantes, ${Math.floor(p.limit / n)} c/u)`);
+      broadcastPractice(room);
+    }
     broadcastRoomsList();
     console.log(`[${roomCode}] ${room.mode === 'practice' ? 'Práctica iniciada' : 'Examen iniciado'}`);
   });
@@ -1506,7 +1536,7 @@ io.on('connection', (socket) => {
     room.students = {};
     room.startTime = null;
     if (room.mode === 'practice' && room.practice) {
-      room.practice = { idx: 0, phase: 'answering', turnQueue: [], turnPos: 0, scores: {}, lastResult: null };
+      room.practice = { idx: 0, phase: 'answering', turnQueue: [], turnPos: 0, turnManual: false, scores: {}, lastResult: null, limit: null };
     }
     io.to(roomCode).emit('examReset');
     broadcastRoomsList();

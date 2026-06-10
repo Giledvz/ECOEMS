@@ -953,8 +953,10 @@
   .exam-option--spectator { pointer-events: none; }
   .exam-option--spectator .exam-option__lock { opacity: 0.55; }
 
-  /* ── Modo práctica (Carrusel): banner de turno + marcador ── */
-  .practice-bar { margin: var(--space-4) 0 0; }
+  /* ── Modo práctica (Carrusel): banner de turno + marcador ──
+     Mismo padding lateral que .exam-question para alinear con la pregunta. */
+  .practice-bar { margin: var(--space-4) 0 0; padding-inline: var(--space-5); }
+  @media (min-width: 760px) { .practice-bar { padding-inline: var(--space-7); } }
   .practice-turn {
     background-color: var(--color-bg-raised);
     border: 1px solid var(--color-border-subtle);
