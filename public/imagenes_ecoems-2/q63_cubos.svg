@@ -3,11 +3,11 @@
     <!-- Cubo isométrico reutilizable. Origen: vértice frontal inferior. Lado=40 -->
     <symbol id="cube" overflow="visible">
       <!-- Cara superior -->
-      <polygon points="0,-30 35,-50 70,-30 35,-10" fill="#e2e8f0" stroke="currentColor" stroke-width="1.5"/>
+      <polygon points="0,-30 35,-50 70,-30 35,-10" fill="#efe7d8" stroke="#1f1a16" stroke-width="1.5"/>
       <!-- Cara frontal izquierda -->
-      <polygon points="0,-30 35,-10 35,30 0,10" fill="#cbd5e1" stroke="currentColor" stroke-width="1.5"/>
+      <polygon points="0,-30 35,-10 35,30 0,10" fill="#c9bda3" stroke="#1f1a16" stroke-width="1.5"/>
       <!-- Cara frontal derecha -->
-      <polygon points="35,-10 70,-30 70,10 35,30" fill="#94a3b8" stroke="currentColor" stroke-width="1.5"/>
+      <polygon points="35,-10 70,-30 70,10 35,30" fill="#a89880" stroke="#1f1a16" stroke-width="1.5"/>
     </symbol>
   </defs>
 
@@ -24,7 +24,7 @@
   </g>
 
   <!-- Línea separadora -->
-  <line x1="40" y1="290" x2="680" y2="290" stroke="#d1d5db" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="40" y1="290" x2="680" y2="290" stroke="currentColor" opacity="0.45" stroke-width="1" stroke-dasharray="4,4"/>
 
   <!-- OPCIÓN A (rotada incorrectamente: refleja) -->
   <g transform="translate(80, 350)">

@@ -1066,7 +1066,7 @@
     padding: 8px 10px;
     font-family: inherit; font-size: var(--font-size-13, 13px);
   }
-  .practice-scoreboard { display: flex; flex-direction: column; gap: var(--space-1); margin-top: var(--space-2); max-height: 180px; overflow: auto; }
+  .practice-scoreboard { display: flex; flex-direction: column; gap: var(--space-1); margin-top: var(--space-2); }
   .practice-scoreboard__row {
     display: flex; justify-content: space-between; align-items: baseline;
     border-bottom: 1px solid var(--color-border-subtle);
@@ -1074,7 +1074,13 @@
   }
   .practice-q-head { display: flex; gap: var(--space-2); align-items: center; flex-wrap: wrap; margin-bottom: var(--space-3); }
   .practice-limit-note { margin-left: auto; font-size: var(--font-size-12); color: var(--color-text-meta); }
+  .practice-countdown { font-size: var(--font-size-13, 13px); font-variant-numeric: tabular-nums; color: var(--color-state-warn); font-weight: 600; }
   .practice-result { font-size: var(--font-size-13, 13px); font-weight: 600; }
+  /* Flash de la tarjeta de pregunta cuando llega una respuesta */
+  @keyframes practiceFlashOk  { 0% { box-shadow: 0 0 0 3px var(--color-state-ok); } 100% { box-shadow: 0 0 0 0 transparent; } }
+  @keyframes practiceFlashErr { 0% { box-shadow: 0 0 0 3px var(--color-state-err); } 100% { box-shadow: 0 0 0 0 transparent; } }
+  .practice-card--flash-ok  { animation: practiceFlashOk 1.5s var(--motion-ease-standard); }
+  .practice-card--flash-err { animation: practiceFlashErr 1.5s var(--motion-ease-standard); }
   .practice-result--ok { color: var(--color-state-ok); }
   .practice-result--err { color: var(--color-state-err); }
   .practice-q-text { font-size: var(--font-size-14); line-height: 1.6; color: var(--color-text-primary); }
@@ -1115,6 +1121,20 @@
   }
   .subject-pick__item { display: flex; gap: var(--space-2); align-items: center; cursor: pointer; font-size: var(--font-size-13, 13px); color: var(--color-text-primary); }
   .subject-pick__item input { accent-color: var(--accent-conac); width: 16px; height: 16px; }
+  .practice-timer-field {
+    display: block; text-align: left;
+    margin: var(--space-3) 0; font-size: var(--font-size-13, 13px);
+    color: var(--color-text-primary);
+  }
+  .practice-timer-field input {
+    width: 80px; margin-left: var(--space-2);
+    background-color: var(--color-bg-input, var(--color-bg-raised));
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-md);
+    padding: 6px 8px; font-family: inherit;
+  }
+  .practice-timer-hint { display: block; margin-top: var(--space-1); font-size: var(--font-size-12); color: var(--color-text-meta); }
   @media (max-width: 759px) {
     .practice-grid { grid-template-columns: 1fr; }
   }
@@ -1321,6 +1341,7 @@
         <span class="badge badge-sm badge-waiting" id="pQNum">—</span>
         <span class="tag" id="pQSubject"></span>
         <span class="practice-result" id="pResult"></span>
+        <span class="practice-countdown" id="pCountdown"></span>
         <span class="practice-limit-note" id="pLimitNote"></span>
       </div>
       <div class="practice-q-text" id="pQText"></div>
@@ -1612,11 +1633,63 @@ function applyModeUI() {
 }
 
 // ─── Carrusel: panel de control en vivo ─────────────────────────────────────
+// Campanita al recibir respuesta: dos tonos cortos (WebAudio, sin archivos).
+function playRevealChime(ok) {
+  try {
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    const ctx = window.__chimeCtx || (window.__chimeCtx = new Ctx());
+    if (ctx.state === 'suspended') ctx.resume();
+    const t = ctx.currentTime;
+    const freqs = ok ? [880, 1318] : [440, 330];   // ascendente = bien, descendente = mal
+    freqs.forEach((f, i) => {
+      const o = ctx.createOscillator(), g = ctx.createGain();
+      o.type = 'sine'; o.frequency.value = f;
+      g.gain.setValueAtTime(0.0001, t + i * 0.14);
+      g.gain.exponentialRampToValueAtTime(0.2, t + i * 0.14 + 0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + i * 0.14 + 0.4);
+      o.connect(g).connect(ctx.destination);
+      o.start(t + i * 0.14); o.stop(t + i * 0.14 + 0.45);
+    });
+  } catch (e) {}
+}
+
+let __pPrevPhase = null;
+let __pDeadline = null;
+let __pTickInt = null;
+
 socket.on('practiceTeacherState', (data) => {
   if (!selectedRoom || data.roomCode !== selectedRoom) return;
+  const newPhase = data.state && data.state.phase;
+  // Aviso al profesor: sonido + flash cuando el alumno contesta.
+  if (__pPrevPhase === 'answering' && newPhase === 'revealed' && data.state.lastResult) {
+    playRevealChime(data.state.lastResult.isCorrect);
+    const card = document.querySelector('.practice-card--q');
+    if (card) {
+      const cls = data.state.lastResult.isCorrect ? 'practice-card--flash-ok' : 'practice-card--flash-err';
+      card.classList.remove('practice-card--flash-ok', 'practice-card--flash-err');
+      void card.offsetWidth; // reinicia la animación
+      card.classList.add(cls);
+      setTimeout(() => card.classList.remove(cls), 1600);
+    }
+  }
+  __pPrevPhase = newPhase;
+  // Cuenta regresiva del timer por pregunta.
+  __pDeadline = (data.state && typeof data.state.remainingMs === 'number') ? Date.now() + data.state.remainingMs : null;
+  startTeacherPracticeTick();
   practiceData = data;
   renderPracticePanel();
 });
+
+function startTeacherPracticeTick() {
+  if (__pTickInt) return;
+  __pTickInt = setInterval(() => {
+    const el = document.getElementById('pCountdown');
+    if (!el) return;
+    if (__pDeadline == null || !practiceData || practiceData.state.phase !== 'answering') { el.textContent = ''; return; }
+    const s = Math.max(0, Math.ceil((__pDeadline - Date.now()) / 1000));
+    el.textContent = `⏱ ${s}s`;
+  }, 500);
+}
 
 function renderPracticePanel() {
   if (!practiceData) return;
@@ -1644,11 +1717,14 @@ function renderPracticePanel() {
   });
   if (prev && [...sel.options].some(o => o.value === prev)) sel.value = prev;
 
-  // Marcador (aciertos / participaciones)
+  // Marcador (aciertos / participaciones · porcentaje)
   const scoresEl = document.getElementById('pScores');
   const entries = Object.entries(st.scores || {}).sort((a, b) => b[1].correct - a[1].correct || a[0].localeCompare(b[0]));
   scoresEl.innerHTML = entries.length
-    ? entries.map(([n, s]) => `<div class="practice-scoreboard__row"><span></span><strong>${s.correct}/${s.answered}</strong></div>`).join('')
+    ? entries.map(([n, s]) => {
+        const pct = s.answered > 0 ? Math.round((s.correct / s.answered) * 100) : 0;
+        return `<div class="practice-scoreboard__row"><span></span><strong>${s.correct}/${s.answered} · ${pct}%</strong></div>`;
+      }).join('')
     : '<div class="practice-scoreboard__row"><span>Sin participaciones aún</span></div>';
   // textContent para nombres (evita HTML injection desde nombres de alumnos)
   scoresEl.querySelectorAll('.practice-scoreboard__row span:first-child').forEach((span, i) => {
@@ -1712,7 +1788,10 @@ function renderPracticePanel() {
     resEl.textContent = `${r.name}: ${r.answer} ${r.isCorrect ? '✓ correcta' : `✗ (era ${r.correctAnswer})`}`;
   } else {
     resEl.className = 'practice-result';
-    resEl.textContent = st.turnName ? `Esperando respuesta de ${st.turnName}…` : '';
+    const elig = st.eligibleNames || [];
+    resEl.textContent = elig.length > 1
+      ? `Esperando respuesta (abierta para: ${elig.join(', ')})…`
+      : (st.turnName ? `Esperando respuesta de ${st.turnName}…` : '');
   }
 
   if (q.explanation) {
@@ -1747,6 +1826,11 @@ function pickSubjects(subjects) {
         <h2 class="overlay-card__title">Materias del Carrusel</h2>
         <p class="overlay-card__body">Las preguntas de las materias elegidas se mezclan en miscelánea:</p>
         <div class="subject-pick" id="subjectPick"></div>
+        <label class="practice-timer-field">
+          Tiempo por pregunta (segundos):
+          <input type="number" id="practiceTimerInput" min="0" max="900" step="5" value="60">
+          <span class="practice-timer-hint">0 = sin límite. Al vencer, la pregunta se abre también para el siguiente en orden.</span>
+        </label>
         <div class="overlay-card__actions">
           <button class="btn btn--ghost" data-action="cancel" type="button">Cancelar</button>
           <button class="btn btn--primary" data-action="accept" type="button">Crear sala</button>
@@ -1775,7 +1859,8 @@ function pickSubjects(subjects) {
     overlay.querySelector('[data-action="accept"]').onclick = () => {
       const sel = [...list.querySelectorAll('input:checked')].map(i => i.value);
       if (sel.length === 0) { appAlert({ title: 'Elige al menos una materia', variant: 'err' }); return; }
-      close(sel);
+      const timerSec = Math.max(0, parseInt(overlay.querySelector('#practiceTimerInput').value, 10) || 0);
+      close({ subjects: sel, timerSec });
     };
     overlay.querySelector('[data-action="cancel"]').onclick = () => close(null);
     overlay.onclick = (e) => { if (e.target === overlay) close(null); };
@@ -1814,12 +1899,13 @@ async function uploadExam(input) {
         input.value = '';
         return;
       }
-      const selected = await pickSubjects(subjects);
-      if (!selected) { input.value = ''; return; }
+      const picked = await pickSubjects(subjects);
+      if (!picked) { input.value = ''; return; }
       headers['X-Mode'] = 'practice';
-      if (selected.length < subjects.length) {
-        headers['X-Subjects'] = encodeURIComponent(JSON.stringify(selected));
+      if (picked.subjects.length < subjects.length) {
+        headers['X-Subjects'] = encodeURIComponent(JSON.stringify(picked.subjects));
       }
+      if (picked.timerSec > 0) headers['X-Practice-Timer'] = String(picked.timerSec);
     } else {
       // Modo entrenamiento ECOEMS: opciones con candado que se revelan al hover
       // (desktop) o tap (mobile). Réplica del mecanismo del examen oficial 2026.

@@ -96,6 +96,7 @@ function createRoom(data, jsonFilename = null, lockedOptions = false, opts = {})
       room.questions = room.questions.filter(q => subjects.includes(q.subject));
     }
     room.questions = shuffle(room.questions);
+    room.practiceTimerSec = Number.isFinite(opts.timerSec) && opts.timerSec > 0 ? Math.min(opts.timerSec, 900) : 0;
     room.practice = {
       idx: 0,
       phase: 'answering',   // 'answering' | 'revealed'
@@ -105,6 +106,9 @@ function createRoom(data, jsonFilename = null, lockedOptions = false, opts = {})
       scores: {},           // nombre -> { correct, answered }
       lastResult: null,     // { qid, name, answer, correctAnswer, isCorrect, explanation }
       limit: null,          // corte de equidad: se fija al iniciar (múltiplo de participantes)
+      eligibleCount: 1,     // cuántos (desde turnPos) pueden contestar; crece al vencer el timer
+      answerDeadline: null, // timestamp ms del próximo vencimiento del timer
+      timerToken: 0,        // invalida timeouts viejos
     };
   }
 
@@ -143,6 +147,55 @@ function practiceLimit(room) {
   return p.limit ?? room.questions.length;
 }
 
+// Quiénes pueden contestar la pregunta actual: el del turno y, si el timer por
+// pregunta venció (una o más veces), los siguientes en orden.
+function practiceEligibleNames(room) {
+  const p = room.practice;
+  if (!p || p.turnQueue.length === 0) return [];
+  const n = p.turnQueue.length;
+  const count = Math.min(p.eligibleCount || 1, n);
+  const out = [];
+  for (let k = 0; k < count; k++) out.push(p.turnQueue[(p.turnPos + k) % n]);
+  return out;
+}
+
+// Programa el vencimiento del timer por pregunta. Cada vencimiento abre la
+// pregunta a un alumno más (en orden); se detiene al revelarse o al avanzar.
+function schedulePracticeTimer(room) {
+  const p = room.practice;
+  if (!p) return;
+  p.timerToken++;
+  if (room._pTimer) { clearTimeout(room._pTimer); room._pTimer = null; }
+  const sec = room.practiceTimerSec || 0;
+  const canRun = sec > 0 && room.phase === 'active' && p.phase === 'answering'
+    && p.idx < practiceLimit(room) && p.turnQueue.length > 0
+    && (p.eligibleCount || 1) < p.turnQueue.length;
+  if (!canRun) {
+    p.answerDeadline = null; // sin próximo vencimiento (revelada, terminada o ya abierta a todos)
+    return;
+  }
+  const token = p.timerToken;
+  p.answerDeadline = Date.now() + sec * 1000;
+  room._pTimer = setTimeout(() => {
+    const r = rooms.get(room.roomCode);
+    if (!r || !r.practice || r.practice.timerToken !== token) return;
+    const pp = r.practice;
+    if (r.phase !== 'active' || pp.phase !== 'answering') return;
+    pp.eligibleCount = Math.min((pp.eligibleCount || 1) + 1, pp.turnQueue.length);
+    console.log(`[${r.roomCode}] Carrusel: timer vencido — pregunta abierta a ${pp.eligibleCount} alumno(s)`);
+    schedulePracticeTimer(r);   // siguiente ventana (si aún hay a quién abrir)
+    broadcastPractice(r);
+  }, sec * 1000);
+}
+
+function clearPracticeTimer(room) {
+  const p = room.practice;
+  if (!p) return;
+  p.timerToken++;
+  p.answerDeadline = null;
+  if (room._pTimer) { clearTimeout(room._pTimer); room._pTimer = null; }
+}
+
 function buildPracticeState(room) {
   const p = room.practice;
   if (!p) return null;
@@ -160,6 +213,10 @@ function buildPracticeState(room) {
     turnQueue: p.turnQueue,
     scores: p.scores,
     lastResult: p.lastResult,
+    eligibleNames: finished ? [] : practiceEligibleNames(room),
+    timerSec: room.practiceTimerSec || 0,
+    remainingMs: (!finished && p.phase === 'answering' && p.answerDeadline)
+      ? Math.max(0, p.answerDeadline - Date.now()) : null,
   };
 }
 
@@ -320,7 +377,8 @@ app.post('/api/upload-exam', (req, res) => {
     if (req.headers['x-subjects']) {
       try { subjects = JSON.parse(decodeURIComponent(req.headers['x-subjects'])); } catch (e) {}
     }
-    const room = createRoom(req.body, filename, lockedOptions, { mode, subjects });
+    const timerSec = parseInt(req.headers['x-practice-timer'], 10) || 0;
+    const room = createRoom(req.body, filename, lockedOptions, { mode, subjects, timerSec });
     if (room.questions.length === 0) {
       rooms.delete(room.roomCode);
       return res.status(400).json({ error: 'La selección no dejó ninguna pregunta' });
@@ -1319,8 +1377,8 @@ io.on('connection', (socket) => {
     if (p.phase !== 'answering' || p.idx >= practiceLimit(room)) return;
     const student = room.students[socket.id];
     if (!student) return;
-    const turnName = practiceTurnName(room);
-    if (!turnName || student.name.toLowerCase() !== turnName.toLowerCase()) return; // no es su turno
+    const eligible = practiceEligibleNames(room);
+    if (!eligible.some(n => n.toLowerCase() === student.name.toLowerCase())) return; // no es su turno (ni se abrió para él)
     const q = room.questions[p.idx];
     if (!Object.prototype.hasOwnProperty.call(q.options, answer)) return;
     const correctAnswer = room.answerKey[q.id];
@@ -1331,6 +1389,7 @@ io.on('connection', (socket) => {
     p.lastResult = { qid: q.id, name: student.name, answer, correctAnswer, isCorrect, explanation: q.explanation || '' };
     p.phase = 'revealed';
     p.turnManual = false; // la asignación manual (si la hubo) ya se cumplió
+    clearPracticeTimer(room);
     broadcastPractice(room);
     console.log(`[${roomCode}] Carrusel: ${student.name} → ${answer} en P${q.id} (${isCorrect ? 'correcta' : `incorrecta, era ${correctAnswer}`})`);
   });
@@ -1345,12 +1404,14 @@ io.on('connection', (socket) => {
     if (p.idx < limit) p.idx++;
     p.phase = 'answering';
     p.lastResult = null;
+    p.eligibleCount = 1;
     // Si el profe asignó turno a mano y aún no se cumple, la siguiente pregunta
     // la contesta ese alumno (no se rota encima de la asignación).
     if (p.idx < limit) {
       if (p.turnManual) p.turnManual = false;
       else advancePracticeTurn(room);
     }
+    schedulePracticeTimer(room);
     broadcastPractice(room);
     console.log(`[${roomCode}] Carrusel: pregunta ${Math.min(p.idx + 1, limit)}/${limit}, turno de ${practiceTurnName(room) || '—'}`);
   });
@@ -1364,6 +1425,10 @@ io.on('connection', (socket) => {
     if (i === -1) return;
     p.turnPos = i;
     p.turnManual = true;
+    if (p.phase === 'answering') {
+      p.eligibleCount = 1;          // el nuevo titular arranca con ventana fresca
+      schedulePracticeTimer(room);
+    }
     broadcastPractice(room);
     console.log(`[${roomCode}] Carrusel: turno reasignado a ${p.turnQueue[i]}`);
   });
@@ -1475,6 +1540,8 @@ io.on('connection', (socket) => {
       const cut = n > 0 ? Math.floor(total / n) * n : total;
       p.limit = cut > 0 ? cut : total;
       if (n > 0) console.log(`[${roomCode}] Carrusel: ${p.limit} de ${total} preguntas (${n} participantes, ${Math.floor(p.limit / n)} c/u)`);
+      p.eligibleCount = 1;
+      schedulePracticeTimer(room);
       broadcastPractice(room);
     }
     broadcastRoomsList();
@@ -1489,6 +1556,7 @@ io.on('connection', (socket) => {
     // comprobantes PDF ni clave. Se envía el marcador final a todos.
     if (room.mode === 'practice') {
       room.phase = 'closed';
+      clearPracticeTimer(room);
       io.to(roomCode).emit('practiceClosed', { scores: room.practice?.scores || {} });
       io.to('teachers').emit('roomClosed', { roomCode, mode: 'practice' });
       broadcastRoomsList();
@@ -1536,7 +1604,8 @@ io.on('connection', (socket) => {
     room.students = {};
     room.startTime = null;
     if (room.mode === 'practice' && room.practice) {
-      room.practice = { idx: 0, phase: 'answering', turnQueue: [], turnPos: 0, turnManual: false, scores: {}, lastResult: null, limit: null };
+      clearPracticeTimer(room);
+      room.practice = { idx: 0, phase: 'answering', turnQueue: [], turnPos: 0, turnManual: false, scores: {}, lastResult: null, limit: null, eligibleCount: 1, answerDeadline: null, timerToken: 0 };
     }
     io.to(roomCode).emit('examReset');
     broadcastRoomsList();
@@ -1565,6 +1634,7 @@ io.on('connection', (socket) => {
   socket.on('deleteRoom', ({ roomCode }) => {
     const room = rooms.get(roomCode);
     if (!room) return;
+    if (room.mode === 'practice') clearPracticeTimer(room);
     io.to(roomCode).emit('roomDeleted');
     rooms.delete(roomCode);
     broadcastRoomsList();

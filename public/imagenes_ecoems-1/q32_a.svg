@@ -12,10 +12,10 @@
     <polygon points="60,36 75.22,24.94 69.41,7.06 50.59,7.06 44.78,24.94" fill="#555555"/>
 
     <!-- B1: triángulo apuntando a la izquierda, base = lado derecho del cuadro, apex toca el lado izquierdo -->
-    <polygon points="80,80 80,120 40,100" fill="currentColor"/>
+    <polygon points="80,80 80,120 40,100" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
 
     <!-- B2: dos barras horizontales, gap arriba = gap entre barras (3 px) -->
-    <rect x="40" y="123" width="40" height="5" fill="currentColor"/>
-    <rect x="40" y="131" width="40" height="5" fill="currentColor"/>
+    <rect x="40" y="123" width="40" height="5" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
+    <rect x="40" y="131" width="40" height="5" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
   </g>
 </svg>

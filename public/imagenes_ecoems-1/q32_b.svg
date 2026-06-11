@@ -9,11 +9,11 @@
     <rect x="40" y="120" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"/>
 
     <!-- T: dos barras verticales (rotadas 90° respecto a la versión horizontal), pegadas al borde derecho -->
-    <rect x="71" y="0" width="5" height="40" fill="currentColor"/>
-    <rect x="63" y="0" width="5" height="40" fill="currentColor"/>
+    <rect x="71" y="0" width="5" height="40" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
+    <rect x="63" y="0" width="5" height="40" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
 
     <!-- L1: triángulo apuntando a la izquierda, base = lado derecho del cuadro -->
-    <polygon points="40,40 40,80 0,60" fill="currentColor"/>
+    <polygon points="40,40 40,80 0,60" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
 
     <!-- L2: pentágono (vértice apuntando a la derecha) -->
     <polygon points="76,60 64.94,75.22 47.06,69.41 47.06,50.59 64.94,44.78" fill="#555555"/>

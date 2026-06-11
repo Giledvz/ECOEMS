@@ -2,22 +2,22 @@
 <!-- Cuatro cajas: 0=●●●, 1=●●○, 2=●○●, 3=●○○ (blanco=○ vale 1; negro=● vale 0) -->
 
   <!-- 0: ●●● -->
-<circle cx="18" cy="18" r="5" fill="currentColor"/>
-  <circle cx="31" cy="18" r="5" fill="currentColor"/>
-  <circle cx="44" cy="18" r="5" fill="currentColor"/>
+<circle cx="18" cy="18" r="5" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
+  <circle cx="31" cy="18" r="5" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
+  <circle cx="44" cy="18" r="5" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
 
   <!-- 1: ●●○ -->
-<circle cx="84" cy="18" r="5" fill="currentColor"/>
-  <circle cx="97" cy="18" r="5" fill="currentColor"/>
+<circle cx="84" cy="18" r="5" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
+  <circle cx="97" cy="18" r="5" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
   <circle cx="110" cy="18" r="5" fill="#ffffff" stroke="currentColor" stroke-width="1.2"/>
 
   <!-- 2: ●○● -->
-<circle cx="150" cy="18" r="5" fill="currentColor"/>
+<circle cx="150" cy="18" r="5" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
   <circle cx="163" cy="18" r="5" fill="#ffffff" stroke="currentColor" stroke-width="1.2"/>
-  <circle cx="176" cy="18" r="5" fill="currentColor"/>
+  <circle cx="176" cy="18" r="5" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
 
   <!-- 3: ●○○ -->
-<circle cx="216" cy="18" r="5" fill="currentColor"/>
+<circle cx="216" cy="18" r="5" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
   <circle cx="229" cy="18" r="5" fill="#ffffff" stroke="currentColor" stroke-width="1.2"/>
   <circle cx="242" cy="18" r="5" fill="#ffffff" stroke="currentColor" stroke-width="1.2"/>
 </svg>

@@ -12,7 +12,7 @@
 
   <!-- Cuadrícula 7 filas x 18 columnas. Cada celda 30x30 -->
   <!-- Bloque A (grupo 1, columna 1): solo filas 1-7 -->
-  <g stroke="currentColor" stroke-width="1.5" fill="#ffffff">
+  <g stroke="#1f1a16" stroke-width="1.5" fill="#efe7d8">
     <!-- Bloque A: columna 1 -->
     <rect x="60" y="40" width="30" height="210"/>
     <!-- Bloque B: columna 2, filas 2-7 -->
@@ -28,7 +28,7 @@
   </g>
 
   <!-- Letras dentro de los bloques -->
-  <g font-size="32" font-weight="700" text-anchor="middle" font-style="italic">
+  <g font-size="32" font-weight="700" text-anchor="middle" font-style="italic" fill="#1f1a16">
     <text x="75" y="160">A</text>
     <text x="105" y="170">B</text>
     <text x="270" y="200">D</text>

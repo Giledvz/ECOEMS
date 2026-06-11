@@ -3,9 +3,9 @@
     <!-- Cubo en proyección cabinet con cámara un poco más elevada -->
     <!-- depth offset = (10, -14) en vez de (10, -10): se ve más la cara superior -->
     <symbol id="cubeUnit" overflow="visible">
-      <polygon points="0,0 20,0 20,-20 0,-20" fill="#ffffff" stroke="currentColor" stroke-width="1" stroke-linejoin="miter"/>
-      <polygon points="20,0 30,-14 30,-34 20,-20" fill="#d8d8d8" stroke="currentColor" stroke-width="1" stroke-linejoin="miter"/>
-      <polygon points="0,-20 20,-20 30,-34 10,-34" fill="#ffffff" stroke="currentColor" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="0,0 20,0 20,-20 0,-20" fill="#c9bda3" stroke="#1f1a16" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="20,0 30,-14 30,-34 20,-20" fill="#a89880" stroke="#1f1a16" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="0,-20 20,-20 30,-34 10,-34" fill="#efe7d8" stroke="#1f1a16" stroke-width="1" stroke-linejoin="miter"/>
     </symbol>
   </defs>
 

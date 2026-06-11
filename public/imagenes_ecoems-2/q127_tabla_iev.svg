@@ -1,6 +1,6 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" width="540" height="540" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
 <!-- Tabla -->
-  <g stroke="currentColor" stroke-width="1.5" fill="#ffffff">
+  <g stroke="#1f1a16" stroke-width="1.5" fill="#efe7d8">
     <!-- Marco -->
     <rect x="40" y="30" width="460" height="490"/>
     <!-- Línea vertical de columna -->
@@ -18,13 +18,13 @@
   </g>
 
   <!-- Cabeceras -->
-  <g font-size="16" font-weight="700" text-anchor="middle">
+  <g font-size="16" font-weight="700" text-anchor="middle" fill="#1f1a16">
     <text x="140" y="62">Descripción del IEV</text>
     <text x="370" y="62">Frecuencia</text>
   </g>
 
   <!-- Filas -->
-  <g font-size="15" text-anchor="middle">
+  <g font-size="15" text-anchor="middle" fill="#1f1a16">
     <text x="140" y="110">No explosiva</text>
     <text x="370" y="110">Diaria</text>
 

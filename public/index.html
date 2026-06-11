@@ -703,11 +703,18 @@
     gap: var(--space-3);
   }
   .exam-status__num {
+    /* Pill con la misma altura que .tag (mismo font-size y padding vertical) */
+    display: inline-flex;
+    align-items: center;
     font-family: var(--font-family-body);
-    font-size: var(--font-size-13);
+    font-size: var(--font-size-11);
     font-weight: var(--font-weight-medium);
+    letter-spacing: var(--tracking-eyebrow);
     color: var(--color-text-meta);
     font-variant-numeric: tabular-nums;
+    border: var(--border-thin) solid var(--color-border);
+    border-radius: var(--radius-pill);
+    padding: var(--space-1) var(--space-3);
     justify-self: start;
   }
   .exam-status__center { display: flex; align-items: center; gap: var(--space-2); justify-self: center; min-width: 0; }
@@ -2220,13 +2227,14 @@ function renderQuestion() {
     btn.type = 'button';
     let icon = '';
     if (state.mode === 'practice') {
-      // Carrusel: solo el alumno en turno puede contestar; al revelarse, todos
-      // ven la correcta (y la elegida si fue incorrecta).
+      // Carrusel: contesta el alumno en turno (o los que se sumaron al vencer
+      // el timer); al revelarse, todos ven la correcta.
       const pr = state.practice || {};
       const r = pr.lastResult;
       const isRevealed = pr.phase === 'revealed' && r && r.qid === q.id;
-      const myTurn = pr.phase === 'answering' && pr.turnName
-        && pr.turnName.toLowerCase() === (state.name || '').toLowerCase();
+      const eligibles = pr.eligibleNames && pr.eligibleNames.length ? pr.eligibleNames : (pr.turnName ? [pr.turnName] : []);
+      const myTurn = pr.phase === 'answering'
+        && eligibles.some(n => n.toLowerCase() === (state.name || '').toLowerCase());
       if (isRevealed) {
         if (letter === r.correctAnswer) { btn.className = 'exam-option exam-option--correct'; icon = CHECK_SVG; }
         else if (letter === r.answer) { btn.className = 'exam-option exam-option--incorrect'; icon = CROSS_SVG; }
@@ -3300,9 +3308,15 @@ function adaptBlankWidths(q) {
 // marcador. Re-renderea la pregunta (con candado para espectadores o revelado).
 const escHTML = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 let __practiceLastIdx = -1;
+let __practiceDeadline = null;   // Date.now() local cuando vence el timer de la pregunta
+let __practiceTickInt = null;
+
 function applyPracticeState(st) {
   if (!st) return;
   state.practice = st;
+  // Sincronizar cuenta regresiva local con el remainingMs del server.
+  __practiceDeadline = (typeof st.remainingMs === 'number') ? Date.now() + st.remainingMs : null;
+  startPracticeTick();
   if (st.phase === 'finished') { renderPracticeFinal(st.scores); return; }
   const article = document.querySelector('.exam-question');
   if (article) article.style.display = '';
@@ -3310,8 +3324,31 @@ function applyPracticeState(st) {
   state.currentQ = Math.min(st.idx, state.questions.length - 1);
   renderQuestion();
   renderPracticeBar();
+  // Barra de avance: preguntas resueltas sobre el total de la sesión.
+  const fill = document.getElementById('examProgressFill');
+  if (fill && st.total > 0) {
+    const done = st.idx + (st.phase === 'revealed' ? 1 : 0);
+    fill.style.width = ((done / st.total) * 100) + '%';
+  }
   // Scroll arriba solo al cambiar de pregunta (no al revelarse la respuesta).
   if (st.idx !== __practiceLastIdx) { window.scrollTo(0, 0); __practiceLastIdx = st.idx; }
+}
+
+// Tick de la cuenta regresiva (solo actualiza el texto, sin re-render).
+function startPracticeTick() {
+  if (__practiceTickInt) return;
+  __practiceTickInt = setInterval(() => {
+    const el = document.getElementById('practiceCountdown');
+    if (!el) return;
+    el.textContent = practiceCountdownText();
+  }, 500);
+}
+function practiceCountdownText() {
+  if (__practiceDeadline == null || state.mode !== 'practice') return '';
+  const pr = state.practice || {};
+  if (pr.phase !== 'answering') return '';
+  const s = Math.max(0, Math.ceil((__practiceDeadline - Date.now()) / 1000));
+  return ` · ⏱ ${s}s`;
 }
 
 function renderPracticeBar() {
@@ -3327,11 +3364,26 @@ function renderPracticeBar() {
       + (ok ? '<strong>¡Correcta!</strong>' : `incorrecta · la respuesta era <strong>${escHTML(r.correctAnswer)}</strong>`)
       + '<span class="practice-turn__hint">Escuchen la explicación del profesor; él avanza a la siguiente.</span>';
   } else {
-    const mine = pr.turnName && pr.turnName.toLowerCase() === (state.name || '').toLowerCase();
-    turnEl.className = 'practice-turn' + (mine ? ' practice-turn--mine' : '');
-    turnEl.innerHTML = mine
-      ? `<strong>¡Tu turno, ${escHTML(state.name)}!</strong> Elige una opción.`
-      : `Turno de <strong>${escHTML(pr.turnName || '—')}</strong>${pr.turnConnected === false && pr.turnName ? ' <span class="practice-turn__hint">(desconectado — el profesor puede saltar el turno)</span>' : ''}`;
+    const me = (state.name || '').toLowerCase();
+    const holder = (pr.turnName || '').toLowerCase();
+    const eligibles = pr.eligibleNames && pr.eligibleNames.length ? pr.eligibleNames : (pr.turnName ? [pr.turnName] : []);
+    const canI = eligibles.some(n => n.toLowerCase() === me);
+    const countdown = `<span id="practiceCountdown">${practiceCountdownText()}</span>`;
+    if (holder === me) {
+      turnEl.className = 'practice-turn practice-turn--mine';
+      turnEl.innerHTML = `<strong>¡Tu turno, ${escHTML(state.name)}!</strong> Elige una opción.${countdown}`;
+    } else if (canI) {
+      // El timer venció y la pregunta se abrió también para mí.
+      turnEl.className = 'practice-turn practice-turn--mine';
+      turnEl.innerHTML = `<strong>¡Se abrió la pregunta!</strong> ${escHTML(pr.turnName || '')} no contestó a tiempo — también puedes contestar tú.${countdown}`;
+    } else {
+      const others = eligibles.filter(n => n.toLowerCase() !== holder);
+      turnEl.className = 'practice-turn';
+      turnEl.innerHTML = `Turno de <strong>${escHTML(pr.turnName || '—')}</strong>`
+        + (others.length ? ` <span class="practice-turn__hint">abierta también para: ${others.map(escHTML).join(', ')}</span>` : '')
+        + (pr.turnConnected === false && pr.turnName ? ' <span class="practice-turn__hint">(desconectado — el profesor puede saltar el turno)</span>' : '')
+        + countdown;
+    }
   }
   const entries = Object.entries(pr.scores || {});
   entries.sort((a, b) => b[1].correct - a[1].correct || a[0].localeCompare(b[0]));
@@ -3349,9 +3401,10 @@ function renderPracticeFinal(scores) {
   document.querySelector('.exam-footer').style.display = 'none';
   document.getElementById('practiceBar').style.display = '';
   const entries = Object.entries(scores || {}).sort((a, b) => b[1].correct - a[1].correct || a[0].localeCompare(b[0]));
-  const rows = entries.map(([n, s], i) =>
-    `<div class="practice-final__row"><span>${i + 1}. ${escHTML(n)}</span><strong>${s.correct}/${s.answered}</strong></div>`
-  ).join('');
+  const rows = entries.map(([n, s], i) => {
+    const pct = s.answered > 0 ? Math.round((s.correct / s.answered) * 100) : 0;
+    return `<div class="practice-final__row"><span>${i + 1}. ${escHTML(n)}</span><strong>${s.correct}/${s.answered} · ${pct}%</strong></div>`;
+  }).join('');
   const turnEl = document.getElementById('practiceTurn');
   turnEl.className = 'practice-turn practice-turn--mine';
   turnEl.innerHTML = `<strong>¡Carrusel terminado!</strong> Así quedó el marcador (aciertos/participaciones):<div class="practice-final">${rows || '<em>Sin participaciones</em>'}</div>`;

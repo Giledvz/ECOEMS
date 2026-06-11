@@ -1,7 +1,7 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
 <!-- Elemento 1: hexágono blanco casi inscrito en círculo negro -->
   <g transform="translate(40, 35)">
-    <circle r="26" fill="currentColor"/>
+    <circle r="26" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
     <polygon points="0,-25 21.65,-12.5 21.65,12.5 0,25 -21.65,12.5 -21.65,-12.5"
              fill="#ffffff" stroke="currentColor" stroke-width="0.8"/>
   </g>
@@ -9,10 +9,12 @@
   <g transform="translate(120, 35)">
     <polygon points="0,-26 24.73,-8.04 15.28,21.04 -15.28,21.04 -24.73,-8.04"
              fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
-    <circle r="20" fill="currentColor"/>
+    <circle r="20" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
   </g>
   <!-- Elemento 3: cuadrado blanco inscrito en círculo negro -->
   <g transform="translate(200, 35)">
-    <circle r="26" fill="currentColor"/>
-</g>
+    <circle r="26" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
+    <polygon points="18.38,-18.38 18.38,18.38 -18.38,18.38 -18.38,-18.38"
+             fill="#ffffff" stroke="currentColor" stroke-width="0.8"/>
+  </g>
 </svg>
