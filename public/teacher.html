@@ -1635,6 +1635,23 @@ function applyModeUI() {
 // ─── Carrusel: panel de control en vivo ─────────────────────────────────────
 const { renderMath } = window.MdRender;
 
+// Orden del marcador: gana el mayor porcentaje de aciertos, pero quien participó
+// menos de la mitad de su "parte justa" (el promedio de participaciones) cae al
+// fondo, para que un 1/1 (100%) no le gane a un 9/10 (90%). Desempate: más
+// aciertos, luego alfabético. (Mismo criterio que la pantalla del alumno.)
+function sortedPracticeScores(scores) {
+  const entries = Object.entries(scores || {});
+  const totalAnswered = entries.reduce((sum, [, s]) => sum + (s.answered || 0), 0);
+  const minParticip = entries.length > 0 ? (totalAnswered / entries.length) / 2 : 0;
+  const pct = s => (s.answered > 0 ? s.correct / s.answered : 0);
+  return entries.sort((a, b) => {
+    const qa = (a[1].answered || 0) >= minParticip;
+    const qb = (b[1].answered || 0) >= minParticip;
+    if (qa !== qb) return qa ? -1 : 1;
+    return pct(b[1]) - pct(a[1]) || b[1].correct - a[1].correct || a[0].localeCompare(b[0]);
+  });
+}
+
 // Igual que en la página del alumno: los <img src="*.svg"> se reemplazan por el
 // SVG inline para que currentColor herede el color del tema (en un <img> el
 // SVG se pinta aislado y currentColor se resuelve a negro, mal en dark mode).
@@ -1763,7 +1780,7 @@ function renderPracticePanel() {
 
   // Marcador (aciertos / participaciones · porcentaje)
   const scoresEl = document.getElementById('pScores');
-  const entries = Object.entries(st.scores || {}).sort((a, b) => b[1].correct - a[1].correct || a[0].localeCompare(b[0]));
+  const entries = sortedPracticeScores(st.scores);
   scoresEl.innerHTML = entries.length
     ? entries.map(([n, s]) => {
         const pct = s.answered > 0 ? Math.round((s.correct / s.answered) * 100) : 0;

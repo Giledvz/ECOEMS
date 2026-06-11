@@ -3460,11 +3460,30 @@ function renderPracticeBar() {
         + (pr.turnConnected === false && pr.turnName ? ' <span class="practice-turn__hint">(desconectado — el profesor puede saltar el turno)</span>' : '');
     }
   }
-  const entries = Object.entries(pr.scores || {});
-  entries.sort((a, b) => b[1].correct - a[1].correct || a[0].localeCompare(b[0]));
+  const entries = sortedPracticeScores(pr.scores);
   scoresEl.innerHTML = entries.map(([n, s]) =>
     `<span class="practice-chip${n.toLowerCase() === (state.name || '').toLowerCase() ? ' practice-chip--me' : ''}">${escHTML(n)} <strong>${s.correct}</strong></span>`
   ).join('');
+}
+
+// Orden del marcador: gana el mayor porcentaje de aciertos, pero quien participó
+// menos de la mitad de su "parte justa" (el promedio de participaciones de la
+// sesión — con el corte de equidad, las preguntas que le tocaban a cada uno) cae
+// al fondo, para que un 1/1 (100%) no le gane a un 9/10 (90%). Desempate: más
+// aciertos, luego alfabético.
+function sortedPracticeScores(scores) {
+  const entries = Object.entries(scores || {});
+  const totalAnswered = entries.reduce((sum, [, s]) => sum + (s.answered || 0), 0);
+  const minParticip = entries.length > 0 ? (totalAnswered / entries.length) / 2 : 0;
+  const pct = s => (s.answered > 0 ? s.correct / s.answered : 0);
+  return entries.sort((a, b) => {
+    const qa = (a[1].answered || 0) >= minParticip;
+    const qb = (b[1].answered || 0) >= minParticip;
+    if (qa !== qb) return qa ? -1 : 1;                 // los que participaron lo justo, primero
+    return pct(b[1]) - pct(a[1])                        // luego por porcentaje
+      || b[1].correct - a[1].correct                    // desempate: más aciertos
+      || a[0].localeCompare(b[0]);                       // y por nombre
+  });
 }
 
 // Tabla final de posiciones (cuando se acaban las preguntas o el profesor cierra).
@@ -3475,7 +3494,7 @@ function renderPracticeFinal(scores) {
   document.getElementById('examTimer').style.display = 'none';
   document.querySelector('.exam-footer').style.display = 'none';
   document.getElementById('practiceBar').style.display = '';
-  const entries = Object.entries(scores || {}).sort((a, b) => b[1].correct - a[1].correct || a[0].localeCompare(b[0]));
+  const entries = sortedPracticeScores(scores);
   const rows = entries.map(([n, s], i) => {
     const pct = s.answered > 0 ? Math.round((s.correct / s.answered) * 100) : 0;
     return `<div class="practice-final__row"><span>${i + 1}. ${escHTML(n)}</span><strong>${s.correct}/${s.answered} · ${pct}%</strong></div>`;
