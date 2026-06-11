@@ -1635,6 +1635,48 @@ function applyModeUI() {
 // ─── Carrusel: panel de control en vivo ─────────────────────────────────────
 const { renderMath } = window.MdRender;
 
+// Igual que en la página del alumno: los <img src="*.svg"> se reemplazan por el
+// SVG inline para que currentColor herede el color del tema (en un <img> el
+// SVG se pinta aislado y currentColor se resuelve a negro, mal en dark mode).
+const __svgCache = {};
+async function loadInlineSVG(url) {
+  if (__svgCache[url] !== undefined) return __svgCache[url];
+  try {
+    const r = await fetch(url);
+    if (!r.ok) { __svgCache[url] = null; return null; }
+    const txt = await r.text();
+    __svgCache[url] = txt;
+    return txt;
+  } catch (e) {
+    __svgCache[url] = null;
+    return null;
+  }
+}
+async function inlineSVGsInElement(el) {
+  if (!el) return;
+  const imgs = el.querySelectorAll('img[src$=".svg"], img[src*=".svg?"]');
+  for (const img of imgs) {
+    const src = img.getAttribute('src');
+    if (!src) continue;
+    try {
+      const svgText = await loadInlineSVG(src);
+      if (!svgText) continue;
+      const tmp = document.createElement('div');
+      tmp.innerHTML = svgText;
+      const newSvg = tmp.querySelector('svg');
+      if (!newSvg) continue;
+      const w = img.getAttribute('width');
+      const h = img.getAttribute('height');
+      if (w) newSvg.setAttribute('width', w);
+      if (h) newSvg.setAttribute('height', h);
+      if (w && !h) newSvg.removeAttribute('height');
+      img.replaceWith(newSvg);
+    } catch (e) {
+      console.warn('[inlineSVG] error con', src, e);
+    }
+  }
+}
+
 // Campanita al recibir respuesta: dos tonos cortos (WebAudio, sin archivos).
 function playRevealChime(ok) {
   try {
@@ -1771,6 +1813,7 @@ function renderPracticePanel() {
   const ctx = q.context ? renderMath(q.context) + '<hr style="border:none;border-top:1px solid var(--color-border-subtle);margin:10px 0;">' : '';
   textEl.innerHTML = ctx + renderMath(q.text);
   imgEl.innerHTML = q.image ? `<img src="${q.image}" alt="">` : '';
+  inlineSVGsInElement(imgEl);
 
   const r = st.lastResult;
   optsEl.innerHTML = '';
@@ -1784,6 +1827,7 @@ function renderPracticePanel() {
     li.innerHTML = `<span class="practice-option__letter">${letter})</span><span>${renderMath(q.options[letter])}${optImg}</span>`;
     optsEl.appendChild(li);
   });
+  inlineSVGsInElement(optsEl);
 
   if (st.phase === 'revealed' && r) {
     resEl.className = 'practice-result ' + (r.isCorrect ? 'practice-result--ok' : 'practice-result--err');
