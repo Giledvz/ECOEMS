@@ -1831,13 +1831,22 @@ function renderPracticePanel() {
 
   if (st.phase === 'revealed' && r) {
     resEl.className = 'practice-result ' + (r.isCorrect ? 'practice-result--ok' : 'practice-result--err');
-    resEl.textContent = `${r.name}: ${r.answer} ${r.isCorrect ? '✓ correcta' : `✗ (era ${r.correctAnswer})`}`;
+    const verdict = r.isCorrect ? '✓ correcta' : `✗ (era ${r.correctAnswer})`;
+    resEl.textContent = r.stolen
+      ? `${r.name} se la robó a ${r.stolenFrom}: ${r.answer} ${verdict}`
+      : `${r.name}: ${r.answer} ${verdict}`;
   } else {
     resEl.className = 'practice-result';
-    const elig = st.eligibleNames || [];
-    resEl.textContent = elig.length > 1
-      ? `Esperando respuesta (abierta para: ${elig.join(', ')})…`
-      : (st.turnName ? `Esperando respuesta de ${st.turnName}…` : '');
+    if (st.openForAll) {
+      const hadBids = (practiceData.bids || []).length > 0;
+      resEl.textContent = hadBids
+        ? 'Apuestas de alumnos desconectados al vencer — abierta para todos, se la queda el primero…'
+        : 'Sin apuestas al vencer — abierta para todos, se la queda el primero…';
+    } else {
+      const bids = practiceData.bids || [];
+      const bidsTxt = bids.length ? ` · apuestas: ${bids.map(b => `${b.name} (${b.answer})`).join(', ')}` : '';
+      resEl.textContent = st.turnName ? `Esperando respuesta de ${st.turnName}…${bidsTxt}` : '';
+    }
   }
 
   if (q.explanation) {
@@ -1875,7 +1884,7 @@ function pickSubjects(subjects) {
         <label class="practice-timer-field">
           Tiempo por pregunta (segundos):
           <input type="number" id="practiceTimerInput" min="0" max="900" step="5" value="60">
-          <span class="practice-timer-hint">0 = sin límite. Al vencer, la pregunta se abre también para el siguiente en orden.</span>
+          <span class="practice-timer-hint">0 = sin límite. Mientras corre, los demás pueden dejar su apuesta; al vencer entra la más rápida, y si nadie apostó la pregunta se abre para todos.</span>
         </label>
         <div class="overlay-card__actions">
           <button class="btn btn--ghost" data-action="cancel" type="button">Cancelar</button>

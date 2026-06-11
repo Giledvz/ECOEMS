@@ -960,6 +960,19 @@
   .exam-option--spectator { pointer-events: none; }
   .exam-option--spectator .exam-option__lock { opacity: 0.55; }
 
+  /* exam-option--bid: candado apostable (rebote). Se ve bloqueada pero se puede
+     tocar UNA vez para dejar la apuesta que entra si el del turno no contesta
+     a tiempo. --mybid marca la opción apostada. */
+  .exam-option--bid { pointer-events: auto; cursor: pointer; }
+  .exam-option--bid .exam-option__lock { opacity: 0.55; }
+  .exam-option--bid:hover { border-color: var(--color-accent); }
+  .exam-option--bid:hover .exam-option__lock { opacity: 0.85; }
+  .exam-option--mybid {
+    border-color: var(--color-accent);
+    box-shadow: inset 0 0 0 1px var(--color-accent);
+  }
+  .exam-option--mybid .exam-option__lock { opacity: 0.85; stroke: var(--color-accent); }
+
   /* ── Modo práctica (Carrusel): banner de turno + marcador ──
      Mismo padding lateral que .exam-question para alinear con la pregunta. */
   .practice-bar { margin: var(--space-4) 0 0; padding-inline: var(--space-5); }
@@ -2227,23 +2240,38 @@ function renderQuestion() {
     btn.type = 'button';
     let icon = '';
     if (state.mode === 'practice') {
-      // Carrusel: contesta el alumno en turno (o los que se sumaron al vencer
-      // el timer); al revelarse, todos ven la correcta.
+      // Carrusel: contesta el del turno (o cualquiera si la pregunta se abrió
+      // para todos). Los demás ven candados, pero con timer activo pueden
+      // tocar UNA opción como apuesta: si el del turno no contesta a tiempo,
+      // al vencer gana la apuesta más temprana (rebote).
       const pr = state.practice || {};
       const r = pr.lastResult;
       const isRevealed = pr.phase === 'revealed' && r && r.qid === q.id;
-      const eligibles = pr.eligibleNames && pr.eligibleNames.length ? pr.eligibleNames : (pr.turnName ? [pr.turnName] : []);
-      const myTurn = pr.phase === 'answering'
-        && eligibles.some(n => n.toLowerCase() === (state.name || '').toLowerCase());
+      const me = (state.name || '').toLowerCase();
+      const holder = (pr.turnName || '').toLowerCase();
+      const inQueue = (pr.turnQueue || []).some(n => n.toLowerCase() === me);
+      const isHolder = pr.phase === 'answering' && !!me && holder === me;
+      const isOpen = pr.phase === 'answering' && !!pr.openForAll;
+      const myBidAns = (__myBid && __myBid.qid === q.id) ? __myBid.answer : null;
+      // Si el server ya registró mi apuesta (p.ej. tras recargar la página, con
+      // __myBid perdido) no vuelvo a ofrecer apostar aunque no sepa la letra.
+      const serverHasMyBid = (pr.bidNames || []).some(n => n.toLowerCase() === me);
+      const canBid = pr.phase === 'answering' && !isHolder && !isOpen
+        && inQueue && (pr.timerSec > 0) && !myBidAns && !serverHasMyBid;
       if (isRevealed) {
         if (letter === r.correctAnswer) { btn.className = 'exam-option exam-option--correct'; icon = CHECK_SVG; }
         else if (letter === r.answer) { btn.className = 'exam-option exam-option--incorrect'; icon = CROSS_SVG; }
         else { btn.className = 'exam-option exam-option--neutral'; }
-      } else if (myTurn) {
+      } else if (isHolder || (isOpen && inQueue)) {
         btn.className = 'exam-option';
         btn.onclick = () => { socket.emit('practiceAnswer', { answer: letter }); };
+      } else if (canBid) {
+        btn.className = 'exam-option exam-option--spectator exam-option--bid';
+        icon = LOCK_SVG;
+        btn.onclick = () => placeBid(q.id, letter);
       } else {
-        btn.className = 'exam-option exam-option--spectator';
+        btn.className = 'exam-option exam-option--spectator'
+          + (myBidAns === letter ? ' exam-option--mybid' : '');
         icon = LOCK_SVG;
       }
     } else if (state.reviewMode) {
@@ -3310,10 +3338,41 @@ const escHTML = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;'
 let __practiceLastIdx = -1;
 let __practiceDeadline = null;   // Date.now() local cuando vence el timer de la pregunta
 let __practiceTickInt = null;
+let __myBid = null;              // {qid, answer, confirmed} apuesta local (el primer toque es definitivo)
+
+// Rebote: registra la apuesta local de inmediato (para pintar la marca sin
+// esperar al server) y la confirma con ack; si el server la rechaza, se libera.
+function placeBid(qid, letter) {
+  if (__myBid && __myBid.qid === qid) return;
+  __myBid = { qid, answer: letter, confirmed: false };
+  renderQuestion();
+  renderPracticeBar();
+  socket.emit('practiceBid', { qid, answer: letter }, (res) => {
+    if (res && res.ok) { if (__myBid && __myBid.qid === qid) __myBid.confirmed = true; return; }
+    // Ya tenía una apuesta en el server (primer toque definitivo): adopta SU
+    // letra, no la recién tocada (importa tras recargar la página).
+    if (res && res.reason === 'ya-apostaste') {
+      __myBid = { qid, answer: res.answer || letter, confirmed: true };
+    } else {
+      __myBid = null; // rechazada (se reveló, se abrió para todos, pregunta vieja, etc.)
+    }
+    if (state.mode === 'practice') { renderQuestion(); renderPracticeBar(); }
+  });
+}
 
 function applyPracticeState(st) {
   if (!st) return;
   state.practice = st;
+  // Soltar la apuesta local si cambió la pregunta, o si el server ya la confirmó
+  // pero un broadcast posterior (misma pregunta) ya no la lista — p.ej. el profe
+  // reasignó turno y vació las apuestas. (Entrega FIFO por socket: si está
+  // confirmada y no aparece, es porque el server la descartó, no una carrera.)
+  const meName = (state.name || '').toLowerCase();
+  if (__myBid && (__myBid.qid !== st.qid
+      || (__myBid.confirmed && st.phase === 'answering'
+          && !(st.bidNames || []).some(n => n.toLowerCase() === meName)))) {
+    __myBid = null;
+  }
   // Sincronizar cuenta regresiva local con el remainingMs del server.
   __practiceDeadline = (typeof st.remainingMs === 'number') ? Date.now() + st.remainingMs : null;
   startPracticeTick();
@@ -3360,29 +3419,45 @@ function renderPracticeBar() {
   if (pr.phase === 'revealed' && r) {
     const ok = r.isCorrect;
     turnEl.className = 'practice-turn ' + (ok ? 'practice-turn--ok' : 'practice-turn--err');
-    turnEl.innerHTML = `<strong>${escHTML(r.name)}</strong> contestó <strong>${escHTML(r.answer)}</strong> — `
+    const who = r.stolen
+      ? `<strong>¡${escHTML(r.name)} se la robó a ${escHTML(r.stolenFrom)}!</strong> Contestó <strong>${escHTML(r.answer)}</strong> — `
+      : `<strong>${escHTML(r.name)}</strong> contestó <strong>${escHTML(r.answer)}</strong> — `;
+    turnEl.innerHTML = who
       + (ok ? '<strong>¡Correcta!</strong>' : `incorrecta · la respuesta era <strong>${escHTML(r.correctAnswer)}</strong>`)
       + '<span class="practice-turn__hint">Escuchen la explicación del profesor; él avanza a la siguiente.</span>';
   } else {
     const me = (state.name || '').toLowerCase();
     const holder = (pr.turnName || '').toLowerCase();
-    const eligibles = pr.eligibleNames && pr.eligibleNames.length ? pr.eligibleNames : (pr.turnName ? [pr.turnName] : []);
-    const canI = eligibles.some(n => n.toLowerCase() === me);
     const countdown = `<span id="practiceCountdown">${practiceCountdownText()}</span>`;
-    if (holder === me) {
+    const bidNames = pr.bidNames || [];
+    const nBids = bidNames.length;
+    const myBidAns = (__myBid && __myBid.qid === pr.qid) ? __myBid.answer : null;
+    const serverHasMyBid = bidNames.some(n => n.toLowerCase() === me);
+    const noBids = nBids === 0;
+    if (pr.openForAll) {
       turnEl.className = 'practice-turn practice-turn--mine';
-      turnEl.innerHTML = `<strong>¡Tu turno, ${escHTML(state.name)}!</strong> Elige una opción.${countdown}`;
-    } else if (canI) {
-      // El timer venció y la pregunta se abrió también para mí.
+      // Si llegamos aquí con apuestas en la lista, eran de alumnos desconectados.
+      turnEl.innerHTML = `<strong>¡Se abrió la pregunta!</strong> ${escHTML(pr.turnName || 'Nadie')} no contestó a tiempo`
+        + (noBids ? ' y no hubo apuestas' : ' y quienes apostaron se desconectaron')
+        + ' — se la queda el primero que conteste.';
+    } else if (holder === me) {
       turnEl.className = 'practice-turn practice-turn--mine';
-      turnEl.innerHTML = `<strong>¡Se abrió la pregunta!</strong> ${escHTML(pr.turnName || '')} no contestó a tiempo — también puedes contestar tú.${countdown}`;
+      turnEl.innerHTML = `<strong>¡Tu turno, ${escHTML(state.name)}!</strong> Elige una opción.${countdown}`
+        + (nBids > 0 ? `<span class="practice-turn__hint">¡Aguas! Ya hay ${nBids === 1 ? 'una apuesta esperando' : nBids + ' apuestas esperando'} a que se te acabe el tiempo.</span>` : '');
+    } else if (myBidAns || serverHasMyBid) {
+      // Apuesta puesta: posición optimista si el broadcast aún no me lista.
+      const idx = bidNames.findIndex(n => n.toLowerCase() === me);
+      const pos = idx >= 0 ? idx + 1 : nBids + 1;
+      const letterTxt = myBidAns ? ` · tu apuesta: <strong>${escHTML(myBidAns)}</strong>` : ' · ya dejaste tu apuesta';
+      turnEl.className = 'practice-turn practice-turn--mine';
+      turnEl.innerHTML = `Turno de <strong>${escHTML(pr.turnName || '—')}</strong>${letterTxt}${countdown}`
+        + `<span class="practice-turn__hint">${pos === 1 ? 'Eres el primero en la fila: si no contesta a tiempo, tu respuesta entra.' : `Hay ${pos - 1} apuesta${pos - 1 === 1 ? '' : 's'} antes que la tuya.`}</span>`;
     } else {
-      const others = eligibles.filter(n => n.toLowerCase() !== holder);
+      const canBid = (pr.timerSec > 0) && (pr.turnQueue || []).some(n => n.toLowerCase() === me);
       turnEl.className = 'practice-turn';
-      turnEl.innerHTML = `Turno de <strong>${escHTML(pr.turnName || '—')}</strong>`
-        + (others.length ? ` <span class="practice-turn__hint">abierta también para: ${others.map(escHTML).join(', ')}</span>` : '')
-        + (pr.turnConnected === false && pr.turnName ? ' <span class="practice-turn__hint">(desconectado — el profesor puede saltar el turno)</span>' : '')
-        + countdown;
+      turnEl.innerHTML = `Turno de <strong>${escHTML(pr.turnName || '—')}</strong>${countdown}`
+        + (canBid ? '<span class="practice-turn__hint">Puedes dejar tu apuesta tocando una opción: si no contesta a tiempo, gana la apuesta más rápida. El primer toque es definitivo.</span>' : '')
+        + (pr.turnConnected === false && pr.turnName ? ' <span class="practice-turn__hint">(desconectado — el profesor puede saltar el turno)</span>' : '');
     }
   }
   const entries = Object.entries(pr.scores || {});
@@ -3665,6 +3740,7 @@ socket.on('practiceState', (st) => {
 
 socket.on('practiceClosed', ({ scores }) => {
   if (state.mode !== 'practice') return;
+  __myBid = null;
   renderPracticeFinal(scores);
 });
 socket.on('examSubmitted', (data) => { enterReviewMode({ ok: true, ...data }); });
@@ -3672,10 +3748,19 @@ socket.on('examClosed', () => { if (!state.submitted && !state.submitPending) st
 socket.on('markedUpdate', (marked) => { state.marked = marked; saveState(); renderQuestion(); });
 socket.on('examReloaded', () => { window.location.reload(); });
 
+// Limpia el estado local del Carrusel para que apuestas/cuenta regresiva de una
+// sesión no se filtren a la siguiente (p.ej. reset que rearranca en el mismo qid).
+function resetPracticeLocals() {
+  __myBid = null;
+  __practiceDeadline = null;
+  __practiceLastIdx = -1;
+}
+
 socket.on('examReset', () => {
   if (state.timerInterval) clearInterval(state.timerInterval);
   if (state.submitRetryTimer) { clearTimeout(state.submitRetryTimer); state.submitRetryTimer = null; }
   hideSubmitOverlay();
+  resetPracticeLocals();
   const rc = state.roomCode;
   state = { questions: [], answers: {}, answerKey: {}, explanations: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: rc, timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null };
   try { localStorage.removeItem('examState'); } catch(e) {}
@@ -3690,6 +3775,7 @@ socket.on('roomDeleted', () => {
   if (state.timerInterval) clearInterval(state.timerInterval);
   if (state.submitRetryTimer) { clearTimeout(state.submitRetryTimer); state.submitRetryTimer = null; }
   hideSubmitOverlay();
+  resetPracticeLocals();
   state = { questions: [], answers: {}, answerKey: {}, marked: [], currentQ: 0, name: '', group: '', title: '', timeLimit: 180, startTime: null, timerInterval: null, submitted: false, reviewMode: false, roomCode: '', timeUsed: null, submitPending: false, submitAttempts: 0, submitRetryTimer: null };
   try { localStorage.removeItem('examState'); } catch(e) {}
   clearBackup();
