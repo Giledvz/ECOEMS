@@ -17,6 +17,7 @@ cada vez que olvidamos de dónde salió un examen.
 | `ecoems-6.json` | Simulacro COMIPEMS examen 2 | — | Era `comipems-3.json`; 120 preguntas (commit `5dafb44`) |
 | `ecoems-7.json` | ECOEMS 7 (con clave oficial) | — | 128 preguntas, generado con SVGs propios (commit `eafe2f6`) |
 | `ecoems-8.json` | ECOEMS 8 (con clave oficial) | — | 128 preguntas + 24 SVGs (commit `d144019`) |
+| `ecoems-9.json` | **Guía CENEVAL 2023** (Examen de práctica) | 2023 | 128 preguntas + 10 figuras PNG; clave oficial de la hoja de respuestas; fuente: [`ecoems-9.pdf`](ecoems-9.pdf) |
 
 ## Archivos fuente que viven en el repo
 
