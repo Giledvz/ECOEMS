@@ -40,6 +40,12 @@ const OPT_TEXT = {
     C: 'Gráfica que pasa por (1,2), (3,6), (5,7), (7,12), (9,13).',
     D: 'Gráfica que pasa por (1,2), (3,6), (5,8), (7,10), (9,13).',
   },
+  69: {
+    A: 'Flecha acodada con brazos a la derecha y abajo; triángulo negro abajo a la derecha.',
+    B: 'Flecha acodada con brazos a la izquierda y abajo; triángulo de contorno abajo a la izquierda.',
+    C: 'Flecha acodada con brazos a la derecha y abajo; triángulo de contorno arriba a la izquierda.',
+    D: 'Flecha acodada con brazos a la derecha y abajo; triángulo de contorno abajo a la derecha.',
+  },
   70: {
     A: 'Cuadrícula 5×5: anti-diagonal (de la esquina superior derecha a la inferior izquierda) con triángulos superiores.',
     B: 'Cuadrícula 5×5: anti-diagonal con triángulos inferiores y la esquina inferior izquierda completa.',
