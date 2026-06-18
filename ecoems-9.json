@@ -1030,13 +1030,18 @@
             "topic_name": "Figura diferente tras rotación",
             "text": "¿Cuál figura es diferente, aun después de haberla rotado?",
             "options": {
-              "A": "A",
-              "B": "B",
-              "C": "C",
-              "D": "D"
+              "A": "Anillo pentagonal de hexágonos con tres en negro (arriba derecha, lado derecho y lado izquierdo).",
+              "B": "Anillo pentagonal de hexágonos con tres en negro (arriba derecha, lado izquierdo y centro inferior).",
+              "C": "Anillo pentagonal de hexágonos con tres en negro (arriba izquierda, lado derecho y centro inferior).",
+              "D": "Anillo pentagonal de hexágonos con tres en negro (arriba derecha y dos en los lados)."
             },
             "answer": "D",
-            "image": "/imagenes_ecoems-9/q73.png"
+            "option_images": {
+              "A": "/imagenes_ecoems-9/q73_a.svg",
+              "B": "/imagenes_ecoems-9/q73_b.svg",
+              "C": "/imagenes_ecoems-9/q73_c.svg",
+              "D": "/imagenes_ecoems-9/q73_d.svg"
+            }
           },
           {
             "id": 74,

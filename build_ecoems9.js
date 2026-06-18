@@ -40,6 +40,12 @@ const OPT_TEXT = {
     C: 'Gráfica que pasa por (1,2), (3,6), (5,7), (7,12), (9,13).',
     D: 'Gráfica que pasa por (1,2), (3,6), (5,8), (7,10), (9,13).',
   },
+  73: {
+    A: 'Anillo pentagonal de hexágonos con tres en negro (arriba derecha, lado derecho y lado izquierdo).',
+    B: 'Anillo pentagonal de hexágonos con tres en negro (arriba derecha, lado izquierdo y centro inferior).',
+    C: 'Anillo pentagonal de hexágonos con tres en negro (arriba izquierda, lado derecho y centro inferior).',
+    D: 'Anillo pentagonal de hexágonos con tres en negro (arriba derecha y dos en los lados).',
+  },
   71: {
     A: 'Estrella de seis puntas con la punta superior y el triángulo interior inferior central en negro.',
     B: 'Estrella de seis puntas con el triángulo interior inferior izquierdo y la punta superior derecha en negro.',
@@ -60,7 +66,7 @@ const OPT_TEXT = {
   },
 };
 // preguntas con option_images PERO sin imagen de serie (el enunciado ya la trae)
-const NO_ORIG = new Set([95]);
+const NO_ORIG = new Set([95, 73]);
 
 const ctxOfelia = `Lee con atención el texto y contesta las preguntas 1 a 4.
 
