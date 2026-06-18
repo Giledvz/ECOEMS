@@ -157,7 +157,7 @@
           // sobre la baseline. Color del mismo token que usa el texto.
           // Ancho: 0.85em por underscore.
           .replace(/_{3,}/g, function(m){
-            var w = (m.length * 2.2).toFixed(2);
+            var w = (m.length * 0.85).toFixed(2);
             return '<span class="md-blank" style="display:inline-block; width:' + w + 'em; height:1.5px; background-color:var(--md-text); vertical-align:0; margin:0 0.18em;"></span>';
           })
           .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
