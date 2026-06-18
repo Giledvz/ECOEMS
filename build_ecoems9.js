@@ -40,6 +40,12 @@ const OPT_TEXT = {
     C: 'Gráfica que pasa por (1,2), (3,6), (5,7), (7,12), (9,13).',
     D: 'Gráfica que pasa por (1,2), (3,6), (5,8), (7,10), (9,13).',
   },
+  71: {
+    A: 'Estrella de seis puntas con la punta superior y el triángulo interior inferior central en negro.',
+    B: 'Estrella de seis puntas con el triángulo interior inferior izquierdo y la punta superior derecha en negro.',
+    C: 'Estrella de seis puntas con los triángulos interiores superior izquierdo e inferior derecho en negro.',
+    D: 'Estrella de seis puntas con el triángulo interior inferior derecho y la punta superior izquierda en negro.',
+  },
   69: {
     A: 'Flecha acodada con brazos a la derecha y abajo; triángulo negro abajo a la derecha.',
     B: 'Flecha acodada con brazos a la izquierda y abajo; triángulo de contorno abajo a la izquierda.',

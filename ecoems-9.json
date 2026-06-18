@@ -990,13 +990,19 @@
             "topic_name": "Completa la serie de figuras",
             "text": "Selecciona la opción que completa la serie presentada.",
             "options": {
-              "A": "A",
-              "B": "B",
-              "C": "C",
-              "D": "D"
+              "A": "Estrella de seis puntas con la punta superior y el triángulo interior inferior central en negro.",
+              "B": "Estrella de seis puntas con el triángulo interior inferior izquierdo y la punta superior derecha en negro.",
+              "C": "Estrella de seis puntas con los triángulos interiores superior izquierdo e inferior derecho en negro.",
+              "D": "Estrella de seis puntas con el triángulo interior inferior derecho y la punta superior izquierda en negro."
             },
             "answer": "D",
-            "image": "/imagenes_ecoems-9/q71.png"
+            "image": "/imagenes_ecoems-9/q71_original.svg",
+            "option_images": {
+              "A": "/imagenes_ecoems-9/q71_a.svg",
+              "B": "/imagenes_ecoems-9/q71_b.svg",
+              "C": "/imagenes_ecoems-9/q71_c.svg",
+              "D": "/imagenes_ecoems-9/q71_d.svg"
+            }
           },
           {
             "id": 72,
