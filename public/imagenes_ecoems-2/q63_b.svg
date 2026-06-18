@@ -2,9 +2,9 @@
 <defs>
     <!-- Cubo en proyección cabinet espejo (vista desde la izquierda) -->
     <symbol id="cubeUnit" overflow="visible">
-      <polygon points="0,0 20,0 20,-20 0,-20" fill="#c9bda3" stroke="#1f1a16" stroke-width="1" stroke-linejoin="miter"/>
-      <polygon points="0,0 -10,-10 -10,-30 0,-20" fill="#a89880" stroke="#1f1a16" stroke-width="1" stroke-linejoin="miter"/>
-      <polygon points="0,-20 20,-20 10,-30 -10,-30" fill="#efe7d8" stroke="#1f1a16" stroke-width="1" stroke-linejoin="miter"/>
+      <polygon points="0,0 20,0 20,-20 0,-20" fill="#c9bda3" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
+      <polygon points="0,0 -10,-10 -10,-30 0,-20" fill="#a89880" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
+      <polygon points="0,-20 20,-20 10,-30 -10,-30" fill="#efe7d8" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
     </symbol>
   </defs>
 
