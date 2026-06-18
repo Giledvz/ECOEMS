@@ -964,13 +964,19 @@
             "topic_name": "Completa la serie de figuras",
             "text": "Selecciona la opción que completa la serie presentada.",
             "options": {
-              "A": "A",
-              "B": "B",
-              "C": "C",
-              "D": "D"
+              "A": "Cuadrícula 5×5: anti-diagonal (de la esquina superior derecha a la inferior izquierda) con triángulos superiores.",
+              "B": "Cuadrícula 5×5: anti-diagonal con triángulos inferiores y la esquina inferior izquierda completa.",
+              "C": "Cuadrícula 5×5: esquina inferior izquierda completa y el resto de la anti-diagonal con triángulos superiores.",
+              "D": "Cuadrícula 5×5: diagonal de triángulos inferiores desplazada una celda, con las esquinas superior derecha e inferior izquierda en triángulo."
             },
             "answer": "B",
-            "image": "/imagenes_ecoems-9/q70.png"
+            "image": "/imagenes_ecoems-9/q70_original.svg",
+            "option_images": {
+              "A": "/imagenes_ecoems-9/q70_a.svg",
+              "B": "/imagenes_ecoems-9/q70_b.svg",
+              "C": "/imagenes_ecoems-9/q70_c.svg",
+              "D": "/imagenes_ecoems-9/q70_d.svg"
+            }
           },
           {
             "id": 71,

@@ -40,6 +40,12 @@ const OPT_TEXT = {
     C: 'Gráfica que pasa por (1,2), (3,6), (5,7), (7,12), (9,13).',
     D: 'Gráfica que pasa por (1,2), (3,6), (5,8), (7,10), (9,13).',
   },
+  70: {
+    A: 'Cuadrícula 5×5: anti-diagonal (de la esquina superior derecha a la inferior izquierda) con triángulos superiores.',
+    B: 'Cuadrícula 5×5: anti-diagonal con triángulos inferiores y la esquina inferior izquierda completa.',
+    C: 'Cuadrícula 5×5: esquina inferior izquierda completa y el resto de la anti-diagonal con triángulos superiores.',
+    D: 'Cuadrícula 5×5: diagonal de triángulos inferiores desplazada una celda, con las esquinas superior derecha e inferior izquierda en triángulo.',
+  },
 };
 // preguntas con option_images PERO sin imagen de serie (el enunciado ya la trae)
 const NO_ORIG = new Set([95]);
