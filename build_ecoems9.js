@@ -17,11 +17,11 @@ const KEY = {
 
 // imágenes:  letter = opciones son figuras (composite A-D dentro de la imagen)
 //            fig    = figura en el enunciado, opciones de texto
-const LETTER_IMG = new Set([69,70,71,73,74,76,95]);
+const LETTER_IMG = new Set([69,70,71,73,76,95]);
 const FIG_IMG = new Set([67,98]);
 const LET = {A:'A',B:'B',C:'C',D:'D'};
 // Figuras ya convertidas a SVG (theme-adaptive). El resto sigue en PNG temporal.
-const SVG_DONE = new Set([67, 98]);
+const SVG_DONE = new Set([67, 98, 74]);
 const img = (id)=>`/imagenes_ecoems-9/q${id}.${SVG_DONE.has(id)?'svg':'png'}`;
 
 // Preguntas visuales migradas al patrón option_images (serie + 4 figuras SVG).
@@ -204,7 +204,7 @@ const sections = [
     ['Completa la serie de figuras', 'Selecciona la opción que completa la serie presentada.', null, {img:true}],
     ['Completa la serie de figuras', 'Selecciona la opción que completa la serie presentada.', null, {img:true}],
     ['Figura diferente tras rotación', '¿Cuál figura es diferente, aun después de haberla rotado?', null, {img:true}],
-    ['Otra vista de la figura', '¿Cuál imagen representa otra vista de la figura?', null, {img:true}],
+    ['Conteo de cubos', '¿Cuántos cubos forman la figura?', ['18','20','21','24'], {img:true}],
     ['Seis triángulos equiláteros', 'Si tenemos 6 triángulos equiláteros, tomamos un vértice de cada uno de ellos y los juntamos sin encimarlos, ¿qué figura se forma?', ['Dodecágono','Hexágono','Trapecio','Rectángulo']],
     ['Plantilla — vista superior', 'Al armar la plantilla, ¿cómo se ve la figura desde la parte superior?', null, {img:true}],
     ['Tres enteros consecutivos', 'Si la suma de 3 números enteros consecutivos es 69, ¿cuál es su producto?', ['10 626','12 144','12 167','13 800']],
