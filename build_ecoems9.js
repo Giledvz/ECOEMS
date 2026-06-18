@@ -17,7 +17,7 @@ const KEY = {
 
 // imágenes:  letter = opciones son figuras (composite A-D dentro de la imagen)
 //            fig    = figura en el enunciado, opciones de texto
-const LETTER_IMG = new Set([69,70,71,73,76,95]);
+const LETTER_IMG = new Set([69,70,71,73,95]);
 const FIG_IMG = new Set([67,98]);
 const LET = {A:'A',B:'B',C:'C',D:'D'};
 // Figuras ya convertidas a SVG (theme-adaptive). El resto sigue en PNG temporal.
@@ -39,6 +39,12 @@ const OPT_TEXT = {
     B: 'Gráfica que pasa por (1,2), (3,6), (5,8), (7,12), (9,13).',
     C: 'Gráfica que pasa por (1,2), (3,6), (5,7), (7,12), (9,13).',
     D: 'Gráfica que pasa por (1,2), (3,6), (5,8), (7,10), (9,13).',
+  },
+  76: {
+    A: 'Fila de cuatro cuadros con dos cuadros apilados encima del segundo.',
+    B: 'Fila de cuatro cuadros con un cuadro hacia arriba en cada extremo.',
+    C: 'Fila de cinco cuadros con uno debajo del segundo.',
+    D: 'Cruz: fila de cuatro con un cuadro arriba y otro abajo del segundo.',
   },
   73: {
     A: 'Anillo pentagonal de hexágonos con tres en negro (arriba derecha, lado derecho y lado izquierdo).',
@@ -66,7 +72,7 @@ const OPT_TEXT = {
   },
 };
 // preguntas con option_images PERO sin imagen de serie (el enunciado ya la trae)
-const NO_ORIG = new Set([95, 73]);
+const NO_ORIG = new Set([95, 73, 76]);
 
 const ctxOfelia = `Lee con atención el texto y contesta las preguntas 1 a 4.
 
@@ -206,7 +212,7 @@ const sections = [
     ['Figura diferente tras rotación', '¿Cuál figura es diferente, aun después de haberla rotado?', null, {img:true}],
     ['Conteo de cubos', '¿Cuántos cubos forman la figura?', ['18','20','21','24'], {img:true}],
     ['Seis triángulos equiláteros', 'Si tenemos 6 triángulos equiláteros, tomamos un vértice de cada uno de ellos y los juntamos sin encimarlos, ¿qué figura se forma?', ['Dodecágono','Hexágono','Trapecio','Rectángulo']],
-    ['Plantilla — vista superior', 'Al armar la plantilla, ¿cómo se ve la figura desde la parte superior?', null, {img:true}],
+    ['Plantilla que forma un cubo', '¿Cuál de las siguientes plantillas, al doblarse, forma un cubo?', null, {img:true}],
     ['Tres enteros consecutivos', 'Si la suma de 3 números enteros consecutivos es 69, ¿cuál es su producto?', ['10 626','12 144','12 167','13 800']],
     ['Ceros del 101 al 200', 'En una calle cuyas casas están numeradas de manera continua del 101 al 200 se van a colocar números de metal. ¿Cuántos ceros se necesita comprar?', ['9','11','18','20']],
     ['Mezcla de pintura', 'Un señor está pintando su casa. Para obtener el tono que deseaba mezcló 4 L de pintura blanca con 7 de pintura azul. Se le acabó la pintura cuando aún no terminaba de pintar, así que compró otro litro de pintura azul. ¿Cuántos litros de pintura blanca debe agregar para que quede del mismo tono que la mezcla anterior?', ['$1.0$','$\\dfrac{4}{7}$','$\\dfrac{1}{2}$','$4.7$']],

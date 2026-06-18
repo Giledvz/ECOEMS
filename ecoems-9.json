@@ -1073,16 +1073,21 @@
           {
             "id": 76,
             "topic": "HM.12",
-            "topic_name": "Plantilla — vista superior",
-            "text": "Al armar la plantilla, ¿cómo se ve la figura desde la parte superior?",
+            "topic_name": "Plantilla que forma un cubo",
+            "text": "¿Cuál de las siguientes plantillas, al doblarse, forma un cubo?",
             "options": {
-              "A": "A",
-              "B": "B",
-              "C": "C",
-              "D": "D"
+              "A": "Fila de cuatro cuadros con dos cuadros apilados encima del segundo.",
+              "B": "Fila de cuatro cuadros con un cuadro hacia arriba en cada extremo.",
+              "C": "Fila de cinco cuadros con uno debajo del segundo.",
+              "D": "Cruz: fila de cuatro con un cuadro arriba y otro abajo del segundo."
             },
             "answer": "D",
-            "image": "/imagenes_ecoems-9/q76.png"
+            "option_images": {
+              "A": "/imagenes_ecoems-9/q76_a.svg",
+              "B": "/imagenes_ecoems-9/q76_b.svg",
+              "C": "/imagenes_ecoems-9/q76_c.svg",
+              "D": "/imagenes_ecoems-9/q76_d.svg"
+            }
           },
           {
             "id": 77,
