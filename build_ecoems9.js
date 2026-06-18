@@ -21,7 +21,7 @@ const LETTER_IMG = new Set([69,70,71,72,73,74,76,95]);
 const FIG_IMG = new Set([67,98]);
 const LET = {A:'A',B:'B',C:'C',D:'D'};
 // Figuras ya convertidas a SVG (theme-adaptive). El resto sigue en PNG temporal.
-const SVG_DONE = new Set([98]);
+const SVG_DONE = new Set([67, 98]);
 const img = (id)=>`/imagenes_ecoems-9/q${id}.${SVG_DONE.has(id)?'svg':'png'}`;
 
 const ctxOfelia = `Lee con atención el texto y contesta las preguntas 1 a 4.
