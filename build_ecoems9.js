@@ -17,12 +17,24 @@ const KEY = {
 
 // imágenes:  letter = opciones son figuras (composite A-D dentro de la imagen)
 //            fig    = figura en el enunciado, opciones de texto
-const LETTER_IMG = new Set([69,70,71,72,73,74,76,95]);
+const LETTER_IMG = new Set([69,70,71,73,74,76,95]);
 const FIG_IMG = new Set([67,98]);
 const LET = {A:'A',B:'B',C:'C',D:'D'};
 // Figuras ya convertidas a SVG (theme-adaptive). El resto sigue en PNG temporal.
 const SVG_DONE = new Set([67, 98]);
 const img = (id)=>`/imagenes_ecoems-9/q${id}.${SVG_DONE.has(id)?'svg':'png'}`;
+
+// Preguntas visuales migradas al patrón option_images (serie + 4 figuras SVG).
+const imgOrig = (id)=>`/imagenes_ecoems-9/q${id}_original.svg`;
+const imgOpt  = (id,l)=>`/imagenes_ecoems-9/q${id}_${l.toLowerCase()}.svg`;
+const OPT_TEXT = {
+  72: {
+    A: 'Diagonales ascendentes; en negro los cuatro triángulos superiores.',
+    B: 'Diagonales ascendentes; en negro el triángulo inferior de cada cuadrante, salvo el superior derecho (ahí el superior).',
+    C: 'Diagonales descendentes; en negro los cuatro triángulos inferiores.',
+    D: 'Diagonales descendentes; en negro los cuatro triángulos superiores.',
+  },
+};
 
 const ctxOfelia = `Lee con atención el texto y contesta las preguntas 1 a 4.
 
@@ -234,7 +246,9 @@ const outSections = sections.map(sec => {
     const [name, text, opts, extra={}] = it;
     const q = { id, topic: `${sec.prefix}.${i+1}`, topic_name: name, text };
     // opciones
-    if (LETTER_IMG.has(id)) {
+    if (OPT_TEXT[id]) {
+      q.options = {...OPT_TEXT[id]};
+    } else if (LETTER_IMG.has(id)) {
       q.options = {...LET};
     } else if (opts) {
       q.options = {A:opts[0], B:opts[1], C:opts[2], D:opts[3]};
@@ -243,7 +257,12 @@ const outSections = sections.map(sec => {
     }
     q.answer = KEY[id];
     if (extra.ctx) q.context = extra.ctx;
-    if (extra.img || LETTER_IMG.has(id) || FIG_IMG.has(id)) q.image = img(id);
+    if (OPT_TEXT[id]) {
+      q.image = imgOrig(id);
+      q.option_images = {A:imgOpt(id,'A'), B:imgOpt(id,'B'), C:imgOpt(id,'C'), D:imgOpt(id,'D')};
+    } else if (extra.img || LETTER_IMG.has(id) || FIG_IMG.has(id)) {
+      q.image = img(id);
+    }
     return q;
   });
   return { subject: sec.subject, questions };

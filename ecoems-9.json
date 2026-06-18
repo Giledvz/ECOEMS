@@ -992,13 +992,19 @@
             "topic_name": "Completa la serie de figuras",
             "text": "Selecciona la opción que completa la serie presentada.",
             "options": {
-              "A": "A",
-              "B": "B",
-              "C": "C",
-              "D": "D"
+              "A": "Diagonales ascendentes; en negro los cuatro triángulos superiores.",
+              "B": "Diagonales ascendentes; en negro el triángulo inferior de cada cuadrante, salvo el superior derecho (ahí el superior).",
+              "C": "Diagonales descendentes; en negro los cuatro triángulos inferiores.",
+              "D": "Diagonales descendentes; en negro los cuatro triángulos superiores."
             },
             "answer": "C",
-            "image": "/imagenes_ecoems-9/q72.png"
+            "image": "/imagenes_ecoems-9/q72_original.svg",
+            "option_images": {
+              "A": "/imagenes_ecoems-9/q72_a.svg",
+              "B": "/imagenes_ecoems-9/q72_b.svg",
+              "C": "/imagenes_ecoems-9/q72_c.svg",
+              "D": "/imagenes_ecoems-9/q72_d.svg"
+            }
           },
           {
             "id": 73,
