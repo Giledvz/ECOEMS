@@ -34,7 +34,15 @@ const OPT_TEXT = {
     C: 'Diagonales descendentes; en negro los cuatro triángulos inferiores.',
     D: 'Diagonales descendentes; en negro los cuatro triángulos superiores.',
   },
+  95: {
+    A: 'Gráfica que pasa por (1,2), (3,5), (5,8), (7,12), (9,13).',
+    B: 'Gráfica que pasa por (1,2), (3,6), (5,8), (7,12), (9,13).',
+    C: 'Gráfica que pasa por (1,2), (3,6), (5,7), (7,12), (9,13).',
+    D: 'Gráfica que pasa por (1,2), (3,6), (5,8), (7,10), (9,13).',
+  },
 };
+// preguntas con option_images PERO sin imagen de serie (el enunciado ya la trae)
+const NO_ORIG = new Set([95]);
 
 const ctxOfelia = `Lee con atención el texto y contesta las preguntas 1 a 4.
 
@@ -258,7 +266,7 @@ const outSections = sections.map(sec => {
     q.answer = KEY[id];
     if (extra.ctx) q.context = extra.ctx;
     if (OPT_TEXT[id]) {
-      q.image = imgOrig(id);
+      if (!NO_ORIG.has(id)) q.image = imgOrig(id);
       q.option_images = {A:imgOpt(id,'A'), B:imgOpt(id,'B'), C:imgOpt(id,'C'), D:imgOpt(id,'D')};
     } else if (extra.img || LETTER_IMG.has(id) || FIG_IMG.has(id)) {
       q.image = img(id);

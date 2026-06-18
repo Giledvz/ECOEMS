@@ -1311,13 +1311,18 @@
             "topic_name": "Gráfica posición-tiempo",
             "text": "¿Qué gráfica posición-tiempo corresponde con los datos de la tabla?\n\n| Posición (m) | Tiempo (s) |\n|---|---|\n| 2 | 1 |\n| 6 | 3 |\n| 8 | 5 |\n| 12 | 7 |\n| 13 | 9 |",
             "options": {
-              "A": "A",
-              "B": "B",
-              "C": "C",
-              "D": "D"
+              "A": "Gráfica que pasa por (1,2), (3,5), (5,8), (7,12), (9,13).",
+              "B": "Gráfica que pasa por (1,2), (3,6), (5,8), (7,12), (9,13).",
+              "C": "Gráfica que pasa por (1,2), (3,6), (5,7), (7,12), (9,13).",
+              "D": "Gráfica que pasa por (1,2), (3,6), (5,8), (7,10), (9,13)."
             },
             "answer": "B",
-            "image": "/imagenes_ecoems-9/q95.png"
+            "option_images": {
+              "A": "/imagenes_ecoems-9/q95_a.svg",
+              "B": "/imagenes_ecoems-9/q95_b.svg",
+              "C": "/imagenes_ecoems-9/q95_c.svg",
+              "D": "/imagenes_ecoems-9/q95_d.svg"
+            }
           },
           {
             "id": 96,
