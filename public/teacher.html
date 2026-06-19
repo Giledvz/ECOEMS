@@ -1948,12 +1948,13 @@ async function uploadExam(input) {
     const headers = { 'Content-Type': 'application/json', 'X-Exam-Filename': file.name };
 
     // Tipo de sala: examen individual o Carrusel (práctica guiada por turnos).
-    const isPractice = await appConfirm({
+    const isExam = await appConfirm({
       title: '¿Qué tipo de sala?',
       body: 'Carrusel: todos ven la misma pregunta, un alumno contesta por turno, tú explicas y avanzas. Con marcador.\n\nExamen: cada alumno contesta a su ritmo, con cronómetro y comprobante.',
-      confirmText: 'Carrusel (práctica)',
-      cancelText: 'Examen',
+      confirmText: 'Examen',
+      cancelText: 'Carrusel (práctica)',
     });
+    const isPractice = !isExam;
 
     if (isPractice) {
       // Listar materias del JSON para el filtro de miscelánea.
@@ -1981,12 +1982,13 @@ async function uploadExam(input) {
     } else {
       // Modo entrenamiento ECOEMS: opciones con candado que se revelan al hover
       // (desktop) o tap (mobile). Réplica del mecanismo del examen oficial 2026.
-      const lockedOptions = await appConfirm({
+      const noLock = await appConfirm({
         title: 'Modo entrenamiento ECOEMS',
         body: '¿Crear esta sala con candado en las opciones?\n\nLos alumnos verán cada opción bloqueada hasta hacer hover (escritorio) o tap (móvil). Replica el mecanismo del examen oficial para entrenarlos.',
-        confirmText: 'Sí, con candado',
-        cancelText: 'No, opciones abiertas',
+        confirmText: 'No, opciones abiertas',
+        cancelText: 'Sí, con candado',
       });
+      const lockedOptions = !noLock;
       if (lockedOptions) headers['X-Locked-Options'] = '1';
     }
 
