@@ -1028,16 +1028,7 @@ function buildComprobanteHTML(room, student) {
       return `<li class="${cls}"><span class="exam-pdf__choice__letter">${letter}.</span><span class="exam-pdf__choice__text">${optContent}</span>${markerHTML}</li>`;
     }).join('');
 
-    let qText = q.text || '';
-    const maxLen = 1500;
-    if (qText.length > maxLen) {
-      const lastParagraph = qText.lastIndexOf('\n\n');
-      if (lastParagraph > maxLen * 0.3) {
-        const readingPart = qText.substring(0, lastParagraph);
-        const questionPart = qText.substring(lastParagraph);
-        qText = readingPart.substring(0, 300) + '\n\n[...]\n\n' + questionPart;
-      }
-    }
+    const qText = q.text || '';
     const imgHTML = q.image ? `<figure class="exam-pdf__figure">${pdfImg(q.image, '')}</figure>` : '';
 
     return `
@@ -1106,16 +1097,7 @@ function buildAnswerKeyHTML(room) {
       return `<li class="${cls}"><span class="exam-pdf__choice__letter">${letter}.</span><span class="exam-pdf__choice__text">${textHTML}</span>${markerHTML}</li>`;
     }).join('');
 
-    let qText = q.text || '';
-    const maxLen = 1500;
-    if (qText.length > maxLen) {
-      const lastParagraph = qText.lastIndexOf('\n\n');
-      if (lastParagraph > maxLen * 0.3) {
-        const readingPart = qText.substring(0, lastParagraph);
-        const questionPart = qText.substring(lastParagraph);
-        qText = readingPart.substring(0, 300) + '\n\n[...]\n\n' + questionPart;
-      }
-    }
+    const qText = q.text || '';
     const imgHTML = q.image ? `<figure class="exam-pdf__figure">${pdfImg(q.image, '')}</figure>` : '';
 
     return `
