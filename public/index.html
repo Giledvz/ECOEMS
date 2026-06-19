@@ -1868,9 +1868,19 @@ async function inlineSVGsInElement(el) {
       tmp.innerHTML = svgText;
       const newSvg = tmp.querySelector('svg');
       if (!newSvg) continue;
-      // Preserva width/height del <img> original si los traía
+      // Preserva width/height/style/class del <img> original
       const w = img.getAttribute('width');
       const h = img.getAttribute('height');
+      const style = img.getAttribute('style');
+      const cls = img.getAttribute('class');
+      if (cls) newSvg.setAttribute('class', cls);
+      if (style) {
+        // El style del <img> (float, width, margin…) manda: deja que el viewBox
+        // controle el aspecto quitando width/height intrínsecos del SVG.
+        newSvg.setAttribute('style', style);
+        newSvg.removeAttribute('width');
+        newSvg.removeAttribute('height');
+      }
       if (w) newSvg.setAttribute('width', w);
       if (h) newSvg.setAttribute('height', h);
       // Quita height fija del SVG si solo se pasa width, para mantener aspect ratio
