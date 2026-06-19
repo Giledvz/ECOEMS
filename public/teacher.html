@@ -1845,6 +1845,7 @@ function renderPracticePanel() {
     optsEl.appendChild(li);
   });
   inlineSVGsInElement(optsEl);
+  adaptPracticeBlankWidths(q);
 
   if (st.phase === 'revealed' && r) {
     resEl.className = 'practice-result ' + (r.isCorrect ? 'practice-result--ok' : 'practice-result--err');
@@ -1874,6 +1875,51 @@ function renderPracticePanel() {
   }
 
   nextBtn.disabled = false;
+}
+
+// Líneas de relleno adaptativas en el panel del profe: misma regla que la vista
+// del alumno (adaptBlankWidths en index.html) — cada blanco (___) se ajusta a la
+// opción (o parte de opción) más larga que puede ir ahí, + 3px, medido con la
+// tipografía real de las opciones, con tope de 420px. Sin esto el panel mostraba
+// el ancho crudo del render (nº de guiones × factor) y las rayas salían enormes
+// al proyectar (p. ej. ECOEMS 9, 11 guiones por blanco). Solo con opciones de
+// texto puro: con imágenes o sin opciones se queda el ancho por defecto del render.
+function adaptPracticeBlankWidths(q) {
+  const blanks = document.querySelectorAll('#pQText .md-blank');
+  if (!blanks.length) return;
+  const optVals = Object.values(q.options || {});
+  if (!optVals.length || q.option_images || optVals.some(v => /<img/i.test(v))) return;
+
+  const meas = document.createElement('span');
+  meas.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;left:-9999px;top:0;';
+  const ref = document.querySelector('#pOptions .practice-option span:last-child');
+  if (ref) {
+    const cs = getComputedStyle(ref);
+    meas.style.font = cs.font;
+    meas.style.letterSpacing = cs.letterSpacing;
+  }
+  document.body.appendChild(meas);
+  const widthOf = (s) => { meas.innerHTML = renderMath(s); return meas.offsetWidth; };
+
+  // Multi-blanco: cada opción se parte en tantas partes como blancos y cada
+  // blanco se mide contra su parte. El separador puede ser "/", " - " o " – "
+  // (mismo criterio que applyPdfBlankWidths en server.js — ver CONVENCIONES.md).
+  let parts = null;
+  if (blanks.length > 1) {
+    for (const re of [/\s*\/\s*/, /\s+[–-]\s+/]) {
+      const cand = optVals.map(v => v.split(re));
+      if (cand.every(p => p.length === blanks.length)) { parts = cand; break; }
+    }
+  }
+
+  blanks.forEach((b, i) => {
+    let max = 0;
+    if (parts) parts.forEach(p => { max = Math.max(max, widthOf(p[i].trim())); });
+    else optVals.forEach(v => { max = Math.max(max, widthOf(v)); });
+    b.style.width = Math.min(max + 3, 420) + 'px';
+  });
+
+  document.body.removeChild(meas);
 }
 
 function practiceNext() {

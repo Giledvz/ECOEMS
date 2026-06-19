@@ -21,8 +21,15 @@ try {
 } catch (e) {}
 console.log(`Branch: ${GIT_BRANCH}`);
 
-app.use(express.static(path.join(__dirname, 'public'), { etag: false, maxAge: 0, setHeaders: (res) => { res.setHeader('Cache-Control', 'no-store'); } }));
-app.use('/katex', express.static(path.join(__dirname, 'node_modules/katex/dist')));
+// Access-Control-Allow-Origin en assets estáticos: el PDF se genera con
+// page.setContent(), que deja el documento con origen opaco (about:blank). Las
+// fuentes @font-face se piden en modo CORS; sin este header el navegador las
+// BLOQUEA (net::ERR_FAILED) y el PDF cae a fuentes de respaldo (Georgia por
+// Fraunces, Helvetica por IBM Plex, Times por KaTeX → delimitadores chicos).
+// Solo afecta archivos estáticos, no las rutas /api.
+const allowCors = (res) => { res.setHeader('Access-Control-Allow-Origin', '*'); };
+app.use(express.static(path.join(__dirname, 'public'), { etag: false, maxAge: 0, setHeaders: (res) => { res.setHeader('Cache-Control', 'no-store'); allowCors(res); } }));
+app.use('/katex', express.static(path.join(__dirname, 'node_modules/katex/dist'), { setHeaders: allowCors }));
 app.use(express.json({ limit: '10mb' }));
 
 // ─── Shuffle (Fisher-Yates) ──────────────────────────────────────────────────
@@ -580,20 +587,30 @@ const TERCIAL_PDF_CSS = `
     --crema-100: #faf6ec; --crema-200: #f4ecd8; --crema-300: #ede2c5;
     --ink-300: #8c7556; --ink-500: #7a6448; --ink-700: #4a3f33; --ink-900: #1f1a16;
     --accent-conac: #6b3a2e; --accent-terracota: #c2410c;
-    --state-ok: #5a8045; --state-ok-bg: #e7ecd9;
+    --state-ok: #5a8045; --state-ok-bg: #d6e3bd;
     --state-err: #b8362c; --state-err-bg: #f1dcd4;
     --state-warn: #b8862e; --state-warn-bg: #f1e6c4;
     --cat-coral: #8c4a3a;
+    /* Colores por nivel de dominio en el desglose por materia (umbrales
+       ≥70% domina / 50–69% en proceso / <50% requiere atención). Activos: los
+       VIVOS acordados en los dashboards. Para alternar al tono apagado Tercial,
+       cambia estos 3 por los valores entre comentarios. */
+    --level-domina:   #1D9E75;  /* apagado Tercial: #5a8045 */
+    --level-proceso:  #EF9F27;  /* apagado Tercial: #b8862e */
+    --level-atencion: #E24B4A;  /* apagado Tercial: #b8362c */
     /* Tablas markdown (compartido con cliente vía /shared/markdown-render.js) */
+    /* Colores de tabla sincronizados con la versión en pantalla (app) para que
+       el PDF coincida: borde tan suave (#c9bda3, el crema-600 del app), NO el
+       café oscuro ink-300; y los fondos crema retocados del app. */
     --md-text:     var(--ink-900);
-    --md-border:   var(--ink-300);
-    --md-th-bg:    var(--crema-300);
-    --md-table-bg: var(--crema-100);
+    --md-border:   #c9bda3;
+    --md-th-bg:    #efe7d8;
+    --md-table-bg: #f8f3e8;
     --md-font:     'IBM Plex Sans', sans-serif;
   }
   @page {
     size: letter;
-    margin: 0.85in 0.9in 1in 0.9in;
+    margin: 0;
   }
   body {
     font-family: 'IBM Plex Sans', -apple-system, sans-serif;
@@ -602,10 +619,22 @@ const TERCIAL_PDF_CSS = `
     font-size: 11pt;
     line-height: 1.55;
   }
+  /* Marco de página: el thead/tfoot se repiten en CADA página (comportamiento
+     estándar de las tablas al imprimir) y dejan aire crema arriba/abajo, sin
+     reintroducir márgenes blancos — page.pdf va con margin 0 y el fondo crema
+     llega al borde. (Un margen normal de page.pdf dejaría esas franjas BLANCAS.) */
+  .page-frame { width: 100%; border-collapse: collapse; }
+  .page-frame > thead > tr > td,
+  .page-frame > tfoot > tr > td,
+  .page-frame > tbody > tr > td { padding: 0; }
+  .page-frame__space { height: 0.62in; }
+
+  /* Full-bleed: el fondo crema (html/body) llega al borde del papel; el
+     contenido va en una columna centrada. El aire vertical lo da .page-frame. */
   .exam-pdf {
     max-width: 6.7in;
     margin: 0 auto;
-    padding: 0.4in 0;
+    padding: 0;
   }
 
   /* Hero */
@@ -717,10 +746,13 @@ const TERCIAL_PDF_CSS = `
     color: var(--ink-700);
     font-variant-numeric: tabular-nums;
   }
+  /* Altura 3.5pt (no 2.5): a 2.5pt la barra es una hairline sub-pixel que en
+     pantalla (baja DPI) el anti-aliasing redondea disparejo entre filas. Algo
+     más gruesa se ve pareja tanto en pantalla como impresa. */
   .breakdown__bar {
-    height: 2.5pt;
+    height: 3.5pt;
     background-color: var(--crema-300);
-    border-radius: 1pt;
+    border-radius: 1.75pt;
     overflow: hidden;
   }
   .breakdown__fill {
@@ -728,12 +760,29 @@ const TERCIAL_PDF_CSS = `
     background-color: var(--accent-conac);
     border-radius: 1pt;
   }
+  /* Color por nivel de dominio (sobrescribe el coñac por defecto). */
+  .breakdown__fill--domina   { background-color: var(--level-domina); }
+  .breakdown__fill--proceso  { background-color: var(--level-proceso); }
+  .breakdown__fill--atencion { background-color: var(--level-atencion); }
   .breakdown__meta {
     margin-top: 3pt;
     font-size: 9pt;
     color: var(--ink-300);
     font-variant-numeric: tabular-nums;
   }
+  .breakdown__legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14pt;
+    margin-top: 12pt;
+    font-size: 8.5pt;
+    color: var(--ink-500);
+  }
+  .breakdown__legend span { display: inline-flex; align-items: center; gap: 4pt; }
+  .breakdown__dot { display: inline-block; width: 7pt; height: 7pt; border-radius: 2pt; }
+  .breakdown__dot--domina   { background-color: var(--level-domina); }
+  .breakdown__dot--proceso  { background-color: var(--level-proceso); }
+  .breakdown__dot--atencion { background-color: var(--level-atencion); }
 
   /* Lista de ejercicios */
   .exam-pdf__exercises {
@@ -823,12 +872,16 @@ const TERCIAL_PDF_CSS = `
   .exam-pdf__choice--correct .exam-pdf__choice__letter { color: var(--state-ok); }
   .exam-pdf__choice--incorrect .exam-pdf__choice__letter { color: var(--state-err); }
   .exam-pdf__choice__text { flex: 1; min-width: 0; }
-  .exam-pdf__choice__text img {
+  .exam-pdf__choice__text img,
+  .exam-pdf__choice__text svg {
     max-width: 140pt;
     max-height: 80pt;
-    margin-left: 6pt;
     vertical-align: middle;
   }
+  /* El SVG de opción hereda el color del .exam-pdf__choice (ink-700, más claro).
+     Lo forzamos a ink-900 para que las figuras de opción tengan el MISMO color
+     que las del enunciado y que la versión en pantalla (currentColor = ink-900). */
+  .exam-pdf__choice__text svg { color: var(--ink-900); }
   .exam-pdf__choice__marker {
     flex-shrink: 0;
     font-size: 9pt;
@@ -840,14 +893,35 @@ const TERCIAL_PDF_CSS = `
   .exam-pdf__choice--correct .exam-pdf__choice__marker { color: var(--state-ok); }
   .exam-pdf__choice--incorrect .exam-pdf__choice__marker { color: var(--state-err); }
 
-  /* Answer-final (clave del profesor) */
-  .answer-final {
-    display: inline-block;
-    border-bottom: 2px solid var(--accent-conac);
-    padding-bottom: 1px;
-    line-height: 1.2;
-  }
 `;
+
+function escAttr(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+// Imagen para el PDF. Los SVG se inyectan INLINE (no como <img src>) para que
+// `fill/stroke="currentColor"` herede el color del documento (--ink-900) — igual
+// que en la versión en pantalla. Con <img>, currentColor caería a negro puro y
+// las figuras saldrían de distinto color que en el examen. PNG/otros: <img>.
+function pdfImg(srcPath, alt) {
+  if (!srcPath) return '';
+  if (/\.svg$/i.test(srcPath)) {
+    try {
+      const file = path.join(__dirname, 'public', String(srcPath).replace(/^\//, ''));
+      let svg = fs.readFileSync(file, 'utf8')
+        .replace(/<\?xml[\s\S]*?\?>/i, '')
+        .replace(/<!DOCTYPE[\s\S]*?>/i, '')
+        .trim();
+      if (alt) svg = svg.replace(/<svg\b/i, `<svg role="img" aria-label="${escAttr(alt)}"`);
+      return svg;
+    } catch (e) {
+      return `<img src="${srcPath}" alt="${escAttr(alt)}">`; // fallback si no se lee
+    }
+  }
+  return `<img src="${srcPath}" alt="${escAttr(alt)}">`;
+}
 
 function buildComprobanteHTML(room, student) {
   const origin = `http://localhost:${PORT}`;
@@ -903,6 +977,8 @@ function buildComprobanteHTML(room, student) {
     if (answers[q.id] === answerKey[q.id]) subjects[key].correct++;
   });
   const sortedSubjects = Object.entries(subjects).sort((a, b) => (b[1].correct / b[1].total) - (a[1].correct / a[1].total));
+  // Nivel de dominio por umbral (mismo esquema acordado en los dashboards).
+  const levelClass = (pct) => pct >= 70 ? 'domina' : pct >= 50 ? 'proceso' : 'atencion';
   const breakdownRowsHTML = sortedSubjects.map(([name, data]) => {
     const subjectPct = Math.round((data.correct / data.total) * 100);
     return `
@@ -911,14 +987,21 @@ function buildComprobanteHTML(room, student) {
           <span class="breakdown__name">${name}</span>
           <span class="breakdown__pct">${subjectPct}%</span>
         </div>
-        <div class="breakdown__bar"><div class="breakdown__fill" style="width:${subjectPct}%;"></div></div>
+        <div class="breakdown__bar"><div class="breakdown__fill breakdown__fill--${levelClass(subjectPct)}" style="width:${subjectPct}%;"></div></div>
         <div class="breakdown__meta">${data.correct} de ${data.total} aciertos</div>
       </div>`;
   }).join('');
+  const breakdownLegendHTML = `
+    <div class="breakdown__legend">
+      <span><span class="breakdown__dot breakdown__dot--domina"></span>Domina ≥70%</span>
+      <span><span class="breakdown__dot breakdown__dot--proceso"></span>En proceso 50–69%</span>
+      <span><span class="breakdown__dot breakdown__dot--atencion"></span>Requiere atención &lt;50%</span>
+    </div>`;
   const breakdownHTML = sortedSubjects.length > 0 ? `
     <section class="breakdown">
       <p class="breakdown__title">Por materia</p>
       ${breakdownRowsHTML}
+      ${breakdownLegendHTML}
     </section>` : '';
 
   const questionsHTML = questionsForStudent.map((q, idx) => {
@@ -932,11 +1015,14 @@ function buildComprobanteHTML(room, student) {
       let marker = '';
       if (isCorrect) { cls += ' exam-pdf__choice--correct'; marker = isMine ? 'Tu respuesta · correcta' : 'Correcta'; }
       else if (isMine) { cls += ' exam-pdf__choice--incorrect'; marker = 'Tu respuesta'; }
-      const optImg = q.option_images && q.option_images[letter]
-        ? `<img src="${q.option_images[letter]}" alt="">`
-        : '';
+      // Con imagen de opción: solo la figura (la descripción de texto va como
+      // alt, no visible — sería redundante con la imagen). Sin imagen: el texto.
+      const hasImg = q.option_images && q.option_images[letter];
+      const optContent = hasImg
+        ? pdfImg(q.option_images[letter], q.options[letter])
+        : renderMath(q.options[letter]);
       const markerHTML = marker ? `<span class="exam-pdf__choice__marker">${marker}</span>` : '';
-      return `<li class="${cls}"><span class="exam-pdf__choice__letter">${letter}.</span><span class="exam-pdf__choice__text">${renderMath(q.options[letter])}${optImg}</span>${markerHTML}</li>`;
+      return `<li class="${cls}"><span class="exam-pdf__choice__letter">${letter}.</span><span class="exam-pdf__choice__text">${optContent}</span>${markerHTML}</li>`;
     }).join('');
 
     let qText = q.text || '';
@@ -949,7 +1035,7 @@ function buildComprobanteHTML(room, student) {
         qText = readingPart.substring(0, 300) + '\n\n[...]\n\n' + questionPart;
       }
     }
-    const imgHTML = q.image ? `<figure class="exam-pdf__figure"><img src="${q.image}" alt=""></figure>` : '';
+    const imgHTML = q.image ? `<figure class="exam-pdf__figure">${pdfImg(q.image, '')}</figure>` : '';
 
     return `
       <li class="exam-pdf__exercise"><div class="exam-pdf__body">
@@ -968,6 +1054,10 @@ function buildComprobanteHTML(room, student) {
 <link rel="stylesheet" href="${origin}/fonts/tercial-fonts.css">
 <link rel="stylesheet" href="${origin}/katex/katex.min.css">
 <style>${TERCIAL_PDF_CSS}</style></head><body>
+<table class="page-frame">
+<thead><tr><td><div class="page-frame__space"></div></td></tr></thead>
+<tfoot><tr><td><div class="page-frame__space"></div></td></tr></tfoot>
+<tbody><tr><td>
 <main class="exam-pdf">
 
   <header class="exam-pdf__hero">
@@ -987,6 +1077,7 @@ function buildComprobanteHTML(room, student) {
   <ol class="exam-pdf__exercises">${questionsHTML}</ol>
 
 </main>
+</td></tr></tbody></table>
 </body></html>`;
 }
 
@@ -1002,12 +1093,12 @@ function buildAnswerKeyHTML(room) {
     const optionsHTML = letters.map(letter => {
       const isCorrect = letter === correctAns;
       const cls = isCorrect ? 'exam-pdf__choice exam-pdf__choice--correct' : 'exam-pdf__choice';
-      const optImg = q.option_images && q.option_images[letter]
-        ? `<img src="${q.option_images[letter]}" alt="">`
-        : '';
-      const textHTML = isCorrect
-        ? `<span class="answer-final">${renderMath(q.options[letter])}${optImg}</span>`
-        : `${renderMath(q.options[letter])}${optImg}`;
+      // Con imagen de opción: solo la figura (descripción como alt, no visible).
+      // La correcta ya se distingue por el recuadro verde + "Correcta".
+      const hasImg = q.option_images && q.option_images[letter];
+      const textHTML = hasImg
+        ? pdfImg(q.option_images[letter], q.options[letter])
+        : renderMath(q.options[letter]);
       const markerHTML = isCorrect ? '<span class="exam-pdf__choice__marker">Correcta</span>' : '';
       return `<li class="${cls}"><span class="exam-pdf__choice__letter">${letter}.</span><span class="exam-pdf__choice__text">${textHTML}</span>${markerHTML}</li>`;
     }).join('');
@@ -1022,7 +1113,7 @@ function buildAnswerKeyHTML(room) {
         qText = readingPart.substring(0, 300) + '\n\n[...]\n\n' + questionPart;
       }
     }
-    const imgHTML = q.image ? `<figure class="exam-pdf__figure"><img src="${q.image}" alt=""></figure>` : '';
+    const imgHTML = q.image ? `<figure class="exam-pdf__figure">${pdfImg(q.image, '')}</figure>` : '';
 
     return `
       <li class="exam-pdf__exercise"><div class="exam-pdf__body">
@@ -1041,6 +1132,10 @@ function buildAnswerKeyHTML(room) {
 <link rel="stylesheet" href="${origin}/fonts/tercial-fonts.css">
 <link rel="stylesheet" href="${origin}/katex/katex.min.css">
 <style>${TERCIAL_PDF_CSS}</style></head><body>
+<table class="page-frame">
+<thead><tr><td><div class="page-frame__space"></div></td></tr></thead>
+<tfoot><tr><td><div class="page-frame__space"></div></td></tr></tfoot>
+<tbody><tr><td>
 <main class="exam-pdf">
 
   <header class="exam-pdf__hero">
@@ -1052,7 +1147,53 @@ function buildAnswerKeyHTML(room) {
   <ol class="exam-pdf__exercises">${questionsHTML}</ol>
 
 </main>
+</td></tr></tbody></table>
 </body></html>`;
+}
+
+// Ancho de las líneas de relleno (___) en el PDF: misma regla que
+// adaptBlankWidths() del cliente (ver CONVENCIONES.md) — cada blanco se mide
+// contra la opción (o la parte de opción que le toca) más larga que puede ir
+// ahí, + 3px, con la tipografía real de las opciones y tope de 420px. Sin esto
+// el PDF dibujaba la raya según el nº de guiones del JSON.
+// Mejora sobre el cliente: detecta el separador de partes "/", " - " o " – "
+// para los reactivos multi-blanco (el cliente solo parte por "/").
+async function applyPdfBlankWidths(page) {
+  await page.evaluate(() => {
+    const CAP = 420;
+    document.querySelectorAll('.exam-pdf__exercise').forEach(ex => {
+      const blanks = ex.querySelectorAll('.exam-pdf__body .md-blank');
+      if (!blanks.length) return;
+      const optEls = Array.from(ex.querySelectorAll('.exam-pdf__choice__text'));
+      if (!optEls.length || optEls.some(el => el.querySelector('img'))) return;
+      const cs = getComputedStyle(optEls[0]);
+      const meas = document.createElement('span');
+      meas.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;left:-9999px;top:0;';
+      meas.style.fontFamily = cs.fontFamily;
+      meas.style.fontSize = cs.fontSize;
+      meas.style.fontWeight = cs.fontWeight;
+      meas.style.fontStyle = cs.fontStyle;
+      meas.style.letterSpacing = cs.letterSpacing;
+      document.body.appendChild(meas);
+      const widthOf = (s) => { meas.textContent = s; return meas.offsetWidth; };
+      const optVals = optEls.map(el => el.textContent.trim());
+      const N = blanks.length;
+      let parts = null;
+      if (N > 1) {
+        for (const re of [/\s*\/\s*/, /\s+[–-]\s+/]) {
+          const cand = optVals.map(v => v.split(re));
+          if (cand.every(p => p.length === N)) { parts = cand; break; }
+        }
+      }
+      blanks.forEach((b, i) => {
+        let max = 0;
+        if (parts) parts.forEach(p => { max = Math.max(max, widthOf(p[i].trim())); });
+        else optVals.forEach(v => { max = Math.max(max, widthOf(v)); });
+        b.style.width = Math.min(max + 3, CAP) + 'px';
+      });
+      document.body.removeChild(meas);
+    });
+  });
 }
 
 // Manager: navegador único, cola secuencial, dedup por (sala, alumno).
@@ -1099,14 +1240,16 @@ function enqueueComprobantePDF(room, student) {
       // DEBUG: dump del HTML para inspección
       try { fs.writeFileSync('/tmp/last-comprobante.html', html); } catch(e) {}
       await page.setContent(html, { waitUntil: 'networkidle0', timeout: 30000 });
+      await page.evaluate(() => document.fonts.ready); // esperar fuentes (Tercial+KaTeX) antes de medir/capturar
+      await applyPdfBlankWidths(page);
       const dateStr = (room.date || new Date().toISOString().split('T')[0]).replace(/-/g, '');
       const folder = path.join(__dirname, 'comprobantes', `${room.roomCode}_${dateStr}`);
       fs.mkdirSync(folder, { recursive: true });
       const filePath = path.join(folder, `${safeFilename(student.name)}.pdf`);
       await page.pdf({
         path: filePath,
-        format: 'A4',
-        margin: { top: '15mm', bottom: '15mm', left: '10mm', right: '10mm' },
+        format: 'letter',
+        margin: { top: '0', bottom: '0', left: '0', right: '0' },
         printBackground: true,
       });
       console.log(`[${room.roomCode}] PDF guardado: ${path.relative(__dirname, filePath)}`);
@@ -1133,14 +1276,16 @@ function enqueueAnswerKeyPDF(room) {
       page = await browser.newPage();
       const html = buildAnswerKeyHTML(room);
       await page.setContent(html, { waitUntil: 'networkidle0', timeout: 30000 });
+      await page.evaluate(() => document.fonts.ready); // esperar fuentes (Tercial+KaTeX) antes de medir/capturar
+      await applyPdfBlankWidths(page);
       const dateStr = (room.date || new Date().toISOString().split('T')[0]).replace(/-/g, '');
       const folder = path.join(__dirname, 'comprobantes', `${room.roomCode}_${dateStr}`);
       fs.mkdirSync(folder, { recursive: true });
       const filePath = path.join(folder, `clave_de_respuestas.pdf`);
       await page.pdf({
         path: filePath,
-        format: 'A4',
-        margin: { top: '15mm', bottom: '15mm', left: '10mm', right: '10mm' },
+        format: 'letter',
+        margin: { top: '0', bottom: '0', left: '0', right: '0' },
         printBackground: true,
       });
       console.log(`[${room.roomCode}] Clave de respuestas guardada: ${path.relative(__dirname, filePath)}`);
@@ -1766,17 +1911,30 @@ io.on('connection', (socket) => {
 });
 
 // ─── Start Server ───────────────────────────────────────────────────────────
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(`\n══════════════════════════════════════════`);
-  console.log(`  PLATAFORMA DE EXAMEN DIGITAL`);
-  console.log(`══════════════════════════════════════════`);
-  console.log(`\n  Panel del profesor: http://localhost:${PORT}/teacher`);
-  const localIP = getLocalIP();
-  if (localIP !== 'localhost') {
-    console.log(`\n  Los alumnos se conectan a:`);
-    console.log(`  → http://${localIP}:${PORT}`);
-    console.log(`\n  Panel del profesor (desde otro dispositivo):`);
-    console.log(`  → http://${localIP}:${PORT}/teacher`);
-  }
-  console.log(`\n══════════════════════════════════════════\n`);
-});
+// Solo arranca el listener cuando se ejecuta directamente (node server.js).
+// Si se hace require() del módulo (p.ej. para pruebas del PDF) no abre el puerto.
+if (require.main === module) {
+  server.listen(PORT, '0.0.0.0', () => {
+    console.log(`\n══════════════════════════════════════════`);
+    console.log(`  PLATAFORMA DE EXAMEN DIGITAL`);
+    console.log(`══════════════════════════════════════════`);
+    console.log(`\n  Panel del profesor: http://localhost:${PORT}/teacher`);
+    const localIP = getLocalIP();
+    if (localIP !== 'localhost') {
+      console.log(`\n  Los alumnos se conectan a:`);
+      console.log(`  → http://${localIP}:${PORT}`);
+      console.log(`\n  Panel del profesor (desde otro dispositivo):`);
+      console.log(`  → http://${localIP}:${PORT}/teacher`);
+    }
+    console.log(`\n══════════════════════════════════════════\n`);
+  });
+}
+
+module.exports = {
+  buildComprobanteHTML,
+  buildAnswerKeyHTML,
+  applyPdfBlankWidths,
+  enqueueAnswerKeyPDF,
+  getPdfBrowser,
+  TERCIAL_PDF_CSS,
+};

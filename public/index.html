@@ -3338,13 +3338,20 @@ function adaptBlankWidths(q) {
   document.body.appendChild(meas);
   const widthOf = (s) => { meas.innerHTML = renderMath(s); return meas.offsetWidth; };
 
-  // ¿Todas las opciones se parten en tantas partes como blancos? → por columna.
-  const parts = optVals.map(v => v.split(/\s*\/\s*/));
-  const perBlank = blanks.length > 1 && parts.every(p => p.length === blanks.length);
+  // Multi-blanco: cada opción se parte en tantas partes como blancos y cada
+  // blanco se mide contra su parte. El separador puede ser "/", " - " o " – "
+  // (mismo criterio que applyPdfBlankWidths en server.js — ver CONVENCIONES.md).
+  let parts = null;
+  if (blanks.length > 1) {
+    for (const re of [/\s*\/\s*/, /\s+[–-]\s+/]) {
+      const cand = optVals.map(v => v.split(re));
+      if (cand.every(p => p.length === blanks.length)) { parts = cand; break; }
+    }
+  }
 
   blanks.forEach((b, i) => {
     let max = 0;
-    if (perBlank) parts.forEach(p => { max = Math.max(max, widthOf(p[i])); });
+    if (parts) parts.forEach(p => { max = Math.max(max, widthOf(p[i].trim())); });
     else optVals.forEach(v => { max = Math.max(max, widthOf(v)); });
     b.style.width = Math.min(max + 3, 420) + 'px';
   });
