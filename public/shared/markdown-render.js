@@ -8,6 +8,19 @@
     ? require('katex')
     : (typeof katex !== 'undefined' ? katex : null);
 
+  // Fill-in-the-blank: 3+ underscores seguidos → línea continua sobre la baseline.
+  // El ancho escala con el nº de guiones (el autor usa la longitud como proxy de
+  // "qué tan largo es el blanco": 3-4 para una palabra, 8-11 para una frase) pero
+  // con factor moderado y TOPE de 16em. En la vista del alumno adaptBlankWidths()
+  // re-mide cada raya contra el ancho de la opción; el panel del profe y el PDF
+  // NO lo hacen, así que este ancho crudo es el que se ve ahí: sin tope, una racha
+  // larga (p.ej. 11 guiones) desbordaba (24em). Un solo helper para que tabla y
+  // cuerpo midan igual.
+  function blankSpan(run) {
+    var w = Math.min(run.length * 0.8, 16).toFixed(2);
+    return '<span class="md-blank" style="display:inline-block; width:' + w + 'em; height:1.5px; background-color:var(--md-text); vertical-align:0; margin:0 0.18em;"></span>';
+  }
+
   function renderInlineMath(text) {
     var parts = String(text).split(/(\$\$[\s\S]+?\$\$|\$[^$\n]+?\$)/g);
     return parts.map(function(p) {
@@ -24,9 +37,7 @@
         .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
         .replace(/&lt;br\s*\/?&gt;/g, '<br>')
         .replace(/&lt;img\s+([^&]*?)\/?&gt;/g, '<img $1>')
-        .replace(/_{3,}/g, function(m) {
-          return '<span class="md-blank" style="display:inline-block;border-bottom:1px solid currentColor;width:' + (m.length * 1.3) + 'em;height:1.5px;background-color:currentColor;vertical-align:0.18em;"></span>';
-        })
+        .replace(/_{3,}/g, blankSpan)
         .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
         .replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g, '$1<b>$2</b>');
     }).join('');
@@ -153,13 +164,7 @@
         return part
           .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
           .replace(/&lt;(\/?(u|b|i|strong|em))&gt;/g, '<$1>')
-          // Fill-in-the-blank: 3+ underscores seguidos → línea continua justo
-          // sobre la baseline. Color del mismo token que usa el texto.
-          // Ancho: 0.85em por underscore.
-          .replace(/_{3,}/g, function(m){
-            var w = (m.length * 0.85).toFixed(2);
-            return '<span class="md-blank" style="display:inline-block; width:' + w + 'em; height:1.5px; background-color:var(--md-text); vertical-align:0; margin:0 0.18em;"></span>';
-          })
+          .replace(/_{3,}/g, blankSpan)
           .replace(/\*\*([^*\n]+?)\*\*/g, '<b>$1</b>')
           .replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g, '$1<i>$2</i>')
           .replace(/\n/g, '<br>');

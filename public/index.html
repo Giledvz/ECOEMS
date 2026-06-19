@@ -2824,17 +2824,7 @@ async function _downloadPDFImpl(onDone) {
       return `<div class="${cls}"><span class="option__letter">${letter}</span><span class="option__text">${renderMath(q.options[letter])}</span>${marker ? `<span class="option__marker">${marker}</span>` : ''}</div>`;
     }).join('');
 
-    // Trunca lecturas muy largas para no inflar el PDF (mismo umbral que antes).
-    let qText = q.text;
-    const maxLen = 1500;
-    if (qText.length > maxLen) {
-      const lastParagraph = qText.lastIndexOf('\n\n');
-      if (lastParagraph > maxLen * 0.3) {
-        const readingPart = qText.substring(0, lastParagraph);
-        const questionPart = qText.substring(lastParagraph);
-        qText = readingPart.substring(0, 300) + '\n\n[...]\n\n' + questionPart;
-      }
-    }
+    const qText = q.text;
 
     let imgHTML = '';
     if (q.image) {
@@ -3020,6 +3010,14 @@ async function _downloadPDFImpl(onDone) {
       font-variant-numeric: tabular-nums;
     }
 
+    /* La hoja del comprobante es siempre clara: fuerza las variables de tabla
+       (--md-*) a la paleta clara aunque el tema activo sea oscuro. */
+    .comprobante-doc {
+      --md-text: #1f1a16;
+      --md-border: #c9bda3;
+      --md-th-bg: #efe7d8;
+      --md-table-bg: #f8f3e8;
+    }
     .comprobante-doc .question {
       margin-bottom: 14px; padding: 14px 16px;
       background-color: #faf7f0;
@@ -3338,13 +3336,20 @@ function adaptBlankWidths(q) {
   document.body.appendChild(meas);
   const widthOf = (s) => { meas.innerHTML = renderMath(s); return meas.offsetWidth; };
 
-  // ¿Todas las opciones se parten en tantas partes como blancos? → por columna.
-  const parts = optVals.map(v => v.split(/\s*\/\s*/));
-  const perBlank = blanks.length > 1 && parts.every(p => p.length === blanks.length);
+  // Multi-blanco: cada opción se parte en tantas partes como blancos y cada
+  // blanco se mide contra su parte. El separador puede ser "/", " - " o " – "
+  // (mismo criterio que applyPdfBlankWidths en server.js — ver CONVENCIONES.md).
+  let parts = null;
+  if (blanks.length > 1) {
+    for (const re of [/\s*\/\s*/, /\s+[–-]\s+/]) {
+      const cand = optVals.map(v => v.split(re));
+      if (cand.every(p => p.length === blanks.length)) { parts = cand; break; }
+    }
+  }
 
   blanks.forEach((b, i) => {
     let max = 0;
-    if (perBlank) parts.forEach(p => { max = Math.max(max, widthOf(p[i])); });
+    if (parts) parts.forEach(p => { max = Math.max(max, widthOf(p[i].trim())); });
     else optVals.forEach(v => { max = Math.max(max, widthOf(v)); });
     b.style.width = Math.min(max + 3, 420) + 'px';
   });
