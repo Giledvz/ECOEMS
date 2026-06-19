@@ -1907,6 +1907,11 @@ function prefetchExamSVGs(questions) {
     if (q.option_images) Object.values(q.option_images).forEach(p => {
       if (p && /\.svg$/i.test(p)) urls.add(p);
     });
+    // Patrón viejo: <img src=*.svg> dentro del texto de una opción.
+    if (q.options) Object.values(q.options).forEach(v => {
+      const m = /<img[^>]+src="([^"]+\.svg)"/i.exec(v || '');
+      if (m) urls.add(m[1]);
+    });
   });
   urls.forEach(u => { loadInlineSVG(u); });
 }
@@ -2291,8 +2296,14 @@ function renderQuestion() {
       if (isLocked) icon = LOCK_SVG;
     }
     // Si la pregunta tiene option_images, el contenido es la imagen inline.
+    // Compat patrón viejo: una opción que es solo <img src=*.svg> se enruta igual
+    // que option_images, para que el SVG se inline y herede el color del tema.
     // Si no, es el texto renderizado (KaTeX/markdown).
-    const imgPath = q.option_images && q.option_images[letter];
+    let imgPath = q.option_images && q.option_images[letter];
+    if (!imgPath) {
+      const m = /^\s*<img[^>]+src="([^"]+\.svg)"[^>]*>\s*$/i.exec(q.options[letter] || '');
+      if (m) imgPath = m[1];
+    }
     const contentHTML = imgPath
       ? `<span class="exam-option__img" data-img-path="${imgPath}"></span>`
       : `<span class="exam-option__text">${renderMath(q.options[letter])}</span>`;
