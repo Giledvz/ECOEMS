@@ -854,6 +854,9 @@ const TERCIAL_PDF_CSS = `
     color: var(--ink-700);
     background-color: transparent;
     border: 1px solid transparent;
+    /* Que una opción (sobre todo con figura alta) no se parta entre páginas. */
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
   .exam-pdf__choice--correct {
     background-color: var(--state-ok-bg);
