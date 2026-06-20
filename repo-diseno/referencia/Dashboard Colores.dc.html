@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { font-family: 'IBM Plex Sans', sans-serif; }
+</style>
+</helmet>
+
+<div style="width:max-content;min-width:100%;min-height:100vh;box-sizing:border-box;padding:48px;background:#cdc3b0;background-image:radial-gradient(at 20% 30%, rgba(140,117,86,.10) 0, transparent 55%),radial-gradient(at 85% 75%, rgba(107,58,46,.07) 0, transparent 55%)">
+
+  <div style="margin:0 0 36px;max-width:820px">
+    <p style="font:500 11px 'IBM Plex Sans';letter-spacing:.14em;text-transform:uppercase;color:#6b5a44;margin:0 0 8px">Dashboard · rendimiento por materia</p>
+    <h1 style="font-family:'Fraunces',serif;font-weight:500;font-size:30px;letter-spacing:-.02em;color:#1f1a16;font-variation-settings:'opsz' 72;margin:0">¿Se ve claro qué <em style="font-style:italic;color:#4a6b3f">domina</em> y qué <em style="font-style:italic;color:#9c3525">reforzar</em>?</h1>
+    <p style="font:400 14px 'IBM Plex Sans';color:#4a3f33;margin:8px 0 0;line-height:1.55">Mismos datos en tres tratamientos. El punto: cuando el significado depende <strong style="font-weight:600">solo del color</strong>, los apagados lo vuelven dudoso (centro). La solución no es volver a los vivos (izq.), sino <strong style="font-weight:600">añadir señales</strong> que no dependan del tono (der.).</p>
+  </div>
+
+  <div style="display:flex;align-items:flex-start;gap:40px">
+
+    <!-- ============ A · VIVO (referencia actual) ============ -->
+    <div style="flex:none;width:430px">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:6px">
+        <span style="width:9px;height:9px;border-radius:999px;background:#1D9E75;display:inline-block"></span>
+        <span style="font:500 12px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#4a3f33">Vivo · actual</span>
+      </div>
+      <p style="font:400 11.5px 'IBM Plex Sans';color:#6b5a44;margin:0 0 14px;line-height:1.5;min-height:32px">Salta a la vista, pero choca con la calidez editorial de Tercial.</p>
+      <div style="background:#fff;border:1px solid #e6dcc4;border-radius:8px;box-shadow:0 1px 4px rgba(74,63,51,.10);padding:26px 28px">
+        <p style="font:600 13px 'IBM Plex Sans';color:#1f1a16;margin:0 0 16px">Rendimiento por materia</p>
+        <!-- rows -->
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <div style="display:grid;grid-template-columns:118px 1fr 34px;gap:10px;align-items:center"><span style="font:400 12px 'IBM Plex Sans';color:#444;text-align:right">Razon. verbal</span><div style="height:16px;background:#eee;border-radius:8px;overflow:hidden"><div style="width:81%;height:100%;background:#1D9E75;border-radius:8px"></div></div><span style="font:600 12px 'IBM Plex Sans';color:#1D9E75">81%</span></div>
+          <div style="display:grid;grid-template-columns:118px 1fr 34px;gap:10px;align-items:center"><span style="font:400 12px 'IBM Plex Sans';color:#444;text-align:right">Matemáticas</span><div style="height:16px;background:#eee;border-radius:8px;overflow:hidden"><div style="width:75%;height:100%;background:#1D9E75;border-radius:8px"></div></div><span style="font:600 12px 'IBM Plex Sans';color:#1D9E75">75%</span></div>
+          <div style="display:grid;grid-template-columns:118px 1fr 34px;gap:10px;align-items:center"><span style="font:400 12px 'IBM Plex Sans';color:#444;text-align:right">Español</span><div style="height:16px;background:#eee;border-radius:8px;overflow:hidden"><div style="width:67%;height:100%;background:#EF9F27;border-radius:8px"></div></div><span style="font:600 12px 'IBM Plex Sans';color:#EF9F27">67%</span></div>
+          <div style="display:grid;grid-template-columns:118px 1fr 34px;gap:10px;align-items:center"><span style="font:400 12px 'IBM Plex Sans';color:#444;text-align:right">Razon. mate.</span><div style="height:16px;background:#eee;border-radius:8px;overflow:hidden"><div style="width:63%;height:100%;background:#EF9F27;border-radius:8px"></div></div><span style="font:600 12px 'IBM Plex Sans';color:#EF9F27">63%</span></div>
+          <div style="display:grid;grid-template-columns:118px 1fr 34px;gap:10px;align-items:center"><span style="font:400 12px 'IBM Plex Sans';color:#444;text-align:right">Historia</span><div style="height:16px;background:#eee;border-radius:8px;overflow:hidden"><div style="width:42%;height:100%;background:#E24B4A;border-radius:8px"></div></div><span style="font:600 12px 'IBM Plex Sans';color:#E24B4A">42%</span></div>
+        </div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:18px;padding-top:14px;border-top:1px solid #eee">
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#999"><span style="width:8px;height:8px;border-radius:2px;background:#1D9E75"></span>Domina ≥70%</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#999"><span style="width:8px;height:8px;border-radius:2px;background:#EF9F27"></span>En proceso</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#999"><span style="width:8px;height:8px;border-radius:2px;background:#E24B4A"></span>Atención &lt;50%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ B · APAGADO SOLO COLOR (la preocupación) ============ -->
+    <div style="flex:none;width:430px">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:6px">
+        <span style="width:9px;height:9px;border-radius:999px;background:#8a5208;display:inline-block"></span>
+        <span style="font:500 12px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#4a3f33">Apagado · solo color</span>
+      </div>
+      <p style="font:400 11.5px 'IBM Plex Sans';color:#9c3525;margin:0 0 14px;line-height:1.5;min-height:32px">Tu duda, ilustrada: el oliva y el tierra se parecen — cuesta distinguir fortaleza de "en proceso".</p>
+      <div style="background:#fdfbf6;border:1px solid #e6dcc4;border-radius:8px;box-shadow:0 1px 4px rgba(74,63,51,.10);padding:26px 28px">
+        <p style="font:600 13px 'IBM Plex Sans';color:#1f1a16;margin:0 0 16px">Rendimiento por materia</p>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <div style="display:grid;grid-template-columns:118px 1fr 34px;gap:10px;align-items:center"><span style="font:400 12px 'IBM Plex Sans';color:#4a3f33;text-align:right">Razon. verbal</span><div style="height:16px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:81%;height:100%;background:#4a6b3f;border-radius:8px"></div></div><span style="font:600 12px 'IBM Plex Sans';color:#4a6b3f">81%</span></div>
+          <div style="display:grid;grid-template-columns:118px 1fr 34px;gap:10px;align-items:center"><span style="font:400 12px 'IBM Plex Sans';color:#4a3f33;text-align:right">Matemáticas</span><div style="height:16px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:75%;height:100%;background:#4a6b3f;border-radius:8px"></div></div><span style="font:600 12px 'IBM Plex Sans';color:#4a6b3f">75%</span></div>
+          <div style="display:grid;grid-template-columns:118px 1fr 34px;gap:10px;align-items:center"><span style="font:400 12px 'IBM Plex Sans';color:#4a3f33;text-align:right">Español</span><div style="height:16px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:67%;height:100%;background:#8a5208;border-radius:8px"></div></div><span style="font:600 12px 'IBM Plex Sans';color:#8a5208">67%</span></div>
+          <div style="display:grid;grid-template-columns:118px 1fr 34px;gap:10px;align-items:center"><span style="font:400 12px 'IBM Plex Sans';color:#4a3f33;text-align:right">Razon. mate.</span><div style="height:16px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:63%;height:100%;background:#8a5208;border-radius:8px"></div></div><span style="font:600 12px 'IBM Plex Sans';color:#8a5208">63%</span></div>
+          <div style="display:grid;grid-template-columns:118px 1fr 34px;gap:10px;align-items:center"><span style="font:400 12px 'IBM Plex Sans';color:#4a3f33;text-align:right">Historia</span><div style="height:16px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:42%;height:100%;background:#9c3525;border-radius:8px"></div></div><span style="font:600 12px 'IBM Plex Sans';color:#9c3525">42%</span></div>
+        </div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:18px;padding-top:14px;border-top:1px dotted #d9ccae">
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#8c7556"><span style="width:8px;height:8px;border-radius:2px;background:#4a6b3f"></span>Domina ≥70%</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#8c7556"><span style="width:8px;height:8px;border-radius:2px;background:#8a5208"></span>En proceso</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#8c7556"><span style="width:8px;height:8px;border-radius:2px;background:#9c3525"></span>Atención &lt;50%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ C · APAGADO + SEÑALES (recomendación) ============ -->
+    <div style="flex:none;width:470px">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:6px">
+        <span style="width:9px;height:9px;border-radius:999px;background:#4a6b3f;display:inline-block"></span>
+        <span style="font:500 12px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#4a3f33">Apagado + señales · recomendación</span>
+      </div>
+      <p style="font:400 11.5px 'IBM Plex Sans';color:#4a6b3f;margin:0 0 14px;line-height:1.5;min-height:32px">Ícono ▲▼, palabra del estado y agrupación. El significado se lee aunque ignores el color.</p>
+      <div style="background:#fdfbf6;border:1px solid #e6dcc4;border-radius:8px;box-shadow:0 1px 4px rgba(74,63,51,.10);padding:26px 28px">
+        <p style="font:600 13px 'IBM Plex Sans';color:#1f1a16;margin:0 0 18px">Rendimiento por materia</p>
+
+        <!-- GRUPO: A reforzar -->
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px">
+          <span style="font:500 9.5px 'IBM Plex Sans';letter-spacing:.09em;text-transform:uppercase;color:#9c3525">A reforzar</span>
+          <span style="flex:1;height:1px;background:#ecd9d2"></span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:20px">
+          <div style="display:grid;grid-template-columns:16px 110px 1fr auto;gap:9px;align-items:center">
+            <span style="font-size:12px;color:#9c3525;text-align:center">▼</span>
+            <span style="font:500 12px 'IBM Plex Sans';color:#4a3f33;text-align:right">Historia</span>
+            <div style="height:16px;background:#f1e3dd;border-radius:8px;overflow:hidden"><div style="width:42%;height:100%;background:#9c3525;border-radius:8px"></div></div>
+            <span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#9c3525;font-variant-numeric:tabular-nums">42%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#fff;background:#9c3525;padding:2px 6px;border-radius:3px">Atención</span></span>
+          </div>
+          <div style="display:grid;grid-template-columns:16px 110px 1fr auto;gap:9px;align-items:center">
+            <span style="font-size:11px;color:#8a5208;text-align:center">●</span>
+            <span style="font:500 12px 'IBM Plex Sans';color:#4a3f33;text-align:right">Razon. mate.</span>
+            <div style="height:16px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:63%;height:100%;background:#8a5208;border-radius:8px"></div></div>
+            <span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#8a5208;font-variant-numeric:tabular-nums">63%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#8a5208;background:#f0e3cd;padding:2px 6px;border-radius:3px">Proceso</span></span>
+          </div>
+          <div style="display:grid;grid-template-columns:16px 110px 1fr auto;gap:9px;align-items:center">
+            <span style="font-size:11px;color:#8a5208;text-align:center">●</span>
+            <span style="font:500 12px 'IBM Plex Sans';color:#4a3f33;text-align:right">Español</span>
+            <div style="height:16px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:67%;height:100%;background:#8a5208;border-radius:8px"></div></div>
+            <span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#8a5208;font-variant-numeric:tabular-nums">67%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#8a5208;background:#f0e3cd;padding:2px 6px;border-radius:3px">Proceso</span></span>
+          </div>
+        </div>
+
+        <!-- GRUPO: Dominadas -->
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px">
+          <span style="font:500 9.5px 'IBM Plex Sans';letter-spacing:.09em;text-transform:uppercase;color:#4a6b3f">Dominadas</span>
+          <span style="flex:1;height:1px;background:#d8e2cd"></span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="display:grid;grid-template-columns:16px 110px 1fr auto;gap:9px;align-items:center">
+            <span style="font-size:12px;color:#4a6b3f;text-align:center">▲</span>
+            <span style="font:500 12px 'IBM Plex Sans';color:#4a3f33;text-align:right">Razon. verbal</span>
+            <div style="height:16px;background:#e3ead9;border-radius:8px;overflow:hidden"><div style="width:81%;height:100%;background:#4a6b3f;border-radius:8px"></div></div>
+            <span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#4a6b3f;font-variant-numeric:tabular-nums">81%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#4a6b3f;background:#e3ead9;padding:2px 6px;border-radius:3px">Domina</span></span>
+          </div>
+          <div style="display:grid;grid-template-columns:16px 110px 1fr auto;gap:9px;align-items:center">
+            <span style="font-size:12px;color:#4a6b3f;text-align:center">▲</span>
+            <span style="font:500 12px 'IBM Plex Sans';color:#4a3f33;text-align:right">Matemáticas</span>
+            <div style="height:16px;background:#e3ead9;border-radius:8px;overflow:hidden"><div style="width:75%;height:100%;background:#4a6b3f;border-radius:8px"></div></div>
+            <span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#4a6b3f;font-variant-numeric:tabular-nums">75%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#4a6b3f;background:#e3ead9;padding:2px 6px;border-radius:3px">Domina</span></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

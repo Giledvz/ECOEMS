@@ -7,68 +7,70 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background:#fafaf8; color:#1a1a1a; }
-  .container { max-width:900px; margin:0 auto; padding:24px; }
+  body { font-family: 'IBM Plex Sans', sans-serif; background:#cdc3b0; color:#1f1a16; }
+  .container { max-width:820px; margin:0 auto; padding:32px 24px; }
+  .card-app { background:#fdfbf6; border:1px solid #e6dcc4; border-top:3px solid #8c4a3a; border-radius:10px; box-shadow:0 1px 4px rgba(74,63,51,.10); padding:30px 32px; margin-bottom:18px; }
+  .view-eyebrow { font-family:'Fraunces',serif; font-style:italic; font-weight:500; font-size:13px; color:#8c4a3a; margin-bottom:14px; }
   .header { display:flex; align-items:center; gap:12px; margin-bottom:20px; }
-  .logo { width:40px; height:40px; border-radius:10px; background:#ebf4ff; display:flex; align-items:center; justify-content:center; font-weight:600; font-size:14px; color:#2c5282; }
-  .header h1 { font-size:20px; font-weight:600; }
-  .header .sub { font-size:12px; color:#888; }
+  .logo { width:42px; height:42px; border-radius:10px; background:#8c4a3a; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:600; font-size:14px; }
+  .header h1 { font-family:'Fraunces',serif; font-weight:500; font-size:20px; color:#1f1a16; }
+  .header .sub { font-size:12px; color:#8c7556; }
 
   /* Upload area */
   .upload-section { margin-bottom:24px; }
   .area-cards { display:grid; grid-template-columns:repeat(auto-fill, minmax(200px,1fr)); gap:12px; margin-bottom:16px; }
-  .area-card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:16px; position:relative; }
-  .area-card.complete { border-color:#1D9E75; background:#f0fdf4; }
-  .area-card.has-json { border-color:#378ADD; background:#eff6ff; }
+  .area-card { background:#fff; border:1px solid #e6dcc4; border-radius:12px; padding:16px; position:relative; }
+  .area-card.complete { border-color:#4a6b3f; background:#e3ead9; }
+  .area-card.has-json { border-color:#8c4a3a; background:#f0ece2; }
   .area-card .area-name { font-size:14px; font-weight:600; margin-bottom:8px; }
-  .area-card .area-detail { font-size:11px; color:#888; margin-bottom:4px; }
+  .area-card .area-detail { font-size:11px; color:#8c7556; margin-bottom:4px; }
   .area-card .area-status { font-size:11px; font-weight:500; }
-  .area-card .remove-btn { position:absolute; top:8px; right:8px; background:none; border:none; color:#999; cursor:pointer; font-size:14px; }
-  .area-card .remove-btn:hover { color:#E24B4A; }
-  .add-area-card { background:#fff; border:2px dashed #ccc; border-radius:12px; padding:16px; cursor:pointer; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:120px; transition:all .2s; }
-  .add-area-card:hover { border-color:#2c5282; background:#ebf4ff; }
-  .add-area-card p { font-size:13px; color:#666; margin-top:6px; }
-  .add-area-card .plus { font-size:24px; color:#999; }
+  .area-card .remove-btn { position:absolute; top:8px; right:8px; background:none; border:none; color:#a89880; cursor:pointer; font-size:14px; }
+  .area-card .remove-btn:hover { color:#9c3525; }
+  .add-area-card { background:#fff; border:2px dashed #d9ccae; border-radius:12px; padding:16px; cursor:pointer; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:120px; transition:all .2s; }
+  .add-area-card:hover { border-color:#8c4a3a; background:#efe7d8; }
+  .add-area-card p { font-size:13px; color:#7a6448; margin-top:6px; }
+  .add-area-card .plus { font-size:24px; color:#a89880; }
 
-  .drop-zone { border:2px dashed #ccc; border-radius:12px; padding:30px 20px; text-align:center; cursor:pointer; transition:all .2s; }
-  .drop-zone:hover, .drop-zone.over { border-color:#2c5282; background:#ebf4ff; }
-  .drop-zone p { font-size:14px; color:#666; }
-  .drop-zone small { font-size:12px; color:#999; }
+  .drop-zone { border:2px dashed #d9ccae; border-radius:12px; padding:30px 20px; text-align:center; cursor:pointer; transition:all .2s; }
+  .drop-zone:hover, .drop-zone.over { border-color:#8c4a3a; background:#efe7d8; }
+  .drop-zone p { font-size:14px; color:#7a6448; }
+  .drop-zone small { font-size:12px; color:#a89880; }
 
-  .btn { padding:8px 16px; border:1px solid #ddd; border-radius:8px; font-size:12px; cursor:pointer; background:#fff; }
-  .btn:hover { background:#f0f0f0; }
-  .btn-primary { background:#2c5282; color:#fff; border-color:#2c5282; }
-  .btn-primary:hover { background:#1e3a5f; }
+  .btn { padding:8px 16px; border:1px solid #e6dcc4; border-radius:8px; font-size:12px; cursor:pointer; background:#fff; }
+  .btn:hover { background:#f7f1e6; }
+  .btn-primary { background:#8c4a3a; color:#fff; border-color:#8c4a3a; }
+  .btn-primary:hover { background:#743a2e; }
   .btn-primary:disabled { opacity:0.5; cursor:not-allowed; }
-  .btn-danger { color:#E24B4A; border-color:#E24B4A; }
-  .btn-danger:hover { background:#fef2f2; }
+  .btn-danger { color:#9c3525; border-color:#9c3525; }
+  .btn-danger:hover { background:#f1e3dd; }
 
   /* Tabs */
   .tabs { display:flex; gap:4px; margin-bottom:20px; flex-wrap:wrap; }
-  .tab { padding:8px 16px; border-radius:8px; font-size:13px; font-weight:500; cursor:pointer; border:1px solid #ddd; background:#fff; color:#666; transition:all .15s; }
-  .tab.active { background:#ebf4ff; color:#2c5282; border-color:#2c5282; }
-  .tab .tab-badge { font-size:10px; background:#e2e8f0; color:#666; padding:1px 6px; border-radius:10px; margin-left:4px; }
-  .tab.active .tab-badge { background:#2c5282; color:#fff; }
+  .tab { padding:8px 16px; border-radius:8px; font-size:13px; font-weight:500; cursor:pointer; border:1px solid #e6dcc4; background:#fff; color:#7a6448; transition:all .15s; }
+  .tab.active { background:#8c4a3a; color:#fff; border-color:#8c4a3a; }
+  .tab .tab-badge { font-size:10px; background:#e6dcc4; color:#7a6448; padding:1px 6px; border-radius:10px; margin-left:4px; }
+  .tab.active .tab-badge { background:#8c4a3a; color:#fff; }
 
   /* Metrics */
   .metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:24px; }
-  .metric { background:#f5f5f0; border-radius:10px; padding:14px 16px; }
-  .metric .label { font-size:11px; color:#888; text-transform:uppercase; letter-spacing:.3px; }
-  .metric .value { font-size:24px; font-weight:600; margin-top:4px; }
-  .metric .detail { font-size:11px; color:#999; margin-top:2px; }
-  .section-title { font-size:15px; font-weight:600; margin:24px 0 10px; }
+  .metric { background:#f7f1e6; border-radius:10px; padding:14px 16px; }
+  .metric .label { font-size:11px; color:#8c7556; text-transform:uppercase; letter-spacing:.3px; }
+  .metric .value { font-family:'Fraunces',serif; font-weight:500; font-size:23px; color:#1f1a16; margin-top:4px; }
+  .metric .detail { font-size:11px; color:#a89880; margin-top:2px; }
+  .section-title { font-family:'Fraunces',serif; font-weight:500; font-size:15px; color:#1f1a16; margin:24px 0 12px; }
 
   /* Charts */
   .chart-wrap { position:relative; margin-bottom:24px; }
   .chart-wrap canvas { display:block; width:100%!important; height:100%!important; }
-  .legend { display:flex; gap:14px; font-size:11px; color:#888; margin-bottom:10px; flex-wrap:wrap; }
+  .legend { display:flex; gap:14px; font-size:11px; color:#8c7556; margin-bottom:10px; flex-wrap:wrap; }
   .legend span { display:flex; align-items:center; gap:4px; }
   .legend .dot { width:10px; height:10px; border-radius:3px; }
 
   /* Bars */
   .bar-row { display:flex; align-items:center; gap:10px; margin-bottom:6px; }
-  .bar-label { font-size:12px; color:#666; width:150px; text-align:right; flex-shrink:0; }
-  .bar-track { flex:1; height:18px; background:#eee; border-radius:9px; overflow:hidden; }
+  .bar-label { font-size:12px; color:#7a6448; width:150px; text-align:right; flex-shrink:0; }
+  .bar-track { flex:1; height:18px; background:#efe7d8; border-radius:9px; overflow:hidden; }
   .bar-fill { height:100%; border-radius:9px; transition:width .5s; }
   .bar-pct { font-size:12px; font-weight:600; width:40px; }
 
@@ -78,37 +80,37 @@
   /* Ranking */
   .ranking { margin-bottom:24px; }
   .rank-row { display:flex; align-items:center; gap:10px; padding:8px 12px; border-radius:6px; cursor:pointer; }
-  .rank-row:hover { background:#f0f0f0; }
-  .rank-row .pos { font-size:12px; color:#999; width:24px; }
+  .rank-row:hover { background:#f7f1e6; }
+  .rank-row .pos { font-size:12px; color:#a89880; width:24px; }
   .rank-row .name { font-size:13px; flex:1; }
-  .rank-row .group-badge { font-size:11px; color:#888; padding:2px 8px; border-radius:4px; background:#f0f0f0; }
+  .rank-row .group-badge { font-size:11px; color:#8c7556; padding:2px 8px; border-radius:4px; background:#f7f1e6; }
   .rank-row .score { font-size:13px; font-weight:600; width:40px; text-align:right; }
 
   /* Student / Individual */
   .student-header { display:flex; align-items:center; gap:12px; margin-bottom:20px; }
-  .avatar { width:44px; height:44px; border-radius:50%; background:#ebf4ff; display:flex; align-items:center; justify-content:center; font-weight:600; font-size:15px; color:#2c5282; }
-  .diagnosis { background:#fff; border:1px solid #eee; border-radius:12px; padding:16px 20px; margin-bottom:20px; }
-  .diagnosis p { font-size:13px; color:#666; margin-bottom:6px; }
+  .avatar { width:44px; height:44px; border-radius:50%; background:#efe7d8; display:flex; align-items:center; justify-content:center; font-weight:600; font-size:15px; color:#8c4a3a; }
+  .diagnosis { background:#fff; border:1px solid #efe7d8; border-radius:12px; padding:16px 20px; margin-bottom:20px; }
+  .diagnosis p { font-size:13px; color:#7a6448; margin-bottom:6px; }
   .q-grid { display:grid; gap:2px; font-size:11px; min-width:420px; }
-  .q-grid .hdr { font-size:10px; color:#999; padding:4px; }
+  .q-grid .hdr { font-size:10px; color:#a89880; padding:4px; }
   .q-grid .cell { padding:4px; text-align:center; border-radius:3px; font-weight:500; }
 
   /* Resumen cards */
   .resumen-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(380px,1fr)); gap:16px; margin-bottom:24px; }
-  .resumen-card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:20px; }
-  .resumen-card h3 { font-size:15px; font-weight:600; margin-bottom:12px; color:#2c5282; }
+  .resumen-card { background:#fff; border:1px solid #e6dcc4; border-radius:12px; padding:20px; }
+  .resumen-card h3 { font-size:15px; font-weight:600; margin-bottom:12px; color:#8c4a3a; }
   .resumen-card .mini-ranking { margin-top:12px; }
   .resumen-card .mini-rank { display:flex; align-items:center; gap:8px; padding:4px 0; font-size:12px; }
-  .resumen-card .mini-rank .pos { color:#999; width:18px; }
+  .resumen-card .mini-rank .pos { color:#a89880; width:18px; }
   .resumen-card .mini-rank .name { flex:1; }
   .resumen-card .mini-rank .score { font-weight:600; }
   .resumen-card .mini-stats { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:8px; }
   .resumen-card .mini-stat { font-size:12px; }
-  .resumen-card .mini-stat .ms-label { color:#888; font-size:10px; text-transform:uppercase; }
+  .resumen-card .mini-stat .ms-label { color:#8c7556; font-size:10px; text-transform:uppercase; }
   .resumen-card .mini-stat .ms-value { font-size:18px; font-weight:600; margin-top:2px; }
 
-  .green { color:#1D9E75; } .amber { color:#EF9F27; } .red { color:#E24B4A; } .blue { color:#378ADD; }
-  .info-box { background:#ebf4ff; border-radius:10px; padding:16px; margin-bottom:16px; font-size:13px; color:#2c5282; }
+  .green { color:#4a6b3f; } .amber { color:#c2891a; } .red { color:#9c3525; } .blue { color:#8c4a3a; }
+  .info-box { background:#efe7d8; border-radius:10px; padding:16px; margin-bottom:16px; font-size:13px; color:#8c4a3a; }
   .nav-btns { display:flex; gap:8px; margin-bottom:24px; flex-wrap:wrap; }
   .hidden { display:none; }
 
@@ -170,21 +172,23 @@
     <div class="tabs no-print" id="mainTabs"></div>
 
     <!-- Resumen view -->
-    <div id="viewResumen"></div>
+    <div id="viewResumen" class="card-app"></div>
 
     <!-- Per-area view -->
-    <div id="viewArea" class="hidden"></div>
+    <div id="viewArea" class="card-app hidden"></div>
 
     <!-- Individual view -->
-    <div id="viewIndividual" class="hidden"></div>
+    <div id="viewIndividual" class="card-app hidden"></div>
 
     <div class="nav-btns no-print" id="navBtns"></div>
   </div>
 </div>
 
 <script>
-const COLORS = ['#378ADD','#1D9E75','#EF9F27','#534AB7','#E24B4A','#D4537E'];
-const AREA_COLORS = { 'Área 1':'#378ADD', 'Área 2':'#1D9E75', 'Área 3':'#EF9F27', 'Área 4':'#534AB7' };
+const COLORS = ['#8c4a3a','#c2410c','#4a6b3f','#7a6448','#9c3525','#b9a98a'];
+function levelMeta(pct){ if(pct>=70) return {color:'#4a6b3f',fill:'#4a6b3f',icon:'⬆︎',label:'Domina',track:'#e3ead9',tag:'#e3ead9'}; if(pct>=50) return {color:'#c2891a',fill:'#e6a829',icon:'<span style="display:inline-block;width:13px;height:3px;background:#e6a829;border-radius:1.5px;vertical-align:middle"></span>',label:'Proceso',track:'#efe7d8',tag:'#f7e9c4'}; return {color:'#9c3525',fill:'#9c3525',icon:'⬇︎',label:'Atención',track:'#f1e3dd',tag:'#9c3525'}; }
+if (window.Chart) { Chart.defaults.font.family = "'IBM Plex Sans', sans-serif"; Chart.defaults.color = '#8c7556'; }
+const AREA_COLORS = { 'Área 1':'#8c4a3a', 'Área 2':'#4a6b3f', 'Área 3':'#c2891a', 'Área 4':'#534AB7' };
 
 // ─── Data Model ────────────────────────────────────────────────────────────
 let areas = []; // [{name, title, examData, answerKey, topicMap, topicNameMap, questionCols, results, date}]
@@ -436,7 +440,7 @@ function getStudentTopicStats(student, questionCols, topicMap) {
   return Object.entries(topics).map(([name,d]) => ({ name, pct: d.total > 0 ? Math.round(d.correct/d.total*100) : 0 }));
 }
 
-function pctColor(pct) { return pct >= 70 ? '#1D9E75' : pct >= 50 ? '#EF9F27' : '#E24B4A'; }
+function pctColor(pct) { return pct >= 70 ? '#4a6b3f' : pct >= 50 ? '#c2891a' : '#9c3525'; }
 function pctClass(pct) { return pct >= 70 ? 'green' : pct >= 50 ? 'amber' : 'red'; }
 
 // ─── Resumen View ──────────────────────────────────────────────────────────
@@ -450,9 +454,9 @@ function renderResumen() {
   const displayDate = dates.length > 0 ? formatDate(dates[dates.length-1]) : '';
 
   let html = `<div style="display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;" class="no-print">
-    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#ebf4ff;color:#2c5282;font-weight:500;">${displayDate}</span>
-    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#f0f0f0;color:#666;">${totalStudents} alumnos</span>
-    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#f0f0f0;color:#666;">${areas.length} áreas</span>
+    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#efe7d8;color:#8c4a3a;font-weight:500;">${displayDate}</span>
+    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#f7f1e6;color:#7a6448;">${totalStudents} alumnos</span>
+    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#f7f1e6;color:#7a6448;">${areas.length} áreas</span>
   </div>`;
 
   // Area summary cards
@@ -470,7 +474,7 @@ function renderResumen() {
 
     html += `<div class="resumen-card">
       <h3 style="color:${color};cursor:pointer;" onclick="switchTo('area',${ai})">${area.name}</h3>
-      <div style="font-size:12px;color:#888;margin-bottom:12px;">${area.title}</div>
+      <div style="font-size:12px;color:#8c7556;margin-bottom:12px;">${area.title}</div>
       <div class="mini-stats">
         <div class="mini-stat"><div class="ms-label">Promedio</div><div class="ms-value ${pctClass(avgPct)}">${avg}/${area.questionCols.length}</div></div>
         <div class="mini-stat"><div class="ms-label">% Acierto</div><div class="ms-value ${pctClass(avgPct)}">${avgPct}%</div></div>
@@ -576,7 +580,7 @@ function renderResumen() {
       options: {
         responsive: true, maintainAspectRatio: false,
         plugins: { legend: { display: false } },
-        scales: { r: { suggestedMin:0, suggestedMax:100, ticks:{font:{size:10},backdropColor:'transparent'}, pointLabels:{font:{size:11}} } }
+        scales: { r: { suggestedMin:0, suggestedMax:100, grid:{color:'#e6dcc4'}, angleLines:{color:'#e6dcc4'}, ticks:{font:{size:9},backdropColor:'transparent',color:'#b7a98c'}, pointLabels:{font:{size:10.5},color:'#4a3f33'} } }
       }
     });
   }
@@ -609,11 +613,11 @@ function renderAreaView(areaIdx) {
   let html = `
   <div style="display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;" class="no-print">
     <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:${color}18;color:${color};font-weight:600;">${area.name}</span>
-    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#ebf4ff;color:#2c5282;font-weight:500;">${formatDate(area.date)}</span>
-    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#f0f0f0;color:#666;">${results.length} alumno${results.length!==1?'s':''}</span>
-    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#f0f0f0;color:#666;">${qCols.length} preguntas</span>
+    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#efe7d8;color:#8c4a3a;font-weight:500;">${formatDate(area.date)}</span>
+    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#f7f1e6;color:#7a6448;">${results.length} alumno${results.length!==1?'s':''}</span>
+    <span style="font-size:12px;padding:5px 12px;border-radius:6px;background:#f7f1e6;color:#7a6448;">${qCols.length} preguntas</span>
   </div>
-  <div style="font-size:13px;color:#888;margin-bottom:16px;">${area.title}</div>
+  <div style="font-size:13px;color:#8c7556;margin-bottom:16px;">${area.title}</div>
 
   <div class="metrics">
     <div class="metric"><div class="label">Promedio aciertos</div><div class="value">${avg}</div><div class="detail">de ${qCols.length} · Mediana: ${median}</div></div>
@@ -649,7 +653,7 @@ function renderAreaView(areaIdx) {
   const topicColors = sortedTopics.map(t => pctColor(t.pct));
   const topicChartHeight = Math.max(220, sortedTopics.length * 34 + 40);
   document.getElementById('areaTopicChartWrap').style.height = topicChartHeight + 'px';
-  document.getElementById('areaTopicLegend').innerHTML = `<span><span class="dot" style="background:#1D9E75"></span>Domina (≥70%)</span><span><span class="dot" style="background:#EF9F27"></span>En proceso (50–69%)</span><span><span class="dot" style="background:#E24B4A"></span>Requiere atención (&lt;50%)</span>`;
+  document.getElementById('areaTopicLegend').innerHTML = `<span><span class="dot" style="background:#4a6b3f"></span>Domina (≥70%)</span><span><span class="dot" style="background:#c2891a"></span>En proceso (50–69%)</span><span><span class="dot" style="background:#9c3525"></span>Requiere atención (&lt;50%)</span>`;
 
   if (charts.areaTopic) charts.areaTopic.destroy();
   charts.areaTopic = new Chart(document.getElementById('areaTopicChart'), {
@@ -659,7 +663,7 @@ function renderAreaView(areaIdx) {
       indexAxis: 'y', responsive: true, maintainAspectRatio: false,
       plugins: { legend: { display: false } },
       scales: {
-        x: { max:100, ticks:{ stepSize:10, callback:v=>v+'%', font:{size:10} }, grid:{ color:ctx=>ctx.tick.value===70?'rgba(0,0,0,0.2)':'rgba(0,0,0,0.05)', lineWidth:ctx=>ctx.tick.value===70?2:1 } },
+        x: { max:100, ticks:{ stepSize:10, callback:v=>v+'%', font:{size:10} }, grid:{ color:ctx=>ctx.tick.value===70?'#b9a98a':'#efe7d8', lineWidth:ctx=>ctx.tick.value===70?2:1 } },
         y: { ticks:{font:{size:11}}, grid:{display:false} }
       }
     }
@@ -668,12 +672,12 @@ function renderAreaView(areaIdx) {
   // Heatmap
   const hm = document.getElementById('areaHeatmap');
   let hmHtml = `<div style="display:grid;grid-template-columns:100px repeat(${qCols.length},minmax(0,1fr));gap:2px;font-size:10px;min-width:${Math.max(500,qCols.length*24+100)}px;">`;
-  hmHtml += '<div></div>' + qCols.map(q => `<div style="text-align:center;color:#999;">${q}</div>`).join('');
+  hmHtml += '<div></div>' + qCols.map(q => `<div style="text-align:center;color:#a89880;">${q}</div>`).join('');
   sorted.forEach(r => {
-    hmHtml += `<div style="color:#666;font-size:11px;display:flex;align-items:center;overflow:hidden;white-space:nowrap;">${r.name}</div>`;
+    hmHtml += `<div style="color:#7a6448;font-size:11px;display:flex;align-items:center;overflow:hidden;white-space:nowrap;">${r.name}</div>`;
     qCols.forEach(q => {
       const ok = r.answers[q]?.isCorrect;
-      hmHtml += `<div style="background:${ok?'rgba(29,158,117,0.18)':'rgba(226,75,74,0.13)'};border-radius:3px;height:20px;display:flex;align-items:center;justify-content:center;font-size:9px;color:#888;">${ok?'✓':'✗'}</div>`;
+      hmHtml += `<div style="background:${ok?'rgba(74,107,63,.20)':'rgba(156,53,37,.15)'};border-radius:3px;height:20px;display:flex;align-items:center;justify-content:center;font-size:9px;color:#8c7556;">${ok?'✓':'✗'}</div>`;
     });
   });
   hmHtml += '</div>';
@@ -682,13 +686,13 @@ function renderAreaView(areaIdx) {
   // Critical topics
   const critical = topicStats.filter(t => t.pct < 50).sort((a,b) => a.pct - b.pct);
   document.getElementById('areaCritical').innerHTML = critical.length > 0
-    ? critical.map(t => `<div class="bar-row"><span class="bar-label">${t.name}</span><div class="bar-track"><div class="bar-fill" style="width:${t.pct}%;background:#E24B4A;"></div></div><span class="bar-pct red">${t.pct}%</span></div>`).join('')
-    : '<p style="font-size:13px;color:#1D9E75;">Ningún tema por debajo del 50% de aciertos.</p>';
+    ? critical.map(t => `<div class="bar-row"><span class="bar-label">${t.name}</span><div class="bar-track"><div class="bar-fill" style="width:${t.pct}%;background:#9c3525;"></div></div><span class="bar-pct red">${t.pct}%</span></div>`).join('')
+    : '<p style="font-size:13px;color:#4a6b3f;">Ningún tema por debajo del 50% de aciertos.</p>';
 
   // Ranking
   document.getElementById('areaRanking').innerHTML = sorted.map((r,i) => {
     const origIdx = results.indexOf(r);
-    return `<div class="rank-row" onclick="selectStudent(${areaIdx},${origIdx})" style="${i<3?'background:#f5f5f0;':''}">
+    return `<div class="rank-row" onclick="selectStudent(${areaIdx},${origIdx})" style="${i<3?'background:#f7f1e6;':''}">
       <span class="pos">${i+1}</span>
       <span class="name" style="font-weight:${i<3?'600':'400'}">${r.name}</span>
       <span class="score" style="color:${pctColor(r.score)}">${r.correct}/${r.total} (${r.score}%)</span>
@@ -726,7 +730,7 @@ function renderIndividual() {
     <div class="avatar">${initials}</div>
     <div style="flex:1">
       <div style="font-size:17px;font-weight:600;">${s.name}</div>
-      <div style="font-size:12px;color:#888;">${area.name} — ${area.title}</div>
+      <div style="font-size:12px;color:#8c7556;">${area.name} — ${area.title}</div>
     </div>
     <select class="no-print" onchange="selectedStudent=Number(this.value);renderIndividual();">
       ${results.map((r,i) => `<option value="${i}" ${i===selectedStudent?'selected':''}>${r.name}</option>`).join('')}
@@ -745,7 +749,7 @@ function renderIndividual() {
   </div>
 
   <div class="section-title">Perfil por tema</div>
-  <div class="legend"><span><span class="dot" style="background:${color}"></span>${s.name}</span><span><span class="dot" style="background:rgba(0,0,0,0.2)"></span>Promedio ${area.name}</span></div>
+  <div class="legend"><span><span class="dot" style="background:${color}"></span>${s.name}</span><span><span class="dot" style="background:#b9a98a"></span>Promedio ${area.name}</span></div>
   <div class="chart-wrap" style="height:380px;"><canvas id="studentRadarChart"></canvas></div>
 
   <div class="section-title">Rendimiento por tema</div>
@@ -777,19 +781,31 @@ function renderIndividual() {
     type: 'radar',
     data: { labels: sts.map(t => t.name), datasets: [
       { label: s.name, data: sts.map(t => t.pct), borderColor: color, backgroundColor: color+'18', pointRadius:3, borderWidth:2 },
-      { label: 'Promedio', data: sts.map(st => { const m = gts.find(t => t.name===st.name); return m?m.pct:0; }), borderColor:'rgba(0,0,0,0.2)', backgroundColor:'rgba(0,0,0,0.03)', pointRadius:2, borderWidth:1, borderDash:[4,4] }
+      { label: 'Promedio', data: sts.map(st => { const m = gts.find(t => t.name===st.name); return m?m.pct:0; }), borderColor:'#b9a98a', backgroundColor:'transparent', pointRadius:2, borderWidth:1, borderDash:[4,4] }
     ] },
-    options: { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{r:{suggestedMin:0,suggestedMax:100,ticks:{font:{size:10},backdropColor:'transparent'},pointLabels:{font:{size:11}}}} }
+    options: { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{r:{suggestedMin:0,suggestedMax:100,grid:{color:'#e6dcc4'},angleLines:{color:'#e6dcc4'},ticks:{font:{size:9},backdropColor:'transparent',color:'#b7a98c'},pointLabels:{font:{size:10.5},color:'#4a3f33'}}} }
   });
 
   // Bars
-  document.getElementById('studentBars').innerHTML = sts.map(t => {
-    const c = pctColor(t.pct);
-    return `<div class="bar-row"><span class="bar-label">${t.name}</span><div class="bar-track"><div class="bar-fill" style="width:${t.pct}%;background:${c}"></div></div><span class="bar-pct" style="color:${c}">${t.pct}%</span></div>`;
-  }).join('') + `<div style="display:flex;gap:14px;margin-top:8px;font-size:11px;color:#999;">
-    <span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:#1D9E75;display:inline-block;"></span>Domina (≥70%)</span>
-    <span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:#EF9F27;display:inline-block;"></span>En proceso (50-69%)</span>
-    <span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:#E24B4A;display:inline-block;"></span>Requiere atención (<50%)</span></div>`;
+  const barRow = (t) => {
+    const m = levelMeta(t.pct);
+    const tagStyle = m.label === 'Atención' ? `color:#fff;background:${m.tag};` : `color:${m.color};background:${m.tag};`;
+    return `<div style="display:grid;grid-template-columns:16px 150px 1fr auto;gap:9px;align-items:center;margin-bottom:8px;">
+      <span style="font-size:15px;color:${m.fill};text-align:center;">${m.icon}</span>
+      <span style="font-size:12px;color:#4a3f33;text-align:right;">${t.name}</span>
+      <div style="height:16px;background:${m.track};border-radius:8px;overflow:hidden;"><div style="width:${t.pct}%;height:100%;background:${m.fill};border-radius:8px;"></div></div>
+      <span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12px;color:${m.color};font-variant-numeric:tabular-nums;">${t.pct}%</span>
+        <span style="font-size:9px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;padding:2px 6px;border-radius:3px;${tagStyle}">${m.label}</span>
+      </span>
+    </div>`;
+  };
+  const groupHead = (txt, color, line) => `<div style="display:flex;align-items:center;gap:8px;margin:4px 0 11px;"><span style="font-size:9.5px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:${color};">${txt}</span><span style="flex:1;height:1px;background:${line};"></span></div>`;
+  const reforzarBars = sts.filter(t => t.pct < 70).sort((a,b) => a.pct - b.pct);
+  const dominadasBars = sts.filter(t => t.pct >= 70).sort((a,b) => b.pct - a.pct);
+  document.getElementById('studentBars').innerHTML =
+    (reforzarBars.length ? groupHead('A reforzar', '#9c3525', '#ecd9d2') + reforzarBars.map(barRow).join('') : '') +
+    (dominadasBars.length ? `<div style="margin-top:${reforzarBars.length?'18px':'0'};"></div>` + groupHead('Dominadas', '#4a6b3f', '#d8e2cd') + dominadasBars.map(barRow).join('') : '');
 
   // Question grid
   const grid = document.getElementById('questionGrid');
@@ -797,15 +813,15 @@ function renderIndividual() {
   let qh = '<div class="hdr">N°</div><div class="hdr">Tema</div><div class="hdr" style="text-align:center">A</div><div class="hdr" style="text-align:center">B</div><div class="hdr" style="text-align:center">C</div><div class="hdr" style="text-align:center">D</div><div class="hdr"></div>';
   qCols.forEach(q => {
     const a = s.answers[q]; const topic = (area.topicMap[q]||'—').substring(0,12);
-    qh += `<div style="padding:3px;color:#666;">${q}</div><div style="padding:3px;color:#999;font-size:10px;overflow:hidden;white-space:nowrap;">${topic}</div>`;
+    qh += `<div style="padding:3px;color:#7a6448;">${q}</div><div style="padding:3px;color:#a89880;font-size:10px;overflow:hidden;white-space:nowrap;">${topic}</div>`;
     ['A','B','C','D'].forEach(opt => {
-      let bg='transparent',border='1px solid #eee',clr='#ccc';
-      if (opt===a.correct&&opt===a.student) { bg='rgba(29,158,117,0.12)';border='1px solid rgba(29,158,117,0.3)';clr='#1D9E75'; }
-      else if (opt===a.student&&opt!==a.correct) { bg='rgba(226,75,74,0.1)';border='1px solid rgba(226,75,74,0.3)';clr='#E24B4A'; }
-      else if (opt===a.correct) { border='1px dashed #1D9E75';clr='#1D9E75'; }
+      let bg='transparent',border='1px solid #efe7d8',clr='#d9ccae';
+      if (opt===a.correct&&opt===a.student) { bg='rgba(74,107,63,.16)';border='1px solid rgba(74,107,63,.45)';clr='#4a6b3f'; }
+      else if (opt===a.student&&opt!==a.correct) { bg='rgba(156,53,37,.13)';border='1px solid rgba(156,53,37,.45)';clr='#9c3525'; }
+      else if (opt===a.correct) { border='1px dashed #4a6b3f';clr='#4a6b3f'; }
       qh += `<div class="cell" style="background:${bg};border:${border};color:${clr};">${opt}</div>`;
     });
-    qh += `<div class="cell" style="color:${a.isCorrect?'#1D9E75':'#E24B4A'};font-weight:600;">${a.isCorrect?'✓':'✗'}</div>`;
+    qh += `<div class="cell" style="color:${a.isCorrect?'#4a6b3f':'#9c3525'};font-weight:600;">${a.isCorrect?'✓':'✗'}</div>`;
   });
   grid.innerHTML = qh;
 
@@ -817,7 +833,7 @@ function renderIndividual() {
   if (strengths.length) diag += `<p><strong class="green">Fortalezas:</strong> ${strengths.join(', ')}</p>`;
   if (inProg.length) diag += `<p><strong class="amber">En proceso:</strong> ${inProg.join(', ')}</p>`;
   if (weak.length) diag += `<p><strong class="red">Requiere atención:</strong> ${weak.join(', ')}</p>`;
-  if (!diag) diag = '<p style="color:#999;">Sin datos suficientes.</p>';
+  if (!diag) diag = '<p style="color:#a89880;">Sin datos suficientes.</p>';
   document.getElementById('diagnosisArea').innerHTML = diag;
 
   // Temas a reforzar
@@ -840,21 +856,21 @@ function renderIndividual() {
     const topSorted = Object.entries(topics).sort((a,b) => b[1].wrong - a[1].wrong).slice(0, 3);
     if (!topSorted.length) return;
     const c = pctColor(subj.pct);
-    reforzarHTML += `<div style="background:#fff;border:1px solid #eee;border-radius:10px;padding:14px 16px;margin-bottom:10px;">
+    reforzarHTML += `<div style="background:#fff;border:1px solid #efe7d8;border-radius:10px;padding:14px 16px;margin-bottom:10px;">
       <div style="font-size:13px;font-weight:600;color:${c};margin-bottom:8px;">${subj.name} — ${subj.pct}% de acierto</div>
       ${topSorted.map(([tname, data]) => {
         const pct = Math.round((data.wrong / data.total) * 100);
         return `<div style="display:flex;align-items:center;gap:8px;margin-bottom:5px;">
           <div style="flex:1;font-size:12px;color:#444;">${tname}</div>
-          <div style="font-size:11px;color:#999;">${data.wrong}/${data.total} incorrectas</div>
-          <div style="width:60px;height:8px;background:#eee;border-radius:4px;overflow:hidden;">
-            <div style="width:${pct}%;height:100%;background:${pct>=60?'#E24B4A':'#EF9F27'};border-radius:4px;"></div>
+          <div style="font-size:11px;color:#a89880;">${data.wrong}/${data.total} incorrectas</div>
+          <div style="width:60px;height:8px;background:#efe7d8;border-radius:4px;overflow:hidden;">
+            <div style="width:${pct}%;height:100%;background:${pct>=60?'#9c3525':'#c2891a'};border-radius:4px;"></div>
           </div>
         </div>`;
       }).join('')}
     </div>`;
   });
-  document.getElementById('reforzarArea').innerHTML = reforzarHTML || '<p style="color:#999;font-size:13px;">Sin datos suficientes.</p>';
+  document.getElementById('reforzarArea').innerHTML = reforzarHTML || '<p style="color:#a89880;font-size:13px;">Sin datos suficientes.</p>';
 }
 
 // ─── Export Student HTML ───────────────────────────────────────────────────
@@ -876,47 +892,60 @@ function exportStudentHTML() {
   const inProg = sts.filter(t => t.pct>=50&&t.pct<70).map(t => t.name);
   const weak = sts.filter(t => t.pct<50).map(t => t.name);
   const initials = s.name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
-  const color = AREA_COLORS[area.name] || '#378ADD';
+  const color = AREA_COLORS[area.name] || '#8c4a3a';
 
   let qRows = '';
   area.questionCols.forEach(q => {
     const a = s.answers[q]; const topic = (area.topicMap[q]||'—').substring(0,15);
     let cells = '';
     ['A','B','C','D'].forEach(opt => {
-      let bg='transparent',border='1px solid #eee',clr='#ccc';
-      if (opt===a.correct&&opt===a.student) { bg='rgba(29,158,117,0.12)';border='1px solid rgba(29,158,117,0.3)';clr='#1D9E75'; }
-      else if (opt===a.student&&opt!==a.correct) { bg='rgba(226,75,74,0.1)';border='1px solid rgba(226,75,74,0.3)';clr='#E24B4A'; }
-      else if (opt===a.correct) { border='1px dashed #1D9E75';clr='#1D9E75'; }
+      let bg='transparent',border='1px solid #efe7d8',clr='#d9ccae';
+      if (opt===a.correct&&opt===a.student) { bg='rgba(74,107,63,.16)';border='1px solid rgba(74,107,63,.45)';clr='#4a6b3f'; }
+      else if (opt===a.student&&opt!==a.correct) { bg='rgba(156,53,37,.13)';border='1px solid rgba(156,53,37,.45)';clr='#9c3525'; }
+      else if (opt===a.correct) { border='1px dashed #4a6b3f';clr='#4a6b3f'; }
       cells += '<div style="padding:4px;text-align:center;background:'+bg+';border:'+border+';border-radius:3px;color:'+clr+';font-weight:500;">'+opt+'</div>';
     });
     const icon = a.isCorrect ? '✓' : '✗';
-    const iconColor = a.isCorrect ? '#1D9E75' : '#E24B4A';
-    qRows += '<div style="padding:3px;color:#666;font-size:11px;">'+q+'</div><div style="padding:3px;color:#999;font-size:10px;overflow:hidden;white-space:nowrap;">'+topic+'</div>'+cells+'<div style="padding:3px;text-align:center;color:'+iconColor+';font-weight:600;font-size:11px;">'+icon+'</div>';
+    const iconColor = a.isCorrect ? '#4a6b3f' : '#9c3525';
+    qRows += '<div style="padding:3px;color:#7a6448;font-size:11px;">'+q+'</div><div style="padding:3px;color:#a89880;font-size:10px;overflow:hidden;white-space:nowrap;">'+topic+'</div>'+cells+'<div style="padding:3px;text-align:center;color:'+iconColor+';font-weight:600;font-size:11px;">'+icon+'</div>';
   });
 
-  const barsHTML = sts.map(t => {
-    const c = pctColor(t.pct);
-    return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;"><span style="font-size:12px;color:#666;width:150px;text-align:right;flex-shrink:0;">'+t.name+'</span><div style="flex:1;height:18px;background:#eee;border-radius:9px;overflow:hidden;"><div style="width:'+t.pct+'%;height:100%;border-radius:9px;background:'+c+';"></div></div><span style="font-size:12px;font-weight:600;width:40px;color:'+c+';">'+t.pct+'%</span></div>';
-  }).join('');
+  const eBarRow = (t) => {
+    const m = levelMeta(t.pct);
+    const tagStyle = m.label === 'Atención' ? 'color:#fff;background:'+m.tag+';' : 'color:'+m.color+';background:'+m.tag+';';
+    return '<div style="display:grid;grid-template-columns:16px 150px 1fr auto;gap:9px;align-items:center;margin-bottom:8px;">'
+      + '<span style="font-size:15px;color:'+m.fill+';text-align:center;">'+m.icon+'</span>'
+      + '<span style="font-size:12px;color:#4a3f33;text-align:right;">'+t.name+'</span>'
+      + '<div style="height:16px;background:'+m.track+';border-radius:8px;overflow:hidden;"><div style="width:'+t.pct+'%;height:100%;background:'+m.fill+';border-radius:8px;"></div></div>'
+      + '<span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap;"><span style="font-family:\'IBM Plex Mono\',monospace;font-weight:600;font-size:12px;color:'+m.color+';">'+t.pct+'%</span>'
+      + '<span style="font-size:9px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;padding:2px 6px;border-radius:3px;'+tagStyle+'">'+m.label+'</span></span></div>';
+  };
+  const eHead = (txt, color, line) => '<div style="display:flex;align-items:center;gap:8px;margin:4px 0 11px;"><span style="font-size:9.5px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:'+color+';">'+txt+'</span><span style="flex:1;height:1px;background:'+line+';"></span></div>';
+  const eRef = sts.filter(t=>t.pct<70).sort((a,b)=>a.pct-b.pct);
+  const eDom = sts.filter(t=>t.pct>=70).sort((a,b)=>b.pct-a.pct);
+  const barsHTML =
+    (eRef.length ? eHead('A reforzar','#9c3525','#ecd9d2') + eRef.map(eBarRow).join('') : '')
+    + (eDom.length ? '<div style="margin-top:'+(eRef.length?'18px':'0')+';"></div>' + eHead('Dominadas','#4a6b3f','#d8e2cd') + eDom.map(eBarRow).join('') : '');
 
   let diag = '';
-  if (strengths.length) diag += '<p style="font-size:13px;color:#666;margin-bottom:6px;"><strong style="color:#1D9E75;">Fortalezas:</strong> '+strengths.join(', ')+'</p>';
-  if (inProg.length) diag += '<p style="font-size:13px;color:#666;margin-bottom:6px;"><strong style="color:#EF9F27;">En proceso:</strong> '+inProg.join(', ')+'</p>';
-  if (weak.length) diag += '<p style="font-size:13px;color:#666;margin-bottom:6px;"><strong style="color:#E24B4A;">Requiere atención:</strong> '+weak.join(', ')+'</p>';
-  if (!diag) diag = '<p style="color:#999;">Sin datos suficientes.</p>';
+  if (strengths.length) diag += '<p style="font-size:13px;color:#7a6448;margin-bottom:6px;"><strong style="color:#4a6b3f;">Fortalezas:</strong> '+strengths.join(', ')+'</p>';
+  if (inProg.length) diag += '<p style="font-size:13px;color:#7a6448;margin-bottom:6px;"><strong style="color:#c2891a;">En proceso:</strong> '+inProg.join(', ')+'</p>';
+  if (weak.length) diag += '<p style="font-size:13px;color:#7a6448;margin-bottom:6px;"><strong style="color:#9c3525;">Requiere atención:</strong> '+weak.join(', ')+'</p>';
+  if (!diag) diag = '<p style="color:#a89880;">Sin datos suficientes.</p>';
 
   const reportHTML = `<!DOCTYPE html>
 <html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Reporte - ${s.name} - ${area.name} - ${formatDate(area.date)}</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"><\/script>
-<style>*{margin:0;padding:0;box-sizing:border-box;}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fafaf8;color:#1a1a1a;padding:24px;max-width:800px;margin:0 auto;}
-.metric{background:#f5f5f0;border-radius:10px;padding:14px 16px;}.metric .label{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.3px;}.metric .value{font-size:24px;font-weight:600;margin-top:4px;}.metric .detail{font-size:11px;color:#999;margin-top:2px;}
-.green{color:#1D9E75;}.amber{color:#EF9F27;}.red{color:#E24B4A;}.blue{color:#378ADD;}
-h2{font-size:15px;font-weight:600;margin:24px 0 10px;}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>*{margin:0;padding:0;box-sizing:border-box;}body{font-family:'IBM Plex Sans',sans-serif;background:#fdfbf6;color:#1f1a16;padding:32px 28px;max-width:800px;margin:0 auto;}
+.metric{background:#f7f1e6;border-radius:10px;padding:14px 16px;}.metric .label{font-size:11px;color:#8c7556;text-transform:uppercase;letter-spacing:.3px;}.metric .value{font-family:'Fraunces',serif;font-size:23px;font-weight:500;margin-top:3px;}.metric .detail{font-size:11px;color:#a89880;margin-top:2px;}
+.green{color:#4a6b3f;}.amber{color:#c2891a;}.red{color:#9c3525;}.blue{color:#8c4a3a;}
+h2{font-family:'Fraunces',serif;font-size:15px;font-weight:500;margin:24px 0 12px;color:#1f1a16;}
 @media print{body{padding:16px;}}</style></head><body>
 <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
-<div style="width:44px;height:44px;border-radius:50%;background:#ebf4ff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;color:#2c5282;">${initials}</div>
-<div><div style="font-size:20px;font-weight:600;">${s.name}</div><div style="font-size:12px;color:#888;">${area.name} — ${area.title} — ${formatDate(area.date)}</div></div></div>
+<div style="width:44px;height:44px;border-radius:50%;background:#efe7d8;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;color:#8c4a3a;">${initials}</div>
+<div><div style="font-size:20px;font-weight:600;">${s.name}</div><div style="font-size:12px;color:#8c7556;">${area.name} — ${area.title} — ${formatDate(area.date)}</div></div></div>
 <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0;">
 <div class="metric"><div class="label">Aciertos</div><div class="value">${s.correct}/${s.total}</div><div class="detail">${s.score}%</div></div>
 <div class="metric"><div class="label">Mejor materia</div><div class="value green" style="font-size:16px;">${bestTopic ? bestTopic.name : '—'}</div><div class="detail">${bestTopic ? bestTopic.pct + '% de acierto' : ''}</div></div>
@@ -927,19 +956,19 @@ h2{font-size:15px;font-weight:600;margin:24px 0 10px;}
 <div class="metric"><div class="label">Materias dominadas</div><div class="value green">${sts.filter(t=>t.pct>=70).length}</div><div class="detail">de ${sts.length} materias</div></div>
 <div class="metric"><div class="label">Salidas pestaña</div><div class="value">${s.tabSwitches}</div></div></div>
 <h2>Perfil por tema</h2>
-<div style="display:flex;gap:14px;font-size:11px;color:#888;margin-bottom:8px;"><span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:3px;background:${color};"></span>${s.name}</span><span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:3px;background:rgba(0,0,0,0.2);"></span>Promedio ${area.name}</span></div>
+<div style="display:flex;gap:14px;font-size:11px;color:#8c7556;margin-bottom:8px;"><span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:3px;background:${color};"></span>${s.name}</span><span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:3px;background:#b9a98a;"></span>Promedio ${area.name}</span></div>
 <div style="position:relative;height:380px;margin-bottom:24px;"><canvas id="radar"></canvas></div>
 <h2>Rendimiento por tema</h2>
 ${barsHTML}
 <h2>Detalle pregunta por pregunta</h2>
 <div style="overflow-x:auto;margin-bottom:24px;"><div style="display:grid;grid-template-columns:44px 80px repeat(4,1fr) 40px;gap:2px;font-size:11px;min-width:420px;">
-<div style="font-size:10px;color:#999;padding:4px;">N°</div><div style="font-size:10px;color:#999;padding:4px;">Tema</div><div style="font-size:10px;color:#999;padding:4px;text-align:center;">A</div><div style="font-size:10px;color:#999;padding:4px;text-align:center;">B</div><div style="font-size:10px;color:#999;padding:4px;text-align:center;">C</div><div style="font-size:10px;color:#999;padding:4px;text-align:center;">D</div><div style="font-size:10px;color:#999;padding:4px;"></div>
+<div style="font-size:10px;color:#a89880;padding:4px;">N°</div><div style="font-size:10px;color:#a89880;padding:4px;">Tema</div><div style="font-size:10px;color:#a89880;padding:4px;text-align:center;">A</div><div style="font-size:10px;color:#a89880;padding:4px;text-align:center;">B</div><div style="font-size:10px;color:#a89880;padding:4px;text-align:center;">C</div><div style="font-size:10px;color:#a89880;padding:4px;text-align:center;">D</div><div style="font-size:10px;color:#a89880;padding:4px;"></div>
 ${qRows}</div></div>
 <h2>Diagnóstico</h2>
-<div style="background:#fff;border:1px solid #eee;border-radius:12px;padding:16px 20px;margin-bottom:20px;">${diag}</div>
-<p style="font-size:11px;color:#ccc;text-align:center;margin-top:24px;">Generado por Dashboard Académico GV — ${formatDate(area.date)}</p>
+<div style="background:#fff;border:1px solid #efe7d8;border-radius:12px;padding:16px 20px;margin-bottom:20px;">${diag}</div>
+<p style="font-size:11px;color:#d9ccae;text-align:center;margin-top:24px;">Generado por Dashboard Académico GV — ${formatDate(area.date)}</p>
 <script>
-new Chart(document.getElementById('radar'),{type:'radar',data:{labels:${JSON.stringify(sts.map(t=>t.name))},datasets:[{label:'${s.name}',data:${JSON.stringify(sts.map(t=>t.pct))},borderColor:'${color}',backgroundColor:'${color}18',pointRadius:3,borderWidth:2},{label:'Promedio',data:${JSON.stringify(sts.map(st=>{const m=gts.find(t=>t.name===st.name);return m?m.pct:0;}))},borderColor:'rgba(0,0,0,0.2)',backgroundColor:'rgba(0,0,0,0.03)',pointRadius:2,borderWidth:1,borderDash:[4,4]}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{r:{suggestedMin:0,suggestedMax:100,ticks:{font:{size:10},backdropColor:'transparent'},pointLabels:{font:{size:11}}}}}});
+new Chart(document.getElementById('radar'),{type:'radar',data:{labels:${JSON.stringify(sts.map(t=>t.name))},datasets:[{label:'${s.name}',data:${JSON.stringify(sts.map(t=>t.pct))},borderColor:'${color}',backgroundColor:'${color}18',pointRadius:3,borderWidth:2},{label:'Promedio',data:${JSON.stringify(sts.map(st=>{const m=gts.find(t=>t.name===st.name);return m?m.pct:0;}))},borderColor:'#b9a98a',backgroundColor:'transparent',pointRadius:2,borderWidth:1,borderDash:[4,4]}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{r:{suggestedMin:0,suggestedMax:100,grid:{color:'#e6dcc4'},angleLines:{color:'#e6dcc4'},ticks:{font:{size:9},backdropColor:'transparent',color:'#b7a98c'},pointLabels:{font:{size:10.5},color:'#4a3f33'}}}}});
 <\/script></body></html>`;
 
   const blob = new Blob([reportHTML], { type: 'text/html;charset=utf-8' });

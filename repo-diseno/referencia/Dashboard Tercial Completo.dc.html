@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { font-family: 'IBM Plex Sans', sans-serif; }
+</style>
+</helmet>
+
+<div style="min-height:100vh;box-sizing:border-box;padding:48px;background:#cdc3b0;background-image:radial-gradient(at 18% 22%, rgba(140,117,86,.10) 0, transparent 55%),radial-gradient(at 88% 82%, rgba(107,58,46,.07) 0, transparent 55%)">
+  <div style="width:920px;margin:0 auto">
+
+    <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px">
+      <span style="width:9px;height:9px;border-radius:999px;background:#4a6b3f;display:inline-block"></span>
+      <span style="font:500 12px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#4a3f33">Dashboard completo · apagado + señales · look Tercial</span>
+    </div>
+
+    <div style="background:#fdfbf6;border:1px solid #e6dcc4;border-top:3px solid #8c4a3a;border-radius:10px;box-shadow:0 1px 4px rgba(74,63,51,.10);padding:34px 38px">
+
+      <!-- header -->
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
+        <div style="width:42px;height:42px;border-radius:10px;background:#8c4a3a;display:flex;align-items:center;justify-content:center;font:600 14px 'IBM Plex Sans';color:#fff">GV</div>
+        <div style="flex:1">
+          <div style="font-family:'Fraunces',serif;font-weight:500;font-size:20px;color:#1f1a16">Dashboard académico</div>
+          <div style="font:400 12px 'IBM Plex Sans';color:#8c7556">ECOEMS 9 · Grupo 3°A</div>
+        </div>
+        <div style="display:flex;gap:6px">
+          <span style="font:500 12px 'IBM Plex Sans';padding:6px 14px;border-radius:8px;background:#8c4a3a;color:#fff">General</span>
+          <span style="font:500 12px 'IBM Plex Sans';padding:6px 14px;border-radius:8px;background:#fff;border:1px solid #e6dcc4;color:#8c7556">Individual</span>
+        </div>
+      </div>
+
+      <!-- ════════ VISTA GENERAL ════════ -->
+      <div style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:14px;color:#8c4a3a;margin-bottom:14px">Vista general</div>
+
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px">
+        <span style="font:500 11px 'IBM Plex Sans';padding:4px 11px;border-radius:6px;background:#f2e4dc;color:#8c4a3a">19 jun 2026</span>
+        <span style="font:400 11px 'IBM Plex Sans';padding:4px 11px;border-radius:6px;background:#efe7d8;color:#7a6448">12 alumnos</span>
+        <span style="font:400 11px 'IBM Plex Sans';padding:4px 11px;border-radius:6px;background:#efe7d8;color:#7a6448">3°A · 12</span>
+        <span style="font:400 11px 'IBM Plex Sans';padding:4px 11px;border-radius:6px;background:#efe7d8;color:#7a6448">128 preguntas</span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:26px">
+        <div style="background:#f7f1e6;border-radius:8px;padding:14px 16px"><div style="font:500 10px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#8c7556">Promedio</div><div style="font-family:'Fraunces',serif;font-weight:500;font-size:24px;color:#1f1a16;margin-top:3px">78</div><div style="font:400 10.5px 'IBM Plex Sans';color:#a89880;margin-top:1px">de 128 · Mediana 80</div></div>
+        <div style="background:#f7f1e6;border-radius:8px;padding:14px 16px"><div style="font:500 10px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#8c7556">Mejor puntaje</div><div style="display:flex;align-items:baseline;gap:5px;margin-top:3px"><span style="font-size:14px;color:#4a6b3f">⬆︎</span><span style="font-family:'Fraunces',serif;font-weight:500;font-size:24px;color:#4a6b3f">104</span></div><div style="font:400 10.5px 'IBM Plex Sans';color:#a89880;margin-top:1px">Diego Naranjo</div></div>
+        <div style="background:#f7f1e6;border-radius:8px;padding:14px 16px"><div style="font:500 10px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#8c7556">Más difícil</div><div style="display:flex;align-items:baseline;gap:5px;margin-top:3px"><span style="font-size:14px;color:#9c3525">⬇︎</span><span style="font-family:'Fraunces',serif;font-weight:500;font-size:24px;color:#9c3525">P83</span></div><div style="font:400 10.5px 'IBM Plex Sans';color:#a89880;margin-top:1px">25% de acierto</div></div>
+        <div style="background:#f7f1e6;border-radius:8px;padding:14px 16px"><div style="font:500 10px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#8c7556">Tema más débil</div><div style="display:flex;align-items:baseline;gap:5px;margin-top:5px"><span style="font-size:13px;color:#9c3525">⬇︎</span><span style="font-family:'Fraunces',serif;font-weight:500;font-size:17px;color:#9c3525">Historia</span></div><div style="font:400 10.5px 'IBM Plex Sans';color:#a89880;margin-top:1px">43% de acierto</div></div>
+      </div>
+
+      <!-- distribución -->
+      <div style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#1f1a16;margin-bottom:14px">Distribución de puntajes</div>
+      <div style="display:flex;align-items:flex-end;gap:12px;height:90px;margin-bottom:6px">
+        <div style="flex:1;display:flex;align-items:flex-end;justify-content:center;height:100%"><div style="width:100%;height:2px;background:#9c3525;border-radius:3px 3px 0 0"></div></div>
+        <div style="flex:1;display:flex;align-items:flex-end;justify-content:center;height:100%"><div style="width:100%;height:15px;background:#e6a829;border-radius:3px 3px 0 0"></div></div>
+        <div style="flex:1;display:flex;align-items:flex-end;justify-content:center;height:100%"><div style="width:100%;height:60px;background:#e6a829;border-radius:3px 3px 0 0"></div></div>
+        <div style="flex:1;display:flex;align-items:flex-end;justify-content:center;height:100%"><div style="width:100%;height:75px;background:#e6a829;border-radius:3px 3px 0 0"></div></div>
+        <div style="flex:1;display:flex;align-items:flex-end;justify-content:center;height:100%"><div style="width:100%;height:30px;background:#4a6b3f;border-radius:3px 3px 0 0"></div></div>
+        <div style="flex:1;display:flex;align-items:flex-end;justify-content:center;height:100%"><div style="width:100%;height:2px;background:#4a6b3f;border-radius:3px 3px 0 0"></div></div>
+      </div>
+      <div style="display:flex;gap:12px;margin-bottom:28px"><span style="flex:1;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:9px;color:#a89880">32–47</span><span style="flex:1;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:9px;color:#a89880">48–63</span><span style="flex:1;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:9px;color:#a89880">64–79</span><span style="flex:1;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:9px;color:#a89880">80–95</span><span style="flex:1;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:9px;color:#a89880">96–111</span><span style="flex:1;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:9px;color:#a89880">112–128</span></div>
+
+      <!-- rendimiento por tema -->
+      <div style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#1f1a16;margin-bottom:14px">Rendimiento por tema</div>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px"><span style="font:500 9.5px 'IBM Plex Sans';letter-spacing:.09em;text-transform:uppercase;color:#9c3525">A reforzar</span><span style="flex:1;height:1px;background:#ecd9d2"></span></div>
+      <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:18px">
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="font-size:15px;color:#9c3525;text-align:center">⬇︎</span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Historia</span><div style="height:15px;background:#f1e3dd;border-radius:8px;overflow:hidden"><div style="width:43%;height:100%;background:#9c3525;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#9c3525;font-variant-numeric:tabular-nums">43%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#fff;background:#9c3525;padding:2px 6px;border-radius:3px">Atención</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="font-size:15px;color:#9c3525;text-align:center">⬇︎</span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Razon. matemático</span><div style="height:15px;background:#f1e3dd;border-radius:8px;overflow:hidden"><div style="width:49%;height:100%;background:#9c3525;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#9c3525;font-variant-numeric:tabular-nums">49%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#fff;background:#9c3525;padding:2px 6px;border-radius:3px">Atención</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="display:flex;justify-content:center"><span style="display:inline-block;width:13px;height:3px;background:#e6a829;border-radius:1.5px"></span></span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Biología</span><div style="height:15px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:55%;height:100%;background:#e6a829;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#c2891a;font-variant-numeric:tabular-nums">55%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#c2891a;background:#f7e9c4;padding:2px 6px;border-radius:3px">Proceso</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="display:flex;justify-content:center"><span style="display:inline-block;width:13px;height:3px;background:#e6a829;border-radius:1.5px"></span></span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Español</span><div style="height:15px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:58%;height:100%;background:#e6a829;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#c2891a;font-variant-numeric:tabular-nums">58%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#c2891a;background:#f7e9c4;padding:2px 6px;border-radius:3px">Proceso</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="display:flex;justify-content:center"><span style="display:inline-block;width:13px;height:3px;background:#e6a829;border-radius:1.5px"></span></span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Física</span><div style="height:15px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:61%;height:100%;background:#e6a829;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#c2891a;font-variant-numeric:tabular-nums">61%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#c2891a;background:#f7e9c4;padding:2px 6px;border-radius:3px">Proceso</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="display:flex;justify-content:center"><span style="display:inline-block;width:13px;height:3px;background:#e6a829;border-radius:1.5px"></span></span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Química</span><div style="height:15px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:64%;height:100%;background:#e6a829;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#c2891a;font-variant-numeric:tabular-nums">64%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#c2891a;background:#f7e9c4;padding:2px 6px;border-radius:3px">Proceso</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="display:flex;justify-content:center"><span style="display:inline-block;width:13px;height:3px;background:#e6a829;border-radius:1.5px"></span></span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Formación cívica</span><div style="height:15px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:66%;height:100%;background:#e6a829;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#c2891a;font-variant-numeric:tabular-nums">66%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#c2891a;background:#f7e9c4;padding:2px 6px;border-radius:3px">Proceso</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="display:flex;justify-content:center"><span style="display:inline-block;width:13px;height:3px;background:#e6a829;border-radius:1.5px"></span></span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Geografía</span><div style="height:15px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:69%;height:100%;background:#e6a829;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#c2891a;font-variant-numeric:tabular-nums">69%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#c2891a;background:#f7e9c4;padding:2px 6px;border-radius:3px">Proceso</span></span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px"><span style="font:500 9.5px 'IBM Plex Sans';letter-spacing:.09em;text-transform:uppercase;color:#4a6b3f">Dominadas</span><span style="flex:1;height:1px;background:#d8e2cd"></span></div>
+      <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:28px">
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="font-size:15px;color:#4a6b3f;text-align:center">⬆︎</span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Matemáticas</span><div style="height:15px;background:#e3ead9;border-radius:8px;overflow:hidden"><div style="width:71%;height:100%;background:#4a6b3f;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#4a6b3f;font-variant-numeric:tabular-nums">71%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#4a6b3f;background:#e3ead9;padding:2px 6px;border-radius:3px">Domina</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="font-size:15px;color:#4a6b3f;text-align:center">⬆︎</span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Razon. verbal</span><div style="height:15px;background:#e3ead9;border-radius:8px;overflow:hidden"><div style="width:74%;height:100%;background:#4a6b3f;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#4a6b3f;font-variant-numeric:tabular-nums">74%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#4a6b3f;background:#e3ead9;padding:2px 6px;border-radius:3px">Domina</span></span></div>
+      </div>
+
+      <!-- mapa de calor -->
+      <div style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#1f1a16;margin-bottom:6px">Mapa de calor · aciertos por pregunta</div>
+      <div style="display:flex;gap:14px;margin-bottom:12px"><span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#8c7556"><span style="width:11px;height:11px;border-radius:3px;background:rgba(74,107,63,.22);display:inline-flex;align-items:center;justify-content:center;font-size:8px;color:#4a6b3f">✓</span>Acierto</span><span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#8c7556"><span style="width:11px;height:11px;border-radius:3px;background:rgba(156,53,37,.16);display:inline-flex;align-items:center;justify-content:center;font-size:8px;color:#9c3525">✗</span>Error</span></div>
+      <div data-heat="1" style="margin-bottom:28px"></div>
+
+      <!-- comparación entre grupos (radar) -->
+      <div style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#1f1a16;margin-bottom:6px">Comparación entre grupos</div>
+      <div style="display:flex;gap:16px;margin-bottom:8px"><span style="display:inline-flex;align-items:center;gap:6px;font:400 11px 'IBM Plex Sans';color:#7a6448"><span style="width:10px;height:10px;border-radius:3px;background:#8c4a3a"></span>3°A</span><span style="display:inline-flex;align-items:center;gap:6px;font:400 11px 'IBM Plex Sans';color:#7a6448"><span style="width:10px;height:10px;border-radius:3px;background:#c2410c"></span>3°B</span></div>
+      <div style="position:relative;height:340px;margin-bottom:28px"><canvas id="rGroups"></canvas></div>
+
+      <!-- ranking -->
+      <div style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#1f1a16;margin-bottom:12px">Ranking de alumnos</div>
+      <div style="display:flex;flex-direction:column;gap:1px">
+        <div style="display:grid;grid-template-columns:24px 1fr auto auto;gap:10px;align-items:center;padding:8px 12px;border-radius:6px;background:#f7f1e6"><span style="font:400 11px 'IBM Plex Mono',monospace;color:#a89880">1</span><span style="font:600 13px 'IBM Plex Sans';color:#1f1a16">Diego Naranjo</span><span style="font:400 10px 'IBM Plex Sans';color:#8c7556;background:#efe7d8;padding:2px 8px;border-radius:4px">3°A</span><span style="display:inline-flex;align-items:center;gap:6px;width:62px;justify-content:flex-end"><span style="font-size:11px;color:#4a6b3f">⬆︎</span><span style="font:600 13px 'IBM Plex Mono',monospace;color:#4a6b3f">104</span></span></div>
+        <div style="display:grid;grid-template-columns:24px 1fr auto auto;gap:10px;align-items:center;padding:8px 12px;border-radius:6px;background:#f7f1e6"><span style="font:400 11px 'IBM Plex Mono',monospace;color:#a89880">2</span><span style="font:600 13px 'IBM Plex Sans';color:#1f1a16">Sofía Herrera</span><span style="font:400 10px 'IBM Plex Sans';color:#8c7556;background:#efe7d8;padding:2px 8px;border-radius:4px">3°A</span><span style="display:inline-flex;align-items:center;gap:6px;width:62px;justify-content:flex-end"><span style="font-size:11px;color:#4a6b3f">⬆︎</span><span style="font:600 13px 'IBM Plex Mono',monospace;color:#4a6b3f">91</span></span></div>
+        <div style="display:grid;grid-template-columns:24px 1fr auto auto;gap:10px;align-items:center;padding:8px 12px;border-radius:6px;background:#f7f1e6"><span style="font:400 11px 'IBM Plex Mono',monospace;color:#a89880">3</span><span style="font:600 13px 'IBM Plex Sans';color:#1f1a16">Mariana Ríos</span><span style="font:400 10px 'IBM Plex Sans';color:#8c7556;background:#efe7d8;padding:2px 8px;border-radius:4px">3°B</span><span style="display:inline-flex;align-items:center;gap:6px;width:62px;justify-content:flex-end"><span style="font-size:11px;color:#4a6b3f">⬆︎</span><span style="font:600 13px 'IBM Plex Mono',monospace;color:#4a6b3f">89</span></span></div>
+        <div style="display:grid;grid-template-columns:24px 1fr auto auto;gap:10px;align-items:center;padding:8px 12px"><span style="font:400 11px 'IBM Plex Mono',monospace;color:#a89880">4</span><span style="font:400 13px 'IBM Plex Sans';color:#4a3f33">Emilio Castro</span><span style="font:400 10px 'IBM Plex Sans';color:#8c7556;background:#efe7d8;padding:2px 8px;border-radius:4px">3°A</span><span style="display:inline-flex;align-items:center;gap:6px;width:62px;justify-content:flex-end"><span style="font-size:11px;color:#4a6b3f">⬆︎</span><span style="font:600 13px 'IBM Plex Mono',monospace;color:#4a6b3f">85</span></span></div>
+        <div style="display:grid;grid-template-columns:24px 1fr auto auto;gap:10px;align-items:center;padding:8px 12px"><span style="font:400 11px 'IBM Plex Mono',monospace;color:#a89880">5</span><span style="font:400 13px 'IBM Plex Sans';color:#4a3f33">Renata Lozano</span><span style="font:400 10px 'IBM Plex Sans';color:#8c7556;background:#efe7d8;padding:2px 8px;border-radius:4px">3°B</span><span style="display:inline-flex;align-items:center;gap:6px;width:62px;justify-content:flex-end"><span style="display:inline-block;width:11px;height:3px;background:#e6a829;border-radius:1.5px"></span><span style="font:600 13px 'IBM Plex Mono',monospace;color:#c2891a">82</span></span></div>
+      </div>
+
+      <div style="height:1px;background:#e6dcc4;margin:30px 0"></div>
+
+      <!-- ════════ VISTA INDIVIDUAL ════════ -->
+      <div style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:14px;color:#8c4a3a;margin-bottom:14px">Vista individual</div>
+
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+        <div style="width:44px;height:44px;border-radius:50%;background:#f2e4dc;display:flex;align-items:center;justify-content:center;font:600 15px 'IBM Plex Sans';color:#8c4a3a">SH</div>
+        <div style="flex:1"><div style="font-family:'Fraunces',serif;font-weight:500;font-size:18px;color:#1f1a16">Sofía Herrera</div><div style="font:400 12px 'IBM Plex Sans';color:#8c7556">Grupo 3°A</div></div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:26px">
+        <div style="background:#f7f1e6;border-radius:8px;padding:14px 16px"><div style="font:500 10px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#8c7556">Aciertos</div><div style="font-family:'Fraunces',serif;font-weight:500;font-size:23px;color:#1f1a16;margin-top:3px">91/128</div></div>
+        <div style="background:#f7f1e6;border-radius:8px;padding:14px 16px"><div style="font:500 10px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#8c7556">Posición</div><div style="font-family:'Fraunces',serif;font-weight:500;font-size:23px;color:#8c4a3a;margin-top:3px">2/12</div><div style="font:400 10.5px 'IBM Plex Sans';color:#a89880;margin-top:1px">2/12 en 3°A</div></div>
+        <div style="background:#f7f1e6;border-radius:8px;padding:14px 16px"><div style="font:500 10px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#8c7556">vs promedio</div><div style="display:flex;align-items:baseline;gap:5px;margin-top:3px"><span style="font-size:14px;color:#4a6b3f">⬆︎</span><span style="font-family:'Fraunces',serif;font-weight:500;font-size:23px;color:#4a6b3f">+13</span></div><div style="font:400 10.5px 'IBM Plex Sans';color:#a89880;margin-top:1px">Prom: 78</div></div>
+        <div style="background:#f7f1e6;border-radius:8px;padding:14px 16px"><div style="font:500 10px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#8c7556">Dominadas</div><div style="font-family:'Fraunces',serif;font-weight:500;font-size:23px;color:#4a6b3f;margin-top:3px">6/10</div><div style="font:400 10.5px 'IBM Plex Sans';color:#a89880;margin-top:1px">materias</div></div>
+      </div>
+
+      <!-- perfil por tema (radar individual) -->
+      <div style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#1f1a16;margin-bottom:6px">Perfil por tema</div>
+      <div style="display:flex;gap:16px;margin-bottom:8px"><span style="display:inline-flex;align-items:center;gap:6px;font:400 11px 'IBM Plex Sans';color:#7a6448"><span style="width:10px;height:10px;border-radius:3px;background:#8c4a3a"></span>Sofía Herrera</span><span style="display:inline-flex;align-items:center;gap:6px;font:400 11px 'IBM Plex Sans';color:#7a6448"><span style="width:10px;height:3px;border-radius:2px;background:#b9a98a"></span>Promedio 3°A</span></div>
+      <div style="position:relative;height:340px;margin-bottom:28px"><canvas id="rStudent"></canvas></div>
+
+      <!-- rendimiento por materia -->
+      <div style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#1f1a16;margin-bottom:14px">Rendimiento por materia</div>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px"><span style="font:500 9.5px 'IBM Plex Sans';letter-spacing:.09em;text-transform:uppercase;color:#9c3525">A reforzar</span><span style="flex:1;height:1px;background:#ecd9d2"></span></div>
+      <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:18px">
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="display:flex;justify-content:center"><span style="display:inline-block;width:13px;height:3px;background:#e6a829;border-radius:1.5px"></span></span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Historia</span><div style="height:15px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:58%;height:100%;background:#e6a829;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#c2891a;font-variant-numeric:tabular-nums">58%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#c2891a;background:#f7e9c4;padding:2px 6px;border-radius:3px">Proceso</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="display:flex;justify-content:center"><span style="display:inline-block;width:13px;height:3px;background:#e6a829;border-radius:1.5px"></span></span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Razon. matemático</span><div style="height:15px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:63%;height:100%;background:#e6a829;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#c2891a;font-variant-numeric:tabular-nums">63%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#c2891a;background:#f7e9c4;padding:2px 6px;border-radius:3px">Proceso</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="display:flex;justify-content:center"><span style="display:inline-block;width:13px;height:3px;background:#e6a829;border-radius:1.5px"></span></span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Biología</span><div style="height:15px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:67%;height:100%;background:#e6a829;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#c2891a;font-variant-numeric:tabular-nums">67%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#c2891a;background:#f7e9c4;padding:2px 6px;border-radius:3px">Proceso</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="display:flex;justify-content:center"><span style="display:inline-block;width:13px;height:3px;background:#e6a829;border-radius:1.5px"></span></span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Español</span><div style="height:15px;background:#efe7d8;border-radius:8px;overflow:hidden"><div style="width:67%;height:100%;background:#e6a829;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#c2891a;font-variant-numeric:tabular-nums">67%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#c2891a;background:#f7e9c4;padding:2px 6px;border-radius:3px">Proceso</span></span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px"><span style="font:500 9.5px 'IBM Plex Sans';letter-spacing:.09em;text-transform:uppercase;color:#4a6b3f">Dominadas</span><span style="flex:1;height:1px;background:#d8e2cd"></span></div>
+      <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:28px">
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="font-size:15px;color:#4a6b3f;text-align:center">⬆︎</span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Física</span><div style="height:15px;background:#e3ead9;border-radius:8px;overflow:hidden"><div style="width:75%;height:100%;background:#4a6b3f;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#4a6b3f;font-variant-numeric:tabular-nums">75%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#4a6b3f;background:#e3ead9;padding:2px 6px;border-radius:3px">Domina</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="font-size:15px;color:#4a6b3f;text-align:center">⬆︎</span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Química</span><div style="height:15px;background:#e3ead9;border-radius:8px;overflow:hidden"><div style="width:75%;height:100%;background:#4a6b3f;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#4a6b3f;font-variant-numeric:tabular-nums">75%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#4a6b3f;background:#e3ead9;padding:2px 6px;border-radius:3px">Domina</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="font-size:15px;color:#4a6b3f;text-align:center">⬆︎</span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Matemáticas</span><div style="height:15px;background:#e3ead9;border-radius:8px;overflow:hidden"><div style="width:75%;height:100%;background:#4a6b3f;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#4a6b3f;font-variant-numeric:tabular-nums">75%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#4a6b3f;background:#e3ead9;padding:2px 6px;border-radius:3px">Domina</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="font-size:15px;color:#4a6b3f;text-align:center">⬆︎</span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Formación cívica</span><div style="height:15px;background:#e3ead9;border-radius:8px;overflow:hidden"><div style="width:75%;height:100%;background:#4a6b3f;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#4a6b3f;font-variant-numeric:tabular-nums">75%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#4a6b3f;background:#e3ead9;padding:2px 6px;border-radius:3px">Domina</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="font-size:15px;color:#4a6b3f;text-align:center">⬆︎</span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Geografía</span><div style="height:15px;background:#e3ead9;border-radius:8px;overflow:hidden"><div style="width:75%;height:100%;background:#4a6b3f;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#4a6b3f;font-variant-numeric:tabular-nums">75%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#4a6b3f;background:#e3ead9;padding:2px 6px;border-radius:3px">Domina</span></span></div>
+        <div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center"><span style="font-size:15px;color:#4a6b3f;text-align:center">⬆︎</span><span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">Razon. verbal</span><div style="height:15px;background:#e3ead9;border-radius:8px;overflow:hidden"><div style="width:81%;height:100%;background:#4a6b3f;border-radius:8px"></div></div><span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap"><span style="font:600 12px 'IBM Plex Mono',monospace;color:#4a6b3f;font-variant-numeric:tabular-nums">81%</span><span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;color:#4a6b3f;background:#e3ead9;padding:2px 6px;border-radius:3px">Domina</span></span></div>
+      </div>
+
+      <!-- detalle pregunta por pregunta -->
+      <div style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#1f1a16;margin-bottom:12px">Detalle pregunta por pregunta</div>
+      <div data-detalle="1" style="margin-bottom:28px"></div>
+
+      <!-- diagnóstico -->
+      <div style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#1f1a16;margin-bottom:12px">Diagnóstico</div>
+      <div style="background:#fff;border:1px solid #ece3d0;border-radius:10px;padding:16px 20px">
+        <p style="font:400 12.5px 'IBM Plex Sans';color:#4a3f33;margin:0 0 8px;line-height:1.5"><span style="font-size:11px;color:#4a6b3f">⬆︎</span> <strong style="font-weight:600;color:#4a6b3f">Fortalezas:</strong> Razon. verbal, Geografía, F. cívica, Matemáticas, Física, Química</p>
+        <p style="font:400 12.5px 'IBM Plex Sans';color:#4a3f33;margin:0;line-height:1.5"><span style="display:inline-block;width:11px;height:3px;background:#e6a829;border-radius:1.5px;vertical-align:middle"></span> <strong style="font-weight:600;color:#c2891a">En proceso:</strong> Español, Biología, Razon. matemático, Historia</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() { this._heat(); this._detalle(); this._charts(); }
+
+  _heat() {
+    const el = document.querySelector('[data-heat]');
+    if (!el) return;
+    const students = ['Diego Naranjo','Sofía Herrera','Mariana Ríos','Emilio Castro','Renata Lozano','Iván Mendoza','Paula Vega','Tomás Lara'];
+    // patrón de aciertos (1) / errores (0) por alumno, 12 preguntas
+    const rows = [
+      [1,1,1,1,0,1,1,1,1,1,1,0],
+      [1,1,1,1,1,0,1,1,0,1,1,1],
+      [1,1,0,1,1,1,1,0,1,1,0,1],
+      [1,0,1,1,1,0,1,1,1,0,1,1],
+      [0,1,1,0,1,1,0,1,1,1,1,0],
+      [1,1,0,1,0,1,1,0,1,0,1,1],
+      [0,1,1,1,0,0,1,1,0,1,0,1],
+      [1,0,0,1,1,1,0,0,1,1,0,0],
+    ];
+    const nq = 12;
+    let h = '<div style="display:grid;grid-template-columns:130px repeat(' + nq + ',1fr);gap:2px;font-size:10px">';
+    h += '<div></div>';
+    for (let i = 1; i <= nq; i++) h += '<div style="text-align:center;font-family:\'IBM Plex Mono\',monospace;color:#a89880;font-size:9px;padding-bottom:2px">P' + i + '</div>';
+    rows.forEach((r, i) => {
+      h += '<div style="font:400 11px \'IBM Plex Sans\';color:#4a3f33;display:flex;align-items:center;overflow:hidden;white-space:nowrap;padding-right:6px">' + students[i] + '</div>';
+      r.forEach(ok => {
+        const bg = ok ? 'rgba(74,107,63,.20)' : 'rgba(156,53,37,.15)';
+        const col = ok ? '#4a6b3f' : '#9c3525';
+        const g = ok ? '✓' : '✗';
+        h += '<div style="background:' + bg + ';border-radius:3px;height:22px;display:flex;align-items:center;justify-content:center;font-size:9px;color:' + col + '">' + g + '</div>';
+      });
+    });
+    h += '</div>';
+    el.innerHTML = h;
+  }
+
+  _detalle() {
+    const el = document.querySelector('[data-detalle]');
+    if (!el) return;
+    // P, tema, correcta, elegida
+    const qs = [
+      ['1','Razon. verbal','C','C'],
+      ['2','Razon. verbal','A','B'],
+      ['3','Geografía','D','D'],
+      ['4','Matemáticas','B','B'],
+      ['5','Historia','A','C'],
+      ['6','Física','C','C'],
+      ['7','Español','B','B'],
+      ['8','Biología','D','A'],
+    ];
+    let h = '<div style="display:grid;grid-template-columns:36px 130px repeat(4,1fr) 34px;gap:3px;font-size:11px">';
+    const hdr = ['N°','Tema','A','B','C','D',''];
+    hdr.forEach((t, i) => { h += '<div style="font:500 9.5px \'IBM Plex Sans\';letter-spacing:.04em;text-transform:uppercase;color:#a89880;padding:2px 4px;' + (i >= 2 && i <= 5 ? 'text-align:center' : '') + '">' + t + '</div>'; });
+    qs.forEach(([p, tema, cor, ele]) => {
+      h += '<div style="font-family:\'IBM Plex Mono\',monospace;color:#7a6448;padding:4px;display:flex;align-items:center">' + p + '</div>';
+      h += '<div style="color:#8c7556;font-size:10.5px;padding:4px;display:flex;align-items:center;overflow:hidden;white-space:nowrap">' + tema + '</div>';
+      ['A','B','C','D'].forEach(opt => {
+        let bg = 'transparent', bd = '1px solid #ece3d0', col = '#c9bda6', wt = '400';
+        if (opt === cor && opt === ele) { bg = 'rgba(74,107,63,.16)'; bd = '1px solid #4a6b3f'; col = '#4a6b3f'; wt = '600'; }
+        else if (opt === ele && opt !== cor) { bg = 'rgba(156,53,37,.13)'; bd = '1px solid #9c3525'; col = '#9c3525'; wt = '600'; }
+        else if (opt === cor) { bd = '1px dashed #4a6b3f'; col = '#4a6b3f'; }
+        h += '<div style="text-align:center;padding:4px;border-radius:4px;background:' + bg + ';border:' + bd + ';color:' + col + ';font-weight:' + wt + '">' + opt + '</div>';
+      });
+      const ok = cor === ele;
+      h += '<div style="text-align:center;padding:4px;display:flex;align-items:center;justify-content:center;font-weight:600;color:' + (ok ? '#4a6b3f' : '#9c3525') + '">' + (ok ? '✓' : '✗') + '</div>';
+    });
+    h += '</div>';
+    el.innerHTML = h;
+  }
+
+  _charts(attempt) {
+    attempt = attempt || 0;
+    const probe = document.querySelector('#rGroups');
+    const sized = probe && probe.parentElement && probe.parentElement.clientHeight > 0 && probe.parentElement.clientWidth > 0;
+    if (!window.Chart || !sized) { if (attempt < 80) setTimeout(() => this._charts(attempt + 1), 120); return; }
+    const Chart = window.Chart;
+    if (attempt < 25) setTimeout(() => this._charts(attempt + 1), 200);
+    Chart.defaults.font.family = "'IBM Plex Sans', sans-serif";
+    Chart.defaults.color = '#8c7556';
+    const topics = ['Razon. verbal','Geografía','F. cívica','Matemáticas','Física','Química','Español','Biología','Razon. mate.','Historia'];
+    const opts = () => ({
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { r: {
+        min: 0, max: 100,
+        ticks: { stepSize: 25, backdropColor: 'transparent', color: '#b7a98c', font: { size: 9 }, showLabelBackdrop: false },
+        grid: { color: '#e6dcc4' }, angleLines: { color: '#e6dcc4' },
+        pointLabels: { color: '#4a3f33', font: { size: 10.5 } }
+      } }
+    });
+    const mk = (id, datasets) => {
+      const c = document.querySelector('#' + id);
+      if (!c || !c.parentElement || c.parentElement.clientHeight <= 0 || c.parentElement.clientWidth <= 0) return;
+      if (Chart.getChart(c)) return;
+      new Chart(c, { type: 'radar', data: { labels: topics, datasets }, options: opts() });
+    };
+    mk('rGroups', [
+      { label: '3°A', data: [74,69,66,71,61,64,58,55,49,43], borderColor: '#8c4a3a', backgroundColor: 'rgba(140,74,58,.13)', pointBackgroundColor: '#8c4a3a', pointRadius: 2.5, borderWidth: 2 },
+      { label: '3°B', data: [70,72,63,66,67,60,62,58,54,48], borderColor: '#c2410c', backgroundColor: 'rgba(194,65,12,.12)', pointBackgroundColor: '#c2410c', pointRadius: 2.5, borderWidth: 2 }
+    ]);
+    mk('rStudent', [
+      { label: 'Sofía', data: [81,75,75,75,75,75,67,67,63,58], borderColor: '#8c4a3a', backgroundColor: 'rgba(140,74,58,.13)', pointBackgroundColor: '#8c4a3a', pointRadius: 2.5, borderWidth: 2 },
+      { label: 'Promedio 3°A', data: [74,69,66,71,61,64,58,55,49,43], borderColor: '#b9a98a', backgroundColor: 'transparent', pointRadius: 0, borderWidth: 1.5, borderDash: [4,4] }
+    ]);
+  }
+}
+</script>
+</body>
+</html>
