@@ -552,7 +552,7 @@
             "id": 37,
             "topic": "HIST.9",
             "topic_name": "Corrientes culturales del siglo XX",
-            "text": "Relaciona las corrientes culturales con sus aportaciones en México durante el siglo XX.\n\n| Corriente | Aportación |\n|---|---|\n| 1. Modernismo<br>2. Romanticismo | a) Los de abajo, Mariano Azuela<br>b) A Gloria, Salvador Díaz Mirón<br>c) Atardecer en el lago, José María Velasco<br>d) La nueva democracia, David Alfaro Siqueiros |",
+            "text": "Relaciona las corrientes culturales con sus aportaciones en México durante el siglo XX.\n\n| Corriente | Aportación |\n|---|:---|\n| 1. Modernismo<br>2. Romanticismo | a) Los de abajo, Mariano Azuela<br>b) A Gloria, Salvador Díaz Mirón<br>c) Atardecer en el lago, José María Velasco<br>d) La nueva democracia, David Alfaro Siqueiros |",
             "options": {
               "A": "1ab, 2cd",
               "B": "1ac, 2bd",
@@ -739,7 +739,7 @@
             "id": 50,
             "topic": "GEO.10",
             "topic_name": "Acuerdos comerciales",
-            "text": "Relaciona los acuerdos comerciales con su característica.\n\n| Acuerdo | Característica |\n|---|---|\n| 1. Tratado de Libre Comercio de América del Norte<br>2. Foro de Cooperación Económica Asia-Pacífico<br>3. Mercado Común del Cono Sur<br>4. Unión Europea | a) Se establece una moneda única<br>b) No es obligación de los países que conforman este bloque cumplir con los acuerdos<br>c) Existe libre circulación de bienes, servicios y factores productivos<br>d) Es uno de los pactos comerciales con mayor desigualdad entre sus miembros |",
+            "text": "Relaciona los acuerdos comerciales con su característica.\n\n| Acuerdo | Característica |\n|:---|:---|\n| 1. Tratado de Libre Comercio de América del Norte<br>2. Foro de Cooperación Económica Asia-Pacífico<br>3. Mercado Común del Cono Sur<br>4. Unión Europea | a) Se establece una moneda única<br>b) No es obligación de los países que conforman este bloque cumplir con los acuerdos<br>c) Existe libre circulación de bienes, servicios y factores productivos<br>d) Es uno de los pactos comerciales con mayor desigualdad entre sus miembros |",
             "options": {
               "A": "1b, 2c, 3d, 4a",
               "B": "1c, 2d, 3a, 4b",
@@ -1244,7 +1244,7 @@
             "id": 82,
             "topic": "MAT.2",
             "topic_name": "Moda",
-            "text": "Un alumno obtuvo las siguientes calificaciones: 6, 7, 7, 7, 8, 8, 9, 9, 9, 9, 10, 10. ¿Cuál es la moda?",
+            "text": "Un alumno obtuvo las siguientes calificaciones: 9, 7, 8, 10, 9, 6, 7, 9, 8, 7, 10, 9. ¿Cuál es la moda?",
             "options": {
               "A": "7.00",
               "B": "8.25",
@@ -1286,12 +1286,12 @@
             "id": 85,
             "topic": "MAT.5",
             "topic_name": "Ganancia o pérdida",
-            "text": "Una compañía registra las entradas y salidas de recursos durante 3 días. El lunes tiene ventas por 4 500 pesos y gastos por 1 200 pesos. El martes vende 700 pesos y gasta 1 000 pesos y el miércoles presenta ventas por 2 400 pesos y gastos por 1 300 pesos. ¿Cuál es la ganancia o pérdida de los días descritos?",
+            "text": "Una compañía registra las entradas y salidas de recursos durante 3 días. El lunes tiene ventas por \\$4 500 y gastos por \\$1 200. El martes vende \\$700 y gasta \\$1 000 y el miércoles presenta ventas por \\$2 400 y gastos por \\$1 300. ¿Cuál es la ganancia o pérdida de los días descritos?",
             "options": {
-              "A": "−4 100 pesos",
-              "B": "−1 700 pesos",
-              "C": "1 700 pesos",
-              "D": "4 100 pesos"
+              "A": "−\\$4 100",
+              "B": "−\\$1 700",
+              "C": "\\$1 700",
+              "D": "\\$4 100"
             },
             "answer": "D",
             "explanation": "Se suman las ventas ($4500+700+2400=7600$) y los gastos ($1200+1000+1300=3500$); la ganancia es $7600-3500=4100$ pesos, positiva porque las ventas superan a los gastos."
@@ -1300,12 +1300,12 @@
             "id": 86,
             "topic": "MAT.6",
             "topic_name": "Precio original con sobreprecio",
-            "text": "Para obtener ganancias, una empresa vende sus productos 30% más caros de su costo. Si un cliente compra un paquete en 39 pesos, ¿cuál es su precio original?",
+            "text": "Para obtener ganancias, una empresa vende sus productos 30% más caros de su costo. Si un cliente compra un paquete en \\$39, ¿cuál es su precio original?",
             "options": {
-              "A": "27 pesos",
-              "B": "30 pesos",
-              "C": "130 pesos",
-              "D": "333 pesos"
+              "A": "\\$27",
+              "B": "\\$30",
+              "C": "\\$130",
+              "D": "\\$333"
             },
             "answer": "B",
             "explanation": "Si el costo es $x$, entonces $1.30x=39$, de donde $x=39/1.30=30$ pesos. Restar el 30% a 39 (opción 27) es el error típico de aplicar el porcentaje sobre el precio final."
@@ -1314,12 +1314,12 @@
             "id": 87,
             "topic": "MAT.7",
             "topic_name": "Porcentaje de descuento",
-            "text": "María compró un pantalón que tenía descuento y pagó 285 pesos. Si el pantalón tenía un precio original de 380 pesos, ¿de cuánto fue el descuento?",
+            "text": "María compró un pantalón que tenía descuento y pagó \\$285. Si el pantalón tenía un precio original de \\$380, ¿de cuánto fue el descuento?",
             "options": {
               "A": "0.25%",
               "B": "0.75%",
               "C": "25.00%",
-              "D": "33.00%"
+              "D": "75.00%"
             },
             "answer": "C",
             "explanation": "El descuento en pesos es $380-285=95$; como porcentaje del precio original: $\\frac{95}{380}=0.25=25\\%$."
@@ -1508,7 +1508,7 @@
             "id": 100,
             "topic": "FIS.8",
             "topic_name": "Radiación electromagnética y su uso",
-            "text": "Relaciona cada tipo de radiación electromagnética con su uso.\n\n| Radiación | Uso |\n|---|---|\n| 1. Infrarroja<br>2. Rayos gamma<br>3. Luz ultravioleta | a) Desinfecta equipos y materiales quirúrgicos<br>b) Manda la señal para encender la televisión y lee discos compactos<br>c) Se ocupa en procedimientos para la detección de cáncer en los huesos |",
+            "text": "Relaciona cada tipo de radiación electromagnética con su uso.\n\n| Radiación | Uso |\n|---|:---|\n| 1. Infrarroja<br>2. Rayos gamma<br>3. Luz ultravioleta | a) Desinfecta equipos y materiales quirúrgicos<br>b) Manda la señal para encender la televisión y lee discos compactos<br>c) Se ocupa en procedimientos para la detección de cáncer en los huesos |",
             "options": {
               "A": "1a, 2b, 3c",
               "B": "1b, 2a, 3c",
