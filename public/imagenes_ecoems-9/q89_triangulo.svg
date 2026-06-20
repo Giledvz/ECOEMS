@@ -1,0 +1,14 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 200" width="260" height="200" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <g stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round">
+    <polygon points="60,160 220,160 60,40"/>
+  </g>
+  <!-- ángulo recto en el vértice de los catetos (abajo-izq) -->
+  <polyline points="60,146 74,146 74,160" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <!-- arco del ángulo A (abajo-der) -->
+  <path d="M 192,160 A 28,28 0 0 0 198.6,143.2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <text x="181" y="154" font-size="16" font-style="italic">A</text>
+  <!-- catetos e hipotenusa -->
+  <text x="49" y="104" font-size="15" text-anchor="end">3</text>
+  <text x="140" y="180" font-size="15" text-anchor="middle">4</text>
+  <text x="151" y="94" font-size="15">5</text>
+</svg>
