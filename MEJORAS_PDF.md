@@ -111,47 +111,50 @@ para continuar en la Mac Mini.
 
 ---
 
-## PENDIENTE — Nueva portada "puntaje protagonista" (a implementar en Mac Mini)
+## YA HECHO · 2ª tanda (paquete de diseño "Portada para página de resultados")
 
-La primera página actual (cabecera + bloque de puntaje) se siente vacía. Decisión:
-hacer del puntaje el **protagonista** con un **anillo de progreso** + mini-métricas
-(Aciertos, Tiempo, Materias dominadas). **NO implementado aún** — la portada actual
-sigue intacta en `server.js`.
+El paquete de diseño (zip del usuario, hecho con la parte de diseño de Claude;
+guías paste-ready en `repo-diseno/`) se aplicó así:
 
-Se diseñaron y renderizaron **3 variantes** (falta elegir cuál):
-- **A · Anillo centrado (coñac):** anillo al centro, % grande (Fraunces itálica),
-  `91/128` debajo, y las 3 métricas en fila. Simétrico, sobrio.
-- **B · Editorial:** anillo a la izquierda, métricas como lista a la derecha con
-  filetes. Tipo revista, asimétrico.
-- **C · Anillo por nivel:** como A pero el anillo toma el color del nivel de
-  dominio (71% → verde "Domina") + etiqueta de nivel. Conecta con las barras.
+### 13. Reactivos del comprobante — rediseño `q-*`
+Encabezado por materia (numeral romano + nombre Fraunces + stat), reactivo con
+riel de margen (número + glifo ✓/✗/–), kicker de tema, opciones con franja lateral
++ tinte + badge circular de letra. (Guía `IMPLEMENTAR-preguntas-pdf.md`, Pasos 1–3.)
+`applyPdfBlankWidths` ahora apunta a `.q-item` / `.q-choice__text`.
 
-**Métricas a mostrar:** Aciertos (`correct/total`), Tiempo (`timeStr`), Materias
-dominadas (`nº subjects con pct≥70` / total de subjects).
+### 14. Clave de respuestas — mismo lenguaje `q-*`
+Riel solo con número, encabezado "N reactivos", solo marca la correcta.
+(Pasos 4–5 de la misma guía.)
 
-**Cómo se hace el anillo** (SVG donut; `r=62`, `C=2πr≈389.56`):
-```js
-const C = 2*Math.PI*62;
-const arc = pct/100*C;            // longitud del arco visible
-// <svg viewBox="0 0 160 160">
-//   <circle cx=80 cy=80 r=62 fill=none stroke="#ede2c5" stroke-width=11/>           // track crema-300
-//   <circle cx=80 cy=80 r=62 fill=none stroke="<color>" stroke-width=11
-//           stroke-linecap="round" stroke-dasharray="${arc} ${C}"
-//           transform="rotate(-90 80 80)"/>                                          // arco
-// </svg>
-// Texto al centro: HTML superpuesto (position:absolute inset:0, flex center):
-//   % grande en Fraunces itálica + "91/128" pequeño debajo.
-```
-- Color anillo: variante A/B = coñac `#6b3a2e`; variante C = color de nivel
-  (reusar `--level-domina/proceso/atencion` según el % global).
-- El harness que generó las 3 está en `portada-conceptos.js` (raíz). Para verlas:
-  1. `node server.js` (para servir fuentes en :3000)
-  2. `node portada-conceptos.js` → genera `/tmp/portada_*.pdf`
+### 15. Portada / página de resultados — `p-*`
+Reemplaza el bloque de puntaje + desglose: número grande terracota + "Dominaste
+X de Y materias" + frase contextual + desglose por materia + tarjetas
+*A reforzar* / *Tu fortaleza* + leyenda. El hero se mantiene; las preguntas
+arrancan en la página 2. (Guía `IMPLEMENTAR-portada-pdf.md`.)
+> El concepto previo de **anillo** ("puntaje protagonista") se DESCARTÓ a favor de
+> esta portada editorial del paquete. `portada-conceptos.js` queda como referencia
+> del anillo, ya no se usa.
 
-**Ojo:** con solo el anillo, la mitad inferior de la página 1 queda con espacio en
-blanco (es una portada con un centro fuerte). Si se siente vacío, considerar bajar
-también un resumen corto (fortalezas/áreas) o subir el desglose; se descartó por
-ahora, solo se eligió el anillo.
+### 16. Colores de nivel → apagado del paquete
+`--level-domina/proceso/atencion` = `#4a6b3f / #8a5208 / #9c3525` (vivos de los
+dashboards como alternativa en comentario). Los usan el desglose, las tarjetas y la
+leyenda de la portada.
+
+### 17. Limpieza de CSS muerto
+Borradas ~220 líneas de `TERCIAL_PDF_CSS` sin uso: `.score-block*`, `.breakdown*`,
+`.exam-pdf__exercise*`, `.exam-pdf__choice*`, `.exam-pdf__subject`,
+`.exam-pdf__figure`, `.exam-pdf__body`. Se conservan `.exam-pdf` y
+`.exam-pdf__hero*` (el hero), `q-*`, `p-*`.
+
+---
+
+## PENDIENTE — proyecto de verano
+
+- **Telegram:** `repo-diseno/comprobante-telegram.js` (del paquete) — tarjeta corta
+  del comprobante enviada por Telegram como PNG (`buildPortadaCortaHTML` ya viene en
+  código). Falta: copiarlo a la raíz, wiring en `server.js` (3 pasos comentados al
+  inicio del archivo), env vars `TELEGRAM_BOT_TOKEN`/`CHAT_ID`, y mapear cada alumno
+  a su `chat_id`.
 
 ---
 
@@ -159,7 +162,7 @@ ahora, solo se eligió el anillo.
 - Diseño de márgenes: **V1 (crema a sangre)**.
 - Tamaño: **carta**.
 - Grosor de raya de relleno: **1.5px** (no cambiar).
-- Colores de nivel: **vivos** activos, apagados Tercial como alternativa documentada.
-- Portada: dirección **"puntaje protagonista"** (anillo), variante por elegir.
+- Colores de nivel: **apagados del paquete** (`#4a6b3f / #8a5208 / #9c3525`) activos; vivos como alternativa en comentario.
+- Portada: **editorial del paquete** (puntaje grande + desglose + tarjetas) — implementada. El concepto de anillo se descartó.
 - Respaldo git: existe `stash@{0}` ("cambios locales antes de pull dev (19jun)") —
   ya reaplicado; se puede soltar (`git stash drop stash@{0}`) una vez confirmado.

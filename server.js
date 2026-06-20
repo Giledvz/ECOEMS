@@ -593,11 +593,11 @@ const TERCIAL_PDF_CSS = `
     --cat-coral: #8c4a3a;
     /* Colores por nivel de dominio en el desglose por materia (umbrales
        ≥70% domina / 50–69% en proceso / <50% requiere atención). Activos: los
-       VIVOS acordados en los dashboards. Para alternar al tono apagado Tercial,
-       cambia estos 3 por los valores entre comentarios. */
-    --level-domina:   #1D9E75;  /* apagado Tercial: #5a8045 */
-    --level-proceso:  #EF9F27;  /* apagado Tercial: #b8862e */
-    --level-atencion: #E24B4A;  /* apagado Tercial: #b8362c */
+       APAGADOS del paquete de diseño. Para alternar a los vivos de los
+       dashboards, cambia estos 3 por los valores entre comentarios. */
+    --level-domina:   #4a6b3f;  /* vivo (dashboards): #1D9E75 */
+    --level-proceso:  #8a5208;  /* vivo (dashboards): #EF9F27 */
+    --level-atencion: #9c3525;  /* vivo (dashboards): #E24B4A */
     /* Tablas markdown (compartido con cliente vía /shared/markdown-render.js) */
     /* Colores de tabla sincronizados con la versión en pantalla (app) para que
        el PDF coincida: borde tan suave (#c9bda3, el crema-600 del app), NO el
@@ -676,225 +676,151 @@ const TERCIAL_PDF_CSS = `
     color: var(--ink-700);
   }
 
-  /* Score block — Tercial editorial */
-  .score-block {
-    margin: 0.4in 0 0.45in;
-    padding: 18pt 0;
-    border-top: 1px solid var(--ink-300);
-    border-bottom: 1px solid var(--ink-300);
-    text-align: center;
-    page-break-inside: avoid;
+  /* === Comprobante · sección de reactivos (rediseño q-*, paquete de diseño) === */
+
+  /* Encabezado por materia (una vez por sección) */
+  .q-section { page-break-inside: auto; }
+  .q-section + .q-section { margin-top: 22pt; }
+  .q-sec-head {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 12pt;
+    padding-bottom: 7pt; margin-bottom: 16pt;
+    border-bottom: 1.5pt solid var(--cat-coral);
+    page-break-after: avoid;
   }
-  .score-block__eyebrow {
-    font-size: 9pt;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-300);
-    margin: 0 0 6pt;
+  .q-sec-head__title { display: flex; align-items: baseline; gap: 8pt; }
+  .q-sec-head__num {
+    font-family: 'Fraunces', serif; font-style: italic; font-weight: 500;
+    font-size: 11pt; color: var(--cat-coral);
   }
-  .score-block__big {
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 52pt;
-    line-height: 1;
-    color: var(--accent-conac);
-    font-variant-numeric: lining-nums;
-    margin: 0;
+  .q-sec-head__name {
+    font-family: 'Fraunces', serif; font-weight: 500; font-size: 15pt;
+    line-height: 1.1; color: var(--ink-900); margin: 0;
   }
-  .score-block__sub {
-    margin-top: 6pt;
-    font-size: 10.5pt;
-    color: var(--ink-500);
-    letter-spacing: 0.02em;
-  }
-  .score-block__sub strong {
-    font-weight: 500;
-    color: var(--ink-700);
+  .q-sec-head__stat {
+    font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt;
+    color: var(--ink-300); font-variant-numeric: tabular-nums; white-space: nowrap;
   }
 
-  /* Breakdown por materia — barras finas coñac/crema */
-  .breakdown {
-    margin-bottom: 0.4in;
-    page-break-inside: avoid;
+  /* Reactivo: riel de margen (número + glifo) + cuerpo */
+  .q-item {
+    display: grid; grid-template-columns: 0.46in minmax(0, 1fr); column-gap: 14pt;
+    margin-bottom: 18pt; page-break-inside: avoid;
   }
-  .breakdown__title {
-    font-size: 9pt;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-300);
-    margin: 0 0 14pt;
+  .q-item__rail {
+    display: flex; flex-direction: column; align-items: center; gap: 5pt; padding-top: 1pt;
   }
-  .breakdown__row {
-    margin-bottom: 11pt;
-  }
-  .breakdown__head {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 4pt;
-    font-size: 10.5pt;
-    color: var(--ink-700);
-  }
-  .breakdown__name { font-weight: 500; }
-  .breakdown__pct {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10pt;
-    font-weight: 500;
-    color: var(--ink-700);
-    font-variant-numeric: tabular-nums;
-  }
-  /* Altura 3.5pt (no 2.5): a 2.5pt la barra es una hairline sub-pixel que en
-     pantalla (baja DPI) el anti-aliasing redondea disparejo entre filas. Algo
-     más gruesa se ve pareja tanto en pantalla como impresa. */
-  .breakdown__bar {
-    height: 3.5pt;
-    background-color: var(--crema-300);
-    border-radius: 1.75pt;
-    overflow: hidden;
-  }
-  .breakdown__fill {
-    height: 100%;
-    background-color: var(--accent-conac);
-    border-radius: 1pt;
-  }
-  /* Color por nivel de dominio (sobrescribe el coñac por defecto). */
-  .breakdown__fill--domina   { background-color: var(--level-domina); }
-  .breakdown__fill--proceso  { background-color: var(--level-proceso); }
-  .breakdown__fill--atencion { background-color: var(--level-atencion); }
-  .breakdown__meta {
-    margin-top: 3pt;
-    font-size: 9pt;
-    color: var(--ink-300);
-    font-variant-numeric: tabular-nums;
-  }
-  .breakdown__legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14pt;
-    margin-top: 12pt;
-    font-size: 8.5pt;
-    color: var(--ink-500);
-  }
-  .breakdown__legend span { display: inline-flex; align-items: center; gap: 4pt; }
-  .breakdown__dot { display: inline-block; width: 7pt; height: 7pt; border-radius: 2pt; }
-  .breakdown__dot--domina   { background-color: var(--level-domina); }
-  .breakdown__dot--proceso  { background-color: var(--level-proceso); }
-  .breakdown__dot--atencion { background-color: var(--level-atencion); }
-
-  /* Lista de ejercicios */
-  .exam-pdf__exercises {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    counter-reset: exercise;
-  }
-  .exam-pdf__exercise {
-    counter-increment: exercise;
-    display: grid;
-    grid-template-columns: 0.42in minmax(0, 1fr);
-    column-gap: 16pt;
-    margin-bottom: 22pt;
-    page-break-inside: avoid;
-  }
-  .exam-pdf__exercise::before {
-    content: counter(exercise) ".";
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 17pt;
-    color: var(--accent-conac);
-    text-align: right;
-    line-height: 1.1;
-    padding-top: 1pt;
+  .q-item__num {
+    font-family: 'Fraunces', serif; font-style: italic; font-weight: 500;
+    font-size: 15pt; line-height: 1; color: var(--ink-700);
     font-variant-numeric: lining-nums;
   }
-  .exam-pdf__body {
-    font-size: 11pt;
-    line-height: 1.5;
-    color: var(--ink-900);
-    min-width: 0;
+  .q-item__glyph {
+    width: 14pt; height: 14pt; border-radius: 999px; flex-shrink: 0;
+    display: inline-flex; align-items: center; justify-content: center;
   }
-  .exam-pdf__subject {
-    display: block;
-    font-size: 8.5pt;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-300);
-    margin-bottom: 4pt;
-  }
-  .exam-pdf__body p { margin: 0 0 6pt; }
-  .exam-pdf__figure {
-    margin: 8pt 0;
-  }
-  .exam-pdf__figure img,
-  .exam-pdf__figure svg {
-    max-width: 100%;
-    max-height: 180pt;
-  }
+  .q-item__glyph svg { width: 8pt; height: 8pt; fill: none; stroke-width: 3; }
+  .q-item__glyph--ok   { background: var(--state-ok); }
+  .q-item__glyph--ok svg,
+  .q-item__glyph--err svg { stroke: var(--crema-100); }
+  .q-item__glyph--err  { background: var(--state-err); }
+  .q-item__glyph--skip { background: transparent; border: 1pt solid var(--ink-300); }
+  .q-item__glyph--skip svg { stroke: var(--ink-300); }
 
-  /* Opciones con estado */
-  .exam-pdf__choices {
-    list-style: none;
-    padding: 0;
-    margin: 8pt 0 0;
+  .q-item__kicker {
+    display: block; font-size: 8pt; font-weight: 500; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink-300); margin-bottom: 4pt;
   }
-  .exam-pdf__choice {
-    display: flex;
-    align-items: flex-start;
-    gap: 8pt;
-    padding: 5pt 8pt;
-    margin-bottom: 2pt;
-    border-radius: 4pt;
-    font-size: 10.5pt;
-    line-height: 1.45;
-    color: var(--ink-700);
-    background-color: transparent;
-    border: 1px solid transparent;
-    /* Que una opción (sobre todo con figura alta) no se parta entre páginas. */
-    break-inside: avoid;
-    page-break-inside: avoid;
+  .q-item__body { font-size: 11pt; line-height: 1.5; color: var(--ink-900); min-width: 0; }
+  .q-item__body p { margin: 0 0 6pt; }
+  .q-figure { margin: 8pt 0; }
+  .q-figure img, .q-figure svg { max-width: 100%; max-height: 180pt; }
+
+  /* Opciones: franja lateral + tinte (en vez de recuadro completo) */
+  .q-choices { list-style: none; padding: 0; margin: 8pt 0 0; }
+  .q-choice {
+    display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 9pt;
+    padding: 5pt 9pt; margin-bottom: 3pt; border-radius: 4pt;
+    border-left: 2.5pt solid transparent;
+    font-size: 10.5pt; line-height: 1.45; color: var(--ink-700);
+    break-inside: avoid; page-break-inside: avoid;
   }
-  .exam-pdf__choice--correct {
-    background-color: var(--state-ok-bg);
-    border-color: var(--state-ok);
+  .q-choice__letter {
+    width: 15pt; height: 15pt; border-radius: 999px; flex-shrink: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 8.5pt; font-weight: 600; background: var(--crema-300); color: var(--ink-300);
   }
-  .exam-pdf__choice--incorrect {
-    background-color: var(--state-err-bg);
-    border-color: var(--state-err);
+  .q-choice__text { min-width: 0; }
+  .q-choice__text img, .q-choice__text svg { max-width: 140pt; max-height: 80pt; vertical-align: middle; }
+  .q-choice__text svg { color: var(--ink-900); }
+  .q-choice__marker {
+    font-size: 8pt; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase;
+    color: var(--ink-300); white-space: nowrap;
   }
-  .exam-pdf__choice__letter {
-    font-weight: 500;
-    color: var(--ink-500);
-    flex-shrink: 0;
-    min-width: 18pt;
+  .q-choice--correct {
+    background: var(--state-ok-bg); border-left-color: var(--state-ok); color: var(--ink-900);
   }
-  .exam-pdf__choice--correct .exam-pdf__choice__letter { color: var(--state-ok); }
-  .exam-pdf__choice--incorrect .exam-pdf__choice__letter { color: var(--state-err); }
-  .exam-pdf__choice__text { flex: 1; min-width: 0; }
-  .exam-pdf__choice__text img,
-  .exam-pdf__choice__text svg {
-    max-width: 140pt;
-    max-height: 80pt;
-    vertical-align: middle;
+  .q-choice--correct .q-choice__letter { background: var(--state-ok); color: var(--crema-100); }
+  .q-choice--correct .q-choice__marker { color: var(--state-ok); }
+  .q-choice--incorrect {
+    background: var(--state-err-bg); border-left-color: var(--state-err); color: var(--ink-900);
   }
-  /* El SVG de opción hereda el color del .exam-pdf__choice (ink-700, más claro).
-     Lo forzamos a ink-900 para que las figuras de opción tengan el MISMO color
-     que las del enunciado y que la versión en pantalla (currentColor = ink-900). */
-  .exam-pdf__choice__text svg { color: var(--ink-900); }
-  .exam-pdf__choice__marker {
-    flex-shrink: 0;
-    font-size: 9pt;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--ink-300);
+  .q-choice--incorrect .q-choice__letter { background: var(--state-err); color: var(--crema-100); }
+  .q-choice--incorrect .q-choice__marker { color: var(--state-err); }
+
+  /* === Comprobante · portada "Número editorial" (paquete de diseño) ===
+     Barras/leyenda/tarjetas en --level-* (apagado del paquete, lo elegido). */
+  .p-portada { margin: 0.34in 0 0.42in; page-break-inside: avoid; }
+  .p-grid { display: grid; grid-template-columns: auto 1fr; gap: 30pt; align-items: start; }
+  .p-eyebrow {
+    font-size: 9pt; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--ink-300); margin: 0 0 4pt;
   }
-  .exam-pdf__choice--correct .exam-pdf__choice__marker { color: var(--state-ok); }
-  .exam-pdf__choice--incorrect .exam-pdf__choice__marker { color: var(--state-err); }
+  .p-big {
+    font-family: 'Fraunces', serif; font-style: italic; font-weight: 500;
+    font-size: 76pt; line-height: 0.82; letter-spacing: -0.03em;
+    color: var(--accent-terracota); margin: 0; font-variant-numeric: lining-nums;
+  }
+  .p-sub {
+    font-family: 'IBM Plex Mono', monospace; font-size: 10.5pt;
+    color: var(--ink-700); margin: 8pt 0 0; font-variant-numeric: tabular-nums;
+  }
+  .p-lede {
+    font-family: 'Fraunces', serif; font-weight: 500; font-size: 15pt; line-height: 1.25;
+    color: var(--ink-900); margin: 14pt 0 0; max-width: 2in;
+  }
+  .p-lede em { font-style: italic; color: var(--accent-terracota); }
+  .p-lede-note { font-size: 10pt; line-height: 1.5; color: var(--ink-500); margin: 6pt 0 0; max-width: 2in; }
+
+  .p-row { margin-bottom: 8pt; }
+  .p-row__head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3pt; }
+  .p-row__name { font-size: 10pt; font-weight: 500; color: var(--ink-700); }
+  .p-row__pct {
+    font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: var(--ink-300);
+    font-variant-numeric: tabular-nums;
+  }
+  .p-bar { height: 3.5pt; background: var(--crema-300); border-radius: 1.75pt; overflow: hidden; }
+  .p-fill { height: 100%; }
+  .p-fill--ok       { background: var(--level-domina); }
+  .p-fill--proceso  { background: var(--level-proceso); }
+  .p-fill--atencion { background: var(--level-atencion); }
+
+  .p-enfoque { display: grid; grid-template-columns: 1fr 1fr; gap: 14pt; margin-top: 22pt; }
+  .p-card { border: 0.75pt solid var(--crema-300); border-radius: 4pt; padding: 12pt 14pt; }
+  .p-card--reforzar  { border-left: 2.5pt solid var(--level-proceso); }
+  .p-card--fortaleza { border-left: 2.5pt solid var(--level-domina); }
+  .p-card__label { font-size: 8pt; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 8pt; }
+  .p-card--reforzar  .p-card__label { color: var(--level-proceso); }
+  .p-card--fortaleza .p-card__label { color: var(--level-domina); }
+  .p-card__row { display: flex; justify-content: space-between; align-items: baseline; }
+  .p-card__name { font-size: 11pt; font-weight: 500; color: var(--ink-700); }
+  .p-card__pct { font-family: 'Fraunces', serif; font-style: italic; font-size: 15pt; }
+  .p-card--reforzar  .p-card__pct { color: var(--level-proceso); }
+  .p-card--fortaleza .p-card__pct { color: var(--level-domina); }
+  .p-card__note { font-size: 9.5pt; line-height: 1.45; color: var(--ink-500); margin: 6pt 0 0; }
+
+  .p-legend { display: flex; flex-wrap: wrap; gap: 14pt; margin-top: 16pt; font-size: 8.5pt; color: var(--ink-500); }
+  .p-legend span { display: inline-flex; align-items: center; gap: 4pt; }
+  .p-legend__dot { width: 7pt; height: 7pt; border-radius: 2pt; display: inline-block; }
 
 `;
 
@@ -980,65 +906,130 @@ function buildComprobanteHTML(room, student) {
     if (answers[q.id] === answerKey[q.id]) subjects[key].correct++;
   });
   const sortedSubjects = Object.entries(subjects).sort((a, b) => (b[1].correct / b[1].total) - (a[1].correct / a[1].total));
-  // Nivel de dominio por umbral (mismo esquema acordado en los dashboards).
-  const levelClass = (pct) => pct >= 70 ? 'domina' : pct >= 50 ? 'proceso' : 'atencion';
-  const breakdownRowsHTML = sortedSubjects.map(([name, data]) => {
-    const subjectPct = Math.round((data.correct / data.total) * 100);
-    return `
-      <div class="breakdown__row">
-        <div class="breakdown__head">
-          <span class="breakdown__name">${name}</span>
-          <span class="breakdown__pct">${subjectPct}%</span>
-        </div>
-        <div class="breakdown__bar"><div class="breakdown__fill breakdown__fill--${levelClass(subjectPct)}" style="width:${subjectPct}%;"></div></div>
-        <div class="breakdown__meta">${data.correct} de ${data.total} aciertos</div>
+  // ── Portada "Número editorial" (paquete: IMPLEMENTAR-portada-pdf.md) ──
+  // Barras/leyenda/tarjetas en --level-* (apagado del paquete, lo que elegiste).
+  const levelFill = (p) => p >= 70 ? 'p-fill--ok' : p >= 50 ? 'p-fill--proceso' : 'p-fill--atencion';
+  const subjPct = ([, d]) => (d.total ? Math.round((d.correct / d.total) * 100) : 0);
+
+  const dominadas = sortedSubjects.filter((s) => subjPct(s) >= 70).length;
+  const enProceso = sortedSubjects.filter((s) => { const p = subjPct(s); return p >= 50 && p < 70; }).length;
+  const fortaleza = sortedSubjects[0];                          // mayor %
+  const reforzar  = sortedSubjects[sortedSubjects.length - 1];  // menor %
+
+  const portadaRowsHTML = sortedSubjects.map((s) => {
+    const sp = subjPct(s);
+    return `<div class="p-row">
+        <div class="p-row__head"><span class="p-row__name">${s[0]}</span><span class="p-row__pct">${sp}%</span></div>
+        <div class="p-bar"><div class="p-fill ${levelFill(sp)}" style="width:${sp}%;"></div></div>
       </div>`;
   }).join('');
-  const breakdownLegendHTML = `
-    <div class="breakdown__legend">
-      <span><span class="breakdown__dot breakdown__dot--domina"></span>Domina ≥70%</span>
-      <span><span class="breakdown__dot breakdown__dot--proceso"></span>En proceso 50–69%</span>
-      <span><span class="breakdown__dot breakdown__dot--atencion"></span>Requiere atención &lt;50%</span>
-    </div>`;
-  const breakdownHTML = sortedSubjects.length > 0 ? `
-    <section class="breakdown">
-      <p class="breakdown__title">Por materia</p>
-      ${breakdownRowsHTML}
-      ${breakdownLegendHTML}
+
+  const ledeNote = enProceso > 0
+    ? `Vas por buen camino — afina ${enProceso === 1 ? 'la materia que quedó' : `las ${enProceso} que quedaron`} en proceso.`
+    : '¡Sin materias pendientes!';
+
+  const portadaHTML = (sortedSubjects.length && fortaleza && reforzar) ? `
+    <section class="p-portada">
+      <div class="p-grid">
+        <div>
+          <p class="p-eyebrow">Resultado</p>
+          <p class="p-big">${correct}</p>
+          <p class="p-sub">/ ${total} · ${pct}%</p>
+          <p class="p-lede">Dominaste <em>${dominadas} de ${sortedSubjects.length}</em> ${sortedSubjects.length === 1 ? 'materia' : 'materias'}.</p>
+          <p class="p-lede-note">${ledeNote}</p>
+        </div>
+        <div class="p-subjects">${portadaRowsHTML}</div>
+      </div>
+      <div class="p-enfoque">
+        <div class="p-card p-card--reforzar">
+          <p class="p-card__label">A reforzar</p>
+          <div class="p-card__row"><span class="p-card__name">${reforzar[0]}</span><span class="p-card__pct">${subjPct(reforzar)}%</span></div>
+          <p class="p-card__note">Tu materia con más margen de mejora.</p>
+        </div>
+        <div class="p-card p-card--fortaleza">
+          <p class="p-card__label">Tu fortaleza</p>
+          <div class="p-card__row"><span class="p-card__name">${fortaleza[0]}</span><span class="p-card__pct">${subjPct(fortaleza)}%</span></div>
+          <p class="p-card__note">Tu materia más sólida del examen.</p>
+        </div>
+      </div>
+      <div class="p-legend">
+        <span><span class="p-legend__dot" style="background:var(--level-domina)"></span>Domina ≥70%</span>
+        <span><span class="p-legend__dot" style="background:var(--level-proceso)"></span>En proceso 50–69%</span>
+        <span><span class="p-legend__dot" style="background:var(--level-atencion)"></span>Requiere atención &lt;50%</span>
+      </div>
     </section>` : '';
 
-  const questionsHTML = questionsForStudent.map((q, idx) => {
+  // Rediseño q-* (paquete de diseño): secciones por materia + riel con glifo.
+  const G_OK   = '<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>';
+  const G_ERR  = '<svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+  const G_SKIP = '<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/></svg>';
+  const ROMAN = ['i','ii','iii','iv','v','vi','vii','viii','ix','x','xi','xii','xiii','xiv','xv','xvi','xvii','xviii','xix','xx'];
+  const roman = (n) => ROMAN[n - 1] || String(n);
+
+  let questionsHTML = '';
+  let lastSubject = null;
+  let secCount = 0;
+  let sectionOpen = false;
+
+  questionsForStudent.forEach((q, idx) => {
+    if (q.subject !== lastSubject) {
+      if (sectionOpen) questionsHTML += `</section>`;
+      lastSubject = q.subject;
+      secCount++;
+      const st = subjects[q.subject] || { correct: 0, total: 0 };
+      const sp = st.total ? Math.round((st.correct / st.total) * 100) : 0;
+      questionsHTML += `
+        <section class="q-section">
+          <div class="q-sec-head">
+            <div class="q-sec-head__title">
+              <span class="q-sec-head__num">${roman(secCount)}.</span>
+              <h2 class="q-sec-head__name">${q.subject}</h2>
+            </div>
+            <span class="q-sec-head__stat">${st.correct} / ${st.total} · ${sp}%</span>
+          </div>`;
+      sectionOpen = true;
+    }
+
     const mine = answers[q.id];
     const correctAns = answerKey[q.id];
+    const answered = mine != null && mine !== '';
+    const isCorrect = answered && mine === correctAns;
+
+    let glyphClass = 'q-item__glyph--skip', glyphSvg = G_SKIP;
+    if (answered && isCorrect) { glyphClass = 'q-item__glyph--ok'; glyphSvg = G_OK; }
+    else if (answered)         { glyphClass = 'q-item__glyph--err'; glyphSvg = G_ERR; }
+
     const letters = Object.keys(q.options);
     const optionsHTML = letters.map(letter => {
-      const isCorrect = letter === correctAns;
+      const isC = letter === correctAns;
       const isMine = letter === mine;
-      let cls = 'exam-pdf__choice';
-      let marker = '';
-      if (isCorrect) { cls += ' exam-pdf__choice--correct'; marker = isMine ? 'Tu respuesta · correcta' : 'Correcta'; }
-      else if (isMine) { cls += ' exam-pdf__choice--incorrect'; marker = 'Tu respuesta'; }
-      // Con imagen de opción: solo la figura (la descripción de texto va como
-      // alt, no visible — sería redundante con la imagen). Sin imagen: el texto.
+      let cls = 'q-choice', marker = '';
+      if (isC) { cls += ' q-choice--correct'; marker = isMine ? 'Tu respuesta · correcta' : 'Correcta'; }
+      else if (isMine) { cls += ' q-choice--incorrect'; marker = 'Tu respuesta'; }
       const hasImg = q.option_images && q.option_images[letter];
-      const optContent = hasImg
-        ? pdfImg(q.option_images[letter], q.options[letter])
-        : renderMath(q.options[letter]);
-      const markerHTML = marker ? `<span class="exam-pdf__choice__marker">${marker}</span>` : '';
-      return `<li class="${cls}"><span class="exam-pdf__choice__letter">${letter}.</span><span class="exam-pdf__choice__text">${optContent}</span>${markerHTML}</li>`;
+      const content = hasImg ? pdfImg(q.option_images[letter], q.options[letter]) : renderMath(q.options[letter]);
+      const markerHTML = marker ? `<span class="q-choice__marker">${marker}</span>` : '';
+      return `<li class="${cls}"><span class="q-choice__letter">${letter}</span><span class="q-choice__text">${content}</span>${markerHTML}</li>`;
     }).join('');
 
-    const qText = q.text || '';
-    const imgHTML = q.image ? `<figure class="exam-pdf__figure">${pdfImg(q.image, '')}</figure>` : '';
+    const kicker = q.topic_name ? `<span class="q-item__kicker">${q.topic_name}</span>` : '';
+    const imgHTML = q.image ? `<figure class="q-figure">${pdfImg(q.image, '')}</figure>` : '';
 
-    return `
-      <li class="exam-pdf__exercise"><div class="exam-pdf__body">
-        <span class="exam-pdf__subject">${q.subject}</span>
-        <p>${renderMath(qText)}</p>
-        ${imgHTML}
-        <ol class="exam-pdf__choices">${optionsHTML}</ol>
-      </div></li>`;
-  }).join('');
+    questionsHTML += `
+      <div class="q-item">
+        <div class="q-item__rail">
+          <span class="q-item__num">${idx + 1}</span>
+          <span class="q-item__glyph ${glyphClass}">${glyphSvg}</span>
+        </div>
+        <div class="q-item__body">
+          ${kicker}
+          <p>${renderMath(q.text || '')}</p>
+          ${imgHTML}
+          <ul class="q-choices">${optionsHTML}</ul>
+        </div>
+      </div>`;
+  });
+  if (sectionOpen) questionsHTML += `</section>`;
 
   return `<!DOCTYPE html><html lang="es" data-theme="light"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1060,15 +1051,9 @@ function buildComprobanteHTML(room, student) {
     <p class="exam-pdf__meta"><strong>${student.name}</strong> · ${fecha} · Tiempo: ${timeStr}</p>
   </header>
 
-  <section class="score-block">
-    <p class="score-block__eyebrow">Resultado</p>
-    <p class="score-block__big">${correct} <span style="color:var(--ink-300); font-style:normal; font-family:'IBM Plex Sans',sans-serif; font-size:24pt; font-weight:400;">/ ${total}</span></p>
-    <p class="score-block__sub"><strong>${pct}%</strong> · ${correct} de ${total} aciertos</p>
-  </section>
+  ${portadaHTML}
 
-  ${breakdownHTML}
-
-  <ol class="exam-pdf__exercises">${questionsHTML}</ol>
+  ${questionsHTML}
 
 </main>
 </td></tr></tbody></table>
@@ -1081,33 +1066,64 @@ function buildAnswerKeyHTML(room) {
   const answerKey = room.answerKey;
   const fecha = new Date().toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
 
-  const questionsHTML = questions.map((q, idx) => {
+  // Rediseño q-* (paquete de diseño): mismo lenguaje, solo marca la correcta.
+  const ROMAN = ['i','ii','iii','iv','v','vi','vii','viii','ix','x','xi','xii','xiii','xiv','xv','xvi','xvii','xviii','xix','xx'];
+  const roman = (n) => ROMAN[n - 1] || String(n);
+
+  const subjectCounts = {};
+  questions.forEach(q => { subjectCounts[q.subject] = (subjectCounts[q.subject] || 0) + 1; });
+
+  let questionsHTML = '';
+  let lastSubject = null;
+  let secCount = 0;
+  let sectionOpen = false;
+
+  questions.forEach((q, idx) => {
+    if (q.subject !== lastSubject) {
+      if (sectionOpen) questionsHTML += `</section>`;
+      lastSubject = q.subject;
+      secCount++;
+      const n = subjectCounts[q.subject] || 0;
+      questionsHTML += `
+        <section class="q-section">
+          <div class="q-sec-head">
+            <div class="q-sec-head__title">
+              <span class="q-sec-head__num">${roman(secCount)}.</span>
+              <h2 class="q-sec-head__name">${q.subject}</h2>
+            </div>
+            <span class="q-sec-head__stat">${n} ${n === 1 ? 'reactivo' : 'reactivos'}</span>
+          </div>`;
+      sectionOpen = true;
+    }
+
     const correctAns = answerKey[q.id];
     const letters = Object.keys(q.options);
     const optionsHTML = letters.map(letter => {
-      const isCorrect = letter === correctAns;
-      const cls = isCorrect ? 'exam-pdf__choice exam-pdf__choice--correct' : 'exam-pdf__choice';
-      // Con imagen de opción: solo la figura (descripción como alt, no visible).
-      // La correcta ya se distingue por el recuadro verde + "Correcta".
+      const isC = letter === correctAns;
+      const cls = isC ? 'q-choice q-choice--correct' : 'q-choice';
       const hasImg = q.option_images && q.option_images[letter];
-      const textHTML = hasImg
-        ? pdfImg(q.option_images[letter], q.options[letter])
-        : renderMath(q.options[letter]);
-      const markerHTML = isCorrect ? '<span class="exam-pdf__choice__marker">Correcta</span>' : '';
-      return `<li class="${cls}"><span class="exam-pdf__choice__letter">${letter}.</span><span class="exam-pdf__choice__text">${textHTML}</span>${markerHTML}</li>`;
+      const content = hasImg ? pdfImg(q.option_images[letter], q.options[letter]) : renderMath(q.options[letter]);
+      const markerHTML = isC ? '<span class="q-choice__marker">Correcta</span>' : '';
+      return `<li class="${cls}"><span class="q-choice__letter">${letter}</span><span class="q-choice__text">${content}</span>${markerHTML}</li>`;
     }).join('');
 
-    const qText = q.text || '';
-    const imgHTML = q.image ? `<figure class="exam-pdf__figure">${pdfImg(q.image, '')}</figure>` : '';
+    const kicker = q.topic_name ? `<span class="q-item__kicker">${q.topic_name}</span>` : '';
+    const imgHTML = q.image ? `<figure class="q-figure">${pdfImg(q.image, '')}</figure>` : '';
 
-    return `
-      <li class="exam-pdf__exercise"><div class="exam-pdf__body">
-        <span class="exam-pdf__subject">${q.subject}</span>
-        <p>${renderMath(qText)}</p>
-        ${imgHTML}
-        <ol class="exam-pdf__choices">${optionsHTML}</ol>
-      </div></li>`;
-  }).join('');
+    questionsHTML += `
+      <div class="q-item">
+        <div class="q-item__rail">
+          <span class="q-item__num">${idx + 1}</span>
+        </div>
+        <div class="q-item__body">
+          ${kicker}
+          <p>${renderMath(q.text || '')}</p>
+          ${imgHTML}
+          <ul class="q-choices">${optionsHTML}</ul>
+        </div>
+      </div>`;
+  });
+  if (sectionOpen) questionsHTML += `</section>`;
 
   return `<!DOCTYPE html><html lang="es" data-theme="light"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1129,7 +1145,7 @@ function buildAnswerKeyHTML(room) {
     <p class="exam-pdf__meta">${fecha} · ${questions.length} preguntas</p>
   </header>
 
-  <ol class="exam-pdf__exercises">${questionsHTML}</ol>
+  ${questionsHTML}
 
 </main>
 </td></tr></tbody></table>
@@ -1146,10 +1162,10 @@ function buildAnswerKeyHTML(room) {
 async function applyPdfBlankWidths(page) {
   await page.evaluate(() => {
     const CAP = 420;
-    document.querySelectorAll('.exam-pdf__exercise').forEach(ex => {
-      const blanks = ex.querySelectorAll('.exam-pdf__body .md-blank');
+    document.querySelectorAll('.q-item').forEach(ex => {
+      const blanks = ex.querySelectorAll('.q-item__body .md-blank');
       if (!blanks.length) return;
-      const optEls = Array.from(ex.querySelectorAll('.exam-pdf__choice__text'));
+      const optEls = Array.from(ex.querySelectorAll('.q-choice__text'));
       if (!optEls.length || optEls.some(el => el.querySelector('img'))) return;
       const cs = getComputedStyle(optEls[0]);
       const meas = document.createElement('span');
