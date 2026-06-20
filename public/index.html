@@ -537,6 +537,14 @@
     color: var(--color-accent);
   }
   .select-custom__option[aria-selected="true"] .select-custom__option-check { opacity: 1; }
+  /* Alumno deshabilitado (p. ej. graduado al examen oficial): visible pero no elegible. */
+  .select-custom__option[data-disabled] {
+    opacity: 0.4;
+    text-decoration: line-through;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  .select-custom__option[data-disabled]:hover { background-color: transparent; }
 
   /* Variante input--code: input grande para código de 6 caracteres centrado */
   .input--code {
@@ -1983,20 +1991,23 @@ function showScreen(id) {
   document.getElementById(id).classList.add('active');
 }
 
-function populateNameDropdown(students) {
+function populateNameDropdown(students, disabled) {
+  disabled = disabled || [];
+  const isOff = name => disabled.some(d => String(d).toLowerCase() === String(name).toLowerCase());
   const sel = document.getElementById('nameSelect');
   sel.innerHTML = '<option value="">Selecciona tu nombre...</option>';
   students.forEach(name => {
     const opt = document.createElement('option');
     opt.value = name;
     opt.textContent = name;
+    if (isOff(name)) opt.disabled = true;
     sel.appendChild(opt);
   });
   sel.disabled = students.length === 0;
   document.getElementById('joinBtn').disabled = students.length === 0;
   // Sincronizar el custom dropdown
   const wrap = document.getElementById('nameSelectWrap');
-  if (wrap && wrap.__populate) wrap.__populate(students);
+  if (wrap && wrap.__populate) wrap.__populate(students, disabled);
 }
 
 // ── Room entry ──
@@ -2140,7 +2151,7 @@ document.getElementById('nameSelect').addEventListener('keydown', (e) => {
     } else if (e.key === 'Enter') {
       e.preventDefault();
       const li = panel.children[activeIdx];
-      if (li) { setValue(li.dataset.value, true); setOpen(false); trigger.focus(); }
+      if (li && !li.dataset.disabled) { setValue(li.dataset.value, true); setOpen(false); trigger.focus(); }
     } else if (e.key === 'Escape') {
       e.preventDefault(); setOpen(false); trigger.focus();
     }
@@ -2165,7 +2176,9 @@ document.getElementById('nameSelect').addEventListener('keydown', (e) => {
   });
 
   // API pública para que populateNameDropdown / código de auto-rejoin la usen.
-  wrap.__populate = function(students) {
+  wrap.__populate = function(students, disabled) {
+    disabled = disabled || [];
+    const isOff = name => disabled.some(d => String(d).toLowerCase() === String(name).toLowerCase());
     panel.innerHTML = '';
     students.forEach(name => {
       const li = document.createElement('li');
@@ -2173,12 +2186,18 @@ document.getElementById('nameSelect').addEventListener('keydown', (e) => {
       li.setAttribute('role', 'option');
       li.setAttribute('aria-selected', 'false');
       li.dataset.value = name;
-      li.innerHTML = '<span>' + name + '</span><svg class="select-custom__option-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';
-      li.addEventListener('click', () => {
-        setValue(name, true);
-        setOpen(false);
-        trigger.focus();
-      });
+      if (isOff(name)) {
+        li.dataset.disabled = 'true';
+        li.setAttribute('aria-disabled', 'true');
+        li.innerHTML = '<span>' + name + '</span>';
+      } else {
+        li.innerHTML = '<span>' + name + '</span><svg class="select-custom__option-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';
+        li.addEventListener('click', () => {
+          setValue(name, true);
+          setOpen(false);
+          trigger.focus();
+        });
+      }
       panel.appendChild(li);
     });
     setDisabled(students.length === 0);
@@ -3593,7 +3612,7 @@ socket.on('roomJoined', (data) => {
     document.getElementById('groupLabel').style.display = '';
   }
   if (data.studentList && data.studentList.length > 0) {
-    populateNameDropdown(data.studentList);
+    populateNameDropdown(data.studentList, data.studentsDisabled);
   }
 
   // Auto-rejoin if we have a saved session for this room.

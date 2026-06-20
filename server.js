@@ -66,6 +66,7 @@ function createRoom(data, jsonFilename = null, lockedOptions = false, opts = {})
     group: data.exam?.group || 'Sin grupo',
     date: data.exam?.date || new Date().toISOString().split('T')[0],
     studentList: data.exam?.students || [],
+    studentsDisabled: data.exam?.studentsDisabled || [],
     questions: [],
     answerKey: {},
     students: {},
@@ -1378,6 +1379,7 @@ io.on('connection', (socket) => {
       title: room.title,
       group: room.group,
       studentList: room.studentList,
+      studentsDisabled: room.studentsDisabled || [],
       totalQuestions: room.questions.length,
       startTime: room.startTime,
       timeLimit: room.timeLimitMinutes,
@@ -1404,6 +1406,10 @@ io.on('connection', (socket) => {
     if (room.studentList.length > 0) {
       const validName = room.studentList.find(s => s.toLowerCase() === cleanName.toLowerCase());
       if (!validName) { socket.emit('joinError', 'Tu nombre no está en la lista'); return; }
+    }
+
+    if ((room.studentsDisabled || []).some(d => String(d).toLowerCase() === cleanName.toLowerCase())) {
+      socket.emit('joinError', 'Ese nombre ya no está disponible'); return;
     }
 
     const nameExists = Object.values(room.students).some(
