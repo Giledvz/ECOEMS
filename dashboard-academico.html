@@ -75,6 +75,7 @@
 
   /* Estados Tercial (apagado): domina oliva, proceso gold, atención terracota, acento coñac */
   .green { color:#4a6b3f; } .amber { color:#c2891a; } .red { color:#9c3525; } .blue { color:#8c4a3a; }
+  .metric .value.green{color:#4a6b3f}.metric .value.amber{color:#c2891a}.metric .value.red{color:#9c3525}.metric .value.blue{color:#8c4a3a}
 
   .btn { padding:8px 16px; border:1px solid #e6dcc4; border-radius:8px; font-size:12px; cursor:pointer; background:#fff; color:#7a6448; }
   .btn:hover { background:#f7f1e6; }
@@ -142,8 +143,7 @@
       <div class="chart-wrap" style="height:220px;"><canvas id="distChart"></canvas></div>
 
       <div class="section-title">Rendimiento por tema</div>
-      <div class="legend" id="groupLegend"></div>
-      <div class="chart-wrap" style="height:280px;"><canvas id="topicBarChart"></canvas></div>
+      <div id="topicBars"></div>
 
       <div class="section-title">Mapa de calor · aciertos por pregunta</div>
       <div class="heatmap" id="heatmapArea"></div>
@@ -208,6 +208,32 @@ function levelMeta(pct) {
 }
 // Color de relleno para barras/gráficos por % (apagado).
 const lvlFill = (p) => p >= 70 ? '#4a6b3f' : p >= 50 ? '#e6a829' : '#9c3525';
+
+// Barras agrupadas HTML (A reforzar / Dominadas) — compartido por vista General e Individual.
+function renderGrouped(containerId, items) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  const barRow = (t) => {
+    const m = levelMeta(t.pct);
+    const tagStyle = m.label === 'Atención' ? `color:#fff;background:${m.tag};` : `color:${m.color};background:${m.tag};`;
+    return `<div style="display:grid;grid-template-columns:18px 165px 1fr auto;gap:10px;align-items:center;margin-bottom:9px">
+      <span style="display:flex;justify-content:center;font-size:15px;color:${m.fill}">${m.icon}</span>
+      <span style="font:500 12.5px 'IBM Plex Sans';color:#4a3f33;text-align:right">${t.name}</span>
+      <div style="height:15px;background:${m.track};border-radius:8px;overflow:hidden"><div style="width:${t.pct}%;height:100%;background:${m.fill};border-radius:8px"></div></div>
+      <span style="display:inline-flex;align-items:center;gap:7px;white-space:nowrap">
+        <span style="font:600 12px 'IBM Plex Mono',monospace;color:${m.color};font-variant-numeric:tabular-nums">${t.pct}%</span>
+        <span style="font:500 9px 'IBM Plex Sans';letter-spacing:.04em;text-transform:uppercase;padding:2px 6px;border-radius:3px;${tagStyle}">${m.label}</span>
+      </span>
+    </div>`;
+  };
+  const groupHead = (txt, color, line) =>
+    `<div style="display:flex;align-items:center;gap:8px;margin:4px 0 11px"><span style="font:500 9.5px 'IBM Plex Sans';letter-spacing:.09em;text-transform:uppercase;color:${color}">${txt}</span><span style="flex:1;height:1px;background:${line}"></span></div>`;
+  const reforzar  = items.filter(t => t.pct <  70).sort((a,b) => a.pct - b.pct);
+  const dominadas = items.filter(t => t.pct >= 70).sort((a,b) => b.pct - a.pct);
+  el.innerHTML =
+    (reforzar.length  ? groupHead('A reforzar', '#9c3525', '#ecd9d2') + reforzar.map(barRow).join('')  : '') +
+    (dominadas.length ? `<div style="margin-top:${reforzar.length?'18px':'0'}"></div>` + groupHead('Dominadas', '#4a6b3f', '#d8e2cd') + dominadas.map(barRow).join('') : '');
+}
 
 // Defaults de Chart.js para que combine con la crema (fuentes + rejilla suave).
 if (window.Chart) { Chart.defaults.font.family = "'IBM Plex Sans', sans-serif"; Chart.defaults.color = '#8c7556'; }
@@ -469,36 +495,8 @@ function renderGeneral() {
     options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { title: { display: true, text: 'Rango de aciertos', font: { size: 11 } }, grid: { display: false } }, y: { title: { display: true, text: 'Alumnos', font: { size: 11 } }, ticks: { stepSize: 1 } } } }
   });
 
-  // Topic bar chart — horizontal, sorted worst-to-best, color-coded by performance
-  const sortedTopics = [...allTopicStats].sort((a, b) => a.pct - b.pct);
-  const sortedLabels = sortedTopics.map(t => t.name);
-  const singleGroup = groupStats.length === 1;
-  const topicDatasets = groupStats.map((g, i) => {
-    const dataMap = {};
-    g.topicStats.forEach(t => { dataMap[t.name] = t.pct; });
-    const colors = sortedLabels.map(name => { const p = dataMap[name] ?? 0; return p >= 70 ? '#4a6b3f' : p >= 50 ? '#c2891a' : '#9c3525'; });
-    return { label: g.name, data: sortedLabels.map(name => dataMap[name] ?? 0), backgroundColor: singleGroup ? colors : COLORS[i % COLORS.length] + 'cc', borderRadius: 4 };
-  });
-  const topicChartHeight = Math.max(220, sortedTopics.length * (singleGroup ? 34 : groupStats.length * 22 + 14) + 40);
-  document.getElementById('topicBarChart').parentElement.style.height = topicChartHeight + 'px';
-  document.getElementById('groupLegend').innerHTML = singleGroup
-    ? `<span><span class="dot" style="background:#4a6b3f"></span>Domina (≥70%)</span><span><span class="dot" style="background:#c2891a"></span>En proceso (50–69%)</span><span><span class="dot" style="background:#9c3525"></span>Requiere atención (&lt;50%)</span>`
-    : groupStats.map((g, i) => `<span><span class="dot" style="background:${COLORS[i%COLORS.length]}"></span>${g.name} (prom. ${g.avg})</span>`).join('');
-  if (charts.topicBar) charts.topicBar.destroy();
-  charts.topicBar = new Chart(document.getElementById('topicBarChart'), {
-    type: 'bar',
-    data: { labels: sortedLabels, datasets: topicDatasets },
-    options: {
-      indexAxis: 'y',
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: { legend: { display: !singleGroup } },
-      scales: {
-        x: { max: 100, ticks: { stepSize: 10, callback: v => v + '%', font: { size: 10 } }, grid: { color: ctx => ctx.tick.value === 70 ? '#b9a98a' : '#efe7d8', lineWidth: ctx => ctx.tick.value === 70 ? 2 : 1 } },
-        y: { ticks: { font: { size: 11 } }, grid: { display: false } }
-      }
-    }
-  });
+  // Rendimiento por tema — barras agrupadas HTML (A reforzar / Dominadas)
+  renderGrouped('topicBars', allTopicStats);
 
   // Heatmap
   const hm = document.getElementById('heatmapArea');

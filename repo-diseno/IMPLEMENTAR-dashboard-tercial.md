@@ -87,21 +87,36 @@ amarillo-miel guión · atención terracota ⬇ · acento **coñac** · sin azul
 > El tratamiento "vivo" (hex `#1D9E75 / #EF9F27 / #E24B4A`, accent azul) está
 > **descartado**. No lo implementes.
 
-## Paso 4 · Gráficos Chart.js (distribución, radar)
+## Paso 4 · Distribución de puntajes (barras HTML, como el mockup)
 
-Para que combinen con la crema, pásales estos defaults antes de crearlos:
+El mockup **NO usa Chart.js** para la distribución: son barras HTML simples
+(sin ejes), con altura proporcional al conteo y color por desempeño del bucket.
+Reprodúcelo — reemplaza el `<canvas>`/`new Chart(type:'bar')` de la distribución
+por un contenedor `<div id="distBars"></div>` y este render:
 
 ```js
-  Chart.defaults.font.family = "'IBM Plex Sans', sans-serif";
-  Chart.defaults.color = '#8c7556';
-  // grid suave sobre crema:
-  //   scales:{ r:{ grid:{ color:'#e6dcc4' }, angleLines:{ color:'#e6dcc4' } } }
-  //   barras de distribución: usa los hex de estado apagados (Paso 3): #9c3525 / #e6a829 / #4a6b3f.
+  // buckets = [{ label:'32–47', count: 1, band:'err'|'warn'|'ok' }, ...]
+  // band por el punto medio del rango: <50% err, 50–69% warn, ≥70% ok.
+  function renderDist(containerId, buckets) {
+    const el = document.getElementById(containerId); if (!el) return;
+    const fill = { err:'#9c3525', warn:'#e6a829', ok:'#4a6b3f' };
+    const max = Math.max(1, ...buckets.map(b => b.count));
+    const bars = buckets.map(b => {
+      const h = b.count ? Math.max(2, Math.round(b.count / max * 90)) : 2; // 90px alto máx
+      return `<div style="flex:1;display:flex;align-items:flex-end;justify-content:center;height:100%"><div style="width:100%;height:${h}px;background:${fill[b.band]};border-radius:3px 3px 0 0"></div></div>`;
+    }).join('');
+    const labels = buckets.map(b =>
+      `<span style="flex:1;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:9px;color:#a89880">${b.label}</span>`
+    ).join('');
+    el.innerHTML =
+      `<div style="display:flex;align-items:flex-end;gap:12px;height:90px;margin-bottom:6px">${bars}</div>` +
+      `<div style="display:flex;gap:12px">${labels}</div>`;
+  }
 ```
 
-El mockup dibuja la distribución como barras HTML simples (sin Chart.js) — si
-prefieres esa vía, es un `flex` de columnas con altura proporcional al conteo y
-color por desempeño del bucket.
+> Si por accesibilidad prefieres conservar Chart.js con ejes, al menos usa los
+> hex apagados (`#9c3525 / #e6a829 / #4a6b3f`) y los defaults del Paso 5 — pero
+> ten en cuenta que **no** será idéntico al mockup.
 
 ---
 
