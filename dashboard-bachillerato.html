@@ -90,6 +90,7 @@
   .nav-btns { display:flex; gap:8px; margin-bottom:24px; flex-wrap:wrap; }
   .hidden { display:none; }
   @media print {
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
     body { background:#fff; }
     .no-print { display:none !important; }
     .container { max-width:100%; padding:16px; }
@@ -412,7 +413,7 @@ function exportStudentHTML() {
 .metric{background:#f7f1e6;border-radius:8px;padding:13px 15px;}.metric .label{font-size:10px;color:#8c7556;text-transform:uppercase;letter-spacing:.04em;font-weight:500;}.metric .value{font-family:'Fraunces',serif;font-size:23px;font-weight:500;margin-top:3px;}.metric .detail{font-size:10.5px;color:#a89880;margin-top:1px;}
 .green{color:#4a6b3f;}.amber{color:#c2891a;}.red{color:#9c3525;}.blue{color:#8c4a3a;}
 h2{font-family:'Fraunces',serif;font-size:15px;font-weight:500;margin:24px 0 12px;color:#1f1a16;}
-@media print{body{padding:16px;}}</style></head><body>
+@media print{*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}body{padding:16px;}}</style></head><body>
 <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
 <div style="width:44px;height:44px;border-radius:50%;background:#efe7d8;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;color:#8c4a3a;">${initials}</div>
 <div><div style="font-size:20px;font-weight:600;">${s.name}</div><div style="font-size:12px;color:#888;">${examGroup} — ${examTitle} — ${formatDate(examDate)}</div></div></div>
