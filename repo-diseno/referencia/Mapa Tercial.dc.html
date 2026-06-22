@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { font-family: 'IBM Plex Sans', sans-serif; }
+  .bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 82px; gap: 9px; grid-auto-flow: dense; }
+  .tile { border-radius: 9px; padding: 11px 13px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; position: relative; }
+  .tile .pct { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; line-height: 1; }
+  .tile .nm { line-height: 1.12; }
+</style>
+</helmet>
+
+<div style="width:max-content;min-width:100%;min-height:100vh;box-sizing:border-box;padding:48px;background:#cdc3b0;background-image:radial-gradient(at 18% 22%, rgba(140,117,86,.10) 0, transparent 55%),radial-gradient(at 85% 80%, rgba(107,58,46,.07) 0, transparent 55%)">
+
+  <div style="margin:0 0 34px;max-width:760px">
+    <p style="font:500 11px 'IBM Plex Sans';letter-spacing:.14em;text-transform:uppercase;color:#6b5a44;margin:0 0 8px">Tercial · el mapa · dos pantallas</p>
+    <h1 style="font-family:'Fraunces',serif;font-weight:500;font-size:30px;letter-spacing:-.02em;color:#1f1a16;font-variation-settings:'opsz' 72;margin:0">Tu <em style="font-style:italic;color:#6b3a2e">mapa</em>, una pantalla a la vez</h1>
+    <p style="font:400 14px 'IBM Plex Sans';color:#4a3f33;margin:8px 0 0;line-height:1.55;max-width:720px">Son dos vistas separadas, no apiladas. <strong style="font-weight:600">Materias</strong> (tamaño = nº de subtemas); al tocar una, entras a su mapa de <strong style="font-weight:600">temas</strong> (tamaño = peso en examen). El número grande siempre es tu % de dominio. La transición la maneja el sitio — aquí están las dos pantallas, claro y oscuro.</p>
+  </div>
+
+  <!-- ════════════ CLARO ════════════ -->
+  <div style="display:flex;align-items:center;gap:8px;margin:0 0 16px;max-width:1268px"><span style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:16px;color:#6b3a2e">Tema claro</span><span style="flex:1;height:1px;background:#b8ab92"></span></div>
+
+  <div style="display:flex;align-items:flex-start;gap:28px;margin-bottom:42px">
+
+    <!-- PANTALLA 1 · MATERIAS (claro) -->
+    <div style="flex:none;width:600px">
+      <div style="display:flex;align-items:baseline;gap:9px;margin-bottom:10px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8c7556">01</span><span style="font:500 11px 'IBM Plex Sans';letter-spacing:.06em;text-transform:uppercase;color:#4a3f33">Materias</span></div>
+      <div style="background:#f5efe4;border:1px solid #e6dcc4;border-radius:12px;box-shadow:0 1px 4px rgba(74,63,51,.10);padding:26px 28px">
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:4px">
+          <div>
+            <p style="font:500 10px 'IBM Plex Sans';letter-spacing:.12em;text-transform:uppercase;color:#8c7556;margin:0 0 6px">Examen ECOEMS · Sofía</p>
+            <h2 style="font-family:'Fraunces',serif;font-weight:500;font-size:22px;letter-spacing:-.02em;color:#1f1a16;margin:0">Tu examen completo</h2>
+          </div>
+          <div style="text-align:right"><div style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:28px;color:#4a6b3f;line-height:1">71%</div><div style="font:400 10px 'IBM Plex Sans';color:#a89880">dominio global</div></div>
+        </div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:13px 0 18px">
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#7a6448"><span style="width:11px;height:11px;border-radius:3px;background:#4a6b3f"></span>Dominas</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#7a6448"><span style="width:11px;height:11px;border-radius:3px;background:#e6a829"></span>En proceso</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#7a6448"><span style="width:11px;height:11px;border-radius:3px;background:#9c3525"></span>A reforzar</span>
+          <span style="flex:1"></span>
+          <span style="font:400 10px 'IBM Plex Mono',monospace;color:#a89880">tamaño = nº de subtemas</span>
+        </div>
+        <div class="bento">
+          <div class="tile" style="grid-column:span 2;grid-row:span 2;background:#4a6b3f">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start"><span class="nm" style="font-family:'Fraunces',serif;font-weight:500;font-size:20px;color:#fff">Matemáticas</span><span style="font:400 9.5px 'IBM Plex Mono',monospace;color:#cdddbf">9 subt</span></div>
+            <div><div class="pct" style="font-size:40px;color:#fff;font-weight:500">75%</div><div style="font:400 11px 'IBM Plex Sans';color:#cdddbf;margin-top:5px">9 subtemas · 12 preguntas</div></div>
+          </div>
+          <div class="tile" style="grid-row:span 2;background:#4a6b3f;outline:1.5px solid #1f1a16;outline-offset:-1.5px">
+            <div class="nm" style="font:600 12px 'IBM Plex Sans';color:#fff">Física</div>
+            <div><div class="pct" style="font-size:24px;color:#fff;font-weight:500">71%</div><div style="font:400 9px 'IBM Plex Sans';color:#cdddbf;margin-top:3px">7 subt · 12 preg</div><div style="font:500 10px 'IBM Plex Sans';color:#fff;margin-top:7px">ver temas →</div></div>
+          </div>
+          <div class="tile" style="background:#4a6b3f"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#fff">Química</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:17px;color:#fff">75%</span><span style="font:400 8.5px 'IBM Plex Sans';color:#cdddbf">7 subt</span></div></div>
+          <div class="tile" style="background:#4a6b3f"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#fff">Razon. verbal</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:17px;color:#fff">81%</span><span style="font:400 8.5px 'IBM Plex Sans';color:#cdddbf">4 · 16 preg</span></div></div>
+          <div class="tile" style="grid-column:span 2;background:#e6a829"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#3a2c08">Español</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:20px;color:#3a2c08;font-weight:500">67%</span><span style="font:400 9px 'IBM Plex Sans';color:#5a4410">8 subtemas · 12 preg</span></div></div>
+          <div class="tile" style="grid-column:span 2;background:#e6a829"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#3a2c08">Biología</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:20px;color:#3a2c08;font-weight:500">67%</span><span style="font:400 9px 'IBM Plex Sans';color:#5a4410">8 subtemas · 12 preg</span></div></div>
+          <div class="tile" style="background:#e6a829"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#3a2c08">Historia</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:17px;color:#3a2c08">58%</span><span style="font:400 8.5px 'IBM Plex Sans';color:#5a4410">7 subt</span></div></div>
+          <div class="tile" style="background:#4a6b3f"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#fff">Geografía</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:17px;color:#fff">75%</span><span style="font:400 8.5px 'IBM Plex Sans';color:#cdddbf">6 subt</span></div></div>
+          <div class="tile" style="background:#4a6b3f"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#fff">F. cívica</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:17px;color:#fff">75%</span><span style="font:400 8.5px 'IBM Plex Sans';color:#cdddbf">5 subt</span></div></div>
+          <div class="tile" style="background:#e6a829"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#3a2c08">Razon. mate.</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:17px;color:#3a2c08">63%</span><span style="font:400 8.5px 'IBM Plex Sans';color:#5a4410">4 · 16 preg</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- flecha -->
+    <div style="flex:none;align-self:center;display:flex;flex-direction:column;align-items:center;gap:6px;padding-top:30px">
+      <span style="font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:#8c7556">tocas</span>
+      <span style="font-size:22px;color:#8c5240">→</span>
+    </div>
+
+    <!-- PANTALLA 2 · TEMAS DE FÍSICA (claro) -->
+    <div style="flex:none;width:600px">
+      <div style="display:flex;align-items:baseline;gap:9px;margin-bottom:10px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8c7556">02</span><span style="font:500 11px 'IBM Plex Sans';letter-spacing:.06em;text-transform:uppercase;color:#4a3f33">Temas de una materia</span></div>
+      <div style="background:#f5efe4;border:1px solid #e6dcc4;border-radius:12px;box-shadow:0 1px 4px rgba(74,63,51,.10);padding:26px 28px">
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px">
+          <span style="font:500 11px 'IBM Plex Sans';color:#6b3a2e;display:inline-flex;align-items:center;gap:5px"><span style="font-size:14px">←</span> Examen</span>
+          <span style="flex:1"></span>
+        </div>
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:4px">
+          <div>
+            <p style="font:500 10px 'IBM Plex Sans';letter-spacing:.12em;text-transform:uppercase;color:#8c7556;margin:0 0 6px">Física · Sofía · 8 de 11 temas vistos</p>
+            <h2 style="font-family:'Fraunces',serif;font-weight:500;font-size:22px;letter-spacing:-.02em;color:#1f1a16;margin:0">Dónde poner tu energía</h2>
+            <p style="font:400 11.5px 'IBM Plex Sans';color:#7a6448;margin:7px 0 0">Faltan 6 días — subir <strong style="font-weight:600;color:#9c3525">Termodinámica</strong> suma ~5 aciertos</p>
+          </div>
+          <div style="text-align:right"><div style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:28px;color:#4a6b3f;line-height:1">71%</div><div style="font:400 10px 'IBM Plex Sans';color:#a89880">dominio</div></div>
+        </div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:13px 0 18px">
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#7a6448"><span style="width:11px;height:11px;border-radius:3px;background:#4a6b3f"></span>Dominas</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#7a6448"><span style="width:11px;height:11px;border-radius:3px;background:#e6a829"></span>En proceso</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#7a6448"><span style="width:11px;height:11px;border-radius:3px;background:#9c3525"></span>A reforzar</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#7a6448"><span style="width:11px;height:11px;border-radius:3px;background:#e6dcc4"></span>Sin empezar</span>
+          <span style="flex:1"></span>
+          <span style="font:400 10px 'IBM Plex Mono',monospace;color:#a89880">tamaño = peso en examen</span>
+        </div>
+        <div class="bento">
+          <div class="tile" style="grid-column:span 2;grid-row:span 2;background:#9c3525">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start"><span style="font:500 8.5px 'IBM Plex Sans';letter-spacing:.06em;text-transform:uppercase;color:#f6e7e0;background:rgba(255,255,255,.15);padding:3px 8px;border-radius:4px">Empieza aquí</span><span style="font:500 10px 'IBM Plex Sans';color:#f6e7e0">▲ +6 sem.</span></div>
+            <div><div class="pct" style="font-size:40px;color:#fff;font-weight:500">42%</div><div class="nm" style="font-family:'Fraunces',serif;font-weight:500;font-size:19px;color:#fff;margin-top:4px">Termodinámica</div><div style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.16);border-radius:6px;padding:7px 12px;font:500 11px 'IBM Plex Sans';color:#fff;margin-top:9px">Practicar 10 reactivos →</div></div>
+          </div>
+          <div class="tile" style="grid-column:span 2;background:#9c3525"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#f6e7e0">Física moderna</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:22px;color:#fff;font-weight:500">48%</span><span style="font:400 9.5px 'IBM Plex Sans';color:#f1d3ca">12 react.</span></div></div>
+          <div class="tile" style="grid-row:span 2;background:#4a6b3f"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#eef3e2">Electro-magnetismo</div><div><div class="pct" style="font-size:24px;color:#fff;font-weight:500">79%</div><div style="font:400 9.5px 'IBM Plex Sans';color:#d3e0c6;margin-top:3px">14 react.</div></div></div>
+          <div class="tile" style="background:#4a6b3f"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#eef3e2">Cinemática</div><span class="pct" style="font-size:16px;color:#fff">88%</span></div>
+          <div class="tile" style="background:#4a6b3f"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#eef3e2">Dinámica</div><span class="pct" style="font-size:16px;color:#fff">82%</span></div>
+          <div class="tile" style="background:#e6a829"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#3a2c08">Mov. ondulat.</div><span class="pct" style="font-size:16px;color:#3a2c08">64%</span></div>
+          <div class="tile" style="background:#e6a829"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#3a2c08">Fluidos</div><span class="pct" style="font-size:16px;color:#3a2c08">58%</span></div>
+          <div class="tile" style="background:#4a6b3f"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#eef3e2">Trabajo y energía</div><span class="pct" style="font-size:16px;color:#fff">76%</span></div>
+          <div class="tile" style="background:#4a6b3f"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#eef3e2">Óptica</div><span class="pct" style="font-size:16px;color:#fff">73%</span></div>
+          <div class="tile" style="background:#e6a829"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#3a2c08">Ondas</div><span class="pct" style="font-size:16px;color:#3a2c08">61%</span></div>
+          <div class="tile" style="background:#e6dcc4"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#8c7556">Magnetismo</div><span class="pct" style="font-size:13px;color:#a89880">— sin empezar</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ════════════ OSCURO ════════════ -->
+  <div style="display:flex;align-items:center;gap:8px;margin:0 0 16px;max-width:1268px"><span style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:16px;color:#c79a82">Tema oscuro</span><span style="flex:1;height:1px;background:#b8ab92"></span></div>
+
+  <div style="display:flex;align-items:flex-start;gap:28px">
+
+    <!-- PANTALLA 1 · MATERIAS (oscuro) -->
+    <div style="flex:none;width:600px">
+      <div style="display:flex;align-items:baseline;gap:9px;margin-bottom:10px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8c7556">01</span><span style="font:500 11px 'IBM Plex Sans';letter-spacing:.06em;text-transform:uppercase;color:#4a3f33">Materias</span></div>
+      <div style="background:#1a1614;border:1px solid #3a3229;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.20);padding:26px 28px">
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:4px">
+          <div>
+            <p style="font:500 10px 'IBM Plex Sans';letter-spacing:.12em;text-transform:uppercase;color:#a89880;margin:0 0 6px">Examen ECOEMS · Sofía</p>
+            <h2 style="font-family:'Fraunces',serif;font-weight:500;font-size:22px;letter-spacing:-.02em;color:#efe4cf;margin:0">Tu examen completo</h2>
+          </div>
+          <div style="text-align:right"><div style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:28px;color:#7faa6a;line-height:1">71%</div><div style="font:400 10px 'IBM Plex Sans';color:#8a7861">dominio global</div></div>
+        </div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:13px 0 18px">
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#a89880"><span style="width:11px;height:11px;border-radius:3px;background:#45663a"></span>Dominas</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#a89880"><span style="width:11px;height:11px;border-radius:3px;background:#d4a04a"></span>En proceso</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#a89880"><span style="width:11px;height:11px;border-radius:3px;background:#c25a44"></span>A reforzar</span>
+          <span style="flex:1"></span>
+          <span style="font:400 10px 'IBM Plex Mono',monospace;color:#8a7861">tamaño = nº de subtemas</span>
+        </div>
+        <div class="bento">
+          <div class="tile" style="grid-column:span 2;grid-row:span 2;background:#45663a">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start"><span class="nm" style="font-family:'Fraunces',serif;font-weight:500;font-size:20px;color:#fff">Matemáticas</span><span style="font:400 9.5px 'IBM Plex Mono',monospace;color:#bccfae">9 subt</span></div>
+            <div><div class="pct" style="font-size:40px;color:#fff;font-weight:500">75%</div><div style="font:400 11px 'IBM Plex Sans';color:#bccfae;margin-top:5px">9 subtemas · 12 preguntas</div></div>
+          </div>
+          <div class="tile" style="grid-row:span 2;background:#45663a;outline:1.5px solid #efe4cf;outline-offset:-1.5px">
+            <div class="nm" style="font:600 12px 'IBM Plex Sans';color:#fff">Física</div>
+            <div><div class="pct" style="font-size:24px;color:#fff;font-weight:500">71%</div><div style="font:400 9px 'IBM Plex Sans';color:#bccfae;margin-top:3px">7 subt · 12 preg</div><div style="font:500 10px 'IBM Plex Sans';color:#fff;margin-top:7px">ver temas →</div></div>
+          </div>
+          <div class="tile" style="background:#45663a"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#fff">Química</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:17px;color:#fff">75%</span><span style="font:400 8.5px 'IBM Plex Sans';color:#bccfae">7 subt</span></div></div>
+          <div class="tile" style="background:#45663a"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#fff">Razon. verbal</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:17px;color:#fff">81%</span><span style="font:400 8.5px 'IBM Plex Sans';color:#bccfae">4 · 16 preg</span></div></div>
+          <div class="tile" style="grid-column:span 2;background:#d4a04a"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#241b06">Español</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:20px;color:#241b06;font-weight:500">67%</span><span style="font:400 9px 'IBM Plex Sans';color:#4a3608">8 subtemas · 12 preg</span></div></div>
+          <div class="tile" style="grid-column:span 2;background:#d4a04a"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#241b06">Biología</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:20px;color:#241b06;font-weight:500">67%</span><span style="font:400 9px 'IBM Plex Sans';color:#4a3608">8 subtemas · 12 preg</span></div></div>
+          <div class="tile" style="background:#d4a04a"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#241b06">Historia</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:17px;color:#241b06">58%</span><span style="font:400 8.5px 'IBM Plex Sans';color:#4a3608">7 subt</span></div></div>
+          <div class="tile" style="background:#45663a"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#fff">Geografía</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:17px;color:#fff">75%</span><span style="font:400 8.5px 'IBM Plex Sans';color:#bccfae">6 subt</span></div></div>
+          <div class="tile" style="background:#45663a"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#fff">F. cívica</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:17px;color:#fff">75%</span><span style="font:400 8.5px 'IBM Plex Sans';color:#bccfae">5 subt</span></div></div>
+          <div class="tile" style="background:#d4a04a"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#241b06">Razon. mate.</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:17px;color:#241b06">63%</span><span style="font:400 8.5px 'IBM Plex Sans';color:#4a3608">4 · 16 preg</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="flex:none;align-self:center;display:flex;flex-direction:column;align-items:center;gap:6px;padding-top:30px">
+      <span style="font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:#8c7556">tocas</span>
+      <span style="font-size:22px;color:#c79a82">→</span>
+    </div>
+
+    <!-- PANTALLA 2 · TEMAS DE FÍSICA (oscuro) -->
+    <div style="flex:none;width:600px">
+      <div style="display:flex;align-items:baseline;gap:9px;margin-bottom:10px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8c7556">02</span><span style="font:500 11px 'IBM Plex Sans';letter-spacing:.06em;text-transform:uppercase;color:#4a3f33">Temas de una materia</span></div>
+      <div style="background:#1a1614;border:1px solid #3a3229;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.20);padding:26px 28px">
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px">
+          <span style="font:500 11px 'IBM Plex Sans';color:#c79a82;display:inline-flex;align-items:center;gap:5px"><span style="font-size:14px">←</span> Examen</span>
+          <span style="flex:1"></span>
+        </div>
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:4px">
+          <div>
+            <p style="font:500 10px 'IBM Plex Sans';letter-spacing:.12em;text-transform:uppercase;color:#a89880;margin:0 0 6px">Física · Sofía · 8 de 11 temas vistos</p>
+            <h2 style="font-family:'Fraunces',serif;font-weight:500;font-size:22px;letter-spacing:-.02em;color:#efe4cf;margin:0">Dónde poner tu energía</h2>
+            <p style="font:400 11.5px 'IBM Plex Sans';color:#a89880;margin:7px 0 0">Faltan 6 días — subir <strong style="font-weight:600;color:#d97a64">Termodinámica</strong> suma ~5 aciertos</p>
+          </div>
+          <div style="text-align:right"><div style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:28px;color:#7faa6a;line-height:1">71%</div><div style="font:400 10px 'IBM Plex Sans';color:#8a7861">dominio</div></div>
+        </div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:13px 0 18px">
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#a89880"><span style="width:11px;height:11px;border-radius:3px;background:#45663a"></span>Dominas</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#a89880"><span style="width:11px;height:11px;border-radius:3px;background:#d4a04a"></span>En proceso</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#a89880"><span style="width:11px;height:11px;border-radius:3px;background:#c25a44"></span>A reforzar</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:#a89880"><span style="width:11px;height:11px;border-radius:3px;background:#3a3229"></span>Sin empezar</span>
+          <span style="flex:1"></span>
+          <span style="font:400 10px 'IBM Plex Mono',monospace;color:#8a7861">tamaño = peso en examen</span>
+        </div>
+        <div class="bento">
+          <div class="tile" style="grid-column:span 2;grid-row:span 2;background:#c25a44">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start"><span style="font:500 8.5px 'IBM Plex Sans';letter-spacing:.06em;text-transform:uppercase;color:#fff;background:rgba(0,0,0,.18);padding:3px 8px;border-radius:4px">Empieza aquí</span><span style="font:500 10px 'IBM Plex Sans';color:#fff">▲ +6 sem.</span></div>
+            <div><div class="pct" style="font-size:40px;color:#fff;font-weight:500">42%</div><div class="nm" style="font-family:'Fraunces',serif;font-weight:500;font-size:19px;color:#fff;margin-top:4px">Termodinámica</div><div style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.18);border-radius:6px;padding:7px 12px;font:500 11px 'IBM Plex Sans';color:#fff;margin-top:9px">Practicar 10 reactivos →</div></div>
+          </div>
+          <div class="tile" style="grid-column:span 2;background:#c25a44"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#f1d9cf">Física moderna</div><div style="display:flex;align-items:flex-end;justify-content:space-between"><span class="pct" style="font-size:22px;color:#fff;font-weight:500">48%</span><span style="font:400 9.5px 'IBM Plex Sans';color:#f1d9cf">12 react.</span></div></div>
+          <div class="tile" style="grid-row:span 2;background:#45663a"><div class="nm" style="font:500 11px 'IBM Plex Sans';color:#dfe9d2">Electro-magnetismo</div><div><div class="pct" style="font-size:24px;color:#fff;font-weight:500">79%</div><div style="font:400 9.5px 'IBM Plex Sans';color:#c2d2b3;margin-top:3px">14 react.</div></div></div>
+          <div class="tile" style="background:#45663a"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#dfe9d2">Cinemática</div><span class="pct" style="font-size:16px;color:#fff">88%</span></div>
+          <div class="tile" style="background:#45663a"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#dfe9d2">Dinámica</div><span class="pct" style="font-size:16px;color:#fff">82%</span></div>
+          <div class="tile" style="background:#d4a04a"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#241b06">Mov. ondulat.</div><span class="pct" style="font-size:16px;color:#241b06">64%</span></div>
+          <div class="tile" style="background:#d4a04a"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#241b06">Fluidos</div><span class="pct" style="font-size:16px;color:#241b06">58%</span></div>
+          <div class="tile" style="background:#45663a"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#dfe9d2">Trabajo y energía</div><span class="pct" style="font-size:16px;color:#fff">76%</span></div>
+          <div class="tile" style="background:#45663a"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#dfe9d2">Óptica</div><span class="pct" style="font-size:16px;color:#fff">73%</span></div>
+          <div class="tile" style="background:#d4a04a"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#241b06">Ondas</div><span class="pct" style="font-size:16px;color:#241b06">61%</span></div>
+          <div class="tile" style="background:#3a3229"><div class="nm" style="font:500 10px 'IBM Plex Sans';color:#a89880">Magnetismo</div><span class="pct" style="font-size:13px;color:#8a7861">— sin empezar</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

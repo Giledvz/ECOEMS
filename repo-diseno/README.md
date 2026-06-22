@@ -19,6 +19,8 @@ crema-coñac-terracota). Todo reusa tus tokens y se integra a `server.js`.
 | `comprobante-telegram.js` | Tarjeta **corta** del comprobante (código `buildPortadaCortaHTML`) + envío por **Telegram** (imagen PNG) | Cópialo a la raíz del repo (junto a `server.js`) y requiérelo desde ahí |
 | `IMPLEMENTAR-dashboard-colores.md` | Guía paste-ready: legibilidad de colores del **dashboard académico** (apagados Tercial + señales redundantes) | Se aplica sobre `dashboard-academico.html` |
 | `IMPLEMENTAR-dashboard-tercial.md` | Guía paste-ready: andamiaje para llevar el **dashboard al look Tercial** (fuentes, tarjetas crema, métricas, Chart.js) | Se aplica sobre `dashboard-academico.html` (+ el doc de colores) |
+| `IMPLEMENTAR-mapa-bento.md` | Guía paste-ready + **explicación a detalle** del **"Tu mapa"** bento de dominio (2 niveles, escala de color, las 4 señales: acción / proyección / tendencia / cobertura). Responde cualquier "¿qué significa X?" | Home (o sección) de Tercial — vista nueva |
+| `referencia/Mapa Tercial.dc.html` | **Mockup final del mapa bento** — dos pantallas (materias → temas), claro y oscuro, con las 4 señales. **Fuente de verdad.** | Solo referencia de diseño |
 | `referencia/Dashboard Tercial Completo.dc.html` | **Mockup final del dashboard** — apagado+señales completo (radares, mapa de calor, detalle por pregunta). **Fuente de verdad.** | Solo referencia de diseño |
 | `referencia/Dashboard Tercial.dc.html` | Mockup *histórico*: comparación vivo vs apagado (vivo descartado) | Solo referencia |
 | `referencia/Portada Comprobante.dc.html` | Mockup visual: portada corta (Telegram) + completa (PDF) | Solo referencia de diseño (no va a producción) |
@@ -47,6 +49,10 @@ crema-coñac-terracota). Todo reusa tus tokens y se integra a `server.js`.
    barras agrupadas), y de vuelta al tercial Pasos 4–7 (Chart.js, radares
    coñac/terracota, mapa de calor, detalle por pregunta). Reproduce
    `referencia/Dashboard Tercial Completo.dc.html`.
+7. **"Tu mapa" (bento de dominio)** → `IMPLEMENTAR-mapa-bento.md`. Vista nueva
+   para la home. Léelo completo: explica los 2 niveles (materias→temas), la
+   escala de color, el mapeo tamaño→span del grid, y las 4 señales de valor con
+   su fórmula y objetivo. Reproduce `referencia/Mapa Tercial.dc.html`.
 
 ## Notas
 
