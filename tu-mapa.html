@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#cdc3b0">
+<title>Tu mapa · ECOEMS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --page:#cdc3b0; --card:#f5efe4; --border:#e6dcc4; --ink:#1f1a16; --ink2:#4a3f33; --ink3:#7a6448;
+    --muted:#8c7556; --muted2:#a89880; --accent:#6b3a2e; --green:#4a6b3f; --line:#b8ab92; --shadow:rgba(74,63,51,.10);
+    --pagegrad: radial-gradient(at 18% 22%, rgba(140,117,86,.10) 0, transparent 55%), radial-gradient(at 85% 80%, rgba(107,58,46,.07) 0, transparent 55%);
+  }
+  [data-theme="dark"]{
+    --page:#14110f; --card:#1a1614; --border:#3a3229; --ink:#efe4cf; --ink2:#d9cbb0; --ink3:#a89880;
+    --muted:#a89880; --muted2:#8a7861; --accent:#c79a82; --green:#7faa6a; --line:#3a3229; --shadow:rgba(0,0,0,.22);
+    --pagegrad: radial-gradient(at 18% 22%, rgba(199,154,130,.06) 0, transparent 55%), radial-gradient(at 85% 80%, rgba(140,117,86,.05) 0, transparent 55%);
+  }
+  *{margin:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:'IBM Plex Sans',sans-serif;background:var(--page);background-image:var(--pagegrad);
+       color:var(--ink);min-height:100vh;-webkit-font-smoothing:antialiased;
+       padding:clamp(16px,5vw,48px);transition:background-color .3s,color .3s;}
+  .wrap{max-width:560px;margin:0 auto;}
+
+  .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;}
+  .brand{font:500 11px 'IBM Plex Sans';letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+  .theme{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid var(--border);
+         border-radius:8px;background:var(--card);color:var(--muted);cursor:pointer;}
+  .theme svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+  .theme .i-moon,.theme .i-auto{display:none;}
+  [data-theme-pref="dark"] .theme .i-sun{display:none;} [data-theme-pref="dark"] .theme .i-moon{display:block;}
+  [data-theme-pref="auto"] .theme .i-sun{display:none;} [data-theme-pref="auto"] .theme .i-auto{display:block;}
+
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:0 1px 4px var(--shadow);
+        padding:clamp(18px,5vw,28px);}
+  .back{display:inline-flex;align-items:center;gap:5px;font:500 12px 'IBM Plex Sans';color:var(--accent);
+        background:none;border:0;cursor:pointer;padding:0;margin-bottom:14px;}
+  .back .a{font-size:15px;}
+  .hrow{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;}
+  .eyebrow{font:500 10px 'IBM Plex Sans';letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+  .htitle{font-family:'Fraunces',serif;font-weight:500;font-size:22px;letter-spacing:-.02em;color:var(--ink);}
+  .proj{font:400 11.5px 'IBM Plex Sans';color:var(--ink3);margin-top:7px;line-height:1.45;}
+  .proj b{font-weight:600;color:var(--green);}
+  .dom{text-align:right;flex:none;}
+  .dom .v{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:28px;color:var(--green);line-height:1;}
+  .dom .l{font:400 10px 'IBM Plex Sans';color:var(--muted2);}
+  .legend{display:flex;gap:13px;flex-wrap:wrap;align-items:center;margin:14px 0 18px;}
+  .legend span{display:inline-flex;align-items:center;gap:5px;font:400 10.5px 'IBM Plex Sans';color:var(--ink3);}
+  .legend .sw{width:11px;height:11px;border-radius:3px;}
+  .legend .note{flex:1;text-align:right;font:400 10px 'IBM Plex Mono',monospace;color:var(--muted2);}
+
+  .bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:82px;gap:9px;grid-auto-flow:dense;}
+  .tile{border-radius:9px;padding:11px 13px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative;}
+  .tile.nav{cursor:pointer;}
+  .tile .pct{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums;line-height:1;}
+  .tile .nm{line-height:1.12;}
+  .badge{font:500 8.5px 'IBM Plex Sans';letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;}
+  .cta{display:inline-flex;align-items:center;gap:6px;border-radius:6px;padding:7px 12px;font:500 11px 'IBM Plex Sans';margin-top:9px;}
+  .foot{font:400 10px 'IBM Plex Sans';color:var(--muted2);text-align:center;margin-top:14px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <span class="brand">Tercial · tu mapa</span>
+    <button class="theme" onclick="toggleTheme()" aria-label="Cambiar tema" type="button">
+      <svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="i-auto" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg>
+    </button>
+  </div>
+  <div class="card" id="card"></div>
+  <div class="foot">Prototipo · datos de ejemplo (Sofía). En producción vienen del progreso real del alumno.</div>
+</div>
+
+<script>
+// ───────── tema (claro / oscuro / auto) ─────────
+const TKEY='ecoems-theme-pref', TORDER=['light','dark','auto'];
+const TMQL=window.matchMedia('(prefers-color-scheme: dark)');
+const getPref=()=>{ const s=localStorage.getItem(TKEY); return TORDER.includes(s)?s:'auto'; };
+const isDark=()=>{ const p=getPref(); return p==='auto'?TMQL.matches:p==='dark'; };
+function applyTheme(pref){ const a=pref==='auto'?(TMQL.matches?'dark':'light'):pref;
+  document.documentElement.setAttribute('data-theme',a); document.documentElement.setAttribute('data-theme-pref',pref); }
+function toggleTheme(){ const n=TORDER[(TORDER.indexOf(getPref())+1)%3]; localStorage.setItem(TKEY,n); applyTheme(n); render(); }
+TMQL.addEventListener('change',()=>{ if(getPref()==='auto'){ applyTheme('auto'); render(); } });
+applyTheme(getPref());
+
+// ───────── datos de ejemplo ─────────
+const DATA = {
+  student:'Sofía', daysLeft:6, metaPct:70,
+  materias:[
+    { key:'mate',  name:'Matemáticas',  pct:75, subtemas:9, preg:12 },
+    { key:'fis',   name:'Física',       pct:71, subtemas:7, preg:12, temas:[
+        { name:'Termodinámica',     pct:42, react:18, trend:6 },
+        { name:'Física moderna',    pct:48, react:12 },
+        { name:'Electromagnetismo', pct:79, react:14 },
+        { name:'Cinemática',        pct:88 },
+        { name:'Dinámica',          pct:82 },
+        { name:'Trabajo y energía', pct:76 },
+        { name:'Óptica',            pct:73 },
+        { name:'Mov. ondulat.',     pct:64 },
+        { name:'Ondas',             pct:61 },
+        { name:'Fluidos',           pct:58 },
+        { name:'Magnetismo',        pct:null },
+      ] },
+    { key:'quim',  name:'Química',       pct:75, subtemas:7, preg:12 },
+    { key:'verb',  name:'Razon. verbal', pct:81, subtemas:4, preg:16 },
+    { key:'esp',   name:'Español',       pct:67, subtemas:8, preg:12 },
+    { key:'bio',   name:'Biología',      pct:67, subtemas:8, preg:12 },
+    { key:'hist',  name:'Historia',      pct:58, subtemas:7, preg:12 },
+    { key:'geo',   name:'Geografía',     pct:75, subtemas:6, preg:12 },
+    { key:'civ',   name:'F. cívica',     pct:75, subtemas:5, preg:12 },
+    { key:'rmate', name:'Razon. mate.',  pct:63, subtemas:4, preg:16 },
+  ],
+};
+
+// ───────── color por % de dominio (idéntico a la guía) ─────────
+function tileColors(pct, dark){
+  if(pct==null) return dark?{bg:'#3a3229',fg:'#a89880',sub:'#8a7861'}:{bg:'#e6dcc4',fg:'#8c7556',sub:'#a89880'};
+  if(pct>=70)  return dark?{bg:'#45663a',fg:'#fff',sub:'#bccfae'}:{bg:'#4a6b3f',fg:'#fff',sub:'#cdddbf'};
+  if(pct>=50)  return dark?{bg:'#d4a04a',fg:'#241b06',sub:'#4a3608'}:{bg:'#e6a829',fg:'#3a2c08',sub:'#5a4410'};
+  return            dark?{bg:'#c25a44',fg:'#fff',sub:'#f1d9cf'}:{bg:'#9c3525',fg:'#fff',sub:'#f1d3ca'};
+}
+const pctTxt = p => p==null ? '— sin empezar' : p+'%';
+
+// ───────── estado de navegación ─────────
+let view = { level:'materias', materia:null };
+
+function render(){
+  if(view.level==='temas') renderTemas(DATA.materias.find(m=>m.key===view.materia));
+  else renderMaterias();
+}
+
+// ── Nivel 1: materias (tamaño = nº de subtemas) ──
+function spanL1(m){
+  if(m.subtemas>=9) return 'grid-column:span 2;grid-row:span 2';   // 2×2
+  if(m.temas)       return 'grid-row:span 2';                       // navegable → alto
+  if(m.subtemas>=8) return 'grid-column:span 2';                    // 2×1
+  return '';                                                        // 1×1
+}
+function renderMaterias(){
+  const dark=isDark();
+  const tiles = DATA.materias.map(m=>{
+    const c=tileColors(m.pct,dark), span=spanL1(m);
+    const big=m.subtemas>=9, tall=!!m.temas && m.subtemas<9;
+    if(big){
+      return `<div class="tile" style="${span};background:${c.bg}">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start">
+          <span class="nm" style="font-family:'Fraunces',serif;font-weight:500;font-size:20px;color:${c.fg}">${m.name}</span>
+          <span style="font:400 9.5px 'IBM Plex Mono';color:${c.sub}">${m.subtemas} subt</span></div>
+        <div><div class="pct" style="font-size:40px;color:${c.fg};font-weight:500">${m.pct}%</div>
+          <div style="font:400 11px 'IBM Plex Sans';color:${c.sub};margin-top:5px">${m.subtemas} subtemas · ${m.preg} preguntas</div></div></div>`;
+    }
+    if(tall){
+      return `<div class="tile nav" onclick="goTemas('${m.key}')" style="${span};background:${c.bg};outline:1.5px solid var(--ink);outline-offset:-1.5px">
+        <div class="nm" style="font:600 12px 'IBM Plex Sans';color:${c.fg}">${m.name}</div>
+        <div><div class="pct" style="font-size:24px;color:${c.fg};font-weight:500">${m.pct}%</div>
+          <div style="font:400 9px 'IBM Plex Sans';color:${c.sub};margin-top:3px">${m.subtemas} subt · ${m.preg} preg</div>
+          <div style="font:500 10px 'IBM Plex Sans';color:${c.fg};margin-top:7px">ver temas →</div></div></div>`;
+    }
+    const wide=m.subtemas>=8;
+    return `<div class="tile" style="${span};background:${c.bg}">
+      <div class="nm" style="font:500 11px 'IBM Plex Sans';color:${c.fg}">${m.name}</div>
+      <div style="display:flex;align-items:flex-end;justify-content:space-between">
+        <span class="pct" style="font-size:${wide?20:17}px;color:${c.fg}${wide?';font-weight:500':''}">${m.pct}%</span>
+        <span style="font:400 ${wide?9:8.5}px 'IBM Plex Sans';color:${c.sub}">${wide?m.subtemas+' subtemas · '+m.preg+' preg':(m.preg>=16?m.subtemas+' · '+m.preg+' preg':m.subtemas+' subt')}</span></div></div>`;
+  }).join('');
+
+  document.getElementById('card').innerHTML = `
+    <div class="hrow">
+      <div>
+        <div class="eyebrow">Examen ECOEMS · ${DATA.student}</div>
+        <div class="htitle">Tu examen completo</div>
+      </div>
+      <div class="dom"><div class="v">${DATA.globalPct||globalDominio()}%</div><div class="l">dominio global</div></div>
+    </div>
+    ${legend(false)}
+    <div class="bento">${tiles}</div>`;
+}
+
+// ── Nivel 2: temas (tamaño = peso en examen / reactivos) ──
+function priorityTema(temas){
+  let best=null, score=-1;
+  temas.forEach(t=>{ if(t.react!=null && t.pct!=null){ const s=t.react*(100-t.pct); if(s>score){score=s;best=t;} } });
+  return best;
+}
+function spanL2(t, prio){
+  if(t===prio) return 'grid-column:span 2;grid-row:span 2';   // 2×2 prioridad
+  if(t.react>=14) return 'grid-row:span 2';                    // alto
+  if(t.react>=12) return 'grid-column:span 2';                 // ancho
+  return '';
+}
+function renderTemas(m){
+  const dark=isDark(), temas=m.temas, prio=priorityTema(temas);
+  // ordenar: prioridad primero, luego los con tamaño (react) por react desc, luego el resto
+  const ord=[...temas].sort((a,b)=>{
+    if(a===prio) return -1; if(b===prio) return 1;
+    const ra=a.react||0, rb=b.react||0; if((rb>=12)!==(ra>=12)) return (rb>=12)-(ra>=12);
+    return rb-ra;
+  });
+  const vistos=temas.filter(t=>t.pct!=null).length;
+  const ganables=prio?Math.round(prio.react*(DATA.metaPct-prio.pct)/100):0;
+
+  const tiles=ord.map(t=>{
+    const c=tileColors(t.pct,dark), span=spanL2(t,prio);
+    if(t===prio){
+      const badgeBg=dark?'rgba(0,0,0,.18)':'rgba(255,255,255,.15)';
+      const ctaBg=dark?'rgba(255,255,255,.18)':'rgba(255,255,255,.16)';
+      const trend=t.trend!=null?`<span style="font:500 10px 'IBM Plex Sans';color:${c.fg}">▲ +${t.trend} sem.</span>`:'<span></span>';
+      return `<div class="tile" style="${span};background:${c.bg}">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start">
+          <span class="badge" style="color:${c.fg};background:${badgeBg}">Empieza aquí</span>${trend}</div>
+        <div><div class="pct" style="font-size:40px;color:${c.fg};font-weight:500">${t.pct}%</div>
+          <div class="nm" style="font-family:'Fraunces',serif;font-weight:500;font-size:19px;color:${c.fg};margin-top:4px">${t.name}</div>
+          <div class="cta" onclick="practicar('${m.key}','${t.name.replace(/'/g,"\\'")}')" style="background:${ctaBg};color:${c.fg};cursor:pointer">Practicar 10 reactivos →</div></div></div>`;
+    }
+    const tall=t.react>=14, wide=t.react!=null&&t.react>=12&&!tall, sized=tall||wide;
+    if(tall){
+      return `<div class="tile" style="${span};background:${c.bg}">
+        <div class="nm" style="font:500 11px 'IBM Plex Sans';color:${c.fg}">${t.name}</div>
+        <div><div class="pct" style="font-size:24px;color:${c.fg};font-weight:500">${t.pct}%</div>
+          <div style="font:400 9.5px 'IBM Plex Sans';color:${c.sub};margin-top:3px">${t.react} react.</div></div></div>`;
+    }
+    if(wide){
+      return `<div class="tile" style="${span};background:${c.bg}">
+        <div class="nm" style="font:500 11px 'IBM Plex Sans';color:${c.fg}">${t.name}</div>
+        <div style="display:flex;align-items:flex-end;justify-content:space-between">
+          <span class="pct" style="font-size:22px;color:${c.fg};font-weight:500">${t.pct}%</span>
+          <span style="font:400 9.5px 'IBM Plex Sans';color:${c.sub}">${t.react} react.</span></div></div>`;
+    }
+    return `<div class="tile" style="background:${c.bg}">
+      <div class="nm" style="font:500 10px 'IBM Plex Sans';color:${c.fg}">${t.name}</div>
+      <span class="pct" style="font-size:${t.pct==null?13:16}px;color:${t.pct==null?c.sub:c.fg}">${pctTxt(t.pct)}</span></div>`;
+  }).join('');
+
+  document.getElementById('card').innerHTML = `
+    <button class="back" onclick="goMaterias()"><span class="a">←</span> Examen</button>
+    <div class="hrow">
+      <div>
+        <div class="eyebrow">${m.name} · ${DATA.student} · ${vistos} de ${temas.length} temas vistos</div>
+        <div class="htitle">Dónde poner tu energía</div>
+        ${prio?`<div class="proj">Faltan ${DATA.daysLeft} días — subir <b>${prio.name}</b> suma ~${ganables} aciertos</div>`:''}
+      </div>
+      <div class="dom"><div class="v">${m.pct}%</div><div class="l">dominio</div></div>
+    </div>
+    ${legend(true)}
+    <div class="bento">${tiles}</div>`;
+}
+
+function legend(withEmpty){
+  const dark=isDark();
+  const sw=(pct)=>tileColors(pct,dark).bg;
+  return `<div class="legend">
+    <span><span class="sw" style="background:${sw(80)}"></span>Dominas</span>
+    <span><span class="sw" style="background:${sw(60)}"></span>En proceso</span>
+    <span><span class="sw" style="background:${sw(40)}"></span>A reforzar</span>
+    ${withEmpty?`<span><span class="sw" style="background:${sw(null)}"></span>Sin empezar</span>`:''}
+    <span class="note">tamaño = ${withEmpty?'peso en examen':'nº de subtemas'}</span></div>`;
+}
+function globalDominio(){ // promedio ponderado por preguntas
+  let n=0,d=0; DATA.materias.forEach(m=>{ n+=m.pct*m.preg; d+=m.preg; }); return Math.round(n/d);
+}
+
+function goTemas(k){ view={level:'temas',materia:k}; render(); }
+function goMaterias(){ view={level:'materias',materia:null}; render(); }
+function practicar(mk,tn){ alert('(demo) Aquí iniciaría la práctica de "'+tn+'" — 10 reactivos.'); }
+
+render();
+</script>
+</body>
+</html>
