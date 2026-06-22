@@ -1197,6 +1197,86 @@
     pointer-events: none;
   }
 </style>
+<style>
+  /* ===== Vista móvil del panel (aditiva; se activa <760px) ===== */
+  #mPanel{display:none;}
+  @media (max-width:759px){
+    body{padding:0 !important;}
+    .header,.rooms-bar,#roomDetail,#emptyRoomState,#darkToggleFloating{display:none !important;}
+    #mPanel{display:block;max-width:430px;margin:0 auto;padding-bottom:100px;font-family:var(--font-family-body);}
+  }
+  #mPanel .ic{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;vertical-align:middle;}
+  #mPanel .ic-sm{width:13px;height:13px;}
+  .m-topbar{position:sticky;top:0;z-index:7;display:flex;align-items:center;gap:8px;padding:9px 12px;background:var(--color-bg-raised);border-bottom:1px solid var(--color-border-subtle);}
+  .m-rooms{display:flex;gap:7px;overflow-x:auto;flex:1;scrollbar-width:none;}
+  .m-rooms::-webkit-scrollbar{display:none;}
+  .m-chip{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font:inherit;font-size:12px;font-weight:500;padding:6px 12px;border:1px solid var(--color-border);border-radius:var(--radius-pill);background:var(--color-bg-page);color:var(--color-text-meta);cursor:pointer;flex-shrink:0;}
+  .m-chip.active{background:var(--accent-conac);border-color:var(--accent-conac);color:var(--crema-100);}
+  .m-rc-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+  .m-rc-dot.waiting{background:var(--state-warn);} .m-rc-dot.active{background:var(--state-ok);} .m-rc-dot.closed{background:var(--crema-700);}
+  .m-chip.active .m-rc-dot{box-shadow:0 0 0 2px rgba(255,255,255,.35);}
+  .m-rc-n{font-family:var(--font-family-mono);font-size:11px;opacity:.75;}
+  .m-tools{display:flex;gap:6px;flex-shrink:0;}
+  .m-iconbtn{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid var(--color-border);border-radius:var(--radius-md);background:var(--color-bg-page);color:var(--color-text-meta);cursor:pointer;}
+  .m-iconbtn .ic{width:17px;height:17px;}
+  .m-theme .icon-moon,.m-theme .icon-sunmoon{display:none;}
+  [data-theme-pref="dark"] .m-theme .icon-sun{display:none;} [data-theme-pref="dark"] .m-theme .icon-moon{display:block;}
+  [data-theme-pref="auto"] .m-theme .icon-sun{display:none;} [data-theme-pref="auto"] .m-theme .icon-sunmoon{display:block;}
+  .m-header{background:var(--color-bg-raised);border-bottom:1px solid var(--color-border-subtle);padding:14px 16px 12px;}
+  .m-sala-lbl{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-meta);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .m-sala{font-family:var(--font-family-mono);font-weight:600;font-size:22px;letter-spacing:.06em;color:var(--color-text-primary);}
+  .m-pills{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:11px;}
+  .m-badge{display:inline-flex;align-items:center;font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--color-border);border-radius:var(--radius-pill);padding:3px 11px;color:var(--color-text-meta);}
+  .m-badge.waiting{color:var(--state-warn);border-color:var(--state-warn);}
+  .m-badge.active{color:var(--state-ok);border-color:var(--state-ok);}
+  .m-badge.closed{color:var(--state-err);border-color:var(--state-err);}
+  .m-timer{display:inline-flex;align-items:center;padding:.45rem 1rem;border:1px solid var(--state-ok);border-radius:var(--radius-pill);font-family:var(--font-family-mono);font-size:18px;font-weight:500;color:var(--state-ok);font-variant-numeric:tabular-nums;letter-spacing:.03em;line-height:1;white-space:nowrap;transition:color .4s,border-color .4s;}
+  .m-timer.m-timer--warn{color:var(--state-warn);border-color:var(--state-warn);}
+  .m-timer.m-timer--crit{color:var(--state-err);border-color:var(--state-err);}
+  .m-counts{margin-top:9px;font-size:13px;color:var(--color-text-meta);display:flex;gap:7px;flex-wrap:wrap;align-items:center;}
+  .m-counts b{font-weight:600;color:var(--color-text-primary);} .m-counts .sep{color:var(--color-border);} .m-counts .al{color:var(--state-err);font-weight:600;}
+  .m-main{padding:6px 16px 0;}
+  .m-sec{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--color-text-meta);margin:18px 4px 9px;display:flex;align-items:center;gap:7px;}
+  .m-sec.warn{color:var(--state-err);} .m-sec .n{margin-left:auto;font-family:var(--font-family-mono);color:var(--crema-700);font-weight:500;}
+  .m-alerts{background:var(--color-bg-raised);border:1px solid var(--color-border-subtle);border-left:3px solid var(--state-err);border-radius:var(--radius-lg);overflow:hidden;}
+  .m-arow{display:flex;align-items:center;gap:10px;padding:11px 13px;border-bottom:1px solid var(--color-bg-hover);}
+  .m-arow:last-child{border-bottom:0;}
+  .m-arow .nm{font-size:14px;font-weight:600;color:var(--color-text-primary);}
+  .m-arow .why{font-size:12px;color:var(--state-err);margin-top:2px;} .m-arow .why.muted{color:var(--color-text-meta);}
+  .m-arow .grow{flex:1;min-width:0;}
+  .m-restore{font:inherit;font-size:12px;font-weight:500;color:var(--state-ok);background:transparent;border:1px solid var(--state-ok);border-radius:var(--radius-md);padding:7px 13px;cursor:pointer;white-space:nowrap;}
+  .m-list{background:var(--color-bg-raised);border:1px solid var(--color-border-subtle);border-radius:var(--radius-lg);overflow:hidden;}
+  .m-st{border-bottom:1px solid var(--color-bg-hover);} .m-st:last-child{border-bottom:0;}
+  .m-stm{display:grid;grid-template-columns:10px 1fr auto auto;gap:11px;align-items:center;padding:12px 13px;cursor:pointer;}
+  .m-dot{width:8px;height:8px;border-radius:50%;}
+  .m-dot.connected{background:var(--state-ok);} .m-dot.disconnected{background:var(--state-err);} .m-dot.submitted{background:var(--accent-conac);} .m-dot.cancelled{background:var(--state-err);box-shadow:0 0 0 3px var(--state-err-bg);}
+  .m-st .nm{font-size:14px;font-weight:500;color:var(--color-text-primary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .m-prog{display:flex;align-items:center;gap:8px;}
+  .m-bar{width:52px;height:5px;background:var(--color-border);border-radius:var(--radius-pill);overflow:hidden;}
+  .m-bar i{display:block;height:100%;background:var(--accent-conac);border-radius:inherit;}
+  .m-cnt{font-family:var(--font-family-mono);font-size:12px;font-weight:600;color:var(--ink-700);font-variant-numeric:tabular-nums;min-width:44px;text-align:right;}
+  .m-sal{display:inline-flex;align-items:center;gap:3px;font-family:var(--font-family-mono);font-size:12px;font-weight:600;color:var(--state-err);font-variant-numeric:tabular-nums;min-width:30px;justify-content:flex-end;}
+  .m-done{color:var(--state-ok);display:inline-flex;min-width:30px;justify-content:flex-end;}
+  .m-slot{min-width:30px;}
+  .m-sc{font-family:var(--font-family-mono);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;min-width:46px;text-align:right;}
+  .m-sc.ok{color:var(--state-ok);} .m-sc.warn{color:var(--state-warn);} .m-sc.err{color:var(--state-err);}
+  .m-time{font-family:var(--font-family-mono);font-size:11px;color:var(--color-text-meta);font-variant-numeric:tabular-nums;min-width:54px;text-align:right;}
+  .m-cancel{font-size:11px;font-weight:500;color:var(--state-err);text-align:right;min-width:46px;}
+  .m-det{display:none;padding:0 13px 12px 34px;font-size:12px;color:var(--color-text-meta);gap:16px;flex-wrap:wrap;}
+  .m-st.open .m-det{display:flex;} .m-det b{color:var(--ink-700);font-weight:600;font-family:var(--font-family-mono);}
+  .m-empty{padding:26px 16px;text-align:center;color:var(--color-text-meta);font-size:13px;line-height:1.6;}
+  .m-actionbar{position:fixed;left:0;right:0;bottom:0;z-index:8;background:var(--color-bg-raised);border-top:1px solid var(--color-border-subtle);padding:12px 16px calc(12px + env(safe-area-inset-bottom));max-width:430px;margin:0 auto;}
+  .m-btn{width:100%;font:inherit;font-size:16px;font-weight:500;border-radius:var(--radius-md);padding:16px;cursor:pointer;border:1px solid transparent;display:flex;align-items:center;justify-content:center;gap:9px;line-height:1;}
+  .m-btn .ic{width:18px;height:18px;}
+  .m-btn.start{background:var(--color-text-primary);color:var(--color-bg-page);border-color:var(--color-text-primary);}
+  .m-btn.close{background:transparent;color:var(--color-text-primary);border-color:var(--color-border);}
+  .m-btn.closed{background:var(--color-bg-hover);color:var(--color-text-meta);}
+  .m-note{font-size:11px;color:var(--color-text-meta);text-align:center;padding:14px 24px 2px;line-height:1.6;}
+  .m-share{display:flex;flex-direction:column;align-items:center;gap:12px;}
+  .m-qr{background:#fff;padding:12px;border-radius:var(--radius-md);line-height:0;}
+  .m-qr img{width:180px;height:180px;display:block;}
+  .m-share-url{font-family:var(--font-family-mono);color:var(--accent-conac);font-size:13px;word-break:break-all;}
+</style>
 </head>
 <body>
 <script>
@@ -1401,6 +1481,25 @@
 <!-- ── Empty State (no room selected) ── -->
 <div id="emptyRoomState" class="empty-state">
   <p>Carga un examen JSON para crear una sala</p>
+</div>
+
+<!-- ── Vista móvil (aditiva; se rellena con renderMobile) ── -->
+<div id="mPanel">
+  <div class="m-topbar">
+    <div class="m-rooms" id="mRooms"></div>
+    <div class="m-tools">
+      <button class="m-iconbtn" type="button" aria-label="Compartir sala / QR" onclick="mShare()">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><path d="M15 15h2v2h-2z"/><path d="M19 15h2"/><path d="M15 19h2v2"/><path d="M19 19v2h2"/></svg>
+      </button>
+      <button class="m-iconbtn m-theme" type="button" aria-label="Cambiar tema" onclick="toggleDarkMode()">
+        <svg class="ic icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        <svg class="ic icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="ic icon-sunmoon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mMain"></div>
+  <div class="m-actionbar" id="mAction" style="display:none;"></div>
 </div>
 
 <script>
@@ -2462,6 +2561,188 @@ setInterval(() => {
   socket.emit('getRooms');
   if (selectedRoom) socket.emit('getStudents', { roomCode: selectedRoom });
 }, 20000);
+
+// ═══════════════ Vista móvil (capa aditiva; escritorio intacto) ═══════════════
+let mStudents = [], mPhase = 'waiting', mLastRoom = null;
+const M_IC = {
+  play: '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>',
+  stop: '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="1.5"/></svg>',
+  exit: '<svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>',
+};
+const mEsc = t => String(t==null?'':t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const mDisc = s => !s.connected && !s.submitted && !s.cancelled;
+const mNeeds = s => s.cancelled || mDisc(s) || (s.tabSwitches||0) > 0;
+const mStatus = s => s.cancelled ? 'cancelled' : s.submitted ? 'submitted' : s.connected ? 'connected' : 'disconnected';
+const mScoreCls = s => { const r = s.total ? s.correct/s.total : 0; return r>=0.7?'ok':r>=0.5?'warn':'err'; };
+function mFmtTime(sec){ if(sec==null) return '—'; const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60),s=sec%60; return h>0?`${h}h ${String(m).padStart(2,'0')}m`:`${m}m ${String(s).padStart(2,'0')}s`; }
+
+function mRowWrap(s, mid, det){
+  return `<div class="m-st"><div class="m-stm" onclick="this.parentElement.classList.toggle('open')">
+    <span class="m-dot ${mStatus(s)}"></span><span class="nm">${mEsc(s.name)}</span>${mid}</div>
+    <div class="m-det">${det.map(x=>`<span>${x}</span>`).join('')}</div></div>`;
+}
+function mScoreRow(s){
+  const sc = s.cancelled ? `<span class="m-cancel">Cancelado</span>` : `<span class="m-sc ${mScoreCls(s)}">${s.correct}/${s.total}</span>`;
+  return mRowWrap(s, `${sc}<span class="m-time">${mFmtTime(s.timeUsed)}</span>`,
+    [`Grupo <b>${mEsc(s.group)}</b>`, `Respondidas <b>${s.answered}/${s.total}</b>`, `Salidas <b>${s.tabSwitches||0}</b>`]);
+}
+function mProgRow(s){
+  const pct = s.total ? Math.round(s.answered/s.total*100) : 0;
+  const tail = (s.tabSwitches||0)>0 ? `<span class="m-sal">${M_IC.exit}${s.tabSwitches}</span>` : `<span class="m-slot"></span>`;
+  return mRowWrap(s, `<span class="m-prog"><span class="m-bar"><i style="width:${pct}%"></i></span><span class="m-cnt">${s.answered}/${s.total}</span></span>${tail}`,
+    [`Grupo <b>${mEsc(s.group)}</b>`, `Aciertos <b>${s.correct}/${s.answered||0}</b>`, `Tiempo <b>${mFmtTime(s.timeUsed)}</b>`, `Salidas <b>${s.tabSwitches||0}</b>`]);
+}
+function mConnRow(s){
+  return mRowWrap(s, `<span class="m-prog"><span class="m-bar"><i style="width:0%"></i></span><span class="m-cnt">0/${s.total}</span></span><span class="m-slot"></span>`,
+    [`Grupo <b>${mEsc(s.group)}</b>`, `Estado <b>Conectado</b>`]);
+}
+
+function renderMobile(){
+  const panel = document.getElementById('mPanel'); if(!panel) return;
+  // chips de salas
+  document.getElementById('mRooms').innerHTML = roomsData.length
+    ? roomsData.map(r => {
+        const ph = r.phase || 'waiting';
+        return `<button class="m-chip${r.roomCode===selectedRoom?' active':''}" type="button" onclick="selectRoom('${r.roomCode}')">
+          <span class="m-rc-dot ${ph}"></span>${mEsc(r.title||r.roomCode)}<span class="m-rc-n">${r.studentCount}</span></button>`;
+      }).join('')
+    : '<span class="m-empty" style="padding:8px 4px">Sin salas</span>';
+  // al cambiar de sala, centra el chip activo en la barra
+  if(mLastRoom !== selectedRoom){
+    mLastRoom = selectedRoom;
+    const ac = document.querySelector('#mRooms .m-chip.active');
+    if(ac && ac.scrollIntoView) ac.scrollIntoView({inline:'center', block:'nearest'});
+  }
+
+  const main = document.getElementById('mMain'), action = document.getElementById('mAction');
+  if(!selectedRoom){
+    main.innerHTML = `<div class="m-empty" style="padding:40px 16px">Selecciona una sala para monitorear.<br>Las salas se crean desde la computadora.</div>`;
+    action.style.display = 'none';
+    return;
+  }
+
+  const room = roomsData.find(r => r.roomCode===selectedRoom) || {};
+  const title = room.title || (document.getElementById('roomTitle')||{}).textContent || 'Examen';
+  const isP = selectedRoomMode === 'practice';
+  const phase = mPhase, sts = mStudents;
+  const connNow = sts.filter(s => s.connected && !s.submitted).length;
+  const submitted = sts.filter(s => s.submitted).length;
+  const answering = sts.filter(s => s.connected && !s.submitted && s.answered>0).length;
+  const sal = sts.filter(s => (s.tabSwitches||0)>0).length;
+
+  let counts;
+  if(phase==='waiting'){
+    counts = `<span><b>${connNow+submitted}</b> conectados</span>`;
+  } else if(phase==='closed'){
+    const g = sts.filter(s => s.submitted && !s.cancelled && s.correct!=null && s.total>0);
+    const avg = g.length ? Math.round(g.reduce((a,s)=>a + s.correct/s.total*100, 0)/g.length) : 0;
+    counts = `<span><b>${sts.length}</b> alumnos</span><span class="sep">·</span><span>prom. <b>${avg}%</b></span>`+(sal?`<span class="sep">·</span><span class="al">${sal} con salidas</span>`:'');
+  } else {
+    counts = `<span><b>${connNow+submitted}</b> conectados</span><span class="sep">·</span><span><b>${answering}</b> respondiendo</span><span class="sep">·</span><span><b>${submitted}</b> entregaron</span>`+(sal?`<span class="sep">·</span><span class="al">${sal} con salidas</span>`:'');
+  }
+
+  const badgeTxt = {waiting:'Esperando', active:'En curso', closed:'Cerrado'}[phase] || 'Esperando';
+  const showTimer = phase==='active' && !isP;
+  const tEl = document.getElementById('teacherTimer');
+  const tCls = tEl && tEl.classList.contains('timer-display--critical') ? 'm-timer--crit'
+             : tEl && tEl.classList.contains('timer-display--warn') ? 'm-timer--warn' : '';
+  const tText = (tEl && tEl.textContent) ? tEl.textContent : '0:00:00';
+
+  let html = `<div class="m-header">
+    <div class="m-sala-lbl">${mEsc(title)}</div>
+    <div class="m-sala">${mEsc(selectedRoom)}</div>
+    <div class="m-pills">
+      <span class="m-badge ${phase}">${badgeTxt}</span>
+      ${showTimer ? `<div class="m-timer ${tCls}" id="mTimer">${tText}</div>` : ''}
+    </div>
+    <div class="m-counts">${counts}</div>
+  </div><div class="m-main">`;
+
+  if(phase==='active'){
+    const att = sts.filter(mNeeds).sort((a,b)=>{ const w=s=>s.cancelled?0:mDisc(s)?1:2; return w(a)-w(b) || (b.tabSwitches||0)-(a.tabSwitches||0); });
+    if(att.length){
+      html += `<div class="m-sec warn">Requieren atención <span class="n">${att.length}</span></div><div class="m-alerts">`+
+        att.map(s=>{ let why, muted=false, act='';
+          if(s.cancelled){ why=`Cancelado · ${s.tabSwitches} salidas`; act=`<button class="m-restore" onclick="restoreStudent('${mEsc(s.id)}','${mEsc(s.name).replace(/'/g,"\\'")}')">Restaurar</button>`; }
+          else if(mDisc(s)){ why='Desconectado'; muted=true; }
+          else { why=`${s.tabSwitches} ${s.tabSwitches===1?'salida':'salidas'} de pestaña`; }
+          return `<div class="m-arow"><div class="grow"><div class="nm">${mEsc(s.name)}</div><div class="why ${muted?'muted':''}">${why}</div></div>${act}</div>`;
+        }).join('')+`</div>`;
+    }
+  }
+
+  const listTitle = phase==='closed'?'Resultados':phase==='waiting'?'Conectados':'Alumnos';
+  let listHtml, listN;
+  if(phase==='waiting'){
+    const here = sts.filter(s => s.connected && !s.submitted);
+    listN = here.length;
+    listHtml = here.length ? here.map(mConnRow).join('') : `<div class="m-empty">Aún no se conecta nadie.<br>Comparte el código de sala con tu grupo.</div>`;
+  } else if(phase==='closed'){
+    listN = sts.length;
+    listHtml = sts.length ? [...sts].sort((a,b)=>(b.correct||0)-(a.correct||0)).map(mScoreRow).join('') : `<div class="m-empty">Sin alumnos.</div>`;
+  } else {
+    listN = sts.length;
+    const ord = [...sts].sort((a,b)=>{ const d=s=>s.submitted?1:0; return d(a)-d(b) || a.answered-b.answered; });
+    listHtml = sts.length ? ord.map(s => s.submitted ? mScoreRow(s) : mProgRow(s)).join('') : `<div class="m-empty">Esperando alumnos…</div>`;
+  }
+  html += `<div class="m-sec">${listTitle} <span class="n">${listN}</span></div><div class="m-list">${listHtml}</div>`;
+  if(isP) html += `<div class="m-note">Modo Carrusel: el control pregunta por pregunta vive en la versión de escritorio.</div>`;
+  html += `<div class="m-note">Reiniciar, eliminar y descargas: en la computadora.</div></div>`;
+  main.innerHTML = html;
+
+  action.style.display = '';
+  if(phase==='waiting') action.innerHTML = `<button class="m-btn start" onclick="startExam()">${M_IC.play} ${isP?'Iniciar Carrusel':'Iniciar examen'}</button>`;
+  else if(phase==='active') action.innerHTML = `<button class="m-btn close" onclick="closeExam()">${M_IC.stop} ${isP?'Terminar Carrusel':'Cerrar examen'}</button>`;
+  else action.innerHTML = `<button class="m-btn closed" disabled>${isP?'Carrusel terminado':'Examen cerrado'}</button>`;
+}
+
+// reloj móvil: espeja el #teacherTimer real (misma fuente de verdad)
+function syncMTimer(){
+  const m = document.getElementById('mTimer'); if(!m) return;
+  const d = document.getElementById('teacherTimer'); if(!d) return;
+  m.textContent = d.textContent;
+  m.classList.toggle('m-timer--crit', d.classList.contains('timer-display--critical'));
+  m.classList.toggle('m-timer--warn', d.classList.contains('timer-display--warn'));
+}
+setInterval(syncMTimer, 1000);
+
+// compartir sala (QR + link) — reusa el overlay y el QR/URL ya existentes
+function mShare(){
+  if(!selectedRoom) return;
+  let o = document.getElementById('mShareDlg');
+  if(!o){ o = document.createElement('div'); o.id = 'mShareDlg'; o.className = 'overlay'; document.body.appendChild(o); }
+  const qr = (document.getElementById('qrImg')||{}).src || '';
+  const url = studentUrl || '';
+  o.innerHTML = `<div class="overlay-card overlay-card--info">
+    <h2 class="overlay-card__title">${mEsc(selectedRoom)}</h2>
+    <div class="m-share"><div class="m-qr">${qr?`<img src="${qr}" alt="QR de la sala">`:'QR no disponible'}</div>
+      <div class="m-share-url">${mEsc(url)}</div></div>
+    <div class="overlay-card__actions">
+      <button class="btn btn--ghost" data-a="close" type="button">Cerrar</button>
+      <button class="btn btn--primary" data-a="copy" type="button">Copiar link</button></div></div>`;
+  o.classList.add('show');
+  const close = () => { o.classList.remove('show'); document.removeEventListener('keydown', k); };
+  const k = e => { if(e.key==='Escape') close(); };
+  o.querySelector('[data-a="close"]').onclick = close;
+  o.querySelector('[data-a="copy"]').onclick = () => { try{ navigator.clipboard.writeText(url); }catch(e){}
+    const btn = o.querySelector('[data-a="copy"]'); btn.textContent = '¡Copiado!'; setTimeout(()=>{ btn.textContent = 'Copiar link'; }, 1500); };
+  o.onclick = e => { if(e.target===o) close(); };
+  document.addEventListener('keydown', k);
+}
+
+// Envolver funciones existentes para refrescar la vista móvil (sin tocar su lógica).
+function safeMobile(){ try{ renderMobile(); }catch(e){ console.error('[móvil]', e); } }
+const _mRenderStudents = renderStudents;
+renderStudents = function(s){ mStudents = s || []; _mRenderStudents(s); safeMobile(); };
+const _mUpdatePhase = updatePhase;
+updatePhase = function(p){ mPhase = p; _mUpdatePhase(p); safeMobile(); };
+const _mRenderRoomsList = renderRoomsList;
+renderRoomsList = function(){ _mRenderRoomsList(); safeMobile(); };
+const _mSelectRoom = selectRoom;
+selectRoom = function(rc){ _mSelectRoom(rc); safeMobile(); };
+const _mRoomDeleted = () => { selectedRoom = null; mStudents = []; safeMobile(); };
+socket.on('roomDeleted', _mRoomDeleted);
+safeMobile();
 </script>
 </body>
 </html>
