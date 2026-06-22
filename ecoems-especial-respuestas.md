@@ -1,0 +1,88 @@
+# Respuestas — ECOEMS Especial (provisionales)
+
+Respuestas **inferidas** por IA y fundidas en `ecoems-especial.json` (con `explanation`). **Todas son provisionales — valídalas.**
+
+- **Respondidas:** 101/132 — confianza: **alta 94**, media 7, baja 0.
+- **Sin respuesta** (dependen de lectura/figura/opciones cortadas): 31. Quedan con `answer:""` (ver ecoems-especial-revision.md).
+
+## ⚠️ Mate y Ciencias — revisa estas 36 (aquí más conviene tu ojo)
+- **#11** [alta] **D** · Habilidad matemática · Sucesiones numéricas / término que falta
+  - _Las diferencias se duplican (+2,+4,+8,+16,+32): 39+32=71._
+- **#12** [media] **B** · Habilidad matemática · Sucesiones numéricas / conteo de dígitos
+  - _Los dígitos son 7,3,9,3,9... hasta la posición 12 hay nueves en las posiciones 3,5,7,9,11 = 5._
+- **#13** [alta] **D** · Habilidad matemática · Sucesiones numéricas / término que continúa
+  - _El patrón alterna +2,-3: tras 10 sigue 10-3=7._
+- **#21** [alta] **A** · Habilidad matemática · Años bisiestos / conteo y periodicidad
+  - _De 2000 a 2096 cada 4 años hay 25 bisiestos; el 2100 no es bisiesto (siglo no divisible entre 400), así que 25._
+- **#22** [alta] **A** · Habilidad matemática · Sistema de ecuaciones / conteo de patas (escarabajos y arañas)
+  - _Araña=8 patas, escarabajo=6; con e+a=10 y 6e+8a=66 resulta a=3 arañas._
+- **#32** [alta] **C** · Habilidad matemática · Problema aritmético: feria, niños y adultos (sistema de ecuaciones)
+  - _Cada par niño+adulto paga 10+20=30; 2400/30=80 niños._
+- **#34** [alta] **D** · Ciencias I (Biología) · Selección natural y evolución (adaptación de poblaciones)
+  - _La selección natural conduce a la adaptación de las poblaciones al medio._
+- **#35** [alta] **B** · Ciencias I (Biología) · Cadenas alimenticias / desintegradores (descomponedores)
+  - _Los desintegradores/descomponedores se nutren de cadáveres, residuos y excrementos._
+- **#36** [alta] **C** · Ciencias I (Biología) · Contaminación atmosférica en la Ciudad de México
+  - _Las principales fuentes de contaminación atmosférica en la CDMX son la industria y los automotores._
+- **#37** [alta] **D** · Ciencias I (Biología) · Manipulación genética en la agricultura
+  - _La manipulación genética en agricultura busca cultivos resistentes a las plagas._
+- **#82** [alta] **A** · Ciencias II (Física) · Interpretación de gráfica distancia-tiempo (MRU/MRUA)
+  - _Es la única opción internamente consistente: MRU en 3 s a 1 m/s recorre 3 m; las demás confunden unidades (minutos) o mezclan MRUA con velocidad constante._
+- **#84** [alta] **B** · Ciencias II (Física) · Gráficas velocidad-tiempo y movimiento uniformemente acelerado
+  - _En una gráfica v-t, el movimiento uniformemente acelerado es una recta ascendente desde el origen (aceleración constante); la opción A es velocidad constante._
+- **#85** [alta] **A** · Ciencias II (Física) · Equilibrio de fuerzas (peso y normal) sobre un cuerpo en reposo
+  - _Si el libro está en reposo, por la primera ley de Newton la suma de fuerzas (peso y normal) es igual a cero._
+- **#86** [alta] **B** · Ciencias II (Física) · Gravedad / caída libre
+  - _La causa de la caída es la atracción gravitatoria de la Tierra sobre el balín._
+- **#87** [alta] **A** · Ciencias II (Física) · Peso y gravedad en distintos planetas
+  - _El peso es mayor donde la gravedad es mayor; Venus (8.9 m/s²) es la mayor de la tabla._
+- **#88** [alta] **B** · Ciencias II (Física) · Energía potencial gravitatoria en altura máxima
+  - _En la altura máxima toda la energía cinética inicial se convierte en potencial: ½(1)(5²)=12.5 J._
+- **#89** [alta] **B** · Ciencias II (Física) · Transferencia de energía térmica (calor) y cambio de estado
+  - _La cera se derrite por transferencia de energía (calor) del sartén caliente a la cera._
+- **#90** [alta] **B** · Ciencias II (Física) · Temperatura de equilibrio al mezclar líquidos iguales
+  - _Mezclar dos cantidades iguales de agua a la misma temperatura (20 °C) mantiene 20 °C; la temperatura es intensiva._
+- **#91** [alta] **D** · Ciencias II (Física) · Materiales conductores de electricidad
+  - _Los conductores permiten el movimiento libre de electrones en su interior._
+- **#92** [alta] **C** · Ciencias II (Física) · Campo magnético generado por carga en movimiento
+  - _Una carga eléctrica en movimiento genera un campo magnético._
+- **#93** [alta] **A** · Ciencias II (Física) · Movimiento ondulatorio: frecuencia
+  - _La frecuencia es el número de ciclos por unidad de tiempo._
+- **#94** [alta] **B** · Ciencias II (Física) · Refracción y dispersión de la luz en un prisma
+  - _El prisma descompone la luz blanca en sus colores (dispersión)._
+- **#117** [alta] **A** · Matemáticas · Porcentajes aplicados a una tabla de datos
+  - _En 2010 el 90% de 1200 viviendas contaba con agua entubada: 1200×0.90=1080._
+- **#118** [alta] **B** · Matemáticas · Sucesiones numéricas (números triangulares)
+  - _Son números triangulares (1,3,6,10,15,21); el término faltante es 10._
+- **#121** [alta] **A** · Ciencias III (Química) · Estados de la materia / propiedades de los gases
+  - _Un gas es muy compresible, se expande llenando el recipiente y se difunde con facilidad._
+- **#122** [alta] **D** · Ciencias III (Química) · Estados de la materia / propiedades de los sólidos
+  - _Los sólidos tienen volumen y forma definidos._
+- **#123** [alta] **D** · Ciencias III (Química) · Conservación de la masa / aleaciones
+  - _Por conservación de la masa, 2 g + 2 g = 4.0 g._
+- **#124** [alta] **C** · Ciencias III (Química) · Ley de conservación de la masa en reacciones químicas
+  - _8 g + 4.04 g = 12.04 g, la masa total se conserva._
+- **#125** [alta] **B** · Ciencias III (Química) · Estructura atómica / partículas subatómicas (protones)
+  - _Los protones están en el núcleo y tienen carga positiva._
+- **#126** [alta] **D** · Ciencias III (Química) · Número atómico, número de masa, protones y neutrones
+  - _Protones = número atómico = 12; neutrones = 24 - 12 = 12._
+- **#127** [alta] **B** · Ciencias III (Química) · Estructura de Lewis y electrones de valencia del azufre
+  - _Los seis puntos indican seis electrones de valencia en el último nivel._
+- **#128** [alta] **D** · Ciencias III (Química) · Diferencia entre átomos, iones y compuestos (símbolos químicos)
+  - _Fe, Zn, Au son átomos neutros; las demás incluyen iones o compuestos._
+- **#129** [alta] **D** · Ciencias III (Química) · Tipos de enlace químico (covalente)
+  - _Compartir un par de electrones entre H y Cl es un enlace covalente._
+- **#130** [alta] **C** · Ciencias III (Química) · Estequiometría / cálculo de masa de producto y reactivo limitante
+  - _Relación 1:1; ~0.0234 mol de ZnI2 (319 g/mol) da ~7.5 g._
+- **#131** [alta] **B** · Ciencias III (Química) · Unidades del SI (mol, cantidad de sustancia)
+  - _El mol es la unidad del SI para la cantidad de sustancia; candela, kilogramo y ampere miden otras magnitudes._
+- **#132** [alta] **A** · Ciencias III (Química) · Tipos de reacciones químicas (oxidación)
+  - _El hierro del clavo reacciona con el oxigeno formando oxido (herrumbre), una reaccion de oxidacion-reduccion._
+
+## Otras de confianza media/baja (no ciencias) — 6
+- **#38** [media] **D** · Formación cívica y ética · Multiculturalidad e interculturalidad
+- **#53** [media] **C** · Español · Comprensión lectora: resumen del texto (opciones C y D)
+- **#60** [media] **A** · Español · Comprensión lectora: función del autor (recursos discursivos)
+- **#65** [media] **A** · Español · Identificación del tema de un texto
+- **#77** [media] **C** · Español · Comprensión lectora: opciones con enunciados en números romanos sobre nebulosas/estrellas
+- **#79** [media] **B** · Español · Tipos de texto: explicación / ejemplo / definición / resumen
