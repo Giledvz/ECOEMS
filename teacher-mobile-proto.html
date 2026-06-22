@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#f5efe4">
+<title>Panel del profesor · móvil (prototipo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --font-body:'IBM Plex Sans',sans-serif; --font-mono:'IBM Plex Mono',monospace; --font-display:'Fraunces',serif;
+    --conac:#6b3a2e; --conac-soft:#8c5240; --terra:#c2410c;
+    --ok:#5a8045; --ok-bg:#e7ecd9; --err:#b8362c; --err-bg:#f1dcd4; --warn:#b8862e; --warn-bg:#f1e6c4;
+    --crema-100:#f8f3e8; --crema-200:#f5efe4; --crema-300:#efe7d8; --crema-400:#e6dcc4;
+    --crema-500:#d9ccae; --crema-600:#c9bda3; --crema-700:#a89880;
+    --ink-300:#8c7556; --ink-500:#7a6448; --ink-700:#4a3f33; --ink-900:#1f1a16;
+    --radius-md:4px; --radius-lg:8px; --radius-pill:999px; --tracking:0.06em;
+  }
+  /* tema oscuro — tokens tomados de public/teacher.html [data-theme="dark"] */
+  [data-theme="dark"]{
+    color-scheme:dark;
+    --conac:#c79a82; --conac-soft:#a07a64; --terra:#dd8055;
+    --ok:#a3bd92; --ok-bg:#2a3526; --err:#d68a73; --err-bg:#3a2622; --warn:#d4a04a; --warn-bg:#3a3020;
+    --crema-100:#221d1a; --crema-200:#1a1614; --crema-300:#231e1b; --crema-400:#2e2823;
+    --crema-500:#3a3229; --crema-600:#4a3f33; --crema-700:#6b5a44;
+    --ink-300:#8a7861; --ink-500:#a89880; --ink-700:#d9cbb0; --ink-900:#efe4cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:var(--font-body);background:var(--crema-200);color:var(--ink-900);
+       -webkit-font-smoothing:antialiased;padding-bottom:100px;
+       transition:background-color .3s,color .3s;}
+  .wrap{max-width:430px;margin:0 auto;min-height:100vh;background:var(--crema-200);position:relative;}
+
+  .ic{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5;
+      stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;vertical-align:middle;}
+  .ic-sm{width:13px;height:13px;}
+
+  /* barra de salas + herramientas (QR, tema) */
+  .topbar{position:sticky;top:0;z-index:7;display:flex;align-items:center;gap:8px;padding:9px 12px;
+          background:var(--crema-100);border-bottom:1px solid var(--crema-400);}
+  .rooms{display:flex;gap:7px;overflow-x:auto;flex:1;scrollbar-width:none;}
+  .rooms::-webkit-scrollbar{display:none;}
+  .room-chip{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font:inherit;font-size:12px;font-weight:500;
+             padding:6px 12px;border:1px solid var(--crema-500);border-radius:var(--radius-pill);background:var(--crema-200);
+             color:var(--ink-500);cursor:pointer;flex-shrink:0;}
+  .room-chip.active{background:var(--conac);border-color:var(--conac);color:var(--crema-100);}
+  .rc-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+  .rc-dot.waiting{background:var(--warn);} .rc-dot.active{background:var(--ok);} .rc-dot.closed{background:var(--crema-700);}
+  .room-chip.active .rc-dot{box-shadow:0 0 0 2px rgba(255,255,255,.35);}
+  .rc-alert{font-family:var(--font-mono);font-size:10px;font-weight:600;color:#fff;background:var(--err);border-radius:var(--radius-pill);padding:0 6px;}
+  .tools{display:flex;gap:6px;flex-shrink:0;}
+  .iconbtn{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid var(--crema-500);
+           border-radius:var(--radius-md);background:var(--crema-200);color:var(--ink-500);cursor:pointer;flex-shrink:0;}
+  .iconbtn .ic{width:17px;height:17px;}
+  .theme-toggle .icon-moon, .theme-toggle .icon-sunmoon{display:none;}
+  [data-theme-pref="dark"] .theme-toggle .icon-sun{display:none;}
+  [data-theme-pref="dark"] .theme-toggle .icon-moon{display:block;}
+  [data-theme-pref="auto"] .theme-toggle .icon-sun{display:none;}
+  [data-theme-pref="auto"] .theme-toggle .icon-sunmoon{display:block;}
+
+  /* selector de fase (SOLO demo) */
+  .demo{display:flex;align-items:center;gap:8px;padding:8px 16px;font-size:11px;color:var(--ink-300);
+        background:var(--crema-100);border-bottom:1px solid var(--crema-400);}
+  .demo b{font-weight:600;color:var(--ink-500);letter-spacing:var(--tracking);}
+  .seg{display:inline-flex;border:1px solid var(--crema-500);border-radius:var(--radius-pill);overflow:hidden;margin-left:auto;}
+  .seg button{font:inherit;font-size:11px;padding:4px 11px;border:0;background:transparent;color:var(--ink-500);cursor:pointer;}
+  .seg button.on{background:var(--ink-900);color:var(--crema-100);}
+
+  header{background:var(--crema-100);border-bottom:1px solid var(--crema-400);padding:14px 16px 12px;}
+  .hr-pills{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:11px;}
+  .sala-lbl{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-300);font-weight:600;}
+  .sala{font-family:var(--font-mono);font-weight:600;font-size:22px;letter-spacing:.06em;color:var(--ink-900);}
+  .badge{display:inline-flex;align-items:center;font-size:11px;font-weight:500;letter-spacing:var(--tracking);
+         text-transform:uppercase;border:1px solid var(--crema-600);border-radius:var(--radius-pill);
+         padding:3px 11px;color:var(--ink-500);background:transparent;}
+  .badge.waiting{color:var(--warn);border-color:var(--warn);}
+  .badge.active{color:var(--ok);border-color:var(--ok);}
+  .badge.closed{color:var(--err);border-color:var(--err);}
+  /* reloj — misma pastilla del panel web (.timer-display), dimensionada para el encabezado */
+  #timerArea{display:flex;}
+  #timerArea.hide{display:none;}
+  .timer-display{display:inline-flex;align-items:center;padding:0.45rem 1rem;border:1px solid var(--ok);
+                 border-radius:var(--radius-pill);background:transparent;font-family:var(--font-mono);font-size:18px;
+                 font-weight:500;color:var(--ok);font-variant-numeric:tabular-nums;letter-spacing:0.03em;line-height:1;
+                 white-space:nowrap;transition:color .4s,border-color .4s;}
+  .timer-display--warn{color:var(--warn);border-color:var(--warn);}
+  .timer-display--critical{color:var(--err);border-color:var(--err);}
+  .counts{margin-top:9px;font-size:13px;color:var(--ink-500);display:flex;gap:7px;flex-wrap:wrap;align-items:center;}
+  .counts b{font-weight:600;color:var(--ink-900);}
+  .counts .sep{color:var(--crema-600);}
+  .counts .alert{color:var(--err);font-weight:600;}
+
+  main{padding:6px 16px 0;}
+  .sec-title{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+             color:var(--ink-300);margin:18px 4px 9px;display:flex;align-items:center;gap:7px;}
+  .sec-title.warn{color:var(--err);}
+  .sec-title .n{margin-left:auto;font-family:var(--font-mono);color:var(--crema-700);font-weight:500;}
+
+  .alerts{background:var(--crema-100);border:1px solid var(--crema-400);border-left:3px solid var(--err);
+          border-radius:var(--radius-lg);overflow:hidden;}
+  .alert-row{display:flex;align-items:center;gap:10px;padding:11px 13px;border-bottom:1px solid var(--crema-300);}
+  .alert-row:last-child{border-bottom:0;}
+  .alert-row .nm{font-size:14px;font-weight:600;color:var(--ink-900);}
+  .alert-row .why{font-size:12px;color:var(--err);margin-top:2px;}
+  .alert-row .why.muted{color:var(--ink-300);}
+  .alert-row .grow{flex:1;min-width:0;}
+  .restore{font:inherit;font-size:12px;font-weight:500;color:var(--ok);background:transparent;
+           border:1px solid var(--ok);border-radius:var(--radius-md);padding:7px 13px;cursor:pointer;white-space:nowrap;}
+  .restore:active{background:var(--ok-bg);}
+
+  .list{background:var(--crema-100);border:1px solid var(--crema-400);border-radius:var(--radius-lg);overflow:hidden;}
+  .st{border-bottom:1px solid var(--crema-300);}
+  .st:last-child{border-bottom:0;}
+  .st-main{display:grid;grid-template-columns:10px 1fr auto auto;gap:11px;align-items:center;padding:12px 13px;cursor:pointer;}
+  .dot{width:8px;height:8px;border-radius:50%;}
+  .dot.connected{background:var(--ok);} .dot.disconnected{background:var(--err);}
+  .dot.submitted{background:var(--conac);}
+  .dot.cancelled{background:var(--err);box-shadow:0 0 0 3px var(--err-bg);}
+  .st .nm{font-size:14px;font-weight:500;color:var(--ink-900);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .prog{display:flex;align-items:center;gap:8px;}
+  .bar{width:52px;height:5px;background:var(--crema-500);border-radius:var(--radius-pill);overflow:hidden;}
+  .bar i{display:block;height:100%;background:var(--conac);border-radius:inherit;}
+  .cnt{font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--ink-700);font-variant-numeric:tabular-nums;min-width:44px;text-align:right;}
+  .sal{display:inline-flex;align-items:center;gap:3px;font-family:var(--font-mono);font-size:12px;font-weight:600;
+       color:var(--err);font-variant-numeric:tabular-nums;min-width:30px;justify-content:flex-end;}
+  .done{color:var(--ok);display:inline-flex;min-width:30px;justify-content:flex-end;}
+  .slot{min-width:30px;}
+  .sc{font-family:var(--font-mono);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;min-width:46px;text-align:right;}
+  .sc-ok{color:var(--ok);} .sc-warn{color:var(--warn);} .sc-err{color:var(--err);}
+  .time{font-family:var(--font-mono);font-size:11px;color:var(--ink-300);font-variant-numeric:tabular-nums;min-width:54px;text-align:right;}
+  .cancel-tag{font-size:11px;font-weight:500;color:var(--err);text-align:right;min-width:46px;}
+  .st-det{display:none;padding:0 13px 12px 34px;font-size:12px;color:var(--ink-500);gap:16px;flex-wrap:wrap;}
+  .st.open .st-det{display:flex;}
+  .st-det b{color:var(--ink-700);font-weight:600;font-family:var(--font-mono);}
+  .empty{padding:26px 16px;text-align:center;color:var(--ink-300);font-size:13px;line-height:1.6;}
+
+  .actionbar{position:fixed;left:0;right:0;bottom:0;z-index:8;background:var(--crema-100);
+             border-top:1px solid var(--crema-400);padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+             max-width:430px;margin:0 auto;}
+  .btn{width:100%;font:inherit;font-size:16px;font-weight:500;border-radius:var(--radius-md);padding:16px;cursor:pointer;
+       border:1px solid transparent;display:flex;align-items:center;justify-content:center;gap:9px;line-height:1;}
+  .btn .ic{width:18px;height:18px;}
+  .btn:active{transform:scale(.99);}
+  .btn-start{background:var(--ink-900);color:var(--crema-200);border-color:var(--ink-900);}
+  .btn-close{background:transparent;color:var(--ink-900);border-color:var(--crema-600);}
+  .btn-closed{background:var(--crema-300);color:var(--ink-300);border-color:var(--crema-400);}
+  .note{font-size:11px;color:var(--ink-300);text-align:center;padding:16px 24px 4px;line-height:1.6;}
+
+  /* modal con tema (clon de .overlay / appConfirm del panel) */
+  .overlay{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;padding:20px;
+           background:color-mix(in srgb, var(--ink-900) 65%, transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);}
+  [data-theme="dark"] .overlay{background:color-mix(in srgb, #000 70%, transparent);}
+  .overlay.show{display:flex;}
+  .overlay-card{background:var(--crema-100);border:1px solid var(--crema-600);border-top:2px solid var(--crema-600);
+                border-radius:var(--radius-md);padding:26px 24px;max-width:400px;width:100%;display:flex;flex-direction:column;
+                gap:12px;align-items:center;text-align:center;}
+  .overlay-card--warn{border-top-color:var(--warn);}
+  .overlay-card--danger{border-top-color:var(--err);}
+  .overlay-card--info{border-top-color:var(--conac);}
+  .overlay-card__icon{width:44px;height:44px;border-radius:var(--radius-pill);display:inline-flex;align-items:center;
+                      justify-content:center;font-family:var(--font-display);font-size:24px;font-weight:600;line-height:1;
+                      background:var(--crema-300);color:var(--ink-500);}
+  .overlay-card--warn .overlay-card__icon{background:var(--warn-bg);color:var(--warn);}
+  .overlay-card--danger .overlay-card__icon{background:var(--err-bg);color:var(--err);}
+  .overlay-card__title{font-family:var(--font-display);font-size:23px;font-weight:500;color:var(--ink-900);line-height:1.2;}
+  .overlay-card__body{font-size:15px;color:var(--ink-500);line-height:1.55;}
+  .overlay-card__body strong{color:var(--ink-900);font-weight:600;}
+  .overlay-card__actions{margin-top:8px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;}
+  .ov-btn{font:inherit;font-size:14px;font-weight:500;line-height:1;padding:12px 20px;border:1px solid transparent;
+          border-radius:var(--radius-md);background:transparent;color:var(--ink-900);cursor:pointer;}
+  .ov-btn--primary{background:var(--ink-900);color:var(--crema-200);border-color:var(--ink-900);}
+  .ov-btn--ghost{color:var(--ink-500);}
+  .ov-btn--ghost:active{background:var(--crema-300);}
+  .ov-btn--danger{color:var(--err);border-color:transparent;}
+  /* compartir / QR */
+  .qr{background:#fff;padding:12px;border-radius:var(--radius-md);line-height:0;}
+  .qr img{width:180px;height:180px;display:block;}
+  .share-code{font-family:var(--font-mono);font-size:22px;font-weight:600;letter-spacing:.12em;color:var(--ink-900);}
+  .share-url{font-family:var(--font-mono);color:var(--conac);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="rooms" id="rooms"></div>
+    <div class="tools">
+      <button class="iconbtn" onclick="appShare()" aria-label="Compartir sala / QR" type="button">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><path d="M15 15h2v2h-2z"/><path d="M19 15h2"/><path d="M15 19h2v2"/><path d="M19 19v2h2"/></svg>
+      </button>
+      <button class="iconbtn theme-toggle" id="themeBtn" onclick="toggleTheme()" aria-label="Cambiar tema" type="button">
+        <svg class="ic icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        <svg class="ic icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="ic icon-sunmoon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="demo"><b>DEMO</b> · cambia la fase de esta sala
+    <span class="seg" id="seg">
+      <button data-p="waiting">Esperando</button>
+      <button data-p="active">En curso</button>
+      <button data-p="closed">Cerrado</button>
+    </span>
+  </div>
+
+  <header>
+    <div class="hr-sala">
+      <div class="sala-lbl" id="salaLbl">Sala</div>
+      <div class="sala" id="salaCode">A3HFPG</div>
+    </div>
+    <div class="hr-pills">
+      <span class="badge active" id="badge">En curso</span>
+      <div id="timerArea" class="hide"><div class="timer-display" id="teacherTimer">0:00:00</div></div>
+    </div>
+    <div class="counts" id="counts"></div>
+  </header>
+
+  <main>
+    <div id="alertsWrap"></div>
+    <div class="sec-title"><span id="listTitle">Alumnos</span> <span class="n" id="listN"></span></div>
+    <div class="list" id="list"></div>
+    <p class="note">Prototipo · datos de ejemplo · no afecta producción.<br>Toca un alumno para ver su detalle.</p>
+  </main>
+
+  <div class="actionbar" id="actionbar"></div>
+</div>
+
+<script>
+// ───────── tema (claro / oscuro / auto) — misma llave que el examen ─────────
+const TKEY='ecoems-theme-pref', TORDER=['light','dark','auto'];
+const TMQL=window.matchMedia('(prefers-color-scheme: dark)');
+const getPref=()=>{ const s=localStorage.getItem(TKEY); return TORDER.includes(s)?s:'auto'; };
+function applyTheme(pref){ const a = pref==='auto' ? (TMQL.matches?'dark':'light') : pref;
+  document.documentElement.setAttribute('data-theme',a); document.documentElement.setAttribute('data-theme-pref',pref); }
+function toggleTheme(){ const c=getPref(); applyTheme(TORDER[(TORDER.indexOf(c)+1)%TORDER.length]);
+  localStorage.setItem(TKEY, document.documentElement.getAttribute('data-theme-pref')); }
+TMQL.addEventListener('change',()=>{ if(getPref()==='auto') applyTheme('auto'); });
+applyTheme(getPref());
+
+// ───────── íconos ─────────
+const IC = {
+  play:  '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>',
+  stop:  '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="1.5"/></svg>',
+  exit:  '<svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>',
+  check: '<svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>',
+};
+
+// ───────── datos de ejemplo: varias salas (universidad: 1 sala = 1 área) ─────────
+const S=(name,group,status,answered,correct,tab,timeMin)=>({name,group,status,answered,correct,tabSwitches:tab,timeMin});
+const ROOMS=[
+  { code:'A3HFPG', name:'Área 1', sub:'Físico-matemáticas', total:20, phase:'active', remaining:2*3600+48*60+30, students:[
+    S('Ana López','G1','disconnected',0,0,0,null), S('Beto Ruiz','G1','connected',9,6,2,13),
+    S('Cira Díaz','G1','connected',14,11,0,15), S('Dan Mora','G2','connected',8,5,1,14),
+    S('Eva Sosa','G1','submitted',20,17,0,22), S('Fito Cano','G2','connected',12,7,0,16),
+    S('Gaby Vez','G1','connected',5,3,0,12), S('Hugo Paz','G2','cancelled',11,9,3,null),
+    S('Iris Mena','G1','connected',16,12,0,17), S('Jon Ríos','G2','connected',7,4,0,13),
+    S('Kary Luna','G1','submitted',20,19,0,24), S('Leo Bravo','G2','connected',10,6,0,15) ] },
+  { code:'B7K2QM', name:'Área 2', sub:'Ciencias biológicas', total:24, phase:'active', remaining:1*3600+22*60+10, students:[
+    S('Mara Gil','G1','connected',15,11,0,18), S('Nilo Paz','G1','connected',9,7,1,14),
+    S('Olga Ruiz','G2','submitted',24,20,0,30), S('Pablo Sía','G1','connected',18,13,0,20),
+    S('Queta Lim','G2','connected',6,4,0,12), S('Raúl Vez','G1','disconnected',3,2,0,null),
+    S('Sara Ono','G2','connected',12,9,0,16), S('Tito Mar','G1','connected',20,15,0,22) ] },
+  { code:'C9X4LP', name:'Área 3', sub:'Ciencias sociales', total:20, phase:'closed', remaining:0, students:[
+    S('Uri Sol','G1','submitted',20,18,0,25), S('Vera Luz','G2','submitted',20,12,0,28),
+    S('Will Roa','G1','submitted',20,9,1,30), S('Xena Bru','G2','submitted',20,16,0,22),
+    S('Yago Tin','G1','submitted',20,6,0,33), S('Zoe Vela','G2','submitted',20,14,0,26) ] },
+  { code:'D2M8RT', name:'Área 4', sub:'Humanidades y artes', total:18, phase:'waiting', remaining:3*3600, students:[
+    S('Aldo Ren','G1','connected',0,0,0,null), S('Bea Cruz','G1','connected',0,0,0,null),
+    S('Ciro Lao','G2','connected',0,0,0,null), S('Dina Paz','G1','connected',0,0,0,null),
+    S('Emi Roca','G2','connected',0,0,0,null), S('Fabi Gil','G1','connected',0,0,0,null),
+    S('Gael Mít','G2','connected',0,0,0,null), S('Hilda Vé','G1','connected',0,0,0,null) ] },
+];
+let cur=0;
+const R=()=>ROOMS[cur];
+
+const fmtTime = m => m==null ? '—' : (m<60 ? m+' min' : (Math.floor(m/60))+'h '+String(m%60).padStart(2,'0')+'m');
+const pct = s => Math.round((s.answered/R().total)*100);
+const scoreCls = s => { const r=s.correct/R().total; return r>=0.7?'sc-ok':r>=0.5?'sc-warn':'sc-err'; };
+const needsAttention = s => s.status==='cancelled' || s.status==='disconnected' || s.tabSwitches>0;
+
+// ───────── filas ─────────
+function rowWrap(s,i,mid,det){
+  return `<div class="st" data-i="${i}"><div class="st-main" onclick="toggle(this)">
+      <span class="dot ${s.status}"></span><span class="nm">${s.name}</span>${mid}</div>
+    <div class="st-det">${det.map(x=>`<span>${x}</span>`).join('')}</div></div>`;
+}
+function scoreRow(s,i){
+  const score = s.status==='cancelled' ? `<span class="cancel-tag">Cancelado</span>` : `<span class="sc ${scoreCls(s)}">${s.correct}/${R().total}</span>`;
+  return rowWrap(s,i,`${score}<span class="time">${fmtTime(s.timeMin)}</span>`,
+    [`Grupo <b>${s.group}</b>`,`Respondidas <b>${s.answered}/${R().total}</b>`,`Salidas <b>${s.tabSwitches}</b>`]);
+}
+function progressRow(s,i){
+  const tail = s.tabSwitches>0 ? `<span class="sal">${IC.exit}${s.tabSwitches}</span>` : `<span class="slot"></span>`;
+  return rowWrap(s,i,`<span class="prog"><span class="bar"><i style="width:${pct(s)}%"></i></span><span class="cnt">${s.answered}/${R().total}</span></span>${tail}`,
+    [`Grupo <b>${s.group}</b>`,`Aciertos <b>${s.correct}/${s.answered||0}</b>`,`Tiempo <b>${fmtTime(s.timeMin)}</b>`,`Salidas <b>${s.tabSwitches}</b>`]);
+}
+function connectRow(s,i){
+  return rowWrap(s,i,`<span class="prog"><span class="bar"><i style="width:0%"></i></span><span class="cnt">0/${R().total}</span></span><span class="slot"></span>`,
+    [`Grupo <b>${s.group}</b>`,`Estado <b>Conectado</b>`]);
+}
+
+// ───────── chips de salas ─────────
+function renderRooms(){
+  document.getElementById('rooms').innerHTML = ROOMS.map((rm,i)=>{
+    const a = rm.phase==='active' ? rm.students.filter(needsAttention).length : 0;
+    return `<button class="room-chip${i===cur?' active':''}" onclick="switchRoom(${i})" type="button">
+      <span class="rc-dot ${rm.phase}"></span>${rm.name}${a?`<span class="rc-alert">${a}</span>`:''}</button>`;
+  }).join('');
+}
+
+// ───────── reloj (clon de startTeacherTimer: H:MM:SS, umbrales 30m/1h) ─────────
+let clockTimer=null;
+function renderClock(){
+  const area=document.getElementById('timerArea');
+  if(R().phase!=='active'){ area.className='hide'; return; }
+  area.className='';
+  const r=Math.max(0,R().remaining);
+  const h=Math.floor(r/3600), m=Math.floor((r%3600)/60), s=Math.floor(r%60);
+  const el=document.getElementById('teacherTimer');
+  el.textContent = `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+  const critical = r<1800, warn = !critical && r<3600;
+  el.classList.toggle('timer-display--critical', critical);
+  el.classList.toggle('timer-display--warn', warn);
+}
+function stopClock(){ if(clockTimer){ clearInterval(clockTimer); clockTimer=null; } }
+function startClock(){ stopClock(); renderClock();
+  clockTimer=setInterval(()=>{ if(R().remaining<=0){ stopClock(); return; } R().remaining--; renderClock(); },1000); }
+
+// ───────── simulación demo: en "Esperando" los alumnos aparecen al conectarse ─────────
+let waitTimer=null, waitShown=0;
+function stopWaitingSim(){ if(waitTimer){ clearInterval(waitTimer); waitTimer=null; } }
+function startWaitingSim(){
+  stopWaitingSim();
+  const total = R().students.filter(s=>s.status==='connected').length;
+  waitShown = Math.min(2,total);
+  waitTimer = setInterval(()=>{ if(waitShown>=total){ stopWaitingSim(); return; } waitShown++; render(); }, 1400);
+}
+
+// ───────── render principal ─────────
+function render(){
+  document.getElementById('salaLbl').textContent = R().name+' · '+R().sub;
+  document.getElementById('salaCode').textContent = R().code;
+  const sts=R().students, phase=R().phase, TOTAL=R().total;
+  const conn = sts.filter(s=>s.status==='connected').length;
+  const resp = sts.filter(s=>s.status==='connected' && s.answered>0 && s.answered<TOTAL).length;
+  const done = sts.filter(s=>s.status==='submitted').length;
+  const sal  = sts.filter(s=>s.tabSwitches>0).length;
+
+  if(phase==='waiting'){
+    const falt = sts.length - conn;
+    document.getElementById('counts').innerHTML =
+      `<span><b>${conn}</b> de ${sts.length} conectados</span>`+
+      (falt>0 ? `<span class="sep">·</span><span>faltan <b>${falt}</b></span>` : `<span class="sep">·</span><span>listos para empezar</span>`);
+  } else if(phase==='closed'){
+    const graded = sts.filter(s=>s.status!=='cancelled');
+    const avg = graded.length ? Math.round(graded.reduce((a,s)=>a+s.correct,0)/graded.length) : 0;
+    document.getElementById('counts').innerHTML =
+      `<span><b>${sts.length}</b> alumnos</span><span class="sep">·</span><span>promedio <b>${avg}/${TOTAL}</b></span>`+
+      (sal? `<span class="sep">·</span><span class="alert">${sal} con salidas</span>`:'');
+  } else {
+    document.getElementById('counts').innerHTML =
+      `<span><b>${conn}</b> conectados</span><span class="sep">·</span><span><b>${resp}</b> respondiendo</span>`+
+      `<span class="sep">·</span><span><b>${done}</b> entregaron</span>`+
+      (sal? `<span class="sep">·</span><span class="alert">${sal} con salidas</span>`:'');
+  }
+
+  const badge=document.getElementById('badge');
+  badge.className='badge '+phase;
+  badge.textContent={waiting:'Esperando',active:'En curso',closed:'Cerrado'}[phase];
+
+  const att = sts.filter(needsAttention).sort((a,b)=>{ const w=s=>s.status==='cancelled'?0:s.status==='disconnected'?1:2; return w(a)-w(b)||b.tabSwitches-a.tabSwitches; });
+  document.getElementById('alertsWrap').innerHTML = (att.length && phase==='active')
+    ? `<div class="sec-title warn">Requieren atención <span class="n">${att.length}</span></div><div class="alerts">`+
+      att.map(s=>{ let why,muted=false,action='';
+        if(s.status==='cancelled'){ why=`Cancelado · ${s.tabSwitches} salidas`; action=`<button class="restore" onclick="restore(${sts.indexOf(s)})">Restaurar</button>`; }
+        else if(s.status==='disconnected'){ why='Desconectado'; muted=true; }
+        else { why=`${s.tabSwitches} ${s.tabSwitches===1?'salida':'salidas'} de pestaña`; }
+        return `<div class="alert-row"><div class="grow"><div class="nm">${s.name}</div><div class="why ${muted?'muted':''}">${why}</div></div>${action}</div>`;
+      }).join('')+`</div>` : '';
+
+  document.getElementById('listTitle').textContent = phase==='closed'?'Resultados':phase==='waiting'?'Conectados':'Alumnos';
+  const list=document.getElementById('list');
+  if(phase==='waiting'){
+    const here = sts.filter(s=>s.status==='connected').slice(0,waitShown);
+    document.getElementById('listN').textContent = here.length;
+    list.innerHTML = here.length ? here.map((s,i)=>connectRow(s,i)).join('')
+      : `<div class="empty">Esperando conexiones…<br>Comparte el código de sala con tu grupo.</div>`;
+  } else if(phase==='closed'){
+    document.getElementById('listN').textContent = sts.length;
+    list.innerHTML = [...sts].sort((a,b)=>b.correct-a.correct).map((s,i)=>scoreRow(s,i)).join('');
+  } else {
+    document.getElementById('listN').textContent = sts.length;
+    const ord=[...sts].sort((a,b)=>{ const d=s=>s.status==='submitted'?1:0; return d(a)-d(b)||a.answered-b.answered; });
+    list.innerHTML = ord.map((s,i)=> s.status==='submitted'?scoreRow(s,i):progressRow(s,i)).join('');
+  }
+
+  const ab=document.getElementById('actionbar');
+  if(phase==='waiting') ab.innerHTML=`<button class="btn btn-start" onclick="act('iniciar')">${IC.play} Iniciar examen</button>`;
+  else if(phase==='active') ab.innerHTML=`<button class="btn btn-close" onclick="act('cerrar')">${IC.stop} Cerrar examen</button>`;
+  else ab.innerHTML=`<button class="btn btn-closed" disabled>Examen cerrado</button>`;
+}
+
+// ───────── modal con tema (clon de appConfirm del panel) ─────────
+function appConfirm(options){
+  const o = typeof options==='string' ? {body:options} : (options||{});
+  const variant = o.danger ? 'overlay-card--danger' : 'overlay-card--warn';
+  const icon = o.danger ? '!' : '?';
+  return new Promise(resolve=>{
+    let overlay=document.getElementById('__dlg');
+    if(!overlay){ overlay=document.createElement('div'); overlay.id='__dlg'; overlay.className='overlay'; document.body.appendChild(overlay); }
+    overlay.innerHTML=`<div class="overlay-card ${variant}"><div class="overlay-card__icon" aria-hidden="true">${icon}</div>
+      <h2 class="overlay-card__title"></h2><p class="overlay-card__body"></p>
+      <div class="overlay-card__actions"><button class="ov-btn ov-btn--ghost" data-a="cancel" type="button"></button>
+      <button class="ov-btn ov-btn--primary" data-a="accept" type="button"></button></div></div>`;
+    overlay.querySelector('.overlay-card__title').textContent = o.title || '¿Estás seguro?';
+    overlay.querySelector('.overlay-card__body').innerHTML = (o.body||'').replace(/\n/g,'<br>');
+    overlay.querySelector('[data-a="cancel"]').textContent = o.cancelText || 'Cancelar';
+    const accept=overlay.querySelector('[data-a="accept"]'); accept.textContent=o.confirmText||'Aceptar';
+    if(o.danger) accept.className='ov-btn ov-btn--danger';
+    overlay.classList.add('show');
+    function close(r){ overlay.classList.remove('show'); document.removeEventListener('keydown',onKey); resolve(r); }
+    function onKey(e){ if(e.key==='Escape') close(false); else if(e.key==='Enter') close(true); }
+    accept.onclick=()=>close(true);
+    overlay.querySelector('[data-a="cancel"]').onclick=()=>close(false);
+    overlay.onclick=e=>{ if(e.target===overlay) close(false); };
+    document.addEventListener('keydown',onKey);
+  });
+}
+
+// ───────── compartir sala (QR + link) ─────────
+function appShare(){
+  let o=document.getElementById('__dlg');
+  if(!o){ o=document.createElement('div'); o.id='__dlg'; o.className='overlay'; document.body.appendChild(o); }
+  const url=`ecoems.app/?sala=${R().code}`;
+  const qr=`https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=0&data=${encodeURIComponent('https://'+url)}`;
+  o.innerHTML=`<div class="overlay-card overlay-card--info">
+    <h2 class="overlay-card__title">${R().name}</h2>
+    <div class="qr"><img src="${qr}" alt="QR de la sala ${R().code}"></div>
+    <div class="share-code">${R().code}</div>
+    <p class="overlay-card__body">Los alumnos escanean el QR o entran a<br><span class="share-url">${url}</span></p>
+    <div class="overlay-card__actions">
+      <button class="ov-btn ov-btn--ghost" data-a="close" type="button">Cerrar</button>
+      <button class="ov-btn ov-btn--primary" data-a="copy" type="button">Copiar link</button></div></div>`;
+  o.classList.add('show');
+  const close=()=>{ o.classList.remove('show'); document.removeEventListener('keydown',k); };
+  const k=e=>{ if(e.key==='Escape') close(); };
+  o.querySelector('[data-a="close"]').onclick=close;
+  o.querySelector('[data-a="copy"]').onclick=()=>{ try{ navigator.clipboard.writeText('https://'+url); }catch(e){}
+    const btn=o.querySelector('[data-a="copy"]'); btn.textContent='¡Copiado!'; setTimeout(()=>{ btn.textContent='Copiar link'; },1200); };
+  o.onclick=e=>{ if(e.target===o) close(); };
+  document.addEventListener('keydown',k);
+}
+
+// ───────── interacción ─────────
+function toggle(el){ el.parentElement.classList.toggle('open'); }
+async function restore(idx){
+  const s=R().students[idx]; if(!s) return;
+  if(await appConfirm({ title:'Restaurar alumno', body:`¿Restaurar a <strong>${s.name}</strong>? Quedará con 1 salida.`, confirmText:'Restaurar' })){
+    s.status='connected'; s.tabSwitches=2; render(); renderRooms();
+  }
+}
+async function act(a){
+  if(a==='iniciar'){ if(await appConfirm({ title:'Iniciar examen', body:'¿Iniciar el examen para esta sala? El cronómetro empezará para todos.', confirmText:'Iniciar examen' })) go('active'); }
+  else if(a==='cerrar'){ if(await appConfirm({ title:'Cerrar examen', body:'¿Cerrar el examen? Se <strong>enviarán automáticamente</strong> las respuestas de todos.', confirmText:'Cerrar examen', danger:true })) go('closed'); }
+}
+function setSeg(){ document.querySelectorAll('#seg button').forEach(b=>b.classList.toggle('on', b.dataset.p===R().phase)); }
+function refresh(){
+  setSeg(); stopClock(); stopWaitingSim();
+  if(R().phase==='waiting') startWaitingSim();
+  if(R().phase==='active') startClock();
+  renderClock();                 // muestra/oculta el reloj según la fase actual
+  render(); renderRooms();
+}
+function go(p){ R().phase=p; refresh(); }
+function switchRoom(i){ cur=i; refresh(); }
+
+document.getElementById('seg').addEventListener('click', e=>{ if(e.target.dataset.p) go(e.target.dataset.p); });
+
+refresh();
+</script>
+</body>
+</html>
