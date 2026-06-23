@@ -1,0 +1,21 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <!-- Transversal (~65 grados respecto a la horizontal) -->
+  <line x1="134" y1="297" x2="247" y2="52" stroke="currentColor" stroke-width="2"/>
+
+  <!-- Recta L (superior) -->
+  <line x1="55" y1="110" x2="435" y2="110" stroke="currentColor" stroke-width="2.5"/>
+  <text x="38" y="116" font-size="20" font-style="italic">L</text>
+
+  <!-- Recta M (inferior) -->
+  <line x1="55" y1="240" x2="435" y2="240" stroke="currentColor" stroke-width="2.5"/>
+  <text x="38" y="246" font-size="20" font-style="italic">M</text>
+
+  <!-- Circulo de angulos en L (x a la izquierda, y a la derecha) -->
+  <circle cx="220" cy="110" r="30" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="192" y="98" font-size="19" font-style="italic" text-anchor="middle">x</text>
+  <text x="250" y="100" font-size="19" font-style="italic" text-anchor="middle">y</text>
+
+  <!-- Circulo de angulo en M (115 grados, abajo a la derecha) -->
+  <circle cx="160" cy="240" r="30" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="196" y="270" font-size="17" text-anchor="middle">115°</text>
+</svg>

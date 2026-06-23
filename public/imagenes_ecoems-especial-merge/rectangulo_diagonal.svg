@@ -1,0 +1,16 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" width="360" height="280" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
+  <!-- Rectangulo 8 (base) x 6 (altura) -->
+  <rect x="60" y="40" width="240" height="180" fill="none" stroke="currentColor" stroke-width="2.5"/>
+
+  <!-- Diagonal -->
+  <line x1="60" y1="40" x2="300" y2="220" stroke="currentColor" stroke-width="2"/>
+
+  <!-- Marca de angulo recto en la esquina inferior izquierda -->
+  <path d="M 60 200 L 80 200 L 80 220" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Etiqueta base 8 -->
+  <text x="180" y="248" font-size="20" text-anchor="middle">8</text>
+
+  <!-- Etiqueta altura 6 -->
+  <text x="320" y="136" font-size="20" text-anchor="middle">6</text>
+</svg>
