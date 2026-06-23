@@ -3569,10 +3569,9 @@ function startTimer(startTime, limitMinutes) {
   if (state.timerInterval) clearInterval(state.timerInterval);
   const totalSeconds = state.timeLimit * 60;
   const timerEl = document.getElementById('examTimer');
-  state.timerInterval = setInterval(() => {
+  const tick = () => {
     const remaining = totalSeconds - (((Date.now() + state.clockOffset) - state.startTime) / 1000);
     if (remaining <= 0) {
-      clearInterval(state.timerInterval);
       document.getElementById('timerDisplay').textContent = '0:00';
       if (timerEl) timerEl.classList.add('exam-timer--critical');
       if (!state.submitted && !state.submitPending) startSubmitFlow();
@@ -3593,7 +3592,11 @@ function startTimer(startTime, limitMinutes) {
       timerEl.classList.toggle('exam-timer--critical', critical);
       timerEl.classList.toggle('exam-timer--warn', warn);
     }
-  }, 1000);
+    // Siguiente tic al PRÓXIMO segundo exacto de la hora del server: así todas
+    // las pantallas voltean el número en el mismo instante.
+    state.timerInterval = setTimeout(tick, 1000 - ((Date.now() + (state.clockOffset || 0)) % 1000));
+  };
+  tick();
 }
 
 // ─── Socket Events ──────────────────────────────────────────────────────────

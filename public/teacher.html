@@ -1629,6 +1629,8 @@ let selectedRoomMode = 'exam';
 let practiceData = null;   // último practiceTeacherState de la sala seleccionada
 let roomsData = [];
 let timerInterval = null;
+let clockOffset = 0;     // serverTime - Date.now(): corrige el reloj del equipo del profe contra el del server
+let timerParams = null;  // { startTime, limitMinutes } de la sala activa
 let studentUrl = '';
 let pendingSelect = null;
 
@@ -1712,10 +1714,11 @@ socket.on('roomState', (data) => {
   applyModeUI();
   updatePhase(data.phase);
   if (selectedRoomMode !== 'practice' && data.phase === 'active' && data.startTime) {
+    if (data.serverTime) clockOffset = data.serverTime - Date.now();
     startTeacherTimer(data.startTime, data.timeLimit);
   } else {
     document.getElementById('timerArea').style.display = 'none';
-    if (timerInterval) clearInterval(timerInterval);
+    if (timerInterval) clearTimeout(timerInterval);
   }
 });
 
@@ -2377,27 +2380,47 @@ function updatePhase(phase) {
 }
 
 // ─── Timer ─────────────────────────────────────────────────────────────────
+// Pinta el reloj (escritorio #teacherTimer e iPhone #mTimer) desde la MISMA fuente:
+// la hora del server (Date.now()+clockOffset). Devuelve los segundos restantes.
+function paintTeacherTimer() {
+  if (!timerParams) return -1;
+  let remaining = (timerParams.limitMinutes * 60) - ((Date.now() + clockOffset - timerParams.startTime) / 1000);
+  if (remaining < 0) remaining = 0;
+  const h = Math.floor(remaining / 3600);
+  const m = Math.floor((remaining % 3600) / 60);
+  const s = Math.floor(remaining % 60);
+  const txt = `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+  // Umbrales iguales al timer del alumno: <30m crítico (rojo), 30m-1h advertencia (amarillo), >1h ok.
+  const critical = remaining > 0 && remaining < 1800;
+  const warn = !critical && remaining < 3600;
+  const d = document.getElementById('teacherTimer');
+  if (d) {
+    d.textContent = txt;
+    d.classList.toggle('timer-display--critical', critical);
+    d.classList.toggle('timer-display--warn', warn);
+  }
+  const mo = document.getElementById('mTimer');
+  if (mo) {
+    mo.textContent = txt;
+    mo.classList.toggle('m-timer--crit', critical);
+    mo.classList.toggle('m-timer--warn', warn);
+  }
+  return remaining;
+}
+
 function startTeacherTimer(startTime, limitMinutes) {
   document.getElementById('timerArea').style.display = 'block';
-  if (timerInterval) clearInterval(timerInterval);
-  timerInterval = setInterval(() => {
-    const remaining = (limitMinutes * 60) - ((Date.now() - startTime) / 1000);
-    if (remaining <= 0) {
-      clearInterval(timerInterval);
-      document.getElementById('teacherTimer').textContent = '0:00:00';
-      return;
-    }
-    const h = Math.floor(remaining / 3600);
-    const m = Math.floor((remaining % 3600) / 60);
-    const s = Math.floor(remaining % 60);
-    const el = document.getElementById('teacherTimer');
-    el.textContent = `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-    // Umbrales iguales al timer del alumno: <30m crítico (rojo), 30m-1h advertencia (amarillo), >1h ok (verde por default).
-    const critical = remaining < 1800;
-    const warn = !critical && remaining < 3600;
-    el.classList.toggle('timer-display--critical', critical);
-    el.classList.toggle('timer-display--warn', warn);
-  }, 1000);
+  if (timerInterval) clearTimeout(timerInterval);
+  timerParams = { startTime, limitMinutes };
+  const tick = () => {
+    const remaining = paintTeacherTimer();
+    if (remaining <= 0) return;
+    // Agenda el siguiente tic al PRÓXIMO segundo exacto de la hora del server,
+    // así todas las pantallas (alumnos y profe) voltean el segundo a la vez.
+    const msToNext = 1000 - ((Date.now() + clockOffset) % 1000);
+    timerInterval = setTimeout(tick, msToNext);
+  };
+  tick();
 }
 
 // ─── Students Table ────────────────────────────────────────────────────────
@@ -2519,7 +2542,10 @@ function renderStudents(students) {
 // ─── Broadcast Events (received via watchRoom) ────────────────────────────
 socket.on('examStarted', (data) => {
   updatePhase('active');
-  if (selectedRoomMode !== 'practice') startTeacherTimer(data.startTime, data.timeLimit);
+  if (selectedRoomMode !== 'practice') {
+    if (data.serverTime) clockOffset = data.serverTime - Date.now();
+    startTeacherTimer(data.startTime, data.timeLimit);
+  }
   socket.emit('getRooms');
 });
 
@@ -2696,15 +2722,10 @@ function renderMobile(){
   else action.innerHTML = `<button class="m-btn closed" disabled>${isP?'Carrusel terminado':'Examen cerrado'}</button>`;
 }
 
-// reloj móvil: espeja el #teacherTimer real (misma fuente de verdad)
-function syncMTimer(){
-  const m = document.getElementById('mTimer'); if(!m) return;
-  const d = document.getElementById('teacherTimer'); if(!d) return;
-  m.textContent = d.textContent;
-  m.classList.toggle('m-timer--crit', d.classList.contains('timer-display--critical'));
-  m.classList.toggle('m-timer--warn', d.classList.contains('timer-display--warn'));
-}
-setInterval(syncMTimer, 1000);
+// reloj móvil (#mTimer): lo pinta paintTeacherTimer en el MISMO tic que el de
+// escritorio, así no hay atraso entre el panel y la versión iPhone. Esta función
+// queda como refresco puntual (p.ej. cuando el panel móvil se vuelve a renderizar).
+function syncMTimer(){ paintTeacherTimer(); }
 
 // compartir sala (QR + link) — reusa el overlay y el QR/URL ya existentes
 function mShare(){
