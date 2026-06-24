@@ -1,0 +1,18 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160" font-family="'Latin Modern Roman', Georgia, serif">
+  <!-- mesa (losa) -->
+  <rect x="35" y="96" width="130" height="13" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <!-- libro (vista lateral): cuerpo, lomo y paginas -->
+  <rect x="74" y="80" width="52" height="16" fill="none" stroke="currentColor" stroke-width="1.7"/>
+  <line x1="80" y1="80" x2="80" y2="96" stroke="currentColor" stroke-width="1.1"/>
+  <line x1="110" y1="84" x2="123" y2="84" stroke="currentColor" stroke-width="0.9"/>
+  <line x1="110" y1="88" x2="123" y2="88" stroke="currentColor" stroke-width="0.9"/>
+  <line x1="110" y1="92" x2="123" y2="92" stroke="currentColor" stroke-width="0.9"/>
+  <!-- F normal (hacia arriba) -->
+  <line x1="100" y1="80" x2="100" y2="42" stroke="currentColor" stroke-width="2"/>
+  <polygon points="100,35 95,47 105,47" fill="currentColor"/>
+  <text x="107" y="50" font-size="13" font-style="italic">F<tspan font-size="8.5" font-style="normal" dy="3">normal</tspan></text>
+  <!-- F peso (hacia abajo) -->
+  <line x1="100" y1="88" x2="100" y2="123" stroke="currentColor" stroke-width="2"/>
+  <polygon points="100,130 95,118 105,118" fill="currentColor"/>
+  <text x="107" y="112" font-size="13" font-style="italic">F<tspan font-size="8.5" font-style="normal" dy="3">peso</tspan></text>
+</svg>
