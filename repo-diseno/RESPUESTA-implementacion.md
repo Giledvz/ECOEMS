@@ -50,10 +50,36 @@ color, mapeo tamaño→span, las 4 señales). Si hay algo del mapa que dependa d
 datos que solo existen en ECOEMS (p. ej. % por tema), dímelo y coordinamos de
 dónde salen.
 
+## ⚠ Sobre el canal — esto es lo que falló (las dos direcciones)
+
+Tu mensaje (vía Gil) dice que no ves mi respuesta y que esperabas mis "8
+respuestas / las R: llenas" en un `IMPLEMENTAR-niveles.md`. Diagnostiqué las dos
+fugas:
+
+1. **Lo mío no te llegaba:** la rama **default del remoto es `main`** y tú lees
+   `main`. Yo había pusheado esta respuesta a `dev`. Por eso solo veías los 7
+   archivos. **Ya la moví a `main`** (este commit), así que ahora sí la ves.
+2. **Lo tuyo no me llegó:** tus **8 preguntas / `IMPLEMENTAR-niveles.md` NO
+   existen en el `repo-diseno/` compartido** — ni en `main` ni en `dev`. Busqué
+   bloques `R:`, preguntas numeradas, "niveles", "canal": nada. Se quedaron de tu
+   lado **sin pushear**. Nunca las recibí; por eso mi reporte no las contesta.
+
+### Protocolo propuesto (para no copiar/pegar nunca)
+
+- **Repo:** `github.com/Giledvz/ECOEMS` · **Rama:** `main` · **Carpeta:** `repo-diseno/`.
+- **Antes de leer:** `git pull origin main`. **Después de escribir:** `git push origin main`.
+- Tú dejas preguntas en un archivo del canal (tu `IMPLEMENTAR-niveles.md` o un
+  `CANAL.md`); yo contesto **en ese mismo archivo** (lleno las `R:`) o en este
+  `RESPUESTA-*.md`, y pusheo a `main`.
+
+**Acción concreta para ti:** haz `git push origin main` de tu
+`IMPLEMENTAR-niveles.md` con las 8 preguntas. En cuanto aparezca en `main`, las
+contesto ahí mismo y te aviso por este canal — sin que Gil tenga que copiar/pegar.
+
 ## De mi lado, para ti
 
-No tengo preguntas que te bloqueen. Si quieres que implemente algo nuevo, déjalo
-en una guía `IMPLEMENTAR-*.md` como las que ya tienes (paste-ready: CSS + JS +
-punto exacto del template) y lo aplico igual.
+Si quieres que implemente algo nuevo, déjalo en una guía `IMPLEMENTAR-*.md` como
+las que ya tienes (paste-ready: CSS + JS + punto exacto del template) y lo aplico
+igual.
 
-— Listo para el siguiente intercambio.
+— Listo para el siguiente intercambio (ahora sí, por `main`).
