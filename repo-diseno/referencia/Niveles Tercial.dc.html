@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { font-family: 'IBM Plex Sans', sans-serif; }
+</style>
+</helmet>
+
+<div style="min-height:100vh;box-sizing:border-box;padding:48px;background:#cdc3b0;background-image:radial-gradient(at 18% 22%, rgba(140,117,86,.10) 0, transparent 55%),radial-gradient(at 85% 80%, rgba(107,58,46,.07) 0, transparent 55%)">
+
+  <div style="margin:0 0 34px;max-width:760px">
+    <p style="font:500 11px 'IBM Plex Sans';letter-spacing:.14em;text-transform:uppercase;color:#6b5a44;margin:0 0 8px">Tercial · dos niveles, un sistema</p>
+    <h1 style="font-family:'Fraunces',serif;font-weight:500;font-size:30px;letter-spacing:-.02em;color:#1f1a16;font-variation-settings:'opsz' 72;margin:0">Separar <em style="font-style:italic;color:#6b3a2e">medio superior</em> de <em style="font-style:italic;color:#2d5c63">superior</em></h1>
+    <p style="font:400 14px 'IBM Plex Sans';color:#4a3f33;margin:8px 0 0;line-height:1.55">Misma identidad, mismos componentes — pero cada nivel con su acento, su examen y sus materias. Arriba: la pantalla donde el alumno elige. Abajo: cómo cambia el home según su elección.</p>
+  </div>
+
+  <!-- ════════════ 1 · PANTALLA DE BIFURCACIÓN ════════════ -->
+  <div style="max-width:760px;margin:0 0 16px">
+    <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px">
+      <span style="width:9px;height:9px;border-radius:999px;background:#8c7556;display:inline-block"></span>
+      <span style="font:500 12px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#4a3f33">1 · El alumno elige su camino</span>
+    </div>
+    <div style="background:#f5efe4;border:1px solid #e6dcc4;border-radius:12px;box-shadow:0 1px 4px rgba(74,63,51,.10);padding:42px 44px">
+      <div style="text-align:center;margin-bottom:30px">
+        <div style="font-family:'Fraunces',serif;font-weight:500;font-size:21px;color:#8c4a3a;margin-bottom:6px">Tercial</div>
+        <h2 style="font-family:'Fraunces',serif;font-weight:500;font-size:30px;letter-spacing:-.02em;color:#1f1a16;margin:0 0 8px">¿Qué examen vas a presentar?</h2>
+        <p style="font:400 13px 'IBM Plex Sans';color:#7a6448;margin:0">Elige tu nivel y te preparamos justo para ese examen.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <!-- card medio superior -->
+        <div style="background:#fdfbf6;border:1px solid #e6dcc4;border-top:3px solid #8c4a3a;border-radius:10px;padding:26px 26px 24px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+            <span style="font:500 9.5px 'IBM Plex Sans';letter-spacing:.1em;text-transform:uppercase;color:#8c4a3a;background:#f3e3da;padding:4px 10px;border-radius:5px">Medio superior</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#a89880">14–15 años</span>
+          </div>
+          <h3 style="font-family:'Fraunces',serif;font-weight:500;font-size:22px;line-height:1.15;color:#1f1a16;margin:0 0 8px">Ingreso a la<br><em style="font-style:italic;color:#6b3a2e">preparatoria</em></h3>
+          <p style="font:400 12.5px 'IBM Plex Sans';line-height:1.5;color:#7a6448;margin:0 0 18px">Para el examen COMIPEMS / ECOEMS. Sales de la secundaria.</p>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#6b3a2e;color:#f8f3e8;font:500 12.5px 'IBM Plex Sans';padding:10px 18px;border-radius:8px">Es mi examen →</span>
+        </div>
+        <!-- card superior -->
+        <div style="background:#fdfbf6;border:1px solid #e6dcc4;border-top:3px solid #2d5c63;border-radius:10px;padding:26px 26px 24px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+            <span style="font:500 9.5px 'IBM Plex Sans';letter-spacing:.1em;text-transform:uppercase;color:#2d5c63;background:#dbe8e9;padding:4px 10px;border-radius:5px">Superior</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#a89880">17–18 años</span>
+          </div>
+          <h3 style="font-family:'Fraunces',serif;font-weight:500;font-size:22px;line-height:1.15;color:#1f1a16;margin:0 0 8px">Ingreso a la<br><em style="font-style:italic;color:#2d5c63">universidad</em></h3>
+          <p style="font:400 12.5px 'IBM Plex Sans';line-height:1.5;color:#7a6448;margin:0 0 18px">Para el examen UNAM / IPN. Eliges área de conocimiento.</p>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#2d5c63;color:#f4f9f9;font:500 12.5px 'IBM Plex Sans';padding:10px 18px;border-radius:8px">Es mi examen →</span>
+        </div>
+      </div>
+      <p style="text-align:center;font:400 11.5px 'IBM Plex Sans';color:#a89880;margin:20px 0 0">Puedes cambiar de nivel cuando quieras desde tu perfil.</p>
+    </div>
+  </div>
+
+  <!-- ════════════ 2 · LOS DOS HOMES ════════════ -->
+  <div style="display:flex;align-items:flex-start;gap:44px;margin-top:26px">
+
+    <!-- ───── MEDIO SUPERIOR ───── -->
+    <div style="flex:none;width:520px">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px">
+        <span style="width:9px;height:9px;border-radius:999px;background:#8c4a3a;display:inline-block"></span>
+        <span style="font:500 12px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#4a3f33">2a · Home medio superior</span>
+      </div>
+      <div style="background:#f5efe4;border:1px solid #e6dcc4;border-radius:12px;box-shadow:0 1px 4px rgba(74,63,51,.10);overflow:hidden">
+        <!-- nav -->
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 24px;border-bottom:1px solid #e6dcc4;background:#fbf7ef">
+          <span style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#1f1a16">Tercial</span>
+          <span style="font:500 8.5px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#8c4a3a;background:#f3e3da;padding:3px 8px;border-radius:4px">Prepa</span>
+          <span style="flex:1"></span>
+          <span style="font:400 11.5px 'IBM Plex Sans';color:#7a6448">Inicio · Exámenes · Tarjetas</span>
+        </div>
+        <!-- hero -->
+        <div style="padding:32px 30px 28px;border-bottom:1px solid #e6dcc4">
+          <p style="font:500 10px 'IBM Plex Sans';letter-spacing:.12em;text-transform:uppercase;color:#8c4a3a;margin:0 0 13px">Examen COMIPEMS · 128 reactivos</p>
+          <h2 style="font-family:'Fraunces',serif;font-weight:500;font-size:31px;line-height:1.06;letter-spacing:-.02em;color:#1f1a16;margin:0 0 12px">Tu lugar en la<br><em style="font-style:italic;color:#6b3a2e">prepa</em> empieza aquí.</h2>
+          <p style="font:400 13px 'IBM Plex Sans';line-height:1.5;color:#4a3f33;max-width:360px;margin:0 0 18px">Las 10 materias de secundaria, exámenes reales y tu mapa de estudio.</p>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#6b3a2e;color:#f8f3e8;font:500 12.5px 'IBM Plex Sans';padding:10px 18px;border-radius:8px">Empezar →</span>
+        </div>
+        <!-- materias -->
+        <div style="padding:22px 30px 28px">
+          <p style="font:500 10px 'IBM Plex Sans';letter-spacing:.1em;text-transform:uppercase;color:#8c7556;margin:0 0 13px">Tus materias</p>
+          <div style="display:flex;flex-wrap:wrap;gap:7px">
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Español</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Matemáticas</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Historia</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Geografía</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">F. cívica y ética</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Física</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Química</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Biología</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Razon. verbal</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Razon. matemático</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ───── SUPERIOR ───── -->
+    <div style="flex:none;width:520px">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px">
+        <span style="width:9px;height:9px;border-radius:999px;background:#2d5c63;display:inline-block"></span>
+        <span style="font:500 12px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#4a3f33">2b · Home superior</span>
+      </div>
+      <div style="background:#f5efe4;border:1px solid #e6dcc4;border-radius:12px;box-shadow:0 1px 4px rgba(74,63,51,.10);overflow:hidden">
+        <!-- nav -->
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 24px;border-bottom:1px solid #e6dcc4;background:#fbf7ef">
+          <span style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#1f1a16">Tercial</span>
+          <span style="font:500 8.5px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#2d5c63;background:#dbe8e9;padding:3px 8px;border-radius:4px">Universidad</span>
+          <span style="flex:1"></span>
+          <span style="font:400 11.5px 'IBM Plex Sans';color:#7a6448">Inicio · Exámenes · Tarjetas</span>
+        </div>
+        <!-- hero -->
+        <div style="padding:32px 30px 28px;border-bottom:1px solid #e6dcc4">
+          <p style="font:500 10px 'IBM Plex Sans';letter-spacing:.12em;text-transform:uppercase;color:#2d5c63;margin:0 0 13px">Examen UNAM · Área 2 · 120 reactivos</p>
+          <h2 style="font-family:'Fraunces',serif;font-weight:500;font-size:31px;line-height:1.06;letter-spacing:-.02em;color:#1f1a16;margin:0 0 12px">Tu <em style="font-style:italic;color:#2d5c63">carrera</em><br>empieza por aquí.</h2>
+          <p style="font:400 13px 'IBM Plex Sans';line-height:1.5;color:#4a3f33;max-width:360px;margin:0 0 18px">Tu área de conocimiento, exámenes por plantel y tu mapa de estudio.</p>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#2d5c63;color:#f4f9f9;font:500 12.5px 'IBM Plex Sans';padding:10px 18px;border-radius:8px">Empezar →</span>
+        </div>
+        <!-- área + materias -->
+        <div style="padding:22px 30px 28px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:13px">
+            <p style="font:500 10px 'IBM Plex Sans';letter-spacing:.1em;text-transform:uppercase;color:#8c7556;margin:0">Tu área · ciencias bio-químicas</p>
+            <span style="font:500 10px 'IBM Plex Sans';color:#2d5c63">cambiar área</span>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px">
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Biología</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Química</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Física</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Matemáticas</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Cálculo</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Español</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Historia de México</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Historia universal</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Literatura</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#4a3f33;background:#faf7f0;border:1px solid #ece3d0;padding:6px 12px;border-radius:6px">Geografía</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p style="font:400 12.5px 'IBM Plex Sans';color:#6b5a44;margin:26px 0 0;max-width:760px;line-height:1.55"><strong style="font-weight:600">La diferencia, en corto:</strong> mismo Tercial (crema, Fraunces, componentes), pero <strong style="font-weight:600">acento coñac</strong> para prepa y <strong style="font-weight:600">verde-pizarra</strong> para universidad; cada uno con su examen, su copy y sus materias. Lo que comparten (mapa, tarjetas, dashboard) se reutiliza igual — solo cambia el contenido y el color de acento.</p>
+
+</div>
+
+<div style="min-height:100vh;box-sizing:border-box;padding:48px;padding-top:30px;background:#15110f">
+  <div style="display:flex;align-items:center;gap:8px;margin:0 0 22px;max-width:760px"><span style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:16px;color:#c79a82">Tema oscuro</span><span style="flex:1;height:1px;background:#3a3229"></span></div>
+  <!-- ════════════ 1 · PANTALLA DE BIFURCACIÓN ════════════ -->
+  <div style="max-width:760px;margin:0 0 16px">
+    <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px">
+      <span style="width:9px;height:9px;border-radius:999px;background:#a89880;display:inline-block"></span>
+      <span style="font:500 12px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#d9cbb0">1 · El alumno elige su camino · oscuro</span>
+    </div>
+    <div style="background:#1a1614;border:1px solid #3a3229;border-radius:12px;box-shadow:0 1px 4px rgba(74,63,51,.10);padding:42px 44px">
+      <div style="text-align:center;margin-bottom:30px">
+        <div style="font-family:'Fraunces',serif;font-weight:500;font-size:21px;color:#c7836b;margin-bottom:6px">Tercial</div>
+        <h2 style="font-family:'Fraunces',serif;font-weight:500;font-size:30px;letter-spacing:-.02em;color:#efe4cf;margin:0 0 8px">¿Qué examen vas a presentar?</h2>
+        <p style="font:400 13px 'IBM Plex Sans';color:#a89880;margin:0">Elige tu nivel y te preparamos justo para ese examen.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <!-- card medio superior -->
+        <div style="background:#221d1a;border:1px solid #3a3229;border-top:3px solid #c7836b;border-radius:10px;padding:26px 26px 24px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+            <span style="font:500 9.5px 'IBM Plex Sans';letter-spacing:.1em;text-transform:uppercase;color:#c7836b;background:#3a2622;padding:4px 10px;border-radius:5px">Medio superior</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8a7861">14–15 años</span>
+          </div>
+          <h3 style="font-family:'Fraunces',serif;font-weight:500;font-size:22px;line-height:1.15;color:#efe4cf;margin:0 0 8px">Ingreso a la<br><em style="font-style:italic;color:#c79a82">preparatoria</em></h3>
+          <p style="font:400 12.5px 'IBM Plex Sans';line-height:1.5;color:#a89880;margin:0 0 18px">Para el examen COMIPEMS / ECOEMS. Sales de la secundaria.</p>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#c79a82;color:#1a1614;font:500 12.5px 'IBM Plex Sans';padding:10px 18px;border-radius:8px">Es mi examen →</span>
+        </div>
+        <!-- card superior -->
+        <div style="background:#221d1a;border:1px solid #3a3229;border-top:3px solid #7eb0b5;border-radius:10px;padding:26px 26px 24px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+            <span style="font:500 9.5px 'IBM Plex Sans';letter-spacing:.1em;text-transform:uppercase;color:#7eb0b5;background:#20302e;padding:4px 10px;border-radius:5px">Superior</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8a7861">17–18 años</span>
+          </div>
+          <h3 style="font-family:'Fraunces',serif;font-weight:500;font-size:22px;line-height:1.15;color:#efe4cf;margin:0 0 8px">Ingreso a la<br><em style="font-style:italic;color:#7eb0b5">universidad</em></h3>
+          <p style="font:400 12.5px 'IBM Plex Sans';line-height:1.5;color:#a89880;margin:0 0 18px">Para el examen UNAM / IPN. Eliges área de conocimiento.</p>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#7eb0b5;color:#15201f;font:500 12.5px 'IBM Plex Sans';padding:10px 18px;border-radius:8px">Es mi examen →</span>
+        </div>
+      </div>
+      <p style="text-align:center;font:400 11.5px 'IBM Plex Sans';color:#8a7861;margin:20px 0 0">Puedes cambiar de nivel cuando quieras desde tu perfil.</p>
+    </div>
+  </div>
+
+  <!-- ════════════ 2 · LOS DOS HOMES ════════════ -->
+  <div style="display:flex;align-items:flex-start;gap:44px;margin-top:26px">
+
+    <!-- ───── MEDIO SUPERIOR ───── -->
+    <div style="flex:none;width:520px">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px">
+        <span style="width:9px;height:9px;border-radius:999px;background:#c7836b;display:inline-block"></span>
+        <span style="font:500 12px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#d9cbb0">2a · Home medio superior · oscuro</span>
+      </div>
+      <div style="background:#1a1614;border:1px solid #3a3229;border-radius:12px;box-shadow:0 1px 4px rgba(74,63,51,.10);overflow:hidden">
+        <!-- nav -->
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 24px;border-bottom:1px solid #3a3229;background:#221d1a">
+          <span style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#efe4cf">Tercial</span>
+          <span style="font:500 8.5px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#c7836b;background:#3a2622;padding:3px 8px;border-radius:4px">Prepa</span>
+          <span style="flex:1"></span>
+          <span style="font:400 11.5px 'IBM Plex Sans';color:#a89880">Inicio · Exámenes · Tarjetas</span>
+        </div>
+        <!-- hero -->
+        <div style="padding:32px 30px 28px;border-bottom:1px solid #3a3229">
+          <p style="font:500 10px 'IBM Plex Sans';letter-spacing:.12em;text-transform:uppercase;color:#c7836b;margin:0 0 13px">Examen COMIPEMS · 128 reactivos</p>
+          <h2 style="font-family:'Fraunces',serif;font-weight:500;font-size:31px;line-height:1.06;letter-spacing:-.02em;color:#efe4cf;margin:0 0 12px">Tu lugar en la<br><em style="font-style:italic;color:#c79a82">prepa</em> empieza aquí.</h2>
+          <p style="font:400 13px 'IBM Plex Sans';line-height:1.5;color:#d9cbb0;max-width:360px;margin:0 0 18px">Las 10 materias de secundaria, exámenes reales y tu mapa de estudio.</p>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#c79a82;color:#1a1614;font:500 12.5px 'IBM Plex Sans';padding:10px 18px;border-radius:8px">Empezar →</span>
+        </div>
+        <!-- materias -->
+        <div style="padding:22px 30px 28px">
+          <p style="font:500 10px 'IBM Plex Sans';letter-spacing:.1em;text-transform:uppercase;color:#a89880;margin:0 0 13px">Tus materias</p>
+          <div style="display:flex;flex-wrap:wrap;gap:7px">
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Español</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Matemáticas</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Historia</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Geografía</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">F. cívica y ética</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Física</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Química</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Biología</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Razon. verbal</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Razon. matemático</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ───── SUPERIOR ───── -->
+    <div style="flex:none;width:520px">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px">
+        <span style="width:9px;height:9px;border-radius:999px;background:#7eb0b5;display:inline-block"></span>
+        <span style="font:500 12px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#d9cbb0">2b · Home superior · oscuro</span>
+      </div>
+      <div style="background:#1a1614;border:1px solid #3a3229;border-radius:12px;box-shadow:0 1px 4px rgba(74,63,51,.10);overflow:hidden">
+        <!-- nav -->
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 24px;border-bottom:1px solid #3a3229;background:#221d1a">
+          <span style="font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:#efe4cf">Tercial</span>
+          <span style="font:500 8.5px 'IBM Plex Sans';letter-spacing:.08em;text-transform:uppercase;color:#7eb0b5;background:#20302e;padding:3px 8px;border-radius:4px">Universidad</span>
+          <span style="flex:1"></span>
+          <span style="font:400 11.5px 'IBM Plex Sans';color:#a89880">Inicio · Exámenes · Tarjetas</span>
+        </div>
+        <!-- hero -->
+        <div style="padding:32px 30px 28px;border-bottom:1px solid #3a3229">
+          <p style="font:500 10px 'IBM Plex Sans';letter-spacing:.12em;text-transform:uppercase;color:#7eb0b5;margin:0 0 13px">Examen UNAM · Área 2 · 120 reactivos</p>
+          <h2 style="font-family:'Fraunces',serif;font-weight:500;font-size:31px;line-height:1.06;letter-spacing:-.02em;color:#efe4cf;margin:0 0 12px">Tu <em style="font-style:italic;color:#7eb0b5">carrera</em><br>empieza por aquí.</h2>
+          <p style="font:400 13px 'IBM Plex Sans';line-height:1.5;color:#d9cbb0;max-width:360px;margin:0 0 18px">Tu área de conocimiento, exámenes por plantel y tu mapa de estudio.</p>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#7eb0b5;color:#15201f;font:500 12.5px 'IBM Plex Sans';padding:10px 18px;border-radius:8px">Empezar →</span>
+        </div>
+        <!-- área + materias -->
+        <div style="padding:22px 30px 28px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:13px">
+            <p style="font:500 10px 'IBM Plex Sans';letter-spacing:.1em;text-transform:uppercase;color:#a89880;margin:0">Tu área · ciencias bio-químicas</p>
+            <span style="font:500 10px 'IBM Plex Sans';color:#7eb0b5">cambiar área</span>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px">
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Biología</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Química</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Física</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Matemáticas</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Cálculo</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Español</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Historia de México</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Historia universal</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Literatura</span>
+            <span style="font:500 11.5px 'IBM Plex Sans';color:#d9cbb0;background:#2e2823;border:1px solid #3a3229;padding:6px 12px;border-radius:6px">Geografía</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p style="font:400 12.5px 'IBM Plex Sans';color:#a89880;margin:26px 0 0;max-width:760px;line-height:1.55"><strong style="font-weight:600">La diferencia, en corto:</strong> mismo Tercial (crema, Fraunces, componentes), pero <strong style="font-weight:600">acento coñac</strong> para prepa y <strong style="font-weight:600">verde-pizarra</strong> para universidad; cada uno con su examen, su copy y sus materias. Lo que comparten (mapa, tarjetas, dashboard) se reutiliza igual — solo cambia el contenido y el color de acento.</p>
+
+</div>
+</x-dc>
+</body>
+</html>

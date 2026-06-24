@@ -14,6 +14,40 @@ alumno la abre y sabe en segundos **dónde está parado y qué hacer hoy**.
 
 ---
 
+## ⚡ Luz verde + alcance en DOS FASES (leer primero)
+
+**Gil dio luz verde a la FASE 1.** Según las respuestas del canal
+(`IMPLEMENTAR-niveles.md` P8), hoy NO hay histórico ni puente de datos al sitio,
+así que el mapa se implementa en dos fases para no trabarse:
+
+**FASE 1 — implementable YA (datos estáticos derivables del JSON del examen):**
+- ✅ Los dos niveles (materias → temas), layout bento, escala de color.
+- ✅ **Tamaño de azulejo:** nº de subtemas (nivel 1) y nº de reactivos (nivel 2)
+  — ambos se cuentan directo del JSON del examen (`section.subject`, `topic`).
+- ✅ **% de dominio:** SI hay resultados (el mismo CSV que ya consume
+  `dashboard-academico.html`). Sin CSV, pinta el mapa en estado "sin empezar" o
+  alimenta de un JSON de ejemplo.
+- ✅ Señales **3.1 acción**, **3.2 prioridad**, **3.3 proyección** (los días al
+  examen ya existen; "~5 aciertos" se calcula con la fórmula de §3.3) y
+  **3.5 cobertura**.
+
+**FASE 2 — requiere instrumentar datos (NO bloquear la fase 1):**
+- ⏳ **Señal 3.4 "▲ +6 sem." (tendencia):** necesita **histórico semanal**, que
+  hoy no existe. **Omítela en fase 1** (el diseño ya contempla ocultarla si no
+  hay snapshot previo — ver §3.4). Se activa cuando se guarde una serie de
+  tiempo fechada (un CSV/JSON por semana o un data-store mínimo).
+- ⏳ **% de dominio EN EL SITIO Tercial:** el sitio (`clases`) hoy no tiene datos
+  de dominio por tema; el cálculo vive en el navegador del dashboard de ECOEMS.
+  Para que el bento muestre % real **en el sitio** falta el puente ECOEMS→sitio.
+  Mientras no exista, el mapa en el sitio usa datos de ejemplo o el JSON+CSV
+  subido a mano (igual que el dashboard).
+
+> Regla: implementa todo lo de FASE 1 con lo que el JSON (y el CSV si lo hay) ya
+> da. Donde un dato de fase 2 no exista, **oculta esa señal** — nunca muestres
+> "+0" ni un placeholder. El diseño ya está pensado para degradar limpio.
+
+---
+
 ## 1. Concepto: un mapa de dos niveles (zoom)
 
 Es **una sola idea vista a dos escalas**. No son dos pantallas en paralelo: la

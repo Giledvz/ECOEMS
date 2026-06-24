@@ -20,7 +20,9 @@ crema-coñac-terracota). Todo reusa tus tokens y se integra a `server.js`.
 | `IMPLEMENTAR-dashboard-colores.md` | Guía paste-ready: legibilidad de colores del **dashboard académico** (apagados Tercial + señales redundantes) | Se aplica sobre `dashboard-academico.html` |
 | `IMPLEMENTAR-dashboard-tercial.md` | Guía paste-ready: andamiaje para llevar el **dashboard al look Tercial** (fuentes, tarjetas crema, métricas, Chart.js) | Se aplica sobre `dashboard-academico.html` (+ el doc de colores) |
 | `IMPLEMENTAR-mapa-bento.md` | Guía paste-ready + **explicación a detalle** del **"Tu mapa"** bento de dominio (2 niveles, escala de color, las 4 señales: acción / proyección / tendencia / cobertura). Responde cualquier "¿qué significa X?" | Home (o sección) de Tercial — vista nueva |
+| `IMPLEMENTAR-niveles.md` | Guía de **separación por nivel** (Medio superior / Superior): bifurcación, acentos, qué se comparte. **Incluye un canal 📡 de preguntas técnicas para la IA de desarrollo** | Estructura del sitio Tercial — dirección nueva |
 | `referencia/Mapa Tercial.dc.html` | **Mockup final del mapa bento** — dos pantallas (materias → temas), claro y oscuro, con las 4 señales. **Fuente de verdad.** | Solo referencia de diseño |
+| `referencia/Niveles Tercial.dc.html` | **Mockup final de niveles** — bifurcación + home prepa/universidad, claro y oscuro. **Fuente de verdad.** | Solo referencia de diseño |
 | `referencia/Dashboard Tercial Completo.dc.html` | **Mockup final del dashboard** — apagado+señales completo (radares, mapa de calor, detalle por pregunta). **Fuente de verdad.** | Solo referencia de diseño |
 | `referencia/Dashboard Tercial.dc.html` | Mockup *histórico*: comparación vivo vs apagado (vivo descartado) | Solo referencia |
 | `referencia/Portada Comprobante.dc.html` | Mockup visual: portada corta (Telegram) + completa (PDF) | Solo referencia de diseño (no va a producción) |
@@ -53,6 +55,10 @@ crema-coñac-terracota). Todo reusa tus tokens y se integra a `server.js`.
    para la home. Léelo completo: explica los 2 niveles (materias→temas), la
    escala de color, el mapeo tamaño→span del grid, y las 4 señales de valor con
    su fórmula y objetivo. Reproduce `referencia/Mapa Tercial.dc.html`.
+8. **Separación por nivel** → `IMPLEMENTAR-niveles.md`. Dirección nueva (sin
+   implementar aún). **Primero responde el canal 📡 de preguntas técnicas** al
+   final del doc — con eso ajustamos los diseños a la realidad del repo antes de
+   construir. Reproduce `referencia/Niveles Tercial.dc.html`.
 
 ## Notas
 
