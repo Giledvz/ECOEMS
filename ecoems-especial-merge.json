@@ -3,7 +3,7 @@
     "title": "ECOEMS Práctica (Especial 1+2)",
     "group": "Ingreso a nivel medio superior",
     "version": "1.0",
-    "total_questions": 135,
+    "total_questions": 142,
     "studentsDisabled": [
       "Yuli",
       "Sofía",
@@ -835,6 +835,114 @@
             "answer": "A",
             "explanation": "Helados=15, crepas=3x15=45, palomitas=4x45=180.",
             "_orig": "E2#23"
+          },
+          {
+            "id": 136,
+            "topic": "4.8",
+            "topic_name": "Geometría / cálculo de volumen con cubos unitarios",
+            "text": "¿Cuál es el volumen de la siguiente figura?",
+            "image": "/imagenes_ecoems-especial-merge/q85_volumen_cubos.svg",
+            "options": {
+              "A": "8 cm³",
+              "B": "12 cm³",
+              "C": "16 cm³",
+              "D": "18 cm³"
+            },
+            "answer": "A",
+            "explanation": "La figura está formada por 8 cubos unitarios de 1 cm de lado, así que su volumen es 8 × (1 cm)³ = 8 cm³.",
+            "_orig": "E1#85"
+          },
+          {
+            "id": 137,
+            "topic": "4.9",
+            "topic_name": "Geometría / vistas de un cubo (cara opuesta)",
+            "text": "De un mismo cubo tenemos dos vistas:\n\n¿Cuál es la letra que está en el lado opuesto a la A?",
+            "image": "/imagenes_ecoems-especial-merge/q86_cubo_letras.svg",
+            "options": {
+              "A": "E",
+              "B": "F",
+              "C": "L",
+              "D": "N"
+            },
+            "answer": "D",
+            "explanation": "En ambas vistas la cara L queda arriba; al girar el cubo, A y N ocupan la cara de enfrente, así que están en caras opuestas. La letra opuesta a la A es la N.",
+            "_orig": "E1#86"
+          },
+          {
+            "id": 138,
+            "topic": "4.10",
+            "topic_name": "Sucesiones figurativas / números triangulares con cubos",
+            "text": "¿Cuál es el número de cubos que tiene el octavo término de la siguiente sucesión?",
+            "image": "/imagenes_ecoems-especial-merge/q84_escalera_cubos.svg",
+            "options": {
+              "A": "28",
+              "B": "38",
+              "C": "36",
+              "D": "45"
+            },
+            "answer": "C",
+            "explanation": "Cada figura forma una escalera: la figura n tiene 1+2+···+n cubos (números triangulares). El octavo término = 1+2+···+8 = 36. (28 = 1+···+7, distractor de una figura menos.)",
+            "_orig": "E1#84"
+          },
+          {
+            "id": 139,
+            "topic": "4.11",
+            "topic_name": "Secuencias de rotación (giro de 45°)",
+            "text": "En las siguientes figuras se muestra una secuencia de giro cada 45°. ¿Qué figura continúa en la quinta posición?",
+            "image": "/imagenes_ecoems-especial-merge/q83_giro_secuencia.svg",
+            "options": {
+              "A": "Círculo completo (abanico de 270° con arco que lo cierra).",
+              "B": "Círculo completo (abanico de 225° con arco que lo cierra).",
+              "C": "Abanico de 270° (sin cerrar).",
+              "D": "Abanico de 225° (sin cerrar)."
+            },
+            "option_images": {
+              "A": "/imagenes_ecoems-especial-merge/q83_opc_a.svg",
+              "B": "/imagenes_ecoems-especial-merge/q83_opc_b.svg",
+              "C": "/imagenes_ecoems-especial-merge/q83_opc_c.svg",
+              "D": "/imagenes_ecoems-especial-merge/q83_opc_d.svg"
+            },
+            "answer": "D",
+            "explanation": "Cada figura agrega un sector de 45° girando en horario; el abanico crece y el sector nuevo siempre va relleno, alternando relleno/vacío. La 5ª figura es el abanico de 225° (5 sectores, patrón relleno-vacío-relleno-vacío-relleno) → opción D. A y B son círculos cerrados y C tiene los colores invertidos.",
+            "_orig": "E1#83"
+          },
+          {
+            "id": 140,
+            "topic": "4.12",
+            "topic_name": "Sucesiones figurativas 3D (diamante de cubos)",
+            "text": "Determina cuántos cubos deberá tener la séptima figura de la serie.",
+            "image": "/imagenes_ecoems-especial-merge/q84_cubos7_serie.svg",
+            "options": {
+              "A": "49",
+              "B": "28",
+              "C": "24",
+              "D": "32"
+            },
+            "answer": "B",
+            "explanation": "Cada figura es un diamante hueco: la figura n tiene 4n cubos (fig 1=4, fig 2=8, fig 3=12...). La séptima figura tiene 4×7 = 28 cubos. (49 = 7², distractor.)",
+            "_orig": "E1#84b"
+          },
+          {
+            "id": 141,
+            "topic": "4.13",
+            "topic_name": "Reflexión / simetría (vista de espejo)",
+            "text": "Una ventana se ve desde afuera así:\n\n¿Cómo se verá desde adentro?",
+            "image": "/imagenes_ecoems-especial-merge/q87_ventana.svg",
+            "options": {
+              "A": "Negros: sup-izquierda y abajo-centro (falta arriba-centro).",
+              "B": "Negros: sup-centro e inf-izquierda (falta abajo-centro).",
+              "C": "Negros: sup-derecha y abajo-centro (falta arriba-centro).",
+              "D": "Negros: inf-izquierda e inf-derecha (falta arriba-centro)."
+            },
+            "option_images": {
+              "A": "/imagenes_ecoems-especial-merge/q87_vent_a.svg",
+              "B": "/imagenes_ecoems-especial-merge/q87_vent_b.svg",
+              "C": "/imagenes_ecoems-especial-merge/q87_vent_c.svg",
+              "D": "/imagenes_ecoems-especial-merge/q87_vent_d.svg"
+            },
+            "answer": "A",
+            "explanation": "Verla desde adentro = reflejarla en espejo horizontal (izquierda↔derecha). El círculo negro de arriba-derecha pasa a arriba-izquierda, el de abajo-centro queda en su lugar y el hueco de arriba-centro también: eso es la opción A. (C es la misma vista de afuera, sin reflejar.)",
+            "_orig": "E1#87"
           }
         ]
       },
@@ -1864,6 +1972,22 @@
             "answer": "C",
             "explanation": "Las ciudades mundiales se caracterizan por una población muy grande y buen equipamiento urbano, además de gran conectividad.",
             "_orig": "E2#4"
+          },
+          {
+            "id": 142,
+            "topic": "9.12",
+            "topic_name": "Coordenadas geográficas (latitud y longitud)",
+            "text": "A partir del mapa, relaciona cada ciudad con sus coordenadas.\n\n**Ciudad:** I. Barcelona · II. Vancouver · III. Singapur\n\n**Coordenadas:** a) 1° N, 103° E · b) 41° N, 2° E · c) 34° S, 58° W · d) 49° N, 123° W",
+            "image": "/imagenes_ecoems-especial-merge/q13_mapa.svg",
+            "options": {
+              "A": "I-a, II-c, III-d",
+              "B": "I-b, II-d, III-a",
+              "C": "I-b, II-a, III-d",
+              "D": "I-d, II-b, III-c"
+            },
+            "answer": "B",
+            "explanation": "Leyendo el mapa: Barcelona (NE de España) = 41° N, 2° E (b); Vancouver (costa oeste de Canadá) = 49° N, 123° W (d); Singapur (sur de Asia, sobre el Ecuador) = 1° N, 103° E (a). La coordenada c (34° S, 58° W) es Buenos Aires, que no está en la lista (distractor). → I-b, II-d, III-a.",
+            "_orig": "E1#13G"
           }
         ]
       },
@@ -2162,71 +2286,6 @@
       {
         "_origen": "E1",
         "_materia": "Habilidad matemática",
-        "_motivo": "opciones cortadas/incompletas",
-        "topic_name": "Razonamiento figurativo / secuencia de giro de figuras",
-        "text": "En las siguientes figuras se muestra una secuencia de giro cada 45°. ¿Qué figura continúa en la quinta p[osición...]?",
-        "options": {
-          "A": "Círculo dividido en 8 sectores, inscrito en un cuadrado, con sectores negros alternados (patrón de molinete).",
-          "B": "[no visible]",
-          "C": "[no visible]",
-          "D": "[no visible]"
-        }
-      },
-      {
-        "_origen": "E1",
-        "_materia": "Habilidad matemática",
-        "_motivo": "opciones cortadas/incompletas",
-        "topic_name": "Sucesiones figurativas / conteo de cubos",
-        "text": "Determina cuántos cubos deberá tener la séptima figura de la serie.",
-        "options": {
-          "A": "49",
-          "B": "28",
-          "C": "[no visible]",
-          "D": "[no visible]"
-        }
-      },
-      {
-        "_origen": "E1",
-        "_materia": "Habilidad matemática",
-        "_motivo": "sin respuesta (depende de figura o lectura no incluida)",
-        "topic_name": "Geometría / cálculo de volumen con cubos unitarios",
-        "text": "¿Cuál es el volumen de la siguiente figura?",
-        "options": {
-          "A": "8 cm³",
-          "B": "12 cm³",
-          "C": "16 cm³",
-          "D": "18 cm³"
-        }
-      },
-      {
-        "_origen": "E1",
-        "_materia": "Habilidad matemática",
-        "_motivo": "sin respuesta (depende de figura o lectura no incluida)",
-        "topic_name": "Razonamiento espacial: caras opuestas de un cubo",
-        "text": "De un mismo cubo tenemos dos vistas:\n\n¿Cuál es la letra que está en el lado opuesto a la A?",
-        "options": {
-          "A": "E",
-          "B": "F",
-          "C": "L",
-          "D": "N"
-        }
-      },
-      {
-        "_origen": "E1",
-        "_materia": "Habilidad matemática",
-        "_motivo": "opciones cortadas/incompletas",
-        "topic_name": "Razonamiento espacial: vista reflejada/desde el reverso de una figura",
-        "text": "Una ventana se ve desde afuera así:\n\n¿Cómo se verá desde adentro?",
-        "options": {
-          "A": "[figura: cuadrícula 3x3 con un patrón de rombos negros y blancos en los vértices/intersecciones]",
-          "B": "[figura: cuadrícula 3x3 con patrón de rombos negros y blancos (variante)]",
-          "C": "[figura parcialmente visible: cuadrícula] [incompleta]",
-          "D": "[no visible]"
-        }
-      },
-      {
-        "_origen": "E1",
-        "_materia": "Habilidad matemática",
         "_motivo": "sin respuesta (depende de figura o lectura no incluida)",
         "topic_name": "Razonamiento espacial: armado de cubo a partir de plantilla (desarrollo plano)",
         "text": "¿Cuál de las imágenes corresponden al armar el siguiente cubo?",
@@ -2247,19 +2306,6 @@
           "A": "$\\frac{9}{25}$",
           "B": "12 [incompleta]",
           "C": "[no visible]",
-          "D": "[no visible]"
-        }
-      },
-      {
-        "_origen": "E1",
-        "_materia": "Habilidad matemática",
-        "_motivo": "opciones cortadas/incompletas",
-        "topic_name": "Sucesiones figurativas / conteo de cubos",
-        "text": "¿Cuál es el número de cubos que tiene el octavo término de la siguie[nte...]",
-        "options": {
-          "A": "28",
-          "B": "38",
-          "C": "36",
           "D": "[no visible]"
         }
       },
@@ -2451,32 +2497,6 @@
         "_motivo": "opciones cortadas/incompletas",
         "topic_name": "Interpretación de gráfica distancia-tiempo (MRU)",
         "text": "Selecciona el enunciado que describa mejor lo que se muestra en la gráfica.",
-        "options": {
-          "A": "[no visible]",
-          "B": "[no visible]",
-          "C": "[no visible]",
-          "D": "[no visible]"
-        }
-      },
-      {
-        "_origen": "E1",
-        "_materia": "Geografía",
-        "_motivo": "opciones cortadas/incompletas",
-        "topic_name": "Coordenadas geográficas / mapa con ciudades (continuación de la pregunta 13)",
-        "text": "[Figura del mapa correspondiente a la pregunta 13 de Geografía 'A partir del mapa, relaciona cada ciudad con sus coordenadas.'] En el borde inferior se alcanza a ver una opción cortada e ilegible: 'A) I-a, II-c, III-d' [aproximado, ilegible].",
-        "options": {
-          "A": "I-a, II-c, III-d [incompleta]",
-          "B": "[no visible]",
-          "C": "[no visible]",
-          "D": "[no visible]"
-        }
-      },
-      {
-        "_origen": "E1",
-        "_materia": "Geografía",
-        "_motivo": "opciones cortadas/incompletas",
-        "topic_name": "Coordenadas geográficas / relacionar ciudades con coordenadas",
-        "text": "A partir del mapa, relaciona cada ciudad con sus coordenadas.\n\nCiudad\nI. Barcelona.\nII. Vancouver.\nIII. Singapur.\n\nCoordenadas\na. 1° N, 103° E\nb. 41° N, 2° E\nc. 34° S, 58° W\nd. 49° N, 123° W",
         "options": {
           "A": "[no visible]",
           "B": "[no visible]",
