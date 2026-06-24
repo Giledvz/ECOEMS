@@ -1018,16 +1018,23 @@
           {
             "id": 63,
             "topic": "6.2",
-            "topic_name": "Gráficas velocidad-tiempo y movimiento uniformemente acelerado",
-            "text": "¿Cuál de las siguientes gráficas de tiempo contra velocidad representa un movimiento uniformemente acelerado?",
+            "topic_name": "Gráfica velocidad-tiempo (MRUA)",
+            "text": "¿Cuál de las siguientes gráficas de velocidad contra tiempo representa un movimiento uniformemente acelerado?",
             "options": {
-              "A": "[gráfica: ejes v (vertical) y t (horizontal); línea horizontal punteada a una altura constante, es decir velocidad constante]",
-              "B": "[gráfica: ejes v (vertical) y t (horizontal); línea recta punteada ascendente que parte del origen]",
-              "C": "[incompleta]",
-              "D": "[no visible]"
+              "A": "Recta horizontal (velocidad constante).",
+              "B": "Recta inclinada que parte del origen.",
+              "C": "Curva ascendente cada vez más inclinada.",
+              "D": "Recta que sube y luego se mantiene constante."
+            },
+            "option_images": {
+              "A": "/imagenes_ecoems-especial-merge/q54vt_a.svg",
+              "B": "/imagenes_ecoems-especial-merge/q54vt_b.svg",
+              "C": "/imagenes_ecoems-especial-merge/q54vt_c.svg",
+              "D": "/imagenes_ecoems-especial-merge/q54vt_d.svg"
             },
             "answer": "B",
-            "explanation": "En una gráfica v-t, el movimiento uniformemente acelerado es una recta ascendente desde el origen (aceleración constante); la opción A es velocidad constante.",
+            "explanation": "En una gráfica velocidad-tiempo, el movimiento uniformemente acelerado es una recta inclinada que parte del origen: la velocidad aumenta a un ritmo constante. La A es velocidad constante (MRU), la C es aceleración variable y la D acelera y luego se mantiene constante.",
+            "_reconstruido": "opciones-imagen reconstruidas: A y B fieles a la foto original; C y D son distractores inventados (no se alcanzaban a ver en la foto).",
             "_orig": "E1#57"
           },
           {
