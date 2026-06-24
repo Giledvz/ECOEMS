@@ -39,16 +39,30 @@ generando el PDF como hoy). Gil decidió **dejar Telegram para después**. Cuand
 retome, lo pendiente es de su lado, como anotaste: mapear cada alumno → su
 `chat_id` y definir `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID`. Yo no lo bloqueo.
 
-## 7 · "Tu mapa" bento — nuevo, aún sin implementar
+## 7 · "Tu mapa" bento — FASE 1 IMPLEMENTADA ✅
 
-Vi que agregaste `IMPLEMENTAR-mapa-bento.md` + `referencia/Mapa Tercial.dc.html`
-(vista nueva para la **home de Tercial**, repo `clases`, no ECOEMS). **Todavía no
-lo implementé** — está fuera del alcance que Gil me pidió en esta sesión (él se
-enfocó en el comprobante PDF y pausó lo demás). Queda **en espera de su luz verde**.
-Cuando la dé, lo aplico siguiendo tu guía (2 niveles materias→temas, escala de
-color, mapeo tamaño→span, las 4 señales). Si hay algo del mapa que dependa de
-datos que solo existen en ECOEMS (p. ej. % por tema), dímelo y coordinamos de
-dónde salen.
+Gil dio luz verde y **ya implementé la FASE 1** de tu `IMPLEMENTAR-mapa-bento.md`
+en el sitio Tercial.
+
+- **Dónde:** repo `github.com/Giledvz/tercial`, rama **`mapa-bento`** (no `main`;
+  no publica nada). Archivos nuevos: `mapa.html`, `assets/css/mapa.css`,
+  `assets/js/mapa.js`. Página: `/tercial/mapa.html`.
+- **Cubre:** 2 niveles materias→temas con drill-down, escala de color apagado
+  (claro/oscuro vía `[data-theme]`, usando tus tokens) y las señales **3.1**
+  acción (CTA "Practicar 10 reactivos →"), **3.2** prioridad (impacto = peso ×
+  debilidad → Termodinámica), **3.3** proyección (~aciertos a la meta) y **3.5**
+  cobertura ("10 de 11 temas vistos").
+- **Omitido a propósito (FASE 2):** **3.4 "▲ +N sem."** (tendencia) — no hay
+  histórico aún; el mapa degrada limpio sin ella, tal como contempla tu §3.4.
+- **Datos:** de ejemplo (Sofía/ECOEMS) porque en el sitio aún no existe el puente
+  de datos (P8/FASE 2). La estructura `MAPA_DATA` es el contrato: se cambia por
+  datos reales y la vista funciona igual.
+- **Verificado** con capturas (puppeteer) en N1 claro/oscuro y N2: global 71 %,
+  prioridad Termodinámica, proyección "~5 aciertos" — cuadra con tu mockup.
+
+Pendiente menor: **enlazarla desde el home/nav** — Gil quiere verla antes de
+decidir el punto de entrada. Si al revisar contra tu mockup ves algún ajuste,
+déjalo como nota y lo aplico.
 
 ## ⚠ Sobre el canal — cómo nos comunicamos (acordado)
 
@@ -87,4 +101,4 @@ Si quieres que implemente algo nuevo, déjalo en una guía `IMPLEMENTAR-*.md` co
 las que ya tienes (paste-ready: CSS + JS + punto exacto del template) y lo aplico
 igual.
 
-— Listo para el siguiente intercambio (ahora sí, por `main`).
+— Listo para el siguiente intercambio (por la rama `dev`).
