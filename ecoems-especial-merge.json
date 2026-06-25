@@ -3,7 +3,7 @@
     "title": "ECOEMS Práctica (Especial 1+2)",
     "group": "Ingreso a nivel medio superior",
     "version": "1.0",
-    "total_questions": 142,
+    "total_questions": 149,
     "studentsDisabled": [
       "Yuli",
       "Sofía",
@@ -943,6 +943,114 @@
             "answer": "A",
             "explanation": "Verla desde adentro = reflejarla en espejo horizontal (izquierda↔derecha). El círculo negro de arriba-derecha pasa a arriba-izquierda, el de abajo-centro queda en su lugar y el hueco de arriba-centro también: eso es la opción A. (C es la misma vista de afuera, sin reflejar.)",
             "_orig": "E1#87"
+          },
+          {
+            "id": 144,
+            "topic": "4.14",
+            "topic_name": "Volumen por conteo de cubos unitarios",
+            "text": "¿Cuál es el volumen de la siguiente figura si el lado de cada cubo mide 1 cm?",
+            "image": "/imagenes_ecoems-especial-merge/q88_volumen_1cm.svg",
+            "options": {
+              "A": "10 cm³",
+              "B": "8 cm³",
+              "C": "12 cm³",
+              "D": "11 cm³"
+            },
+            "answer": "B",
+            "explanation": "La figura está formada por 8 cubos unitarios; como cada cubo mide 1 cm de lado, cada uno tiene un volumen de 1 cm³. El volumen total es la suma: 8 × 1 cm³ = 8 cm³. Respuesta: B.",
+            "_orig": "E2#88HM"
+          },
+          {
+            "id": 145,
+            "topic": "4.15",
+            "topic_name": "Armado de un cubo a partir de su plantilla (caras)",
+            "text": "Si la cara C₉ corresponde a C₂ y la C₈ a C₃, ¿a qué cara corresponde C₁?",
+            "image": "/imagenes_ecoems-especial-merge/q87_cubo_desplegado.svg",
+            "options": {
+              "A": "C₇",
+              "B": "C₆",
+              "C": "C₅",
+              "D": "C₄"
+            },
+            "answer": "B",
+            "explanation": "Al doblar la plantilla, las caras quedan: C₅ al frente, C₉ atrás, C₆ a la izquierda, C₇ a la derecha, C₈ arriba y C₄ abajo. Si el cubo se orienta de modo que C₉ quede arriba (posición de C₂) y C₈ a la derecha (posición de C₃), la cara que queda al frente —donde está C₁— es C₆. Respuesta: B.",
+            "_orig": "E2#87HM"
+          },
+          {
+            "id": 146,
+            "topic": "4.16",
+            "topic_name": "Patrón en sucesión de figuras (triángulos)",
+            "text": "¿Cuántos triángulos negros se forman con 18 triángulos blancos?",
+            "image": "/imagenes_ecoems-especial-merge/q83_triangulos_serie.svg",
+            "options": {
+              "A": "7",
+              "B": "5",
+              "C": "6",
+              "D": "9"
+            },
+            "answer": "C",
+            "explanation": "En la sucesión, cada figura agrega un triángulo formado por 3 triángulos blancos (apuntan hacia arriba) y 1 negro (apunta hacia abajo): figura 1 = 3 blancos y 1 negro; figura 2 = 6 y 2; figura 3 = 9 y 3; figura 4 = 12 y 4. Es decir, los blancos son el triple de los negros (blancos = 3 × negros). Con 18 triángulos blancos, los negros son 18 ÷ 3 = 6. Respuesta: C.",
+            "_orig": "E2#83HM"
+          },
+          {
+            "id": 147,
+            "topic": "4.17",
+            "topic_name": "Sucesión de figuras (reflexiones de una corona)",
+            "text": "¿Cuál es la figura que sigue para completar la secuencia?",
+            "image": "/imagenes_ecoems-especial-merge/q81_corona_serie.svg",
+            "options": {
+              "A": "Corona hacia arriba, con el pico derecho más alto.",
+              "B": "Corona hacia arriba, con el pico izquierdo más alto.",
+              "C": "Corona hacia abajo.",
+              "D": "Corona hacia abajo, reflejada."
+            },
+            "option_images": {
+              "A": "/imagenes_ecoems-especial-merge/q81_opc_a.svg",
+              "B": "/imagenes_ecoems-especial-merge/q81_opc_b.svg",
+              "C": "/imagenes_ecoems-especial-merge/q81_opc_c.svg",
+              "D": "/imagenes_ecoems-especial-merge/q81_opc_d.svg"
+            },
+            "answer": "A",
+            "explanation": "La figura se va reflejando: figura 1 (original), figura 2 (reflejo sobre el eje vertical), figura 3 (reflejo sobre el eje horizontal) y figura 4 (reflejo sobre ambos ejes). Es un ciclo de cuatro orientaciones, por lo que la quinta figura reinicia el ciclo y vuelve a la orientación de la primera: corona hacia arriba con el pico derecho más alto. Respuesta: A.",
+            "_orig": "E2#81HM"
+          },
+          {
+            "id": 148,
+            "topic": "4.18",
+            "topic_name": "Sucesión de figuras (flechas y circunferencias)",
+            "text": "¿Cuál es la imagen que continúa la serie?",
+            "image": "/imagenes_ecoems-especial-merge/q82_molinete_serie.svg",
+            "options": {
+              "A": "Tres flechas negras convergentes, con circunferencias blancas a los lados y una abajo.",
+              "B": "Tres flechas blancas convergentes, con circunferencias negras a los lados y una abajo.",
+              "C": "Tres flechas negras convergentes, con una circunferencia blanca detrás de cada flecha.",
+              "D": "Tres flechas blancas convergentes, con una circunferencia negra detrás de cada flecha."
+            },
+            "option_images": {
+              "A": "/imagenes_ecoems-especial-merge/q82_opc_a.svg",
+              "B": "/imagenes_ecoems-especial-merge/q82_opc_b.svg",
+              "C": "/imagenes_ecoems-especial-merge/q82_opc_c.svg",
+              "D": "/imagenes_ecoems-especial-merge/q82_opc_d.svg"
+            },
+            "answer": "C",
+            "explanation": "La serie crece alternando color y agregando flechas, y a cada flecha se le añade una circunferencia detrás (en su cola): 1 flecha blanca; 1 flecha negra con su circunferencia detrás; 2 flechas blancas; 2 flechas negras con circunferencia detrás de cada una; 3 flechas blancas… Lo que continúa son 3 flechas negras con una circunferencia detrás de CADA flecha (incluida la de arriba). En A y B la tercera circunferencia está mal puesta (abajo, donde no hay flecha). Respuesta: C.",
+            "_orig": "E2#82HM"
+          },
+          {
+            "id": 149,
+            "topic": "4.19",
+            "topic_name": "Razón de áreas en una cuadrícula",
+            "text": "Si cada lado del cuadrado mide una unidad, determina la razón entre el área total y el área sombreada de la siguiente figura.",
+            "image": "/imagenes_ecoems-especial-merge/q90_cuadrado_sombreado.svg",
+            "options": {
+              "A": "$\\frac{9}{25}$",
+              "B": "$\\frac{12}{25}$",
+              "C": "$\\frac{13}{25}$",
+              "D": "$\\frac{16}{25}$"
+            },
+            "answer": "B",
+            "explanation": "El cuadrado está dividido en una cuadrícula de 5×5, es decir, 25 cuadritos iguales, así que el área total equivale a 25 partes. Contando las celdas sombreadas hay 12. La razón del área sombreada respecto al total es 12/25. Respuesta: B.",
+            "_orig": "E1#90HM"
           }
         ]
       },
@@ -1309,6 +1417,22 @@
             "answer": "C",
             "explanation": "El generador convierte la energia mecanica del agua en movimiento en energia electrica.",
             "_orig": "E2#16"
+          },
+          {
+            "id": 143,
+            "topic": "6.14",
+            "topic_name": "Tipos de movimiento (gráfica distancia-tiempo)",
+            "text": "La siguiente gráfica describe el movimiento de un auto.\n\nEl tipo de movimiento en el intervalo que va de t₀ a t₄, es con:",
+            "image": "/imagenes_ecoems-especial-merge/q53_vt_movimiento.svg",
+            "options": {
+              "A": "velocidad constante",
+              "B": "velocidad variable",
+              "C": "aceleración constante",
+              "D": "desplazamiento uniforme"
+            },
+            "answer": "B",
+            "explanation": "La gráfica es de distancia (d) contra tiempo (t); su pendiente representa la velocidad. En el intervalo de t₀ a t₄ la pendiente cambia de magnitud y de signo (el auto avanza, se devuelve, vuelve a avanzar y regresa), así que la velocidad no es constante: el movimiento es de velocidad variable. No es A ni D (sería una sola recta de pendiente constante) ni C (en una gráfica d-t la aceleración constante daría una parábola, no segmentos rectos). Respuesta: B.",
+            "_orig": "E2#53F"
           }
         ]
       },
@@ -2300,19 +2424,6 @@
         "_origen": "E1",
         "_materia": "Habilidad matemática",
         "_motivo": "opciones cortadas/incompletas",
-        "topic_name": "Razón entre áreas en figura cuadriculada",
-        "text": "Si cada lado del cuadrado mide una unidad, determina la razón entre el área total y el área sombreada de la siguiente figura.",
-        "options": {
-          "A": "$\\frac{9}{25}$",
-          "B": "12 [incompleta]",
-          "C": "[no visible]",
-          "D": "[no visible]"
-        }
-      },
-      {
-        "_origen": "E1",
-        "_materia": "Habilidad matemática",
-        "_motivo": "opciones cortadas/incompletas",
         "topic_name": "Razonamiento figurativo / series de figuras geométricas",
         "text": "[Enunciado no visible]",
         "options": {
@@ -2532,34 +2643,6 @@
       },
       {
         "_origen": "E2",
-        "_materia": "Física",
-        "_motivo": "opciones cortadas (solo A) + requiere gráfica velocidad-tiempo",
-        "topic_name": "",
-        "text": "La siguiente gráfica describe el movimiento de un auto.\n\nEl tipo de movimiento en el intervalo que va de t₀ a t₄, es con",
-        "_figura": "Gráfica cartesiana velocidad (eje vertical) vs tiempo (eje horizontal). Eje vertical con marcas a alturas crecientes; eje horizontal marcado con t₀ (origen), t₁, t₂, t₃, t₄. La curva: sube linealmente desde el origen (t₀) hasta un pico alto en t₁; luego baja linealmente desde t₁ hasta un valor intermedio en t₂ (formando un triángulo/pico inicial); de t₂ a t₃ se mantiene aproximadamente constante en ese nivel intermedio (segmento horizontal); de t₃ a t₄ baja linealmente hasta cero (de regreso al eje). Se pregunta por el tipo de movimiento en el intervalo de t₀ a t₄.",
-        "options": {
-          "A": "velocidad constante",
-          "B": "",
-          "C": "",
-          "D": ""
-        }
-      },
-      {
-        "_origen": "E2",
-        "_materia": "Habilidad matemática",
-        "_motivo": "las opciones son imágenes (secuencia de figuras), no transcribibles",
-        "topic_name": "",
-        "text": "¿Cuál es la figura que sigue para completar la secuencia?",
-        "_figura": "Secuencia de 4 cuadros en fila, cada uno conteniendo una figura tipo 'corona'/'W' o 'M' formada por líneas. Cuadro 1: forma de W (corona) con dos picos hacia abajo y pico central hacia abajo, abierta arriba (como una 'W'/corona). Cuadro 2: similar corona pero con líneas más marcadas/variación. Cuadro 3: forma con pico hacia arriba en el centro (V invertida / pico ascendente) abierta. Cuadro 4: forma de pico/flecha apuntando hacia arriba (^). La secuencia muestra rotación o reflexión progresiva de la figura. Se pide cuál figura sigue. Opciones (cada una en un cuadro): A) corona/W con dos picos (similar al cuadro 1); B) forma 'M' o corona invertida (solo asomada en el borde inferior). Las figuras están borrosas; transcripción de formas aproximada, requiere reconstrucción cuidadosa.",
-        "options": {
-          "A": "",
-          "B": "",
-          "C": "",
-          "D": ""
-        }
-      },
-      {
-        "_origen": "E2",
         "_materia": "Habilidad matemática",
         "_motivo": "las opciones son imágenes (rotación de cubos)",
         "topic_name": "",
@@ -2583,34 +2666,6 @@
           "A": "",
           "B": "",
           "C": "",
-          "D": ""
-        }
-      },
-      {
-        "_origen": "E2",
-        "_materia": "Habilidad matemática",
-        "_motivo": "requiere figura (patrón desplegado de un cubo) + opciones no visibles",
-        "topic_name": "",
-        "text": "Si la cara C₉ corresponde a C₂ y la C₈ a C₃, ¿a qué cara corresponde C₁?",
-        "_figura": "Patron desplegado (cruz) de un cubo con caras etiquetadas: arriba C9, debajo C8, fila central C6 C5 C7, abajo C4. A la derecha del patron hay un dado/cubo en perspectiva con una cara frontal etiquetada C1 y una cara lateral (parcialmente legible, posible C2). Se pide deducir a que cara corresponde C1.",
-        "options": {
-          "A": "",
-          "B": "",
-          "C": "",
-          "D": ""
-        }
-      },
-      {
-        "_origen": "E2",
-        "_materia": "Habilidad matemática",
-        "_motivo": "opción D cortada + requiere figura (apilamiento de cubos)",
-        "topic_name": "",
-        "text": "¿Cuál es el volumen de la siguiente figura si el lado de cada cubo mide 1 cm?",
-        "_figura": "Figura tridimensional formada por varios cubos unitarios (cubos de 1 cm de lado) apilados/escalonados. Se ve una estructura tipo escalera o agrupación de cubos pequeños; a la derecha hay acotaciones '1=' indicando que cada lado mide 1. Se pide el volumen total en cm³ contando los cubos.",
-        "options": {
-          "A": "10 cm³",
-          "B": "8 cm³",
-          "C": "12 cm³",
           "D": ""
         }
       },

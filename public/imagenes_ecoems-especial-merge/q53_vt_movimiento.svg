@@ -1,0 +1,29 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 148" width="210" height="148" font-family="'Latin Modern Roman', Georgia, serif">
+<!-- guías horizontales punteadas a las alturas d3,d2,d1 -->
+<line x1="42" y1="32" x2="72"  y2="32" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.55"/>
+<line x1="42" y1="52" x2="138" y2="52" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.55"/>
+<line x1="42" y1="72" x2="104" y2="72" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.55"/>
+<!-- guías verticales punteadas en t1,t2,t3 -->
+<line x1="72"  y1="32" x2="72"  y2="108" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"/>
+<line x1="104" y1="72" x2="104" y2="108" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"/>
+<line x1="138" y1="52" x2="138" y2="108" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"/>
+<!-- ejes -->
+<line x1="42" y1="108" x2="42" y2="20" stroke="currentColor" stroke-width="1.6"/>
+<polygon points="42,15 38,26 46,26" fill="currentColor"/>
+<line x1="42" y1="108" x2="190" y2="108" stroke="currentColor" stroke-width="1.6"/>
+<polygon points="195,108 184,104 184,112" fill="currentColor"/>
+<text x="26" y="26" font-size="14" font-style="italic">d</text>
+<text x="188" y="126" font-size="14" font-style="italic">t</text>
+<!-- etiquetas d1,d2,d3 -->
+<text x="26" y="36" font-size="10" font-style="italic">d&#8323;</text>
+<text x="26" y="56" font-size="10" font-style="italic">d&#8322;</text>
+<text x="26" y="76" font-size="10" font-style="italic">d&#8321;</text>
+<!-- curva d-t: zig-zag -->
+<polyline points="42,108 72,32 104,72 138,52 170,108" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<!-- etiquetas t0..t4 -->
+<text x="37"  y="122" font-size="11" font-style="italic">t&#8320;</text>
+<text x="67"  y="122" font-size="11" font-style="italic">t&#8321;</text>
+<text x="99"  y="122" font-size="11" font-style="italic">t&#8322;</text>
+<text x="133" y="122" font-size="11" font-style="italic">t&#8323;</text>
+<text x="165" y="122" font-size="11" font-style="italic">t&#8324;</text>
+</svg>
