@@ -1086,6 +1086,8 @@
   .practice-q-text { font-size: var(--font-size-14); line-height: 1.6; color: var(--color-text-primary); }
   .practice-q-img { margin: var(--space-3) 0; }
   .practice-q-img img { max-width: 320px; max-height: 220px; }
+  /* SVG inline (mapas, figuras): se ajusta al ancho del panel para no desbordar. */
+  .practice-q-img svg { max-width: 100%; max-height: 420px; height: auto; display: block; }
   .practice-options { list-style: none; padding: 0; margin: var(--space-4) 0; display: flex; flex-direction: column; gap: var(--space-2); }
   .practice-option {
     display: flex; gap: 10px; align-items: baseline;
@@ -1097,7 +1099,7 @@
   .practice-option__letter { font-weight: 600; flex-shrink: 0; }
   .practice-option--correct { border-color: var(--color-state-ok); background-color: var(--color-state-ok-bg, transparent); }
   .practice-option--err { border-color: var(--color-state-err); background-color: var(--color-state-err-bg, transparent); }
-  .practice-option img { max-width: 160px; max-height: 110px; display: block; }
+  .practice-option img, .practice-option svg { max-width: 160px; max-height: 110px; height: auto; display: block; }
   .practice-exp {
     border-left: 3px solid var(--accent-conac);
     padding: var(--space-2) var(--space-4);
@@ -1430,7 +1432,7 @@
       <div class="practice-exp" id="pExplanation" style="display:none;"></div>
       <button class="btn-start practice-next" id="pNextBtn" onclick="practiceNext()" type="button">
         <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        Siguiente pregunta
+        <span id="pNextLabel">Siguiente pregunta</span>
       </button>
     </div>
   </div>
@@ -1742,16 +1744,11 @@ const { renderMath } = window.MdRender;
 // fondo, para que un 1/1 (100%) no le gane a un 9/10 (90%). Desempate: más
 // aciertos, luego alfabético. (Mismo criterio que la pantalla del alumno.)
 function sortedPracticeScores(scores) {
-  const entries = Object.entries(scores || {});
-  const totalAnswered = entries.reduce((sum, [, s]) => sum + (s.answered || 0), 0);
-  const minParticip = entries.length > 0 ? (totalAnswered / entries.length) / 2 : 0;
-  const pct = s => (s.answered > 0 ? s.correct / s.answered : 0);
-  return entries.sort((a, b) => {
-    const qa = (a[1].answered || 0) >= minParticip;
-    const qb = (b[1].answered || 0) >= minParticip;
-    if (qa !== qb) return qa ? -1 : 1;
-    return pct(b[1]) - pct(a[1]) || b[1].correct - a[1].correct || a[0].localeCompare(b[0]);
-  });
+  // Carrusel: gana quien más PUNTOS tiene. Desempate: más aciertos, luego nombre.
+  return Object.entries(scores || {}).sort((a, b) =>
+    (b[1].points || 0) - (a[1].points || 0)
+    || (b[1].correct || 0) - (a[1].correct || 0)
+    || a[0].localeCompare(b[0]));
 }
 
 // Igual que en la página del alumno: los <img src="*.svg"> se reemplazan por el
@@ -1823,12 +1820,17 @@ let __pTickInt = null;
 socket.on('practiceTeacherState', (data) => {
   if (!selectedRoom || data.roomCode !== selectedRoom) return;
   const newPhase = data.state && data.state.phase;
-  // Aviso al profesor: sonido + flash cuando el alumno contesta.
+  // Aviso al profesor: sonido + flash al revelarse. Tomamos como referencia al
+  // del turno (si contestó); si no, según si hubo más aciertos que errores.
   if (__pPrevPhase === 'answering' && newPhase === 'revealed' && data.state.lastResult) {
-    playRevealChime(data.state.lastResult.isCorrect);
+    const lr = data.state.lastResult;
+    const holderRes = (lr.results || []).find(x => x.isTurn);
+    const nOk = (lr.results || []).filter(x => x.isCorrect).length;
+    const ok = holderRes ? holderRes.isCorrect : (nOk * 2 >= (lr.results || []).length);
+    playRevealChime(ok);
     const card = document.querySelector('.practice-card--q');
     if (card) {
-      const cls = data.state.lastResult.isCorrect ? 'practice-card--flash-ok' : 'practice-card--flash-err';
+      const cls = ok ? 'practice-card--flash-ok' : 'practice-card--flash-err';
       card.classList.remove('practice-card--flash-ok', 'practice-card--flash-err');
       void card.offsetWidth; // reinicia la animación
       card.classList.add(cls);
@@ -1880,13 +1882,13 @@ function renderPracticePanel() {
   });
   if (prev && [...sel.options].some(o => o.value === prev)) sel.value = prev;
 
-  // Marcador (aciertos / participaciones · porcentaje)
+  // Marcador (puntos · aciertos/respuestas)
   const scoresEl = document.getElementById('pScores');
   const entries = sortedPracticeScores(st.scores);
   scoresEl.innerHTML = entries.length
     ? entries.map(([n, s]) => {
-        const pct = s.answered > 0 ? Math.round((s.correct / s.answered) * 100) : 0;
-        return `<div class="practice-scoreboard__row"><span></span><strong>${s.correct}/${s.answered} · ${pct}%</strong></div>`;
+        const p = s.points || 0;
+        return `<div class="practice-scoreboard__row"><span></span><strong>${p > 0 ? '+' + p : p} pts · ${s.correct || 0}/${s.answered || 0}</strong></div>`;
       }).join('')
     : '<div class="practice-scoreboard__row"><span>Sin participaciones aún</span></div>';
   // textContent para nombres (evita HTML injection desde nombres de alumnos)
@@ -1904,13 +1906,15 @@ function renderPracticePanel() {
   const resEl = document.getElementById('pResult');
   const nextBtn = document.getElementById('pNextBtn');
 
-  // Nota de equidad: cuántas se juegan y cuántas tocan por alumno.
+  // Nota de equidad: cuántas se juegan (múltiplo de participantes) y los turnos
+  // (+2) que toca a cada quien. En modo B todos contestan todas las que se jueguen.
   const noteEl = document.getElementById('pLimitNote');
   const li = practiceData.limitInfo;
-  if (li && li.perStudent) {
-    noteEl.textContent = li.limit < li.totalAvailable
-      ? `se juegan ${li.limit} de ${li.totalAvailable} · ${li.perStudent} por alumno (${li.participants})`
-      : `${li.perStudent} preguntas por alumno (${li.participants})`;
+  if (li && li.totalAvailable) {
+    const each = li.perStudent ? ` · ${li.perStudent} turnos por alumno (${li.participants})` : '';
+    noteEl.textContent = (li.limit < li.totalAvailable)
+      ? `se juegan ${li.limit} de ${li.totalAvailable}${each}`
+      : `${li.totalAvailable} preguntas${each}`;
   } else {
     noteEl.textContent = '';
   }
@@ -1935,38 +1939,37 @@ function renderPracticePanel() {
   inlineSVGsInElement(imgEl);
 
   const r = st.lastResult;
+  const wrongLetters = (st.phase === 'revealed' && r && r.results)
+    ? new Set(r.results.filter(x => !x.isCorrect).map(x => x.answer)) : null;
   optsEl.innerHTML = '';
   Object.keys(q.options).forEach(letter => {
     const li = document.createElement('li');
     let cls = 'practice-option';
     if (letter === correct) cls += ' practice-option--correct';
-    else if (r && st.phase === 'revealed' && letter === r.answer && !r.isCorrect) cls += ' practice-option--err';
+    else if (wrongLetters && wrongLetters.has(letter)) cls += ' practice-option--err';
     li.className = cls;
-    const optImg = q.option_images && q.option_images[letter] ? `<img src="${q.option_images[letter]}" alt="">` : '';
-    li.innerHTML = `<span class="practice-option__letter">${letter})</span><span>${renderMath(q.options[letter])}${optImg}</span>`;
+    // Si la opción tiene imagen, se muestra SOLO la imagen (el texto es la
+    // descripción/placeholder de la figura, no se repite). Igual que el alumno.
+    let imgPath = q.option_images && q.option_images[letter];
+    if (!imgPath) { const m = /^\s*<img[^>]+src="([^"]+\.svg)"[^>]*>\s*$/i.exec(q.options[letter] || ''); if (m) imgPath = m[1]; }
+    const optContent = imgPath ? `<img src="${imgPath}" alt="">` : renderMath(q.options[letter]);
+    li.innerHTML = `<span class="practice-option__letter">${letter})</span><span>${optContent}</span>`;
     optsEl.appendChild(li);
   });
   inlineSVGsInElement(optsEl);
   adaptPracticeBlankWidths(q);
 
   if (st.phase === 'revealed' && r) {
-    resEl.className = 'practice-result ' + (r.isCorrect ? 'practice-result--ok' : 'practice-result--err');
-    const verdict = r.isCorrect ? '✓ correcta' : `✗ (era ${r.correctAnswer})`;
-    resEl.textContent = r.stolen
-      ? `${r.name} se la robó a ${r.stolenFrom}: ${r.answer} ${verdict}`
-      : `${r.name}: ${r.answer} ${verdict}`;
+    const res = r.results || [];
+    const nOk = res.filter(x => x.isCorrect).length;
+    resEl.className = 'practice-result ' + (nOk * 2 >= res.length ? 'practice-result--ok' : 'practice-result--err');
+    const who = res.map(x => `${x.name}: ${x.answer} ${x.isCorrect ? '✓' : '✗'} (${x.delta > 0 ? '+' + x.delta : x.delta})${x.isTurn ? ' ⟵ turno' : ''}`).join('  ·  ');
+    resEl.textContent = `Correcta: ${r.correctAnswer}  —  ${who || 'nadie contestó'}`;
   } else {
     resEl.className = 'practice-result';
-    if (st.openForAll) {
-      const hadBids = (practiceData.bids || []).length > 0;
-      resEl.textContent = hadBids
-        ? 'Apuestas de alumnos desconectados al vencer — abierta para todos, se la queda el primero…'
-        : 'Sin apuestas al vencer — abierta para todos, se la queda el primero…';
-    } else {
-      const bids = practiceData.bids || [];
-      const bidsTxt = bids.length ? ` · apuestas: ${bids.map(b => `${b.name} (${b.answer})`).join(', ')}` : '';
-      resEl.textContent = st.turnName ? `Esperando respuesta de ${st.turnName}…${bidsTxt}` : '';
-    }
+    const names = Object.keys(practiceData.answers || {});
+    const ansTxt = names.length ? ` · ya contestaron: ${names.join(', ')}` : '';
+    resEl.textContent = `${st.turnName ? 'Turno de ' + st.turnName : 'Esperando alumnos'} (${names.length}/${(st.turnQueue || []).length})${ansTxt}`;
   }
 
   if (q.explanation) {
@@ -1976,6 +1979,9 @@ function renderPracticePanel() {
     expEl.style.display = 'none';
   }
 
+  // En fase de respuesta el botón REVELA (con lo que haya); ya revelada, AVANZA.
+  const nextLabel = document.getElementById('pNextLabel');
+  if (nextLabel) nextLabel.textContent = (st.phase === 'revealed') ? 'Siguiente pregunta' : 'Revelar respuesta';
   nextBtn.disabled = false;
 }
 
@@ -2028,6 +2034,23 @@ function practiceNext() {
   if (!selectedRoom) return;
   socket.emit('practiceNext', { roomCode: selectedRoom });
 }
+
+// Atajo de teclado para el Carrusel: Enter avanza un paso (revela; con otro
+// Enter pasa a la siguiente). No dispara si estás escribiendo, en el selector
+// de turno, con un diálogo abierto, o si el foco ya está en el botón (evita doble).
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Enter' || e.repeat) return;
+  if (selectedRoomMode !== 'practice' || !selectedRoom) return;
+  if (!practiceData || !practiceData.state || practiceData.roomCode !== selectedRoom) return;
+  if (practiceData.state.phase === 'finished') return;
+  if (document.querySelector('.overlay.show')) return;            // hay un diálogo abierto
+  const el = document.activeElement;
+  const tag = (el && el.tagName) || '';
+  if (tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA') return; // escribiendo/seleccionando
+  if (el && el.id === 'pNextBtn') return;                          // el botón ya lo maneja (default del navegador)
+  e.preventDefault();
+  practiceNext();
+});
 
 function practiceAssignTurn() {
   const sel = document.getElementById('pTurnSelect');

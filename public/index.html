@@ -2274,39 +2274,31 @@ function renderQuestion() {
     btn.type = 'button';
     let icon = '';
     if (state.mode === 'practice') {
-      // Carrusel: contesta el del turno (o cualquiera si la pregunta se abrió
-      // para todos). Los demás ven candados, pero con timer activo pueden
-      // tocar UNA opción como apuesta: si el del turno no contesta a tiempo,
-      // al vencer gana la apuesta más temprana (rebote).
+      // Carrusel: TODOS los de la cola contestan la pregunta actual (una
+      // respuesta por alumno; el primer toque es definitivo). Se revela al
+      // vencer el timer o cuando ya contestaron todos.
       const pr = state.practice || {};
       const r = pr.lastResult;
       const isRevealed = pr.phase === 'revealed' && r && r.qid === q.id;
       const me = (state.name || '').toLowerCase();
-      const holder = (pr.turnName || '').toLowerCase();
       const inQueue = (pr.turnQueue || []).some(n => n.toLowerCase() === me);
-      const isHolder = pr.phase === 'answering' && !!me && holder === me;
-      const isOpen = pr.phase === 'answering' && !!pr.openForAll;
-      const myBidAns = (__myBid && __myBid.qid === q.id) ? __myBid.answer : null;
-      // Si el server ya registró mi apuesta (p.ej. tras recargar la página, con
-      // __myBid perdido) no vuelvo a ofrecer apostar aunque no sepa la letra.
-      const serverHasMyBid = (pr.bidNames || []).some(n => n.toLowerCase() === me);
-      const canBid = pr.phase === 'answering' && !isHolder && !isOpen
-        && inQueue && (pr.timerSec > 0) && !myBidAns && !serverHasMyBid;
+      const myLocalAns = (__myAnswer && __myAnswer.qid === q.id) ? __myAnswer.answer : null;
+      const iAnswered = !!myLocalAns || (pr.answeredNames || []).some(n => n.toLowerCase() === me);
+      const myRevealAns = isRevealed && r.results ? (r.results.find(x => x.name.toLowerCase() === me) || {}).answer : null;
+      const canAnswer = pr.phase === 'answering' && inQueue && !iAnswered;
       if (isRevealed) {
+        const myA = myRevealAns || myLocalAns;
         if (letter === r.correctAnswer) { btn.className = 'exam-option exam-option--correct'; icon = CHECK_SVG; }
-        else if (letter === r.answer) { btn.className = 'exam-option exam-option--incorrect'; icon = CROSS_SVG; }
+        else if (letter === myA) { btn.className = 'exam-option exam-option--incorrect'; icon = CROSS_SVG; }
         else { btn.className = 'exam-option exam-option--neutral'; }
-      } else if (isHolder || (isOpen && inQueue)) {
+      } else if (canAnswer) {
         btn.className = 'exam-option';
-        btn.onclick = () => { socket.emit('practiceAnswer', { answer: letter }); };
-      } else if (canBid) {
-        btn.className = 'exam-option exam-option--spectator exam-option--bid';
-        icon = LOCK_SVG;
-        btn.onclick = () => placeBid(q.id, letter);
+        btn.onclick = () => submitPracticeAnswer(q.id, letter);
       } else {
-        btn.className = 'exam-option exam-option--spectator'
-          + (myBidAns === letter ? ' exam-option--mybid' : '');
-        icon = LOCK_SVG;
+        // Ya contesté (espero a los demás / al timer) o no estoy en la cola.
+        const mine = myLocalAns === letter;
+        btn.className = 'exam-option exam-option--spectator' + (mine ? ' exam-option--mybid' : '');
+        if (!mine) icon = LOCK_SVG;
       }
     } else if (state.reviewMode) {
       const correct = state.answerKey[q.id];
@@ -2773,7 +2765,11 @@ async function _downloadPDFImpl(onDone) {
   // no escala bien <img src=*.svg> (dibuja a tamaño natural, recorta al rect del img).
   // Inline le pasa al rasterizador DOM nativo, que escala perfecto vía CSS.
   const svgCache = {};
-  const svgUrls = [...new Set(state.questions.filter(q => q.image && q.image.toLowerCase().endsWith('.svg')).map(q => q.image))];
+  const svgUrls = [...new Set([
+    ...state.questions.filter(q => q.image && q.image.toLowerCase().endsWith('.svg')).map(q => q.image),
+    ...state.questions.flatMap(q => q.option_images ? Object.values(q.option_images) : [])
+      .filter(u => u && u.toLowerCase().endsWith('.svg')),
+  ])];
   await Promise.all(svgUrls.map(async url => {
     try {
       const r = await fetch(url);
@@ -2840,7 +2836,19 @@ async function _downloadPDFImpl(onDone) {
       else if (isCorrect)           { cls += ' option--correct';   marker = ' Correcta'; }
       else if (isMine)              { cls += ' option--incorrect'; marker = ' Tu respuesta'; }
       // sin marker para neutrales
-      return `<div class="${cls}"><span class="option__letter">${letter}</span><span class="option__text">${renderMath(q.options[letter])}</span>${marker ? `<span class="option__marker">${marker}</span>` : ''}</div>`;
+      // Si la opción tiene imagen, se muestra SOLO la imagen (no la descripción
+      // de texto de la figura). Igual que en pantalla.
+      let imgPath = q.option_images && q.option_images[letter];
+      if (!imgPath) { const m = /^\s*<img[^>]+src="([^"]+\.svg)"[^>]*>\s*$/i.exec(q.options[letter] || ''); if (m) imgPath = m[1]; }
+      let optContent;
+      if (imgPath && imgPath.toLowerCase().endsWith('.svg') && svgCache[imgPath]) {
+        optContent = `<span class="option__svg">${svgCache[imgPath]}</span>`;
+      } else if (imgPath) {
+        optContent = `<img class="option__img" src="${imgPath}" alt="">`;
+      } else {
+        optContent = `<span class="option__text">${renderMath(q.options[letter])}</span>`;
+      }
+      return `<div class="${cls}"><span class="option__letter">${letter}</span>${optContent}${marker ? `<span class="option__marker">${marker}</span>` : ''}</div>`;
     }).join('');
 
     const qText = q.text;
@@ -3090,6 +3098,10 @@ async function _downloadPDFImpl(onDone) {
       color: var(--ink-300); min-width: 14px;
     }
     .comprobante-doc .option__text { flex: 1; }
+    .comprobante-doc .option__svg { flex: 1; }
+    .comprobante-doc .option__svg svg, .comprobante-doc .option__img {
+      width: 110px; max-width: 110px; height: auto; max-height: 80px; display: block;
+    }
     .comprobante-doc .option__marker {
       font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
       color: var(--ink-300); font-weight: 500;
@@ -3383,24 +3395,20 @@ const escHTML = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;'
 let __practiceLastIdx = -1;
 let __practiceDeadline = null;   // Date.now() local cuando vence el timer de la pregunta
 let __practiceTickInt = null;
-let __myBid = null;              // {qid, answer, confirmed} apuesta local (el primer toque es definitivo)
+let __myAnswer = null;           // {qid, answer} mi respuesta local (el primer toque es definitivo)
+let __practiceRenderKey = null;  // qid|fase|yo-contesté: re-renderea la pregunta solo si esto cambia
+                                 // (NO cuando otro alumno contesta → evita que las opciones se muevan bajo tu dedo)
 
-// Rebote: registra la apuesta local de inmediato (para pintar la marca sin
-// esperar al server) y la confirma con ack; si el server la rechaza, se libera.
-function placeBid(qid, letter) {
-  if (__myBid && __myBid.qid === qid) return;
-  __myBid = { qid, answer: letter, confirmed: false };
+// Registra mi respuesta de inmediato (para pintar la marca sin esperar al
+// server) y la manda. El primer toque es definitivo (una por pregunta).
+function submitPracticeAnswer(qid, letter) {
+  if (__myAnswer && __myAnswer.qid === qid) return;
+  __myAnswer = { qid, answer: letter, confirmed: false };
   renderQuestion();
   renderPracticeBar();
-  socket.emit('practiceBid', { qid, answer: letter }, (res) => {
-    if (res && res.ok) { if (__myBid && __myBid.qid === qid) __myBid.confirmed = true; return; }
-    // Ya tenía una apuesta en el server (primer toque definitivo): adopta SU
-    // letra, no la recién tocada (importa tras recargar la página).
-    if (res && res.reason === 'ya-apostaste') {
-      __myBid = { qid, answer: res.answer || letter, confirmed: true };
-    } else {
-      __myBid = null; // rechazada (se reveló, se abrió para todos, pregunta vieja, etc.)
-    }
+  socket.emit('practiceAnswer', { qid, answer: letter }, (res) => {
+    if (res && res.ok) { if (__myAnswer && __myAnswer.qid === qid) __myAnswer.confirmed = true; }
+    else if (__myAnswer && __myAnswer.qid === qid) { __myAnswer = null; } // rechazada (pregunta vieja, no en cola, ya revelada)
     if (state.mode === 'practice') { renderQuestion(); renderPracticeBar(); }
   });
 }
@@ -3408,15 +3416,13 @@ function placeBid(qid, letter) {
 function applyPracticeState(st) {
   if (!st) return;
   state.practice = st;
-  // Soltar la apuesta local si cambió la pregunta, o si el server ya la confirmó
-  // pero un broadcast posterior (misma pregunta) ya no la lista — p.ej. el profe
-  // reasignó turno y vació las apuestas. (Entrega FIFO por socket: si está
-  // confirmada y no aparece, es porque el server la descartó, no una carrera.)
+  // Soltar mi respuesta local si cambió la pregunta, o si el profe reasignó el
+  // turno y vació las respuestas (misma pregunta pero ya no aparezco en answeredNames).
   const meName = (state.name || '').toLowerCase();
-  if (__myBid && (__myBid.qid !== st.qid
-      || (__myBid.confirmed && st.phase === 'answering'
-          && !(st.bidNames || []).some(n => n.toLowerCase() === meName)))) {
-    __myBid = null;
+  if (__myAnswer && (__myAnswer.qid !== st.qid
+      || (__myAnswer.confirmed && st.phase === 'answering'
+          && !(st.answeredNames || []).some(n => n.toLowerCase() === meName)))) {
+    __myAnswer = null;
   }
   // Sincronizar cuenta regresiva local con el remainingMs del server.
   __practiceDeadline = (typeof st.remainingMs === 'number') ? Date.now() + st.remainingMs : null;
@@ -3426,7 +3432,14 @@ function applyPracticeState(st) {
   if (article) article.style.display = '';
   if (state.questions.length === 0) return;
   state.currentQ = Math.min(st.idx, state.questions.length - 1);
-  renderQuestion();
+  // Re-renderea la pregunta (que rebuildea las opciones) SOLO si cambió la
+  // pregunta, la fase, o si YO contesté/me la limpiaron. Si solo cambió "quién
+  // ya contestó" (otro alumno), no se toca el DOM de opciones → no se mueven
+  // bajo tu dedo. La barra (turno/marcador/conteo) sí se actualiza siempre.
+  const iAnswered = (__myAnswer && __myAnswer.qid === st.qid)
+    || (st.answeredNames || []).some(n => n.toLowerCase() === meName);
+  const renderKey = st.qid + '|' + st.phase + '|' + (iAnswered ? 1 : 0);
+  if (renderKey !== __practiceRenderKey) { __practiceRenderKey = renderKey; renderQuestion(); }
   renderPracticeBar();
   // Barra de avance: preguntas resueltas sobre el total de la sesión.
   const fill = document.getElementById('examProgressFill');
@@ -3460,75 +3473,57 @@ function renderPracticeBar() {
   if (!pr) return;
   const turnEl = document.getElementById('practiceTurn');
   const scoresEl = document.getElementById('practiceScores');
+  const me = (state.name || '').toLowerCase();
   const r = pr.lastResult;
+  const fmt = n => (n > 0 ? '+' + n : '' + n);
   if (pr.phase === 'revealed' && r) {
-    const ok = r.isCorrect;
-    turnEl.className = 'practice-turn ' + (ok ? 'practice-turn--ok' : 'practice-turn--err');
-    const who = r.stolen
-      ? `<strong>¡${escHTML(r.name)} se la robó a ${escHTML(r.stolenFrom)}!</strong> Contestó <strong>${escHTML(r.answer)}</strong> — `
-      : `<strong>${escHTML(r.name)}</strong> contestó <strong>${escHTML(r.answer)}</strong> — `;
-    turnEl.innerHTML = who
-      + (ok ? '<strong>¡Correcta!</strong>' : `incorrecta · la respuesta era <strong>${escHTML(r.correctAnswer)}</strong>`)
+    const mine = (r.results || []).find(x => x.name.toLowerCase() === me);
+    turnEl.className = 'practice-turn ' + (mine ? (mine.isCorrect ? 'practice-turn--ok' : 'practice-turn--err') : '');
+    const myTxt = mine
+      ? `Tu respuesta: <strong>${escHTML(mine.answer)}</strong> — ${mine.isCorrect ? '¡correcta!' : 'incorrecta'} <strong>(${fmt(mine.delta)})</strong>`
+      : 'No contestaste <strong>(0)</strong>';
+    turnEl.innerHTML = `Respuesta correcta: <strong>${escHTML(r.correctAnswer)}</strong>. ${myTxt}`
       + '<span class="practice-turn__hint">Escuchen la explicación del profesor; él avanza a la siguiente.</span>';
   } else {
-    const me = (state.name || '').toLowerCase();
     const holder = (pr.turnName || '').toLowerCase();
+    const isHolder = !!me && holder === me;
+    const inQueue = (pr.turnQueue || []).some(n => n.toLowerCase() === me);
+    const nQueue = (pr.turnQueue || []).length;
+    const answered = pr.answeredNames || [];
+    const iAnswered = answered.some(n => n.toLowerCase() === me) || (__myAnswer && __myAnswer.qid === pr.qid);
     const countdown = `<span id="practiceCountdown">${practiceCountdownText()}</span>`;
-    const bidNames = pr.bidNames || [];
-    const nBids = bidNames.length;
-    const myBidAns = (__myBid && __myBid.qid === pr.qid) ? __myBid.answer : null;
-    const serverHasMyBid = bidNames.some(n => n.toLowerCase() === me);
-    const noBids = nBids === 0;
-    if (pr.openForAll) {
+    const progress = `<span class="practice-turn__hint">${answered.length}/${nQueue} ya contestaron`
+      + (pr.timerSec > 0 ? ' · se revela al vencer el tiempo o cuando contesten todos' : ' · se revela cuando contesten todos') + '</span>';
+    if (isHolder) {
       turnEl.className = 'practice-turn practice-turn--mine';
-      // Si llegamos aquí con apuestas en la lista, eran de alumnos desconectados.
-      turnEl.innerHTML = `<strong>¡Se abrió la pregunta!</strong> ${escHTML(pr.turnName || 'Nadie')} no contestó a tiempo`
-        + (noBids ? ' y no hubo apuestas' : ' y quienes apostaron se desconectaron')
-        + ' — se la queda el primero que conteste.';
-    } else if (holder === me) {
-      turnEl.className = 'practice-turn practice-turn--mine';
-      turnEl.innerHTML = `<strong>¡Tu turno, ${escHTML(state.name)}!</strong> Elige una opción.${countdown}`
-        + (nBids > 0 ? `<span class="practice-turn__hint">¡Aguas! Ya hay ${nBids === 1 ? 'una apuesta esperando' : nBids + ' apuestas esperando'} a que se te acabe el tiempo.</span>` : '');
-    } else if (myBidAns || serverHasMyBid) {
-      // Apuesta puesta: posición optimista si el broadcast aún no me lista.
-      const idx = bidNames.findIndex(n => n.toLowerCase() === me);
-      const pos = idx >= 0 ? idx + 1 : nBids + 1;
-      const letterTxt = myBidAns ? ` · tu apuesta: <strong>${escHTML(myBidAns)}</strong>` : ' · ya dejaste tu apuesta';
-      turnEl.className = 'practice-turn practice-turn--mine';
-      turnEl.innerHTML = `Turno de <strong>${escHTML(pr.turnName || '—')}</strong>${letterTxt}${countdown}`
-        + `<span class="practice-turn__hint">${pos === 1 ? 'Eres el primero en la fila: si no contesta a tiempo, tu respuesta entra.' : `Hay ${pos - 1} apuesta${pos - 1 === 1 ? '' : 's'} antes que la tuya.`}</span>`;
+      turnEl.innerHTML = (iAnswered
+        ? `<strong>Tu turno, ${escHTML(state.name)}.</strong> Ya contestaste — vale <strong>+2</strong> si acertaste.${countdown}`
+        : `<strong>¡Tu turno, ${escHTML(state.name)}!</strong> Elige una opción — vale <strong>+2</strong> si aciertas.${countdown}`)
+        + progress;
+    } else if (inQueue) {
+      turnEl.className = 'practice-turn' + (iAnswered ? ' practice-turn--mine' : '');
+      turnEl.innerHTML = (iAnswered
+        ? `Ya contestaste. Turno de <strong>${escHTML(pr.turnName || '—')}</strong> — esperando a los demás…${countdown}`
+        : `Turno de <strong>${escHTML(pr.turnName || '—')}</strong>. ¡Contesta tú también! <strong>+1</strong> si aciertas, <strong>−1</strong> si fallas.${countdown}`)
+        + progress;
     } else {
-      const canBid = (pr.timerSec > 0) && (pr.turnQueue || []).some(n => n.toLowerCase() === me);
       turnEl.className = 'practice-turn';
-      turnEl.innerHTML = `Turno de <strong>${escHTML(pr.turnName || '—')}</strong>${countdown}`
-        + (canBid ? '<span class="practice-turn__hint">Puedes dejar tu apuesta tocando una opción: si no contesta a tiempo, gana la apuesta más rápida. El primer toque es definitivo.</span>' : '')
-        + (pr.turnConnected === false && pr.turnName ? ' <span class="practice-turn__hint">(desconectado — el profesor puede saltar el turno)</span>' : '');
+      turnEl.innerHTML = `Turno de <strong>${escHTML(pr.turnName || '—')}</strong>${countdown}` + progress;
     }
   }
   const entries = sortedPracticeScores(pr.scores);
   scoresEl.innerHTML = entries.map(([n, s]) =>
-    `<span class="practice-chip${n.toLowerCase() === (state.name || '').toLowerCase() ? ' practice-chip--me' : ''}">${escHTML(n)} <strong>${s.correct}</strong></span>`
+    `<span class="practice-chip${n.toLowerCase() === me ? ' practice-chip--me' : ''}">${escHTML(n)} <strong>${fmt(s.points || 0)}</strong></span>`
   ).join('');
 }
 
-// Orden del marcador: gana el mayor porcentaje de aciertos, pero quien participó
-// menos de la mitad de su "parte justa" (el promedio de participaciones de la
-// sesión — con el corte de equidad, las preguntas que le tocaban a cada uno) cae
-// al fondo, para que un 1/1 (100%) no le gane a un 9/10 (90%). Desempate: más
-// aciertos, luego alfabético.
+// Orden del marcador del Carrusel: gana quien más PUNTOS tiene. Desempate: más
+// aciertos, luego alfabético. (Los puntos pueden ser negativos.)
 function sortedPracticeScores(scores) {
-  const entries = Object.entries(scores || {});
-  const totalAnswered = entries.reduce((sum, [, s]) => sum + (s.answered || 0), 0);
-  const minParticip = entries.length > 0 ? (totalAnswered / entries.length) / 2 : 0;
-  const pct = s => (s.answered > 0 ? s.correct / s.answered : 0);
-  return entries.sort((a, b) => {
-    const qa = (a[1].answered || 0) >= minParticip;
-    const qb = (b[1].answered || 0) >= minParticip;
-    if (qa !== qb) return qa ? -1 : 1;                 // los que participaron lo justo, primero
-    return pct(b[1]) - pct(a[1])                        // luego por porcentaje
-      || b[1].correct - a[1].correct                    // desempate: más aciertos
-      || a[0].localeCompare(b[0]);                       // y por nombre
-  });
+  return Object.entries(scores || {}).sort((a, b) =>
+    (b[1].points || 0) - (a[1].points || 0)
+    || (b[1].correct || 0) - (a[1].correct || 0)
+    || a[0].localeCompare(b[0]));
 }
 
 // Tabla final de posiciones (cuando se acaban las preguntas o el profesor cierra).
@@ -3541,12 +3536,12 @@ function renderPracticeFinal(scores) {
   document.getElementById('practiceBar').style.display = '';
   const entries = sortedPracticeScores(scores);
   const rows = entries.map(([n, s], i) => {
-    const pct = s.answered > 0 ? Math.round((s.correct / s.answered) * 100) : 0;
-    return `<div class="practice-final__row"><span>${i + 1}. ${escHTML(n)}</span><strong>${s.correct}/${s.answered} · ${pct}%</strong></div>`;
+    const p = s.points || 0;
+    return `<div class="practice-final__row"><span>${i + 1}. ${escHTML(n)}</span><strong>${p > 0 ? '+' + p : p} pts · ${s.correct || 0}/${s.answered || 0}</strong></div>`;
   }).join('');
   const turnEl = document.getElementById('practiceTurn');
   turnEl.className = 'practice-turn practice-turn--mine';
-  turnEl.innerHTML = `<strong>¡Carrusel terminado!</strong> Así quedó el marcador (aciertos/participaciones):<div class="practice-final">${rows || '<em>Sin participaciones</em>'}</div>`;
+  turnEl.innerHTML = `<strong>¡Carrusel terminado!</strong> Marcador final (puntos · aciertos):<div class="practice-final">${rows || '<em>Sin participaciones</em>'}</div>`;
   document.getElementById('practiceScores').innerHTML = '';
 }
 
@@ -3807,7 +3802,7 @@ socket.on('practiceState', (st) => {
 
 socket.on('practiceClosed', ({ scores }) => {
   if (state.mode !== 'practice') return;
-  __myBid = null;
+  __myAnswer = null;
   renderPracticeFinal(scores);
 });
 socket.on('examSubmitted', (data) => { enterReviewMode({ ok: true, ...data }); });
@@ -3815,12 +3810,13 @@ socket.on('examClosed', () => { if (!state.submitted && !state.submitPending) st
 socket.on('markedUpdate', (marked) => { state.marked = marked; saveState(); renderQuestion(); });
 socket.on('examReloaded', () => { window.location.reload(); });
 
-// Limpia el estado local del Carrusel para que apuestas/cuenta regresiva de una
+// Limpia el estado local del Carrusel para que respuesta/cuenta regresiva de una
 // sesión no se filtren a la siguiente (p.ej. reset que rearranca en el mismo qid).
 function resetPracticeLocals() {
-  __myBid = null;
+  __myAnswer = null;
   __practiceDeadline = null;
   __practiceLastIdx = -1;
+  __practiceRenderKey = null;
 }
 
 socket.on('examReset', () => {

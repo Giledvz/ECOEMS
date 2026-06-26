@@ -111,11 +111,10 @@ function createRoom(data, jsonFilename = null, lockedOptions = false, opts = {})
       turnQueue: [],        // nombres en orden de llegada (estable ante reconexión)
       turnPos: 0,
       turnManual: false,    // true si el profe asignó el turno a mano (Siguiente lo respeta)
-      scores: {},           // nombre -> { correct, answered }
-      lastResult: null,     // { qid, name, answer, correctAnswer, isCorrect, explanation }
+      scores: {},           // nombre -> { points, correct, answered }
+      lastResult: null,     // revelado: { qid, correctAnswer, explanation, results[], holder }
       limit: null,          // corte de equidad: se fija al iniciar (múltiplo de participantes)
-      bids: [],             // apuestas {name, answer} en orden de llegada (rebote al vencer el timer)
-      openForAll: false,    // timer vencido sin apuestas: contesta el primero que llegue
+      answers: {},          // nombre canónico -> letra (respuestas de la pregunta actual)
       answerDeadline: null, // timestamp ms del próximo vencimiento del timer
       timerToken: 0,        // invalida timeouts viejos
     };
@@ -156,40 +155,68 @@ function practiceLimit(room) {
   return p.limit ?? room.questions.length;
 }
 
-// Quiénes pueden contestar EN DIRECTO la pregunta actual: el del turno, o
-// todos si el timer venció sin apuestas. (Los demás apuestan vía practiceBid.)
+// En el Carrusel cualquiera de la cola puede contestar la pregunta actual (una
+// respuesta por alumno). Se revela con lo que pase primero: vence el timer, o
+// ya contestaron todos los conectados.
 function practiceEligibleNames(room) {
   const p = room.practice;
   if (!p || p.turnQueue.length === 0) return [];
-  if (p.openForAll) return [...p.turnQueue];
-  const holder = practiceTurnName(room);
-  return holder ? [holder] : [];
+  return [...p.turnQueue];
 }
 
-// Resuelve la pregunta actual con la respuesta de `name` (turno, apuesta
-// ganadora o primer llegado tras abrirse): puntúa, revela y difunde.
-function resolvePracticeAnswer(room, name, answer, via) {
+// ¿Ya contestaron la pregunta actual todos los participantes conectados?
+function allConnectedAnswered(room) {
   const p = room.practice;
+  const connected = p.turnQueue.filter(n => isNameConnected(room, n));
+  if (connected.length === 0) return false;
+  return connected.every(n => Object.prototype.hasOwnProperty.call(p.answers, n));
+}
+
+// Registra la respuesta de `name` para la pregunta actual (primer toque
+// definitivo, una por alumno). Si con eso ya contestaron todos los conectados,
+// revela de inmediato. Devuelve true si quedó registrada.
+function submitPracticeAnswer(room, name, answer) {
+  const p = room.practice;
+  if (!p || room.phase !== 'active') return false;
+  if (p.phase !== 'answering' || p.idx >= practiceLimit(room)) return false;
+  const canon = p.turnQueue.find(n => n.toLowerCase() === String(name).toLowerCase());
+  if (!canon) return false;                                                   // no participa
+  if (Object.prototype.hasOwnProperty.call(p.answers, canon)) return false;   // ya contestó
+  const q = room.questions[p.idx];
+  if (!Object.prototype.hasOwnProperty.call(q.options, answer)) return false;
+  p.answers[canon] = answer;
+  console.log(`[${room.roomCode}] Carrusel: ${canon} contestó ${answer} en P${q.id} (${Object.keys(p.answers).length}/${p.turnQueue.length})`);
+  if (allConnectedAnswered(room)) revealPractice(room);
+  else broadcastPractice(room);
+  return true;
+}
+
+// Revela la pregunta actual y puntúa a TODOS los que contestaron: el del turno
+// +2 (bien) / 0 (mal); cada otro +1 (bien) / −1 (mal). Quien no contestó: 0.
+function revealPractice(room) {
+  const p = room.practice;
+  if (!p || p.phase !== 'answering' || p.idx >= practiceLimit(room)) return;
   const q = room.questions[p.idx];
   const correctAnswer = room.answerKey[q.id];
-  const isCorrect = answer === correctAnswer;
-  if (!Object.prototype.hasOwnProperty.call(p.scores, name)) p.scores[name] = { correct: 0, answered: 0 };
-  p.scores[name].answered++;
-  if (isCorrect) p.scores[name].correct++;
   const holder = practiceTurnName(room);
-  const stolen = !!holder && holder.toLowerCase() !== name.toLowerCase();
-  p.lastResult = {
-    qid: q.id, name, answer, correctAnswer, isCorrect,
-    explanation: q.explanation || '',
-    stolen, stolenFrom: stolen ? holder : null,
-  };
+  const results = [];
+  for (const [name, answer] of Object.entries(p.answers)) {
+    const isCorrect = answer === correctAnswer;
+    const isTurn = !!holder && holder.toLowerCase() === name.toLowerCase();
+    const delta = isTurn ? (isCorrect ? 2 : 0) : (isCorrect ? 1 : -1);
+    if (!Object.prototype.hasOwnProperty.call(p.scores, name)) p.scores[name] = { points: 0, correct: 0, answered: 0 };
+    p.scores[name].answered++;
+    if (isCorrect) p.scores[name].correct++;
+    p.scores[name].points += delta;
+    results.push({ name, answer, isCorrect, isTurn, delta });
+  }
+  results.sort((a, b) => (Number(b.isTurn) - Number(a.isTurn)) || (b.delta - a.delta) || a.name.localeCompare(b.name));
+  p.lastResult = { qid: q.id, correctAnswer, explanation: q.explanation || '', results, holder: holder || null };
   p.phase = 'revealed';
-  p.turnManual = false; // la asignación manual (si la hubo) ya se cumplió
-  p.bids = [];
-  p.openForAll = false;
+  p.turnManual = false;
   clearPracticeTimer(room);
   broadcastPractice(room);
-  console.log(`[${room.roomCode}] Carrusel: ${name} → ${answer} en P${q.id} (${isCorrect ? 'correcta' : `incorrecta, era ${correctAnswer}`})${stolen ? ` — rebote, era turno de ${holder} [${via}]` : ''}`);
+  console.log(`[${room.roomCode}] Carrusel: revelada P${q.id} (correcta ${correctAnswer}) — ${results.length} contestaron`);
 }
 
 // Programa el vencimiento del timer por pregunta (rebote). Al vencer:
@@ -202,10 +229,9 @@ function schedulePracticeTimer(room) {
   if (room._pTimer) { clearTimeout(room._pTimer); room._pTimer = null; }
   const sec = room.practiceTimerSec || 0;
   const canRun = sec > 0 && room.phase === 'active' && p.phase === 'answering'
-    && p.idx < practiceLimit(room) && p.turnQueue.length > 1
-    && !p.openForAll;
+    && p.idx < practiceLimit(room);
   if (!canRun) {
-    p.answerDeadline = null; // sin próximo vencimiento (revelada, terminada o ya abierta a todos)
+    p.answerDeadline = null; // sin timer configurado, revelada o terminada
     return;
   }
   const token = p.timerToken;
@@ -215,16 +241,8 @@ function schedulePracticeTimer(room) {
     if (!r || !r.practice || r.practice.timerToken !== token) return;
     const pp = r.practice;
     if (r.phase !== 'active' || pp.phase !== 'answering') return;
-    const bid = pp.bids.find(b => isNameConnected(r, b.name));
-    if (bid) {
-      console.log(`[${r.roomCode}] Carrusel: timer vencido — gana la apuesta de ${bid.name}`);
-      resolvePracticeAnswer(r, bid.name, bid.answer, 'apuesta');
-      return;
-    }
-    pp.openForAll = true;
-    pp.answerDeadline = null;
-    console.log(`[${r.roomCode}] Carrusel: timer vencido sin apuestas — pregunta abierta para todos`);
-    broadcastPractice(r);
+    console.log(`[${r.roomCode}] Carrusel: venció el timer — se revela`);
+    revealPractice(r);
   }, sec * 1000);
 }
 
@@ -254,8 +272,7 @@ function buildPracticeState(room) {
     scores: p.scores,
     lastResult: p.lastResult,
     eligibleNames: finished ? [] : practiceEligibleNames(room),
-    openForAll: !finished && p.phase === 'answering' && p.openForAll,
-    bidNames: (!finished && p.phase === 'answering') ? p.bids.map(b => b.name) : [],
+    answeredNames: (!finished && p.phase === 'answering') ? Object.keys(p.answers) : [],
     timerSec: room.practiceTimerSec || 0,
     remainingMs: (!finished && p.phase === 'answering' && p.answerDeadline)
       ? Math.max(0, p.answerDeadline - Date.now()) : null,
@@ -268,7 +285,7 @@ function buildPracticeTeacherState(room) {
   const p = room.practice;
   const limit = practiceLimit(room);
   const q = (p && p.idx < limit) ? room.questions[p.idx] : null;
-  const participants = p ? p.turnQueue.length : 0;
+  const participants = p ? (p.cutN || p.turnQueue.length) : 0;
   return {
     roomCode: room.roomCode,
     state: buildPracticeState(room),
@@ -278,7 +295,7 @@ function buildPracticeTeacherState(room) {
       topic_name: q.topic_name || '', explanation: q.explanation || '',
     } : null,
     correctAnswer: q ? room.answerKey[q.id] : null,
-    bids: (p && p.phase === 'answering') ? p.bids : [],
+    answers: (p && p.phase === 'answering') ? p.answers : {},
     limitInfo: {
       limit,
       totalAvailable: room.questions.length,
@@ -1500,7 +1517,7 @@ io.on('connection', (socket) => {
       if (!p.turnQueue.some(n => n.toLowerCase() === canonical.toLowerCase())) {
         p.turnQueue.push(canonical);
       }
-      if (!Object.prototype.hasOwnProperty.call(p.scores, canonical)) p.scores[canonical] = { correct: 0, answered: 0 };
+      if (!Object.prototype.hasOwnProperty.call(p.scores, canonical)) p.scores[canonical] = { points: 0, correct: 0, answered: 0 };
       // Si la sesión arrancó con 0-1 alumnos (sin timer corriendo) y ahora ya
       // hay con quién rebotar, arma la ventana — pero solo si no hay una en curso
       // (schedulePracticeTimer reprograma, no queremos reiniciar el reloj del titular).
@@ -1564,68 +1581,43 @@ io.on('connection', (socket) => {
     io.to(roomCode).emit('studentsUpdate', getStudentSummary(room));
   });
 
-  // ── Práctica (Carrusel): el alumno en turno (o cualquiera, si la pregunta
-  // se abrió para todos) contesta en directo ──
-  socket.on('practiceAnswer', ({ answer }) => {
+  // ── Práctica (Carrusel): cualquiera de la cola contesta la pregunta actual
+  // (una respuesta por alumno; el primer toque es definitivo). Se revela al
+  // vencer el timer o cuando ya contestaron todos los conectados. ──
+  socket.on('practiceAnswer', ({ qid, answer }, ack) => {
+    const reply = ok => { if (typeof ack === 'function') ack({ ok: !!ok }); };
     const roomCode = socketRoom.get(socket.id);
     const room = roomCode && rooms.get(roomCode);
-    if (!room || room.mode !== 'practice' || !room.practice) return;
-    if (room.phase !== 'active') return;
+    if (!room || room.mode !== 'practice' || !room.practice) return reply(false);
+    if (room.phase !== 'active') return reply(false);
     const p = room.practice;
-    if (p.phase !== 'answering' || p.idx >= practiceLimit(room)) return;
-    const student = room.students[socket.id];
-    if (!student) return;
-    const eligible = practiceEligibleNames(room);
-    if (!eligible.some(n => n.toLowerCase() === student.name.toLowerCase())) return; // no es su turno (ni se abrió para él)
+    if (p.phase !== 'answering' || p.idx >= practiceLimit(room)) return reply(false);
     const q = room.questions[p.idx];
-    if (!Object.prototype.hasOwnProperty.call(q.options, answer)) return;
-    resolvePracticeAnswer(room, student.name, answer, p.openForAll ? 'abierta' : 'turno');
+    if (qid != null && (!q || q.id !== qid)) return reply(false); // la respuesta iba a otra pregunta (carrera con Siguiente)
+    const student = room.students[socket.id];
+    if (!student) return reply(false);
+    reply(submitPracticeAnswer(room, student.name, answer));
   });
 
-  // ── Práctica (Carrusel): apuesta bajo candado — si el del turno no contesta
-  // a tiempo, al vencer el timer gana la apuesta más temprana. El primer toque
-  // es definitivo (una apuesta por alumno y pregunta). ──
-  socket.on('practiceBid', ({ qid, answer }, ack) => {
-    const reply = (ok, reason, extra) => { if (typeof ack === 'function') ack({ ok, reason: reason || null, ...(extra || {}) }); };
-    const roomCode = socketRoom.get(socket.id);
-    const room = roomCode && rooms.get(roomCode);
-    if (!room || room.mode !== 'practice' || !room.practice) return reply(false, 'sala');
-    if (room.phase !== 'active') return reply(false, 'sala');
-    if (!(room.practiceTimerSec > 0)) return reply(false, 'sin-timer'); // sin timer no hay rebote
-    const p = room.practice;
-    if (p.phase !== 'answering' || p.idx >= practiceLimit(room)) return reply(false, 'fase');
-    if (p.openForAll) return reply(false, 'abierta'); // ya se abrió: contesta en directo
-    if (p.answerDeadline === null) return reply(false, 'sin-timer'); // ventana no armada: la apuesta no podría ganar
-    const student = room.students[socket.id];
-    if (!student) return reply(false, 'sala');
-    const holder = practiceTurnName(room);
-    if (holder && holder.toLowerCase() === student.name.toLowerCase()) return reply(false, 'turno'); // el del turno contesta, no apuesta
-    if (!p.turnQueue.some(n => n.toLowerCase() === student.name.toLowerCase())) return reply(false, 'sala');
-    const prev = p.bids.find(b => b.name.toLowerCase() === student.name.toLowerCase());
-    if (prev) return reply(false, 'ya-apostaste', { answer: prev.answer }); // primer toque definitivo: devuelve la letra real
-    const q = room.questions[p.idx];
-    if (qid != null && q.id !== qid) return reply(false, 'pregunta-vieja'); // la apuesta iba a otra pregunta (carrera con Siguiente)
-    if (!Object.prototype.hasOwnProperty.call(q.options, answer)) return reply(false, 'opcion');
-    p.bids.push({ name: student.name, answer });
-    reply(true);
-    broadcastPractice(room);
-    console.log(`[${roomCode}] Carrusel: apuesta de ${student.name} (${p.bids.length} en fila)`);
-  });
-
-  // ── Práctica (Carrusel): el profesor avanza a la siguiente pregunta ──
+  // ── Práctica (Carrusel): el profesor revela (1er click) y luego avanza ──
   socket.on('practiceNext', ({ roomCode }) => {
     const room = rooms.get(roomCode);
     if (!room || room.mode !== 'practice' || !room.practice) return;
     if (room.phase !== 'active') return;
     const p = room.practice;
     const limit = practiceLimit(room);
+    // Primer click en fase de respuesta: revela con lo que haya (forzado).
+    if (p.phase === 'answering') {
+      if (p.idx < limit) revealPractice(room);
+      return;
+    }
+    // Ya revelada: avanza a la siguiente pregunta.
     if (p.idx < limit) p.idx++;
     p.phase = 'answering';
     p.lastResult = null;
-    p.bids = [];
-    p.openForAll = false;
+    p.answers = {};
     // Si el profe asignó turno a mano y aún no se cumple, la siguiente pregunta
-    // la contesta ese alumno (no se rota encima de la asignación).
+    // la responde ese alumno (no se rota encima de la asignación).
     if (p.idx < limit) {
       if (p.turnManual) p.turnManual = false;
       else advancePracticeTurn(room);
@@ -1645,8 +1637,7 @@ io.on('connection', (socket) => {
     p.turnPos = i;
     p.turnManual = true;
     if (p.phase === 'answering') {
-      p.bids = [];                  // el nuevo titular arranca con ventana fresca
-      p.openForAll = false;
+      p.answers = {};               // ventana fresca para la pregunta actual
       schedulePracticeTimer(room);
     }
     broadcastPractice(room);
@@ -1752,16 +1743,18 @@ io.on('connection', (socket) => {
     Object.values(room.students).forEach(s => { s.startTime = room.startTime; });
     io.to(roomCode).emit('examStarted', { startTime: room.startTime, timeLimit: room.timeLimitMinutes, serverTime: Date.now() });
     if (room.mode === 'practice' && room.practice) {
-      // Corte de equidad: mayor múltiplo de los participantes presentes que
-      // cabe en el total de preguntas (todos contestan exactamente lo mismo).
+      // Corte de equidad: se juega el MAYOR MÚLTIPLO del nº de participantes que
+      // cabe en el total, para que TODOS reciban el mismo número de turnos (+2).
+      // Si es divisible, se juegan todas (128 entre 2 → 128). Contamos solo los
+      // CONECTADOS al iniciar (un dispositivo fantasma no debe inflar el divisor).
       const p = room.practice;
-      const n = p.turnQueue.length;
+      const n = p.turnQueue.filter(name => isNameConnected(room, name)).length || p.turnQueue.length;
       const total = room.questions.length;
       const cut = n > 0 ? Math.floor(total / n) * n : total;
       p.limit = cut > 0 ? cut : total;
-      if (n > 0) console.log(`[${roomCode}] Carrusel: ${p.limit} de ${total} preguntas (${n} participantes, ${Math.floor(p.limit / n)} c/u)`);
-      p.bids = [];
-      p.openForAll = false;
+      p.cutN = n;   // divisor usado para el corte (participantes conectados al iniciar)
+      console.log(`[${roomCode}] Carrusel: se juegan ${p.limit} de ${total} (${n} participantes, ${n > 0 ? Math.floor(p.limit / n) : 0} turnos c/u)`);
+      p.answers = {};
       schedulePracticeTimer(room);
       broadcastPractice(room);
     }
@@ -1778,9 +1771,9 @@ io.on('connection', (socket) => {
     if (room.mode === 'practice') {
       room.phase = 'closed';
       clearPracticeTimer(room);
-      // Marcar terminada y vaciar apuestas: si llega un disconnect después, el
-      // broadcast no revivirá la pregunta ni apuestas viejas sobre el podio final.
-      if (room.practice) { room.practice.phase = 'finished'; room.practice.bids = []; room.practice.openForAll = false; }
+      // Marcar terminada y vaciar respuestas: si llega un disconnect después, el
+      // broadcast no revivirá la pregunta ni respuestas viejas sobre el podio final.
+      if (room.practice) { room.practice.phase = 'finished'; room.practice.answers = {}; }
       io.to(roomCode).emit('practiceClosed', { scores: room.practice?.scores || {} });
       io.to('teachers').emit('roomClosed', { roomCode, mode: 'practice' });
       broadcastRoomsList();
@@ -1829,7 +1822,7 @@ io.on('connection', (socket) => {
     room.startTime = null;
     if (room.mode === 'practice' && room.practice) {
       clearPracticeTimer(room);
-      room.practice = { idx: 0, phase: 'answering', turnQueue: [], turnPos: 0, turnManual: false, scores: {}, lastResult: null, limit: null, bids: [], openForAll: false, answerDeadline: null, timerToken: 0 };
+      room.practice = { idx: 0, phase: 'answering', turnQueue: [], turnPos: 0, turnManual: false, scores: {}, lastResult: null, limit: null, answers: {}, answerDeadline: null, timerToken: 0 };
     }
     io.to(roomCode).emit('examReset');
     broadcastRoomsList();
