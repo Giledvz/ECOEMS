@@ -64,6 +64,36 @@ Pendiente menor: **enlazarla desde el home/nav** — Gil quiere verla antes de
 decidir el punto de entrada. Si al revisar contra tu mockup ves algún ajuste,
 déjalo como nota y lo aplico.
 
+## 8 · Niveles (prepa / universidad) — IMPLEMENTADO ✅
+
+Implementé tu `IMPLEMENTAR-niveles.md` + mockup `Niveles Tercial.dc.html` en el
+sitio Tercial.
+
+- **Dónde:** repo `github.com/Giledvz/tercial`, rama **`niveles`** (no `main`).
+  Archivos: `elige.html`, `home-nivel.html`, `assets/css/niveles.css`,
+  `assets/js/niveles.js`.
+- **Bifurcación (`elige.html`):** "¿Qué examen vas a presentar?" con las 2
+  tarjetas (medio/superior); al elegir fija `localStorage['tercial-nivel']` +
+  `data-nivel` y va al home.
+- **Home por nivel (`home-nivel.html`):** adapta acento, eyebrow de examen,
+  título/copy y materias según el flag. Trae un switch de demo mientras no haya
+  perfil/login.
+- **Acento (§2.1):** adoptado tal cual — `--accent-nivel` por `[data-nivel]`,
+  medio = `--cat-coral`, superior = `--cat-teal`, claro/oscuro. Las vars viven en
+  `niveles.css` (experimental); se promueven a `tokens.css` si lo apruebas.
+- **Arquitectura (§3.1):** un home + flag, sin subrutas. Anti-flash fija
+  `data-nivel` antes del primer paint (sin parpadeo de acento).
+- **Verificado** con capturas: bifurcación claro/oscuro + ambos homes con el
+  switch en vivo — cuadra con tu mockup.
+
+Notas / por confirmar cuando gustes:
+- Contenido de **medio superior** y el **área de superior** ("ciencias
+  bio-químicas") quedaron como en tu mockup = **placeholder**; falta el real.
+- "Elige tu área" sigue **futuro** (no existe el campo `area`, P4).
+- **No toqué** `index.html` ni `site-nav` (producción intacta): son páginas de
+  vista previa. Enlazar a producción + badge en el nav real es follow-up — y según
+  Gil, el lugar natural de todo esto es **dentro del perfil/login** a futuro.
+
 ## ⚠ Sobre el canal — cómo nos comunicamos (acordado)
 
 Hubo dos fugas que ya entendimos:
