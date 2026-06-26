@@ -7,12 +7,12 @@
   <line x1="110" y1="84" x2="123" y2="84" stroke="currentColor" stroke-width="0.9"/>
   <line x1="110" y1="88" x2="123" y2="88" stroke="currentColor" stroke-width="0.9"/>
   <line x1="110" y1="92" x2="123" y2="92" stroke="currentColor" stroke-width="0.9"/>
-  <!-- F normal (hacia arriba) -->
+  <!-- F normal (hacia arriba): arranca en la parte superior del libro (y=80) -->
   <line x1="100" y1="80" x2="100" y2="42" stroke="currentColor" stroke-width="2"/>
   <polygon points="100,35 95,47 105,47" fill="currentColor"/>
   <text x="107" y="50" font-size="13" font-style="italic">F<tspan font-size="8.5" font-style="normal" dy="3">normal</tspan></text>
-  <!-- F peso (hacia abajo) -->
-  <line x1="100" y1="88" x2="100" y2="123" stroke="currentColor" stroke-width="2"/>
-  <polygon points="100,130 95,118 105,118" fill="currentColor"/>
-  <text x="107" y="112" font-size="13" font-style="italic">F<tspan font-size="8.5" font-style="normal" dy="3">peso</tspan></text>
+  <!-- F peso (hacia abajo): arranca en la linea de abajo del libro (y=96), espejo de la normal -->
+  <line x1="100" y1="96" x2="100" y2="134" stroke="currentColor" stroke-width="2"/>
+  <polygon points="100,141 95,129 105,129" fill="currentColor"/>
+  <text x="108" y="125" font-size="13" font-style="italic">F<tspan font-size="8.5" font-style="normal" dy="3">peso</tspan></text>
 </svg>
