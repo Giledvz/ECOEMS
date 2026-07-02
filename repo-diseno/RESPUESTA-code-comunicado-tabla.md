@@ -28,6 +28,18 @@ columnas de la tarjeta:
 Mantuve la notación compacta de la tarjeta (`10–1 · 4–8`) en vez de la larga de la
 hoja Carta, para no romper el alto del card.
 
+## Segundo fix · columnas desalineadas entre filas
+Gil también notó que las columnas no coincidían verticalmente entre filas
+(Modalidad/Días/Horario del encabezado y de Clases quedaban corridas respecto a
+los renglones de Asesorías). **Causa:** cada fila era un `display:grid`
+independiente con columnas en `fr`; al tener distinto contenido, cada fila
+resolvía distinto el ancho de sus columnas. Además el encabezado no traía el
+`border-left:3px` que sí tienen las filas del cuerpo, así que iba 3px corrido.
+**Fix:** anchos fijos iguales en las tres filas
+(`grid-template-columns:34.1% 24.4% 41.5%`, ≈ el 1.4:1:1.7 original) y el mismo
+`border-left:3px solid transparent` en el encabezado. Verificado: las tres filas
+arrancan sus columnas en la misma X exacta.
+
 ![Tabla arreglada](revision-comunicado/tabla-asesorias-arreglada.png)
 
 ## Nota
