@@ -1,8 +1,8 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 160" width="460" height="160" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
 <!-- Cada panel ~110 px de ancho -->
   <defs>
-    <!-- Mapa de la Tierra reusable: usar con <use href="#planet-earth"> a cualquier posición/tamaño -->
-    <symbol id="planet-earth" viewBox="0 0 1280 1272" preserveAspectRatio="xMidYMid meet">
+    <!-- Mapa de la Tierra reusable: usar con <use href="#q112_proyecciones_planet-earth"> a cualquier posición/tamaño -->
+    <symbol id="q112_proyecciones_planet-earth" viewBox="0 0 1280 1272" preserveAspectRatio="xMidYMid meet">
       <g transform="translate(0,1272) scale(0.1,-0.1)">
 <path d="M5712 12710 c-343 -16 -556 -47 -892 -130 -717 -178 -1169 -370
 -1705 -725 -93 -62 -179 -122 -189 -134 -19 -21 -19 -21 2 -21 11 0 72 13 134
@@ -287,13 +287,13 @@ m1482 -1463 c21 -41 27 -90 11 -90 -13 0 -57 59 -65 87 -17 55 26 58 54 3z"/>
 46 30 51 37 42 54 -18 33 -90 27 -185 -16z"/>
       </g>
     </symbol>
-    <clipPath id="earth-clip-a">
+    <clipPath id="q112_proyecciones_earth-clip-a">
       <circle cx="60" cy="80" r="31"/>
     </clipPath>
-    <clipPath id="earth-clip-b">
+    <clipPath id="q112_proyecciones_earth-clip-b">
       <circle cx="170" cy="80" r="31"/>
     </clipPath>
-    <clipPath id="earth-clip-c">
+    <clipPath id="q112_proyecciones_earth-clip-c">
       <circle cx="290" cy="80" r="31"/>
     </clipPath>
   </defs>
@@ -316,8 +316,8 @@ m1482 -1463 c21 -41 27 -90 11 -90 -13 0 -57 59 -65 87 -17 55 26 58 54 3z"/>
     <circle cx="60" cy="80" r="32"/>
   </g>
   <!-- Mapa de la esfera A -->
-  <g clip-path="url(#earth-clip-a)">
-    <use href="#planet-earth" x="29" y="49" width="62" height="62"/>
+  <g clip-path="url(#q112_proyecciones_earth-clip-a)">
+    <use href="#q112_proyecciones_planet-earth" x="29" y="49" width="62" height="62"/>
   </g>
   <text x="60" y="148" font-size="13" text-anchor="middle">a</text>
 
@@ -339,8 +339,8 @@ m1482 -1463 c21 -41 27 -90 11 -90 -13 0 -57 59 -65 87 -17 55 26 58 54 3z"/>
     <circle cx="170" cy="80" r="32"/>
   </g>
   <!-- Mapa de la esfera B -->
-  <g clip-path="url(#earth-clip-b)">
-    <use href="#planet-earth" x="139" y="49" width="62" height="62"/>
+  <g clip-path="url(#q112_proyecciones_earth-clip-b)">
+    <use href="#q112_proyecciones_planet-earth" x="139" y="49" width="62" height="62"/>
   </g>
   <text x="170" y="148" font-size="13" text-anchor="middle">b</text>
 
@@ -359,8 +359,8 @@ m1482 -1463 c21 -41 27 -90 11 -90 -13 0 -57 59 -65 87 -17 55 26 58 54 3z"/>
     <circle cx="290" cy="80" r="32"/>
   </g>
   <!-- Mapa de la esfera C -->
-  <g clip-path="url(#earth-clip-c)">
-    <use href="#planet-earth" x="259" y="49" width="62" height="62"/>
+  <g clip-path="url(#q112_proyecciones_earth-clip-c)">
+    <use href="#q112_proyecciones_planet-earth" x="259" y="49" width="62" height="62"/>
   </g>
   <text x="290" y="148" font-size="13" text-anchor="middle">c</text>
 

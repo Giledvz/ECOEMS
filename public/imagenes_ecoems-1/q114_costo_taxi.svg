@@ -16,14 +16,14 @@
 
   <!-- Marcador de flecha -->
   <defs>
-    <marker id="arrowAxis" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+    <marker id="q114_costo_taxi_arrowAxis" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
       <polygon points="0,0 10,4 0,8" fill="currentColor"/>
     </marker>
   </defs>
 
   <!-- Ejes -->
-  <line x1="80" y1="340" x2="545" y2="340" stroke="currentColor" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
-  <line x1="80" y1="340" x2="80"  y2="50"  stroke="currentColor" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
+  <line x1="80" y1="340" x2="545" y2="340" stroke="currentColor" stroke-width="1.8" marker-end="url(#q114_costo_taxi_arrowAxis)"/>
+  <line x1="80" y1="340" x2="80"  y2="50"  stroke="currentColor" stroke-width="1.8" marker-end="url(#q114_costo_taxi_arrowAxis)"/>
 
   <!-- Títulos de los ejes -->
   <text x="560" y="345" font-size="14" font-style="italic">d (km)</text>

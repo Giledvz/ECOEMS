@@ -1,6 +1,6 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 150" width="720" height="150" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
 <defs>
-    <symbol id="clockface" overflow="visible" fill="#1f1a16">
+    <symbol id="q65_original_clockface" overflow="visible" fill="#1f1a16">
       <circle cx="0" cy="0" r="55" fill="#efe7d8" stroke="#1f1a16" stroke-width="2"/>
       <text x="0" y="-38" text-anchor="middle" font-size="11">12</text>
       <text x="38" y="4" text-anchor="middle" font-size="11">3</text>
@@ -19,28 +19,28 @@
   </defs>
   <!-- Reloj 1: 12:15 -->
   <g transform="translate(75, 75)">
-    <use href="#clockface"/>
+    <use href="#q65_original_clockface"/>
     <line x1="0" y1="0" x2="-0.0" y2="-22.0" stroke="#1f1a16" stroke-width="2.5" stroke-linecap="round"/>
     <line x1="0" y1="0" x2="42.0" y2="0.0" stroke="#1f1a16" stroke-width="2.5" stroke-linecap="round"/>
   </g>
 
   <!-- Reloj 2: 9:25 -->
   <g transform="translate(205, 75)">
-    <use href="#clockface"/>
+    <use href="#q65_original_clockface"/>
     <line x1="0" y1="0" x2="-22.0" y2="0.0" stroke="#1f1a16" stroke-width="2.5" stroke-linecap="round"/>
     <line x1="0" y1="0" x2="21.0" y2="36.4" stroke="#1f1a16" stroke-width="2.5" stroke-linecap="round"/>
   </g>
 
   <!-- Reloj 3: 6:35 -->
   <g transform="translate(335, 75)">
-    <use href="#clockface"/>
+    <use href="#q65_original_clockface"/>
     <line x1="0" y1="0" x2="0.0" y2="22.0" stroke="#1f1a16" stroke-width="2.5" stroke-linecap="round"/>
     <line x1="0" y1="0" x2="-21.0" y2="36.4" stroke="#1f1a16" stroke-width="2.5" stroke-linecap="round"/>
   </g>
 
   <!-- Reloj 4: 3:45 -->
   <g transform="translate(465, 75)">
-    <use href="#clockface"/>
+    <use href="#q65_original_clockface"/>
     <line x1="0" y1="0" x2="22.0" y2="0.0" stroke="#1f1a16" stroke-width="2.5" stroke-linecap="round"/>
     <line x1="0" y1="0" x2="-42.0" y2="0.0" stroke="#1f1a16" stroke-width="2.5" stroke-linecap="round"/>
   </g>

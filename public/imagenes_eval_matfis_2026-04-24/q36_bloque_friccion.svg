@@ -1,28 +1,28 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
   <defs>
-    <marker id="ahBlack" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <marker id="q36_bloque_friccion_ahBlack" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
     </marker>
-    <marker id="ahBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <marker id="q36_bloque_friccion_ahBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/>
     </marker>
     <marker id="ahRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#b91c1c"/>
     </marker>
-    <pattern id="hatch" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
+    <pattern id="q36_bloque_friccion_hatch" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
       <line x1="0" y1="0" x2="0" y2="8" stroke="#555" stroke-width="0.9"/>
     </pattern>
   </defs>
 <!-- Surface -->
   <line x1="40" y1="310" x2="680" y2="310" stroke="currentColor" stroke-width="2.2"/>
-  <rect x="40" y="310" width="640" height="22" fill="url(#hatch)"/>
+  <rect x="40" y="310" width="640" height="22" fill="url(#q36_bloque_friccion_hatch)"/>
 
   <!-- Block -->
   <rect x="280" y="250" width="160" height="60" fill="#e8edf3" stroke="currentColor" stroke-width="1.8" rx="1.5"/>
   <text x="360" y="287" text-anchor="middle" font-size="20" font-weight="500" fill="currentColor">3 kg</text>
 
   <!-- Applied force F → right -->
-  <line x1="440" y1="280" x2="590" y2="280" stroke="#1d4ed8" stroke-width="2.4" marker-end="url(#ahBlue)"/>
+  <line x1="440" y1="280" x2="590" y2="280" stroke="#1d4ed8" stroke-width="2.4" marker-end="url(#q36_bloque_friccion_ahBlue)"/>
   <text x="515" y="265" text-anchor="middle" font-size="20" fill="#1d4ed8">
     <tspan font-style="italic">F</tspan><tspan> = 18 N</tspan>
   </text>
@@ -32,11 +32,11 @@
   <text x="220" y="265" text-anchor="middle" font-size="20" fill="#b91c1c" font-style="italic">f</text>
 
   <!-- Normal N ↑ -->
-  <line x1="360" y1="250" x2="360" y2="130" stroke="currentColor" stroke-width="2.4" marker-end="url(#ahBlack)"/>
+  <line x1="360" y1="250" x2="360" y2="130" stroke="currentColor" stroke-width="2.4" marker-end="url(#q36_bloque_friccion_ahBlack)"/>
   <text x="376" y="170" font-size="20" font-style="italic" fill="currentColor">N</text>
 
   <!-- Weight W ↓ -->
-  <line x1="360" y1="310" x2="360" y2="408" stroke="currentColor" stroke-width="2.4" marker-end="url(#ahBlack)"/>
+  <line x1="360" y1="310" x2="360" y2="408" stroke="currentColor" stroke-width="2.4" marker-end="url(#q36_bloque_friccion_ahBlack)"/>
   <text x="376" y="385" font-size="20" fill="currentColor">
     <tspan font-style="italic">W</tspan><tspan> = </tspan><tspan font-style="italic">mg</tspan>
   </text>

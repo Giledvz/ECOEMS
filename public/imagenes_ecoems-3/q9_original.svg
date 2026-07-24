@@ -2,18 +2,18 @@
 <defs>
     <!-- Cubo isométrico s=20, colores estilo V.B. Origen: vértice frontal inferior.
          Convención (X,Y,Z) 1-indexed: (1,1,1) = origen del SVG en (90,110). -->
-    <g id="cube">
+    <g id="q9_original_cube">
       <polygon points="0,-20 17.32,-30 0,-40 -17.32,-30" fill="#efe7d8" stroke="#1f1a16" stroke-width="1.5"/>
       <polygon points="0,0 -17.32,-10 -17.32,-30 0,-20" fill="#c9bda3" stroke="#1f1a16" stroke-width="1.5"/>
       <polygon points="0,0 17.32,-10 17.32,-30 0,-20" fill="#a89880" stroke="#1f1a16" stroke-width="1.5"/>
     </g>
   </defs>
   <!-- Figura original: 311, 321, 221, 121, 231, 241, 242 -->
-  <use href="#cube" transform="translate(55.36, 70)"/>  <!-- (2,4,1) -->
-  <use href="#cube" transform="translate(55.36, 50)"/>  <!-- (2,4,2) -->
-  <use href="#cube" transform="translate(72.68, 80)"/>  <!-- (2,3,1) -->
-  <use href="#cube" transform="translate(107.32, 80)"/> <!-- (3,2,1) -->
-  <use href="#cube" transform="translate(90, 90)"/>     <!-- (2,2,1) -->
-  <use href="#cube" transform="translate(124.64, 90)"/> <!-- (3,1,1) -->
-  <use href="#cube" transform="translate(72.68, 100)"/> <!-- (1,2,1) -->
+  <use href="#q9_original_cube" transform="translate(55.36, 70)"/>  <!-- (2,4,1) -->
+  <use href="#q9_original_cube" transform="translate(55.36, 50)"/>  <!-- (2,4,2) -->
+  <use href="#q9_original_cube" transform="translate(72.68, 80)"/>  <!-- (2,3,1) -->
+  <use href="#q9_original_cube" transform="translate(107.32, 80)"/> <!-- (3,2,1) -->
+  <use href="#q9_original_cube" transform="translate(90, 90)"/>     <!-- (2,2,1) -->
+  <use href="#q9_original_cube" transform="translate(124.64, 90)"/> <!-- (3,1,1) -->
+  <use href="#q9_original_cube" transform="translate(72.68, 100)"/> <!-- (1,2,1) -->
 </svg>

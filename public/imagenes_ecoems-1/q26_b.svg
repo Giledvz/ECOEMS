@@ -1,6 +1,6 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 160" width="140" height="160" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
 <defs>
-    <symbol id="cubeUnit" overflow="visible">
+    <symbol id="q26_b_cubeUnit" overflow="visible">
       <polygon points="0,0 20,0 20,-20 0,-20" fill="#c9bda3" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
       <polygon points="20,0 30,-10 30,-30 20,-20" fill="#a89880" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
       <polygon points="0,-20 20,-20 30,-30 10,-30" fill="#efe7d8" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
@@ -10,17 +10,17 @@
   <!-- Sólido 2: 111 + 121 + 221 + 222 + 223 + 321 + 322 -->
   <!-- Render order: back row left-to-right, bottom-to-top columns, then front -->
   <!-- (1,2,1) → (0,1,0): (40, 110) -->
-  <use href="#cubeUnit" x="40" y="110"/>
+  <use href="#q26_b_cubeUnit" x="40" y="110"/>
   <!-- (2,2,1) → (1,1,0): (60, 110) -->
-  <use href="#cubeUnit" x="60" y="110"/>
+  <use href="#q26_b_cubeUnit" x="60" y="110"/>
   <!-- (2,2,2) → (1,1,1): (60, 90) -->
-  <use href="#cubeUnit" x="60" y="90"/>
+  <use href="#q26_b_cubeUnit" x="60" y="90"/>
   <!-- (2,2,3) → (1,1,2): (60, 70) -->
-  <use href="#cubeUnit" x="60" y="70"/>
+  <use href="#q26_b_cubeUnit" x="60" y="70"/>
   <!-- (3,2,1) → (2,1,0): (80, 110) -->
-  <use href="#cubeUnit" x="80" y="110"/>
+  <use href="#q26_b_cubeUnit" x="80" y="110"/>
   <!-- (3,2,2) → (2,1,1): (80, 90) -->
-  <use href="#cubeUnit" x="80" y="90"/>
+  <use href="#q26_b_cubeUnit" x="80" y="90"/>
   <!-- (1,1,1) → (0,0,0): (30, 120) — frontal, último -->
-  <use href="#cubeUnit" x="30" y="120"/>
+  <use href="#q26_b_cubeUnit" x="30" y="120"/>
 </svg>

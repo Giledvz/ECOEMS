@@ -1,7 +1,7 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 160" width="110" height="160" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
   <defs>
-    <!-- Mapa de la Tierra reusable: usar con <use href="#planet-earth"> a cualquier posición/tamaño -->
-        <symbol id="planet-earth" viewBox="0 0 1280 1272" preserveAspectRatio="xMidYMid meet">
+    <!-- Mapa de la Tierra reusable: usar con <use href="#q112_proy_a_planet-earth"> a cualquier posición/tamaño -->
+        <symbol id="q112_proy_a_planet-earth" viewBox="0 0 1280 1272" preserveAspectRatio="xMidYMid meet">
           <g transform="translate(0,1272) scale(0.1,-0.1)">
     <path d="M5712 12710 c-343 -16 -556 -47 -892 -130 -717 -178 -1169 -370
     -1705 -725 -93 -62 -179 -122 -189 -134 -19 -21 -19 -21 2 -21 11 0 72 13 134
@@ -286,7 +286,7 @@
     46 30 51 37 42 54 -18 33 -90 27 -185 -16z"/>
           </g>
         </symbol>
-        <clipPath id="earth-clip-a">
+        <clipPath id="q112_proy_a_earth-clip-a">
           <circle cx="60" cy="80" r="31"/>
         </clipPath>
         <clipPath id="earth-clip-b">
@@ -315,8 +315,8 @@
     <circle cx="60" cy="80" r="32"/>
   </g>
   <!-- Mapa de la esfera A -->
-  <g clip-path="url(#earth-clip-a)">
-    <use href="#planet-earth" x="29" y="49" width="62" height="62"/>
+  <g clip-path="url(#q112_proy_a_earth-clip-a)">
+    <use href="#q112_proy_a_planet-earth" x="29" y="49" width="62" height="62"/>
   </g>
   <text x="60" y="148" font-size="13" text-anchor="middle">a</text>
   </g>

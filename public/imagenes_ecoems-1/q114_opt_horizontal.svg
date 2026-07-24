@@ -1,14 +1,14 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 150" width="220" height="150" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
 <defs>
-    <marker id="arrowS" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <marker id="q114_opt_horizontal_arrowS" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
       <polygon points="0,0 8,3 0,6" fill="currentColor"/>
     </marker>
   </defs>
   <!-- Línea punteada horizontal a $50 -->
   <line x1="20" y1="95" x2="200" y2="95" stroke="#9ca3af" stroke-width="0.7" stroke-dasharray="3,3"/>
   <!-- Ejes -->
-  <line x1="20" y1="125" x2="205" y2="125" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrowS)"/>
-  <line x1="20" y1="125" x2="20"  y2="15"  stroke="currentColor" stroke-width="1.5" marker-end="url(#arrowS)"/>
+  <line x1="20" y1="125" x2="205" y2="125" stroke="currentColor" stroke-width="1.5" marker-end="url(#q114_opt_horizontal_arrowS)"/>
+  <line x1="20" y1="125" x2="20"  y2="15"  stroke="currentColor" stroke-width="1.5" marker-end="url(#q114_opt_horizontal_arrowS)"/>
   <!-- Etiquetas de ejes -->
   <text x="210" y="138" font-size="11" font-style="italic">d</text>
   <text x="10"  y="13"  font-size="11" font-style="italic">C</text>

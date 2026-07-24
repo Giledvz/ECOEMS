@@ -1,7 +1,7 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="220" height="220" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
 <defs>
     <!-- Cubo en proyección cabinet espejo (vista desde la izquierda) -->
-    <symbol id="cubeUnit" overflow="visible">
+    <symbol id="q63_b_cubeUnit" overflow="visible">
       <polygon points="0,0 20,0 20,-20 0,-20" fill="#c9bda3" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
       <polygon points="0,0 -10,-10 -10,-30 0,-20" fill="#a89880" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
       <polygon points="0,-20 20,-20 10,-30 -10,-30" fill="#efe7d8" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
@@ -13,24 +13,24 @@
   <!-- Render order: y desc, z asc, x desc -->
   <!-- y=4 (back row) -->
   <!-- (2,4,2) → (1,3,1): (40, 90) -->
-  <use href="#cubeUnit" x="40" y="90"/>
+  <use href="#q63_b_cubeUnit" x="40" y="90"/>
   <!-- (3,4,3) → (2,3,2): (60, 70) -->
-  <use href="#cubeUnit" x="60" y="70"/>
+  <use href="#q63_b_cubeUnit" x="60" y="70"/>
   <!-- (4,4,4) → (3,3,3): (80, 50) -->
-  <use href="#cubeUnit" x="80" y="50"/>
+  <use href="#q63_b_cubeUnit" x="80" y="50"/>
   <!-- y=3 -->
   <!-- (2,3,1) → (1,2,0): (50, 120) -->
-  <use href="#cubeUnit" x="50" y="120"/>
+  <use href="#q63_b_cubeUnit" x="50" y="120"/>
   <!-- (3,3,2) → (2,2,1): (70, 100) -->
-  <use href="#cubeUnit" x="70" y="100"/>
+  <use href="#q63_b_cubeUnit" x="70" y="100"/>
   <!-- (4,3,3) → (3,2,2): (90, 80) -->
-  <use href="#cubeUnit" x="90" y="80"/>
+  <use href="#q63_b_cubeUnit" x="90" y="80"/>
   <!-- y=2 -->
   <!-- (3,2,1) → (2,1,0): (80, 130) -->
-  <use href="#cubeUnit" x="80" y="130"/>
+  <use href="#q63_b_cubeUnit" x="80" y="130"/>
   <!-- (4,2,2) → (3,1,1): (100, 110) -->
-  <use href="#cubeUnit" x="100" y="110"/>
+  <use href="#q63_b_cubeUnit" x="100" y="110"/>
   <!-- y=1 (front) -->
   <!-- (4,1,1) → (3,0,0): (110, 140) -->
-  <use href="#cubeUnit" x="110" y="140"/>
+  <use href="#q63_b_cubeUnit" x="110" y="140"/>
 </svg>

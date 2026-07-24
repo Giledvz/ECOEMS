@@ -17,14 +17,14 @@
 
   <!-- Marcador de flecha -->
   <defs>
-    <marker id="arrowAxis" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+    <marker id="q114_fases_co2_arrowAxis" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
       <polygon points="0,0 10,4 0,8" fill="currentColor"/>
     </marker>
   </defs>
 
   <!-- Ejes -->
-  <line x1="90" y1="330" x2="525" y2="330" stroke="currentColor" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
-  <line x1="90" y1="330" x2="90"  y2="55"  stroke="currentColor" stroke-width="1.8" marker-end="url(#arrowAxis)"/>
+  <line x1="90" y1="330" x2="525" y2="330" stroke="currentColor" stroke-width="1.8" marker-end="url(#q114_fases_co2_arrowAxis)"/>
+  <line x1="90" y1="330" x2="90"  y2="55"  stroke="currentColor" stroke-width="1.8" marker-end="url(#q114_fases_co2_arrowAxis)"/>
 
   <!-- Títulos de los ejes -->
   <text x="540" y="334" font-size="13" font-style="italic">T (°C)</text>

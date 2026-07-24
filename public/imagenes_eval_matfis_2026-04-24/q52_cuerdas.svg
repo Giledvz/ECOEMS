@@ -1,14 +1,14 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" width="700" height="360" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
   <defs>
-    <marker id="ahBlack" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <marker id="q52_cuerdas_ahBlack" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
     </marker>
-    <pattern id="hatchCeil" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
+    <pattern id="q52_cuerdas_hatchCeil" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
       <line x1="0" y1="0" x2="0" y2="8" stroke="#555" stroke-width="0.9"/>
     </pattern>
   </defs>
 <!-- Techo con hachurado arriba -->
-  <rect x="60" y="40" width="580" height="22" fill="url(#hatchCeil)"/>
+  <rect x="60" y="40" width="580" height="22" fill="url(#q52_cuerdas_hatchCeil)"/>
   <line x1="60" y1="62" x2="640" y2="62" stroke="currentColor" stroke-width="2.2"/>
 
   <!-- Cuerdas (desde los puntos de apoyo hasta la masa) -->
@@ -31,7 +31,7 @@
   <text x="350" y="207" text-anchor="middle" font-size="18" font-weight="500" fill="currentColor">8 kg</text>
 
   <!-- Peso W = mg -->
-  <line x1="350" y1="225" x2="350" y2="310" stroke="currentColor" stroke-width="2.4" marker-end="url(#ahBlack)"/>
+  <line x1="350" y1="225" x2="350" y2="310" stroke="currentColor" stroke-width="2.4" marker-end="url(#q52_cuerdas_ahBlack)"/>
   <text x="365" y="285" font-size="18">
     <tspan font-style="italic">W</tspan><tspan> = </tspan><tspan font-style="italic">mg</tspan>
   </text>

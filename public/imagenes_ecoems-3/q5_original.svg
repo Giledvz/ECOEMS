@@ -1,20 +1,20 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
-<!-- Elemento 1: hexágono blanco casi inscrito en círculo negro -->
-  <g transform="translate(40, 35)">
-    <circle r="26" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
-    <polygon points="0,-25 21.65,-12.5 21.65,12.5 0,25 -21.65,12.5 -21.65,-12.5"
-             fill="#ffffff" stroke="currentColor" stroke-width="0.8"/>
-  </g>
-  <!-- Elemento 2: pentágono blanco circunscrito al círculo negro (círculo inscrito ≈ R·cos36°) -->
-  <g transform="translate(120, 35)">
-    <polygon points="0,-26 24.73,-8.04 15.28,21.04 -15.28,21.04 -24.73,-8.04"
-             fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
-    <circle r="20" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
-  </g>
-  <!-- Elemento 3: cuadrado blanco inscrito en círculo negro -->
-  <g transform="translate(200, 35)">
-    <circle r="26" fill="#1f1a16" stroke="currentColor" stroke-width="1.2"/>
-    <polygon points="18.38,-18.38 18.38,18.38 -18.38,18.38 -18.38,-18.38"
-             fill="#ffffff" stroke="currentColor" stroke-width="0.8"/>
-  </g>
+<!-- Serie: forma hueca inscrita/circunscrita a círculo relleno — tema-adaptable -->
+  <defs>
+    <mask id="q5o_h1" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="70">
+      <rect x="0" y="0" width="240" height="70" fill="white"/><polygon points="40,10 61.65,22.5 61.65,47.5 40,60 18.35,47.5 18.35,22.5" fill="black"/></mask>
+    <mask id="q5o_h3" maskUnits="userSpaceOnUse" x="0" y="0" width="240" height="70">
+      <rect x="0" y="0" width="240" height="70" fill="white"/><polygon points="218.38,16.62 218.38,53.38 181.62,53.38 181.62,16.62" fill="black"/></mask>
+  </defs>
+  <!-- 1: hexágono hueco casi inscrito en círculo relleno -->
+  <circle cx="40" cy="35" r="26" fill="currentColor" mask="url(#q5o_h1)"/>
+  <circle cx="40" cy="35" r="26" fill="none" stroke="currentColor" stroke-width="1.2"/>
+  <polygon points="40,10 61.65,22.5 61.65,47.5 40,60 18.35,47.5 18.35,22.5" fill="none" stroke="currentColor" stroke-width="0.8"/>
+  <!-- 2: pentágono hueco circunscrito al círculo relleno -->
+  <polygon points="120,9 144.73,26.96 135.28,56.04 104.72,56.04 95.27,26.96" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="120" cy="35" r="20" fill="currentColor" stroke="currentColor" stroke-width="1.2"/>
+  <!-- 3: cuadrado hueco inscrito en círculo relleno -->
+  <circle cx="200" cy="35" r="26" fill="currentColor" mask="url(#q5o_h3)"/>
+  <circle cx="200" cy="35" r="26" fill="none" stroke="currentColor" stroke-width="1.2"/>
+  <polygon points="218.38,16.62 218.38,53.38 181.62,53.38 181.62,16.62" fill="none" stroke="currentColor" stroke-width="0.8"/>
 </svg>

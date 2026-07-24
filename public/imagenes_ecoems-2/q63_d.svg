@@ -2,7 +2,7 @@
 <defs>
     <!-- Cubo en proyección cabinet con cámara un poco más elevada -->
     <!-- depth offset = (10, -14) en vez de (10, -10): se ve más la cara superior -->
-    <symbol id="cubeUnit" overflow="visible">
+    <symbol id="q63_d_cubeUnit" overflow="visible">
       <polygon points="0,0 20,0 20,-20 0,-20" fill="#c9bda3" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
       <polygon points="20,0 30,-14 30,-34 20,-20" fill="#a89880" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
       <polygon points="0,-20 20,-20 30,-34 10,-34" fill="#efe7d8" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
@@ -13,16 +13,16 @@
   <!-- screen_x = 30 + 20a + 10b ; screen_y = 150 - 14b - 20c -->
   <!-- Render order: y desc, z asc, x asc -->
   <!-- y=4 (back row) -->
-  <use href="#cubeUnit" x="60" y="108"/>
-  <use href="#cubeUnit" x="80" y="88"/>
-  <use href="#cubeUnit" x="100" y="68"/>
+  <use href="#q63_d_cubeUnit" x="60" y="108"/>
+  <use href="#q63_d_cubeUnit" x="80" y="88"/>
+  <use href="#q63_d_cubeUnit" x="100" y="68"/>
   <!-- y=3 -->
-  <use href="#cubeUnit" x="50" y="102"/>
-  <use href="#cubeUnit" x="70" y="82"/>
-  <use href="#cubeUnit" x="90" y="62"/>
+  <use href="#q63_d_cubeUnit" x="50" y="102"/>
+  <use href="#q63_d_cubeUnit" x="70" y="82"/>
+  <use href="#q63_d_cubeUnit" x="90" y="62"/>
   <!-- y=2 -->
-  <use href="#cubeUnit" x="40" y="96"/>
-  <use href="#cubeUnit" x="60" y="76"/>
+  <use href="#q63_d_cubeUnit" x="40" y="96"/>
+  <use href="#q63_d_cubeUnit" x="60" y="76"/>
   <!-- y=1 (front) -->
-  <use href="#cubeUnit" x="30" y="90"/>
+  <use href="#q63_d_cubeUnit" x="30" y="90"/>
 </svg>

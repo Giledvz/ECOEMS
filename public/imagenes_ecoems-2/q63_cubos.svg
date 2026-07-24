@@ -1,7 +1,7 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" width="720" height="720" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
 <defs>
     <!-- Cubo isométrico reutilizable. Origen: vértice frontal inferior. Lado=40 -->
-    <symbol id="cube" overflow="visible">
+    <symbol id="q63_cubos_cube" overflow="visible">
       <!-- Cara superior -->
       <polygon points="0,-30 35,-50 70,-30 35,-10" fill="#efe7d8" stroke="#1f1a16" stroke-width="1.5"/>
       <!-- Cara frontal izquierda -->
@@ -15,12 +15,12 @@
   <g transform="translate(280, 60)">
     <text x="80" y="-15" text-anchor="middle" font-size="14" font-weight="600">Figura original</text>
     <!-- Pila base + escalonado -->
-    <use href="#cube" x="0"   y="160"/>
-    <use href="#cube" x="70"  y="160"/>
-    <use href="#cube" x="140" y="160"/>
-    <use href="#cube" x="35"  y="115"/>
-    <use href="#cube" x="105" y="115"/>
-    <use href="#cube" x="70"  y="70"/>
+    <use href="#q63_cubos_cube" x="0"   y="160"/>
+    <use href="#q63_cubos_cube" x="70"  y="160"/>
+    <use href="#q63_cubos_cube" x="140" y="160"/>
+    <use href="#q63_cubos_cube" x="35"  y="115"/>
+    <use href="#q63_cubos_cube" x="105" y="115"/>
+    <use href="#q63_cubos_cube" x="70"  y="70"/>
   </g>
 
   <!-- Línea separadora -->
@@ -30,12 +30,12 @@
   <g transform="translate(80, 350)">
     <text x="0" y="-10" font-size="16" font-weight="600">a)</text>
     <g transform="translate(40, 30)">
-      <use href="#cube" x="0"   y="160"/>
-      <use href="#cube" x="70"  y="160"/>
-      <use href="#cube" x="140" y="160"/>
-      <use href="#cube" x="0"   y="115"/>
-      <use href="#cube" x="70"  y="115"/>
-      <use href="#cube" x="0"   y="70"/>
+      <use href="#q63_cubos_cube" x="0"   y="160"/>
+      <use href="#q63_cubos_cube" x="70"  y="160"/>
+      <use href="#q63_cubos_cube" x="140" y="160"/>
+      <use href="#q63_cubos_cube" x="0"   y="115"/>
+      <use href="#q63_cubos_cube" x="70"  y="115"/>
+      <use href="#q63_cubos_cube" x="0"   y="70"/>
     </g>
   </g>
 
@@ -43,13 +43,13 @@
   <g transform="translate(440, 350)">
     <text x="0" y="-10" font-size="16" font-weight="600">b)</text>
     <g transform="translate(40, 30)">
-      <use href="#cube" x="0"   y="160"/>
-      <use href="#cube" x="70"  y="160"/>
-      <use href="#cube" x="140" y="160"/>
-      <use href="#cube" x="35"  y="115"/>
-      <use href="#cube" x="105" y="115"/>
-      <use href="#cube" x="140" y="115"/>
-      <use href="#cube" x="140" y="70"/>
+      <use href="#q63_cubos_cube" x="0"   y="160"/>
+      <use href="#q63_cubos_cube" x="70"  y="160"/>
+      <use href="#q63_cubos_cube" x="140" y="160"/>
+      <use href="#q63_cubos_cube" x="35"  y="115"/>
+      <use href="#q63_cubos_cube" x="105" y="115"/>
+      <use href="#q63_cubos_cube" x="140" y="115"/>
+      <use href="#q63_cubos_cube" x="140" y="70"/>
     </g>
   </g>
 
@@ -57,11 +57,11 @@
   <g transform="translate(80, 560)">
     <text x="0" y="-10" font-size="16" font-weight="600">c)</text>
     <g transform="translate(40, 30)">
-      <use href="#cube" x="0"   y="120"/>
-      <use href="#cube" x="70"  y="120"/>
-      <use href="#cube" x="140" y="120"/>
-      <use href="#cube" x="35"  y="75"/>
-      <use href="#cube" x="105" y="75"/>
+      <use href="#q63_cubos_cube" x="0"   y="120"/>
+      <use href="#q63_cubos_cube" x="70"  y="120"/>
+      <use href="#q63_cubos_cube" x="140" y="120"/>
+      <use href="#q63_cubos_cube" x="35"  y="75"/>
+      <use href="#q63_cubos_cube" x="105" y="75"/>
     </g>
   </g>
 
@@ -69,11 +69,11 @@
   <g transform="translate(440, 560)">
     <text x="0" y="-10" font-size="16" font-weight="600">d)</text>
     <g transform="translate(40, 30)">
-      <use href="#cube" x="0"   y="120"/>
-      <use href="#cube" x="70"  y="120"/>
-      <use href="#cube" x="35"  y="75"/>
-      <use href="#cube" x="105" y="75"/>
-      <use href="#cube" x="70"  y="30"/>
+      <use href="#q63_cubos_cube" x="0"   y="120"/>
+      <use href="#q63_cubos_cube" x="70"  y="120"/>
+      <use href="#q63_cubos_cube" x="35"  y="75"/>
+      <use href="#q63_cubos_cube" x="105" y="75"/>
+      <use href="#q63_cubos_cube" x="70"  y="30"/>
     </g>
   </g>
 </svg>

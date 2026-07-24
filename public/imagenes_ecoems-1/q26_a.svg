@@ -1,6 +1,6 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 160" width="140" height="160" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
 <defs>
-    <symbol id="cubeUnit" overflow="visible">
+    <symbol id="q26_a_cubeUnit" overflow="visible">
       <!-- Cara frontal (rectángulo perfecto) -->
       <polygon points="0,0 20,0 20,-20 0,-20" fill="#c9bda3" stroke="#1f1a16" stroke-width="1" stroke-linejoin="round"/>
       <!-- Cara derecha (crema oscuro, inclinada hacia atrás) -->
@@ -12,13 +12,13 @@
 
   <!-- Render order: back-to-front, bottom-to-top. -->
   <!-- (1,2,1) → 0-based (0,1,0): (40+10, 120-10) = (50, 110) -->
-  <use href="#cubeUnit" x="50" y="110"/>
+  <use href="#q26_a_cubeUnit" x="50" y="110"/>
   <!-- (2,2,1) → (1,1,0): (70, 110) -->
-  <use href="#cubeUnit" x="70" y="110"/>
+  <use href="#q26_a_cubeUnit" x="70" y="110"/>
   <!-- (2,2,2) → (1,1,1): (70, 90) -->
-  <use href="#cubeUnit" x="70" y="90"/>
+  <use href="#q26_a_cubeUnit" x="70" y="90"/>
   <!-- (2,2,3) → (1,1,2): (70, 70) -->
-  <use href="#cubeUnit" x="70" y="70"/>
+  <use href="#q26_a_cubeUnit" x="70" y="70"/>
   <!-- (1,1,1) → (0,0,0): (40, 120) — frontal, último para que tape -->
-  <use href="#cubeUnit" x="40" y="120"/>
+  <use href="#q26_a_cubeUnit" x="40" y="120"/>
 </svg>
