@@ -417,6 +417,19 @@ app.get('/api/version', (_req, res) => {
   res.json({ branch: GIT_BRANCH });
 });
 
+// Editor de figuras (cubos): guarda la orientación/coordenadas elegidas en un
+// archivo que el asistente lee. Solo escribe un JSON temporal; no toca salas.
+app.post('/api/save-figura', (req, res) => {
+  try {
+    const dir = path.join(__dirname, 'public', '_fuente');
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, 'figura_actual.json'), JSON.stringify(req.body || {}, null, 2));
+    res.json({ ok: true });
+  } catch (e) {
+    res.status(500).json({ ok: false, error: String(e) });
+  }
+});
+
 // DEBUG: devuelve el HTML del comprobante de la primera persona enviada en la sala.
 app.get('/api/debug-comprobante/:roomCode', (req, res) => {
   const room = rooms.get(req.params.roomCode);

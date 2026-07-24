@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Editor de figuras · cubos</title>
+<style>
+  :root{
+    /* paleta Tercial (valores del examen) */
+    --crema-50:#faf7f0; --crema-100:#f8f3e8; --crema-200:#f5efe4; --crema-300:#efe7d8;
+    --crema-400:#e6dcc4; --crema-500:#d9ccae; --crema-600:#c9bda3; --crema-700:#a89880;
+    --ink-700:#4a3f33; --ink-900:#1f1a16; --terracota:#c2410c;
+    --bg:var(--crema-200); --panel:var(--crema-50); --ink:var(--ink-900);
+    --line:var(--crema-600); --accent:var(--terracota); --u:46px;
+  }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:Georgia,'Latin Modern Roman',serif; color:var(--ink); background:var(--bg); }
+  header{ padding:14px 20px; border-bottom:1px solid var(--line); }
+  header h1{ margin:0; font-size:19px; }
+  header p{ margin:4px 0 0; font-size:13px; opacity:.65; }
+  .cols{ display:flex; gap:18px; padding:18px 20px; align-items:flex-start; flex-wrap:wrap; }
+  .stage-wrap{ flex:1 1 380px; min-width:340px; }
+  .stage{ height:360px; border:1px solid var(--line); border-radius:10px; background:
+    radial-gradient(circle at 50% 42%, var(--crema-100), var(--crema-400)); perspective:1000px; overflow:hidden;
+    display:flex; align-items:center; justify-content:center; cursor:grab; user-select:none; }
+  .stage.grabbing{ cursor:grabbing; }
+  .world{ position:relative; transform-style:preserve-3d; transform:rotateX(-24deg) rotateY(-34deg); transition:transform .12s ease-out; }
+  .cube{ position:absolute; width:var(--u); height:var(--u); transform-style:preserve-3d; }
+  .face{ position:absolute; width:var(--u); height:var(--u); border:1.5px solid var(--ink-700); }
+  .f-front { transform:translateZ(calc(var(--u)/2)); background:var(--crema-400); }
+  .f-back  { transform:rotateY(180deg) translateZ(calc(var(--u)/2)); background:var(--crema-500); }
+  .f-right { transform:rotateY(90deg)  translateZ(calc(var(--u)/2)); background:var(--crema-500); }
+  .f-left  { transform:rotateY(-90deg) translateZ(calc(var(--u)/2)); background:var(--crema-600); }
+  .f-top   { transform:rotateX(90deg)  translateZ(calc(var(--u)/2)); background:var(--crema-300); }
+  .f-bot   { transform:rotateX(-90deg) translateZ(calc(var(--u)/2)); background:var(--crema-700); }
+  .hint{ margin-top:8px; font-size:12.5px; opacity:.6; text-align:center; }
+
+  .panel{ flex:0 0 340px; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:14px; }
+  .tabs{ display:flex; gap:6px; margin-bottom:12px; }
+  .tabs button{ flex:1; padding:9px; border:1px solid var(--line); background:transparent; color:var(--ink);
+    border-radius:8px; font:600 14px Georgia; cursor:pointer; }
+  .tabs button.on{ background:var(--accent); color:var(--crema-50); border-color:var(--accent); }
+
+  .lvl{ display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+  .lvl button{ width:30px; height:30px; border:1px solid var(--line); background:transparent; border-radius:7px; font-size:17px; cursor:pointer; }
+  .lvl b{ font-size:15px; }
+  .grid{ display:grid; gap:4px; margin-bottom:6px; }
+  .cell{ aspect-ratio:1; border:1px solid var(--line); border-radius:5px; background:var(--crema-50); cursor:pointer; position:relative; }
+  .cell.on{ background:var(--crema-700); border-color:var(--ink-700); }
+  .cell.below::after{ content:''; position:absolute; inset:38%; border-radius:50%; background:var(--crema-700); }
+  .cell.on.below::after{ background:var(--ink-700); }
+  .gnote{ font-size:11.5px; opacity:.55; margin:2px 0 10px; }
+
+  .rots{ display:grid; grid-template-columns:repeat(3,1fr); gap:7px; margin-bottom:6px; }
+  .rots button{ padding:10px 4px; border:1px solid var(--line); background:transparent; border-radius:8px; font-size:13px; cursor:pointer; }
+  .rots button:hover{ border-color:var(--accent); }
+
+  .readout{ margin-top:12px; border-top:1px solid var(--line); padding-top:12px; }
+  .readout label{ font-size:12px; opacity:.6; display:block; margin-bottom:4px; }
+  .coords{ font:13px 'Courier New',monospace; background:var(--crema-50); border:1px solid var(--line); border-radius:7px;
+    padding:8px; width:100%; resize:vertical; min-height:52px; color:var(--ink); }
+  .compact{ font:600 15px 'Courier New',monospace; margin:8px 0; color:var(--accent); word-break:break-all; }
+  .acts{ display:flex; gap:8px; margin-top:8px; }
+  .acts button{ flex:1; padding:9px; border:none; border-radius:8px; font:600 13px Georgia; cursor:pointer; }
+  .btn-copy{ background:var(--crema-400); color:var(--ink); }
+  .btn-save{ background:var(--accent); color:var(--crema-50); }
+  .status{ font-size:12px; margin-top:8px; min-height:16px; opacity:.8; }
+  small.k{ opacity:.55; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Editor de figuras · cubos</h1>
+  <p>Construye la figura por niveles y luego arrástrala con el mouse para girarla. Las coordenadas son <b>frente, profundidad, altura</b>.</p>
+</header>
+
+<div class="cols">
+  <div class="stage-wrap">
+    <div id="stage" class="stage"><div id="world" class="world"></div></div>
+    <div class="hint" id="hint">Arrastra para girar · imanta a 90° al soltar</div>
+  </div>
+
+  <div class="panel">
+    <div class="tabs">
+      <button id="tabBuild" onclick="setMode('build')">Construir</button>
+      <button id="tabRot" class="on" onclick="setMode('rotate')">Girar</button>
+    </div>
+
+    <div id="buildPanel" style="display:none">
+      <div class="lvl">
+        <span>Nivel (altura):</span>
+        <button onclick="setLevel(level-1)">−</button><b id="lvlNum">1</b><button onclick="setLevel(level+1)">+</button>
+        <span style="margin-left:auto"><small class="k">rejilla</small></span>
+        <button onclick="resize(-1)">▣−</button><button onclick="resize(1)">▣+</button>
+      </div>
+      <div id="grid" class="grid"></div>
+      <div class="gnote">Clic para poner/quitar un cubo en este nivel. El punto ● marca que hay un cubo en el nivel de abajo (para apilar).</div>
+      <div class="acts"><button class="btn-copy" onclick="clearFig()">Vaciar</button><button class="btn-copy" onclick="loadExample()">Ejemplo</button></div>
+    </div>
+
+    <div id="rotatePanel">
+      <div class="rots">
+        <button onclick="applyRot('z',1)">⟲ girar izq</button>
+        <button onclick="applyRot('x',1)">⤒ inclinar</button>
+        <button onclick="applyRot('z',-1)">girar der ⟳</button>
+        <button onclick="applyRot('x',-1)">inclinar ⤓</button>
+        <button onclick="applyRot('y',1)">rodar ⭮</button>
+        <button onclick="resetRot()">↺ original</button>
+      </div>
+      <div class="gnote">O arrastra la figura con el mouse. Solo existen 24 orientaciones "limpias"; siempre imanta a una.</div>
+    </div>
+
+    <div class="readout">
+      <label>Coordenadas de esta orientación (frente, prof, altura):</label>
+      <div class="compact" id="compact"></div>
+      <textarea class="coords" id="coords" readonly></textarea>
+      <div class="acts">
+        <button class="btn-copy" onclick="copyCoords()">Copiar</button>
+        <button class="btn-save" onclick="saveFig()">Guardar esta vista</button>
+      </div>
+      <div class="status" id="status"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const U = 46;
+let baseCubes = [[1,1,1],[2,1,1],[3,1,1],[3,2,1],[3,2,2]]; // figura de ejemplo
+let curCubes  = clone(baseCubes);
+let mode = 'rotate';
+let level = 1;
+let GW = 5, GD = 5; // rejilla: frente (columnas) x profundidad (filas)
+
+function clone(t){ return t.map(c=>c.slice()); }
+function norm(p){ const mi=Math.min(...p.map(q=>q[0])),mj=Math.min(...p.map(q=>q[1])),mk=Math.min(...p.map(q=>q[2]));
+  return p.map(([i,j,k])=>[i-mi+1,j-mj+1,k-mk+1]); }
+function rot(t,ax,n=1){ let p=t.map(([a,b,c])=>[a-1,b-1,c-1]);
+  for(let s=0;s<((n%4)+4)%4;s++) p=p.map(([i,j,k])=> ax==='z'?[j,-i,k] : ax==='x'?[i,k,-j] : ax==='y'?[-k,j,i] : [i,j,k]);
+  return norm(p); }
+const key=(a,b,c)=>a+'_'+b+'_'+c;
+function has(t,a,b,c){ return t.some(q=>q[0]===a&&q[1]===b&&q[2]===c); }
+
+// ---- 3D ----
+function render3D(cubes){
+  const w=document.getElementById('world');
+  // centro para centrar la figura en el escenario
+  const xs=cubes.map(c=>c[0]), ys=cubes.map(c=>c[2]), zs=cubes.map(c=>c[1]);
+  const cx=(Math.min(...xs)+Math.max(...xs))/2, cy=(Math.min(...ys)+Math.max(...ys))/2, cz=(Math.min(...zs)+Math.max(...zs))/2;
+  let html='';
+  // pintar de atrás hacia adelante ayuda al compositor
+  const ordered=[...cubes].sort((A,B)=> (B[1]-A[1]) || (A[2]-B[2]) || (A[0]-B[0]));
+  for(const [a,b,c] of ordered){
+    const x=(a-1-cx)*U, y=-(c-1-cy)*U, z=(b-1-cz)*U;
+    html+=`<div class="cube" style="transform:translate3d(${x}px,${y}px,${z}px)">
+      <div class="face f-front"></div><div class="face f-back"></div><div class="face f-right"></div>
+      <div class="face f-left"></div><div class="face f-top"></div><div class="face f-bot"></div></div>`;
+  }
+  w.innerHTML=html;
+}
+
+// ---- lectura de coordenadas ----
+function updateReadout(){
+  const s=[...curCubes].sort((A,B)=>A[2]-B[2]||A[1]-B[1]||A[0]-B[0]);
+  document.getElementById('coords').value = JSON.stringify(s);
+  const allSmall = s.every(c=>c.every(n=>n<=9));
+  document.getElementById('compact').textContent = allSmall ? s.map(c=>c.join('')).join(', ') : '(coordenadas de 2 dígitos — usa el recuadro de abajo)';
+}
+
+// ---- modos ----
+function setMode(m){
+  mode=m;
+  document.getElementById('tabBuild').classList.toggle('on', m==='build');
+  document.getElementById('tabRot').classList.toggle('on', m==='rotate');
+  document.getElementById('buildPanel').style.display = m==='build'?'':'none';
+  document.getElementById('rotatePanel').style.display = m==='rotate'?'':'none';
+  document.getElementById('hint').textContent = m==='build' ? 'Modo construir · edita en la rejilla →' : 'Arrastra para girar · imanta a 90° al soltar';
+  if(m==='build'){ curCubes=clone(baseCubes); renderGrid(); }
+  else { curCubes=clone(baseCubes); }   // girar arranca desde la figura construida
+  render3D(curCubes); updateReadout();
+}
+
+// ---- construir ----
+function setLevel(n){ level=Math.max(1,n); document.getElementById('lvlNum').textContent=level; renderGrid(); }
+function resize(d){ GW=Math.max(2,Math.min(8,GW+d)); GD=Math.max(2,Math.min(8,GD+d)); renderGrid(); }
+function renderGrid(){
+  const g=document.getElementById('grid'); g.style.gridTemplateColumns=`repeat(${GW},1fr)`;
+  let html='';
+  for(let b=GD;b>=1;b--){ for(let a=1;a<=GW;a++){
+    const on=has(baseCubes,a,b,level), below= level>1 && has(baseCubes,a,b,level-1);
+    html+=`<div class="cell${on?' on':''}${below?' below':''}" onclick="toggleCube(${a},${b})"></div>`;
+  }}
+  g.innerHTML=html;
+}
+function toggleCube(a,b){
+  if(has(baseCubes,a,b,level)) baseCubes=baseCubes.filter(q=>!(q[0]===a&&q[1]===b&&q[2]===level));
+  else baseCubes.push([a,b,level]);
+  if(baseCubes.length===0) baseCubes=[[1,1,1]];
+  curCubes=clone(baseCubes); renderGrid(); render3D(curCubes); updateReadout();
+}
+function clearFig(){ baseCubes=[[1,1,1]]; setLevel(1); curCubes=clone(baseCubes); render3D(curCubes); updateReadout(); }
+function loadExample(){ baseCubes=[[1,1,1],[2,1,1],[3,1,1],[3,2,1],[3,2,2]]; setLevel(1); curCubes=clone(baseCubes); render3D(curCubes); updateReadout(); }
+
+// ---- girar ----
+function applyRot(ax,n){ curCubes=rot(curCubes,ax,n); render3D(curCubes); updateReadout(); }
+function resetRot(){ curCubes=clone(baseCubes); render3D(curCubes); updateReadout(); }
+
+// arrastre: cada ~55px de arrastre = un giro de 90°
+const stage=document.getElementById('stage');
+let drag=null;
+stage.addEventListener('mousedown', e=>{ if(mode!=='rotate')return; drag={x:e.clientX,y:e.clientY,ax:0,ay:0}; stage.classList.add('grabbing'); });
+window.addEventListener('mousemove', e=>{
+  if(!drag)return;
+  drag.ax += e.clientX-drag.x; drag.ay += e.clientY-drag.y; drag.x=e.clientX; drag.y=e.clientY;
+  const T=55;
+  while(drag.ax> T){ applyRot('z',-1); drag.ax-=T; }
+  while(drag.ax<-T){ applyRot('z', 1); drag.ax+=T; }
+  while(drag.ay> T){ applyRot('x', 1); drag.ay-=T; }
+  while(drag.ay<-T){ applyRot('x',-1); drag.ay+=T; }
+});
+window.addEventListener('mouseup', ()=>{ if(drag){ drag=null; stage.classList.remove('grabbing'); } });
+
+// ---- copiar / guardar ----
+function copyCoords(){
+  navigator.clipboard.writeText(document.getElementById('coords').value)
+    .then(()=>setStatus('✓ Coordenadas copiadas — pégamelas en el chat.'))
+    .catch(()=>setStatus('No pude copiar; selecciona el texto del recuadro manualmente.'));
+}
+function saveFig(){
+  const payload={ cubes:[...curCubes].sort((A,B)=>A[2]-B[2]||A[1]-B[1]||A[0]-B[0]), base:baseCubes, when:new Date().toISOString() };
+  fetch('/api/save-figura',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
+    .then(r=>r.json()).then(j=>{ if(j.ok) setStatus('✓ Guardada. Ya tengo las coordenadas de esta vista.'); else throw 0; })
+    .catch(()=>setStatus('⚠ Guardado no disponible aún (falta reiniciar el server tras el examen). Usa "Copiar" por ahora.'));
+}
+function setStatus(t){ document.getElementById('status').textContent=t; }
+
+// init
+setMode('rotate');
+</script>
+</body>
+</html>
