@@ -55,6 +55,10 @@
 
     // Alineación por columna desde la fila separadora del markdown.
     // :-  = left, :-: = center, -: = right, - = default (center, convención ECOEMS).
+    var explicitAlign = separator.map(function(s) {
+      var t = s.trim();
+      return t.charAt(0) === ':' || t.charAt(t.length - 1) === ':';
+    });
     var aligns = separator.map(function(s) {
       var t = s.trim();
       var startsCol = t.charAt(0) === ':';
@@ -63,6 +67,16 @@
       if (endsCol) return 'right';
       if (startsCol) return 'left';
       return 'center';
+    });
+
+    // Sin marca explícita, las columnas de texto largo (oraciones completas) se
+    // alinean a la izquierda: centrarlas dificulta la lectura y deja los renglones
+    // desalineados entre sí. Las columnas cortas (etiquetas, cifras) siguen centradas.
+    var LONG_CELL = 45;
+    body.forEach(function(row) {
+      row.forEach(function(c, i) {
+        if (!explicitAlign[i] && c.replace(/<[^>]*>/g, '').length > LONG_CELL) aligns[i] = 'left';
+      });
     });
 
     // Si todos los cells del header están vacíos, omitimos el <thead>.
