@@ -134,7 +134,10 @@
             // Render una sola vez como rowspan; vertical-align:middle centra
             // el bloque de items verticalmente en la altura combinada.
             var inner = mergedCol[i].map(function(it){
-              return '<div>' + renderInlineMath(it) + '</div>';
+              // Las etiquetas cortas ("II. Químico") no deben partirse en dos
+              // renglones cuando la otra columna se lleva casi todo el ancho.
+              var nb = it.replace(/<[^>]*>/g, '').length <= 22 ? ' style="white-space:nowrap"' : '';
+              return '<div' + nb + '>' + renderInlineMath(it) + '</div>';
             }).join('<div style="height:22px"></div>');
             return '<td rowspan="' + nRows + '" style="' + makeCellStyle(i, false) + '">' + inner + '</td>';
           }
