@@ -7,3 +7,8 @@ server.log
 # Paquetes de diseño llegan como .zip; versionamos su contenido extraído
 # (p. ej. repo-diseno/), no el binario.
 *.zip
+
+# Guías escaneadas del IPN: pesan 31 y 90 MB. Se conservan en fuentes/ipn/ en
+# disco (ver su README), no en el repositorio.
+fuentes/ipn/guia-oficial-ipn-nivel-superior.pdf
+fuentes/ipn/material-apoyo-ipn-2026-nivel-superior.pdf
