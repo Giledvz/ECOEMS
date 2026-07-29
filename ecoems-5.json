@@ -104,27 +104,35 @@
             "id": 6,
             "topic": "2",
             "topic_name": "",
-            "text": "Si las primeras cuatro figuras de la serie son (1, 4, 9, 16 puntos formando cuadrados de lado 1, 2, 3, 4), ¿cuántos puntos tendrá la que ocupa la octava posición?\n\n[Imagen: Serie de cuadrados formados por puntos: 1×1, 2×2, 3×3, 4×4.]",
+            "text": "¿Cuántos puntos tendrá la figura que ocupa la octava posición de la serie?",
             "options": {
               "A": "64",
               "B": "72",
               "C": "90",
               "D": "56"
             },
-            "answer": "A"
+            "answer": "A",
+            "image": "/imagenes_ecoems-5/q6_serie_puntos.svg"
           },
           {
             "id": 7,
             "topic": "2",
             "topic_name": "",
-            "text": "La figura que continúa la serie es\n\n[Imagen: Serie de cuadrículas 3×3 donde la zona gris avanza diagonalmente.]",
+            "text": "¿Qué figura continúa la serie?",
             "options": {
-              "A": "Cuadrícula 3×3 con celdas grises en esquina superior derecha",
+              "A": "Cuadrícula 3×3 con una celda gris en la esquina superior derecha",
               "B": "Cuadrícula 3×3 sin celdas grises",
-              "C": "Cuadrícula 3×3 con una celda gris arriba-izquierda y otra abajo-derecha",
-              "D": "Cuadrícula 3×3 con dos celdas grises en fila inferior"
+              "C": "Cuadrícula 3×3 con una celda gris en la esquina superior izquierda",
+              "D": "Cuadrícula 3×3 con dos celdas grises en la fila inferior"
             },
-            "answer": "C"
+            "answer": "C",
+            "image": "/imagenes_ecoems-5/q7_serie_cuadriculas.svg",
+            "option_images": {
+              "A": "/imagenes_ecoems-5/q7_opc_a.svg",
+              "B": "/imagenes_ecoems-5/q7_opc_b.svg",
+              "C": "/imagenes_ecoems-5/q7_opc_c.svg",
+              "D": "/imagenes_ecoems-5/q7_opc_d.svg"
+            }
           },
           {
             "id": 8,
