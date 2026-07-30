@@ -1,0 +1,232 @@
+{
+  "_meta": {
+    "bloque": "Geometría analítica",
+    "area": "Conocimientos generales (las 3 áreas)",
+    "fuente": "Material de Apoyo al Aprendizaje 2026 — IPN, pp. 48-57 (PDF 35-39)",
+    "reactivos": 40,
+    "rc": "1b 2c 3b 4a 5c 6a 7c 8a 9a 10a 11b 12a 13b 14b 15a 16d 17d 18b 19c 20b 21c 22a 23a 24a 25a 26b 27c 28b 29a 30a 31a 32b 33b 34c 35c 36c 37d 38b 39d 40a",
+    "subtemas": "Conceptos básicos (1-12) · Cónicas (13-36) · Coordenadas polares (37-40)"
+  },
+  "questions": [
+    {
+      "n": 1, "subtema": "Conceptos básicos",
+      "text": "¿Cuál es la ordenada del punto cuya abscisa es 2, y que equidista de los puntos $A(-2,-1)$ y $B(6,3)$?",
+      "options": { "A": "$y=2$", "B": "$y=1$", "C": "$y=-1$", "D": "$y=-2$" },
+      "answer": "B"
+    },
+    {
+      "n": 2, "subtema": "Conceptos básicos",
+      "text": "Un triángulo tiene sus vértices en los puntos $A(3,0)$, $B(-3,0)$ y $C(0,4)$. ¿Qué tipo de triángulo es?",
+      "options": { "A": "Obtusángulo", "B": "Equilátero", "C": "Isósceles", "D": "Escaleno" },
+      "answer": "C"
+    },
+    {
+      "n": 3, "subtema": "Conceptos básicos",
+      "text": "Determinar los puntos de trisección del segmento cuyos extremos son los puntos $A(-4,6)$ y $B(4,2)$.",
+      "options": {
+        "A": "$(2,3)$, $(-2,5)$",
+        "B": "$\\left(\\frac{4}{3},\\frac{10}{3}\\right)$, $\\left(-\\frac{4}{3},\\frac{14}{3}\\right)$",
+        "C": "$(-2,-3)$, $(2,-5)$",
+        "D": "$\\left(-\\frac{4}{3},-\\frac{10}{3}\\right)$, $\\left(\\frac{4}{3},-\\frac{14}{3}\\right)$"
+      },
+      "answer": "B"
+    },
+    {
+      "n": 4, "subtema": "Conceptos básicos",
+      "text": "Encontrar las coordenadas del punto $P$ que divide al segmento $\\overline{AB}$, con extremos en $A(72,18)$ y $B(-54,36)$, en la razón $\\dfrac{5}{4}$.",
+      "options": { "A": "$P(2,28)$", "B": "$P(62,28)$", "C": "$P(2,-12)$", "D": "$P(-62,12)$" },
+      "answer": "A"
+    },
+    {
+      "n": 5, "subtema": "Conceptos básicos",
+      "text": "La condición que garantiza que dos rectas con pendientes definidas sean perpendiculares entre sí es que __________ de sus pendientes sea igual a $-1$.",
+      "options": { "A": "la suma", "B": "el cociente", "C": "el producto", "D": "la diferencia" },
+      "answer": "C"
+    },
+    {
+      "n": 6, "subtema": "Conceptos básicos",
+      "text": "El extremo de un segmento es el punto $P(5,-1)$ y su punto medio es $M(4,2)$. ¿En qué punto se encuentra el otro extremo del segmento?",
+      "options": { "A": "$(3,5)$", "B": "$(3,3)$", "C": "$(-3,-3)$", "D": "$(-3,-5)$" },
+      "answer": "A"
+    },
+    {
+      "n": 7, "subtema": "Conceptos básicos",
+      "text": "Encontrar la recta perpendicular a $10x-6y+3=0$ que pasa por el punto $(-6,2)$.",
+      "options": { "A": "$3x-5y+8=0$", "B": "$5x-3y-8=0$", "C": "$3x+5y+8=0$", "D": "$5x+3y-8=0$" },
+      "answer": "C"
+    },
+    { "n": 8, "subtema": "Conceptos básicos", "figura": "plano cartesiano con $A(-3,3)$ y $B(4,-2)$ marcados", "answer": "A" },
+    {
+      "n": 9, "subtema": "Conceptos básicos",
+      "text": "¿Cuál es el área del triángulo formado por la recta $5x+12y=60$ y los ejes coordenados?",
+      "options": { "A": "30", "B": "40", "C": "50", "D": "60" },
+      "answer": "A"
+    },
+    {
+      "n": 10, "subtema": "Conceptos básicos",
+      "text": "Determinar la distancia entre las rectas paralelas $2x+5y-3=0$ y $2x+5y-15=0$.",
+      "options": { "A": "$\\dfrac{12}{29}\\sqrt{29}$", "B": "$\\dfrac{18}{29}\\sqrt{29}$", "C": "$\\dfrac{12}{5}$", "D": "$\\dfrac{18}{5}$" },
+      "answer": "A"
+    },
+    {
+      "n": 11, "subtema": "Conceptos básicos",
+      "text": "Hallar la ecuación de la recta cuya pendiente es 2, y que pasa por el punto de intersección de las rectas $5x-2y=-8$ y $x-6y=4$.",
+      "options": { "A": "$2x-y+1=0$", "B": "$2x-y+3=0$", "C": "$x-2y-1=0$", "D": "$x-2y-3=0$" },
+      "answer": "B"
+    },
+    {
+      "n": 12, "subtema": "Conceptos básicos",
+      "text": "Determinar el valor de $a$ para el cual las rectas $\\ell_{1}$ y $\\ell_{2}$ son paralelas.\n\n$$\\ell_{1}: 2x-7y+3=0$$\n$$\\ell_{2}: x+ay-2=0$$",
+      "options": { "A": "$-\\dfrac{7}{2}$", "B": "$-\\dfrac{2}{7}$", "C": "$\\dfrac{2}{7}$", "D": "$\\dfrac{7}{2}$" },
+      "answer": "A"
+    },
+    {
+      "n": 13, "subtema": "Cónicas",
+      "text": "Determinar el radio de la circunferencia cuya ecuación es $x^{2}+y^{2}-6x+4y-3=0$.",
+      "options": { "A": "3", "B": "4", "C": "9", "D": "16" },
+      "answer": "B"
+    },
+    {
+      "n": 14, "subtema": "Cónicas",
+      "text": "Hallar la ecuación de la circunferencia cuyo centro es el punto $C(2,-4)$ y que pasa por el punto $A(-1,0)$.",
+      "options": { "A": "$x^{2}+y^{2}+4x-8y-5=0$", "B": "$x^{2}+y^{2}-4x+8y-5=0$", "C": "$x^{2}+y^{2}+4x-8y+45=0$", "D": "$x^{2}+y^{2}-4x+8y+45=0$" },
+      "answer": "B"
+    },
+    {
+      "n": 15, "subtema": "Cónicas",
+      "text": "Determinar la ecuación de la circunferencia con centro en $C(1,2)$ y que es tangente a la recta $x-y+10=0$.",
+      "options": { "A": "$x^{2}+y^{2}-2x-4y-\\dfrac{71}{2}=0$", "B": "$x^{2}+y^{2}+2x+4y-\\dfrac{71}{2}=0$", "C": "$x^{2}+y^{2}-4x-2y-\\dfrac{71}{2}=0$", "D": "$x^{2}+y^{2}+4x+2y-\\dfrac{71}{2}=0$" },
+      "answer": "A"
+    },
+    {
+      "n": 16, "subtema": "Cónicas",
+      "text": "Una __________ es el lugar geométrico que describe un punto que se mueve en un plano de tal forma que su distancia permanece constante a un punto fijo de dicho plano.",
+      "options": { "A": "elipse", "B": "parábola", "C": "hipérbola", "D": "circunferencia" },
+      "answer": "D"
+    },
+    {
+      "n": 17, "subtema": "Cónicas",
+      "text": "¿Cuál es la ecuación de la circunferencia que pasa por los puntos $P_{1}(0,0)$, $P_{2}(1,1)$ y $P_{3}(-2,2)$?",
+      "options": { "A": "$x^{2}+y^{2}-3x+y=0$", "B": "$x^{2}+y^{2}+3x-y=0$", "C": "$x^{2}+y^{2}-x+3y=0$", "D": "$x^{2}+y^{2}+x-3y=0$" },
+      "answer": "D"
+    },
+    {
+      "n": 18, "subtema": "Cónicas",
+      "text": "Relacionar la ecuación de la circunferencia con los parámetros que le corresponden.\n\n| Ecuación | Parámetros |\n|---|---|\n| 1. $(x-2)^{2}+(y-3)^{2}=25$ | A. $C(2,3)$, $r=5$ |\n| 2. $(x+2)^{2}+(y-3)^{2}=49$ | B. $C(-2,3)$, $r=7$ |\n| 3. $(x-2)^{2}+(y+3)^{2}=(25)^{2}$ | C. $C(2,-3)$, $r=25$ |\n| 4. $(x+2)^{2}+(y+3)^{2}=(49)^{2}$ | D. $C(-2,-3)$, $r=49$ |",
+      "options": { "A": "1C, 2D, 3A, 4B", "B": "1A, 2B, 3C, 4D", "C": "1C, 2B, 3A, 4D", "D": "1A, 2D, 3C, 4B" },
+      "answer": "B"
+    },
+    { "n": 19, "subtema": "Cónicas", "figura": "parábola $h(x)$ con vértice $A(-2,1)$ y punto $B(-1,3)$", "answer": "C" },
+    {
+      "n": 20, "subtema": "Cónicas",
+      "text": "Una parábola con vértice en el origen pasa por el punto $(2,1)$ y su eje coincide con el eje $x$. ¿Cuál es la ecuación de la parábola?",
+      "options": { "A": "$2y^{2}+x=0$", "B": "$2y^{2}-x=0$", "C": "$2x^{2}+y=0$", "D": "$2x^{2}-y=0$" },
+      "answer": "B"
+    },
+    {
+      "n": 21, "subtema": "Cónicas",
+      "text": "Determinar la ecuación de la parábola con foco en $F(-1,2)$ y directriz $x+3=0$.",
+      "options": { "A": "$y^{2}-4x-4y=0$", "B": "$y^{2}+4x+4y=0$", "C": "$y^{2}-4x-4y-4=0$", "D": "$y^{2}+4x+4y+12=0$" },
+      "answer": "C"
+    },
+    {
+      "n": 22, "subtema": "Cónicas",
+      "text": "Determinar el vértice de la parábola $x^{2}-16x-12y+148=0$.",
+      "options": { "A": "$(8,7)$", "B": "$(8,-7)$", "C": "$(-8,7)$", "D": "$(-8,-7)$" },
+      "answer": "A"
+    },
+    {
+      "n": 23, "subtema": "Cónicas",
+      "text": "Hallar la directriz de la parábola dada por $y^{2}-6x-2y-2=0$.",
+      "options": { "A": "$x+2=0$", "B": "$x-2=0$", "C": "$x+1=0$", "D": "$x-1=0$" },
+      "answer": "A"
+    },
+    { "n": 24, "subtema": "Cónicas", "figura": "cuatro gráficas de parábolas; se pide la de $x^{2}=-4y$", "answer": "A" },
+    { "n": 25, "subtema": "Cónicas", "figura": "elipse con ejes AA', DD', LL', VV' marcados", "answer": "A" },
+    {
+      "n": 26, "subtema": "Cónicas",
+      "text": "Hallar la ecuación de la elipse con centro en el origen, vértice $V(-5,0)$ y foco en $F(-4,0)$.",
+      "options": { "A": "$\\dfrac{x^{2}}{9}+\\dfrac{y^{2}}{25}=1$", "B": "$\\dfrac{x^{2}}{25}+\\dfrac{y^{2}}{9}=1$", "C": "$\\dfrac{x^{2}}{16}+\\dfrac{y^{2}}{25}=1$", "D": "$\\dfrac{x^{2}}{25}+\\dfrac{y^{2}}{16}=1$" },
+      "answer": "B"
+    },
+    {
+      "n": 27, "subtema": "Cónicas",
+      "text": "Determinar las coordenadas de los focos de la elipse $64x^{2}+39y^{2}=2496$.",
+      "options": { "A": "$F(-5,0)$, $F'(5,0)$", "B": "$F(-8,0)$, $F'(8,0)$", "C": "$F(0,-5)$, $F'(0,5)$", "D": "$F(0,-8)$, $F'(0,8)$" },
+      "answer": "C"
+    },
+    {
+      "n": 28, "subtema": "Cónicas",
+      "text": "Determinar las coordenadas de los vértices de la elipse $169x^{2}+25y^{2}-4225=0$.",
+      "options": { "A": "$(0,12)$ y $(0,-12)$", "B": "$(0,13)$ y $(0,-13)$", "C": "$(12,0)$ y $(-12,0)$", "D": "$(13,0)$ y $(-13,0)$" },
+      "answer": "B"
+    },
+    {
+      "n": 29, "subtema": "Cónicas",
+      "text": "Hallar la ecuación de la elipse cuyos vértices son los puntos $V(1,2)$ y $V'(7,2)$ y la longitud del lado recto es 4.",
+      "options": { "A": "$\\dfrac{(x-4)^{2}}{9}+\\dfrac{(y-2)^{2}}{6}=1$", "B": "$\\dfrac{(x-2)^{2}}{9}+\\dfrac{(y-4)^{2}}{6}=1$", "C": "$\\dfrac{(x-4)^{2}}{6}+\\dfrac{(y-2)^{2}}{9}=1$", "D": "$\\dfrac{(x-2)^{2}}{6}+\\dfrac{(y-4)^{2}}{9}=1$" },
+      "answer": "A"
+    },
+    {
+      "n": 30, "subtema": "Cónicas",
+      "text": "Determinar la excentricidad de la elipse dada por la ecuación:\n\n$$\\frac{(x+2)^{2}}{16}+\\frac{y^{2}}{25}=\\frac{1}{4}$$",
+      "options": { "A": "$\\dfrac{3}{5}$", "B": "$\\dfrac{4}{5}$", "C": "$\\dfrac{5}{4}$", "D": "$\\dfrac{5}{3}$" },
+      "answer": "A"
+    },
+    {
+      "n": 31, "subtema": "Cónicas",
+      "text": "Determinar las asíntotas de la hipérbola dada por la ecuación $4x^{2}-16y^{2}=64$.",
+      "options": { "A": "$2x-4y=0$, $2x+4y=0$", "B": "$4x-2y=0$, $4x+2y=0$", "C": "$4x-16y=0$, $4x+16y=0$", "D": "$16x+4y=0$, $16x+4y=0$" },
+      "answer": "A"
+    },
+    {
+      "n": 32, "subtema": "Cónicas",
+      "text": "Ordenar de forma ascendente los lugares geométricos según su excentricidad.\n\n1) Elipse\n2) Parábola\n3) Hipérbola\n4) Circunferencia",
+      "options": { "A": "3, 2, 1, 4", "B": "4, 1, 2, 3", "C": "4, 2, 1, 3", "D": "3, 1, 2, 4" },
+      "answer": "B"
+    },
+    {
+      "n": 33, "subtema": "Cónicas",
+      "text": "Determinar el centro de la hipérbola dada por la ecuación\n\n$$y^{2}-x^{2}-y+x+4=0$$",
+      "options": { "A": "$\\left(\\dfrac{1}{2},\\dfrac{3}{2}\\right)$", "B": "$\\left(\\dfrac{1}{2},\\dfrac{1}{2}\\right)$", "C": "$\\left(\\dfrac{3}{2},-\\dfrac{1}{2}\\right)$", "D": "$\\left(\\dfrac{1}{2},-\\dfrac{1}{2}\\right)$" },
+      "answer": "B"
+    },
+    {
+      "n": 34, "subtema": "Cónicas",
+      "text": "Identificar la ecuación que corresponde a una hipérbola.\n\nI. $x^{2}+y=1$\nII. $x^{2}+y^{2}=1$\nIII. $x^{2}-y^{2}=1$\nIV. $x^{2}+2y^{2}=1$",
+      "options": { "A": "I", "B": "II", "C": "III", "D": "IV" },
+      "answer": "C"
+    },
+    { "n": 35, "subtema": "Cónicas", "figura": "hipérbola vertical con $F(0,2)$, $V(0,1.5)$ y $F'(0,0)$", "answer": "C" },
+    {
+      "n": 36, "subtema": "Cónicas",
+      "text": "Determinar la longitud del lado recto de la hipérbola:\n\n$$\\frac{(y-1)^{2}}{49}-\\frac{(x+1)^{2}}{25}=1$$",
+      "options": { "A": "$\\dfrac{10}{7}$", "B": "$\\dfrac{14}{5}$", "C": "$\\dfrac{50}{7}$", "D": "$\\dfrac{98}{5}$" },
+      "answer": "C"
+    },
+    {
+      "n": 37, "subtema": "Coordenadas polares",
+      "text": "Calcular las coordenadas polares del punto $P(-4,4)$.",
+      "options": { "A": "$\\left(4,\\dfrac{\\pi}{4}\\right)$", "B": "$\\left(4,\\dfrac{3\\pi}{4}\\right)$", "C": "$\\left(4\\sqrt{2},\\dfrac{\\pi}{4}\\right)$", "D": "$\\left(4\\sqrt{2},\\dfrac{3\\pi}{4}\\right)$" },
+      "answer": "D"
+    },
+    {
+      "n": 38, "subtema": "Coordenadas polares",
+      "text": "Identificar a qué cónica corresponde la ecuación:\n\n$$r = \\frac{2}{1-\\mathrm{sen}\\,\\theta}$$",
+      "options": { "A": "elipse", "B": "parábola", "C": "hipérbola", "D": "circunferencia" },
+      "answer": "B"
+    },
+    {
+      "n": 39, "subtema": "Coordenadas polares",
+      "text": "Un objeto recorre una curva de manera que, en cada tiempo $t$:\n\n$$x(t) = \\cos(t)$$\n$$y(t) = \\mathrm{sen}(t)$$\n\n¿Qué lugar geométrico describe el objeto?",
+      "options": { "A": "elipse", "B": "parábola", "C": "hipérbola", "D": "circunferencia" },
+      "answer": "D"
+    },
+    {
+      "n": 40, "subtema": "Coordenadas polares",
+      "text": "Identificar la ecuación $x+y-1=0$ en coordenadas polares.",
+      "options": { "A": "$r=\\dfrac{1}{\\mathrm{sen}\\,\\theta+\\cos\\theta}$", "B": "$r=\\dfrac{1}{\\mathrm{sen}\\,\\theta-\\cos\\theta}$", "C": "$r=\\dfrac{1}{\\mathrm{sen}\\,\\theta+2\\cos\\theta}$", "D": "$r=\\dfrac{1}{\\mathrm{sen}\\,\\theta-2\\cos\\theta}$" },
+      "answer": "A"
+    }
+  ]
+}

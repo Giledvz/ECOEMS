@@ -1,0 +1,258 @@
+{
+  "_meta": {
+    "bloque": "Cálculo diferencial",
+    "area": "Conocimientos generales (las 3 áreas)",
+    "fuente": "Material de Apoyo al Aprendizaje 2026 — IPN, pp. 60-67 (PDF 41-44)",
+    "reactivos": 40,
+    "sin_figuras": true,
+    "rc": "1c 2a 3a 4c 5a 6c 7d 8b 9d 10d 11d 12c 13b 14a 15a 16c 17c 18a 19b 20c 21b 22b 23b 24b 25d 26c 27d 28d 29c 30a 31c 32c 33c 34d 35b 36d 37a 38a 39d 40a",
+    "subtemas": "Funciones, límites y continuidad (1-20) · Derivada de funciones algebraicas y trascendentes (21-40)"
+  },
+  "questions": [
+    {
+      "n": 1, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el dominio de la siguiente función:\n\n$$f(x) = \\sqrt{10-x} + \\ln(x-1)$$",
+      "options": { "A": "$(-1,10]$", "B": "$[-1,10]$", "C": "$(1,10]$", "D": "$[1,10]$" },
+      "answer": "C"
+    },
+    {
+      "n": 2, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el rango de la función.\n\n$$f(x) = 24 - 2x - x^{2}$$",
+      "options": { "A": "$(-\\infty,25]$", "B": "$(-\\infty,24]$", "C": "$(-\\infty,23]$", "D": "$(-\\infty,22]$" },
+      "answer": "A"
+    },
+    {
+      "n": 3, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el dominio de la función.\n\n$$f(x) = \\sqrt{\\frac{5-x}{x-1}}$$",
+      "options": { "A": "$(1,5]$", "B": "$(1,5)$", "C": "$(-\\infty,-5)\\cup[1,\\infty)$", "D": "$(-\\infty,-5]\\cup[1,\\infty)$" },
+      "answer": "A"
+    },
+    {
+      "n": 4, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el dominio de la función.\n\n$$f(x) = \\frac{x^{2}-5x+6}{x\\left(x^{2}-9\\right)}$$",
+      "options": { "A": "$\\mathbb{R}-\\{2,3\\}$", "B": "$\\mathbb{R}-\\{-2,-3\\}$", "C": "$\\mathbb{R}-\\{0,-3,3\\}$", "D": "$\\mathbb{R}-\\{0,2,-3\\}$" },
+      "answer": "C"
+    },
+    {
+      "n": 5, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el conjunto solución de la desigualdad.\n\n$$|2x-1| \\le |7x+3|$$",
+      "options": { "A": "$\\left(-\\infty,-\\frac{4}{5}\\right]\\cup\\left[-\\frac{2}{9},\\infty\\right)$", "B": "$\\left(-\\infty,-\\frac{5}{4}\\right]\\cup\\left(-\\frac{2}{9},\\infty\\right)$", "C": "$\\left(-\\frac{4}{5},-\\frac{2}{9}\\right)$", "D": "$\\left[-\\frac{4}{5},-\\frac{2}{9}\\right]$" },
+      "answer": "A"
+    },
+    {
+      "n": 6, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el conjunto solución de la desigualdad.\n\n$$\\left|x^{2}-4\\right| > 5$$",
+      "options": { "A": "$(-3,3)$", "B": "$[-3,3]$", "C": "$(-\\infty,-3)\\cup(3,\\infty)$", "D": "$(-\\infty,-3)\\cap(3,\\infty)$" },
+      "answer": "C"
+    },
+    {
+      "n": 7, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el conjunto solución de la desigualdad.\n\n$$\\left|\\frac{x-4}{x-\\sqrt{2}}\\right| < 0$$",
+      "options": { "A": "$x>4$", "B": "$x>\\sqrt{2}$", "C": "$\\left\\{\\sqrt{2},4\\right\\}$", "D": "$\\varnothing$" },
+      "answer": "D"
+    },
+    {
+      "n": 8, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el conjunto solución de la desigualdad.\n\n$$|x-1| < |2x+3|$$",
+      "options": { "A": "$(\\infty,-4)\\cup\\left(\\frac{2}{3},\\infty\\right)$", "B": "$(-\\infty,-4)\\cup\\left(-\\frac{2}{3},\\infty\\right)$", "C": "$\\left(\\infty,\\frac{2}{3}\\right)\\cup(4,\\infty)$", "D": "$\\left(\\infty,-\\frac{2}{3}\\right)\\cup(4,\\infty)$" },
+      "answer": "B"
+    },
+    {
+      "n": 9, "subtema": "Funciones, límites y continuidad",
+      "text": "Calcular el valor del límite.\n\n$$\\lim_{x\\to 3}\\frac{\\sqrt{3x}-3}{\\sqrt{2x-4}-\\sqrt{2}}$$",
+      "options": { "A": "$\\dfrac{1}{2}$", "B": "1", "C": "$\\sqrt{2}$", "D": "$\\dfrac{1}{\\sqrt{2}}$" },
+      "answer": "D"
+    },
+    {
+      "n": 10, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el valor del límite.\n\n$$\\lim_{x\\to 1}\\frac{\\sqrt{x}-\\sqrt[3]{x}}{x-1}$$",
+      "options": { "A": "$\\dfrac{1}{2}$", "B": "$\\dfrac{1}{3}$", "C": "$\\dfrac{1}{5}$", "D": "$\\dfrac{1}{6}$" },
+      "answer": "D"
+    },
+    {
+      "n": 11, "subtema": "Funciones, límites y continuidad",
+      "text": "Calcular el valor del límite.\n\n$$\\lim_{x\\to 0}\\frac{\\mathrm{sen}^{2}(3x)}{\\mathrm{sen}^{2}(5x)}$$",
+      "options": { "A": "$\\dfrac{3}{5}$", "B": "$\\dfrac{9}{5}$", "C": "$\\dfrac{3}{25}$", "D": "$\\dfrac{9}{25}$" },
+      "answer": "D"
+    },
+    {
+      "n": 12, "subtema": "Funciones, límites y continuidad",
+      "text": "Calcular el valor del límite.\n\n$$\\lim_{x\\to 0}\\frac{\\mathrm{sen}\\left(\\pi\\cos^{2}x\\right)}{x^{2}}$$",
+      "options": { "A": "0", "B": "1", "C": "$\\pi$", "D": "$2\\pi$" },
+      "answer": "C"
+    },
+    {
+      "n": 13, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el valor de $a$ para el cual, la función es continua en $x=-1$\n\n$$f(x) = \\begin{cases} ax+1, & x > -1 \\\\ -x^{2}+1, & x \\le -1 \\end{cases}$$",
+      "options": { "A": "0", "B": "1", "C": "2", "D": "4" },
+      "answer": "B"
+    },
+    {
+      "n": 14, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el valor del límite.\n\n$$\\lim_{x\\to\\infty}\\frac{\\left(2x^{2}+3x+1\\right)^{2}}{\\left(\\dfrac{4-x^{2}}{4}\\right)^{2}}$$",
+      "options": { "A": "64", "B": "32", "C": "$\\dfrac{1}{32}$", "D": "$\\dfrac{1}{64}$" },
+      "answer": "A"
+    },
+    {
+      "n": 15, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el valor de $k$ para el cual, la función es continua en $x=\\dfrac{\\pi}{2}$\n\n$$f(x) = \\begin{cases} \\left(\\dfrac{4}{7}\\right)^{\\frac{\\tan(4x)}{\\tan(7x)}}, & 0<x<\\dfrac{\\pi}{2} \\\\[2mm] k+\\dfrac{2}{5}, & x=\\dfrac{\\pi}{2} \\end{cases}$$",
+      "options": { "A": "$\\dfrac{3}{5}$", "B": "$\\dfrac{2}{5}$", "C": "$-\\dfrac{2}{5}$", "D": "$-\\dfrac{3}{5}$" },
+      "answer": "A"
+    },
+    {
+      "n": 16, "subtema": "Funciones, límites y continuidad",
+      "text": "Sea $\\lim\\limits_{x\\to c}f(x) = a^{4}-b^{4}$ y $\\lim\\limits_{x\\to c}g(x) = a^{2}-b^{2}$ donde $a\\ne b$, determinar el valor del límite.\n\n$$\\lim_{x\\to c}\\frac{f(x)}{g(x)}$$",
+      "options": { "A": "$a-b$", "B": "$a+b$", "C": "$a^{2}+b^{2}$", "D": "$a^{2}-b^{2}$" },
+      "answer": "C"
+    },
+    {
+      "n": 17, "subtema": "Funciones, límites y continuidad",
+      "text": "Calcular el valor del límite.\n\n$$\\lim_{x\\to\\infty}\\left(1+\\frac{1}{x}\\right)^{x}$$",
+      "options": { "A": "0", "B": "1", "C": "$e$", "D": "$2e$" },
+      "answer": "C"
+    },
+    {
+      "n": 18, "subtema": "Funciones, límites y continuidad",
+      "text": "Calcular el valor del límite.\n\n$$\\lim_{x\\to\\infty}\\left(\\frac{2x+1}{2x-1}\\right)^{3x}$$",
+      "options": { "A": "$e^{3}$", "B": "$e^{2}$", "C": "$e$", "D": "1" },
+      "answer": "A"
+    },
+    {
+      "n": 19, "subtema": "Funciones, límites y continuidad",
+      "text": "Determinar el valor que debe tener $a$ para que la función sea continua en $x=5$\n\n$$f(x) = \\begin{cases} \\dfrac{x^{2}-25}{5-x}, & x < 5 \\\\[2mm] a, & x \\ge 5 \\end{cases}$$",
+      "options": { "A": "$-5$", "B": "$-10$", "C": "10", "D": "5" },
+      "answer": "B"
+    },
+    {
+      "n": 20, "subtema": "Funciones, límites y continuidad",
+      "text": "Si la función definida por intervalos\n\n$$f(x) = \\begin{cases} 2x-3, & x \\le 3 \\\\ 3x+k, & x > 3 \\end{cases}$$\n\nes continua en $x=3$, entonces el valor de $k$ es:",
+      "options": { "A": "3", "B": "6", "C": "$-6$", "D": "$-3$" },
+      "answer": "C"
+    },
+    {
+      "n": 21, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Ordenar los pasos para obtener la derivada de una función $f(x)$\n\n1. Dividir entre el incremento $\\Delta x$\n2. Evaluar $f(x+\\Delta x)$\n3. Calcular $f(x+\\Delta x)-f(x)$\n4. Calcular el límite cuando $\\Delta x \\to 0$",
+      "options": { "A": "2,1,3,4", "B": "2,3,1,4", "C": "3,1,4,2", "D": "3,2,1,4" },
+      "answer": "B"
+    },
+    {
+      "n": 22, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Determinar el intervalo o los intervalos donde la función es decreciente.\n\n$$f(x) = x^{3}-6x^{2}+9x+5$$",
+      "options": { "A": "$(0,3)$", "B": "$(1,3)$", "C": "$(-\\infty,0)\\cup(3,\\infty)$", "D": "$(-\\infty,1)\\cup(3,\\infty)$" },
+      "answer": "B"
+    },
+    {
+      "n": 23, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "La función $f(x) = \\dfrac{\\ln(x)}{x}$ es creciente en el intervalo:",
+      "options": { "A": "$(1,e)$", "B": "$(0,e)$", "C": "$(2,e)$", "D": "$(e,3)$" },
+      "answer": "B"
+    },
+    {
+      "n": 24, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Determinar el conjunto donde la función es creciente.\n\n$$f(x) = x^{4}-\\frac{40}{3}x^{3}+18x^{2}$$",
+      "options": { "A": "$(-\\infty,0)\\cup(1,9)$", "B": "$(0,1)\\cup(9,\\infty)$", "C": "$(0,1)$", "D": "$(0,9)$" },
+      "answer": "B"
+    },
+    {
+      "n": 25, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "La función $f(x) = \\dfrac{1}{x^{2}-2x+2}$ es creciente en el intervalo:",
+      "options": { "A": "$(-\\infty,2)$", "B": "$(2,\\infty)$", "C": "$(1,\\infty)$", "D": "$(-\\infty,1)$" },
+      "answer": "D"
+    },
+    {
+      "n": 26, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Calcular $\\dfrac{dy}{dx}$ en la ecuación.\n\n$$x^{a}y^{b} = (x+y)^{a+b}$$",
+      "options": { "A": "$yx$", "B": "$-xy$", "C": "$\\dfrac{y}{x}$", "D": "$\\dfrac{x}{y}$" },
+      "answer": "C"
+    },
+    {
+      "n": 27, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Calcular la derivada de la función.\n\n$$f(x) = \\mathrm{arccot}\\left(x^{2}\\right)$$",
+      "options": { "A": "$\\dfrac{x}{1+x^{2}}$", "B": "$\\dfrac{2x}{1+x^{2}}$", "C": "$-\\dfrac{x}{1+x^{4}}$", "D": "$-\\dfrac{2x}{1+x^{4}}$" },
+      "answer": "D"
+    },
+    {
+      "n": 28, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Derivar la función.\n\n$$y = \\mathrm{arcsen}\\left(\\sqrt{2}\\,x\\right)$$",
+      "options": { "A": "$y'=\\dfrac{2}{1-2x^{2}}$", "B": "$y'=\\dfrac{\\sqrt{2}}{1-2x^{2}}$", "C": "$y'=\\dfrac{2}{\\sqrt{1-2x^{2}}}$", "D": "$y'=\\sqrt{\\dfrac{2}{1-2x^{2}}}$" },
+      "answer": "D"
+    },
+    {
+      "n": 29, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Calcular la segunda derivada de la función.\n\n$$f(x) = \\ln x + \\arctan x$$",
+      "options": { "A": "$\\dfrac{1}{x^{2}}+\\dfrac{2x}{\\left(1+x^{2}\\right)^{2}}$", "B": "$\\dfrac{1}{x^{2}}+\\dfrac{2x}{1+x^{2}}$", "C": "$-\\dfrac{1}{x^{2}}-\\dfrac{2x}{\\left(1+x^{2}\\right)^{2}}$", "D": "$-\\dfrac{1}{x^{2}}-\\dfrac{2x}{1+x^{2}}$" },
+      "answer": "C"
+    },
+    {
+      "n": 30, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Calcular la derivada de la función.\n\n$$f(x) = \\sqrt{\\tan(\\pi x + 2)}$$",
+      "options": { "A": "$\\dfrac{\\pi}{2}\\dfrac{\\tan^{2}(\\pi x+2)+1}{\\sqrt{\\tan(\\pi x+2)}}$", "B": "$\\dfrac{1}{2\\pi}\\dfrac{\\tan^{2}(\\pi x+2)+1}{\\sqrt{\\tan(\\pi x+2)}}$", "C": "$\\dfrac{\\pi}{2}\\dfrac{\\sec(\\pi x+2)}{\\sqrt{\\tan(\\pi x+2)}}$", "D": "$\\dfrac{1}{2\\pi}\\dfrac{\\sec(\\pi x+2)}{\\sqrt{\\tan(\\pi x+2)}}$" },
+      "answer": "A"
+    },
+    {
+      "n": 31, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Sabiendo que $2^{x} = \\tan t$ y $\\mathrm{sen}\\,2\\alpha = 2\\,\\mathrm{sen}\\,\\alpha\\cos\\alpha$, determinar $f'(-1)$ si la función es:\n\n$$f(x) = \\mathrm{sen}^{-1}\\left(\\frac{2\\cdot 2^{x}}{1+4^{x}}\\right)$$",
+      "options": { "A": "$2\\ln 2$", "B": "$3\\ln 2$", "C": "$\\dfrac{4}{5}\\ln 2$", "D": "$\\dfrac{4}{3}\\ln 2$" },
+      "answer": "C"
+    },
+    {
+      "n": 32, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Derivar la función.\n\n$$y = \\cos\\left(\\mathrm{sen}\\sqrt{x}\\right)$$",
+      "options": { "A": "$y'=-\\dfrac{\\mathrm{sen}\\left(\\mathrm{sen}\\sqrt{x}\\right)\\cos\\left(\\sqrt{x}\\right)}{\\sqrt{x}}$", "B": "$y'=\\dfrac{\\mathrm{sen}\\left(\\mathrm{sen}\\sqrt{x}\\right)\\cos\\left(\\sqrt{x}\\right)}{2\\sqrt{x}}$", "C": "$y'=-\\dfrac{\\mathrm{sen}\\left(\\mathrm{sen}\\sqrt{x}\\right)\\cos\\left(\\sqrt{x}\\right)}{2\\sqrt{x}}$", "D": "$y'=\\dfrac{\\mathrm{sen}\\left(\\mathrm{sen}\\sqrt{x}\\right)\\mathrm{sen}\\left(\\sqrt{x}\\right)}{\\sqrt{x}}$" },
+      "answer": "C"
+    },
+    {
+      "n": 33, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Derivar la función.\n\n$$y = \\cos\\left(\\sqrt{\\frac{x+1}{x+3}}\\right)$$",
+      "options": {
+        "A": "$\\dfrac{\\mathrm{sen}\\left(\\sqrt{\\frac{x+1}{x+3}}\\right)}{\\sqrt{(x+1)(x+3)^{3}}}$",
+        "B": "$-2\\dfrac{\\mathrm{sen}\\left(\\sqrt{\\frac{x+1}{x+3}}\\right)}{\\sqrt{(x+1)(x+3)^{3}}}$",
+        "C": "$-\\dfrac{\\mathrm{sen}\\left(\\sqrt{\\frac{x+1}{x+3}}\\right)}{\\sqrt{(x+1)(x+3)^{3}}}$",
+        "D": "$\\dfrac{\\mathrm{sen}\\left(\\sqrt{\\frac{x+1}{x+3}}\\right)}{2\\sqrt{(x+1)(x+3)^{3}}}$"
+      },
+      "answer": "C"
+    },
+    {
+      "n": 34, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Determinar el valor de la derivada $\\dfrac{d^{2}y}{dx^{2}}$ cuando $x=0$ en la ecuación.\n\n$$e^{y}+xy = e$$",
+      "options": { "A": "1", "B": "$e$", "C": "$\\dfrac{1}{e}$", "D": "$\\dfrac{1}{e^{2}}$" },
+      "answer": "D"
+    },
+    {
+      "n": 35, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Calcular la derivada de la función.\n\n$$f(x) = \\mathrm{arcsen}\\left(\\frac{1}{x}\\right)$$",
+      "options": { "A": "$\\dfrac{1}{x\\sqrt{x^{2}-1}}$", "B": "$\\dfrac{-1}{x\\sqrt{x^{2}-1}}$", "C": "$\\dfrac{1}{x^{2}\\sqrt{x^{2}-1}}$", "D": "$\\dfrac{-1}{x^{2}\\sqrt{x^{2}-1}}$" },
+      "answer": "B"
+    },
+    {
+      "n": 36, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "$S_{1}$ y $S_{2}$ son los conjuntos de valores de las abscisas donde se ubican los mínimos y máximos locales respectivamente de la función $f(x) = 9x^{4}+12x^{3}-36x^{2}+25$, entonces:",
+      "options": { "A": "$S_{1}=\\{-2\\};\\ S_{2}=\\{0,1\\}$", "B": "$S_{1}=\\{-1\\};\\ S_{2}=\\{0,2\\}$", "C": "$S_{1}=\\{-2,0\\};\\ S_{2}=\\{1\\}$", "D": "$S_{1}=\\{-2,1\\};\\ S_{2}=\\{0\\}$" },
+      "answer": "D"
+    },
+    {
+      "n": 37, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Sean $M$ y $N$ los valores del máximo y mínimo relativo respectivamente de la función.\n\n$$f(x) = 2x^{3}-9x^{2}+12x+5$$\n\nDeterminar el valor de $M-N$",
+      "options": { "A": "1", "B": "2", "C": "8", "D": "9" },
+      "answer": "A"
+    },
+    {
+      "n": 38, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Determinar el valor del máximo de la función.\n\n$$f(x) = -x^{4}+4x^{3}-10$$",
+      "options": { "A": "17", "B": "27", "C": "$-27$", "D": "$-17$" },
+      "answer": "A"
+    },
+    {
+      "n": 39, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Determinar el valor del máximo relativo de la función.\n\n$$y = \\frac{x^{4}}{4}-3x^{3}+10x^{2}$$",
+      "options": { "A": "4", "B": "5", "C": "31", "D": "32" },
+      "answer": "D"
+    },
+    {
+      "n": 40, "subtema": "Derivada de funciones algebraicas y trascendentes",
+      "text": "Calcular el valor máximo de la función.\n\n$$f(x) = \\frac{14}{7x^{2}+14x+14}$$",
+      "options": { "A": "2", "B": "3", "C": "4", "D": "7" },
+      "answer": "A"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "bloque": "Física",
+    "area": "IyCFM (Física para ICFM)",
+    "fuente": "Material de Apoyo al Aprendizaje 2026 — IPN, pp. 198-211 (PDF 106-112)",
+    "reactivos": 50,
+    "transcritos": "1-24 y 48-50 (los 25-47 quedan pendientes en PDF 109-111)",
+    "rc": "1b 2d 3c 4a 5a 6c 7a 8a 9d 10c 11a 12c 13b 14d 15d 16d 17d 18d 19c 20c 21a 22c 23b 24d 25c 26a 27d 28b 29d 30c 31c 32c 33d 34b 35c 36d 37c 38b 39b 40c 41a 42b 43a 44c 45b 46c 47c 48d 49a 50c",
+    "verificados": "8, 13, 20, 21, 50 recalculados a mano — la clave coincide"
+  },
+  "questions": [
+    {
+      "n": 1,
+      "text": "Ordenar las siguientes parejas de vectores posición y fuerza de menor a mayor de acuerdo a la magnitud del torque.\n\n1. $r_{z}=1\\,m$ y $F_{y}=6\\,N$\n2. $r_{z}=7\\,m$ y $F_{y}=0\\,N$\n3. $r_{z}=2\\,m$ y $F_{y}=4\\,N$\n4. $r_{z}=3\\,m$ y $F_{y}=5\\,N$",
+      "options": { "A": "3, 2, 4, 1", "B": "2, 1, 3, 4", "C": "3, 4, 2, 1", "D": "2, 3, 1, 4" },
+      "answer": "B"
+    },
+    { "n": 2, "text": "Es un ejemplo de la aplicación de la ecuación de Bernoulli cuando la presión no cambia.", "options": { "A": "Empuje", "B": "Efecto Venturi", "C": "Flujo turbulento", "D": "Teorema de Torricelli" }, "answer": "D" },
+    { "n": 3, "text": "Calcular la fuerza que ejerce el bloque A sobre el bloque B si el sistema se encuentra sobre una superficie horizontal sin fricción.", "figura": "bloque A de 6 kg empujado con F=45 N contra bloque B de 3 kg", "options": { "A": "5 N", "B": "10 N", "C": "15 N", "D": "20 N" }, "answer": "C" },
+    { "n": 4, "figura": "pecera de 100 L con profundidad 25 cm y jarra de 2 L con profundidad 30 cm", "answer": "A" },
+    { "n": 5, "text": "Una carga puntual genera un campo eléctrico de magnitud E a la distancia r. Si se mide la magnitud del campo eléctrico desde la distancia 3r, la nueva magnitud en términos de E es:", "options": { "A": "$E/9$", "B": "$E/3$", "C": "$3E$", "D": "$9E$" }, "answer": "A" },
+    { "n": 6, "text": "Dos vectores son iguales si su __________ y __________ son iguales; o de forma equivalente, si las __________ de dichos vectores son iguales.", "options": { "A": "dirección, sentido, componentes", "B": "magnitud, dirección, propiedades", "C": "magnitud, dirección, componentes", "D": "dirección, componentes, propiedades" }, "answer": "C" },
+    {
+      "n": 7,
+      "text": "Relacionar el concepto con su modelo matemático.\n\n| Concepto | Modelo matemático |\n|---|---|\n| 1. Magnitud del momento de una fuerza | A. $\\tau = rF\\,\\mathrm{sen}\\,\\theta$ |\n| 2. Primera condición de equilibrio | B. $\\sum \\vec{F} = \\vec{0}$ |\n| 3. Segunda condición de equilibrio | C. $\\sum \\vec{\\tau} = \\vec{0}$ |",
+      "options": { "A": "1A, 2B, 3C", "B": "1B, 2C, 3A", "C": "1A, 2C, 3B", "D": "1B, 2A, 3C" },
+      "answer": "A"
+    },
+    { "n": 8, "text": "Se deja caer una pelota desde una altura H. Si la pelota golpea el suelo con una velocidad de 20 m/s, ¿desde qué altura fue arrojada?", "options": { "A": "20.39 m", "B": "40.2 m", "C": "50.3 m", "D": "81.54 m" }, "answer": "A" },
+    { "n": 9, "text": "El peso en un objeto sobre la superficie de la Tierra es W. Si el objeto se aleja a una distancia igual al doble del radio del planeta, ¿qué le sucede a su peso?", "options": { "A": "No cambia", "B": "Disminuye a la mitad", "C": "Aumenta tres veces", "D": "Disminuye a una cuarta parte" }, "answer": "D" },
+    {
+      "n": 10,
+      "text": "Relacionar el concepto con su definición.\n\n| Concepto | Definición |\n|---|---|\n| 1. Masa | A. Cambio en la velocidad con respecto al tiempo. |\n| 2. Fuerza | B. Desplazamiento de un objeto en un intervalo de tiempo. |\n| 3. Velocidad | C. Agente de naturaleza vectorial que cuantifica la interacción entre dos cuerpos. |\n| 4. Aceleración | D. Cantidad física de naturaleza escalar que se define como la medida de la inercia de un objeto. |",
+      "options": { "A": "1D, 2B, 3C, 4A", "B": "1C, 2D, 3A, 4B", "C": "1D, 2C, 3B, 4A", "D": "1C, 2A, 3D, 4B" },
+      "answer": "C"
+    },
+    { "n": 11, "text": "Tres vectores $\\vec{r}$, $\\vec{s}$, $\\vec{v}$ tienen magnitudes 3, 4 y 5, respectivamente, además $\\vec{r}+\\vec{s}+\\vec{v}=0$; entonces $\\left|\\vec{r}\\cdot\\vec{s}+\\vec{s}\\cdot\\vec{v}+\\vec{v}\\cdot\\vec{r}\\right|$ es igual a:", "options": { "A": "25", "B": "35", "C": "47", "D": "50" }, "answer": "A" },
+    {
+      "n": 12,
+      "text": "Relacionar la función de la posición de una partícula con la función de su velocidad.\n\n| Posición $x(t)$ | Velocidad $v(t)$ |\n|---|---|\n| 1. $\\frac{1}{3}\\left(x^{3}+3\\right)$ | A. $x$ |\n| 2. $\\frac{1}{2}\\left(x^{2}+1\\right)$ | B. 1 |\n| 3. $\\frac{1}{3}\\cos 3x$ | C. $x^{2}$ |\n| 4. $\\frac{1}{2}(1+2x)$ | D. $-\\mathrm{sen}\\,3x$ |",
+      "options": { "A": "1D, 2C, 3A, 4B", "B": "1C, 2B, 3D, 4A", "C": "1C, 2A, 3D, 4B", "D": "1D, 2B, 3C, 4A" },
+      "answer": "C"
+    },
+    { "n": 13, "text": "Un esquiador con un peso de 784 N (m = 80 kg) desciende por una ladera desde una altura de 9 m. ¿Cuál es la velocidad que alcanza al terminar la pendiente en la base de la montaña?", "options": { "A": "534.1 m/s", "B": "13.28 m/s", "C": "53.41 m/s", "D": "132.8 m/s" }, "answer": "B" },
+    { "n": 14, "text": "Calcular el gasto de un líquido que llena un recipiente de 540 $\\ell$ en 3 minutos.", "options": { "A": "$30\\ m^{3}/s$", "B": "$300\\ m^{3}/s$", "C": "$0.03\\ m^{3}/s$", "D": "$0.003\\ m^{3}/s$" }, "answer": "D" },
+    { "n": 15, "text": "El circuito mostrado en la figura se conecta a una fuente de CD de 21 V, ¿cuál es la caída de tensión en los resistores $R_{1}$, $R_{2}$, $R_{3}$, respectivamente?", "figura": "$R_1 = 3/4\\,\\Omega$ en paralelo con $R_2 = 1\\,\\Omega$, en serie con $R_3 = 4/7\\,\\Omega$", "options": { "A": "$3V, 6V, 9V$", "B": "$3V, 3V, 9V$", "C": "$6V, 9V, 12V$", "D": "$9V, 9V, 12V$" }, "answer": "D" },
+    { "n": 16, "text": "Una persona mueve una caja de 20 kg una distancia de 3 m aplicando una fuerza de 20 N dirigida en un ángulo de 60° debajo de la horizontal. ¿Cuál es el trabajo efectuado por dicha fuerza y cuál es el trabajo efectuado por la fuerza gravitacional, respectivamente?", "options": { "A": "10 J, 300 J", "B": "30 J, 300 J", "C": "10 J, 0 J", "D": "30 J, 0 J" }, "answer": "D" },
+    { "n": 17, "text": "Son las unidades de la corriente eléctrica.", "options": { "A": "Voltio metro", "B": "Watt segundo", "C": "Coulomb segundo", "D": "Coulomb / segundo" }, "answer": "D" },
+    { "n": 18, "text": "¿Cuáles son las unidades de las constantes $A$ y $\\omega_{0}$ en la expresión $v(t) = \\omega_{0}A\\cos\\left(\\omega_{0}t\\right)$ si $v(t)$ se mide en $cm/s$?", "options": { "A": "$cm/s^{2}$, $1/s$", "B": "$cm/s^{2}$, $cm$", "C": "$cm$, $cm$", "D": "$cm$, $1/s$" }, "answer": "D" },
+    { "n": 19, "text": "Identificar el ángulo entre el vector $\\vec{S} = 4\\hat{i}-3\\hat{j}$ y el vector $\\vec{L} = 3\\hat{i}+4\\hat{j}$", "options": { "A": "0°", "B": "45°", "C": "90°", "D": "180°" }, "answer": "C" },
+    { "n": 20, "text": "Determinar el tiempo total del viaje si un automóvil recorre una distancia de 200 km y desarrolla en los primeros 140 km una velocidad media de 70 km/h, en tanto que en los últimos 60 km tiene una velocidad media de 60 km/h.", "options": { "A": "1.5 h", "B": "2.0 h", "C": "3.0 h", "D": "3.5 h" }, "answer": "C" },
+    { "n": 21, "text": "Se suelta una piedra desde una altura de 4 m. ¿Cuánto tiempo tarda en caer al suelo?", "options": { "A": "0.9 s", "B": "1.5 s", "C": "2.9 s", "D": "3.5 s" }, "answer": "A" },
+    { "n": 22, "text": "La velocidad de un auto de carreras en el plano XY está dada por la expresión $v(t) = 3t\\hat{i}-\\dfrac{4}{t}\\hat{j}$, por lo tanto, las componentes de su aceleración son $a_{x} = \\underline{\\phantom{000}}\\ m/s^{2}$ y $a_{y} = \\underline{\\phantom{000}}\\ m/s^{2}$.", "options": { "A": "$\\dfrac{3}{2}t^{2}$ y $-4t$", "B": "$3$ y $-\\dfrac{1}{t^{2}}$", "C": "$3$ y $\\dfrac{4}{t^{2}}$", "D": "$\\dfrac{3}{2}t^{2}$ y $4$" }, "answer": "C" },
+    {
+      "n": 23,
+      "text": "Relacionar el principio con su descripción.\n\n| Principio | Descripción |\n|---|---|\n| 1. Pascal | A. Flujo horizontal en el que los puntos de mayor velocidad del fluido tienen menor presión que los de menor velocidad. |\n| 2. Bernoulli | B. Todo cuerpo sumergido en el fluido experimenta un empuje hacia arriba igual al peso del fluido desplazado. |\n| 3. Arquímedes | C. Cuando se ejerce presión sobre un fluido, dicha presión se transmite con igual intensidad a todos los puntos del fluido y a las paredes del recipiente. |",
+      "options": { "A": "1B, 2A, 3C", "B": "1C, 2A, 3B", "C": "1B, 2C, 3A", "D": "1C, 2B, 3A" },
+      "answer": "B"
+    },
+    { "n": 24, "text": "La figura muestra un sistema con tres vectores. Si $\\vec{B}=3j$ y $\\vec{C}=12i+9j$, determinar la magnitud que debe tener el vector $\\vec{A}$ para que la resultante sea horizontal.", "figura": "tres vectores concurrentes; A hacia abajo-izquierda a 60° del eje vertical, B vertical, C hacia arriba-derecha", "options": { "A": "12", "B": "16", "C": "18", "D": "24" }, "answer": "D" },
+    {
+      "n": 48,
+      "text": "Relacionar el concepto con su definición.\n\n| Concepto | Definición |\n|---|---|\n| 1. Tono | A. Cualidad de un sonido que permite distinguir entre sonidos agudos o graves. |\n| 2. Timbre | B. Medida del número de veces que se repite un fenómeno por unidad de tiempo (ciclos por segundo). |\n| 3. Frecuencia | C. Potencia acústica transferida por una onda sonora por unidad de área normal a la dirección de propagación. |\n| 4. Intensidad | D. Cualidad por la que pueden distinguirse dos sonidos de igual frecuencia e intensidad emitidos por dos focos sonoros diferentes. |",
+      "options": { "A": "1C, 2D, 3B, 4A", "B": "1A, 2C, 3D, 4B", "C": "1C, 2B, 3D, 4A", "D": "1A, 2D, 3B, 4C" },
+      "answer": "D"
+    },
+    { "n": 49, "figura": "cuatro ilustraciones de manos con la regla de la mano derecha (v, B, F)", "answer": "A" },
+    { "n": 50, "text": "Se coloca objeto de 2 cm a una distancia de 12 cm de una lente convergente con una distancia focal de 8 cm. ¿A qué distancia de la lente se forma la imagen?", "options": { "A": "4 cm", "B": "16 cm", "C": "24 cm", "D": "64 cm" }, "answer": "C" }
+  ]
+}

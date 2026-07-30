@@ -1,0 +1,242 @@
+{
+  "_meta": {
+    "bloque": "Álgebra",
+    "area": "Conocimientos generales (las 3 áreas)",
+    "fuente": "Material de Apoyo al Aprendizaje 2026 — IPN, pp. 26-33 (PDF 24-27)",
+    "reactivos": 40,
+    "rc": "1a 2c 3d 4a 5a 6b 7d 8b 9d 10b 11d 12b 13b 14b 15b 16d 17a 18a 19b 20a 21d 22d 23c 24b 25d 26a 27a 28c 29c 30d 31b 32b 33d 34b 35d 36b 37c 38a 39d 40d",
+    "subtemas": "Números reales (1-7) · Expresiones algebraicas (8-25) · Funciones y ecuaciones lineales (26-35) · Funciones y ecuaciones cuadráticas (36-40)"
+  },
+  "questions": [
+    {
+      "n": 1, "subtema": "Números reales",
+      "text": "Relacionar la propiedad de los números reales con la expresión que le corresponde.\n\n| Propiedad | Expresión |\n|---|---|\n| 1. Asociativa | A. $a\\cdot(b+c) = a\\cdot b + a\\cdot c$ |\n| 2. Conmutativa | B. $a\\cdot\\left(a^{-1}\\right) = 1$ |\n| 3. Distributiva | C. $(a\\cdot b)\\cdot c = a\\cdot(b\\cdot c)$ |\n| 4. Elemento inverso | D. $a\\cdot b = b\\cdot a$ |",
+      "options": { "A": "1C, 2D, 3A, 4B", "B": "1C, 2D, 3B, 4A", "C": "1D, 2C, 3A, 4B", "D": "1D, 2C, 3B, 4A" },
+      "answer": "A"
+    },
+    {
+      "n": 2, "subtema": "Números reales",
+      "text": "Identificar cuáles de los siguientes enunciados son verdaderos:\n\n1. Si $a > b$ y $b > c$ entonces $c > a$.\n2. Si $a > b$ entonces $a + c > b + c$.\n3. Si $a > 0$ y $b > 0$, entonces $ab > 0$.\n4. Si $a < b$ y $c > 0$ entonces $a\\cdot c > b\\cdot c$.",
+      "options": { "A": "1, 2", "B": "1, 4", "C": "2, 3", "D": "3, 4" },
+      "answer": "C"
+    },
+    {
+      "n": 3, "subtema": "Números reales",
+      "text": "Calcular el valor de la suma:\n\n$$\\begin{array}{r} abc \\\\ bca \\\\ + \\; cab \\\\ \\hline \\end{array}$$\n\nSabiendo que la suma de los dígitos $a$, $b$, $c$ satisface la condición $(a+b+c)^{2} = 441$.",
+      "options": { "A": "2221", "B": "2231", "C": "2321", "D": "2331" },
+      "answer": "D"
+    },
+    {
+      "n": 4, "subtema": "Números reales",
+      "text": "Simplificar la expresión:\n\n$$w = 5 - 3\\times 2\\left(1 + 8\\div 4 + 3\\times 4\\right)$$",
+      "options": { "A": "$-85$", "B": "$-84$", "C": "$-60$", "D": "$-57$" },
+      "answer": "A"
+    },
+    {
+      "n": 5, "subtema": "Números reales",
+      "text": "En una florería se tienen 200 flores, que incluyen rosas y tulipanes. Actualmente, la razón de rosas a tulipanes es de 3 a 2. ¿Cuántos tulipanes se deben agregar para que la razón cambie a 2 rosas por cada 3 tulipanes?",
+      "options": { "A": "100", "B": "120", "C": "180", "D": "240" },
+      "answer": "A"
+    },
+    {
+      "n": 6, "subtema": "Números reales",
+      "text": "Si las magnitudes $M$ y $N$ son inversamente proporcionales, ¿cuál es el valor de $a + b + c$?\n\n| $M$ | 50 | 36 | $b$ | 200 |\n|---|---|---|---|---|\n| $N$ | 36 | $a$ | 20 | $c$ |",
+      "options": { "A": "65", "B": "149", "C": "229", "D": "245" },
+      "answer": "B"
+    },
+    {
+      "n": 7, "subtema": "Números reales",
+      "text": "Dos magnitudes son directamente proporcionales cuando, al __________ una de ellas por un número, la otra queda multiplicada por el mismo número.",
+      "options": { "A": "restar", "B": "sumar", "C": "dividir", "D": "multiplicar" },
+      "answer": "D"
+    },
+    {
+      "n": 8, "subtema": "Expresiones algebraicas",
+      "text": "Relacionar los enunciados con la expresión que le corresponde.\n\n| Enunciado | Expresión |\n|---|---|\n| 1. El doble del cubo de un número. | A. $(3n)^{2}$ |\n| 2. El cubo del doble de un número. | B. $2n^{3}$ |\n| 3. El triple del cuadrado de un número. | C. $(2n)^{3}$ |\n| 4. El cuadrado del triple de un número. | D. $3n^{2}$ |",
+      "options": { "A": "1B, 2C, 3A, 4D", "B": "1B, 2C, 3D, 4A", "C": "1C, 2B, 3A, 4D", "D": "1C, 2B, 3D, 4A" },
+      "answer": "B"
+    },
+    {
+      "n": 9, "subtema": "Expresiones algebraicas",
+      "text": "Transformar al lenguaje matemático el enunciado: El producto de tres números pares consecutivos.",
+      "options": { "A": "$(x)(x+1)(x+2)$", "B": "$(x)(x+2)(x+4)$", "C": "$(2x)(2x+1)(2x+2)$", "D": "$(2x)(2x+2)(2x+4)$" },
+      "answer": "D"
+    },
+    {
+      "n": 10, "subtema": "Expresiones algebraicas",
+      "text": "¿Cuántas fracciones propias positivas, que son menores que $\\dfrac{11}{13}$ y cuyos términos son números enteros consecutivos, existen?",
+      "options": { "A": "4", "B": "5", "C": "6", "D": "7" },
+      "answer": "B"
+    },
+    {
+      "n": 11, "subtema": "Expresiones algebraicas",
+      "text": "Realizar la siguiente suma de fracciones.\n\n$$R = \\frac{2x^{2}}{x+2} + \\frac{2x^{2}}{x-2} - \\frac{8}{x+2} - \\frac{8}{x-2}$$",
+      "options": { "A": "$4x$", "B": "$-4x$", "C": "$x+4$", "D": "$x-4$" },
+      "answer": "D"
+    },
+    {
+      "n": 12, "subtema": "Expresiones algebraicas",
+      "text": "Efectuar la siguiente operación:\n\n$$D = \\cfrac{1}{1+\\cfrac{1}{1+\\cfrac{1}{x+1}}}$$",
+      "options": { "A": "$\\dfrac{2x+3}{x+2}$", "B": "$\\dfrac{x+2}{2x+3}$", "C": "$\\dfrac{2x+1}{x+3}$", "D": "$\\dfrac{x+3}{2x+1}$" },
+      "answer": "B"
+    },
+    {
+      "n": 13, "subtema": "Expresiones algebraicas",
+      "text": "Realizar la división de fracciones.\n\n$$N = \\frac{\\sqrt{x}+2}{x+4} \\div \\frac{x-4}{\\sqrt{x}-2}$$",
+      "options": { "A": "$\\dfrac{1}{x-4}$", "B": "$\\dfrac{1}{x+4}$", "C": "$x-4$", "D": "$x+4$" },
+      "answer": "B"
+    },
+    {
+      "n": 14, "subtema": "Expresiones algebraicas",
+      "text": "Reducir la expresión:\n\n$$S = \\sqrt[k]{\\frac{b}{\\sqrt[\\beta]{b}}}$$\n\nSabiendo que se cumple la condición:\n\n$$\\beta k - \\beta + 1 = 0$$",
+      "options": { "A": "$b^{0}$", "B": "$b^{1}$", "C": "$b^{2}$", "D": "$b^{3}$" },
+      "answer": "B"
+    },
+    { "n": 15, "subtema": "Expresiones algebraicas", "figura": "foto de cancha de baloncesto con lados $2\\sqrt{9\\sqrt{20}}$ m y $11\\sqrt{2\\sqrt{125}}$ m", "answer": "B" },
+    {
+      "n": 16, "subtema": "Expresiones algebraicas",
+      "text": "Relacionar cada una de las leyes de exponentes con su expresión correspondiente.\n\n| Leyes de exponentes | Expresión |\n|---|---|\n| 1. $a^{m}\\cdot a^{n}$ | A. $\\sqrt[n]{a^{m}}$ |\n| 2. $\\dfrac{a^{m}}{a^{n}}$ | B. $a^{m+n}$ |\n| 3. $\\left(a^{m}\\right)^{n}$ | C. $a^{mn}$ |\n| 4. $a^{\\frac{m}{n}}$ | D. $a^{m-n}$ |",
+      "options": { "A": "1A, 2C, 3D, 4B", "B": "1B, 2C, 3D, 4A", "C": "1A, 2D, 3C, 4B", "D": "1B, 2D, 3C, 4A" },
+      "answer": "D"
+    },
+    {
+      "n": 17, "subtema": "Expresiones algebraicas",
+      "text": "Calcular el valor de la siguiente expresión:\n\n$$M = \\frac{3^{n+1}+3^{n+2}}{3^{n+3}}$$",
+      "options": { "A": "$\\dfrac{4}{9}$", "B": "$\\dfrac{3}{4}$", "C": "$\\dfrac{4}{3}$", "D": "$\\dfrac{9}{4}$" },
+      "answer": "A"
+    },
+    {
+      "n": 18, "subtema": "Expresiones algebraicas",
+      "text": "Completar los signos matemáticos de tal manera que se cumpla la identidad:\n\n$$(x+y)\\left(x \\;\\underline{\\phantom{00}}\\; y\\right) = x^{2} \\;\\underline{\\phantom{00}}\\; y^{2}$$",
+      "options": { "A": "$-,-$", "B": "$-,+$", "C": "$+,-$", "D": "$+,+$" },
+      "answer": "A"
+    },
+    {
+      "n": 19, "subtema": "Expresiones algebraicas",
+      "text": "Simplificar la expresión algebraica:\n\n$$R = \\frac{\\left(\\sqrt{x+1}+\\sqrt{x-1}\\right)^{2}}{x+\\sqrt{x^{2}-1}}$$",
+      "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+      "answer": "B"
+    },
+    {
+      "n": 20, "subtema": "Expresiones algebraicas",
+      "text": "Simplificar la expresión:\n\n$$L = \\frac{(2xy-1)^{2}+(2xy+1)^{2}-2}{(xy-2)^{2}+(xy+2)^{2}}$$",
+      "options": { "A": "$\\dfrac{4x^{2}y^{2}}{x^{2}y^{2}+4}$", "B": "$\\dfrac{2x^{2}y^{2}}{x^{2}y^{2}+4}$", "C": "$\\dfrac{4x^{2}y^{2}}{x^{2}y^{2}+2}$", "D": "$\\dfrac{2x^{2}y^{2}}{x^{2}y^{2}+2}$" },
+      "answer": "A"
+    },
+    {
+      "n": 21, "subtema": "Expresiones algebraicas",
+      "text": "Identificar cuáles de las siguientes expresiones son verdaderas:\n\n1. $\\left(a^{2}+b^{2}\\right)^{2} = a^{4}+a^{2}b^{2}+b^{4}$\n2. $\\left(x^{4}+2a\\right)\\left(x^{4}-3a\\right) = x^{8}-ax^{4}-6a^{2}$\n3. $(a+2)^{3}-(a-2)^{3} = a^{3}-8$\n4. $(a+b+1)(a+b-1) = a^{2}+2ab+b^{2}-1$",
+      "options": { "A": "1, 3", "B": "1, 4", "C": "2, 3", "D": "2, 4" },
+      "answer": "D"
+    },
+    {
+      "n": 22, "subtema": "Expresiones algebraicas",
+      "text": "Simplificar la expresión:\n\n$$\\frac{2wy-xy+4w-2x}{2wz-xz-4w+2x}$$",
+      "options": { "A": "$\\dfrac{1}{z+2}$", "B": "$\\dfrac{1}{z-2}$", "C": "$\\dfrac{y+2}{z+2}$", "D": "$\\dfrac{y+2}{z-2}$" },
+      "answer": "D"
+    },
+    {
+      "n": 23, "subtema": "Expresiones algebraicas",
+      "text": "Encontrar el paso incorrecto realizado en el proceso de factorización del polinomio:\n\n$$a^{2}x^{2}+b^{2}x^{2}-a^{2}-b^{2}$$\n\n1) Reordenando términos: $a^{2}x^{2}-a^{2}+b^{2}x^{2}-b^{2}$\n2) Agrupando términos comunes: $a^{2}\\left(x^{2}-1\\right)+b^{2}\\left(x^{2}-1\\right)$\n3) Factorizando: $\\left(x^{2}-1\\right)\\left(a^{2}-b^{2}\\right)$\n4) Factorizando las diferencias de cuadrados: $(x+1)(x-1)(a+b)(a-b)$",
+      "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+      "answer": "C"
+    },
+    {
+      "n": 24, "subtema": "Expresiones algebraicas",
+      "text": "Identificar un factor del polinomio:\n\n$$P = a^{2}-b^{2}-a+b$$",
+      "options": { "A": "$a+b$", "B": "$a-b$", "C": "$a+b+1$", "D": "$a-b+1$" },
+      "answer": "B"
+    },
+    {
+      "n": 25, "subtema": "Expresiones algebraicas",
+      "text": "Determinar el valor de $\\sqrt{x^{3}+y^{3}+7}$ si $x+y=3$ y $xy=2$.",
+      "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+      "answer": "D"
+    },
+    { "n": 26, "subtema": "Funciones y ecuaciones lineales", "figura": "cuatro curvas en el plano: a parábola vertical, b circunferencia, c parábola horizontal, d elipse", "answer": "A" },
+    { "n": 27, "subtema": "Funciones y ecuaciones lineales", "figura": "diagrama sagital G→H: 1↦−7, 3↦5", "answer": "A" },
+    {
+      "n": 28, "subtema": "Funciones y ecuaciones lineales",
+      "text": "Completar los espacios en la ecuación de tal manera que $x=10$ sea una solución.\n\n$$2x - 6 + \\underline{\\phantom{00000}} + \\underline{\\phantom{00000}} = 24$$",
+      "options": { "A": "$3x-1,\\, 2x-1$", "B": "$3x+1,\\, 2x-1$", "C": "$3x-1,\\, -2x+1$", "D": "$3x+1,\\, -2x+1$" },
+      "answer": "C"
+    },
+    {
+      "n": 29, "subtema": "Funciones y ecuaciones lineales",
+      "text": "Identificar el paso donde existe un error en la solución de la ecuación:\n\n$$2x^{2}+7x-21 = x^{2}+10x-3$$\n\n1. $2x^{2}+7x+3 = x^{2}+10x+21$\n2. $(2x+1)(x+3) = (x+7)(x+3)$\n3. $2x+1 = x+7$\n4. $x = 6$",
+      "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+      "answer": "C"
+    },
+    {
+      "n": 30, "subtema": "Funciones y ecuaciones lineales",
+      "text": "En un concurso de tiros libres, un participante gana tres puntos por cada canasta acertada y pierde medio punto por cada falla. Si al hacer 80 lanzamientos obtuvo 79 puntos, ¿cuál es el número de canastas acertadas?",
+      "options": { "A": "31", "B": "32", "C": "33", "D": "34" },
+      "answer": "D"
+    },
+    {
+      "n": 31, "subtema": "Funciones y ecuaciones lineales",
+      "text": "Determinar el valor de $z$ en la ecuación:\n\n$$\\frac{z-a}{bc} - \\frac{z-b}{ac} = \\frac{z-c}{ab}$$",
+      "options": { "A": "$\\dfrac{a^{2}+b^{2}-c^{2}}{a+b-c}$", "B": "$\\dfrac{a^{2}-b^{2}-c^{2}}{a-b-c}$", "C": "$\\dfrac{a^{2}-b^{2}+c^{2}}{a-b+c}$", "D": "$\\dfrac{a^{2}+b^{2}+c^{2}}{a+b+c}$" },
+      "answer": "B"
+    },
+    {
+      "n": 32, "subtema": "Funciones y ecuaciones lineales",
+      "text": "El costo total de un monitor, un teclado y una impresora es de \\$5250. Si el monitor cuesta el cuádruple del precio del teclado, y la impresora tiene un costo \\$1200 más que el monitor. ¿Cuál es el precio de la impresora?",
+      "options": { "A": "\\$2950", "B": "\\$3000", "C": "\\$3050", "D": "\\$3100" },
+      "answer": "B"
+    },
+    {
+      "n": 33, "subtema": "Funciones y ecuaciones lineales",
+      "text": "La suma de dos números es 30. Si al número mayor se le agregan 6 unidades, se tiene el triple del número menor. Hallar el producto de dichos números.",
+      "options": { "A": "64", "B": "154", "C": "180", "D": "189" },
+      "answer": "D"
+    },
+    {
+      "n": 34, "subtema": "Funciones y ecuaciones lineales",
+      "text": "Resolver el sistema de ecuaciones:\n\n$$4x - 2y = 38$$\n$$3y - x = -22$$",
+      "options": { "A": "$x=7,\\, y=5$", "B": "$x=7,\\, y=-5$", "C": "$x=-5,\\, y=7$", "D": "$x=-5,\\, y=-7$" },
+      "answer": "B"
+    },
+    {
+      "n": 35, "subtema": "Funciones y ecuaciones lineales",
+      "text": "Identificar el sistema de ecuaciones que corresponde a la situación planteada.\n\nAngélica y Paulina pueden armar un rompecabezas en 4 días, Angélica y Rubí lo pueden hacer en 6 días, y Paulina con Rubí lo pueden hacer en 5 días. ¿En cuánto tiempo puede Rubí armar un rompecabezas?",
+      "options": {
+        "A": "$\\frac{1}{A}+\\frac{1}{P}=16$; $\\frac{1}{A}+\\frac{1}{R}=36$; $\\frac{1}{P}+\\frac{1}{R}=25$",
+        "B": "$\\frac{1}{A}+\\frac{1}{P}=\\frac{1}{16}$; $\\frac{1}{A}+\\frac{1}{R}=\\frac{1}{36}$; $\\frac{1}{P}+\\frac{1}{R}=\\frac{1}{25}$",
+        "C": "$\\frac{1}{A}+\\frac{1}{P}=4$; $\\frac{1}{A}+\\frac{1}{R}=6$; $\\frac{1}{P}+\\frac{1}{R}=5$",
+        "D": "$\\frac{1}{A}+\\frac{1}{P}=\\frac{1}{4}$; $\\frac{1}{A}+\\frac{1}{R}=\\frac{1}{6}$; $\\frac{1}{P}+\\frac{1}{R}=\\frac{1}{5}$"
+      },
+      "answer": "D"
+    },
+    {
+      "n": 36, "subtema": "Funciones y ecuaciones cuadráticas",
+      "text": "Determinar el vértice de la función cuadrática:\n\n$$y = \\frac{1}{8}x^{2} + \\frac{1}{4}x + \\frac{17}{8}$$",
+      "options": { "A": "$(1,2)$", "B": "$(-1,2)$", "C": "$(1,-2)$", "D": "$(-1,-2)$" },
+      "answer": "B"
+    },
+    {
+      "n": 37, "subtema": "Funciones y ecuaciones cuadráticas",
+      "text": "Determinar el área máxima de un rectángulo que se puede inscribir dentro de la región limitada por la ecuación $y = -\\dfrac{1}{2}x + 6$ y los ejes coordenados.",
+      "options": { "A": "6", "B": "12", "C": "18", "D": "24" },
+      "answer": "C"
+    },
+    {
+      "n": 38, "subtema": "Funciones y ecuaciones cuadráticas",
+      "text": "Calcular la suma de tres números enteros positivos consecutivos, donde el cuadrado del menor de ellos es igual al mayor.",
+      "options": { "A": "9", "B": "18", "C": "33", "D": "36" },
+      "answer": "A"
+    },
+    {
+      "n": 39, "subtema": "Funciones y ecuaciones cuadráticas",
+      "text": "La ecuación de segundo grado $ax^{2}+bx+c=0$ tiene __________ si $b^{2}-4ac > 0$.",
+      "options": { "A": "una solución real única", "B": "una solución real repetida", "C": "más de dos soluciones reales", "D": "dos soluciones reales diferentes" },
+      "answer": "D"
+    },
+    {
+      "n": 40, "subtema": "Funciones y ecuaciones cuadráticas",
+      "text": "Calcular el producto de las raíces de la ecuación:\n\n$$\\frac{x}{x-2} + \\frac{x+2}{x} = 1$$",
+      "options": { "A": "4", "B": "2", "C": "$-2$", "D": "$-4$" },
+      "answer": "D"
+    }
+  ]
+}

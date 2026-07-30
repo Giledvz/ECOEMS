@@ -1,0 +1,102 @@
+{
+  "_meta": {
+    "bloque": "Probabilidad y estadística",
+    "area": "Conocimientos generales (las 3 áreas)",
+    "fuente": "Material de Apoyo al Aprendizaje 2026 — IPN, pp. 82-93 (PDF 52-57)",
+    "reactivos": 40,
+    "transcritos": "26-40 (los 1-25 quedan pendientes en PDF 53-55)",
+    "rc": "1a 2c 3c 4d 5b 6d 7b 8d 9d 10d 11d 12c 13c 14d 15b 16c 17a 18b 19a 20a 21a 22b 23b 24a 25b 26d 27c 28d 29d 30c 31d 32b 33d 34b 35c 36b 37b 38c 39c 40c",
+    "subtemas": "Probabilidad (1-28) · Estadística descriptiva (29-40)"
+  },
+  "questions": [
+    {
+      "n": 26, "subtema": "Probabilidad",
+      "text": "Los artículos que produce una fábrica provienen de tres máquinas $A$, $B$ y $C$. La máquina A produce 15% de los artículos, la máquina B 35% y la máquina C 50%. De acuerdo con datos históricos sabemos que 5%, 10% y 8%, respectivamente, de los artículos producidos por las máquinas es defectuoso. Calcular la probabilidad de que un artículo elegido al azar sea defectuoso.",
+      "options": { "A": "6.25%", "B": "6.75%", "C": "7.75%", "D": "8.25%" },
+      "answer": "D"
+    },
+    {
+      "n": 27, "subtema": "Probabilidad",
+      "text": "Una empresa envasa jugos de naranja, piña y manzana en botellas de 1 litro y 2 litros. Se sabe que el 60% de las botellas son de naranja y el 30% de piña. Además, el 80% de las botellas de naranja y el 70% de piña son de 2 litros, mientras que el 60% de las botellas de manzana son botellas de 1 litro. Calcular la probabilidad que de una botella de dos litros elegida al azar sea de jugo de naranja.",
+      "options": { "A": "$\\dfrac{1}{25}$", "B": "$\\dfrac{21}{73}$", "C": "$\\dfrac{48}{73}$", "D": "$\\dfrac{73}{100}$" },
+      "answer": "C"
+    },
+    {
+      "n": 28, "subtema": "Probabilidad",
+      "text": "Los artículos que produce una fábrica provienen de tres máquinas $A$, $B$ y $C$. La máquina A produce 15% de los artículos, la máquina B 35% y la máquina C 50%. De acuerdo con datos históricos sabemos que 5%, 10% y 8%, respectivamente, de los artículos producidos por las máquinas es defectuoso. Calcular la probabilidad de que un artículo defectuoso elegido al azar provenga de la máquina A.",
+      "options": { "A": "$\\dfrac{7}{200}$", "B": "$\\dfrac{1}{25}$", "C": "$\\dfrac{2}{11}$", "D": "$\\dfrac{1}{11}$" },
+      "answer": "D"
+    },
+    {
+      "n": 29, "subtema": "Estadística descriptiva",
+      "text": "100 observaciones agrupadas en clases de ancho 10 tienen mediana 25. Si el intervalo de la clase donde se ubica la mediana es $[20-30)$ y el número de observaciones menores a 20 es 45, determinar la frecuencia de la clase mediana.",
+      "options": { "A": "30", "B": "20", "C": "15", "D": "10" },
+      "answer": "D"
+    },
+    {
+      "n": 30, "subtema": "Estadística descriptiva",
+      "contexto": "Un dado se lanza 100 veces y se anotan los resultados en la siguiente tabla de frecuencias.\n\n| $x_i$ | $f_i$ | $x_i\\cdot f_i$ | $f_i\\cdot x_i^2$ |\n|---|---|---|---|\n| 1 | 12 | 12 | 12 |\n| 2 | 20 | 40 | 80 |\n| 3 | 10 | 30 | 90 |\n| 4 | 15 | 60 | 240 |\n| 5 | 20 | 100 | 500 |\n| 6 | 23 | 138 | 828 |\n| | 100 | 380 | 1750 |",
+      "text": "Calcular la media y la desviación.",
+      "options": { "A": "3.18 y 1.72", "B": "3.18 y 1.73", "C": "3.8 y 1.75", "D": "3.8 y 1.76" },
+      "answer": "C"
+    },
+    {
+      "n": 31, "subtema": "Estadística descriptiva",
+      "comparte_contexto_con": 30,
+      "text": "Determinar el porcentaje de resultados que hay entre $\\bar{x}-\\sigma$ y $\\bar{x}+\\sigma$",
+      "options": { "A": "30%", "B": "35%", "C": "40%", "D": "45%" },
+      "answer": "D"
+    },
+    {
+      "n": 32, "subtema": "Estadística descriptiva",
+      "comparte_contexto_con": 30,
+      "text": "Determinar el porcentaje de lanzamientos que se han obtenido con una puntuación menor a la media.",
+      "options": { "A": "40%", "B": "42%", "C": "44%", "D": "46%" },
+      "answer": "B"
+    },
+    {
+      "n": 33, "subtema": "Estadística descriptiva",
+      "comparte_contexto_con": 30,
+      "text": "Determinar el porcentaje de lanzamientos que se han obtenido con una puntuación mayor a la media.",
+      "options": { "A": "48%", "B": "50%", "C": "54%", "D": "58%" },
+      "answer": "D"
+    },
+    { "n": 34, "subtema": "Estadística descriptiva", "figura": "tabla de edades 16-20 y cuatro gráficas: barras, poligonal, circular, áreas", "answer": "B" },
+    {
+      "n": 35, "subtema": "Estadística descriptiva",
+      "text": "Determinar la media de los cuadrados de los primeros $n$ números naturales",
+      "options": { "A": "$\\dfrac{n+1}{6}$", "B": "$\\dfrac{n^{2}+2n+1}{6}$", "C": "$\\dfrac{2n^{2}+3n+1}{6}$", "D": "$\\dfrac{4n^{2}+4n+1}{6}$" },
+      "answer": "C"
+    },
+    {
+      "n": 36, "subtema": "Estadística descriptiva",
+      "text": "La media de un grupo de personas es $\\bar{x}_{1}=400$, un segundo grupo tiene media $\\bar{x}_{2}=480$. Si se juntan los dos grupos la nueva media es $\\bar{x}=430$, determinar la razón del número de personas del primer grupo al número de personas del segundo grupo.",
+      "options": { "A": "$\\dfrac{5}{2}$", "B": "$\\dfrac{5}{3}$", "C": "$\\dfrac{5}{4}$", "D": "1" },
+      "answer": "B"
+    },
+    {
+      "n": 37, "subtema": "Estadística descriptiva",
+      "text": "Calcular la media aritmética de los siguientes números:\n\n6 veces 6, 14 veces 8 y 20 veces 9",
+      "options": { "A": "8.1", "B": "8.2", "C": "8.4", "D": "8.6" },
+      "answer": "B"
+    },
+    {
+      "n": 38, "subtema": "Estadística descriptiva",
+      "text": "La media aritmética de 4 números es 35. Si la media aritmética de los dos primeros es 28, calcular el promedio de los otros dos.",
+      "options": { "A": "32", "B": "40", "C": "42", "D": "48" },
+      "answer": "C"
+    },
+    {
+      "n": 39, "subtema": "Estadística descriptiva",
+      "text": "La media de seis números es 30. Si uno de los números es excluido, la media de los números restantes es 29. Determinar el número excluido.",
+      "options": { "A": "29", "B": "30", "C": "35", "D": "45" },
+      "answer": "C"
+    },
+    {
+      "n": 40, "subtema": "Estadística descriptiva",
+      "text": "Calcular la media armónica de los números.\n\n$$10, 12, 20, 30$$",
+      "options": { "A": "12", "B": "13", "C": "15", "D": "18" },
+      "answer": "C"
+    }
+  ]
+}

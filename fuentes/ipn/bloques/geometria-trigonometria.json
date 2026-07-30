@@ -1,0 +1,173 @@
+{
+  "_meta": {
+    "bloque": "Geometría y trigonometría",
+    "area": "Conocimientos generales (las 3 áreas)",
+    "fuente": "Material de Apoyo al Aprendizaje 2026 — IPN, pp. 36-45 (PDF 29-33)",
+    "reactivos": 40,
+    "rc": "1c 2d 3b 4a 5a 6c 7a 8a 9d 10b 11c 12a 13c 14b 15d 16c 17c 18c 19b 20b 21b 22d 23c 24b 25d 26c 27c 28d 29b 30a 31d 32a 33b 34c 35b 36d 37a 38b 39d 40a",
+    "subtemas": "Funciones exponenciales y logarítmicas (1-8) · Geometría euclidiana (9-27) · Funciones trigonométricas (28-40)"
+  },
+  "questions": [
+    {
+      "n": 1, "subtema": "Funciones exponenciales y logarítmicas",
+      "text": "Una hoja de papel tiene $0.08\\,mm$ de espesor, doblándola una vez su espesor se duplica. ¿Qué espesor tendrá la hoja después de 8 dobleces?",
+      "options": { "A": "$\\dfrac{128}{25}\\,mm$", "B": "$\\dfrac{256}{25}\\,mm$", "C": "$\\dfrac{512}{25}\\,mm$", "D": "$\\dfrac{1024}{25}\\,mm$" },
+      "answer": "C"
+    },
+    {
+      "n": 2, "subtema": "Funciones exponenciales y logarítmicas",
+      "text": "La magnitud $M$ de un cuerpo celeste está definida por:\n\n$$M = -\\frac{5}{2}\\log\\left(\\frac{B}{B_{0}}\\right)$$\n\nDonde $B$ es su brillantez y $B_{0}$ es una constante. Cierto día, la magnitud de la luna es $-12.5$ y la magnitud de la estrella polar es $2.0$. ¿Cuántas veces es más brillante la luna que la estrella polar?",
+      "options": { "A": "$10^{4.2}$", "B": "$10^{4.8}$", "C": "$10^{5.4}$", "D": "$10^{5.8}$" },
+      "answer": "D"
+    },
+    { "n": 3, "subtema": "Funciones exponenciales y logarítmicas", "figura": "cuatro gráficas A-D de $e^{x}$, $e^{-x}$, $-e^{x}$, $-e^{-x}$", "answer": "B" },
+    {
+      "n": 4, "subtema": "Funciones exponenciales y logarítmicas",
+      "text": "Ordenar las cantidades de manera ascendente.\n\n1) $\\log_{8}12 - \\log_{8}15 + \\log_{8}20$\n2) $2\\log_{27}\\log_{10}1000$\n3) $\\dfrac{\\log_{5}36-\\log_{5}12}{\\log_{5}9}$\n4) $\\log_{\\frac{1}{2}}\\dfrac{1}{\\sqrt{32}}$",
+      "options": { "A": "3, 2, 1, 4", "B": "4, 1, 2, 3", "C": "2, 3, 1, 4", "D": "4, 1, 3, 2" },
+      "answer": "A"
+    },
+    {
+      "n": 5, "subtema": "Funciones exponenciales y logarítmicas",
+      "text": "Calcula el valor de $x$ en la ecuación.\n\n$$\\sqrt[7]{\\frac{3^{16}+3^{x}}{3^{x}+3^{2}}} = 3$$",
+      "options": { "A": "9", "B": "10", "C": "11", "D": "12" },
+      "answer": "A"
+    },
+    {
+      "n": 6, "subtema": "Funciones exponenciales y logarítmicas",
+      "text": "Una sustancia radioactiva tiene una vida media de 900 años. Si hay 20 gramos al principio, ¿cuánto quedará después de 1200 años?",
+      "options": { "A": "$10\\left(2^{-\\frac{4}{3}}\\right)$ años", "B": "$10\\left(2^{-\\frac{3}{4}}\\right)$ años", "C": "$20\\left(2^{-\\frac{4}{3}}\\right)$ años", "D": "$20\\left(2^{-\\frac{3}{4}}\\right)$ años" },
+      "answer": "C"
+    },
+    {
+      "n": 7, "subtema": "Funciones exponenciales y logarítmicas",
+      "text": "Calcular el valor de la siguiente expresión:\n\n$$R = \\log_{3}(a-b)$$\n\nSi $\\log_{3}(a+b) = \\dfrac{1}{4}$ y $\\log_{3}\\left(a^{2}-b^{2}\\right) = \\dfrac{1}{3}$.",
+      "options": { "A": "$\\dfrac{1}{12}$", "B": "$\\dfrac{1}{6}$", "C": "$\\dfrac{1}{4}$", "D": "$\\dfrac{1}{3}$" },
+      "answer": "A"
+    },
+    {
+      "n": 8, "subtema": "Funciones exponenciales y logarítmicas",
+      "text": "Determinar el producto de las raíces de la ecuación:\n\n$$\\left(\\log_{3}x\\right)^{2} - 5\\log_{3}x - 24 = 0$$",
+      "options": { "A": "$3^{5}$", "B": "$3^{7}$", "C": "$3^{11}$", "D": "$3^{13}$" },
+      "answer": "A"
+    },
+    { "n": 9, "subtema": "Geometría euclidiana", "figura": "cuatro ángulos dibujados A-D (recto, obtuso, agudo, llano)", "answer": "D" },
+    { "n": 10, "subtema": "Geometría euclidiana", "figura": "ángulo AOC con bisectriz OB; $\\angle BOC = 3x-1°$, $\\angle AOB = 2x+5°$", "answer": "B" },
+    { "n": 11, "subtema": "Geometría euclidiana", "figura": "cuatro rectas, $L_1 \\parallel L_2$ y $L_3 \\parallel L_4$, ángulo de 140° dado, se pide $x$", "answer": "C" },
+    {
+      "n": 12, "subtema": "Geometría euclidiana",
+      "text": "Dos ángulos complementarios tienen una diferencia de $36°$. ¿Cuál es la medida del ángulo menor?",
+      "options": { "A": "$27°$", "B": "$28°$", "C": "$29°$", "D": "$30°$" },
+      "answer": "A"
+    },
+    { "n": 13, "subtema": "Geometría euclidiana", "figura": "triángulo con las tres alturas concurrentes en H", "answer": "C" },
+    { "n": 14, "subtema": "Geometría euclidiana", "figura": "triángulo con ángulos θ, 100°, α, 10° y β", "answer": "B" },
+    { "n": 15, "subtema": "Geometría euclidiana", "figura": "figura con CE bisectriz de ∠AED, ángulos θ, 65°, γ", "answer": "D" },
+    { "n": 16, "subtema": "Geometría euclidiana", "figura": "triángulo ABC con triángulo interior AEB; ángulos 3x, 4x, α, β", "answer": "C" },
+    {
+      "n": 17, "subtema": "Geometría euclidiana",
+      "text": "En un triángulo, la __________ es el segmento que une un vértice con el punto medio del lado opuesto.",
+      "options": { "A": "altura", "B": "bisectriz", "C": "mediana", "D": "mediatriz" },
+      "answer": "C"
+    },
+    {
+      "n": 18, "subtema": "Geometría euclidiana",
+      "text": "En un triángulo $\\triangle ABC$, $\\angle A = 15°$, $\\angle B = 30°$ y $\\overline{AC} = 6$. ¿Cuánto mide el segmento $\\overline{AB}$?",
+      "figura": "triángulo ABC con 15° en A y 30° en B",
+      "options": { "A": "$2\\sqrt{2}$", "B": "$4\\sqrt{2}$", "C": "$6\\sqrt{2}$", "D": "$8\\sqrt{2}$" },
+      "answer": "C"
+    },
+    {
+      "n": 19, "subtema": "Geometría euclidiana",
+      "text": "¿Cuál es el polígono convexo cuyo número de diagonales excede al número de lados en 3?",
+      "options": { "A": "Cuadrado", "B": "Hexágono", "C": "Nonágono", "D": "Dodecágono" },
+      "answer": "B"
+    },
+    {
+      "n": 20, "subtema": "Geometría euclidiana",
+      "text": "¿Cómo se llama el polígono regular cuya suma de las medidas de sus ángulos externos es igual a la suma de las medidas de sus ángulos internos reducida en $1260°$?",
+      "options": { "A": "Decágono", "B": "Undecágono", "C": "Tetradecágono", "D": "Pentadecágono" },
+      "answer": "B"
+    },
+    { "n": 21, "subtema": "Geometría euclidiana", "figura": "pentágono regular ABCDE con triángulo equilátero ABF interior; se pide β", "answer": "B" },
+    {
+      "n": 22, "subtema": "Geometría euclidiana",
+      "text": "Calcular el número de diagonales de un polígono regular cuyo ángulo exterior mide $30°$.",
+      "options": { "A": "27", "B": "35", "C": "44", "D": "54" },
+      "answer": "D"
+    },
+    {
+      "n": 23, "subtema": "Geometría euclidiana",
+      "text": "En un trapecio el segmento que une los puntos medios de las diagonales mide 12 m y la suma de sus bases 50 m. ¿Cuál es la longitud de la base menor?",
+      "options": { "A": "11 m", "B": "12 m", "C": "13 m", "D": "14 m" },
+      "answer": "C"
+    },
+    { "n": 24, "subtema": "Geometría euclidiana", "figura": "cuadrado ABCD con diagonales y segmentos; ángulos x en E", "answer": "B" },
+    { "n": 25, "subtema": "Geometría euclidiana", "figura": "circunferencia con dos cuerdas que se cortan en E; arcos 88° y 54°, ángulo $x-10°$", "answer": "D" },
+    { "n": 26, "subtema": "Geometría euclidiana", "figura": "circunferencia de centro O con recta secante L2, tangente L1, cuerda AD y radio OF", "answer": "C" },
+    {
+      "n": 27, "subtema": "Geometría euclidiana",
+      "text": "La medida de un ángulo __________ a una circunferencia es igual a la mitad de la diferencia de las medidas de los arcos comprendidos por sus lados.",
+      "options": { "A": "inscrito", "B": "interior", "C": "exterior", "D": "semi inscrito" },
+      "answer": "C"
+    },
+    { "n": 28, "subtema": "Funciones trigonométricas", "figura": "gráfica de $f(x)=2\\,\\mathrm{sen}(x)$ con triángulo sombreado bajo la curva", "answer": "D" },
+    { "n": 29, "subtema": "Funciones trigonométricas", "figura": "gráfica con asíntotas en $\\pi/2$, $3\\pi/2$, $5\\pi/2$ (cotangente)", "answer": "B" },
+    {
+      "n": 30, "subtema": "Funciones trigonométricas",
+      "text": "Determinar el rango de la función:\n\n$$f(x) = \\cos^{2}x + 2\\cos x + 1$$",
+      "options": { "A": "$[0,4]$", "B": "$[4,0]$", "C": "$[-4,0]$", "D": "$[0,-4]$" },
+      "answer": "A"
+    },
+    {
+      "n": 31, "subtema": "Funciones trigonométricas",
+      "text": "Simplificar la siguiente expresión:\n\n$$M = \\frac{\\left[\\left(\\mathrm{sen}\\,x+\\cos x\\right)^{2}-1\\right]\\sec x}{\\mathrm{sen}\\,x}$$",
+      "options": { "A": "$-2$", "B": "$-1$", "C": "1", "D": "2" },
+      "answer": "D"
+    },
+    {
+      "n": 32, "subtema": "Funciones trigonométricas",
+      "text": "La expresión __________ es equivalente a $\\dfrac{\\tan x + \\cos x}{\\mathrm{sen}\\,x}$.",
+      "options": { "A": "$\\sec x + \\cot x$", "B": "$\\sec x - \\cot x$", "C": "$\\csc x + \\tan x$", "D": "$\\csc x - \\tan x$" },
+      "answer": "A"
+    },
+    {
+      "n": 33, "subtema": "Funciones trigonométricas",
+      "text": "Identificar cuáles de las siguientes expresiones son verdaderas:\n\n1) $\\tan x + \\cot x = \\sec x \\csc x$\n2) $\\tan x \\cos x = \\cos x$\n3) $\\cos x + \\sec x = \\mathrm{sen}\\,x \\tan x$\n4) $\\cot x \\sec x = \\csc x$",
+      "options": { "A": "1, 2", "B": "1, 4", "C": "3, 4", "D": "2, 3" },
+      "answer": "B"
+    },
+    {
+      "n": 34, "subtema": "Funciones trigonométricas",
+      "text": "Simplificar la siguiente expresión:\n\n$$H = \\frac{\\csc y + \\tan y}{\\mathrm{sen}\\,y + \\cot y}$$",
+      "options": { "A": "$\\csc y$", "B": "$\\cot y$", "C": "$\\sec y$", "D": "$\\tan y$" },
+      "answer": "C"
+    },
+    { "n": 35, "subtema": "Funciones trigonométricas", "figura": "triángulo ABD con ángulo 30° en A, BC=1 y BD perpendicular; se pide x", "answer": "B" },
+    {
+      "n": 36, "subtema": "Funciones trigonométricas",
+      "text": "Ordenar de manera descendente las cantidades.\n\n1) $\\cos 300°$\n2) $\\tan 135°$\n3) $\\mathrm{sen}\\,210°$\n4) $\\cot 225°$",
+      "options": { "A": "2, 3, 4, 1", "B": "2, 3, 1, 4", "C": "1, 4, 3, 2", "D": "4, 1, 3, 2" },
+      "answer": "D"
+    },
+    {
+      "n": 37, "subtema": "Funciones trigonométricas",
+      "text": "Si $\\tan\\alpha = \\dfrac{3}{2}$ y $\\alpha$ es un ángulo agudo. ¿Qué valor tiene $\\cos\\alpha$?",
+      "options": { "A": "$\\dfrac{2}{\\sqrt{13}}$", "B": "$\\dfrac{3}{\\sqrt{13}}$", "C": "$\\dfrac{\\sqrt{13}}{3}$", "D": "$\\dfrac{\\sqrt{13}}{2}$" },
+      "answer": "A"
+    },
+    {
+      "n": 38, "subtema": "Funciones trigonométricas",
+      "text": "El ángulo $\\beta$ pertenece al __________ cuadrante, si $\\mathrm{sen}\\,\\beta > 0$ y $\\tan\\beta < 0$.",
+      "options": { "A": "primer", "B": "segundo", "C": "tercer", "D": "cuarto" },
+      "answer": "B"
+    },
+    {
+      "n": 39, "subtema": "Funciones trigonométricas",
+      "text": "Desde la ventana de un departamento, situado a 7 metros del suelo, se observan las partes superior e inferior de un árbol que está al frente. El ángulo de elevación hacia la parte superior del árbol es de $60°$, mientras que el ángulo de depresión hacia la parte inferior es de $45°$. ¿Cuál es la altura del árbol?",
+      "options": { "A": "$7\\left(1-\\sqrt{2}\\right)$ m", "B": "$7\\left(1+\\sqrt{2}\\right)$ m", "C": "$7\\left(1-\\sqrt{3}\\right)$ m", "D": "$7\\left(1+\\sqrt{3}\\right)$ m" },
+      "answer": "D"
+    },
+    { "n": 40, "subtema": "Funciones trigonométricas", "figura": "triángulos rectángulos encadenados con ángulos α y β y cateto h; se pide x", "answer": "A" }
+  ]
+}

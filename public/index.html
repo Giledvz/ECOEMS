@@ -1930,6 +1930,11 @@ function prefetchExamSVGs(questions) {
       const m = /<img[^>]+src="([^"]+\.svg)"/i.exec(v || '');
       if (m) urls.add(m[1]);
     });
+    // Figuras embebidas en una lectura compartida (context) o en el enunciado.
+    [q.context, q.text].forEach(t => {
+      const re = /<img[^>]+src="([^"]+\.svg)"/gi;
+      let m; while ((m = re.exec(t || ''))) urls.add(m[1]);
+    });
   });
   urls.forEach(u => { loadInlineSVG(u); });
 }
@@ -2769,6 +2774,15 @@ async function _downloadPDFImpl(onDone) {
     ...state.questions.filter(q => q.image && q.image.toLowerCase().endsWith('.svg')).map(q => q.image),
     ...state.questions.flatMap(q => q.option_images ? Object.values(q.option_images) : [])
       .filter(u => u && u.toLowerCase().endsWith('.svg')),
+    // Figuras embebidas en una lectura compartida (context) o en el enunciado.
+    ...state.questions.flatMap(q => {
+      const out = [];
+      [q.context, q.text].forEach(t => {
+        const re = /<img[^>]+src="([^"]+\.svg)"/gi;
+        let m; while ((m = re.exec(t || ''))) out.push(m[1]);
+      });
+      return out;
+    }),
   ])];
   await Promise.all(svgUrls.map(async url => {
     try {
@@ -2867,7 +2881,13 @@ async function _downloadPDFImpl(onDone) {
     // ya tienen la lectura implícita arriba.
     const showCtx = q.context && q.context !== __lastPdfCtx;
     __lastPdfCtx = q.context || null;
-    const ctxHTML = showCtx ? `<div class="question__context">${renderMath(q.context)}</div>` : '';
+    // Igual que la figura de pregunta: los <img src=*.svg> de la lectura se
+    // inlinean, porque html2canvas no escala bien los <img> de SVG.
+    const inlineCtxSVGs = html => html.replace(
+      /<img([^>]*)\ssrc="([^"]+\.svg)"([^>]*)>/gi,
+      (m, _a, url) => svgCache[url] ? `<span class="question__svg">${svgCache[url]}</span>` : m
+    );
+    const ctxHTML = showCtx ? `<div class="question__context">${inlineCtxSVGs(renderMath(q.context))}</div>` : '';
     return `
       <article class="question">
         <div class="question__head">${q.subject} — Pregunta ${idx + 1}</div>
