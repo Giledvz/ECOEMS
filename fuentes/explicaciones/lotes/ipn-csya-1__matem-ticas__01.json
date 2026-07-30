@@ -1,0 +1,383 @@
+{
+ "lote": "ipn-csya-1__matem-ticas__01",
+ "examen": "ipn-csya-1.json",
+ "titulo": "Simulacro IPN — Ciencias Sociales y Administrativas",
+ "materia": "Matemáticas",
+ "preguntas": [
+  {
+   "id": 1,
+   "tema": "Secuencias",
+   "texto": "Determinar la letra que continúa en la sucesión:\n\n$A, C, F, J, L, \\tilde{N}, R, \\ldots$",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "T",
+    "B": "U",
+    "C": "V",
+    "D": "W"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 2,
+   "tema": "Secuencias",
+   "texto": "Identificar el enésimo término de la siguiente sucesión:\n\n$\\dfrac{5}{6}, \\dfrac{10}{13}, \\dfrac{15}{20}, \\dfrac{20}{27}, \\ldots$",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$\\dfrac{5n}{7n+1}$",
+    "B": "$\\dfrac{5n}{7n-1}$",
+    "C": "$\\dfrac{10n}{7n+1}$",
+    "D": "$\\dfrac{10n}{7n-1}$"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 3,
+   "tema": "Secuencias",
+   "texto": "¿Cuál de las siguientes expresiones corresponde a una sucesión geométrica para $n = 1, 2, 3, \\ldots$?",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$2n^{3}$",
+    "B": "$3(2)^{n-1}$",
+    "C": "$n^{2}+n+2$",
+    "D": "$6+12(n-1)$"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 4,
+   "tema": "Secuencias",
+   "texto": "Si los términos:\n\n$\\ldots, 3^{x+2}, 3^{x+3}, 135, \\ldots$\n\npertenecen a una sucesión aritmética. ¿Cuál es el valor de $x$?",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 5,
+   "tema": "Geometría espacial",
+   "texto": "Se tiene un triángulo $ABC$ con los vértices $A(-1,1)$, $B(1,3)$ y $C(2,2)$. ¿Cuál es la suma de las ordenadas de los vértices del triángulo $ABC$ después de reflejarlo con respecto a la recta $L: y = -0.5$?",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "6",
+    "B": "4",
+    "C": "2",
+    "D": "-9"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 6,
+   "tema": "Análisis de datos",
+   "texto": "La media aritmética de 50 números enteros consecutivos es $42.5$. ¿Cuál es el número menor?",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "15",
+    "B": "16",
+    "C": "17",
+    "D": "18"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 7,
+   "tema": "Expresiones algebraicas",
+   "texto": "Relacionar los enunciados con la expresión que le corresponde.\n\n| Enunciado | Expresión |\n|---|---|\n| 1. El doble del cubo de un número. | A. $(3n)^{2}$ |\n| 2. El cubo del doble de un número. | B. $2n^{3}$ |\n| 3. El triple del cuadrado de un número. | C. $(2n)^{3}$ |\n| 4. El cuadrado del triple de un número. | D. $3n^{2}$ |",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "1B, 2C, 3A, 4D",
+    "B": "1B, 2C, 3D, 4A",
+    "C": "1C, 2B, 3A, 4D",
+    "D": "1C, 2B, 3D, 4A"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 8,
+   "tema": "Expresiones algebraicas",
+   "texto": "Transformar al lenguaje matemático el enunciado: El producto de tres números pares consecutivos.",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$(x)(x+1)(x+2)$",
+    "B": "$(x)(x+2)(x+4)$",
+    "C": "$(2x)(2x+1)(2x+2)$",
+    "D": "$(2x)(2x+2)(2x+4)$"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 9,
+   "tema": "Expresiones algebraicas",
+   "texto": "¿Cuántas fracciones propias positivas, que son menores que $\\dfrac{11}{13}$ y cuyos términos son números enteros consecutivos, existen?",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "4",
+    "B": "5",
+    "C": "6",
+    "D": "7"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 10,
+   "tema": "Expresiones algebraicas",
+   "texto": "Realizar la siguiente suma de fracciones.\n\n$$R = \\frac{2x^{2}}{x+2} + \\frac{2x^{2}}{x-2} - \\frac{8}{x+2} - \\frac{8}{x-2}$$",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$4x$",
+    "B": "$-4x$",
+    "C": "$x+4$",
+    "D": "$x-4$"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 11,
+   "tema": "Expresiones algebraicas",
+   "texto": "Realizar la división de fracciones.\n\n$$N = \\frac{\\sqrt{x}+2}{x+4} \\div \\frac{x-4}{\\sqrt{x}-2}$$",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$\\dfrac{1}{x-4}$",
+    "B": "$\\dfrac{1}{x+4}$",
+    "C": "$x-4$",
+    "D": "$x+4$"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 12,
+   "tema": "Expresiones algebraicas",
+   "texto": "Reducir la expresión:\n\n$$S = \\sqrt[k]{\\frac{b}{\\sqrt[\\beta]{b}}}$$\n\nSabiendo que se cumple la condición:\n\n$$\\beta k - \\beta + 1 = 0$$",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$b^{0}$",
+    "B": "$b^{1}$",
+    "C": "$b^{2}$",
+    "D": "$b^{3}$"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 13,
+   "tema": "Funciones exponenciales y logarítmicas",
+   "texto": "Determinar el producto de las raíces de la ecuación:\n\n$$\\left(\\log_{3}x\\right)^{2} - 5\\log_{3}x - 24 = 0$$",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$3^{5}$",
+    "B": "$3^{7}$",
+    "C": "$3^{11}$",
+    "D": "$3^{13}$"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 14,
+   "tema": "Geometría euclidiana",
+   "texto": "¿Cómo se llama el polígono regular cuya suma de las medidas de sus ángulos externos es igual a la suma de las medidas de sus ángulos internos reducida en $1260°$?",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "Decágono",
+    "B": "Undecágono",
+    "C": "Tetradecágono",
+    "D": "Pentadecágono"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 15,
+   "tema": "Geometría euclidiana",
+   "texto": "Calcular el número de diagonales de un polígono regular cuyo ángulo exterior mide $30°$.",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "27",
+    "B": "35",
+    "C": "44",
+    "D": "54"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 16,
+   "tema": "Geometría euclidiana",
+   "texto": "La medida de un ángulo __________ a una circunferencia es igual a la mitad de la diferencia de las medidas de los arcos comprendidos por sus lados.",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "inscrito",
+    "B": "interior",
+    "C": "exterior",
+    "D": "semi inscrito"
+   },
+   "clave": "C"
+  },
+  {
+   "id": 17,
+   "tema": "Funciones trigonométricas",
+   "texto": "Determinar el rango de la función:\n\n$$f(x) = \\cos^{2}x + 2\\cos x + 1$$",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$[0,4]$",
+    "B": "$[4,0]$",
+    "C": "$[-4,0]$",
+    "D": "$[0,-4]$"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 18,
+   "tema": "Conceptos básicos",
+   "texto": "Determinar la distancia entre las rectas paralelas $2x+5y-3=0$ y $2x+5y-15=0$.",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$\\dfrac{12}{29}\\sqrt{29}$",
+    "B": "$\\dfrac{18}{29}\\sqrt{29}$",
+    "C": "$\\dfrac{12}{5}$",
+    "D": "$\\dfrac{18}{5}$"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 19,
+   "tema": "Conceptos básicos",
+   "texto": "Hallar la ecuación de la recta cuya pendiente es 2, y que pasa por el punto de intersección de las rectas $5x-2y=-8$ y $x-6y=4$.",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$2x-y+1=0$",
+    "B": "$2x-y+3=0$",
+    "C": "$x-2y-1=0$",
+    "D": "$x-2y-3=0$"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 20,
+   "tema": "Conceptos básicos",
+   "texto": "Determinar el valor de $a$ para el cual las rectas $\\ell_{1}$ y $\\ell_{2}$ son paralelas.\n\n$$\\ell_{1}: 2x-7y+3=0$$\n$$\\ell_{2}: x+ay-2=0$$",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$-\\dfrac{7}{2}$",
+    "B": "$-\\dfrac{2}{7}$",
+    "C": "$\\dfrac{2}{7}$",
+    "D": "$\\dfrac{7}{2}$"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 21,
+   "tema": "Cónicas",
+   "texto": "Hallar la ecuación de la circunferencia cuyo centro es el punto $C(2,-4)$ y que pasa por el punto $A(-1,0)$.",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$x^{2}+y^{2}+4x-8y-5=0$",
+    "B": "$x^{2}+y^{2}-4x+8y-5=0$",
+    "C": "$x^{2}+y^{2}+4x-8y+45=0$",
+    "D": "$x^{2}+y^{2}-4x+8y+45=0$"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 22,
+   "tema": "Cónicas",
+   "texto": "Determinar la ecuación de la circunferencia con centro en $C(1,2)$ y que es tangente a la recta $x-y+10=0$.",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$x^{2}+y^{2}-2x-4y-\\dfrac{71}{2}=0$",
+    "B": "$x^{2}+y^{2}+2x+4y-\\dfrac{71}{2}=0$",
+    "C": "$x^{2}+y^{2}-4x-2y-\\dfrac{71}{2}=0$",
+    "D": "$x^{2}+y^{2}+4x+2y-\\dfrac{71}{2}=0$"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 23,
+   "tema": "Funciones, límites y continuidad",
+   "texto": "Determinar el conjunto solución de la desigualdad.\n\n$$\\left|\\frac{x-4}{x-\\sqrt{2}}\\right| < 0$$",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$x>4$",
+    "B": "$x>\\sqrt{2}$",
+    "C": "$\\left\\{\\sqrt{2},4\\right\\}$",
+    "D": "$\\varnothing$"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 24,
+   "tema": "Funciones, límites y continuidad",
+   "texto": "Determinar el conjunto solución de la desigualdad.\n\n$$|x-1| < |2x+3|$$",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$(\\infty,-4)\\cup\\left(\\frac{2}{3},\\infty\\right)$",
+    "B": "$(-\\infty,-4)\\cup\\left(-\\frac{2}{3},\\infty\\right)$",
+    "C": "$\\left(\\infty,\\frac{2}{3}\\right)\\cup(4,\\infty)$",
+    "D": "$\\left(\\infty,-\\frac{2}{3}\\right)\\cup(4,\\infty)$"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 25,
+   "tema": "Funciones, límites y continuidad",
+   "texto": "Calcular el valor del límite.\n\n$$\\lim_{x\\to 3}\\frac{\\sqrt{3x}-3}{\\sqrt{2x-4}-\\sqrt{2}}$$",
+   "contexto": null,
+   "figura": null,
+   "figuras_opciones": null,
+   "opciones": {
+    "A": "$\\dfrac{1}{2}$",
+    "B": "1",
+    "C": "$\\sqrt{2}$",
+    "D": "$\\dfrac{1}{\\sqrt{2}}$"
+   },
+   "clave": "D"
+  }
+ ]
+}

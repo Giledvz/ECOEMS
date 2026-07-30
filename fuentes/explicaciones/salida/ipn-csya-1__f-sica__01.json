@@ -1,0 +1,70 @@
+[
+ {
+  "id": 95,
+  "explanation": "La clasificación de los vectores va según dónde actúan: los **colineales** comparten la misma línea de acción, los **concurrentes** tienen líneas de acción que se cruzan en un punto, los **coplanares** están todos en un mismo plano y los **no coplanares** actúan en planos diferentes, que es justo lo que pide el enunciado. Imagina tres aristas de una caja saliendo de una misma esquina: no existe un solo plano que las contenga.\n\n\"Adimensionales\" ni siquiera clasifica vectores por su posición: se refiere a cantidades sin unidades."
+ },
+ {
+  "id": 96,
+  "explanation": "La torca mide la capacidad de una fuerza para hacer girar un cuerpo alrededor de un punto, y depende tanto de la fuerza como de dónde se aplica. Por eso se define como el producto vectorial del brazo de palanca por la fuerza:\n\n$$\\vec{\\tau} = \\vec{r} \\times \\vec{F}$$\n\ncuya magnitud es $\\tau = rF\\,\\mathrm{sen}\\,\\theta$: solo la componente de la fuerza perpendicular al brazo produce giro.\n\nLa opción A ($\\sum \\vec{F} = \\vec{0}$) es la condición de equilibrio traslacional, no la torca; y la C tropieza con el coseno: la proyección que hace girar va con seno."
+ },
+ {
+  "id": 97,
+  "explanation": "La tercera ley de Newton dice que a toda fuerza de **acción** corresponde una **reacción** de igual magnitud pero sentido contrario, aplicada sobre el otro cuerpo: si empujas la pared, la pared te empuja a ti con la misma fuerza. Por eso se le conoce como ley de la acción y la reacción.\n\nLa conservación del momento lineal (C) es una *consecuencia* que se deriva de esta ley, pero no es su enunciado: lo que la ley implica directamente es el par acción-reacción."
+ },
+ {
+  "id": 98,
+  "explanation": "La **maleabilidad** es la propiedad que permite deformar un metal hasta convertirlo en láminas u hojas delgadas; el oro, por ejemplo, se lamina en hojas finísimas. Es el par clásico con la **ductilidad** (A), que también es deformar el metal, pero para estirarlo en hilos o alambres. Un truco para no confundirlas: lámina → maleable, alambre → dúctil.\n\nLa elasticidad, en cambio, es recuperar la forma original al retirar la fuerza, no conservar la forma nueva."
+ },
+ {
+  "id": 99,
+  "explanation": "La palabra clave es *velocidad constante*: si no hay aceleración, la fuerza que aplicas apenas equilibra a la fricción. La fricción dinámica vale $F_f = \\mu N$ y, como el cuerpo se desliza sobre una superficie horizontal, la normal es igual al peso: $N = 500$ N. Entonces\n\n$$F = \\mu N = 0.4 \\times 500 = 200\\ \\mathrm{N}$$\n\nOjo: los 500 N ya son el peso del cuerpo (el dato viene en newtons), así que la normal sale directa, sin multiplicar por $g$."
+ },
+ {
+  "id": 100,
+  "explanation": "En movimiento rectilíneo uniforme la velocidad es simplemente distancia entre tiempo:\n\n$$v = \\frac{150\\ \\mathrm{km}}{2\\ \\mathrm{h}} = 75\\ \\mathrm{km/h}$$\n\nY para recorrer 300 km en esas mismas 2 horas necesita $v = 300 \\div 2 = 150$ km/h: el doble de distancia en el mismo tiempo exige el doble de velocidad. Por eso el orden es 75 y luego 150.\n\nSi marcaste B, llenaste los espacios al revés: 150 km es la distancia del primer trayecto, no su velocidad."
+ },
+ {
+  "id": 101,
+  "explanation": "La pregunta es qué tan \"exclusiva\" es cada propiedad. El **volumen** lo tiene absolutamente toda la materia —todo cuerpo ocupa un lugar en el espacio—, así que es la más general. La **densidad** ya es una propiedad específica: cada sustancia tiene la suya y sirve para identificarla (el agua, 1 g/cm³; el hierro, 7.8 g/cm³). Y la **viscosidad** es la más específica de las tres, porque ni siquiera la presentan todos los materiales: es propia de los fluidos. De ahí el orden 1, 2, 3."
+ },
+ {
+  "id": 102,
+  "explanation": "Ve relación por relación:\n\n- **Presión en un líquido (1):** aumenta con la profundidad, $P = P_0 + \\rho g h$ → **D**.\n- **Módulo de compresibilidad (2):** compara el aumento de presión con el cambio relativo de volumen que produce, $B = -\\frac{\\Delta P}{\\Delta V / V}$ → **C**.\n- **Ecuación de continuidad (3):** en una tubería el gasto se conserva, así que área por velocidad es constante: $Av = cte$ → **B**.\n- **Ecuación de Bernoulli (4):** es la conservación de la energía en un fluido, con sus tres términos de presión, altura y velocidad: $P + \\rho g h + \\frac{1}{2}\\rho v^2 = cte$ → **A**.\n\nQueda 1D, 2C, 3B, 4A."
+ },
+ {
+  "id": 103,
+  "explanation": "Esa es la definición de **frecuencia**: cuántos ciclos o vibraciones completas ocurren en cada segundo.\n\nEl distractor fuerte es \"Hertz\" (A), pero fíjate en la diferencia: el hertz es la *unidad* con la que se mide la frecuencia ($1\\ \\mathrm{Hz} = 1$ ciclo por segundo), no el concepto. La pregunta pide la magnitud física, no su unidad."
+ },
+ {
+  "id": 104,
+  "explanation": "En el punto más alto la velocidad se hace cero. Usa $v^2 = v_0^2 - 2gh$ con $v = 0$ y despeja la altura:\n\n$$h = \\frac{v_0^2}{2g} = \\frac{(6)^2}{2(9.8)} = \\frac{36}{19.6} \\approx 1.8\\ \\mathrm{m}$$\n\n(Con $g = 10\\ \\mathrm{m/s^2}$ da 1.8 m exactos.) Checa que el resultado tenga sentido: una pelota lanzada a 6 m/s es un lanzamiento moderado, no sube ni dos metros; las demás opciones pedirían velocidades iniciales bastante mayores."
+ },
+ {
+  "id": 105,
+  "explanation": "Cada característica es casi la definición textual: la energía **cinética** es la de todos los cuerpos en movimiento (A); la **térmica** se genera por el movimiento de las moléculas de la materia (B); la **eléctrica** se debe al movimiento de electrones a través de un conductor (C); y la **mecánica** es la suma de la cinética y la potencial de un cuerpo (D). El orden queda directo: 1A, 2B, 3C, 4D.\n\nUn ancla útil: las tres primeras son \"algo que se mueve\" (el cuerpo, las moléculas, los electrones); la mecánica es la única que se define como una suma."
+ },
+ {
+  "id": 106,
+  "explanation": "Toda onda cumple $v = \\lambda f$. En un medio dado la velocidad $v$ es constante, así que al despejar\n\n$$\\lambda = \\frac{v}{f}$$\n\nla frecuencia queda en el denominador: si la frecuencia se duplica, la longitud de onda se reduce a la mitad, y el producto de ambas siempre da la misma $v$. Eso es exactamente una relación **inversamente proporcional**."
+ },
+ {
+  "id": 107,
+  "explanation": "Repasa qué mide cada cualidad y el ejemplo cae solo:\n\n- **Altura (1):** qué tan agudo o grave es un sonido → el sonido agudo de la flauta (**B**).\n- **Timbre (2):** lo que distingue dos instrumentos aunque den la misma nota → violín y flauta con la misma nota (**C**).\n- **Intensidad (3):** qué tan fuerte o débil es → el martillazo sobre el clavo (**D**).\n- **Tonos armónicos (4):** los sonidos secundarios que acompañan al fundamental, muy notorios en una campana (**A**).\n\nQueda 1B, 2C, 3D, 4A. El error típico es cruzar altura con intensidad: agudo/grave es altura; fuerte/débil es intensidad."
+ },
+ {
+  "id": 108,
+  "explanation": "El **desplazamiento** se define justo así: el cambio de posición de una partícula, es decir, el vector que va de la posición inicial a la final sin importar el camino seguido.\n\nEl distractor natural es \"movimiento\" (C), pero el movimiento es el fenómeno completo —el cambio de posición a lo largo del tiempo—, mientras que la magnitud que mide ese cambio es el desplazamiento. Y la trayectoria (B) es la línea que describe el cuerpo al moverse, no el cambio en sí."
+ },
+ {
+  "id": 109,
+  "explanation": "La **cinemática** describe el movimiento —posición, velocidad, aceleración, trayectoria— sin preguntarse por qué ocurre. En cuanto entran las fuerzas que lo causan, ya es terreno de la **dinámica** (B); y la **mecánica** (C) es el nombre de toda la rama que engloba a ambas, junto con la estática, que estudia los cuerpos en equilibrio. La frase \"sin atender las causas\" es la firma de la cinemática."
+ },
+ {
+  "id": 110,
+  "explanation": "El nivel de intensidad se calcula con la escala logarítmica\n\n$$\\beta = 10 \\log\\left(\\frac{I}{I_0}\\right)$$\n\ndonde $I_0 = 10^{-12}\\ \\mathrm{W/m^2}$ es el umbral de audición. Sustituyendo:\n\n$$\\beta = 10 \\log\\left(\\frac{10^{-2}}{10^{-12}}\\right) = 10 \\log\\left(10^{10}\\right) = 10 \\times 10 = 100\\ \\mathrm{dB}$$\n\nSi te dio 10 dB, te comiste el factor 10 de la fórmula: el logaritmo da 10 y todavía hay que multiplicarlo por 10."
+ },
+ {
+  "id": 111,
+  "explanation": "El índice de refracción compara la velocidad de la luz en el vacío (o el aire) con su velocidad dentro del medio:\n\n$$n = \\frac{c}{v} = \\frac{3\\times10^{8}}{2.25\\times10^{8}} = 1.33$$\n\nComo la luz siempre viaja más lento dentro del agua que en el aire, el índice tiene que ser mayor que 1, y 1.33 es justo el valor característico del agua.\n\nSi marcaste 2.25, solo copiaste la velocidad en el agua sin hacer el cociente."
+ }
+]

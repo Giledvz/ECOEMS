@@ -1,0 +1,102 @@
+[
+ {
+  "id": 1,
+  "explanation": "Es una sucesión aritmética que avanza de 6 en 6, así que su término general es $a_n = 7 + 6(n-1) = 6n + 1$. Los términos de tres cifras van del 100 al 999: de $6n + 1 \\ge 100$ sale $n \\ge 17$ (que da 103, el primero de tres cifras), y de $6n + 1 \\le 999$ sale $n \\le 166$ (que da 997, el último). Del 17 al 166 hay $166 - 17 + 1 = 150$ términos.\n\nSi te dio 149 (opción A), hiciste la resta $166 - 17$ y olvidaste el $+1$: al contar del 17 al 166, ambos extremos cuentan."
+ },
+ {
+  "id": 2,
+  "explanation": "La razón aquí no es constante: fíjate por cuánto se multiplica cada término para llegar al siguiente. $2 \\times (-2) = -4$ y $-4 \\times (-3) = 12$, así que los multiplicadores van siendo $-2, -3, -4, -5, -6, \\ldots$ El término faltante es $12 \\times (-4) = -48$. Comprueba con lo que sigue: $-48 \\times (-5) = 240$ y $240 \\times (-6) = -1440$, justo los términos de la lista.\n\nSi contestaste 48, el patrón te salió bien pero se te fue el signo: multiplicaste por 4 en lugar de $-4$."
+ },
+ {
+  "id": 3,
+  "explanation": "En una sucesión geométrica la razón entre términos consecutivos es la misma, así que $\\frac{y+16}{y} = \\frac{9y}{y+16}$, es decir, $(y+16)^2 = 9y^2$. Como todo es positivo, saca raíz: $y + 16 = 3y$, de donde $y = 8$. La sucesión es $8, 24, 72, \\ldots$ con razón 3, y el tercer término es 72.\n\nOjo con lo que piden: no es el término, sino la suma de sus cifras: $7 + 2 = 9$."
+ },
+ {
+  "id": 4,
+  "explanation": "Cuenta cuántas letras se saltan entre cada par, usando el alfabeto español completo (con Ñ): de L a R se saltan 6 (M, N, Ñ, O, P, Q), de R a W se saltan 4 (S, T, U, V) y de W a Z se saltan 2 (X, Y). Los brincos bajan de dos en dos: 8, 6, 4, 2. Entonces, de la primera letra a L deben saltarse 8: retrocede desde L las letras K, J, I, H, G, F, E, D y caes en C.\n\nSi llegaste a D, retrocediste 7 letras en vez de 8: antes del brinco de 6 toca uno de 8."
+ },
+ {
+  "id": 5,
+  "explanation": "Cuenta las letras que se brincan en cada paso, con todo y Ñ: de I a L se brincan 2 (J, K), de L a N se brinca 1 (M), de N a P se brincan 2 (Ñ, O) y de P a R se brinca 1 (Q). El patrón alterna 2, 1, 2, 1, así que ahora tocan 2: después de R saltas S y T, y caes en U.\n\nSi elegiste T, brincaste una sola letra; el descuido típico es contar sin la Ñ, con lo que el patrón alternado se pierde."
+ },
+ {
+  "id": 6,
+  "explanation": "Cada propiedad se reconoce por lo que hace. La **asociativa** cambia la agrupación sin mover el orden: $(a\\cdot b)\\cdot c = a\\cdot(b\\cdot c)$, expresión C. La **conmutativa** intercambia el orden de los factores: $a\\cdot b = b\\cdot a$, expresión D. La **distributiva** reparte un producto sobre una suma: $a\\cdot(b+c) = a\\cdot b + a\\cdot c$, expresión A. Y el **elemento inverso** es el que al multiplicarse por $a$ da 1: $a\\cdot a^{-1} = 1$, expresión B. Queda 1C, 2D, 3A, 4B.\n\nEl cruce típico es confundir asociativa con conmutativa: *asociar* es agrupar (mover paréntesis), *conmutar* es intercambiar lugares."
+ },
+ {
+  "id": 7,
+  "explanation": "Revísalos uno por uno. El 1 es falso: la transitividad de $a > b$ y $b > c$ concluye $a > c$, no al revés (prueba con $5 > 3$ y $3 > 1$: no es cierto que $1 > 5$). El 2 es verdadero: sumar la misma cantidad a los dos lados conserva la desigualdad. El 3 es verdadero: el producto de dos positivos siempre es positivo. El 4 es falso: multiplicar por $c > 0$ **conserva** el sentido, así que de $a < b$ se sigue $ac < bc$, no lo contrario. Los verdaderos son 2 y 3."
+ },
+ {
+  "id": 8,
+  "explanation": "De la condición, $a + b + c = \\sqrt{441} = 21$. Ahora fíjate en la suma acomodada: en la columna de las unidades aparecen $c$, $a$ y $b$; en las decenas $b$, $c$ y $a$; en las centenas $a$, $b$ y $c$. Es decir, **cada columna suma 21**. Por eso\n\n$$abc + bca + cab = 111(a+b+c) = 111 \\times 21 = 2331$$\n\nSi lo haces con acarreos: unidades 21, escribes 1 y llevas 2; decenas $21 + 2 = 23$, escribes 3 y llevas 2; centenas $21 + 2 = 23$. Leído de corrido: 2331. Las otras opciones vienen de perder algún acarreo en el camino."
+ },
+ {
+  "id": 9,
+  "explanation": "Inversamente proporcionales significa que el producto $M \\cdot N$ es constante. La primera columna te da esa constante: $k = 50 \\times 36 = 1800$. Con ella llenas los huecos: $a = 1800 \\div 36 = 50$, $b = 1800 \\div 20 = 90$ y $c = 1800 \\div 200 = 9$. Entonces $a + b + c = 50 + 90 + 9 = 149$.\n\nSi hubieras tratado la tabla como proporción directa (cociente constante en vez de producto), los valores ni siquiera salen enteros: esa es la señal de que el camino era otro."
+ },
+ {
+  "id": 10,
+  "explanation": "En la proporcionalidad directa las dos magnitudes cambian al mismo ritmo: si una se **multiplica** por un número, la otra queda multiplicada por ese mismo número (el doble de kilos cuesta el doble; el triple, el triple).\n\nEl distractor fuerte es «dividir»: si al dividir una magnitud la otra quedara multiplicada, eso sería proporcionalidad **inversa**, no directa."
+ },
+ {
+  "id": 11,
+  "explanation": "Despeja el logaritmo de la fórmula: $\\log\\left(\\frac{B}{B_0}\\right) = -\\frac{2}{5}M$. Para la luna: $-\\frac{2}{5}(-12.5) = 5$, así que $B_{\\mathrm{luna}} = B_0 \\cdot 10^{5}$. Para la estrella polar: $-\\frac{2}{5}(2.0) = -0.8$, así que $B_{\\mathrm{polar}} = B_0 \\cdot 10^{-0.8}$. Al comparar brillos:\n\n$$\\frac{B_{\\mathrm{luna}}}{B_{\\mathrm{polar}}} = \\frac{10^{5}}{10^{-0.8}} = 10^{5-(-0.8)} = 10^{5.8}$$\n\nSi te dio $10^{4.2}$ (opción A), restaste $5 - 0.8$: el descuido clásico con el signo del exponente negativo, que al pasar dividiendo se suma."
+ },
+ {
+  "id": 12,
+  "explanation": "Calcula cada cantidad. En la 1, junta los logaritmos: $\\log_8\\frac{12 \\cdot 20}{15} = \\log_8 16 = \\frac{4}{3}$, porque $8^{4/3} = 2^4 = 16$. En la 2, $\\log_{10}1000 = 3$ y $\\log_{27}3 = \\frac{1}{3}$ (pues $27^{1/3} = 3$), así que vale $2 \\cdot \\frac{1}{3} = \\frac{2}{3}$. En la 3, el numerador es $\\log_5\\frac{36}{12} = \\log_5 3$, y $\\frac{\\log_5 3}{\\log_5 9} = \\log_9 3 = \\frac{1}{2}$. En la 4, $\\frac{1}{\\sqrt{32}} = \\left(\\frac{1}{2}\\right)^{5/2}$, y el logaritmo base $\\frac{1}{2}$ de eso vale $\\frac{5}{2}$. Ordenando de menor a mayor: $\\frac{1}{2} < \\frac{2}{3} < \\frac{4}{3} < \\frac{5}{2}$, es decir, **3, 2, 1, 4**."
+ },
+ {
+  "id": 13,
+  "explanation": "Eleva los dos lados a la séptima potencia para quitar la raíz: $\\frac{3^{16}+3^x}{3^x+3^2} = 3^7$. Multiplica cruzado: $3^{16} + 3^x = 3^{x+7} + 3^9$. Junta parecidos y factoriza cada lado:\n\n$$3^{16} - 3^9 = 3^{x+7} - 3^x \\;\\Longrightarrow\\; 3^9(3^7 - 1) = 3^x(3^7 - 1)$$\n\nCancela el paréntesis y queda $3^x = 3^9$, o sea $x = 9$. Comprobación rápida: con $x = 9$, $\\frac{3^{16}+3^9}{3^9+3^2} = \\frac{3^9(3^7+1)}{3^2(3^7+1)} = 3^7$, y su raíz séptima es 3."
+ },
+ {
+  "id": 14,
+  "explanation": "Con vida media de 900 años, la cantidad restante se modela como $Q(t) = 20\\left(\\frac{1}{2}\\right)^{t/900}$: cada 900 años la sustancia se reduce a la mitad. En $t = 1200$ han pasado $\\frac{1200}{900} = \\frac{4}{3}$ vidas medias, así que queda $Q = 20\\left(\\frac{1}{2}\\right)^{4/3} = 20\\left(2^{-4/3}\\right)$ gramos.\n\nSi elegiste el exponente $-\\frac{3}{4}$, invertiste la fracción (pusiste vida media entre tiempo); y si tu opción empieza con 10, dividiste entre 2 de más: el factor $2^{-4/3}$ ya se encarga de todo el decaimiento. Por cierto, aunque las opciones digan «años», lo que se calcula son gramos."
+ },
+ {
+  "id": 15,
+  "explanation": "La clave es la diferencia de cuadrados: $a^2 - b^2 = (a+b)(a-b)$. Al tomar logaritmo, el producto se vuelve suma: $\\log_3(a^2-b^2) = \\log_3(a+b) + \\log_3(a-b)$. Despeja lo que te piden:\n\n$$R = \\log_3(a-b) = \\frac{1}{3} - \\frac{1}{4} = \\frac{4-3}{12} = \\frac{1}{12}$$\n\nEl problema se ve aparatoso, pero todo se reduce a factorizar y hacer bien una resta de fracciones."
+ },
+ {
+  "id": 16,
+  "explanation": "El punto buscado es $(2, y)$ y debe estar a la misma distancia de $A$ que de $B$. Iguala las distancias al cuadrado (así no cargas raíces):\n\n$$(2-(-2))^2 + (y-(-1))^2 = (2-6)^2 + (y-3)^2$$\n\nEso es $16 + (y+1)^2 = 16 + (y-3)^2$; los 16 se cancelan y al desarrollar: $y^2 + 2y + 1 = y^2 - 6y + 9$, de donde $8y = 8$ y $y = 1$. El punto $(2,1)$ equidista de ambos."
+ },
+ {
+  "id": 17,
+  "explanation": "Los puntos de trisección están a un tercio y a dos tercios del camino de $A$ a $B$. El desplazamiento total es $(4-(-4),\\; 2-6) = (8,-4)$, así que cada tercio avanza $\\left(\\frac{8}{3}, -\\frac{4}{3}\\right)$:\n\n$$P_1 = \\left(-4+\\tfrac{8}{3},\\; 6-\\tfrac{4}{3}\\right) = \\left(-\\tfrac{4}{3}, \\tfrac{14}{3}\\right) \\qquad P_2 = \\left(-4+\\tfrac{16}{3},\\; 6-\\tfrac{8}{3}\\right) = \\left(\\tfrac{4}{3}, \\tfrac{10}{3}\\right)$$\n\nSon los dos puntos de la opción B. La opción A no es: esos puntos, $(-2,5)$ y $(2,3)$, están a $\\frac{1}{4}$ y $\\frac{3}{4}$ del camino, o sea que dividen el segmento en cuartos, no en tercios."
+ },
+ {
+  "id": 18,
+  "explanation": "Cuando $P$ divide a $\\overline{AB}$ en razón $r = \\frac{AP}{PB} = \\frac{5}{4}$, sus coordenadas son $P = \\left(\\frac{x_1 + r x_2}{1+r},\\; \\frac{y_1 + r y_2}{1+r}\\right)$. Sustituye $A(72,18)$ y $B(-54,36)$:\n\n$$x = \\frac{72 + \\frac{5}{4}(-54)}{\\frac{9}{4}} = \\frac{4.5}{2.25} = 2 \\qquad y = \\frac{18 + \\frac{5}{4}(36)}{\\frac{9}{4}} = \\frac{63}{2.25} = 28$$\n\nAsí que $P(2,28)$. Verifica: de $A$ a $P$ el desplazamiento es $(-70, 10)$ y de $P$ a $B$ es $(-56, 8)$; como $\\frac{70}{56} = \\frac{10}{8} = \\frac{5}{4}$, la razón se cumple."
+ },
+ {
+  "id": 19,
+  "explanation": "El criterio de perpendicularidad dice que **el producto** de las pendientes vale $-1$: $m_1 \\cdot m_2 = -1$. Dicho de otro modo, una pendiente es el recíproco con signo cambiado de la otra: por ejemplo, $m_1 = 2$ y $m_2 = -\\frac{1}{2}$.\n\nNo lo confundas con el criterio de rectas paralelas, que es que las pendientes sean **iguales** ($m_1 = m_2$)."
+ },
+ {
+  "id": 20,
+  "explanation": "El punto medio promedia las coordenadas de los dos extremos, así que el extremo faltante $Q$ se despeja: $Q = (2x_M - x_P,\\; 2y_M - y_P)$. Sustituye: $Q = (2(4) - 5,\\; 2(2) - (-1)) = (3, 5)$.\n\nSi te dio $(3,3)$ (opción B), el tropiezo fue el signo en la ordenada: $2(2) - (-1) = 4 + 1 = 5$, porque restar un negativo es sumar."
+ },
+ {
+  "id": 21,
+  "explanation": "Completa el cuadrado para localizar el vértice: $f(x) = -(x^2 + 2x) + 24 = -(x+1)^2 + 25$. Es una parábola que abre hacia abajo, con máximo en $x = -1$, donde vale $f(-1) = 25$. La función alcanza ese valor y todos los menores, así que el rango es $(-\\infty, 25]$.\n\nSi contestaste $(-\\infty, 24]$, tomaste el término independiente como si fuera el máximo, pero 24 es $f(0)$, no el valor en el vértice."
+ },
+ {
+  "id": 22,
+  "explanation": "La raíz exige que el radicando no sea negativo: $\\frac{5-x}{x-1} \\ge 0$, y además $x \\ne 1$ para no dividir entre cero. Los puntos críticos son 1 y 5. Prueba signos: entre 1 y 5, numerador y denominador son positivos y la fracción es positiva; fuera de ese intervalo la fracción es negativa. En $x = 5$ el radicando vale 0 y $\\sqrt{0}$ sí existe: el 5 entra. En $x = 1$ el denominador se anula: el 1 queda fuera. Dominio: $(1, 5]$.\n\nSi marcaste $(1,5)$, sacaste el 5 de más: que el radicando valga cero no es problema, la raíz de cero es cero."
+ },
+ {
+  "id": 23,
+  "explanation": "En una función racional, los únicos valores fuera del dominio son los que anulan el **denominador**. Factorízalo: $x(x^2 - 9) = x(x-3)(x+3)$, que se hace cero en $x = 0$, $x = 3$ y $x = -3$. El dominio es $\\mathbb{R} - \\{0, -3, 3\\}$.\n\nLa opción A es la trampa clásica: sale de factorizar el numerador $(x-2)(x-3)$ y excluir sus ceros. Pero un numerador en cero no estorba (en $x = 2$ la función simplemente vale 0), y aunque el factor $(x-3)$ se pudiera cancelar, en $x = 3$ la función original sigue sin estar definida."
+ },
+ {
+  "id": 24,
+  "explanation": "Como los dos lados son valores absolutos (nunca negativos), puedes elevar al cuadrado sin alterar el sentido: $(2x-1)^2 \\le (7x+3)^2$, es decir, $(7x+3)^2 - (2x-1)^2 \\ge 0$. Factoriza como diferencia de cuadrados, suma por diferencia:\n\n$$(7x+3+2x-1)(7x+3-2x+1) = (9x+2)(5x+4) \\ge 0$$\n\nLas raíces son $x = -\\frac{2}{9}$ y $x = -\\frac{4}{5}$, y el producto es mayor o igual que cero **fuera** de ellas, incluyéndolas (la desigualdad admite el igual). Solución: $\\left(-\\infty, -\\frac{4}{5}\\right] \\cup \\left[-\\frac{2}{9}, \\infty\\right)$.\n\nSi marcaste la opción D, te quedaste con la región **entre** las raíces, que es justo donde pasa lo contrario: $|2x-1| > |7x+3|$."
+ },
+ {
+  "id": 25,
+  "explanation": "Una desigualdad $|u| > 5$ se abre en dos casos: $u > 5$ o $u < -5$. Aquí: $x^2 - 4 > 5$ da $x^2 > 9$, o sea $x < -3$ o $x > 3$; y $x^2 - 4 < -5$ pediría $x^2 < -1$, imposible porque un cuadrado nunca es negativo. Queda $(-\\infty, -3) \\cup (3, \\infty)$.\n\nSi elegiste $(-3,3)$, resolviste $x^2 < 9$: invertiste el sentido de la desigualdad. Y la opción D falla por el símbolo: esos dos rayos no se tocan, así que su intersección ($\\cap$) es vacía; el «o» de los dos casos se escribe con unión $\\cup$."
+ }
+]

@@ -1,0 +1,54 @@
+[
+ {
+  "id": 91,
+  "explanation": "Hay dos equilibrios y cada uno tiene su propia condición: el **traslacional** pide que la suma de fuerzas sea cero ($\\Sigma F = 0$: el cuerpo no se acelera), y el **rotacional** pide que la suma de torcas sea cero ($\\Sigma \\tau = 0$: el cuerpo no cambia su estado de rotación). Como el enunciado habla de torcas, se trata del equilibrio rotacional, y para que haya equilibrio la suma debe ser **igual** a cero.\n\nLa opción C tienta porque también dice \"igual\", pero el equilibrio traslacional se define con fuerzas, no con torcas."
+ },
+ {
+  "id": 92,
+  "explanation": "Todo sale de las definiciones:\n\n**Fuerza**: $F = ma$, sus unidades son $\\mathrm{kg \\cdot m/s^2}$ (el newton) → 1B.\n**Momento lineal**: $p = mv$, queda en $\\mathrm{kg \\cdot m/s}$ → 2C.\n**Torca**: $\\tau = Fd$, fuerza por distancia, o sea $\\mathrm{N \\cdot m}$ → 3A.\n**Gravedad**: es una aceleración, $\\mathrm{m/s^2}$ → 4D.\n\nUn atajo para ir rápido: la gravedad forzosamente lleva $\\mathrm{m/s^2}$, y eso descarta de un golpe las opciones A y D, que le asignan otras unidades."
+ },
+ {
+  "id": 93,
+  "explanation": "Mientras la fuerza no rebase el límite elástico, el material obedece la ley de Hooke y recupera su forma original al retirarla. Pasando ese límite entra en la zona plástica: al quitar la fuerza el cuerpo ya no regresa y queda **deformado de manera permanente**.\n\nRomperse (opción A) exige ir todavía más lejos, hasta el punto de ruptura, que viene después del límite elástico."
+ },
+ {
+  "id": 94,
+  "explanation": "La fricción depende de la fuerza normal: $f = \\mu N$. En el plano horizontal, la normal sostiene todo el peso: $N = mg$. En el plano inclinado solo sostiene la componente perpendicular del peso: $N = mg\\cos\\theta$, y como $\\cos\\theta < 1$, esa normal es más chica. Misma masa y mismo coeficiente, pero menos normal: la fricción en el plano inclinado es **menor**."
+ },
+ {
+  "id": 95,
+  "explanation": "Por el principio de Arquímedes, un cuerpo flota solo cuando su densidad es menor o igual que la del líquido. Aquí es al revés: el objeto es más denso que el líquido, así que su peso le gana incluso al empuje máximo (el de estar totalmente sumergido) y el objeto se va hasta el fondo.\n\nFlotar con la mitad del volumen sumergido (B) pasaría solo si el objeto tuviera la mitad de la densidad del líquido, y quedar en equilibrio donde lo sueltes (D) exigiría densidades exactamente iguales."
+ },
+ {
+  "id": 96,
+  "explanation": "La aceleración centrípeta es\n\n$$a_c = \\frac{v^2}{r}$$\n\nSustituyes $v = 2\\ \\mathrm{m/s}$ y $r = 5\\ \\mathrm{m}$:\n\n$$a_c = \\frac{2^2}{5} = \\frac{4}{5}\\ \\mathrm{m/s^2}$$\n\nSi te dio $\\frac{2}{5}$ (opción B), olvidaste elevar la velocidad al cuadrado; las opciones C y D salen de poner el radio arriba, con la fórmula invertida."
+ },
+ {
+  "id": 97,
+  "explanation": "La ecuación de estado del gas ideal es\n\n$$PV = nRT$$\n\ny es justo la relación entre presión, volumen y temperatura: si en un sistema de volumen $V$ cambia $T$, esta ecuación te dice cómo responde $P$ (a volumen fijo, presión y temperatura son proporcionales). Las opciones A y C involucran la entropía $S$ y la energía interna, que no aparecen en la ley del gas ideal, y la D es un acomodo de las mismas letras que no corresponde a ninguna ley física."
+ },
+ {
+  "id": 98,
+  "explanation": "El tiro vertical y los movimientos rectilíneos ocurren sobre una línea recta: les basta una sola dimensión. El **tiro parabólico** es el único de la lista que necesita dos dimensiones a la vez: avanza horizontalmente con velocidad constante mientras cae con aceleración vertical, y esa combinación dibuja una parábola que siempre queda contenida en un plano."
+ },
+ {
+  "id": 99,
+  "explanation": "Dentro de una celda (una pila), la corriente la llevan los iones moviéndose a través del electrolito, y ese viaje no es libre: los iones chocan con las moléculas de la solución y les cuesta trabajo avanzar. Esa oposición al paso de la carga es, por definición, una **resistencia**, y es **interna** porque ocurre adentro de la celda, no en el circuito de afuera. Por ella el voltaje en las terminales baja un poco cuando la pila entrega corriente.\n\nNo puede ser una \"corriente\" (A y B): el enunciado describe una dificultad para que pase la corriente, no la corriente misma."
+ },
+ {
+  "id": 100,
+  "explanation": "El amperímetro se conecta **en serie**, así que toda la corriente del circuito pasa por él; para no estorbar la medición, su resistencia debe ser lo más **baja** posible. Por eso al galvanómetro se le agrega una resistencia pequeña en paralelo (el *shunt* o derivación), que desvía casi toda la corriente y deja pasar por el galvanómetro solo la fracción que sí puede medir.\n\nLa resistencia alta (B) es la receta del voltímetro, que va en paralelo y debe robarle al circuito la mínima corriente posible."
+ },
+ {
+  "id": 101,
+  "explanation": "La resistencia de un conductor se calcula con\n\n$$R = \\frac{\\rho L}{A}$$\n\nSustituyes:\n\n$$R = \\frac{(1.72\\times10^{-8})(200)}{2\\times10^{-3}} = \\frac{3.44\\times10^{-6}}{2\\times10^{-3}} = 1.72\\times10^{-3}\\ \\Omega$$\n\nFíjate en el atajo: $200 \\div (2\\times10^{-3}) = 10^{5}$, y $10^{-8}\\times10^{5} = 10^{-3}$, así que el 1.72 de la resistividad se conserva tal cual y solo cambia el exponente."
+ },
+ {
+  "id": 102,
+  "explanation": "La potencia disipada en una resistencia depende del **cuadrado** de la corriente: $P = I^2R$. Si la corriente se vuelve $4I$:\n\n$$P' = (4I)^2 R = 16\\,I^2R = 16P$$\n\nLa potencia **crece en un factor de 16**. Si contestaste \"crece - 4\" (opción A), trataste la relación como si fuera lineal y se te fue el cuadrado."
+ },
+ {
+  "id": 103,
+  "explanation": "Es una caída libre desde el reposo, así que la altura cumple $h = \\frac{1}{2}gt^2$. Despejas el tiempo:\n\n$$t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(10)}{9.8}} = \\sqrt{2.04} \\approx 1.4\\ \\mathrm{s}$$\n\n(Con $g = 10\\ \\mathrm{m/s^2}$ sale $\\sqrt{2} \\approx 1.41\\ \\mathrm{s}$, que redondea igual.) Si te dio cerca de 1 s (opción A), lo más probable es que hayas olvidado el factor 2 y calculado $\\sqrt{h/g}$."
+ }
+]
