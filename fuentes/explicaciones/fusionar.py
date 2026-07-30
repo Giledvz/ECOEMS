@@ -43,6 +43,7 @@ def parte_revisar(t):
 
 def main(dry):
     porExamen = collections.defaultdict(dict)   # examen -> {id: explicación}
+    esperado_por_examen = {}                    # examen -> {ids que deben quedar}
     revisar, problemas, faltantes = [], [], []
     lotes = sorted(glob.glob(os.path.join(LOTES, '*.json')))
 
@@ -61,9 +62,11 @@ def main(dry):
             continue
         got = {e['id']: e.get('explanation', '') for e in sal if isinstance(e, dict)}
         sobran = set(got) - set(esperados)
-        faltan = set(esperados) - set(got)
-        if faltan:  problemas.append(f'{nombre}: faltan ids {sorted(faltan)[:8]}')
         if sobran:  problemas.append(f'{nombre}: ids que no son del lote {sorted(sobran)[:8]}')
+        # La cobertura NO se exige lote por lote: un reactivo puede venir de un lote
+        # de correcciones en vez del original (p.ej. si su clave cambió y hubo que
+        # reexplicarlo). Se revisa al final, por examen.
+        esperado_por_examen.setdefault(lote['examen'], set()).update(esperados)
         clave = {q['id']: q['clave'] for q in lote['preguntas']}
         for qid in esperados:
             if qid not in got:
@@ -76,6 +79,11 @@ def main(dry):
                                 'clave': clave[qid], 'nota': n})
             porExamen[lote['examen']][qid] = limpio
 
+    # cobertura por examen: qué reactivos quedaron sin explicación, venga de donde venga
+    sin_cubrir = {ex: sorted(ids - set(porExamen.get(ex, {})))
+                  for ex, ids in esperado_por_examen.items()}
+    sin_cubrir = {ex: v for ex, v in sin_cubrir.items() if v}
+
     print(f'lotes: {len(lotes)} · con salida: {len(lotes) - len(faltantes)}')
     print(f'explicaciones listas: {sum(len(v) for v in porExamen.values())}')
     print(f'marcadas REVISAR: {len(revisar)}')
@@ -83,6 +91,10 @@ def main(dry):
         print(f'\nSIN SALIDA ({len(faltantes)}):'); [print('  ·', x) for x in faltantes[:20]]
     if problemas:
         print(f'\nPROBLEMAS ({len(problemas)}):'); [print('  !', x) for x in problemas[:25]]
+    if sin_cubrir:
+        print('\nREACTIVOS SIN EXPLICACIÓN:')
+        for ex, ids in sin_cubrir.items():
+            print(f'  · {ex}: {len(ids)} — {ids[:10]}{"…" if len(ids) > 10 else ""}')
 
     if dry:
         print('\n(dry run: no se escribió nada)')
@@ -91,6 +103,8 @@ def main(dry):
     if problemas:
         print('\nNO se escribe nada mientras haya problemas. Corrígelos y vuelve a correr.')
         return
+    if sin_cubrir:
+        print('\nOJO: se escribe solo lo que hay; los de arriba quedan sin explicación.')
 
     for examen, mapa in sorted(porExamen.items()):
         p = os.path.join(RAIZ, examen)
