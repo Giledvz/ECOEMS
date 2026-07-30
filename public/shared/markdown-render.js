@@ -108,6 +108,30 @@
       mergedCol[ci] = (!skipMerge && sawEmpty && items.length > 0) ? items : null;
     }
 
+    // Columnas "por grupos": cada valor manda sobre las filas vacías que lo siguen
+    // (1. Homogénea → A, B, C · 2. Heterogénea → D, E). Sin esto la etiqueta queda
+    // pegada a la primera fila de su grupo y se ve descolgada respecto a los items
+    // que abarca; con el rowspan se centra verticalmente sobre todo el grupo.
+    // Es el caso que mergedCol descarta por tener vacías intercaladas.
+    var runCol = [];
+    for (var ci2 = 0; ci2 < nCols; ci2++) {
+      if (mergedCol[ci2]) { runCol[ci2] = null; continue; }
+      var runs = [];
+      var agrupable = true;
+      for (var ri2 = 0; ri2 < nRows; ri2++) {
+        var v2 = body[ri2][ci2] || '';
+        if (v2 === '') {
+          if (!runs.length) { agrupable = false; break; } // arranca vacía: no agrupar
+          runs[runs.length - 1].span++;
+        } else {
+          runs.push({ row: ri2, span: 1, value: v2 });
+        }
+      }
+      var hayGrupo = false;
+      for (var k = 0; k < runs.length; k++) if (runs[k].span > 1) hayGrupo = true;
+      runCol[ci2] = (agrupable && hayGrupo) ? runs : null;
+    }
+
     function makeCellStyle(i, isHeader) {
       var s = 'padding:10px 14px; font-variant-numeric:tabular-nums; color:var(--md-text); text-align:' + aligns[i] + '; vertical-align:middle;';
       if (i > 0) s += ' border-left:1px solid var(--md-border);';
@@ -142,6 +166,15 @@
             return '<td rowspan="' + nRows + '" style="' + makeCellStyle(i, false) + '">' + inner + '</td>';
           }
           return ''; // las demás filas no renderizan esta columna (cubierta por rowspan)
+        }
+        if (runCol[i]) {
+          var run = null;
+          for (var rk = 0; rk < runCol[i].length; rk++) {
+            if (runCol[i][rk].row === ri) { run = runCol[i][rk]; break; }
+          }
+          if (!run) return ''; // fila cubierta por el rowspan del grupo
+          return '<td rowspan="' + run.span + '" style="' + makeCellStyle(i, false) + '">'
+               + renderInlineMath(run.value) + '</td>';
         }
         return '<td style="' + makeCellStyle(i, false) + '">' + renderInlineMath(c) + '</td>';
       }).join('');
