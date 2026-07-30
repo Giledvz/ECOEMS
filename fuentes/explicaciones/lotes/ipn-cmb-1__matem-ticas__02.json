@@ -3,14 +3,14 @@
  "examen": "ipn-cmb-1.json",
  "titulo": "Simulacro IPN — Ciencias Médico Biológicas",
  "materia": "Matemáticas",
+ "lecturas": {
+  "L1": "Un dado se lanza 100 veces y se anotan los resultados en la siguiente tabla de frecuencias.\n\n| $x_i$ | $f_i$ | $x_i\\cdot f_i$ | $f_i\\cdot x_i^2$ |\n|---|---|---|---|\n| 1 | 12 | 12 | 12 |\n| 2 | 20 | 40 | 80 |\n| 3 | 10 | 30 | 90 |\n| 4 | 15 | 60 | 240 |\n| 5 | 20 | 100 | 500 |\n| 6 | 23 | 138 | 828 |\n| | 100 | 380 | 1750 |"
+ },
  "preguntas": [
   {
    "id": 26,
    "tema": "Integral indefinida",
    "texto": "Identificar una antiderivada de la función.\n\n$$f(x) = \\left(e^{x}+x\\right)^{3}\\left(e^{x}+1\\right)$$",
-   "contexto": null,
-   "figura": null,
-   "figuras_opciones": null,
    "opciones": {
     "A": "$F(x)=\\dfrac{\\left(e^{x}+x\\right)^{4}}{4}+5$",
     "B": "$F(x)=\\dfrac{\\left(e^{x}+1\\right)^{4}}{3}+8$",
@@ -23,9 +23,6 @@
    "id": 27,
    "tema": "Integral indefinida",
    "texto": "Determinar el valor de la constante de integración para el cual la gráfica de la antiderivada de la función $F(x)=xe^{x}$ pasa por el punto $(0,1)$",
-   "contexto": null,
-   "figura": null,
-   "figuras_opciones": null,
    "opciones": {
     "A": "0",
     "B": "1",
@@ -38,9 +35,6 @@
    "id": 28,
    "tema": "Integral indefinida",
    "texto": "Identificar la función $f(x)$ que cumple $f(\\pi)=1$ y cuya derivada es $f'(x)=\\cos(x)$",
-   "contexto": null,
-   "figura": null,
-   "figuras_opciones": null,
    "opciones": {
     "A": "$\\mathrm{sen}(x)+1$",
     "B": "$\\mathrm{sen}(x)-1$",
@@ -53,9 +47,6 @@
    "id": 29,
    "tema": "Integral indefinida",
    "texto": "Resolver la integral.\n\n$$\\int \\frac{dx}{\\sqrt{\\sqrt{x^{3}}+x}}$$",
-   "contexto": null,
-   "figura": null,
-   "figuras_opciones": null,
    "opciones": {
     "A": "$2\\sqrt{\\sqrt{x}+1}+C$",
     "B": "$4\\sqrt{\\sqrt{x}+1}+C$",
@@ -68,9 +59,6 @@
    "id": 30,
    "tema": "Probabilidad",
    "texto": "Una empresa envasa jugos de naranja, piña y manzana en botellas de 1 litro y 2 litros. Se sabe que el 60% de las botellas son de naranja y el 30% de piña. Además, el 80% de las botellas de naranja y el 70% de piña son de 2 litros, mientras que el 60% de las botellas de manzana son botellas de 1 litro. Calcular la probabilidad que de una botella de dos litros elegida al azar sea de jugo de naranja.",
-   "contexto": null,
-   "figura": null,
-   "figuras_opciones": null,
    "opciones": {
     "A": "$\\dfrac{1}{25}$",
     "B": "$\\dfrac{21}{73}$",
@@ -83,9 +71,6 @@
    "id": 31,
    "tema": "Probabilidad",
    "texto": "Los artículos que produce una fábrica provienen de tres máquinas $A$, $B$ y $C$. La máquina A produce 15% de los artículos, la máquina B 35% y la máquina C 50%. De acuerdo con datos históricos sabemos que 5%, 10% y 8%, respectivamente, de los artículos producidos por las máquinas es defectuoso. Calcular la probabilidad de que un artículo defectuoso elegido al azar provenga de la máquina A.",
-   "contexto": null,
-   "figura": null,
-   "figuras_opciones": null,
    "opciones": {
     "A": "$\\dfrac{7}{200}$",
     "B": "$\\dfrac{1}{25}$",
@@ -98,9 +83,6 @@
    "id": 32,
    "tema": "Estadística descriptiva",
    "texto": "100 observaciones agrupadas en clases de ancho 10 tienen mediana 25. Si el intervalo de la clase donde se ubica la mediana es $[20-30)$ y el número de observaciones menores a 20 es 45, determinar la frecuencia de la clase mediana.",
-   "contexto": null,
-   "figura": null,
-   "figuras_opciones": null,
    "opciones": {
     "A": "30",
     "B": "20",
@@ -113,16 +95,14 @@
    "id": 33,
    "tema": "Estadística descriptiva",
    "texto": "Calcular la media y la desviación.",
-   "contexto": null,
-   "figura": null,
-   "figuras_opciones": null,
    "opciones": {
     "A": "3.18 y 1.72",
     "B": "3.18 y 1.73",
     "C": "3.8 y 1.75",
     "D": "3.8 y 1.76"
    },
-   "clave": "C"
+   "clave": "C",
+   "lectura": "L1"
   }
  ]
 }

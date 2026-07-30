@@ -82,11 +82,19 @@ def pool_de(bloques):
     for fname, code in bloques:
         blk = load(fname)
         nom = blk['_meta']['bloque']
+        # Algunos reactivos comparten un estímulo (una tabla de frecuencias, un
+        # texto) que vive en "contexto" del primero y al que los demás apuntan con
+        # "comparte_contexto_con". Sin arrastrarlo, la pregunta llega al alumno sin
+        # sus datos y es imposible de contestar.
+        ctx = {q['n']: q['contexto'] for q in blk['questions'] if q.get('contexto')}
         for q in blk['questions']:
-            if usable(q):
-                out.append({**q, '_code': f"{code}.{q['n']}",
-                            '_tn': q.get('subtema', nom),
-                            '_src': f"{fname} · reactivo {q['n']}"})
+            if not usable(q):
+                continue
+            c = q.get('contexto') or ctx.get(q.get('comparte_contexto_con'))
+            out.append({**q, '_code': f"{code}.{q['n']}",
+                        '_tn': q.get('subtema', nom),
+                        '_src': f"{fname} · reactivo {q['n']}",
+                        **({'_ctx': c} if c else {})})
     return out
 
 def pool_matematicas(n, usados):

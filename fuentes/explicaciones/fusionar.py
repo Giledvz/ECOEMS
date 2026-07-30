@@ -20,7 +20,10 @@ def revisa_texto(t):
     prob = []
     if not t.strip():
         prob.append('vacía')
-    for tag in re.findall(r'<\s*/?\s*([a-zA-Z][a-zA-Z0-9]*)', t):
+    # Una etiqueta de verdad cierra con ">". Sin exigirlo, un "menor que" dentro de
+    # LaTeX se confunde con HTML: la ordenación de electronegatividades
+    # $Sc<Be<Cr<As<Cl$ se leía como cuatro etiquetas <Be> <Cr> <As> <Cl>.
+    for tag in re.findall(r'<\s*/?\s*([a-zA-Z][a-zA-Z0-9]*)(?:\s[^<>]*)?\s*/?>', t):
         if tag.lower() not in TAGS_OK:
             prob.append(f'etiqueta HTML <{tag}>')
     if t.count('$') % 2:
