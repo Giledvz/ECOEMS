@@ -13,7 +13,7 @@
 
   <!-- Normal (línea punteada) -->
   <line x1="350" y1="220" x2="350" y2="40" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 4"/>
-  <text x="362" y="55" font-size="17" fill="#444" font-style="italic">normal</text>
+  <text x="362" y="55" font-size="17" fill="currentColor" font-style="italic">normal</text>
 
   <!-- Rayo incidente (llega al punto de incidencia con 25° sobre la superficie) -->
   <line x1="130" y1="125" x2="350" y2="220" stroke="#c2410c" stroke-width="2.4" marker-end="url(#ahOrange)"/>

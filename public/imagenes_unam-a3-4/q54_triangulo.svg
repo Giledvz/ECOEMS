@@ -1,6 +1,6 @@
 <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 460" width="540" height="460" font-family="'Latin Modern Roman', Georgia, 'Times New Roman', serif">
 <!-- Triángulo: V1=(110,380) ángulo θ (abajo-izq), V2=(430,380) ángulo recto (abajo-der), V3=(430,80) (arriba) -->
-  <path d="M 110 380 L 430 380 L 430 80 Z" fill="#f8fafc" stroke="currentColor" stroke-width="2.4"/>
+  <path d="M 110 380 L 430 380 L 430 80 Z" fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="2.4"/>
 
   <!-- Cuadrito de ángulo recto en V2 (abajo-der) -->
   <path d="M 430 360 L 410 360 L 410 380" fill="none" stroke="currentColor" stroke-width="1.8"/>
@@ -17,7 +17,7 @@
 
   <!-- Etiqueta hipotenusa = √13 -->
   <text x="240" y="220" text-anchor="middle" font-size="22" transform="rotate(-43.15 240 220)">
-    <tspan>√</tspan><tspan style="text-decoration:overline">13</tspan>
+    <tspan>√13</tspan>
   </text>
 
   <!-- Corchete decorativo en cateto horizontal -->
