@@ -1,0 +1,118 @@
+[
+ {
+  "id": 26,
+  "explanation": "Para límites con seno cuando $x \\to 0$, usa el límite notable $\\lim_{x\\to 0}\\frac{\\mathrm{sen}(kx)}{kx}=1$: cerca de cero, $\\mathrm{sen}(kx)$ se comporta como $kx$. Aplicándolo arriba y abajo:\n\n$$\\lim_{x\\to 0}\\frac{\\mathrm{sen}^{2}(3x)}{\\mathrm{sen}^{2}(5x)} = \\lim_{x\\to 0}\\frac{(3x)^{2}}{(5x)^{2}} = \\frac{9x^{2}}{25x^{2}} = \\frac{9}{25}$$\n\nSi contestaste $\\frac{3}{5}$ (opción A), se te olvidó que ambos senos están al cuadrado: el cociente $\\frac{3}{5}$ también debe elevarse."
+ },
+ {
+  "id": 27,
+  "explanation": "Para que $f$ sea continua en $x=3$, las dos ramas deben valer lo mismo justo ahí. La de la izquierda da $2(3)-3=3$; la de la derecha debe llegar a ese mismo valor:\n\n$$3(3)+k = 3 \\quad\\Rightarrow\\quad 9+k=3 \\quad\\Rightarrow\\quad k=-6$$\n\nComprueba: con $k=-6$ ambas ramas valen 3 en $x=3$ y la gráfica queda sin salto. La opción A (3) es el valor donde empatan las ramas, no el valor de $k$."
+ },
+ {
+  "id": 28,
+  "explanation": "Una función decrece donde su derivada es negativa. Deriva y factoriza:\n\n$$f'(x) = 3x^{2}-12x+9 = 3(x-1)(x-3)$$\n\nLos puntos críticos son $x=1$ y $x=3$. Entre ellos la derivada es negativa (prueba con $x=2$: $f'(2)=3(1)(-1)=-3<0$), así que $f$ decrece exactamente en $(1,3)$. La opción D es donde ambos factores tienen el mismo signo, es decir, donde la función *crece*."
+ },
+ {
+  "id": 29,
+  "explanation": "Encuentra los puntos críticos derivando e igualando a cero:\n\n$$f'(x) = -4x^{3}+12x^{2} = -4x^{2}(x-3) = 0 \\quad\\Rightarrow\\quad x=0,\\; x=3$$\n\nEn $x=0$ no hay extremo: el factor $x^{2}$ no deja que la derivada cambie de signo. En $x=3$ la derivada pasa de positiva a negativa, así que ahí está el máximo. Piden su *valor*:\n\n$$f(3) = -(3)^{4}+4(3)^{3}-10 = -81+108-10 = 17$$\n\nSi te dio $-17$ (opción D), se te fue un signo al evaluar; revisa que $-(3)^{4}=-81$ y $4(27)=+108$."
+ },
+ {
+  "id": 30,
+  "explanation": "Integra término a término: sube el exponente en 1 y divide entre el nuevo exponente.\n\n$$\\int \\tfrac{7}{3}x^{4/3}\\,dx = \\tfrac{7}{3}\\cdot\\tfrac{x^{7/3}}{7/3} = x^{7/3}, \\qquad \\int -8x^{3}\\,dx = -2x^{4}, \\qquad \\int 5\\,dx = 5x$$\n\nToda antiderivada es $x^{7/3}-2x^{4}+5x+C$ y, como piden *una*, la constante puede ser cualquier número: la opción C es esta expresión con $C=-10$. Fíjate cómo el coeficiente $\\frac{7}{3}$ se cancela al dividir entre $\\frac{7}{3}$, por eso el primer término queda con coeficiente 1; la opción A resulta de integrar $x^{4/3}$ olvidando ese coeficiente."
+ },
+ {
+  "id": 31,
+  "explanation": "El $x\\,dx$ del numerador te pide un cambio de variable: con $u = 1-x^{2}$ tienes $du = -2x\\,dx$, o sea $x\\,dx = -\\frac{du}{2}$. La integral se convierte en\n\n$$-\\frac{1}{2}\\int u^{-2}\\,du = -\\frac{1}{2}\\left(-\\frac{1}{u}\\right)+C = \\frac{1}{2(1-x^{2})}+C$$\n\nFíjate en los dos signos negativos que se cancelan: perder uno de ellos lleva a la opción A. Y las opciones con logaritmo (C y D) no aplican aquí: $\\ln$ aparece al integrar $u^{-1}$, no $u^{-2}$."
+ },
+ {
+  "id": 32,
+  "explanation": "Prueba el cambio $u = 2\\sqrt{x}$. Su diferencial es $du = \\frac{2}{2\\sqrt{x}}\\,dx = \\frac{dx}{\\sqrt{x}}$, que es exactamente lo que acompaña al coseno. La integral queda limpia:\n\n$$\\int \\cos(u)\\,du = \\mathrm{sen}(u)+C = \\mathrm{sen}\\left(2\\sqrt{x}\\right)+C$$\n\nVerifica derivando: $\\left[\\mathrm{sen}(2\\sqrt{x})\\right]' = \\cos(2\\sqrt{x})\\cdot\\frac{1}{\\sqrt{x}}$, justo el integrando. El factor de la regla de la cadena se cancela completito, así que no sobra ningún $\\frac{1}{2}$ como sugiere la opción B."
+ },
+ {
+  "id": 33,
+  "explanation": "Antes de lanzarte a integrar por partes cinco veces, revisa la simetría: $x^{5}$ es función impar y $\\cos(x)$ es par, así que el producto $x^{5}\\cos(x)$ es impar. Y la integral de una función impar en un intervalo simétrico como $[-\\pi,\\pi]$ vale cero: el área que acumula del lado derecho se cancela exactamente con la del izquierdo.\n\n$$\\int_{-\\pi}^{\\pi} x^{5}\\cos(x)\\,dx = 0$$\n\nCuando veas límites simétricos $[-a,a]$, checa la paridad primero: te puede ahorrar todo el cálculo."
+ },
+ {
+  "id": 34,
+  "explanation": "Cada máquina aporta defectuosos según cuánto produce: es probabilidad total, un promedio *ponderado* por la producción.\n\n$$P(\\text{defectuoso}) = (0.15)(0.05)+(0.35)(0.10)+(0.50)(0.08) = 0.0075+0.035+0.04 = 0.0825 = 8.25\\%$$\n\nEl error a evitar es promediar 5%, 10% y 8% a secas: la máquina C fabrica la mitad de todos los artículos, así que su 8% pesa mucho más que el 5% de A, que solo fabrica el 15%."
+ },
+ {
+  "id": 35,
+  "explanation": "Cada valor cuenta tantas veces como se repite. Suma todo y divide entre el número total de datos, que es $6+14+20=40$:\n\n$$\\bar{x} = \\frac{6(6)+14(8)+20(9)}{40} = \\frac{36+112+180}{40} = \\frac{328}{40} = 8.2$$\n\nEl tropiezo común es promediar $6$, $8$ y $9$ como si aparecieran una sola vez, o dividir entre 3: divide siempre entre los 40 datos reales."
+ },
+ {
+  "id": 36,
+  "explanation": "Pásate a sumas, que se manejan más fácil que los promedios. Seis números con media 30 suman $6\\times 30 = 180$; al excluir uno, los cinco restantes tienen media 29, o sea suman $5\\times 29 = 145$. El excluido es la diferencia:\n\n$$180-145 = 35$$\n\nCheca que tiene sentido: la media bajó al quitarlo, señal de que ese número estaba *por arriba* del promedio. Contestar 30 (opción B) supondría que el excluido valía justo la media, pero entonces la media no habría cambiado."
+ },
+ {
+  "id": 37,
+  "explanation": "La media armónica de $n$ números es $n$ entre la suma de los recíprocos:\n\n$$H = \\frac{4}{\\frac{1}{10}+\\frac{1}{12}+\\frac{1}{20}+\\frac{1}{30}}$$\n\nCon común denominador 60, la suma de abajo es $\\frac{6+5+3+2}{60} = \\frac{16}{60} = \\frac{4}{15}$, así que\n\n$$H = 4 \\div \\frac{4}{15} = 15$$\n\nSi te dio 18 (opción D), calculaste la media aritmética; la armónica siempre resulta menor o igual que ella."
+ },
+ {
+  "id": 78,
+  "explanation": "Los tres componentes son sólidos, así que lo aprovechable es el tamaño de partícula: piedras grandes, arena mediana y arcilla muy fina. El **tamizado** los separa haciéndolos pasar por mallas de distinta abertura. La decantación y la centrifugación (opciones A y D) requieren un medio líquido donde algo se asiente, y el magnetismo solo funciona si un componente es atraído por un imán, que aquí no es el caso."
+ },
+ {
+  "id": 79,
+  "explanation": "Fíjate en quién entra y quién sale: el magnesio llega como elemento libre y le quita su lugar al hidrógeno del HCl, que sale también como elemento libre ($H_{2}$). Un elemento que desplaza a otro de su compuesto es la firma de la **simple sustitución**: $A + BC \\rightarrow AC + B$. Para ser doble sustitución (opción C) se necesitan *dos compuestos* que intercambien parejas, y aquí el Mg no es compuesto, es elemento."
+ },
+ {
+  "id": 80,
+  "explanation": "Dos pasos. Primero las moles que necesita esa solución: molaridad por volumen,\n\n$$n = (0.3)(0.05) = 0.015 \\text{ mol}$$\n\nLuego conviértelas a gramos con la masa molar del MgS: $24.3+32.1 \\approx 56.4$ g/mol.\n\n$$m = 0.015 \\times 56.4 \\approx 0.84 \\text{ g}$$\n\nSi contestaste 0.015 g (opción C), te quedaste en las moles: faltó multiplicar por la masa molar para pasar a gramos."
+ },
+ {
+  "id": 81,
+  "explanation": "La intensidad de corriente se mide en **amperes** (A), una de las siete unidades *base* del SI. El distractor fuerte es el coulomb (opción D), que mide carga eléctrica, no corriente; la relación entre ambos es $1\\ A = 1\\ C/s$: un ampere es un coulomb de carga pasando cada segundo. El joule mide energía y el faraday es una unidad de carga usada en electroquímica, no del SI."
+ },
+ {
+  "id": 82,
+  "explanation": "Clasifica según lo que cruza la frontera del sistema. El termo tapado no deja entrar ni salir materia (el café no se derrama ni escapa el vapor), pero sí intercambia energía con el ambiente: la prueba es que después de unas horas el café se enfría. Materia no, energía sí: sistema **cerrado**. Sería aislado (opción A) solo si tampoco pasara energía; un termo real nada más *retrasa* el enfriamiento, y el propio enunciado te dice que al final se enfría."
+ },
+ {
+  "id": 83,
+  "explanation": "En la neutralización, el ácido y la base se anulan mutuamente: los iones $H^{+}$ del ácido se unen a los $OH^{-}$ de la base formando **agua**, y los iones restantes forman una **sal**. El ejemplo clásico:\n\n$$HCl + NaOH \\rightarrow NaCl + H_{2}O$$\n\nCuidado con la opción D: ácido y base son los *reactivos* con los que empieza la neutralización; la pregunta pide los *productos* que se obtienen."
+ },
+ {
+  "id": 84,
+  "explanation": "Los **isótopos** son átomos del mismo elemento: comparten número de protones (por eso son el mismo elemento) pero difieren en neutrones y, por lo tanto, en masa. El ejemplo típico: carbono-12 y carbono-14, ambos con 6 protones pero con 6 y 8 neutrones. No lo confundas con isómero (opción C), que es un concepto de química orgánica: compuestos con la misma fórmula molecular pero distinto acomodo de átomos."
+ },
+ {
+  "id": 85,
+  "explanation": "Esa es justo la definición del **estado (o número) de oxidación**: la cuenta de electrones que un átomo cede (queda con número positivo) o gana (queda con número negativo) al formar un compuesto. En el NaCl, por ejemplo, el sodio está en $+1$ porque cedió un electrón y el cloro en $-1$ porque lo ganó. La electronegatividad (opción D) no cuenta electrones ganados o cedidos: mide la tendencia del átomo a atraerlos en un enlace."
+ },
+ {
+  "id": 86,
+  "explanation": "Arranca por lo seguro: el oxígeno trabaja casi siempre con $-2$. Los 3 oxígenos aportan $3(-2)=-6$ y, como el compuesto es neutro, los 2 aluminios deben sumar $+6$, es decir, $+3$ cada uno:\n\n$$2(+3)+3(-2) = 0$$\n\nSi elegiste C ($+2$ y $-3$), leíste los subíndices como si fueran las cargas. Es al revés: las cargas se cruzan para volverse subíndices, $Al^{+3}$ y $O^{-2}$ producen $Al_{2}O_{3}$."
+ },
+ {
+  "id": 87,
+  "explanation": "Los óxidos ácidos o **anhídridos** resultan de combinar un *no metal* con oxígeno, como $CO_{2}$ o $SO_{3}$; se llaman ácidos porque al reaccionar con agua generan oxiácidos. Los hidróxidos (opción B) son lo contrario en carácter: bases con grupo OH, que vienen de óxidos metálicos. Y los hidrácidos (opción D) son ácidos de hidrógeno más un no metal, pero *sin* oxígeno, como el HCl."
+ },
+ {
+  "id": 88,
+  "explanation": "La reacción de **síntesis** (o combinación) une dos o más sustancias en un solo producto: $A + B \\rightarrow AB$, como en $2H_{2}+O_{2} \\rightarrow 2H_{2}O$. La opción A (análisis) es exactamente el proceso inverso: análisis o descomposición es romper un compuesto en sustancias más simples, $AB \\rightarrow A + B$."
+ },
+ {
+  "id": 89,
+  "explanation": "Balancea primero: $FeCl_{3} + 3NaOH \\rightarrow Fe(OH)_{3} + 3NaCl$. Entre $FeCl_{3}$ y $Fe(OH)_{3}$ la relación es 1 a 1, así que todo se reduce a convertir unidades. Masa molar del $FeCl_{3}$: $55.8+3(35.5) \\approx 162.3$ g/mol, entonces\n\n$$n = \\frac{980}{162.3} \\approx 6.04 \\text{ mol}$$\n\nque por la relación 1 a 1 son también 6.04 mol de $Fe(OH)_{3}$. Con su masa molar, $55.8+3(17) \\approx 106.9$ g/mol:\n\n$$m = 6.04 \\times 106.9 \\approx 645.5 \\text{ g}$$"
+ },
+ {
+  "id": 90,
+  "explanation": "Suma la masa molar del $KNO_{3}$: $K=39.1$, $N=14$ y $3O=48$, total $\\approx 101.1$ g/mol. El porcentaje en peso del nitrógeno es su aporte entre el total:\n\n$$\\%N = \\frac{14}{101.1}\\times 100 \\approx 13.8\\%$$\n\nLas otras opciones son los porcentajes de los demás elementos del mismo compuesto: 38.7% corresponde al potasio y 47.5% al oxígeno. Lee con cuidado cuál elemento te piden."
+ },
+ {
+  "id": 91,
+  "explanation": "El éter es un oxígeno haciendo de puente entre dos cadenas de carbono: R–O–R'. Las demás opciones son otros grupos funcionales: R–OH es alcohol, R–CO–R' es cetona y R–COO–R' es éster. El éster (opción D) es el que más se confunde por el nombre parecido, pero se distingue porque además del oxígeno puente tiene un carbono con doble enlace a otro oxígeno."
+ },
+ {
+  "id": 92,
+  "explanation": "Las familias de hidrocarburos se distinguen por su enlace carbono-carbono: alcanos con enlaces sencillos, alquenos con al menos un doble enlace y alquinos con al menos un **triple** enlace. La terminación del nombre te lo recuerda: -ano, -eno, -ino. El alquino más famoso es el acetileno (etino), $HC \\equiv CH$. Si contestaste 'doble' (opción A), esa es la marca de los alquenos, no de los alquinos."
+ },
+ {
+  "id": 93,
+  "explanation": "La unidad base de temperatura en el SI es el **kelvin** (K), una escala absoluta cuyo cero ($0\\ K = -273.15\\ ^{\\circ}C$) es la mínima temperatura posible; se dice 'kelvin' a secas, sin 'grados'. El Celsius (opción B) es el distractor natural porque es el de uso diario, pero es una escala derivada, no la unidad base del SI. Y el joule no mide temperatura, mide energía."
+ },
+ {
+  "id": 94,
+  "explanation": "Gay-Lussac describe un gas a **volumen constante**: la presión es directamente proporcional a la temperatura absoluta, $P/T$ constante, que entre dos estados se escribe\n\n$$\\frac{P_{1}}{T_{1}} = \\frac{P_{2}}{T_{2}}$$\n\nLas demás son las otras leyes de los gases: $P_{1}V_{1}=P_{2}V_{2}$ es Boyle (temperatura constante), $\\frac{V_{1}}{T_{1}}=\\frac{V_{2}}{T_{2}}$ es Charles (presión constante) y $PV=nRT$ es la ecuación general del gas ideal. Truco: la de Gay-Lussac es la única sin $V$, porque el volumen no cambia."
+ }
+]

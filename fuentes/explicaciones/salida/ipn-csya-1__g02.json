@@ -1,0 +1,150 @@
+[
+ {
+  "id": 1,
+  "explanation": "Aquí no hay fórmula, hay conteo: fíjate cuántas letras se brincan entre términos en el abecedario (incluida la Ñ). De A a C se brinca 1 letra (la B); de C a F, 2 (D, E); de F a J, 3 (G, H, I); de J a L, otra vez 1; de L a Ñ, 2 (M, N); de Ñ a R, 3 (O, P, Q). El patrón de brincos es 1, 2, 3 y se repite en ciclo. Después de la R toca brincar una sola letra (la S), y caes en la **T**.\n\nSi marcaste U, seguiste con 2 brincos: el ciclo reinicia en 1 después del 3."
+ },
+ {
+  "id": 2,
+  "explanation": "Analiza numeradores y denominadores por separado. Arriba: $5, 10, 15, 20$ son los múltiplos de 5, o sea $5n$. Abajo: $6, 13, 20, 27$ crecen de 7 en 7 partiendo de 6, o sea $6 + 7(n-1) = 7n - 1$. Juntando:\n\n$$a_n = \\frac{5n}{7n-1}$$\n\nComprueba con $n=1$: $\\frac{5}{7(1)-1} = \\frac{5}{6}$, justo el primer término. Esa misma prueba descarta la opción A: $7(1)+1 = 8$, y el primer denominador es 6, no 8."
+ },
+ {
+  "id": 3,
+  "explanation": "Una sucesión geométrica multiplica cada término por una razón constante, y su término general es de la forma $a_n = a_1\\, r^{n-1}$. Eso es exactamente $3(2)^{n-1}$: genera $3, 6, 12, 24, \\ldots$, siempre multiplicando por 2. La opción D, $6+12(n-1)$, es el molde de una sucesión **aritmética** (suma 12 cada vez), y $2n^3$ y $n^2+n+2$ no mantienen ni razón ni diferencia constantes."
+ },
+ {
+  "id": 4,
+  "explanation": "En una sucesión aritmética la diferencia entre consecutivos es constante: $3^{x+3} - 3^{x+2} = 135 - 3^{x+3}$. Para no pelearte con los exponentes llama $t = 3^{x+2}$; como $3^{x+3} = 3t$, la ecuación queda\n\n$$3t - t = 135 - 3t \\;\\Rightarrow\\; 5t = 135 \\;\\Rightarrow\\; t = 27$$\n\nEntonces $3^{x+2} = 3^3$, se igualan exponentes y $x = 1$. Comprueba: los términos quedan $27, 81, 135$, con diferencia constante de 54."
+ },
+ {
+  "id": 5,
+  "explanation": "Reflejar respecto a la recta horizontal $y = -0.5$ no toca las abscisas; la ordenada nueva cumple $y' = 2(-0.5) - y = -1 - y$ (la recta queda justo a la mitad entre el punto y su reflejo). Aplícalo a los tres vértices: $A(-1,1)$ da $y' = -2$; $B(1,3)$ da $y' = -4$; $C(2,2)$ da $y' = -3$. La suma pedida es $-2 - 4 - 3 = -9$.\n\nSi contestaste 6, sumaste las ordenadas del triángulo original, sin reflejarlo."
+ },
+ {
+  "id": 6,
+  "explanation": "En enteros consecutivos la media cae exactamente a la mitad entre el primero, $a$, y el último, $a + 49$:\n\n$$\\frac{a + (a+49)}{2} = 42.5 \\;\\Rightarrow\\; 2a + 49 = 85 \\;\\Rightarrow\\; a = 18$$\n\nTiene lógica que la media termine en $.5$: con 50 números (cantidad par) queda entre los dos centrales, que aquí son 42 y 43. La lista va del 18 al 67."
+ },
+ {
+  "id": 7,
+  "explanation": "Lee cada frase de afuera hacia adentro: la operación que se nombra primero es la que se aplica al final. \"El doble del cubo\" es $2(n^3) = 2n^3$ (1B); \"el cubo del doble\" es $(2n)^3$ (2C); \"el triple del cuadrado\" es $3n^2$ (3D); \"el cuadrado del triple\" es $(3n)^2$ (4A). El paréntesis no es adorno: $(2n)^3 = 8n^3$, que no es lo mismo que $2n^3$. La combinación correcta es 1B, 2C, 3D, 4A."
+ },
+ {
+  "id": 8,
+  "explanation": "Para garantizar que un número sea par, escríbelo como $2x$. Los pares consecutivos van de 2 en 2, así que los tres números son $2x$, $2x+2$ y $2x+4$, y el producto es $(2x)(2x+2)(2x+4)$. La opción C es el anzuelo: $2x, 2x+1, 2x+2$ son enteros consecutivos, pero $2x+1$ es impar. Y en la B, $x, x+2, x+4$ solo resultan pares cuando $x$ lo es, cosa que la expresión no garantiza."
+ },
+ {
+  "id": 9,
+  "explanation": "Con términos enteros consecutivos, una fracción propia positiva es de la forma $\\frac{n}{n+1}$. Impón la condición:\n\n$$\\frac{n}{n+1} < \\frac{11}{13} \\;\\Rightarrow\\; 13n < 11n + 11 \\;\\Rightarrow\\; n < 5.5$$\n\n(se puede multiplicar cruzado porque todo es positivo). Los valores posibles son $n = 1, 2, 3, 4, 5$: las fracciones $\\frac{1}{2}, \\frac{2}{3}, \\frac{3}{4}, \\frac{4}{5}, \\frac{5}{6}$. Son **5**. La siguiente, $\\frac{6}{7} \\approx 0.857$, ya rebasa $\\frac{11}{13} \\approx 0.846$."
+ },
+ {
+  "id": 10,
+  "explanation": "Agrupa las fracciones que comparten denominador:\n\n$$R = \\frac{2x^2 - 8}{x+2} + \\frac{2x^2 - 8}{x-2}$$\n\nEl numerador común se factoriza: $2x^2 - 8 = 2(x+2)(x-2)$, así que cada fracción se simplifica de golpe: la primera queda $2(x-2) = 2x-4$ y la segunda $2(x+2) = 2x+4$. Sumando, $R = (2x-4) + (2x+4) = 4x$.\n\nREVISAR: resolviendo el enunciado tal cual, obtengo $4x$ (opción A), no la clave oficial D ($x-4$). Sospecho errata en la clave o en el enunciado original."
+ },
+ {
+  "id": 11,
+  "explanation": "Dividir es multiplicar por el recíproco:\n\n$$N = \\frac{\\sqrt{x}+2}{x+4}\\cdot\\frac{\\sqrt{x}-2}{x-4}$$\n\nEn el numerador aparece un producto de conjugados: $(\\sqrt{x}+2)(\\sqrt{x}-2) = x - 4$. Ese factor se cancela con el $x-4$ del denominador y queda\n\n$$N = \\frac{1}{x+4}$$\n\nOjo: el factor que sobrevive es $x+4$, que no se factoriza con $\\sqrt{x}$; por eso la respuesta no es $\\frac{1}{x-4}$, que es justo el factor que se fue."
+ },
+ {
+  "id": 12,
+  "explanation": "Traduce todo a exponentes fraccionarios:\n\n$$S = \\left(b\\cdot b^{-1/\\beta}\\right)^{1/k} = b^{\\frac{1}{k}\\left(1-\\frac{1}{\\beta}\\right)} = b^{\\frac{\\beta-1}{\\beta k}}$$\n\nAhora entra la condición: $\\beta k - \\beta + 1 = 0$ equivale a $\\beta k = \\beta - 1$. Sustituye en el exponente:\n\n$$\\frac{\\beta-1}{\\beta k} = \\frac{\\beta-1}{\\beta-1} = 1$$\n\nPor lo tanto $S = b^{1}$."
+ },
+ {
+  "id": 13,
+  "explanation": "Haz el cambio $u = \\log_3 x$ y queda una cuadrática ordinaria: $u^2 - 5u - 24 = 0$, que factoriza como $(u-8)(u+3) = 0$, con soluciones $u = 8$ y $u = -3$. De ahí $x_1 = 3^8$ y $x_2 = 3^{-3}$, y el producto es\n\n$$x_1 x_2 = 3^{8+(-3)} = 3^5$$\n\nAtajo: por Vieta, la suma de las raíces en $u$ es 5, y como $x_1 x_2 = 3^{u_1+u_2}$, el producto sale sin factorizar. Si marcaste $3^{11}$, tomaste $u = -3$ como si fuera $+3$."
+ },
+ {
+  "id": 14,
+  "explanation": "Dos hechos fijos de los polígonos convexos: los ángulos exteriores siempre suman $360°$ y los interiores suman $180°(n-2)$. Plantea la condición del enunciado:\n\n$$360 = 180(n-2) - 1260 \\;\\Rightarrow\\; 180(n-2) = 1620 \\;\\Rightarrow\\; n - 2 = 9 \\;\\Rightarrow\\; n = 11$$\n\nEl polígono de 11 lados es el **undecágono** (también llamado endecágono)."
+ },
+ {
+  "id": 15,
+  "explanation": "Los ángulos exteriores de cualquier polígono suman $360°$; si en este polígono regular cada uno mide $30°$, tiene $n = \\frac{360}{30} = 12$ lados. Ahora la fórmula de diagonales:\n\n$$D = \\frac{n(n-3)}{2} = \\frac{12\\cdot 9}{2} = 54$$\n\nSi te dio 44, calculaste las diagonales de un polígono de 11 lados: revisa primero el paso $n = 360/30$."
+ },
+ {
+  "id": 16,
+  "explanation": "Es la propiedad del ángulo **exterior**: cuando dos secantes, dos tangentes o una de cada una se cortan en un punto fuera de la circunferencia, el ángulo que forman mide la mitad de la **diferencia** de los arcos que abarcan sus lados. La palabra clave del enunciado es \"diferencia\": el ángulo interior (cuerdas que se cortan dentro) usa la mitad de la **suma** de los arcos, y el inscrito usa la mitad de un solo arco."
+ },
+ {
+  "id": 17,
+  "explanation": "La expresión es un trinomio cuadrado perfecto:\n\n$$f(x) = (\\cos x + 1)^2$$\n\nComo $\\cos x$ vive en $[-1,1]$, la base $\\cos x + 1$ recorre $[0,2]$, y al elevar al cuadrado se obtiene $[0,4]$: mínimo 0 cuando $\\cos x = -1$ y máximo 4 cuando $\\cos x = 1$. Como es un cuadrado, $f(x)$ jamás es negativa, lo que descarta $[-4,0]$; y $[4,0]$ y $[0,-4]$ ni siquiera están bien escritos como intervalos: el extremo menor va primero."
+ },
+ {
+  "id": 18,
+  "explanation": "Como ambas rectas ya tienen los mismos coeficientes $A = 2$ y $B = 5$, aplica directo la fórmula de distancia entre paralelas:\n\n$$d = \\frac{|C_1 - C_2|}{\\sqrt{A^2+B^2}} = \\frac{|-3-(-15)|}{\\sqrt{4+25}} = \\frac{12}{\\sqrt{29}} = \\frac{12}{29}\\sqrt{29}$$\n\nEl 18 de la opción B sale de sumar los términos independientes ($3+15$) en lugar de restarlos: cuida los signos, $|-3-(-15)| = 12$."
+ },
+ {
+  "id": 19,
+  "explanation": "Primero localiza el punto de cruce resolviendo el sistema: de $x - 6y = 4$ despeja $x = 4 + 6y$ y sustitúyelo en la otra ecuación:\n\n$$5(4+6y) - 2y = -8 \\;\\Rightarrow\\; 28y = -28 \\;\\Rightarrow\\; y = -1,\\quad x = -2$$\n\nCon el punto $(-2,-1)$ y pendiente 2, usa punto-pendiente: $y + 1 = 2(x + 2)$, que se reordena como $2x - y + 3 = 0$. Verifica: $2(-2) - (-1) + 3 = 0$, sí pasa por el punto."
+ },
+ {
+  "id": 20,
+  "explanation": "Paralelas significa misma pendiente. Para una recta $Ax + By + C = 0$ la pendiente es $-\\frac{A}{B}$: la de $\\ell_1$ es $-\\frac{2}{-7} = \\frac{2}{7}$ y la de $\\ell_2$ es $-\\frac{1}{a}$. Iguala:\n\n$$-\\frac{1}{a} = \\frac{2}{7} \\;\\Rightarrow\\; 2a = -7 \\;\\Rightarrow\\; a = -\\frac{7}{2}$$\n\nSi obtuviste $\\frac{7}{2}$, se te escapó el signo al despejar; y $\\frac{2}{7}$ es la pendiente de $\\ell_1$, no el valor de $a$."
+ },
+ {
+  "id": 21,
+  "explanation": "El radio es la distancia del centro al punto por donde pasa:\n\n$$r^2 = (2-(-1))^2 + (-4-0)^2 = 9 + 16 = 25$$\n\nLa forma ordinaria es $(x-2)^2 + (y+4)^2 = 25$; al desarrollar: $x^2 - 4x + 4 + y^2 + 8y + 16 = 25$, es decir\n\n$$x^2 + y^2 - 4x + 8y - 5 = 0$$\n\nPista rápida: en la forma general los términos lineales llevan signo opuesto al centro $(2,-4)$, o sea $-4x$ y $+8y$; solo con eso ya descartas A y C."
+ },
+ {
+  "id": 22,
+  "explanation": "Que sea tangente significa que el radio es la distancia del centro $C(1,2)$ a la recta:\n\n$$r = \\frac{|1 - 2 + 10|}{\\sqrt{1^2+(-1)^2}} = \\frac{9}{\\sqrt{2}} \\;\\Rightarrow\\; r^2 = \\frac{81}{2}$$\n\nEntonces $(x-1)^2 + (y-2)^2 = \\frac{81}{2}$, y desarrollando: $x^2 + y^2 - 2x - 4y + 5 - \\frac{81}{2} = 0$, o sea\n\n$$x^2 + y^2 - 2x - 4y - \\frac{71}{2} = 0$$\n\nComo las cuatro opciones terminan en $-\\frac{71}{2}$, la decisión está en los términos lineales: el centro $(1,2)$ obliga a que sean $-2x$ y $-4y$."
+ },
+ {
+  "id": 23,
+  "explanation": "No hay nada que despejar: un valor absoluto **nunca** es negativo, así que $\\left|\\frac{x-4}{x-\\sqrt{2}}\\right| < 0$ no la satisface ningún número real. El conjunto solución es el vacío, $\\varnothing$. La opción C sería tentadora si la desigualdad fuera con $\\leq$: la igualdad con cero se da solo en $x = 4$, y $x = \\sqrt{2}$ ni siquiera vale, porque anula el denominador."
+ },
+ {
+  "id": 24,
+  "explanation": "Los dos lados son no negativos, así que elevar al cuadrado conserva la desigualdad: $(x-1)^2 < (2x+3)^2$. Pasa todo a un lado y factoriza como diferencia de cuadrados:\n\n$$(2x+3)^2 - (x-1)^2 = (2x+3-x+1)(2x+3+x-1) = (x+4)(3x+2) > 0$$\n\nUn producto es positivo fuera de sus raíces $x = -4$ y $x = -\\frac{2}{3}$:\n\n$$x \\in (-\\infty,-4)\\cup\\left(-\\frac{2}{3},\\infty\\right)$$\n\nChequeo con $x = 0$: $|0-1| = 1 < |3| = 3$, y en efecto $0$ está dentro de la solución."
+ },
+ {
+  "id": 25,
+  "explanation": "Al sustituir $x = 3$ aparece $\\frac{0}{0}$: racionaliza numerador y denominador con sus conjugados. Arriba, $(\\sqrt{3x}-3)(\\sqrt{3x}+3) = 3(x-3)$; abajo, $(\\sqrt{2x-4}-\\sqrt{2})(\\sqrt{2x-4}+\\sqrt{2}) = 2(x-3)$. El límite queda\n\n$$\\lim_{x\\to 3}\\frac{3(x-3)}{2(x-3)}\\cdot\\frac{\\sqrt{2x-4}+\\sqrt{2}}{\\sqrt{3x}+3} = \\frac{3}{2}\\cdot\\frac{2\\sqrt{2}}{6} = \\frac{\\sqrt{2}}{2} = \\frac{1}{\\sqrt{2}}$$\n\nEl factor $(x-3)$, culpable del $\\frac{0}{0}$, se cancela y ya se puede evaluar."
+ },
+ {
+  "id": 26,
+  "explanation": "Con raíces de índices 2 y 3, el cambio útil es $x = t^6$ (el mínimo común de los índices): así $\\sqrt{x} = t^3$, $\\sqrt[3]{x} = t^2$, y cuando $x \\to 1$ también $t \\to 1$:\n\n$$\\lim_{t\\to 1}\\frac{t^3 - t^2}{t^6 - 1} = \\lim_{t\\to 1}\\frac{t^2(t-1)}{(t-1)(t^5+t^4+t^3+t^2+t+1)} = \\frac{1}{6}$$\n\nOtra vía exprés: el límite es la derivada de $f(x) = x^{1/2} - x^{1/3}$ en $x = 1$, o sea $\\frac{1}{2} - \\frac{1}{3} = \\frac{1}{6}$."
+ },
+ {
+  "id": 27,
+  "explanation": "El truco está en la identidad $\\mathrm{sen}(\\pi - \\theta) = \\mathrm{sen}\\,\\theta$. Como $\\pi\\cos^2 x = \\pi - \\pi\\,\\mathrm{sen}^2 x$, el numerador equivale a $\\mathrm{sen}\\left(\\pi\\,\\mathrm{sen}^2 x\\right)$, y entonces\n\n$$\\lim_{x\\to 0}\\frac{\\mathrm{sen}\\left(\\pi\\,\\mathrm{sen}^2 x\\right)}{x^2} = \\lim_{x\\to 0}\\frac{\\mathrm{sen}\\left(\\pi\\,\\mathrm{sen}^2 x\\right)}{\\pi\\,\\mathrm{sen}^2 x}\\cdot\\pi\\cdot\\frac{\\mathrm{sen}^2 x}{x^2} = 1\\cdot\\pi\\cdot 1 = \\pi$$\n\nusando dos veces el límite notable $\\frac{\\mathrm{sen}\\,u}{u} \\to 1$."
+ },
+ {
+  "id": 28,
+  "explanation": "Identifica la forma de cada integrando. 1) $x^2+2x = (x+1)^2 - 1$: queda $u^2 - a^2$ en el denominador, fórmula D. 2) $\\frac{1}{\\tan x} = \\frac{\\cos x}{\\mathrm{sen}\\,x}$, y con $u = \\mathrm{sen}\\,x$ el numerador es exactamente $du$: fórmula B. 3) $x^2+2x+2 = (x+1)^2 + 1$: forma $u^2 + a^2$, fórmula A. 4) $\\frac{1}{e^x} = e^{-x}$: fórmula C. Resultado: 1D, 2B, 3A, 4C. Fíjate en que 1 y 3 se distinguen solo al completar el cuadrado: el término independiente decide entre $u^2 - a^2$ y $u^2 + a^2$."
+ },
+ {
+  "id": 29,
+  "explanation": "Racionaliza el denominador con su conjugado:\n\n$$\\frac{1}{\\sqrt{x+3}-\\sqrt{x-3}}\\cdot\\frac{\\sqrt{x+3}+\\sqrt{x-3}}{\\sqrt{x+3}+\\sqrt{x-3}} = \\frac{\\sqrt{x+3}+\\sqrt{x-3}}{6}$$\n\nporque $(x+3)-(x-3) = 6$. Ya sin raíces abajo, integra cada potencia con $\\int u^{1/2}\\,du = \\frac{2}{3}u^{3/2}$:\n\n$$\\frac{1}{6}\\cdot\\frac{2}{3}\\left[(x+3)^{3/2} + (x-3)^{3/2}\\right] + C = \\frac{\\sqrt{(x+3)^3}+\\sqrt{(x-3)^3}}{9} + C$$\n\nEl signo es **más**: al racionalizar, el conjugado dejó una suma. Si elegiste A, arrastraste el menos del denominador original."
+ },
+ {
+  "id": 30,
+  "explanation": "Antes de aplicar fórmulas, revisa el radicando: $4x^2+24x+36 = 4(x^2+6x+9) = 4(x+3)^2$, un cuadrado perfecto. La raíz desaparece por completo: $\\sqrt{4(x+3)^2} = 2(x+3)$ (tomando $x+3>0$), y la integral se reduce a\n\n$$\\int\\frac{dx}{2(x+3)} = \\frac{1}{2}\\ln|x+3| + C$$\n\nLas opciones con arcotangente son el anzuelo: esa fórmula aplica cuando al completar el cuadrado sobra una suma $u^2 + a^2$, y aquí no sobra nada."
+ },
+ {
+  "id": 31,
+  "explanation": "Completa el cuadrado: $x^2+4x-12 = (x+2)^2 - 16$, que es la forma $u^2 - a^2$ con $u = x+2$ y $a = 4$. La fórmula correspondiente es\n\n$$\\int\\frac{du}{u^2-a^2} = \\frac{1}{2a}\\ln\\left|\\frac{u-a}{u+a}\\right| + C$$\n\ncon $\\frac{1}{2a} = \\frac{1}{8}$. Sustituye $u - a = x - 2$ y $u + a = x + 6$:\n\n$$\\frac{1}{8}\\ln\\left|\\frac{x-2}{x+6}\\right| + C$$\n\nChequeo veloz: $x^2+4x-12 = (x-2)(x+6)$, y justo esas raíces, $2$ y $-6$, deben aparecer en el logaritmo; eso tumba las otras tres opciones."
+ },
+ {
+  "id": 32,
+  "explanation": "Cambio de variable directo: con $u = x^2+4x+\\frac{7}{5}$ se tiene $du = (2x+4)\\,dx = 2(x+2)\\,dx$, así que $(x+2)\\,dx = \\frac{du}{2}$. La integral se convierte en\n\n$$\\frac{1}{2}\\int u^3\\,du = \\frac{1}{2}\\cdot\\frac{u^4}{4} + C = \\frac{\\left(x^2+4x+\\frac{7}{5}\\right)^4}{8} + C$$\n\nSi llegaste a la opción C, te faltó el $\\frac{1}{2}$ del ajuste de $du$: el clásico factor olvidado."
+ },
+ {
+  "id": 33,
+  "explanation": "Primero saca media y desviación con los totales de la tabla: $\\bar{x} = \\frac{380}{100} = 3.8$ y\n\n$$\\sigma^2 = \\frac{\\sum f_i x_i^2}{n} - \\bar{x}^2 = \\frac{1750}{100} - (3.8)^2 = 17.5 - 14.44 = 3.06 \\;\\Rightarrow\\; \\sigma \\approx 1.75$$\n\nEl intervalo $(\\bar{x}-\\sigma,\\ \\bar{x}+\\sigma) = (2.05,\\ 5.55)$ contiene las puntuaciones 3, 4 y 5, con frecuencias $10 + 15 + 20 = 45$. De 100 lanzamientos, eso es el **45%**."
+ },
+ {
+  "id": 34,
+  "explanation": "La media se lee de los totales de la tabla: $\\bar{x} = \\frac{380}{100} = 3.8$. Las puntuaciones menores que la media son 1, 2 y 3, y sus frecuencias suman $12 + 20 + 10 = 42$. Como fueron 100 lanzamientos, el porcentaje es directamente **42%**. Ojo: aquí cuenta lo que de verdad salió en la tabla, no el comportamiento teórico de un dado equilibrado."
+ },
+ {
+  "id": 35,
+  "explanation": "Con $\\bar{x} = 3.8$, las puntuaciones mayores que la media son 4, 5 y 6: $15 + 20 + 23 = 58$ lanzamientos de 100, es decir, **58%**. Cuadra con la pregunta anterior: $42\\%$ quedó por debajo de la media y, como ninguna puntuación vale exactamente $3.8$, el resto, $100 - 42 = 58\\%$, queda por arriba."
+ },
+ {
+  "id": 36,
+  "explanation": "Se pide $\\frac{1^2+2^2+\\cdots+n^2}{n}$. La suma de los primeros $n$ cuadrados tiene fórmula conocida:\n\n$$1^2+2^2+\\cdots+n^2 = \\frac{n(n+1)(2n+1)}{6}$$\n\nAl dividir entre $n$ ese factor se cancela:\n\n$$\\bar{x} = \\frac{(n+1)(2n+1)}{6} = \\frac{2n^2+3n+1}{6}$$\n\nVerifica con $n = 2$: la media de $1$ y $4$ es $2.5$, y la fórmula da $\\frac{8+6+1}{6} = \\frac{15}{6} = 2.5$."
+ },
+ {
+  "id": 37,
+  "explanation": "La media del grupo combinado es un promedio ponderado:\n\n$$\\frac{400n_1 + 480n_2}{n_1+n_2} = 430 \\;\\Rightarrow\\; 400n_1 + 480n_2 = 430n_1 + 430n_2 \\;\\Rightarrow\\; 50n_2 = 30n_1$$\n\nPor lo tanto $\\frac{n_1}{n_2} = \\frac{50}{30} = \\frac{5}{3}$.\n\nVisto como balanza: la media conjunta queda a 30 unidades de la media del primer grupo y a 50 de la del segundo; los tamaños están en razón **inversa** a esas distancias, $50{:}30 = 5{:}3$. Por eso el grupo más numeroso es el que tiene su media más cerca de 430."
+ }
+]

@@ -27,7 +27,8 @@
               "D": "W"
             },
             "answer": "A",
-            "_src": "pensamiento-matematico · reactivo 8"
+            "_src": "pensamiento-matematico · reactivo 8",
+            "explanation": "Aquí no hay fórmula, hay conteo: fíjate cuántas letras se brincan entre términos en el abecedario (incluida la Ñ). De A a C se brinca 1 letra (la B); de C a F, 2 (D, E); de F a J, 3 (G, H, I); de J a L, otra vez 1; de L a Ñ, 2 (M, N); de Ñ a R, 3 (O, P, Q). El patrón de brincos es 1, 2, 3 y se repite en ciclo. Después de la R toca brincar una sola letra (la S), y caes en la **T**.\n\nSi marcaste U, seguiste con 2 brincos: el ciclo reinicia en 1 después del 3."
           },
           {
             "id": 2,
@@ -41,7 +42,8 @@
               "D": "$\\dfrac{10n}{7n-1}$"
             },
             "answer": "B",
-            "_src": "pensamiento-matematico · reactivo 9"
+            "_src": "pensamiento-matematico · reactivo 9",
+            "explanation": "Analiza numeradores y denominadores por separado. Arriba: $5, 10, 15, 20$ son los múltiplos de 5, o sea $5n$. Abajo: $6, 13, 20, 27$ crecen de 7 en 7 partiendo de 6, o sea $6 + 7(n-1) = 7n - 1$. Juntando:\n\n$$a_n = \\frac{5n}{7n-1}$$\n\nComprueba con $n=1$: $\\frac{5}{7(1)-1} = \\frac{5}{6}$, justo el primer término. Esa misma prueba descarta la opción A: $7(1)+1 = 8$, y el primer denominador es 6, no 8."
           },
           {
             "id": 3,
@@ -55,7 +57,8 @@
               "D": "$6+12(n-1)$"
             },
             "answer": "B",
-            "_src": "pensamiento-matematico · reactivo 10"
+            "_src": "pensamiento-matematico · reactivo 10",
+            "explanation": "Una sucesión geométrica multiplica cada término por una razón constante, y su término general es de la forma $a_n = a_1\\, r^{n-1}$. Eso es exactamente $3(2)^{n-1}$: genera $3, 6, 12, 24, \\ldots$, siempre multiplicando por 2. La opción D, $6+12(n-1)$, es el molde de una sucesión **aritmética** (suma 12 cada vez), y $2n^3$ y $n^2+n+2$ no mantienen ni razón ni diferencia constantes."
           },
           {
             "id": 4,
@@ -69,7 +72,8 @@
               "D": "4"
             },
             "answer": "A",
-            "_src": "pensamiento-matematico · reactivo 12"
+            "_src": "pensamiento-matematico · reactivo 12",
+            "explanation": "En una sucesión aritmética la diferencia entre consecutivos es constante: $3^{x+3} - 3^{x+2} = 135 - 3^{x+3}$. Para no pelearte con los exponentes llama $t = 3^{x+2}$; como $3^{x+3} = 3t$, la ecuación queda\n\n$$3t - t = 135 - 3t \\;\\Rightarrow\\; 5t = 135 \\;\\Rightarrow\\; t = 27$$\n\nEntonces $3^{x+2} = 3^3$, se igualan exponentes y $x = 1$. Comprueba: los términos quedan $27, 81, 135$, con diferencia constante de 54."
           },
           {
             "id": 5,
@@ -83,7 +87,8 @@
               "D": "-9"
             },
             "answer": "D",
-            "_src": "pensamiento-matematico · reactivo 19"
+            "_src": "pensamiento-matematico · reactivo 19",
+            "explanation": "Reflejar respecto a la recta horizontal $y = -0.5$ no toca las abscisas; la ordenada nueva cumple $y' = 2(-0.5) - y = -1 - y$ (la recta queda justo a la mitad entre el punto y su reflejo). Aplícalo a los tres vértices: $A(-1,1)$ da $y' = -2$; $B(1,3)$ da $y' = -4$; $C(2,2)$ da $y' = -3$. La suma pedida es $-2 - 4 - 3 = -9$.\n\nSi contestaste 6, sumaste las ordenadas del triángulo original, sin reflejarlo."
           },
           {
             "id": 6,
@@ -97,7 +102,8 @@
               "D": "18"
             },
             "answer": "D",
-            "_src": "pensamiento-matematico · reactivo 32"
+            "_src": "pensamiento-matematico · reactivo 32",
+            "explanation": "En enteros consecutivos la media cae exactamente a la mitad entre el primero, $a$, y el último, $a + 49$:\n\n$$\\frac{a + (a+49)}{2} = 42.5 \\;\\Rightarrow\\; 2a + 49 = 85 \\;\\Rightarrow\\; a = 18$$\n\nTiene lógica que la media termine en $.5$: con 50 números (cantidad par) queda entre los dos centrales, que aquí son 42 y 43. La lista va del 18 al 67."
           },
           {
             "id": 7,
@@ -111,7 +117,8 @@
               "D": "1C, 2B, 3D, 4A"
             },
             "answer": "B",
-            "_src": "algebra · reactivo 8"
+            "_src": "algebra · reactivo 8",
+            "explanation": "Lee cada frase de afuera hacia adentro: la operación que se nombra primero es la que se aplica al final. \"El doble del cubo\" es $2(n^3) = 2n^3$ (1B); \"el cubo del doble\" es $(2n)^3$ (2C); \"el triple del cuadrado\" es $3n^2$ (3D); \"el cuadrado del triple\" es $(3n)^2$ (4A). El paréntesis no es adorno: $(2n)^3 = 8n^3$, que no es lo mismo que $2n^3$. La combinación correcta es 1B, 2C, 3D, 4A."
           },
           {
             "id": 8,
@@ -125,7 +132,8 @@
               "D": "$(2x)(2x+2)(2x+4)$"
             },
             "answer": "D",
-            "_src": "algebra · reactivo 9"
+            "_src": "algebra · reactivo 9",
+            "explanation": "Para garantizar que un número sea par, escríbelo como $2x$. Los pares consecutivos van de 2 en 2, así que los tres números son $2x$, $2x+2$ y $2x+4$, y el producto es $(2x)(2x+2)(2x+4)$. La opción C es el anzuelo: $2x, 2x+1, 2x+2$ son enteros consecutivos, pero $2x+1$ es impar. Y en la B, $x, x+2, x+4$ solo resultan pares cuando $x$ lo es, cosa que la expresión no garantiza."
           },
           {
             "id": 9,
@@ -139,7 +147,8 @@
               "D": "7"
             },
             "answer": "B",
-            "_src": "algebra · reactivo 10"
+            "_src": "algebra · reactivo 10",
+            "explanation": "Con términos enteros consecutivos, una fracción propia positiva es de la forma $\\frac{n}{n+1}$. Impón la condición:\n\n$$\\frac{n}{n+1} < \\frac{11}{13} \\;\\Rightarrow\\; 13n < 11n + 11 \\;\\Rightarrow\\; n < 5.5$$\n\n(se puede multiplicar cruzado porque todo es positivo). Los valores posibles son $n = 1, 2, 3, 4, 5$: las fracciones $\\frac{1}{2}, \\frac{2}{3}, \\frac{3}{4}, \\frac{4}{5}, \\frac{5}{6}$. Son **5**. La siguiente, $\\frac{6}{7} \\approx 0.857$, ya rebasa $\\frac{11}{13} \\approx 0.846$."
           },
           {
             "id": 10,
@@ -153,7 +162,8 @@
               "D": "$x-4$"
             },
             "answer": "D",
-            "_src": "algebra · reactivo 11"
+            "_src": "algebra · reactivo 11",
+            "explanation": "Agrupa las fracciones que comparten denominador:\n\n$$R = \\frac{2x^2 - 8}{x+2} + \\frac{2x^2 - 8}{x-2}$$\n\nEl numerador común se factoriza: $2x^2 - 8 = 2(x+2)(x-2)$, así que cada fracción se simplifica de golpe: la primera queda $2(x-2) = 2x-4$ y la segunda $2(x+2) = 2x+4$. Sumando, $R = (2x-4) + (2x+4) = 4x$."
           },
           {
             "id": 11,
@@ -167,7 +177,8 @@
               "D": "$x+4$"
             },
             "answer": "B",
-            "_src": "algebra · reactivo 13"
+            "_src": "algebra · reactivo 13",
+            "explanation": "Dividir es multiplicar por el recíproco:\n\n$$N = \\frac{\\sqrt{x}+2}{x+4}\\cdot\\frac{\\sqrt{x}-2}{x-4}$$\n\nEn el numerador aparece un producto de conjugados: $(\\sqrt{x}+2)(\\sqrt{x}-2) = x - 4$. Ese factor se cancela con el $x-4$ del denominador y queda\n\n$$N = \\frac{1}{x+4}$$\n\nOjo: el factor que sobrevive es $x+4$, que no se factoriza con $\\sqrt{x}$; por eso la respuesta no es $\\frac{1}{x-4}$, que es justo el factor que se fue."
           },
           {
             "id": 12,
@@ -181,7 +192,8 @@
               "D": "$b^{3}$"
             },
             "answer": "B",
-            "_src": "algebra · reactivo 14"
+            "_src": "algebra · reactivo 14",
+            "explanation": "Traduce todo a exponentes fraccionarios:\n\n$$S = \\left(b\\cdot b^{-1/\\beta}\\right)^{1/k} = b^{\\frac{1}{k}\\left(1-\\frac{1}{\\beta}\\right)} = b^{\\frac{\\beta-1}{\\beta k}}$$\n\nAhora entra la condición: $\\beta k - \\beta + 1 = 0$ equivale a $\\beta k = \\beta - 1$. Sustituye en el exponente:\n\n$$\\frac{\\beta-1}{\\beta k} = \\frac{\\beta-1}{\\beta-1} = 1$$\n\nPor lo tanto $S = b^{1}$."
           },
           {
             "id": 13,
@@ -195,7 +207,8 @@
               "D": "$3^{13}$"
             },
             "answer": "A",
-            "_src": "geometria-trigonometria · reactivo 8"
+            "_src": "geometria-trigonometria · reactivo 8",
+            "explanation": "Haz el cambio $u = \\log_3 x$ y queda una cuadrática ordinaria: $u^2 - 5u - 24 = 0$, que factoriza como $(u-8)(u+3) = 0$, con soluciones $u = 8$ y $u = -3$. De ahí $x_1 = 3^8$ y $x_2 = 3^{-3}$, y el producto es\n\n$$x_1 x_2 = 3^{8+(-3)} = 3^5$$\n\nAtajo: por Vieta, la suma de las raíces en $u$ es 5, y como $x_1 x_2 = 3^{u_1+u_2}$, el producto sale sin factorizar. Si marcaste $3^{11}$, tomaste $u = -3$ como si fuera $+3$."
           },
           {
             "id": 14,
@@ -209,7 +222,8 @@
               "D": "Pentadecágono"
             },
             "answer": "B",
-            "_src": "geometria-trigonometria · reactivo 20"
+            "_src": "geometria-trigonometria · reactivo 20",
+            "explanation": "Dos hechos fijos de los polígonos convexos: los ángulos exteriores siempre suman $360°$ y los interiores suman $180°(n-2)$. Plantea la condición del enunciado:\n\n$$360 = 180(n-2) - 1260 \\;\\Rightarrow\\; 180(n-2) = 1620 \\;\\Rightarrow\\; n - 2 = 9 \\;\\Rightarrow\\; n = 11$$\n\nEl polígono de 11 lados es el **undecágono** (también llamado endecágono)."
           },
           {
             "id": 15,
@@ -223,7 +237,8 @@
               "D": "54"
             },
             "answer": "D",
-            "_src": "geometria-trigonometria · reactivo 22"
+            "_src": "geometria-trigonometria · reactivo 22",
+            "explanation": "Los ángulos exteriores de cualquier polígono suman $360°$; si en este polígono regular cada uno mide $30°$, tiene $n = \\frac{360}{30} = 12$ lados. Ahora la fórmula de diagonales:\n\n$$D = \\frac{n(n-3)}{2} = \\frac{12\\cdot 9}{2} = 54$$\n\nSi te dio 44, calculaste las diagonales de un polígono de 11 lados: revisa primero el paso $n = 360/30$."
           },
           {
             "id": 16,
@@ -237,7 +252,8 @@
               "D": "semi inscrito"
             },
             "answer": "C",
-            "_src": "geometria-trigonometria · reactivo 27"
+            "_src": "geometria-trigonometria · reactivo 27",
+            "explanation": "Es la propiedad del ángulo **exterior**: cuando dos secantes, dos tangentes o una de cada una se cortan en un punto fuera de la circunferencia, el ángulo que forman mide la mitad de la **diferencia** de los arcos que abarcan sus lados. La palabra clave del enunciado es \"diferencia\": el ángulo interior (cuerdas que se cortan dentro) usa la mitad de la **suma** de los arcos, y el inscrito usa la mitad de un solo arco."
           },
           {
             "id": 17,
@@ -251,7 +267,8 @@
               "D": "$[0,-4]$"
             },
             "answer": "A",
-            "_src": "geometria-trigonometria · reactivo 30"
+            "_src": "geometria-trigonometria · reactivo 30",
+            "explanation": "La expresión es un trinomio cuadrado perfecto:\n\n$$f(x) = (\\cos x + 1)^2$$\n\nComo $\\cos x$ vive en $[-1,1]$, la base $\\cos x + 1$ recorre $[0,2]$, y al elevar al cuadrado se obtiene $[0,4]$: mínimo 0 cuando $\\cos x = -1$ y máximo 4 cuando $\\cos x = 1$. Como es un cuadrado, $f(x)$ jamás es negativa, lo que descarta $[-4,0]$; y $[4,0]$ y $[0,-4]$ ni siquiera están bien escritos como intervalos: el extremo menor va primero."
           },
           {
             "id": 18,
@@ -265,7 +282,8 @@
               "D": "$\\dfrac{18}{5}$"
             },
             "answer": "A",
-            "_src": "geometria-analitica · reactivo 10"
+            "_src": "geometria-analitica · reactivo 10",
+            "explanation": "Como ambas rectas ya tienen los mismos coeficientes $A = 2$ y $B = 5$, aplica directo la fórmula de distancia entre paralelas:\n\n$$d = \\frac{|C_1 - C_2|}{\\sqrt{A^2+B^2}} = \\frac{|-3-(-15)|}{\\sqrt{4+25}} = \\frac{12}{\\sqrt{29}} = \\frac{12}{29}\\sqrt{29}$$\n\nEl 18 de la opción B sale de sumar los términos independientes ($3+15$) en lugar de restarlos: cuida los signos, $|-3-(-15)| = 12$."
           },
           {
             "id": 19,
@@ -279,7 +297,8 @@
               "D": "$x-2y-3=0$"
             },
             "answer": "B",
-            "_src": "geometria-analitica · reactivo 11"
+            "_src": "geometria-analitica · reactivo 11",
+            "explanation": "Primero localiza el punto de cruce resolviendo el sistema: de $x - 6y = 4$ despeja $x = 4 + 6y$ y sustitúyelo en la otra ecuación:\n\n$$5(4+6y) - 2y = -8 \\;\\Rightarrow\\; 28y = -28 \\;\\Rightarrow\\; y = -1,\\quad x = -2$$\n\nCon el punto $(-2,-1)$ y pendiente 2, usa punto-pendiente: $y + 1 = 2(x + 2)$, que se reordena como $2x - y + 3 = 0$. Verifica: $2(-2) - (-1) + 3 = 0$, sí pasa por el punto."
           },
           {
             "id": 20,
@@ -293,7 +312,8 @@
               "D": "$\\dfrac{7}{2}$"
             },
             "answer": "A",
-            "_src": "geometria-analitica · reactivo 12"
+            "_src": "geometria-analitica · reactivo 12",
+            "explanation": "Paralelas significa misma pendiente. Para una recta $Ax + By + C = 0$ la pendiente es $-\\frac{A}{B}$: la de $\\ell_1$ es $-\\frac{2}{-7} = \\frac{2}{7}$ y la de $\\ell_2$ es $-\\frac{1}{a}$. Iguala:\n\n$$-\\frac{1}{a} = \\frac{2}{7} \\;\\Rightarrow\\; 2a = -7 \\;\\Rightarrow\\; a = -\\frac{7}{2}$$\n\nSi obtuviste $\\frac{7}{2}$, se te escapó el signo al despejar; y $\\frac{2}{7}$ es la pendiente de $\\ell_1$, no el valor de $a$."
           },
           {
             "id": 21,
@@ -307,7 +327,8 @@
               "D": "$x^{2}+y^{2}-4x+8y+45=0$"
             },
             "answer": "B",
-            "_src": "geometria-analitica · reactivo 14"
+            "_src": "geometria-analitica · reactivo 14",
+            "explanation": "El radio es la distancia del centro al punto por donde pasa:\n\n$$r^2 = (2-(-1))^2 + (-4-0)^2 = 9 + 16 = 25$$\n\nLa forma ordinaria es $(x-2)^2 + (y+4)^2 = 25$; al desarrollar: $x^2 - 4x + 4 + y^2 + 8y + 16 = 25$, es decir\n\n$$x^2 + y^2 - 4x + 8y - 5 = 0$$\n\nPista rápida: en la forma general los términos lineales llevan signo opuesto al centro $(2,-4)$, o sea $-4x$ y $+8y$; solo con eso ya descartas A y C."
           },
           {
             "id": 22,
@@ -321,7 +342,8 @@
               "D": "$x^{2}+y^{2}+4x+2y-\\dfrac{71}{2}=0$"
             },
             "answer": "A",
-            "_src": "geometria-analitica · reactivo 15"
+            "_src": "geometria-analitica · reactivo 15",
+            "explanation": "Que sea tangente significa que el radio es la distancia del centro $C(1,2)$ a la recta:\n\n$$r = \\frac{|1 - 2 + 10|}{\\sqrt{1^2+(-1)^2}} = \\frac{9}{\\sqrt{2}} \\;\\Rightarrow\\; r^2 = \\frac{81}{2}$$\n\nEntonces $(x-1)^2 + (y-2)^2 = \\frac{81}{2}$, y desarrollando: $x^2 + y^2 - 2x - 4y + 5 - \\frac{81}{2} = 0$, o sea\n\n$$x^2 + y^2 - 2x - 4y - \\frac{71}{2} = 0$$\n\nComo las cuatro opciones terminan en $-\\frac{71}{2}$, la decisión está en los términos lineales: el centro $(1,2)$ obliga a que sean $-2x$ y $-4y$."
           },
           {
             "id": 23,
@@ -335,7 +357,8 @@
               "D": "$\\varnothing$"
             },
             "answer": "D",
-            "_src": "calculo-diferencial · reactivo 7"
+            "_src": "calculo-diferencial · reactivo 7",
+            "explanation": "No hay nada que despejar: un valor absoluto **nunca** es negativo, así que $\\left|\\frac{x-4}{x-\\sqrt{2}}\\right| < 0$ no la satisface ningún número real. El conjunto solución es el vacío, $\\varnothing$. La opción C sería tentadora si la desigualdad fuera con $\\leq$: la igualdad con cero se da solo en $x = 4$, y $x = \\sqrt{2}$ ni siquiera vale, porque anula el denominador."
           },
           {
             "id": 24,
@@ -349,7 +372,8 @@
               "D": "$\\left(\\infty,-\\frac{2}{3}\\right)\\cup(4,\\infty)$"
             },
             "answer": "B",
-            "_src": "calculo-diferencial · reactivo 8"
+            "_src": "calculo-diferencial · reactivo 8",
+            "explanation": "Los dos lados son no negativos, así que elevar al cuadrado conserva la desigualdad: $(x-1)^2 < (2x+3)^2$. Pasa todo a un lado y factoriza como diferencia de cuadrados:\n\n$$(2x+3)^2 - (x-1)^2 = (2x+3-x+1)(2x+3+x-1) = (x+4)(3x+2) > 0$$\n\nUn producto es positivo fuera de sus raíces $x = -4$ y $x = -\\frac{2}{3}$:\n\n$$x \\in (-\\infty,-4)\\cup\\left(-\\frac{2}{3},\\infty\\right)$$\n\nChequeo con $x = 0$: $|0-1| = 1 < |3| = 3$, y en efecto $0$ está dentro de la solución."
           },
           {
             "id": 25,
@@ -363,7 +387,8 @@
               "D": "$\\dfrac{1}{\\sqrt{2}}$"
             },
             "answer": "D",
-            "_src": "calculo-diferencial · reactivo 9"
+            "_src": "calculo-diferencial · reactivo 9",
+            "explanation": "Al sustituir $x = 3$ aparece $\\frac{0}{0}$: racionaliza numerador y denominador con sus conjugados. Arriba, $(\\sqrt{3x}-3)(\\sqrt{3x}+3) = 3(x-3)$; abajo, $(\\sqrt{2x-4}-\\sqrt{2})(\\sqrt{2x-4}+\\sqrt{2}) = 2(x-3)$. El límite queda\n\n$$\\lim_{x\\to 3}\\frac{3(x-3)}{2(x-3)}\\cdot\\frac{\\sqrt{2x-4}+\\sqrt{2}}{\\sqrt{3x}+3} = \\frac{3}{2}\\cdot\\frac{2\\sqrt{2}}{6} = \\frac{\\sqrt{2}}{2} = \\frac{1}{\\sqrt{2}}$$\n\nEl factor $(x-3)$, culpable del $\\frac{0}{0}$, se cancela y ya se puede evaluar."
           },
           {
             "id": 26,
@@ -377,7 +402,8 @@
               "D": "$\\dfrac{1}{6}$"
             },
             "answer": "D",
-            "_src": "calculo-diferencial · reactivo 10"
+            "_src": "calculo-diferencial · reactivo 10",
+            "explanation": "Con raíces de índices 2 y 3, el cambio útil es $x = t^6$ (el mínimo común de los índices): así $\\sqrt{x} = t^3$, $\\sqrt[3]{x} = t^2$, y cuando $x \\to 1$ también $t \\to 1$:\n\n$$\\lim_{t\\to 1}\\frac{t^3 - t^2}{t^6 - 1} = \\lim_{t\\to 1}\\frac{t^2(t-1)}{(t-1)(t^5+t^4+t^3+t^2+t+1)} = \\frac{1}{6}$$\n\nOtra vía exprés: el límite es la derivada de $f(x) = x^{1/2} - x^{1/3}$ en $x = 1$, o sea $\\frac{1}{2} - \\frac{1}{3} = \\frac{1}{6}$."
           },
           {
             "id": 27,
@@ -391,7 +417,8 @@
               "D": "$2\\pi$"
             },
             "answer": "C",
-            "_src": "calculo-diferencial · reactivo 12"
+            "_src": "calculo-diferencial · reactivo 12",
+            "explanation": "El truco está en la identidad $\\mathrm{sen}(\\pi - \\theta) = \\mathrm{sen}\\,\\theta$. Como $\\pi\\cos^2 x = \\pi - \\pi\\,\\mathrm{sen}^2 x$, el numerador equivale a $\\mathrm{sen}\\left(\\pi\\,\\mathrm{sen}^2 x\\right)$, y entonces\n\n$$\\lim_{x\\to 0}\\frac{\\mathrm{sen}\\left(\\pi\\,\\mathrm{sen}^2 x\\right)}{x^2} = \\lim_{x\\to 0}\\frac{\\mathrm{sen}\\left(\\pi\\,\\mathrm{sen}^2 x\\right)}{\\pi\\,\\mathrm{sen}^2 x}\\cdot\\pi\\cdot\\frac{\\mathrm{sen}^2 x}{x^2} = 1\\cdot\\pi\\cdot 1 = \\pi$$\n\nusando dos veces el límite notable $\\frac{\\mathrm{sen}\\,u}{u} \\to 1$."
           },
           {
             "id": 28,
@@ -405,7 +432,8 @@
               "D": "1D, 2C, 3B, 4A"
             },
             "answer": "C",
-            "_src": "calculo-integral · reactivo 7"
+            "_src": "calculo-integral · reactivo 7",
+            "explanation": "Identifica la forma de cada integrando. 1) $x^2+2x = (x+1)^2 - 1$: queda $u^2 - a^2$ en el denominador, fórmula D. 2) $\\frac{1}{\\tan x} = \\frac{\\cos x}{\\mathrm{sen}\\,x}$, y con $u = \\mathrm{sen}\\,x$ el numerador es exactamente $du$: fórmula B. 3) $x^2+2x+2 = (x+1)^2 + 1$: forma $u^2 + a^2$, fórmula A. 4) $\\frac{1}{e^x} = e^{-x}$: fórmula C. Resultado: 1D, 2B, 3A, 4C. Fíjate en que 1 y 3 se distinguen solo al completar el cuadrado: el término independiente decide entre $u^2 - a^2$ y $u^2 + a^2$."
           },
           {
             "id": 29,
@@ -419,7 +447,8 @@
               "D": "$\\dfrac{\\sqrt{(x+3)^{3}}-\\sqrt{(x-3)^{3}}}{3}+C$"
             },
             "answer": "B",
-            "_src": "calculo-integral · reactivo 8"
+            "_src": "calculo-integral · reactivo 8",
+            "explanation": "Racionaliza el denominador con su conjugado:\n\n$$\\frac{1}{\\sqrt{x+3}-\\sqrt{x-3}}\\cdot\\frac{\\sqrt{x+3}+\\sqrt{x-3}}{\\sqrt{x+3}+\\sqrt{x-3}} = \\frac{\\sqrt{x+3}+\\sqrt{x-3}}{6}$$\n\nporque $(x+3)-(x-3) = 6$. Ya sin raíces abajo, integra cada potencia con $\\int u^{1/2}\\,du = \\frac{2}{3}u^{3/2}$:\n\n$$\\frac{1}{6}\\cdot\\frac{2}{3}\\left[(x+3)^{3/2} + (x-3)^{3/2}\\right] + C = \\frac{\\sqrt{(x+3)^3}+\\sqrt{(x-3)^3}}{9} + C$$\n\nEl signo es **más**: al racionalizar, el conjugado dejó una suma. Si elegiste A, arrastraste el menos del denominador original."
           },
           {
             "id": 30,
@@ -433,7 +462,8 @@
               "D": "$2\\ln|x+3|+C$"
             },
             "answer": "C",
-            "_src": "calculo-integral · reactivo 9"
+            "_src": "calculo-integral · reactivo 9",
+            "explanation": "Antes de aplicar fórmulas, revisa el radicando: $4x^2+24x+36 = 4(x^2+6x+9) = 4(x+3)^2$, un cuadrado perfecto. La raíz desaparece por completo: $\\sqrt{4(x+3)^2} = 2(x+3)$ (tomando $x+3>0$), y la integral se reduce a\n\n$$\\int\\frac{dx}{2(x+3)} = \\frac{1}{2}\\ln|x+3| + C$$\n\nLas opciones con arcotangente son el anzuelo: esa fórmula aplica cuando al completar el cuadrado sobra una suma $u^2 + a^2$, y aquí no sobra nada."
           },
           {
             "id": 31,
@@ -447,7 +477,8 @@
               "D": "$\\dfrac{1}{8}\\ln\\left|\\dfrac{x-2}{x+6}\\right|+C$"
             },
             "answer": "D",
-            "_src": "calculo-integral · reactivo 10"
+            "_src": "calculo-integral · reactivo 10",
+            "explanation": "Completa el cuadrado: $x^2+4x-12 = (x+2)^2 - 16$, que es la forma $u^2 - a^2$ con $u = x+2$ y $a = 4$. La fórmula correspondiente es\n\n$$\\int\\frac{du}{u^2-a^2} = \\frac{1}{2a}\\ln\\left|\\frac{u-a}{u+a}\\right| + C$$\n\ncon $\\frac{1}{2a} = \\frac{1}{8}$. Sustituye $u - a = x - 2$ y $u + a = x + 6$:\n\n$$\\frac{1}{8}\\ln\\left|\\frac{x-2}{x+6}\\right| + C$$\n\nChequeo veloz: $x^2+4x-12 = (x-2)(x+6)$, y justo esas raíces, $2$ y $-6$, deben aparecer en el logaritmo; eso tumba las otras tres opciones."
           },
           {
             "id": 32,
@@ -461,7 +492,8 @@
               "D": "$\\dfrac{\\left(x^{2}+4x+\\frac{7}{5}\\right)^{4}}{8}+C$"
             },
             "answer": "D",
-            "_src": "calculo-integral · reactivo 11"
+            "_src": "calculo-integral · reactivo 11",
+            "explanation": "Cambio de variable directo: con $u = x^2+4x+\\frac{7}{5}$ se tiene $du = (2x+4)\\,dx = 2(x+2)\\,dx$, así que $(x+2)\\,dx = \\frac{du}{2}$. La integral se convierte en\n\n$$\\frac{1}{2}\\int u^3\\,du = \\frac{1}{2}\\cdot\\frac{u^4}{4} + C = \\frac{\\left(x^2+4x+\\frac{7}{5}\\right)^4}{8} + C$$\n\nSi llegaste a la opción C, te faltó el $\\frac{1}{2}$ del ajuste de $du$: el clásico factor olvidado."
           },
           {
             "id": 33,
@@ -476,7 +508,8 @@
               "D": "45%"
             },
             "answer": "D",
-            "_src": "probabilidad-estadistica · reactivo 31"
+            "_src": "probabilidad-estadistica · reactivo 31",
+            "explanation": "Primero saca media y desviación con los totales de la tabla: $\\bar{x} = \\frac{380}{100} = 3.8$ y\n\n$$\\sigma^2 = \\frac{\\sum f_i x_i^2}{n} - \\bar{x}^2 = \\frac{1750}{100} - (3.8)^2 = 17.5 - 14.44 = 3.06 \\;\\Rightarrow\\; \\sigma \\approx 1.75$$\n\nEl intervalo $(\\bar{x}-\\sigma,\\ \\bar{x}+\\sigma) = (2.05,\\ 5.55)$ contiene las puntuaciones 3, 4 y 5, con frecuencias $10 + 15 + 20 = 45$. De 100 lanzamientos, eso es el **45%**."
           },
           {
             "id": 34,
@@ -491,7 +524,8 @@
               "D": "46%"
             },
             "answer": "B",
-            "_src": "probabilidad-estadistica · reactivo 32"
+            "_src": "probabilidad-estadistica · reactivo 32",
+            "explanation": "La media se lee de los totales de la tabla: $\\bar{x} = \\frac{380}{100} = 3.8$. Las puntuaciones menores que la media son 1, 2 y 3, y sus frecuencias suman $12 + 20 + 10 = 42$. Como fueron 100 lanzamientos, el porcentaje es directamente **42%**. Ojo: aquí cuenta lo que de verdad salió en la tabla, no el comportamiento teórico de un dado equilibrado."
           },
           {
             "id": 35,
@@ -506,7 +540,8 @@
               "D": "58%"
             },
             "answer": "D",
-            "_src": "probabilidad-estadistica · reactivo 33"
+            "_src": "probabilidad-estadistica · reactivo 33",
+            "explanation": "Con $\\bar{x} = 3.8$, las puntuaciones mayores que la media son 4, 5 y 6: $15 + 20 + 23 = 58$ lanzamientos de 100, es decir, **58%**. Cuadra con la pregunta anterior: $42\\%$ quedó por debajo de la media y, como ninguna puntuación vale exactamente $3.8$, el resto, $100 - 42 = 58\\%$, queda por arriba."
           },
           {
             "id": 36,
@@ -520,7 +555,8 @@
               "D": "$\\dfrac{4n^{2}+4n+1}{6}$"
             },
             "answer": "C",
-            "_src": "probabilidad-estadistica · reactivo 35"
+            "_src": "probabilidad-estadistica · reactivo 35",
+            "explanation": "Se pide $\\frac{1^2+2^2+\\cdots+n^2}{n}$. La suma de los primeros $n$ cuadrados tiene fórmula conocida:\n\n$$1^2+2^2+\\cdots+n^2 = \\frac{n(n+1)(2n+1)}{6}$$\n\nAl dividir entre $n$ ese factor se cancela:\n\n$$\\bar{x} = \\frac{(n+1)(2n+1)}{6} = \\frac{2n^2+3n+1}{6}$$\n\nVerifica con $n = 2$: la media de $1$ y $4$ es $2.5$, y la fórmula da $\\frac{8+6+1}{6} = \\frac{15}{6} = 2.5$."
           },
           {
             "id": 37,
@@ -534,7 +570,8 @@
               "D": "1"
             },
             "answer": "B",
-            "_src": "probabilidad-estadistica · reactivo 36"
+            "_src": "probabilidad-estadistica · reactivo 36",
+            "explanation": "La media del grupo combinado es un promedio ponderado:\n\n$$\\frac{400n_1 + 480n_2}{n_1+n_2} = 430 \\;\\Rightarrow\\; 400n_1 + 480n_2 = 430n_1 + 430n_2 \\;\\Rightarrow\\; 50n_2 = 30n_1$$\n\nPor lo tanto $\\frac{n_1}{n_2} = \\frac{50}{30} = \\frac{5}{3}$.\n\nVisto como balanza: la media conjunta queda a 30 unidades de la media del primer grupo y a 50 de la del segundo; los tamaños están en razón **inversa** a esas distancias, $50{:}30 = 5{:}3$. Por eso el grupo más numeroso es el que tiene su media más cerca de 430."
           }
         ]
       },
@@ -554,7 +591,8 @@
               "D": "Durante la pandemia fue necesario apoyarse de herramientas virtuales como estrategia pedagógica que involucrara a los estudiantes en plataformas digitales como Wordwall, Blooket y Quizizz"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 43"
+            "_src": "competencia-escrita · reactivo 43",
+            "explanation": "El lenguaje especializado se reconoce por los tecnicismos: palabras propias de una disciplina que no cualquier lector domina. El párrafo D habla de «herramientas virtuales», «estrategia pedagógica» y «plataformas digitales», y remata con nombres técnicos del ámbito educativo digital: Wordwall, Blooket y Quizizz; quien no conoce ese campo no sabe qué son. Los otros párrafos usan lenguaje común: A solo da datos de ubicación, y B y C hacen afirmaciones generales que cualquiera entiende sin ser especialista."
           },
           {
             "id": 39,
@@ -568,7 +606,8 @@
               "D": "el marco teórico, la delimitación del tema y la elaboración del esquema temático"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 44"
+            "_src": "competencia-escrita · reactivo 44",
+            "explanation": "Piensa en la lógica del proceso: los objetivos solo pueden redactarse cuando ya elegiste el tema, lo justificaste y planteaste el problema. Por eso descarta las opciones que incluyen esos pasos previos: A trae la elección del tema, la justificación y el planteamiento; B trae el planteamiento; C trae la elección del tema. La única con puros pasos posteriores es D: ya con objetivos claros construyes el **marco teórico**, afinas la **delimitación del tema** y con eso armas el **esquema temático** que guiará la redacción."
           },
           {
             "id": 40,
@@ -582,7 +621,8 @@
               "D": "un verbo en infinitivo - ¿qué se propone hacer?"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 45"
+            "_src": "competencia-escrita · reactivo 45",
+            "explanation": "Los objetivos de una investigación —el general y los particulares— se redactan comenzando con un **verbo en infinitivo**: *analizar*, *describir*, *comparar*, *identificar*… Ese verbo enuncia la acción que el trabajo emprenderá, y por eso el objetivo responde a la pregunta **¿qué se propone hacer?** Las demás opciones fallan desde el primer hueco: un objetivo no arranca con una respuesta, ni con un resultado (los resultados llegan al final), ni con el sujeto de una oración; siempre abre el verbo."
           },
           {
             "id": 41,
@@ -596,7 +636,8 @@
               "D": "Fichas bibliohemerográficas"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 46"
+            "_src": "competencia-escrita · reactivo 46",
+            "explanation": "Las **fichas de trabajo** son el instrumento donde registras el contenido que vas extrayendo de tus fuentes, y por eso llevan tres datos esenciales: el **tema** (encabezado), la **fuente** de donde proviene y el **texto** (cita textual, resumen o paráfrasis). Las fichas bibliográficas, hemerográficas y bibliohemerográficas solo identifican la fuente —autor, título, editorial, fecha—: sirven para saber de dónde podrías sacar información, pero no llevan texto extraído ni tema desarrollado."
           },
           {
             "id": 42,
@@ -610,7 +651,8 @@
               "D": "9, 3, 2, 1, 4, 5, 6, 7, 8"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 47"
+            "_src": "competencia-escrita · reactivo 47",
+            "explanation": "Reconstruye el orden con la lógica de cómo se lee un trabajo: abre la **portada** (3), sigue el **índice** (1) para ubicar el contenido, la **introducción** (5) presenta el trabajo, viene el **desarrollo** (6) acompañado de su **aparato crítico** (7) —las citas y notas que lo sustentan—, la argumentación se cierra con las **conclusiones** (8) y al final van los complementos: **fuentes de información** (2), **anexos** (4) y **glosario** (9). Esa secuencia es exactamente 3, 1, 5, 6, 7, 8, 2, 4, 9. Las opciones que arrancan con el glosario (A y D) se descartan de inmediato: ningún reporte empieza por ahí."
           },
           {
             "id": 43,
@@ -624,7 +666,8 @@
               "D": "Aparato crítico"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 48"
+            "_src": "competencia-escrita · reactivo 48",
+            "explanation": "Todas esas preguntas describen la función de la **introducción**: ahí se presenta el tema u objeto de estudio, se explica por qué se hace el trabajo, con qué método, cómo está pensado y organizado, y qué alcances y limitaciones tiene. Es el mapa que recibe el lector antes de entrar al desarrollo. No es el índice (solo lista apartados y páginas), ni el prólogo (comentario preliminar, muchas veces escrito por otra persona), ni el aparato crítico (las citas y notas que sustentan lo dicho)."
           },
           {
             "id": 44,
@@ -638,7 +681,8 @@
               "D": "En el mercado de trabajo los empleadores buscan personas que sean confiables, creativas, con una comunicación efectiva, con iniciativa, que sean disciplinadas y que demuestren actitud positiva (Majid, Liming, Tong y Raihana, 2012)."
             },
             "answer": "B",
-            "_src": "competencia-escrita · reactivo 49"
+            "_src": "competencia-escrita · reactivo 49",
+            "explanation": "Cuando la fuente es primaria (consultaste la obra original), en APA basta la referencia autor-año entre paréntesis **al final** de la idea parafraseada: texto… (Apellido et al., año). Y desde la 7.ª edición, una obra con tres o más autores se cita con el primer apellido seguido de *et al.* desde la primera mención. La opción B cumple ambas cosas: (Majid et al., 2012) al cierre. La D se antoja, pero enlista los cuatro apellidos, formato que APA ya no acepta para tres o más autores; A y C además arrancan la oración con el paréntesis, construcción que no existe: para abrir con los autores sería «Majid et al. (2012) señalan que…»."
           },
           {
             "id": 45,
@@ -652,7 +696,8 @@
               "D": "Parafraseo"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 50"
+            "_src": "competencia-escrita · reactivo 50",
+            "explanation": "Fíjate en dos señales: no hay comillas ni número de página, y el apellido va integrado a la redacción con solo el año entre paréntesis. Eso indica que quien escribe recupera la idea de Goleman **con sus propias palabras**: es un **parafraseo** (cita no textual). Una cita textual corta exigiría comillas y página; una larga iría en bloque aparte con sangría y sin comillas. «Textual» es el distractor natural, pero sin comillas no hay reproducción literal."
           },
           {
             "id": 46,
@@ -666,7 +711,8 @@
               "D": "extraordinarios - lecheras - unos - extranjeras"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 1"
+            "_src": "competencia-escrita · reactivo 1",
+            "explanation": "Van tres reglas de concordancia en cadena. Primera: el adjetivo **antepuesto** a varios sustantivos concuerda solo con el más cercano: *con **extraordinario** riesgo y dificultades* (masculino singular, por *riesgo*). Segunda: el adjetivo **pospuesto** abarca a todos los sustantivos; *vaca* y *oveja* son femeninos, así que ***lecheras***, femenino plural. Tercera: con sustantivos de género mixto, el determinante antepuesto concuerda con el más próximo (***unos*** toros) y el adjetivo pospuesto va en **masculino plural**: toros, yeguas y mulas ***extranjeros***. Solo C cumple las tres."
           },
           {
             "id": 47,
@@ -680,7 +726,8 @@
               "D": "Ella"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 2"
+            "_src": "competencia-escrita · reactivo 2",
+            "explanation": "La pista está en los adjetivos que siguen al hueco: *delgada, moribunda, callada* van en **femenino singular**, así que el pronombre debe ser femenino singular: **Ella**. Además, todo el contexto habla de una tercera persona (*permitió*, *su causa*, *así siempre fue*), lo que descarta *Tú* y *Yo*; *Él* falla por el género de los adjetivos."
           },
           {
             "id": 48,
@@ -694,7 +741,8 @@
               "D": "Contiene elementos gramaticales incorrectos"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 3"
+            "_src": "competencia-escrita · reactivo 3",
+            "explanation": "Revisa la concordancia: el núcleo del sujeto es *Los estudiantes* (masculino plural) y el verbo es *salieron* (plural); concuerdan perfectamente. Los segmentos *con la especialidad en Química* y *de la vocacional 6* son complementos que solo precisan de qué estudiantes se habla. No hay faltas de ortografía, no hay exclamaciones y ningún elemento gramatical está mal empleado: la oración simplemente **presenta concordancia entre sus elementos**."
           },
           {
             "id": 49,
@@ -708,7 +756,8 @@
               "D": "El comité, junto con los representantes, revisaron el material con sumo cuidado"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 4"
+            "_src": "competencia-escrita · reactivo 4",
+            "explanation": "El sujeto es el colectivo *la multitud*: una palabra en singular que nombra a muchas personas. Cuando el verbo queda separado del colectivo por un inciso —aquí, *al escuchar la alarma de incendio*— se admite la concordancia por el sentido (*ad sensum*): *salieron*, pensando en las personas que forman la multitud. En las otras oraciones, en cambio, el verbo va pegado a un núcleo singular que exige singular: *la mitad… salió*, *la mayoría… está*, *el comité… revisó* (en D, *junto con los representantes* es un inciso, no parte del núcleo del sujeto)."
           },
           {
             "id": 50,
@@ -722,7 +771,8 @@
               "D": "El fumar y el beber alcohol"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 5"
+            "_src": "competencia-escrita · reactivo 5",
+            "explanation": "Cuando dos infinitivos coordinados van **sin artículo**, se perciben como una sola idea global y el verbo concuerda en singular: *Fumar y beber alcohol **es** dañino*. Por eso A embona con *…es dañino para la salud*. Si cada infinitivo llevara su artículo (*el fumar y el beber alcohol*), se sentirían como dos sujetos y pedirían plural: *son dañinos*. Las opciones B y C, con artículo en uno solo, rompen además el paralelismo de la construcción."
           },
           {
             "id": 51,
@@ -736,7 +786,8 @@
               "D": "es el promotor de la Asamblea por la Paz"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 6"
+            "_src": "competencia-escrita · reactivo 6",
+            "explanation": "Ubica el núcleo del sujeto: es *grupo*, masculino **singular**; *de la Organización de las Naciones Unidas* es solo su complemento. El predicado debe concordar con ese núcleo: *es el promotor de la Asamblea por la Paz*. La trampa está en dejarse llevar por *las Naciones Unidas* (plural) y elegir *son los responsables* o *eligieron*: estarías concordando con el complemento, no con el núcleo. Y aunque A va en singular, ese *lo* no tiene a qué referirse, así que la oración queda incompleta."
           },
           {
             "id": 52,
@@ -750,7 +801,8 @@
               "D": "2, 4, 5"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 7"
+            "_src": "competencia-escrita · reactivo 7",
+            "explanation": "Caza primero los errores evidentes. La 1 falla dos veces: *de los eterno* (debería ser *eternos*) y *la calle… invitan* (sujeto singular con verbo plural). La 5 también: *los festejos… **es** responsabilidad* debería ser *son*. Toda opción que incluya la 1 o la 5 queda fuera, y eso deja únicamente a C: las oraciones 2, 3 y 4 mantienen la concordancia sujeto-verbo (*las fiestas… son*, *la Constitución… protege*, *las piñatas, los papeles picados y la colación… son*)."
           },
           {
             "id": 53,
@@ -764,7 +816,8 @@
               "D": "De lo individual a lo particular"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 8"
+            "_src": "competencia-escrita · reactivo 8",
+            "explanation": "El texto arranca en el plano **general**: la Expo ISISA 2024, las compañías que participaron y el objetivo del evento. Después baja al plano **particular**: la peculiaridad de que la organización recae en un estudiante y, todavía más concreto, el nombre propio de la organizadora de este año, Dafne Álvarez. Ese movimiento de lo amplio a lo específico es la organización **de lo general a lo particular** (orden deductivo). La B describe exactamente el camino inverso."
           },
           {
             "id": 54,
@@ -778,7 +831,8 @@
               "D": "4, 1, 5, 2, 3"
             },
             "answer": "B",
-            "_src": "competencia-escrita · reactivo 9"
+            "_src": "competencia-escrita · reactivo 9",
+            "explanation": "Hay dos pistas de oro. La primera: el fragmento 2 empieza con minúscula (*decidió traducir…*), o sea que continúa una oración iniciada antes; el único arranque posible es el 4, que presenta al musicólogo y queda en suspenso (*…dolido de que sus paisanos no comprendieran*). La segunda: los referentes. Tras decidir la traducción (2), *trabajó con empeño… pero su obra no obtuvo el menor éxito* (1); el *en ella* del fragmento 5 se refiere a esa obra (*había sido demasiado «notarial»*); y el *ellos también se equivocaban* (3) alude a los exegetas del 5. La cadena completa es 4, 2, 1, 5, 3."
           },
           {
             "id": 55,
@@ -792,7 +846,8 @@
               "D": "3, 1, 2"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 10"
+            "_src": "competencia-escrita · reactivo 10",
+            "explanation": "Va del origen a lo actual. Abre el párrafo 3: presenta qué es la Semana Mundial del Espacio y de dónde viene (la declaración de la ONU en 1999); es el único que puede iniciar, porque los otros dos suponen que ya sabes de qué celebración se habla. Sigue el 2: cómo se celebra en general, con actividades de divulgación en todo el mundo. Y cierra el 1, que aterriza en lo más concreto: el tema elegido *este año*, «Los satélites mejoran la vida». Queda 3, 2, 1."
           },
           {
             "id": 56,
@@ -806,7 +861,8 @@
               "D": "Las flores de la *Macarenia Clavigera*"
             },
             "answer": "B",
-            "_src": "competencia-escrita · reactivo 11"
+            "_src": "competencia-escrita · reactivo 11",
+            "explanation": "El tema debe abarcar **todo** el párrafo, no un pedazo. Aquí todo gira alrededor del río Caño Cristales: dónde está, cómo le dicen, a qué debe su belleza y cuándo conviene visitarlo. La *Macarenia Clavigera* (A y D) y los colores (C) son subtemas: aparecen solo para explicar por qué el río es multicolor. Por eso el tema es **el río Caño Cristales de Colombia**."
           },
           {
             "id": 57,
@@ -820,7 +876,8 @@
               "D": "4"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 12"
+            "_src": "competencia-escrita · reactivo 12",
+            "explanation": "La idea principal es la que sostiene al resto del texto. El fragmento [1] presenta la exposición, dice de quién es y qué plantea (cuestionamientos sobre los mitos fundacionales en un contexto de capitalismo tardío): todo lo demás depende de él. El [2] agrega dónde está instalada, el [3] qué periodo de producción revisa y el [4] cuántas y cuáles piezas incluye; son ideas secundarias que amplían al [1]. Haz la prueba: quita cualquiera de esos fragmentos y el texto sobrevive; quita el [1] y ya no sabes ni de qué exposición se habla."
           }
         ]
       },
@@ -841,7 +898,8 @@
               "D": "Antetítulo"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 3 · reactivo 21"
+            "_src": "competencia-lectora · lectura 3 · reactivo 21",
+            "explanation": "De los elementos del texto periodístico, el único presente es el **titular**: «Manuel Muñoz García habla sobre los litops, las plantas de piedra», que encabeza el texto y anuncia su contenido. No hay **antetítulo** (rótulo breve por encima del titular), ni **bajada** (el resumen que va entre el titular y el cuerpo), ni **subtítulos** que dividan el texto en secciones: después del titular entra directo el párrafo de presentación."
           },
           {
             "id": 59,
@@ -856,7 +914,8 @@
               "D": "Debido al formato del texto, carece de los elementos de la noticia"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 3 · reactivo 22"
+            "_src": "competencia-lectora · lectura 3 · reactivo 22",
+            "explanation": "El párrafo [1] funciona como entrada de la entrevista y ahí se concentran los elementos de la noticia: **qué** (los litops, plantas que parecen piedras), **quién** (Manuel Muñoz García), **dónde** (zonas desérticas de Namibia y Sudáfrica), **por qué** (en climas extremos la naturaleza origina especies sorprendentes) y **cómo** conoció Manuel estas plantas (en un viaje por África). Las demás opciones se caen con el propio texto: sí hay desarrollo (las preguntas y respuestas) y sí hay cierre (la última respuesta, que invita a cultivarlos)."
           },
           {
             "id": 60,
@@ -871,7 +930,8 @@
               "D": "Descripción"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 3 · reactivo 23"
+            "_src": "competencia-lectora · lectura 3 · reactivo 23",
+            "explanation": "Mira la estructura: casi todo el texto está armado con turnos de **P.** y **R.**, es decir, el intercambio de dos voces que preguntan y responden. Esa alternancia de interlocutores es la forma del **diálogo**, y domina de principio a fin. Dentro de las respuestas hay pasajes expositivos y descriptivos (cómo son las hojas, cómo hacen la fotosíntesis), pero están al servicio del intercambio: la tipología predominante es el diálogo."
           },
           {
             "id": 61,
@@ -886,7 +946,8 @@
               "D": "una entrevista"
             },
             "answer": "D",
-            "_src": "competencia-lectora · lectura 3 · reactivo 24"
+            "_src": "competencia-lectora · lectura 3 · reactivo 24",
+            "explanation": "El texto tiene la estructura clásica de la **entrevista**: un párrafo inicial que presenta al personaje (Manuel Muñoz García y su pasión por los litops), seguido de preguntas del periodista y respuestas del entrevistado, marcadas con P. y R. No es noticia ni reportaje porque la información no la narra un redactor: la aporta el propio especialista en primera persona, guiado por las preguntas de su interlocutor."
           },
           {
             "id": 62,
@@ -901,7 +962,8 @@
               "D": "La adaptación es una característica predominante de la naturaleza"
             },
             "answer": "D",
-            "_src": "competencia-lectora · lectura 3 · reactivo 26"
+            "_src": "competencia-lectora · lectura 3 · reactivo 26",
+            "explanation": "El texto entero es un catálogo de adaptaciones: los litops se disfrazan de piedra para burlar a sus depredadores [2], viven casi enterrados y desarrollaron «ventanas» traslúcidas para hacer la fotosíntesis bajo el sol del desierto [3], y renuevan sus tejidos cada año [3]. Desde el arranque se dice que, ante condiciones difíciles, la naturaleza «origina especies extrañas» [1]. Todo apunta a la idea D: la adaptación como característica predominante de la naturaleza. La A toma al pie de la letra una metáfora («la naturaleza se pone testaruda»), y la C exagera: viven *casi* enterrados y asoman cuando lo necesitan, no «siempre» bajo tierra."
           },
           {
             "id": 63,
@@ -916,7 +978,8 @@
               "D": "Las hojas nuevas de los litops surgen al comienzo de la primavera"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 3 · reactivo 27"
+            "_src": "competencia-lectora · lectura 3 · reactivo 27",
+            "explanation": "La evidencia está en el párrafo [1]: desde que Manuel conoció los litops en África, «este género se convirtió en su pasión y parte importante de su vida»; y en [5] habla de las horas de alegría que dan y los compara con un ave fénix. De ahí se desprende que los litops son su fuente de inspiración. La B contradice al texto (los litops «piden muy poco»), y la C confunde: su pasión son las plantas, no los lugares semidesérticos. La D casi repite al texto, pero con un matiz inexacto: lo que ocurre «a comienzo de la primavera» es que las hojas viejas *empiezan a arrugarse*; las nuevas van surgiendo conforme aquellas les ceden sus reservas."
           },
           {
             "id": 64,
@@ -931,7 +994,8 @@
               "D": "Es difícil cultivar litops en climas que no son desérticos o semidesérticos"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 3 · reactivo 28"
+            "_src": "competencia-lectora · lectura 3 · reactivo 28",
+            "explanation": "Una inferencia es algo que el texto no dice con todas sus letras, pero que se sigue de lo que sí dice. En [2] se explica que los litops parecen piedras «para pasar desapercibidos entre sus depredadores» y que sus hojas son suculentas, es decir, carnosas y llenas de agua. Junta las piezas: si necesitan camuflarse de depredadores es porque son un bocado apetecible, y en pleno desierto unas hojas jugosas son un tesoro. Eso es la opción C. La B contradice la «enorme diversidad» de dibujos que subraya [4], y la D choca con [5], donde cultivarlos se pinta sencillo: «piden muy poco»."
           },
           {
             "id": 65,
@@ -946,7 +1010,8 @@
               "D": "4 - 16"
             },
             "answer": "D",
-            "_src": "competencia-lectora · lectura 4 · reactivo 31"
+            "_src": "competencia-lectora · lectura 4 · reactivo 31",
+            "explanation": "Cuéntalo directamente sobre el poema: hay cuatro bloques separados (estrofas) y cada uno tiene cuatro versos, así que son $4 \\times 4 = 16$ versos en total. La única opción que registra ambas cosas es D: 4 estrofas y 16 versos. Ojo con la B: ese 4 - 4 confunde los versos *por estrofa* con el total, y la pregunta pide los versos «en total»."
           },
           {
             "id": 66,
@@ -961,7 +1026,8 @@
               "D": "dodecasílabos"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 4 · reactivo 32"
+            "_src": "competencia-lectora · lectura 4 · reactivo 32",
+            "explanation": "Cuenta las sílabas poéticas del primer verso: *Quie-ro-mo-rir-cuan-do-de-cli-ne‿el-dí-a* son 11, con la sinalefa *ne‿el*. Como el verso termina en palabra llana, el conteo no se ajusta: versos de **once sílabas**, y el nombre técnico de ese verso es **endecasílabo** (del griego *éndeka*, once). «Onceasílabo» y «doceasílabo» ni siquiera existen como términos métricos: son distractores armados con el conteo en español."
           },
           {
             "id": 67,
@@ -976,7 +1042,8 @@
               "D": "Consonante"
             },
             "answer": "D",
-            "_src": "competencia-lectora · lectura 4 · reactivo 33"
+            "_src": "competencia-lectora · lectura 4 · reactivo 33",
+            "explanation": "Toma cualquier estrofa y compara las terminaciones desde la última vocal acentuada: *dí-a / agoní-a*, *cie-lo / vue-lo*, *instan-tes / sollozan-tes*. Coinciden **todos** los sonidos, vocales y consonantes: eso es rima **consonante** o perfecta. La asonante repetiría solo las vocales (tipo *cielo / beso*), y hablar de rima suelta o blanca implicaría versos que no riman, cosa que aquí claramente no pasa."
           },
           {
             "id": 68,
@@ -991,7 +1058,8 @@
               "D": "La relación de la muerte con la juventud"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 4 · reactivo 34"
+            "_src": "competencia-lectora · lectura 4 · reactivo 34",
+            "explanation": "El poema pide morir joven, pero fíjate en el porqué: irse «antes que destruya / el tiempo aleve la gentil corona», «cuando la vida dice aún: soy tuya», y ser «como ese sol que lento expira: / algo muy luminoso que se pierde». Cada imagen exalta la **juventud como el momento luminoso y pleno de la vida**: tan valiosa que el poeta prefiere morir antes que verla marchitarse. La D se antoja, pero la muerte no es aquí el asunto central: es el recurso poético para retratar la juventud en todo su esplendor."
           },
           {
             "id": 69,
@@ -1006,7 +1074,8 @@
               "D": "redondilla"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 4 · reactivo 35"
+            "_src": "competencia-lectora · lectura 4 · reactivo 35",
+            "explanation": "El poema está formado por estrofas de **cuatro versos endecasílabos** —arte mayor— con rima consonante: esa estrofa se llama **cuarteto**. La redondilla también tiene cuatro versos, pero de arte menor (octosílabos), así que no aplica. El soneto exigiría una forma fija de 14 versos (dos cuartetos y dos tercetos), y el romance es una tirada indefinida de octosílabos con rima asonante en los pares."
           },
           {
             "id": 70,
@@ -1021,7 +1090,8 @@
               "D": "La vida en altamar puede ocasionar problemas de salud"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 4 · reactivo 36"
+            "_src": "competencia-lectora · lectura 4 · reactivo 36",
+            "explanation": "La clave está en el cierre: «cuando la vida dice aún: soy tuya, / aunque sepamos bien que **nos traiciona**». Llamar traicionera a la vida —y «aleve», es decir alevoso, al tiempo— revela un reproche, cierto resentimiento: se le disfruta, pero no se confía en ella. La C es el distractor típico: que la voz poética desee morir joven no permite asegurar nada sobre la edad del autor al escribir; eso sería confundir al poeta con su biografía."
           },
           {
             "id": 71,
@@ -1036,7 +1106,8 @@
               "D": "mar es un lugar propio de la realeza"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 4 · reactivo 38"
+            "_src": "competencia-lectora · lectura 4 · reactivo 38",
+            "explanation": "En la cuarta estrofa el poeta prefiere morir «antes que destruya / el tiempo aleve la gentil corona»: la vejez aparece como pura destrucción de lo valioso —la corona de la juventud— a manos de un tiempo traicionero. Querer morir joven con tal de no envejecer es una forma de desprecio por la vejez. La A confunde el escenario: el mar del poema es sereno porque así lo *desea* el poeta para su muerte, no porque el texto asegure que el mar sea un lugar apacible en general."
           },
           {
             "id": 72,
@@ -1051,7 +1122,8 @@
               "D": "Cuando alguien está muriendo, pierde el sentido del oído"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 4 · reactivo 39"
+            "_src": "competencia-lectora · lectura 4 · reactivo 39",
+            "explanation": "La pista está en la última estrofa: la vida «dice aún: soy tuya, / aunque sepamos bien que nos traiciona». Aunque la sintamos nuestra, la vida hace lo que quiere con nosotros: nos traiciona. Y el poema entero es apenas un *deseo* («Quiero morir…»), no algo que el poeta pueda decidir: pedir una muerte así confirma que no controlamos ni la vida ni la muerte. Por eso la idea compatible es B. La C y la D convierten en afirmaciones generales lo que en el poema son imágenes y anhelos (el alma como ave que vuela, el no querer escuchar plegarias)."
           },
           {
             "id": 73,
@@ -1066,7 +1138,8 @@
               "D": "Concatenación"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 4 · reactivo 40"
+            "_src": "competencia-lectora · lectura 4 · reactivo 40",
+            "explanation": "La cuarta estrofa junta ideas opuestas en un mismo cuadro: **morir** frente a la **vida** que dice «soy tuya»; la entrega de ese «soy tuya» frente a la **traición** de «nos traiciona». Esa contraposición de ideas contrarias es la **antítesis**. No hay alegoría (una metáfora sostenida a lo largo de todo el texto), ni calambur (juego de reagrupar sílabas, como *oro parece, plata no es*), ni concatenación (encadenar versos repitiendo la última palabra de uno al inicio del siguiente)."
           },
           {
             "id": 74,
@@ -1081,7 +1154,8 @@
               "D": "[5]"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 5 · reactivo 41"
+            "_src": "competencia-lectora · lectura 5 · reactivo 41",
+            "explanation": "En [1] se plantea el conflicto: los animales descubren las artimañas del Camaleón y sacan cristales de colores para desenmascararlo. El **nudo** llega en [2], cuando el problema se enreda de verdad: el método se generaliza a tal grado que todos cargan equipos completos de cristales y —el giro clave— el propio Camaleón, «considerando que todos eran de su condición», adopta también el sistema. A partir de ahí la confusión es total. Los párrafos [3] y [4] encaminan el desenlace (el Reglamento y las reglas de urbanidad) y el [5] es el cierre con el León."
           },
           {
             "id": 75,
@@ -1096,7 +1170,8 @@
               "D": "secundario"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 5 · reactivo 42"
+            "_src": "competencia-lectora · lectura 5 · reactivo 42",
+            "explanation": "El León aparece una sola vez, en el último párrafo, riéndose de todos y jugando «a lo suyo» de vez en cuando: no interviene en el conflicto ni su presencia modifica la historia. Un personaje con esa aparición esporádica y sin peso en la trama es un personaje **incidental** (o episódico). El secundario, en cambio, acompaña la acción de forma constante junto al protagonista; y «redondo» describe a un personaje complejo que evoluciona, no la frecuencia con que aparece."
           },
           {
             "id": 76,
@@ -1111,7 +1186,8 @@
               "D": "Capacidad de cambio del Camaleón"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 5 · reactivo 43"
+            "_src": "competencia-lectora · lectura 5 · reactivo 43",
+            "explanation": "Desde el arranque se dice que al Camaleón «le había dado por la política», y todo el relato es una sátira de ese mundo: cambia de color «según el clima político o las opiniones políticas prevalecientes», todos terminan disfrazándose igual y hasta se prestan cristales entre enemigos «como sucedía entre las naciones más civilizadas». La fábula retrata la simulación y la conveniencia vestidas de refinada cortesía: la **falsa moral de los políticos**. La D se queda en la superficie: el cambio de color es solo la metáfora de esa doblez, no la idea principal."
           },
           {
             "id": 77,
@@ -1126,7 +1202,8 @@
               "D": "Leyenda"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 5 · reactivo 44"
+            "_src": "competencia-lectora · lectura 5 · reactivo 44",
+            "explanation": "Tiene las dos marcas de la **fábula**: personajes animales humanizados (el Camaleón metido en política, la Zorra asesora, el León socarrón) y una enseñanza final, aquí en forma de dicho: «todo Camaleón es según el color del cristal con que se mira», que satiriza la conducta humana. El mito explicaría orígenes con dioses; la leyenda mezcla hechos reales con lo maravilloso; y aunque toda fábula se narra como relato breve, el subgénero específico —animales + moraleja— es la fábula."
           }
         ]
       },

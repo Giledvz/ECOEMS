@@ -1,9 +1,213 @@
 {
- "lote": "ipn-iycfm-1__matem-ticas__01",
+ "lote": "ipn-iycfm-1__g02",
  "examen": "ipn-iycfm-1.json",
  "titulo": "Simulacro IPN — Ingeniería y Ciencias Físico Matemáticas",
- "materia": "Matemáticas",
+ "materia": "Física + Matemáticas",
  "preguntas": [
+  {
+   "id": 95,
+   "tema": "Física",
+   "texto": "Ordenar las siguientes parejas de vectores posición y fuerza de menor a mayor de acuerdo a la magnitud del torque.\n\n1. $r_{z}=1\\,m$ y $F_{y}=6\\,N$\n2. $r_{z}=7\\,m$ y $F_{y}=0\\,N$\n3. $r_{z}=2\\,m$ y $F_{y}=4\\,N$\n4. $r_{z}=3\\,m$ y $F_{y}=5\\,N$",
+   "opciones": {
+    "A": "3, 2, 4, 1",
+    "B": "2, 1, 3, 4",
+    "C": "3, 4, 2, 1",
+    "D": "2, 3, 1, 4"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 96,
+   "tema": "Física",
+   "texto": "Es un ejemplo de la aplicación de la ecuación de Bernoulli cuando la presión no cambia.",
+   "opciones": {
+    "A": "Empuje",
+    "B": "Efecto Venturi",
+    "C": "Flujo turbulento",
+    "D": "Teorema de Torricelli"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 97,
+   "tema": "Física",
+   "texto": "Una carga puntual genera un campo eléctrico de magnitud E a la distancia r. Si se mide la magnitud del campo eléctrico desde la distancia 3r, la nueva magnitud en términos de E es:",
+   "opciones": {
+    "A": "$E/9$",
+    "B": "$E/3$",
+    "C": "$3E$",
+    "D": "$9E$"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 98,
+   "tema": "Física",
+   "texto": "Dos vectores son iguales si su __________ y __________ son iguales; o de forma equivalente, si las __________ de dichos vectores son iguales.",
+   "opciones": {
+    "A": "dirección, sentido, componentes",
+    "B": "magnitud, dirección, propiedades",
+    "C": "magnitud, dirección, componentes",
+    "D": "dirección, componentes, propiedades"
+   },
+   "clave": "C"
+  },
+  {
+   "id": 99,
+   "tema": "Física",
+   "texto": "Relacionar el concepto con su modelo matemático.\n\n| Concepto | Modelo matemático |\n|---|---|\n| 1. Magnitud del momento de una fuerza | A. $\\tau = rF\\,\\mathrm{sen}\\,\\theta$ |\n| 2. Primera condición de equilibrio | B. $\\sum \\vec{F} = \\vec{0}$ |\n| 3. Segunda condición de equilibrio | C. $\\sum \\vec{\\tau} = \\vec{0}$ |",
+   "opciones": {
+    "A": "1A, 2B, 3C",
+    "B": "1B, 2C, 3A",
+    "C": "1A, 2C, 3B",
+    "D": "1B, 2A, 3C"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 100,
+   "tema": "Física",
+   "texto": "Se deja caer una pelota desde una altura H. Si la pelota golpea el suelo con una velocidad de 20 m/s, ¿desde qué altura fue arrojada?",
+   "opciones": {
+    "A": "20.39 m",
+    "B": "40.2 m",
+    "C": "50.3 m",
+    "D": "81.54 m"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 101,
+   "tema": "Física",
+   "texto": "El peso en un objeto sobre la superficie de la Tierra es W. Si el objeto se aleja a una distancia igual al doble del radio del planeta, ¿qué le sucede a su peso?",
+   "opciones": {
+    "A": "No cambia",
+    "B": "Disminuye a la mitad",
+    "C": "Aumenta tres veces",
+    "D": "Disminuye a una cuarta parte"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 102,
+   "tema": "Física",
+   "texto": "Relacionar el concepto con su definición.\n\n| Concepto | Definición |\n|---|---|\n| 1. Masa | A. Cambio en la velocidad con respecto al tiempo. |\n| 2. Fuerza | B. Desplazamiento de un objeto en un intervalo de tiempo. |\n| 3. Velocidad | C. Agente de naturaleza vectorial que cuantifica la interacción entre dos cuerpos. |\n| 4. Aceleración | D. Cantidad física de naturaleza escalar que se define como la medida de la inercia de un objeto. |",
+   "opciones": {
+    "A": "1D, 2B, 3C, 4A",
+    "B": "1C, 2D, 3A, 4B",
+    "C": "1D, 2C, 3B, 4A",
+    "D": "1C, 2A, 3D, 4B"
+   },
+   "clave": "C"
+  },
+  {
+   "id": 103,
+   "tema": "Física",
+   "texto": "Tres vectores $\\vec{r}$, $\\vec{s}$, $\\vec{v}$ tienen magnitudes 3, 4 y 5, respectivamente, además $\\vec{r}+\\vec{s}+\\vec{v}=0$; entonces $\\left|\\vec{r}\\cdot\\vec{s}+\\vec{s}\\cdot\\vec{v}+\\vec{v}\\cdot\\vec{r}\\right|$ es igual a:",
+   "opciones": {
+    "A": "25",
+    "B": "35",
+    "C": "47",
+    "D": "50"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 104,
+   "tema": "Física",
+   "texto": "Un esquiador con un peso de 784 N (m = 80 kg) desciende por una ladera desde una altura de 9 m. ¿Cuál es la velocidad que alcanza al terminar la pendiente en la base de la montaña?",
+   "opciones": {
+    "A": "534.1 m/s",
+    "B": "13.28 m/s",
+    "C": "53.41 m/s",
+    "D": "132.8 m/s"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 105,
+   "tema": "Física",
+   "texto": "Calcular el gasto de un líquido que llena un recipiente de 540 $\\ell$ en 3 minutos.",
+   "opciones": {
+    "A": "$30\\ m^{3}/s$",
+    "B": "$300\\ m^{3}/s$",
+    "C": "$0.03\\ m^{3}/s$",
+    "D": "$0.003\\ m^{3}/s$"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 106,
+   "tema": "Física",
+   "texto": "Una persona mueve una caja de 20 kg una distancia de 3 m aplicando una fuerza de 20 N dirigida en un ángulo de 60° debajo de la horizontal. ¿Cuál es el trabajo efectuado por dicha fuerza y cuál es el trabajo efectuado por la fuerza gravitacional, respectivamente?",
+   "opciones": {
+    "A": "10 J, 300 J",
+    "B": "30 J, 300 J",
+    "C": "10 J, 0 J",
+    "D": "30 J, 0 J"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 107,
+   "tema": "Física",
+   "texto": "Son las unidades de la corriente eléctrica.",
+   "opciones": {
+    "A": "Voltio metro",
+    "B": "Watt segundo",
+    "C": "Coulomb segundo",
+    "D": "Coulomb / segundo"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 108,
+   "tema": "Física",
+   "texto": "Identificar el ángulo entre el vector $\\vec{S} = 4\\hat{i}-3\\hat{j}$ y el vector $\\vec{L} = 3\\hat{i}+4\\hat{j}$",
+   "opciones": {
+    "A": "0°",
+    "B": "45°",
+    "C": "90°",
+    "D": "180°"
+   },
+   "clave": "C"
+  },
+  {
+   "id": 109,
+   "tema": "Física",
+   "texto": "Determinar el tiempo total del viaje si un automóvil recorre una distancia de 200 km y desarrolla en los primeros 140 km una velocidad media de 70 km/h, en tanto que en los últimos 60 km tiene una velocidad media de 60 km/h.",
+   "opciones": {
+    "A": "1.5 h",
+    "B": "2.0 h",
+    "C": "3.0 h",
+    "D": "3.5 h"
+   },
+   "clave": "C"
+  },
+  {
+   "id": 110,
+   "tema": "Física",
+   "texto": "Se suelta una piedra desde una altura de 4 m. ¿Cuánto tiempo tarda en caer al suelo?",
+   "opciones": {
+    "A": "0.9 s",
+    "B": "1.5 s",
+    "C": "2.9 s",
+    "D": "3.5 s"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 111,
+   "tema": "Física",
+   "texto": "Relacionar el principio con su descripción.\n\n| Principio | Descripción |\n|---|---|\n| 1. Pascal | A. Flujo horizontal en el que los puntos de mayor velocidad del fluido tienen menor presión que los de menor velocidad. |\n| 2. Bernoulli | B. Todo cuerpo sumergido en el fluido experimenta un empuje hacia arriba igual al peso del fluido desplazado. |\n| 3. Arquímedes | C. Cuando se ejerce presión sobre un fluido, dicha presión se transmite con igual intensidad a todos los puntos del fluido y a las paredes del recipiente. |",
+   "opciones": {
+    "A": "1B, 2A, 3C",
+    "B": "1C, 2A, 3B",
+    "C": "1B, 2C, 3A",
+    "D": "1C, 2B, 3A"
+   },
+   "clave": "B"
+  },
   {
    "id": 1,
    "tema": "Secuencias",

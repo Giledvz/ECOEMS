@@ -1,0 +1,170 @@
+[
+ {
+  "id": 95,
+  "explanation": "Con $\\vec{r}$ en el eje $z$ y $\\vec{F}$ en el eje $y$, los vectores son perpendiculares y la magnitud del torque es simplemente $\\tau = rF$. Calcula las cuatro: (1) $1\\times 6 = 6$, (2) $7\\times 0 = 0$, (3) $2\\times 4 = 8$, (4) $3\\times 5 = 15$, en $N\\cdot m$. De menor a mayor: 2, 1, 3, 4.\n\nLa pareja 2 engaña con su brazo de $7\\,m$, pero si la fuerza vale cero, el torque vale cero: sin fuerza no hay giro."
+ },
+ {
+  "id": 96,
+  "explanation": "En el teorema de Torricelli un líquido sale por un orificio de un tanque abierto: tanto la superficie libre como el orificio están a presión atmosférica, así que en la ecuación de Bernoulli los términos de presión se cancelan y solo queda el intercambio entre altura y velocidad, de donde sale $v = \\sqrt{2gh}$.\n\nEl efecto Venturi (opción B) es el caso contrario: tubo horizontal donde la altura no cambia y lo que varía es justamente la presión."
+ },
+ {
+  "id": 97,
+  "explanation": "El campo de una carga puntual obedece la ley del inverso del cuadrado: $E = \\dfrac{kq}{r^2}$. Al triplicar la distancia:\n\n$$E' = \\frac{kq}{(3r)^2} = \\frac{kq}{9r^2} = \\frac{E}{9}$$\n\nSi contestaste $E/3$, dividiste entre 3 pero olvidaste que la distancia va elevada al cuadrado."
+ },
+ {
+  "id": 98,
+  "explanation": "Dos vectores son iguales cuando coinciden su **magnitud** y su **dirección**: mismo tamaño y apuntando hacia el mismo lado. Y decir eso equivale exactamente a decir que sus **componentes** son iguales, porque las componentes guardan las dos informaciones a la vez: de ellas recuperas la magnitud (con Pitágoras) y la dirección (con el ángulo)."
+ },
+ {
+  "id": 99,
+  "explanation": "El momento de una fuerza (torque) se calcula con $\\tau = rF\\,\\mathrm{sen}\\,\\theta$, así que 1A. Las dos condiciones de equilibrio van en orden: la **primera** evita que el cuerpo se traslade, por eso pide que las fuerzas se anulen, $\\sum \\vec{F} = \\vec{0}$ (2B); la **segunda** evita que gire, por eso pide que los torques se anulen, $\\sum \\vec{\\tau} = \\vec{0}$ (3C)."
+ },
+ {
+  "id": 100,
+  "explanation": "En caída libre desde el reposo, $v^2 = 2gH$. Despeja la altura:\n\n$$H = \\frac{v^2}{2g} = \\frac{(20)^2}{2(9.81)} = \\frac{400}{19.62} \\approx 20.39\\ m$$\n\nEs lo mismo que igualar energías: $mgH = \\tfrac{1}{2}mv^2$. Si te dio 81.54 m (opción D), multiplicaste por 2 en lugar de dividir entre $2g$."
+ },
+ {
+  "id": 101,
+  "explanation": "El peso es la fuerza gravitacional, y esta decae con el cuadrado de la distancia al **centro** del planeta: $W = \\dfrac{GMm}{r^2}$. En la superficie $r = R$; al alejarse hasta $r = 2R$:\n\n$$W' = \\frac{GMm}{(2R)^2} = \\frac{W}{4}$$\n\nSi pensaste «al doble de distancia, la mitad de peso» (opción B), te faltó el cuadrado de la ley de gravitación."
+ },
+ {
+  "id": 102,
+  "explanation": "Ve concepto por concepto: la **masa** es la cantidad escalar que mide la inercia (1D); la **fuerza** es el agente vectorial que cuantifica la interacción entre dos cuerpos (2C); la **velocidad** es el desplazamiento en un intervalo de tiempo (3B); y la **aceleración** es el cambio de la velocidad con respecto al tiempo (4A). La combinación es 1D, 2C, 3B, 4A."
+ },
+ {
+  "id": 103,
+  "explanation": "El truco es tomar el producto punto de la condición $\\vec{r}+\\vec{s}+\\vec{v}=\\vec{0}$ consigo misma:\n\n$$|\\vec{r}|^2+|\\vec{s}|^2+|\\vec{v}|^2 + 2\\left(\\vec{r}\\cdot\\vec{s}+\\vec{s}\\cdot\\vec{v}+\\vec{v}\\cdot\\vec{r}\\right) = 0$$\n\nCon las magnitudes: $9+16+25 = 50$, así que $\\vec{r}\\cdot\\vec{s}+\\vec{s}\\cdot\\vec{v}+\\vec{v}\\cdot\\vec{r} = -25$ y su valor absoluto es 25.\n\nSi contestaste 50 (opción D), te quedaste con la suma de los cuadrados y olvidaste dividir entre 2."
+ },
+ {
+  "id": 104,
+  "explanation": "Por conservación de energía, la potencial de arriba se convierte en cinética abajo: $mgh = \\tfrac{1}{2}mv^2$. La masa se cancela (el peso de 784 N es dato de relleno) y queda:\n\n$$v = \\sqrt{2gh} = \\sqrt{2(9.8)(9)} = \\sqrt{176.4} \\approx 13.28\\ m/s$$\n\nLas opciones C y D solo corren el punto decimal; si te salió una de esas, revisa cómo sacaste la raíz cuadrada."
+ },
+ {
+  "id": 105,
+  "explanation": "El gasto es volumen entre tiempo, pero en unidades del SI. Convierte primero: $540\\ \\ell = 0.54\\ m^3$ (porque $1\\ m^3 = 1000\\ \\ell$) y $3\\ \\mathrm{min} = 180\\ s$. Entonces:\n\n$$Q = \\frac{V}{t} = \\frac{0.54\\ m^3}{180\\ s} = 0.003\\ m^{3}/s$$\n\nSi te dio $0.03$ (opción C), seguramente usaste $1\\ m^3 = 100\\ \\ell$: el metro cúbico son mil litros."
+ },
+ {
+  "id": 106,
+  "explanation": "El trabajo de la fuerza aplicada es $W = Fd\\cos\\theta = (20)(3)\\cos 60° = 60 \\times \\tfrac{1}{2} = 30\\ J$ (que el ángulo vaya por debajo de la horizontal no cambia el coseno). La gravedad, en cambio, es vertical y la caja se mueve en horizontal: fuerza y desplazamiento son perpendiculares, $\\cos 90° = 0$, y la fuerza gravitacional no hace trabajo. Por eso la pareja es 30 J y 0 J."
+ },
+ {
+  "id": 107,
+  "explanation": "La corriente se define como la carga que pasa por unidad de tiempo: $I = \\dfrac{q}{t}$, o sea **coulombs entre segundos**. Esa combinación tiene nombre propio: el ampere ($1\\ A = 1\\ C/s$). La opción C (coulomb por segundo como producto) multiplica en lugar de dividir, y eso no mide corriente."
+ },
+ {
+  "id": 108,
+  "explanation": "Cuando te pidan el ángulo entre dos vectores, empieza por el producto punto:\n\n$$\\vec{S}\\cdot\\vec{L} = (4)(3) + (-3)(4) = 12 - 12 = 0$$\n\nProducto punto cero entre vectores no nulos significa que son perpendiculares: el ángulo es $90°$, sin necesidad de calcular magnitudes ni cosenos."
+ },
+ {
+  "id": 109,
+  "explanation": "Cada tramo lleva su propio tiempo: $t_1 = \\dfrac{140}{70} = 2\\ h$ y $t_2 = \\dfrac{60}{60} = 1\\ h$, así que el viaje completo dura $2 + 1 = 3\\ h$.\n\nSi te dio 2.0 h (opción B), te quedaste con el primer tramo y olvidaste sumar el segundo."
+ },
+ {
+  "id": 110,
+  "explanation": "Caída libre desde el reposo: $h = \\tfrac{1}{2}gt^2$. Despeja el tiempo:\n\n$$t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(4)}{9.8}} = \\sqrt{0.816} \\approx 0.9\\ s$$\n\nComprobación rápida: en el primer segundo un objeto cae unos 4.9 m, así que caer solo 4 m debe tomar un poco menos de un segundo."
+ },
+ {
+  "id": 111,
+  "explanation": "El principio de **Pascal** es el de la presión que se transmite íntegra a todo el fluido y a las paredes (1C): piensa en la prensa hidráulica. El de **Bernoulli** relaciona velocidad y presión: donde el fluido va más rápido, la presión es menor (2A). Y el de **Arquímedes** es el del empuje igual al peso del fluido desplazado (3B): el de la flotación. La combinación es 1C, 2A, 3B."
+ },
+ {
+  "id": 1,
+  "explanation": "Mira las diferencias entre términos consecutivos: $10, 14, 18, 22, \\ldots$ No son constantes, pero crecen siempre de 4 en 4. Segundas diferencias constantes significan término general cuadrático, con coeficiente principal $4 \\div 2 = 2$. Propón $a_n = 2n^2+bn+c$; con $a_1 = 7$ y $a_2 = 17$ obtienes $b = 4$ y $c = 1$:\n\n$$a_n = 2n^2+4n+1$$\n\nComprueba con uno de la lista: $a_4 = 32+16+1 = 49$. Ya con la fórmula, $a_{20} = 2(400)+80+1 = 881$.\n\nSi te dio 799 (opción B), calculaste $a_{19}$: te quedaste un término corto."
+ },
+ {
+  "id": 2,
+  "explanation": "Son dos sucesiones trenzadas. Las letras $A, D, G, J$ avanzan de tres en tres lugares en el alfabeto (se saltan dos letras): después de $J$ se saltan $K$ y $L$, y toca $M$. Los números $3, 6, 12, 24$ se van duplicando, así que sigue $48$. La pareja es $M$ y $48$.\n\nSi elegiste $N$, contaste cuatro lugares en vez de tres: revisa el brinco de $A$ a $D$."
+ },
+ {
+  "id": 3,
+  "explanation": "Es una sucesión aritmética con diferencia $d = 7$ (de $-10$ a $-3$, de $-3$ a $4$, siempre suma 7). El término general es:\n\n$$a_n = -10 + 7(n-1) = 7n - 17$$\n\nIguala a 550: $7n - 17 = 550$, entonces $7n = 567$ y $n = 81$.\n\nSi te dio 80 (opción A), usaste $a_n = -10 + 7n$ sin el $(n-1)$: el clásico desfase de un lugar."
+ },
+ {
+  "id": 4,
+  "explanation": "No necesitas conocer los números, solo sus sumas: los cuatro menores suman $4 \\times 12 = 48$ y los cuatro mayores $4 \\times 18 = 72$. El total es $48 + 72 = 120$, y la media de los ocho datos es $120 \\div 8 = 15$.\n\nAquí también funciona promediar las dos medias, $(12+18) \\div 2 = 15$, pero solo porque los grupos son del mismo tamaño; con grupos desiguales ese atajo falla."
+ },
+ {
+  "id": 5,
+  "explanation": "Fíjate en Anabel («al menos 5») y Alfredo («menos de 5»): dicen exactamente lo contrario, así que entre ellos dos siempre hay una verdad y una mentira. Como en total solo hay una verdad, Erick tiene que mentir: no es cierto que Jonathan tenga más de 2 hermanos, o sea tiene 2 o menos. El máximo posible es 2, y checa que funciona: con 2 hermanos, Alfredo acierta mientras Anabel y Erick mienten.\n\nSi contestaste 3 (opción D), revisa: con 3 hermanos dirían la verdad Alfredo y Erick a la vez, y eso rompe la condición."
+ },
+ {
+  "id": 6,
+  "explanation": "Llama $k$ al resultado común de las cuatro operaciones. Entonces los sumandos son $k-5$, $k+5$, $k/5$ y $5k$, y su suma es 900:\n\n$$(k-5)+(k+5)+\\frac{k}{5}+5k = \\frac{36k}{5} = 900 \\quad\\Rightarrow\\quad k = 125$$\n\nLos sumandos resultan $120$, $130$, $25$ y $625$ (verifica: suman 900). El mayor es 625, el menor es 25, y su suma es $625 + 25 = 650$."
+ },
+ {
+  "id": 7,
+  "explanation": "Primero el paréntesis, y adentro también manda la jerarquía: $8 \\div 4 = 2$ y $3 \\times 4 = 12$, así que $1 + 2 + 12 = 15$. Afuera, la multiplicación va antes que la resta: $3 \\times 2 \\times 15 = 90$. Hasta el final restas:\n\n$$w = 5 - 90 = -85$$\n\nEl error típico es hacer $5 - 3$ primero: la resta siempre espera a que terminen las multiplicaciones y divisiones."
+ },
+ {
+  "id": 8,
+  "explanation": "Con razón $3:2$ y 200 flores, cada «parte» vale $200 \\div 5 = 40$: hay $120$ rosas y $80$ tulipanes. Solo se agregan tulipanes, así que las 120 rosas quedan fijas. Para lograr la razón $2:3$:\n\n$$\\frac{120}{t} = \\frac{2}{3} \\quad\\Rightarrow\\quad t = 180$$\n\nComo ya había 80, se agregan $180 - 80 = 100$.\n\nSi contestaste 180 (opción C), diste el total final de tulipanes, no los que se agregan."
+ },
+ {
+  "id": 9,
+  "explanation": "Las fracciones de escalera se resuelven de adentro hacia afuera. Primero $1 + \\dfrac{1}{x+1} = \\dfrac{x+2}{x+1}$, cuyo recíproco es $\\dfrac{x+1}{x+2}$. Luego $1 + \\dfrac{x+1}{x+2} = \\dfrac{2x+3}{x+2}$, y el recíproco final da:\n\n$$D = \\frac{x+2}{2x+3}$$\n\nSi llegaste a $\\dfrac{2x+3}{x+2}$ (opción A), hiciste todo bien pero te faltó «voltear» la última fracción: $D$ es uno entre todo eso."
+ },
+ {
+  "id": 10,
+  "explanation": "Agrupa por parejas: $P = (a^2-b^2)-(a-b)$. La diferencia de cuadrados se factoriza y aparece un factor común:\n\n$$P = (a-b)(a+b)-(a-b) = (a-b)(a+b-1)$$\n\nDe las opciones, el factor que aparece es $a-b$. Ojo con la C: el otro factor es $a+b-1$, con signo menos, no $a+b+1$."
+ },
+ {
+  "id": 11,
+  "explanation": "Sean $m$ el menor y $M$ el mayor: $m + M = 30$ y $M + 6 = 3m$. Sustituye $M = 30 - m$ en la segunda: $36 - m = 3m$, de donde $m = 9$ y $M = 21$. Comprueba: $21 + 6 = 27 = 3(9)$. El producto pedido es:\n\n$$9 \\times 21 = 189$$\n\nNo te detengas al encontrar los números: la pregunta pide su producto."
+ },
+ {
+  "id": 12,
+  "explanation": "Multiplica todo por $x(x-2)$ para quitar denominadores:\n\n$$x^2 + (x+2)(x-2) = x(x-2) \\quad\\Rightarrow\\quad x^2 + x^2 - 4 = x^2 - 2x$$\n\nQueda $x^2 + 2x - 4 = 0$. Sin resolverla, el producto de las raíces de $ax^2+bx+c=0$ es $c/a = -4$.\n\nSi contestaste $-2$ (opción C), calculaste la suma de las raíces ($-b/a$), no el producto."
+ },
+ {
+  "id": 13,
+  "explanation": "Cada doblez duplica el espesor, así que tras 8 dobleces el factor es $2^8 = 256$. Escribe el espesor inicial como fracción: $0.08 = \\dfrac{8}{100} = \\dfrac{2}{25}$. Entonces:\n\n$$\\frac{2}{25} \\times 256 = \\frac{512}{25}\\ mm \\approx 20.5\\ mm$$\n\nSi te dio $\\dfrac{256}{25}$ (opción B), usaste $2^7$: contaste un doblez de menos."
+ },
+ {
+  "id": 14,
+  "explanation": "Complementarios suman $90°$: si el mayor es $x$ y el menor es $y$, tienes $x + y = 90$ y $x - y = 36$. Suma las dos ecuaciones: $2x = 126$, o sea $x = 63°$, y el menor es $y = 90 - 63 = 27°$. Un atajo directo: el menor siempre es $(90 - 36) \\div 2 = 27°$. Y en efecto, $63 - 27 = 36$."
+ },
+ {
+  "id": 15,
+  "explanation": "La **mediana** une un vértice con el punto medio del lado opuesto: es palabra por palabra la definición del enunciado. No la confundas con la **mediatriz** (opción D), que también pasa por el punto medio del lado pero es perpendicular a él y no tiene que salir del vértice. La altura es la perpendicular desde el vértice al lado opuesto, y la bisectriz parte un ángulo en dos."
+ },
+ {
+  "id": 16,
+  "explanation": "Un polígono de $n$ lados tiene $\\dfrac{n(n-3)}{2}$ diagonales. La condición «diagonales = lados + 3» da:\n\n$$\\frac{n(n-3)}{2} = n+3 \\quad\\Rightarrow\\quad n^2 - 3n = 2n + 6 \\quad\\Rightarrow\\quad n^2 - 5n - 6 = 0$$\n\nFactoriza: $(n-6)(n+1) = 0$, y la solución con sentido es $n = 6$: el hexágono. Verifica: tiene $\\dfrac{6 \\times 3}{2} = 9$ diagonales, que en efecto son $6 + 3$."
+ },
+ {
+  "id": 17,
+  "explanation": "Propiedad clave del trapecio: el segmento que une los puntos medios de las diagonales es paralelo a las bases y mide su **semidiferencia**. Entonces $\\dfrac{B-b}{2} = 12$, o sea $B - b = 24$, y junto con $B + b = 50$ resuelves el sistema: $B = 37$ m y $b = 13$ m.\n\nNo lo confundas con la mediana del trapecio (la que une los puntos medios de los lados no paralelos): esa mide la semisuma, que aquí sería 25 m."
+ },
+ {
+  "id": 18,
+  "explanation": "Dibuja la ventana a 7 m del piso. El ángulo de depresión de $45°$ hacia la base del árbol te da la distancia horizontal: $\\tan 45° = \\dfrac{7}{d} = 1$, así que $d = 7$ m. Con esa distancia, el ángulo de elevación de $60°$ da la parte del árbol que sobresale por arriba de la ventana: $x = 7\\tan 60° = 7\\sqrt{3}$. La altura total es la parte de abajo más la de arriba:\n\n$$h = 7 + 7\\sqrt{3} = 7\\left(1+\\sqrt{3}\\right)\\ m$$\n\nEl error común es reportar solo $7\\sqrt{3}$ y olvidar los 7 m que van de la ventana al suelo."
+ },
+ {
+  "id": 19,
+  "explanation": "Calcula los tres lados. $AB$ va de $(3,0)$ a $(-3,0)$: mide 6. $AC = \\sqrt{3^2+4^2} = 5$, y por la simetría respecto al eje $y$, $BC = 5$ también. Dos lados iguales y uno distinto: **isósceles**.\n\n¿Obtusángulo (opción A)? No: el ángulo mayor está frente al lado de 6, y como $6^2 = 36 < 5^2+5^2 = 50$, ese ángulo es agudo."
+ },
+ {
+  "id": 20,
+  "explanation": "De $10x - 6y + 3 = 0$ despeja la pendiente: $m = \\dfrac{10}{6} = \\dfrac{5}{3}$. La perpendicular usa el recíproco con signo cambiado: $m_{\\perp} = -\\dfrac{3}{5}$. Con el punto $(-6, 2)$:\n\n$$y - 2 = -\\frac{3}{5}(x+6) \\quad\\Rightarrow\\quad 5y - 10 = -3x - 18 \\quad\\Rightarrow\\quad 3x + 5y + 8 = 0$$\n\nComprueba que $(-6,2)$ la satisface: $-18 + 10 + 8 = 0$. Si elegiste A, invertiste la pendiente pero olvidaste cambiarle el signo."
+ },
+ {
+  "id": 21,
+  "explanation": "Encuentra dónde corta la recta a los ejes: con $y = 0$ queda $5x = 60$, o sea $x = 12$; con $x = 0$ queda $12y = 60$, o sea $y = 5$. El triángulo es rectángulo con catetos 12 y 5 sobre los ejes:\n\n$$A = \\frac{12 \\times 5}{2} = 30$$\n\nSi contestaste 60 (opción D), multiplicaste base por altura y olvidaste dividir entre 2."
+ },
+ {
+  "id": 22,
+  "explanation": "Completa cuadrados: $x^2 - 6x = (x-3)^2 - 9$ y $y^2 + 4y = (y+2)^2 - 4$. Sustituye en la ecuación:\n\n$$(x-3)^2 + (y+2)^2 = 3 + 9 + 4 = 16$$\n\nEl radio es $r = \\sqrt{16} = 4$. Si contestaste 16 (opción D), te quedaste con $r^2$: la ecuación canónica trae el radio elevado al cuadrado."
+ },
+ {
+  "id": 23,
+  "explanation": "El vértice $V(-5,0)$ está sobre el eje $x$, así que el eje mayor es horizontal y $a = 5$. El foco $F(-4,0)$ da $c = 4$. Falta $b$: en la elipse $b^2 = a^2 - c^2 = 25 - 16 = 9$. La ecuación lleva $a^2$ bajo la $x$:\n\n$$\\frac{x^2}{25} + \\frac{y^2}{9} = 1$$\n\nLa opción A pone el 25 bajo la $y$, como si el eje mayor fuera vertical, pero vértice y foco están sobre el eje $x$."
+ },
+ {
+  "id": 24,
+  "explanation": "La firma de la hipérbola es la **resta** entre los términos cuadráticos: III, $x^2 - y^2 = 1$, es la única con ambas variables al cuadrado y signo menos entre ellas. Descarta rápido las demás: en I la $y$ no está al cuadrado (parábola), II es una circunferencia, y IV suma los cuadrados con coeficientes positivos distintos (elipse)."
+ },
+ {
+  "id": 25,
+  "explanation": "Cada pedazo impone su condición. La raíz necesita radicando no negativo: $10 - x \\geq 0$, o sea $x \\leq 10$ (el 10 sí entra, porque $\\sqrt{0}$ existe). El logaritmo necesita argumento **estrictamente** positivo: $x - 1 > 0$, o sea $x > 1$ (el 1 no entra, porque $\\ln 0$ no existe). La intersección de ambas es $(1, 10]$.\n\nSi elegiste D, cerraste el intervalo en 1: la desigualdad del logaritmo es estricta."
+ }
+]

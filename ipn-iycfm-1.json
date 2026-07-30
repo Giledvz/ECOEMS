@@ -28,7 +28,8 @@
               "D": "967"
             },
             "answer": "C",
-            "_src": "pensamiento-matematico · reactivo 1"
+            "_src": "pensamiento-matematico · reactivo 1",
+            "explanation": "Mira las diferencias entre términos consecutivos: $10, 14, 18, 22, \\ldots$ No son constantes, pero crecen siempre de 4 en 4. Segundas diferencias constantes significan término general cuadrático, con coeficiente principal $4 \\div 2 = 2$. Propón $a_n = 2n^2+bn+c$; con $a_1 = 7$ y $a_2 = 17$ obtienes $b = 4$ y $c = 1$:\n\n$$a_n = 2n^2+4n+1$$\n\nComprueba con uno de la lista: $a_4 = 32+16+1 = 49$. Ya con la fórmula, $a_{20} = 2(400)+80+1 = 881$.\n\nSi te dio 799 (opción B), calculaste $a_{19}$: te quedaste un término corto."
           },
           {
             "id": 2,
@@ -42,7 +43,8 @@
               "D": "N y 48"
             },
             "answer": "B",
-            "_src": "pensamiento-matematico · reactivo 5"
+            "_src": "pensamiento-matematico · reactivo 5",
+            "explanation": "Son dos sucesiones trenzadas. Las letras $A, D, G, J$ avanzan de tres en tres lugares en el alfabeto (se saltan dos letras): después de $J$ se saltan $K$ y $L$, y toca $M$. Los números $3, 6, 12, 24$ se van duplicando, así que sigue $48$. La pareja es $M$ y $48$.\n\nSi elegiste $N$, contaste cuatro lugares en vez de tres: revisa el brinco de $A$ a $D$."
           },
           {
             "id": 3,
@@ -56,7 +58,8 @@
               "D": "83"
             },
             "answer": "B",
-            "_src": "pensamiento-matematico · reactivo 11"
+            "_src": "pensamiento-matematico · reactivo 11",
+            "explanation": "Es una sucesión aritmética con diferencia $d = 7$ (de $-10$ a $-3$, de $-3$ a $4$, siempre suma 7). El término general es:\n\n$$a_n = -10 + 7(n-1) = 7n - 17$$\n\nIguala a 550: $7n - 17 = 550$, entonces $7n = 567$ y $n = 81$.\n\nSi te dio 80 (opción A), usaste $a_n = -10 + 7n$ sin el $(n-1)$: el clásico desfase de un lugar."
           },
           {
             "id": 4,
@@ -70,7 +73,8 @@
               "D": "15"
             },
             "answer": "D",
-            "_src": "pensamiento-matematico · reactivo 29"
+            "_src": "pensamiento-matematico · reactivo 29",
+            "explanation": "No necesitas conocer los números, solo sus sumas: los cuatro menores suman $4 \\times 12 = 48$ y los cuatro mayores $4 \\times 18 = 72$. El total es $48 + 72 = 120$, y la media de los ocho datos es $120 \\div 8 = 15$.\n\nAquí también funciona promediar las dos medias, $(12+18) \\div 2 = 15$, pero solo porque los grupos son del mismo tamaño; con grupos desiguales ese atajo falla."
           },
           {
             "id": 5,
@@ -84,7 +88,8 @@
               "D": "3"
             },
             "answer": "C",
-            "_src": "pensamiento-matematico · reactivo 34"
+            "_src": "pensamiento-matematico · reactivo 34",
+            "explanation": "Fíjate en Anabel («al menos 5») y Alfredo («menos de 5»): dicen exactamente lo contrario, así que entre ellos dos siempre hay una verdad y una mentira. Como en total solo hay una verdad, Erick tiene que mentir: no es cierto que Jonathan tenga más de 2 hermanos, o sea tiene 2 o menos. El máximo posible es 2, y checa que funciona: con 2 hermanos, Alfredo acierta mientras Anabel y Erick mienten.\n\nSi contestaste 3 (opción D), revisa: con 3 hermanos dirían la verdad Alfredo y Erick a la vez, y eso rompe la condición."
           },
           {
             "id": 6,
@@ -98,7 +103,8 @@
               "D": "755"
             },
             "answer": "C",
-            "_src": "pensamiento-matematico · reactivo 37"
+            "_src": "pensamiento-matematico · reactivo 37",
+            "explanation": "Llama $k$ al resultado común de las cuatro operaciones. Entonces los sumandos son $k-5$, $k+5$, $k/5$ y $5k$, y su suma es 900:\n\n$$(k-5)+(k+5)+\\frac{k}{5}+5k = \\frac{36k}{5} = 900 \\quad\\Rightarrow\\quad k = 125$$\n\nLos sumandos resultan $120$, $130$, $25$ y $625$ (verifica: suman 900). El mayor es 625, el menor es 25, y su suma es $625 + 25 = 650$."
           },
           {
             "id": 7,
@@ -112,7 +118,8 @@
               "D": "$-57$"
             },
             "answer": "A",
-            "_src": "algebra · reactivo 4"
+            "_src": "algebra · reactivo 4",
+            "explanation": "Primero el paréntesis, y adentro también manda la jerarquía: $8 \\div 4 = 2$ y $3 \\times 4 = 12$, así que $1 + 2 + 12 = 15$. Afuera, la multiplicación va antes que la resta: $3 \\times 2 \\times 15 = 90$. Hasta el final restas:\n\n$$w = 5 - 90 = -85$$\n\nEl error típico es hacer $5 - 3$ primero: la resta siempre espera a que terminen las multiplicaciones y divisiones."
           },
           {
             "id": 8,
@@ -126,7 +133,8 @@
               "D": "240"
             },
             "answer": "A",
-            "_src": "algebra · reactivo 5"
+            "_src": "algebra · reactivo 5",
+            "explanation": "Con razón $3:2$ y 200 flores, cada «parte» vale $200 \\div 5 = 40$: hay $120$ rosas y $80$ tulipanes. Solo se agregan tulipanes, así que las 120 rosas quedan fijas. Para lograr la razón $2:3$:\n\n$$\\frac{120}{t} = \\frac{2}{3} \\quad\\Rightarrow\\quad t = 180$$\n\nComo ya había 80, se agregan $180 - 80 = 100$.\n\nSi contestaste 180 (opción C), diste el total final de tulipanes, no los que se agregan."
           },
           {
             "id": 9,
@@ -140,7 +148,8 @@
               "D": "$\\dfrac{x+3}{2x+1}$"
             },
             "answer": "B",
-            "_src": "algebra · reactivo 12"
+            "_src": "algebra · reactivo 12",
+            "explanation": "Las fracciones de escalera se resuelven de adentro hacia afuera. Primero $1 + \\dfrac{1}{x+1} = \\dfrac{x+2}{x+1}$, cuyo recíproco es $\\dfrac{x+1}{x+2}$. Luego $1 + \\dfrac{x+1}{x+2} = \\dfrac{2x+3}{x+2}$, y el recíproco final da:\n\n$$D = \\frac{x+2}{2x+3}$$\n\nSi llegaste a $\\dfrac{2x+3}{x+2}$ (opción A), hiciste todo bien pero te faltó «voltear» la última fracción: $D$ es uno entre todo eso."
           },
           {
             "id": 10,
@@ -154,7 +163,8 @@
               "D": "$a-b+1$"
             },
             "answer": "B",
-            "_src": "algebra · reactivo 24"
+            "_src": "algebra · reactivo 24",
+            "explanation": "Agrupa por parejas: $P = (a^2-b^2)-(a-b)$. La diferencia de cuadrados se factoriza y aparece un factor común:\n\n$$P = (a-b)(a+b)-(a-b) = (a-b)(a+b-1)$$\n\nDe las opciones, el factor que aparece es $a-b$. Ojo con la C: el otro factor es $a+b-1$, con signo menos, no $a+b+1$."
           },
           {
             "id": 11,
@@ -168,7 +178,8 @@
               "D": "189"
             },
             "answer": "D",
-            "_src": "algebra · reactivo 33"
+            "_src": "algebra · reactivo 33",
+            "explanation": "Sean $m$ el menor y $M$ el mayor: $m + M = 30$ y $M + 6 = 3m$. Sustituye $M = 30 - m$ en la segunda: $36 - m = 3m$, de donde $m = 9$ y $M = 21$. Comprueba: $21 + 6 = 27 = 3(9)$. El producto pedido es:\n\n$$9 \\times 21 = 189$$\n\nNo te detengas al encontrar los números: la pregunta pide su producto."
           },
           {
             "id": 12,
@@ -182,7 +193,8 @@
               "D": "$-4$"
             },
             "answer": "D",
-            "_src": "algebra · reactivo 40"
+            "_src": "algebra · reactivo 40",
+            "explanation": "Multiplica todo por $x(x-2)$ para quitar denominadores:\n\n$$x^2 + (x+2)(x-2) = x(x-2) \\quad\\Rightarrow\\quad x^2 + x^2 - 4 = x^2 - 2x$$\n\nQueda $x^2 + 2x - 4 = 0$. Sin resolverla, el producto de las raíces de $ax^2+bx+c=0$ es $c/a = -4$.\n\nSi contestaste $-2$ (opción C), calculaste la suma de las raíces ($-b/a$), no el producto."
           },
           {
             "id": 13,
@@ -196,7 +208,8 @@
               "D": "$\\dfrac{1024}{25}\\,mm$"
             },
             "answer": "C",
-            "_src": "geometria-trigonometria · reactivo 1"
+            "_src": "geometria-trigonometria · reactivo 1",
+            "explanation": "Cada doblez duplica el espesor, así que tras 8 dobleces el factor es $2^8 = 256$. Escribe el espesor inicial como fracción: $0.08 = \\dfrac{8}{100} = \\dfrac{2}{25}$. Entonces:\n\n$$\\frac{2}{25} \\times 256 = \\frac{512}{25}\\ mm \\approx 20.5\\ mm$$\n\nSi te dio $\\dfrac{256}{25}$ (opción B), usaste $2^7$: contaste un doblez de menos."
           },
           {
             "id": 14,
@@ -210,7 +223,8 @@
               "D": "$30°$"
             },
             "answer": "A",
-            "_src": "geometria-trigonometria · reactivo 12"
+            "_src": "geometria-trigonometria · reactivo 12",
+            "explanation": "Complementarios suman $90°$: si el mayor es $x$ y el menor es $y$, tienes $x + y = 90$ y $x - y = 36$. Suma las dos ecuaciones: $2x = 126$, o sea $x = 63°$, y el menor es $y = 90 - 63 = 27°$. Un atajo directo: el menor siempre es $(90 - 36) \\div 2 = 27°$. Y en efecto, $63 - 27 = 36$."
           },
           {
             "id": 15,
@@ -224,7 +238,8 @@
               "D": "mediatriz"
             },
             "answer": "C",
-            "_src": "geometria-trigonometria · reactivo 17"
+            "_src": "geometria-trigonometria · reactivo 17",
+            "explanation": "La **mediana** une un vértice con el punto medio del lado opuesto: es palabra por palabra la definición del enunciado. No la confundas con la **mediatriz** (opción D), que también pasa por el punto medio del lado pero es perpendicular a él y no tiene que salir del vértice. La altura es la perpendicular desde el vértice al lado opuesto, y la bisectriz parte un ángulo en dos."
           },
           {
             "id": 16,
@@ -238,7 +253,8 @@
               "D": "Dodecágono"
             },
             "answer": "B",
-            "_src": "geometria-trigonometria · reactivo 19"
+            "_src": "geometria-trigonometria · reactivo 19",
+            "explanation": "Un polígono de $n$ lados tiene $\\dfrac{n(n-3)}{2}$ diagonales. La condición «diagonales = lados + 3» da:\n\n$$\\frac{n(n-3)}{2} = n+3 \\quad\\Rightarrow\\quad n^2 - 3n = 2n + 6 \\quad\\Rightarrow\\quad n^2 - 5n - 6 = 0$$\n\nFactoriza: $(n-6)(n+1) = 0$, y la solución con sentido es $n = 6$: el hexágono. Verifica: tiene $\\dfrac{6 \\times 3}{2} = 9$ diagonales, que en efecto son $6 + 3$."
           },
           {
             "id": 17,
@@ -252,7 +268,8 @@
               "D": "14 m"
             },
             "answer": "C",
-            "_src": "geometria-trigonometria · reactivo 23"
+            "_src": "geometria-trigonometria · reactivo 23",
+            "explanation": "Propiedad clave del trapecio: el segmento que une los puntos medios de las diagonales es paralelo a las bases y mide su **semidiferencia**. Entonces $\\dfrac{B-b}{2} = 12$, o sea $B - b = 24$, y junto con $B + b = 50$ resuelves el sistema: $B = 37$ m y $b = 13$ m.\n\nNo lo confundas con la mediana del trapecio (la que une los puntos medios de los lados no paralelos): esa mide la semisuma, que aquí sería 25 m."
           },
           {
             "id": 18,
@@ -266,7 +283,8 @@
               "D": "$7\\left(1+\\sqrt{3}\\right)$ m"
             },
             "answer": "D",
-            "_src": "geometria-trigonometria · reactivo 39"
+            "_src": "geometria-trigonometria · reactivo 39",
+            "explanation": "Dibuja la ventana a 7 m del piso. El ángulo de depresión de $45°$ hacia la base del árbol te da la distancia horizontal: $\\tan 45° = \\dfrac{7}{d} = 1$, así que $d = 7$ m. Con esa distancia, el ángulo de elevación de $60°$ da la parte del árbol que sobresale por arriba de la ventana: $x = 7\\tan 60° = 7\\sqrt{3}$. La altura total es la parte de abajo más la de arriba:\n\n$$h = 7 + 7\\sqrt{3} = 7\\left(1+\\sqrt{3}\\right)\\ m$$\n\nEl error común es reportar solo $7\\sqrt{3}$ y olvidar los 7 m que van de la ventana al suelo."
           },
           {
             "id": 19,
@@ -280,7 +298,8 @@
               "D": "Escaleno"
             },
             "answer": "C",
-            "_src": "geometria-analitica · reactivo 2"
+            "_src": "geometria-analitica · reactivo 2",
+            "explanation": "Calcula los tres lados. $AB$ va de $(3,0)$ a $(-3,0)$: mide 6. $AC = \\sqrt{3^2+4^2} = 5$, y por la simetría respecto al eje $y$, $BC = 5$ también. Dos lados iguales y uno distinto: **isósceles**.\n\n¿Obtusángulo (opción A)? No: el ángulo mayor está frente al lado de 6, y como $6^2 = 36 < 5^2+5^2 = 50$, ese ángulo es agudo."
           },
           {
             "id": 20,
@@ -294,7 +313,8 @@
               "D": "$5x+3y-8=0$"
             },
             "answer": "C",
-            "_src": "geometria-analitica · reactivo 7"
+            "_src": "geometria-analitica · reactivo 7",
+            "explanation": "De $10x - 6y + 3 = 0$ despeja la pendiente: $m = \\dfrac{10}{6} = \\dfrac{5}{3}$. La perpendicular usa el recíproco con signo cambiado: $m_{\\perp} = -\\dfrac{3}{5}$. Con el punto $(-6, 2)$:\n\n$$y - 2 = -\\frac{3}{5}(x+6) \\quad\\Rightarrow\\quad 5y - 10 = -3x - 18 \\quad\\Rightarrow\\quad 3x + 5y + 8 = 0$$\n\nComprueba que $(-6,2)$ la satisface: $-18 + 10 + 8 = 0$. Si elegiste A, invertiste la pendiente pero olvidaste cambiarle el signo."
           },
           {
             "id": 21,
@@ -308,7 +328,8 @@
               "D": "60"
             },
             "answer": "A",
-            "_src": "geometria-analitica · reactivo 9"
+            "_src": "geometria-analitica · reactivo 9",
+            "explanation": "Encuentra dónde corta la recta a los ejes: con $y = 0$ queda $5x = 60$, o sea $x = 12$; con $x = 0$ queda $12y = 60$, o sea $y = 5$. El triángulo es rectángulo con catetos 12 y 5 sobre los ejes:\n\n$$A = \\frac{12 \\times 5}{2} = 30$$\n\nSi contestaste 60 (opción D), multiplicaste base por altura y olvidaste dividir entre 2."
           },
           {
             "id": 22,
@@ -322,7 +343,8 @@
               "D": "16"
             },
             "answer": "B",
-            "_src": "geometria-analitica · reactivo 13"
+            "_src": "geometria-analitica · reactivo 13",
+            "explanation": "Completa cuadrados: $x^2 - 6x = (x-3)^2 - 9$ y $y^2 + 4y = (y+2)^2 - 4$. Sustituye en la ecuación:\n\n$$(x-3)^2 + (y+2)^2 = 3 + 9 + 4 = 16$$\n\nEl radio es $r = \\sqrt{16} = 4$. Si contestaste 16 (opción D), te quedaste con $r^2$: la ecuación canónica trae el radio elevado al cuadrado."
           },
           {
             "id": 23,
@@ -336,7 +358,8 @@
               "D": "$\\dfrac{x^{2}}{25}+\\dfrac{y^{2}}{16}=1$"
             },
             "answer": "B",
-            "_src": "geometria-analitica · reactivo 26"
+            "_src": "geometria-analitica · reactivo 26",
+            "explanation": "El vértice $V(-5,0)$ está sobre el eje $x$, así que el eje mayor es horizontal y $a = 5$. El foco $F(-4,0)$ da $c = 4$. Falta $b$: en la elipse $b^2 = a^2 - c^2 = 25 - 16 = 9$. La ecuación lleva $a^2$ bajo la $x$:\n\n$$\\frac{x^2}{25} + \\frac{y^2}{9} = 1$$\n\nLa opción A pone el 25 bajo la $y$, como si el eje mayor fuera vertical, pero vértice y foco están sobre el eje $x$."
           },
           {
             "id": 24,
@@ -350,7 +373,8 @@
               "D": "IV"
             },
             "answer": "C",
-            "_src": "geometria-analitica · reactivo 34"
+            "_src": "geometria-analitica · reactivo 34",
+            "explanation": "La firma de la hipérbola es la **resta** entre los términos cuadráticos: III, $x^2 - y^2 = 1$, es la única con ambas variables al cuadrado y signo menos entre ellas. Descarta rápido las demás: en I la $y$ no está al cuadrado (parábola), II es una circunferencia, y IV suma los cuadrados con coeficientes positivos distintos (elipse)."
           },
           {
             "id": 25,
@@ -364,7 +388,8 @@
               "D": "$[1,10]$"
             },
             "answer": "C",
-            "_src": "calculo-diferencial · reactivo 1"
+            "_src": "calculo-diferencial · reactivo 1",
+            "explanation": "Cada pedazo impone su condición. La raíz necesita radicando no negativo: $10 - x \\geq 0$, o sea $x \\leq 10$ (el 10 sí entra, porque $\\sqrt{0}$ existe). El logaritmo necesita argumento **estrictamente** positivo: $x - 1 > 0$, o sea $x > 1$ (el 1 no entra, porque $\\ln 0$ no existe). La intersección de ambas es $(1, 10]$.\n\nSi elegiste D, cerraste el intervalo en 1: la desigualdad del logaritmo es estricta."
           },
           {
             "id": 26,
@@ -378,7 +403,8 @@
               "D": "$\\dfrac{9}{25}$"
             },
             "answer": "D",
-            "_src": "calculo-diferencial · reactivo 11"
+            "_src": "calculo-diferencial · reactivo 11",
+            "explanation": "Para límites con seno cuando $x \\to 0$, usa el límite notable $\\lim_{x\\to 0}\\frac{\\mathrm{sen}(kx)}{kx}=1$: cerca de cero, $\\mathrm{sen}(kx)$ se comporta como $kx$. Aplicándolo arriba y abajo:\n\n$$\\lim_{x\\to 0}\\frac{\\mathrm{sen}^{2}(3x)}{\\mathrm{sen}^{2}(5x)} = \\lim_{x\\to 0}\\frac{(3x)^{2}}{(5x)^{2}} = \\frac{9x^{2}}{25x^{2}} = \\frac{9}{25}$$\n\nSi contestaste $\\frac{3}{5}$ (opción A), se te olvidó que ambos senos están al cuadrado: el cociente $\\frac{3}{5}$ también debe elevarse."
           },
           {
             "id": 27,
@@ -392,7 +418,8 @@
               "D": "$-3$"
             },
             "answer": "C",
-            "_src": "calculo-diferencial · reactivo 20"
+            "_src": "calculo-diferencial · reactivo 20",
+            "explanation": "Para que $f$ sea continua en $x=3$, las dos ramas deben valer lo mismo justo ahí. La de la izquierda da $2(3)-3=3$; la de la derecha debe llegar a ese mismo valor:\n\n$$3(3)+k = 3 \\quad\\Rightarrow\\quad 9+k=3 \\quad\\Rightarrow\\quad k=-6$$\n\nComprueba: con $k=-6$ ambas ramas valen 3 en $x=3$ y la gráfica queda sin salto. La opción A (3) es el valor donde empatan las ramas, no el valor de $k$."
           },
           {
             "id": 28,
@@ -406,7 +433,8 @@
               "D": "$(-\\infty,1)\\cup(3,\\infty)$"
             },
             "answer": "B",
-            "_src": "calculo-diferencial · reactivo 22"
+            "_src": "calculo-diferencial · reactivo 22",
+            "explanation": "Una función decrece donde su derivada es negativa. Deriva y factoriza:\n\n$$f'(x) = 3x^{2}-12x+9 = 3(x-1)(x-3)$$\n\nLos puntos críticos son $x=1$ y $x=3$. Entre ellos la derivada es negativa (prueba con $x=2$: $f'(2)=3(1)(-1)=-3<0$), así que $f$ decrece exactamente en $(1,3)$. La opción D es donde ambos factores tienen el mismo signo, es decir, donde la función *crece*."
           },
           {
             "id": 29,
@@ -420,7 +448,8 @@
               "D": "$-17$"
             },
             "answer": "A",
-            "_src": "calculo-diferencial · reactivo 38"
+            "_src": "calculo-diferencial · reactivo 38",
+            "explanation": "Encuentra los puntos críticos derivando e igualando a cero:\n\n$$f'(x) = -4x^{3}+12x^{2} = -4x^{2}(x-3) = 0 \\quad\\Rightarrow\\quad x=0,\\; x=3$$\n\nEn $x=0$ no hay extremo: el factor $x^{2}$ no deja que la derivada cambie de signo. En $x=3$ la derivada pasa de positiva a negativa, así que ahí está el máximo. Piden su *valor*:\n\n$$f(3) = -(3)^{4}+4(3)^{3}-10 = -81+108-10 = 17$$\n\nSi te dio $-17$ (opción D), se te fue un signo al evaluar; revisa que $-(3)^{4}=-81$ y $4(27)=+108$."
           },
           {
             "id": 30,
@@ -434,7 +463,8 @@
               "D": "$x^{7/3}+2x^{4}+5x+12$"
             },
             "answer": "C",
-            "_src": "calculo-integral · reactivo 1"
+            "_src": "calculo-integral · reactivo 1",
+            "explanation": "Integra término a término: sube el exponente en 1 y divide entre el nuevo exponente.\n\n$$\\int \\tfrac{7}{3}x^{4/3}\\,dx = \\tfrac{7}{3}\\cdot\\tfrac{x^{7/3}}{7/3} = x^{7/3}, \\qquad \\int -8x^{3}\\,dx = -2x^{4}, \\qquad \\int 5\\,dx = 5x$$\n\nToda antiderivada es $x^{7/3}-2x^{4}+5x+C$ y, como piden *una*, la constante puede ser cualquier número: la opción C es esta expresión con $C=-10$. Fíjate cómo el coeficiente $\\frac{7}{3}$ se cancela al dividir entre $\\frac{7}{3}$, por eso el primer término queda con coeficiente 1; la opción A resulta de integrar $x^{4/3}$ olvidando ese coeficiente."
           },
           {
             "id": 31,
@@ -448,7 +478,8 @@
               "D": "$\\ln\\left(\\dfrac{1}{1-x^{2}}\\right)+C$"
             },
             "answer": "B",
-            "_src": "calculo-integral · reactivo 6"
+            "_src": "calculo-integral · reactivo 6",
+            "explanation": "El $x\\,dx$ del numerador te pide un cambio de variable: con $u = 1-x^{2}$ tienes $du = -2x\\,dx$, o sea $x\\,dx = -\\frac{du}{2}$. La integral se convierte en\n\n$$-\\frac{1}{2}\\int u^{-2}\\,du = -\\frac{1}{2}\\left(-\\frac{1}{u}\\right)+C = \\frac{1}{2(1-x^{2})}+C$$\n\nFíjate en los dos signos negativos que se cancelan: perder uno de ellos lleva a la opción A. Y las opciones con logaritmo (C y D) no aplican aquí: $\\ln$ aparece al integrar $u^{-1}$, no $u^{-2}$."
           },
           {
             "id": 32,
@@ -462,7 +493,8 @@
               "D": "$\\mathrm{sen}\\left(2\\sqrt{x}\\right)+C$"
             },
             "answer": "D",
-            "_src": "calculo-integral · reactivo 13"
+            "_src": "calculo-integral · reactivo 13",
+            "explanation": "Prueba el cambio $u = 2\\sqrt{x}$. Su diferencial es $du = \\frac{2}{2\\sqrt{x}}\\,dx = \\frac{dx}{\\sqrt{x}}$, que es exactamente lo que acompaña al coseno. La integral queda limpia:\n\n$$\\int \\cos(u)\\,du = \\mathrm{sen}(u)+C = \\mathrm{sen}\\left(2\\sqrt{x}\\right)+C$$\n\nVerifica derivando: $\\left[\\mathrm{sen}(2\\sqrt{x})\\right]' = \\cos(2\\sqrt{x})\\cdot\\frac{1}{\\sqrt{x}}$, justo el integrando. El factor de la regla de la cadena se cancela completito, así que no sobra ningún $\\frac{1}{2}$ como sugiere la opción B."
           },
           {
             "id": 33,
@@ -476,7 +508,8 @@
               "D": "$2\\pi$"
             },
             "answer": "A",
-            "_src": "calculo-integral · reactivo 36"
+            "_src": "calculo-integral · reactivo 36",
+            "explanation": "Antes de lanzarte a integrar por partes cinco veces, revisa la simetría: $x^{5}$ es función impar y $\\cos(x)$ es par, así que el producto $x^{5}\\cos(x)$ es impar. Y la integral de una función impar en un intervalo simétrico como $[-\\pi,\\pi]$ vale cero: el área que acumula del lado derecho se cancela exactamente con la del izquierdo.\n\n$$\\int_{-\\pi}^{\\pi} x^{5}\\cos(x)\\,dx = 0$$\n\nCuando veas límites simétricos $[-a,a]$, checa la paridad primero: te puede ahorrar todo el cálculo."
           },
           {
             "id": 34,
@@ -490,7 +523,8 @@
               "D": "8.25%"
             },
             "answer": "D",
-            "_src": "probabilidad-estadistica · reactivo 26"
+            "_src": "probabilidad-estadistica · reactivo 26",
+            "explanation": "Cada máquina aporta defectuosos según cuánto produce: es probabilidad total, un promedio *ponderado* por la producción.\n\n$$P(\\text{defectuoso}) = (0.15)(0.05)+(0.35)(0.10)+(0.50)(0.08) = 0.0075+0.035+0.04 = 0.0825 = 8.25\\%$$\n\nEl error a evitar es promediar 5%, 10% y 8% a secas: la máquina C fabrica la mitad de todos los artículos, así que su 8% pesa mucho más que el 5% de A, que solo fabrica el 15%."
           },
           {
             "id": 35,
@@ -504,7 +538,8 @@
               "D": "8.6"
             },
             "answer": "B",
-            "_src": "probabilidad-estadistica · reactivo 37"
+            "_src": "probabilidad-estadistica · reactivo 37",
+            "explanation": "Cada valor cuenta tantas veces como se repite. Suma todo y divide entre el número total de datos, que es $6+14+20=40$:\n\n$$\\bar{x} = \\frac{6(6)+14(8)+20(9)}{40} = \\frac{36+112+180}{40} = \\frac{328}{40} = 8.2$$\n\nEl tropiezo común es promediar $6$, $8$ y $9$ como si aparecieran una sola vez, o dividir entre 3: divide siempre entre los 40 datos reales."
           },
           {
             "id": 36,
@@ -518,7 +553,8 @@
               "D": "45"
             },
             "answer": "C",
-            "_src": "probabilidad-estadistica · reactivo 39"
+            "_src": "probabilidad-estadistica · reactivo 39",
+            "explanation": "Pásate a sumas, que se manejan más fácil que los promedios. Seis números con media 30 suman $6\\times 30 = 180$; al excluir uno, los cinco restantes tienen media 29, o sea suman $5\\times 29 = 145$. El excluido es la diferencia:\n\n$$180-145 = 35$$\n\nCheca que tiene sentido: la media bajó al quitarlo, señal de que ese número estaba *por arriba* del promedio. Contestar 30 (opción B) supondría que el excluido valía justo la media, pero entonces la media no habría cambiado."
           },
           {
             "id": 37,
@@ -532,7 +568,8 @@
               "D": "18"
             },
             "answer": "C",
-            "_src": "probabilidad-estadistica · reactivo 40"
+            "_src": "probabilidad-estadistica · reactivo 40",
+            "explanation": "La media armónica de $n$ números es $n$ entre la suma de los recíprocos:\n\n$$H = \\frac{4}{\\frac{1}{10}+\\frac{1}{12}+\\frac{1}{20}+\\frac{1}{30}}$$\n\nCon común denominador 60, la suma de abajo es $\\frac{6+5+3+2}{60} = \\frac{16}{60} = \\frac{4}{15}$, así que\n\n$$H = 4 \\div \\frac{4}{15} = 15$$\n\nSi te dio 18 (opción D), calculaste la media aritmética; la armónica siempre resulta menor o igual que ella."
           }
         ]
       },
@@ -552,7 +589,8 @@
               "D": "extraordinarios - lecheras - unos - extranjeras"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 1"
+            "_src": "competencia-escrita · reactivo 1",
+            "explanation": "Ve hueco por hueco aplicando la regla que toca. Antes del sustantivo, el adjetivo concuerda con el que tiene enfrente: *extraordinario riesgo* (masculino singular). Después de dos sustantivos femeninos, el adjetivo va en femenino plural: *una vaca y una oveja lecheras*. El determinante concuerda con el sustantivo que le sigue: *unos toros*. Y cuando el adjetivo califica sustantivos de géneros mezclados (*toros, yeguas y mulas*), el español pide masculino plural: *extranjeros*. La única opción que cumple las cuatro reglas a la vez es la C.\n\nSi elegiste \"extranjeras\" (D), te jaló la atracción de *yeguas y mulas*: basta un masculino en la lista para que la concordancia se haga en masculino plural."
           },
           {
             "id": 39,
@@ -566,7 +604,8 @@
               "D": "Ella"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 2"
+            "_src": "competencia-escrita · reactivo 2",
+            "explanation": "Hay dos pistas y las dos apuntan al mismo lado. Primera: los adjetivos van en femenino singular (*delgada, moribunda, callada*), así que se describe a una mujer. Segunda: el cierre está en tercera persona (\"Así siempre *fue*\"), lo que descarta *Tú* (sería \"fuiste\") y *Yo* (\"fui\"). Femenino + tercera persona = **Ella**.\n\n*Él* (A) pasa la prueba de la persona, pero choca con el género de los adjetivos."
           },
           {
             "id": 40,
@@ -580,7 +619,8 @@
               "D": "Contiene elementos gramaticales incorrectos"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 3"
+            "_src": "competencia-escrita · reactivo 3",
+            "explanation": "Revisa la oración con calma: el sujeto es plural (*los estudiantes*) y el verbo también (*salieron*); los complementos (*con la especialidad en Química*, *de la vocacional 6*) están bien acotados con comas y no hay faltas de ortografía ni signos exclamativos. Todos los elementos concuerdan en género, número y persona, que es justo lo que afirma la C.\n\nOjo: que una oración lleve incisos entre comas no la vuelve incorrecta; aquí las comas delimitan bien la información extra."
           },
           {
             "id": 41,
@@ -594,7 +634,8 @@
               "D": "El comité, junto con los representantes, revisaron el material con sumo cuidado"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 4"
+            "_src": "competencia-escrita · reactivo 4",
+            "explanation": "Todas las opciones juegan con sustantivos colectivos, así que fíjate en el núcleo del sujeto. En B, C y D el núcleo es singular —*la mitad*, *la mayoría*, *el comité*— y el verbo se fue al plural; lo esperado sería *salió*, *está* y *revisó* (en la D, además, *junto con los representantes* va entre comas: es un inciso y no forma parte del sujeto). En la A, *la multitud* nombra a muchas personas que huyen cada una por su lado, y el plural *salieron* se admite como concordancia por sentido."
           },
           {
             "id": 42,
@@ -608,7 +649,8 @@
               "D": "El fumar y el beber alcohol"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 5"
+            "_src": "competencia-escrita · reactivo 5",
+            "explanation": "El predicado ya está fijo en singular: *es dañino*. Cuando dos infinitivos coordinados van **sin artículo**, se entienden como una sola idea (el hábito de fumar y beber) y concuerdan en singular: *Fumar y beber alcohol es dañino*. Además, el sujeto queda paralelo: los dos infinitivos en la misma forma.\n\nLa D (*el fumar y el beber*) individualiza dos sujetos y pediría \"son dañinos\"; la B y la C le ponen artículo a un infinitivo sí y a otro no, y rompen el paralelismo."
           },
           {
             "id": 43,
@@ -622,7 +664,8 @@
               "D": "es el promotor de la Asamblea por la Paz"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 6"
+            "_src": "competencia-escrita · reactivo 6",
+            "explanation": "El núcleo del sujeto es *el grupo*: singular. El predicado debe llevar el verbo en singular, y eso solo lo cumple con sentido completo la D: *es el promotor de la Asamblea por la Paz*.\n\nLa B y la C (*son*, *eligieron*) caen en el error de atracción: concuerdan con *las Naciones Unidas*, que es parte del complemento, no el núcleo. Y la A (*lo hará promotor*) deja un *lo* sin referente: ¿a quién hará promotor?"
           },
           {
             "id": 44,
@@ -636,7 +679,8 @@
               "D": "2, 4, 5"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 7"
+            "_src": "competencia-escrita · reactivo 7",
+            "explanation": "Descarta por errores evidentes. La 1 falla feo: *la calle... invitan* (sujeto singular con verbo plural) y *los eterno* (artículo plural con palabra singular). La 5 también: *los festejos... es responsabilidad* debería ser *son*. Toda opción que incluya la 1 o la 5 queda fuera, y eso elimina A, B y D. La 2 y la 3 están impecables —sujeto y verbo concuerdan y no hay faltas—, así que la serie correcta es la C."
           },
           {
             "id": 45,
@@ -650,7 +694,8 @@
               "D": "De lo individual a lo particular"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 8"
+            "_src": "competencia-escrita · reactivo 8",
+            "explanation": "Fíjate en el recorrido de la información: el texto abre con el panorama amplio —la Expo ISISA 2024, las compañías de la industria automotriz, el objetivo del evento— y va cerrando el zoom hasta un dato muy concreto: la organizadora de este año, Dafne Álvarez, alumna de octavo semestre. Ese movimiento de lo amplio a lo específico es la organización **de lo general a lo particular**.\n\nLa B describe el camino inverso: sería empezar con Dafne y terminar en el panorama de la Expo."
           },
           {
             "id": 46,
@@ -664,7 +709,8 @@
               "D": "3, 1, 2"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 10"
+            "_src": "competencia-escrita · reactivo 10",
+            "explanation": "Busca el párrafo que puede abrir sin apoyarse en nada anterior: es el 3, que presenta qué es la Semana Mundial del Espacio y por qué existe (la declaración de la ONU en 1999). Le sigue el 2, que cuenta cómo se celebra en general, con actividades de divulgación en todo el mundo. Y cierra el 1, que aterriza en lo más específico: el tema elegido *este año*. El orden va de lo permanente a lo actual: **3, 2, 1**.\n\nLa D (3, 1, 2) tienta, pero un párrafo que empieza con \"Este año\" no puede ir antes de explicar qué pasa *cada* año: meterías lo particular en medio del marco general."
           },
           {
             "id": 47,
@@ -678,7 +724,8 @@
               "D": "Las flores de la *Macarenia Clavigera*"
             },
             "answer": "B",
-            "_src": "competencia-escrita · reactivo 11"
+            "_src": "competencia-escrita · reactivo 11",
+            "explanation": "El tema debe abarcar **todo** el párrafo, no un pedazo. Aquí se dice dónde está el río Caño Cristales, por qué es multicolor (la planta *Macarenia Clavigera*) y cuándo conviene visitarlo. Lo único que cubre las tres cosas es \"El río Caño Cristales de Colombia\".\n\nLa C (los colores) se antoja porque es lo más llamativo, pero es solo uno de los aspectos tratados: un subtema, igual que la planta (A y D)."
           },
           {
             "id": 48,
@@ -692,7 +739,8 @@
               "D": "Siempre que llego al salón de clases, y luego a la escuela, me dan nauseas"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 14"
+            "_src": "competencia-escrita · reactivo 14",
+            "explanation": "Una oración es coherente cuando sus ideas no se contradicen y el orden tiene lógica. La C cumple: en días de mucho calor, la sombra de un árbol sí es un consuelo; causa y efecto embonan.\n\nLas demás se atoran solas: la luz del sol no es \"artificial\" (A), ir muchas veces no puede resultar \"pocas veces\" (B), y nadie llega primero al salón y *luego* a la escuela (D)."
           },
           {
             "id": 49,
@@ -706,7 +754,8 @@
               "D": "Las llantas deben estar calibradas y bien rayadas, aunque graduadas y gravadas está bien"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 15"
+            "_src": "competencia-escrita · reactivo 15",
+            "explanation": "El conector *aunque* introduce una concesión: algo que matiza lo dicho sin contradecirlo. Eso solo ocurre en la D: lo ideal es que las llantas estén calibradas y bien rayadas, *aunque* se acepta como suficiente otra condición. Hay contraste real entre lo deseable y lo tolerable.\n\nEn la A y la B el *aunque* une puros sinónimos (hermosas... aunque bellas; duras... aunque exactas): no hay nada que conceder. Y en la C une una contradicción frontal: no pudieron entregar \"en tiempo y forma\" y a la vez \"tarde\"."
           },
           {
             "id": 50,
@@ -720,7 +769,8 @@
               "D": "misceláneo - computa - descubre - despoblado"
             },
             "answer": "B",
-            "_src": "competencia-escrita · reactivo 16"
+            "_src": "competencia-escrita · reactivo 16",
+            "explanation": "Prueba cada hueco con las colocaciones naturales de una reseña: un texto está *compuesto por* 14 capítulos, una novela *narra* una historia y un trasfondo *explora* un modo de vida. El hueco decisivo es el último: necesita un **adverbio** que module a \"vacío\" (*prácticamente vacío de felicidad*), y solo la B lo trae; las demás ponen ahí adjetivos (*inexplorado, habitado, despoblado*) que dejan la frase sin sentido.\n\nLa A aguanta tres huecos (*integrado, cuenta, indica*), pero se cae en el cuarto: \"mecánico, inexplorado vacío de felicidad\" no se puede leer."
           },
           {
             "id": 51,
@@ -734,7 +784,8 @@
               "D": "Las verduras que más se venden son el brócoli, la cebolla y el limón"
             },
             "answer": "B",
-            "_src": "competencia-escrita · reactivo 17"
+            "_src": "competencia-escrita · reactivo 17",
+            "explanation": "La coherencia aquí depende de que la enumeración le atine a su categoría. En la B todo embona: el azul, el verde y el violeta son, en efecto, tonalidades frías, y el \"En fin\" recapitula bien la lista.\n\nEn las otras siempre hay un intruso: la filigrana no es una de las bellas artes (A), el venado no es carnívoro (C) y el limón no es una verdura (D)."
           },
           {
             "id": 52,
@@ -748,7 +799,8 @@
               "D": "Exacerbados"
             },
             "answer": "B",
-            "_src": "competencia-escrita · reactivo 20"
+            "_src": "competencia-escrita · reactivo 20",
+            "explanation": "*Ánimos encendidos* está en sentido figurado: ánimos exaltados, al rojo vivo. Lo opuesto es el ánimo contenido y sereno: **mesurado**.\n\nCuidado con la trampa clásica: *exaltados* (A) y *exacerbados* (D) son sinónimos de \"encendidos\", no antónimos; el reactivo apuesta a que leas rápido. Y *suavizados* (C) se acerca, pero nombra el resultado de aplacar algo, no el temple sereno que se opone a un ánimo encendido."
           },
           {
             "id": 53,
@@ -762,7 +814,8 @@
               "D": "Ba - Bah"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 22"
+            "_src": "competencia-escrita · reactivo 22",
+            "explanation": "Son dos interjecciones que suenan igual pero se escriben distinto. La primera responde a una propuesta (\"¿Te parece si comemos...?\"): \"¡**Va**!\", con *v*, porque viene del verbo *ir* y en México equivale a \"de acuerdo, sale\". La segunda expresa desdén ante el recuerdo del engaño: \"todos dijimos ¡**bah**!\", con *b* y con *h*, la interjección de indiferencia o desprecio.\n\n\"Ba\" a secas (D) no existe en español, y en la C las interjecciones quedan cruzadas: aceptarías el plan con un gesto de desdén y despreciarías con un \"sale\"."
           },
           {
             "id": 54,
@@ -776,7 +829,8 @@
               "D": "¡Ay, no! Yo no quiero ir al bosque, ahí siempre hay muchos insectos"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 23"
+            "_src": "competencia-escrita · reactivo 23",
+            "explanation": "Tres homófonos en juego: **¡ay!** es la interjección de queja o susto; **ahí** señala lugar; **hay** es del verbo *haber* e indica que algo existe. La oración los necesita en ese orden: \"¡*Ay*, no! ... *ahí* siempre *hay* muchos insectos\", y solo la D los coloca bien.\n\n\"Hay, no\" como exclamación (A y C) es el error más común: si es un quejido, es *ay*, sin *h*."
           },
           {
             "id": 55,
@@ -790,7 +844,8 @@
               "D": "En marzo se conmemora el día de la mujer; mientras que en noviembre, el día de la revolución mexicana"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 25"
+            "_src": "competencia-escrita · reactivo 25",
+            "explanation": "Dos reglas trabajan juntas. Una: los meses van con **minúscula** (*marzo*, *noviembre*), lo que descarta B y C. Otra: los nombres propios de festividades y de hechos históricos van con **mayúscula**: *Día de la Mujer* y *Revolución Mexicana*, lo que descarta la D, escrita toda en minúsculas. La única que cumple ambas es la A.\n\nDetalle fino: en \"el día de la Revolución Mexicana\", *día* va con minúscula porque el nombre propio es el hecho histórico; en cambio, en *Día de la Mujer* la palabra *Día* sí forma parte del nombre de la festividad."
           },
           {
             "id": 56,
@@ -804,7 +859,8 @@
               "D": "Trámite - trámite - tramité"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 26"
+            "_src": "competencia-escrita · reactivo 26",
+            "explanation": "Es la misma palabra con tres acentuaciones según su función. En control escolar te dan una instrucción de usted: \"(usted) **tramite** una constancia\" — verbo, palabra grave terminada en vocal, sin tilde. Luego hablas tú en pasado: \"**tramité** una el año pasado\" — pretérito, aguda terminada en vocal, con tilde. Y al final va el sustantivo: \"un nuevo **trámite**\" — esdrújula, siempre con tilde. Ese orden (tramite, tramité, trámite) solo lo tiene la A.\n\nLa B pone el sustantivo donde va la orden: \"Trámite una constancia\" no es una forma verbal."
           },
           {
             "id": 57,
@@ -818,7 +874,8 @@
               "D": "Las flores de mi jardín; están hermosas en primavera; pero en diciembre solo parece que tengo hierba; que muere a cada instante."
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 29"
+            "_src": "competencia-escrita · reactivo 29",
+            "explanation": "El punto y coma tiene aquí un solo uso legítimo: separar las dos oraciones largas justo antes del *pero* adversativo. Eso hace la C, que además marca con coma el complemento antepuesto (*en diciembre,*). Regla de oro: el punto y coma **nunca** separa al sujeto de su verbo (\"mi jardín; están\", en B y D) ni a un *que* relativo de su antecedente (\"hierba; que muere\", en A y D).\n\nSi dudas, lee en voz alta: cada punto y coma de más te obliga a una pausa donde la oración no respira."
           }
         ]
       },
@@ -839,7 +896,8 @@
               "D": "6"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 1 · reactivo 1"
+            "_src": "competencia-lectora · lectura 1 · reactivo 1",
+            "explanation": "Cuenta la estructura, no los números entre corchetes. De los ocho segmentos, tres corresponden a las figuras ([3], [5] y [7]; la del [3] con su pie explicativo); del texto corrido, el [1] es la **introducción** (presenta la proporción áurea y anuncia que se explicará el número áureo) y el [8] es el **cierre** (la reflexión final sobre la belleza del número). Los párrafos de **desarrollo** son [2] (el número áureo), [4] (el rectángulo dorado) y [6] (la espiral): tres.\n\nSi contestaste 5 o 6, contaste como desarrollo la introducción, la conclusión o los pies de figura."
           },
           {
             "id": 59,
@@ -854,7 +912,8 @@
               "D": "Secuencia temporal"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 1 · reactivo 2"
+            "_src": "competencia-lectora · lectura 1 · reactivo 2",
+            "explanation": "A lo largo de toda la lectura, cada concepto se aclara con imágenes y casos concretos: la razón áurea trae su construcción dibujada, el rectángulo dorado su figura, la espiral su trazo, y el párrafo [8] es una lista de ejemplos (caracoles, galaxias, olas, girasoles...). Ese mecanismo expositivo —apoyar la idea en ejemplos e imágenes— se llama **ilustración**.\n\nNo hay comparación (no se contrastan dos cosas entre sí) ni secuencia temporal (el orden en el tiempo no importa para exponer)."
           },
           {
             "id": 60,
@@ -869,7 +928,8 @@
               "D": "En la naturaleza puede observarse a la espiral áurea en las olas del mar y en las galaxias"
             },
             "answer": "D",
-            "_src": "competencia-lectora · lectura 1 · reactivo 3"
+            "_src": "competencia-lectora · lectura 1 · reactivo 3",
+            "explanation": "Jerarquiza: la idea principal es la proporción áurea y su presencia en la naturaleza; las ideas secundarias desarrollan sus conceptos clave —cuánto vale el número, cómo es el rectángulo, cómo surge la espiral (opciones A, B y C)—; y las **terciarias** son los detalles y ejemplos que ilustran a las secundarias. Que la espiral se vea en las olas y en las galaxias (D) es justo eso: un par de ejemplos tomados de la lista del párrafo [8], información que concreta y adorna, pero de la que el texto podría prescindir sin perder su esqueleto."
           },
           {
             "id": 61,
@@ -884,7 +944,8 @@
               "D": "argumentación"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 1 · reactivo 4"
+            "_src": "competencia-lectora · lectura 1 · reactivo 4",
+            "explanation": "El párrafo [4] presenta información de manera objetiva y ordenada: define el rectángulo dorado, reformula para que quede claro (\"o sea, la relación entre la base y la altura es igual a 1.618...\") y encadena consecuencias (\"por lo tanto...\"). Explicar un concepto con definiciones, reformulaciones y conectores lógicos es la tipología **expositiva**.\n\nLa C tienta porque se habla de cómo es un rectángulo, pero el propósito no es pintarlo con detalles sensoriales, sino explicar su propiedad matemática; tampoco se narran hechos en el tiempo ni se defiende una postura."
           },
           {
             "id": 62,
@@ -899,7 +960,8 @@
               "D": "Son pocos los ejemplos del número áureo que pueden encontrarse en la naturaleza"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 1 · reactivo 5"
+            "_src": "competencia-lectora · lectura 1 · reactivo 5",
+            "explanation": "La evidencia está en el párrafo [2]: el número áureo tiene \"una representación decimal infinita y **sin periodo**\", es decir, no existe un bloque de cifras que se repita una y otra vez, como sí pasa en los decimales periódicos. Eso es lo que recoge la opción A.\n\nLas otras chocan con el texto: la razón áurea se conoce desde la Antigüedad como construcción geométrica, no nació de observar la naturaleza (B); el rectángulo dorado es *un* ejemplo, no el único objeto con la proporción (C); y el párrafo [8] da muchos ejemplos naturales, no pocos (D)."
           },
           {
             "id": 63,
@@ -914,7 +976,8 @@
               "D": "Un objeto es bello únicamente si está regido por las leyes de armonía de las matemáticas"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 1 · reactivo 6"
+            "_src": "competencia-lectora · lectura 1 · reactivo 6",
+            "explanation": "El texto insiste en un vínculo: donde hay proporción y equilibrio, el ser humano ve belleza. Lo dice al aplicar la proporción áurea (\"obtenemos objetos con equilibrio y belleza en su forma\") y al cerrar (\"este número guarda en su interior gran belleza, armonía y elegancia\"). De ese hilo se **desprende** la idea B: percibimos como bello lo que tiene equilibrio y armonía.\n\nLa A no es una idea desprendida, sino información literal del párrafo [2] (\"hay registros de este número desde la Antigüedad\"); y la D exagera con su \"únicamente\", que el texto nunca sostiene."
           },
           {
             "id": 64,
@@ -929,7 +992,8 @@
               "D": "Se le llamó número áureo por las propiedades místicas que se le han atribuido"
             },
             "answer": "D",
-            "_src": "competencia-lectora · lectura 1 · reactivo 7"
+            "_src": "competencia-lectora · lectura 1 · reactivo 7",
+            "explanation": "Junta dos pistas del texto: al número también se le dice \"número **divino**\" (párrafo [2]) y \"algunos le han atribuido propiedades **místicas**\" (párrafo [8]). De ahí se deduce que sus nombres —áureo (de oro), dorado, divino— nacen de ese halo especial, casi sagrado, que se le ha dado a lo largo de la historia.\n\nLas otras contradicen la lectura: la figura del párrafo [3] es precisamente la construcción anunciada en el [2] (B), la espiral sí se asocia con la elegancia de la naturaleza (C), y de que el número \"llamara la atención\" de los filósofos no se sigue que la Filosofía lo estudie ampliamente (A)."
           },
           {
             "id": 65,
@@ -944,7 +1008,8 @@
               "D": "La especie humana es un reflejo de las proporciones que tiene la naturaleza"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 1 · reactivo 8"
+            "_src": "competencia-lectora · lectura 1 · reactivo 8",
+            "explanation": "El párrafo [8] acumula ejemplos de cómo se **distribuyen** las cosas en la naturaleza —las hojas de las alcachofas, las semillas de los girasoles, las conchas, las olas, las galaxias— y todos siguen la espiral áurea, que el texto asocia con equilibrio y armonía. Generalizando esos casos se infiere la B: las formas de distribución natural tienden a ser equilibradas.\n\nLa D se antoja porque el texto dice que el humano está regido por la proporción áurea, pero de ahí a que la especie sea \"un reflejo\" de la naturaleza hay un salto que la lectura no da; la A y la C hablan de la historia de la ciencia, tema que el texto no toca."
           },
           {
             "id": 66,
@@ -959,7 +1024,8 @@
               "D": "descripciones"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 1 · reactivo 9"
+            "_src": "competencia-lectora · lectura 1 · reactivo 9",
+            "explanation": "Repasa el párrafo [8]: es una lista de casos constatables —la espiral está en las conchas de los caracoles, las galaxias, las olas, las hojas, las semillas y en la proporción del cuerpo humano—. Son **hechos**: datos que pueden verificarse, no juicios del autor. Incluso cuando aparecen las \"propiedades místicas\", el autor las presenta como atribuciones de otros y aclara que \"no han podido confirmarse\": está separando los hechos de las opiniones.\n\nSi marcaste \"opiniones\" (B), pesaste de más la frase final sobre la belleza; el grueso del párrafo es información comprobable."
           },
           {
             "id": 67,
@@ -974,7 +1040,8 @@
               "D": "la proporción áurea rige la disposición de la naturaleza"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 1 · reactivo 10"
+            "_src": "competencia-lectora · lectura 1 · reactivo 10",
+            "explanation": "Sigue la lógica de los párrafos [4] y [6]: al trazar un cuadrado dentro del rectángulo dorado, el rectángulo que queda es **semejante al original**, así que \"es posible seguir trazando un cuadrado en cada rectángulo resultante\". El proceso nunca llega a un final —cada paso reproduce la misma situación— y, como la espiral se forma uniendo los arcos de esos cuadrados, su trazo puede continuar al infinito: opción A.\n\nLa D exagera lo dicho en [8]: la espiral *aparece constantemente* en la naturaleza, que no es lo mismo que \"regir su disposición\" completa."
           },
           {
             "id": 68,
@@ -989,7 +1056,8 @@
               "D": "6"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 2 · reactivo 11"
+            "_src": "competencia-lectora · lectura 2 · reactivo 11",
+            "explanation": "Cuenta un argumento por párrafo, que es como está armado el texto: [1] un mundo sin adjetivos es triste y uniforme, porque el adjetivo garantiza la individualidad; [2] el adjetivo es a la lengua lo que el color a las artes plásticas (con el señor del metro como ejemplo); [3] los adjetivos dan vida y sabor a lo que nombramos; [4] sin adjetivos no habría ética ni recuerdos. Son **cuatro** razones distintas al servicio de la misma causa.\n\nSi contaste 5, seguramente separaste la ética y la memoria del párrafo [4], pero ambas forman un mismo argumento: lo que perderíamos sin adjetivos."
           },
           {
             "id": 69,
@@ -1004,7 +1072,8 @@
               "D": "Respaldo de autoridad"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 2 · reactivo 12"
+            "_src": "competencia-lectora · lectura 2 · reactivo 12",
+            "explanation": "La frase marcada pone en correspondencia dos pares: el adjetivo es a la lengua **lo que** el color es a las artes plásticas. Esa estructura —A es a B lo que C es a D— transfiere lo que ya sabes de un terreno conocido (una pintura sin color) para hacerte entender el otro (una lengua sin adjetivos). Ese mecanismo argumentativo se llama **analogía**.\n\nNo es una simple aseveración (C): no se limita a afirmar un dato, sino que compara dos relaciones para hacer ver algo."
           },
           {
             "id": 70,
@@ -1019,7 +1088,8 @@
               "D": "Lo esencial que es el adjetivo en el mundo"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 2 · reactivo 13"
+            "_src": "competencia-lectora · lectura 2 · reactivo 13",
+            "explanation": "No te quedes en el título. El autor defiende al adjetivo *porque* es \"el garante indeleble de la **individualidad** de los objetos y las personas\" [1]; por eso a los soldados y a los dirigentes totalitarios —que buscan uniformidad— les bastan el sustantivo y el verbo, y por eso el adjetivo vela \"por que no se pierda el sabor vivificante de la individualidad\" [3]. La tesis de fondo es la defensa de la individualidad; el adjetivo es su bandera.\n\nLa A y la D describen el vehículo del texto, no lo que en el fondo se está defendiendo."
           },
           {
             "id": 71,
@@ -1034,7 +1104,8 @@
               "D": "Argumentación"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 2 · reactivo 14"
+            "_src": "competencia-lectora · lectura 2 · reactivo 14",
+            "explanation": "Relee el fragmento: \"una calle larga, un día tórrido de agosto, un portillo chirriante..., las grosellas recubiertas de polvo estival, tus ingeniosos dedos\". Es una acumulación de imágenes sensoriales que pintan una escena del recuerdo; no sucede nada, no se narra ninguna acción ni se da ningún argumento: se muestra cómo es algo. Eso es **descripción**.\n\nLa A tienta porque parece el arranque de una historia, pero no hay sucesión de hechos: solo sustantivos con sus adjetivos, que es justo lo que el autor quiere demostrar que hace la memoria."
           },
           {
             "id": 72,
@@ -1049,7 +1120,8 @@
               "D": "los lingüistas puristas han iniciado una campaña en contra del adjetivo"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 2 · reactivo 15"
+            "_src": "competencia-lectora · lectura 2 · reactivo 15",
+            "explanation": "La evidencia está en el párrafo [2], en el retrato del señor del metro: el autor duda si lo que habita en su interior es desespero, cansancio \"o un **sentido del humor inmune a la acción destructora del tiempo**\". De ahí se sigue que hay personas que conservan el buen humor aunque los años avancen: opción C.\n\nLa A confunde el ejemplo lírico de las \"ciudades sombrías\" [3] con un dato biográfico del autor, y de los puristas solo se dice que maltratan al adjetivo, no que hayan montado una campaña (D)."
           },
           {
             "id": 73,
@@ -1064,7 +1136,8 @@
               "D": "Para redactar óptimamente un texto, solo son necesarios los sustantivos y los verbos"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 2 · reactivo 16"
+            "_src": "competencia-lectora · lectura 2 · reactivo 16",
+            "explanation": "Ve al párrafo [4]: los adjetivos de la ética —bueno, malo, artero, vengativo— \"brillan como la **cuchilla de la guillotina**\". La comparación les atribuye un poder tremendo: un adjetivo bien puesto puede sentenciar a una persona, ejecutarla figuradamente ante los demás. Eso es exactamente lo que dice la C.\n\nLa B tienta, pero el autor nunca afirma que usar adjetivos mejore el estilo: lo que combate es la idea de que un buen estilo deba prescindir de ellos, que no es lo mismo."
           },
           {
             "id": 74,
@@ -1079,7 +1152,8 @@
               "D": "utiliza los términos de sustantivos y verbos como símil de órdenes"
             },
             "answer": "D",
-            "_src": "competencia-lectora · lectura 2 · reactivo 17"
+            "_src": "competencia-lectora · lectura 2 · reactivo 17",
+            "explanation": "Fíjate en las imágenes del párrafo [1]: \"el **arco** sólido del sustantivo y la **flecha** ubicua del verbo\" —puras armas— y, enseguida, que el sustantivo y el verbo \"son suficientes para los **soldados** y los **dirigentes de los países totalitarios**\". El autor asocia esas dos clases de palabras con el lenguaje escueto del mando: órdenes sin matices ni individualidad. Por eso puede afirmarse que las usa como símil de órdenes (D).\n\nDel autor no consta que sea lingüista (A) ni estudioso de la ética (B): habla como escritor que defiende una causa, no como académico."
           },
           {
             "id": 75,
@@ -1094,7 +1168,8 @@
               "D": "El autor considera que la práctica de la medicina es algo lúdico y entretenido"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 2 · reactivo 18"
+            "_src": "competencia-lectora · lectura 2 · reactivo 18",
+            "explanation": "Sigue la cadena del párrafo [1]: los adjetivos garantizan la individualidad; sin ellos, el mundo queda \"triste como el **quirófano en el día de domingo**\" —luz fría, tubos mustios: imágenes de hospital vacío, sin vida— y es el mundo que les basta a los regímenes totalitarios, donde no hay individualidad ni libertad. De ahí se desprende la C: para el autor, un mundo sin libertad e individualidad equivale a la muerte.\n\nLa A rebaja los adjetivos a simple adorno, cuando la tesis es que son esenciales, no decorativos."
           },
           {
             "id": 76,
@@ -1109,7 +1184,8 @@
               "D": "Humanístico"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 2 · reactivo 19"
+            "_src": "competencia-lectora · lectura 2 · reactivo 19",
+            "explanation": "El texto toma una causa aparentemente menor —una clase de palabras— y la trata con solemnidad épica fingida: \"¡Viva el adjetivo!\", \"¡Te necesitamos, oh adjetivo maltratado por los puristas!\", el quirófano en domingo, la guillotina. Esa exageración deliberada, que dice más de lo que en serio afirma y le guiña al lector, es la marca del tono **irónico**.\n\nLa C (solemne) es el distractor: sí hay fórmulas solemnes, pero están parodiadas; el autor las usa jugando, no en serio."
           },
           {
             "id": 77,
@@ -1124,7 +1200,8 @@
               "D": "demuestra la habilidad de escritura del autor"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 2 · reactivo 20"
+            "_src": "competencia-lectora · lectura 2 · reactivo 20",
+            "explanation": "Debajo del tema gramatical hay otro asunto: el adjetivo representa la **individualidad**, y sus enemigos son \"los soldados y los dirigentes de los países totalitarios\" [1]; hasta la guillotina aparece [4]. Hablar de suprimir adjetivos es, en realidad, hablar de regímenes que borran lo individual y uniforman a las personas. Un texto que dice una cosa para significar otra de mayor alcance es una **alegoría**, aquí de un tema social: la libertad individual frente a la uniformidad.\n\nLa B y la D describen rasgos de la superficie del texto; la pregunta apunta a su sentido profundo."
           }
         ]
       },
@@ -1144,7 +1221,8 @@
               "D": "Centrifugación"
             },
             "answer": "C",
-            "_src": "quimica-iycfm · reactivo 1"
+            "_src": "quimica-iycfm · reactivo 1",
+            "explanation": "Los tres componentes son sólidos, así que lo aprovechable es el tamaño de partícula: piedras grandes, arena mediana y arcilla muy fina. El **tamizado** los separa haciéndolos pasar por mallas de distinta abertura. La decantación y la centrifugación (opciones A y D) requieren un medio líquido donde algo se asiente, y el magnetismo solo funciona si un componente es atraído por un imán, que aquí no es el caso."
           },
           {
             "id": 79,
@@ -1158,7 +1236,8 @@
               "D": "Simple sustitución"
             },
             "answer": "D",
-            "_src": "quimica-iycfm · reactivo 2"
+            "_src": "quimica-iycfm · reactivo 2",
+            "explanation": "Fíjate en quién entra y quién sale: el magnesio llega como elemento libre y le quita su lugar al hidrógeno del HCl, que sale también como elemento libre ($H_{2}$). Un elemento que desplaza a otro de su compuesto es la firma de la **simple sustitución**: $A + BC \\rightarrow AC + B$. Para ser doble sustitución (opción C) se necesitan *dos compuestos* que intercambien parejas, y aquí el Mg no es compuesto, es elemento."
           },
           {
             "id": 80,
@@ -1172,7 +1251,8 @@
               "D": "0.084 g"
             },
             "answer": "B",
-            "_src": "quimica-iycfm · reactivo 3"
+            "_src": "quimica-iycfm · reactivo 3",
+            "explanation": "Dos pasos. Primero las moles que necesita esa solución: molaridad por volumen,\n\n$$n = (0.3)(0.05) = 0.015 \\text{ mol}$$\n\nLuego conviértelas a gramos con la masa molar del MgS: $24.3+32.1 \\approx 56.4$ g/mol.\n\n$$m = 0.015 \\times 56.4 \\approx 0.84 \\text{ g}$$\n\nSi contestaste 0.015 g (opción C), te quedaste en las moles: faltó multiplicar por la masa molar para pasar a gramos."
           },
           {
             "id": 81,
@@ -1186,7 +1266,8 @@
               "D": "Coulomb"
             },
             "answer": "B",
-            "_src": "quimica-iycfm · reactivo 6"
+            "_src": "quimica-iycfm · reactivo 6",
+            "explanation": "La intensidad de corriente se mide en **amperes** (A), una de las siete unidades *base* del SI. El distractor fuerte es el coulomb (opción D), que mide carga eléctrica, no corriente; la relación entre ambos es $1\\ A = 1\\ C/s$: un ampere es un coulomb de carga pasando cada segundo. El joule mide energía y el faraday es una unidad de carga usada en electroquímica, no del SI."
           },
           {
             "id": 82,
@@ -1200,7 +1281,8 @@
               "D": "Isotérmico"
             },
             "answer": "C",
-            "_src": "quimica-iycfm · reactivo 7"
+            "_src": "quimica-iycfm · reactivo 7",
+            "explanation": "Clasifica según lo que cruza la frontera del sistema. El termo tapado no deja entrar ni salir materia (el café no se derrama ni escapa el vapor), pero sí intercambia energía con el ambiente: la prueba es que después de unas horas el café se enfría. Materia no, energía sí: sistema **cerrado**. Sería aislado (opción A) solo si tampoco pasara energía; un termo real nada más *retrasa* el enfriamiento, y el propio enunciado te dice que al final se enfría."
           },
           {
             "id": 83,
@@ -1214,7 +1296,8 @@
               "D": "Un ácido y una base"
             },
             "answer": "A",
-            "_src": "quimica-iycfm · reactivo 9"
+            "_src": "quimica-iycfm · reactivo 9",
+            "explanation": "En la neutralización, el ácido y la base se anulan mutuamente: los iones $H^{+}$ del ácido se unen a los $OH^{-}$ de la base formando **agua**, y los iones restantes forman una **sal**. El ejemplo clásico:\n\n$$HCl + NaOH \\rightarrow NaCl + H_{2}O$$\n\nCuidado con la opción D: ácido y base son los *reactivos* con los que empieza la neutralización; la pregunta pide los *productos* que se obtienen."
           },
           {
             "id": 84,
@@ -1228,7 +1311,8 @@
               "D": "nucleófilo"
             },
             "answer": "B",
-            "_src": "quimica-iycfm · reactivo 10"
+            "_src": "quimica-iycfm · reactivo 10",
+            "explanation": "Los **isótopos** son átomos del mismo elemento: comparten número de protones (por eso son el mismo elemento) pero difieren en neutrones y, por lo tanto, en masa. El ejemplo típico: carbono-12 y carbono-14, ambos con 6 protones pero con 6 y 8 neutrones. No lo confundas con isómero (opción C), que es un concepto de química orgánica: compuestos con la misma fórmula molecular pero distinto acomodo de átomos."
           },
           {
             "id": 85,
@@ -1242,7 +1326,8 @@
               "D": "electronegatividad"
             },
             "answer": "B",
-            "_src": "quimica-iycfm · reactivo 12"
+            "_src": "quimica-iycfm · reactivo 12",
+            "explanation": "Esa es justo la definición del **estado (o número) de oxidación**: la cuenta de electrones que un átomo cede (queda con número positivo) o gana (queda con número negativo) al formar un compuesto. En el NaCl, por ejemplo, el sodio está en $+1$ porque cedió un electrón y el cloro en $-1$ porque lo ganó. La electronegatividad (opción D) no cuenta electrones ganados o cedidos: mide la tendencia del átomo a atraerlos en un enlace."
           },
           {
             "id": 86,
@@ -1256,7 +1341,8 @@
               "D": "Al $+3$, O $-2$"
             },
             "answer": "D",
-            "_src": "quimica-iycfm · reactivo 14"
+            "_src": "quimica-iycfm · reactivo 14",
+            "explanation": "Arranca por lo seguro: el oxígeno trabaja casi siempre con $-2$. Los 3 oxígenos aportan $3(-2)=-6$ y, como el compuesto es neutro, los 2 aluminios deben sumar $+6$, es decir, $+3$ cada uno:\n\n$$2(+3)+3(-2) = 0$$\n\nSi elegiste C ($+2$ y $-3$), leíste los subíndices como si fueran las cargas. Es al revés: las cargas se cruzan para volverse subíndices, $Al^{+3}$ y $O^{-2}$ producen $Al_{2}O_{3}$."
           },
           {
             "id": 87,
@@ -1270,7 +1356,8 @@
               "D": "hidrácidos"
             },
             "answer": "C",
-            "_src": "quimica-iycfm · reactivo 15"
+            "_src": "quimica-iycfm · reactivo 15",
+            "explanation": "Los óxidos ácidos o **anhídridos** resultan de combinar un *no metal* con oxígeno, como $CO_{2}$ o $SO_{3}$; se llaman ácidos porque al reaccionar con agua generan oxiácidos. Los hidróxidos (opción B) son lo contrario en carácter: bases con grupo OH, que vienen de óxidos metálicos. Y los hidrácidos (opción D) son ácidos de hidrógeno más un no metal, pero *sin* oxígeno, como el HCl."
           },
           {
             "id": 88,
@@ -1284,7 +1371,8 @@
               "D": "sustitución"
             },
             "answer": "B",
-            "_src": "quimica-iycfm · reactivo 16"
+            "_src": "quimica-iycfm · reactivo 16",
+            "explanation": "La reacción de **síntesis** (o combinación) une dos o más sustancias en un solo producto: $A + B \\rightarrow AB$, como en $2H_{2}+O_{2} \\rightarrow 2H_{2}O$. La opción A (análisis) es exactamente el proceso inverso: análisis o descomposición es romper un compuesto en sustancias más simples, $AB \\rightarrow A + B$."
           },
           {
             "id": 89,
@@ -1298,7 +1386,8 @@
               "D": "712.5"
             },
             "answer": "B",
-            "_src": "quimica-iycfm · reactivo 17"
+            "_src": "quimica-iycfm · reactivo 17",
+            "explanation": "Balancea primero: $FeCl_{3} + 3NaOH \\rightarrow Fe(OH)_{3} + 3NaCl$. Entre $FeCl_{3}$ y $Fe(OH)_{3}$ la relación es 1 a 1, así que todo se reduce a convertir unidades. Masa molar del $FeCl_{3}$: $55.8+3(35.5) \\approx 162.3$ g/mol, entonces\n\n$$n = \\frac{980}{162.3} \\approx 6.04 \\text{ mol}$$\n\nque por la relación 1 a 1 son también 6.04 mol de $Fe(OH)_{3}$. Con su masa molar, $55.8+3(17) \\approx 106.9$ g/mol:\n\n$$m = 6.04 \\times 106.9 \\approx 645.5 \\text{ g}$$"
           },
           {
             "id": 90,
@@ -1312,7 +1401,8 @@
               "D": "47.5 %"
             },
             "answer": "B",
-            "_src": "quimica-iycfm · reactivo 19"
+            "_src": "quimica-iycfm · reactivo 19",
+            "explanation": "Suma la masa molar del $KNO_{3}$: $K=39.1$, $N=14$ y $3O=48$, total $\\approx 101.1$ g/mol. El porcentaje en peso del nitrógeno es su aporte entre el total:\n\n$$\\%N = \\frac{14}{101.1}\\times 100 \\approx 13.8\\%$$\n\nLas otras opciones son los porcentajes de los demás elementos del mismo compuesto: 38.7% corresponde al potasio y 47.5% al oxígeno. Lee con cuidado cuál elemento te piden."
           },
           {
             "id": 91,
@@ -1326,7 +1416,8 @@
               "D": "R–COO–R'"
             },
             "answer": "A",
-            "_src": "quimica-iycfm · reactivo 23"
+            "_src": "quimica-iycfm · reactivo 23",
+            "explanation": "El éter es un oxígeno haciendo de puente entre dos cadenas de carbono: R–O–R'. Las demás opciones son otros grupos funcionales: R–OH es alcohol, R–CO–R' es cetona y R–COO–R' es éster. El éster (opción D) es el que más se confunde por el nombre parecido, pero se distingue porque además del oxígeno puente tiene un carbono con doble enlace a otro oxígeno."
           },
           {
             "id": 92,
@@ -1340,7 +1431,8 @@
               "D": "cuádruple"
             },
             "answer": "B",
-            "_src": "quimica-iycfm · reactivo 24"
+            "_src": "quimica-iycfm · reactivo 24",
+            "explanation": "Las familias de hidrocarburos se distinguen por su enlace carbono-carbono: alcanos con enlaces sencillos, alquenos con al menos un doble enlace y alquinos con al menos un **triple** enlace. La terminación del nombre te lo recuerda: -ano, -eno, -ino. El alquino más famoso es el acetileno (etino), $HC \\equiv CH$. Si contestaste 'doble' (opción A), esa es la marca de los alquenos, no de los alquinos."
           },
           {
             "id": 93,
@@ -1354,7 +1446,8 @@
               "D": "Joule"
             },
             "answer": "C",
-            "_src": "quimica-iycfm · reactivo 28"
+            "_src": "quimica-iycfm · reactivo 28",
+            "explanation": "La unidad base de temperatura en el SI es el **kelvin** (K), una escala absoluta cuyo cero ($0\\ K = -273.15\\ ^{\\circ}C$) es la mínima temperatura posible; se dice 'kelvin' a secas, sin 'grados'. El Celsius (opción B) es el distractor natural porque es el de uso diario, pero es una escala derivada, no la unidad base del SI. Y el joule no mide temperatura, mide energía."
           },
           {
             "id": 94,
@@ -1368,7 +1461,8 @@
               "D": "$\\dfrac{P_{1}}{T_{1}} = \\dfrac{P_{2}}{T_{2}}$"
             },
             "answer": "D",
-            "_src": "quimica-iycfm · reactivo 29"
+            "_src": "quimica-iycfm · reactivo 29",
+            "explanation": "Gay-Lussac describe un gas a **volumen constante**: la presión es directamente proporcional a la temperatura absoluta, $P/T$ constante, que entre dos estados se escribe\n\n$$\\frac{P_{1}}{T_{1}} = \\frac{P_{2}}{T_{2}}$$\n\nLas demás son las otras leyes de los gases: $P_{1}V_{1}=P_{2}V_{2}$ es Boyle (temperatura constante), $\\frac{V_{1}}{T_{1}}=\\frac{V_{2}}{T_{2}}$ es Charles (presión constante) y $PV=nRT$ es la ecuación general del gas ideal. Truco: la de Gay-Lussac es la única sin $V$, porque el volumen no cambia."
           }
         ]
       },
@@ -1388,7 +1482,8 @@
               "D": "2, 3, 1, 4"
             },
             "answer": "B",
-            "_src": "fisica-iycfm · reactivo 1"
+            "_src": "fisica-iycfm · reactivo 1",
+            "explanation": "Con $\\vec{r}$ en el eje $z$ y $\\vec{F}$ en el eje $y$, los vectores son perpendiculares y la magnitud del torque es simplemente $\\tau = rF$. Calcula las cuatro: (1) $1\\times 6 = 6$, (2) $7\\times 0 = 0$, (3) $2\\times 4 = 8$, (4) $3\\times 5 = 15$, en $N\\cdot m$. De menor a mayor: 2, 1, 3, 4.\n\nLa pareja 2 engaña con su brazo de $7\\,m$, pero si la fuerza vale cero, el torque vale cero: sin fuerza no hay giro."
           },
           {
             "id": 96,
@@ -1402,7 +1497,8 @@
               "D": "Teorema de Torricelli"
             },
             "answer": "D",
-            "_src": "fisica-iycfm · reactivo 2"
+            "_src": "fisica-iycfm · reactivo 2",
+            "explanation": "En el teorema de Torricelli un líquido sale por un orificio de un tanque abierto: tanto la superficie libre como el orificio están a presión atmosférica, así que en la ecuación de Bernoulli los términos de presión se cancelan y solo queda el intercambio entre altura y velocidad, de donde sale $v = \\sqrt{2gh}$.\n\nEl efecto Venturi (opción B) es el caso contrario: tubo horizontal donde la altura no cambia y lo que varía es justamente la presión."
           },
           {
             "id": 97,
@@ -1416,7 +1512,8 @@
               "D": "$9E$"
             },
             "answer": "A",
-            "_src": "fisica-iycfm · reactivo 5"
+            "_src": "fisica-iycfm · reactivo 5",
+            "explanation": "El campo de una carga puntual obedece la ley del inverso del cuadrado: $E = \\dfrac{kq}{r^2}$. Al triplicar la distancia:\n\n$$E' = \\frac{kq}{(3r)^2} = \\frac{kq}{9r^2} = \\frac{E}{9}$$\n\nSi contestaste $E/3$, dividiste entre 3 pero olvidaste que la distancia va elevada al cuadrado."
           },
           {
             "id": 98,
@@ -1430,7 +1527,8 @@
               "D": "dirección, componentes, propiedades"
             },
             "answer": "C",
-            "_src": "fisica-iycfm · reactivo 6"
+            "_src": "fisica-iycfm · reactivo 6",
+            "explanation": "Dos vectores son iguales cuando coinciden su **magnitud** y su **dirección**: mismo tamaño y apuntando hacia el mismo lado. Y decir eso equivale exactamente a decir que sus **componentes** son iguales, porque las componentes guardan las dos informaciones a la vez: de ellas recuperas la magnitud (con Pitágoras) y la dirección (con el ángulo)."
           },
           {
             "id": 99,
@@ -1444,7 +1542,8 @@
               "D": "1B, 2A, 3C"
             },
             "answer": "A",
-            "_src": "fisica-iycfm · reactivo 7"
+            "_src": "fisica-iycfm · reactivo 7",
+            "explanation": "El momento de una fuerza (torque) se calcula con $\\tau = rF\\,\\mathrm{sen}\\,\\theta$, así que 1A. Las dos condiciones de equilibrio van en orden: la **primera** evita que el cuerpo se traslade, por eso pide que las fuerzas se anulen, $\\sum \\vec{F} = \\vec{0}$ (2B); la **segunda** evita que gire, por eso pide que los torques se anulen, $\\sum \\vec{\\tau} = \\vec{0}$ (3C)."
           },
           {
             "id": 100,
@@ -1458,7 +1557,8 @@
               "D": "81.54 m"
             },
             "answer": "A",
-            "_src": "fisica-iycfm · reactivo 8"
+            "_src": "fisica-iycfm · reactivo 8",
+            "explanation": "En caída libre desde el reposo, $v^2 = 2gH$. Despeja la altura:\n\n$$H = \\frac{v^2}{2g} = \\frac{(20)^2}{2(9.81)} = \\frac{400}{19.62} \\approx 20.39\\ m$$\n\nEs lo mismo que igualar energías: $mgH = \\tfrac{1}{2}mv^2$. Si te dio 81.54 m (opción D), multiplicaste por 2 en lugar de dividir entre $2g$."
           },
           {
             "id": 101,
@@ -1472,7 +1572,8 @@
               "D": "Disminuye a una cuarta parte"
             },
             "answer": "D",
-            "_src": "fisica-iycfm · reactivo 9"
+            "_src": "fisica-iycfm · reactivo 9",
+            "explanation": "El peso es la fuerza gravitacional, y esta decae con el cuadrado de la distancia al **centro** del planeta: $W = \\dfrac{GMm}{r^2}$. En la superficie $r = R$; al alejarse hasta $r = 2R$:\n\n$$W' = \\frac{GMm}{(2R)^2} = \\frac{W}{4}$$\n\nSi pensaste «al doble de distancia, la mitad de peso» (opción B), te faltó el cuadrado de la ley de gravitación."
           },
           {
             "id": 102,
@@ -1486,7 +1587,8 @@
               "D": "1C, 2A, 3D, 4B"
             },
             "answer": "C",
-            "_src": "fisica-iycfm · reactivo 10"
+            "_src": "fisica-iycfm · reactivo 10",
+            "explanation": "Ve concepto por concepto: la **masa** es la cantidad escalar que mide la inercia (1D); la **fuerza** es el agente vectorial que cuantifica la interacción entre dos cuerpos (2C); la **velocidad** es el desplazamiento en un intervalo de tiempo (3B); y la **aceleración** es el cambio de la velocidad con respecto al tiempo (4A). La combinación es 1D, 2C, 3B, 4A."
           },
           {
             "id": 103,
@@ -1500,7 +1602,8 @@
               "D": "50"
             },
             "answer": "A",
-            "_src": "fisica-iycfm · reactivo 11"
+            "_src": "fisica-iycfm · reactivo 11",
+            "explanation": "El truco es tomar el producto punto de la condición $\\vec{r}+\\vec{s}+\\vec{v}=\\vec{0}$ consigo misma:\n\n$$|\\vec{r}|^2+|\\vec{s}|^2+|\\vec{v}|^2 + 2\\left(\\vec{r}\\cdot\\vec{s}+\\vec{s}\\cdot\\vec{v}+\\vec{v}\\cdot\\vec{r}\\right) = 0$$\n\nCon las magnitudes: $9+16+25 = 50$, así que $\\vec{r}\\cdot\\vec{s}+\\vec{s}\\cdot\\vec{v}+\\vec{v}\\cdot\\vec{r} = -25$ y su valor absoluto es 25.\n\nSi contestaste 50 (opción D), te quedaste con la suma de los cuadrados y olvidaste dividir entre 2."
           },
           {
             "id": 104,
@@ -1514,7 +1617,8 @@
               "D": "132.8 m/s"
             },
             "answer": "B",
-            "_src": "fisica-iycfm · reactivo 13"
+            "_src": "fisica-iycfm · reactivo 13",
+            "explanation": "Por conservación de energía, la potencial de arriba se convierte en cinética abajo: $mgh = \\tfrac{1}{2}mv^2$. La masa se cancela (el peso de 784 N es dato de relleno) y queda:\n\n$$v = \\sqrt{2gh} = \\sqrt{2(9.8)(9)} = \\sqrt{176.4} \\approx 13.28\\ m/s$$\n\nLas opciones C y D solo corren el punto decimal; si te salió una de esas, revisa cómo sacaste la raíz cuadrada."
           },
           {
             "id": 105,
@@ -1528,7 +1632,8 @@
               "D": "$0.003\\ m^{3}/s$"
             },
             "answer": "D",
-            "_src": "fisica-iycfm · reactivo 14"
+            "_src": "fisica-iycfm · reactivo 14",
+            "explanation": "El gasto es volumen entre tiempo, pero en unidades del SI. Convierte primero: $540\\ \\ell = 0.54\\ m^3$ (porque $1\\ m^3 = 1000\\ \\ell$) y $3\\ \\mathrm{min} = 180\\ s$. Entonces:\n\n$$Q = \\frac{V}{t} = \\frac{0.54\\ m^3}{180\\ s} = 0.003\\ m^{3}/s$$\n\nSi te dio $0.03$ (opción C), seguramente usaste $1\\ m^3 = 100\\ \\ell$: el metro cúbico son mil litros."
           },
           {
             "id": 106,
@@ -1542,7 +1647,8 @@
               "D": "30 J, 0 J"
             },
             "answer": "D",
-            "_src": "fisica-iycfm · reactivo 16"
+            "_src": "fisica-iycfm · reactivo 16",
+            "explanation": "El trabajo de la fuerza aplicada es $W = Fd\\cos\\theta = (20)(3)\\cos 60° = 60 \\times \\tfrac{1}{2} = 30\\ J$ (que el ángulo vaya por debajo de la horizontal no cambia el coseno). La gravedad, en cambio, es vertical y la caja se mueve en horizontal: fuerza y desplazamiento son perpendiculares, $\\cos 90° = 0$, y la fuerza gravitacional no hace trabajo. Por eso la pareja es 30 J y 0 J."
           },
           {
             "id": 107,
@@ -1556,7 +1662,8 @@
               "D": "Coulomb / segundo"
             },
             "answer": "D",
-            "_src": "fisica-iycfm · reactivo 17"
+            "_src": "fisica-iycfm · reactivo 17",
+            "explanation": "La corriente se define como la carga que pasa por unidad de tiempo: $I = \\dfrac{q}{t}$, o sea **coulombs entre segundos**. Esa combinación tiene nombre propio: el ampere ($1\\ A = 1\\ C/s$). La opción C (coulomb por segundo como producto) multiplica en lugar de dividir, y eso no mide corriente."
           },
           {
             "id": 108,
@@ -1570,7 +1677,8 @@
               "D": "180°"
             },
             "answer": "C",
-            "_src": "fisica-iycfm · reactivo 19"
+            "_src": "fisica-iycfm · reactivo 19",
+            "explanation": "Cuando te pidan el ángulo entre dos vectores, empieza por el producto punto:\n\n$$\\vec{S}\\cdot\\vec{L} = (4)(3) + (-3)(4) = 12 - 12 = 0$$\n\nProducto punto cero entre vectores no nulos significa que son perpendiculares: el ángulo es $90°$, sin necesidad de calcular magnitudes ni cosenos."
           },
           {
             "id": 109,
@@ -1584,7 +1692,8 @@
               "D": "3.5 h"
             },
             "answer": "C",
-            "_src": "fisica-iycfm · reactivo 20"
+            "_src": "fisica-iycfm · reactivo 20",
+            "explanation": "Cada tramo lleva su propio tiempo: $t_1 = \\dfrac{140}{70} = 2\\ h$ y $t_2 = \\dfrac{60}{60} = 1\\ h$, así que el viaje completo dura $2 + 1 = 3\\ h$.\n\nSi te dio 2.0 h (opción B), te quedaste con el primer tramo y olvidaste sumar el segundo."
           },
           {
             "id": 110,
@@ -1598,7 +1707,8 @@
               "D": "3.5 s"
             },
             "answer": "A",
-            "_src": "fisica-iycfm · reactivo 21"
+            "_src": "fisica-iycfm · reactivo 21",
+            "explanation": "Caída libre desde el reposo: $h = \\tfrac{1}{2}gt^2$. Despeja el tiempo:\n\n$$t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(4)}{9.8}} = \\sqrt{0.816} \\approx 0.9\\ s$$\n\nComprobación rápida: en el primer segundo un objeto cae unos 4.9 m, así que caer solo 4 m debe tomar un poco menos de un segundo."
           },
           {
             "id": 111,
@@ -1612,7 +1722,8 @@
               "D": "1C, 2B, 3A"
             },
             "answer": "B",
-            "_src": "fisica-iycfm · reactivo 23"
+            "_src": "fisica-iycfm · reactivo 23",
+            "explanation": "El principio de **Pascal** es el de la presión que se transmite íntegra a todo el fluido y a las paredes (1C): piensa en la prensa hidráulica. El de **Bernoulli** relaciona velocidad y presión: donde el fluido va más rápido, la presión es menor (2A). Y el de **Arquímedes** es el del empuje igual al peso del fluido desplazado (3B): el de la flotación. La combinación es 1C, 2A, 3B."
           }
         ]
       },
