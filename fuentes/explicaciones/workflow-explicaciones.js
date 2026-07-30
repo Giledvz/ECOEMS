@@ -24,7 +24,21 @@ export const meta = {
 }
 
 const DIR = '/Users/giledvz/Documents/ECOEMS/fuentes/explicaciones'
-const LOTES = Array.isArray(args) ? args : []
+// args puede llegar como arreglo o como el mismo arreglo serializado en texto;
+// aceptar las dos formas evita una corrida en vacío que no escribe nada.
+function listaDeLotes(a) {
+  if (Array.isArray(a)) return a
+  if (typeof a === 'string') {
+    const t = a.trim()
+    if (t.startsWith('[')) {
+      try { const p = JSON.parse(t); if (Array.isArray(p)) return p } catch (e) {}
+    }
+    return t ? t.split(/[\s,]+/).filter(Boolean) : []
+  }
+  return []
+}
+const LOTES = listaDeLotes(args)
+if (!LOTES.length) throw new Error('No llegó ningún lote en args; nada que explicar.')
 
 const ESTILO = `
 CÓMO DEBE SER CADA EXPLICACIÓN (este patrón ya lo aprobó el profesor, respétalo):

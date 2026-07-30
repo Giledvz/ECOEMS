@@ -1,0 +1,34 @@
+[
+ {
+  "id": 26,
+  "explanation": "Fíjate en la pareja que te dan: la derivada de $e^x+x$ es exactamente $e^x+1$, así que el integrando tiene la forma $u^3\\,du$ con el cambio $u=e^x+x$:\n\n$$\\int\\left(e^x+x\\right)^3\\left(e^x+1\\right)dx=\\frac{u^4}{4}+C=\\frac{\\left(e^x+x\\right)^4}{4}+C$$\n\nLa constante puede ser cualquiera; con $C=5$ queda la opción A. Compruébalo derivando: la regla de la cadena te regresa justo a $f(x)$.\n\nLa opción B tienta por el exponente 4, pero eleva $(e^x+1)$, que es la derivada interna, no la base $e^x+x$."
+ },
+ {
+  "id": 27,
+  "explanation": "Ojo: aquí $xe^x$ es la función que hay que integrar. Hazlo por partes con $u=x$ y $dv=e^x\\,dx$:\n\n$$\\int xe^x\\,dx=xe^x-\\int e^x\\,dx=xe^x-e^x+C$$\n\nPara que la gráfica pase por $(0,1)$ sustituye $x=0$: $0\\cdot e^0-e^0+C=-1+C=1$, de donde $C=2$.\n\nSi te dio 1 (opción B), olvidaste el término $-e^x$ que deja la integración por partes."
+ },
+ {
+  "id": 28,
+  "explanation": "Toda función con derivada $\\cos(x)$ es de la forma $f(x)=\\mathrm{sen}(x)+C$. La condición $f(\\pi)=1$ fija la constante: como $\\mathrm{sen}(\\pi)=0$, queda $0+C=1$, así que $C=1$ y\n\n$$f(x)=\\mathrm{sen}(x)+1$$\n\nEl punto fino es recordar que $\\mathrm{sen}(\\pi)=0$; el seno vale 1 en $\\pi/2$, no en $\\pi$."
+ },
+ {
+  "id": 29,
+  "explanation": "Acomoda primero el radicando: $\\sqrt{x^3}+x=x^{3/2}+x=x\\left(\\sqrt{x}+1\\right)$, y como $\\sqrt{x\\left(\\sqrt{x}+1\\right)}=\\sqrt{x}\\sqrt{\\sqrt{x}+1}$, la integral es\n\n$$\\int\\frac{dx}{\\sqrt{x}\\,\\sqrt{\\sqrt{x}+1}}$$\n\nCon el cambio $u=\\sqrt{x}+1$ tienes $du=\\frac{dx}{2\\sqrt{x}}$, es decir $\\frac{dx}{\\sqrt{x}}=2\\,du$:\n\n$$\\int\\frac{2\\,du}{\\sqrt{u}}=4\\sqrt{u}+C=4\\sqrt{\\sqrt{x}+1}+C$$\n\nSi te dio $2\\sqrt{\\sqrt{x}+1}$ (opción A), se te perdió el 2 del diferencial: al derivar $\\sqrt{x}$ aparece un $\\frac{1}{2\\sqrt{x}}$ que duplica la constante."
+ },
+ {
+  "id": 30,
+  "explanation": "Imagina 100 botellas para no pelearte con porcentajes: 60 de naranja, 30 de piña y 10 de manzana. Ahora cuenta las de 2 litros: de naranja son el 80% de 60, o sea 48; de piña el 70% de 30, o sea 21; y de manzana 4, porque si el 60% de las 10 es de 1 litro, el 40% restante (4 botellas) es de 2 litros. En total hay $48+21+4=73$ botellas de 2 litros, y de ellas 48 son de naranja:\n\n$$P(\\text{naranja}\\mid 2\\ \\text{litros})=\\frac{48}{73}$$\n\nLa opción D, $\\frac{73}{100}$, es la probabilidad de que la botella sea de 2 litros: es el denominador del cálculo, no lo que piden."
+ },
+ {
+  "id": 31,
+  "explanation": "Es el esquema de Bayes: calcula cuánto aporta cada máquina al total de defectuosos. Con 10,000 artículos, A produce 1,500, B 3,500 y C 5,000; los defectuosos son el 5% de 1,500 = 75, el 10% de 3,500 = 350 y el 8% de 5,000 = 400. En total hay $75+350+400=825$ defectuosos, y de ellos 75 salieron de A:\n\n$$P(A\\mid\\text{defectuoso})=\\frac{75}{825}=\\frac{1}{11}$$\n\nLas opciones A y B son $\\frac{7}{200}=P(B\\text{ y defectuoso})$ y $\\frac{1}{25}=P(C\\text{ y defectuoso})$: probabilidades conjuntas, no la condicional que piden."
+ },
+ {
+  "id": 32,
+  "explanation": "Despeja de la fórmula de la mediana para datos agrupados:\n\n$$\\mathrm{Med}=L+\\frac{\\frac{n}{2}-F}{f}\\,h$$\n\nAquí $\\mathrm{Med}=25$, $L=20$ (límite inferior de la clase mediana), $\\frac{n}{2}=50$, $F=45$ (observaciones acumuladas antes de la clase) y $h=10$. Sustituyendo:\n\n$$25=20+\\frac{50-45}{f}(10)\\;\\Rightarrow\\;5=\\frac{50}{f}\\;\\Rightarrow\\;f=10$$\n\nCheca que cuadra: la observación número 50 está 5 lugares después de las 45 acumuladas, y como la mediana cae justo a la mitad del intervalo $[20,30)$, esas 5 observaciones deben ser la mitad de la clase: $f=10$."
+ },
+ {
+  "id": 33,
+  "explanation": "La tabla ya te da las sumas hechas: $n=100$, $\\sum x_i f_i=380$ y $\\sum x_i^2 f_i=1750$. La media sale directo:\n\n$$\\bar{x}=\\frac{380}{100}=3.8$$\n\nCon eso descartas A y B de un vistazo. Para la desviación estándar usa la fórmula abreviada de la varianza:\n\n$$\\sigma^2=\\frac{\\sum x_i^2 f_i}{n}-\\bar{x}^2=\\frac{1750}{100}-(3.8)^2=17.5-14.44=3.06$$\n\ny entonces $\\sigma=\\sqrt{3.06}\\approx 1.75$.\n\nSi te dio 1.76 (opción D), dividiste entre $n-1=99$ (desviación muestral); aquí se usa la poblacional, entre $n$."
+ }
+]

@@ -105,7 +105,15 @@
           items.push(v);
         }
       }
-      mergedCol[ci] = (!skipMerge && sawEmpty && items.length > 0) ? items : null;
+      // Solo se fusiona cuando los items claramente NO corresponden uno a uno con
+      // las filas, es decir cuando dejan al menos tantas filas vacías como items
+      // ("1. Anabolismo / 2. Catabolismo" frente a cuatro características). Sin esta
+      // condición, una tabla de datos con fila de totales —seis valores y una sola
+      // celda vacía al final— metía los seis en una celda con rowspan y la columna
+      // quedaba desalineada respecto a sus propias filas.
+      var vacias = nRows - items.length;
+      mergedCol[ci] = (!skipMerge && sawEmpty && items.length > 0 && items.length <= vacias)
+        ? items : null;
     }
 
     // Columnas "por grupos": cada valor manda sobre las filas vacías que lo siguen
@@ -129,7 +137,12 @@
       }
       var hayGrupo = false;
       for (var k = 0; k < runs.length; k++) if (runs[k].span > 1) hayGrupo = true;
-      runCol[ci2] = (agrupable && hayGrupo) ? runs : null;
+      // Mismo criterio que arriba: agrupar solo si las filas vacías son al menos
+      // tantas como las etiquetas, señal de que de verdad son grupos y no una fila
+      // suelta. Si no, la fila de totales de una tabla de datos se la tragaba la
+      // última fila y ese valor quedaba centrado entre dos renglones.
+      var vaciasR = nRows - runs.length;
+      runCol[ci2] = (agrupable && hayGrupo && vaciasR >= runs.length) ? runs : null;
     }
 
     function makeCellStyle(i, isHeader) {

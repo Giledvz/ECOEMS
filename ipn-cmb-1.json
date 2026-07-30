@@ -27,7 +27,8 @@
               "D": "152"
             },
             "answer": "B",
-            "_src": "pensamiento-matematico · reactivo 2"
+            "_src": "pensamiento-matematico · reactivo 2",
+            "explanation": "Es una sucesión aritmética que avanza de 6 en 6, así que su término general es $a_n = 7 + 6(n-1) = 6n + 1$. Los términos de tres cifras van del 100 al 999: de $6n + 1 \\ge 100$ sale $n \\ge 17$ (que da 103, el primero de tres cifras), y de $6n + 1 \\le 999$ sale $n \\le 166$ (que da 997, el último). Del 17 al 166 hay $166 - 17 + 1 = 150$ términos.\n\nSi te dio 149 (opción A), hiciste la resta $166 - 17$ y olvidaste el $+1$: al contar del 17 al 166, ambos extremos cuentan."
           },
           {
             "id": 2,
@@ -41,7 +42,8 @@
               "D": "-48"
             },
             "answer": "D",
-            "_src": "pensamiento-matematico · reactivo 3"
+            "_src": "pensamiento-matematico · reactivo 3",
+            "explanation": "La razón aquí no es constante: fíjate por cuánto se multiplica cada término para llegar al siguiente. $2 \\times (-2) = -4$ y $-4 \\times (-3) = 12$, así que los multiplicadores van siendo $-2, -3, -4, -5, -6, \\ldots$ El término faltante es $12 \\times (-4) = -48$. Comprueba con lo que sigue: $-48 \\times (-5) = 240$ y $240 \\times (-6) = -1440$, justo los términos de la lista.\n\nSi contestaste 48, el patrón te salió bien pero se te fue el signo: multiplicaste por 4 en lugar de $-4$."
           },
           {
             "id": 3,
@@ -55,7 +57,8 @@
               "D": "12"
             },
             "answer": "A",
-            "_src": "pensamiento-matematico · reactivo 4"
+            "_src": "pensamiento-matematico · reactivo 4",
+            "explanation": "En una sucesión geométrica la razón entre términos consecutivos es la misma, así que $\\frac{y+16}{y} = \\frac{9y}{y+16}$, es decir, $(y+16)^2 = 9y^2$. Como todo es positivo, saca raíz: $y + 16 = 3y$, de donde $y = 8$. La sucesión es $8, 24, 72, \\ldots$ con razón 3, y el tercer término es 72.\n\nOjo con lo que piden: no es el término, sino la suma de sus cifras: $7 + 2 = 9$."
           },
           {
             "id": 4,
@@ -69,7 +72,8 @@
               "D": "D"
             },
             "answer": "C",
-            "_src": "pensamiento-matematico · reactivo 6"
+            "_src": "pensamiento-matematico · reactivo 6",
+            "explanation": "Cuenta cuántas letras se saltan entre cada par, usando el alfabeto español completo (con Ñ): de L a R se saltan 6 (M, N, Ñ, O, P, Q), de R a W se saltan 4 (S, T, U, V) y de W a Z se saltan 2 (X, Y). Los brincos bajan de dos en dos: 8, 6, 4, 2. Entonces, de la primera letra a L deben saltarse 8: retrocede desde L las letras K, J, I, H, G, F, E, D y caes en C.\n\nSi llegaste a D, retrocediste 7 letras en vez de 8: antes del brinco de 6 toca uno de 8."
           },
           {
             "id": 5,
@@ -83,7 +87,8 @@
               "D": "V"
             },
             "answer": "C",
-            "_src": "pensamiento-matematico · reactivo 7"
+            "_src": "pensamiento-matematico · reactivo 7",
+            "explanation": "Cuenta las letras que se brincan en cada paso, con todo y Ñ: de I a L se brincan 2 (J, K), de L a N se brinca 1 (M), de N a P se brincan 2 (Ñ, O) y de P a R se brinca 1 (Q). El patrón alterna 2, 1, 2, 1, así que ahora tocan 2: después de R saltas S y T, y caes en U.\n\nSi elegiste T, brincaste una sola letra; el descuido típico es contar sin la Ñ, con lo que el patrón alternado se pierde."
           },
           {
             "id": 6,
@@ -97,7 +102,8 @@
               "D": "1D, 2C, 3B, 4A"
             },
             "answer": "A",
-            "_src": "algebra · reactivo 1"
+            "_src": "algebra · reactivo 1",
+            "explanation": "Cada propiedad se reconoce por lo que hace. La **asociativa** cambia la agrupación sin mover el orden: $(a\\cdot b)\\cdot c = a\\cdot(b\\cdot c)$, expresión C. La **conmutativa** intercambia el orden de los factores: $a\\cdot b = b\\cdot a$, expresión D. La **distributiva** reparte un producto sobre una suma: $a\\cdot(b+c) = a\\cdot b + a\\cdot c$, expresión A. Y el **elemento inverso** es el que al multiplicarse por $a$ da 1: $a\\cdot a^{-1} = 1$, expresión B. Queda 1C, 2D, 3A, 4B.\n\nEl cruce típico es confundir asociativa con conmutativa: *asociar* es agrupar (mover paréntesis), *conmutar* es intercambiar lugares."
           },
           {
             "id": 7,
@@ -111,7 +117,8 @@
               "D": "3, 4"
             },
             "answer": "C",
-            "_src": "algebra · reactivo 2"
+            "_src": "algebra · reactivo 2",
+            "explanation": "Revísalos uno por uno. El 1 es falso: la transitividad de $a > b$ y $b > c$ concluye $a > c$, no al revés (prueba con $5 > 3$ y $3 > 1$: no es cierto que $1 > 5$). El 2 es verdadero: sumar la misma cantidad a los dos lados conserva la desigualdad. El 3 es verdadero: el producto de dos positivos siempre es positivo. El 4 es falso: multiplicar por $c > 0$ **conserva** el sentido, así que de $a < b$ se sigue $ac < bc$, no lo contrario. Los verdaderos son 2 y 3."
           },
           {
             "id": 8,
@@ -125,7 +132,8 @@
               "D": "2331"
             },
             "answer": "D",
-            "_src": "algebra · reactivo 3"
+            "_src": "algebra · reactivo 3",
+            "explanation": "De la condición, $a + b + c = \\sqrt{441} = 21$. Ahora fíjate en la suma acomodada: en la columna de las unidades aparecen $c$, $a$ y $b$; en las decenas $b$, $c$ y $a$; en las centenas $a$, $b$ y $c$. Es decir, **cada columna suma 21**. Por eso\n\n$$abc + bca + cab = 111(a+b+c) = 111 \\times 21 = 2331$$\n\nSi lo haces con acarreos: unidades 21, escribes 1 y llevas 2; decenas $21 + 2 = 23$, escribes 3 y llevas 2; centenas $21 + 2 = 23$. Leído de corrido: 2331. Las otras opciones vienen de perder algún acarreo en el camino."
           },
           {
             "id": 9,
@@ -139,7 +147,8 @@
               "D": "245"
             },
             "answer": "B",
-            "_src": "algebra · reactivo 6"
+            "_src": "algebra · reactivo 6",
+            "explanation": "Inversamente proporcionales significa que el producto $M \\cdot N$ es constante. La primera columna te da esa constante: $k = 50 \\times 36 = 1800$. Con ella llenas los huecos: $a = 1800 \\div 36 = 50$, $b = 1800 \\div 20 = 90$ y $c = 1800 \\div 200 = 9$. Entonces $a + b + c = 50 + 90 + 9 = 149$.\n\nSi hubieras tratado la tabla como proporción directa (cociente constante en vez de producto), los valores ni siquiera salen enteros: esa es la señal de que el camino era otro."
           },
           {
             "id": 10,
@@ -153,7 +162,8 @@
               "D": "multiplicar"
             },
             "answer": "D",
-            "_src": "algebra · reactivo 7"
+            "_src": "algebra · reactivo 7",
+            "explanation": "En la proporcionalidad directa las dos magnitudes cambian al mismo ritmo: si una se **multiplica** por un número, la otra queda multiplicada por ese mismo número (el doble de kilos cuesta el doble; el triple, el triple).\n\nEl distractor fuerte es «dividir»: si al dividir una magnitud la otra quedara multiplicada, eso sería proporcionalidad **inversa**, no directa."
           },
           {
             "id": 11,
@@ -167,7 +177,8 @@
               "D": "$10^{5.8}$"
             },
             "answer": "D",
-            "_src": "geometria-trigonometria · reactivo 2"
+            "_src": "geometria-trigonometria · reactivo 2",
+            "explanation": "Despeja el logaritmo de la fórmula: $\\log\\left(\\frac{B}{B_0}\\right) = -\\frac{2}{5}M$. Para la luna: $-\\frac{2}{5}(-12.5) = 5$, así que $B_{\\mathrm{luna}} = B_0 \\cdot 10^{5}$. Para la estrella polar: $-\\frac{2}{5}(2.0) = -0.8$, así que $B_{\\mathrm{polar}} = B_0 \\cdot 10^{-0.8}$. Al comparar brillos:\n\n$$\\frac{B_{\\mathrm{luna}}}{B_{\\mathrm{polar}}} = \\frac{10^{5}}{10^{-0.8}} = 10^{5-(-0.8)} = 10^{5.8}$$\n\nSi te dio $10^{4.2}$ (opción A), restaste $5 - 0.8$: el descuido clásico con el signo del exponente negativo, que al pasar dividiendo se suma."
           },
           {
             "id": 12,
@@ -181,7 +192,8 @@
               "D": "4, 1, 3, 2"
             },
             "answer": "A",
-            "_src": "geometria-trigonometria · reactivo 4"
+            "_src": "geometria-trigonometria · reactivo 4",
+            "explanation": "Calcula cada cantidad. En la 1, junta los logaritmos: $\\log_8\\frac{12 \\cdot 20}{15} = \\log_8 16 = \\frac{4}{3}$, porque $8^{4/3} = 2^4 = 16$. En la 2, $\\log_{10}1000 = 3$ y $\\log_{27}3 = \\frac{1}{3}$ (pues $27^{1/3} = 3$), así que vale $2 \\cdot \\frac{1}{3} = \\frac{2}{3}$. En la 3, el numerador es $\\log_5\\frac{36}{12} = \\log_5 3$, y $\\frac{\\log_5 3}{\\log_5 9} = \\log_9 3 = \\frac{1}{2}$. En la 4, $\\frac{1}{\\sqrt{32}} = \\left(\\frac{1}{2}\\right)^{5/2}$, y el logaritmo base $\\frac{1}{2}$ de eso vale $\\frac{5}{2}$. Ordenando de menor a mayor: $\\frac{1}{2} < \\frac{2}{3} < \\frac{4}{3} < \\frac{5}{2}$, es decir, **3, 2, 1, 4**."
           },
           {
             "id": 13,
@@ -195,7 +207,8 @@
               "D": "12"
             },
             "answer": "A",
-            "_src": "geometria-trigonometria · reactivo 5"
+            "_src": "geometria-trigonometria · reactivo 5",
+            "explanation": "Eleva los dos lados a la séptima potencia para quitar la raíz: $\\frac{3^{16}+3^x}{3^x+3^2} = 3^7$. Multiplica cruzado: $3^{16} + 3^x = 3^{x+7} + 3^9$. Junta parecidos y factoriza cada lado:\n\n$$3^{16} - 3^9 = 3^{x+7} - 3^x \\;\\Longrightarrow\\; 3^9(3^7 - 1) = 3^x(3^7 - 1)$$\n\nCancela el paréntesis y queda $3^x = 3^9$, o sea $x = 9$. Comprobación rápida: con $x = 9$, $\\frac{3^{16}+3^9}{3^9+3^2} = \\frac{3^9(3^7+1)}{3^2(3^7+1)} = 3^7$, y su raíz séptima es 3."
           },
           {
             "id": 14,
@@ -209,7 +222,8 @@
               "D": "$20\\left(2^{-\\frac{3}{4}}\\right)$ años"
             },
             "answer": "C",
-            "_src": "geometria-trigonometria · reactivo 6"
+            "_src": "geometria-trigonometria · reactivo 6",
+            "explanation": "Con vida media de 900 años, la cantidad restante se modela como $Q(t) = 20\\left(\\frac{1}{2}\\right)^{t/900}$: cada 900 años la sustancia se reduce a la mitad. En $t = 1200$ han pasado $\\frac{1200}{900} = \\frac{4}{3}$ vidas medias, así que queda $Q = 20\\left(\\frac{1}{2}\\right)^{4/3} = 20\\left(2^{-4/3}\\right)$ gramos.\n\nSi elegiste el exponente $-\\frac{3}{4}$, invertiste la fracción (pusiste vida media entre tiempo); y si tu opción empieza con 10, dividiste entre 2 de más: el factor $2^{-4/3}$ ya se encarga de todo el decaimiento. Por cierto, aunque las opciones digan «años», lo que se calcula son gramos."
           },
           {
             "id": 15,
@@ -223,7 +237,8 @@
               "D": "$\\dfrac{1}{3}$"
             },
             "answer": "A",
-            "_src": "geometria-trigonometria · reactivo 7"
+            "_src": "geometria-trigonometria · reactivo 7",
+            "explanation": "La clave es la diferencia de cuadrados: $a^2 - b^2 = (a+b)(a-b)$. Al tomar logaritmo, el producto se vuelve suma: $\\log_3(a^2-b^2) = \\log_3(a+b) + \\log_3(a-b)$. Despeja lo que te piden:\n\n$$R = \\log_3(a-b) = \\frac{1}{3} - \\frac{1}{4} = \\frac{4-3}{12} = \\frac{1}{12}$$\n\nEl problema se ve aparatoso, pero todo se reduce a factorizar y hacer bien una resta de fracciones."
           },
           {
             "id": 16,
@@ -237,7 +252,8 @@
               "D": "$y=-2$"
             },
             "answer": "B",
-            "_src": "geometria-analitica · reactivo 1"
+            "_src": "geometria-analitica · reactivo 1",
+            "explanation": "El punto buscado es $(2, y)$ y debe estar a la misma distancia de $A$ que de $B$. Iguala las distancias al cuadrado (así no cargas raíces):\n\n$$(2-(-2))^2 + (y-(-1))^2 = (2-6)^2 + (y-3)^2$$\n\nEso es $16 + (y+1)^2 = 16 + (y-3)^2$; los 16 se cancelan y al desarrollar: $y^2 + 2y + 1 = y^2 - 6y + 9$, de donde $8y = 8$ y $y = 1$. El punto $(2,1)$ equidista de ambos."
           },
           {
             "id": 17,
@@ -251,7 +267,8 @@
               "D": "$\\left(-\\frac{4}{3},-\\frac{10}{3}\\right)$, $\\left(\\frac{4}{3},-\\frac{14}{3}\\right)$"
             },
             "answer": "B",
-            "_src": "geometria-analitica · reactivo 3"
+            "_src": "geometria-analitica · reactivo 3",
+            "explanation": "Los puntos de trisección están a un tercio y a dos tercios del camino de $A$ a $B$. El desplazamiento total es $(4-(-4),\\; 2-6) = (8,-4)$, así que cada tercio avanza $\\left(\\frac{8}{3}, -\\frac{4}{3}\\right)$:\n\n$$P_1 = \\left(-4+\\tfrac{8}{3},\\; 6-\\tfrac{4}{3}\\right) = \\left(-\\tfrac{4}{3}, \\tfrac{14}{3}\\right) \\qquad P_2 = \\left(-4+\\tfrac{16}{3},\\; 6-\\tfrac{8}{3}\\right) = \\left(\\tfrac{4}{3}, \\tfrac{10}{3}\\right)$$\n\nSon los dos puntos de la opción B. La opción A no es: esos puntos, $(-2,5)$ y $(2,3)$, están a $\\frac{1}{4}$ y $\\frac{3}{4}$ del camino, o sea que dividen el segmento en cuartos, no en tercios."
           },
           {
             "id": 18,
@@ -265,7 +282,8 @@
               "D": "$P(-62,12)$"
             },
             "answer": "A",
-            "_src": "geometria-analitica · reactivo 4"
+            "_src": "geometria-analitica · reactivo 4",
+            "explanation": "Cuando $P$ divide a $\\overline{AB}$ en razón $r = \\frac{AP}{PB} = \\frac{5}{4}$, sus coordenadas son $P = \\left(\\frac{x_1 + r x_2}{1+r},\\; \\frac{y_1 + r y_2}{1+r}\\right)$. Sustituye $A(72,18)$ y $B(-54,36)$:\n\n$$x = \\frac{72 + \\frac{5}{4}(-54)}{\\frac{9}{4}} = \\frac{4.5}{2.25} = 2 \\qquad y = \\frac{18 + \\frac{5}{4}(36)}{\\frac{9}{4}} = \\frac{63}{2.25} = 28$$\n\nAsí que $P(2,28)$. Verifica: de $A$ a $P$ el desplazamiento es $(-70, 10)$ y de $P$ a $B$ es $(-56, 8)$; como $\\frac{70}{56} = \\frac{10}{8} = \\frac{5}{4}$, la razón se cumple."
           },
           {
             "id": 19,
@@ -279,7 +297,8 @@
               "D": "la diferencia"
             },
             "answer": "C",
-            "_src": "geometria-analitica · reactivo 5"
+            "_src": "geometria-analitica · reactivo 5",
+            "explanation": "El criterio de perpendicularidad dice que **el producto** de las pendientes vale $-1$: $m_1 \\cdot m_2 = -1$. Dicho de otro modo, una pendiente es el recíproco con signo cambiado de la otra: por ejemplo, $m_1 = 2$ y $m_2 = -\\frac{1}{2}$.\n\nNo lo confundas con el criterio de rectas paralelas, que es que las pendientes sean **iguales** ($m_1 = m_2$)."
           },
           {
             "id": 20,
@@ -293,7 +312,8 @@
               "D": "$(-3,-5)$"
             },
             "answer": "A",
-            "_src": "geometria-analitica · reactivo 6"
+            "_src": "geometria-analitica · reactivo 6",
+            "explanation": "El punto medio promedia las coordenadas de los dos extremos, así que el extremo faltante $Q$ se despeja: $Q = (2x_M - x_P,\\; 2y_M - y_P)$. Sustituye: $Q = (2(4) - 5,\\; 2(2) - (-1)) = (3, 5)$.\n\nSi te dio $(3,3)$ (opción B), el tropiezo fue el signo en la ordenada: $2(2) - (-1) = 4 + 1 = 5$, porque restar un negativo es sumar."
           },
           {
             "id": 21,
@@ -307,7 +327,8 @@
               "D": "$(-\\infty,22]$"
             },
             "answer": "A",
-            "_src": "calculo-diferencial · reactivo 2"
+            "_src": "calculo-diferencial · reactivo 2",
+            "explanation": "Completa el cuadrado para localizar el vértice: $f(x) = -(x^2 + 2x) + 24 = -(x+1)^2 + 25$. Es una parábola que abre hacia abajo, con máximo en $x = -1$, donde vale $f(-1) = 25$. La función alcanza ese valor y todos los menores, así que el rango es $(-\\infty, 25]$.\n\nSi contestaste $(-\\infty, 24]$, tomaste el término independiente como si fuera el máximo, pero 24 es $f(0)$, no el valor en el vértice."
           },
           {
             "id": 22,
@@ -321,7 +342,8 @@
               "D": "$(-\\infty,-5]\\cup[1,\\infty)$"
             },
             "answer": "A",
-            "_src": "calculo-diferencial · reactivo 3"
+            "_src": "calculo-diferencial · reactivo 3",
+            "explanation": "La raíz exige que el radicando no sea negativo: $\\frac{5-x}{x-1} \\ge 0$, y además $x \\ne 1$ para no dividir entre cero. Los puntos críticos son 1 y 5. Prueba signos: entre 1 y 5, numerador y denominador son positivos y la fracción es positiva; fuera de ese intervalo la fracción es negativa. En $x = 5$ el radicando vale 0 y $\\sqrt{0}$ sí existe: el 5 entra. En $x = 1$ el denominador se anula: el 1 queda fuera. Dominio: $(1, 5]$.\n\nSi marcaste $(1,5)$, sacaste el 5 de más: que el radicando valga cero no es problema, la raíz de cero es cero."
           },
           {
             "id": 23,
@@ -335,7 +357,8 @@
               "D": "$\\mathbb{R}-\\{0,2,-3\\}$"
             },
             "answer": "C",
-            "_src": "calculo-diferencial · reactivo 4"
+            "_src": "calculo-diferencial · reactivo 4",
+            "explanation": "En una función racional, los únicos valores fuera del dominio son los que anulan el **denominador**. Factorízalo: $x(x^2 - 9) = x(x-3)(x+3)$, que se hace cero en $x = 0$, $x = 3$ y $x = -3$. El dominio es $\\mathbb{R} - \\{0, -3, 3\\}$.\n\nLa opción A es la trampa clásica: sale de factorizar el numerador $(x-2)(x-3)$ y excluir sus ceros. Pero un numerador en cero no estorba (en $x = 2$ la función simplemente vale 0), y aunque el factor $(x-3)$ se pudiera cancelar, en $x = 3$ la función original sigue sin estar definida."
           },
           {
             "id": 24,
@@ -349,7 +372,8 @@
               "D": "$\\left[-\\frac{4}{5},-\\frac{2}{9}\\right]$"
             },
             "answer": "A",
-            "_src": "calculo-diferencial · reactivo 5"
+            "_src": "calculo-diferencial · reactivo 5",
+            "explanation": "Como los dos lados son valores absolutos (nunca negativos), puedes elevar al cuadrado sin alterar el sentido: $(2x-1)^2 \\le (7x+3)^2$, es decir, $(7x+3)^2 - (2x-1)^2 \\ge 0$. Factoriza como diferencia de cuadrados, suma por diferencia:\n\n$$(7x+3+2x-1)(7x+3-2x+1) = (9x+2)(5x+4) \\ge 0$$\n\nLas raíces son $x = -\\frac{2}{9}$ y $x = -\\frac{4}{5}$, y el producto es mayor o igual que cero **fuera** de ellas, incluyéndolas (la desigualdad admite el igual). Solución: $\\left(-\\infty, -\\frac{4}{5}\\right] \\cup \\left[-\\frac{2}{9}, \\infty\\right)$.\n\nSi marcaste la opción D, te quedaste con la región **entre** las raíces, que es justo donde pasa lo contrario: $|2x-1| > |7x+3|$."
           },
           {
             "id": 25,
@@ -363,7 +387,8 @@
               "D": "$(-\\infty,-3)\\cap(3,\\infty)$"
             },
             "answer": "C",
-            "_src": "calculo-diferencial · reactivo 6"
+            "_src": "calculo-diferencial · reactivo 6",
+            "explanation": "Una desigualdad $|u| > 5$ se abre en dos casos: $u > 5$ o $u < -5$. Aquí: $x^2 - 4 > 5$ da $x^2 > 9$, o sea $x < -3$ o $x > 3$; y $x^2 - 4 < -5$ pediría $x^2 < -1$, imposible porque un cuadrado nunca es negativo. Queda $(-\\infty, -3) \\cup (3, \\infty)$.\n\nSi elegiste $(-3,3)$, resolviste $x^2 < 9$: invertiste el sentido de la desigualdad. Y la opción D falla por el símbolo: esos dos rayos no se tocan, así que su intersección ($\\cap$) es vacía; el «o» de los dos casos se escribe con unión $\\cup$."
           },
           {
             "id": 26,
@@ -377,7 +402,8 @@
               "D": "$F(x)=3\\left(e^{x}+x\\right)^{2}e^{x}-8$"
             },
             "answer": "A",
-            "_src": "calculo-integral · reactivo 2"
+            "_src": "calculo-integral · reactivo 2",
+            "explanation": "Fíjate en la pareja que te dan: la derivada de $e^x+x$ es exactamente $e^x+1$, así que el integrando tiene la forma $u^3\\,du$ con el cambio $u=e^x+x$:\n\n$$\\int\\left(e^x+x\\right)^3\\left(e^x+1\\right)dx=\\frac{u^4}{4}+C=\\frac{\\left(e^x+x\\right)^4}{4}+C$$\n\nLa constante puede ser cualquiera; con $C=5$ queda la opción A. Compruébalo derivando: la regla de la cadena te regresa justo a $f(x)$.\n\nLa opción B tienta por el exponente 4, pero eleva $(e^x+1)$, que es la derivada interna, no la base $e^x+x$."
           },
           {
             "id": 27,
@@ -391,7 +417,8 @@
               "D": "$e$"
             },
             "answer": "C",
-            "_src": "calculo-integral · reactivo 3"
+            "_src": "calculo-integral · reactivo 3",
+            "explanation": "Ojo: aquí $xe^x$ es la función que hay que integrar. Hazlo por partes con $u=x$ y $dv=e^x\\,dx$:\n\n$$\\int xe^x\\,dx=xe^x-\\int e^x\\,dx=xe^x-e^x+C$$\n\nPara que la gráfica pase por $(0,1)$ sustituye $x=0$: $0\\cdot e^0-e^0+C=-1+C=1$, de donde $C=2$.\n\nSi te dio 1 (opción B), olvidaste el término $-e^x$ que deja la integración por partes."
           },
           {
             "id": 28,
@@ -405,7 +432,8 @@
               "D": "$\\mathrm{sen}(x)-\\dfrac{1}{2}$"
             },
             "answer": "A",
-            "_src": "calculo-integral · reactivo 4"
+            "_src": "calculo-integral · reactivo 4",
+            "explanation": "Toda función con derivada $\\cos(x)$ es de la forma $f(x)=\\mathrm{sen}(x)+C$. La condición $f(\\pi)=1$ fija la constante: como $\\mathrm{sen}(\\pi)=0$, queda $0+C=1$, así que $C=1$ y\n\n$$f(x)=\\mathrm{sen}(x)+1$$\n\nEl punto fino es recordar que $\\mathrm{sen}(\\pi)=0$; el seno vale 1 en $\\pi/2$, no en $\\pi$."
           },
           {
             "id": 29,
@@ -419,7 +447,8 @@
               "D": "$\\dfrac{4}{\\sqrt{\\sqrt{x}+1}}+C$"
             },
             "answer": "B",
-            "_src": "calculo-integral · reactivo 5"
+            "_src": "calculo-integral · reactivo 5",
+            "explanation": "Acomoda primero el radicando: $\\sqrt{x^3}+x=x^{3/2}+x=x\\left(\\sqrt{x}+1\\right)$, y como $\\sqrt{x\\left(\\sqrt{x}+1\\right)}=\\sqrt{x}\\sqrt{\\sqrt{x}+1}$, la integral es\n\n$$\\int\\frac{dx}{\\sqrt{x}\\,\\sqrt{\\sqrt{x}+1}}$$\n\nCon el cambio $u=\\sqrt{x}+1$ tienes $du=\\frac{dx}{2\\sqrt{x}}$, es decir $\\frac{dx}{\\sqrt{x}}=2\\,du$:\n\n$$\\int\\frac{2\\,du}{\\sqrt{u}}=4\\sqrt{u}+C=4\\sqrt{\\sqrt{x}+1}+C$$\n\nSi te dio $2\\sqrt{\\sqrt{x}+1}$ (opción A), se te perdió el 2 del diferencial: al derivar $\\sqrt{x}$ aparece un $\\frac{1}{2\\sqrt{x}}$ que duplica la constante."
           },
           {
             "id": 30,
@@ -433,7 +462,8 @@
               "D": "$\\dfrac{73}{100}$"
             },
             "answer": "C",
-            "_src": "probabilidad-estadistica · reactivo 27"
+            "_src": "probabilidad-estadistica · reactivo 27",
+            "explanation": "Imagina 100 botellas para no pelearte con porcentajes: 60 de naranja, 30 de piña y 10 de manzana. Ahora cuenta las de 2 litros: de naranja son el 80% de 60, o sea 48; de piña el 70% de 30, o sea 21; y de manzana 4, porque si el 60% de las 10 es de 1 litro, el 40% restante (4 botellas) es de 2 litros. En total hay $48+21+4=73$ botellas de 2 litros, y de ellas 48 son de naranja:\n\n$$P(\\text{naranja}\\mid 2\\ \\text{litros})=\\frac{48}{73}$$\n\nLa opción D, $\\frac{73}{100}$, es la probabilidad de que la botella sea de 2 litros: es el denominador del cálculo, no lo que piden."
           },
           {
             "id": 31,
@@ -447,7 +477,8 @@
               "D": "$\\dfrac{1}{11}$"
             },
             "answer": "D",
-            "_src": "probabilidad-estadistica · reactivo 28"
+            "_src": "probabilidad-estadistica · reactivo 28",
+            "explanation": "Es el esquema de Bayes: calcula cuánto aporta cada máquina al total de defectuosos. Con 10,000 artículos, A produce 1,500, B 3,500 y C 5,000; los defectuosos son el 5% de 1,500 = 75, el 10% de 3,500 = 350 y el 8% de 5,000 = 400. En total hay $75+350+400=825$ defectuosos, y de ellos 75 salieron de A:\n\n$$P(A\\mid\\text{defectuoso})=\\frac{75}{825}=\\frac{1}{11}$$\n\nLas opciones A y B son $\\frac{7}{200}=P(B\\text{ y defectuoso})$ y $\\frac{1}{25}=P(C\\text{ y defectuoso})$: probabilidades conjuntas, no la condicional que piden."
           },
           {
             "id": 32,
@@ -461,7 +492,8 @@
               "D": "10"
             },
             "answer": "D",
-            "_src": "probabilidad-estadistica · reactivo 29"
+            "_src": "probabilidad-estadistica · reactivo 29",
+            "explanation": "Despeja de la fórmula de la mediana para datos agrupados:\n\n$$\\mathrm{Med}=L+\\frac{\\frac{n}{2}-F}{f}\\,h$$\n\nAquí $\\mathrm{Med}=25$, $L=20$ (límite inferior de la clase mediana), $\\frac{n}{2}=50$, $F=45$ (observaciones acumuladas antes de la clase) y $h=10$. Sustituyendo:\n\n$$25=20+\\frac{50-45}{f}(10)\\;\\Rightarrow\\;5=\\frac{50}{f}\\;\\Rightarrow\\;f=10$$\n\nCheca que cuadra: la observación número 50 está 5 lugares después de las 45 acumuladas, y como la mediana cae justo a la mitad del intervalo $[20,30)$, esas 5 observaciones deben ser la mitad de la clase: $f=10$."
           },
           {
             "id": 33,
@@ -476,7 +508,8 @@
               "D": "3.8 y 1.76"
             },
             "answer": "C",
-            "_src": "probabilidad-estadistica · reactivo 30"
+            "_src": "probabilidad-estadistica · reactivo 30",
+            "explanation": "La tabla ya te da las sumas hechas: $n=100$, $\\sum x_i f_i=380$ y $\\sum x_i^2 f_i=1750$. La media sale directo:\n\n$$\\bar{x}=\\frac{380}{100}=3.8$$\n\nCon eso descartas A y B de un vistazo. Para la desviación estándar usa la fórmula abreviada de la varianza:\n\n$$\\sigma^2=\\frac{\\sum x_i^2 f_i}{n}-\\bar{x}^2=\\frac{1750}{100}-(3.8)^2=17.5-14.44=3.06$$\n\ny entonces $\\sigma=\\sqrt{3.06}\\approx 1.75$.\n\nSi te dio 1.76 (opción D), dividiste entre $n-1=99$ (desviación muestral); aquí se usa la poblacional, entre $n$."
           }
         ]
       },
@@ -496,7 +529,8 @@
               "D": "4, 1, 5, 2, 3"
             },
             "answer": "B",
-            "_src": "competencia-escrita · reactivo 9"
+            "_src": "competencia-escrita · reactivo 9",
+            "explanation": "Fíjate primero en la pista gramatical: el fragmento 4 presenta al sujeto —«Un famoso musicólogo chino...»— pero lo deja sin verbo, y el 2 empieza con minúscula justo con el verbo que le falta: «decidió traducir las fugas de Bach». Esa pareja 4-2 obliga a que el cuento arranque así, y solo la opción B la tiene. Luego la historia fluye sola: en 1 trabaja con empeño y fracasa; en 5 los exegetas explican el fracaso (el «ella» de «había sido en ella demasiado *notarial*» es su obra, recién mencionada en 1); y el 3 remata con la ironía final: «Pero ellos también se equivocaban», donde «ellos» son precisamente esos exegetas. Cada pronombre exige que su referente ya haya aparecido: eso fija el orden 4, 2, 1, 5, 3.\n\nLa opción D también abre con 4, pero al seguir con 1 deja al musicólogo sin verbo principal y la primera oración queda incompleta."
           },
           {
             "id": 35,
@@ -510,7 +544,8 @@
               "D": "4"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 12"
+            "_src": "competencia-escrita · reactivo 12",
+            "explanation": "La idea principal es la que resume el texto completo y se sostiene sola: el fragmento 1 dice qué exposición es, de quién y cuál es su sentido (cuestionar los mitos fundacionales de nuestra sociedad en el capitalismo tardío). Los otros tres solo agregan detalles de esa idea: dónde está montada y junto a qué murales (2), qué periodo del artista revisa (3), cuántas piezas incluye y qué significa el título (4). Haz la prueba de quitar fragmentos: sin el 2, el 3 o el 4 el texto sigue teniendo sentido; sin el 1 ya no sabes ni de qué exposición te están hablando."
           },
           {
             "id": 36,
@@ -524,7 +559,8 @@
               "D": "4"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 13"
+            "_src": "competencia-escrita · reactivo 13",
+            "explanation": "Aquí te piden lo contrario que en una pregunta de idea principal: la idea particular es el dato concreto que complementa el tema. El asunto central del texto es la llegada de las chicharras y los grillos al Cenart a cantar ópera (fragmento 2, preparado por el dicho del 1 y completado por el 3, que adelantan lo que la obra narra). El fragmento 4, en cambio, aterriza en lo específico: nombra a Catalina Pereda, da el título completo de la obra —*De grillos y chicharras: Breve ópera migrante*— y precisa que es una fábula de dos pueblos enfrentados. Esos datos puntuales, con nombre propio y ficha de la obra, son la idea particular."
           },
           {
             "id": 37,
@@ -538,7 +574,8 @@
               "D": "Ladrón de Xochimilco - Joven"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 18"
+            "_src": "competencia-escrita · reactivo 18",
+            "explanation": "El propio texto te lo resuelve en la última línea: dice que la profesión de Pepillo el Rudo «es la misma» que la del capturado, y la nombra: *delincuente*. Como al primero lo presenta como *ladrón*, las dos palabras designan lo mismo dentro del texto: quien roba es un delincuente. Los demás pares solo comparten salir en la misma nota: Xochimilco y Mil Palta, por ejemplo, son dos lugares distintos, no dos maneras de nombrar lo mismo."
           },
           {
             "id": 38,
@@ -552,7 +589,8 @@
               "D": "brete - chaqueta - suficiente"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 19"
+            "_src": "competencia-escrita · reactivo 19",
+            "explanation": "La canción está en caló chilango y cada palabra resaltada tiene su equivalente directo: una **chamba** es un trabajo («qué chafa chamba» = qué mal trabajo), el **tacuche** es el traje completo (por eso «no checa andar de tacuche»), y «ya **chole**» es la forma clásica de decir ¡ya basta!, aquí de tanto presumir la charola. La terna trabajo – traje – basta cubre las tres al hilo.\n\nLa C se antoja porque «ocupación» sí equivale a chamba, pero el esmoquin es solo un traje de gala muy específico y «alto» es una orden de detenerse, no el hartazgo que expresa «chole»."
           },
           {
             "id": 39,
@@ -566,7 +604,8 @@
               "D": "necesarios - imprescindibles - inexcusables"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 21"
+            "_src": "competencia-escrita · reactivo 21",
+            "explanation": "*Innecesarios* significa «que no hacen falta»; sus opuestos deben decir que sí hacen falta, y eso cumplen los tres de la opción D: *necesarios*, *imprescindibles* (no se puede prescindir de ellos) e *inexcusables* (no pueden omitirse ni disculparse). El sentido del texto lo confirma: si a los jóvenes los invitan y hasta les acondicionan espacios, es porque allá los requieren. Y hay una pista gramatical de regalo: el tercer hueco viene después de la conjunción «e», que solo se usa ante palabra que empieza con *i*.\n\nCuidado con la C: *sobrados* es justamente lo que sobra, o sea sinónimo —no antónimo— de innecesarios."
           },
           {
             "id": 40,
@@ -580,7 +619,8 @@
               "D": "t - m - p - d - v"
             },
             "answer": "B",
-            "_src": "competencia-escrita · reactivo 24"
+            "_src": "competencia-escrita · reactivo 24",
+            "explanation": "Ve regla por regla: *tapatías* es gentilicio, y los gentilicios siempre van con minúscula, aunque deriven de un nombre propio; *México* es nombre de país: mayúscula; *Pedro* es nombre de pila: mayúscula; y en los apellidos con partícula, el «del» se escribe con minúscula cuando lo acompaña el nombre (*Pedro del Villar*), mientras que *Villar* conserva la suya. Resultado: t - M - P - d - V.\n\nSi marcaste A, el tropiezo estuvo en el gentilicio: «Tapatías» con mayúscula es el error clásico, calcado del inglés."
           },
           {
             "id": 41,
@@ -594,7 +634,8 @@
               "D": "si - sí - dé - dé"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 27"
+            "_src": "competencia-escrita · reactivo 27",
+            "explanation": "Todo el reactivo es tilde diacrítica. Los dos primeros huecos llevan el *si* condicional, sin tilde: «florean si los riegas» y «si no, solo se secan» (es la condición contraria: «si no los riegas»). El tercero es el verbo dar en subjuntivo: «que les dé energía solar», con tilde para no confundirlo con la preposición. Y el último es precisamente la preposición: «no son de plástico». Queda si - si - dé - de.\n\nSi elegiste A o D, pusiste el *sí* afirmativo donde el texto plantea condiciones: haz la prueba de sustituir por «en caso de que»; si la oración sigue funcionando, va sin tilde."
           },
           {
             "id": 42,
@@ -608,7 +649,8 @@
               "D": "ascienda - ascienda"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 28"
+            "_src": "competencia-escrita · reactivo 28",
+            "explanation": "Suenan casi igual, pero vienen de familias distintas. La *hacienda* —la finca de los tíos— se escribe con *h* muda; y *ascienda* viene de *ascender* (subir), que conserva el grupo *sc* de toda su familia: ascenso, ascensor. La abuela le pide que suba por la colina: «usted ascienda». Las otras opciones combinan formas que no existen (*acienda*, *hasienda*) o ponen el verbo de subir donde va la finca."
           },
           {
             "id": 43,
@@ -622,7 +664,8 @@
               "D": "El día de ¡hoy! no lo olvidaré nunca: ¡obtuve diez! en Química."
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 30"
+            "_src": "competencia-escrita · reactivo 30",
+            "explanation": "La regla es que los signos de exclamación encierren exactamente el enunciado exclamativo, completo y nada más. En la A, la parte neutra —«El día de hoy no lo olvidaré nunca»— queda fuera, los dos puntos anuncian lo que sigue y la exclamación va completa entre sus dos signos: «¡obtuve diez en Química!». Recuerda además que en español los signos siempre van en pareja, apertura y cierre. Las demás opciones rebanan la exclamación donde no es (B y D exclaman pedazos sueltos) o dejan un signo de apertura huérfano a media oración (C)."
           },
           {
             "id": 44,
@@ -636,7 +679,8 @@
               "D": "Pablo escribe bien. Los profesores siempre lo alaban"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 31"
+            "_src": "competencia-escrita · reactivo 31",
+            "explanation": "Lee la C con la coma y sin ella. Con coma —«Julián, es un buen hombre que me llena de detalles»— *Julián* es vocativo: le estás hablando a Julián de otro hombre. Sin coma —«Julián es un buen hombre...»— Julián se vuelve el sujeto: el buen hombre es él. Una sola coma decide de quién estás hablando; ahí el signo es determinante para el sentido. En las otras opciones puedes ajustar el signo (cambiar el punto y coma de A por un punto, digamos) y la oración sigue informando exactamente lo mismo."
           },
           {
             "id": 45,
@@ -650,7 +694,8 @@
               "D": "Ejerce el cargo de gerente de la tienda departamental"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 32"
+            "_src": "competencia-escrita · reactivo 32",
+            "explanation": "El vicio está en «es *bien* grande»: usar *bien* como intensificador es propio del habla coloquial; en la norma escrita el intensificador es *muy* («es muy grande»), porque *bien* significa «correctamente», no «mucho». Las otras tres oraciones están construidas conforme a la norma: fíjate que la A dice «me acordé de lo que...», con su preposición completa y sin dequeísmo."
           },
           {
             "id": 46,
@@ -664,7 +709,8 @@
               "D": "El responsable seguramente será él"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 33"
+            "_src": "competencia-escrita · reactivo 33",
+            "explanation": "En «Segura estoy que él será» falta la preposición: la construcción es *estar seguro DE algo*, así que lo correcto es «Segura estoy de que él será», tal como corrige la B. Ese vicio de comerse el *de* se llama **queísmo**. La prueba infalible: pregunta «¿de qué estás segura?»; como la respuesta lleva *de*, la oración también lo necesita. C y D son correctas porque *seguramente* es un adverbio y no pide preposición. El vicio gemelo es el *dequeísmo*: meter un «de» donde no va («pienso de que...»)."
           },
           {
             "id": 47,
@@ -678,7 +724,8 @@
               "D": "Periodístico"
             },
             "answer": "B",
-            "_src": "competencia-escrita · reactivo 34"
+            "_src": "competencia-escrita · reactivo 34",
+            "explanation": "Es el inicio de *Cien años de soledad*: narra una historia inventada —el coronel Aureliano Buendía, Macondo— con lenguaje figurado y de intención estética, como esa comparación de las piedras «blancas y enormes como huevos prehistóricos». Contar una ficción buscando belleza es la seña del **texto literario**. No es periodístico porque no informa de un hecho real y actual, y menos jurídico: no hay normas ni lenguaje legal."
           },
           {
             "id": 48,
@@ -692,7 +739,8 @@
               "D": "Periodístico"
             },
             "answer": "D",
-            "_src": "competencia-escrita · reactivo 35"
+            "_src": "competencia-escrita · reactivo 35",
+            "explanation": "Aunque tiene frases vistosas, el texto informa de un hecho real y fechado —la clausura de los Juegos Olímpicos de París y el pase de estafeta a Los Ángeles 2028— y proviene de un diario. Eso lo hace **periodístico**; en específico es una crónica, el género que cuenta la noticia con estilo personal y recursos expresivos. Justo por esos adornos («un mosaico de color y cultura») el distractor fuerte es *literario*, pero la diferencia está en el propósito: aquí no se inventa una historia, se relata un acontecimiento que sí ocurrió."
           },
           {
             "id": 49,
@@ -706,7 +754,8 @@
               "D": "Encontró que estaba sola; la seguridad entró a la escuela"
             },
             "answer": "C",
-            "_src": "competencia-escrita · reactivo 38"
+            "_src": "competencia-escrita · reactivo 38",
+            "explanation": "La C tiene la estructura limpia: sujeto («La seguridad») y dos verbos coordinados en el orden en que pasaron las cosas: «entró... y encontró». Las opciones A y B caen en el gerundio de posterioridad: «ingresó... encontrándose» pone en gerundio una acción que ocurre después de entrar, y el gerundio no debe expresar posterioridad. La B suma otro error: «ingreso» sin tilde (es pasado: *ingresó*). Y la D voltea el orden de los hechos y los pega con un punto y coma que deja la primera parte sin sujeto claro."
           },
           {
             "id": 50,
@@ -720,7 +769,8 @@
               "D": "porque - por qué - por que - por que"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 39"
+            "_src": "competencia-escrita · reactivo 39",
+            "explanation": "Distingue las cuatro formas. **Por qué** (separado y con tilde) es para preguntar: «¿por qué es que vamos juntos al campo?». **Porque** (junto, sin tilde) responde con la causa: «porque nos gusta seguirnos» y, al final, «porque él es el campo». **Porqué** (junto y con tilde) es un sustantivo que significa «el motivo», y por eso admite artículo: «encontrar el porqué». Sigue los huecos en orden —pregunta, causa, sustantivo con *el*, causa— y sale por qué - porque - porqué - porque.\n\nTruco rápido: si puedes cambiarlo por «el motivo», es *porqué*; si puedes responder «por esta razón», es *porque*."
           },
           {
             "id": 51,
@@ -734,7 +784,8 @@
               "D": "Conque - conqué - Conqué"
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 40"
+            "_src": "competencia-escrita · reactivo 40",
+            "explanation": "Tres formas que suenan igual y se escriben distinto. En la pregunta va **con qué**, preposición más interrogativo con tilde: «¿Con qué llegas a la reunión?» (respuesta: con una maqueta). En «la maqueta **con que** planeas seguir», *con que* equivale a «con la que»: preposición más relativo, separado y sin tilde. Y **conque**, en una sola palabra, es la conjunción que significa «así que»: «Conque sigo en el grupo». Da Con qué - con que - Conque.\n\nDescarta de un plumazo B y D: «conqué», junto y con tilde, no existe en español."
           },
           {
             "id": 52,
@@ -748,7 +799,8 @@
               "D": "Entonces los ocupantes avanzaron con banderas desplegadas hacia el castillo, dando cuenta de nuestros soldados cuando todavía les dispararon los últimos defensores de la bandera nacional: los jóvenes cadetes del Colegio Militar."
             },
             "answer": "A",
-            "_src": "competencia-escrita · reactivo 41"
+            "_src": "competencia-escrita · reactivo 41",
+            "explanation": "El tropiezo de la A está en los dos puntos: «una lección de: orgullo, coraje y dignidad» los coloca entre la preposición *de* y sus complementos, y los dos puntos nunca deben romper esa unión (tampoco la de un verbo con lo que introduce). Solo anuncian una enumeración cuando antes hay un anticipador, como en «nos dieron una lección con tres ingredientes:». Lo correcto es escribir de corrido: «una lección de orgullo, coraje y dignidad». Los otros tres párrafos, aunque más largos, puntúan bien."
           },
           {
             "id": 53,
@@ -762,7 +814,8 @@
               "D": "Lengua especializada, verificabilidad y subjetividad"
             },
             "answer": "B",
-            "_src": "competencia-escrita · reactivo 42"
+            "_src": "competencia-escrita · reactivo 42",
+            "explanation": "El discurso científico intenta describir la realidad tal cual es. De ahí sus tres rasgos: **objetividad** (hablan los datos, no las emociones del autor), **universalidad** (lo que demuestra vale en cualquier parte y para cualquiera) y **claridad** (términos precisos, sin ambigüedad). Las otras opciones se descartan porque cada una esconde un intruso anticientífico: la *motivación* de la A no es rasgo del discurso, y la *parcialidad* (C) y la *subjetividad* (D) son exactamente lo que la ciencia se esfuerza por eliminar."
           }
         ]
       },
@@ -783,7 +836,8 @@
               "D": "4 - 16"
             },
             "answer": "D",
-            "_src": "competencia-lectora · lectura 4 · reactivo 31"
+            "_src": "competencia-lectora · lectura 4 · reactivo 31",
+            "explanation": "El poema está dividido en 4 estrofas separadas por espacios en blanco, y cada una agrupa 4 versos, así que en total son $4 \\times 4 = 16$ versos. Ojo con la palabra «en total»: la opción B (4 - 4) es la trampa de poner en el segundo espacio los versos de una sola estrofa, cuando el enunciado pide la suma de las cuatro."
           },
           {
             "id": 55,
@@ -798,7 +852,8 @@
               "D": "dodecasílabos"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 4 · reactivo 32"
+            "_src": "competencia-lectora · lectura 4 · reactivo 32",
+            "explanation": "Cuenta las sílabas poéticas del primer verso aplicando la sinalefa (la vocal final de una palabra se une con la inicial de la siguiente): Quie-ro-mo-rir-cuan-do-de-cli-ne el-dí-a, donde «ne el» forma una sola sílaba: 11 en total. Los versos se nombran con numerales griegos, y once en griego es *éndeka*: versos **endecasílabos**. «Onceasílabos» y «doceasílabos» no existen como términos, y el dodecasílabo es el verso de 12 sílabas."
           },
           {
             "id": 56,
@@ -813,7 +868,8 @@
               "D": "Consonante"
             },
             "answer": "D",
-            "_src": "competencia-lectora · lectura 4 · reactivo 33"
+            "_src": "competencia-lectora · lectura 4 · reactivo 33",
+            "explanation": "Fíjate en las terminaciones de los versos que riman: *día/agonía*, *cielo/vuelo*, *instantes/sollozantes*, *corona/traiciona*. A partir de la última vocal acentuada coinciden todos los sonidos, tanto vocales como consonantes: eso es la rima **consonante**. La asonante es la tentadora si solo te fijaste en las vocales, pero aquí también se repiten completas las consonantes; «suelta» y «blanca» describen versos que no riman con ninguno."
           },
           {
             "id": 57,
@@ -828,7 +884,8 @@
               "D": "La relación de la muerte con la juventud"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 4 · reactivo 34"
+            "_src": "competencia-lectora · lectura 4 · reactivo 34",
+            "explanation": "Todas las imágenes del poema exaltan el momento de mayor brillo: el poeta quiere irse como el sol del atardecer, «algo muy luminoso que se pierde», y pide morir «joven: antes que destruya / el tiempo aleve la gentil corona», es decir, antes de que el tiempo le arrebate la juventud, mientras la vida todavía dice «soy tuya». La muerte es solo el medio para conservar ese momento; lo que el texto defiende de fondo es la juventud como el esplendor de la vida. La opción D se antoja, pero el poema no analiza una «relación» entre muerte y juventud: usa la muerte como recurso para exaltar la juventud."
           },
           {
             "id": 58,
@@ -843,7 +900,8 @@
               "D": "redondilla"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 4 · reactivo 35"
+            "_src": "competencia-lectora · lectura 4 · reactivo 35",
+            "explanation": "Cada estrofa junta cuatro versos endecasílabos, es decir, de arte mayor, con rima consonante: esa estrofa se llama **cuarteto**, y el poema se compone de cuatro. El soneto es el distractor natural porque también usa endecasílabos, pero exige 14 versos (dos cuartetos y dos tercetos) y aquí hay 16; la redondilla también agrupa 4 versos, pero de arte menor (ocho sílabas)."
           },
           {
             "id": 59,
@@ -858,7 +916,8 @@
               "D": "La vida en altamar puede ocasionar problemas de salud"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 4 · reactivo 36"
+            "_src": "competencia-lectora · lectura 4 · reactivo 36",
+            "explanation": "La evidencia está en la última estrofa: «cuando la vida dice aún: soy tuya, / aunque sepamos bien que nos traiciona». Para el poeta la vida promete entregarse, pero traiciona, igual que el tiempo es «aleve» (alevoso, que actúa a traición): de esa desconfianza nace el resentimiento. Las demás opciones agregan datos que el texto no da: nada dice de la edad del autor al escribirlo (C), ni de cómo les va a los jóvenes en la vida, ni de la salud en altamar."
           },
           {
             "id": 60,
@@ -873,7 +932,8 @@
               "D": "mar es un lugar propio de la realeza"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 4 · reactivo 38"
+            "_src": "competencia-lectora · lectura 4 · reactivo 38",
+            "explanation": "Fíjate en la cuarta estrofa: el poeta pide morir «joven: antes que destruya / el tiempo aleve la gentil corona». Prefiere la muerte a dejar que los años le quiten la juventud, y al tiempo lo llama traicionero: ese rechazo a envejecer es desprecio por la vejez. La opción B malinterpreta un verso: el poeta desea que la agonía «parezca sueño», no afirma que el sueño la cure."
           },
           {
             "id": 61,
@@ -888,7 +948,8 @@
               "D": "Cuando alguien está muriendo, pierde el sentido del oído"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 4 · reactivo 39"
+            "_src": "competencia-lectora · lectura 4 · reactivo 39",
+            "explanation": "El cierre del poema lo dice casi directo: «cuando la vida dice aún: soy tuya, / aunque sepamos bien que nos traiciona». Creemos que la vida nos pertenece, pero al final hace lo que quiere: el ser humano no tiene control sobre ella. La opción D lee al pie de la letra «No escuchar los últimos instantes», pero eso es un deseo del poeta (no quiere oír llantos ni plegarias al morir), no una afirmación de que los moribundos pierdan el oído."
           },
           {
             "id": 62,
@@ -903,7 +964,8 @@
               "D": "Concatenación"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 4 · reactivo 40"
+            "_src": "competencia-lectora · lectura 4 · reactivo 40",
+            "explanation": "Relee la cuarta estrofa: «cuando la vida dice aún: soy tuya, / aunque sepamos bien que nos traiciona». En una misma frase se enfrentan dos ideas contrarias —la vida que se entrega y la vida que traiciona—, y el arranque «Morir, y joven» hace lo mismo al juntar la muerte con la plenitud de la juventud. Esa confrontación de ideas opuestas en un mismo enunciado es justamente la **antítesis**.\n\nNo es alegoría (B) porque no hay una cadena de metáforas sostenida que represente otra cosa a lo largo de la estrofa: la oposición está dicha de frente, sin disfraz."
           },
           {
             "id": 63,
@@ -918,7 +980,8 @@
               "D": "[5]"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 5 · reactivo 41"
+            "_src": "competencia-lectora · lectura 5 · reactivo 41",
+            "explanation": "En la estructura narrativa, el nudo es el punto donde el conflicto se enreda. El planteamiento está en [1]: se presenta al Camaleón metido en la política y a los animales contrarrestándolo con cristales. El nudo llega en [2]: el método se generaliza y, sobre todo, el propio Camaleón adopta el sistema; ahí se arma el enredo que da título al texto, pues por eso «finalmente no sabía de qué color ponerse». En [3] ya arranca el desenlace: los más listos ven venir la ruina y «restablecieron el orden». Si marcaste [3], te fuiste al párrafo que resuelve, no al que complica."
           },
           {
             "id": 64,
@@ -933,7 +996,8 @@
               "D": "secundario"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 5 · reactivo 42"
+            "_src": "competencia-lectora · lectura 5 · reactivo 42",
+            "explanation": "El León aparece una sola vez, en [5], y lo que hace no modifica la trama: se ríe de los demás y a veces juega «un poco a lo suyo, por divertirse». Un personaje que aparece de forma esporádica, sin influir en el desarrollo de la historia, es un personaje incidental (también llamado episódico). El secundario se antoja, pero ese sí acompaña a los protagonistas y participa en las acciones; el León solo observa desde fuera."
           },
           {
             "id": 65,
@@ -948,7 +1012,8 @@
               "D": "Capacidad de cambio del Camaleón"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 5 · reactivo 43"
+            "_src": "competencia-lectora · lectura 5 · reactivo 43",
+            "explanation": "Aunque los personajes son animales, el blanco del texto es la política: al Camaleón «le había dado por la política» [1], cambia de color según convenga y en [3] todos mudan de color «según el clima político o las opiniones políticas prevalecientes». El remate está en [2]: el Camaleón adopta los cristales «considerando que todos eran de su condición», o sea, que todos fingen. Esa simulación generalizada es la falsa moral de los políticos. La opción D se queda en la superficie: el cambio de color del Camaleón es el recurso de la fábula, no su idea principal."
           },
           {
             "id": 66,
@@ -963,7 +1028,8 @@
               "D": "Leyenda"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 5 · reactivo 44"
+            "_src": "competencia-lectora · lectura 5 · reactivo 44",
+            "explanation": "El texto reúne las dos marcas de la fábula: animales personificados que encarnan tipos humanos (el Camaleón oportunista, la Zorra astuta, el León poderoso) y un cierre con moraleja, el dicho de [6]: «todo Camaleón es según el color / del cristal con que se mira». El cuento es el distractor fuerte, pero un cuento no remata con una enseñanza ni usa animales como espejo moral de conductas humanas; el mito y la leyenda explican orígenes o mezclan historia con fantasía."
           },
           {
             "id": 67,
@@ -978,7 +1044,8 @@
               "D": "Los más listos fueron quienes redactaron el Reglamento"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 5 · reactivo 45"
+            "_src": "competencia-lectora · lectura 5 · reactivo 45",
+            "explanation": "Está casi textual al final de [2]: el Camaleón, «considerando que todos eran de su condición, adoptó también el sistema». Ser «de su condición» es ser como él: cambiante, de doble cara; por eso concluye que todos son hipócritas y decide usar cristales igual que los demás. La opción D falla por un detalle de [3] y [4]: los más listos «restablecieron el orden», pero el texto nunca dice que ellos hayan redactado el Reglamento."
           },
           {
             "id": 68,
@@ -993,7 +1060,8 @@
               "D": "El Reglamento estableció el préstamo de cristales entre enemigos"
             },
             "answer": "B",
-            "_src": "competencia-lectora · lectura 5 · reactivo 47"
+            "_src": "competencia-lectora · lectura 5 · reactivo 47",
+            "explanation": "La afirmación embona con el papel que cada animal juega en el relato: la Zorra es quien asesora a los demás para descubrir las artimañas del Camaleón ([1]), el papel clásico de la sabiduría o la astucia; y el León es el único que queda por encima del juego: se ríe de todos y nadie le pide cuentas ([5]), el papel del poder. La opción D suena textual pero es falsa: según [4], el préstamo de cristales entre enemigos lo fijó el derecho consuetudinario, no el Reglamento."
           },
           {
             "id": 69,
@@ -1008,7 +1076,8 @@
               "D": "Por la imposibilidad de los demás para controlar lo que ellos mismos causaron"
             },
             "answer": "D",
-            "_src": "competencia-lectora · lectura 5 · reactivo 48"
+            "_src": "competencia-lectora · lectura 5 · reactivo 48",
+            "explanation": "Hay que inferirlo juntando [3] y [5]. Los animales inventaron el sistema de cristales y se les salió de las manos: se volvió «una especie de peligrosa confusión de las lenguas» que amenazaba con «la ruina general», al grado de tener que reglamentarlo. El León, el único que no depende del juego, se burla precisamente de eso: de que los demás no puedan controlar el enredo que ellos mismos crearon. La opción A confunde la causa con otra acción: jugar «un poco a lo suyo, por divertirse» es algo que el León hace además de reírse (fíjate en el «aunque»), no el motivo de su risa."
           },
           {
             "id": 70,
@@ -1023,7 +1092,8 @@
               "D": "Convencer a las personas de que tengan buena conducta"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 5 · reactivo 49"
+            "_src": "competencia-lectora · lectura 5 · reactivo 49",
+            "explanation": "Es una fábula: detrás de los animales estamos los humanos. El texto exhibe y se burla de conductas muy nuestras: el político que cambia de postura según convenga, la gente que juzga a los demás «según el color del cristal con que se mira», las reglas que acaban legalizando la simulación. Eso es parodiar rasgos y conductas humanas. La opción D es la trampa clásica: la fábula tradicional sí busca corregir conductas, pero aquí la moraleja es irónica; el texto no aconseja portarse bien, se ríe de cómo nos portamos."
           },
           {
             "id": 71,
@@ -1038,7 +1108,8 @@
               "D": "personificación"
             },
             "answer": "D",
-            "_src": "competencia-lectora · lectura 5 · reactivo 50"
+            "_src": "competencia-lectora · lectura 5 · reactivo 50",
+            "explanation": "En toda la lectura los animales hacen cosas de personas: al Camaleón «le había dado por la política», los demás cargan cristales en los bolsillos, redactan un Reglamento, se prestan vidrios entre enemigos y el León se ríe socarronamente. Atribuir acciones y rasgos humanos a animales (o a cosas) es la personificación, y aquí se sostiene de principio a fin, tal como pide la pregunta. La alegoría se antoja porque el relato completo tiene un segundo sentido político, pero la figura que se observa línea a línea, en cada conducta de los personajes, es la personificación."
           },
           {
             "id": 72,
@@ -1053,7 +1124,8 @@
               "D": "Antetítulo"
             },
             "answer": "A",
-            "_src": "competencia-lectora · lectura 3 · reactivo 21"
+            "_src": "competencia-lectora · lectura 3 · reactivo 21",
+            "explanation": "De los elementos que encabezan un texto periodístico, la lectura solo presenta uno: el titular, la frase que encabeza el texto y anuncia el tema (**Manuel Muñoz García habla sobre los litops, las plantas de piedra**). No hay antetítulo (la línea que va antes del titular) ni bajada o subtítulo (el texto breve que amplía el titular antes del cuerpo): después del título, la lectura entra directo al párrafo introductorio [1] y luego a las preguntas y respuestas."
           },
           {
             "id": 73,
@@ -1068,7 +1140,8 @@
               "D": "Debido al formato del texto, carece de los elementos de la noticia"
             },
             "answer": "C",
-            "_src": "competencia-lectora · lectura 3 · reactivo 22"
+            "_src": "competencia-lectora · lectura 3 · reactivo 22",
+            "explanation": "Relee [1]: funciona como entrada de la noticia y ahí se concentran sus preguntas clásicas: qué (los litops, las «plantas de piedra»), quién (Manuel Muñoz García), dónde (zonas desérticas de Namibia y Sudáfrica), por qué son sorprendentes (sobreviven a la falta de agua y a las altas temperaturas) y cómo las conoció el entrevistado (en un viaje por África). Las otras opciones niegan partes que sí existen: el desarrollo está en la entrevista de [2] a [4] y el cierre en [5], con la invitación a cultivar litops."
           }
         ]
       },
@@ -1088,7 +1161,8 @@
               "D": "1BDA, 2EC"
             },
             "answer": "C",
-            "_src": "quimica-cmb · reactivo 1"
+            "_src": "quimica-cmb · reactivo 1",
+            "explanation": "El criterio para clasificar una mezcla es visual: si se ve uniforme, con una sola fase, es **homogénea**; si distingues sus componentes a simple vista, es **heterogénea**. El vino, la mayonesa y la catsup se ven completamente parejos: no puedes señalar dónde está cada ingrediente, así que van con 1 (A, C, D). En cambio, en la granola ves avena, nueces y pasas por separado, y en el cereal con leche distingues el sólido del líquido: esas son heterogéneas, 2 (B, E).\n\nSi dudaste con la mayonesa y la catsup: técnicamente son coloides, pero como sus partículas no se distinguen a simple vista, en esta clasificación cuentan como homogéneas."
           },
           {
             "id": 75,
@@ -1102,7 +1176,8 @@
               "D": "electrones"
             },
             "answer": "C",
-            "_src": "quimica-cmb · reactivo 2"
+            "_src": "quimica-cmb · reactivo 2",
+            "explanation": "El número de masa $A$ cuenta las partículas del núcleo: protones más neutrones. El número atómico $Z$ cuenta solo los protones. Al hacer la resta $A - Z$ los protones se cancelan y lo que queda es la cantidad de **neutrones**; por eso la fórmula usa el símbolo $n^0$, la partícula sin carga.\n\nNo son los electrones (opción D): en un átomo neutro los electrones son iguales a $Z$, no a la resta."
           },
           {
             "id": 76,
@@ -1116,7 +1191,8 @@
               "D": "10.6%"
             },
             "answer": "C",
-            "_src": "quimica-cmb · reactivo 5"
+            "_src": "quimica-cmb · reactivo 5",
+            "explanation": "Primero la masa molar de $Bi(NO_3)_3$. Ojo con el subíndice de afuera del paréntesis: multiplica a todo el grupo nitrato, así que hay 3 nitrógenos y $3 \\times 3 = 9$ oxígenos.\n\n$$209 + 3(14) + 9(16) = 209 + 42 + 144 = 395\\ \\mathrm{g/mol}$$\n\nEl porcentaje en peso del oxígeno es la masa que aporta el O entre la masa total:\n\n$$\\frac{144}{395} \\times 100 \\approx 36.4\\%$$\n\nSi elegiste 52.9% calculaste el porcentaje del bismuto, y 10.6% es el del nitrógeno."
           },
           {
             "id": 77,
@@ -1130,7 +1206,8 @@
               "D": "Delta-"
             },
             "answer": "B",
-            "_src": "quimica-cmb · reactivo 6"
+            "_src": "quimica-cmb · reactivo 6",
+            "explanation": "En los bencenos con dos sustituyentes, el prefijo indica la posición relativa entre ellos: **orto-** (o-) cuando están en carbonos adyacentes (posiciones 1,2), **meta-** (m-) cuando hay un carbono de por medio (1,3) y **para-** (p-) cuando quedan opuestos en el anillo (1,4). Como la pregunta pide carbonos adyacentes, el prefijo es orto-. El prefijo delta- no existe en esta nomenclatura: está de relleno."
           },
           {
             "id": 78,
@@ -1144,7 +1221,8 @@
               "D": "1079 mL"
             },
             "answer": "B",
-            "_src": "quimica-cmb · reactivo 7"
+            "_src": "quimica-cmb · reactivo 7",
+            "explanation": "La temperatura no cambia, así que aplica la ley de Boyle: $P_1V_1 = P_2V_2$. Despejas el volumen final:\n\n$$V_2 = \\frac{P_1 V_1}{P_2} = \\frac{710 \\times 500}{760} \\approx 467\\ \\mathrm{mL}$$\n\nAntes de calcular ya podías descartar dos opciones: si la presión aumenta, el gas se comprime y el volumen final tiene que ser menor que 500 mL. Si te dio 535 mL, invertiste la razón de presiones (multiplicaste por $760/710$)."
           },
           {
             "id": 79,
@@ -1158,7 +1236,8 @@
               "D": "Gay-Lussac"
             },
             "answer": "B",
-            "_src": "quimica-cmb · reactivo 8"
+            "_src": "quimica-cmb · reactivo 8",
+            "explanation": "Es la ley de **Charles**: a presión constante, el volumen de un gas es directamente proporcional a su temperatura absoluta ($V/T$ constante); si calientas el gas, se expande. No la confundas con Boyle, que relaciona presión y volumen a temperatura constante, ni con Gay-Lussac, que relaciona presión y temperatura a volumen constante. Bernoulli es un principio de fluidos en movimiento, no una ley de los gases ideales."
           },
           {
             "id": 80,
@@ -1172,7 +1251,8 @@
               "D": "10"
             },
             "answer": "B",
-            "_src": "quimica-cmb · reactivo 10"
+            "_src": "quimica-cmb · reactivo 10",
+            "explanation": "El subnivel $p$ tiene **3 orbitales** ($p_x$, $p_y$, $p_z$), uno orientado sobre cada eje del espacio. Como cada orbital admite máximo 2 electrones, el subnivel completo aloja 6 electrones; ese es justo el distractor de la opción C: 6 son los electrones que caben, no los orbitales. Recuerda la serie: $s = 1$, $p = 3$, $d = 5$, $f = 7$ orbitales."
           },
           {
             "id": 81,
@@ -1186,7 +1266,8 @@
               "D": "$Al(OH)_{3}$"
             },
             "answer": "B",
-            "_src": "quimica-cmb · reactivo 11"
+            "_src": "quimica-cmb · reactivo 11",
+            "explanation": "Un óxido metálico es la unión de un **metal con oxígeno**, y el único que cumple es $Na_2O$: sodio (metal del grupo 1) con oxígeno. Los demás fallan en algo: $NO_2$ es óxido de un no metal (el nitrógeno), $HBrO_2$ es un oxiácido porque trae hidrógeno, y $Al(OH)_3$ es un hidróxido: sí tiene metal, pero unido al grupo $OH$, no solo al oxígeno."
           },
           {
             "id": 82,
@@ -1200,7 +1281,8 @@
               "D": "47.5"
             },
             "answer": "D",
-            "_src": "quimica-cmb · reactivo 14"
+            "_src": "quimica-cmb · reactivo 14",
+            "explanation": "Es la ley de las proporciones definidas: el calcio y el oxígeno siempre se combinan en la misma proporción, 10 g de Ca por cada 8 g de O. Con regla de tres para 38 g de oxígeno:\n\n$$x = \\frac{10 \\times 38}{8} = 47.5\\ \\mathrm{g\\ de\\ Ca}$$\n\nTambién podías descartar rápido: como se necesita más calcio que oxígeno (10 por cada 8), la respuesta debe ser mayor que 38 g, y solo 47.5 lo cumple. La opción C (38.0) es repetir la masa del oxígeno sin aplicar la proporción."
           },
           {
             "id": 83,
@@ -1214,7 +1296,8 @@
               "D": "gases nobles - no metales"
             },
             "answer": "B",
-            "_src": "quimica-cmb · reactivo 15"
+            "_src": "quimica-cmb · reactivo 15",
+            "explanation": "El enlace iónico se forma por **transferencia de electrones**: el metal, poco electronegativo, cede sus electrones de valencia y queda como catión; el no metal, muy electronegativo, los acepta y queda como anión. La atracción entre esas cargas opuestas es el enlace. Metal con metal da enlace metálico, no metal con no metal da covalente, y los gases nobles prácticamente no forman enlaces porque ya tienen completo su octeto."
           },
           {
             "id": 84,
@@ -1228,7 +1311,8 @@
               "D": "especificas"
             },
             "answer": "C",
-            "_src": "quimica-cmb · reactivo 16"
+            "_src": "quimica-cmb · reactivo 16",
+            "explanation": "Las propiedades **extensivas** dependen de la cantidad de materia y por eso son aditivas: la masa, el volumen o el peso de dos porciones juntas es la suma de lo que aporta cada una. Las intensivas (opción B) son justo lo contrario: la densidad, la temperatura o el punto de ebullición no cambian aunque tengas más o menos muestra, y por eso esas sí sirven para identificar sustancias."
           },
           {
             "id": 85,
@@ -1242,7 +1326,8 @@
               "D": "número de neutrones"
             },
             "answer": "B",
-            "_src": "quimica-cmb · reactivo 17"
+            "_src": "quimica-cmb · reactivo 17",
+            "explanation": "La tabla periódica moderna ordena los elementos por su **número atómico**, es decir, por su cantidad de protones. Esa es la ley periódica actual: las propiedades de los elementos se repiten periódicamente en función de $Z$, y por eso puedes leer tendencias como la electronegatividad, que aumenta a lo largo de un periodo y disminuye al bajar por un grupo. La masa atómica (opción A) fue el criterio original de Mendeleev, pero generaba desajustes en el orden y quedó descartada."
           },
           {
             "id": 86,
@@ -1256,7 +1341,8 @@
               "D": "Homolítico"
             },
             "answer": "D",
-            "_src": "quimica-cmb · reactivo 21"
+            "_src": "quimica-cmb · reactivo 21",
+            "explanation": "Es la ruptura **homolítica** (u homólisis): el par de electrones del enlace se reparte por igual y cada fragmento se queda con un electrón, lo que produce radicales libres. En la heterolítica (opción C) pasa lo contrario: uno de los fragmentos se lleva el par completo y se forman iones. Te puedes apoyar en el prefijo: *homo* significa reparto igual; *hetero*, reparto desigual."
           },
           {
             "id": 87,
@@ -1270,7 +1356,8 @@
               "D": "$\\downarrow$"
             },
             "answer": "D",
-            "_src": "quimica-cmb · reactivo 22"
+            "_src": "quimica-cmb · reactivo 22",
+            "explanation": "La flecha hacia abajo ($\\downarrow$) escrita junto a un producto indica que se forma un **precipitado**: un sólido insoluble que se separa de la disolución y cae al fondo. Es justo el caso del $CuCO_3$, el único producto en estado sólido (s) mientras todo lo demás sigue en disolución acuosa (ac). La flecha hacia arriba ($\\uparrow$, opción C) indica que se desprende un gas, y $\\Delta$ significa que a la reacción se le aplica calor."
           },
           {
             "id": 88,
@@ -1284,7 +1371,8 @@
               "D": "$N_{2\\,(g)} + 3H_{2\\,(g)} \\longrightarrow 2NH_{3\\,(ac)}$"
             },
             "answer": "A",
-            "_src": "quimica-cmb · reactivo 23"
+            "_src": "quimica-cmb · reactivo 23",
+            "explanation": "En una sustitución doble, dos compuestos intercambian parejas: $AB + CD \\rightarrow AD + CB$. Eso ocurre en la opción A: el calcio suelta al flúor para unirse con el sulfato, y el hidrógeno se queda con el flúor, $CaF_2 + H_2SO_4 \\rightarrow CaSO_4 + 2HF$. Las demás son de otros tipos: en B el zinc desplaza él solo al hidrógeno (sustitución simple), en C un compuesto se parte en dos (descomposición) y en D dos sustancias se unen en una (síntesis)."
           },
           {
             "id": 89,
@@ -1298,7 +1386,8 @@
               "D": "AB+CD -> AD + CB"
             },
             "answer": "B",
-            "_src": "quimica-cmb · reactivo 26"
+            "_src": "quimica-cmb · reactivo 26",
+            "explanation": "Una reacción de análisis, también llamada de descomposición, es aquella en la que un compuesto se rompe en dos o más sustancias más simples, casi siempre aportando energía:\n\n$$AB \\rightarrow A + B$$\n\nLa opción A es exactamente lo inverso: una síntesis o combinación. La C es una sustitución simple y la D, una sustitución doble."
           },
           {
             "id": 90,
@@ -1312,7 +1401,8 @@
               "D": "35.80"
             },
             "answer": "B",
-            "_src": "quimica-cmb · reactivo 28"
+            "_src": "quimica-cmb · reactivo 28",
+            "explanation": "El porcentaje en peso se calcula sobre la masa **total de la solución**, o sea soluto más disolvente: $5.8 + 35 = 40.8$ g.\n\n$$\\frac{5.8}{40.8} \\times 100 \\approx 14.21\\%$$\n\nSi te dio 16.57 (opción C), dividiste entre los 35 g de agua nada más: es el error clásico de olvidar que el soluto también forma parte de la masa de la solución."
           }
         ]
       },
@@ -1332,7 +1422,8 @@
               "D": "rotacional - igual"
             },
             "answer": "D",
-            "_src": "fisica-cmb · reactivo 1"
+            "_src": "fisica-cmb · reactivo 1",
+            "explanation": "Hay dos equilibrios y cada uno tiene su propia condición: el **traslacional** pide que la suma de fuerzas sea cero ($\\Sigma F = 0$: el cuerpo no se acelera), y el **rotacional** pide que la suma de torcas sea cero ($\\Sigma \\tau = 0$: el cuerpo no cambia su estado de rotación). Como el enunciado habla de torcas, se trata del equilibrio rotacional, y para que haya equilibrio la suma debe ser **igual** a cero.\n\nLa opción C tienta porque también dice \"igual\", pero el equilibrio traslacional se define con fuerzas, no con torcas."
           },
           {
             "id": 92,
@@ -1346,7 +1437,8 @@
               "D": "1C, 2D 3A, 4B"
             },
             "answer": "C",
-            "_src": "fisica-cmb · reactivo 2"
+            "_src": "fisica-cmb · reactivo 2",
+            "explanation": "Todo sale de las definiciones:\n\n**Fuerza**: $F = ma$, sus unidades son $\\mathrm{kg \\cdot m/s^2}$ (el newton) → 1B.\n**Momento lineal**: $p = mv$, queda en $\\mathrm{kg \\cdot m/s}$ → 2C.\n**Torca**: $\\tau = Fd$, fuerza por distancia, o sea $\\mathrm{N \\cdot m}$ → 3A.\n**Gravedad**: es una aceleración, $\\mathrm{m/s^2}$ → 4D.\n\nUn atajo para ir rápido: la gravedad forzosamente lleva $\\mathrm{m/s^2}$, y eso descarta de un golpe las opciones A y D, que le asignan otras unidades."
           },
           {
             "id": 93,
@@ -1360,7 +1452,8 @@
               "D": "Se deforma permanentemente"
             },
             "answer": "D",
-            "_src": "fisica-cmb · reactivo 3"
+            "_src": "fisica-cmb · reactivo 3",
+            "explanation": "Mientras la fuerza no rebase el límite elástico, el material obedece la ley de Hooke y recupera su forma original al retirarla. Pasando ese límite entra en la zona plástica: al quitar la fuerza el cuerpo ya no regresa y queda **deformado de manera permanente**.\n\nRomperse (opción A) exige ir todavía más lejos, hasta el punto de ruptura, que viene después del límite elástico."
           },
           {
             "id": 94,
@@ -1374,7 +1467,8 @@
               "D": "estable"
             },
             "answer": "C",
-            "_src": "fisica-cmb · reactivo 4"
+            "_src": "fisica-cmb · reactivo 4",
+            "explanation": "La fricción depende de la fuerza normal: $f = \\mu N$. En el plano horizontal, la normal sostiene todo el peso: $N = mg$. En el plano inclinado solo sostiene la componente perpendicular del peso: $N = mg\\cos\\theta$, y como $\\cos\\theta < 1$, esa normal es más chica. Misma masa y mismo coeficiente, pero menos normal: la fricción en el plano inclinado es **menor**."
           },
           {
             "id": 95,
@@ -1388,7 +1482,8 @@
               "D": "Permanece en equilibrio en la posición en la que se sumergió"
             },
             "answer": "A",
-            "_src": "fisica-cmb · reactivo 5"
+            "_src": "fisica-cmb · reactivo 5",
+            "explanation": "Por el principio de Arquímedes, un cuerpo flota solo cuando su densidad es menor o igual que la del líquido. Aquí es al revés: el objeto es más denso que el líquido, así que su peso le gana incluso al empuje máximo (el de estar totalmente sumergido) y el objeto se va hasta el fondo.\n\nFlotar con la mitad del volumen sumergido (B) pasaría solo si el objeto tuviera la mitad de la densidad del líquido, y quedar en equilibrio donde lo sueltes (D) exigiría densidades exactamente iguales."
           },
           {
             "id": 96,
@@ -1402,7 +1497,8 @@
               "D": "$\\frac{5}{2}m/s^{2}$"
             },
             "answer": "A",
-            "_src": "fisica-cmb · reactivo 6"
+            "_src": "fisica-cmb · reactivo 6",
+            "explanation": "La aceleración centrípeta es\n\n$$a_c = \\frac{v^2}{r}$$\n\nSustituyes $v = 2\\ \\mathrm{m/s}$ y $r = 5\\ \\mathrm{m}$:\n\n$$a_c = \\frac{2^2}{5} = \\frac{4}{5}\\ \\mathrm{m/s^2}$$\n\nSi te dio $\\frac{2}{5}$ (opción B), olvidaste elevar la velocidad al cuadrado; las opciones C y D salen de poner el radio arriba, con la fórmula invertida."
           },
           {
             "id": 97,
@@ -1416,7 +1512,8 @@
               "D": "$nPT=RV$"
             },
             "answer": "B",
-            "_src": "fisica-cmb · reactivo 7"
+            "_src": "fisica-cmb · reactivo 7",
+            "explanation": "La ecuación de estado del gas ideal es\n\n$$PV = nRT$$\n\ny es justo la relación entre presión, volumen y temperatura: si en un sistema de volumen $V$ cambia $T$, esta ecuación te dice cómo responde $P$ (a volumen fijo, presión y temperatura son proporcionales). Las opciones A y C involucran la entropía $S$ y la energía interna, que no aparecen en la ley del gas ideal, y la D es un acomodo de las mismas letras que no corresponde a ninguna ley física."
           },
           {
             "id": 98,
@@ -1430,7 +1527,8 @@
               "D": "Rectilíneo uniformemente variado"
             },
             "answer": "B",
-            "_src": "fisica-cmb · reactivo 8"
+            "_src": "fisica-cmb · reactivo 8",
+            "explanation": "El tiro vertical y los movimientos rectilíneos ocurren sobre una línea recta: les basta una sola dimensión. El **tiro parabólico** es el único de la lista que necesita dos dimensiones a la vez: avanza horizontalmente con velocidad constante mientras cae con aceleración vertical, y esa combinación dibuja una parábola que siempre queda contenida en un plano."
           },
           {
             "id": 99,
@@ -1444,7 +1542,8 @@
               "D": "resistencia externa"
             },
             "answer": "C",
-            "_src": "fisica-cmb · reactivo 9"
+            "_src": "fisica-cmb · reactivo 9",
+            "explanation": "Dentro de una celda (una pila), la corriente la llevan los iones moviéndose a través del electrolito, y ese viaje no es libre: los iones chocan con las moléculas de la solución y les cuesta trabajo avanzar. Esa oposición al paso de la carga es, por definición, una **resistencia**, y es **interna** porque ocurre adentro de la celda, no en el circuito de afuera. Por ella el voltaje en las terminales baja un poco cuando la pila entrega corriente.\n\nNo puede ser una \"corriente\" (A y B): el enunciado describe una dificultad para que pase la corriente, no la corriente misma."
           },
           {
             "id": 100,
@@ -1458,7 +1557,8 @@
               "D": "Infinita"
             },
             "answer": "A",
-            "_src": "fisica-cmb · reactivo 10"
+            "_src": "fisica-cmb · reactivo 10",
+            "explanation": "El amperímetro se conecta **en serie**, así que toda la corriente del circuito pasa por él; para no estorbar la medición, su resistencia debe ser lo más **baja** posible. Por eso al galvanómetro se le agrega una resistencia pequeña en paralelo (el *shunt* o derivación), que desvía casi toda la corriente y deja pasar por el galvanómetro solo la fracción que sí puede medir.\n\nLa resistencia alta (B) es la receta del voltímetro, que va en paralelo y debe robarle al circuito la mínima corriente posible."
           },
           {
             "id": 101,
@@ -1472,7 +1572,8 @@
               "D": "$3.18x10^{-3}\\,\\Omega$"
             },
             "answer": "A",
-            "_src": "fisica-cmb · reactivo 11"
+            "_src": "fisica-cmb · reactivo 11",
+            "explanation": "La resistencia de un conductor se calcula con\n\n$$R = \\frac{\\rho L}{A}$$\n\nSustituyes:\n\n$$R = \\frac{(1.72\\times10^{-8})(200)}{2\\times10^{-3}} = \\frac{3.44\\times10^{-6}}{2\\times10^{-3}} = 1.72\\times10^{-3}\\ \\Omega$$\n\nFíjate en el atajo: $200 \\div (2\\times10^{-3}) = 10^{5}$, y $10^{-8}\\times10^{5} = 10^{-3}$, así que el 1.72 de la resistividad se conserva tal cual y solo cambia el exponente."
           },
           {
             "id": 102,
@@ -1486,7 +1587,8 @@
               "D": "decrece - 16"
             },
             "answer": "B",
-            "_src": "fisica-cmb · reactivo 12"
+            "_src": "fisica-cmb · reactivo 12",
+            "explanation": "La potencia disipada en una resistencia depende del **cuadrado** de la corriente: $P = I^2R$. Si la corriente se vuelve $4I$:\n\n$$P' = (4I)^2 R = 16\\,I^2R = 16P$$\n\nLa potencia **crece en un factor de 16**. Si contestaste \"crece - 4\" (opción A), trataste la relación como si fuera lineal y se te fue el cuadrado."
           },
           {
             "id": 103,
@@ -1500,7 +1602,8 @@
               "D": "3.5 s"
             },
             "answer": "B",
-            "_src": "fisica-cmb · reactivo 13"
+            "_src": "fisica-cmb · reactivo 13",
+            "explanation": "Es una caída libre desde el reposo, así que la altura cumple $h = \\frac{1}{2}gt^2$. Despejas el tiempo:\n\n$$t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(10)}{9.8}} = \\sqrt{2.04} \\approx 1.4\\ \\mathrm{s}$$\n\n(Con $g = 10\\ \\mathrm{m/s^2}$ sale $\\sqrt{2} \\approx 1.41\\ \\mathrm{s}$, que redondea igual.) Si te dio cerca de 1 s (opción A), lo más probable es que hayas olvidado el factor 2 y calculado $\\sqrt{h/g}$."
           }
         ]
       },
@@ -1520,7 +1623,8 @@
               "D": "Tuxtepec"
             },
             "answer": "D",
-            "_src": "historia · reactivo 11"
+            "_src": "historia · reactivo 11",
+            "explanation": "El Plan de Tuxtepec fue proclamado por Porfirio Díaz en enero de 1876 contra el gobierno de Sebastián Lerdo de Tejada, que buscaba reelegirse. Con la bandera de la «no reelección» el movimiento triunfó ese mismo año y llevó a Díaz a la presidencia... irónicamente, para quedarse ahí más de treinta años.\n\nSi dudaste con la Noria (C), es entendible: también fue un plan de Díaz con la misma consigna, pero de 1871, contra la reelección de Juárez, y fracasó. Ayutla (1854) fue contra Santa Anna, e Iguala (1821) proclamó la Independencia."
           },
           {
             "id": 105,
@@ -1534,7 +1638,8 @@
               "D": "2, 5, 6"
             },
             "answer": "B",
-            "_src": "historia · reactivo 12"
+            "_src": "historia · reactivo 12",
+            "explanation": "La crisis del porfiriato (los últimos años del régimen, hacia 1900-1910) se reconoce por tres señales que sí están en la lista: los conflictos mineros como la huelga de Cananea de 1906 (1), el descontento social por el deterioro del nivel de vida de obreros y campesinos (4) y la creación de partidos opositores, como el Antirreeleccionista de Madero, para enfrentar la dictadura (6).\n\nLos demás enunciados no corresponden: una constitución que protegiera lo agrario (2) y el reconocimiento de los campesinos como propietarios (3) llegan hasta la Constitución de 1917, y la libertad de expresión (5) era justo lo que NO había: la prensa crítica se censuraba y sus periodistas terminaban presos."
           },
           {
             "id": 106,
@@ -1548,7 +1653,8 @@
               "D": "1E, 2D, 3C, 4A, 5B"
             },
             "answer": "B",
-            "_src": "historia · reactivo 13"
+            "_src": "historia · reactivo 13",
+            "explanation": "Ve asociación por asociación: el maderismo nació del Club Antirreeleccionista y sus giras por el voto efectivo (1C); el villismo se identifica con la División del Norte, el ejército de campesinos y obreros comandado por Villa (2E); el zapatismo proclamó el Plan de Ayala para exigir el reparto de tierras (3B); el huertismo llegó al poder con la Decena Trágica, el golpe de estado que le costó la vida a Madero (4A); y el carrancismo arrancó con el Plan de Guadalupe, que nombró a Carranza Primer Jefe del Ejército Constitucionalista para desconocer a Huerta (5D). Todo junto: 1C, 2E, 3B, 4A, 5D.\n\nUn ancla útil: Ayala = Zapata (tierras) y Guadalupe = Carranza (legalidad); con esos dos fijos, el resto casi se acomoda solo."
           },
           {
             "id": 107,
@@ -1562,7 +1668,8 @@
               "D": "2, 3, 4, 1"
             },
             "answer": "B",
-            "_src": "historia · reactivo 14"
+            "_src": "historia · reactivo 14",
+            "explanation": "Las fechas son la llave: la SEP se creó en 1921, con Vasconcelos al frente, durante el gobierno de Obregón (4); el Banco de México se fundó en 1925, con Calles como presidente (2); el Maximato corrió de 1928 a 1934, cuando Calles mandaba como «Jefe Máximo» detrás de los presidentes en turno (3); y el Estado Benefactor vino después, cuando el Estado tomó las riendas de la economía a partir del cardenismo (1). El orden es 4, 2, 3, 1.\n\nSi elegiste A, pusiste el Maximato antes del Banco de México: recuerda que Calles fundó el banco siendo presidente (1925) y el Maximato empezó al terminar su mandato (1928)."
           },
           {
             "id": 108,
@@ -1576,7 +1683,8 @@
               "D": "Manuel Ávila Camacho"
             },
             "answer": "A",
-            "_src": "historia · reactivo 15"
+            "_src": "historia · reactivo 15",
+            "explanation": "La reforma constitucional que reconoció el derecho de la mujer a votar se publicó el 17 de octubre de 1953, en pleno sexenio de Adolfo Ruiz Cortines (1952-1958), quien además la había prometido desde su campaña.\n\nEl distractor fuerte es López Mateos (B): con él se asocia el voto femenino porque fue el primer presidente electo con sufragio de mujeres (elección de 1958), pero la reforma legal fue antes, con Ruiz Cortines."
           },
           {
             "id": 109,
@@ -1590,7 +1698,8 @@
               "D": "Miguel de la Madrid Hurtado"
             },
             "answer": "A",
-            "_src": "historia · reactivo 16"
+            "_src": "historia · reactivo 16",
+            "explanation": "José López Portillo (1976-1982) apostó todo al auge petrolero: con los nuevos yacimientos, como Cantarell, y los precios altos del crudo, pidió préstamos enormes al extranjero confiando en que el petróleo los pagaría; es la época de «administrar la abundancia». Cuando el precio del petróleo se desplomó, la deuda se volvió impagable y el sexenio cerró con la crisis de 1982.\n\nEcheverría (C) también endeudó al país, pero por el crecimiento del gasto público en general; la apuesta por el petróleo como salvación económica fue de López Portillo."
           },
           {
             "id": 110,
@@ -1604,7 +1713,8 @@
               "D": "Confederación Revolucionaria de Obreros y Campesinos"
             },
             "answer": "B",
-            "_src": "historia · reactivo 17"
+            "_src": "historia · reactivo 17",
+            "explanation": "La Confederación de Trabajadores de México (CTM), fundada en 1936 durante el cardenismo, se convirtió en el sector obrero del partido oficial (PRM, después PRI): sus líderes —primero Lombardo Toledano y luego Fidel Velázquez durante décadas— negociaban directamente con el presidente y movilizaban el voto de los trabajadores. Ninguna otra central obrera tuvo ese peso dentro del gobierno.\n\nLa CROC (D) se creó en 1952 precisamente como contrapeso de la CTM, pero nunca alcanzó su influencia."
           },
           {
             "id": 111,
@@ -1618,7 +1728,8 @@
               "D": "1B, 2C, 3A"
             },
             "answer": "D",
-            "_src": "historia · reactivo 18"
+            "_src": "historia · reactivo 18",
+            "explanation": "Ubica cada movimiento en su sexenio: el magisterial, encabezado por Othón Salazar, estalló en 1956-1958, con Ruiz Cortines (2C); el ferrocarrilero de Demetrio Vallejo tuvo su gran huelga y su represión en 1959, ya con López Mateos (3A); y el movimiento médico de 1964-1965 ocurrió al arrancar el gobierno de Díaz Ordaz (1B). La combinación es 1B, 2C, 3A.\n\nEl enredo típico está entre el magisterial y el ferrocarrilero: el conflicto de los rieleros comenzó a finales del sexenio de Ruiz Cortines, pero su desenlace fue en 1959, con López Mateos. Y si con Díaz Ordaz pensaste en el 68, tienes razón en la fecha, pero aquí el que aparece en la lista es el movimiento médico."
           },
           {
             "id": 112,
@@ -1632,7 +1743,8 @@
               "D": "GATT"
             },
             "answer": "D",
-            "_src": "historia · reactivo 19"
+            "_src": "historia · reactivo 19",
+            "explanation": "En 1986, con Miguel de la Madrid, México ingresó al GATT (Acuerdo General sobre Aranceles Aduaneros y Comercio), el paso que abrió la economía al exterior: se redujeron aranceles y se dieron facilidades a las exportaciones. Fue el arranque de la apertura comercial del periodo neoliberal.\n\nEl TLCAN (A) se antoja, pero ese lo negoció y firmó Salinas de Gortari y entró en vigor en 1994; el T-MEC (B) es su versión de 2020, y la OCDE (C) no es un acuerdo comercial, sino una organización a la que México ingresó en 1994."
           },
           {
             "id": 113,
@@ -1646,7 +1758,8 @@
               "D": "Fomento al modelo de desarrollo estabilizador y la fundación del IFE"
             },
             "answer": "C",
-            "_src": "historia · reactivo 20"
+            "_src": "historia · reactivo 20",
+            "explanation": "Los gobiernos neoliberales (de Miguel de la Madrid en adelante, desde 1982) se caracterizaron por abrir la economía: México se incorporó al GATT en 1986 y al TLCAN en 1994. Y justo el 1 de enero de 1994, el mismo día en que el TLCAN entró en vigor, se levantó el EZLN en Chiapas. Los dos hechos de la opción correcta pertenecen a esta etapa.\n\nLa opción D es la trampa fina: el IFE (1990) sí es de la época neoliberal, pero el desarrollo estabilizador es de los años cincuenta y sesenta, así que la pareja no funciona."
           }
         ]
       },
@@ -1667,7 +1780,8 @@
               "D": "get famous"
             },
             "answer": "A",
-            "_src": "reading-comprehension · lectura 2 · reactivo 7"
+            "_src": "reading-comprehension · lectura 2 · reactivo 7",
+            "explanation": "El párrafo de Carl Jung lo dice directo: «Thousands of years ago, people collected food like fruits and nuts to survive during difficult times, like long winters», o sea, hace miles de años la gente juntaba comida para sobrevivir en tiempos difíciles, como los inviernos largos. Según Jung, ese hábito pasó de generación en generación y por eso hoy seguimos sintiendo la necesidad de coleccionar. El dinero, los amigos o la fama ni se mencionan en su explicación."
           },
           {
             "id": 115,
@@ -1682,7 +1796,8 @@
               "D": "Creating a legacy that lasts after their death"
             },
             "answer": "D",
-            "_src": "reading-comprehension · lectura 2 · reactivo 8"
+            "_src": "reading-comprehension · lectura 2 · reactivo 8",
+            "explanation": "La idea de Philipp Bloom está en el tercer párrafo: «collectors want to create something that lasts after they die», es decir, los coleccionistas quieren crear algo que perdure después de su muerte: un legado (*legacy*). El ejemplo del propio texto es John Smith, cuya colección terminó convertida en museo.\n\nOjo: divertirse con la colección (C) es la razón de Marco al final del texto, no la de Bloom."
           },
           {
             "id": 116,
@@ -1697,7 +1812,8 @@
               "D": "rocks"
             },
             "answer": "D",
-            "_src": "reading-comprehension · lectura 2 · reactivo 9"
+            "_src": "reading-comprehension · lectura 2 · reactivo 9",
+            "explanation": "Es un dato puntual de la lectura: «John Smith started a museum for his rock collection», es decir, un museo para su colección de rocas. Cuidado con la opción C: *rock stars* son estrellas de rock (músicos), no piedras; es justo el juego de palabras con el que te quieren hacer caer. Los coches a escala (A) son de James y las postales (B) de Anna."
           },
           {
             "id": 117,
@@ -1712,7 +1828,8 @@
               "D": "are sometimes quite bored"
             },
             "answer": "A",
-            "_src": "reading-comprehension · lectura 2 · reactivo 10"
+            "_src": "reading-comprehension · lectura 2 · reactivo 10",
+            "explanation": "Según Steve Roach, la gente colecciona «to remember their childhood»: de niños juntaban juguetes o estampas, lo dejan al crecer, y de adultos retoman el hábito «to remember happy times», para recordar los tiempos felices. En otras palabras, extrañan (*miss*) su época de niños. En ese párrafo no se habla de dinero (B), de aprender cosas nuevas (C) ni de aburrimiento (D)."
           },
           {
             "id": 118,
@@ -1727,7 +1844,8 @@
               "D": "brings personal satisfaction and joy"
             },
             "answer": "D",
-            "_src": "reading-comprehension · lectura 2 · reactivo 11"
+            "_src": "reading-comprehension · lectura 2 · reactivo 11",
+            "explanation": "Marco aparece en la última línea, la de los que coleccionan «for fun» (por diversión): «Marco loves getting autographs from famous athletes and meeting them in person». Ese *loves* te dice que lo hace por el puro gusto que le da, o sea, por satisfacción y alegría personales (opción D). El texto no dice que busque fama entre sus amigos (A) ni que se sienta atleta profesional (C): solo disfruta conseguir autógrafos y conocer a los deportistas."
           },
           {
             "id": 119,
@@ -1742,7 +1860,8 @@
               "D": "providing personal satisfaction and meaning in life"
             },
             "answer": "D",
-            "_src": "reading-comprehension · lectura 2 · reactivo 12"
+            "_src": "reading-comprehension · lectura 2 · reactivo 12",
+            "explanation": "Repasa las razones que da el texto: sobrevivir por un instinto heredado (Jung), dejar algo que perdure (Bloom), recordar la infancia (Roach), sentirse seguro y divertirse. Todas son motivaciones personales y emocionales: coleccionar le da satisfacción y sentido a la vida de quien lo hace. En ninguna parte se habla de hacerse rico rápido (A), de ganar poder (B) ni de fines de negocio (C); la única opción que resume lo que sí dice el texto es la D."
           },
           {
             "id": 120,
@@ -1757,7 +1876,8 @@
               "D": "help people identify fake news"
             },
             "answer": "A",
-            "_src": "reading-comprehension · lectura 6 · reactivo 37"
+            "_src": "reading-comprehension · lectura 6 · reactivo 37",
+            "explanation": "La respuesta está en el primer párrafo: «Some want you to click for money», algunos publican noticias falsas para que les des clic y así ganar dinero. La otra razón que menciona el texto es política, pero para «make people upset», hacer enojar a la gente, no para compartir noticias políticas positivas: por eso la C no funciona."
           },
           {
             "id": 121,
@@ -1772,7 +1892,8 @@
               "D": "using Google Reverse Image search"
             },
             "answer": "D",
-            "_src": "reading-comprehension · lectura 6 · reactivo 38"
+            "_src": "reading-comprehension · lectura 6 · reactivo 38",
+            "explanation": "Es el consejo número 2 de la lectura, «Check Photos»: las noticias falsas suelen usar fotos editadas o que no tienen relación con la historia, y el texto recomienda «Use tools like Google Reverse Image to check», o sea, usar la búsqueda inversa de imágenes de Google para verificarlas. Hacerle zoom a la imagen (B) o preguntarle a un amigo (A) no aparecen como métodos en el texto."
           },
           {
             "id": 122,
@@ -1787,7 +1908,8 @@
               "D": "is a new trend"
             },
             "answer": "B",
-            "_src": "reading-comprehension · lectura 6 · reactivo 39"
+            "_src": "reading-comprehension · lectura 6 · reactivo 39",
+            "explanation": "Está en la sección de «Other Clues» (otras pistas): «Be careful if the story uses ALL CAPS», ten cuidado si la historia está escrita con puras mayúsculas. En esta lectura las mayúsculas no indican emoción (C) ni información importante (A): son una señal de alerta de que la noticia puede ser falsa, igual que el exceso de anuncios."
           },
           {
             "id": 123,
@@ -1802,7 +1924,8 @@
               "D": "homepage"
             },
             "answer": "C",
-            "_src": "reading-comprehension · lectura 6 · reactivo 40"
+            "_src": "reading-comprehension · lectura 6 · reactivo 40",
+            "explanation": "Es el consejo número 1, «Check the Source»: para saber si un sitio es real, el texto dice «Check the “About” page for details», revisa la página de «Acerca de» para conocer los detalles del sitio. Los comentarios (A), la sección de imágenes (B) y la portada (D) no se mencionan como forma de investigar quién está detrás de la página."
           }
         ]
       },
@@ -1822,7 +1945,8 @@
               "D": "domesticación"
             },
             "answer": "C",
-            "_src": "biologia-cmb · reactivo 1"
+            "_src": "biologia-cmb · reactivo 1",
+            "explanation": "Piensa en la cadena alimenticia como una fila de eslabones por donde pasa la energía: si quitas uno, los que estaban arriba se quedan sin alimento y los que estaban abajo se reproducen sin control. Por eso la **eliminación** de una especie (por caza excesiva, contaminación o extinción) desequilibra todo el ecosistema; el caso típico es que desaparezca un depredador y su presa se vuelva plaga.\n\nLa clonación o la domesticación modifican poblaciones, pero no cortan el flujo de energía de la cadena como sí lo hace quitar por completo un eslabón."
           },
           {
             "id": 125,
@@ -1836,7 +1960,8 @@
               "D": "Vaquita marina"
             },
             "answer": "D",
-            "_src": "biologia-cmb · reactivo 2"
+            "_src": "biologia-cmb · reactivo 2",
+            "explanation": "*Endémica* significa que la especie vive de forma natural en un solo lugar del planeta y en ningún otro. La **vaquita marina** (*Phocoena sinus*) solo existe en el Alto Golfo de California y quedan apenas unos cuantos ejemplares, sobre todo por quedar atrapada en redes como captura incidental: cumple las dos condiciones, endémica de México y en peligro crítico.\n\nElefante, oso polar y oso panda también están amenazados, pero son de África y Asia, del Ártico y de China: ninguno es endémico de México, y ahí está la trampa del reactivo."
           },
           {
             "id": 126,
@@ -1850,7 +1975,8 @@
               "D": "expulsa"
             },
             "answer": "A",
-            "_src": "biologia-cmb · reactivo 5"
+            "_src": "biologia-cmb · reactivo 5",
+            "explanation": "Sigue la ruta de una proteína: sale del retículo endoplásmico, llega al aparato de Golgi y ahí se le añaden azúcares o se le hacen cortes (la **modifica**), se separa según su destino (la **clasifica**) y se mete en vesículas de secreción (la **empaqueta**) que viajan hasta la membrana.\n\nFíjate en la pista del enunciado: \"para que sean transportadas fuera de la célula\". Primero hay que envolverlas. \"Expulsa\" se antoja, pero ese paso final lo hace la vesícula al fusionarse con la membrana (exocitosis), no el Golgi; y destruir proteínas es trabajo de los lisosomas."
           },
           {
             "id": 127,
@@ -1864,7 +1990,8 @@
               "D": "1, 3"
             },
             "answer": "D",
-            "_src": "biologia-cmb · reactivo 6"
+            "_src": "biologia-cmb · reactivo 6",
+            "explanation": "El tejido nervioso está formado por dos tipos de células: las **neuronas** (3), que reciben, integran y transmiten los impulsos, y las **células gliales** (1) —astrocitos, oligodendrocitos, microglía—, que les dan soporte, las nutren, las aíslan con mielina y las defienden. De ahí la combinación 1, 3.\n\nLas epiteliales forman cubiertas y revestimientos, y las sanguíneas son del tejido conectivo: pasan junto a los nervios, pero no forman parte del tejido nervioso."
           },
           {
             "id": 128,
@@ -1878,7 +2005,8 @@
               "D": "Vértebra"
             },
             "answer": "A",
-            "_src": "biologia-cmb · reactivo 7"
+            "_src": "biologia-cmb · reactivo 7",
+            "explanation": "Los huesos se clasifican por su forma. Un hueso **largo** es el que tiene una dimensión mucho mayor que las otras dos, con un cuerpo o diáfisis y dos extremos o epífisis: el **fémur** es el ejemplo clásico y además el hueso más largo del cuerpo.\n\nLa costilla es la que engaña porque \"se ve alargada\", pero es un hueso plano y curvo, sin diáfisis ni epífisis; la escápula también es plana y la vértebra es irregular."
           },
           {
             "id": 129,
@@ -1892,7 +2020,8 @@
               "D": "Linfa"
             },
             "answer": "D",
-            "_src": "biologia-cmb · reactivo 8"
+            "_src": "biologia-cmb · reactivo 8",
+            "explanation": "Ese líquido claro que contiene glóbulos blancos (linfocitos), proteínas, grasas y desechos metabólicos es la **linfa**, y viaja por el sistema linfático: se forma con el plasma que se filtra de los capilares al espacio entre las células, pasa por los ganglios linfáticos —donde se filtran los patógenos— y regresa a la circulación sanguínea.\n\nSangre no es, porque es roja, lleva glóbulos rojos y circula por arterias y venas; y las venas justamente transportan sangre de vuelta al corazón, no linfa."
           },
           {
             "id": 130,
@@ -1906,7 +2035,8 @@
               "D": "animales"
             },
             "answer": "D",
-            "_src": "biologia-cmb · reactivo 10"
+            "_src": "biologia-cmb · reactivo 10",
+            "explanation": "La anisogamia es la fusión de dos gametos desiguales, y su forma extrema es la oogamia: un gameto pequeño y móvil (el espermatozoide) y otro grande, inmóvil y cargado de reservas (el óvulo). Así se reproducen **todos los animales**, sin excepción, y por eso es el grupo que se toma como ejemplo.\n\nEn algas y hongos lo más común es lo contrario, la isogamia: los dos gametos son iguales en tamaño y forma, y ni se habla de macho y hembra, sino de tipos $+$ y $-$."
           },
           {
             "id": 131,
@@ -1920,7 +2050,8 @@
               "D": "Ubicación entre las zonas Neártica y Neotropical"
             },
             "answer": "D",
-            "_src": "biologia-cmb · reactivo 11"
+            "_src": "biologia-cmb · reactivo 11",
+            "explanation": "México es megadiverso, en buena medida, por su **ubicación entre la región Neártica** —la de climas templados y fríos de Norteamérica— **y la Neotropical** —la tropical de Centro y Sudamérica—: en nuestro territorio se traslapan las dos y convive fauna y flora de ambos orígenes, y a eso súmale la variedad de relieve y de climas.\n\nLas otras tres opciones (religiones, husos horarios, lenguas indígenas) son datos culturales o convenciones humanas: no explican por qué aquí hay tantas especies."
           },
           {
             "id": 132,
@@ -1934,7 +2065,8 @@
               "D": "comensalismo"
             },
             "answer": "B",
-            "_src": "biologia-cmb · reactivo 12"
+            "_src": "biologia-cmb · reactivo 12",
+            "explanation": "En el **parasitismo** una especie, el parásito, obtiene alimento o refugio del cuerpo de otra, el hospedero, y le causa daño: la pulga, la tenia, el muérdago. En clave de signos es una relación $(+,-)$, y la pista del enunciado es \"a expensas de\", que implica perjuicio.\n\nCuidado con comensalismo: ahí uno se beneficia y el otro *ni gana ni pierde*, $(+,0)$. En el mutualismo ganan los dos, $(+,+)$, y en la competencia los dos se perjudican, $(-,-)$."
           },
           {
             "id": 133,
@@ -1948,7 +2080,8 @@
               "D": "glucosa - dióxido de carbono"
             },
             "answer": "D",
-            "_src": "biologia-cmb · reactivo 15"
+            "_src": "biologia-cmb · reactivo 15",
+            "explanation": "La planta toma dióxido de carbono del aire y agua del suelo y, con la energía de la luz atrapada por la clorofila, los transforma en glucosa liberando oxígeno:\n\n$$6\\,\\mathrm{CO}_2 + 6\\,\\mathrm{H}_2\\mathrm{O} + \\text{luz} \\rightarrow \\mathrm{C}_6\\mathrm{H}_{12}\\mathrm{O}_6 + 6\\,\\mathrm{O}_2$$\n\nLos reactivos (materia prima) son $\\mathrm{CO}_2$ y agua; el producto es la **glucosa**. Por eso el orden del enunciado es \"produce glucosa a partir de dióxido de carbono y agua\".\n\nLa opción C tiene las palabras correctas pero invertidas: pone el $\\mathrm{CO}_2$ como producto y la glucosa como materia prima, que es justo lo que ocurre en la respiración celular, el proceso inverso. La manosa no participa."
           },
           {
             "id": 134,
@@ -1962,7 +2095,8 @@
               "D": "Biogeografía"
             },
             "answer": "D",
-            "_src": "biologia-cmb · reactivo 19"
+            "_src": "biologia-cmb · reactivo 19",
+            "explanation": "Desarma la palabra: **biogeografía** = *bio* (vida) + *geografía* (espacio terrestre). Estudia dónde se distribuyen las especies y los ecosistemas y por qué llegaron ahí: barreras naturales, deriva de los continentes, clima, historia. Es la rama que explica, por ejemplo, que México sea megadiverso por estar entre las regiones Neártica y Neotropical.\n\nEcología es el distractor fuerte, pero esa estudia las relaciones de los seres vivos con su ambiente y entre sí, no su reparto en el mapa; la citología es de células y la evolución, del cambio de las especies a lo largo del tiempo."
           },
           {
             "id": 135,
@@ -1976,7 +2110,8 @@
               "D": "1A, 2D, 3B, 4C"
             },
             "answer": "A",
-            "_src": "biologia-cmb · reactivo 20"
+            "_src": "biologia-cmb · reactivo 20",
+            "explanation": "Empieza por la que sabes de memoria y ve eliminando. La **neurona** es la única célula que transmite señales eléctricas y químicas, así que $4A$; con eso ya se caen C y D, que le dan A al oligodendrocito.\n\nLas otras tres son glía: el **oligodendrocito** forma la mielina del sistema nervioso central —su equivalente en el periférico es la célula de Schwann—, o sea $1B$. La **microglía** es el macrófago del sistema nervioso: fagocita patógenos y restos de neuronas dañadas, $2C$. Al **astrocito** le queda el soporte estructural y metabólico y la cicatrización del tejido tras una lesión (gliosis), $3D$.\n\nQueda $1B, 2C, 3D, 4A$. Si escogiste B, invertiste microglía con astrocito: le adjudicaste la defensa contra patógenos al astrocito, que en realidad es el \"andamio\" y el sostén metabólico de las neuronas."
           },
           {
             "id": 136,
@@ -1990,7 +2125,8 @@
               "D": "1B, 2D, 3C, 4A"
             },
             "answer": "B",
-            "_src": "biologia-cmb · reactivo 21"
+            "_src": "biologia-cmb · reactivo 21",
+            "explanation": "Guíate por las raíces de cada nombre. *Gen*- remite a los genes: herencia y variación, transmisión de rasgos entre generaciones, o sea $1C$. *Eco*- viene de *oikos*, casa: interacciones con el entorno, distribución, dinámica poblacional, competencia y depredación, $2B$. Botánica es el estudio de las plantas, incluidas algas, musgos y helechos, $3D$. Zoología es el de los animales, con su anatomía y comportamiento, $4A$.\n\nEl armado es $1C, 2B, 3D, 4A$. El riesgo está en cruzar B con C, porque las dos hablan de variación y distribución: la que menciona *genes* es genética; la que menciona *hábitat y competencia* es ecología."
           },
           {
             "id": 137,
@@ -2004,7 +2140,8 @@
               "D": "2, 4, 5"
             },
             "answer": "A",
-            "_src": "biologia-cmb · reactivo 23"
+            "_src": "biologia-cmb · reactivo 23",
+            "explanation": "Lo que vuelve ciencia a la Biología es el método científico: **observar** el fenómeno con cuidado (1), **experimentar** para poner a prueba la hipótesis en condiciones controladas (2) y que los resultados sean **reproducibles**, es decir, que otro investigador repita el procedimiento y obtenga lo mismo (3).\n\nLas opciones 4 y 5 son lo contrario de la ciencia: con métodos no específicos nadie puede repetir el experimento, y sin observación empírica no hay evidencia, solo opinión. Como aparecen en B, C y D, esas tres se descartan de entrada; solo A deja las tres características válidas."
           },
           {
             "id": 138,
@@ -2018,7 +2155,8 @@
               "D": "Metafase"
             },
             "answer": "A",
-            "_src": "biologia-cmb · reactivo 24"
+            "_src": "biologia-cmb · reactivo 24",
+            "explanation": "En la **profase** ocurren justo las dos cosas que menciona el enunciado: la cromatina se condensa y los cromosomas se hacen visibles todavía dentro del núcleo, y los centrosomas se separan para empezar a armar el huso mitótico. Al final de esta fase se desintegra la envoltura nuclear.\n\nMetafase se antoja, pero ahí los cromosomas ya están condensados y alineados en el ecuador de la célula con el huso ya formado; en anafase se separan las cromátidas y en telofase se rearman los núcleos. Las palabras clave son \"dentro del núcleo\" y \"comienza a formarse\"."
           },
           {
             "id": 139,
@@ -2032,7 +2170,8 @@
               "D": "Mitocondria"
             },
             "answer": "D",
-            "_src": "biologia-cmb · reactivo 25"
+            "_src": "biologia-cmb · reactivo 25",
+            "explanation": "El ciclo de Krebs, o del ácido cítrico, se realiza en la matriz de la **mitocondria**: ahí entra el acetil-CoA y se oxida por completo hasta $\\mathrm{CO}_2$, generando $\\mathrm{NADH}$ y $\\mathrm{FADH}_2$ que enseguida pasan a la cadena transportadora de electrones, en las crestas de la misma mitocondria. Por eso se le dice la \"central de energía\" de la célula.\n\nCitoplasma es el distractor fuerte: en el citosol se lleva a cabo la **glucólisis**, que es el paso anterior. El cloroplasto es de la fotosíntesis y en el núcleo no ocurren estas rutas metabólicas."
           },
           {
             "id": 140,
@@ -2046,7 +2185,8 @@
               "D": "Evolución"
             },
             "answer": "A",
-            "_src": "biologia-cmb · reactivo 26"
+            "_src": "biologia-cmb · reactivo 26",
+            "explanation": "Lo que describe el reactivo —lo que da ventaja se hereda y se acumula, lo que no, se va perdiendo— es la **selección natural**, el mecanismo que propuso Darwin: el ambiente \"selecciona\" a los individuos que sobreviven y se reproducen más, así que sus características se vuelven cada vez más frecuentes en la población.\n\nEvolución es el distractor fuerte, pero la evolución es el *resultado* (el cambio de las poblaciones a lo largo del tiempo) y no el mecanismo que lo produce; y la adaptación es la característica ya favorecida, o sea el producto de esa selección."
           }
         ]
       }
