@@ -3743,7 +3743,17 @@ socket.on('joined', (data) => {
   saveLastSession();
 
   if (data.submitted) {
-    enterReviewMode({ ok: true, correct: data.correct, total: data.questions.length, answerKey: data.answerKey });
+    // Ojo: hay que pasar TODO lo que necesita la revisión, no solo la clave. Sin
+    // las explicaciones, un alumno que entrega y luego bloquea el dispositivo
+    // vuelve a entrar y ve su calificación pero ya sin la caja de Explicación,
+    // porque el estado se rearma desde cero y esto es lo único que lo alimenta.
+    enterReviewMode({
+      ok: true,
+      correct: data.correct,
+      total: data.questions.length,
+      answerKey: data.answerKey,
+      explanations: data.explanations,
+    });
   } else if (backupValid && backup.submitted) {
     // El alumno ya habia apretado Entregar pero el server no lo registro. Reanudar.
     if (data.examActive) { showScreen('examScreen'); renderQuestion(); if (data.startTime) startTimer(data.startTime, data.timeLimit); }
