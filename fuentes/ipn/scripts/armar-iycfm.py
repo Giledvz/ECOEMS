@@ -175,7 +175,7 @@ exam = {'exam': {
     'date': '2026-07-29',
     'version': '1.0',
     'total_questions': total,
-    'students': ['Danna Belem'],
+    'students': ['Danna Belem', 'Gil'],
     'instructions': ('Examen de 140 reactivos de opción múltiple con la distribución oficial del '
                      'IPN para el área de Ingeniería y Ciencias Físico Matemáticas. Selecciona la '
                      'opción correcta para cada pregunta. No se permite el uso de calculadora.'),

@@ -185,7 +185,7 @@ def construir(area):
         'date': '2026-07-30',
         'version': '1.0',
         'total_questions': total,
-        'students': [],
+        'students': ['Gil'],
         'instructions': ('Examen de 140 reactivos de opción múltiple con la distribución oficial '
                          'del IPN para esta área. Selecciona la opción correcta para cada pregunta. '
                          'No se permite el uso de calculadora.'),
