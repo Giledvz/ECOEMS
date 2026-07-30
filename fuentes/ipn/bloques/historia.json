@@ -4,7 +4,7 @@
     "area": "Conocimientos generales (las 3 áreas)",
     "fuente": "Material de Apoyo al Aprendizaje 2026 — IPN, pp. 160-171 (PDF 88-93)",
     "reactivos": 40,
-    "transcritos": "1-13 y 37-40",
+    "transcritos": "1-40 completo",
     "sin_figuras": true,
     "rc": "1d 2a 3d 4c 5d 6b 7d 8b 9a 10b 11d 12b 13b 14b 15a 16a 17b 18d 19d 20c 21d 22b 23a 24c 25a 26c 27c 28d 29d 30a 31b 32b 33c 34d 35b 36b 37a 38c 39a 40a"
   },
@@ -12,103 +12,441 @@
     {
       "n": 1,
       "text": "Relacionar el soporte de las fuentes históricas con su definición.\n\n| Soporte | Definición |\n|---|---|\n| 1. Oral | A. Objetos que representan la existencia de civilizaciones antiguas. |\n| 2. Textual | B. Mapas y cartas náuticas que muestran transformaciones paisajísticas. |\n| 3. Material | C. Fotografías, pinturas y dibujos de episodios específicos de la historia. |\n| 4. Iconográfico | D. Relatos de personas en testimonios, entrevistas, discursos y grabaciones. |\n| 5. Cartográfico | E. Documentos impresos en papel con información relevante de algún acontecimiento histórico. |",
-      "options": { "A": "1A, 2E, 3D, 4C, 5B", "B": "1A, 2D, 3B, 4E, 5C", "C": "1D, 2A, 3E, 4B, 5C", "D": "1D, 2E, 3A, 4C, 5B" },
+      "options": {
+        "A": "1A, 2E, 3D, 4C, 5B",
+        "B": "1A, 2D, 3B, 4E, 5C",
+        "C": "1D, 2A, 3E, 4B, 5C",
+        "D": "1D, 2E, 3A, 4C, 5B"
+      },
       "answer": "D"
     },
     {
       "n": 2,
       "text": "¿Qué corriente de interpretación histórica considera que lo único verdadero es aquello que se comprueba científicamente y, por lo tanto, se interesa en pruebas documentables y comprobables?",
-      "options": { "A": "Positivismo", "B": "Historicismo", "C": "Materialismo Histórico", "D": "Escuela de los Annales" },
+      "options": {
+        "A": "Positivismo",
+        "B": "Historicismo",
+        "C": "Materialismo Histórico",
+        "D": "Escuela de los Annales"
+      },
       "answer": "A"
     },
     {
       "n": 3,
       "text": "¿Qué teoría del poblamiento de América afirma que el hombre rodeó el continente Antártico cruzando por el mar Drake para llegar a América del Sur?",
-      "options": { "A": "Asiática", "B": "Múltiple", "C": "Polinesia", "D": "Australiana" },
+      "options": {
+        "A": "Asiática",
+        "B": "Múltiple",
+        "C": "Polinesia",
+        "D": "Australiana"
+      },
       "answer": "D"
     },
     {
       "n": 4,
       "text": "Al inicio de la Edad Moderna en Europa se le consideró la época de las __________, ya que había un gran interés por obtener y acumular riquezas a través del comercio.",
-      "options": { "A": "revoluciones", "B": "imposiciones", "C": "exploraciones", "D": "movilizaciones" },
+      "options": {
+        "A": "revoluciones",
+        "B": "imposiciones",
+        "C": "exploraciones",
+        "D": "movilizaciones"
+      },
       "answer": "C"
     },
     {
       "n": 5,
       "text": "Elegir los factores que favorecieron al proceso de conquista de México.\n\n1. Protección a las artes y costumbres de América.\n2. Apropiación de tierras mediante la colonización.\n3. Fuertes epidemias que mermaron a la población.\n4. Uso de la razón y la experiencia en lugar de la fe.\n5. Alianzas de los españoles a través de expediciones.\n6. Mayor difusión de ideas debido a la invención de la imprenta.",
-      "options": { "A": "1, 3, 6", "B": "1, 4, 5", "C": "2, 5, 6", "D": "2, 3, 5" },
+      "options": {
+        "A": "1, 3, 6",
+        "B": "1, 4, 5",
+        "C": "2, 5, 6",
+        "D": "2, 3, 5"
+      },
       "answer": "D"
     },
     {
       "n": 6,
       "text": "Relacionar la forma de trabajo propia del periodo virreinal de la Nueva España con su definición.\n\n| Forma de trabajo | Definición |\n|---|---|\n| 1. Repartimiento | A. Asignación de un grupo de indígenas a un español para el cultivo de tierras, labores en minas y servicio de construcción, además de ser adoctrinados y pagar tributo. |\n| 2. Encomienda | B. Inició como un trabajo asalariado libre, pero evolucionó a una modalidad de deuda, misma que se heredaba de generación en generación. |\n| 3. Peonaje | C. Labor rotativa, remunerada y por tiempo limitado de indígenas varones entre 14 y 60 años que forzosamente laboraban con agricultores, ganaderos o mineros. |",
-      "options": { "A": "1C, 2B, 3A", "B": "1C, 2A, 3B", "C": "1B, 2A, 3C", "D": "1B, 2C, 3A" },
+      "options": {
+        "A": "1C, 2B, 3A",
+        "B": "1C, 2A, 3B",
+        "C": "1B, 2A, 3C",
+        "D": "1B, 2C, 3A"
+      },
       "answer": "B"
     },
     {
       "n": 7,
       "text": "Ordenar cronológicamente los acontecimientos ocurridos durante la Independencia de México.\n\n1. Promulgación de la Constitución de Apatzingán en la que se establecía la división de poderes y la abolición de las castas.\n2. Vicente Guerrero, Guadalupe Victoria y Francisco Javier Mina continúan la lucha con la táctica de guerra de guerrillas.\n3. Firma del Acta de Independencia de la Nueva España proclamando como emperador a Iturbide.\n4. En el transcurso de la conspiración de Valladolid, sus participantes fueron delatados.\n5. Reunión de Miguel Hidalgo, Agustín de Iturbide y los corregidores de Querétaro.",
-      "options": { "A": "2, 1, 5, 3, 4", "B": "2, 3, 1, 5, 4", "C": "4, 2, 5, 1, 3", "D": "4, 5, 1, 2, 3" },
+      "options": {
+        "A": "2, 1, 5, 3, 4",
+        "B": "2, 3, 1, 5, 4",
+        "C": "4, 2, 5, 1, 3",
+        "D": "4, 5, 1, 2, 3"
+      },
       "answer": "D"
     },
     {
       "n": 8,
       "text": "La guerra de los Pasteles fue una lucha armada que inició en 1838 entre __________ y México.",
-      "options": { "A": "España", "B": "Francia", "C": "Alemania", "D": "Inglaterra" },
+      "options": {
+        "A": "España",
+        "B": "Francia",
+        "C": "Alemania",
+        "D": "Inglaterra"
+      },
       "answer": "B"
     },
     {
       "n": 9,
       "text": "¿Cuál fue la causa principal del conflicto entre liberales y conservadores durante la Guerra de Reforma?",
-      "options": { "A": "Oposición de las ideas eclesiásticas mediante la Constitución de 1857", "B": "Predominio de las costumbres monárquicas en la vida de los mexicanos", "C": "Separación de los poderes de la nación en legislativo, ejecutivo, y judicial", "D": "Promulgación del Plan de Tacubaya como seguimiento de la constitución liberal" },
+      "options": {
+        "A": "Oposición de las ideas eclesiásticas mediante la Constitución de 1857",
+        "B": "Predominio de las costumbres monárquicas en la vida de los mexicanos",
+        "C": "Separación de los poderes de la nación en legislativo, ejecutivo, y judicial",
+        "D": "Promulgación del Plan de Tacubaya como seguimiento de la constitución liberal"
+      },
       "answer": "A"
     },
     {
       "n": 10,
       "text": "A finales del siglo XIX se originó el __________, el cual consiste en la búsqueda de mercados, materias primas, zonas de inversión y regiones para poblar por parte de los países capitalistas en países susceptibles a ser dominados.",
-      "options": { "A": "colonialismo", "B": "imperialismo", "C": "protectorado", "D": "expansionismo" },
+      "options": {
+        "A": "colonialismo",
+        "B": "imperialismo",
+        "C": "protectorado",
+        "D": "expansionismo"
+      },
       "answer": "B"
     },
     {
       "n": 11,
       "text": "El 10 de enero de 1876, Porfirio Díaz anunció el Plan de __________ con la finalidad de levantarse en armas contra el gobierno regente bajo la consigna de «no reelección».",
-      "options": { "A": "Ayutla", "B": "Iguala", "C": "la Noria", "D": "Tuxtepec" },
+      "options": {
+        "A": "Ayutla",
+        "B": "Iguala",
+        "C": "la Noria",
+        "D": "Tuxtepec"
+      },
       "answer": "D"
     },
     {
       "n": 12,
       "text": "Elegir los acontecimientos que ocurrieron durante la crisis del porfiriato.\n\n1. Conflicto político-sindical iniciado por los trabajadores mineros.\n2. Proclamación de una constitución que protegía asuntos agrarios.\n3. Reconocimiento de los campesinos como propietarios de sus tierras.\n4. Disgusto social ocasionado por el deterioro en el nivel de vida de la población.\n5. Libertad de expresión entre ciudadanos, medios de comunicación y autoridades políticas.\n6. Creación de un partido político para hacer frente a la dictadura y defender los derechos de la población.",
-      "options": { "A": "1, 3, 4", "B": "1, 4, 6", "C": "2, 4, 5", "D": "2, 5, 6" },
+      "options": {
+        "A": "1, 3, 4",
+        "B": "1, 4, 6",
+        "C": "2, 4, 5",
+        "D": "2, 5, 6"
+      },
       "answer": "B"
     },
     {
       "n": 13,
       "text": "Asociar la tendencia revolucionaria con su evento principal.\n\n| Tendencia | Evento |\n|---|---|\n| 1. Maderismo | A. Inició la Decena Trágica, la cual fue un golpe de estado en contra de Francisco I. Madero. |\n| 2. Villismo | B. Establecimiento del Plan de Ayala que defendía a los campesinos y al reparto de tierras. |\n| 3. Zapatismo | C. Creación del Club Antirreeleccionista, mismo que realizó giras políticas para exigir el voto efectivo. |\n| 4. Huertismo | D. Se nombró el Primer Jefe del Ejército Constitucionalista mediante el Plan de Guadalupe. |\n| 5. Carrancismo | E. Formación del ejército llamado División del Norte integrado por campesinos y obreros que luchaban por las injusticias de las clases desfavorecidas. |",
-      "options": { "A": "1C, 2A, 3E, 4D, 5B", "B": "1C, 2E, 3B, 4A, 5D", "C": "1E, 2C, 3A, 4B, 5D", "D": "1E, 2D, 3C, 4A, 5B" },
+      "options": {
+        "A": "1C, 2A, 3E, 4D, 5B",
+        "B": "1C, 2E, 3B, 4A, 5D",
+        "C": "1E, 2C, 3A, 4B, 5D",
+        "D": "1E, 2D, 3C, 4A, 5B"
+      },
+      "answer": "B"
+    },
+    {
+      "n": 14,
+      "text": "Ordenar cronológicamente los eventos históricos que conformaron el proceso de institucionalización del Estado.\n\n1. Inicio del Estado Benefactor como modelo económico en el que el Estado interviene en la economía.\n2. Fundación del Banco de México como único emisor de moneda y como supervisor de otros bancos.\n3. Establecimiento del Maximato como forma de gobierno con un \"Jefe máximo\" como representante.\n4. Creación de la Secretaría de Educación Pública con José Vasconcelos como su titular.",
+      "options": {
+        "A": "4, 3, 1, 2",
+        "B": "4, 2, 3, 1",
+        "C": "2, 4, 1, 3",
+        "D": "2, 3, 4, 1"
+      },
+      "answer": "B"
+    },
+    {
+      "n": 15,
+      "text": "Durante el periodo presidencial de __________ se estableció el derecho de voto a la mujer mediante una reforma a la Constitución en 1953.",
+      "options": {
+        "A": "Adolfo Ruiz Cortines",
+        "B": "Adolfo López Mateos",
+        "C": "Miguel Alemán Valdés",
+        "D": "Manuel Ávila Camacho"
+      },
+      "answer": "A"
+    },
+    {
+      "n": 16,
+      "text": "¿Quién fue el presidente que aumentó la deuda externa al recurrir a la explotación petrolera para intentar recuperar la economía del país?",
+      "options": {
+        "A": "José López Portillo",
+        "B": "Gustavo Díaz Ordaz",
+        "C": "Luis Echeverría Álvarez",
+        "D": "Miguel de la Madrid Hurtado"
+      },
+      "answer": "A"
+    },
+    {
+      "n": 17,
+      "text": "¿Cuál fue la organización con mayor influencia en el gobierno durante la consolidación del sindicalismo en México?",
+      "options": {
+        "A": "Unión Nacional de Trabajadores",
+        "B": "Confederación de Trabajadores de México",
+        "C": "Confederación de Trabajadores y Campesinos",
+        "D": "Confederación Revolucionaria de Obreros y Campesinos"
+      },
+      "answer": "B"
+    },
+    {
+      "n": 18,
+      "text": "Asociar al presidente con el movimiento social que se presentó durante su periodo de mandato.\n\n| Presidente | Movimiento social |\n|---|---|\n| 1. Gustavo Díaz Ordaz | A. Ferrocarrilero |\n| 2. Adolfo Ruiz Cortines | B. Médico |\n| 3. Adolfo López Mateos | C. Magisterial |",
+      "options": {
+        "A": "1C, 2A, 3B",
+        "B": "1C, 2B, 3A",
+        "C": "1B, 2A, 3C",
+        "D": "1B, 2C, 3A"
+      },
+      "answer": "D"
+    },
+    {
+      "n": 19,
+      "text": "Acuerdo firmado por el presidente Miguel de la Madrid en el que se establecía la apertura comercial, reducción de impuestos para exportaciones y el libre comercio de México.",
+      "options": {
+        "A": "TLCAN",
+        "B": "T-MEC",
+        "C": "OCDE",
+        "D": "GATT"
+      },
+      "answer": "D"
+    },
+    {
+      "n": 20,
+      "text": "Eventos acontecidos durante los gobiernos neoliberales en México.",
+      "options": {
+        "A": "Creación del PRI y concesión del voto a la mujer",
+        "B": "Desarrollo del nacionalismo económico y creación del PNR",
+        "C": "Incorporación a tratados comerciales y surgimiento del EZLN",
+        "D": "Fomento al modelo de desarrollo estabilizador y la fundación del IFE"
+      },
+      "answer": "C"
+    },
+    {
+      "n": 21,
+      "text": "En el materialismo histórico, los procesos de producción de bienes y servicios surgen en __________, que a su vez es la base de __________ que se compone por las relaciones sociales, políticas, ideológicas y culturales de un país.",
+      "options": {
+        "A": "los factores - el modelo",
+        "B": "la economía - el sistema",
+        "C": "el modelo - la infraestructura",
+        "D": "la estructura - la superestructura"
+      },
+      "answer": "D"
+    },
+    {
+      "n": 22,
+      "text": "¿Cómo se le llama a todo aquello que ayuda a los procesos productivos en los que incurre el ser humano?",
+      "options": {
+        "A": "Modos de producción",
+        "B": "Fuerzas de producción",
+        "C": "Estructuras productivas",
+        "D": "Relaciones de producción"
+      },
+      "answer": "B"
+    },
+    {
+      "n": 23,
+      "text": "Periodos de expansión y de contracción que experimenta una economía en un lapso determinado ocasionados por la oferta y demanda de productos, el nivel de empleo y la productividad.",
+      "options": {
+        "A": "Ciclo económico",
+        "B": "Balanza comercial",
+        "C": "Variables económicas",
+        "D": "Cantidad de producción"
+      },
+      "answer": "A"
+    },
+    {
+      "n": 24,
+      "text": "¿A qué suceso ocurrido en Nueva York en 1929 se le llamó como jueves negro?",
+      "options": {
+        "A": "Crisis hipotecaria por el descontrol de los precios de las viviendas",
+        "B": "Implementación de políticas proteccionistas para frenar la inflación",
+        "C": "Hundimiento de la bolsa de valores que ocasionó la ruina de los inversores",
+        "D": "Establecimiento del patrón oro como refuerzo monetario de la economía mundial"
+      },
+      "answer": "C"
+    },
+    {
+      "n": 25,
+      "text": "Elegir los acontecimientos que sucedieron durante la Segunda Guerra Mundial.\n\n1. Ataque del ejército alemán a la ciudad de Stalingrado.\n2. Hundimiento del trasatlántico británico llamado Lusitania.\n3. Bombardeo a la base militar estadounidense en el Pacifico.\n4. Formalización de la unión entre Alemania nazi, Italia y Japón.\n5. Creación y detonación de la primera bomba atómica de la URSS.\n6. Declaración de guerra a Serbia por el asesinato del archiduque Francisco Fernando de Austria.",
+      "options": {
+        "A": "1, 3, 4",
+        "B": "1, 4, 6",
+        "C": "2, 3, 4",
+        "D": "2, 5, 6"
+      },
+      "answer": "A"
+    },
+    {
+      "n": 26,
+      "text": "Ordenar cronológicamente los eventos históricos ocurridos entre 1914 y 1991 que dieron lugar al nuevo orden geopolítico.\n\n1. Invasión del ejército alemán a territorios de Polonia.\n2. Conflicto ideológico entre Estados Unidos y la URSS.\n3. La Gran Guerra protagonizada por Francia, Gran Bretaña y Alemania.\n4. Crisis financiera que inició en EU y que posteriormente se propagó por el mundo.",
+      "options": {
+        "A": "1, 2, 4, 3",
+        "B": "1, 4, 3, 2",
+        "C": "3, 4, 1, 2",
+        "D": "3, 1, 2, 4"
+      },
+      "answer": "C"
+    },
+    {
+      "n": 27,
+      "text": "Relacionar el tratado internacional que se conformó después de la Segunda Guerra Mundial con su contenido.\n\n| Tratado Internacional | Contenido |\n|---|---|\n| 1. Plan Marshall | A. Compromiso colectivo contra el avance comunista estableciendo una organización con alianza defensiva multinacional. |\n| 2. Bretton Woods | B. Sistema de seguridad colectiva con un ejército conjunto y un mando unificado de las fuerzas soviéticas y países socialistas. |\n| 3. Pacto de Varsovia | C. Ayuda financiera para la reconstrucción económica de los países europeos democráticos-capitalistas. |\n| 4. Organización del Tratado del Atlántico Norte | D. Reconstrucción de la economía mundial después de la Segunda Guerra Mundial a través de un régimen internacional monetario. |",
+      "options": {
+        "A": "1B, 2C, 3D, 4A",
+        "B": "1B, 2C, 3A, 4D",
+        "C": "1C, 2D, 3B, 4A",
+        "D": "1C, 2A, 3B, 4D"
+      },
+      "answer": "C"
+    },
+    {
+      "n": 28,
+      "text": "Después de la __________, hubo una guerra estratégica entre Estados Unidos y la Unión Soviética que concluyó con __________ en 1989.",
+      "options": {
+        "A": "Guerra de Corea - el bombardeo atómico",
+        "B": "crisis de los misiles - la Revolución Cubana",
+        "C": "Primera Guerra Mundial - la creación de la OTAN",
+        "D": "Segunda Guerra Mundial - la caída del Muro de Berlín"
+      },
+      "answer": "D"
+    },
+    {
+      "n": 29,
+      "text": "Los índices para medir el crecimiento económico son de tipo __________, a diferencia de los índices __________ que se utilizan para medir el desarrollo económico de un país.",
+      "options": {
+        "A": "real - nominales",
+        "B": "nominal - reales",
+        "C": "cualitativo - cuantitativos",
+        "D": "cuantitativo - cualitativos"
+      },
+      "answer": "D"
+    },
+    {
+      "n": 30,
+      "text": "Es la representación de un concepto económico que puede ser medible y que arroja información para el análisis de la economía.",
+      "options": {
+        "A": "Variables económicas",
+        "B": "Modelo económico",
+        "C": "Teorías económicas",
+        "D": "Política económica"
+      },
+      "answer": "A"
+    },
+    {
+      "n": 31,
+      "text": "¿Qué es un modelo económico?",
+      "options": {
+        "A": "Principios y leyes para la regulación de la economía",
+        "B": "Conjunto de ecuaciones matemáticas que simplifican la realidad",
+        "C": "Grupo de indicadores de la actividad económica que presenta un país",
+        "D": "Grupo de medidas implementadas por el Estado para el desarrollo económico"
+      },
+      "answer": "B"
+    },
+    {
+      "n": 32,
+      "text": "Asociar el modelo económico implementado en México con el o los presidentes que lo representaba.\n\n| Modelo económico | Presidente (s) |\n|---|---|\n| 1. Sustitución de Importaciones | A. José López Portillo |\n| 2. Desarrollo Estabilizador | B. Manuel Ávila Camacho y Miguel Alemán |\n| 3. Desarrollo Compartido | C. Miguel de la Madrid Hurtado y Carlos Salinas de Gortari |\n| 4. Crecimiento Acelerado | D. Adolfo López Mateos y Gustavo Díaz Ordaz |\n| 5. Neoliberal | E. Luis Echeverría Álvarez |",
+      "options": {
+        "A": "1B, 2D, 3A, 4E, 5C",
+        "B": "1B, 2D, 3E, 4A, 5C",
+        "C": "1D, 2C, 3B, 4E, 5A",
+        "D": "1D, 2B, 3C, 4A, 5E"
+      },
+      "answer": "B"
+    },
+    {
+      "n": 33,
+      "text": "Identificar los elementos que conforman a los factores de la producción.\n\n1. Costos\n2. Capital\n3. Ingreso\n4. Trabajo\n5. Consumo\n6. Tecnología",
+      "options": {
+        "A": "1, 3, 6",
+        "B": "1, 2, 5",
+        "C": "2, 4, 6",
+        "D": "2, 3, 5"
+      },
+      "answer": "C"
+    },
+    {
+      "n": 34,
+      "text": "¿Cuál es la importancia de los sectores económicos en un país?",
+      "options": {
+        "A": "Dividir las cuentas nacionales para integrar mercados",
+        "B": "Mejorar la tasa de interés en las inversiones extranjeras",
+        "C": "Diversificar los mercados internacionales para la apertura económica",
+        "D": "Interrelacionar las actividades para el crecimiento y desarrollo económico"
+      },
+      "answer": "D"
+    },
+    {
+      "n": 35,
+      "text": "Más acceso a flujos de capital, mejor tecnología y beneficio de los mercados internos y externos son características de:",
+      "options": {
+        "A": "la sectorización",
+        "B": "la globalización",
+        "C": "las políticas económicas",
+        "D": "los modelos económicos"
+      },
+      "answer": "B"
+    },
+    {
+      "n": 36,
+      "text": "La __________, la __________ y la __________ son efectos negativos que ha provocado el proceso de globalización en los países en desarrollo.",
+      "options": {
+        "A": "apertura comercial - identidad cultural - mano de obra barata",
+        "B": "diferencia de ingresos - explotación de recursos - desigualdad",
+        "C": "diversidad cultural - expansión de mercados - pérdida de empleos",
+        "D": "intervención extranjera - concentración de capital - extensión de derechos"
+      },
       "answer": "B"
     },
     {
       "n": 37,
       "text": "Entidades independientes sin fines de lucro que fomentan proyectos de desarrollo social y cultural que surgen por las iniciativas civiles.",
-      "options": { "A": "Organizaciones no gubernamentales", "B": "Organismos gubernamentales", "C": "Instituciones de voluntariado", "D": "Fundaciones caritativas" },
+      "options": {
+        "A": "Organizaciones no gubernamentales",
+        "B": "Organismos gubernamentales",
+        "C": "Instituciones de voluntariado",
+        "D": "Fundaciones caritativas"
+      },
       "answer": "A"
     },
     {
       "n": 38,
       "text": "En ____ se aprobó la Declaración __________ de los Derechos Humanos para la protección de los ciudadanos y el desarrollo amistoso entre naciones en la que se consideró el régimen de Derecho mundial.",
-      "options": { "A": "1980 - de Acción", "B": "1958 - Rectora", "C": "1948 - Universal", "D": "1940 - Unida" },
+      "options": {
+        "A": "1980 - de Acción",
+        "B": "1958 - Rectora",
+        "C": "1948 - Universal",
+        "D": "1940 - Unida"
+      },
       "answer": "C"
     },
     {
       "n": 39,
       "text": "En ____, durante el gobierno de __________, se aprobó el Código Federal de Instituciones y Procedimientos Electorales con el propósito de mantener un proceso electoral limpio.",
-      "options": { "A": "1990 - Carlos Salinas de Gortari", "B": "1983 - Miguel de la Madrid Hurtado", "C": "1973 - Luis Echeverría Álvarez", "D": "1968 - Gustavo Díaz Ordaz" },
+      "options": {
+        "A": "1990 - Carlos Salinas de Gortari",
+        "B": "1983 - Miguel de la Madrid Hurtado",
+        "C": "1973 - Luis Echeverría Álvarez",
+        "D": "1968 - Gustavo Díaz Ordaz"
+      },
       "answer": "A"
     },
     {
       "n": 40,
       "text": "Es el ejercicio activo de la ciudadanía que se realiza para la toma de decisiones, manejo de recursos públicos y mejoras en el entorno social.",
-      "options": { "A": "Participación ciudadana", "B": "Comités organizadores", "C": "Compromiso cívico", "D": "Voluntariado" },
+      "options": {
+        "A": "Participación ciudadana",
+        "B": "Comités organizadores",
+        "C": "Compromiso cívico",
+        "D": "Voluntariado"
+      },
       "answer": "A"
     }
   ]

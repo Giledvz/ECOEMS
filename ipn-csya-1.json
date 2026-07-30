@@ -1,0 +1,2052 @@
+{
+  "exam": {
+    "title": "Simulacro IPN — Ciencias Sociales y Administrativas",
+    "group": "IPN",
+    "date": "2026-07-30",
+    "version": "1.0",
+    "total_questions": 140,
+    "students": [],
+    "instructions": "Examen de 140 reactivos de opción múltiple con la distribución oficial del IPN para esta área. Selecciona la opción correcta para cada pregunta. No se permite el uso de calculadora.",
+    "source": "Reactivos tomados del Material de Apoyo al Aprendizaje 2026, Instituto Politécnico Nacional. Respuestas verificadas contra las tablas de Respuestas Correctas (RC) de la propia guía.",
+    "sections": [
+      {
+        "subject": "Matemáticas",
+        "questions_count": 37,
+        "questions": [
+          {
+            "id": 1,
+            "topic": "PM.8",
+            "topic_name": "Secuencias",
+            "text": "Determinar la letra que continúa en la sucesión:\n\n$A, C, F, J, L, \\tilde{N}, R, \\ldots$",
+            "options": {
+              "A": "T",
+              "B": "U",
+              "C": "V",
+              "D": "W"
+            },
+            "answer": "A",
+            "_src": "pensamiento-matematico · reactivo 8"
+          },
+          {
+            "id": 2,
+            "topic": "PM.9",
+            "topic_name": "Secuencias",
+            "text": "Identificar el enésimo término de la siguiente sucesión:\n\n$\\dfrac{5}{6}, \\dfrac{10}{13}, \\dfrac{15}{20}, \\dfrac{20}{27}, \\ldots$",
+            "options": {
+              "A": "$\\dfrac{5n}{7n+1}$",
+              "B": "$\\dfrac{5n}{7n-1}$",
+              "C": "$\\dfrac{10n}{7n+1}$",
+              "D": "$\\dfrac{10n}{7n-1}$"
+            },
+            "answer": "B",
+            "_src": "pensamiento-matematico · reactivo 9"
+          },
+          {
+            "id": 3,
+            "topic": "PM.10",
+            "topic_name": "Secuencias",
+            "text": "¿Cuál de las siguientes expresiones corresponde a una sucesión geométrica para $n = 1, 2, 3, \\ldots$?",
+            "options": {
+              "A": "$2n^{3}$",
+              "B": "$3(2)^{n-1}$",
+              "C": "$n^{2}+n+2$",
+              "D": "$6+12(n-1)$"
+            },
+            "answer": "B",
+            "_src": "pensamiento-matematico · reactivo 10"
+          },
+          {
+            "id": 4,
+            "topic": "PM.12",
+            "topic_name": "Secuencias",
+            "text": "Si los términos:\n\n$\\ldots, 3^{x+2}, 3^{x+3}, 135, \\ldots$\n\npertenecen a una sucesión aritmética. ¿Cuál es el valor de $x$?",
+            "options": {
+              "A": "1",
+              "B": "2",
+              "C": "3",
+              "D": "4"
+            },
+            "answer": "A",
+            "_src": "pensamiento-matematico · reactivo 12"
+          },
+          {
+            "id": 5,
+            "topic": "PM.19",
+            "topic_name": "Geometría espacial",
+            "text": "Se tiene un triángulo $ABC$ con los vértices $A(-1,1)$, $B(1,3)$ y $C(2,2)$. ¿Cuál es la suma de las ordenadas de los vértices del triángulo $ABC$ después de reflejarlo con respecto a la recta $L: y = -0.5$?",
+            "options": {
+              "A": "6",
+              "B": "4",
+              "C": "2",
+              "D": "-9"
+            },
+            "answer": "D",
+            "_src": "pensamiento-matematico · reactivo 19"
+          },
+          {
+            "id": 6,
+            "topic": "PM.32",
+            "topic_name": "Análisis de datos",
+            "text": "La media aritmética de 50 números enteros consecutivos es $42.5$. ¿Cuál es el número menor?",
+            "options": {
+              "A": "15",
+              "B": "16",
+              "C": "17",
+              "D": "18"
+            },
+            "answer": "D",
+            "_src": "pensamiento-matematico · reactivo 32"
+          },
+          {
+            "id": 7,
+            "topic": "ALG.8",
+            "topic_name": "Expresiones algebraicas",
+            "text": "Relacionar los enunciados con la expresión que le corresponde.\n\n| Enunciado | Expresión |\n|---|---|\n| 1. El doble del cubo de un número. | A. $(3n)^{2}$ |\n| 2. El cubo del doble de un número. | B. $2n^{3}$ |\n| 3. El triple del cuadrado de un número. | C. $(2n)^{3}$ |\n| 4. El cuadrado del triple de un número. | D. $3n^{2}$ |",
+            "options": {
+              "A": "1B, 2C, 3A, 4D",
+              "B": "1B, 2C, 3D, 4A",
+              "C": "1C, 2B, 3A, 4D",
+              "D": "1C, 2B, 3D, 4A"
+            },
+            "answer": "B",
+            "_src": "algebra · reactivo 8"
+          },
+          {
+            "id": 8,
+            "topic": "ALG.9",
+            "topic_name": "Expresiones algebraicas",
+            "text": "Transformar al lenguaje matemático el enunciado: El producto de tres números pares consecutivos.",
+            "options": {
+              "A": "$(x)(x+1)(x+2)$",
+              "B": "$(x)(x+2)(x+4)$",
+              "C": "$(2x)(2x+1)(2x+2)$",
+              "D": "$(2x)(2x+2)(2x+4)$"
+            },
+            "answer": "D",
+            "_src": "algebra · reactivo 9"
+          },
+          {
+            "id": 9,
+            "topic": "ALG.10",
+            "topic_name": "Expresiones algebraicas",
+            "text": "¿Cuántas fracciones propias positivas, que son menores que $\\dfrac{11}{13}$ y cuyos términos son números enteros consecutivos, existen?",
+            "options": {
+              "A": "4",
+              "B": "5",
+              "C": "6",
+              "D": "7"
+            },
+            "answer": "B",
+            "_src": "algebra · reactivo 10"
+          },
+          {
+            "id": 10,
+            "topic": "ALG.11",
+            "topic_name": "Expresiones algebraicas",
+            "text": "Realizar la siguiente suma de fracciones.\n\n$$R = \\frac{2x^{2}}{x+2} + \\frac{2x^{2}}{x-2} - \\frac{8}{x+2} - \\frac{8}{x-2}$$",
+            "options": {
+              "A": "$4x$",
+              "B": "$-4x$",
+              "C": "$x+4$",
+              "D": "$x-4$"
+            },
+            "answer": "D",
+            "_src": "algebra · reactivo 11"
+          },
+          {
+            "id": 11,
+            "topic": "ALG.13",
+            "topic_name": "Expresiones algebraicas",
+            "text": "Realizar la división de fracciones.\n\n$$N = \\frac{\\sqrt{x}+2}{x+4} \\div \\frac{x-4}{\\sqrt{x}-2}$$",
+            "options": {
+              "A": "$\\dfrac{1}{x-4}$",
+              "B": "$\\dfrac{1}{x+4}$",
+              "C": "$x-4$",
+              "D": "$x+4$"
+            },
+            "answer": "B",
+            "_src": "algebra · reactivo 13"
+          },
+          {
+            "id": 12,
+            "topic": "ALG.14",
+            "topic_name": "Expresiones algebraicas",
+            "text": "Reducir la expresión:\n\n$$S = \\sqrt[k]{\\frac{b}{\\sqrt[\\beta]{b}}}$$\n\nSabiendo que se cumple la condición:\n\n$$\\beta k - \\beta + 1 = 0$$",
+            "options": {
+              "A": "$b^{0}$",
+              "B": "$b^{1}$",
+              "C": "$b^{2}$",
+              "D": "$b^{3}$"
+            },
+            "answer": "B",
+            "_src": "algebra · reactivo 14"
+          },
+          {
+            "id": 13,
+            "topic": "GT.8",
+            "topic_name": "Funciones exponenciales y logarítmicas",
+            "text": "Determinar el producto de las raíces de la ecuación:\n\n$$\\left(\\log_{3}x\\right)^{2} - 5\\log_{3}x - 24 = 0$$",
+            "options": {
+              "A": "$3^{5}$",
+              "B": "$3^{7}$",
+              "C": "$3^{11}$",
+              "D": "$3^{13}$"
+            },
+            "answer": "A",
+            "_src": "geometria-trigonometria · reactivo 8"
+          },
+          {
+            "id": 14,
+            "topic": "GT.20",
+            "topic_name": "Geometría euclidiana",
+            "text": "¿Cómo se llama el polígono regular cuya suma de las medidas de sus ángulos externos es igual a la suma de las medidas de sus ángulos internos reducida en $1260°$?",
+            "options": {
+              "A": "Decágono",
+              "B": "Undecágono",
+              "C": "Tetradecágono",
+              "D": "Pentadecágono"
+            },
+            "answer": "B",
+            "_src": "geometria-trigonometria · reactivo 20"
+          },
+          {
+            "id": 15,
+            "topic": "GT.22",
+            "topic_name": "Geometría euclidiana",
+            "text": "Calcular el número de diagonales de un polígono regular cuyo ángulo exterior mide $30°$.",
+            "options": {
+              "A": "27",
+              "B": "35",
+              "C": "44",
+              "D": "54"
+            },
+            "answer": "D",
+            "_src": "geometria-trigonometria · reactivo 22"
+          },
+          {
+            "id": 16,
+            "topic": "GT.27",
+            "topic_name": "Geometría euclidiana",
+            "text": "La medida de un ángulo __________ a una circunferencia es igual a la mitad de la diferencia de las medidas de los arcos comprendidos por sus lados.",
+            "options": {
+              "A": "inscrito",
+              "B": "interior",
+              "C": "exterior",
+              "D": "semi inscrito"
+            },
+            "answer": "C",
+            "_src": "geometria-trigonometria · reactivo 27"
+          },
+          {
+            "id": 17,
+            "topic": "GT.30",
+            "topic_name": "Funciones trigonométricas",
+            "text": "Determinar el rango de la función:\n\n$$f(x) = \\cos^{2}x + 2\\cos x + 1$$",
+            "options": {
+              "A": "$[0,4]$",
+              "B": "$[4,0]$",
+              "C": "$[-4,0]$",
+              "D": "$[0,-4]$"
+            },
+            "answer": "A",
+            "_src": "geometria-trigonometria · reactivo 30"
+          },
+          {
+            "id": 18,
+            "topic": "GA.10",
+            "topic_name": "Conceptos básicos",
+            "text": "Determinar la distancia entre las rectas paralelas $2x+5y-3=0$ y $2x+5y-15=0$.",
+            "options": {
+              "A": "$\\dfrac{12}{29}\\sqrt{29}$",
+              "B": "$\\dfrac{18}{29}\\sqrt{29}$",
+              "C": "$\\dfrac{12}{5}$",
+              "D": "$\\dfrac{18}{5}$"
+            },
+            "answer": "A",
+            "_src": "geometria-analitica · reactivo 10"
+          },
+          {
+            "id": 19,
+            "topic": "GA.11",
+            "topic_name": "Conceptos básicos",
+            "text": "Hallar la ecuación de la recta cuya pendiente es 2, y que pasa por el punto de intersección de las rectas $5x-2y=-8$ y $x-6y=4$.",
+            "options": {
+              "A": "$2x-y+1=0$",
+              "B": "$2x-y+3=0$",
+              "C": "$x-2y-1=0$",
+              "D": "$x-2y-3=0$"
+            },
+            "answer": "B",
+            "_src": "geometria-analitica · reactivo 11"
+          },
+          {
+            "id": 20,
+            "topic": "GA.12",
+            "topic_name": "Conceptos básicos",
+            "text": "Determinar el valor de $a$ para el cual las rectas $\\ell_{1}$ y $\\ell_{2}$ son paralelas.\n\n$$\\ell_{1}: 2x-7y+3=0$$\n$$\\ell_{2}: x+ay-2=0$$",
+            "options": {
+              "A": "$-\\dfrac{7}{2}$",
+              "B": "$-\\dfrac{2}{7}$",
+              "C": "$\\dfrac{2}{7}$",
+              "D": "$\\dfrac{7}{2}$"
+            },
+            "answer": "A",
+            "_src": "geometria-analitica · reactivo 12"
+          },
+          {
+            "id": 21,
+            "topic": "GA.14",
+            "topic_name": "Cónicas",
+            "text": "Hallar la ecuación de la circunferencia cuyo centro es el punto $C(2,-4)$ y que pasa por el punto $A(-1,0)$.",
+            "options": {
+              "A": "$x^{2}+y^{2}+4x-8y-5=0$",
+              "B": "$x^{2}+y^{2}-4x+8y-5=0$",
+              "C": "$x^{2}+y^{2}+4x-8y+45=0$",
+              "D": "$x^{2}+y^{2}-4x+8y+45=0$"
+            },
+            "answer": "B",
+            "_src": "geometria-analitica · reactivo 14"
+          },
+          {
+            "id": 22,
+            "topic": "GA.15",
+            "topic_name": "Cónicas",
+            "text": "Determinar la ecuación de la circunferencia con centro en $C(1,2)$ y que es tangente a la recta $x-y+10=0$.",
+            "options": {
+              "A": "$x^{2}+y^{2}-2x-4y-\\dfrac{71}{2}=0$",
+              "B": "$x^{2}+y^{2}+2x+4y-\\dfrac{71}{2}=0$",
+              "C": "$x^{2}+y^{2}-4x-2y-\\dfrac{71}{2}=0$",
+              "D": "$x^{2}+y^{2}+4x+2y-\\dfrac{71}{2}=0$"
+            },
+            "answer": "A",
+            "_src": "geometria-analitica · reactivo 15"
+          },
+          {
+            "id": 23,
+            "topic": "CD.7",
+            "topic_name": "Funciones, límites y continuidad",
+            "text": "Determinar el conjunto solución de la desigualdad.\n\n$$\\left|\\frac{x-4}{x-\\sqrt{2}}\\right| < 0$$",
+            "options": {
+              "A": "$x>4$",
+              "B": "$x>\\sqrt{2}$",
+              "C": "$\\left\\{\\sqrt{2},4\\right\\}$",
+              "D": "$\\varnothing$"
+            },
+            "answer": "D",
+            "_src": "calculo-diferencial · reactivo 7"
+          },
+          {
+            "id": 24,
+            "topic": "CD.8",
+            "topic_name": "Funciones, límites y continuidad",
+            "text": "Determinar el conjunto solución de la desigualdad.\n\n$$|x-1| < |2x+3|$$",
+            "options": {
+              "A": "$(\\infty,-4)\\cup\\left(\\frac{2}{3},\\infty\\right)$",
+              "B": "$(-\\infty,-4)\\cup\\left(-\\frac{2}{3},\\infty\\right)$",
+              "C": "$\\left(\\infty,\\frac{2}{3}\\right)\\cup(4,\\infty)$",
+              "D": "$\\left(\\infty,-\\frac{2}{3}\\right)\\cup(4,\\infty)$"
+            },
+            "answer": "B",
+            "_src": "calculo-diferencial · reactivo 8"
+          },
+          {
+            "id": 25,
+            "topic": "CD.9",
+            "topic_name": "Funciones, límites y continuidad",
+            "text": "Calcular el valor del límite.\n\n$$\\lim_{x\\to 3}\\frac{\\sqrt{3x}-3}{\\sqrt{2x-4}-\\sqrt{2}}$$",
+            "options": {
+              "A": "$\\dfrac{1}{2}$",
+              "B": "1",
+              "C": "$\\sqrt{2}$",
+              "D": "$\\dfrac{1}{\\sqrt{2}}$"
+            },
+            "answer": "D",
+            "_src": "calculo-diferencial · reactivo 9"
+          },
+          {
+            "id": 26,
+            "topic": "CD.10",
+            "topic_name": "Funciones, límites y continuidad",
+            "text": "Determinar el valor del límite.\n\n$$\\lim_{x\\to 1}\\frac{\\sqrt{x}-\\sqrt[3]{x}}{x-1}$$",
+            "options": {
+              "A": "$\\dfrac{1}{2}$",
+              "B": "$\\dfrac{1}{3}$",
+              "C": "$\\dfrac{1}{5}$",
+              "D": "$\\dfrac{1}{6}$"
+            },
+            "answer": "D",
+            "_src": "calculo-diferencial · reactivo 10"
+          },
+          {
+            "id": 27,
+            "topic": "CD.12",
+            "topic_name": "Funciones, límites y continuidad",
+            "text": "Calcular el valor del límite.\n\n$$\\lim_{x\\to 0}\\frac{\\mathrm{sen}\\left(\\pi\\cos^{2}x\\right)}{x^{2}}$$",
+            "options": {
+              "A": "0",
+              "B": "1",
+              "C": "$\\pi$",
+              "D": "$2\\pi$"
+            },
+            "answer": "C",
+            "_src": "calculo-diferencial · reactivo 12"
+          },
+          {
+            "id": 28,
+            "topic": "CI.7",
+            "topic_name": "Integral indefinida",
+            "text": "Relacionar cada una de las integrales con la fórmula que se utiliza para resolverla.\n\n| Integral | Fórmula |\n|---|---|\n| 1. $\\int\\dfrac{dx}{x^{2}+2x}$ | A) $\\int\\dfrac{du}{u^{2}+a^{2}}$ |\n| 2. $\\int\\dfrac{dx}{\\tan x}$ | B) $\\int\\dfrac{du}{u}$ |\n| 3. $\\int\\dfrac{dx}{x^{2}+2x+2}$ | C) $\\int e^{u}du$ |\n| 4. $\\int\\dfrac{dx}{e^{x}}$ | D) $\\int\\dfrac{du}{u^{2}-a^{2}}$ |",
+            "options": {
+              "A": "1B, 2A, 3D, 4C",
+              "B": "1B, 2D, 3C, 4A",
+              "C": "1D, 2B, 3A, 4C",
+              "D": "1D, 2C, 3B, 4A"
+            },
+            "answer": "C",
+            "_src": "calculo-integral · reactivo 7"
+          },
+          {
+            "id": 29,
+            "topic": "CI.8",
+            "topic_name": "Integral indefinida",
+            "text": "Resolver la integral.\n\n$$\\int \\frac{dx}{\\sqrt{x+3}-\\sqrt{x-3}}$$",
+            "options": {
+              "A": "$\\dfrac{\\sqrt{(x+3)^{3}}-\\sqrt{(x-3)^{3}}}{9}+C$",
+              "B": "$\\dfrac{\\sqrt{(x+3)^{3}}+\\sqrt{(x-3)^{3}}}{9}+C$",
+              "C": "$\\dfrac{\\sqrt{(x+3)^{3}}+\\sqrt{(x-3)^{3}}}{3}+C$",
+              "D": "$\\dfrac{\\sqrt{(x+3)^{3}}-\\sqrt{(x-3)^{3}}}{3}+C$"
+            },
+            "answer": "B",
+            "_src": "calculo-integral · reactivo 8"
+          },
+          {
+            "id": 30,
+            "topic": "CI.9",
+            "topic_name": "Integral indefinida",
+            "text": "Resolver la integral.\n\n$$\\int \\frac{dx}{\\sqrt{4x^{2}+24x+36}}$$",
+            "options": {
+              "A": "$\\dfrac{1}{6}\\arctan\\left(\\dfrac{x}{6}\\right)+c$",
+              "B": "$6\\arctan\\left(\\dfrac{x}{6}\\right)+c$",
+              "C": "$\\dfrac{1}{2}\\ln|x+3|+C$",
+              "D": "$2\\ln|x+3|+C$"
+            },
+            "answer": "C",
+            "_src": "calculo-integral · reactivo 9"
+          },
+          {
+            "id": 31,
+            "topic": "CI.10",
+            "topic_name": "Integral indefinida",
+            "text": "Resolver la integral.\n\n$$\\int \\frac{dx}{x^{2}+4x-12}$$",
+            "options": {
+              "A": "$\\dfrac{1}{8}\\ln\\left|\\dfrac{x-6}{x+4}\\right|+C$",
+              "B": "$\\dfrac{1}{8}\\ln\\left|\\dfrac{x+4}{x-6}\\right|+C$",
+              "C": "$\\dfrac{1}{8}\\ln\\left|\\dfrac{x-4}{x+6}\\right|+C$",
+              "D": "$\\dfrac{1}{8}\\ln\\left|\\dfrac{x-2}{x+6}\\right|+C$"
+            },
+            "answer": "D",
+            "_src": "calculo-integral · reactivo 10"
+          },
+          {
+            "id": 32,
+            "topic": "CI.11",
+            "topic_name": "Métodos de integración",
+            "text": "Resolver la integral.\n\n$$\\int (x+2)\\left(x^{2}+4x+\\frac{7}{5}\\right)^{3}dx$$",
+            "options": {
+              "A": "$\\dfrac{3\\left(x^{2}+4x+\\frac{7}{5}\\right)^{4}}{4}+C$",
+              "B": "$3\\left(x^{2}+4x+\\dfrac{7}{5}\\right)^{2}+C$",
+              "C": "$\\dfrac{\\left(x^{2}+4x+\\frac{7}{5}\\right)^{4}}{4}+C$",
+              "D": "$\\dfrac{\\left(x^{2}+4x+\\frac{7}{5}\\right)^{4}}{8}+C$"
+            },
+            "answer": "D",
+            "_src": "calculo-integral · reactivo 11"
+          },
+          {
+            "id": 33,
+            "topic": "PE.31",
+            "topic_name": "Estadística descriptiva",
+            "text": "Determinar el porcentaje de resultados que hay entre $\\bar{x}-\\sigma$ y $\\bar{x}+\\sigma$",
+            "options": {
+              "A": "30%",
+              "B": "35%",
+              "C": "40%",
+              "D": "45%"
+            },
+            "answer": "D",
+            "_src": "probabilidad-estadistica · reactivo 31"
+          },
+          {
+            "id": 34,
+            "topic": "PE.32",
+            "topic_name": "Estadística descriptiva",
+            "text": "Determinar el porcentaje de lanzamientos que se han obtenido con una puntuación menor a la media.",
+            "options": {
+              "A": "40%",
+              "B": "42%",
+              "C": "44%",
+              "D": "46%"
+            },
+            "answer": "B",
+            "_src": "probabilidad-estadistica · reactivo 32"
+          },
+          {
+            "id": 35,
+            "topic": "PE.33",
+            "topic_name": "Estadística descriptiva",
+            "text": "Determinar el porcentaje de lanzamientos que se han obtenido con una puntuación mayor a la media.",
+            "options": {
+              "A": "48%",
+              "B": "50%",
+              "C": "54%",
+              "D": "58%"
+            },
+            "answer": "D",
+            "_src": "probabilidad-estadistica · reactivo 33"
+          },
+          {
+            "id": 36,
+            "topic": "PE.35",
+            "topic_name": "Estadística descriptiva",
+            "text": "Determinar la media de los cuadrados de los primeros $n$ números naturales",
+            "options": {
+              "A": "$\\dfrac{n+1}{6}$",
+              "B": "$\\dfrac{n^{2}+2n+1}{6}$",
+              "C": "$\\dfrac{2n^{2}+3n+1}{6}$",
+              "D": "$\\dfrac{4n^{2}+4n+1}{6}$"
+            },
+            "answer": "C",
+            "_src": "probabilidad-estadistica · reactivo 35"
+          },
+          {
+            "id": 37,
+            "topic": "PE.36",
+            "topic_name": "Estadística descriptiva",
+            "text": "La media de un grupo de personas es $\\bar{x}_{1}=400$, un segundo grupo tiene media $\\bar{x}_{2}=480$. Si se juntan los dos grupos la nueva media es $\\bar{x}=430$, determinar la razón del número de personas del primer grupo al número de personas del segundo grupo.",
+            "options": {
+              "A": "$\\dfrac{5}{2}$",
+              "B": "$\\dfrac{5}{3}$",
+              "C": "$\\dfrac{5}{4}$",
+              "D": "1"
+            },
+            "answer": "B",
+            "_src": "probabilidad-estadistica · reactivo 36"
+          }
+        ]
+      },
+      {
+        "subject": "Competencia escrita",
+        "questions_count": 20,
+        "questions": [
+          {
+            "id": 38,
+            "topic": "CE.43",
+            "topic_name": "Redacción académica",
+            "text": "¿Qué párrafo está escrito con lenguaje especializado?",
+            "options": {
+              "A": "La investigación se realizó con estudiantes de bachillerato de la unidad educativa Fe y Alegría del cantón Quero, provincia Tungurahua, del Ecuador",
+              "B": "La aplicación de juegos en la educación revitaliza la enseñanza de las ciencias naturales mediante actividades interactivas, haciendo atractivo el proceso escolar",
+              "C": "Se concluye que la aplicación de juegos es una estrategia innovadora y efectiva en la enseñanza de la Biología, la cual, mejora la comprensión de conceptos y promueve la colaboración",
+              "D": "Durante la pandemia fue necesario apoyarse de herramientas virtuales como estrategia pedagógica que involucrara a los estudiantes en plataformas digitales como Wordwall, Blooket y Quizizz"
+            },
+            "answer": "D",
+            "_src": "competencia-escrita · reactivo 43"
+          },
+          {
+            "id": 39,
+            "topic": "CE.44",
+            "topic_name": "Redacción académica",
+            "text": "De acuerdo con la metodología de la investigación documental científica, después de la redacción de los objetivos sigue:",
+            "options": {
+              "A": "la elección del tema, la justificación y el planteamiento del problema",
+              "B": "el planteamiento del problema, el marco teórico y el esquema temático",
+              "C": "la organización de la información, el esquema temático y la elección del tema",
+              "D": "el marco teórico, la delimitación del tema y la elaboración del esquema temático"
+            },
+            "answer": "D",
+            "_src": "competencia-escrita · reactivo 44"
+          },
+          {
+            "id": 40,
+            "topic": "CE.45",
+            "topic_name": "Redacción académica",
+            "text": "Un objetivo particular de una investigación debe comenzar con __________ que responda a la pregunta:",
+            "options": {
+              "A": "una respuesta - ¿cómo se aplica el objetivo?",
+              "B": "un resultado - ¿para qué se elabora el trabajo?",
+              "C": "el sujeto de una oración - ¿para qué se realiza?",
+              "D": "un verbo en infinitivo - ¿qué se propone hacer?"
+            },
+            "answer": "D",
+            "_src": "competencia-escrita · reactivo 45"
+          },
+          {
+            "id": 41,
+            "topic": "CE.46",
+            "topic_name": "Redacción académica",
+            "text": "¿En qué tipo de instrumento es fundamental colocar datos como fuente, tema y texto?",
+            "options": {
+              "A": "Fichas de trabajo",
+              "B": "Fichas bibliográficas",
+              "C": "Fichas hemerográficas",
+              "D": "Fichas bibliohemerográficas"
+            },
+            "answer": "A",
+            "_src": "competencia-escrita · reactivo 46"
+          },
+          {
+            "id": 42,
+            "topic": "CE.47",
+            "topic_name": "Redacción académica",
+            "text": "Indicar el orden adecuado de los elementos del reporte final de investigación.\n\n1. Índice\n2. Fuentes de información\n3. Portada o carátula\n4. Anexos\n5. Introducción\n6. Desarrollo de contenidos\n7. Aparato crítico\n8. Conclusiones\n9. Glosario",
+            "options": {
+              "A": "9, 5, 1, 7, 6, 2, 8, 3, 4",
+              "B": "3, 5, 1, 6, 2, 9, 4, 7, 8",
+              "C": "3, 1, 5, 6, 7, 8, 2, 4, 9",
+              "D": "9, 3, 2, 1, 4, 5, 6, 7, 8"
+            },
+            "answer": "C",
+            "_src": "competencia-escrita · reactivo 47"
+          },
+          {
+            "id": 43,
+            "topic": "CE.48",
+            "topic_name": "Reporte de investigación",
+            "text": "Identificar el elemento del reporte de investigación donde se redactan, de manera coherente, las respuestas a las preguntas:\n\n*¿Por qué se hace el trabajo?*\n*¿Cuál es el método empleado?*\n*¿Cómo está pensado el trabajo?*\n*¿Cómo se presenta el contenido?*\n*¿Cuáles son las limitaciones y conclusiones?*\n*¿Cuál es el tema u objeto de estudio del trabajo?*",
+            "options": {
+              "A": "Índice",
+              "B": "Prólogo",
+              "C": "Introducción",
+              "D": "Aparato crítico"
+            },
+            "answer": "C",
+            "_src": "competencia-escrita · reactivo 48"
+          },
+          {
+            "id": 44,
+            "topic": "CE.49",
+            "topic_name": "Citas",
+            "text": "¿Cuál opción cita de manera correcta la información de una fuente primaria de acuerdo con las reglas APA?",
+            "options": {
+              "A": "(Majid et al., 2012) en el mercado de trabajo los empleadores buscan personas que sean confiables, creativas, con una comunicación efectiva, con iniciativa, que sean disciplinadas y que demuestren actitud positiva.",
+              "B": "En el mercado de trabajo los empleadores buscan personas que sean confiables, creativas, con una comunicación efectiva, con iniciativa, que sean disciplinadas y que demuestren actitud positiva (Majid et al., 2012).",
+              "C": "(Majid, Liming, Tong y Raihana, 2012), en el mercado de trabajo los empleadores buscan personas que sean confiables, creativas, con una comunicación efectiva, con iniciativa, que sean disciplinadas y que demuestren actitud positiva.",
+              "D": "En el mercado de trabajo los empleadores buscan personas que sean confiables, creativas, con una comunicación efectiva, con iniciativa, que sean disciplinadas y que demuestren actitud positiva (Majid, Liming, Tong y Raihana, 2012)."
+            },
+            "answer": "B",
+            "_src": "competencia-escrita · reactivo 49"
+          },
+          {
+            "id": 45,
+            "topic": "CE.50",
+            "topic_name": "Citas",
+            "text": "¿Qué tipo de cita presenta el párrafo?\n\n*Goleman (2001) define la inteligencia emocional como la capacidad de reconocer nuestros propios sentimientos y los de los demás, de motivarnos y de manejar adecuadamente las relaciones.*",
+            "options": {
+              "A": "Corta",
+              "B": "Larga",
+              "C": "Textual",
+              "D": "Parafraseo"
+            },
+            "answer": "D",
+            "_src": "competencia-escrita · reactivo 50"
+          },
+          {
+            "id": 46,
+            "topic": "CE.1",
+            "topic_name": "Concordancia gramatical",
+            "text": "Completar la oración con las palabras correctas.\n\n*El ganadero ascendió la montaña con __________ riesgo y dificultades para rescatar a una vaca y una oveja __________ y a __________ toros, yeguas y mulas __________ por su gran valor.*",
+            "options": {
+              "A": "extraordinario - lechera - unas - extranjeros",
+              "B": "extraordinarios - lechera - unas - extranjeras",
+              "C": "extraordinario - lecheras - unos - extranjeros",
+              "D": "extraordinarios - lecheras - unos - extranjeras"
+            },
+            "answer": "C",
+            "_src": "competencia-escrita · reactivo 1"
+          },
+          {
+            "id": 47,
+            "topic": "CE.2",
+            "topic_name": "Concordancia gramatical",
+            "text": "Elegir el pronombre que concuerda con la oración.\n\n*Nunca permitió que alguien ayudara a su causa. __________, delgada, moribunda, callada… Así siempre fue.*",
+            "options": {
+              "A": "Él",
+              "B": "Tú",
+              "C": "Yo",
+              "D": "Ella"
+            },
+            "answer": "D",
+            "_src": "competencia-escrita · reactivo 2"
+          },
+          {
+            "id": 48,
+            "topic": "CE.3",
+            "topic_name": "Concordancia gramatical",
+            "text": "Seleccionar la afirmación congruente con los elementos del enunciado.\n\n*Los estudiantes con la especialidad en Química, de la vocacional 6, salieron de práctica.*",
+            "options": {
+              "A": "Tiene errores de ortografía",
+              "B": "Integra palabras exclamativamente",
+              "C": "Presenta concordancia entre los elementos",
+              "D": "Contiene elementos gramaticales incorrectos"
+            },
+            "answer": "C",
+            "_src": "competencia-escrita · reactivo 3"
+          },
+          {
+            "id": 49,
+            "topic": "CE.4",
+            "topic_name": "Concordancia gramatical",
+            "text": "Seleccionar la oración escrita correctamente.",
+            "options": {
+              "A": "La multitud, al escuchar la alarma de incendio, salieron corriendo",
+              "B": "Después del discurso, la mitad de los asistentes salieron tranquilamente",
+              "C": "La mayoría están de acuerdo con las decisiones tomadas por los líderes",
+              "D": "El comité, junto con los representantes, revisaron el material con sumo cuidado"
+            },
+            "answer": "A",
+            "_src": "competencia-escrita · reactivo 4"
+          },
+          {
+            "id": 50,
+            "topic": "CE.5",
+            "topic_name": "Concordancia gramatical",
+            "text": "Elegir el sujeto adecuado para el predicado:\n\n*…es dañino para la salud.*",
+            "options": {
+              "A": "Fumar y beber alcohol",
+              "B": "El fumar y beber alcohol",
+              "C": "Fumar y el beber alcohol",
+              "D": "El fumar y el beber alcohol"
+            },
+            "answer": "A",
+            "_src": "competencia-escrita · reactivo 5"
+          },
+          {
+            "id": 51,
+            "topic": "CE.6",
+            "topic_name": "Concordancia gramatical",
+            "text": "Seleccionar el predicado correcto del sujeto:\n\n*El grupo de la Organización de las Naciones Unidas…*",
+            "options": {
+              "A": "lo hará promotor",
+              "B": "son los responsables",
+              "C": "eligieron la responsabilidad",
+              "D": "es el promotor de la Asamblea por la Paz"
+            },
+            "answer": "D",
+            "_src": "competencia-escrita · reactivo 6"
+          },
+          {
+            "id": 52,
+            "topic": "CE.7",
+            "topic_name": "Concordancia gramatical",
+            "text": "Identificar las oraciones sin errores de redacción.\n\n1. La calle de los eterno invitan a bailar.\n2. Las fiestas patrias son sinónimo de cultura.\n3. La Constitución Mexicana protege el derecho a la educación.\n4. Las piñatas, los papeles picados y la colación son mexicanas.\n5. Los festejos de septiembre, noviembre y diciembre es responsabilidad de los maestros.",
+            "options": {
+              "A": "1, 2, 5",
+              "B": "1, 2, 4",
+              "C": "2, 3, 4",
+              "D": "2, 4, 5"
+            },
+            "answer": "C",
+            "_src": "competencia-escrita · reactivo 7"
+          },
+          {
+            "id": 53,
+            "topic": "CE.8",
+            "topic_name": "Coherencia",
+            "text": "Identificar el tipo de organización de la información en el texto.\n\n*En la Expo ISISA 2024 se dieron cita las compañías más importantes de la industria automotriz mexicana con el objetivo de presentar sus avances en ingeniería y de ser un punto de encuentro con los alumnos y alumnas. Algo particular de este evento es la organización, pues siempre queda a cargo de un estudiante de la carrera; este año correspondió a Dafne Álvarez Cárdenas, alumna del octavo semestre de la Ingeniería en Sistemas Automotrices (ISISA).*",
+            "options": {
+              "A": "De lo general a lo particular",
+              "B": "De lo particular a lo general",
+              "C": "De lo frecuente a lo general",
+              "D": "De lo individual a lo particular"
+            },
+            "answer": "A",
+            "_src": "competencia-escrita · reactivo 8"
+          },
+          {
+            "id": 54,
+            "topic": "CE.9",
+            "topic_name": "Coherencia",
+            "text": "Ordenar los párrafos del cuento *El traductor de música* de Sergio Golwdiz siguiendo una progresión temática coherente.\n\n1. Trabajó con empeño, poniendo al servicio de su tesón todos sus conocimientos de ambas culturas, que no eran pocos, pero su obra no obtuvo el menor éxito.\n\n2. decidió traducir las fugas de Bach a la música china: intentó trasladar el lenguaje musical de Juan Sebastián al lenguaje musical de sus compatriotas.\n\n3. Pero ellos también se equivocaban: las fugas de Bach debieron permanecer inmutables; quienes debían haber sido traducidos eran los chinos.\n\n4. Un famoso musicólogo chino, tan familiarizado con la estética musical de Oriente como con la de Occidente, y dolido de que sus paisanos no comprendieran ni se emocionaran en absoluto con la música europea más reputada\n\n5. Según exegetas, había sido en ella demasiado «notarial», y lo que se necesitaba era una conversión, una traducción «musical».",
+            "options": {
+              "A": "1, 4, 2, 3, 5",
+              "B": "4, 2, 1, 5, 3",
+              "C": "1, 3, 2, 4, 5",
+              "D": "4, 1, 5, 2, 3"
+            },
+            "answer": "B",
+            "_src": "competencia-escrita · reactivo 9"
+          },
+          {
+            "id": 55,
+            "topic": "CE.10",
+            "topic_name": "Coherencia",
+            "text": "Ordenar los párrafos para formar un texto coherente.\n\n1. Este año, el tema elegido es Los satélites mejoran la vida, con el propósito de llamar la atención sobre la importancia de los satélites en la vida diaria y cómo su uso beneficia las comunicaciones, el monitoreo ambiental, el transporte, el pronóstico del tiempo, la telemedicina y la ciencia, entre otros muchos aspectos.\n\n2. A través de diferentes actividades de divulgación que se realizan en todo el mundo, se muestran los beneficios de las acciones espaciales para la vida en nuestro planeta, propiciando no solo un interés pasajero en los temas espaciales, sino con el anhelo de un entendimiento y apropiación de los temas científicos y tecnológicos de la astronomía.\n\n3. Cada año, se celebra la Semana Mundial del Espacio debido a que la Asamblea General de las Naciones Unidas, el 6 de diciembre de 1999, declaró una semana para reconocer las contribuciones de la ciencia y la tecnología espaciales para mejorar la vida de la humanidad.",
+            "options": {
+              "A": "1, 2, 3",
+              "B": "2, 1, 3",
+              "C": "3, 2, 1",
+              "D": "3, 1, 2"
+            },
+            "answer": "C",
+            "_src": "competencia-escrita · reactivo 10"
+          },
+          {
+            "id": 56,
+            "topic": "CE.11",
+            "topic_name": "Coherencia",
+            "text": "Seleccionar el tema del párrafo.\n\n*Situado en el Parque Nacional Natural Serranía de la Macarena de Colombia; el río Caño Cristales, también llamado Río de los Cinco Colores, debe su belleza a su propiedad multicolor debido a la Macarenia Clavigera, una planta que vive en el cauce. Es mejor visitar este río entre mayo y noviembre porque es cuando la planta florece en amarillo, azul, verde y rojo; además, en esta época las flores adquieren tonalidades más brillantes dado que las aguas son menos profundas.*",
+            "options": {
+              "A": "La planta *Macarenia Clavigera*",
+              "B": "El río Caño Cristales de Colombia",
+              "C": "Los colores del río Caño Cristales",
+              "D": "Las flores de la *Macarenia Clavigera*"
+            },
+            "answer": "B",
+            "_src": "competencia-escrita · reactivo 11"
+          },
+          {
+            "id": 57,
+            "topic": "CE.12",
+            "topic_name": "Coherencia",
+            "text": "Seleccionar el fragmento que contiene la idea principal del texto.\n\n*La exposición In celicayotl in itzmolincayotl, de Santiago Robles Bonfil, conjunta cuestionamientos sobre la interpretación de mitos fundacionales de nuestra sociedad en un contexto de capitalismo tardío* **[1]**. *Instalada en la Universidad Autónoma de Chapingo, junto a murales sobre justicia social y el campo mexicano, reflexiona alrededor de las raíces prehispánicas, las tradiciones y la relación con la milpa* **[2]**. *Las obras en el Museo Nacional de Agricultura en esa casa de estudios hacen una revisión de la última década de producción del artista* **[3]**. *Se presentan unas 40 piezas, entre las que se incluye dibujo, pintura, grabado, cerámica, un códice y retablos elaborados con granos de maíz y tintes prehispánicos. El título traducido del náhuatl significa La frescura, la germinación* **[4]**.",
+            "options": {
+              "A": "1",
+              "B": "2",
+              "C": "3",
+              "D": "4"
+            },
+            "answer": "A",
+            "_src": "competencia-escrita · reactivo 12"
+          }
+        ]
+      },
+      {
+        "subject": "Competencia lectora",
+        "questions_count": 20,
+        "questions": [
+          {
+            "id": 58,
+            "topic": "CL.3.21",
+            "topic_name": "Lectura: MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA",
+            "text": "Indicar el elemento del texto periodístico que se encuentra en la lectura.",
+            "context": "**MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA**\n\n**[1]** En lugares del planeta con climas extremos surgen plantas sorprendentes y es que cuando las condiciones se ponen difíciles, la naturaleza se pone testaruda y origina especies extrañas para los ojos humanos, como el género *Lithops*. Gracias a que sus especies integrantes emergen del interior de las rocas son unas campeonas olímpicas en superar récords de falta de agua y de soportar altas temperaturas debido a que son originarias de sitios desérticos y semidesérticos de Namibia y Sudáfrica, donde las lluvias se olvidan de regar la tierra durante muchos meses al año. Manuel Muñoz García conoció estas insólitas plantas en un viaje por aquellas regiones africanas y desde entonces, este género se convirtió en su pasión y parte importante de su vida.\n\n**[2] Pregunta.** ¿No es extraño que se les llame piedras vivas?\n\n**Respuesta.** Su hábitat es fundamentalmente rocoso, por eso parecen piedras, para pasar desapercibidos entre sus depredadores. Sus hojas suculentas —carnosas—, casi siempre fusionadas, han desarrollado dibujos y colores similares a los de las piedras entre las que viven. Y es que los litops no tienen tallo, los pares de hojas salen directamente desde las raíces.\n\n**[3] P.** ¿Cómo pueden hacer frente a ese sol implacable sin un ápice de sombra?\n\n**R.** Para soportarlo han desarrollado la capacidad de vivir bajo tierra, casi completamente enterrados. En los momentos del año en que lo necesitan, solo asoman por encima del nivel del suelo la parte superior de sus cuerpos. En esa zona tienen unas ventanas más o menos traslúcidas que permiten pasar la luz solar para que la energía lumínica llegue a sus paredes interiores en las que se encuentra la clorofila y tiene lugar la fotosíntesis.\n\nOtra característica singular del género *Lithops* que ocurre todos los años es que renueva sus tejidos por completo. A comienzo de la primavera, su par de hojas comienza a arrugarse para ceder su reserva de nutrientes y de agua a dos hojas nuevas. Del mismo centro del par de hojas antiguas emergen otras dos hojas lustrosas y listas para tomar el relevo de las viejas.\n\n**[4] P.** ¿Nos cuenta algo más del fascinante mimetismo de los litops con el entorno donde crecen?\n\n**R.** Si Darwin hubiera viajado al Namaqualand sudafricano en lugar de a las Islas Galápagos, se podría haber basado en los litops para establecer su teoría de la evolución. Es increíble la enorme diversidad de colores y dibujos que han desarrollado estas plantas para mimetizarse con las piedras entre las que viven. Las formas y colores de los «elementos gráficos» de sus hojas son sorprendentes.\n\n**[5] P.** ¿Qué se le puede decir a alguien que nunca haya cultivado litops para que se anime a hacerlo?\n\n**R.** Que vale la pena el esfuerzo por cultivarlos porque los litops piden muy poco y a cambio nos dan horas y horas de alegría contemplando sus sorprendentes dibujos y, sobre todo, su capacidad de regeneración. Nunca te cansas de contemplar el milagro anual: de un litops tan arrugado y seco que parece muerto, súbitamente surge un nuevo cuerpo perfecto e impoluto que se ha deshecho de sus heridas y de sus imperfecciones, como si se tratara de un ave fénix.\n\n*Texto adaptado de Barba, E. (2024). El País.*",
+            "options": {
+              "A": "Titular",
+              "B": "Bajada",
+              "C": "Subtítulo",
+              "D": "Antetítulo"
+            },
+            "answer": "A",
+            "_src": "competencia-lectora · lectura 3 · reactivo 21"
+          },
+          {
+            "id": 59,
+            "topic": "CL.3.22",
+            "topic_name": "Lectura: MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA",
+            "text": "Con base en el texto, ¿cuál de las siguientes afirmaciones es correcta?",
+            "context": "**MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA**\n\n**[1]** En lugares del planeta con climas extremos surgen plantas sorprendentes y es que cuando las condiciones se ponen difíciles, la naturaleza se pone testaruda y origina especies extrañas para los ojos humanos, como el género *Lithops*. Gracias a que sus especies integrantes emergen del interior de las rocas son unas campeonas olímpicas en superar récords de falta de agua y de soportar altas temperaturas debido a que son originarias de sitios desérticos y semidesérticos de Namibia y Sudáfrica, donde las lluvias se olvidan de regar la tierra durante muchos meses al año. Manuel Muñoz García conoció estas insólitas plantas en un viaje por aquellas regiones africanas y desde entonces, este género se convirtió en su pasión y parte importante de su vida.\n\n**[2] Pregunta.** ¿No es extraño que se les llame piedras vivas?\n\n**Respuesta.** Su hábitat es fundamentalmente rocoso, por eso parecen piedras, para pasar desapercibidos entre sus depredadores. Sus hojas suculentas —carnosas—, casi siempre fusionadas, han desarrollado dibujos y colores similares a los de las piedras entre las que viven. Y es que los litops no tienen tallo, los pares de hojas salen directamente desde las raíces.\n\n**[3] P.** ¿Cómo pueden hacer frente a ese sol implacable sin un ápice de sombra?\n\n**R.** Para soportarlo han desarrollado la capacidad de vivir bajo tierra, casi completamente enterrados. En los momentos del año en que lo necesitan, solo asoman por encima del nivel del suelo la parte superior de sus cuerpos. En esa zona tienen unas ventanas más o menos traslúcidas que permiten pasar la luz solar para que la energía lumínica llegue a sus paredes interiores en las que se encuentra la clorofila y tiene lugar la fotosíntesis.\n\nOtra característica singular del género *Lithops* que ocurre todos los años es que renueva sus tejidos por completo. A comienzo de la primavera, su par de hojas comienza a arrugarse para ceder su reserva de nutrientes y de agua a dos hojas nuevas. Del mismo centro del par de hojas antiguas emergen otras dos hojas lustrosas y listas para tomar el relevo de las viejas.\n\n**[4] P.** ¿Nos cuenta algo más del fascinante mimetismo de los litops con el entorno donde crecen?\n\n**R.** Si Darwin hubiera viajado al Namaqualand sudafricano en lugar de a las Islas Galápagos, se podría haber basado en los litops para establecer su teoría de la evolución. Es increíble la enorme diversidad de colores y dibujos que han desarrollado estas plantas para mimetizarse con las piedras entre las que viven. Las formas y colores de los «elementos gráficos» de sus hojas son sorprendentes.\n\n**[5] P.** ¿Qué se le puede decir a alguien que nunca haya cultivado litops para que se anime a hacerlo?\n\n**R.** Que vale la pena el esfuerzo por cultivarlos porque los litops piden muy poco y a cambio nos dan horas y horas de alegría contemplando sus sorprendentes dibujos y, sobre todo, su capacidad de regeneración. Nunca te cansas de contemplar el milagro anual: de un litops tan arrugado y seco que parece muerto, súbitamente surge un nuevo cuerpo perfecto e impoluto que se ha deshecho de sus heridas y de sus imperfecciones, como si se tratara de un ave fénix.\n\n*Texto adaptado de Barba, E. (2024). El País.*",
+            "options": {
+              "A": "El texto carece de conclusión debido al formato que presenta",
+              "B": "La lectura no cuenta con párrafos de desarrollo por su formato",
+              "C": "Todos los elementos de la noticia se encuentran en el párrafo [1]",
+              "D": "Debido al formato del texto, carece de los elementos de la noticia"
+            },
+            "answer": "C",
+            "_src": "competencia-lectora · lectura 3 · reactivo 22"
+          },
+          {
+            "id": 60,
+            "topic": "CL.3.23",
+            "topic_name": "Lectura: MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA",
+            "text": "¿Qué tipología textual se observa predominantemente a lo largo de la lectura?",
+            "context": "**MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA**\n\n**[1]** En lugares del planeta con climas extremos surgen plantas sorprendentes y es que cuando las condiciones se ponen difíciles, la naturaleza se pone testaruda y origina especies extrañas para los ojos humanos, como el género *Lithops*. Gracias a que sus especies integrantes emergen del interior de las rocas son unas campeonas olímpicas en superar récords de falta de agua y de soportar altas temperaturas debido a que son originarias de sitios desérticos y semidesérticos de Namibia y Sudáfrica, donde las lluvias se olvidan de regar la tierra durante muchos meses al año. Manuel Muñoz García conoció estas insólitas plantas en un viaje por aquellas regiones africanas y desde entonces, este género se convirtió en su pasión y parte importante de su vida.\n\n**[2] Pregunta.** ¿No es extraño que se les llame piedras vivas?\n\n**Respuesta.** Su hábitat es fundamentalmente rocoso, por eso parecen piedras, para pasar desapercibidos entre sus depredadores. Sus hojas suculentas —carnosas—, casi siempre fusionadas, han desarrollado dibujos y colores similares a los de las piedras entre las que viven. Y es que los litops no tienen tallo, los pares de hojas salen directamente desde las raíces.\n\n**[3] P.** ¿Cómo pueden hacer frente a ese sol implacable sin un ápice de sombra?\n\n**R.** Para soportarlo han desarrollado la capacidad de vivir bajo tierra, casi completamente enterrados. En los momentos del año en que lo necesitan, solo asoman por encima del nivel del suelo la parte superior de sus cuerpos. En esa zona tienen unas ventanas más o menos traslúcidas que permiten pasar la luz solar para que la energía lumínica llegue a sus paredes interiores en las que se encuentra la clorofila y tiene lugar la fotosíntesis.\n\nOtra característica singular del género *Lithops* que ocurre todos los años es que renueva sus tejidos por completo. A comienzo de la primavera, su par de hojas comienza a arrugarse para ceder su reserva de nutrientes y de agua a dos hojas nuevas. Del mismo centro del par de hojas antiguas emergen otras dos hojas lustrosas y listas para tomar el relevo de las viejas.\n\n**[4] P.** ¿Nos cuenta algo más del fascinante mimetismo de los litops con el entorno donde crecen?\n\n**R.** Si Darwin hubiera viajado al Namaqualand sudafricano en lugar de a las Islas Galápagos, se podría haber basado en los litops para establecer su teoría de la evolución. Es increíble la enorme diversidad de colores y dibujos que han desarrollado estas plantas para mimetizarse con las piedras entre las que viven. Las formas y colores de los «elementos gráficos» de sus hojas son sorprendentes.\n\n**[5] P.** ¿Qué se le puede decir a alguien que nunca haya cultivado litops para que se anime a hacerlo?\n\n**R.** Que vale la pena el esfuerzo por cultivarlos porque los litops piden muy poco y a cambio nos dan horas y horas de alegría contemplando sus sorprendentes dibujos y, sobre todo, su capacidad de regeneración. Nunca te cansas de contemplar el milagro anual: de un litops tan arrugado y seco que parece muerto, súbitamente surge un nuevo cuerpo perfecto e impoluto que se ha deshecho de sus heridas y de sus imperfecciones, como si se tratara de un ave fénix.\n\n*Texto adaptado de Barba, E. (2024). El País.*",
+            "options": {
+              "A": "Diálogo",
+              "B": "Narración",
+              "C": "Exposición",
+              "D": "Descripción"
+            },
+            "answer": "A",
+            "_src": "competencia-lectora · lectura 3 · reactivo 23"
+          },
+          {
+            "id": 61,
+            "topic": "CL.3.24",
+            "topic_name": "Lectura: MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA",
+            "text": "El texto es __________ debido a las características que presenta.",
+            "context": "**MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA**\n\n**[1]** En lugares del planeta con climas extremos surgen plantas sorprendentes y es que cuando las condiciones se ponen difíciles, la naturaleza se pone testaruda y origina especies extrañas para los ojos humanos, como el género *Lithops*. Gracias a que sus especies integrantes emergen del interior de las rocas son unas campeonas olímpicas en superar récords de falta de agua y de soportar altas temperaturas debido a que son originarias de sitios desérticos y semidesérticos de Namibia y Sudáfrica, donde las lluvias se olvidan de regar la tierra durante muchos meses al año. Manuel Muñoz García conoció estas insólitas plantas en un viaje por aquellas regiones africanas y desde entonces, este género se convirtió en su pasión y parte importante de su vida.\n\n**[2] Pregunta.** ¿No es extraño que se les llame piedras vivas?\n\n**Respuesta.** Su hábitat es fundamentalmente rocoso, por eso parecen piedras, para pasar desapercibidos entre sus depredadores. Sus hojas suculentas —carnosas—, casi siempre fusionadas, han desarrollado dibujos y colores similares a los de las piedras entre las que viven. Y es que los litops no tienen tallo, los pares de hojas salen directamente desde las raíces.\n\n**[3] P.** ¿Cómo pueden hacer frente a ese sol implacable sin un ápice de sombra?\n\n**R.** Para soportarlo han desarrollado la capacidad de vivir bajo tierra, casi completamente enterrados. En los momentos del año en que lo necesitan, solo asoman por encima del nivel del suelo la parte superior de sus cuerpos. En esa zona tienen unas ventanas más o menos traslúcidas que permiten pasar la luz solar para que la energía lumínica llegue a sus paredes interiores en las que se encuentra la clorofila y tiene lugar la fotosíntesis.\n\nOtra característica singular del género *Lithops* que ocurre todos los años es que renueva sus tejidos por completo. A comienzo de la primavera, su par de hojas comienza a arrugarse para ceder su reserva de nutrientes y de agua a dos hojas nuevas. Del mismo centro del par de hojas antiguas emergen otras dos hojas lustrosas y listas para tomar el relevo de las viejas.\n\n**[4] P.** ¿Nos cuenta algo más del fascinante mimetismo de los litops con el entorno donde crecen?\n\n**R.** Si Darwin hubiera viajado al Namaqualand sudafricano en lugar de a las Islas Galápagos, se podría haber basado en los litops para establecer su teoría de la evolución. Es increíble la enorme diversidad de colores y dibujos que han desarrollado estas plantas para mimetizarse con las piedras entre las que viven. Las formas y colores de los «elementos gráficos» de sus hojas son sorprendentes.\n\n**[5] P.** ¿Qué se le puede decir a alguien que nunca haya cultivado litops para que se anime a hacerlo?\n\n**R.** Que vale la pena el esfuerzo por cultivarlos porque los litops piden muy poco y a cambio nos dan horas y horas de alegría contemplando sus sorprendentes dibujos y, sobre todo, su capacidad de regeneración. Nunca te cansas de contemplar el milagro anual: de un litops tan arrugado y seco que parece muerto, súbitamente surge un nuevo cuerpo perfecto e impoluto que se ha deshecho de sus heridas y de sus imperfecciones, como si se tratara de un ave fénix.\n\n*Texto adaptado de Barba, E. (2024). El País.*",
+            "options": {
+              "A": "un artículo",
+              "B": "una noticia",
+              "C": "un reportaje",
+              "D": "una entrevista"
+            },
+            "answer": "D",
+            "_src": "competencia-lectora · lectura 3 · reactivo 24"
+          },
+          {
+            "id": 62,
+            "topic": "CL.3.26",
+            "topic_name": "Lectura: MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA",
+            "text": "Seleccionar la idea compatible con el texto.",
+            "context": "**MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA**\n\n**[1]** En lugares del planeta con climas extremos surgen plantas sorprendentes y es que cuando las condiciones se ponen difíciles, la naturaleza se pone testaruda y origina especies extrañas para los ojos humanos, como el género *Lithops*. Gracias a que sus especies integrantes emergen del interior de las rocas son unas campeonas olímpicas en superar récords de falta de agua y de soportar altas temperaturas debido a que son originarias de sitios desérticos y semidesérticos de Namibia y Sudáfrica, donde las lluvias se olvidan de regar la tierra durante muchos meses al año. Manuel Muñoz García conoció estas insólitas plantas en un viaje por aquellas regiones africanas y desde entonces, este género se convirtió en su pasión y parte importante de su vida.\n\n**[2] Pregunta.** ¿No es extraño que se les llame piedras vivas?\n\n**Respuesta.** Su hábitat es fundamentalmente rocoso, por eso parecen piedras, para pasar desapercibidos entre sus depredadores. Sus hojas suculentas —carnosas—, casi siempre fusionadas, han desarrollado dibujos y colores similares a los de las piedras entre las que viven. Y es que los litops no tienen tallo, los pares de hojas salen directamente desde las raíces.\n\n**[3] P.** ¿Cómo pueden hacer frente a ese sol implacable sin un ápice de sombra?\n\n**R.** Para soportarlo han desarrollado la capacidad de vivir bajo tierra, casi completamente enterrados. En los momentos del año en que lo necesitan, solo asoman por encima del nivel del suelo la parte superior de sus cuerpos. En esa zona tienen unas ventanas más o menos traslúcidas que permiten pasar la luz solar para que la energía lumínica llegue a sus paredes interiores en las que se encuentra la clorofila y tiene lugar la fotosíntesis.\n\nOtra característica singular del género *Lithops* que ocurre todos los años es que renueva sus tejidos por completo. A comienzo de la primavera, su par de hojas comienza a arrugarse para ceder su reserva de nutrientes y de agua a dos hojas nuevas. Del mismo centro del par de hojas antiguas emergen otras dos hojas lustrosas y listas para tomar el relevo de las viejas.\n\n**[4] P.** ¿Nos cuenta algo más del fascinante mimetismo de los litops con el entorno donde crecen?\n\n**R.** Si Darwin hubiera viajado al Namaqualand sudafricano en lugar de a las Islas Galápagos, se podría haber basado en los litops para establecer su teoría de la evolución. Es increíble la enorme diversidad de colores y dibujos que han desarrollado estas plantas para mimetizarse con las piedras entre las que viven. Las formas y colores de los «elementos gráficos» de sus hojas son sorprendentes.\n\n**[5] P.** ¿Qué se le puede decir a alguien que nunca haya cultivado litops para que se anime a hacerlo?\n\n**R.** Que vale la pena el esfuerzo por cultivarlos porque los litops piden muy poco y a cambio nos dan horas y horas de alegría contemplando sus sorprendentes dibujos y, sobre todo, su capacidad de regeneración. Nunca te cansas de contemplar el milagro anual: de un litops tan arrugado y seco que parece muerto, súbitamente surge un nuevo cuerpo perfecto e impoluto que se ha deshecho de sus heridas y de sus imperfecciones, como si se tratara de un ave fénix.\n\n*Texto adaptado de Barba, E. (2024). El País.*",
+            "options": {
+              "A": "Un rasgo propio de la naturaleza es que es testaruda",
+              "B": "El entorno rocoso obligó a los litops a no tener tallos",
+              "C": "Debido al sol implacable, los litops viven siempre enterrados",
+              "D": "La adaptación es una característica predominante de la naturaleza"
+            },
+            "answer": "D",
+            "_src": "competencia-lectora · lectura 3 · reactivo 26"
+          },
+          {
+            "id": 63,
+            "topic": "CL.3.27",
+            "topic_name": "Lectura: MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA",
+            "text": "¿Cuál de las siguientes opciones se desprende del texto?",
+            "context": "**MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA**\n\n**[1]** En lugares del planeta con climas extremos surgen plantas sorprendentes y es que cuando las condiciones se ponen difíciles, la naturaleza se pone testaruda y origina especies extrañas para los ojos humanos, como el género *Lithops*. Gracias a que sus especies integrantes emergen del interior de las rocas son unas campeonas olímpicas en superar récords de falta de agua y de soportar altas temperaturas debido a que son originarias de sitios desérticos y semidesérticos de Namibia y Sudáfrica, donde las lluvias se olvidan de regar la tierra durante muchos meses al año. Manuel Muñoz García conoció estas insólitas plantas en un viaje por aquellas regiones africanas y desde entonces, este género se convirtió en su pasión y parte importante de su vida.\n\n**[2] Pregunta.** ¿No es extraño que se les llame piedras vivas?\n\n**Respuesta.** Su hábitat es fundamentalmente rocoso, por eso parecen piedras, para pasar desapercibidos entre sus depredadores. Sus hojas suculentas —carnosas—, casi siempre fusionadas, han desarrollado dibujos y colores similares a los de las piedras entre las que viven. Y es que los litops no tienen tallo, los pares de hojas salen directamente desde las raíces.\n\n**[3] P.** ¿Cómo pueden hacer frente a ese sol implacable sin un ápice de sombra?\n\n**R.** Para soportarlo han desarrollado la capacidad de vivir bajo tierra, casi completamente enterrados. En los momentos del año en que lo necesitan, solo asoman por encima del nivel del suelo la parte superior de sus cuerpos. En esa zona tienen unas ventanas más o menos traslúcidas que permiten pasar la luz solar para que la energía lumínica llegue a sus paredes interiores en las que se encuentra la clorofila y tiene lugar la fotosíntesis.\n\nOtra característica singular del género *Lithops* que ocurre todos los años es que renueva sus tejidos por completo. A comienzo de la primavera, su par de hojas comienza a arrugarse para ceder su reserva de nutrientes y de agua a dos hojas nuevas. Del mismo centro del par de hojas antiguas emergen otras dos hojas lustrosas y listas para tomar el relevo de las viejas.\n\n**[4] P.** ¿Nos cuenta algo más del fascinante mimetismo de los litops con el entorno donde crecen?\n\n**R.** Si Darwin hubiera viajado al Namaqualand sudafricano en lugar de a las Islas Galápagos, se podría haber basado en los litops para establecer su teoría de la evolución. Es increíble la enorme diversidad de colores y dibujos que han desarrollado estas plantas para mimetizarse con las piedras entre las que viven. Las formas y colores de los «elementos gráficos» de sus hojas son sorprendentes.\n\n**[5] P.** ¿Qué se le puede decir a alguien que nunca haya cultivado litops para que se anime a hacerlo?\n\n**R.** Que vale la pena el esfuerzo por cultivarlos porque los litops piden muy poco y a cambio nos dan horas y horas de alegría contemplando sus sorprendentes dibujos y, sobre todo, su capacidad de regeneración. Nunca te cansas de contemplar el milagro anual: de un litops tan arrugado y seco que parece muerto, súbitamente surge un nuevo cuerpo perfecto e impoluto que se ha deshecho de sus heridas y de sus imperfecciones, como si se tratara de un ave fénix.\n\n*Texto adaptado de Barba, E. (2024). El País.*",
+            "options": {
+              "A": "Los litops son una fuente de inspiración para Manuel",
+              "B": "El cultivo casero de los litops requiere de muchos cuidados",
+              "C": "A Manuel le gustan los lugares semidesérticos por los litops",
+              "D": "Las hojas nuevas de los litops surgen al comienzo de la primavera"
+            },
+            "answer": "A",
+            "_src": "competencia-lectora · lectura 3 · reactivo 27"
+          },
+          {
+            "id": 64,
+            "topic": "CL.3.28",
+            "topic_name": "Lectura: MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA",
+            "text": "Seleccionar la inferencia de la lectura.",
+            "context": "**MANUEL MUÑOZ GARCÍA HABLA SOBRE LOS LITOPS, LAS PLANTAS DE PIEDRA**\n\n**[1]** En lugares del planeta con climas extremos surgen plantas sorprendentes y es que cuando las condiciones se ponen difíciles, la naturaleza se pone testaruda y origina especies extrañas para los ojos humanos, como el género *Lithops*. Gracias a que sus especies integrantes emergen del interior de las rocas son unas campeonas olímpicas en superar récords de falta de agua y de soportar altas temperaturas debido a que son originarias de sitios desérticos y semidesérticos de Namibia y Sudáfrica, donde las lluvias se olvidan de regar la tierra durante muchos meses al año. Manuel Muñoz García conoció estas insólitas plantas en un viaje por aquellas regiones africanas y desde entonces, este género se convirtió en su pasión y parte importante de su vida.\n\n**[2] Pregunta.** ¿No es extraño que se les llame piedras vivas?\n\n**Respuesta.** Su hábitat es fundamentalmente rocoso, por eso parecen piedras, para pasar desapercibidos entre sus depredadores. Sus hojas suculentas —carnosas—, casi siempre fusionadas, han desarrollado dibujos y colores similares a los de las piedras entre las que viven. Y es que los litops no tienen tallo, los pares de hojas salen directamente desde las raíces.\n\n**[3] P.** ¿Cómo pueden hacer frente a ese sol implacable sin un ápice de sombra?\n\n**R.** Para soportarlo han desarrollado la capacidad de vivir bajo tierra, casi completamente enterrados. En los momentos del año en que lo necesitan, solo asoman por encima del nivel del suelo la parte superior de sus cuerpos. En esa zona tienen unas ventanas más o menos traslúcidas que permiten pasar la luz solar para que la energía lumínica llegue a sus paredes interiores en las que se encuentra la clorofila y tiene lugar la fotosíntesis.\n\nOtra característica singular del género *Lithops* que ocurre todos los años es que renueva sus tejidos por completo. A comienzo de la primavera, su par de hojas comienza a arrugarse para ceder su reserva de nutrientes y de agua a dos hojas nuevas. Del mismo centro del par de hojas antiguas emergen otras dos hojas lustrosas y listas para tomar el relevo de las viejas.\n\n**[4] P.** ¿Nos cuenta algo más del fascinante mimetismo de los litops con el entorno donde crecen?\n\n**R.** Si Darwin hubiera viajado al Namaqualand sudafricano en lugar de a las Islas Galápagos, se podría haber basado en los litops para establecer su teoría de la evolución. Es increíble la enorme diversidad de colores y dibujos que han desarrollado estas plantas para mimetizarse con las piedras entre las que viven. Las formas y colores de los «elementos gráficos» de sus hojas son sorprendentes.\n\n**[5] P.** ¿Qué se le puede decir a alguien que nunca haya cultivado litops para que se anime a hacerlo?\n\n**R.** Que vale la pena el esfuerzo por cultivarlos porque los litops piden muy poco y a cambio nos dan horas y horas de alegría contemplando sus sorprendentes dibujos y, sobre todo, su capacidad de regeneración. Nunca te cansas de contemplar el milagro anual: de un litops tan arrugado y seco que parece muerto, súbitamente surge un nuevo cuerpo perfecto e impoluto que se ha deshecho de sus heridas y de sus imperfecciones, como si se tratara de un ave fénix.\n\n*Texto adaptado de Barba, E. (2024). El País.*",
+            "options": {
+              "A": "Las hojas nuevas de los litops cuando nacen consumen a las hojas viejas",
+              "B": "No hay más variedad de elementos gráficos en los litops que en las rocas",
+              "C": "Los litops son atractivos para los depredadores debido a que son suculentas",
+              "D": "Es difícil cultivar litops en climas que no son desérticos o semidesérticos"
+            },
+            "answer": "C",
+            "_src": "competencia-lectora · lectura 3 · reactivo 28"
+          },
+          {
+            "id": 65,
+            "topic": "CL.4.31",
+            "topic_name": "Lectura: PARA ENTONCES",
+            "text": "El poema cuenta con ____ estrofas conformadas por ____ versos en total.",
+            "context": "**PARA ENTONCES**\n\nQuiero morir cuando decline el día,\nen alta mar y con la cara al cielo,\ndonde parezca sueño la agonía,\ny el alma, un ave que remonta el vuelo.\n\nNo escuchar los últimos instantes,\nya con el cielo y con el mar a solas,\nmás voces ni plegarias sollozantes\nque el majestuoso tumbo de las olas.\n\nMorir cuando la luz, triste, retira\nsus áureas redes de la onda verde,\ny ser como ese sol que lento expira:\nalgo muy luminoso que se pierde.\n\nMorir, y joven: antes que destruya\nel tiempo aleve la gentil corona;\ncuando la vida dice aún: soy tuya,\naunque sepamos bien que nos traiciona.\n\n*Gutiérrez, M. (1887). Para entonces. Obras de Manuel Gutiérrez Nájera: poesía.*",
+            "options": {
+              "A": "1 - 4",
+              "B": "4 - 4",
+              "C": "1 - 16",
+              "D": "4 - 16"
+            },
+            "answer": "D",
+            "_src": "competencia-lectora · lectura 4 · reactivo 31"
+          },
+          {
+            "id": 66,
+            "topic": "CL.4.32",
+            "topic_name": "Lectura: PARA ENTONCES",
+            "text": "Debido al número de sílabas poéticas de los versos del poema, estos se denominan:",
+            "context": "**PARA ENTONCES**\n\nQuiero morir cuando decline el día,\nen alta mar y con la cara al cielo,\ndonde parezca sueño la agonía,\ny el alma, un ave que remonta el vuelo.\n\nNo escuchar los últimos instantes,\nya con el cielo y con el mar a solas,\nmás voces ni plegarias sollozantes\nque el majestuoso tumbo de las olas.\n\nMorir cuando la luz, triste, retira\nsus áureas redes de la onda verde,\ny ser como ese sol que lento expira:\nalgo muy luminoso que se pierde.\n\nMorir, y joven: antes que destruya\nel tiempo aleve la gentil corona;\ncuando la vida dice aún: soy tuya,\naunque sepamos bien que nos traiciona.\n\n*Gutiérrez, M. (1887). Para entonces. Obras de Manuel Gutiérrez Nájera: poesía.*",
+            "options": {
+              "A": "onceasílabos",
+              "B": "doceasílabos",
+              "C": "endecasílabos",
+              "D": "dodecasílabos"
+            },
+            "answer": "C",
+            "_src": "competencia-lectora · lectura 4 · reactivo 32"
+          },
+          {
+            "id": 67,
+            "topic": "CL.4.33",
+            "topic_name": "Lectura: PARA ENTONCES",
+            "text": "Indicar el tipo de rima del poema.",
+            "context": "**PARA ENTONCES**\n\nQuiero morir cuando decline el día,\nen alta mar y con la cara al cielo,\ndonde parezca sueño la agonía,\ny el alma, un ave que remonta el vuelo.\n\nNo escuchar los últimos instantes,\nya con el cielo y con el mar a solas,\nmás voces ni plegarias sollozantes\nque el majestuoso tumbo de las olas.\n\nMorir cuando la luz, triste, retira\nsus áureas redes de la onda verde,\ny ser como ese sol que lento expira:\nalgo muy luminoso que se pierde.\n\nMorir, y joven: antes que destruya\nel tiempo aleve la gentil corona;\ncuando la vida dice aún: soy tuya,\naunque sepamos bien que nos traiciona.\n\n*Gutiérrez, M. (1887). Para entonces. Obras de Manuel Gutiérrez Nájera: poesía.*",
+            "options": {
+              "A": "Suelta",
+              "B": "Blanca",
+              "C": "Asonante",
+              "D": "Consonante"
+            },
+            "answer": "D",
+            "_src": "competencia-lectora · lectura 4 · reactivo 33"
+          },
+          {
+            "id": 68,
+            "topic": "CL.4.34",
+            "topic_name": "Lectura: PARA ENTONCES",
+            "text": "¿Cuál es la idea principal del texto?",
+            "context": "**PARA ENTONCES**\n\nQuiero morir cuando decline el día,\nen alta mar y con la cara al cielo,\ndonde parezca sueño la agonía,\ny el alma, un ave que remonta el vuelo.\n\nNo escuchar los últimos instantes,\nya con el cielo y con el mar a solas,\nmás voces ni plegarias sollozantes\nque el majestuoso tumbo de las olas.\n\nMorir cuando la luz, triste, retira\nsus áureas redes de la onda verde,\ny ser como ese sol que lento expira:\nalgo muy luminoso que se pierde.\n\nMorir, y joven: antes que destruya\nel tiempo aleve la gentil corona;\ncuando la vida dice aún: soy tuya,\naunque sepamos bien que nos traiciona.\n\n*Gutiérrez, M. (1887). Para entonces. Obras de Manuel Gutiérrez Nájera: poesía.*",
+            "options": {
+              "A": "El deseo de soledad de una persona",
+              "B": "La soledad que se encuentra en el mar",
+              "C": "La juventud como esplendor de la vida",
+              "D": "La relación de la muerte con la juventud"
+            },
+            "answer": "C",
+            "_src": "competencia-lectora · lectura 4 · reactivo 34"
+          },
+          {
+            "id": 69,
+            "topic": "CL.4.35",
+            "topic_name": "Lectura: PARA ENTONCES",
+            "text": "El poema recibe el nombre de __________ debido a las estrofas que lo componen.",
+            "context": "**PARA ENTONCES**\n\nQuiero morir cuando decline el día,\nen alta mar y con la cara al cielo,\ndonde parezca sueño la agonía,\ny el alma, un ave que remonta el vuelo.\n\nNo escuchar los últimos instantes,\nya con el cielo y con el mar a solas,\nmás voces ni plegarias sollozantes\nque el majestuoso tumbo de las olas.\n\nMorir cuando la luz, triste, retira\nsus áureas redes de la onda verde,\ny ser como ese sol que lento expira:\nalgo muy luminoso que se pierde.\n\nMorir, y joven: antes que destruya\nel tiempo aleve la gentil corona;\ncuando la vida dice aún: soy tuya,\naunque sepamos bien que nos traiciona.\n\n*Gutiérrez, M. (1887). Para entonces. Obras de Manuel Gutiérrez Nájera: poesía.*",
+            "options": {
+              "A": "soneto",
+              "B": "cuarteto",
+              "C": "romance",
+              "D": "redondilla"
+            },
+            "answer": "B",
+            "_src": "competencia-lectora · lectura 4 · reactivo 35"
+          },
+          {
+            "id": 70,
+            "topic": "CL.4.36",
+            "topic_name": "Lectura: PARA ENTONCES",
+            "text": "¿Cuál de las siguientes ideas es compatible con el texto?",
+            "context": "**PARA ENTONCES**\n\nQuiero morir cuando decline el día,\nen alta mar y con la cara al cielo,\ndonde parezca sueño la agonía,\ny el alma, un ave que remonta el vuelo.\n\nNo escuchar los últimos instantes,\nya con el cielo y con el mar a solas,\nmás voces ni plegarias sollozantes\nque el majestuoso tumbo de las olas.\n\nMorir cuando la luz, triste, retira\nsus áureas redes de la onda verde,\ny ser como ese sol que lento expira:\nalgo muy luminoso que se pierde.\n\nMorir, y joven: antes que destruya\nel tiempo aleve la gentil corona;\ncuando la vida dice aún: soy tuya,\naunque sepamos bien que nos traiciona.\n\n*Gutiérrez, M. (1887). Para entonces. Obras de Manuel Gutiérrez Nájera: poesía.*",
+            "options": {
+              "A": "Para los jóvenes, la vida no es tan sencilla",
+              "B": "El poeta le tiene cierto resentimiento a la vida",
+              "C": "El autor era muy joven cuando escribió el poema",
+              "D": "La vida en altamar puede ocasionar problemas de salud"
+            },
+            "answer": "B",
+            "_src": "competencia-lectora · lectura 4 · reactivo 36"
+          },
+          {
+            "id": 71,
+            "topic": "CL.4.38",
+            "topic_name": "Lectura: PARA ENTONCES",
+            "text": "Con base en la lectura, es posible asegurar que el:",
+            "context": "**PARA ENTONCES**\n\nQuiero morir cuando decline el día,\nen alta mar y con la cara al cielo,\ndonde parezca sueño la agonía,\ny el alma, un ave que remonta el vuelo.\n\nNo escuchar los últimos instantes,\nya con el cielo y con el mar a solas,\nmás voces ni plegarias sollozantes\nque el majestuoso tumbo de las olas.\n\nMorir cuando la luz, triste, retira\nsus áureas redes de la onda verde,\ny ser como ese sol que lento expira:\nalgo muy luminoso que se pierde.\n\nMorir, y joven: antes que destruya\nel tiempo aleve la gentil corona;\ncuando la vida dice aún: soy tuya,\naunque sepamos bien que nos traiciona.\n\n*Gutiérrez, M. (1887). Para entonces. Obras de Manuel Gutiérrez Nájera: poesía.*",
+            "options": {
+              "A": "mar es un lugar muy apacible",
+              "B": "sueño es la cura para la agonía",
+              "C": "autor siente desprecio por la vejez",
+              "D": "mar es un lugar propio de la realeza"
+            },
+            "answer": "C",
+            "_src": "competencia-lectora · lectura 4 · reactivo 38"
+          },
+          {
+            "id": 72,
+            "topic": "CL.4.39",
+            "topic_name": "Lectura: PARA ENTONCES",
+            "text": "Seleccionar la idea compatible con el poema.",
+            "context": "**PARA ENTONCES**\n\nQuiero morir cuando decline el día,\nen alta mar y con la cara al cielo,\ndonde parezca sueño la agonía,\ny el alma, un ave que remonta el vuelo.\n\nNo escuchar los últimos instantes,\nya con el cielo y con el mar a solas,\nmás voces ni plegarias sollozantes\nque el majestuoso tumbo de las olas.\n\nMorir cuando la luz, triste, retira\nsus áureas redes de la onda verde,\ny ser como ese sol que lento expira:\nalgo muy luminoso que se pierde.\n\nMorir, y joven: antes que destruya\nel tiempo aleve la gentil corona;\ncuando la vida dice aún: soy tuya,\naunque sepamos bien que nos traiciona.\n\n*Gutiérrez, M. (1887). Para entonces. Obras de Manuel Gutiérrez Nájera: poesía.*",
+            "options": {
+              "A": "La vida está plagada de plegarias sollozantes",
+              "B": "El ser humano no tiene control alguno sobre la vida",
+              "C": "Al morir en el mar, el alma deja fácilmente al cuerpo",
+              "D": "Cuando alguien está muriendo, pierde el sentido del oído"
+            },
+            "answer": "B",
+            "_src": "competencia-lectora · lectura 4 · reactivo 39"
+          },
+          {
+            "id": 73,
+            "topic": "CL.4.40",
+            "topic_name": "Lectura: PARA ENTONCES",
+            "text": "Seleccionar la figura retórica presente en la cuarta estrofa.",
+            "context": "**PARA ENTONCES**\n\nQuiero morir cuando decline el día,\nen alta mar y con la cara al cielo,\ndonde parezca sueño la agonía,\ny el alma, un ave que remonta el vuelo.\n\nNo escuchar los últimos instantes,\nya con el cielo y con el mar a solas,\nmás voces ni plegarias sollozantes\nque el majestuoso tumbo de las olas.\n\nMorir cuando la luz, triste, retira\nsus áureas redes de la onda verde,\ny ser como ese sol que lento expira:\nalgo muy luminoso que se pierde.\n\nMorir, y joven: antes que destruya\nel tiempo aleve la gentil corona;\ncuando la vida dice aún: soy tuya,\naunque sepamos bien que nos traiciona.\n\n*Gutiérrez, M. (1887). Para entonces. Obras de Manuel Gutiérrez Nájera: poesía.*",
+            "options": {
+              "A": "Antítesis",
+              "B": "Alegoría",
+              "C": "Calambur",
+              "D": "Concatenación"
+            },
+            "answer": "D",
+            "_src": "competencia-lectora · lectura 4 · reactivo 40"
+          },
+          {
+            "id": 74,
+            "topic": "CL.5.41",
+            "topic_name": "Lectura: EL CAMALEÓN QUE FINALMENTE NO SABÍA DE QUÉ COLOR PONERSE",
+            "text": "¿En qué párrafo del texto se encuentra el nudo de la lectura?",
+            "context": "**EL CAMALEÓN QUE FINALMENTE NO SABÍA DE QUÉ COLOR PONERSE**\n\n**[1]** En un país muy remoto, en plena Selva, se presentó hace muchos años un tiempo malo en el que el Camaleón, a quien le había dado por la política, entró en un estado de total desconcierto, pues los otros animales, asesorados por la Zorra, se habían enterado de sus artimañas y empezaron a contrarrestarlas llevando día y noche en los bolsillos juegos de diversos vidrios de colores para combatir su ambigüedad, de manera que cuando él estaba morado y por cualquier circunstancia del momento necesitaba volverse, digamos, azul, sacaban rápidamente un cristal rojo a través del cual lo veían, y para ellos continuaba siendo el mismo Camaleón morado, aunque se condujera como Camaleón azul; y cuando estaba rojo y por motivaciones especiales se volvía anaranjado, usaban el cristal correspondiente y lo seguían viendo tal cual.\n\n**[2]** Esto sólo en cuanto a los colores primarios, pues el método se generalizó tanto que con el tiempo no había ya quien no llevara consigo un equipo completo de cristales para aquellos casos en que el mañoso se tornaba simplemente grisáceo, o verdiazul, o de cualquier color más o menos indefinido, para dar el cual eran necesarias tres, cuatro o cinco superposiciones de cristales. Pero lo bueno fue que el Camaleón, considerando que todos eran de su condición, adoptó también el sistema.\n\n**[3]** Entonces era cosa de verlos a todos en las calles sacando y alternando cristales a medida que cambiaban de colores, según el clima político o las opiniones políticas prevalecientes ese día de la semana o a esa hora del día o de la noche. Como es fácil comprender, esto se convirtió en una especie de peligrosa confusión de las lenguas; pero pronto los más listos se dieron cuenta de que aquello sería la ruina general si no se reglamentaba de alguna manera, a menos de que todos estuvieran dispuestos a ser cegados y perdidos definitivamente por los dioses, y restablecieron el orden.\n\n**[4]** Además de lo estatuido por el Reglamento que se redactó con ese fin, el derecho consuetudinario fijó por su parte reglas de refinada urbanidad, según las cuales, si alguno carecía de un vidrio de determinado color urgente para disfrazarse o para descubrir el verdadero color de alguien, podía recurrir inclusive a sus propios enemigos para que se lo prestaran, de acuerdo con su necesidad del momento, como sucedía entre las naciones más civilizadas.\n\n**[5]** Sólo el León se reía de unos y de otros, aunque a veces socarronamente jugaba también un poco a lo suyo, por divertirse.\n\n**[6]** De esa época viene el dicho de que\n\n*todo Camaleón es según el color*\n*del cristal con que se mira.*\n\n*Monterroso, A. (1969). El Camaleón que finalmente no sabía de qué color ponerse. La oveja negra y demás fábulas.*",
+            "options": {
+              "A": "[2]",
+              "B": "[3]",
+              "C": "[4]",
+              "D": "[5]"
+            },
+            "answer": "A",
+            "_src": "competencia-lectora · lectura 5 · reactivo 41"
+          },
+          {
+            "id": 75,
+            "topic": "CL.5.42",
+            "topic_name": "Lectura: EL CAMALEÓN QUE FINALMENTE NO SABÍA DE QUÉ COLOR PONERSE",
+            "text": "El León es un personaje:",
+            "context": "**EL CAMALEÓN QUE FINALMENTE NO SABÍA DE QUÉ COLOR PONERSE**\n\n**[1]** En un país muy remoto, en plena Selva, se presentó hace muchos años un tiempo malo en el que el Camaleón, a quien le había dado por la política, entró en un estado de total desconcierto, pues los otros animales, asesorados por la Zorra, se habían enterado de sus artimañas y empezaron a contrarrestarlas llevando día y noche en los bolsillos juegos de diversos vidrios de colores para combatir su ambigüedad, de manera que cuando él estaba morado y por cualquier circunstancia del momento necesitaba volverse, digamos, azul, sacaban rápidamente un cristal rojo a través del cual lo veían, y para ellos continuaba siendo el mismo Camaleón morado, aunque se condujera como Camaleón azul; y cuando estaba rojo y por motivaciones especiales se volvía anaranjado, usaban el cristal correspondiente y lo seguían viendo tal cual.\n\n**[2]** Esto sólo en cuanto a los colores primarios, pues el método se generalizó tanto que con el tiempo no había ya quien no llevara consigo un equipo completo de cristales para aquellos casos en que el mañoso se tornaba simplemente grisáceo, o verdiazul, o de cualquier color más o menos indefinido, para dar el cual eran necesarias tres, cuatro o cinco superposiciones de cristales. Pero lo bueno fue que el Camaleón, considerando que todos eran de su condición, adoptó también el sistema.\n\n**[3]** Entonces era cosa de verlos a todos en las calles sacando y alternando cristales a medida que cambiaban de colores, según el clima político o las opiniones políticas prevalecientes ese día de la semana o a esa hora del día o de la noche. Como es fácil comprender, esto se convirtió en una especie de peligrosa confusión de las lenguas; pero pronto los más listos se dieron cuenta de que aquello sería la ruina general si no se reglamentaba de alguna manera, a menos de que todos estuvieran dispuestos a ser cegados y perdidos definitivamente por los dioses, y restablecieron el orden.\n\n**[4]** Además de lo estatuido por el Reglamento que se redactó con ese fin, el derecho consuetudinario fijó por su parte reglas de refinada urbanidad, según las cuales, si alguno carecía de un vidrio de determinado color urgente para disfrazarse o para descubrir el verdadero color de alguien, podía recurrir inclusive a sus propios enemigos para que se lo prestaran, de acuerdo con su necesidad del momento, como sucedía entre las naciones más civilizadas.\n\n**[5]** Sólo el León se reía de unos y de otros, aunque a veces socarronamente jugaba también un poco a lo suyo, por divertirse.\n\n**[6]** De esa época viene el dicho de que\n\n*todo Camaleón es según el color*\n*del cristal con que se mira.*\n\n*Monterroso, A. (1969). El Camaleón que finalmente no sabía de qué color ponerse. La oveja negra y demás fábulas.*",
+            "options": {
+              "A": "redondo",
+              "B": "terciario",
+              "C": "incidental",
+              "D": "secundario"
+            },
+            "answer": "C",
+            "_src": "competencia-lectora · lectura 5 · reactivo 42"
+          },
+          {
+            "id": 76,
+            "topic": "CL.5.43",
+            "topic_name": "Lectura: EL CAMALEÓN QUE FINALMENTE NO SABÍA DE QUÉ COLOR PONERSE",
+            "text": "Seleccionar la idea principal del texto.",
+            "context": "**EL CAMALEÓN QUE FINALMENTE NO SABÍA DE QUÉ COLOR PONERSE**\n\n**[1]** En un país muy remoto, en plena Selva, se presentó hace muchos años un tiempo malo en el que el Camaleón, a quien le había dado por la política, entró en un estado de total desconcierto, pues los otros animales, asesorados por la Zorra, se habían enterado de sus artimañas y empezaron a contrarrestarlas llevando día y noche en los bolsillos juegos de diversos vidrios de colores para combatir su ambigüedad, de manera que cuando él estaba morado y por cualquier circunstancia del momento necesitaba volverse, digamos, azul, sacaban rápidamente un cristal rojo a través del cual lo veían, y para ellos continuaba siendo el mismo Camaleón morado, aunque se condujera como Camaleón azul; y cuando estaba rojo y por motivaciones especiales se volvía anaranjado, usaban el cristal correspondiente y lo seguían viendo tal cual.\n\n**[2]** Esto sólo en cuanto a los colores primarios, pues el método se generalizó tanto que con el tiempo no había ya quien no llevara consigo un equipo completo de cristales para aquellos casos en que el mañoso se tornaba simplemente grisáceo, o verdiazul, o de cualquier color más o menos indefinido, para dar el cual eran necesarias tres, cuatro o cinco superposiciones de cristales. Pero lo bueno fue que el Camaleón, considerando que todos eran de su condición, adoptó también el sistema.\n\n**[3]** Entonces era cosa de verlos a todos en las calles sacando y alternando cristales a medida que cambiaban de colores, según el clima político o las opiniones políticas prevalecientes ese día de la semana o a esa hora del día o de la noche. Como es fácil comprender, esto se convirtió en una especie de peligrosa confusión de las lenguas; pero pronto los más listos se dieron cuenta de que aquello sería la ruina general si no se reglamentaba de alguna manera, a menos de que todos estuvieran dispuestos a ser cegados y perdidos definitivamente por los dioses, y restablecieron el orden.\n\n**[4]** Además de lo estatuido por el Reglamento que se redactó con ese fin, el derecho consuetudinario fijó por su parte reglas de refinada urbanidad, según las cuales, si alguno carecía de un vidrio de determinado color urgente para disfrazarse o para descubrir el verdadero color de alguien, podía recurrir inclusive a sus propios enemigos para que se lo prestaran, de acuerdo con su necesidad del momento, como sucedía entre las naciones más civilizadas.\n\n**[5]** Sólo el León se reía de unos y de otros, aunque a veces socarronamente jugaba también un poco a lo suyo, por divertirse.\n\n**[6]** De esa época viene el dicho de que\n\n*todo Camaleón es según el color*\n*del cristal con que se mira.*\n\n*Monterroso, A. (1969). El Camaleón que finalmente no sabía de qué color ponerse. La oveja negra y demás fábulas.*",
+            "options": {
+              "A": "Falsa moral de los políticos",
+              "B": "Forma de gobierno de la Selva",
+              "C": "Necesidad de reglas en la sociedad",
+              "D": "Capacidad de cambio del Camaleón"
+            },
+            "answer": "A",
+            "_src": "competencia-lectora · lectura 5 · reactivo 43"
+          },
+          {
+            "id": 77,
+            "topic": "CL.5.44",
+            "topic_name": "Lectura: EL CAMALEÓN QUE FINALMENTE NO SABÍA DE QUÉ COLOR PONERSE",
+            "text": "¿A qué subgénero literario pertenece la lectura?",
+            "context": "**EL CAMALEÓN QUE FINALMENTE NO SABÍA DE QUÉ COLOR PONERSE**\n\n**[1]** En un país muy remoto, en plena Selva, se presentó hace muchos años un tiempo malo en el que el Camaleón, a quien le había dado por la política, entró en un estado de total desconcierto, pues los otros animales, asesorados por la Zorra, se habían enterado de sus artimañas y empezaron a contrarrestarlas llevando día y noche en los bolsillos juegos de diversos vidrios de colores para combatir su ambigüedad, de manera que cuando él estaba morado y por cualquier circunstancia del momento necesitaba volverse, digamos, azul, sacaban rápidamente un cristal rojo a través del cual lo veían, y para ellos continuaba siendo el mismo Camaleón morado, aunque se condujera como Camaleón azul; y cuando estaba rojo y por motivaciones especiales se volvía anaranjado, usaban el cristal correspondiente y lo seguían viendo tal cual.\n\n**[2]** Esto sólo en cuanto a los colores primarios, pues el método se generalizó tanto que con el tiempo no había ya quien no llevara consigo un equipo completo de cristales para aquellos casos en que el mañoso se tornaba simplemente grisáceo, o verdiazul, o de cualquier color más o menos indefinido, para dar el cual eran necesarias tres, cuatro o cinco superposiciones de cristales. Pero lo bueno fue que el Camaleón, considerando que todos eran de su condición, adoptó también el sistema.\n\n**[3]** Entonces era cosa de verlos a todos en las calles sacando y alternando cristales a medida que cambiaban de colores, según el clima político o las opiniones políticas prevalecientes ese día de la semana o a esa hora del día o de la noche. Como es fácil comprender, esto se convirtió en una especie de peligrosa confusión de las lenguas; pero pronto los más listos se dieron cuenta de que aquello sería la ruina general si no se reglamentaba de alguna manera, a menos de que todos estuvieran dispuestos a ser cegados y perdidos definitivamente por los dioses, y restablecieron el orden.\n\n**[4]** Además de lo estatuido por el Reglamento que se redactó con ese fin, el derecho consuetudinario fijó por su parte reglas de refinada urbanidad, según las cuales, si alguno carecía de un vidrio de determinado color urgente para disfrazarse o para descubrir el verdadero color de alguien, podía recurrir inclusive a sus propios enemigos para que se lo prestaran, de acuerdo con su necesidad del momento, como sucedía entre las naciones más civilizadas.\n\n**[5]** Sólo el León se reía de unos y de otros, aunque a veces socarronamente jugaba también un poco a lo suyo, por divertirse.\n\n**[6]** De esa época viene el dicho de que\n\n*todo Camaleón es según el color*\n*del cristal con que se mira.*\n\n*Monterroso, A. (1969). El Camaleón que finalmente no sabía de qué color ponerse. La oveja negra y demás fábulas.*",
+            "options": {
+              "A": "Mito",
+              "B": "Fábula",
+              "C": "Cuento",
+              "D": "Leyenda"
+            },
+            "answer": "B",
+            "_src": "competencia-lectora · lectura 5 · reactivo 44"
+          }
+        ]
+      },
+      {
+        "subject": "Química",
+        "questions_count": 17,
+        "questions": [
+          {
+            "id": 78,
+            "topic": "QUI.1",
+            "topic_name": "Química",
+            "text": "De la siguiente lista, identificar los fenómenos físicos.\n1. Combustión de un pedazo de madera\n2. Romper una hoja de papel\n3. Evaporación del alcohol\n4. Corrosión de un clavo\n5. Cortar leña",
+            "options": {
+              "A": "2, 3, 5",
+              "B": "1, 3, 4",
+              "C": "2, 4, 5",
+              "D": "1, 2, 4"
+            },
+            "answer": "A",
+            "_src": "quimica-csya · reactivo 1"
+          },
+          {
+            "id": 79,
+            "topic": "QUI.2",
+            "topic_name": "Química",
+            "text": "La ley de __________ enuncia que en una reacción química la suma de la masa de los reactivos es igual a la suma de la masa de los productos.",
+            "options": {
+              "A": "las proporciones múltiples",
+              "B": "conservación de la masa",
+              "C": "los gases ideales",
+              "D": "Avogadro"
+            },
+            "answer": "B",
+            "_src": "quimica-csya · reactivo 2"
+          },
+          {
+            "id": 80,
+            "topic": "QUI.3",
+            "topic_name": "Química",
+            "text": "Es el cambio de estado sólido al gaseoso de manera directa.",
+            "options": {
+              "A": "Sublimación",
+              "B": "Evaporación",
+              "C": "Licuefacción",
+              "D": "Condensación"
+            },
+            "answer": "A",
+            "_src": "quimica-csya · reactivo 3"
+          },
+          {
+            "id": 81,
+            "topic": "QUI.4",
+            "topic_name": "Química",
+            "text": "¿Qué método de separación se utiliza en la industria para la obtención de licores como el vodka?",
+            "options": {
+              "A": "Filtración",
+              "B": "Destilación",
+              "C": "Evaporación",
+              "D": "Cristalización"
+            },
+            "answer": "B",
+            "_src": "quimica-csya · reactivo 4"
+          },
+          {
+            "id": 82,
+            "topic": "QUI.6",
+            "topic_name": "Química",
+            "text": "A partir de la reacción de un metal y __________ se forma una sal binaria",
+            "options": {
+              "A": "agua",
+              "B": "oxígeno",
+              "C": "un no metal",
+              "D": "óxido no metálico"
+            },
+            "answer": "C",
+            "_src": "quimica-csya · reactivo 6"
+          },
+          {
+            "id": 83,
+            "topic": "QUI.7",
+            "topic_name": "Química",
+            "text": "¿Cuántos moles están presentes en 0.9 g de glucosa?\n\nConsiderar: PM ($C_{6}H_{12}O_{6}$) = 180g/mol",
+            "options": {
+              "A": "0.0015 mol",
+              "B": "0.005 mol",
+              "C": "0.002 mol",
+              "D": "0.05 mol"
+            },
+            "answer": "B",
+            "_src": "quimica-csya · reactivo 7"
+          },
+          {
+            "id": 84,
+            "topic": "QUI.8",
+            "topic_name": "Química",
+            "text": "Relacionar el tipo de reacción química con la ecuación que la representa.\n\n| Reacción química | Ecuación |\n|---|---|\n| 1. Síntesis | A. $NaOH_{(ac)} + HCl_{(ac)} \\leftrightarrows NaCl_{(ac)} + H_{2}O_{(l)}$ |\n| 2. Descomposición | B. $2Na_{(s)} + 2H_{2}O_{(l)} \\longrightarrow 2NaOH_{(l)} + H_{2\\,(g)}\\uparrow$ |\n| 3. Sustitución doble | C. $2Na_{(s)} + O_{2\\,(g)} \\longrightarrow 2Na_{2}O_{(s)}$ |\n| 4. Sustitución simple | D. $2NaCl_{(s)} \\longrightarrow 2Na_{(s)} + Cl_{2\\,(g)}\\uparrow$ |",
+            "options": {
+              "A": "1C, 2D, 3A, 4B",
+              "B": "1D, 2C, 3B, 4A",
+              "C": "1C, 2B, 3C, 4A",
+              "D": "1D, 2A, 3C, 4B"
+            },
+            "answer": "A",
+            "_src": "quimica-csya · reactivo 8"
+          },
+          {
+            "id": 85,
+            "topic": "QUI.10",
+            "topic_name": "Química",
+            "text": "Identificar el grupo funcional de los aldehídos.",
+            "options": {
+              "A": "R-CHO",
+              "B": "R-CO-R'",
+              "C": "R-COOH",
+              "D": "R-COO-R'"
+            },
+            "answer": "A",
+            "_src": "quimica-csya · reactivo 10"
+          },
+          {
+            "id": 86,
+            "topic": "QUI.12",
+            "topic_name": "Química",
+            "text": "¿Cuál es el ángulo del enlace que se forma en la hibridación $sp^{3}$ del carbono?",
+            "options": {
+              "A": "90°",
+              "B": "120°",
+              "C": "180°",
+              "D": "109.5°"
+            },
+            "answer": "D",
+            "_src": "quimica-csya · reactivo 12"
+          },
+          {
+            "id": 87,
+            "topic": "QUI.14",
+            "topic_name": "Química",
+            "text": "Ordenar los elementos de forma ascendente con base en la electronegatividad que presentan en la tabla periódica.\n1. Be\n2. Cr\n3. Cl\n4. Sc\n5. As",
+            "options": {
+              "A": "1, 4, 2, 5, 3",
+              "B": "4, 1, 5, 3, 2",
+              "C": "1, 3, 5, 4, 2",
+              "D": "4, 1, 2, 5, 3"
+            },
+            "answer": "D",
+            "_src": "quimica-csya · reactivo 14"
+          },
+          {
+            "id": 88,
+            "topic": "QUI.15",
+            "topic_name": "Química",
+            "text": "Tipo de enlace entre elementos de alta electronegatividad que se forma al compartir pares de electrones.",
+            "options": {
+              "A": "Iónico",
+              "B": "Metálico",
+              "C": "Covalente",
+              "D": "Puente de hidrógeno"
+            },
+            "answer": "C",
+            "_src": "quimica-csya · reactivo 15"
+          },
+          {
+            "id": 89,
+            "topic": "QUI.16",
+            "topic_name": "Química",
+            "text": "¿Cuál de los siguientes compuestos contiene un enlace covalente polar?",
+            "options": {
+              "A": "$H_{2}$",
+              "B": "$CH_{4}$",
+              "C": "$H_{2}O$",
+              "D": "$N_{2}O$"
+            },
+            "answer": "C",
+            "_src": "quimica-csya · reactivo 16"
+          },
+          {
+            "id": 90,
+            "topic": "QUI.17",
+            "topic_name": "Química",
+            "text": "Isótopo utilizado en el ámbito médico en radioterapias como tratamiento para pacientes con cáncer y para esterilizar equipo médico.",
+            "options": {
+              "A": "Yodo-131",
+              "B": "Plomo-212",
+              "C": "Carbono-11",
+              "D": "Cobalto-60"
+            },
+            "answer": "D",
+            "_src": "quimica-csya · reactivo 17"
+          },
+          {
+            "id": 91,
+            "topic": "QUI.18",
+            "topic_name": "Química",
+            "text": "Calcular los coeficientes que balancean por el método de tanteo la siguiente ecuación química:\n\n$$\\_\\_\\_Al_{(s)} + \\_\\_\\_H_{2}SO_{4\\,(ac)} \\longrightarrow \\_\\_\\_Al_{2}(SO_{4})_{3\\,(ac)} + \\_\\_\\_H_{2\\,(g)}$$",
+            "options": {
+              "A": "2, 3, 1, 3",
+              "B": "2, 2, 3, 1",
+              "C": "3, 2, 3, 1",
+              "D": "3, 3, 2, 3"
+            },
+            "answer": "A",
+            "_src": "quimica-csya · reactivo 18"
+          },
+          {
+            "id": 92,
+            "topic": "QUI.19",
+            "topic_name": "Química",
+            "text": "Determinar la composición porcentual del ácido acetilsalicílico (aspirina) cuya fórmula molecular es $C_{9}H_{8}O_{4}$.\n\n(Las opciones indican, en orden: % C, % H, % O)",
+            "options": {
+              "A": "% C 50, % H 8.05, % O 41.95",
+              "B": "% C 60, % H 4.47, % O 35.51",
+              "C": "% C 75, % H 9.04, % O 15.95",
+              "D": "% C 80, % H 3.95, % O 16.03"
+            },
+            "answer": "B",
+            "_src": "quimica-csya · reactivo 19"
+          },
+          {
+            "id": 93,
+            "topic": "QUI.21",
+            "topic_name": "Química",
+            "text": "De acuerdo con la siguiente reacción:\n\n$$2Al_{(s)} + 6NaOH_{(ac)} \\longrightarrow 2Na_{3}AlO_{3\\,(ac)} + 3H_{2\\,(g)}$$\n\nCalcular el número de moles resultantes de $H_{2}$ a partir de 0.46 moles de NaOH en presencia de aluminio.",
+            "options": {
+              "A": "0.23 mol",
+              "B": "0.46 mol",
+              "C": "0.70 mol",
+              "D": "3.00 mol"
+            },
+            "answer": "A",
+            "_src": "quimica-csya · reactivo 21"
+          },
+          {
+            "id": 94,
+            "topic": "QUI.23",
+            "topic_name": "Química",
+            "text": "¿Cuál de los siguientes compuestos es un óxido metálico?",
+            "options": {
+              "A": "$SO_{3}$",
+              "B": "$Li_{2}O$",
+              "C": "$LiHCO_{3}$",
+              "D": "$Na_{2}SO_{4}$"
+            },
+            "answer": "B",
+            "_src": "quimica-csya · reactivo 23"
+          }
+        ]
+      },
+      {
+        "subject": "Física",
+        "questions_count": 17,
+        "questions": [
+          {
+            "id": 95,
+            "topic": "FIS.1",
+            "topic_name": "Física",
+            "text": "Los vectores __________ son aquellos que actúan en planos diferentes.",
+            "options": {
+              "A": "colineales",
+              "B": "concurrentes",
+              "C": "no coplanares",
+              "D": "adimensionales"
+            },
+            "answer": "C",
+            "_src": "fisica-csya · reactivo 1"
+          },
+          {
+            "id": 96,
+            "topic": "FIS.2",
+            "topic_name": "Física",
+            "text": "Modelo matemático de la torca o momento de una fuerza.",
+            "options": {
+              "A": "$\\sum \\vec{F} = \\vec{0}$",
+              "B": "$\\vec{\\tau} = \\vec{r} \\times \\vec{F}$",
+              "C": "$\\tau = rF\\cos\\theta$",
+              "D": "$\\tau = rF\\tan\\theta$"
+            },
+            "answer": "B",
+            "_src": "fisica-csya · reactivo 2"
+          },
+          {
+            "id": 97,
+            "topic": "FIS.3",
+            "topic_name": "Física",
+            "text": "¿Qué implica la tercera ley de Newton?",
+            "options": {
+              "A": "Pérdida de velocidad",
+              "B": "Fuerza de acción-reacción",
+              "C": "Conservación del momento lineal",
+              "D": "Concentración de la aceleración de un objeto"
+            },
+            "answer": "B",
+            "_src": "fisica-csya · reactivo 3"
+          },
+          {
+            "id": 98,
+            "topic": "FIS.4",
+            "topic_name": "Física",
+            "text": "Propiedad que permite manipular a los metales para darles una forma deseada o para laminarlos en forma de hojas.",
+            "options": {
+              "A": "Ductilidad",
+              "B": "Elasticidad",
+              "C": "Flexibilidad",
+              "D": "Maleabilidad"
+            },
+            "answer": "D",
+            "_src": "fisica-csya · reactivo 4"
+          },
+          {
+            "id": 99,
+            "topic": "FIS.5",
+            "topic_name": "Física",
+            "text": "Calcular la fuerza que se necesita aplicar a un cuerpo de 500 N para deslizarlo horizontalmente con una velocidad constante sobre una superficie cuyo coeficiente de fricción dinámico es de 0.4",
+            "options": {
+              "A": "0.4 N",
+              "B": "125 N",
+              "C": "200 N",
+              "D": "500 N"
+            },
+            "answer": "C",
+            "_src": "fisica-csya · reactivo 5"
+          },
+          {
+            "id": 100,
+            "topic": "FIS.7",
+            "topic_name": "Física",
+            "text": "Si un automóvil, con movimiento rectilíneo uniforme, recorre 150 km en 2 horas su velocidad en este trayecto es de ____ km/h y debe mantener una velocidad de ____ km/h si desea recorrer 300 km en el mismo tiempo.",
+            "options": {
+              "A": "75 - 150",
+              "B": "150 - 75",
+              "C": "150 - 300",
+              "D": "300 - 150"
+            },
+            "answer": "A",
+            "_src": "fisica-csya · reactivo 7"
+          },
+          {
+            "id": 101,
+            "topic": "FIS.8",
+            "topic_name": "Física",
+            "text": "Ordenar de la más general a la más específica las propiedades de la materia.\n\n1. Volumen\n2. Densidad\n3. Viscosidad",
+            "options": {
+              "A": "1, 2, 3",
+              "B": "1, 3, 2",
+              "C": "2, 1, 3",
+              "D": "2, 3 ,1"
+            },
+            "answer": "A",
+            "_src": "fisica-csya · reactivo 8"
+          },
+          {
+            "id": 102,
+            "topic": "FIS.9",
+            "topic_name": "Física",
+            "text": "Relacionar el concepto con su expresión matemática.\n\n| Concepto | Expresión matemática |\n|---|---|\n| 1. Presión manométrica en un líquido | A. $P + \\rho g h + \\frac{1}{2}\\rho v^{2} = cte$ |\n| 2. Módulo de compresibilidad | B. $Av = cte$ |\n| 3. Ecuación de continuidad | C. $B = -\\frac{\\Delta P}{\\Delta V / V}$ |\n| 4. Ecuación de Bernoulli | D. $P = P_{0} + \\rho g h$ |",
+            "options": {
+              "A": "1D, 2C, 3B, 4A",
+              "B": "1A, 2D, 3C, 4B",
+              "C": "1D, 2B, 3C, 4A",
+              "D": "1A, 2C, 3D, 4B"
+            },
+            "answer": "A",
+            "_src": "fisica-csya · reactivo 9"
+          },
+          {
+            "id": 103,
+            "topic": "FIS.10",
+            "topic_name": "Física",
+            "text": "Es el número de ciclos o vibraciones que ocurren en un segundo.",
+            "options": {
+              "A": "Hertz",
+              "B": "Onda",
+              "C": "Amplitud",
+              "D": "Frecuencia"
+            },
+            "answer": "D",
+            "_src": "fisica-csya · reactivo 10"
+          },
+          {
+            "id": 104,
+            "topic": "FIS.12",
+            "topic_name": "Física",
+            "text": "Se lanza una pelota verticalmente hacia arriba con una velocidad inicial de $6\\,m/s$. ¿Cuál es la altura máxima que alcanza?",
+            "options": {
+              "A": "8.1 m",
+              "B": "5.2 m",
+              "C": "2.5 m",
+              "D": "1.8 m"
+            },
+            "answer": "D",
+            "_src": "fisica-csya · reactivo 12"
+          },
+          {
+            "id": 105,
+            "topic": "FIS.13",
+            "topic_name": "Física",
+            "text": "Relacionar el tipo de energía con su característica.\n\n| Tipo de energía | Característica |\n|---|---|\n| 1. Cinética | A. Es aquella que poseen todos los cuerpos en movimiento. |\n| 2. Térmica | B. Se genera por el movimiento de las moléculas que posee la materia. |\n| 3. Eléctrica | C. Se crea por el movimiento de los electrones a través de un conductor. |\n| 4. Mecánica | D. Se obtiene al sumar la energía cinética y la energía potencial que tiene un cuerpo. |",
+            "options": {
+              "A": "1A, 2B, 3C, 4D",
+              "B": "1D, 2C, 3A, 4B",
+              "C": "1A, 2C, 3B, 4D",
+              "D": "1D, 2A, 3C, 4B"
+            },
+            "answer": "A",
+            "_src": "fisica-csya · reactivo 13"
+          },
+          {
+            "id": 106,
+            "topic": "FIS.14",
+            "topic_name": "Física",
+            "text": "La relación entre la longitud de onda y la frecuencia de una onda es:",
+            "options": {
+              "A": "independiente",
+              "B": "directamente proporcional",
+              "C": "inversamente proporcional",
+              "D": "exponencialmente proporcional"
+            },
+            "answer": "C",
+            "_src": "fisica-csya · reactivo 14"
+          },
+          {
+            "id": 107,
+            "topic": "FIS.15",
+            "topic_name": "Física",
+            "text": "Relaciona la cualidad del sonido con su ejemplo.\n\n| Cualidad | Ejemplo |\n|---|---|\n| 1. Altura | A. El sonido de una campana. |\n| 2. Timbre | B. Un sonido agudo producido por una flauta. |\n| 3. Intensidad | C. Un violín y una flauta emitiendo la misma nota. |\n| 4. Tonos armónicos | D. Sonido fuerte producido por un martillo golpeando un clavo. |",
+            "options": {
+              "A": "1C, 2A, 3D, 4B",
+              "B": "1B, 2C, 3D, 4A",
+              "C": "1C, 2B, 3A, 4D",
+              "D": "1B, 2D, 3A, 4C"
+            },
+            "answer": "B",
+            "_src": "fisica-csya · reactivo 15"
+          },
+          {
+            "id": 108,
+            "topic": "FIS.16",
+            "topic_name": "Física",
+            "text": "Cambio de posición de una partícula.",
+            "options": {
+              "A": "Vector",
+              "B": "Trayectoria",
+              "C": "Movimiento",
+              "D": "Desplazamiento"
+            },
+            "answer": "D",
+            "_src": "fisica-csya · reactivo 16"
+          },
+          {
+            "id": 109,
+            "topic": "FIS.17",
+            "topic_name": "Física",
+            "text": "Rama de la Física que estudia las diferentes clases de movimiento de los cuerpos sin atender las causas que lo producen.",
+            "options": {
+              "A": "Estática",
+              "B": "Dinámica",
+              "C": "Mecánica",
+              "D": "Cinemática"
+            },
+            "answer": "D",
+            "_src": "fisica-csya · reactivo 17"
+          },
+          {
+            "id": 110,
+            "topic": "FIS.18",
+            "topic_name": "Física",
+            "text": "Un sonido tiene una intensidad sonora de $10^{-2}$ W/m$^{2}$. Calcular el nivel de intensidad que resulta en decibeles (dB).",
+            "options": {
+              "A": "10 dB",
+              "B": "100 dB",
+              "C": "1000 dB",
+              "D": "10000 dB"
+            },
+            "answer": "B",
+            "_src": "fisica-csya · reactivo 18"
+          },
+          {
+            "id": 111,
+            "topic": "FIS.19",
+            "topic_name": "Física",
+            "text": "Si la velocidad de la luz en el aire tiene una magnitud de $3\\times10^{8}$ m/s y en el agua es de $2.25\\times10^{8}$ m/s, ¿cuál es el índice de refracción del agua?",
+            "options": {
+              "A": "1.21",
+              "B": "1.33",
+              "C": "2.25",
+              "D": "2.42"
+            },
+            "answer": "B",
+            "_src": "fisica-csya · reactivo 19"
+          }
+        ]
+      },
+      {
+        "subject": "Historia",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 112,
+            "topic": "HIS.21",
+            "topic_name": "Historia",
+            "text": "En el materialismo histórico, los procesos de producción de bienes y servicios surgen en __________, que a su vez es la base de __________ que se compone por las relaciones sociales, políticas, ideológicas y culturales de un país.",
+            "options": {
+              "A": "los factores - el modelo",
+              "B": "la economía - el sistema",
+              "C": "el modelo - la infraestructura",
+              "D": "la estructura - la superestructura"
+            },
+            "answer": "D",
+            "_src": "historia · reactivo 21"
+          },
+          {
+            "id": 113,
+            "topic": "HIS.22",
+            "topic_name": "Historia",
+            "text": "¿Cómo se le llama a todo aquello que ayuda a los procesos productivos en los que incurre el ser humano?",
+            "options": {
+              "A": "Modos de producción",
+              "B": "Fuerzas de producción",
+              "C": "Estructuras productivas",
+              "D": "Relaciones de producción"
+            },
+            "answer": "B",
+            "_src": "historia · reactivo 22"
+          },
+          {
+            "id": 114,
+            "topic": "HIS.23",
+            "topic_name": "Historia",
+            "text": "Periodos de expansión y de contracción que experimenta una economía en un lapso determinado ocasionados por la oferta y demanda de productos, el nivel de empleo y la productividad.",
+            "options": {
+              "A": "Ciclo económico",
+              "B": "Balanza comercial",
+              "C": "Variables económicas",
+              "D": "Cantidad de producción"
+            },
+            "answer": "A",
+            "_src": "historia · reactivo 23"
+          },
+          {
+            "id": 115,
+            "topic": "HIS.24",
+            "topic_name": "Historia",
+            "text": "¿A qué suceso ocurrido en Nueva York en 1929 se le llamó como jueves negro?",
+            "options": {
+              "A": "Crisis hipotecaria por el descontrol de los precios de las viviendas",
+              "B": "Implementación de políticas proteccionistas para frenar la inflación",
+              "C": "Hundimiento de la bolsa de valores que ocasionó la ruina de los inversores",
+              "D": "Establecimiento del patrón oro como refuerzo monetario de la economía mundial"
+            },
+            "answer": "C",
+            "_src": "historia · reactivo 24"
+          },
+          {
+            "id": 116,
+            "topic": "HIS.25",
+            "topic_name": "Historia",
+            "text": "Elegir los acontecimientos que sucedieron durante la Segunda Guerra Mundial.\n\n1. Ataque del ejército alemán a la ciudad de Stalingrado.\n2. Hundimiento del trasatlántico británico llamado Lusitania.\n3. Bombardeo a la base militar estadounidense en el Pacifico.\n4. Formalización de la unión entre Alemania nazi, Italia y Japón.\n5. Creación y detonación de la primera bomba atómica de la URSS.\n6. Declaración de guerra a Serbia por el asesinato del archiduque Francisco Fernando de Austria.",
+            "options": {
+              "A": "1, 3, 4",
+              "B": "1, 4, 6",
+              "C": "2, 3, 4",
+              "D": "2, 5, 6"
+            },
+            "answer": "A",
+            "_src": "historia · reactivo 25"
+          },
+          {
+            "id": 117,
+            "topic": "HIS.26",
+            "topic_name": "Historia",
+            "text": "Ordenar cronológicamente los eventos históricos ocurridos entre 1914 y 1991 que dieron lugar al nuevo orden geopolítico.\n\n1. Invasión del ejército alemán a territorios de Polonia.\n2. Conflicto ideológico entre Estados Unidos y la URSS.\n3. La Gran Guerra protagonizada por Francia, Gran Bretaña y Alemania.\n4. Crisis financiera que inició en EU y que posteriormente se propagó por el mundo.",
+            "options": {
+              "A": "1, 2, 4, 3",
+              "B": "1, 4, 3, 2",
+              "C": "3, 4, 1, 2",
+              "D": "3, 1, 2, 4"
+            },
+            "answer": "C",
+            "_src": "historia · reactivo 26"
+          },
+          {
+            "id": 118,
+            "topic": "HIS.27",
+            "topic_name": "Historia",
+            "text": "Relacionar el tratado internacional que se conformó después de la Segunda Guerra Mundial con su contenido.\n\n| Tratado Internacional | Contenido |\n|---|---|\n| 1. Plan Marshall | A. Compromiso colectivo contra el avance comunista estableciendo una organización con alianza defensiva multinacional. |\n| 2. Bretton Woods | B. Sistema de seguridad colectiva con un ejército conjunto y un mando unificado de las fuerzas soviéticas y países socialistas. |\n| 3. Pacto de Varsovia | C. Ayuda financiera para la reconstrucción económica de los países europeos democráticos-capitalistas. |\n| 4. Organización del Tratado del Atlántico Norte | D. Reconstrucción de la economía mundial después de la Segunda Guerra Mundial a través de un régimen internacional monetario. |",
+            "options": {
+              "A": "1B, 2C, 3D, 4A",
+              "B": "1B, 2C, 3A, 4D",
+              "C": "1C, 2D, 3B, 4A",
+              "D": "1C, 2A, 3B, 4D"
+            },
+            "answer": "C",
+            "_src": "historia · reactivo 27"
+          },
+          {
+            "id": 119,
+            "topic": "HIS.28",
+            "topic_name": "Historia",
+            "text": "Después de la __________, hubo una guerra estratégica entre Estados Unidos y la Unión Soviética que concluyó con __________ en 1989.",
+            "options": {
+              "A": "Guerra de Corea - el bombardeo atómico",
+              "B": "crisis de los misiles - la Revolución Cubana",
+              "C": "Primera Guerra Mundial - la creación de la OTAN",
+              "D": "Segunda Guerra Mundial - la caída del Muro de Berlín"
+            },
+            "answer": "D",
+            "_src": "historia · reactivo 28"
+          },
+          {
+            "id": 120,
+            "topic": "HIS.29",
+            "topic_name": "Historia",
+            "text": "Los índices para medir el crecimiento económico son de tipo __________, a diferencia de los índices __________ que se utilizan para medir el desarrollo económico de un país.",
+            "options": {
+              "A": "real - nominales",
+              "B": "nominal - reales",
+              "C": "cualitativo - cuantitativos",
+              "D": "cuantitativo - cualitativos"
+            },
+            "answer": "D",
+            "_src": "historia · reactivo 29"
+          },
+          {
+            "id": 121,
+            "topic": "HIS.30",
+            "topic_name": "Historia",
+            "text": "Es la representación de un concepto económico que puede ser medible y que arroja información para el análisis de la economía.",
+            "options": {
+              "A": "Variables económicas",
+              "B": "Modelo económico",
+              "C": "Teorías económicas",
+              "D": "Política económica"
+            },
+            "answer": "A",
+            "_src": "historia · reactivo 30"
+          }
+        ]
+      },
+      {
+        "subject": "Reading comprehension",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 122,
+            "topic": "RC.3.13",
+            "topic_name": "Lectura: Holidays",
+            "text": "Alexander wants to apply for:",
+            "context": "Dear Sir / Madam,\n\nI am interested in the tour leader position for your Overland Africa tours. I have significant experience for this role.\n\nI spent five months backpacking around Africa, visiting Ethiopia, Kenya, and Tanzania. I organized my own transport, accommodation, and visas. Also, I learned about the local culture, wildlife, and some Swahili and Afrikaans. This trip taught me independence and travel planning skills.\n\nI also worked as a leader at a children's summer camp in England in 2017. I led activities for children aged 9-12, received training in climbing and first aid, and developed skills in safety, positivity, and entertainment.\n\nAdditionally, I completed the Active Youth Challenge in high school in 2016 in Scotland. Also, I volunteered at a social club, learned car mechanics, and organized a four-day camping trip in my time there.\n\nI would love to discuss my skills further in an interview.\n\nYours faithfully,\n\nAlexander Ryder",
+            "options": {
+              "A": "children's summer camp leader",
+              "B": "camping trip mechanic",
+              "C": "travel club organizer",
+              "D": "overland tour leader"
+            },
+            "answer": "D",
+            "_src": "reading-comprehension · lectura 3 · reactivo 13"
+          },
+          {
+            "id": 123,
+            "topic": "RC.3.14",
+            "topic_name": "Lectura: Holidays",
+            "text": "Alexander travelled around Africa for __________ months.",
+            "context": "Dear Sir / Madam,\n\nI am interested in the tour leader position for your Overland Africa tours. I have significant experience for this role.\n\nI spent five months backpacking around Africa, visiting Ethiopia, Kenya, and Tanzania. I organized my own transport, accommodation, and visas. Also, I learned about the local culture, wildlife, and some Swahili and Afrikaans. This trip taught me independence and travel planning skills.\n\nI also worked as a leader at a children's summer camp in England in 2017. I led activities for children aged 9-12, received training in climbing and first aid, and developed skills in safety, positivity, and entertainment.\n\nAdditionally, I completed the Active Youth Challenge in high school in 2016 in Scotland. Also, I volunteered at a social club, learned car mechanics, and organized a four-day camping trip in my time there.\n\nI would love to discuss my skills further in an interview.\n\nYours faithfully,\n\nAlexander Ryder",
+            "options": {
+              "A": "three",
+              "B": "four",
+              "C": "five",
+              "D": "six"
+            },
+            "answer": "C",
+            "_src": "reading-comprehension · lectura 3 · reactivo 14"
+          },
+          {
+            "id": 124,
+            "topic": "RC.3.15",
+            "topic_name": "Lectura: Holidays",
+            "text": "Alexander learnt __________ and __________ during his trip to Africa.",
+            "context": "Dear Sir / Madam,\n\nI am interested in the tour leader position for your Overland Africa tours. I have significant experience for this role.\n\nI spent five months backpacking around Africa, visiting Ethiopia, Kenya, and Tanzania. I organized my own transport, accommodation, and visas. Also, I learned about the local culture, wildlife, and some Swahili and Afrikaans. This trip taught me independence and travel planning skills.\n\nI also worked as a leader at a children's summer camp in England in 2017. I led activities for children aged 9-12, received training in climbing and first aid, and developed skills in safety, positivity, and entertainment.\n\nAdditionally, I completed the Active Youth Challenge in high school in 2016 in Scotland. Also, I volunteered at a social club, learned car mechanics, and organized a four-day camping trip in my time there.\n\nI would love to discuss my skills further in an interview.\n\nYours faithfully,\n\nAlexander Ryder",
+            "options": {
+              "A": "Swahili - Zulu",
+              "B": "Kiswahili - Dutch",
+              "C": "Afrikaans - Shona",
+              "D": "Afrikaans - Swahili"
+            },
+            "answer": "D",
+            "_src": "reading-comprehension · lectura 3 · reactivo 15"
+          },
+          {
+            "id": 125,
+            "topic": "RC.3.16",
+            "topic_name": "Lectura: Holidays",
+            "text": "Alexander has visited __________, __________ and __________ in Africa.",
+            "context": "Dear Sir / Madam,\n\nI am interested in the tour leader position for your Overland Africa tours. I have significant experience for this role.\n\nI spent five months backpacking around Africa, visiting Ethiopia, Kenya, and Tanzania. I organized my own transport, accommodation, and visas. Also, I learned about the local culture, wildlife, and some Swahili and Afrikaans. This trip taught me independence and travel planning skills.\n\nI also worked as a leader at a children's summer camp in England in 2017. I led activities for children aged 9-12, received training in climbing and first aid, and developed skills in safety, positivity, and entertainment.\n\nAdditionally, I completed the Active Youth Challenge in high school in 2016 in Scotland. Also, I volunteered at a social club, learned car mechanics, and organized a four-day camping trip in my time there.\n\nI would love to discuss my skills further in an interview.\n\nYours faithfully,\n\nAlexander Ryder",
+            "options": {
+              "A": "Egypt - Morocco - Tanzania",
+              "B": "Ethiopia - Tanzania - Kenya",
+              "C": "Ethiopia - Nigeria - Kenya",
+              "D": "Egypt - Kenya - Tanzania"
+            },
+            "answer": "B",
+            "_src": "reading-comprehension · lectura 3 · reactivo 16"
+          },
+          {
+            "id": 126,
+            "topic": "RC.3.17",
+            "topic_name": "Lectura: Holidays",
+            "text": "Alexander was motivated to apply for the Overland Africa tour leader position because of his:",
+            "context": "Dear Sir / Madam,\n\nI am interested in the tour leader position for your Overland Africa tours. I have significant experience for this role.\n\nI spent five months backpacking around Africa, visiting Ethiopia, Kenya, and Tanzania. I organized my own transport, accommodation, and visas. Also, I learned about the local culture, wildlife, and some Swahili and Afrikaans. This trip taught me independence and travel planning skills.\n\nI also worked as a leader at a children's summer camp in England in 2017. I led activities for children aged 9-12, received training in climbing and first aid, and developed skills in safety, positivity, and entertainment.\n\nAdditionally, I completed the Active Youth Challenge in high school in 2016 in Scotland. Also, I volunteered at a social club, learned car mechanics, and organized a four-day camping trip in my time there.\n\nI would love to discuss my skills further in an interview.\n\nYours faithfully,\n\nAlexander Ryder",
+            "options": {
+              "A": "background in car mechanics",
+              "B": "passion for working with children",
+              "C": "experience in organizing expedition trips",
+              "D": "travel exploration and knowledge of African cultures"
+            },
+            "answer": "D",
+            "_src": "reading-comprehension · lectura 3 · reactivo 17"
+          },
+          {
+            "id": 127,
+            "topic": "RC.3.18",
+            "topic_name": "Lectura: Holidays",
+            "text": "Alexander learned __________ by himself, during the Active Youth Challenge.",
+            "context": "Dear Sir / Madam,\n\nI am interested in the tour leader position for your Overland Africa tours. I have significant experience for this role.\n\nI spent five months backpacking around Africa, visiting Ethiopia, Kenya, and Tanzania. I organized my own transport, accommodation, and visas. Also, I learned about the local culture, wildlife, and some Swahili and Afrikaans. This trip taught me independence and travel planning skills.\n\nI also worked as a leader at a children's summer camp in England in 2017. I led activities for children aged 9-12, received training in climbing and first aid, and developed skills in safety, positivity, and entertainment.\n\nAdditionally, I completed the Active Youth Challenge in high school in 2016 in Scotland. Also, I volunteered at a social club, learned car mechanics, and organized a four-day camping trip in my time there.\n\nI would love to discuss my skills further in an interview.\n\nYours faithfully,\n\nAlexander Ryder",
+            "options": {
+              "A": "car mechanics",
+              "B": "tour guiding skills",
+              "C": "wildlife observation",
+              "D": "climbing instruction"
+            },
+            "answer": "A",
+            "_src": "reading-comprehension · lectura 3 · reactivo 18"
+          },
+          {
+            "id": 128,
+            "topic": "RC.6.37",
+            "topic_name": "Lectura: News, lifestyles and current affairs",
+            "text": "One reason fake news is shared online is to:",
+            "context": "**Be careful of Fake News!**\n\nEvery time you go online, you see pictures, articles, and videos. But not all these stories are true. Some want you to click for money; others want to make people upset for political reasons. Information spreads quickly, and this can lead to fake news.\n\nFake news can be obvious or tricky to spot. Experts give these tips to identify fake news:\n\n1. **Check the Source:** Look at the website. Is it real? Is the text clear? Fake news sites may look like real newspapers but don't have many stories. Check the «About» page for details.\n\n2. **Check Photos:** Fake stories often use edited or unrelated photos. Use tools like Google Reverse Image to check.\n\n3. **Find the Story Elsewhere:** Trusted news sites usually share true stories. If other major sites show it, it's likely true.\n\n**Other Clues:** Be careful if the story uses ALL CAPS or has many ads. Also, if it makes you very angry, it might be fake.",
+            "options": {
+              "A": "make money",
+              "B": "make people laugh",
+              "C": "share positive political news",
+              "D": "help people identify fake news"
+            },
+            "answer": "A",
+            "_src": "reading-comprehension · lectura 6 · reactivo 37"
+          },
+          {
+            "id": 129,
+            "topic": "RC.6.38",
+            "topic_name": "Lectura: News, lifestyles and current affairs",
+            "text": "You can check if an image is fake by:",
+            "context": "**Be careful of Fake News!**\n\nEvery time you go online, you see pictures, articles, and videos. But not all these stories are true. Some want you to click for money; others want to make people upset for political reasons. Information spreads quickly, and this can lead to fake news.\n\nFake news can be obvious or tricky to spot. Experts give these tips to identify fake news:\n\n1. **Check the Source:** Look at the website. Is it real? Is the text clear? Fake news sites may look like real newspapers but don't have many stories. Check the «About» page for details.\n\n2. **Check Photos:** Fake stories often use edited or unrelated photos. Use tools like Google Reverse Image to check.\n\n3. **Find the Story Elsewhere:** Trusted news sites usually share true stories. If other major sites show it, it's likely true.\n\n**Other Clues:** Be careful if the story uses ALL CAPS or has many ads. Also, if it makes you very angry, it might be fake.",
+            "options": {
+              "A": "asking a friend",
+              "B": "zooming in on the image",
+              "C": "editing the image yourself",
+              "D": "using Google Reverse Image search"
+            },
+            "answer": "D",
+            "_src": "reading-comprehension · lectura 6 · reactivo 38"
+          },
+          {
+            "id": 130,
+            "topic": "RC.6.39",
+            "topic_name": "Lectura: News, lifestyles and current affairs",
+            "text": "The text mentions about «all caps» in stories where it:",
+            "context": "**Be careful of Fake News!**\n\nEvery time you go online, you see pictures, articles, and videos. But not all these stories are true. Some want you to click for money; others want to make people upset for political reasons. Information spreads quickly, and this can lead to fake news.\n\nFake news can be obvious or tricky to spot. Experts give these tips to identify fake news:\n\n1. **Check the Source:** Look at the website. Is it real? Is the text clear? Fake news sites may look like real newspapers but don't have many stories. Check the «About» page for details.\n\n2. **Check Photos:** Fake stories often use edited or unrelated photos. Use tools like Google Reverse Image to check.\n\n3. **Find the Story Elsewhere:** Trusted news sites usually share true stories. If other major sites show it, it's likely true.\n\n**Other Clues:** Be careful if the story uses ALL CAPS or has many ads. Also, if it makes you very angry, it might be fake.",
+            "options": {
+              "A": "can be used for important information",
+              "B": "is a sign of fake news",
+              "C": "shows excitement",
+              "D": "is a new trend"
+            },
+            "answer": "B",
+            "_src": "reading-comprehension · lectura 6 · reactivo 39"
+          },
+          {
+            "id": 131,
+            "topic": "RC.6.40",
+            "topic_name": "Lectura: News, lifestyles and current affairs",
+            "text": "You should look at the __________ to learn more about a website.",
+            "context": "**Be careful of Fake News!**\n\nEvery time you go online, you see pictures, articles, and videos. But not all these stories are true. Some want you to click for money; others want to make people upset for political reasons. Information spreads quickly, and this can lead to fake news.\n\nFake news can be obvious or tricky to spot. Experts give these tips to identify fake news:\n\n1. **Check the Source:** Look at the website. Is it real? Is the text clear? Fake news sites may look like real newspapers but don't have many stories. Check the «About» page for details.\n\n2. **Check Photos:** Fake stories often use edited or unrelated photos. Use tools like Google Reverse Image to check.\n\n3. **Find the Story Elsewhere:** Trusted news sites usually share true stories. If other major sites show it, it's likely true.\n\n**Other Clues:** Be careful if the story uses ALL CAPS or has many ads. Also, if it makes you very angry, it might be fake.",
+            "options": {
+              "A": "comments section",
+              "B": "images section",
+              "C": "'about' page",
+              "D": "homepage"
+            },
+            "answer": "C",
+            "_src": "reading-comprehension · lectura 6 · reactivo 40"
+          }
+        ]
+      },
+      {
+        "subject": "Biología",
+        "questions_count": 9,
+        "questions": [
+          {
+            "id": 132,
+            "topic": "BIO.1",
+            "topic_name": "Biología",
+            "text": "El anabolismo es un conjunto de reacciones que __________ moléculas complejas a partir de moléculas más simples.",
+            "options": {
+              "A": "sintetiza",
+              "B": "degrada",
+              "C": "acomoda",
+              "D": "simplifica"
+            },
+            "answer": "A",
+            "_src": "biologia-csya · reactivo 1"
+          },
+          {
+            "id": 133,
+            "topic": "BIO.3",
+            "topic_name": "Biología",
+            "text": "El proceso de trasladar sangre o componentes sanguíneos de un individuo (donante) a otro (receptor) se conoce como:",
+            "options": {
+              "A": "deleción",
+              "B": "transfusión",
+              "C": "transmisión",
+              "D": "transferencia"
+            },
+            "answer": "B",
+            "_src": "biologia-csya · reactivo 3"
+          },
+          {
+            "id": 134,
+            "topic": "BIO.4",
+            "topic_name": "Biología",
+            "text": "¿Qué estructura del sistema reproductor femenino es responsable de la producción de óvulos?",
+            "options": {
+              "A": "Útero",
+              "B": "Vagina",
+              "C": "Ovarios",
+              "D": "Trompas de Falopio"
+            },
+            "answer": "C",
+            "_src": "biologia-csya · reactivo 4"
+          },
+          {
+            "id": 135,
+            "topic": "BIO.8",
+            "topic_name": "Biología",
+            "text": "El rechazo de un trasplante se debe a la reacción del sistema __________ del receptor, dado que percibe al órgano trasplantado como un cuerpo extraño y por eso trata de atacarlo.",
+            "options": {
+              "A": "inmunológico",
+              "B": "muscular",
+              "C": "nervioso",
+              "D": "excretor"
+            },
+            "answer": "A",
+            "_src": "biologia-csya · reactivo 8"
+          },
+          {
+            "id": 136,
+            "topic": "BIO.9",
+            "topic_name": "Biología",
+            "text": "Lo primero que ocurre en la respiración celular es la __________, en la que la glucosa se __________ para producir piruvato.",
+            "options": {
+              "A": "glicólisis - descompone",
+              "B": "fotosíntesis - descompone",
+              "C": "fermentación láctica - fusiona",
+              "D": "fermentación alcohólica - fusiona"
+            },
+            "answer": "A",
+            "_src": "biologia-csya · reactivo 9"
+          },
+          {
+            "id": 137,
+            "topic": "BIO.10",
+            "topic_name": "Biología",
+            "text": "Indicar cuál es la fase del ciclo celular que sigue a la mitosis.",
+            "options": {
+              "A": "S",
+              "B": "G0",
+              "C": "G1",
+              "D": "G2"
+            },
+            "answer": "C",
+            "_src": "biologia-csya · reactivo 10"
+          },
+          {
+            "id": 138,
+            "topic": "BIO.11",
+            "topic_name": "Biología",
+            "text": "Gregorio Mendel es conocido como el padre de la __________ debido a sus estudios sobre la herencia.",
+            "options": {
+              "A": "zoología",
+              "B": "botánica",
+              "C": "genética",
+              "D": "histología"
+            },
+            "answer": "C",
+            "_src": "biologia-csya · reactivo 11"
+          },
+          {
+            "id": 139,
+            "topic": "BIO.12",
+            "topic_name": "Biología",
+            "text": "Es la primera etapa del método científico.",
+            "options": {
+              "A": "Observación",
+              "B": "Experimentación",
+              "C": "Análisis de datos",
+              "D": "Formulación de hipótesis"
+            },
+            "answer": "A",
+            "_src": "biologia-csya · reactivo 12"
+          },
+          {
+            "id": 140,
+            "topic": "BIO.13",
+            "topic_name": "Biología",
+            "text": "La estructura denominada __________ es exclusiva de las células vegetales.",
+            "options": {
+              "A": "núcleo",
+              "B": "ribosoma",
+              "C": "mitocondria",
+              "D": "pared celular"
+            },
+            "answer": "D",
+            "_src": "biologia-csya · reactivo 13"
+          }
+        ]
+      }
+    ]
+  }
+}

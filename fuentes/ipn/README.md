@@ -81,39 +81,63 @@ cada bloque la cantidad que marca la distribución oficial de arriba.
 
 ## Bloques transcritos — `bloques/*.json`
 
-Un archivo por bloque, con `_meta.rc` (la clave completa del bloque, incluso de los
-reactivos que aún no se transcriben) y un arreglo de reactivos. Los que dependen de
-una figura del original quedan como *stub* con el campo `figura` describiéndola, para
+Un archivo por bloque, con `_meta.rc` (la clave completa del bloque tal como viene en
+su tabla RESPUESTAS CORRECTAS) y un arreglo de reactivos. Los que dependen de una
+figura del original quedan como *stub* con el campo `figura` describiéndola, para
 poder vectorizarlos después sin volver a leer el escaneo.
 
-| Archivo | Transcritos | Sin figura |
-|---|---|---|
-| `pensamiento-matematico.json` | 40 de 40 | 22 |
-| `algebra.json` | 40 de 40 | 37 |
-| `geometria-trigonometria.json` | 40 de 40 | 23 |
-| `geometria-analitica.json` | 40 de 40 | 35 |
-| `calculo-diferencial.json` | 40 de 40 | **40** |
-| `calculo-integral.json` | 23 de 40 | 21 |
-| `probabilidad-estadistica.json` | 15 de 40 | 14 |
-| `competencia-escrita.json` | 32 de 50 | **32** |
-| `competencia-lectora.json` | 3 lecturas de 6 | lecturas 2 y 3 |
-| `reading-comprehension.json` | 18 de 40 | **18** |
-| `historia.json` | 17 de 40 | **17** |
-| `biologia-iycfm.json` | 30 de 30 | 22 |
-| `quimica-iycfm.json` | 40 de 40 | 30 |
-| `fisica-iycfm.json` | 27 de 50 | 22 |
+Los bloques de **Conocimientos generales** (matemáticas, competencias, reading,
+historia) los comparten las tres áreas; solo Biología, Química y Física cambian por
+área.
 
-Pendiente de transcribir (páginas del PDF): cálculo integral 48-50, probabilidad
-53-55, competencia escrita 64-66, competencia lectora 74-77, reading 83-85, historia
-90-92, física 109-111. Los bloques de CMB y CSyA están completos sin transcribir.
+| Archivo | Reactivos del bloque | Transcritos | Utilizables sin figura | |
+|---|--:|--:|--:|---|
+| `algebra.json` | 40 | 40 | 37 |  |
+| `biologia-cmb.json` | 50 | 50 | 36 |  |
+| `biologia-csya.json` | 25 | 25 | 21 |  |
+| `biologia-iycfm.json` | 30 | 30 | 22 |  |
+| `calculo-diferencial.json` | 40 | 40 | 40 |  |
+| `calculo-integral.json` | 40 | 23 | 21 |  |
+| `competencia-escrita.json` | 50 | 50 | 48 |  |
+| `competencia-lectora.json` | 60 | 50 | 46 | 5 lecturas |
+| `fisica-cmb.json` | 30 | 30 | 28 |  |
+| `fisica-csya.json` | 25 | 25 | 22 |  |
+| `fisica-iycfm.json` | 50 | 27 | 22 |  |
+| `geometria-analitica.json` | 40 | 40 | 35 |  |
+| `geometria-trigonometria.json` | 40 | 40 | 23 |  |
+| `historia.json` | 40 | 40 | 40 |  |
+| `pensamiento-matematico.json` | 40 | 40 | 22 |  |
+| `probabilidad-estadistica.json` | 40 | 15 | 14 |  |
+| `quimica-cmb.json` | 40 | 40 | 27 |  |
+| `quimica-csya.json` | 25 | 25 | 19 |  |
+| `quimica-iycfm.json` | 40 | 40 | 30 |  |
+| `reading-comprehension.json` | 40 | 28 | 28 | 5 lecturas |
 
-## Examen armado
+Pendiente de transcribir: cálculo integral 19-35 (PDF 48-50), probabilidad 1-25
+(PDF 53-55) y física IyCFM 25-47 (PDF 109-111) — hay material de sobra sin ellos.
+La lectura 6 de competencia lectora (reactivos 51-60) es una infografía completa y
+solo sirve si se reconstruye como figura.
 
-`ipn-iycfm-1.json` — "Simulacro IPN — Ingeniería y Ciencias Físico Matemáticas",
-140 reactivos con la distribución oficial exacta. Todas las respuestas provienen de
-las tablas RC de la guía; se recalcularon a mano varias (pensamiento matemático 1, 2,
-40; álgebra 4, 5, 12, 33, 40; física 8, 13, 20, 21, 50) y todas coincidieron.
 
-Sus tres figuras (`public/imagenes_ipn-iycfm-1/lectura1_*.svg`) son la construcción
-de la razón áurea, el rectángulo dorado y la espiral áurea, reconstruidas en SVG
-tema-adaptable; van embebidas en la lectura vía `<img>` dentro del `context`.
+## Exámenes armados
+
+| Archivo | Área | Reactivos |
+|---|---|--:|
+| `ipn-iycfm-1.json` | Ingeniería y Ciencias Físico Matemáticas | 140 |
+| `ipn-cmb-1.json` | Ciencias Médico Biológicas | 140 |
+| `ipn-csya-1.json` | Ciencias Sociales y Administrativas | 140 |
+
+Cada uno con la distribución oficial exacta de su área. Todas las respuestas vienen
+de las tablas RC de la guía; cada bloque se releyó de forma independiente para
+comprobar la clave y se recalcularon a mano decenas de reactivos.
+
+Los tres se arman con los scripts del scratchpad a partir de `bloques/`. El armador
+evita repetir reactivos entre exámenes: matemáticas, química, física, historia y
+biología no repiten ninguno. Sí hay traslape donde el banco compartido se agota —
+competencia escrita (48 utilizables para 60 lugares) y competencia lectora (46 para
+60)—; se reduce transcribiendo más de esos dos bloques.
+
+Las tres figuras de `public/imagenes_ipn-iycfm-1/lectura1_*.svg` (construcción de la
+razón áurea, rectángulo dorado y espiral áurea) son SVG tema-adaptable y van
+embebidas con `<img>` dentro del `context` de la lectura, que por eso va en HTML
+crudo: markdown-render devuelve el bloque tal cual cuando contiene `<img>`.
