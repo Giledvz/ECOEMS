@@ -118,11 +118,23 @@ orden y con el mismo "id":
 
 [ { "id": 1, "explanation": "..." }, { "id": 2, "explanation": "..." } ]
 
-IMPORTANTE PARA NO GASTAR DE MÁS: después de escribir el archivo, TERMINA. No lo
-vuelvas a abrir, no lo valides, no corras Bash para revisarlo, no resumas lo que
-hiciste. De validar el JSON, los ids, los vacíos y el HTML se encarga otro proceso
-determinista que corre sobre todos los lotes juntos. Tu único trabajo es escribir
-buenas explicaciones y guardarlas.
+CÓMO GASTAR POCO (importante). Cada turno tuyo relee todo el contexto acumulado, así
+que lo que encarece esto no es escribir bien, es dar vueltas. El trabajo completo cabe
+en tres pasos y ninguno más:
+
+  1. Un solo Read del archivo del lote. Uno. No lo vuelvas a abrir.
+  2. Un Read por cada figura, solo de las preguntas que traigan "figura" o
+     "figuras_opciones", y solo una vez cada archivo.
+  3. Un solo Write con el JSON completo.
+
+NO USES Bash. Para nada: ni para escribir el archivo, ni para validar el JSON, ni
+para contar, ni para listar la carpeta. La única herramienta para guardar es Write.
+Escribir con Bash y heredoc cuesta el doble y es la razón principal por la que
+corridas anteriores salieron caras.
+
+Después del Write, TERMINA. No reabras el archivo, no lo valides, no revises los ids.
+De eso se encarga otro proceso determinista que corre sobre todos los lotes juntos y
+lo hace mejor que tú revisándote a ti mismo.
 
 Responde con una sola línea: cuántas escribiste.`,
     { label: lote.replace(/__/g, ' · '), phase: 'Explicar', model: 'fable' }
