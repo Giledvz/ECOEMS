@@ -1,0 +1,162 @@
+[
+ {
+  "id": 41,
+  "explanation": "Aplica el teorema fundamental del cálculo: la antiderivada de $x^2$ es $\\dfrac{x^3}{3}$, y la evalúas entre los límites.\n\n$$\\int_0^2 x^2\\,dx=\\left[\\dfrac{x^3}{3}\\right]_0^2=\\dfrac{2^3}{3}-\\dfrac{0^3}{3}=\\dfrac{8}{3}$$\n\nSi te dio $8$, calculaste $2^3$ pero se te olvidó dividir entre 3, que es lo que aporta la integración."
+ },
+ {
+  "id": 42,
+  "explanation": "La integral se separa término a término y las constantes salen fuera. Las dos integrales básicas son $\\int \\mathrm{sen}\\,x\\,dx=-\\cos x$ y $\\int \\cos x\\,dx=\\mathrm{sen}\\,x$, así que\n\n$$\\int(2\\,\\mathrm{sen}\\,x+3\\cos x)\\,dx=-2\\cos x+3\\,\\mathrm{sen}\\,x+C$$\n\nLo que decide el reactivo es el signo: al integrar el seno aparece el menos. Compruébalo derivando tu resultado, debes regresar al integrando. La opción C tiene los términos correctos pero sin ese negativo, y al derivarla te daría $-2\\,\\mathrm{sen}\\,x+3\\cos x$."
+ },
+ {
+  "id": 43,
+  "explanation": "La velocidad es un vector: tiene magnitud y dirección. La rapidez es un escalar, y se define justamente como la magnitud de ese vector, sin la dirección. Por eso nunca puede ser mayor ni menor: vale exactamente lo mismo que la magnitud del vector velocidad.\n\nLa opción D describiría un movimiento acelerado, y ahí ya no tendrías velocidad constante como pide el enunciado."
+ },
+ {
+  "id": 44,
+  "explanation": "La energía potencial gravitatoria es $U=mgh$. Al llevar el cuerpo a la Luna, ni la masa ni la altura cambian; lo único distinto es $g$, que allá es seis veces menor:\n\n$$U_L=m\\left(\\dfrac{g_T}{6}\\right)h=\\dfrac{mg_Th}{6}=\\dfrac{U_T}{6}$$\n\nComo $g$ está multiplicando, dividirla entre 6 divide toda la energía entre 6. Si escogiste \"6 veces mayor\" invertiste la relación: menor gravedad significa que cuesta menos subir el cuerpo y por lo tanto guarda menos energía."
+ },
+ {
+  "id": 45,
+  "explanation": "Mira los tres dibujos: en el caso I la bola se sube en vertical, en el II por una rampa y en el III por escalones, pero en los tres termina a la misma altura de $3\\,m$. El trabajo contra la gravedad sólo depende del desplazamiento vertical:\n\n$$W=mgh$$\n\nEl peso es una fuerza conservativa, así que el trabajo no depende de la trayectoria; lo que avanzas en horizontal no cuesta trabajo contra la gravedad porque ahí la fuerza y el desplazamiento son perpendiculares. Misma bola y misma altura, mismo trabajo.\n\nLa rampa (II) es el distractor que se antoja, porque ahí empujas con menos fuerza; pero recorres más distancia, y el producto fuerza por distancia sale igual."
+ },
+ {
+  "id": 46,
+  "explanation": "Antes del salto todo está en reposo, así que el momento total del sistema niño-carrito es cero, y sin fricción debe seguir siendo cero después. Eso obliga a que los dos momentos sean iguales en magnitud y opuestos en dirección:\n\n$$m_n v_n=m_c v_c$$\n$$(30\\,kg)(2\\,m/s)=m_c(12\\,m/s)$$\n$$m_c=\\dfrac{60}{12}=5\\,kg$$\n\nFíjate en la lógica: como el carrito sale seis veces más rápido, su masa tiene que ser seis veces menor. Masa y rapidez son inversamente proporcionales cuando el momento total vale cero, así que cualquier opción que no cumpla $30\\times 2=m_c\\times 12$ queda descartada."
+ },
+ {
+  "id": 47,
+  "explanation": "Las variables macroscópicas son las que puedes medir y manipular directamente sobre el gas completo: presión, volumen y temperatura. Están ligadas por $\\dfrac{PV}{T}=$ constante, de modo que para cambiar el volumen tienes que mover las otras dos: si aumentas la presión el gas se comprime, y si aumentas la temperatura se expande.\n\nLa energía interna, la energía cinética molecular y la potencial son descripciones microscópicas, del nivel de las moléculas; no son variables que ajustes con un pistón o un mechero."
+ },
+ {
+  "id": 48,
+  "explanation": "La teoría cinética liga la temperatura con la energía cinética promedio de las moléculas: mientras más fría la muestra, menos agitación. El límite en el que ese movimiento aleatorio cesaría por completo es el cero absoluto, $0\\,K$ (equivalente a $-273.15\\,°C$), y por eso no existen temperaturas negativas en la escala Kelvin.\n\nLas demás opciones son temperaturas frías pero comunes y corrientes: en $0\\,°C$ apenas se congela el agua, y ahí las moléculas siguen vibrando."
+ },
+ {
+  "id": 49,
+  "explanation": "Ve una por una y no necesitas dudar. En la onda longitudinal (I) las partículas oscilan en la misma dirección en que avanza la onda, como el sonido en el aire, que comprime y expande: le toca c. En la transversal (II) las partículas oscilan perpendicularmente al avance, como cuando sacudes una cuerda: le toca b. La electromagnética (III) es la única que viaja en el vacío, porque su campo eléctrico y su campo magnético se sostienen entre sí sin materia: le toca a.\n\nQueda I: c – II: b – III: a."
+ },
+ {
+  "id": 50,
+  "explanation": "El campo eléctrico se define como la fuerza que sentiría una carga de prueba, dividida entre esa carga: $E=\\dfrac{F}{q}$. Si la fuerza va en newtons y la carga en coulombs, la unidad es $\\dfrac{N}{C}$.\n\nLa opción A, $\\dfrac{N}{kg}$, es la del campo gravitatorio (fuerza entre masa): misma idea, pero con masa en lugar de carga."
+ },
+ {
+  "id": 51,
+  "explanation": "Es la ley de Faraday: todo cambio del flujo magnético en el tiempo induce una fuerza electromotriz,\n\n$$\\varepsilon=-\\dfrac{\\Delta\\Phi}{\\Delta t}$$\n\nLa fem aparece por el solo hecho de que el flujo varía, haya o no un conductor cerca.\n\nLa opción C se antoja mucho, pero la corriente sólo circula si además existe un circuito cerrado y conductor. Sin circuito hay fem inducida y no hay corriente; por eso la afirmación segura es la de la fem."
+ },
+ {
+  "id": 52,
+  "explanation": "La presión atmosférica en un punto es el peso de toda la columna de aire que está encima de él. En la cima del Everest ya dejaste debajo de ti buena parte de la atmósfera, así que la capa de aire que soportas es mucho más delgada y pesa menos: la presión cae.\n\nLa densidad del aire también disminuye con la altura (opción A), pero eso es una consecuencia de lo mismo, no la razón de fondo; la causa es cuánta atmósfera te queda encima."
+ },
+ {
+  "id": 53,
+  "explanation": "Dual quiere decir que la luz se comporta de dos maneras según el experimento con que la interrogues. Al pasar por dos rendijas produce interferencia y difracción, comportamiento de onda; al arrancar electrones de un metal en el efecto fotoeléctrico se comporta como paquetes de energía, los fotones, es decir como partícula. Ninguna de las dos descripciones basta por sí sola.\n\nLa reflexión y la refracción (D) las explica el modelo ondulatorio solito, así que ahí no hay ninguna dualidad."
+ },
+ {
+  "id": 54,
+  "explanation": "Marie Curie es la única persona que ha ganado el Nobel en dos ciencias distintas: el de Física, compartido con Pierre Curie y Henri Becquerel por el estudio de la radiactividad, y años después el de Química, en solitario, por el descubrimiento del polonio y el radio.\n\nNunca recibió el de Medicina ni el de Biología —de hecho, no existe un Nobel de Biología—, así que cualquier opción que los mencione se cae sola."
+ },
+ {
+  "id": 55,
+  "explanation": "Lee el símbolo por partes. El subíndice $34$ es el número atómico: son **34 protones**. El superíndice $78$ es el número de masa, que cuenta protones más neutrones, así que\n\n$$n=78-34=44\\ \\text{neutrones}$$\n\nLa carga $2-$ indica que el átomo **ganó** dos electrones, de modo que tiene $34+2=36$ electrones. Queda: 34 protones, 44 neutrones y 36 electrones.\n\nLos dos errores clásicos son tomar el 78 como número de protones y restarle electrones al anión en vez de sumárselos; el signo negativo siempre significa electrones de más."
+ },
+ {
+  "id": 56,
+  "explanation": "La familia se lee en los electrones del último nivel ocupado. Aquí el nivel más externo es el 3, con $3s^2\\,3p^5$, o sea $2+5=7$ electrones de valencia. Siete electrones de valencia corresponden a la familia **VII A**, la de los halógenos, y con $Z=17$ el elemento es el cloro.\n\nEl error frecuente es contar sólo los electrones del subnivel $p$ o sólo los del $s$: hay que sumar los dos del mismo nivel."
+ },
+ {
+  "id": 57,
+  "explanation": "La ecuación está balanceada $1:1$: cada mol de $HCl$ consume exactamente un mol de $NaOH$. Empieza por los milimoles de ácido:\n\n$$(0.02\\,M)(10\\,mL)=0.2\\,mmol\\ \\text{de}\\ HCl$$\n\nNecesitas esos mismos $0.2\\,mmol$ de base, y la base está a la mitad de concentración:\n\n$$V=\\dfrac{0.2\\,mmol}{0.01\\,M}=20\\,mL$$\n\nRazónalo también sin cuentas: si la sosa está el doble de diluida que el ácido, te hace falta el doble de volumen. Si contestaste 5, hiciste la división al revés."
+ },
+ {
+  "id": 58,
+  "explanation": "El porcentaje en volumen significa mililitros de soluto por cada 100 mL de disolución. Entonces basta con sacar el $38\\%$ de la botella:\n\n$$(946\\,mL)(0.38)=359.48\\,mL\\ \\text{de alcohol}$$\n\nLa opción D, $586.52$, es justo lo que sobra: el $62\\%$ que **no** es alcohol. Si la restaste, te quedaste con la parte equivocada."
+ },
+ {
+  "id": 59,
+  "explanation": "Escribe la combustión del metano:\n\n$$CH_4+2O_2\\to CO_2+2H_2O$$\n\nLa reacción consume oxígeno para formar dióxido de carbono y agua, así que en la mezcla resultante queda **menos oxígeno** que al principio.\n\nEl nitrógeno no participa: es un gas inerte en estas condiciones y su cantidad sigue siendo la misma, por eso A queda descartada. Y con B ten cuidado: el por ciento de nitrógeno no sube en automático, porque los gases que se forman ocupan el lugar del oxígeno que se gastó; lo único seguro es que el oxígeno disminuyó."
+ },
+ {
+  "id": 60,
+  "explanation": "Sigue los números de oxidación. El cobre entra como $Cu^0$ y sale como $Cu^{2+}$ dentro del $Cu(NO_3)_2$: perdió dos electrones, o sea **se oxidó**. La plata hace lo contrario, pasa de $Ag^{+}$ a $Ag^0$: gana electrones y se reduce.\n\nAquí está la trampa que atrapa a medio grupo: la especie que se oxida es la que **entrega** los electrones, y por eso se llama agente reductor, porque reduce a la otra. El cobre se oxida, luego el cobre es el agente reductor, no el oxidante."
+ },
+ {
+  "id": 61,
+  "explanation": "Los almidones (papa, arroz, tortilla) y los azúcares (glucosa, sacarosa) son **carbohidratos**, y son el combustible que la célula usa primero: se degradan hasta glucosa, que entra a la glucólisis.\n\nLos lípidos también dan energía, pero funcionan como reserva a largo plazo; las proteínas se destinan sobre todo a construir estructuras, y las vitaminas no aportan energía, sólo regulan procesos."
+ },
+ {
+  "id": 62,
+  "explanation": "La caseína es la proteína principal de la leche: es la que se coagula al cuajar el queso.\n\nLas otras tres no lo son: la sacarosa es un disacárido y el almidón un polisacárido —los dos son carbohidratos—, y el colesterol es un lípido del grupo de los esteroides."
+ },
+ {
+  "id": 63,
+  "explanation": "Usa la fórmula del calor sensible, $Q=mc\\Delta T$, con $\\Delta T$ como **diferencia** de temperaturas: $45-25=20\\,°C$.\n\n$$Q=(50\\,g)\\left(4.18\\,\\dfrac{J}{g°C}\\right)(20\\,°C)=4{,}180\\,J$$\n\nRevisa que las unidades se cancelen: gramos con gramos y $°C$ con $°C$, y queda joules.\n\nSi te dio $209\\,J$, multiplicaste $4.18\\times 50$ y te faltó el $\\Delta T$: eso es apenas el calor para subir un solo grado."
+ },
+ {
+  "id": 64,
+  "explanation": "El equilibrio químico no significa que la reacción se detenga, sino que la velocidad de ida iguala a la velocidad de regreso. Como el producto se forma a la misma rapidez con la que se vuelve a convertir en reactivo, las cantidades ya no cambian: las **concentraciones permanecen constantes**.\n\nOjo con la palabra: constantes no quiere decir iguales. Puede haber muchísimo producto y poco reactivo, o al revés, y seguir habiendo equilibrio; por eso B y C describen casos particulares, no la condición general."
+ },
+ {
+  "id": 65,
+  "explanation": "El etino o acetileno es el alquino más sencillo: dos carbonos unidos por un triple enlace, y a cada carbono le queda un solo hidrógeno, $HC\\equiv CH$, es decir $C_2H_2$.\n\nCompara: B es el eteno (doble enlace), C es el etano (enlace simple) y D es el propino, que ya trae tres carbonos. La terminación *-ino* te avisa del triple enlace y el prefijo *et-* de los dos carbonos."
+ },
+ {
+  "id": 66,
+  "explanation": "Los alcanos son los hidrocarburos saturados: entre carbono y carbono sólo hay enlaces simples y todos los demás lugares están ocupados por hidrógeno, de ahí su fórmula general $C_nH_{2n+2}$ (metano, etano, propano...). Al no tener enlaces múltiples ni anillos, son los más simples en estructura y también los menos reactivos.\n\nAlquenos y alquinos son insaturados —traen doble y triple enlace— y los aromáticos son todavía más complejos, con anillos de enlaces deslocalizados."
+ },
+ {
+  "id": 67,
+  "explanation": "El grupo funcional que define a un ácido carboxílico es el carboxilo, $-COOH$: un carbono con doble enlace a un oxígeno y unido además a un $-OH$. Eso es exactamente lo que muestra la opción A, que es el ácido acético.\n\nLas demás llevan el mismo carbonilo pero con otro vecino, y eso cambia la familia: con $-NH_2$ es una amida (B), con $-OCH_2CH_3$ es un éster (D), y C es propano, un hidrocarburo sin grupo funcional. La clave está en el $OH$ pegado al carbonilo."
+ },
+ {
+  "id": 68,
+  "explanation": "La teoría celular sostiene que la célula es la unidad **estructural** de los seres vivos —todos estamos hechos de células, son el ladrillo del cuerpo— y a la vez la unidad **fisiológica** o funcional, porque dentro de ella ocurren los procesos vitales: nutrición, respiración, síntesis, reproducción.\n\nLa opción B se antoja por lo de \"originales\" (la célula sí es unidad de origen, toda célula proviene de otra), pero \"microscópicas\" describe su tamaño, no un papel dentro de la teoría."
+ },
+ {
+  "id": 69,
+  "explanation": "Lo que distingue a la célula eucarionte es tener el citoplasma dividido en compartimentos por membranas: núcleo, mitocondrias, retículo, lisosomas, aparato de Golgi. Esa compartimentalización permite que reacciones incompatibles ocurran al mismo tiempo en sitios distintos, cada una con el pH y las enzimas que necesita, y eso abrió la puerta a células más grandes, especializadas y después a la pluricelularidad.\n\nLas otras opciones no son ventaja porque los procariontes también las tienen: ellos igualmente sintetizan proteínas, hacen metabolismo y muchos respiran de forma anaerobia."
+ },
+ {
+  "id": 70,
+  "explanation": "El ATP guarda energía en los enlaces entre sus fosfatos. Al hidrolizarse se rompe el último de ellos y se libera un fosfato inorgánico:\n\n$$ATP+H_2O\\to ADP+P_i+\\text{energía}$$\n\nLo que queda es el adenosín **di**fosfato, con dos fosfatos en vez de tres.\n\nEl AMP aparece sólo si se rompe además un segundo enlace, cosa que ocurre en algunas reacciones pero no en la hidrólisis común; el GTP y el UTP son nucleótidos distintos y ni siquiera derivan del ATP."
+ },
+ {
+  "id": 71,
+  "explanation": "El ácido pirúvico no entra tal cual al ciclo de Krebs. Primero cruza a la matriz mitocondrial y ahí se le retira un carbono en forma de $CO_2$ mientras se une a la coenzima A, con lo que se obtiene un fragmento de dos carbonos activado. Ese fragmento se condensa con el **ácido oxalacético**, de cuatro carbonos, y de esa unión nace el ácido cítrico, el primer compuesto del ciclo. El oxalacético se regenera al final de cada vuelta, listo para recibir al siguiente.\n\nNADH y $FADH_2$ (B y C) no son puntos de entrada: son los transportadores de electrones que el ciclo va produciendo.\n\nREVISAR: la molécula a la que se transforma químicamente el ácido pirúvico para ingresar al ciclo es el acetil-CoA (opción A), por descarboxilación oxidativa. El ácido oxalacético no proviene del piruvato en ese paso, sino que es el aceptor de cuatro carbonos que ya circula dentro del ciclo. Con el enunciado tal como está redactado, la respuesta consistente es A."
+ },
+ {
+  "id": 72,
+  "explanation": "Un nucleótido tiene tres piezas: una **base nitrogenada** (adenina, guanina, citosina, timina o uracilo), un **azúcar pentosa** —desoxirribosa en el ADN, ribosa en el ARN— y un **grupo fosfato**.\n\nLas otras opciones invierten la lógica: el ADN y el ARN son los ácidos nucleicos que resultan de encadenar nucleótidos, no un ingrediente de ellos. Y el azúcar nunca es hexosa; siempre tiene cinco carbonos, como su nombre indica."
+ },
+ {
+  "id": 73,
+  "explanation": "El ARN de transferencia es el traductor del código. Por un extremo lleva el anticodón, que reconoce y se aparea con el codón del ARN mensajero sobre el ribosoma; por el otro carga el aminoácido específico que a ese codón le corresponde, y lo va entregando al polipéptido que se está formando.\n\nLa opción B es el distractor más frecuente, pero describe al ARN mensajero: ése es el que copia la información del ADN y la lleva al ribosoma."
+ },
+ {
+  "id": 74,
+  "explanation": "En la reproducción sexual intervienen dos progenitores y de por medio ocurre la meiosis, con entrecruzamiento entre cromosomas homólogos y reparto azaroso de éstos hacia los gametos; súmale que en la fecundación se combinan al azar cuál gameto se une con cuál. El resultado es descendencia genéticamente distinta entre sí y de sus padres, y esa **variación genética** es la materia prima sobre la que actúa la selección natural.\n\nLo contrario —estabilidad génica, copias idénticas al progenitor— es justamente lo que caracteriza a la reproducción asexual."
+ },
+ {
+  "id": 75,
+  "explanation": "Analiza un carácter a la vez, porque las dos plantas son homocigotas y eso simplifica todo.\n\nColor: roja ($RR$) por blanca ($BB$) da $100\\%$ de descendientes $RB$. Como el color es codominante, el heterocigoto no oculta ningún alelo y muestra la combinación: flores **rosas**.\n\nAltura: enana es recesiva, así que alta ($AA$) por enana ($aa$) da $100\\%$ $Aa$, y con un solo alelo dominante ya son **altas**.\n\nLa F1 completa es entonces $100\\%$ altas y rosas.\n\nLas proporciones $25\\%$–$50\\%$–$25\\%$ de la opción A aparecen hasta la F2, si cruzas entre sí a estos híbridos; en la primera generación de dos homocigotas es imposible que salga variedad."
+ },
+ {
+  "id": 76,
+  "explanation": "Las mutaciones son cambios en la secuencia del ADN y, cuando ocurren en células germinales, se heredan: introducen alelos que antes no existían en la población. Por eso son la fuente última de **variación** genética, y como sobre esa variación actúa la selección natural, también son el motor de la **evolución**.\n\nLa especiación (opciones A y D) puede ser una consecuencia posterior, pero necesita además aislamiento reproductivo entre poblaciones; no la producen las mutaciones por sí solas."
+ },
+ {
+  "id": 77,
+  "explanation": "El cruce entre burro y yegua sí funciona: nace la mula, un híbrido perfectamente viable, sano y hasta más resistente que sus padres. El problema viene después, porque hereda un juego impar de cromosomas que no se pueden aparear bien en la meiosis, y por eso no produce gametos funcionales: es estéril. Esa barrera, que actúa **después** de la fecundación y sobre la fertilidad del híbrido, se llama esterilidad híbrida.\n\nNo es inviabilidad híbrida (C), porque para eso el híbrido tendría que morir antes de desarrollarse; aquí nace y vive muchos años."
+ },
+ {
+  "id": 78,
+  "explanation": "La clasificación tradicional de los protozoarios se apoya en cómo se mueven, es decir, en su organelo de locomoción: rizópodos o sarcodinos con seudópodos (la amiba), ciliados con cilios (el paramecio), flagelados con flagelo (el tripanosoma) y esporozoarios, que carecen de estructuras de movimiento (el plasmodio del paludismo).\n\nLa nutrición no serviría para separarlos, porque todos son eucariontes unicelulares y heterótrofos: los agruparía a todos juntos."
+ },
+ {
+  "id": 79,
+  "explanation": "Una población es el conjunto de individuos de la **misma especie** que viven en el mismo lugar y al mismo tiempo, y que pueden reproducirse entre sí. Las garzas blancas del pantano son una sola especie compartiendo un sitio: población.\n\nSi el enunciado hablara de todos los seres vivos del pantano —garzas, peces, plantas, bacterias— sería una comunidad; y si además incluyera el agua, el suelo y el clima, sería un ecosistema."
+ },
+ {
+  "id": 80,
+  "explanation": "La energía entra al ecosistema como luz solar, la fijan los productores en la fotosíntesis y se va degradando a calor en cada nivel trófico, hasta perderse: su recorrido es de una sola dirección y hay que reponerla constantemente desde el Sol.\n\nLa materia se comporta al revés: el carbono, el nitrógeno, el agua y el fósforo dan vueltas, porque los descomponedores devuelven los nutrimentos al suelo y los productores los vuelven a tomar. Por eso D es falsa —la energía es justo lo que no se recicla— y B también, porque el calor metabólico es una salida del sistema, no una entrada."
+ }
+]

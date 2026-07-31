@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "Es un movimiento uniformemente acelerado que parte del reposo, así que $v = v_0 + at = 0 + 1.8 \\times 2 = 3.6 \\ \\frac{m}{s}$. La aceleración te dice cuánto aumenta la velocidad cada segundo: el auto gana $1.8 \\ \\frac{m}{s}$ en el primer segundo y otros $1.8$ en el segundo.\n\nSi te dio $0.9$ (opción A), dividiste la aceleración entre el tiempo en vez de multiplicar."
+ },
+ {
+  "id": 2,
+  "explanation": "Segunda ley de Newton: $F = ma$. El detalle está en las unidades: la masa debe ir en kilogramos, y 10 gramos son $0.010$ kg. Entonces $F = 0.010 \\times 5 = 0.05$ N.\n\nSi elegiste D (50 N), usaste los 10 tal cual, como si fueran kilogramos; y A ($0.098$ N) es el peso de la moneda ($mg$), que aquí no se pide."
+ },
+ {
+  "id": 3,
+  "explanation": "El equilibrio rotacional se alcanza cuando la suma de las torcas es cero: $\\sum \\tau = 0$. Con la barra en posición horizontal, el peso de cada mitad genera una torca respecto al equilibrista: la del lado derecho hace girar en un sentido y la del izquierdo en el otro, y al ser de igual magnitud se cancelan. Por eso el equilibrista la sostiene horizontal y corrige cualquier inclinación moviéndola.\n\nUna barra vertical (opción B) no sirve: su peso pasa por el eje del cuerpo y no produce torcas que se compensen."
+ },
+ {
+  "id": 4,
+  "explanation": "Hay trabajo mecánico cuando una fuerza actúa sobre un cuerpo y lo desplaza: $W = F \\cdot d$. Empujar la caja con fuerza constante a lo largo de una distancia cumple exactamente esa definición.\n\nLa opción C es tramposa: en el movimiento circular uniforme la rapidez no cambia, así que la energía cinética no aumenta; la fuerza centrípeta es perpendicular al movimiento y no realiza trabajo."
+ },
+ {
+  "id": 5,
+  "explanation": "Antes del salto todo está en reposo: la cantidad de movimiento total vale cero, y así debe seguir. Lo que el niño se lleva hacia adelante lo compensa el carrito hacia atrás:\n\n$$m_{niño} \\cdot v_{niño} = m_{carrito} \\cdot v_{carrito}$$\n\n$$30 \\times 2 = m \\times 12 \\quad \\Rightarrow \\quad m = \\frac{60}{12} = 5 \\ kg$$\n\nTiene sentido: el carrito, por ser 6 veces más ligero, sale disparado 6 veces más rápido que el niño."
+ },
+ {
+  "id": 6,
+  "explanation": "El kelvin y el grado Celsius tienen el mismo tamaño; lo único que cambia entre las dos escalas es dónde ponen el cero: 0 °C corresponde a 273 K, porque el cero absoluto está en −273 °C. Por eso basta sumar: $T_K = T_C + 273$.\n\nLa opción A, con el 32 y el 1.8, mezcla la conversión con grados Fahrenheit, que sí tienen otro tamaño de grado."
+ },
+ {
+  "id": 7,
+  "explanation": "La definición que da la pregunta —calor por gramo y por grado Celsius— corresponde a la capacidad térmica específica (o calor específico), la $c$ de la fórmula $Q = mc\\Delta T$. La palabra clave es \"específica\": referida a una unidad de masa.\n\nLa capacidad térmica a secas (opción A) es la del cuerpo completo, sin dividir entre su masa; y los calores latentes (B y C) son los de cambio de fase, donde la temperatura ni siquiera cambia."
+ },
+ {
+  "id": 8,
+  "explanation": "En la figura hay 90 cm entre el vibrador y el punto fijo, y en ese tramo caben exactamente 5 ondas completas: cuéntalas por sus crestas (5) o sus valles (5); cada ciclo completo es una cresta seguida de un valle. La longitud de onda es lo que mide un ciclo:\n\n$$\\lambda = \\frac{90 \\ cm}{5 \\ ciclos} = 18 \\ \\frac{cm}{ciclo}$$\n\nSi te dio 9 (opción C), contaste cada \"vientre\" como si fuera una onda completa, pero un vientre es solo media longitud de onda."
+ },
+ {
+  "id": 9,
+  "explanation": "Disipar 100 J cada segundo significa que la potencia es $P = 100$ W. Como conoces $P$ y $R$, usa $P = \\frac{V^2}{R}$ y despeja el voltaje:\n\n$$V = \\sqrt{P \\cdot R} = \\sqrt{100 \\times 9} = \\sqrt{900} = 30 \\ V$$\n\nSi elegiste 900 V (opción B), hiciste bien todo el planteamiento pero te faltó sacar la raíz cuadrada al final."
+ },
+ {
+  "id": 10,
+  "explanation": "Primero el volumen de la alberca: $50 \\times 25 \\times 3 = 3750 \\ m^3$. Luego el gasto del tubo, $Q = A \\cdot v$, cuidando usar el radio en metros: $r = 0.20$ m, así que $A = \\pi r^2 = \\pi (0.20)^2 \\approx 0.126 \\ m^2$ y $Q \\approx 0.126 \\times 4 = 0.503 \\ \\frac{m^3}{s}$. El tiempo es\n\n$$t = \\frac{V}{Q} = \\frac{3750}{0.503} \\approx 7460 \\ s \\approx 2.07 \\ hrs$$\n\nLos errores clásicos aquí son meter el diámetro (0.40 m) donde va el radio, o dejar los 40 cm sin convertir a metros."
+ },
+ {
+  "id": 11,
+  "explanation": "En el efecto fotoeléctrico la luz arranca electrones de un metal, pero solo si su frecuencia rebasa cierto umbral, algo imposible de explicar si la luz fuera únicamente una onda. Einstein lo resolvió en 1905 suponiendo que la luz llega en paquetes de energía (fotones), es decir, comportándose como partícula. Como su carácter ondulatorio ya estaba bien demostrado (interferencia, difracción), este fue el primer fenómeno que exhibió la naturaleza dual onda–partícula de la luz."
+ },
+ {
+  "id": 12,
+  "explanation": "Thomson descubrió el electrón, y su modelo imagina el átomo como una esfera de carga positiva uniforme con los electrones incrustados en ella —el famoso \"budín de pasas\"—, de modo que las cargas se compensan y el átomo resulta eléctricamente neutro. Eso es justo lo que dice la opción A.\n\nSi elegiste B, describiste el modelo de Rutherford (núcleo y corteza), que vino después; la C recuerda al de Bohr y la D a la teoría atómica de Dalton."
+ },
+ {
+  "id": 13,
+  "explanation": "En una nota periodística, la frase breve que acompaña al titular para ampliarlo o agregar un dato se llama balazo o bajada: va pegada al encabezado, en letra menor, exactamente como la línea subrayada del ejemplo. El encabezado o titular es la línea principal en mayúsculas (\"ESTE MIÉRCOLES SE ESPERAN VARIAS MARCHAS...\") y la entrada o lead es el primer párrafo de la nota, el que arranca con \"Ciudad de México, México.–\". Como lo subrayado está entre ambos, complementando al título, es la bajada."
+ },
+ {
+  "id": 14,
+  "explanation": "La tragedia es el subgénero dramático mayor donde el héroe lucha contra un destino que lo rebasa: la fatalidad ya está escrita y los personajes caminan hacia ella sin poder evitarla (piensa en *Edipo rey*). Sainete, entremés y farsa son, en cambio, formas breves de tono cómico o burlesco: justo lo contrario de esa solemnidad."
+ },
+ {
+  "id": 15,
+  "explanation": "Cuenta las sílabas: *Yo–sé–los–nom–bres–ex–tra–ños* = 8. No hay sinalefa que las reduzca (\"nombres\" termina en consonante) y la última palabra, *extraños*, es grave, así que el conteo no se ajusta: es un octosílabo, el metro clásico de la poesía popular en español y el de los *Versos sencillos* de Martí, de donde viene este verso."
+ },
+ {
+  "id": 16,
+  "explanation": "Una corriente literaria agrupa a autores que coinciden en tres cosas: una forma de escribir (estilo), el interés por temas similares y una misma época. Esta última es la decisiva: sin contemporaneidad no hay corriente, hay influencia.\n\nLa opción C se antoja, pero \"heredar el estilo de quienes los precedieron\" describe justamente a autores de épocas distintas, y eso rompe la definición. El género (B y D) tampoco importa: dentro de una corriente conviven novelistas, poetas y dramaturgos."
+ },
+ {
+  "id": 17,
+  "explanation": "El realismo nace en la segunda mitad del siglo XIX como reacción contra el romanticismo: frente al yo desbordado y la idealización románticos propone observar y retratar la realidad social con objetividad, casi con ojo de cronista. El neoclasicismo es anterior (siglo XVIII), y el creacionismo y el surrealismo son vanguardias del siglo XX, posteriores al realismo."
+ },
+ {
+  "id": 18,
+  "explanation": "Los tres nombres de la opción B son la plana mayor del realismo del siglo XIX: Gustave Flaubert (*Madame Bovary*) en Francia, Benito Pérez Galdós (*Fortunata y Jacinta*) en España y León Tolstoi (*Ana Karenina*) en Rusia: novelas que retratan con detalle la sociedad de su tiempo. En las otras opciones hay narradores de aventuras (Salgari, Dumas), de ciencia ficción (Bradbury) y autores de la época colonial (Balbuena, Díaz del Castillo)."
+ },
+ {
+  "id": 19,
+  "explanation": "*El laberinto de la soledad* (1950) es el ensayo de Octavio Paz sobre la identidad del mexicano: la soledad, las máscaras, el pachuco, la fiesta. Paz recibió el Premio Nobel de Literatura en 1990. No lo confundas con Carlos Fuentes ni Juan Rulfo, contemporáneos suyos pero autores de otras obras clave: *La región más transparente* y *Pedro Páramo*."
+ },
+ {
+  "id": 20,
+  "explanation": "Narrar es, por definición, relatar sucesos: contar acontecimientos que les ocurren a unos personajes en un lugar y un tiempo determinados. Eso es lo esencial; lo demás puede aparecer o no.\n\nLa opción C describe otra cosa: retratar lugares y personas es función de la *descripción*, y dejar una enseñanza moral (A) es propio de la fábula, no de toda narración."
+ },
+ {
+  "id": 21,
+  "explanation": "La ficha remite a un artículo publicado en una revista (*¿Cómo ves?*), con año, número y páginas: esos datos delatan una publicación periódica, y las fichas de publicaciones periódicas —revistas y periódicos— se llaman hemerográficas (piensa en la hemeroteca).\n\nSería bibliográfica (opción A) si la fuente fuera un libro: autor, título, editorial, lugar y año, sin número de revista ni periodicidad."
+ },
+ {
+  "id": 22,
+  "explanation": "Lo que define esta ficha es su contenido: un fragmento copiado al pie de la letra, entre comillas y con la página exacta de donde se tomó. Eso es una ficha de cita textual.\n\nLa opción C engaña porque la ficha incluye los datos del libro de Fromm, pero esos datos solo identifican la fuente de la cita; una ficha bibliográfica se limitaría a registrarlos, sin transcribir ningún pasaje."
+ },
+ {
+  "id": 23,
+  "explanation": "Lee la notación: el número de abajo (34) es el número atómico $Z$, o sea los protones; el de arriba (78) es el número de masa $A$. Los neutrones son $A - Z = 78 - 34 = 44$. Y la carga $2-$ significa que la especie ganó 2 electrones: $34 + 2 = 36$. En total: 34 protones, 44 neutrones y 36 electrones.\n\nSi elegiste C, tomaste el 78 como número de protones: el atómico siempre es el de abajo."
+ },
+ {
+  "id": 24,
+  "explanation": "Primero la masa molar del $H_3PO_4$: $3(1) + 31 + 4(16) = 3 + 31 + 64 = 98 \\ \\frac{g}{mol}$. Medio mol es la mitad:\n\n$$0.5 \\ mol \\times 98 \\ \\frac{g}{mol} = 49 \\ g$$\n\nLa opción C (98 g) corresponde a un mol completo: es la trampa para quien olvida multiplicar por el 0.5."
+ },
+ {
+  "id": 25,
+  "explanation": "Para lo pequeña que es su molécula, el agua debería hervir a una temperatura mucho más baja; si no lo hace es por los puentes de hidrógeno: el H de una molécula, con carga parcial positiva, se une al O de la molécula vecina, y separar moléculas exige romper una enorme red de esos puentes. De ahí su punto de ebullición de 100 °C y su capacidad calorífica tan alta.\n\nLa opción B apunta vagamente a la polaridad, que es la causa de fondo, pero el factor estructural específico que pide la pregunta es el puente de hidrógeno."
+ },
+ {
+  "id": 26,
+  "explanation": "Es la definición de Brønsted–Lowry: un ácido es la especie que en disolución dona protones ($H^+$). Piensa en el $HCl$: al disolverse en agua se separa en $Cl^-$ y $H^+$, y ese protón cedido es el responsable de la acidez. Las bases hacen lo contrario: aceptan protones (o liberan $OH^-$, según Arrhenius); los óxidos y las sales son otros tipos de compuestos."
+ },
+ {
+  "id": 27,
+  "explanation": "La concentración final es la masa total de sal entre la masa total de disolución. Sal en la primera: $100 \\times 0.15 = 15$ g; en la segunda: $200 \\times 0.25 = 50$ g. Entonces:\n\n$$\\frac{15 + 50}{100 + 200} \\times 100 = \\frac{65}{300} \\times 100 = 21.7\\%$$\n\nCheca que el resultado quede entre 15% y 25%, cargado hacia 25% porque esa disolución pesa el doble. La opción A (40%) sale de sumar los porcentajes directamente, y los porcentajes no se suman."
+ },
+ {
+  "id": 28,
+  "explanation": "Asigna números de oxidación. El carbono pasa de $-4$ en el $CH_4$ a $+4$ en el $CO_2$: perdió electrones, se oxidó. El oxígeno pasa de $0$ en el $O_2$ (elemento libre) a $-2$ en el $CO_2$ y el $H_2O$: ganó electrones, se redujo. El hidrógeno vale $+1$ antes y después: no cambia, y por eso quedan descartadas las opciones que lo incluyen. Es el patrón de toda combustión: el combustible se oxida y el oxígeno actúa como agente oxidante, reduciéndose."
+ },
+ {
+  "id": 29,
+  "explanation": "La lluvia ácida se forma cuando los óxidos de azufre y de nitrógeno que libera la quema de combustibles reaccionan con el agua de la atmósfera. El trióxido de azufre es el caso clásico:\n\n$$SO_3 + H_2O \\rightarrow H_2SO_4$$\n\nEl ácido sulfúrico resultante cae disuelto en la lluvia. Las demás no producen ácido: A es la disociación de una base, D es la síntesis de amoniaco (también básico) y C es una reacción entre ozono y óxido nítrico que no genera ácido directamente.\n\nREVISAR: la opción B trae una errata: el producto aparece como $H_2CO_4$, pero de $SO_3 + H_2O$ se obtiene $H_2SO_4$ (con azufre, no carbono)."
+ },
+ {
+  "id": 30,
+  "explanation": "Fíjate en dos cosas de la estructura. Primera: el grupo del extremo superior es un carbono con doble enlace a un oxígeno y un hidrógeno, o sea $-CHO$, un aldehído: eso da el prefijo \"aldo-\". Segunda: cuenta los carbonos de la cadena: el del $CHO$, dos carbonos con H y OH, y el $CH_2OH$ del final: son 4, y cuatro carbonos dan la terminación \"-tetrosa\". Juntando las dos partes: aldotetrosa.\n\nSi elegiste aldotriosa (opción A), te faltó contar el carbono del $CH_2OH$ del extremo inferior."
+ },
+ {
+  "id": 31,
+  "explanation": "Un triglicérido se forma cuando la glicerina (un alcohol con tres grupos $-OH$) se une a tres ácidos grasos, y cada unión alcohol + ácido produce un enlace éster, $-COO-$, liberando agua. Por eso los triglicéridos son triésteres: llevan tres grupos éster en la misma molécula. El alcohol y el ácido son los ingredientes de partida, pero el grupo funcional que caracteriza al lípido ya formado es el éster."
+ },
+ {
+  "id": 32,
+  "explanation": "La entalpía de reacción se calcula con las entalpías de formación: productos menos reactivos, cada uno multiplicado por su coeficiente:\n\n$$\\Delta H = [2(-348) + 2(-296.4)] - [2(-202.9) + 0]$$\n\n$$\\Delta H = -1288.8 + 405.8 = -883 \\ kJ$$\n\nEl signo negativo indica que la reacción libera calor: es exotérmica. Si te dio $+883$ (opción B), restaste al revés: reactivos menos productos."
+ },
+ {
+  "id": 33,
+  "explanation": "Como $\\Delta H > 0$, la reacción es endotérmica: absorbe calor, así que puedes tratar al calor como un reactivo más. Al aumentar la temperatura \"agregas\" ese reactivo y, por Le Chatelier, el equilibrio se desplaza hacia la derecha para consumirlo.\n\nLas otras opciones empujan hacia la izquierda: quitar $H_2S$ o $CH_4$ (reactivos) obliga al sistema a reponerlos, y aumentar la presión favorece el lado con menos moles de gas, que aquí es el izquierdo (3 moles contra 5)."
+ },
+ {
+  "id": 34,
+  "explanation": "Los alcanos son los hidrocarburos saturados: todos sus enlaces carbono–carbono son sencillos, como en el metano, el etano o el propano. Los alquenos tienen al menos un doble enlace, los alquinos un triple, y los aromáticos contienen el anillo bencénico con sus enlaces deslocalizados. Un truco para el examen: la terminación del nombre delata el enlace: -ano sencillo, -eno doble, -ino triple."
+ },
+ {
+  "id": 35,
+  "explanation": "Hidrólisis significa \"romper con agua\" (*hidro* + *lisis*): el agua parte una molécula en dos. Es justo lo que ocurre en la opción C: un éster reacciona con $H_2O$ y se rompe en un ácido carboxílico ($CH_3-COOH$) y un alcohol ($CH_3-CH_2-OH$).\n\nLa opción D es exactamente la reacción contraria (esterificación: ácido + alcohol forman el éster soltando agua), y A y B son adiciones a un doble enlace: de HBr y de hidrógeno."
+ },
+ {
+  "id": 36,
+  "explanation": "La clave está en \"vida cotidiana\": consultar un mapa turístico para ubicarte, medir distancias y decidir rutas es aplicar conocimiento geográfico, y lo hace cualquier persona un día cualquiera. Planear vías de comunicación o el uso de suelo (A y C) también son aplicaciones de la geografía, pero corresponden a especialistas y gobiernos, no a la vida diaria; y localizar países y capitales (B) es un conocimiento escolar, no una aplicación."
+ },
+ {
+  "id": 37,
+  "explanation": "Para ubicar cualquier punto sobre la superficie terrestre bastan dos coordenadas: la latitud, que mide la distancia angular respecto al ecuador, y la longitud, que la mide respecto al meridiano de Greenwich. Con ese par de números queda fijo cualquier hecho o fenómeno en el mapa. La altitud, que se cuela en las otras opciones, es la altura sobre el nivel del mar: complementa la ubicación, pero no localiza el punto en el plano."
+ },
+ {
+  "id": 38,
+  "explanation": "Las placas tectónicas descansan sobre el manto superior, cuyo material (la astenosfera) se comporta como un fluido muy viscoso. El calor interno genera ahí corrientes de convección: material caliente que sube, se enfría y vuelve a bajar, y ese movimiento circular arrastra a las placas —y con ellas a los continentes— unos centímetros por año. El núcleo aporta el calor, pero no está en contacto con las placas: el arrastre ocurre en el manto superior."
+ },
+ {
+  "id": 39,
+  "explanation": "Cerca de dos terceras partes del territorio mexicano son montañosas: las Sierras Madre Occidental, Oriental y del Sur, el Eje Neovolcánico, las sierras de Chiapas... México es ante todo un país de montañas, y ese relieve accidentado es lo que más condiciona sus climas, ríos y asentamientos. Llanuras y mesetas existen (las llanuras costeras, la Altiplanicie), pero ocupan una fracción menor del territorio."
+ },
+ {
+  "id": 40,
+  "explanation": "El mar de las Antillas es el otro nombre del mar Caribe. Los ciclones que nacen ahí avanzan hacia el oeste y el noroeste, así que golpean primero la porción oriental de la península de Yucatán: las costas de Quintana Roo y Yucatán son las expuestas a esos ciclones. Chiapas y Oaxaca, en cambio, tienen costa en el océano Pacífico, y a ellas las afectan los ciclones que se forman frente al golfo de Tehuantepec, no los de las Antillas.\n\nREVISAR: la clave oficial marca A (Chiapas–Oaxaca), pero esos estados dan al Pacífico; los ciclones del mar de las Antillas afectan Yucatán y Quintana Roo (opción B). Parece errata de la clave, o bien el enunciado original decía \"océano Pacífico\"."
+ }
+]
