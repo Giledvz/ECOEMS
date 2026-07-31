@@ -11,11 +11,15 @@ el nombre estaba en el material, que es lo más cercano que hay.
 ## Generación 2026
 
 - **ECOEMS (bachillerato)** — Alexander, Ari, Axel, Citlaly, Conchita, Daniela, Julio, Kevin, Leah, Marley, Miguel Ángel, Rafaela, Regina, Roxanna, Sofía, Ximena, Yuli
-- **IPN** — Danna Belem, Gil
-- **UNAM · Área 1** — Alfredo, Dana, Danna Belem, Óscar
+- **UNAM · Área 1** — Alfredo, Dana, Óscar
 - **UNAM · Área 2** — Lupita
 - **UNAM · Área 3** — Ángeles
 - **UNAM · Área 4** — Esme, Yuri
+
+## Generación 2027
+
+- **IPN** — Danna Belem
+- **UNAM · Área 1** — Danna Belem
 
 ## Detalle
 
@@ -29,9 +33,8 @@ el nombre estaba en el material, que es lo más cercano que hay.
 | Conchita | 2026 | ECOEMS (bachillerato) | 2026-04-05 | 2026-07-31 | sí |
 | Dana | 2026 | UNAM · Área 1 | 2026-04-16 | 2026-07-31 | sí |
 | Daniela | 2026 | — | 2026-04-05 | 2026-04-15 | **no** |
-| Danna Belem | 2026 | IPN · UNAM · Área 1 | 2026-07-28 | 2026-07-31 | sí |
+| Danna Belem | 2027 | IPN · UNAM · Área 1 | 2026-07-28 | 2026-07-31 | sí |
 | Esme | 2026 | UNAM · Área 4 | 2026-04-08 | 2026-07-31 | sí |
-| Gil | 2026 | IPN | 2026-04-08 | 2026-07-31 | sí |
 | Julio | 2026 | ECOEMS (bachillerato) | 2026-04-05 | 2026-07-31 | sí |
 | Kevin | 2026 | ECOEMS (bachillerato) | 2026-04-05 | 2026-07-31 | sí |
 | Leah | 2026 | ECOEMS (bachillerato) | 2026-05-07 | 2026-07-31 | sí |
@@ -47,6 +50,10 @@ el nombre estaba en el material, que es lo más cercano que hay.
 | Yuri | 2026 | UNAM · Área 4 | 2026-04-08 | 2026-07-31 | sí |
 | Ángeles | 2026 | UNAM · Área 3 | 2026-04-08 | 2026-07-31 | sí |
 | Óscar | 2026 | UNAM · Área 1 | 2026-04-08 | 2026-07-31 | sí |
+
+## Fuera del padrón
+
+- **Gil** — profesor
 
 ## Cuando entre una generación nueva
 

@@ -39,6 +39,14 @@ def grupo_de(examen):
 # Nombres que son la misma persona escrita distinto. Se unifican al primero.
 ALIAS = {'Oscar': 'Óscar', 'Danna': 'Dana'}
 
+# Lo que las fechas de commit no alcanzan a decir. El historial sabe cuándo apareció
+# un nombre en el material, no a qué proceso de admisión se está presentando quien lo
+# lleva ni si es alumno. Se corrige aquí para que sobreviva a cada regeneración.
+AJUSTES = {
+    'Gil': {'rol': 'profesor'},                    # no es alumno, es quien da el curso
+    'Danna Belem': {'generaciones': ['2027']},     # se presenta en el proceso 2027
+}
+
 def listas_en(commit):
     """{examen: [alumnos]} en ese commit."""
     out = {}
@@ -95,11 +103,13 @@ def main():
                   for g, r in sorted(reg[alumno].items())]
         primera = min(g['desde'] for g in grupos)
         ultima = max(g['hasta'] for g in grupos)
+        ajuste = AJUSTES.get(alumno, {})
         padron.append({
             'nombre': alumno,
+            'rol': ajuste.get('rol', 'alumno'),
             # La generación es el año en que el alumno cursó. Si alguna vez alguien
             # abarca dos años, aquí aparecerán los dos y hay que decidir a mano.
-            'generaciones': sorted({primera[:4], ultima[:4]}),
+            'generaciones': ajuste.get('generaciones', sorted({primera[:4], ultima[:4]})),
             'vigente': alumno in vigentes,
             'grupo_actual': sorted(hoy.get(alumno, [])),
             'primera_vez': primera,
@@ -119,8 +129,9 @@ def main():
             'ojo': 'Las fechas son de commit, no de inscripción: marcan cuándo el '
                    'nombre estaba en el material, que es lo más cercano que hay.',
             'alias': ALIAS,
-            'alumnos': len(padron),
-            'vigentes': sum(1 for a in padron if a['vigente']),
+            'ajustes': AJUSTES,
+            'alumnos': sum(1 for a in padron if a['rol'] == 'alumno'),
+            'vigentes': sum(1 for a in padron if a['rol'] == 'alumno' and a['vigente']),
         },
         'alumnos': padron,
     }
@@ -130,6 +141,8 @@ def main():
     # agrupado por generación y grupo, que es como se consulta en la práctica
     porGen = collections.defaultdict(lambda: collections.defaultdict(list))
     for a in padron:
+        if a['rol'] != 'alumno':
+            continue
         for gen in a['generaciones']:
             for g in (a['grupo_actual'] or [h['grupo'] for h in a['historial']]):
                 if a['nombre'] not in porGen[gen][g]:
@@ -153,10 +166,17 @@ def main():
            '| Alumno | Generación | Grupo actual | Primera vez | Última vez | Vigente |',
            '|---|:-:|---|---|---|:-:|']
     for a in padron:
+        if a['rol'] != 'alumno':
+            continue
         g = ' · '.join(x for x in a['grupo_actual'] if x != 'UNAM · varios') or '—'
         md.append(f"| {a['nombre']} | {', '.join(a['generaciones'])} | {g} | "
                   f"{a['primera_vez']} | {a['ultima_vez']} | "
                   f"{'sí' if a['vigente'] else '**no**'} |")
+    fuera = [a for a in padron if a['rol'] != 'alumno']
+    if fuera:
+        md += ['', '## Fuera del padrón', '']
+        for a in fuera:
+            md.append(f"- **{a['nombre']}** — {a['rol']}")
     md += ['', '## Cuando entre una generación nueva', '',
            'No hay que hacer nada especial: se agregan los nombres a `exam.students`',
            'de los exámenes que les toquen y se vuelve a correr el script. Las fechas',
@@ -168,8 +188,10 @@ def main():
         md.append(f'- `{viejo}` → **{nuevo}**')
     open(os.path.join(SALIDA, 'PADRON.md'), 'w', encoding='utf-8').write('\n'.join(md) + '\n')
 
-    print(f"{len(padron)} alumnos · {doc['_meta']['vigentes']} vigentes")
+    print(f"{doc['_meta']['alumnos']} alumnos · {doc['_meta']['vigentes']} vigentes")
     for a in padron:
+        if a['rol'] != 'alumno':
+            print(f"  · {a['nombre']:16s} ({a['rol']}, fuera del padrón)"); continue
         g = ' · '.join(a['grupo_actual']) or '(ya no está en ningún examen)'
         print(f"  {'●' if a['vigente'] else '○'} {a['nombre']:16s} "
               f"{a['primera_vez']} → {a['ultima_vez']}   {g}")
