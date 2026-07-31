@@ -1,0 +1,526 @@
+{
+ "lote": "ecoems-8__g01",
+ "examen": "ecoems-8.json",
+ "titulo": "ECOEMS 8",
+ "materia": "Habilidad matemática + Matemáticas + Ciencias II (Física)",
+ "preguntas": [
+  {
+   "id": 1,
+   "texto": "¿Qué número completa correctamente este cuadrado mágico?",
+   "opciones": {
+    "A": "0",
+    "B": "5",
+    "C": "10",
+    "D": "15"
+   },
+   "clave": "B",
+   "tema": "Cuadrado mágico",
+   "figura": "/imagenes_ecoems-8/q1_cuadrado_magico.svg"
+  },
+  {
+   "id": 2,
+   "texto": "Selecciona el número que continúa correctamente la siguiente sucesión.\n\n3, 9, 5, 11, 7, 13, ___",
+   "opciones": {
+    "A": "9",
+    "B": "11",
+    "C": "13",
+    "D": "15"
+   },
+   "clave": "A",
+   "tema": "Sucesión interleaved"
+  },
+  {
+   "id": 3,
+   "texto": "Selecciona el número que completa correctamente la siguiente sucesión.\n\n$3,\\, \\dfrac{3}{2},\\, 0,\\, \\rule{1cm}{0.4pt}$",
+   "opciones": {
+    "A": "$\\dfrac{1}{2}$",
+    "B": "$\\dfrac{1}{3}$",
+    "C": "$\\dfrac{2}{3}$",
+    "D": "$-\\dfrac{3}{2}$"
+   },
+   "clave": "D",
+   "tema": "Sucesión — diferencia constante"
+  },
+  {
+   "id": 4,
+   "texto": "Indica cuál es la sucesión que se genera al sustituir $x$ por $-2, -1, 0, 1$ y $2$ en la siguiente expresión:\n\n$2x^2 + 1$",
+   "opciones": {
+    "A": "-9, -3, 1, 3, 9",
+    "B": "9, 3, 1, 3, 9",
+    "C": "-9, -3, 0, 3, 9",
+    "D": "9, 3, 0, 3, 9"
+   },
+   "clave": "B",
+   "tema": "Sucesión por sustitución"
+  },
+  {
+   "id": 5,
+   "texto": "Selecciona entre las opciones la figura que completa correctamente esta serie:",
+   "opciones": {
+    "A": "Cuadro con ■ abajo-izq, ○ abajo-der y ⊣ arriba-der",
+    "B": "Cuadro con ■ arriba-izq, ○ abajo-izq y ⊥ arriba-der",
+    "C": "Cuadro con ■ abajo-izq, ○ arriba-izq y ⊢ arriba-der",
+    "D": "Cuadro con ■ abajo-izq, ○ arriba-izq y ⊤ arriba-der"
+   },
+   "clave": "C",
+   "tema": "Serie espacial — completar",
+   "figura": "/imagenes_ecoems-8/q5_serie.svg",
+   "figuras_opciones": {
+    "A": "/imagenes_ecoems-8/q5_a.svg",
+    "B": "/imagenes_ecoems-8/q5_b.svg",
+    "C": "/imagenes_ecoems-8/q5_c.svg",
+    "D": "/imagenes_ecoems-8/q5_d.svg"
+   }
+  },
+  {
+   "id": 6,
+   "texto": "Selecciona entre las opciones el elemento siguiente de esta serie espacial.",
+   "opciones": {
+    "A": "Pentágono con cuadrado dentro del círculo",
+    "B": "Pentágono con triángulo invertido dentro del círculo",
+    "C": "Pentágono con raya vertical dentro del círculo",
+    "D": "Pentágono con equis dentro del círculo"
+   },
+   "clave": "A",
+   "tema": "Serie espacial — pentágonos",
+   "figura": "/imagenes_ecoems-8/q6_serie.svg",
+   "figuras_opciones": {
+    "A": "/imagenes_ecoems-8/q6_a.svg",
+    "B": "/imagenes_ecoems-8/q6_b.svg",
+    "C": "/imagenes_ecoems-8/q6_c.svg",
+    "D": "/imagenes_ecoems-8/q6_d.svg"
+   }
+  },
+  {
+   "id": 7,
+   "texto": "La siguiente figura representa una serie de pirámides. ¿Cuántos cuadrados son necesarios para construir una pirámide plana de 12 niveles?",
+   "opciones": {
+    "A": "100",
+    "B": "121",
+    "C": "144",
+    "D": "169"
+   },
+   "clave": "C",
+   "tema": "Sucesión — cuadrados",
+   "figura": "/imagenes_ecoems-8/q7_piramides.svg"
+  },
+  {
+   "id": 8,
+   "texto": "En un extraño sistema de numeración, hay un primer símbolo que representa el número 38. ¿Qué número representa el segundo símbolo?",
+   "opciones": {
+    "A": "16",
+    "B": "49",
+    "C": "55",
+    "D": "94"
+   },
+   "clave": "D",
+   "tema": "Sistema de numeración — símbolos",
+   "figura": "/imagenes_ecoems-8/q8_simbolos.svg"
+  },
+  {
+   "id": 9,
+   "texto": "¿Cuántos triángulos en total contiene esta figura?",
+   "opciones": {
+    "A": "6",
+    "B": "10",
+    "C": "13",
+    "D": "16"
+   },
+   "clave": "D",
+   "tema": "Conteo de triángulos",
+   "figura": "/imagenes_ecoems-8/q9_triangulos.svg"
+  },
+  {
+   "id": 10,
+   "texto": "En un dado, la suma de puntos de dos lados opuestos es siete. Al rodar el dado de esta figura sobre las casillas siguiendo el sentido de las flechas, ¿cuántos puntos tiene el lado superior en la posición final?",
+   "opciones": {
+    "A": "5",
+    "B": "4",
+    "C": "3",
+    "D": "2"
+   },
+   "clave": "A",
+   "tema": "Dado rodando",
+   "figura": "/imagenes_ecoems-8/q10_dado.svg"
+  },
+  {
+   "id": 11,
+   "texto": "Si cambiaras la posición de solamente un cubo de la siguiente figura, ¿cuál cuerpo no podrías formar?",
+   "opciones": {
+    "A": "Fila de 3 cubos al fondo con 2 cubos encima de los primeros",
+    "B": "Fila de 3 cubos al frente con torres de 2 en los extremos",
+    "C": "Fila de 3 cubos al fondo con torre de 3 en el centro",
+    "D": "Escuadra de 4 cubos con torre de 2 al fondo"
+   },
+   "clave": "C",
+   "tema": "Cubos — figura no formable",
+   "figura": "/imagenes_ecoems-8/q11_original.svg",
+   "figuras_opciones": {
+    "A": "/imagenes_ecoems-8/q11_a.svg",
+    "B": "/imagenes_ecoems-8/q11_b.svg",
+    "C": "/imagenes_ecoems-8/q11_c.svg",
+    "D": "/imagenes_ecoems-8/q11_d.svg"
+   }
+  },
+  {
+   "id": 12,
+   "texto": "Dos cuadrados idénticos están sobrepuestos de modo que un vértice del cuadrado inferior coincide con el centro del cuadrado superior y la figura resultante es perfectamente simétrica. ¿A qué fracción del área del cuadrado corresponde el área sombreada?",
+   "opciones": {
+    "A": "$\\dfrac{1}{3}$",
+    "B": "$\\dfrac{1}{4}$",
+    "C": "$\\dfrac{1}{5}$",
+    "D": "$\\dfrac{1}{6}$"
+   },
+   "clave": "B",
+   "tema": "Cuadrados sobrepuestos — área",
+   "figura": "/imagenes_ecoems-8/q12_sobrepuestos.svg"
+  },
+  {
+   "id": 13,
+   "texto": "En la siguiente tabla, ¿cuál es el número faltante en la celda vacía?\n\n| | | |\n|---|---|---|\n| 20 | 8 | 12 |\n| 40 | 14 | 26 |\n| 60 | ? | 38 |",
+   "opciones": {
+    "A": "22",
+    "B": "24",
+    "C": "26",
+    "D": "28"
+   },
+   "clave": "A",
+   "tema": "Tabla — número faltante"
+  },
+  {
+   "id": 14,
+   "texto": "De los números $a$, $b$ y $c$ sabemos que $a$ es mayor que $b$ y menor que $c$; por consiguiente, podemos concluir que",
+   "opciones": {
+    "A": "$b$ y $c$ son iguales",
+    "B": "$c$ es mayor que $b$",
+    "C": "$b$ es mayor que $c$",
+    "D": "$a$ es el mayor de los tres"
+   },
+   "clave": "B",
+   "tema": "Lógica — desigualdades"
+  },
+  {
+   "id": 15,
+   "texto": "Selecciona entre las cuatro opciones la expresión matemática que representa el área sombreada de esta figura en el interior del cuadrado. El radio de cada círculo es igual a uno ($r = 1$).",
+   "opciones": {
+    "A": "$4\\pi - 4$",
+    "B": "$\\pi - 1$",
+    "C": "$1 - 4\\pi$",
+    "D": "$4 - \\pi$"
+   },
+   "clave": "D",
+   "tema": "Área sombreada — círculos",
+   "figura": "/imagenes_ecoems-8/q15_circulos_cuadrado.svg"
+  },
+  {
+   "id": 16,
+   "texto": "En la siguiente figura, todos los ángulos son rectos y los lados largos miden el doble que los lados cortos. Si el área total de la figura es 200, ¿cuánto mide el perímetro?",
+   "opciones": {
+    "A": "80",
+    "B": "76",
+    "C": "72",
+    "D": "68"
+   },
+   "clave": "A",
+   "tema": "Perímetro — figura con ángulos rectos",
+   "figura": "/imagenes_ecoems-8/q16_figura_perimetro.svg"
+  },
+  {
+   "id": 17,
+   "texto": "Indica cuál es el valor de $m$ en la siguiente operación aritmética.\n\n$m = -3(-2+1) - 2(-1-2)$",
+   "opciones": {
+    "A": "-3",
+    "B": "0",
+    "C": "3",
+    "D": "9"
+   },
+   "clave": "D",
+   "tema": "Operación aritmética con signos"
+  },
+  {
+   "id": 18,
+   "texto": "¿Cuál de las siguientes opciones es el mínimo común múltiplo de 12 y 15?\n\n$\\operatorname{mcm}(12, 15) =$",
+   "opciones": {
+    "A": "180",
+    "B": "120",
+    "C": "60",
+    "D": "30"
+   },
+   "clave": "C",
+   "tema": "Mínimo común múltiplo"
+  },
+  {
+   "id": 19,
+   "texto": "Si un examen consiste en 128 preguntas de opción múltiple y obtienes 100 aciertos, ¿cuál es tu porcentaje de respuestas incorrectas?",
+   "opciones": {
+    "A": "100%",
+    "B": "78.125%",
+    "C": "28%",
+    "D": "21.875%"
+   },
+   "clave": "D",
+   "tema": "Porcentaje en examen"
+  },
+  {
+   "id": 20,
+   "texto": "La caja de ahorros comenzó la semana con un monto de $\\$12{,}000$. Si\n\n- el lunes depositaron $\\$2{,}600$\n- el martes retiraron $\\$6{,}100$\n- el miércoles depositaron $\\$4{,}000$\n- el jueves retiraron $\\$6{,}200$\n- el viernes retiraron $\\$800$\n\n¿Cuánto dinero había en la caja el fin de semana?",
+   "opciones": {
+    "A": "$\\$4{,}000$",
+    "B": "$\\$5{,}500$",
+    "C": "$\\$12{,}300$",
+    "D": "$\\$13{,}100$"
+   },
+   "clave": "B",
+   "tema": "Caja de ahorros — saldo"
+  },
+  {
+   "id": 21,
+   "texto": "Si el promedio de $a$, $\\dfrac{1}{4}$ y $\\dfrac{1}{2}$ es $\\dfrac{1}{3}$, ¿cuánto vale $a$?",
+   "opciones": {
+    "A": "$\\dfrac{1}{8}$",
+    "B": "$\\dfrac{1}{4}$",
+    "C": "$\\dfrac{1}{3}$",
+    "D": "$\\dfrac{1}{2}$"
+   },
+   "clave": "B",
+   "tema": "Promedio — incógnita"
+  },
+  {
+   "id": 22,
+   "texto": "Si un adulto lava un elefante en 3 horas y un niño lava el mismo elefante en 6 horas, ¿en cuánto tiempo lavan al elefante el adulto y el niño juntos?",
+   "opciones": {
+    "A": "6 horas",
+    "B": "3 horas",
+    "C": "2 horas",
+    "D": "1 hora"
+   },
+   "clave": "C",
+   "tema": "Trabajo conjunto"
+  },
+  {
+   "id": 23,
+   "texto": "Analiza cuidadosamente este binomio conjugado:\n\n$(x+1)(x-1) = 0$\n\n¿Cuánto vale $x$?",
+   "opciones": {
+    "A": "0",
+    "B": "1",
+    "C": "-1",
+    "D": "$\\pm 1$"
+   },
+   "clave": "D",
+   "tema": "Ecuación factorizada"
+  },
+  {
+   "id": 24,
+   "texto": "¿Cuál es el producto de esta multiplicación?\n\n$(a+b)(2a-1) =$",
+   "opciones": {
+    "A": "$3a + b - 1$",
+    "B": "$2a^2 + 2ab - 2a - a - b$",
+    "C": "$2a^2 + 2ab - 1$",
+    "D": "$2a^2 + 2ab - a - b$"
+   },
+   "clave": "D",
+   "tema": "Producto algebraico"
+  },
+  {
+   "id": 25,
+   "texto": "¿Cuál es la probabilidad de que al lanzar dos dados, la suma de puntos de las caras superiores sea siete?",
+   "opciones": {
+    "A": "$\\dfrac{1}{2}$",
+    "B": "$\\dfrac{1}{3}$",
+    "C": "$\\dfrac{1}{6}$",
+    "D": "$\\dfrac{1}{12}$"
+   },
+   "clave": "C",
+   "tema": "Probabilidad — suma de dos dados"
+  },
+  {
+   "id": 26,
+   "texto": "En un triángulo rectángulo,\n\n$\\operatorname{sen}\\alpha = \\dfrac{3}{5}$\n\n¿Cuánto mide el cateto adyacente?",
+   "opciones": {
+    "A": "2",
+    "B": "4",
+    "C": "6",
+    "D": "8"
+   },
+   "clave": "B",
+   "tema": "Trigonometría — cateto adyacente"
+  },
+  {
+   "id": 27,
+   "texto": "El precio de una página impresa en papel es $\\$1$; por consiguiente, el precio de imprimir seis páginas es $\\$6$. Selecciona entre las opciones la gráfica que representa correctamente esta función.",
+   "opciones": {
+    "A": "Recta creciente que pasa por el origen",
+    "B": "Recta horizontal constante",
+    "C": "Recta decreciente",
+    "D": "Recta creciente que no pasa por el origen"
+   },
+   "clave": "A",
+   "tema": "Función lineal — gráfica",
+   "figuras_opciones": {
+    "A": "/imagenes_ecoems-8/q27_a.svg",
+    "B": "/imagenes_ecoems-8/q27_b.svg",
+    "C": "/imagenes_ecoems-8/q27_c.svg",
+    "D": "/imagenes_ecoems-8/q27_d.svg"
+   }
+  },
+  {
+   "id": 28,
+   "texto": "¿Cuánto mide el ángulo inscrito $ABC$?",
+   "opciones": {
+    "A": "15°",
+    "B": "30°",
+    "C": "45°",
+    "D": "60°"
+   },
+   "clave": "C",
+   "tema": "Ángulo inscrito",
+   "figura": "/imagenes_ecoems-8/q28_angulo_inscrito.svg"
+  },
+  {
+   "id": 29,
+   "texto": "Es la fuerza que se ejerce sobre los cuerpos a causa de la atracción gravitacional.",
+   "opciones": {
+    "A": "Masa",
+    "B": "Peso",
+    "C": "Densidad",
+    "D": "Presión atmosférica"
+   },
+   "clave": "B",
+   "tema": "Peso vs masa"
+  },
+  {
+   "id": 30,
+   "texto": "Es el cambio de estado de gas a líquido.",
+   "opciones": {
+    "A": "Fusión",
+    "B": "Ebullición",
+    "C": "Evaporación",
+    "D": "Condensación"
+   },
+   "clave": "D",
+   "tema": "Cambios de estado — condensación"
+  },
+  {
+   "id": 31,
+   "texto": "Analiza la siguiente tabla.\n\n| Tiempo (s) | Desplazamiento (m) |\n|---|---|\n| 1 | 10 |\n| 2 | 20 |\n| 20 | 200 |\n\nLa velocidad es el desplazamiento en función del tiempo: $\\mathbf{v} = \\mathbf{d}/t$\n\nLa aceleración es el desplazamiento sobre el cuadrado del tiempo: $\\mathbf{a} = \\mathbf{d}/t^2$\n\nPor consiguiente, el móvil tiene:",
+   "opciones": {
+    "A": "Velocidad constante mayor que cero",
+    "B": "Velocidad variable",
+    "C": "Aceleración constante mayor que cero",
+    "D": "Aceleración variable"
+   },
+   "clave": "A",
+   "tema": "Velocidad y aceleración — tabla"
+  },
+  {
+   "id": 32,
+   "texto": "Al deslizarse sobre un plano inclinado, un balín pasa de una velocidad inicial de 0 m/s a una velocidad final de 2 m/s en dos segundos. ¿Cuál es la aceleración del balín en este experimento?",
+   "opciones": {
+    "A": "$1\\,\\text{m/s}^2$",
+    "B": "$2\\,\\text{m/s}^2$",
+    "C": "$3\\,\\text{m/s}^2$",
+    "D": "$4\\,\\text{m/s}^2$"
+   },
+   "clave": "A",
+   "tema": "Aceleración — plano inclinado"
+  },
+  {
+   "id": 33,
+   "texto": "Relaciona los tipos de movimiento con sus gráficas de desplazamiento en función del tiempo.\n\ni. Movimiento rectilíneo uniforme\nii. Movimiento uniformemente acelerado",
+   "opciones": {
+    "A": "i: a, b   ii: c, d",
+    "B": "i: a, c   ii: b, d",
+    "C": "i: b, d   ii: a, c",
+    "D": "i: c, d   ii: a, b"
+   },
+   "clave": "B",
+   "tema": "Gráficas de movimiento",
+   "figura": "/imagenes_ecoems-8/q33_graficas_movimiento.svg"
+  },
+  {
+   "id": 34,
+   "texto": "Indica cuál de las siguientes formas de energía se refiere a aquella que está almacenada en un cuerpo y se mantiene lista para hacer trabajo.",
+   "opciones": {
+    "A": "Potencial",
+    "B": "Cinética",
+    "C": "Eléctrica",
+    "D": "Calorífica"
+   },
+   "clave": "A",
+   "tema": "Energía potencial"
+  },
+  {
+   "id": 35,
+   "texto": "Es la forma de transmisión del calor por el viento y las corrientes marinas.",
+   "opciones": {
+    "A": "Conducción",
+    "B": "Convección",
+    "C": "Radiación",
+    "D": "Evaporación"
+   },
+   "clave": "B",
+   "tema": "Transmisión del calor — convección"
+  },
+  {
+   "id": 36,
+   "texto": "Analiza cuidadosamente las siguientes afirmaciones referentes a la presión atmosférica y determina cuáles son ciertas.\n\ni. Actúa sólo verticalmente, de arriba hacia abajo.\nii. Actúa en todas direcciones en cualquier punto dentro de la atmósfera.\niii. Es mayor a nivel del mar que en la cima de una montaña.\niv. Es mayor en la cima de una montaña que a nivel del mar.\nv. Empuja al líquido en un vaso al succionar tal líquido con un popote.",
+   "opciones": {
+    "A": "i y iv",
+    "B": "ii y iii",
+    "C": "ii y iv",
+    "D": "ii, iii y v"
+   },
+   "clave": "D",
+   "tema": "Presión atmosférica"
+  },
+  {
+   "id": 37,
+   "texto": "Los tres recipientes de la siguiente figura contienen agua a un mismo nivel y están sobre una superficie horizontal. ¿Cómo son las presiones en el fondo de los recipientes?",
+   "opciones": {
+    "A": "$P_a > P_b > P_c$",
+    "B": "$P_a < P_b < P_c$",
+    "C": "$P_a = P_b = P_c$",
+    "D": "$P_a < P_b > P_c$"
+   },
+   "clave": "C",
+   "tema": "Principio de Pascal — recipientes",
+   "figura": "/imagenes_ecoems-8/q37_recipientes.svg"
+  },
+  {
+   "id": 38,
+   "texto": "Selecciona entre las siguientes opciones el material que sea el mejor conductor tanto de la electricidad como del calor.",
+   "opciones": {
+    "A": "Plástico",
+    "B": "Tela",
+    "C": "Madera",
+    "D": "Cobre"
+   },
+   "clave": "D",
+   "tema": "Materiales conductores"
+  },
+  {
+   "id": 39,
+   "texto": "¿Qué sucede cuando se hace pasar una corriente por un conductor?",
+   "opciones": {
+    "A": "La resistencia desaparece totalmente",
+    "B": "Los protones fluyen rápidamente a lo largo del material conductor",
+    "C": "Se crea un campo magnético alrededor del conductor",
+    "D": "La aguja de una brújula cercana permanece estática"
+   },
+   "clave": "C",
+   "tema": "Corriente y campo magnético"
+  },
+  {
+   "id": 40,
+   "texto": "Cuando un rayo de luz incide sobre un espejo plano, el ángulo de incidencia es:",
+   "opciones": {
+    "A": "Igual al ángulo de reflexión",
+    "B": "Menor que el ángulo de reflexión",
+    "C": "Mayor que el ángulo de reflexión",
+    "D": "Dos veces el ángulo de reflexión"
+   },
+   "clave": "A",
+   "tema": "Reflexión — ángulos"
+  }
+ ]
+}

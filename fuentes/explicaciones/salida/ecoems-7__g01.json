@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "Es una sucesión aritmética: de un término al siguiente siempre se suman 5. Con primer término 4, la regla es $a_n = 4 + 5(n-1) = 5n - 1$. Entonces:\n\n$$a_{38} = 5(38) - 1 = 190 - 1 = 189$$\n\nSi te dio 184 (opción B), calculaste $a_{37}$: el clásico quedarse un lugar corto."
+ },
+ {
+  "id": 2,
+  "explanation": "Cada figura es un cuadrado de puntos al que le falta la esquina: $2 \\times 2 - 1 = 3$, $3 \\times 3 - 1 = 8$, $4 \\times 4 - 1 = 15$. En la posición $n$ el cuadrado es de lado $n+1$, así que $a_n = (n+1)^2 - 1$. Para la posición ocho:\n\n$$a_8 = 9^2 - 1 = 81 - 1 = 80$$\n\nSi elegiste 64, usaste un cuadrado de lado 8: el lado siempre va un paso adelante de la posición, y además hay que quitar el punto de la esquina."
+ },
+ {
+  "id": 3,
+  "explanation": "Ve por partes. El pantalón costó $\\frac{1}{4}$ de $\\$1{,}600$, o sea $\\$400$; le quedaron $\\$1{,}200$. La camisa fue $\\frac{1}{5}$ **de lo que le quedó**: $\\frac{1}{5}$ de $\\$1{,}200$ son $\\$240$. Al final le sobran $\\$1{,}200 - \\$240 = \\$960$.\n\nLa trampa está en la frase «de lo que le quedó»: el quinto se calcula sobre los \\$1,200, no sobre los \\$1,600 originales."
+ },
+ {
+  "id": 4,
+  "explanation": "Son los cuadrados de los números pares: $2^2 = 4$, $4^2 = 16$, $6^2 = 36$, $8^2 = 64$; el que sigue es $10^2 = 100$. También sale con diferencias: $12, 20, 28$ crecen de 8 en 8, así que la siguiente es 36 y $64 + 36 = 100$.\n\nSi marcaste 81, pensaste en $9^2$: aquí solo se elevan los pares, no todos los enteros."
+ },
+ {
+  "id": 5,
+  "explanation": "Compara cada sector con el que tiene enfrente: $15 \\leftrightarrow 45$ y $16 \\leftrightarrow 48$; el opuesto siempre es el triple. Al sector del signo de interrogación le toca de pareja el 36, así que $36 \\div 3 = 12$.\n\nSi contestaste 18, dividiste 36 entre 2: la regla de los opuestos es el triple, no el doble."
+ },
+ {
+  "id": 6,
+  "explanation": "Aquí corren dos reglas a la vez: los números de los óvalos suben de 3 en 3 ($2, 5, 8, \\ldots$) y cada triángulo vale 4 veces su óvalo ($2 \\to 8$, $5 \\to 20$, $8 \\to 32$). El óvalo que sigue es $8 + 3 = 11$ y su triángulo, $11 \\times 4 = 44$. Por eso el par correcto es 11 y 44."
+ },
+ {
+  "id": 7,
+  "explanation": "Escribe todo en tercios: $2 = \\frac{6}{3}$, y la serie queda $\\frac{6}{3}, \\frac{4}{3}, \\frac{2}{3}, \\frac{0}{3}$. Es aritmética: baja $\\frac{2}{3}$ en cada paso. El término que sigue es\n\n$$0 - \\frac{2}{3} = -\\frac{2}{3}$$"
+ },
+ {
+  "id": 8,
+  "explanation": "Primero la distancia: $d = v \\cdot t = 100 \\times 3 = 300$ km. Con la nueva velocidad, $t = \\frac{300}{200} = 1.5$ h, y como $0.5$ h son exactamente 30 minutos, llega en 1 h 30 min. Tiene lógica: al duplicar la velocidad, el tiempo se parte justo a la mitad.\n\nLas otras opciones juegan con la conversión: media hora nunca son 32, 35 ni 36 minutos."
+ },
+ {
+  "id": 9,
+  "explanation": "Son dos series intercaladas. Los lugares 1, 3 y 5: $31, 28, 25$, bajan de 3 en 3. Los lugares 2, 4 y 6: $24, 27, \\ldots$, suben de 3 en 3. El hueco ocupa el sexto lugar, así que pertenece a la serie que sube: $27 + 3 = 30$.\n\nSi intentaste seguir un solo patrón de sumas y restas seguidas, no cierra: sepáralo en dos series."
+ },
+ {
+  "id": 10,
+  "explanation": "Cuenta por familias. Cuadrados derechos: los 4 cuadrantes chicos más el grande, 5. Inclinados: las diagonales forman un cuadrado girado 45° que une los puntos medios de los lados (el rombo central), y las diagonales del cuadrado grande lo parten en 4 cuadraditos inclinados más: $1 + 4 = 5$. Total:\n\n$$5 + 5 = 10$$\n\nSi contaste 5, solo viste los derechos: los cuadrados girados también cuentan."
+ },
+ {
+  "id": 11,
+  "explanation": "Llama $x$ al menor; los consecutivos son $x$, $x+1$ y $x+2$:\n\n$$x + (x+1) + (x+2) = 3x + 3 = 27$$\n\nDe ahí $3x = 24$ y $x = 8$: los números son 8, 9 y 10.\n\nSi contestaste 9, diste el de en medio ($27 \\div 3$), no el menor."
+ },
+ {
+  "id": 12,
+  "explanation": "En una vista lateral las columnas se aplastan: desde la izquierda solo ves, para cada fila de profundidad, la altura máxima que alcanza. La fila delantera llega a 2 cubos, la de en medio a 3 (ahí está la torre alta) y la del fondo a 2. La silueta es un bloque de 3 de ancho por 2 de alto con un cuadrito centrado encima: la opción A.\n\nLa escalera de la opción D pondría lo más alto en una orilla, pero la torre de 3 queda en medio."
+ },
+ {
+  "id": 13,
+  "explanation": "Mira los saltos: $0.25, 0.5, \\ldots$ — cada diferencia crece $0.25$. Siguiendo la cadena: $1.25 + 0.75 = 2$; $2 + 1 = 3$ (coincide); $3 + 1.25 = 4.25$ (coincide); $4.25 + 1.5 = 5.75$; y $5.75 + 1.75 = 7.5$, que cierra exacto con el último dato. Los faltantes son $2$ y $5.75$.\n\nEl 6.25 de la opción A sale de sumarle 2 a 4.25, pero el salto que toca en ese punto es 1.5."
+ },
+ {
+  "id": 14,
+  "explanation": "La **moda** es el valor que más se repite, el de mayor frecuencia (c). La **mediana** es el que queda al centro cuando ordenas los datos (b). La **media aritmética** es la suma de todos los valores entre cuántos son (a). Por eso: 1c, 2b, 3a.\n\nLa definición d), el promedio del dato menor y el mayor, describe el rango medio: está de relleno."
+ },
+ {
+  "id": 15,
+  "explanation": "La frase clave es que el color está contenido en **toda la fila**: cada cara de color que ves marca una línea completa de tabiques a través del muro. Las 2 del frente son filas que van hacia el fondo: $4 + 4 = 8$. Las 2 del costado derecho son filas a lo ancho: $4 + 4 = 8$. Las 2 de arriba son columnas que bajan hasta el piso: $5 + 5 = 10$. Eso suma 26, pero esas líneas se cruzan en 4 tabiques que quedarían contados dos veces:\n\n$$26 - 4 = 22$$\n\nSi te dio 24 o 26, contaste doble algunos cruces."
+ },
+ {
+  "id": 16,
+  "explanation": "El número de abajo cuenta los **ángulos internos** de las piezas en que queda dividida cada figura. Triángulo solo: 3. Rombo con su diagonal: dos triángulos, $3 + 3 = 6$. Triángulo con línea: un triángulo arriba y un trapecio abajo, $3 + 4 = 7$. Trapecio solo: 4. El hexágono con la línea de en medio queda partido en **dos pentágonos**: $5 + 5 = 10$."
+ },
+ {
+  "id": 17,
+  "explanation": "Convierte el porcentaje a decimal y multiplica: $18\\% = 0.18$, así que $750 \\times 0.18 = 135$, o sea $\\$135.00$.\n\nTambién sale mentalmente: el 10% de 750 es 75, el 5% es 37.50 y el 3% es 22.50; sumando, $75 + 37.50 + 22.50 = 135$."
+ },
+ {
+  "id": 18,
+  "explanation": "El **denominador** es el número de abajo y dice en cuántas partes iguales se divide el entero; el **numerador**, el de arriba, dice cuántas de esas partes se toman. En $\\frac{3}{5}$, el entero se partió en 5 y tomas 3.\n\nEl numerador es el distractor natural, pero él cuenta las partes que tomas, no en cuántas se parte el entero."
+ },
+ {
+  "id": 19,
+  "explanation": "El despeje va así: primero multiplicas cruzado, $(x)(x) = (4)(81)$ — paso 2. Eso da $x^2 = 324$ — paso 4. Para despejar $x$ sacas raíz cuadrada, $x = \\sqrt{324}$ — paso 1. Y calculas el resultado, $x = 18$ — paso 3. El orden correcto es 2, 4, 1, 3.\n\nNo puedes empezar en $x^2 = 324$ (opción B): ese renglón no existe hasta haber multiplicado cruzado."
+ },
+ {
+  "id": 20,
+  "explanation": "Una cuadrática es **incompleta** cuando, ya igualada a cero y simplificada, le falta el término lineal o el independiente. La 2, $x^2 + 169 = 0$, no tiene término en $x$. La 3, $3x^2 - 15x = 0$, no tiene término independiente. La 5 se reduce: $4x^2 + 8x - 16x = 4x^2 - 8x = 0$, tampoco tiene independiente. Por eso: 2, 3, 5.\n\nLa 1 engaña: al pasar el $-16$ queda $x^2 + 10x + 25 = 0$, con sus tres términos, igual que la 4: esas dos son completas."
+ },
+ {
+  "id": 21,
+  "explanation": "Buscas cuándo vuelven a coincidir: el **mínimo común múltiplo**. Como $32 = 2^5$ y $48 = 2^4 \\cdot 3$, el mcm es $2^5 \\cdot 3 = 96$. Con 96 dientes engranados, la primera rueda completa $96 \\div 32 = 3$ vueltas exactas y la segunda $96 \\div 48 = 2$: ambas regresan a su posición original.\n\nCon 48 no alcanza: la primera rueda llevaría $48 \\div 32 = 1.5$ vueltas y quedaría a media vuelta."
+ },
+ {
+  "id": 22,
+  "explanation": "Los ángulos internos de cualquier triángulo suman 180°:\n\n$$(x + 10°) + (x + 13°) + (3x + 7°) = 180°$$\n\nAgrupa: $5x + 30° = 180°$, entonces $5x = 150°$ y $x = 30°$. Comprueba: $40° + 43° + 97° = 180°$."
+ },
+ {
+  "id": 23,
+  "explanation": "Es un binomio al cuadrado: cuadrado del primero, menos el doble producto, más el cuadrado del segundo:\n\n$$\\left(a - \\frac{b}{2}\\right)^2 = a^2 - 2(a)\\left(\\frac{b}{2}\\right) + \\left(\\frac{b}{2}\\right)^2 = a^2 - ab + \\frac{b^2}{4}$$\n\nEl doble producto se simplifica porque $2 \\cdot \\frac{b}{2} = b$, y por eso el término de en medio es $-ab$.\n\nLa opción A es el error clásico de elevar término por término y saltarse el doble producto."
+ },
+ {
+  "id": 24,
+  "explanation": "Todo se mide desde la edad **actual** de Karla: eso es $x$ (1a). Hace cinco años ella tenía $x - 5$ (2b). Y como en ese momento la mamá tenía el triple, $3(x - 5)$ es la edad de la madre **hace** cinco años (3d). Queda 1a, 2b, 3d.\n\nEl inciso c) habla de la edad de la madre dentro de cinco años, un tiempo que el problema nunca usa."
+ },
+ {
+  "id": 25,
+  "explanation": "El techo es un triángulo rectángulo del que conoces la hipotenusa, $\\sqrt{404}\\,u$, y el cateto vertical, $2\\,u$; la base es el cateto que falta. Por Pitágoras:\n\n$$b^2 = \\left(\\sqrt{404}\\right)^2 - 2^2 = 404 - 4 = 400 \\quad\\Rightarrow\\quad b = 20\\,u$$\n\nTiene sentido: la base del techo es justo el ancho de la casa."
+ },
+ {
+  "id": 26,
+  "explanation": "El frente se arma con dos piezas: el rectángulo del cuerpo y el triángulo del techo. Rectángulo: $20 \\times 4 = 80\\,u^2$ (el 20 es la base que salió con Pitágoras en la pregunta anterior). Triángulo: $\\frac{20 \\times 2}{2} = 20\\,u^2$. Total:\n\n$$80 + 20 = 100\\,u^2$$\n\nSi contestaste $80\\,u^2$, dejaste fuera el techo; y la puerta y las ventanas no se restan: también son parte del frente."
+ },
+ {
+  "id": 27,
+  "explanation": "Las medidas de tendencia central localizan el **centro** de los datos: la **media** (2), la **mediana** (4) y la **moda** (6). Las otras tres de la lista —desviación estándar, rango y varianza— miden qué tan **dispersos** están los datos alrededor de ese centro: son medidas de dispersión, el distractor típico de este tema."
+ },
+ {
+  "id": 28,
+  "explanation": "Respeta la jerarquía de operaciones: primero multiplicaciones y divisiones, al final sumas y restas.\n\n$$\\frac{1}{4} \\times \\frac{2}{5} = \\frac{1}{10}, \\qquad \\frac{3}{4} \\div \\frac{5}{2} = \\frac{3}{4} \\times \\frac{2}{5} = \\frac{3}{10}$$\n\nAhora sí: $\\frac{2}{3} + \\frac{1}{10} - \\frac{3}{10} = \\frac{2}{3} - \\frac{1}{5} = \\frac{10}{15} - \\frac{3}{15} = \\frac{7}{15}$.\n\nLas opciones negativas salen de operar de izquierda a derecha, ignorando la jerarquía."
+ },
+ {
+  "id": 29,
+  "explanation": "Los cuatro son procesos donde la materia **pasa de un estado a otro**: fusión (sólido a líquido), solidificación (líquido a sólido), evaporación (líquido a gas) y sublimación (sólido a gas, sin pasar por líquido). Eso es exactamente un cambio de fase o de estado.\n\nLa opción A confunde el camino con el punto de llegada: los estados de agregación son sólido, líquido y gas; lo que te listaron son los procesos para pasar entre ellos."
+ },
+ {
+  "id": 30,
+  "explanation": "El calor se transmite de tres formas: **conducción**, por contacto directo (el mango metálico de la sartén se calienta); **convección**, por corrientes dentro de líquidos y gases (el agua al hervir); y **radiación**, por ondas electromagnéticas que no necesitan medio (el calor del Sol).\n\nLa inducción es un fenómeno electromagnético, y el frotamiento genera calor, pero no es una forma de transmitirlo."
+ },
+ {
+  "id": 31,
+  "explanation": "El avión parte del reposo, así que $v_0 = 0$ y\n\n$$v = v_0 + at = 0 + (6)(5) = 30\\ \\text{m/s}$$\n\nEn palabras: acelerar a $6\\ \\text{m/s}^2$ es ganar 6 m/s cada segundo; en 5 segundos acumula 30 m/s.\n\nSi te dio 75, calculaste la distancia recorrida ($\\frac{1}{2}at^2 = 75$ m), no la velocidad."
+ },
+ {
+  "id": 32,
+  "explanation": "Recorre el dibujo: el 1 mide de una cresta a la siguiente, la **longitud de onda** (b). El 2 señala un punto donde la onda cruza el eje, un **nodo** (g). El 3 abarca una oscilación completa, un **ciclo** (f). El 4 apunta al punto más bajo, el **valle** (d). El 5 va del eje al punto más alto, la **amplitud** (e). El 6 señala el punto más alto, la **cresta** (c). Queda 1b, 2g, 3f, 4d, 5e, 6c.\n\nEl periodo (a) sobra: es el **tiempo** que tarda un ciclo, y lo marcado en la figura son distancias y puntos."
+ },
+ {
+  "id": 33,
+  "explanation": "Una onda es una **perturbación que se propaga**: la energía viaja sin que el medio se vaya con ella. Eso describe a las ondas sísmicas del temblor de 1985 (1), al sonido de la ambulancia (2) y a las olas del mar (5).\n\nLa persona, el camión y la rotación de la Tierra son cuerpos completos que se trasladan o giran, y la corriente de la pila es un flujo de cargas: ninguno es movimiento ondulatorio."
+ },
+ {
+  "id": 34,
+  "explanation": "Es la tercera ley de Newton: a toda acción corresponde una reacción de la **misma magnitud** y en **sentido contrario**. Al golpear el saco, éste responde sobre el puño con una fuerza igual y opuesta; por eso el golpe también se siente en la mano.\n\nLa opción B es la trampa: las dos fuerzas del par acción-reacción siempre son iguales; que el saco se mueva depende de su masa y de cómo cuelga, no de recibir una fuerza mayor."
+ },
+ {
+  "id": 35,
+  "explanation": "Es la **inercia**, la primera ley de Newton: todo cuerpo tiende a mantener su estado de reposo o de movimiento. Cuando el auto arranca, tu cuerpo todavía está en reposo y se resiste al cambio; el asiento avanza contigo y esa resistencia la percibes como un empujón hacia atrás. No hay ninguna fuerza que te jale hacia atrás: es tu propio cuerpo queriendo quedarse como estaba."
+ },
+ {
+  "id": 36,
+  "explanation": "Ve una por una: la **calorífica** se produce por la combustión de carbón, madera, petróleo o gas (d); la **eléctrica** se obtiene de generadores y acumuladores (e); la **química** la liberan las sustancias al reaccionar entre sí, como en las pilas (a); y la **hidráulica** aprovecha las corrientes y caídas de agua (b). Queda 1d, 2e, 3a, 4b.\n\nLa característica c), el viento que mueve aerogeneradores, describe la energía eólica: no está en la lista."
+ },
+ {
+  "id": 37,
+  "explanation": "De mayor a menor: **metro** (5), **decímetro** (2), **centímetro** (6), **milímetro** (1), **micrómetro** (3) y **nanómetro** (4); la secuencia es 5, 2, 6, 1, 3, 4.\n\nLos dos últimos son los que confunden: el micrómetro es $10^{-6}$ m (la milésima parte de un milímetro) y el nanómetro $10^{-9}$ m, mil veces más chico todavía."
+ },
+ {
+  "id": 38,
+  "explanation": "En una gráfica de velocidad contra tiempo, velocidad constante se ve como un **tramo horizontal**: el tiempo avanza y la velocidad no cambia. De las opciones, el único horizontal es 4–5, donde el auto se mantiene en 8 m/s. En 1–2 y 3–4 la línea sube (acelera) y en 5–6 baja (frena).\n\nLos tramos 2–3 y 6–7 también son horizontales, pero no aparecen entre las opciones."
+ },
+ {
+  "id": 39,
+  "explanation": "Acelerar es aumentar la velocidad, y en la gráfica v-t eso se ve como un tramo que **sube**. En 1–2 el auto pasa de 0 a 5 m/s: ahí está acelerando. En 2–3 y 6–7 la línea es horizontal (velocidad constante), y en 5–6 baja: pierde velocidad, o sea que frena.\n\nSi escogiste 5–6, confundiste cambio de velocidad con aumento: ahí el cambio es hacia abajo, una desaceleración."
+ },
+ {
+  "id": 40,
+  "explanation": "La aceleración es la **pendiente** del tramo: cuánto cambia la velocidad en cada hora. De 0 a 1 h sube de 0 a 60 km/h: cambio de 60. En 1–2 h y 3–4 h no cambia (pendiente cero), en 2–3 h sube 20 y en 4–5 h sube 40. El tramo más empinado —mayor aceleración— es 0–1 h.\n\nLa opción D tienta porque al final el auto va más rápido que nunca, pero la aceleración mide el **cambio** de velocidad, no su valor."
+ }
+]

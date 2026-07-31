@@ -4,7 +4,13 @@
     "group": "Ingreso a nivel medio superior",
     "version": "1.0",
     "total_questions": 128,
-    "studentsDisabled": ["Yuli", "Sofía", "Leah", "Regina", "Conchita"],
+    "studentsDisabled": [
+      "Yuli",
+      "Sofía",
+      "Leah",
+      "Regina",
+      "Conchita"
+    ],
     "students": [
       "Ari",
       "Alexander",
@@ -221,7 +227,7 @@
               "D": "0.000004, -0.0000003"
             },
             "answer": "D",
-            "explanation": ""
+            "explanation": "Fíjate en tres patrones que corren a la vez: el signo se alterna (negativo, positivo, negativo, ...), la cifra significativa baja de uno en uno ($9, 8, 7, 6, 5, \\ldots$) y cada término lleva un decimal más que el anterior. Entonces el sexto término debe ser positivo, con un $4$ y seis cifras decimales: $0.000004$. Y el séptimo, negativo, con un $3$ y siete decimales: $-0.0000003$.\n\nLa opción B se antoja porque su primer número sí es correcto, pero el segundo, $-0.000003$, trae un cero de menos: faltó recorrer el 3 un lugar más."
           },
           {
             "id": 14,
@@ -249,7 +255,7 @@
               "D": "1.5"
             },
             "answer": "D",
-            "explanation": ""
+            "explanation": "El campo completo es $1$ y el jardinero avanza $\\dfrac{2}{3}$ de campo por día. Los días que necesita son el total entre el ritmo:\n\n$$1 \\div \\dfrac{2}{3} = 1 \\times \\dfrac{3}{2} = 1.5$$\n\nCompruébalo: el primer día poda $\\dfrac{2}{3}$ y le falta $\\dfrac{1}{3}$, que es justo la mitad de lo que hace en un día; por eso ocupa medio día más.\n\nSi contestaste 3 (opción C), invertiste la división: a ese ritmo, en 3 días podaría dos campos completos."
           },
           {
             "id": 16,
@@ -1158,7 +1164,7 @@
               "D": "motivar a los internautas adictos."
             },
             "answer": "A",
-            "explanation": "",
+            "explanation": "Todo el texto está armado para que el internauta se dé cuenta de un riesgo: informa que la adicción a Internet está por clasificarse como desorden clínico —al nivel del alcoholismo—, describe los síntomas (más de seis horas diarias en la red, tensión y enojo al no poder conectarse) y señala las causas. Esa acumulación de advertencias es una llamada de atención: el autor busca alertar a los internautas.\n\nNo es \"prevenir la enfermedad\" (B): el texto no da recomendaciones para evitarla, solo avisa de su existencia y de cómo se trata una vez que ya se tiene.",
             "context": "Internet Addiction Disorder\nDesorden clínico de la misma categoría que el alcoholismo.\nLa adicción a Internet pasará de ser un mal hábito a figurar entre los \"desórdenes clínicos\" como el alcoholismo o la ludopatía, según un manual de diagnóstico elaborado por varios psicólogos chinos del Hospital General de Pekín.\nLos síntomas principales, según publicó el diario oficial China Dialy, son navegar en Internet por más de seis horas al día y la tensión y el enfado generados en el usuario cuando no puede conectarse a la red.\nLos internautas dedican su tiempo a cinco actividades: juegos on-line, visitar páginas pornográficas, redes sociales, compras por Internet y navegación en general.\nEl rotativo informó que, en caso de ser aprobado por el Ministerio de Salud, el manual se convertirá en el primero del mundo en su género.\nUna investigación realizada el año pasado por la compañía InterActiveCorp, reveló que el 42% de los internautas chinos se confesó \"adictos\" a la red, al igual que el 18% de los estadounidenses.\nEl tratamiento para esta adicción es: prohibir la conexión a Internet a los pacientes, antes de proceder a desarrollar la ayuda psicológica, y complementarla con actividades en grupo para ayudarlos a socializar en la vida real.\nLa falta de calor familiar y la ausencia de compañía y juegos reales son las principales razones para convertirse en un adicto a Internet.\nChina es el país con mayor número de internautas del mundo: 221 millones."
           },
           {
@@ -1173,7 +1179,7 @@
               "D": "Las encuestas revelan que hay muchos internautas adictos."
             },
             "answer": "C",
-            "explanation": "",
+            "explanation": "La conclusión es la idea con la que el autor cierra el texto, y aquí está a la vista: el enunciado final es \"China es el país con mayor número de internautas del mundo: 221 millones\". Con ese dato el texto remata y de paso queda claro por qué el problema —y el primer manual de diagnóstico— surge precisamente en China.\n\nLa opción B se antoja porque es la idea con la que el texto abre, pero eso es el planteamiento inicial, no la conclusión.",
             "context": "Internet Addiction Disorder\nDesorden clínico de la misma categoría que el alcoholismo.\nLa adicción a Internet pasará de ser un mal hábito a figurar entre los \"desórdenes clínicos\" como el alcoholismo o la ludopatía, según un manual de diagnóstico elaborado por varios psicólogos chinos del Hospital General de Pekín.\nLos síntomas principales, según publicó el diario oficial China Dialy, son navegar en Internet por más de seis horas al día y la tensión y el enfado generados en el usuario cuando no puede conectarse a la red.\nLos internautas dedican su tiempo a cinco actividades: juegos on-line, visitar páginas pornográficas, redes sociales, compras por Internet y navegación en general.\nEl rotativo informó que, en caso de ser aprobado por el Ministerio de Salud, el manual se convertirá en el primero del mundo en su género.\nUna investigación realizada el año pasado por la compañía InterActiveCorp, reveló que el 42% de los internautas chinos se confesó \"adictos\" a la red, al igual que el 18% de los estadounidenses.\nEl tratamiento para esta adicción es: prohibir la conexión a Internet a los pacientes, antes de proceder a desarrollar la ayuda psicológica, y complementarla con actividades en grupo para ayudarlos a socializar en la vida real.\nLa falta de calor familiar y la ausencia de compañía y juegos reales son las principales razones para convertirse en un adicto a Internet.\nChina es el país con mayor número de internautas del mundo: 221 millones."
           },
           {
@@ -1188,7 +1194,7 @@
               "D": "un hecho."
             },
             "answer": "D",
-            "explanation": "",
+            "explanation": "Un hecho es un acontecimiento concreto que ya ocurrió y que se puede comprobar. Que psicólogos chinos elaboraron un manual de diagnóstico es exactamente eso: el texto lo reporta como algo ya realizado en el Hospital General de Pekín. No es una explicación, porque no aclara el porqué de nada; ni un resultado, porque no es el desenlace de un estudio o proceso: es el dato objetivo del que parte toda la nota.",
             "context": "Internet Addiction Disorder\nDesorden clínico de la misma categoría que el alcoholismo.\nLa adicción a Internet pasará de ser un mal hábito a figurar entre los \"desórdenes clínicos\" como el alcoholismo o la ludopatía, según un manual de diagnóstico elaborado por varios psicólogos chinos del Hospital General de Pekín.\nLos síntomas principales, según publicó el diario oficial China Dialy, son navegar en Internet por más de seis horas al día y la tensión y el enfado generados en el usuario cuando no puede conectarse a la red.\nLos internautas dedican su tiempo a cinco actividades: juegos on-line, visitar páginas pornográficas, redes sociales, compras por Internet y navegación en general.\nEl rotativo informó que, en caso de ser aprobado por el Ministerio de Salud, el manual se convertirá en el primero del mundo en su género.\nUna investigación realizada el año pasado por la compañía InterActiveCorp, reveló que el 42% de los internautas chinos se confesó \"adictos\" a la red, al igual que el 18% de los estadounidenses.\nEl tratamiento para esta adicción es: prohibir la conexión a Internet a los pacientes, antes de proceder a desarrollar la ayuda psicológica, y complementarla con actividades en grupo para ayudarlos a socializar en la vida real.\nLa falta de calor familiar y la ausencia de compañía y juegos reales son las principales razones para convertirse en un adicto a Internet.\nChina es el país con mayor número de internautas del mundo: 221 millones."
           },
           {
@@ -1203,7 +1209,7 @@
               "D": "noticia."
             },
             "answer": "B",
-            "explanation": "",
+            "explanation": "\"Rotativo\" es sinónimo de periódico: el nombre viene de la rotativa, la máquina de imprenta con la que se tiran los diarios, y por extensión así se le llama al propio diario. El contexto lo confirma: \"el rotativo informó...\" retoma al diario oficial chino mencionado antes en el texto; quien informa es el periódico.\n\nNo es \"periodista\" (A): el rotativo es el medio impreso, no la persona que escribe en él.",
             "context": null
           }
         ]

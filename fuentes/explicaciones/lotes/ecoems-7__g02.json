@@ -1,0 +1,505 @@
+{
+ "lote": "ecoems-7__g02",
+ "examen": "ecoems-7.json",
+ "titulo": "ECOEMS 7",
+ "materia": "Ciencias III (Química) + Ciencias I (Biología) + Habilidad verbal",
+ "lecturas": {
+  "L1": "La aspirina es un producto utilizado en todo el mundo debido a sus propiedades y está formado por Carbono, Hidrógeno y Oxígeno.",
+  "L2": "Observa la figura, analiza y contesta los reactivos relacionados.",
+  "L3": "Lee el texto y contesta los reactivos relacionados.\n\nLa profesora Laura en la clase de español pide a sus alumnos que participen con relatos.\n\nLucía inicia con una narración fantástica que hace referencia a seres divinos que dieron vida a los pueblos de la antigua Grecia.\n\nLilia relata hechos históricos de los antepasados que se han transmitido de generación en generación, mencionando en su aportación la historia \"La llorona\".\n\nFrancisco comienza su participación con: Había una vez…\n\nGuillermo hace una recopilación por escrito de las participaciones de sus compañeras para elaborar un álbum y presentar su trabajo."
+ },
+ "preguntas": [
+  {
+   "id": 41,
+   "texto": "Los materiales que poseen carga se denominan…",
+   "opciones": {
+    "A": "metales",
+    "B": "no metales",
+    "C": "semiconductores",
+    "D": "iones"
+   },
+   "clave": "D",
+   "tema": "Iones — definición"
+  },
+  {
+   "id": 42,
+   "texto": "En la unión de un ___ y un ___ está presente el enlace iónico, mientras que en el covalente la unión es entre dos ___ para cumplir con la regla del octeto.",
+   "opciones": {
+    "A": "no metal - metal - metales",
+    "B": "semimetal - metal - no metales",
+    "C": "metal - no metal - no metales",
+    "D": "no metal - semimetal - metales"
+   },
+   "clave": "C",
+   "tema": "Enlaces — iónico y covalente"
+  },
+  {
+   "id": 43,
+   "texto": "Relaciona el concepto químico con su ejemplo.\n\n| Concepto | Ejemplo |\n|---|:---|\n| 1. Mezcla | a) Mg + 2 |\n| 2. Compuesto | b) NiO |\n| 3. Elemento | c) Petróleo |\n| | d) Bi |",
+   "opciones": {
+    "A": "1a, 2b, 3d",
+    "B": "1c, 2b, 3d",
+    "C": "1c, 2a, 3b",
+    "D": "1d, 2a, 3b"
+   },
+   "clave": "B",
+   "tema": "Materia — mezcla, compuesto, elemento"
+  },
+  {
+   "id": 44,
+   "texto": "Elige los elementos metálicos de la siguiente lista.\n\n1. Cloro\n2. Cromo\n3. Hidrógeno\n4. Zinc\n5. Oxígeno\n6. Azufre\n7. Cobalto",
+   "opciones": {
+    "A": "4, 5, 6",
+    "B": "2, 5, 7",
+    "C": "1, 2, 3",
+    "D": "2, 4, 7"
+   },
+   "clave": "D",
+   "tema": "Tabla periódica — elementos metálicos"
+  },
+  {
+   "id": 45,
+   "texto": "¿Qué ocurre en el proceso de respiración de los seres vivos?",
+   "opciones": {
+    "A": "Cambio físico",
+    "B": "Mitosis",
+    "C": "Respiración anaerobia",
+    "D": "Cambio químico"
+   },
+   "clave": "D",
+   "tema": "Cambios químicos — respiración"
+  },
+  {
+   "id": 46,
+   "texto": "Una característica de los ___ es que tienen sabor agrio, un ejemplo es ___, mientras que ___ se usan para producir jabones.",
+   "opciones": {
+    "A": "hidróxidos - agua - ácidos",
+    "B": "ácidos - leche - hidróxidos",
+    "C": "hidrácidos - vinagre - alcohol",
+    "D": "oxiácidos - jalea - ácidos"
+   },
+   "clave": "B",
+   "tema": "Ácidos y bases"
+  },
+  {
+   "id": 47,
+   "texto": "Al destapar una olla con agua caliente, las gotas que están en el interior se deben a:",
+   "opciones": {
+    "A": "condensación del vapor",
+    "B": "presencia de gas",
+    "C": "licuefacción",
+    "D": "ebullición"
+   },
+   "clave": "A",
+   "tema": "Cambios de estado — condensación"
+  },
+  {
+   "id": 48,
+   "texto": "Selecciona los elementos de la familia VIII–A.\n\n1. Fe\n2. Al\n3. Ne\n4. K\n5. Kr\n6. Rn\n7. Ra",
+   "opciones": {
+    "A": "1, 4, 7",
+    "B": "2, 3, 5",
+    "C": "4, 6, 7",
+    "D": "3, 5, 6"
+   },
+   "clave": "D",
+   "tema": "Tabla periódica — gases nobles"
+  },
+  {
+   "id": 49,
+   "texto": "Al tener una propiedad analgésica se refiere a que:",
+   "opciones": {
+    "A": "produce sed",
+    "B": "elimina infección",
+    "C": "es hidratante",
+    "D": "reduce el dolor"
+   },
+   "clave": "D",
+   "tema": "Medicamentos — analgésico (aspirina)",
+   "lectura": "L1"
+  },
+  {
+   "id": 50,
+   "texto": "Por su efecto antipirético, la aspirina actúa sobre la temperatura corporal haciendo que ésta:",
+   "opciones": {
+    "A": "aumente",
+    "B": "disminuya",
+    "C": "permanezca igual",
+    "D": "fluctúe"
+   },
+   "clave": "B",
+   "tema": "Medicamentos — antipirético",
+   "lectura": "L1"
+  },
+  {
+   "id": 51,
+   "texto": "La aspirina se vende en tabletas para ingerir y hay otra presentación, como pastilla efervescente, entonces:",
+   "opciones": {
+    "A": "la tableta actúa más rápido",
+    "B": "la pastilla efervescente actúa más rápido",
+    "C": "ambas tardan el mismo tiempo",
+    "D": "en agua fría actúan igual"
+   },
+   "clave": "B",
+   "tema": "Disolución — velocidad",
+   "lectura": "L1"
+  },
+  {
+   "id": 52,
+   "texto": "Elige la opción que sólo contenga características de las sustancias sólidas.",
+   "opciones": {
+    "A": "Forma definida y baja fuerza de cohesión.",
+    "B": "Volumen constante y alta compresibilidad.",
+    "C": "Alta compresibilidad y baja fuerza de cohesión.",
+    "D": "Forma definida y alta fuerza de cohesión."
+   },
+   "clave": "D",
+   "tema": "banco"
+  },
+  {
+   "id": 53,
+   "texto": "Proceso que utilizan los seres vivos para aprovechar la energía de su medio.",
+   "opciones": {
+    "A": "Reproducción",
+    "B": "Crecimiento",
+    "C": "Irritabilidad",
+    "D": "Nutrición"
+   },
+   "clave": "D",
+   "tema": "Nutrición"
+  },
+  {
+   "id": 54,
+   "texto": "Proceso mediante el cual un organismo se desarrolla y cambia.",
+   "opciones": {
+    "A": "Reproducción",
+    "B": "Adaptación",
+    "C": "Evidencia",
+    "D": "Evolución"
+   },
+   "clave": "D",
+   "tema": "Evolución"
+  },
+  {
+   "id": 55,
+   "texto": "La vasectomía es la esterilización quirúrgica del hombre y consiste en cortar, engrapar o cauterizar los ___ para imposibilitar el traslado de ___ desde el epidídimo hasta la uretra e impedir la fecundación.",
+   "opciones": {
+    "A": "testículos - semen",
+    "B": "conductos deferentes - espermatozoides",
+    "C": "líquidos seminales - uretra",
+    "D": "espermatozoides - vesículas seminales"
+   },
+   "clave": "B",
+   "tema": "Reproducción — vasectomía"
+  },
+  {
+   "id": 56,
+   "texto": "Selecciona entre las siguientes enfermedades las que están relacionadas con el tabaquismo.\n\n1. Enfisema\n2. Gastroenteritis\n3. Arteriosclerosis\n4. Diabetes\n5. Inflamación de órganos genitales\n6. Enfermedad pulmonar obstructiva crónica",
+   "opciones": {
+    "A": "1, 3, 6",
+    "B": "2, 3, 4",
+    "C": "1, 4, 6",
+    "D": "2, 3, 6"
+   },
+   "clave": "A",
+   "tema": "Salud — tabaquismo"
+  },
+  {
+   "id": 57,
+   "texto": "En la ___, la célula madre con determinada cantidad de cromosomas origina cuatro células hijas.",
+   "opciones": {
+    "A": "bipartición",
+    "B": "gemación",
+    "C": "meiosis",
+    "D": "mitosis"
+   },
+   "clave": "C",
+   "tema": "Reproducción — meiosis"
+  },
+  {
+   "id": 58,
+   "texto": "Los organismos unicelulares como las bacterias, los protozoarios y las algas unicelulares se reproducen de manera:",
+   "opciones": {
+    "A": "sexual",
+    "B": "meiosis",
+    "C": "asexual",
+    "D": "gemación"
+   },
+   "clave": "C",
+   "tema": "Reproducción asexual"
+  },
+  {
+   "id": 59,
+   "texto": "Relaciona las cuatro potencialidades de la sexualidad con su manifestación.\n\n| Potencialidad | Manifestación |\n|---|:---|\n| 1. Reproducción | a) Se diferencia por dos tipos de sexo en los humanos |\n| 2. Género | b) Potencialidad de tener descendientes |\n| 3. Erotismo | c) Capacidad de relacionarte con otras personas de forma cariñosa |\n| 4. Vínculos afectivos | d) Parte integral del ser humano, se manifiesta desde el nacimiento y hasta la muerte |\n| | e) Experimentar placer corporal |",
+   "opciones": {
+    "A": "1b, 2c, 3a, 4e",
+    "B": "1a, 2c, 3d, 4b",
+    "C": "1b, 2a, 3e, 4c",
+    "D": "1c, 2b, 3d, 4a"
+   },
+   "clave": "C",
+   "tema": "Sexualidad — potencialidades"
+  },
+  {
+   "id": 60,
+   "texto": "En una cadena alimenticia el consumidor primario siempre es:",
+   "opciones": {
+    "A": "desintegrador",
+    "B": "carnívoro",
+    "C": "herbívoro",
+    "D": "productor"
+   },
+   "clave": "C",
+   "tema": "Cadena alimenticia — consumidor primario",
+   "lectura": "L2",
+   "figura": "/imagenes_ecoems-7/q60_cadena_alimenticia.svg"
+  },
+  {
+   "id": 61,
+   "texto": "En una cadena alimenticia la secuencia energética comienza con el siguiente elemento:",
+   "opciones": {
+    "A": "desintegrador",
+    "B": "herbívoro",
+    "C": "productor",
+    "D": "sol"
+   },
+   "clave": "D",
+   "tema": "Cadena alimenticia — origen energético",
+   "lectura": "L2",
+   "figura": "/imagenes_ecoems-7/q60_cadena_alimenticia.svg"
+  },
+  {
+   "id": 62,
+   "texto": "Generalmente los organismos desintegradores pertenecen al reino:",
+   "opciones": {
+    "A": "animalia",
+    "B": "plantae",
+    "C": "protista",
+    "D": "fungi"
+   },
+   "clave": "D",
+   "tema": "Cadena alimenticia — reino desintegradores",
+   "lectura": "L2",
+   "figura": "/imagenes_ecoems-7/q60_cadena_alimenticia.svg"
+  },
+  {
+   "id": 63,
+   "texto": "En los ecosistemas, la energía ___ puede transformarse mediante el proceso de fotosíntesis, en energía ___ almacenada en los enlaces de las moléculas de azúcares (glucosa).",
+   "opciones": {
+    "A": "luminosa - mecánica",
+    "B": "cinética - luminosa",
+    "C": "luminosa - química",
+    "D": "química - luminosa"
+   },
+   "clave": "C",
+   "tema": "Ecosistemas — fotosíntesis"
+  },
+  {
+   "id": 64,
+   "texto": "Unidad estructural y funcional de los seres vivos.",
+   "opciones": {
+    "A": "Célula.",
+    "B": "Gen.",
+    "C": "Tejido.",
+    "D": "Órgano."
+   },
+   "clave": "A",
+   "tema": "banco"
+  },
+  {
+   "id": 65,
+   "texto": "La participación que hace Lucía en su exposición pertenece a:",
+   "opciones": {
+    "A": "mito",
+    "B": "fábula",
+    "C": "cuento",
+    "D": "leyenda"
+   },
+   "clave": "A",
+   "tema": "Tipos de relatos — mito",
+   "lectura": "L3"
+  },
+  {
+   "id": 66,
+   "texto": "La intervención que tiene Lilia, ¿a qué tipo de relato corresponde?",
+   "opciones": {
+    "A": "Mito",
+    "B": "Fábula",
+    "C": "Leyenda",
+    "D": "Moraleja"
+   },
+   "clave": "C",
+   "tema": "Tipos de relatos — leyenda",
+   "lectura": "L3"
+  },
+  {
+   "id": 67,
+   "texto": "¿Cuál es el trabajo que realizará Guillermo?",
+   "opciones": {
+    "A": "Mito",
+    "B": "Cuento",
+    "C": "Leyenda",
+    "D": "Antología"
+   },
+   "clave": "D",
+   "tema": "Tipos de texto — antología",
+   "lectura": "L3"
+  },
+  {
+   "id": 68,
+   "texto": "Generalmente se utilizan para la elaboración de un cuadro sinóptico.",
+   "opciones": {
+    "A": "Paréntesis y signos de puntuación",
+    "B": "Signos de puntuación y acentuación",
+    "C": "Flechas, llaves y paréntesis",
+    "D": "Imágenes, gráficas y texto"
+   },
+   "clave": "C",
+   "tema": "Organizadores gráficos — cuadro sinóptico"
+  },
+  {
+   "id": 69,
+   "texto": "Elige las palabras que completan el texto.\n\nAl realizar un resumen tenemos que tener en cuenta que este se compone de ___ que son ___ ya que le dan estructura y sentido.",
+   "opciones": {
+    "A": "gráficos - llamativos",
+    "B": "situaciones - indispensables",
+    "C": "términos - recurrentes",
+    "D": "elementos - indispensables"
+   },
+   "clave": "D",
+   "tema": "Resumen — elementos"
+  },
+  {
+   "id": 70,
+   "texto": "Relaciona las palabras con su antónimo.\n\n| Palabra | Antónimo |\n|---|:---|\n| 1. Luz | a) Artificial |\n| 2. Fuerte | b) Entregar |\n| 3. Legal | c) Recibir |\n| 4. Casado | d) Cobrar |\n| 5. Natural | e) Oscuridad |\n| 6. Dar | f) Débil |\n| | g) Ilegal |\n| | h) Soltero |",
+   "opciones": {
+    "A": "1e, 2f, 3g, 4h, 5a, 6c",
+    "B": "1g, 2h, 3a, 4b, 5c, 6d",
+    "C": "1a, 2b, 3c, 4d, 5e, 6f",
+    "D": "1b, 2d, 3e, 4f, 5g, 6h"
+   },
+   "clave": "A",
+   "tema": "Léxico — antónimos"
+  },
+  {
+   "id": 71,
+   "texto": "Selecciona los sinónimos de **Aplazar**.\n\n1. Prorrogar\n2. Aplastar\n3. Demorar\n4. Apilar\n5. Dilatar\n6. Recapacitar",
+   "opciones": {
+    "A": "1, 2, 6",
+    "B": "2, 3, 4",
+    "C": "4, 5, 6",
+    "D": "1, 3, 5"
+   },
+   "clave": "D",
+   "tema": "Léxico — sinónimos"
+  },
+  {
+   "id": 72,
+   "texto": "¿Qué expresan las ideas secundarias de un texto?",
+   "opciones": {
+    "A": "Ideologías del lector",
+    "B": "Información repetitiva",
+    "C": "Detalles derivados del tema principal",
+    "D": "Información gráfica de la investigación"
+   },
+   "clave": "C",
+   "tema": "Ideas — secundarias"
+  },
+  {
+   "id": 73,
+   "texto": "La idea principal en un texto es la que…",
+   "opciones": {
+    "A": "incluye las intenciones primordiales del autor",
+    "B": "contiene información importante y esencial",
+    "C": "reafirma los objetivos vitales del ensayo",
+    "D": "se encuentra en todos los párrafos"
+   },
+   "clave": "B",
+   "tema": "Ideas — principal"
+  },
+  {
+   "id": 74,
+   "texto": "¿Qué opción forma un párrafo ordenado y coherente?\n\n1. cambio una opinión es un parecer que se apoya en las razones\n2. para establecer la diferencia entre hecho y opinión debemos entender\n3. presentadas por la persona que expresa su forma de pensar\n4. que un hecho es una afirmación que se puede comprobar, en",
+   "opciones": {
+    "A": "1, 3, 2, 4",
+    "B": "2, 4, 1, 3",
+    "C": "3, 1, 4, 2",
+    "D": "4, 3, 2, 1"
+   },
+   "clave": "B",
+   "tema": "Coherencia — párrafo ordenado"
+  },
+  {
+   "id": 75,
+   "texto": "Bocina es a sonido como ___ es a imagen.",
+   "opciones": {
+    "A": "pantalla",
+    "B": "programa",
+    "C": "telégrafo",
+    "D": "radio"
+   },
+   "clave": "A",
+   "tema": "Analogías"
+  },
+  {
+   "id": 76,
+   "texto": "Sinfonía es a compositor como:",
+   "opciones": {
+    "A": "aria a soprano",
+    "B": "partitura a intérprete",
+    "C": "novela a narrador",
+    "D": "poema a poeta"
+   },
+   "clave": "D",
+   "tema": "Analogías — autor-obra"
+  },
+  {
+   "id": 77,
+   "texto": "En la siguiente lectura identifica la idea principal.\n\nLuis y Ángel han formado un grupo musical con Laura y Rocío. Luis toca la guitarra, Ángel el órgano eléctrico y las niñas cantan. Pronto van a grabar su primer disco que se llamará \"El otoño es amarillo\".",
+   "opciones": {
+    "A": "Unos niños han formado un grupo musical",
+    "B": "Luis toca la guitarra",
+    "C": "Las niñas cantan",
+    "D": "El otoño es amarillo"
+   },
+   "clave": "A",
+   "tema": "Idea principal en lectura corta"
+  },
+  {
+   "id": 78,
+   "texto": "De los siguientes enunciados, ¿cuál es un hecho?",
+   "opciones": {
+    "A": "España juega de pena",
+    "B": "He corrido muy lento",
+    "C": "Esta mesa es grande",
+    "D": "España ganó el mundial de fútbol en el 2010"
+   },
+   "clave": "D",
+   "tema": "Hecho vs opinión"
+  },
+  {
+   "id": 79,
+   "texto": "Gato es a mamífero como cucaracha es a:",
+   "opciones": {
+    "A": "carnívoro",
+    "B": "sapo",
+    "C": "insecto",
+    "D": "león"
+   },
+   "clave": "C",
+   "tema": "Analogías — taxonomía"
+  },
+  {
+   "id": 80,
+   "texto": "Lee el texto y responde la pregunta.\n\nInternet Addiction Disorder\nDesorden clínico de la misma categoría que el alcoholismo.\nLa adicción a Internet pasará de ser un mal hábito a figurar entre los \"desórdenes clínicos\" como el alcoholismo o la ludopatía, según un manual de diagnóstico elaborado por varios psicólogos chinos del Hospital General de Pekín.\nLos síntomas principales, según publicó el diario oficial China Daily, son navegar en Internet por más de seis horas al día y la tensión y el enfado generados en el usuario cuando no puede conectarse a la red.\nLos internautas dedican su tiempo a cinco actividades: juegos on-line, visitar páginas pornográficas, redes sociales, compras por Internet y navegación en general.\nEl rotativo informó que, en caso de ser aprobado por el Ministerio de Salud, el manual se convertirá en el primero del mundo en su género.\nUna investigación realizada el año pasado por la compañía InterActiveCorp, reveló que el 42% de los internautas chinos se confesó \"adictos\" a la red, al igual que el 18% de los estadounidenses.\nEl tratamiento para esta adicción es: prohibir la conexión a Internet a los pacientes, antes de proceder a desarrollar la ayuda psicológica, y complementarla con actividades en grupo para ayudarlos a socializar en la vida real.\nLa falta de calor familiar y la ausencia de compañía y juegos reales son las principales razones para convertirse en un adicto a Internet.\nChina es el país con mayor número de internautas del mundo: 221 millones.\n\nEl autor del texto se propone",
+   "opciones": {
+    "A": "alertar a los internautas.",
+    "B": "prevenir la enfermedad.",
+    "C": "imponer una idea.",
+    "D": "motivar a los internautas adictos."
+   },
+   "clave": "A",
+   "tema": "banco"
+  }
+ ]
+}

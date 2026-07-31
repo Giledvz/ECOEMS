@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "Un cuadrado mágico suma lo mismo en cada fila, columna y diagonal. La fila de abajo te da la suma mágica: $8+1+6=15$. En la fila de en medio: $3 + x + 7 = 15$, así que $x = 15 - 10 = 5$. Comprueba con una diagonal: $4+5+6=15$. Es el clásico cuadrado con los números del 1 al 9, y su casilla central siempre vale 5."
+ },
+ {
+  "id": 2,
+  "explanation": "Aquí van dos sucesiones trenzadas: en los lugares impares está $3, 5, 7, \\ldots$ (crece de 2 en 2) y en los pares está $9, 11, 13$. El séptimo lugar es impar, le toca a la primera cadena: después del 7 sigue el 9. También lo puedes ver como $+6, -4$ alternados: $13 - 4 = 9$. Si contestaste 15, le sumaste 2 al 13, pero el 13 pertenece a la otra cadena."
+ },
+ {
+  "id": 3,
+  "explanation": "Revisa cuánto baja cada término: $3 - \\frac{3}{2} = \\frac{3}{2}$ y $\\frac{3}{2} - \\frac{3}{2} = 0$. Es una sucesión aritmética que resta $\\frac{3}{2}$ en cada paso, así que el siguiente término es $0 - \\frac{3}{2} = -\\frac{3}{2}$. Nada impide que la sucesión cruce a los negativos; cualquier opción positiva rompería el patrón de resta constante."
+ },
+ {
+  "id": 4,
+  "explanation": "Sustituye uno por uno: $2(-2)^2+1 = 2(4)+1 = 9$, luego $2(-1)^2+1 = 3$, $2(0)^2+1 = 1$, y con $x=1$ y $x=2$ se repiten $3$ y $9$. Queda $9, 3, 1, 3, 9$. La clave está en que elevar al cuadrado borra el signo: $(-2)^2 = +4$, así que no puede haber resultados negativos (ahí caen A y C); y en $x=0$ el valor es $2(0)+1 = 1$, no $0$ (ahí cae D)."
+ },
+ {
+  "id": 5,
+  "explanation": "Sigue cada pieza por separado, porque las tres saltan de esquina en esquina: el cuadrado negro avanza en el sentido de las manecillas (arriba-izq → arriba-der → abajo-der), el círculo va en sentido contrario (abajo-izq → abajo-der → arriba-der) y la figura en forma de te también va contra las manecillas, pero además gira 90° sobre sí misma en cada paso: su patita apunta abajo, luego a la izquierda, luego arriba. En el cuarto cuadro toca: cuadrado abajo-izquierda, círculo arriba-izquierda y la te arriba-derecha con la patita apuntando a la derecha. La trampa es D: acomoda bien las piezas, pero se le olvidó girar la te."
+ },
+ {
+  "id": 6,
+  "explanation": "Fíjate en lo que hay dentro del círculo: primero una raya (1 segmento), luego una cruz (2 segmentos), luego un triángulo (3 lados). Cada paso agrega un lado, así que ahora toca la figura de 4 lados: el cuadrado inscrito en el círculo. El pentágono y el círculo son solo el marco que se repite igual en todos."
+ },
+ {
+  "id": 7,
+  "explanation": "Cuenta los cuadros de los ejemplos: 1 nivel → $1$, 2 niveles → $4$, 3 niveles → $9$. Son los cuadrados perfectos: una pirámide de $n$ niveles usa $n^2$ cuadros, porque sus renglones suman $1+3+5+\\cdots$, los números impares. Con 12 niveles: $12^2 = 144$. Si contestaste 121, calculaste la pirámide de 11 niveles."
+ },
+ {
+  "id": 8,
+  "explanation": "El triangulito de la base señala la punta de arranque (el cero) y las 10 puntas de la estrella se numeran desde ahí en sentido contrario a las manecillas. Descifra el código con el primer símbolo: su círculo hueco está en la punta 3 y su punto relleno en la punta 8, y vale 38; o sea, hueco = decenas y relleno = unidades. En el segundo símbolo el hueco cae en la punta 9 y el relleno en la punta 4: representa el 94. Si te dio 49, intercambiaste los papeles de los dos círculos."
+ },
+ {
+  "id": 9,
+  "explanation": "Cuenta por tamaños, llamando $G$ al punto donde se cruzan las tres líneas: los 6 triangulitos en que queda partida la figura; los 3 medianos que tienen un lado completo del triángulo y vértice en $G$ (cada uno junta dos piezas); las 6 mitades del triángulo grande (cada una de las 3 líneas lo parte en dos); y 1 más, el triángulo completo. Total: $6+3+6+1 = 16$. Si contaste 13, casi seguro te saltaste los 3 medianos con vértice en el centro."
+ },
+ {
+  "id": 10,
+  "explanation": "Rueda el dado giro por giro apoyándote en que las caras opuestas suman 7. Al inicio: 6 arriba, 1 abajo, 3 y 5 en los costados visibles (sus opuestas 4 y 2 quedan escondidas). La cara de arriba va cambiando así: con los dos giros hacia la derecha pasa de $6$ a $2$ y luego a $1$; con los dos giros hacia la izquierda sube a $4$ y luego a $6$; y con el último giro a la derecha termina en $5$. En la casilla final el dado muestra 5 puntos arriba."
+ },
+ {
+  "id": 11,
+  "explanation": "Cuenta y compara: la figura original tiene cinco cubos (la fila de tres, la torre y el que sale al frente), igual que cada opción. En A, B y D puedes encimar mentalmente la opción sobre la figura original de modo que cuatro de los cinco cubos coincidan: basta reubicar uno solo. En cambio, para la torre de tres al centro de C solo logras que coincidan tres cubos: completarla exige apilar dos cubos ahí, es decir, dos movimientos, y el problema solo permite uno.\n\nREVISAR: Con la figura tal como quedó dibujada en q11_original.svg (torre de dos en el CENTRO de la fila —incluye un quinto cubo oculto en (2,2,1)— y cubo frontal frente al centro), C sí se arma con un solo movimiento: cubo frontal → cima de la torre central; la imposible sería B, cuyas torres en ambos extremos exigen mover dos cubos. La clave C cuadra si en la figura del examen la torre de dos está en un EXTREMO de la fila; sugiero cotejar el original y, en su caso, mover el cubo superior de (2,2,2) a (1,2,2)."
+ },
+ {
+  "id": 12,
+  "explanation": "Mira el triángulo sombreado que forma el traslape: su base es un lado completo del cuadrado, de longitud $\\ell$, y su altura llega justo al centro, o sea $\\frac{\\ell}{2}$. Su área es $\\frac{1}{2} \\cdot \\ell \\cdot \\frac{\\ell}{2} = \\frac{\\ell^2}{4}$, exactamente $\\frac{1}{4}$ del cuadrado, cuya área es $\\ell^2$. De hecho, siempre que el vértice de un cuadrado igual cae en el centro del otro, el traslape cubre un cuarto, sin importar cuánto esté girado."
+ },
+ {
+  "id": 13,
+  "explanation": "Busca la regla dentro de cada renglón: $20 = 8 + 12$ y $40 = 14 + 26$; el primer número es la suma de los otros dos. En el tercer renglón: $60 = x + 38$, así que $x = 60 - 38 = 22$. Si contestaste otra cosa, seguramente buscaste el patrón en las columnas: en esta tabla la regla vive en los renglones."
+ },
+ {
+  "id": 14,
+  "explanation": "Traduce el enunciado a una sola cadena: $a > b$ y $a < c$ se juntan en $b < a < c$. Con el orden completo a la vista, lo seguro es que $c$ es el mayor y $b$ el menor; en particular, $c > b$. La D es la trampa clásica: el mayor de los tres no es $a$ sino $c$, precisamente porque $a < c$."
+ },
+ {
+  "id": 15,
+  "explanation": "El cuadrado mide $2$ de lado (dos radios), así que su área es $4$. Dentro del cuadrado, cada esquina aporta exactamente un cuarto de círculo, y los cuatro cuartos completan un círculo entero de área $\\pi(1)^2 = \\pi$. La región central sombreada es lo que sobra: $4 - \\pi$. La C ($1 - 4\\pi$) es negativa y un área no puede serlo; la A ($4\\pi - 4$) hizo la resta al revés."
+ },
+ {
+  "id": 16,
+  "explanation": "La figura se descompone en 8 cuadritos iguales cuyo lado es el lado corto $a$: $8a^2 = 200$, de donde $a^2 = 25$ y $a = 5$; el lado largo mide $2a = 10$. Ahora recorre el contorno: tiene 8 lados cortos y 4 lados largos, así que $P = 8(5) + 4(10) = 40 + 40 = 80$."
+ },
+ {
+  "id": 17,
+  "explanation": "Resuelve primero los paréntesis: $-2+1 = -1$ y $-1-2 = -3$. Entonces $m = -3(-1) - 2(-3) = 3 + 6 = 9$: en ambos productos aplica que menos por menos da más. Si te dio $-3$, calculaste $3 - 6$: el error está en no ver que $-2(-3) = +6$."
+ },
+ {
+  "id": 18,
+  "explanation": "Factoriza: $12 = 2^2 \\cdot 3$ y $15 = 3 \\cdot 5$. El mcm toma cada primo con su mayor exponente: $2^2 \\cdot 3 \\cdot 5 = 60$. Comprueba: $60 \\div 12 = 5$ y $60 \\div 15 = 4$, ambas exactas. Si contestaste 180, multiplicaste $12 \\times 15$: eso da un múltiplo común, pero no el mínimo, porque falta dividir entre el MCD, que es 3."
+ },
+ {
+  "id": 19,
+  "explanation": "Primero cuenta los errores: $128 - 100 = 28$ incorrectas. El porcentaje se calcula sobre el total de preguntas: $28 \\div 128 = 0.21875$, es decir, 21.875%. La B (78.125%) es el porcentaje de aciertos: responde la pregunta contraria a la que te hicieron."
+ },
+ {
+  "id": 20,
+  "explanation": "Los depósitos suman y los retiros restan: $12{,}000 + 2{,}600 - 6{,}100 + 4{,}000 - 6{,}200 - 800$. Ve paso a paso: $14{,}600 \\to 8{,}500 \\to 12{,}500 \\to 6{,}300 \\to 5{,}500$. La caja cierra la semana con $\\$5{,}500$. Un atajo: los depósitos suman $6{,}600$ y los retiros $13{,}100$, un efecto neto de $-6{,}500$ sobre los $12{,}000$ iniciales. Ojo con la D: $\\$13{,}100$ es el total de retiros, no el saldo."
+ },
+ {
+  "id": 21,
+  "explanation": "Si el promedio de tres números es $\\frac{1}{3}$, su suma es $3 \\cdot \\frac{1}{3} = 1$. Como $\\frac{1}{4} + \\frac{1}{2} = \\frac{3}{4}$, queda $a = 1 - \\frac{3}{4} = \\frac{1}{4}$. Comprueba: $\\frac{1}{4} + \\frac{1}{4} + \\frac{1}{2} = 1$ y $1 \\div 3 = \\frac{1}{3}$."
+ },
+ {
+  "id": 22,
+  "explanation": "Piensa en ritmos de trabajo por hora: el adulto lava $\\frac{1}{3}$ del elefante y el niño $\\frac{1}{6}$. Juntos avanzan $\\frac{1}{3} + \\frac{1}{6} = \\frac{2}{6} + \\frac{1}{6} = \\frac{1}{2}$ del elefante por hora, así que terminan en $2$ horas. Fíjate que la respuesta debe ser menor que 3 horas: con ayuda, el adulto no puede tardar más que trabajando solo."
+ },
+ {
+  "id": 23,
+  "explanation": "Un producto vale cero cuando alguno de sus factores es cero. Aquí hay dos posibilidades: $x + 1 = 0$ da $x = -1$, y $x - 1 = 0$ da $x = 1$. Ambos valores cumplen la ecuación (que es $x^2 - 1 = 0$, o sea $x^2 = 1$), así que la solución completa es $x = \\pm 1$. B y C solo dan la mitad de las soluciones."
+ },
+ {
+  "id": 24,
+  "explanation": "Distribuye término por término: $a(2a - 1) = 2a^2 - a$ y $b(2a - 1) = 2ab - b$. Al juntar todo: $2a^2 + 2ab - a - b$. La C ($2a^2 + 2ab - 1$) es el error típico de dejar el $-1$ como término suelto en lugar de multiplicarlo tanto por $a$ como por $b$."
+ },
+ {
+  "id": 25,
+  "explanation": "Al lanzar dos dados hay $6 \\times 6 = 36$ resultados igual de probables. Los que suman siete son $(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)$: seis casos favorables. La probabilidad es $\\frac{6}{36} = \\frac{1}{6}$. De hecho, 7 es la suma más probable con dos dados: ninguna otra junta seis combinaciones."
+ },
+ {
+  "id": 26,
+  "explanation": "$\\mathrm{sen}\\,\\alpha = \\frac{3}{5}$ significa que el cateto opuesto mide 3 y la hipotenusa 5. El adyacente sale con el teorema de Pitágoras: $\\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4$. Es el triángulo 3-4-5, el rectángulo más famoso que hay."
+ },
+ {
+  "id": 27,
+  "explanation": "El costo es proporcional al número de páginas: $y = 1 \\cdot x$. Eso obliga dos cosas: la recta pasa por el origen, porque imprimir 0 páginas cuesta $\\$0$, y sube $\\$1$ por cada página, o sea pendiente positiva constante. Esa es la recta creciente que pasa por el origen. La D, que no pasa por el origen, correspondería a una tarifa con cargo fijo inicial, cosa que el enunciado no menciona."
+ },
+ {
+  "id": 28,
+  "explanation": "Ubica el arco que abre el ángulo: desde $B$, los lados van hacia $A$ (punto más alto del círculo) y hacia $C$ (extremo derecho). Entre $A$ y $C$ hay exactamente un cuarto de circunferencia, así que el ángulo central que le corresponde mide 90°. El teorema del ángulo inscrito dice que este mide la mitad del central que abre el mismo arco: $90 \\div 2 = 45$°. Si contestaste 90°, tomaste el ángulo central completo en vez de la mitad."
+ },
+ {
+  "id": 29,
+  "explanation": "El peso es justamente eso: la fuerza con que la gravedad atrae a un cuerpo ($P = mg$, y se mide en newtons). No lo confundas con la masa (A): esa es la cantidad de materia, se mide en kilogramos y no es una fuerza; tu masa sería la misma en la Luna, pero tu peso no."
+ },
+ {
+  "id": 30,
+  "explanation": "Condensación: el gas cede calor y pasa a estado líquido. Es lo que ves cuando se empaña un espejo o cuando un vaso con agua fría se cubre de gotitas: el vapor de agua del aire se vuelve líquido. La evaporación (C) es exactamente el cambio contrario, de líquido a gas."
+ },
+ {
+  "id": 31,
+  "explanation": "Aplica la fórmula de velocidad a cada renglón: $10 \\div 1 = 10$, $20 \\div 2 = 10$ y $200 \\div 20 = 10$ m/s. La velocidad da lo mismo en los tres casos: es constante y mayor que cero. Y como la velocidad no cambia, el móvil no está acelerando; además, con la fórmula del enunciado, $d/t^2$ da $10, 5, 0.5$: ni constante ni creciente, así que C se descarta. C tienta si solo pruebas el primer renglón."
+ },
+ {
+  "id": 32,
+  "explanation": "La aceleración es el cambio de velocidad dividido entre el tiempo en que ocurre: $a = \\frac{v_f - v_i}{t} = \\frac{2 - 0}{2} = 1\\,\\mathrm{m/s^2}$. Si contestaste $2$, te quedaste con el cambio de velocidad (2 m/s) y olvidaste dividirlo entre los 2 segundos."
+ },
+ {
+  "id": 33,
+  "explanation": "En una gráfica de desplazamiento contra tiempo, el MRU avanza lo mismo en cada segundo: se ve como recta de pendiente constante. Esas son **a** y **c** (la c solo arranca desde una posición inicial distinta de cero). El MUA recorre cada vez más distancia por segundo, así que su curva se empina más y más: **b** y **d**. Por eso i: a, c y ii: b, d."
+ },
+ {
+  "id": 34,
+  "explanation": "Esa es la definición de energía potencial: la que está almacenada por la posición o configuración de un cuerpo, lista para transformarse en trabajo, como el agua contenida en lo alto de una presa o un resorte comprimido. La cinética (B) no está almacenada: es la que el cuerpo ya tiene por estar en movimiento."
+ },
+ {
+  "id": 35,
+  "explanation": "Cuando el calor viaja porque el propio fluido se desplaza —masas de aire o de agua calientes que suben y arrastran la energía— se llama convección: así funcionan los vientos y las corrientes marinas. La conducción (A) requiere contacto directo y es típica de los sólidos; la radiación (C) viaja como ondas, como el calor del Sol."
+ },
+ {
+  "id": 36,
+  "explanation": "Ve afirmación por afirmación. La ii es cierta: la presión atmosférica actúa en todas direcciones, lo que de paso vuelve falsa la i. La iii es cierta: al nivel del mar tienes encima una columna de aire más alta que en la cima de una montaña, y eso descarta la iv. La v también es cierta: al succionar reduces la presión dentro del popote, y es la presión atmosférica sobre el líquido del vaso la que lo empuja hacia arriba. Ciertas: ii, iii y v."
+ },
+ {
+  "id": 37,
+  "explanation": "La presión en el fondo depende únicamente de la profundidad del líquido: $P = \\rho g h$. Como los tres recipientes tienen agua exactamente al mismo nivel, la $h$ es la misma y $P_a = P_b = P_c$. Ni la forma del recipiente ni la cantidad de agua importan: a esto se le conoce como paradoja hidrostática; el ancho cambia la fuerza total sobre el fondo, pero no la presión."
+ },
+ {
+  "id": 38,
+  "explanation": "El cobre es un metal, y sus electrones libres transportan muy bien tanto la carga eléctrica como el calor: por eso los cables eléctricos y muchas tuberías y fondos de sartén se hacen de cobre. Plástico, tela y madera son aislantes en ambos sentidos."
+ },
+ {
+  "id": 39,
+  "explanation": "Es el descubrimiento de Oersted: toda corriente eléctrica crea un campo magnético alrededor del conductor que la lleva. La prueba clásica es acercar una brújula: la aguja se desvía, justo lo contrario de lo que afirma D. La B tropieza en otro punto: en un conductor los que se mueven son los electrones, no los protones."
+ },
+ {
+  "id": 40,
+  "explanation": "Es la ley de la reflexión: el ángulo de incidencia y el ángulo de reflexión son iguales, ambos medidos respecto a la normal, la perpendicular al espejo en el punto donde pega el rayo. El rayo sale tan inclinado como llegó, sin excepción en un espejo plano."
+ }
+]

@@ -1,0 +1,457 @@
+{
+ "lote": "ecoems-5__g01",
+ "examen": "ecoems-5.json",
+ "titulo": "ECOEMS 5",
+ "materia": "Habilidad matemática + Ciencias I (Biología) + Español",
+ "preguntas": [
+  {
+   "id": 1,
+   "texto": "¿Cuáles son los números que continúan la sucesión?\n\n-0.9, 0.08, -0.007, 0.0006, -0.00005, ...",
+   "opciones": {
+    "A": "0.00004, -0.000003",
+    "B": "0.000004, -0.000003",
+    "C": "0.0000004, -0.00000003",
+    "D": "0.000004, -0.0000003"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 2,
+   "texto": "Los dos números que completan la sucesión\n\n-5.5, -3, -0.5, 2, ___, ___, 9.5, 12; son",
+   "opciones": {
+    "A": "3.5, 7",
+    "B": "4.5, 7",
+    "C": "4.5, 8",
+    "D": "3.5, 8"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 3,
+   "texto": "Encuentra los términos que faltan en la siguiente sucesión.\n\n5, 12, 16, 8, 27, 4, ___, ___, ...",
+   "opciones": {
+    "A": "49, 0",
+    "B": "38, 49",
+    "C": "38, 0",
+    "D": "49, 38"
+   },
+   "clave": "C"
+  },
+  {
+   "id": 4,
+   "texto": "¿Qué números continúan en la siguiente sucesión?\n\n-41, 13, -28, 32, -15, 51, ___, ___, ...",
+   "opciones": {
+    "A": "-2, 89",
+    "B": "11, 89",
+    "C": "-2, 70",
+    "D": "11, 70"
+   },
+   "clave": "C"
+  },
+  {
+   "id": 5,
+   "texto": "Selecciona el triángulo que sigue en la serie.\n\n[Imagen: Serie de tres triángulos rectángulos que rotan 90° cada vez; se pregunta el cuarto de la serie.]",
+   "opciones": {
+    "A": "Triángulo rectángulo con ángulo recto arriba-izquierda (igual al primero)",
+    "B": "Triángulo rectángulo invertido con base arriba",
+    "C": "Triángulo rectángulo con ángulo recto arriba-derecha",
+    "D": "Triángulo rectángulo con ángulo recto abajo-derecha"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 6,
+   "texto": "¿Cuántos puntos tendrá la figura que ocupa la octava posición de la serie?",
+   "opciones": {
+    "A": "64",
+    "B": "72",
+    "C": "90",
+    "D": "56"
+   },
+   "clave": "A",
+   "figura": "/imagenes_ecoems-5/q6_serie_puntos.svg"
+  },
+  {
+   "id": 7,
+   "texto": "¿Qué figura continúa la serie?",
+   "opciones": {
+    "A": "Cuadrícula 3×3 con una celda gris en la esquina superior derecha",
+    "B": "Cuadrícula 3×3 sin celdas grises",
+    "C": "Cuadrícula 3×3 con una celda gris en la esquina superior izquierda",
+    "D": "Cuadrícula 3×3 con dos celdas grises en la fila inferior"
+   },
+   "clave": "C",
+   "figura": "/imagenes_ecoems-5/q7_serie_cuadriculas.svg",
+   "figuras_opciones": {
+    "A": "/imagenes_ecoems-5/q7_opc_a.svg",
+    "B": "/imagenes_ecoems-5/q7_opc_b.svg",
+    "C": "/imagenes_ecoems-5/q7_opc_c.svg",
+    "D": "/imagenes_ecoems-5/q7_opc_d.svg"
+   }
+  },
+  {
+   "id": 8,
+   "texto": "¿Qué figura continúa la serie?\n\n[Imagen: Serie de ejes cartesianos con un punto negro y otro blanco rotando entre cuadrantes.]",
+   "opciones": {
+    "A": "Cruz con punto negro arriba-izquierda y punto blanco abajo-derecha",
+    "B": "Cruz con punto negro arriba-derecha y punto blanco abajo-izquierda",
+    "C": "Cruz con punto negro abajo-izquierda y punto blanco arriba-derecha",
+    "D": "Cruz con punto negro abajo-derecha y punto blanco abajo-izquierda"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 9,
+   "texto": "Observa la siguiente figura en perspectiva. ¿Cómo se ve si se gira 180°?\n\n[Imagen: Figura tridimensional en forma de L formada por cubos; se pide su vista al girar 180°.]",
+   "opciones": {
+    "A": "Opción A (figura invertida con cubos)",
+    "B": "Opción B (figura girada 180° correcta)",
+    "C": "Opción C (figura similar pero con un cubo de más)",
+    "D": "Opción D (figura con cubos en posición incorrecta)"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 10,
+   "texto": "Selecciona la figura que corresponde al cubo sin armar.\n\n[Imagen: Cubo con un punto en una cara y una X en otra; se busca el desarrollo plano correspondiente.]",
+   "opciones": {
+    "A": "Desarrollo con el punto en la cara superior derecha y la X en la cara central",
+    "B": "Desarrollo con el punto arriba y la X en el centro",
+    "C": "Desarrollo con la X a la izquierda del punto",
+    "D": "Desarrollo con la X a la derecha del punto"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 11,
+   "texto": "El siguiente cuerpo está formado por 18 cubos. Si se gira 180°, ¿qué cuerpo queda?\n\n[Imagen: Cuerpo 3D formado por 18 cubos; se pide su apariencia al girarlo 180°.]",
+   "opciones": {
+    "A": "Cuerpo correctamente girado 180°",
+    "B": "Cuerpo similar pero con un cubo desplazado",
+    "C": "Cuerpo con simetría distinta",
+    "D": "Cuerpo con rotación incorrecta"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 12,
+   "texto": "¿Cuántos cubos se necesitan para completar la siguiente figura, un prisma de 4 × 3 × 3?",
+   "opciones": {
+    "A": "21",
+    "B": "20",
+    "C": "24",
+    "D": "22"
+   },
+   "clave": "D",
+   "figura": "/imagenes_ecoems-5/q12_prisma_cubos.svg"
+  },
+  {
+   "id": 13,
+   "texto": "El número que falta es\n\n|  |  |  |\n| :-: | :-: | :-: |\n| 9 | 13 | 4 |\n| 20 | 28 | 8 |\n| 35 | ? | 16 |",
+   "opciones": {
+    "A": "51",
+    "B": "54",
+    "C": "57",
+    "D": "60"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 14,
+   "texto": "Un jardinero tiene que podar un campo de fútbol. Si lo hace a razón de 2/3 por día, ¿en cuántos días terminará?",
+   "opciones": {
+    "A": "2",
+    "B": "2.5",
+    "C": "3",
+    "D": "1.5"
+   },
+   "clave": "D"
+  },
+  {
+   "id": 15,
+   "texto": "Si se llenan 45 frascos de 200 gramos de mayonesa, ¿cuántos frascos de 150 gramos se pueden llenar con la misma cantidad de mayonesa?",
+   "opciones": {
+    "A": "65",
+    "B": "60",
+    "C": "55",
+    "D": "50"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 16,
+   "texto": "El 40% de una población tiene coche, y 2/5 de ésta lo utiliza diario. ¿Qué porcentaje de la población no lo usa diario?",
+   "opciones": {
+    "A": "24%",
+    "B": "8%",
+    "C": "16%",
+    "D": "32%"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 17,
+   "texto": "Unidad estructural y funcional de los seres vivos.",
+   "opciones": {
+    "A": "Célula.",
+    "B": "Gen.",
+    "C": "Tejido.",
+    "D": "Órgano."
+   },
+   "clave": "A"
+  },
+  {
+   "id": 18,
+   "texto": "Según Darwin, la selección natural es",
+   "opciones": {
+    "A": "el proceso por el cual los individuos que sobreviven son los mejor adaptados.",
+    "B": "la presencia de variaciones entre individuos de una misma especie.",
+    "C": "la diversidad de seres vivos que han aparecido en el transcurso del tiempo.",
+    "D": "la forma de explicar cómo se originó la vida en el planeta."
+   },
+   "clave": "A"
+  },
+  {
+   "id": 19,
+   "texto": "En un ambiente con total carencia de luz, las polillas elegidas por la selección natural para dejar más descendientes serán las",
+   "opciones": {
+    "A": "amarillas.",
+    "B": "blancas.",
+    "C": "negras.",
+    "D": "rosas."
+   },
+   "clave": "C"
+  },
+  {
+   "id": 20,
+   "texto": "En México, uno de los factores más importantes que dañan la biodiversidad es ___ de especies en peligro de extinción.",
+   "opciones": {
+    "A": "la crianza de animales",
+    "B": "la venta clandestina",
+    "C": "la exhibición en zoológicos",
+    "D": "el cultivo masivo"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 21,
+   "texto": "La producción industrial de ___ representa un avance en ciencia y tecnología para la salud humana.",
+   "opciones": {
+    "A": "sacarosa",
+    "B": "colágeno",
+    "C": "insulina",
+    "D": "almidón"
+   },
+   "clave": "C"
+  },
+  {
+   "id": 22,
+   "texto": "La fotosíntesis es un proceso metabólico importante porque",
+   "opciones": {
+    "A": "genera oxígeno y glucosa.",
+    "B": "genera bióxido de carbono y glucosa.",
+    "C": "produce dióxido de carbono y sales minerales.",
+    "D": "produce ATP para otras estructuras celulares."
+   },
+   "clave": "A"
+  },
+  {
+   "id": 23,
+   "texto": "Relaciona las características descritas con los organismos que les correspondan.\n\n| Organismos | Características |\n| --- | --- |\n| I. Autótrofos. | a. Tienen pigmentos que les permiten transformar compuestos sencillos en complejos. |\n| II. Heterótrofos. | b. Desintegran la materia orgánica para obtener energía. |\n|  | c. Sintetizan glucosa en su proceso metabólico. |\n|  | d. Generan oxígeno y lo incorporan al medio. |\n|  | e. Realizan sus funciones a partir de compuestos orgánicos. |",
+   "opciones": {
+    "A": "I: a, c, d – II: b, e",
+    "B": "I: b, c, e – II: a, d",
+    "C": "I: a, d – II: b, c, e",
+    "D": "I: b, e – II: a, c, d"
+   },
+   "clave": "A"
+  },
+  {
+   "id": 24,
+   "texto": "Las leguminosas, la carne y el pescado proporcionan principalmente ___ que ayudan a reparar los tejidos.",
+   "opciones": {
+    "A": "lípidos",
+    "B": "carbohidratos",
+    "C": "proteínas",
+    "D": "vitaminas"
+   },
+   "clave": "C"
+  },
+  {
+   "id": 25,
+   "texto": "Recomendación para evitar enfermedades respiratorias ante condiciones ambientales desfavorables.",
+   "opciones": {
+    "A": "Evitar orear habitaciones.",
+    "B": "Contar con clima artificial.",
+    "C": "Realizar ejercicio diariamente.",
+    "D": "Consumir líquidos y cítricos."
+   },
+   "clave": "D"
+  },
+  {
+   "id": 26,
+   "texto": "Es el proceso biológico por medio del cual se forman gametos.",
+   "opciones": {
+    "A": "ciclosis",
+    "B": "meiosis",
+    "C": "morfogénesis",
+    "D": "mitosis"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 27,
+   "texto": "Tipo de reproducción biológica cuyo propósito es la producción de individuos diferentes al progenitor.",
+   "opciones": {
+    "A": "Asexual.",
+    "B": "Gemación.",
+    "C": "Bipartición.",
+    "D": "Sexual."
+   },
+   "clave": "D"
+  },
+  {
+   "id": 28,
+   "texto": "Una de las características de la manipulación genética es",
+   "opciones": {
+    "A": "la selección de genes específicos de un organismo para incorporarlos en otro y darle a éste características que no tenía.",
+    "B": "el intercambio de genes únicamente en organismos animales para modificar sus características.",
+    "C": "la combinación de organismos de reproducción asexual para mejorar sus características.",
+    "D": "el intercambio de genes únicamente en organismos vegetales para modificar sus características."
+   },
+   "clave": "A"
+  },
+  {
+   "id": 29,
+   "texto": "Funciones de una ficha bibliográfica.",
+   "opciones": {
+    "A": "Localizar y conservar información de un libro.",
+    "B": "Leer y memorizar el contenido de un libro.",
+    "C": "Escribir y resumir el contenido de un libro.",
+    "D": "Resumir y memorizar el contenido de un libro."
+   },
+   "clave": "A"
+  },
+  {
+   "id": 30,
+   "texto": "¿Cuál es el problema planteado en el texto?\n\nLos pueblos de Latinoamérica compartimos diversos aspectos: idioma, religión, formas de organización social. La cercanía entre México y Brasil, sin embargo, se cuestiona constantemente, pues los idiomas parecen separarlos. ¿Entre el español y el portugués existen lazos identificables?\nEn ambos existen palabras que demuestran que entre ellos existe parentesco, de tipo fonético, sintáctico y, por supuesto, semántico, a tal grado que en infinidad de palabras no es necesario recurrir a un diccionario para saber el sentido que debemos otorgar al vocablo.",
+   "opciones": {
+    "A": "Ejemplos de similitudes entre palabras españolas y portuguesas.",
+    "B": "Lo importante que es aprender un idioma.",
+    "C": "La dificultad de las traducciones.",
+    "D": "La cercanía entre dos idiomas."
+   },
+   "clave": "D"
+  },
+  {
+   "id": 31,
+   "texto": "En el siguiente párrafo, ¿qué recurso se ha empleado predominantemente, a fin de desarrollar el tema?\n\nHay quienes son adictos a una persona, o adictos a la sensación que les producen ciertos patrones destructivos en una relación. Tengo una amiga que siempre se queja de que los hombres la utilizan o maltratan, pero sólo elige involucrarse en relaciones conflictivas: triángulos amorosos, hombres celosos, casados, psicóticos, vejestorios. Otra más siente que siempre –literalmente, siempre y en todo momento– tiene que estar enamorada; a esto también se le llama \"síndrome de Madame Bovary\". Y ellos no están exentos de sentir esa pulsión por el amor romántico –y, muchas veces, estoico, sin sentido y sin posibilidad de dar frutos en la vida real–, sólo que lo suyo recibe el nombre de \"síndrome de caballero andante\".\n\nKarla Covarrubias Molina — Las nuevas adicciones",
+   "opciones": {
+    "A": "Paráfrasis.",
+    "B": "Explicación.",
+    "C": "Ejemplificación.",
+    "D": "Reiteración."
+   },
+   "clave": "C"
+  },
+  {
+   "id": 32,
+   "texto": "Elige las oraciones que usan nexos para introducir ideas.\n\nI. El Estridentismo en México inició en 1921; fue un grupo de intelectuales que reunió pintores, músicos, además de escritores destacados.\nII. El Simbolismo y el Parnasianismo surgieron en Francia; influyeron, por ejemplo, en el Modernismo, además de legarnos una gran tradición poética.\nIII. El Modernismo es considerado como el movimiento que inaugura las literaturas de vanguardia.\nIV. Los Contemporáneos se conocían como \"El grupo sin grupo\", y eran intelectuales polifacéticos.\nV. Estudiar los movimientos de vanguardia nos lleva a entender la mentalidad del hombre del siglo XX.",
+   "opciones": {
+    "A": "I y IV",
+    "B": "II y III",
+    "C": "I y II",
+    "D": "II y V"
+   },
+   "clave": "C"
+  },
+  {
+   "id": 33,
+   "texto": "Identifica el enunciado que inicia con una expresión que indica relación de jerarquía.",
+   "opciones": {
+    "A": "En primer lugar, expuso los problemas de salud pública.",
+    "B": "Asimismo, los gobernantes deben cumplir con las leyes.",
+    "C": "Posteriormente, realizó estudios de informática.",
+    "D": "A pesar de su enfermedad, aprobó el examen."
+   },
+   "clave": "A"
+  },
+  {
+   "id": 34,
+   "texto": "Las oraciones que conforman el siguiente texto deben estar separadas por\n\nEn 1810 había muchas fábricas de chocolate porque nuestros abuelos desayunaban con chocolate___ tomaban chocolate a la hora de la siesta___ bebían chocolate en la merienda y cenaban chocolate.",
+   "opciones": {
+    "A": "punto y coma.",
+    "B": "comas.",
+    "C": "punto y aparte.",
+    "D": "punto y seguido."
+   },
+   "clave": "B"
+  },
+  {
+   "id": 35,
+   "texto": "¿Qué signo de puntuación debe escribirse en los espacios del siguiente párrafo?\n\nDaré una conferencia, el próximo martes, en la escuela en la que estudia mi hijo. Hablaré acerca de hábitos saludables: higiene y amor propio ___ la relación entre los valores y la infancia ___ autoestima a partir de la educación en familia y la madurez del buen ciudadano.",
+   "opciones": {
+    "A": "Dos puntos.",
+    "B": "Punto y coma.",
+    "C": "Punto.",
+    "D": "Coma."
+   },
+   "clave": "D"
+  },
+  {
+   "id": 36,
+   "texto": "¿En cuál opción se encuentran los signos de puntuación que faltan al siguiente texto?\n\n–___ Platero amigo___ –le dije yo a la tierra–: si, como pienso, estás ahora en un prado del cielo y llevas sobre tu lomo peludo a los ángeles adolescentes___ ___me habrás, quizá___ olvidado___ Platero___ dime, ___te acuerdas aún de mí___",
+   "opciones": {
+    "A": "¡ ! - ¿ ? : , ¡ !",
+    "B": "¡ ! , ¿ , ? : ¿ ?",
+    "C": "¡ ! . ¡ ! - - ¿ ?",
+    "D": "¡ ! - - , . . ¿ ?"
+   },
+   "clave": "B"
+  },
+  {
+   "id": 37,
+   "texto": "Lee el siguiente párrafo e indica a qué categoría pertenecen los elementos subrayados.\n\nJorge era un hombre, un GRAVE guerrero, hermoso a su manera, digno de la admiración con que le miraba Miguel. Alto y MEMBRUDO, llevaba con MARCIAL desembarazo [...] el arnés entero de batalla [...] El rostro de Jorge respiraba ardor y lealtad: pálido, de GARZOS ojos, una PUNTIAGUDA barba castaña lo hacía más varonil.",
+   "opciones": {
+    "A": "Sustantivos.",
+    "B": "Gerundios.",
+    "C": "Participios.",
+    "D": "Adjetivos."
+   },
+   "clave": "D"
+  },
+  {
+   "id": 38,
+   "texto": "En el siguiente enunciado, identifica cuál es el tiempo y el modo del verbo subrayado.\n\nDespués OBSERVARON a la muchedumbre asustada.",
+   "opciones": {
+    "A": "Presente de indicativo.",
+    "B": "Copretérito de indicativo.",
+    "C": "Pretérito de indicativo.",
+    "D": "Presente de subjuntivo."
+   },
+   "clave": "C"
+  },
+  {
+   "id": 39,
+   "texto": "Identifica el enunciado con verbo en copretérito.",
+   "opciones": {
+    "A": "La formación que hemos recibido es bastante escasa.",
+    "B": "Este muchacho no se conformaba con poco.",
+    "C": "El libro pretende ayudar a las personas sensibles.",
+    "D": "El cocinero ha estado preparando el festín."
+   },
+   "clave": "B"
+  },
+  {
+   "id": 40,
+   "texto": "El propósito de la noticia es",
+   "opciones": {
+    "A": "dar a conocer un acontecimiento actual importante.",
+    "B": "comentar sobre un suceso diario.",
+    "C": "dar a conocer la postura del periódico sobre un hecho.",
+    "D": "mostrar diferentes posturas de un acontecimiento actual."
+   },
+   "clave": "A"
+  }
+ ]
+}

@@ -26,7 +26,10 @@ def revisa_texto(t):
     for tag in re.findall(r'<\s*/?\s*([a-zA-Z][a-zA-Z0-9]*)(?:\s[^<>]*)?\s*/?>', t):
         if tag.lower() not in TAGS_OK:
             prob.append(f'etiqueta HTML <{tag}>')
-    if t.count('$') % 2:
+    # Los \$ son signos de pesos de dinero, no delimitadores de math: el renderizador
+    # los protege antes de partir por $. Hay que descontarlos o una explicación
+    # correcta como "$\$135.00$" se cuenta como LaTeX sin cerrar.
+    if t.replace('\\$', '').count('$') % 2:
         prob.append('signos de pesos impares (LaTeX sin cerrar)')
     if re.match(r'^\s*(la\s+)?respuesta\s+correcta\s+es', t, re.I):
         prob.append('empieza con "la respuesta correcta es"')

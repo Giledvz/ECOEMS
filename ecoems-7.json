@@ -4,7 +4,13 @@
     "group": "Ingreso a nivel medio superior",
     "date": "2026-06-06",
     "total_questions": 128,
-    "studentsDisabled": ["Yuli", "Sofía", "Leah", "Regina", "Conchita"],
+    "studentsDisabled": [
+      "Yuli",
+      "Sofía",
+      "Leah",
+      "Regina",
+      "Conchita"
+    ],
     "students": [
       "Ari",
       "Alexander",
@@ -38,7 +44,8 @@
               "C": "189",
               "D": "194"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Es una sucesión aritmética: de un término al siguiente siempre se suman 5. Con primer término 4, la regla es $a_n = 4 + 5(n-1) = 5n - 1$. Entonces:\n\n$$a_{38} = 5(38) - 1 = 190 - 1 = 189$$\n\nSi te dio 184 (opción B), calculaste $a_{37}$: el clásico quedarse un lugar corto."
           },
           {
             "id": 2,
@@ -52,7 +59,8 @@
               "C": "80",
               "D": "90"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Cada figura es un cuadrado de puntos al que le falta la esquina: $2 \\times 2 - 1 = 3$, $3 \\times 3 - 1 = 8$, $4 \\times 4 - 1 = 15$. En la posición $n$ el cuadrado es de lado $n+1$, así que $a_n = (n+1)^2 - 1$. Para la posición ocho:\n\n$$a_8 = 9^2 - 1 = 81 - 1 = 80$$\n\nSi elegiste 64, usaste un cuadrado de lado 8: el lado siempre va un paso adelante de la posición, y además hay que quitar el punto de la esquina."
           },
           {
             "id": 3,
@@ -65,7 +73,8 @@
               "C": "$\\$960.00$",
               "D": "$\\$1{,}060.00$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Ve por partes. El pantalón costó $\\frac{1}{4}$ de $\\$1{,}600$, o sea $\\$400$; le quedaron $\\$1{,}200$. La camisa fue $\\frac{1}{5}$ **de lo que le quedó**: $\\frac{1}{5}$ de $\\$1{,}200$ son $\\$240$. Al final le sobran $\\$1{,}200 - \\$240 = \\$960$.\n\nLa trampa está en la frase «de lo que le quedó»: el quinto se calcula sobre los \\$1,200, no sobre los \\$1,600 originales."
           },
           {
             "id": 4,
@@ -78,7 +87,8 @@
               "C": "100",
               "D": "128"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Son los cuadrados de los números pares: $2^2 = 4$, $4^2 = 16$, $6^2 = 36$, $8^2 = 64$; el que sigue es $10^2 = 100$. También sale con diferencias: $12, 20, 28$ crecen de 8 en 8, así que la siguiente es 36 y $64 + 36 = 100$.\n\nSi marcaste 81, pensaste en $9^2$: aquí solo se elevan los pares, no todos los enteros."
           },
           {
             "id": 5,
@@ -92,7 +102,8 @@
               "C": "42",
               "D": "24"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Compara cada sector con el que tiene enfrente: $15 \\leftrightarrow 45$ y $16 \\leftrightarrow 48$; el opuesto siempre es el triple. Al sector del signo de interrogación le toca de pareja el 36, así que $36 \\div 3 = 12$.\n\nSi contestaste 18, dividiste 36 entre 2: la regla de los opuestos es el triple, no el doble."
           },
           {
             "id": 6,
@@ -106,7 +117,8 @@
               "C": "14, 60",
               "D": "16, 28"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Aquí corren dos reglas a la vez: los números de los óvalos suben de 3 en 3 ($2, 5, 8, \\ldots$) y cada triángulo vale 4 veces su óvalo ($2 \\to 8$, $5 \\to 20$, $8 \\to 32$). El óvalo que sigue es $8 + 3 = 11$ y su triángulo, $11 \\times 4 = 44$. Por eso el par correcto es 11 y 44."
           },
           {
             "id": 7,
@@ -119,7 +131,8 @@
               "C": "$-\\dfrac{2}{3}$",
               "D": "$-\\dfrac{1}{3}$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Escribe todo en tercios: $2 = \\frac{6}{3}$, y la serie queda $\\frac{6}{3}, \\frac{4}{3}, \\frac{2}{3}, \\frac{0}{3}$. Es aritmética: baja $\\frac{2}{3}$ en cada paso. El término que sigue es\n\n$$0 - \\frac{2}{3} = -\\frac{2}{3}$$"
           },
           {
             "id": 8,
@@ -132,7 +145,8 @@
               "C": "1 h 32 minutos",
               "D": "1 h 30 minutos"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Primero la distancia: $d = v \\cdot t = 100 \\times 3 = 300$ km. Con la nueva velocidad, $t = \\frac{300}{200} = 1.5$ h, y como $0.5$ h son exactamente 30 minutos, llega en 1 h 30 min. Tiene lógica: al duplicar la velocidad, el tiempo se parte justo a la mitad.\n\nLas otras opciones juegan con la conversión: media hora nunca son 32, 35 ni 36 minutos."
           },
           {
             "id": 9,
@@ -145,7 +159,8 @@
               "C": "28",
               "D": "30"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Son dos series intercaladas. Los lugares 1, 3 y 5: $31, 28, 25$, bajan de 3 en 3. Los lugares 2, 4 y 6: $24, 27, \\ldots$, suben de 3 en 3. El hueco ocupa el sexto lugar, así que pertenece a la serie que sube: $27 + 3 = 30$.\n\nSi intentaste seguir un solo patrón de sumas y restas seguidas, no cierra: sepáralo en dos series."
           },
           {
             "id": 10,
@@ -159,7 +174,8 @@
               "C": "8",
               "D": "10"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Cuenta por familias. Cuadrados derechos: los 4 cuadrantes chicos más el grande, 5. Inclinados: las diagonales forman un cuadrado girado 45° que une los puntos medios de los lados (el rombo central), y las diagonales del cuadrado grande lo parten en 4 cuadraditos inclinados más: $1 + 4 = 5$. Total:\n\n$$5 + 5 = 10$$\n\nSi contaste 5, solo viste los derechos: los cuadrados girados también cuentan."
           },
           {
             "id": 11,
@@ -172,7 +188,8 @@
               "C": "10",
               "D": "12"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Llama $x$ al menor; los consecutivos son $x$, $x+1$ y $x+2$:\n\n$$x + (x+1) + (x+2) = 3x + 3 = 27$$\n\nDe ahí $3x = 24$ y $x = 8$: los números son 8, 9 y 10.\n\nSi contestaste 9, diste el de en medio ($27 \\div 3$), no el menor."
           },
           {
             "id": 12,
@@ -186,7 +203,8 @@
               "C": "<img src=\"/imagenes_ecoems-7/q12_c.svg\" style=\"width:100%;max-width:160px;display:block;\">",
               "D": "<img src=\"/imagenes_ecoems-7/q12_d.svg\" style=\"width:100%;max-width:160px;display:block;\">"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En una vista lateral las columnas se aplastan: desde la izquierda solo ves, para cada fila de profundidad, la altura máxima que alcanza. La fila delantera llega a 2 cubos, la de en medio a 3 (ahí está la torre alta) y la del fondo a 2. La silueta es un bloque de 3 de ancho por 2 de alto con un cuadrito centrado encima: la opción A.\n\nLa escalera de la opción D pondría lo más alto en una orilla, pero la torre de 3 queda en medio."
           },
           {
             "id": 13,
@@ -199,7 +217,8 @@
               "C": "2.25 - 6.5",
               "D": "2.5 - 6"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Mira los saltos: $0.25, 0.5, \\ldots$ — cada diferencia crece $0.25$. Siguiendo la cadena: $1.25 + 0.75 = 2$; $2 + 1 = 3$ (coincide); $3 + 1.25 = 4.25$ (coincide); $4.25 + 1.5 = 5.75$; y $5.75 + 1.75 = 7.5$, que cierra exacto con el último dato. Los faltantes son $2$ y $5.75$.\n\nEl 6.25 de la opción A sale de sumarle 2 a 4.25, pero el salto que toca en ese punto es 1.5."
           },
           {
             "id": 14,
@@ -212,7 +231,8 @@
               "C": "1c, 2b, 3a",
               "D": "1d, 2a, 3c"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La **moda** es el valor que más se repite, el de mayor frecuencia (c). La **mediana** es el que queda al centro cuando ordenas los datos (b). La **media aritmética** es la suma de todos los valores entre cuántos son (a). Por eso: 1c, 2b, 3a.\n\nLa definición d), el promedio del dato menor y el mayor, describe el rango medio: está de relleno."
           },
           {
             "id": 15,
@@ -226,7 +246,8 @@
               "C": "24",
               "D": "26"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La frase clave es que el color está contenido en **toda la fila**: cada cara de color que ves marca una línea completa de tabiques a través del muro. Las 2 del frente son filas que van hacia el fondo: $4 + 4 = 8$. Las 2 del costado derecho son filas a lo ancho: $4 + 4 = 8$. Las 2 de arriba son columnas que bajan hasta el piso: $5 + 5 = 10$. Eso suma 26, pero esas líneas se cruzan en 4 tabiques que quedarían contados dos veces:\n\n$$26 - 4 = 22$$\n\nSi te dio 24 o 26, contaste doble algunos cruces."
           },
           {
             "id": 16,
@@ -240,7 +261,8 @@
               "C": "7",
               "D": "10"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El número de abajo cuenta los **ángulos internos** de las piezas en que queda dividida cada figura. Triángulo solo: 3. Rombo con su diagonal: dos triángulos, $3 + 3 = 6$. Triángulo con línea: un triángulo arriba y un trapecio abajo, $3 + 4 = 7$. Trapecio solo: 4. El hexágono con la línea de en medio queda partido en **dos pentágonos**: $5 + 5 = 10$."
           }
         ]
       },
@@ -258,7 +280,8 @@
               "C": "$\\$135.00$",
               "D": "$\\$135.50$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Convierte el porcentaje a decimal y multiplica: $18\\% = 0.18$, así que $750 \\times 0.18 = 135$, o sea $\\$135.00$.\n\nTambién sale mentalmente: el 10% de 750 es 75, el 5% es 37.50 y el 3% es 22.50; sumando, $75 + 37.50 + 22.50 = 135$."
           },
           {
             "id": 18,
@@ -271,7 +294,8 @@
               "C": "el denominador",
               "D": "el numerador"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El **denominador** es el número de abajo y dice en cuántas partes iguales se divide el entero; el **numerador**, el de arriba, dice cuántas de esas partes se toman. En $\\frac{3}{5}$, el entero se partió en 5 y tomas 3.\n\nEl numerador es el distractor natural, pero él cuenta las partes que tomas, no en cuántas se parte el entero."
           },
           {
             "id": 19,
@@ -284,7 +308,8 @@
               "C": "2, 1, 4, 3",
               "D": "1, 2, 4, 3"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El despeje va así: primero multiplicas cruzado, $(x)(x) = (4)(81)$ — paso 2. Eso da $x^2 = 324$ — paso 4. Para despejar $x$ sacas raíz cuadrada, $x = \\sqrt{324}$ — paso 1. Y calculas el resultado, $x = 18$ — paso 3. El orden correcto es 2, 4, 1, 3.\n\nNo puedes empezar en $x^2 = 324$ (opción B): ese renglón no existe hasta haber multiplicado cruzado."
           },
           {
             "id": 20,
@@ -297,7 +322,8 @@
               "C": "2, 3, 5",
               "D": "2, 1, 3"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Una cuadrática es **incompleta** cuando, ya igualada a cero y simplificada, le falta el término lineal o el independiente. La 2, $x^2 + 169 = 0$, no tiene término en $x$. La 3, $3x^2 - 15x = 0$, no tiene término independiente. La 5 se reduce: $4x^2 + 8x - 16x = 4x^2 - 8x = 0$, tampoco tiene independiente. Por eso: 2, 3, 5.\n\nLa 1 engaña: al pasar el $-16$ queda $x^2 + 10x + 25 = 0$, con sus tres términos, igual que la 4: esas dos son completas."
           },
           {
             "id": 21,
@@ -310,7 +336,8 @@
               "C": "96",
               "D": "100"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Buscas cuándo vuelven a coincidir: el **mínimo común múltiplo**. Como $32 = 2^5$ y $48 = 2^4 \\cdot 3$, el mcm es $2^5 \\cdot 3 = 96$. Con 96 dientes engranados, la primera rueda completa $96 \\div 32 = 3$ vueltas exactas y la segunda $96 \\div 48 = 2$: ambas regresan a su posición original.\n\nCon 48 no alcanza: la primera rueda llevaría $48 \\div 32 = 1.5$ vueltas y quedaría a media vuelta."
           },
           {
             "id": 22,
@@ -324,7 +351,8 @@
               "C": "40°",
               "D": "30°"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Los ángulos internos de cualquier triángulo suman 180°:\n\n$$(x + 10°) + (x + 13°) + (3x + 7°) = 180°$$\n\nAgrupa: $5x + 30° = 180°$, entonces $5x = 150°$ y $x = 30°$. Comprueba: $40° + 43° + 97° = 180°$."
           },
           {
             "id": 23,
@@ -337,7 +365,8 @@
               "C": "$a^2 + 2ab - \\dfrac{b^2}{2}$",
               "D": "$a^2 - ab + \\dfrac{b^2}{4}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Es un binomio al cuadrado: cuadrado del primero, menos el doble producto, más el cuadrado del segundo:\n\n$$\\left(a - \\frac{b}{2}\\right)^2 = a^2 - 2(a)\\left(\\frac{b}{2}\\right) + \\left(\\frac{b}{2}\\right)^2 = a^2 - ab + \\frac{b^2}{4}$$\n\nEl doble producto se simplifica porque $2 \\cdot \\frac{b}{2} = b$, y por eso el término de en medio es $-ab$.\n\nLa opción A es el error clásico de elevar término por término y saltarse el doble producto."
           },
           {
             "id": 24,
@@ -350,7 +379,8 @@
               "C": "1b, 2a, 3c",
               "D": "1d, 2a, 3b"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Todo se mide desde la edad **actual** de Karla: eso es $x$ (1a). Hace cinco años ella tenía $x - 5$ (2b). Y como en ese momento la mamá tenía el triple, $3(x - 5)$ es la edad de la madre **hace** cinco años (3d). Queda 1a, 2b, 3d.\n\nEl inciso c) habla de la edad de la madre dentro de cinco años, un tiempo que el problema nunca usa."
           },
           {
             "id": 25,
@@ -365,7 +395,8 @@
               "C": "19 u",
               "D": "20 u"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El techo es un triángulo rectángulo del que conoces la hipotenusa, $\\sqrt{404}\\,u$, y el cateto vertical, $2\\,u$; la base es el cateto que falta. Por Pitágoras:\n\n$$b^2 = \\left(\\sqrt{404}\\right)^2 - 2^2 = 404 - 4 = 400 \\quad\\Rightarrow\\quad b = 20\\,u$$\n\nTiene sentido: la base del techo es justo el ancho de la casa."
           },
           {
             "id": 26,
@@ -380,7 +411,8 @@
               "C": "$90\\,u^2$",
               "D": "$100\\,u^2$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El frente se arma con dos piezas: el rectángulo del cuerpo y el triángulo del techo. Rectángulo: $20 \\times 4 = 80\\,u^2$ (el 20 es la base que salió con Pitágoras en la pregunta anterior). Triángulo: $\\frac{20 \\times 2}{2} = 20\\,u^2$. Total:\n\n$$80 + 20 = 100\\,u^2$$\n\nSi contestaste $80\\,u^2$, dejaste fuera el techo; y la puerta y las ventanas no se restan: también son parte del frente."
           },
           {
             "id": 27,
@@ -393,7 +425,8 @@
               "C": "3, 4, 5",
               "D": "4, 5, 6"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las medidas de tendencia central localizan el **centro** de los datos: la **media** (2), la **mediana** (4) y la **moda** (6). Las otras tres de la lista —desviación estándar, rango y varianza— miden qué tan **dispersos** están los datos alrededor de ese centro: son medidas de dispersión, el distractor típico de este tema."
           },
           {
             "id": 28,
@@ -407,7 +440,8 @@
               "D": "$\\dfrac{7}{15}$"
             },
             "answer": "D",
-            "_extra_from_bank": true
+            "_extra_from_bank": true,
+            "explanation": "Respeta la jerarquía de operaciones: primero multiplicaciones y divisiones, al final sumas y restas.\n\n$$\\frac{1}{4} \\times \\frac{2}{5} = \\frac{1}{10}, \\qquad \\frac{3}{4} \\div \\frac{5}{2} = \\frac{3}{4} \\times \\frac{2}{5} = \\frac{3}{10}$$\n\nAhora sí: $\\frac{2}{3} + \\frac{1}{10} - \\frac{3}{10} = \\frac{2}{3} - \\frac{1}{5} = \\frac{10}{15} - \\frac{3}{15} = \\frac{7}{15}$.\n\nLas opciones negativas salen de operar de izquierda a derecha, ignorando la jerarquía."
           }
         ]
       },
@@ -425,7 +459,8 @@
               "C": "elementos internos",
               "D": "cambios de fase"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Los cuatro son procesos donde la materia **pasa de un estado a otro**: fusión (sólido a líquido), solidificación (líquido a sólido), evaporación (líquido a gas) y sublimación (sólido a gas, sin pasar por líquido). Eso es exactamente un cambio de fase o de estado.\n\nLa opción A confunde el camino con el punto de llegada: los estados de agregación son sólido, líquido y gas; lo que te listaron son los procesos para pasar entre ellos."
           },
           {
             "id": 30,
@@ -438,7 +473,8 @@
               "C": "radiación - inducción",
               "D": "inducción - frotamiento"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El calor se transmite de tres formas: **conducción**, por contacto directo (el mango metálico de la sartén se calienta); **convección**, por corrientes dentro de líquidos y gases (el agua al hervir); y **radiación**, por ondas electromagnéticas que no necesitan medio (el calor del Sol).\n\nLa inducción es un fenómeno electromagnético, y el frotamiento genera calor, pero no es una forma de transmitirlo."
           },
           {
             "id": 31,
@@ -451,7 +487,8 @@
               "C": "$30\\,\\dfrac{\\text{m}}{\\text{s}}$",
               "D": "$25\\,\\dfrac{\\text{m}}{\\text{s}}$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El avión parte del reposo, así que $v_0 = 0$ y\n\n$$v = v_0 + at = 0 + (6)(5) = 30\\ \\text{m/s}$$\n\nEn palabras: acelerar a $6\\ \\text{m/s}^2$ es ganar 6 m/s cada segundo; en 5 segundos acumula 30 m/s.\n\nSi te dio 75, calculaste la distancia recorrida ($\\frac{1}{2}at^2 = 75$ m), no la velocidad."
           },
           {
             "id": 32,
@@ -465,7 +502,8 @@
               "C": "1b, 2e, 3a, 4c, 5g, 6d",
               "D": "1f, 2c, 3b, 4d, 5e, 6g"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Recorre el dibujo: el 1 mide de una cresta a la siguiente, la **longitud de onda** (b). El 2 señala un punto donde la onda cruza el eje, un **nodo** (g). El 3 abarca una oscilación completa, un **ciclo** (f). El 4 apunta al punto más bajo, el **valle** (d). El 5 va del eje al punto más alto, la **amplitud** (e). El 6 señala el punto más alto, la **cresta** (c). Queda 1b, 2g, 3f, 4d, 5e, 6c.\n\nEl periodo (a) sobra: es el **tiempo** que tarda un ciclo, y lo marcado en la figura son distancias y puntos."
           },
           {
             "id": 33,
@@ -478,7 +516,8 @@
               "C": "3, 6, 7",
               "D": "4, 5, 6"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Una onda es una **perturbación que se propaga**: la energía viaja sin que el medio se vaya con ella. Eso describe a las ondas sísmicas del temblor de 1985 (1), al sonido de la ambulancia (2) y a las olas del mar (5).\n\nLa persona, el camión y la rotación de la Tierra son cuerpos completos que se trasladan o giran, y la corriente de la pila es un flujo de cargas: ninguno es movimiento ondulatorio."
           },
           {
             "id": 34,
@@ -491,7 +530,8 @@
               "C": "El saco de arena absorbe el golpe del boxeador sin efectuar ninguna fuerza.",
               "D": "El saco de arena devuelve el golpe al boxeador con la misma intensidad pero en sentido contrario."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Es la tercera ley de Newton: a toda acción corresponde una reacción de la **misma magnitud** y en **sentido contrario**. Al golpear el saco, éste responde sobre el puño con una fuerza igual y opuesta; por eso el golpe también se siente en la mano.\n\nLa opción B es la trampa: las dos fuerzas del par acción-reacción siempre son iguales; que el saco se mueva depende de su masa y de cómo cuelga, no de recibir una fuerza mayor."
           },
           {
             "id": 35,
@@ -504,7 +544,8 @@
               "C": "inercia",
               "D": "aceleración"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Es la **inercia**, la primera ley de Newton: todo cuerpo tiende a mantener su estado de reposo o de movimiento. Cuando el auto arranca, tu cuerpo todavía está en reposo y se resiste al cambio; el asiento avanza contigo y esa resistencia la percibes como un empujón hacia atrás. No hay ninguna fuerza que te jale hacia atrás: es tu propio cuerpo queriendo quedarse como estaba."
           },
           {
             "id": 36,
@@ -517,7 +558,8 @@
               "C": "1c, 2e, 3d, 4b",
               "D": "1d, 2e, 3a, 4b"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Ve una por una: la **calorífica** se produce por la combustión de carbón, madera, petróleo o gas (d); la **eléctrica** se obtiene de generadores y acumuladores (e); la **química** la liberan las sustancias al reaccionar entre sí, como en las pilas (a); y la **hidráulica** aprovecha las corrientes y caídas de agua (b). Queda 1d, 2e, 3a, 4b.\n\nLa característica c), el viento que mueve aerogeneradores, describe la energía eólica: no está en la lista."
           },
           {
             "id": 37,
@@ -530,7 +572,8 @@
               "C": "5, 4, 6, 1, 2, 3",
               "D": "4, 5, 6, 3, 2, 1"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "De mayor a menor: **metro** (5), **decímetro** (2), **centímetro** (6), **milímetro** (1), **micrómetro** (3) y **nanómetro** (4); la secuencia es 5, 2, 6, 1, 3, 4.\n\nLos dos últimos son los que confunden: el micrómetro es $10^{-6}$ m (la milésima parte de un milímetro) y el nanómetro $10^{-9}$ m, mil veces más chico todavía."
           },
           {
             "id": 38,
@@ -545,7 +588,8 @@
               "C": "4 - 5",
               "D": "5 - 6"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En una gráfica de velocidad contra tiempo, velocidad constante se ve como un **tramo horizontal**: el tiempo avanza y la velocidad no cambia. De las opciones, el único horizontal es 4–5, donde el auto se mantiene en 8 m/s. En 1–2 y 3–4 la línea sube (acelera) y en 5–6 baja (frena).\n\nLos tramos 2–3 y 6–7 también son horizontales, pero no aparecen entre las opciones."
           },
           {
             "id": 39,
@@ -560,7 +604,8 @@
               "C": "5 - 6",
               "D": "6 - 7"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Acelerar es aumentar la velocidad, y en la gráfica v-t eso se ve como un tramo que **sube**. En 1–2 el auto pasa de 0 a 5 m/s: ahí está acelerando. En 2–3 y 6–7 la línea es horizontal (velocidad constante), y en 5–6 baja: pierde velocidad, o sea que frena.\n\nSi escogiste 5–6, confundiste cambio de velocidad con aumento: ahí el cambio es hacia abajo, una desaceleración."
           },
           {
             "id": 40,
@@ -575,7 +620,8 @@
             },
             "answer": "A",
             "_extra_from_bank": true,
-            "image": "/imagenes_ecoems-7/q40_grafica_v_t.svg"
+            "image": "/imagenes_ecoems-7/q40_grafica_v_t.svg",
+            "explanation": "La aceleración es la **pendiente** del tramo: cuánto cambia la velocidad en cada hora. De 0 a 1 h sube de 0 a 60 km/h: cambio de 60. En 1–2 h y 3–4 h no cambia (pendiente cero), en 2–3 h sube 20 y en 4–5 h sube 40. El tramo más empinado —mayor aceleración— es 0–1 h.\n\nLa opción D tienta porque al final el auto va más rápido que nunca, pero la aceleración mide el **cambio** de velocidad, no su valor."
           }
         ]
       },
@@ -593,7 +639,8 @@
               "C": "semiconductores",
               "D": "iones"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Un ion es un átomo o un grupo de átomos que ganó o perdió electrones, así que se queda con carga eléctrica neta: si pierde electrones queda positivo (catión, como $\\mathrm{Na}^{+}$) y si los gana queda negativo (anión, como $\\mathrm{Cl}^{-}$).\n\nMetales, no metales y semiconductores son clasificaciones por sus propiedades —cómo conducen, cómo reaccionan—, pero como átomos neutros no tienen carga. Lo que define a un ion no es de qué material se trate, sino ese desbalance entre protones y electrones."
           },
           {
             "id": 42,
@@ -606,7 +653,8 @@
               "C": "metal - no metal - no metales",
               "D": "no metal - semimetal - metales"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El enlace iónico aparece cuando un metal se une con un no metal: el metal cede electrones con facilidad y queda como catión, el no metal los acepta y queda como anión, y la atracción entre cargas opuestas los mantiene juntos, como en el $\\mathrm{NaCl}$.\n\nEl covalente ocurre entre dos no metales: ninguno cede, así que comparten pares de electrones para completar sus ocho electrones de valencia, como en el $\\mathrm{H}_2\\mathrm{O}$ o el $\\mathrm{Cl}_2$. Por eso el orden es metal - no metal - no metales.\n\nLa A tiene los dos primeros huecos bien (nada más invertidos), pero remata con \"metales\", y entre metales el enlace no es covalente sino metálico."
           },
           {
             "id": 43,
@@ -619,7 +667,8 @@
               "C": "1c, 2a, 3b",
               "D": "1d, 2a, 3b"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Ve caso por caso. El petróleo (c) es una **mezcla**: junta muchos hidrocarburos distintos que conservan sus propiedades y que se separan por destilación. El $\\mathrm{NiO}$ (b) es un **compuesto**: dos elementos diferentes unidos químicamente en proporción fija. El $\\mathrm{Bi}$ (d) es un **elemento**: una sola clase de átomo. Queda 1c, 2b, 3d.\n\nEl $\\mathrm{Mg}^{+2}$ (a) sobra a propósito: no es ninguna de las tres cosas, es un ion. Si escogiste C caíste en ese distractor y además clasificaste al $\\mathrm{NiO}$, que tiene dos elementos, como si fuera un elemento."
           },
           {
             "id": 44,
@@ -632,7 +681,8 @@
               "C": "1, 2, 3",
               "D": "2, 4, 7"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Los metálicos de la lista son el cromo (2), el zinc (4) y el cobalto (7): los tres son metales de transición, sólidos, brillantes y buenos conductores de calor y electricidad.\n\nEl cloro (1), el hidrógeno (3) y el oxígeno (5) son gases a temperatura ambiente, y el azufre (6) es un sólido amarillo quebradizo que no conduce: todos son no metales. Un truco para no dudar: en la tabla periódica los metales ocupan casi todo el lado izquierdo y el centro, y los no metales se apiñan arriba a la derecha."
           },
           {
             "id": 45,
@@ -645,7 +695,8 @@
               "C": "Respiración anaerobia",
               "D": "Cambio químico"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "En la respiración celular la glucosa reacciona con el oxígeno y se producen sustancias nuevas más energía:\n\n$$\\mathrm{C}_6\\mathrm{H}_{12}\\mathrm{O}_6 + 6\\,\\mathrm{O}_2 \\rightarrow 6\\,\\mathrm{CO}_2 + 6\\,\\mathrm{H}_2\\mathrm{O} + \\text{energía}$$\n\nComo desaparecen unas sustancias y aparecen otras con propiedades distintas, se trata de un cambio químico. En un cambio físico (A) la sustancia seguiría siendo la misma y solo cambiaría de forma o de estado.\n\nLa respiración anaerobia (C) sí existe, pero es un caso particular de organismos que trabajan sin oxígeno, no lo que ocurre en la respiración de los seres vivos en general."
           },
           {
             "id": 46,
@@ -658,7 +709,8 @@
               "C": "hidrácidos - vinagre - alcohol",
               "D": "oxiácidos - jalea - ácidos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los ácidos son los del sabor agrio: liberan $\\mathrm{H}^{+}$ al disolverse en agua, y la leche es un buen ejemplo porque contiene ácido láctico (por eso al descomponerse se pone todavía más agria). Los hidróxidos o bases, como el $\\mathrm{NaOH}$ y el $\\mathrm{KOH}$, son los que reaccionan con grasas y aceites para producir jabón; a esa reacción se le llama saponificación.\n\nLa C se antoja porque el vinagre sí es agrio, pero ahí falla lo demás: el ácido acético no es un hidrácido (los hidrácidos son del tipo $\\mathrm{HCl}$, sin oxígeno) y con alcohol no se fabrican jabones."
           },
           {
             "id": 47,
@@ -671,7 +723,8 @@
               "C": "licuefacción",
               "D": "ebullición"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Al hervir, parte del agua pasa a estado gaseoso y ese vapor sube hasta la tapa, que está más fría. Ahí las moléculas pierden energía, se juntan y regresan al estado líquido: eso es condensación, y por eso las gotas están del lado de adentro.\n\nLa ebullición (D) es el cambio contrario, de líquido a gas, y ocurre en el fondo de la olla, no en la tapa. La licuefacción (C) también lleva de gas a líquido, pero ese término se reserva para gases que se obligan a condensarse a fuerza de presión o de frío extremo, no para lo que pasa en tu cocina."
           },
           {
             "id": 48,
@@ -684,7 +737,8 @@
               "C": "4, 6, 7",
               "D": "3, 5, 6"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La familia VIII-A es la de los gases nobles, la última columna de la tabla periódica: neón (3), kriptón (5) y radón (6). Tienen completo su último nivel de energía, con ocho electrones de valencia, y por eso prácticamente no reaccionan con nadie.\n\nCuidado con el Fe: es del grupo VIII-B, de los metales de transición, y esa letra cambia todo. El Al es III-A, el K es I-A y el Ra es II-A."
           },
           {
             "id": 49,
@@ -698,7 +752,8 @@
               "C": "es hidratante",
               "D": "reduce el dolor"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La palabra lo dice: \"an-\" significa *sin* y \"algia\" significa *dolor*. Un analgésico es entonces un medicamento que quita o reduce el dolor, y esa es una de las razones por las que la aspirina se usa en todo el mundo.\n\nEliminar una infección (B) es lo que hace un antibiótico, que es otra cosa: ataca a las bacterias, no a la sensación de dolor."
           },
           {
             "id": 50,
@@ -712,7 +767,8 @@
               "C": "permanezca igual",
               "D": "fluctúe"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Aquí la raíz es \"piro\", que significa *fuego*, junto con \"anti\", que significa *contra*: un antipirético combate la fiebre, o sea que hace que la temperatura corporal disminuya hasta acercarse a lo normal.\n\nLa aspirina es analgésica y antipirética a la vez, por eso se toma tanto para el dolor como para la calentura. Que la temperatura fluctúe (D) no es el efecto de ningún medicamento: sería justo lo contrario de controlarla."
           },
           {
             "id": 51,
@@ -726,7 +782,8 @@
               "C": "ambas tardan el mismo tiempo",
               "D": "en agua fría actúan igual"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La pastilla efervescente se disuelve en el agua *antes* de que te la tomes, así que el fármaco llega al estómago ya repartido en el líquido y pasa a la sangre casi de inmediato. La tableta que tragas entera todavía tiene que desintegrarse y disolverse adentro, y ese paso extra cuesta tiempo.\n\nLa clave está en la superficie de contacto: mientras más dividida esté la sustancia dentro del disolvente, más rápido se disuelve y más rápido actúa. Por eso C queda descartada: no tardan lo mismo."
           },
           {
             "id": 52,
@@ -740,7 +797,8 @@
               "D": "Forma definida y alta fuerza de cohesión."
             },
             "answer": "D",
-            "_extra_from_bank": true
+            "_extra_from_bank": true,
+            "explanation": "En un sólido las partículas están muy juntas y se atraen con fuerza, es decir, hay **alta fuerza de cohesión**; por eso solo vibran en su lugar y el material conserva su **forma definida** sin necesitar un recipiente.\n\nEsa misma cercanía explica que casi no puedas comprimirlo: no queda espacio libre entre partículas. Cualquier opción que diga \"alta compresibilidad\" o \"baja cohesión\" está describiendo un gas, no un sólido."
           }
         ]
       },
@@ -758,7 +816,8 @@
               "C": "Irritabilidad",
               "D": "Nutrición"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La nutrición es el conjunto de procesos con los que un ser vivo toma de su medio la materia y la energía que necesita: las plantas la captan del Sol mediante la fotosíntesis y los animales la obtienen al comer y digerir a otros organismos.\n\nCrecimiento, reproducción e irritabilidad también son funciones vitales, pero todas *gastan* esa energía en lugar de conseguirla: dependen de la nutrición, no la sustituyen."
           },
           {
             "id": 54,
@@ -771,7 +830,8 @@
               "C": "Evidencia",
               "D": "Evolución"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La evolución es el cambio de los seres vivos a lo largo del tiempo: las características que resultan ventajosas en cierto ambiente se heredan y se van acumulando, de modo que los organismos se transforman generación tras generación.\n\nLa adaptación (B) es la que más se antoja, pero se refiere al resultado concreto —el rasgo que ya le sirve al organismo para sobrevivir—, mientras que la evolución es el proceso completo de cambio que produce esas adaptaciones."
           },
           {
             "id": 55,
@@ -784,7 +844,8 @@
               "C": "líquidos seminales - uretra",
               "D": "espermatozoides - vesículas seminales"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los conductos deferentes son los tubos que transportan a los espermatozoides desde el epidídimo, donde terminan de madurar, hasta la uretra. Si se cortan, engrapan o cauterizan, los espermatozoides ya no pueden incorporarse al semen que se eyacula, y sin ellos no hay fecundación.\n\nFíjate en que los testículos (A) no se tocan: siguen produciendo espermatozoides y hormonas con normalidad, solo que ya no hay por dónde salgan."
           },
           {
             "id": 56,
@@ -797,7 +858,8 @@
               "C": "1, 4, 6",
               "D": "2, 3, 6"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El humo del tabaco golpea sobre todo dos sistemas. En el respiratorio destruye poco a poco las paredes de los alveolos y provoca enfisema (1), que junto con la bronquitis crónica constituye la enfermedad pulmonar obstructiva crónica o EPOC (6). En el circulatorio favorece que se acumule placa en las paredes de las arterias y que estas se endurezcan: arteriosclerosis (3).\n\nLa gastroenteritis (2) es una infección digestiva y la diabetes (4) es un trastorno metabólico; ninguna de las dos se explica por el tabaco, y ahí caen las otras opciones."
           },
           {
             "id": 57,
@@ -810,7 +872,8 @@
               "C": "meiosis",
               "D": "mitosis"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En la meiosis el material genético se duplica una sola vez, pero después hay **dos** divisiones seguidas: por eso de una célula madre salen cuatro células hijas, cada una con la mitad de los cromosomas.\n\nEso es justo lo que se necesita para formar gametos: al unirse el óvulo y el espermatozoide se recupera el número original de cromosomas de la especie. Si escogiste mitosis (D), esa produce solo dos células hijas y con la misma cantidad de cromosomas que la madre."
           },
           {
             "id": 58,
@@ -823,7 +886,8 @@
               "C": "asexual",
               "D": "gemación"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Bacterias, protozoarios y algas unicelulares se reproducen de manera asexual: no hay gametos ni unión de dos células, sino que un solo organismo se divide y origina descendientes con la misma información genética que él.\n\nLa gemación (D) se antoja, pero es apenas *uno* de los tipos de reproducción asexual —el de la levadura o la hidra—; las bacterias usan sobre todo la fisión binaria. Como el reactivo abarca a varios grupos distintos, la respuesta tiene que ser la categoría general: asexual."
           },
           {
             "id": 59,
@@ -836,7 +900,8 @@
               "C": "1b, 2a, 3e, 4c",
               "D": "1c, 2b, 3d, 4a"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Ve una por una: la reproducción es la potencialidad de tener descendientes (b); el género es lo que en los humanos se diferencia en dos sexos, con sus roles y expectativas (a); el erotismo es la capacidad de experimentar placer corporal (e); y los vínculos afectivos son la capacidad de relacionarte con otras personas de forma cariñosa (c). Queda 1b, 2a, 3e, 4c.\n\nEl inciso d) sobra a propósito: describe a la sexualidad completa, que acompaña al ser humano desde el nacimiento hasta la muerte, y no a una sola de sus cuatro potencialidades."
           },
           {
             "id": 60,
@@ -851,7 +916,8 @@
               "D": "productor"
             },
             "answer": "C",
-            "image": "/imagenes_ecoems-7/q60_cadena_alimenticia.svg"
+            "image": "/imagenes_ecoems-7/q60_cadena_alimenticia.svg",
+            "explanation": "El consumidor primario es el que se alimenta directamente del productor, y los productores son plantas y algas: por eso el primero en comer siempre es un herbívoro. En el esquema se ve tal cual, la flecha sale del *Productor* y llega al *Herbívoro*; los carnívoros que vienen después ya son consumidores secundarios y terciarios.\n\nEl productor (D) no puede ser: él fabrica su propio alimento mediante la fotosíntesis, así que no consume a nadie."
           },
           {
             "id": 61,
@@ -866,7 +932,8 @@
               "D": "sol"
             },
             "answer": "D",
-            "image": "/imagenes_ecoems-7/q60_cadena_alimenticia.svg"
+            "image": "/imagenes_ecoems-7/q60_cadena_alimenticia.svg",
+            "explanation": "Fíjate en cómo está dibujado el esquema: el *Sol* está aparte, arriba de la cadena, con una flecha que baja hacia el *Productor*. Eso indica que la energía entra al ecosistema desde afuera y que la cadena solo la va pasando de un eslabón al siguiente.\n\nEl productor (C) es el primer *ser vivo* de la cadena y el que captura esa energía con la fotosíntesis, pero no la genera: la recibe. Si la pregunta es con qué comienza la secuencia energética, la respuesta es el Sol."
           },
           {
             "id": 62,
@@ -881,7 +948,8 @@
               "D": "fungi"
             },
             "answer": "D",
-            "image": "/imagenes_ecoems-7/q60_cadena_alimenticia.svg"
+            "image": "/imagenes_ecoems-7/q60_cadena_alimenticia.svg",
+            "explanation": "Los desintegradores o descomponedores son principalmente los hongos, que forman el reino fungi (junto con muchas bacterias). Se alimentan de restos de plantas y animales muertos, los degradan y devuelven los nutrientes al suelo; por eso en el esquema la flecha regresa del *Desintegrador* al *Productor* y cierra el ciclo.\n\nPlantae (B) queda fuera porque las plantas son productoras, y protista (C) agrupa sobre todo organismos unicelulares con otras formas de nutrición."
           },
           {
             "id": 63,
@@ -894,7 +962,8 @@
               "C": "luminosa - química",
               "D": "química - luminosa"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En la fotosíntesis la clorofila captura la luz del Sol —energía luminosa— y con ella la planta arma moléculas de glucosa a partir de $\\mathrm{CO}_2$ y agua. Esa energía no se pierde: queda guardada en los enlaces entre los átomos de la glucosa, y a la energía almacenada en enlaces se le llama, precisamente, energía química.\n\nLa D tiene los dos términos correctos pero invertidos: así estarías describiendo más bien una combustión, donde lo químico se libera como luz y calor."
           },
           {
             "id": 64,
@@ -908,7 +977,8 @@
               "D": "Órgano."
             },
             "answer": "A",
-            "_extra_from_bank": true
+            "_extra_from_bank": true,
+            "explanation": "La célula es la unidad **estructural** porque todo ser vivo está construido con células, y es la unidad **funcional** porque dentro de ella ocurren la nutrición, la respiración y la reproducción: es lo más pequeño que sigue estando vivo.\n\nTejidos y órganos (C y D) son niveles superiores de organización, formados por células, y el gen (B) es un fragmento de la molécula de ADN que está *dentro* de la célula, no una unidad viva por sí mismo."
           }
         ]
       },
@@ -927,7 +997,8 @@
               "C": "cuento",
               "D": "leyenda"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Lucía cuenta un relato fantástico sobre \"seres divinos que dieron vida a los pueblos de la antigua Grecia\": eso es exactamente un mito, un relato protagonizado por dioses que explica el origen del mundo, de los seres humanos o de un pueblo.\n\nLa leyenda (D) es la que más se le parece, pero esa parte de un hecho o un lugar reales y les agrega fantasía; sus personajes no son dioses creadores."
           },
           {
             "id": 66,
@@ -941,7 +1012,8 @@
               "C": "Leyenda",
               "D": "Moraleja"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Lilia narra \"hechos históricos de los antepasados que se han transmitido de generación en generación\" y pone de ejemplo \"La llorona\": ese es el retrato de la leyenda, un relato de transmisión oral, anclado a un lugar y a una época reales, al que el tiempo le fue añadiendo elementos fantásticos.\n\nNo es mito (A) porque no habla de dioses ni del origen del mundo, y la moraleja (D) ni siquiera es un tipo de relato: es la enseñanza que se desprende de una fábula."
           },
           {
             "id": 67,
@@ -955,7 +1027,8 @@
               "C": "Leyenda",
               "D": "Antología"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Guillermo no inventa nada suyo: hace \"una recopilación por escrito de las participaciones de sus compañeras\" para armar un álbum. Reunir textos de varios autores en un solo volumen es justamente una antología, palabra que viene del griego *ramo de flores*, es decir, una selección de lo escogido.\n\nMito, cuento y leyenda son los relatos que él recopila, no el trabajo que él realiza."
           },
           {
             "id": 68,
@@ -968,7 +1041,8 @@
               "C": "Flechas, llaves y paréntesis",
               "D": "Imágenes, gráficas y texto"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Un cuadro sinóptico organiza la información de lo general a lo particular, y para mostrar de qué idea se desprende cada subtema se usan llaves, flechas y paréntesis: son los que abren cada nivel de la jerarquía.\n\nLos signos de puntuación y de acentuación (A y B) sirven para escribir correctamente las oraciones, no para estructurar un esquema. Imágenes y gráficas (D) corresponden más bien a una infografía o a un cartel."
           },
           {
             "id": 69,
@@ -981,7 +1055,8 @@
               "C": "términos - recurrentes",
               "D": "elementos - indispensables"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Un resumen no es un recorte al azar del texto: se arma con los elementos del original —las ideas principales, el orden en que aparecen y los nexos que las enlazan—, y esos elementos son indispensables, porque si le quitas alguno el resumen pierde estructura y deja de entenderse.\n\nLas otras opciones fallan desde el primer hueco: un resumen no se compone de gráficos ni de situaciones. Y los términos \"recurrentes\" (C) son precisamente los que conviene eliminar al resumir, por repetidos."
           },
           {
             "id": 70,
@@ -994,7 +1069,8 @@
               "C": "1a, 2b, 3c, 4d, 5e, 6f",
               "D": "1b, 2d, 3e, 4f, 5g, 6h"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Ve pareja por pareja: luz - oscuridad (e), fuerte - débil (f), legal - ilegal (g), casado - soltero (h), natural - artificial (a) y dar - recibir (c). Todas embonan, y queda 1e, 2f, 3g, 4h, 5a, 6c.\n\nLos incisos b) entregar y d) cobrar sobran, y están puestos para tentarte: \"entregar\" es sinónimo de dar, no su antónimo. Si alguna te costó, usa la prueba de la negación: el antónimo de *legal* tiene que significar \"no legal\", y ese es *ilegal*."
           },
           {
             "id": 71,
@@ -1007,7 +1083,8 @@
               "C": "4, 5, 6",
               "D": "1, 3, 5"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Aplazar es dejar algo para después, así que sus sinónimos son prorrogar (1), que es alargar el plazo; demorar (3), que es retrasar; y dilatar (5), que además de estirar significa diferir en el tiempo.\n\nLos otros tres se parecen nada más de oído: aplastar (2) es machacar, apilar (4) es amontonar y recapacitar (6) es volver a pensar algo. El parecido sonoro con \"aplazar\" es toda la trampa del reactivo."
           },
           {
             "id": 72,
@@ -1020,7 +1097,8 @@
               "C": "Detalles derivados del tema principal",
               "D": "Información gráfica de la investigación"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Las ideas secundarias son las que sostienen a la principal: aportan ejemplos, datos, explicaciones y detalles que se desprenden del tema central y lo desarrollan. Si las quitas, el texto se sigue entendiendo a grandes rasgos, pero se queda sin apoyo.\n\nNo son información repetitiva (B): repetir no agrega nada, mientras que una idea secundaria siempre suma un detalle nuevo."
           },
           {
             "id": 73,
@@ -1033,7 +1111,8 @@
               "C": "reafirma los objetivos vitales del ensayo",
               "D": "se encuentra en todos los párrafos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La idea principal es la que contiene la información esencial: aquello sin lo cual el párrafo pierde sentido, y a lo que todas las demás ideas sirven de explicación o ejemplo. Un método para hallarla es preguntarte \"¿de qué trata esto?\" y ver qué oración responde por sí sola.\n\nLa D se antoja porque la idea principal suele ir al inicio del párrafo, pero no aparece en todos: hay párrafos que solo desarrollan o ejemplifican lo dicho antes."
           },
           {
             "id": 74,
@@ -1046,7 +1125,8 @@
               "C": "3, 1, 4, 2",
               "D": "4, 3, 2, 1"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Sigue el hilo del sentido. Empieza el **2**, que plantea el tema: \"para establecer la diferencia entre hecho y opinión debemos entender\". Sigue el **4**, que completa esa frase con la definición de hecho y se corta en \"en\". Después el **1**, que arranca con \"cambio\" —o sea, \"en cambio\"— y define la opinión. Y cierra el **3**: \"las razones presentadas por la persona que expresa su forma de pensar\". El orden es 2, 4, 1, 3.\n\nLa pista más útil son los fragmentos cortados a media expresión: \"en\" y \"cambio\" solo pueden ir pegados, y eso ya te fija dos lugares de la secuencia."
           },
           {
             "id": 75,
@@ -1059,7 +1139,8 @@
               "C": "telégrafo",
               "D": "radio"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La analogía relaciona un aparato con lo que reproduce: la bocina es el dispositivo por donde sale el sonido, así que para la imagen el dispositivo equivalente es la pantalla.\n\nEl radio (D) se antoja porque también es un aparato, pero está del lado del sonido, no de la imagen; y un programa (B) es contenido, no el dispositivo que lo muestra."
           },
           {
             "id": 76,
@@ -1072,7 +1153,8 @@
               "C": "novela a narrador",
               "D": "poema a poeta"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La relación es obra y quien la crea: la sinfonía la escribe el compositor, igual que el poema lo escribe el poeta. Revisa las demás con esa misma lupa: la soprano canta un aria pero no la compone, y el intérprete ejecuta una partitura que otro escribió.\n\nLa C es la que más se antoja, pero el narrador es la voz que cuenta la historia *dentro* de la novela, no quien la escribe: ese sería el novelista."
           },
           {
             "id": 77,
@@ -1085,7 +1167,8 @@
               "C": "Las niñas cantan",
               "D": "El otoño es amarillo"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La idea principal es la que engloba a todas las demás; aquí, que unos niños formaron un grupo musical. Compruébalo: quién toca la guitarra, quiénes cantan y cómo se llamará el disco son detalles que solo tienen sentido *porque* antes existe el grupo, o sea que son ideas secundarias.\n\nLa D ni siquiera es una idea del texto: es el título del disco que van a grabar."
           },
           {
             "id": 78,
@@ -1098,7 +1181,8 @@
               "C": "Esta mesa es grande",
               "D": "España ganó el mundial de fútbol en el 2010"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Un hecho es una afirmación que se puede comprobar con datos, y que España haya ganado el Mundial de 2010 se verifica en cualquier registro deportivo: ocurrió o no ocurrió, sin importar quién lo diga.\n\nLas otras tres son opiniones o valoraciones: \"juega de pena\", \"muy lento\" y \"grande\" dependen de con qué lo compares y de quién esté juzgando."
           },
           {
             "id": 79,
@@ -1111,7 +1195,8 @@
               "C": "insecto",
               "D": "león"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La relación es la de un animal con el grupo taxonómico al que pertenece: el gato es un mamífero, y la cucaracha es un insecto.\n\nEl león (D) y el sapo (B) son otros animales, no clasificaciones, así que rompen el tipo de relación. Y carnívoro (A) describe qué come el animal, no a qué grupo pertenece."
           },
           {
             "id": 80,
@@ -1125,7 +1210,8 @@
               "D": "motivar a los internautas adictos."
             },
             "answer": "A",
-            "_extra_from_bank": true
+            "_extra_from_bank": true,
+            "explanation": "El texto va acumulando señales de advertencia: llama a la adicción a Internet un \"desorden clínico\" del mismo nivel que el alcoholismo, enlista síntomas como navegar más de seis horas al día o enojarse al no poder conectarse, y suelta cifras alarmantes (42% de los internautas chinos se confesó adicto).\n\nNo le da al lector recomendaciones para evitarla ni lo invita a hacer nada: describe un problema y su magnitud para que quien lo lea lo reconozca. Esa intención es alertar a los internautas.\n\nPrevenir la enfermedad (B) se queda corta: el texto informa sobre el trastorno y su tratamiento, pero no ofrece medidas preventivas."
           }
         ]
       },
@@ -1143,7 +1229,8 @@
               "C": "Subrayado",
               "D": "Análisis"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El subrayado es la técnica que destaca las ideas principales directamente sobre el texto: no reescribes nada, las obtienes **tal cual las expresó el autor**, solo marcándolas. Ésa es la pista del enunciado: \"con las palabras del autor\". El resumen (A) se antoja porque también recoge las ideas principales, pero ya implica redactar un escrito nuevo; y la síntesis (B) va más lejos: las reelabora con tus propias palabras."
           },
           {
             "id": 82,
@@ -1156,7 +1243,8 @@
               "C": "1c, 2d, 3b",
               "D": "1d, 2a, 3b"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Piensa en la intensidad de la pausa: la **coma** marca una pausa breve en la lectura (c); el **punto y coma**, una interrupción más larga que la de la coma (d); y el **punto** separa oraciones autónomas, completas e independientes (b). Queda 1c, 2d, 3b. El inciso a) —anunciar una consecuencia o conclusión de lo anterior— corresponde a los dos puntos, que aquí solo está de distractor."
           },
           {
             "id": 83,
@@ -1169,7 +1257,8 @@
               "C": "Política",
               "D": "Informativa"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Cuando el propósito del mensaje es **persuadir** al consumidor de comprar un producto o contratar un servicio, la estrategia es **publicitaria**: apela a deseos y emociones para inducir la compra. La informativa (D) es el distractor: solo da a conocer hechos, sin buscar venderte nada."
           },
           {
             "id": 84,
@@ -1182,7 +1271,8 @@
               "C": "1, 3, 4",
               "D": "1, 3, 5"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Los paréntesis encierran información complementaria que puede quitarse sin romper la oración: **fechas** (1), como \"Benito Juárez (1806-1872)\"; **traducciones** (3) de palabras o frases en otro idioma; y **datos aclaratorios** (5) en general. Combinación: 1, 3, 5. Ni para señalar nombres ni para el uso de mayúsculas intervienen los paréntesis: esos incisos sirven para descartar opciones."
           },
           {
             "id": 85,
@@ -1195,7 +1285,8 @@
               "C": "deben",
               "D": "pueden"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La obligación se expresa aquí con la perífrasis **tener que + infinitivo**: \"Ellos **tienen** que despertarse\". La palabra clave es el \"que\" del enunciado: solo el verbo *tener* lo pide. \"Deben\" (C) es el distractor natural porque también indica obligación, pero *deber* se une directo al infinitivo —\"deben despertarse\"—; decir \"deben que despertarse\" es incorrecto."
           },
           {
             "id": 86,
@@ -1208,7 +1299,8 @@
               "C": "1d, 2b, 3a, 4c",
               "D": "1a, 2b, 3d, 4e"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Localiza la palabra clave de cada definición: el **acta de nacimiento** hace constar de manera fehaciente la *identidad* de la persona (d); la **credencial de elector** la expide el *INE* y nos acredita como ciudadanos (b); el **pasaporte** sirve para *pasar de un país a otro* (a); y el **acta de defunción** consigna el día y hora de la *muerte* (c). Queda 1d, 2b, 3a, 4c. El inciso e) describe un currículum vítae y solo está de relleno."
           },
           {
             "id": 87,
@@ -1221,7 +1313,8 @@
               "C": "el punto",
               "D": "las comillas"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Las oraciones subordinadas —sobre todo los incisos y las explicativas— se separan del resto del enunciado con **comas**: \"Mi hermano, *que vive en Puebla*, llegó ayer\". La coma delimita el fragmento que depende de la oración principal sin independizarlo. El punto (C) no funciona: ése separa oraciones completas y autónomas, no partes dentro de un mismo enunciado."
           },
           {
             "id": 88,
@@ -1235,7 +1328,8 @@
               "C": "plata",
               "D": "barro"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Está dicho con todas sus letras en la fábula: \"Entonces el espíritu de las aguas le presentó su propia hacha **de hierro**. Viéndola el campesino exclamó: —¡Ésa es la mía!\". Las de oro y de plata fueron las que el espíritu le ofreció primero como prueba, y el campesino las rechazó justamente porque no eran la suya."
           },
           {
             "id": 89,
@@ -1249,7 +1343,8 @@
               "C": "Lloraba mucho",
               "D": "Se hizo el gracioso"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La razón la da el propio texto: \"Para recompensarlo por su **honradez**, el espíritu de las aguas le dio las tres hachas\". El campesino rechazó las hachas de oro y plata porque no eran suyas, y esa verdad fue lo que se premió. El contraste lo remata el final: al amigo que mintió diciendo que el hacha de oro era la suya, el espíritu lo castigó dejándolo sin ninguna."
           },
           {
             "id": 90,
@@ -1262,7 +1357,8 @@
               "C": "3, 4, 1, 2",
               "D": "4, 1, 2, 3"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Recorre mentalmente cualquier texto bien armado: lo primero que aparece es el **título** (3); la **introducción** (4) presenta el tema; el **desarrollo** (1) lo expone a fondo; y la **conclusión** (2) cierra las ideas. Orden: 3, 4, 1, 2."
           },
           {
             "id": 91,
@@ -1276,7 +1372,8 @@
               "D": "Resumir y memorizar el contenido de un libro."
             },
             "answer": "A",
-            "_extra_from_bank": true
+            "_extra_from_bank": true,
+            "explanation": "La ficha bibliográfica registra los datos de identificación de un libro: autor, título, editorial, lugar y año de publicación. Con eso cumple sus dos funciones: **localizar** el libro (en una biblioteca, por ejemplo) y **conservar** su referencia para citarlo o volver a él. Las demás opciones hablan de memorizar o resumir el contenido, y eso no le toca a la ficha: guarda datos *del* libro, no lo que el libro dice."
           },
           {
             "id": 92,
@@ -1290,7 +1387,8 @@
               "D": "La cercanía entre dos idiomas."
             },
             "answer": "D",
-            "_extra_from_bank": true
+            "_extra_from_bank": true,
+            "explanation": "El problema de un texto es la pregunta que se propone responder, y aquí viene explícita: \"¿Entre el español y el portugués existen lazos identificables?\", es decir, qué tan **cercanos** son los dos idiomas. Los ejemplos de similitudes entre palabras (A) son el distractor: son la *evidencia* con la que el segundo párrafo responde, no el problema planteado."
           }
         ]
       },
@@ -1308,7 +1406,8 @@
               "C": "Leonardo da Vinci",
               "D": "Maquiavelo"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "*La Gioconda* —la famosa *Mona Lisa* que hoy cuelga en el Louvre— es obra de **Leonardo da Vinci**, gran artista del Renacimiento italiano. Miguel Ángel (A) es el distractor típico por ser de la misma época, pero lo suyo son el *David* y la Capilla Sixtina; Descartes fue filósofo y Maquiavelo pensador político: ninguno de los dos era pintor."
           },
           {
             "id": 94,
@@ -1321,7 +1420,8 @@
               "C": "3, 4, 1, 2",
               "D": "4, 1, 2, 3"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Sigue la cronología: **Alemania** (1) desata la guerra al invadir Polonia en septiembre de 1939; **Inglaterra** (3) le declara la guerra días después; **Estados Unidos** (4) entra hasta diciembre de 1941, tras el ataque a Pearl Harbor; y **México** (5) declara la guerra al Eje en 1942, después del hundimiento de sus buques petroleros. Orden: 1, 3, 4, 5. Guatemala (2) es el elemento que sobra en la lista."
           },
           {
             "id": 95,
@@ -1334,7 +1434,8 @@
               "C": "Guerra fría",
               "D": "Tratado de Versalles"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Al terminar la Segunda Guerra Mundial, los vencedores se dividieron en dos bloques: el capitalista, encabezado por Estados Unidos, y el socialista, encabezado por la URSS. A su enfrentamiento económico, político e ideológico —sin choque armado directo entre ellos, por eso \"fría\"— se le llama **Guerra Fría**. El Tratado de Versalles (D) es de otra guerra: es el acuerdo que cerró la *Primera* Guerra Mundial en 1919."
           },
           {
             "id": 96,
@@ -1347,7 +1448,8 @@
               "C": "1c, 2a, 3b",
               "D": "1a, 2b, 3c"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Cada autor fundó su corriente: **Comte** es el padre del **positivismo** (c), que quiso estudiar la sociedad con el rigor de las ciencias naturales; **Marx** formuló el **materialismo histórico** (a), que explica la historia por la economía y la lucha de clases; y **Von Ranke** encabezó el **historicismo** (b), que busca reconstruir los hechos \"tal como sucedieron\" a partir de los documentos. Queda 1c, 2a, 3b; la Escuela de los Anales (d) es de otros autores (Bloch y Febvre) y aquí solo distrae."
           },
           {
             "id": 97,
@@ -1360,7 +1462,8 @@
               "C": "Villa y Madero",
               "D": "Madero y Carranza"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "De esos caudillos solo dos llegaron a la presidencia: **Madero**, electo tras la caída de Porfirio Díaz (gobernó de 1911 a 1913), y **Carranza**, que tras promulgar la Constitución de 1917 fue presidente hasta 1920. Zapata y Villa fueron jefes revolucionarios fundamentales, pero ninguno ocupó la silla presidencial: cualquier opción que los incluya se descarta."
           },
           {
             "id": 98,
@@ -1373,7 +1476,8 @@
               "C": "Américo Vespucio",
               "D": "Vasco da Gama"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Es **Vasco da Gama**: en 1498 completó la ruta portuguesa a la India rodeando África por el cabo de Buena Esperanza, hasta llegar a Calicut. Los distractores se separan por su hazaña: Colón buscó las Indias navegando al *oeste* y se topó con América; Magallanes emprendió la vuelta al mundo veinte años después; y Vespucio dio su nombre a América. La seña \"rodeando África\" es la firma de Da Gama."
           },
           {
             "id": 99,
@@ -1386,7 +1490,8 @@
               "C": "absolutismo",
               "D": "federalismo"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En el periodo de entreguerras surgió el **fascismo**: movimiento nacionalista, autoritario y antidemocrático que llegó al poder con Mussolini en Italia, con Hitler (el nazismo) en Alemania y con Franco en España. El comunismo (B) también creció en esos años, pero triunfó en Rusia, no en esos tres países: era justo el enemigo ideológico frente al cual el fascismo se presentaba como \"alternativa\"."
           },
           {
             "id": 100,
@@ -1399,7 +1504,8 @@
               "C": "1ac, 2be",
               "D": "1be, 2ac"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Ubica a cada presidente en su época. El **Desarrollo Estabilizador** (1952-1970) abarca los gobiernos de **Adolfo López Mateos** (b) y **Gustavo Díaz Ordaz** (d); el modelo **neoliberal**, iniciado en los años ochenta, lo aplicaron **Carlos Salinas** (a) y **Ernesto Zedillo** (c). Queda 1bd, 2ac. Miguel de la Madrid (e) también fue neoliberal —de hecho, con él arrancó ese modelo—, pero la única combinación donde ambos periodos quedan bien pareados es la B."
           },
           {
             "id": 101,
@@ -1412,7 +1518,8 @@
               "C": "3, 5, 6",
               "D": "2, 3, 6"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El **Maximato** (1928-1934) es el sexenio partido en tres: Plutarco Elías Calles, el \"Jefe Máximo\", mandaba tras bambalinas mientras se sucedían **Emilio Portes Gil**, **Pascual Ortiz Rubio** y **Abelardo L. Rodríguez** (3, 5, 6). Obregón no cuenta: su asesinato en 1928, reelecto pero sin asumir, fue justo lo que abrió el periodo. Y Cárdenas es quien lo cierra: al llegar a la presidencia en 1934 terminó expulsando a Calles del país."
           },
           {
             "id": 102,
@@ -1425,7 +1532,8 @@
               "C": "Humanismo",
               "D": "Renacimiento"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Es la **Ilustración**, el movimiento del siglo XVIII conocido como \"Siglo de las Luces\": sus pensadores —Voltaire, Rousseau, Montesquieu— sostenían que la **razón** humana era el arma para vencer la ignorancia, la superstición y el despotismo. El Renacimiento (D) es el distractor cercano, pero es anterior (siglos XV-XVI) y su bandera fue revivir la cultura clásica, no la razón contra la ignorancia."
           },
           {
             "id": 103,
@@ -1438,7 +1546,8 @@
               "C": "3, 4, 2, 1",
               "D": "4, 2, 1, 3"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Acomoda las fechas: el **Plan de San Luis** (3) convoca al levantamiento en octubre de 1910 y arranca la Revolución; en mayo de 1911 la presión obliga a **renunciar a Porfirio Díaz** (4); la **Decena Trágica** (2) es el golpe de febrero de 1913 en el que Huerta traiciona y asesina a Madero; y la **Constitución** (1) se promulga hasta febrero de 1917. Orden: 3, 4, 2, 1."
           },
           {
             "id": 104,
@@ -1452,7 +1561,8 @@
               "D": "Barroco."
             },
             "answer": "A",
-            "_extra_from_bank": true
+            "_extra_from_bank": true,
+            "explanation": "El humanismo —la corriente literaria y de pensamiento que puso al ser humano y a los clásicos grecolatinos en el centro— desembocó en el **Renacimiento**: el \"renacer\" del arte y la cultura de los siglos XV y XVI, con figuras como Leonardo y Miguel Ángel. Barroco, Romanticismo y Modernismo son movimientos posteriores, de otros siglos."
           }
         ]
       },
@@ -1470,7 +1580,8 @@
               "C": "puntos cardinales",
               "D": "coordenadas geográficas"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Las **coordenadas geográficas** son las líneas imaginarias —paralelos (latitud) y meridianos (longitud)— cuyo cruce ubica **con exactitud** cualquier punto de la superficie terrestre. Los puntos cardinales (C) son el distractor: norte, sur, este y oeste solo dan *dirección*, no una posición exacta; con \"norte\" no llegas a un lugar preciso, con latitud y longitud sí."
           },
           {
             "id": 106,
@@ -1483,7 +1594,8 @@
               "C": "3, 2, 4, 1",
               "D": "3, 4, 2, 1"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El **Bravo** (3) es por mucho el más largo del país: cerca de 3,000 km haciendo frontera con Estados Unidos. Le sigue el **Lerma** (4), columna del sistema Lerma-Santiago, el gran río del interior; luego el **Balsas** (2), el caudaloso del sur; y al final el **Conchos** (1), que ni siquiera llega al mar: es afluente del propio Bravo. Orden: 3, 4, 2, 1."
           },
           {
             "id": 107,
@@ -1496,7 +1608,8 @@
               "C": "multiculturalidad - etnias",
               "D": "pluralidad - culturas"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La **interculturalidad** es justo eso: la interacción de dos o más **culturas** mediante el diálogo y el respeto mutuo; el prefijo *inter-* indica esa relación de ida y vuelta. El distractor fino es \"multiculturalidad\" (C): significa que varias culturas *coexisten* en un mismo territorio, pero sin que eso implique diálogo entre ellas; además, la definición habla de culturas, no solo de etnias."
           },
           {
             "id": 108,
@@ -1509,7 +1622,8 @@
               "C": "1d, 2b, 3a, 4c",
               "D": "1a, 2c, 3d, 4b"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Cada definición trae su palabra clave: **permanente** es quedarse en el destino *de por vida* (b); **forzada** es salir por amenazas o *contra la voluntad* (a); **interna** es moverse *dentro del mismo país* (d); y **voluntaria** es partir *por decisión propia* en busca de mejor calidad de vida (c). Queda 1b, 2a, 3d, 4c."
           },
           {
             "id": 109,
@@ -1523,7 +1637,8 @@
               "C": "Local",
               "D": "Geográfica"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Fíjate en lo que abarca el croquis: unas cuantas calles de un barrio —Juárez, Hidalgo, Allende, Morelos...— y una escala gráfica que llega apenas a 200 metros, distancia que caminas en unos minutos. Un mapa que representa un espacio así de reducido (una colonia, una localidad) usa escala **local**. \"Geográfica\" (D) es trampa: así se llama la escala en general, no un tipo; los tipos por extensión son local, nacional y mundial."
           },
           {
             "id": 110,
@@ -1536,7 +1651,8 @@
               "C": "simbología - coordenadas - paralelos",
               "D": "escala - meridianos - paralelos"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Para interpretar un mapa necesitas sus tres elementos básicos: la **escala**, que indica cuánto se redujo la realidad; la **simbología**, que traduce los signos y colores; y las **coordenadas**, que permiten ubicar cualquier punto. Meridianos y paralelos (en B, C y D) no son elementos aparte: son las líneas con las que se trazan justamente las coordenadas, así que esas combinaciones repiten una cosa y dejan fuera otra esencial."
           },
           {
             "id": 111,
@@ -1549,7 +1665,8 @@
               "C": "1, 3, 6",
               "D": "2, 5, 6"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los tres grandes centros económicos y financieros del mundo son **Nueva York**, **Tokio** y **Londres** (2, 4, 5): concentran las bolsas de valores y los bancos más importantes del planeta, uno por cada gran región (América, Asia y Europa). Un filtro rápido para descartar: Canadá (3) es un país, no una ciudad, así que toda opción que lo incluya se cae sola."
           },
           {
             "id": 112,
@@ -1562,7 +1679,8 @@
               "C": "Aguas internacionales",
               "D": "Zona económica exclusiva"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El dato \"200 millas náuticas\" es la firma de la **Zona Económica Exclusiva**: la franja marina, medida desde la costa, donde el Estado tiene derechos exclusivos para explorar y explotar los recursos (pesca, petróleo, minerales). El distractor clásico es \"mar territorial\" (B): ahí el Estado ejerce soberanía plena, pero solo abarca 12 millas náuticas."
           },
           {
             "id": 113,
@@ -1576,7 +1694,8 @@
               "C": "acuífero",
               "D": "hidrológico"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Vapor, ríos, lluvia: el agua \"constantemente en movimiento, de un lugar a otro y de una forma a otra\", como dice la lectura, describe el **ciclo hidrológico** o ciclo del agua: se evapora, se condensa, se precipita, escurre y se filtra, y vuelve a empezar. \"Acuífero\" (C) no es un ciclo sino el manto subterráneo donde se almacena el agua; e \"hidrometeorológico\" se usa para fenómenos como huracanes o sequías, no para el ciclo."
           },
           {
             "id": 114,
@@ -1590,7 +1709,8 @@
               "C": "2, 4, 7",
               "D": "3, 5, 7"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La lectura lo dice textual: \"Cuando vemos el agua a nuestro alrededor la vemos en los **arroyos**, en los **ríos**, y en los **lagos**, esta se conoce como *agua superficial*\". Son exactamente 2, 4 y 7. Los mares (1) se antojan —claro que están en la superficie—, pero la pregunta pide lo que dice *la lectura*, y el texto no los menciona."
           },
           {
             "id": 115,
@@ -1604,7 +1724,8 @@
               "C": "1, 4, 5",
               "D": "2, 4, 5"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Coteja cada afirmación con el texto: la (2) es cierta —los mantos acuíferos guardan el suministro subterráneo del planeta—; la (4) está textual: la precipitación \"se filtra dentro de la tierra y **recarga los mantos acuíferos**\"; y la (5) también: \"una parte del agua que vemos fluyendo en los ríos viene de **filtraciones del agua subterránea**\". Quedan 2, 4, 5. La (1) es falsa porque la lectura habla de cerca del 70%, no 90%; y la (3) también: el agua superficial del texto está en arroyos, ríos y lagos, no en mares y océanos."
           },
           {
             "id": 116,
@@ -1618,7 +1739,8 @@
               "D": "Sociales."
             },
             "answer": "D",
-            "_extra_from_bank": true
+            "_extra_from_bank": true,
+            "explanation": "El arte, la educación y la religión son creación de los grupos humanos: expresan el comportamiento de la **población**, y por eso pertenecen a los componentes **sociales** (también llamados culturales) del espacio geográfico. Los físicos o naturales (A y B) son lo que existe sin intervención humana —relieve, clima, agua, vegetación—, y los políticos se refieren a fronteras y formas de gobierno."
           }
         ]
       },
@@ -1636,7 +1758,8 @@
               "C": "Libertad",
               "D": "Moral"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La **libertad** es a la vez un valor y un derecho humano fundamental, y no siempre estuvo garantizada: la humanidad la fue conquistando a lo largo de varios siglos, de la lucha contra la esclavitud y el absolutismo hasta las declaraciones de derechos humanos. \"Independencia\" (B) se le parece, pero nombra la emancipación política de una nación, no el valor y derecho de cada persona."
           },
           {
             "id": 118,
@@ -1649,7 +1772,8 @@
               "C": "Moral",
               "D": "Libertad"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La **moral** es el conjunto de valores, principios, costumbres y normas que una comunidad comparte y que orientan la conducta de sus integrantes; como nace de las costumbres, cambia de una sociedad a otra. El distractor de siempre es \"ética\" (A): no es el conjunto de normas, sino la disciplina filosófica que *reflexiona* sobre esa moral."
           },
           {
             "id": 119,
@@ -1662,7 +1786,8 @@
               "C": "2, 4, 5",
               "D": "3, 5, 6"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Un buen negociador busca el resultado **ganador/ganador** (2), muestra **interés auténtico por las necesidades de la otra parte** (4) y **busca y analiza a fondo las propuestas** (5): combinación 2, 4, 5. Fíjate que 1, 3 y 6 son exactamente lo contrario —no escuchar, imponer un solo punto de vista, ignorar al otro—, así que cualquier opción que incluya alguno de esos se elimina de inmediato."
           },
           {
             "id": 120,
@@ -1676,7 +1801,8 @@
               "C": "derechos",
               "D": "límites"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Suena paradójico, pero es el argumento central de la lectura: como vivimos en sociedad, ser libres exige \"saber establecer ciertos **límites**\" y respetar normas \"para no interferir en la libertad de los demás\". Los límites son los que hacen posible que *todos* seamos libres; sin ellos, la libertad de uno aplasta la del otro. \"Derechos\" (C) se antoja mucho, pero la tesis del texto es que la libertad no es hacer lo que se quiera: se garantiza poniéndole límites."
           },
           {
             "id": 121,
@@ -1690,7 +1816,8 @@
               "C": "natural",
               "D": "moral"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Es cita textual del arranque de la lectura: \"La libertad no es un regalo, es un bien **natural** del ser humano\". La idea es que nadie nos la otorga —no es regalo ni concesión—: nos pertenece por naturaleza, aunque, como advierte el mismo texto, haya que aprender a hacer buen uso de ella."
           },
           {
             "id": 122,
@@ -1704,7 +1831,8 @@
               "C": "Conocer la Constitución del país",
               "D": "Tener libertad de pensamiento"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Una norma de convivencia es una **regla concreta de conducta** que ordena la vida del grupo, y respetar el turno de palabra es exactamente eso: regula cómo participamos para no interferir con los demás, justo lo que la lectura pide de estas normas. Las otras opciones no son normas: la empatía (B) es una actitud, conocer la Constitución (C) es un conocimiento y la libertad de pensamiento (D) es un derecho."
           },
           {
             "id": 123,
@@ -1718,7 +1846,8 @@
               "C": "armonía",
               "D": "aceptación"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La lectura insiste en que la libertad se ejerce **en sociedad**: entre \"gran cantidad de seres diferentes\" hay normas de **convivencia** que respetar para no interferir en la libertad ajena. Por eso la libertad implica elegir, decidir, usar la inteligencia y *convivir* con las demás personas: la convivencia es el marco general, del que la comunicación o la armonía son solo partes."
           },
           {
             "id": 124,
@@ -1731,7 +1860,8 @@
               "C": "morales",
               "D": "jurídicas"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Las normas **jurídicas** las dicta el Estado y están escritas en leyes y reglamentos: por eso son **explícitas, claras y públicas**, y su incumplimiento trae sanciones formales. El mejor contraste son las morales (C): también regulan la conducta, pero son interiores, no escritas y sin una autoridad que las imponga. Lo \"explícito y público\" es la firma de lo jurídico."
           },
           {
             "id": 125,
@@ -1744,7 +1874,8 @@
               "C": "2, 4, 6",
               "D": "3, 5, 7"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Fíjate en cómo empieza cada enunciado: 1, 3, 5 y 7 dicen \"derecho a...\" o \"libertad de...\": son **derechos de las personas**, no tareas del gobierno. Las obligaciones gubernamentales con la sociedad en su conjunto son acciones del Estado: mantener la **seguridad y la paz** (2), el **cuidado histórico** del patrimonio (4) y prestar **servicios de salud y educación** (6). Combinación: 2, 4, 6."
           },
           {
             "id": 126,
@@ -1757,7 +1888,8 @@
               "C": "3, 4, 1, 2",
               "D": "4, 2, 3, 1"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Las cuatro categorías siguen el orden de las necesidades del niño: primero la **supervivencia** (3), que garantiza la vida misma; luego el **desarrollo de sus capacidades** (4); después la **protección** (1) contra el abuso y la explotación; y al final la **participación** (2), el derecho a opinar en lo que le afecta. Orden: 3, 4, 1, 2."
           },
           {
             "id": 127,
@@ -1770,7 +1902,8 @@
               "C": "objetivos",
               "D": "acciones"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Participar en asuntos de interés colectivo es ponerse de acuerdo entre muchos que piensan distinto, y el acuerdo que se construye conciliando posturas opuestas se llama **consenso**: una decisión que todos aceptan aunque no todos pensaran igual al principio. \"Metas\" y \"objetivos\" (A y C) no encajan: la frase habla de *conciliar puntos de vista*, y eso es exactamente consensuar."
           },
           {
             "id": 128,
@@ -1783,7 +1916,8 @@
               "C": "1b, 2a, 3c",
               "D": "1b, 2d, 3a"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Asocia cada función con su palabra clave: la **ideología** son los *principios e ideas* del partido en lo económico, social, político y cultural (b); la **organización** es su estructura en el *ámbito nacional* para difundir sus principios y sumar seguidores (a); y los **estatutos** son las *reglas que norman sus actividades* (c). Queda 1b, 2a, 3c; el inciso d) —plan de trabajo y acciones— describe el programa del partido, que aquí no se pregunta."
           }
         ]
       }

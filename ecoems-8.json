@@ -4,7 +4,13 @@
     "group": "Ingreso a nivel medio superior",
     "date": "2026-06-09",
     "total_questions": 128,
-    "studentsDisabled": ["Yuli", "Sofía", "Leah", "Regina", "Conchita"],
+    "studentsDisabled": [
+      "Yuli",
+      "Sofía",
+      "Leah",
+      "Regina",
+      "Conchita"
+    ],
     "students": [
       "Ari",
       "Alexander",
@@ -39,7 +45,8 @@
               "D": "15"
             },
             "answer": "B",
-            "image": "/imagenes_ecoems-8/q1_cuadrado_magico.svg"
+            "image": "/imagenes_ecoems-8/q1_cuadrado_magico.svg",
+            "explanation": "Un cuadrado mágico suma lo mismo en cada fila, columna y diagonal. La fila de abajo te da la suma mágica: $8+1+6=15$. En la fila de en medio: $3 + x + 7 = 15$, así que $x = 15 - 10 = 5$. Comprueba con una diagonal: $4+5+6=15$. Es el clásico cuadrado con los números del 1 al 9, y su casilla central siempre vale 5."
           },
           {
             "id": 2,
@@ -52,7 +59,8 @@
               "C": "13",
               "D": "15"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Aquí van dos sucesiones trenzadas: en los lugares impares está $3, 5, 7, \\ldots$ (crece de 2 en 2) y en los pares está $9, 11, 13$. El séptimo lugar es impar, le toca a la primera cadena: después del 7 sigue el 9. También lo puedes ver como $+6, -4$ alternados: $13 - 4 = 9$. Si contestaste 15, le sumaste 2 al 13, pero el 13 pertenece a la otra cadena."
           },
           {
             "id": 3,
@@ -65,7 +73,8 @@
               "C": "$\\dfrac{2}{3}$",
               "D": "$-\\dfrac{3}{2}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Revisa cuánto baja cada término: $3 - \\frac{3}{2} = \\frac{3}{2}$ y $\\frac{3}{2} - \\frac{3}{2} = 0$. Es una sucesión aritmética que resta $\\frac{3}{2}$ en cada paso, así que el siguiente término es $0 - \\frac{3}{2} = -\\frac{3}{2}$. Nada impide que la sucesión cruce a los negativos; cualquier opción positiva rompería el patrón de resta constante."
           },
           {
             "id": 4,
@@ -78,7 +87,8 @@
               "C": "-9, -3, 0, 3, 9",
               "D": "9, 3, 0, 3, 9"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Sustituye uno por uno: $2(-2)^2+1 = 2(4)+1 = 9$, luego $2(-1)^2+1 = 3$, $2(0)^2+1 = 1$, y con $x=1$ y $x=2$ se repiten $3$ y $9$. Queda $9, 3, 1, 3, 9$. La clave está en que elevar al cuadrado borra el signo: $(-2)^2 = +4$, así que no puede haber resultados negativos (ahí caen A y C); y en $x=0$ el valor es $2(0)+1 = 1$, no $0$ (ahí cae D)."
           },
           {
             "id": 5,
@@ -98,7 +108,8 @@
               "B": "/imagenes_ecoems-8/q5_b.svg",
               "C": "/imagenes_ecoems-8/q5_c.svg",
               "D": "/imagenes_ecoems-8/q5_d.svg"
-            }
+            },
+            "explanation": "Sigue cada pieza por separado, porque las tres saltan de esquina en esquina: el cuadrado negro avanza en el sentido de las manecillas (arriba-izq → arriba-der → abajo-der), el círculo va en sentido contrario (abajo-izq → abajo-der → arriba-der) y la figura en forma de te también va contra las manecillas, pero además gira 90° sobre sí misma en cada paso: su patita apunta abajo, luego a la izquierda, luego arriba. En el cuarto cuadro toca: cuadrado abajo-izquierda, círculo arriba-izquierda y la te arriba-derecha con la patita apuntando a la derecha. La trampa es D: acomoda bien las piezas, pero se le olvidó girar la te."
           },
           {
             "id": 6,
@@ -118,7 +129,8 @@
               "B": "/imagenes_ecoems-8/q6_b.svg",
               "C": "/imagenes_ecoems-8/q6_c.svg",
               "D": "/imagenes_ecoems-8/q6_d.svg"
-            }
+            },
+            "explanation": "Fíjate en lo que hay dentro del círculo: primero una raya (1 segmento), luego una cruz (2 segmentos), luego un triángulo (3 lados). Cada paso agrega un lado, así que ahora toca la figura de 4 lados: el cuadrado inscrito en el círculo. El pentágono y el círculo son solo el marco que se repite igual en todos."
           },
           {
             "id": 7,
@@ -132,7 +144,8 @@
               "D": "169"
             },
             "answer": "C",
-            "image": "/imagenes_ecoems-8/q7_piramides.svg"
+            "image": "/imagenes_ecoems-8/q7_piramides.svg",
+            "explanation": "Cuenta los cuadros de los ejemplos: 1 nivel → $1$, 2 niveles → $4$, 3 niveles → $9$. Son los cuadrados perfectos: una pirámide de $n$ niveles usa $n^2$ cuadros, porque sus renglones suman $1+3+5+\\cdots$, los números impares. Con 12 niveles: $12^2 = 144$. Si contestaste 121, calculaste la pirámide de 11 niveles."
           },
           {
             "id": 8,
@@ -146,7 +159,8 @@
               "D": "94"
             },
             "answer": "D",
-            "image": "/imagenes_ecoems-8/q8_simbolos.svg"
+            "image": "/imagenes_ecoems-8/q8_simbolos.svg",
+            "explanation": "El triangulito de la base señala la punta de arranque (el cero) y las 10 puntas de la estrella se numeran desde ahí en sentido contrario a las manecillas. Descifra el código con el primer símbolo: su círculo hueco está en la punta 3 y su punto relleno en la punta 8, y vale 38; o sea, hueco = decenas y relleno = unidades. En el segundo símbolo el hueco cae en la punta 9 y el relleno en la punta 4: representa el 94. Si te dio 49, intercambiaste los papeles de los dos círculos."
           },
           {
             "id": 9,
@@ -160,7 +174,8 @@
               "D": "16"
             },
             "answer": "D",
-            "image": "/imagenes_ecoems-8/q9_triangulos.svg"
+            "image": "/imagenes_ecoems-8/q9_triangulos.svg",
+            "explanation": "Cuenta por tamaños, llamando $G$ al punto donde se cruzan las tres líneas: los 6 triangulitos en que queda partida la figura; los 3 medianos que tienen un lado completo del triángulo y vértice en $G$ (cada uno junta dos piezas); las 6 mitades del triángulo grande (cada una de las 3 líneas lo parte en dos); y 1 más, el triángulo completo. Total: $6+3+6+1 = 16$. Si contaste 13, casi seguro te saltaste los 3 medianos con vértice en el centro."
           },
           {
             "id": 10,
@@ -174,7 +189,8 @@
               "D": "2"
             },
             "answer": "A",
-            "image": "/imagenes_ecoems-8/q10_dado.svg"
+            "image": "/imagenes_ecoems-8/q10_dado.svg",
+            "explanation": "Rueda el dado giro por giro apoyándote en que las caras opuestas suman 7. Al inicio: 6 arriba, 1 abajo, 3 y 5 en los costados visibles (sus opuestas 4 y 2 quedan escondidas). La cara de arriba va cambiando así: con los dos giros hacia la derecha pasa de $6$ a $2$ y luego a $1$; con los dos giros hacia la izquierda sube a $4$ y luego a $6$; y con el último giro a la derecha termina en $5$. En la casilla final el dado muestra 5 puntos arriba."
           },
           {
             "id": 11,
@@ -194,7 +210,8 @@
               "B": "/imagenes_ecoems-8/q11_b.svg",
               "C": "/imagenes_ecoems-8/q11_c.svg",
               "D": "/imagenes_ecoems-8/q11_d.svg"
-            }
+            },
+            "explanation": "Cuenta y compara: la figura original tiene cinco cubos (la fila de tres, la torre y el que sale al frente), igual que cada opción. En A, B y D puedes encimar mentalmente la opción sobre la figura original de modo que cuatro de los cinco cubos coincidan: basta reubicar uno solo. En cambio, para la torre de tres al centro de C solo logras que coincidan tres cubos: completarla exige apilar dos cubos ahí, es decir, dos movimientos, y el problema solo permite uno."
           },
           {
             "id": 12,
@@ -208,7 +225,8 @@
               "D": "$\\dfrac{1}{6}$"
             },
             "answer": "B",
-            "image": "/imagenes_ecoems-8/q12_sobrepuestos.svg"
+            "image": "/imagenes_ecoems-8/q12_sobrepuestos.svg",
+            "explanation": "Mira el triángulo sombreado que forma el traslape: su base es un lado completo del cuadrado, de longitud $\\ell$, y su altura llega justo al centro, o sea $\\frac{\\ell}{2}$. Su área es $\\frac{1}{2} \\cdot \\ell \\cdot \\frac{\\ell}{2} = \\frac{\\ell^2}{4}$, exactamente $\\frac{1}{4}$ del cuadrado, cuya área es $\\ell^2$. De hecho, siempre que el vértice de un cuadrado igual cae en el centro del otro, el traslape cubre un cuarto, sin importar cuánto esté girado."
           },
           {
             "id": 13,
@@ -221,7 +239,8 @@
               "C": "26",
               "D": "28"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Busca la regla dentro de cada renglón: $20 = 8 + 12$ y $40 = 14 + 26$; el primer número es la suma de los otros dos. En el tercer renglón: $60 = x + 38$, así que $x = 60 - 38 = 22$. Si contestaste otra cosa, seguramente buscaste el patrón en las columnas: en esta tabla la regla vive en los renglones."
           },
           {
             "id": 14,
@@ -234,7 +253,8 @@
               "C": "$b$ es mayor que $c$",
               "D": "$a$ es el mayor de los tres"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Traduce el enunciado a una sola cadena: $a > b$ y $a < c$ se juntan en $b < a < c$. Con el orden completo a la vista, lo seguro es que $c$ es el mayor y $b$ el menor; en particular, $c > b$. La D es la trampa clásica: el mayor de los tres no es $a$ sino $c$, precisamente porque $a < c$."
           },
           {
             "id": 15,
@@ -248,7 +268,8 @@
               "D": "$4 - \\pi$"
             },
             "answer": "D",
-            "image": "/imagenes_ecoems-8/q15_circulos_cuadrado.svg"
+            "image": "/imagenes_ecoems-8/q15_circulos_cuadrado.svg",
+            "explanation": "El cuadrado mide $2$ de lado (dos radios), así que su área es $4$. Dentro del cuadrado, cada esquina aporta exactamente un cuarto de círculo, y los cuatro cuartos completan un círculo entero de área $\\pi(1)^2 = \\pi$. La región central sombreada es lo que sobra: $4 - \\pi$. La C ($1 - 4\\pi$) es negativa y un área no puede serlo; la A ($4\\pi - 4$) hizo la resta al revés."
           },
           {
             "id": 16,
@@ -262,7 +283,8 @@
               "D": "68"
             },
             "answer": "A",
-            "image": "/imagenes_ecoems-8/q16_figura_perimetro.svg"
+            "image": "/imagenes_ecoems-8/q16_figura_perimetro.svg",
+            "explanation": "La figura se descompone en 8 cuadritos iguales cuyo lado es el lado corto $a$: $8a^2 = 200$, de donde $a^2 = 25$ y $a = 5$; el lado largo mide $2a = 10$. Ahora recorre el contorno: tiene 8 lados cortos y 4 lados largos, así que $P = 8(5) + 4(10) = 40 + 40 = 80$."
           }
         ]
       },
@@ -280,7 +302,8 @@
               "C": "3",
               "D": "9"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Resuelve primero los paréntesis: $-2+1 = -1$ y $-1-2 = -3$. Entonces $m = -3(-1) - 2(-3) = 3 + 6 = 9$: en ambos productos aplica que menos por menos da más. Si te dio $-3$, calculaste $3 - 6$: el error está en no ver que $-2(-3) = +6$."
           },
           {
             "id": 18,
@@ -293,7 +316,8 @@
               "C": "60",
               "D": "30"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Factoriza: $12 = 2^2 \\cdot 3$ y $15 = 3 \\cdot 5$. El mcm toma cada primo con su mayor exponente: $2^2 \\cdot 3 \\cdot 5 = 60$. Comprueba: $60 \\div 12 = 5$ y $60 \\div 15 = 4$, ambas exactas. Si contestaste 180, multiplicaste $12 \\times 15$: eso da un múltiplo común, pero no el mínimo, porque falta dividir entre el MCD, que es 3."
           },
           {
             "id": 19,
@@ -306,7 +330,8 @@
               "C": "28%",
               "D": "21.875%"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Primero cuenta los errores: $128 - 100 = 28$ incorrectas. El porcentaje se calcula sobre el total de preguntas: $28 \\div 128 = 0.21875$, es decir, 21.875%. La B (78.125%) es el porcentaje de aciertos: responde la pregunta contraria a la que te hicieron."
           },
           {
             "id": 20,
@@ -319,7 +344,8 @@
               "C": "$\\$12{,}300$",
               "D": "$\\$13{,}100$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los depósitos suman y los retiros restan: $12{,}000 + 2{,}600 - 6{,}100 + 4{,}000 - 6{,}200 - 800$. Ve paso a paso: $14{,}600 \\to 8{,}500 \\to 12{,}500 \\to 6{,}300 \\to 5{,}500$. La caja cierra la semana con $\\$5{,}500$. Un atajo: los depósitos suman $6{,}600$ y los retiros $13{,}100$, un efecto neto de $-6{,}500$ sobre los $12{,}000$ iniciales. Ojo con la D: $\\$13{,}100$ es el total de retiros, no el saldo."
           },
           {
             "id": 21,
@@ -332,7 +358,8 @@
               "C": "$\\dfrac{1}{3}$",
               "D": "$\\dfrac{1}{2}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Si el promedio de tres números es $\\frac{1}{3}$, su suma es $3 \\cdot \\frac{1}{3} = 1$. Como $\\frac{1}{4} + \\frac{1}{2} = \\frac{3}{4}$, queda $a = 1 - \\frac{3}{4} = \\frac{1}{4}$. Comprueba: $\\frac{1}{4} + \\frac{1}{4} + \\frac{1}{2} = 1$ y $1 \\div 3 = \\frac{1}{3}$."
           },
           {
             "id": 22,
@@ -345,7 +372,8 @@
               "C": "2 horas",
               "D": "1 hora"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Piensa en ritmos de trabajo por hora: el adulto lava $\\frac{1}{3}$ del elefante y el niño $\\frac{1}{6}$. Juntos avanzan $\\frac{1}{3} + \\frac{1}{6} = \\frac{2}{6} + \\frac{1}{6} = \\frac{1}{2}$ del elefante por hora, así que terminan en $2$ horas. Fíjate que la respuesta debe ser menor que 3 horas: con ayuda, el adulto no puede tardar más que trabajando solo."
           },
           {
             "id": 23,
@@ -358,7 +386,8 @@
               "C": "-1",
               "D": "$\\pm 1$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Un producto vale cero cuando alguno de sus factores es cero. Aquí hay dos posibilidades: $x + 1 = 0$ da $x = -1$, y $x - 1 = 0$ da $x = 1$. Ambos valores cumplen la ecuación (que es $x^2 - 1 = 0$, o sea $x^2 = 1$), así que la solución completa es $x = \\pm 1$. B y C solo dan la mitad de las soluciones."
           },
           {
             "id": 24,
@@ -371,7 +400,8 @@
               "C": "$2a^2 + 2ab - 1$",
               "D": "$2a^2 + 2ab - a - b$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Distribuye término por término: $a(2a - 1) = 2a^2 - a$ y $b(2a - 1) = 2ab - b$. Al juntar todo: $2a^2 + 2ab - a - b$. La C ($2a^2 + 2ab - 1$) es el error típico de dejar el $-1$ como término suelto en lugar de multiplicarlo tanto por $a$ como por $b$."
           },
           {
             "id": 25,
@@ -384,7 +414,8 @@
               "C": "$\\dfrac{1}{6}$",
               "D": "$\\dfrac{1}{12}$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Al lanzar dos dados hay $6 \\times 6 = 36$ resultados igual de probables. Los que suman siete son $(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)$: seis casos favorables. La probabilidad es $\\frac{6}{36} = \\frac{1}{6}$. De hecho, 7 es la suma más probable con dos dados: ninguna otra junta seis combinaciones."
           },
           {
             "id": 26,
@@ -397,7 +428,8 @@
               "C": "6",
               "D": "8"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "$\\mathrm{sen}\\,\\alpha = \\frac{3}{5}$ significa que el cateto opuesto mide 3 y la hipotenusa 5. El adyacente sale con el teorema de Pitágoras: $\\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4$. Es el triángulo 3-4-5, el rectángulo más famoso que hay."
           },
           {
             "id": 27,
@@ -416,7 +448,8 @@
               "B": "/imagenes_ecoems-8/q27_b.svg",
               "C": "/imagenes_ecoems-8/q27_c.svg",
               "D": "/imagenes_ecoems-8/q27_d.svg"
-            }
+            },
+            "explanation": "El costo es proporcional al número de páginas: $y = 1 \\cdot x$. Eso obliga dos cosas: la recta pasa por el origen, porque imprimir 0 páginas cuesta $\\$0$, y sube $\\$1$ por cada página, o sea pendiente positiva constante. Esa es la recta creciente que pasa por el origen. La D, que no pasa por el origen, correspondería a una tarifa con cargo fijo inicial, cosa que el enunciado no menciona."
           },
           {
             "id": 28,
@@ -430,7 +463,8 @@
               "D": "60°"
             },
             "answer": "C",
-            "image": "/imagenes_ecoems-8/q28_angulo_inscrito.svg"
+            "image": "/imagenes_ecoems-8/q28_angulo_inscrito.svg",
+            "explanation": "Ubica el arco que abre el ángulo: desde $B$, los lados van hacia $A$ (punto más alto del círculo) y hacia $C$ (extremo derecho). Entre $A$ y $C$ hay exactamente un cuarto de circunferencia, así que el ángulo central que le corresponde mide 90°. El teorema del ángulo inscrito dice que este mide la mitad del central que abre el mismo arco: $90 \\div 2 = 45$°. Si contestaste 90°, tomaste el ángulo central completo en vez de la mitad."
           }
         ]
       },
@@ -448,7 +482,8 @@
               "C": "Densidad",
               "D": "Presión atmosférica"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El peso es justamente eso: la fuerza con que la gravedad atrae a un cuerpo ($P = mg$, y se mide en newtons). No lo confundas con la masa (A): esa es la cantidad de materia, se mide en kilogramos y no es una fuerza; tu masa sería la misma en la Luna, pero tu peso no."
           },
           {
             "id": 30,
@@ -461,7 +496,8 @@
               "C": "Evaporación",
               "D": "Condensación"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Condensación: el gas cede calor y pasa a estado líquido. Es lo que ves cuando se empaña un espejo o cuando un vaso con agua fría se cubre de gotitas: el vapor de agua del aire se vuelve líquido. La evaporación (C) es exactamente el cambio contrario, de líquido a gas."
           },
           {
             "id": 31,
@@ -474,7 +510,8 @@
               "C": "Aceleración constante mayor que cero",
               "D": "Aceleración variable"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Aplica la fórmula de velocidad a cada renglón: $10 \\div 1 = 10$, $20 \\div 2 = 10$ y $200 \\div 20 = 10$ m/s. La velocidad da lo mismo en los tres casos: es constante y mayor que cero. Y como la velocidad no cambia, el móvil no está acelerando; además, con la fórmula del enunciado, $d/t^2$ da $10, 5, 0.5$: ni constante ni creciente, así que C se descarta. C tienta si solo pruebas el primer renglón."
           },
           {
             "id": 32,
@@ -487,7 +524,8 @@
               "C": "$3\\,\\text{m/s}^2$",
               "D": "$4\\,\\text{m/s}^2$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La aceleración es el cambio de velocidad dividido entre el tiempo en que ocurre: $a = \\frac{v_f - v_i}{t} = \\frac{2 - 0}{2} = 1\\,\\mathrm{m/s^2}$. Si contestaste $2$, te quedaste con el cambio de velocidad (2 m/s) y olvidaste dividirlo entre los 2 segundos."
           },
           {
             "id": 33,
@@ -501,7 +539,8 @@
               "D": "i: c, d   ii: a, b"
             },
             "answer": "B",
-            "image": "/imagenes_ecoems-8/q33_graficas_movimiento.svg"
+            "image": "/imagenes_ecoems-8/q33_graficas_movimiento.svg",
+            "explanation": "En una gráfica de desplazamiento contra tiempo, el MRU avanza lo mismo en cada segundo: se ve como recta de pendiente constante. Esas son **a** y **c** (la c solo arranca desde una posición inicial distinta de cero). El MUA recorre cada vez más distancia por segundo, así que su curva se empina más y más: **b** y **d**. Por eso i: a, c y ii: b, d."
           },
           {
             "id": 34,
@@ -514,7 +553,8 @@
               "C": "Eléctrica",
               "D": "Calorífica"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Esa es la definición de energía potencial: la que está almacenada por la posición o configuración de un cuerpo, lista para transformarse en trabajo, como el agua contenida en lo alto de una presa o un resorte comprimido. La cinética (B) no está almacenada: es la que el cuerpo ya tiene por estar en movimiento."
           },
           {
             "id": 35,
@@ -527,7 +567,8 @@
               "C": "Radiación",
               "D": "Evaporación"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Cuando el calor viaja porque el propio fluido se desplaza —masas de aire o de agua calientes que suben y arrastran la energía— se llama convección: así funcionan los vientos y las corrientes marinas. La conducción (A) requiere contacto directo y es típica de los sólidos; la radiación (C) viaja como ondas, como el calor del Sol."
           },
           {
             "id": 36,
@@ -540,7 +581,8 @@
               "C": "ii y iv",
               "D": "ii, iii y v"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Ve afirmación por afirmación. La ii es cierta: la presión atmosférica actúa en todas direcciones, lo que de paso vuelve falsa la i. La iii es cierta: al nivel del mar tienes encima una columna de aire más alta que en la cima de una montaña, y eso descarta la iv. La v también es cierta: al succionar reduces la presión dentro del popote, y es la presión atmosférica sobre el líquido del vaso la que lo empuja hacia arriba. Ciertas: ii, iii y v."
           },
           {
             "id": 37,
@@ -554,7 +596,8 @@
               "D": "$P_a < P_b > P_c$"
             },
             "answer": "C",
-            "image": "/imagenes_ecoems-8/q37_recipientes.svg"
+            "image": "/imagenes_ecoems-8/q37_recipientes.svg",
+            "explanation": "La presión en el fondo depende únicamente de la profundidad del líquido: $P = \\rho g h$. Como los tres recipientes tienen agua exactamente al mismo nivel, la $h$ es la misma y $P_a = P_b = P_c$. Ni la forma del recipiente ni la cantidad de agua importan: a esto se le conoce como paradoja hidrostática; el ancho cambia la fuerza total sobre el fondo, pero no la presión."
           },
           {
             "id": 38,
@@ -567,7 +610,8 @@
               "C": "Madera",
               "D": "Cobre"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El cobre es un metal, y sus electrones libres transportan muy bien tanto la carga eléctrica como el calor: por eso los cables eléctricos y muchas tuberías y fondos de sartén se hacen de cobre. Plástico, tela y madera son aislantes en ambos sentidos."
           },
           {
             "id": 39,
@@ -580,7 +624,8 @@
               "C": "Se crea un campo magnético alrededor del conductor",
               "D": "La aguja de una brújula cercana permanece estática"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Es el descubrimiento de Oersted: toda corriente eléctrica crea un campo magnético alrededor del conductor que la lleva. La prueba clásica es acercar una brújula: la aguja se desvía, justo lo contrario de lo que afirma D. La B tropieza en otro punto: en un conductor los que se mueven son los electrones, no los protones."
           },
           {
             "id": 40,
@@ -593,7 +638,8 @@
               "C": "Mayor que el ángulo de reflexión",
               "D": "Dos veces el ángulo de reflexión"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Es la ley de la reflexión: el ángulo de incidencia y el ángulo de reflexión son iguales, ambos medidos respecto a la normal, la perpendicular al espejo en el punto donde pega el rayo. El rayo sale tan inclinado como llegó, sin excepción en un espejo plano."
           }
         ]
       },
@@ -611,7 +657,8 @@
               "C": "Filtración",
               "D": "Cristalización"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El aparato separa por tamaño de partícula: el papel filtro y el carbón dejan pasar el agua líquida y retienen las partículas sólidas que la ensucian. Ese paso de una mezcla por un medio poroso que atrapa el sólido se llama **filtración**.\n\nLa decantación (opción B) también separa un sólido de un líquido, pero dejando reposar y vertiendo con cuidado el líquido claro, sin ningún medio poroso. En cuanto ves embudo con papel filtro, es filtración."
           },
           {
             "id": 42,
@@ -624,7 +671,8 @@
               "C": "Cloruro de sodio",
               "D": "Sulfato de cobre"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Una **mezcla** es la unión física de dos o más sustancias que conservan sus propiedades y se pueden separar por métodos físicos. El aire es exactamente eso: nitrógeno (78%), oxígeno (21%), argón, dióxido de carbono y vapor de agua, revueltos sin reaccionar entre sí.\n\nLas otras tres son sustancias puras: el agua ($\\mathrm{H_2O}$), el cloruro de sodio ($\\mathrm{NaCl}$) y el sulfato de cobre ($\\mathrm{CuSO_4}$) son compuestos, con composición fija y con sus elementos unidos químicamente."
           },
           {
             "id": 43,
@@ -637,7 +685,8 @@
               "C": "Reactivo",
               "D": "Producto"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En una solución, el **soluto** es lo que se disuelve y está en menor cantidad; el solvente (o disolvente) es el medio que lo disuelve y está en mayor cantidad. Aquí el pigmento en polvo es el que se dispersa y el agua es la que lo recibe: pigmento = soluto, agua = solvente.\n\nOjo con \"reactivo\" y \"producto\": esos términos son de reacciones químicas, y aquí no hubo reacción, solo una mezcla homogénea formada por difusión."
           },
           {
             "id": 44,
@@ -650,7 +699,8 @@
               "C": "Mezclas",
               "D": "Soluciones"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Un **elemento** está formado por un solo tipo de átomo, así que ningún método químico lo puede descomponer en algo más simple: el oro sigue siendo oro y el oxígeno sigue siendo oxígeno.\n\nEl compuesto (opción B) sí se descompone: el agua, por electrólisis, se separa en hidrógeno y oxígeno. Y las mezclas y las soluciones se separan hasta con métodos físicos (filtrar, evaporar), que es todavía más sencillo."
           },
           {
             "id": 45,
@@ -663,7 +713,8 @@
               "C": "i: b,d   ii: c,d   iii: c,e",
               "D": "i: b,e   ii: a,d   iii: c,d"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Ve partícula por partícula. El electrón tiene carga negativa y se mueve alrededor del núcleo: b y e. El protón tiene carga positiva y vive en el núcleo: a y d. El neutrón no tiene carga y también está en el núcleo: c y d.\n\nAsí queda i: b,e — ii: a,d — iii: c,d.\n\nLa opción A es la trampa: le da carga positiva al electrón y negativa al protón, justo al revés. Amárralo con la palabra: electrón, negativo."
           },
           {
             "id": 46,
@@ -676,7 +727,8 @@
               "C": "12",
               "D": "20"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El **número atómico** ($Z$) es el número de protones del núcleo, y es el dato que define de qué elemento se trata. Este átomo tiene 6 protones, entonces $Z = 6$: es carbono, sin importar cuántos neutrones cargue.\n\nSi contestaste 12, confundiste el número atómico con la masa. Y ni así cuadra: la masa de este isótopo es $6 + 8 = 14$ (carbono-14); el 12 es la masa del isótopo más común del carbono."
           },
           {
             "id": 47,
@@ -689,7 +741,8 @@
               "C": "Na, S y K",
               "D": "Na, Su y K"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Varios símbolos vienen del nombre latino, y ahí está el truco: sodio es **Na** (natrium), azufre es **S** (sulphur) y potasio es **K** (kalium).\n\nLa opción B se ve casi bien, pero pone P, que es fósforo; el potasio no se abrevia con la letra de su nombre en español. Y \"Su\" (opción D) simplemente no existe como símbolo químico."
           },
           {
             "id": 48,
@@ -702,7 +755,8 @@
               "C": "En la columna de la derecha",
               "D": "En el periodo 1"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El carácter metálico depende de la facilidad con que el átomo suelta electrones, y aumenta hacia la izquierda y hacia abajo de la tabla. En la primera columna están los metales alcalinos (litio, sodio, potasio, rubidio, cesio): pierden su único electrón externo con enorme facilidad, así que son los más metálicos de todos.\n\nEn la columna de la derecha están los gases nobles, que no ceden electrones: el extremo opuesto. Y el periodo 1 (opción D) solo tiene hidrógeno y helio, que no son metales."
           },
           {
             "id": 49,
@@ -715,7 +769,8 @@
               "C": "Iónico",
               "D": "Electronegativo"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Hidrógeno y oxígeno son ambos no metales, y en lugar de transferirse electrones los **comparten**: eso es un enlace **covalente**. En el agua, cada hidrógeno comparte un par de electrones con el oxígeno, y romper esos enlaces exige mucha energía.\n\nEl puente de hidrógeno (opción A) sí existe en el agua, pero es la atracción *entre* moléculas vecinas, no el enlace interno H–O; es mucho más débil, y por eso el agua hierve sin descomponerse en $\\mathrm{H_2}$ y $\\mathrm{O_2}$."
           },
           {
             "id": 50,
@@ -728,7 +783,8 @@
               "C": "Menor que 7",
               "D": "De 0 a 14"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La escala de pH va de 0 a 14 y el 7 es el neutro (agua pura). Si en la solución sobran iones $\\mathrm{H^+}$, es **ácida** y su pH queda **por debajo de 7** (el jugo de limón, cerca de 2); si el pH es mayor que 7, la solución es básica o alcalina (el jabón).\n\nLa opción D describe la escala completa, no la medida de un ácido: es un dato cierto, pero no responde lo que se pregunta."
           },
           {
             "id": 51,
@@ -741,7 +797,8 @@
               "C": "De polimerización",
               "D": "De neutralización"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Aquí una base (KOH) reacciona con un ácido (HCl) y salen una sal más agua. Ese patrón\n\n$$\\text{ácido} + \\text{base} \\rightarrow \\text{sal} + \\text{agua}$$\n\nes la reacción de **neutralización**: el $\\mathrm{H^+}$ del ácido se une con el $\\mathrm{OH^-}$ de la base para formar $\\mathrm{H_2O}$, y los iones que quedan ($\\mathrm{K^+}$ y $\\mathrm{Cl^-}$) forman la sal. Por eso el producto final ya no es ácido ni básico.\n\nEn la hidrólisis (opción B) pasa casi lo contrario: el agua es reactivo y rompe una molécula, no aparece como producto."
           },
           {
             "id": 52,
@@ -754,7 +811,8 @@
               "C": "A reaccionar exclusivamente con oxígeno",
               "D": "A la formación de una cáscara alrededor del átomo"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Oxidarse es **perder electrones**, y nunca ocurre sola: siempre hay otra especie que los gana, o sea que se reduce. Cuando un átomo se oxida, su número de oxidación sube: $\\mathrm{Fe} \\rightarrow \\mathrm{Fe^{3+}} + 3e^-$.\n\nLa opción C se antoja por el nombre: se le puso \"oxidación\" porque el fenómeno se estudió primero con oxígeno, pero el oxígeno no es indispensable. El cloro y el flúor también oxidan, y por eso la definición moderna habla de electrones y no de un elemento en particular."
           }
         ]
       },
@@ -772,7 +830,8 @@
               "C": "Ecología",
               "D": "Taxonomía"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "**Ecología** viene de *oikos* (casa) y *logos* (estudio): estudia la \"casa\" de los organismos, es decir sus relaciones entre ellos (competencia, depredación, simbiosis) y con los factores del ambiente (agua, luz, suelo, clima).\n\nLa botánica estudia las plantas y la zoología los animales, cada una centrada en un grupo de seres vivos; la taxonomía los clasifica y los nombra. Ninguna de ellas se ocupa de las relaciones."
           },
           {
             "id": 54,
@@ -785,7 +844,8 @@
               "C": "Los cuerpos pesados caen más rápido que los cuerpos ligeros.",
               "D": "La energía es igual a la masa por el cuadrado de la velocidad de la luz, $E = mc^2$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El conocimiento **empírico** es el que se obtiene de la experiencia directa y repetida, sin necesidad de teoría, método ni instrumentos: cualquier persona sabe que al día le sigue la noche porque lo ha visto miles de veces. Ese es el caso de la opción A.\n\nEl ciclo del agua y $E = mc^2$ son conocimiento científico: exigen explicación teórica y comprobación. La opción C tienta porque suena a creencia popular, pero es falsa (sin aire, todos los cuerpos caen igual), y un conocimiento empírico describe lo que en efecto sucede, no lo que se cree por error."
           },
           {
             "id": 55,
@@ -798,7 +858,8 @@
               "C": "Una predicción",
               "D": "Una conclusión"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La **hipótesis** es una suposición razonable: una respuesta tentativa que propones a partir de lo que ya sabes y que se puede poner a prueba con un experimento. Puede resultar cierta o falsa, y averiguarlo es justamente el punto.\n\nLa observación es el arranque (lo que viste), la predicción es lo que esperarías que pasara *si* tu hipótesis fuera cierta, y la conclusión llega al final, ya con los resultados en la mano."
           },
           {
             "id": 56,
@@ -811,7 +872,8 @@
               "C": "Es una explicación del origen de la vida.",
               "D": "Los organismos se mantienen sin cambios de una generación a la siguiente."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La selección natural es un proceso, y funciona así: dentro de una población hay variación; el ambiente no permite que todos sobrevivan y se reproduzcan igual; los individuos cuyas características les dan ventaja en ese ambiente dejan más descendencia, y esas características se vuelven más frecuentes. De ahí la frase \"sobreviven los más aptos\", entendiendo *apto* como mejor adaptado a ese ambiente, no como más fuerte.\n\nLa opción B enuncia la variación, que es la materia prima sobre la que actúa la selección, pero no el proceso mismo. Y cuidado con C: Darwin explicó cómo cambian las especies, no cómo se originó la vida."
           },
           {
             "id": 57,
@@ -824,7 +886,8 @@
               "C": "Oxígeno y dióxido de carbono",
               "D": "Glucosa y oxígeno"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Lee la ecuación de la fotosíntesis:\n\n$$6\\,\\mathrm{CO_2} + 6\\,\\mathrm{H_2O} + \\text{luz} \\rightarrow \\mathrm{C_6H_{12}O_6} + 6\\,\\mathrm{O_2}$$\n\nA la izquierda están los reactivos (dióxido de carbono, agua y energía luminosa) y a la derecha los **productos**: la glucosa, que es el alimento que la planta fabrica, y el oxígeno que libera al aire.\n\nSi escogiste A o B te fuiste con los reactivos: agua, $\\mathrm{CO_2}$ y luz son lo que entra al proceso, no lo que sale."
           },
           {
             "id": 58,
@@ -837,7 +900,8 @@
               "C": "Hongos",
               "D": "Aerobios"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "**Autótrofo** significa \"que se alimenta a sí mismo\": son los organismos que fabrican su propia materia orgánica a partir de sustancias inorgánicas, usando energía luminosa (plantas, algas, cianobacterias) o química. Por eso no dependen de otros seres vivos para nutrirse y son la base de toda cadena alimentaria.\n\nLos heterótrofos (opción B) hacen lo contrario: necesitan alimentarse de otros. Los hongos, de hecho, son heterótrofos, y \"aerobio\" no habla de nutrición sino de usar oxígeno para respirar."
           },
           {
             "id": 59,
@@ -850,7 +914,8 @@
               "C": "Citosina",
               "D": "Uracilo"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El ADN usa cuatro bases: adenina, guanina, citosina y **timina**. El ARN conserva las tres primeras, pero cambia la timina por **uracilo**. Por eso el uracilo es el sello del ARN, igual que la timina lo es del ADN.\n\nAdenina, guanina y citosina están en los dos ácidos nucleicos, así que ninguna de esas tres sirve para distinguir uno del otro."
           },
           {
             "id": 60,
@@ -863,7 +928,8 @@
               "C": "Hepatitis B",
               "D": "Ascariasis"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La **ascariasis** la causa *Ascaris lumbricoides*, un gusano redondo que se aloja en el intestino: un parásito, o sea un organismo que vive dentro del huésped y se alimenta de él. De ahí que la enfermedad se clasifique como parasitaria.\n\nVaricela, sarampión y hepatitis B son enfermedades **virales**: las provoca un virus, no un parásito."
           },
           {
             "id": 61,
@@ -876,7 +942,8 @@
               "C": "Ciclo menstrual",
               "D": "Desarrollo de senos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los caracteres sexuales **primarios** son los órganos del aparato reproductor: están presentes desde el nacimiento y su función es la reproducción. En la mujer: ovarios, oviductos (trompas), matriz o útero y vagina.\n\nLos secundarios aparecen en la pubertad por acción de las hormonas, y ahí entran el desarrollo de los senos (opción D), el ensanchamiento de la cadera y el vello. El ciclo menstrual es una función que se inicia en esa etapa, y los estrógenos son las hormonas que dirigen el proceso, no un carácter sexual."
           },
           {
             "id": 62,
@@ -889,7 +956,8 @@
               "C": "75% rojas y 25% blancas",
               "D": "25% rojas, 50% rosas y 25% blancas"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Arma el cuadro de Punnett del cruce $Rr \\times Rr$. Cada planta aporta $R$ o $r$, así que la progenie sale en proporción\n\n$$1\\,RR : 2\\,Rr : 1\\,rr$$\n\nComo $R$ (rojo) domina sobre $r$ (blanco), tanto las $RR$ como las $Rr$ se ven rojas: 3 de cada 4, es decir **75% rojas y 25% blancas**. Ese es el clásico 3:1 de Mendel en el fenotipo (el genotipo va 1:2:1).\n\nLa opción D, con flores rosas, supondría dominancia incompleta, que es precisamente lo que las leyes de Mendel no contemplan."
           },
           {
             "id": 63,
@@ -902,7 +970,8 @@
               "C": "Mitosis",
               "D": "Meiosis"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En la **mitosis** el material genético se duplica y se reparte de modo que cada célula hija recibe exactamente la misma información que la madre: dos células idénticas entre sí y a la original, y más pequeñas porque el citoplasma se repartió en dos. Es la división del crecimiento y de la reparación de tejidos.\n\nLa meiosis (opción D) no da células idénticas: reduce los cromosomas a la mitad y produce cuatro gametos distintos. Y el ciclo celular es todo el proceso completo, interfase incluida, no solo la división."
           },
           {
             "id": 64,
@@ -915,7 +984,8 @@
               "C": "Dispositivo intrauterino (DIU)",
               "D": "Píldora del día siguiente"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La **vasectomía** es una operación: se cortan y ligan los conductos deferentes para que los espermatozoides no salgan en el semen. Al ser una intervención con bisturí, es un método quirúrgico y permanente, igual que la salpingoclasia en la mujer.\n\nEl condón es de barrera, la píldora del día siguiente es hormonal y el DIU se coloca dentro del útero en el consultorio, sin cirugía."
           }
         ]
       },
@@ -934,7 +1004,8 @@
               "C": "Matemática",
               "D": "Musical"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El fragmento lo dice con todas sus letras: \"La protección final… radicaba en que Melquíades no había ordenado los hechos en el tiempo convencional de los hombres, sino que concentró un siglo de episodios, de modo que todos coexistieran en un instante\". Lo que alteró fue el **orden del tiempo**: una protección cronológica.\n\nUna protección jeroglífica (opción B) sería otro sistema de escritura, y el texto ya nombró el sánscrito y los versos como las otras dos claves."
           },
           {
             "id": 66,
@@ -948,7 +1019,8 @@
               "C": "Prima",
               "D": "Tía"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La frase clave está en el fragmento: \"Solo entonces descubrió que Amaranta Úrsula no era su hermana, sino su tía\". Si lo *descubre* en ese momento, quiere decir que hasta entonces había creído que era su **hermana**.\n\nLa opción D es el parentesco verdadero, pero no lo que él creía: es lo que averigua al final. Ahí está la trampa de la pregunta, que pregunta por la creencia, no por el hecho."
           },
           {
             "id": 67,
@@ -962,7 +1034,8 @@
               "C": "Babilonia",
               "D": "Macedonia"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El texto dice que \"estaba previsto que la **ciudad de los espejos** (o los espejismos) sería arrasada por el viento y desterrada de la memoria de los hombres\" en el instante en que Aureliano acabara de descifrar los pergaminos. Ese pueblo condenado a desaparecer es Macondo, así que \"la ciudad de los espejos\" es el otro nombre con que la novela lo llama.\n\nBabilonia (opción C) sí aparece en el fragmento, pero como apellido del personaje, Aureliano Babilonia, no como nombre del pueblo."
           },
           {
             "id": 68,
@@ -976,7 +1049,8 @@
               "C": "Francis Drake",
               "D": "Aureliano Babilonia"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El fragmento lo señala dos veces: en los pergaminos de Melquíades \"estaba escrito su destino\" —el de Aureliano— y todo acabaría \"en el instante en que Aureliano Babilonia acabara de descifrar los pergaminos\". Él es quien los lee y los descifra, encerrado en el cuarto con puertas y ventanas clavadas.\n\nAmaranta Úrsula (opción A) es la mujer de la que se enamoró, el amor que casi lo distrae de la tarea, no quien descifra."
           },
           {
             "id": 69,
@@ -990,7 +1064,8 @@
               "C": "Cerebros más grandes",
               "D": "Fosilización"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Mira el subtítulo: \"Clima cambiante, fabricación de herramientas y cerebros más grandes\". El párrafo I anuncia esos tres hechos y el texto los desarrolla en ese orden. Los párrafos II, III y IV tratan únicamente del primero: el enfriamiento y la sequía que fragmentan el bosque (II), el clima caótico y el hielo que baja hasta Francia (III) y la falta de lluvia en África (IV). O sea, el **clima cambiante**.\n\nLas herramientas y los cerebros más grandes se mencionan en la introducción, pero en estos tres párrafos no se explican: quedan para más adelante."
           },
           {
             "id": 70,
@@ -1004,7 +1079,8 @@
               "C": "La sequía devastó bosques y secó lagos.",
               "D": "En realidad, la edad de hielo no tuvo ningún efecto sobre el clima africano."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El párrafo IV es explícito sobre África: \"El problema africano fue que cayó menos lluvia. Algunos densos bosques lluviosos se redujeron 80%. La mayoría de los lagos africanos del este, incluso el inmenso lago Victoria, finalmente se secaron\". Eso es la **sequía**: menos bosque y lagos secos.\n\nLa opción A se antoja porque estamos hablando de una edad de hielo, pero el mismo párrafo la descarta: a nivel del mar \"la temperatura del aire era solamente unos cuantos grados menos alta, lo que incluso debió haber sido más agradable\"."
           },
           {
             "id": 71,
@@ -1018,7 +1094,8 @@
               "C": "En los sedimentos de un lago",
               "D": "En cavernas de roca caliza"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La evidencia está en el último párrafo: \"Es improbable que los bosques preserven huesos\". En seguida el autor dice dónde sí se preservan: en los sedimentos de un lago que sepultan un cadáver y en cuevas donde las estalactitas gotean sobre los huesos y los sellan en piedra. Por eso los mejores hallazgos vienen de cavernas de roca caliza y de orillas de lagos antiguos.\n\nAsí que C y D son los lugares favorables, no los improbables: la pregunta pide exactamente lo contrario."
           },
           {
             "id": 72,
@@ -1032,7 +1109,8 @@
               "C": "Administrativo / resumir datos para una toma de decisiones",
               "D": "Académico / divulgar científicamente cómo fue la evolución de la mente humana"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Fíjate en cómo está escrito: da fechas y porcentajes, nombra sitios fósiles con sus coordenadas (Laetoli, Hadar), razona sobre evidencias y viene de un libro publicado por una editorial universitaria. Es un texto **académico**, y su propósito es de divulgación científica: explicar en lenguaje accesible cómo evolucionaron el cerebro y la mente humanos.\n\nNo es publicitario (no promueve ni vende nada), ni legal, ni administrativo: no hay trámite ni decisión que tomar. Y aunque hable de África, el tema es la evolución, no un problema judicial."
           },
           {
             "id": 73,
@@ -1045,7 +1123,8 @@
               "C": "Moribundo",
               "D": "Muerto"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Estar *en estado de coma* es estar en un estado en el que la persona no responde a los estímulos ni tiene conciencia de sí ni del entorno, o sea **inconsciente**. Ese es el significado más cercano.\n\n\"Dormido\" no alcanza, porque de dormido uno se despierta y del coma no se sale así. Y \"moribundo\" o \"muerto\" van demasiado lejos: quien está en coma sigue vivo y puede recuperarse."
           },
           {
             "id": 74,
@@ -1058,7 +1137,8 @@
               "C": "Librería",
               "D": "Memoria"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "*Web* es la abreviatura de *World Wide Web*, la \"telaraña mundial\": el sistema de páginas y documentos enlazados al que se accede por internet, es decir una **red mundial de comunicación**. Decir que hay libros electrónicos en la web es decir que están en esa red, disponibles desde cualquier parte.\n\nUna dirección electrónica (opción B) es solo la ubicación de un sitio *dentro* de la web: una parte, no el conjunto."
           },
           {
             "id": 75,
@@ -1071,7 +1151,8 @@
               "C": "Oído – sonido",
               "D": "Retina – visión"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La relación es órgano y el estímulo que ese órgano percibe: el ojo percibe la **luz**. Con la misma lógica, el **oído** percibe el **sonido**. Encaja exacto.\n\n\"Piel – tacto\" no es lo mismo: el tacto es el sentido, no el estímulo (sería piel – presión). \"Retina – visión\" tampoco: la retina es una parte del ojo y la visión es el sentido, no lo que se percibe."
           },
           {
             "id": 76,
@@ -1084,7 +1165,8 @@
               "C": "Mesa – madera",
               "D": "Ropa – camisa"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La relación es objeto y el material del que está hecho: el juguete es de **plástico**. Con eso, la **mesa** es de **madera**.\n\n\"Ropa – camisa\" va de categoría a ejemplo, \"cabina – avión\" es parte y todo (al revés del orden) y \"gallina – huevo\" es productor y producto. Ninguna es objeto–material."
           },
           {
             "id": 77,
@@ -1097,7 +1179,8 @@
               "C": "Remedial",
               "D": "Terapéutica"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "*Medicinal* quiere decir que sirve para curar o aliviar. Lo contrario es una planta que en vez de sanar hace daño: **tóxica**, o sea venenosa.\n\nCurativa, remedial y terapéutica significan lo mismo que medicinal: son sinónimos. Si escogiste una de ellas, vuelve a leer el enunciado, porque pide el ANTÓNIMO."
           },
           {
             "id": 78,
@@ -1110,7 +1193,8 @@
               "C": "Múltiple",
               "D": "Diversa"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "*Heterogénea* significa formada por elementos distintos, de naturaleza diversa. Su contrario apunta a lo uniforme, lo de una sola clase: una mezcla de sonidos **monótona** es la que suena siempre igual, sin variación.\n\nVariada, múltiple y diversa son sinónimos de heterogénea, no antónimos. El antónimo más técnico sería \"homogénea\", y como no está entre las opciones, monótona es la que recoge esa idea de uniformidad."
           },
           {
             "id": 79,
@@ -1123,7 +1207,8 @@
               "C": "Legal",
               "D": "Democrática"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Una facultad *exclusiva* es la que le corresponde a uno solo y a nadie más: **única**, propia de ese poder. Pruébala en la oración y funciona: \"Es una facultad única del poder legislativo\".\n\nCompartida es justo lo opuesto. Legal y democrática pueden ser ciertas en el contexto, pero no significan lo mismo que exclusiva: al sustituirlas, la frase cambia de sentido."
           },
           {
             "id": 80,
@@ -1136,7 +1221,8 @@
               "C": "Extenso",
               "D": "Antiguo"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "*Finito* es lo que tiene fin o término, lo que llega hasta algún punto y por eso se puede medir: **limitado**. Es el opuesto de infinito.\n\n\"Extenso\" tienta porque hablamos del universo, pero extenso solo dice que es muy grande, no que tenga límite: algo puede ser extenso e infinito al mismo tiempo."
           }
         ]
       },
@@ -1155,7 +1241,8 @@
               "C": "Porque deseaba exigir a su padre lo que le correspondía de herencia.",
               "D": "Porque su padre, Pedro Páramo, acababa de morir."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La evidencia está en las primeras líneas del fragmento: \"Y yo le prometí que vendría a verlo en cuanto ella muriera. Le apreté sus manos en señal de que lo haría\". El narrador viaja a Comala para cumplir la promesa que le hizo a su madre moribunda: ir a ver a su padre cuando ella faltara.\n\nSi dudaste con C: la madre sí le encarga más adelante reclamarle a Pedro Páramo lo que les debía, pero el motivo del viaje, dicho por el propio narrador, es la promesa."
           },
           {
             "id": 82,
@@ -1169,7 +1256,8 @@
               "C": "Cerca de Comala se cultiva maíz.",
               "D": "El clima de Comala es bastante cálido."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El reactivo pide lo que NO aparece en el texto. El fragmento abre con \"me dijeron que acá vivía mi padre\": Juan Preciado llega buscando a un padre que cree vivo, y en ninguna parte del fragmento se afirma que Pedro Páramo hubiera muerto. Las otras tres sí están: Comala se menciona como el pueblo al que baja el narrador, se describen las llanuras verdes y amarillas por el maíz, y se insiste en el calor sofocante del lugar."
           },
           {
             "id": 83,
@@ -1183,7 +1271,8 @@
               "C": "Ambos iban a Comala a conocer a su padre",
               "D": "Ambos eran hijos de Pedro Páramo"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La clave está en una sola palabra: \"también\". Cuando el arriero dice \"—Yo también soy hijo de Pedro Páramo—\", revela que comparte padre con el narrador: los dos son hijos de Pedro Páramo. El texto no dice que el narrador fuera arriero (A) ni que ambos hubieran nacido en Comala (B); y el arriero no va a conocer a su padre (C), va de paso por un camino que conoce de sobra."
           },
           {
             "id": 84,
@@ -1196,7 +1285,8 @@
               "C": "Administrativo / resumir datos para una toma de decisiones",
               "D": "Académico / novelar en español aspectos de la idiosincrasia mexicana"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Se trata de un fragmento de novela, así que el propósito debe ser narrativo. De las cuatro parejas, la única coherente con eso es la D: *Pedro Páramo* novela la vida, el habla y la manera de ser del México rural, es decir, la idiosincrasia mexicana; y es un texto de estudio, un clásico de la literatura en español. Las demás no encajan: no es un anuncio que venda a Comala como destino turístico, ni un documento legal sobre paternidad, ni un informe administrativo con datos para decidir algo."
           },
           {
             "id": 85,
@@ -1209,7 +1299,8 @@
               "C": "i, ii y iii",
               "D": "ii, iii y iv"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Gramaticalmente, la puntuación sirve para dos cosas: evitar ambigüedades (no es lo mismo \"No, espera\" que \"No espera\") y marcar las pausas que organizan y facilitan la lectura. Esos son los enunciados ii y iii.\n\nEl enunciado i es falso de plano: entre sujeto y predicado nunca se pone coma; ese es justo uno de los errores clásicos. Y iv describe un uso expresivo y personal, no una finalidad gramatical. Si marcaste C, te coló el enunciado i."
           },
           {
             "id": 86,
@@ -1222,7 +1313,8 @@
               "C": "Punto y seguido",
               "D": "Puntos suspensivos"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El punto y seguido cierra una oración con sentido completo y da paso a otra que continúa en el mismo párrafo, sin cambiar de renglón. El punto y coma (B) es el distractor tentador, pero separa partes de una misma idea (oraciones muy ligadas o enumeraciones complejas), no ideas completas. Los puntos suspensivos dejan la idea en suspenso, no la terminan."
           },
           {
             "id": 87,
@@ -1235,7 +1327,8 @@
               "C": "Sus manos",
               "D": "Señal"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Pregúntale al verbo: \"apreté\" está en primera persona del singular, así que quien realiza la acción soy *yo*. Es un sujeto tácito o morfológico: no está escrito, pero la terminación del verbo lo delata — solo funciona \"yo apreté\", nunca \"ella apreté\" ni \"sus manos apreté\".\n\n\"Sus manos\" (C) es el objeto directo, lo apretado; y \"ella\" (B) es la dueña de las manos, no quien ejecuta la acción."
           },
           {
             "id": 88,
@@ -1248,7 +1341,8 @@
               "C": "Copretérito",
               "D": "Pospretérito"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "\"Vivía\" está en copretérito (también llamado pretérito imperfecto): expresa una acción pasada que se prolongaba, sin decir cuándo terminó. Su seña de identidad son las terminaciones -ía y -aba: vivía, tenía, cantaba.\n\nSi el verbo fuera \"vivió\" sería pretérito (B): acción pasada y acabada. La diferencia: \"vivía\" pinta la escena todavía en curso; \"vivió\" la da por cerrada."
           },
           {
             "id": 89,
@@ -1261,7 +1355,8 @@
               "C": "Siempre",
               "D": "Húmedo"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El adverbio es \"siempre\": modifica al verbo \"está\" indicando tiempo (¿cuándo está húmedo el suelo? — siempre). De las demás opciones, \"el\" es artículo, \"suelo\" es sustantivo (el núcleo del sujeto) y \"húmedo\" es adjetivo. De pilón: en la oración hay otro adverbio, \"muy\" (de cantidad, modifica a \"húmedo\"), pero no aparece entre las opciones."
           },
           {
             "id": 90,
@@ -1274,7 +1369,8 @@
               "C": "¿Cómo se resuelve este problema?",
               "D": "Quien a buen árbol se arrima, buena sombra le cobija."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La oración mal escrita es la A: \"mi\" sin tilde es posesivo (mi casa, mi premio), pero como pronombre personal lleva tilde diacrítica: \"el premio no es para **mí**\". Ojo con la trampa inversa: \"ti\" NUNCA lleva tilde, porque no hay otro \"ti\" del cual distinguirlo; esa parte está bien escrita.\n\nLas demás son correctas: \"él\" pronombre con tilde, \"cómo\" interrogativo con tilde y \"quien\" relativo sin tilde."
           },
           {
             "id": 91,
@@ -1287,7 +1383,8 @@
               "C": "Poética",
               "D": "Emotiva"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Cuenta los imperativos: \"diles\", \"anda\", \"vete\", \"diles\", \"diles\"... Todo el párrafo son órdenes y súplicas dirigidas a Justino: el hablante quiere que el receptor haga algo. Cuando el mensaje se centra en mover al receptor a actuar, la función es apelativa (o conativa).\n\nLa emotiva (D) se antoja por la angustia del personaje, pero fíjate: no se detiene a expresar lo que siente, sino que pide y ordena; el peso del mensaje cae sobre el receptor."
           },
           {
             "id": 92,
@@ -1300,7 +1397,8 @@
               "C": "Transcribir información de un libro",
               "D": "Identificar una obra y registrar datos extraídos de ella"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Una ficha bibliográfica cumple dos funciones juntas: identifica la obra (autor, título, editorial, lugar y año de publicación) y permite registrar los datos que extraes de ella para tu investigación. Por eso la D es la respuesta completa. \"Citar una fuente\" (B) es tentadora, pero la cita es apenas uno de los usos que se desprenden de la ficha, no su objetivo total."
           }
         ]
       },
@@ -1318,7 +1416,8 @@
               "C": "A los griegos",
               "D": "A los mismos romanos en un golpe de Estado"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El Imperio romano de Occidente cayó en el año 476 d. C., cuando Odoacro depuso al último emperador, Rómulo Augústulo. El derrocamiento se atribuye a los pueblos bárbaros — así llamaban los romanos a los extranjeros —, en especial a las tribus germánicas (visigodos, ostrogodos, vándalos) que llevaban décadas presionando e invadiendo el territorio. Los árabes (B) iniciaron su expansión hasta el siglo VII, dos siglos después."
           },
           {
             "id": 94,
@@ -1331,7 +1430,8 @@
               "C": "Enrique VIII",
               "D": "Juan Calvino"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La Reforma protestante la inició Martín Lutero en 1517, cuando publicó sus 95 tesis en Wittenberg criticando, entre otras cosas, la venta de indulgencias de la Iglesia católica. Calvino (D) y Enrique VIII (C) vinieron después: el calvinismo y el anglicanismo son ramas que surgieron ya abierta la ruptura que Lutero comenzó."
           },
           {
             "id": 95,
@@ -1344,7 +1444,8 @@
               "C": "Revolución industrial",
               "D": "Globalización"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Esa transición se llama Revolución industrial: comenzó en Inglaterra en el siglo XVIII con la máquina de vapor, y el trabajo pasó del taller artesanal a la fábrica con maquinaria. El capitalismo (B) es el sistema económico que se consolidó gracias a ella, y la globalización (D) es un proceso posterior de interconexión mundial; el nombre de la transición tecnológica de lo artesanal a lo industrial es Revolución industrial."
           },
           {
             "id": 96,
@@ -1357,7 +1458,8 @@
               "C": "Revolución rusa",
               "D": "Globalización"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Con la Revolución francesa (1789) se proclamó la Declaración de los Derechos del Hombre y del Ciudadano, que reconoció derechos por la simple condición humana bajo el lema de libertad, igualdad y fraternidad: ese es el origen que se atribuye a los Derechos Humanos. La Revolución mexicana (A) aportó después los derechos sociales en la Constitución de 1917, pero el surgimiento se ubica en la francesa."
           },
           {
             "id": 97,
@@ -1370,7 +1472,8 @@
               "C": "Alemania, Italia y Japón",
               "D": "Francia, Gran Bretaña y Rusia"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La Triple Alianza (pactada desde 1882) la formaron Alemania, Austria-Hungría e Italia. El bando contrario, la Triple Entente, lo integraron Francia, Gran Bretaña y Rusia — que es justo la opción D: si la marcaste, te fuiste al bando opuesto. La opción C mezcla a Japón, que corresponde al Eje de la Segunda Guerra Mundial, no a esta."
           },
           {
             "id": 98,
@@ -1383,7 +1486,8 @@
               "C": "El bombardeo de Japón a Pearl Harbor",
               "D": "El bombardeo atómico de Estados Unidos de América a Japón"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La guerra concluyó cuando Estados Unidos lanzó las bombas atómicas sobre Hiroshima y Nagasaki en agosto de 1945, lo que forzó la rendición de Japón. El suicidio de Hitler (A) ocurrió meses antes y marcó el colapso de Alemania, pero el conflicto continuó en el Pacífico. Pearl Harbor (C) fue al revés y al principio: el ataque de Japón a Estados Unidos en 1941, el que metió a los estadounidenses a la guerra."
           },
           {
             "id": 99,
@@ -1396,7 +1500,8 @@
               "C": "Mestizo",
               "D": "Castizo"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En el sistema de castas de la Nueva España, el hijo de español e india (o de española e indio) era el mestizo. Criollo (B) era el hijo de españoles nacido en América, sin mezcla. El castizo (D) es la trampa fina: era el hijo de mestizo con española, es decir, un escalón después del mestizaje, no la primera mezcla."
           },
           {
             "id": 100,
@@ -1409,7 +1514,8 @@
               "C": "Extracción de metales",
               "D": "Explotación petrolera"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La actividad estrella fue la extracción de metales, sobre todo la plata: minas como las de Zacatecas, Guanajuato o Taxco sostuvieron el envío de riqueza a España, que cobraba impuestos como el quinto real. La explotación petrolera (D) es un anacronismo: el petróleo se explotó hasta el siglo XX, ya en el México independiente."
           },
           {
             "id": 101,
@@ -1422,7 +1528,8 @@
               "C": "Francisco Villa",
               "D": "Benito Juárez"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Tras el fusilamiento de Hidalgo en 1811, el mando insurgente lo tomó José María Morelos y Pavón, gran estratega militar (recuerda el sitio de Cuautla), quien además convocó el Congreso de Chilpancingo y redactó los Sentimientos de la Nación. Zapata y Villa (B, C) son de la Revolución mexicana, un siglo después; Juárez (D), de la época de la Reforma."
           },
           {
             "id": 102,
@@ -1435,7 +1542,8 @@
               "C": "Agustín de Iturbide",
               "D": "Francisco Javier Mina"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El 27 de septiembre de 1821, Agustín de Iturbide entró a la Ciudad de México al frente del Ejército Trigarante, con lo que se consumó la Independencia. Vicente Guerrero (A) fue pieza clave — con Iturbide selló el Abrazo de Acatempan y el Plan de Iguala —, pero quien encabezó la entrada triunfal fue Iturbide. Morelos (B) había muerto fusilado desde 1815."
           },
           {
             "id": 103,
@@ -1448,7 +1556,8 @@
               "C": "Benito Juárez",
               "D": "Porfirio Díaz"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Los periodos que da el reactivo suman más de treinta años en el poder entre 1876 y 1911: es el Porfiriato, la época de Porfirio Díaz. Con él llegaron ferrocarriles, inversión extranjera y prosperidad económica, además de instituciones culturales; pero también represión, censura y violaciones a los derechos humanos, como en las huelgas de Cananea y Río Blanco. Juárez (C) murió en 1872, antes de estas fechas."
           },
           {
             "id": 104,
@@ -1461,7 +1570,8 @@
               "C": "Plan de Ayala",
               "D": "Constitución Política de los Estados Unidos Mexicanos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El Plan de San Luis, proclamado por Francisco I. Madero, desconocía la reelección de Porfirio Díaz y llamaba a levantarse en armas el 20 de noviembre de 1910: el arranque de la Revolución mexicana. El Plan de Ayala (C) es de Zapata, de 1911, y fue contra Madero por no cumplir el reparto agrario; los Sentimientos de la Nación (A) son de Morelos, de 1813, un siglo antes."
           }
         ]
       },
@@ -1479,7 +1589,8 @@
               "C": "Ecuador / 180° N y 180° S",
               "D": "Ecuador / 90° N y 90° S"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La latitud se mide a partir del ecuador (el paralelo 0°) hacia los polos, y su valor máximo es 90° N y 90° S, justo en los polos. Si marcaste B, cruzaste los conceptos: el meridiano 0° (Greenwich) es el punto de partida de la *longitud*, que se mide hacia el este y el oeste hasta 180° — la pareja de la opción A describe a la longitud, no a la latitud."
           },
           {
             "id": 106,
@@ -1492,7 +1603,8 @@
               "C": "Traslación",
               "D": "Precesión"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La diferencia de horarios la causa la rotación: la Tierra gira sobre su propio eje 360° en 24 horas (15° por hora), así que mientras en un lado del planeta es mediodía, en otro ya atardeció; de ahí los husos horarios. La traslación (C) es la vuelta alrededor del Sol: dura un año y causa las estaciones, no la hora del día."
           },
           {
             "id": 107,
@@ -1505,7 +1617,8 @@
               "C": "Expansión",
               "D": "Subducción"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En medio del océano Atlántico corre la dorsal mesoatlántica, una cordillera submarina por cuya grieta emerge magma que al enfriarse crea corteza oceánica nueva; ese material empuja las placas hacia los lados y separa América de Europa unos centímetros cada año. Si dudaste con \"expansión\" (C): la expansión del fondo oceánico es el proceso que resulta; la estructura causante que pregunta el reactivo es la dorsal. La subducción (D) es lo contrario: placas que se juntan y una se hunde bajo la otra."
           },
           {
             "id": 108,
@@ -1518,7 +1631,8 @@
               "C": "Depresiones relativas",
               "D": "Límites de placas tectónicas"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Los sismos se concentran donde las placas tectónicas se tocan: en sus límites, las placas chocan, se separan o se deslizan una contra otra, y la fricción acumula energía que se libera como terremoto. El ejemplo clásico es el Cinturón de Fuego del Pacífico, donde se ubica México. El tipo de relieve (planicies, mesetas, depresiones) no determina la sismicidad; la cercanía a una frontera de placas, sí."
           },
           {
             "id": 109,
@@ -1531,7 +1645,8 @@
               "C": "Ceniza y lluvia ácida",
               "D": "Tierras fértiles y lluvia abundante"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Las manifestaciones secundarias del vulcanismo son las que ocurren sin erupción: el calor del magma calienta las aguas subterráneas y produce aguas termales, géiseres y fumarolas. La ceniza (C) es el distractor: es producto directo de una erupción, o sea, vulcanismo primario. Las tierras fértiles (D) son una consecuencia a largo plazo, no una manifestación del fenómeno."
           },
           {
             "id": 110,
@@ -1544,7 +1659,8 @@
               "C": "Chiapas",
               "D": "Yucatán"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Es Chiapas: en su territorio predominan las zonas selváticas, con la Selva Lacandona como el gran macizo de selva alta del país, favorecida por un clima cálido y muy lluvioso. Veracruz y Yucatán (B, D) tienen zonas de selva, pero no como paisaje predominante en el grado de Chiapas; Durango (A) es de bosques templados de pino-encino y zonas semiáridas."
           },
           {
             "id": 111,
@@ -1557,7 +1673,8 @@
               "C": "Mesosfera",
               "D": "Exosfera"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Esa capa es la estratosfera, que se extiende aproximadamente entre los 10 y los 50 km de altura: ahí la radiación ultravioleta transforma el oxígeno ($\\mathrm{O_2}$) en ozono ($\\mathrm{O_3}$), formando la capa de ozono que filtra esa misma radiación y protege la vida. La troposfera (A) es la capa donde vivimos y donde ocurren los fenómenos meteorológicos, no la del ozono."
           },
           {
             "id": 112,
@@ -1570,7 +1687,8 @@
               "C": "El clima",
               "D": "El ciclo del agua"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Luz solar, presión, temperatura, viento y humedad son los elementos del clima: las variables que se miden para caracterizar el estado de la atmósfera en un lugar. No los confundas con los *factores* del clima (latitud, altitud, cercanía al mar, relieve), que son las condiciones que modifican a esos elementos. La litosfera y la hidrosfera son capas de la Tierra, no conjuntos de variables atmosféricas."
           },
           {
             "id": 113,
@@ -1583,7 +1701,8 @@
               "C": "África",
               "D": "América"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Asia concentra cerca del 60 % de la humanidad — ahí están China e India, los países más poblados del mundo — y por ese enorme volumen ha sido el continente que más habitantes suma: el de mayor crecimiento poblacional en números absolutos. África (C) es el distractor fuerte: tiene la mayor *tasa* de crecimiento, es decir, el ritmo porcentual más acelerado, pero sobre una población mucho menor."
           },
           {
             "id": 114,
@@ -1596,7 +1715,8 @@
               "C": "África",
               "D": "América"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Europa es el continente con mayor esperanza de vida: sus habitantes rondan en promedio los 80 años, gracias a sistemas de salud sólidos, buena alimentación y alto nivel de vida (piensa en España, Italia, Suiza o los países nórdicos). África, en el otro extremo, tiene la más baja. América (D) incluye países de esperanza alta, pero su promedio continental queda por debajo del europeo."
           },
           {
             "id": 115,
@@ -1609,7 +1729,8 @@
               "C": "Veracruz y Manzanillo",
               "D": "Manzanillo y La Paz"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Los puertos de altura son los que reciben y despachan barcos de comercio internacional, y los dos principales de México son Veracruz, en el Golfo (la puerta hacia el Atlántico, Estados Unidos y Europa), y Manzanillo, en el Pacífico (la puerta hacia Asia, hoy el de mayor movimiento de contenedores). Acapulco y Cancún (opciones A y B) son puertos esencialmente turísticos, no de carga comercial."
           },
           {
             "id": 116,
@@ -1622,7 +1743,8 @@
               "C": "Papa",
               "D": "Maíz"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El maíz: es la base de la alimentación mexicana desde la época prehispánica — de él salen la tortilla, el tamal, el atole — y históricamente ha sido el cultivo con mayor superficie sembrada del país. El frijol (A) lo acompaña en la dieta y en la milpa, pero el producto agrícola principal, por volumen y por peso cultural, es el maíz."
           }
         ]
       },
@@ -1640,7 +1762,8 @@
               "C": "Ética",
               "D": "No ética"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El narcotráfico está tipificado como delito: producir, transportar y comerciar drogas prohibidas viola las leyes penales, así que es, ante todo, una actividad ilegal, perseguida y castigada por el Estado. Que además sea contraria a la ética (D) es cierto, pero su rasgo definitorio es que la ley la prohíbe expresamente: esa es su clasificación fundamental."
           },
           {
             "id": 118,
@@ -1653,7 +1776,8 @@
               "C": "Ética",
               "D": "No ética"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Aquí el reactivo evalúa la conducta del servidor público desde lo moral: el policía traiciona los deberes de su cargo — proteger a la sociedad y aplicar la ley — a cambio de dinero. Actuar contra los principios de la propia función es una conducta no ética. Si marcaste \"ilegal\" (A), no vas descaminado — el cohecho también es delito —, pero lo que el reactivo subraya es la falta a los valores que el policía juró cumplir."
           },
           {
             "id": 119,
@@ -1666,7 +1790,8 @@
               "C": "Ético",
               "D": "No ético"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Honrar a los héroes patrios es un acto cívico: expresa respeto y pertenencia a la comunidad nacional, como los honores a la bandera o las ceremonias del 16 de septiembre. El civismo agrupa justamente los deberes y prácticas del ciudadano hacia su país. No es un asunto de bondad o malicia moral (C), ni mucho menos algo ilegal: es una práctica ciudadana."
           },
           {
             "id": 120,
@@ -1679,7 +1804,8 @@
               "C": "Laica",
               "D": "Discriminante"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Es una postura laica: el laicismo sostiene que el Estado y sus instituciones — la escuela pública entre ellas — deben mantenerse independientes de toda religión. Así lo establece el artículo 3.º constitucional: la educación que imparta el Estado será laica. No es una postura discriminante (D): no ataca ninguna fe ni a sus creyentes, solo separa la religión de la enseñanza pública."
           },
           {
             "id": 121,
@@ -1692,7 +1818,8 @@
               "C": "Religiosas",
               "D": "Sociales"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La pista está en \"bondad o malicia\": juzgar los actos como buenos o malos es el terreno de la moral, así que son las normas morales. Las jurídicas (B) se definen por la legalidad y las sanciona el Estado; las religiosas (C), por los mandatos de una fe; y las sociales (D), por la costumbre y la cortesía (llegar puntual, saludar). Solo las morales califican la conducta según lo bueno y lo malo."
           },
           {
             "id": 122,
@@ -1705,7 +1832,8 @@
               "C": "Dictatorial",
               "D": "Constitucional"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Es una postura constitucional: la prohibición de la esclavitud está escrita en el artículo 1.º de la Constitución Política de los Estados Unidos Mexicanos, que además libera a cualquier esclavo extranjero que pise territorio nacional. No se trata solo de una convicción cívica o moral: es un mandato de la ley suprema del país, y de ahí toma su nombre la postura."
           },
           {
             "id": 123,
@@ -1718,7 +1846,8 @@
               "C": "Social",
               "D": "Psicológico"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Cuando el sometimiento se logra con la fuerza, un arma o algún objeto, el daño recae directamente sobre el cuerpo de la víctima: es maltrato físico. El psicológico (D) es su contraparte: somete con palabras, miedo y humillaciones, sin contacto corporal. La pista para distinguirlos está en los medios: fuerza y objetos, físico; palabras y amenazas, psicológico."
           },
           {
             "id": 124,
@@ -1731,7 +1860,8 @@
               "C": "Social",
               "D": "Psicológico"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Intimidación, groserías, gritos y amenazas son agresiones que no tocan el cuerpo, pero dañan la mente, la autoestima y la dignidad de la persona: eso es maltrato psicológico. Compáralo con el reactivo anterior: si el medio es la fuerza o un objeto, es físico (A); si el medio son las palabras y el miedo, es psicológico."
           },
           {
             "id": 125,
@@ -1744,7 +1874,8 @@
               "C": "Respeto",
               "D": "Cooperación"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Trabajar en conjunto para lograr objetivos en beneficio de todos es la cooperación: la palabra misma lo dice, co-operar, operar juntos. Piensa en el tequio o las faenas comunitarias. La responsabilidad (B) y el respeto (C) son valores que cada quien practica individualmente; la que implica sumar esfuerzos con otros por un fin común es la cooperación."
           },
           {
             "id": 126,
@@ -1757,7 +1888,8 @@
               "C": "Respeto",
               "D": "Cooperación"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Considerar el valor de la otra persona y tratarla en consecuencia, esperando un trato semejante de vuelta — la reciprocidad —, es la definición de respeto: \"respeta y te respetarán\". La tolerancia (A) es el distractor cercano, pero se queda corta: tolerar es admitir lo diferente aunque no se comparta; respetar es reconocerle valor al otro, no solo soportarlo."
           },
           {
             "id": 127,
@@ -1770,7 +1902,8 @@
               "C": "La disciplina",
               "D": "El respeto, la solidaridad, la tolerancia, la cooperación y la libertad"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La convivencia social no se sostiene sobre un solo valor, sino sobre el conjunto: respeto, solidaridad, tolerancia, cooperación y libertad, cada uno cubriendo una parte del trato con los demás. Por eso la opción completa es la D. La igualdad (A) es valiosa, pero por sí sola no basta para explicar la convivencia; la religión y la disciplina ni siquiera son requisitos de ella."
           },
           {
             "id": 128,
@@ -1783,7 +1916,8 @@
               "C": "El Congreso de la Unión",
               "D": "El presidente de los Estados Unidos Mexicanos"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Al jefe de gobierno lo eligen directamente los ciudadanos que habitan en la Ciudad de México, mediante voto universal, libre, directo y secreto, igual que a los gobernadores de los estados. La opción D es la trampa histórica: antes de 1997 el presidente de la República nombraba a un regente del Distrito Federal, pero la reforma política acabó con eso y desde entonces el cargo se gana en las urnas."
           }
         ]
       }
