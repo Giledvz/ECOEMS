@@ -1,0 +1,492 @@
+{
+ "lote": "unam-a4-3__g02",
+ "examen": "unam-a4-3.json",
+ "titulo": "UNAM Área 4 - 3",
+ "materia": "Matemáticas + Literatura + Geografía + Biología",
+ "preguntas": [
+  {
+   "id": 41,
+   "texto": "Si $f(x) = 2x + 6$, entonces $f^{-1}(x)$ es:",
+   "opciones": {
+    "A": "$\\frac{x - 6}{2}$",
+    "B": "$\\frac{x + 6}{2}$",
+    "C": "$2x - 6$",
+    "D": "$\\frac{1}{2x + 6}$"
+   },
+   "clave": "A",
+   "tema": "Funciones — inversa"
+  },
+  {
+   "id": 42,
+   "texto": "El ángulo de $60°$ expresado en radianes es:",
+   "opciones": {
+    "A": "$\\frac{\\pi}{6}$",
+    "B": "$\\frac{\\pi}{4}$",
+    "C": "$\\frac{\\pi}{3}$",
+    "D": "$\\frac{\\pi}{2}$"
+   },
+   "clave": "C",
+   "tema": "Ángulos — medida en radianes"
+  },
+  {
+   "id": 43,
+   "texto": "A partir de la siguiente imagen, determina la razón trigonométrica que corresponde a la secante del ángulo θ.",
+   "opciones": {
+    "A": "$\\frac{2}{\\sqrt{13}}$",
+    "B": "$\\frac{\\sqrt{13}}{2}$",
+    "C": "$\\frac{3}{\\sqrt{13}}$",
+    "D": "$\\frac{\\sqrt{13}}{3}$"
+   },
+   "clave": "B",
+   "tema": "Trigonometría — razón trigonométrica (secante)",
+   "figura": "/imagenes_unam-a4-3/ext_p69_img2.svg"
+  },
+  {
+   "id": 44,
+   "texto": "Determina el valor del lado p del siguiente triángulo.\n\nConsidera\nSen(40°) = 0.64\nSen(100°) = 0.98\nCos(40°) = 0.76\nCos(100°) = 0.17",
+   "opciones": {
+    "A": "16.10 m",
+    "B": "13.05 m",
+    "C": "18.34 m",
+    "D": "30.64 m"
+   },
+   "clave": "B",
+   "tema": "Trigonometría — ley de senos",
+   "figura": "/imagenes_unam-a4-3/ext_p69_img1.svg"
+  },
+  {
+   "id": 45,
+   "texto": "Si $3^x = 81$, entonces $x$ es:",
+   "opciones": {
+    "A": "$3$",
+    "B": "$4$",
+    "C": "$27$",
+    "D": "$5$"
+   },
+   "clave": "B",
+   "tema": "Funciones exponenciales"
+  },
+  {
+   "id": 46,
+   "texto": "El valor de $\\log_{10} 1000 + \\log_{10} 10$ es:",
+   "opciones": {
+    "A": "$3$",
+    "B": "$4$",
+    "C": "$30$",
+    "D": "$13$"
+   },
+   "clave": "B",
+   "tema": "Propiedades de logaritmos"
+  },
+  {
+   "id": 47,
+   "texto": "El punto medio del segmento con extremos $A(2, 8)$ y $B(6, 4)$ es:",
+   "opciones": {
+    "A": "$(3, 5)$",
+    "B": "$(4, 6)$",
+    "C": "$(8, 12)$",
+    "D": "$(2, 2)$"
+   },
+   "clave": "B",
+   "tema": "Punto medio de un segmento"
+  },
+  {
+   "id": 48,
+   "texto": "Elige la ecuación que describe la siguiente gráfica.",
+   "opciones": {
+    "A": "$y = x - \\frac{1}{2}$",
+    "B": "$y = \\frac{3}{2}x - \\frac{1}{2}$",
+    "C": "$y = -\\frac{3}{2}x + \\frac{1}{2}$",
+    "D": "$y = \\frac{x}{2} - 1$"
+   },
+   "clave": "D",
+   "tema": "Geometría analítica — ecuación de la recta (gráfica)",
+   "figura": "/imagenes_unam-a4-3/ext_p70_img1.svg"
+  },
+  {
+   "id": 49,
+   "texto": "¿Cuál es la ecuación que corresponde a la siguiente gráfica?",
+   "opciones": {
+    "A": "$x^2 + y^2 = -1$",
+    "B": "$x^2 + y^2 = 1$",
+    "C": "$x^2 - y^2 = 1$",
+    "D": "$x^2 - y^2 = -1$"
+   },
+   "clave": "C",
+   "tema": "Cónicas — ecuación de hipérbola",
+   "figura": "/imagenes_unam-a4-3/ext_p71_img1.svg"
+  },
+  {
+   "id": 50,
+   "texto": "El valor de $\\lim_{x \\to 3} (2x^2 - 5x + 1)$ es:",
+   "opciones": {
+    "A": "$2$",
+    "B": "$4$",
+    "C": "$10$",
+    "D": "$-2$"
+   },
+   "clave": "B",
+   "tema": "Límites — evaluación directa"
+  },
+  {
+   "id": 51,
+   "texto": "Un texto expositivo tiene como finalidad principal:",
+   "opciones": {
+    "A": "Expresar emociones y sentimientos del autor",
+    "B": "Convencer al lector de una postura determinada",
+    "C": "Informar y explicar un tema de manera clara y objetiva",
+    "D": "Narrar hechos ficticios con personajes y trama"
+   },
+   "clave": "C",
+   "tema": "Texto expositivo y sus características"
+  },
+  {
+   "id": 52,
+   "texto": "Los elementos fundamentales de la estructura interna de un texto dramático son:",
+   "opciones": {
+    "A": "Narrador, ambiente y trama",
+    "B": "Tesis, argumentos y conclusión",
+    "C": "Acto, escena y acotación",
+    "D": "Estrofa, verso y rima"
+   },
+   "clave": "C",
+   "tema": "Estructura del texto dramático"
+  },
+  {
+   "id": 53,
+   "texto": "La comedia como subgénero dramático se caracteriza por:",
+   "opciones": {
+    "A": "Presentar un final trágico e inevitable",
+    "B": "Tratar temas exclusivamente históricos",
+    "C": "Provocar la risa y presentar un desenlace feliz",
+    "D": "Emplear solo personajes de clase alta"
+   },
+   "clave": "C",
+   "tema": "Comedia"
+  },
+  {
+   "id": 54,
+   "texto": "Un verso de once sílabas métricas se denomina:",
+   "opciones": {
+    "A": "Octosílabo",
+    "B": "Alejandrino",
+    "C": "Endecasílabo",
+    "D": "Decasílabo"
+   },
+   "clave": "C",
+   "tema": "Texto poético — métrica"
+  },
+  {
+   "id": 55,
+   "texto": "La expresión 'Te lo he dicho un millón de veces' es un ejemplo de:",
+   "opciones": {
+    "A": "Metáfora",
+    "B": "Hipérbole",
+    "C": "Símil",
+    "D": "Personificación"
+   },
+   "clave": "B",
+   "tema": "Figuras retóricas — hipérbole"
+  },
+  {
+   "id": 56,
+   "texto": "El género literario que expresa sentimientos y emociones del autor a través del verso se denomina:",
+   "opciones": {
+    "A": "Épico",
+    "B": "Dramático",
+    "C": "Narrativo",
+    "D": "Lírico"
+   },
+   "clave": "D",
+   "tema": "Género lírico"
+  },
+  {
+   "id": 57,
+   "texto": "El Romanticismo literario del siglo XIX se distingue por:",
+   "opciones": {
+    "A": "La exaltación de la razón y el orden clásico",
+    "B": "La representación objetiva de la realidad social",
+    "C": "La expresión de los sentimientos, la libertad y la naturaleza",
+    "D": "El uso de técnicas experimentales y el absurdo"
+   },
+   "clave": "C",
+   "tema": "Romanticismo"
+  },
+  {
+   "id": 58,
+   "texto": "Sor Juana Inés de la Cruz es una representante del:",
+   "opciones": {
+    "A": "Romanticismo mexicano",
+    "B": "Barroco novohispano",
+    "C": "Modernismo latinoamericano",
+    "D": "Naturalismo mexicano"
+   },
+   "clave": "B",
+   "tema": "Barroco"
+  },
+  {
+   "id": 59,
+   "texto": "En el verso 'La luna sonreía desde el cielo oscuro', la figura retórica empleada es:",
+   "opciones": {
+    "A": "Hipérbaton",
+    "B": "Antítesis",
+    "C": "Personificación",
+    "D": "Sinécdoque"
+   },
+   "clave": "C",
+   "tema": "Figuras retóricas — personificación"
+  },
+  {
+   "id": 60,
+   "texto": "El narrador en primera persona se caracteriza por:",
+   "opciones": {
+    "A": "Conocer los pensamientos de todos los personajes",
+    "B": "Contar la historia desde su propia experiencia como personaje",
+    "C": "Mantenerse completamente ajeno a los hechos narrados",
+    "D": "Dirigirse directamente al lector sin participar en la trama"
+   },
+   "clave": "B",
+   "tema": "Elementos de la narración — tipos de narrador"
+  },
+  {
+   "id": 61,
+   "texto": "La forma real de la Tierra se describe más precisamente como un:",
+   "opciones": {
+    "A": "Esferoide perfecto",
+    "B": "Geoide, ligeramente achatado en los polos",
+    "C": "Cilindro irregular",
+    "D": "Ovoide simétrico"
+   },
+   "clave": "B",
+   "tema": "Forma y dimensiones de la Tierra"
+  },
+  {
+   "id": 62,
+   "texto": "Los husos horarios dividen la Tierra en:",
+   "opciones": {
+    "A": "12 franjas de 30° cada una",
+    "B": "24 franjas de 15° cada una",
+    "C": "36 franjas de 10° cada una",
+    "D": "48 franjas de 7.5° cada una"
+   },
+   "clave": "B",
+   "tema": "Husos horarios"
+  },
+  {
+   "id": 63,
+   "texto": "El Eje Neovolcánico Transversal de México es importante porque:",
+   "opciones": {
+    "A": "Concentra los principales volcanes activos del país",
+    "B": "Es la frontera natural entre México y Guatemala",
+    "C": "Separa las aguas del Pacífico y del Atlántico",
+    "D": "Es la zona más seca del territorio mexicano"
+   },
+   "clave": "A",
+   "tema": "Vulcanismo en México"
+  },
+  {
+   "id": 64,
+   "texto": "Los ríos Lerma-Santiago y Balsas pertenecen a la vertiente del:",
+   "opciones": {
+    "A": "Golfo de México",
+    "B": "Mar Caribe",
+    "C": "Océano Pacífico",
+    "D": "Interior (cuencas cerradas)"
+   },
+   "clave": "C",
+   "tema": "Hidrografía de México"
+  },
+  {
+   "id": 65,
+   "texto": "El clima predominante en la Península de Yucatán es:",
+   "opciones": {
+    "A": "Templado húmedo",
+    "B": "Seco desértico",
+    "C": "Tropical con lluvias en verano",
+    "D": "Frío de alta montaña"
+   },
+   "clave": "C",
+   "tema": "Climas de México"
+  },
+  {
+   "id": 66,
+   "texto": "La capa de ozono protege a la Tierra de:",
+   "opciones": {
+    "A": "Las tormentas solares magnéticas",
+    "B": "Los rayos ultravioleta provenientes del Sol",
+    "C": "El aumento de la temperatura superficial",
+    "D": "La radiación infrarroja reflejada por la Tierra"
+   },
+   "clave": "B",
+   "tema": "Deterioro ambiental — capa de ozono"
+  },
+  {
+   "id": 67,
+   "texto": "La transición demográfica describe el paso de una sociedad con:",
+   "opciones": {
+    "A": "Alta natalidad y baja mortalidad a baja natalidad y alta mortalidad",
+    "B": "Altas tasas de natalidad y mortalidad a bajas tasas de ambas",
+    "C": "Baja natalidad y baja mortalidad a altas tasas de ambas",
+    "D": "Alta mortalidad y baja migración a alta migración y baja mortalidad"
+   },
+   "clave": "B",
+   "tema": "Crecimiento demográfico — transición demográfica"
+  },
+  {
+   "id": 68,
+   "texto": "La agricultura, la ganadería y la pesca son actividades económicas del sector:",
+   "opciones": {
+    "A": "Secundario",
+    "B": "Terciario",
+    "C": "Primario",
+    "D": "Cuaternario"
+   },
+   "clave": "C",
+   "tema": "Actividades económicas"
+  },
+  {
+   "id": 69,
+   "texto": "La Organización de las Naciones Unidas (ONU) fue creada en 1945 con el propósito principal de:",
+   "opciones": {
+    "A": "Regular el comercio internacional entre naciones",
+    "B": "Mantener la paz y la seguridad internacionales",
+    "C": "Financiar proyectos de desarrollo en países pobres",
+    "D": "Establecer una moneda única mundial"
+   },
+   "clave": "B",
+   "tema": "Organismos internacionales"
+  },
+  {
+   "id": 70,
+   "texto": "La región económica del noroeste de México se caracteriza por:",
+   "opciones": {
+    "A": "La producción petrolera y petroquímica",
+    "B": "La industria automotriz y manufacturera de exportación",
+    "C": "La agricultura de riego y la industria maquiladora",
+    "D": "El turismo cultural y la producción artesanal"
+   },
+   "clave": "C",
+   "tema": "Regiones económicas de México"
+  },
+  {
+   "id": 71,
+   "texto": "¿Cuál de las siguientes NO es una característica de los seres vivos?",
+   "opciones": {
+    "A": "Reproducción",
+    "B": "Metabolismo",
+    "C": "Cristalización",
+    "D": "Irritabilidad"
+   },
+   "clave": "C",
+   "tema": "Características de los seres vivos"
+  },
+  {
+   "id": 72,
+   "texto": "Los cuatro bioelementos primarios que constituyen aproximadamente el 96% de la materia viva son:",
+   "opciones": {
+    "A": "Carbono, hidrógeno, oxígeno y nitrógeno",
+    "B": "Carbono, calcio, fósforo y potasio",
+    "C": "Hidrógeno, oxígeno, hierro y sodio",
+    "D": "Nitrógeno, azufre, magnesio y cloro"
+   },
+   "clave": "A",
+   "tema": "Composición química de los seres vivos"
+  },
+  {
+   "id": 73,
+   "texto": "La función principal de los carbohidratos en los organismos es:",
+   "opciones": {
+    "A": "Transmitir información genética",
+    "B": "Catalizar reacciones químicas",
+    "C": "Proporcionar energía de uso inmediato",
+    "D": "Formar la membrana celular"
+   },
+   "clave": "C",
+   "tema": "Biomoléculas — carbohidratos"
+  },
+  {
+   "id": 74,
+   "texto": "Las enzimas son proteínas que actúan como:",
+   "opciones": {
+    "A": "Hormonas reguladoras del crecimiento",
+    "B": "Catalizadores biológicos que aceleran reacciones",
+    "C": "Transportadores de oxígeno en la sangre",
+    "D": "Receptores de señales nerviosas"
+   },
+   "clave": "B",
+   "tema": "Enzimas"
+  },
+  {
+   "id": 75,
+   "texto": "El producto final de la cadena de transporte de electrones en la respiración aerobia es:",
+   "opciones": {
+    "A": "Ácido pirúvico",
+    "B": "Glucosa",
+    "C": "Agua",
+    "D": "Acetil-CoA"
+   },
+   "clave": "C",
+   "tema": "Respiración celular aerobia"
+  },
+  {
+   "id": 76,
+   "texto": "En la metafase de la mitosis, los cromosomas se caracterizan por:",
+   "opciones": {
+    "A": "Descondensarse y formar la cromatina",
+    "B": "Alinearse en el plano ecuatorial de la célula",
+    "C": "Migrar hacia los polos opuestos",
+    "D": "Duplicar su ADN en preparación para la división"
+   },
+   "clave": "B",
+   "tema": "Mitosis — fases"
+  },
+  {
+   "id": 77,
+   "texto": "En la dominancia incompleta, el fenotipo del heterocigoto es:",
+   "opciones": {
+    "A": "Idéntico al del homocigoto dominante",
+    "B": "Idéntico al del homocigoto recesivo",
+    "C": "Un fenotipo intermedio entre ambos homocigotos",
+    "D": "Aleatorio entre dominante y recesivo"
+   },
+   "clave": "C",
+   "tema": "Herencia — dominancia incompleta"
+  },
+  {
+   "id": 78,
+   "texto": "La hipótesis de Oparin-Haldane propone que la vida se originó a partir de:",
+   "opciones": {
+    "A": "Organismos extraterrestres que llegaron en meteoritos",
+    "B": "La creación instantánea de células completas",
+    "C": "Reacciones químicas en una atmósfera primitiva reductora",
+    "D": "La generación espontánea de microorganismos"
+   },
+   "clave": "C",
+   "tema": "Origen de la vida"
+  },
+  {
+   "id": 79,
+   "texto": "Los órganos homólogos son evidencia de evolución porque indican:",
+   "opciones": {
+    "A": "Que los organismos tienen la misma dieta",
+    "B": "Un ancestro común entre especies diferentes",
+    "C": "Adaptación a un mismo ambiente",
+    "D": "Que todos los organismos son idénticos genéticamente"
+   },
+   "clave": "B",
+   "tema": "Evidencias de la evolución"
+  },
+  {
+   "id": 80,
+   "texto": "El ciclo del carbono incluye procesos como la fotosíntesis y la respiración porque:",
+   "opciones": {
+    "A": "Ambos liberan oxígeno a la atmósfera",
+    "B": "La fotosíntesis fija $CO_2$ y la respiración lo libera, reciclando el carbono",
+    "C": "Ambos procesos ocurren exclusivamente en plantas",
+    "D": "El carbono solo se encuentra en forma de diamante y grafito"
+   },
+   "clave": "B",
+   "tema": "Ciclos biogeoquímicos"
+  }
+ ]
+}

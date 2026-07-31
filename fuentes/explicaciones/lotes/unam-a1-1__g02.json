@@ -1,0 +1,490 @@
+{
+ "lote": "unam-a1-1__g02",
+ "examen": "unam-a1-1.json",
+ "titulo": "UNAM Área 1 - 1",
+ "materia": "Matemáticas + Física + Química + Biología",
+ "preguntas": [
+  {
+   "id": 41,
+   "texto": "La expresión $f(t)=\\cos(2t+3)$ es una función de posición de movimiento armónico, la expresión para la aceleración es",
+   "opciones": {
+    "A": "$a(t)=-4\\cos(2t+3)$",
+    "B": "$a(t)=-\\cos(2t+3)$",
+    "C": "$a(t)=\\cos(2t+3)$",
+    "D": "$a(t)=-4\\cos(2t-3)$"
+   },
+   "clave": "A",
+   "tema": "Derivadas — aceleración"
+  },
+  {
+   "id": 42,
+   "texto": "El punto máximo de $y=\\operatorname{sen}(x)$ en $(-\\infty, \\infty)$ es",
+   "opciones": {
+    "A": "$1$",
+    "B": "$\\dfrac{\\sqrt{3}}{2}$",
+    "C": "$\\dfrac{1}{2}$",
+    "D": "$0$"
+   },
+   "clave": "A",
+   "tema": "Máximos y mínimos"
+  },
+  {
+   "id": 43,
+   "texto": "El valor de la integral definida $\\displaystyle\\int_0^2 x^2\\,dx$ es igual a",
+   "opciones": {
+    "A": "$0$",
+    "B": "$2$",
+    "C": "$\\dfrac{8}{3}$",
+    "D": "$8$"
+   },
+   "clave": "C",
+   "tema": "Integral definida"
+  },
+  {
+   "id": 44,
+   "texto": "La integral $\\displaystyle\\int (2\\operatorname{sen} x+3\\cos x)\\,dx$ es",
+   "opciones": {
+    "A": "$2\\operatorname{sen} x+\\cos x+C$",
+    "B": "$\\cos x+\\operatorname{sen} x+C$",
+    "C": "$2\\cos x+3\\operatorname{sen} x+C$",
+    "D": "$-2\\cos x+3\\operatorname{sen} x+C$"
+   },
+   "clave": "D",
+   "tema": "Integrales trigonométricas"
+  },
+  {
+   "id": 45,
+   "texto": "Para una velocidad constante, la rapidez es",
+   "opciones": {
+    "A": "menor que la magnitud de la velocidad.",
+    "B": "mayor que la magnitud de la velocidad.",
+    "C": "igual que la magnitud del vector de la velocidad.",
+    "D": "gradualmente creciente."
+   },
+   "clave": "C",
+   "tema": "Rapidez y velocidad"
+  },
+  {
+   "id": 46,
+   "texto": "Un auto arranca acelerando constantemente $18\\,m/s^2$; la velocidad del auto dos segundos después de iniciar su movimiento es de",
+   "opciones": {
+    "A": "$9\\,m/s$",
+    "B": "$18\\,m/s$",
+    "C": "$32\\,m/s$",
+    "D": "$36\\,m/s$"
+   },
+   "clave": "D",
+   "tema": "Movimiento uniformemente acelerado"
+  },
+  {
+   "id": 47,
+   "texto": "Una mujer de 50 Kg está dentro de un elevador cuando se rompe la cuerda de acero y cae. Durante la caída, ¿cuál es la fuerza en Newtons que el piso del elevador ejerce sobre los pies de la mujer?\n\nConsidera $g=10\\,m/s^2$",
+   "opciones": {
+    "A": "$5{,}000$",
+    "B": "$50$",
+    "C": "$5$",
+    "D": "$0$"
+   },
+   "clave": "D",
+   "tema": "Caída libre — sistemas de referencia"
+  },
+  {
+   "id": 48,
+   "texto": "Sobre un objeto de $100\\,kg$ se aplican dos fuerzas (una de $20\\,N$ y otra de $30\\,N$) con la misma dirección pero de sentido contrario, ¿cuál es la magnitud de la aceleración del objeto?",
+   "opciones": {
+    "A": "$0.1\\,m/s^2$",
+    "B": "$0.2\\,m/s^2$",
+    "C": "$0.3\\,m/s^2$",
+    "D": "$0.5\\,m/s^2$"
+   },
+   "clave": "A",
+   "tema": "Segunda ley de Newton"
+  },
+  {
+   "id": 49,
+   "texto": "Suponiendo que la aceleración gravitatoria en la Luna es seis veces menor que en la Tierra, la energía potencial que posee un cuerpo en la Luna es ______ que la energía potencial que éste tendría en la Tierra.",
+   "opciones": {
+    "A": "6 veces mayor",
+    "B": "6 veces menor",
+    "C": "0.5 veces menor",
+    "D": "igual"
+   },
+   "clave": "B",
+   "tema": "Energía potencial gravitatoria"
+  },
+  {
+   "id": 50,
+   "texto": "Una bola de billar se sube a $3\\,m$ de altura en diferentes casos, como muestran las figuras. Indica cuál de las afirmaciones que se presentan es correcta.",
+   "opciones": {
+    "A": "En el caso I se efectúa mayor trabajo.",
+    "B": "En el caso II se efectúa menor trabajo.",
+    "C": "En el caso I y III se efectúa menos trabajo que en el II.",
+    "D": "En los tres casos se efectúa igual trabajo."
+   },
+   "clave": "D",
+   "tema": "Trabajo mecánico",
+   "figura": "/imagenes_unam-a1-1/q50_casos.svg"
+  },
+  {
+   "id": 51,
+   "texto": "Un niño que pesa $30\\,kg$ está quieto en un carrito, cuando el niño salta hacia adelante a $2\\,m/s$, el carrito es lanzado hacia atrás a $12\\,m/s$. ¿Cuál es la masa del carrito? (Desprecia la fricción).",
+   "opciones": {
+    "A": "$6.0\\,kg$",
+    "B": "$5.0\\,kg$",
+    "C": "$2.5\\,kg$",
+    "D": "$0.8\\,kg$"
+   },
+   "clave": "B",
+   "tema": "Conservación del momento lineal"
+  },
+  {
+   "id": 52,
+   "texto": "Las variables macroscópicas que hacen que un gas modifique su volumen son",
+   "opciones": {
+    "A": "presión y temperatura.",
+    "B": "temperatura y energía interna.",
+    "C": "energía cinética molecular y energía potencial.",
+    "D": "energía potencial y presión."
+   },
+   "clave": "A",
+   "tema": "Variables de estado de un gas"
+  },
+  {
+   "id": 53,
+   "texto": "La Teoría Cinética de los Gases predice una temperatura para la cual todas las partículas del gas cesan su movimiento aleatorio. ¿Cuál es esa temperatura?",
+   "opciones": {
+    "A": "$-100\\,°C$",
+    "B": "$0\\,°F$",
+    "C": "$0\\,°K$",
+    "D": "$0\\,°C$"
+   },
+   "clave": "C",
+   "tema": "Teoría cinética molecular"
+  },
+  {
+   "id": 54,
+   "texto": "Relaciona los tipos de onda con la característica que les corresponde.\n\n| Tipos de onda | Características |\n| --- | --- |\n| I. Longitudinal. | a. No necesita de un medio para transmitirse. |\n| II. Transversal. | b. Las partículas vibran en ángulo recto a la dirección de la onda. |\n| III. Electromagnética. | c. Las partículas vibran paralelamente a la dirección de la onda. |",
+   "opciones": {
+    "A": "I: a – II: b – III: c",
+    "B": "I: b – II: a – III: c",
+    "C": "I: b – II: c – III: a",
+    "D": "I: c – II: b – III: a"
+   },
+   "clave": "D",
+   "tema": "Tipos de onda"
+  },
+  {
+   "id": 55,
+   "texto": "El campo eléctrico es una cantidad vectorial y su magnitud se mide en",
+   "opciones": {
+    "A": "$\\dfrac{N}{kg}$",
+    "B": "$\\dfrac{N}{C}$",
+    "C": "$\\dfrac{N}{s}$",
+    "D": "$\\dfrac{J}{s}$"
+   },
+   "clave": "B",
+   "tema": "Campo eléctrico — unidades"
+  },
+  {
+   "id": 56,
+   "texto": "La corriente que circula por el resistor de resistencia $R/2$ es",
+   "opciones": {
+    "A": "$\\dfrac{V}{2R}$",
+    "B": "$\\dfrac{2V}{R}$",
+    "C": "$\\dfrac{V}{3R}$",
+    "D": "$\\dfrac{3V}{R}$"
+   },
+   "clave": "B",
+   "tema": "Ley de Ohm",
+   "figura": "/imagenes_unam-a1-1/q56_circuito.svg"
+  },
+  {
+   "id": 57,
+   "texto": "Si el flujo magnético en cierta región está cambiando con el tiempo, entonces",
+   "opciones": {
+    "A": "la energía debe ser disipada como calor.",
+    "B": "un campo eléctrico debe existir en el límite del tiempo.",
+    "C": "una corriente debe fluir en función de la variación del tiempo.",
+    "D": "una fem debe existir en función de la variación del tiempo."
+   },
+   "clave": "D",
+   "tema": "Inducción electromagnética"
+  },
+  {
+   "id": 58,
+   "texto": "La presión atmosférica disminuye en el Everest comparada con la del nivel del mar porque la",
+   "opciones": {
+    "A": "densidad del aire cambia.",
+    "B": "altura de la capa de aire soportada es menor.",
+    "C": "presión hidrostática del mar influye.",
+    "D": "densidad del aire soportada es mayor."
+   },
+   "clave": "B",
+   "tema": "Hidrostática — presión atmosférica"
+  },
+  {
+   "id": 59,
+   "texto": "Actualmente se concibe a la luz con un comportamiento dual, esto se refiere a que se le considera como",
+   "opciones": {
+    "A": "partícula y onda.",
+    "B": "energía y movimiento.",
+    "C": "calor y difracción.",
+    "D": "reflexión y refracción."
+   },
+   "clave": "A",
+   "tema": "Dualidad onda-partícula"
+  },
+  {
+   "id": 60,
+   "texto": "¿En qué áreas recibió Madame Curie el premio Nobel?",
+   "opciones": {
+    "A": "Física y Biología.",
+    "B": "Medicina y Química.",
+    "C": "Química y Biología.",
+    "D": "Física y Química."
+   },
+   "clave": "D",
+   "tema": "Historia de la física — Madame Curie"
+  },
+  {
+   "id": 61,
+   "texto": "¿En cuál de las siguientes opciones hay materiales formados únicamente por elementos?",
+   "opciones": {
+    "A": "$Na(g), \\ Cl_2(g), \\ P_4(s)$",
+    "B": "$O_2(g), \\ He(g), \\ CO(g)$",
+    "C": "$S_8(g), \\ N_2(g), \\ SO_2(g)$",
+    "D": "$CO(g), \\ Na(s), \\ S_8(s)$"
+   },
+   "clave": "A",
+   "tema": "Clasificación de la materia — elementos"
+  },
+  {
+   "id": 62,
+   "texto": "El aire es un ejemplo de",
+   "opciones": {
+    "A": "molécula.",
+    "B": "mezcla.",
+    "C": "compuesto.",
+    "D": "elemento."
+   },
+   "clave": "B",
+   "tema": "Mezclas"
+  },
+  {
+   "id": 63,
+   "texto": "Los ordenamientos horizontales en la Tabla Periódica se llaman",
+   "opciones": {
+    "A": "grupos.",
+    "B": "familias.",
+    "C": "niveles.",
+    "D": "periodos."
+   },
+   "clave": "D",
+   "tema": "Tabla periódica — periodos"
+  },
+  {
+   "id": 64,
+   "texto": "¿Cuál reacción representa la formación de una sal?",
+   "opciones": {
+    "A": "$SO_2+H_2O\\to H_2SO_3$",
+    "B": "$Cl_2+H_2O\\to HCl$",
+    "C": "$N_2O_5+H_2O\\to 2HNO_3$",
+    "D": "$HCl+KOH\\to KCl+H_2O$"
+   },
+   "clave": "D",
+   "tema": "Reacciones de neutralización"
+  },
+  {
+   "id": 65,
+   "texto": "¿Cuál de las siguientes sustancias es un ácido?",
+   "opciones": {
+    "A": "HCl",
+    "B": "NaOH",
+    "C": "NaCl",
+    "D": "$Cl_2$"
+   },
+   "clave": "A",
+   "tema": "Ácidos y bases"
+  },
+  {
+   "id": 66,
+   "texto": "¿Cuál de los siguientes valores de pH corresponde a la mayor concentración de iones $OH^-$?",
+   "opciones": {
+    "A": "2",
+    "B": "7",
+    "C": "8",
+    "D": "13"
+   },
+   "clave": "D",
+   "tema": "pH y concentración de iones"
+  },
+  {
+   "id": 67,
+   "texto": "En la siguiente reacción $x+O_2\\to$ óxido ácido, $x$ es",
+   "opciones": {
+    "A": "sodio.",
+    "B": "nitrógeno.",
+    "C": "magnesio.",
+    "D": "calcio."
+   },
+   "clave": "B",
+   "tema": "Óxidos ácidos"
+  },
+  {
+   "id": 68,
+   "texto": "El azúcar común (sacarosa) es un alimento constituido por",
+   "opciones": {
+    "A": "sólo lípidos.",
+    "B": "sólo carbohidratos.",
+    "C": "proteínas y carbohidratos.",
+    "D": "lípidos y carbohidratos."
+   },
+   "clave": "B",
+   "tema": "Biomoléculas — carbohidratos"
+  },
+  {
+   "id": 69,
+   "texto": "Una proteína está formada por",
+   "opciones": {
+    "A": "una serie de enzimas.",
+    "B": "una cadena de aminoácidos.",
+    "C": "un polímero de carbohidratos.",
+    "D": "un conjunto de triglicéridos."
+   },
+   "clave": "B",
+   "tema": "Biomoléculas — proteínas"
+  },
+  {
+   "id": 70,
+   "texto": "Con respecto a los intercambios de energía en una reacción química, ¿cuál de los siguientes enunciados es verdadero?",
+   "opciones": {
+    "A": "En una reacción endotérmica se desprende energía.",
+    "B": "En una reacción química se rompen y forman enlaces.",
+    "C": "En una reacción exotérmica se absorbe energía.",
+    "D": "En una reacción de combustión se absorbe calor."
+   },
+   "clave": "B",
+   "tema": "Termoquímica"
+  },
+  {
+   "id": 71,
+   "texto": "Organelo celular cuya principal función es la síntesis de proteínas.",
+   "opciones": {
+    "A": "Aparato de Golgi.",
+    "B": "Mitocondria.",
+    "C": "Lisosoma.",
+    "D": "Ribosoma."
+   },
+   "clave": "D",
+   "tema": "Organelos celulares — ribosoma"
+  },
+  {
+   "id": 72,
+   "texto": "Sustancia que interviene en las transacciones energéticas de la célula.",
+   "opciones": {
+    "A": "AMP",
+    "B": "NAD",
+    "C": "FAD",
+    "D": "ATP"
+   },
+   "clave": "D",
+   "tema": "Metabolismo energético — ATP"
+  },
+  {
+   "id": 73,
+   "texto": "¿Cuál o cuáles de las siguientes características son ventajas biológicas de la reproducción sexual?\n\nI. Permite la producción de descendientes idénticos al progenitor.\nII. Propicia la variabilidad genética por el intercambio genético durante la meiosis y la fecundación.\nIII. Mantiene la condición diploide de la especie por la unión de gametos de diferente progenitor.",
+   "opciones": {
+    "A": "III",
+    "B": "I y II",
+    "C": "I, II y III",
+    "D": "II y III"
+   },
+   "clave": "D",
+   "tema": "Reproducción sexual — ventajas"
+  },
+  {
+   "id": 74,
+   "texto": "De acuerdo con la nomenclatura de Mendel los caracteres recesivos están representados en letras",
+   "opciones": {
+    "A": "minúsculas (b).",
+    "B": "mayúsculas y minúsculas (Bb).",
+    "C": "minúsculas y mayúsculas (bB).",
+    "D": "minúsculas, mayúsculas y minúsculas (bBb)."
+   },
+   "clave": "A",
+   "tema": "Genética mendeliana — nomenclatura"
+  },
+  {
+   "id": 75,
+   "texto": "Las mutaciones son importantes porque",
+   "opciones": {
+    "A": "eliminan organismos débiles y enfermizos.",
+    "B": "producen la variabilidad sobre la que opera la selección natural.",
+    "C": "originan variabilidad no heredable.",
+    "D": "se producen en los individuos menos aptos."
+   },
+   "clave": "B",
+   "tema": "Mutaciones y selección natural"
+  },
+  {
+   "id": 76,
+   "texto": "Al conjunto de técnicas que hacen posible el aislamiento, estudio, modificación y transferencia de genes de un organismo a otro se le llama",
+   "opciones": {
+    "A": "ingeniería genética.",
+    "B": "recombinación genética.",
+    "C": "proyecto genoma.",
+    "D": "terapia génica."
+   },
+   "clave": "B",
+   "tema": "Ingeniería genética"
+  },
+  {
+   "id": 77,
+   "texto": "En la segunda mitad del siglo XX, la Teoría Quimiosintética formulada por Oparin y Haldane permitió",
+   "opciones": {
+    "A": "el descubrimiento de la estructura tridimensional de los ácidos nucleicos.",
+    "B": "la apertura de un nuevo campo de conocimiento, la biología celular.",
+    "C": "demostrar de manera experimental que la materia orgánica evolucionó a partir de moléculas simples.",
+    "D": "demostrar la evolución biológica de las células eucariontes."
+   },
+   "clave": "C",
+   "tema": "Origen de la vida — Oparin-Haldane"
+  },
+  {
+   "id": 78,
+   "texto": "Los organismos pertenecientes a los reinos fungi, vegetal y animal presentan células de tipo",
+   "opciones": {
+    "A": "procarióticas.",
+    "B": "heterótrofas.",
+    "C": "eucarióticas.",
+    "D": "autótrofas."
+   },
+   "clave": "C",
+   "tema": "Clasificación de los seres vivos — reinos"
+  },
+  {
+   "id": 79,
+   "texto": "El conjunto de organismos que comparten la misma área física y se reproducen forman",
+   "opciones": {
+    "A": "una población.",
+    "B": "un ecosistema.",
+    "C": "un bioma.",
+    "D": "una raza."
+   },
+   "clave": "A",
+   "tema": "Ecología — población"
+  },
+  {
+   "id": 80,
+   "texto": "Forman el primer eslabón en una cadena alimenticia.",
+   "opciones": {
+    "A": "Productores.",
+    "B": "Consumidores.",
+    "C": "Descomponedores.",
+    "D": "Depredadores."
+   },
+   "clave": "A",
+   "tema": "Ecología — cadenas alimenticias"
+  }
+ ]
+}

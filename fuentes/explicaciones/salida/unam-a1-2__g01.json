@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "Fíjate en la forma de la gráfica: la posición crece en línea recta conforme pasa el tiempo. En una gráfica $x$–$t$ la pendiente es la velocidad, y si la línea es recta la pendiente no cambia: el tren recorre la misma distancia en cada décima de segundo, o sea, velocidad constante.\n\nSi marcaste \"aceleración constante\", el error clásico es pensar que una recta inclinada indica que algo se acelera; con aceleración la gráfica $x$–$t$ sería una curva (parábola), no una recta."
+ },
+ {
+  "id": 2,
+  "explanation": "El auto parte del reposo con aceleración constante, así que su velocidad es\n\n$$v = v_0 + at = 0 + \\left(1.8 \\ \\tfrac{m}{s^2}\\right)(2 \\ s) = 3.6 \\ \\tfrac{m}{s}$$\n\nLa aceleración te dice cuánto aumenta la velocidad cada segundo: 1.8 el primer segundo y otros 1.8 el segundo. Si te dio 0.9 (opción A), dividiste entre el tiempo en vez de multiplicar; si contestaste 1.8 (B), te quedaste con la aceleración sin aplicar los 2 segundos."
+ },
+ {
+  "id": 3,
+  "explanation": "Las tres fuerzas actúan en la misma dirección y sentido, así que simplemente se suman: $3 \\times 1{,}500 \\ N = 4{,}500 \\ N$. Los 500 kg de la carreta son un dato de relleno: servirían para calcular la aceleración, pero la pregunta solo pide la fuerza total.\n\nSi elegiste 1,500 N (C), tomaste la fuerza de un solo caballo en lugar de la de los tres."
+ },
+ {
+  "id": 4,
+  "explanation": "La segunda ley de Newton dice $F = ma$, así que la masa es $m = \\frac{F}{a}$: la pendiente de la recta en la gráfica fuerza contra aceleración. Toma cualquier punto de la recta, por ejemplo el último: con $a = 1.6 \\ \\tfrac{m}{s^2}$ la fuerza es $F = 4.00 \\ N$, entonces\n\n$$m = \\frac{4.00}{1.6} = 2.5 \\ kg$$\n\nComprueba con otro punto: $\\frac{1.00}{0.4} = 2.5$ también. Las opciones 1.6 kg y 4.0 kg son los valores máximos leídos directamente de cada eje, sin hacer la división."
+ },
+ {
+  "id": 5,
+  "explanation": "Hay trabajo mecánico cuando una fuerza produce un desplazamiento en su misma dirección: $W = Fd$. Empujar la caja con fuerza constante a lo largo de una distancia cumple exactamente con eso.\n\nLa opción C es la tramposa: en el movimiento circular uniforme la rapidez no cambia, así que la energía cinética no aumenta; además la fuerza centrípeta es perpendicular al movimiento y no realiza trabajo. En A no hay desplazamiento (volumen constante) y en B se habla de consumo de energía eléctrica, no de una fuerza que desplaza algo."
+ },
+ {
+  "id": 6,
+  "explanation": "Antes del salto todo está en reposo, así que la cantidad de movimiento total es cero y debe seguir siéndolo: lo que el niño se lleva hacia adelante, el carrito se lo lleva hacia atrás.\n\n$$m_{niño} \\, v_{niño} = m_{carrito} \\, v_{carrito} \\quad\\Rightarrow\\quad (30)(2) = m(12)$$\n\n$$m = \\frac{60}{12} = 5.0 \\ kg$$\n\nSi te dio 2.5 kg (opción C), dividiste $30 \\div 12$ directo, sin multiplicar antes por la velocidad del niño."
+ },
+ {
+  "id": 7,
+  "explanation": "El equilibrio térmico se define entre dos sistemas: cuando están en contacto térmico y alcanzan la misma temperatura, deja de fluir calor entre ellos (es la idea de la ley cero de la termodinámica). Por eso la clave es que su temperatura sea igual a la del otro sistema con el que está en contacto.\n\nLa opción A confunde: que la temperatura no varíe durante un proceso (proceso isotérmico) no dice nada de estar en equilibrio con otro sistema."
+ },
+ {
+  "id": 8,
+  "explanation": "El kelvin tiene el mismo tamaño que el grado Celsius; lo único que cambia es dónde está el cero: el cero absoluto ($0 \\ K$) equivale a $-273 \\ °C$. Por eso basta sumar: $T_K = T_C + 273$. Comprueba: el agua congela a $0 \\ °C = 273 \\ K$.\n\nLa opción A es la fórmula para pasar de Fahrenheit a Celsius, y la C te daría temperaturas absolutas negativas, que no existen."
+ },
+ {
+  "id": 9,
+  "explanation": "Esa es justo la definición de capacidad térmica específica (o calor específico): el calor necesario por gramo y por grado Celsius; por eso lleva la palabra \"específica\", porque está referida a la unidad de masa.\n\nLa \"capacidad térmica\" a secas (opción A) es del cuerpo completo, sin dividir entre su masa. Y los calores latentes (B y C) corresponden a cambios de fase, donde el calor entra sin cambiar la temperatura."
+ },
+ {
+  "id": 10,
+  "explanation": "La cuerda mide 90 cm y en la figura caben exactamente 5 ondas completas: cuenta las crestas (5) y los valles (5); cada pareja cresta–valle es un ciclo. Entonces\n\n$$\\lambda = \\frac{90 \\ cm}{5 \\ ciclos} = 18 \\ \\tfrac{cm}{ciclo}$$\n\nSi te dio 9 cm (opción C), contaste los 10 \"husos\" entre nodos como si cada uno fuera una onda completa, pero cada huso es solo media longitud de onda."
+ },
+ {
+  "id": 11,
+  "explanation": "La interferencia se explica con el principio de superposición: cuando dos ondas coinciden en un punto, sus perturbaciones se suman. Si llegan en fase, se refuerzan (interferencia constructiva); si llegan en oposición, se cancelan (destructiva).\n\nLa amplitud (opción A) solo determina el tamaño del resultado, no explica el fenómeno; y la interferencia ocurre igual con ondas longitudinales que transversales, así que C y D no son condición necesaria."
+ },
+ {
+  "id": 12,
+  "explanation": "En serie las resistencias se suman, y como las 4 son iguales, la resistencia total del circuito es $4R$. Aplicas la ley de Ohm al circuito completo:\n\n$$V = I(4R) \\quad\\Rightarrow\\quad R = \\frac{V}{4I}$$\n\nSi elegiste $R = \\frac{4V}{I}$ (opción A), el 4 se te fue multiplicando arriba cuando debía pasar dividiendo: al despejar, el 4 acompaña a la corriente en el denominador."
+ },
+ {
+  "id": 13,
+  "explanation": "El circuito tiene un resistor de $2 \\ \\Omega$ en serie con un arreglo en paralelo de $4 \\ \\Omega$ y $6 \\ \\Omega$. Primero resuelves el paralelo:\n\n$$R_p = \\frac{(4)(6)}{4+6} = \\frac{24}{10} = 2.4 \\ \\Omega$$\n\nY luego lo sumas con el de la entrada: $R_T = 2 + 2.4 = 4.4 \\ \\Omega$.\n\nSi te dio 12 $\\Omega$ (opción C), sumaste las tres como si todas estuvieran en serie; si te quedó cerca de 2.4 (A), resolviste el paralelo pero olvidaste sumar el resistor de $2 \\ \\Omega$."
+ },
+ {
+  "id": 14,
+  "explanation": "Primero el volumen de la alberca: $V = 50 \\times 25 \\times 3 = 3{,}750 \\ m^3$. Luego el gasto del tubo, cuidando que el diámetro de 40 cm da un radio de $0.20 \\ m$:\n\n$$Q = Av = \\pi r^2 v = \\pi (0.20)^2 (4) \\approx 0.503 \\ \\tfrac{m^3}{s}$$\n\nEl tiempo es $t = \\frac{V}{Q} = \\frac{3750}{0.503} \\approx 7{,}460 \\ s$, y al convertir: $7460 \\div 3600 \\approx 2.07$ horas. Los errores típicos aquí son usar el diámetro como si fuera el radio o no pasar los segundos a horas al final."
+ },
+ {
+  "id": 15,
+  "explanation": "El índice de refracción dice cuántas veces es más lenta la luz en el medio que en el vacío: $n = \\frac{c}{v}$. Despejas la velocidad:\n\n$$v = \\frac{c}{n} = \\frac{300{,}000 \\ \\tfrac{km}{s}}{1.544} \\approx 194{,}300 \\ \\tfrac{km}{s}$$\n\nLas otras opciones solo corren el punto decimal: te salvas checando el orden de magnitud, porque con un índice cercano a 1.5 la luz apenas baja a dos terceras partes de $c$, sigue siendo de cientos de miles de km/s."
+ },
+ {
+  "id": 16,
+  "explanation": "El modelo de Thomson es el del \"budín de pasas\": el átomo es una esfera uniforme de carga positiva con los electrones incrustados en ella, de modo que el conjunto queda eléctricamente neutro. Eso es justo lo que describe la opción A.\n\nLas demás son otros modelos: la B es Rutherford (núcleo con electrones girando alrededor), la C recuerda a Bohr (electrones en regiones específicas) y la D es la teoría atómica de Dalton."
+ },
+ {
+  "id": 17,
+  "explanation": "Las propiedades del texto son tres: adecuación (que responda a una situación comunicativa), coherencia (que sea una unidad de información con significado global) y cohesión (que sus ideas estén bien conectadas entre sí). La opción A menciona exactamente esas tres.\n\nLas otras describen rasgos que no son obligatorios de todo texto: no todos llevan citas documentadas (B) ni tienen función referencial y apelativa (C), y la D hasta se contradice al poner las ideas del autor en función del lector."
+ },
+ {
+  "id": 18,
+  "explanation": "El fragmento es una nota informativa: reporta un hecho (la ceremonia) y da datos duros —ocho mil quinientos atletas, cuarenta y dos países, doscientos cincuenta mil visitantes— sin opinar, argumentar ni expresar emociones. Su propósito es informar oportunamente.\n\nLa opción C tienta porque aparece Calderón, pero que hable un político no vuelve político al texto: no promueve ninguna idea, solo reporta lo que se anunció."
+ },
+ {
+  "id": 19,
+  "explanation": "Es poesía mística. La \"vida de arriba\" es la vida eterna, \"la vida verdadera\", y solo se alcanza \"hasta que esta vida muera\": por eso la voz le pide a la muerte que no le sea esquiva y remata con la paradoja \"muero porque no muero\", es decir, se muere de ganas de morir para nacer a la vida verdadera. Eso es exactamente lo que dice la opción A.\n\nLa B malinterpreta: la autora desea que la muerte llegue, como anhelo espiritual; en ningún verso habla de quitarse la vida ella misma."
+ },
+ {
+  "id": 20,
+  "explanation": "El fragmento narra: un narrador cuenta los hechos y proezas de un héroe (el rey Arturo, \"ejemplo de valor y cortesía\") en un ambiente de corte y celebración. Relatar las hazañas de héroes es lo propio del género épico o narrativo.\n\nNo es lírico porque no expresa sentimientos de un yo poético, y tragedia y comedia se descartan porque son formas del género dramático: estarían escritas en diálogos para representarse en escena."
+ },
+ {
+  "id": 21,
+  "explanation": "Los autores del realismo mexicano son Federico Gamboa (autor de *Santa*) y Ángel de Campo, \"Micrós\", que retrataron la sociedad mexicana de fines del siglo XIX.\n\nLa trampa está en la opción A: Pérez Galdós y \"Clarín\" sí son realistas, pero españoles; la pregunta pide el realismo mexicano. Guillermo Prieto y Manuel M. Flores (B) son románticos mexicanos."
+ },
+ {
+  "id": 22,
+  "explanation": "El fragmento plantea problemas concretos de la sociedad: el \"malestar social\", la lucha \"cada vez más enconada entre pobres y ricos\", las injusticias. Retratar los conflictos reales de un sector de la población, tal como son, es el sello del Realismo: eso resume la opción B.\n\nLa C se descarta sola: habla de \"evasión de la realidad\", que es justo lo contrario de lo que hace el Realismo."
+ },
+ {
+  "id": 23,
+  "explanation": "La literatura contemporánea se caracteriza por explorar a fondo el mundo interior de los personajes (monólogo interior, flujo de la conciencia) y por romper con el manejo tradicional de la realidad y del tiempo: saltos temporales, realidades alteradas, como en Kafka, Joyce o el realismo mágico. Eso resume la opción A.\n\nLas demás describen corrientes anteriores: la B es el Romanticismo, la C el Realismo que reaccionó contra él y la D suena a la Ilustración."
+ },
+ {
+  "id": 24,
+  "explanation": "Jorge Ibargüengoitia (mexicano) y José Saramago (portugués, Nobel de Literatura 1998) son autores del siglo XX, plenamente contemporáneos.\n\nEn las otras opciones siempre hay alguien de siglos anteriores: Calderón de la Barca y Sor Juana son del Barroco (siglo XVII), Mary Shelley del Romanticismo, y Flaubert, Dostoyevski y Wilde del siglo XIX."
+ },
+ {
+  "id": 25,
+  "explanation": "Una ficha hemerográfica registra artículos de publicaciones periódicas: periódicos y revistas. La opción C cita un artículo del diario *El país*, con fecha exacta de publicación y número de página: esos datos (diario, fecha, página) son la marca inconfundible de lo hemerográfico.\n\nLas opciones A y D son fichas bibliográficas (libros completos) y la B registra un capítulo dentro de un libro."
+ },
+ {
+  "id": 26,
+  "explanation": "Fíjate en cómo está redactada la ficha: condensa las ideas principales del texto de Clarke con palabras propias, sin comillas, sin citar literalmente y sin dar opiniones de quien la elaboró. Reducir un texto a sus ideas esenciales es un resumen.\n\nSi fuera ficha textual (A) traería el fragmento copiado tal cual entre comillas, y si fuera de comentario (B) incluiría juicios o valoraciones personales del que la escribió."
+ },
+ {
+  "id": 27,
+  "explanation": "El bronce es una aleación: cobre y estaño fundidos juntos. Sus componentes pueden ir en proporciones variables (por eso no es compuesto) y quedan distribuidos de manera uniforme, en una sola fase que se ve igual en cualquier punto de la medalla: mezcla homogénea.\n\nLa opción C tienta, pero en un compuesto los elementos están unidos químicamente en proporciones fijas y definidas, cosa que no pasa en una aleación."
+ },
+ {
+  "id": 28,
+  "explanation": "Dúctil (se estira en hilos), maleable (se extiende en láminas) y con brillo: esas tres son las propiedades características de los metales. De la lista, el único metal es el calcio (Ca).\n\nEl neón (Ne) es un gas noble, el silicio (Si) es un metaloide y el bromo (Br) es un no metal líquido: ninguno de ellos es dúctil ni maleable."
+ },
+ {
+  "id": 29,
+  "explanation": "Si los dos átomos tienen la misma electronegatividad, ninguno jala los electrones con más fuerza que el otro: el par de enlace se comparte por igual y no se forman polos. Ese es el enlace covalente no polar, el de las moléculas de un mismo elemento como $H_2$, $O_2$ o $Cl_2$.\n\nEl iónico (A) requiere una diferencia grande de electronegatividad, y el puente de hidrógeno (C) ni siquiera es un enlace entre átomos: es una atracción entre moléculas."
+ },
+ {
+  "id": 30,
+  "explanation": "Una sal se produce en la reacción de neutralización: ácido + base → sal + agua. En la opción D, el ácido clorhídrico ($HCl$) reacciona con la base ($KOH$) y forma la sal $KCl$ más agua: es el patrón completo.\n\nLas opciones A y C son lo contrario de formar una sal: un óxido no metálico con agua produce un ácido ($H_2SO_3$, $HNO_3$)."
+ },
+ {
+  "id": 31,
+  "explanation": "Primero la masa molar del NaCl: $23 + 35.5 = 58.5 \\ \\tfrac{g}{mol}$. Luego divides la masa que tienes entre lo que pesa un mol:\n\n$$n = \\frac{m}{M} = \\frac{100 \\ g}{58.5 \\ \\tfrac{g}{mol}} \\approx 1.7 \\ mol$$\n\nTiene sentido: 100 g es poco más de una vez y media lo que pesa un mol. Si contestaste 58.5 (D), te quedaste con la masa molar; ese número es el dato intermedio, no la respuesta."
+ },
+ {
+  "id": 32,
+  "explanation": "Lo que sostiene al insecto es la tensión superficial: las moléculas de la superficie del agua se atraen fuertemente entre sí y forman una especie de membrana elástica que resiste el peso de objetos pequeños.\n\nLa opción D tienta porque los puentes de hidrógeno son la causa de fondo de esa atracción, pero la propiedad que responde la pregunta —el fenómeno de la superficie que aguanta al insecto— es la tensión superficial."
+ },
+ {
+  "id": 33,
+  "explanation": "Son unas cuantas gotas de ácido en todo un litro de agua: los iones $H^+$ del vinagre quedan enormemente diluidos, así que el pH de la disolución sube desde 3.5 hasta quedar apenas por debajo de 7: ligeramente ácida.\n\nNo puede quedar neutra (C) porque algo de ácido sí le agregaste, por poco que sea, y mucho menos básica (D), porque nada en la mezcla aporta iones $OH^-$."
+ },
+ {
+  "id": 34,
+  "explanation": "Grábate la regla: oxidarse es perder electrones y reducirse es ganarlos. En la formación del $CO_2$, el carbono pasa de número de oxidación 0 a $+4$: perdió electrones, se oxidó. Cada oxígeno pasa de 0 a $-2$: ganó electrones, se redujo.\n\nLas otras opciones cruzan las definiciones; si dudas, piensa que el signo positivo del carbono delata que cedió electrones."
+ },
+ {
+  "id": 35,
+  "explanation": "Los lípidos son la reserva energética de los organismos: almacenan más del doble de energía por gramo que los carbohidratos (unas 9 kcal/g contra 4) y el cuerpo los guarda a largo plazo, como en el tejido adiposo de los animales.\n\nEl distractor fuerte es D: los carbohidratos son la fuente de energía inmediata, la que se usa primero, pero la palabra clave de la pregunta es *reserva*, y esa función es de los lípidos."
+ },
+ {
+  "id": 36,
+  "explanation": "Piensa en una fogata o en la flama de la estufa: la combustión desprende calor hacia lo que la rodea. Liberar energía calorífica hacia los alrededores es la definición de reacción exotérmica (\"exo\" significa hacia afuera).\n\nLas combinaciones cruzadas no funcionan: una reacción que absorbe energía sería endotérmica, y una exotérmica no absorbe, libera."
+ },
+ {
+  "id": 37,
+  "explanation": "En el mapa, la latitud se lee en los paralelos (líneas horizontales, desde el ecuador) y la longitud en los meridianos (líneas verticales, desde Greenwich). Montevideo está al sur del ecuador, entre los paralelos 30° y 40° S, como a 35° S, y entre los meridianos 50° y 60° W, como a 56° W. Caracas queda apenas arriba del paralelo 10° N (unos 11° N) y cerca del meridiano 67° W. Toda Sudamérica está al oeste de Greenwich, así que ambas longitudes son W.\n\nLa opción D intercambia la latitud con la longitud de cada ciudad: es el error de leer los números en el eje equivocado."
+ },
+ {
+  "id": 38,
+  "explanation": "La geografía física estudia los elementos naturales del planeta: relieve, clima, aguas, vegetación, regiones naturales. La única opción donde los dos términos son naturales es C: el clima y las regiones naturales.\n\nLas demás opciones meten de contrabando un elemento humano —actividades económicas, sociedad, población—, y eso ya pertenece a la geografía humana."
+ },
+ {
+  "id": 39,
+  "explanation": "La tundra es el paisaje de las latitudes polares: suelo congelado gran parte del año, sin árboles, con musgos y líquenes. En América, la llanura que alcanza esas latitudes árticas es la Canadiense, en el norte del continente.\n\nLa Patagonia (B) tienta porque también es fría, pero está en latitudes medias del sur y corresponde a estepa; el Mississippi y el Amazonas son llanuras de ríos en zonas templada y tropical."
+ },
+ {
+  "id": 40,
+  "explanation": "De toda el agua dulce del planeta, cerca de dos terceras partes están congeladas en los glaciares y casquetes polares: son, por mucho, la mayor concentración.\n\nEl distractor fuerte es D: las aguas subterráneas ocupan el segundo lugar, con alrededor de una tercera parte. Los ríos y lagos, que son el agua dulce que vemos a diario, apenas guardan una fracción mínima del total."
+ }
+]

@@ -1,0 +1,489 @@
+{
+ "lote": "unam-a3-3__g02",
+ "examen": "unam-a3-3.json",
+ "titulo": "UNAM Área 3 - 3",
+ "materia": "Matemáticas + Literatura + Geografía + Biología",
+ "preguntas": [
+  {
+   "id": 41,
+   "texto": "En un triángulo rectángulo con catetos de 1 y 2 e hipotenusa $\\sqrt{5}$, si $B$ es el ángulo opuesto al cateto de medida 2, entonces $\\sin(B)$ es:",
+   "opciones": {
+    "A": "$\\frac{2}{\\sqrt{5}}$",
+    "B": "$\\frac{1}{\\sqrt{5}}$",
+    "C": "$\\frac{1}{\\sqrt{3}}$",
+    "D": "$\\frac{2}{\\sqrt{3}}$"
+   },
+   "clave": "A",
+   "tema": "Razones trigonométricas",
+   "figura": "/imagenes_unam-a3-3/ext_p68_img2.svg"
+  },
+  {
+   "id": 42,
+   "texto": "Un poste proyecta una sombra de 1.5 m en el momento en que el ángulo de elevación del sol es de 60°. ¿Cuál es la altura del poste?\n\nConsidera: $\\tan 60° = 1.732$",
+   "opciones": {
+    "A": "2.59 m",
+    "B": "1.73 m",
+    "C": "3.00 m",
+    "D": "1.29 m"
+   },
+   "clave": "A",
+   "tema": "Resolución de triángulos rectángulos"
+  },
+  {
+   "id": 43,
+   "texto": "¿Cuál es la ecuación de la asíntota vertical de la función $f(x) = 2\\log(x - 3)$?",
+   "opciones": {
+    "A": "$x = 3$",
+    "B": "$y = -3$",
+    "C": "$x = -3$",
+    "D": "$y = 3$"
+   },
+   "clave": "A",
+   "tema": "Funciones logarítmicas — asíntotas"
+  },
+  {
+   "id": 44,
+   "texto": "La distancia entre los puntos $P(-1, 1)$ y $Q(1, -1)$ en el plano cartesiano es:",
+   "opciones": {
+    "A": "$\\sqrt{8}$",
+    "B": "$2$",
+    "C": "$\\sqrt{2}$",
+    "D": "$4$"
+   },
+   "clave": "A",
+   "tema": "Distancia entre dos puntos"
+  },
+  {
+   "id": 45,
+   "texto": "La pendiente de la recta que pasa por los puntos $H(-8, 5)$ y $K(6, -1)$ es igual a:",
+   "opciones": {
+    "A": "$-2$",
+    "B": "$3$",
+    "C": "$-\\frac{3}{7}$",
+    "D": "$\\frac{7}{3}$"
+   },
+   "clave": "C",
+   "tema": "Pendiente de una recta"
+  },
+  {
+   "id": 46,
+   "texto": "¿Cuál es la ecuación de la recta que pasa por el punto $P(5, 2)$ y es paralela a la recta que pasa por los puntos $Q(2, -6)$ y $R(-1, 3)$?",
+   "opciones": {
+    "A": "$y = -2x - 9$",
+    "B": "$y = -4x + 3$",
+    "C": "$y = -5x - 11$",
+    "D": "$y = -3x + 17$"
+   },
+   "clave": "D",
+   "tema": "Rectas paralelas"
+  },
+  {
+   "id": 47,
+   "texto": "¿Cuál de las siguientes ecuaciones corresponde a una circunferencia con centro en el origen y radio 2?",
+   "opciones": {
+    "A": "$x^2 + y^2 - 4 = 0$",
+    "B": "$x^2 - y^2 - 2 = 0$",
+    "C": "$x^2 + y^2 + 2 = 0$",
+    "D": "$x^2 - y^2 - 4 = 0$"
+   },
+   "clave": "A",
+   "tema": "Ecuación de la circunferencia"
+  },
+  {
+   "id": 48,
+   "texto": "¿Cuál es el centro y el radio de la siguiente circunferencia?\n$(x + 3)^2 + (y - 2)^2 = 36$",
+   "opciones": {
+    "A": "$C(3, 2);\\; r = 6$",
+    "B": "$C(3, 2);\\; r = 36$",
+    "C": "$C(-3, 2);\\; r = 6$",
+    "D": "$C(-3, 2);\\; r = 36$"
+   },
+   "clave": "C",
+   "tema": "Elementos de una circunferencia"
+  },
+  {
+   "id": 49,
+   "texto": "Calcula el vértice de la siguiente parábola:\n$(y - 3)^2 = 12x - 24$",
+   "opciones": {
+    "A": "$V = (2, 3)$",
+    "B": "$V = (3, 2)$",
+    "C": "$V = (-3, -2)$",
+    "D": "$V = (-2, -3)$"
+   },
+   "clave": "A",
+   "tema": "Elementos de una parábola"
+  },
+  {
+   "id": 50,
+   "texto": "Determina las coordenadas de los focos de una elipse cuya ecuación es $9x^2 + y^2 = 9$.",
+   "opciones": {
+    "A": "$F_1 = (-\\sqrt{8}, 0);\\; F_2 = (\\sqrt{8}, 0)$",
+    "B": "$F_1 = (-\\sqrt{10}, 0);\\; F_2 = (\\sqrt{10}, 0)$",
+    "C": "$F_1 = (0, -\\sqrt{8});\\; F_2 = (0, \\sqrt{8})$",
+    "D": "$F_1 = (0, -\\sqrt{10});\\; F_2 = (0, \\sqrt{10})$"
+   },
+   "clave": "C",
+   "tema": "Parámetros de la elipse"
+  },
+  {
+   "id": 51,
+   "texto": "¿Cuál es el lugar geométrico en el plano cartesiano en el que el valor absoluto de la diferencia de sus distancias a dos puntos fijos en el mismo plano resulta siempre igual a una constante, positiva y menor que la distancia entre dichos puntos fijos?",
+   "opciones": {
+    "A": "Circunferencia",
+    "B": "Parábola",
+    "C": "Elipse",
+    "D": "Hipérbola"
+   },
+   "clave": "D",
+   "tema": "Hipérbola como lugar geométrico"
+  },
+  {
+   "id": 52,
+   "texto": "¿Cuál de las siguientes representa la ecuación general de segundo grado con dos variables?",
+   "opciones": {
+    "A": "$Ax^2 + By^2 + Cz^2 + Dxyz + 2Exy + F = 0$",
+    "B": "$Ax^2 + By^2 + C = 0$",
+    "C": "$Ax^2 + Bx + C = 0$",
+    "D": "$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$"
+   },
+   "clave": "D",
+   "tema": "Ecuación general de segundo grado"
+  },
+  {
+   "id": 53,
+   "texto": "De acuerdo con su organización textual, las propiedades del texto deben presentar:",
+   "opciones": {
+    "A": "Una situación comunicativa en la que surja una unidad de información con significado coherente, cuyas ideas tienen cohesión",
+    "B": "Un cuerpo de citas y referentes claramente documentados, con apoyo en lo anterior para dar verosimilitud",
+    "C": "Una serie de ideas perfectamente establecidas cuya finalidad es informar a partir de su función referencial y apelativa",
+    "D": "Un contenido acorde al pensamiento del autor, en la que las ideas se presentan en función de la subjetividad del lector"
+   },
+   "clave": "A",
+   "tema": "Propiedades del texto"
+  },
+  {
+   "id": 54,
+   "texto": "La última parte de la obra dramática en la que los personajes resuelven sus conflictos, alcanzan su felicidad o bien son derrotados, se denomina:",
+   "opciones": {
+    "A": "Colofón",
+    "B": "Desenlace",
+    "C": "Nudo",
+    "D": "Clímax"
+   },
+   "clave": "B",
+   "tema": "Acción dramática — desenlace"
+  },
+  {
+   "id": 55,
+   "texto": "En el texto dramático, el subgénero en el que el personaje principal se deja llevar por las bajas pasiones y ninguna de sus acciones ayudará, por bien intencionadas que sean, a solucionar sus problemas, se denomina:",
+   "opciones": {
+    "A": "Tragedia",
+    "B": "Drama",
+    "C": "Tragicomedia",
+    "D": "Entremés"
+   },
+   "clave": "A",
+   "tema": "Tragedia"
+  },
+  {
+   "id": 56,
+   "texto": "Identifica el metro del siguiente verso:\n\n'Yo sé los nombres extraños.' — José Martí",
+   "opciones": {
+    "A": "Endecasílabo",
+    "B": "Octosílabo",
+    "C": "Decasílabo",
+    "D": "Heptasílabo"
+   },
+   "clave": "B",
+   "tema": "Métrica — endecasílabo"
+  },
+  {
+   "id": 57,
+   "texto": "El género literario que aborda asuntos heroicos, sus personajes se inspiran en figuras históricas y simbolizan valores universales de la colectividad, es el:",
+   "opciones": {
+    "A": "Lírico",
+    "B": "Épico",
+    "C": "Dramático",
+    "D": "Narrativo"
+   },
+   "clave": "B",
+   "tema": "Géneros literarios — épico"
+  },
+  {
+   "id": 58,
+   "texto": "Los autores que conforman una corriente literaria:",
+   "opciones": {
+    "A": "Comparten características en cuanto a su forma de escribir y el interés por desarrollar temas similares; además, viven en una misma época",
+    "B": "Heredan el estilo de quienes los precedieron, comparten una forma de escribir y abordan un género determinado, como la dramaturgia o la novela",
+    "C": "Heredan el estilo de quienes los precedieron, comparten una forma de escribir y muestran interés por desarrollar temas similares",
+    "D": "Abordan un género determinado, como la dramaturgia o la novela, comparten el interés por desarrollar temas similares y viven en una misma época"
+   },
+   "clave": "A",
+   "tema": "Corrientes literarias"
+  },
+  {
+   "id": 59,
+   "texto": "Movimiento literario que surge en la segunda mitad del siglo XIX como reacción ante el individualismo extremo y el idealismo que caracterizó al romanticismo:",
+   "opciones": {
+    "A": "Neoclasicismo",
+    "B": "Creacionismo",
+    "C": "Realismo",
+    "D": "Surrealismo"
+   },
+   "clave": "C",
+   "tema": "Realismo — corriente del siglo XIX"
+  },
+  {
+   "id": 60,
+   "texto": "Los relatos cortos 'Diles que no me maten' y 'No oyes ladrar los perros' fueron escritos por:",
+   "opciones": {
+    "A": "Juan Rulfo",
+    "B": "Carlos Fuentes",
+    "C": "Octavio Paz",
+    "D": "José Agustín"
+   },
+   "clave": "A",
+   "tema": "Corriente contemporánea"
+  },
+  {
+   "id": 61,
+   "texto": "¿A qué género literario pertenece la novela?",
+   "opciones": {
+    "A": "Poético",
+    "B": "Dramático",
+    "C": "Narrativo",
+    "D": "Épico"
+   },
+   "clave": "C",
+   "tema": "La novela — género"
+  },
+  {
+   "id": 62,
+   "texto": "Identifica la ficha hemerográfica:",
+   "opciones": {
+    "A": "Dosal Gómez, María Rosario, et al. Lengua española. Español IV. México: Patria Cultural, 2001.",
+    "B": "García Márquez, Gabriel. 'Cómo eran mis compañeros muertos en el mar' en Relato de un náufrago. 7–10. Ciudad de México: De Bolsillo, 2003.",
+    "C": "Peguero, Rosario. 'La filosofía de lucro, el gran mito de la edad contemporánea: Roa Bastos'. El país. Ciudad de México, 31 septiembre 2005, p. 31.",
+    "D": "Ocampo de Gómez, Aurora Maura, y Ernesto Prado Velázquez. Diccionario de escritores mexicanos. México: UNAM, Centro de Estudios Literarios, 1967."
+   },
+   "clave": "C",
+   "tema": "Fichas bibliográficas y hemerográficas"
+  },
+  {
+   "id": 63,
+   "texto": "Es un ejemplo de la relación sociedad–naturaleza como objeto de estudio de la Geografía:",
+   "opciones": {
+    "A": "Los husos horarios son divisiones de la Tierra hechas en el siglo XIX",
+    "B": "El clima se define por el promedio de las condiciones medias de la atmósfera",
+    "C": "La corriente de Humboldt tiene relación con la gran riqueza pesquera de Perú",
+    "D": "Las migraciones de las especies generadas por el cambio climático"
+   },
+   "clave": "C",
+   "tema": "La Geografía como ciencia"
+  },
+  {
+   "id": 64,
+   "texto": "Si vas de la Ciudad de México a Cuernavaca, la cadena montañosa que tienes que atravesar es:",
+   "opciones": {
+    "A": "El Sistema Montañoso de Guadalupe",
+    "B": "La Sierra Madre Occidental",
+    "C": "La Sierra Madre Oriental",
+    "D": "El Sistema Volcánico Transversal"
+   },
+   "clave": "D",
+   "tema": "Distribución de montañas"
+  },
+  {
+   "id": 65,
+   "texto": "En México, el litoral con mayor número de ríos corresponde al:",
+   "opciones": {
+    "A": "Pacífico",
+    "B": "Atlántico",
+    "C": "Golfo de México",
+    "D": "Mar de las Antillas"
+   },
+   "clave": "A",
+   "tema": "Distribución de ríos"
+  },
+  {
+   "id": 66,
+   "texto": "La región natural resultado del clima $Af$ ubicada en la Cuenca del Congo es la:",
+   "opciones": {
+    "A": "Taiga",
+    "B": "Estepa",
+    "C": "Pradera",
+    "D": "Selva"
+   },
+   "clave": "D",
+   "tema": "Regiones naturales del mundo"
+  },
+  {
+   "id": 67,
+   "texto": "Nigeria es un país africano que por su alto índice de natalidad y pobreza tiende a la:",
+   "opciones": {
+    "A": "Urbanización",
+    "B": "Profesionalización",
+    "C": "Desnutrición",
+    "D": "Segregación"
+   },
+   "clave": "C",
+   "tema": "Crecimiento de la población"
+  },
+  {
+   "id": 68,
+   "texto": "Las condiciones geográficas de las zonas pobladas en Asia se caracterizan por:",
+   "opciones": {
+    "A": "Montañas y vegetación para la silvicultura",
+    "B": "Llanuras y agua superficial para la agricultura",
+    "C": "Depresiones y aguas subterráneas para la minería",
+    "D": "Mesetas y selvas para la explotación de maderas preciosas"
+   },
+   "clave": "B",
+   "tema": "Relieve y actividades económicas"
+  },
+  {
+   "id": 69,
+   "texto": "Debido al lento crecimiento de su población, a partir de 1950 Francia abrió sus puertas a la inmigración, principalmente de:",
+   "opciones": {
+    "A": "Turcos",
+    "B": "Chinos",
+    "C": "Argelinos",
+    "D": "Pakistaníes"
+   },
+   "clave": "C",
+   "tema": "Migraciones internacionales"
+  },
+  {
+   "id": 70,
+   "texto": "Una de las consecuencias principales en las ciudades receptoras de la migración rural-urbana es:",
+   "opciones": {
+    "A": "Altruismo",
+    "B": "Analfabetismo",
+    "C": "Sobrepoblación",
+    "D": "Desnutrición"
+   },
+   "clave": "C",
+   "tema": "Migración rural-urbana"
+  },
+  {
+   "id": 71,
+   "texto": "El número de entidades federativas en México es:",
+   "opciones": {
+    "A": "29",
+    "B": "28",
+    "C": "31",
+    "D": "32"
+   },
+   "clave": "D",
+   "tema": "División política de México"
+  },
+  {
+   "id": 72,
+   "texto": "Cuando la balanza comercial de pagos de México es negativa significa que:",
+   "opciones": {
+    "A": "Exporta más productos de los que importa",
+    "B": "Se realizan menos importaciones de artículos básicos",
+    "C": "La producción permite una mayor exportación",
+    "D": "Importa más productos de los que exporta"
+   },
+   "clave": "D",
+   "tema": "Comercio exterior"
+  },
+  {
+   "id": 73,
+   "texto": "La existencia de enzimas del ciclo de Krebs, idénticas en todos los organismos de respiración aerobia, es una prueba del postulado __________ de la teoría celular.",
+   "opciones": {
+    "A": "Funcional",
+    "B": "Bioquímico",
+    "C": "Evolutivo",
+    "D": "Estructural"
+   },
+   "clave": "A",
+   "tema": "Postulados de la Teoría Celular"
+  },
+  {
+   "id": 74,
+   "texto": "Son estructuras presentes en la mitocondria:",
+   "opciones": {
+    "A": "Matriz, crestas y membrana externa",
+    "B": "Crestas, estroma y tilacoides",
+    "C": "Crestas, gránulos de almidón y estroma",
+    "D": "Membrana externa, matriz y tilacoides"
+   },
+   "clave": "A",
+   "tema": "Organelos celulares — mitocondria"
+  },
+  {
+   "id": 75,
+   "texto": "Son los biocatalizadores que en el mundo vivo aceleran o retardan las velocidades de reacciones bioquímicas:",
+   "opciones": {
+    "A": "Enzimas",
+    "B": "Lípidos",
+    "C": "Vitaminas",
+    "D": "Proteínas"
+   },
+   "clave": "A",
+   "tema": "Enzimas"
+  },
+  {
+   "id": 76,
+   "texto": "El monosacárido que se obtiene al final de la fase oscura de la fotosíntesis es:",
+   "opciones": {
+    "A": "Celulosa",
+    "B": "Glucosa",
+    "C": "Xilobiosa",
+    "D": "Almidón"
+   },
+   "clave": "B",
+   "tema": "Fotosíntesis — fase oscura"
+  },
+  {
+   "id": 77,
+   "texto": "Etapa de la meiosis en la cual las cromátidas hermanas se separan de forma aleatoria hacia los polos del huso meiótico:",
+   "opciones": {
+    "A": "Anafase II",
+    "B": "Metafase I",
+    "C": "Telofase II",
+    "D": "Anafase I"
+   },
+   "clave": "A",
+   "tema": "Meiosis — anafase"
+  },
+  {
+   "id": 78,
+   "texto": "Saccharomyces cerevisiae es una levadura cuya reproducción asexual se efectúa por medio de:",
+   "opciones": {
+    "A": "Gemación",
+    "B": "Conjugación",
+    "C": "Bipartición",
+    "D": "Esporulación"
+   },
+   "clave": "A",
+   "tema": "Reproducción asexual"
+  },
+  {
+   "id": 79,
+   "texto": "La cruza de una planta heterocigota de flores púrpura y una homocigota de flores blancas, siendo púrpura el carácter dominante, da como resultado:",
+   "opciones": {
+    "A": "50% púrpuras – 50% blancas",
+    "B": "100% blancas",
+    "C": "100% púrpuras",
+    "D": "75% púrpuras – 25% blancas"
+   },
+   "clave": "A",
+   "tema": "Herencia — dominancia"
+  },
+  {
+   "id": 80,
+   "texto": "El sexo cromosómico se establece durante el proceso de:",
+   "opciones": {
+    "A": "Segmentación",
+    "B": "Ovulación",
+    "C": "Fecundación",
+    "D": "Transcripción"
+   },
+   "clave": "C",
+   "tema": "Determinación del sexo"
+  }
+ ]
+}

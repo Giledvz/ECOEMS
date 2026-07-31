@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "La rapidez promedio es distancia entre tiempo, pero antes revisa las unidades: la respuesta viene en horas, así que convierte los 3 días: $3 \\times 24 = 72$ h. Entonces:\n\n$$v = \\frac{3.8 \\times 10^{15} \\ km}{72 \\ h} \\approx 5.3 \\times 10^{13} \\ \\frac{km}{h}$$\n\nLa opción A trae números parecidos pero en km/día: dividir entre 3 días da $1.3 \\times 10^{15}$ km/día, que no aparece en ninguna opción. El reactivo te pide manejar a la vez la notación científica y el cambio de unidades.\n\nREVISAR: la distancia Tierra-Luna real es $3.8 \\times 10^5$ km, no $10^{15}$ (eso serían cientos de años luz); parece errata de origen, aunque la clave es consistente con el dato tal como viene."
+ },
+ {
+  "id": 2,
+  "explanation": "El auto \"arranca\", es decir, parte del reposo ($v_0 = 0$). Con aceleración constante la velocidad crece según $v = v_0 + at$:\n\n$$v = 0 + \\left(1.8 \\ \\tfrac{m}{s^2}\\right)(2 \\ s) = 3.6 \\ \\tfrac{m}{s}$$\n\nLa aceleración te dice cuánto aumenta la velocidad cada segundo: 1.8 el primer segundo y otro 1.8 el segundo. Si te dio 0.9 (opción A), dividiste entre el tiempo en vez de multiplicar."
+ },
+ {
+  "id": 3,
+  "explanation": "Aquí la trampa está en las unidades: la segunda ley de Newton, $F = ma$, pide la masa en kilogramos, y 10 gramos son $0.010$ kg. Entonces:\n\n$$F = (0.010 \\ kg)\\left(5 \\ \\tfrac{m}{s^2}\\right) = 0.05 \\ N$$\n\nSi te dio 50 N (opción D), usaste 10 kg en vez de 10 g. Y 0.098 N (opción A) es el peso de la moneda ($mg$), que en un plano horizontal sin fricción no interviene."
+ },
+ {
+  "id": 4,
+  "explanation": "Como las fuerzas tienen la misma dirección pero sentidos contrarios, la fuerza neta es la resta: $F = 30 - 20 = 10$ N. Con la segunda ley de Newton:\n\n$$a = \\frac{F}{m} = \\frac{10 \\ N}{100 \\ kg} = 0.1 \\ \\tfrac{m}{s^2}$$\n\nSi te dio 0.5 (opción D), sumaste las fuerzas como si empujaran hacia el mismo lado."
+ },
+ {
+  "id": 5,
+  "explanation": "La ley de Hooke dice que la deformación de un resorte es proporcional a la fuerza aplicada: $F = kx$. Gracias a esa proporcionalidad se puede grabar una escala uniforme junto al resorte: a doble estiramiento, doble fuerza. Por eso todo dinamómetro se calibra con ella. La segunda ley de Newton (opción B) relaciona fuerza con aceleración, no con el estiramiento de un resorte."
+ },
+ {
+  "id": 6,
+  "explanation": "Hay trabajo mecánico cuando una fuerza produce un desplazamiento en su misma dirección: $W = Fd$. Empujar la caja con fuerza constante a lo largo de una distancia es exactamente eso.\n\nLa opción C es el distractor fino: en el movimiento circular *uniforme* la rapidez no cambia, así que la energía cinética no aumenta; además la fuerza centrípeta es perpendicular al movimiento y no realiza trabajo. Las opciones A y B hablan de calor y de consumo eléctrico, no de una fuerza que desplaza algo."
+ },
+ {
+  "id": 7,
+  "explanation": "La energía cinética es $E_c = \\frac{1}{2}mv^2$: depende de la masa y del *cuadrado* de la velocidad, con el factor un medio que viene de calcular el trabajo necesario para acelerar el cuerpo desde el reposo. Para no confundirte con la opción B: el 2 divide, no multiplica; $2mv^2$ sería cuatro veces la energía real."
+ },
+ {
+  "id": 8,
+  "explanation": "A volumen constante, la presión de un gas ideal es proporcional a su temperatura absoluta (ley de Gay-Lussac): $\\frac{p_1}{T_1} = \\frac{p_2}{T_2}$. Despeja la temperatura del objeto:\n\n$$T_2 = T_1 \\cdot \\frac{p_2}{p_1} = 273.17 \\ K \\times \\frac{9650 \\times 10^4}{8500 \\times 10^4} \\approx 310 \\ K$$\n\nFíjate que las potencias de 10 se cancelan en el cociente. Si te dio 241 K (opción D), invertiste las presiones: como la presión subió, la temperatura debe quedar por arriba de 273 K, no por abajo."
+ },
+ {
+  "id": 9,
+  "explanation": "El kelvin y el grado Celsius tienen el mismo tamaño; lo único que cambia entre las dos escalas es dónde ponen el cero: el cero absoluto (0 K) corresponde a $-273 \\ °C$. Por eso basta sumar: $T_K = T_C + 273$. Así, $0 \\ °C = 273$ K y $100 \\ °C = 373$ K. La opción A, con el 32 y el 1.8, mezcla la conversión de grados Fahrenheit, que es otra historia."
+ },
+ {
+  "id": 10,
+  "explanation": "Es la capacidad térmica *específica* (el calor específico): el calor por **gramo** y por **grado**; \"específica\" significa justamente \"por unidad de masa\". La capacidad térmica a secas (opción A) es la del objeto completo, sin dividir entre su masa. Y los calores latentes (B y C) son los de los cambios de fase, donde la temperatura ni siquiera cambia."
+ },
+ {
+  "id": 11,
+  "explanation": "Cuando dos o más olas coinciden en el mismo punto, sus amplitudes se suman: es el principio de superposición. Si llegan en fase, la interferencia es constructiva y se forma una ola más grande que el promedio; por eso pasa solo de vez en cuando, cuando varias crestas coinciden. Reflejarse o refractarse (opciones C y A) cambia la dirección de la ola, no su tamaño."
+ },
+ {
+  "id": 12,
+  "explanation": "Es aplicación directa de la ley de Ohm: $V = IR$.\n\n$$V = (10 \\ A)(10 \\ \\Omega) = 100 \\ V$$\n\nSi contestaste 20 V, sumaste corriente y resistencia, y 1 V saldría de dividirlas: en la ley de Ohm el voltaje es el *producto* de las dos."
+ },
+ {
+  "id": 13,
+  "explanation": "En el circuito, $R_1 = 2 \\ \\Omega$ está en serie con el arreglo en paralelo de $R_2 = 4 \\ \\Omega$ y $R_3 = 6 \\ \\Omega$. Primero resuelve el paralelo:\n\n$$R_{23} = \\frac{R_2 R_3}{R_2 + R_3} = \\frac{4 \\times 6}{4 + 6} = 2.4 \\ \\Omega$$\n\nY luego súmalo con la que está en serie: $R_T = 2 + 2.4 = 4.4 \\ \\Omega$. Si te dio 12 $\\Omega$ (opción C), sumaste las tres directo, como si todas estuvieran en serie."
+ },
+ {
+  "id": 14,
+  "explanation": "Primero el volumen por llenar: $50 \\times 25 \\times 3 = 3750 \\ m^3$. Luego el gasto del tubo, $Q = Av$: el diámetro es 0.40 m, así que el radio es 0.20 m y\n\n$$A = \\pi r^2 = \\pi (0.20)^2 \\approx 0.126 \\ m^2, \\qquad Q = (0.126)(4) \\approx 0.503 \\ \\tfrac{m^3}{s}$$\n\nEl tiempo es $t = \\frac{3750}{0.503} \\approx 7460 \\ s \\approx 2.07$ h. Si te dio 1.63 h (opción C), usaste el diámetro al cuadrado, sin el $\\pi$, como si fuera el área del tubo."
+ },
+ {
+  "id": 15,
+  "explanation": "El dato del radio te da la distancia focal: $f = \\frac{R}{2} = \\frac{30}{2} = 15$ cm. Con la ecuación de Gauss, donde $d_i = 20$ cm es la distancia de la imagen:\n\n$$\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i} \\ \\Rightarrow \\ \\frac{1}{d_o} = \\frac{1}{15} - \\frac{1}{20} = \\frac{4-3}{60} = \\frac{1}{60}$$\n\nAsí que el objeto está a $d_o = 60$ cm. Si contestaste 30 cm, te quedaste con el radio del enunciado sin pasar por la focal.\n\nREVISAR: $f = R/2$ es en rigor la fórmula de espejos esféricos; para una lente la focal depende del índice de refracción y de sus dos radios (ecuación del fabricante). La clave 60 cm solo sale asumiendo $f = 15$ cm, que es claramente la intención del reactivo, pero el planteamiento físico es impreciso."
+ },
+ {
+  "id": 16,
+  "explanation": "El corazón del modelo de Bohr es justamente ese postulado: el electrón se mueve en ciertas órbitas permitidas —estados estacionarios— donde **no** pierde energía, y solo emite o absorbe al saltar de un nivel a otro. La opción A describe el problema del modelo clásico que Bohr vino a resolver (un electrón acelerado radiaría y caería en espiral al núcleo), y la D contradice la idea central del modelo: la energía está cuantizada, no varía de forma continua."
+ },
+ {
+  "id": 17,
+  "explanation": "La adecuación es la propiedad textual de ajustar el lenguaje a la situación comunicativa: quién te escucha, en qué contexto y con qué propósito. Usar el registro apropiado (formal en un trámite, coloquial con tus amigos) es exactamente eso. \"Lengua culta\" (opción A) es apenas uno de los registros posibles, no la propiedad de saber elegir el adecuado."
+ },
+ {
+  "id": 18,
+  "explanation": "Es un artículo de opinión. La pista más clara está en la primera persona y en los juicios del autor: \"la olimpiada internacional a la que me refiero\", \"a mi parecer, debe serlo para todo México\", y el reclamo de que ante los logros científicos \"lo que predomina es el silencio\". El autor no solo informa: toma postura sobre el poco valor que los medios dan a la ciencia frente al deporte. Sí narra hechos (opción D), pero los usa como apoyo de su punto de vista; el propósito dominante es opinar."
+ },
+ {
+  "id": 19,
+  "explanation": "El texto dramático está hecho para representarse: la historia avanza solo con los diálogos de los personajes y con las acotaciones, esas indicaciones del autor sobre movimientos, gestos y escenario. Por lo mismo prescinde de narrador: nadie \"cuenta\" la historia, se muestra en escena. Eso descarta la opción C, que le mete un narrador, y también B y D, que mencionan elementos del montaje (escenografía, vestuario) y no del texto."
+ },
+ {
+  "id": 20,
+  "explanation": "La comedia nace en Grecia y pone en escena a personajes comunes enfrentando los tropiezos de la vida cotidiana; al exhibir con humor las debilidades humanas busca corregir riéndose de ellas, y su desenlace es feliz. La opción C describe a la tragedia: origen en los rituales dionisiacos, personajes aristocráticos y final funesto."
+ },
+ {
+  "id": 21,
+  "explanation": "Es el género épico: canta hazañas heroicas de personajes inspirados en figuras históricas o legendarias —Aquiles, el Cid— que encarnan los valores de toda una colectividad. Aunque la épica se cuenta (por eso tienta la opción D), en la división clásica de los géneros el que se define por lo heroico y lo colectivo es el épico; \"narrativo\" es una categoría más general."
+ },
+ {
+  "id": 22,
+  "explanation": "Una corriente literaria agrupa autores que coinciden en tres cosas: forma de escribir, interés por temas similares y **época**. Ese último rasgo es la clave: una corriente es un movimiento de contemporáneos, no una cadena de herederos. Por eso falla la opción C, que cambia la época por \"heredar el estilo\"; y B y D la limitan a un solo género, cuando una corriente como el Realismo o el Romanticismo abarca novela, poesía y teatro a la vez."
+ },
+ {
+  "id": 23,
+  "explanation": "Juan Valera, el autor de *Pepita Jiménez*, pertenece al Realismo español del siglo XIX, junto con Galdós y Clarín. Los otros tres son posteriores: Unamuno y Antonio Machado son figuras ligadas a la Generación del 98, y Camilo José Cela es narrador del siglo XX, de la posguerra."
+ },
+ {
+  "id": 24,
+  "explanation": "Balzac agrupó casi toda su obra narrativa —decenas de novelas, entre ellas *Papá Goriot*— en un gran ciclo llamado *La comedia humana*, un retrato total de la sociedad francesa de su tiempo. No lo confundas con *La divina comedia*, que es el poema de Dante (opción A), ni con las *Novelas ejemplares*, que son de Cervantes."
+ },
+ {
+  "id": 25,
+  "explanation": "Es el cuento: una narración breve, de pocos personajes y acción concentrada, que ha sido el cauce natural de lo fantástico y lo imaginario. La novela (opción C) también puede ser fantástica, pero no es breve; la crónica relata hechos reales en orden temporal, y la comedia ni siquiera es narrativa: es teatro."
+ },
+ {
+  "id": 26,
+  "explanation": "Parafrasear es decir con tus propias palabras lo que dice un texto, y para lograrlo primero tienes que haber entendido su sentido: por eso es un proceso de carácter interpretativo. No se trata de copiar cambiando palabritas, sino de reconstruir el significado tal como lo comprendiste."
+ },
+ {
+  "id": 27,
+  "explanation": "Un elemento es una sustancia formada por una sola clase de átomos, aunque venga en moléculas de varios átomos: el sodio (Na), el cloro ($Cl_2$) y el fósforo ($P_4$) lo cumplen. Las demás opciones incluyen al menos un compuesto: el CO (en B y D) y el $SO_2$ (en C) combinan dos elementos distintos. Ojo: $S_8$ o $N_2$ sí son elementos; tener varios átomos no vuelve compuesto a nada, lo que importa es que sean átomos iguales."
+ },
+ {
+  "id": 28,
+  "explanation": "El número atómico del oxígeno es $Z = 8$: son 8 protones y, como el átomo es neutro, también 8 electrones. Su isótopo más abundante tiene número de masa $A = 16$, así que los neutrones son $A - Z = 16 - 8 = 8$. El 16 que aparece en las otras opciones es el número de masa (protones más neutrones juntos), no la cuenta de una sola partícula."
+ },
+ {
+  "id": 29,
+  "explanation": "Los metales tienen bajo potencial de ionización: cuesta poca energía arrancarles sus electrones de valencia, por eso los pierden con facilidad y forman cationes como $Na^+$ o $Ca^{2+}$. Los no metales (opción D) son lo contrario: tienden a ganar electrones. Ácidos y bases ni siquiera son elementos, son compuestos."
+ },
+ {
+  "id": 30,
+  "explanation": "Te piden la cantidad de sustancia total de la disolución, o sea los moles del soluto **más** los del disolvente:\n\n$$n_{azúcar} = \\frac{3.42}{342} = 0.01 \\ mol, \\qquad n_{agua} = \\frac{180}{18} = 10 \\ mol$$\n\nEn total: $10 + 0.01 = 10.01$ mol. Si te dio 10.10 (opción C), se te corrió el punto decimal en los moles del azúcar."
+ },
+ {
+  "id": 31,
+  "explanation": "Primero la masa molar del sulfato de sodio: $2(23) + 32 + 4(16) = 46 + 32 + 64 = 142 \\ \\frac{g}{mol}$. Luego multiplica por la cantidad de sustancia:\n\n$$m = (0.1 \\ mol)\\left(142 \\ \\tfrac{g}{mol}\\right) = 14.2 \\ g$$\n\nLa opción D (142 g) es la masa de un mol completo: te faltó multiplicar por el 0.1."
+ },
+ {
+  "id": 32,
+  "explanation": "Lee con cuidado: pregunta por el enlace que une a las **moléculas** de agua entre sí, no a los átomos dentro de una molécula. Esa unión intermolecular es el puente de hidrógeno: el hidrógeno, con carga parcial positiva, se atrae con el oxígeno de la molécula vecina. El covalente polar (opción A) es el distractor clásico: ese es el enlace O–H *dentro* de cada molécula."
+ },
+ {
+  "id": 33,
+  "explanation": "Por la forma angular, los dipolos de los dos enlaces O–H no se cancelan y la molécula queda polar: un extremo con carga parcial negativa (el oxígeno) y otro positivo (los hidrógenos). Esa polaridad es la que permite que cada molécula se atraiga con sus vecinas formando puentes de hidrógeno. La opción A dice lo contrario de la realidad: el agua líquida es *más* densa que el hielo, por eso el hielo flota."
+ },
+ {
+  "id": 34,
+  "explanation": "La combustión es la reacción de una sustancia con el oxígeno: el combustible se oxida rápidamente liberando luz y calor. Es el ejemplo por excelencia de una oxidación. Saponificación y esterificación (opciones A y B) son reacciones orgánicas para obtener jabones y ésteres, nada que ver con quemar algo."
+ },
+ {
+  "id": 35,
+  "explanation": "Las proteínas son polímeros de aminoácidos unidos por enlaces peptídicos, y una de sus funciones principales es estructural: construir y reparar el tejido muscular. El polinucleótido (opción D) también es un polímero, pero de nucleótidos —es el ADN o el ARN—, no de aminoácidos; ahí está la diferencia que decide la pregunta."
+ },
+ {
+  "id": 36,
+  "explanation": "Exotérmica significa que la reacción libera energía, y eso en símbolos es $\\Delta H < 0$: la única que lo cumple es la opción A. La B trae $\\Delta H = +79.5$ kJ y la C trae $\\Delta H > 0$: ambas absorben calor, son endotérmicas. Y en la D la palabra \"Energía\" está del lado de los reactivos, o sea que hay que suministrársela: también endotérmica."
+ },
+ {
+  "id": 37,
+  "explanation": "La geografía actual no se queda en localizar ni en describir: su finalidad es explicar cómo se relacionan los elementos naturales (relieve, clima, agua) con los sociales (población, economía, cultura) en el espacio; es una ciencia de síntesis entre naturaleza y sociedad. Localizar (opción D) es solo uno de sus principios metodológicos, el punto de partida, no la meta."
+ },
+ {
+  "id": 38,
+  "explanation": "La latitud es la distancia angular medida desde el Ecuador hacia el norte o hacia el sur, de 0° a 90°. La longitud (opción C) es la coordenada complementaria pero en sentido este-oeste, medida desde el meridiano de Greenwich; la altitud son metros sobre el nivel del mar, y la nutación es una oscilación del eje terrestre, no una coordenada."
+ },
+ {
+  "id": 39,
+  "explanation": "Entre Chihuahua y Sinaloa se atraviesa la Sierra Madre Occidental, la cadena que corre paralela a la costa del Pacífico desde la frontera norte hasta el Eje Volcánico; ahí están las Barrancas del Cobre que recorre el tren Chihuahua-Pacífico. La Sierra Madre Oriental (opción C) está del otro lado del país, hacia el Golfo de México."
+ },
+ {
+  "id": 40,
+  "explanation": "Las grandes concentraciones de población de Asia —China, India, el sureste asiático— se asentaron históricamente en llanuras aluviales regadas por ríos como el Ganges, el Indo, el Huang He o el Yangtsé: terreno plano, suelo fértil y agua superficial disponible para la agricultura, que fue la base de esas civilizaciones. Montañas, depresiones y mesetas (las otras opciones) son justo las zonas menos pobladas del continente."
+ }
+]

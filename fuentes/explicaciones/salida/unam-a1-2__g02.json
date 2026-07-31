@@ -1,0 +1,162 @@
+[
+ {
+  "id": 41,
+  "explanation": "La taiga es el bosque frío de coníferas (pinos, abetos, alerces) que forma un cinturón justo debajo de la tundra, en las latitudes altas del hemisferio norte: Escandinavia y Rusia (norte de Europa) y Siberia (norte de Asia), además de Canadá y Alaska en América. Ese clima frío de veranos cortos no existe en el sur de Europa ni en África u Oceanía, donde dominan climas templados, cálidos o secos: por eso las demás opciones quedan descartadas."
+ },
+ {
+  "id": 42,
+  "explanation": "Los plaguicidas se aplican sobre cultivos y suelo, y la lluvia y el riego los arrastran hacia ríos, lagos y presas: por eso su uso excesivo contamina sobre todo las **aguas superficiales** (a ese arrastre se le llama escurrimiento). La trampa es pensar en el aire (troposfera, atmósfera): algo se dispersa al rociar, pero el destino principal de estos químicos es el agua que corre sobre el terreno."
+ },
+ {
+  "id": 43,
+  "explanation": "La polución agroquímica es una de las causas principales de la contaminación del agua: los fertilizantes y plaguicidas del campo son lavados por la lluvia y el riego hacia ríos, lagos y mantos acuíferos. Fíjate en que las otras opciones alteran el paisaje o el ciclo del agua (desviar un cauce, infiltración, desertificación), pero no le agregan sustancias contaminantes, que es de lo que trata la pregunta."
+ },
+ {
+  "id": 44,
+  "explanation": "El Índice de Desarrollo Humano combina tres dimensiones, cada una con su indicador: salud (esperanza de vida al nacer), educación (alfabetismo y escolaridad) y nivel de vida (ingreso per cápita). Es exactamente la tercia de la opción A. Las demás mezclan variables económicas o de servicios (deuda externa, inflación, acceso a internet) que no entran en el cálculo del IDH."
+ },
+ {
+  "id": 45,
+  "explanation": "La caída de la Unión Soviética (1991) redibujó el mapa europeo: sus repúblicas —las bálticas, Ucrania, Bielorrusia, Moldavia— se volvieron países independientes, y en ese mismo proceso de desintegración del bloque socialista se fragmentaron Yugoslavia y Checoslovaquia. La regionalización económica se antoja, pero hace lo contrario: agrupa países en bloques (como la Unión Europea), no crea países nuevos."
+ },
+ {
+  "id": 46,
+  "explanation": "En el año 2000 la República Mexicana contaba 31 estados; el Distrito Federal, por ser la sede de los poderes de la Unión, tenía un régimen aparte y no se contaba como estado (fue hasta 2016 cuando se transformó en la Ciudad de México). Con ese criterio de contar solo los estados, el número es 31.\n\nREVISAR: en sentido estricto, “entidades federativas” incluye al Distrito Federal (Constitución, art. 43; el INEGI reporta 32 entidades), así que en 2000 serían 32, la opción D. La clave 31 solo se sostiene contando puros estados; probable errata de la guía."
+ },
+ {
+  "id": 47,
+  "explanation": "El algoritmo de la división exige que dividendo $=$ divisor $\\times$ cociente $+$ residuo, con el residuo entre cero y el divisor: $0 \\leq r < 11$. ¿Cuántas veces cabe 11 en 127? $11 \\times 11 = 121$ y sobra $127 - 121 = 6$, así que $c = 11$ y $r = 6$. Ojo: las otras opciones también “cuadran” numéricamente (por ejemplo, $10 \\times 11 + 17 = 127$), pero violan la condición del residuo, que no puede ser negativo ni alcanzar al divisor."
+ },
+ {
+  "id": 48,
+  "explanation": "Cuando divides potencias de la misma base se restan los exponentes, y aquí la base es todo el paquete $(a^2+b)$: arriba tiene exponente $\\frac{3}{2}$ y abajo exponente $1$:\n\n$$\\frac{(a^2+b)^{3/2}}{(a^2+b)^1} = (a^2+b)^{3/2 - 1} = (a^2+b)^{1/2} = \\sqrt{a^2+b}$$\n\nEl error de la opción D es “repartir” la raíz sobre los sumandos: la raíz de una suma no se separa, $\\sqrt{a^2+b}$ no es $a + b^{1/2}$."
+ },
+ {
+  "id": 49,
+  "explanation": "Usa el binomio al cubo $(A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3$ con $A = x^2$ y $B = 3y$:\n\n$$(x^2)^3 - 3(x^2)^2(3y) + 3(x^2)(3y)^2 - (3y)^3 = x^6 - 9x^4y + 27x^2y^2 - 27y^3$$\n\nComo el binomio es una resta, los signos se alternan: $+, -, +, -$. La opción A falla justo en el último término: $(3y)^3 = 27y^3$ va restando, no sumando."
+ },
+ {
+  "id": 50,
+  "explanation": "Antes de factorizar, saca el signo del numerador: $-x^2 - 3x + 40 = -(x^2 + 3x - 40)$. Ahora busca dos números que multiplicados den $-40$ y sumados $+3$: son $8$ y $-5$, así que $x^2 + 3x - 40 = (x+8)(x-5)$. Entonces\n\n$$\\frac{-(x+8)(x-5)}{x+8} = -(x-5) = -x+5$$\n\nSi te dio $x - 5$ (opción A), factorizaste bien pero perdiste el signo negativo del numerador en el último paso."
+ },
+ {
+  "id": 51,
+  "explanation": "La distinción clave es ecuación contra identidad: una **ecuación** es una igualdad que solo se cumple para ciertos valores de la incógnita; una **identidad** se cumple para todos. Las opciones C y D son las identidades pitagóricas: $\\mathrm{sen}^2(x) + \\cos^2(x) = 1$ vale para cualquier $x$ (y dividiéndola entre $\\cos^2(x)$ obtienes la D), así que ahí no hay nada que resolver. En cambio, $\\mathrm{sen}(x) = \\frac{1}{2}$ solo es cierta para valores particulares ($x = 30°$, $x = 150°$ y sus vueltas completas): plantea la pregunta “¿qué $x$ la cumple?”, y eso es exactamente una ecuación.\n\nREVISAR: la opción B, $\\mathrm{sen}(x) = \\frac{1}{2}x$, también es una igualdad que solo se cumple para ciertos valores (por ejemplo $x = 0$), o sea, también es ecuación y no identidad; el reactivo tiene dos respuestas defendibles y la clave oficial es A."
+ },
+ {
+  "id": 52,
+  "explanation": "Con la fórmula general para $6x^2 - 11x - 35 = 0$, donde $a = 6$, $b = -11$, $c = -35$:\n\n$$x = \\frac{11 \\pm \\sqrt{121 + 840}}{12} = \\frac{11 \\pm \\sqrt{961}}{12} = \\frac{11 \\pm 31}{12}$$\n\nComo $\\sqrt{961} = 31$, salen $x_1 = \\frac{-20}{12} = -\\frac{5}{3}$ y $x_2 = \\frac{42}{12} = \\frac{7}{2}$. Las demás opciones traen los mismos números con los signos cambiados, así que este reactivo se gana cuidando signos. Comprueba una raíz: $6\\left(\\frac{7}{2}\\right)^2 - 11\\left(\\frac{7}{2}\\right) - 35 = \\frac{147}{2} - \\frac{77}{2} - 35 = 0$."
+ },
+ {
+  "id": 53,
+  "explanation": "Resuelve la opción C: $-3x + 1 \\geq 0$ lleva a $-3x \\geq -1$, y al dividir entre $-3$ —un número negativo— la desigualdad **se invierte**: $x \\leq \\frac{1}{3}$. Eso es exactamente $(-\\infty, \\frac{1}{3}]$: todos los reales hasta $\\frac{1}{3}$, incluido (por eso el corchete). La opción A da $x \\geq \\frac{1}{3}$, el intervalo espejo $[\\frac{1}{3}, \\infty)$: es la trampa para quien olvida voltear el sentido al dividir entre un negativo."
+ },
+ {
+  "id": 54,
+  "explanation": "La tercera ecuación solo tiene dos incógnitas: despeja $z = 17 - 3y$ y sustitúyela en las otras dos. En la primera: $5x + 2y - (17 - 3y) = -7$ se reduce a $5x + 5y = 10$, o sea $x + y = 2$. En la segunda: $x - 2y + 2(17 - 3y) = 0$ da $x - 8y = -34$. Restando ambas: $9y = 36$, así que $y = 4$, luego $x = 2 - 4 = -2$ y $z = 17 - 3(4) = 5$. Comprueba en la primera ecuación: $5(-2) + 2(4) - 5 = -7$, tal como debía."
+ },
+ {
+  "id": 55,
+  "explanation": "El truco está en $(-8)^{2/3}$: el denominador del exponente es una raíz cúbica y el numerador un cuadrado. Primero la raíz: $\\sqrt[3]{-8} = -2$; luego el cuadrado: $(-2)^2 = 4$. Entonces\n\n$$y = 5(4) + 3(-8) = 20 - 24 = -4$$\n\nSi te dio $-44$ (opción A), tomaste $(-8)^{2/3}$ como $-4$: se te fue el cuadrado, que es justo el que elimina el signo negativo."
+ },
+ {
+  "id": 56,
+  "explanation": "En la figura el ángulo recto está en $C$: los catetos miden $3$ (el vertical $BC$) y $4$ (el horizontal $CA$), y la hipotenusa mide $5$. El seno es cateto **opuesto** entre hipotenusa, y visto desde $A$ —la esquina derecha— el cateto que queda enfrente es el de $3$:\n\n$$\\mathrm{sen}\\,A = \\frac{\\text{opuesto}}{\\text{hipotenusa}} = \\frac{3}{5}$$\n\nSi contestaste $\\frac{4}{5}$, tomaste el cateto adyacente: ese cociente es el coseno de $A$, no su seno."
+ },
+ {
+  "id": 57,
+  "explanation": "El lado opuesto a un ángulo se conecta con la hipotenusa mediante el seno: $\\mathrm{sen}\\,30° = \\frac{\\text{opuesto}}{\\text{hipotenusa}}$. Como $\\mathrm{sen}\\,30° = \\frac{1}{2}$:\n\n$$\\text{opuesto} = 10 \\cdot \\frac{1}{2} = 5$$\n\nVale la pena memorizar la regla del triángulo 30-60-90: el cateto opuesto al ángulo de 30° siempre mide la mitad de la hipotenusa."
+ },
+ {
+  "id": 58,
+  "explanation": "Una exponencial $e^{\\text{lo que sea}}$ siempre es positiva: puede tomar cualquier valor de $(0, \\infty)$, acercarse a cero cuanto quieras, pero nunca valer cero. Al sumarle 5, todo ese conjunto se recorre cinco unidades hacia arriba:\n\n$$y = e^{-5x - \\frac{1}{5}} + 5 > 5$$\n\nEl rango es $(5, \\infty)$, con paréntesis porque $y = 5$ es la asíntota: se aproxima, no se alcanza. El exponente $-5x - \\frac{1}{5}$ recorre todos los reales y no cambia nada; las opciones con $\\frac{1}{5}$ solo reciclan ese número para confundirte."
+ },
+ {
+  "id": 59,
+  "explanation": "El punto medio se obtiene promediando coordenada por coordenada:\n\n$$M = \\left(\\frac{0+4}{2}, \\frac{2+6}{2}\\right) = (2, 4)$$\n\nCada promedio usa solo las dos abscisas o solo las dos ordenadas. Si obtuviste $(2, 3)$, en la segunda coordenada promediaste números que no iban juntos: revisa que hayas tomado $2$ y $6$, las dos ordenadas."
+ },
+ {
+  "id": 60,
+  "explanation": "Aplica la fórmula de distancia de un punto $(x_0, y_0)$ a la recta $Ax + By + C = 0$:\n\n$$d = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}} = \\frac{|(-3)(-1) + 4(1) - 8|}{\\sqrt{9 + 16}} = \\frac{|3 + 4 - 8|}{5} = \\frac{1}{5} = 0.2$$\n\nLos dos puntos delicados son el valor absoluto del numerador y la raíz $\\sqrt{9+16} = 5$ del denominador; cuida en especial los signos al sustituir $x_0 = -1$."
+ },
+ {
+  "id": 61,
+  "explanation": "La conexión perpendicular es justamente la distancia mínima del punto a la recta, así que usa la fórmula punto-recta. Escribe el gasoducto en forma general, $3x + 4y - 2 = 0$, y sustituye la fábrica $(6, 6)$:\n\n$$d = \\frac{|3(6) + 4(6) - 2|}{\\sqrt{3^2 + 4^2}} = \\frac{|18 + 24 - 2|}{5} = \\frac{40}{5} = 8 \\text{ m}$$\n\nFíjate en pasar el $2$ restando antes de sustituir: olvidarlo cambia el numerador y te manda a las opciones cercanas."
+ },
+ {
+  "id": 62,
+  "explanation": "La ecuación trae un 3 estorbando: divide todo entre 3 para llevarla a la forma $x^2 + y^2 + Dx + Ey + F = 0$:\n\n$$x^2 + y^2 + 4x - 10y + 2 = 0$$\n\nEl centro es $\\left(-\\frac{D}{2}, -\\frac{E}{2}\\right) = \\left(-\\frac{4}{2}, \\frac{10}{2}\\right) = (-2, 5)$. Lo confirmas completando cuadrados: $(x+2)^2 + (y-5)^2 = 27$. Si te dio $(2, -5)$, olvidaste cambiar los signos; si te dio $(-4, 10)$, te faltó dividir entre 2."
+ },
+ {
+  "id": 63,
+  "explanation": "Con eje focal paralelo al eje X, foco en $F(1, 0)$ y parámetro $p = 1$, el vértice queda en el origen (a una unidad del foco) y la parábola abre hacia la derecha, siempre hacia su foco. La forma canónica horizontal con vértice en el origen es $y^2 = 4px$, y con $p = 1$:\n\n$$y^2 = 4x \\quad \\Longrightarrow \\quad y^2 - 4x = 0$$\n\nLas opciones con $x^2$ son parábolas verticales, imposibles aquí; y $y^2 + 4x = 0$ abre a la izquierda, dejando el foco del lado contrario."
+ },
+ {
+  "id": 64,
+  "explanation": "Es la definición textual de la **elipse**: el lugar geométrico de los puntos cuya *suma* de distancias a dos puntos fijos (los focos) es constante — imagina la cuerda tensa amarrada a dos clavos con la que se traza. El distractor fuerte es la hipérbola, pero en ella lo constante es la *diferencia* de las distancias, no la suma; la circunferencia usa un solo punto fijo y la parábola un foco y una directriz."
+ },
+ {
+  "id": 65,
+  "explanation": "En la hipérbola la relación entre semiejes y distancia focal es $c^2 = a^2 + b^2$: la $c$ es la mayor, porque los focos quedan por fuera de los vértices. De la ecuación, $b = 9$, y con $c = 41$:\n\n$$a^2 = c^2 - b^2 = 1681 - 81 = 1600 \\quad \\Longrightarrow \\quad a = 40$$\n\nDe paso, $(9, 40, 41)$ es terna pitagórica. Si te dio 42, usaste $a^2 = b^2 + c^2$: esa es la relación de la elipse, donde la mayor es $a$; en la hipérbola es al revés."
+ },
+ {
+  "id": 66,
+  "explanation": "Lee los datos de la figura: la elipse cruza el eje X de $-6$ a $0$, así que su centro está en $(-3, 0)$ y el semieje horizontal mide $3$; verticalmente llega de $-4$ a $4$, semieje vertical $4$ (elipse más alta que ancha). Con centro $(h, k) = (-3, 0)$:\n\n$$\\frac{(x+3)^2}{9} + \\frac{y^2}{16} = 1$$\n\nDos trampas a la vez: el signo del centro (centro en $-3$ produce $(x+3)^2$, no $(x-3)^2$) y el orden de los denominadores (el 16 va bajo $y^2$ porque el eje mayor es vertical)."
+ },
+ {
+  "id": 67,
+  "explanation": "Al sustituir $x = 0$ sale la indeterminación $\\frac{0}{0}$, así que racionaliza multiplicando por el conjugado $\\frac{\\sqrt{2+x}+\\sqrt{2}}{\\sqrt{2+x}+\\sqrt{2}}$:\n\n$$\\frac{(2+x) - 2}{x\\left(\\sqrt{2+x}+\\sqrt{2}\\right)} = \\frac{1}{\\sqrt{2+x}+\\sqrt{2}}$$\n\nYa sin indeterminación, evalúa en $x = 0$: $\\frac{1}{2\\sqrt{2}}$, y racionalizando el denominador: $\\frac{1}{2\\sqrt{2}} \\cdot \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{\\sqrt{2}}{4}$. Si te dio $\\frac{\\sqrt{2}}{2}$, te comiste un 2: eso valdría $\\frac{1}{\\sqrt{2}}$, como si abajo quedara una sola raíz en vez de la suma de las dos."
+ },
+ {
+  "id": 68,
+  "explanation": "La derivada en un punto se define con el cociente de incrementos: al valor “nuevo” $f(3+h)$ le restas el valor original $f(3)$ y divides entre el incremento $h$:\n\n$$f'(3) = \\lim_{h \\to 0} \\frac{f(3+h) - f(3)}{h} = \\lim_{h \\to 0} \\frac{(3+h)^3 - 3^3}{h}$$\n\nAl desarrollar $(3+h)^3 = 3^3 + 3 \\cdot 3^2 h + 3 \\cdot 3 h^2 + h^3$, el $3^3$ se cancela con el $-3^3$, factorizas $h$ y el límite da $f'(3) = 3 \\cdot 3^2 = 27$. Eso es exactamente la opción A. En B la resta está al revés (daría $-27$) y en C los valores se suman en lugar de restarse, con lo que el límite ni siquiera existe.\n\nREVISAR: la opción D, $\\lim_{h \\to 0} \\frac{f(3)-f(3-h)}{h}$, es el cociente “hacia atrás” y también converge a $f'(3) = 27$, con álgebra correcta en el reactivo; en rigor también sirve para obtener la derivada. La clave A es la definición usual, pero D es defendible."
+ },
+ {
+  "id": 69,
+  "explanation": "Desarrolla y deriva: $y = x(x-4)^2 = x^3 - 8x^2 + 16x$, de donde $y' = 3x^2 - 16x + 16$. Iguala a cero:\n\n$$x = \\frac{16 \\pm \\sqrt{256 - 192}}{6} = \\frac{16 \\pm 8}{6} \\quad \\Longrightarrow \\quad x = 4, \\ x = \\frac{4}{3}$$\n\nEvalúa en la función original: en $x = \\frac{4}{3}$, $y = \\frac{4}{3}\\left(\\frac{4}{3}-4\\right)^2 = \\frac{4}{3} \\cdot \\frac{64}{9} = \\frac{256}{27}$, el máximo; en $x = 4$, $y = 0$, el mínimo (mismo valor que en el extremo $x = 0$). Un filtro rápido: las opciones B y C dicen mín $(4, 4)$, pero la función en $x = 4$ vale $0$, así que ni siquiera son puntos de la curva."
+ },
+ {
+  "id": 70,
+  "explanation": "Si cortas un cuadrado de lado $x$ en cada esquina de la lámina de $15 \\times 10$, al doblar queda una caja de base $(15-2x)(10-2x)$ y altura $x$:\n\n$$V = x(15-2x)(10-2x) = 4x^3 - 50x^2 + 150x$$\n\nDeriva e iguala a cero: $V' = 12x^2 - 100x + 150 = 0$, que simplificada es $6x^2 - 50x + 75 = 0$, con raíces\n\n$$x = \\frac{50 \\pm \\sqrt{2500 - 1800}}{12} = \\frac{50 \\pm 10\\sqrt{7}}{12} = \\frac{25 \\pm 5\\sqrt{7}}{6}$$\n\nLa raíz con signo $+$ vale como $6.4$: imposible, porque cortarías más de la mitad del lado de 10 cm. El corte válido es $x = \\frac{25 - 5\\sqrt{7}}{6} \\approx 1.96$ cm, donde el volumen es máximo."
+ },
+ {
+  "id": 71,
+  "explanation": "Aplica la regla de la potencia y evalúa en los límites:\n\n$$\\int_0^2 x^2\\,dx = \\left[\\frac{x^3}{3}\\right]_0^2 = \\frac{8}{3} - 0 = \\frac{8}{3}$$\n\nSi te dio 8 (opción D), evaluaste $x^3$ sin dividir entre 3: al integrar $x^n$ el exponente sube a $n+1$ y además se divide entre ese mismo $n+1$."
+ },
+ {
+  "id": 72,
+  "explanation": "Es una sustitución directa: $u = 2x - 1$, $du = 2\\,dx$, es decir, $dx = \\frac{du}{2}$:\n\n$$\\int (2x-1)^3\\,dx = \\frac{1}{2}\\int u^3\\,du = \\frac{1}{2} \\cdot \\frac{u^4}{4} + c = \\frac{(2x-1)^4}{8} + c$$\n\nComprueba derivando: $\\frac{4(2x-1)^3 \\cdot 2}{8} = (2x-1)^3$, la función original. Si llegaste a $\\frac{(2x-1)^4}{4}$ (opción B), te faltó el $\\frac{1}{2}$ que aporta la sustitución: la derivada interna de $2x-1$."
+ },
+ {
+  "id": 73,
+  "explanation": "El enunciado solo transmite información verificable: fechas, un periodo histórico, un hecho (la rendición de Constantinopla). No opina, no ordena, no habla de la lengua misma ni busca un efecto estético: está centrado en el referente, el tema del que se habla. Esa es la función **referencial** o informativa, la típica de los textos históricos y científicos. La metalingüística (opción A) sería si el enunciado hablara del propio lenguaje, no de la historia."
+ },
+ {
+  "id": 74,
+  "explanation": "Aunque el fragmento narra acciones, su propósito no es informarte de nada: es puro efecto literario. Fíjate en el ritmo lento, los suspiros repetidos, la escena mínima de un personaje que encola madera mientras sueña con que la muchacha rubia vuelva a pasar: el valor del texto está en *cómo* está contado, no en los datos que aporta. Cuando el mensaje se elabora con intención estética —y eso ocurre también en prosa, no solo en verso— predomina la función **poética**. La trampa es la referencial: esa busca informar con objetividad, y aquí la anécdota es solo el pretexto."
+ },
+ {
+  "id": 75,
+  "explanation": "El fragmento es un retrato: acumula rasgos físicos de Momo —pequeña, bastante flaca, pelo ensortijado “negro como la brea”, ojos muy grandes, pies descalzos— para que te la imagines. Decir cómo es alguien o algo mediante sus características es la forma **descriptiva** del discurso. No defiende ninguna tesis (argumentativa) ni desarrolla un tema con datos ordenados (expositiva): pinta con palabras."
+ },
+ {
+  "id": 76,
+  "explanation": "Un texto argumentativo defiende una postura con juicios y razones que buscan convencer. La opción C hace justo eso: sostiene una tesis sobre el atreverse a pensar y la respalda con tres condenas paralelas — quien no quiere pensar es “fanático”, quien no puede es “idiota”, quien no osa es “cobarde”. La opción A se antoja, pero es función apelativa: puros imperativos (aprende, viaja, levántate) que ordenan actuar sin dar razones; B narra una escena y D es un diálogo que habla de la lengua misma."
+ },
+ {
+  "id": 77,
+  "explanation": "El título lo anuncia: es una *metamorfosis*. La “buena mujer” entra a las rebajas y, igual que toda la horda (tiburones, una rinoceronta, búfalas, avispas), se convierte en fiera: le salen manos peludas con garras, ruge, da zarpazos, y al salir “tardó unos 20 minutos en recuperar su aspecto habitual”. La idea que sintetiza el texto es esa transformación de las personas en animales durante la temporada de rebajas. La opción A generaliza algo que el texto no plantea (edad o condición) y la D convierte en moraleja lo que es una sátira."
+ },
+ {
+  "id": 78,
+  "explanation": "La comparación aparece justo cuando la mujer se lanza por las gangas: la “presa” es la combinación a mitad de precio y la “carne más tierna”, el mejor artículo. El sentido es que en las rebajas la gente se comporta como animales de caza con tal de ganar el artículo rebajado antes que cualquier otro — exactamente la opción D. La A se pasa de literal: habla de consumar un crimen real, cuando la ferocidad del texto es figurada y siempre está al servicio de conseguir la ganga."
+ },
+ {
+  "id": 79,
+  "explanation": "Desde el arranque la mujer sale con “fría determinación” rumbo al almacén, pensando en “el equipo necesario para las vacaciones, tan inminentes ya”, y su grito al entrar lo confirma todo: “¡Reebaaaajaaas!”. Lo que la transforma es la urgencia de aprovechar las ofertas antes que la horda. No hay evidencia de que sea altanera (A), y lo del esposo (D) no se sostiene: en cuanto entra, “ya no pensaba en su familia”."
+ },
+ {
+  "id": 80,
+  "explanation": "La frase junta dos señales opuestas: el cuerpo delata miedo (“le temblaban las piernas”, “su cuerpo flaqueaba”), pero la mente se mantiene firme (“no se permitía vacilar”). Miedo más firmeza: **temerosa y decidida**. La opción C (decidida y valiente) borra el miedo, que es la mitad de la frase; la respuesta correcta debe recoger los dos lados del contraste, no solo el favorable."
+ }
+]

@@ -1,0 +1,489 @@
+{
+ "lote": "unam-especial__g02",
+ "examen": "unam-especial.json",
+ "titulo": "UNAM — Especial",
+ "materia": "Matemáticas + Física + Química + Biología",
+ "preguntas": [
+  {
+   "id": 41,
+   "texto": "Determina la integral indefinida de\n\n$\\displaystyle\\int \\dfrac{(\\ln x)^2}{x}\\,dx$",
+   "opciones": {
+    "A": "$\\dfrac{1}{2}\\ln x^2 + C$",
+    "B": "$2\\ln x + C$",
+    "C": "$\\dfrac{1}{3}(\\ln x)^3 + C$",
+    "D": "$x \\ln x + C$"
+   },
+   "clave": "C",
+   "tema": "Cálculo — integral por sustitución"
+  },
+  {
+   "id": 42,
+   "texto": "La solución de la integral indefinida $\\displaystyle\\int e^{(x^2 + 4x + 3)}\\,(x + 2)\\,dx$ es",
+   "opciones": {
+    "A": "$e^{(x^2 + 4x + 3)} + C$",
+    "B": "$e^{-(x^2 + 4x - 3)} + C$",
+    "C": "$\\dfrac{1}{2}e^{-(x^2 + 4x - 3)} + C$",
+    "D": "$\\dfrac{1}{2}e^{(x^2 + 4x + 3)} + C$"
+   },
+   "clave": "D",
+   "tema": "Cálculo — integral por sustitución"
+  },
+  {
+   "id": 43,
+   "texto": "Un patinador describe un desplazamiento $d$ con respecto del tiempo $t$ como se muestra en la figura. ¿Cuál es la velocidad media del patinador en todo su recorrido?",
+   "opciones": {
+    "A": "$0.66\\, \\dfrac{\\text{m}}{\\text{s}}$",
+    "B": "$1.06\\, \\dfrac{\\text{m}}{\\text{s}}$",
+    "C": "$1.60\\, \\dfrac{\\text{m}}{\\text{s}}$",
+    "D": "$2.80\\, \\dfrac{\\text{m}}{\\text{s}}$"
+   },
+   "clave": "B",
+   "tema": "Cinemática — velocidad media (gráfica)",
+   "figura": "/imagenes_unam_especial/q43_grafica_d_t.svg"
+  },
+  {
+   "id": 44,
+   "texto": "Durante 15 segundos un motociclista se desplaza a $20\\,\\dfrac{\\text{m}}{\\text{s}}$, después, durante 20 segundos se mueve a $15\\,\\dfrac{\\text{m}}{\\text{s}}$, posteriormente se detiene durante 25 segundos y, finalmente, durante 18 segundos se traslada a $10\\,\\dfrac{\\text{m}}{\\text{s}}$. Con base en estos datos, la rapidez media es de",
+   "opciones": {
+    "A": "$25\\,\\dfrac{\\text{m}}{\\text{s}}$",
+    "B": "$15\\,\\dfrac{\\text{m}}{\\text{s}}$",
+    "C": "$20\\,\\dfrac{\\text{m}}{\\text{s}}$",
+    "D": "$10\\,\\dfrac{\\text{m}}{\\text{s}}$"
+   },
+   "clave": "D",
+   "tema": "Cinemática — rapidez media"
+  },
+  {
+   "id": 45,
+   "texto": "Una moneda de 10 gramos es colocada sobre un plano sin fricción. Si se desea producirle una aceleración de $5\\,\\dfrac{\\text{m}}{\\text{s}^2}$, ¿cuál es la magnitud de la fuerza que se requiere aplicar?",
+   "opciones": {
+    "A": "$0.098$ N",
+    "B": "$0.05$ N",
+    "C": "$2$ N",
+    "D": "$50$ N"
+   },
+   "clave": "B",
+   "tema": "Dinámica — segunda ley de Newton"
+  },
+  {
+   "id": 46,
+   "texto": "Para medir fuerzas se emplea un dinamómetro que en esencia es un resorte adecuadamente calibrado. En la calibración de todo dinamómetro se hace uso de",
+   "opciones": {
+    "A": "la ley de la gravitación universal.",
+    "B": "la segunda ley de Newton.",
+    "C": "el principio de la conservación de la masa.",
+    "D": "la ley de Hooke."
+   },
+   "clave": "D",
+   "tema": "Dinámica — ley de Hooke"
+  },
+  {
+   "id": 47,
+   "texto": "La ecuación que permite calcular la energía cinética de una partícula de masa $m$ y velocidad $v$ es",
+   "opciones": {
+    "A": "$E_c = mv$",
+    "B": "$E_c = 2mv^2$",
+    "C": "$E_c = \\dfrac{mv}{2}$",
+    "D": "$E_c = \\dfrac{1}{2}mv^2$"
+   },
+   "clave": "D",
+   "tema": "Trabajo y energía — energía cinética"
+  },
+  {
+   "id": 48,
+   "texto": "Un niño está parado sobre un carrito, ambos en reposo, el primero pesa 30 kg y cuando salta hacia adelante a $2\\,\\dfrac{\\text{m}}{\\text{s}}$, el carrito es lanzado hacia atrás a $12\\,\\dfrac{\\text{m}}{\\text{s}}$. Si se desprecia la fricción, ¿cuál es la masa del carrito?",
+   "opciones": {
+    "A": "$6.0$ kg",
+    "B": "$5.0$ kg",
+    "C": "$2.5$ kg",
+    "D": "$0.8$ kg"
+   },
+   "clave": "B",
+   "tema": "Conservación del momento"
+  },
+  {
+   "id": 49,
+   "texto": "Una de las suposiciones de la teoría cinética de los gases es que las moléculas de un gas",
+   "opciones": {
+    "A": "carecen de movimiento.",
+    "B": "se mueven lentamente.",
+    "C": "son rígidas.",
+    "D": "son deformables."
+   },
+   "clave": "C",
+   "tema": "Termodinámica — teoría cinética"
+  },
+  {
+   "id": 50,
+   "texto": "A la playa llega el oleaje del mar y en ocasiones llegan algunas olas de mayor tamaño que el promedio. Lo anterior se debe al comportamiento ondulatorio de las olas, pues una característica de éstas es que se",
+   "opciones": {
+    "A": "refractan.",
+    "B": "polarizan.",
+    "C": "reflejan.",
+    "D": "superponen."
+   },
+   "clave": "D",
+   "tema": "Ondas — superposición"
+  },
+  {
+   "id": 51,
+   "texto": "Un fenómeno que ocurre entre dos ondas mecánicas puede generar franjas claras y obscuras. Lo anterior se debe a la",
+   "opciones": {
+    "A": "polarización.",
+    "B": "difracción.",
+    "C": "interferencia.",
+    "D": "longitud de onda."
+   },
+   "clave": "C",
+   "tema": "Ondas — interferencia"
+  },
+  {
+   "id": 52,
+   "texto": "Una resistencia eléctrica de $9\\,\\Omega$ disipa una energía de $100$ J cada segundo, ¿cuál es el voltaje en los extremos de la resistencia?",
+   "opciones": {
+    "A": "$30$ V",
+    "B": "$900$ V",
+    "C": "$11.1$ V",
+    "D": "$90$ V"
+   },
+   "clave": "A",
+   "tema": "Electricidad — ley de Ohm y potencia"
+  },
+  {
+   "id": 53,
+   "texto": "La presión atmosférica en el Everest disminuye comparada con la del nivel del mar porque",
+   "opciones": {
+    "A": "la densidad del aire cambia.",
+    "B": "la altura de la columna de aire soportada es menor.",
+    "C": "la presión hidrostática del mar influye.",
+    "D": "la densidad del aire soportada es mayor."
+   },
+   "clave": "B",
+   "tema": "Fluidos — presión atmosférica"
+  },
+  {
+   "id": 54,
+   "texto": "A través de una lente convergente de 30 cm de radio pasan rayos que forman una imagen a 20 cm de distancia de la lente. ¿A qué distancia se encuentra el objeto real del lente?",
+   "opciones": {
+    "A": "$30$ cm",
+    "B": "$16$ cm",
+    "C": "$8$ cm",
+    "D": "$60$ cm"
+   },
+   "clave": "D",
+   "tema": "Óptica — lentes convergentes"
+  },
+  {
+   "id": 55,
+   "texto": "Los electrones de valencia son los que corresponden a la capa",
+   "opciones": {
+    "A": "más cercana al núcleo.",
+    "B": "del gas noble más lejano.",
+    "C": "del gas noble más cercano.",
+    "D": "más alejada del núcleo."
+   },
+   "clave": "D",
+   "tema": "Tabla periódica — electrones de valencia"
+  },
+  {
+   "id": 56,
+   "texto": "De acuerdo con la ubicación de los elementos en la tabla periódica la energía de ionización",
+   "opciones": {
+    "A": "aumenta de izquierda a derecha en un periodo.",
+    "B": "disminuye de izquierda a derecha en un periodo.",
+    "C": "aumenta de arriba hacia abajo en una familia.",
+    "D": "disminuye de abajo hacia arriba en una familia."
+   },
+   "clave": "A",
+   "tema": "Tabla periódica — energía de ionización"
+  },
+  {
+   "id": 57,
+   "texto": "El punto de ebullición y la capacidad calorífica del agua dependen de la estructura de la misma, la cual se debe a",
+   "opciones": {
+    "A": "las fuerzas ion-dipolo entre moléculas adyacentes.",
+    "B": "la formación de polos opuestos entre moléculas contiguas.",
+    "C": "la distancia de separación entre moléculas contiguas.",
+    "D": "los puentes de hidrógeno entre moléculas adyacentes."
+   },
+   "clave": "D",
+   "tema": "Enlaces — puentes de hidrógeno"
+  },
+  {
+   "id": 58,
+   "texto": "¿Cuál fórmula corresponde a la sustancia con menor solubilidad en agua?\n\nConsidera:\n\n| Sustancia | Valores de electronegatividad |\n|:-:|:-:|\n| Na | 0.9 |\n| Cl | 3.0 |\n| C | 2.5 |\n| O | 3.5 |\n| H | 2.1 |\n| Mg | 1.2 |\n| S | 2.5 |",
+   "opciones": {
+    "A": "NaCl",
+    "B": "MgS",
+    "C": "CH$_4$",
+    "D": "HCl"
+   },
+   "clave": "C",
+   "tema": "Enlaces — polaridad y solubilidad"
+  },
+  {
+   "id": 59,
+   "texto": "El indicador ácido–base azul de bromotimol cambia de amarillo a azul en un rango de 6 a 7.6; si se tiene una disolución con un pH = 5, ¿qué color se espera observar al agregarle unas gotas de este indicador?",
+   "opciones": {
+    "A": "Azul.",
+    "B": "Verde.",
+    "C": "Violeta.",
+    "D": "Amarillo."
+   },
+   "clave": "D",
+   "tema": "Equilibrio — indicadores ácido-base"
+  },
+  {
+   "id": 60,
+   "texto": "En la siguiente reacción de combustión los átomos de _____ se oxidan y se reducen los átomos de _____.\n\n$\\text{CH}_4(g) + 2\\text{O}_2(g) \\rightarrow \\text{CO}_2(g) + 2\\text{H}_2\\text{O}(l)$",
+   "opciones": {
+    "A": "carbono — hidrógeno",
+    "B": "oxígeno — carbono",
+    "C": "hidrógeno — oxígeno",
+    "D": "carbono — oxígeno"
+   },
+   "clave": "D",
+   "tema": "Reacciones — oxidación y reducción"
+  },
+  {
+   "id": 61,
+   "texto": "El azufre reacciona con el oxígeno formando",
+   "opciones": {
+    "A": "una sal.",
+    "B": "un óxido básico.",
+    "C": "un óxido ácido.",
+    "D": "un hidrácido."
+   },
+   "clave": "C",
+   "tema": "Óxidos — azufre y oxígeno"
+  },
+  {
+   "id": 62,
+   "texto": "La forma en que generalmente se representa a un carbohidrato es",
+   "opciones": {
+    "A": "$(\\text{CH}_2\\text{O})_n$",
+    "B": "$\\text{R}-\\text{NH}_2$",
+    "C": "$\\text{R}-\\text{CO}_2\\text{H}$",
+    "D": "$\\text{R}-\\text{C}(=\\text{O})-\\text{OR'}$"
+   },
+   "clave": "A",
+   "tema": "Bioquímica — carbohidratos"
+  },
+  {
+   "id": 63,
+   "texto": "La función principal de las enzimas en el aprovechamiento de los alimentos es",
+   "opciones": {
+    "A": "permitir que ocurran ciertas reacciones químicas en el organismo.",
+    "B": "formar nuevos tejidos en los diferentes órganos del cuerpo.",
+    "C": "proporcionar la energía inmediata que se requiere para las actividades celulares.",
+    "D": "almacenar energía para usarse en tiempos en los que no es posible conseguir alimentos."
+   },
+   "clave": "A",
+   "tema": "Bioquímica — enzimas"
+  },
+  {
+   "id": 64,
+   "texto": "Calcula el valor de la entalpía de combustión para 1 mol del combustible propano.\n\n$\\text{C}_3\\text{H}_8(g) + 5\\text{O}_2(g) \\rightarrow 3\\text{CO}_2(g) + 4\\text{H}_2\\text{O}(l)$\n\nConsidera:\n\n| Sustancia | $\\Delta H^{\\circ}_f\\, (\\text{kJ/mol})$ |\n|:-:|:-:|\n| C$_3$H$_8$(g) | $-103.85$ |\n| CO$_2$(g) | $-393.5$ |\n| H$_2$O(l) | $-285.83$ |\n| H$_2$O(g) | $-241.82$ |\n| O$_2$(g) | $0$ |\n| O(g) | $+247.5$ |",
+   "opciones": {
+    "A": "$+2{,}428$ kJ",
+    "B": "$-2{,}044$ kJ",
+    "C": "$+2{,}219$ kJ",
+    "D": "$-2{,}220$ kJ"
+   },
+   "clave": "D",
+   "tema": "Termoquímica — entalpía de combustión"
+  },
+  {
+   "id": 65,
+   "texto": "¿Qué cambio en la siguiente reacción en equilibrio, favorece el desplazamiento hacia el lado derecho?\n\n$\\text{CH}_4(g) + 2\\text{H}_2\\text{S}(g) \\rightleftharpoons \\text{CS}_2(g) + 4\\text{H}_2(g)\\quad \\Delta H > 0$",
+   "opciones": {
+    "A": "Incrementar la presión del sistema.",
+    "B": "Disminuir la concentración de H$_2$S.",
+    "C": "Aumentar la temperatura del sistema.",
+    "D": "Disminuir la concentración de CH$_4$."
+   },
+   "clave": "C",
+   "tema": "Equilibrio — principio de Le Châtelier"
+  },
+  {
+   "id": 66,
+   "texto": "Los hidrocarburos que se caracterizan por tener en su molécula únicamente enlaces sencillos entre cada carbono son",
+   "opciones": {
+    "A": "alquenos.",
+    "B": "alcanos.",
+    "C": "aromáticos.",
+    "D": "alquinos."
+   },
+   "clave": "B",
+   "tema": "Química orgánica — hidrocarburos saturados"
+  },
+  {
+   "id": 67,
+   "texto": "¿Cuál de las siguientes ecuaciones químicas representa una reacción de hidrólisis?",
+   "opciones": {
+    "A": "$\\text{CH}_2{=}\\text{CH}_2 + \\text{HBr} \\rightarrow \\text{CH}_3{-}\\text{CHBr}{-}\\text{CH}_3$",
+    "B": "$\\text{CH}_2{=}\\text{CH}_2 + \\text{H}_2 \\rightarrow \\text{CH}_3{-}\\text{CH}_3$",
+    "C": "$\\text{CH}_3{-}\\text{COO}{-}\\text{CH}_2{-}\\text{CH}_2{-}\\text{CH}_3 + \\text{H}_2\\text{O} \\rightarrow \\text{CH}_3{-}\\text{COOH} + \\text{CH}_3{-}\\text{CH}_2{-}\\text{CH}_2{-}\\text{OH}$",
+    "D": "$\\text{CH}_3{-}\\text{CH}_2{-}\\text{OH} + \\text{CH}_3{-}\\text{COOH} \\rightarrow \\text{CH}_3{-}\\text{COO}{-}\\text{CH}_2{-}\\text{CH}_3 + \\text{H}_2\\text{O}$"
+   },
+   "clave": "C",
+   "tema": "Química orgánica — hidrólisis"
+  },
+  {
+   "id": 68,
+   "texto": "Las células son unidades",
+   "opciones": {
+    "A": "centrales y anatómicas.",
+    "B": "originales y microscópicas.",
+    "C": "funcionales y lógicas.",
+    "D": "estructurales y fisiológicas."
+   },
+   "clave": "D",
+   "tema": "Célula — unidades funcionales"
+  },
+  {
+   "id": 69,
+   "texto": "Organelos especializados en la producción y maduración de macromoléculas.",
+   "opciones": {
+    "A": "Membrana plasmática y núcleo.",
+    "B": "Mitocondria y nucléolo.",
+    "C": "Ribosoma y cloroplasto.",
+    "D": "Aparato de Golgi y retículo endoplásmico."
+   },
+   "clave": "D",
+   "tema": "Célula — organelos"
+  },
+  {
+   "id": 70,
+   "texto": "Se denomina reacción ___ a aquella que libera energía.",
+   "opciones": {
+    "A": "endergónica",
+    "B": "exergónica",
+    "C": "reductora",
+    "D": "oxidativa"
+   },
+   "clave": "B",
+   "tema": "Metabolismo — reacciones exergónicas"
+  },
+  {
+   "id": 71,
+   "texto": "En el proceso fotodependiente de la fotosíntesis, la clorofila participa directamente en la",
+   "opciones": {
+    "A": "fijación de CO$_2$.",
+    "B": "producción de glucosa.",
+    "C": "captación de energía lumínica.",
+    "D": "producción de oxígeno."
+   },
+   "clave": "C",
+   "tema": "Fotosíntesis — fase luminosa"
+  },
+  {
+   "id": 72,
+   "texto": "Las dos moléculas de ácido pirúvico que se producen a partir de la glucólisis, deben ser transformadas químicamente a ___ para ingresar al ciclo de Krebs.",
+   "opciones": {
+    "A": "NADH",
+    "B": "FADH$_2$",
+    "C": "ácido oxalacético",
+    "D": "acetil CoA"
+   },
+   "clave": "D",
+   "tema": "Respiración celular — ciclo de Krebs"
+  },
+  {
+   "id": 73,
+   "texto": "Fase del ciclo celular en la cual el material genético se replica dentro del núcleo.",
+   "opciones": {
+    "A": "Citocinesis.",
+    "B": "Mitosis.",
+    "C": "Interfase.",
+    "D": "Metafase."
+   },
+   "clave": "C",
+   "tema": "Ciclo celular — interfase"
+  },
+  {
+   "id": 74,
+   "texto": "Es una ventaja de la reproducción sexual.",
+   "opciones": {
+    "A": "Permitir la estabilidad genética.",
+    "B": "Producir células diploides.",
+    "C": "Ser fuente de variación genética.",
+    "D": "Permitir la estabilidad fenotípica."
+   },
+   "clave": "C",
+   "tema": "Reproducción — sexual"
+  },
+  {
+   "id": 75,
+   "texto": "Las leyes de la herencia surgieron a partir de las conclusiones del trabajo de",
+   "opciones": {
+    "A": "Lamarck.",
+    "B": "Mendel.",
+    "C": "Darwin.",
+    "D": "Morgan."
+   },
+   "clave": "B",
+   "tema": "Genética — leyes de Mendel"
+  },
+  {
+   "id": 76,
+   "texto": "Una mutación conlleva cambios en el ___ de un individuo y genera alteraciones a simple vista en su ___.",
+   "opciones": {
+    "A": "genotipo — cariotipo",
+    "B": "fenotipo — genoma",
+    "C": "genotipo — fenotipo",
+    "D": "fenotipo — cariotipo"
+   },
+   "clave": "C",
+   "tema": "Genética — mutaciones"
+  },
+  {
+   "id": 77,
+   "texto": "Los experimentos realizados por Louis Pasteur en el siglo XIX refutaron rotundamente la tesis de la",
+   "opciones": {
+    "A": "evolución filética.",
+    "B": "generación espontánea.",
+    "C": "reproducción diferencial.",
+    "D": "inmunidad regenerada."
+   },
+   "clave": "B",
+   "tema": "Evolución — generación espontánea"
+  },
+  {
+   "id": 78,
+   "texto": "Es un ejemplo de organismo procarionte.",
+   "opciones": {
+    "A": "Alga.",
+    "B": "Hongo.",
+    "C": "Bacteria.",
+    "D": "Amiba."
+   },
+   "clave": "C",
+   "tema": "Taxonomía — procariontes"
+  },
+  {
+   "id": 79,
+   "texto": "Se conoce como ___ a los organismos de una misma área geográfica y a los factores abióticos con los que actúan.",
+   "opciones": {
+    "A": "población",
+    "B": "biosfera",
+    "C": "bioma",
+    "D": "ecosistema"
+   },
+   "clave": "D",
+   "tema": "Ecología — ecosistema"
+  },
+  {
+   "id": 80,
+   "texto": "El ciclo biogeoquímico del ___ es necesario para el mantenimiento de procesos como la fotosíntesis y la respiración aerobia.",
+   "opciones": {
+    "A": "carbono",
+    "B": "azufre",
+    "C": "nitrógeno",
+    "D": "fósforo"
+   },
+   "clave": "A",
+   "tema": "Ecología — ciclo del carbono"
+  }
+ ]
+}

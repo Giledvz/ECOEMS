@@ -41,14 +41,28 @@ def main(grupo):
         e = d.get('exam')
         if not e:
             continue
+        # Se empacan secciones hasta llenar el lote, en vez de partir por materia.
+        # Los exámenes UNAM traen ~10 secciones de ~12 reactivos: un lote por
+        # sección daría 40 lotes diminutos para un área, y el costo por explicación
+        # lo domina el arranque del agente, no el tamaño del contexto.
+        bloques, actual, mats = [], [], []
         for sec in e['sections']:
             faltan = [q for q in sec['questions']
                       if not (q.get('explanation') or '').strip()]
-            if not faltan:
-                continue
             for i in range(0, len(faltan), TAM):
-                trozo = faltan[i:i + TAM]
-                nombre = f"{f[:-5]}__{slug(sec['subject'])}__{i//TAM + 1:02d}"
+                for q in faltan[i:i + TAM]:
+                    actual.append(q); mats.append(sec['subject'])
+                    if len(actual) == TAM:
+                        bloques.append((actual, mats)); actual, mats = [], []
+        if actual:
+            if bloques and len(actual) < TAM // 3:      # cola muy chica: pégala al anterior
+                bloques[-1] = (bloques[-1][0] + actual, bloques[-1][1] + mats)
+            else:
+                bloques.append((actual, mats))
+
+        for idx, (trozo, materias) in enumerate(bloques, 1):
+            if True:
+                nombre = f"{f[:-5]}__g{idx:02d}"
 
                 # Las lecturas compartidas se guardan UNA vez y cada pregunta las
                 # referencia. Repetir el texto en cada pregunta inflaba el lote (en
@@ -74,7 +88,7 @@ def main(grupo):
                     'lote': nombre,
                     'examen': f,
                     'titulo': e['title'],
-                    'materia': sec['subject'],
+                    'materia': ' + '.join(dict.fromkeys(materias)),
                     'lecturas': {lecturas[c]: c for c in orden},
                     'preguntas': [limpia(q) for q in trozo],
                 }

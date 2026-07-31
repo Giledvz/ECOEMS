@@ -1,0 +1,489 @@
+{
+ "lote": "unam-a2-1__g02",
+ "examen": "unam-a2-1.json",
+ "titulo": "UNAM Área 2 - 1",
+ "materia": "Matemáticas + Física + Química + Biología",
+ "preguntas": [
+  {
+   "id": 41,
+   "texto": "El valor de la integral definida $\\displaystyle\\int_0^2 x^2\\,dx$ es igual a",
+   "opciones": {
+    "A": "$0$",
+    "B": "$2$",
+    "C": "$\\dfrac{8}{3}$",
+    "D": "$8$"
+   },
+   "clave": "C",
+   "tema": "Integral definida"
+  },
+  {
+   "id": 42,
+   "texto": "La integral $\\displaystyle\\int (2\\operatorname{sen} x+3\\cos x)\\,dx$ es",
+   "opciones": {
+    "A": "$2\\operatorname{sen} x+\\cos x+C$",
+    "B": "$\\cos x+\\operatorname{sen} x+C$",
+    "C": "$2\\cos x+3\\operatorname{sen} x+C$",
+    "D": "$-2\\cos x+3\\operatorname{sen} x+C$"
+   },
+   "clave": "D",
+   "tema": "Integrales trigonométricas"
+  },
+  {
+   "id": 43,
+   "texto": "Para una velocidad constante, la rapidez es",
+   "opciones": {
+    "A": "menor que la magnitud de la velocidad.",
+    "B": "mayor que la magnitud de la velocidad.",
+    "C": "igual que la magnitud del vector de la velocidad.",
+    "D": "gradualmente creciente."
+   },
+   "clave": "C",
+   "tema": "Rapidez y velocidad"
+  },
+  {
+   "id": 44,
+   "texto": "Suponiendo que la aceleración gravitatoria en la Luna es seis veces menor que en la Tierra, la energía potencial que posee un cuerpo en la Luna es ______ que la energía potencial que éste tendría en la Tierra.",
+   "opciones": {
+    "A": "6 veces mayor",
+    "B": "6 veces menor",
+    "C": "0.5 veces menor",
+    "D": "igual"
+   },
+   "clave": "B",
+   "tema": "Energía potencial gravitatoria"
+  },
+  {
+   "id": 45,
+   "texto": "Una bola de billar se sube a $3\\,m$ de altura en diferentes casos, como muestran las figuras. Indica cuál de las afirmaciones que se presentan es correcta.",
+   "opciones": {
+    "A": "En el caso I se efectúa mayor trabajo.",
+    "B": "En el caso II se efectúa menor trabajo.",
+    "C": "En el caso I y III se efectúa menos trabajo que en el II.",
+    "D": "En los tres casos se efectúa igual trabajo."
+   },
+   "clave": "D",
+   "tema": "Trabajo mecánico",
+   "figura": "/imagenes_unam-a2-1/q45_casos.svg"
+  },
+  {
+   "id": 46,
+   "texto": "Un niño que pesa $30\\,kg$ está quieto en un carrito, cuando el niño salta hacia adelante a $2\\,m/s$, el carrito es lanzado hacia atrás a $12\\,m/s$. ¿Cuál es la masa del carrito? (Desprecia la fricción).",
+   "opciones": {
+    "A": "$6.0\\,kg$",
+    "B": "$5.0\\,kg$",
+    "C": "$2.5\\,kg$",
+    "D": "$0.8\\,kg$"
+   },
+   "clave": "B",
+   "tema": "Conservación del momento lineal"
+  },
+  {
+   "id": 47,
+   "texto": "Las variables macroscópicas que hacen que un gas modifique su volumen son",
+   "opciones": {
+    "A": "presión y temperatura.",
+    "B": "temperatura y energía interna.",
+    "C": "energía cinética molecular y energía potencial.",
+    "D": "energía potencial y presión."
+   },
+   "clave": "A",
+   "tema": "Variables de estado de un gas"
+  },
+  {
+   "id": 48,
+   "texto": "La Teoría Cinética de los Gases predice una temperatura para la cual todas las partículas del gas cesan su movimiento aleatorio. ¿Cuál es esa temperatura?",
+   "opciones": {
+    "A": "$-100\\,°C$",
+    "B": "$0\\,°F$",
+    "C": "$0\\,°K$",
+    "D": "$0\\,°C$"
+   },
+   "clave": "C",
+   "tema": "Teoría cinética molecular"
+  },
+  {
+   "id": 49,
+   "texto": "Relaciona los tipos de onda con la característica que les corresponde.\n\n| Tipos de onda | Características |\n| --- | --- |\n| I. Longitudinal. | a. No necesita de un medio para transmitirse. |\n| II. Transversal. | b. Las partículas vibran en ángulo recto a la dirección de la onda. |\n| III. Electromagnética. | c. Las partículas vibran paralelamente a la dirección de la onda. |",
+   "opciones": {
+    "A": "I: a – II: b – III: c",
+    "B": "I: b – II: a – III: c",
+    "C": "I: b – II: c – III: a",
+    "D": "I: c – II: b – III: a"
+   },
+   "clave": "D",
+   "tema": "Tipos de onda"
+  },
+  {
+   "id": 50,
+   "texto": "El campo eléctrico es una cantidad vectorial y su magnitud se mide en",
+   "opciones": {
+    "A": "$\\dfrac{N}{kg}$",
+    "B": "$\\dfrac{N}{C}$",
+    "C": "$\\dfrac{N}{s}$",
+    "D": "$\\dfrac{J}{s}$"
+   },
+   "clave": "B",
+   "tema": "Campo eléctrico — unidades"
+  },
+  {
+   "id": 51,
+   "texto": "Si el flujo magnético en cierta región está cambiando con el tiempo, entonces",
+   "opciones": {
+    "A": "la energía debe ser disipada como calor.",
+    "B": "un campo eléctrico debe existir en el límite del tiempo.",
+    "C": "una corriente debe fluir en función de la variación del tiempo.",
+    "D": "una fem debe existir en función de la variación del tiempo."
+   },
+   "clave": "D",
+   "tema": "Inducción electromagnética"
+  },
+  {
+   "id": 52,
+   "texto": "La presión atmosférica disminuye en el Everest comparada con la del nivel del mar porque la",
+   "opciones": {
+    "A": "densidad del aire cambia.",
+    "B": "altura de la capa de aire soportada es menor.",
+    "C": "presión hidrostática del mar influye.",
+    "D": "densidad del aire soportada es mayor."
+   },
+   "clave": "B",
+   "tema": "Hidrostática — presión atmosférica"
+  },
+  {
+   "id": 53,
+   "texto": "Actualmente se concibe a la luz con un comportamiento dual, esto se refiere a que se le considera como",
+   "opciones": {
+    "A": "partícula y onda.",
+    "B": "energía y movimiento.",
+    "C": "calor y difracción.",
+    "D": "reflexión y refracción."
+   },
+   "clave": "A",
+   "tema": "Dualidad onda-partícula"
+  },
+  {
+   "id": 54,
+   "texto": "¿En qué áreas recibió Madame Curie el premio Nobel?",
+   "opciones": {
+    "A": "Física y Biología.",
+    "B": "Medicina y Química.",
+    "C": "Química y Biología.",
+    "D": "Física y Química."
+   },
+   "clave": "D",
+   "tema": "Historia de la física — Madame Curie"
+  },
+  {
+   "id": 55,
+   "texto": "La especie $^{78}_{34}Se^{2-}$ contiene",
+   "opciones": {
+    "A": "44 protones, 34 neutrones y 44 electrones.",
+    "B": "34 protones, 44 neutrones y 36 electrones.",
+    "C": "78 protones, 34 neutrones y 80 electrones.",
+    "D": "78 protones, 44 neutrones y 36 electrones."
+   },
+   "clave": "B",
+   "tema": "Estructura atómica — isótopos e iones"
+  },
+  {
+   "id": 56,
+   "texto": "El elemento con número atómico 17 y configuración electrónica $1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^5$ se clasifica en la familia",
+   "opciones": {
+    "A": "III A",
+    "B": "III B",
+    "C": "II A",
+    "D": "VII A"
+   },
+   "clave": "D",
+   "tema": "Tabla periódica — configuración electrónica"
+  },
+  {
+   "id": 57,
+   "texto": "En la reacción de neutralización del ácido clorhídrico,\n\n$HCl+NaOH\\to NaCl+H_2O$\n\n¿cuántos mL de una disolución de hidróxido de sodio $0.01\\,M$ se necesitan para neutralizar $10\\,mL$ de una disolución de ácido clorhídrico $0.02\\,M$?",
+   "opciones": {
+    "A": "2",
+    "B": "5",
+    "C": "10",
+    "D": "20"
+   },
+   "clave": "D",
+   "tema": "Neutralización — estequiometría"
+  },
+  {
+   "id": 58,
+   "texto": "Una botella de brandy de $946\\,mL$ tiene una concentración del $38\\%$ en volumen de alcohol. Los mililitros de alcohol presentes en la botella son",
+   "opciones": {
+    "A": "24.84",
+    "B": "38.00",
+    "C": "359.48",
+    "D": "586.52"
+   },
+   "clave": "C",
+   "tema": "Disoluciones — porcentaje en volumen"
+  },
+  {
+   "id": 59,
+   "texto": "El aire está compuesto aproximadamente por $80\\%$ de nitrógeno y $20\\%$ de oxígeno, al quemar metano, ¿qué sucede con la mezcla resultante?",
+   "opciones": {
+    "A": "Aumenta la cantidad de nitrógeno.",
+    "B": "Aumenta el por ciento de nitrógeno.",
+    "C": "Disminuye la cantidad de oxígeno.",
+    "D": "Aumenta la cantidad de oxígeno."
+   },
+   "clave": "C",
+   "tema": "Reacciones — combustión"
+  },
+  {
+   "id": 60,
+   "texto": "La participación del cobre en la siguiente reacción $Cu+2AgNO_3\\to Cu(NO_3)_2+2Ag$ es de",
+   "opciones": {
+    "A": "catalizador.",
+    "B": "agente oxidante.",
+    "C": "agente reductor.",
+    "D": "elemento que se reduce y se oxida."
+   },
+   "clave": "C",
+   "tema": "Reacciones — óxido reducción"
+  },
+  {
+   "id": 61,
+   "texto": "Principales fuentes de energía, generalmente se consumen en forma de almidones y azúcares.",
+   "opciones": {
+    "A": "Lípidos.",
+    "B": "Vitaminas.",
+    "C": "Carbohidratos.",
+    "D": "Proteínas."
+   },
+   "clave": "C",
+   "tema": "Biomoléculas — carbohidratos"
+  },
+  {
+   "id": 62,
+   "texto": "¿Cuál de los siguientes compuestos es una proteína?",
+   "opciones": {
+    "A": "Caseína.",
+    "B": "Sacarosa.",
+    "C": "Almidón.",
+    "D": "Colesterol."
+   },
+   "clave": "A",
+   "tema": "Biomoléculas — proteínas"
+  },
+  {
+   "id": 63,
+   "texto": "El calor que se requiere para incrementar la temperatura de $50\\,g$ de agua líquida de $25\\,°C$ a $45\\,°C$ es:\n\nCalor específico del agua $=4.18\\,\\dfrac{J}{g°C}$",
+   "opciones": {
+    "A": "$116\\,J$",
+    "B": "$209\\,J$",
+    "C": "$209\\,kJ$",
+    "D": "$4{,}180\\,J$"
+   },
+   "clave": "D",
+   "tema": "Termoquímica — calor específico"
+  },
+  {
+   "id": 64,
+   "texto": "En las reacciones en equilibrio químico",
+   "opciones": {
+    "A": "las concentraciones de reactivos y productos son constantes.",
+    "B": "las concentraciones de reactivos son mayores que en los productos.",
+    "C": "las concentraciones de reactivos son menores que en los productos.",
+    "D": "la velocidad a la derecha es menor que la velocidad a la izquierda."
+   },
+   "clave": "A",
+   "tema": "Equilibrio químico"
+  },
+  {
+   "id": 65,
+   "texto": "La fórmula del acetileno o etino es",
+   "opciones": {
+    "A": "$HC\\equiv CH$",
+    "B": "$H_2C=CH_2$",
+    "C": "$CH_3-CH_3$",
+    "D": "$CH_3-C\\equiv CH$"
+   },
+   "clave": "A",
+   "tema": "Química orgánica — hidrocarburos"
+  },
+  {
+   "id": 66,
+   "texto": "Los hidrocarburos más simples, reciben el nombre de",
+   "opciones": {
+    "A": "alquenos.",
+    "B": "alcanos.",
+    "C": "aromáticos.",
+    "D": "alquinos."
+   },
+   "clave": "B",
+   "tema": "Hidrocarburos — alcanos"
+  },
+  {
+   "id": 67,
+   "texto": "¿Cuál de los siguientes compuestos es un ácido carboxílico?",
+   "opciones": {
+    "A": "$CH_3-\\overset{\\displaystyle O}{\\overset{\\displaystyle \\|}{C}}-OH$",
+    "B": "$CH_3-\\overset{\\displaystyle O}{\\overset{\\displaystyle \\|}{C}}-NH_2$",
+    "C": "$CH_3-CH_2-CH_3$",
+    "D": "$CH_3-\\overset{\\displaystyle O}{\\overset{\\displaystyle \\|}{C}}-OCH_2CH_3$"
+   },
+   "clave": "A",
+   "tema": "Grupos funcionales — ácido carboxílico"
+  },
+  {
+   "id": 68,
+   "texto": "Las células son unidades",
+   "opciones": {
+    "A": "centrales y anatómicas.",
+    "B": "originales y microscópicas.",
+    "C": "funcionales y lógicas.",
+    "D": "estructurales y fisiológicas."
+   },
+   "clave": "D",
+   "tema": "Teoría celular"
+  },
+  {
+   "id": 69,
+   "texto": "La ventaja evolutiva más importante de los organismos eucariontes con respecto a los procariontes es la",
+   "opciones": {
+    "A": "compartimentalización del citoplasma.",
+    "B": "respiración anaerobia.",
+    "C": "presencia de metabolismo.",
+    "D": "síntesis de proteínas."
+   },
+   "clave": "A",
+   "tema": "Célula eucarionte — ventajas"
+  },
+  {
+   "id": 70,
+   "texto": "Cuando se hidroliza el ATP se forma",
+   "opciones": {
+    "A": "AMP",
+    "B": "ADP",
+    "C": "GTP",
+    "D": "UTP"
+   },
+   "clave": "B",
+   "tema": "Metabolismo — ATP"
+  },
+  {
+   "id": 71,
+   "texto": "De la glucólisis se producen 2 moléculas de ácido pirúvico, las cuales deben ser transformadas químicamente a ______ para ingresar al ciclo de Krebs.",
+   "opciones": {
+    "A": "acetil Co A",
+    "B": "NADH",
+    "C": "$FADH_2$",
+    "D": "ácido oxalacético"
+   },
+   "clave": "D",
+   "tema": "Respiración celular — ciclo de Krebs"
+  },
+  {
+   "id": 72,
+   "texto": "Los nucleótidos son unidades formadas por",
+   "opciones": {
+    "A": "un ácido nucleico, un azúcar pentosa y un grupo fosfato.",
+    "B": "un ácido desoxirribonucleico, un azúcar pentosa y un fosfato.",
+    "C": "un ácido ribonucleico, un azúcar hexosa y un grupo fosfato.",
+    "D": "una base nitrogenada, un azúcar pentosa y un grupo fosfato."
+   },
+   "clave": "D",
+   "tema": "Ácidos nucleicos — nucleótidos"
+  },
+  {
+   "id": 73,
+   "texto": "La función del $ARN_t$ es",
+   "opciones": {
+    "A": "transportar un aminoácido específico al polipéptido en crecimiento.",
+    "B": "llevar la información de la secuencia de aminoácidos de la proteína desde el ADN hasta el ribosoma.",
+    "C": "inhibir la expresión de un gen.",
+    "D": "realizar las reacciones de catálisis en los ribosomas."
+   },
+   "clave": "A",
+   "tema": "Síntesis de proteínas — ARNt"
+  },
+  {
+   "id": 74,
+   "texto": "Una importante ventaja de la reproducción sexual es que",
+   "opciones": {
+    "A": "permite la estabilidad génica.",
+    "B": "produce únicamente células diploides.",
+    "C": "es fuente de variación genética.",
+    "D": "permite la estabilidad fenotípica."
+   },
+   "clave": "C",
+   "tema": "Reproducción sexual — ventajas"
+  },
+  {
+   "id": 75,
+   "texto": "¿Qué resulta de la cruza de dos plantas homocigotas, una con flores rojas y alta, la otra con flores blancas y enana? (Considere que el color es codominante y ser enana es recesivo).",
+   "opciones": {
+    "A": "25% alta, rojas, 50% mediana rosas, 25% enanas, blancas.",
+    "B": "50% altas, rojas; 50% enanas blancas.",
+    "C": "75% altas, rosas; 25% enanas, rosas.",
+    "D": "100% altas; rosas"
+   },
+   "clave": "D",
+   "tema": "Genética mendeliana — codominancia"
+  },
+  {
+   "id": 76,
+   "texto": "Las mutaciones son consideradas fuente de",
+   "opciones": {
+    "A": "especiación y alopatría.",
+    "B": "variación y reproducción.",
+    "C": "variación y evolución.",
+    "D": "evolución y especiación."
+   },
+   "clave": "C",
+   "tema": "Mutaciones — evolución"
+  },
+  {
+   "id": 77,
+   "texto": "La barrera reproductiva que se presenta cuando se cruza un burro con una yegua, se llama",
+   "opciones": {
+    "A": "aislamiento ecológico.",
+    "B": "aislamiento gamético.",
+    "C": "inviabilidad híbrida.",
+    "D": "esterilidad híbrida."
+   },
+   "clave": "D",
+   "tema": "Aislamiento reproductivo — esterilidad híbrida"
+  },
+  {
+   "id": 78,
+   "texto": "Los protozoarios se clasifican con base en",
+   "opciones": {
+    "A": "los organelos de locomoción.",
+    "B": "el tipo de respiración.",
+    "C": "su forma de nutrición.",
+    "D": "su forma de reproducción."
+   },
+   "clave": "A",
+   "tema": "Clasificación — protozoarios"
+  },
+  {
+   "id": 79,
+   "texto": "Las garzas blancas que habitan en un pantano son un ejemplo de",
+   "opciones": {
+    "A": "comunidad.",
+    "B": "ecosistema.",
+    "C": "nicho ecológico.",
+    "D": "población."
+   },
+   "clave": "D",
+   "tema": "Ecología — población"
+  },
+  {
+   "id": 80,
+   "texto": "En un ecosistema en equilibrio dinámico",
+   "opciones": {
+    "A": "la energía fluye en una dirección y los nutrimentos se reciclan.",
+    "B": "la energía entra en forma de calor metabólico para los organismos.",
+    "C": "la energía y los nutrientes fluyen en diferentes direcciones.",
+    "D": "se recicla la energía pero no la materia."
+   },
+   "clave": "A",
+   "tema": "Ecología — flujo de energía"
+  }
+ ]
+}

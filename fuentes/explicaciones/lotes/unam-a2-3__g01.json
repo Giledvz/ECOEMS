@@ -1,0 +1,492 @@
+{
+ "lote": "unam-a2-3__g01",
+ "examen": "unam-a2-3.json",
+ "titulo": "UNAM Área 2 - 3",
+ "materia": "Física + Literatura + Química + Geografía",
+ "preguntas": [
+  {
+   "id": 1,
+   "texto": "¿Qué representa la siguiente gráfica?",
+   "opciones": {
+    "A": "La caída libre de un cuerpo desde el reposo.",
+    "B": "Un lanzamiento vertical hacia abajo.",
+    "C": "Un movimiento con aceleración positiva.",
+    "D": "Un movimiento con aceleración negativa."
+   },
+   "clave": "D",
+   "tema": "Cinemática — aceleración negativa",
+   "figura": "/imagenes_unam-a2-3/ext_p62_img1.svg"
+  },
+  {
+   "id": 2,
+   "texto": "Tres caballos jalan una carreta de 500 kg en la misma dirección. Cada uno de los caballos ejerce una fuerza de 1 500 N sobre la carreta. Si no hay fricción entre la carreta y el suelo, la fuerza total con la que ésta es jalada es de",
+   "opciones": {
+    "A": "3 N",
+    "B": "300 N",
+    "C": "1 500 N",
+    "D": "4 500 N"
+   },
+   "clave": "D",
+   "tema": "Leyes de Newton — fuerza resultante"
+  },
+  {
+   "id": 3,
+   "texto": "Una báscula tiene un resorte cuya constante de elasticidad es de 1 000 N/m. Si colocas en ésta una masa de 10 kg, ¿cuánto se estirará su resorte?\n\nConsidera g = 10 m/s²",
+   "opciones": {
+    "A": "0.10 m",
+    "B": "1.0 m",
+    "C": "0.01 m",
+    "D": "10.0 m"
+   },
+   "clave": "A",
+   "tema": "Elasticidad — Ley de Hooke"
+  },
+  {
+   "id": 4,
+   "texto": "Una bola de billar se sube a 3 m de altura en diferentes casos, como muestran las figuras. Indica cuál de las afirmaciones que se presentan es correcta.",
+   "opciones": {
+    "A": "En el caso I se efectúa mayor trabajo.",
+    "B": "En el caso II se efectúa menor trabajo.",
+    "C": "En el caso I y III se efectúa menos trabajo que en el II.",
+    "D": "En los tres casos se efectúa igual trabajo."
+   },
+   "clave": "D",
+   "tema": "Trabajo — trabajo mecánico",
+   "figura": "/imagenes_unam-a2-3/ext_p62_img2.svg"
+  },
+  {
+   "id": 5,
+   "texto": "Una pelota de 2 kg se desplaza hacia la izquierda con una velocidad de 10 m/s, y choca de frente con una pelota de 4 kg que viaja hacia la derecha a 2 m/s. Calcula la velocidad final si las dos pelotas se quedan pegadas después del choque.",
+   "opciones": {
+    "A": "5 m/s",
+    "B": "−8 m/s",
+    "C": "12 m/s",
+    "D": "−2 m/s"
+   },
+   "clave": "D",
+   "tema": "Cantidad de movimiento — colisiones",
+   "figura": "/imagenes_unam-a2-3/ext_p63_img2.svg"
+  },
+  {
+   "id": 6,
+   "texto": "¿Cuál es la densidad del oxígeno diatómico que está a una temperatura de 27°C y a una atmósfera de presión?\n\nConsidera:\n\nLa masa molecular del oxígeno monoatómico es 16 uma.\n\nEl valor de la constante universal del gas ideal es de 8.314 J/(mol·k)",
+   "opciones": {
+    "A": "0.08 kg/m³",
+    "B": "14.4 kg/m³",
+    "C": "0.6 kg/m³",
+    "D": "1.3 kg/m³"
+   },
+   "clave": "D",
+   "tema": "Termodinámica — densidad de un gas ideal"
+  },
+  {
+   "id": 7,
+   "texto": "A la playa llega el oleaje del mar y en ocasiones llegan algunas olas de mayor tamaño que el promedio. Lo anterior se debe al comportamiento ondulatorio de las olas, pues una característica de éstas es que se",
+   "opciones": {
+    "A": "refractan.",
+    "B": "polarizan.",
+    "C": "reflejan.",
+    "D": "superponen."
+   },
+   "clave": "D",
+   "tema": "Ondas — superposición"
+  },
+  {
+   "id": 8,
+   "texto": "De acuerdo con la imagen, la corriente que circula por el resistor de resistencia R/2 es",
+   "opciones": {
+    "A": "V/(2R)",
+    "B": "2V/R",
+    "C": "V/(3R)",
+    "D": "3V/R"
+   },
+   "clave": "B",
+   "tema": "Electricidad — corriente en un circuito",
+   "figura": "/imagenes_unam-a2-3/ext_p63_img1.svg"
+  },
+  {
+   "id": 9,
+   "texto": "El orden creciente de la longitud de onda para el color azul (z), el verde (v), el rojo (r), y la luz amarilla (a) es",
+   "opciones": {
+    "A": "r, a, v, z.",
+    "B": "a, v, r, z.",
+    "C": "v, a, z, r.",
+    "D": "z, v, a, r."
+   },
+   "clave": "D",
+   "tema": "Óptica — espectro electromagnético"
+  },
+  {
+   "id": 10,
+   "texto": "La presión atmosférica en el Everest disminuye comparada con la del nivel del mar porque",
+   "opciones": {
+    "A": "la densidad del aire cambia.",
+    "B": "la altura de la capa de aire soportada es menor.",
+    "C": "la presión hidrostática del mar influye.",
+    "D": "la densidad del aire soportada es mayor."
+   },
+   "clave": "B",
+   "tema": "Fluidos — presión atmosférica"
+  },
+  {
+   "id": 11,
+   "texto": "¿Qué tipo de imagen forma un espejo convexo?",
+   "opciones": {
+    "A": "Real, derecha y menor que el objeto.",
+    "B": "Virtual, invertida y mayor que el objeto.",
+    "C": "Real, invertida y menor que el objeto.",
+    "D": "Virtual, derecha y mayor que el objeto."
+   },
+   "clave": "A",
+   "tema": "Óptica — espejo convexo"
+  },
+  {
+   "id": 12,
+   "texto": "¿Cuál de las siguientes opciones es un postulado del modelo atómico de Bohr?",
+   "opciones": {
+    "A": "Los electrones en órbita circular cuando están acelerados pierden energía y caen al núcleo.",
+    "B": "Los electrones se mueven en estados estacionarios alrededor del núcleo sin perder energía.",
+    "C": "De acuerdo con la radiación beta debe haber electrones en el núcleo atómico.",
+    "D": "Un electrón en el átomo puede variar continuamente el valor de su energía."
+   },
+   "clave": "B",
+   "tema": "Física moderna — modelo atómico de Bohr"
+  },
+  {
+   "id": 13,
+   "texto": "La cabalidad es una propiedad del texto, consiste en que éste sea completo y tenga",
+   "opciones": {
+    "A": "unidad de sentido.",
+    "B": "datos comprobables.",
+    "C": "elementos de análisis.",
+    "D": "opinión del autor."
+   },
+   "clave": "A",
+   "tema": "Propiedades del texto — cabalidad"
+  },
+  {
+   "id": 14,
+   "texto": "Identifica el propósito del siguiente texto.\n\nEn la ceremonia celebrada en la explanada Francisco I. Madero de la residencia oficial de Los Pinos, Calderón indicó que para los XVI Juegos Panamericanos, Guadalajara 2011, se espera que participen ocho mil quinientos atletas de cuarenta y dos países y más de doscientos cincuenta mil visitantes nacionales y extranjeros.",
+   "opciones": {
+    "A": "Reflexionar sobre un tema.",
+    "B": "Plasmar un sentimiento.",
+    "C": "Difundir ideas políticas.",
+    "D": "Informar oportunamente."
+   },
+   "clave": "D",
+   "tema": "Propósito del texto — texto informativo"
+  },
+  {
+   "id": 15,
+   "texto": "El texto poético tiene como característica que",
+   "opciones": {
+    "A": "describe una noticia sentimental e impactante.",
+    "B": "plasma un sentimiento o pensamiento a través del uso de figuras retóricas.",
+    "C": "relata hechos en forma objetiva y con un mensaje sensible.",
+    "D": "persuade al lector de tomar una actitud positiva."
+   },
+   "clave": "B",
+   "tema": "Texto poético — características"
+  },
+  {
+   "id": 16,
+   "texto": "¿A qué género corresponde el siguiente fragmento?\n\nArturo, el noble rey de Bretaña, cuyas proezas son para nosotros ejemplo de valor y cortesía, al llegar la fiesta que llamamos Pentecostés, la celebró con todo el fasto propio de la realeza, reuniendo a su corte en Caraduel, en el país de Gales.",
+   "opciones": {
+    "A": "Épico.",
+    "B": "Lírico.",
+    "C": "Tragedia.",
+    "D": "Comedia."
+   },
+   "clave": "A",
+   "tema": "Géneros literarios — género épico"
+  },
+  {
+   "id": 17,
+   "texto": "Corriente literaria que surge en la segunda mitad del siglo XIX, en la cual predomina la objetividad del narrador y la descripción.",
+   "opciones": {
+    "A": "Romanticismo.",
+    "B": "Clasicismo.",
+    "C": "Realismo.",
+    "D": "Expresionismo."
+   },
+   "clave": "C",
+   "tema": "Corrientes literarias — Realismo"
+  },
+  {
+   "id": 18,
+   "texto": "Los relatos cortos Diles que no me maten y No oyes ladrar los perros fueron escritos por",
+   "opciones": {
+    "A": "Juan Rulfo.",
+    "B": "Carlos Fuentes.",
+    "C": "Octavio Paz.",
+    "D": "José Agustín."
+   },
+   "clave": "A",
+   "tema": "Autores mexicanos — Juan Rulfo"
+  },
+  {
+   "id": 19,
+   "texto": "Un cuento se diferencia de una novela porque éste tiene",
+   "opciones": {
+    "A": "personajes complejos y diversos clímax.",
+    "B": "desarrollo elaborado y pocos personajes.",
+    "C": "brevedad y rápido desenlace.",
+    "D": "intensidad y múltiples hilos narrativos."
+   },
+   "clave": "C",
+   "tema": "Narrativa — diferencia entre cuento y novela"
+  },
+  {
+   "id": 20,
+   "texto": "La novela pertenece al género ________, está escrita en ________ y suele tener una estructura ________.",
+   "opciones": {
+    "A": "narrativo — prosa — compleja",
+    "B": "épico — verso — complicada",
+    "C": "dramático — verso — escueta",
+    "D": "lírico — prosa — simple"
+   },
+   "clave": "A",
+   "tema": "Narrativa — características de la novela"
+  },
+  {
+   "id": 21,
+   "texto": "El siguiente ejemplo se refiere a una ficha\n\nFuentes, C. (1958). La región más transparente. México: Fondo de Cultura Económica.",
+   "opciones": {
+    "A": "bibliográfica.",
+    "B": "cibergráfica.",
+    "C": "hemerográfica.",
+    "D": "catalográfica."
+   },
+   "clave": "A",
+   "tema": "Fichas de investigación — ficha bibliográfica"
+  },
+  {
+   "id": 22,
+   "texto": "¿De qué tipo es la siguiente ficha?\n\n\"lo que una persona cree de sí misma puede ser y, de hecho, generalmente, es muy distinto o incluso puede estar en total contradicción con lo que realmente es\".\n\nFromm, Erich. Grandezas y limitaciones del pensamiento de Freud. México, Siglo XXI, 1991, p.37.",
+   "opciones": {
+    "A": "Hemerográfica.",
+    "B": "De síntesis.",
+    "C": "Bibliográfica.",
+    "D": "De cita textual."
+   },
+   "clave": "D",
+   "tema": "Fichas de investigación — ficha de cita textual"
+  },
+  {
+   "id": 23,
+   "texto": "La especie $^{78}_{34}Se^{2-}$ contiene ___ protones, ___ neutrones y ___ electrones.",
+   "opciones": {
+    "A": "44, 34, 44",
+    "B": "34, 44, 36",
+    "C": "78, 34, 80",
+    "D": "78, 44, 36"
+   },
+   "clave": "B",
+   "tema": "Estructura atómica — partículas subatómicas"
+  },
+  {
+   "id": 24,
+   "texto": "¿Cuántos gramos equivalen a 0.5 mol de ácido fosfórico, H₃PO₄?",
+   "opciones": {
+    "A": "49 g",
+    "B": "24 g",
+    "C": "98 g",
+    "D": "48 g"
+   },
+   "clave": "A",
+   "tema": "Estequiometría — masa molar"
+  },
+  {
+   "id": 25,
+   "texto": "El agua es un disolvente polar debido a",
+   "opciones": {
+    "A": "su elevado punto de ebullición.",
+    "B": "la alta capacidad calorífica que presenta.",
+    "C": "su elevada constante dieléctrica.",
+    "D": "la estructura angular de sus moléculas."
+   },
+   "clave": "D",
+   "tema": "Enlace químico — polaridad del agua"
+  },
+  {
+   "id": 26,
+   "texto": "Sustancias que al estar en disolución donan protones.",
+   "opciones": {
+    "A": "Óxidos.",
+    "B": "Ácidos.",
+    "C": "Bases.",
+    "D": "Sales."
+   },
+   "clave": "B",
+   "tema": "Ácidos y bases — donación de protones"
+  },
+  {
+   "id": 27,
+   "texto": "¿Cuál es la molaridad de una disolución que contiene 20 g de NaOH en 2 L de solución?",
+   "opciones": {
+    "A": "0.25 M",
+    "B": "0.50 M",
+    "C": "0.75 M",
+    "D": "1.00 M"
+   },
+   "clave": "A",
+   "tema": "Disoluciones — molaridad"
+  },
+  {
+   "id": 28,
+   "texto": "Los dos principales componentes del aire son",
+   "opciones": {
+    "A": "oxígeno y dióxido de carbono.",
+    "B": "nitrógeno y oxígeno.",
+    "C": "ozono y dióxido de carbono.",
+    "D": "nitrógeno y ozono."
+   },
+   "clave": "B",
+   "tema": "Química ambiental — composición del aire"
+  },
+  {
+   "id": 29,
+   "texto": "¿Cuál de las siguientes reacciones químicas favorece la formación de la lluvia ácida?",
+   "opciones": {
+    "A": "NaOH → Na⁺ + OH⁻",
+    "B": "SO₃ + H₂O → H₂SO₄",
+    "C": "O₃ + NO → NO₂ + O₂",
+    "D": "N₂ + 3H₂ → 2NH₃"
+   },
+   "clave": "B",
+   "tema": "Química ambiental — lluvia ácida"
+  },
+  {
+   "id": 30,
+   "texto": "Los triglicéridos son un grupo de lípidos caracterizados por tener el grupo funcional",
+   "opciones": {
+    "A": "éter.",
+    "B": "éster.",
+    "C": "amida.",
+    "D": "alcohol."
+   },
+   "clave": "B",
+   "tema": "Química orgánica — lípidos y grupo funcional éster"
+  },
+  {
+   "id": 31,
+   "texto": "Son los dos grupos funcionales presentes en todos los aminoácidos.",
+   "opciones": {
+    "A": "–COO– y –CONH₂",
+    "B": "–CHO y –CONH₂",
+    "C": "–CO– y –NH₂",
+    "D": "–COOH y –NH₂"
+   },
+   "clave": "D",
+   "tema": "Química orgánica — aminoácidos"
+  },
+  {
+   "id": 32,
+   "texto": "Calcula el valor de entalpía de la siguiente reacción.\n\n$2ZnS_{(s)} + 3O_{2(g)} \\to 2ZnO_{(s)} + 2SO_{2(g)}$\n\nConsidera:\n\n$\\Delta H°_{ZnS} = -202.9 \\text{ kJ}$\n$\\Delta H°_{ZnO} = -348 \\text{ kJ}$\n$\\Delta H°_{SO_2} = -296.4 \\text{ kJ}$\n$\\Delta H°_{O_2} = 0 \\text{ kJ}$",
+   "opciones": {
+    "A": "–883 kJ",
+    "B": "883 kJ",
+    "C": "1230 kJ",
+    "D": "–1230 kJ"
+   },
+   "clave": "A",
+   "tema": "Termoquímica — entalpía de reacción"
+  },
+  {
+   "id": 33,
+   "texto": "A presión estándar el carbono grafito es más estable que el carbono diamante. Para la transición $C_{grafito} \\to C_{diamante}$ se cumple que",
+   "opciones": {
+    "A": "$\\Delta G° < 0$",
+    "B": "$\\Delta G° > 0$",
+    "C": "$\\Delta G° \\leq 0$",
+    "D": "$\\Delta G° = 0$"
+   },
+   "clave": "B",
+   "tema": "Termoquímica — energía libre de Gibbs"
+  },
+  {
+   "id": 34,
+   "texto": "De acuerdo con su posición en la tabla periódica, ¿cuántos electrones tiene el átomo de carbono en su segundo nivel de energía?",
+   "opciones": {
+    "A": "Dos.",
+    "B": "Cuatro.",
+    "C": "Ocho.",
+    "D": "Seis."
+   },
+   "clave": "B",
+   "tema": "Tabla periódica — configuración electrónica"
+  },
+  {
+   "id": 35,
+   "texto": "¿Cuál de los siguientes compuestos es un ácido carboxílico?",
+   "opciones": {
+    "A": "$CH_3\\text{–}C(=O)\\text{–}OH$",
+    "B": "$CH_3\\text{–}C(=O)\\text{–}NH_2$",
+    "C": "$CH_3\\text{–}CH_2\\text{–}CH_3$",
+    "D": "$CH_3\\text{–}C(=O)\\text{–}OCH_2CH_3$"
+   },
+   "clave": "A",
+   "tema": "Química orgánica — ácido carboxílico"
+  },
+  {
+   "id": 36,
+   "texto": "En la actualidad, la principal finalidad de la Geografía es",
+   "opciones": {
+    "A": "diferenciar las causas y efectos de los hechos y fenómenos geográficos.",
+    "B": "conocer los efectos terrestres provocados por los fenómenos naturales.",
+    "C": "explicar la relación entre los elementos naturales y sociales del medio geográfico.",
+    "D": "localizar los elementos naturales y sociales sobre la superficie terrestre."
+   },
+   "clave": "C",
+   "tema": "Geografía general — finalidad de la Geografía"
+  },
+  {
+   "id": 37,
+   "texto": "Coordenada geográfica que permite ubicar un lugar al norte y sur del Ecuador.",
+   "opciones": {
+    "A": "Latitud.",
+    "B": "Altitud.",
+    "C": "Longitud.",
+    "D": "Nutación."
+   },
+   "clave": "A",
+   "tema": "Coordenadas geográficas — latitud"
+  },
+  {
+   "id": 38,
+   "texto": "La geografía física estudia",
+   "opciones": {
+    "A": "el relieve y las actividades económicas.",
+    "B": "la sociedad y los tipos de vegetación.",
+    "C": "el clima y las regiones naturales.",
+    "D": "la población y los tipos de clima."
+   },
+   "clave": "C",
+   "tema": "Ramas de la Geografía — geografía física"
+  },
+  {
+   "id": 39,
+   "texto": "Movimiento de agua oceánica que regula la temperatura del planeta y favorece la actividad pesquera.",
+   "opciones": {
+    "A": "Olas de oscilación.",
+    "B": "Corrientes frías.",
+    "C": "Olas de traslación.",
+    "D": "Mareas vivas."
+   },
+   "clave": "B",
+   "tema": "Hidrografía — corrientes oceánicas"
+  },
+  {
+   "id": 40,
+   "texto": "La taiga o bosque de coníferas se localiza en el",
+   "opciones": {
+    "A": "norte de Europa y norte de Asia.",
+    "B": "sur de Europa y sur de Asia.",
+    "C": "norte de África y norte de Asia.",
+    "D": "sur de América y norte de Oceanía."
+   },
+   "clave": "A",
+   "tema": "Regiones naturales — taiga"
+  }
+ ]
+}

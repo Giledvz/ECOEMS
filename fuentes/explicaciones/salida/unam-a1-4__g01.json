@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "Rapidez promedio es distancia entre tiempo, pero aquí el examen se decide en las unidades. Convierte los 3 días a horas: $3\\times 24=72\\,\\text{h}$. Entonces\n\n$$v=\\frac{3.8\\times 10^{15}\\,\\text{km}}{72\\,\\text{h}}\\approx 5.3\\times 10^{13}\\,\\frac{\\text{km}}{\\text{h}}$$\n\nLa opción A tienta porque trae el mismo número, pero como dividiste entre 72 *horas*, el resultado queda en km/h, no en km/día."
+ },
+ {
+  "id": 2,
+  "explanation": "Rapidez media es **distancia total entre tiempo total**, no el promedio de las rapideces. Calcula cada tramo: $15(20)=300$, $20(15)=300$, $25(0)=0$ y $18(10)=180$; en total $780\\,\\text{m}$. El tiempo total es $15+20+25+18=78\\,\\text{s}$. Así que\n\n$$v_m=\\frac{780}{78}=10\\,\\frac{\\text{m}}{\\text{s}}$$\n\nSi te dio 15 (opción B), promediaste $20$, $15$ y $10$ a secas: eso ignora cuánto dura cada tramo y los 25 segundos en que estuvo detenido."
+ },
+ {
+  "id": 3,
+  "explanation": "Cuando dos fuerzas son perpendiculares, la resultante se obtiene con el teorema de Pitágoras: $R=\\sqrt{F_1^2+F_2^2}$. Prueba con 3 N y 4 N: la resultante es 5 N, mientras que la suma algebraica daría $3+4=7\\,\\text{N}$. La resultante siempre sale **menor** que la suma directa; solo serían iguales si las fuerzas apuntaran en la misma dirección."
+ },
+ {
+  "id": 4,
+  "explanation": "Al romperse la cuerda, elevador y caja caen juntos con la misma aceleración $g$: es caída libre. La caja no se apoya en el piso porque ambos aceleran igual, así que la fuerza normal vale $0\\,\\text{N}$; es el estado de ingravidez aparente. Si elegiste 5 000 N calculaste el peso $mg=50\\times 10$, pero esa fuerza la ejerce la Tierra sobre la caja, no el piso: el piso solo la sostiene cuando el elevador no está cayendo."
+ },
+ {
+  "id": 5,
+  "explanation": "En la Luna la aceleración gravitacional es unas seis veces menor que en la Tierra. Como el tiempo de caída desde una altura $h$ es $t=\\sqrt{2h/g}$, a menor $g$ le corresponde mayor tiempo: la piedra tarda más en llegar al suelo. La opción C tienta porque es cierto que no hay atmósfera, pero para una piedra la fricción del aire es despreciable; lo que domina por mucho es la gravedad menor. Y la A es falsa: en la Luna sí hay gravedad, nada se queda flotando."
+ },
+ {
+  "id": 6,
+  "explanation": "La energía potencial gravitatoria es $E_p=mgh$. La masa del cuerpo y la altura son las mismas; lo único que cambia es $g$, que en la Luna es seis veces menor. Como $E_p$ es directamente proporcional a $g$, la energía potencial resulta **6 veces menor** que en la Tierra."
+ },
+ {
+  "id": 7,
+  "explanation": "Hay trabajo mecánico cuando una fuerza produce un desplazamiento: $W=Fd\\cos\\theta$. Empujar una caja con fuerza constante a lo largo de una distancia es justo eso. La opción C es la trampa: en el movimiento circular *uniforme* la rapidez no cambia, así que la energía cinética no aumenta; además la fuerza centrípeta es perpendicular al movimiento y no realiza trabajo. Las opciones A y B hablan de energía térmica y eléctrica, no de trabajo mecánico."
+ },
+ {
+  "id": 8,
+  "explanation": "Antes del salto todo está en reposo, así que el momento total es cero y debe seguir siendo cero después. El niño se lleva $p=30\\times 2=60\\,\\text{kg·m/s}$ hacia adelante, de modo que el carrito debe llevarse 60 hacia atrás:\n\n$$30(2)=m(12)\\quad\\Rightarrow\\quad m=\\frac{60}{12}=5\\,\\text{kg}$$\n\nFíjate que el carrito, por ser más ligero, sale disparado más rápido: las velocidades quedan en proporción inversa a las masas."
+ },
+ {
+  "id": 9,
+  "explanation": "El kelvin y el grado Celsius tienen el mismo tamaño; lo que cambia es el punto de partida: el cero absoluto está en $-273\\,°\\text{C}$. Por eso basta con recorrer la escala: $T_K=T_C+273$. Comprueba: el agua congela a $0\\,°\\text{C}=273\\,\\text{K}$. La opción A es la fórmula para pasar de Fahrenheit a Celsius, y la C te daría temperaturas absolutas negativas, que no existen."
+ },
+ {
+  "id": 10,
+  "explanation": "La clave está en el \"un gramo\": cuando el calor se refiere a la unidad de masa y a un grado de aumento, hablamos de **capacidad térmica específica** (el calor específico de toda la vida). La capacidad térmica a secas (opción A) es la del cuerpo completo, sin dividir entre su masa. Los calores latentes (B y C) no elevan la temperatura: se invierten en cambiar de fase."
+ },
+ {
+  "id": 11,
+  "explanation": "La velocidad de una onda es longitud de onda entre periodo:\n\n$$v=\\frac{\\lambda}{T}=\\frac{10\\,\\text{cm}}{2\\,\\text{s}}=5\\,\\frac{\\text{cm}}{\\text{s}}$$\n\nEquivale a usar $v=\\lambda f$ con $f=1/T=0.5\\,\\text{Hz}$. Si te dio 20 (opción A), multiplicaste $\\lambda$ por $T$ en lugar de dividir."
+ },
+ {
+  "id": 12,
+  "explanation": "La interferencia se explica con el **principio de superposición**: cuando dos ondas coinciden en un punto, sus perturbaciones se suman. Si llegan en fase, se refuerzan (interferencia constructiva); si llegan en contrafase, se cancelan (destructiva). Ocurre igual con ondas transversales que longitudinales, así que C y D no son condición necesaria."
+ },
+ {
+  "id": 13,
+  "explanation": "El campo eléctrico se define como la fuerza por unidad de carga: $E=F/q$. Fuerza en newtons entre carga en coulombs da $\\text{N}/\\text{C}$. La opción A, $\\text{N}/\\text{kg}$, es la unidad del campo *gravitacional* (fuerza por unidad de masa): mismo concepto, otra interacción."
+ },
+ {
+  "id": 14,
+  "explanation": "Aplica la ley de Ohm: $I=V/R$. Si ambos se duplican,\n\n$$I'=\\frac{2V}{2R}=\\frac{V}{R}=I$$\n\nLos doses se cancelan y la corriente queda igual. Solo cambiaría si $V$ y $R$ variaran en distinta proporción."
+ },
+ {
+  "id": 15,
+  "explanation": "Primero el volumen de la alberca: $50\\times 25\\times 3=3\\,750\\,\\text{m}^3$. Luego el gasto del tubo: con diámetro $0.40\\,\\text{m}$, el área es $A=\\pi d^2/4=\\pi(0.40)^2/4\\approx 0.126\\,\\text{m}^2$, y $Q=Av=0.126\\times 4\\approx 0.503\\,\\text{m}^3/\\text{s}$. El tiempo es\n\n$$t=\\frac{V}{Q}=\\frac{3\\,750}{0.503}\\approx 7\\,460\\,\\text{s}\\approx 2.07\\,\\text{horas}$$\n\nSi te dio 1.63 h (opción C), usaste $d^2$ como área: se te fue el factor $\\pi/4$ del círculo."
+ },
+ {
+  "id": 16,
+  "explanation": "El espejo convexo siempre forma el mismo tipo de imagen, sin importar dónde pongas el objeto: **virtual** (se forma detrás del espejo, no se puede proyectar), **derecha** y **menor** que el objeto. Por eso se usa en vigilancia y en retrovisores: abarca mucho campo mostrando todo pequeñito. Las imágenes reales e invertidas solo las forman los espejos cóncavos."
+ },
+ {
+  "id": 17,
+  "explanation": "La propiedad que consiste en ajustar el lenguaje al contexto —al destinatario, la situación y la intención— es la **adecuación**: no le hablas igual a un amigo que en un trámite. No la confundas con la coherencia, que es la organización lógica de las ideas, ni con la cohesión, que son los enlaces gramaticales (conectores, pronombres) que unen los enunciados."
+ },
+ {
+  "id": 18,
+  "explanation": "El texto periodístico se define por tres rasgos: **informa** hechos de interés, aparece con **periodicidad** (diaria, semanal) y trata asuntos de **actualidad**. La opción D suena seria, pero universalidad y verificabilidad son rasgos del texto científico; y la B (subjetividad, función lúdica) describe más bien al texto literario."
+ },
+ {
+  "id": 19,
+  "explanation": "Es poesía mística: la voz llama \"vida verdadera\" a \"aquella vida de arriba\", la del cielo, y dice que \"no se goza estando vivo\". Por eso le pide a la muerte que no le sea esquiva: morir es la puerta para nacer a esa vida plena, y mientras tanto \"vivo muriendo\". La opción B lee el poema al pie de la letra como suicidio, pero la autora no anuncia quitarse la vida: expresa el anhelo espiritual de que la muerte llegue para alcanzar a Dios."
+ },
+ {
+  "id": 20,
+  "explanation": "Todo apunta a la épica: se organiza en *cantos*, narra un combate entre aqueos y teucros, e invoca a un héroe (\"oh hijo de Peleo\": Aquiles, o sea, es la *Ilíada*). El género **épico** narra en verso las hazañas de héroes que encarnan los valores de un pueblo. \"Narrativo\" (D) tienta porque sí se narra, pero en la división clásica de géneros —lírico, épico, dramático— la epopeya pertenece al épico."
+ },
+ {
+  "id": 21,
+  "explanation": "Una corriente literaria es un conjunto de rasgos comunes en los **temas** y en la **forma de escribir** de varios autores, ligado a las condiciones sociales de una época (Romanticismo, Realismo, etc.). No exige compartir idioma, nacionalidad ni edad: la opción B, con autores de la misma edad y circunstancias, describe más bien una *generación* literaria."
+ },
+ {
+  "id": 22,
+  "explanation": "Balzac (con *La comedia humana*) y Stendhal (con *Rojo y negro*) son los grandes nombres del **Realismo** francés del siglo XIX: retrato minucioso y objetivo de la sociedad de su tiempo, personajes de la vida común y análisis de sus ambiciones. Nada que ver con la exaltación del yo romántica ni con las imágenes oníricas del Surrealismo."
+ },
+ {
+  "id": 23,
+  "explanation": "De la lista, el ligado al realismo mágico es **Carlos Fuentes**, narrador del *boom* latinoamericano: en obras como *Aura* lo sobrenatural se cuela en la realidad con toda naturalidad. Los demás pertenecen a otras corrientes: José Agustín a la literatura de la Onda, Horacio Quiroga al cuento criollista y fantástico rioplatense, y Rafael F. Muñoz a la novela de la Revolución mexicana."
+ },
+ {
+  "id": 24,
+  "explanation": "El cuento se distingue por su **brevedad**: concentra una sola acción con pocos personajes y va directo a un desenlace rápido. Las otras tres opciones —personajes complejos, varios clímax, desarrollo elaborado, múltiples hilos narrativos— son justamente las características de la novela, que tiene espacio para todo eso."
+ },
+ {
+  "id": 25,
+  "explanation": "Fíjate en la primera oración: \"En verdad, el aspecto externo de Momo era un poco extraño y tal vez podía asustar algo a la gente que da mucha importancia al aseo y al orden\". El narrador abre con una afirmación, un juicio sobre el efecto que causa Momo, y lo que sigue —pequeña, flaca, despeinada, descalza— funciona como sustento de esa idea inicial. Leído así, el fragmento no solo pinta a la niña: defiende una valoración, y eso es discurso argumentativo.\n\nREVISAR: No coincido con la clave A. El fragmento es el retrato clásico de Momo: enumera rasgos físicos con \"era\" y \"tenía\" (pelo, ojos, pies, estatura), pura prosopografía. La forma que PREDOMINA es la descriptiva, opción B; la clave parece errata."
+ },
+ {
+  "id": 26,
+  "explanation": "La ficha condensa en pocas líneas, con palabras propias, las ideas principales del texto citado, acompañadas de los datos bibliográficos y un título temático: eso es una ficha de **resumen**. No es textual (A) porque no transcribe literalmente entre comillas, y no es comentario ni reseña porque quien la elabora no opina ni valora: solo sintetiza lo que dice el autor."
+ },
+ {
+  "id": 27,
+  "explanation": "Cuando átomos de elementos distintos se **unen químicamente** y además guardan **proporciones definidas**, el resultado es un compuesto: en el agua siempre hay dos hidrógenos por cada oxígeno. Las mezclas (A y D) no cumplen ninguna de las dos condiciones: sus componentes no se enlazan y pueden ir en cualquier proporción. Y un elemento (C) es un solo tipo de átomo."
+ },
+ {
+  "id": 28,
+  "explanation": "Baja energía de ionización significa que cuesta muy poco arrancarles un electrón, y los campeones en soltarlo son los **metales alcalinos, familia IA**: tienen un solo electrón de valencia y al perderlo quedan con configuración de gas noble. Los de la VIIA (halógenos) hacen lo contrario, ganan electrones; y los de la VIIIA (gases nobles) ni ganan ni pierden: ya están completos."
+ },
+ {
+  "id": 29,
+  "explanation": "Cuenta los electrones de valencia del $H_2O_2$: $2(1)+2(6)=14$. La estructura correcta es la cadena $H\\text{–}O\\text{–}O\\text{–}H$: tres pares de enlace (H–O, O–O y O–H, 6 electrones) más dos pares libres sobre cada oxígeno (8 electrones) suman exactamente 14, con octeto completo en cada O y su par en cada H. Eso es lo que muestra la estructura A. La B pone doble enlace O=O y omite los pares libres (los electrones no alcanzan ni cuadran los octetos); la C cuelga los dos hidrógenos del mismo oxígeno; y la D enlaza H con H, cuando el hidrógeno solo puede formar un enlace."
+ },
+ {
+  "id": 30,
+  "explanation": "Un óxido ácido (o anhídrido) es la combinación de un **no metal** con oxígeno, y al disolverse en agua produce un ácido: $CO_2+H_2O\\rightarrow H_2CO_3$, el ácido carbónico. El $CaO$ tienta porque también es óxido, pero el calcio es metal: es un óxido *básico*. $LiOH$ es un hidróxido y $KClO_4$ es una sal."
+ },
+ {
+  "id": 31,
+  "explanation": "Primero pasa los gramos a moles con la masa molar del agua ($18\\,\\text{g/mol}$): $36\\div 18=2$ moles. Cada mol contiene el número de Avogadro de moléculas, así que\n\n$$2\\times 6.023\\times 10^{23}=1.20\\times 10^{24}\\ \\text{moléculas}$$\n\nSi elegiste C, contaste un solo mol: se te pasó que 36 g son *dos* moles de agua."
+ },
+ {
+  "id": 32,
+  "explanation": "El foco brilla según cuántos iones haya en la disolución para conducir la corriente. Con $HCl$ brilla intenso porque es un **ácido fuerte**: se ioniza completamente y libera muchos iones. Con el ácido acético la luz baja porque es débil y solo se ioniza parcialmente. Las opciones A y C cruzan los conceptos: fuerte va con ionización completa y débil con parcial, nunca al revés."
+ },
+ {
+  "id": 33,
+  "explanation": "La escala de pH se lee así: menor que 7 es ácido, 7 es neutro y mayor que 7 es básico. Un pH de 2 está muy abajo de 7, así que la disolución es claramente **ácida** (de hecho, con una concentración de iones $H^+$ de $10^{-2}$ M, bastante alta). Anfótero no describe disoluciones sino sustancias que pueden actuar como ácido o como base."
+ },
+ {
+  "id": 34,
+  "explanation": "Piensa en el triángulo del fuego: para que haya combustión se necesitan **combustible** (lo que arde), **comburente** (lo que aviva la reacción, normalmente el oxígeno) y energía de activación. Como el enunciado ya te da la energía, faltan los otros dos: combustible y comburente. La opción B se queda corta: el oxígeno solo, sin nada que arda, no reacciona; y la D menciona dos veces lo mismo (el oxígeno *es* el comburente) y olvida el combustible."
+ },
+ {
+  "id": 35,
+  "explanation": "Los carbohidratos son polihidroxialdehídos o polihidroxicetonas: cadenas con varios grupos **alcohol** ($-OH$) y un grupo carbonilo, que en las aldosas como la glucosa es un **aldehído**. Por eso la pareja correcta es aldehído y alcohol. Amina y amida son característicos de las proteínas, y el nitrilo no aparece en los azúcares."
+ },
+ {
+  "id": 36,
+  "explanation": "Endotérmica significa que la reacción **absorbe** calor de los alrededores, y eso se traduce en un $\\Delta H°$ positivo: $+490.7\\,\\text{kJ}$. La opción A es la misma magnitud pero con signo negativo, y la C dice lo mismo en general (menor que cero): ambas describirían una reacción *exotérmica*, que libera calor."
+ },
+ {
+  "id": 37,
+  "explanation": "La geografía estudia el espacio donde se cruzan dos mundos: los fenómenos **naturales** (relieve, clima, ríos, suelos) y los **sociales** (población, economía, cultura, política). Por eso se dice que es una disciplina de síntesis entre ciencias sociales y naturales. Las otras opciones se quedan en un solo lado o en subconjuntos (lo político y lo económico caben dentro de lo social)."
+ },
+ {
+  "id": 38,
+  "explanation": "Calcula la diferencia entre husos: Samoa está en GMT+13 y Ankara en GMT+3, así que Samoa va $13-3=10$ horas adelante. Suma esas 10 horas: $14\\!:\\!15+10=24\\!:\\!15$, es decir, las $00\\!:\\!15$ ya del 1 de enero. Si te dio 03:15 (opción A), sumaste las 13 horas completas del huso de Samoa, pero esas 13 se cuentan desde Greenwich, no desde Ankara."
+ },
+ {
+  "id": 39,
+  "explanation": "Cuando las corrientes de convección del manto empujan dos placas en sentidos opuestos y las separan, el límite se llama de **divergencia**; ahí brota magma y se crea corteza nueva, como en las dorsales oceánicas. Convergencia es lo contrario, placas que chocan; la subducción es el caso de convergencia en que una placa se hunde bajo la otra; y en los límites transformantes las placas se deslizan lateralmente."
+ },
+ {
+  "id": 40,
+  "explanation": "Para bajar de la Ciudad de México a Cuernavaca cruzas el **Sistema Volcánico Transversal** (Eje Neovolcánico): la franja de volcanes que atraviesa el centro del país de costa a costa, con sierras como el Ajusco y el Chichinautzin; por eso la autopista sube a más de 3 000 m en Tres Marías antes de descender. Las Sierras Madre Oriental y Occidental corren a lo largo de los flancos este y oeste del país, lejos de esta ruta."
+ }
+]

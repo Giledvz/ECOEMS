@@ -1,0 +1,162 @@
+[
+ {
+  "id": 41,
+  "explanation": "La aceleración es la segunda derivada de la posición, así que deriva dos veces. Primera derivada (velocidad), con regla de la cadena —el 2 de adentro sale multiplicando—: $f'(t)=-2\\,\\mathrm{sen}(2t+3)$. Derivas otra vez y vuelve a salir el 2:\n\n$$a(t)=f''(t)=-2\\cdot 2\\cos(2t+3)=-4\\cos(2t+3)$$\n\nCheca que cuadra con el movimiento armónico simple, donde siempre se cumple $a(t)=-\\omega^2 x(t)$: aquí $\\omega=2$, entonces $a=-4f(t)$.\n\nSi marcaste B te faltó aplicar la cadena en las dos derivadas y te quedaste solo con el signo menos."
+ },
+ {
+  "id": 42,
+  "explanation": "La función seno oscila entre $-1$ y $1$ por más lejos que te vayas sobre el eje $x$: su rango es $[-1,1]$. El valor más alto lo alcanza en $x=\\frac{\\pi}{2}$ (y de ahí en adelante cada $2\\pi$), y ahí vale exactamente $1$. Por eso ese es el punto máximo en todo $(-\\infty,\\infty)$.\n\n$\\frac{\\sqrt{3}}{2}$ y $\\frac{1}{2}$ son valores que el seno sí toma (en $60°$ y en $30°$), pero se quedan por debajo del máximo."
+ },
+ {
+  "id": 43,
+  "explanation": "Primero la antiderivada, subiendo el exponente y dividiendo entre el nuevo exponente: $\\int x^2\\,dx=\\frac{x^3}{3}$. Después evalúas entre los límites (teorema fundamental del cálculo):\n\n$$\\int_0^2 x^2\\,dx=\\left[\\frac{x^3}{3}\\right]_0^2=\\frac{2^3}{3}-\\frac{0^3}{3}=\\frac{8}{3}$$\n\nSi te dio 8 evaluaste $x^3$ pero se te olvidó dividir entre 3."
+ },
+ {
+  "id": 44,
+  "explanation": "Integra término a término y saca las constantes. Las dos fórmulas que necesitas son $\\int \\mathrm{sen}\\,x\\,dx=-\\cos x$ y $\\int \\cos x\\,dx=\\mathrm{sen}\\,x$ (ojo, el signo menos le toca al seno):\n\n$$\\int(2\\,\\mathrm{sen}\\,x+3\\cos x)\\,dx=-2\\cos x+3\\,\\mathrm{sen}\\,x+C$$\n\nCompruébalo derivando el resultado: la derivada de $-2\\cos x$ es $+2\\,\\mathrm{sen}\\,x$ y la de $3\\,\\mathrm{sen}\\,x$ es $3\\cos x$; regresas al integrando.\n\nLa opción C es la trampa: tiene bien los intercambios de función, pero le falta el signo menos del coseno."
+ },
+ {
+  "id": 45,
+  "explanation": "La velocidad es un vector: tiene magnitud, dirección y sentido. La rapidez es un escalar y, por definición, es justamente la magnitud de ese vector, nada más que sin la información de hacia dónde. Por eso son el mismo número y nunca una puede ser mayor o menor que la otra.\n\nY si la velocidad es constante, la rapidez tampoco cambia: descarta la de \"gradualmente creciente\"."
+ },
+ {
+  "id": 46,
+  "explanation": "El auto arranca, o sea que parte del reposo: $v_0=0$. Con aceleración constante usas $v=v_0+at$:\n\n$$v=0+(18\\,\\mathrm{m/s^2})(2\\,\\mathrm{s})=36\\,\\mathrm{m/s}$$\n\nPiénsalo así: la aceleración te dice cuánta velocidad gana cada segundo, 18 m/s en el primero y otros 18 en el segundo.\n\nSi contestaste 18 te quedaste con la velocidad al cabo de un solo segundo; si contestaste 9 dividiste en vez de multiplicar."
+ },
+ {
+  "id": 47,
+  "explanation": "Mientras el elevador cae libremente, todo dentro de él cae con la misma aceleración $g$: la mujer y el piso bajan juntos, sin que uno alcance a empujar al otro. Como el contacto ya no se comprime, la fuerza normal vale $0\\,\\mathrm{N}$. Es la ingravidez aparente, la misma sensación que tienen los astronautas en órbita: no es que la gravedad desaparezca, es que nadie los sostiene.\n\nSi te fuiste por las opciones grandes andabas calculando el peso ($mg=500\\,\\mathrm{N}$), pero el peso es lo que la Tierra le jala, no lo que el piso le empuja."
+ },
+ {
+  "id": 48,
+  "explanation": "Misma dirección y sentidos contrarios quiere decir que las fuerzas se restan: $F_{neta}=30-20=10\\,\\mathrm{N}$. Con eso aplicas la segunda ley de Newton, $F=ma$:\n\n$$a=\\frac{F_{neta}}{m}=\\frac{10\\,\\mathrm{N}}{100\\,\\mathrm{kg}}=0.1\\,\\mathrm{m/s^2}$$\n\nLa aceleración apunta hacia donde jala la fuerza de 30 N, que es la que gana.\n\nSi te dio $0.5$ sumaste las fuerzas ($30+20=50$) en vez de restarlas: eso solo valdría si jalaran hacia el mismo lado."
+ },
+ {
+  "id": 49,
+  "explanation": "La energía potencial gravitatoria es $E_p=mgh$. Es el mismo cuerpo y la misma altura, así que $m$ y $h$ no cambian; lo único distinto es $g$. Si en la Luna la gravedad es seis veces menor:\n\n$$E_{p,\\text{Luna}}=m\\left(\\frac{g}{6}\\right)h=\\frac{1}{6}\\,E_{p,\\text{Tierra}}$$\n\nEs proporcionalidad directa: si uno de los factores se divide entre 6, el producto se divide entre 6. Por eso la energía potencial en la Luna es seis veces menor."
+ },
+ {
+  "id": 50,
+  "explanation": "El trabajo que haces contra la gravedad depende solo del peso de la bola y del desnivel que sube: $W=mgh$. En los tres dibujos es la misma bola y los mismos $3\\,\\mathrm{m}$ de altura —la levantes derecho por el bloque (I), por la rampa (II) o por la escalera (III)—, así que el trabajo es idéntico.\n\nLa razón de fondo: la gravedad es una fuerza conservativa, y a esas no les importa el camino, solo dónde empiezas y dónde acabas.\n\nLo que sí cambia es la fuerza que necesitas: por la rampa haces menos fuerza, pero recorres más distancia, y el producto fuerza por distancia sale igual."
+ },
+ {
+  "id": 51,
+  "explanation": "Niño y carrito arrancan quietos, así que el momento total del sistema es cero y así se conserva (no hay fricción ni fuerzas externas horizontales):\n\n$$0=m_n v_n+m_c v_c$$\n\nToma como positivo el sentido en que salta el niño: $0=(30)(2)+m_c(-12)$. Despejas: $12\\,m_c=60$, entonces $m_c=5\\,\\mathrm{kg}$.\n\nSi te dio 2.5 dividiste $30\\div 12$ y dejaste fuera la velocidad del niño; el niño entra con el producto masa por velocidad, no con su masa sola."
+ },
+ {
+  "id": 52,
+  "explanation": "Las variables macroscópicas son las que describen al gas como un todo y puedes medir con un instrumento: presión, volumen, temperatura y cantidad de sustancia. Si quieres mover el volumen, tienes que jugar con las otras dos: al aumentar la presión el gas se comprime y al calentarlo se expande. Justo eso resume la ley general del estado gaseoso:\n\n$$\\frac{PV}{T}=\\text{constante}$$\n\nLa energía interna, la energía cinética molecular y la potencial son magnitudes microscópicas o derivadas: explican el porqué, pero no son las variables que manipulas."
+ },
+ {
+  "id": 53,
+  "explanation": "Para la teoría cinética, la temperatura es una medida de la energía cinética promedio de las partículas. Si el movimiento aleatorio cesa por completo, esa energía es cero, y a esa temperatura se le llama cero absoluto: $0\\,\\mathrm{K}$, que equivale a $-273.15\\,°\\mathrm{C}$. Es el piso de la escala; por debajo no hay temperaturas.\n\nCuidado con $0\\,°\\mathrm{C}$: ahí apenas se funde el hielo y las moléculas siguen moviéndose muy a gusto."
+ },
+ {
+  "id": 54,
+  "explanation": "Ve renglón por renglón. En la onda longitudinal (I) las partículas vibran en la misma dirección en que avanza la onda —el sonido comprimiendo y estirando el aire, como un resorte—, así que le toca c. En la transversal (II) vibran perpendicularmente al avance, como la cuerda que sacudes de un extremo: le toca b. Y la electromagnética (III) es la única que no necesita medio material, por eso la luz del Sol nos llega cruzando el vacío: le toca a.\n\nEl armado queda I: c – II: b – III: a."
+ },
+ {
+  "id": 55,
+  "explanation": "El campo eléctrico se define como la fuerza que sentiría una carga de prueba dividida entre esa carga:\n\n$$E=\\frac{F}{q}$$\n\nSi la fuerza va en newtons y la carga en coulombs, la unidad sale sola: $\\mathrm{N/C}$.\n\n$\\mathrm{N/kg}$ es la unidad del campo gravitatorio (fuerza entre masa), que es la trampa del reactivo porque las dos fórmulas se parecen; y $\\mathrm{J/s}$ es el watt, unidad de potencia."
+ },
+ {
+  "id": 56,
+  "explanation": "En el diagrama la pila de voltaje $V$ está conectada a un solo resistor, así que toda la diferencia de potencial cae sobre él. Aplicas la ley de Ohm, $I=V/R$, con $R_{eq}=R/2$:\n\n$$I=\\frac{V}{R/2}=\\frac{2V}{R}$$\n\nDividir entre un medio es lo mismo que multiplicar por dos: si bajas la resistencia a la mitad, la corriente se duplica.\n\nSi marcaste $\\frac{V}{2R}$ multiplicaste por $\\frac{1}{2}$ en lugar de dividir; ese resultado correspondería a un resistor de $2R$, no de $R/2$."
+ },
+ {
+  "id": 57,
+  "explanation": "Es la ley de Faraday: siempre que el flujo magnético cambia con el tiempo se induce una fuerza electromotriz,\n\n$$\\varepsilon=-\\frac{d\\Phi}{dt}$$\n\nLo que aparece por el solo hecho de que el flujo varíe es la fem; que además circule corriente depende de si hay un circuito cerrado y conductor. Por eso C no sirve: con el circuito abierto hay fem pero no hay corriente. Y el calor de la opción A solo se disiparía si esa corriente llegara a fluir."
+ },
+ {
+  "id": 58,
+  "explanation": "La presión atmosférica en un punto es, literalmente, el peso de toda la columna de aire que tienes encima. En la cima del Everest ya dejaste abajo la mayor parte de la atmósfera, así que la capa de aire que te queda arriba es mucho más delgada y pesa menos: la presión baja hasta cerca de un tercio de la del nivel del mar.\n\nLa densidad del aire también disminuye con la altura (opción A), pero eso es otra consecuencia del mismo fenómeno, no la causa; lo que explica la caída de presión es la altura de la columna soportada."
+ },
+ {
+  "id": 59,
+  "explanation": "La luz se comporta como onda en fenómenos como la interferencia y la difracción, donde se suma consigo misma y forma franjas; y se comporta como partícula en el efecto fotoeléctrico, donde entrega su energía en paquetes discretos llamados fotones. Ningún modelo por separado la describe completa, y por eso se dice que tiene naturaleza dual: onda y partícula, según el experimento con que la interrogues.\n\nReflexión y refracción (opción D) son fenómenos que la luz presenta, no modelos de lo que es."
+ },
+ {
+  "id": 60,
+  "explanation": "Marie Curie ganó dos premios Nobel en ciencias distintas: el de Física en 1903, compartido con Pierre Curie y Henri Becquerel por los estudios sobre la radiactividad, y el de Química en 1911, esta vez sola, por el descubrimiento del polonio y el radio y por aislar el radio metálico.\n\nEs la única persona que ha recibido el Nobel en dos disciplinas científicas diferentes; ninguno de los dos fue de Medicina ni de Biología."
+ },
+ {
+  "id": 61,
+  "explanation": "Un elemento está formado por átomos de una sola clase, aunque esos átomos vengan agrupados de dos en dos o de cuatro en cuatro. En la opción A tienes $Na$ (sodio), $Cl_2$ (dos átomos de cloro) y $P_4$ (cuatro de fósforo): un solo tipo de átomo en cada uno, los tres son elementos.\n\nLas demás se caen por un solo intruso: en B y en D aparece $CO$ y en C aparece $SO_2$, y ambos combinan átomos de elementos distintos, o sea que son compuestos.\n\nQue la fórmula lleve subíndice no la convierte en compuesto; lo que cuenta es que haya más de un tipo de átomo."
+ },
+ {
+  "id": 62,
+  "explanation": "El aire es una combinación de varias sustancias —alrededor de 78% nitrógeno, 21% oxígeno, más argón, dióxido de carbono y vapor de agua— que conservan sus propiedades y se pueden separar por métodos físicos, como cuando se licua el aire y se destila para obtener oxígeno industrial. Eso es exactamente una mezcla, y homogénea porque se ve uniforme.\n\nNo es compuesto porque sus componentes no están unidos químicamente ni en proporción fija (la humedad cambia de un día a otro), ni elemento porque hay varios tipos de átomos."
+ },
+ {
+  "id": 63,
+  "explanation": "En la tabla periódica los ordenamientos horizontales, o sea los renglones, se llaman periodos, y hay siete. Todos los elementos de un mismo periodo tienen el mismo número de niveles de energía ocupados, que es justo el número del periodo.\n\nLos grupos o familias son las columnas verticales; ahí los elementos comparten los electrones de valencia y por eso se parecen en propiedades químicas.\n\nSi escogiste \"grupos\" o \"familias\" nada más invertiste los ejes: son lo vertical, no lo horizontal."
+ },
+ {
+  "id": 64,
+  "explanation": "Una sal se forma cuando un ácido y una base se neutralizan: el $H^+$ del ácido se junta con el $OH^-$ de la base para dar agua, y lo que sobra —el metal con el no metal— queda como sal. Eso es exactamente lo que pasa aquí:\n\n$$HCl+KOH\\to KCl+H_2O$$\n\nEl $KCl$ (cloruro de potasio) es la sal, y el agua es el otro producto de toda neutralización.\n\nEn las otras tres opciones lo que reacciona con agua es un óxido o un halógeno, y el producto es un ácido ($H_2SO_3$, $HCl$, $HNO_3$), no una sal."
+ },
+ {
+  "id": 65,
+  "explanation": "Un ácido, según Arrhenius, es la sustancia que al disolverse en agua libera iones $H^+$. El $HCl$ se disocia así: $HCl \\to H^+ + Cl^-$; es el ácido clorhídrico, el mismo del jugo gástrico.\n\nEl $NaOH$ libera $OH^-$, o sea que es base; el $NaCl$ es la sal que sale de neutralizar a esos dos, y el $Cl_2$ es un elemento, ni ácido ni base.\n\nRegla rápida para el examen: si la fórmula empieza con H, sospecha ácido; si termina en OH, sospecha base."
+ },
+ {
+  "id": 66,
+  "explanation": "El pH mide los iones $H^+$: entre más alto el pH, menos $H^+$ hay. Y como en agua el producto $[H^+][OH^-]$ siempre vale $10^{-14}$, si bajan los $H^+$ tienen que subir los $OH^-$. Entonces la mayor concentración de $OH^-$ está en el pH más grande de la lista, 13, que es francamente básico.\n\nCompara: con $pH=13$, $[OH^-]=10^{-1}=0.1\\,\\mathrm{M}$, mientras que con $pH=2$ apenas hay $10^{-12}\\,\\mathrm{M}$.\n\nSi escogiste 2 te fuiste con el ácido: ahí lo que abunda son los $H^+$, que es lo contrario de lo que pide la pregunta."
+ },
+ {
+  "id": 67,
+  "explanation": "Cuando el oxígeno se combina con un no metal se forma un óxido ácido (o anhídrido), que al reaccionar con agua produce un ácido. Cuando se combina con un metal se forma un óxido básico, que con agua da un hidróxido.\n\nDe la lista, el único no metal es el nitrógeno: sus óxidos son ácidos y de ahí sale el ácido nítrico.\n\nSodio, magnesio y calcio son metales, así que sus óxidos serían básicos: $Na_2O$ con agua da $NaOH$, y $CaO$ da $Ca(OH)_2$."
+ },
+ {
+  "id": 68,
+  "explanation": "La sacarosa es un disacárido: una glucosa unida a una fructosa, con fórmula $C_{12}H_{22}O_{11}$. Fíjate en los átomos: solo carbono, hidrógeno y oxígeno, que es la receta exacta de un carbohidrato.\n\nPara ser proteína le faltaría nitrógeno, que es lo que llevan los aminoácidos, y para ser lípido le faltarían las cadenas largas de ácidos grasos.\n\nPor eso se dice que el azúcar aporta \"calorías vacías\": pura energía, sin proteínas, sin grasas y sin vitaminas."
+ },
+ {
+  "id": 69,
+  "explanation": "Las proteínas son polímeros y sus monómeros son los aminoácidos, unidos uno tras otro por enlaces peptídicos hasta armar una cadena que después se pliega en el espacio. Existen 20 aminoácidos distintos y el orden en que se acomodan lo dicta la información del ADN.\n\nCuidado con la opción A: las enzimas son proteínas, no al revés. Una enzima también está hecha de aminoácidos, así que no puede ser el ladrillo de lo que ella misma es.\n\nLos polímeros de carbohidratos son el almidón o la celulosa, y los triglicéridos son lípidos."
+ },
+ {
+  "id": 70,
+  "explanation": "En toda reacción química pasan las dos cosas: se rompen los enlaces de los reactivos (eso consume energía) y se forman los enlaces de los productos (eso la libera). El balance entre lo que cuesta romper y lo que se gana al formar es precisamente lo que decide si la reacción resulta exotérmica o endotérmica. Por eso el enunciado B es verdadero siempre.\n\nLas otras tres tienen las definiciones volteadas: la endotérmica absorbe energía, la exotérmica la desprende, y la combustión es el ejemplo clásico de reacción exotérmica, que libera calor y luz."
+ },
+ {
+  "id": 71,
+  "explanation": "Los ribosomas son las fábricas de proteínas: ahí llega el ARN mensajero con las instrucciones copiadas del ADN y se traducen a una cadena de aminoácidos. Los hay sueltos en el citoplasma y pegados al retículo endoplásmico rugoso, que se llama \"rugoso\" justo por ellos.\n\nEl distractor bueno es el aparato de Golgi: no sintetiza proteínas, las recibe ya hechas para modificarlas, empacarlas y distribuirlas. La mitocondria produce ATP y el lisosoma digiere."
+ },
+ {
+  "id": 72,
+  "explanation": "El ATP (adenosín trifosfato) es la moneda energética de la célula: guarda energía en los enlaces entre sus fosfatos y la libera al romper el último, quedándose como ADP. Con ese pago se financian la contracción muscular, el transporte activo a través de la membrana y la síntesis de moléculas nuevas.\n\nEl NAD y el FAD sí andan en el metabolismo, pero como transportadores de electrones hacia la cadena respiratoria, no como el vale de energía que se gasta directamente. El AMP es el mismo nucleótido ya descargado, sin los fosfatos que cargaban la energía."
+ },
+ {
+  "id": 73,
+  "explanation": "Revisa las tres afirmaciones por separado. II es ventaja clara: durante la meiosis hay entrecruzamiento y reparto al azar de los cromosomas, y en la fecundación se combinan gametos de dos progenitores distintos; de ahí sale la variabilidad genética. III también: cada gameto es haploide ($n$) y al unirse dos se restituye la condición diploide ($2n$) propia de la especie, generación tras generación.\n\nLa que sobra es I: producir descendientes idénticos al progenitor es lo característico de la reproducción asexual, o sea clones, justo lo contrario de lo que aporta la sexual.\n\nQuedan II y III."
+ },
+ {
+  "id": 74,
+  "explanation": "Mendel representó cada carácter con una letra: la mayúscula para el alelo dominante y la misma letra en minúscula para el recesivo. Así, si $B$ es el dominante, $b$ es el recesivo. El recesivo solo se manifiesta cuando el individuo lleva los dos alelos iguales ($bb$), porque si hay un dominante presente, este lo tapa.\n\nLas combinaciones como $Bb$ no representan un carácter recesivo: describen un genotipo heterocigoto, un individuo que se ve dominante pero carga escondido el alelo recesivo."
+ },
+ {
+  "id": 75,
+  "explanation": "Las mutaciones son cambios al azar en el material genético y, cuando ocurren en las células que forman los gametos, se heredan. Son la fuente original de los alelos nuevos: sin ellas la variabilidad se iría agotando y la selección natural no tendría de dónde escoger, porque la selección no crea variantes, solo filtra las que ya existen y favorece a los individuos que encajan mejor con su ambiente.\n\nOjo con C: la variabilidad que producen sí es heredable, y precisamente por eso importa en la evolución. Y no aparecen \"a propósito\" en los débiles: surgen al azar, en cualquier individuo."
+ },
+ {
+  "id": 76,
+  "explanation": "Aquí se describe el paquete de técnicas del ADN recombinante: cortar un gen con enzimas de restricción, aislarlo, estudiarlo, modificarlo e insertarlo en un vector —un plásmido, por ejemplo— para meterlo en otro organismo y que lo exprese. Gracias a eso hoy se produce insulina humana en bacterias.\n\nDistingue bien las otras: el Proyecto Genoma Humano fue el trabajo de secuenciar y leer todo nuestro ADN, no de transferir genes; y la terapia génica es una aplicación puntual, corregir un gen defectuoso en un paciente enfermo.\n\nREVISAR: el nombre estándar de ese conjunto de técnicas es *ingeniería genética* (opción A). \"Recombinación genética\" designa más bien el proceso natural de intercambio de material genético en la meiosis. La clave B parece errata; además el campo \"tema\" del reactivo dice \"Ingeniería genética\"."
+ },
+ {
+  "id": 77,
+  "explanation": "Oparin y Haldane propusieron que en la Tierra primitiva, con una atmósfera sin oxígeno libre y mucha energía disponible (descargas eléctricas, radiación ultravioleta, calor volcánico), las moléculas inorgánicas simples pudieron combinarse hasta formar moléculas orgánicas cada vez más complejas acumuladas en el \"caldo primitivo\".\n\nLo importante es que era una hipótesis comprobable en el laboratorio, y en 1953 Miller y Urey la pusieron a prueba: simularon esa atmósfera en un aparato cerrado, le aplicaron descargas y obtuvieron aminoácidos. Por eso la respuesta habla de demostrar experimentalmente que la materia orgánica surgió de moléculas simples.\n\nLa estructura tridimensional del ADN (opción A) fue trabajo de Watson y Crick, por un camino totalmente distinto."
+ },
+ {
+  "id": 78,
+  "explanation": "Hongos, plantas y animales tienen células con núcleo definido: una membrana nuclear que encierra al ADN, más organelos con membrana como mitocondrias, retículo endoplásmico y aparato de Golgi. Eso las hace eucarióticas, aunque unas tengan pared celular y otras no.\n\nLas procarióticas, sin núcleo definido y con el ADN suelto en el citoplasma, son las bacterias y las arqueas.\n\nHeterótrofo y autótrofo no son tipos de célula sino formas de nutrición, y además no aplican parejo al trío: las plantas son autótrofas, mientras que hongos y animales son heterótrofos."
+ },
+ {
+  "id": 79,
+  "explanation": "Una población es el conjunto de organismos de la misma especie que viven en la misma área y al mismo tiempo, y que por eso pueden cruzarse entre sí. La pista está en el \"se reproducen\": solo se reproducen entre ellos los individuos de una misma especie.\n\nSube de nivel para descartar las otras: el ecosistema incluye además a todas las demás especies y al medio físico; el bioma es una región mucho mayor definida por clima y vegetación (desierto, selva, tundra); y raza es una subdivisión dentro de una especie, no el conjunto."
+ },
+ {
+  "id": 80,
+  "explanation": "El primer eslabón de cualquier cadena alimenticia son los productores: plantas, algas y demás organismos autótrofos que fabrican su propio alimento a partir de la luz del Sol mediante la fotosíntesis. Ellos son los que meten la energía al ecosistema, y por eso van al principio.\n\nLos consumidores llegan después, porque necesitan comerse a alguien: primero los herbívoros y luego los carnívoros. Los descomponedores cierran el ciclo al final, devolviendo la materia al suelo para que los productores la vuelvan a usar."
+ }
+]

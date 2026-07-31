@@ -1,0 +1,489 @@
+{
+ "lote": "unam-a4-2__g02",
+ "examen": "unam-a4-2.json",
+ "titulo": "UNAM Área 4 - 2",
+ "materia": "Matemáticas + Español",
+ "preguntas": [
+  {
+   "id": 41,
+   "texto": "¿Cuál es el resultado de dividir $\\frac{1}{10}$ entre $-\\frac{1}{2}$?",
+   "opciones": {
+    "A": "$-20$",
+    "B": "$-\\frac{1}{20}$",
+    "C": "$-\\frac{1}{5}$",
+    "D": "$-5$"
+   },
+   "clave": "C",
+   "tema": "División de fracciones"
+  },
+  {
+   "id": 42,
+   "texto": "Calcula $\\sqrt{25^3}$",
+   "opciones": {
+    "A": "25",
+    "B": "125",
+    "C": "225",
+    "D": "625"
+   },
+   "clave": "B",
+   "tema": "Raíces y potencias"
+  },
+  {
+   "id": 43,
+   "texto": "Al realizar el siguiente producto de polinomios $(y - 1)(y + 2)$, resulta",
+   "opciones": {
+    "A": "$y^2 + y - 2$",
+    "B": "$y^2 - 2$",
+    "C": "$y^2 + 1$",
+    "D": "$y^2 + 2y - 1$"
+   },
+   "clave": "A",
+   "tema": "Producto de polinomios"
+  },
+  {
+   "id": 44,
+   "texto": "Resuelve la siguiente operación algebraica.\n\n$\\frac{x^2 - 7x + 12}{(x^2 - 16)(x - 3)}$",
+   "opciones": {
+    "A": "$\\frac{1}{x - 3}$",
+    "B": "$\\frac{1}{x + 4}$",
+    "C": "$\\frac{x - 3}{x + 4}$",
+    "D": "$\\frac{x - 4}{x - 3}$"
+   },
+   "clave": "B",
+   "tema": "Factorización de expresiones algebraicas"
+  },
+  {
+   "id": 45,
+   "texto": "Cuando se sustituyen los valores de la ecuación de segundo grado $3x^2 = 2x + 5$ en la fórmula\n\n$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$, los valores $a$, $b$ y $c$ son",
+   "opciones": {
+    "A": "$a = 3$, $b = 2$, $c = 5$",
+    "B": "$a = 3$, $b = -2$, $c = 5$",
+    "C": "$a = 3$, $b = 2$, $c = -5$",
+    "D": "$a = 3$, $b = -2$, $c = -5$"
+   },
+   "clave": "D",
+   "tema": "Ecuación cuadrática: fórmula general"
+  },
+  {
+   "id": 46,
+   "texto": "El conjunto solución de la desigualdad $-3x + 4 > -8$ es",
+   "opciones": {
+    "A": "$x \\in (\\frac{4}{3}, \\infty)$",
+    "B": "$x \\in (-9, \\infty)$",
+    "C": "$x \\in (-\\infty, \\frac{4}{3})$",
+    "D": "$x \\in (-\\infty, 4)$"
+   },
+   "clave": "D",
+   "tema": "Desigualdades lineales"
+  },
+  {
+   "id": 47,
+   "texto": "Cinco cuadernos y ocho lapiceros cuestan \\$115; tres cuadernos y cinco lapiceros cuestan \\$70. ¿Cuál es el precio de cada cuaderno?",
+   "opciones": {
+    "A": "$15",
+    "B": "$10",
+    "C": "$13",
+    "D": "$12"
+   },
+   "clave": "A",
+   "tema": "Sistemas de ecuaciones lineales"
+  },
+  {
+   "id": 48,
+   "texto": "¿Cuál es el dominio de la siguiente función polinomial?\n\n$f(x) = x^3 + 2x^2 - 3x + 1$",
+   "opciones": {
+    "A": "$[-\\infty, \\infty]$",
+    "B": "$(-\\infty, 1)$",
+    "C": "$(-\\infty, \\infty)$",
+    "D": "$(-1, \\infty)$"
+   },
+   "clave": "C",
+   "tema": "Dominio de funciones polinomiales"
+  },
+  {
+   "id": 49,
+   "texto": "La gráfica de $x^2 - 1 = y$ corresponde a una",
+   "opciones": {
+    "A": "recta.",
+    "B": "elipse.",
+    "C": "parábola.",
+    "D": "hipérbola."
+   },
+   "clave": "C",
+   "tema": "Gráficas de funciones"
+  },
+  {
+   "id": 50,
+   "texto": "Determina el resultado de $g(x) - f(x)$\n\nConsidera:\n$f(x) = 2x - 3y + 5$\n$g(x) = 7x + 5y - 11$",
+   "opciones": {
+    "A": "$9x + 2y - 6$",
+    "B": "$5x + 8y - 16$",
+    "C": "$5x - 8y + 16$",
+    "D": "$9x - 2y + 6$"
+   },
+   "clave": "B",
+   "tema": "Operaciones con funciones"
+  },
+  {
+   "id": 51,
+   "texto": "Un edificio hace una sombra como se muestra en la imagen. ¿Cuál es la altura del edificio?",
+   "opciones": {
+    "A": "$\\frac{4}{\\sqrt{3}}$ m",
+    "B": "2 m",
+    "C": "8 m",
+    "D": "$\\frac{\\sqrt{3}}{4}$ m"
+   },
+   "clave": "A",
+   "tema": "Trigonometría aplicada",
+   "figura": "/imagenes_unam-a4-2/q51_edificio.svg"
+  },
+  {
+   "id": 52,
+   "texto": "Un poste proyecta una sombra de 1.5 m de longitud en el momento en que el ángulo de elevación del sol es de 60°. ¿Cuál es la altura del poste?\n\nConsidera:\nSen 60° = $\\frac{\\sqrt{3}}{2}$\nCos 60° = $\\frac{1}{2}$\nTan 60° = $\\sqrt{3}$",
+   "opciones": {
+    "A": "$\\frac{3\\sqrt{3}}{2}$ m",
+    "B": "$\\frac{3}{4}$ m",
+    "C": "$\\frac{3}{8}$ m",
+    "D": "$\\frac{3\\sqrt{3}}{4}$ m"
+   },
+   "clave": "A",
+   "tema": "Trigonometría: altura con tangente"
+  },
+  {
+   "id": 53,
+   "texto": "Determina el dominio de la siguiente función.\n\n$f(x) = \\log(x)$",
+   "opciones": {
+    "A": "$[0, \\infty]$",
+    "B": "$(0, \\infty]$",
+    "C": "$[0, \\infty)$",
+    "D": "$(0, \\infty)$"
+   },
+   "clave": "D",
+   "tema": "Dominio de función logarítmica"
+  },
+  {
+   "id": 54,
+   "texto": "Determina el dominio de la función\n$y = \\log(x - 2)$",
+   "opciones": {
+    "A": "$(2, \\infty)$",
+    "B": "$[2, \\infty)$",
+    "C": "$(-\\infty, 2)$",
+    "D": "$(-\\infty, 2]$"
+   },
+   "clave": "A",
+   "tema": "Dominio de función logarítmica"
+  },
+  {
+   "id": 55,
+   "texto": "Calcula la distancia entre los puntos P (−1, 1) y Q (1, −1)",
+   "opciones": {
+    "A": "$\\sqrt{8}$",
+    "B": "2",
+    "C": "$\\sqrt{2}$",
+    "D": "4"
+   },
+   "clave": "A",
+   "tema": "Distancia entre dos puntos"
+  },
+  {
+   "id": 56,
+   "texto": "¿Cuál es la distancia entre los puntos A (1, 1) y B (−1, −1) en el plano cartesiano?",
+   "opciones": {
+    "A": "$2\\sqrt{2}$",
+    "B": "$4\\sqrt{2}$",
+    "C": "2",
+    "D": "4"
+   },
+   "clave": "A",
+   "tema": "Distancia entre dos puntos"
+  },
+  {
+   "id": 57,
+   "texto": "¿Cuál de las siguientes ecuaciones corresponde a una circunferencia con centro en el origen y radio 2?",
+   "opciones": {
+    "A": "$x^2 + y^2 - 4 = 0$",
+    "B": "$x^2 + y^2 - 2 = 0$",
+    "C": "$x^2 - y^2 - 2 = 0$",
+    "D": "$x^2 - y^2 - 4 = 0$"
+   },
+   "clave": "A",
+   "tema": "Ecuación de la circunferencia"
+  },
+  {
+   "id": 58,
+   "texto": "Ecuación que corresponde a una circunferencia de radio = $\\sqrt{2}$ y centro en C (0, 0)",
+   "opciones": {
+    "A": "$x^2 - y^2 = \\sqrt{2}$",
+    "B": "$x^2 + y^2 = \\sqrt{2}$",
+    "C": "$x^2 - y^2 = 2$",
+    "D": "$x^2 + y^2 = 2$"
+   },
+   "clave": "D",
+   "tema": "Ecuación de la circunferencia"
+  },
+  {
+   "id": 59,
+   "texto": "La expresión $x = 4y^2 + 8y + 2$, geométricamente representa una",
+   "opciones": {
+    "A": "circunferencia.",
+    "B": "hipérbola.",
+    "C": "elipse.",
+    "D": "parábola."
+   },
+   "clave": "D",
+   "tema": "Cónicas: parábola"
+  },
+  {
+   "id": 60,
+   "texto": "Determina el centro de una elipse con la siguiente ecuación.\n\n$\\frac{(x - 2)^2}{144} + \\frac{(y - 1)^2}{64} = 1$",
+   "opciones": {
+    "A": "(8, 12)",
+    "B": "(2, 1)",
+    "C": "(1, 2)",
+    "D": "(12, 8)"
+   },
+   "clave": "B",
+   "tema": "Centro de una elipse"
+  },
+  {
+   "id": 61,
+   "texto": "Lugar geométrico en el plano cartesiano en el que el valor absoluto de la diferencia de sus distancias a dos puntos fijos en el mismo plano resulta siempre igual a una constante, positiva y menor que la distancia entre dichos puntos fijos.",
+   "opciones": {
+    "A": "Circunferencia.",
+    "B": "Parábola.",
+    "C": "Elipse.",
+    "D": "Hipérbola."
+   },
+   "clave": "D",
+   "tema": "Definición de hipérbola"
+  },
+  {
+   "id": 62,
+   "texto": "¿Qué tipo de cónica representa la ecuación $y^2 + 4x + 2y + 16 = 0$?",
+   "opciones": {
+    "A": "Parábola con vértice en el origen.",
+    "B": "Elipse con centro fuera del origen.",
+    "C": "Elipse con centro en el origen.",
+    "D": "Parábola con vértice fuera del origen."
+   },
+   "clave": "D",
+   "tema": "Clasificación de cónicas"
+  },
+  {
+   "id": 63,
+   "texto": "Identifica la función de la lengua que predomina en el siguiente texto.\n\nNovedades de febrero y marzo:\nLiteratura, teatro, música, ciencia y mucho más...\nVisita, descarga, escucha y disfruta.\nwww.descargacultura.unam.mx",
+   "opciones": {
+    "A": "Metalingüística.",
+    "B": "Poética.",
+    "C": "Apelativa.",
+    "D": "Expresiva."
+   },
+   "clave": "C",
+   "tema": "Función apelativa de la lengua"
+  },
+  {
+   "id": 64,
+   "texto": "A partir del fragmento, elige la opción que ejemplifique la función poética de la lengua.\n\nSu luna de miel fue un largo escalofrío. Rubia, angelical y tímida, el carácter duro de su marido heló sus soñadas niñerías de novia. Ella lo quería mucho, sin embargo, a veces con ligero estremecimiento cuando volviendo de noche juntos por la calle, echaba una furtiva mirada a la alta estatura de Jordán, mudo desde hacía una hora. Él por su parte, la amaba profundamente, sin darlo a conocer.\n\nDurante tres meses –se había casado en abril– vivieron una dicha especial. Sin duda hubiera ella deseado menos severidad en ese rígido cielo de amor, más expansiva e incauta ternura; pero el impasible semblante de su marido la contenía siempre.",
+   "opciones": {
+    "A": "Vivieron una dicha especial.",
+    "B": "Rubia, angelical y tímida.",
+    "C": "Su luna de miel fue un largo escalofrío.",
+    "D": "La amaba profundamente, sin darlo a conocer."
+   },
+   "clave": "C",
+   "tema": "Función poética de la lengua"
+  },
+  {
+   "id": 65,
+   "texto": "Identifica la forma del discurso que predomina en el siguiente ejemplo.\n\nPor fin pensó que la única forma de conocer su propio valor estaba en la opinión de la gente y comenzó a peinarse y a vestirse para saber si los demás la aprobaban y reconocían que era una rana auténtica.",
+   "opciones": {
+    "A": "Argumentativa.",
+    "B": "Descriptiva.",
+    "C": "Emotiva.",
+    "D": "Narrativa."
+   },
+   "clave": "D",
+   "tema": "Formas del discurso: narrativa"
+  },
+  {
+   "id": 66,
+   "texto": "¿Qué forma del discurso predomina en el siguiente párrafo?\n\nSi bien la educación básica no alcanza una cobertura universal en los estratos de menores ingresos, debe ponerse énfasis en los aspectos de calidad y equidad, otorgando mayores oportunidades educativas a los niños, niñas y adolescentes de los estratos bajos y medios. Ello implica dar continuidad al proceso educativo, mejorar la eficiencia interna del sistema – reduciendo el ingreso tardío y la reprobación–, y llevar a cabo políticas tendientes a aumentar la educación secundaria.",
+   "opciones": {
+    "A": "Sintomática.",
+    "B": "Expositiva.",
+    "C": "Argumentativa.",
+    "D": "Descriptiva."
+   },
+   "clave": "C",
+   "tema": "Discurso argumentativo"
+  },
+  {
+   "id": 67,
+   "texto": "Lee el siguiente texto y contesta las siguientes 5 preguntas.\n\nEl ser humano ha generado 8.300 millones de toneladas de plástico\n\n(1) Los seres humanos hemos producido 8.300 millones de toneladas de plástico desde que su producción empezó a generalizarse en los años 50, una cifra que resulta equivalente al peso de 80 millones de ballenas azules o 1.000 millones de elefantes.\n\n(2) Así lo cuantifica un estudio publicado en la revista Science Advances cuyo objetivo era analizar de manera objetiva la producción, el uso y el destino final de todos los plásticos fabricados por el hombre. Y las cifras resultan apabullantes.\n\n(3) El plástico producido a lo largo de la historia empezó a generalizarse hacia 1950 y desde entonces no ha dejado de crecer. Si en 2015 se produjeron 380 millones de toneladas, las proyecciones indican que para 2050, habrá 12.000 millones de toneladas de plástico en vertederos o en el medio ambiente.\n\n(4) La vida útil de los plásticos es muy corta. La mayor parte de los producidos se utilizan en empaques, empaquetados. Los productos con mayor tiempo de vida son los de construcción.\n\n(5) El estudio señala que el 30% del plástico producido a lo largo de la historia sigue en uso y de los 5.800 millones de toneladas que ya no se usan, solo el 9% fue reciclado, el 12% se incineró y el 79% permanece acumulado en vertederos o en el medio ambiente.\n\n(6) \"La mayoría de los plásticos no son biodegradables, así que los residuos plásticos que los seres humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar de manera crítica acerca de los materiales que usamos y sobre nuestras prácticas de gestión de residuos\", asegura Jenna Jambeck, coautora del estudio e investigadora de la Universidad de Georgia.\n\nAdaptación del artículo de Cristina Sánchez, 2019.\n\n¿Cuál de las siguientes opciones corresponde a la idea principal del texto?",
+   "opciones": {
+    "A": "La vida útil del plástico es muy corta y su mayor mercado está en el sector del empaquetado.",
+    "B": "A partir de los años 50 ha crecido la fabricación a gran escala de productos hechos a base de plástico.",
+    "C": "El plástico producido en las últimas décadas se puede comparar con 80 millones de ballenas azules.",
+    "D": "Es importante aprender a gestionar los residuos plásticos porque son una gran amenaza en el futuro."
+   },
+   "clave": "D",
+   "tema": "Idea principal del texto"
+  },
+  {
+   "id": 68,
+   "texto": "El ser humano ha generado 8.300 millones de toneladas de plástico\n\n(1) Los seres humanos hemos producido 8.300 millones de toneladas de plástico desde que su producción empezó a generalizarse en los años 50, una cifra que resulta equivalente al peso de 80 millones de ballenas azules o 1.000 millones de elefantes.\n\n(2) Así lo cuantifica un estudio publicado en la revista Science Advances cuyo objetivo era analizar de manera objetiva la producción, el uso y el destino final de todos los plásticos fabricados por el hombre. Y las cifras resultan apabullantes.\n\n(3) El plástico producido a lo largo de la historia empezó a generalizarse hacia 1950 y desde entonces no ha dejado de crecer. Si en 2015 se produjeron 380 millones de toneladas, las proyecciones indican que para 2050, habrá 12.000 millones de toneladas de plástico en vertederos o en el medio ambiente.\n\n(4) La vida útil de los plásticos es muy corta. La mayor parte de los producidos se utilizan en empaques, empaquetados. Los productos con mayor tiempo de vida son los de construcción.\n\n(5) El estudio señala que el 30% del plástico producido a lo largo de la historia sigue en uso y de los 5.800 millones de toneladas que ya no se usan, solo el 9% fue reciclado, el 12% se incineró y el 79% permanece acumulado en vertederos o en el medio ambiente.\n\n(6) \"La mayoría de los plásticos no son biodegradables, así que los residuos plásticos que los seres humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar de manera crítica acerca de los materiales que usamos y sobre nuestras prácticas de gestión de residuos\", asegura Jenna Jambeck, coautora del estudio e investigadora de la Universidad de Georgia.\n\nAdaptación del artículo de Cristina Sánchez, 2019.\n\nDe acuerdo al texto, las prácticas de gestión de residuos se refieren a que",
+   "opciones": {
+    "A": "con el paso del tiempo nos hemos hecho más dependientes del plástico sin importar las consecuencias ocasionadas al ambiente.",
+    "B": "se deben crear más grupos de investigación que examinen las características de los desechos orgánicos.",
+    "C": "debemos conocer las características de la basura que generamos para clasificarla y reciclarla adecuadamente.",
+    "D": "los bajos precios del plástico generan una gran cantidad de desechos que tardan muchos años en biodegradarse."
+   },
+   "clave": "C",
+   "tema": "Comprensión lectora"
+  },
+  {
+   "id": 69,
+   "texto": "El ser humano ha generado 8.300 millones de toneladas de plástico\n\n(1) Los seres humanos hemos producido 8.300 millones de toneladas de plástico desde que su producción empezó a generalizarse en los años 50, una cifra que resulta equivalente al peso de 80 millones de ballenas azules o 1.000 millones de elefantes.\n\n(2) Así lo cuantifica un estudio publicado en la revista Science Advances cuyo objetivo era analizar de manera objetiva la producción, el uso y el destino final de todos los plásticos fabricados por el hombre. Y las cifras resultan apabullantes.\n\n(3) El plástico producido a lo largo de la historia empezó a generalizarse hacia 1950 y desde entonces no ha dejado de crecer. Si en 2015 se produjeron 380 millones de toneladas, las proyecciones indican que para 2050, habrá 12.000 millones de toneladas de plástico en vertederos o en el medio ambiente.\n\n(4) La vida útil de los plásticos es muy corta. La mayor parte de los producidos se utilizan en empaques, empaquetados. Los productos con mayor tiempo de vida son los de construcción.\n\n(5) El estudio señala que el 30% del plástico producido a lo largo de la historia sigue en uso y de los 5.800 millones de toneladas que ya no se usan, solo el 9% fue reciclado, el 12% se incineró y el 79% permanece acumulado en vertederos o en el medio ambiente.\n\n(6) \"La mayoría de los plásticos no son biodegradables, así que los residuos plásticos que los seres humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar de manera crítica acerca de los materiales que usamos y sobre nuestras prácticas de gestión de residuos\", asegura Jenna Jambeck, coautora del estudio e investigadora de la Universidad de Georgia.\n\nAdaptación del artículo de Cristina Sánchez, 2019.\n\nLuego de leer el párrafo 6 se deduce que",
+   "opciones": {
+    "A": "las investigaciones sobre los daños que causa el plástico en el medio ambiente están encabezadas por especialistas estadounidenses.",
+    "B": "se deben tomar acciones para disminuir la producción cosmética, comercial e industrial del plástico a nivel mundial, a pesar de su bajo costo.",
+    "C": "el plástico ha aumentado considerablemente su producción a partir de los años 50 y sus residuos están acumulados en los vertederos o en el medio ambiente.",
+    "D": "el ser humano no tiene conocimiento sobre cómo debe reciclar el plástico porque no conoce sus características, por lo tanto, aumenta la contaminación ambiental."
+   },
+   "clave": "C",
+   "tema": "Inferencia a partir del texto"
+  },
+  {
+   "id": 70,
+   "texto": "El ser humano ha generado 8.300 millones de toneladas de plástico\n\n(1) Los seres humanos hemos producido 8.300 millones de toneladas de plástico desde que su producción empezó a generalizarse en los años 50, una cifra que resulta equivalente al peso de 80 millones de ballenas azules o 1.000 millones de elefantes.\n\n(2) Así lo cuantifica un estudio publicado en la revista Science Advances cuyo objetivo era analizar de manera objetiva la producción, el uso y el destino final de todos los plásticos fabricados por el hombre. Y las cifras resultan apabullantes.\n\n(3) El plástico producido a lo largo de la historia empezó a generalizarse hacia 1950 y desde entonces no ha dejado de crecer. Si en 2015 se produjeron 380 millones de toneladas, las proyecciones indican que para 2050, habrá 12.000 millones de toneladas de plástico en vertederos o en el medio ambiente.\n\n(4) La vida útil de los plásticos es muy corta. La mayor parte de los producidos se utilizan en empaques, empaquetados. Los productos con mayor tiempo de vida son los de construcción.\n\n(5) El estudio señala que el 30% del plástico producido a lo largo de la historia sigue en uso y de los 5.800 millones de toneladas que ya no se usan, solo el 9% fue reciclado, el 12% se incineró y el 79% permanece acumulado en vertederos o en el medio ambiente.\n\n(6) \"La mayoría de los plásticos no son biodegradables, así que los residuos plásticos que los seres humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar de manera crítica acerca de los materiales que usamos y sobre nuestras prácticas de gestión de residuos\", asegura Jenna Jambeck, coautora del estudio e investigadora de la Universidad de Georgia.\n\nAdaptación del artículo de Cristina Sánchez, 2019.\n\nLa preocupación de la investigadora de la Universidad de Georgia consiste en que",
+   "opciones": {
+    "A": "las estadísticas de la acumulación de plásticos van en aumento y no se trabaja para disminuir la contaminación.",
+    "B": "hay muchos productos elaborados a base de plástico como cosméticos y materiales para la construcción.",
+    "C": "el plástico no se biodegrada de ninguna manera y permanece a nuestro alrededor en forma de contaminante.",
+    "D": "los seres humanos no hacemos conciencia sobre los graves riesgos que implica la acumulación del plástico."
+   },
+   "clave": "C",
+   "tema": "Comprensión de texto"
+  },
+  {
+   "id": 71,
+   "texto": "El ser humano ha generado 8.300 millones de toneladas de plástico\n\n(1) Los seres humanos hemos producido 8.300 millones de toneladas de plástico desde que su producción empezó a generalizarse en los años 50, una cifra que resulta equivalente al peso de 80 millones de ballenas azules o 1.000 millones de elefantes.\n\n(2) Así lo cuantifica un estudio publicado en la revista Science Advances cuyo objetivo era analizar de manera objetiva la producción, el uso y el destino final de todos los plásticos fabricados por el hombre. Y las cifras resultan apabullantes.\n\n(3) El plástico producido a lo largo de la historia empezó a generalizarse hacia 1950 y desde entonces no ha dejado de crecer. Si en 2015 se produjeron 380 millones de toneladas, las proyecciones indican que para 2050, habrá 12.000 millones de toneladas de plástico en vertederos o en el medio ambiente.\n\n(4) La vida útil de los plásticos es muy corta. La mayor parte de los producidos se utilizan en empaques, empaquetados. Los productos con mayor tiempo de vida son los de construcción.\n\n(5) El estudio señala que el 30% del plástico producido a lo largo de la historia sigue en uso y de los 5.800 millones de toneladas que ya no se usan, solo el 9% fue reciclado, el 12% se incineró y el 79% permanece acumulado en vertederos o en el medio ambiente.\n\n(6) \"La mayoría de los plásticos no son biodegradables, así que los residuos plásticos que los seres humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar de manera crítica acerca de los materiales que usamos y sobre nuestras prácticas de gestión de residuos\", asegura Jenna Jambeck, coautora del estudio e investigadora de la Universidad de Georgia.\n\nAdaptación del artículo de Cristina Sánchez, 2019.\n\nLa intención de la autora al escribir este texto es",
+   "opciones": {
+    "A": "comparar los diferentes tipos de contaminantes ambientales y sus consecuencias en el planeta.",
+    "B": "conocer las estadísticas de los residuos plásticos para ver cuánto han crecido en los últimos años.",
+    "C": "concientizar sobre el uso desmedido del plástico y mejorar la gestión de los desechos en el entorno.",
+    "D": "saber desde cuándo se originaron los desechos químicos y cómo se van degradando a largo plazo."
+   },
+   "clave": "C",
+   "tema": "Intención del autor"
+  },
+  {
+   "id": 72,
+   "texto": "Selecciona la opción que contenga la oración principal del siguiente párrafo.\n\nEl mercado de Tlatelolco asombró a Cortés por su perfección y magnitud. Aunque antes los mercados se establecían cada cinco días, éste funcionaba diario. Ahí llegaban productos de todos los sitios para vender y había todo lo que el hombre podría apetecer. Ahí todo se encontraba perfectamente ordenado por calles, según la naturaleza de las cosas exhibidas para la venta. Allí se reunía la gente, allí se comía y se bebía.",
+   "opciones": {
+    "A": "El mercado de Tlatelolco asombró a Cortés por su perfección y magnitud.",
+    "B": "Antes los mercados se establecían cada cinco días, pero éste funcionaba diario.",
+    "C": "Allí se reunía la gente, allí se comía y se bebía.",
+    "D": "Ahí todo se encontraba perfectamente ordenado por calles."
+   },
+   "clave": "A",
+   "tema": "Oración principal"
+  },
+  {
+   "id": 73,
+   "texto": "En el siguiente enunciado identifica la función de las palabras en mayúsculas.\n\nEN NUESTRO PAÍS la cultura sexual tiene gran relación con la religión católica.",
+   "opciones": {
+    "A": "Complemento directo.",
+    "B": "Complemento indirecto.",
+    "C": "Complemento circunstancial.",
+    "D": "Complemento adnominal."
+   },
+   "clave": "C",
+   "tema": "Complemento circunstancial"
+  },
+  {
+   "id": 74,
+   "texto": "Selecciona el grupo de conectores que permite la coherencia del siguiente fragmento.\n\nEl Banco de México ya es autónomo __________ debe seguir siéndolo. El Congreso debe preocuparse por establecer la relación jurídica y política con esa institución, __________ su operación no esté disociada de los mecanismos de representación __________ son inherentes a la función pública.",
+   "opciones": {
+    "A": "por lo que — así — por ende",
+    "B": "por ello — dado que — los cuales",
+    "C": "así que — para que — pues",
+    "D": "y — de modo que — que"
+   },
+   "clave": "D",
+   "tema": "Conectores textuales"
+  },
+  {
+   "id": 75,
+   "texto": "Identifica el párrafo redactado correctamente.",
+   "opciones": {
+    "A": "Los campos magnéticos solar y terrestre interaccionan hasta que este último se deforma. Como cualquier ente en el universo, la Tierra responde de varias maneras ante el impacto de la actividad solar; en este caso lo hace mediante la actividad geomagnética (perturbaciones en el campo magnético terrestre).",
+    "B": "El campo magnético solar y terrestre se encuentran interaccionando hasta que este último (el campo magnético terrestre) termina deformándose. La Tierra, como cualquier ente en el universo, responde de varias maneras ante el impacto de la actividad solar; en este caso lo hace mediante perturbaciones en el campo magnético terrestre (es decir actividad geomagnética).",
+    "C": "Ante el impacto de la actividad solar (como cualquier ente en el universo), la Tierra responde de varias maneras; en este caso lo hace mediante la actividad geomagnética (perturbaciones en el campo magnético terrestre). Ello sucede porque los campos magnéticos solar y terrestre interaccionan hasta que el último se deforma.",
+    "D": "El campo magnético solar y el campo magnético terrestre interaccionan hasta que éste se deforma. Como cualquier ente en el universo, la Tierra responde de varias maneras ante el impacto de la actividad solar. Haciéndolo mediante la actividad geomagnética (esto es, perturbaciones que acontecen en el campo magnético terrestre)."
+   },
+   "clave": "A",
+   "tema": "Redacción correcta"
+  },
+  {
+   "id": 76,
+   "texto": "¿Cuál de los siguientes párrafos está redactado correctamente?",
+   "opciones": {
+    "A": "En la reunión se abordarán tres asuntos: diseñar un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; y buscar proveedores más cumplidos. También se harán propuestas para abrir nuevas sucursales.",
+    "B": "En la reunión se abordarán tres asuntos: cómo diseñar un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; y la búsqueda de proveedores más cumplidos. Finalmente, se harán propuestas para abrir nuevas sucursales.",
+    "C": "En la reunión se abordarán tres asuntos: el diseño de un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; y la búsqueda de proveedores más cumplidos. También se harán propuestas para abrir nuevas sucursales.",
+    "D": "En la reunión se abordarán tres asuntos: el diseño de un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; buscar proveedores más cumplidos; y también se harán propuestas para abrir nuevas sucursales."
+   },
+   "clave": "C",
+   "tema": "Redacción de párrafos"
+  },
+  {
+   "id": 77,
+   "texto": "Selecciona el sinónimo de las palabras en mayúsculas.\n\nMarta veía los VESTIGIOS de un papel consumido por las llamas.",
+   "opciones": {
+    "A": "Pedazos.",
+    "B": "Restos.",
+    "C": "Signos.",
+    "D": "Resultados."
+   },
+   "clave": "B",
+   "tema": "Sinónimos"
+  },
+  {
+   "id": 78,
+   "texto": "Selecciona la opción que contiene únicamente palabras homófonas.",
+   "opciones": {
+    "A": "Numero — Número — Numeró",
+    "B": "Ixtacíhuatl — Iztacíhuatl — Iztaccíhuatl",
+    "C": "Solo — Sólo — Esté — Éste",
+    "D": "Echo — Hecho — Uno — Huno"
+   },
+   "clave": "D",
+   "tema": "Palabras homófonas"
+  },
+  {
+   "id": 79,
+   "texto": "Selecciona la opción con las grafías que complementan correctamente el enunciado.\n\nLos niños que no ha___an hecho la tarea a___er porque no o___eron la indicación, tendrán que ha___ar el significado de las palabras en un diccionario de términos Caste___anos.",
+   "opciones": {
+    "A": "y — y — y — ll — ll",
+    "B": "ll — ll — ll — ll — y",
+    "C": "y — y — y — y — ll",
+    "D": "y — ll — y — ll — y"
+   },
+   "clave": "A",
+   "tema": "Ortografía: uso de y/ll"
+  },
+  {
+   "id": 80,
+   "texto": "Escoge la opción que tiene la puntuación correcta.",
+   "opciones": {
+    "A": "Aunque parecía que Tláloc, dios azteca de la lluvia, favorece sólo a algunos y sólo a veces, la posibilidad de beber agua de cielo no se esfuma durante los meses que no llueve, ni en las zonas de sequía, porque los sistemas de almacenamiento se adaptan a cada zona y etapa.",
+    "B": "Aunque parecía, que Tláloc, dios azteca de la lluvia, favorece sólo a algunos; y sólo a veces, la posibilidad de beber agua de cielo, no se esfuma durante los meses que no llueve, ni en las zonas de sequía, porque los sistemas de almacenamiento se adaptan a cada zona y etapa.",
+    "C": "Aunque parecía que Tláloc, dios azteca de la lluvia, favorece, sólo a algunos y, sólo a veces, la posibilidad de beber agua de cielo, no se esfuma, durante los meses que, no llueve, ni en las zonas de sequía, porque los sistemas de almacenamiento se adaptan a cada zona y etapa.",
+    "D": "Aunque parecía que Tláloc, dios azteca de la lluvia, favorece sólo a algunos y sólo a veces, la posibilidad, de beber agua, de cielo, no se esfuma durante los meses que no llueve, ni en las zonas de sequía, porque los sistemas, de almacenamiento, se adaptan a cada zona y etapa."
+   },
+   "clave": "A",
+   "tema": "Puntuación correcta"
+  }
+ ]
+}

@@ -1,0 +1,494 @@
+{
+ "lote": "unam-a2-4__g01",
+ "examen": "unam-a2-4.json",
+ "titulo": "UNAM Área 2 - 4",
+ "materia": "Física + Literatura + Química + Geografía",
+ "preguntas": [
+  {
+   "id": 1,
+   "texto": "El desplazamiento de un ferrocarril se describe en la siguiente gráfica (posición $x$ – tiempo $t$). A partir de los datos mostrados se puede deducir que el movimiento es rectilíneo con",
+   "opciones": {
+    "A": "aceleración constante.",
+    "B": "aceleración variable.",
+    "C": "velocidad constante.",
+    "D": "velocidad variable."
+   },
+   "clave": "C",
+   "tema": "Movimiento rectilíneo — gráfica",
+   "figura": "/imagenes_unam-a2-4/q1_grafica.svg"
+  },
+  {
+   "id": 2,
+   "texto": "Con base en el siguiente sistema de vectores, indica la magnitud del vector resultante en N. (Usa la tabla de senos y cosenos mostrada en la figura.)",
+   "opciones": {
+    "A": "$\\sqrt{75.8}$",
+    "B": "$\\sqrt{23.8}$",
+    "C": "$\\sqrt{650}$",
+    "D": "$\\sqrt{101.1}$"
+   },
+   "clave": "D",
+   "tema": "Suma de vectores",
+   "figura": "/imagenes_unam-a2-4/q2_vectores.svg"
+  },
+  {
+   "id": 3,
+   "texto": "Sobre un objeto de $100\\,\\text{kg}$ se aplican dos fuerzas (una de $20\\,\\text{N}$ y otra de $30\\,\\text{N}$) con la misma dirección pero de sentido contrario, ¿cuál es la magnitud de la aceleración del objeto?",
+   "opciones": {
+    "A": "$0.1\\,\\dfrac{\\text{m}}{\\text{s}^2}$",
+    "B": "$0.2\\,\\dfrac{\\text{m}}{\\text{s}^2}$",
+    "C": "$0.3\\,\\dfrac{\\text{m}}{\\text{s}^2}$",
+    "D": "$0.5\\,\\dfrac{\\text{m}}{\\text{s}^2}$"
+   },
+   "clave": "A",
+   "tema": "Segunda ley de Newton"
+  },
+  {
+   "id": 4,
+   "texto": "Un objeto se suelta desde el reposo a una altura $H$ sobre el suelo. Determina la relación matemática que permita obtener la rapidez que tendrá el objeto al momento que ha caído una cierta distancia $h$.",
+   "opciones": {
+    "A": "$v=(2gh)^{1/2}$",
+    "B": "$v=[2g(H-h)]^{1/2}$",
+    "C": "$v=(2gH)^{1/2}$",
+    "D": "$v=[2g(h-H)]^{1/2}$"
+   },
+   "clave": "A",
+   "tema": "Energía mecánica — conservación"
+  },
+  {
+   "id": 5,
+   "texto": "La bola A impacta con una rapidez de $6\\,\\dfrac{\\text{m}}{\\text{s}}$ a una bola B que está en reposo, como se muestra en la figura. Si la bola B tiene el doble de masa que la bola A, ¿cuál es la rapidez con la que sale cada bola después del impacto? Considera que el choque es totalmente elástico.",
+   "opciones": {
+    "A": "$U_A=-2\\,\\dfrac{\\text{m}}{\\text{s}};\\ U_B=4\\,\\dfrac{\\text{m}}{\\text{s}}$",
+    "B": "$U_A=4\\,\\dfrac{\\text{m}}{\\text{s}};\\ U_B=2\\,\\dfrac{\\text{m}}{\\text{s}}$",
+    "C": "$U_A=4\\,\\dfrac{\\text{m}}{\\text{s}};\\ U_B=-2\\,\\dfrac{\\text{m}}{\\text{s}}$",
+    "D": "$U_A=2\\,\\dfrac{\\text{m}}{\\text{s}};\\ U_B=4\\,\\dfrac{\\text{m}}{\\text{s}}$"
+   },
+   "clave": "A",
+   "tema": "Choque elástico",
+   "figura": "/imagenes_unam-a2-4/q5_choque.svg"
+  },
+  {
+   "id": 6,
+   "texto": "Un sistema está en equilibrio térmico cuando",
+   "opciones": {
+    "A": "en un proceso su temperatura no varía.",
+    "B": "su temperatura es igual a la de otro sistema con el que está en contacto térmico.",
+    "C": "se calienta por medio de trabajo.",
+    "D": "su presión y su masa permanecen constantes."
+   },
+   "clave": "B",
+   "tema": "Equilibrio térmico"
+  },
+  {
+   "id": 7,
+   "texto": "Una de las suposiciones de la teoría cinética de los gases es que las moléculas de un gas",
+   "opciones": {
+    "A": "carecen de movimiento.",
+    "B": "se mueven lentamente.",
+    "C": "son rígidas.",
+    "D": "son deformables."
+   },
+   "clave": "C",
+   "tema": "Teoría cinética de los gases"
+  },
+  {
+   "id": 8,
+   "texto": "Una cuerda está atada en un extremo a un punto fijo y en el otro a un vibrador, de manera que se produce un tren de ondas, como el que se muestra en la figura. ¿Cuál es la longitud de onda de la onda estacionaria?",
+   "opciones": {
+    "A": "$4.5\\,\\dfrac{\\text{cm}}{\\text{ciclo}}$",
+    "B": "$90\\,\\dfrac{\\text{cm}}{\\text{ciclo}}$",
+    "C": "$9\\,\\dfrac{\\text{cm}}{\\text{ciclo}}$",
+    "D": "$18\\,\\dfrac{\\text{cm}}{\\text{ciclo}}$"
+   },
+   "clave": "D",
+   "tema": "Ondas estacionarias — longitud de onda",
+   "figura": "/imagenes_unam-a2-4/q8_cuerda.svg"
+  },
+  {
+   "id": 9,
+   "texto": "Un aislante eléctrico es un material que",
+   "opciones": {
+    "A": "no contiene ninguna corriente eléctrica.",
+    "B": "hace difícil el flujo de corriente eléctrica.",
+    "C": "no puede ser un elemento químicamente puro.",
+    "D": "tiene más electrones que protones en su superficie."
+   },
+   "clave": "B",
+   "tema": "Aislantes eléctricos"
+  },
+  {
+   "id": 10,
+   "texto": "Cierto alambre tiene una resistencia $R_1$. ¿Cuál es la resistencia de otro alambre del mismo material pero con la mitad de la longitud y la mitad del diámetro del primero?",
+   "opciones": {
+    "A": "$\\dfrac{R_1}{4}$",
+    "B": "$\\dfrac{R_1}{2}$",
+    "C": "$R_1$",
+    "D": "$2R_1$"
+   },
+   "clave": "D",
+   "tema": "Resistencia equivalente"
+  },
+  {
+   "id": 11,
+   "texto": "Isaac Newton consideró a la luz como una",
+   "opciones": {
+    "A": "corriente de partículas materiales emitidas por una fuente luminosa.",
+    "B": "onda transversal que al pasar por una abertura provoca explicando la refracción.",
+    "C": "marea de rayos que al rodear un obstáculo explican la difracción.",
+    "D": "superposición de ondas que explican la interferencia."
+   },
+   "clave": "A",
+   "tema": "Naturaleza dual de la luz"
+  },
+  {
+   "id": 12,
+   "texto": "¿En qué áreas recibió Madame Curie el premio Nobel?",
+   "opciones": {
+    "A": "Física y Biología.",
+    "B": "Medicina y Química.",
+    "C": "Química y Biología.",
+    "D": "Física y Química."
+   },
+   "clave": "D",
+   "tema": "Premio Nobel — Madame Curie"
+  },
+  {
+   "id": 13,
+   "texto": "La cabalidad es una propiedad del texto, consiste en que este sea completo y tenga",
+   "opciones": {
+    "A": "unidad de sentido.",
+    "B": "datos comprobables.",
+    "C": "elementos de análisis.",
+    "D": "opinión del autor."
+   },
+   "clave": "A",
+   "tema": "Cabalidad — propiedad textual"
+  },
+  {
+   "id": 14,
+   "texto": "Dar información, emitir opinión y persuadir al lector son características del texto",
+   "opciones": {
+    "A": "periodístico.",
+    "B": "científico.",
+    "C": "popular.",
+    "D": "literario."
+   },
+   "clave": "A",
+   "tema": "Texto periodístico — opinión"
+  },
+  {
+   "id": 15,
+   "texto": "El autor del texto ________ lo escribe con intención de ser representado.",
+   "opciones": {
+    "A": "periodístico",
+    "B": "poético",
+    "C": "dramático",
+    "D": "narrativo"
+   },
+   "clave": "C",
+   "tema": "Discurso periodístico"
+  },
+  {
+   "id": 16,
+   "texto": "¿A qué género corresponde el siguiente fragmento?\n\nArturo, el noble rey de Bretaña, cuyas proezas son para nosotros ejemplo de valor y cortesía, al llegar la fiesta que llamamos Pentecostés, la celebró con todo el fasto propio de la realeza, reuniendo a su corte en Caraduel, en el país de Gales.",
+   "opciones": {
+    "A": "Épico.",
+    "B": "Lírico.",
+    "C": "Tragedia.",
+    "D": "Dramático."
+   },
+   "clave": "A",
+   "tema": "Géneros literarios"
+  },
+  {
+   "id": 17,
+   "texto": "Los autores que conforman una corriente literaria",
+   "opciones": {
+    "A": "comparten características en cuanto a su forma de escribir y el interés por desarrollar temas similares; además, viven en una misma época.",
+    "B": "heredan el estilo de quienes los precedieron, comparten una forma de escribir y abordan un género determinado, como la dramaturgia o la novela.",
+    "C": "heredan el estilo de quienes los precedieron, comparten una forma de escribir y muestran interés por temas similares.",
+    "D": "abordan un género determinado, como la dramaturgia o la novela, para desarrollar temas similares y viven en una misma época."
+   },
+   "clave": "A",
+   "tema": "Corriente literaria — definición"
+  },
+  {
+   "id": 18,
+   "texto": "Corriente literaria que surge en la segunda mitad del siglo XIX, en la cual predomina la objetividad del narrador y la descripción.",
+   "opciones": {
+    "A": "Romanticismo.",
+    "B": "Clasicismo.",
+    "C": "Realismo.",
+    "D": "Expresionismo."
+   },
+   "clave": "C",
+   "tema": "Corriente literaria — siglo XIX"
+  },
+  {
+   "id": 19,
+   "texto": "Son representantes de la Literatura contemporánea.",
+   "opciones": {
+    "A": "Mariana Enríquez y José Saramago.",
+    "B": "Frank Kafka y Charlotte Brontë.",
+    "C": "Nicolás Gógol y Jane Austen.",
+    "D": "Mary Shelley y Luigi Pirandello."
+   },
+   "clave": "A",
+   "tema": "Literatura contemporánea"
+  },
+  {
+   "id": 20,
+   "texto": "Identifica la respuesta que presenta las características esenciales del cuento.",
+   "opciones": {
+    "A": "Subgénero con amplio número de personajes, trama simple y de gran extensión.",
+    "B": "Subgénero en prosa que plantea un solo problema y contiene un final sorpresivo.",
+    "C": "Texto literario cuyos personajes poseen hondura psicológica y de trama más o menos compleja.",
+    "D": "Texto de carácter expositivo en el que se narra una breve historia dialogada y de carácter ficticio."
+   },
+   "clave": "B",
+   "tema": "Características del cuento"
+  },
+  {
+   "id": 21,
+   "texto": "Identifica la ficha hemerográfica.",
+   "opciones": {
+    "A": "Dosal Gómez, M. R., et al. (2001). Lengua española. Español IV. Patria Cultural.",
+    "B": "García Márquez, G. (2003). \"Cómo era con mis compañeros muertos en el mar\" en Relato de un náufrago. De Bolsillo.",
+    "C": "Peguero, R. (2005, 31 septiembre). \"La filosofía de lucro, el gran mito de la edad contemporánea: Roa Bastos\". El país.",
+    "D": "Ocampo de Gómez, A. M. y Prado Velázquez, E. (1976). Diccionario de escritores mexicanos. UNAM, Centro de Estudios Literarios."
+   },
+   "clave": "C",
+   "tema": "Ficha hemerográfica"
+  },
+  {
+   "id": 22,
+   "texto": "¿De qué tipo es la siguiente ficha?\n\nTrejo Rivas, A. y Rosa Pirres, A. (2007). Rimas, rondas y canciones. Editores Mexicanos Unidos.\n\nConformado por apenas 92 páginas este texto de divulgación (sin mayor aparato crítico) tiene, sin embargo, como mérito principal, presentar (en su sección \"Rondas\") versiones tradicionales, extrañas o antiguas de canciones infantiles que hoy se consideran de moda. Ejemplo de ello es una versión de la muy conocida \"Chuchugua\", que se encuentra en las páginas 63 – 64.",
+   "opciones": {
+    "A": "Comentario.",
+    "B": "Textual.",
+    "C": "Paráfrasis.",
+    "D": "Resumen."
+   },
+   "clave": "A",
+   "tema": "Ficha de trabajo — comentario"
+  },
+  {
+   "id": 23,
+   "texto": "El elemento con un número atómico $17$ y configuración electrónica $1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^5$ se ubica en la familia",
+   "opciones": {
+    "A": "III A",
+    "B": "III B",
+    "C": "II A",
+    "D": "VII A"
+   },
+   "clave": "D",
+   "tema": "Configuración electrónica — familia"
+  },
+  {
+   "id": 24,
+   "texto": "Una botella contiene $X$ átomos de carbono que pesan $6.0\\,\\text{g}$. Si se desea que esta botella contenga un número igual de átomos de níquel, ¿qué masa de níquel se debe tener?",
+   "opciones": {
+    "A": "$52.7\\,\\text{g}$",
+    "B": "$1.23\\,\\text{g}$",
+    "C": "$12.3\\,\\text{g}$",
+    "D": "$29.3\\,\\text{g}$"
+   },
+   "clave": "D",
+   "tema": "Mol — número de moléculas"
+  },
+  {
+   "id": 25,
+   "texto": "De las siguientes representaciones, identifica en dónde la molécula de agua forma un puente de hidrógeno.",
+   "opciones": {
+    "A": "Estructura A",
+    "B": "Estructura B",
+    "C": "Estructura C",
+    "D": "Estructura D"
+   },
+   "clave": "B",
+   "tema": "Enlace de hidrógeno",
+   "figura": "/imagenes_unam-a2-4/q25_enlace.svg"
+  },
+  {
+   "id": 26,
+   "texto": "En la reacción entre el amoniaco $(NH_3)$ y el trifluoruro de boro $(BF_3)$ el nitrógeno dona un par de electrones al boro por lo que de acuerdo a la teoría ácido-base de Lewis el $NH_3$ es ________ y $BF_3$ es ________.",
+   "opciones": {
+    "A": "anfótero — un ácido",
+    "B": "una base — anfótero",
+    "C": "una base — un ácido",
+    "D": "un ácido — una base"
+   },
+   "clave": "C",
+   "tema": "Reacción ácido-base"
+  },
+  {
+   "id": 27,
+   "texto": "¿Cuál es la concentración mol/L de una disolución que contiene $20\\,\\text{g}$ de NaOH en $2\\,\\text{L}$ de disolución?",
+   "opciones": {
+    "A": "$0.25$",
+    "B": "$0.50$",
+    "C": "$0.75$",
+    "D": "$1.00$"
+   },
+   "clave": "A",
+   "tema": "Concentración molar"
+  },
+  {
+   "id": 28,
+   "texto": "¿Qué tipo de compuesto se forma al reaccionar el calcio y el oxígeno?",
+   "opciones": {
+    "A": "Un ácido.",
+    "B": "Un carbonato.",
+    "C": "Un óxido ácido.",
+    "D": "Un óxido básico."
+   },
+   "clave": "D",
+   "tema": "Óxidos"
+  },
+  {
+   "id": 29,
+   "texto": "Calcula el valor de entalpía de la reacción química que se representa a continuación.\n\n$H_2O+C\\rightarrow CO+H_2$\n\nConsidera:\n\n$2C+O_2\\rightarrow 2CO$, $\\Delta H°=-221\\,\\text{kJ}$\n\n$2H_2+O_2\\rightarrow 2H_2O$, $\\Delta H°=-483.6\\,\\text{kJ}$",
+   "opciones": {
+    "A": "$-131.3\\,\\text{kJ}$",
+    "B": "$+131.3\\,\\text{kJ}$",
+    "C": "$-352.3\\,\\text{kJ}$",
+    "D": "$+352.3\\,\\text{kJ}$"
+   },
+   "clave": "B",
+   "tema": "Entalpía de reacción"
+  },
+  {
+   "id": 30,
+   "texto": "El siguiente carbohidrato se clasifica como",
+   "opciones": {
+    "A": "aldotriosa.",
+    "B": "cetotriosa.",
+    "C": "aldotetrosa.",
+    "D": "cetotetrosa."
+   },
+   "clave": "C",
+   "tema": "Carbohidrato — clasificación",
+   "figura": "/imagenes_unam-a2-4/q30_aldehido.svg"
+  },
+  {
+   "id": 31,
+   "texto": "Son los dos grupos funcionales presentes en todos los aminoácidos.",
+   "opciones": {
+    "A": "$-COO-$ y $-CONH_2$",
+    "B": "$-CHO$ y $-CONH_2$",
+    "C": "$-CO-$ y $-NH_2$",
+    "D": "$-COOH$ y $-NH_2$"
+   },
+   "clave": "D",
+   "tema": "Aminoácidos — grupos funcionales"
+  },
+  {
+   "id": 32,
+   "texto": "En una reacción espontánea a cualquier temperatura, el valor $\\Delta H$ ($-$), por lo que",
+   "opciones": {
+    "A": "$\\Delta S(-)$ y $\\Delta G$ (+).",
+    "B": "$\\Delta S$ (+) y $\\Delta G$ (+).",
+    "C": "$\\Delta S$ (+) y $\\Delta G$ (-).",
+    "D": "$\\Delta S(-)$ y $\\Delta G$ (-)."
+   },
+   "clave": "C",
+   "tema": "Reacciones espontáneas"
+  },
+  {
+   "id": 33,
+   "texto": "Son compuestos orgánicos en donde todos sus carbonos presentan estructura tetraédrica.",
+   "opciones": {
+    "A": "Etino y butino.",
+    "B": "Etileno y benceno.",
+    "C": "Metano y propano.",
+    "D": "Etileno y propino."
+   },
+   "clave": "C",
+   "tema": "Compuestos orgánicos — estructura"
+  },
+  {
+   "id": 34,
+   "texto": "¿Qué tipo de reacción representa la polimerización del etileno?\n\n$CH_2=CH_2\\rightarrow [CH_2-CH_2]_n$",
+   "opciones": {
+    "A": "Adición.",
+    "B": "Condensación.",
+    "C": "Descomposición.",
+    "D": "Sustitución."
+   },
+   "clave": "A",
+   "tema": "Polimerización del eteno"
+  },
+  {
+   "id": 35,
+   "texto": "El efecto invernadero se produce por",
+   "opciones": {
+    "A": "disminución de clorofluorocarbonos en la atmósfera.",
+    "B": "disminución de la temperatura del suelo.",
+    "C": "aumento de partículas suspendidas totales.",
+    "D": "aumento en la cantidad de $CO_2$ atmosférico."
+   },
+   "clave": "D",
+   "tema": "Efecto invernadero"
+  },
+  {
+   "id": 36,
+   "texto": "Si en el huso horario $0°$ son las $20{:}00$ horas, ¿qué hora será en la Ciudad de Tijuana, México, cuyo huso horario es de $120°$ W?",
+   "opciones": {
+    "A": "$10{:}00\\,\\text{h}$.",
+    "B": "$11{:}00\\,\\text{h}$.",
+    "C": "$12{:}00\\,\\text{h}$.",
+    "D": "$13{:}00\\,\\text{h}$."
+   },
+   "clave": "C",
+   "tema": "Husos horarios"
+  },
+  {
+   "id": 37,
+   "texto": "El choque de la Placa de Cocos y la Norteamericana produce sismos que afectan principalmente a los estados de",
+   "opciones": {
+    "A": "Puebla, Morelos y Querétaro.",
+    "B": "Michoacán, Guerrero y Oaxaca.",
+    "C": "Sonora, Sinaloa y Chihuahua.",
+    "D": "Veracruz, Tabasco y Campeche."
+   },
+   "clave": "B",
+   "tema": "Placas tectónicas — Cocos"
+  },
+  {
+   "id": 38,
+   "texto": "Principal entidad federativa en México productora de cobre.",
+   "opciones": {
+    "A": "Coahuila.",
+    "B": "Sonora.",
+    "C": "San Luis Potosí.",
+    "D": "Guanajuato."
+   },
+   "clave": "B",
+   "tema": "México — entidades productoras"
+  },
+  {
+   "id": 39,
+   "texto": "El río que comunica a Moscú con el mar Caspio es",
+   "opciones": {
+    "A": "Ural.",
+    "B": "Volga.",
+    "C": "Lena.",
+    "D": "Duina."
+   },
+   "clave": "B",
+   "tema": "Hidrografía — ríos"
+  },
+  {
+   "id": 40,
+   "texto": "El ________ sirve para la industria pesada.",
+   "opciones": {
+    "A": "manganeso",
+    "B": "carbón",
+    "C": "zinc",
+    "D": "cobalto"
+   },
+   "clave": "B",
+   "tema": "Industria pesada"
+  }
+ ]
+}
