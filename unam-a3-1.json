@@ -25,7 +25,8 @@
               "C": "La poesía emociona al sensible.",
               "D": "Las golondrinas firman el pergamino del cielo."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La función poética aparece cuando el lenguaje llama la atención sobre su propia forma: metáforas, ritmo, imágenes. \"Las golondrinas firman el pergamino del cielo\" no informa nada literal: el cielo se vuelve pergamino y el vuelo de las aves, una firma; eso es una metáfora. Las otras tres opciones *hablan de* la poesía, pero con lenguaje llano e informativo (función referencial): mencionar la poesía no es hacer poesía."
           },
           {
             "id": 2,
@@ -38,7 +39,8 @@
               "C": "Demostración.",
               "D": "Descripción."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El párrafo se dedica a detallar de qué estaban hechos los platos: piedra caliza, fécula de papa y papel reciclado primero; almidón, agua y un polímero después. Enumerar los materiales, componentes y características de un objeto es **describir**. No es narración (B): no hay una historia con acciones que se suceden; el \"se fue perfeccionando\" solo sirve de puente entre las dos listas de materiales."
           },
           {
             "id": 3,
@@ -52,7 +54,8 @@
               "D": "Introducción al tema – referencias sobre el tema – datos – conclusión."
             },
             "answer": "A",
-            "context": "**Ciencia y filosofía**\n\nLa filosofía es la disciplina que por excelencia se ocupa del pensamiento. Los filósofos siguen siendo esos \"enamorados de la sabiduría\" cuya labor consiste en preguntarse cosas acerca de la vida y el mundo. Los científicos, por el contrario, son vistos como personajes que se ocupan de una labor más práctica: realizar experimentos para poner a prueba sus hipótesis sobre cómo funciona la naturaleza. Cuando un científico se enfrenta a una pregunta que no puede contestar, es frecuente que responda \"eso es muy filosófico\", dando a entender que no se debería perder el tiempo con ese tipo de temas. Sin embargo, la relación entre ciencia y filosofía es muy antigua y estrecha. De hecho, las diferentes ciencias surgieron históricamente como parte de la filosofía, y luego fueron independizándose conforme dejaron de ser disciplinas basadas primordialmente en la reflexión para convertirse en actividades centradas en la experimentación.\n\nExiste una rama de la filosofía que aborda exclusivamente los problemas de la ciencia. Algunos son los siguientes: ¿Qué tan bien funcionan las teorías científicas como representaciones de la realidad? ¿Qué distingue a la ciencia de otras formas de conocimiento? ¿Cómo deciden los científicos abandonar una teoría para adoptar otra? Y, finalmente, la pregunta de los 64 mil pesos: ¿por qué funciona la ciencia? Porque, a pesar de lo que pudiera pensarse, no es para nada obvio que la ciencia nos proporcione conocimiento objetivo de la naturaleza: sólo nos brinda modelos e interpretaciones que pueden ser más o menos correctas o engañosas. De hecho, no puede demostrarse que la ciencia sea intrínsecamente superior a otras formas de conocimiento. Y, sin embargo, los resultados prácticos que ofrece son incomparablemente más efectivos que los de cualquier otra forma de abordar la realidad. Incluso, algunos filósofos han desarrollado recientemente una \"epistemología evolucionista\" que sugiere que la ciencia es una adaptación de nuestra especie cuya función es aumentar nuestras posibilidades de supervivencia: la ciencia como producto de la evolución.\n\nTodo científico debería conocer algo de filosofía de la ciencia. Desgraciadamente hay muchos que no sólo no la conocen, sino que la desprecian o incluso la ven como algo amenazante. Y es una lástima, porque no se puede trabajar bien en algo si no se sabe cómo funciona."
+            "context": "**Ciencia y filosofía**\n\nLa filosofía es la disciplina que por excelencia se ocupa del pensamiento. Los filósofos siguen siendo esos \"enamorados de la sabiduría\" cuya labor consiste en preguntarse cosas acerca de la vida y el mundo. Los científicos, por el contrario, son vistos como personajes que se ocupan de una labor más práctica: realizar experimentos para poner a prueba sus hipótesis sobre cómo funciona la naturaleza. Cuando un científico se enfrenta a una pregunta que no puede contestar, es frecuente que responda \"eso es muy filosófico\", dando a entender que no se debería perder el tiempo con ese tipo de temas. Sin embargo, la relación entre ciencia y filosofía es muy antigua y estrecha. De hecho, las diferentes ciencias surgieron históricamente como parte de la filosofía, y luego fueron independizándose conforme dejaron de ser disciplinas basadas primordialmente en la reflexión para convertirse en actividades centradas en la experimentación.\n\nExiste una rama de la filosofía que aborda exclusivamente los problemas de la ciencia. Algunos son los siguientes: ¿Qué tan bien funcionan las teorías científicas como representaciones de la realidad? ¿Qué distingue a la ciencia de otras formas de conocimiento? ¿Cómo deciden los científicos abandonar una teoría para adoptar otra? Y, finalmente, la pregunta de los 64 mil pesos: ¿por qué funciona la ciencia? Porque, a pesar de lo que pudiera pensarse, no es para nada obvio que la ciencia nos proporcione conocimiento objetivo de la naturaleza: sólo nos brinda modelos e interpretaciones que pueden ser más o menos correctas o engañosas. De hecho, no puede demostrarse que la ciencia sea intrínsecamente superior a otras formas de conocimiento. Y, sin embargo, los resultados prácticos que ofrece son incomparablemente más efectivos que los de cualquier otra forma de abordar la realidad. Incluso, algunos filósofos han desarrollado recientemente una \"epistemología evolucionista\" que sugiere que la ciencia es una adaptación de nuestra especie cuya función es aumentar nuestras posibilidades de supervivencia: la ciencia como producto de la evolución.\n\nTodo científico debería conocer algo de filosofía de la ciencia. Desgraciadamente hay muchos que no sólo no la conocen, sino que la desprecian o incluso la ven como algo amenazante. Y es una lástima, porque no se puede trabajar bien en algo si no se sabe cómo funciona.",
+            "explanation": "Sigue el orden del texto: el primer párrafo **introduce** el tema (cómo se ve a filósofos y científicos y qué relación guardan); el segundo lo **desarrolla** (la filosofía de la ciencia y sus preguntas) y da **argumentos** (la ciencia no ofrece un conocimiento obviamente objetivo, y sin embargo sus resultados prácticos son insuperables); el tercero **concluye**: todo científico debería conocer filosofía de la ciencia. Las demás opciones incluyen \"datos\" o \"referencias\" (cifras, citas de autores u obras) que el texto nunca presenta."
           },
           {
             "id": 4,
@@ -66,7 +69,8 @@
               "D": "Los científicos deben conocer la reflexión que ofrece la filosofía sobre el quehacer científico; de este modo podrán realizar mejor su trabajo."
             },
             "answer": "D",
-            "context": "**Ciencia y filosofía**\n\nLa filosofía es la disciplina que por excelencia se ocupa del pensamiento. Los filósofos siguen siendo esos \"enamorados de la sabiduría\" cuya labor consiste en preguntarse cosas acerca de la vida y el mundo. Los científicos, por el contrario, son vistos como personajes que se ocupan de una labor más práctica: realizar experimentos para poner a prueba sus hipótesis sobre cómo funciona la naturaleza. Cuando un científico se enfrenta a una pregunta que no puede contestar, es frecuente que responda \"eso es muy filosófico\", dando a entender que no se debería perder el tiempo con ese tipo de temas. Sin embargo, la relación entre ciencia y filosofía es muy antigua y estrecha. De hecho, las diferentes ciencias surgieron históricamente como parte de la filosofía, y luego fueron independizándose conforme dejaron de ser disciplinas basadas primordialmente en la reflexión para convertirse en actividades centradas en la experimentación.\n\nExiste una rama de la filosofía que aborda exclusivamente los problemas de la ciencia. Algunos son los siguientes: ¿Qué tan bien funcionan las teorías científicas como representaciones de la realidad? ¿Qué distingue a la ciencia de otras formas de conocimiento? ¿Cómo deciden los científicos abandonar una teoría para adoptar otra? Y, finalmente, la pregunta de los 64 mil pesos: ¿por qué funciona la ciencia? Porque, a pesar de lo que pudiera pensarse, no es para nada obvio que la ciencia nos proporcione conocimiento objetivo de la naturaleza: sólo nos brinda modelos e interpretaciones que pueden ser más o menos correctas o engañosas. De hecho, no puede demostrarse que la ciencia sea intrínsecamente superior a otras formas de conocimiento. Y, sin embargo, los resultados prácticos que ofrece son incomparablemente más efectivos que los de cualquier otra forma de abordar la realidad. Incluso, algunos filósofos han desarrollado recientemente una \"epistemología evolucionista\" que sugiere que la ciencia es una adaptación de nuestra especie cuya función es aumentar nuestras posibilidades de supervivencia: la ciencia como producto de la evolución.\n\nTodo científico debería conocer algo de filosofía de la ciencia. Desgraciadamente hay muchos que no sólo no la conocen, sino que la desprecian o incluso la ven como algo amenazante. Y es una lástima, porque no se puede trabajar bien en algo si no se sabe cómo funciona."
+            "context": "**Ciencia y filosofía**\n\nLa filosofía es la disciplina que por excelencia se ocupa del pensamiento. Los filósofos siguen siendo esos \"enamorados de la sabiduría\" cuya labor consiste en preguntarse cosas acerca de la vida y el mundo. Los científicos, por el contrario, son vistos como personajes que se ocupan de una labor más práctica: realizar experimentos para poner a prueba sus hipótesis sobre cómo funciona la naturaleza. Cuando un científico se enfrenta a una pregunta que no puede contestar, es frecuente que responda \"eso es muy filosófico\", dando a entender que no se debería perder el tiempo con ese tipo de temas. Sin embargo, la relación entre ciencia y filosofía es muy antigua y estrecha. De hecho, las diferentes ciencias surgieron históricamente como parte de la filosofía, y luego fueron independizándose conforme dejaron de ser disciplinas basadas primordialmente en la reflexión para convertirse en actividades centradas en la experimentación.\n\nExiste una rama de la filosofía que aborda exclusivamente los problemas de la ciencia. Algunos son los siguientes: ¿Qué tan bien funcionan las teorías científicas como representaciones de la realidad? ¿Qué distingue a la ciencia de otras formas de conocimiento? ¿Cómo deciden los científicos abandonar una teoría para adoptar otra? Y, finalmente, la pregunta de los 64 mil pesos: ¿por qué funciona la ciencia? Porque, a pesar de lo que pudiera pensarse, no es para nada obvio que la ciencia nos proporcione conocimiento objetivo de la naturaleza: sólo nos brinda modelos e interpretaciones que pueden ser más o menos correctas o engañosas. De hecho, no puede demostrarse que la ciencia sea intrínsecamente superior a otras formas de conocimiento. Y, sin embargo, los resultados prácticos que ofrece son incomparablemente más efectivos que los de cualquier otra forma de abordar la realidad. Incluso, algunos filósofos han desarrollado recientemente una \"epistemología evolucionista\" que sugiere que la ciencia es una adaptación de nuestra especie cuya función es aumentar nuestras posibilidades de supervivencia: la ciencia como producto de la evolución.\n\nTodo científico debería conocer algo de filosofía de la ciencia. Desgraciadamente hay muchos que no sólo no la conocen, sino que la desprecian o incluso la ven como algo amenazante. Y es una lástima, porque no se puede trabajar bien en algo si no se sabe cómo funciona.",
+            "explanation": "La idea que organiza todo el texto está condensada en su cierre: \"Todo científico debería conocer algo de filosofía de la ciencia... no se puede trabajar bien en algo si no se sabe cómo funciona\". Eso es justo lo que dice D: conocer la reflexión filosófica sobre el quehacer científico permite al científico hacer mejor su trabajo. La C es cierta según el texto, pero es una idea secundaria del segundo párrafo, no la tesis; y la A pide algo a los filósofos que el texto nunca plantea."
           },
           {
             "id": 5,
@@ -80,7 +84,8 @@
               "D": "La reflexión filosófica del conocimiento."
             },
             "answer": "C",
-            "context": "**Ciencia y filosofía**\n\nLa filosofía es la disciplina que por excelencia se ocupa del pensamiento. Los filósofos siguen siendo esos \"enamorados de la sabiduría\" cuya labor consiste en preguntarse cosas acerca de la vida y el mundo. Los científicos, por el contrario, son vistos como personajes que se ocupan de una labor más práctica: realizar experimentos para poner a prueba sus hipótesis sobre cómo funciona la naturaleza. Cuando un científico se enfrenta a una pregunta que no puede contestar, es frecuente que responda \"eso es muy filosófico\", dando a entender que no se debería perder el tiempo con ese tipo de temas. Sin embargo, la relación entre ciencia y filosofía es muy antigua y estrecha. De hecho, las diferentes ciencias surgieron históricamente como parte de la filosofía, y luego fueron independizándose conforme dejaron de ser disciplinas basadas primordialmente en la reflexión para convertirse en actividades centradas en la experimentación.\n\nExiste una rama de la filosofía que aborda exclusivamente los problemas de la ciencia. Algunos son los siguientes: ¿Qué tan bien funcionan las teorías científicas como representaciones de la realidad? ¿Qué distingue a la ciencia de otras formas de conocimiento? ¿Cómo deciden los científicos abandonar una teoría para adoptar otra? Y, finalmente, la pregunta de los 64 mil pesos: ¿por qué funciona la ciencia? Porque, a pesar de lo que pudiera pensarse, no es para nada obvio que la ciencia nos proporcione conocimiento objetivo de la naturaleza: sólo nos brinda modelos e interpretaciones que pueden ser más o menos correctas o engañosas. De hecho, no puede demostrarse que la ciencia sea intrínsecamente superior a otras formas de conocimiento. Y, sin embargo, los resultados prácticos que ofrece son incomparablemente más efectivos que los de cualquier otra forma de abordar la realidad. Incluso, algunos filósofos han desarrollado recientemente una \"epistemología evolucionista\" que sugiere que la ciencia es una adaptación de nuestra especie cuya función es aumentar nuestras posibilidades de supervivencia: la ciencia como producto de la evolución.\n\nTodo científico debería conocer algo de filosofía de la ciencia. Desgraciadamente hay muchos que no sólo no la conocen, sino que la desprecian o incluso la ven como algo amenazante. Y es una lástima, porque no se puede trabajar bien en algo si no se sabe cómo funciona."
+            "context": "**Ciencia y filosofía**\n\nLa filosofía es la disciplina que por excelencia se ocupa del pensamiento. Los filósofos siguen siendo esos \"enamorados de la sabiduría\" cuya labor consiste en preguntarse cosas acerca de la vida y el mundo. Los científicos, por el contrario, son vistos como personajes que se ocupan de una labor más práctica: realizar experimentos para poner a prueba sus hipótesis sobre cómo funciona la naturaleza. Cuando un científico se enfrenta a una pregunta que no puede contestar, es frecuente que responda \"eso es muy filosófico\", dando a entender que no se debería perder el tiempo con ese tipo de temas. Sin embargo, la relación entre ciencia y filosofía es muy antigua y estrecha. De hecho, las diferentes ciencias surgieron históricamente como parte de la filosofía, y luego fueron independizándose conforme dejaron de ser disciplinas basadas primordialmente en la reflexión para convertirse en actividades centradas en la experimentación.\n\nExiste una rama de la filosofía que aborda exclusivamente los problemas de la ciencia. Algunos son los siguientes: ¿Qué tan bien funcionan las teorías científicas como representaciones de la realidad? ¿Qué distingue a la ciencia de otras formas de conocimiento? ¿Cómo deciden los científicos abandonar una teoría para adoptar otra? Y, finalmente, la pregunta de los 64 mil pesos: ¿por qué funciona la ciencia? Porque, a pesar de lo que pudiera pensarse, no es para nada obvio que la ciencia nos proporcione conocimiento objetivo de la naturaleza: sólo nos brinda modelos e interpretaciones que pueden ser más o menos correctas o engañosas. De hecho, no puede demostrarse que la ciencia sea intrínsecamente superior a otras formas de conocimiento. Y, sin embargo, los resultados prácticos que ofrece son incomparablemente más efectivos que los de cualquier otra forma de abordar la realidad. Incluso, algunos filósofos han desarrollado recientemente una \"epistemología evolucionista\" que sugiere que la ciencia es una adaptación de nuestra especie cuya función es aumentar nuestras posibilidades de supervivencia: la ciencia como producto de la evolución.\n\nTodo científico debería conocer algo de filosofía de la ciencia. Desgraciadamente hay muchos que no sólo no la conocen, sino que la desprecian o incluso la ven como algo amenazante. Y es una lástima, porque no se puede trabajar bien en algo si no se sabe cómo funciona.",
+            "explanation": "Repasa qué sí aparece: el origen de las ciencias, sí (\"surgieron históricamente como parte de la filosofía\"); los objetivos de ciencia y filosofía, sí (todo el primer párrafo); la reflexión filosófica del conocimiento, sí (el segundo párrafo completo). Lo que nunca se cuenta es cómo o cuándo nació la **filosofía**: de ella solo se dice qué hace, no de dónde viene."
           },
           {
             "id": 6,
@@ -94,7 +99,8 @@
               "D": "Acepta que la filosofía tiene su propio campo de estudio."
             },
             "answer": "B",
-            "context": "**Ciencia y filosofía**\n\nLa filosofía es la disciplina que por excelencia se ocupa del pensamiento. Los filósofos siguen siendo esos \"enamorados de la sabiduría\" cuya labor consiste en preguntarse cosas acerca de la vida y el mundo. Los científicos, por el contrario, son vistos como personajes que se ocupan de una labor más práctica: realizar experimentos para poner a prueba sus hipótesis sobre cómo funciona la naturaleza. Cuando un científico se enfrenta a una pregunta que no puede contestar, es frecuente que responda \"eso es muy filosófico\", dando a entender que no se debería perder el tiempo con ese tipo de temas. Sin embargo, la relación entre ciencia y filosofía es muy antigua y estrecha. De hecho, las diferentes ciencias surgieron históricamente como parte de la filosofía, y luego fueron independizándose conforme dejaron de ser disciplinas basadas primordialmente en la reflexión para convertirse en actividades centradas en la experimentación.\n\nExiste una rama de la filosofía que aborda exclusivamente los problemas de la ciencia. Algunos son los siguientes: ¿Qué tan bien funcionan las teorías científicas como representaciones de la realidad? ¿Qué distingue a la ciencia de otras formas de conocimiento? ¿Cómo deciden los científicos abandonar una teoría para adoptar otra? Y, finalmente, la pregunta de los 64 mil pesos: ¿por qué funciona la ciencia? Porque, a pesar de lo que pudiera pensarse, no es para nada obvio que la ciencia nos proporcione conocimiento objetivo de la naturaleza: sólo nos brinda modelos e interpretaciones que pueden ser más o menos correctas o engañosas. De hecho, no puede demostrarse que la ciencia sea intrínsecamente superior a otras formas de conocimiento. Y, sin embargo, los resultados prácticos que ofrece son incomparablemente más efectivos que los de cualquier otra forma de abordar la realidad. Incluso, algunos filósofos han desarrollado recientemente una \"epistemología evolucionista\" que sugiere que la ciencia es una adaptación de nuestra especie cuya función es aumentar nuestras posibilidades de supervivencia: la ciencia como producto de la evolución.\n\nTodo científico debería conocer algo de filosofía de la ciencia. Desgraciadamente hay muchos que no sólo no la conocen, sino que la desprecian o incluso la ven como algo amenazante. Y es una lástima, porque no se puede trabajar bien en algo si no se sabe cómo funciona."
+            "context": "**Ciencia y filosofía**\n\nLa filosofía es la disciplina que por excelencia se ocupa del pensamiento. Los filósofos siguen siendo esos \"enamorados de la sabiduría\" cuya labor consiste en preguntarse cosas acerca de la vida y el mundo. Los científicos, por el contrario, son vistos como personajes que se ocupan de una labor más práctica: realizar experimentos para poner a prueba sus hipótesis sobre cómo funciona la naturaleza. Cuando un científico se enfrenta a una pregunta que no puede contestar, es frecuente que responda \"eso es muy filosófico\", dando a entender que no se debería perder el tiempo con ese tipo de temas. Sin embargo, la relación entre ciencia y filosofía es muy antigua y estrecha. De hecho, las diferentes ciencias surgieron históricamente como parte de la filosofía, y luego fueron independizándose conforme dejaron de ser disciplinas basadas primordialmente en la reflexión para convertirse en actividades centradas en la experimentación.\n\nExiste una rama de la filosofía que aborda exclusivamente los problemas de la ciencia. Algunos son los siguientes: ¿Qué tan bien funcionan las teorías científicas como representaciones de la realidad? ¿Qué distingue a la ciencia de otras formas de conocimiento? ¿Cómo deciden los científicos abandonar una teoría para adoptar otra? Y, finalmente, la pregunta de los 64 mil pesos: ¿por qué funciona la ciencia? Porque, a pesar de lo que pudiera pensarse, no es para nada obvio que la ciencia nos proporcione conocimiento objetivo de la naturaleza: sólo nos brinda modelos e interpretaciones que pueden ser más o menos correctas o engañosas. De hecho, no puede demostrarse que la ciencia sea intrínsecamente superior a otras formas de conocimiento. Y, sin embargo, los resultados prácticos que ofrece son incomparablemente más efectivos que los de cualquier otra forma de abordar la realidad. Incluso, algunos filósofos han desarrollado recientemente una \"epistemología evolucionista\" que sugiere que la ciencia es una adaptación de nuestra especie cuya función es aumentar nuestras posibilidades de supervivencia: la ciencia como producto de la evolución.\n\nTodo científico debería conocer algo de filosofía de la ciencia. Desgraciadamente hay muchos que no sólo no la conocen, sino que la desprecian o incluso la ven como algo amenazante. Y es una lástima, porque no se puede trabajar bien en algo si no se sabe cómo funciona.",
+            "explanation": "El propio texto interpreta la frase: el científico la dice \"dando a entender que no se debería perder el tiempo con ese tipo de temas\". La expresión retrata la idea que él se ha formado de la filosofía: un asunto poco práctico, una pérdida de tiempo. Por eso **refleja su forma de entenderla**. La C tienta, pero despreciar algo no demuestra desconocerlo: lo que la frase exhibe directamente es su concepción de la filosofía, no su nivel de conocimiento."
           },
           {
             "id": 7,
@@ -108,7 +114,8 @@
               "D": "Medir la realidad."
             },
             "answer": "A",
-            "context": "**Ciencia y filosofía**\n\nLa filosofía es la disciplina que por excelencia se ocupa del pensamiento. Los filósofos siguen siendo esos \"enamorados de la sabiduría\" cuya labor consiste en preguntarse cosas acerca de la vida y el mundo. Los científicos, por el contrario, son vistos como personajes que se ocupan de una labor más práctica: realizar experimentos para poner a prueba sus hipótesis sobre cómo funciona la naturaleza. Cuando un científico se enfrenta a una pregunta que no puede contestar, es frecuente que responda \"eso es muy filosófico\", dando a entender que no se debería perder el tiempo con ese tipo de temas. Sin embargo, la relación entre ciencia y filosofía es muy antigua y estrecha. De hecho, las diferentes ciencias surgieron históricamente como parte de la filosofía, y luego fueron independizándose conforme dejaron de ser disciplinas basadas primordialmente en la reflexión para convertirse en actividades centradas en la experimentación.\n\nExiste una rama de la filosofía que aborda exclusivamente los problemas de la ciencia. Algunos son los siguientes: ¿Qué tan bien funcionan las teorías científicas como representaciones de la realidad? ¿Qué distingue a la ciencia de otras formas de conocimiento? ¿Cómo deciden los científicos abandonar una teoría para adoptar otra? Y, finalmente, la pregunta de los 64 mil pesos: ¿por qué funciona la ciencia? Porque, a pesar de lo que pudiera pensarse, no es para nada obvio que la ciencia nos proporcione conocimiento objetivo de la naturaleza: sólo nos brinda modelos e interpretaciones que pueden ser más o menos correctas o engañosas. De hecho, no puede demostrarse que la ciencia sea intrínsecamente superior a otras formas de conocimiento. Y, sin embargo, los resultados prácticos que ofrece son incomparablemente más efectivos que los de cualquier otra forma de abordar la realidad. Incluso, algunos filósofos han desarrollado recientemente una \"epistemología evolucionista\" que sugiere que la ciencia es una adaptación de nuestra especie cuya función es aumentar nuestras posibilidades de supervivencia: la ciencia como producto de la evolución.\n\nTodo científico debería conocer algo de filosofía de la ciencia. Desgraciadamente hay muchos que no sólo no la conocen, sino que la desprecian o incluso la ven como algo amenazante. Y es una lástima, porque no se puede trabajar bien en algo si no se sabe cómo funciona."
+            "context": "**Ciencia y filosofía**\n\nLa filosofía es la disciplina que por excelencia se ocupa del pensamiento. Los filósofos siguen siendo esos \"enamorados de la sabiduría\" cuya labor consiste en preguntarse cosas acerca de la vida y el mundo. Los científicos, por el contrario, son vistos como personajes que se ocupan de una labor más práctica: realizar experimentos para poner a prueba sus hipótesis sobre cómo funciona la naturaleza. Cuando un científico se enfrenta a una pregunta que no puede contestar, es frecuente que responda \"eso es muy filosófico\", dando a entender que no se debería perder el tiempo con ese tipo de temas. Sin embargo, la relación entre ciencia y filosofía es muy antigua y estrecha. De hecho, las diferentes ciencias surgieron históricamente como parte de la filosofía, y luego fueron independizándose conforme dejaron de ser disciplinas basadas primordialmente en la reflexión para convertirse en actividades centradas en la experimentación.\n\nExiste una rama de la filosofía que aborda exclusivamente los problemas de la ciencia. Algunos son los siguientes: ¿Qué tan bien funcionan las teorías científicas como representaciones de la realidad? ¿Qué distingue a la ciencia de otras formas de conocimiento? ¿Cómo deciden los científicos abandonar una teoría para adoptar otra? Y, finalmente, la pregunta de los 64 mil pesos: ¿por qué funciona la ciencia? Porque, a pesar de lo que pudiera pensarse, no es para nada obvio que la ciencia nos proporcione conocimiento objetivo de la naturaleza: sólo nos brinda modelos e interpretaciones que pueden ser más o menos correctas o engañosas. De hecho, no puede demostrarse que la ciencia sea intrínsecamente superior a otras formas de conocimiento. Y, sin embargo, los resultados prácticos que ofrece son incomparablemente más efectivos que los de cualquier otra forma de abordar la realidad. Incluso, algunos filósofos han desarrollado recientemente una \"epistemología evolucionista\" que sugiere que la ciencia es una adaptación de nuestra especie cuya función es aumentar nuestras posibilidades de supervivencia: la ciencia como producto de la evolución.\n\nTodo científico debería conocer algo de filosofía de la ciencia. Desgraciadamente hay muchos que no sólo no la conocen, sino que la desprecian o incluso la ven como algo amenazante. Y es una lástima, porque no se puede trabajar bien en algo si no se sabe cómo funciona.",
+            "explanation": "El texto dice que los científicos experimentan \"para poner a prueba sus hipótesis sobre cómo funciona la naturaleza\". Observar, medir y clasificar son pasos del método, medios para llegar a algo más; la meta final de ese ir y venir entre hipótesis y experimentos es dar cuenta de cómo funciona el mundo, es decir, **explicar la realidad**."
           },
           {
             "id": 8,
@@ -121,7 +128,8 @@
               "C": "Los prehispánicos querían que los guajolotes, una vez muertos, se prepararan en los criaderos.",
               "D": "La tradición de la crianza del guajolote doméstico se fue desplazando hacia el norte."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Una oración coordinada adversativa une dos oraciones independientes con un nexo que las contrapone: *pero, mas, sino, aunque*. En B hay dos ideas completas enfrentadas: \"utilizaban sólo las plumas del guajolote, **pero** no comían su carne\". La A es coordinada copulativa (\"y\"), la C es subordinada (\"querían **que**...\") y la D es una oración simple, sin nexo alguno."
           },
           {
             "id": 9,
@@ -134,7 +142,8 @@
               "C": "el gol del Toluca",
               "D": "la multitud del domingo"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El sujeto es quien realiza la acción: pregúntale al verbo ¿quién coreó? → **la multitud enardecida**. Compruébalo con la concordancia: \"las multitudes enardecidas corearon\". \"En el partido del domingo\" es complemento circunstancial (dice cuándo ocurrió) y \"el gol del Toluca\" es lo coreado, el objeto directo."
           },
           {
             "id": 10,
@@ -147,7 +156,8 @@
               "C": "Objeto indirecto.",
               "D": "Objeto circunstancial."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "\"Una sonrisa\" es lo que la señora vio (vio vagar... ¿qué?: una sonrisa): **objeto directo**. La prueba clásica es sustituir por un pronombre: \"La señora Ramírez **la** vio vagar sobre los labios de los jefes\". Si funciona la/lo, es objeto directo; el indirecto pediría \"le\". \"Sobre los labios de los jefes\" es el complemento circunstancial de lugar."
           },
           {
             "id": 11,
@@ -160,7 +170,8 @@
               "C": "Un día que salió a dar una vuelta encontró a su chofer.",
               "D": "En el Génesis se ve cómo Dios creó al hombre de barro."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En B, el relativo \"que nunca existió\" quedó pegado a \"árbitro\", así que la frase también puede leerse como que el árbitro nunca existió, cuando lo inexistente era la falta. El orden que deshace la ambigüedad es: \"El defensa reclamó al árbitro una falta que nunca existió\". Ese complemento mal colocado es el error sintáctico que produce dos interpretaciones."
           },
           {
             "id": 12,
@@ -173,7 +184,8 @@
               "C": "a",
               "D": "sobre"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En el uso formal, el sustantivo *afición* introduce aquello que gusta con la preposición **por**: afición por la lectura, afición por las ciencias. \"Para\" indica finalidad y \"sobre\", tema: ninguna encaja con afición. La preposición \"a\" es la que acompaña al verbo (*aficionarse a las ciencias*), no la que aquí pide el sustantivo."
           },
           {
             "id": 13,
@@ -186,7 +198,8 @@
               "C": "así que – para que – pues",
               "D": "y – de modo que – que"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Prueba el trío en su lugar: \"ya es autónomo **y** debe seguir siéndolo\" (suma dos afirmaciones, no las opone); \"...con esa institución, **de modo que** su operación no esté disociada...\" (expresa el propósito buscado y acepta el subjuntivo *esté*); \"los mecanismos de representación **que** son inherentes...\" (relativo que especifica cuáles mecanismos). La B falla en el segundo hueco: \"dado que\" es causal y pide indicativo (\"dado que no está\"), no funciona con \"no esté\"."
           },
           {
             "id": 14,
@@ -199,7 +212,8 @@
               "C": "Distracción – error.",
               "D": "Impaciencia – rebelión."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La relación es emoción → manifestación física involuntaria que la delata: el aburrimiento provoca el bostezo. La pareja que calca esa relación es **diversión – sonrisa**: la sonrisa es la reacción corporal espontánea de quien se divierte. En \"ira – agresión\" (A) la agresión es una conducta voluntaria, no un reflejo del cuerpo; por eso no es análoga."
           },
           {
             "id": 15,
@@ -212,7 +226,8 @@
               "C": "Abismal.",
               "D": "Bajo."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En \"el dolor más profundo\", *profundo* está en sentido figurado: un dolor muy fuerte, muy **intenso**. Haz la prueba de sustitución: \"el dolor más intenso\" conserva el sentido de la frase. \"Insondable\" y \"abismal\" arrastran la imagen de hondura física (un pozo insondable, una fosa abismal) y suenan forzados en este contexto; \"bajo\" de plano cambia el significado."
           },
           {
             "id": 16,
@@ -225,7 +240,8 @@
               "C": "s – c – s – s",
               "D": "s – c – s – c"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Ve palabra por palabra: **crisis** se escribe con *s*, como las voces terminadas en -sis (análisis, síntesis, dosis); **erupciones** lleva *c* porque viene de erupción, terminación -ción (familia de eruptivo); **manso** va con *s*; e **Inocencio** lleva *c*, como inocente e inocencia. El orden queda **s – c – s – c**."
           },
           {
             "id": 17,
@@ -238,7 +254,8 @@
               "C": "Dijo adiós tocándose el ala del sombrero con su mano.",
               "D": "Vieron que Eugenia se fue por la vereda muy temprano."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El error está en \"estuvierón\": *estuvieron* es palabra grave terminada en -n, y las graves que terminan en vocal, -n o -s **no** llevan tilde. Ese acento de más es la falta de ortografía; las otras tres oraciones están bien escritas."
           },
           {
             "id": 18,
@@ -251,7 +268,8 @@
               "C": "¿Oyes? Allá afuera está lloviendo. ¿No sientes el golpear de la lluvia? (J. Rulfo).",
               "D": "\"¿Oyes? Allá afuera está lloviendo. ¿No sientes el golpear de la lluvia?\" (J. Rulfo)."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Es una cita textual, así que necesita tres cosas: comillas que la encierren, mayúscula después del signo de interrogación de cierre (\"¿Oyes? **A**llá...\", porque el signo cierra el enunciado) y el autor entre paréntesis: (J. Rulfo). Solo D cumple las tres. La A tropieza en la minúscula de \"allá\" y la C olvida las comillas de la cita."
           }
         ]
       },
@@ -270,7 +288,8 @@
               "C": "$5\\,°C$",
               "D": "$-12\\,°C$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La diferencia es temperatura final menos inicial:\n$$15-(-3) = 15+3 = 18\\,°C$$\nRestar un número negativo equivale a sumar: de $-3\\,°C$ a $0\\,°C$ el termómetro sube 3 grados, y de ahí a $15\\,°C$ sube otros 15. Si te dio $12\\,°C$, hiciste $15-3$ olvidando el signo negativo del $-3$."
           },
           {
             "id": 20,
@@ -283,7 +302,8 @@
               "C": "600",
               "D": "650"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Primero calcula cuántos autos había en total: $\\dfrac{3}{4}$ de $1{,}000$ son $750$ autos. De esos, $200$ eran compactos, así que los de tamaño estándar fueron\n$$750-200 = 550.$$\nEl error típico es olvidar que los 200 compactos ya están incluidos dentro de los 750 que ocupaban el estacionamiento."
           },
           {
             "id": 21,
@@ -296,7 +316,8 @@
               "C": "$4$",
               "D": "$2\\sqrt{2}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Al multiplicar raíces iguales, el radical se cancela: $\\sqrt{2}\\cdot\\sqrt{2} = \\sqrt{2\\cdot 2} = \\sqrt{4} = 2$. En general, $\\sqrt{a}\\cdot\\sqrt{a} = a$. Si elegiste $2\\sqrt{2}$, **sumaste** en lugar de multiplicar: $\\sqrt{2}+\\sqrt{2} = 2\\sqrt{2}$."
           },
           {
             "id": 22,
@@ -309,7 +330,8 @@
               "C": "$x^2-2xy+y^2$",
               "D": "$x^2+2xy+y^2$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Multiplica el binomio por sí mismo, término a término:\n$$(x-y)^2 = (x-y)(x-y) = x^2-xy-xy+y^2 = x^2-2xy+y^2$$\nEl cuadrado de un binomio siempre trae el doble producto en medio. La opción A, $x^2-y^2$, es otro producto notable: los binomios conjugados $(x+y)(x-y)$."
           },
           {
             "id": 23,
@@ -322,7 +344,8 @@
               "C": "$x+8$",
               "D": "$x-2$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Factoriza el numerador buscando dos números que multiplicados den $-40$ y sumados den $+3$: son $8$ y $-5$. Entonces\n$$\\frac{x^2+3x-40}{x+8} = \\frac{(x+8)(x-5)}{x+8} = x-5$$\nAl cancelar el factor común $(x+8)$, queda $x-5$."
           },
           {
             "id": 24,
@@ -335,7 +358,8 @@
               "C": "$-\\dfrac{4}{3}$",
               "D": "$\\dfrac{8}{5}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Deja sola la fracción y despeja:\n$$\\frac{z}{z+2} = 1-5 = -4 \\;\\Rightarrow\\; z = -4(z+2) = -4z-8 \\;\\Rightarrow\\; 5z = -8 \\;\\Rightarrow\\; z = -\\frac{8}{5}$$\nComprueba: $z+2=\\frac{2}{5}$ y $\\frac{-8/5}{2/5} = -4$, así que $5+(-4)=1$, como pide la ecuación. Si te dio $\\frac{8}{5}$ positivo, se te escapó un signo al multiplicar por $(z+2)$."
           },
           {
             "id": 25,
@@ -348,7 +372,8 @@
               "C": "$8$",
               "D": "$-16$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Traduce la frase: \"cinco veces un número más 21\" es $5x+21$; \"tres veces ese número menos 11\" es $3x-11$. Iguala y despeja:\n$$5x+21 = 3x-11 \\;\\Rightarrow\\; 2x = -32 \\;\\Rightarrow\\; x = -16$$\nComprueba: $5(-16)+21 = -59$ y $3(-16)-11 = -59$, coinciden. Si te dio $16$ positivo (opción A), perdiste un signo al juntar el $21$ con el $-11$."
           },
           {
             "id": 26,
@@ -361,7 +386,8 @@
               "C": "$x\\leq 50$",
               "D": "$x<50$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "\"Cuando mucho \\$50.00\" significa \"a lo más 50\": puedes tener 50 pesos o cualquier cantidad menor, pero no más. Eso se escribe $x \\leq 50$. La opción D ($x<50$) tienta, pero excluye la posibilidad de tener exactamente los \\$50.00, y \"cuando mucho 50\" sí la permite: por eso la desigualdad lleva el igual."
           },
           {
             "id": 27,
@@ -374,7 +400,8 @@
               "C": "$\\begin{vmatrix}-5 & -5\\\\ 4 & 1\\end{vmatrix}$",
               "D": "$\\begin{vmatrix}10 & -5\\\\ 4 & 1\\end{vmatrix}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El determinante principal se arma solo con los **coeficientes** de las incógnitas, tal como aparecen: de $10x-5y=-5$ toma $10$ y $-5$; de $4x+y=-5$ toma $4$ y $1$:\n$$\\Delta = \\begin{vmatrix}10 & -5\\\\ 4 & 1\\end{vmatrix}$$\nLos términos independientes ($-5$ y $-5$) no entran aquí: esos se usan después, al armar los determinantes de $x$ y de $y$ en la regla de Cramer. Las otras opciones los cuelan donde no van."
           },
           {
             "id": 28,
@@ -387,7 +414,8 @@
               "C": "$x=2; \\ y=-2$",
               "D": "$x=2; \\ y=2$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Despeja $y$ de la primera ecuación: $y = 8-3x$. Sustituye en la segunda:\n$$2x-4(8-3x) = -4 \\;\\Rightarrow\\; 2x-32+12x = -4 \\;\\Rightarrow\\; 14x = 28 \\;\\Rightarrow\\; x = 2$$\ny entonces $y = 8-3(2) = 2$. Verifica en la segunda: $2(2)-4(2) = 4-8 = -4$, cumple. La opción C ($x=2$, $y=-2$) falla desde la primera ecuación: $3(2)+(-2) = 4 \\neq 8$."
           },
           {
             "id": 29,
@@ -400,7 +428,8 @@
               "C": "D: $x<-2$, R: $y\\geq 0$",
               "D": "D: $x<0$, R: $y=0$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Los dos signos menos se cancelan: $y = \\frac{-5}{-\\sqrt{x+2}} = \\frac{5}{\\sqrt{x+2}}$. Para el dominio, el radicando debe ser positivo estricto —no basta $\\geq 0$, porque la raíz está en el denominador y no puede valer cero—: $x+2>0$, es decir, $x>-2$. Para el rango: $5$ entre algo positivo siempre da positivo, así que $y>0$. La B cae en las dos trampas: incluye $x=-2$ (donde se divide entre cero) y deja el rango negativo sin notar que los menos se cancelan."
           },
           {
             "id": 30,
@@ -413,7 +442,8 @@
               "C": "$\\dfrac{1}{x^2+5}$",
               "D": "$\\dfrac{1}{x^2+4x+3}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Componer es meter una función dentro de la otra: $(f\\circ g)(x) = f(g(x)) = f(x+2)$. Sustituye $x+2$ donde $f$ tiene $x$:\n$$f(x+2) = \\frac{1}{(x+2)^2-1} = \\frac{1}{x^2+4x+4-1} = \\frac{1}{x^2+4x+3}$$\nSi llegaste a $\\frac{1}{x^2+3}$ (opción B), elevaste término a término: $(x+2)^2$ no es $x^2+4$; el binomio al cuadrado lleva doble producto."
           },
           {
             "id": 31,
@@ -427,7 +457,8 @@
               "C": "$\\dfrac{\\sqrt{5}}{2}$",
               "D": "$\\dfrac{1}{2}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En la figura, el ángulo recto está en $C$; los catetos miden $1$ (el vertical $BC$) y $2$ (el horizontal $CA$), y la hipotenusa es $AB = \\sqrt{5}$. El seno es cateto **opuesto** entre hipotenusa, y el opuesto al ángulo $B$ es el lado de enfrente, el que mide $2$:\n$$\\mathrm{sen}\\,B = \\frac{2}{\\sqrt{5}}$$\nSi elegiste $\\frac{1}{\\sqrt{5}}$, tomaste el cateto pegado al ángulo: eso es $\\cos B$."
           },
           {
             "id": 32,
@@ -441,7 +472,8 @@
               "C": "$18.34\\,m$",
               "D": "$30.64\\,m$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Con dos ángulos y un lado se aplica la ley de senos: $\\dfrac{a}{\\mathrm{sen}\\,A} = \\dfrac{c}{\\mathrm{sen}\\,C}$. Despeja $a$:\n$$a = \\frac{c\\,\\mathrm{sen}\\,A}{\\mathrm{sen}\\,C} = \\frac{20\\,\\mathrm{sen}\\,40°}{\\mathrm{sen}\\,100°} = \\frac{20(0.6428)}{0.9848} \\approx 13.05\\,m$$\nAdemás tiene lógica: $a$ se opone al ángulo de $40°$ y $c=20$ al de $100°$; a mayor ángulo, mayor lado, así que $a$ debía salir menor que $20$. Eso descarta de entrada la opción D."
           },
           {
             "id": 33,
@@ -454,7 +486,8 @@
               "C": "$(-\\infty, 2)$",
               "D": "$(-\\infty, 2]$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El logaritmo solo existe para argumentos **positivos**: necesitas $x-2>0$, o sea $x>2$, que en notación de intervalos es $(2,\\infty)$. La B tienta con el corchete, pero en $x=2$ el argumento vale $0$ y $\\log 0$ no existe (ahí la gráfica tiene su asíntota vertical): el intervalo va abierto."
           },
           {
             "id": 34,
@@ -467,7 +500,8 @@
               "C": "$\\dfrac{3}{2}$",
               "D": "$2$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Despeja $y$ para leer la pendiente:\n$$2y = 4x-3 \\;\\Rightarrow\\; y = 2x-\\frac{3}{2}$$\nEl coeficiente de $x$ es la pendiente: $m=2$. Si te dio $-2$, moviste el $-4x$ al otro lado sin cambiarle el signo."
           },
           {
             "id": 35,
@@ -480,7 +514,8 @@
               "C": "$1$",
               "D": "$-\\dfrac{3}{2}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Aplica la fórmula de la pendiente:\n$$m = \\frac{y_2-y_1}{x_2-x_1} = \\frac{5-2}{1-3} = \\frac{3}{-2} = -\\frac{3}{2}$$\nY tiene sentido: de $(3,2)$ a $(1,5)$ la recta sube hacia la izquierda, o sea que baja hacia la derecha: pendiente negativa. Si te dio $\\frac{3}{2}$ (opción B), perdiste el signo del denominador: $1-3=-2$."
           },
           {
             "id": 36,
@@ -494,7 +529,8 @@
               "C": "$y=-\\dfrac{1}{2}x-1$",
               "D": "$y=\\dfrac{x}{2}-1$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Lee dos cosas en la gráfica: la recta corta al eje $y$ en $-1$ (esa es la ordenada al origen $b$) y sube $1$ unidad por cada $2$ que avanza —pasa de $(0,-1)$ a $(2,0)$—, así que $m=\\frac{1}{2}$. La ecuación es\n$$y = \\frac{x}{2}-1$$\nEl corte en $-1$ descarta A y B (ambas cortan en $-\\frac{1}{2}$), y como la recta sube, la pendiente es positiva: eso descarta C."
           },
           {
             "id": 37,
@@ -507,7 +543,8 @@
               "C": "$x^2+y^2=4$",
               "D": "$x^2+y^2=2$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La circunferencia con centro en el origen es $x^2+y^2=r^2$: en la ecuación va el radio **al cuadrado**. Con $r=\\sqrt{2}$:\n$$r^2 = (\\sqrt{2})^2 = 2 \\;\\Rightarrow\\; x^2+y^2 = 2$$\nLa opción B pone el radio sin elevar: el despiste clásico es olvidar que el término independiente es $r^2$, no $r$."
           },
           {
             "id": 38,
@@ -520,7 +557,8 @@
               "C": "$C(-1,-1), \\ r=\\sqrt{20}$",
               "D": "$C(0,0), \\ r=\\sqrt{20}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Compara con la forma $x^2+y^2=r^2$: como no hay términos lineales en $x$ ni en $y$ (nada que desplace el centro), el centro es $C(0,0)$; y de $r^2=20$ sale $r=\\sqrt{20}$ (unos $4.47$). La opción A comete el error inverso al del reactivo anterior: toma $r=20$ sin sacar la raíz."
           },
           {
             "id": 39,
@@ -533,7 +571,8 @@
               "C": "$(-3,-2)$",
               "D": "$(-2,-3)$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Factoriza el lado derecho para llevarla a la forma canónica:\n$$(y-3)^2 = 12x-24 = 12(x-2)$$\nComparando con $(y-k)^2 = 4p(x-h)$, el vértice es $(h,k) = (2,3)$. Si contestaste $(3,2)$, invertiste las coordenadas: recuerda que $h$ viaja con $x$ y $k$ con $y$."
           },
           {
             "id": 40,
@@ -546,7 +585,8 @@
               "C": "$(0, \\pm\\sqrt{8})$",
               "D": "$(0, \\pm 3)$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Divide todo entre $9$ para llegar a la forma canónica:\n$$\\frac{x^2}{1}+\\frac{y^2}{9} = 1$$\nEl denominador mayor ($9$) está bajo $y^2$, así que el eje mayor es **vertical**: $a^2=9$, $b^2=1$ y $c^2 = a^2-b^2 = 8$, o sea $c=\\sqrt{8}$. Los focos van sobre el eje mayor: $(0,\\pm\\sqrt{8})$. La opción A trae la distancia correcta pero en el eje equivocado: fíjate siempre bajo cuál variable queda el denominador grande."
           },
           {
             "id": 41,
@@ -559,7 +599,8 @@
               "C": "elipse.",
               "D": "hipérbola."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Ésa es, palabra por palabra, la definición de la **hipérbola**: el lugar geométrico de los puntos cuya *diferencia* de distancias a dos focos es constante. El valor absoluto está ahí porque el punto puede estar más cerca de cualquiera de los dos focos, y eso es justo lo que produce las **dos ramas**. La condición extra ($2a < 2c$, la constante menor que la distancia entre focos) es la que garantiza que la curva exista.\n\nOjo con la elipse (opción C): cambia una sola palabra, ahí lo constante es la *suma* de las distancias, no la diferencia."
           },
           {
             "id": 42,
@@ -572,7 +613,8 @@
               "C": "el cono.",
               "D": "la parábola."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Las secciones cónicas son las curvas que resultan de cortar un cono circular con un plano; según la inclinación del corte obtienes circunferencia, elipse, **parábola** o hipérbola. La parábola sale cuando el plano es paralelo a una generatriz del cono, así que es una de las cuatro.\n\nEl cono (opción C) no es la sección: es el sólido que se corta. Y la recta y el triángulo son figuras rectilíneas, no curvas cónicas."
           }
         ]
       },
@@ -591,7 +633,8 @@
               "C": "igual que la magnitud del vector de la velocidad.",
               "D": "gradualmente creciente."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La velocidad es un **vector**: tiene magnitud y dirección. La rapidez es solamente su magnitud, el número pelón sin dirección. Por definición, entonces, la rapidez **es igual a la magnitud del vector velocidad**; nunca puede ser mayor ni menor que ella.\n\nY si la velocidad es constante, tampoco puede ir creciendo (opción D): una velocidad constante implica rapidez constante. La única diferencia real entre los dos conceptos es que uno carga dirección y el otro no."
           },
           {
             "id": 44,
@@ -604,7 +647,8 @@
               "C": "0.5 veces menor",
               "D": "igual"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La energía potencial gravitatoria es $E_p = mgh$. Al llevar el cuerpo a la Luna no cambian su masa ni la altura a la que lo subes; lo único que cambia es $g$. Si $g_L = \\dfrac{g_T}{6}$:\n\n$$E_{p,L} = m\\left(\\frac{g_T}{6}\\right)h = \\frac{mg_Th}{6} = \\frac{E_{p,T}}{6}$$\n\nO sea, **6 veces menor**. Si escogiste \"6 veces mayor\" invertiste la proporción: con menos gravedad cuesta *menos* energía levantar el cuerpo, no más."
           },
           {
             "id": 45,
@@ -617,7 +661,8 @@
               "C": "$2.5\\,kg$",
               "D": "$0.8\\,kg$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Como no hay fricción, el momento lineal del sistema niño + carrito se conserva. Al inicio todo está quieto, así que el momento total es cero; después del salto los dos momentos deben cancelarse:\n\n$$m_n v_n = m_c v_c \\quad\\Rightarrow\\quad (30)(2) = m_c(12)$$\n\n$$m_c = \\frac{60}{12} = 5\\,kg$$\n\nFíjate en la lógica física: el carrito sale 6 veces más rápido porque tiene 6 veces menos masa. Si te dio $2.5\\,kg$ dividiste entre $24$ (multiplicaste las dos velocidades en el denominador) en lugar de dividir sólo entre $12$."
           },
           {
             "id": 46,
@@ -630,7 +675,8 @@
               "C": "$0\\,°K$",
               "D": "$0\\,°C$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En la teoría cinética la temperatura es una medida de la energía cinética promedio de las partículas. Si el movimiento cesara por completo, esa energía sería cero, y a esa temperatura mínima posible se le llama **cero absoluto**: el origen de la escala Kelvin, $0\\,K$, que equivale a $-273.15\\,°C$.\n\nLas otras tres son temperaturas frías pero comunes: $0\\,°C$ es el punto de fusión del hielo, $0\\,°F \\approx -18\\,°C$ y $-100\\,°C$ sigue estando 173 grados arriba del cero absoluto. En todas ellas las partículas se siguen moviendo."
           },
           {
             "id": 47,
@@ -643,7 +689,8 @@
               "C": "I: b – II: c – III: a",
               "D": "I: c – II: b – III: a"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Ve una por una:\n\n- **I. Longitudinal** → c: las partículas del medio vibran *paralelas* a la dirección en que avanza la onda (el sonido es el ejemplo típico, con sus compresiones y rarefacciones).\n- **II. Transversal** → b: las partículas vibran perpendiculares (en ángulo recto) al avance de la onda, como la cuerda que sacudes.\n- **III. Electromagnética** → a: es la única que no necesita medio material, porque son campos eléctrico y magnético oscilando; por eso la luz del Sol nos llega a través del vacío.\n\nEsa combinación es I:c – II:b – III:a. Si marcaste otra, casi siempre es por intercambiar longitudinal con transversal: quédate con que *longitudinal* y *paralelo* van juntas."
           },
           {
             "id": 48,
@@ -656,7 +703,8 @@
               "C": "$\\dfrac{N}{s}$",
               "D": "$\\dfrac{J}{s}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El campo eléctrico se define como la fuerza por unidad de carga de prueba, $E = \\dfrac{F}{q}$, así que sus unidades son newton entre coulomb, $\\dfrac{N}{C}$ (equivalente a $\\dfrac{V}{m}$).\n\nCuidado con $\\dfrac{N}{kg}$: ésas son las unidades del campo **gravitatorio**, fuerza por unidad de *masa*. Y $\\dfrac{J}{s}$ es el watt, unidad de potencia."
           },
           {
             "id": 49,
@@ -669,7 +717,8 @@
               "C": "una corriente debe fluir en función de la variación del tiempo.",
               "D": "una fem debe existir en función de la variación del tiempo."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Es la ley de Faraday: toda variación del flujo magnético en el tiempo induce una fuerza electromotriz,\n\n$$\\varepsilon = -\\frac{d\\Phi}{dt}$$\n\nLa fem aparece siempre que el flujo cambia, y su valor depende de qué tan rápido cambie.\n\nLa opción C es la que más se antoja, pero la corriente sólo circula si además existe un circuito conductor cerrado; si el aro está abierto o no hay conductor, la fem existe y la corriente no."
           },
           {
             "id": 50,
@@ -682,7 +731,8 @@
               "C": "presión hidrostática del mar influye.",
               "D": "densidad del aire soportada es mayor."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La presión atmosférica en un punto es el peso de la columna de aire que está **encima** de ese punto, repartido en el área. En la cima del Everest, a casi $9000\\,m$, ya te quedaste arriba de buena parte de la atmósfera: la capa de aire que soportas es mucho más delgada, y por eso la presión baja a alrededor de un tercio de la del nivel del mar.\n\nLa opción A no es falsa del todo (el aire arriba es menos denso), pero decir que \"la densidad cambia\" no explica nada: es una consecuencia del mismo hecho, no la causa. Lo que decide es cuánto aire tienes encima."
           },
           {
             "id": 51,
@@ -695,7 +745,8 @@
               "C": "calor y difracción.",
               "D": "reflexión y refracción."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La luz se comporta como **onda** en fenómenos como la interferencia y la difracción, y como **partícula** (fotones) en el efecto fotoeléctrico, donde la energía llega en paquetes $E = hf$. Ninguno de los dos modelos solos explica todos los experimentos, y de ahí el nombre de comportamiento dual: onda-partícula.\n\nLa reflexión y la refracción (opción D) son fenómenos de la luz, no las dos naturalezas con que se la describe."
           },
           {
             "id": 52,
@@ -708,7 +759,8 @@
               "C": "Química y Biología.",
               "D": "Física y Química."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Marie Curie ganó dos premios Nobel en dos disciplinas distintas: el de **Física** en 1903, compartido con Pierre Curie y Henri Becquerel por los estudios sobre la radiactividad, y el de **Química** en 1911, ya sola, por el descubrimiento y aislamiento del radio y el polonio.\n\nSigue siendo la única persona premiada en dos ciencias diferentes. Nunca recibió el de Medicina ni existe uno de Biología."
           }
         ]
       },
@@ -727,7 +779,8 @@
               "C": "$S_8(g), \\ N_2(g), \\ SO_2(g)$",
               "D": "$CO(g), \\ Na(s), \\ S_8(s)$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Un **elemento** está formado por átomos de una sola clase, aunque esos átomos vengan agrupados en moléculas. Revisa la opción A: $Na$ es sodio, $Cl_2$ es cloro y $P_4$ es fósforo blanco; en las tres sustancias hay un solo tipo de átomo, así que las tres son elementos.\n\nEn las demás se cuela siempre un compuesto: $CO$ en B y en D, y $SO_2$ en C, porque tienen dos clases de átomo unidas químicamente. Que una fórmula lleve subíndice ($Cl_2$, $P_4$, $S_8$) no la convierte en compuesto: lo que decide es cuántos elementos distintos aparecen."
           },
           {
             "id": 54,
@@ -740,7 +793,8 @@
               "C": "compuesto.",
               "D": "elemento."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El aire es una **mezcla** de gases: alrededor de 78 % de nitrógeno, 21 % de oxígeno y el resto argón, dióxido de carbono y vapor de agua. Sus componentes no están unidos químicamente, conservan sus propiedades y se pueden separar por métodos físicos, como la destilación fraccionada del aire líquido.\n\nPara ser compuesto (opción C) tendría que haber enlaces entre esos gases y una proporción fija, y no la hay: la composición del aire varía con el lugar y la altura."
           },
           {
             "id": 55,
@@ -753,7 +807,8 @@
               "C": "niveles.",
               "D": "periodos."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "En la tabla periódica los renglones **horizontales** se llaman **periodos** (son 7), y todos los elementos de un mismo periodo tienen su último electrón en el mismo nivel de energía.\n\nGrupos y familias, en cambio, son las columnas **verticales**, y ahí lo que comparten los elementos es el número de electrones de valencia y por eso sus propiedades químicas parecidas. Si marcaste A o B, sólo giraste 90 grados la respuesta."
           },
           {
             "id": 56,
@@ -766,7 +821,8 @@
               "C": "$N_2O_5+H_2O\\to 2HNO_3$",
               "D": "$HCl+KOH\\to KCl+H_2O$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Una sal se forma en una **neutralización**: ácido + base → sal + agua. En la opción D, el $HCl$ (ácido) reacciona con el $KOH$ (base) y el $K^+$ toma el lugar del $H^+$:\n\n$$HCl + KOH \\to KCl + H_2O$$\n\nEl $KCl$ es la sal y el agua es el otro producto obligado.\n\nLas otras tres son óxidos no metálicos o halógenos reaccionando con agua, y lo que producen son **ácidos** ($H_2SO_3$, $HCl$, $HNO_3$), no sales."
           },
           {
             "id": 57,
@@ -779,7 +835,8 @@
               "C": "NaCl",
               "D": "$Cl_2$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El $HCl$ es un ácido porque al disolverse en agua libera iones $H^+$ ($HCl \\to H^+ + Cl^-$), que es exactamente la definición de Arrhenius de ácido; además es de los ácidos fuertes, se ioniza por completo.\n\nEl $NaOH$ hace lo contrario: libera $OH^-$, es una base. El $NaCl$ es la sal que resulta de juntar a esos dos, y el $Cl_2$ es un elemento, ni ácido ni base."
           },
           {
             "id": 58,
@@ -792,7 +849,8 @@
               "C": "8",
               "D": "13"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "En la escala de pH, mientras más alto el número, más **básica** es la disolución y más iones $OH^-$ tiene. El pH mide la concentración de $H^+$, y en agua las dos van en sentidos opuestos porque $pH + pOH = 14$.\n\nCon pH 13: $pOH = 14 - 13 = 1$, así que $[OH^-] = 10^{-1} = 0.1\\,M$. Compáralo con pH 2, donde $pOH = 12$ y $[OH^-] = 10^{-12}\\,M$: hay once órdenes de magnitud de diferencia.\n\nSi escogiste el 2, contestaste la pregunta de la mayor concentración de $H^+$, no de $OH^-$."
           },
           {
             "id": 59,
@@ -805,7 +863,8 @@
               "C": "magnesio.",
               "D": "calcio."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Un **óxido ácido** (o anhídrido) es el que se forma cuando el oxígeno se combina con un **no metal**; se llama así porque al reaccionar con agua produce un ácido. El nitrógeno es no metal, y su óxido cumple:\n\n$$N_2O_5 + H_2O \\to 2HNO_3$$\n\nSodio, magnesio y calcio son **metales**, y sus óxidos ($Na_2O$, $MgO$, $CaO$) son óxidos básicos: con agua dan hidróxidos, como $Ca(OH)_2$. Regla corta: no metal + oxígeno → óxido ácido; metal + oxígeno → óxido básico."
           },
           {
             "id": 60,
@@ -818,7 +877,8 @@
               "C": "proteínas y carbohidratos.",
               "D": "lípidos y carbohidratos."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La sacarosa es un **disacárido**: una molécula de glucosa unida a una de fructosa, con fórmula $C_{12}H_{22}O_{11}$. Sólo tiene carbono, hidrógeno y oxígeno, o sea que es puro **carbohidrato**.\n\nPara que hubiera proteína tendría que contener nitrógeno (los aminoácidos lo llevan), y para que hubiera lípido harían falta ácidos grasos. El azúcar de mesa no aporta ni uno ni otro: es energía y nada más."
           },
           {
             "id": 61,
@@ -831,7 +891,8 @@
               "C": "un polímero de carbohidratos.",
               "D": "un conjunto de triglicéridos."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Una proteína es un **polímero de aminoácidos** unidos uno tras otro por enlaces peptídicos; la secuencia de esos aminoácidos determina cómo se pliega la cadena y, con eso, su función.\n\nLa opción A es la que engaña, pero está al revés: las enzimas *son* proteínas, no las piezas con que se construyen. Los polímeros de carbohidratos son almidón o glucógeno, y los triglicéridos son lípidos: otras dos familias de biomoléculas."
           },
           {
             "id": 62,
@@ -844,7 +905,8 @@
               "C": "En una reacción exotérmica se absorbe energía.",
               "D": "En una reacción de combustión se absorbe calor."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En toda reacción química se **rompen** los enlaces de los reactivos y se **forman** los de los productos; romper consume energía y formar la libera, y la diferencia entre esas dos cantidades es lo que hace que la reacción resulte exotérmica o endotérmica. Por eso B es cierto siempre, sin importar de qué reacción hablemos.\n\nLas otras tres tienen los términos invertidos: **endo**térmica *absorbe* energía, **exo**térmica la *desprende*, y la combustión es el ejemplo clásico de reacción exotérmica: libera calor, no lo absorbe."
           }
         ]
       },
@@ -863,7 +925,8 @@
               "C": "Lisosoma.",
               "D": "Ribosoma."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El **ribosoma** es donde ocurre la traducción: lee el ARN mensajero y va enlazando los aminoácidos en el orden que indica el código, armando la cadena de la proteína. Los hay libres en el citoplasma y adheridos al retículo endoplásmico rugoso.\n\nLos otros tres tienen otro oficio: la mitocondria produce ATP, el aparato de Golgi modifica y empaqueta proteínas *ya hechas* para enviarlas a su destino, y el lisosoma digiere material con sus enzimas hidrolíticas."
           },
           {
             "id": 64,
@@ -876,7 +939,8 @@
               "C": "FAD",
               "D": "ATP"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El **ATP** (adenosín trifosfato) es la \"moneda\" energética de la célula: guarda energía en los enlaces entre sus grupos fosfato y la libera al hidrolizarse a ADP + fosfato, justo donde se necesita para trabajo mecánico, transporte activo o síntesis.\n\nNAD y FAD también participan en el metabolismo, pero como **transportadores de electrones** hacia la cadena respiratoria, no como la molécula que paga directamente el trabajo celular. Y el AMP es la forma con un solo fosfato, ya casi descargada."
           },
           {
             "id": 65,
@@ -889,7 +953,8 @@
               "C": "I, II y III",
               "D": "II y III"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Analiza los enunciados:\n\n- **I es falso**: los descendientes idénticos al progenitor son característicos de la reproducción **asexual** (clones). En la sexual cada hijo recibe una combinación nueva.\n- **II es verdadero**: en la meiosis hay entrecruzamiento y distribución independiente de los cromosomas, y en la fecundación se juntan gametos de dos progenitores al azar; de ahí sale la variabilidad genética.\n- **III es verdadero**: cada gameto es haploide ($n$), y al unirse dos se restablece la condición diploide ($n + n = 2n$) generación tras generación.\n\nQuedan II y III. Si escogiste \"I, II y III\" te ganó la trampa de I: producir copias idénticas no es una ventaja de la reproducción sexual, es precisamente lo que ella *no* hace."
           },
           {
             "id": 66,
@@ -902,7 +967,8 @@
               "C": "minúsculas y mayúsculas (bB).",
               "D": "minúsculas, mayúsculas y minúsculas (bBb)."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Mendel usó una convención muy simple que seguimos hasta hoy: la misma letra para el gen, **mayúscula** para el alelo dominante ($B$) y **minúscula** para el recesivo ($b$). El carácter recesivo sólo se manifiesta cuando el individuo lleva los dos alelos recesivos, $bb$.\n\nLo que aparece en las otras opciones no son formas de escribir un carácter recesivo: $Bb$ es el genotipo de un **heterocigoto**, y ahí lo que se ve es el carácter dominante."
           },
           {
             "id": 67,
@@ -915,7 +981,8 @@
               "C": "originan variabilidad no heredable.",
               "D": "se producen en los individuos menos aptos."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las mutaciones son cambios en el material genético y son la **fuente original de variación heredable**: sin ellas no habría alelos nuevos y la selección natural no tendría material sobre el cual actuar. Primero aparece la variación al azar, después el ambiente favorece a los que resultan mejor adaptados.\n\nLa opción C es la que más se antoja y es justo lo contrario: si la mutación ocurre en las células germinales, sí se hereda. Y A y D suponen que la mutación \"elige\" a quién le toca, cuando en realidad ocurre al azar y puede ser perjudicial, neutra o benéfica."
           },
           {
             "id": 68,
@@ -928,7 +995,8 @@
               "C": "proyecto genoma.",
               "D": "terapia génica."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Lo que describe el enunciado son las técnicas de **ADN recombinante**: cortar el gen con enzimas de restricción, insertarlo en un vector (un plásmido, por ejemplo) y transferirlo a otro organismo para que lo exprese. Ese cortar y volver a pegar material genético de fuentes distintas es lo que da nombre a la recombinación aplicada en el laboratorio, y es la base de productos como la insulina humana producida por bacterias.\n\nEl proyecto genoma fue la tarea de secuenciar todo el ADN humano, y la terapia génica es una aplicación concreta: corregir un gen defectuoso en un paciente."
           },
           {
             "id": 69,
@@ -941,7 +1009,8 @@
               "C": "demostrar de manera experimental que la materia orgánica evolucionó a partir de moléculas simples.",
               "D": "demostrar la evolución biológica de las células eucariontes."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Oparin y Haldane propusieron que en la Tierra primitiva, con una atmósfera sin oxígeno libre y con descargas eléctricas, las moléculas inorgánicas simples pudieron combinarse hasta formar compuestos orgánicos que se acumularon en el mar. Esa hipótesis se pudo llevar al laboratorio: Miller y Urey armaron un sistema cerrado con esos gases y descargas y obtuvieron aminoácidos, es decir, **demostraron experimentalmente** que la materia orgánica puede surgir de moléculas simples.\n\nLas otras opciones son de otros capítulos: la estructura tridimensional del ADN es de Watson y Crick, la biología celular arranca con la teoría celular del siglo XIX, y el origen de la célula eucarionte se explica con la endosimbiosis."
           },
           {
             "id": 70,
@@ -954,7 +1023,8 @@
               "C": "eucarióticas.",
               "D": "autótrofas."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Hongos, plantas y animales son **eucariontes**: sus células tienen núcleo delimitado por membrana y organelos membranosos (mitocondrias, retículo, Golgi). Lo procariótico se queda en bacterias y arqueas, que no tienen núcleo definido.\n\nHeterótrofo y autótrofo (opciones B y D) no son tipos de célula, sino formas de nutrición, y además no las comparten los tres reinos: las plantas son autótrofas, mientras que hongos y animales son heterótrofos. Por eso ninguna de las dos puede ser la característica común."
           },
           {
             "id": 71,
@@ -967,7 +1037,8 @@
               "C": "un bioma.",
               "D": "una raza."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Una **población** es el conjunto de organismos de la misma especie que viven en la misma área y se reproducen entre sí; ese último detalle, que se cruzan, es lo que la distingue de un simple grupo de seres vivos juntos.\n\nEl ecosistema (opción B) es más grande: incluye a todas las poblaciones de la zona *más* el ambiente físico. El bioma es todavía mayor, una gran región con clima y vegetación característicos, y la raza es una subdivisión dentro de una especie."
           },
           {
             "id": 72,
@@ -980,7 +1051,8 @@
               "C": "Descomponedores.",
               "D": "Depredadores."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Los **productores** son los organismos autótrofos: mediante la fotosíntesis toman energía luminosa y con $CO_2$ y agua fabrican materia orgánica. Ellos son los que meten la energía al ecosistema, y de ellos depende todo lo demás; por eso ocupan el primer eslabón y el nivel más ancho de la pirámide alimenticia.\n\nConsumidores y depredadores vienen después, porque necesitan comerse a alguien, y los descomponedores cierran el ciclo al final, devolviendo los nutrientes al suelo."
           }
         ]
       },
@@ -999,7 +1071,8 @@
               "C": "base económica.",
               "D": "función de consumo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En el materialismo histórico, las fuerzas productivas junto con las relaciones de producción (quién es dueño de los medios de producción y cómo se reparte lo producido) forman la **estructura o base económica** de la sociedad. Sobre esa base se levanta la superestructura: el derecho, la política, la religión, las ideas.\n\nAhí está el error de la opción B: para Marx la ideología es lo *determinado* por la base económica, no la base misma. Y \"función de producción\" y \"función de consumo\" son conceptos de la economía neoclásica, de otro marco teórico."
           },
           {
             "id": 74,
@@ -1012,7 +1085,8 @@
               "C": "interés norteamericano por controlar todas las transacciones comerciales en América.",
               "D": "acuerdo de un tratado de paz y límites con todos los pueblos dominados por el Imperio español."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La Doctrina Monroe (1823) se resume en la frase \"América para los americanos\": Estados Unidos advirtió que consideraría un acto hostil cualquier intento europeo de colonizar o intervenir en el continente, y a cambio prometió no meterse en los asuntos de Europa. Surgió justo cuando las nuevas repúblicas latinoamericanas acababan de independizarse y se temía una reconquista con apoyo de la Santa Alianza.\n\nCuidado con A y C: la doctrina no ofrecía apoyo para formar gobiernos republicanos ni hablaba de comercio; el control económico del continente vino después, cuando la doctrina se usó como pretexto de intervención."
           },
           {
             "id": 75,
@@ -1025,7 +1099,8 @@
               "C": "Cartismo.",
               "D": "Liberalismo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El **cartismo** nació en Inglaterra en 1838 y se llama así por la *Carta del Pueblo*, el documento que los obreros presentaron al Parlamento con seis demandas políticas: sufragio universal masculino, voto secreto, salarios para los diputados y eliminación del requisito de propiedad, entre otras. Su método era petición y movilización masiva, no la violencia.\n\nEl ludismo, en cambio, se expresó destruyendo máquinas; el socialismo y el liberalismo son doctrinas, no movimientos con una carta entregada al Parlamento británico."
           },
           {
             "id": 76,
@@ -1038,7 +1113,8 @@
               "C": "Canadá – Guayana – Ts'ing-Tao",
               "D": "India – Congo – Turkestán"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Los tres casos son de los más citados del imperialismo del siglo XIX: **India** fue la \"joya de la corona\" británica; el **Congo** fue primero propiedad personal de Leopoldo II y luego colonia belga; y **Turkestán**, en Asia Central, fue la expansión del Imperio ruso.\n\nLas otras combinaciones mezclan potencias: Marruecos quedó bajo Francia y España, Angola fue portuguesa, y Ts'ing-Tao (Qingdao) fue concesión **alemana** en China, no rusa ni belga."
           },
           {
             "id": 77,
@@ -1051,7 +1127,8 @@
               "C": "desintegración del Imperio astrohúngaro.",
               "D": "integración del bloque soviético."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La Primera Guerra Mundial acabó con cuatro imperios: el austrohúngaro, el alemán, el ruso y el otomano. El austrohúngaro se **desintegró** y de su territorio salieron Austria, Hungría, Checoslovaquia y buena parte de Yugoslavia, reconocidas en los tratados de 1919-1920.\n\nLas otras tres pertenecen a la **Segunda** Guerra Mundial: la ONU se creó en 1945 (la de 1919 fue la Sociedad de Naciones), y tanto los dos bloques como el bloque soviético son ya de la Guerra Fría."
           },
           {
             "id": 78,
@@ -1064,7 +1141,8 @@
               "C": "limitó la intervención militar en el gobierno.",
               "D": "estableció un gobierno democrático."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El Tratado de Versalles dejó a Alemania con pérdidas territoriales, ejército reducido y reparaciones impagables, y eso se sintió como una humillación nacional. El nacionalsocialismo creció explotando precisamente ese resentimiento: la leyenda de la \"puñalada por la espalda\", la promesa de romper el tratado y devolver a Alemania su grandeza, todo sobre el terreno fértil de la crisis económica de 1929.\n\nLa opción B se antoja porque el partido llevaba \"socialista\" en el nombre, pero en los hechos disolvió los sindicatos libres y encarceló a líderes obreros. Y de democracia y control del militarismo, nada: hizo lo contrario en ambos casos."
           },
           {
             "id": 79,
@@ -1077,7 +1155,8 @@
               "C": "I:a – II:c – III:b",
               "D": "I:b – II:c – III:a"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Cada personaje con su régimen:\n\n- **I. Hirohito** → b, el **militarismo** japonés: el emperador reinaba mientras el ejército controlaba el gobierno y la expansión en Asia.\n- **II. Mussolini** → c, el **fascismo** italiano, que él fundó y cuyo nombre viene de los *fasci di combattimento*.\n- **III. Hitler** → a, el **nazismo**, del Partido Nacionalsocialista Obrero Alemán.\n\nO sea I:b – II:c – III:a. El error más común es cruzar a Mussolini con Hitler; acuérdate de que fascismo es italiano y nazismo es alemán."
           },
           {
             "id": 80,
@@ -1090,7 +1169,8 @@
               "C": "indochina.",
               "D": "China."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Ante la invasión japonesa, el Kuomintang de Chiang Kai-shek y el Partido Comunista de Mao pactaron un segundo frente unido y suspendieron su guerra civil. Esa tregua le sirvió enormemente a los comunistas: crecieron en número, organizaron al campesinado y ganaron prestigio como defensores del país. Al rendirse Japón en 1945 la guerra interna se reanudó y en 1949 Mao proclamó la República Popular, culminando la **Revolución China**.\n\nLas otras opciones ni empatan geográficamente: la rusa es de 1917, la francesa de 1789, y la indochina fue contra Francia, sin Kuomintang de por medio."
           },
           {
             "id": 81,
@@ -1103,7 +1183,8 @@
               "C": "fomentar una economía global.",
               "D": "instaurar el uso de armas nucleares en guerras posteriores a 1945."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La Guerra Fría (1947-1991) fue el enfrentamiento entre Estados Unidos y la URSS sin llegar nunca al choque armado directo: la competencia se dio acumulando armamento cada vez más poderoso, sobre todo nuclear, y esa carrera armamentista es su rasgo más característico. El conflicto sí repercutió en todo el mundo (Corea, Vietnam, Cuba), por eso la A no funciona; y las armas nucleares no volvieron a usarse en guerra después de 1945: precisamente el miedo a ellas mantuvo la guerra \"fría\", así que la D tampoco."
           },
           {
             "id": 82,
@@ -1116,7 +1197,8 @@
               "C": "Pacto de Varsovia.",
               "D": "Tratado del Atlántico Norte."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Se firmó en 1967 en Tlatelolco, Ciudad de México —de ahí el nombre— y declaró a América Latina zona libre de armas nucleares: no fabricarlas, recibirlas, almacenarlas ni probarlas, y usar la energía atómica solo con fines pacíficos. El Tratado de Kioto es sobre emisiones de gases de efecto invernadero, y el Pacto de Varsovia y el Tratado del Atlántico Norte (OTAN) son los bloques militares de la Guerra Fría: justo lo contrario de un acuerdo de desarme."
           },
           {
             "id": 83,
@@ -1129,7 +1211,8 @@
               "C": "Frente de Liberación Nacional.",
               "D": "Partido del Congreso Nacional Indio."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El apartheid fue el régimen de segregación racial de Sudáfrica, y quien lo combatió fue el Congreso Nacional Africano, el movimiento de Nelson Mandela: exigía igualdad, redistribución de la tierra, sindicatos obreros y educación para todos. Si dudaste con el Partido del Congreso Nacional Indio, ese es el de Gandhi y Nehru: luchó por la independencia de la India frente a Inglaterra, no contra el apartheid."
           },
           {
             "id": 84,
@@ -1142,7 +1225,8 @@
               "C": "Desaparición del muro de Berlín.",
               "D": "Guerra de los Balcanes."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La caída del muro de Berlín (noviembre de 1989) es el hecho símbolo del derrumbe del bloque socialista: tras ella cayeron en cadena los regímenes de Europa del este, Alemania se reunificó y en 1991 se disolvió la URSS. La Guerra Fría no es un hecho que inicie esos cambios sino el periodo que estaba terminando, y la guerra de los Balcanes fue consecuencia posterior (la desintegración de Yugoslavia), no el detonante."
           },
           {
             "id": 85,
@@ -1155,7 +1239,8 @@
               "C": "II, III y V",
               "D": "III, IV y V"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Ve descartando: la globalización debilita —no refuerza— la soberanía de los países, así que la I es falsa y eliminas A y B. Y lejos de impedir la competencia entre empresas, la exacerba: la IV también es falsa, fuera la D. Quedan II, III y V, que sí describen el fenómeno: facilita el comercio mundial, la impulsan sobre todo los países desarrollados y ha venido acompañada de crisis recurrentes (1994 en México, 1997 en Asia, 2008 global)."
           },
           {
             "id": 86,
@@ -1168,7 +1253,8 @@
               "C": "Comunismo.",
               "D": "Imperialismo."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Esa definición —economías nacionales abiertas, con mercados libres y sin intervención del Estado— corresponde a la globalización: la integración mundial de los mercados bajo la lógica del libre comercio. El comunismo es exactamente lo opuesto (el Estado controla la economía), y el imperialismo es el dominio político y económico de una potencia sobre otras regiones, no la apertura generalizada de los mercados."
           }
         ]
       },
@@ -1187,7 +1273,8 @@
               "C": "Mexica.",
               "D": "Maya."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Los mayas ocuparon el sureste de Mesoamérica: la península de Yucatán (Yucatán, Campeche, Quintana Roo) más Tabasco y Chiapas, extendiéndose hacia Guatemala y Belice. Los olmecas se asentaron en la costa de Veracruz y Tabasco, los totonacas en Veracruz y los mexicas en el centro del país: solo los mayas abarcan los cinco estados de la lista."
           },
           {
             "id": 88,
@@ -1200,7 +1287,8 @@
               "C": "la invasión napoleónica a España y las Reformas Borbónicas.",
               "D": "las Juntas de la Profesa y la abolición de la esclavitud."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Piensa en causas, es decir, en lo que vino antes de 1810. Las Reformas Borbónicas desplazaron a los criollos de los cargos y aumentaron los impuestos, sembrando descontento; y la invasión napoleónica a España (1808) dejó preso al rey y abrió la crisis de legitimidad que los criollos aprovecharon. La abolición de la esclavitud no fue causa sino consecuencia: la decretó Hidalgo ya iniciado el movimiento, y por eso quedan fuera A, B y D."
           },
           {
             "id": 89,
@@ -1213,7 +1301,8 @@
               "C": "I: b y d – II: a y c",
               "D": "I: b y c – II: a y d"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El federalismo es un pacto entre estados libres y soberanos que se asocian (a), y cada estado conserva su propia Constitución política (d): así funcionó la Constitución de 1824. El centralismo, en cambio, suprime los estados y divide el territorio en departamentos (b) con órganos departamentales dependientes del centro (c), como en las Siete Leyes de 1836. Truco rápido: todo lo que diga \"departamental\" es centralismo, y con eso llegas a la B sin dudar."
           },
           {
             "id": 90,
@@ -1226,7 +1315,8 @@
               "C": "Consolidación del proyecto político conservador.",
               "D": "Firma del Tratado de Mon–Almonte."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La Revolución de Ayutla (1854) se levantó justamente contra Antonio López de Santa Anna, y su triunfo en 1855 puso fin a su dictadura y llevó a los liberales al poder; de ahí saldrían las Leyes de Reforma y la Constitución de 1857. El Plan de Tacubaya (1857) y el Tratado Mon-Almonte (1859) son posteriores y del bando conservador: pertenecen al camino hacia la Guerra de Reforma, no son consecuencia directa de Ayutla."
           },
           {
             "id": 91,
@@ -1239,7 +1329,8 @@
               "C": "II, III y V",
               "D": "II, III y IV"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La Constitución de 1857 fue la bandera liberal: proclamó las libertades de enseñanza y prensa (I), incorporó la desamortización prohibiendo a la Iglesia poseer bienes raíces (IV) y organizó al país como república federal (V). Las afirmaciones II y III dicen exactamente lo contrario de lo que hizo: los fueros eclesiásticos se habían suprimido con la Ley Juárez y el régimen era federal, no centralista. Detectar esas dos falsas te deja directo en la B."
           },
           {
             "id": 92,
@@ -1252,7 +1343,8 @@
               "C": "poner en disposición las propiedades de manos muertas.",
               "D": "consolidar la pesada deuda exterior mexicana."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "\"Manos muertas\" eran los bienes raíces de las corporaciones —sobre todo de la Iglesia y de las comunidades— que estaban fuera del mercado porque nunca se vendían. La Ley Lerdo (1856) las obligó a desamortizarlos, es decir, a ponerlos en venta y circulación para activar la economía y crear propietarios individuales. No tocaba los impuestos al comercio exterior ni la deuda; y a los campesinos más bien los perjudicó, porque las tierras comunales también acabaron rematadas."
           },
           {
             "id": 93,
@@ -1265,7 +1357,8 @@
               "C": "Política de conciliación y el fortalecimiento de la milicia.",
               "D": "División del territorio en zonas militares y la centralización administrativa."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En su primer periodo (1876-1880), Díaz gobernó bajo la bandera del Plan de Tuxtepec, cuyo lema central era la no reelección: por eso al terminar entregó la presidencia a Manuel González. Su otra gran tarea fue pacificar el país, combatiendo el bandolerismo y los levantamientos. La represión y la supresión de libertades que asocias con \"el Porfiriato\" corresponden a sus gobiernos posteriores, no a este primero: ahí está la trampa de la B."
           },
           {
             "id": 94,
@@ -1278,7 +1371,8 @@
               "C": "limitar la participación de los obreros en la política.",
               "D": "construir un movimiento favorable a la candidatura de Madero."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El Círculo Liberal fundado por el ingeniero Camilo Arriaga en San Luis Potosí (1901) buscaba reorganizar al liberalismo como movimiento de oposición a la dictadura de Porfirio Díaz; de él saldría después el Partido Liberal Mexicano de los hermanos Flores Magón. La D confunde los tiempos: el movimiento maderista y su candidatura presidencial son de 1909-1910, casi una década después."
           },
           {
             "id": 95,
@@ -1291,7 +1385,8 @@
               "C": "Francisco Villa.",
               "D": "Victoriano Huerta."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Sigue la pista de los datos: jefe del Ejército del Noroeste bajo el Plan de Guadalupe, fiel a Carranza cuando la Convención de Aguascalientes lo desconoció (fue quien derrotó a Villa), llegó a la presidencia tras la rebelión de Agua Prieta (1920) con el grupo sonorense, y en su gobierno se creó la SEP (1921) con Vasconcelos al frente. Todo eso apunta a Álvaro Obregón. Villa fue precisamente su enemigo en el bando convencionista, y ni Cárdenas ni Huerta encajan con ninguno de los cuatro puntos."
           },
           {
             "id": 96,
@@ -1304,7 +1399,8 @@
               "C": "Lázaro Cárdenas.",
               "D": "Abelardo Rodríguez."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El Maximato (1928-1934) toma su nombre del \"Jefe Máximo de la Revolución\": Plutarco Elías Calles, quien tras dejar la presidencia siguió mandando por encima de Portes Gil, Ortiz Rubio y Abelardo Rodríguez. Cuidado con la D: Abelardo Rodríguez fue uno de los presidentes en funciones de ese periodo, no quien extendía su poder sobre ellos. El Maximato terminó cuando Cárdenas rompió con Calles y lo expulsó del país."
           },
           {
             "id": 97,
@@ -1317,7 +1413,8 @@
               "C": "creación del Banco de México.",
               "D": "organización de la comisión de carreteras."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Cárdenas (1934-1940) realizó el mayor reparto agrario hasta entonces y su sello fue el ejido colectivo: tierras trabajadas en común con apoyo y crédito del Estado, como en La Laguna y Yucatán. El Banco de México lo creó Calles en 1925, y el Tratado de Libre Comercio se firmó en el sexenio de Salinas y entró en vigor en 1994: cuidado con atribuirle a Cárdenas obras de otros gobiernos."
           },
           {
             "id": 98,
@@ -1330,7 +1427,8 @@
               "C": "Milagro mexicano.",
               "D": "Unidad nacional."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Al periodo 1952-1970 (Ruiz Cortines, López Mateos, Díaz Ordaz), con crecimiento sostenido por arriba del 6% anual, estabilidad de precios y fuerte construcción de infraestructura, se le conoce como \"milagro mexicano\". Las otras etiquetas pertenecen a otras etapas: el Plan Sexenal fue el programa de Cárdenas, la \"unidad nacional\" es el lema de Ávila Camacho y el \"desarrollo compartido\" fue el proyecto de Echeverría, ya en los setenta."
           },
           {
             "id": 99,
@@ -1343,7 +1441,8 @@
               "C": "México revolucionario.",
               "D": "neoliberalismo."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El EZLN se levantó el 1 de enero de 1994, el mismo día en que entraba en vigor el TLCAN, pieza central del proyecto neoliberal de Salinas. Su mensaje era que la apertura comercial y la modernización dejaban fuera a los pueblos indígenas del sur: por eso el alzamiento puso en entredicho al neoliberalismo. El desarrollo estabilizador y el populismo son modelos de décadas anteriores (cincuenta a setenta), ya superados en 1994."
           },
           {
             "id": 100,
@@ -1356,7 +1455,8 @@
               "C": "Miguel de la Madrid Hurtado y Carlos Salinas de Gortari.",
               "D": "Carlos Salinas de Gortari y Luis Echeverría Álvarez."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El modelo neoliberal —privatizar empresas públicas, abrir la economía al exterior, reducir el papel del Estado— arrancó con Miguel de la Madrid (1982-1988) tras la crisis de la deuda, y Carlos Salinas (1988-1994) lo profundizó con las grandes privatizaciones y el TLCAN. Echeverría y López Portillo representan lo contrario: el Estado interventor y el populismo de los setenta, así que cualquier opción que los incluya queda descartada."
           }
         ]
       },
@@ -1375,7 +1475,8 @@
               "C": "Desarrollo.",
               "D": "Anécdota."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El tema es precisamente eso: la materia o asunto del que trata un texto, lo que puedes enunciar en una frase corta (\"el amor imposible\", \"la fugacidad de la vida\"). El clímax es el momento de máxima tensión, el desarrollo es una parte de la estructura y la anécdota es la serie de hechos que se cuentan: ninguno de los tres nombra el asunto del texto."
           },
           {
             "id": 102,
@@ -1388,7 +1489,8 @@
               "C": "Drama.",
               "D": "Cuento."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La clave está en \"para ser representado\": eso define al género dramático. El drama se escribe en diálogos para llevarse a escena, con fuerzas en conflicto que se resuelven en el desenlace. La novela y el cuento se escriben para leerse, no para representarse; y la farsa es apenas un subgénero cómico del teatro, no el nombre general del texto teatral."
           },
           {
             "id": 103,
@@ -1401,7 +1503,8 @@
               "C": "Tragicomedia.",
               "D": "Entremés."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Cuando el protagonista está condenado de antemano —haga lo que haga, por buenas que sean sus intenciones, no puede escapar de su destino— estás ante una tragedia: piensa en Edipo, que intenta huir del oráculo y justo así lo cumple. En el drama el personaje enfrenta conflictos con posibilidades reales de salir adelante, y la tragicomedia mezcla tonos; la pérdida total de esperanza es la marca exclusiva de lo trágico."
           },
           {
             "id": 104,
@@ -1414,7 +1517,8 @@
               "C": "lo superfluo de la vida.",
               "D": "lo espiritual de la vida."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Todo el poema insiste en lo mismo: \"¡No para siempre aquí: un momento en la tierra!\". Y lo refuerza con imágenes de lo más valioso que también perece: el jade se astilla, el oro se destruye, el plumaje de quetzal se rasga. Eso es la fugacidad: la vida es breve y nada permanece. No confundas: los objetos preciosos no hacen que el tema sea \"lo material\"; son solo ejemplos de que hasta lo más fino se acaba."
           },
           {
             "id": 105,
@@ -1427,7 +1531,8 @@
               "C": "didáctico.",
               "D": "comedia."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El fragmento narra en tercera persona las proezas de un héroe —el rey Arturo, ejemplo \"de valor y cortesía\"— en un mundo de cortes y hazañas caballerescas: eso es el género épico, que cuenta las acciones ejemplares de los héroes. No es lírico porque no expresa los sentimientos de un yo poético, no es didáctico porque no busca enseñar una doctrina, y la comedia es un subgénero del teatro, no de la narración."
           },
           {
             "id": 106,
@@ -1440,7 +1545,8 @@
               "C": "Realismo.",
               "D": "Surrealismo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El Realismo surge en la segunda mitad del siglo XIX como reacción contra el Romanticismo: frente al yo desbordado y el idealismo, propone retratar la sociedad tal como es, con observación casi científica (Balzac, Flaubert, Galdós). El Neoclasicismo es del siglo XVIII —anterior al Romanticismo, no una reacción contra él—, y el vanguardismo y el surrealismo son movimientos del siglo XX."
           },
           {
             "id": 107,
@@ -1453,7 +1559,8 @@
               "C": "Ensayo.",
               "D": "Fábula."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Es prosa narrativa: un narrador cuenta lo que le sucede a un personaje —el forastero que llega a la estación desierta— en una historia breve y concentrada. Eso es un cuento, y de los famosos: \"El guardagujas\" de Juan José Arreola. No es ensayo porque no expone ni argumenta ideas, no es fábula porque no hay animales que hablen ni moraleja, y el entremés es una pieza teatral breve, no narrativa."
           },
           {
             "id": 108,
@@ -1466,7 +1573,8 @@
               "C": "II, III y V",
               "D": "II, IV y V"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El cuento clásico es breve y concentrado: la intriga se vive intensamente desde el inicio (I), las acciones recaen en pocos personajes (III) y su estructura es planteamiento, nudo y desenlace (IV): opción B. Los enunciados II y V —varios nudos e historias paralelas a la principal— describen a la novela, que por su extensión puede ramificarse; el cuento no se lo puede permitir."
           },
           {
             "id": 109,
@@ -1479,7 +1587,8 @@
               "C": "dramático, prosa y tensión constante.",
               "D": "lírico, prosa y estructura narrativa."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La novela pertenece al género narrativo (un narrador cuenta una historia), se escribe en prosa y tiene estructura compleja: muchos personajes, varias tramas, saltos en el tiempo. Con eso descartas rápido: el verso (B) no es lo suyo, lo dramático (C) es teatro y lo lírico (D) es poesía. La estructura compleja es justo lo que la distingue del cuento, que es concentrado y de una sola línea de acción."
           },
           {
             "id": 110,
@@ -1492,7 +1601,8 @@
               "C": "Hemerográfica.",
               "D": "De cita."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La ficha registra los datos de identificación de un libro: autor (Fernández Moreno), título (*América Latina en su literatura*), lugar, editorial, año y página: eso es una ficha bibliográfica. Sería hemerográfica si registrara una revista o periódico (con volumen, número y fecha), de cita si transcribiera un fragmento textual entre comillas, y de resumen si condensara el contenido con tus palabras."
           }
         ]
       },
@@ -1511,7 +1621,8 @@
               "C": "fondo oceánico.",
               "D": "agua."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Dentro del manto terrestre el material caliente sube, se enfría y vuelve a hundirse: esas corrientes de convección arrastran a las placas tectónicas que flotan encima, y con ellas a los continentes (la deriva continental). El fondo oceánico no es el motor: al contrario, su expansión en las dorsales es consecuencia de esas mismas corrientes del manto."
           },
           {
             "id": 112,
@@ -1524,7 +1635,8 @@
               "C": "Tlaxcala y Oaxaca.",
               "D": "Oaxaca y Guerrero."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La Sierra Madre del Sur corre paralela a la costa del Pacífico sur del país, y sus estados característicos son Guerrero y Oaxaca. Descarta con el mapa mental: Veracruz y Tlaxcala están del lado del Golfo y del Altiplano, así que una sierra \"del Sur\" pegada al Pacífico no puede atravesarlos."
           },
           {
             "id": 113,
@@ -1537,7 +1649,8 @@
               "C": "Sureste de Asia.",
               "D": "Medio Oriente."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Las mayores reservas de energéticos —petróleo y gas— se concentran en el Medio Oriente: Arabia Saudita, Irán, Irak, Kuwait y los Emiratos reúnen cerca de la mitad de las reservas mundiales de petróleo, y por eso la región pesa tanto en la geopolítica. Norteamérica produce mucho, pero sus reservas probadas son bastante menores: no confundas producción con reservas."
           },
           {
             "id": 114,
@@ -1550,7 +1663,8 @@
               "C": "las aguas superficiales.",
               "D": "las aguas subterráneas."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Cerca del 70% del agua dulce del planeta está congelada en los glaciares y casquetes polares, sobre todo en la Antártida y Groenlandia. Si pensaste en las aguas subterráneas, van en segundo lugar (alrededor del 30%); y los ríos y lagos, que son el agua dulce que vemos todos los días, apenas representan una fracción mínima, menor al 1%."
           },
           {
             "id": 115,
@@ -1563,7 +1677,8 @@
               "C": "pradera.",
               "D": "selva."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "En la clasificación de Köppen, Af es el clima tropical lluvioso todo el año (la f indica que no hay estación seca). Con calor y lluvia constantes, la vegetación resultante es la selva, como la de la Cuenca del Congo o la Amazonia. La taiga es el bosque frío de coníferas de Siberia y Canadá, y la estepa y la pradera son pastizales de climas secos o templados: nada que ver con un clima ecuatorial."
           },
           {
             "id": 116,
@@ -1576,7 +1691,8 @@
               "C": "la destrucción de la capa de ozono.",
               "D": "la presencia de lluvia ácida."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El bióxido de carbono adicional proviene de quemar combustibles fósiles: la combustión del petróleo (y del carbón y el gas) libera el CO2 que intensifica el efecto invernadero. No lo mezcles con otros problemas ambientales: los aerosoles dañan la capa de ozono y la lluvia ácida viene de óxidos de azufre y nitrógeno; son fenómenos distintos con causas distintas."
           },
           {
             "id": 117,
@@ -1589,7 +1705,8 @@
               "C": "III y IV",
               "D": "IV y V"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Asia Oriental —China, Japón, las dos Coreas— es la región más poblada del planeta, y Europa Occidental es otra de las grandes concentraciones históricas, con densidades altísimas en un territorio pequeño. Asia Occidental es en buena parte desértica y Europa Meridional no alcanza esas magnitudes. Ojo: Asia Meridional (India) también es una gran concentración, pero ninguna opción la junta con Asia Oriental, así que la combinación que reúne dos concentraciones verdaderas es la A."
           },
           {
             "id": 118,
@@ -1602,7 +1719,8 @@
               "C": "Rumania, Bulgaria y Albania.",
               "D": "Letonia, Ucrania y Georgia."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La clave es distinguir entre formar parte de la URSS y estar bajo su influencia. Letonia (república báltica), Ucrania y Georgia (Cáucaso) eran repúblicas soviéticas y se volvieron países independientes al disolverse la Unión en 1991. Polonia, República Checa y Hungría —el distractor clásico— eran países satélites del bloque socialista y del Pacto de Varsovia, pero nunca formaron parte del territorio de la URSS."
           },
           {
             "id": 119,
@@ -1615,7 +1733,8 @@
               "C": "bovina.",
               "D": "ovina."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La Comarca Lagunera es la principal cuenca lechera del país: sus cultivos de forraje, sobre todo alfalfa bajo riego, alimentan al ganado bovino de los establos, y de ahí nacieron las grandes empresas lecheras de la región. Las cabras y ovejas pastan en el semidesierto sin necesitar forraje cultivado; los forrajes apuntan directo al ganado mayor."
           },
           {
             "id": 120,
@@ -1628,7 +1747,8 @@
               "C": "Ciudad Pemex.",
               "D": "Sonda de Campeche."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La palabra \"marítima\" es la pista: la Sonda de Campeche es la zona marina del Golfo de México, frente a las costas de Campeche y Tabasco, donde se ubican los grandes yacimientos costa afuera (como Cantarell) que han aportado la mayor parte del petróleo mexicano. Poza Rica, Ciudad Madero y Ciudad Pemex son centros petroleros terrestres, en Veracruz, Tamaulipas y Tabasco."
           }
         ]
       }

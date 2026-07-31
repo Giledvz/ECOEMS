@@ -1,0 +1,162 @@
+[
+ {
+  "id": 41,
+  "explanation": "Conviene juntar primero los positivos: $0.1709+1.1783=1.3492$. Como el $2.91$ que se resta es más grande, el resultado será negativo y vale la diferencia: alinea los puntos decimales y rellena con ceros, $2.9100-1.3492=1.5608$. Por eso el resultado es $-1.5608$.\n\nSi te dio $-1.5612$ (opción A), fue un error de acarreo al restar: revisa columna por columna."
+ },
+ {
+  "id": 42,
+  "explanation": "El rendimiento son los kilómetros entre los litros. Pasa los mixtos a decimal: $48\\,\\tfrac{2}{5}=48.4$ y $5\\,\\tfrac{1}{2}=5.5$. Entonces $48.4\\div 5.5=8.8\\ \\tfrac{\\text{km}}{\\text{L}}$.\n\nCon fracciones sale igual: $\\dfrac{242}{5}\\div\\dfrac{11}{2}=\\dfrac{242}{5}\\cdot\\dfrac{2}{11}=\\dfrac{484}{55}=8.8$."
+ },
+ {
+  "id": 43,
+  "explanation": "Los coeficientes de $(x+y)^4$ son la fila $1,\\,4,\\,6,\\,4,\\,1$ del triángulo de Pascal:\n\n$$(x+y)^4=x^4+4x^3y+6x^2y^2+4xy^3+y^4$$\n\nAsí que $A=4$, $B=6$ y $C=4$. El coeficiente central también sale con combinaciones: $\\binom{4}{2}=\\dfrac{4\\cdot 3}{2}=6$. Si pusiste $B=12$ (opción A), multiplicaste $4\\cdot 3$ y olvidaste dividir entre $2$.\n\nREVISAR: en el enunciado, el primer término del desarrollo aparece como \"$A$\" cuando debería ser $x^4$; es errata del enunciado, la clave B no cambia."
+ },
+ {
+  "id": 44,
+  "explanation": "Busca dos números que multiplicados den $+30$ y sumados den $-11$. Producto positivo con suma negativa significa que los dos son negativos: $-5$ y $-6$, porque $(-5)(-6)=30$ y $-5-6=-11$. Por eso $x^2-11x+30=(x-5)(x-6)$.\n\nComprueba multiplicando: $x^2-6x-5x+30=x^2-11x+30$. Las opciones con signos $+$ producirían $+11x$ o $+x$, no $-11x$."
+ },
+ {
+  "id": 45,
+  "explanation": "Primero deja la ecuación igualada a cero: $3x^2-2x-5=0$. Con la fórmula general:\n\n$$x=\\frac{2\\pm\\sqrt{(-2)^2-4(3)(-5)}}{2(3)}=\\frac{2\\pm\\sqrt{64}}{6}=\\frac{2\\pm 8}{6}$$\n\nDe ahí $x_1=\\dfrac{10}{6}=\\dfrac{5}{3}$ y $x_2=\\dfrac{-6}{6}=-1$. Comprueba con $x=-1$: $3(1)=3$ y $2(-1)+5=3$. Las otras opciones son las mismas raíces con los signos cambiados: cuidado al sustituir $c=-5$ en la fórmula."
+ },
+ {
+  "id": 46,
+  "explanation": "Multiplica toda la ecuación por $4$ para quitar denominadores: $x+4=2x$. Pasa la $x$ al otro lado y queda $x=4$.\n\nComprueba: $\\dfrac{4}{4}+1=2$ y $\\dfrac{4}{2}=2$. Sí cuadra."
+ },
+ {
+  "id": 47,
+  "explanation": "Junta las $x$ de un lado y los números del otro: $3+8\\leq 6x-5x$, o sea $11\\leq x$, que es lo mismo que $x\\geq 11$. Como nunca dividimos entre un número negativo, el sentido de la desigualdad no cambia.\n\nLos distractores con $\\leq$ vienen de leer $11\\leq x$ al revés o de errores de signo al pasar términos; escribir la $x$ del lado donde queda positiva evita ese enredo."
+ },
+ {
+  "id": 48,
+  "explanation": "Llama $n$ al kilo de naranjas y $m$ al de manzanas: $3n+2m=42$ y $n+3m=49$. De la segunda, $n=49-3m$; sustituye en la primera: $3(49-3m)+2m=42$, es decir $147-7m=42$, de donde $m=15$. Entonces $n=49-3(15)=4$: el kilo de naranjas cuesta \\$4.00.\n\nSi contestaste \\$15.00 (opción A), diste el precio de las manzanas: la pregunta pedía las naranjas."
+ },
+ {
+  "id": 49,
+  "explanation": "Como la primera ecuación ya despeja $y$, sustitúyela en la segunda: $4x+(x-3)=32$, o sea $5x=35$, así que $x=7$ y $y=7-3=4$.\n\nComprueba en la segunda: $4(7)+4=32$. La forma más rápida de descartar opciones en un sistema es sustituirlas en las dos ecuaciones: solo $(7,4)$ cumple ambas."
+ },
+ {
+  "id": 50,
+  "explanation": "En una función racional el único peligro es dividir entre cero. El denominador se anula cuando $x-1=0$, es decir en $x=1$. El dominio son todos los reales menos ese punto: $(-\\infty,1)\\cup(1,\\infty)$, con puros paréntesis porque el $1$ queda excluido.\n\nLa opción A trae corchete en $[1,\\infty)$: eso incluiría al $1$, justo el valor prohibido."
+ },
+ {
+  "id": 51,
+  "explanation": "Simplifica primero: $y=\\dfrac{x(x+1)}{2x}=\\dfrac{x+1}{2}$, válido solo si $x\\neq 0$. La gráfica es una recta con un hueco: en $x=0$ la $y$ valdría $\\dfrac{1}{2}$, pero ese punto no existe. El rango es entonces todo real excepto $\\dfrac{1}{2}$: $\\left(-\\infty,\\dfrac{1}{2}\\right)\\cup\\left(\\dfrac{1}{2},\\infty\\right)$.\n\nLa opción B usa $\\cap$ (intersección) en vez de $\\cup$: la intersección de esos dos intervalos es vacía; para decir \"todo menos un punto\" se usa la unión."
+ },
+ {
+  "id": 52,
+  "explanation": "Resta término a término, distribuyendo el signo menos en toda $f$: $(7x+5y-11)-(2x-3y+5)=7x-2x+5y+3y-11-5=5x+8y-16$. El detalle clave es que $-(-3y)=+3y$ y $-(+5)=-5$.\n\nSi te dio $9x+2y-6$ (opción A), sumaste $g+f$ en vez de restar."
+ },
+ {
+  "id": 53,
+  "explanation": "La equivalencia base es $\\pi$ radianes $=180°$. Multiplica por el factor de conversión:\n\n$$\\frac{4}{3}\\pi\\cdot\\frac{180°}{\\pi}=\\frac{4(180°)}{3}=\\frac{720°}{3}=240°$$\n\nLa $\\pi$ se cancela y solo queda la aritmética. Fíjate que $240°$ es \"$\\tfrac{4}{3}$ de media vuelta\", lo cual suena razonable."
+ },
+ {
+  "id": 54,
+  "explanation": "En la figura, el cateto pegado al ángulo $\\theta$ (el horizontal) mide $2$, el opuesto mide $3$ y la hipotenusa $\\sqrt{13}$ (checa: $2^2+3^2=13$). La secante es el recíproco del coseno, así que se invierte la razón:\n\n$$\\sec\\theta=\\frac{\\text{hipotenusa}}{\\text{cateto adyacente}}=\\frac{\\sqrt{13}}{2}$$\n\nSi elegiste $\\dfrac{2}{\\sqrt{13}}$ (opción A), diste el coseno; y $\\dfrac{\\sqrt{13}}{3}$ (D) es la cosecante, que usa el cateto opuesto."
+ },
+ {
+  "id": 55,
+  "explanation": "La exponencial $e^x$ acepta cualquier valor de $x$, y dividir entre $-5$ no prohíbe nada: el dominio es $(-\\infty,\\infty)$. Para el rango, recuerda que $e^x>0$ siempre; al dividir entre $-5$ todos esos valores positivos se vuelven negativos, así que $f(x)<0$ y el rango es $(-\\infty,0)$.\n\nLa opción C es el rango de $e^x$ a secas: olvidar el signo negativo, que refleja la curva por debajo del eje $x$."
+ },
+ {
+  "id": 56,
+  "explanation": "Aplica la fórmula de distancia:\n\n$$d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}=\\sqrt{(1-(-1))^2+(-1-1)^2}=\\sqrt{2^2+(-2)^2}=\\sqrt{8}$$\n\nOjo con los signos: $1-(-1)=2$. Si te dio $2$ (opción B), probablemente sacaste raíz a cada cuadrado por separado; primero se suman los cuadrados y al final se saca una sola raíz."
+ },
+ {
+  "id": 57,
+  "explanation": "La pendiente es el cambio en $y$ entre el cambio en $x$:\n\n$$m=\\frac{y_2-y_1}{x_2-x_1}=\\frac{5-2}{1-3}=\\frac{3}{-2}=-\\frac{3}{2}$$\n\nTiene sentido que sea negativa: al pasar de $A$ a $B$ la $x$ baja y la $y$ sube. Si te dio $-\\dfrac{2}{3}$ (opción C), invertiste la fórmula poniendo las $x$ en el numerador."
+ },
+ {
+  "id": 58,
+  "explanation": "Rectas paralelas comparten pendiente. Primero la de la recta $QR$: $m=\\dfrac{0-(-6)}{0-2}=\\dfrac{6}{-2}=-3$. Ahora usa punto-pendiente con $P(5,2)$:\n\n$$y-2=-3(x-5)\\ \\Rightarrow\\ y=-3x+17$$\n\nComprueba: con $x=5$, $y=-15+17=2$. Las demás opciones tienen pendientes $-2$, $-4$ y $-5$, que no son la de $QR$, así que no pueden ser paralelas a ella."
+ },
+ {
+  "id": 59,
+  "explanation": "Una circunferencia con centro en el origen es $x^2+y^2=r^2$. Con radio $2$: $x^2+y^2=4$, que igualada a cero es $x^2+y^2-4=0$.\n\nLa opción C, $x^2+y^2+2=0$, equivale a $x^2+y^2=-2$: imposible, una suma de cuadrados nunca es negativa. Y la D resta los cuadrados: eso es una hipérbola, no una circunferencia."
+ },
+ {
+  "id": 60,
+  "explanation": "Compara con la forma $x^2+y^2=r^2$: no hay términos $(x-h)$ ni $(y-k)$, así que el centro es $C(0,0)$, y $r^2=20$, de donde $r=\\sqrt{20}$ (que también puedes escribir $2\\sqrt{5}$).\n\nSi elegiste $R=20$ (opción A), tomaste el radio al cuadrado como si fuera el radio: la ecuación siempre trae $r^2$, no $r$."
+ },
+ {
+  "id": 61,
+  "explanation": "Compara con la forma $(x-h)^2=4p(y-k)$: de $(x-1)^2$ sale $h=1$ y de $(y+3)=(y-(-3))$ sale $k=-3$, así que $V(1,-3)$. Como $4p=8$, $p=2$ y el signo positivo indica que abre hacia arriba: el foco queda $p$ unidades arriba del vértice, $F(1,-3+2)=F(1,-1)$.\n\nSi pusiste $F(1,-5)$ (opción D), bajaste el foco: eso pasaría solo si la parábola abriera hacia abajo, con $4p$ negativo."
+ },
+ {
+  "id": 62,
+  "explanation": "El centro se lee directo de los binomios de la forma canónica: $(x-h)$ y $(y-k)$. Aquí $(x-1)^2$ da $h=1$, y como la $y$ aparece sola ($y^2$, sin binomio), $k=0$. El centro es $C(1,0)$.\n\nLa opción C sería el centro si la ecuación no tuviera el corrimiento $(x-1)$; ese $-1$ dentro del cuadrado mueve la curva una unidad a la derecha.\n\nREVISAR: la ecuación trae signo menos entre los términos, así que en realidad es una hipérbola, no una elipse; el centro $(1,0)$ es correcto igual, pero convendría corregir el enunciado o el signo."
+ },
+ {
+  "id": 63,
+  "explanation": "Es la definición textual de la hipérbola: los puntos donde el valor absoluto de la DIFERENCIA de distancias a los dos focos es constante (y menor que la distancia entre ellos).\n\nEl distractor natural es la elipse (C): ahí lo constante es la SUMA de las distancias a los focos, no la diferencia. La palabra \"diferencia\" es la que decide."
+ },
+ {
+  "id": 64,
+  "explanation": "Fíjate en los cuadrados: solo $y$ está al cuadrado y la $x$ aparece lineal ($4x$). Una sola variable cuadrática con la otra lineal es la firma de la parábola (aquí horizontal). Para ubicar el vértice, completa el cuadrado: $y^2+2y=-4x-16$, o sea $(y+1)^2=-4x-15=-4\\left(x+\\dfrac{15}{4}\\right)$: vértice en $\\left(-\\dfrac{15}{4},-1\\right)$, fuera del origen.\n\nPara que fuera elipse se necesitarían $x^2$ y $y^2$, ambos presentes y con el mismo signo."
+ },
+ {
+  "id": 65,
+  "explanation": "El texto se limita a informar hechos de una escena: la hora, el calor, el organillero, el carro de sonido que interrumpe. No busca influir en el lector ni expresar emociones del emisor: transmite información sobre la realidad, y esa es la función referencial.\n\nLa \"poética\" (D) tienta porque la escena suena literaria, pero esa función exige que el lenguaje mismo sea el protagonista (ritmo, figuras, juego verbal); aquí lo que domina es contar qué ocurre."
+ },
+ {
+  "id": 66,
+  "explanation": "El texto le habla de frente al receptor (\"tú, querida amiga, amigo querido\") y remata con órdenes: \"¡Para con esa angustia! ¡Somos tu solución!\". Cuando el mensaje busca mover al receptor a actuar —típico de la publicidad— la función es la apelativa (o conativa).\n\nLa emotiva (D) es el distractor: esa función expresa los sentimientos del EMISOR, y aquí la angustia mencionada es la del receptor, usada justamente para empujarlo a comprar."
+ },
+ {
+  "id": 67,
+  "explanation": "El fragmento cuenta acciones de un personaje que avanzan en el tiempo: \"pensó que la única forma... y comenzó a externar su parecer...\". Hay narrador, personaje (la rana) y una secuencia de hechos: eso es narración.\n\nNo es argumentativa (A): aunque se habla de opiniones y aprobación, nadie defiende una tesis con razones; se relata lo que la rana hizo."
+ },
+ {
+  "id": 68,
+  "explanation": "En A hay una postura (elegir con calma el nombre de la marca) sostenida con razones: el nombre evolucionará hasta ser la identidad corporativa y POR TANTO hay que tomarse el tiempo necesario. Premisas y conclusión con nexo argumentativo: eso es argumentar.\n\nOjo con D: su \"Por tanto tráfico...\" no es el conector \"por lo tanto\", significa \"por tanta cantidad de tráfico\"; ese párrafo solo informa una noticia. B narra una anécdota y C es expresión lírica."
+ },
+ {
+  "id": 69,
+  "explanation": "El grueso del texto expone y explica: qué son los organismos colectivos, ejemplos reales (hormigas, abejas), cómo el lenguaje funciona como acervo compartido y la escritura como memoria externa, con datos y ejemplos encadenados. Es un texto de divulgación: estructura informativa.\n\nEl distractor fuerte es \"argumentativo\" (D), porque el autor opina al final; pero esas ideas van matizadas con \"quizá\" y no organizan el texto como defensa de una tesis: predomina la exposición de información."
+ },
+ {
+  "id": 70,
+  "explanation": "La opción A recoge la idea que abre y cierra el texto: la humanidad va camino a ser algo más que un conjunto de individuos (\"estamos pensando colectivamente, como sociedad, más intensamente que nunca\"), es decir, empieza a comportarse como un solo organismo.\n\nEl distractor D repite casi lo mismo, pero atribuye el proceso a la \"transmisión de pensamiento\", que el tercer párrafo descarta explícitamente (\"no pasa de ser una fantasía\"). B se queda corta: el lenguaje es solo una parte del argumento, no la idea global."
+ },
+ {
+  "id": 71,
+  "explanation": "La respuesta está pegada a la frase del propio texto: el lenguaje es \"telepatía\" rudimentaria porque \"nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura\". O sea: distintos cerebros generan y comparten cultura, opción D.\n\nEl distractor C habla de \"transmisión del pensamiento\", justo lo que el texto niega que exista; la gracia del lenguaje es que logra algo parecido SIN transmitir pensamientos."
+ },
+ {
+  "id": 72,
+  "explanation": "Hay que unir dos piezas: el segundo párrafo liga las mentes conectadas \"mediante algo semejante a la telepatía\" con formar un \"superorganismo\", y el final dice que la discusión en redes sociales \"quizá sea el embrión de la verdadera telepatía humana\". Si las redes son el embrión de esa telepatía, se infiere que harán posible el superorganismo: opción D.\n\nB contradice al texto (las colonias de hormigas son organismos colectivos reales, no ficción) y C también (la transmisión de pensamiento es fantasía)."
+ },
+ {
+  "id": 73,
+  "explanation": "Una opinión trae marcas de subjetividad o duda. En B, el \"tal vez\" (el \"quizá\" del texto original) delata que es una conjetura del autor: nadie puede verificar hoy que las redes sean \"el embrión de la verdadera telepatía humana\"; es lo que él cree.\n\nLas otras opciones se presentan en el texto como afirmaciones de hecho, sin modalizadores: por ejemplo, D es un dato sobre el desarrollo del lenguaje, no una postura personal."
+ },
+ {
+  "id": 74,
+  "explanation": "El sujeto tácito no está escrito: lo delata la conjugación del verbo. En \"Somos nada frente a la muerte infausta\" no aparece \"nosotros\", pero \"somos\" (primera persona del plural) lo revela.\n\nEn D el sujeto está explícito (\"Yo\"); en C sí aparece, solo que después del verbo (\"mi alma\"); y en B el sujeto es \"aquel que busca a Dios en sí mismo\". Que el sujeto vaya detrás del verbo no lo vuelve tácito: tácito es que no aparezca."
+ },
+ {
+  "id": 75,
+  "explanation": "El objeto directo recibe la acción del verbo y se puede sustituir por \"lo/la\": \"Compró la computadora\" se convierte en \"La compró\", así que \"la computadora\" es objeto directo.\n\nB y D ni siquiera tienen verbo (son frases nominales sueltas), y en C el verbo \"ser\" no lleva objeto directo: \"inteligente\" es un atributo, por eso no puedes decir \"el elefante lo es\" con el mismo sentido de recibir una acción."
+ },
+ {
+  "id": 76,
+  "explanation": "En A hay dos ambigüedades montadas: el gerundio \"engañando\" puede colgarse de Juan (vio mientras engañaba) o de Martín (lo vio engañar), y \"su suegra\" puede ser la de cualquiera de los dos. Como las lecturas son igual de plausibles, la oración de verdad se entiende de varias maneras: ese es el error sintáctico.\n\nEn B la frase \"que nunca existió\" está mal colocada (parece describir al árbitro), pero el sentido común solo deja viva una lectura: la que nunca existió fue la falta.\n\nREVISAR: las opciones B y D parecen traer erratas de captura (\"una alta falta\" por \"una falta alta\"; \"se le como\" por \"se lee cómo\"); la clave A no cambia."
+ },
+ {
+  "id": 77,
+  "explanation": "Ve hueco por hueco. Primero: querían colaborar PERO no tenían los requisitos: contraste, va \"pero\". Segundo: de ahí se sigue una consecuencia: \"en consecuencia, tuvieron que resignarse\". Tercero: el verbo manda, y uno se resigna A algo: \"resignarse a la realización\".\n\nLa opción A arranca bien con \"sin embargo\", pero \"no obstante\" no introduce consecuencia (vuelve a oponer) y \"resignarse con\" no es el régimen correcto del verbo."
+ },
+ {
+  "id": 78,
+  "explanation": "En A cada conector corresponde a la relación real entre las ideas y las oraciones quedan completas y bien puntuadas.\n\nLas otras mezclan nexos que chocan o sobran: en B \"además de la cual\" no es construcción válida y ese \"No obstante\" no opone nada; en C \"debido a que... por lo que...\" duplica la relación causal y deja la primera oración sin cerrar; en D \"la que\" está mal usado como relativo (sería \"que\" o \"la cual\") y \"en relación a la facilidad\" cambia el sentido, además de que lo correcto es \"en relación con\"."
+ },
+ {
+  "id": 79,
+  "explanation": "La relación es de unidad a conjunto en el mismo nivel: varios versos forman una estrofa, igual que varias oraciones forman un párrafo. Además el paralelo es limpio entre poesía y prosa: el verso es el enunciado de la poesía y la estrofa su bloque, como la oración y el párrafo lo son de la prosa.\n\n\"Palabra a oración\" (D) también es parte-todo, pero un escalón abajo: el verso no equivale a una palabra suelta, sino a una línea con sentido, como la oración."
+ },
+ {
+  "id": 80,
+  "explanation": "En español, \"bizarro\" significa valiente, gallardo; usarlo como \"raro\" es un calco del inglés *bizarre*. Su antónimo es entonces \"pusilánime\": el que carece de ánimo y valor, el cobarde.\n\nPor eso \"audaz\" y \"valiente\" (A y B) quedan descartados: son sinónimos, no antónimos. Y \"normal\" (C) solo funciona si caes en el falso sentido de \"extraño\": es la trampa del reactivo."
+ }
+]

@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "Fíjate en la forma de la línea: es una recta. En una gráfica posición–tiempo la pendiente es la velocidad, y una recta tiene la misma pendiente en todos sus puntos: el tren recorre distancias iguales en tiempos iguales, o sea velocidad constante (y aceleración cero). Si la velocidad cambiara, la gráfica $x$–$t$ se curvaría.\n\nEl error típico es pensar que “recta inclinada = aceleración constante” (opción A): eso valdría si fuera una gráfica velocidad–tiempo, no una de posición."
+ },
+ {
+  "id": 2,
+  "explanation": "El procedimiento es descomponer cada vector con la tabla y sumar por ejes. Según la figura: $8$ N a $30°$ sobre el eje $x$ positivo, $9$ N a $75°$ bajo el eje $x$ positivo y $10$ N a $45°$ bajo el eje $x$ negativo. La componente en $x$ lleva coseno y la de $y$ seno, cada una con el signo de su cuadrante. Sumas todas las $x$, sumas todas las $y$, y la magnitud sale con Pitágoras:\n\n$$R=\\sqrt{F_x^2+F_y^2}$$\n\nOjo al truco del reactivo: las opciones ya vienen escritas como raíces, así que no necesitas sacar ninguna raíz; te basta calcular $F_x^2+F_y^2$ y comparar con el número de adentro. La clave oficial es $\\sqrt{101.1}\\approx 10$ N.\n\nREVISAR: con la figura tal cual está, $F_x=8(0.8)+9(0.3)-10(0.7)=2.1$ y $F_y=8(0.5)-9(0.9)-10(0.7)=-11.1$, o sea $R=\\sqrt{127.6}$, que no es ninguna opción. Probé variantes: intercambiando seno/coseno de los vectores de 8 N y 9 N sale $\\sqrt{75.8}$ (opción A) y sumando todas las componentes sin signos sale $\\sqrt{650}$ (opción C), pero ninguna combinación de ángulos/signos con la tabla me da $101.1$. Posible errata en los ángulos de la figura o en la clave."
+ },
+ {
+  "id": 3,
+  "explanation": "Las dos fuerzas jalan en sentidos contrarios, así que la fuerza neta es la resta: $F = 30 - 20 = 10$ N. Ya con la fuerza neta aplicas la segunda ley de Newton:\n\n$$a = \\frac{F}{m} = \\frac{10}{100} = 0.1$$\n\nen m/s². Si te dio $0.5$ (opción D), sumaste las fuerzas ($50/100$): solo se suman cuando apuntan en el mismo sentido."
+ },
+ {
+  "id": 4,
+  "explanation": "El objeto parte del reposo y el dato clave es la distancia que YA cayó: $h$. Por conservación de energía, la potencial perdida en esa caída se convierte en cinética: $mgh = \\frac{1}{2}mv^2$, y al despejar queda $v = (2gh)^{1/2}$. Nota que $H$ ni siquiera aparece: la rapidez solo depende de lo que llevas caído.\n\nLa opción B, $[2g(H-h)]^{1/2}$, responde otra pregunta: la rapidez cuando el objeto está a una altura $h$ del suelo, es decir, cuando ha caído $H-h$."
+ },
+ {
+  "id": 5,
+  "explanation": "Para un choque elástico donde B está en reposo hay fórmulas directas: $U_A=\\frac{m_A-m_B}{m_A+m_B}\\,v_A$ y $U_B=\\frac{2m_A}{m_A+m_B}\\,v_A$. Con $m_B=2m_A$:\n\n$$U_A=\\frac{m-2m}{3m}(6)=-2 \\qquad U_B=\\frac{2m}{3m}(6)=4$$\n\nen m/s. El signo negativo dice que A rebota hacia atrás, lo esperable cuando chocas con algo del doble de masa. Comprueba que todo cuadra: momento antes $m(6)=6m$ y después $m(-2)+2m(4)=6m$; energía cinética $18m$ en ambos lados.\n\nLa opción D trae los mismos números pero sin el signo: con $U_A=+2$ el momento daría $m(2)+2m(4)=10m\\neq 6m$, y no se conserva."
+ },
+ {
+  "id": 6,
+  "explanation": "El equilibrio térmico es una relación ENTRE sistemas: dos cuerpos en contacto térmico intercambian calor hasta que sus temperaturas se igualan, y en ese momento el flujo neto de calor cesa. Esa igualdad de temperaturas es justo la definición (y la base de la ley cero de la termodinámica, que es la que permite que un termómetro funcione).\n\nLa opción A describe un proceso isotérmico: que TU temperatura no varíe durante un proceso no dice nada de estar en equilibrio con otro sistema."
+ },
+ {
+  "id": 7,
+  "explanation": "La teoría cinética modela las moléculas del gas como esferas duras: rígidas, que no se deforman al chocar, y gracias a eso sus choques son perfectamente elásticos, sin pérdida de energía. Las opciones A y B contradicen la idea central del modelo: las moléculas se mueven continuamente y a gran rapidez (por algo se llama “cinética”). Y si fueran deformables (D), perderían energía en cada choque y la presión del gas decaería sola, cosa que no ocurre."
+ },
+ {
+  "id": 8,
+  "explanation": "Cuenta los ciclos completos en la figura: en los $90$ cm de cuerda caben exactamente $5$ ondas completas (cada una con su cresta y su valle). La longitud de onda es lo que mide UN ciclo:\n\n$$\\lambda = \\frac{90\\ \\text{cm}}{5\\ \\text{ciclos}} = 18\\ \\text{cm/ciclo}$$\n\nSi te dio $9$ cm (opción C), contaste los vientres: hay $10$, pero cada vientre es media longitud de onda, no una completa."
+ },
+ {
+  "id": 9,
+  "explanation": "Un aislante dificulta el paso de la corriente porque sus electrones están fuertemente ligados a los átomos: casi no hay cargas libres que puedan moverse. Fíjate en el matiz que hace correcta a B y falsa a A: “difícil” no es “imposible”. No existe el aislante perfecto; con voltaje suficiente cualquier material deja pasar algo de corriente. Ser químicamente puro (C) o tener carga en la superficie (D) no tiene que ver con aislar."
+ },
+ {
+  "id": 10,
+  "explanation": "La resistencia de un alambre es $R=\\rho\\frac{L}{A}$. Reducir la longitud a la mitad divide $R$ entre $2$, pero reducir el diámetro a la mitad deja el área en la CUARTA parte, porque $A=\\frac{\\pi d^2}{4}$ depende del cuadrado del diámetro, y eso multiplica $R$ por $4$. En conjunto:\n\n$$R_2=\\rho\\,\\frac{L/2}{A/4}=2\\,\\rho\\frac{L}{A}=2R_1$$\n\nSi te dio $R_1$ (opción C), dividiste el área entre $2$ en vez de entre $4$: olvidaste que el área va con el cuadrado del diámetro."
+ },
+ {
+  "id": 11,
+  "explanation": "Newton defendió la teoría corpuscular de la luz: un chorro de partículas materiales emitidas por la fuente luminosa, con el que explicaba la propagación en línea recta y la reflexión. Las otras tres opciones hablan de ondas, difracción e interferencia: ésa es la teoría ondulatoria de Huygens (confirmada después por Young y Fresnel), es decir, exactamente la postura rival a la de Newton."
+ },
+ {
+  "id": 12,
+  "explanation": "Marie Curie es la única persona que ha ganado el Nobel en dos ciencias distintas: el de **Física** en 1903, compartido con Pierre Curie y Henri Becquerel por las investigaciones sobre la radiactividad, y el de **Química** en 1911, por el descubrimiento del polonio y el radio."
+ },
+ {
+  "id": 13,
+  "explanation": "Un texto es cabal cuando está completo y forma una unidad de sentido: no le faltan partes y todo lo que contiene apunta a un mismo asunto global, sin cabos sueltos. Los datos comprobables o la opinión del autor pueden aparecer o no según el tipo de texto (científico, de opinión...), pero no definen la cabalidad, que es una propiedad de cualquier texto bien construido."
+ },
+ {
+  "id": 14,
+  "explanation": "Informar sobre hechos de actualidad, opinar sobre ellos y buscar persuadir al lector son las tres funciones clásicas del texto periodístico: la nota informa, el artículo y el editorial opinan y persuaden. El texto científico (B) informa pero evita la opinión y la persuasión, y el literario (D) busca crear una experiencia estética, no dar información."
+ },
+ {
+  "id": 15,
+  "explanation": "El texto dramático se escribe con la intención de ser representado en un escenario: por eso está construido con diálogos y acotaciones, pensado para actores frente a un público, no para un lector a solas. Ésa es su seña de identidad frente al narrativo y al poético, que se escriben para ser leídos, y al periodístico, que se escribe para informar."
+ },
+ {
+  "id": 16,
+  "explanation": "El fragmento narra en tercera persona las hazañas de un héroe: el rey Arturo, “cuyas proezas son para nosotros ejemplo de valor y cortesía”, con su corte, sus fiestas y su mundo caballeresco. Narrar los hechos de héroes que encarnan los valores de un pueblo es justo el género épico. No es lírico (no expresa los sentimientos de un yo poético) ni dramático o tragedia (no está escrito en diálogos para representarse)."
+ },
+ {
+  "id": 17,
+  "explanation": "Una corriente literaria exige tres cosas a la vez: forma de escribir compartida, interés por temas similares y pertenencia a una misma época. La opción C se antoja porque repite dos de las tres, pero cambia “misma época” por “heredan el estilo de quienes los precedieron”: si hay herencia entre generaciones distintas, eso ya es tradición o influencia, no una corriente, que es un fenómeno de contemporáneos."
+ },
+ {
+  "id": 18,
+  "explanation": "Objetividad del narrador, descripción minuciosa y segunda mitad del siglo XIX: ése es el retrato del Realismo (Flaubert, Galdós, Tolstói), que busca reflejar la realidad social como si fuera un documento. Además surge justo como reacción contra el Romanticismo (opción A), donde dominaban la subjetividad y el sentimiento, así que esa opción es exactamente lo contrario de lo que describe el enunciado."
+ },
+ {
+  "id": 19,
+  "explanation": "El requisito es que AMBOS autores sean contemporáneos, y eso solo lo cumple la opción A: Mariana Enríquez es una escritora argentina actual y José Saramago (Nobel 1998) escribió hasta el siglo XXI. En cada una de las otras parejas se cuela al menos un autor del siglo XIX: Charlotte Brontë, Nicolás Gógol, Jane Austen y Mary Shelley pertenecen al romanticismo y al realismo decimonónicos."
+ },
+ {
+  "id": 20,
+  "explanation": "El cuento es una narración breve en prosa que se concentra en UN solo conflicto, con pocos personajes, y que suele rematar con un final sorpresivo o de efecto: exactamente lo que dice la opción B. Las opciones A y C describen a la novela (muchos personajes, gran extensión, personajes con hondura psicológica y trama compleja), y la D falla desde el arranque: el cuento es narrativo, no expositivo."
+ },
+ {
+  "id": 21,
+  "explanation": "“Hemerográfica” viene de hemeroteca: registra publicaciones periódicas, como diarios y revistas. La única ficha con esas señas es la C: trae la fecha completa de publicación (2005, 31 de septiembre), el título del artículo entre comillas y el nombre del periódico, *El País*. Las fichas A y D son bibliográficas (libros completos) y la B registra un capítulo dentro de un libro, no una publicación periódica."
+ },
+ {
+  "id": 22,
+  "explanation": "Después de los datos bibliográficos, quien elaboró la ficha JUZGA el libro: “tiene, sin embargo, como mérito principal...”, “sin mayor aparato crítico”. Esa valoración personal es la marca de la ficha de comentario. No es textual porque no hay cita entre comillas del contenido; y no es resumen ni paráfrasis porque no condensa ni reformula lo que dice el libro: lo evalúa desde afuera."
+ },
+ {
+  "id": 23,
+  "explanation": "La familia A se lee en los electrones de valencia, los del nivel más externo. Aquí el último nivel es el $3$, y en él hay $3s^2\\,3p^5$, es decir $2+5=7$ electrones de valencia: familia VII A, los halógenos (con $Z=17$, el elemento es el cloro). No confundas los papeles de cada número: el nivel externo ($3$) te da el periodo, el renglón de la tabla; los $7$ electrones de valencia te dan la familia, la columna."
+ },
+ {
+  "id": 24,
+  "explanation": "“Igual número de átomos” se traduce como “igual número de moles”. Los $6.0$ g de carbono son $\\frac{6.0}{12}=0.5$ mol de átomos. Necesitas entonces $0.5$ mol de níquel, y con su masa molar ($58.7$ g/mol):\n\n$$0.5 \\times 58.7 \\approx 29.3\\ \\text{g}$$\n\nSi te dio $1.23$ g (opción B), invertiste la proporción ($6\\times\\frac{12}{58.7}$). Para atraparlo sin calcular: cada átomo de níquel pesa más que uno de carbono, así que la masa debía salir mayor que $6$ g, no menor."
+ },
+ {
+  "id": 25,
+  "explanation": "Para que haya puente de hidrógeno se necesita un H unido covalentemente a un átomo muy electronegativo (N, O o F), atraído por los pares libres de otro N, O o F. Eso solo ocurre en la estructura B: el oxígeno del agua interactúa con el H del grupo O–H del metanol, un hidrógeno unido a oxígeno. En las demás el H viene de H–H (A), de H–I (C) o de un enlace C–H del metano (D): ninguno está unido a N, O ni F, así que no queda lo bastante polarizado para formar el puente."
+ },
+ {
+  "id": 26,
+  "explanation": "En la teoría de Lewis todo gira alrededor del par de electrones: **base** es la especie que DONA el par y **ácido** la que lo ACEPTA. El propio enunciado te da la pista: el nitrógeno del $NH_3$ dona su par libre, así que el amoniaco es la base; el boro del $BF_3$, que tiene un orbital vacío, acepta ese par: es el ácido. La opción D es el volteo clásico de las dos definiciones."
+ },
+ {
+  "id": 27,
+  "explanation": "Primero convierte los gramos a moles. La masa molar del NaOH es $23+16+1=40$ g/mol, así que $20$ g son $\\frac{20}{40}=0.5$ mol. Luego divide entre el volumen de la disolución:\n\n$$M=\\frac{0.5\\ \\text{mol}}{2\\ \\text{L}}=0.25\\ \\text{mol/L}$$\n\nSi te dio $0.50$ (opción B), te quedaste en los moles y olvidaste dividir entre los $2$ litros."
+ },
+ {
+  "id": 28,
+  "explanation": "El calcio es un METAL, y la regla es directa: metal + oxígeno forma un óxido metálico, también llamado óxido básico, porque al reaccionar con agua produce una base: $CaO + H_2O \\rightarrow Ca(OH)_2$, el hidróxido de calcio. Los óxidos ácidos (opción C) son los que forman los NO metales, como $CO_2$ o $SO_2$, que con agua dan ácidos."
+ },
+ {
+  "id": 29,
+  "explanation": "Es ley de Hess: acomoda las dos ecuaciones para que, sumadas, den la reacción pedida. La primera divídela entre $2$: $C+\\frac{1}{2}O_2\\rightarrow CO$, con $\\Delta H=-110.5$ kJ. La segunda divídela entre $2$ y además INVIÉRTELA, porque el agua debe quedar como reactivo: $H_2O\\rightarrow H_2+\\frac{1}{2}O_2$, con $\\Delta H=+241.8$ kJ (al invertir, el signo cambia). Sumando, el $\\frac{1}{2}O_2$ se cancela y queda $H_2O+C\\rightarrow CO+H_2$:\n\n$$\\Delta H = -110.5 + 241.8 = +131.3\\ \\text{kJ}$$\n\nSi te dio $-352.3$ (opción C), sumaste las dos mitades sin invertir la del agua: se te fue el cambio de signo."
+ },
+ {
+  "id": 30,
+  "explanation": "Hay que leer dos cosas en la estructura. Primero el grupo funcional: arriba está el $-CHO$, un carbonilo en el EXTREMO de la cadena, o sea un aldehído: prefijo “aldo”. Luego cuenta los carbonos: el del $CHO$, dos $CHOH$ intermedios y el $CH_2OH$ final: son $4$, sufijo “tetrosa”. Junta las piezas: aldotetrosa.\n\nSi contestaste aldotriosa (opción A), lo más seguro es que no contaste el carbono del propio grupo aldehído; y sería “ceto” solo si el $C=O$ estuviera en un carbono intermedio, no en la punta."
+ },
+ {
+  "id": 31,
+  "explanation": "El nombre lo trae escrito: amino + ácido. Todo aminoácido tiene el grupo amino $-NH_2$ y el grupo carboxilo (ácido) $-COOH$, unidos al mismo carbono, el carbono alfa. La opción B ($-CHO$) es un aldehído y el $-CO-$ de la C es una cetona: grupos de otras familias. Y el $-CONH_2$ (amida) aparece cuando los aminoácidos ya se unieron en el enlace peptídico, pero no es el grupo del aminoácido libre."
+ },
+ {
+  "id": 32,
+  "explanation": "La brújula es $\\Delta G = \\Delta H - T\\Delta S$: espontánea significa $\\Delta G<0$. Ya te dicen que $\\Delta H$ es negativo; para que $\\Delta G$ salga negativo a CUALQUIER temperatura, el término $-T\\Delta S$ nunca debe estorbar, y eso exige $\\Delta S$ positivo: así $-T\\Delta S$ es negativo a toda $T$ y ambos términos empujan hacia lo espontáneo. Con $\\Delta S$ negativo (opción D), al subir la temperatura el término $-T\\Delta S$ se vuelve positivo y grande, y la reacción dejaría de ser espontánea: ya no sería “a cualquier temperatura”."
+ },
+ {
+  "id": 33,
+  "explanation": "Carbono con estructura tetraédrica significa hibridación $sp^3$: sus cuatro enlaces son sencillos. Eso solo lo cumplen los alcanos, y la única pareja de alcanos es metano ($CH_4$) y propano ($C_3H_8$). Las demás opciones esconden enlaces múltiples: el etileno y el benceno tienen carbonos trigonales ($sp^2$, por el doble enlace) y el etino, el butino y el propino tienen carbonos lineales ($sp$, por el triple)."
+ },
+ {
+  "id": 34,
+  "explanation": "Fíjate en qué pasa con la doble ligadura: el $CH_2=CH_2$ la abre y con esos electrones cada monómero se engancha al siguiente, uno tras otro, sin que sobre ni falte ningún átomo: todos los átomos del etileno quedan en el polímero. Eso es una polimerización por adición, la que produce el polietileno. Sería condensación (opción B) si en cada unión se liberara una molécula pequeña, como agua; así se forman el nailon o las proteínas, pero no el polietileno."
+ },
+ {
+  "id": 35,
+  "explanation": "El $CO_2$ es un gas de invernadero: deja pasar la luz solar, pero absorbe la radiación infrarroja que la Tierra reemite y la devuelve hacia la superficie. Al aumentar su concentración en la atmósfera (por quemar combustibles fósiles, sobre todo), se retiene más calor: ése es el efecto invernadero. Los clorofluorocarbonos (opción A) son el señuelo: su fama viene del adelgazamiento de la capa de ozono, que es otro problema, y encima la opción habla de una “disminución”, que no calentaría nada."
+ },
+ {
+  "id": 36,
+  "explanation": "Cada huso horario abarca $15°$, porque la Tierra gira $360°$ en $24$ horas: $360\\div 24=15$. Tijuana está a $120°$ al oeste: $120\\div 15=8$ husos de diferencia. Hacia el oeste la hora se atrasa, así que restas:\n\n$$20{:}00 - 8\\ \\text{h} = 12{:}00\\ \\text{h}$$\n\nSi te dio otra cosa, revisa el sentido: al este del meridiano $0°$ se suma, al oeste se resta."
+ },
+ {
+  "id": 37,
+  "explanation": "La placa de Cocos se hunde (subduce) bajo la placa Norteamericana a lo largo de la costa del Pacífico sur de México, y sobre esa franja de contacto se genera la mayor sismicidad del país: Michoacán, Guerrero y Oaxaca son los estados costeros que están justo encima. Sonora–Sinaloa–Chihuahua (C) y Veracruz–Tabasco–Campeche (D) quedan lejos de esa zona; y Puebla o Morelos (A) resienten fuerte los sismos, pero no están sobre el contacto entre las placas."
+ },
+ {
+  "id": 38,
+  "explanation": "Sonora concentra la gran minería de cobre de México: ahí operan Cananea (Buenavista del Cobre, una de las minas de cobre más grandes del mundo) y Nacozari (La Caridad), y el estado aporta por mucho la mayor parte de la producción nacional. Los otros estados son mineros, pero de otra cosa: Coahuila destaca por el carbón, y San Luis Potosí y Guanajuato por la plata y otros metales."
+ },
+ {
+  "id": 39,
+  "explanation": "El Volga, el río más largo de Europa, desemboca en el mar Caspio, y Moscú está enlazada a él por el canal de Moscú: por esa vía fluvial la capital rusa queda comunicada con el Caspio (de ahí que se le llame “puerto de los cinco mares”). El Ural (opción A) también desemboca en el Caspio, pero no pasa cerca de Moscú ni la comunica; el Lena corre por Siberia hacia el Ártico."
+ },
+ {
+  "id": 40,
+  "explanation": "La industria pesada por excelencia es la siderurgia (hierro y acero), y su energético básico es el carbón: convertido en coque, alimenta los altos hornos donde se funde el mineral de hierro. Por eso históricamente las regiones siderúrgicas nacen junto a las cuencas carboníferas. El manganeso, el zinc y el cobalto también se usan en la metalurgia, pero como insumos para aleaciones, no como la base que sostiene a la industria pesada."
+ }
+]

@@ -1,0 +1,162 @@
+[
+ {
+  "id": 41,
+  "explanation": "Agrupa primero los positivos: $0.1709 + 1.1783 = 1.3492$. Ahora resta contra el negativo: como $2.91$ es mayor que $1.3492$, el resultado sale negativo:\n\n$$1.3492 - 2.91 = -1.5608$$\n\nAl operar decimales, alinea los puntos y completa con ceros ($2.9100$) para no perder cifras.\n\nSi te dio $-4.2592$ (opción C), sumaste los tres números como si todos fueran negativos, sin respetar los signos."
+ },
+ {
+  "id": 42,
+  "explanation": "El rendimiento es kilómetros entre litros:\n\n$$\\frac{50.4 \\text{ km}}{6.3 \\text{ L}} = 8 \\ \\frac{km}{L}$$\n\nPara dividir sin sufrir, multiplica ambos por 10: $504 \\div 63 = 8$. Comprueba al revés: $6.3 \\times 8 = 50.4$. ✓"
+ },
+ {
+  "id": 43,
+  "explanation": "Un binomio al cuadrado se multiplica por sí mismo:\n\n$$(x-y)^2 = (x-y)(x-y) = x^2 - xy - xy + y^2 = x^2 - 2xy + y^2$$\n\nLa regla: cuadrado del primero, menos el doble producto, más cuadrado del segundo. El error clásico es la opción A, $x^2 - y^2$: eso no es el cuadrado de una resta, sino el producto de una suma por una diferencia, $(x+y)(x-y)$."
+ },
+ {
+  "id": 44,
+  "explanation": "Factoriza arriba y abajo. El numerador: $x^2 - 7x + 12 = (x-3)(x-4)$, porque $-3$ y $-4$ suman $-7$ y multiplican $12$. En el denominador, $x^2 - 16$ es diferencia de cuadrados: $(x+4)(x-4)$. Queda:\n\n$$\\frac{(x-3)(x-4)}{(x+4)(x-4)(x-3)}$$\n\nCancela $(x-3)$ y $(x-4)$, y sobrevive $\\frac{1}{x+4}$."
+ },
+ {
+  "id": 45,
+  "explanation": "Multiplica toda la ecuación por 4 para quitar denominadores:\n\n$$x + 4 = 2x$$\n\nPasa la $x$ al otro lado: $4 = x$. Comprueba: $\\frac{4}{4} + 1 = 2$ y $\\frac{4}{2} = 2$. ✓\n\nLas opciones A y B salen de despejar al revés y dejar la $x$ dividiendo en lugar de los números."
+ },
+ {
+  "id": 46,
+  "explanation": "Primero aísla la fracción restando 5 en ambos lados:\n\n$$\\frac{x}{x+2} = -4$$\n\nMultiplica por $(x+2)$: $x = -4(x+2) = -4x - 8$. Junta las $x$: $5x = -8$, así que $x = -\\frac{8}{5}$.\n\nSi te dio $\\frac{8}{5}$ (opción D), perdiste un signo en el camino: al pasar el 5 restando, el lado derecho queda $-4$, no $4$."
+ },
+ {
+  "id": 47,
+  "explanation": "Resuelve cada desigualdad por separado. La primera: $x - 1 < 0$ da $x < 1$ (estricta, sin igual). La segunda: $3 \\leq x + 5$ da $-2 \\leq x$ (con igual). Juntas:\n\n$$-2 \\leq x < 1$$\n\nFíjate en qué extremo lleva el igual: el $-2$ sí se incluye (viene del $\\leq$) y el $1$ no. La opción A tienta porque tiene los mismos números, pero reparte los símbolos al revés."
+ },
+ {
+  "id": 48,
+  "explanation": "La primera ecuación ya te da $y$ despejada, así que sustituye en la segunda:\n\n$$4x + (x - 3) = 32 \\quad \\Rightarrow \\quad 5x = 35 \\quad \\Rightarrow \\quad x = 7$$\n\nY entonces $y = 7 - 3 = 4$. Verifica en la segunda: $4(7) + 4 = 32$. ✓ Las demás opciones no cumplen las dos ecuaciones a la vez: por ejemplo, $x=5$, $y=12$ falla en la primera ($5-3 \\neq 12$)."
+ },
+ {
+  "id": 49,
+  "explanation": "Llama $c$ al cuaderno y $l$ al lapicero:\n\n$$5c + 8l = 115 \\qquad 3c + 5l = 70$$\n\nPara eliminar $l$, multiplica la primera por 5 y la segunda por 8: $25c + 40l = 575$ y $24c + 40l = 560$. Réstalas: $c = 15$.\n\nComprueba: con $c=15$, la segunda da $45 + 5l = 70$, o sea $l = 5$; y la primera: $75 + 40 = 115$. ✓ Cada cuaderno cuesta \\$15."
+ },
+ {
+  "id": 50,
+  "explanation": "Una función polinomial acepta cualquier número real: no hay denominadores que se anulen ni raíces que exijan valores positivos. Su dominio siempre es todos los reales, que se escribe $(-\\infty, \\infty)$.\n\nLa opción A pone corchetes, $[-\\infty, \\infty]$, y eso es un error de notación: el infinito no es un número que se pueda \"incluir\", así que siempre va con paréntesis."
+ },
+ {
+  "id": 51,
+  "explanation": "Compara con la forma $y = mx + b$: aquí $m = -1$ y $b = -1$. La pendiente negativa significa que la recta **desciende** de izquierda a derecha (al aumentar $x$, baja $y$). Y la ordenada al origen es $b = -1$: la recta corta al eje $y$ en $(0, -1)$; lo confirmas evaluando $x = 0$: $y = -0 - 1 = -1$."
+ },
+ {
+  "id": 52,
+  "explanation": "Una función es creciente si al aumentar $x$ aumenta $f(x)$. Eso lo cumple $f(x) = x^3$: por ejemplo $(-2)^3 = -8 < (-1)^3 = -1 < 0 < 1 < 8$, siempre sube.\n\nLas otras tres decrecen: $-3x$ tiene pendiente negativa, $3^{-x} = \\left(\\frac{1}{3}\\right)^x$ es exponencial de base menor que 1, y $\\frac{3}{x}$ baja en cada rama de la hipérbola."
+ },
+ {
+  "id": 53,
+  "explanation": "Primero simplifica: $\\frac{2}{4}\\pi = \\frac{\\pi}{2}$. La equivalencia clave es $\\pi$ radianes $= 180°$, así que:\n\n$$\\frac{\\pi}{2} = \\frac{180°}{2} = 90°$$\n\nEs el ángulo recto de toda la vida. Si te dio 270° (opción A), multiplicaste por $\\frac{3}{2}$ en vez de por $\\frac{1}{2}$."
+ },
+ {
+  "id": 54,
+  "explanation": "En la figura, el ángulo $\\theta$ está en el vértice izquierdo: su cateto adyacente mide 2 (la base), el opuesto mide 3 y la hipotenusa $\\sqrt{13}$ (checa: $2^2 + 3^2 = 13$).\n\nLa secante es la recíproca del coseno:\n\n$$\\sec\\theta = \\frac{1}{\\cos\\theta} = \\frac{\\text{hipotenusa}}{\\text{cateto adyacente}} = \\frac{\\sqrt{13}}{2}$$\n\nLa opción A, $\\frac{2}{\\sqrt{13}}$, es el coseno: si la elegiste, te faltó invertir la razón."
+ },
+ {
+  "id": 55,
+  "explanation": "La exponencial $e^x$ está definida para cualquier $x$, y dividir entre $-5$ no restringe nada: el dominio es $(-\\infty, \\infty)$.\n\nPara el rango, recuerda que $e^x$ siempre es positiva: toma valores en $(0, \\infty)$. Al dividir entre $-5$, cada valor positivo se convierte en negativo, así que la función solo produce valores en $(-\\infty, 0)$.\n\nLa opción C da el rango de $e^x$ sin el signo: es olvidar que el $-5$ voltea la función hacia abajo."
+ },
+ {
+  "id": 56,
+  "explanation": "Usa la fórmula de distancia:\n\n$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} = \\sqrt{(1-(-1))^2 + (-1-1)^2} = \\sqrt{2^2 + (-2)^2} = \\sqrt{8}$$\n\nOjo con los signos al restar: $1 - (-1) = 2$. Si te dio $\\sqrt{2}$ (opción C), restaste $1 - 1$ ignorando los signos de las coordenadas."
+ },
+ {
+  "id": 57,
+  "explanation": "Aplica la fórmula de distancia con cuidado en los signos:\n\n$$d = \\sqrt{(2-(-7))^2 + (7-(-2))^2} = \\sqrt{9^2 + 9^2} = \\sqrt{81 + 81} = \\sqrt{162}$$\n\nRestar un negativo suma: $2 - (-7) = 9$.\n\nSi elegiste 162 (opción A), hiciste todo bien pero olvidaste el último paso: sacar la raíz cuadrada."
+ },
+ {
+  "id": 58,
+  "explanation": "Con la fórmula de distancia:\n\n$$d = \\sqrt{(-1-1)^2 + (-1-1)^2} = \\sqrt{(-2)^2 + (-2)^2} = \\sqrt{8}$$\n\nY $\\sqrt{8}$ se simplifica: $\\sqrt{4 \\cdot 2} = 2\\sqrt{2}$. Ese último paso importa, porque en las opciones no aparece $\\sqrt{8}$ sino su forma simplificada.\n\nSi elegiste 2 (opción C), tomaste la diferencia de una sola coordenada y te faltó combinar las dos con el teorema de Pitágoras."
+ },
+ {
+  "id": 59,
+  "explanation": "La circunferencia con centro en el origen y radio $r$ es $x^2 + y^2 = r^2$. Con $r = 2$:\n\n$$x^2 + y^2 = 4 \\quad \\Rightarrow \\quad x^2 + y^2 - 4 = 0$$\n\nDescarta rápido: B y D tienen un signo menos entre $x^2$ y $y^2$ (eso es una hipérbola, no una circunferencia), y C equivale a $x^2 + y^2 = -2$, imposible porque una suma de cuadrados nunca es negativa."
+ },
+ {
+  "id": 60,
+  "explanation": "Compara con la forma ordinaria $(x-h)^2 + (y-k)^2 = r^2$. Para que $x + 3$ encaje, escríbelo como $x - (-3)$: el centro tiene $h = -3$. Con $y - 2$ se lee directo $k = 2$. Así que $C(-3, 2)$.\n\nEl radio sale de $r^2 = 36$, o sea $r = 6$.\n\nLa trampa doble: la opción A copia el $+3$ sin cambiarle el signo, y la D confunde $r$ con $r^2$. Recuerda: la ecuación esconde el centro con signo contrario y el radio elevado al cuadrado."
+ },
+ {
+  "id": 61,
+  "explanation": "Factoriza el 12 del lado derecho para llegar a la forma ordinaria:\n\n$$(y-3)^2 = 12x - 24 = 12(x - 2)$$\n\nCompara con $(y-k)^2 = 4p(x-h)$: el vértice es $V(h, k)$, donde $h$ acompaña a la $x$ y $k$ a la $y$. Aquí $h = 2$ y $k = 3$, así que $V = (2, 3)$.\n\nLa opción B, $(3, 2)$, es el mismo par invertido: el error de asignar la $k$ a la $x$."
+ },
+ {
+  "id": 62,
+  "explanation": "Divide todo entre 9 para llegar a la forma ordinaria:\n\n$$\\frac{x^2}{1} + \\frac{y^2}{9} = 1$$\n\nEl denominador mayor ($a^2 = 9$) está bajo $y^2$: el eje mayor es vertical y los focos van sobre el eje $y$. Calcula $c$ con $c^2 = a^2 - b^2 = 9 - 1 = 8$, así que $c = \\sqrt{8}$ y los focos son $(0, -\\sqrt{8})$ y $(0, \\sqrt{8})$.\n\nLa opción A tiene el valor correcto pero pone los focos en el eje $x$: revisa siempre bajo cuál variable está el denominador grande."
+ },
+ {
+  "id": 63,
+  "explanation": "Una hipérbola con centro en el origen y eje focal sobre las abscisas (el eje $x$) tiene la forma\n\n$$\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$$\n\ncon el término de $x^2$ positivo y un signo **menos** entre los dos términos. Eso es exactamente la opción B.\n\nLa A es una elipse (los términos se suman), y en C y D aparece $y$ o $x$ sin elevar al cuadrado, así que ni siquiera son ecuaciones de cónicas en forma ordinaria."
+ },
+ {
+  "id": 64,
+  "explanation": "La ecuación general de segundo grado con dos variables ($x$ y $y$) incluye todos los términos posibles hasta grado dos: los cuadráticos $x^2$, $xy$, $y^2$, los lineales $x$, $y$, y la constante:\n\n$$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$$\n\nDe ella salen todas las cónicas según los coeficientes. La opción C, $Ax^2 + Bx + C = 0$, tienta porque es muy conocida, pero es la ecuación cuadrática de **una** sola variable; y la A mete una $z$, o sea una tercera variable."
+ },
+ {
+  "id": 65,
+  "explanation": "La función referencial informa sobre la realidad con lenguaje objetivo: hechos, sin opiniones ni emociones ni llamados al lector. El párrafo A hace justo eso: expone las consecuencias de la desaparición de las aves con tono neutro.\n\nLos otros se contaminan de otras funciones: B carga adjetivos emotivos (\"prodigiosas\", \"maravilloso\", \"tiernas\" — función emotiva), C exhorta a actuar (\"debemos salvarlas, urgentemente\" — apelativa) y D se dirige al oyente (\"Escucha\") y se pone a definir términos (metalingüística)."
+ },
+ {
+  "id": 66,
+  "explanation": "El fragmento está en verso, con ritmo, exclamación y una imagen que compara los silencios del amor con \"pausas de música suave\": el mensaje vale por su forma, por cómo está dicho. Esa es la función poética.\n\nLa metalingüística (opción A) tienta porque el poema habla de \"la lengua del amor\", pero esa función explica o define el código (\"el sustantivo es...\"); aquí la lengua es tema de un texto estético, no objeto de análisis."
+ },
+ {
+  "id": 67,
+  "explanation": "El párrafo te dice cómo eran los platos: de qué materiales estaban hechos los primeros prototipos (piedra caliza, fécula de papa, papel reciclado) y de qué quedó la mezcla final. Enumerar características y componentes es describir.\n\nNo es argumentativo porque no defiende ninguna tesis con razones: solo presenta información sobre el objeto."
+ },
+ {
+  "id": 68,
+  "explanation": "Argumentar es sostener una tesis con razones. El párrafo A lo hace: plantea que el nombre importa (\"es el primer paso para la creación de una marca\"), da la razón (\"evolucionará hasta aportarnos una identidad corporativa\") y concluye con \"Por tanto, hemos de tomarnos todo el tiempo...\".\n\nOjo con la trampa del \"por tanto\": en B y D no conecta argumentos — en B narra una experiencia y en D \"por tanto tráfico\" significa \"por tanta cantidad de tráfico\", es una noticia. C es un texto lírico."
+ },
+ {
+  "id": 69,
+  "explanation": "La idea principal debe abarcar todo el texto, no un dato suelto. El artículo completo va de lo mismo: producimos muchísimo plástico, lo gestionamos mal (79% acumulado en vertederos o el ambiente, residuos que durarán siglos) y urge mejorar la gestión — es lo que dicen Jambeck y Geyer al cierre. Eso resume la opción D.\n\nA, B y C son ciertas, pero cada una es un dato secundario (el mercado del empaquetado, el arranque en los años 50, la comparación con ballenas) que solo apoya la idea central."
+ },
+ {
+  "id": 70,
+  "explanation": "La pista está en la cita final de Geyer: \"no se puede administrar lo que no se mide\". Gestionar los residuos empieza por conocerlos — medir cuánta basura generamos y de qué tipo — para entonces clasificarla y reciclarla bien; recuerda que el texto lamenta que solo el 9% se recicla. Eso es la opción C.\n\nLa A y la D describen el problema (dependencia, desechos duraderos), pero no dicen en qué consiste la **gestión** de los residuos, que es lo que pregunta."
+ },
+ {
+  "id": 71,
+  "explanation": "El párrafo 6 es el que da cifras de producción: de 2 millones de toneladas en 1950 a más de 400 millones en 2015, con la mitad de todo lo producido concentrada en los últimos trece años. De ahí se deduce directamente lo que dice la opción C: la producción ha aumentado muchísimo desde los años 50 (y el texto ya mostró que esos residuos acaban acumulados en vertederos o en el ambiente).\n\nB y D agregan juicios que el párrafo no sostiene (qué debemos hacer, qué ignora el ser humano), y A se fija en la nacionalidad de los investigadores, que no viene al caso."
+ },
+ {
+  "id": 72,
+  "explanation": "Ve a las palabras textuales de Jenna Jambeck: \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos... podrían estar con nosotros durante cientos o incluso miles de años\". Su preocupación es esa permanencia del plástico como contaminante: opción C.\n\nLa D se antoja porque suena a moraleja del texto, pero habla de \"hacer conciencia\", algo que la investigadora no menciona; lo suyo es un dato material: el plástico no se degrada."
+ },
+ {
+  "id": 73,
+  "explanation": "Fíjate en el tono y el cierre. La autora no se limita a informar: califica las cifras de \"alarmantes\" y \"escalofriantes\", subraya que gestionamos mal los residuos y termina con el objetivo del estudio: sentar bases para una gestión sostenible y políticas mejor informadas. Quiere que el lector tome conciencia del uso desmedido del plástico y de la necesidad de gestionar mejor los desechos: opción C.\n\nLa B confunde el medio con el fin: las estadísticas son la herramienta del texto, no su intención."
+ },
+ {
+  "id": 74,
+  "explanation": "El sujeto es quien realiza la acción del verbo. Pregúntale al verbo: ¿quiénes hallaron? **Los científicos**. \"Los huesos\" y \"los restos\" son lo hallado, es decir, el complemento directo.\n\nUna prueba que no falla: cambia el candidato de número y ve si el verbo se ve obligado a cambiar. \"El científico halló...\" — el verbo cambió, es el sujeto. En cambio \"el hueso\" no altera el verbo: \"Los científicos hallaron el hueso...\"."
+ },
+ {
+  "id": 75,
+  "explanation": "\"Una sonrisa\" es lo que la señora vio (vagar): responde a \"¿qué vio?\" y por eso es complemento directo del verbo.\n\nLa prueba definitiva es sustituirlo por el pronombre *la*: \"La señora Ramírez **la** vio vagar sobre los labios de los jefes\". Si admite *lo/la/los/las*, es directo.\n\nEl circunstancial (opción D) tienta por la cercanía de \"sobre los labios...\", pero esa parte —que sí es circunstancial de lugar— no es la subrayada."
+ },
+ {
+  "id": 76,
+  "explanation": "Las propiedades textuales son tres: **cohesión** (las oraciones se conectan bien gramaticalmente, con nexos y referencias claras), **coherencia** (las ideas forman una unidad lógica de sentido) y **adecuación** (el lenguaje es apropiado para la situación y el destinatario).\n\nLa opción B (inicio, desarrollo y conclusión) tienta porque también se estudia con los textos, pero eso es la **estructura** de un escrito, no sus propiedades."
+ },
+ {
+  "id": 77,
+  "explanation": "El punto gramatical es el verbo *haber* impersonal: cuando expresa existencia (\"hay damnificados\") no tiene sujeto, así que va siempre en singular aunque lo acompañe un plural: \"**ha habido** muchos damnificados\". Solo la opción D lo respeta.\n\nA y C dicen \"hubieron\" y B \"habían\": las tres concuerdan el impersonal en plural, que es el error más común con este verbo. Además, A y B escriben \"éste año\" con tilde, y el demostrativo junto a un sustantivo (adjetivo) no la lleva: \"este año\"."
+ },
+ {
+  "id": 78,
+  "explanation": "La opción A presenta la información en orden lógico (quién hizo qué, a quién, con qué contenido), sin ambigüedades, con la puntuación y el conector \"asimismo\" bien colocados.\n\nLas otras fallan en algo concreto: B descoloca el \"hoy\" (\"hizo llegar una carta abierta hoy al...\") y usa \"le llama\" donde el español de México pide \"lo llama\"; C deja el verbo sin complemento (\"hizo llegar al nuevo gobernador... ¿qué cosa?\"); D encadena dos oraciones sin puntuación adecuada y repite información (\"misiva abierta... dicha carta\")."
+ },
+ {
+  "id": 79,
+  "explanation": "En el enunciado, \"profundo\" no habla de hondura física sino de grado: un dolor profundo es un dolor muy fuerte, que cala hondo. El sinónimo en ese sentido figurado es **intenso**.\n\n\"Bajo\" y \"elevado\" toman la palabra en su sentido espacial (profundidad y altura), que no aplica a un sentimiento; y \"sondable\" (que se puede medir) no equivale a profundo."
+ },
+ {
+  "id": 80,
+  "explanation": "Disperso significa separado, desparramado en distintas direcciones. Su antónimo es **agrupado**: reunido, junto.\n\nCuidado con la trampa clásica de estos reactivos: \"esparcido\" y \"diseminado\" (opciones A y C) son **sinónimos** de disperso, puestos ahí para atrapar al que lee rápido y olvida que le piden lo contrario."
+ }
+]

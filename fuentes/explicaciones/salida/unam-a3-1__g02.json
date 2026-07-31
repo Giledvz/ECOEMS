@@ -1,0 +1,162 @@
+[
+ {
+  "id": 41,
+  "explanation": "Ésa es, palabra por palabra, la definición de la **hipérbola**: el lugar geométrico de los puntos cuya *diferencia* de distancias a dos focos es constante. El valor absoluto está ahí porque el punto puede estar más cerca de cualquiera de los dos focos, y eso es justo lo que produce las **dos ramas**. La condición extra ($2a < 2c$, la constante menor que la distancia entre focos) es la que garantiza que la curva exista.\n\nOjo con la elipse (opción C): cambia una sola palabra, ahí lo constante es la *suma* de las distancias, no la diferencia."
+ },
+ {
+  "id": 42,
+  "explanation": "Las secciones cónicas son las curvas que resultan de cortar un cono circular con un plano; según la inclinación del corte obtienes circunferencia, elipse, **parábola** o hipérbola. La parábola sale cuando el plano es paralelo a una generatriz del cono, así que es una de las cuatro.\n\nEl cono (opción C) no es la sección: es el sólido que se corta. Y la recta y el triángulo son figuras rectilíneas, no curvas cónicas."
+ },
+ {
+  "id": 43,
+  "explanation": "La velocidad es un **vector**: tiene magnitud y dirección. La rapidez es solamente su magnitud, el número pelón sin dirección. Por definición, entonces, la rapidez **es igual a la magnitud del vector velocidad**; nunca puede ser mayor ni menor que ella.\n\nY si la velocidad es constante, tampoco puede ir creciendo (opción D): una velocidad constante implica rapidez constante. La única diferencia real entre los dos conceptos es que uno carga dirección y el otro no."
+ },
+ {
+  "id": 44,
+  "explanation": "La energía potencial gravitatoria es $E_p = mgh$. Al llevar el cuerpo a la Luna no cambian su masa ni la altura a la que lo subes; lo único que cambia es $g$. Si $g_L = \\dfrac{g_T}{6}$:\n\n$$E_{p,L} = m\\left(\\frac{g_T}{6}\\right)h = \\frac{mg_Th}{6} = \\frac{E_{p,T}}{6}$$\n\nO sea, **6 veces menor**. Si escogiste \"6 veces mayor\" invertiste la proporción: con menos gravedad cuesta *menos* energía levantar el cuerpo, no más."
+ },
+ {
+  "id": 45,
+  "explanation": "Como no hay fricción, el momento lineal del sistema niño + carrito se conserva. Al inicio todo está quieto, así que el momento total es cero; después del salto los dos momentos deben cancelarse:\n\n$$m_n v_n = m_c v_c \\quad\\Rightarrow\\quad (30)(2) = m_c(12)$$\n\n$$m_c = \\frac{60}{12} = 5\\,kg$$\n\nFíjate en la lógica física: el carrito sale 6 veces más rápido porque tiene 6 veces menos masa. Si te dio $2.5\\,kg$ dividiste entre $24$ (multiplicaste las dos velocidades en el denominador) en lugar de dividir sólo entre $12$."
+ },
+ {
+  "id": 46,
+  "explanation": "En la teoría cinética la temperatura es una medida de la energía cinética promedio de las partículas. Si el movimiento cesara por completo, esa energía sería cero, y a esa temperatura mínima posible se le llama **cero absoluto**: el origen de la escala Kelvin, $0\\,K$, que equivale a $-273.15\\,°C$.\n\nLas otras tres son temperaturas frías pero comunes: $0\\,°C$ es el punto de fusión del hielo, $0\\,°F \\approx -18\\,°C$ y $-100\\,°C$ sigue estando 173 grados arriba del cero absoluto. En todas ellas las partículas se siguen moviendo."
+ },
+ {
+  "id": 47,
+  "explanation": "Ve una por una:\n\n- **I. Longitudinal** → c: las partículas del medio vibran *paralelas* a la dirección en que avanza la onda (el sonido es el ejemplo típico, con sus compresiones y rarefacciones).\n- **II. Transversal** → b: las partículas vibran perpendiculares (en ángulo recto) al avance de la onda, como la cuerda que sacudes.\n- **III. Electromagnética** → a: es la única que no necesita medio material, porque son campos eléctrico y magnético oscilando; por eso la luz del Sol nos llega a través del vacío.\n\nEsa combinación es I:c – II:b – III:a. Si marcaste otra, casi siempre es por intercambiar longitudinal con transversal: quédate con que *longitudinal* y *paralelo* van juntas."
+ },
+ {
+  "id": 48,
+  "explanation": "El campo eléctrico se define como la fuerza por unidad de carga de prueba, $E = \\dfrac{F}{q}$, así que sus unidades son newton entre coulomb, $\\dfrac{N}{C}$ (equivalente a $\\dfrac{V}{m}$).\n\nCuidado con $\\dfrac{N}{kg}$: ésas son las unidades del campo **gravitatorio**, fuerza por unidad de *masa*. Y $\\dfrac{J}{s}$ es el watt, unidad de potencia."
+ },
+ {
+  "id": 49,
+  "explanation": "Es la ley de Faraday: toda variación del flujo magnético en el tiempo induce una fuerza electromotriz,\n\n$$\\varepsilon = -\\frac{d\\Phi}{dt}$$\n\nLa fem aparece siempre que el flujo cambia, y su valor depende de qué tan rápido cambie.\n\nLa opción C es la que más se antoja, pero la corriente sólo circula si además existe un circuito conductor cerrado; si el aro está abierto o no hay conductor, la fem existe y la corriente no."
+ },
+ {
+  "id": 50,
+  "explanation": "La presión atmosférica en un punto es el peso de la columna de aire que está **encima** de ese punto, repartido en el área. En la cima del Everest, a casi $9000\\,m$, ya te quedaste arriba de buena parte de la atmósfera: la capa de aire que soportas es mucho más delgada, y por eso la presión baja a alrededor de un tercio de la del nivel del mar.\n\nLa opción A no es falsa del todo (el aire arriba es menos denso), pero decir que \"la densidad cambia\" no explica nada: es una consecuencia del mismo hecho, no la causa. Lo que decide es cuánto aire tienes encima."
+ },
+ {
+  "id": 51,
+  "explanation": "La luz se comporta como **onda** en fenómenos como la interferencia y la difracción, y como **partícula** (fotones) en el efecto fotoeléctrico, donde la energía llega en paquetes $E = hf$. Ninguno de los dos modelos solos explica todos los experimentos, y de ahí el nombre de comportamiento dual: onda-partícula.\n\nLa reflexión y la refracción (opción D) son fenómenos de la luz, no las dos naturalezas con que se la describe."
+ },
+ {
+  "id": 52,
+  "explanation": "Marie Curie ganó dos premios Nobel en dos disciplinas distintas: el de **Física** en 1903, compartido con Pierre Curie y Henri Becquerel por los estudios sobre la radiactividad, y el de **Química** en 1911, ya sola, por el descubrimiento y aislamiento del radio y el polonio.\n\nSigue siendo la única persona premiada en dos ciencias diferentes. Nunca recibió el de Medicina ni existe uno de Biología."
+ },
+ {
+  "id": 53,
+  "explanation": "Un **elemento** está formado por átomos de una sola clase, aunque esos átomos vengan agrupados en moléculas. Revisa la opción A: $Na$ es sodio, $Cl_2$ es cloro y $P_4$ es fósforo blanco; en las tres sustancias hay un solo tipo de átomo, así que las tres son elementos.\n\nEn las demás se cuela siempre un compuesto: $CO$ en B y en D, y $SO_2$ en C, porque tienen dos clases de átomo unidas químicamente. Que una fórmula lleve subíndice ($Cl_2$, $P_4$, $S_8$) no la convierte en compuesto: lo que decide es cuántos elementos distintos aparecen."
+ },
+ {
+  "id": 54,
+  "explanation": "El aire es una **mezcla** de gases: alrededor de 78 % de nitrógeno, 21 % de oxígeno y el resto argón, dióxido de carbono y vapor de agua. Sus componentes no están unidos químicamente, conservan sus propiedades y se pueden separar por métodos físicos, como la destilación fraccionada del aire líquido.\n\nPara ser compuesto (opción C) tendría que haber enlaces entre esos gases y una proporción fija, y no la hay: la composición del aire varía con el lugar y la altura."
+ },
+ {
+  "id": 55,
+  "explanation": "En la tabla periódica los renglones **horizontales** se llaman **periodos** (son 7), y todos los elementos de un mismo periodo tienen su último electrón en el mismo nivel de energía.\n\nGrupos y familias, en cambio, son las columnas **verticales**, y ahí lo que comparten los elementos es el número de electrones de valencia y por eso sus propiedades químicas parecidas. Si marcaste A o B, sólo giraste 90 grados la respuesta."
+ },
+ {
+  "id": 56,
+  "explanation": "Una sal se forma en una **neutralización**: ácido + base → sal + agua. En la opción D, el $HCl$ (ácido) reacciona con el $KOH$ (base) y el $K^+$ toma el lugar del $H^+$:\n\n$$HCl + KOH \\to KCl + H_2O$$\n\nEl $KCl$ es la sal y el agua es el otro producto obligado.\n\nLas otras tres son óxidos no metálicos o halógenos reaccionando con agua, y lo que producen son **ácidos** ($H_2SO_3$, $HCl$, $HNO_3$), no sales."
+ },
+ {
+  "id": 57,
+  "explanation": "El $HCl$ es un ácido porque al disolverse en agua libera iones $H^+$ ($HCl \\to H^+ + Cl^-$), que es exactamente la definición de Arrhenius de ácido; además es de los ácidos fuertes, se ioniza por completo.\n\nEl $NaOH$ hace lo contrario: libera $OH^-$, es una base. El $NaCl$ es la sal que resulta de juntar a esos dos, y el $Cl_2$ es un elemento, ni ácido ni base."
+ },
+ {
+  "id": 58,
+  "explanation": "En la escala de pH, mientras más alto el número, más **básica** es la disolución y más iones $OH^-$ tiene. El pH mide la concentración de $H^+$, y en agua las dos van en sentidos opuestos porque $pH + pOH = 14$.\n\nCon pH 13: $pOH = 14 - 13 = 1$, así que $[OH^-] = 10^{-1} = 0.1\\,M$. Compáralo con pH 2, donde $pOH = 12$ y $[OH^-] = 10^{-12}\\,M$: hay once órdenes de magnitud de diferencia.\n\nSi escogiste el 2, contestaste la pregunta de la mayor concentración de $H^+$, no de $OH^-$."
+ },
+ {
+  "id": 59,
+  "explanation": "Un **óxido ácido** (o anhídrido) es el que se forma cuando el oxígeno se combina con un **no metal**; se llama así porque al reaccionar con agua produce un ácido. El nitrógeno es no metal, y su óxido cumple:\n\n$$N_2O_5 + H_2O \\to 2HNO_3$$\n\nSodio, magnesio y calcio son **metales**, y sus óxidos ($Na_2O$, $MgO$, $CaO$) son óxidos básicos: con agua dan hidróxidos, como $Ca(OH)_2$. Regla corta: no metal + oxígeno → óxido ácido; metal + oxígeno → óxido básico."
+ },
+ {
+  "id": 60,
+  "explanation": "La sacarosa es un **disacárido**: una molécula de glucosa unida a una de fructosa, con fórmula $C_{12}H_{22}O_{11}$. Sólo tiene carbono, hidrógeno y oxígeno, o sea que es puro **carbohidrato**.\n\nPara que hubiera proteína tendría que contener nitrógeno (los aminoácidos lo llevan), y para que hubiera lípido harían falta ácidos grasos. El azúcar de mesa no aporta ni uno ni otro: es energía y nada más."
+ },
+ {
+  "id": 61,
+  "explanation": "Una proteína es un **polímero de aminoácidos** unidos uno tras otro por enlaces peptídicos; la secuencia de esos aminoácidos determina cómo se pliega la cadena y, con eso, su función.\n\nLa opción A es la que engaña, pero está al revés: las enzimas *son* proteínas, no las piezas con que se construyen. Los polímeros de carbohidratos son almidón o glucógeno, y los triglicéridos son lípidos: otras dos familias de biomoléculas."
+ },
+ {
+  "id": 62,
+  "explanation": "En toda reacción química se **rompen** los enlaces de los reactivos y se **forman** los de los productos; romper consume energía y formar la libera, y la diferencia entre esas dos cantidades es lo que hace que la reacción resulte exotérmica o endotérmica. Por eso B es cierto siempre, sin importar de qué reacción hablemos.\n\nLas otras tres tienen los términos invertidos: **endo**térmica *absorbe* energía, **exo**térmica la *desprende*, y la combustión es el ejemplo clásico de reacción exotérmica: libera calor, no lo absorbe."
+ },
+ {
+  "id": 63,
+  "explanation": "El **ribosoma** es donde ocurre la traducción: lee el ARN mensajero y va enlazando los aminoácidos en el orden que indica el código, armando la cadena de la proteína. Los hay libres en el citoplasma y adheridos al retículo endoplásmico rugoso.\n\nLos otros tres tienen otro oficio: la mitocondria produce ATP, el aparato de Golgi modifica y empaqueta proteínas *ya hechas* para enviarlas a su destino, y el lisosoma digiere material con sus enzimas hidrolíticas."
+ },
+ {
+  "id": 64,
+  "explanation": "El **ATP** (adenosín trifosfato) es la \"moneda\" energética de la célula: guarda energía en los enlaces entre sus grupos fosfato y la libera al hidrolizarse a ADP + fosfato, justo donde se necesita para trabajo mecánico, transporte activo o síntesis.\n\nNAD y FAD también participan en el metabolismo, pero como **transportadores de electrones** hacia la cadena respiratoria, no como la molécula que paga directamente el trabajo celular. Y el AMP es la forma con un solo fosfato, ya casi descargada."
+ },
+ {
+  "id": 65,
+  "explanation": "Analiza los enunciados:\n\n- **I es falso**: los descendientes idénticos al progenitor son característicos de la reproducción **asexual** (clones). En la sexual cada hijo recibe una combinación nueva.\n- **II es verdadero**: en la meiosis hay entrecruzamiento y distribución independiente de los cromosomas, y en la fecundación se juntan gametos de dos progenitores al azar; de ahí sale la variabilidad genética.\n- **III es verdadero**: cada gameto es haploide ($n$), y al unirse dos se restablece la condición diploide ($n + n = 2n$) generación tras generación.\n\nQuedan II y III. Si escogiste \"I, II y III\" te ganó la trampa de I: producir copias idénticas no es una ventaja de la reproducción sexual, es precisamente lo que ella *no* hace."
+ },
+ {
+  "id": 66,
+  "explanation": "Mendel usó una convención muy simple que seguimos hasta hoy: la misma letra para el gen, **mayúscula** para el alelo dominante ($B$) y **minúscula** para el recesivo ($b$). El carácter recesivo sólo se manifiesta cuando el individuo lleva los dos alelos recesivos, $bb$.\n\nLo que aparece en las otras opciones no son formas de escribir un carácter recesivo: $Bb$ es el genotipo de un **heterocigoto**, y ahí lo que se ve es el carácter dominante."
+ },
+ {
+  "id": 67,
+  "explanation": "Las mutaciones son cambios en el material genético y son la **fuente original de variación heredable**: sin ellas no habría alelos nuevos y la selección natural no tendría material sobre el cual actuar. Primero aparece la variación al azar, después el ambiente favorece a los que resultan mejor adaptados.\n\nLa opción C es la que más se antoja y es justo lo contrario: si la mutación ocurre en las células germinales, sí se hereda. Y A y D suponen que la mutación \"elige\" a quién le toca, cuando en realidad ocurre al azar y puede ser perjudicial, neutra o benéfica."
+ },
+ {
+  "id": 68,
+  "explanation": "Lo que describe el enunciado son las técnicas de **ADN recombinante**: cortar el gen con enzimas de restricción, insertarlo en un vector (un plásmido, por ejemplo) y transferirlo a otro organismo para que lo exprese. Ese cortar y volver a pegar material genético de fuentes distintas es lo que da nombre a la recombinación aplicada en el laboratorio, y es la base de productos como la insulina humana producida por bacterias.\n\nEl proyecto genoma fue la tarea de secuenciar todo el ADN humano, y la terapia génica es una aplicación concreta: corregir un gen defectuoso en un paciente.\nREVISAR: la definición del reactivo (\"conjunto de técnicas que hacen posible el aislamiento, estudio, modificación y transferencia de genes\") corresponde a **ingeniería genética**, opción A; \"recombinación genética\" nombra el proceso de combinar material genético (natural en la meiosis, o in vitro), no el conjunto de técnicas. Sospecho errata en la clave."
+ },
+ {
+  "id": 69,
+  "explanation": "Oparin y Haldane propusieron que en la Tierra primitiva, con una atmósfera sin oxígeno libre y con descargas eléctricas, las moléculas inorgánicas simples pudieron combinarse hasta formar compuestos orgánicos que se acumularon en el mar. Esa hipótesis se pudo llevar al laboratorio: Miller y Urey armaron un sistema cerrado con esos gases y descargas y obtuvieron aminoácidos, es decir, **demostraron experimentalmente** que la materia orgánica puede surgir de moléculas simples.\n\nLas otras opciones son de otros capítulos: la estructura tridimensional del ADN es de Watson y Crick, la biología celular arranca con la teoría celular del siglo XIX, y el origen de la célula eucarionte se explica con la endosimbiosis."
+ },
+ {
+  "id": 70,
+  "explanation": "Hongos, plantas y animales son **eucariontes**: sus células tienen núcleo delimitado por membrana y organelos membranosos (mitocondrias, retículo, Golgi). Lo procariótico se queda en bacterias y arqueas, que no tienen núcleo definido.\n\nHeterótrofo y autótrofo (opciones B y D) no son tipos de célula, sino formas de nutrición, y además no las comparten los tres reinos: las plantas son autótrofas, mientras que hongos y animales son heterótrofos. Por eso ninguna de las dos puede ser la característica común."
+ },
+ {
+  "id": 71,
+  "explanation": "Una **población** es el conjunto de organismos de la misma especie que viven en la misma área y se reproducen entre sí; ese último detalle, que se cruzan, es lo que la distingue de un simple grupo de seres vivos juntos.\n\nEl ecosistema (opción B) es más grande: incluye a todas las poblaciones de la zona *más* el ambiente físico. El bioma es todavía mayor, una gran región con clima y vegetación característicos, y la raza es una subdivisión dentro de una especie."
+ },
+ {
+  "id": 72,
+  "explanation": "Los **productores** son los organismos autótrofos: mediante la fotosíntesis toman energía luminosa y con $CO_2$ y agua fabrican materia orgánica. Ellos son los que meten la energía al ecosistema, y de ellos depende todo lo demás; por eso ocupan el primer eslabón y el nivel más ancho de la pirámide alimenticia.\n\nConsumidores y depredadores vienen después, porque necesitan comerse a alguien, y los descomponedores cierran el ciclo al final, devolviendo los nutrientes al suelo."
+ },
+ {
+  "id": 73,
+  "explanation": "En el materialismo histórico, las fuerzas productivas junto con las relaciones de producción (quién es dueño de los medios de producción y cómo se reparte lo producido) forman la **estructura o base económica** de la sociedad. Sobre esa base se levanta la superestructura: el derecho, la política, la religión, las ideas.\n\nAhí está el error de la opción B: para Marx la ideología es lo *determinado* por la base económica, no la base misma. Y \"función de producción\" y \"función de consumo\" son conceptos de la economía neoclásica, de otro marco teórico."
+ },
+ {
+  "id": 74,
+  "explanation": "La Doctrina Monroe (1823) se resume en la frase \"América para los americanos\": Estados Unidos advirtió que consideraría un acto hostil cualquier intento europeo de colonizar o intervenir en el continente, y a cambio prometió no meterse en los asuntos de Europa. Surgió justo cuando las nuevas repúblicas latinoamericanas acababan de independizarse y se temía una reconquista con apoyo de la Santa Alianza.\n\nCuidado con A y C: la doctrina no ofrecía apoyo para formar gobiernos republicanos ni hablaba de comercio; el control económico del continente vino después, cuando la doctrina se usó como pretexto de intervención."
+ },
+ {
+  "id": 75,
+  "explanation": "El **cartismo** nació en Inglaterra en 1838 y se llama así por la *Carta del Pueblo*, el documento que los obreros presentaron al Parlamento con seis demandas políticas: sufragio universal masculino, voto secreto, salarios para los diputados y eliminación del requisito de propiedad, entre otras. Su método era petición y movilización masiva, no la violencia.\n\nEl ludismo, en cambio, se expresó destruyendo máquinas; el socialismo y el liberalismo son doctrinas, no movimientos con una carta entregada al Parlamento británico."
+ },
+ {
+  "id": 76,
+  "explanation": "Los tres casos son de los más citados del imperialismo del siglo XIX: **India** fue la \"joya de la corona\" británica; el **Congo** fue primero propiedad personal de Leopoldo II y luego colonia belga; y **Turkestán**, en Asia Central, fue la expansión del Imperio ruso.\n\nLas otras combinaciones mezclan potencias: Marruecos quedó bajo Francia y España, Angola fue portuguesa, y Ts'ing-Tao (Qingdao) fue concesión **alemana** en China, no rusa ni belga."
+ },
+ {
+  "id": 77,
+  "explanation": "La Primera Guerra Mundial acabó con cuatro imperios: el austrohúngaro, el alemán, el ruso y el otomano. El austrohúngaro se **desintegró** y de su territorio salieron Austria, Hungría, Checoslovaquia y buena parte de Yugoslavia, reconocidas en los tratados de 1919-1920.\n\nLas otras tres pertenecen a la **Segunda** Guerra Mundial: la ONU se creó en 1945 (la de 1919 fue la Sociedad de Naciones), y tanto los dos bloques como el bloque soviético son ya de la Guerra Fría."
+ },
+ {
+  "id": 78,
+  "explanation": "El Tratado de Versalles dejó a Alemania con pérdidas territoriales, ejército reducido y reparaciones impagables, y eso se sintió como una humillación nacional. El nacionalsocialismo creció explotando precisamente ese resentimiento: la leyenda de la \"puñalada por la espalda\", la promesa de romper el tratado y devolver a Alemania su grandeza, todo sobre el terreno fértil de la crisis económica de 1929.\n\nLa opción B se antoja porque el partido llevaba \"socialista\" en el nombre, pero en los hechos disolvió los sindicatos libres y encarceló a líderes obreros. Y de democracia y control del militarismo, nada: hizo lo contrario en ambos casos."
+ },
+ {
+  "id": 79,
+  "explanation": "Cada personaje con su régimen:\n\n- **I. Hirohito** → b, el **militarismo** japonés: el emperador reinaba mientras el ejército controlaba el gobierno y la expansión en Asia.\n- **II. Mussolini** → c, el **fascismo** italiano, que él fundó y cuyo nombre viene de los *fasci di combattimento*.\n- **III. Hitler** → a, el **nazismo**, del Partido Nacionalsocialista Obrero Alemán.\n\nO sea I:b – II:c – III:a. El error más común es cruzar a Mussolini con Hitler; acuérdate de que fascismo es italiano y nazismo es alemán."
+ },
+ {
+  "id": 80,
+  "explanation": "Ante la invasión japonesa, el Kuomintang de Chiang Kai-shek y el Partido Comunista de Mao pactaron un segundo frente unido y suspendieron su guerra civil. Esa tregua le sirvió enormemente a los comunistas: crecieron en número, organizaron al campesinado y ganaron prestigio como defensores del país. Al rendirse Japón en 1945 la guerra interna se reanudó y en 1949 Mao proclamó la República Popular, culminando la **Revolución China**.\n\nLas otras opciones ni empatan geográficamente: la rusa es de 1917, la francesa de 1789, y la indochina fue contra Francia, sin Kuomintang de por medio."
+ }
+]
