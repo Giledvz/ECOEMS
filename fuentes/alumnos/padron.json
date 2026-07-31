@@ -1,0 +1,1203 @@
+{
+  "_meta": {
+    "que_es": "Padrón de alumnos reconstruido del historial de git. Cada examen guarda en exam.students quién está hoy; esto guarda quién estuvo y cuándo, para cuando alguien regresa a repetir.",
+    "como_se_hizo": "fuentes/scripts/padron-alumnos.py recorre todos los commits y anota, por alumno y grupo, la primera y la última fecha en que aparece en una lista.",
+    "ojo": "Las fechas son de commit, no de inscripción: marcan cuándo el nombre estaba en el material, que es lo más cercano que hay.",
+    "alias": {
+      "Oscar": "Óscar",
+      "Danna": "Dana"
+    },
+    "alumnos": 26,
+    "vigentes": 25
+  },
+  "alumnos": [
+    {
+      "nombre": "Alexander",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Alfredo",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "UNAM · varios",
+        "UNAM · Área 1"
+      ],
+      "primera_vez": "2026-04-08",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "UNAM · varios",
+          "desde": "2026-04-08",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "eval_matfis_2026-04-23",
+            "eval_matfis_2026-04-24",
+            "examen_diagnostico_universidad",
+            "sim_unam1_2011",
+            "sim_unam1_2021",
+            "sim_unam1_2021_backup",
+            "sim_unam1_2022",
+            "sim_unam1_2026",
+            "unam-especial"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 1",
+          "desde": "2026-04-12",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "diag-uni-a1",
+            "diagnostico_matematicas_area1_2026-05-07",
+            "examen_diagnostico_universidad_area1",
+            "examen_diagnostico_universidad_area1_2022",
+            "unam-a1-1",
+            "unam-a1-2",
+            "unam-a1-3",
+            "unam-a1-4"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 2",
+          "desde": "2026-04-12",
+          "hasta": "2026-04-16",
+          "examenes": [
+            "examen_diagnostico_universidad_area2"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Ari",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Axel",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Citlaly",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Conchita",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Dana",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "UNAM · varios",
+        "UNAM · Área 1"
+      ],
+      "primera_vez": "2026-04-16",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "UNAM · varios",
+          "desde": "2026-04-19",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "eval_matfis_2026-04-23",
+            "eval_matfis_2026-04-24",
+            "sim_unam1_2011",
+            "sim_unam1_2021",
+            "sim_unam1_2021_backup",
+            "sim_unam1_2022",
+            "sim_unam1_2026",
+            "unam-especial"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 1",
+          "desde": "2026-04-16",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "diag-uni-a1",
+            "diagnostico_matematicas_area1_2026-05-07",
+            "examen_diagnostico_universidad_area1",
+            "examen_diagnostico_universidad_area1_2022",
+            "unam-a1-1",
+            "unam-a1-2",
+            "unam-a1-3",
+            "unam-a1-4"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Daniela",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": false,
+      "grupo_actual": [],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-04-15",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-04-15",
+          "examenes": [
+            "examen_diagnostico_bachillerato"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Danna Belem",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "IPN",
+        "UNAM · Área 1"
+      ],
+      "primera_vez": "2026-07-28",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "IPN",
+          "desde": "2026-07-29",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "ipn-iycfm-1"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 1",
+          "desde": "2026-07-28",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "diagnostico-a1"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Esme",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "UNAM · varios",
+        "UNAM · Área 4"
+      ],
+      "primera_vez": "2026-04-08",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "UNAM · varios",
+          "desde": "2026-04-08",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "eval_matfis_2026-04-23",
+            "eval_matfis_2026-04-24",
+            "examen_diagnostico_universidad",
+            "sim_unam4_2011",
+            "sim_unam4_2021",
+            "sim_unam4_2021_backup",
+            "sim_unam4_2024",
+            "sim_unam4_2026",
+            "unam-especial"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 1",
+          "desde": "2026-04-12",
+          "hasta": "2026-04-16",
+          "examenes": [
+            "examen_diagnostico_universidad_area1"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 2",
+          "desde": "2026-04-12",
+          "hasta": "2026-04-16",
+          "examenes": [
+            "examen_diagnostico_universidad_area2"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 4",
+          "desde": "2026-04-16",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "examen_diagnostico_universidad_area4",
+            "unam-a4-1",
+            "unam-a4-2",
+            "unam-a4-3",
+            "unam-a4-4"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gil",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "IPN"
+      ],
+      "primera_vez": "2026-04-08",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "IPN",
+          "desde": "2026-07-30",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "ipn-cmb-1",
+            "ipn-csya-1",
+            "ipn-iycfm-1"
+          ]
+        },
+        {
+          "grupo": "UNAM · varios",
+          "desde": "2026-04-08",
+          "hasta": "2026-04-12",
+          "examenes": [
+            "examen_diagnostico_universidad"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 1",
+          "desde": "2026-04-12",
+          "hasta": "2026-04-16",
+          "examenes": [
+            "examen_diagnostico_universidad_area1"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 2",
+          "desde": "2026-04-12",
+          "hasta": "2026-04-16",
+          "examenes": [
+            "examen_diagnostico_universidad_area2"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Julio",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Kevin",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Leah",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-05-07",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-05-07",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Lupita",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "UNAM · varios",
+        "UNAM · Área 2"
+      ],
+      "primera_vez": "2026-04-08",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "UNAM · varios",
+          "desde": "2026-04-08",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "eval_matfis_2026-04-23",
+            "eval_matfis_2026-04-24",
+            "examen_diagnostico_universidad",
+            "sim_unam2_2011",
+            "sim_unam2_2021",
+            "sim_unam2_2021_backup",
+            "sim_unam2_2023",
+            "sim_unam2_2026",
+            "unam-especial"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 1",
+          "desde": "2026-04-12",
+          "hasta": "2026-04-16",
+          "examenes": [
+            "examen_diagnostico_universidad_area1"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 2",
+          "desde": "2026-04-12",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "diag-uni-a2",
+            "examen_diagnostico_universidad_area2",
+            "examen_diagnostico_universidad_area2_2023",
+            "unam-a2-1",
+            "unam-a2-2",
+            "unam-a2-3",
+            "unam-a2-4"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Marley",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Miguel Ángel",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-06-10",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-06-10",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Rafaela",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Regina",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Roxanna",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sofía",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Ximena",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Yuli",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "ECOEMS (bachillerato)"
+      ],
+      "primera_vez": "2026-04-05",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "ECOEMS (bachillerato)",
+          "desde": "2026-04-05",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "comipems-1",
+            "comipems-2",
+            "comipems-3",
+            "diag-bach",
+            "ecoems-1",
+            "ecoems-2",
+            "ecoems-3",
+            "ecoems-4",
+            "ecoems-5",
+            "ecoems-6",
+            "ecoems-7",
+            "ecoems-8",
+            "ecoems-9",
+            "ecoems-especial",
+            "ecoems-especial-2",
+            "ecoems-especial-merge",
+            "examen_comipems_2016",
+            "examen_comipems_simulacro2",
+            "examen_diagnostico_bachillerato",
+            "examen_ecoems_2015_versionA",
+            "examen_ecoems_2015_versionB",
+            "examen_ecoems_2016",
+            "examen_simulacro_comipems_2019",
+            "examen_simulacro_comipems_2021"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Yuri",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "UNAM · varios",
+        "UNAM · Área 4"
+      ],
+      "primera_vez": "2026-04-08",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "UNAM · varios",
+          "desde": "2026-04-08",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "eval_matfis_2026-04-23",
+            "eval_matfis_2026-04-24",
+            "examen_diagnostico_universidad",
+            "sim_unam4_2011",
+            "sim_unam4_2021",
+            "sim_unam4_2021_backup",
+            "sim_unam4_2024",
+            "sim_unam4_2026",
+            "unam-especial"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 1",
+          "desde": "2026-04-12",
+          "hasta": "2026-04-16",
+          "examenes": [
+            "examen_diagnostico_universidad_area1"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 2",
+          "desde": "2026-04-12",
+          "hasta": "2026-04-16",
+          "examenes": [
+            "examen_diagnostico_universidad_area2"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 4",
+          "desde": "2026-04-16",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "examen_diagnostico_universidad_area4",
+            "unam-a4-1",
+            "unam-a4-2",
+            "unam-a4-3",
+            "unam-a4-4"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Ángeles",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "UNAM · varios",
+        "UNAM · Área 3"
+      ],
+      "primera_vez": "2026-04-08",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "UNAM · varios",
+          "desde": "2026-04-08",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "eval_matfis_2026-04-23",
+            "eval_matfis_2026-04-24",
+            "examen_diagnostico_universidad",
+            "sim_unam3_2011",
+            "sim_unam3_2021",
+            "sim_unam3_2021_backup",
+            "sim_unam3_2024",
+            "sim_unam3_2026",
+            "unam-especial"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 1",
+          "desde": "2026-04-12",
+          "hasta": "2026-04-16",
+          "examenes": [
+            "examen_diagnostico_universidad_area1"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 2",
+          "desde": "2026-04-12",
+          "hasta": "2026-04-16",
+          "examenes": [
+            "examen_diagnostico_universidad_area2"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 3",
+          "desde": "2026-04-16",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "examen_diagnostico_universidad_area3",
+            "unam-a3-1",
+            "unam-a3-2",
+            "unam-a3-3",
+            "unam-a3-4"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Óscar",
+      "generaciones": [
+        "2026"
+      ],
+      "vigente": true,
+      "grupo_actual": [
+        "UNAM · varios",
+        "UNAM · Área 1"
+      ],
+      "primera_vez": "2026-04-08",
+      "ultima_vez": "2026-07-31",
+      "historial": [
+        {
+          "grupo": "UNAM · varios",
+          "desde": "2026-04-08",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "eval_matfis_2026-04-23",
+            "eval_matfis_2026-04-24",
+            "examen_diagnostico_universidad",
+            "sim_unam1_2011",
+            "sim_unam1_2021",
+            "sim_unam1_2021_backup",
+            "sim_unam1_2022",
+            "sim_unam1_2026",
+            "unam-especial"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 1",
+          "desde": "2026-04-12",
+          "hasta": "2026-07-31",
+          "examenes": [
+            "diag-uni-a1",
+            "diagnostico_matematicas_area1_2026-05-07",
+            "examen_diagnostico_universidad_area1",
+            "examen_diagnostico_universidad_area1_2022",
+            "unam-a1-1",
+            "unam-a1-2",
+            "unam-a1-3",
+            "unam-a1-4"
+          ]
+        },
+        {
+          "grupo": "UNAM · Área 2",
+          "desde": "2026-04-12",
+          "hasta": "2026-04-16",
+          "examenes": [
+            "examen_diagnostico_universidad_area2"
+          ]
+        }
+      ]
+    }
+  ]
+}
