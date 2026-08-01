@@ -5,7 +5,7 @@
 # La verificación de respuestas es DETERMINISTA: la clave de la guía se extrae como
 # texto (claves/clave-a{N}-2025.json) y aquí se compara reactivo por reactivo. Si algo
 # no cuadra, no se escribe nada.
-import json, glob, re, sys, collections
+import json, glob, os, re, sys, collections
 
 RAIZ = '/Users/giledvz/Documents/ECOEMS'
 ORDEN = ['Física', 'Literatura', 'Química', 'Geografía', 'Matemáticas', 'Español',
@@ -16,6 +16,8 @@ NOMBRE = {1: 'Ciencias Físico Matemáticas y de las Ingenierías',
           4: 'Humanidades y Artes'}
 ALUMNOS = {1: ['Óscar', 'Alfredo', 'Dana'], 2: ['Lupita'],
            3: ['Ángeles'], 4: ['Yuri', 'Esme']}
+# Dónde vive el examen muestra dentro de cada guía, para poder volver al original.
+PAGINAS = {1: ' (páginas 61-82; clave en las 83-86).'}
 
 # El renglón de instrucción sobra dentro del recuadro de lectura: el recuadro ya dice
 # visualmente que eso es la lectura, y el rango de preguntas no le sirve al alumno.
@@ -28,6 +30,13 @@ def main(a):
             qs[q['n']] = q
     clave = json.load(open(f'{RAIZ}/fuentes/unam-2025/claves/clave-a{a}-2025.json',
                            encoding='utf-8'))
+    # Registro de figuras ya dibujadas, para que rearmar el examen no las borre.
+    figs = json.load(open(f'{RAIZ}/fuentes/unam-2025/figuras/figuras.json',
+                          encoding='utf-8'))[str(a)]
+    if faltan_svg := [f for f in figs.values()
+                      if not os.path.exists(f'{RAIZ}/public/imagenes_unam-a{a}-5/{f}')]:
+        print(f'  ! figuras registradas que no existen en disco: {faltan_svg}')
+        return
 
     faltan = [n for n in range(1, 121) if n not in qs]
     if faltan:
@@ -50,11 +59,15 @@ def main(a):
         if ctx:
             nq['context'] = INSTR.sub('', ctx).strip()
         if q.get('figura') or q.get('figuras_opciones'):
-            # La descripción queda registrada pero FUERA de lo que ve el alumno,
-            # hasta que la figura exista como SVG.
-            nq['_figura_pendiente'] = {k: v for k, v in
-                (('enunciado', q.get('figura')), ('opciones', q.get('figuras_opciones'))) if v}
-            pend.append(n)
+            if str(n) in figs:
+                # Ya dibujada: entra como imagen y la descripción deja de hacer falta.
+                nq['image'] = f'/imagenes_unam-a{a}-5/{figs[str(n)]}'
+            else:
+                # La descripción queda registrada pero FUERA de lo que ve el alumno,
+                # hasta que la figura exista como SVG.
+                nq['_figura_pendiente'] = {k: v for k, v in
+                    (('enunciado', q.get('figura')), ('opciones', q.get('figuras_opciones'))) if v}
+                pend.append(n)
         nq['options'] = q['options']
         nq['answer'] = q['answer']
         secs[q['asignatura']].append(nq)
@@ -67,7 +80,7 @@ def main(a):
                         'No se permite el uso de calculadora.',
         'source': {'guia': f'Guia UNAM 2025 Area {a}.pdf', 'anio': 2025,
                    'descripcion': f'Examen muestra de la Guía oficial UNAM 2025, '
-                                  f'Área de las {NOMBRE[a]}.',
+                                  f'Área de las {NOMBRE[a]}' + PAGINAS.get(a, '.'),
                    'ubicacion': f'fuentes/unam-guias/guia-unam-a{a}-2025.pdf '
                                 '(en disco, fuera de git por peso)'},
         'sections': [{'subject': s, 'questions_count': len(v), 'questions': v}

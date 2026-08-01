@@ -1,0 +1,28 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230" width="400" height="230" font-family="'Latin Modern Roman', Georgia, serif">
+<!-- Circuito: R en la malla de la pila, 2R en una malla sin fuente -->
+  <g stroke="currentColor" stroke-width="1.8" fill="none">
+    <!-- Pila: placa larga arriba (+), corta abajo (−); el cable se corta aquí -->
+    <line x1="47" y1="106" x2="77" y2="106"/>
+    <line x1="54" y1="118" x2="70" y2="118"/>
+    <!-- Lado izquierdo, en dos tramos para no atravesar la pila -->
+    <line x1="62" y1="52" x2="62" y2="106"/>
+    <line x1="62" y1="118" x2="62" y2="178"/>
+    <!-- Rail superior, interrumpido donde va cada resistor -->
+    <line x1="62" y1="52" x2="108" y2="52"/>
+    <line x1="154" y1="52" x2="247" y2="52"/>
+    <line x1="293" y1="52" x2="340" y2="52"/>
+    <line x1="62" y1="178" x2="340" y2="178"/>
+    <line x1="340" y1="52" x2="340" y2="178"/>
+    <!-- Rama central: deja 2R en una malla sin fuente -->
+    <line x1="200" y1="52" x2="200" y2="178"/>
+    <path d="M 108.0,52 L 112,62 L 120,42 L 127,62 L 135,42 L 142,62 L 150,42 L 154.0,52"/>
+    <path d="M 247.0,52 L 251,62 L 258,42 L 266,62 L 274,42 L 282,62 L 289,42 L 293.0,52"/>
+  </g>
+  <text x="38" y="115" font-size="18" font-style="italic" text-anchor="end">V</text>
+  <text x="131" y="32" font-size="18" font-style="italic" text-anchor="middle">R</text>
+  <text x="270" y="32" font-size="18" font-style="italic" text-anchor="middle">2R</text>
+  <!-- Corriente: bajo el rail inferior, que es el retorno hacia la pila -->
+  <path d="M 158 193 l -26 0" stroke="currentColor" stroke-width="1.4" fill="none"/>
+  <path d="M 128 193 l 6 -4 l 0 8 z" fill="currentColor"/>
+  <text x="166" y="198" font-size="16" font-style="italic">3I</text>
+</svg>
