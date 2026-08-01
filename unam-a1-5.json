@@ -1,0 +1,1676 @@
+{
+  "exam": {
+    "title": "UNAM Área 1 - 5",
+    "group": "Universidad",
+    "date": "2026-08-01",
+    "version": "1.0",
+    "total_questions": 120,
+    "students": [
+      "Óscar",
+      "Alfredo",
+      "Dana"
+    ],
+    "instructions": "Selecciona la opción correcta para cada pregunta. No se permite el uso de calculadora.",
+    "source": {
+      "guia": "Guia UNAM 2025 Area 1.pdf",
+      "anio": 2025,
+      "descripcion": "Examen muestra de la Guía oficial UNAM 2025, Área de las Ciencias Físico Matemáticas y de las Ingenierías (páginas 61-82; clave en las 83-86).",
+      "ubicacion": "fuentes/unam-guias/guia-unam-a1-2025.pdf (en disco, fuera de git por peso)"
+    },
+    "sections": [
+      {
+        "subject": "Física",
+        "questions_count": 16,
+        "questions": [
+          {
+            "id": 1,
+            "topic": "1.3.0.0.0",
+            "topic_name": "Física",
+            "text": "Un auto arranca con una aceleración constante de $1.8\\,\\mathrm{\\frac{m}{s^2}}$; la velocidad del auto dos segundos después de iniciar su movimiento es de",
+            "options": {
+              "A": "$0.9\\,\\mathrm{\\frac{m}{s}}$",
+              "B": "$1.8\\,\\mathrm{\\frac{m}{s}}$",
+              "C": "$3.2\\,\\mathrm{\\frac{m}{s}}$",
+              "D": "$3.6\\,\\mathrm{\\frac{m}{s}}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 2,
+            "topic": "2.4.0.0.0",
+            "topic_name": "Física",
+            "text": "Con base en el siguiente sistema de vectores, indica la magnitud del vector resultante en N.\n\n| Ángulo | Seno | Coseno |\n|---|---|---|\n| 30° | 0.5 | 0.8 |\n| 45° | 0.7 | 0.7 |\n| 75° | 0.9 | 0.3 |",
+            "_figura_pendiente": {
+              "enunciado": "Plano cartesiano con ejes x (horizontal) e y (vertical) y tres vectores dibujados desde el origen. Un vector de 8 N en el primer cuadrante, formando un ángulo de 30° con el semieje +x (el 30° está marcado entre el semieje +x y ese vector). Un vector de 9 N en el cuarto cuadrante, apuntando hacia abajo y a la derecha, formando un ángulo de 75° marcado entre el semieje +x y ese vector. Un vector de 10 N (trazado con línea gruesa) en el tercer cuadrante, apuntando hacia abajo y a la izquierda, formando un ángulo de 45° marcado entre el semieje −x y ese vector. Las etiquetas 8N, 9N y 10N están en las puntas de flecha respectivas."
+            },
+            "options": {
+              "A": "$\\sqrt{75.8}$",
+              "B": "$\\sqrt{23.8}$",
+              "C": "$\\sqrt{650}$",
+              "D": "$\\sqrt{101.1}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 3,
+            "topic": "2.7.0.0.0",
+            "topic_name": "Física",
+            "text": "La siguiente figura ilustra el momento preciso en el que un bate golpea una pelota. ¿Cuál de las imágenes muestra los vectores que representan la Tercera Ley de Newton?\n\n**Considera:**\n\n$F_{\\frac{P}{B}}$ = Fuerza de la pelota sobre el bate.\n\n$F_{\\frac{B}{P}}$ = Fuerza del bate sobre la pelota.",
+            "_figura_pendiente": {
+              "enunciado": "Dibujo en blanco y negro visto desde arriba: una pelota (círculo) a la izquierda, en contacto con el extremo grueso de un bate de béisbol que está a la derecha, con el mango apuntando hacia abajo. No lleva vectores; es la imagen de referencia del enunciado.",
+              "opciones": {
+                "A": "La misma pelota y bate. Sobre la pelota, una flecha corta que apunta hacia la izquierda, etiquetada $F_{\\frac{B}{P}}$; sobre el bate, una flecha corta del mismo tamaño que apunta hacia la derecha, etiquetada $F_{\\frac{P}{B}}$. Las dos flechas son de igual longitud y de sentidos opuestos (se alejan una de la otra).",
+                "B": "La misma pelota y bate. Sobre la pelota, una flecha larga que apunta hacia la izquierda, etiquetada $F_{\\frac{B}{P}}$; sobre el bate, una flecha corta que apunta hacia la derecha, etiquetada $F_{\\frac{P}{B}}$. Las flechas tienen sentidos opuestos pero longitudes distintas: la de la pelota es mucho mayor.",
+                "C": "La misma pelota y bate. Sobre la pelota, una flecha que apunta hacia la derecha, etiquetada $F_{\\frac{B}{P}}$; sobre el bate, una flecha que apunta hacia la izquierda, etiquetada $F_{\\frac{P}{B}}$. Las dos flechas apuntan una hacia la otra (hacia la zona de contacto).",
+                "D": "La misma pelota y bate. Sobre la pelota, una flecha corta que apunta hacia la izquierda, etiquetada $F_{\\frac{B}{P}}$; sobre el bate, una flecha larga que apunta hacia la derecha, etiquetada $F_{\\frac{P}{B}}$. Sentidos opuestos y longitudes distintas: la del bate es mucho mayor."
+              }
+            },
+            "options": {
+              "A": "",
+              "B": "",
+              "C": "",
+              "D": ""
+            },
+            "answer": "A"
+          },
+          {
+            "id": 4,
+            "topic": "3.3.0.0.0",
+            "topic_name": "Física",
+            "text": "La ecuación que permite calcular la energía cinética de una partícula de masa *m* y velocidad *v* es",
+            "options": {
+              "A": "$Ec = mv$",
+              "B": "$Ec = 2mv^2$",
+              "C": "$Ec = \\frac{mv}{2}$",
+              "D": "$Ec = \\frac{1}{2}mv^2$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 5,
+            "topic": "4.1.2.0.0",
+            "topic_name": "Física",
+            "text": "Un sistema está en equilibrio térmico cuando",
+            "options": {
+              "A": "en un proceso su temperatura no varía.",
+              "B": "su temperatura es igual a la de otro sistema con el que está en contacto térmico.",
+              "C": "se calienta por medio de trabajo.",
+              "D": "su presión y su masa permanecen constantes."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 6,
+            "topic": "4.2.3.0.0",
+            "topic_name": "Física",
+            "text": "¿Cuál es la densidad del oxígeno diatómico que está a una temperatura de 27° C y a una atmósfera de presión?\n\n**Considera:**\n\n**La masa molecular del oxígeno monoatómico es 16 uma.**\n\n**El valor de la constante universal del gas ideal es de $8.314\\,\\mathrm{\\frac{J}{mol\\,k}}$**",
+            "options": {
+              "A": "$0.08\\,\\mathrm{\\frac{kg}{m^3}}$",
+              "B": "$14.4\\,\\mathrm{\\frac{kg}{m^3}}$",
+              "C": "$0.6\\,\\mathrm{\\frac{kg}{m^3}}$",
+              "D": "$1.3\\,\\mathrm{\\frac{kg}{m^3}}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 7,
+            "topic": "5.1.0.0.0",
+            "topic_name": "Física",
+            "text": "Calcula la frecuencia de una luz de color rojo con una velocidad de $300{,}000\\,\\mathrm{\\frac{km}{s}}$ y una longitud de onda de $7\\times10^{-7}\\,\\mathrm{m}$.",
+            "options": {
+              "A": "$2.33\\times10^{-15}\\,\\mathrm{Hz}$",
+              "B": "$2.10\\times10^{2}\\,\\mathrm{Hz}$",
+              "C": "$4.76\\times10^{-3}\\,\\mathrm{Hz}$",
+              "D": "$4.28\\times10^{14}\\,\\mathrm{Hz}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 8,
+            "topic": "5.3.0.0.0",
+            "topic_name": "Física",
+            "text": "La interferencia de dos ondas mecánicas puede generar franjas claras y obscuras. Lo anterior se debe a la conservación de la",
+            "options": {
+              "A": "polarización.",
+              "B": "difracción.",
+              "C": "energía.",
+              "D": "longitud de onda."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 9,
+            "topic": "6.2.0.0.0",
+            "topic_name": "Física",
+            "text": "Una carga +*Q* se encuentra en el centro de un círculo y sobre el perímetro, a una distancia *R* están situadas 12 cargas +*q* uniformemente distribuidas, como lo muestra la figura.\n\n**¿Cuál es la fuerza neta que experimenta +Q debida a las 12 cargas +q?**",
+            "_figura_pendiente": {
+              "enunciado": "Una circunferencia con una carga puntual rotulada +Q en el centro. Sobre la circunferencia hay 12 puntos negros uniformemente distribuidos (cada 30°), cada uno rotulado +q. Desde el centro sale una flecha hacia abajo y a la izquierda hasta la circunferencia, rotulada R, que indica el radio."
+            },
+            "options": {
+              "A": "0F N",
+              "B": "3F N",
+              "C": "6F N",
+              "D": "12F N"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 10,
+            "topic": "6.3.0.0.0",
+            "topic_name": "Física",
+            "text": "Por un cable que tiene una resistencia eléctrica de 10 $\\Omega$, circula una corriente eléctrica de 10 A. ¿Cuál es el voltaje en el cable?",
+            "options": {
+              "A": "100 V",
+              "B": "20 V",
+              "C": "10 V",
+              "D": "1 V"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 11,
+            "topic": "6.3.0.0.0",
+            "topic_name": "Física",
+            "text": "De acuerdo a la imagen, la corriente que circula por el resistor de resistencia $\\frac{R}{2}$ es",
+            "_figura_pendiente": {
+              "enunciado": "Circuito eléctrico de un solo lazo rectangular. En el lado izquierdo, una batería o pila rotulada V, con el símbolo + arriba y la marca de terminal larga/corta. En el lado derecho, un resistor dibujado en zigzag rotulado $\\frac{R}{2}$. Los dos elementos están unidos por conductores en la parte superior e inferior formando un circuito serie."
+            },
+            "options": {
+              "A": "$\\frac{V}{2R}$",
+              "B": "$\\frac{2V}{R}$",
+              "C": "$\\frac{V}{3R}$",
+              "D": "$\\frac{3V}{R}$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 12,
+            "topic": "6.4.1.0.0",
+            "topic_name": "Física",
+            "text": "Determina la resistencia total del circuito que se representa en la imagen.",
+            "_figura_pendiente": {
+              "enunciado": "Circuito eléctrico rectangular. En el lado izquierdo una fuente rotulada 6V. En la rama superior, en serie, un resistor en zigzag rotulado $R_1 = 2\\,\\Omega$. A la derecha, dos resistores en paralelo entre sí, dibujados en vertical uno junto al otro: $R_2 = 4\\,\\Omega$ y $R_3 = 6\\,\\Omega$; esa combinación en paralelo está en serie con $R_1$ y con la fuente."
+            },
+            "options": {
+              "A": "2.41 $\\Omega$",
+              "B": "4.4 $\\Omega$",
+              "C": "12 $\\Omega$",
+              "D": "1.90 $\\Omega$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 13,
+            "topic": "7.1.4.0.0",
+            "topic_name": "Física",
+            "text": "Tres recipientes idénticos A, B y C contienen igual cantidad de diferentes líquidos, las densidades de los líquidos son $\\mathrm{p_A > p_B > p_C}$, ¿cómo es la presión en las bases de los recipientes?\n\n**Considera.**\n\n$\\mathrm{p_A}$ = presión sobre la base A.\n\n$\\mathrm{p_B}$ = presión sobre la base B.\n\n$\\mathrm{p_C}$ = presión sobre la base C.",
+            "_figura_pendiente": {
+              "enunciado": "Tres cubos idénticos dibujados en perspectiva (aristas ocultas punteadas), del mismo tamaño, alineados horizontalmente y rotulados A, B y C debajo de cada uno."
+            },
+            "options": {
+              "A": "$P_A = P_B = P_C$",
+              "B": "$P_A > P_B > P_C$",
+              "C": "$P_B > P_A > P_C$",
+              "D": "$P_C > P_B > P_A$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 14,
+            "topic": "8.3.0.0.0",
+            "topic_name": "Física",
+            "text": "A través de una lente convergente de 30 cm de radio pasan rayos que forman una imagen a 20 cm de distancia de la lente. ¿A qué distancia se encuentra el objeto real del lente?",
+            "options": {
+              "A": "30 cm",
+              "B": "16 cm",
+              "C": "8 cm",
+              "D": "60 cm"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 15,
+            "topic": "8.4.0.0.0",
+            "topic_name": "Física",
+            "text": "Actualmente se concibe a la luz con un comportamiento dual, esto se refiere a que se le considera como",
+            "options": {
+              "A": "partícula y onda.",
+              "B": "energía y movimiento.",
+              "C": "calor y difracción.",
+              "D": "reflexión y refracción."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 16,
+            "topic": "9.2.1.0.0",
+            "topic_name": "Física",
+            "text": "¿En qué áreas recibió Madame Curie el premio Nobel?",
+            "options": {
+              "A": "Física y Biología.",
+              "B": "Medicina y Química.",
+              "C": "Química y Biología.",
+              "D": "Física y Química."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Literatura",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 17,
+            "topic": "1.1.0.0.0",
+            "topic_name": "Literatura",
+            "text": "De acuerdo con su organización textual, las propiedades del texto deben presentar",
+            "options": {
+              "A": "una situación comunicativa en la que surge como una unidad de información con significado coherente, cuyas ideas tienen cohesión.",
+              "B": "un cuerpo de citas y referentes autorizados claramente documentados en el cual se apoye, lo anterior, con el fin de dar verosimilitud a éste.",
+              "C": "una serie de ideas perfectamente establecidas cuya finalidad es informar a partir de su función referencial y apelativa.",
+              "D": "un contenido acorde al pensamiento del autor, en la que las ideas se presentan en función de la subjetividad del lector."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 18,
+            "topic": "1.3.2.0.0",
+            "topic_name": "Literatura",
+            "text": "En el siguiente texto predomina la función referencial de la lengua porque",
+            "context": "**Donají Monserrat Ortiz Ortiz y Luis Donaldo Martínez Torres, alumnos de la licenciatura en Geohistoria de la ENES Morelia, obtuvieron el primer lugar en el concurso de cartel organizado en el marco del Encuentro Nacional de Estudiantes de Geografía, que se celebró en las instalaciones de la Universidad Autónoma de San Luis Potosí.**\n\n**Gaceta UNAM, 17 de octubre de 2016**",
+            "options": {
+              "A": "se transmite un mensaje en forma directa y clara.",
+              "B": "intenta mantener despierta la atención del lector.",
+              "C": "expresa la emotividad y los sentimientos de quien escribe.",
+              "D": "se dan los nombres y apellidos de los participantes."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 19,
+            "topic": "1.4.4.0.0",
+            "topic_name": "Literatura",
+            "text": "Representación teatral donde los personajes son marcados por la fatalidad y están determinados por el destino.",
+            "options": {
+              "A": "Sainete.",
+              "B": "Entremés.",
+              "C": "Tragedia.",
+              "D": "Farsa."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 20,
+            "topic": "1.5.2.4.0",
+            "topic_name": "Literatura",
+            "text": "Identifica el recurso poético presente en la siguiente expresión.\n\n**La lluvia, como finísimas flechas afiladas, caía chorreando la vidriera.**",
+            "options": {
+              "A": "Ironía.",
+              "B": "Símil.",
+              "C": "Metonimia.",
+              "D": "Metáfora."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 21,
+            "topic": "2.1.0.0.0",
+            "topic_name": "Literatura",
+            "text": "Género literario que es presentado en un escenario a través de diálogos.",
+            "options": {
+              "A": "Épico.",
+              "B": "Dramático.",
+              "C": "Narrativo.",
+              "D": "Lírico."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 22,
+            "topic": "2.2.0.0.0",
+            "topic_name": "Literatura",
+            "text": "Los autores que conforman una corriente literaria",
+            "options": {
+              "A": "comparten características en cuanto a su forma de escribir y el interés por desarrollar temas similares; además, viven en una misma época.",
+              "B": "heredan el estilo de quienes los precedieron, comparten una forma de escribir y abordan un género determinado, como la dramaturgia o la novela.",
+              "C": "heredan el estilo de quienes los precedieron, comparten una forma de escribir y muestran interés por desarrollar temas similares.",
+              "D": "abordan un género determinado, como la dramaturgia o la novela, comparten el interés por desarrollar temas similares y viven en una misma época."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 23,
+            "topic": "2.2.1.0.0",
+            "topic_name": "Literatura",
+            "text": "¿Qué características del Realismo están contenidas en el siguiente fragmento?\n\n**El remedio del malestar social y de la lucha cada vez más enconada entre pobres y ricos, ¿cuál es? La pobreza, la renuncia de todo bien material. El remedio de las injusticias que envilecen el mundo, en medio de todos esos decantados progresos políticos, ¿cuál es? Pues el no luchar con la injusticia, el entregarse a la maldad humana.**",
+            "options": {
+              "A": "Los valores nacionales y la exaltación del sentimiento.",
+              "B": "Los problemas de un sector de la población y el reflejo de la realidad.",
+              "C": "La objetividad del autor y la evasión de la realidad.",
+              "D": "La descripción de ambientes y el subjetivismo del autor."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 24,
+            "topic": "2.3.1.0.0",
+            "topic_name": "Literatura",
+            "text": "Narración breve que da forma a las fantasías del ser humano.",
+            "options": {
+              "A": "Crónica.",
+              "B": "Comedia.",
+              "C": "Ensayo.",
+              "D": "Cuento."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 25,
+            "topic": "2.3.2.0.0",
+            "topic_name": "Literatura",
+            "text": "Narración que se caracteriza por desarrollar varias historias.",
+            "options": {
+              "A": "Leyenda.",
+              "B": "Mito.",
+              "C": "Novela.",
+              "D": "Minificción."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 26,
+            "topic": "3.2.0.0.0",
+            "topic_name": "Literatura",
+            "text": "¿De qué tipo es la siguiente ficha?\n\n**Agustín López Murguía, \"No pegues tu chicle. Plaga contaminante\", *¿Cómo ves?*, año 7, no. 81, Revista de Divulgación de la Ciencia de la UNAM, pp. 10–14.**",
+            "options": {
+              "A": "Bibliográfica.",
+              "B": "Hemerográfica.",
+              "C": "De cita textual.",
+              "D": "De síntesis."
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Química",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 27,
+            "topic": "1.1.1.0.0",
+            "topic_name": "Química",
+            "text": "Selecciona la opción que representa sustancias que, químicamente, no pueden descomponerse en otras más simples.",
+            "options": {
+              "A": "$\\mathrm{Na(s)}$, $\\mathrm{Cl_2(g)}$ y $\\mathrm{P_4(s)}$",
+              "B": "$\\mathrm{O_2(g)}$, $\\mathrm{He(g)}$ y $\\mathrm{CO(g)}$",
+              "C": "$\\mathrm{S_8(g)}$, $\\mathrm{N_2(g)}$ y $\\mathrm{SO_2(g)}$",
+              "D": "$\\mathrm{CO(g)}$, $\\mathrm{Na(s)}$ y $\\mathrm{S_8(s)}$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 28,
+            "topic": "1.2.1.0.0",
+            "topic_name": "Química",
+            "text": "El átomo de oxígeno tiene __________ protones, __________ electrones y __________ neutrones.\n\n**Considera:**\n\n**Z = 8**\n\n**A = 16**",
+            "options": {
+              "A": "16, 16, 8",
+              "B": "8, 8, 8",
+              "C": "16, 8, 16",
+              "D": "8, 16, 16"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 29,
+            "topic": "1.3.1.0.0",
+            "topic_name": "Química",
+            "text": "Propiedades químicas de los metales alcalinos.",
+            "options": {
+              "A": "Al oxidarse pierden dos electrones y no reaccionan con el agua.",
+              "B": "Forman anhídridos y bases.",
+              "C": "Son muy reactivos con el agua y al oxidarse pierden un electrón.",
+              "D": "Son poco reactivos con el agua y al reducirse ganan un electrón."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 30,
+            "topic": "1.4.0.0.0",
+            "topic_name": "Química",
+            "text": "Opción que representa a sustancias que en disolución acuosa liberan iones hidronio.",
+            "options": {
+              "A": "$H_2S$, $H_2O$ y $PH_3$",
+              "B": "$NH_3$, $CH_4$ y $NaOH$",
+              "C": "$KOH$, $HCl$ y $NH_3$",
+              "D": "$HCl$, $H_3PO_4$ y $H_2CO_3$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 31,
+            "topic": "1.5.2.0.0",
+            "topic_name": "Química",
+            "text": "¿Qué cantidad de HCl concentrado se necesita para preparar 250 mL de una disolución 1.4 M?\n\n**Considera:**\n\n**HCl al 37% de pureza**\n\n$d = 1.14\\,\\dfrac{\\mathrm{g}}{\\mathrm{mL}}$",
+            "options": {
+              "A": "34 mL",
+              "B": "30 mL",
+              "C": "14 mL",
+              "D": "12 mL"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 32,
+            "topic": "2.1.1.0.0",
+            "topic_name": "Química",
+            "text": "Los icebergs flotan en el océano debido a fuerzas",
+            "options": {
+              "A": "intramoleculares denominadas covalentes polares.",
+              "B": "intramoleculares denominadas puentes de hidrógeno.",
+              "C": "intermoleculares denominadas covalentes polares.",
+              "D": "intermoleculares denominadas puentes de hidrógeno."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 33,
+            "topic": "2.4.2.0.0",
+            "topic_name": "Química",
+            "text": "En una disolución acuosa se determinó que $[H^+] < [OH^-]$, por lo tanto, el valor de pH será",
+            "options": {
+              "A": "11",
+              "B": "5",
+              "C": "7",
+              "D": "2"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 34,
+            "topic": "3.3.3.0.0",
+            "topic_name": "Química",
+            "text": "A partir de la siguiente ecuación química, se puede inferir que *x* es un\n\n$\\mathrm{C(s)} + \\mathrm{O_2(g)} \\rightarrow \\mathbf{x}$",
+            "options": {
+              "A": "óxido básico.",
+              "B": "oxisal.",
+              "C": "hidróxido.",
+              "D": "óxido ácido."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 35,
+            "topic": "4.2.2.0.0",
+            "topic_name": "Química",
+            "text": "Biomoléculas que sirven de reserva energética en los organismos.",
+            "options": {
+              "A": "Aminoácidos.",
+              "B": "Lípidos.",
+              "C": "Vitaminas.",
+              "D": "Carbohidratos."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 36,
+            "topic": "5.1.0.0.0",
+            "topic_name": "Química",
+            "text": "Las reacciones de combustión son __________ porque _________ energía calorífica.",
+            "options": {
+              "A": "exotérmicas — liberan",
+              "B": "exotérmicas — absorben",
+              "C": "endotérmicas — liberan",
+              "D": "endotérmicas — absorben"
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Geografía",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 37,
+            "topic": "1.2.0.0.0",
+            "topic_name": "Geografía",
+            "text": "Coordenada geográfica que permite ubicar un lugar al norte y sur del Ecuador.",
+            "options": {
+              "A": "Latitud.",
+              "B": "Altitud.",
+              "C": "Longitud.",
+              "D": "Nutación."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 38,
+            "topic": "1.2.1.0.0",
+            "topic_name": "Geografía",
+            "text": "¿Cuál es la latitud y longitud que corresponde a la ciudad de Caracas?",
+            "_figura_pendiente": {
+              "enunciado": "Mapa de contorno del norte de América del Sur, Centroamérica y el Caribe, con una cuadrícula de coordenadas. El eje horizontal (superior) está rotulado de izquierda a derecha con las longitudes 80°, 70°, 60°, 50°, 40°, 30°. El eje vertical (izquierdo) está rotulado de arriba hacia abajo con 20°, 10°, 0°, 10°, 20° (los dos primeros corresponden al hemisferio norte, el 0° al Ecuador y los dos últimos al hemisferio sur). Sobre el mapa, en la costa norte de Venezuela, hay un punto negro rotulado \"Caracas\", ubicado aproximadamente sobre los 10° de latitud norte y entre los 70° y 60° de longitud oeste (cerca de 67° W)."
+            },
+            "options": {
+              "A": "11º lat N — 67º long W",
+              "B": "65º lat S — 11º long E",
+              "C": "11º lat S — 65º long W",
+              "D": "67º lat N — 11º long W"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 39,
+            "topic": "1.3.1.0.0",
+            "topic_name": "Geografía",
+            "text": "Las corrientes de convección del _________ generan el desplazamiento de los continentes.",
+            "options": {
+              "A": "manto superior.",
+              "B": "manto inferior.",
+              "C": "núcleo externo.",
+              "D": "núcleo interno."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 40,
+            "topic": "1.3.1.2.0",
+            "topic_name": "Geografía",
+            "text": "Al viajar de Chihuahua a Sinaloa, la cadena montañosa que se recorre, es la Sierra",
+            "options": {
+              "A": "Madre Occidental.",
+              "B": "De la Breña.",
+              "C": "Madre Oriental.",
+              "D": "Volcánica Transversal."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 41,
+            "topic": "2.1.4.0.0",
+            "topic_name": "Geografía",
+            "text": "Las costas de los estados de _________ y _________ son afectadas por los ciclones tropicales que se forman en el mar de las Antillas.",
+            "options": {
+              "A": "Chiapas — Oaxaca",
+              "B": "Yucatán — Quintana Roo",
+              "C": "Campeche — Guerrero",
+              "D": "Tabasco — Nayarit"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 42,
+            "topic": "2.2.4.0.0",
+            "topic_name": "Geografía",
+            "text": "La marea negra afecta principalmente a la vida en los",
+            "options": {
+              "A": "lagos.",
+              "B": "ríos.",
+              "C": "manantiales.",
+              "D": "océanos."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 43,
+            "topic": "2.3.3.1.0",
+            "topic_name": "Geografía",
+            "text": "Son países que funcionan como puntos de acceso para que los migrantes que provienen del norte de África logren integrarse al territorio europeo.",
+            "options": {
+              "A": "España, Malta, Italia y Grecia.",
+              "B": "España, Francia, Alemania e Italia.",
+              "C": "Malta, Francia, Grecia y Portugal.",
+              "D": "Reino Unido, Croacia, Francia y Alemania."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 44,
+            "topic": "2.4.2.2.0",
+            "topic_name": "Geografía",
+            "text": "La Unión Europea tiene como propósitos fundamentales la",
+            "options": {
+              "A": "libre circulación de mercancías, personas y políticas comunes.",
+              "B": "unificación de la moneda y la creación de un fideicomiso agrario.",
+              "C": "protección de los derechos de los trabajadores y un salario uniforme.",
+              "D": "explotación sin restricciones de los recursos del carbón y del petróleo."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 45,
+            "topic": "2.5.1.0.0",
+            "topic_name": "Geografía",
+            "text": "Una de las causas principales de la desintegración de los estados — nación es",
+            "options": {
+              "A": "la pugna por la explotación de los recursos naturales.",
+              "B": "la aplicación de políticas neoliberales.",
+              "C": "el cambio drástico del sistema económico.",
+              "D": "el descontento social de las minorías étnicas y religiosas."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 46,
+            "topic": "2.6.3.0.0",
+            "topic_name": "Geografía",
+            "text": "El tipo de industria que se ubica en la zona fronteriza del norte de México es la",
+            "options": {
+              "A": "metalúrgica.",
+              "B": "maquiladora.",
+              "C": "petroquímica.",
+              "D": "metalmecánica."
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Matemáticas",
+        "questions_count": 26,
+        "questions": [
+          {
+            "id": 47,
+            "topic": "1.1.2.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Una persona pesa 96 kg. Al ingresar a una clínica reductora de peso, comienza a bajar $\\dfrac{1}{32}$ del peso inicial cada semana. ¿Cuántos kg pesará al término de cada una de las primeras cuatro semanas del tratamiento?",
+            "options": {
+              "A": "Semana 1: 93\nSemana 2: 90\nSemana 3: 87\nSemana 4: 84",
+              "B": "Semana 1: 96\nSemana 2: 92\nSemana 3: 88\nSemana 4: 84",
+              "C": "Semana 1: 96\nSemana 2: 90\nSemana 3: 84\nSemana 4: 78",
+              "D": "Semana 1: 93\nSemana 2: 92\nSemana 3: 91\nSemana 4: 90"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 48,
+            "topic": "1.3.2.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Al simplificar la expresión algebraica $-3x - [-2(4x - 3) - (9 - x)]$ se obtiene",
+            "options": {
+              "A": "$6x + 3$",
+              "B": "$4x + 3$",
+              "C": "$10x + 3$",
+              "D": "$6x + 12$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 49,
+            "topic": "2.1.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Al desarrollar $(x^2 - 3y)^3$ se obtiene",
+            "options": {
+              "A": "$x^6 - 9x^4y + 27x^2y^2 + 27y^3$",
+              "B": "$x^6 + 9x^4y - 27x^2y^2 + 27y^3$",
+              "C": "$x^6 - 9x^4y + 27x^2y^2 - 27y^3$",
+              "D": "$x^6 + 9x^4y - 27x^2y^2 - 27y^3$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 50,
+            "topic": "2.3.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Simplifica la siguiente fracción.\n\n$\\dfrac{-x^2 - 3x + 40}{x + 8}$",
+            "options": {
+              "A": "$x - 5$",
+              "B": "$-x + 5$",
+              "C": "$-x + 8$",
+              "D": "$x - 8$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 51,
+            "topic": "3.2.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "La solución de la ecuación $\\dfrac{x}{3} - \\dfrac{x - 5}{4} = 2$ es",
+            "options": {
+              "A": "$x = 8$",
+              "B": "$x = 9$",
+              "C": "$x = 10$",
+              "D": "$x = 12$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 52,
+            "topic": "3.3.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Las soluciones de la ecuación $4x^2 + 16x + 15 = 0$ son",
+            "options": {
+              "A": "$x_1 = -\\dfrac{3}{2},\\ x_2 = -\\dfrac{5}{2}$",
+              "B": "$x_1 = 3,\\ x_2 = -\\dfrac{5}{4}$",
+              "C": "$x_1 = \\dfrac{3}{2},\\ x_2 = \\dfrac{5}{2}$",
+              "D": "$x_1 = -\\dfrac{3}{4},\\ x_2 = 5$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 53,
+            "topic": "4.1.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Al resolver $-2x + 6 \\geq 16$ ¿Cuál es el valor de x?",
+            "options": {
+              "A": "$x < -5$",
+              "B": "$x \\geq 5$",
+              "C": "$x \\leq -5$",
+              "D": "$x > 5$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 54,
+            "topic": "5.2.1.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Soluciona el sistema de ecuaciones.\n\n$\\begin{cases} 5x + 2y - z = -7 \\\\ x - 2y + 2z = 0 \\\\ 3y + z = 17 \\end{cases}$",
+            "options": {
+              "A": "$x = -2$, $y = 3$, $z = 5$",
+              "B": "$x = 2$, $y = 4$, $z = -5$",
+              "C": "$x = -2$, $y = 4$, $z = 5$",
+              "D": "$x = 2$, $y = 3$, $z = -5$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 55,
+            "topic": "6.2.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Si S = {1, 2} y Q = {2, 3, 4}, ¿cuál es el rango de la función f: S $\\rightarrow$ Q definida por f(x) = x + 1?",
+            "options": {
+              "A": "{2, 3}",
+              "B": "{1, 2, 3}",
+              "C": "{1, 3}",
+              "D": "{2, 3, 4}"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 56,
+            "topic": "7.1.1.0.0",
+            "topic_name": "Matemáticas",
+            "text": "A cuanto equivale 45° en radianes.",
+            "options": {
+              "A": "$\\dfrac{1}{4}\\pi$",
+              "B": "$\\dfrac{2}{3}\\pi$",
+              "C": "$\\dfrac{3}{4}\\pi$",
+              "D": "$\\dfrac{4}{3}\\pi$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 57,
+            "topic": "7.1.3.0.0",
+            "topic_name": "Matemáticas",
+            "text": "En un triángulo rectángulo, la hipotenusa mide 10 unidades y uno de sus ángulos es de 30°. ¿Cuántas unidades mide el lado opuesto al ángulo dado?",
+            "options": {
+              "A": "6",
+              "B": "$10\\sqrt{3}$",
+              "C": "5",
+              "D": "$5\\sqrt{3}$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 58,
+            "topic": "8.1.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "¿Cuál es el dominio de la siguiente función? f(x) = log(x $-$ 1)",
+            "options": {
+              "A": "$x \\leq 1$",
+              "B": "$x < 1$",
+              "C": "$x > 1$",
+              "D": "$x \\geq 1$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 59,
+            "topic": "9.2.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Encuentra las coordenadas del punto medio entre los puntos P (0, 2) y Q (4, 6).",
+            "options": {
+              "A": "(2, 3)",
+              "B": "(2, 4)",
+              "C": "(3, 3)",
+              "D": "(3, 4)"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 60,
+            "topic": "9.5.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Determina los puntos por donde pasa una recta perpendicular a la gráfica siguiente.",
+            "_figura_pendiente": {
+              "enunciado": "Plano cartesiano con eje x rotulado de $-8$ a 8 (marcas en $-8$, $-6$, $-4$, $-2$, 0, 2, 4, 6, 8) y eje y rotulado de $-8$ a 10 (marcas en $-8$, $-6$, $-4$, $-2$, 2, 4, 6, 8, 10). Sobre el plano está trazado un segmento de recta con pendiente positiva que va del punto rotulado \"P ($-4$, $-7$)\", marcado con un punto negro en el tercer cuadrante, hasta el punto rotulado \"P (4, 9)\", marcado con un punto negro en el primer cuadrante. La recta cruza cerca del origen."
+            },
+            "options": {
+              "A": "(0, 0) y ($-2$, $-3$)",
+              "B": "(0, 0) y ($-2$, 1)",
+              "C": "(0, 0) y (1, $-3$)",
+              "D": "(0, 0) y (1, 3)"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 61,
+            "topic": "9.7.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Un triángulo está conformado por los vértices P ($-7$, 1), Q (9, 3) y R (3, 5) ¿Cuál es la ecuación de la mediana que pasa por el vértice *P*?",
+            "options": {
+              "A": "$-x - 8y + 15 = 0$",
+              "B": "$-3x + 13y - 34 = 0$",
+              "C": "$3x - y + 22 = 0$",
+              "D": "$2x - 5y + 19 = 0$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 62,
+            "topic": "10.4.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Obtén las coordenadas del centro *C* y el valor del radio *r* para la circunferencia $x^2 + y^2 + 6x - 4y - 12 = 0$",
+            "options": {
+              "A": "$C(-3, 2)$; $r = 2\\sqrt{3}$",
+              "B": "$C(3, -2)$; $r = 5$",
+              "C": "$C(3, -2)$; $r = 2\\sqrt{3}$",
+              "D": "$C(-3, 2)$; $r = 5$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 63,
+            "topic": "11.2.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Determina la ecuación de la parábola con directriz x + 3 = 0, vértice en el origen y eje focal que coincide con el eje x.",
+            "options": {
+              "A": "$x^2 - 12y = 0$",
+              "B": "$x^2 + 12y = 0$",
+              "C": "$y^2 + 12y = 0$",
+              "D": "$y^2 - 12x = 0$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 64,
+            "topic": "12.4.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Dada la ecuación de la elipse $\\dfrac{x^2}{100} + \\dfrac{y^2}{75} = 1$ determina su excentricidad.",
+            "options": {
+              "A": "$\\dfrac{3}{4}$",
+              "B": "$\\dfrac{2}{3}$",
+              "C": "$\\dfrac{3}{5}$",
+              "D": "$\\dfrac{1}{2}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 65,
+            "topic": "13.3.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "¿Cuál es la ecuación de la hipérbola centrada en el origen con lado recto 10 y vértice V (0, $-$ 9)?",
+            "options": {
+              "A": "$9x^2 - 5y^2 = 405$",
+              "B": "$5y^2 - 9x^2 = 405$",
+              "C": "$9x^2 - 10y^2 = 90$",
+              "D": "$10x^2 - 9y^2 = 90$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 66,
+            "topic": "14.1.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "La ecuación $x^2 + 4xy + 4y^2 - 74x + 2y + 94 = 0$ es una",
+            "options": {
+              "A": "circunferencia.",
+              "B": "parábola.",
+              "C": "elipse.",
+              "D": "hipérbola."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 67,
+            "topic": "15.4.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "El límite de la función f(x) = 4 cuando *x* tiende a $-2$, es igual a",
+            "options": {
+              "A": "$-2$",
+              "B": "$-4$",
+              "C": "2",
+              "D": "4"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 68,
+            "topic": "16.2.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "¿Cuál de las siguientes expresiones corresponde para obtener la derivada f(x) = $x^3$ en el punto x = 3?",
+            "options": {
+              "A": "$f'(3) = \\lim_{h \\to 0} \\dfrac{f(3+h) - f(3)}{h} = \\lim_{h \\to 0} \\dfrac{(3+h)^3 - 3^3}{h}$\n$f'(3) = \\lim_{h \\to 0} \\dfrac{3^3 + 3 \\bullet 3^2h + 3 \\bullet 3h^2 + h^3 - 3^3}{h}$",
+              "B": "$f'(3) = \\lim_{h \\to 0} \\dfrac{f(3) - f(3+h)}{h} = \\lim_{h \\to 0} \\dfrac{3^3 - (3+h)^3}{h}$\n$f'(3) = \\lim_{h \\to 0} \\dfrac{3^3 - 3^3 - 3 \\bullet 3^2h - 3 \\bullet 3h^2 - h^3}{h}$",
+              "C": "$f'(3) = \\lim_{h \\to 0} \\dfrac{f(3+h) + f(3)}{h} = \\lim_{h \\to 0} \\dfrac{(3+h)^3 + 3^3}{h}$\n$f'(3) = \\lim_{h \\to 0} \\dfrac{3^3 + 3 \\bullet 3^2h + 3 \\bullet 3h^2 + h^3 + 3^3}{h}$",
+              "D": "$f'(3) = \\lim_{h \\to 0} \\dfrac{f(3) - f(3-h)}{h} = \\lim_{h \\to 0} \\dfrac{3^3 - (3-h)^3}{h}$\n$f'(3) = \\lim_{h \\to 0} \\dfrac{3^3 - 3^3 + 3 \\bullet 3^2h - 3 \\bullet 3h^2 + h^3}{h}$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 69,
+            "topic": "16.6.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "En la siguiente gráfica de la función f(x). ¿En qué intervalo la derivada de *f* es negativa?",
+            "_figura_pendiente": {
+              "enunciado": "Plano cartesiano en el primer cuadrante, con eje y vertical (sin valores rotulados) y eje x rotulado únicamente con 0, 2, 4 y 6. Se traza una curva continua que sale del origen, sube hasta un máximo local en x = 2, luego desciende hasta un mínimo local en x = 4, y a partir de ahí vuelve a subir de manera pronunciada hasta pasar x = 6. Hay líneas verticales punteadas desde la curva hasta el eje x en x = 2 y en x = 6."
+            },
+            "options": {
+              "A": "$(-2, 4)$",
+              "B": "$[2, 4)$",
+              "C": "$(2, 4)$",
+              "D": "$[-2, 4]$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 70,
+            "topic": "16.10.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Indica las coordenadas de los puntos máximos y mínimos de la función $y = x(x-4)^2$, con $0 \\leq x \\leq 4$.",
+            "options": {
+              "A": "Max$\\left(\\frac{10}{7}, \\frac{36}{14}\\right)$, min$(4,0)$",
+              "B": "Max$\\left(\\frac{5}{7}, \\frac{10}{13}\\right)$, min$(4,4)$",
+              "C": "Max$\\left(\\frac{8}{3}, \\frac{128}{27}\\right)$, min$(4,4)$",
+              "D": "Max$\\left(\\frac{4}{3}, \\frac{256}{27}\\right)$, min$(4,0)$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 71,
+            "topic": "17.3.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "El valor de la integral definida $\\int_0^2 x^2 dx$ es igual a",
+            "options": {
+              "A": "$-\\frac{8}{3}$",
+              "B": "$2$",
+              "C": "$\\frac{8}{3}$",
+              "D": "$8$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 72,
+            "topic": "17.4.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "La $\\int (2x-1)^3 dx$ es igual a",
+            "options": {
+              "A": "$\\frac{(2x-1)^4}{8} + C$",
+              "B": "$\\frac{(2x-1)^4}{4} + C$",
+              "C": "$\\frac{(2x-1)^2}{2} + C$",
+              "D": "$\\frac{(2x-1)^2}{6} + C$"
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Español",
+        "questions_count": 18,
+        "questions": [
+          {
+            "id": 73,
+            "topic": "1.2.0.0.0",
+            "topic_name": "Español",
+            "text": "Identifica el enunciado que desarrolla la función apelativa de la lengua.",
+            "options": {
+              "A": "¡Te miro recostada sobre el césped!",
+              "B": "Naces como la herramienta a los golpes destinada.",
+              "C": "Niño, déjame, no pises mi sábana almidonada.",
+              "D": "En el aire conmovido, mueve la luna sus brazos."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 74,
+            "topic": "1.3.0.0.0",
+            "topic_name": "Español",
+            "text": "Identifica en cuál enunciado está presente la función poética.",
+            "options": {
+              "A": "Era apenas una niña cuando la vi por primera vez.",
+              "B": "A las tres en punto moriría un transeúnte.",
+              "C": "El convento era espantosamente triste.",
+              "D": "Las nieves del tiempo platearon mi sien."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 75,
+            "topic": "2.1.0.0.0",
+            "topic_name": "Español",
+            "text": "¿Qué forma de discurso predomina en el siguiente párrafo?\n\n**El alcoholismo es una enfermedad progresiva y crónica, que presenta síntomas que van desde el malestar hasta el dolor intenso. Depende de varios factores, principalmente de la predisposición genética y de la influencia del medio ambiente familiar y social. Pese a que afecta todo el cuerpo y provoca una variedad de problemas médicos, los principales síntomas se manifiestan en el sistema nervioso. A través de éste, en especial del cerebro, la adicción produce diversos trastornos en el pensamiento, las emociones y la conducta del enfermo.**",
+            "options": {
+              "A": "Narrativa.",
+              "B": "Descriptiva.",
+              "C": "Enumerativa.",
+              "D": "Argumentativa."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 76,
+            "topic": "2.3.0.0.0",
+            "topic_name": "Español",
+            "text": "¿Qué forma del discurso predomina en el siguiente párrafo?\n\n**Si bien la educación básica no alcanza una cobertura universal en los estratos de menores ingresos, debe ponerse énfasis en los aspectos de calidad y equidad, otorgando mayores oportunidades educativas a los niños, niñas y adolescentes de los estratos bajos y medios. Ello implica dar continuidad al proceso educativo, mejorar la eficiencia interna del sistema —reduciendo el ingreso tardío y la reprobación—, y llevar a cabo políticas tendientes a aumentar la educación secundaria.**",
+            "options": {
+              "A": "Narrativa.",
+              "B": "Expositiva.",
+              "C": "Argumentativa.",
+              "D": "Descriptiva."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 77,
+            "topic": "3.1.0.0.0",
+            "topic_name": "Español",
+            "text": "¿Cuál es el nudo del texto?",
+            "context": "**Metamorfosis**\n\n—La mujer salió de su casa, y era una buena mujer. Lo había sido durante toda su vida. Ese día, sin embargo, una fría determinación le roía las entrañas mientras avanzaba, el bolso bien sujeto, camino del lugar donde iban a producirse los hechos.\n\nPor momentos sentía que le temblaban las piernas, pero si su cuerpo flaqueaba, su mente no se permitía vacilar. Pensó en sus hijos. Pensó en su marido, honrado y trabajador, feliz con su fútbol, su tele y su chándal para ir al campo los fines de semana. Pensó en el equipo necesario para las vacaciones, tan inminentes ya.\n\nMás decidida que nunca, atravesó la puerta de los grandes almacenes. El aire procedente del acondicionador le heló la nuca y serpenteó por un momento entre sus muslos, y ésa fue la última sensación humana que iba a experimentar en varias horas.\n\n—¡Reebaaaajaaas! —rugió\n\nBraceó hacia la horda que bramaba en el interior. Ya no pensaba en su familia. Como el cazador, sólo alimentaba un deseo: conseguir la mejor presa; como el sabueso, únicamente aspiraba a hincar el diente en la carne más tierna. Alargó ambas manos hacia una combinación de seda sintética rebajada, puesta a mitad de precio —previamente se había colgado el bolso en bandolera—, y una manada de tiburones abrió amenazadoramente las fauces frente a ella. La mujer se aferró con todas sus fuerzas a la prenda. Vio que las manos se le habían vuelto peludas, sarmentosas y con las uñas muy largas curvadas hacia dentro, pero no le importó. Arrancó la combinación de entre los colmillos de los escualos y siguió abriéndose paso entre aullidos.\n\nEn la segunda planta tuvo que despedazarle la carótida a una rinoceronta de vestido floreado que trataba de apoderarse de una cesta para pic—nic; en la tercera, se hizo a zarpazos con dos pares de zapatillas de deportes; en la cuarta fue corrida a cornadas por una panda de búfalas que se empecinaban en conseguir una cocinita portátil a butano; en la quinta estuvo a punto de morir picoteada por una nube de avispas venenosas, pero huyó en cuanto se dio cuenta de que no necesitaba un tresillo.\n\nCuando salió a la calle, tardó unos 20 minutos en recuperar su aspecto habitual.\n\nTorres, Maruja, (8 de julio de 1986). Metamorfosis. *El País*",
+            "options": {
+              "A": "Más decidida que nunca, atravesó la puerta de los grandes almacenes.",
+              "B": "Ese día, sin embargo, una fría determinación le roía las entrañas mientras avanzaba.",
+              "C": "Pero huyó en cuanto se dio cuenta de que no necesitaba un tresillo.",
+              "D": "Cuando salió a la calle, tardó unos 20 minutos en recuperar su aspecto habitual."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 78,
+            "topic": "3.2.0.0.0",
+            "topic_name": "Español",
+            "text": "Selecciona el enunciado que sintetiza la idea principal del texto.",
+            "context": "**Metamorfosis**\n\n—La mujer salió de su casa, y era una buena mujer. Lo había sido durante toda su vida. Ese día, sin embargo, una fría determinación le roía las entrañas mientras avanzaba, el bolso bien sujeto, camino del lugar donde iban a producirse los hechos.\n\nPor momentos sentía que le temblaban las piernas, pero si su cuerpo flaqueaba, su mente no se permitía vacilar. Pensó en sus hijos. Pensó en su marido, honrado y trabajador, feliz con su fútbol, su tele y su chándal para ir al campo los fines de semana. Pensó en el equipo necesario para las vacaciones, tan inminentes ya.\n\nMás decidida que nunca, atravesó la puerta de los grandes almacenes. El aire procedente del acondicionador le heló la nuca y serpenteó por un momento entre sus muslos, y ésa fue la última sensación humana que iba a experimentar en varias horas.\n\n—¡Reebaaaajaaas! —rugió\n\nBraceó hacia la horda que bramaba en el interior. Ya no pensaba en su familia. Como el cazador, sólo alimentaba un deseo: conseguir la mejor presa; como el sabueso, únicamente aspiraba a hincar el diente en la carne más tierna. Alargó ambas manos hacia una combinación de seda sintética rebajada, puesta a mitad de precio —previamente se había colgado el bolso en bandolera—, y una manada de tiburones abrió amenazadoramente las fauces frente a ella. La mujer se aferró con todas sus fuerzas a la prenda. Vio que las manos se le habían vuelto peludas, sarmentosas y con las uñas muy largas curvadas hacia dentro, pero no le importó. Arrancó la combinación de entre los colmillos de los escualos y siguió abriéndose paso entre aullidos.\n\nEn la segunda planta tuvo que despedazarle la carótida a una rinoceronta de vestido floreado que trataba de apoderarse de una cesta para pic—nic; en la tercera, se hizo a zarpazos con dos pares de zapatillas de deportes; en la cuarta fue corrida a cornadas por una panda de búfalas que se empecinaban en conseguir una cocinita portátil a butano; en la quinta estuvo a punto de morir picoteada por una nube de avispas venenosas, pero huyó en cuanto se dio cuenta de que no necesitaba un tresillo.\n\nCuando salió a la calle, tardó unos 20 minutos en recuperar su aspecto habitual.\n\nTorres, Maruja, (8 de julio de 1986). Metamorfosis. *El País*",
+            "options": {
+              "A": "Las personas se comportan igual, sin importar su edad o condición.",
+              "B": "Debemos comprar lo que esté a nuestro alcance, aunque no nos sea necesario.",
+              "C": "El comportamiento de las personas suele modificarse en una situación de competencia.",
+              "D": "No debemos salir de casa porque afuera siempre es una jungla."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 79,
+            "topic": "3.3.0.0.0",
+            "topic_name": "Español",
+            "text": "La frase\n\n**Como el cazador, sólo alimentaba un deseo: conseguir la mejor presa; como el sabueso, únicamente aspiraba a hincar el diente en la carne más tierna.**\n\n**Se refiere a que algunas personas**",
+            "context": "**Metamorfosis**\n\n—La mujer salió de su casa, y era una buena mujer. Lo había sido durante toda su vida. Ese día, sin embargo, una fría determinación le roía las entrañas mientras avanzaba, el bolso bien sujeto, camino del lugar donde iban a producirse los hechos.\n\nPor momentos sentía que le temblaban las piernas, pero si su cuerpo flaqueaba, su mente no se permitía vacilar. Pensó en sus hijos. Pensó en su marido, honrado y trabajador, feliz con su fútbol, su tele y su chándal para ir al campo los fines de semana. Pensó en el equipo necesario para las vacaciones, tan inminentes ya.\n\nMás decidida que nunca, atravesó la puerta de los grandes almacenes. El aire procedente del acondicionador le heló la nuca y serpenteó por un momento entre sus muslos, y ésa fue la última sensación humana que iba a experimentar en varias horas.\n\n—¡Reebaaaajaaas! —rugió\n\nBraceó hacia la horda que bramaba en el interior. Ya no pensaba en su familia. Como el cazador, sólo alimentaba un deseo: conseguir la mejor presa; como el sabueso, únicamente aspiraba a hincar el diente en la carne más tierna. Alargó ambas manos hacia una combinación de seda sintética rebajada, puesta a mitad de precio —previamente se había colgado el bolso en bandolera—, y una manada de tiburones abrió amenazadoramente las fauces frente a ella. La mujer se aferró con todas sus fuerzas a la prenda. Vio que las manos se le habían vuelto peludas, sarmentosas y con las uñas muy largas curvadas hacia dentro, pero no le importó. Arrancó la combinación de entre los colmillos de los escualos y siguió abriéndose paso entre aullidos.\n\nEn la segunda planta tuvo que despedazarle la carótida a una rinoceronta de vestido floreado que trataba de apoderarse de una cesta para pic—nic; en la tercera, se hizo a zarpazos con dos pares de zapatillas de deportes; en la cuarta fue corrida a cornadas por una panda de búfalas que se empecinaban en conseguir una cocinita portátil a butano; en la quinta estuvo a punto de morir picoteada por una nube de avispas venenosas, pero huyó en cuanto se dio cuenta de que no necesitaba un tresillo.\n\nCuando salió a la calle, tardó unos 20 minutos en recuperar su aspecto habitual.\n\nTorres, Maruja, (8 de julio de 1986). Metamorfosis. *El País*",
+            "options": {
+              "A": "aparentan tener una buena educación, pero son capaces de comportarse como bestias feroces e inclusive consumar un crimen si así fuera necesario.",
+              "B": "están desesperadas por salir de sus casas, ir a los almacenes de prestigio y gastar lo que han ahorrado para la ocasión.",
+              "C": "asisten a los almacenes y, en otras ocasiones, recorren el zoológico para observar el comportamiento de diferentes especies salvajes.",
+              "D": "pierden la noción de los códigos de conducta para conseguir el mejor artículo rebajado antes que alguien más lo obtenga."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 80,
+            "topic": "3.4.0.0.0",
+            "topic_name": "Español",
+            "text": "El texto se titula Metamorfosis porque",
+            "context": "**Metamorfosis**\n\n—La mujer salió de su casa, y era una buena mujer. Lo había sido durante toda su vida. Ese día, sin embargo, una fría determinación le roía las entrañas mientras avanzaba, el bolso bien sujeto, camino del lugar donde iban a producirse los hechos.\n\nPor momentos sentía que le temblaban las piernas, pero si su cuerpo flaqueaba, su mente no se permitía vacilar. Pensó en sus hijos. Pensó en su marido, honrado y trabajador, feliz con su fútbol, su tele y su chándal para ir al campo los fines de semana. Pensó en el equipo necesario para las vacaciones, tan inminentes ya.\n\nMás decidida que nunca, atravesó la puerta de los grandes almacenes. El aire procedente del acondicionador le heló la nuca y serpenteó por un momento entre sus muslos, y ésa fue la última sensación humana que iba a experimentar en varias horas.\n\n—¡Reebaaaajaaas! —rugió\n\nBraceó hacia la horda que bramaba en el interior. Ya no pensaba en su familia. Como el cazador, sólo alimentaba un deseo: conseguir la mejor presa; como el sabueso, únicamente aspiraba a hincar el diente en la carne más tierna. Alargó ambas manos hacia una combinación de seda sintética rebajada, puesta a mitad de precio —previamente se había colgado el bolso en bandolera—, y una manada de tiburones abrió amenazadoramente las fauces frente a ella. La mujer se aferró con todas sus fuerzas a la prenda. Vio que las manos se le habían vuelto peludas, sarmentosas y con las uñas muy largas curvadas hacia dentro, pero no le importó. Arrancó la combinación de entre los colmillos de los escualos y siguió abriéndose paso entre aullidos.\n\nEn la segunda planta tuvo que despedazarle la carótida a una rinoceronta de vestido floreado que trataba de apoderarse de una cesta para pic—nic; en la tercera, se hizo a zarpazos con dos pares de zapatillas de deportes; en la cuarta fue corrida a cornadas por una panda de búfalas que se empecinaban en conseguir una cocinita portátil a butano; en la quinta estuvo a punto de morir picoteada por una nube de avispas venenosas, pero huyó en cuanto se dio cuenta de que no necesitaba un tresillo.\n\nCuando salió a la calle, tardó unos 20 minutos en recuperar su aspecto habitual.\n\nTorres, Maruja, (8 de julio de 1986). Metamorfosis. *El País*",
+            "options": {
+              "A": "detalla el cambio de niña a mujer.",
+              "B": "una mujer transforma su conducta.",
+              "C": "habla del origen de las transformaciones.",
+              "D": "la protagonista cambia de parecer."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 81,
+            "topic": "3.5.0.0.0",
+            "topic_name": "Español",
+            "text": "En la frase \"por momentos sentía que le temblaban las piernas, pero si su cuerpo flaqueaba, su mente no se permitía vacilar\", se infiere que la mujer se sentía",
+            "context": "**Metamorfosis**\n\n—La mujer salió de su casa, y era una buena mujer. Lo había sido durante toda su vida. Ese día, sin embargo, una fría determinación le roía las entrañas mientras avanzaba, el bolso bien sujeto, camino del lugar donde iban a producirse los hechos.\n\nPor momentos sentía que le temblaban las piernas, pero si su cuerpo flaqueaba, su mente no se permitía vacilar. Pensó en sus hijos. Pensó en su marido, honrado y trabajador, feliz con su fútbol, su tele y su chándal para ir al campo los fines de semana. Pensó en el equipo necesario para las vacaciones, tan inminentes ya.\n\nMás decidida que nunca, atravesó la puerta de los grandes almacenes. El aire procedente del acondicionador le heló la nuca y serpenteó por un momento entre sus muslos, y ésa fue la última sensación humana que iba a experimentar en varias horas.\n\n—¡Reebaaaajaaas! —rugió\n\nBraceó hacia la horda que bramaba en el interior. Ya no pensaba en su familia. Como el cazador, sólo alimentaba un deseo: conseguir la mejor presa; como el sabueso, únicamente aspiraba a hincar el diente en la carne más tierna. Alargó ambas manos hacia una combinación de seda sintética rebajada, puesta a mitad de precio —previamente se había colgado el bolso en bandolera—, y una manada de tiburones abrió amenazadoramente las fauces frente a ella. La mujer se aferró con todas sus fuerzas a la prenda. Vio que las manos se le habían vuelto peludas, sarmentosas y con las uñas muy largas curvadas hacia dentro, pero no le importó. Arrancó la combinación de entre los colmillos de los escualos y siguió abriéndose paso entre aullidos.\n\nEn la segunda planta tuvo que despedazarle la carótida a una rinoceronta de vestido floreado que trataba de apoderarse de una cesta para pic—nic; en la tercera, se hizo a zarpazos con dos pares de zapatillas de deportes; en la cuarta fue corrida a cornadas por una panda de búfalas que se empecinaban en conseguir una cocinita portátil a butano; en la quinta estuvo a punto de morir picoteada por una nube de avispas venenosas, pero huyó en cuanto se dio cuenta de que no necesitaba un tresillo.\n\nCuando salió a la calle, tardó unos 20 minutos en recuperar su aspecto habitual.\n\nTorres, Maruja, (8 de julio de 1986). Metamorfosis. *El País*",
+            "options": {
+              "A": "valiente e indecisa.",
+              "B": "temerosa y decidida.",
+              "C": "decidida y valiente.",
+              "D": "temerosa e indecisa."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 82,
+            "topic": "4.1.0.0.0",
+            "topic_name": "Español",
+            "text": "Selecciona la opción que contenga la oración principal del siguiente párrafo.\n\n**El mercado de Tlatelolco asombró a Cortés por su perfección y magnitud. Aunque antes los mercados se establecían cada cinco días, éste funcionaba diario. Ahí llegaban productos de todos los sitios para vender y había todo lo que el hombre podría apetecer. Ahí todo se encontraba perfectamente ordenado por calles, según la naturaleza de las cosas exhibidas para la venta. Allí se reunía la gente, allí se comía y se bebía.**",
+            "options": {
+              "A": "El mercado de Tlatelolco asombró a Cortés por su perfección y magnitud.",
+              "B": "Antes los mercados se establecían cada cinco días, pero éste funcionaba diario.",
+              "C": "Allí se reunía la gente, allí se comía y se bebía.",
+              "D": "Ahí todo se encontraba perfectamente ordenado por calles."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 83,
+            "topic": "4.3.0.0.0",
+            "topic_name": "Español",
+            "text": "Selecciona la opción que corresponde al objeto indirecto de la siguiente oración.\n\n**No obstante, los nuevos elementos también tuvieron que presentar sus respetos al funcionario que anunciaba su retiro.**",
+            "options": {
+              "A": "al funcionario",
+              "B": "sus respetos",
+              "C": "su retiro",
+              "D": "los nuevos elementos"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 84,
+            "topic": "5.0.0.0.0",
+            "topic_name": "Español",
+            "text": "Elige la opción con la redacción apropiada.",
+            "options": {
+              "A": "Los checoslovacos combatían en las calles y se oponían a la dictadura.",
+              "B": "Un sinnúmero de feligreses acudieron a la Villa.",
+              "C": "La creación de muchas cosas no se tenían contempladas.",
+              "D": "Los constantes flujo y reflujo de divisas provocó alarma."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 85,
+            "topic": "5.0.0.0.0",
+            "topic_name": "Español",
+            "text": "Selecciona el enunciado que está redactado apropiadamente.",
+            "options": {
+              "A": "Se observa el patio techado. No es como el de las otras escuelas, al contrario, la luz del sol no entra, sólo se refleja y el calor irradia.",
+              "B": "Se puede observar el patio, no es como el de otras escuelas porque está techado y el sol ni entra directamente, sólo irradia calor.",
+              "C": "Se puede apreciar que el patio no es como el de otras escuelas, pues está techado debido a que la luz del sol sólo es reflejada en las aulas que lo rodean.",
+              "D": "Se puede apreciar el patio que no es como el de las otras escuelas, pues del sol no se conoce más que la luz y el calor que irradia."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 86,
+            "topic": "5.0.0.0.0",
+            "topic_name": "Español",
+            "text": "Identifica el párrafo redactado correctamente.",
+            "options": {
+              "A": "Los campos magnéticos solar y terrestre interaccionan hasta que este último se deforma. Como cualquier ente en el universo, la Tierra responde de varias maneras ante el impacto de la actividad solar; en este caso lo hace mediante la actividad geomagnética (perturbaciones en el campo magnético terrestre).",
+              "B": "El campo magnético solar y terrestre se encuentran interaccionando hasta que este último (el campo magnético terrestre) termina deformándose. La Tierra, como cualquier ente en el universo, responde de varias maneras ante el impacto de la actividad solar; en este caso lo hace mediante perturbaciones en el campo magnético terrestre (es decir actividad geomagnética).",
+              "C": "Ante el impacto de la actividad solar (como cualquier ente en el universo), la Tierra responde de varias maneras; en este caso lo hace mediante la actividad geomagnética (perturbaciones en el campo magnético terrestre). Ello sucede porque los campos magnéticos solar y terrestre interaccionan hasta que el último se deforma.",
+              "D": "El campo magnético solar y el campo magnético terrestre interaccionan hasta que éste se deforma. Como cualquier ente en el universo, la Tierra responde de varias maneras ante el impacto de la actividad solar. Haciéndolo mediante la actividad geomagnética (esto es, perturbaciones que acontecen en el campo magnético terrestre)."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 87,
+            "topic": "6.1.0.0.0",
+            "topic_name": "Español",
+            "text": "Selecciona la opción que complete correctamente la analogía.\n\n**Comparar los brazos de una persona con __________ resulta pertinente para describir una técnica de natación.**",
+            "options": {
+              "A": "las alas de un sombrero",
+              "B": "las tenazas de un cangrejo",
+              "C": "las aspas de un molino",
+              "D": "los motores de un aeroplano"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 88,
+            "topic": "6.2.0.0.0",
+            "topic_name": "Español",
+            "text": "Sinónimo de AVATAR.",
+            "options": {
+              "A": "Destino.",
+              "B": "Cambio.",
+              "C": "Conflicto.",
+              "D": "Aflicción."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 89,
+            "topic": "7.1.0.0.0",
+            "topic_name": "Español",
+            "text": "Elige la opción con la ortografía correcta.",
+            "options": {
+              "A": "El rebaño avanza sin cesar y ellos comienzan a rezagarse.",
+              "B": "El rebaño avanza sin cezar y ellos comiensan a resagarce.",
+              "C": "El rebaño avansa sin cezar y ellos comienzan a rezagarse.",
+              "D": "El rebaño avanza sin cesar y ellos comiensan a resagarse."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 90,
+            "topic": "7.7.0.0.0",
+            "topic_name": "Español",
+            "text": "Elige el enunciado que está acentuado correctamente.",
+            "options": {
+              "A": "Notó que aquel beso era de un extraño.",
+              "B": "La abeja se diferencía de la avispa por sus alas.",
+              "C": "La practica de física se canceló.",
+              "D": "El muchacho vivía cómo un salvaje en la soledad."
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Biología",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 91,
+            "topic": "1.1.2.0.0",
+            "topic_name": "Biología",
+            "text": "Un postulado de la Teoría celular afirma que",
+            "options": {
+              "A": "los organismos están formados por millones de células.",
+              "B": "los organismos se reproducen por células sexuales.",
+              "C": "la célula es un sistema biológico.",
+              "D": "la célula proviene de otra preexistente e igual."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 92,
+            "topic": "1.1.2.0.0",
+            "topic_name": "Biología",
+            "text": "La existencia de enzimas del ciclo de Krebs, idénticas en todos los organismos de respiración aerobia, es una prueba del postulado __________ de la teoría celular.",
+            "options": {
+              "A": "funcional",
+              "B": "bioquímico",
+              "C": "evolutivo",
+              "D": "estructural"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 93,
+            "topic": "2.1.1.0.0",
+            "topic_name": "Biología",
+            "text": "Se denomina reacción __________ a aquella que libera energía.",
+            "options": {
+              "A": "endergónica",
+              "B": "exergónica",
+              "C": "endotérmica",
+              "D": "oxidativa"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 94,
+            "topic": "2.1.2.0.0",
+            "topic_name": "Biología",
+            "text": "Sustancia que interviene en las transacciones energéticas de la célula.",
+            "options": {
+              "A": "NADP",
+              "B": "NAD",
+              "C": "FAD",
+              "D": "ATP"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 95,
+            "topic": "2.4.1.0.0",
+            "topic_name": "Biología",
+            "text": "¿Qué producto de la glucólisis se incorpora al ciclo de Krebs?",
+            "options": {
+              "A": "Glucosa.",
+              "B": "Etanol.",
+              "C": "Lactato.",
+              "D": "Piruvato."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 96,
+            "topic": "3.2.2.0.0",
+            "topic_name": "Biología",
+            "text": "Etapa de la meiosis en la cual las cromátidas hermanas se separan de forma aleatoria hacia los polos del huso meiótico.",
+            "options": {
+              "A": "Anafase II.",
+              "B": "Metafase I.",
+              "C": "Telofase II.",
+              "D": "Anafase I."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 97,
+            "topic": "4.1.0.0.0",
+            "topic_name": "Biología",
+            "text": "Una consecuencia de la distribución independiente es la producción de gametos",
+            "options": {
+              "A": "iguales.",
+              "B": "equivalentes.",
+              "C": "idénticos.",
+              "D": "diferentes."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 98,
+            "topic": "4.2.3.0.0",
+            "topic_name": "Biología",
+            "text": "Se denomina __________ al proceso evolutivo en el que ocurre un cambio genético heredable.",
+            "options": {
+              "A": "traducción",
+              "B": "mutación",
+              "C": "replicación",
+              "D": "transcripción"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 99,
+            "topic": "5.1.0.0.0",
+            "topic_name": "Biología",
+            "text": "En la actualidad, es la teoría más aceptada sobre el origen de los seres vivos.",
+            "options": {
+              "A": "Creacionista.",
+              "B": "Endosimbiótica.",
+              "C": "Vitalista.",
+              "D": "Quimiosintética."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 100,
+            "topic": "5.4.1.0.0",
+            "topic_name": "Biología",
+            "text": "Clasificación de los organismos de acuerdo con su similitud y origen evolutivo.",
+            "options": {
+              "A": "Taxonomía.",
+              "B": "Ontogenia.",
+              "C": "Paleontología.",
+              "D": "Ecología."
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Historia Universal",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 101,
+            "topic": "1.2.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "La formación de las Altas Culturas agrícolas en África y Asia, de los imperios griego y romano pertenecieron a la __________, mientras que la división por feudos, así como el renacimiento artístico, la formación de los Estados europeos y la colonización de América fueron característicos de la __________.",
+            "options": {
+              "A": "Edad Media — Edad Moderna",
+              "B": "Edad Antigua — Edad Moderna",
+              "C": "Edad Moderna — Edad Contemporánea",
+              "D": "Edad Antigua — Edad Contemporánea"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 102,
+            "topic": "2.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "Representa uno de los principios básicos de la Ilustración.",
+            "options": {
+              "A": "La razón como instrumento para conocer el mundo.",
+              "B": "La organización del saber empírico y filosófico.",
+              "C": "La transición de las ideas científicas a la fe religiosa.",
+              "D": "El surgimiento del humanismo renacentista."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 103,
+            "topic": "3.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "La principal demanda de las revoluciones de 1830 fue",
+            "options": {
+              "A": "la creación de estados nacionales regidos por constituciones.",
+              "B": "el surgimiento del pacto de la Santa Alianza.",
+              "C": "la independencia de las naciones de los Balcanes.",
+              "D": "el cumplimiento de los acuerdos del Congreso de Viena."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 104,
+            "topic": "4.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "Selecciona los inventos científico—tecnológicos más importantes del siglo XIX.",
+            "options": {
+              "A": "Penicilina y aeroplano.",
+              "B": "Electricidad y telégrafo.",
+              "C": "Teléfono y televisión.",
+              "D": "Radar y bolígrafo."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 105,
+            "topic": "5.2.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "Una consecuencia de la Primera Guerra Mundial fue la",
+            "options": {
+              "A": "creación de la Organización de las Naciones Unidas.",
+              "B": "formación de dos bloques: capitalista y socialista.",
+              "C": "desintegración del Imperio austrohúngaro.",
+              "D": "desintegración del bloque soviético."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 106,
+            "topic": "6.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "La sobre emisión de créditos, el exceso en la oferta y la demanda de bienes de consumo y la caída de la bolsa de Nueva York fueron causas de la crisis de",
+            "options": {
+              "A": "1908.",
+              "B": "1929.",
+              "C": "1982.",
+              "D": "1985."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 107,
+            "topic": "7.2.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "La Organización de Tratados Internacionales, la división de Alemania entre los países vencedores y la fundación de la Organización de las Naciones Unidas fueron consecuencias de la",
+            "options": {
+              "A": "Primera Guerra Mundial.",
+              "B": "Guerra de Israel.",
+              "C": "Segunda Guerra Mundial.",
+              "D": "Guerra Fría."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 108,
+            "topic": "8.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "Uno de los rasgos que distinguen al bloque socialista del capitalista es",
+            "options": {
+              "A": "la falta de innovaciones tecnológicas.",
+              "B": "el intervencionismo en los asuntos del tercer mundo.",
+              "C": "la economía centralmente planificada a través de un sistema de partido único.",
+              "D": "la libre competencia de capitales."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 109,
+            "topic": "8.3.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "¿Qué país africano logró su independencia en 1951, después de haber estado bajo el yugo italiano, francés y británico?",
+            "options": {
+              "A": "Libia.",
+              "B": "Etiopía.",
+              "C": "Sudáfrica.",
+              "D": "Marruecos."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 110,
+            "topic": "9.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "Los enormes presupuestos militares por la Guerra Fría y el predominio de Estados burocráticos con gasto excesivo fueron causas de la",
+            "options": {
+              "A": "invasión a Medio Oriente.",
+              "B": "caída del Bloque Soviético.",
+              "C": "formación de la OTAN.",
+              "D": "formación del Pacto de Varsovia."
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Historia de México",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 111,
+            "topic": "1.2.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "Mientras que __________ participó en la conquista militar de México, __________ se ocupó de la conquista espiritual.",
+            "options": {
+              "A": "Juan de Zumárraga — Jerónimo de Aguilar",
+              "B": "Antonio de Mendoza — Toribio de Benavente",
+              "C": "Pedro de Alvarado — Bernardino de Sahagún",
+              "D": "Bartolomé de Olmedo — Cristóbal de Olid"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 112,
+            "topic": "2.2.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "Durante la etapa de iniciación de la Independencia de la Nueva España, Miguel Hidalgo promulgó la __________, y José María Morelos la __________, durante la organización del movimiento armado.",
+            "options": {
+              "A": "Constitución de Apatzingán — abolición de la esclavitud",
+              "B": "abolición de las castas — Constitución de Apatzingán",
+              "C": "Constitución de Apatzingán — abolición de las castas",
+              "D": "abolición de la esclavitud — Constitución de Apatzingán"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 113,
+            "topic": "3.2.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "Ordena cronológicamente los siguientes acontecimientos.\nI. Primera intervención francesa.\nII. Guerra con Estados Unidos\nIII. Independencia de Texas.\nIV. Intento de reconquista española.",
+            "options": {
+              "A": "IV, I, III y II",
+              "B": "I, IV, II y III",
+              "C": "IV, III, I y II",
+              "D": "I, II, IV y III"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 114,
+            "topic": "4.3.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "Identifica una de las consecuencias de la promulgación de las Leyes de Reforma.",
+            "options": {
+              "A": "Promoción de las relaciones económicas con Europa.",
+              "B": "Límites de la extensión de la propiedad agraria.",
+              "C": "Retiro del fuero eclesiástico.",
+              "D": "Respaldo a los derechos de las comunidades campesinas."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 115,
+            "topic": "5.1.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "La centralización del poder y la estructura oligárquica son características del gobierno de",
+            "options": {
+              "A": "Manuel González.",
+              "B": "Sebastián Lerdo de Tejada.",
+              "C": "Benito Juárez.",
+              "D": "Porfirio Díaz."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 116,
+            "topic": "6.4.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "La promulgación de la Constitución de 1917, el asesinato de Emiliano Zapata y la fundación de la Confederación Regional Obrera Mexicana fueron sucesos ocurridos durante el gobierno de",
+            "options": {
+              "A": "Venustiano Carranza.",
+              "B": "Álvaro Obregón.",
+              "C": "Plutarco Elías Calles.",
+              "D": "Adolfo de la Huerta."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 117,
+            "topic": "7.1.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "La existencia de un líder con ejército a su mando y bases de apoyo a nivel regional es una característica del __________; mientras que el __________ se distingue por el gobierno de una figura política electa a través de sufragio y con el apoyo de instituciones.",
+            "options": {
+              "A": "partidismo — populismo",
+              "B": "populismo — partidismo",
+              "C": "presidencialismo — caudillismo",
+              "D": "caudillismo — presidencialismo"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 118,
+            "topic": "7.2.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "La inauguración de Bellas Artes y el reconocimiento de la Autonomía Universitaria ocurrieron durante el periodo conocido como",
+            "options": {
+              "A": "Unidad Nacional.",
+              "B": "Cardenismo.",
+              "C": "Desarrollo Estabilizador.",
+              "D": "Maximato."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 119,
+            "topic": "8.1.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "La posición de México ante la Segunda Guerra Mundial fue",
+            "options": {
+              "A": "romper relaciones diplomáticas con los Aliados.",
+              "B": "no intervenir en ningún bando.",
+              "C": "vender petróleo a ambos contendientes.",
+              "D": "romper relaciones con las potencias del Eje."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 120,
+            "topic": "8.4.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "La firma del Tratado de Libre Comercio de América del Norte y la reforma de los artículos 27, sobre la propiedad de la tierra y 130 acerca de la personalidad jurídica de la Iglesia fueron acciones de",
+            "options": {
+              "A": "Ernesto Zedillo.",
+              "B": "Carlos Salinas de Gortari.",
+              "C": "Miguel de la Madrid.",
+              "D": "Vicente Fox Quesada."
+            },
+            "answer": "B"
+          }
+        ]
+      }
+    ]
+  }
+}
