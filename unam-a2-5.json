@@ -1,0 +1,1672 @@
+{
+  "exam": {
+    "title": "UNAM Área 2 - 5",
+    "group": "Universidad",
+    "date": "2026-08-01",
+    "version": "1.0",
+    "total_questions": 120,
+    "students": [
+      "Lupita"
+    ],
+    "instructions": "Selecciona la opción correcta para cada pregunta. No se permite el uso de calculadora.",
+    "source": {
+      "guia": "Guia UNAM 2025 Area 2.pdf",
+      "anio": 2025,
+      "descripcion": "Examen muestra de la Guía oficial UNAM 2025, Área de las Ciencias Biológicas, Químicas y de la Salud.",
+      "ubicacion": "fuentes/unam-guias/guia-unam-a2-2025.pdf (en disco, fuera de git por peso)"
+    },
+    "sections": [
+      {
+        "subject": "Física",
+        "questions_count": 12,
+        "questions": [
+          {
+            "id": 1,
+            "topic": "1.3.0.0.0",
+            "topic_name": "Física",
+            "text": "Durante 15 segundos un motociclista se desplaza a $20\\,\\frac{\\mathrm{m}}{\\mathrm{s}}$, después, durante 20 segundos se mueve a $15\\,\\frac{\\mathrm{m}}{\\mathrm{s}}$, posteriormente se detiene durante 25 segundos y, finalmente, durante 18 segundos se traslada a $10\\,\\frac{\\mathrm{m}}{\\mathrm{s}}$.\nCon base en estos datos, la rapidez media es de",
+            "options": {
+              "A": "$25\\,\\frac{\\mathrm{m}}{\\mathrm{s}}$",
+              "B": "$15\\,\\frac{\\mathrm{m}}{\\mathrm{s}}$",
+              "C": "$20\\,\\frac{\\mathrm{m}}{\\mathrm{s}}$",
+              "D": "$10\\,\\frac{\\mathrm{m}}{\\mathrm{s}}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 2,
+            "topic": "2.6.0.0.0",
+            "topic_name": "Física",
+            "text": "Sobre un cuerpo se aplicaron diferentes fuerzas en dirección horizontal y con el mismo sentido provocando que el objeto experimentara distintas aceleraciones. Basándote en la gráfica de los resultados obtenidos y despreciando la acción ejercida por la fricción entre el objeto y la superficie de contacto, ¿cuál es la masa del objeto?",
+            "_figura_pendiente": {
+              "enunciado": "Gráfica cartesiana en el primer cuadrante. Eje vertical rotulado \"Fuerza (N)\" con marcas en 1.00, 2.00, 3.00 y 4.00. Eje horizontal rotulado \"Aceleración $\\left(\\frac{\\mathrm{m}}{\\mathrm{s}^2}\\right)$\" con marcas en 0.50, 1.00, 1.50 y 2.00. Una recta gruesa parte del origen y sube hasta un punto sólido marcado en (1.60, 4.00); sobre la recta hay varios puntos intermedios marcados con líneas punteadas horizontales y verticales que los proyectan a los ejes (aproximadamente en 1.00 N, 2.00 N, 3.00 N y 4.00 N). La pendiente corresponde a 2.5 kg."
+            },
+            "options": {
+              "A": "1.6 kg",
+              "B": "2.5 kg",
+              "C": "3.2 kg",
+              "D": "4.0 kg"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 3,
+            "topic": "2.9.0.0.0",
+            "topic_name": "Física",
+            "text": "La Ley de Hooke sobre la relación entre desplazamiento *x* del resorte y la fuerza *F*, como se muestra en la figura, establece que *x* es",
+            "_figura_pendiente": {
+              "enunciado": "Dos resortes helicoidales colgados de sendos techos rayados (hachurados). El de la izquierda cuelga libre, sin carga, y es corto. El de la derecha aparece estirado hacia abajo; a su izquierda una flecha vertical de doble punta acotada con la letra *x* mide el alargamiento, y en el extremo inferior del resorte una flecha vertical apunta hacia abajo rotulada **F**."
+            },
+            "options": {
+              "A": "directamente proporcional a *F*.",
+              "B": "inversamente proporcional a *F*.",
+              "C": "directamente proporcional al cuadrado de *F*.",
+              "D": "inversamente proporcional al cuadrado de *F*."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 4,
+            "topic": "3.7.0.0.0",
+            "topic_name": "Física",
+            "text": "Un balín (x) de masa igual a 200 g rueda con velocidad (V) sobre un riel recto con fricción despreciable y en posición horizontal. Otro balín (y) de masa igual a 400 g rueda con velocidad (–V) sobre el mismo riel pero en sentido contrario (ver figura). Si se considera que hay conservación de energía e ímpetu, que los balines se comportan como partículas y que después de chocar el balín (y) queda inmóvil. ¿Cuál será la velocidad del balín (x) después del choque totalmente elástico?",
+            "_figura_pendiente": {
+              "enunciado": "Esquema de dos esferas sobre un riel horizontal recto. A la izquierda, un círculo rotulado **X**; a la derecha, un círculo mayor rotulado **Y**. Encima de cada uno hay una flecha horizontal: la de la izquierda apunta hacia la derecha y la de la derecha apunta hacia la izquierda, ambas bajo el rótulo **Dirección de desplazamiento**. El riel se dibuja como una línea horizontal doble bajo las dos esferas."
+            },
+            "options": {
+              "A": "0",
+              "B": "(–V)(0.5)",
+              "C": "–V",
+              "D": "(–V)(0.25)"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 5,
+            "topic": "4.1.2.0.0",
+            "topic_name": "Física",
+            "text": "Un termómetro de gas a volumen constante es usado para medir la temperatura de un objeto. Cuando el termómetro está en contacto con el punto triple del agua (273.17 K), la presión en el termómetro es $8\\,500 \\times 10^4$ Pa. Cuando éste entra en contacto con otro objeto la presión es de $9\\,650 \\times 10^4$ Pa. La temperatura del objeto es",
+            "options": {
+              "A": "683 K",
+              "B": "310 K",
+              "C": "410 K",
+              "D": "241 K"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 6,
+            "topic": "4.2.0.0.0",
+            "topic_name": "Física",
+            "text": "La Teoría cinética de los gases predice una temperatura para la cual todas las partículas del gas cesan su movimiento aleatorio. ¿Cuál es esa temperatura?",
+            "options": {
+              "A": "$-100\\,^\\circ\\mathrm{C}$",
+              "B": "$0\\,^\\circ\\mathrm{F}$",
+              "C": "0 K",
+              "D": "$0\\,^\\circ\\mathrm{C}$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 7,
+            "topic": "5.1.0.0.0",
+            "topic_name": "Física",
+            "text": "Una onda formada en una cuerda tiene una longitud de onda de 10 cm y un periodo de 2 s, ¿con qué velocidad se propaga?",
+            "options": {
+              "A": "$20.00\\,\\frac{\\mathrm{cm}}{\\mathrm{s}}$",
+              "B": "$0.25\\,\\frac{\\mathrm{cm}}{\\mathrm{s}}$",
+              "C": "$5.00\\,\\frac{\\mathrm{cm}}{\\mathrm{s}}$",
+              "D": "$2.00\\,\\frac{\\mathrm{cm}}{\\mathrm{s}}$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 8,
+            "topic": "5.3.0.0.0",
+            "topic_name": "Física",
+            "text": "En uno de los lados de una esquina, dos personas tienen una conversación, una tercera la escucha a la vuelta de la misma. ¿Cómo se llama este fenómeno ondulatorio?",
+            "_figura_pendiente": {
+              "enunciado": "Dibujo en perspectiva de la esquina de un edificio. A la izquierda, dos personas conversando de pie; del punto donde están parten ondas circulares concéntricas que se expanden. Del mismo punto salen dos flechas rectas largas que se cruzan formando un ángulo. A la derecha, tras la arista de la esquina (zona sombreada del muro), otras dos personas escuchan; las ondas circulares rodean la esquina y llegan hasta ellas."
+            },
+            "options": {
+              "A": "Interferencia.",
+              "B": "Difracción.",
+              "C": "Polarización.",
+              "D": "Refracción."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 9,
+            "topic": "6.3.0.0.0",
+            "topic_name": "Física",
+            "text": "Un circuito consta de una pila con voltaje conocido de *V* volts y 4 resistores conectados en serie que presentan la misma resistencia desconocida de *R* ohms. Si por el circuito circula una corriente conocida de *I* amperes, ¿qué expresión nos sirve para calcular el valor de *R*?",
+            "options": {
+              "A": "$R = \\dfrac{4V}{I}$",
+              "B": "$R = 4VI$",
+              "C": "$R = \\dfrac{I}{(4V)}$",
+              "D": "$R = \\dfrac{V}{(4I)}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 10,
+            "topic": "6.9.0.0.0",
+            "topic_name": "Física",
+            "text": "El orden creciente de la longitud de onda para el color azul (*z*), el verde (*v*), el rojo (*r*), y la luz amarilla (*a*) es",
+            "options": {
+              "A": "r, a, v, z.",
+              "B": "a, v, r, z.",
+              "C": "v, a, z, r.",
+              "D": "z, v, a, r."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 11,
+            "topic": "7.1.1.0.0",
+            "topic_name": "Física",
+            "text": "La presión atmosférica en el Everest disminuye comparada con la del nivel del mar porque",
+            "options": {
+              "A": "la densidad del aire aumenta.",
+              "B": "la altura de la columna de aire soportada es menor.",
+              "C": "la presión hidrostática del mar influye.",
+              "D": "la densidad del aire soportada es mayor."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 12,
+            "topic": "7.2.1.0.0",
+            "topic_name": "Física",
+            "text": "¿En cuánto tiempo se llenará una alberca olímpica de 50 m x 25 m x 3 m, si se usa un tubo de 40 cm de diámetro por el que fluye agua a una velocidad de $4\\,\\frac{\\mathrm{m}}{\\mathrm{s}}$?",
+            "options": {
+              "A": "0.0052 horas.",
+              "B": "0.020 horas.",
+              "C": "1.63 horas.",
+              "D": "2.07 horas."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Literatura",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 13,
+            "topic": "1.3.1.0.0",
+            "topic_name": "Literatura",
+            "text": "Identifica el propósito del siguiente texto.\n\n**En la ceremonia celebrada en la explanada Francisco I. Madero de la residencia oficial de Los Pinos, Calderón indicó que para los XVI Juegos Panamericanos, Guadalajara 2011, se espera que participen ocho mil quinientos atletas de cuarenta y dos países y más de doscientos cincuenta mil visitantes nacionales y extranjeros.**",
+            "options": {
+              "A": "Reflexionar sobre un tema.",
+              "B": "Plasmar un sentimiento.",
+              "C": "Difundir ideas políticas.",
+              "D": "Informar oportunamente."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 14,
+            "topic": "1.4.0.0.0",
+            "topic_name": "Literatura",
+            "text": "Texto que se elabora para ser representado, en él aparecen fuerzas que entran en conflicto y se resuelve en el desenlace.",
+            "options": {
+              "A": "Novela.",
+              "B": "Leyenda.",
+              "C": "Drama.",
+              "D": "Cuento."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 15,
+            "topic": "1.4.3.0.0",
+            "topic_name": "Literatura",
+            "text": "Personaje del texto dramático que realiza acciones prescindibles, pues sirven para crear ambientes y darle verosimilitud a la trama.",
+            "options": {
+              "A": "Principal.",
+              "B": "Antagonista.",
+              "C": "Incidental.",
+              "D": "Secundario."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 16,
+            "topic": "1.5.1.0.0",
+            "topic_name": "Literatura",
+            "text": "Identifica la idea que transmite el autor en los siguientes versos.\n\n**Quiero morir cuando decline el día,\nen alta mar y con la cara al cielo;\ndonde parezca un sueño la agonía,\ny el alma, un ave que remonta el vuelo.**\n\n**Manuel Gutiérrez Nájera**",
+            "options": {
+              "A": "Me rehúso a morir ahogado en el mar, a convertirme en pájaro.",
+              "B": "Deseo una muerte con dignidad, en paz y sin dolor.",
+              "C": "Tengo miedo de morir, me asustan la soledad y el sufrimiento.",
+              "D": "Creo que la agonía y la muerte son nada más un sueño."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 17,
+            "topic": "2.1.0.0.0",
+            "topic_name": "Literatura",
+            "text": "Género literario que es presentado en un escenario a través de diálogos.",
+            "options": {
+              "A": "Épico.",
+              "B": "Dramático.",
+              "C": "Narrativo.",
+              "D": "Lírico."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 18,
+            "topic": "2.2.1.0.0",
+            "topic_name": "Literatura",
+            "text": "Movimiento literario que surge en la segunda mitad del siglo XIX, como reacción ante el individualismo extremo y el idealismo que caracterizó al romanticismo.",
+            "options": {
+              "A": "Neoclasicismo.",
+              "B": "Creacionismo.",
+              "C": "Realismo.",
+              "D": "Surrealismo."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 19,
+            "topic": "2.2.2.0.0",
+            "topic_name": "Literatura",
+            "text": "Poeta mexicano de la segunda mitad del siglo XX, ganador del premio Nobel.",
+            "options": {
+              "A": "Carlos Fuentes.",
+              "B": "Jaime Sabines.",
+              "C": "Octavio Paz.",
+              "D": "Carlos Monsiváis."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 20,
+            "topic": "2.3.1.0.0",
+            "topic_name": "Literatura",
+            "text": "El siguiente fragmento solo utiliza un espacio narrativo y pocos personajes, esto es característico\n\n**LA AUTONOMÍA**\n\n**Una sombra decidió independizarse y se volvió contra su creador.\nCuando estaban peleando y la sombra parecía ganar su primer encuentro, un sol bilioso entró por la ventana y ambos, fantasma y sombra, se esfumaron por la grieta de un rincón.**\n\n**Jaime Lopera**",
+            "options": {
+              "A": "del mito.",
+              "B": "del cuento.",
+              "C": "de la leyenda.",
+              "D": "de la fábula."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 21,
+            "topic": "2.3.2.0.0",
+            "topic_name": "Literatura",
+            "text": "La novela pertenece al género __________, está escrita en __________ y suele tener una estructura __________.",
+            "options": {
+              "A": "narrativo — prosa — compleja",
+              "B": "épico — verso — complicada",
+              "C": "dramático — verso — escueta",
+              "D": "lírico — prosa — simple"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 22,
+            "topic": "3.1.0.0.0",
+            "topic_name": "Literatura",
+            "text": "La paráfrasis es un proceso de carácter",
+            "options": {
+              "A": "descriptivo.",
+              "B": "argumentativo.",
+              "C": "expositivo.",
+              "D": "interpretativo."
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Química",
+        "questions_count": 13,
+        "questions": [
+          {
+            "id": 23,
+            "topic": "1.3.3.0.0",
+            "topic_name": "Química",
+            "text": "En general, en la tabla periódica los elementos con mayor carácter metálico se ubican en",
+            "options": {
+              "A": "los periodos superiores.",
+              "B": "los periodos inferiores.",
+              "C": "las columnas de la izquierda.",
+              "D": "las columnas de la derecha."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 24,
+            "topic": "1.5.2.0.0",
+            "topic_name": "Química",
+            "text": "¿Cuántos gramos equivalen a 0.5 mol de ácido fosfórico, $H_3PO_4$?",
+            "options": {
+              "A": "49",
+              "B": "96",
+              "C": "98",
+              "D": "48"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 25,
+            "topic": "2.4.3.0.0",
+            "topic_name": "Química",
+            "text": "Sustancias que al estar en disolución donan protones.",
+            "options": {
+              "A": "Óxidos.",
+              "B": "Ácidos.",
+              "C": "Bases.",
+              "D": "Sales."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 26,
+            "topic": "2.4.5.0.0",
+            "topic_name": "Química",
+            "text": "En cierto laboratorio, se determinó que la disolución Z tiene un valor de pH = 3, por lo cual podemos decir que presenta una concentración de iones $H^+$ = __________ y una concentración de iones $OH^-$ = __________.",
+            "options": {
+              "A": "11 y 3",
+              "B": "3 y 11",
+              "C": "$10^{-11}$ y $10^{-3}$",
+              "D": "$10^{-3}$ y $10^{-11}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 27,
+            "topic": "2.5.2.0.0",
+            "topic_name": "Química",
+            "text": "Una botella de brandy de 946 mL tiene una concentración del 38% en volumen de alcohol. Los mL de alcohol presentes en la botella son",
+            "options": {
+              "A": "24.84",
+              "B": "38.00",
+              "C": "359.48",
+              "D": "586.52"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 28,
+            "topic": "3.3.3.0.0",
+            "topic_name": "Química",
+            "text": "La oxidación de un elemento no metálico genera",
+            "options": {
+              "A": "oxisales.",
+              "B": "óxidos básicos.",
+              "C": "hidróxidos.",
+              "D": "óxidos ácidos."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 29,
+            "topic": "3.6.3.0.0",
+            "topic_name": "Química",
+            "text": "¿Cuál de las siguientes ecuaciones químicas representa a una reacción que favorece la formación de la lluvia ácida?",
+            "options": {
+              "A": "$C + 2H_2 \\rightarrow CH_4$",
+              "B": "$SO_3 + H_2O \\rightarrow H_2SO_4$",
+              "C": "$CO_2 \\rightarrow C + O_2$",
+              "D": "$N_2 + 3H_2 \\rightarrow 2NH_3$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 30,
+            "topic": "4.1.0.0.0",
+            "topic_name": "Química",
+            "text": "Nutrimentos que se consumen en forma de almidones y azúcares.",
+            "options": {
+              "A": "Lípidos.",
+              "B": "Vitaminas.",
+              "C": "Carbohidratos.",
+              "D": "Proteínas."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 31,
+            "topic": "4.2.1.0.0",
+            "topic_name": "Química",
+            "text": "Los triglicéridos son un grupo de lípidos caracterizados por tener el grupo funcional",
+            "options": {
+              "A": "éter.",
+              "B": "éster.",
+              "C": "amida.",
+              "D": "alcohol."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 32,
+            "topic": "5.5.0.0.0",
+            "topic_name": "Química",
+            "text": "Un valor de constante de equilibrio mayor que 1 indica que",
+            "options": {
+              "A": "hay mayor formación de productos que de reactivos.",
+              "B": "hay mayor formación de reactivos que de productos.",
+              "C": "el equilibrio se desplaza hacia los reactivos.",
+              "D": "la reacción química está en equilibrio."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 33,
+            "topic": "5.6.0.0.0",
+            "topic_name": "Química",
+            "text": "La función principal de un catalizador en una reacción química es",
+            "options": {
+              "A": "aumentar la energía de activación.",
+              "B": "favorecer la pureza de los productos.",
+              "C": "disminuir la energía de activación.",
+              "D": "aumentar la temperatura de los reactivos."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 34,
+            "topic": "6.2.1.0.0",
+            "topic_name": "Química",
+            "text": "La siguiente estructura representa a un",
+            "_figura_pendiente": {
+              "enunciado": "Fórmula semidesarrollada esquelética (líneas en zigzag, sin letras). Desde el extremo izquierdo sube una línea hasta un vértice; de ese vértice sale hacia arriba una línea vertical corta (grupo metilo); del mismo vértice baja una línea hacia la derecha hasta otro vértice; de ahí sale una línea larga descendente hacia la derecha y enseguida un doble enlace (dos líneas paralelas) que asciende hacia la derecha; el doble enlace termina en un vértice del que sale una última línea que baja a la derecha. En total una cadena de seis carbonos con una ramificación metilo cerca del extremo izquierdo y un doble enlace carbono-carbono hacia el extremo derecho."
+            },
+            "options": {
+              "A": "alqueno.",
+              "B": "aromático.",
+              "C": "alquino.",
+              "D": "alcano."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 35,
+            "topic": "6.3.1.0.0",
+            "topic_name": "Química",
+            "text": "¿Cuál de los siguientes compuestos es un ácido carboxílico?",
+            "_figura_pendiente": {
+              "opciones": {
+                "A": "Fórmula semidesarrollada: $CH_3$ unido por guion a una C que tiene abajo un doble enlace vertical (dos rayas) hacia un O, y a la derecha un guion hacia OH.",
+                "B": "Fórmula semidesarrollada: $CH_3$ unido por guion a una C que tiene abajo un doble enlace vertical hacia un O, y a la derecha un guion hacia $NH_2$.",
+                "C": "Fórmula semidesarrollada lineal: $CH_3-CH_2-CH_3$, sin dobles enlaces.",
+                "D": "Fórmula semidesarrollada: $CH_3$ unido por guion a una C que tiene abajo un doble enlace vertical hacia un O, y a la derecha un guion hacia $OCH_2CH_3$."
+              }
+            },
+            "options": {
+              "A": "$CH_3-C(\\!=\\!O)-OH$",
+              "B": "$CH_3-C(\\!=\\!O)-NH_2$",
+              "C": "$CH_3-CH_2-CH_3$",
+              "D": "$CH_3-C(\\!=\\!O)-OCH_2CH_3$"
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Geografía",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 36,
+            "topic": "1.1.0.0.0",
+            "topic_name": "Geografía",
+            "text": "Es un ejemplo de la relación hombre — naturaleza como objeto de estudio de la Geografía.",
+            "options": {
+              "A": "Los husos horarios son divisiones de la Tierra hechas en el siglo XIX.",
+              "B": "El clima se define por el promedio de las condiciones medias de la atmósfera.",
+              "C": "La corriente de Humboldt tiene relación con la gran riqueza pesquera de Perú.",
+              "D": "Las migraciones de las especies generadas por el cambio climático."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 37,
+            "topic": "1.3.1.2.0",
+            "topic_name": "Geografía",
+            "text": "El estado de Chihuahua está recorrido por la Sierra",
+            "options": {
+              "A": "Madre Oriental.",
+              "B": "Volcánica Transversal.",
+              "C": "de San Pedro Mártir.",
+              "D": "Madre Occidental."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 38,
+            "topic": "1.3.2.2.0",
+            "topic_name": "Geografía",
+            "text": "Es el río que ocupa el cuarto lugar en extensión en el mundo y se localiza en uno de los países económicamente más poderosos.",
+            "options": {
+              "A": "Misisipi — Estados Unidos",
+              "B": "Yangtsé — China",
+              "C": "Rin — Alemania",
+              "D": "Volga — Rusia"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 39,
+            "topic": "1.3.2.4.0",
+            "topic_name": "Geografía",
+            "text": "Las corrientes frías se relacionan con los grandes bancos pesqueros de especies altamente cotizadas como",
+            "options": {
+              "A": "camarón y jaiba.",
+              "B": "jaiba y salmón.",
+              "C": "salmón y bacalao.",
+              "D": "bacalao y camarón."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 40,
+            "topic": "2.1.1.0.0",
+            "topic_name": "Geografía",
+            "text": "La taiga es una región natural que se localiza en el",
+            "options": {
+              "A": "sur de E.U.A., centro de Europa y Malasia.",
+              "B": "norte de Chile, norte de Suráfrica y Australia.",
+              "C": "norte de México, sur de Italia y sur de India.",
+              "D": "centro de Canadá, norte de Europa y Siberia."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 41,
+            "topic": "2.2.3.0.0",
+            "topic_name": "Geografía",
+            "text": "Es la causa principal que genera hundimientos en áreas de la Ciudad de México.",
+            "options": {
+              "A": "Fractura del subsuelo.",
+              "B": "Aumento del asentamiento humano.",
+              "C": "Ubicación en zona sísmica.",
+              "D": "Sobreexplotación de mantos acuíferos."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 42,
+            "topic": "2.3.1.0.0",
+            "topic_name": "Geografía",
+            "text": "Las dos áreas de mayor concentración de población en el mundo son",
+            "options": {
+              "A": "Asia Oriental y Europa Occidental.",
+              "B": "Asia Occidental y Europa Occidental.",
+              "C": "Asia Meridional y Europa Occidental.",
+              "D": "Asia Meridional y Europa Meridional."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 43,
+            "topic": "2.5.1.0.0",
+            "topic_name": "Geografía",
+            "text": "Una de las principales causas de la separación de Ucrania de la Unión de Repúblicas Socialistas Soviéticas fue",
+            "options": {
+              "A": "la explosión de la central nuclear de Chernóbil.",
+              "B": "el conflicto armado en Chechenia.",
+              "C": "la reestructuración económica de Gorbachov.",
+              "D": "el enfrentamiento en la Guerra Fría."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 44,
+            "topic": "2.5.1.1.0",
+            "topic_name": "Geografía",
+            "text": "Una causa de la formación de nuevos países en Europa es la",
+            "options": {
+              "A": "caída de la Unión Soviética.",
+              "B": "dependencia económica.",
+              "C": "regionalización económica.",
+              "D": "expansión de la Unión Soviética."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 45,
+            "topic": "2.6.1.0.0",
+            "topic_name": "Geografía",
+            "text": "La cría de ganado bovino en el estado de __________ tiene como objetivo principal su exportación.",
+            "options": {
+              "A": "Sonora",
+              "B": "Tlaxcala",
+              "C": "Veracruz",
+              "D": "Tabasco"
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Matemáticas",
+        "questions_count": 24,
+        "questions": [
+          {
+            "id": 46,
+            "topic": "1.1.3.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Simplifica la expresión $\\dfrac{(a^2+b)^{\\frac{3}{2}}}{a^2+b}$",
+            "options": {
+              "A": "$\\sqrt{(a^2+b)^6}$",
+              "B": "$(a^2+b)^{-\\frac{1}{2}}$",
+              "C": "$\\sqrt{a^2+b}$",
+              "D": "$(a^2+b)^3$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 47,
+            "topic": "2.3.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Factoriza la siguiente expresión.\n$n^6 - 3n^3 - 18$",
+            "options": {
+              "A": "$\\left(n^3+3\\right)\\left(n^3-6\\right)$",
+              "B": "$\\left(n^3-3\\right)\\left(n^3+6\\right)$",
+              "C": "$\\left(n^3-3\\right)\\left(n^3-6\\right)$",
+              "D": "$\\left(n^3+3\\right)\\left(n^3+6\\right)$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 48,
+            "topic": "3.1.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Selecciona la expresión que corresponde a una ecuación",
+            "options": {
+              "A": "$\\mathrm{sen}(x)=\\dfrac{1}{2}$",
+              "B": "$\\mathrm{sen}(x)\\csc(x)=1$",
+              "C": "$\\mathrm{sen}^2(x)+\\cos^2(x)=1$",
+              "D": "$\\sec^2(x)-\\tan^2(x)=1$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 49,
+            "topic": "3.3.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Los valores 0 y $-2$ son las raíces o soluciones de la ecuación",
+            "options": {
+              "A": "$x(x-2)=0$",
+              "B": "$(x+2)(x-2)=0$",
+              "C": "$x(x+2)=0$",
+              "D": "$x^2-4=0$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 50,
+            "topic": "4.1.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Selecciona la desigualdad que tiene por solución al siguiente conjunto.\n$\\left[\\dfrac{1}{3},\\infty\\right)$",
+            "options": {
+              "A": "$3x-1\\ge 0$",
+              "B": "$3x-1\\le 0$",
+              "C": "$-3x+1\\ge 0$",
+              "D": "$-3x+1\\le 0$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 51,
+            "topic": "5.1.1.0.0",
+            "topic_name": "Matemáticas",
+            "text": "A partir del siguiente sistema de ecuaciones obtén el valor de *x*.\n$5x = 4y + 19$\n$7x + 3y = 18$",
+            "options": {
+              "A": "$x = -3$",
+              "B": "$x = -1$",
+              "C": "$x = 1$",
+              "D": "$x = 3$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 52,
+            "topic": "6.3.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "La función de la siguiente gráfica está dada por",
+            "_figura_pendiente": {
+              "enunciado": "Plano cartesiano con eje vertical rotulado f(x) y marcas 1, 2 y 3; eje horizontal rotulado x con marcas 1, 2 y 3, y el origen marcado con 0. La curva arranca sobre el eje x en el punto (2, 0) y desciende hacia la derecha por debajo del eje x, con forma de media parábola horizontal (rama inferior de una raíz cuadrada), pasando cerca de (3, -1) y siguiendo hacia abajo y a la derecha."
+            },
+            "options": {
+              "A": "$f(x)=-\\sqrt{8x-16}$",
+              "B": "$f(x)=+\\sqrt{8x-16}$",
+              "C": "$f(x)=-\\sqrt{-8x+16}$",
+              "D": "$f(x)=+\\sqrt{-8x+16}$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 53,
+            "topic": "7.1.2.0.0",
+            "topic_name": "Matemáticas",
+            "text": "En términos de $\\mathrm{sen}\\,\\Theta$ y $\\cos\\Theta$, $\\tan\\Theta$ es igual a",
+            "options": {
+              "A": "$\\dfrac{\\mathrm{sen}\\,\\Theta}{\\cos\\Theta}$",
+              "B": "$\\dfrac{\\cos\\Theta}{\\mathrm{sen}\\,\\Theta}$",
+              "C": "$\\dfrac{2\\,\\mathrm{sen}\\,\\Theta}{\\cos\\Theta}$",
+              "D": "$\\dfrac{2\\cos\\Theta}{\\mathrm{sen}\\,\\Theta}$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 54,
+            "topic": "7.1.4.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Para encontrar la medida de los ángulos internos de un triángulo oblicuángulo cuando se conocen las medidas de sus lados se utiliza",
+            "options": {
+              "A": "la ley de los cosenos.",
+              "B": "la ley de los senos.",
+              "C": "el teorema de Pitágoras.",
+              "D": "la razón trigonométrica tangente."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 55,
+            "topic": "8.1.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Calcula el rango de la siguiente función $y=e^{\\left(5x-\\frac{1}{5}\\right)}+5$.",
+            "options": {
+              "A": "$\\left[\\dfrac{1}{5},\\infty\\right)$",
+              "B": "$(5,\\infty)$",
+              "C": "$(-5,\\infty)$",
+              "D": "$\\left[-\\dfrac{1}{5},\\infty\\right)$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 56,
+            "topic": "9.1.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "¿Cuál es la distancia entre los puntos P (2, 5) y Q (4, $-1$)?",
+            "options": {
+              "A": "$4\\sqrt{5}$",
+              "B": "$2\\sqrt{5}$",
+              "C": "$4\\sqrt{10}$",
+              "D": "$2\\sqrt{10}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 57,
+            "topic": "9.2.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Determina el centro de la circunferencia cuyo diámetro es el segmento A ($-3$, 2), B (7, 8).",
+            "options": {
+              "A": "P (2, 5)",
+              "B": "P (5, 5)",
+              "C": "P (5, 3)",
+              "D": "P ($-2$, 3)"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 58,
+            "topic": "9.7.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "La ecuación ordinaria de la mediatriz del siguiente triángulo trazada desde el lado AB es",
+            "_figura_pendiente": {
+              "enunciado": "Plano cartesiano con cuadrícula de líneas punteadas, eje y vertical y eje x horizontal, con el 0 marcado en el origen. Sobre él se dibuja un triángulo de trazo continuo con el vértice A rotulado en el origen (0, 0), un vértice superior sin rótulo aproximadamente en (1, 4) y el vértice B rotulado a la derecha aproximadamente en (4, 2). Los tres lados están unidos: de A al vértice superior, del vértice superior a B y de B de regreso a A."
+            },
+            "options": {
+              "A": "$y = -3x + 6$",
+              "B": "$y = -3x + 7$",
+              "C": "$y = -2x + 5$",
+              "D": "$y = -2x + 6$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 59,
+            "topic": "10.4.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Indica las coordenadas del centro de la circunferencia cuya ecuación general es $3x^2 + 3y^2 + 12x + 30y + 6 = 0$",
+            "options": {
+              "A": "C ($-4$, $-10$)",
+              "B": "C ($-2$, $-5$)",
+              "C": "C (4, 10)",
+              "D": "C (2, 5)"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 60,
+            "topic": "11.2.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Selecciona la ecuación de la parábola con foco F (1, 0), valor del parámetro P = 1 y eje focal paralelo al eje Y.",
+            "options": {
+              "A": "$x^2 + 4y = 0$",
+              "B": "$y^2 - 4x = 0$",
+              "C": "$x^2 - 4y = 0$",
+              "D": "$y^2 + 4x = 0$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 61,
+            "topic": "12.4.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "¿Cuál es la ecuación general de la siguiente elipse $\\dfrac{x^2}{16}+\\dfrac{y^2}{4}=1$?",
+            "options": {
+              "A": "$4x^2 + y^2 - 16 = 0$",
+              "B": "$x^2 + 4y^2 + 16 = 0$",
+              "C": "$x^2 + 4y^2 - 16 = 0$",
+              "D": "$4x^2 + 4y^2 + 16 = 0$"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 62,
+            "topic": "13.2.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Para la ecuación de la siguiente hipérbola, si c = 41, ¿cuánto vale *a*?\n$\\dfrac{x^2}{a^2}-\\dfrac{y^2}{9^2}=1$",
+            "options": {
+              "A": "a = 1024",
+              "B": "a = 1600",
+              "C": "a = 32",
+              "D": "a = 40"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 63,
+            "topic": "14.1.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "Si en la ecuación $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$ el discriminante $B^2 - 4AC$ es positivo, entonces la ecuación representa una",
+            "options": {
+              "A": "circunferencia.",
+              "B": "parábola.",
+              "C": "elipse.",
+              "D": "hipérbola."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 64,
+            "topic": "15.2.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "La condición que debe cumplir *x* cuando se aproxima a *b* para que en f(x) exista el límite *L* es que",
+            "options": {
+              "A": "$x \\neq b$",
+              "B": "$x \\leq b$",
+              "C": "$x = b$",
+              "D": "$x \\geq b$"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 65,
+            "topic": "16.3.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "La derivada de $y = (2x^3 + 5)^4$ es",
+            "options": {
+              "A": "$y' = 12x^2(2x^3 + 5)^2$",
+              "B": "$y' = 6x^2(2x^3 + 5)^3$",
+              "C": "$y' = 8x^2(2x^3 + 5)^2$",
+              "D": "$y' = 24x^2(2x^3 + 5)^3$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 66,
+            "topic": "16.8.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "La posición de una partícula expresada en unidades (u) está dada por la función de tiempo $f(t) = t^3 - t + 1$. Considerando $t = 3$, ¿cuál es su aceleración en $\\left[\\dfrac{u}{s^2}\\right]$?",
+            "options": {
+              "A": "$24\\,\\dfrac{u}{s^2}$",
+              "B": "$26\\,\\dfrac{u}{s^2}$",
+              "C": "$17\\,\\dfrac{u}{s^2}$",
+              "D": "$18\\,\\dfrac{u}{s^2}$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 67,
+            "topic": "16.12.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "La expresión $f(t) = \\cos(2t + 3)$ es una función de posición de movimiento armónico, la expresión para la aceleración es",
+            "options": {
+              "A": "$a(t) = -4\\cos(2t - 3)$",
+              "B": "$a(t) = \\cos(2t + 3)$",
+              "C": "$a(t) = -\\cos(2t + 3)$",
+              "D": "$a(t) = -4\\cos(2t + 3)$"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 68,
+            "topic": "17.1.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "De acuerdo con la siguiente imagen ¿qué características de la función nos permite determinar si es integrable o no?",
+            "_figura_pendiente": {
+              "enunciado": "Plano cartesiano con cuadrícula punteada, eje x horizontal y eje y vertical, origen marcado con 0. La cuadrícula abarca aproximadamente de -5 a 5 en x y de -4 a 4 en y. Se dibuja un segmento horizontal grueso ubicado una unidad por debajo del eje x (en y = -1), que va aproximadamente de x = -3 hasta x = 0, con un punto relleno (círculo negro sólido) en cada extremo del segmento. No se grafica nada más de la función; es decir, la función mostrada está acotada y consiste solo en ese segmento con extremos cerrados, quedando discontinua en el resto."
+            },
+            "options": {
+              "A": "No es integrable porque está acotada pero su número de discontinuidades es infinito.",
+              "B": "Sí es integrable porque está acotada y su número de discontinuidades es infinito.",
+              "C": "Sí es integrable porque está acotada y su número de discontinuidades es finito.",
+              "D": "No es integrable porque no está acotada aun cuando su número de discontinuidades es finito."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 69,
+            "topic": "17.4.0.0.0",
+            "topic_name": "Matemáticas",
+            "text": "La integral $\\int (2\\,\\mathrm{sen}\\,x + 3\\cos x)\\,dx$ es",
+            "options": {
+              "A": "$2\\,\\mathrm{sen}\\,x + \\cos x + C$",
+              "B": "$2\\,\\mathrm{sen}\\,x - \\cos x + C$",
+              "C": "$2\\cos x + 3\\,\\mathrm{sen}\\,x + C$",
+              "D": "$-2\\cos x + 3\\,\\mathrm{sen}\\,x + C$"
+            },
+            "answer": "D"
+          }
+        ]
+      },
+      {
+        "subject": "Español",
+        "questions_count": 18,
+        "questions": [
+          {
+            "id": 70,
+            "topic": "1.2.0.0.0",
+            "topic_name": "Español",
+            "text": "A partir del siguiente texto, identifica la función de la lengua que predomina.\n\n**Oye, escucha bien lo que he de decirte, no pierdas una sola palabra, es decir, permanece atento, no pienso repetir lo que diga.**",
+            "options": {
+              "A": "Poética.",
+              "B": "Emotiva.",
+              "C": "Referencial.",
+              "D": "Apelativa."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 71,
+            "topic": "1.3.0.0.0",
+            "topic_name": "Español",
+            "text": "Selecciona el enunciado en el que existe predominio de la función poética de la lengua.",
+            "options": {
+              "A": "Ese verso muestra su vocación de poeta.",
+              "B": "La literatura incluye al género poético.",
+              "C": "Manifestación de la belleza o del sentimiento estético.",
+              "D": "¿Qué es poesía? ¿Y tú me lo preguntas? / Poesía... eres tú."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 72,
+            "topic": "2.1.0.0.0",
+            "topic_name": "Español",
+            "text": "Identifica la forma del discurso que predomina en el siguiente párrafo.\n\n**Los primeros prototipos de los platos biodegradables eran de piedra caliza, fécula de papa y papel reciclado, pero se fue perfeccionando la idea hasta que se logró una mezcla de almidón de papa, agua y un polímero orgánico.**",
+            "options": {
+              "A": "Argumentativa.",
+              "B": "Narrativa.",
+              "C": "Demostrativa.",
+              "D": "Descriptiva."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 73,
+            "topic": "2.3.0.0.0",
+            "topic_name": "Español",
+            "text": "Identifica la forma del discurso que predomina en el siguiente texto.\n\n**Hablamos porque tenemos necesidad de nombrarnos, de afirmar nuestra libertad y declarar al mundo nuestro absoluto derecho a existir. Entendemos entonces que somos seres que existimos por el lenguaje en tanto seres comunitarios. Individuos que nacemos y nos relacionamos a partir de una vida en comunidad. Comunidad y comunicación no sólo son términos similares, sino también esencias que caracterizan a los seres humanos que existen en el lenguaje. Por ello el lenguaje posee una condición ontológica en el devenir del hombre histórico.**",
+            "options": {
+              "A": "Argumentación.",
+              "B": "Descripción.",
+              "C": "Narración.",
+              "D": "Exposición."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 74,
+            "topic": "3.1.0.0.0",
+            "topic_name": "Español",
+            "text": "El clímax en el texto se da cuando",
+            "context": "**Tiempo libre**\n\nTodas las mañanas compro el periódico y todas las mañanas, al leerlo, me mancho los dedos con tinta. Nunca me ha importado ensuciármelos con tal de estar al día en las noticias. Pero esta mañana sentí un gran malestar apenas toqué el periódico.\n\nCreí que solamente se trataba de uno de mis acostumbrados mareos. Pagué el importe del diario y regresé a mi casa. Mi esposa había salido de compras. Me acomodé en mi sillón favorito, encendí un cigarro y me puse a leer la primera página. Luego de enterarme de que el jet se había desplomado, volví a sentirme mal; vi mis dedos y las manos con toda la calma y, ya tranquilo, regresé al sillón. Cuando iba a tomar mi cigarro, descubrí que una mancha negra cubría mis dedos.\n\nDe inmediato retorné al baño, me tallé con zacate, piedra pómez y, finalmente, me lavé con blanqueador; pero el intento fue inútil, porque la mancha creció y me invadió hasta los codos. Ahora, más preocupado que molesto, llamé al doctor y me recomendó que lo mejor era que tomara unas vacaciones, o que durmiera. Después, llamé a las oficinas del periódico para elevar mi más rotunda protesta; me contestó una voz de mujer, que solamente me insultó y me trató de loco. En el momento en que hablaba por teléfono, me di cuenta de que, en realidad, no se trataba de una mancha, sino de un número infinito de letras pequeñísimas, apeñuscadas, como una inquieta multitud de hormigas negras. Cuando colgué, las letritas habían avanzado ya hasta mi cintura.\n\nAsustado, corrí hacia la puerta de entrada; pero, antes de poder abrirla. Me flaquearon las piernas y caí estrepitosamente. Tirado bocarriba descubrí que, además de la gran cantidad de letras hormiga que ahora ocupaban todo mi cuerpo, había una que otra fotografía. Así estuve durante varias horas hasta que escuché que abrían la puerta. Me costó trabajo hilar la idea, pero al fin pensé que había llegado mi salvación. Entró mi esposa, me levantó del suelo, me cargó bajo el brazo, se acomodó en mi sillón favorito, me hojeó despreocupadamente y se puso a leer.\n\nGuillermo Samperio",
+            "options": {
+              "A": "la esposa del personaje toma el periódico para leerlo.",
+              "B": "el personaje corrió hacia la puerta de entrada.",
+              "C": "el personaje cayó estrepitosamente.",
+              "D": "el personaje llamó a las oficinas del periódico para protestar."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 75,
+            "topic": "3.3.0.0.0",
+            "topic_name": "Español",
+            "text": "El término apeñuscadas se refiere a que las letras",
+            "context": "**Tiempo libre**\n\nTodas las mañanas compro el periódico y todas las mañanas, al leerlo, me mancho los dedos con tinta. Nunca me ha importado ensuciármelos con tal de estar al día en las noticias. Pero esta mañana sentí un gran malestar apenas toqué el periódico.\n\nCreí que solamente se trataba de uno de mis acostumbrados mareos. Pagué el importe del diario y regresé a mi casa. Mi esposa había salido de compras. Me acomodé en mi sillón favorito, encendí un cigarro y me puse a leer la primera página. Luego de enterarme de que el jet se había desplomado, volví a sentirme mal; vi mis dedos y las manos con toda la calma y, ya tranquilo, regresé al sillón. Cuando iba a tomar mi cigarro, descubrí que una mancha negra cubría mis dedos.\n\nDe inmediato retorné al baño, me tallé con zacate, piedra pómez y, finalmente, me lavé con blanqueador; pero el intento fue inútil, porque la mancha creció y me invadió hasta los codos. Ahora, más preocupado que molesto, llamé al doctor y me recomendó que lo mejor era que tomara unas vacaciones, o que durmiera. Después, llamé a las oficinas del periódico para elevar mi más rotunda protesta; me contestó una voz de mujer, que solamente me insultó y me trató de loco. En el momento en que hablaba por teléfono, me di cuenta de que, en realidad, no se trataba de una mancha, sino de un número infinito de letras pequeñísimas, apeñuscadas, como una inquieta multitud de hormigas negras. Cuando colgué, las letritas habían avanzado ya hasta mi cintura.\n\nAsustado, corrí hacia la puerta de entrada; pero, antes de poder abrirla. Me flaquearon las piernas y caí estrepitosamente. Tirado bocarriba descubrí que, además de la gran cantidad de letras hormiga que ahora ocupaban todo mi cuerpo, había una que otra fotografía. Así estuve durante varias horas hasta que escuché que abrían la puerta. Me costó trabajo hilar la idea, pero al fin pensé que había llegado mi salvación. Entró mi esposa, me levantó del suelo, me cargó bajo el brazo, se acomodó en mi sillón favorito, me hojeó despreocupadamente y se puso a leer.\n\nGuillermo Samperio",
+            "options": {
+              "A": "eran muchas y muy pequeñas.",
+              "B": "tenían color muy oscuro.",
+              "C": "eran pequeñas y negras.",
+              "D": "quedaban amontonadas."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 76,
+            "topic": "3.4.0.0.0",
+            "topic_name": "Español",
+            "text": "El personaje de la historia hizo una llamada telefónica para",
+            "context": "**Tiempo libre**\n\nTodas las mañanas compro el periódico y todas las mañanas, al leerlo, me mancho los dedos con tinta. Nunca me ha importado ensuciármelos con tal de estar al día en las noticias. Pero esta mañana sentí un gran malestar apenas toqué el periódico.\n\nCreí que solamente se trataba de uno de mis acostumbrados mareos. Pagué el importe del diario y regresé a mi casa. Mi esposa había salido de compras. Me acomodé en mi sillón favorito, encendí un cigarro y me puse a leer la primera página. Luego de enterarme de que el jet se había desplomado, volví a sentirme mal; vi mis dedos y las manos con toda la calma y, ya tranquilo, regresé al sillón. Cuando iba a tomar mi cigarro, descubrí que una mancha negra cubría mis dedos.\n\nDe inmediato retorné al baño, me tallé con zacate, piedra pómez y, finalmente, me lavé con blanqueador; pero el intento fue inútil, porque la mancha creció y me invadió hasta los codos. Ahora, más preocupado que molesto, llamé al doctor y me recomendó que lo mejor era que tomara unas vacaciones, o que durmiera. Después, llamé a las oficinas del periódico para elevar mi más rotunda protesta; me contestó una voz de mujer, que solamente me insultó y me trató de loco. En el momento en que hablaba por teléfono, me di cuenta de que, en realidad, no se trataba de una mancha, sino de un número infinito de letras pequeñísimas, apeñuscadas, como una inquieta multitud de hormigas negras. Cuando colgué, las letritas habían avanzado ya hasta mi cintura.\n\nAsustado, corrí hacia la puerta de entrada; pero, antes de poder abrirla. Me flaquearon las piernas y caí estrepitosamente. Tirado bocarriba descubrí que, además de la gran cantidad de letras hormiga que ahora ocupaban todo mi cuerpo, había una que otra fotografía. Así estuve durante varias horas hasta que escuché que abrían la puerta. Me costó trabajo hilar la idea, pero al fin pensé que había llegado mi salvación. Entró mi esposa, me levantó del suelo, me cargó bajo el brazo, se acomodó en mi sillón favorito, me hojeó despreocupadamente y se puso a leer.\n\nGuillermo Samperio",
+            "options": {
+              "A": "protestar porque una mujer de la oficina fue descortés con él.",
+              "B": "exigir un diagnóstico a su médico.",
+              "C": "quejarse de que el periódico le causó daño en la piel.",
+              "D": "expresar su preocupación al periódico."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 77,
+            "topic": "3.5.0.0.0",
+            "topic_name": "Español",
+            "text": "El personaje sintió un gran alivio al",
+            "context": "**Tiempo libre**\n\nTodas las mañanas compro el periódico y todas las mañanas, al leerlo, me mancho los dedos con tinta. Nunca me ha importado ensuciármelos con tal de estar al día en las noticias. Pero esta mañana sentí un gran malestar apenas toqué el periódico.\n\nCreí que solamente se trataba de uno de mis acostumbrados mareos. Pagué el importe del diario y regresé a mi casa. Mi esposa había salido de compras. Me acomodé en mi sillón favorito, encendí un cigarro y me puse a leer la primera página. Luego de enterarme de que el jet se había desplomado, volví a sentirme mal; vi mis dedos y las manos con toda la calma y, ya tranquilo, regresé al sillón. Cuando iba a tomar mi cigarro, descubrí que una mancha negra cubría mis dedos.\n\nDe inmediato retorné al baño, me tallé con zacate, piedra pómez y, finalmente, me lavé con blanqueador; pero el intento fue inútil, porque la mancha creció y me invadió hasta los codos. Ahora, más preocupado que molesto, llamé al doctor y me recomendó que lo mejor era que tomara unas vacaciones, o que durmiera. Después, llamé a las oficinas del periódico para elevar mi más rotunda protesta; me contestó una voz de mujer, que solamente me insultó y me trató de loco. En el momento en que hablaba por teléfono, me di cuenta de que, en realidad, no se trataba de una mancha, sino de un número infinito de letras pequeñísimas, apeñuscadas, como una inquieta multitud de hormigas negras. Cuando colgué, las letritas habían avanzado ya hasta mi cintura.\n\nAsustado, corrí hacia la puerta de entrada; pero, antes de poder abrirla. Me flaquearon las piernas y caí estrepitosamente. Tirado bocarriba descubrí que, además de la gran cantidad de letras hormiga que ahora ocupaban todo mi cuerpo, había una que otra fotografía. Así estuve durante varias horas hasta que escuché que abrían la puerta. Me costó trabajo hilar la idea, pero al fin pensé que había llegado mi salvación. Entró mi esposa, me levantó del suelo, me cargó bajo el brazo, se acomodó en mi sillón favorito, me hojeó despreocupadamente y se puso a leer.\n\nGuillermo Samperio",
+            "options": {
+              "A": "escuchar que su mujer abría la puerta.",
+              "B": "regresar al sillón.",
+              "C": "llamar a su médico.",
+              "D": "sentir que su mujer lo levantaba."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 78,
+            "topic": "3.6.0.0.0",
+            "topic_name": "Español",
+            "text": "Con el texto, el autor intenta",
+            "context": "**Tiempo libre**\n\nTodas las mañanas compro el periódico y todas las mañanas, al leerlo, me mancho los dedos con tinta. Nunca me ha importado ensuciármelos con tal de estar al día en las noticias. Pero esta mañana sentí un gran malestar apenas toqué el periódico.\n\nCreí que solamente se trataba de uno de mis acostumbrados mareos. Pagué el importe del diario y regresé a mi casa. Mi esposa había salido de compras. Me acomodé en mi sillón favorito, encendí un cigarro y me puse a leer la primera página. Luego de enterarme de que el jet se había desplomado, volví a sentirme mal; vi mis dedos y las manos con toda la calma y, ya tranquilo, regresé al sillón. Cuando iba a tomar mi cigarro, descubrí que una mancha negra cubría mis dedos.\n\nDe inmediato retorné al baño, me tallé con zacate, piedra pómez y, finalmente, me lavé con blanqueador; pero el intento fue inútil, porque la mancha creció y me invadió hasta los codos. Ahora, más preocupado que molesto, llamé al doctor y me recomendó que lo mejor era que tomara unas vacaciones, o que durmiera. Después, llamé a las oficinas del periódico para elevar mi más rotunda protesta; me contestó una voz de mujer, que solamente me insultó y me trató de loco. En el momento en que hablaba por teléfono, me di cuenta de que, en realidad, no se trataba de una mancha, sino de un número infinito de letras pequeñísimas, apeñuscadas, como una inquieta multitud de hormigas negras. Cuando colgué, las letritas habían avanzado ya hasta mi cintura.\n\nAsustado, corrí hacia la puerta de entrada; pero, antes de poder abrirla. Me flaquearon las piernas y caí estrepitosamente. Tirado bocarriba descubrí que, además de la gran cantidad de letras hormiga que ahora ocupaban todo mi cuerpo, había una que otra fotografía. Así estuve durante varias horas hasta que escuché que abrían la puerta. Me costó trabajo hilar la idea, pero al fin pensé que había llegado mi salvación. Entró mi esposa, me levantó del suelo, me cargó bajo el brazo, se acomodó en mi sillón favorito, me hojeó despreocupadamente y se puso a leer.\n\nGuillermo Samperio",
+            "options": {
+              "A": "denunciar los efectos nocivos del papel periódico.",
+              "B": "narrar la despersonalización de un individuo obsesionado con las noticias.",
+              "C": "describir los síntomas de la intoxicación por tinta.",
+              "D": "mostrar el malestar de un individuo al leer el periódico diariamente."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 79,
+            "topic": "4.1.0.0.0",
+            "topic_name": "Español",
+            "text": "Elige la oración principal del siguiente fragmento.\n\n**De cara a la redefinición de la izquierda, conviene la reflexión retrospectiva: En el vasto frente opositor que tomó el nombre de Frente Democrático Nacional (FDN) había fuerzas distintas y dispersas de izquierda. Nunca terminaron de integrarse aunque sí se articularon con fines electorales. Siempre fue mucho mayor la fuerza societaria que la capacidad orgánica de los partidos y su desarrollo institucional. Desde que fuimos Corriente Democrática éramos mucho más una idea, una conciencia, una propuesta, que una organización.**",
+            "options": {
+              "A": "Nunca terminaron de integrarse aunque sí se articularon con fines electorales.",
+              "B": "Siempre fue mucho mayor la fuerza societaria que la capacidad orgánica de los partidos y su desarrollo institucional.",
+              "C": "Desde que fuimos Corriente Democrática éramos mucho más una idea, una conciencia, una propuesta, que una organización.",
+              "D": "En el vasto frente opositor que tomó el nombre de Frente Democrático Nacional (FDN) había fuerzas distintas y dispersas de izquierda."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 80,
+            "topic": "4.2.0.0.0",
+            "topic_name": "Español",
+            "text": "Selecciona la opción que contenga sujeto tácito.",
+            "options": {
+              "A": "No hay posibilidades de cambio.",
+              "B": "Un rincón cerca del cielo.",
+              "C": "Así es todos los días.",
+              "D": "Cada noche camina dormida."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 81,
+            "topic": "5.0.0.0.0",
+            "topic_name": "Español",
+            "text": "Elige el párrafo con la mejor redacción.",
+            "options": {
+              "A": "En este orden, la posibilidad y el origen del conocimiento son algunos problemas a considerar. Presenta el conocimiento, para iniciar, así una vertiente filosófica que no podemos soslayar si queremos profundizar en el tema.",
+              "B": "Así, la posibilidad y el origen del conocimiento son algunos problemas a considerar que presenta el conocimiento. Para iniciar, una vertiente filosófica que no podemos soslayar si queremos profundizar en el tema.",
+              "C": "El conocimiento, en el inicio, ofrece una vertiente filosófica que no podemos soslayar si queremos profundizar en el tema. De modo que la posibilidad y el origen del conocimiento son algunos problemas a considerar.",
+              "D": "El conocimiento, en principio, ofrece una vertiente filosófica que no podemos soslayar si queremos profundizar en el tema. En este orden, la posibilidad y el origen del conocimiento son algunos problemas clave."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 82,
+            "topic": "5.0.0.0.0",
+            "topic_name": "Español",
+            "text": "Elige el párrafo con la redacción adecuada.",
+            "options": {
+              "A": "Cuentan que en éste año hubieron muchos damnificados a consecuencia de las inundaciones.",
+              "B": "Afirmaron que éste año habían muchos damnificados a consecuencia de las inundaciones.",
+              "C": "Se afirmó que en este año hubieron muchos damnificados a consecuencia de las inundaciones.",
+              "D": "Según los últimos datos, en este año ha habido muchos damnificados a consecuencia de las inundaciones."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 83,
+            "topic": "5.0.0.0.0",
+            "topic_name": "Español",
+            "text": "Son las propiedades textuales de un párrafo.",
+            "options": {
+              "A": "Concordancia, ortografía y tema.",
+              "B": "Inicio, desarrollo y conclusión.",
+              "C": "Sentido, ortografía y estructura.",
+              "D": "Cohesión, coherencia y adecuación."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 84,
+            "topic": "6.1.0.0.0",
+            "topic_name": "Español",
+            "text": "De acuerdo con la relación de analogía que se establece entre las palabras subrayadas del siguiente enunciado, señala la opción que presenta una relación semejante.\n\n**Tu discurso barroco y con digresiones provocó *aburrimiento* en el auditorio y, en consecuencia, un generalizado *bostezo*.**",
+            "options": {
+              "A": "Ira — agresión.",
+              "B": "Diversión — sonrisa.",
+              "C": "Distracción — error.",
+              "D": "Impaciencia — fastidio."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 85,
+            "topic": "6.4.0.0.0",
+            "topic_name": "Español",
+            "text": "Selecciona la opción que contiene sólo palabras homófonas.",
+            "options": {
+              "A": "ay — hay — ahí",
+              "B": "este — esté",
+              "C": "hacía — Asia",
+              "D": "a — ha — ah"
+            },
+            "answer": "D"
+          },
+          {
+            "id": 86,
+            "topic": "7.5.0.0.0",
+            "topic_name": "Español",
+            "text": "Elige la opción con las palabras que completan correctamente el siguiente enunciado.\n\n**Recuerda que los __________ plásticos no son __________ fácilmente por las máquinas trituradoras de basura.**",
+            "options": {
+              "A": "deshechos — deshechos",
+              "B": "desechos — desechos",
+              "C": "desechos — deshechos",
+              "D": "deshechos — desechos"
+            },
+            "answer": "C"
+          },
+          {
+            "id": 87,
+            "topic": "7.9.0.0.0",
+            "topic_name": "Español",
+            "text": "Selecciona la opción que usa correctamente las letras mayúsculas.",
+            "options": {
+              "A": "Ante la presencia de los Príncipes de Noruega, Haakon Magnus y Mette-Marit, fue inaugurada hoy la Muestra *Kristin Jarmund. Obras Escogidas*. El trabajo de la Arquitecta se exhibirá todo este mes en la Galería José Luis Benlliure.",
+              "B": "Ante la presencia de los príncipes de Noruega, Haakon Magnus y Mette-Marit, fue inaugurada hoy la muestra *Kristin Jarmund. Obras escogidas*. El trabajo de la Arquitecta se exhibirá todo este mes en la galería José Luis Benlliure.",
+              "C": "Ante la presencia de los príncipes de Noruega, Haakon Magnus y Mette-Marit, fue inaugurada hoy la muestra *Kristin Jarmund. Obras escogidas*. El trabajo de la arquitecta se exhibirá todo este mes en la Galería José Luis Benlliure.",
+              "D": "Ante la presencia de los Príncipes de Noruega, Haakon Magnus y Mette-Marit, fue inaugurada hoy la muestra *Kristin Jarmund. Obras Escogidas*. El Trabajo de la arquitecta se exhibirá todo este mes en la galería José Luis Benlliure."
+            },
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "subject": "Biología",
+        "questions_count": 13,
+        "questions": [
+          {
+            "id": 88,
+            "topic": "1.2.2.0.0",
+            "topic_name": "Biología",
+            "text": "Estructura que protege y da soporte a las células vegetales.",
+            "options": {
+              "A": "Complejo de Golgi.",
+              "B": "Pared celular.",
+              "C": "Matriz extracelular.",
+              "D": "Membrana plasmática."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 89,
+            "topic": "1.2.3.0.0",
+            "topic_name": "Biología",
+            "text": "La principal ventaja evolutiva de los organismos eucariontes con respecto a los procariontes es la",
+            "options": {
+              "A": "compartimentalización del citoplasma.",
+              "B": "respiración anaerobia.",
+              "C": "presencia de nutrición quimioautótrofa.",
+              "D": "síntesis de proteínas."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 90,
+            "topic": "2.1.2.0.0",
+            "topic_name": "Biología",
+            "text": "Cuando se hidroliza el ATP se forma",
+            "options": {
+              "A": "AMP",
+              "B": "ADP",
+              "C": "GTP",
+              "D": "UTP"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 91,
+            "topic": "2.2.2.0.0",
+            "topic_name": "Biología",
+            "text": "¿Cuáles de los siguientes compuestos son utilizados para la fijación del bióxido de carbono en la fase oscura de la fotosíntesis?",
+            "options": {
+              "A": "$FADH_2$ y $H_2O$",
+              "B": "ATP y NADPH",
+              "C": "$FADH_2$ y ATP",
+              "D": "$C_6H_{12}O_6$ y $O_2$"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 92,
+            "topic": "3.1.2.0.0",
+            "topic_name": "Biología",
+            "text": "La información genética codificada en el ácido desoxirribonucleico está en",
+            "options": {
+              "A": "el número de nucleótidos.",
+              "B": "la secuencia de las bases nitrogenadas.",
+              "C": "los enlaces entre las bases nitrogenadas.",
+              "D": "la unión entre nucleótidos."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 93,
+            "topic": "4.1.0.0.0",
+            "topic_name": "Biología",
+            "text": "Tipos de gametos producidos por un progenitor con genotipo Aa — Bb.",
+            "options": {
+              "A": "AA — BB — aa — bb",
+              "B": "AB — Ab — aB — ab",
+              "C": "AA — Aa — BB — Bb",
+              "D": "Aa — Bb — aa — bb"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 94,
+            "topic": "4.2.2.0.0",
+            "topic_name": "Biología",
+            "text": "Si al revisar cromosomas en el microscopio encontramos un cuerpo de Barr, se trata de un cromosoma",
+            "options": {
+              "A": "de un individuo masculino.",
+              "B": "metacéntrico.",
+              "C": "acrocéntrico.",
+              "D": "de un individuo femenino."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 95,
+            "topic": "4.3.1.0.0",
+            "topic_name": "Biología",
+            "text": "Primera proteína humana realizada con la tecnología del ADN recombinante.",
+            "options": {
+              "A": "Miosina.",
+              "B": "Hemoglobina.",
+              "C": "Queratina.",
+              "D": "Insulina."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 96,
+            "topic": "5.1.1.0.0",
+            "topic_name": "Biología",
+            "text": "La Teoría Quimiosintética formulada por Alexander Ivanovich Oparin y John Burdon Sanderson Haldane, propone un origen __________ de la vida.",
+            "options": {
+              "A": "biótico",
+              "B": "abiótico",
+              "C": "espontáneo",
+              "D": "panspérmico"
+            },
+            "answer": "B"
+          },
+          {
+            "id": 97,
+            "topic": "5.4.0.0.0",
+            "topic_name": "Biología",
+            "text": "La barrera reproductiva que se presenta cuando se cruza un burro con una yegua, se llama",
+            "options": {
+              "A": "esterilidad gamética.",
+              "B": "aislamiento gamético.",
+              "C": "inviabilidad híbrida.",
+              "D": "esterilidad híbrida."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 98,
+            "topic": "6.1.1.0.0",
+            "topic_name": "Biología",
+            "text": "Organismos de diferentes especies que viven juntos y que interactúan en un área en particular.",
+            "options": {
+              "A": "Colonia.",
+              "B": "Bioma.",
+              "C": "Población.",
+              "D": "Comunidad."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 99,
+            "topic": "6.2.0.0.0",
+            "topic_name": "Biología",
+            "text": "Conjunto de organismos que interactúan entre sí y con el medio, dentro de un proceso de flujo y ciclaje de materia y energía.",
+            "options": {
+              "A": "Metagenoma.",
+              "B": "Población.",
+              "C": "Comunidad.",
+              "D": "Ecosistema."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 100,
+            "topic": "6.2.1.0.0",
+            "topic_name": "Biología",
+            "text": "En un ecosistema en equilibrio dinámico",
+            "options": {
+              "A": "la energía fluye en una dirección y los nutrimentos se reciclan.",
+              "B": "la energía entra en forma de calor metabólico para los organismos.",
+              "C": "se recicla la energía pero no la materia.",
+              "D": "la energía y los nutrientes fluyen en diferentes direcciones."
+            },
+            "answer": "A"
+          }
+        ]
+      },
+      {
+        "subject": "Historia Universal",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 101,
+            "topic": "1.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "Los historiadores construyen los procesos históricos mediante la",
+            "options": {
+              "A": "intervención de los restos materiales antiguos.",
+              "B": "interpretación de las fuentes.",
+              "C": "explicación subjetiva de los datos.",
+              "D": "omisión de las fuentes secundarias."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 102,
+            "topic": "2.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "La creencia en la razón humana, la crítica a la religión y al orden social establecido, así como la búsqueda del conocimiento enciclopédico, fueron características",
+            "options": {
+              "A": "de la Revolución Científica.",
+              "B": "del Positivismo.",
+              "C": "del Racionalismo.",
+              "D": "de la Ilustración."
+            },
+            "answer": "D"
+          },
+          {
+            "id": 103,
+            "topic": "3.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "La lucha a favor del liberalismo y el nacionalismo representa la característica de las revoluciones de __________, __________ y __________, apoyadas por las clases populares.",
+            "options": {
+              "A": "1820, 1830, 1848",
+              "B": "1649, 1776, 1793",
+              "C": "1789, 1804, 1820",
+              "D": "1808, 1839, 1936"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 104,
+            "topic": "4.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "El automóvil, el aeroplano, el teléfono y la comida enlatada fueron inventos de la",
+            "options": {
+              "A": "Primera Revolución Industrial.",
+              "B": "Segunda Revolución Industrial.",
+              "C": "Primera Guerra Mundial.",
+              "D": "Segunda Guerra Mundial."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 105,
+            "topic": "5.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "La crisis en los Balcanes, la formación de alianzas diplomáticas entre los imperios europeos y la competencia económica entre las potencias fueron causas de la",
+            "options": {
+              "A": "Primera Guerra Mundial.",
+              "B": "Guerra de los Balcanes.",
+              "C": "Guerra de Crimea.",
+              "D": "Segunda Guerra Mundial."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 106,
+            "topic": "6.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "La sobreproducción de artículos por la expansión industrial y la política del liberalismo económico fueron causas de la crisis de",
+            "options": {
+              "A": "1908.",
+              "B": "1929.",
+              "C": "1973.",
+              "D": "1914."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 107,
+            "topic": "7.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "Ordena cronológicamente los siguientes acontecimientos relacionados con la Segunda Guerra Mundial.\n\n**I.** Hitler invade Polonia.\n**II.** Desembarco angloamericano en Normandía.\n**III.** Bombas atómicas sobre Hiroshima y Nagasaki.\n**IV.** Los alemanes toman París.\n**V.** Ataque Japonés a Pearl Harbor.",
+            "options": {
+              "A": "I, IV, V, II y III",
+              "B": "II, V, I, III y IV",
+              "C": "III, I, IV, V y II",
+              "D": "IV, III, I, II y V"
+            },
+            "answer": "A"
+          },
+          {
+            "id": 108,
+            "topic": "8.2.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "Periodo de luchas políticas, diplomáticas, ideológicas y de enfrentamientos indirectos entre la Unión de Repúblicas Socialistas Soviéticas y Estados Unidos de América.",
+            "options": {
+              "A": "Luchas de liberación Nacional.",
+              "B": "Guerra Fría.",
+              "C": "Era Neoliberal.",
+              "D": "Neoimperialismo Nacionalista."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 109,
+            "topic": "8.3.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "Factor importante de la crisis político—militar en el Medio Oriente es",
+            "options": {
+              "A": "la creación del Estado de Israel.",
+              "B": "la opresión turca de Palestina.",
+              "C": "la independencia de Irán.",
+              "D": "la disputa religiosa en Líbano."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 110,
+            "topic": "9.1.0.0.0",
+            "topic_name": "Historia Universal",
+            "text": "Una característica del mundo unipolar es",
+            "options": {
+              "A": "el establecimiento del sistema económico socialista.",
+              "B": "la globalización de los sectores productivos.",
+              "C": "la estabilidad económica en el mundo.",
+              "D": "el fortalecimiento de las identidades nacionales."
+            },
+            "answer": "B"
+          }
+        ]
+      },
+      {
+        "subject": "Historia de México",
+        "questions_count": 10,
+        "questions": [
+          {
+            "id": 111,
+            "topic": "1.4.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "¿Cuál fue la principal actividad económica que promovió la corona española en la Nueva España?",
+            "options": {
+              "A": "Agricultura.",
+              "B": "Minería.",
+              "C": "Ganadería.",
+              "D": "Comercio."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 112,
+            "topic": "2.2.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "¿En qué momento de la Independencia de la Nueva España se promulgó la Constitución de Apatzingán?",
+            "options": {
+              "A": "La organización.",
+              "B": "El inicio.",
+              "C": "La consumación.",
+              "D": "La guerrilla insurgente."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 113,
+            "topic": "3.3.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "Con el fin de mejorar la economía y organizar la administración del país, el gobierno de Anastasio Bustamante",
+            "options": {
+              "A": "estableció el impuesto por puertas y ventanas y se fraccionaron los latifundios.",
+              "B": "suspendió el cobro del diezmo y se subastaron propiedades del clero.",
+              "C": "promulgó el Banco del Avío y se fomentó el capital extranjero para la industria.",
+              "D": "estimuló la agricultura y se obligó a la iniciativa privada a pagar más impuestos."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 114,
+            "topic": "4.5.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "El objetivo principal del gobierno juarista durante la Restauración de la República fue",
+            "options": {
+              "A": "limitar la democracia.",
+              "B": "evitar la ruptura de las relaciones diplomáticas con Francia.",
+              "C": "reorganizar al país bajo la filosofía positivista.",
+              "D": "establecer una oligarquía."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 115,
+            "topic": "5.3.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "El Partido Liberal Mexicano fue encabezado por",
+            "options": {
+              "A": "Ricardo Flores Magón.",
+              "B": "Gustavo Madero.",
+              "C": "Emiliano Zapata.",
+              "D": "Pascual Orozco Vázquez."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 116,
+            "topic": "6.3.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "Documento que reconoce derechos sociales, como el derecho a la educación, al trabajo digno, al respeto a las garantías individuales, así como a la libertad de culto y de elección.",
+            "options": {
+              "A": "Constitución de 1917.",
+              "B": "Constitución de 1857.",
+              "C": "Constitución de 1824.",
+              "D": "Constitución de Apatzingán."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 117,
+            "topic": "7.2.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "La inauguración del Palacio de Bellas Artes, la instauración del Partido Nacional Revolucionario, la restitución de las relaciones diplomáticas con América del Sur y el reconocimiento de la autonomía universitaria, fueron acciones del periodo conocido como",
+            "options": {
+              "A": "Maximato.",
+              "B": "Unidad Nacional.",
+              "C": "Desarrollo Compartido.",
+              "D": "Cardenismo."
+            },
+            "answer": "A"
+          },
+          {
+            "id": 118,
+            "topic": "7.3.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "La trascendencia histórica del Plan Sexenal se debe principalmente a que",
+            "options": {
+              "A": "suscribió la paz entre las facciones revolucionarias.",
+              "B": "dio voz a obreros y campesinos.",
+              "C": "estableció un modelo de desarrollo económico.",
+              "D": "permitió la reelección de Álvaro Obregón."
+            },
+            "answer": "C"
+          },
+          {
+            "id": 119,
+            "topic": "8.3.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "El impulso a la petrolización del país y la apertura del sector turístico a los capitales privados fueron acciones de",
+            "options": {
+              "A": "Luis Echeverría Álvarez.",
+              "B": "José López Portillo.",
+              "C": "Miguel de la Madrid Hurtado.",
+              "D": "Carlos Salinas de Gortari."
+            },
+            "answer": "B"
+          },
+          {
+            "id": 120,
+            "topic": "8.4.0.0.0",
+            "topic_name": "Historia de México",
+            "text": "La implementación de políticas neoliberales en México, inició con el gobierno de",
+            "options": {
+              "A": "Luis Echeverría Álvarez.",
+              "B": "José López Portillo.",
+              "C": "Miguel de la Madrid Hurtado.",
+              "D": "Ernesto Zedillo Ponce de León."
+            },
+            "answer": "C"
+          }
+        ]
+      }
+    ]
+  }
+}
