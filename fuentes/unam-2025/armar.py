@@ -5,6 +5,10 @@
 # La verificación de respuestas es DETERMINISTA: la clave de la guía se extrae como
 # texto (claves/clave-a{N}-2025.json) y aquí se compara reactivo por reactivo. Si algo
 # no cuadra, no se escribe nada.
+#
+# Cuando la clave oficial está mal, la corrección va en claves/correcciones.json con
+# su motivo, nunca suelta en el JSON del examen: así rearmarlo no la borra y siempre
+# se puede auditar qué cambiamos y por qué.
 import json, glob, os, re, sys, collections
 
 RAIZ = '/Users/giledvz/Documents/ECOEMS'
@@ -32,6 +36,17 @@ def main(a):
             qs[q['n']] = q
     clave = json.load(open(f'{RAIZ}/fuentes/unam-2025/claves/clave-a{a}-2025.json',
                            encoding='utf-8'))
+    # Reactivos con la clave oficial equivocada. Se corrige la clave ANTES de
+    # validar, para que la comprobación siga siendo estricta contra algo, y
+    # queda constancia dentro del examen de qué se cambió y por qué.
+    corr = json.load(open(f'{RAIZ}/fuentes/unam-2025/claves/correcciones.json',
+                          encoding='utf-8')).get(str(a), {})
+    for n, c in corr.items():
+        if clave[n]['answer'] != c['oficial']:
+            print(f'  ! la corrección del {n} dice que la clave oficial era '
+                  f'{c["oficial"]}, pero es {clave[n]["answer"]}')
+            return
+        clave[n]['answer'] = c['answer']
     # Registro de figuras ya dibujadas, para que rearmar el examen no las borre.
     figs = json.load(open(f'{RAIZ}/fuentes/unam-2025/figuras/figuras.json',
                           encoding='utf-8'))[str(a)]
@@ -84,6 +99,8 @@ def main(a):
                 pend.append(n)
         nq['options'] = q['options']
         nq['answer'] = q['answer']
+        if str(n) in corr:
+            nq['_correccion'] = corr[str(n)]
         secs[q['asignatura']].append(nq)
     secs = {s: v for s, v in secs.items() if v}
 

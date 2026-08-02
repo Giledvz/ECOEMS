@@ -40,16 +40,19 @@
             "topic": "2.4.0.0.0",
             "topic_name": "Física",
             "text": "Con base en el siguiente sistema de vectores, indica la magnitud del vector resultante en N.\n\n| Ángulo | Seno | Coseno |\n|---|---|---|\n| 30° | 0.5 | 0.8 |\n| 45° | 0.7 | 0.7 |\n| 75° | 0.9 | 0.3 |",
-            "_figura_pendiente": {
-              "enunciado": "Plano cartesiano con ejes x (horizontal) e y (vertical) y tres vectores dibujados desde el origen. Un vector de 8 N en el primer cuadrante, formando un ángulo de 30° con el semieje +x (el 30° está marcado entre el semieje +x y ese vector). Un vector de 9 N en el cuarto cuadrante, apuntando hacia abajo y a la derecha, formando un ángulo de 75° marcado entre el semieje +x y ese vector. Un vector de 10 N (trazado con línea gruesa) en el tercer cuadrante, apuntando hacia abajo y a la izquierda, formando un ángulo de 45° marcado entre el semieje −x y ese vector. Las etiquetas 8N, 9N y 10N están en las puntas de flecha respectivas."
-            },
+            "image": "/imagenes_unam-a1-5/q2_vectores.svg",
             "options": {
               "A": "$\\sqrt{75.8}$",
               "B": "$\\sqrt{23.8}$",
               "C": "$\\sqrt{650}$",
               "D": "$\\sqrt{101.1}$"
             },
-            "answer": "D"
+            "answer": "A",
+            "_correccion": {
+              "answer": "A",
+              "oficial": "D",
+              "motivo": "La clave oficial marca D (√101.1), pero ese valor no se obtiene de ninguna lectura de la figura: se probaron las 192 combinaciones de cuadrante y eje de referencia para los tres vectores usando la tabla de senos y cosenos de la propia guía, y ninguna lo produce. El único valor alcanzable de las cuatro opciones es √75.8, y sale con un solo cambio respecto de lo que describe la guía: medir los 30° del vector de 8 N desde el eje vertical. Con eso, 8 N → (4.0, 6.4), 9 N → (2.7, −8.1) y 10 N → (−7.0, −7.0) dan una resultante de (−0.3, −8.7), es decir R² = 75.78. La figura de la guía además se contradice sola: dibuja el vector de 9 N a unos 20° pero lo rotula 75°. Nuestra figura (q2_vectores.svg) se dibujó siguiendo las etiquetas."
+            }
           },
           {
             "id": 3,

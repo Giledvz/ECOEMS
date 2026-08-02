@@ -1,0 +1,10 @@
+{
+  "_comentario": "Reactivos en los que la clave oficial de la guía está mal y la corregimos a conciencia. armar.py valida contra la clave YA corregida y deja constancia en el examen (campo _correccion del reactivo). Cada entrada debe traer su motivo: si no se puede justificar, no se corrige.",
+  "1": {
+    "2": {
+      "answer": "A",
+      "oficial": "D",
+      "motivo": "La clave oficial marca D (√101.1), pero ese valor no se obtiene de ninguna lectura de la figura: se probaron las 192 combinaciones de cuadrante y eje de referencia para los tres vectores usando la tabla de senos y cosenos de la propia guía, y ninguna lo produce. El único valor alcanzable de las cuatro opciones es √75.8, y sale con un solo cambio respecto de lo que describe la guía: medir los 30° del vector de 8 N desde el eje vertical. Con eso, 8 N → (4.0, 6.4), 9 N → (2.7, −8.1) y 10 N → (−7.0, −7.0) dan una resultante de (−0.3, −8.7), es decir R² = 75.78. La figura de la guía además se contradice sola: dibuja el vector de 9 N a unos 20° pero lo rotula 75°. Nuestra figura (q2_vectores.svg) se dibujó siguiendo las etiquetas."
+    }
+  }
+}
