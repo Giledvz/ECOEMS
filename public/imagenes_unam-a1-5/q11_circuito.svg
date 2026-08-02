@@ -1,0 +1,21 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 210" width="330" height="210" font-family="'Latin Modern Roman', Georgia, serif">
+<!-- Circuito serie de un lazo: pila V y resistor R/2 -->
+  <g stroke="currentColor" stroke-width="1.8" fill="none">
+    <!-- Pila: placa larga (+) arriba, corta abajo; el cable se corta aquí -->
+    <line x1="51" y1="100" x2="81" y2="100"/>
+    <line x1="58" y1="112" x2="74" y2="112"/>
+    <line x1="66" y1="52" x2="66" y2="100"/>
+    <line x1="66" y1="112" x2="66" y2="168"/>
+    <line x1="66" y1="52" x2="268" y2="52"/>
+    <line x1="66" y1="168" x2="268" y2="168"/>
+    <!-- Lado derecho, interrumpido donde va el resistor -->
+    <line x1="268" y1="52" x2="268" y2="87"/>
+    <line x1="268" y1="133" x2="268" y2="168"/>
+    <path d="M 268,87 L 278,91 L 258,98 L 278,106 L 258,114 L 278,122 L 258,129 L 268,133"/>
+  </g>
+  <text x="42" y="109" font-size="18" font-style="italic" text-anchor="end">V</text>
+  <text x="87" y="94" font-size="16">+</text>
+  <text x="294" y="112" font-size="17" font-style="italic">R</text>
+  <line x1="290" y1="118" x2="306" y2="118" stroke="currentColor" stroke-width="1.4"/>
+  <text x="298" y="136" font-size="17" text-anchor="middle">2</text>
+</svg>

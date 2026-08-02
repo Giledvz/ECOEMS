@@ -56,14 +56,12 @@
             "topic": "2.7.0.0.0",
             "topic_name": "Física",
             "text": "La siguiente figura ilustra el momento preciso en el que un bate golpea una pelota. ¿Cuál de las imágenes muestra los vectores que representan la Tercera Ley de Newton?\n\n**Considera:**\n\n$F_{\\frac{P}{B}}$ = Fuerza de la pelota sobre el bate.\n\n$F_{\\frac{B}{P}}$ = Fuerza del bate sobre la pelota.",
-            "_figura_pendiente": {
-              "enunciado": "Dibujo en blanco y negro visto desde arriba: una pelota (círculo) a la izquierda, en contacto con el extremo grueso de un bate de béisbol que está a la derecha, con el mango apuntando hacia abajo. No lleva vectores; es la imagen de referencia del enunciado.",
-              "opciones": {
-                "A": "La misma pelota y bate. Sobre la pelota, una flecha corta que apunta hacia la izquierda, etiquetada $F_{\\frac{B}{P}}$; sobre el bate, una flecha corta del mismo tamaño que apunta hacia la derecha, etiquetada $F_{\\frac{P}{B}}$. Las dos flechas son de igual longitud y de sentidos opuestos (se alejan una de la otra).",
-                "B": "La misma pelota y bate. Sobre la pelota, una flecha larga que apunta hacia la izquierda, etiquetada $F_{\\frac{B}{P}}$; sobre el bate, una flecha corta que apunta hacia la derecha, etiquetada $F_{\\frac{P}{B}}$. Las flechas tienen sentidos opuestos pero longitudes distintas: la de la pelota es mucho mayor.",
-                "C": "La misma pelota y bate. Sobre la pelota, una flecha que apunta hacia la derecha, etiquetada $F_{\\frac{B}{P}}$; sobre el bate, una flecha que apunta hacia la izquierda, etiquetada $F_{\\frac{P}{B}}$. Las dos flechas apuntan una hacia la otra (hacia la zona de contacto).",
-                "D": "La misma pelota y bate. Sobre la pelota, una flecha corta que apunta hacia la izquierda, etiquetada $F_{\\frac{B}{P}}$; sobre el bate, una flecha larga que apunta hacia la derecha, etiquetada $F_{\\frac{P}{B}}$. Sentidos opuestos y longitudes distintas: la del bate es mucho mayor."
-              }
+            "image": "/imagenes_unam-a1-5/q3_bate_pelota.svg",
+            "option_images": {
+              "A": "/imagenes_unam-a1-5/q3_opA.svg",
+              "B": "/imagenes_unam-a1-5/q3_opB.svg",
+              "C": "/imagenes_unam-a1-5/q3_opC.svg",
+              "D": "/imagenes_unam-a1-5/q3_opD.svg"
             },
             "options": {
               "A": "",
@@ -143,9 +141,7 @@
             "topic": "6.2.0.0.0",
             "topic_name": "Física",
             "text": "Una carga +*Q* se encuentra en el centro de un círculo y sobre el perímetro, a una distancia *R* están situadas 12 cargas +*q* uniformemente distribuidas, como lo muestra la figura.\n\n**¿Cuál es la fuerza neta que experimenta +Q debida a las 12 cargas +q?**",
-            "_figura_pendiente": {
-              "enunciado": "Una circunferencia con una carga puntual rotulada +Q en el centro. Sobre la circunferencia hay 12 puntos negros uniformemente distribuidos (cada 30°), cada uno rotulado +q. Desde el centro sale una flecha hacia abajo y a la izquierda hasta la circunferencia, rotulada R, que indica el radio."
-            },
+            "image": "/imagenes_unam-a1-5/q9_cargas.svg",
             "options": {
               "A": "0F N",
               "B": "3F N",
@@ -172,9 +168,7 @@
             "topic": "6.3.0.0.0",
             "topic_name": "Física",
             "text": "De acuerdo a la imagen, la corriente que circula por el resistor de resistencia $\\frac{R}{2}$ es",
-            "_figura_pendiente": {
-              "enunciado": "Circuito eléctrico de un solo lazo rectangular. En el lado izquierdo, una batería o pila rotulada V, con el símbolo + arriba y la marca de terminal larga/corta. En el lado derecho, un resistor dibujado en zigzag rotulado $\\frac{R}{2}$. Los dos elementos están unidos por conductores en la parte superior e inferior formando un circuito serie."
-            },
+            "image": "/imagenes_unam-a1-5/q11_circuito.svg",
             "options": {
               "A": "$\\frac{V}{2R}$",
               "B": "$\\frac{2V}{R}$",
@@ -188,9 +182,7 @@
             "topic": "6.4.1.0.0",
             "topic_name": "Física",
             "text": "Determina la resistencia total del circuito que se representa en la imagen.",
-            "_figura_pendiente": {
-              "enunciado": "Circuito eléctrico rectangular. En el lado izquierdo una fuente rotulada 6V. En la rama superior, en serie, un resistor en zigzag rotulado $R_1 = 2\\,\\Omega$. A la derecha, dos resistores en paralelo entre sí, dibujados en vertical uno junto al otro: $R_2 = 4\\,\\Omega$ y $R_3 = 6\\,\\Omega$; esa combinación en paralelo está en serie con $R_1$ y con la fuente."
-            },
+            "image": "/imagenes_unam-a1-5/q12_circuito.svg",
             "options": {
               "A": "2.41 $\\Omega$",
               "B": "4.4 $\\Omega$",
@@ -204,9 +196,7 @@
             "topic": "7.1.4.0.0",
             "topic_name": "Física",
             "text": "Tres recipientes idénticos A, B y C contienen igual cantidad de diferentes líquidos, las densidades de los líquidos son $\\mathrm{p_A > p_B > p_C}$, ¿cómo es la presión en las bases de los recipientes?\n\n**Considera.**\n\n$\\mathrm{p_A}$ = presión sobre la base A.\n\n$\\mathrm{p_B}$ = presión sobre la base B.\n\n$\\mathrm{p_C}$ = presión sobre la base C.",
-            "_figura_pendiente": {
-              "enunciado": "Tres cubos idénticos dibujados en perspectiva (aristas ocultas punteadas), del mismo tamaño, alineados horizontalmente y rotulados A, B y C debajo de cada uno."
-            },
+            "image": "/imagenes_unam-a1-5/q13_recipientes.svg",
             "options": {
               "A": "$P_A = P_B = P_C$",
               "B": "$P_A > P_B > P_C$",
@@ -846,9 +836,7 @@
             "topic": "9.5.0.0.0",
             "topic_name": "Matemáticas",
             "text": "Determina los puntos por donde pasa una recta perpendicular a la gráfica siguiente.",
-            "_figura_pendiente": {
-              "enunciado": "Plano cartesiano con eje x rotulado de $-8$ a 8 (marcas en $-8$, $-6$, $-4$, $-2$, 0, 2, 4, 6, 8) y eje y rotulado de $-8$ a 10 (marcas en $-8$, $-6$, $-4$, $-2$, 2, 4, 6, 8, 10). Sobre el plano está trazado un segmento de recta con pendiente positiva que va del punto rotulado \"P ($-4$, $-7$)\", marcado con un punto negro en el tercer cuadrante, hasta el punto rotulado \"P (4, 9)\", marcado con un punto negro en el primer cuadrante. La recta cruza cerca del origen."
-            },
+            "image": "/imagenes_unam-a1-5/q60_recta.svg",
             "options": {
               "A": "(0, 0) y ($-2$, $-3$)",
               "B": "(0, 0) y ($-2$, 1)",
@@ -966,9 +954,7 @@
             "topic": "16.6.0.0.0",
             "topic_name": "Matemáticas",
             "text": "En la siguiente gráfica de la función f(x). ¿En qué intervalo la derivada de *f* es negativa?",
-            "_figura_pendiente": {
-              "enunciado": "Plano cartesiano en el primer cuadrante, con eje y vertical (sin valores rotulados) y eje x rotulado únicamente con 0, 2, 4 y 6. Se traza una curva continua que sale del origen, sube hasta un máximo local en x = 2, luego desciende hasta un mínimo local en x = 4, y a partir de ahí vuelve a subir de manera pronunciada hasta pasar x = 6. Hay líneas verticales punteadas desde la curva hasta el eje x en x = 2 y en x = 6."
-            },
+            "image": "/imagenes_unam-a1-5/q69_grafica.svg",
             "options": {
               "A": "$(-2, 4)$",
               "B": "$[2, 4)$",

@@ -1,0 +1,27 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 474 230" width="474" height="230" font-family="'Latin Modern Roman', Georgia, serif">
+<!-- R1 en serie con la combinación paralelo de R2 y R3 -->
+  <g stroke="currentColor" stroke-width="1.8" fill="none">
+    <!-- Fuente de 6 V -->
+    <line x1="47" y1="112" x2="77" y2="112"/>
+    <line x1="54" y1="124" x2="70" y2="124"/>
+    <line x1="62" y1="54" x2="62" y2="112"/>
+    <line x1="62" y1="124" x2="62" y2="186"/>
+    <!-- Rail superior con R1 en serie -->
+    <line x1="62" y1="54" x2="135" y2="54"/>
+    <line x1="185" y1="54" x2="348" y2="54"/>
+    <path d="M 137,54 L 141,64 L 148,44 L 156,64 L 164,44 L 172,64 L 179,44 L 183,54"/>
+    <line x1="62" y1="186" x2="348" y2="186"/>
+    <!-- Las dos ramas en paralelo: R2 y R3 -->
+    <line x1="258" y1="54" x2="258" y2="97"/>
+    <line x1="258" y1="143" x2="258" y2="186"/>
+    <path d="M 258,97 L 268,101 L 248,108 L 268,116 L 248,124 L 268,132 L 248,139 L 258,143"/>
+    <line x1="348" y1="54" x2="348" y2="97"/>
+    <line x1="348" y1="143" x2="348" y2="186"/>
+    <path d="M 348,97 L 358,101 L 338,108 L 358,116 L 338,124 L 358,132 L 338,139 L 348,143"/>
+  </g>
+  <text x="38" y="121" font-size="18" text-anchor="end">6 V</text>
+  <text x="83" y="106" font-size="16">+</text>
+  <text x="160" y="34" font-size="17" text-anchor="middle"><tspan font-style="italic">R</tspan><tspan font-size="12" dy="4">1</tspan><tspan dy="-4"> = 2 Ω</tspan></text>
+  <text x="228" y="126" font-size="17" text-anchor="end"><tspan font-style="italic">R</tspan><tspan font-size="12" dy="4">2</tspan><tspan dy="-4"> = 4 Ω</tspan></text>
+  <text x="378" y="126" font-size="17"><tspan font-style="italic">R</tspan><tspan font-size="12" dy="4">3</tspan><tspan dy="-4"> = 6 Ω</tspan></text>
+</svg>

@@ -23,6 +23,8 @@ PAGINAS = {1: ' (páginas 61-82; clave en las 83-86).'}
 # visualmente que eso es la lectura, y el rango de preguntas no le sirve al alumno.
 INSTR = re.compile(r'^\s*Lee (el|los|la) siguiente[^\n]*\n+', re.I)
 
+RUTA = lambda a: f'/imagenes_unam-a{a}-5'
+
 def main(a):
     qs = {}
     for f in sorted(glob.glob(f'{RAIZ}/fuentes/unam-2025/a{a}-2025-*.json')):
@@ -33,8 +35,12 @@ def main(a):
     # Registro de figuras ya dibujadas, para que rearmar el examen no las borre.
     figs = json.load(open(f'{RAIZ}/fuentes/unam-2025/figuras/figuras.json',
                           encoding='utf-8'))[str(a)]
-    if faltan_svg := [f for f in figs.values()
-                      if not os.path.exists(f'{RAIZ}/public/imagenes_unam-a{a}-5/{f}')]:
+    archivos = []
+    for v in figs.values():
+        archivos += [v] if isinstance(v, str) else \
+            ([v['enunciado']] if 'enunciado' in v else []) + list(v.get('opciones', {}).values())
+    if faltan_svg := [f for f in archivos
+                      if not os.path.exists(f'{RAIZ}/public{RUTA(a)}/{f}')]:
         print(f'  ! figuras registradas que no existen en disco: {faltan_svg}')
         return
 
@@ -61,7 +67,15 @@ def main(a):
         if q.get('figura') or q.get('figuras_opciones'):
             if str(n) in figs:
                 # Ya dibujada: entra como imagen y la descripción deja de hacer falta.
-                nq['image'] = f'/imagenes_unam-a{a}-5/{figs[str(n)]}'
+                # El valor es un nombre de archivo suelto, o un dict cuando además
+                # hay una imagen por opción.
+                v = figs[str(n)]
+                v = v if isinstance(v, dict) else {'enunciado': v}
+                if 'enunciado' in v:
+                    nq['image'] = f'{RUTA(a)}/{v["enunciado"]}'
+                if 'opciones' in v:
+                    nq['option_images'] = {k: f'{RUTA(a)}/{f}'
+                                           for k, f in v['opciones'].items()}
             else:
                 # La descripción queda registrada pero FUERA de lo que ve el alumno,
                 # hasta que la figura exista como SVG.
