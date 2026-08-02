@@ -1,0 +1,37 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 350" width="520" height="350" font-family="'Latin Modern Roman', Georgia, serif">
+<!-- Vista superior: dos personas conversan de un lado de la esquina; el sonido dobla la arista y llega a quienes están a la vuelta -->
+<defs>
+<clipPath id="libre"><polygon points="0,0 520,0 520,236 316,152 0,152"/></clipPath>
+<clipPath id="sombra"><polygon points="316,152 520,236 520,350 316,350"/></clipPath>
+</defs>
+<path d="M 56 152 L 316 152 L 316 320 L 300 320 L 300 168 L 56 168 Z" fill="currentColor" fill-opacity="0.30" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+<g clip-path="url(#libre)">
+<path d="M 153.4 30.2 A 64 64 0 0 1 203.9 146.3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.7"/>
+<path d="M 145.7 1.2 A 94 94 0 0 1 219.8 171.7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.7"/>
+<path d="M 137.9 -27.8 A 124 124 0 0 1 235.7 197.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.7"/>
+<path d="M 130.1 -56.8 A 154 154 0 0 1 251.6 222.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.7"/>
+<path d="M 122.4 -85.7 A 184 184 0 0 1 267.5 248.0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.7"/>
+<path d="M 114.6 -114.7 A 214 214 0 0 1 283.4 273.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.7"/>
+<path d="M 106.8 -143.7 A 244 244 0 0 1 299.3 298.9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.7"/>
+</g>
+<g clip-path="url(#sombra)">
+<path d="M 370.0 152.0 A 54 54 0 0 1 316.0 206.0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="7 4" stroke-opacity="0.85"/>
+<path d="M 400.0 152.0 A 84 84 0 0 1 316.0 236.0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="7 4" stroke-opacity="0.85"/>
+<path d="M 430.0 152.0 A 114 114 0 0 1 316.0 266.0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="7 4" stroke-opacity="0.85"/>
+<path d="M 460.0 152.0 A 144 144 0 0 1 316.0 296.0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="7 4" stroke-opacity="0.85"/>
+<path d="M 490.0 152.0 A 174 174 0 0 1 316.0 326.0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="7 4" stroke-opacity="0.85"/>
+<path d="M 520.0 152.0 A 204 204 0 0 1 316.0 356.0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="7 4" stroke-opacity="0.85"/>
+</g>
+<line x1="170.0" y1="92.0" x2="477.1" y2="45.4" stroke="currentColor" stroke-width="1.6"/>
+<path d="M 486.0 44.0 L 477.7 49.1 L 476.5 41.6 Z" fill="currentColor"/>
+<line x1="170.0" y1="92.0" x2="477.7" y2="218.4" stroke="currentColor" stroke-width="1.6"/>
+<path d="M 486.0 221.9 L 476.2 221.9 L 479.1 214.9 Z" fill="currentColor"/>
+<circle cx="144" cy="89" r="7.1" fill="currentColor"/>
+<path d="M 135 128 L 135 103 Q 144 95 153 103 L 153 128 Z" fill="currentColor"/>
+<circle cx="196" cy="89" r="7.1" fill="currentColor"/>
+<path d="M 187 128 L 187 103 Q 196 95 205 103 L 205 128 Z" fill="currentColor"/>
+<circle cx="404" cy="229" r="7.1" fill="currentColor"/>
+<path d="M 395 268 L 395 243 Q 404 235 413 243 L 413 268 Z" fill="currentColor"/>
+<circle cx="452" cy="229" r="7.1" fill="currentColor"/>
+<path d="M 443 268 L 443 243 Q 452 235 461 243 L 461 268 Z" fill="currentColor"/>
+</svg>

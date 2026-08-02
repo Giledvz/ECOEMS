@@ -113,8 +113,9 @@ def fig58():
              f'stroke="currentColor" stroke-width="2.6"/>')
     return svg(W, H, c, 'Recta y = x/2 - 1: corta el eje y en -1 y el eje x en 2')
 
-os.makedirs(OUT, exist_ok=True)
-for nombre, fn in (('q1_grafica_vt', fig1), ('q3_fuerza_aceleracion', fig3),
-                   ('q54_triangulo', fig54), ('q58_recta', fig58)):
-    open(os.path.join(OUT, nombre + '.svg'), 'w').write(fn())
-    print('escrito', nombre + '.svg')
+if __name__ == '__main__':
+    os.makedirs(OUT, exist_ok=True)
+    for nombre, fn in (('q1_grafica_vt', fig1), ('q3_fuerza_aceleracion', fig3),
+                       ('q54_triangulo', fig54), ('q58_recta', fig58)):
+        open(os.path.join(OUT, nombre + '.svg'), 'w').write(fn())
+        print('escrito', nombre + '.svg')
