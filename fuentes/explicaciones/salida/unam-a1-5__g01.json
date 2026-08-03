@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "Como el auto parte del reposo con aceleración constante, usa $v = at$: la velocidad es simplemente aceleración por tiempo.\n\n$$v = 1.8\\,\\mathrm{\\frac{m}{s^2}} \\times 2\\,\\mathrm{s} = 3.6\\,\\mathrm{\\frac{m}{s}}$$\n\nSi te dio $0.9$ (opción A), dividiste en vez de multiplicar; y $1.8$ (opción B) es la aceleración, no la velocidad."
+ },
+ {
+  "id": 2,
+  "explanation": "Descompón cada vector con la tabla que te dan. El de $8\\,\\mathrm{N}$ está a 30° del eje $y$: $x = 8(0.5) = 4$, $y = 8(0.8) = 6.4$. El de $9\\,\\mathrm{N}$ está a 75° bajo el eje $x$: $x = 9(0.3) = 2.7$, $y = -9(0.9) = -8.1$. El de $10\\,\\mathrm{N}$ apunta al tercer cuadrante a 45°: $x = -10(0.7) = -7$, $y = -10(0.7) = -7$.\n\nSumas: $R_x = 4 + 2.7 - 7 = -0.3$ y $R_y = 6.4 - 8.1 - 7 = -8.7$. La magnitud es\n\n$$R = \\sqrt{(-0.3)^2 + (-8.7)^2} = \\sqrt{0.09 + 75.69} = \\sqrt{75.8}\\,\\mathrm{N}$$\n\nSi te dio $\\sqrt{650}$ (opción C), sumaste las magnitudes al cuadrado sin descomponer: los vectores no se suman así, hay que trabajar por componentes."
+ },
+ {
+  "id": 3,
+  "explanation": "La Tercera Ley de Newton dice: si el bate empuja a la pelota, la pelota empuja al bate con una fuerza de **igual magnitud y sentido contrario**, y cada fuerza actúa sobre un cuerpo distinto. En la imagen A las dos flechas miden lo mismo y apuntan en sentidos opuestos, alejándose del punto de contacto: $F_{B/P}$ sobre la pelota y $F_{P/B}$ sobre el bate.\n\nEn B y D las flechas tienen tamaños distintos (violan la igualdad de magnitudes), y en C apuntan una hacia la otra, como si ambas fuerzas empujaran hacia el choque, lo cual no representa el par acción-reacción."
+ },
+ {
+  "id": 4,
+  "explanation": "La energía cinética es la energía asociada al movimiento y su fórmula es\n\n$$E_c = \\frac{1}{2}mv^2$$\n\nFíjate en dos detalles que delatan a los distractores: la velocidad va **al cuadrado** (por eso $mv$ no puede ser, esa es la cantidad de movimiento) y el factor es un medio, no un 2 como en la opción B."
+ },
+ {
+  "id": 5,
+  "explanation": "El equilibrio térmico es un concepto que involucra a **dos** sistemas: cuando están en contacto térmico y ya no hay flujo neto de calor entre ellos, es porque alcanzaron la misma temperatura. Esa es justo la opción B.\n\nLa opción A se antoja, pero que la temperatura de un solo sistema no varíe en un proceso describe un proceso isotérmico, no el equilibrio térmico entre sistemas."
+ },
+ {
+  "id": 6,
+  "explanation": "Combina la ley del gas ideal con la definición de densidad: de $PV = nRT$ y $n = \\frac{m}{M}$ sale $\\rho = \\frac{PM}{RT}$. El oxígeno es diatómico, así que $M = 2(16) = 32\\,\\mathrm{\\frac{g}{mol}} = 0.032\\,\\mathrm{\\frac{kg}{mol}}$, y la temperatura debe ir en kelvin: $27 + 273 = 300\\,\\mathrm{K}$.\n\n$$\\rho = \\frac{(101{,}325\\,\\mathrm{Pa})(0.032\\,\\mathrm{\\frac{kg}{mol}})}{(8.314\\,\\mathrm{\\frac{J}{mol\\,K}})(300\\,\\mathrm{K})} \\approx 1.3\\,\\mathrm{\\frac{kg}{m^3}}$$\n\nSi te dio $0.6$ (opción C), usaste $M = 16$: olvidaste que el O$_2$ es diatómico."
+ },
+ {
+  "id": 7,
+  "explanation": "La velocidad de una onda, su frecuencia y su longitud de onda se relacionan con $c = \\lambda f$, así que $f = \\frac{c}{\\lambda}$. Convierte primero la velocidad: $300{,}000\\,\\mathrm{\\frac{km}{s}} = 3\\times10^{8}\\,\\mathrm{\\frac{m}{s}}$.\n\n$$f = \\frac{3\\times10^{8}}{7\\times10^{-7}} \\approx 4.28\\times10^{14}\\,\\mathrm{Hz}$$\n\nSi te dio $2.33\\times10^{-15}$ (opción A), dividiste al revés ($\\lambda \\div c$): ese número tan chiquito debería alertarte, la luz visible anda en los cientos de billones de hertz."
+ },
+ {
+  "id": 8,
+  "explanation": "En la interferencia, las ondas se refuerzan en unos puntos (franjas claras) y se cancelan en otros (franjas obscuras), pero la energía no desaparece: la que \"falta\" en las zonas obscuras aparece concentrada en las claras. El patrón completo es una redistribución que respeta la **conservación de la energía**.\n\nLa difracción (opción B) es otro fenómeno ondulatorio, no algo que se conserve."
+ },
+ {
+  "id": 9,
+  "explanation": "Aquí no hace falta calcular nada: es un argumento de **simetría**. Las 12 cargas $+q$ están uniformemente distribuidas sobre el círculo, así que por cada carga que empuja a $+Q$ en una dirección hay otra diametralmente opuesta que la empuja con la misma fuerza en dirección contraria. Los 12 empujones se cancelan por pares y la fuerza neta sobre $+Q$ es $0$.\n\nSi contestaste $12F$ (opción D), sumaste las magnitudes de las 12 fuerzas: las fuerzas son vectores y aquí sus direcciones se cancelan."
+ },
+ {
+  "id": 10,
+  "explanation": "Es una aplicación directa de la ley de Ohm, $V = IR$:\n\n$$V = (10\\,\\mathrm{A})(10\\,\\Omega) = 100\\,\\mathrm{V}$$\n\nSi contestaste $1\\,\\mathrm{V}$ (opción D), dividiste en vez de multiplicar: esa sería la corriente si te hubieran dado el voltaje."
+ },
+ {
+  "id": 11,
+  "explanation": "El circuito es un solo lazo: la pila de voltaje $V$ conectada directamente al resistor de resistencia $\\frac{R}{2}$. Aplica la ley de Ohm despejando la corriente:\n\n$$I = \\frac{V}{R_{\\mathrm{total}}} = \\frac{V}{R/2} = \\frac{2V}{R}$$\n\nOjo con el álgebra: dividir entre $\\frac{R}{2}$ es multiplicar por 2. Si contestaste $\\frac{V}{2R}$ (opción A), el 2 se te fue al denominador: ese sería el resultado con una resistencia $2R$."
+ },
+ {
+  "id": 12,
+  "explanation": "En el circuito, $R_2 = 4\\,\\Omega$ y $R_3 = 6\\,\\Omega$ están en paralelo, y esa combinación queda en serie con $R_1 = 2\\,\\Omega$. Primero el paralelo:\n\n$$R_{23} = \\frac{R_2 R_3}{R_2 + R_3} = \\frac{4 \\times 6}{4 + 6} = 2.4\\,\\Omega$$\n\nLuego la serie: $R_T = 2 + 2.4 = 4.4\\,\\Omega$.\n\nSi te dio $12\\,\\Omega$ (opción C), sumaste las tres como si estuvieran en serie: revisa siempre la topología del circuito antes de sumar."
+ },
+ {
+  "id": 13,
+  "explanation": "La presión en el fondo de un recipiente por el líquido que contiene es $P = \\rho g h$. Los recipientes son idénticos y tienen la **misma cantidad** de líquido, así que la altura $h$ es la misma en los tres; la única diferencia es la densidad. A mayor densidad, mayor presión, y como $\\rho_A > \\rho_B > \\rho_C$, entonces\n\n$$P_A > P_B > P_C$$\n\nLa opción A (presiones iguales) sería cierta solo si los tres líquidos tuvieran la misma densidad."
+ },
+ {
+  "id": 14,
+  "explanation": "Con el radio de $30\\,\\mathrm{cm}$, la distancia focal es $f = \\frac{R}{2} = 15\\,\\mathrm{cm}$. Ahora usa la ecuación de las lentes delgadas con la imagen a $d_i = 20\\,\\mathrm{cm}$:\n\n$$\\frac{1}{d_o} = \\frac{1}{f} - \\frac{1}{d_i} = \\frac{1}{15} - \\frac{1}{20} = \\frac{4 - 3}{60} = \\frac{1}{60}$$\n\nEl objeto está a $d_o = 60\\,\\mathrm{cm}$ de la lente.\n\nSi te dio $8.6 \\approx 8$ (opción C), sumaste $\\frac{1}{15} + \\frac{1}{20}$: recuerda que en la ecuación se despeja restando."
+ },
+ {
+  "id": 15,
+  "explanation": "La dualidad de la luz se refiere a que en unos fenómenos se comporta como **onda** (interferencia, difracción) y en otros como **partícula** o fotón (efecto fotoeléctrico). Por eso se habla de dualidad onda-partícula: no es que sea una u otra, sino que ambos modelos son necesarios para describirla.\n\nLa reflexión y la refracción (opción D) son fenómenos que la luz presenta, no los dos \"comportamientos\" de la dualidad."
+ },
+ {
+  "id": 16,
+  "explanation": "Marie Curie ganó dos premios Nobel: el de **Física** en 1903 (compartido con Pierre Curie y Henri Becquerel, por sus investigaciones sobre la radiactividad) y el de **Química** en 1911 (por el descubrimiento del radio y el polonio). Fue la primera persona en ganar el Nobel en dos ciencias distintas.\n\nAunque sus descubrimientos tuvieron enorme impacto en la medicina, nunca recibió el Nobel de Medicina (opción B)."
+ },
+ {
+  "id": 17,
+  "explanation": "Las propiedades textuales clásicas son tres: **adecuación** (el texto responde a una situación comunicativa), **coherencia** (es una unidad de información con significado global) y **cohesión** (sus ideas están bien enlazadas entre sí). La opción A reúne exactamente esas tres.\n\nLas citas documentadas (opción B) son exigencia de ciertos textos académicos, no una propiedad general de todo texto."
+ },
+ {
+  "id": 18,
+  "explanation": "La función referencial (o informativa) se centra en el contexto: transmite información objetiva, de forma directa y clara, sin opiniones ni emociones del emisor. Fíjate en la nota: solo reporta hechos —quiénes ganaron, qué concurso, dónde se celebró— sin ningún comentario ni intención de conmover.\n\nLa opción D se antoja porque el texto sí da nombres y apellidos, pero ese es un dato del contenido, no lo que define la función referencial: lo que la define es la transmisión objetiva del mensaje."
+ },
+ {
+  "id": 19,
+  "explanation": "La **tragedia** es el subgénero dramático donde los personajes, generalmente de condición elevada, están marcados por la fatalidad: por más que luchen, el destino los arrastra a un desenlace funesto. Piensa en *Edipo Rey*: todo lo que hace Edipo por escapar de la profecía lo acerca a cumplirla.\n\nEl sainete, el entremés y la farsa son piezas cómicas o ligeras, justo lo contrario del tono fatal que describe el enunciado."
+ },
+ {
+  "id": 20,
+  "explanation": "El **símil** es la comparación explícita entre dos elementos mediante un nexo comparativo: *como*, *cual*, *semejante a*. Aquí la lluvia se compara con \"finísimas flechas afiladas\" usando la palabra **como**, y ese nexo es la marca inconfundible del símil.\n\nSi hubiera dicho \"finísimas flechas afiladas caían sobre la vidriera\", sin el *como*, entonces sí sería metáfora (opción D): la diferencia entre ambas es precisamente el nexo comparativo."
+ },
+ {
+  "id": 21,
+  "explanation": "El género **dramático** es el que está escrito para representarse en un escenario: la historia avanza a través de los diálogos y acciones de los personajes, sin un narrador que cuente los hechos.\n\nEl narrativo (opción C) también cuenta historias, pero mediante un narrador y está hecho para leerse, no para montarse en escena."
+ },
+ {
+  "id": 22,
+  "explanation": "Una corriente literaria agrupa a autores que coinciden en tres cosas: comparten rasgos de estilo (forma de escribir), se interesan por temas similares y **viven en una misma época**. Ese último elemento es clave: la corriente es un fenómeno histórico, situado en un tiempo determinado.\n\nLas opciones B y C hablan de \"heredar el estilo de quienes los precedieron\", pero eso describe una influencia entre generaciones, no la coincidencia de época que define a la corriente."
+ },
+ {
+  "id": 23,
+  "explanation": "El Realismo busca retratar la sociedad tal como es, con especial atención a los conflictos sociales de su tiempo. El fragmento habla del \"malestar social\", de \"la lucha cada vez más enconada entre pobres y ricos\" y de \"las injusticias que envilecen el mundo\": ahí están los problemas de un sector de la población y el reflejo de la realidad, tal como dice la opción B.\n\nLa opción C incluye \"la evasión de la realidad\", que es justo lo contrario del Realismo: eso es más propio del Romanticismo o del Modernismo."
+ },
+ {
+  "id": 24,
+  "explanation": "El **cuento** es una narración breve, con pocos personajes y una sola línea de acción, y es el vehículo natural de las fantasías humanas: desde los cuentos maravillosos hasta el cuento fantástico moderno.\n\nLa crónica (opción A) también es breve, pero relata hechos reales en orden temporal, no fantasías."
+ },
+ {
+  "id": 25,
+  "explanation": "La **novela** es la narración extensa por excelencia, y su amplitud le permite desarrollar varias historias a la vez: una trama principal y varias secundarias, con muchos personajes y escenarios.\n\nLa minificción (opción D) es exactamente lo contrario: tan breve que apenas alcanza para sugerir una sola historia."
+ },
+ {
+  "id": 26,
+  "explanation": "Fíjate en la fuente citada: *¿Cómo ves?*, con año, número y páginas. Es una **revista**, y las fichas que registran artículos de publicaciones periódicas (revistas y periódicos) se llaman **hemerográficas**, de *hemeroteca*, el lugar donde se guardan esas publicaciones.\n\nSi contestaste bibliográfica (opción A), confundiste la fuente: esa ficha registra libros, y aquí los datos de año, número y páginas de revista lo descartan."
+ },
+ {
+  "id": 27,
+  "explanation": "Las sustancias que no pueden descomponerse químicamente en otras más simples son los **elementos**. En la opción A las tres lo son: sodio ($\\mathrm{Na}$), cloro diatómico ($\\mathrm{Cl_2}$) y fósforo ($\\mathrm{P_4}$); aunque $\\mathrm{Cl_2}$ y $\\mathrm{P_4}$ tengan varios átomos, son átomos del mismo elemento.\n\nLas demás opciones incluyen compuestos como $\\mathrm{CO}$ o $\\mathrm{SO_2}$, que sí se descomponen porque combinan elementos distintos. No confundas molécula con compuesto: $\\mathrm{P_4}$ es molécula, pero de un solo elemento."
+ },
+ {
+  "id": 28,
+  "explanation": "El número atómico $Z$ es el número de protones, y en un átomo neutro también el de electrones: $Z = 8$ da 8 protones y 8 electrones. Los neutrones se obtienen restando: $A - Z = 16 - 8 = 8$. Total: 8, 8, 8.\n\nSi elegiste una opción con 16, tomaste el número de masa $A$ como si fuera el número de partículas de un solo tipo: $A$ cuenta protones **más** neutrones juntos."
+ },
+ {
+  "id": 29,
+  "explanation": "Los metales alcalinos (grupo 1: Li, Na, K...) tienen un solo electrón de valencia, y por eso al oxidarse pierden **un** electrón formando iones $+1$. Esa configuración los hace extremadamente reactivos: con el agua reaccionan de forma violenta liberando hidrógeno. Eso es justo la opción C.\n\nSi elegiste la A (pierden dos electrones), pensaste en los alcalinotérreos, el grupo 2."
+ },
+ {
+  "id": 30,
+  "explanation": "Las sustancias que liberan iones hidronio ($H_3O^+$) en disolución acuosa son los **ácidos**. En la opción D los tres lo son: ácido clorhídrico ($HCl$), ácido fosfórico ($H_3PO_4$) y ácido carbónico ($H_2CO_3$).\n\nLas demás opciones mezclan bases como $NaOH$, $KOH$ o $NH_3$, que hacen lo contrario: liberan o generan iones $OH^-$."
+ },
+ {
+  "id": 31,
+  "explanation": "Ve por pasos. Moles de HCl necesarios: $n = M \\times V = 1.4 \\times 0.250 = 0.35$ mol. Masa de HCl puro: $0.35 \\times 36.5 = 12.8\\,\\mathrm{g}$. Como el reactivo está al 37% de pureza, necesitas más masa de disolución concentrada: $\\frac{12.8}{0.37} = 34.5\\,\\mathrm{g}$. Por último, conviertes a volumen con la densidad:\n\n$$V = \\frac{34.5\\,\\mathrm{g}}{1.14\\,\\mathrm{\\frac{g}{mL}}} \\approx 30\\,\\mathrm{mL}$$\n\nSi te dio 34 (opción A), te faltó el último paso: obtuviste gramos y los reportaste como mililitros sin dividir entre la densidad."
+ },
+ {
+  "id": 32,
+  "explanation": "Aquí hay dos cosas que distinguir. Primero, las fuerzas responsables de que el hielo sea menos denso que el agua líquida actúan **entre** moléculas de agua, no dentro de ellas: son fuerzas *inter*moleculares. Segundo, esas fuerzas son los **puentes de hidrógeno**, que en el hielo acomodan las moléculas en una red abierta con huecos, bajando su densidad y haciéndolo flotar.\n\nLas fuerzas *intra*moleculares (los enlaces covalentes O–H dentro de cada molécula) no cambian entre hielo y agua líquida, así que no explican la flotación."
+ },
+ {
+  "id": 33,
+  "explanation": "Si $[H^+] < [OH^-]$, predominan los iones hidróxido y la disolución es **básica**, así que su pH debe ser mayor que 7. De las opciones, la única con pH básico es 11.\n\nLos valores 5 y 2 corresponden a disoluciones ácidas (donde $[H^+] > [OH^-]$), y 7 sería el caso neutro, cuando ambas concentraciones son iguales."
+ },
+ {
+  "id": 34,
+  "explanation": "El carbono es un **no metal**, y cuando un no metal se combina con oxígeno forma un óxido no metálico, también llamado **óxido ácido** o anhídrido (aquí $x = \\mathrm{CO_2}$). Se llaman así porque al reaccionar con agua producen ácidos: $\\mathrm{CO_2} + \\mathrm{H_2O} \\rightarrow \\mathrm{H_2CO_3}$.\n\nLos óxidos básicos (opción A) se forman con **metales** más oxígeno, como $\\mathrm{Na_2O}$ o $\\mathrm{CaO}$."
+ },
+ {
+  "id": 35,
+  "explanation": "Los **lípidos** son la reserva energética por excelencia: el organismo almacena grasa porque rinde más del doble de energía por gramo (unas 9 kcal contra 4 de los carbohidratos) y se guarda de forma compacta, sin agua.\n\nLos carbohidratos (opción D) se antojan, pero su papel es dar energía **inmediata**; como reserva son limitados (el glucógeno se agota pronto), mientras que la grasa es el almacén de largo plazo."
+ },
+ {
+  "id": 36,
+  "explanation": "Basta pensar en cualquier combustión: una fogata, la estufa, un motor. Todas **liberan** calor al ambiente, y las reacciones que liberan energía calorífica se llaman **exotérmicas** (*exo* = hacia afuera). Además, las dos partes de la oración deben ser congruentes: exotérmica va con liberar.\n\nLas opciones B y C se contradicen a sí mismas: una reacción exotérmica no absorbe, y una endotérmica no libera."
+ },
+ {
+  "id": 37,
+  "explanation": "La **latitud** es la coordenada que mide la distancia angular de un punto hacia el norte o hacia el sur del Ecuador, de 0° a 90°.\n\nLa longitud (opción C) es su complemento, pero mide hacia el este y el oeste del meridiano de Greenwich; y la altitud (opción B) no es coordenada de posición sobre el mapa, sino la elevación sobre el nivel del mar."
+ },
+ {
+  "id": 38,
+  "explanation": "Ubica Caracas en la retícula del mapa: el punto está apenas arriba de la línea de 10° al norte del Ecuador (la línea gruesa de 0°), o sea unos 11° de **latitud norte**; y queda entre los meridianos de 60° y 70°, más cerca del de 70°, o sea unos 67° de **longitud oeste** (W), porque América está al oeste de Greenwich. Eso da 11° lat N — 67° long W.\n\nSi elegiste la opción C (11° lat S), leíste la latitud hacia abajo del Ecuador: revisa siempre de qué lado de la línea de 0° cae el punto."
+ },
+ {
+  "id": 39,
+  "explanation": "Las corrientes de convección que mueven las placas tectónicas —y con ellas los continentes— ocurren en el **manto superior**: ahí el material rocoso, a altas temperaturas, sube, se enfría y vuelve a bajar, arrastrando las placas de la litósfera que flotan encima.\n\nEl núcleo externo (opción C) también tiene movimientos convectivos, pero de metal fundido, y su efecto es generar el campo magnético terrestre, no mover continentes."
+ },
+ {
+  "id": 40,
+  "explanation": "Chihuahua está en el altiplano del norte y Sinaloa en la costa del Pacífico; la barrera montañosa que hay que cruzar entre ambos es la **Sierra Madre Occidental**, la cadena que corre paralela a la costa del Pacífico desde la frontera norte hasta el centro del país. Piensa en la famosa ruta del tren Chihuahua–Pacífico (El Chepe): atraviesa justo esa sierra.\n\nLa Sierra Madre Oriental (opción C) corre del lado del Golfo de México, al oriente del país, lejos de ese trayecto."
+ }
+]

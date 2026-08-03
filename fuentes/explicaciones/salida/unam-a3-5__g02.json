@@ -1,0 +1,162 @@
+[
+ {
+  "id": 41,
+  "explanation": "El rendimiento es kilómetros entre litros: $50.4 \\div 6.3 = 8$. Para hacerlo sin calculadora, multiplica ambos por 10 ($504 \\div 63$) y nota que $63 \\times 8 = 504$. El rendimiento es $8\\ \\frac{km}{L}$ exactos."
+ },
+ {
+  "id": 42,
+  "explanation": "La raíz cúbica se reparte factor por factor: $\\sqrt[3]{8} = 2$ (porque $2^3 = 8$), $\\sqrt[3]{x^3} = x$ y $\\sqrt[3]{y^6} = y^{6/3} = y^2$. Juntando todo: $2xy^2$.\n\nSi elegiste A, olvidaste sacar raíz al 8: la raíz cúbica también le toca al coeficiente, no solo a las letras."
+ },
+ {
+  "id": 43,
+  "explanation": "Multiplica término a término:\n\n$$(y-1)(y+2) = y^2 + 2y - y - 2 = y^2 + y - 2$$\n\nEl truco rápido para $(y+a)(y+b)$: el término de en medio es la suma $(-1+2 = 1)$ y el independiente es el producto $(-1)(2) = -2$.\n\nSi te dio $y^2 - 2$ (opción B), solo multiplicaste los extremos y te comiste los términos cruzados."
+ },
+ {
+  "id": 44,
+  "explanation": "Factoriza arriba y abajo. El numerador: $x^2 - 7x + 12 = (x-3)(x-4)$ (dos números que suman $-7$ y multiplican $12$). El denominador: $x^2 - 16$ es diferencia de cuadrados, $(x-4)(x+4)$, junto con el $(x-3)$ que ya traía:\n\n$$\\frac{(x-3)(x-4)}{(x-4)(x+4)(x-3)} = \\frac{1}{x+4}$$\n\nSe cancelan $(x-3)$ y $(x-4)$, y solo sobrevive el $(x+4)$ abajo."
+ },
+ {
+  "id": 45,
+  "explanation": "Quita el denominador multiplicando toda la ecuación por 2:\n\n$$2(2x-4) = 5x+6 \\quad\\Rightarrow\\quad 4x - 8 = 5x + 6$$\n\nPasa las $x$ a un lado y los números al otro: $-8 - 6 = 5x - 4x$, o sea $x = -14$.\n\nComprueba: $2(-14) - 4 = -32$ y $\\frac{5(-14)+6}{2} = \\frac{-64}{2} = -32$. Si te dio $14$ (opción A), se te fue un signo al pasar términos."
+ },
+ {
+  "id": 46,
+  "explanation": "Pasa el 3 al otro lado: $-\\frac{x}{x+2} = 4$. Multiplica por $(x+2)$:\n\n$$-x = 4(x+2) = 4x + 8$$\n\nEntonces $-5x = 8$ y $x = -\\frac{8}{5}$.\n\nComprueba: $x + 2 = \\frac{2}{5}$, así que $\\frac{x}{x+2} = \\frac{-8/5}{2/5} = -4$, y $3 - (-4) = 7$. Sí cumple. Si llegaste a $-\\frac{5}{8}$, invertiste la fracción al despejar."
+ },
+ {
+  "id": 47,
+  "explanation": "\"Cuando mucho 50\" significa que 50 es el tope: puedo tener 50 pesos o menos, pero no más. Eso incluye la igualdad, así que la desigualdad correcta es $x \\leq 50$.\n\nLa opción D ($x < 50$) es el error clásico: excluye la posibilidad de tener exactamente \\$50.00, y \"cuando mucho\" sí la permite."
+ },
+ {
+  "id": 48,
+  "explanation": "Cada animal tiene una cabeza: $C + G = 61$. Los conejos tienen 4 patas y las gallinas 2: $4C + 2G = 196$. Despeja de la primera $G = 61 - C$ y sustituye:\n\n$$4C + 2(61 - C) = 196 \\quad\\Rightarrow\\quad 2C + 122 = 196 \\quad\\Rightarrow\\quad C = 37$$\n\nEntonces $G = 61 - 37 = 24$. Verifica: $4(37) + 2(24) = 148 + 48 = 196$. ✓"
+ },
+ {
+  "id": 49,
+  "explanation": "La primera ecuación ya te da $y$ despejada, así que sustitúyela en la segunda:\n\n$$4x + (x - 3) = 32 \\quad\\Rightarrow\\quad 5x = 35 \\quad\\Rightarrow\\quad x = 7$$\n\nY entonces $y = 7 - 3 = 4$. Comprueba en la segunda: $4(7) + 4 = 32$. ✓\n\nOjo con la opción C: $x=8, y=5$ cumple $y = x - 3$ pero falla en la otra ecuación ($32+5=37$); hay que verificar en las dos."
+ },
+ {
+  "id": 50,
+  "explanation": "Sustituye cada valor de $x$ en $y = 3x^2 + 4x - 10$:\n\nPara $x = 0$: $y = 0 + 0 - 10 = -10$.\n\nPara $x = 1$: $y = 3 + 4 - 10 = -3$.\n\nLos valores que completan la tabla, en ese orden, son $-10$ y $-3$. Puedes verificar el método con la columna dada: $x = -1$ da $3 - 4 - 10 = -11$, que coincide."
+ },
+ {
+  "id": 51,
+  "explanation": "Una gráfica es creciente cuando, al avanzar hacia la derecha, la curva siempre sube. Revisa cada una: la I es una exponencial que sube en todo su recorrido (despacio al principio, rápido después, pero siempre sube); la III es una recta con pendiente positiva, creciente en todo su dominio. En cambio, la II y la IV van bajando de izquierda a derecha: son decrecientes. Por eso la respuesta es I y III.\n\nNo te confundas: que una curva suba \"lento\" no la hace decreciente; lo que importa es la dirección, no la rapidez."
+ },
+ {
+  "id": 52,
+  "explanation": "Solo sustituye $x = 1$: como $1^4 = 1$, queda\n\n$$y = 5(1) + 3(1) = 5 + 3 = 8$$\n\nSi te dio 23, probablemente calculaste $5 \\cdot 4$ en lugar de $1^4$: el exponente no se multiplica, se aplica a la base."
+ },
+ {
+  "id": 53,
+  "explanation": "Si $2\\pi$ rad $= 360°$, entonces $\\pi$ rad $= 180°$. Basta multiplicar:\n\n$$\\frac{7}{8}\\pi = \\frac{7}{8} \\times 180° = \\frac{1260°}{8} = 157.5°$$\n\nSi te dio $315°$ (opción A), usaste $360°$ en vez de $180°$: eso equivaldría a $\\frac{7}{8}$ de vuelta completa, no de $\\pi$ radianes."
+ },
+ {
+  "id": 54,
+  "explanation": "La ley de senos dice que en cualquier triángulo, el seno de cada ángulo dividido entre su lado **opuesto** es constante:\n\n$$\\frac{\\mathrm{sen}\\,A}{a} = \\frac{\\mathrm{sen}\\,B}{b} = \\frac{\\mathrm{sen}\\,C}{c}$$\n\nEn la figura, el lado $a$ está enfrente del vértice $A$, y el $b$ enfrente de $B$: cada ángulo se empareja con el lado que no lo toca. Las otras opciones cruzan mal las parejas (por ejemplo, la B pone $\\mathrm{sen}\\,A$ sobre $b$, que es el lado opuesto a $B$, no a $A$)."
+ },
+ {
+  "id": 55,
+  "explanation": "El logaritmo solo está definido para números **positivos**: su dominio es $x > 0$. Revisa las opciones: el $0$ queda fuera (no existe $\\log 0$); $-\\log 2$ es negativo (vale como $-0.301$); $-2^{-1} = -\\frac{1}{2}$ también es negativo. El único positivo es $2$, así que es el único que pertenece al dominio."
+ },
+ {
+  "id": 56,
+  "explanation": "Con la fórmula de distancia entre dos puntos:\n\n$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} = \\sqrt{(2-(-7))^2 + (7-(-2))^2} = \\sqrt{9^2 + 9^2} = \\sqrt{162}$$\n\nCuidado con los signos: restar un negativo suma, por eso ambas diferencias dan 9. Si contestaste 162 (opción A), te faltó sacar la raíz cuadrada al final."
+ },
+ {
+  "id": 57,
+  "explanation": "El punto medio se obtiene promediando coordenada por coordenada:\n\n$$M = \\left(\\frac{8 + (-9)}{2}, \\frac{-4 + 7}{2}\\right) = \\left(-\\frac{1}{2}, \\frac{3}{2}\\right)$$\n\nEl error típico es en los signos al sumar: $8 - 9 = -1$ (negativo) y $-4 + 7 = 3$ (positivo). La opción B es justo eso, olvidar el signo negativo de la primera coordenada."
+ },
+ {
+  "id": 58,
+  "explanation": "Lee dos datos de la gráfica: la recta corta al eje $y$ en $-1$ (esa es la ordenada al origen $b$) y al eje $x$ en $2$. Con esos dos puntos calculas la pendiente: sube 1 unidad por cada 2 que avanza, o sea $m = \\frac{1}{2}$. Entonces:\n\n$$y = \\frac{1}{2}x - 1 = \\frac{x}{2} - 1$$\n\nLa opción A tiene la ordenada equivocada ($-\\frac{1}{2}$ en vez de $-1$) y pendiente 1, que haría la recta más inclinada de lo que se ve."
+ },
+ {
+  "id": 59,
+  "explanation": "Una circunferencia con centro en el origen tiene ecuación $x^2 + y^2 = r^2$. Ojo: el lado derecho es el radio **al cuadrado**. Aquí $r = \\sqrt{2}$, así que\n\n$$r^2 = (\\sqrt{2})^2 = 2 \\quad\\Rightarrow\\quad x^2 + y^2 = 2$$\n\nLa opción B ($x^2+y^2=\\sqrt{2}$) es la trampa: pone el radio sin elevarlo al cuadrado."
+ },
+ {
+  "id": 60,
+  "explanation": "La forma ordinaria es $(x - h)^2 + (y - k)^2 = r^2$, con centro $(h, k)$. Compara con cuidado los signos: $(x + 4)^2 = (x - (-4))^2$, así que $h = -4$; y $(y - 6)^2$ da $k = 6$ directo. El centro es $(-4, 6)$: el signo del centro es el **contrario** al que ves dentro del paréntesis. Y el radio: $r^2 = 49$, entonces $r = \\sqrt{49} = 7$, no 49 (ese es el error de la opción C)."
+ },
+ {
+  "id": 61,
+  "explanation": "Fíjate en los cuadrados: solo hay **una** variable elevada al cuadrado ($y^2$), mientras que la otra ($x$) aparece lineal. Esa es la firma de la parábola. Aquí, como es $x$ en función de $y^2$, la parábola es horizontal (abre hacia un lado). Para que fuera circunferencia o elipse necesitarías $x^2$ **y** $y^2$ sumando; para hipérbola, restando."
+ },
+ {
+  "id": 62,
+  "explanation": "La forma ordinaria de la elipse es $\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1$ con centro $(h, k)$. Como la ecuación trae $(x - 2)$ y $(y - 1)$, se lee directo: $h = 2$, $k = 1$, o sea centro $(2, 1)$.\n\nLa opción A, $(-2, -1)$, es el error de signo típico: recuerda que la resta dentro del paréntesis ya trae el signo cambiado, así que $(x-2)$ significa centro en $+2$."
+ },
+ {
+  "id": 63,
+  "explanation": "En la hipérbola $\\frac{(x-h)^2}{a^2} - \\frac{(y-k)^2}{b^2} = 1$ tienes $a^2 = 25$ y $b^2 = 9$. Para hipérbolas, $c$ se calcula **sumando**:\n\n$$c = \\sqrt{a^2 + b^2} = \\sqrt{25 + 9} = \\sqrt{34}$$\n\nY la excentricidad es $e = \\frac{c}{a} = \\frac{\\sqrt{34}}{5}$.\n\nSi elegiste C ($\\frac{4}{3}$) o D ($\\frac{4}{5}$), restaste $25 - 9 = 16$ como si fuera elipse: en la hipérbola los cuadrados se suman."
+ },
+ {
+  "id": 64,
+  "explanation": "La ecuación general de segundo grado, $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$, describe lugares geométricos en el plano: las cónicas (parábola, circunferencia, elipse, hipérbola) y, en sus casos particulares, también la línea recta. La parábola (IV) es cónica y la recta (I) queda incluida como caso degenerado o cuando los coeficientes cuadráticos se anulan. El triángulo no es una curva descrita por una sola ecuación, y el cono es un cuerpo en tres dimensiones, no un lugar geométrico del plano. Por eso la respuesta es I y IV."
+ },
+ {
+  "id": 65,
+  "explanation": "El fragmento solo **informa hechos**: cuenta que las madres eran amigas y a dónde las llevaban. No busca provocar una reacción en el oyente, ni mantener el canal abierto, ni embellecer el lenguaje: transmite información sobre la realidad, y esa es justamente la función **referencial** (también llamada informativa).\n\nNo es poética porque no hay juego estético con el lenguaje: es un recuento llano de recuerdos."
+ },
+ {
+  "id": 66,
+  "explanation": "El enunciado busca que **el receptor haga algo**: le pide a Luisa limpiar la mesa y lavar los trastes. Cuando el mensaje se centra en influir en el oyente —órdenes, peticiones, súplicas, el vocativo \"Luisa\"—, la función es **apelativa** (o conativa). La pregunta y el \"por favor\" son la envoltura cortés, pero la intención es clara: mover a la otra persona a actuar.\n\nNo es referencial porque no informa nada: no describe el mundo, solicita una acción."
+ },
+ {
+  "id": 67,
+  "explanation": "Todo el fragmento se dedica a decir **cómo es** Momo: su tamaño, su pelo ensortijado y negro, sus ojos grandes, sus pies descalzos. Cuando un texto pinta con palabras los rasgos de una persona, objeto o lugar, la forma del discurso es **descriptiva**.\n\nNo es narrativa porque no pasa nada: no hay acciones que se sucedan en el tiempo, solo un retrato detenido del personaje."
+ },
+ {
+  "id": 68,
+  "explanation": "El texto argumentativo defiende una postura mediante razonamientos. La opción C hace exactamente eso: sostiene una tesis sobre el valor de pensar y la respalda con tres juicios encadenados (\"quien no quiere... quien no puede... quien no osa...\"), cada uno con su calificación. Es una estructura de razonamiento, no de relato.\n\nLa A es poética (verso, exhortación), la B narra una escena onírica y la D es un diálogo con explicación metalingüística en tono humorístico; ninguna defiende una tesis con argumentos."
+ },
+ {
+  "id": 69,
+  "explanation": "La idea principal es la que recorre **todo** el texto, no un detalle de un párrafo. Desde la primera línea se establece que la concha \"era un material precioso en el México prehispánico\", el segundo párrafo insiste en su carácter sagrado y de lujo (\"solo tenía acceso la clase gobernante\"), y el resto del texto gira alrededor de ese valor: por eso se estudian las piezas. Eso es la opción A.\n\nLas opciones B y D son ideas secundarias: hablan del taller y de los estudiantes, que aparecen solo en los últimos párrafos como apoyo, no como tema central."
+ },
+ {
+  "id": 70,
+  "explanation": "El propio texto da la clave en el segundo párrafo: la concha \"al ser un elemento acuático se asociaba con ese líquido esencial en el desarrollo de la vida\". Las piezas se depositaban en las tumbas \"para recrear el inframundo acuático\", es decir, para llevar al mundo de los muertos el agua como símbolo y expresión de vida. Por eso la respuesta es que en el inframundo **existe el agua como expresión de vida**.\n\nLa opción D (\"hay ríos y lagos\") se queda en lo literal: el texto habla del valor simbólico del agua, no de accidentes geográficos."
+ },
+ {
+  "id": 71,
+  "explanation": "Son inferencias, no citas textuales. **Duraderas**: se han recuperado más de 2,300 objetos en excavaciones de piezas que llevan siglos enterradas; si la concha fuera frágil o efímera, no habrían sobrevivido. **Moldeables**: los artesanos las trabajaban con herramientas para convertirlas en adornos y ornamentos, o sea que el material se deja labrar. Ambas cosas juntas solo aparecen en la opción A.\n\nLas demás opciones incluyen siempre un adjetivo que contradice al texto: \"efímeras\" y \"endebles\" chocan con que las piezas perduraron, e \"inefables\" (que no se puede expresar con palabras) no viene al caso."
+ },
+ {
+  "id": 72,
+  "explanation": "El texto lo dice al describir el proyecto: Velázquez creó el taller por \"su interés por conocer las formas de elaboración de estas piezas\", y con él se busca conocer \"las técnicas con las que se trabajó este material en la época prehispánica\", reconstruyendo piezas antiguas con conchas modernas. Eso es rescatar la manufactura precolombina: recuperar cómo se fabricaban aquellos objetos.\n\nNo es \"continuar la tradición\" ni \"perfeccionarla\": el taller no produce joyas para seguir el oficio, sino que experimenta para **entender** cómo se hacían."
+ },
+ {
+  "id": 73,
+  "explanation": "Es un artículo periodístico (de *El Universal*) que comunica al público general los hallazgos de una investigación arqueológica: qué se ha encontrado, qué significaba la concha para las culturas prehispánicas y qué ha descubierto el taller de arqueología experimental. Eso es **divulgar** avances arqueológicos.\n\nLa opción B confunde al autor del texto con el arqueólogo: quien creó el taller fue Velázquez, no quien escribe el artículo. Y la D promete demasiado: el texto no \"revela el misterio\", de hecho cuenta que aún no se ha hallado el taller prehispánico."
+ },
+ {
+  "id": 74,
+  "explanation": "La oración principal es la que puede sostenerse por sí sola y de la que cuelgan las subordinadas. Aquí el núcleo es el sujeto con su verbo principal: \"el emperador soñó\", acompañado de su complemento circunstancial de tiempo (\"en la hora de la rata\"). Todo lo que sigue —\"que había salido de su palacio...\"— es una oración subordinada: depende del verbo \"soñó\" y no forma parte de la principal.\n\nLa opción D se antoja, pero incluye \"que había salido de su palacio\", que es justamente la subordinada; la principal debe quedarse sin ella."
+ },
+ {
+  "id": 75,
+  "explanation": "Los complementos circunstanciales indican las circunstancias de la acción: cuándo, dónde, cómo. En la oración, **anoche** dice *cuándo* brillaba (circunstancial de tiempo) y **esplendorosamente** dice *cómo* brillaba (circunstancial de modo).\n\nEn cambio, \"llena\" no es circunstancial: es un adjetivo que modifica a \"luna\" y forma parte del sujeto (\"la luna llena\"). Ese es el gancho de las opciones A y C."
+ },
+ {
+  "id": 76,
+  "explanation": "Dos detalles deciden la respuesta. Primero, la ortografía actual: \"solo\" (en el sentido de 'sin compañía' o incluso como adverbio) se escribe **sin tilde**, así que A y D quedan fuera por escribir \"sólo\". Segundo, la construcción: \"no dejan que haga solo sus actividades\" es la forma completa y correcta, con la subordinada \"que haga\" bien introducida. La opción B está incompleta: \"no dejan hacer solo sus actividades\" pierde al sujeto que realiza la acción (¿quién hace las actividades?). La C es la única gramaticalmente redonda."
+ },
+ {
+  "id": 77,
+  "explanation": "La opción A es la única con la puntuación limpia: dos oraciones bien separadas por punto y seguido, sin signos de más. Las otras acumulan errores: en B y C sobra el uso de dos puntos después de \"son\" (los dos puntos no deben separar al verbo de su complemento), y en C y D aparece \"cómo\" con tilde, que es incorrecto porque no es interrogativo ni exclamativo, sino el relativo \"como se denomina al amante\". La C además mezcla rayas, punto y coma y dos puntos en una maraña innecesaria."
+ },
+ {
+  "id": 78,
+  "explanation": "El sustantivo \"afición\" rige la preposición **por** cuando expresa gusto o inclinación: \"tiene afición por las ciencias\", igual que \"siente pasión por la música\". Es el régimen preposicional que pide la norma culta.\n\n\"Para\" indicaría destino o finalidad y \"sobre\" indicaría tema (como en \"un libro sobre las ciencias\"); ninguna expresa la inclinación personal que significa \"afición\"."
+ },
+ {
+  "id": 79,
+  "explanation": "**Vociferar** es dar grandes voces, gritar con fuerza. Su antónimo debe expresar lo contrario: hacer callar o guardar silencio, es decir, **silenciar**.\n\n\"Gruñir\" y \"roncar\" no son opuestos, son otras formas de emitir sonido. Y \"omitir\" significa dejar de decir o de hacer algo, que no es lo contrario de gritar: puedes omitir información en voz baja o a gritos."
+ },
+ {
+  "id": 80,
+  "explanation": "Los **homófonos** son palabras que suenan igual pero se escriben distinto y significan cosas diferentes. \"Sebo\" (grasa animal) y \"cebo\" (carnada) se pronuncian exactamente igual en el español de México: esa es la pareja.\n\nLas demás no suenan igual: \"copiar/copear\", \"arriar/arrear\" y \"trivial/tribal\" cambian una vocal o consonante que sí se pronuncia distinto; son parecidas (parónimos), pero no homófonas."
+ }
+]

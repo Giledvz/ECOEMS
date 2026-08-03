@@ -32,7 +32,8 @@
               "C": "$5.3 \\times 10^{11} \\frac{\\mathrm{km}}{\\mathrm{h}}$",
               "D": "$5.3 \\times 10^{13} \\frac{\\mathrm{km}}{\\mathrm{min}}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La rapidez promedio es distancia entre tiempo, pero primero pon el tiempo en las unidades de la respuesta. Tres días son $3 \\times 24 = 72$ horas, así que:\n\n$$v = \\frac{3.8 \\times 10^{15}\\ \\mathrm{km}}{72\\ \\mathrm{h}} \\approx 5.3 \\times 10^{13}\\ \\tfrac{\\mathrm{km}}{\\mathrm{h}}$$\n\nLa clave del reactivo está en las unidades: solo la opción B combina el número correcto con la unidad correcta. Las opciones C y D traen el mismo $5.3$ pero con potencia o unidad equivocada: si no convertiste los días a horas, cualquiera de ellas se antoja."
           },
           {
             "id": 2,
@@ -45,7 +46,8 @@
               "C": "$6\\ \\frac{\\mathrm{m}}{\\mathrm{s}^2}$",
               "D": "$2\\ \\frac{\\mathrm{m}}{\\mathrm{s}^2}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La aceleración media es el cambio total de velocidad entre el tiempo total. El velocista pasa de $0$ a $4.8\\ \\tfrac{\\mathrm{m}}{\\mathrm{s}}$ en tres zancadas de $0.8$ s cada una, o sea $2.4$ s en total:\n\n$$a = \\frac{4.8 - 0}{2.4} = 2\\ \\tfrac{\\mathrm{m}}{\\mathrm{s}^2}$$\n\nFíjate que en cada zancada gana $1.6\\ \\tfrac{\\mathrm{m}}{\\mathrm{s}}$ en $0.8$ s, que también da $2$: la aceleración es constante. Si te dio $6$ (opción C), dividiste $4.8$ entre $0.8$, usando el tiempo de una sola zancada en vez de las tres."
           },
           {
             "id": 3,
@@ -58,7 +60,8 @@
               "C": "$0.3 \\frac{\\mathrm{m}}{\\mathrm{s}^2}$",
               "D": "$0.5 \\frac{\\mathrm{m}}{\\mathrm{s}^2}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Como las fuerzas tienen la misma dirección pero sentidos contrarios, se restan: la fuerza neta es $30 - 20 = 10$ N. Con la segunda ley de Newton:\n\n$$a = \\frac{F}{m} = \\frac{10\\ \\mathrm{N}}{100\\ \\mathrm{kg}} = 0.1\\ \\tfrac{\\mathrm{m}}{\\mathrm{s}^2}$$\n\nSi te dio $0.5$ (opción D), sumaste las fuerzas como si empujaran hacia el mismo lado: $50 \\div 100$. El sentido contrario obliga a restar."
           },
           {
             "id": 4,
@@ -71,7 +74,8 @@
               "C": "5 N",
               "D": "0 N"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Cuando el elevador cae libremente, la caja y el piso caen juntos con la misma aceleración $g$: es la famosa **ingravidez aparente**. El piso no necesita empujar a la caja para sostenerla, porque nada la está frenando; la fuerza normal entre ambos es cero.\n\nSi contestaste 5,000 N (opción A), calculaste el peso $mg = 50 \\times 100$... que ni siquiera es eso, sería $500$ N; el punto es que durante la caída libre el piso no ejerce fuerza alguna sobre la caja."
           },
           {
             "id": 5,
@@ -84,7 +88,8 @@
               "C": "2.5 kg",
               "D": "0.8 kg"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Es conservación de la cantidad de movimiento. Antes del salto todo está en reposo, así que el momento total es cero y después debe seguir siéndolo: lo que el niño se lleva hacia adelante, el carrito lo compensa hacia atrás.\n\n$$m_{\\text{niño}} \\, v_{\\text{niño}} = m_{\\text{carrito}} \\, v_{\\text{carrito}}$$\n\n$$30 \\times 2 = m \\times 12 \\quad \\Rightarrow \\quad m = \\frac{60}{12} = 5\\ \\mathrm{kg}$$\n\nTiene sentido: el carrito es 6 veces más ligero, por eso sale 6 veces más rápido."
           },
           {
             "id": 6,
@@ -97,7 +102,8 @@
               "C": "$\\mathrm{T_K} = \\mathrm{T_C} - 273$",
               "D": "$\\mathrm{T_K} = 1.8(\\mathrm{T_C} + 273)$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La escala Kelvin usa grados del mismo tamaño que los Celsius, solo que empieza en el cero absoluto, que está en $-273\\ ^\\circ\\mathrm{C}$. Por eso convertir es nada más recorrer el punto de partida: $\\mathrm{T_K} = \\mathrm{T_C} + 273$. Comprueba: el agua congela a $0\\ ^\\circ\\mathrm{C} = 273$ K. La opción A con el $32$ y el $1.8$ es la fórmula de Fahrenheit, que aquí no pinta nada; y la C te daría temperaturas Kelvin negativas, que no existen."
           },
           {
             "id": 7,
@@ -110,7 +116,8 @@
               "C": "calor latente de vaporización.",
               "D": "capacidad térmica específica."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La definición trae las tres pistas: **un gramo** de sustancia, **elevar la temperatura** y **un grado Celsius**. Eso es el calor específico, que en esta guía aparece como *capacidad térmica específica*: la energía por unidad de masa y por grado, propia de cada sustancia.\n\nNo es la capacidad térmica a secas (opción A), porque esa se refiere al objeto completo, sin dividir entre la masa. Y los calores latentes (B y C) son energía para cambiar de estado *sin* cambiar la temperatura, justo lo contrario de lo que pide el enunciado."
           },
           {
             "id": 8,
@@ -123,7 +130,8 @@
               "C": "que ambas ondas sean longitudinales.",
               "D": "que ambas ondas sean transversales."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La interferencia se explica con el **principio de superposición**: cuando dos ondas coinciden en un punto, sus perturbaciones se suman. Si llegan en fase, se refuerzan (interferencia constructiva); si llegan desfasadas, se cancelan (destructiva). La amplitud (opción A) influye en *cuánto* se refuerzan o cancelan, pero el fenómeno en sí nace de la superposición; y no importa si las ondas son longitudinales o transversales: ambas interfieren igual."
           },
           {
             "id": 9,
@@ -136,7 +144,8 @@
               "C": "$\\frac{\\mathrm{N}}{\\mathrm{s}}$",
               "D": "$\\frac{\\mathrm{J}}{\\mathrm{s}}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El campo eléctrico se define como la fuerza que se ejerce por unidad de carga: $E = \\frac{F}{q}$. Como la fuerza va en newtons y la carga en coulombs, sus unidades son $\\frac{\\mathrm{N}}{\\mathrm{C}}$.\n\nLa opción A, $\\frac{\\mathrm{N}}{\\mathrm{kg}}$, es la unidad del campo *gravitacional* (fuerza por unidad de masa): la analogía es bonita, pero aquí la carga de prueba es eléctrica, no una masa."
           },
           {
             "id": 10,
@@ -149,7 +158,8 @@
               "C": "la fuerza de empuje que hacia arriba recibe todo objeto que es sumergido total o parcialmente en un fluido.",
               "D": "la fuerza que es aplicada en un punto de un fluido y se distribuye uniformemente en todas direcciones."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Arquímedes dice que todo cuerpo sumergido total o parcialmente en un fluido recibe un empuje hacia arriba igual al peso del fluido que desaloja: por eso flotan los barcos y por eso te sientes más ligero en la alberca. Eso es exactamente la opción C.\n\nLas otras describen principios distintos: la A es el principio de Pascal aplicado a la prensa hidráulica, la B es el efecto Venturi (ecuación de Bernoulli) y la D es el enunciado general de Pascal."
           }
         ]
       },
@@ -168,7 +178,8 @@
               "C": "Entrada o lead.",
               "D": "Balazo o bajada."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "En una nota periodística, el enunciado que va justo debajo del encabezado y amplía o complementa lo que este anuncia se llama **balazo o bajada**. Aquí el titular es \"ESTE MIÉRCOLES SE ESPERAN VARIAS MARCHAS EN LA CDMX\" y el subrayado —\"Las autoridades recomiendan a la población evitar las zonas afectadas\"— agrega un dato secundario para enganchar al lector: esa es la bajada.\n\nNo es la entrada o *lead* (opción C), porque esa es el primer párrafo del cuerpo de la noticia, el que empieza con \"Ciudad de México, México...\"."
           },
           {
             "id": 12,
@@ -181,7 +192,8 @@
               "C": "actos y necesitar un narrador.",
               "D": "vestuario y personajes."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El texto dramático está hecho para representarse en escena, así que la historia avanza solo con lo que los personajes dicen: **no hay narrador**. Y las instrucciones sobre movimientos, gestos, escenografía o tono van en las **acotaciones**, esas indicaciones entre paréntesis o en cursivas que no se pronuncian en escena. Por eso la respuesta es la A.\n\nEl vestuario y la escenografía (opciones B y D) pertenecen al montaje, a la puesta en escena, no al texto dramático como forma literaria."
           },
           {
             "id": 13,
@@ -194,7 +206,8 @@
               "C": "relata hechos en forma objetiva y con un mensaje sensible.",
               "D": "persuade al lector de tomar una actitud positiva."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Lo propio del texto poético es la función expresiva: el poeta plasma sentimientos, emociones o pensamientos, y lo hace a través de **figuras retóricas** (metáfora, hipérbole, comparación...) que le dan al lenguaje un valor más allá del literal. Eso es la opción B.\n\nRelatar hechos con objetividad (opción C) es lo contrario de la poesía: eso corresponde a los textos informativos, y persuadir (opción D) a los argumentativos o publicitarios."
           },
           {
             "id": 14,
@@ -207,7 +220,8 @@
               "C": "Decasílabo.",
               "D": "Heptasílabo."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Cuenta las sílabas del verso: *Yo-sé-los-nom-bres-ex-tra-ños* son 8. Como la última palabra, *extraños*, es grave (llana), no se suma ni se resta nada: el verso queda de **8 sílabas, octosílabo**. Es el metro clásico de la poesía popular en español —romances, corridos— y el de los *Versos sencillos* de Martí.\n\nRecuerda los ajustes por si acaso: palabra final aguda suma una sílaba, esdrújula resta una; aquí no aplica ninguno."
           },
           {
             "id": 15,
@@ -220,7 +234,8 @@
               "C": "Dramático.",
               "D": "Narrativo."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El género **épico** canta hazañas heroicas: sus protagonistas —Aquiles, el Cid, Roldán— parten de figuras históricas o legendarias y encarnan los valores de todo un pueblo (el honor, la lealtad, el valor). Esas tres señas del enunciado (asuntos heroicos, base histórica, valores colectivos) son su definición de libro.\n\nNo confundas con el narrativo (opción D): la épica es narrativa, sí, pero el género narrativo en general no exige héroes ni valores colectivos; el enunciado describe específicamente a la épica."
           },
           {
             "id": 16,
@@ -233,7 +248,8 @@
               "C": "Juan Valera.",
               "D": "Antonio Machado."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El Realismo español es el movimiento de la segunda mitad del siglo XIX que retrata la sociedad con fidelidad y detalle, y **Juan Valera** —autor de *Pepita Jiménez*— es uno de sus representantes, junto a Galdós y Clarín.\n\nLos otros tres son de épocas distintas: Unamuno y Machado pertenecen a la Generación del 98, y Camilo José Cela a la narrativa de posguerra del siglo XX."
           },
           {
             "id": 17,
@@ -246,7 +262,8 @@
               "C": "Jorge Ibargüengoitia y José Saramago.",
               "D": "Gustave Flaubert y Oscar Wilde."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La literatura contemporánea abarca a los autores del siglo XX en adelante, y ahí caben **Jorge Ibargüengoitia** (narrador mexicano, *Los relámpagos de agosto*) y **José Saramago** (portugués, Nobel 1998, *Ensayo sobre la ceguera*).\n\nLas demás parejas mezclan siglos anteriores: Calderón es del Barroco, Sor Juana del Barroco novohispano, Mary Shelley y Dostoyevski del XIX, igual que Flaubert (Realismo) y Wilde. Ninguna de esas duplas es contemporánea."
           },
           {
             "id": 18,
@@ -259,7 +276,8 @@
               "C": "Ensayo.",
               "D": "Cuento."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El **cuento** es la narración breve por excelencia: pocos personajes, una sola línea de acción y libertad total para lo imaginario y lo fantástico, desde los cuentos de hadas hasta Borges o Cortázar. \"Narración breve que da forma a las fantasías\" es su definición.\n\nLa crónica (opción A) también es narración, pero relata hechos reales en orden temporal; no está hecha para la fantasía."
           },
           {
             "id": 19,
@@ -272,7 +290,8 @@
               "C": "dramático — verso — escueta",
               "D": "lírico — prosa — simple"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La novela es la forma mayor del género **narrativo**: un narrador cuenta una historia con personajes, tiempo y espacio. Está escrita en **prosa**, no en verso, y como maneja varios personajes, tramas paralelas y saltos de tiempo, su estructura suele ser **compleja**. Esa tercia es la opción A.\n\nLa B se antoja por lo de \"épico\" (la novela desciende de la épica), pero la épica clásica se escribía en verso, y la novela moderna, no."
           },
           {
             "id": 20,
@@ -285,7 +304,8 @@
               "C": "Lengua Española. Español IV. (2009). DOSAL, M. R. et al. pp. 410. México: Publicaciones cultural.",
               "D": "M. R., Dosal Gómez, et al. *Publicaciones cultural, Lengua Española. Español IV*. pp. 410. México, 2009."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El formato APA ordena así: Apellido, Nombre. (Año entre paréntesis). Título de la obra. Editorial y demás datos. La opción B es la única que lo respeta: *Dosal Gómez, Ma. Rosario. et al. (2009). Lengua Española. Español IV...* — autor primero y año inmediatamente después, entre paréntesis.\n\nLa opción A es el formato bibliográfico tradicional (apellido en mayúsculas, año hasta el final), no APA; la C empieza por el título y la D revuelve editorial con título."
           }
         ]
       },
@@ -304,7 +324,8 @@
               "C": "compuesto.",
               "D": "elemento."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El bronce es una **aleación** de cobre y estaño: los metales están fundidos y mezclados de manera uniforme, de modo que cualquier pedacito de la medalla tiene la misma composición y no distingues fases a simple vista. Eso es una **mezcla homogénea**.\n\nNo es compuesto (opción C) porque los metales no están unidos químicamente en proporciones fijas: la proporción de cobre y estaño puede variar de una aleación a otra, que es la firma de una mezcla."
           },
           {
             "id": 22,
@@ -317,7 +338,8 @@
               "C": "Número atómico.",
               "D": "Punto de fusión."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Mendeleev (1869) ordenó los elementos por su **masa atómica** creciente y notó que las propiedades se repetían periódicamente; con eso hasta predijo elementos que faltaban.\n\nEl distractor fuerte es el número atómico (opción C), pero ese criterio llegó después, con Moseley en 1913, y es el que usa la tabla periódica *actual*. La pregunta dice \"en su tiempo\": en 1869 ni siquiera se conocía el protón."
           },
           {
             "id": 23,
@@ -330,7 +352,8 @@
               "C": "Puente de hidrógeno.",
               "D": "Covalente no polar."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Si los dos átomos tienen la misma electronegatividad, ninguno jala los electrones con más fuerza que el otro: los comparten por igual y el enlace queda sin polos. Eso es el enlace **covalente no polar**, el de moléculas como $H_2$, $O_2$ o $Cl_2$, donde los dos átomos son idénticos.\n\nEl iónico (opción A) es justo el caso opuesto: requiere una diferencia *grande* de electronegatividad para que un átomo le arrebate electrones al otro."
           },
           {
             "id": 24,
@@ -343,7 +366,8 @@
               "C": "$FeO$",
               "D": "$CO_2$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La regla es: óxido de **no metal** + agua → ácido (por eso se les llama anhídridos u óxidos ácidos), mientras que óxido de **metal** + agua → hidróxido (base). De la lista, el único óxido de no metal es el $CO_2$:\n\n$$CO_2 + H_2O \\rightarrow H_2CO_3 \\text{ (ácido carbónico)}$$\n\nEs la misma reacción que acidifica la lluvia y el agua mineral. $Na_2O$, $MgO$ y $FeO$ son óxidos metálicos: con agua forman hidróxidos, o sea bases."
           },
           {
             "id": 25,
@@ -356,7 +380,8 @@
               "C": "75",
               "D": "0.075"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Primero calcula la masa molar del KCl con las masas atómicas: $K \\approx 39$ y $Cl \\approx 35.5$, así que un mol de KCl pesa unos $74.5 \\approx 75$ g. Entonces:\n\n$$0.1\\ \\mathrm{mol} \\times 75\\ \\tfrac{\\mathrm{g}}{\\mathrm{mol}} = 7.5\\ \\mathrm{g}$$\n\nFíjate que las cuatro opciones traen las mismas cifras y solo cambia el punto decimal: el reactivo está cazando errores al mover el decimal. $0.1$ mol es la décima parte de un mol, o sea la décima parte de $75$."
           },
           {
             "id": 26,
@@ -369,7 +394,8 @@
               "C": "puentes de hidrógeno y su polaridad.",
               "D": "electrones compartidos y distancia entre sus enlaces."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El agua disuelve tantas cosas por dos razones que trabajan juntas: su **polaridad** (la molécula tiene un lado positivo y uno negativo, y con esos polos rodea y separa a los iones y a otras moléculas polares) y sus **puentes de hidrógeno**, que le permiten interactuar y asociarse con muchísimas sustancias. Esa dupla es la opción C.\n\nLos \"electrones compartidos\" de las otras opciones describen el enlace covalente interno del agua, que existe, sí, pero no es lo que explica su poder disolvente."
           },
           {
             "id": 27,
@@ -382,7 +408,8 @@
               "C": "8",
               "D": "13"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La escala de pH es un balance: a menor concentración de iones $H^+$, mayor concentración de iones $OH^-$. Por debajo de 7 la disolución es ácida (ganan los $H^+$) y por arriba de 7 es básica (ganan los $OH^-$). Entre más alto el pH, más $OH^-$ hay, así que el máximo de la lista, **13**, es el de mayor concentración de $OH^-$.\n\nSi elegiste 2 (opción A), leíste la escala al revés: ese es el de mayor concentración de $H^+$."
           },
           {
             "id": 28,
@@ -395,7 +422,8 @@
               "C": "C y N.",
               "D": "N y Pb."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Los contaminantes **primarios** son los que se emiten directamente a la atmósfera desde la fuente, y los clásicos son los óxidos de carbono ($CO$, $CO_2$) y de nitrógeno ($NO$, $NO_2$), que salen de los escapes de los vehículos y de las chimeneas al quemar combustibles. Por eso la respuesta es C y N.\n\nEl plomo y el mercurio de las otras opciones son contaminantes, sí, pero como metales pesados, no como los óxidos típicos de la combustión."
           },
           {
             "id": 29,
@@ -408,7 +436,8 @@
               "C": "−COOH",
               "D": "−CHO"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Cada aminoácido tiene dos grupos funcionales: el amino ($-NH_2$) y el carboxilo ($-COOH$). El enlace peptídico se forma cuando el grupo amino de un aminoácido reacciona con el grupo **carboxilo** ($-COOH$) del otro, liberando una molécula de agua; encadenando estos enlaces se construyen las proteínas.\n\nEl $-OH$ (opción A) es el grupo de los alcoholes y el $-CHO$ (opción D) el de los aldehídos: ninguno participa en el enlace peptídico."
           },
           {
             "id": 30,
@@ -421,7 +450,8 @@
               "C": "$\\Delta H^\\circ = +52.5 \\frac{kJ}{mol}$",
               "D": "$\\Delta H^\\circ = -395.7 \\frac{kJ}{mol}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El signo de la entalpía te dice hacia dónde va la energía: $\\Delta H$ **negativo** significa que la reacción libera calor (exotérmica) y positivo que lo absorbe (endotérmica). El mayor desprendimiento es entonces el valor negativo más grande en magnitud:\n\n$$\\Delta H^\\circ = -395.7\\ \\tfrac{\\mathrm{kJ}}{\\mathrm{mol}}$$\n\nLas opciones B y C ni siquiera compiten: con signo positivo, absorben energía en vez de soltarla. Y la A también desprende, pero solo $110.5$ kJ/mol contra los $395.7$ de la D."
           }
         ]
       },
@@ -440,7 +470,8 @@
               "C": "explicar la relación entre los elementos naturales y sociales del medio geográfico.",
               "D": "localizar los elementos naturales y sociales sobre la superficie terrestre."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La Geografía moderna no se queda en localizar ni en describir: su finalidad es **explicar cómo se relacionan** los elementos naturales (relieve, clima, agua) con los sociales (población, economía, cultura) en el espacio geográfico. Esa visión integradora es la opción C.\n\nLa opción D, localizar elementos sobre la superficie, se antoja porque es lo primero que uno asocia con los mapas, pero la localización es apenas una herramienta: la finalidad actual va más allá, a la relación naturaleza-sociedad."
           },
           {
             "id": 32,
@@ -453,7 +484,8 @@
               "C": "Cónica.",
               "D": "Azimutal."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Cada proyección deforma menos cierta franja del planeta: la cilíndrica es fiel cerca del ecuador, la polar o azimutal cerca de los polos, y la **cónica** en las latitudes medias, porque el cono imaginario toca al globo justo en esas latitudes. México está entre los paralelos 14° y 33° norte —latitudes medias—, así que la proyección cónica es la que lo representa con menor distorsión."
           },
           {
             "id": 33,
@@ -466,7 +498,8 @@
               "C": "Tlaxcala y Oaxaca.",
               "D": "Oaxaca y Guerrero."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La Sierra Madre del Sur corre paralela a la costa del Pacífico, desde Jalisco hasta el Istmo de Tehuantepec, y las entidades que atraviesa de lleno son **Guerrero y Oaxaca**.\n\nSi dudaste con Chiapas o Veracruz, recuerda: en Chiapas la cadena costera es la Sierra Madre *de Chiapas*, otro sistema, y Veracruz está del lado del Golfo, donde la Sierra Madre del Sur no llega."
           },
           {
             "id": 34,
@@ -479,7 +512,8 @@
               "C": "cobre.",
               "D": "plata."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Sonora es el primer productor nacional de **cobre**: ahí está Cananea, una de las minas de cobre más grandes del mundo, junto con Nacozari. La minería del cobre es la seña histórica del estado.\n\nSi elegiste plata (opción D), recuerda que el primer lugar en plata lo pelea Zacatecas (con Chihuahua y Durango en la lista), no Sonora; y el hierro se asocia más con Michoacán y Coahuila."
           },
           {
             "id": 35,
@@ -492,7 +526,8 @@
               "C": "norte de África y norte de Asia.",
               "D": "sur de América y norte de Oceanía."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La taiga o bosque boreal es la franja de coníferas (pinos, abetos, alerces) que crece en climas fríos justo al sur de la tundra. Por eso solo existe en el hemisferio norte, en altas latitudes: **norte de Europa y norte de Asia** (Escandinavia y Siberia), además de Canadá y Alaska.\n\nEn el hemisferio sur no hay taiga: a esas latitudes casi no hay continente, así que cualquier opción con \"sur\" queda descartada de entrada."
           },
           {
             "id": 36,
@@ -505,7 +540,8 @@
               "C": "Morelos y Baja California Sur.",
               "D": "Baja California Sur y Quintana Roo."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La densidad es población entre superficie. **Baja California Sur** y **Quintana Roo** han sido tradicionalmente los estados menos densamente poblados: territorios extensos (desierto en uno, selva en el otro) con relativamente pocos habitantes.\n\nOaxaca y Veracruz engañan porque tienen mucha población rural dispersa, pero su población total es grande y su densidad resulta media; y Morelos es de los estados *más* densos por lo pequeño de su territorio."
           },
           {
             "id": 37,
@@ -518,7 +554,8 @@
               "C": "natalidad, alfabetización y acceso a internet.",
               "D": "mortalidad, nivel de inflación y servicios médicos."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El Índice de Desarrollo Humano de la ONU combina tres dimensiones: **ingreso** (ingreso per cápita), **educación** (alfabetismo y escolaridad) y **salud** (esperanza de vida al nacer). La opción A trae exactamente un indicador de cada dimensión.\n\nLas demás mezclan variables puramente económicas o sueltas (deuda externa, inflación, acceso a internet) que no forman parte del cálculo del IDH."
           },
           {
             "id": 38,
@@ -531,7 +568,8 @@
               "C": "emplea mayor número de personas.",
               "D": "está regulada por el gobierno."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El sector terciario —comercio, transporte, turismo, servicios financieros, educación, gobierno— es el más importante de la economía mexicana porque **emplea a la mayor cantidad de personas**: alrededor de dos de cada tres trabajadores del país están en los servicios, y es también el que más aporta al PIB.\n\nLa opción A invierte el argumento: el terciario apoya a la industria, sí, pero su peso no viene de ahí, sino de cuánta gente ocupa."
           },
           {
             "id": 39,
@@ -544,7 +582,8 @@
               "C": "Noroeste — cereales",
               "D": "Balsas — pastos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La crianza de cerdos requiere granos para alimentarlos, así que se concentra donde estos abundan: el **Bajío** (Guanajuato, Jalisco, Michoacán, Querétaro) es la gran zona productora de **cereales** del país —maíz y sorgo sobre todo—, y por eso ahí prospera la porcicultura; Jalisco y Guanajuato están entre los primeros productores de carne de cerdo.\n\nLa lógica del reactivo es esa cadena: zona cerealera → alimento barato → ganado porcino."
           },
           {
             "id": 40,
@@ -557,7 +596,8 @@
               "C": "Sonda de Tuxpan.",
               "D": "Sonda de Campeche."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La **Sonda de Campeche**, en el Golfo de México frente a las costas de Campeche y Tabasco, es la gran zona marítima petrolera del país: ahí está Cantarell, el yacimiento que llegó a ser de los más productivos del mundo, y de ahí sale la mayor parte del petróleo y gas costa afuera de México.\n\nPoza Rica y Ciudad Madero (opciones A y B) son zonas petroleras, pero *terrestres*: el enunciado pide una zona marítima."
           }
         ]
       },
@@ -576,7 +616,8 @@
               "C": "8.4",
               "D": "8.9"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Para promediar 8 en cuatro parciales, la suma de las cuatro calificaciones debe ser al menos $8 \\times 4 = 32$. Suma lo que ya tiene: $7.2 + 8.5 + 7.9 = 23.6$. Lo que le falta es $32 - 23.6 = 8.4$.\n\nComprueba: $\\frac{23.6 + 8.4}{4} = \\frac{32}{4} = 8$. Justo el mínimo."
           },
           {
             "id": 42,
@@ -589,7 +630,8 @@
               "C": "$4$",
               "D": "$2\\sqrt{2}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Multiplicar una raíz por sí misma deshace la raíz: $\\sqrt{2} \\cdot \\sqrt{2} = \\sqrt{2 \\cdot 2} = \\sqrt{4} = 2$. Esa es precisamente la definición de raíz cuadrada: $\\sqrt{2}$ es el número que al elevarse al cuadrado da 2.\n\nSi elegiste 4, multiplicaste los radicandos pero olvidaste sacar la raíz al final."
           },
           {
             "id": 43,
@@ -602,7 +644,8 @@
               "C": "$x^2 - 2xy + y^2$",
               "D": "$x^2 + 2xy + y^2$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Un binomio al cuadrado no se distribuye término a término: hay que multiplicarlo por sí mismo.\n\n$$(x-y)^2 = (x-y)(x-y) = x^2 - xy - yx + y^2 = x^2 - 2xy + y^2$$\n\nLa regla memorizable: \"cuadrado del primero, menos el doble producto, más el cuadrado del segundo\". Si pusiste $x^2 - y^2$, caíste en el error clásico de \"repartir\" el exponente; eso es en realidad el producto $(x-y)(x+y)$."
           },
           {
             "id": 44,
@@ -615,7 +658,8 @@
               "C": "$\\frac{x-2}{2a}$",
               "D": "$\\frac{(x-2)(x+3)}{2a}$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Factoriza arriba y abajo antes de simplificar. El numerador es un trinomio: buscas dos números que multiplicados den $6$ y sumados $-5$, que son $-2$ y $-3$:\n\n$$x^2 - 5x + 6 = (x-2)(x-3)$$\n\nEn el denominador saca el factor común $2a$: $2ax - 6a = 2a(x-3)$. Al dividir se cancela el factor $(x-3)$:\n\n$$\\frac{(x-2)(x-3)}{2a(x-3)} = \\frac{x-2}{2a}$$\n\nLa opción A es solo el numerador factorizado sin cancelar nada; falta el paso final."
           },
           {
             "id": 45,
@@ -628,7 +672,8 @@
               "C": "$x = 2$",
               "D": "$x = 4$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Junta las $x$ de un lado y los números del otro. Resta $\\frac{x}{2}$ en ambos lados:\n\n$$5 = \\frac{x}{2} + 3$$\n\nAhora resta 3: $2 = \\frac{x}{2}$, y multiplica por 2: $x = 4$.\n\nComprueba en la original: $\\frac{4}{2} + 5 = 7$ y $4 + 3 = 7$. Cierra perfecto."
           },
           {
             "id": 46,
@@ -641,7 +686,8 @@
               "C": "$(-\\infty, -5]$",
               "D": "$(-5, \\infty)$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Para despejar $x$ en $-x \\geq 5$ multiplicas ambos lados por $-1$, y ahí está el detalle clave: al multiplicar o dividir una desigualdad por un negativo, el signo se invierte:\n\n$$x \\leq -5$$\n\nSon todos los números menores o iguales que $-5$, o sea $(-\\infty, -5]$. El corchete en $-5$ es porque la desigualdad incluye el igual ($\\geq$). La opción B tiene paréntesis en $-5$: excluiría al propio $-5$, que sí es solución."
           },
           {
             "id": 47,
@@ -654,7 +700,8 @@
               "C": "\\$13",
               "D": "\\$12"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Plantea el sistema con $c$ = cuaderno y $l$ = lapicero:\n\n$$5c + 8l = 115 \\qquad 3c + 5l = 70$$\n\nPara eliminar $l$, multiplica la primera por 5 y la segunda por 8:\n\n$$25c + 40l = 575 \\qquad 24c + 40l = 560$$\n\nRéstalas: $c = 15$. Cada cuaderno cuesta \\$15 (y cada lapicero \\$5, por si quieres comprobar: $5(15) + 8(5) = 115$)."
           },
           {
             "id": 48,
@@ -667,7 +714,8 @@
               "C": "$(-\\infty, \\infty)$",
               "D": "$(-1, \\infty)$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El dominio son los valores de $x$ que puedes meter a la función. Un polinomio solo usa sumas, restas y potencias: no hay divisiones que se anulen ni raíces que se vuelvan negativas, así que acepta cualquier número real. El dominio es $(-\\infty, \\infty)$.\n\nLa opción A parece decir lo mismo, pero está mal escrita: el infinito nunca se encierra con corchete, porque no es un número que se alcance."
           },
           {
             "id": 49,
@@ -680,7 +728,8 @@
               "C": "parábola.",
               "D": "hipérbola."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Acomódala como $y = x^2 - 1$: es una función cuadrática ($x$ elevada al cuadrado, $y$ a la primera potencia), y toda cuadrática grafica una parábola; esta abre hacia arriba con vértice en $(0, -1)$.\n\nPara que fuera elipse o hipérbola necesitarías $x^2$ y también $y^2$ en la ecuación; para recta, ambas variables a la primera potencia."
           },
           {
             "id": 50,
@@ -693,7 +742,8 @@
               "C": "$\\frac{1}{x^2 + 5}$",
               "D": "$\\frac{1}{x^2 + 4x + 3}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La composición $(f \\circ g)(x)$ significa $f(g(x))$: metes $g$ adentro de $f$. Donde $f$ dice $x$, escribes $x+2$:\n\n$$f(x+2) = \\frac{1}{(x+2)^2 - 1}$$\n\nDesarrolla el binomio: $(x+2)^2 = x^2 + 4x + 4$, y resta el 1:\n\n$$\\frac{1}{x^2 + 4x + 4 - 1} = \\frac{1}{x^2 + 4x + 3}$$\n\nSi te dio la opción B, sumaste el 1 en lugar de restarlo."
           },
           {
             "id": 51,
@@ -707,7 +757,8 @@
               "C": "$\\frac{5}{3}$",
               "D": "$\\frac{5}{4}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En la figura, el ángulo recto está en $Q$: el cateto $QR$ mide 3, el cateto $QP$ mide 4 y la hipotenusa $RP$ mide 5. El seno de un ángulo es cateto **opuesto** entre hipotenusa. Visto desde $P$, el lado opuesto es $QR = 3$ (el que no toca a $P$), así que:\n\n$$\\mathrm{sen}\\,P = \\frac{3}{5}$$\n\nSi elegiste $\\frac{4}{5}$, tomaste el cateto adyacente a $P$: ese es el coseno."
           },
           {
             "id": 52,
@@ -720,7 +771,8 @@
               "C": "$32$",
               "D": "$544$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La diagonal del rectángulo es la hipotenusa del triángulo rectángulo que forman los dos lados. Aplica Pitágoras:\n\n$$d = \\sqrt{12^2 + 20^2} = \\sqrt{144 + 400} = \\sqrt{544}$$\n\nSi elegiste 32, sumaste los lados ($12+20$) en vez de sus cuadrados; y 544 sin la raíz es solo $d^2$, falta el último paso."
           },
           {
             "id": 53,
@@ -733,7 +785,8 @@
               "C": "$(-\\infty, 2)$",
               "D": "$(-\\infty, 2]$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El logaritmo solo existe para argumentos **estrictamente positivos**: necesitas $x - 2 > 0$, es decir $x > 2$. El dominio es $(2, \\infty)$.\n\nEl detalle que separa A de B es el paréntesis en el 2: en $x = 2$ tendrías $\\log(0)$, que no existe (la gráfica se pega a esa recta pero nunca la toca), así que el 2 queda fuera."
           },
           {
             "id": 54,
@@ -746,7 +799,8 @@
               "C": "$x = -3$",
               "D": "$y = 3$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Una función logarítmica tiene su asíntota vertical donde el argumento se hace cero, porque ahí $\\log$ se dispara a $-\\infty$. Igualas: $x - 3 = 0$, o sea $x = 3$. El 2 que multiplica afuera solo estira la gráfica verticalmente; no mueve la asíntota.\n\nOjo con el signo: el argumento es $x-3$, así que la gráfica está corrida a la **derecha**; $x = -3$ sería para $\\log(x+3)$. Y las opciones con $y=$ describen rectas horizontales, que no aplican aquí."
           },
           {
             "id": 55,
@@ -759,7 +813,8 @@
               "C": "$2$",
               "D": "$4$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Usa la fórmula de distancia entre dos puntos:\n\n$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} = \\sqrt{(-1-1)^2 + (-1-1)^2} = \\sqrt{4 + 4} = \\sqrt{8}$$\n\nY $\\sqrt{8} = \\sqrt{4 \\cdot 2} = 2\\sqrt{2}$.\n\nSi te dio 4, probablemente sumaste $2+2$ en vez de sacar la raíz de la suma de cuadrados."
           },
           {
             "id": 56,
@@ -772,7 +827,8 @@
               "C": "$\\frac{3}{2}$",
               "D": "$2$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Despeja $y$ para llevar la recta a la forma $y = mx + b$, donde $m$ es la pendiente:\n\n$$2y = 4x - 3 \\quad \\Rightarrow \\quad y = 2x - \\frac{3}{2}$$\n\nEl coeficiente de $x$ es la pendiente: $m = 2$.\n\nSi contestaste $-2$, seguramente leíste el $-4x$ tal cual estaba, sin pasarlo al otro lado con signo cambiado ni dividir entre 2."
           },
           {
             "id": 57,
@@ -785,7 +841,8 @@
               "C": "$x^2 + y^2 - 4 = 0$",
               "D": "$x^2 + y^2 + 4 = 0$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La circunferencia con centro en el origen y radio $r$ es $x^2 + y^2 = r^2$. Con $r = 4$:\n\n$$x^2 + y^2 = 16 \\quad \\Rightarrow \\quad x^2 + y^2 - 16 = 0$$\n\nEl error tentador es la opción C: usar el radio 4 directamente en lugar de elevarlo al cuadrado. Y las opciones con $+16$ o $+4$ no representan ninguna circunferencia real (suma de cuadrados igual a un negativo)."
           },
           {
             "id": 58,
@@ -798,7 +855,8 @@
               "C": "C (−3, 2); r = 6",
               "D": "C (−3, 2); r = 36"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Compara con la forma estándar $(x-h)^2 + (y-k)^2 = r^2$, donde el centro es $(h, k)$. Los signos van al revés de como se ven: $(x+3)^2$ es $(x-(-3))^2$, así que $h = -3$; y $(y-2)^2$ da $k = 2$. El centro es $C(-3, 2)$.\n\nPara el radio: $r^2 = 36$, entonces $r = \\sqrt{36} = 6$. El 36 sin raíz es el distractor de las opciones B y D; y el centro $(3,2)$ sale de copiar el signo del paréntesis sin invertirlo."
           },
           {
             "id": 59,
@@ -811,7 +869,8 @@
               "C": "V (4, 3); F (4, 6)",
               "D": "V (−3, −4); F (−6, −4)"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La forma estándar $(x-h)^2 = 4p(y-k)$ tiene vértice en $(h, k)$. Aquí $h = 4$ y $k = 3$ (recuerda: los signos se invierten respecto a lo que ves en los paréntesis), así que $V(4, 3)$.\n\nPara el foco: $4p = 12$, entonces $p = 3$. Como la parábola abre hacia arriba (el lado de $y$ es positivo), el foco está $p$ unidades arriba del vértice:\n\n$$F(4, 3+3) = F(4, 6)$$\n\nLa opción A sale de leer los signos de los paréntesis sin invertirlos."
           },
           {
             "id": 60,
@@ -824,7 +883,8 @@
               "C": "$F_1 = \\left(0, -\\sqrt{8}\\right); F_2 = \\left(0, \\sqrt{8}\\right)$",
               "D": "$F_1 = \\left(0, -\\sqrt{10}\\right); F_2 = \\left(0, \\sqrt{10}\\right)$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Primero lleva la elipse a su forma canónica dividiendo todo entre 9:\n\n$$\\frac{x^2}{1} + \\frac{y^2}{9} = 1$$\n\nEl denominador mayor está bajo $y^2$, así que el eje mayor es **vertical**: $a^2 = 9$ y $b^2 = 1$. La distancia del centro a cada foco es\n\n$$c = \\sqrt{a^2 - b^2} = \\sqrt{9 - 1} = \\sqrt{8}$$\n\nComo el eje mayor es vertical, los focos van sobre el eje $y$: $\\left(0, \\pm\\sqrt{8}\\right)$. La opción A tiene la $c$ correcta pero pone los focos en el eje $x$: es el error de no fijarse cuál denominador es el grande."
           },
           {
             "id": 61,
@@ -837,7 +897,8 @@
               "C": "suma de sus distancias a dos puntos fijos es un valor constante.",
               "D": "diferencia de sus distancias a dos puntos fijos es un valor variable."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Es la definición de libro: en la hipérbola, la **diferencia** de las distancias de cada punto a los dos focos es **constante**. Compárala con la elipse, donde lo constante es la **suma** de esas distancias (opción C, el distractor natural).\n\nUn truco para no confundirlas: la elipse es cerrada porque la suma acota al punto; la hipérbola se abre en dos ramas porque lo que se fija es la diferencia."
           },
           {
             "id": 62,
@@ -850,7 +911,8 @@
               "C": "$(x + 2)^2 + (y - 4)^2 = 36$",
               "D": "$(x - 2)^2 + (y + 4)^2 = 36$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La circunferencia original es $x^2 + y^2 = 36$: centro en el origen y radio 6. Trasladar solo mueve el centro; el radio no cambia. Con centro $(h, k) = (-2, 4)$, la forma estándar $(x-h)^2 + (y-k)^2 = r^2$ queda:\n\n$$(x-(-2))^2 + (y-4)^2 = 36 \\quad \\Rightarrow \\quad (x+2)^2 + (y-4)^2 = 36$$\n\nFíjate en la inversión de signos: centro con $-2$ produce $(x+2)$ en la ecuación. La opción D copia los signos del centro sin invertirlos."
           }
         ]
       },
@@ -869,7 +931,8 @@
               "C": "Hoy llueve mucho, y pareciera que están lavando el mundo.",
               "D": "Los maleantes fueron repelidos por otra lluvia de piedras."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La función referencial (o informativa) transmite datos objetivos sobre la realidad, sin opiniones ni emociones del hablante. \"Seguirán las lluvias en el noreste del país\" es puro dato verificable, como de pronóstico del tiempo.\n\nLa opción A expresa la emoción de quien habla (función emotiva), y la C adorna con una comparación poética. Que un enunciado hable de la lluvia no lo hace referencial: importa **cómo** lo dice, no de qué habla."
           },
           {
             "id": 64,
@@ -882,7 +945,8 @@
               "C": "Poética.",
               "D": "Fática."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El fragmento está en verso, con ritmo, rima y una metáfora central (los silencios del amor como \"pausas de música suave\"). Cuando el mensaje llama la atención sobre su propia forma —cómo está dicho importa tanto o más que lo que dice— estamos ante la función poética.\n\nEl distractor tentador es \"metalingüística\" porque el poema habla de \"la lengua del amor\"; pero esa función es cuando se usa la lengua para explicar la lengua misma (definir una palabra, una regla gramatical), no para hacer poesía."
           },
           {
             "id": 65,
@@ -895,7 +959,8 @@
               "C": "Explicativa.",
               "D": "Argumentativa."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El fragmento pinta un retrato: edad, complexión, porte, color del cabello y la barba, expresión del rostro. Enumerar rasgos y cualidades de una persona (o de un lugar u objeto) para que el lector se lo imagine es la forma **descriptiva** del discurso.\n\nNo es narrativa porque no pasa nada: no hay acciones que avancen en el tiempo, solo características. Y no argumenta ni expone un tema; retrata."
           },
           {
             "id": 66,
@@ -908,7 +973,8 @@
               "C": "Expositiva.",
               "D": "Argumentativa."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El fragmento relata una serie de **hechos encadenados en el tiempo**: Cortés ordenó traer frailes hacia 1529, estos llegaron, fundaron conventos, compartieron el trabajo de evangelizar. Hay acciones, actores y sucesión temporal: eso es narración.\n\nEs fácil irse por \"expositiva\" porque el tono es de libro de historia, pero fíjate en que el texto no explica un concepto: cuenta qué pasó y en qué orden. Los verbos de acción en pasado son la pista."
           },
           {
             "id": 67,
@@ -922,7 +988,8 @@
               "C": "introducción, planteamiento, desarrollo y opinión.",
               "D": "planteamiento, tesis, desarrollo y conclusión."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El texto es argumentativo y sigue la estructura clásica: una **introducción** que engancha con la novela de Sturgeon y los organismos colectivos, una **tesis** (la humanidad ya dio el paso para ser algo más que un conjunto de individuos, sin necesidad de telepatía), los **argumentos** que la sostienen (el lenguaje como \"telepatía\" rudimentaria, la escritura como memoria externa, las tecnologías como prótesis culturales) y una **conclusión**: la discusión en red como embrión de la verdadera telepatía humana.\n\nLas otras opciones mezclan piezas que no forman la secuencia de un texto argumentativo: \"opinión\" o \"planteamiento\" sueltos no sustituyen a la tesis y su cierre."
           },
           {
             "id": 68,
@@ -936,7 +1003,8 @@
               "C": "Muchos escritores de ciencia ficción han soñado que la humanidad podría conectarse por telepatía.",
               "D": "Las hormigas y abejas son \"organismos colectivos\"."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El segundo párrafo abre afirmando: \"En la naturaleza existen realmente estos 'organismos colectivos', como las colonias de hormigas o de abejas...\". Esa es la idea principal; lo demás del párrafo la desarrolla o deriva de ella.\n\nLas hormigas y abejas (opción D) son solo el **ejemplo** que ilustra la idea, no la idea misma. Y lo de los escritores de ciencia ficción es la consecuencia con que cierra el párrafo (\"Quizá inspirándose en ellas...\"), un puente hacia el siguiente tema, no el planteamiento central."
           },
           {
             "id": 69,
@@ -950,7 +1018,8 @@
               "C": "son una extensión del cerebro humano que pueden generar destrucción, lo que no sucede en otros organismos.",
               "D": "han sido creadas por el hombre, como una extensión de sus capacidades comunicativas, para vivir mejor."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Una prótesis es algo artificial que **extiende o suple** una capacidad del cuerpo. El autor llama así al alfabeto, los libros, la imprenta, las computadoras: inventos humanos que, \"al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia\". O sea: creaciones del hombre que extienden sus capacidades comunicativas y le permiten vivir mejor, justo la opción D.\n\nLa A falla en \"se replica en otros organismos\" (el texto dice lo contrario: nos distinguen de ellos), y la C reduce todo al poder de destrucción, que el texto menciona solo como advertencia final."
           },
           {
             "id": 70,
@@ -964,7 +1033,8 @@
               "C": "Organismos colectivos, democracia y literatura de ficción.",
               "D": "Organismos colectivos, computadoras y productos culturales."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Repasa el recorrido completo del texto: el papel del **lenguaje** como \"telepatía\" rudimentaria, los **productos culturales** (fuego, agricultura, escritura, gobierno, ciencia, arte...) y la **tecnología** que potencia la comunicación (imprenta, computadoras, internet, redes sociales). Los tres hilos atraviesan todo el texto.\n\nLas otras opciones incluyen elementos que solo aparecen de pasada: la literatura de ficción es apenas el gancho inicial con Sturgeon, y las computadoras o la democracia son ejemplos dentro de un tema, no temas en sí."
           },
           {
             "id": 71,
@@ -978,7 +1048,8 @@
               "C": "argumentar que el hombre piensa colectivamente.",
               "D": "describir aspectos del pensamiento colectivo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El autor no se limita a informar: **defiende una postura**. Sostiene que, aunque la telepatía sea fantasía, la humanidad ya piensa colectivamente gracias al lenguaje, la cultura y las redes, y va dando razones y ejemplos para convencerte de ello hasta rematar con su conclusión. Eso es argumentar.\n\n\"Informar\" (opción B) se queda corta: un texto informativo no toma partido, y aquí hay tesis, evidencias y hasta concesiones (\"desgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía\") típicas de quien construye un argumento."
           },
           {
             "id": 72,
@@ -991,7 +1062,8 @@
               "C": "Los restos.",
               "D": "El dinosaurio."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El sujeto es quien realiza la acción del verbo. Pregúntale a la oración: ¿quiénes hallaron? **Los científicos**. Todo lo demás —los huesos, el dinosaurio, los restos— es lo hallado, es decir, forma parte del objeto directo dentro del predicado.\n\nUn truco que no falla: cambia el número del candidato y ve si el verbo te obliga a cambiar. \"El científico halló...\" funciona; en cambio \"el hueso\" no arrastra al verbo, porque no es el sujeto."
           },
           {
             "id": 73,
@@ -1004,7 +1076,8 @@
               "C": "Hoy, mañana y siempre.",
               "D": "Las cuentas del gran capitán."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El objeto directo es aquello sobre lo que recae directamente la acción del verbo. En \"Compró la computadora\", ¿qué compró? **La computadora**: ahí está el objeto directo. Puedes comprobarlo sustituyendo por el pronombre \"la\": \"La compró\".\n\nLas otras opciones ni siquiera tienen verbo: son puras frases nominales o adverbiales (\"Las pirámides de Teotihuacán\", \"Hoy, mañana y siempre\"), y sin verbo no puede haber objeto directo."
           },
           {
             "id": 74,
@@ -1017,7 +1090,8 @@
               "C": "En la reunión se abordarán tres asuntos: diseñar un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; y buscar proveedores más cumplidos. También se harán propuestas para abrir nuevas sucursales.",
               "D": "En la reunión se abordarán tres asuntos: cómo diseñar un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; y la búsqueda de proveedores más cumplidos. Finalmente, se harán propuestas para abrir nuevas sucursales."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El párrafo anuncia **tres** asuntos, así que la enumeración debe traer exactamente tres elementos y con estructura paralela. La opción B lo cumple: \"el diseño..., el seguimiento..., y la búsqueda...\" —tres sustantivos, misma forma— y el cuarto tema (las nuevas sucursales) va aparte, en su propia oración, porque no es parte de los tres.\n\nLa A mete cuatro elementos en la lista de \"tres asuntos\", y la C y la D rompen el paralelismo mezclando infinitivos (\"diseñar\", \"buscar\", \"cómo diseñar\") con sustantivos (\"el seguimiento\")."
           },
           {
             "id": 75,
@@ -1030,7 +1104,8 @@
               "C": "más — en conclusión — con",
               "D": "pero — en consecuencia — con"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Analiza qué pide cada hueco. El primero necesita una adversativa (querían algo, **pero** no cumplían los requisitos): \"pero\". El segundo, un conector de consecuencia: \"en consecuencia, tuvieron que resignarse\". El tercero, la preposición que rige el verbo: \"resignarse **con** la realización de algo\".\n\nEl distractor fino es la C: \"más\" con acento es de cantidad, no sirve como adversativa (la adversativa es \"mas\", sin tilde), y \"en conclusión\" cierra un razonamiento, no expresa consecuencia."
           },
           {
             "id": 76,
@@ -1043,7 +1118,8 @@
               "C": "Todo fue puesto por nuestro señor Inkarrí: las montañas, los animales, la nube, la lluvia. Él creó todo lo que existe para nosotros. Formó a Womani, nuestro segundo dios, que habita en las montañas. Inkarrí formó la pampa, hirvió el vino, la chicha, el aguardiente.",
               "D": "La carretera convirtió a Puquio, de una pequeña ciudad de terratenientes e indios, en un centro comercial activo. Las antiguas normas están siendo rotas con rapidez."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La opción C es la que fluye sin tropiezos: oraciones completas, bien puntuadas, con enumeración correcta (\"las montañas, los animales, la nube, la lluvia\") y un hilo claro —Inkarrí como creador— que cada oración va desarrollando.\n\nLa A es el error opuesto y evidente: es un bloque sin ningún signo de puntuación, ideas encimadas una tras otra. La B abusa de \"dicen que\" y encadena ideas con vaguedad (\"Ignoramos quién lo habrá llevado..., pero parece que...\"), y la D tropieza con la pasiva forzada \"están siendo rotas\", giro poco natural en español."
           },
           {
             "id": 77,
@@ -1056,7 +1132,8 @@
               "C": "Claridad.",
               "D": "Diáfano."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Un *destello* es un resplandor o brillo vivo e instantáneo; su sinónimo es **fulgor**, que también nombra un brillo intenso. Además coinciden en categoría gramatical: ambos son sustantivos.\n\nAhí está la trampa de \"luminoso\" y \"diáfano\": se relacionan con la luz, pero son **adjetivos**; no pueden sustituir a un sustantivo. Y \"claridad\" es luz difusa y continua, no el brillo súbito del destello."
           },
           {
             "id": 78,
@@ -1069,7 +1146,8 @@
               "C": "Diseminado.",
               "D": "Mezclado."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "*Disperso* significa esparcido, desparramado, sin unión. Su antónimo —lo contrario— es **agrupado**: reunido, junto.\n\nCuidado con \"esparcido\" y \"diseminado\": esos son **sinónimos** de disperso, y son el tropiezo clásico cuando la pregunta pide antónimo y uno lee de prisa. Subraya siempre si te piden sinónimo o antónimo antes de contestar."
           },
           {
             "id": 79,
@@ -1082,7 +1160,8 @@
               "C": "Pronto adquirio la costumbre de desvelarse.",
               "D": "El muchacho viviá cómo un salvaje en la soledad."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "\"Notó que aquel beso era de un extraño\" está impecable: \"notó\" lleva su tilde por ser aguda terminada en vocal, y no hay más palabras que la exijan.\n\nLas otras tres fallan en acentuación: \"detenian\" debe ser *detenían* y \"adquirio\" debe ser *adquirió* (les falta la tilde), mientras que la D acumula errores: \"viviá\" no existe (es *vivía*) y ese \"cómo\" con tilde sobra, porque es comparativo (\"como un salvaje\"), no interrogativo."
           },
           {
             "id": 80,
@@ -1095,7 +1174,8 @@
               "C": "El Coronel Juan Morales se apodera de un cañón montado en uno de los ángulos y aprovechándose de la confusión de los defensores, introduce a la fortaleza un buen número de soldados. Vuelve los cañones hacia el interior y empieza a disparar. Los tejanos se retiran al convento y a la iglesia, protegiéndose en barricadas de sacos de arena.",
               "D": "El Coronel Juan Morales se apodera de un cañón, montado en uno de los ángulos y aprovechándose de la confusión de los defensores, introduce a la fortaleza, un buen número de soldados. Vuelve los cañones hacia el interior y empieza a disparar. Los tejanos se retiran, al convento y a la iglesia. Protegiéndose en barricadas de sacos de arena."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La opción C puntúa donde la gramática lo pide y solo ahí: nunca separa el sujeto de su verbo, no fragmenta oraciones y usa la coma para el inciso del gerundio (\"protegiéndose en barricadas...\").\n\nLa A comete el pecado capital de poner coma entre sujeto y verbo (\"El Coronel Juan Morales, se apodera\") y deja \"Y empieza a disparar.\" como oración suelta tras punto. La B y la D fragmentan sin sentido (\"introduce a la fortaleza. Un buen número de soldados.\") o riegan comas que cortan complementos que van pegados a su verbo."
           }
         ]
       },
@@ -1114,7 +1194,8 @@
               "C": "Lisosoma.",
               "D": "Ribosoma."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El **ribosoma** es la máquina que traduce: lee el ARN mensajero codón por codón y va uniendo aminoácidos hasta formar la cadena proteica. Puede estar libre en el citoplasma o adherido al retículo endoplásmico rugoso.\n\nEl aparato de Golgi se antoja porque también trabaja con proteínas, pero él solo las **modifica, empaca y distribuye** cuando ya están sintetizadas; no las fabrica."
           },
           {
             "id": 82,
@@ -1127,7 +1208,8 @@
               "C": "Vitaminas.",
               "D": "Carbohidratos."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Las **enzimas** son los biocatalizadores del mundo vivo: casi todas son proteínas y actúan bajando la energía de activación de la reacción, con lo que cambian su velocidad sin consumirse ni alterar el producto final. Sin ellas, reacciones como la digestión de un almidón tardarían años a temperatura corporal.\n\nLas vitaminas tientan porque participan en el metabolismo, pero lo hacen como **coenzimas**, o sea ayudantes de la enzima; no catalizan por sí solas."
           },
           {
             "id": 83,
@@ -1140,7 +1222,8 @@
               "C": "Xilobiosa.",
               "D": "Almidón."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La fase oscura (ciclo de Calvin) toma el ATP y el NADPH que produjo la fase luminosa y los usa para fijar $\\mathrm{CO}_2$; el carbono así fijado se acomoda en azúcares y el producto que se reporta al final del ciclo es la **glucosa**, $\\mathrm{C}_6\\mathrm{H}_{12}\\mathrm{O}_6$, un monosacárido.\n\nAlmidón y celulosa se antojan porque también salen de la fotosíntesis, pero son **polisacáridos**: se forman después, uniendo muchas glucosas. La pregunta pide expresamente un monosacárido."
           },
           {
             "id": 84,
@@ -1153,7 +1236,8 @@
               "C": "minúsculas y mayúsculas (bB).",
               "D": "minúsculas, mayúsculas y minúsculas (bBb)."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En la notación de Mendel se usa la misma letra para el par de alelos de un carácter: **mayúscula para el dominante** ($B$) y **minúscula para el recesivo** ($b$). Por eso un carácter recesivo se representa con una sola letra minúscula.\n\nLa opción $Bb$ se antoja, pero eso no es un carácter recesivo: es el **genotipo heterocigoto**, y en él justamente el recesivo queda oculto. El recesivo se manifiesta cuando el genotipo es $bb$."
           },
           {
             "id": 85,
@@ -1166,7 +1250,8 @@
               "C": "fenotipo.",
               "D": "cariotipo."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El **genotipo** es el conjunto de información hereditaria codificada en el ADN del organismo: los alelos que trae, se expresen o no.\n\nEl fenotipo es el distractor natural, pero ese es el resultado **visible** de esa información al interactuar con el ambiente (color de ojos, estatura). El cariotipo, en cambio, es solo el retrato del número y forma de los cromosomas."
           },
           {
             "id": 86,
@@ -1179,7 +1264,8 @@
               "C": "Hemofilia.",
               "D": "Alemorfia."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La **hemofilia** se debe a un gen recesivo situado en el cromosoma $X$, así que su herencia va ligada al sexo. De ahí el patrón clásico: los hombres ($XY$) la padecen mucho más, porque con un solo $X$ alterado ya no tienen otro alelo sano que compense, mientras las mujeres ($XX$) suelen ser portadoras.\n\nLa ataxia y la discinesia son padecimientos neurológicos que no siguen ese patrón, y la \"alemorfia\" no existe como enfermedad."
           },
           {
             "id": 87,
@@ -1192,7 +1278,8 @@
               "C": "originan variabilidad no heredable.",
               "D": "se producen en los individuos menos aptos."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las mutaciones son cambios en el ADN y por eso son **heredables**: se transmiten a la descendencia y crean diferencias entre los individuos de una población. Esa variabilidad es la materia prima indispensable de la evolución, porque la selección natural no puede favorecer nada si todos los organismos son idénticos.\n\nLa opción C se antoja por lo de \"variabilidad\", pero se cae en la palabra clave: al ocurrir en el material genético, la variabilidad que producen **sí** es heredable."
           },
           {
             "id": 88,
@@ -1205,7 +1292,8 @@
               "C": "Insulina.",
               "D": "Miosina."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La **insulina** fue la primera proteína humana producida con ADN recombinante: se inserta el gen humano de la insulina en el ADN de una bacteria (o de una levadura) y el microorganismo la fabrica en grandes cantidades para tratar la diabetes.\n\nLa hemoglobina tienta porque también es una proteína conocida, pero se obtiene de la sangre; no es el ejemplo clásico de la biotecnología del ADN recombinante."
           },
           {
             "id": 89,
@@ -1218,7 +1306,8 @@
               "C": "Levadura.",
               "D": "Esponja."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En la clasificación de cinco reinos, Protista agrupa a los eucariontes de organización sencilla, unicelulares o coloniales, que no forman verdaderos tejidos: ahí entran las **algas** junto con los protozoarios.\n\nLos otros tres ya tienen su reino propio: el helecho es una planta, la levadura es un hongo y la esponja es un animal, aunque su cuerpo parezca simple."
           },
           {
             "id": 90,
@@ -1231,7 +1320,8 @@
               "C": "Bioma.",
               "D": "Comunidad."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Una **población** es el conjunto de individuos de la **misma especie** que viven en la misma área y se cruzan entre sí; ese es justo el detalle que decide la respuesta.\n\nLa comunidad se antoja, pero incluye a las poblaciones de **todas** las especies que coexisten en el lugar; y si además le sumas el medio físico (suelo, agua, clima), tienes un ecosistema."
           }
         ]
       },
@@ -1250,7 +1340,8 @@
               "C": "Sociología.",
               "D": "Filosofía."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La **Historia** investiga, ordena y explica los hechos del pasado humano precisamente para darnos herramientas de entender el presente: es el sentido de decir que estudia el pasado \"para comprender el hoy\".\n\nOjo con los vecinos: la Antropología estudia al ser humano y sus culturas, la Sociología las relaciones sociales actuales, y la Filosofía reflexiona sobre problemas fundamentales, no sistematiza acontecimientos."
           },
           {
             "id": 92,
@@ -1263,7 +1354,8 @@
               "C": "triunfó en la Guerra de Siete Años.",
               "D": "diseñó y construyó el ferrocarril."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Inglaterra tenía ya una fuerte **industria textil** —lana y sobre todo algodón traído de sus colonias— y fue ahí donde primero se aplicaron las máquinas (la hiladora, el telar mecánico, luego el vapor). Ese sector fue el punto de arranque de la Revolución Industrial.\n\nEl ferrocarril se antoja, pero se cae por cronología: se diseñó **ya iniciada** la Revolución Industrial, así que es consecuencia suya y no factor que la originó."
           },
           {
             "id": 93,
@@ -1276,7 +1368,8 @@
               "C": "Napoleón III — Inglaterra",
               "D": "Carlos X — Francia"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Tras la oleada liberal de 1830 el reino de Piamonte-Cerdeña quedó como cabeza del movimiento por unir Italia, y el obstáculo era **Austria**, que dominaba Lombardía y el Véneto. Por eso Víctor Manuel II, con **José Garibaldi** y sus camisas rojas al frente de las campañas militares, sostuvo la guerra que terminó en la unificación italiana.\n\nLa opción A tienta porque Carlos Alberto sí es de esa dinastía, pero lo empareja con Prusia: Prusia es el asunto de la unificación **alemana**, no de la italiana."
           },
           {
             "id": 94,
@@ -1289,7 +1382,8 @@
               "C": "la Revolución Industrial.",
               "D": "la Revolución Agrícola."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Ya industrializadas, las potencias europeas necesitaban algodón, hule, minerales y carbón baratos, además de mercados donde vender lo que producían de más. Esa doble necesidad las llevó a repartirse África y Asia: es el **imperialismo europeo** del siglo XIX.\n\nLa Revolución Industrial es el distractor fuerte, pero está del otro lado de la flecha causal: ella **provocó** esa búsqueda de materias primas y mercados, no fue impulsada por ella."
           },
           {
             "id": 95,
@@ -1302,7 +1396,8 @@
               "C": "la invasión alemana a Francia.",
               "D": "la crisis de 1929."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El detonante fue el **asesinato del archiduque Francisco Fernando**, heredero del trono austro-húngaro, en Sarajevo el 28 de junio de 1914. Austria-Hungría culpó a Serbia y le declaró la guerra, y el sistema de alianzas hizo el resto en cuestión de semanas.\n\nLa Triple Alianza se antoja, pero eso es una **causa de fondo** (el clima de alianzas militares), no el incidente que prendió la mecha. Y la crisis de 1929 es posterior a la guerra."
           },
           {
             "id": 96,
@@ -1315,7 +1410,8 @@
               "C": "la rivalidad con Alemania.",
               "D": "el surgimiento del fascismo."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La crisis estalló con el **desplome de la Bolsa de Valores de Nueva York** en octubre de 1929 (el jueves y el martes negros): las acciones habían subido por especulación y compras a crédito, y al venir la venta masiva se arruinaron inversionistas, quebraron bancos y se desató la Gran Depresión.\n\nEl sistema keynesiano se antoja por ser el otro nombre económico famoso de la época, pero fue la **respuesta** a la crisis, no su causa."
           },
           {
             "id": 97,
@@ -1328,7 +1424,8 @@
               "C": "la Unión Soviética.",
               "D": "Estados Unidos."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las tres acciones son ofensivas de la **Alemania nazi** en la Segunda Guerra Mundial: Polonia en septiembre de 1939, Dinamarca y Noruega en abril de 1940 y la Operación Barbarroja (la invasión a la URSS) en junio de 1941. Alemania peleaba junto con Italia y Japón en el **Eje Berlín-Roma-Tokio**.\n\nLa Triple Alianza tienta por parecerse, pero es de la **Primera** Guerra Mundial. Y la URSS aquí fue la invadida, no la que invadió."
           },
           {
             "id": 98,
@@ -1341,7 +1438,8 @@
               "C": "de los Seis Días.",
               "D": "Fría."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Ese enfrentamiento sin choque armado directo entre la URSS y Estados Unidos, sostenido de 1947 a 1991 con carrera de armamentos, espionaje, propaganda y guerras por interpósita persona (Corea, Vietnam, Afganistán), se llama **Guerra Fría**: \"fría\" justamente porque las dos superpotencias nunca se dispararon entre sí.\n\nLas otras tres opciones son conflictos concretos y localizados, con combate real y otros protagonistas."
           },
           {
             "id": 99,
@@ -1354,7 +1452,8 @@
               "C": "Dictadura de Duvalier.",
               "D": "Iniciativa de Defensa Estratégica."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Al descubrir que la Unión Soviética estaba instalando misiles y equipo militar en Cuba, a unos minutos de vuelo de su territorio, Estados Unidos bloqueó la isla y el mundo estuvo al borde de la guerra nuclear en octubre de 1962: es la **Crisis de los Misiles**, el momento más tenso de la Guerra Fría.\n\nLa Revolución Sandinista fue en Nicaragua, la dictadura de Duvalier en Haití y la Iniciativa de Defensa Estratégica es un proyecto de Reagan de los años ochenta."
           },
           {
             "id": 100,
@@ -1367,7 +1466,8 @@
               "C": "Globalización.",
               "D": "Comunismo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La **globalización** es el proceso que integra los mercados del planeta: abarata y agiliza el comercio, pero al quedar todo conectado una crisis en un país se propaga de inmediato al resto, y además difunde patrones de consumo y de cultura que van uniformando lo que la gente ve, come y viste.\n\nEl neoliberalismo se antoja mucho, y de hecho es el modelo económico que la impulsó; pero él es una **política** (privatizar, desregular, abrir fronteras), mientras que la globalización es el fenómeno mundial que describe el reactivo."
           }
         ]
       },
@@ -1386,7 +1486,8 @@
               "C": "agricultura.",
               "D": "recolección."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Lo que define a Mesoamérica como área cultural es la **agricultura**: el cultivo del maíz, el frijol, la calabaza y el chile en el sistema de milpa permitió el sedentarismo, los excedentes de alimento y con ellos las ciudades, los templos y la organización estatal.\n\nCaza, pesca y recolección se antojan, pero son las actividades del periodo **nómada** anterior; después de la domesticación del maíz quedaron solo como complemento de la dieta."
           },
           {
             "id": 102,
@@ -1399,7 +1500,8 @@
               "C": "Consolidación de Vales Reales.",
               "D": "Adopción de las ideas de la Ilustración."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La pregunta pide una causa **interna**, o sea ocurrida dentro de la Nueva España. La **Consolidación de Vales Reales** (1804) lo fue: la Corona obligó a cobrar de golpe los préstamos que la Iglesia tenía colocados entre hacendados y comerciantes criollos, para llevarse ese dinero a España. Muchas familias novohispanas quedaron arruinadas y ese resentimiento las empujó a la conspiración.\n\nLas otras tres son externas: la invasión francesa a España, la independencia de las Trece Colonias y las ideas ilustradas llegaron **de fuera**, aunque hayan influido muchísimo."
           },
           {
             "id": 103,
@@ -1412,7 +1514,8 @@
               "C": "Guerra de los pasteles.",
               "D": "Guerra de Texas."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Ordena las fechas: Santa Anna llega por primera vez a la presidencia en 1833, y el primer conflicto con el exterior que enfrenta es la **guerra de Texas**, que estalla en 1835-1836 y termina con la derrota de San Jacinto y los tratados de Velasco.\n\nLa Guerra de los Pasteles es el distractor bueno, pero es de 1838, o sea **posterior**. La expedición española de Barradas fue en 1829, cuando Santa Anna no gobernaba, y la venta de La Mesilla (1853) no es un conflicto armado."
           },
           {
             "id": 104,
@@ -1425,7 +1528,8 @@
               "C": "Constitución de 1822.",
               "D": "Constitución de 1814."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los tres rasgos apuntan a la **Constitución de 1857**, obra del Congreso liberal: consagró las libertades de enseñanza, de imprenta, de trabajo y de asociación, incorporó la Ley Lerdo que prohibía a la Iglesia y a las corporaciones poseer bienes raíces, y estableció una república representativa, democrática y **federal**.\n\nLa de 1824 se antoja porque también fue federal y republicana, pero no tocó los bienes de la Iglesia ni proclamó esas libertades: al contrario, mantuvo la religión católica como única permitida."
           },
           {
             "id": 105,
@@ -1438,7 +1542,8 @@
               "C": "la prohibición a la inversión privada.",
               "D": "las concesiones a los inversionistas extranjeros."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El Porfiriato se sostuvo atrayendo capital de fuera: se dieron **concesiones a inversionistas extranjeros** —ingleses y estadounidenses sobre todo— en ferrocarriles, minería, petróleo, electricidad y banca, con exenciones de impuestos y derechos sobre el subsuelo.\n\nLa nacionalización de la minería no cuadra: es lo **contrario** de la política porfirista, y ese tipo de medidas llegó décadas después, ya con la Revolución y con Cárdenas."
           },
           {
             "id": 106,
@@ -1451,7 +1556,8 @@
               "C": "el Milagro Mexicano.",
               "D": "la Unidad Nacional."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Más de treinta años de reelecciones sin cambio real de gobierno, sumados al despojo de tierras a campesinos e indígenas y a la represión de huelgas como Cananea y Río Blanco, son los detonantes que llevaron al llamado a las armas de 1910: la **Revolución Mexicana**.\n\nLas otras tres son etapas **posteriores** a ella: el Maximato es el control de Calles en 1928-1934, y el Milagro Mexicano y la Unidad Nacional pertenecen a la mitad del siglo XX."
           },
           {
             "id": 107,
@@ -1464,7 +1570,8 @@
               "C": "Plutarco Elías Calles.",
               "D": "Venustiano Carranza."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Ambas son de **Álvaro Obregón** (1920-1924): en 1921 creó la Secretaría de Educación Pública y puso al frente a José Vasconcelos, con su campaña de alfabetización y misiones culturales; y en 1923 firmó los Acuerdos de Bucareli con Estados Unidos, con los que consiguió el reconocimiento de su gobierno a cambio de no aplicar retroactivamente el artículo 27 al petróleo.\n\nCarranza tienta por ser el presidente inmediatamente anterior, pero a él le corresponde la Constitución de 1917, no la SEP ni Bucareli."
           },
           {
             "id": 108,
@@ -1477,7 +1584,8 @@
               "C": "Álvaro Obregón.",
               "D": "Lázaro Cárdenas."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Las cuatro acciones son de **Lázaro Cárdenas** (1934-1940): gobernó con el Plan Sexenal heredado del programa del partido, fundó el Instituto Politécnico Nacional en 1936, repartió más de 18 millones de hectáreas en ejidos y el 18 de marzo de 1938 decretó la expropiación petrolera, de la que nació Pemex.\n\nCalles se antoja porque fue quien redactó el Plan Sexenal y fundó el partido, pero las otras tres medidas —y sobre todo el petróleo— son inconfundiblemente cardenistas."
           },
           {
             "id": 109,
@@ -1490,7 +1598,8 @@
               "C": "el equilibrio de la balanza comercial.",
               "D": "la expansión del mercado externo."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Con la Segunda Guerra Mundial los países industrializados dejaron de vender manufacturas, así que México tuvo que producir dentro lo que antes compraba fuera: eso es la **sustitución de importaciones**, el modelo que Ávila Camacho (1940-1946) impulsó con protección arancelaria y crédito a la industria nacional.\n\nLa expansión del mercado externo se antoja porque en esos años sí crecieron las exportaciones de materias primas, pero el rasgo **económico definitorio** de su sexenio fue industrializar hacia dentro."
           },
           {
             "id": 110,
@@ -1503,7 +1612,8 @@
               "C": "Privatización de la educación.",
               "D": "Fomento a la participación de empresas privadas."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El Desarrollo Compartido de Echeverría (1970-1976) buscaba que el crecimiento se repartiera entre obreros, campesinos y empresarios, con el Estado como rector pero **sin desplazar a la iniciativa privada**: de ahí el fomento a la participación de las empresas privadas junto con el gasto público.\n\nLa nacionalización de la banca es el distractor más pegador, pero es de 1982 y la decretó **José López Portillo**, ya con otra crisis encima."
           }
         ]
       },
@@ -1522,7 +1632,8 @@
               "C": "Exclamativa.",
               "D": "Declarativa."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El enunciado no informa ni desahoga un sentimiento: busca **influir en la conducta** de quien lo lee, y eso se ve en la forma verbal \"no debes\". Ese es el rasgo de la función **directiva** (o apelativa): ordenar, prohibir, aconsejar, pedir.\n\nSería expresiva si comunicara emociones del hablante, y declarativa si solo describiera un hecho verificable, del tipo \"el patrimonio artístico está protegido por la ley\"."
           },
           {
             "id": 112,
@@ -1535,7 +1646,8 @@
               "C": "$(P \\rightarrow Q) \\cdot R$",
               "D": "$(Q \\vee R) \\cdot P$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Primero nombra las proposiciones simples: $P$ = la llevo al cine, $Q$ = le pago el boleto, $R$ = la llevo a su casa.\n\nEl \"si... entonces...\" es una **condicional**, así que el conectivo principal es $\\rightarrow$: el antecedente es lo que va tras el \"si\" ($P$) y el consecuente es todo lo que sigue al \"entonces\". Y ese consecuente es una **conjunción** de dos cosas, $Q \\cdot R$, que va agrupada entre paréntesis:\n\n$$P \\rightarrow (Q \\cdot R)$$\n\nLa opción C se antoja, pero ahí los paréntesis cambian la jerarquía: $(P \\rightarrow Q) \\cdot R$ afirma que la llevas a su casa **pase lo que pase**, cuando en el texto eso también depende del \"si\"."
           },
           {
             "id": 113,
@@ -1548,7 +1660,8 @@
               "C": "Juan está enfermo de gripa y tos. Le comenté que se llevará un suéter y no me hizo caso, seguro por eso está enfermo.",
               "D": "La mayoría de los votantes en México asciende a la edad de entre 18 y 30 años, por lo tanto, son los jóvenes los que eligieron esté nuevo presidente."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En un razonamiento **deductivo** se parte de una premisa general y se llega a un caso particular que queda necesariamente contenido en ella. Eso es exactamente la opción A: la general es \"todos los seres humanos requieren alimentos para vivir\" y de ahí se sigue tu caso, \"si tú no te alimentas, morirás\".\n\nLas demás van al revés, de casos particulares a una conclusión probable: son **inductivas** (y la de los votantes, además, saca una conclusión que la premisa no garantiza)."
           },
           {
             "id": 114,
@@ -1561,7 +1674,8 @@
               "C": "IV y V",
               "D": "III y V"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Un acto es moral cuando se elige libremente, con conciencia de lo que se hace, y afecta a otros o se juzga con valores como el bien y la justicia. Con ese filtro:\n\n**II** implica deliberar sobre compromisos y consecuencias para otras personas, y **III** se decide expresamente \"por considerarlo justo\": ambos son morales.\n\nI, IV y V se quedan fuera porque son decisiones **técnicas o de gusto personal**: qué combina con los espacios de la casa, cómo verse mejor y qué día cae bien en el calendario. Se eligen libremente, sí, pero no se juzgan como buenas o malas moralmente."
           },
           {
             "id": 115,
@@ -1574,7 +1688,8 @@
               "C": "Rocío decide limpiar su armario y sale a comprar cajas de cartón para guardar lo que desechará.",
               "D": "Pedro busca trabajo, para sostener a su familia, se prepara para los exámenes, pero no consigue la plaza."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Hay responsabilidad moral cuando la persona actúa con **libertad y conocimiento**, respondiendo por una decisión que asumió a conciencia. En D, Pedro elige hacerse cargo del sostén de su familia y actúa en consecuencia: se prepara y busca trabajo. Que no consiga la plaza no le quita el mérito, porque la responsabilidad se mide por lo que dependía de él, no por el resultado.\n\nEn A y B no hay acto libre en absoluto: nadie decide contagiarse ni encontrar un billete. Y en C la decisión es real, pero es doméstica y trivial: no está en juego ningún valor moral."
           },
           {
             "id": 116,
@@ -1587,7 +1702,8 @@
               "C": "Realizar la transfusión sanguínea para salvar la vida del paciente a pesar de las consecuencias.",
               "D": "No realizar la transfusión sanguínea para conservar su trabajo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Actuar de manera **autónoma** significa darse a sí mismo la norma: decidir por convicción propia sobre lo que se debe hacer, y no por móviles externos. Eso es la opción C: el médico salva la vida del paciente porque así lo exige su deber, y lo asume **a pesar de las consecuencias** que le puedan venir.\n\nLas otras tres son **heterónomas**, aunque dos de ellas decidan lo contrario y una parezca noble: en A y D lo que manda es el miedo (a un pleito legal, a perder el empleo), y en B el aplauso de los colegas. En los tres casos el criterio lo pone algo ajeno a la propia conciencia."
           },
           {
             "id": 117,
@@ -1600,7 +1716,8 @@
               "C": "Subjetivista.",
               "D": "Utilitarista."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La opinión afirma que el valor \"depende de quién está vivo\" y que nadie puede decirle a otro qué hacer: hace descansar el valor en el **sujeto** que valora, no en el objeto. Esa es la postura **subjetivista**, y su desenlace típico es el relativismo del \"estará bien de cualquier modo\".\n\nLa objetivista es justo la contraria: sostiene que los valores existen con independencia de quien los aprecie. Y no es utilitarista ni pragmatista porque el texto no mide nada por su utilidad ni por sus consecuencias."
           },
           {
             "id": 118,
@@ -1613,7 +1730,8 @@
               "C": "Cómico.",
               "D": "Trágico."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Lo **sublime** es lo que nos desborda por su inmensidad o su fuerza y despierta a la vez asombro y estremecimiento: la tormenta en el mar de noche es el ejemplo de manual. El detalle que decide es la ventana del hotel: como estás a salvo, el poder desmedido de la naturaleza se contempla con placer en vez de puro terror.\n\nLo bello se antoja, pero es lo armónico, proporcionado y agradable a la vista; aquí no hay armonía sino desmesura. Trágico sería si un ser humano se hundiera en esa tormenta."
           },
           {
             "id": 119,
@@ -1626,7 +1744,8 @@
               "C": "axiológico.",
               "D": "político."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El fragmento no pregunta qué está bien o mal, sino **qué es el hombre**: dice que no hay determinismo ni naturaleza fijada de antemano y remata con \"el hombre es libre, el hombre es libertad\". Definir el ser de algo es asunto **ontológico**, y en Sartre la libertad es precisamente el modo de ser del hombre.\n\nLo axiológico se antoja por el \"todo está permitido\", pero eso aparece como consecuencia; el problema central del texto está en el ser y no en los valores."
           },
           {
             "id": 120,
@@ -1639,7 +1758,8 @@
               "C": "Ontología.",
               "D": "Metafísica."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La **epistemología** (o teoría del conocimiento) estudia qué es conocer, cuáles son sus fuentes, sus límites y cómo se justifica que algo sea verdadero.\n\nLa lógica se antoja porque también trata del pensamiento, pero se ocupa solo de la **forma válida** del razonamiento, no del conocimiento en general. La ontología y la metafísica, por su parte, estudian el ser y la realidad."
           }
         ]
       }

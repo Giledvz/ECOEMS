@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "En una gráfica de velocidad contra tiempo, la pendiente de la recta es la aceleración. Aquí la recta baja: la velocidad empieza con un valor grande y va disminuyendo de manera uniforme, así que la pendiente es negativa y por lo tanto la aceleración es negativa.\n\nLa caída libre desde el reposo (opción A) se vería al revés: una recta que arranca en cero y sube, porque el cuerpo va ganando velocidad."
+ },
+ {
+  "id": 2,
+  "explanation": "Cuando dos fuerzas son perpendiculares, la resultante se calcula con el teorema de Pitágoras: $F_R = \\sqrt{F_1^2 + F_2^2}$, no sumando directo. Compruébalo con números: si $F_1 = 3$ N y $F_2 = 4$ N, la resultante es $\\sqrt{9+16} = 5$ N, mientras que la suma algebraica daría $7$ N. La resultante solo igualaría a la suma si las fuerzas apuntaran en la misma dirección; en cualquier otro ángulo siempre es **menor**."
+ },
+ {
+  "id": 3,
+  "explanation": "Por la segunda ley de Newton, $F = ma$, así que en una gráfica de fuerza contra aceleración la masa es la pendiente de la recta. Toma un punto cómodo de la gráfica: con $a = 0.8\\ \\mathrm{m/s^2}$ la fuerza vale $2.0$ N, entonces\n\n$$m = \\frac{F}{a} = \\frac{2.0}{0.8} = 2.5\\ \\mathrm{kg}$$\n\nVerifica con otro punto: $F = 1.0$ N con $a = 0.4\\ \\mathrm{m/s^2}$ da lo mismo. La pendiente es constante porque la masa no cambia."
+ },
+ {
+  "id": 4,
+  "explanation": "Al salir del cañón toda la energía es cinética:\n\n$$E_c = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(7.0)(120)^2 = \\tfrac{1}{2}(7.0)(14{,}400) = 50{,}400\\ \\mathrm{J}$$\n\nEn el punto más alto la bala se detiene un instante: su energía cinética se convirtió por completo en potencial. Por conservación de la energía, $E_p = 50{,}400$ J también.\n\nSi te dio 420 J, olvidaste elevar la velocidad al cuadrado: $\\tfrac{1}{2}(7)(120) = 420$."
+ },
+ {
+  "id": 5,
+  "explanation": "En un choque elástico entre una bola con velocidad $v$ y otra en reposo, las velocidades finales son $U_A = \\frac{m_A - m_B}{m_A + m_B}\\,v$ y $U_B = \\frac{2m_A}{m_A + m_B}\\,v$. Con $m_B = 2m_A$ y $v = 6\\ \\mathrm{m/s}$:\n\n$$U_A = \\frac{m - 2m}{3m}(6) = -2\\ \\mathrm{m/s}, \\qquad U_B = \\frac{2m}{3m}(6) = 4\\ \\mathrm{m/s}$$\n\nEl signo negativo tiene todo el sentido físico: A choca contra una bola más pesada y **rebota** hacia atrás, mientras B sale hacia adelante. Puedes comprobar que se conservan el momento ($6m = -2m + 2m\\cdot 4$... es decir $6m = 6m$) y la energía cinética."
+ },
+ {
+  "id": 6,
+  "explanation": "La conversión de Celsius a Fahrenheit es $°F = \\frac{9}{5}\\,°C + 32$. Sustituyes:\n\n$$°F = \\frac{9}{5}(220) + 32 = 396 + 32 = 428\\ °F$$\n\nSi te dio 104 °F, aplicaste la fórmula al revés (convertiste como si 220 fueran grados Fahrenheit); el error típico es despejar mal la ecuación."
+ },
+ {
+  "id": 7,
+  "explanation": "Cuando dos o más olas coinciden en el mismo punto, sus alturas se suman: es el principio de **superposición**. Si las crestas de varias olas llegan al mismo tiempo, se refuerzan (interferencia constructiva) y se forma una ola mucho más grande que el promedio. Eso es justo lo que describe el enunciado.\n\nLa reflexión y la refracción también le pasan a las olas, pero explican cambios de dirección, no que aparezcan olas más grandes."
+ },
+ {
+  "id": 8,
+  "explanation": "Cuenta los ciclos completos en la figura: en los 90 cm de cuerda caben 5 ondas completas (cada ciclo es una cresta con su valle). La longitud de onda es lo que mide un ciclo:\n\n$$\\lambda = \\frac{90\\ \\mathrm{cm}}{5\\ \\mathrm{ciclos}} = 18\\ \\frac{\\mathrm{cm}}{\\mathrm{ciclo}}$$\n\nSi te dio 9 cm, contaste los 10 vientres (medias ondas) en lugar de los ciclos completos: cada vientre es solo media longitud de onda."
+ },
+ {
+  "id": 9,
+  "explanation": "Por la ley de Ohm, $I = \\frac{V}{R}$. Si el voltaje y la resistencia se duplican al mismo tiempo:\n\n$$I' = \\frac{2V}{2R} = \\frac{V}{R} = I$$\n\nLos doses se cancelan y la corriente queda exactamente igual. El aumento de voltaje empuja más corriente, pero el aumento de resistencia la frena en la misma proporción."
+ },
+ {
+  "id": 10,
+  "explanation": "Fíjate bien en el esquema: el resistor $2R$ está en una malla que queda conectada en paralelo con un tramo de alambre sin resistencia (la rama central del circuito). La corriente siempre toma el camino de menor resistencia, y un alambre ideal tiene resistencia cero: toda la corriente pasa por ese alambre y por $2R$ no circula nada. Se dice que $2R$ está **en cortocircuito**, así que la corriente a través de él es 0 amperes.\n\nLa corriente $3I$ que se menciona circula por el resto del circuito, pero eso no cambia que la rama de $2R$ esté puenteada."
+ },
+ {
+  "id": 11,
+  "explanation": "Los géneros periodísticos **informativos** se limitan a presentar hechos: la noticia, el reportaje (que amplía y documenta una noticia) y la entrevista (que recoge declaraciones directas). En cambio, el artículo y la editorial pertenecen al género de opinión, y la caricatura también expresa un punto de vista; por eso las otras opciones mezclan géneros de opinión con los informativos."
+ },
+ {
+  "id": 12,
+  "explanation": "El **texto dramático** es el que se escribe para ser llevado a escena: está pensado para que actores lo representen ante un público, por eso se estructura en diálogos y acotaciones en lugar de narración. La novela, el ensayo y el texto épico se conciben para ser leídos, no representados."
+ },
+ {
+  "id": 13,
+  "explanation": "La comedia nació en Grecia y se distingue por retratar a personajes comunes en las adversidades de la vida cotidiana, exhibiendo con humor las debilidades humanas, y por tener siempre un **desenlace feliz**. Esa es exactamente la opción B.\n\nLa opción C describe a la tragedia: origen en los rituales a Dionisio, personajes aristocráticos y final funesto."
+ },
+ {
+  "id": 14,
+  "explanation": "La frase enfrenta dos ideas opuestas en una misma línea: *nacer* contra *morir* y *ayer* contra *mañana*. Esa contraposición de conceptos contrarios es la **antítesis**, que Góngora usa para condensar la brevedad de la vida.\n\nNo es paralelismo porque lo que importa no es la repetición de estructuras, sino el choque de significados opuestos."
+ },
+ {
+  "id": 15,
+  "explanation": "El fragmento narra las hazañas de un héroe —el rey Arturo, cuyas \"proezas son ejemplo de valor\"— en tercera persona y con tono elevado: eso es el género **épico**, que canta las acciones de héroes y las presenta como modelo para la colectividad.\n\nNo es lírico porque no expresa sentimientos íntimos del autor, y no es tragedia ni comedia porque no es un texto dramático para representarse."
+ },
+ {
+  "id": 16,
+  "explanation": "El **Realismo** surge en la segunda mitad del siglo XIX como reacción al Romanticismo: el narrador busca la objetividad, describe con detalle casi fotográfico ambientes y personajes, y retrata la sociedad tal como es. El Romanticismo, en cambio, es anterior y privilegia la subjetividad y el sentimiento, justo lo contrario de lo que pide el enunciado."
+ },
+ {
+  "id": 17,
+  "explanation": "La literatura contemporánea se caracteriza por explorar el **mundo interior** de los personajes (monólogo interior, flujo de conciencia) y por romper con la forma tradicional de contar: propone nuevas maneras de entender la realidad y el tiempo, con saltos temporales y realidades alternas. Eso resume la opción A.\n\nLa opción B describe al Romanticismo y la C al Realismo: son corrientes del siglo XIX, no contemporáneas."
+ },
+ {
+  "id": 18,
+  "explanation": "El cuento se define por su **brevedad**: concentra la historia en un solo conflicto, con pocos personajes, y avanza rápido hacia el desenlace. La novela es la que tiene extensión para desarrollar personajes complejos, varios clímax y múltiples hilos narrativos; fíjate que las otras tres opciones describen justamente rasgos de la novela, no del cuento."
+ },
+ {
+  "id": 19,
+  "explanation": "La novela pertenece al género **narrativo**: un narrador cuenta una historia. Se escribe en **prosa** (a diferencia de la poesía, que usa verso) y, por su extensión, su estructura suele ser **compleja**: varios personajes, tramas paralelas, saltos en el tiempo.\n\nLa opción B tropieza desde el inicio: el género épico clásico sí usaba verso, pero la novela moderna no es épica ni está versificada."
+ },
+ {
+  "id": 20,
+  "explanation": "La ficha transcribe **palabras textuales** de Fromm, y la señal está a la vista: el fragmento va entre comillas y se indica la página exacta (p. 37) de donde se copió. Eso es una ficha de **cita textual**.\n\nNo es bibliográfica porque esa solo registra los datos del libro (autor, título, editorial) sin reproducir ningún pasaje; aquí los datos acompañan a la cita, no son el contenido principal."
+ },
+ {
+  "id": 21,
+  "explanation": "La pregunta se refiere a las partículas que forman la materia por dentro: **átomos** (la unidad básica), **moléculas** (átomos unidos por enlaces) e **iones** (átomos o moléculas con carga eléctrica).\n\nLas mezclas, los compuestos y los coloides no son estructura interna: son formas de clasificar la materia a nivel macroscópico, por eso las demás opciones no funcionan."
+ },
+ {
+  "id": 22,
+  "explanation": "El postulado que sigue vigente es el de las proporciones: los átomos de dos elementos pueden combinarse en distintas proporciones y formar compuestos diferentes (por ejemplo, C y O forman $CO$ y $CO_2$). Eso sigue siendo cierto hoy.\n\nLas opciones A y B cayeron cuando se descubrieron el electrón, el protón y el neutrón: el átomo sí es divisible. Y la C es doblemente falsa: los isótopos demuestran que átomos del mismo elemento pueden tener distinta masa."
+ },
+ {
+  "id": 23,
+  "explanation": "Mendeleev ordenó los elementos según el orden creciente de sus **masas atómicas**, y al hacerlo notó que las propiedades se repetían periódicamente; incluso dejó huecos para elementos que aún no se descubrían.\n\nSi elegiste el número atómico (opción A), te fuiste a la tabla **moderna**: ese criterio lo estableció Moseley después, cuando ya se conocía la estructura del átomo."
+ },
+ {
+  "id": 24,
+  "explanation": "Los **gases nobles** tienen su última capa de electrones completa (ocho electrones, o dos en el caso del helio), así que no necesitan ganar, perder ni compartir electrones: por eso casi no reaccionan.\n\nLos metales alcalinos y los halógenos son justo lo contrario: los primeros sueltan con muchísima facilidad su único electrón externo y los segundos capturan electrones con avidez; son de las familias más reactivas de la tabla."
+ },
+ {
+  "id": 25,
+  "explanation": "Un mol de cualquier sustancia contiene el número de Avogadro de partículas: $6.022 \\times 10^{23}$. Para 3 moles de agua multiplicas:\n\n$$3 \\times 6.022 \\times 10^{23} = 18.066 \\times 10^{23} = 1.8066 \\times 10^{24}\\ \\text{moléculas}$$\n\nSi elegiste $1.8066 \\times 10^{23}$, hiciste bien la multiplicación pero no ajustaste el exponente al pasar el 18 a notación científica."
+ },
+ {
+  "id": 26,
+  "explanation": "Por su forma angular, las cargas de la molécula de agua no se cancelan: el oxígeno concentra carga parcial negativa y los hidrógenos quedan con carga parcial positiva. Esa polaridad permite que el oxígeno de una molécula atraiga al hidrógeno de otra, formando **puentes de hidrógeno**.\n\nCuidado con la opción A: está al revés, el agua es *más* densa en estado líquido que en sólido (por eso el hielo flota)."
+ },
+ {
+  "id": 27,
+  "explanation": "La intensidad del foco depende de cuántos iones hay en la disolución, porque son ellos los que conducen la corriente. El foco brilla intensamente con $HCl$ porque es un **ácido fuerte**: se ioniza completamente y libera muchos iones. Con el ácido acético ($CH_3COOH$) el foco baja porque es un ácido débil que solo se ioniza parcialmente.\n\nLas opciones A y C conectan mal los conceptos: fuerte va con ionización completa y débil con parcial, nunca cruzados."
+ },
+ {
+  "id": 28,
+  "explanation": "Perder electrones es, por definición, **oxidarse**. Y como los electrones tienen carga negativa, al perderlos el átomo queda más positivo: su número de oxidación **aumenta**. Por ejemplo, $Na \\rightarrow Na^+ + e^-$: el sodio pasa de 0 a $+1$.\n\nLa reducción es el proceso contrario: ganar electrones y disminuir el número de oxidación. Un truco para no confundirte: *reducir* = el número se *reduce*."
+ },
+ {
+  "id": 29,
+  "explanation": "La **vitamina E** es el antioxidante clásico entre los nutrimentos: protege a las células del daño de los radicales libres y se encuentra en aceites vegetales, nueces y semillas. En exceso interfiere con la coagulación de la sangre y puede provocar sangrados.\n\nLa vitamina D regula el calcio (huesos), y la tirosina y el triptófano son aminoácidos, no antioxidantes."
+ },
+ {
+  "id": 30,
+  "explanation": "Una reacción **exotérmica** libera energía, y eso se expresa de dos maneras: escribiendo la energía como producto (del lado derecho de la flecha) o con $\\Delta H < 0$. La opción A cumple: tiene $\\Delta H < 0$.\n\nLas opciones B y D ponen la energía del lado de los reactivos (la reacción la absorbe) y la C tiene $\\Delta H > 0$: las tres son endotérmicas."
+ },
+ {
+  "id": 31,
+  "explanation": "Para ubicar cualquier punto sobre la superficie terrestre bastan dos coordenadas: la **latitud** (distancia angular respecto al Ecuador, hacia el norte o el sur) y la **longitud** (distancia angular respecto al meridiano de Greenwich, hacia el este o el oeste). Juntas forman la red de paralelos y meridianos.\n\nLa altitud solo agrega la elevación sobre el nivel del mar, pero no sirve para localizar un punto en el mapa; y la nutación es un movimiento del eje terrestre, no una coordenada."
+ },
+ {
+  "id": 32,
+  "explanation": "La geografía **física** estudia los elementos naturales del planeta: relieve, clima, aguas, vegetación y las regiones naturales que resultan de combinarlos. La opción C es la única donde ambos elementos son naturales.\n\nLas otras tres mezclan un elemento natural con uno humano (actividades agrícolas, zonas rurales, asentamientos), y todo lo relacionado con la actividad del ser humano corresponde a la geografía humana o económica."
+ },
+ {
+  "id": 33,
+  "explanation": "La **Sierra Madre del Sur** corre paralela a la costa del Pacífico atravesando Guerrero y Oaxaca; para bajar del altiplano (Morelos) hacia Guerrero hay que cruzarla. La Sierra Madre Occidental está en el noroeste del país y la Oriental en el este, muy lejos de esa ruta."
+ },
+ {
+  "id": 34,
+  "explanation": "Las **corrientes marinas** son grandes desplazamientos de agua oceánica que redistribuyen el calor del planeta: llevan agua fría hacia zonas cálidas y viceversa, regulando la temperatura global. Las corrientes frías, además, arrastran aguas profundas ricas en nutrientes, lo que atrae grandes cardúmenes y favorece la pesca (como en las costas de Perú o Baja California).\n\nLas olas y las mareas mueven el agua localmente, pero no transportan masas de agua a través de los océanos ni regulan el clima."
+ },
+ {
+  "id": 35,
+  "explanation": "El bióxido de carbono ($CO_2$) se produce al quemar combustibles fósiles: la **combustión del petróleo** y sus derivados (gasolina, diésel) en vehículos e industrias es la principal fuente de emisión.\n\nLos aerosoles y la destrucción de la capa de ozono se relacionan con los clorofluorocarbonos, no con el $CO_2$; y la lluvia ácida es consecuencia de la contaminación, no causa del aumento de $CO_2$."
+ },
+ {
+  "id": 36,
+  "explanation": "La **polución agroquímica** es una de las principales causas de contaminación del agua: los fertilizantes y plaguicidas que se aplican en los campos son arrastrados por la lluvia y el riego hacia ríos, lagos y mantos acuíferos, contaminando enormes volúmenes de agua de forma difusa y constante.\n\nLos derrames de petróleo son graves pero puntuales, y la deforestación afecta al suelo y al ciclo del agua más que a su calidad directamente."
+ },
+ {
+  "id": 37,
+  "explanation": "La región **Centro Sur** concentra a la Ciudad de México y su zona metropolitana, junto con el Estado de México, Morelos y estados vecinos: es por mucho la región más poblada del país. Esa concentración de industria, servicios y empleos la vuelve el principal imán de la migración del campo a la ciudad desde mediados del siglo XX."
+ },
+ {
+  "id": 38,
+  "explanation": "La República Mexicana está integrada por **32 entidades federativas**: 31 estados más la Ciudad de México. Ojo con la opción C: 31 es solo el número de estados, pero la pregunta pide las entidades, y la Ciudad de México cuenta como una entidad más."
+ },
+ {
+  "id": 39,
+  "explanation": "La producción petrolera de México se concentra en la **costa del Golfo**: los yacimientos de Campeche (como Cantarell y Ku-Maloob-Zaap), Tabasco y Veracruz aportan la gran mayoría del crudo nacional, tanto en pozos marinos como terrestres. Las costas del Pacífico prácticamente no tienen producción petrolera."
+ },
+ {
+  "id": 40,
+  "explanation": "El corredor del Bajío (Guanajuato, Querétaro, Aguascalientes, San Luis Potosí) se ha consolidado como la principal zona **automotriz** de México: ahí se instalaron plantas armadoras como General Motors, Nissan, Honda, Mazda y BMW, junto con cientos de fabricantes de autopartes.\n\nLa industria maquiladora se concentra en la frontera norte y la petroquímica en la costa del Golfo."
+ }
+]

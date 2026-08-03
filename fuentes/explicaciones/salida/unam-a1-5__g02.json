@@ -1,0 +1,162 @@
+[
+ {
+  "id": 41,
+  "explanation": "El mar de las Antillas es el mar Caribe, que baña el oriente de la península de Yucatán. Los ciclones que ahí se forman entran por esa esquina del país, así que golpean primero las costas de **Quintana Roo** (Cancún, Cozumel, Chetumal) y de **Yucatán**.\n\nChiapas, Oaxaca, Guerrero y Nayarit dan al Pacífico: sus ciclones vienen de otro océano, no de las Antillas."
+ },
+ {
+  "id": 42,
+  "explanation": "La *marea negra* es el derrame de petróleo en el mar: la mancha de crudo que flota y se extiende sobre el agua. Como el petróleo se extrae y se transporta principalmente por vía marítima (plataformas y buques tanque), estos derrames ocurren en los **océanos**, donde asfixian aves, peces y ecosistemas costeros. Lagos, ríos y manantiales pueden contaminarse, pero el término marea negra se refiere específicamente al mar."
+ },
+ {
+  "id": 43,
+  "explanation": "Los migrantes del norte de África cruzan el Mediterráneo por las rutas más cortas: del oeste hacia **España** (por el estrecho de Gibraltar), del centro hacia **Malta** e **Italia** (la isla de Lampedusa es el caso clásico) y del este hacia **Grecia**. Son los países mediterráneos de primera llegada.\n\nFrancia, Alemania o Reino Unido suelen ser destinos finales, pero no puntos de acceso: no tienen costa frente al norte de África."
+ },
+ {
+  "id": 44,
+  "explanation": "La Unión Europea nació como un proyecto de integración: eliminar fronteras internas para que mercancías, personas, servicios y capitales circulen libremente, y coordinar **políticas comunes** (agrícola, comercial, ambiental).\n\nLa moneda única (el euro) existe, pero no todos los miembros la usan, así que no es el propósito fundamental; y la UE regula la explotación de recursos, no la deja \"sin restricciones\"."
+ },
+ {
+  "id": 45,
+  "explanation": "Un estado-nación se desintegra cuando los grupos que lo forman dejan de sentirse parte de él. El **descontento de las minorías étnicas y religiosas** alimenta movimientos separatistas que fragmentan el territorio: piensa en Yugoslavia, que se partió en varios países por conflictos entre serbios, croatas, bosnios y albaneses, o en la antigua URSS. Las otras opciones generan crisis económicas o políticas, pero no rompen la unidad territorial como lo hace el conflicto identitario."
+ },
+ {
+  "id": 46,
+  "explanation": "En la frontera norte de México domina la industria **maquiladora**: plantas de ensamble que importan piezas, arman el producto (electrónica, autopartes, textiles) y lo exportan de inmediato a Estados Unidos. Se instalaron ahí justamente por la cercanía con ese mercado y el bajo costo de la mano de obra. Ciudad Juárez, Tijuana y Reynosa son los ejemplos típicos. La metalúrgica y la petroquímica se concentran en otras regiones (Monterrey, la costa del Golfo)."
+ },
+ {
+  "id": 47,
+  "explanation": "La clave está en \"del peso **inicial**\": cada semana baja la misma cantidad, calculada sobre los 96 kg originales.\n\n$$\\frac{1}{32} \\times 96 = 3 \\text{ kg por semana}$$\n\nEntonces va restando 3 cada semana: $96 - 3 = 93$, luego $90$, $87$ y $84$. Es una sucesión aritmética con diferencia $-3$.\n\nSi elegiste B, contaste la semana 1 como si todavía pesara 96: el conteo empieza *al término* de la primera semana, cuando ya bajó."
+ },
+  {
+  "id": 48,
+  "explanation": "Ve de adentro hacia afuera. Primero los paréntesis interiores:\n\n$$-2(4x - 3) = -8x + 6 \\qquad -(9 - x) = -9 + x$$\n\nDentro del corchete queda $-8x + 6 - 9 + x = -7x - 3$. Ahora el signo menos del corchete cambia todo:\n\n$$-3x - (-7x - 3) = -3x + 7x + 3 = 4x + 3$$\n\nSi te dio otra cosa, casi seguro se te escapó un signo al distribuir el $-2$ o al quitar el corchete: es donde todos tropiezan."
+ },
+ {
+  "id": 49,
+  "explanation": "Es un binomio al cubo con resta: $(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$, con signos alternados $+,-,+,-$. Aquí $a = x^2$ y $b = 3y$:\n\n$$(x^2)^3 - 3(x^2)^2(3y) + 3(x^2)(3y)^2 - (3y)^3 = x^6 - 9x^4y + 27x^2y^2 - 27y^3$$\n\nFíjate que el último término lleva signo menos porque $(3y)^3 = 27y^3$ va restando. Las opciones A, B y D solo cambian signos: son trampas para quien no cuida la alternancia."
+ },
+ {
+  "id": 50,
+  "explanation": "Primero factoriza el signo menos del numerador para trabajar más cómodo:\n\n$$-x^2 - 3x + 40 = -(x^2 + 3x - 40)$$\n\nBusca dos números que multiplicados den $-40$ y sumados $+3$: son $8$ y $-5$, así que $x^2 + 3x - 40 = (x + 8)(x - 5)$. Entonces:\n\n$$\\frac{-(x+8)(x-5)}{x+8} = -(x - 5) = -x + 5$$\n\nSi elegiste A, olvidaste repartir el signo menos al final: $-(x-5)$ cambia *ambos* signos."
+ },
+ {
+  "id": 51,
+  "explanation": "Multiplica toda la ecuación por 12 (el mínimo común múltiplo de 3 y 4) para quitar denominadores:\n\n$$12 \\cdot \\frac{x}{3} - 12 \\cdot \\frac{x-5}{4} = 12 \\cdot 2 \\quad\\Rightarrow\\quad 4x - 3(x - 5) = 24$$\n\nDesarrolla con cuidado el signo: $4x - 3x + 15 = 24$, o sea $x + 15 = 24$, y por tanto $x = 9$.\n\nComprueba: $\\frac{9}{3} - \\frac{4}{4} = 3 - 1 = 2$. ✓ El error típico es escribir $-3x - 15$ en vez de $-3x + 15$."
+ },
+ {
+  "id": 52,
+  "explanation": "Con la fórmula general, $a = 4$, $b = 16$, $c = 15$:\n\n$$x = \\frac{-16 \\pm \\sqrt{16^2 - 4(4)(15)}}{2(4)} = \\frac{-16 \\pm \\sqrt{256 - 240}}{8} = \\frac{-16 \\pm 4}{8}$$\n\nEso da $x_1 = \\frac{-12}{8} = -\\frac{3}{2}$ y $x_2 = \\frac{-20}{8} = -\\frac{5}{2}$.\n\nUn atajo para descartar: como todos los coeficientes son positivos, las dos raíces tienen que ser negativas; eso elimina de golpe B, C y D."
+ },
+ {
+  "id": 53,
+  "explanation": "Despeja como en una ecuación normal:\n\n$$-2x + 6 \\geq 16 \\quad\\Rightarrow\\quad -2x \\geq 10$$\n\nAhora viene lo importante: al dividir entre $-2$, un número **negativo**, la desigualdad se voltea:\n\n$$x \\leq -5$$\n\nComprueba con $x = -6$: $-2(-6) + 6 = 18 \\geq 16$. ✓ Si llegaste a $x \\geq 5$ o parecido, olvidaste invertir el sentido al dividir entre el negativo: es el error clásico de las desigualdades."
+ },
+ {
+  "id": 54,
+  "explanation": "La tercera ecuación solo tiene $y$ y $z$, aprovéchala: $z = 17 - 3y$. Sustituye en la segunda:\n\n$$x - 2y + 2(17 - 3y) = 0 \\quad\\Rightarrow\\quad x = 8y - 34$$\n\nY ahora todo en la primera:\n\n$$5(8y - 34) + 2y - (17 - 3y) = -7 \\quad\\Rightarrow\\quad 45y - 187 = -7 \\quad\\Rightarrow\\quad y = 4$$\n\nDe ahí $z = 17 - 12 = 5$ y $x = 32 - 34 = -2$. Verifica en la primera: $5(-2) + 2(4) - 5 = -10 + 8 - 5 = -7$. ✓\n\nEn el examen, lo más rápido es probar cada opción en las tres ecuaciones: solo C cumple las tres."
+ },
+ {
+  "id": 55,
+  "explanation": "El rango es el conjunto de valores que la función **realmente produce** al aplicarla a cada elemento del dominio $S = \\{1, 2\\}$:\n\n$$f(1) = 1 + 1 = 2 \\qquad f(2) = 2 + 1 = 3$$\n\nAsí que el rango es $\\{2, 3\\}$.\n\nSi elegiste $\\{2, 3, 4\\}$, confundiste el rango con el codominio $Q$: el 4 está disponible como destino, pero ningún elemento de $S$ llega a él."
+ },
+ {
+  "id": 56,
+  "explanation": "La conversión sale de que $180° = \\pi$ radianes. Entonces:\n\n$$45° = \\frac{45}{180}\\pi = \\frac{1}{4}\\pi$$\n\nOtra forma de verlo: 45° es la mitad de 90°, y como $90° = \\frac{\\pi}{2}$, su mitad es $\\frac{\\pi}{4}$. Las demás opciones corresponden a ángulos mucho más grandes ($\\frac{3}{4}\\pi$ sería 135°, por ejemplo)."
+ },
+ {
+  "id": 57,
+  "explanation": "El seno relaciona el cateto opuesto con la hipotenusa:\n\n$$\\mathrm{sen}\\,30° = \\frac{\\text{opuesto}}{10} \\quad\\Rightarrow\\quad \\text{opuesto} = 10 \\cdot \\mathrm{sen}\\,30° = 10 \\cdot \\frac{1}{2} = 5$$\n\nVale la pena memorizar la regla: en un triángulo de 30°–60°–90°, el lado opuesto al ángulo de 30° siempre mide la **mitad** de la hipotenusa.\n\nSi elegiste $5\\sqrt{3}$, calculaste el cateto adyacente (usaste coseno en vez de seno)."
+ },
+ {
+  "id": 58,
+  "explanation": "El logaritmo solo está definido para números **estrictamente positivos**: no existe el logaritmo de cero ni de negativos. Así que el argumento debe cumplir:\n\n$$x - 1 > 0 \\quad\\Rightarrow\\quad x > 1$$\n\nOjo con la opción D: la desigualdad es estricta porque en $x = 1$ el argumento vale 0, y $\\log(0)$ no existe."
+ },
+ {
+  "id": 59,
+  "explanation": "El punto medio se calcula promediando las coordenadas:\n\n$$M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) = \\left(\\frac{0 + 4}{2}, \\frac{2 + 6}{2}\\right) = (2, 4)$$\n\nEs literalmente el \"promedio\" de los dos puntos: cada coordenada queda a la mitad del camino."
+ },
+ {
+  "id": 60,
+  "explanation": "Primero saca la pendiente de la recta de la gráfica, que pasa por $(-4, -7)$ y $(4, 9)$:\n\n$$m = \\frac{9 - (-7)}{4 - (-4)} = \\frac{16}{8} = 2$$\n\nUna recta perpendicular tiene pendiente recíproca y de signo contrario: $m_\\perp = -\\frac{1}{2}$. Ahora revisa cuál pareja de puntos da esa pendiente. Con $(0, 0)$ y $(-2, 1)$:\n\n$$m = \\frac{1 - 0}{-2 - 0} = -\\frac{1}{2} \\checkmark$$\n\nSi elegiste D, tomaste la pendiente $+2$ tal cual... pero esos puntos dan la recta *paralela* con pendiente 3; el punto clave es recordar que perpendicular significa $m_\\perp = -\\frac{1}{m}$, no la misma $m$."
+ },
+ {
+  "id": 61,
+  "explanation": "La mediana desde $P$ va de $P$ al **punto medio** del lado opuesto $QR$:\n\n$$M = \\left(\\frac{9 + 3}{2}, \\frac{3 + 5}{2}\\right) = (6, 4)$$\n\nLa pendiente de $P(-7, 1)$ a $M(6, 4)$ es $m = \\frac{4 - 1}{6 - (-7)} = \\frac{3}{13}$. Con punto-pendiente:\n\n$$y - 1 = \\frac{3}{13}(x + 7) \\quad\\Rightarrow\\quad 13y - 13 = 3x + 21 \\quad\\Rightarrow\\quad -3x + 13y - 34 = 0$$\n\nPuedes verificar sustituyendo $P(-7,1)$: $21 + 13 - 34 = 0$. ✓"
+ },
+ {
+  "id": 62,
+  "explanation": "Completa cuadrados agrupando por variable:\n\n$$(x^2 + 6x + 9) + (y^2 - 4y + 4) = 12 + 9 + 4$$\n\n$$(x + 3)^2 + (y - 2)^2 = 25$$\n\nDe la forma $(x - h)^2 + (y - k)^2 = r^2$ se lee el centro $C(-3, 2)$ —ojo con los signos: es lo *contrario* de lo que aparece dentro del paréntesis— y $r = \\sqrt{25} = 5$.\n\nLas opciones con $r = 2\\sqrt{3}$ vienen de tomar $r = \\sqrt{12}$, es decir, de olvidar sumar el 9 y el 4 al lado derecho al completar los cuadrados."
+ },
+ {
+  "id": 63,
+  "explanation": "Vértice en el origen y eje focal sobre el eje $x$: la forma es $y^2 = 4px$. La directriz es $x + 3 = 0$, o sea $x = -3$; como la directriz queda a la izquierda, la parábola abre a la derecha y $p = 3$ (distancia del vértice a la directriz). Entonces:\n\n$$y^2 = 4(3)x = 12x \\quad\\Rightarrow\\quad y^2 - 12x = 0$$\n\nLas opciones con $x^2$ corresponden a parábolas verticales, imposibles aquí porque el eje focal es horizontal: eso descarta A y B de entrada."
+ },
+ {
+  "id": 64,
+  "explanation": "De la ecuación se lee $a^2 = 100$ (el denominador mayor) y $b^2 = 75$. La distancia focal sale de:\n\n$$c^2 = a^2 - b^2 = 100 - 75 = 25 \\quad\\Rightarrow\\quad c = 5$$\n\nY la excentricidad es:\n\n$$e = \\frac{c}{a} = \\frac{5}{10} = \\frac{1}{2}$$\n\nRecuerda que en la elipse siempre $e < 1$; aquí $e = 0.5$ indica una elipse moderadamente achatada."
+ },
+ {
+  "id": 65,
+  "explanation": "El vértice $V(0, -9)$ está sobre el eje $y$, así que la hipérbola es vertical con $a = 9$:\n\n$$\\frac{y^2}{a^2} - \\frac{x^2}{b^2} = 1$$\n\nEl lado recto mide $\\frac{2b^2}{a} = 10$, de donde $b^2 = \\frac{10 \\cdot 9}{2} = 45$. Entonces:\n\n$$\\frac{y^2}{81} - \\frac{x^2}{45} = 1$$\n\nMultiplica por 405 (el común denominador): $5y^2 - 9x^2 = 405$.\n\nLa opción A tiene los mismos números pero con el término $x^2$ positivo: sería una hipérbola horizontal, y el vértice en $(0, -9)$ obliga a que abra en vertical."
+ },
+ {
+  "id": 66,
+  "explanation": "Para clasificar una cónica con término $xy$ se usa el discriminante $B^2 - 4AC$, con $A = 1$, $B = 4$, $C = 4$:\n\n$$B^2 - 4AC = 16 - 16 = 0$$\n\nLa regla: si es negativo, elipse (o circunferencia); si es cero, **parábola**; si es positivo, hipérbola. Aquí da exactamente cero, así que es una parábola (girada, por eso aparece el término $xy$).\n\nOtra pista: $x^2 + 4xy + 4y^2 = (x + 2y)^2$ es un cuadrado perfecto, huella típica de parábola."
+ },
+ {
+  "id": 67,
+  "explanation": "$f(x) = 4$ es una función **constante**: vale 4 sin importar qué valor tome $x$. Por eso:\n\n$$\\lim_{x \\to -2} 4 = 4$$\n\nEl límite de una constante es la constante misma. Si contestaste $-2$, confundiste el valor al que tiende $x$ con el valor al que tiende la función: el límite pregunta por $f(x)$, no por $x$."
+ },
+ {
+  "id": 68,
+  "explanation": "La definición de derivada en un punto es:\n\n$$f'(a) = \\lim_{h \\to 0} \\frac{f(a+h) - f(a)}{h}$$\n\nFíjate en el orden: primero el valor \"movido\" $f(3+h)$ y **menos** el valor fijo $f(3)$, todo entre $h$. Con $f(x) = x^3$ eso es $\\frac{(3+h)^3 - 3^3}{h}$, y al desarrollar el binomio queda justo lo que muestra la opción A.\n\nLa B tiene la resta al revés (daría la derivada con signo cambiado) y la C suma en vez de restar, lo cual ni siquiera es un cociente de incrementos."
+ },
+ {
+  "id": 69,
+  "explanation": "La derivada es negativa donde la función **baja**. En la gráfica, $f$ sube hasta el máximo local en $x = 2$, desciende de ahí al mínimo local en $x = 4$, y luego vuelve a subir. El tramo de bajada es el intervalo $(2, 4)$.\n\nEl detalle fino está en los paréntesis: en $x = 2$ y $x = 4$ la curva tiene tangente horizontal, o sea $f' = 0$, no negativa. Por eso el intervalo es abierto y la opción B, que incluye el 2 con corchete, no funciona."
+ },
+ {
+  "id": 70,
+  "explanation": "Deriva con producto (o desarrolla): $y' = (x-4)^2 + 2x(x-4) = (x-4)(3x - 4)$.\n\nIgualando a cero: $x = 4$ y $x = \\frac{4}{3}$, ambos dentro de $[0, 4]$. Evalúa la función:\n\n$$y\\left(\\tfrac{4}{3}\\right) = \\tfrac{4}{3}\\left(\\tfrac{4}{3} - 4\\right)^2 = \\tfrac{4}{3} \\cdot \\tfrac{64}{9} = \\tfrac{256}{27} \\qquad y(4) = 4(0)^2 = 0$$\n\nAsí que el máximo está en $\\left(\\frac{4}{3}, \\frac{256}{27}\\right)$ y el mínimo en $(4, 0)$. Un descarte rápido: como $(x-4)^2$ se anula en $x = 4$, forzosamente $y(4) = 0$, lo que elimina B y C sin derivar."
+ },
+ {
+  "id": 71,
+  "explanation": "Aplica la regla de la potencia y evalúa en los extremos:\n\n$$\\int_0^2 x^2\\,dx = \\left[\\frac{x^3}{3}\\right]_0^2 = \\frac{2^3}{3} - \\frac{0^3}{3} = \\frac{8}{3}$$\n\nEl resultado es positivo porque estás midiendo el área bajo $x^2$, que está por encima del eje en todo el intervalo: eso descarta la opción A de inmediato. Si te dio 8, olvidaste dividir entre 3 al integrar."
+ },
+ {
+  "id": 72,
+  "explanation": "Usa el cambio de variable $u = 2x - 1$, con $du = 2\\,dx$, es decir $dx = \\frac{du}{2}$:\n\n$$\\int (2x-1)^3\\,dx = \\frac{1}{2}\\int u^3\\,du = \\frac{1}{2} \\cdot \\frac{u^4}{4} + C = \\frac{(2x-1)^4}{8} + C$$\n\nSi elegiste B, integraste como si fuera $u^3$ a secas y olvidaste el $\\frac{1}{2}$ que compensa la derivada interna del $2x - 1$. Puedes comprobar derivando A: $\\frac{4(2x-1)^3 \\cdot 2}{8} = (2x-1)^3$. ✓"
+ },
+ {
+  "id": 73,
+  "explanation": "La función apelativa (o conativa) busca **influir en el receptor**: darle una orden, pedirle algo, llamar su atención. Sus marcas típicas son el vocativo y el imperativo, y la opción C tiene ambos: \"Niño\" (llama a alguien) y \"déjame, no pises\" (le ordena).\n\nLa A es expresiva (habla de las emociones del emisor, con exclamación) y la B y la D son poéticas: juegan con el lenguaje mediante imágenes, no le piden nada a nadie."
+ },
+ {
+  "id": 74,
+  "explanation": "La función poética centra la atención en la **forma del mensaje**: metáforas, imágenes, ritmo. \"Las nieves del tiempo platearon mi sien\" es una metáfora doble: las canas como nieve y el verbo *platear* para el encanecimiento. No informa de manera directa; embellece lo que dice.\n\nLas otras opciones son enunciados referenciales o narrativos: cuentan o describen sin ese trabajo estético sobre el lenguaje."
+ },
+ {
+  "id": 75,
+  "explanation": "El párrafo pinta **cómo es** el alcoholismo: enumera sus características y síntomas (\"enfermedad progresiva y crónica\", \"del malestar hasta el dolor intenso\", \"trastornos en el pensamiento, las emociones y la conducta\"). Presentar los rasgos de algo es la forma **descriptiva** del discurso.\n\nNo es narrativa porque no hay hechos que se sucedan en el tiempo, y no es argumentativa porque el autor no defiende una postura ni intenta convencerte de nada: solo caracteriza la enfermedad."
+ },
+ {
+  "id": 76,
+  "explanation": "Aquí el autor sí toma postura y propone: \"**debe** ponerse énfasis en la calidad y equidad\", \"ello **implica** dar continuidad... mejorar la eficiencia... llevar a cabo políticas\". Parte de una premisa (la cobertura educativa es insuficiente en los estratos bajos) y de ella deriva lo que hay que hacer. Defender una tesis con razones es la forma **argumentativa**.\n\nSe distingue de la expositiva en eso justamente: la expositiva solo informa; ésta opina y prescribe con verbos de obligación."
+ },
+ {
+  "id": 77,
+  "explanation": "El nudo es el momento en que se rompe el equilibrio inicial y arranca el conflicto. El planteamiento nos presenta a \"una buena mujer... lo había sido toda su vida\"; la ruptura llega con \"**Ese día, sin embargo**, una fría determinación le roía las entrañas\": ese *sin embargo* marca el quiebre que desata toda la transformación posterior.\n\nLa opción A ya es parte del desarrollo (la acción en los almacenes) y la D es el desenlace, cuando recupera su aspecto habitual."
+ },
+ {
+  "id": 78,
+  "explanation": "El cuento muestra a una mujer buena y normal que, al entrar a las rebajas —una situación donde todos compiten por las mismas prendas—, se convierte en fiera: garras, zarpazos, colmillos. La metamorfosis ocurre precisamente por la **competencia**, y al salir de ella recupera su aspecto. Esa es la idea que sintetiza C: el comportamiento cambia en situación de competencia.\n\nLa D suena tentadora por lo de la \"jungla\", pero el texto no aconseja no salir de casa: solo retrata lo que la competencia hace con la gente."
+ },
+ {
+  "id": 79,
+  "explanation": "En el texto, la frase aparece justo cuando la mujer entra a las rebajas y \"ya no pensaba en su familia\": la comparación con el cazador y el sabueso describe a alguien que olvida toda norma de convivencia —despedaza carótidas, se abre paso a zarpazos— con tal de ganar \"la mejor presa\", que aquí son los artículos rebajados. Es decir, **pierde la noción de los códigos de conducta** por conseguir la ganga antes que los demás.\n\nLa A exagera: el texto es una sátira del comportamiento en las rebajas, no habla de consumar crímenes reales."
+ },
+ {
+  "id": 80,
+  "explanation": "Metamorfosis significa transformación, y eso es lo que le pasa a la protagonista: entra a los almacenes siendo \"una buena mujer\" y su **conducta** se vuelve la de un animal salvaje (manos peludas, zarpazos, colmillos), hasta que al salir \"tardó unos 20 minutos en recuperar su aspecto habitual\". El título nombra ese cambio de comportamiento.\n\nNo es la D: la mujer nunca cambia de parecer —su determinación es firme de principio a fin—; lo que se transforma es cómo actúa."
+ }
+]

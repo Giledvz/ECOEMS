@@ -32,7 +32,8 @@
               "C": "Un movimiento con aceleración positiva.",
               "D": "Un movimiento con aceleración negativa."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "En una gráfica de velocidad contra tiempo, la pendiente de la recta es la aceleración. Aquí la recta baja: la velocidad empieza con un valor grande y va disminuyendo de manera uniforme, así que la pendiente es negativa y por lo tanto la aceleración es negativa.\n\nLa caída libre desde el reposo (opción A) se vería al revés: una recta que arranca en cero y sube, porque el cuerpo va ganando velocidad."
           },
           {
             "id": 2,
@@ -45,7 +46,8 @@
               "C": "mayor",
               "D": "inversa"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Cuando dos fuerzas son perpendiculares, la resultante se calcula con el teorema de Pitágoras: $F_R = \\sqrt{F_1^2 + F_2^2}$, no sumando directo. Compruébalo con números: si $F_1 = 3$ N y $F_2 = 4$ N, la resultante es $\\sqrt{9+16} = 5$ N, mientras que la suma algebraica daría $7$ N. La resultante solo igualaría a la suma si las fuerzas apuntaran en la misma dirección; en cualquier otro ángulo siempre es **menor**."
           },
           {
             "id": 3,
@@ -59,7 +61,8 @@
               "C": "3.2 kg",
               "D": "4.0 kg"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Por la segunda ley de Newton, $F = ma$, así que en una gráfica de fuerza contra aceleración la masa es la pendiente de la recta. Toma un punto cómodo de la gráfica: con $a = 0.8\\ \\mathrm{m/s^2}$ la fuerza vale $2.0$ N, entonces\n\n$$m = \\frac{F}{a} = \\frac{2.0}{0.8} = 2.5\\ \\mathrm{kg}$$\n\nVerifica con otro punto: $F = 1.0$ N con $a = 0.4\\ \\mathrm{m/s^2}$ da lo mismo. La pendiente es constante porque la masa no cambia."
           },
           {
             "id": 4,
@@ -72,7 +75,8 @@
               "C": "Ec = 50,400 J y Ep = 0 J",
               "D": "Ec = 420 J y Ep = 0 J"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Al salir del cañón toda la energía es cinética:\n\n$$E_c = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(7.0)(120)^2 = \\tfrac{1}{2}(7.0)(14{,}400) = 50{,}400\\ \\mathrm{J}$$\n\nEn el punto más alto la bala se detiene un instante: su energía cinética se convirtió por completo en potencial. Por conservación de la energía, $E_p = 50{,}400$ J también.\n\nSi te dio 420 J, olvidaste elevar la velocidad al cuadrado: $\\tfrac{1}{2}(7)(120) = 420$."
           },
           {
             "id": 5,
@@ -86,7 +90,8 @@
               "C": "$U_A = 4\\frac{m}{s}$; $U_B = -2\\frac{m}{s}$",
               "D": "$U_A = 2\\frac{m}{s}$; $U_B = 4\\frac{m}{s}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En un choque elástico entre una bola con velocidad $v$ y otra en reposo, las velocidades finales son $U_A = \\frac{m_A - m_B}{m_A + m_B}\\,v$ y $U_B = \\frac{2m_A}{m_A + m_B}\\,v$. Con $m_B = 2m_A$ y $v = 6\\ \\mathrm{m/s}$:\n\n$$U_A = \\frac{m - 2m}{3m}(6) = -2\\ \\mathrm{m/s}, \\qquad U_B = \\frac{2m}{3m}(6) = 4\\ \\mathrm{m/s}$$\n\nEl signo negativo tiene todo el sentido físico: A choca contra una bola más pesada y **rebota** hacia atrás, mientras B sale hacia adelante. Puedes comprobar que se conservan el momento ($6m = -2m + 2m\\cdot 4$... es decir $6m = 6m$) y la energía cinética."
           },
           {
             "id": 6,
@@ -99,7 +104,8 @@
               "C": "428 °F",
               "D": "104 °F"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La conversión de Celsius a Fahrenheit es $°F = \\frac{9}{5}\\,°C + 32$. Sustituyes:\n\n$$°F = \\frac{9}{5}(220) + 32 = 396 + 32 = 428\\ °F$$\n\nSi te dio 104 °F, aplicaste la fórmula al revés (convertiste como si 220 fueran grados Fahrenheit); el error típico es despejar mal la ecuación."
           },
           {
             "id": 7,
@@ -112,7 +118,8 @@
               "C": "reflejan.",
               "D": "superponen."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Cuando dos o más olas coinciden en el mismo punto, sus alturas se suman: es el principio de **superposición**. Si las crestas de varias olas llegan al mismo tiempo, se refuerzan (interferencia constructiva) y se forma una ola mucho más grande que el promedio. Eso es justo lo que describe el enunciado.\n\nLa reflexión y la refracción también le pasan a las olas, pero explican cambios de dirección, no que aparezcan olas más grandes."
           },
           {
             "id": 8,
@@ -126,7 +133,8 @@
               "C": "9 $\\frac{cm}{ciclo}$",
               "D": "18 $\\frac{cm}{ciclo}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Cuenta los ciclos completos en la figura: en los 90 cm de cuerda caben 5 ondas completas (cada ciclo es una cresta con su valle). La longitud de onda es lo que mide un ciclo:\n\n$$\\lambda = \\frac{90\\ \\mathrm{cm}}{5\\ \\mathrm{ciclos}} = 18\\ \\frac{\\mathrm{cm}}{\\mathrm{ciclo}}$$\n\nSi te dio 9 cm, contaste los 10 vientres (medias ondas) en lugar de los ciclos completos: cada vientre es solo media longitud de onda."
           },
           {
             "id": 9,
@@ -139,7 +147,8 @@
               "C": "incrementa al doble.",
               "D": "incrementa al cuádruple."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Por la ley de Ohm, $I = \\frac{V}{R}$. Si el voltaje y la resistencia se duplican al mismo tiempo:\n\n$$I' = \\frac{2V}{2R} = \\frac{V}{R} = I$$\n\nLos doses se cancelan y la corriente queda exactamente igual. El aumento de voltaje empuja más corriente, pero el aumento de resistencia la frena en la misma proporción."
           },
           {
             "id": 10,
@@ -153,7 +162,8 @@
               "C": "I amperes.",
               "D": "2I amperes."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Fíjate bien en el esquema: el resistor $2R$ está en una malla que queda conectada en paralelo con un tramo de alambre sin resistencia (la rama central del circuito). La corriente siempre toma el camino de menor resistencia, y un alambre ideal tiene resistencia cero: toda la corriente pasa por ese alambre y por $2R$ no circula nada. Se dice que $2R$ está **en cortocircuito**, así que la corriente a través de él es 0 amperes.\n\nLa corriente $3I$ que se menciona circula por el resto del circuito, pero eso no cambia que la rama de $2R$ esté puenteada."
           }
         ]
       },
@@ -172,7 +182,8 @@
               "C": "el reportaje y la entrevista.",
               "D": "la crónica y la editorial."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Los géneros periodísticos **informativos** se limitan a presentar hechos: la noticia, el reportaje (que amplía y documenta una noticia) y la entrevista (que recoge declaraciones directas). En cambio, el artículo y la editorial pertenecen al género de opinión, y la caricatura también expresa un punto de vista; por eso las otras opciones mezclan géneros de opinión con los informativos."
           },
           {
             "id": 12,
@@ -185,7 +196,8 @@
               "C": "Texto épico.",
               "D": "Novela."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El **texto dramático** es el que se escribe para ser llevado a escena: está pensado para que actores lo representen ante un público, por eso se estructura en diálogos y acotaciones en lugar de narración. La novela, el ensayo y el texto épico se conciben para ser leídos, no representados."
           },
           {
             "id": 13,
@@ -198,7 +210,8 @@
               "C": "Género dramático cuyo origen se encuentra en los rituales para el dios Dionisio, sus personajes son aristócratas y cuenta con un final funesto.",
               "D": "Género dramático de origen griego cuyos personajes representan el conflicto entre dioses y los hombres; su final puede ser feliz."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La comedia nació en Grecia y se distingue por retratar a personajes comunes en las adversidades de la vida cotidiana, exhibiendo con humor las debilidades humanas, y por tener siempre un **desenlace feliz**. Esa es exactamente la opción B.\n\nLa opción C describe a la tragedia: origen en los rituales a Dionisio, personajes aristocráticos y final funesto."
           },
           {
             "id": 14,
@@ -211,7 +224,8 @@
               "C": "Prosopopeya.",
               "D": "Antítesis."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La frase enfrenta dos ideas opuestas en una misma línea: *nacer* contra *morir* y *ayer* contra *mañana*. Esa contraposición de conceptos contrarios es la **antítesis**, que Góngora usa para condensar la brevedad de la vida.\n\nNo es paralelismo porque lo que importa no es la repetición de estructuras, sino el choque de significados opuestos."
           },
           {
             "id": 15,
@@ -224,7 +238,8 @@
               "C": "Tragedia.",
               "D": "Comedia."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El fragmento narra las hazañas de un héroe —el rey Arturo, cuyas \"proezas son ejemplo de valor\"— en tercera persona y con tono elevado: eso es el género **épico**, que canta las acciones de héroes y las presenta como modelo para la colectividad.\n\nNo es lírico porque no expresa sentimientos íntimos del autor, y no es tragedia ni comedia porque no es un texto dramático para representarse."
           },
           {
             "id": 16,
@@ -237,7 +252,8 @@
               "C": "Realismo.",
               "D": "Expresionismo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El **Realismo** surge en la segunda mitad del siglo XIX como reacción al Romanticismo: el narrador busca la objetividad, describe con detalle casi fotográfico ambientes y personajes, y retrata la sociedad tal como es. El Romanticismo, en cambio, es anterior y privilegia la subjetividad y el sentimiento, justo lo contrario de lo que pide el enunciado."
           },
           {
             "id": 17,
@@ -250,7 +266,8 @@
               "C": "Reacciona contra las corrientes académicas y románticas que le precedieron durante la primera mitad del siglo XIX.",
               "D": "Hace énfasis en lo moral y lo social de la actuación humana, con el objetivo de combatir prejuicios mediante el conocimiento y el estudio."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La literatura contemporánea se caracteriza por explorar el **mundo interior** de los personajes (monólogo interior, flujo de conciencia) y por romper con la forma tradicional de contar: propone nuevas maneras de entender la realidad y el tiempo, con saltos temporales y realidades alternas. Eso resume la opción A.\n\nLa opción B describe al Romanticismo y la C al Realismo: son corrientes del siglo XIX, no contemporáneas."
           },
           {
             "id": 18,
@@ -263,7 +280,8 @@
               "C": "brevedad y rápido desenlace.",
               "D": "intensidad y múltiples hilos narrativos."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El cuento se define por su **brevedad**: concentra la historia en un solo conflicto, con pocos personajes, y avanza rápido hacia el desenlace. La novela es la que tiene extensión para desarrollar personajes complejos, varios clímax y múltiples hilos narrativos; fíjate que las otras tres opciones describen justamente rasgos de la novela, no del cuento."
           },
           {
             "id": 19,
@@ -276,7 +294,8 @@
               "C": "dramático — verso — escueta",
               "D": "lírico — prosa — simple"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La novela pertenece al género **narrativo**: un narrador cuenta una historia. Se escribe en **prosa** (a diferencia de la poesía, que usa verso) y, por su extensión, su estructura suele ser **compleja**: varios personajes, tramas paralelas, saltos en el tiempo.\n\nLa opción B tropieza desde el inicio: el género épico clásico sí usaba verso, pero la novela moderna no es épica ni está versificada."
           },
           {
             "id": 20,
@@ -289,7 +308,8 @@
               "C": "bibliográfica.",
               "D": "de cita textual."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La ficha transcribe **palabras textuales** de Fromm, y la señal está a la vista: el fragmento va entre comillas y se indica la página exacta (p. 37) de donde se copió. Eso es una ficha de **cita textual**.\n\nNo es bibliográfica porque esa solo registra los datos del libro (autor, título, editorial) sin reproducir ningún pasaje; aquí los datos acompañan a la cita, no son el contenido principal."
           }
         ]
       },
@@ -308,7 +328,8 @@
               "C": "mezclas, átomos y compuestos.",
               "D": "átomos, moléculas y coloides."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La pregunta se refiere a las partículas que forman la materia por dentro: **átomos** (la unidad básica), **moléculas** (átomos unidos por enlaces) e **iones** (átomos o moléculas con carga eléctrica).\n\nLas mezclas, los compuestos y los coloides no son estructura interna: son formas de clasificar la materia a nivel macroscópico, por eso las demás opciones no funcionan."
           },
           {
             "id": 22,
@@ -321,7 +342,8 @@
               "C": "Los átomos de un mismo elemento son iguales en masa, pero no en tamaño.",
               "D": "Los átomos de dos elementos se pueden combinar entre sí en distintas proporciones para formar más de un compuesto."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El postulado que sigue vigente es el de las proporciones: los átomos de dos elementos pueden combinarse en distintas proporciones y formar compuestos diferentes (por ejemplo, C y O forman $CO$ y $CO_2$). Eso sigue siendo cierto hoy.\n\nLas opciones A y B cayeron cuando se descubrieron el electrón, el protón y el neutrón: el átomo sí es divisible. Y la C es doblemente falsa: los isótopos demuestran que átomos del mismo elemento pueden tener distinta masa."
           },
           {
             "id": 23,
@@ -334,7 +356,8 @@
               "C": "su facilidad de oxidarse en el aire.",
               "D": "el orden creciente de sus masas atómicas."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Mendeleev ordenó los elementos según el orden creciente de sus **masas atómicas**, y al hacerlo notó que las propiedades se repetían periódicamente; incluso dejó huecos para elementos que aún no se descubrían.\n\nSi elegiste el número atómico (opción A), te fuiste a la tabla **moderna**: ese criterio lo estableció Moseley después, cuando ya se conocía la estructura del átomo."
           },
           {
             "id": 24,
@@ -347,7 +370,8 @@
               "C": "Gases nobles.",
               "D": "Metales alcalinotérreos."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Los **gases nobles** tienen su última capa de electrones completa (ocho electrones, o dos en el caso del helio), así que no necesitan ganar, perder ni compartir electrones: por eso casi no reaccionan.\n\nLos metales alcalinos y los halógenos son justo lo contrario: los primeros sueltan con muchísima facilidad su único electrón externo y los segundos capturan electrones con avidez; son de las familias más reactivas de la tabla."
           },
           {
             "id": 25,
@@ -360,7 +384,8 @@
               "C": "$1.8066 \\times 10^{24}$",
               "D": "$1.8066 \\times 10^{23}$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Un mol de cualquier sustancia contiene el número de Avogadro de partículas: $6.022 \\times 10^{23}$. Para 3 moles de agua multiplicas:\n\n$$3 \\times 6.022 \\times 10^{23} = 18.066 \\times 10^{23} = 1.8066 \\times 10^{24}\\ \\text{moléculas}$$\n\nSi elegiste $1.8066 \\times 10^{23}$, hiciste bien la multiplicación pero no ajustaste el exponente al pasar el 18 a notación científica."
           },
           {
             "id": 26,
@@ -373,7 +398,8 @@
               "C": "sea un buen disolvente de compuestos no polares.",
               "D": "se formen puentes de hidrógeno."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Por su forma angular, las cargas de la molécula de agua no se cancelan: el oxígeno concentra carga parcial negativa y los hidrógenos quedan con carga parcial positiva. Esa polaridad permite que el oxígeno de una molécula atraiga al hidrógeno de otra, formando **puentes de hidrógeno**.\n\nCuidado con la opción A: está al revés, el agua es *más* densa en estado líquido que en sólido (por eso el hielo flota)."
           },
           {
             "id": 27,
@@ -386,7 +412,8 @@
               "C": "$CH_3COOH$ es un ácido fuerte por lo que se ioniza parcialmente.",
               "D": "$HCl_{(ac)}$ es un ácido fuerte por lo que se ioniza completamente."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La intensidad del foco depende de cuántos iones hay en la disolución, porque son ellos los que conducen la corriente. El foco brilla intensamente con $HCl$ porque es un **ácido fuerte**: se ioniza completamente y libera muchos iones. Con el ácido acético ($CH_3COOH$) el foco baja porque es un ácido débil que solo se ioniza parcialmente.\n\nLas opciones A y C conectan mal los conceptos: fuerte va con ionización completa y débil con parcial, nunca cruzados."
           },
           {
             "id": 28,
@@ -399,7 +426,8 @@
               "C": "oxida y aumenta",
               "D": "reduce y aumenta"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Perder electrones es, por definición, **oxidarse**. Y como los electrones tienen carga negativa, al perderlos el átomo queda más positivo: su número de oxidación **aumenta**. Por ejemplo, $Na \\rightarrow Na^+ + e^-$: el sodio pasa de 0 a $+1$.\n\nLa reducción es el proceso contrario: ganar electrones y disminuir el número de oxidación. Un truco para no confundirte: *reducir* = el número se *reduce*."
           },
           {
             "id": 29,
@@ -412,7 +440,8 @@
               "C": "Tirosina.",
               "D": "Triptófano."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La **vitamina E** es el antioxidante clásico entre los nutrimentos: protege a las células del daño de los radicales libres y se encuentra en aceites vegetales, nueces y semillas. En exceso interfiere con la coagulación de la sangre y puede provocar sangrados.\n\nLa vitamina D regula el calcio (huesos), y la tirosina y el triptófano son aminoácidos, no antioxidantes."
           },
           {
             "id": 30,
@@ -425,7 +454,8 @@
               "C": "$Ca(OH)_2(s) \\rightarrow CaO(s) + H_2O(l)$; $\\Delta H > 0$",
               "D": "$CaO(s) + H_2O(l) + Energía \\rightarrow Ca(OH)_2(s)$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Una reacción **exotérmica** libera energía, y eso se expresa de dos maneras: escribiendo la energía como producto (del lado derecho de la flecha) o con $\\Delta H < 0$. La opción A cumple: tiene $\\Delta H < 0$.\n\nLas opciones B y D ponen la energía del lado de los reactivos (la reacción la absorbe) y la C tiene $\\Delta H > 0$: las tres son endotérmicas."
           }
         ]
       },
@@ -444,7 +474,8 @@
               "C": "longitud — nutación",
               "D": "altura — longitud"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Para ubicar cualquier punto sobre la superficie terrestre bastan dos coordenadas: la **latitud** (distancia angular respecto al Ecuador, hacia el norte o el sur) y la **longitud** (distancia angular respecto al meridiano de Greenwich, hacia el este o el oeste). Juntas forman la red de paralelos y meridianos.\n\nLa altitud solo agrega la elevación sobre el nivel del mar, pero no sirve para localizar un punto en el mapa; y la nutación es un movimiento del eje terrestre, no una coordenada."
           },
           {
             "id": 32,
@@ -457,7 +488,8 @@
               "C": "el clima y las regiones naturales.",
               "D": "la hidrografía y los asentamientos humanos."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La geografía **física** estudia los elementos naturales del planeta: relieve, clima, aguas, vegetación y las regiones naturales que resultan de combinarlos. La opción C es la única donde ambos elementos son naturales.\n\nLas otras tres mezclan un elemento natural con uno humano (actividades agrícolas, zonas rurales, asentamientos), y todo lo relacionado con la actividad del ser humano corresponde a la geografía humana o económica."
           },
           {
             "id": 33,
@@ -470,7 +502,8 @@
               "C": "Madre Oriental.",
               "D": "de Guadalupe."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La **Sierra Madre del Sur** corre paralela a la costa del Pacífico atravesando Guerrero y Oaxaca; para bajar del altiplano (Morelos) hacia Guerrero hay que cruzarla. La Sierra Madre Occidental está en el noroeste del país y la Oriental en el este, muy lejos de esa ruta."
           },
           {
             "id": 34,
@@ -483,7 +516,8 @@
               "C": "Olas de traslación.",
               "D": "Mareas vivas."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las **corrientes marinas** son grandes desplazamientos de agua oceánica que redistribuyen el calor del planeta: llevan agua fría hacia zonas cálidas y viceversa, regulando la temperatura global. Las corrientes frías, además, arrastran aguas profundas ricas en nutrientes, lo que atrae grandes cardúmenes y favorece la pesca (como en las costas de Perú o Baja California).\n\nLas olas y las mareas mueven el agua localmente, pero no transportan masas de agua a través de los océanos ni regulan el clima."
           },
           {
             "id": 35,
@@ -496,7 +530,8 @@
               "C": "destrucción de la capa de ozono.",
               "D": "presencia de lluvia ácida."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El bióxido de carbono ($CO_2$) se produce al quemar combustibles fósiles: la **combustión del petróleo** y sus derivados (gasolina, diésel) en vehículos e industrias es la principal fuente de emisión.\n\nLos aerosoles y la destrucción de la capa de ozono se relacionan con los clorofluorocarbonos, no con el $CO_2$; y la lluvia ácida es consecuencia de la contaminación, no causa del aumento de $CO_2$."
           },
           {
             "id": 36,
@@ -509,7 +544,8 @@
               "C": "Los derrames de petróleo.",
               "D": "La deforestación."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La **polución agroquímica** es una de las principales causas de contaminación del agua: los fertilizantes y plaguicidas que se aplican en los campos son arrastrados por la lluvia y el riego hacia ríos, lagos y mantos acuíferos, contaminando enormes volúmenes de agua de forma difusa y constante.\n\nLos derrames de petróleo son graves pero puntuales, y la deforestación afecta al suelo y al ciclo del agua más que a su calidad directamente."
           },
           {
             "id": 37,
@@ -522,7 +558,8 @@
               "C": "Centro Sur.",
               "D": "Sureste."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La región **Centro Sur** concentra a la Ciudad de México y su zona metropolitana, junto con el Estado de México, Morelos y estados vecinos: es por mucho la región más poblada del país. Esa concentración de industria, servicios y empleos la vuelve el principal imán de la migración del campo a la ciudad desde mediados del siglo XX."
           },
           {
             "id": 38,
@@ -535,7 +572,8 @@
               "C": "31 entidades.",
               "D": "32 entidades."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La República Mexicana está integrada por **32 entidades federativas**: 31 estados más la Ciudad de México. Ojo con la opción C: 31 es solo el número de estados, pero la pregunta pide las entidades, y la Ciudad de México cuenta como una entidad más."
           },
           {
             "id": 39,
@@ -548,7 +586,8 @@
               "C": "costa del Golfo.",
               "D": "región del Pacífico sur."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La producción petrolera de México se concentra en la **costa del Golfo**: los yacimientos de Campeche (como Cantarell y Ku-Maloob-Zaap), Tabasco y Veracruz aportan la gran mayoría del crudo nacional, tanto en pozos marinos como terrestres. Las costas del Pacífico prácticamente no tienen producción petrolera."
           },
           {
             "id": 40,
@@ -561,7 +600,8 @@
               "C": "maquiladora",
               "D": "metalúrgica"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El corredor del Bajío (Guanajuato, Querétaro, Aguascalientes, San Luis Potosí) se ha consolidado como la principal zona **automotriz** de México: ahí se instalaron plantas armadoras como General Motors, Nissan, Honda, Mazda y BMW, junto con cientos de fabricantes de autopartes.\n\nLa industria maquiladora se concentra en la frontera norte y la petroquímica en la costa del Golfo."
           }
         ]
       },
@@ -580,7 +620,8 @@
               "C": "$8.5\\ \\frac{km}{L}$",
               "D": "$9.5\\ \\frac{km}{L}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El rendimiento es kilómetros entre litros: $50.4 \\div 6.3 = 8$. Para hacerlo sin calculadora, multiplica ambos por 10 ($504 \\div 63$) y nota que $63 \\times 8 = 504$. El rendimiento es $8\\ \\frac{km}{L}$ exactos."
           },
           {
             "id": 42,
@@ -593,7 +634,8 @@
               "C": "$2xy^2$",
               "D": "$8x^9y^{18}$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La raíz cúbica se reparte factor por factor: $\\sqrt[3]{8} = 2$ (porque $2^3 = 8$), $\\sqrt[3]{x^3} = x$ y $\\sqrt[3]{y^6} = y^{6/3} = y^2$. Juntando todo: $2xy^2$.\n\nSi elegiste A, olvidaste sacar raíz al 8: la raíz cúbica también le toca al coeficiente, no solo a las letras."
           },
           {
             "id": 43,
@@ -606,7 +648,8 @@
               "C": "$y^2 + 1$",
               "D": "$y^2 + 2y - 1$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Multiplica término a término:\n\n$$(y-1)(y+2) = y^2 + 2y - y - 2 = y^2 + y - 2$$\n\nEl truco rápido para $(y+a)(y+b)$: el término de en medio es la suma $(-1+2 = 1)$ y el independiente es el producto $(-1)(2) = -2$.\n\nSi te dio $y^2 - 2$ (opción B), solo multiplicaste los extremos y te comiste los términos cruzados."
           },
           {
             "id": 44,
@@ -619,7 +662,8 @@
               "C": "$\\frac{x - 3}{x + 4}$",
               "D": "$\\frac{x - 4}{x - 3}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Factoriza arriba y abajo. El numerador: $x^2 - 7x + 12 = (x-3)(x-4)$ (dos números que suman $-7$ y multiplican $12$). El denominador: $x^2 - 16$ es diferencia de cuadrados, $(x-4)(x+4)$, junto con el $(x-3)$ que ya traía:\n\n$$\\frac{(x-3)(x-4)}{(x-4)(x+4)(x-3)} = \\frac{1}{x+4}$$\n\nSe cancelan $(x-3)$ y $(x-4)$, y solo sobrevive el $(x+4)$ abajo."
           },
           {
             "id": 45,
@@ -632,7 +676,8 @@
               "C": "$x = \\frac{14}{9}$",
               "D": "$x = -14$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Quita el denominador multiplicando toda la ecuación por 2:\n\n$$2(2x-4) = 5x+6 \\quad\\Rightarrow\\quad 4x - 8 = 5x + 6$$\n\nPasa las $x$ a un lado y los números al otro: $-8 - 6 = 5x - 4x$, o sea $x = -14$.\n\nComprueba: $2(-14) - 4 = -32$ y $\\frac{5(-14)+6}{2} = \\frac{-64}{2} = -32$. Si te dio $14$ (opción A), se te fue un signo al pasar términos."
           },
           {
             "id": 46,
@@ -645,7 +690,8 @@
               "C": "$\\frac{5}{8}$",
               "D": "$\\frac{8}{5}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Pasa el 3 al otro lado: $-\\frac{x}{x+2} = 4$. Multiplica por $(x+2)$:\n\n$$-x = 4(x+2) = 4x + 8$$\n\nEntonces $-5x = 8$ y $x = -\\frac{8}{5}$.\n\nComprueba: $x + 2 = \\frac{2}{5}$, así que $\\frac{x}{x+2} = \\frac{-8/5}{2/5} = -4$, y $3 - (-4) = 7$. Sí cumple. Si llegaste a $-\\frac{5}{8}$, invertiste la fracción al despejar."
           },
           {
             "id": 47,
@@ -658,7 +704,8 @@
               "C": "$x \\leq 50$",
               "D": "$x < 50$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "\"Cuando mucho 50\" significa que 50 es el tope: puedo tener 50 pesos o menos, pero no más. Eso incluye la igualdad, así que la desigualdad correcta es $x \\leq 50$.\n\nLa opción D ($x < 50$) es el error clásico: excluye la posibilidad de tener exactamente \\$50.00, y \"cuando mucho\" sí la permite."
           },
           {
             "id": 48,
@@ -671,7 +718,8 @@
               "C": "C = 37, G = 24",
               "D": "C = 35, G = 26"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Cada animal tiene una cabeza: $C + G = 61$. Los conejos tienen 4 patas y las gallinas 2: $4C + 2G = 196$. Despeja de la primera $G = 61 - C$ y sustituye:\n\n$$4C + 2(61 - C) = 196 \\quad\\Rightarrow\\quad 2C + 122 = 196 \\quad\\Rightarrow\\quad C = 37$$\n\nEntonces $G = 61 - 37 = 24$. Verifica: $4(37) + 2(24) = 148 + 48 = 196$. ✓"
           },
           {
             "id": 49,
@@ -684,7 +732,8 @@
               "C": "x = 8; y = 5",
               "D": "x = 7; y = 4"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La primera ecuación ya te da $y$ despejada, así que sustitúyela en la segunda:\n\n$$4x + (x - 3) = 32 \\quad\\Rightarrow\\quad 5x = 35 \\quad\\Rightarrow\\quad x = 7$$\n\nY entonces $y = 7 - 3 = 4$. Comprueba en la segunda: $4(7) + 4 = 32$. ✓\n\nOjo con la opción C: $x=8, y=5$ cumple $y = x - 3$ pero falla en la otra ecuación ($32+5=37$); hay que verificar en las dos."
           },
           {
             "id": 50,
@@ -697,7 +746,8 @@
               "C": "3, 10",
               "D": "−10, −12"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Sustituye cada valor de $x$ en $y = 3x^2 + 4x - 10$:\n\nPara $x = 0$: $y = 0 + 0 - 10 = -10$.\n\nPara $x = 1$: $y = 3 + 4 - 10 = -3$.\n\nLos valores que completan la tabla, en ese orden, son $-10$ y $-3$. Puedes verificar el método con la columna dada: $x = -1$ da $3 - 4 - 10 = -11$, que coincide."
           },
           {
             "id": 51,
@@ -711,7 +761,8 @@
               "C": "II y IV",
               "D": "I y III"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Una gráfica es creciente cuando, al avanzar hacia la derecha, la curva siempre sube. Revisa cada una: la I es una exponencial que sube en todo su recorrido (despacio al principio, rápido después, pero siempre sube); la III es una recta con pendiente positiva, creciente en todo su dominio. En cambio, la II y la IV van bajando de izquierda a derecha: son decrecientes. Por eso la respuesta es I y III.\n\nNo te confundas: que una curva suba \"lento\" no la hace decreciente; lo que importa es la dirección, no la rapidez."
           },
           {
             "id": 52,
@@ -724,7 +775,8 @@
               "C": "12",
               "D": "8"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Solo sustituye $x = 1$: como $1^4 = 1$, queda\n\n$$y = 5(1) + 3(1) = 5 + 3 = 8$$\n\nSi te dio 23, probablemente calculaste $5 \\cdot 4$ en lugar de $1^4$: el exponente no se multiplica, se aplica a la base."
           },
           {
             "id": 53,
@@ -737,7 +789,8 @@
               "C": "270°",
               "D": "157.5°"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Si $2\\pi$ rad $= 360°$, entonces $\\pi$ rad $= 180°$. Basta multiplicar:\n\n$$\\frac{7}{8}\\pi = \\frac{7}{8} \\times 180° = \\frac{1260°}{8} = 157.5°$$\n\nSi te dio $315°$ (opción A), usaste $360°$ en vez de $180°$: eso equivaldría a $\\frac{7}{8}$ de vuelta completa, no de $\\pi$ radianes."
           },
           {
             "id": 54,
@@ -751,7 +804,8 @@
               "C": "$\\frac{\\mathrm{sen}A}{c} = \\frac{\\mathrm{sen}B}{a}$",
               "D": "$\\frac{\\mathrm{sen}B}{c} = \\frac{\\mathrm{sen}A}{b}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La ley de senos dice que en cualquier triángulo, el seno de cada ángulo dividido entre su lado **opuesto** es constante:\n\n$$\\frac{\\mathrm{sen}\\,A}{a} = \\frac{\\mathrm{sen}\\,B}{b} = \\frac{\\mathrm{sen}\\,C}{c}$$\n\nEn la figura, el lado $a$ está enfrente del vértice $A$, y el $b$ enfrente de $B$: cada ángulo se empareja con el lado que no lo toca. Las otras opciones cruzan mal las parejas (por ejemplo, la B pone $\\mathrm{sen}\\,A$ sobre $b$, que es el lado opuesto a $B$, no a $A$)."
           },
           {
             "id": 55,
@@ -764,7 +818,8 @@
               "C": "$-2^{-1}$",
               "D": "2"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El logaritmo solo está definido para números **positivos**: su dominio es $x > 0$. Revisa las opciones: el $0$ queda fuera (no existe $\\log 0$); $-\\log 2$ es negativo (vale como $-0.301$); $-2^{-1} = -\\frac{1}{2}$ también es negativo. El único positivo es $2$, así que es el único que pertenece al dominio."
           },
           {
             "id": 56,
@@ -777,7 +832,8 @@
               "C": "$\\sqrt{162}$",
               "D": "50"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Con la fórmula de distancia entre dos puntos:\n\n$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} = \\sqrt{(2-(-7))^2 + (7-(-2))^2} = \\sqrt{9^2 + 9^2} = \\sqrt{162}$$\n\nCuidado con los signos: restar un negativo suma, por eso ambas diferencias dan 9. Si contestaste 162 (opción A), te faltó sacar la raíz cuadrada al final."
           },
           {
             "id": 57,
@@ -790,7 +846,8 @@
               "C": "$\\left(-\\frac{3}{2}, \\frac{1}{2}\\right)$",
               "D": "$\\left(-\\frac{3}{2}, -\\frac{1}{2}\\right)$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El punto medio se obtiene promediando coordenada por coordenada:\n\n$$M = \\left(\\frac{8 + (-9)}{2}, \\frac{-4 + 7}{2}\\right) = \\left(-\\frac{1}{2}, \\frac{3}{2}\\right)$$\n\nEl error típico es en los signos al sumar: $8 - 9 = -1$ (negativo) y $-4 + 7 = 3$ (positivo). La opción B es justo eso, olvidar el signo negativo de la primera coordenada."
           },
           {
             "id": 58,
@@ -804,7 +861,8 @@
               "C": "$y = -\\frac{3}{2}x + \\frac{1}{2}$",
               "D": "$y = \\frac{x}{2} - 1$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Lee dos datos de la gráfica: la recta corta al eje $y$ en $-1$ (esa es la ordenada al origen $b$) y al eje $x$ en $2$. Con esos dos puntos calculas la pendiente: sube 1 unidad por cada 2 que avanza, o sea $m = \\frac{1}{2}$. Entonces:\n\n$$y = \\frac{1}{2}x - 1 = \\frac{x}{2} - 1$$\n\nLa opción A tiene la ordenada equivocada ($-\\frac{1}{2}$ en vez de $-1$) y pendiente 1, que haría la recta más inclinada de lo que se ve."
           },
           {
             "id": 59,
@@ -817,7 +875,8 @@
               "C": "$x^2 + y^2 = 4$",
               "D": "$x^2 + y^2 = 2$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Una circunferencia con centro en el origen tiene ecuación $x^2 + y^2 = r^2$. Ojo: el lado derecho es el radio **al cuadrado**. Aquí $r = \\sqrt{2}$, así que\n\n$$r^2 = (\\sqrt{2})^2 = 2 \\quad\\Rightarrow\\quad x^2 + y^2 = 2$$\n\nLa opción B ($x^2+y^2=\\sqrt{2}$) es la trampa: pone el radio sin elevarlo al cuadrado."
           },
           {
             "id": 60,
@@ -830,7 +889,8 @@
               "C": "C (–4, 6); r = 49",
               "D": "C (4, –6); r = 49"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La forma ordinaria es $(x - h)^2 + (y - k)^2 = r^2$, con centro $(h, k)$. Compara con cuidado los signos: $(x + 4)^2 = (x - (-4))^2$, así que $h = -4$; y $(y - 6)^2$ da $k = 6$ directo. El centro es $(-4, 6)$: el signo del centro es el **contrario** al que ves dentro del paréntesis. Y el radio: $r^2 = 49$, entonces $r = \\sqrt{49} = 7$, no 49 (ese es el error de la opción C)."
           },
           {
             "id": 61,
@@ -843,7 +903,8 @@
               "C": "elipse.",
               "D": "parábola."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Fíjate en los cuadrados: solo hay **una** variable elevada al cuadrado ($y^2$), mientras que la otra ($x$) aparece lineal. Esa es la firma de la parábola. Aquí, como es $x$ en función de $y^2$, la parábola es horizontal (abre hacia un lado). Para que fuera circunferencia o elipse necesitarías $x^2$ **y** $y^2$ sumando; para hipérbola, restando."
           },
           {
             "id": 62,
@@ -856,7 +917,8 @@
               "C": "(1, 2)",
               "D": "(–1, –2)"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La forma ordinaria de la elipse es $\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1$ con centro $(h, k)$. Como la ecuación trae $(x - 2)$ y $(y - 1)$, se lee directo: $h = 2$, $k = 1$, o sea centro $(2, 1)$.\n\nLa opción A, $(-2, -1)$, es el error de signo típico: recuerda que la resta dentro del paréntesis ya trae el signo cambiado, así que $(x-2)$ significa centro en $+2$."
           },
           {
             "id": 63,
@@ -869,7 +931,8 @@
               "C": "$\\frac{4}{3}$",
               "D": "$\\frac{4}{5}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En la hipérbola $\\frac{(x-h)^2}{a^2} - \\frac{(y-k)^2}{b^2} = 1$ tienes $a^2 = 25$ y $b^2 = 9$. Para hipérbolas, $c$ se calcula **sumando**:\n\n$$c = \\sqrt{a^2 + b^2} = \\sqrt{25 + 9} = \\sqrt{34}$$\n\nY la excentricidad es $e = \\frac{c}{a} = \\frac{\\sqrt{34}}{5}$.\n\nSi elegiste C ($\\frac{4}{3}$) o D ($\\frac{4}{5}$), restaste $25 - 9 = 16$ como si fuera elipse: en la hipérbola los cuadrados se suman."
           },
           {
             "id": 64,
@@ -882,7 +945,8 @@
               "C": "II y IV",
               "D": "I y IV"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La ecuación general de segundo grado, $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$, describe lugares geométricos en el plano: las cónicas (parábola, circunferencia, elipse, hipérbola) y, en sus casos particulares, también la línea recta. La parábola (IV) es cónica y la recta (I) queda incluida como caso degenerado o cuando los coeficientes cuadráticos se anulan. El triángulo no es una curva descrita por una sola ecuación, y el cono es un cuerpo en tres dimensiones, no un lugar geométrico del plano. Por eso la respuesta es I y IV."
           }
         ]
       },
@@ -901,7 +965,8 @@
               "C": "Poética.",
               "D": "Referencial."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El fragmento solo **informa hechos**: cuenta que las madres eran amigas y a dónde las llevaban. No busca provocar una reacción en el oyente, ni mantener el canal abierto, ni embellecer el lenguaje: transmite información sobre la realidad, y esa es justamente la función **referencial** (también llamada informativa).\n\nNo es poética porque no hay juego estético con el lenguaje: es un recuento llano de recuerdos."
           },
           {
             "id": 66,
@@ -914,7 +979,8 @@
               "C": "Referencial.",
               "D": "Sintomática."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El enunciado busca que **el receptor haga algo**: le pide a Luisa limpiar la mesa y lavar los trastes. Cuando el mensaje se centra en influir en el oyente —órdenes, peticiones, súplicas, el vocativo \"Luisa\"—, la función es **apelativa** (o conativa). La pregunta y el \"por favor\" son la envoltura cortés, pero la intención es clara: mover a la otra persona a actuar.\n\nNo es referencial porque no informa nada: no describe el mundo, solicita una acción."
           },
           {
             "id": 67,
@@ -927,7 +993,8 @@
               "C": "Narrativa.",
               "D": "Expositiva."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Todo el fragmento se dedica a decir **cómo es** Momo: su tamaño, su pelo ensortijado y negro, sus ojos grandes, sus pies descalzos. Cuando un texto pinta con palabras los rasgos de una persona, objeto o lugar, la forma del discurso es **descriptiva**.\n\nNo es narrativa porque no pasa nada: no hay acciones que se sucedan en el tiempo, solo un retrato detenido del personaje."
           },
           {
             "id": 68,
@@ -940,7 +1007,8 @@
               "C": "Quien no quiere pensar es un fanático; quien no puede pensar es un idiota; quien no osa pensar es un cobarde.",
               "D": "\"En Español, lo contrario de IN (como prefijo privativo, claro) suele ser la misma palabra, pero sin esa sílaba.\n—Sí, ya sé: insensato y sensato, indócil y dócil, ¿no?\n—Parcialmente correcto. No olvide, muchacho, que lo contrario del invierno no es el vierno sino el verano.\""
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El texto argumentativo defiende una postura mediante razonamientos. La opción C hace exactamente eso: sostiene una tesis sobre el valor de pensar y la respalda con tres juicios encadenados (\"quien no quiere... quien no puede... quien no osa...\"), cada uno con su calificación. Es una estructura de razonamiento, no de relato.\n\nLa A es poética (verso, exhortación), la B narra una escena onírica y la D es un diálogo con explicación metalingüística en tono humorístico; ninguna defiende una tesis con argumentos."
           },
           {
             "id": 69,
@@ -954,7 +1022,8 @@
               "C": "la arqueología estudia las manifestaciones culturales antiguas.",
               "D": "el trabajo de los estudiantes ha contribuido a obtener información veraz."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La idea principal es la que recorre **todo** el texto, no un detalle de un párrafo. Desde la primera línea se establece que la concha \"era un material precioso en el México prehispánico\", el segundo párrafo insiste en su carácter sagrado y de lujo (\"solo tenía acceso la clase gobernante\"), y el resto del texto gira alrededor de ese valor: por eso se estudian las piezas. Eso es la opción A.\n\nLas opciones B y D son ideas secundarias: hablan del taller y de los estudiantes, que aparecen solo en los últimos párrafos como apoyo, no como tema central."
           },
           {
             "id": 70,
@@ -968,7 +1037,8 @@
               "C": "existe el agua como expresión de vida",
               "D": "hay ríos y lagos"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El propio texto da la clave en el segundo párrafo: la concha \"al ser un elemento acuático se asociaba con ese líquido esencial en el desarrollo de la vida\". Las piezas se depositaban en las tumbas \"para recrear el inframundo acuático\", es decir, para llevar al mundo de los muertos el agua como símbolo y expresión de vida. Por eso la respuesta es que en el inframundo **existe el agua como expresión de vida**.\n\nLa opción D (\"hay ríos y lagos\") se queda en lo literal: el texto habla del valor simbólico del agua, no de accidentes geográficos."
           },
           {
             "id": 71,
@@ -982,7 +1052,8 @@
               "C": "Lujosas y endebles.",
               "D": "Exóticas e inefables."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Son inferencias, no citas textuales. **Duraderas**: se han recuperado más de 2,300 objetos en excavaciones de piezas que llevan siglos enterradas; si la concha fuera frágil o efímera, no habrían sobrevivido. **Moldeables**: los artesanos las trabajaban con herramientas para convertirlas en adornos y ornamentos, o sea que el material se deja labrar. Ambas cosas juntas solo aparecen en la opción A.\n\nLas demás opciones incluyen siempre un adjetivo que contradice al texto: \"efímeras\" y \"endebles\" chocan con que las piezas perduraron, e \"inefables\" (que no se puede expresar con palabras) no viene al caso."
           },
           {
             "id": 72,
@@ -996,7 +1067,8 @@
               "C": "Perfeccionar el trabajo manual indígena.",
               "D": "Rescatar la manufactura precolombina."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El texto lo dice al describir el proyecto: Velázquez creó el taller por \"su interés por conocer las formas de elaboración de estas piezas\", y con él se busca conocer \"las técnicas con las que se trabajó este material en la época prehispánica\", reconstruyendo piezas antiguas con conchas modernas. Eso es rescatar la manufactura precolombina: recuperar cómo se fabricaban aquellos objetos.\n\nNo es \"continuar la tradición\" ni \"perfeccionarla\": el taller no produce joyas para seguir el oficio, sino que experimenta para **entender** cómo se hacían."
           },
           {
             "id": 73,
@@ -1010,7 +1082,8 @@
               "C": "Divulgar los avances arqueológicos sobre las culturas prehispánicas.",
               "D": "Revelar el misterio de las joyas de la concha de mar."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Es un artículo periodístico (de *El Universal*) que comunica al público general los hallazgos de una investigación arqueológica: qué se ha encontrado, qué significaba la concha para las culturas prehispánicas y qué ha descubierto el taller de arqueología experimental. Eso es **divulgar** avances arqueológicos.\n\nLa opción B confunde al autor del texto con el arqueólogo: quien creó el taller fue Velázquez, no quien escribe el artículo. Y la D promete demasiado: el texto no \"revela el misterio\", de hecho cuenta que aún no se ha hallado el taller prehispánico."
           },
           {
             "id": 74,
@@ -1023,7 +1096,8 @@
               "C": "En la hora de la rata, el emperador soñó.",
               "D": "El emperador soñó que había salido de su palacio."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La oración principal es la que puede sostenerse por sí sola y de la que cuelgan las subordinadas. Aquí el núcleo es el sujeto con su verbo principal: \"el emperador soñó\", acompañado de su complemento circunstancial de tiempo (\"en la hora de la rata\"). Todo lo que sigue —\"que había salido de su palacio...\"— es una oración subordinada: depende del verbo \"soñó\" y no forma parte de la principal.\n\nLa opción D se antoja, pero incluye \"que había salido de su palacio\", que es justamente la subordinada; la principal debe quedarse sin ella."
           },
           {
             "id": 75,
@@ -1036,7 +1110,8 @@
               "C": "llena — esplendorosamente.",
               "D": "luna — llena."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los complementos circunstanciales indican las circunstancias de la acción: cuándo, dónde, cómo. En la oración, **anoche** dice *cuándo* brillaba (circunstancial de tiempo) y **esplendorosamente** dice *cómo* brillaba (circunstancial de modo).\n\nEn cambio, \"llena\" no es circunstancial: es un adjetivo que modifica a \"luna\" y forma parte del sujeto (\"la luna llena\"). Ese es el gancho de las opciones A y C."
           },
           {
             "id": 76,
@@ -1049,7 +1124,8 @@
               "C": "Los papás de Ernesto no dejan que haga solo sus actividades.",
               "D": "Los papás de Ernesto no lo dejan que haga las cosas sólo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Dos detalles deciden la respuesta. Primero, la ortografía actual: \"solo\" (en el sentido de 'sin compañía' o incluso como adverbio) se escribe **sin tilde**, así que A y D quedan fuera por escribir \"sólo\". Segundo, la construcción: \"no dejan que haga solo sus actividades\" es la forma completa y correcta, con la subordinada \"que haga\" bien introducida. La opción B está incompleta: \"no dejan hacer solo sus actividades\" pierde al sujeto que realiza la acción (¿quién hace las actividades?). La C es la única gramaticalmente redonda."
           },
           {
             "id": 77,
@@ -1062,7 +1138,8 @@
               "C": "Los personajes de la jarcha son: principalmente la muchacha y el *habib* o amigo, —cómo se denomina al amante—; también aparece la madre y las hermanas como un rol de confidente mudo; los temas son: la ausencia del amado, la partida o llegada del amante al alba, casi única referencia al exterior, y la mención de alguna fiesta como la Pascua.",
               "D": "Los personajes de la jarcha son, principalmente, la muchacha y el *habib* o amigo (cómo se denomina al amante) y también aparece la madre y las hermanas como un rol de confidente mudo. Los temas son: la ausencia del amado, la partida o llegada del amante al alba casi única referencia al exterior y la mención de alguna fiesta como la Pascua."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La opción A es la única con la puntuación limpia: dos oraciones bien separadas por punto y seguido, sin signos de más. Las otras acumulan errores: en B y C sobra el uso de dos puntos después de \"son\" (los dos puntos no deben separar al verbo de su complemento), y en C y D aparece \"cómo\" con tilde, que es incorrecto porque no es interrogativo ni exclamativo, sino el relativo \"como se denomina al amante\". La C además mezcla rayas, punto y coma y dos puntos en una maraña innecesaria."
           },
           {
             "id": 78,
@@ -1075,7 +1152,8 @@
               "C": "hacia",
               "D": "sobre"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El sustantivo \"afición\" rige la preposición **por** cuando expresa gusto o inclinación: \"tiene afición por las ciencias\", igual que \"siente pasión por la música\". Es el régimen preposicional que pide la norma culta.\n\n\"Para\" indicaría destino o finalidad y \"sobre\" indicaría tema (como en \"un libro sobre las ciencias\"); ninguna expresa la inclinación personal que significa \"afición\"."
           },
           {
             "id": 79,
@@ -1088,7 +1166,8 @@
               "C": "Gruñir.",
               "D": "Roncar."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "**Vociferar** es dar grandes voces, gritar con fuerza. Su antónimo debe expresar lo contrario: hacer callar o guardar silencio, es decir, **silenciar**.\n\n\"Gruñir\" y \"roncar\" no son opuestos, son otras formas de emitir sonido. Y \"omitir\" significa dejar de decir o de hacer algo, que no es lo contrario de gritar: puedes omitir información en voz baja o a gritos."
           },
           {
             "id": 80,
@@ -1101,7 +1180,8 @@
               "C": "Arriar — arrear",
               "D": "Trivial — tribal"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Los **homófonos** son palabras que suenan igual pero se escriben distinto y significan cosas diferentes. \"Sebo\" (grasa animal) y \"cebo\" (carnada) se pronuncian exactamente igual en el español de México: esa es la pareja.\n\nLas demás no suenan igual: \"copiar/copear\", \"arriar/arrear\" y \"trivial/tribal\" cambian una vocal o consonante que sí se pronuncia distinto; son parecidas (parónimos), pero no homófonas."
           },
           {
             "id": 81,
@@ -1114,7 +1194,8 @@
               "C": "allá — malla — hienas",
               "D": "allá —maya — llenas"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Arma el enunciado palabra por palabra: **Más allá** de la **malla** metálica vimos **hienas**.\n\n*Allá* es adverbio de lugar y va con *ll*; \"ayá\" simplemente no existe en español. *Malla* es la red o tejido de alambre (con *y*, *maya*, sería la cultura o el pueblo maya). Y *hiena*, el animal, se escribe con *h* inicial: el sonido /ye/ al principio de palabra viene de *hie-*, igual que en *hierba* o *hielo*.\n\nLa opción D se antoja porque *allá* ya está bien escrito, pero ahí te cambian *malla* por *maya* y *hienas* por *llenas*, y \"la maya metálica\" no quiere decir nada."
           },
           {
             "id": 82,
@@ -1127,7 +1208,8 @@
               "C": "Cubre el prerrequisito y llegarás al puesto de vicerector.",
               "D": "Cubre el prerequisito y llegarás al puesto de vicerector."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las dos palabras llevan **doble r**. La regla: cuando un prefijo termina en vocal y la palabra que sigue empieza con *r*, ese sonido fuerte se escribe *rr*.\n\n- *pre-* + *requisito* = **prerrequisito**\n- *vice-* + *rector* = **vicerrector**\n\nCon una sola *r* leerías \"pre-requisito\" con *r* suave, como en *pera*, que no es el sonido de la palabra. Es el mismo caso de *contrarreloj*, *infrarrojo* o *vicerrectoría*.\n\nLas otras tres opciones fallan en al menos una de las dos palabras; solo B corrige ambas."
           }
         ]
       },
@@ -1146,7 +1228,8 @@
               "C": "Oparin y Haldane.",
               "D": "Schleiden y Schwann."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "En 1838 y 1839, el botánico **Matthias Schleiden** (en plantas) y el zoólogo **Theodor Schwann** (en animales) llegaron por separado a la misma conclusión: todos los seres vivos están formados por células. Eso es el núcleo de la teoría celular, que después completó Virchow con el \"toda célula proviene de otra célula\".\n\nOjo con los otros nombres, porque cada par pertenece a otra teoría: Mendel y Morgan a la herencia y la genética, Darwin y Wallace a la selección natural, Oparin y Haldane al origen de la vida."
           },
           {
             "id": 84,
@@ -1159,7 +1242,8 @@
               "C": "Ribosoma.",
               "D": "Mitocondria."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Las tres pistas del enunciado apuntan al mismo organelo: forma alargada, **doble membrana** y síntesis de ATP. Eso es la **mitocondria**, donde ocurren el ciclo de Krebs y la fosforilación oxidativa; su membrana interna se pliega en crestas justamente para tener más superficie donde producir ATP.\n\nDescarta por estructura: el lisosoma tiene una sola membrana y contiene enzimas digestivas, el ribosoma no tiene membrana (arma proteínas) y el citoesqueleto es una red de filamentos, no un compartimento."
           },
           {
             "id": 85,
@@ -1172,7 +1256,8 @@
               "C": "Luz.",
               "D": "$CO_2$."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El producto energético de la fotosíntesis es la **glucosa** ($C_6H_{12}O_6$): la planta toma el carbono del $CO_2$ y, con la energía de la luz, lo ensambla en una molécula orgánica que le sirve como combustible y como material de construcción.\n\n$$6CO_2 + 6H_2O + \\text{luz} \\rightarrow C_6H_{12}O_6 + 6O_2$$\n\nFíjate en qué papel juega cada distractor en esa ecuación: la luz y el $CO_2$ son *insumos*, no productos, y la clorofila es el pigmento que captura la luz, no un producto energético."
           },
           {
             "id": 86,
@@ -1185,7 +1270,8 @@
               "C": "Digestión.",
               "D": "Absorción."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Transformar materia inorgánica en orgánica es exactamente lo que hacen los organismos autótrofos, y su función es la **fotosíntesis**: con $CO_2$, agua y sales minerales (todo inorgánico) fabrican glucosa (orgánica).\n\nLa fotólisis es solo una parte del proceso —el rompimiento de la molécula de agua en la fase luminosa—, así que se queda corta como respuesta. Digestión y absorción van al revés: parten de materia orgánica ya hecha y la degradan o la incorporan."
           },
           {
             "id": 87,
@@ -1198,7 +1284,8 @@
               "C": "bipartición.",
               "D": "esporulación."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La levadura de la cerveza y del pan se reproduce por **gemación**: en la pared de la célula madre se forma una yema o brote que crece, recibe una copia del núcleo y termina desprendiéndose como célula hija. Por eso al ver un cultivo de *Saccharomyces* al microscopio encuentras células con \"bolitas\" pegadas.\n\nDistingue los otros términos: la bipartición da dos células del mismo tamaño (típica de bacterias), la esporulación produce esporas (hongos filamentosos, *Penicillium*) y la conjugación no es asexual, es intercambio de material genético."
           },
           {
             "id": 88,
@@ -1211,7 +1298,8 @@
               "C": "idénticos.",
               "D": "diferentes."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La distribución independiente (segunda ley de Mendel) dice que cada par de cromosomas homólogos se reparte en la meiosis sin importar cómo se repartan los demás. Con $n$ pares de cromosomas eso da $2^n$ combinaciones distintas de gametos; en el humano, $2^{23} = 8\\,388\\,608$ solo por este mecanismo.\n\nO sea que la consecuencia son gametos **diferentes**, y esa variabilidad es la materia prima de la evolución. Las otras tres opciones (iguales, equivalentes, idénticos) dicen lo mismo con distintas palabras y describen justo lo contrario: eso pasaría en la mitosis, no en la meiosis."
           },
           {
             "id": 89,
@@ -1224,7 +1312,8 @@
               "C": "traducción.",
               "D": "adaptación."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Cualquier cambio en la secuencia de bases del DNA —una sustitución, una inserción, una pérdida— es una **mutación**. Puede ser espontánea o provocada por agentes mutágenos, y es la única fuente de variantes genéticas realmente nuevas.\n\nNo la confundas con los pasos de la expresión genética: la transcripción copia el DNA a RNA y la traducción convierte ese RNA en proteína; ninguna de las dos altera la secuencia original. Y la adaptación es la consecuencia evolutiva, no el cambio molecular."
           },
           {
             "id": 90,
@@ -1237,7 +1326,8 @@
               "C": "Vitalista.",
               "D": "Quimiosintética."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La explicación más aceptada hoy sobre el origen de la vida es la **teoría quimiosintética** de Oparin y Haldane: en la Tierra primitiva, sin oxígeno libre, la energía de las descargas eléctricas y la radiación permitió que compuestos inorgánicos formaran moléculas orgánicas cada vez más complejas hasta llegar a estructuras precelulares. El experimento de Miller y Urey en 1953 le dio apoyo experimental.\n\nCuidado con la endosimbiótica: es una teoría muy sólida, pero explica el origen de *las células eucariontes* (mitocondrias y cloroplastos como bacterias incorporadas), no el origen de la vida. Creacionismo y vitalismo no son explicaciones científicas."
           },
           {
             "id": 91,
@@ -1250,7 +1340,8 @@
               "C": "Mutación.",
               "D": "Clonación."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La recombinación genética (junto con la mutación) genera variación dentro de la población, y la selección natural conserva a los individuos cuyas características les dan ventaja en ese ambiente. El resultado acumulado de ese filtro es la **adaptación**.\n\nLa mutación se antoja, pero está del otro lado del proceso: es una de las causas de la variabilidad, no su resultado. La coevolución requiere dos especies influyéndose mutuamente y la clonación es una técnica, no un fenómeno evolutivo."
           },
           {
             "id": 92,
@@ -1263,7 +1354,8 @@
               "C": "pastos y hongos.",
               "D": "pastos y algas."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El flujo de energía en un ecosistema arranca con los **productores**, los organismos autótrofos que capturan la energía luminosa y la convierten en energía química: **pastos y algas**. Ellos ocupan el primer nivel trófico y de ahí pasa la energía a herbívoros, carnívoros y descomponedores.\n\nLa trampa está en hongos y bacterias, que aparecen en tres de las cuatro opciones: son heterótrofos, sobre todo descomponedores, o sea que trabajan al *final* de la cadena reciclando materia, no al principio."
           }
         ]
       },
@@ -1282,7 +1374,8 @@
               "C": "Antigua.",
               "D": "Contemporánea."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La historiografía tradicional usa dos caídas de Roma como marcadores: la de Roma occidental en **476** cierra la Edad Antigua y abre la Media, y la de Constantinopla —capital del Imperio Romano de Oriente— ante los turcos otomanos en **1453** cierra la Media y abre la Edad **Moderna**.\n\nSi contestaste \"Media\" te fuiste a la fecha equivocada: esa la inaugura el 476, casi mil años antes. La Edad Contemporánea empieza mucho después, con la Revolución Francesa de 1789."
           },
           {
             "id": 94,
@@ -1295,7 +1388,8 @@
               "C": "Guerra de Secesión Norteamericana.",
               "D": "Independencia de las Trece Colonias."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Los impuestos al timbre (*Stamp Act*, 1765) y al té (*Tea Act*, 1773) fueron impuestos por el Parlamento inglés a sus colonias en América, y la Guerra de los Siete Años dejó a la corona británica endeudada, justo por eso decidió cobrarle más a las colonias. Esa presión fiscal sin representación política —\"no taxation without representation\"— desembocó en la **Independencia de las Trece Colonias** (1776).\n\nNo lo confundas con la Guerra de Secesión: esa es un siglo después (1861-1865) y es un conflicto interno de Estados Unidos por la esclavitud y el modelo económico, no contra Inglaterra."
           },
           {
             "id": 95,
@@ -1308,7 +1402,8 @@
               "C": "la permanencia de los talleres artesanales.",
               "D": "el monopolio del poder absoluto en el monarca."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La Revolución Industrial puso los medios de producción —fábricas, máquinas, capital— en manos de la burguesía, y ese poder económico terminó traduciéndose en poder político: la burguesía desplazó a la aristocracia terrateniente y al absolutismo monárquico. De ahí el **ascenso de la burguesía al poder político**.\n\nLas otras tres van contra la evidencia histórica: no hubo conciliación de clases sino la aparición del proletariado y del conflicto obrero, los talleres artesanales fueron desplazados por la fábrica, y el poder absoluto del monarca fue precisamente lo que se debilitó."
           },
           {
             "id": 96,
@@ -1321,7 +1416,8 @@
               "C": "Cartismo.",
               "D": "Sindicalismo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El **cartismo** (Inglaterra, 1838) recibe su nombre de la *Carta del Pueblo*, el documento que los obreros presentaron al Parlamento pidiendo sufragio universal masculino, voto secreto, sueldo para los diputados y eliminación del requisito de propiedad para ser electo. Es decir, exigía representatividad y participación política por la vía parlamentaria.\n\nEl ludismo tienta, pero fue anterior y de otro tipo: destrucción de máquinas, sin agenda política ni interlocución con el Parlamento. El socialismo es una doctrina y el sindicalismo una forma de organización, no ese movimiento concreto ante el parlamento inglés."
           },
           {
             "id": 97,
@@ -1334,7 +1430,8 @@
               "C": "Imperialismo.",
               "D": "Sionismo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Todo lo que enlista el reactivo —capitales industriales que necesitan dónde invertirse, nacionalismo exaltado, búsqueda de materias primas y mano de obra barata en Asia y África— es el retrato del **Imperialismo** de finales del siglo XIX, cuando las potencias europeas se repartieron esos continentes (la Conferencia de Berlín de 1884-1885 es el ejemplo clásico).\n\nEl militarismo se antoja porque acompañó al imperialismo, pero es un medio —el crecimiento del aparato militar— y no el fenómeno de expansión y dominio económico que describen esas causas."
           },
           {
             "id": 98,
@@ -1347,7 +1444,8 @@
               "C": "Las Repúblicas Bálticas.",
               "D": "El estrecho de Gibraltar."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El archiduque Francisco Fernando, heredero del Imperio austrohúngaro, fue asesinado en **Sarajevo, Bosnia**, el 28 de junio de 1914, y Bosnia está en **los Balcanes**. Esa región se llamaba \"el polvorín de Europa\" por la mezcla de nacionalismos eslavos y la rivalidad entre Austria-Hungría y Rusia; el atentado solo prendió la mecha que ya estaba puesta.\n\nNo la confundas con las Repúblicas Bálticas (Estonia, Letonia, Lituania), que están al norte, junto al mar Báltico: se parecen los nombres, pero no la geografía."
           },
           {
             "id": 99,
@@ -1360,7 +1458,8 @@
               "C": "Alemania.",
               "D": "Francia."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En octubre de 1929 se desplomó la Bolsa de Nueva York, y como **Estados Unidos** era ya el principal acreedor y prestamista del mundo tras la Primera Guerra Mundial, la quiebra arrastró consigo al comercio internacional y al sistema del patrón oro. La Gran Depresión se exportó a Europa por la vía de los créditos y las inversiones retiradas.\n\nGran Bretaña tienta porque fue la cuna del patrón oro y lo abandonó en 1931, pero fue consecuencia del colapso: el punto de origen fue Nueva York."
           },
           {
             "id": 100,
@@ -1373,7 +1472,8 @@
               "C": "limitó la intervención militar en el gobierno.",
               "D": "estableció un gobierno democrático."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El nacionalsocialismo ofreció a una Alemania humillada por el Tratado de Versalles y arruinada por la crisis de 1929 una explicación sencilla y un motivo de orgullo: la supuesta **superioridad de la raza aria** y su derecho a un espacio vital. Ese discurso racista y nacionalista es la base de su arrastre popular, y desembocó en las leyes de Núremberg y en el Holocausto.\n\nLas otras tres describen lo contrario de lo que hizo el régimen: fue antisemita —jamás se alió con el sionismo—, militarizó al Estado y liquidó la democracia de Weimar."
           },
           {
             "id": 101,
@@ -1386,7 +1486,8 @@
               "C": "Primera Guerra Mundial.",
               "D": "Guerra de los Balcanes."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Yalta se celebró en **febrero de 1945**, cuando la derrota de Alemania era inminente: ahí Roosevelt, Churchill y Stalin acordaron cómo quedaría Europa al terminar la **Segunda Guerra Mundial**, incluida la desmilitarización de Alemania y su reparto en cuatro zonas de ocupación (Estados Unidos, Gran Bretaña, Francia y la URSS).\n\nSi elegiste Guerra Fría invertiste el orden: la Guerra Fría es la *consecuencia* de esos acuerdos y de la desconfianza entre los aliados, no su causa. La Primera Guerra se cerró en Versalles, en 1919."
           },
           {
             "id": 102,
@@ -1399,7 +1500,8 @@
               "C": "socialista.",
               "D": "anarquista."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Economía planificada desde el Estado, partido único y medios de producción en manos estatales son los tres rasgos del bloque **socialista** encabezado por la URSS durante la Guerra Fría.\n\nEl bloque capitalista es justo su contraparte: propiedad privada de los medios de producción, mercado y pluripartidismo. El neoliberalismo es una etapa posterior del capitalismo, con menos Estado todavía, y el anarquismo rechaza al Estado por completo, así que no puede sostener una economía planificada por él."
           },
           {
             "id": 103,
@@ -1412,7 +1514,8 @@
               "C": "fomentar una economía global con perspectiva capitalista.",
               "D": "legalizar el uso de armas nucleares en guerras posteriores a 1945."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El rasgo definitorio de la Guerra Fría es que Estados Unidos y la URSS nunca se enfrentaron de manera directa, sino que compitieron acumulando poder: de ahí la **carrera armamentista** —bombas atómicas, misiles, submarinos— y su gemela, la carrera espacial.\n\nLa opción A se cae por \"sin repercusiones en otras regiones\": hubo guerras por interpósita persona en Corea, Vietnam, Afganistán, Cuba y varios países africanos. Y el uso de armas nucleares nunca se legalizó; al contrario, se firmaron tratados de no proliferación."
           },
           {
             "id": 104,
@@ -1425,7 +1528,8 @@
               "C": "Kenia e Irak.",
               "D": "Congo y Siria."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La descolonización de Asia se concentra a mediados del siglo XX, y **India** es su caso emblemático: obtuvo la independencia del Imperio británico en **1947**, tras la campaña de resistencia pacífica de Gandhi, con la partición simultánea de Pakistán.\n\nUsa la geografía para descartar el resto, porque las otras tres opciones mezclan países africanos: Angola y Congo están en África, igual que Kenia. La pregunta pide países *asiáticos*, y solo el par de la opción A cumple con eso."
           },
           {
             "id": 105,
@@ -1438,7 +1542,8 @@
               "C": "formación de la URSS.",
               "D": "formación del Neoliberalismo."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La *perestroika* (\"reestructuración\") y la *glásnost* (\"transparencia\") que Gorbachov impulsó desde 1985 buscaban salvar al sistema soviético, pero terminaron destapando su crisis económica y abriendo la puerta a las demandas nacionalistas y democráticas. Con el bloque capitalista fortalecido enfrente, el desenlace fue la **caída del Bloque Soviético**: muro de Berlín en 1989, disolución de la URSS en 1991.\n\nLa opción A es la misma idea al revés: el bloque que cayó fue el oriental, no el occidental. Y la URSS se formó mucho antes, en 1922."
           },
           {
             "id": 106,
@@ -1451,7 +1556,8 @@
               "C": "Globalización.",
               "D": "Nacionalismo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La **globalización** es el fenómeno reciente del capitalismo en el que capitales, mercancías, tecnología e información circulan por el planeta con muy pocas barreras, de modo que las economías nacionales quedan cada vez más integradas y dependientes entre sí. Los tratados de libre comercio y las empresas transnacionales son su cara visible.\n\nEl nacionalismo es exactamente la tendencia opuesta: cerrar y proteger la economía nacional. Y el socialismo no es una tendencia del desarrollo capitalista, sino un sistema alternativo."
           }
         ]
       },
@@ -1470,7 +1576,8 @@
               "C": "Cuitláhuac.",
               "D": "Moctezuma."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "**Cuauhtémoc** fue el último tlatoani de México-Tenochtitlan y quien encabezó la defensa final de la ciudad; su captura el **13 de agosto de 1521**, cuando intentaba salir por la laguna, marca el fin de la resistencia militar mexica.\n\nOrdena la secuencia para no confundirte: Moctezuma Xocoyotzin recibió a Cortés y murió en 1520 durante el sitio del palacio; Cuitláhuac lo sucedió y murió de viruela a los pocos meses; entonces asumió Cuauhtémoc. Nezahualcóyotl es de otra época y otra ciudad: fue tlatoani de Texcoco en el siglo XV."
           },
           {
             "id": 108,
@@ -1483,7 +1590,8 @@
               "C": "Invasión napoleónica a España e Independencia de las Trece Colonias.",
               "D": "Difusión de las revoluciones liberales europeas y abolición de la esclavitud."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Se llaman causas *externas* las que ocurrieron fuera de la Nueva España y repercutieron aquí. Las dos que pesaron más son la **invasión napoleónica a España** (1808), que dejó el trono vacante y abrió la pregunta de quién gobernaba legítimamente en las colonias, y la **Independencia de las Trece Colonias** (1776), que probó que una colonia americana podía separarse de su metrópoli y triunfar.\n\nLas Reformas Borbónicas y la abolición de la esclavitud aparecen en dos opciones como carnada: la primera se aplicó dentro del virreinato (causa interna) y la segunda fue una *medida* de Hidalgo en 1810, ya iniciado el movimiento, no una causa de él."
           },
           {
             "id": 109,
@@ -1496,7 +1604,8 @@
               "C": "La abolición de la esclavitud y la publicación del \"Despertador Americano\".",
               "D": "La organización del movimiento en Querétaro y la toma del Cerro de los Remedios."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Hidalgo entró a Guadalajara en noviembre de 1810 y ahí dictó sus decretos más importantes: el **6 de diciembre de 1810 abolió la esclavitud** (además de suprimir el tributo indígena), y en esa ciudad se publicó **\"El Despertador Americano\"**, el primer periódico insurgente, redactado por Francisco Severo Maldonado.\n\nUbica los otros hechos en su lugar: el grito de Dolores fue en Guanajuato, el sitio de Cuautla y el estandarte guadalupano corresponden a Morelos y a Hidalgo en Atotonilco respectivamente, la Constitución de Apatzingán se firmó en Michoacán en 1814 y la conspiración se organizó en Querétaro."
           },
           {
             "id": 110,
@@ -1509,7 +1618,8 @@
               "C": "El fortalecimiento de una forma de gobierno totalitario.",
               "D": "La creación del sistema presidencialista de gobierno."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La Constitución de 1824 fundó los Estados Unidos Mexicanos como una **república representativa, popular y federal**: reconoció 19 estados libres y soberanos en su régimen interior, con sus propios congresos locales. Ese federalismo es su sello y el punto que estuvo en disputa durante décadas.\n\nEl centralismo llegó después, con las Siete Leyes de 1836, y es justo la reacción contra este texto. Fíjate también en \"presidencialismo\": la Constitución creó el cargo de presidente, pero el presidencialismo fuerte como sistema es un rasgo posterior, del siglo XX, no la característica que la distingue."
           },
           {
             "id": 111,
@@ -1522,7 +1632,8 @@
               "C": "firma del tratado Mc Lane—Ocampo.",
               "D": "consolidación del gobierno centralista."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El Plan de Ayutla (1854) se levantó contra el último gobierno de Antonio López de Santa Anna, que se había hecho llamar \"Alteza Serenísima\" y gobernaba con poderes dictatorales tras vender La Mesilla. La Revolución de Ayutla logró su **caída** en 1855 y llevó al poder a la generación liberal —Juárez, Ocampo, Lerdo—, que enseguida promulgó las Leyes de Reforma y la Constitución de 1857.\n\nEl Plan de Tacubaya (1857) y el tratado McLane-Ocampo (1859) son posteriores y pertenecen a la Guerra de Reforma, no a Ayutla."
           },
           {
             "id": 112,
@@ -1535,7 +1646,8 @@
               "C": "fomentar la inversión extranjera.",
               "D": "favorecer a la iglesia católica."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El primer gobierno de Juárez llevó el **liberalismo** al terreno de los hechos: defendió la Constitución de 1857 durante la Guerra de Reforma y expidió las Leyes de Reforma (1859-1860), que nacionalizaron los bienes del clero, separaron a la Iglesia del Estado y establecieron el registro civil y el matrimonio civil.\n\nPor eso \"favorecer a la iglesia católica\" es lo contrario de lo que hizo, y tampoco exoneró a los conservadores, con quienes estaba en guerra. La inversión extranjera masiva es rasgo del Porfiriato, no de Juárez."
           },
           {
             "id": 113,
@@ -1548,7 +1660,8 @@
               "C": "impulsar la reelección del general Porfirio Díaz.",
               "D": "construir un movimiento favorable a la candidatura de Francisco I. Madero."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Camilo Arriaga convocó en San Luis Potosí el Club Liberal \"Ponciano Arriaga\" y el primer Congreso Liberal de 1901 para **oponerse a la dictadura de Porfirio Díaz**, sobre todo a su alianza con la Iglesia y a la falta de libertades. De ahí salieron los hermanos Flores Magón y el periódico *Regeneración*, es decir, el precedente organizado de la Revolución.\n\nCuidado con la cronología en las opciones que mencionan a Madero: su movimiento antirreeleccionista arranca hacia 1909, casi una década después, así que en 1901 el Círculo Liberal no podía estar armado ni a favor ni en contra de él."
           },
           {
             "id": 114,
@@ -1561,7 +1674,8 @@
               "C": "Francisco I. Madero.",
               "D": "Francisco Villa."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "**Venustiano Carranza**, como jefe del Ejército Constitucionalista y encargado del Poder Ejecutivo, convocó al Congreso Constituyente que sesionó en Querétaro entre diciembre de 1916 y enero de 1917, y promulgó la **Constitución del 5 de febrero de 1917**, todavía vigente.\n\nZapata y Villa se antojan porque son las figuras más conocidas de la Revolución, pero eran jefes militares en armas *contra* Carranza en esos años y no participaron en el Constituyente. Madero ya había sido asesinado en 1913."
           },
           {
             "id": 115,
@@ -1574,7 +1688,8 @@
               "C": "Venustiano Carranza.",
               "D": "Álvaro Obregón."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Ambas acciones caen en el cuatrienio de **Álvaro Obregón** (1920-1924): la Secretaría de Educación Pública se creó en **1921**, con José Vasconcelos al frente y su campaña de misiones culturales y muralismo, y los **Tratados de Bucareli** se firmaron en **1923** para que Estados Unidos reconociera al gobierno mexicano, a cambio de no aplicar retroactivamente el artículo 27 a las petroleras.\n\nAdolfo de la Huerta fue presidente interino en 1920, antes de la SEP, y en 1923 estaba encabezando una rebelión contra Obregón precisamente por desacuerdos con esa política."
           },
           {
             "id": 116,
@@ -1587,7 +1702,8 @@
               "C": "creación del Banco de México.",
               "D": "concesión del voto a la mujer."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El Maximato es el periodo de 1928 a 1934 en que Plutarco Elías Calles, el \"Jefe Máximo\", mandaba detrás de tres presidentes: Portes Gil, Ortiz Rubio y Abelardo L. Rodríguez. En **1929**, con Emilio Portes Gil, la huelga estudiantil terminó con la ley que le dio a la Universidad Nacional su **autonomía**.\n\nUbica las fechas de los distractores: el Banco de México se fundó en 1925, todavía con Calles como presidente; el voto a la mujer en elecciones federales llegó en 1953, con Ruiz Cortines; y en 1929 se creó el PNR, que apenas en 1946 se convirtió en PRI, así que el nombre del partido está fuera de tiempo."
           },
           {
             "id": 117,
@@ -1600,7 +1716,8 @@
               "C": "Plan Sexenal.",
               "D": "Plan de la Acción Campesina."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El **Plan Sexenal** fue el programa de gobierno que el PNR aprobó en 1933 y que Lázaro Cárdenas llevó a la práctica de 1934 a 1940: reparto agrario y apoyo a los ejidos, respeto al salario mínimo, derechos laborales y educación socialista. Fue, de hecho, el primer plan de gobierno de largo plazo del país.\n\nLos Acuerdos de Bucareli (1923) trataron de petróleo y deuda con Estados Unidos, y el Pacto de la Ciudadela (o de la Embajada, 1913) fue el arreglo entre Huerta y Félix Díaz para derrocar a Madero: ninguno de los dos tiene contenido agrario o laboral."
           },
           {
             "id": 118,
@@ -1613,7 +1730,8 @@
               "C": "Adolfo Ruiz Cortines.",
               "D": "Adolfo López Mateos."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "**Miguel Alemán Valdés** (1946-1952) fue el primer presidente civil después de la Revolución y apostó por la obra pública y el turismo: en su sexenio arrancó la construcción de **Ciudad Universitaria** en el Pedregal y se abrió la **carretera México-Acapulco**, que convirtió al puerto en el destino de moda.\n\nPor eso su nombre está en el auditorio de la Rectoría y hasta en el aeropuerto de Acapulco. Ávila Camacho, su antecesor, se asocia al Seguro Social (1943) y a la unidad nacional durante la guerra."
           },
           {
             "id": 119,
@@ -1626,7 +1744,8 @@
               "C": "desarrollo compartido.",
               "D": "milagro mexicano."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Al periodo de 1940 a 1970, con crecimientos del PIB de alrededor del 6% anual, inflación baja y peso estable, se le llama el **milagro mexicano**. Su motor fue la industrialización por sustitución de importaciones, con un Estado que protegía al mercado interno e invertía en infraestructura.\n\n\"Desarrollo estabilizador\" es un nombre válido para la etapa 1954-1970 dentro de ese mismo auge, pero no aparece entre las opciones; lo que sí aparece es \"desarrollo compartido\", que es la política de Echeverría en los setenta, es decir, ya el final del milagro y el inicio de la crisis."
           },
           {
             "id": 120,
@@ -1639,7 +1758,8 @@
               "C": "Desarrollo estabilizador.",
               "D": "Desarrollo compartido."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "De 1970 a 1982 el Estado abandonó el desarrollo estabilizador y adoptó el llamado **desarrollo compartido**: gasto público muy alto, crecimiento de las empresas paraestatales y endeudamiento externo, con la promesa de repartir mejor los frutos del crecimiento. Echeverría lo bautizó así, y López Portillo lo continuó apoyado en el auge petrolero, hasta la crisis y la nacionalización de la banca en 1982.\n\nEl desarrollo estabilizador es el modelo *anterior* (1954-1970), el de peso fijo a 12.50 e inflación baja; si lo escogiste, te adelantaste un sexenio en la línea del tiempo."
           }
         ]
       }

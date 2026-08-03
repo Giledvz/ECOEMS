@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "La rapidez media no es el promedio de las rapideces: es la distancia total entre el tiempo total. Calcula cada tramo: $20 \\times 15 = 300$ m, $15 \\times 20 = 300$ m, detenido $= 0$ m y $10 \\times 18 = 180$ m. En total recorre $780$ m en $15+20+25+18 = 78$ s:\n\n$$\\bar{v} = \\frac{780\\,\\mathrm{m}}{78\\,\\mathrm{s}} = 10\\,\\frac{\\mathrm{m}}{\\mathrm{s}}$$\n\nSi te dio 15 (opción B), promediaste las rapideces sin pesarlas por su tiempo; el truco está en que los 25 segundos detenido también cuentan en el tiempo total."
+ },
+ {
+  "id": 2,
+  "explanation": "Por la segunda ley de Newton, $F = ma$, así que en una gráfica de fuerza contra aceleración la masa es la pendiente de la recta. Toma cualquier punto de la gráfica: cuando $F = 1.00$ N la aceleración es $0.40\\,\\frac{\\mathrm{m}}{\\mathrm{s}^2}$ (o cuando $F = 2.00$ N, $a = 0.80$):\n\n$$m = \\frac{F}{a} = \\frac{1.00\\,\\mathrm{N}}{0.40\\,\\frac{\\mathrm{m}}{\\mathrm{s}^2}} = 2.5\\,\\mathrm{kg}$$\n\nComprueba con otro punto: $\\frac{2.00}{0.80} = 2.5$ kg también. Si te dio 0.4, dividiste $a \\div F$: la pendiente al revés."
+ },
+ {
+  "id": 3,
+  "explanation": "La Ley de Hooke dice $F = kx$: la fuerza que estira (o comprime) el resorte es igual a la constante $k$ por el desplazamiento. Despejando, $x = \\frac{F}{k}$, o sea que si duplicas la fuerza se duplica el estiramiento, si la triplicas se triplica... eso es exactamente una proporción directa. En la figura se ve: a mayor $F$ colgada, mayor $x$. No es inversa (B): inversa sería que a más fuerza, menos estiramiento, y pasa justo lo contrario."
+ },
+ {
+  "id": 4,
+  "explanation": "Cuando no hay fuerzas externas, el ímpetu (cantidad de movimiento) total se conserva: el de antes del choque es igual al de después. Antes:\n\n$$p = (0.2)(V) + (0.4)(-V) = -0.2V$$\n\nDespués del choque, el balín (y) queda inmóvil, así que todo ese ímpetu se lo queda (x):\n\n$$(0.2)\\,v_x = -0.2V \\quad\\Rightarrow\\quad v_x = -V$$\n\nEl balín (x) rebota y regresa con la misma rapidez pero en sentido contrario. Si elegiste A, pensaste que ambos se detienen, pero eso solo pasaría si los ímpetus iniciales fueran iguales y opuestos, y aquí (y) tiene el doble de masa.\nREVISAR: con estos datos la energía cinética no se conserva ($0.3V^2 \\cdot m_0$ antes contra $0.1V^2 \\cdot m_0$ después), así que el choque no puede ser \"totalmente elástico\" como afirma el enunciado; la clave C sale de conservar solo el ímpetu."
+ },
+ {
+  "id": 5,
+  "explanation": "En un termómetro de gas a volumen constante, la presión es directamente proporcional a la temperatura absoluta (Ley de Gay-Lussac): $\\frac{P_1}{T_1} = \\frac{P_2}{T_2}$. Despeja la temperatura del objeto:\n\n$$T_2 = T_1 \\cdot \\frac{P_2}{P_1} = 273.17\\,\\mathrm{K} \\times \\frac{9\\,650 \\times 10^4}{8\\,500 \\times 10^4} \\approx 310\\,\\mathrm{K}$$\n\nComo la presión subió, la temperatura tiene que ser mayor que 273 K; eso descarta de entrada la D. Si te dio 241 K, invertiste el cociente de presiones."
+ },
+ {
+  "id": 6,
+  "explanation": "Según la teoría cinética, la temperatura es una medida de la energía cinética promedio de las partículas. La temperatura a la que ese movimiento cesaría por completo es el **cero absoluto**: $0$ K, que equivale a $-273.15\\,^\\circ\\mathrm{C}$. Las opciones en grados Celsius o Fahrenheit son trampas: $0\\,^\\circ\\mathrm{C}$ es apenas el punto de congelación del agua y ahí las moléculas se mueven muchísimo; solo la escala Kelvin pone su cero en el cero absoluto."
+ },
+ {
+  "id": 7,
+  "explanation": "La velocidad de una onda es la longitud de onda entre el periodo (recorre una longitud de onda completa en cada periodo):\n\n$$v = \\frac{\\lambda}{T} = \\frac{10\\,\\mathrm{cm}}{2\\,\\mathrm{s}} = 5\\,\\frac{\\mathrm{cm}}{\\mathrm{s}}$$\n\nSi te dio 20 (opción A), multiplicaste $\\lambda \\times T$; y si te dio 0.25, dividiste al revés, $T \\div \\lambda$. Recuerda: $v = \\lambda f$ y la frecuencia es $f = \\frac{1}{T}$."
+ },
+ {
+  "id": 8,
+  "explanation": "Que el sonido \"doble la esquina\" y llegue a alguien que no está en línea recta con la fuente es **difracción**: la capacidad de una onda de rodear obstáculos o bordes y esparcirse detrás de ellos. En la figura se ve cómo los frentes de onda se curvan al pasar la arista de la pared y llenan la zona que geométricamente sería de sombra. No es refracción (D): esa es el cambio de dirección al pasar de un medio a otro (como del aire al agua), y aquí el sonido nunca cambia de medio."
+ },
+ {
+  "id": 9,
+  "explanation": "En serie, las resistencias se suman: los 4 resistores iguales equivalen a $R_{eq} = 4R$. La ley de Ohm para el circuito completo dice $V = I \\cdot R_{eq} = I(4R)$. Despeja $R$:\n\n$$R = \\frac{V}{4I}$$\n\nLa opción A, $\\frac{4V}{I}$, es el error de poner el 4 multiplicando al voltaje en vez de a la resistencia: te daría la resistencia equivalente multiplicada por 16, no la de cada resistor."
+ },
+ {
+  "id": 10,
+  "explanation": "En el espectro visible, la longitud de onda crece del violeta hacia el rojo. De los colores que te dan: azul $\\approx 470$ nm, verde $\\approx 530$ nm, amarillo $\\approx 580$ nm y rojo $\\approx 650$ nm. En orden creciente: **z, v, a, r**. Un truco para no perderte: el orden del arcoíris (rojo, naranja, amarillo, verde, azul, violeta) va de mayor a menor longitud de onda; aquí te piden lo mismo pero al revés. La opción A es justamente el orden decreciente: la trampa clásica de leer \"creciente\" al revés."
+ },
+ {
+  "id": 11,
+  "explanation": "La presión atmosférica en un punto es el peso de la columna de aire que ese punto tiene encima. En la cima del Everest, casi 9 km de atmósfera ya quedaron abajo: la columna de aire que queda por soportar es mucho más corta, así que pesa menos y la presión baja. La opción A dice lo contrario de lo que pasa: con la altura el aire se enrarece, su densidad disminuye, no aumenta."
+ },
+ {
+  "id": 12,
+  "explanation": "Primero el volumen de la alberca: $50 \\times 25 \\times 3 = 3\\,750$ m³. Luego el gasto del tubo (ecuación de continuidad, $Q = Av$), con radio $r = 0.20$ m:\n\n$$Q = \\pi r^2 v = \\pi (0.20)^2 (4) \\approx 0.503\\,\\frac{\\mathrm{m}^3}{\\mathrm{s}}$$\n\nEl tiempo es volumen entre gasto: $t = \\frac{3\\,750}{0.503} \\approx 7\\,460$ s, y entre 3600 da $\\approx 2.07$ horas. Si te dio 0.52 u obtuviste algo cuatro veces menor, seguramente usaste el diámetro (0.40 m) como si fuera el radio en $\\pi r^2$."
+ },
+ {
+  "id": 13,
+  "explanation": "El texto es una nota periodística: reporta un hecho (la ceremonia en Los Pinos) con datos verificables y precisos —cifras de atletas, países y visitantes— sin opinar, sin argumentar y sin expresar emociones. Esa objetividad y ese apego a los datos son la marca de la función informativa. No es C: aunque aparece un político, el texto no promueve ninguna idea ni postura, solo reporta lo que se dijo en el evento."
+ },
+ {
+  "id": 14,
+  "explanation": "La clave está en \"para ser representado\": el **drama** es el género que se escribe pensando en el escenario, no en la lectura. Sus otros dos rasgos también son de manual: fuerzas en conflicto (protagonista contra antagonista) que se resuelven en el desenlace. La novela y el cuento también tienen conflicto, pero se escriben para leerse, no para montarse en un teatro; ese detalle es el que decide la respuesta."
+ },
+ {
+  "id": 15,
+  "explanation": "El personaje **incidental** (o ambiental) aparece de manera esporádica y sus acciones son prescindibles para la trama: un mesero, un transeúnte, un vendedor. Su función es crear ambiente y dar verosimilitud, que el mundo de la obra se sienta habitado. No lo confundas con el secundario (D): ese sí participa en la historia y apoya o estorba a los principales; al incidental lo puedes quitar y la trama no cambia."
+ },
+ {
+  "id": 16,
+  "explanation": "Fíjate en las imágenes que elige el poeta: morir \"cuando decline el día\" (un final sereno, como un atardecer), con \"la cara al cielo\", una agonía que \"parezca un sueño\" (sin sufrimiento) y el alma como ave que \"remonta el vuelo\" (liberación, paz). Todo apunta a un deseo: morir con serenidad, sin dolor y con dignidad. La opción D confunde el recurso: el poeta no afirma que la muerte *sea* un sueño, sino que *desea* que su agonía se sienta como uno; es un anhelo, no una creencia."
+ },
+ {
+  "id": 17,
+  "explanation": "El género **dramático** es el que se escribe para representarse en un escenario y avanza casi exclusivamente mediante los diálogos de los personajes (más las acotaciones para el montaje). El narrativo (C) también puede tener diálogos, pero los enmarca un narrador que cuenta la historia para ser leída; en el dramático no hay narrador: todo pasa frente al público."
+ },
+ {
+  "id": 18,
+  "explanation": "El **realismo** surge a mediados del siglo XIX precisamente como reacción contra el romanticismo: frente al \"yo\" desbordado, la fantasía y la idealización, propone observar y retratar la sociedad tal como es, con objetividad casi documental (piensa en Galdós o en Flaubert). El neoclasicismo (A) es anterior al romanticismo, no posterior; y el surrealismo y el creacionismo son vanguardias del siglo XX."
+ },
+ {
+  "id": 19,
+  "explanation": "**Octavio Paz** ganó el Premio Nobel de Literatura en 1990; es, hasta hoy, el único escritor mexicano que lo ha recibido. Autor de *El laberinto de la soledad* y *Piedra de sol*, fue ante todo poeta y ensayista. El distractor fuerte es Carlos Fuentes: enorme novelista y eterno candidato, pero nunca recibió el Nobel; y ojo, la pregunta pide además un *poeta*, lo que también descarta a Fuentes y a Monsiváis."
+ },
+ {
+  "id": 20,
+  "explanation": "Un solo espacio narrativo, pocos personajes, una sola acción concentrada y un final que llega en unas cuantas líneas: esas son las características estructurales del **cuento**, un relato breve de asunto único. No es fábula (D): aunque el texto es breve y protagonizado por una sombra, la fábula exige una moraleja explícita o implícita de tipo didáctico, y \"La autonomía\" no busca dejar una enseñanza moral, sino narrar una anécdota fantástica."
+ },
+ {
+  "id": 21,
+  "explanation": "La novela pertenece al género **narrativo**: un narrador cuenta una historia con personajes, tiempo y espacio. Está escrita en **prosa** (a diferencia de la poesía épica antigua, que narraba en verso) y su estructura suele ser **compleja**: varias tramas, muchos personajes, saltos de tiempo, cambios de narrador. Justo esa extensión y complejidad es lo que la distingue del cuento, que concentra una sola acción."
+ },
+ {
+  "id": 22,
+  "explanation": "Parafrasear es decir con tus propias palabras lo que dice un texto, y para lograrlo primero tienes que **interpretarlo**: entender su sentido y reconstruirlo, no copiarlo. Por eso es un proceso de carácter interpretativo. No es expositivo (C): exponer es presentar información propia u organizada por ti; en la paráfrasis el contenido es de otro y tu trabajo es comprenderlo y reformularlo sin alterar su significado."
+ },
+ {
+  "id": 23,
+  "explanation": "El carácter metálico crece hacia la **izquierda** y hacia abajo en la tabla periódica: los metales más reactivos (los alcalinos, como el sodio, el potasio y el cesio) están en la primera columna, porque pierden electrones con mucha facilidad. Hacia la derecha pasa lo contrario: ahí están los no metales. La opción B tienta porque el carácter metálico también aumenta hacia abajo, pero \"periodos inferiores\" incluye de todo (en el periodo 6 hay desde cesio hasta radón); la regla general que pide la pregunta es la de las columnas."
+ },
+ {
+  "id": 24,
+  "explanation": "Primero la masa molar del $H_3PO_4$ sumando las masas atómicas: $3(1) + 31 + 4(16) = 3 + 31 + 64 = 98\\,\\frac{\\mathrm{g}}{\\mathrm{mol}}$. Como te piden solo 0.5 mol:\n\n$$0.5\\,\\mathrm{mol} \\times 98\\,\\frac{\\mathrm{g}}{\\mathrm{mol}} = 49\\,\\mathrm{g}$$\n\nSi contestaste 98 (opción C), calculaste bien la masa molar pero olvidaste multiplicar por 0.5: ese es 1 mol completo, no medio."
+ },
+ {
+  "id": 25,
+  "explanation": "Según la teoría de Brønsted-Lowry, un **ácido** es la especie que dona protones ($H^+$) en disolución. Por ejemplo, el HCl en agua se disocia y cede su $H^+$. Las bases (C) hacen exactamente lo contrario: aceptan protones (o liberan iones $OH^-$, en la definición de Arrhenius). Si dudaste entre B y C, quédate con esta pareja: ácido dona, base acepta."
+ },
+ {
+  "id": 26,
+  "explanation": "El pH es el logaritmo negativo de la concentración de $H^+$: si pH $= 3$, entonces $[H^+] = 10^{-3}$ M. Para la otra concentración usa el producto iónico del agua, $[H^+][OH^-] = 10^{-14}$: los exponentes deben sumar 14, así que $[OH^-] = 10^{-11}$ M. Tiene sentido: es una disolución ácida (pH menor que 7), con muchos $H^+$ y muy pocos $OH^-$. La opción B pone los números 3 y 11 a secas: son los exponentes, no las concentraciones; y la C los intercambia."
+ },
+ {
+  "id": 27,
+  "explanation": "El 38% en volumen significa que de cada 100 mL de brandy, 38 mL son alcohol. Aplica ese porcentaje al volumen de la botella:\n\n$$946\\,\\mathrm{mL} \\times 0.38 = 359.48\\,\\mathrm{mL}$$\n\nLa opción D (586.52 mL) es el complemento: el volumen de todo lo que *no* es alcohol ($946 - 359.48$); cuidado con contestar la parte equivocada."
+ },
+ {
+  "id": 28,
+  "explanation": "Cuando un **no metal** (como el azufre, el carbono o el nitrógeno) reacciona con oxígeno, se forma un **óxido ácido** (también llamado anhídrido): $SO_2$, $CO_2$, $NO_2$... Se llaman así porque al disolverse en agua producen ácidos (los oxiácidos). Los óxidos básicos (B) son la pareja contraria: se forman al oxidarse un *metal* y con agua dan hidróxidos. La regla en corto: metal + oxígeno → óxido básico; no metal + oxígeno → óxido ácido."
+ },
+ {
+  "id": 29,
+  "explanation": "La lluvia ácida se forma cuando óxidos de azufre o de nitrógeno, liberados al quemar combustibles, reaccionan con el agua de la atmósfera y generan ácidos. Eso es exactamente lo que muestra la opción B:\n\n$$SO_3 + H_2O \\rightarrow H_2SO_4$$\n\nel trióxido de azufre más agua produce ácido sulfúrico, que cae disuelto en la lluvia. La C tienta porque involucra $CO_2$, pero fíjate: esa ecuación lo *descompone*, no forma ningún ácido; y las otras dos producen metano y amoniaco, que no acidifican la lluvia."
+ },
+ {
+  "id": 30,
+  "explanation": "Los almidones y los azúcares son las dos formas típicas de los **carbohidratos**: los azúcares son carbohidratos simples (como la glucosa y la sacarosa) y el almidón es un carbohidrato complejo, un polímero de glucosa que abunda en cereales, papas y tortillas. Son la principal fuente de energía inmediata del organismo. Los lípidos (A) también dan energía, pero se consumen como grasas y aceites, no como almidones."
+ },
+ {
+  "id": 31,
+  "explanation": "Un triglicérido se forma cuando el glicerol (un alcohol con tres grupos $-OH$) reacciona con tres ácidos grasos. Cada unión alcohol + ácido carboxílico produce un enlace **éster** ($-COO-$), así que el triglicérido tiene tres grupos éster: ese es su grupo funcional característico. No confundas éster con éter (A): el éter es solo un oxígeno entre dos carbonos ($C-O-C$), sin el carbonilo $C\\!=\\!O$ que sí tiene el éster."
+ },
+ {
+  "id": 32,
+  "explanation": "La constante de equilibrio es un cociente: concentraciones de productos arriba, de reactivos abajo. Si $K > 1$, el numerador gana: en el equilibrio hay **más productos que reactivos**, es decir, la reacción está desplazada hacia la derecha. La opción D es el distractor conceptual: *toda* reacción con constante definida está en equilibrio, sea $K$ grande o chica; el valor de $K$ no te dice *si* hay equilibrio, sino *hacia dónde* está cargado."
+ },
+ {
+  "id": 33,
+  "explanation": "Un catalizador acelera la reacción ofreciendo un camino alternativo con **menor energía de activación**: al bajar esa \"barrera\", más moléculas logran reaccionar en cada instante, sin que el catalizador se consuma ni cambie el equilibrio. La opción D describe otra forma de acelerar una reacción (calentar), pero eso no es lo que hace un catalizador: su gracia es justamente acelerar sin necesidad de subir la temperatura."
+ },
+ {
+  "id": 34,
+  "explanation": "Fíjate en la cadena: entre dos de los carbonos hay una **doble ligadura** (las dos líneas paralelas). Un hidrocarburo con al menos un doble enlace carbono-carbono es un **alqueno**. No es alcano (D) porque el alcano solo tiene enlaces sencillos; no es alquino (C) porque ese requiere triple enlace; y no es aromático (B) porque no hay anillo de benceno, la cadena es abierta."
+ },
+ {
+  "id": 35,
+  "explanation": "Un ácido carboxílico se reconoce por el grupo carboxilo $-COOH$: un carbono con doble enlace a un oxígeno **y** unido a un $-OH$. La opción A es justo eso: $CH_3-COOH$, el ácido acético (el del vinagre). Las demás tienen grupos parecidos pero no iguales: en B el carbonilo está unido a $-NH_2$ (amida), en D a $-OCH_2CH_3$ (éster), y C ni siquiera tiene oxígeno: es propano, un alcano. La clave está en exigir las dos cosas juntas: $C\\!=\\!O$ más $OH$ sobre el mismo carbono."
+ },
+ {
+  "id": 36,
+  "explanation": "La Geografía estudia la relación hombre-naturaleza cuando un fenómeno natural condiciona una actividad humana (o al revés). La corriente de Humboldt es el fenómeno natural (una corriente marina fría) y la riqueza *pesquera* de Perú es la actividad humana que depende de él: ahí está la relación completa. Las opciones B y D se quedan en lo puramente natural (el clima, las especies), y la A en lo puramente humano (una convención de husos horarios); solo la C conecta ambos mundos."
+ },
+ {
+  "id": 37,
+  "explanation": "La Sierra Madre **Occidental** recorre el poniente de México, paralela a la costa del Pacífico, y atraviesa Chihuahua, Durango, Sonora y Sinaloa; ahí están las Barrancas del Cobre chihuahuenses. El distractor obvio es la Sierra Madre Oriental (A), pero esa corre del lado del Golfo de México, por Nuevo León, Tamaulipas y Veracruz. Un truco: ubica Chihuahua en el mapa, está al noroeste, del lado del Pacífico."
+ },
+ {
+  "id": 38,
+  "explanation": "El cuarto río más largo del mundo es el **Misisipi** (con su afluente el Misuri), después del Nilo, el Amazonas y el Yangtsé, y corre por Estados Unidos, la mayor economía del planeta: cumple las dos condiciones de la pregunta. El distractor fuerte es el Yangtsé (B), porque China también es potencia económica, pero ese río es el *tercero* en longitud, no el cuarto."
+ },
+ {
+  "id": 39,
+  "explanation": "Las corrientes marinas frías, ricas en oxígeno y nutrientes, sostienen los grandes bancos pesqueros de especies de aguas frías: el **salmón** (Pacífico norte) y el **bacalao** (Atlántico norte, como en los bancos de Terranova). El camarón y la jaiba, en cambio, son típicos de aguas cálidas y costeras (piensa en el Golfo de México), así que cualquier opción que los incluya queda descartada."
+ },
+ {
+  "id": 40,
+  "explanation": "La taiga es el bosque de coníferas (pinos y abetos) de los climas fríos continentales, y forma una franja casi continua en las latitudes altas del hemisferio norte: **Canadá, el norte de Europa (Escandinavia y Rusia europea) y Siberia**. Ese dato te deja eliminar rápido: cualquier opción que mencione lugares cálidos o tropicales (Malasia, India, el norte de Chile, Australia) no puede ser taiga."
+ }
+]

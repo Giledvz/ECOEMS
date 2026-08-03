@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "La rapidez promedio es distancia entre tiempo, pero primero pon el tiempo en las unidades de la respuesta. Tres días son $3 \\times 24 = 72$ horas, así que:\n\n$$v = \\frac{3.8 \\times 10^{15}\\ \\mathrm{km}}{72\\ \\mathrm{h}} \\approx 5.3 \\times 10^{13}\\ \\tfrac{\\mathrm{km}}{\\mathrm{h}}$$\n\nLa clave del reactivo está en las unidades: solo la opción B combina el número correcto con la unidad correcta. Las opciones C y D traen el mismo $5.3$ pero con potencia o unidad equivocada: si no convertiste los días a horas, cualquiera de ellas se antoja."
+ },
+ {
+  "id": 2,
+  "explanation": "La aceleración media es el cambio total de velocidad entre el tiempo total. El velocista pasa de $0$ a $4.8\\ \\tfrac{\\mathrm{m}}{\\mathrm{s}}$ en tres zancadas de $0.8$ s cada una, o sea $2.4$ s en total:\n\n$$a = \\frac{4.8 - 0}{2.4} = 2\\ \\tfrac{\\mathrm{m}}{\\mathrm{s}^2}$$\n\nFíjate que en cada zancada gana $1.6\\ \\tfrac{\\mathrm{m}}{\\mathrm{s}}$ en $0.8$ s, que también da $2$: la aceleración es constante. Si te dio $6$ (opción C), dividiste $4.8$ entre $0.8$, usando el tiempo de una sola zancada en vez de las tres."
+ },
+ {
+  "id": 3,
+  "explanation": "Como las fuerzas tienen la misma dirección pero sentidos contrarios, se restan: la fuerza neta es $30 - 20 = 10$ N. Con la segunda ley de Newton:\n\n$$a = \\frac{F}{m} = \\frac{10\\ \\mathrm{N}}{100\\ \\mathrm{kg}} = 0.1\\ \\tfrac{\\mathrm{m}}{\\mathrm{s}^2}$$\n\nSi te dio $0.5$ (opción D), sumaste las fuerzas como si empujaran hacia el mismo lado: $50 \\div 100$. El sentido contrario obliga a restar."
+ },
+ {
+  "id": 4,
+  "explanation": "Cuando el elevador cae libremente, la caja y el piso caen juntos con la misma aceleración $g$: es la famosa **ingravidez aparente**. El piso no necesita empujar a la caja para sostenerla, porque nada la está frenando; la fuerza normal entre ambos es cero.\n\nSi contestaste 5,000 N (opción A), calculaste el peso $mg = 50 \\times 100$... que ni siquiera es eso, sería $500$ N; el punto es que durante la caída libre el piso no ejerce fuerza alguna sobre la caja."
+ },
+ {
+  "id": 5,
+  "explanation": "Es conservación de la cantidad de movimiento. Antes del salto todo está en reposo, así que el momento total es cero y después debe seguir siéndolo: lo que el niño se lleva hacia adelante, el carrito lo compensa hacia atrás.\n\n$$m_{\\text{niño}} \\, v_{\\text{niño}} = m_{\\text{carrito}} \\, v_{\\text{carrito}}$$\n\n$$30 \\times 2 = m \\times 12 \\quad \\Rightarrow \\quad m = \\frac{60}{12} = 5\\ \\mathrm{kg}$$\n\nTiene sentido: el carrito es 6 veces más ligero, por eso sale 6 veces más rápido."
+ },
+ {
+  "id": 6,
+  "explanation": "La escala Kelvin usa grados del mismo tamaño que los Celsius, solo que empieza en el cero absoluto, que está en $-273\\ ^\\circ\\mathrm{C}$. Por eso convertir es nada más recorrer el punto de partida: $\\mathrm{T_K} = \\mathrm{T_C} + 273$. Comprueba: el agua congela a $0\\ ^\\circ\\mathrm{C} = 273$ K. La opción A con el $32$ y el $1.8$ es la fórmula de Fahrenheit, que aquí no pinta nada; y la C te daría temperaturas Kelvin negativas, que no existen."
+ },
+ {
+  "id": 7,
+  "explanation": "La definición trae las tres pistas: **un gramo** de sustancia, **elevar la temperatura** y **un grado Celsius**. Eso es el calor específico, que en esta guía aparece como *capacidad térmica específica*: la energía por unidad de masa y por grado, propia de cada sustancia.\n\nNo es la capacidad térmica a secas (opción A), porque esa se refiere al objeto completo, sin dividir entre la masa. Y los calores latentes (B y C) son energía para cambiar de estado *sin* cambiar la temperatura, justo lo contrario de lo que pide el enunciado."
+ },
+ {
+  "id": 8,
+  "explanation": "La interferencia se explica con el **principio de superposición**: cuando dos ondas coinciden en un punto, sus perturbaciones se suman. Si llegan en fase, se refuerzan (interferencia constructiva); si llegan desfasadas, se cancelan (destructiva). La amplitud (opción A) influye en *cuánto* se refuerzan o cancelan, pero el fenómeno en sí nace de la superposición; y no importa si las ondas son longitudinales o transversales: ambas interfieren igual."
+ },
+ {
+  "id": 9,
+  "explanation": "El campo eléctrico se define como la fuerza que se ejerce por unidad de carga: $E = \\frac{F}{q}$. Como la fuerza va en newtons y la carga en coulombs, sus unidades son $\\frac{\\mathrm{N}}{\\mathrm{C}}$.\n\nLa opción A, $\\frac{\\mathrm{N}}{\\mathrm{kg}}$, es la unidad del campo *gravitacional* (fuerza por unidad de masa): la analogía es bonita, pero aquí la carga de prueba es eléctrica, no una masa."
+ },
+ {
+  "id": 10,
+  "explanation": "Arquímedes dice que todo cuerpo sumergido total o parcialmente en un fluido recibe un empuje hacia arriba igual al peso del fluido que desaloja: por eso flotan los barcos y por eso te sientes más ligero en la alberca. Eso es exactamente la opción C.\n\nLas otras describen principios distintos: la A es el principio de Pascal aplicado a la prensa hidráulica, la B es el efecto Venturi (ecuación de Bernoulli) y la D es el enunciado general de Pascal."
+ },
+ {
+  "id": 11,
+  "explanation": "En una nota periodística, el enunciado que va justo debajo del encabezado y amplía o complementa lo que este anuncia se llama **balazo o bajada**. Aquí el titular es \"ESTE MIÉRCOLES SE ESPERAN VARIAS MARCHAS EN LA CDMX\" y el subrayado —\"Las autoridades recomiendan a la población evitar las zonas afectadas\"— agrega un dato secundario para enganchar al lector: esa es la bajada.\n\nNo es la entrada o *lead* (opción C), porque esa es el primer párrafo del cuerpo de la noticia, el que empieza con \"Ciudad de México, México...\"."
+ },
+ {
+  "id": 12,
+  "explanation": "El texto dramático está hecho para representarse en escena, así que la historia avanza solo con lo que los personajes dicen: **no hay narrador**. Y las instrucciones sobre movimientos, gestos, escenografía o tono van en las **acotaciones**, esas indicaciones entre paréntesis o en cursivas que no se pronuncian en escena. Por eso la respuesta es la A.\n\nEl vestuario y la escenografía (opciones B y D) pertenecen al montaje, a la puesta en escena, no al texto dramático como forma literaria."
+ },
+ {
+  "id": 13,
+  "explanation": "Lo propio del texto poético es la función expresiva: el poeta plasma sentimientos, emociones o pensamientos, y lo hace a través de **figuras retóricas** (metáfora, hipérbole, comparación...) que le dan al lenguaje un valor más allá del literal. Eso es la opción B.\n\nRelatar hechos con objetividad (opción C) es lo contrario de la poesía: eso corresponde a los textos informativos, y persuadir (opción D) a los argumentativos o publicitarios."
+ },
+ {
+  "id": 14,
+  "explanation": "Cuenta las sílabas del verso: *Yo-sé-los-nom-bres-ex-tra-ños* son 8. Como la última palabra, *extraños*, es grave (llana), no se suma ni se resta nada: el verso queda de **8 sílabas, octosílabo**. Es el metro clásico de la poesía popular en español —romances, corridos— y el de los *Versos sencillos* de Martí.\n\nRecuerda los ajustes por si acaso: palabra final aguda suma una sílaba, esdrújula resta una; aquí no aplica ninguno."
+ },
+ {
+  "id": 15,
+  "explanation": "El género **épico** canta hazañas heroicas: sus protagonistas —Aquiles, el Cid, Roldán— parten de figuras históricas o legendarias y encarnan los valores de todo un pueblo (el honor, la lealtad, el valor). Esas tres señas del enunciado (asuntos heroicos, base histórica, valores colectivos) son su definición de libro.\n\nNo confundas con el narrativo (opción D): la épica es narrativa, sí, pero el género narrativo en general no exige héroes ni valores colectivos; el enunciado describe específicamente a la épica."
+ },
+ {
+  "id": 16,
+  "explanation": "El Realismo español es el movimiento de la segunda mitad del siglo XIX que retrata la sociedad con fidelidad y detalle, y **Juan Valera** —autor de *Pepita Jiménez*— es uno de sus representantes, junto a Galdós y Clarín.\n\nLos otros tres son de épocas distintas: Unamuno y Machado pertenecen a la Generación del 98, y Camilo José Cela a la narrativa de posguerra del siglo XX."
+ },
+ {
+  "id": 17,
+  "explanation": "La literatura contemporánea abarca a los autores del siglo XX en adelante, y ahí caben **Jorge Ibargüengoitia** (narrador mexicano, *Los relámpagos de agosto*) y **José Saramago** (portugués, Nobel 1998, *Ensayo sobre la ceguera*).\n\nLas demás parejas mezclan siglos anteriores: Calderón es del Barroco, Sor Juana del Barroco novohispano, Mary Shelley y Dostoyevski del XIX, igual que Flaubert (Realismo) y Wilde. Ninguna de esas duplas es contemporánea."
+ },
+ {
+  "id": 18,
+  "explanation": "El **cuento** es la narración breve por excelencia: pocos personajes, una sola línea de acción y libertad total para lo imaginario y lo fantástico, desde los cuentos de hadas hasta Borges o Cortázar. \"Narración breve que da forma a las fantasías\" es su definición.\n\nLa crónica (opción A) también es narración, pero relata hechos reales en orden temporal; no está hecha para la fantasía."
+ },
+ {
+  "id": 19,
+  "explanation": "La novela es la forma mayor del género **narrativo**: un narrador cuenta una historia con personajes, tiempo y espacio. Está escrita en **prosa**, no en verso, y como maneja varios personajes, tramas paralelas y saltos de tiempo, su estructura suele ser **compleja**. Esa tercia es la opción A.\n\nLa B se antoja por lo de \"épico\" (la novela desciende de la épica), pero la épica clásica se escribía en verso, y la novela moderna, no."
+ },
+ {
+  "id": 20,
+  "explanation": "El formato APA ordena así: Apellido, Nombre. (Año entre paréntesis). Título de la obra. Editorial y demás datos. La opción B es la única que lo respeta: *Dosal Gómez, Ma. Rosario. et al. (2009). Lengua Española. Español IV...* — autor primero y año inmediatamente después, entre paréntesis.\n\nLa opción A es el formato bibliográfico tradicional (apellido en mayúsculas, año hasta el final), no APA; la C empieza por el título y la D revuelve editorial con título."
+ },
+ {
+  "id": 21,
+  "explanation": "El bronce es una **aleación** de cobre y estaño: los metales están fundidos y mezclados de manera uniforme, de modo que cualquier pedacito de la medalla tiene la misma composición y no distingues fases a simple vista. Eso es una **mezcla homogénea**.\n\nNo es compuesto (opción C) porque los metales no están unidos químicamente en proporciones fijas: la proporción de cobre y estaño puede variar de una aleación a otra, que es la firma de una mezcla."
+ },
+ {
+  "id": 22,
+  "explanation": "Mendeleev (1869) ordenó los elementos por su **masa atómica** creciente y notó que las propiedades se repetían periódicamente; con eso hasta predijo elementos que faltaban.\n\nEl distractor fuerte es el número atómico (opción C), pero ese criterio llegó después, con Moseley en 1913, y es el que usa la tabla periódica *actual*. La pregunta dice \"en su tiempo\": en 1869 ni siquiera se conocía el protón."
+ },
+ {
+  "id": 23,
+  "explanation": "Si los dos átomos tienen la misma electronegatividad, ninguno jala los electrones con más fuerza que el otro: los comparten por igual y el enlace queda sin polos. Eso es el enlace **covalente no polar**, el de moléculas como $H_2$, $O_2$ o $Cl_2$, donde los dos átomos son idénticos.\n\nEl iónico (opción A) es justo el caso opuesto: requiere una diferencia *grande* de electronegatividad para que un átomo le arrebate electrones al otro."
+ },
+ {
+  "id": 24,
+  "explanation": "La regla es: óxido de **no metal** + agua → ácido (por eso se les llama anhídridos u óxidos ácidos), mientras que óxido de **metal** + agua → hidróxido (base). De la lista, el único óxido de no metal es el $CO_2$:\n\n$$CO_2 + H_2O \\rightarrow H_2CO_3 \\text{ (ácido carbónico)}$$\n\nEs la misma reacción que acidifica la lluvia y el agua mineral. $Na_2O$, $MgO$ y $FeO$ son óxidos metálicos: con agua forman hidróxidos, o sea bases."
+ },
+ {
+  "id": 25,
+  "explanation": "Primero calcula la masa molar del KCl con las masas atómicas: $K \\approx 39$ y $Cl \\approx 35.5$, así que un mol de KCl pesa unos $74.5 \\approx 75$ g. Entonces:\n\n$$0.1\\ \\mathrm{mol} \\times 75\\ \\tfrac{\\mathrm{g}}{\\mathrm{mol}} = 7.5\\ \\mathrm{g}$$\n\nFíjate que las cuatro opciones traen las mismas cifras y solo cambia el punto decimal: el reactivo está cazando errores al mover el decimal. $0.1$ mol es la décima parte de un mol, o sea la décima parte de $75$."
+ },
+ {
+  "id": 26,
+  "explanation": "El agua disuelve tantas cosas por dos razones que trabajan juntas: su **polaridad** (la molécula tiene un lado positivo y uno negativo, y con esos polos rodea y separa a los iones y a otras moléculas polares) y sus **puentes de hidrógeno**, que le permiten interactuar y asociarse con muchísimas sustancias. Esa dupla es la opción C.\n\nLos \"electrones compartidos\" de las otras opciones describen el enlace covalente interno del agua, que existe, sí, pero no es lo que explica su poder disolvente."
+ },
+ {
+  "id": 27,
+  "explanation": "La escala de pH es un balance: a menor concentración de iones $H^+$, mayor concentración de iones $OH^-$. Por debajo de 7 la disolución es ácida (ganan los $H^+$) y por arriba de 7 es básica (ganan los $OH^-$). Entre más alto el pH, más $OH^-$ hay, así que el máximo de la lista, **13**, es el de mayor concentración de $OH^-$.\n\nSi elegiste 2 (opción A), leíste la escala al revés: ese es el de mayor concentración de $H^+$."
+ },
+ {
+  "id": 28,
+  "explanation": "Los contaminantes **primarios** son los que se emiten directamente a la atmósfera desde la fuente, y los clásicos son los óxidos de carbono ($CO$, $CO_2$) y de nitrógeno ($NO$, $NO_2$), que salen de los escapes de los vehículos y de las chimeneas al quemar combustibles. Por eso la respuesta es C y N.\n\nEl plomo y el mercurio de las otras opciones son contaminantes, sí, pero como metales pesados, no como los óxidos típicos de la combustión."
+ },
+ {
+  "id": 29,
+  "explanation": "Cada aminoácido tiene dos grupos funcionales: el amino ($-NH_2$) y el carboxilo ($-COOH$). El enlace peptídico se forma cuando el grupo amino de un aminoácido reacciona con el grupo **carboxilo** ($-COOH$) del otro, liberando una molécula de agua; encadenando estos enlaces se construyen las proteínas.\n\nEl $-OH$ (opción A) es el grupo de los alcoholes y el $-CHO$ (opción D) el de los aldehídos: ninguno participa en el enlace peptídico."
+ },
+ {
+  "id": 30,
+  "explanation": "El signo de la entalpía te dice hacia dónde va la energía: $\\Delta H$ **negativo** significa que la reacción libera calor (exotérmica) y positivo que lo absorbe (endotérmica). El mayor desprendimiento es entonces el valor negativo más grande en magnitud:\n\n$$\\Delta H^\\circ = -395.7\\ \\tfrac{\\mathrm{kJ}}{\\mathrm{mol}}$$\n\nLas opciones B y C ni siquiera compiten: con signo positivo, absorben energía en vez de soltarla. Y la A también desprende, pero solo $110.5$ kJ/mol contra los $395.7$ de la D."
+ },
+ {
+  "id": 31,
+  "explanation": "La Geografía moderna no se queda en localizar ni en describir: su finalidad es **explicar cómo se relacionan** los elementos naturales (relieve, clima, agua) con los sociales (población, economía, cultura) en el espacio geográfico. Esa visión integradora es la opción C.\n\nLa opción D, localizar elementos sobre la superficie, se antoja porque es lo primero que uno asocia con los mapas, pero la localización es apenas una herramienta: la finalidad actual va más allá, a la relación naturaleza-sociedad."
+ },
+ {
+  "id": 32,
+  "explanation": "Cada proyección deforma menos cierta franja del planeta: la cilíndrica es fiel cerca del ecuador, la polar o azimutal cerca de los polos, y la **cónica** en las latitudes medias, porque el cono imaginario toca al globo justo en esas latitudes. México está entre los paralelos 14° y 33° norte —latitudes medias—, así que la proyección cónica es la que lo representa con menor distorsión."
+ },
+ {
+  "id": 33,
+  "explanation": "La Sierra Madre del Sur corre paralela a la costa del Pacífico, desde Jalisco hasta el Istmo de Tehuantepec, y las entidades que atraviesa de lleno son **Guerrero y Oaxaca**.\n\nSi dudaste con Chiapas o Veracruz, recuerda: en Chiapas la cadena costera es la Sierra Madre *de Chiapas*, otro sistema, y Veracruz está del lado del Golfo, donde la Sierra Madre del Sur no llega."
+ },
+ {
+  "id": 34,
+  "explanation": "Sonora es el primer productor nacional de **cobre**: ahí está Cananea, una de las minas de cobre más grandes del mundo, junto con Nacozari. La minería del cobre es la seña histórica del estado.\n\nSi elegiste plata (opción D), recuerda que el primer lugar en plata lo pelea Zacatecas (con Chihuahua y Durango en la lista), no Sonora; y el hierro se asocia más con Michoacán y Coahuila."
+ },
+ {
+  "id": 35,
+  "explanation": "La taiga o bosque boreal es la franja de coníferas (pinos, abetos, alerces) que crece en climas fríos justo al sur de la tundra. Por eso solo existe en el hemisferio norte, en altas latitudes: **norte de Europa y norte de Asia** (Escandinavia y Siberia), además de Canadá y Alaska.\n\nEn el hemisferio sur no hay taiga: a esas latitudes casi no hay continente, así que cualquier opción con \"sur\" queda descartada de entrada."
+ },
+ {
+  "id": 36,
+  "explanation": "La densidad es población entre superficie. **Baja California Sur** y **Quintana Roo** han sido tradicionalmente los estados menos densamente poblados: territorios extensos (desierto en uno, selva en el otro) con relativamente pocos habitantes.\n\nOaxaca y Veracruz engañan porque tienen mucha población rural dispersa, pero su población total es grande y su densidad resulta media; y Morelos es de los estados *más* densos por lo pequeño de su territorio."
+ },
+ {
+  "id": 37,
+  "explanation": "El Índice de Desarrollo Humano de la ONU combina tres dimensiones: **ingreso** (ingreso per cápita), **educación** (alfabetismo y escolaridad) y **salud** (esperanza de vida al nacer). La opción A trae exactamente un indicador de cada dimensión.\n\nLas demás mezclan variables puramente económicas o sueltas (deuda externa, inflación, acceso a internet) que no forman parte del cálculo del IDH."
+ },
+ {
+  "id": 38,
+  "explanation": "El sector terciario —comercio, transporte, turismo, servicios financieros, educación, gobierno— es el más importante de la economía mexicana porque **emplea a la mayor cantidad de personas**: alrededor de dos de cada tres trabajadores del país están en los servicios, y es también el que más aporta al PIB.\n\nLa opción A invierte el argumento: el terciario apoya a la industria, sí, pero su peso no viene de ahí, sino de cuánta gente ocupa."
+ },
+ {
+  "id": 39,
+  "explanation": "La crianza de cerdos requiere granos para alimentarlos, así que se concentra donde estos abundan: el **Bajío** (Guanajuato, Jalisco, Michoacán, Querétaro) es la gran zona productora de **cereales** del país —maíz y sorgo sobre todo—, y por eso ahí prospera la porcicultura; Jalisco y Guanajuato están entre los primeros productores de carne de cerdo.\n\nLa lógica del reactivo es esa cadena: zona cerealera → alimento barato → ganado porcino."
+ },
+ {
+  "id": 40,
+  "explanation": "La **Sonda de Campeche**, en el Golfo de México frente a las costas de Campeche y Tabasco, es la gran zona marítima petrolera del país: ahí está Cantarell, el yacimiento que llegó a ser de los más productivos del mundo, y de ahí sale la mayor parte del petróleo y gas costa afuera de México.\n\nPoza Rica y Ciudad Madero (opciones A y B) son zonas petroleras, pero *terrestres*: el enunciado pide una zona marítima."
+ }
+]

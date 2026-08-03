@@ -33,7 +33,8 @@
               "C": "$3.2\\,\\mathrm{\\frac{m}{s}}$",
               "D": "$3.6\\,\\mathrm{\\frac{m}{s}}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Como el auto parte del reposo con aceleración constante, usa $v = at$: la velocidad es simplemente aceleración por tiempo.\n\n$$v = 1.8\\,\\mathrm{\\frac{m}{s^2}} \\times 2\\,\\mathrm{s} = 3.6\\,\\mathrm{\\frac{m}{s}}$$\n\nSi te dio $0.9$ (opción A), dividiste en vez de multiplicar; y $1.8$ (opción B) es la aceleración, no la velocidad."
           },
           {
             "id": 2,
@@ -52,7 +53,8 @@
               "answer": "A",
               "oficial": "D",
               "motivo": "La clave oficial marca D (√101.1), pero ese valor no se obtiene de ninguna lectura de la figura: se probaron las 192 combinaciones de cuadrante y eje de referencia para los tres vectores usando la tabla de senos y cosenos de la propia guía, y ninguna lo produce. El único valor alcanzable de las cuatro opciones es √75.8, y sale con un solo cambio respecto de lo que describe la guía: medir los 30° del vector de 8 N desde el eje vertical. Con eso, 8 N → (4.0, 6.4), 9 N → (2.7, −8.1) y 10 N → (−7.0, −7.0) dan una resultante de (−0.3, −8.7), es decir R² = 75.78. La figura de la guía además se contradice sola: dibuja el vector de 9 N a unos 20° pero lo rotula 75°. Nuestra figura (q2_vectores.svg) se dibujó siguiendo las etiquetas."
-            }
+            },
+            "explanation": "Descompón cada vector con la tabla que te dan. El de $8\\,\\mathrm{N}$ está a 30° del eje $y$: $x = 8(0.5) = 4$, $y = 8(0.8) = 6.4$. El de $9\\,\\mathrm{N}$ está a 75° bajo el eje $x$: $x = 9(0.3) = 2.7$, $y = -9(0.9) = -8.1$. El de $10\\,\\mathrm{N}$ apunta al tercer cuadrante a 45°: $x = -10(0.7) = -7$, $y = -10(0.7) = -7$.\n\nSumas: $R_x = 4 + 2.7 - 7 = -0.3$ y $R_y = 6.4 - 8.1 - 7 = -8.7$. La magnitud es\n\n$$R = \\sqrt{(-0.3)^2 + (-8.7)^2} = \\sqrt{0.09 + 75.69} = \\sqrt{75.8}\\,\\mathrm{N}$$\n\nSi te dio $\\sqrt{650}$ (opción C), sumaste las magnitudes al cuadrado sin descomponer: los vectores no se suman así, hay que trabajar por componentes."
           },
           {
             "id": 3,
@@ -72,7 +74,8 @@
               "C": "",
               "D": ""
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La Tercera Ley de Newton dice: si el bate empuja a la pelota, la pelota empuja al bate con una fuerza de **igual magnitud y sentido contrario**, y cada fuerza actúa sobre un cuerpo distinto. En la imagen A las dos flechas miden lo mismo y apuntan en sentidos opuestos, alejándose del punto de contacto: $F_{B/P}$ sobre la pelota y $F_{P/B}$ sobre el bate.\n\nEn B y D las flechas tienen tamaños distintos (violan la igualdad de magnitudes), y en C apuntan una hacia la otra, como si ambas fuerzas empujaran hacia el choque, lo cual no representa el par acción-reacción."
           },
           {
             "id": 4,
@@ -85,7 +88,8 @@
               "C": "$Ec = \\frac{mv}{2}$",
               "D": "$Ec = \\frac{1}{2}mv^2$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La energía cinética es la energía asociada al movimiento y su fórmula es\n\n$$E_c = \\frac{1}{2}mv^2$$\n\nFíjate en dos detalles que delatan a los distractores: la velocidad va **al cuadrado** (por eso $mv$ no puede ser, esa es la cantidad de movimiento) y el factor es un medio, no un 2 como en la opción B."
           },
           {
             "id": 5,
@@ -98,7 +102,8 @@
               "C": "se calienta por medio de trabajo.",
               "D": "su presión y su masa permanecen constantes."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El equilibrio térmico es un concepto que involucra a **dos** sistemas: cuando están en contacto térmico y ya no hay flujo neto de calor entre ellos, es porque alcanzaron la misma temperatura. Esa es justo la opción B.\n\nLa opción A se antoja, pero que la temperatura de un solo sistema no varíe en un proceso describe un proceso isotérmico, no el equilibrio térmico entre sistemas."
           },
           {
             "id": 6,
@@ -111,7 +116,8 @@
               "C": "$0.6\\,\\mathrm{\\frac{kg}{m^3}}$",
               "D": "$1.3\\,\\mathrm{\\frac{kg}{m^3}}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Combina la ley del gas ideal con la definición de densidad: de $PV = nRT$ y $n = \\frac{m}{M}$ sale $\\rho = \\frac{PM}{RT}$. El oxígeno es diatómico, así que $M = 2(16) = 32\\,\\mathrm{\\frac{g}{mol}} = 0.032\\,\\mathrm{\\frac{kg}{mol}}$, y la temperatura debe ir en kelvin: $27 + 273 = 300\\,\\mathrm{K}$.\n\n$$\\rho = \\frac{(101{,}325\\,\\mathrm{Pa})(0.032\\,\\mathrm{\\frac{kg}{mol}})}{(8.314\\,\\mathrm{\\frac{J}{mol\\,K}})(300\\,\\mathrm{K})} \\approx 1.3\\,\\mathrm{\\frac{kg}{m^3}}$$\n\nSi te dio $0.6$ (opción C), usaste $M = 16$: olvidaste que el O$_2$ es diatómico."
           },
           {
             "id": 7,
@@ -124,7 +130,8 @@
               "C": "$4.76\\times10^{-3}\\,\\mathrm{Hz}$",
               "D": "$4.28\\times10^{14}\\,\\mathrm{Hz}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La velocidad de una onda, su frecuencia y su longitud de onda se relacionan con $c = \\lambda f$, así que $f = \\frac{c}{\\lambda}$. Convierte primero la velocidad: $300{,}000\\,\\mathrm{\\frac{km}{s}} = 3\\times10^{8}\\,\\mathrm{\\frac{m}{s}}$.\n\n$$f = \\frac{3\\times10^{8}}{7\\times10^{-7}} \\approx 4.28\\times10^{14}\\,\\mathrm{Hz}$$\n\nSi te dio $2.33\\times10^{-15}$ (opción A), dividiste al revés ($\\lambda \\div c$): ese número tan chiquito debería alertarte, la luz visible anda en los cientos de billones de hertz."
           },
           {
             "id": 8,
@@ -137,7 +144,8 @@
               "C": "energía.",
               "D": "longitud de onda."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En la interferencia, las ondas se refuerzan en unos puntos (franjas claras) y se cancelan en otros (franjas obscuras), pero la energía no desaparece: la que \"falta\" en las zonas obscuras aparece concentrada en las claras. El patrón completo es una redistribución que respeta la **conservación de la energía**.\n\nLa difracción (opción B) es otro fenómeno ondulatorio, no algo que se conserve."
           },
           {
             "id": 9,
@@ -151,7 +159,8 @@
               "C": "6F N",
               "D": "12F N"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Aquí no hace falta calcular nada: es un argumento de **simetría**. Las 12 cargas $+q$ están uniformemente distribuidas sobre el círculo, así que por cada carga que empuja a $+Q$ en una dirección hay otra diametralmente opuesta que la empuja con la misma fuerza en dirección contraria. Los 12 empujones se cancelan por pares y la fuerza neta sobre $+Q$ es $0$.\n\nSi contestaste $12F$ (opción D), sumaste las magnitudes de las 12 fuerzas: las fuerzas son vectores y aquí sus direcciones se cancelan."
           },
           {
             "id": 10,
@@ -164,7 +173,8 @@
               "C": "10 V",
               "D": "1 V"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Es una aplicación directa de la ley de Ohm, $V = IR$:\n\n$$V = (10\\,\\mathrm{A})(10\\,\\Omega) = 100\\,\\mathrm{V}$$\n\nSi contestaste $1\\,\\mathrm{V}$ (opción D), dividiste en vez de multiplicar: esa sería la corriente si te hubieran dado el voltaje."
           },
           {
             "id": 11,
@@ -178,7 +188,8 @@
               "C": "$\\frac{V}{3R}$",
               "D": "$\\frac{3V}{R}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El circuito es un solo lazo: la pila de voltaje $V$ conectada directamente al resistor de resistencia $\\frac{R}{2}$. Aplica la ley de Ohm despejando la corriente:\n\n$$I = \\frac{V}{R_{\\mathrm{total}}} = \\frac{V}{R/2} = \\frac{2V}{R}$$\n\nOjo con el álgebra: dividir entre $\\frac{R}{2}$ es multiplicar por 2. Si contestaste $\\frac{V}{2R}$ (opción A), el 2 se te fue al denominador: ese sería el resultado con una resistencia $2R$."
           },
           {
             "id": 12,
@@ -192,7 +203,8 @@
               "C": "12 $\\Omega$",
               "D": "1.90 $\\Omega$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En el circuito, $R_2 = 4\\,\\Omega$ y $R_3 = 6\\,\\Omega$ están en paralelo, y esa combinación queda en serie con $R_1 = 2\\,\\Omega$. Primero el paralelo:\n\n$$R_{23} = \\frac{R_2 R_3}{R_2 + R_3} = \\frac{4 \\times 6}{4 + 6} = 2.4\\,\\Omega$$\n\nLuego la serie: $R_T = 2 + 2.4 = 4.4\\,\\Omega$.\n\nSi te dio $12\\,\\Omega$ (opción C), sumaste las tres como si estuvieran en serie: revisa siempre la topología del circuito antes de sumar."
           },
           {
             "id": 13,
@@ -206,7 +218,8 @@
               "C": "$P_B > P_A > P_C$",
               "D": "$P_C > P_B > P_A$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La presión en el fondo de un recipiente por el líquido que contiene es $P = \\rho g h$. Los recipientes son idénticos y tienen la **misma cantidad** de líquido, así que la altura $h$ es la misma en los tres; la única diferencia es la densidad. A mayor densidad, mayor presión, y como $\\rho_A > \\rho_B > \\rho_C$, entonces\n\n$$P_A > P_B > P_C$$\n\nLa opción A (presiones iguales) sería cierta solo si los tres líquidos tuvieran la misma densidad."
           },
           {
             "id": 14,
@@ -219,7 +232,8 @@
               "C": "8 cm",
               "D": "60 cm"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Con el radio de $30\\,\\mathrm{cm}$, la distancia focal es $f = \\frac{R}{2} = 15\\,\\mathrm{cm}$. Ahora usa la ecuación de las lentes delgadas con la imagen a $d_i = 20\\,\\mathrm{cm}$:\n\n$$\\frac{1}{d_o} = \\frac{1}{f} - \\frac{1}{d_i} = \\frac{1}{15} - \\frac{1}{20} = \\frac{4 - 3}{60} = \\frac{1}{60}$$\n\nEl objeto está a $d_o = 60\\,\\mathrm{cm}$ de la lente.\n\nSi te dio $8.6 \\approx 8$ (opción C), sumaste $\\frac{1}{15} + \\frac{1}{20}$: recuerda que en la ecuación se despeja restando."
           },
           {
             "id": 15,
@@ -232,7 +246,8 @@
               "C": "calor y difracción.",
               "D": "reflexión y refracción."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La dualidad de la luz se refiere a que en unos fenómenos se comporta como **onda** (interferencia, difracción) y en otros como **partícula** o fotón (efecto fotoeléctrico). Por eso se habla de dualidad onda-partícula: no es que sea una u otra, sino que ambos modelos son necesarios para describirla.\n\nLa reflexión y la refracción (opción D) son fenómenos que la luz presenta, no los dos \"comportamientos\" de la dualidad."
           },
           {
             "id": 16,
@@ -245,7 +260,8 @@
               "C": "Química y Biología.",
               "D": "Física y Química."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Marie Curie ganó dos premios Nobel: el de **Física** en 1903 (compartido con Pierre Curie y Henri Becquerel, por sus investigaciones sobre la radiactividad) y el de **Química** en 1911 (por el descubrimiento del radio y el polonio). Fue la primera persona en ganar el Nobel en dos ciencias distintas.\n\nAunque sus descubrimientos tuvieron enorme impacto en la medicina, nunca recibió el Nobel de Medicina (opción B)."
           }
         ]
       },
@@ -264,7 +280,8 @@
               "C": "una serie de ideas perfectamente establecidas cuya finalidad es informar a partir de su función referencial y apelativa.",
               "D": "un contenido acorde al pensamiento del autor, en la que las ideas se presentan en función de la subjetividad del lector."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Las propiedades textuales clásicas son tres: **adecuación** (el texto responde a una situación comunicativa), **coherencia** (es una unidad de información con significado global) y **cohesión** (sus ideas están bien enlazadas entre sí). La opción A reúne exactamente esas tres.\n\nLas citas documentadas (opción B) son exigencia de ciertos textos académicos, no una propiedad general de todo texto."
           },
           {
             "id": 18,
@@ -278,7 +295,8 @@
               "C": "expresa la emotividad y los sentimientos de quien escribe.",
               "D": "se dan los nombres y apellidos de los participantes."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La función referencial (o informativa) se centra en el contexto: transmite información objetiva, de forma directa y clara, sin opiniones ni emociones del emisor. Fíjate en la nota: solo reporta hechos —quiénes ganaron, qué concurso, dónde se celebró— sin ningún comentario ni intención de conmover.\n\nLa opción D se antoja porque el texto sí da nombres y apellidos, pero ese es un dato del contenido, no lo que define la función referencial: lo que la define es la transmisión objetiva del mensaje."
           },
           {
             "id": 19,
@@ -291,7 +309,8 @@
               "C": "Tragedia.",
               "D": "Farsa."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La **tragedia** es el subgénero dramático donde los personajes, generalmente de condición elevada, están marcados por la fatalidad: por más que luchen, el destino los arrastra a un desenlace funesto. Piensa en *Edipo Rey*: todo lo que hace Edipo por escapar de la profecía lo acerca a cumplirla.\n\nEl sainete, el entremés y la farsa son piezas cómicas o ligeras, justo lo contrario del tono fatal que describe el enunciado."
           },
           {
             "id": 20,
@@ -304,7 +323,8 @@
               "C": "Metonimia.",
               "D": "Metáfora."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El **símil** es la comparación explícita entre dos elementos mediante un nexo comparativo: *como*, *cual*, *semejante a*. Aquí la lluvia se compara con \"finísimas flechas afiladas\" usando la palabra **como**, y ese nexo es la marca inconfundible del símil.\n\nSi hubiera dicho \"finísimas flechas afiladas caían sobre la vidriera\", sin el *como*, entonces sí sería metáfora (opción D): la diferencia entre ambas es precisamente el nexo comparativo."
           },
           {
             "id": 21,
@@ -317,7 +337,8 @@
               "C": "Narrativo.",
               "D": "Lírico."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El género **dramático** es el que está escrito para representarse en un escenario: la historia avanza a través de los diálogos y acciones de los personajes, sin un narrador que cuente los hechos.\n\nEl narrativo (opción C) también cuenta historias, pero mediante un narrador y está hecho para leerse, no para montarse en escena."
           },
           {
             "id": 22,
@@ -330,7 +351,8 @@
               "C": "heredan el estilo de quienes los precedieron, comparten una forma de escribir y muestran interés por desarrollar temas similares.",
               "D": "abordan un género determinado, como la dramaturgia o la novela, comparten el interés por desarrollar temas similares y viven en una misma época."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Una corriente literaria agrupa a autores que coinciden en tres cosas: comparten rasgos de estilo (forma de escribir), se interesan por temas similares y **viven en una misma época**. Ese último elemento es clave: la corriente es un fenómeno histórico, situado en un tiempo determinado.\n\nLas opciones B y C hablan de \"heredar el estilo de quienes los precedieron\", pero eso describe una influencia entre generaciones, no la coincidencia de época que define a la corriente."
           },
           {
             "id": 23,
@@ -343,7 +365,8 @@
               "C": "La objetividad del autor y la evasión de la realidad.",
               "D": "La descripción de ambientes y el subjetivismo del autor."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El Realismo busca retratar la sociedad tal como es, con especial atención a los conflictos sociales de su tiempo. El fragmento habla del \"malestar social\", de \"la lucha cada vez más enconada entre pobres y ricos\" y de \"las injusticias que envilecen el mundo\": ahí están los problemas de un sector de la población y el reflejo de la realidad, tal como dice la opción B.\n\nLa opción C incluye \"la evasión de la realidad\", que es justo lo contrario del Realismo: eso es más propio del Romanticismo o del Modernismo."
           },
           {
             "id": 24,
@@ -356,7 +379,8 @@
               "C": "Ensayo.",
               "D": "Cuento."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El **cuento** es una narración breve, con pocos personajes y una sola línea de acción, y es el vehículo natural de las fantasías humanas: desde los cuentos maravillosos hasta el cuento fantástico moderno.\n\nLa crónica (opción A) también es breve, pero relata hechos reales en orden temporal, no fantasías."
           },
           {
             "id": 25,
@@ -369,7 +393,8 @@
               "C": "Novela.",
               "D": "Minificción."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La **novela** es la narración extensa por excelencia, y su amplitud le permite desarrollar varias historias a la vez: una trama principal y varias secundarias, con muchos personajes y escenarios.\n\nLa minificción (opción D) es exactamente lo contrario: tan breve que apenas alcanza para sugerir una sola historia."
           },
           {
             "id": 26,
@@ -382,7 +407,8 @@
               "C": "De cita textual.",
               "D": "De síntesis."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Fíjate en la fuente citada: *¿Cómo ves?*, con año, número y páginas. Es una **revista**, y las fichas que registran artículos de publicaciones periódicas (revistas y periódicos) se llaman **hemerográficas**, de *hemeroteca*, el lugar donde se guardan esas publicaciones.\n\nSi contestaste bibliográfica (opción A), confundiste la fuente: esa ficha registra libros, y aquí los datos de año, número y páginas de revista lo descartan."
           }
         ]
       },
@@ -401,7 +427,8 @@
               "C": "$\\mathrm{S_8(g)}$, $\\mathrm{N_2(g)}$ y $\\mathrm{SO_2(g)}$",
               "D": "$\\mathrm{CO(g)}$, $\\mathrm{Na(s)}$ y $\\mathrm{S_8(s)}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Las sustancias que no pueden descomponerse químicamente en otras más simples son los **elementos**. En la opción A las tres lo son: sodio ($\\mathrm{Na}$), cloro diatómico ($\\mathrm{Cl_2}$) y fósforo ($\\mathrm{P_4}$); aunque $\\mathrm{Cl_2}$ y $\\mathrm{P_4}$ tengan varios átomos, son átomos del mismo elemento.\n\nLas demás opciones incluyen compuestos como $\\mathrm{CO}$ o $\\mathrm{SO_2}$, que sí se descomponen porque combinan elementos distintos. No confundas molécula con compuesto: $\\mathrm{P_4}$ es molécula, pero de un solo elemento."
           },
           {
             "id": 28,
@@ -414,7 +441,8 @@
               "C": "16, 8, 16",
               "D": "8, 16, 16"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El número atómico $Z$ es el número de protones, y en un átomo neutro también el de electrones: $Z = 8$ da 8 protones y 8 electrones. Los neutrones se obtienen restando: $A - Z = 16 - 8 = 8$. Total: 8, 8, 8.\n\nSi elegiste una opción con 16, tomaste el número de masa $A$ como si fuera el número de partículas de un solo tipo: $A$ cuenta protones **más** neutrones juntos."
           },
           {
             "id": 29,
@@ -427,7 +455,8 @@
               "C": "Son muy reactivos con el agua y al oxidarse pierden un electrón.",
               "D": "Son poco reactivos con el agua y al reducirse ganan un electrón."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Los metales alcalinos (grupo 1: Li, Na, K...) tienen un solo electrón de valencia, y por eso al oxidarse pierden **un** electrón formando iones $+1$. Esa configuración los hace extremadamente reactivos: con el agua reaccionan de forma violenta liberando hidrógeno. Eso es justo la opción C.\n\nSi elegiste la A (pierden dos electrones), pensaste en los alcalinotérreos, el grupo 2."
           },
           {
             "id": 30,
@@ -440,7 +469,8 @@
               "C": "$KOH$, $HCl$ y $NH_3$",
               "D": "$HCl$, $H_3PO_4$ y $H_2CO_3$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Las sustancias que liberan iones hidronio ($H_3O^+$) en disolución acuosa son los **ácidos**. En la opción D los tres lo son: ácido clorhídrico ($HCl$), ácido fosfórico ($H_3PO_4$) y ácido carbónico ($H_2CO_3$).\n\nLas demás opciones mezclan bases como $NaOH$, $KOH$ o $NH_3$, que hacen lo contrario: liberan o generan iones $OH^-$."
           },
           {
             "id": 31,
@@ -453,7 +483,8 @@
               "C": "14 mL",
               "D": "12 mL"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Ve por pasos. Moles de HCl necesarios: $n = M \\times V = 1.4 \\times 0.250 = 0.35$ mol. Masa de HCl puro: $0.35 \\times 36.5 = 12.8\\,\\mathrm{g}$. Como el reactivo está al 37% de pureza, necesitas más masa de disolución concentrada: $\\frac{12.8}{0.37} = 34.5\\,\\mathrm{g}$. Por último, conviertes a volumen con la densidad:\n\n$$V = \\frac{34.5\\,\\mathrm{g}}{1.14\\,\\mathrm{\\frac{g}{mL}}} \\approx 30\\,\\mathrm{mL}$$\n\nSi te dio 34 (opción A), te faltó el último paso: obtuviste gramos y los reportaste como mililitros sin dividir entre la densidad."
           },
           {
             "id": 32,
@@ -466,7 +497,8 @@
               "C": "intermoleculares denominadas covalentes polares.",
               "D": "intermoleculares denominadas puentes de hidrógeno."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Aquí hay dos cosas que distinguir. Primero, las fuerzas responsables de que el hielo sea menos denso que el agua líquida actúan **entre** moléculas de agua, no dentro de ellas: son fuerzas *inter*moleculares. Segundo, esas fuerzas son los **puentes de hidrógeno**, que en el hielo acomodan las moléculas en una red abierta con huecos, bajando su densidad y haciéndolo flotar.\n\nLas fuerzas *intra*moleculares (los enlaces covalentes O–H dentro de cada molécula) no cambian entre hielo y agua líquida, así que no explican la flotación."
           },
           {
             "id": 33,
@@ -479,7 +511,8 @@
               "C": "7",
               "D": "2"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Si $[H^+] < [OH^-]$, predominan los iones hidróxido y la disolución es **básica**, así que su pH debe ser mayor que 7. De las opciones, la única con pH básico es 11.\n\nLos valores 5 y 2 corresponden a disoluciones ácidas (donde $[H^+] > [OH^-]$), y 7 sería el caso neutro, cuando ambas concentraciones son iguales."
           },
           {
             "id": 34,
@@ -492,7 +525,8 @@
               "C": "hidróxido.",
               "D": "óxido ácido."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El carbono es un **no metal**, y cuando un no metal se combina con oxígeno forma un óxido no metálico, también llamado **óxido ácido** o anhídrido (aquí $x = \\mathrm{CO_2}$). Se llaman así porque al reaccionar con agua producen ácidos: $\\mathrm{CO_2} + \\mathrm{H_2O} \\rightarrow \\mathrm{H_2CO_3}$.\n\nLos óxidos básicos (opción A) se forman con **metales** más oxígeno, como $\\mathrm{Na_2O}$ o $\\mathrm{CaO}$."
           },
           {
             "id": 35,
@@ -505,7 +539,8 @@
               "C": "Vitaminas.",
               "D": "Carbohidratos."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los **lípidos** son la reserva energética por excelencia: el organismo almacena grasa porque rinde más del doble de energía por gramo (unas 9 kcal contra 4 de los carbohidratos) y se guarda de forma compacta, sin agua.\n\nLos carbohidratos (opción D) se antojan, pero su papel es dar energía **inmediata**; como reserva son limitados (el glucógeno se agota pronto), mientras que la grasa es el almacén de largo plazo."
           },
           {
             "id": 36,
@@ -518,7 +553,8 @@
               "C": "endotérmicas — liberan",
               "D": "endotérmicas — absorben"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Basta pensar en cualquier combustión: una fogata, la estufa, un motor. Todas **liberan** calor al ambiente, y las reacciones que liberan energía calorífica se llaman **exotérmicas** (*exo* = hacia afuera). Además, las dos partes de la oración deben ser congruentes: exotérmica va con liberar.\n\nLas opciones B y C se contradicen a sí mismas: una reacción exotérmica no absorbe, y una endotérmica no libera."
           }
         ]
       },
@@ -537,7 +573,8 @@
               "C": "Longitud.",
               "D": "Nutación."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La **latitud** es la coordenada que mide la distancia angular de un punto hacia el norte o hacia el sur del Ecuador, de 0° a 90°.\n\nLa longitud (opción C) es su complemento, pero mide hacia el este y el oeste del meridiano de Greenwich; y la altitud (opción B) no es coordenada de posición sobre el mapa, sino la elevación sobre el nivel del mar."
           },
           {
             "id": 38,
@@ -551,7 +588,8 @@
               "C": "11º lat S — 65º long W",
               "D": "67º lat N — 11º long W"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Ubica Caracas en la retícula del mapa: el punto está apenas arriba de la línea de 10° al norte del Ecuador (la línea gruesa de 0°), o sea unos 11° de **latitud norte**; y queda entre los meridianos de 60° y 70°, más cerca del de 70°, o sea unos 67° de **longitud oeste** (W), porque América está al oeste de Greenwich. Eso da 11° lat N — 67° long W.\n\nSi elegiste la opción C (11° lat S), leíste la latitud hacia abajo del Ecuador: revisa siempre de qué lado de la línea de 0° cae el punto."
           },
           {
             "id": 39,
@@ -564,7 +602,8 @@
               "C": "núcleo externo.",
               "D": "núcleo interno."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Las corrientes de convección que mueven las placas tectónicas —y con ellas los continentes— ocurren en el **manto superior**: ahí el material rocoso, a altas temperaturas, sube, se enfría y vuelve a bajar, arrastrando las placas de la litósfera que flotan encima.\n\nEl núcleo externo (opción C) también tiene movimientos convectivos, pero de metal fundido, y su efecto es generar el campo magnético terrestre, no mover continentes."
           },
           {
             "id": 40,
@@ -577,7 +616,8 @@
               "C": "Madre Oriental.",
               "D": "Volcánica Transversal."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Chihuahua está en el altiplano del norte y Sinaloa en la costa del Pacífico; la barrera montañosa que hay que cruzar entre ambos es la **Sierra Madre Occidental**, la cadena que corre paralela a la costa del Pacífico desde la frontera norte hasta el centro del país. Piensa en la famosa ruta del tren Chihuahua–Pacífico (El Chepe): atraviesa justo esa sierra.\n\nLa Sierra Madre Oriental (opción C) corre del lado del Golfo de México, al oriente del país, lejos de ese trayecto."
           },
           {
             "id": 41,
@@ -590,7 +630,8 @@
               "C": "Campeche — Guerrero",
               "D": "Tabasco — Nayarit"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El mar de las Antillas es el mar Caribe, que baña el oriente de la península de Yucatán. Los ciclones que ahí se forman entran por esa esquina del país, así que golpean primero las costas de **Quintana Roo** (Cancún, Cozumel, Chetumal) y de **Yucatán**.\n\nChiapas, Oaxaca, Guerrero y Nayarit dan al Pacífico: sus ciclones vienen de otro océano, no de las Antillas."
           },
           {
             "id": 42,
@@ -603,7 +644,8 @@
               "C": "manantiales.",
               "D": "océanos."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La *marea negra* es el derrame de petróleo en el mar: la mancha de crudo que flota y se extiende sobre el agua. Como el petróleo se extrae y se transporta principalmente por vía marítima (plataformas y buques tanque), estos derrames ocurren en los **océanos**, donde asfixian aves, peces y ecosistemas costeros. Lagos, ríos y manantiales pueden contaminarse, pero el término marea negra se refiere específicamente al mar."
           },
           {
             "id": 43,
@@ -616,7 +658,8 @@
               "C": "Malta, Francia, Grecia y Portugal.",
               "D": "Reino Unido, Croacia, Francia y Alemania."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Los migrantes del norte de África cruzan el Mediterráneo por las rutas más cortas: del oeste hacia **España** (por el estrecho de Gibraltar), del centro hacia **Malta** e **Italia** (la isla de Lampedusa es el caso clásico) y del este hacia **Grecia**. Son los países mediterráneos de primera llegada.\n\nFrancia, Alemania o Reino Unido suelen ser destinos finales, pero no puntos de acceso: no tienen costa frente al norte de África."
           },
           {
             "id": 44,
@@ -629,7 +672,8 @@
               "C": "protección de los derechos de los trabajadores y un salario uniforme.",
               "D": "explotación sin restricciones de los recursos del carbón y del petróleo."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La Unión Europea nació como un proyecto de integración: eliminar fronteras internas para que mercancías, personas, servicios y capitales circulen libremente, y coordinar **políticas comunes** (agrícola, comercial, ambiental).\n\nLa moneda única (el euro) existe, pero no todos los miembros la usan, así que no es el propósito fundamental; y la UE regula la explotación de recursos, no la deja \"sin restricciones\"."
           },
           {
             "id": 45,
@@ -642,7 +686,8 @@
               "C": "el cambio drástico del sistema económico.",
               "D": "el descontento social de las minorías étnicas y religiosas."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Un estado-nación se desintegra cuando los grupos que lo forman dejan de sentirse parte de él. El **descontento de las minorías étnicas y religiosas** alimenta movimientos separatistas que fragmentan el territorio: piensa en Yugoslavia, que se partió en varios países por conflictos entre serbios, croatas, bosnios y albaneses, o en la antigua URSS. Las otras opciones generan crisis económicas o políticas, pero no rompen la unidad territorial como lo hace el conflicto identitario."
           },
           {
             "id": 46,
@@ -655,7 +700,8 @@
               "C": "petroquímica.",
               "D": "metalmecánica."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En la frontera norte de México domina la industria **maquiladora**: plantas de ensamble que importan piezas, arman el producto (electrónica, autopartes, textiles) y lo exportan de inmediato a Estados Unidos. Se instalaron ahí justamente por la cercanía con ese mercado y el bajo costo de la mano de obra. Ciudad Juárez, Tijuana y Reynosa son los ejemplos típicos. La metalúrgica y la petroquímica se concentran en otras regiones (Monterrey, la costa del Golfo)."
           }
         ]
       },
@@ -674,7 +720,8 @@
               "C": "Semana 1: 96\nSemana 2: 90\nSemana 3: 84\nSemana 4: 78",
               "D": "Semana 1: 93\nSemana 2: 92\nSemana 3: 91\nSemana 4: 90"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La clave está en \"del peso **inicial**\": cada semana baja la misma cantidad, calculada sobre los 96 kg originales.\n\n$$\\frac{1}{32} \\times 96 = 3 \\text{ kg por semana}$$\n\nEntonces va restando 3 cada semana: $96 - 3 = 93$, luego $90$, $87$ y $84$. Es una sucesión aritmética con diferencia $-3$.\n\nSi elegiste B, contaste la semana 1 como si todavía pesara 96: el conteo empieza *al término* de la primera semana, cuando ya bajó."
           },
           {
             "id": 48,
@@ -687,7 +734,8 @@
               "C": "$10x + 3$",
               "D": "$6x + 12$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Ve de adentro hacia afuera. Primero los paréntesis interiores:\n\n$$-2(4x - 3) = -8x + 6 \\qquad -(9 - x) = -9 + x$$\n\nDentro del corchete queda $-8x + 6 - 9 + x = -7x - 3$. Ahora el signo menos del corchete cambia todo:\n\n$$-3x - (-7x - 3) = -3x + 7x + 3 = 4x + 3$$\n\nSi te dio otra cosa, casi seguro se te escapó un signo al distribuir el $-2$ o al quitar el corchete: es donde todos tropiezan."
           },
           {
             "id": 49,
@@ -700,7 +748,8 @@
               "C": "$x^6 - 9x^4y + 27x^2y^2 - 27y^3$",
               "D": "$x^6 + 9x^4y - 27x^2y^2 - 27y^3$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Es un binomio al cubo con resta: $(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$, con signos alternados $+,-,+,-$. Aquí $a = x^2$ y $b = 3y$:\n\n$$(x^2)^3 - 3(x^2)^2(3y) + 3(x^2)(3y)^2 - (3y)^3 = x^6 - 9x^4y + 27x^2y^2 - 27y^3$$\n\nFíjate que el último término lleva signo menos porque $(3y)^3 = 27y^3$ va restando. Las opciones A, B y D solo cambian signos: son trampas para quien no cuida la alternancia."
           },
           {
             "id": 50,
@@ -713,7 +762,8 @@
               "C": "$-x + 8$",
               "D": "$x - 8$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Primero factoriza el signo menos del numerador para trabajar más cómodo:\n\n$$-x^2 - 3x + 40 = -(x^2 + 3x - 40)$$\n\nBusca dos números que multiplicados den $-40$ y sumados $+3$: son $8$ y $-5$, así que $x^2 + 3x - 40 = (x + 8)(x - 5)$. Entonces:\n\n$$\\frac{-(x+8)(x-5)}{x+8} = -(x - 5) = -x + 5$$\n\nSi elegiste A, olvidaste repartir el signo menos al final: $-(x-5)$ cambia *ambos* signos."
           },
           {
             "id": 51,
@@ -726,7 +776,8 @@
               "C": "$x = 10$",
               "D": "$x = 12$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Multiplica toda la ecuación por 12 (el mínimo común múltiplo de 3 y 4) para quitar denominadores:\n\n$$12 \\cdot \\frac{x}{3} - 12 \\cdot \\frac{x-5}{4} = 12 \\cdot 2 \\quad\\Rightarrow\\quad 4x - 3(x - 5) = 24$$\n\nDesarrolla con cuidado el signo: $4x - 3x + 15 = 24$, o sea $x + 15 = 24$, y por tanto $x = 9$.\n\nComprueba: $\\frac{9}{3} - \\frac{4}{4} = 3 - 1 = 2$. ✓ El error típico es escribir $-3x - 15$ en vez de $-3x + 15$."
           },
           {
             "id": 52,
@@ -739,7 +790,8 @@
               "C": "$x_1 = \\dfrac{3}{2},\\ x_2 = \\dfrac{5}{2}$",
               "D": "$x_1 = -\\dfrac{3}{4},\\ x_2 = 5$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Con la fórmula general, $a = 4$, $b = 16$, $c = 15$:\n\n$$x = \\frac{-16 \\pm \\sqrt{16^2 - 4(4)(15)}}{2(4)} = \\frac{-16 \\pm \\sqrt{256 - 240}}{8} = \\frac{-16 \\pm 4}{8}$$\n\nEso da $x_1 = \\frac{-12}{8} = -\\frac{3}{2}$ y $x_2 = \\frac{-20}{8} = -\\frac{5}{2}$.\n\nUn atajo para descartar: como todos los coeficientes son positivos, las dos raíces tienen que ser negativas; eso elimina de golpe B, C y D."
           },
           {
             "id": 53,
@@ -752,7 +804,8 @@
               "C": "$x \\leq -5$",
               "D": "$x > 5$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Despeja como en una ecuación normal:\n\n$$-2x + 6 \\geq 16 \\quad\\Rightarrow\\quad -2x \\geq 10$$\n\nAhora viene lo importante: al dividir entre $-2$, un número **negativo**, la desigualdad se voltea:\n\n$$x \\leq -5$$\n\nComprueba con $x = -6$: $-2(-6) + 6 = 18 \\geq 16$. ✓ Si llegaste a $x \\geq 5$ o parecido, olvidaste invertir el sentido al dividir entre el negativo: es el error clásico de las desigualdades."
           },
           {
             "id": 54,
@@ -765,7 +818,8 @@
               "C": "$x = -2$, $y = 4$, $z = 5$",
               "D": "$x = 2$, $y = 3$, $z = -5$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La tercera ecuación solo tiene $y$ y $z$, aprovéchala: $z = 17 - 3y$. Sustituye en la segunda:\n\n$$x - 2y + 2(17 - 3y) = 0 \\quad\\Rightarrow\\quad x = 8y - 34$$\n\nY ahora todo en la primera:\n\n$$5(8y - 34) + 2y - (17 - 3y) = -7 \\quad\\Rightarrow\\quad 45y - 187 = -7 \\quad\\Rightarrow\\quad y = 4$$\n\nDe ahí $z = 17 - 12 = 5$ y $x = 32 - 34 = -2$. Verifica en la primera: $5(-2) + 2(4) - 5 = -10 + 8 - 5 = -7$. ✓\n\nEn el examen, lo más rápido es probar cada opción en las tres ecuaciones: solo C cumple las tres."
           },
           {
             "id": 55,
@@ -778,7 +832,8 @@
               "C": "{1, 3}",
               "D": "{2, 3, 4}"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El rango es el conjunto de valores que la función **realmente produce** al aplicarla a cada elemento del dominio $S = \\{1, 2\\}$:\n\n$$f(1) = 1 + 1 = 2 \\qquad f(2) = 2 + 1 = 3$$\n\nAsí que el rango es $\\{2, 3\\}$.\n\nSi elegiste $\\{2, 3, 4\\}$, confundiste el rango con el codominio $Q$: el 4 está disponible como destino, pero ningún elemento de $S$ llega a él."
           },
           {
             "id": 56,
@@ -791,7 +846,8 @@
               "C": "$\\dfrac{3}{4}\\pi$",
               "D": "$\\dfrac{4}{3}\\pi$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La conversión sale de que $180° = \\pi$ radianes. Entonces:\n\n$$45° = \\frac{45}{180}\\pi = \\frac{1}{4}\\pi$$\n\nOtra forma de verlo: 45° es la mitad de 90°, y como $90° = \\frac{\\pi}{2}$, su mitad es $\\frac{\\pi}{4}$. Las demás opciones corresponden a ángulos mucho más grandes ($\\frac{3}{4}\\pi$ sería 135°, por ejemplo)."
           },
           {
             "id": 57,
@@ -804,7 +860,8 @@
               "C": "5",
               "D": "$5\\sqrt{3}$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El seno relaciona el cateto opuesto con la hipotenusa:\n\n$$\\mathrm{sen}\\,30° = \\frac{\\text{opuesto}}{10} \\quad\\Rightarrow\\quad \\text{opuesto} = 10 \\cdot \\mathrm{sen}\\,30° = 10 \\cdot \\frac{1}{2} = 5$$\n\nVale la pena memorizar la regla: en un triángulo de 30°–60°–90°, el lado opuesto al ángulo de 30° siempre mide la **mitad** de la hipotenusa.\n\nSi elegiste $5\\sqrt{3}$, calculaste el cateto adyacente (usaste coseno en vez de seno)."
           },
           {
             "id": 58,
@@ -817,7 +874,8 @@
               "C": "$x > 1$",
               "D": "$x \\geq 1$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El logaritmo solo está definido para números **estrictamente positivos**: no existe el logaritmo de cero ni de negativos. Así que el argumento debe cumplir:\n\n$$x - 1 > 0 \\quad\\Rightarrow\\quad x > 1$$\n\nOjo con la opción D: la desigualdad es estricta porque en $x = 1$ el argumento vale 0, y $\\log(0)$ no existe."
           },
           {
             "id": 59,
@@ -830,7 +888,8 @@
               "C": "(3, 3)",
               "D": "(3, 4)"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El punto medio se calcula promediando las coordenadas:\n\n$$M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) = \\left(\\frac{0 + 4}{2}, \\frac{2 + 6}{2}\\right) = (2, 4)$$\n\nEs literalmente el \"promedio\" de los dos puntos: cada coordenada queda a la mitad del camino."
           },
           {
             "id": 60,
@@ -844,7 +903,8 @@
               "C": "(0, 0) y (1, $-3$)",
               "D": "(0, 0) y (1, 3)"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Primero saca la pendiente de la recta de la gráfica, que pasa por $(-4, -7)$ y $(4, 9)$:\n\n$$m = \\frac{9 - (-7)}{4 - (-4)} = \\frac{16}{8} = 2$$\n\nUna recta perpendicular tiene pendiente recíproca y de signo contrario: $m_\\perp = -\\frac{1}{2}$. Ahora revisa cuál pareja de puntos da esa pendiente. Con $(0, 0)$ y $(-2, 1)$:\n\n$$m = \\frac{1 - 0}{-2 - 0} = -\\frac{1}{2} \\checkmark$$\n\nSi elegiste D, tomaste la pendiente $+2$ tal cual... pero esos puntos dan la recta *paralela* con pendiente 3; el punto clave es recordar que perpendicular significa $m_\\perp = -\\frac{1}{m}$, no la misma $m$."
           },
           {
             "id": 61,
@@ -857,7 +917,8 @@
               "C": "$3x - y + 22 = 0$",
               "D": "$2x - 5y + 19 = 0$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La mediana desde $P$ va de $P$ al **punto medio** del lado opuesto $QR$:\n\n$$M = \\left(\\frac{9 + 3}{2}, \\frac{3 + 5}{2}\\right) = (6, 4)$$\n\nLa pendiente de $P(-7, 1)$ a $M(6, 4)$ es $m = \\frac{4 - 1}{6 - (-7)} = \\frac{3}{13}$. Con punto-pendiente:\n\n$$y - 1 = \\frac{3}{13}(x + 7) \\quad\\Rightarrow\\quad 13y - 13 = 3x + 21 \\quad\\Rightarrow\\quad -3x + 13y - 34 = 0$$\n\nPuedes verificar sustituyendo $P(-7,1)$: $21 + 13 - 34 = 0$. ✓"
           },
           {
             "id": 62,
@@ -870,7 +931,8 @@
               "C": "$C(3, -2)$; $r = 2\\sqrt{3}$",
               "D": "$C(-3, 2)$; $r = 5$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Completa cuadrados agrupando por variable:\n\n$$(x^2 + 6x + 9) + (y^2 - 4y + 4) = 12 + 9 + 4$$\n\n$$(x + 3)^2 + (y - 2)^2 = 25$$\n\nDe la forma $(x - h)^2 + (y - k)^2 = r^2$ se lee el centro $C(-3, 2)$ —ojo con los signos: es lo *contrario* de lo que aparece dentro del paréntesis— y $r = \\sqrt{25} = 5$.\n\nLas opciones con $r = 2\\sqrt{3}$ vienen de tomar $r = \\sqrt{12}$, es decir, de olvidar sumar el 9 y el 4 al lado derecho al completar los cuadrados."
           },
           {
             "id": 63,
@@ -883,7 +945,8 @@
               "C": "$y^2 + 12y = 0$",
               "D": "$y^2 - 12x = 0$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Vértice en el origen y eje focal sobre el eje $x$: la forma es $y^2 = 4px$. La directriz es $x + 3 = 0$, o sea $x = -3$; como la directriz queda a la izquierda, la parábola abre a la derecha y $p = 3$ (distancia del vértice a la directriz). Entonces:\n\n$$y^2 = 4(3)x = 12x \\quad\\Rightarrow\\quad y^2 - 12x = 0$$\n\nLas opciones con $x^2$ corresponden a parábolas verticales, imposibles aquí porque el eje focal es horizontal: eso descarta A y B de entrada."
           },
           {
             "id": 64,
@@ -896,7 +959,8 @@
               "C": "$\\dfrac{3}{5}$",
               "D": "$\\dfrac{1}{2}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "De la ecuación se lee $a^2 = 100$ (el denominador mayor) y $b^2 = 75$. La distancia focal sale de:\n\n$$c^2 = a^2 - b^2 = 100 - 75 = 25 \\quad\\Rightarrow\\quad c = 5$$\n\nY la excentricidad es:\n\n$$e = \\frac{c}{a} = \\frac{5}{10} = \\frac{1}{2}$$\n\nRecuerda que en la elipse siempre $e < 1$; aquí $e = 0.5$ indica una elipse moderadamente achatada."
           },
           {
             "id": 65,
@@ -909,7 +973,8 @@
               "C": "$9x^2 - 10y^2 = 90$",
               "D": "$10x^2 - 9y^2 = 90$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El vértice $V(0, -9)$ está sobre el eje $y$, así que la hipérbola es vertical con $a = 9$:\n\n$$\\frac{y^2}{a^2} - \\frac{x^2}{b^2} = 1$$\n\nEl lado recto mide $\\frac{2b^2}{a} = 10$, de donde $b^2 = \\frac{10 \\cdot 9}{2} = 45$. Entonces:\n\n$$\\frac{y^2}{81} - \\frac{x^2}{45} = 1$$\n\nMultiplica por 405 (el común denominador): $5y^2 - 9x^2 = 405$.\n\nLa opción A tiene los mismos números pero con el término $x^2$ positivo: sería una hipérbola horizontal, y el vértice en $(0, -9)$ obliga a que abra en vertical."
           },
           {
             "id": 66,
@@ -922,7 +987,8 @@
               "C": "elipse.",
               "D": "hipérbola."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Para clasificar una cónica con término $xy$ se usa el discriminante $B^2 - 4AC$, con $A = 1$, $B = 4$, $C = 4$:\n\n$$B^2 - 4AC = 16 - 16 = 0$$\n\nLa regla: si es negativo, elipse (o circunferencia); si es cero, **parábola**; si es positivo, hipérbola. Aquí da exactamente cero, así que es una parábola (girada, por eso aparece el término $xy$).\n\nOtra pista: $x^2 + 4xy + 4y^2 = (x + 2y)^2$ es un cuadrado perfecto, huella típica de parábola."
           },
           {
             "id": 67,
@@ -935,7 +1001,8 @@
               "C": "2",
               "D": "4"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "$f(x) = 4$ es una función **constante**: vale 4 sin importar qué valor tome $x$. Por eso:\n\n$$\\lim_{x \\to -2} 4 = 4$$\n\nEl límite de una constante es la constante misma. Si contestaste $-2$, confundiste el valor al que tiende $x$ con el valor al que tiende la función: el límite pregunta por $f(x)$, no por $x$."
           },
           {
             "id": 68,
@@ -948,7 +1015,8 @@
               "C": "$f'(3) = \\lim_{h \\to 0} \\dfrac{f(3+h) + f(3)}{h} = \\lim_{h \\to 0} \\dfrac{(3+h)^3 + 3^3}{h}$\n$f'(3) = \\lim_{h \\to 0} \\dfrac{3^3 + 3 \\bullet 3^2h + 3 \\bullet 3h^2 + h^3 + 3^3}{h}$",
               "D": "$f'(3) = \\lim_{h \\to 0} \\dfrac{f(3) - f(3-h)}{h} = \\lim_{h \\to 0} \\dfrac{3^3 - (3-h)^3}{h}$\n$f'(3) = \\lim_{h \\to 0} \\dfrac{3^3 - 3^3 + 3 \\bullet 3^2h - 3 \\bullet 3h^2 + h^3}{h}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La definición de derivada en un punto es:\n\n$$f'(a) = \\lim_{h \\to 0} \\frac{f(a+h) - f(a)}{h}$$\n\nFíjate en el orden: primero el valor \"movido\" $f(3+h)$ y **menos** el valor fijo $f(3)$, todo entre $h$. Con $f(x) = x^3$ eso es $\\frac{(3+h)^3 - 3^3}{h}$, y al desarrollar el binomio queda justo lo que muestra la opción A.\n\nLa B tiene la resta al revés (daría la derivada con signo cambiado) y la C suma en vez de restar, lo cual ni siquiera es un cociente de incrementos."
           },
           {
             "id": 69,
@@ -962,7 +1030,8 @@
               "C": "$(2, 4)$",
               "D": "$[-2, 4]$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La derivada es negativa donde la función **baja**. En la gráfica, $f$ sube hasta el máximo local en $x = 2$, desciende de ahí al mínimo local en $x = 4$, y luego vuelve a subir. El tramo de bajada es el intervalo $(2, 4)$.\n\nEl detalle fino está en los paréntesis: en $x = 2$ y $x = 4$ la curva tiene tangente horizontal, o sea $f' = 0$, no negativa. Por eso el intervalo es abierto y la opción B, que incluye el 2 con corchete, no funciona."
           },
           {
             "id": 70,
@@ -975,7 +1044,8 @@
               "C": "Max$\\left(\\frac{8}{3}, \\frac{128}{27}\\right)$, min$(4,4)$",
               "D": "Max$\\left(\\frac{4}{3}, \\frac{256}{27}\\right)$, min$(4,0)$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Deriva con producto (o desarrolla): $y' = (x-4)^2 + 2x(x-4) = (x-4)(3x - 4)$.\n\nIgualando a cero: $x = 4$ y $x = \\frac{4}{3}$, ambos dentro de $[0, 4]$. Evalúa la función:\n\n$$y\\left(\\tfrac{4}{3}\\right) = \\tfrac{4}{3}\\left(\\tfrac{4}{3} - 4\\right)^2 = \\tfrac{4}{3} \\cdot \\tfrac{64}{9} = \\tfrac{256}{27} \\qquad y(4) = 4(0)^2 = 0$$\n\nAsí que el máximo está en $\\left(\\frac{4}{3}, \\frac{256}{27}\\right)$ y el mínimo en $(4, 0)$. Un descarte rápido: como $(x-4)^2$ se anula en $x = 4$, forzosamente $y(4) = 0$, lo que elimina B y C sin derivar."
           },
           {
             "id": 71,
@@ -988,7 +1058,8 @@
               "C": "$\\frac{8}{3}$",
               "D": "$8$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Aplica la regla de la potencia y evalúa en los extremos:\n\n$$\\int_0^2 x^2\\,dx = \\left[\\frac{x^3}{3}\\right]_0^2 = \\frac{2^3}{3} - \\frac{0^3}{3} = \\frac{8}{3}$$\n\nEl resultado es positivo porque estás midiendo el área bajo $x^2$, que está por encima del eje en todo el intervalo: eso descarta la opción A de inmediato. Si te dio 8, olvidaste dividir entre 3 al integrar."
           },
           {
             "id": 72,
@@ -1001,7 +1072,8 @@
               "C": "$\\frac{(2x-1)^2}{2} + C$",
               "D": "$\\frac{(2x-1)^2}{6} + C$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Usa el cambio de variable $u = 2x - 1$, con $du = 2\\,dx$, es decir $dx = \\frac{du}{2}$:\n\n$$\\int (2x-1)^3\\,dx = \\frac{1}{2}\\int u^3\\,du = \\frac{1}{2} \\cdot \\frac{u^4}{4} + C = \\frac{(2x-1)^4}{8} + C$$\n\nSi elegiste B, integraste como si fuera $u^3$ a secas y olvidaste el $\\frac{1}{2}$ que compensa la derivada interna del $2x - 1$. Puedes comprobar derivando A: $\\frac{4(2x-1)^3 \\cdot 2}{8} = (2x-1)^3$. ✓"
           }
         ]
       },
@@ -1020,7 +1092,8 @@
               "C": "Niño, déjame, no pises mi sábana almidonada.",
               "D": "En el aire conmovido, mueve la luna sus brazos."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La función apelativa (o conativa) busca **influir en el receptor**: darle una orden, pedirle algo, llamar su atención. Sus marcas típicas son el vocativo y el imperativo, y la opción C tiene ambos: \"Niño\" (llama a alguien) y \"déjame, no pises\" (le ordena).\n\nLa A es expresiva (habla de las emociones del emisor, con exclamación) y la B y la D son poéticas: juegan con el lenguaje mediante imágenes, no le piden nada a nadie."
           },
           {
             "id": 74,
@@ -1033,7 +1106,8 @@
               "C": "El convento era espantosamente triste.",
               "D": "Las nieves del tiempo platearon mi sien."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La función poética centra la atención en la **forma del mensaje**: metáforas, imágenes, ritmo. \"Las nieves del tiempo platearon mi sien\" es una metáfora doble: las canas como nieve y el verbo *platear* para el encanecimiento. No informa de manera directa; embellece lo que dice.\n\nLas otras opciones son enunciados referenciales o narrativos: cuentan o describen sin ese trabajo estético sobre el lenguaje."
           },
           {
             "id": 75,
@@ -1046,7 +1120,8 @@
               "C": "Enumerativa.",
               "D": "Argumentativa."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El párrafo pinta **cómo es** el alcoholismo: enumera sus características y síntomas (\"enfermedad progresiva y crónica\", \"del malestar hasta el dolor intenso\", \"trastornos en el pensamiento, las emociones y la conducta\"). Presentar los rasgos de algo es la forma **descriptiva** del discurso.\n\nNo es narrativa porque no hay hechos que se sucedan en el tiempo, y no es argumentativa porque el autor no defiende una postura ni intenta convencerte de nada: solo caracteriza la enfermedad."
           },
           {
             "id": 76,
@@ -1059,7 +1134,8 @@
               "C": "Argumentativa.",
               "D": "Descriptiva."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Aquí el autor sí toma postura y propone: \"**debe** ponerse énfasis en la calidad y equidad\", \"ello **implica** dar continuidad... mejorar la eficiencia... llevar a cabo políticas\". Parte de una premisa (la cobertura educativa es insuficiente en los estratos bajos) y de ella deriva lo que hay que hacer. Defender una tesis con razones es la forma **argumentativa**.\n\nSe distingue de la expositiva en eso justamente: la expositiva solo informa; ésta opina y prescribe con verbos de obligación."
           },
           {
             "id": 77,
@@ -1073,7 +1149,8 @@
               "C": "Pero huyó en cuanto se dio cuenta de que no necesitaba un tresillo.",
               "D": "Cuando salió a la calle, tardó unos 20 minutos en recuperar su aspecto habitual."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El nudo es el momento en que se rompe el equilibrio inicial y arranca el conflicto. El planteamiento nos presenta a \"una buena mujer... lo había sido toda su vida\"; la ruptura llega con \"**Ese día, sin embargo**, una fría determinación le roía las entrañas\": ese *sin embargo* marca el quiebre que desata toda la transformación posterior.\n\nLa opción A ya es parte del desarrollo (la acción en los almacenes) y la D es el desenlace, cuando recupera su aspecto habitual."
           },
           {
             "id": 78,
@@ -1087,7 +1164,8 @@
               "C": "El comportamiento de las personas suele modificarse en una situación de competencia.",
               "D": "No debemos salir de casa porque afuera siempre es una jungla."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El cuento muestra a una mujer buena y normal que, al entrar a las rebajas —una situación donde todos compiten por las mismas prendas—, se convierte en fiera: garras, zarpazos, colmillos. La metamorfosis ocurre precisamente por la **competencia**, y al salir de ella recupera su aspecto. Esa es la idea que sintetiza C: el comportamiento cambia en situación de competencia.\n\nLa D suena tentadora por lo de la \"jungla\", pero el texto no aconseja no salir de casa: solo retrata lo que la competencia hace con la gente."
           },
           {
             "id": 79,
@@ -1101,7 +1179,8 @@
               "C": "asisten a los almacenes y, en otras ocasiones, recorren el zoológico para observar el comportamiento de diferentes especies salvajes.",
               "D": "pierden la noción de los códigos de conducta para conseguir el mejor artículo rebajado antes que alguien más lo obtenga."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "En el texto, la frase aparece justo cuando la mujer entra a las rebajas y \"ya no pensaba en su familia\": la comparación con el cazador y el sabueso describe a alguien que olvida toda norma de convivencia —despedaza carótidas, se abre paso a zarpazos— con tal de ganar \"la mejor presa\", que aquí son los artículos rebajados. Es decir, **pierde la noción de los códigos de conducta** por conseguir la ganga antes que los demás.\n\nLa A exagera: el texto es una sátira del comportamiento en las rebajas, no habla de consumar crímenes reales."
           },
           {
             "id": 80,
@@ -1115,7 +1194,8 @@
               "C": "habla del origen de las transformaciones.",
               "D": "la protagonista cambia de parecer."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Metamorfosis significa transformación, y eso es lo que le pasa a la protagonista: entra a los almacenes siendo \"una buena mujer\" y su **conducta** se vuelve la de un animal salvaje (manos peludas, zarpazos, colmillos), hasta que al salir \"tardó unos 20 minutos en recuperar su aspecto habitual\". El título nombra ese cambio de comportamiento.\n\nNo es la D: la mujer nunca cambia de parecer —su determinación es firme de principio a fin—; lo que se transforma es cómo actúa."
           },
           {
             "id": 81,
@@ -1129,7 +1209,8 @@
               "C": "decidida y valiente.",
               "D": "temerosa e indecisa."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La frase está construida con un contraste: \"le temblaban las piernas\" (el cuerpo delata miedo) **pero** \"su mente no se permitía vacilar\" (la voluntad no cede). Ese *pero* es la pista: hay dos sentimientos opuestos al mismo tiempo, miedo y determinación. Además el párrafo anterior lo dice sin rodeos: \"una fría determinación le roía las entrañas\".\n\nNo es \"decidida y valiente\" porque el temblor de piernas es miedo, no valentía; y no es \"indecisa\" porque justamente lo que el texto niega es la vacilación."
           },
           {
             "id": 82,
@@ -1142,7 +1223,8 @@
               "C": "Allí se reunía la gente, allí se comía y se bebía.",
               "D": "Ahí todo se encontraba perfectamente ordenado por calles."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La oración principal es la que sostiene al párrafo: si la quitas, lo demás queda sin sentido. Aquí todo lo que sigue —que funcionaba a diario, que llegaban productos de todas partes, que estaba ordenado por calles, que ahí se reunía la gente— sirve para justificar *por qué* asombró a Cortés su perfección y magnitud. Son detalles que dependen de la primera oración.\n\nLas otras opciones son oraciones secundarias: aportan un dato del mercado, pero ninguna abarca la idea completa del párrafo."
           },
           {
             "id": 83,
@@ -1155,7 +1237,8 @@
               "C": "su retiro",
               "D": "los nuevos elementos"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Primero localiza el verbo: *tuvieron que presentar*. Luego pregunta **¿qué presentaron?** → \"sus respetos\": ese es el objeto directo. Después pregunta **¿a quién se los presentaron?** → \"al funcionario que anunciaba su retiro\": ese es el objeto indirecto, y lo confirma la preposición *a* y que puedes sustituirlo por *le* (\"le presentaron sus respetos\").\n\n\"Sus respetos\" tienta mucho, pero es el objeto directo: es la cosa presentada, no el destinatario."
           },
           {
             "id": 84,
@@ -1168,7 +1251,8 @@
               "C": "La creación de muchas cosas no se tenían contempladas.",
               "D": "Los constantes flujo y reflujo de divisas provocó alarma."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En A el sujeto plural \"los checoslovacos\" concuerda con los dos verbos (*combatían*, *se oponían*) y no falta ni sobra nada.\n\nRevisa las demás y verás que todas fallan en concordancia: en B el sujeto es singular (\"un sinnúmero\"), así que pide *acudió*; en C el sujeto es \"la creación\", singular, y el verbo aparece en plural (\"no se tenían contempladas\"); en D el sujeto es doble y plural (\"flujo y reflujo\"), pero el verbo va en singular (*provocó*). El truco es aislar el sujeto real y no dejarte llevar por el sustantivo más cercano al verbo."
           },
           {
             "id": 85,
@@ -1181,7 +1265,8 @@
               "C": "Se puede apreciar que el patio no es como el de otras escuelas, pues está techado debido a que la luz del sol sólo es reflejada en las aulas que lo rodean.",
               "D": "Se puede apreciar el patio que no es como el de las otras escuelas, pues del sol no se conoce más que la luz y el calor que irradia."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En A las ideas van encadenadas sin contradecirse: se observa el patio, se dice en qué se distingue y luego se explica el efecto (la luz no entra directo, sólo se refleja, y el calor irradia).\n\nLas otras enredan la causa con el efecto o dicen cosas que no se siguen: en B el sol \"irradia calor\" aunque no entra, y \"ni entra\" está de más; en C el patio estaría techado *porque* la luz se refleja, cuando es al revés; en D \"del sol no se conoce más que la luz y el calor\" no explica nada del patio. La redacción apropiada no es la más adornada, es la que no deja ideas sueltas ni causas invertidas."
           },
           {
             "id": 86,
@@ -1194,7 +1279,8 @@
               "C": "Ante el impacto de la actividad solar (como cualquier ente en el universo), la Tierra responde de varias maneras; en este caso lo hace mediante la actividad geomagnética (perturbaciones en el campo magnético terrestre). Ello sucede porque los campos magnéticos solar y terrestre interaccionan hasta que el último se deforma.",
               "D": "El campo magnético solar y el campo magnético terrestre interaccionan hasta que éste se deforma. Como cualquier ente en el universo, la Tierra responde de varias maneras ante el impacto de la actividad solar. Haciéndolo mediante la actividad geomagnética (esto es, perturbaciones que acontecen en el campo magnético terrestre)."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En C la información va en orden lógico y cerrado: primero el hecho (ante la actividad solar la Tierra responde), luego la forma concreta de responder (actividad geomagnética, aclarada en paréntesis) y al final la causa, enlazada con \"Ello sucede porque\". Los paréntesis se usan para aclarar términos, no para meter ideas nuevas, y el referente \"el último\" queda claro: el campo terrestre.\n\nB dice dos veces lo mismo (\"este último (el campo magnético terrestre)\") y D termina con un gerundio suelto, \"Haciéndolo mediante...\", que deja la oración sin verbo principal."
           },
           {
             "id": 87,
@@ -1207,7 +1293,8 @@
               "C": "las aspas de un molino",
               "D": "los motores de un aeroplano"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Una analogía sirve si el rasgo comparado es el que te interesa describir. Para una técnica de natación lo importante es el **movimiento circular y alternado** de los brazos: eso es exactamente lo que hacen las aspas de un molino al girar sobre un eje.\n\nLos motores de un aeroplano tientan porque dan idea de impulso, pero no describen ningún movimiento del brazo; las tenazas y las alas de un sombrero se parecen en forma, no en la acción que se quiere explicar."
           },
           {
             "id": 88,
@@ -1220,7 +1307,8 @@
               "C": "Conflicto.",
               "D": "Aflicción."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "*Avatar* viene de la idea hindú de la encarnación de un dios: pasar de una forma a otra. De ahí que en español signifique **transformación o cambio**, y en plural, *avatares*, las vicisitudes por las que uno pasa.\n\n\"Destino\" es el distractor fuerte porque solemos oír \"los avatares de la vida\" y lo asociamos con la suerte; pero un avatar es el cambio que se sufre, no el rumbo trazado de antemano."
           },
           {
             "id": 89,
@@ -1233,7 +1321,8 @@
               "C": "El rebaño avansa sin cezar y ellos comienzan a rezagarse.",
               "D": "El rebaño avanza sin cesar y ellos comiensan a resagarse."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Revisa palabra por palabra: *avanza* (del verbo avanzar, con z), *cesar* (con s), *comienzan* (de comenzar, con z) y *rezagarse* (con z y con -se, no -ce). Sólo la opción A tiene las cuatro bien.\n\nEl error que más se repite es escribir \"comiensan\" o \"resagarse\": recuerda que la letra de la raíz no cambia al conjugar, *comenzar* → *comienzan*, *rezago* → *rezagarse*."
           },
           {
             "id": 90,
@@ -1246,7 +1335,8 @@
               "C": "La practica de física se canceló.",
               "D": "El muchacho vivía cómo un salvaje en la soledad."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En A, *notó* es aguda terminada en vocal, así que se acentúa; lo demás no necesita tilde.\n\nLas otras tres se caen por la tilde: *diferencia* es palabra llana y no lleva acento (\"diferencía\" rompería el diptongo); *práctica* es esdrújula y siempre se acentúa, si la escribes \"practica\" pasa a ser verbo; y *como* sólo lleva tilde cuando es interrogativo o exclamativo, no cuando compara (\"vivía como un salvaje\")."
           }
         ]
       },
@@ -1265,7 +1355,8 @@
               "C": "la célula es un sistema biológico.",
               "D": "la célula proviene de otra preexistente e igual."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El tercer postulado de la teoría celular, el de Virchow, se resume en *omnis cellula e cellula*: toda célula proviene de otra célula preexistente y del mismo tipo. Es el postulado que echó por tierra la generación espontánea y explica la continuidad de la vida.\n\n\"Los organismos están formados por millones de células\" suena razonable, pero es falso como postulado: hay organismos unicelulares. El postulado estructural sólo afirma que todo ser vivo está formado por células, sin decir cuántas."
           },
           {
             "id": 92,
@@ -1278,7 +1369,8 @@
               "C": "evolutivo",
               "D": "estructural"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El postulado **funcional** dice que la célula es la unidad de función: en ella ocurren todas las reacciones metabólicas que sostienen la vida. Si las enzimas del ciclo de Krebs son las mismas en cualquier organismo de respiración aerobia, es porque todas las células realizan ese proceso de la misma manera, es decir, comparten la misma maquinaria de funcionamiento.\n\nEl postulado estructural habla de la célula como unidad de construcción, no de metabolismo, por eso no es la opción D."
           },
           {
             "id": 93,
@@ -1291,7 +1383,8 @@
               "C": "endotérmica",
               "D": "oxidativa"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Fíjate en las raíces: *ergo* es trabajo o energía, *exo* es hacia afuera y *endo* hacia adentro. Entonces una reacción **exergónica** saca energía del sistema, la libera; una endergónica requiere que le metas energía para ocurrir.\n\n\"Endotérmica\" no es porque, además de referirse sólo al calor, significa lo contrario: absorbe. La que libera calor sería *exotérmica*."
           },
           {
             "id": 94,
@@ -1304,7 +1397,8 @@
               "C": "FAD",
               "D": "ATP"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El **ATP** (adenosín trifosfato) es la moneda energética de la célula: al romperse el enlace del tercer fosfato libera energía aprovechable, y al volver a formarse la almacena. Todo el metabolismo cobra y paga en ATP.\n\nNAD, NADP y FAD también participan en la energética celular, pero como *transportadores de electrones*: acarrean poder reductor hacia la cadena respiratoria, y ahí se fabrica el ATP. La sustancia que interviene en las transacciones, la que se gasta y se repone, es el ATP."
           },
           {
             "id": 95,
@@ -1317,7 +1411,8 @@
               "C": "Lactato.",
               "D": "Piruvato."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La glucólisis parte una molécula de glucosa en dos de **piruvato** (con ganancia neta de 2 ATP y 2 NADH). En presencia de oxígeno, el piruvato entra a la mitocondria, se descarboxila y se convierte en acetil-CoA, y así se incorpora al ciclo de Krebs.\n\nLa glucosa no es producto sino sustrato de la glucólisis; el etanol y el lactato son productos de la *fermentación*, es decir, de la ruta que se sigue cuando NO hay oxígeno, y por lo tanto no llegan al ciclo de Krebs."
           },
           {
             "id": 96,
@@ -1330,7 +1425,8 @@
               "C": "Telofase II.",
               "D": "Anafase I."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En la meiosis hay dos reparticiones distintas: en la **anafase I** se separan los cromosomas homólogos (cada uno todavía con sus dos cromátidas), y en la **anafase II** se separan por fin las cromátidas hermanas, que migran a polos opuestos del huso.\n\nSi contestaste anafase I confundiste qué se reparte en cada división: ahí se van cromosomas completos, no cromátidas. Metafase I y telofase II tampoco son, porque en la metafase los cromosomas apenas se alinean y en la telofase ya terminó el movimiento."
           },
           {
             "id": 97,
@@ -1343,7 +1439,8 @@
               "C": "idénticos.",
               "D": "diferentes."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La distribución independiente (segunda ley de Mendel) dice que cada par de homólogos se reparte en la meiosis sin importar cómo se reparten los demás. Con $n$ pares de cromosomas resultan $2^n$ combinaciones distintas de alelos: en el humano, $2^{23}$, más de 8 millones de gametos diferentes.\n\nPor eso la consecuencia es la **variabilidad**: gametos diferentes. \"Iguales\", \"equivalentes\" e \"idénticos\" dicen lo mismo y son justo lo contrario de lo que produce el proceso."
           },
           {
             "id": 98,
@@ -1356,7 +1453,8 @@
               "C": "replicación",
               "D": "transcripción"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Una **mutación** es un cambio en la secuencia del ADN; cuando ocurre en las células germinales se transmite a la descendencia, y por eso es la fuente primaria de variabilidad sobre la que actúa la selección natural. Sin mutación no hay material nuevo para que haya evolución.\n\nReplicación, transcripción y traducción no son cambios evolutivos: son procesos normales de copia y de expresión de la información genética, que precisamente buscan reproducir fielmente lo que ya está escrito."
           },
           {
             "id": 99,
@@ -1369,7 +1467,8 @@
               "C": "Vitalista.",
               "D": "Quimiosintética."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La teoría **quimiosintética** (Oparin y Haldane, respaldada por el experimento de Miller y Urey) sostiene que en la Tierra primitiva, sin oxígeno libre y con descargas eléctricas, se formaron moléculas orgánicas sencillas que fueron acumulándose y organizándose hasta dar los primeros sistemas vivos. Es la explicación con más apoyo experimental hoy.\n\nLa endosimbiótica tienta, pero no explica el origen de la vida: explica el origen de las células *eucariontes* a partir de procariontes que ya existían. El creacionismo y el vitalismo no son explicaciones científicas."
           },
           {
             "id": 100,
@@ -1382,7 +1481,8 @@
               "C": "Paleontología.",
               "D": "Ecología."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La **taxonomía** es la disciplina que clasifica a los seres vivos y los ordena en categorías jerárquicas (dominio, reino, filo, clase, orden, familia, género, especie) agrupándolos por sus semejanzas y su parentesco evolutivo.\n\nLa ontogenia estudia el desarrollo de un individuo, la paleontología los organismos del pasado a través de fósiles y la ecología las relaciones con el ambiente: ninguna clasifica."
           }
         ]
       },
@@ -1401,7 +1501,8 @@
               "C": "Edad Moderna — Edad Contemporánea",
               "D": "Edad Antigua — Edad Contemporánea"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Ubica cada bloque de hechos. Las Altas Culturas agrícolas de Egipto y Mesopotamia y los imperios griego y romano corresponden a la **Edad Antigua**, que va de la invención de la escritura a la caída de Roma en 476. El renacimiento artístico, la formación de los Estados nacionales europeos y la colonización de América ocurren después de 1453: son la **Edad Moderna**.\n\nOjo con el señuelo: los feudos sí son medievales, pero como los otros tres hechos de la segunda lista son modernos y la Edad Media no aparece como par posible junto a la Antigua, la única combinación coherente es Antigua — Moderna. La Contemporánea empieza con la Revolución Francesa, mucho después de la conquista de América."
           },
           {
             "id": 102,
@@ -1414,7 +1515,8 @@
               "C": "La transición de las ideas científicas a la fe religiosa.",
               "D": "El surgimiento del humanismo renacentista."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La Ilustración se llama \"Siglo de las Luces\" precisamente porque puso a la **razón** como única herramienta legítima para conocer y explicar el mundo, por encima de la tradición y de la autoridad religiosa.\n\nLa organización del saber en la *Enciclopedia* fue un producto de ese principio, no el principio mismo; el humanismo renacentista es anterior (siglos XV y XVI); y el movimiento fue justo al contrario de \"pasar de la ciencia a la fe\": se apoyó en la ciencia para criticar los dogmas."
           },
           {
             "id": 103,
@@ -1427,7 +1529,8 @@
               "C": "la independencia de las naciones de los Balcanes.",
               "D": "el cumplimiento de los acuerdos del Congreso de Viena."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Las revoluciones de 1830 fueron la reacción liberal contra el orden absolutista que el Congreso de Viena había restaurado en 1815. Lo que exigían era **gobiernos constitucionales y naciones propias**: de ahí la monarquía constitucional en Francia y la independencia de Bélgica.\n\nLa Santa Alianza y los acuerdos de Viena eran exactamente lo que se combatía, no lo que se pedía; y la independencia de los Balcanes es un proceso posterior, ligado a la decadencia del Imperio otomano."
           },
           {
             "id": 104,
@@ -1440,7 +1543,8 @@
               "C": "Teléfono y televisión.",
               "D": "Radar y bolígrafo."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El siglo XIX es el de la segunda Revolución Industrial: el telégrafo de Morse (1844) y el aprovechamiento de la **electricidad** (dinamo, foco, motor eléctrico) son sus inventos emblemáticos y los que transformaron la comunicación y la producción.\n\nEl teléfono también es del XIX (1876), pero va emparejado con la televisión, que es del siglo XX, y por eso la opción C se cae. La penicilina, el aeroplano, el radar y el bolígrafo son todos del siglo XX: cuando una opción mezcla siglos, descártala completa."
           },
           {
             "id": 105,
@@ -1453,7 +1557,8 @@
               "C": "desintegración del Imperio austrohúngaro.",
               "D": "desintegración del bloque soviético."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Los tratados de 1919, en especial el de Versalles y el de Saint-Germain, desmembraron a los imperios derrotados: del **austrohúngaro** salieron Austria, Hungría, Checoslovaquia y Yugoslavia. Ese es el nuevo mapa de Europa que dejó la Primera Guerra.\n\nLa ONU (1945), la división en bloques capitalista y socialista y la desintegración del bloque soviético (1991) son posteriores: pertenecen a la Segunda Guerra Mundial y a la Guerra Fría. Si marcaste A, confundiste la ONU con la Sociedad de Naciones, que sí fue consecuencia de la Primera."
           },
           {
             "id": 106,
@@ -1466,7 +1571,8 @@
               "C": "1982.",
               "D": "1985."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El crac de la bolsa de Nueva York del \"jueves negro\" (24 de octubre de **1929**) es el hito que marca el inicio de la Gran Depresión, y sus causas fueron justo las que enuncia el reactivo: crédito fácil y especulativo y sobreproducción de bienes que el mercado ya no absorbía.\n\nLas fechas de 1982 y 1985 tientan si piensas en México (la crisis de la deuda y el sismo), pero ni una ni otra tienen que ver con la bolsa de Nueva York."
           },
           {
             "id": 107,
@@ -1479,7 +1585,8 @@
               "C": "Segunda Guerra Mundial.",
               "D": "Guerra Fría."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Los tres hechos son de 1945 o inmediatamente posteriores: la fundación de la **ONU** en San Francisco, el reparto de Alemania en cuatro zonas de ocupación entre los vencedores y la firma de tratados y organismos internacionales para el nuevo orden. Todo eso sale de la **Segunda Guerra Mundial**.\n\nLa Guerra Fría es el conflicto que vino después, entre esos mismos vencedores; no puede ser causa de la división de Alemania, es más bien su continuación. De la Primera Guerra salió la Sociedad de Naciones, no la ONU."
           },
           {
             "id": 108,
@@ -1492,7 +1599,8 @@
               "C": "la economía centralmente planificada a través de un sistema de partido único.",
               "D": "la libre competencia de capitales."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El rasgo definitorio del bloque socialista era económico y político a la vez: el Estado, controlado por un **partido único**, poseía los medios de producción y decidía qué, cuánto y a qué precio producir mediante planes centrales (los planes quinquenales). El capitalismo, en cambio, deja esas decisiones al mercado.\n\n\"La libre competencia de capitales\" describe al bloque capitalista, no al socialista; y el intervencionismo en el tercer mundo lo practicaron ambos bloques, así que no distingue a ninguno."
           },
           {
             "id": 109,
@@ -1505,7 +1613,8 @@
               "C": "Sudáfrica.",
               "D": "Marruecos."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "**Libia** fue colonia italiana desde 1911; al terminar la Segunda Guerra Mundial quedó bajo administración británica (Tripolitania y Cirenaica) y francesa (Fezzan), y la ONU le concedió la independencia en 1951, como reino de Idris I. Fue el primer país africano que se independizó por resolución de la ONU.\n\nEtiopía nunca fue colonizada de forma duradera (sólo ocupada por Italia entre 1936 y 1941); Marruecos se independizó de Francia y España en 1956, y Sudáfrica era un dominio británico, no un territorio bajo tutela italiana."
           },
           {
             "id": 110,
@@ -1518,7 +1627,8 @@
               "C": "formación de la OTAN.",
               "D": "formación del Pacto de Varsovia."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La carrera armamentista obligó a la URSS a sostener un gasto militar enorme con una economía mucho menor que la estadounidense, y encima mantener un aparato burocrático estatal costoso e improductivo. Ese desgaste económico es la causa de fondo de la **caída del bloque soviético** entre 1989 y 1991.\n\nLa OTAN (1949) y el Pacto de Varsovia (1955) no son consecuencia del gasto de la Guerra Fría: son su punto de partida, las alianzas que la organizaron."
           }
         ]
       },
@@ -1537,7 +1647,8 @@
               "C": "Pedro de Alvarado — Bernardino de Sahagún",
               "D": "Bartolomé de Olmedo — Cristóbal de Olid"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "**Pedro de Alvarado** fue capitán de Cortés: peleó en Tenochtitlan (él ordenó la matanza del Templo Mayor) y luego conquistó Guatemala; es conquista militar. **Bernardino de Sahagún** llegó en 1529 como fraile franciscano a evangelizar, aprendió náhuatl y escribió la *Historia general de las cosas de la Nueva España*; es conquista espiritual.\n\nRevisa las otras y verás que están cruzadas o descolocadas: Zumárraga y Benavente (Motolinía) son religiosos, Cristóbal de Olid es soldado, y Antonio de Mendoza fue virrey, ya en la etapa de gobierno colonial."
           },
           {
             "id": 112,
@@ -1550,7 +1661,8 @@
               "C": "Constitución de Apatzingán — abolición de las castas",
               "D": "abolición de la esclavitud — Constitución de Apatzingán"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Fíjate en las etapas que menciona el reactivo. En la **iniciación** (1810-1811) Hidalgo decretó en Guadalajara, en diciembre de 1810, la **abolición de la esclavitud** y la supresión de los tributos indígenas. En la **organización** (1813-1815), Morelos convocó el Congreso de Chilpancingo, presentó los *Sentimientos de la Nación* y de ahí salió la **Constitución de Apatzingán** de 1815.\n\nLas opciones que ponen la Constitución de Apatzingán en manos de Hidalgo se descartan solas: él murió fusilado en 1811, cuatro años antes."
           },
           {
             "id": 113,
@@ -1563,7 +1675,8 @@
               "C": "IV, III, I y II",
               "D": "I, II, IV y III"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Pon fecha a cada hecho antes de ordenar:\n\nIV. Intento de reconquista española (Barradas en Tampico) — **1829**\nIII. Independencia de Texas — **1836**\nI. Primera intervención francesa (Guerra de los Pasteles) — **1838-1839**\nII. Guerra con Estados Unidos — **1846-1848**\n\nEl orden es IV, III, I y II. El error típico es poner primero la intervención francesa por sonar más \"antigua\" que Texas; recuerda que la Guerra de los Pasteles fue después de la separación texana y que la guerra con Estados Unidos, la última, es consecuencia directa de ella."
           },
           {
             "id": 114,
@@ -1576,7 +1689,8 @@
               "C": "Retiro del fuero eclesiástico.",
               "D": "Respaldo a los derechos de las comunidades campesinas."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Las Leyes de Reforma (1859-1863) buscaban separar a la Iglesia del Estado: nacionalizaron los bienes del clero, establecieron el matrimonio y el registro civil, secularizaron los cementerios y **suprimieron los fueros**, es decir, quitaron a los eclesiásticos el privilegio de ser juzgados por tribunales propios y no por los civiles.\n\nLos límites a la propiedad agraria y el respaldo a las comunidades campesinas no son de la Reforma sino del artículo 27 de la Constitución de 1917; de hecho la Ley Lerdo perjudicó a las comunidades indígenas al desamortizar sus tierras comunales."
           },
           {
             "id": 115,
@@ -1589,7 +1703,8 @@
               "C": "Benito Juárez.",
               "D": "Porfirio Díaz."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El Porfiriato (1876-1911) concentró todas las decisiones en la figura del presidente —reelección tras reelección, gobernadores y jefes políticos impuestos desde el centro— y gobernó apoyado en un grupo cerrado de privilegiados: los \"científicos\", hacendados e inversionistas extranjeros. Centralización del poder más estructura oligárquica es la definición del gobierno de **Porfirio Díaz**.\n\nManuel González tienta porque su gobierno (1880-1884) es parte del mismo periodo, pero fue un interinato de cuatro años controlado por Díaz, no el régimen que se describe."
           },
           {
             "id": 116,
@@ -1602,7 +1717,8 @@
               "C": "Plutarco Elías Calles.",
               "D": "Adolfo de la Huerta."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Los tres hechos caen dentro del cuatrienio de **Venustiano Carranza** (1917-1920): él convocó el Congreso Constituyente que promulgó la Constitución el 5 de febrero de **1917**; bajo su gobierno Zapata fue asesinado en Chinameca en **1919**, en una emboscada tendida por Jesús Guajardo con autorización de Pablo González; y la CROM se fundó en Saltillo en **1918**, con apoyo oficial.\n\nObregón llegó al poder en 1920 y Calles en 1924: para entonces la Constitución tenía años de promulgada y Zapata ya había muerto."
           },
           {
             "id": 117,
@@ -1615,7 +1731,8 @@
               "C": "presidencialismo — caudillismo",
               "D": "caudillismo — presidencialismo"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El **caudillismo** es el poder que nace de las armas y de la lealtad personal: un jefe con ejército propio y clientelas regionales, como Villa, Zapata o los generales de los años veinte. El **presidencialismo** es el poder que nace de las instituciones: un presidente electo por sufragio que gobierna a través del aparato de Estado y del partido, y que ya no necesita un ejército personal.\n\nEsa es justo la transición que México vivió entre 1920 y 1940. El populismo no viene al caso: describe una forma de relacionarse con las masas, no el origen del poder."
           },
           {
             "id": 118,
@@ -1628,7 +1745,8 @@
               "C": "Desarrollo Estabilizador.",
               "D": "Maximato."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Ubica las fechas: la autonomía universitaria se reconoció en **1929**, con Emilio Portes Gil, y el Palacio de Bellas Artes se inauguró en **1934**, con Abelardo L. Rodríguez. Ambos presidentes gobernaron bajo la sombra de Plutarco Elías Calles, el \"Jefe Máximo\": ese periodo de 1928 a 1934 es el **Maximato**.\n\nEl Cardenismo tienta porque queda pegadito, pero arranca el 1 de diciembre de 1934, meses después de la inauguración; la Unidad Nacional es de Ávila Camacho (años cuarenta) y el Desarrollo Estabilizador de los cincuenta y sesenta."
           },
           {
             "id": 119,
@@ -1641,7 +1759,8 @@
               "C": "vender petróleo a ambos contendientes.",
               "D": "romper relaciones con las potencias del Eje."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "México se mantuvo neutral al principio, pero cuando submarinos alemanes hundieron los buques petroleros *Potrero del Llano* y *Faja de Oro* en mayo de 1942, Ávila Camacho **rompió relaciones con las potencias del Eje** y declaró el estado de guerra. Después envió al Escuadrón 201 al Pacífico, del lado de los Aliados.\n\nPor eso no puede ser A: las relaciones se rompieron con el Eje, no con los Aliados. Y \"no intervenir en ningún bando\" describe sólo los primeros años, no la posición que México acabó tomando."
           },
           {
             "id": 120,
@@ -1654,7 +1773,8 @@
               "C": "Miguel de la Madrid.",
               "D": "Vicente Fox Quesada."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las tres acciones son del sexenio de **Carlos Salinas de Gortari** (1988-1994): la reforma al artículo 27 en 1992, que dio por terminado el reparto agrario y permitió vender o rentar tierras ejidales; la reforma al 130 el mismo año, que reconoció personalidad jurídica a las iglesias y restableció relaciones con el Vaticano; y la firma del TLCAN a finales de 1992, con entrada en vigor el 1 de enero de 1994.\n\nZedillo tienta porque durante su gobierno el tratado ya estaba operando, pero él tomó posesión en diciembre de 1994: le tocó aplicarlo, no firmarlo."
           }
         ]
       }

@@ -1,0 +1,162 @@
+[
+ {
+  "id": 41,
+  "explanation": "Para promediar 8 en cuatro parciales, la suma de las cuatro calificaciones debe ser al menos $8 \\times 4 = 32$. Suma lo que ya tiene: $7.2 + 8.5 + 7.9 = 23.6$. Lo que le falta es $32 - 23.6 = 8.4$.\n\nComprueba: $\\frac{23.6 + 8.4}{4} = \\frac{32}{4} = 8$. Justo el mínimo."
+ },
+ {
+  "id": 42,
+  "explanation": "Multiplicar una raíz por sí misma deshace la raíz: $\\sqrt{2} \\cdot \\sqrt{2} = \\sqrt{2 \\cdot 2} = \\sqrt{4} = 2$. Esa es precisamente la definición de raíz cuadrada: $\\sqrt{2}$ es el número que al elevarse al cuadrado da 2.\n\nSi elegiste 4, multiplicaste los radicandos pero olvidaste sacar la raíz al final."
+ },
+ {
+  "id": 43,
+  "explanation": "Un binomio al cuadrado no se distribuye término a término: hay que multiplicarlo por sí mismo.\n\n$$(x-y)^2 = (x-y)(x-y) = x^2 - xy - yx + y^2 = x^2 - 2xy + y^2$$\n\nLa regla memorizable: \"cuadrado del primero, menos el doble producto, más el cuadrado del segundo\". Si pusiste $x^2 - y^2$, caíste en el error clásico de \"repartir\" el exponente; eso es en realidad el producto $(x-y)(x+y)$."
+ },
+ {
+  "id": 44,
+  "explanation": "Factoriza arriba y abajo antes de simplificar. El numerador es un trinomio: buscas dos números que multiplicados den $6$ y sumados $-5$, que son $-2$ y $-3$:\n\n$$x^2 - 5x + 6 = (x-2)(x-3)$$\n\nEn el denominador saca el factor común $2a$: $2ax - 6a = 2a(x-3)$. Al dividir se cancela el factor $(x-3)$:\n\n$$\\frac{(x-2)(x-3)}{2a(x-3)} = \\frac{x-2}{2a}$$\n\nLa opción A es solo el numerador factorizado sin cancelar nada; falta el paso final."
+ },
+ {
+  "id": 45,
+  "explanation": "Junta las $x$ de un lado y los números del otro. Resta $\\frac{x}{2}$ en ambos lados:\n\n$$5 = \\frac{x}{2} + 3$$\n\nAhora resta 3: $2 = \\frac{x}{2}$, y multiplica por 2: $x = 4$.\n\nComprueba en la original: $\\frac{4}{2} + 5 = 7$ y $4 + 3 = 7$. Cierra perfecto."
+ },
+ {
+  "id": 46,
+  "explanation": "Para despejar $x$ en $-x \\geq 5$ multiplicas ambos lados por $-1$, y ahí está el detalle clave: al multiplicar o dividir una desigualdad por un negativo, el signo se invierte:\n\n$$x \\leq -5$$\n\nSon todos los números menores o iguales que $-5$, o sea $(-\\infty, -5]$. El corchete en $-5$ es porque la desigualdad incluye el igual ($\\geq$). La opción B tiene paréntesis en $-5$: excluiría al propio $-5$, que sí es solución."
+ },
+ {
+  "id": 47,
+  "explanation": "Plantea el sistema con $c$ = cuaderno y $l$ = lapicero:\n\n$$5c + 8l = 115 \\qquad 3c + 5l = 70$$\n\nPara eliminar $l$, multiplica la primera por 5 y la segunda por 8:\n\n$$25c + 40l = 575 \\qquad 24c + 40l = 560$$\n\nRéstalas: $c = 15$. Cada cuaderno cuesta \\$15 (y cada lapicero \\$5, por si quieres comprobar: $5(15) + 8(5) = 115$)."
+ },
+ {
+  "id": 48,
+  "explanation": "El dominio son los valores de $x$ que puedes meter a la función. Un polinomio solo usa sumas, restas y potencias: no hay divisiones que se anulen ni raíces que se vuelvan negativas, así que acepta cualquier número real. El dominio es $(-\\infty, \\infty)$.\n\nLa opción A parece decir lo mismo, pero está mal escrita: el infinito nunca se encierra con corchete, porque no es un número que se alcance."
+ },
+ {
+  "id": 49,
+  "explanation": "Acomódala como $y = x^2 - 1$: es una función cuadrática ($x$ elevada al cuadrado, $y$ a la primera potencia), y toda cuadrática grafica una parábola; esta abre hacia arriba con vértice en $(0, -1)$.\n\nPara que fuera elipse o hipérbola necesitarías $x^2$ y también $y^2$ en la ecuación; para recta, ambas variables a la primera potencia."
+ },
+ {
+  "id": 50,
+  "explanation": "La composición $(f \\circ g)(x)$ significa $f(g(x))$: metes $g$ adentro de $f$. Donde $f$ dice $x$, escribes $x+2$:\n\n$$f(x+2) = \\frac{1}{(x+2)^2 - 1}$$\n\nDesarrolla el binomio: $(x+2)^2 = x^2 + 4x + 4$, y resta el 1:\n\n$$\\frac{1}{x^2 + 4x + 4 - 1} = \\frac{1}{x^2 + 4x + 3}$$\n\nSi te dio la opción B, sumaste el 1 en lugar de restarlo."
+ },
+ {
+  "id": 51,
+  "explanation": "En la figura, el ángulo recto está en $Q$: el cateto $QR$ mide 3, el cateto $QP$ mide 4 y la hipotenusa $RP$ mide 5. El seno de un ángulo es cateto **opuesto** entre hipotenusa. Visto desde $P$, el lado opuesto es $QR = 3$ (el que no toca a $P$), así que:\n\n$$\\mathrm{sen}\\,P = \\frac{3}{5}$$\n\nSi elegiste $\\frac{4}{5}$, tomaste el cateto adyacente a $P$: ese es el coseno."
+ },
+ {
+  "id": 52,
+  "explanation": "La diagonal del rectángulo es la hipotenusa del triángulo rectángulo que forman los dos lados. Aplica Pitágoras:\n\n$$d = \\sqrt{12^2 + 20^2} = \\sqrt{144 + 400} = \\sqrt{544}$$\n\nSi elegiste 32, sumaste los lados ($12+20$) en vez de sus cuadrados; y 544 sin la raíz es solo $d^2$, falta el último paso."
+ },
+ {
+  "id": 53,
+  "explanation": "El logaritmo solo existe para argumentos **estrictamente positivos**: necesitas $x - 2 > 0$, es decir $x > 2$. El dominio es $(2, \\infty)$.\n\nEl detalle que separa A de B es el paréntesis en el 2: en $x = 2$ tendrías $\\log(0)$, que no existe (la gráfica se pega a esa recta pero nunca la toca), así que el 2 queda fuera."
+ },
+ {
+  "id": 54,
+  "explanation": "Una función logarítmica tiene su asíntota vertical donde el argumento se hace cero, porque ahí $\\log$ se dispara a $-\\infty$. Igualas: $x - 3 = 0$, o sea $x = 3$. El 2 que multiplica afuera solo estira la gráfica verticalmente; no mueve la asíntota.\n\nOjo con el signo: el argumento es $x-3$, así que la gráfica está corrida a la **derecha**; $x = -3$ sería para $\\log(x+3)$. Y las opciones con $y=$ describen rectas horizontales, que no aplican aquí."
+ },
+ {
+  "id": 55,
+  "explanation": "Usa la fórmula de distancia entre dos puntos:\n\n$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} = \\sqrt{(-1-1)^2 + (-1-1)^2} = \\sqrt{4 + 4} = \\sqrt{8}$$\n\nY $\\sqrt{8} = \\sqrt{4 \\cdot 2} = 2\\sqrt{2}$.\n\nSi te dio 4, probablemente sumaste $2+2$ en vez de sacar la raíz de la suma de cuadrados."
+ },
+ {
+  "id": 56,
+  "explanation": "Despeja $y$ para llevar la recta a la forma $y = mx + b$, donde $m$ es la pendiente:\n\n$$2y = 4x - 3 \\quad \\Rightarrow \\quad y = 2x - \\frac{3}{2}$$\n\nEl coeficiente de $x$ es la pendiente: $m = 2$.\n\nSi contestaste $-2$, seguramente leíste el $-4x$ tal cual estaba, sin pasarlo al otro lado con signo cambiado ni dividir entre 2."
+ },
+ {
+  "id": 57,
+  "explanation": "La circunferencia con centro en el origen y radio $r$ es $x^2 + y^2 = r^2$. Con $r = 4$:\n\n$$x^2 + y^2 = 16 \\quad \\Rightarrow \\quad x^2 + y^2 - 16 = 0$$\n\nEl error tentador es la opción C: usar el radio 4 directamente en lugar de elevarlo al cuadrado. Y las opciones con $+16$ o $+4$ no representan ninguna circunferencia real (suma de cuadrados igual a un negativo)."
+ },
+ {
+  "id": 58,
+  "explanation": "Compara con la forma estándar $(x-h)^2 + (y-k)^2 = r^2$, donde el centro es $(h, k)$. Los signos van al revés de como se ven: $(x+3)^2$ es $(x-(-3))^2$, así que $h = -3$; y $(y-2)^2$ da $k = 2$. El centro es $C(-3, 2)$.\n\nPara el radio: $r^2 = 36$, entonces $r = \\sqrt{36} = 6$. El 36 sin raíz es el distractor de las opciones B y D; y el centro $(3,2)$ sale de copiar el signo del paréntesis sin invertirlo."
+ },
+ {
+  "id": 59,
+  "explanation": "La forma estándar $(x-h)^2 = 4p(y-k)$ tiene vértice en $(h, k)$. Aquí $h = 4$ y $k = 3$ (recuerda: los signos se invierten respecto a lo que ves en los paréntesis), así que $V(4, 3)$.\n\nPara el foco: $4p = 12$, entonces $p = 3$. Como la parábola abre hacia arriba (el lado de $y$ es positivo), el foco está $p$ unidades arriba del vértice:\n\n$$F(4, 3+3) = F(4, 6)$$\n\nLa opción A sale de leer los signos de los paréntesis sin invertirlos."
+ },
+ {
+  "id": 60,
+  "explanation": "Primero lleva la elipse a su forma canónica dividiendo todo entre 9:\n\n$$\\frac{x^2}{1} + \\frac{y^2}{9} = 1$$\n\nEl denominador mayor está bajo $y^2$, así que el eje mayor es **vertical**: $a^2 = 9$ y $b^2 = 1$. La distancia del centro a cada foco es\n\n$$c = \\sqrt{a^2 - b^2} = \\sqrt{9 - 1} = \\sqrt{8}$$\n\nComo el eje mayor es vertical, los focos van sobre el eje $y$: $\\left(0, \\pm\\sqrt{8}\\right)$. La opción A tiene la $c$ correcta pero pone los focos en el eje $x$: es el error de no fijarse cuál denominador es el grande."
+ },
+ {
+  "id": 61,
+  "explanation": "Es la definición de libro: en la hipérbola, la **diferencia** de las distancias de cada punto a los dos focos es **constante**. Compárala con la elipse, donde lo constante es la **suma** de esas distancias (opción C, el distractor natural).\n\nUn truco para no confundirlas: la elipse es cerrada porque la suma acota al punto; la hipérbola se abre en dos ramas porque lo que se fija es la diferencia."
+ },
+ {
+  "id": 62,
+  "explanation": "La circunferencia original es $x^2 + y^2 = 36$: centro en el origen y radio 6. Trasladar solo mueve el centro; el radio no cambia. Con centro $(h, k) = (-2, 4)$, la forma estándar $(x-h)^2 + (y-k)^2 = r^2$ queda:\n\n$$(x-(-2))^2 + (y-4)^2 = 36 \\quad \\Rightarrow \\quad (x+2)^2 + (y-4)^2 = 36$$\n\nFíjate en la inversión de signos: centro con $-2$ produce $(x+2)$ en la ecuación. La opción D copia los signos del centro sin invertirlos."
+ },
+ {
+  "id": 63,
+  "explanation": "La función referencial (o informativa) transmite datos objetivos sobre la realidad, sin opiniones ni emociones del hablante. \"Seguirán las lluvias en el noreste del país\" es puro dato verificable, como de pronóstico del tiempo.\n\nLa opción A expresa la emoción de quien habla (función emotiva), y la C adorna con una comparación poética. Que un enunciado hable de la lluvia no lo hace referencial: importa **cómo** lo dice, no de qué habla."
+ },
+ {
+  "id": 64,
+  "explanation": "El fragmento está en verso, con ritmo, rima y una metáfora central (los silencios del amor como \"pausas de música suave\"). Cuando el mensaje llama la atención sobre su propia forma —cómo está dicho importa tanto o más que lo que dice— estamos ante la función poética.\n\nEl distractor tentador es \"metalingüística\" porque el poema habla de \"la lengua del amor\"; pero esa función es cuando se usa la lengua para explicar la lengua misma (definir una palabra, una regla gramatical), no para hacer poesía."
+ },
+ {
+  "id": 65,
+  "explanation": "El fragmento pinta un retrato: edad, complexión, porte, color del cabello y la barba, expresión del rostro. Enumerar rasgos y cualidades de una persona (o de un lugar u objeto) para que el lector se lo imagine es la forma **descriptiva** del discurso.\n\nNo es narrativa porque no pasa nada: no hay acciones que avancen en el tiempo, solo características. Y no argumenta ni expone un tema; retrata."
+ },
+ {
+  "id": 66,
+  "explanation": "El fragmento relata una serie de **hechos encadenados en el tiempo**: Cortés ordenó traer frailes hacia 1529, estos llegaron, fundaron conventos, compartieron el trabajo de evangelizar. Hay acciones, actores y sucesión temporal: eso es narración.\n\nEs fácil irse por \"expositiva\" porque el tono es de libro de historia, pero fíjate en que el texto no explica un concepto: cuenta qué pasó y en qué orden. Los verbos de acción en pasado son la pista."
+ },
+ {
+  "id": 67,
+  "explanation": "El texto es argumentativo y sigue la estructura clásica: una **introducción** que engancha con la novela de Sturgeon y los organismos colectivos, una **tesis** (la humanidad ya dio el paso para ser algo más que un conjunto de individuos, sin necesidad de telepatía), los **argumentos** que la sostienen (el lenguaje como \"telepatía\" rudimentaria, la escritura como memoria externa, las tecnologías como prótesis culturales) y una **conclusión**: la discusión en red como embrión de la verdadera telepatía humana.\n\nLas otras opciones mezclan piezas que no forman la secuencia de un texto argumentativo: \"opinión\" o \"planteamiento\" sueltos no sustituyen a la tesis y su cierre."
+ },
+ {
+  "id": 68,
+  "explanation": "El segundo párrafo abre afirmando: \"En la naturaleza existen realmente estos 'organismos colectivos', como las colonias de hormigas o de abejas...\". Esa es la idea principal; lo demás del párrafo la desarrolla o deriva de ella.\n\nLas hormigas y abejas (opción D) son solo el **ejemplo** que ilustra la idea, no la idea misma. Y lo de los escritores de ciencia ficción es la consecuencia con que cierra el párrafo (\"Quizá inspirándose en ellas...\"), un puente hacia el siguiente tema, no el planteamiento central."
+ },
+ {
+  "id": 69,
+  "explanation": "Una prótesis es algo artificial que **extiende o suple** una capacidad del cuerpo. El autor llama así al alfabeto, los libros, la imprenta, las computadoras: inventos humanos que, \"al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia\". O sea: creaciones del hombre que extienden sus capacidades comunicativas y le permiten vivir mejor, justo la opción D.\n\nLa A falla en \"se replica en otros organismos\" (el texto dice lo contrario: nos distinguen de ellos), y la C reduce todo al poder de destrucción, que el texto menciona solo como advertencia final."
+ },
+ {
+  "id": 70,
+  "explanation": "Repasa el recorrido completo del texto: el papel del **lenguaje** como \"telepatía\" rudimentaria, los **productos culturales** (fuego, agricultura, escritura, gobierno, ciencia, arte...) y la **tecnología** que potencia la comunicación (imprenta, computadoras, internet, redes sociales). Los tres hilos atraviesan todo el texto.\n\nLas otras opciones incluyen elementos que solo aparecen de pasada: la literatura de ficción es apenas el gancho inicial con Sturgeon, y las computadoras o la democracia son ejemplos dentro de un tema, no temas en sí."
+ },
+ {
+  "id": 71,
+  "explanation": "El autor no se limita a informar: **defiende una postura**. Sostiene que, aunque la telepatía sea fantasía, la humanidad ya piensa colectivamente gracias al lenguaje, la cultura y las redes, y va dando razones y ejemplos para convencerte de ello hasta rematar con su conclusión. Eso es argumentar.\n\n\"Informar\" (opción B) se queda corta: un texto informativo no toma partido, y aquí hay tesis, evidencias y hasta concesiones (\"desgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía\") típicas de quien construye un argumento."
+ },
+ {
+  "id": 72,
+  "explanation": "El sujeto es quien realiza la acción del verbo. Pregúntale a la oración: ¿quiénes hallaron? **Los científicos**. Todo lo demás —los huesos, el dinosaurio, los restos— es lo hallado, es decir, forma parte del objeto directo dentro del predicado.\n\nUn truco que no falla: cambia el número del candidato y ve si el verbo te obliga a cambiar. \"El científico halló...\" funciona; en cambio \"el hueso\" no arrastra al verbo, porque no es el sujeto."
+ },
+ {
+  "id": 73,
+  "explanation": "El objeto directo es aquello sobre lo que recae directamente la acción del verbo. En \"Compró la computadora\", ¿qué compró? **La computadora**: ahí está el objeto directo. Puedes comprobarlo sustituyendo por el pronombre \"la\": \"La compró\".\n\nLas otras opciones ni siquiera tienen verbo: son puras frases nominales o adverbiales (\"Las pirámides de Teotihuacán\", \"Hoy, mañana y siempre\"), y sin verbo no puede haber objeto directo."
+ },
+ {
+  "id": 74,
+  "explanation": "El párrafo anuncia **tres** asuntos, así que la enumeración debe traer exactamente tres elementos y con estructura paralela. La opción B lo cumple: \"el diseño..., el seguimiento..., y la búsqueda...\" —tres sustantivos, misma forma— y el cuarto tema (las nuevas sucursales) va aparte, en su propia oración, porque no es parte de los tres.\n\nLa A mete cuatro elementos en la lista de \"tres asuntos\", y la C y la D rompen el paralelismo mezclando infinitivos (\"diseñar\", \"buscar\", \"cómo diseñar\") con sustantivos (\"el seguimiento\")."
+ },
+ {
+  "id": 75,
+  "explanation": "Analiza qué pide cada hueco. El primero necesita una adversativa (querían algo, **pero** no cumplían los requisitos): \"pero\". El segundo, un conector de consecuencia: \"en consecuencia, tuvieron que resignarse\". El tercero, la preposición que rige el verbo: \"resignarse **con** la realización de algo\".\n\nEl distractor fino es la C: \"más\" con acento es de cantidad, no sirve como adversativa (la adversativa es \"mas\", sin tilde), y \"en conclusión\" cierra un razonamiento, no expresa consecuencia.\n\nREVISAR: la opción B (\"mas — por tanto — a\") también parece gramaticalmente válida: \"mas\" equivale a \"pero\", \"por tanto\" es consecutivo y \"resignarse a\" es régimen aceptado por la RAE igual que \"resignarse con\". No veo un error claro que descarte B frente a D."
+ },
+ {
+  "id": 76,
+  "explanation": "La opción C es la que fluye sin tropiezos: oraciones completas, bien puntuadas, con enumeración correcta (\"las montañas, los animales, la nube, la lluvia\") y un hilo claro —Inkarrí como creador— que cada oración va desarrollando.\n\nLa A es el error opuesto y evidente: es un bloque sin ningún signo de puntuación, ideas encimadas una tras otra. La B abusa de \"dicen que\" y encadena ideas con vaguedad (\"Ignoramos quién lo habrá llevado..., pero parece que...\"), y la D tropieza con la pasiva forzada \"están siendo rotas\", giro poco natural en español."
+ },
+ {
+  "id": 77,
+  "explanation": "Un *destello* es un resplandor o brillo vivo e instantáneo; su sinónimo es **fulgor**, que también nombra un brillo intenso. Además coinciden en categoría gramatical: ambos son sustantivos.\n\nAhí está la trampa de \"luminoso\" y \"diáfano\": se relacionan con la luz, pero son **adjetivos**; no pueden sustituir a un sustantivo. Y \"claridad\" es luz difusa y continua, no el brillo súbito del destello."
+ },
+ {
+  "id": 78,
+  "explanation": "*Disperso* significa esparcido, desparramado, sin unión. Su antónimo —lo contrario— es **agrupado**: reunido, junto.\n\nCuidado con \"esparcido\" y \"diseminado\": esos son **sinónimos** de disperso, y son el tropiezo clásico cuando la pregunta pide antónimo y uno lee de prisa. Subraya siempre si te piden sinónimo o antónimo antes de contestar."
+ },
+ {
+  "id": 79,
+  "explanation": "\"Notó que aquel beso era de un extraño\" está impecable: \"notó\" lleva su tilde por ser aguda terminada en vocal, y no hay más palabras que la exijan.\n\nLas otras tres fallan en acentuación: \"detenian\" debe ser *detenían* y \"adquirio\" debe ser *adquirió* (les falta la tilde), mientras que la D acumula errores: \"viviá\" no existe (es *vivía*) y ese \"cómo\" con tilde sobra, porque es comparativo (\"como un salvaje\"), no interrogativo."
+ },
+ {
+  "id": 80,
+  "explanation": "La opción C puntúa donde la gramática lo pide y solo ahí: nunca separa el sujeto de su verbo, no fragmenta oraciones y usa la coma para el inciso del gerundio (\"protegiéndose en barricadas...\").\n\nLa A comete el pecado capital de poner coma entre sujeto y verbo (\"El Coronel Juan Morales, se apodera\") y deja \"Y empieza a disparar.\" como oración suelta tras punto. La B y la D fragmentan sin sentido (\"introduce a la fortaleza. Un buen número de soldados.\") o riegan comas que cortan complementos que van pegados a su verbo."
+ }
+]
