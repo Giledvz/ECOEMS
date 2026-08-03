@@ -47,11 +47,13 @@ def main(grupo):
         # lo domina el arranque del agente, no el tamaño del contexto.
         bloques, actual, mats = [], [], []
         for sec in e['sections']:
+            # Los exámenes viejos rotulan la sección con "name" en vez de "subject".
+            materia = sec.get('subject') or sec.get('name') or e.get('title', '')
             faltan = [q for q in sec['questions']
                       if not (q.get('explanation') or '').strip()]
             for i in range(0, len(faltan), TAM):
                 for q in faltan[i:i + TAM]:
-                    actual.append(q); mats.append(sec['subject'])
+                    actual.append(q); mats.append(materia)
                     if len(actual) == TAM:
                         bloques.append((actual, mats)); actual, mats = [], []
         if actual:

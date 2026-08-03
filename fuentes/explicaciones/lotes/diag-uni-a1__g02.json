@@ -1,0 +1,488 @@
+{
+ "lote": "diag-uni-a1__g02",
+ "examen": "diag-uni-a1.json",
+ "titulo": "Diagnóstico Universidad A1",
+ "materia": "Matemáticas + Física + Literatura + Geografía",
+ "preguntas": [
+  {
+   "id": 41,
+   "texto": "Los focos de la elipse $$\\frac{x^2}{25} + \\frac{y^2}{16} = 1$$ se encuentran en:",
+   "opciones": {
+    "A": "$$(\\pm 4, 0)$$",
+    "B": "$$(0, \\pm 3)$$",
+    "C": "$$(\\pm 5, 0)$$",
+    "D": "$$(\\pm 3, 0)$$"
+   },
+   "clave": "D",
+   "tema": "Elementos de la elipse"
+  },
+  {
+   "id": 42,
+   "texto": "El valor de $$\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}$$ es:",
+   "opciones": {
+    "A": "$$0$$",
+    "B": "$$4$$",
+    "C": "$$2$$",
+    "D": "No existe"
+   },
+   "clave": "B",
+   "tema": "Obtención de límites"
+  },
+  {
+   "id": 43,
+   "texto": "Si $$f(x) = (5x - 2)^3$$, entonces $$f'(x)$$ es:",
+   "opciones": {
+    "A": "$$3(5x - 2)^2$$",
+    "B": "$$15(5x - 2)^2$$",
+    "C": "$$5(5x - 2)^3$$",
+    "D": "$$15(5x - 2)^3$$"
+   },
+   "clave": "B",
+   "tema": "Regla de la cadena"
+  },
+  {
+   "id": 44,
+   "texto": "El resultado de $$\\int (4x^3 - 6x)\\,dx$$ es:",
+   "opciones": {
+    "A": "$$x^4 - 3x + C$$",
+    "B": "$$12x^2 - 6 + C$$",
+    "C": "$$4x^4 - 6x^2 + C$$",
+    "D": "$$x^4 - 3x^2 + C$$"
+   },
+   "clave": "D",
+   "tema": "Integral inmediata"
+  },
+  {
+   "id": 45,
+   "texto": "Un tren se mueve a velocidad constante de 30 m/s. ¿Cuánto tiempo tarda en recorrer 450 m?",
+   "opciones": {
+    "A": "$$15$$ s",
+    "B": "$$13.5$$ s",
+    "C": "$$150$$ s",
+    "D": "$$1.5$$ s"
+   },
+   "clave": "A",
+   "tema": "Movimiento rectilíneo uniforme"
+  },
+  {
+   "id": 46,
+   "texto": "Un auto acelera uniformemente desde el reposo a $$4\\text{ m/s}^2$$. La distancia que recorre en 5 s es:",
+   "opciones": {
+    "A": "$$20$$ m",
+    "B": "$$50$$ m",
+    "C": "$$100$$ m",
+    "D": "$$25$$ m"
+   },
+   "clave": "B",
+   "tema": "Movimiento uniformemente acelerado"
+  },
+  {
+   "id": 47,
+   "texto": "Un bloque de 5 kg se encuentra sobre una superficie sin fricción. Si se aplican dos fuerzas horizontales de 20 N y 10 N en la misma dirección, la aceleración del bloque es:",
+   "opciones": {
+    "A": "$$2\\text{ m/s}^2$$",
+    "B": "$$4\\text{ m/s}^2$$",
+    "C": "$$6\\text{ m/s}^2$$",
+    "D": "$$10\\text{ m/s}^2$$"
+   },
+   "clave": "C",
+   "tema": "Superposición de fuerzas"
+  },
+  {
+   "id": 48,
+   "texto": "Una barra de 2 m está soportada en su punto medio. Si se coloca un peso de 40 N a 0.5 m del fulcro, ¿qué fuerza debe aplicarse a 1 m del fulcro en el lado opuesto para mantener el equilibrio?",
+   "opciones": {
+    "A": "$$10$$ N",
+    "B": "$$80$$ N",
+    "C": "$$40$$ N",
+    "D": "$$20$$ N"
+   },
+   "clave": "D",
+   "tema": "Equilibrio rotacional y torca"
+  },
+  {
+   "id": 49,
+   "texto": "Un resorte con constante elástica $$k = 200$$ N/m se estira 0.15 m. La fuerza que ejerce el resorte es:",
+   "opciones": {
+    "A": "$$13.3$$ N",
+    "B": "$$30$$ N",
+    "C": "$$1\\,333$$ N",
+    "D": "$$3$$ N"
+   },
+   "clave": "B",
+   "tema": "Ley de Hooke"
+  },
+  {
+   "id": 50,
+   "texto": "Si la distancia entre dos masas se duplica, la fuerza gravitacional entre ellas:",
+   "opciones": {
+    "A": "Se reduce a la cuarta parte",
+    "B": "Se reduce a la mitad",
+    "C": "Se duplica",
+    "D": "Permanece igual"
+   },
+   "clave": "A",
+   "tema": "Ley de gravitación universal"
+  },
+  {
+   "id": 51,
+   "texto": "Se empuja una caja con una fuerza de 50 N a lo largo de 8 m en la dirección del movimiento. El trabajo realizado es:",
+   "opciones": {
+    "A": "$$6.25$$ J",
+    "B": "$$58$$ J",
+    "C": "$$200$$ J",
+    "D": "$$400$$ J"
+   },
+   "clave": "D",
+   "tema": "Trabajo mecánico"
+  },
+  {
+   "id": 52,
+   "texto": "Dos patinadores de 60 kg y 40 kg están en reposo sobre hielo y se empujan mutuamente. Si el de 60 kg se mueve a 2 m/s, la rapidez del de 40 kg es:",
+   "opciones": {
+    "A": "$$2$$ m/s",
+    "B": "$$4$$ m/s",
+    "C": "$$3$$ m/s",
+    "D": "$$1.5$$ m/s"
+   },
+   "clave": "C",
+   "tema": "Conservación del ímpetu"
+  },
+  {
+   "id": 53,
+   "texto": "Un gas ideal a presión constante ocupa 3 L a 300 K. ¿Qué volumen ocupará a 600 K?",
+   "opciones": {
+    "A": "$$1.5$$ L",
+    "B": "$$9$$ L",
+    "C": "$$6$$ L",
+    "D": "$$12$$ L"
+   },
+   "clave": "C",
+   "tema": "Gases ideales"
+  },
+  {
+   "id": 54,
+   "texto": "Cuando dos ondas se encuentran y la onda resultante tiene mayor amplitud que cada onda individual, se produce interferencia:",
+   "opciones": {
+    "A": "Destructiva",
+    "B": "Refractiva",
+    "C": "Difractiva",
+    "D": "Constructiva"
+   },
+   "clave": "D",
+   "tema": "Interferencia de ondas"
+  },
+  {
+   "id": 55,
+   "texto": "Dos cargas de $$+3\\;\\mu C$$ cada una están separadas 3 m. Si la separación se reduce a 1 m, la fuerza eléctrica entre ellas:",
+   "opciones": {
+    "A": "Se multiplica por 9",
+    "B": "Se triplica",
+    "C": "Se reduce a un tercio",
+    "D": "Permanece igual"
+   },
+   "clave": "A",
+   "tema": "Ley de Coulomb"
+  },
+  {
+   "id": 56,
+   "texto": "En un circuito con una batería de 12 V y una resistencia de 4 Ω, la corriente que circula es:",
+   "opciones": {
+    "A": "$$0.33$$ A",
+    "B": "$$3$$ A",
+    "C": "$$48$$ A",
+    "D": "$$16$$ A"
+   },
+   "clave": "B",
+   "tema": "Ley de Ohm"
+  },
+  {
+   "id": 57,
+   "texto": "Según la ley de Faraday, una fuerza electromotriz se induce en una espira cuando:",
+   "opciones": {
+    "A": "La espira conduce corriente constante",
+    "B": "La espira está en reposo en un campo estático",
+    "C": "El campo magnético es uniforme y constante",
+    "D": "Varía el flujo magnético a través de la espira"
+   },
+   "clave": "D",
+   "tema": "Inducción electromagnética"
+  },
+  {
+   "id": 58,
+   "texto": "Según la ecuación de Bernoulli, cuando la velocidad de un fluido en un tubo horizontal aumenta, la presión:",
+   "opciones": {
+    "A": "Aumenta",
+    "B": "Permanece constante",
+    "C": "Disminuye",
+    "D": "Se duplica"
+   },
+   "clave": "C",
+   "tema": "Ecuación de Bernoulli"
+  },
+  {
+   "id": 59,
+   "texto": "Un objeto se coloca a 30 cm de una lente convergente con distancia focal de 15 cm. La imagen se forma a:",
+   "opciones": {
+    "A": "$$10$$ cm",
+    "B": "$$30$$ cm",
+    "C": "$$15$$ cm",
+    "D": "$$45$$ cm"
+   },
+   "clave": "B",
+   "tema": "Lentes convergentes"
+  },
+  {
+   "id": 60,
+   "texto": "El modelo atómico que introduce órbitas cuantizadas de energía para el electrón fue propuesto por:",
+   "opciones": {
+    "A": "Bohr",
+    "B": "Rutherford",
+    "C": "Thomson",
+    "D": "Dalton"
+   },
+   "clave": "A",
+   "tema": "Modelo atómico de Bohr"
+  },
+  {
+   "id": 61,
+   "texto": "La propiedad textual que consiste en adaptar el lenguaje al contexto comunicativo se denomina:",
+   "opciones": {
+    "A": "Adecuación",
+    "B": "Cohesión",
+    "C": "Coherencia",
+    "D": "Cabalidad"
+   },
+   "clave": "A",
+   "tema": "Propiedades del texto"
+  },
+  {
+   "id": 62,
+   "texto": "Los elementos esenciales de una nota informativa responden a las preguntas:",
+   "opciones": {
+    "A": "¿Cuál es la opinión editorial del periódico?",
+    "B": "¿Qué, quién, cuándo, dónde y por qué?",
+    "C": "¿Cuál es la tesis y los argumentos?",
+    "D": "¿Qué opina el lector?"
+   },
+   "clave": "B",
+   "tema": "Texto periodístico"
+  },
+  {
+   "id": 63,
+   "texto": "En un texto dramático, las indicaciones del autor sobre escenario, vestuario y movimiento de los actores se llaman:",
+   "opciones": {
+    "A": "Diálogos",
+    "B": "Monólogos",
+    "C": "Acotaciones",
+    "D": "Apartes"
+   },
+   "clave": "C",
+   "tema": "Acción dramática"
+  },
+  {
+   "id": 64,
+   "texto": "La tragedia griega se caracteriza por presentar un personaje que:",
+   "opciones": {
+    "A": "Provoca risa con sus errores",
+    "B": "Narra hechos históricos reales",
+    "C": "Resuelve todos sus conflictos felizmente",
+    "D": "Enfrenta un destino adverso e inevitable"
+   },
+   "clave": "D",
+   "tema": "Tragedia"
+  },
+  {
+   "id": 65,
+   "texto": "Cuando los versos coinciden en todos los sonidos a partir de la última vocal acentuada, la rima es:",
+   "opciones": {
+    "A": "Asonante",
+    "B": "Consonante",
+    "C": "Libre",
+    "D": "Blanca"
+   },
+   "clave": "B",
+   "tema": "Rima"
+  },
+  {
+   "id": 66,
+   "texto": "La frase 'tus ojos son dos luceros' es un ejemplo de:",
+   "opciones": {
+    "A": "Metáfora",
+    "B": "Hipérbole",
+    "C": "Onomatopeya",
+    "D": "Aliteración"
+   },
+   "clave": "A",
+   "tema": "Figuras retóricas"
+  },
+  {
+   "id": 67,
+   "texto": "El género literario que se estructura mediante diálogos y está destinado a la representación escénica es el:",
+   "opciones": {
+    "A": "Lírico",
+    "B": "Épico",
+    "C": "Narrativo",
+    "D": "Dramático"
+   },
+   "clave": "D",
+   "tema": "Géneros literarios"
+  },
+  {
+   "id": 68,
+   "texto": "La corriente literaria que busca retratar fielmente la realidad social, sin idealizarla, se denomina:",
+   "opciones": {
+    "A": "Romanticismo",
+    "B": "Barroco",
+    "C": "Realismo",
+    "D": "Surrealismo"
+   },
+   "clave": "C",
+   "tema": "Realismo"
+  },
+  {
+   "id": 69,
+   "texto": "¿Cuál es la principal diferencia entre cuento y novela?",
+   "opciones": {
+    "A": "El cuento no tiene personajes",
+    "B": "La novela no tiene narrador",
+    "C": "El cuento es más breve y concentra la acción",
+    "D": "La novela siempre es de ficción histórica"
+   },
+   "clave": "C",
+   "tema": "El cuento"
+  },
+  {
+   "id": 70,
+   "texto": "Expresar con palabras propias el contenido de un texto, manteniendo su sentido original, se denomina:",
+   "opciones": {
+    "A": "Cita textual",
+    "B": "Resumen",
+    "C": "Comentario",
+    "D": "Paráfrasis"
+   },
+   "clave": "D",
+   "tema": "Paráfrasis"
+  },
+  {
+   "id": 71,
+   "texto": "Las líneas imaginarias que van de polo a polo y determinan la longitud geográfica se llaman:",
+   "opciones": {
+    "A": "Meridianos",
+    "B": "Paralelos",
+    "C": "Trópicos",
+    "D": "Ecuadores"
+   },
+   "clave": "A",
+   "tema": "Coordenadas geográficas"
+  },
+  {
+   "id": 72,
+   "texto": "México es una zona de alta sismicidad principalmente porque se ubica sobre:",
+   "opciones": {
+    "A": "Una sola placa tectónica estable",
+    "B": "El límite de varias placas tectónicas",
+    "C": "Una zona de ausencia volcánica",
+    "D": "El centro de la placa norteamericana"
+   },
+   "clave": "B",
+   "tema": "Tectónica global"
+  },
+  {
+   "id": 73,
+   "texto": "El ciclo hidrológico describe:",
+   "opciones": {
+    "A": "Solo la evaporación del agua marina",
+    "B": "El recorrido del agua en ríos hacia el mar",
+    "C": "La circulación continua del agua entre atmósfera, litósfera e hidrósfera",
+    "D": "La desalinización natural del agua"
+   },
+   "clave": "C",
+   "tema": "Ciclo hidrológico"
+  },
+  {
+   "id": 74,
+   "texto": "Las regiones naturales se determinan principalmente por la combinación de:",
+   "opciones": {
+    "A": "Idioma y religión",
+    "B": "Actividades económicas",
+    "C": "Densidad de población",
+    "D": "Clima, vegetación y fauna"
+   },
+   "clave": "D",
+   "tema": "Regiones naturales"
+  },
+  {
+   "id": 75,
+   "texto": "El efecto invernadero consiste en:",
+   "opciones": {
+    "A": "La destrucción de la capa de ozono",
+    "B": "La retención de calor en la atmósfera por ciertos gases",
+    "C": "El aumento de la radiación ultravioleta",
+    "D": "La reducción de lluvias en zonas tropicales"
+   },
+   "clave": "B",
+   "tema": "Efecto invernadero"
+  },
+  {
+   "id": 76,
+   "texto": "Una causa principal del acelerado crecimiento demográfico en el siglo XX fue:",
+   "opciones": {
+    "A": "La reducción de la tasa de mortalidad por avances médicos",
+    "B": "El aumento de conflictos armados",
+    "C": "La disminución de la tasa de natalidad",
+    "D": "La migración campo-ciudad"
+   },
+   "clave": "A",
+   "tema": "Crecimiento de la población"
+  },
+  {
+   "id": 77,
+   "texto": "La migración sur-norte a nivel internacional se explica principalmente por:",
+   "opciones": {
+    "A": "Diferencias culturales entre países",
+    "B": "Políticas de fronteras abiertas",
+    "C": "Factores exclusivamente climáticos",
+    "D": "Desigualdad económica entre países desarrollados y subdesarrollados"
+   },
+   "clave": "D",
+   "tema": "Migraciones internacionales"
+  },
+  {
+   "id": 78,
+   "texto": "Una característica de la globalización económica es:",
+   "opciones": {
+    "A": "El aislamiento comercial entre naciones",
+    "B": "La eliminación total de la pobreza",
+    "C": "La interdependencia económica entre países",
+    "D": "La desaparición de las empresas multinacionales"
+   },
+   "clave": "C",
+   "tema": "Globalización económica"
+  },
+  {
+   "id": 79,
+   "texto": "Después de la caída del bloque soviético, la principal consecuencia geopolítica en Europa fue:",
+   "opciones": {
+    "A": "La unificación de todos los países en uno solo",
+    "B": "La desaparición de la Unión Europea",
+    "C": "El surgimiento de nuevos Estados independientes",
+    "D": "El retorno al feudalismo"
+   },
+   "clave": "C",
+   "tema": "Organización política mundial"
+  },
+  {
+   "id": 80,
+   "texto": "Las principales zonas industriales de México se concentran en:",
+   "opciones": {
+    "A": "La península de Yucatán",
+    "B": "La sierra de Chiapas",
+    "C": "Las costas del Pacífico sur",
+    "D": "La región centro y norte del país"
+   },
+   "clave": "D",
+   "tema": "Áreas industriales de México"
+  }
+ ]
+}

@@ -33,7 +33,8 @@
               "C": "Un tren que avanza en línea recta a razón de 2 m., cada segundo.",
               "D": "Un auto que frena intempestivamente hasta detenerse."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Un movimiento rectilíneo uniforme necesita dos cosas a la vez: trayectoria en línea recta y velocidad constante. El tren avanza en línea recta y recorre 2 m cada segundo, es decir, siempre la misma distancia en el mismo tiempo: velocidad constante, sin aceleración.\n\nLa manzana que cae (B) sí va en línea recta, pero la gravedad la acelera: cada segundo va más rápido, así que no es uniforme. Los autos que frenan (A y D) tienen aceleración negativa."
           },
           {
             "id": 2,
@@ -46,7 +47,8 @@
               "C": "el equilibrista desplaza la barra hacia adelante lo que provoca un avance.",
               "D": "la barra horizontalmente produce una torca del lado derecho que equilibra la del lado izquierdo."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El equilibrio rotacional se cumple cuando la suma de las torcas (momentos de fuerza) sobre el cuerpo es cero. Con la barra horizontal, el peso de cada mitad produce una torca respecto al punto de apoyo: la del lado derecho gira en un sentido y la del izquierdo en el sentido contrario. Como se cancelan, el equilibrista no tiende a girar y puede corregir su postura moviendo apenas la barra.\n\nQue la barra pese lo mismo que el equilibrista (A) no tiene nada que ver: lo que importa es que las torcas de ambos lados se compensen."
           },
           {
             "id": 3,
@@ -59,7 +61,8 @@
               "C": "$E_c = 50{,}400$ J − $E_p = 0$ J",
               "D": "$E_c = 420$ J − $E_p = 0$ J"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Al salir del cañón toda la energía es cinética:\n\n$$E_c = \\frac{1}{2}mv^2 = \\frac{1}{2}(7.0)(120)^2 = \\frac{1}{2}(7.0)(14{,}400) = 50{,}400 \\ \\text{J}$$\n\nEn el punto más alto la bala se detiene un instante: su energía cinética vale cero, pero por conservación de la energía toda se transformó en potencial. Así que $E_p = 50{,}400$ J, la misma cantidad.\n\nSi te dio 420 J (opción B), olvidaste elevar la velocidad al cuadrado: $\\frac{1}{2}(7)(120) = 420$."
           },
           {
             "id": 4,
@@ -72,7 +75,8 @@
               "C": "$T_K = T_C - 273$",
               "D": "$T_K = 1.8 (T_C + 273)$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La escala Kelvin usa el mismo tamaño de grado que la Celsius, solo que arranca en el cero absoluto, que está 273 grados por debajo del punto de congelación del agua. Por eso la conversión es un simple corrimiento: $T_K = T_C + 273$. Comprueba: el agua se congela a $0\\,°C$, o sea $273$ K.\n\nLa opción A con el 1.8 y el 32 mezcla la fórmula de Fahrenheit; ahí sí cambia el tamaño del grado, entre Celsius y Kelvin no."
           },
           {
             "id": 5,
@@ -85,7 +89,8 @@
               "C": "calor latente de vaporización.",
               "D": "capacidad térmica específica."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La definición trae las tres pistas: *un gramo* de sustancia, *un grado* de aumento, y una cantidad de calor. Eso es la **capacidad térmica específica** (o calor específico): es una propiedad de cada sustancia, por unidad de masa.\n\nLa capacidad térmica a secas (A) se refiere al objeto completo, sin dividir entre su masa. Los calores latentes (B y C) son el calor para cambiar de estado *sin* cambiar la temperatura, justo lo contrario de lo que pide el enunciado."
           },
           {
             "id": 6,
@@ -99,7 +104,8 @@
               "D": "$18 \\ \\frac{cm}{ciclo}$"
             },
             "answer": "D",
-            "image": "/imagenes_unam-a4-2/q6_onda.svg"
+            "image": "/imagenes_unam-a4-2/q6_onda.svg",
+            "explanation": "En la figura, los 90 cm abarcan todo el tren de ondas, y en ese tramo caben 5 ondas completas (cuenta las crestas: cada onda completa es una cresta con su valle). Entonces:\n\n$$\\lambda = \\frac{90 \\ \\text{cm}}{5 \\ \\text{ciclos}} = 18 \\ \\frac{\\text{cm}}{\\text{ciclo}}$$\n\nSi te dio 9 cm (opción C), dividiste entre 10 porque contaste los husos (las \"panzas\"): cada huso es solo *media* longitud de onda, se necesitan dos para un ciclo completo."
           },
           {
             "id": 7,
@@ -113,7 +119,8 @@
               "D": "$1.90 \\ \\Omega$"
             },
             "answer": "B",
-            "image": "/imagenes_unam-a4-2/q7_circuito.svg"
+            "image": "/imagenes_unam-a4-2/q7_circuito.svg",
+            "explanation": "Primero resuelve el paralelo de $4 \\ \\Omega$ y $6 \\ \\Omega$:\n\n$$R_p = \\frac{(4)(6)}{4+6} = \\frac{24}{10} = 2.4 \\ \\Omega$$\n\nEse bloque queda en serie con la resistencia de $2 \\ \\Omega$, y en serie las resistencias simplemente se suman:\n\n$$R_T = 2 + 2.4 = 4.4 \\ \\Omega$$\n\nSi te dio $12 \\ \\Omega$ (opción C), sumaste las tres como si todas estuvieran en serie, pero las de 4 y 6 comparten los mismos dos nodos: están en paralelo."
           },
           {
             "id": 8,
@@ -126,7 +133,8 @@
               "C": "presión hidrostática del mar influye.",
               "D": "densidad del aire soportada es mayor."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La presión atmosférica en un punto es el peso de la columna de aire que tiene encima. En la cima del Everest ya subiste casi 9 km, así que la capa de aire que queda arriba de ti es mucho más corta (y menos densa) que la que soporta alguien al nivel del mar: menos aire encima, menos peso, menos presión.\n\nLos vientos (A) no son la causa, y la opción D lo dice al revés: la densidad del aire arriba de la cima es menor, no mayor."
           },
           {
             "id": 9,
@@ -139,7 +147,8 @@
               "C": "el descubrimiento de los rayos catódicos.",
               "D": "la radioactividad natural."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El efecto fotoeléctrico —que un metal expulse electrones al recibir luz— no se podía explicar tratando la luz solo como onda: la energía de los electrones expulsados depende de la *frecuencia* de la luz, no de su intensidad. Einstein lo explicó en 1905 proponiendo que la luz llega en paquetes o cuantos (fotones), es decir, que también se comporta como partícula. Ese fue el primer fenómeno que exhibió la dualidad onda-partícula.\n\nLos rayos catódicos (C) llevaron al descubrimiento del electrón, no a la dualidad de la luz."
           },
           {
             "id": 10,
@@ -152,7 +161,8 @@
               "C": "los electrones se encuentran en regiones específicas a diferentes distancias del núcleo, vibrando alrededor de éste como lo hacen los planetas alrededor del Sol.",
               "D": "existe un átomo distinto para cada elemento cuyas masas y tamaños son diferentes, que se pueden combinar en diferentes proporciones para formar más de un compuesto."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El modelo de Thomson es el famoso \"budín de pasas\": el átomo es una esfera homogénea de carga positiva con los electrones (las pasas) incrustados y repartidos uniformemente, de modo que las cargas se cancelan y el átomo resulta neutro. Thomson acababa de descubrir el electrón y todavía no se conocía el núcleo.\n\nLa opción B describe el modelo de Rutherford (núcleo con corteza de electrones): ese vino después, cuando el experimento de la laminilla de oro tumbó al budín de pasas."
           }
         ]
       },
@@ -171,7 +181,8 @@
               "C": "poético.",
               "D": "literario."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El texto periodístico cumple las tres funciones que menciona el enunciado, repartidas en sus géneros: informa (la noticia, el reportaje), opina (el editorial, el artículo de opinión) y busca persuadir al lector (la columna, la crítica).\n\nEl texto científico (B) informa y demuestra, pero evita la opinión personal y no busca persuadir con argumentos subjetivos; los textos poético y literario buscan ante todo la expresión estética."
           },
           {
             "id": 12,
@@ -184,7 +195,8 @@
               "C": "Incidental.",
               "D": "Secundario."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El personaje **incidental** (o episódico) aparece brevemente y sus acciones son prescindibles para la historia: un mesero, un transeúnte, un mensajero. Su función es ambientar la escena y darle verosimilitud, porque un mundo sin gente alrededor se sentiría falso.\n\nNo lo confundas con el secundario (D): ese sí acompaña la trama y apoya u obstaculiza al protagonista a lo largo de la obra; el incidental entra, cumple su momentito y desaparece."
           },
           {
             "id": 13,
@@ -197,7 +209,8 @@
               "C": "Prosopopeya.",
               "D": "Antítesis."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La **antítesis** contrapone dos ideas opuestas en una misma expresión, y aquí hay doble contraste: *ayer* frente a *mañana* y *naciste* frente a *morirás*. Góngora comprime nacimiento y muerte, pasado y futuro, en un solo verso: oposición pura.\n\nNo es paralelismo (B) porque lo esencial no es repetir una estructura, sino enfrentar contrarios; y no hay prosopopeya porque no se le atribuyen cualidades humanas a nada inanimado."
           },
           {
             "id": 14,
@@ -210,7 +223,8 @@
               "C": "un conjunto de características en la temática y forma de escribir de un grupo de autores, en relación con las condiciones sociales de una determinada época.",
               "D": "una suma de literatos de la misma nacionalidad relacionados por una serie de temáticas y estilos, en un periodo aproximado de quince años."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Una corriente literaria agrupa a autores que comparten rasgos en la **temática y la forma de escribir**, ligados a las condiciones sociales e históricas de una época: el romanticismo, el realismo, el modernismo. No exige misma nacionalidad, ni mismo idioma, ni misma edad; el realismo, por ejemplo, tuvo autores en Francia, España y México.\n\nLa opción B describe más bien una *generación* literaria (autores de la misma edad), que es un concepto distinto y más estrecho."
           },
           {
             "id": 15,
@@ -223,7 +237,8 @@
               "C": "José de Espronceda y Manuel Payno.",
               "D": "Benito Pérez Galdós y Rafael Delgado."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El realismo del siglo XIX buscaba retratar la sociedad con objetividad y detalle. Su gran figura en España es **Benito Pérez Galdós** (los *Episodios nacionales*, *Fortunata y Jacinta*) y en México, **Rafael Delgado** (*La Calandria*, *Los parientes ricos*).\n\nCervantes y Ruiz de Alarcón (B) son del Siglo de Oro, siglos antes; Espronceda (C) es romántico; y Juan Ramón Jiménez (A) pertenece a la poesía del siglo XX."
           },
           {
             "id": 16,
@@ -236,7 +251,8 @@
               "C": "Reacciona contra las corrientes académicas y románticas que le precedieron durante la primera mitad del siglo XIX.",
               "D": "Hace énfasis en lo moral y lo social de la actuación humana, con el objetivo de combatir prejuicios mediante el conocimiento y el estudio."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La literatura contemporánea rompe con el relato tradicional: explora el mundo interior de los personajes (monólogo interior, flujo de conciencia) y juega con la realidad y el tiempo, que dejan de ser lineales; piensa en Kafka, Joyce o Rulfo, donde pasado y presente se mezclan y lo real convive con lo imposible.\n\nLa opción B describe al romanticismo (rebeldía y melancolía) y la D al realismo con afán moralizante: son las corrientes anteriores, justo de las que la contemporánea se aparta."
           },
           {
             "id": 17,
@@ -249,7 +265,8 @@
               "C": "Ana Lydia Vega.",
               "D": "Jorge Volpi."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El \"Boom\" latinoamericano fue el estallido editorial de los años sesenta que dio proyección mundial a la narrativa de la región, y **Julio Cortázar** (*Rayuela*, 1963) es uno de sus cuatro nombres canónicos, junto con García Márquez, Vargas Llosa y Carlos Fuentes.\n\nMaría Luisa Bombal es anterior al Boom, y Jorge Volpi es posterior: pertenece a la generación del \"Crack\", que precisamente reaccionó contra la sombra del Boom."
           },
           {
             "id": 18,
@@ -262,7 +279,8 @@
               "C": "dramático — verso — escueta",
               "D": "lírico — prosa — simple"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La novela cuenta una historia a través de un narrador, así que pertenece al género **narrativo**; está escrita en **prosa** (a diferencia del poema, no se organiza en versos); y su estructura suele ser **compleja**: varios personajes, tramas que se cruzan, saltos de tiempo y espacio.\n\nLa opción B tropieza dos veces: lo épico en verso corresponde a los cantares y epopeyas antiguas, como el *Cantar de mio Cid*, no a la novela."
           },
           {
             "id": 19,
@@ -275,7 +293,8 @@
               "C": "hemerográfica.",
               "D": "catalográfica."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La ficha registra un **libro**: autor, año, título, ciudad y editorial. Ese es exactamente el formato de la ficha bibliográfica.\n\nSería hemerográfica (C) si la fuente fuera una publicación periódica —revista o periódico, con volumen, número y páginas— y ciberográfica (B) si citara una página de internet con su URL y fecha de consulta. Aquí no hay nada de eso: solo los datos editoriales de *La región más transparente*."
           },
           {
             "id": 20,
@@ -288,7 +307,8 @@
               "C": "Paráfrasis.",
               "D": "Resumen."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Después de los datos del libro, el redactor no copia nada del texto ni lo reescribe: **evalúa** la obra con su propio juicio. Fíjate en las marcas de opinión: \"texto de divulgación (sin mayor aparato crítico)\", \"tiene como mérito principal\". Cuando la ficha contiene la valoración personal de quien la elabora, es una ficha de **comentario**.\n\nSería textual (B) si citara palabra por palabra entre comillas, y resumen (D) si condensara el contenido del libro sin opinar sobre él."
           }
         ]
       },
@@ -307,7 +327,8 @@
               "C": "Espectros de emisión.",
               "D": "Electrones en orbitales."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Rutherford llegó a su modelo bombardeando una laminilla de oro con partículas de **radiación alfa**. La sorpresa de que unas pocas rebotaran —cuando el modelo de Thomson predecía que todas pasarían casi sin desviarse— lo llevó a proponer que la carga positiva y casi toda la masa están concentradas en un núcleo diminuto. Sin el descubrimiento previo de la radiación alfa, ese experimento no habría sido posible.\n\nLos espectros de emisión (C) y la cuantización (B) dan pauta al modelo de Bohr, que vino después."
           },
           {
             "id": 22,
@@ -320,7 +341,8 @@
               "C": "su facilidad de oxidarse en el aire.",
               "D": "el orden creciente de sus masas atómicas."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Mendeleev (1869) ordenó los elementos según el **orden creciente de sus masas atómicas** y notó que las propiedades químicas se repetían periódicamente; con eso hasta predijo elementos que aún no se descubrían.\n\nEl orden por número atómico (A) es la tentación fuerte, pero ese criterio llegó hasta 1913 con Moseley: es el de la tabla periódica *moderna*, no el de Mendeleev, que ni siquiera conocía el protón."
           },
           {
             "id": 23,
@@ -333,7 +355,8 @@
               "C": "$KClO_3$",
               "D": "$KClO_4$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En los oxianiones del cloro, el sufijo indica cuántos oxígenos hay: hipoclorito $ClO^-$, clorito $ClO_2^-$, **clorato** $ClO_3^-$ y perclorato $ClO_4^-$. La terminación *-ato* sin prefijo corresponde al de tres oxígenos. Como el potasio aporta $K^+$ y el clorato carga $-1$, se neutralizan uno a uno: $KClO_3$.\n\nSi elegiste $KClO_4$, esa es la fórmula del *per*clorato; el prefijo *per-* marca un oxígeno de más."
           },
           {
             "id": 24,
@@ -346,7 +369,8 @@
               "C": "$18.066 \\times 10^{23}$",
               "D": "$21.077 \\times 10^{23}$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Un mol de cualquier sustancia contiene el número de Avogadro de partículas: $6.022 \\times 10^{23}$. Para 3 moles solo multiplicas:\n\n$$3 \\times 6.022 \\times 10^{23} = 18.066 \\times 10^{23} \\ \\text{moléculas}$$\n\nNo importa que sea agua ni cuánto pese cada molécula: el mol cuenta partículas, no gramos. La opción A ($9.033 \\times 10^{23}$) sale de multiplicar por 1.5 en vez de por 3, como si tomaras mol y medio."
           },
           {
             "id": 25,
@@ -359,7 +383,8 @@
               "C": "75",
               "D": "750"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Primero la masa molar del KCl con las masas atómicas: $K \\approx 39$ y $Cl \\approx 35.5$, así que un mol de KCl pesa $39 + 35.5 = 74.5 \\approx 75$ g. Ahora sí:\n\n$$m = n \\times M = 0.1 \\ \\text{mol} \\times 75 \\ \\frac{\\text{g}}{\\text{mol}} = 7.5 \\ \\text{g}$$\n\nSi elegiste 75 (opción C), calculaste la masa de un mol completo y olvidaste multiplicar por el 0.1."
           },
           {
             "id": 26,
@@ -372,7 +397,8 @@
               "C": "coordinado.",
               "D": "puente de hidrógeno."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Ojo con el \"entre\": la pregunta no pide el enlace *dentro* de cada molécula de agua, sino el que une a una molécula *con otra*. Como el agua es muy polar (el oxígeno se queda con carga parcial negativa y los hidrógenos con positiva), el hidrógeno de una molécula se siente atraído por el oxígeno de la vecina: eso es el **puente de hidrógeno**, y explica el alto punto de ebullición del agua.\n\nEl covalente polar (A) es el distractor clásico: ese es el enlace O–H *dentro* de la molécula, no entre moléculas."
           },
           {
             "id": 27,
@@ -385,7 +411,8 @@
               "C": "neutro.",
               "D": "ligeramente básico."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Al echar unas gotas de un ácido débilmente concentrado en todo un litro de agua, el ácido se diluye muchísimo: la concentración de iones $H^+$ baja y el pH de la mezcla sube desde 3.5 acercándose al 7 del agua pura, sin llegar a alcanzarlo. Queda una disolución **ligeramente ácida**, con pH entre 3.5 y 7.\n\nNo puede quedar neutra ni básica (C, D) porque solo agregaste ácido; y \"muy ácido\" (A) ignora la dilución: unas gotas en un litro apenas acidifican."
           },
           {
             "id": 28,
@@ -398,7 +425,8 @@
               "C": "Magnesio.",
               "D": "Calcio"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los óxidos ácidos (o anhídridos) se forman cuando un **no metal** reacciona con oxígeno; al disolverse en agua dan ácidos, como el $NO_2$ que produce lluvia ácida. De la lista, el único no metal es el **nitrógeno**.\n\nSodio, magnesio y calcio son metales: con oxígeno forman óxidos *básicos*, que en agua producen hidróxidos, justo lo contrario de lo que pide la reacción."
           },
           {
             "id": 29,
@@ -411,7 +439,8 @@
               "C": "Triglicérido.",
               "D": "Polinucleótido."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las **proteínas** son polímeros de aminoácidos: cadenas largas unidas por enlaces peptídicos. Y son el material de construcción por excelencia del cuerpo: el tejido muscular está hecho principalmente de proteínas como la actina y la miosina.\n\nEl polinucleótido (D) también es un polímero, pero de nucleótidos (es el ADN o el ARN) y guarda información, no construye músculo; los triglicéridos son reserva de energía."
           },
           {
             "id": 30,
@@ -424,7 +453,8 @@
               "C": "$\\Delta H° = +52.5 \\ \\frac{kJ}{mol}$",
               "D": "$\\Delta H° = -395.7 \\ \\frac{kJ}{mol}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Cuando una reacción desprende energía (exotérmica), la entalpía del sistema disminuye: $\\Delta H$ es **negativa**. Así que primero descarta las positivas (B y C), que *absorben* energía. Entre las dos negativas, desprende más la de mayor valor absoluto:\n\n$$|-395.7| > |-110.5|$$\n\nPor eso $\\Delta H° = -395.7 \\ \\frac{kJ}{mol}$ es el mayor desprendimiento. El error típico es elegir $+52.5$ por ser \"el número más grande\": el signo positivo significa que esa reacción consume energía, no que la libere."
           }
         ]
       },
@@ -443,7 +473,8 @@
               "C": "La corriente de Humboldt tiene relación con la gran riqueza pesquera de Perú.",
               "D": "Las migraciones de las especies generadas por el cambio climático."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La Geografía estudia cómo se relacionan los fenómenos naturales con las actividades humanas. La corriente de Humboldt es un fenómeno natural (una corriente marina fría) y la riqueza pesquera de Perú es la actividad humana que depende de ella: ahí está el vínculo hombre–naturaleza completo.\n\nLas opciones A y B son puras definiciones (una humana, una natural) sin relación entre ambas esferas, y la D relaciona clima con *especies*, no con el ser humano."
           },
           {
             "id": 32,
@@ -456,7 +487,8 @@
               "C": "Madre Oriental.",
               "D": "Volcánica Transversal."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La Ciudad de México y Cuernavaca están separadas por la **Sierra Volcánica Transversal** (o Eje Neovolcánico), la cadena de volcanes que cruza el país de costa a costa a la altura del paralelo 19; por eso la carretera a Cuernavaca sube hasta los bosques de La Cima o el Ajusco antes de bajar. Cuernavaca queda del otro lado, ya en tierra caliente.\n\nLas Sierras Madre Occidental y Oriental corren de norte a sur por los flancos del país, lejos de esta ruta; la de Guadalupe es un macizo pequeño al *norte* de la capital."
           },
           {
             "id": 33,
@@ -469,7 +501,8 @@
               "C": "depresiones y aguas subterráneas para la minería.",
               "D": "mesetas y selvas para la explotación de maderas preciosas."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las grandes concentraciones de población en Asia —el valle del Ganges, la llanura china, los deltas del sureste— comparten el mismo patrón: **llanuras** fértiles con **agua superficial** abundante (ríos, monzones), condiciones ideales para la agricultura intensiva, sobre todo el arroz, que es la base alimentaria de la región.\n\nLas montañas, mesetas y depresiones (A, C, D) son justamente las zonas asiáticas *menos* pobladas: el Himalaya y el Tíbet están casi vacíos."
           },
           {
             "id": 34,
@@ -482,7 +515,8 @@
               "C": "Olas de traslación.",
               "D": "Mareas vivas."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las **corrientes frías** son desplazamientos masivos de agua oceánica que redistribuyen el calor del planeta —moderan la temperatura de las costas que tocan— y suben nutrientes hacia la superficie, lo que multiplica el plancton y con él los peces: por eso frente a corrientes frías como la de Humboldt o la de California hay pesquerías riquísimas.\n\nLas olas y las mareas (A, C, D) son movimientos locales o periódicos: mueven el agua, pero no transportan calor a escala planetaria ni sostienen la pesca."
           },
           {
             "id": 35,
@@ -495,7 +529,8 @@
               "C": "zinc",
               "D": "gas"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La industria pesada por excelencia es la siderurgia: producir hierro y acero. Y su combustible histórico es el **carbón**, en forma de coque, que en los altos hornos aporta a la vez el calor y el agente que reduce el mineral de hierro a metal. Por eso las regiones siderúrgicas crecieron junto a las cuencas carboníferas.\n\nEl petróleo y el gas (A, D) mueven sobre todo el transporte, la petroquímica y la generación eléctrica; el zinc es materia prima, no fuente de energía."
           },
           {
             "id": 36,
@@ -508,7 +543,8 @@
               "C": "la disminución del nivel marino.",
               "D": "la desertificación de los suelos."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La cadena causal es esta: los gases de efecto invernadero retienen calor y provocan el **aumento de la temperatura** media del planeta; ese calentamiento global es el motor que desencadena el cambio climático: se alteran lluvias, vientos, corrientes y estaciones.\n\nLas otras opciones invierten causa y efecto: el derretimiento de glaciares (A) y la desertificación (D) son *consecuencias* del cambio climático, no sus causas."
           },
           {
             "id": 37,
@@ -521,7 +557,8 @@
               "C": "la pesca en las costas del Golfo.",
               "D": "el desarrollo petrolero del sureste."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En las últimas décadas la población mexicana se ha desplazado hacia el norte: **el desarrollo de la frontera norte** —la industria maquiladora y el comercio con Estados Unidos tras el TLCAN— convirtió a ciudades como Tijuana, Ciudad Juárez, Mexicali y Reynosa en polos de atracción de migrantes internos, y hoy son de las de mayor crecimiento del país.\n\nLos amplios litorales (A) más bien desmienten el patrón: pese a tener miles de kilómetros de costa, la población mexicana se concentra históricamente en el altiplano y, ahora, en la franja fronteriza."
           },
           {
             "id": 38,
@@ -534,7 +571,8 @@
               "C": "cuentan con abundantes recursos económicos.",
               "D": "requieren mano de obra barata."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El motor económico de fondo es la demanda de **mano de obra barata**: los países desarrollados tienen poblaciones envejecidas y trabajos —agrícolas, de construcción, de servicios— que su propia gente no cubre o no acepta por esos salarios, así que los inmigrantes llenan ese hueco.\n\nLa opción A no se sostiene: muchos países desarrollados tienen políticas migratorias *restrictivas* y aun así reciben flujos enormes, precisamente porque su economía los necesita. Y la C describe por qué atraen, pero no por qué los *reciben*: la clave está en el mercado laboral."
           },
           {
             "id": 39,
@@ -547,7 +585,8 @@
               "C": "el cambio de sistema económico.",
               "D": "el descontento social de las minorías étnicas y religiosas."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Un estado-nación se sostiene mientras sus habitantes se sienten parte de una misma comunidad política. Cuando dentro de sus fronteras conviven **minorías étnicas y religiosas** que se sienten excluidas o sometidas, su descontento alimenta movimientos separatistas que pueden fragmentar al país: así se desintegraron Yugoslavia y la URSS en los años noventa.\n\nLas políticas neoliberales (B) transforman la economía y pueden generar conflicto social, pero no rompen países en pedazos; las fracturas siguen líneas étnicas y religiosas."
           },
           {
             "id": 40,
@@ -560,7 +599,8 @@
               "C": "maquiladora",
               "D": "metalúrgica"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El corredor del Bajío —Aguascalientes, Guanajuato (Silao, Celaya), Querétaro, San Luis Potosí— concentra las grandes plantas armadoras instaladas en México en las últimas décadas: General Motors, Nissan, Honda, Toyota, BMW, más cientos de fabricantes de autopartes. Es el corazón de la industria **automotriz** del país.\n\nLa maquiladora (C) se asocia a la frontera norte y la petroquímica (B) al Golfo y al sureste; el Bajío creció justamente con la ola automotriz posterior al TLCAN."
           }
         ]
       },
@@ -579,7 +619,8 @@
               "C": "$-\\frac{1}{5}$",
               "D": "$-5$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Dividir entre una fracción es multiplicar por su recíproco: $\\frac{1}{10} \\div \\left(-\\frac{1}{2}\\right) = \\frac{1}{10} \\times (-2) = -\\frac{2}{10} = -\\frac{1}{5}$. El signo negativo se conserva porque positivo entre negativo da negativo.\n\nSi te dio $-\\frac{1}{20}$ (opción B), multiplicaste las fracciones en vez de dividir: el paso clave es voltear la segunda fracción antes de multiplicar."
           },
           {
             "id": 42,
@@ -592,7 +633,8 @@
               "C": "225",
               "D": "625"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Puedes trabajar por dentro o por fuera de la raíz; lo más rápido es escribir $25 = 5^2$:\n\n$$\\sqrt{25^3} = \\sqrt{(5^2)^3} = \\sqrt{5^6} = 5^3 = 125$$\n\nOtra ruta: $\\sqrt{25^3} = (\\sqrt{25})^3 = 5^3 = 125$. La raíz cuadrada parte el exponente a la mitad, no lo elimina.\n\nSi elegiste 625 (opción D), calculaste $25^2$; y 25 (opción A) sería solo $\\sqrt{25^2}$."
           },
           {
             "id": 43,
@@ -605,7 +647,8 @@
               "C": "$y^2 + 1$",
               "D": "$y^2 + 2y - 1$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Aplica la distributiva término a término:\n\n$$(y-1)(y+2) = y^2 + 2y - y - 2 = y^2 + y - 2$$\n\nO usa el atajo del producto de binomios con término común: el término lineal lleva la suma $(-1) + 2 = 1$ y el constante lleva el producto $(-1)(2) = -2$.\n\nSi te salió $y^2 - 2$ (opción B), olvidaste los términos cruzados $2y$ y $-y$, que aquí no se cancelan."
           },
           {
             "id": 44,
@@ -618,7 +661,8 @@
               "C": "$\\frac{x - 3}{x + 4}$",
               "D": "$\\frac{x - 4}{x - 3}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Factoriza numerador y denominador antes de simplificar. El numerador: $x^2 - 7x + 12 = (x-3)(x-4)$ (dos números que sumen $-7$ y multipliquen $12$). El denominador: $x^2 - 16 = (x-4)(x+4)$ por diferencia de cuadrados. Queda:\n\n$$\\frac{(x-3)(x-4)}{(x-4)(x+4)(x-3)} = \\frac{1}{x+4}$$\n\nSe cancelan $(x-3)$ y $(x-4)$ arriba y abajo, y solo sobrevive el $(x+4)$ del denominador."
           },
           {
             "id": 45,
@@ -631,7 +675,8 @@
               "C": "$a = 3$, $b = 2$, $c = -5$",
               "D": "$a = 3$, $b = -2$, $c = -5$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La fórmula general exige la forma $ax^2 + bx + c = 0$, con todo de un solo lado. Pasa $2x + 5$ restando:\n\n$$3x^2 - 2x - 5 = 0$$\n\nDe ahí se lee directo: $a = 3$, $b = -2$, $c = -5$.\n\nLa opción A ($a=3$, $b=2$, $c=5$) es la trampa clásica: leer los coeficientes tal como aparecen en $3x^2 = 2x + 5$ sin haber igualado a cero, con lo que se pierden los signos."
           },
           {
             "id": 46,
@@ -644,7 +689,8 @@
               "C": "$x \\in (-\\infty, \\frac{4}{3})$",
               "D": "$x \\in (-\\infty, 4)$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Despeja como en una ecuación, pero cuidando el signo. Resta 4 en ambos lados:\n\n$$-3x > -12$$\n\nAhora divide entre $-3$: al dividir entre un número negativo la desigualdad **se voltea**:\n\n$$x < 4$$\n\nEso es el intervalo $(-\\infty, 4)$.\n\nSi llegaste a la opción A o algo con $x > \\ldots$, se te olvidó invertir el sentido de la desigualdad al dividir entre $-3$: es el error más común en este tema."
           },
           {
             "id": 47,
@@ -657,7 +703,8 @@
               "C": "$13",
               "D": "$12"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Llama $c$ al precio del cuaderno y $l$ al del lapicero:\n\n$$5c + 8l = 115 \\qquad 3c + 5l = 70$$\n\nPara eliminar $l$, multiplica la primera por 5 y la segunda por 8: $25c + 40l = 575$ y $24c + 40l = 560$. Réstalas: $c = 15$.\n\nComprueba: con $c=15$, la segunda da $45 + 5l = 70$, o sea $l = 5$; y en la primera, $75 + 40 = 115$. Cada cuaderno cuesta \\$15."
           },
           {
             "id": 48,
@@ -670,7 +717,8 @@
               "C": "$(-\\infty, \\infty)$",
               "D": "$(-1, \\infty)$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Una función polinomial no tiene restricciones: no hay denominadores que se anulen, ni raíces de negativos, ni logaritmos. Puedes sustituir cualquier número real y siempre obtienes resultado, así que el dominio es todos los reales: $(-\\infty, \\infty)$.\n\nLa opción A dice lo mismo pero con corchetes, $[-\\infty, \\infty]$, y eso es incorrecto: el infinito no es un número que se \"alcance\", así que siempre va con paréntesis."
           },
           {
             "id": 49,
@@ -683,7 +731,8 @@
               "C": "parábola.",
               "D": "hipérbola."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Reescríbela como $y = x^2 - 1$: es una ecuación de segundo grado en $x$ y de primer grado en $y$. Cuando solo una de las dos variables está al cuadrado, la curva es una parábola (esta abre hacia arriba, con vértice en $(0, -1)$).\n\nPara que fuera elipse o hipérbola necesitarías $x^2$ y $y^2$ juntas en la ecuación, y para recta ninguna de las dos al cuadrado."
           },
           {
             "id": 50,
@@ -696,7 +745,8 @@
               "C": "$5x - 8y + 16$",
               "D": "$9x - 2y + 6$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Resta con cuidado de signos: el signo menos afecta a **todo** $f(x)$.\n\n$$g(x) - f(x) = (7x + 5y - 11) - (2x - 3y + 5)$$\n$$= 7x + 5y - 11 - 2x + 3y - 5 = 5x + 8y - 16$$\n\nObserva que $-(-3y) = +3y$: por eso los términos en $y$ se suman.\n\nSi te dio $5x - 8y + 16$ (opción C), calculaste $f(x) - g(x)$, la resta al revés; y $9x + 2y - 6$ (opción A) resulta de sumar en vez de restar (con error de signo)."
           },
           {
             "id": 51,
@@ -710,7 +760,8 @@
               "D": "$\\frac{\\sqrt{3}}{4}$ m"
             },
             "answer": "A",
-            "image": "/imagenes_unam-a4-2/q51_edificio.svg"
+            "image": "/imagenes_unam-a4-2/q51_edificio.svg",
+            "explanation": "En la figura, la sombra mide 4 m sobre el piso y el ángulo de elevación (entre el piso y la línea que va a la punta del edificio) es de 30°. La altura $h$ es el cateto opuesto al ángulo y la sombra es el cateto adyacente, así que usas tangente:\n\n$$\\tan 30° = \\frac{h}{4} \\quad\\Rightarrow\\quad h = 4\\tan 30° = 4 \\cdot \\frac{1}{\\sqrt{3}} = \\frac{4}{\\sqrt{3}} \\text{ m}$$\n\nSi elegiste $\\frac{\\sqrt{3}}{4}$ (opción D), dividiste al revés: pusiste la sombra entre la altura en lugar de despejar $h$."
           },
           {
             "id": 52,
@@ -723,7 +774,8 @@
               "C": "$\\frac{3}{8}$ m",
               "D": "$\\frac{3\\sqrt{3}}{4}$ m"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La altura del poste es el cateto opuesto al ángulo de elevación y la sombra (1.5 m) es el adyacente, así que la razón indicada es la tangente:\n\n$$\\tan 60° = \\frac{h}{1.5} \\quad\\Rightarrow\\quad h = 1.5\\sqrt{3} = \\frac{3\\sqrt{3}}{2} \\text{ m}$$\n\n(Recuerda que $1.5 = \\frac{3}{2}$.)\n\nSi te dio $\\frac{3}{4}$ (opción B), usaste el coseno: $1.5 \\times \\frac{1}{2}$. El coseno no sirve aquí porque relaciona el adyacente con la hipotenusa, no con la altura."
           },
           {
             "id": 53,
@@ -736,7 +788,8 @@
               "C": "$[0, \\infty)$",
               "D": "$(0, \\infty)$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El logaritmo solo está definido para números **estrictamente positivos**: no existe $\\log(0)$ ni el logaritmo de un negativo. Por eso el dominio es $(0, \\infty)$, con paréntesis en ambos extremos: el 0 no se incluye y el infinito nunca se incluye.\n\nLa opción C, $[0, \\infty)$, es el distractor típico: mete al 0, pero $\\log(0)$ no existe (la gráfica tiene una asíntota vertical ahí, se va a $-\\infty$ sin tocar $x=0$)."
           },
           {
             "id": 54,
@@ -749,7 +802,8 @@
               "C": "$(-\\infty, 2)$",
               "D": "$(-\\infty, 2]$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El argumento del logaritmo debe ser estrictamente positivo:\n\n$$x - 2 > 0 \\quad\\Rightarrow\\quad x > 2$$\n\nEl dominio es $(2, \\infty)$. Es la misma gráfica de $\\log(x)$ pero recorrida 2 unidades a la derecha, con su asíntota vertical en $x = 2$.\n\nLa opción B, $[2, \\infty)$, incluye al 2, pero en $x = 2$ tendrías $\\log(0)$, que no existe: la desigualdad es estricta, así que va paréntesis."
           },
           {
             "id": 55,
@@ -762,7 +816,8 @@
               "C": "$\\sqrt{2}$",
               "D": "4"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Usa la fórmula de distancia entre dos puntos:\n\n$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} = \\sqrt{(1-(-1))^2 + (-1-1)^2} = \\sqrt{2^2 + (-2)^2} = \\sqrt{4+4} = \\sqrt{8}$$\n\nCuidado con las restas de negativos: $1 - (-1) = 2$.\n\nSi te dio 2 (opción B), probablemente solo restaste una coordenada; y $\\sqrt{2}$ (opción C) sale de olvidar elevar al cuadrado las diferencias antes de sumar."
           },
           {
             "id": 56,
@@ -775,7 +830,8 @@
               "C": "2",
               "D": "4"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Aplica la fórmula de distancia:\n\n$$d = \\sqrt{(-1-1)^2 + (-1-1)^2} = \\sqrt{(-2)^2 + (-2)^2} = \\sqrt{4+4} = \\sqrt{8} = 2\\sqrt{2}$$\n\nEl último paso es simplificar el radical: $\\sqrt{8} = \\sqrt{4 \\cdot 2} = 2\\sqrt{2}$.\n\nSi elegiste 2 (opción C), tomaste solo la diferencia de una coordenada; la distancia real es la diagonal, que siempre es mayor que cada cateto."
           },
           {
             "id": 57,
@@ -788,7 +844,8 @@
               "C": "$x^2 - y^2 - 2 = 0$",
               "D": "$x^2 - y^2 - 4 = 0$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La circunferencia con centro en el origen y radio $r$ tiene ecuación $x^2 + y^2 = r^2$. Con $r = 2$:\n\n$$x^2 + y^2 = 4 \\quad\\Longleftrightarrow\\quad x^2 + y^2 - 4 = 0$$\n\nDos cosas debían cumplirse: signo **más** entre $x^2$ y $y^2$ (el menos daría hipérbola, opciones C y D) y el término independiente igual a $r^2 = 4$, no a $r = 2$. La opción B cae justo en ese segundo error: usa el radio sin elevarlo al cuadrado."
           },
           {
             "id": 58,
@@ -801,7 +858,8 @@
               "C": "$x^2 - y^2 = 2$",
               "D": "$x^2 + y^2 = 2$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Con centro en el origen la ecuación es $x^2 + y^2 = r^2$. Aquí $r = \\sqrt{2}$, así que:\n\n$$r^2 = (\\sqrt{2})^2 = 2 \\quad\\Rightarrow\\quad x^2 + y^2 = 2$$\n\nLa opción B, $x^2 + y^2 = \\sqrt{2}$, es el distractor fuerte: pone el radio en el lugar donde va el radio **al cuadrado**. Y las opciones con $x^2 - y^2$ ni siquiera son circunferencias: el signo menos las convierte en hipérbolas."
           },
           {
             "id": 59,
@@ -814,7 +872,8 @@
               "C": "elipse.",
               "D": "parábola."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Fíjate en los cuadrados: solo la $y$ aparece elevada al cuadrado ($4y^2$), mientras que la $x$ es de primer grado. Cuando una sola de las variables está al cuadrado, la curva es una parábola; en este caso, como $x$ está despejada en términos de $y$, es una parábola horizontal (abre hacia un lado).\n\nCircunferencia, elipse e hipérbola necesitan $x^2$ **y** $y^2$ en la misma ecuación, y aquí falta el $x^2$."
           },
           {
             "id": 60,
@@ -827,7 +886,8 @@
               "C": "(1, 2)",
               "D": "(12, 8)"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La forma canónica de la elipse es\n\n$$\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1$$\n\ndonde el centro es $(h, k)$: los números que se **restan** a $x$ y a $y$. Aquí $(x-2)^2$ y $(y-1)^2$ dan directamente el centro $(2, 1)$.\n\nLa opción D, $(12, 8)$, confunde el centro con los semiejes: $\\sqrt{144} = 12$ y $\\sqrt{64} = 8$ son las medidas de los semiejes, no las coordenadas del centro."
           },
           {
             "id": 61,
@@ -840,7 +900,8 @@
               "C": "Elipse.",
               "D": "Hipérbola."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La palabra clave es **diferencia**. La hipérbola es el lugar geométrico de los puntos cuya *diferencia* de distancias a dos focos es constante (en valor absoluto). Compárala con la elipse, que es igual pero con la **suma** de distancias constante: ese es justo el distractor C.\n\nPara no confundirte: circunferencia = distancia constante a *un* punto; parábola = equidistancia entre un punto y una recta; elipse = suma constante; hipérbola = diferencia constante."
           },
           {
             "id": 62,
@@ -853,7 +914,8 @@
               "C": "Elipse con centro en el origen.",
               "D": "Parábola con vértice fuera del origen."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Solo hay una variable al cuadrado ($y^2$, no aparece $x^2$), así que es una parábola, no elipse: eso descarta B y C de entrada. Para ubicar el vértice, completa el cuadrado en $y$:\n\n$$y^2 + 2y = -4x - 16 \\quad\\Rightarrow\\quad (y+1)^2 = -4x - 15 = -4\\left(x + \\tfrac{15}{4}\\right)$$\n\nEl vértice queda en $\\left(-\\frac{15}{4}, -1\\right)$, que no es el origen: parábola con vértice fuera del origen. Que hubiera vértice en el origen exigiría que no sobraran términos lineales ni constante tras completar el cuadrado."
           }
         ]
       },
@@ -872,7 +934,8 @@
               "C": "Apelativa.",
               "D": "Expresiva."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Fíjate en los verbos: \"Visita, descarga, escucha y disfruta\" son imperativos dirigidos a ti, el lector. Cuando el texto busca que el receptor **haga algo** —visitar la página, consumir el contenido—, la función que predomina es la apelativa (también llamada conativa), típica de anuncios e invitaciones.\n\nNo es poética porque el texto no juega con el lenguaje por su belleza, sino que te da órdenes amables para que actúes."
           },
           {
             "id": 64,
@@ -885,7 +948,8 @@
               "C": "Su luna de miel fue un largo escalofrío.",
               "D": "La amaba profundamente, sin darlo a conocer."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La función poética se reconoce cuando el lenguaje se usa de forma figurada, embelleciendo el mensaje más allá de su sentido literal. \"Su luna de miel fue un largo escalofrío\" es una metáfora: una luna de miel no puede ser literalmente un escalofrío; la frase condensa en una imagen la frialdad de esa relación.\n\nLa opción B, \"Rubia, angelical y tímida\", se antoja, pero es una enumeración descriptiva de rasgos: describe, no transforma el sentido de las palabras como lo hace la metáfora de C."
           },
           {
             "id": 65,
@@ -898,7 +962,8 @@
               "C": "Emotiva.",
               "D": "Narrativa."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El fragmento cuenta acciones que se suceden en el tiempo: la rana **pensó**, **comenzó** a peinarse y a vestirse... Hay un personaje que hace cosas y una secuencia de hechos: eso es narración.\n\nNo es descriptiva porque no se detiene a pintar cómo es la rana o el lugar, sino que avanza contando lo que hizo; y no es argumentativa porque nadie defiende una tesis con razones."
           },
           {
             "id": 66,
@@ -911,7 +976,8 @@
               "C": "Argumentativa.",
               "D": "Descriptiva."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El párrafo no se limita a informar: defiende una postura. Sostiene que \"debe ponerse énfasis en los aspectos de calidad y equidad\" y a partir de ahí propone medidas (dar continuidad al proceso educativo, reducir la reprobación, aumentar la secundaria). Cuando un texto toma posición y da razones o propuestas para sostenerla, el discurso es argumentativo.\n\nSería expositivo (opción B) si solo presentara datos sobre la educación sin ese \"debe hacerse\", que es la marca de la argumentación."
           },
           {
             "id": 67,
@@ -925,7 +991,8 @@
               "D": "Es importante aprender a gestionar los residuos plásticos porque son una gran amenaza en el futuro."
             },
             "answer": "D",
-            "context": "**El ser humano ha generado 8.300 millones de toneladas de plástico**\n\nEstamos rodeados de plástico. Este inunda nuestra vida diaria en todo tipo de objetos –desde bolsas para hacer la compra hasta materiales de construcción e incluso ingredientes cosméticos, entre otros muchos productos–, y es que sus versátiles características y su bajo precio lo han convertido en un imprescindible para el ser humano. Sin embargo, no es oro todo lo que reluce: desde hace años, muchos expertos han puesto sobre la mesa que en realidad ese \"bajo precio\" se está convirtiendo en un coste muy alto a nivel medioambiental para el planeta.\n\nDe hecho, su producción se ha disparado de forma alarmante desde que se iniciara la fabricación a gran escala de materiales sintéticos a principios de los años 50. Y ya hay datos de ello: según un estudio realizado por un equipo científico de la Universidad de Georgia, la Universidad de California en Santa Bárbara y la Sea Education Association, todas ellas instituciones estadounidenses, los seres humanos hemos generado un total de 8.300 millones de toneladas de plástico.\n\nY lo más preocupante es que no hemos sido demasiado diestros a la hora de gestionar los residuos: porque de esos 8.300 millones de toneladas fabricadas, 6.300 millones son hoy en día residuos; y de estos, solo alrededor del 9% se ha reciclado, el 12% se ha incinerado y la escalofriante cifra del 79% yace acumulada en vertederos o en el medio ambiente. Este es el primer análisis global de la producción, el uso y el destino final que se ha dado a todos los plásticos que el ser humano ha fabricado desde la creación de este material hasta el año 2015.\n\nPara que te hagas una idea del plástico que hemos producido en todas estas décadas, su peso total sería equivalente, según destacan estos investigadores, al de 822.000 torres Eiffel, 25.000 Empire State, 80 millones de ballenas azules y 1.000 millones de elefantes.\n\nJenna Jambeck, coautora de esta investigación y profesora asociada de la Universidad de Georgia, explica que \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos que los humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar en extremo en los materiales que usamos y en nuestras prácticas de gestión de residuos\".\n\nCon el paso del tiempo, nos hemos ido haciendo más dependientes del plástico. De esta manera, si la producción mundial era de 2 millones de toneladas en 1950, en 2015, esta superó los 400 millones de toneladas, convirtiéndose en uno de los materiales más producidos por el ser humano. De hecho, del total de plástico producido entre 1950 y 2015, aproximadamente la mitad se ha generado en los últimos trece años.\n\nSu mayor mercado está en el sector del empaquetado y la mayor parte de esos productos son de un solo uso y luego se desechan. Además, su vida útil es muy breve.\n\nUno de los principales objetivos de este estudio es que se creen las bases necesarias para una gestión sostenible de los materiales. \"En pocas palabras, no se puede administrar lo que no se mide, por lo que pensamos que las discusiones sobre políticas a poner en marcha estarán más informadas y basadas en hechos ahora que tenemos estos números\", añade Geyer.\n\nRaquel de la Morena"
+            "context": "**El ser humano ha generado 8.300 millones de toneladas de plástico**\n\nEstamos rodeados de plástico. Este inunda nuestra vida diaria en todo tipo de objetos –desde bolsas para hacer la compra hasta materiales de construcción e incluso ingredientes cosméticos, entre otros muchos productos–, y es que sus versátiles características y su bajo precio lo han convertido en un imprescindible para el ser humano. Sin embargo, no es oro todo lo que reluce: desde hace años, muchos expertos han puesto sobre la mesa que en realidad ese \"bajo precio\" se está convirtiendo en un coste muy alto a nivel medioambiental para el planeta.\n\nDe hecho, su producción se ha disparado de forma alarmante desde que se iniciara la fabricación a gran escala de materiales sintéticos a principios de los años 50. Y ya hay datos de ello: según un estudio realizado por un equipo científico de la Universidad de Georgia, la Universidad de California en Santa Bárbara y la Sea Education Association, todas ellas instituciones estadounidenses, los seres humanos hemos generado un total de 8.300 millones de toneladas de plástico.\n\nY lo más preocupante es que no hemos sido demasiado diestros a la hora de gestionar los residuos: porque de esos 8.300 millones de toneladas fabricadas, 6.300 millones son hoy en día residuos; y de estos, solo alrededor del 9% se ha reciclado, el 12% se ha incinerado y la escalofriante cifra del 79% yace acumulada en vertederos o en el medio ambiente. Este es el primer análisis global de la producción, el uso y el destino final que se ha dado a todos los plásticos que el ser humano ha fabricado desde la creación de este material hasta el año 2015.\n\nPara que te hagas una idea del plástico que hemos producido en todas estas décadas, su peso total sería equivalente, según destacan estos investigadores, al de 822.000 torres Eiffel, 25.000 Empire State, 80 millones de ballenas azules y 1.000 millones de elefantes.\n\nJenna Jambeck, coautora de esta investigación y profesora asociada de la Universidad de Georgia, explica que \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos que los humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar en extremo en los materiales que usamos y en nuestras prácticas de gestión de residuos\".\n\nCon el paso del tiempo, nos hemos ido haciendo más dependientes del plástico. De esta manera, si la producción mundial era de 2 millones de toneladas en 1950, en 2015, esta superó los 400 millones de toneladas, convirtiéndose en uno de los materiales más producidos por el ser humano. De hecho, del total de plástico producido entre 1950 y 2015, aproximadamente la mitad se ha generado en los últimos trece años.\n\nSu mayor mercado está en el sector del empaquetado y la mayor parte de esos productos son de un solo uso y luego se desechan. Además, su vida útil es muy breve.\n\nUno de los principales objetivos de este estudio es que se creen las bases necesarias para una gestión sostenible de los materiales. \"En pocas palabras, no se puede administrar lo que no se mide, por lo que pensamos que las discusiones sobre políticas a poner en marcha estarán más informadas y basadas en hechos ahora que tenemos estos números\", añade Geyer.\n\nRaquel de la Morena",
+            "explanation": "La idea principal es la que engloba todo el texto, no un dato suelto. El artículo recorre las cifras de producción y residuos para desembocar en su mensaje central: los plásticos no se biodegradan, \"podrían estar con nosotros durante cientos o incluso miles de años\", y el estudio busca sentar \"las bases necesarias para una gestión sostenible de los materiales\". Es decir: hay que aprender a gestionar los residuos porque son una amenaza a futuro.\n\nLas opciones A, B y C son ciertas, pero cada una es un dato particular del texto (el empaquetado, los años 50, las ballenas azules), no la idea que lo articula todo."
           },
           {
             "id": 68,
@@ -939,7 +1006,8 @@
               "D": "los bajos precios del plástico generan una gran cantidad de desechos que tardan muchos años en biodegradarse."
             },
             "answer": "C",
-            "context": "**El ser humano ha generado 8.300 millones de toneladas de plástico**\n\nEstamos rodeados de plástico. Este inunda nuestra vida diaria en todo tipo de objetos –desde bolsas para hacer la compra hasta materiales de construcción e incluso ingredientes cosméticos, entre otros muchos productos–, y es que sus versátiles características y su bajo precio lo han convertido en un imprescindible para el ser humano. Sin embargo, no es oro todo lo que reluce: desde hace años, muchos expertos han puesto sobre la mesa que en realidad ese \"bajo precio\" se está convirtiendo en un coste muy alto a nivel medioambiental para el planeta.\n\nDe hecho, su producción se ha disparado de forma alarmante desde que se iniciara la fabricación a gran escala de materiales sintéticos a principios de los años 50. Y ya hay datos de ello: según un estudio realizado por un equipo científico de la Universidad de Georgia, la Universidad de California en Santa Bárbara y la Sea Education Association, todas ellas instituciones estadounidenses, los seres humanos hemos generado un total de 8.300 millones de toneladas de plástico.\n\nY lo más preocupante es que no hemos sido demasiado diestros a la hora de gestionar los residuos: porque de esos 8.300 millones de toneladas fabricadas, 6.300 millones son hoy en día residuos; y de estos, solo alrededor del 9% se ha reciclado, el 12% se ha incinerado y la escalofriante cifra del 79% yace acumulada en vertederos o en el medio ambiente. Este es el primer análisis global de la producción, el uso y el destino final que se ha dado a todos los plásticos que el ser humano ha fabricado desde la creación de este material hasta el año 2015.\n\nPara que te hagas una idea del plástico que hemos producido en todas estas décadas, su peso total sería equivalente, según destacan estos investigadores, al de 822.000 torres Eiffel, 25.000 Empire State, 80 millones de ballenas azules y 1.000 millones de elefantes.\n\nJenna Jambeck, coautora de esta investigación y profesora asociada de la Universidad de Georgia, explica que \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos que los humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar en extremo en los materiales que usamos y en nuestras prácticas de gestión de residuos\".\n\nCon el paso del tiempo, nos hemos ido haciendo más dependientes del plástico. De esta manera, si la producción mundial era de 2 millones de toneladas en 1950, en 2015, esta superó los 400 millones de toneladas, convirtiéndose en uno de los materiales más producidos por el ser humano. De hecho, del total de plástico producido entre 1950 y 2015, aproximadamente la mitad se ha generado en los últimos trece años.\n\nSu mayor mercado está en el sector del empaquetado y la mayor parte de esos productos son de un solo uso y luego se desechan. Además, su vida útil es muy breve.\n\nUno de los principales objetivos de este estudio es que se creen las bases necesarias para una gestión sostenible de los materiales. \"En pocas palabras, no se puede administrar lo que no se mide, por lo que pensamos que las discusiones sobre políticas a poner en marcha estarán más informadas y basadas en hechos ahora que tenemos estos números\", añade Geyer.\n\nRaquel de la Morena"
+            "context": "**El ser humano ha generado 8.300 millones de toneladas de plástico**\n\nEstamos rodeados de plástico. Este inunda nuestra vida diaria en todo tipo de objetos –desde bolsas para hacer la compra hasta materiales de construcción e incluso ingredientes cosméticos, entre otros muchos productos–, y es que sus versátiles características y su bajo precio lo han convertido en un imprescindible para el ser humano. Sin embargo, no es oro todo lo que reluce: desde hace años, muchos expertos han puesto sobre la mesa que en realidad ese \"bajo precio\" se está convirtiendo en un coste muy alto a nivel medioambiental para el planeta.\n\nDe hecho, su producción se ha disparado de forma alarmante desde que se iniciara la fabricación a gran escala de materiales sintéticos a principios de los años 50. Y ya hay datos de ello: según un estudio realizado por un equipo científico de la Universidad de Georgia, la Universidad de California en Santa Bárbara y la Sea Education Association, todas ellas instituciones estadounidenses, los seres humanos hemos generado un total de 8.300 millones de toneladas de plástico.\n\nY lo más preocupante es que no hemos sido demasiado diestros a la hora de gestionar los residuos: porque de esos 8.300 millones de toneladas fabricadas, 6.300 millones son hoy en día residuos; y de estos, solo alrededor del 9% se ha reciclado, el 12% se ha incinerado y la escalofriante cifra del 79% yace acumulada en vertederos o en el medio ambiente. Este es el primer análisis global de la producción, el uso y el destino final que se ha dado a todos los plásticos que el ser humano ha fabricado desde la creación de este material hasta el año 2015.\n\nPara que te hagas una idea del plástico que hemos producido en todas estas décadas, su peso total sería equivalente, según destacan estos investigadores, al de 822.000 torres Eiffel, 25.000 Empire State, 80 millones de ballenas azules y 1.000 millones de elefantes.\n\nJenna Jambeck, coautora de esta investigación y profesora asociada de la Universidad de Georgia, explica que \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos que los humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar en extremo en los materiales que usamos y en nuestras prácticas de gestión de residuos\".\n\nCon el paso del tiempo, nos hemos ido haciendo más dependientes del plástico. De esta manera, si la producción mundial era de 2 millones de toneladas en 1950, en 2015, esta superó los 400 millones de toneladas, convirtiéndose en uno de los materiales más producidos por el ser humano. De hecho, del total de plástico producido entre 1950 y 2015, aproximadamente la mitad se ha generado en los últimos trece años.\n\nSu mayor mercado está en el sector del empaquetado y la mayor parte de esos productos son de un solo uso y luego se desechan. Además, su vida útil es muy breve.\n\nUno de los principales objetivos de este estudio es que se creen las bases necesarias para una gestión sostenible de los materiales. \"En pocas palabras, no se puede administrar lo que no se mide, por lo que pensamos que las discusiones sobre políticas a poner en marcha estarán más informadas y basadas en hechos ahora que tenemos estos números\", añade Geyer.\n\nRaquel de la Morena",
+            "explanation": "La pista está en la frase de Geyer al final del texto: \"no se puede administrar lo que no se mide\". Gestionar los residuos implica primero medirlos y conocerlos —qué basura generamos y en qué cantidades— para entonces poder clasificarla y reciclarla adecuadamente. Recuerda que el texto denuncia que solo el 9% del plástico se ha reciclado: la gestión busca revertir eso.\n\nLa opción A describe el problema (la dependencia del plástico), pero no dice en qué consisten las *prácticas de gestión*, que es lo que pregunta."
           },
           {
             "id": 69,
@@ -953,7 +1021,8 @@
               "D": "el ser humano no tiene conocimiento sobre cómo debe reciclar el plástico porque no conoce sus características, por lo tanto, aumenta la contaminación ambiental."
             },
             "answer": "C",
-            "context": "**El ser humano ha generado 8.300 millones de toneladas de plástico**\n\nEstamos rodeados de plástico. Este inunda nuestra vida diaria en todo tipo de objetos –desde bolsas para hacer la compra hasta materiales de construcción e incluso ingredientes cosméticos, entre otros muchos productos–, y es que sus versátiles características y su bajo precio lo han convertido en un imprescindible para el ser humano. Sin embargo, no es oro todo lo que reluce: desde hace años, muchos expertos han puesto sobre la mesa que en realidad ese \"bajo precio\" se está convirtiendo en un coste muy alto a nivel medioambiental para el planeta.\n\nDe hecho, su producción se ha disparado de forma alarmante desde que se iniciara la fabricación a gran escala de materiales sintéticos a principios de los años 50. Y ya hay datos de ello: según un estudio realizado por un equipo científico de la Universidad de Georgia, la Universidad de California en Santa Bárbara y la Sea Education Association, todas ellas instituciones estadounidenses, los seres humanos hemos generado un total de 8.300 millones de toneladas de plástico.\n\nY lo más preocupante es que no hemos sido demasiado diestros a la hora de gestionar los residuos: porque de esos 8.300 millones de toneladas fabricadas, 6.300 millones son hoy en día residuos; y de estos, solo alrededor del 9% se ha reciclado, el 12% se ha incinerado y la escalofriante cifra del 79% yace acumulada en vertederos o en el medio ambiente. Este es el primer análisis global de la producción, el uso y el destino final que se ha dado a todos los plásticos que el ser humano ha fabricado desde la creación de este material hasta el año 2015.\n\nPara que te hagas una idea del plástico que hemos producido en todas estas décadas, su peso total sería equivalente, según destacan estos investigadores, al de 822.000 torres Eiffel, 25.000 Empire State, 80 millones de ballenas azules y 1.000 millones de elefantes.\n\nJenna Jambeck, coautora de esta investigación y profesora asociada de la Universidad de Georgia, explica que \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos que los humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar en extremo en los materiales que usamos y en nuestras prácticas de gestión de residuos\".\n\nCon el paso del tiempo, nos hemos ido haciendo más dependientes del plástico. De esta manera, si la producción mundial era de 2 millones de toneladas en 1950, en 2015, esta superó los 400 millones de toneladas, convirtiéndose en uno de los materiales más producidos por el ser humano. De hecho, del total de plástico producido entre 1950 y 2015, aproximadamente la mitad se ha generado en los últimos trece años.\n\nSu mayor mercado está en el sector del empaquetado y la mayor parte de esos productos son de un solo uso y luego se desechan. Además, su vida útil es muy breve.\n\nUno de los principales objetivos de este estudio es que se creen las bases necesarias para una gestión sostenible de los materiales. \"En pocas palabras, no se puede administrar lo que no se mide, por lo que pensamos que las discusiones sobre políticas a poner en marcha estarán más informadas y basadas en hechos ahora que tenemos estos números\", añade Geyer.\n\nRaquel de la Morena"
+            "context": "**El ser humano ha generado 8.300 millones de toneladas de plástico**\n\nEstamos rodeados de plástico. Este inunda nuestra vida diaria en todo tipo de objetos –desde bolsas para hacer la compra hasta materiales de construcción e incluso ingredientes cosméticos, entre otros muchos productos–, y es que sus versátiles características y su bajo precio lo han convertido en un imprescindible para el ser humano. Sin embargo, no es oro todo lo que reluce: desde hace años, muchos expertos han puesto sobre la mesa que en realidad ese \"bajo precio\" se está convirtiendo en un coste muy alto a nivel medioambiental para el planeta.\n\nDe hecho, su producción se ha disparado de forma alarmante desde que se iniciara la fabricación a gran escala de materiales sintéticos a principios de los años 50. Y ya hay datos de ello: según un estudio realizado por un equipo científico de la Universidad de Georgia, la Universidad de California en Santa Bárbara y la Sea Education Association, todas ellas instituciones estadounidenses, los seres humanos hemos generado un total de 8.300 millones de toneladas de plástico.\n\nY lo más preocupante es que no hemos sido demasiado diestros a la hora de gestionar los residuos: porque de esos 8.300 millones de toneladas fabricadas, 6.300 millones son hoy en día residuos; y de estos, solo alrededor del 9% se ha reciclado, el 12% se ha incinerado y la escalofriante cifra del 79% yace acumulada en vertederos o en el medio ambiente. Este es el primer análisis global de la producción, el uso y el destino final que se ha dado a todos los plásticos que el ser humano ha fabricado desde la creación de este material hasta el año 2015.\n\nPara que te hagas una idea del plástico que hemos producido en todas estas décadas, su peso total sería equivalente, según destacan estos investigadores, al de 822.000 torres Eiffel, 25.000 Empire State, 80 millones de ballenas azules y 1.000 millones de elefantes.\n\nJenna Jambeck, coautora de esta investigación y profesora asociada de la Universidad de Georgia, explica que \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos que los humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar en extremo en los materiales que usamos y en nuestras prácticas de gestión de residuos\".\n\nCon el paso del tiempo, nos hemos ido haciendo más dependientes del plástico. De esta manera, si la producción mundial era de 2 millones de toneladas en 1950, en 2015, esta superó los 400 millones de toneladas, convirtiéndose en uno de los materiales más producidos por el ser humano. De hecho, del total de plástico producido entre 1950 y 2015, aproximadamente la mitad se ha generado en los últimos trece años.\n\nSu mayor mercado está en el sector del empaquetado y la mayor parte de esos productos son de un solo uso y luego se desechan. Además, su vida útil es muy breve.\n\nUno de los principales objetivos de este estudio es que se creen las bases necesarias para una gestión sostenible de los materiales. \"En pocas palabras, no se puede administrar lo que no se mide, por lo que pensamos que las discusiones sobre políticas a poner en marcha estarán más informadas y basadas en hechos ahora que tenemos estos números\", añade Geyer.\n\nRaquel de la Morena",
+            "explanation": "El párrafo 6 da las cifras de crecimiento: de 2 millones de toneladas en 1950 a más de 400 millones en 2015, con la mitad del total producida en los últimos trece años. Uniendo eso con lo dicho antes (el 79% de los residuos yace en vertederos o en el medio ambiente), la deducción correcta es la C: la producción se disparó desde los años 50 y sus residuos están acumulados.\n\nLa opción A confunde un dato del párrafo 2 (las universidades del estudio son estadounidenses) con una generalización que el texto no hace sobre *todas* las investigaciones."
           },
           {
             "id": 70,
@@ -967,7 +1036,8 @@
               "D": "los seres humanos no hacemos conciencia sobre los graves riesgos que implica la acumulación del plástico."
             },
             "answer": "C",
-            "context": "**El ser humano ha generado 8.300 millones de toneladas de plástico**\n\nEstamos rodeados de plástico. Este inunda nuestra vida diaria en todo tipo de objetos –desde bolsas para hacer la compra hasta materiales de construcción e incluso ingredientes cosméticos, entre otros muchos productos–, y es que sus versátiles características y su bajo precio lo han convertido en un imprescindible para el ser humano. Sin embargo, no es oro todo lo que reluce: desde hace años, muchos expertos han puesto sobre la mesa que en realidad ese \"bajo precio\" se está convirtiendo en un coste muy alto a nivel medioambiental para el planeta.\n\nDe hecho, su producción se ha disparado de forma alarmante desde que se iniciara la fabricación a gran escala de materiales sintéticos a principios de los años 50. Y ya hay datos de ello: según un estudio realizado por un equipo científico de la Universidad de Georgia, la Universidad de California en Santa Bárbara y la Sea Education Association, todas ellas instituciones estadounidenses, los seres humanos hemos generado un total de 8.300 millones de toneladas de plástico.\n\nY lo más preocupante es que no hemos sido demasiado diestros a la hora de gestionar los residuos: porque de esos 8.300 millones de toneladas fabricadas, 6.300 millones son hoy en día residuos; y de estos, solo alrededor del 9% se ha reciclado, el 12% se ha incinerado y la escalofriante cifra del 79% yace acumulada en vertederos o en el medio ambiente. Este es el primer análisis global de la producción, el uso y el destino final que se ha dado a todos los plásticos que el ser humano ha fabricado desde la creación de este material hasta el año 2015.\n\nPara que te hagas una idea del plástico que hemos producido en todas estas décadas, su peso total sería equivalente, según destacan estos investigadores, al de 822.000 torres Eiffel, 25.000 Empire State, 80 millones de ballenas azules y 1.000 millones de elefantes.\n\nJenna Jambeck, coautora de esta investigación y profesora asociada de la Universidad de Georgia, explica que \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos que los humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar en extremo en los materiales que usamos y en nuestras prácticas de gestión de residuos\".\n\nCon el paso del tiempo, nos hemos ido haciendo más dependientes del plástico. De esta manera, si la producción mundial era de 2 millones de toneladas en 1950, en 2015, esta superó los 400 millones de toneladas, convirtiéndose en uno de los materiales más producidos por el ser humano. De hecho, del total de plástico producido entre 1950 y 2015, aproximadamente la mitad se ha generado en los últimos trece años.\n\nSu mayor mercado está en el sector del empaquetado y la mayor parte de esos productos son de un solo uso y luego se desechan. Además, su vida útil es muy breve.\n\nUno de los principales objetivos de este estudio es que se creen las bases necesarias para una gestión sostenible de los materiales. \"En pocas palabras, no se puede administrar lo que no se mide, por lo que pensamos que las discusiones sobre políticas a poner en marcha estarán más informadas y basadas en hechos ahora que tenemos estos números\", añade Geyer.\n\nRaquel de la Morena"
+            "context": "**El ser humano ha generado 8.300 millones de toneladas de plástico**\n\nEstamos rodeados de plástico. Este inunda nuestra vida diaria en todo tipo de objetos –desde bolsas para hacer la compra hasta materiales de construcción e incluso ingredientes cosméticos, entre otros muchos productos–, y es que sus versátiles características y su bajo precio lo han convertido en un imprescindible para el ser humano. Sin embargo, no es oro todo lo que reluce: desde hace años, muchos expertos han puesto sobre la mesa que en realidad ese \"bajo precio\" se está convirtiendo en un coste muy alto a nivel medioambiental para el planeta.\n\nDe hecho, su producción se ha disparado de forma alarmante desde que se iniciara la fabricación a gran escala de materiales sintéticos a principios de los años 50. Y ya hay datos de ello: según un estudio realizado por un equipo científico de la Universidad de Georgia, la Universidad de California en Santa Bárbara y la Sea Education Association, todas ellas instituciones estadounidenses, los seres humanos hemos generado un total de 8.300 millones de toneladas de plástico.\n\nY lo más preocupante es que no hemos sido demasiado diestros a la hora de gestionar los residuos: porque de esos 8.300 millones de toneladas fabricadas, 6.300 millones son hoy en día residuos; y de estos, solo alrededor del 9% se ha reciclado, el 12% se ha incinerado y la escalofriante cifra del 79% yace acumulada en vertederos o en el medio ambiente. Este es el primer análisis global de la producción, el uso y el destino final que se ha dado a todos los plásticos que el ser humano ha fabricado desde la creación de este material hasta el año 2015.\n\nPara que te hagas una idea del plástico que hemos producido en todas estas décadas, su peso total sería equivalente, según destacan estos investigadores, al de 822.000 torres Eiffel, 25.000 Empire State, 80 millones de ballenas azules y 1.000 millones de elefantes.\n\nJenna Jambeck, coautora de esta investigación y profesora asociada de la Universidad de Georgia, explica que \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos que los humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar en extremo en los materiales que usamos y en nuestras prácticas de gestión de residuos\".\n\nCon el paso del tiempo, nos hemos ido haciendo más dependientes del plástico. De esta manera, si la producción mundial era de 2 millones de toneladas en 1950, en 2015, esta superó los 400 millones de toneladas, convirtiéndose en uno de los materiales más producidos por el ser humano. De hecho, del total de plástico producido entre 1950 y 2015, aproximadamente la mitad se ha generado en los últimos trece años.\n\nSu mayor mercado está en el sector del empaquetado y la mayor parte de esos productos son de un solo uso y luego se desechan. Además, su vida útil es muy breve.\n\nUno de los principales objetivos de este estudio es que se creen las bases necesarias para una gestión sostenible de los materiales. \"En pocas palabras, no se puede administrar lo que no se mide, por lo que pensamos que las discusiones sobre políticas a poner en marcha estarán más informadas y basadas en hechos ahora que tenemos estos números\", añade Geyer.\n\nRaquel de la Morena",
+            "explanation": "Ve directo a la cita de Jenna Jambeck, la investigadora de la Universidad de Georgia: \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos que los humanos han generado podrían estar con nosotros durante cientos o incluso miles de años\". Su preocupación es exactamente esa: el plástico no se degrada y permanece a nuestro alrededor como contaminante.\n\nLa opción D suena razonable, pero habla de \"hacer conciencia\", algo que la investigadora no dice; la pregunta pide lo que *ella* expresa, y eso está textual en la cita."
           },
           {
             "id": 71,
@@ -981,7 +1051,8 @@
               "D": "saber desde cuándo se originaron los desechos químicos y cómo se van degradando a largo plazo."
             },
             "answer": "C",
-            "context": "**El ser humano ha generado 8.300 millones de toneladas de plástico**\n\nEstamos rodeados de plástico. Este inunda nuestra vida diaria en todo tipo de objetos –desde bolsas para hacer la compra hasta materiales de construcción e incluso ingredientes cosméticos, entre otros muchos productos–, y es que sus versátiles características y su bajo precio lo han convertido en un imprescindible para el ser humano. Sin embargo, no es oro todo lo que reluce: desde hace años, muchos expertos han puesto sobre la mesa que en realidad ese \"bajo precio\" se está convirtiendo en un coste muy alto a nivel medioambiental para el planeta.\n\nDe hecho, su producción se ha disparado de forma alarmante desde que se iniciara la fabricación a gran escala de materiales sintéticos a principios de los años 50. Y ya hay datos de ello: según un estudio realizado por un equipo científico de la Universidad de Georgia, la Universidad de California en Santa Bárbara y la Sea Education Association, todas ellas instituciones estadounidenses, los seres humanos hemos generado un total de 8.300 millones de toneladas de plástico.\n\nY lo más preocupante es que no hemos sido demasiado diestros a la hora de gestionar los residuos: porque de esos 8.300 millones de toneladas fabricadas, 6.300 millones son hoy en día residuos; y de estos, solo alrededor del 9% se ha reciclado, el 12% se ha incinerado y la escalofriante cifra del 79% yace acumulada en vertederos o en el medio ambiente. Este es el primer análisis global de la producción, el uso y el destino final que se ha dado a todos los plásticos que el ser humano ha fabricado desde la creación de este material hasta el año 2015.\n\nPara que te hagas una idea del plástico que hemos producido en todas estas décadas, su peso total sería equivalente, según destacan estos investigadores, al de 822.000 torres Eiffel, 25.000 Empire State, 80 millones de ballenas azules y 1.000 millones de elefantes.\n\nJenna Jambeck, coautora de esta investigación y profesora asociada de la Universidad de Georgia, explica que \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos que los humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar en extremo en los materiales que usamos y en nuestras prácticas de gestión de residuos\".\n\nCon el paso del tiempo, nos hemos ido haciendo más dependientes del plástico. De esta manera, si la producción mundial era de 2 millones de toneladas en 1950, en 2015, esta superó los 400 millones de toneladas, convirtiéndose en uno de los materiales más producidos por el ser humano. De hecho, del total de plástico producido entre 1950 y 2015, aproximadamente la mitad se ha generado en los últimos trece años.\n\nSu mayor mercado está en el sector del empaquetado y la mayor parte de esos productos son de un solo uso y luego se desechan. Además, su vida útil es muy breve.\n\nUno de los principales objetivos de este estudio es que se creen las bases necesarias para una gestión sostenible de los materiales. \"En pocas palabras, no se puede administrar lo que no se mide, por lo que pensamos que las discusiones sobre políticas a poner en marcha estarán más informadas y basadas en hechos ahora que tenemos estos números\", añade Geyer.\n\nRaquel de la Morena"
+            "context": "**El ser humano ha generado 8.300 millones de toneladas de plástico**\n\nEstamos rodeados de plástico. Este inunda nuestra vida diaria en todo tipo de objetos –desde bolsas para hacer la compra hasta materiales de construcción e incluso ingredientes cosméticos, entre otros muchos productos–, y es que sus versátiles características y su bajo precio lo han convertido en un imprescindible para el ser humano. Sin embargo, no es oro todo lo que reluce: desde hace años, muchos expertos han puesto sobre la mesa que en realidad ese \"bajo precio\" se está convirtiendo en un coste muy alto a nivel medioambiental para el planeta.\n\nDe hecho, su producción se ha disparado de forma alarmante desde que se iniciara la fabricación a gran escala de materiales sintéticos a principios de los años 50. Y ya hay datos de ello: según un estudio realizado por un equipo científico de la Universidad de Georgia, la Universidad de California en Santa Bárbara y la Sea Education Association, todas ellas instituciones estadounidenses, los seres humanos hemos generado un total de 8.300 millones de toneladas de plástico.\n\nY lo más preocupante es que no hemos sido demasiado diestros a la hora de gestionar los residuos: porque de esos 8.300 millones de toneladas fabricadas, 6.300 millones son hoy en día residuos; y de estos, solo alrededor del 9% se ha reciclado, el 12% se ha incinerado y la escalofriante cifra del 79% yace acumulada en vertederos o en el medio ambiente. Este es el primer análisis global de la producción, el uso y el destino final que se ha dado a todos los plásticos que el ser humano ha fabricado desde la creación de este material hasta el año 2015.\n\nPara que te hagas una idea del plástico que hemos producido en todas estas décadas, su peso total sería equivalente, según destacan estos investigadores, al de 822.000 torres Eiffel, 25.000 Empire State, 80 millones de ballenas azules y 1.000 millones de elefantes.\n\nJenna Jambeck, coautora de esta investigación y profesora asociada de la Universidad de Georgia, explica que \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos que los humanos han generado podrían estar con nosotros durante cientos o incluso miles de años. Nuestras estimaciones subrayan la necesidad de pensar en extremo en los materiales que usamos y en nuestras prácticas de gestión de residuos\".\n\nCon el paso del tiempo, nos hemos ido haciendo más dependientes del plástico. De esta manera, si la producción mundial era de 2 millones de toneladas en 1950, en 2015, esta superó los 400 millones de toneladas, convirtiéndose en uno de los materiales más producidos por el ser humano. De hecho, del total de plástico producido entre 1950 y 2015, aproximadamente la mitad se ha generado en los últimos trece años.\n\nSu mayor mercado está en el sector del empaquetado y la mayor parte de esos productos son de un solo uso y luego se desechan. Además, su vida útil es muy breve.\n\nUno de los principales objetivos de este estudio es que se creen las bases necesarias para una gestión sostenible de los materiales. \"En pocas palabras, no se puede administrar lo que no se mide, por lo que pensamos que las discusiones sobre políticas a poner en marcha estarán más informadas y basadas en hechos ahora que tenemos estos números\", añade Geyer.\n\nRaquel de la Morena",
+            "explanation": "La autora no solo informa cifras: las presenta como \"alarmantes\" y \"escalofriantes\", cita a expertos que piden \"pensar en extremo en los materiales que usamos y en nuestras prácticas de gestión de residuos\" y cierra con la necesidad de una gestión sostenible. Todo apunta a concientizar al lector sobre el uso desmedido del plástico y la urgencia de manejar mejor los desechos.\n\nLas opciones B y D describen acciones de los investigadores (medir, conocer estadísticas), no la intención de la autora al escribir el artículo, que es mover al lector."
           },
           {
             "id": 72,
@@ -994,7 +1065,8 @@
               "C": "Allí se reunía la gente, allí se comía y se bebía.",
               "D": "Ahí todo se encontraba perfectamente ordenado por calles."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La oración principal es la que expresa la idea central y de la cual dependen las demás. Aquí es la primera: \"El mercado de Tlatelolco asombró a Cortés por su perfección y magnitud\". Todo lo que sigue —que funcionaba a diario, que llegaban productos de todas partes, que estaba ordenado por calles— son oraciones secundarias que explican y justifican *por qué* asombraba: detallan la perfección y la magnitud anunciadas.\n\nPrueba quitando la primera oración: el párrafo pierde su hilo; quita cualquiera de las otras y la idea central sigue intacta."
           },
           {
             "id": 73,
@@ -1007,7 +1079,8 @@
               "C": "Complemento circunstancial.",
               "D": "Complemento adnominal."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "\"En nuestro país\" responde a la pregunta *¿dónde?* respecto del verbo: ¿dónde tiene la cultura sexual gran relación con la religión católica? En nuestro país. Los complementos que indican lugar, tiempo, modo, causa, etc., son complementos circunstanciales; este es de lugar.\n\nNo es complemento directo ni indirecto porque no recibe la acción del verbo ni es su destinatario (no podrías sustituirlo por \"lo/la\" ni por \"le\"), y el adnominal complementa a un sustantivo, no al verbo."
           },
           {
             "id": 74,
@@ -1020,7 +1093,8 @@
               "C": "así que — para que — pues",
               "D": "y — de modo que — que"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Prueba el grupo D en los huecos: \"El Banco de México ya es autónomo **y** debe seguir siéndolo\" (suma dos afirmaciones del mismo nivel); \"...establecer la relación jurídica y política con esa institución, **de modo que** su operación no esté disociada...\" (introduce la finalidad/consecuencia, y concuerda con el subjuntivo \"esté\"); \"...los mecanismos de representación **que** son inherentes a la función pública\" (relativo que liga con \"mecanismos\").\n\nLa opción B falla en el primer hueco: \"ya es autónomo *por ello* debe seguir siéndolo\" establece una causa-consecuencia forzada donde solo hace falta coordinar con \"y\"."
           },
           {
             "id": 75,
@@ -1033,7 +1107,8 @@
               "C": "Ante el impacto de la actividad solar (como cualquier ente en el universo), la Tierra responde de varias maneras; en este caso lo hace mediante la actividad geomagnética (perturbaciones en el campo magnético terrestre). Ello sucede porque los campos magnéticos solar y terrestre interaccionan hasta que el último se deforma.",
               "D": "El campo magnético solar y el campo magnético terrestre interaccionan hasta que éste se deforma. Como cualquier ente en el universo, la Tierra responde de varias maneras ante el impacto de la actividad solar. Haciéndolo mediante la actividad geomagnética (esto es, perturbaciones que acontecen en el campo magnético terrestre)."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El párrafo A es el más claro y económico: cada oración aporta información nueva, sin repeticiones ni construcciones colgadas.\n\nLos demás tienen vicios de redacción: B repite innecesariamente (\"el campo magnético terrestre\" ya mencionado, y arranca con discordancia: \"El campo... se encuentran\"); C coloca mal el inciso \"(como cualquier ente en el universo)\", que parece referirse a la actividad solar y no a la Tierra; y D deja una oración sin verbo principal (\"Haciéndolo mediante la actividad geomagnética...\"), pues un gerundio no puede sostener una oración solo."
           },
           {
             "id": 76,
@@ -1046,7 +1121,8 @@
               "C": "En la reunión se abordarán tres asuntos: el diseño de un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; y la búsqueda de proveedores más cumplidos. También se harán propuestas para abrir nuevas sucursales.",
               "D": "En la reunión se abordarán tres asuntos: el diseño de un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; buscar proveedores más cumplidos; y también se harán propuestas para abrir nuevas sucursales."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La clave es el **paralelismo**: los elementos de una enumeración deben tener la misma forma gramatical. En C los tres asuntos son sustantivos: \"el diseño\", \"el seguimiento\", \"la búsqueda\", y la propuesta de sucursales queda correctamente fuera de la enumeración (\"También...\"), porque el texto anuncia *tres* asuntos, no cuatro.\n\nA y B mezclan infinitivos o interrogativas con sustantivos (\"diseñar... el seguimiento\", \"cómo diseñar... la búsqueda\"), y D rompe el paralelismo con \"buscar\" y además cuela un cuarto elemento en una lista anunciada de tres."
           },
           {
             "id": 77,
@@ -1059,7 +1135,8 @@
               "C": "Signos.",
               "D": "Resultados."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "*Vestigios* son las huellas o restos que quedan de algo que ya pasó o se destruyó. Si el papel fue consumido por las llamas, lo que Marta ve son sus **restos**: lo que sobrevivió de él.\n\n\"Pedazos\" (opción A) se antoja, pero un pedazo es un fragmento material de cualquier cosa, entera o no; \"restos\" recoge mejor la idea de lo que *queda después* de la destrucción, que es exactamente lo que significa vestigio."
           },
           {
             "id": 78,
@@ -1072,7 +1149,8 @@
               "C": "Solo — Sólo — Esté — Éste",
               "D": "Echo — Hecho — Uno — Huno"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Las palabras homófonas suenan igual pero se escriben distinto y significan cosas diferentes. Es el caso de *echo* (del verbo echar) y *hecho* (del verbo hacer), y de *uno* (número) y *huno* (pueblo antiguo): la *h* es muda, así que cada par suena idéntico.\n\nLa opción A (número/numero/numeró) y la C (solo/sólo, este/éste) no son homófonas: son las mismas palabras con distinta acentuación, y de hecho *suenan* diferente por la sílaba tónica o son distinciones solo gráficas de la misma palabra."
           },
           {
             "id": 79,
@@ -1085,7 +1163,8 @@
               "C": "y — y — y — y — ll",
               "D": "y — ll — y — ll — y"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Vamos palabra por palabra: **hayan** (del verbo *haber*, \"no hayan hecho la tarea\") va con *y*; **ayer** (adverbio de tiempo) va con *y*; **oyeron** (del verbo *oír*) va con *y*; **hallar** (encontrar, \"hallar el significado en un diccionario\") va con *ll*; y **castellanos** va con *ll*. El orden es y — y — y — ll — ll: opción A.\n\nEl par traicionero es *hayan/hallan*: aquí es el auxiliar de \"hecho\" (haber), no el verbo hallar; si fuera \"hallan\", significaría \"encuentran\", que no tiene sentido en la frase."
           },
           {
             "id": 80,
@@ -1098,7 +1177,8 @@
               "C": "Aunque parecía que Tláloc, dios azteca de la lluvia, favorece, sólo a algunos y, sólo a veces, la posibilidad de beber agua de cielo, no se esfuma, durante los meses que, no llueve, ni en las zonas de sequía, porque los sistemas de almacenamiento se adaptan a cada zona y etapa.",
               "D": "Aunque parecía que Tláloc, dios azteca de la lluvia, favorece sólo a algunos y sólo a veces, la posibilidad, de beber agua, de cielo, no se esfuma durante los meses que no llueve, ni en las zonas de sequía, porque los sistemas, de almacenamiento, se adaptan a cada zona y etapa."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En A las comas están donde deben: encierran la aposición \"dios azteca de la lluvia\" (una explicación intercalada), separan la larga oración concesiva inicial (\"Aunque parecía que... a veces,\") del resto, y no interrumpen nada que deba ir junto.\n\nLas demás opciones meten comas que rompen unidades inseparables: B separa el verbo de su subordinada (\"parecía, que\"), C aísla \"sólo a algunos\" y \"no llueve\" con comas que cortan el sentido, y D parte en pedazos \"la posibilidad de beber agua de cielo\" y \"los sistemas de almacenamiento\", frases que deben leerse de corrido."
           }
         ]
       },
@@ -1117,7 +1197,8 @@
               "C": "anatómico",
               "D": "estructural"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La teoría celular tiene varios postulados: la célula es la unidad **estructural** (todo ser vivo está hecho de células), la unidad **funcional** (en ella ocurren las reacciones que sostienen la vida) y la unidad de origen. Que las enzimas del ciclo de Krebs sean las mismas en todos los organismos aerobios significa que todas las células hacen la respiración **del mismo modo**: es una prueba de que la célula realiza las mismas funciones vitales en cualquier ser vivo, o sea el postulado funcional.\n\n\"Bioquímico\" suena tentador porque las enzimas son bioquímica, pero no es un postulado de la teoría celular; es solo el nivel en que se observa la evidencia."
           },
           {
             "id": 82,
@@ -1130,7 +1211,8 @@
               "C": "Luz.",
               "D": "$CO_2$."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En la fotosíntesis la planta toma $CO_2$ y agua y, con la energía de la luz, arma un azúcar:\n\n$$6CO_2 + 6H_2O + \\text{luz} \\rightarrow C_6H_{12}O_6 + 6O_2$$\n\nEse azúcar, la **glucosa**, es el producto donde queda guardada la energía; de ahí la planta saca ATP al respirarla o la almacena como almidón.\n\nLa clorofila no es el producto: es el pigmento que **captura** la luz, y el $CO_2$ y la luz son materia prima, no producto."
           },
           {
             "id": 83,
@@ -1143,7 +1225,8 @@
               "C": "Digestión.",
               "D": "Absorción."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Transformar materia inorgánica en orgánica es exactamente lo que hacen los organismos autótrofos: con $CO_2$, agua y sales minerales (inorgánicos) fabrican glucosa (orgánica). Esa función es la **fotosíntesis**.\n\nLa fotólisis es solo un paso dentro de ella (romper el agua para liberar electrones y $O_2$), y la digestión y la absorción hacen lo contrario: degradan materia orgánica ya hecha."
           },
           {
             "id": 84,
@@ -1156,7 +1239,8 @@
               "C": "Anafase, metafase, profase y telofase.",
               "D": "Profase, metafase, anafase y telofase."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El orden es **profase, metafase, anafase y telofase**, y lo puedes reconstruir por lo que pasa con los cromosomas:\n\n- Profase: se condensan los cromosomas y desaparece la envoltura nuclear.\n- Metafase: se alinean en el plano ecuatorial (\"metafase = mitad\").\n- Anafase: las cromátidas se separan y viajan a los polos.\n- Telofase: se forman los dos núcleos nuevos (\"telo = final\").\n\nOjo con la opción que empieza en interfase: la interfase no es una fase de la mitosis, es el periodo previo en el que la célula crece y duplica su ADN."
           },
           {
             "id": 85,
@@ -1169,7 +1253,8 @@
               "C": "idénticos.",
               "D": "diferentes."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La distribución independiente (segunda ley de Mendel) dice que los alelos de un gen se reparten en los gametos sin depender de cómo se reparten los de otro gen, porque los pares de cromosomas homólogos se orientan al azar en la meiosis I. Con dos genes salen $2^2 = 4$ combinaciones distintas ($AB$, $Ab$, $aB$, $ab$); con $n$ genes, $2^n$.\n\nResultado: los gametos son **diferentes** entre sí. Si escogiste \"idénticos\" estás describiendo la mitosis, no la meiosis."
           },
           {
             "id": 86,
@@ -1182,7 +1267,8 @@
               "C": "Insulina.",
               "D": "Miosina."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El ADN recombinante consiste en insertar un gen humano en un vector (un plásmido) y meterlo en bacterias o levaduras para que ellas produzcan la proteína. El caso clásico y el primero que llegó al mercado es la **insulina humana**, que antes se extraía del páncreas de cerdos y reses.\n\nHistona, hemoglobina y miosina son proteínas que el propio organismo fabrica; no se producen industrialmente por esta vía."
           },
           {
             "id": 87,
@@ -1195,7 +1281,8 @@
               "C": "evolución por la selección natural",
               "D": "panspermia"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La **herencia de los caracteres adquiridos** es la propuesta de Lamarck: el organismo se esfuerza y modifica su cuerpo según la necesidad (el cuello de la jirafa se alarga al estirarse), y ese cambio se hereda. Ahí está su limitación: supone una transformación con dirección y casi voluntaria, cuando lo que hoy sabemos es que las variaciones aparecen al azar antes de la presión del ambiente, y que los cambios del cuerpo no se transmiten a los gametos.\n\nLa selección natural queda descartada precisamente porque no atribuye voluntad al organismo, y abiogénesis y panspermia hablan del **origen** de la vida, no de su evolución."
           },
           {
             "id": 88,
@@ -1208,7 +1295,8 @@
               "C": "Genética de poblaciones.",
               "D": "Anatomía comparada."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La **genética de poblaciones** estudia el reservorio de alelos de una población y cómo cambian sus frecuencias generación tras generación por selección, mutación, migración y deriva génica. Es el área que traduce la evolución a números: ahí es donde se ve el cambio en frecuencia, distribución y herencia de los alelos.\n\nBiogeografía, paleontología y anatomía comparada también aportan pruebas de la evolución, pero trabajan con distribución de especies, fósiles y estructuras corporales, no con alelos."
           },
           {
             "id": 89,
@@ -1221,7 +1309,8 @@
               "C": "físicos — químicos",
               "D": "evolutivos — ecológicos"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Un ecosistema es, por definición, la comunidad de seres vivos más el medio físico donde habita. Por eso su dinámica depende de la interacción entre los factores **bióticos** (productores, consumidores, descomponedores, competencia, depredación) y los **abióticos** (luz, temperatura, agua, suelo, pH, nutrientes).\n\nLas otras opciones se quedan cortas: edáficos, atmosféricos, físicos y químicos son todos abióticos, o sea nada más la mitad del sistema."
           },
           {
             "id": 90,
@@ -1234,7 +1323,8 @@
               "C": "Comensalismo.",
               "D": "Depredación."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Compara el balance de cada relación: en el **comensalismo** uno gana y el otro queda igual $(+, 0)$; en el mutualismo ganan los dos $(+, +)$; en el parasitismo y la depredación uno gana a costa del otro $(+, -)$.\n\nEl enunciado describe justo \"uno se beneficia, el otro no se perjudica ni se beneficia\", así que es comensalismo. Ejemplo típico: el rémora que viaja pegado al tiburón y come sus sobras."
           }
         ]
       },
@@ -1253,7 +1343,8 @@
               "C": "Antigua.",
               "D": "Contemporánea."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La periodización clásica usa la caída de Constantinopla en **1453** como cierre de la Edad Media y arranque de la Edad **Moderna**, junto con otros hitos del mismo momento: la imprenta, el fin de la Guerra de los Cien Años y, cuarenta años después, la llegada de Colón a América.\n\nCuidado con el orden: la Edad Media **inicia** en 476 con la caída de Roma de Occidente, y la Contemporánea empieza mucho después, con la Revolución Francesa de 1789."
           },
           {
             "id": 92,
@@ -1266,7 +1357,8 @@
               "C": "lograron la igualdad económico-social entre la población.",
               "D": "favorecieron la mecanización de la agricultura."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Las revoluciones burguesas (la inglesa, la de independencia de Estados Unidos, la francesa) llevaron al poder a la burguesía y con ella a su programa económico: propiedad privada garantizada, libertad de contratación, fin de los gremios y de las aduanas internas, y un Estado que no interviene en el mercado. Eso es el **liberalismo económico**, la base jurídica sobre la que el capitalismo pudo consolidarse.\n\nEl mercantilismo no surge ahí: es justo el sistema **anterior**, proteccionista y controlado por la monarquía, contra el que estas revoluciones fueron."
           },
           {
             "id": 93,
@@ -1279,7 +1371,8 @@
               "C": "Napoleón III – Inglaterra",
               "D": "Carlos X – Francia"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El *Risorgimento* lo encabezaron el reino de Piamonte-Cerdeña, con **Víctor Manuel II** y Cavour, y **Giuseppe (José) Garibaldi** con sus camisas rojas. El enemigo a vencer era **Austria**, que dominaba Lombardía y Véneto y sostenía a los príncipes de la península; solo expulsándola podía unificarse Italia (1861-1870).\n\nCarlos Alberto sí fue rey de Piamonte y sí peleó contra Austria en 1848, pero no contra Prusia; Prusia es el rival de la unificación **alemana**, no de la italiana."
           },
           {
             "id": 94,
@@ -1292,7 +1385,8 @@
               "C": "la ideología burguesa.",
               "D": "el auge en las comunicaciones."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En la segunda mitad del siglo XIX la competencia entre empresas por colocar su producción se volvió brutal, y la salida fue eliminar competidores: fusiones, trusts, cárteles y monopolios que fijaban precios y se repartían zonas. Es decir, el capitalismo monopolista nace de la **lucha por los mercados**.\n\nEl expansionismo territorial se antoja, pero es la **consecuencia**: los monopolios ya formados empujaron al imperialismo para asegurar materias primas y mercados fuera de Europa."
           },
           {
             "id": 95,
@@ -1305,7 +1399,8 @@
               "C": "La invasión alemana a Rusia.",
               "D": "La Revolución Bolchevique."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Estados Unidos entró en abril de 1917 y el detonante fue la guerra submarina alemana sin restricciones, cuyo caso emblemático es el **hundimiento del Lusitania** (1915), donde murieron cerca de 128 estadounidenses; a eso se sumó el telegrama Zimmermann.\n\nEl asesinato del archiduque Francisco Fernando (1914) es la chispa de la guerra **en general**, no de la entrada estadounidense: sé fino con lo que pregunta el reactivo."
           },
           {
             "id": 96,
@@ -1318,7 +1413,8 @@
               "C": "Comunista.",
               "D": "Nacional Falangista."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El partido es el **Nacional Socialista** (NSDAP) de Hitler, en Alemania, país del centro de Europa. Su nombre y su propaganda prometían medidas \"socialistas\" para el obrero, pero en realidad respetó a los grandes industriales y usó el discurso solo para amarrar a las masas detrás de una supuesta unidad nacional-racial: de ahí lo de \"aparente\".\n\nBolcheviques y comunistas sí eran socialistas de verdad y eran internacionalistas, no nacionalistas; la Falange, además, es española, no del centro de Europa."
           },
           {
             "id": 97,
@@ -1331,7 +1427,8 @@
               "C": "Potsdam",
               "D": "Teherán"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En **Yalta** (febrero de 1945) se reunieron Roosevelt, Churchill y Stalin y ahí quedó acordado el trato a Alemania una vez vencida: rendición incondicional, desmilitarización, desnazificación, pago de reparaciones y reparto en cuatro zonas de ocupación, sumando a Francia a las tres potencias.\n\nPotsdam es el distractor fuerte: se celebró después (julio de 1945) y ahí se **pusieron en marcha** esos acuerdos, pero el reparto en cuatro zonas ya venía de Yalta. Teherán (1943) y Casablanca (1943) fueron antes y trataron la estrategia militar, no la posguerra."
           },
           {
             "id": 98,
@@ -1344,7 +1441,8 @@
               "C": "la economía centralmente planificada.",
               "D": "el escaso intercambio de mercancías con otros países."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El rasgo que define al bloque socialista es la **economía centralmente planificada**: el Estado es dueño de los medios de producción y un organismo central (el Gosplan en la URSS) decide qué, cuánto y a qué precio se produce, mediante planes quinquenales. Enfrente, el bloque capitalista deja esas decisiones al mercado y a la propiedad privada.\n\nLas otras opciones no distinguen: los soviéticos tuvieron innovación tecnológica de punta (carrera espacial) y también intervinieron en el tercer mundo, igual que Estados Unidos."
           },
           {
             "id": 99,
@@ -1357,7 +1455,8 @@
               "C": "expansión totalitarista.",
               "D": "descolonización mundial."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los tres casos son choques indirectos entre las dos superpotencias: Corea (1950-1953), la crisis de los misiles en Cuba (1962) y la Primavera de Praga (1968). Todos caen entre 1947 y 1991 y responden a la lógica de bloques, sin guerra abierta entre Estados Unidos y la URSS: eso es la **Guerra Fría**.\n\nLa Gran Depresión es de los años treinta y la expansión totalitaria es de antes de 1945, así que quedan fuera por fechas."
           },
           {
             "id": 100,
@@ -1370,7 +1469,8 @@
               "C": "industria del transporte e industria química.",
               "D": "industria textil e industria minera."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "**Biotecnología y robótica** son del siglo XX: la estructura del ADN se describe en 1953, de ahí salen el ADN recombinante y luego el Proyecto Genoma Humano, y los primeros robots industriales entran a las fábricas en los años sesenta.\n\nLas demás son más viejas: cine y fotografía son del XIX, y la industria textil, la minera, la química y el transporte moderno vienen de las revoluciones industriales de los siglos XVIII y XIX."
           }
         ]
       },
@@ -1389,7 +1489,8 @@
               "C": "Churrigueresco.",
               "D": "Mudéjar."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El **churrigueresco** es el barroco novohispano en su fase más exuberante, del siglo XVIII, y su sello inconfundible es la **columna estípite**: una pilastra en forma de pirámide invertida, cubierta de ornamento, que ya no sostiene nada, solo decora. Piensa en el Sagrario Metropolitano o en la fachada de Tepotzotlán.\n\nEl plateresco es del XVI y el neoclásico, de fines del XVIII, es lo opuesto: sobrio, con columnas clásicas y ornamento mínimo."
           },
           {
             "id": 102,
@@ -1402,7 +1503,8 @@
               "C": "Morelos.",
               "D": "Querétaro."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El plan era levantarse en octubre o diciembre de 1810, pero la conspiración de **Querétaro** —la que reunían Domínguez, Josefa Ortiz, Allende y Aldama— fue descubierta, y al enterarse Hidalgo tuvo que adelantar el movimiento a la madrugada del 16 de septiembre. Ahí está el \"de forma anticipada\" que pide el reactivo: el estado donde se destapó la conspiración y forzó el adelanto.\n\nSi contestaste Guanajuato pensaste en Dolores, el pueblo donde Hidalgo dio el grito; es el lugar del estallido, no el del hecho que lo anticipó."
           },
           {
             "id": 103,
@@ -1415,7 +1517,8 @@
               "C": "incorporar a México al libre comercio e industria.",
               "D": "suprimir los fueros y privilegios de la Iglesia."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Los centralistas (conservadores) desconfiaban de la soberanía de los estados y del voto amplio. Su proyecto, plasmado en las Siete Leyes de 1836, suprimió los estados y los convirtió en departamentos con gobernadores nombrados desde el centro, e impuso requisitos de ingresos para votar y ser electo: **restringir la participación popular** era su principio de fondo, junto con conservar los fueros del clero y del ejército.\n\nLas otras tres opciones describen el programa **liberal** y de plano el de la Reforma, que es lo contrario."
           },
           {
             "id": 104,
@@ -1428,7 +1531,8 @@
               "C": "sociales.",
               "D": "individuales."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La Constitución de 1857 es liberal y su primera parte se llama \"De los derechos del hombre\": libertad de trabajo, de expresión, de imprenta, de asociación y de tránsito, igualdad ante la ley, abolición de la esclavitud y de los títulos nobiliarios. Todas son garantías del **individuo** frente al Estado.\n\nLos derechos **sociales** llegan hasta la Constitución de 1917, con los artículos 27 y 123 sobre tierra y trabajo; si escogiste esa opción, te adelantaste sesenta años."
           },
           {
             "id": 105,
@@ -1441,7 +1545,8 @@
               "C": "Zapatismo.",
               "D": "Reyismo."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "*Regeneración* fue el periódico que fundaron Jesús y Ricardo Flores Magón en 1900, primero en la Ciudad de México y luego desde el exilio en Estados Unidos. Desde ahí el **magonismo**, de corte anarquista, atacó al régimen de Díaz y difundió el programa del Partido Liberal Mexicano de 1906, con demandas obreras y agrarias.\n\nZapatismo y carrancismo son ya de la etapa armada, después de 1910, y el reyismo fue una corriente dentro del propio régimen porfirista."
           },
           {
             "id": 106,
@@ -1454,7 +1559,8 @@
               "C": "régimen porfirista.",
               "D": "movimiento maderista."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Los tres elementos son la ruta de Francisco I. Madero: funda el **Partido Antirreeleccionista** con el lema \"Sufragio efectivo, no reelección\" (1909), lanza el **Plan de San Luis** convocando a levantarse el 20 de noviembre de 1910, y con los **Tratados de Ciudad Juárez** (mayo de 1911) obtiene la renuncia de Díaz. Todo eso es el **movimiento maderista**.\n\nEl zapatismo se separa después, justo porque Madero no cumplió con el reparto de tierras, y por eso Zapata proclama el Plan de Ayala."
           },
           {
             "id": 107,
@@ -1467,7 +1573,8 @@
               "C": "Lázaro Cárdenas.",
               "D": "Abelardo L. Rodríguez."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El Maximato (1928-1934) es el periodo en que **Plutarco Elías Calles**, ya como \"Jefe Máximo de la Revolución\", siguió mandando desde atrás del sillón presidencial: por la silla pasaron Portes Gil, Ortiz Rubio y Abelardo L. Rodríguez, pero las decisiones eran suyas.\n\nRodríguez es el distractor: fue presidente durante el Maximato, pero no era quien tenía el poder. El Maximato termina cuando Cárdenas expulsa a Calles del país en 1936."
           },
           {
             "id": 108,
@@ -1480,7 +1587,8 @@
               "C": "el fomento a la inversión.",
               "D": "la reforma agraria."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El sello del cardenismo (1934-1940) fue la **reforma agraria**: repartió alrededor de 18 millones de hectáreas, más que todos los gobiernos anteriores juntos, y lo hizo bajo la forma del **ejido** colectivo, como en La Laguna y Yucatán. Con eso cambió a la vez la estructura de la propiedad y la organización social del campo.\n\nJusto por eso la opción de \"destrucción del ejido\" es falsa: Cárdenas lo fortaleció. La educación de su época fue socialista, no fascista."
           },
           {
             "id": 109,
@@ -1493,7 +1601,8 @@
               "C": "militar.",
               "D": "populista."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Desde Carranza hasta Ávila Camacho los presidentes venían del ejército revolucionario. **Miguel Alemán** (1946-1952) fue el primero sin carrera militar: abogado egresado de la Universidad Nacional, con lo que arranca la etapa de los gobiernos **civiles**, ya con el partido como vía de ascenso en lugar de las armas.\n\n\"Populista\" no aplica: ese rasgo se asocia más a Cárdenas antes y a Echeverría y López Portillo después."
           },
           {
             "id": 110,
@@ -1506,7 +1615,8 @@
               "C": "Desarrollo estabilizador.",
               "D": "Desarrollo compartido."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "De 1970 a 1982 gobiernan Echeverría y López Portillo, y su política se llamó **desarrollo compartido**: la idea era mantener el crecimiento pero repartirlo mejor, con más gasto público, empresas paraestatales y endeudamiento externo. Terminó en inflación, fuga de capitales y la crisis de la deuda de 1982.\n\nEl **desarrollo estabilizador** es el distractor: es el modelo del periodo anterior, de 1954 a 1970, con crecimiento alto, inflación baja y el dólar fijo a \\$12.50."
           }
         ]
       },
@@ -1525,7 +1635,8 @@
               "C": "$\\land$",
               "D": "$\\lor$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Fíjate en la palabra que ya está en el enunciado: empieza con \"**O** el maestro no calificará...\". Ese \"o\" pide su pareja, y la estructura \"o... o...\" es una **disyunción**, que se simboliza $\\lor$.\n\nLa negación que ves en \"no calificará\" ya está adentro de la primera proposición: si $p$ es \"el maestro calificará minuciosamente\" y $q$ es \"nos anotará una calificación al azar\", la forma completa es $\\sim p \\lor q$. Lo que falta en el hueco es solo el conectivo que une las dos, o sea $\\lor$.\n\nLa opción $\\sim \\lor$ no existe como conectivo, y $\\land$ (\"y\") no pega con el \"o\" del inicio."
           },
           {
             "id": 112,
@@ -1538,7 +1649,8 @@
               "C": "mañana probaré otro platillo mexicano.",
               "D": "toda la comida mexicana es de mi preferencia."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El argumento es **inductivo**: parte de varios casos particulares (mole, tacos al pastor, pipián, mole de olla) y de ellos solo puedes sacar una conclusión probable, no una certeza. Una expectativa razonable a partir de esos casos es que el próximo platillo mexicano también te guste: **mañana probaré otro platillo mexicano**.\n\nLa opción \"toda la comida mexicana es de mi preferencia\" es la que más se antoja, pero es una generalización apresurada: cuatro platillos no autorizan a hablar de *toda* la cocina mexicana. Las otras dos meten información que no está en las premisas (alta gastronomía, aceptación mundial)."
           },
           {
             "id": 113,
@@ -1551,7 +1663,8 @@
               "C": "ad ignorantiam o por ignorancia.",
               "D": "ad baculum o por la fuerza."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La falacia **ad populum** consiste en apoyar una conclusión en el número de gente que la sostiene: \"muchos lo creen, entonces es verdad\". Es exactamente el paso que da el fragmento: como sus votantes son muchos, no pueden estar equivocados. El número de personas no es prueba de nada; una mayoría también se equivoca.\n\nNo es *ad baculum* porque no hay amenaza, ni *ad misericordiam* porque no apela a la lástima, ni *ad ignorantiam*, que sería concluir algo por la falta de pruebas en contra."
           },
           {
             "id": 114,
@@ -1564,7 +1677,8 @@
               "C": "Utilitarista.",
               "D": "Socrática."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La afirmación pone al **placer** como el único bien en sí mismo, y eso define al **hedonismo** (Epicuro, Aristipo): el placer es el criterio último de lo bueno y el dolor, de lo malo.\n\nEl utilitarismo es el distractor bueno: también valora el placer, pero no como bien intrínseco único, sino como medio para el fin que sí le importa, la mayor felicidad **del mayor número**. Aquí no se habla de nadie más que del placer mismo, así que es hedonista."
           },
           {
             "id": 115,
@@ -1577,7 +1691,8 @@
               "C": "Rocío decide regalar una blusa roja, otra verde y una azul.",
               "D": "Juan elige no estudiar para su examen y prefiere ir a participar en el juego de futbol de su equipo."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Hay responsabilidad moral cuando el sujeto **elige con libertad** entre opciones y su decisión **afecta valores o deberes**, con consecuencias que puede prever. El caso de Juan cumple las dos cosas: sabe que debe estudiar, puede hacerlo y aun así decide no cumplir con ese deber; asume las consecuencias de su elección.\n\nLos otros tres casos son elecciones sin carga moral: comprar una alcancía, escoger el color de una blusa o no conseguir el trabajo pese al esfuerzo. Ojo con el de Pedro: no hay responsabilidad porque el resultado no dependió de su voluntad."
           },
           {
             "id": 116,
@@ -1590,7 +1705,8 @@
               "C": "Conciencia y libertad.",
               "D": "Libertad y capacidad."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Para que un acto sea imputable a un agente moral se piden dos condiciones clásicas:\n\n- **Conciencia**: que sepa lo que hace, que conozca las circunstancias y las consecuencias previsibles de su acto.\n- **Libertad**: que pueda elegir entre alternativas, sin coacción externa que lo obligue.\n\nSi falla alguna, no hay responsabilidad: quien actúa por ignorancia invencible o bajo amenaza no responde igual.\n\n\"Autonomía\" se antoja, pero es más bien el resultado de tener conciencia y libertad —darse a sí mismo la norma—, no una condición aparte."
           },
           {
             "id": 117,
@@ -1603,7 +1719,8 @@
               "C": "Subjetivista.",
               "D": "Utilitarista."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El fragmento pone el criterio de lo valioso en el sujeto que decide: \"lo que ella decida estará bien\", \"el valor de la vida depende de quien está vivo\". Eso es **subjetivismo** moral: los valores no existen en el objeto ni son universales, valen según quien valora.\n\nEl objetivismo sería lo contrario (el valor está en la cosa misma y obliga a todos), y el utilitarismo tampoco encaja, porque juzgaría el acto por sus consecuencias para el mayor número, no por la decisión personal."
           },
           {
             "id": 118,
@@ -1616,7 +1733,8 @@
               "C": "ser evaluados como obras de arte de valor universal.",
               "D": "construir una teoría de la función social del arte mexicano."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Para el objetivismo estético el valor está **en la obra misma**, en sus propiedades: color, composición, luz, forma. Si el valor vive ahí y no en el gusto de quien mira, entonces cualquier espectador competente puede reconocerlo, y por eso la obra se **evalúa como arte de valor universal**.\n\nLa opción de los sentimientos del creador o del espectador es justo la postura contraria, la subjetivista; y el valor histórico o la función social son lecturas contextuales, no juicios basados en los elementos de la obra."
           },
           {
             "id": 119,
@@ -1629,7 +1747,8 @@
               "C": "La naturaleza humana pasa por la sensibilidad y la percepción para conocer el mundo.",
               "D": "El ser humano es un ser simbólico capaz de crear cultura, arte y religión."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La **ontología** es la parte de la filosofía que pregunta qué **es** algo, cuál es su ser o su esencia. La afirmación que dice que la naturaleza humana \"queda definida en sus **rasgos esenciales** por la racionalidad\" hace precisamente eso: define el ser del hombre.\n\nLas demás son de otras ramas: la libertad y la elección apuntan a la ética, y la sensibilidad y la percepción \"para conocer el mundo\" son tema de la epistemología."
           },
           {
             "id": 120,
@@ -1642,7 +1761,8 @@
               "C": "el sujeto y el objeto.",
               "D": "la bondad y la verdad."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Todo conocimiento supone dos polos: un **sujeto** que conoce y un **objeto** que es conocido, unidos por la relación cognoscitiva. Quita cualquiera de los dos y no hay conocimiento posible: sin objeto no hay qué conocer, sin sujeto no hay quién.\n\n\"Voluntad y representación\" suena filosófico porque es el título de la obra de Schopenhauer, pero no son los elementos del acto de conocer; y la bondad y la verdad son valores, no elementos."
           }
         ]
       }

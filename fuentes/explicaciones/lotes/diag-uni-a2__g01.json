@@ -1,0 +1,488 @@
+{
+ "lote": "diag-uni-a2__g01",
+ "examen": "diag-uni-a2.json",
+ "titulo": "Diagnóstico Universidad A2",
+ "materia": "Física + Matemáticas + Química",
+ "preguntas": [
+  {
+   "id": 1,
+   "texto": "Un automóvil se desplaza a velocidad constante de 25 m/s. ¿Qué distancia recorre en 8 segundos?",
+   "opciones": {
+    "A": "200 m",
+    "B": "33 m",
+    "C": "17 m",
+    "D": "125 m"
+   },
+   "clave": "A",
+   "tema": "Movimiento rectilíneo uniforme"
+  },
+  {
+   "id": 2,
+   "texto": "Un objeto parte del reposo con aceleración constante de 3 m/s². ¿Cuál es su velocidad después de 6 segundos?",
+   "opciones": {
+    "A": "2 m/s",
+    "B": "9 m/s",
+    "C": "18 m/s",
+    "D": "54 m/s"
+   },
+   "clave": "C",
+   "tema": "Movimiento uniformemente acelerado"
+  },
+  {
+   "id": 3,
+   "texto": "Si se aplica una fuerza neta de 45 N sobre un cuerpo de 9 kg, ¿cuál es su aceleración?",
+   "opciones": {
+    "A": "405 m/s²",
+    "B": "0.2 m/s²",
+    "C": "5 m/s²",
+    "D": "54 m/s²"
+   },
+   "clave": "C",
+   "tema": "Segunda Ley de Newton"
+  },
+  {
+   "id": 4,
+   "texto": "¿Cuál es la energía cinética de un cuerpo de 4 kg que se mueve a 10 m/s?",
+   "opciones": {
+    "A": "40 J",
+    "B": "400 J",
+    "C": "200 J",
+    "D": "20 J"
+   },
+   "clave": "C",
+   "tema": "Energía cinética"
+  },
+  {
+   "id": 5,
+   "texto": "Una roca de 2 kg se deja caer desde una altura de 20 m. Usando g = 10 m/s², ¿con qué velocidad llega al suelo? (Desprecia la fricción.)",
+   "opciones": {
+    "A": "10 m/s",
+    "B": "20 m/s",
+    "C": "200 m/s",
+    "D": "400 m/s"
+   },
+   "clave": "B",
+   "tema": "Conservación de la energía mecánica"
+  },
+  {
+   "id": 6,
+   "texto": "De acuerdo con la teoría cinética de los gases, la temperatura absoluta de un gas es una medida de:",
+   "opciones": {
+    "A": "La presión que ejerce el gas sobre las paredes del recipiente",
+    "B": "La energía cinética promedio de traslación de sus moléculas",
+    "C": "El número de moléculas presentes en el gas",
+    "D": "El volumen que ocupa el gas a presión constante"
+   },
+   "clave": "B",
+   "tema": "Teoría cinética de los gases"
+  },
+  {
+   "id": 7,
+   "texto": "La relación entre la velocidad de propagación (v), la frecuencia (f) y la longitud de onda (λ) de una onda es:",
+   "opciones": {
+    "A": "$$v = \\dfrac{f}{\\lambda}$$",
+    "B": "$$v = f + \\lambda$$",
+    "C": "$$v = f \\cdot \\lambda$$",
+    "D": "$$v = \\dfrac{\\lambda}{f}$$"
+   },
+   "clave": "C",
+   "tema": "Caracterización de ondas mecánicas"
+  },
+  {
+   "id": 8,
+   "texto": "Una resistencia de 6 Ω tiene una diferencia de potencial de 18 V en sus extremos. ¿Cuál es la corriente que circula por ella?",
+   "opciones": {
+    "A": "108 A",
+    "B": "24 A",
+    "C": "12 A",
+    "D": "3 A"
+   },
+   "clave": "D",
+   "tema": "Ley de Ohm"
+  },
+  {
+   "id": 9,
+   "texto": "Una plancha opera a 110 V y consume una corriente de 5 A. ¿Cuál es su potencia?",
+   "opciones": {
+    "A": "22 W",
+    "B": "115 W",
+    "C": "550 W",
+    "D": "500 W"
+   },
+   "clave": "C",
+   "tema": "Potencia eléctrica"
+  },
+  {
+   "id": 10,
+   "texto": "El principio de Arquímedes establece que un cuerpo sumergido en un fluido experimenta:",
+   "opciones": {
+    "A": "Una fuerza hacia abajo igual a su peso",
+    "B": "Una fuerza hacia arriba igual al peso del fluido desplazado",
+    "C": "Una presión igual a la presión atmosférica",
+    "D": "Una fuerza lateral igual a la presión hidrostática"
+   },
+   "clave": "B",
+   "tema": "Principio de Arquímedes"
+  },
+  {
+   "id": 11,
+   "texto": "Cuando un rayo de luz pasa de un medio menos denso a uno más denso, ¿qué le sucede a su velocidad de propagación?",
+   "opciones": {
+    "A": "Aumenta",
+    "B": "Se mantiene constante",
+    "C": "Disminuye",
+    "D": "Se hace cero"
+   },
+   "clave": "C",
+   "tema": "Reflexión y refracción de la luz"
+  },
+  {
+   "id": 12,
+   "texto": "El decaimiento radiactivo en el que un núcleo emite una partícula compuesta por dos protones y dos neutrones se denomina desintegración:",
+   "opciones": {
+    "A": "Beta",
+    "B": "Gamma",
+    "C": "Alfa",
+    "D": "Neutrónica"
+   },
+   "clave": "C",
+   "tema": "Decaimiento radiactivo"
+  },
+  {
+   "id": 13,
+   "texto": "Al simplificar la expresión $$5x - [3 - 2(x - 4)]$$ se obtiene:",
+   "opciones": {
+    "A": "$$7x - 11$$",
+    "B": "$$3x - 11$$",
+    "C": "$$7x + 5$$",
+    "D": "$$7x - 5$$"
+   },
+   "clave": "A",
+   "tema": "Expresiones algebraicas"
+  },
+  {
+   "id": 14,
+   "texto": "El valor de $$27^{\\frac{2}{3}}$$ es:",
+   "opciones": {
+    "A": "3",
+    "B": "6",
+    "C": "9",
+    "D": "18"
+   },
+   "clave": "C",
+   "tema": "Raíces y potencias con exponente racional"
+  },
+  {
+   "id": 15,
+   "texto": "El producto $$(2 + 3i)(2 - 3i)$$ es:",
+   "opciones": {
+    "A": "$$4 + 9i$$",
+    "B": "13",
+    "C": "$$-5$$",
+    "D": "$$4 - 9i$$"
+   },
+   "clave": "B",
+   "tema": "Números complejos — multiplicación"
+  },
+  {
+   "id": 16,
+   "texto": "La factorización de $$x^2 - 5x + 6$$ es:",
+   "opciones": {
+    "A": "$$(x + 2)(x + 3)$$",
+    "B": "$$(x - 1)(x - 6)$$",
+    "C": "$$(x - 2)(x - 3)$$",
+    "D": "$$(x + 2)(x - 3)$$"
+   },
+   "clave": "C",
+   "tema": "Factorización de trinomios"
+  },
+  {
+   "id": 17,
+   "texto": "El coeficiente del término que contiene $$x^3$$ en el desarrollo de $$(x + 2)^5$$ es:",
+   "opciones": {
+    "A": "10",
+    "B": "40",
+    "C": "80",
+    "D": "20"
+   },
+   "clave": "B",
+   "tema": "Binomio de Newton"
+  },
+  {
+   "id": 18,
+   "texto": "Al dividir el polinomio $$P(x) = x^3 - 3x^2 + x - 2$$ entre $$(x - 2)$$, el residuo es:",
+   "opciones": {
+    "A": "0",
+    "B": "2",
+    "C": "$$-4$$",
+    "D": "4"
+   },
+   "clave": "C",
+   "tema": "Teorema del residuo"
+  },
+  {
+   "id": 19,
+   "texto": "La solución de la ecuación $$3(2x - 1) = 2(x + 5) + 7$$ es:",
+   "opciones": {
+    "A": "$$x = 2$$",
+    "B": "$$x = 3$$",
+    "C": "$$x = 4$$",
+    "D": "$$x = 5$$"
+   },
+   "clave": "D",
+   "tema": "Ecuaciones de primer grado"
+  },
+  {
+   "id": 20,
+   "texto": "Las raíces de la ecuación $$x^2 - 7x + 12 = 0$$ son:",
+   "opciones": {
+    "A": "$$x = 2$$ y $$x = 6$$",
+    "B": "$$x = -3$$ y $$x = -4$$",
+    "C": "$$x = 3$$ y $$x = 4$$",
+    "D": "$$x = 1$$ y $$x = 12$$"
+   },
+   "clave": "C",
+   "tema": "Ecuaciones de segundo grado"
+  },
+  {
+   "id": 21,
+   "texto": "La solución de la desigualdad $$2x - 7 < x + 3$$ es:",
+   "opciones": {
+    "A": "$$x > 10$$",
+    "B": "$$x < 10$$",
+    "C": "$$x > -10$$",
+    "D": "$$x < -10$$"
+   },
+   "clave": "B",
+   "tema": "Desigualdades de primer grado"
+  },
+  {
+   "id": 22,
+   "texto": "La solución del sistema $$\\begin{cases}2x + y = 7\\\\x - y = 2\\end{cases}$$ es:",
+   "opciones": {
+    "A": "$$x = 3,\\ y = 1$$",
+    "B": "$$x = 2,\\ y = 3$$",
+    "C": "$$x = 1,\\ y = 5$$",
+    "D": "$$x = 4,\\ y = -1$$"
+   },
+   "clave": "A",
+   "tema": "Sistemas de ecuaciones lineales con dos incógnitas"
+  },
+  {
+   "id": 23,
+   "texto": "El dominio de la función $$f(x) = \\sqrt{9 - x^2}$$ es:",
+   "opciones": {
+    "A": "$$[-3, 3]$$",
+    "B": "$$(-3, 3)$$",
+    "C": "$$[0, 3]$$",
+    "D": "$$(-\\infty, 3]$$"
+   },
+   "clave": "A",
+   "tema": "Dominio de funciones algebraicas"
+  },
+  {
+   "id": 24,
+   "texto": "¿A cuántos radianes equivalen 270°?",
+   "opciones": {
+    "A": "$$\\frac{\\pi}{2}$$",
+    "B": "$$\\pi$$",
+    "C": "$$\\frac{3\\pi}{2}$$",
+    "D": "$$2\\pi$$"
+   },
+   "clave": "C",
+   "tema": "Medida de un ángulo — conversión"
+  },
+  {
+   "id": 25,
+   "texto": "En un triángulo rectángulo, si la hipotenusa mide 10 y el cateto opuesto al ángulo $$\\theta$$ mide 6, entonces $$\\text{sen}\\,\\theta$$ es:",
+   "opciones": {
+    "A": "$$\\frac{3}{4}$$",
+    "B": "$$\\frac{4}{5}$$",
+    "C": "$$\\frac{3}{5}$$",
+    "D": "$$\\frac{4}{3}$$"
+   },
+   "clave": "C",
+   "tema": "Razones trigonométricas"
+  },
+  {
+   "id": 26,
+   "texto": "Si $$\\cos\\theta = \\frac{3}{5}$$, entonces $$\\text{sen}^2\\theta$$ es:",
+   "opciones": {
+    "A": "$$\\frac{4}{25}$$",
+    "B": "$$\\frac{16}{25}$$",
+    "C": "$$\\frac{9}{25}$$",
+    "D": "$$\\frac{7}{25}$$"
+   },
+   "clave": "B",
+   "tema": "Identidades trigonométricas"
+  },
+  {
+   "id": 27,
+   "texto": "El valor de $$\\log_2 32$$ es:",
+   "opciones": {
+    "A": "4",
+    "B": "8",
+    "C": "6",
+    "D": "5"
+   },
+   "clave": "D",
+   "tema": "Funciones logarítmicas"
+  },
+  {
+   "id": 28,
+   "texto": "La distancia entre los puntos A(1, 2) y B(4, 6) es:",
+   "opciones": {
+    "A": "3",
+    "B": "4",
+    "C": "5",
+    "D": "7"
+   },
+   "clave": "C",
+   "tema": "Distancia entre dos puntos"
+  },
+  {
+   "id": 29,
+   "texto": "La pendiente de la recta que pasa por los puntos (2, 3) y (6, 11) es:",
+   "opciones": {
+    "A": "1/2",
+    "B": "2",
+    "C": "4",
+    "D": "8"
+   },
+   "clave": "B",
+   "tema": "Pendiente de una recta"
+  },
+  {
+   "id": 30,
+   "texto": "La ecuación $$x^2 + y^2 - 4x + 6y - 12 = 0$$ representa una circunferencia con radio:",
+   "opciones": {
+    "A": "3",
+    "B": "4",
+    "C": "5",
+    "D": "25"
+   },
+   "clave": "C",
+   "tema": "Circunferencia"
+  },
+  {
+   "id": 31,
+   "texto": "La ecuación de la parábola con vértice en el origen y foco en (0, 3) es:",
+   "opciones": {
+    "A": "$$y^2 = 12x$$",
+    "B": "$$x^2 = 12y$$",
+    "C": "$$x^2 = -12y$$",
+    "D": "$$y^2 = -12x$$"
+   },
+   "clave": "B",
+   "tema": "Parábola"
+  },
+  {
+   "id": 32,
+   "texto": "En la ecuación de la elipse $$\\frac{x^2}{25} + \\frac{y^2}{16} = 1$$, el semieje mayor mide:",
+   "opciones": {
+    "A": "4",
+    "B": "5",
+    "C": "9",
+    "D": "16"
+   },
+   "clave": "B",
+   "tema": "Elipse"
+  },
+  {
+   "id": 33,
+   "texto": "En la hipérbola $$\\frac{x^2}{9} - \\frac{y^2}{16} = 1$$, las pendientes de las asíntotas son:",
+   "opciones": {
+    "A": "$$\\pm\\frac{3}{4}$$",
+    "B": "$$\\pm\\frac{4}{3}$$",
+    "C": "$$\\pm 3$$",
+    "D": "$$\\pm 4$$"
+   },
+   "clave": "B",
+   "tema": "Hipérbola"
+  },
+  {
+   "id": 34,
+   "texto": "El valor del límite $$\\displaystyle\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}$$ es:",
+   "opciones": {
+    "A": "0",
+    "B": "2",
+    "C": "4",
+    "D": "Indefinido"
+   },
+   "clave": "C",
+   "tema": "Límites"
+  },
+  {
+   "id": 35,
+   "texto": "La derivada de $$f(x) = 3x^4 - 5x^2 + 2x - 7$$ es:",
+   "opciones": {
+    "A": "$$12x^3 - 10x + 2$$",
+    "B": "$$12x^3 - 5x + 2$$",
+    "C": "$$12x^4 - 10x + 2$$",
+    "D": "$$12x^3 - 10x$$"
+   },
+   "clave": "A",
+   "tema": "Obtención de derivadas"
+  },
+  {
+   "id": 36,
+   "texto": "La integral indefinida $$\\int (4x^3 - 6x)\\,dx$$ es:",
+   "opciones": {
+    "A": "$$12x^2 - 6 + C$$",
+    "B": "$$x^4 - 3x^2 + C$$",
+    "C": "$$4x^4 - 6x^2 + C$$",
+    "D": "$$x^4 - 3x + C$$"
+   },
+   "clave": "B",
+   "tema": "Integral inmediata"
+  },
+  {
+   "id": 37,
+   "texto": "El número de electrones en la capa de valencia del cloro (Z = 17) es:",
+   "opciones": {
+    "A": "5",
+    "B": "6",
+    "C": "7",
+    "D": "8"
+   },
+   "clave": "C",
+   "tema": "Configuraciones electrónicas"
+  },
+  {
+   "id": 38,
+   "texto": "La electronegatividad en la tabla periódica tiende a:",
+   "opciones": {
+    "A": "Aumentar de izquierda a derecha en un periodo y disminuir de arriba hacia abajo en un grupo",
+    "B": "Disminuir de izquierda a derecha en un periodo",
+    "C": "Aumentar de arriba hacia abajo en un grupo",
+    "D": "Permanecer constante dentro de un mismo periodo"
+   },
+   "clave": "A",
+   "tema": "Propiedades periódicas"
+  },
+  {
+   "id": 39,
+   "texto": "¿Cuántos átomos hay en 2 moles de oxígeno (O)?",
+   "opciones": {
+    "A": "$$6.022 \\times 10^{23}$$",
+    "B": "$$1.204 \\times 10^{24}$$",
+    "C": "$$3.011 \\times 10^{23}$$",
+    "D": "$$2.408 \\times 10^{24}$$"
+   },
+   "clave": "B",
+   "tema": "Mol"
+  },
+  {
+   "id": 40,
+   "texto": "Una solución acuosa con pH = 3 es:",
+   "opciones": {
+    "A": "Neutra",
+    "B": "Básica débil",
+    "C": "Ácida",
+    "D": "Básica fuerte"
+   },
+   "clave": "C",
+   "tema": "Ácidos y bases — pH"
+  }
+ ]
+}

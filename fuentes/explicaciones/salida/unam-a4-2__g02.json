@@ -1,0 +1,162 @@
+[
+ {
+  "id": 41,
+  "explanation": "Dividir entre una fracción es multiplicar por su recíproco: $\\frac{1}{10} \\div \\left(-\\frac{1}{2}\\right) = \\frac{1}{10} \\times (-2) = -\\frac{2}{10} = -\\frac{1}{5}$. El signo negativo se conserva porque positivo entre negativo da negativo.\n\nSi te dio $-\\frac{1}{20}$ (opción B), multiplicaste las fracciones en vez de dividir: el paso clave es voltear la segunda fracción antes de multiplicar."
+ },
+ {
+  "id": 42,
+  "explanation": "Puedes trabajar por dentro o por fuera de la raíz; lo más rápido es escribir $25 = 5^2$:\n\n$$\\sqrt{25^3} = \\sqrt{(5^2)^3} = \\sqrt{5^6} = 5^3 = 125$$\n\nOtra ruta: $\\sqrt{25^3} = (\\sqrt{25})^3 = 5^3 = 125$. La raíz cuadrada parte el exponente a la mitad, no lo elimina.\n\nSi elegiste 625 (opción D), calculaste $25^2$; y 25 (opción A) sería solo $\\sqrt{25^2}$."
+ },
+ {
+  "id": 43,
+  "explanation": "Aplica la distributiva término a término:\n\n$$(y-1)(y+2) = y^2 + 2y - y - 2 = y^2 + y - 2$$\n\nO usa el atajo del producto de binomios con término común: el término lineal lleva la suma $(-1) + 2 = 1$ y el constante lleva el producto $(-1)(2) = -2$.\n\nSi te salió $y^2 - 2$ (opción B), olvidaste los términos cruzados $2y$ y $-y$, que aquí no se cancelan."
+ },
+ {
+  "id": 44,
+  "explanation": "Factoriza numerador y denominador antes de simplificar. El numerador: $x^2 - 7x + 12 = (x-3)(x-4)$ (dos números que sumen $-7$ y multipliquen $12$). El denominador: $x^2 - 16 = (x-4)(x+4)$ por diferencia de cuadrados. Queda:\n\n$$\\frac{(x-3)(x-4)}{(x-4)(x+4)(x-3)} = \\frac{1}{x+4}$$\n\nSe cancelan $(x-3)$ y $(x-4)$ arriba y abajo, y solo sobrevive el $(x+4)$ del denominador."
+ },
+ {
+  "id": 45,
+  "explanation": "La fórmula general exige la forma $ax^2 + bx + c = 0$, con todo de un solo lado. Pasa $2x + 5$ restando:\n\n$$3x^2 - 2x - 5 = 0$$\n\nDe ahí se lee directo: $a = 3$, $b = -2$, $c = -5$.\n\nLa opción A ($a=3$, $b=2$, $c=5$) es la trampa clásica: leer los coeficientes tal como aparecen en $3x^2 = 2x + 5$ sin haber igualado a cero, con lo que se pierden los signos."
+ },
+ {
+  "id": 46,
+  "explanation": "Despeja como en una ecuación, pero cuidando el signo. Resta 4 en ambos lados:\n\n$$-3x > -12$$\n\nAhora divide entre $-3$: al dividir entre un número negativo la desigualdad **se voltea**:\n\n$$x < 4$$\n\nEso es el intervalo $(-\\infty, 4)$.\n\nSi llegaste a la opción A o algo con $x > \\ldots$, se te olvidó invertir el sentido de la desigualdad al dividir entre $-3$: es el error más común en este tema."
+ },
+ {
+  "id": 47,
+  "explanation": "Llama $c$ al precio del cuaderno y $l$ al del lapicero:\n\n$$5c + 8l = 115 \\qquad 3c + 5l = 70$$\n\nPara eliminar $l$, multiplica la primera por 5 y la segunda por 8: $25c + 40l = 575$ y $24c + 40l = 560$. Réstalas: $c = 15$.\n\nComprueba: con $c=15$, la segunda da $45 + 5l = 70$, o sea $l = 5$; y en la primera, $75 + 40 = 115$. Cada cuaderno cuesta \\$15."
+ },
+ {
+  "id": 48,
+  "explanation": "Una función polinomial no tiene restricciones: no hay denominadores que se anulen, ni raíces de negativos, ni logaritmos. Puedes sustituir cualquier número real y siempre obtienes resultado, así que el dominio es todos los reales: $(-\\infty, \\infty)$.\n\nLa opción A dice lo mismo pero con corchetes, $[-\\infty, \\infty]$, y eso es incorrecto: el infinito no es un número que se \"alcance\", así que siempre va con paréntesis."
+ },
+ {
+  "id": 49,
+  "explanation": "Reescríbela como $y = x^2 - 1$: es una ecuación de segundo grado en $x$ y de primer grado en $y$. Cuando solo una de las dos variables está al cuadrado, la curva es una parábola (esta abre hacia arriba, con vértice en $(0, -1)$).\n\nPara que fuera elipse o hipérbola necesitarías $x^2$ y $y^2$ juntas en la ecuación, y para recta ninguna de las dos al cuadrado."
+ },
+ {
+  "id": 50,
+  "explanation": "Resta con cuidado de signos: el signo menos afecta a **todo** $f(x)$.\n\n$$g(x) - f(x) = (7x + 5y - 11) - (2x - 3y + 5)$$\n$$= 7x + 5y - 11 - 2x + 3y - 5 = 5x + 8y - 16$$\n\nObserva que $-(-3y) = +3y$: por eso los términos en $y$ se suman.\n\nSi te dio $5x - 8y + 16$ (opción C), calculaste $f(x) - g(x)$, la resta al revés; y $9x + 2y - 6$ (opción A) resulta de sumar en vez de restar (con error de signo)."
+ },
+ {
+  "id": 51,
+  "explanation": "En la figura, la sombra mide 4 m sobre el piso y el ángulo de elevación (entre el piso y la línea que va a la punta del edificio) es de 30°. La altura $h$ es el cateto opuesto al ángulo y la sombra es el cateto adyacente, así que usas tangente:\n\n$$\\tan 30° = \\frac{h}{4} \\quad\\Rightarrow\\quad h = 4\\tan 30° = 4 \\cdot \\frac{1}{\\sqrt{3}} = \\frac{4}{\\sqrt{3}} \\text{ m}$$\n\nSi elegiste $\\frac{\\sqrt{3}}{4}$ (opción D), dividiste al revés: pusiste la sombra entre la altura en lugar de despejar $h$."
+ },
+ {
+  "id": 52,
+  "explanation": "La altura del poste es el cateto opuesto al ángulo de elevación y la sombra (1.5 m) es el adyacente, así que la razón indicada es la tangente:\n\n$$\\tan 60° = \\frac{h}{1.5} \\quad\\Rightarrow\\quad h = 1.5\\sqrt{3} = \\frac{3\\sqrt{3}}{2} \\text{ m}$$\n\n(Recuerda que $1.5 = \\frac{3}{2}$.)\n\nSi te dio $\\frac{3}{4}$ (opción B), usaste el coseno: $1.5 \\times \\frac{1}{2}$. El coseno no sirve aquí porque relaciona el adyacente con la hipotenusa, no con la altura."
+ },
+ {
+  "id": 53,
+  "explanation": "El logaritmo solo está definido para números **estrictamente positivos**: no existe $\\log(0)$ ni el logaritmo de un negativo. Por eso el dominio es $(0, \\infty)$, con paréntesis en ambos extremos: el 0 no se incluye y el infinito nunca se incluye.\n\nLa opción C, $[0, \\infty)$, es el distractor típico: mete al 0, pero $\\log(0)$ no existe (la gráfica tiene una asíntota vertical ahí, se va a $-\\infty$ sin tocar $x=0$)."
+ },
+ {
+  "id": 54,
+  "explanation": "El argumento del logaritmo debe ser estrictamente positivo:\n\n$$x - 2 > 0 \\quad\\Rightarrow\\quad x > 2$$\n\nEl dominio es $(2, \\infty)$. Es la misma gráfica de $\\log(x)$ pero recorrida 2 unidades a la derecha, con su asíntota vertical en $x = 2$.\n\nLa opción B, $[2, \\infty)$, incluye al 2, pero en $x = 2$ tendrías $\\log(0)$, que no existe: la desigualdad es estricta, así que va paréntesis."
+ },
+ {
+  "id": 55,
+  "explanation": "Usa la fórmula de distancia entre dos puntos:\n\n$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} = \\sqrt{(1-(-1))^2 + (-1-1)^2} = \\sqrt{2^2 + (-2)^2} = \\sqrt{4+4} = \\sqrt{8}$$\n\nCuidado con las restas de negativos: $1 - (-1) = 2$.\n\nSi te dio 2 (opción B), probablemente solo restaste una coordenada; y $\\sqrt{2}$ (opción C) sale de olvidar elevar al cuadrado las diferencias antes de sumar."
+ },
+ {
+  "id": 56,
+  "explanation": "Aplica la fórmula de distancia:\n\n$$d = \\sqrt{(-1-1)^2 + (-1-1)^2} = \\sqrt{(-2)^2 + (-2)^2} = \\sqrt{4+4} = \\sqrt{8} = 2\\sqrt{2}$$\n\nEl último paso es simplificar el radical: $\\sqrt{8} = \\sqrt{4 \\cdot 2} = 2\\sqrt{2}$.\n\nSi elegiste 2 (opción C), tomaste solo la diferencia de una coordenada; la distancia real es la diagonal, que siempre es mayor que cada cateto."
+ },
+ {
+  "id": 57,
+  "explanation": "La circunferencia con centro en el origen y radio $r$ tiene ecuación $x^2 + y^2 = r^2$. Con $r = 2$:\n\n$$x^2 + y^2 = 4 \\quad\\Longleftrightarrow\\quad x^2 + y^2 - 4 = 0$$\n\nDos cosas debían cumplirse: signo **más** entre $x^2$ y $y^2$ (el menos daría hipérbola, opciones C y D) y el término independiente igual a $r^2 = 4$, no a $r = 2$. La opción B cae justo en ese segundo error: usa el radio sin elevarlo al cuadrado."
+ },
+ {
+  "id": 58,
+  "explanation": "Con centro en el origen la ecuación es $x^2 + y^2 = r^2$. Aquí $r = \\sqrt{2}$, así que:\n\n$$r^2 = (\\sqrt{2})^2 = 2 \\quad\\Rightarrow\\quad x^2 + y^2 = 2$$\n\nLa opción B, $x^2 + y^2 = \\sqrt{2}$, es el distractor fuerte: pone el radio en el lugar donde va el radio **al cuadrado**. Y las opciones con $x^2 - y^2$ ni siquiera son circunferencias: el signo menos las convierte en hipérbolas."
+ },
+ {
+  "id": 59,
+  "explanation": "Fíjate en los cuadrados: solo la $y$ aparece elevada al cuadrado ($4y^2$), mientras que la $x$ es de primer grado. Cuando una sola de las variables está al cuadrado, la curva es una parábola; en este caso, como $x$ está despejada en términos de $y$, es una parábola horizontal (abre hacia un lado).\n\nCircunferencia, elipse e hipérbola necesitan $x^2$ **y** $y^2$ en la misma ecuación, y aquí falta el $x^2$."
+ },
+ {
+  "id": 60,
+  "explanation": "La forma canónica de la elipse es\n\n$$\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1$$\n\ndonde el centro es $(h, k)$: los números que se **restan** a $x$ y a $y$. Aquí $(x-2)^2$ y $(y-1)^2$ dan directamente el centro $(2, 1)$.\n\nLa opción D, $(12, 8)$, confunde el centro con los semiejes: $\\sqrt{144} = 12$ y $\\sqrt{64} = 8$ son las medidas de los semiejes, no las coordenadas del centro."
+ },
+ {
+  "id": 61,
+  "explanation": "La palabra clave es **diferencia**. La hipérbola es el lugar geométrico de los puntos cuya *diferencia* de distancias a dos focos es constante (en valor absoluto). Compárala con la elipse, que es igual pero con la **suma** de distancias constante: ese es justo el distractor C.\n\nPara no confundirte: circunferencia = distancia constante a *un* punto; parábola = equidistancia entre un punto y una recta; elipse = suma constante; hipérbola = diferencia constante."
+ },
+ {
+  "id": 62,
+  "explanation": "Solo hay una variable al cuadrado ($y^2$, no aparece $x^2$), así que es una parábola, no elipse: eso descarta B y C de entrada. Para ubicar el vértice, completa el cuadrado en $y$:\n\n$$y^2 + 2y = -4x - 16 \\quad\\Rightarrow\\quad (y+1)^2 = -4x - 15 = -4\\left(x + \\tfrac{15}{4}\\right)$$\n\nEl vértice queda en $\\left(-\\frac{15}{4}, -1\\right)$, que no es el origen: parábola con vértice fuera del origen. Que hubiera vértice en el origen exigiría que no sobraran términos lineales ni constante tras completar el cuadrado."
+ },
+ {
+  "id": 63,
+  "explanation": "Fíjate en los verbos: \"Visita, descarga, escucha y disfruta\" son imperativos dirigidos a ti, el lector. Cuando el texto busca que el receptor **haga algo** —visitar la página, consumir el contenido—, la función que predomina es la apelativa (también llamada conativa), típica de anuncios e invitaciones.\n\nNo es poética porque el texto no juega con el lenguaje por su belleza, sino que te da órdenes amables para que actúes."
+ },
+ {
+  "id": 64,
+  "explanation": "La función poética se reconoce cuando el lenguaje se usa de forma figurada, embelleciendo el mensaje más allá de su sentido literal. \"Su luna de miel fue un largo escalofrío\" es una metáfora: una luna de miel no puede ser literalmente un escalofrío; la frase condensa en una imagen la frialdad de esa relación.\n\nLa opción B, \"Rubia, angelical y tímida\", se antoja, pero es una enumeración descriptiva de rasgos: describe, no transforma el sentido de las palabras como lo hace la metáfora de C."
+ },
+ {
+  "id": 65,
+  "explanation": "El fragmento cuenta acciones que se suceden en el tiempo: la rana **pensó**, **comenzó** a peinarse y a vestirse... Hay un personaje que hace cosas y una secuencia de hechos: eso es narración.\n\nNo es descriptiva porque no se detiene a pintar cómo es la rana o el lugar, sino que avanza contando lo que hizo; y no es argumentativa porque nadie defiende una tesis con razones."
+ },
+ {
+  "id": 66,
+  "explanation": "El párrafo no se limita a informar: defiende una postura. Sostiene que \"debe ponerse énfasis en los aspectos de calidad y equidad\" y a partir de ahí propone medidas (dar continuidad al proceso educativo, reducir la reprobación, aumentar la secundaria). Cuando un texto toma posición y da razones o propuestas para sostenerla, el discurso es argumentativo.\n\nSería expositivo (opción B) si solo presentara datos sobre la educación sin ese \"debe hacerse\", que es la marca de la argumentación."
+ },
+ {
+  "id": 67,
+  "explanation": "La idea principal es la que engloba todo el texto, no un dato suelto. El artículo recorre las cifras de producción y residuos para desembocar en su mensaje central: los plásticos no se biodegradan, \"podrían estar con nosotros durante cientos o incluso miles de años\", y el estudio busca sentar \"las bases necesarias para una gestión sostenible de los materiales\". Es decir: hay que aprender a gestionar los residuos porque son una amenaza a futuro.\n\nLas opciones A, B y C son ciertas, pero cada una es un dato particular del texto (el empaquetado, los años 50, las ballenas azules), no la idea que lo articula todo."
+ },
+ {
+  "id": 68,
+  "explanation": "La pista está en la frase de Geyer al final del texto: \"no se puede administrar lo que no se mide\". Gestionar los residuos implica primero medirlos y conocerlos —qué basura generamos y en qué cantidades— para entonces poder clasificarla y reciclarla adecuadamente. Recuerda que el texto denuncia que solo el 9% del plástico se ha reciclado: la gestión busca revertir eso.\n\nLa opción A describe el problema (la dependencia del plástico), pero no dice en qué consisten las *prácticas de gestión*, que es lo que pregunta."
+ },
+ {
+  "id": 69,
+  "explanation": "El párrafo 6 da las cifras de crecimiento: de 2 millones de toneladas en 1950 a más de 400 millones en 2015, con la mitad del total producida en los últimos trece años. Uniendo eso con lo dicho antes (el 79% de los residuos yace en vertederos o en el medio ambiente), la deducción correcta es la C: la producción se disparó desde los años 50 y sus residuos están acumulados.\n\nLa opción A confunde un dato del párrafo 2 (las universidades del estudio son estadounidenses) con una generalización que el texto no hace sobre *todas* las investigaciones."
+ },
+ {
+  "id": 70,
+  "explanation": "Ve directo a la cita de Jenna Jambeck, la investigadora de la Universidad de Georgia: \"la mayoría de los plásticos no se biodegradan en ningún sentido, por lo que los residuos que los humanos han generado podrían estar con nosotros durante cientos o incluso miles de años\". Su preocupación es exactamente esa: el plástico no se degrada y permanece a nuestro alrededor como contaminante.\n\nLa opción D suena razonable, pero habla de \"hacer conciencia\", algo que la investigadora no dice; la pregunta pide lo que *ella* expresa, y eso está textual en la cita."
+ },
+ {
+  "id": 71,
+  "explanation": "La autora no solo informa cifras: las presenta como \"alarmantes\" y \"escalofriantes\", cita a expertos que piden \"pensar en extremo en los materiales que usamos y en nuestras prácticas de gestión de residuos\" y cierra con la necesidad de una gestión sostenible. Todo apunta a concientizar al lector sobre el uso desmedido del plástico y la urgencia de manejar mejor los desechos.\n\nLas opciones B y D describen acciones de los investigadores (medir, conocer estadísticas), no la intención de la autora al escribir el artículo, que es mover al lector."
+ },
+ {
+  "id": 72,
+  "explanation": "La oración principal es la que expresa la idea central y de la cual dependen las demás. Aquí es la primera: \"El mercado de Tlatelolco asombró a Cortés por su perfección y magnitud\". Todo lo que sigue —que funcionaba a diario, que llegaban productos de todas partes, que estaba ordenado por calles— son oraciones secundarias que explican y justifican *por qué* asombraba: detallan la perfección y la magnitud anunciadas.\n\nPrueba quitando la primera oración: el párrafo pierde su hilo; quita cualquiera de las otras y la idea central sigue intacta."
+ },
+ {
+  "id": 73,
+  "explanation": "\"En nuestro país\" responde a la pregunta *¿dónde?* respecto del verbo: ¿dónde tiene la cultura sexual gran relación con la religión católica? En nuestro país. Los complementos que indican lugar, tiempo, modo, causa, etc., son complementos circunstanciales; este es de lugar.\n\nNo es complemento directo ni indirecto porque no recibe la acción del verbo ni es su destinatario (no podrías sustituirlo por \"lo/la\" ni por \"le\"), y el adnominal complementa a un sustantivo, no al verbo."
+ },
+ {
+  "id": 74,
+  "explanation": "Prueba el grupo D en los huecos: \"El Banco de México ya es autónomo **y** debe seguir siéndolo\" (suma dos afirmaciones del mismo nivel); \"...establecer la relación jurídica y política con esa institución, **de modo que** su operación no esté disociada...\" (introduce la finalidad/consecuencia, y concuerda con el subjuntivo \"esté\"); \"...los mecanismos de representación **que** son inherentes a la función pública\" (relativo que liga con \"mecanismos\").\n\nLa opción B falla en el primer hueco: \"ya es autónomo *por ello* debe seguir siéndolo\" establece una causa-consecuencia forzada donde solo hace falta coordinar con \"y\"."
+ },
+ {
+  "id": 75,
+  "explanation": "El párrafo A es el más claro y económico: cada oración aporta información nueva, sin repeticiones ni construcciones colgadas.\n\nLos demás tienen vicios de redacción: B repite innecesariamente (\"el campo magnético terrestre\" ya mencionado, y arranca con discordancia: \"El campo... se encuentran\"); C coloca mal el inciso \"(como cualquier ente en el universo)\", que parece referirse a la actividad solar y no a la Tierra; y D deja una oración sin verbo principal (\"Haciéndolo mediante la actividad geomagnética...\"), pues un gerundio no puede sostener una oración solo."
+ },
+ {
+  "id": 76,
+  "explanation": "La clave es el **paralelismo**: los elementos de una enumeración deben tener la misma forma gramatical. En C los tres asuntos son sustantivos: \"el diseño\", \"el seguimiento\", \"la búsqueda\", y la propuesta de sucursales queda correctamente fuera de la enumeración (\"También...\"), porque el texto anuncia *tres* asuntos, no cuatro.\n\nA y B mezclan infinitivos o interrogativas con sustantivos (\"diseñar... el seguimiento\", \"cómo diseñar... la búsqueda\"), y D rompe el paralelismo con \"buscar\" y además cuela un cuarto elemento en una lista anunciada de tres."
+ },
+ {
+  "id": 77,
+  "explanation": "*Vestigios* son las huellas o restos que quedan de algo que ya pasó o se destruyó. Si el papel fue consumido por las llamas, lo que Marta ve son sus **restos**: lo que sobrevivió de él.\n\n\"Pedazos\" (opción A) se antoja, pero un pedazo es un fragmento material de cualquier cosa, entera o no; \"restos\" recoge mejor la idea de lo que *queda después* de la destrucción, que es exactamente lo que significa vestigio."
+ },
+ {
+  "id": 78,
+  "explanation": "Las palabras homófonas suenan igual pero se escriben distinto y significan cosas diferentes. Es el caso de *echo* (del verbo echar) y *hecho* (del verbo hacer), y de *uno* (número) y *huno* (pueblo antiguo): la *h* es muda, así que cada par suena idéntico.\n\nLa opción A (número/numero/numeró) y la C (solo/sólo, este/éste) no son homófonas: son las mismas palabras con distinta acentuación, y de hecho *suenan* diferente por la sílaba tónica o son distinciones solo gráficas de la misma palabra."
+ },
+ {
+  "id": 79,
+  "explanation": "Vamos palabra por palabra: **hayan** (del verbo *haber*, \"no hayan hecho la tarea\") va con *y*; **ayer** (adverbio de tiempo) va con *y*; **oyeron** (del verbo *oír*) va con *y*; **hallar** (encontrar, \"hallar el significado en un diccionario\") va con *ll*; y **castellanos** va con *ll*. El orden es y — y — y — ll — ll: opción A.\n\nEl par traicionero es *hayan/hallan*: aquí es el auxiliar de \"hecho\" (haber), no el verbo hallar; si fuera \"hallan\", significaría \"encuentran\", que no tiene sentido en la frase."
+ },
+ {
+  "id": 80,
+  "explanation": "En A las comas están donde deben: encierran la aposición \"dios azteca de la lluvia\" (una explicación intercalada), separan la larga oración concesiva inicial (\"Aunque parecía que... a veces,\") del resto, y no interrumpen nada que deba ir junto.\n\nLas demás opciones meten comas que rompen unidades inseparables: B separa el verbo de su subordinada (\"parecía, que\"), C aísla \"sólo a algunos\" y \"no llueve\" con comas que cortan el sentido, y D parte en pedazos \"la posibilidad de beber agua de cielo\" y \"los sistemas de almacenamiento\", frases que deben leerse de corrido."
+ }
+]

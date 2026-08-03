@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "La rapidez promedio es distancia entre tiempo, y lo primero es poner el tiempo en las unidades que piden las opciones: $3$ días $= 72$ h.\n\n$$v = \\frac{3.8\\times 10^{15}\\,\\text{km}}{72\\,\\text{h}} = 5.28\\times 10^{13}\\,\\frac{\\text{km}}{\\text{h}}$$\n\nQue redondeado es $5.3\\times 10^{13}\\,\\frac{\\text{km}}{\\text{h}}$. Fíjate que el número $5.3\\times 10^{13}$ aparece también en la opción A pero con unidades de km/día; si divides entre $3$ días te da $1.27\\times 10^{15}\\,\\frac{\\text{km}}{\\text{día}}$, que no es ninguna opción. La moraleja: en estos reactivos las unidades deciden.\n\nREVISAR: la distancia Tierra-Luna es $3.8\\times 10^{5}$ km, no $3.8\\times 10^{15}$; el exponente del enunciado está mal en la guía, aunque la opción B es la coherente con el dato tal como viene."
+ },
+ {
+  "id": 2,
+  "explanation": "La aceleración media solo mira el principio y el final, no lo que pasa en medio:\n\n$$a = \\frac{v_f - v_i}{t}$$\n\nLa velocidad pasó de $0$ a $4.8\\,\\frac{\\text{m}}{\\text{s}}$ y para eso ocupó las tres zancadas: $t = 3(0.8) = 2.4$ s. Entonces $a = \\dfrac{4.8}{2.4} = 2\\,\\frac{\\text{m}}{\\text{s}^2}$.\n\nSi te dio $6\\,\\frac{\\text{m}}{\\text{s}^2}$ usaste solo $0.8$ s, es decir, el tiempo de una zancada con el cambio de velocidad de las tres. Comprueba que el resultado es consistente: en cada zancada gana $1.6\\,\\frac{\\text{m}}{\\text{s}}$ en $0.8$ s, o sea $2\\,\\frac{\\text{m}}{\\text{s}^2}$ también."
+ },
+ {
+  "id": 3,
+  "explanation": "Como las fuerzas tienen la misma dirección pero sentidos contrarios, se restan: $F_{\\text{neta}} = 30 - 20 = 10$ N. Con la segunda ley de Newton,\n\n$$a = \\frac{F_{\\text{neta}}}{m} = \\frac{10\\,\\text{N}}{100\\,\\text{kg}} = 0.1\\,\\frac{\\text{m}}{\\text{s}^2}$$\n\nSi te salió $0.5\\,\\frac{\\text{m}}{\\text{s}^2}$ sumaste las fuerzas ($50$ N) en lugar de restarlas: eso sería válido solo si las dos jalaran hacia el mismo lado."
+ },
+ {
+  "id": 4,
+  "explanation": "Cuando la cuerda se rompe, el elevador y la caja caen juntos con la misma aceleración, $g$. La caja no \"aprieta\" el piso porque el piso va cayendo exactamente al mismo ritmo que ella: es el estado de ingravidez aparente.\n\nCon la segunda ley aplicada a la caja: $N - mg = -mg$ (porque su aceleración es $-g$), de donde $N = 0$ N.\n\nLa opción de $500$ N o $5\\,000$ N sale de calcular el peso $mg$, pero el peso es lo que la Tierra le hace a la caja, no lo que el piso le hace. Aquí preguntan por la fuerza normal, y esa vale cero."
+ },
+ {
+  "id": 5,
+  "explanation": "Sistema aislado y en reposo: el momento total antes vale cero, así que después también.\n\n$$m_{\\text{niño}} v_{\\text{niño}} = m_{\\text{carrito}} v_{\\text{carrito}}$$\n\n$$(30)(2) = m(12) \\;\\Rightarrow\\; m = \\frac{60}{12} = 5\\,\\text{kg}$$\n\nLos signos opuestos de las velocidades son justo lo que hace que la suma dé cero; por eso al despejar trabajas con las magnitudes. Si te dio $2.5$ kg dividiste entre $24$, o sea usaste la suma de las rapideces en vez de la del carrito."
+ },
+ {
+  "id": 6,
+  "explanation": "Las escalas Celsius y Kelvin tienen el mismo tamaño de grado; lo único que cambia es dónde ponen el cero. El cero absoluto está en $-273\\,°$C, así que para pasar a Kelvin solo recorres la escala $273$ unidades hacia arriba: $T_K = T_C + 273$.\n\nCompruébalo con el agua: hierve a $100\\,°$C, y $100 + 273 = 373$ K. La opción con $1.8$ y $32$ es la conversión Fahrenheit-Celsius, y no tiene nada que ver aquí."
+ },
+ {
+  "id": 7,
+  "explanation": "La definición que te dan —calor necesario **por gramo** y **por grado Celsius**— es exactamente la de la capacidad térmica específica, mejor conocida como calor específico. Su unidad lo delata: $\\frac{\\text{cal}}{\\text{g}\\cdot°\\text{C}}$.\n\nLa capacidad térmica a secas (opción A) es el calor que pide **todo** el cuerpo para subir un grado, sin dividir entre la masa: por eso depende de qué tan grande sea el objeto. Los calores latentes ni siquiera cambian la temperatura: son los del cambio de fase."
+ },
+ {
+  "id": 8,
+  "explanation": "La interferencia es consecuencia del **principio de superposición**: cuando dos ondas coinciden en el mismo punto, sus desplazamientos se suman algebraicamente. Si están en fase, las crestas se suman y la interferencia es constructiva; si están desfasadas media longitud de onda, cresta y valle se cancelan y es destructiva.\n\nLa amplitud (opción A) te dice qué tan grande resulta la onda combinada, pero no explica por qué se suman o se cancelan. Y ser longitudinales o transversales no importa: ambos tipos de onda interfieren."
+ },
+ {
+  "id": 9,
+  "explanation": "El campo eléctrico se define como la fuerza por unidad de carga de prueba:\n\n$$E = \\frac{F}{q}$$\n\nAsí que sus unidades son newton entre coulomb, $\\frac{\\text{N}}{\\text{C}}$.\n\nOjo con $\\frac{\\text{N}}{\\text{kg}}$: esa es la del campo **gravitacional**, donde divides entre masa en vez de carga. Y $\\frac{\\text{J}}{\\text{s}}$ es el watt, unidad de potencia."
+ },
+ {
+  "id": 10,
+  "explanation": "Arquímedes es el del empuje: todo cuerpo sumergido total o parcialmente en un fluido recibe una fuerza hacia arriba igual al peso del fluido que desaloja. Por eso flotan los barcos y por eso te sientes ligero en la alberca.\n\nCuidado con confundir los tres principios de fluidos que suelen ir juntos: la opción de los émbolos es Pascal aplicado a la prensa hidráulica, la del fluido que se acelera al angostarse el conducto es Bernoulli, y la de la presión que se transmite igual en todas direcciones es el principio de Pascal."
+ },
+ {
+  "id": 11,
+  "explanation": "En la estructura de una nota periodística, la línea que va **debajo** del encabezado y en letra más chica —\"Las autoridades recomiendan a la población evitar las zonas afectadas\"— amplía o complementa el titular: eso es la bajada (o balazo, según el manual de estilo).\n\nDistínguelas por su lugar: el antetítulo va **arriba** del titular, el encabezado es el título en grande (\"ESTE MIÉRCOLES SE ESPERAN VARIAS MARCHAS...\"), y la entrada o lead es ya el primer párrafo de la nota, el que abre con \"Ciudad de México, México...\" y responde las preguntas básicas."
+ },
+ {
+  "id": 12,
+  "explanation": "El texto dramático está escrito para ser representado, no leído por un narrador. Por eso la voz que en la novela contaría las cosas aquí desaparece: todo se sabe por lo que dicen los personajes, y lo que no se puede decir en diálogo va en las **acotaciones**, esas indicaciones entre paréntesis o en cursiva sobre gestos, entradas, salidas y escenografía.\n\nLa opción C se antoja porque los actos sí son parte de la obra dramática, pero la echa a perder \"necesitar un narrador\": es justo lo contrario."
+ },
+ {
+  "id": 13,
+  "explanation": "Lo propio del texto poético es expresar el mundo interior —un sentimiento, una emoción, un pensamiento— y hacerlo con un lenguaje trabajado: metáforas, símiles, hipérboles, personificaciones, es decir, figuras retóricas.\n\nRelatar hechos de forma objetiva es lo del texto narrativo o periodístico, y persuadir al lector es función del texto argumentativo. En la poesía lo que importa no es informar, sino cómo está dicho."
+ },
+ {
+  "id": 14,
+  "explanation": "Cuenta las sílabas del verso: Yo-sé-los-nom-bres-ex-tra-ños $=$ 8 sílabas.\n\nAhora aplica la regla del acento final: \"extraños\" es palabra grave, así que el conteo se queda igual (si terminara en aguda sumarías una, y en esdrújula restarías una). Ocho sílabas métricas: es un **octosílabo**, el metro clásico del romance y el que Martí usa en sus *Versos sencillos*.\n\nSi te salió heptasílabo, probablemente hiciste sinalefa donde no la hay: entre \"los\" y \"nombres\" no puede haber, porque la sinalefa solo une vocales."
+ },
+ {
+  "id": 15,
+  "explanation": "El género épico narra hazañas de héroes que suelen inspirarse en figuras históricas o legendarias y que encarnan los valores de todo un pueblo: pensemos en la *Ilíada*, el *Cantar de mío Cid* o el *Poema de Gilgamesh*.\n\nEl lírico expresa sentimientos íntimos y el dramático está hecho para representarse en escena. La opción D, \"narrativo\", tienta porque la épica sí narra, pero la narrativa es la categoría amplia y moderna; lo que define lo heroico y colectivo del enunciado es la épica."
+ },
+ {
+  "id": 16,
+  "explanation": "Juan Valera, autor de *Pepita Jiménez*, es una de las figuras del Realismo español del siglo XIX, junto con Galdós, Clarín y Pereda.\n\nLos otros tres son de otras épocas: Unamuno y Machado pertenecen a la Generación del 98 y del 27 respectivamente, ya en el siglo XX, y Camilo José Cela es de la posguerra —autor de *La familia de Pascual Duarte* y Premio Nobel en 1989."
+ },
+ {
+  "id": 17,
+  "explanation": "La literatura contemporánea es la del siglo XX en adelante, y ahí caben los dos de la opción C: Jorge Ibargüengoitia (mexicano, *Los relámpagos de agosto*) y José Saramago (portugués, *Ensayo sobre la ceguera*, Nobel 1998).\n\nLas demás mezclan siglos: Calderón es del Barroco español y Sor Juana también; Mary Shelley y Flaubert son del XIX, igual que Dostoyevski y Wilde. La clave para descartar es que **los dos** autores tienen que ser contemporáneos, no solo uno."
+ },
+ {
+  "id": 18,
+  "explanation": "El cuento es una narración breve, de pocos personajes y una sola línea de acción, en la que caben tanto lo real como lo fantástico: es el molde donde el ser humano ha dado forma a sus fantasías.\n\nLos otros no son narraciones de ficción breve: la crónica relata hechos reales en orden temporal, el ensayo expone y argumenta una idea del autor, y la comedia es una obra dramática, escrita para el escenario."
+ },
+ {
+  "id": 19,
+  "explanation": "Arma la frase por partes. La novela **narra** una historia con narrador y personajes, así que su género es el narrativo. Está escrita en **prosa**, no en verso. Y a diferencia del cuento, su extensión le permite varias tramas, muchos personajes y saltos en el tiempo: una estructura **compleja**.\n\nLa opción B pega en \"compleja\", pero falla en dos: la épica clásica sí iba en verso, pero la novela moderna no."
+ },
+ {
+  "id": 20,
+  "explanation": "El formato APA sigue este orden: **autor, año entre paréntesis, título, editorial**. La opción B es la única que lo respeta: Dosal, Ma. Rosario. et al. (2009). *Lengua Española. Español IV*. Publicaciones cultural.\n\nLa opción A tiene los mismos datos pero con el año al final y el apellido en versalitas: ese es el estilo tradicional o MLA, no APA. Las otras dos revuelven el orden, poniendo el título o la editorial antes del autor."
+ },
+ {
+  "id": 21,
+  "explanation": "El bronce es una **aleación** de cobre y estaño, y las aleaciones son mezclas: los metales conservan su identidad, no se combinan químicamente en proporciones fijas. Como no distingues sus componentes ni con microscopio —se ve una sola fase, del mismo color en todas partes—, es una mezcla **homogénea**.\n\nSi contestaste \"compuesto\" es porque le viste cara de sustancia única, pero para ser compuesto necesitarías enlaces químicos y una fórmula fija, y el bronce se puede preparar con distintas proporciones de cobre y estaño."
+ },
+ {
+  "id": 22,
+  "explanation": "Mendeleev acomodó los elementos en orden creciente de **masa atómica** (1869), y al hacerlo notó que las propiedades se repetían periódicamente. Con esa idea dejó huecos y hasta predijo las propiedades de elementos aún no descubiertos, como el germanio.\n\nEl número atómico se antoja porque es el criterio de la tabla que usas hoy, pero eso llegó después: fue Moseley, en 1913, quien lo midió y corrigió con él las pocas parejas que a Mendeleev le quedaban en desorden."
+ },
+ {
+  "id": 23,
+  "explanation": "La diferencia de electronegatividad entre los dos átomos es lo que decide el tipo de enlace. Si esa diferencia es cero, ninguno jala más fuerte los electrones que el otro: el par compartido queda justo en medio y no se forman polos. Eso es un enlace **covalente no polar**, el de moléculas como $H_2$, $O_2$ o $Cl_2$.\n\nEl iónico está en el otro extremo (diferencia grande, arriba de $1.7$, y transferencia de electrones), y el puente de hidrógeno ni siquiera es un enlace entre átomos de una misma molécula, sino una atracción intermolecular."
+ },
+ {
+  "id": 24,
+  "explanation": "La regla es: óxidos de **no metales** $+$ agua $\\rightarrow$ ácidos; óxidos de **metales** $+$ agua $\\rightarrow$ bases. El carbono es no metal, así que\n\n$$CO_2 + H_2O \\rightarrow H_2CO_3$$\n\nque es el ácido carbónico, el de los refrescos.\n\nLos otros tres son óxidos metálicos: $Na_2O$, $MgO$ y $FeO$ producen hidróxidos, o sea bases, como $NaOH$ o $Mg(OH)_2$. Con solo ver a qué lado de la tabla periódica cae el elemento ya puedes descartar."
+ },
+ {
+  "id": 25,
+  "explanation": "Primero saca la masa molar del $KCl$ sumando las masas atómicas: $K = 39$ y $Cl = 35.5$, así que $M = 74.5\\,\\frac{\\text{g}}{\\text{mol}}$.\n\nLuego usa $m = n \\times M$:\n\n$$m = (0.1\\,\\text{mol})\\left(74.5\\,\\frac{\\text{g}}{\\text{mol}}\\right) = 7.45 \\approx 7.5\\,\\text{g}$$\n\nSi te salió $0.75$ o $75$, el error fue de punto decimal: multiplicar por $0.1$ es correr el punto un lugar a la izquierda, no dos."
+ },
+ {
+  "id": 26,
+  "explanation": "El agua disuelve tanto porque su molécula es **polar**: el oxígeno jala los electrones y queda con carga parcial negativa, mientras los hidrógenos quedan positivos. Ese dipolo rodea a los iones de un soluto y los separa. Además, las moléculas de agua forman **puentes de hidrógeno** entre sí y con muchos solutos, lo que le permite acomodar y estabilizar sustancias polares.\n\nLos electrones compartidos por sí solos no explican nada: cualquier molécula covalente los tiene, incluidas las que no disuelven casi nada, como el aceite."
+ },
+ {
+  "id": 27,
+  "explanation": "La escala de pH va al revés de lo que uno esperaría para los $OH^-$: entre más alto el pH, más básica es la disolución y por lo tanto **mayor** la concentración de iones hidroxilo. De $0$ a $7$ es ácida, $7$ es neutra y de $7$ a $14$ es básica.\n\nEntonces el valor más alto, $13$, es el de mayor $[OH^-]$. Si escogiste $2$, respondiste la pregunta de $H^+$: ese sí es el más ácido, el de mayor concentración de hidrógenos."
+ },
+ {
+  "id": 28,
+  "explanation": "Los contaminantes **primarios** son los que se emiten directamente a la atmósfera, sin transformarse antes. Los que salen de escapes, chimeneas y de cualquier combustión son sobre todo los óxidos de **carbono** ($CO$ y $CO_2$) y de **nitrógeno** ($NO$ y $NO_2$), además del $SO_2$.\n\nEl plomo y el mercurio son contaminantes, sí, pero se emiten como metales o partículas, no como los óxidos característicos de la quema de combustibles; y el calcio de la opción A no es contaminante atmosférico."
+ },
+ {
+  "id": 29,
+  "explanation": "Todo aminoácido tiene dos grupos funcionales: un amino ($-NH_2$) y un **carboxilo** ($-COOH$). El enlace peptídico se forma justamente entre ellos, de aminoácidos distintos: el $-OH$ del carboxilo y un $H$ del amino se van juntos como una molécula de agua, y queda el enlace $-CO-NH-$.\n\nPor eso es una reacción de condensación o síntesis por deshidratación: por cada enlace peptídico formado, se libera un $H_2O$."
+ },
+ {
+  "id": 30,
+  "explanation": "El signo de $\\Delta H$ te dice la dirección de la energía: si es **negativo**, la reacción es exotérmica y desprende calor; si es positivo, es endotérmica y lo absorbe. Con eso ya descartas B y C.\n\nEntre las dos negativas, la que más energía libera es la de mayor valor absoluto: $-395.7$ desprende más que $-110.5\\,\\frac{\\text{kJ}}{\\text{mol}}$.\n\nEl truco está en no dejarse llevar por \"el número más grande\" viendo solo la cifra: $+52.5$ es el mayor de todos como número, pero significa energía absorbida, no desprendida."
+ },
+ {
+  "id": 31,
+  "explanation": "La Geografía moderna ya no se conforma con decir dónde están las cosas: su objeto es **explicar la relación** entre los elementos naturales (relieve, clima, agua, vegetación) y los sociales (población, economía, cultura) que interactúan en un mismo espacio.\n\nLocalizar sobre la superficie terrestre (opción D) fue la finalidad de la geografía descriptiva de los primeros tiempos; hoy es apenas el punto de partida. Por eso la respuesta que integra ambos tipos de elementos es la que corresponde a la geografía actual."
+ },
+ {
+  "id": 32,
+  "explanation": "Para México se usa la proyección **cónica**, porque es la que menos deforma en las latitudes medias, que es donde cae el país (entre los $14°$ y los $33°$ norte). Imagina un cono apoyado sobre el globo: toca la esfera a lo largo de un paralelo de esa zona y ahí la distorsión es mínima.\n\nLa cilíndrica (como la de Mercator) funciona mejor cerca del ecuador y exagera muchísimo las áreas hacia los polos; la polar y la azimutal se usan para las regiones polares o para mapas centrados en un punto."
+ },
+ {
+  "id": 33,
+  "explanation": "La Sierra Madre del Sur corre paralela a la costa del Pacífico, desde el sur de Jalisco y Michoacán hasta el Istmo de Tehuantepec, y su tramo principal atraviesa **Guerrero y Oaxaca**.\n\nNo la confundas con la Sierra Madre Oriental, que es la que baja por Veracruz y Tlaxcala del lado del Golfo, ni con la Sierra Madre de Chiapas, que ya está del otro lado del Istmo. El apellido \"del Sur\" se refiere al sur del Pacífico mexicano."
+ },
+ {
+  "id": 34,
+  "explanation": "Sonora es, por mucho, el primer productor nacional de **cobre**: ahí está Cananea (Buenavista del Cobre), la mina a cielo abierto más grande del país, junto con La Caridad. Entre las dos aportan la mayor parte del cobre mexicano.\n\nEn plata el primer lugar lo pelean Zacatecas y Chihuahua, y en hierro destacan Michoacán y Colima. Si dudas, recuerda la asociación directa: Sonora - Cananea - cobre."
+ },
+ {
+  "id": 35,
+  "explanation": "La taiga o bosque boreal es el bioma de coníferas (pinos, abetos, alerces) que ocupa una franja continua en las latitudes altas del hemisferio norte: **norte de Europa** —Escandinavia, Finlandia, Rusia europea— y **norte de Asia**, es decir Siberia, además de Canadá y Alaska.\n\nDescarta rápido las otras: al sur de Europa hay bosque mediterráneo, al norte de África está el Sahara, y en el hemisferio sur no hay masas continentales suficientes en esas latitudes frías para que se forme taiga."
+ },
+ {
+  "id": 36,
+  "explanation": "La densidad es habitantes entre superficie, así que los estados de baja densidad son los que tienen mucho territorio y poca gente. **Baja California Sur** es el caso extremo del país (alrededor de $10$ hab/km$^2$) y **Quintana Roo** también queda entre los más bajos, con su población concentrada en unos pocos puntos turísticos.\n\nMorelos es justo lo contrario: es de los estados más densos, por chiquito y poblado. Veracruz y Oaxaca tienen mucha población total, pero eso no es lo mismo que densidad: siempre divide entre la superficie."
+ },
+ {
+  "id": 37,
+  "explanation": "El Índice de Desarrollo Humano del PNUD combina tres dimensiones, una por cada cosa que hace posible una vida digna: **salud**, medida con la esperanza de vida al nacer; **educación**, medida con alfabetismo y años de escolaridad; e **ingreso**, medido con el PIB o ingreso per cápita.\n\nLas otras opciones mezclan indicadores puramente económicos o financieros —deuda externa, inflación, inversión— que hablan de la economía de un país, pero no de las condiciones de vida de su gente, que es lo que el IDH quiere medir."
+ },
+ {
+  "id": 38,
+  "explanation": "El sector terciario es el de los servicios: comercio, transporte, turismo, banca, educación, salud, gobierno. En México **emplea a más de la mitad de la población ocupada** y aporta cerca de dos terceras partes del PIB; por eso es el más importante.\n\nLas otras opciones no explican esa importancia: requerir mano de obra calificada es falso para buena parte del sector (mucho del comercio y los servicios son de baja calificación, incluso informales), y estar regulado por el gobierno no lo vuelve más relevante económicamente."
+ },
+ {
+  "id": 39,
+  "explanation": "La porcicultura se instala donde está su alimento, porque el cerdo se engorda con grano. El **Bajío** —Guanajuato, Jalisco, Michoacán, Querétaro— es la gran región productora de **cereales** del país (maíz, sorgo, trigo), y ahí mismo se concentra la crianza de cerdos; Jalisco y Guanajuato encabezan la producción nacional.\n\nLos forrajes y pastos de las otras opciones son alimento de ganado bovino, no porcino: la ganadería extensiva del norte es de reses, precisamente porque ahí lo que hay son pastizales."
+ },
+ {
+  "id": 40,
+  "explanation": "La **Sonda de Campeche** es la zona marina del sureste del Golfo de México donde se ubican los campos que producen la mayor parte del petróleo y el gas del país, entre ellos Cantarell y Ku-Maloob-Zaap.\n\nPoza Rica y Ciudad Madero son zonas petroleras, sí, pero terrestres, en Veracruz y Tamaulipas; la pregunta pide expresamente una zona **marítima**. Con ese filtro se descartan solas."
+ }
+]

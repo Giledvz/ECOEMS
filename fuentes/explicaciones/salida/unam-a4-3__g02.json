@@ -1,0 +1,162 @@
+[
+ {
+  "id": 41,
+  "explanation": "Para invertir una función, escribe $y = 2x + 6$ y despeja $x$: primero pasas el $6$ restando, $y - 6 = 2x$, y luego divides entre $2$, $x = \\frac{y-6}{2}$. Al final intercambias los nombres de las variables:\n\n$$f^{-1}(x) = \\frac{x-6}{2}$$\n\nComprueba: $f(2) = 10$ y $f^{-1}(10) = \\frac{10-6}{2} = 2$. Regresaste al punto de partida, que es justo lo que hace una inversa.\n\nSi elegiste $\\frac{x+6}{2}$, moviste el $6$ sin cambiarle el signo; y $\\frac{1}{2x+6}$ no es la inversa sino el recíproco: el exponente $-1$ en $f^{-1}$ no significa \"uno entre\"."
+ },
+ {
+  "id": 42,
+  "explanation": "La conversión sale de que $180° = \\pi$ radianes, así que multiplicas los grados por $\\frac{\\pi}{180°}$:\n\n$$60° \\cdot \\frac{\\pi}{180°} = \\frac{\\pi}{3}$$\n\nUna forma rápida de tenerlo en la cabeza: $\\frac{\\pi}{6} = 30°$, $\\frac{\\pi}{4} = 45°$, $\\frac{\\pi}{3} = 60°$ y $\\frac{\\pi}{2} = 90°$. Entre más grande el denominador, más chico el ángulo; por eso $\\frac{\\pi}{6}$ no puede ser $60°$."
+ },
+ {
+  "id": 43,
+  "explanation": "En el triángulo, respecto de $\\theta$ el cateto adyacente mide $2$, el opuesto mide $3$ y la hipotenusa $\\sqrt{13}$ (checa: $2^2 + 3^2 = 13$).\n\nLa secante es la recíproca del coseno, así que va hipotenusa entre cateto adyacente:\n\n$$\\sec\\theta = \\frac{1}{\\cos\\theta} = \\frac{\\text{hipotenusa}}{\\text{adyacente}} = \\frac{\\sqrt{13}}{2}$$\n\nSi te fuiste por $\\frac{\\sqrt{13}}{3}$, ésa es la cosecante (hipotenusa entre el cateto opuesto); y $\\frac{2}{\\sqrt{13}}$ es el coseno sin invertir."
+ },
+ {
+  "id": 44,
+  "explanation": "Aquí no hay ángulo recto, así que se usa la ley de senos: cada lado es proporcional al seno del ángulo que se le opone.\n\n$$\\frac{a}{\\mathrm{sen}\\,A} = \\frac{c}{\\mathrm{sen}\\,C}$$\n\nEl lado que buscas se opone al ángulo de $40°$ y el lado conocido de $20$ m se opone al de $100°$. Despejas y sustituyes con los valores que te dan:\n\n$$a = \\frac{20\\,(\\mathrm{sen}\\,40°)}{\\mathrm{sen}\\,100°} = \\frac{20(0.64)}{0.98} = \\frac{12.8}{0.98} \\approx 13.05\\ \\text{m}$$\n\nTiene sentido: el lado buscado se opone a un ángulo más chico que $100°$, así que debe medir menos que $20$ m. Si te dio $30.64$, invertiste la razón ($\\frac{20(0.98)}{0.64}$); si usaste los cosenos, saliste con $16.10$.\n\nREVISAR: en la figura solo aparece rotulado el ángulo de $100°$ en $C$; el ángulo de $40°$ en $A$ no está marcado, aunque los datos del enunciado y la clave lo suponen. Además el enunciado pide \"el lado p\" y la figura etiqueta ese lado como $a$."
+ },
+ {
+  "id": 45,
+  "explanation": "Se trata de escribir el $81$ como potencia de $3$: $3^1 = 3$, $3^2 = 9$, $3^3 = 27$, $3^4 = 81$. Como las bases ya son iguales, los exponentes también tienen que serlo:\n\n$$3^x = 3^4 \\;\\Rightarrow\\; x = 4$$\n\nSi marcaste $27$, confundiste el exponente con el resultado de $3^3$: la incógnita es el exponente, no la potencia."
+ },
+ {
+  "id": 46,
+  "explanation": "Recuerda que $\\log_{10} N$ pregunta \"¿a qué potencia elevo $10$ para obtener $N$?\". Entonces $\\log_{10} 1000 = 3$ porque $10^3 = 1000$, y $\\log_{10} 10 = 1$ porque $10^1 = 10$. La suma es $3 + 1 = 4$.\n\nTambién puedes usar la propiedad $\\log a + \\log b = \\log(ab)$: $\\log_{10}(1000 \\cdot 10) = \\log_{10} 10000 = 4$.\n\nSi marcaste $3$, se te olvidó sumar el segundo término; $13$ sale de pegar los dígitos en lugar de sumarlos."
+ },
+ {
+  "id": 47,
+  "explanation": "El punto medio es simplemente el promedio de las coordenadas:\n\n$$M = \\left(\\frac{x_1+x_2}{2},\\ \\frac{y_1+y_2}{2}\\right) = \\left(\\frac{2+6}{2},\\ \\frac{8+4}{2}\\right) = (4, 6)$$\n\nComprueba mentalmente: $4$ queda entre $2$ y $6$, y $6$ queda entre $8$ y $4$. Por eso $(8,12)$ no puede ser: son las sumas sin dividir entre $2$, y el punto ni siquiera cae dentro del segmento."
+ },
+ {
+  "id": 48,
+  "explanation": "Lee dos puntos claros de la recta. Corta al eje $y$ en $(0,-1)$, así que la ordenada al origen es $b = -1$. Y pasa por $(2, 0)$, donde cruza el eje $x$.\n\nCon esos dos puntos, la pendiente es\n\n$$m = \\frac{0 - (-1)}{2 - 0} = \\frac{1}{2}$$\n\nSustituyendo en $y = mx + b$ queda $y = \\frac{x}{2} - 1$.\n\nOjo con las opciones de pendiente $\\frac{3}{2}$: la recta sube muy despacio (avanza $2$ a la derecha por cada $1$ que sube), así que su pendiente tiene que ser menor que $1$; y como sube de izquierda a derecha, la pendiente es positiva."
+ },
+ {
+  "id": 49,
+  "explanation": "La gráfica muestra dos ramas separadas que abren hacia la izquierda y hacia la derecha, con dos asíntotas cruzadas: eso es una hipérbola de eje horizontal, cuya forma canónica es $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$. Como los vértices están en $(1,0)$ y $(-1,0)$, tienes $a = 1$, y las asíntotas a $45°$ dicen que $b = 1$:\n\n$$x^2 - y^2 = 1$$\n\nDescarta $x^2 + y^2 = 1$: esa suma es una circunferencia de radio $1$, curva cerrada, no dos ramas abiertas. Y $x^2 - y^2 = -1$ también es hipérbola, pero abriría hacia arriba y hacia abajo, con vértices sobre el eje $y$."
+ },
+ {
+  "id": 50,
+  "explanation": "Un polinomio es continuo en todos los reales, así que el límite se calcula sustituyendo directamente el valor al que tiende $x$:\n\n$$\\lim_{x\\to 3}(2x^2 - 5x + 1) = 2(3)^2 - 5(3) + 1 = 18 - 15 + 1 = 4$$\n\nNo hay que factorizar ni racionalizar nada: eso solo se necesita cuando la sustitución da una indeterminación como $\\frac{0}{0}$. Si te dio $10$, elevaste al cuadrado después de multiplicar por $2$ ($6^2 = 36$ no aplica aquí): primero la potencia, luego el producto."
+ },
+ {
+  "id": 51,
+  "explanation": "El texto expositivo busca que el lector *entienda* algo: presenta información sobre un tema con claridad, orden y objetividad, sin tomar partido. Así son los artículos de divulgación, los libros de texto y las enciclopedias.\n\nCuidado con \"convencer al lector\": ésa es la función del texto argumentativo. Expositivo informa; argumentativo persuade."
+ },
+ {
+  "id": 52,
+  "explanation": "El texto dramático está escrito para ser representado, y por eso se organiza en **actos** (las grandes divisiones de la obra), **escenas** (las partes de un acto, marcadas por la entrada o salida de personajes) y **acotaciones** (las indicaciones del autor sobre escenografía, gestos o tono, normalmente entre paréntesis o en cursivas).\n\n\"Narrador, ambiente y trama\" pertenece al género narrativo, y ahí está la trampa: en el drama no hay narrador, los personajes hablan por sí mismos."
+ },
+ {
+  "id": 53,
+  "explanation": "La comedia es el subgénero dramático que presenta conflictos ligeros o situaciones ridículas de personajes comunes, con la intención de provocar la risa, y termina bien para el protagonista: desenlace feliz.\n\nEl final trágico e inevitable, junto con los personajes de alta condición, es lo propio de la tragedia; justo el contraste con la comedia."
+ },
+ {
+  "id": 54,
+  "explanation": "El nombre del verso viene del número de sílabas métricas que tiene: octosílabo son $8$, decasílabo $10$, endecasílabo $11$ y alejandrino $14$ (dividido en dos hemistiquios de $7$).\n\nAsí que once sílabas es **endecasílabo**, el verso del soneto clásico. La raíz te ayuda: *endeca-* es \"once\" en griego."
+ },
+ {
+  "id": 55,
+  "explanation": "Nadie te dijo algo literalmente un millón de veces: es una exageración deliberada para dar énfasis, y a eso se le llama **hipérbole**.\n\nNo es metáfora porque no se sustituye un término por otro por semejanza, ni símil porque no hay comparación con \"como\". La clave está en que el recurso es el tamaño desmedido de la cifra."
+ },
+ {
+  "id": 56,
+  "explanation": "El género **lírico** es el de la expresión de la subjetividad: el poeta manifiesta sus sentimientos, emociones y estados de ánimo, casi siempre en verso. Ahí entran la oda, la elegía, el soneto.\n\nEl épico narra hazañas de héroes, el narrativo cuenta historias en prosa y el dramático está hecho para representarse en escena. La palabra que decide aquí es \"sentimientos\"."
+ },
+ {
+  "id": 57,
+  "explanation": "El Romanticismo del siglo XIX surge como reacción contra el Neoclasicismo: en vez de razón, medida y reglas, pone por delante el **sentimiento**, la **libertad** creadora y política, la individualidad y la naturaleza como espejo del estado de ánimo del yo.\n\nLa exaltación de la razón y el orden clásico es precisamente lo que el Romanticismo rechaza (eso es Neoclasicismo), y la representación objetiva de la realidad social es Realismo, que viene después."
+ },
+ {
+  "id": 58,
+  "explanation": "Sor Juana Inés de la Cruz escribió en la Nueva España del siglo XVII, y su obra tiene los rasgos típicos del **Barroco**: lenguaje complejo, juegos conceptuales, hipérbatos y contrastes. Por eso se le ubica en el Barroco novohispano.\n\nEl Romanticismo mexicano y el Modernismo son de los siglos XIX y XX: quedan siglos después de ella."
+ },
+ {
+  "id": 59,
+  "explanation": "Sonreír es una acción humana, y aquí se le atribuye a la luna. Cuando se le dan cualidades o acciones propias de personas a un objeto, animal o idea, la figura es la **personificación** (o prosopopeya).\n\nNo es hipérbaton, que consiste en alterar el orden normal de las palabras; el orden de este verso es perfectamente natural."
+ },
+ {
+  "id": 60,
+  "explanation": "El narrador en primera persona usa el \"yo\": está dentro de la historia, es uno de los personajes, y cuenta solo lo que vive, ve o sabe. Por eso su visión es limitada y muchas veces parcial.\n\nConocer los pensamientos de todos los personajes es propio del narrador omnisciente, que va en tercera persona; ésa es la confusión más común aquí."
+ },
+ {
+  "id": 61,
+  "explanation": "La Tierra no es una esfera perfecta: gira sobre su eje, y esa rotación la achata en los polos y la ensancha en el ecuador. Además su superficie es irregular por el reparto desigual de masa. A esa forma propia y única se le llama **geoide**.\n\n\"Esferoide perfecto\" se antoja, pero justamente la palabra *perfecto* es la que sobra: el radio ecuatorial es unos kilómetros mayor que el polar."
+ },
+ {
+  "id": 62,
+  "explanation": "La Tierra da un giro completo de $360°$ en $24$ horas. Si repartes esos grados entre las horas:\n\n$$\\frac{360°}{24} = 15°$$\n\nPor eso hay **24 husos horarios de $15°$ cada uno**, y moverte un huso equivale a cambiar una hora. La opción de $12$ franjas de $30°$ cubre los $360°$, pero daría dos horas de diferencia por franja, que no corresponde con el reloj."
+ },
+ {
+  "id": 63,
+  "explanation": "El Eje Neovolcánico Transversal cruza el centro del país de oeste a este, del Pacífico al Golfo, y en él se concentran los volcanes más importantes y activos de México: Popocatépetl, Iztaccíhuatl, Colima, Pico de Orizaba, Nevado de Toluca.\n\nSu importancia es geológica, no fronteriza: la frontera con Guatemala la marcan el río Suchiate y el Usumacinta, no esta sierra."
+ },
+ {
+  "id": 64,
+  "explanation": "Los ríos se agrupan por la vertiente a la que desembocan. El Lerma-Santiago desagua en Nayarit y el Balsas en la costa de Guerrero-Michoacán: ambos terminan en el **Océano Pacífico**.\n\nA la vertiente del Golfo de México pertenecen el Pánuco, el Papaloapan, el Coatzacoalcos y el Grijalva-Usumacinta. Si dudaste, ubica la desembocadura en el mapa: es lo único que define la vertiente."
+ },
+ {
+  "id": 65,
+  "explanation": "La Península de Yucatán está en latitudes bajas, es plana y de escasa altitud, así que se mantiene cálida todo el año, con lluvias concentradas en verano: clima **tropical (cálido subhúmedo) con lluvias en verano**.\n\nNo puede ser templado húmedo ni frío de alta montaña porque no hay elevación que baje la temperatura, y tampoco desértico: ese clima está en el noroeste, no en el sureste."
+ },
+ {
+  "id": 66,
+  "explanation": "La capa de ozono se encuentra en la estratosfera y funciona como filtro: absorbe la mayor parte de la **radiación ultravioleta** del Sol, que en dosis altas daña la piel, los ojos y el ADN de los seres vivos.\n\nNo la confundas con el efecto invernadero: ése tiene que ver con la radiación infrarroja que la Tierra reemite y con gases como el $CO_2$. Son dos problemas ambientales distintos."
+ },
+ {
+  "id": 67,
+  "explanation": "La transición demográfica describe cómo una población pasa de un régimen antiguo, con natalidad y mortalidad **altas** (y por eso crecimiento lento), a un régimen moderno con natalidad y mortalidad **bajas**. En medio hay una etapa clave: la mortalidad baja primero, gracias a la salud y la alimentación, y la natalidad tarda en bajar; ahí ocurre la explosión demográfica.\n\nPor eso la opción de \"alta natalidad y baja mortalidad\" no es el proceso completo, sino solo la etapa intermedia."
+ },
+ {
+  "id": 68,
+  "explanation": "El sector **primario** es el que obtiene recursos directamente de la naturaleza, sin transformarlos: agricultura, ganadería, pesca, silvicultura y minería.\n\nEl secundario los transforma (industria, construcción) y el terciario presta servicios (comercio, transporte, turismo). La pregunta clave es: ¿de dónde sale la materia prima? Si sale del suelo, del mar o del monte, es primario."
+ },
+ {
+  "id": 69,
+  "explanation": "La ONU nace en 1945, al terminar la Segunda Guerra Mundial, y su Carta lo dice desde el primer propósito: **mantener la paz y la seguridad internacionales**, además de promover la cooperación y los derechos humanos.\n\nRegular el comercio le toca a la OMC y financiar el desarrollo al Banco Mundial y al FMI; son organismos distintos, aunque varios estén vinculados al sistema de la ONU."
+ },
+ {
+  "id": 70,
+  "explanation": "El noroeste (Sonora, Sinaloa, Baja California y Baja California Sur) es una zona árida o semiárida, pero con grandes distritos de riego que la volvieron la región agrícola más productiva del país: trigo, hortalizas, sorgo. Por su vecindad con Estados Unidos, también concentra **industria maquiladora** de exportación.\n\nLa producción petrolera y petroquímica corresponde al sureste y al Golfo, no al noroeste."
+ },
+ {
+  "id": 71,
+  "explanation": "Los seres vivos comparten funciones como reproducción, metabolismo, irritabilidad (responder a estímulos), crecimiento, homeostasis y adaptación.\n\nLa **cristalización** es un proceso físico-químico de la materia inerte: las sales y los minerales cristalizan, y también algunos virus, pero eso no es una función vital. Es la única de la lista que no describe algo que hagan los organismos vivos."
+ },
+ {
+  "id": 72,
+  "explanation": "Los bioelementos primarios son **carbono, hidrógeno, oxígeno y nitrógeno** (recuérdalos como CHON): juntos forman alrededor del 96% de la materia viva, porque son los que arman las cuatro grandes biomoléculas —carbohidratos, lípidos, proteínas y ácidos nucleicos.\n\nCalcio, fósforo, potasio, azufre, sodio, cloro y magnesio también son indispensables, pero se consideran secundarios: aparecen en cantidades mucho menores."
+ },
+ {
+  "id": 73,
+  "explanation": "Los carbohidratos son la fuente de **energía de uso inmediato**: la glucosa se degrada en la respiración celular y de ahí sale el ATP que la célula gasta al momento. También hay carbohidratos de reserva (almidón, glucógeno) y estructurales (celulosa, quitina), pero su papel principal es el energético.\n\nTransmitir información genética es de los ácidos nucleicos, catalizar es de las enzimas y formar la membrana es de los lípidos (fosfolípidos)."
+ },
+ {
+  "id": 74,
+  "explanation": "Las enzimas son **catalizadores biológicos**: aceleran las reacciones químicas del organismo bajando la energía de activación, actúan sobre un sustrato específico y salen intactas de la reacción, así que se reutilizan.\n\nOjo: hay hormonas que son proteínas y la hemoglobina transporta oxígeno, pero ninguna de esas funciones define a una enzima. Lo que la define es que acelera una reacción sin consumirse."
+ },
+ {
+  "id": 75,
+  "explanation": "En la cadena de transporte de electrones, ubicada en la membrana interna de la mitocondria, los electrones que traen el NADH y el $FADH_2$ van pasando de un complejo a otro hasta llegar al **oxígeno**, que es el aceptor final. El oxígeno, con los protones, forma **agua**.\n\nPor eso la respiración se llama aerobia: sin oxígeno, la cadena se detiene. El ácido pirúvico y el acetil-CoA son productos intermedios de la glucólisis y del paso previo al ciclo de Krebs, no del final de la cadena; y la glucosa es el punto de partida, no el producto."
+ },
+ {
+  "id": 76,
+  "explanation": "En la **metafase** los cromosomas, ya condensados al máximo, se acomodan en el plano ecuatorial de la célula (la placa metafásica), sujetos por las fibras del huso desde ambos polos.\n\nLa migración hacia los polos ocurre en la anafase, la descondensación en la telofase y la duplicación del ADN antes de todo, en la interfase (fase S). Si te confundiste con la anafase, recuerda el orden: profase, metafase, anafase, telofase, y en la **m**etafase los cromosomas están en **m**edio."
+ },
+ {
+  "id": 77,
+  "explanation": "En la dominancia incompleta ningún alelo domina por completo al otro, así que el heterocigoto muestra un **fenotipo intermedio**. El ejemplo clásico es el dondiego de noche: flor roja ($RR$) cruzada con flor blanca ($BB$) da descendencia rosa ($RB$).\n\nNo la confundas con la codominancia, donde los dos rasgos se expresan al mismo tiempo y por separado (como en el grupo sanguíneo AB), en vez de mezclarse."
+ },
+ {
+  "id": 78,
+  "explanation": "Oparin y Haldane propusieron, cada uno por su lado, que en la Tierra primitiva la atmósfera era **reductora** (sin oxígeno libre, con metano, amoniaco, hidrógeno y vapor de agua) y que con la energía de los rayos y la radiación se formaron moléculas orgánicas que se acumularon en el océano —el \"caldo primitivo\"— hasta organizarse en coacervados. Miller y Urey lo comprobaron experimentalmente en 1953.\n\nLa opción de la generación espontánea es justo lo contrario: esa idea la refutó Pasteur, y la hipótesis de Oparin habla de evolución química a lo largo de millones de años, no de aparición súbita."
+ },
+ {
+  "id": 79,
+  "explanation": "Los órganos homólogos tienen el mismo origen embrionario y la misma estructura interna, aunque cumplan funciones distintas: el brazo humano, la aleta de la ballena y el ala del murciélago comparten los mismos huesos. Esa coincidencia estructural solo se explica si esas especies **descienden de un ancestro común**.\n\nNo los confundas con los órganos análogos (ala de insecto y ala de ave), que tienen la misma función pero distinto origen: ésos sí indican adaptación a un mismo ambiente, y son la trampa de la opción C."
+ },
+ {
+  "id": 80,
+  "explanation": "El ciclo del carbono funciona porque los dos procesos van en sentidos opuestos: en la **fotosíntesis** las plantas toman $CO_2$ de la atmósfera y lo fijan en materia orgánica (glucosa), y en la **respiración** los organismos degradan esa materia orgánica y devuelven el $CO_2$ al aire. Así el mismo carbono circula una y otra vez entre los seres vivos y el ambiente.\n\nLa opción A falla en un dato: la respiración no libera oxígeno, lo consume. Y la C también: la respiración celular ocurre en todos los seres vivos, no solo en plantas."
+ }
+]

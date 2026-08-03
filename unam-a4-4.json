@@ -33,7 +33,8 @@
               "C": "$5.3\\times 10^{11}\\,\\dfrac{\\text{km}}{\\text{h}}$",
               "D": "$5.3\\times 10^{11}\\,\\dfrac{\\text{km}}{\\text{min}}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La rapidez promedio es distancia entre tiempo, y lo primero es poner el tiempo en las unidades que piden las opciones: $3$ días $= 72$ h.\n\n$$v = \\frac{3.8\\times 10^{15}\\,\\text{km}}{72\\,\\text{h}} = 5.28\\times 10^{13}\\,\\frac{\\text{km}}{\\text{h}}$$\n\nQue redondeado es $5.3\\times 10^{13}\\,\\frac{\\text{km}}{\\text{h}}$. Fíjate que el número $5.3\\times 10^{13}$ aparece también en la opción A pero con unidades de km/día; si divides entre $3$ días te da $1.27\\times 10^{15}\\,\\frac{\\text{km}}{\\text{día}}$, que no es ninguna opción. La moraleja: en estos reactivos las unidades deciden."
           },
           {
             "id": 2,
@@ -46,7 +47,8 @@
               "C": "$6\\,\\dfrac{\\text{m}}{\\text{s}^2}$",
               "D": "$2\\,\\dfrac{\\text{m}}{\\text{s}^2}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La aceleración media solo mira el principio y el final, no lo que pasa en medio:\n\n$$a = \\frac{v_f - v_i}{t}$$\n\nLa velocidad pasó de $0$ a $4.8\\,\\frac{\\text{m}}{\\text{s}}$ y para eso ocupó las tres zancadas: $t = 3(0.8) = 2.4$ s. Entonces $a = \\dfrac{4.8}{2.4} = 2\\,\\frac{\\text{m}}{\\text{s}^2}$.\n\nSi te dio $6\\,\\frac{\\text{m}}{\\text{s}^2}$ usaste solo $0.8$ s, es decir, el tiempo de una zancada con el cambio de velocidad de las tres. Comprueba que el resultado es consistente: en cada zancada gana $1.6\\,\\frac{\\text{m}}{\\text{s}}$ en $0.8$ s, o sea $2\\,\\frac{\\text{m}}{\\text{s}^2}$ también."
           },
           {
             "id": 3,
@@ -59,7 +61,8 @@
               "C": "$0.3\\,\\dfrac{\\text{m}}{\\text{s}^2}$",
               "D": "$0.5\\,\\dfrac{\\text{m}}{\\text{s}^2}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Como las fuerzas tienen la misma dirección pero sentidos contrarios, se restan: $F_{\\text{neta}} = 30 - 20 = 10$ N. Con la segunda ley de Newton,\n\n$$a = \\frac{F_{\\text{neta}}}{m} = \\frac{10\\,\\text{N}}{100\\,\\text{kg}} = 0.1\\,\\frac{\\text{m}}{\\text{s}^2}$$\n\nSi te salió $0.5\\,\\frac{\\text{m}}{\\text{s}^2}$ sumaste las fuerzas ($50$ N) en lugar de restarlas: eso sería válido solo si las dos jalaran hacia el mismo lado."
           },
           {
             "id": 4,
@@ -72,7 +75,8 @@
               "C": "$5\\,\\text{N}$",
               "D": "$0\\,\\text{N}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Cuando la cuerda se rompe, el elevador y la caja caen juntos con la misma aceleración, $g$. La caja no \"aprieta\" el piso porque el piso va cayendo exactamente al mismo ritmo que ella: es el estado de ingravidez aparente.\n\nCon la segunda ley aplicada a la caja: $N - mg = -mg$ (porque su aceleración es $-g$), de donde $N = 0$ N.\n\nLa opción de $500$ N o $5\\,000$ N sale de calcular el peso $mg$, pero el peso es lo que la Tierra le hace a la caja, no lo que el piso le hace. Aquí preguntan por la fuerza normal, y esa vale cero."
           },
           {
             "id": 5,
@@ -85,7 +89,8 @@
               "C": "$2.5\\,\\text{kg}$",
               "D": "$0.8\\,\\text{kg}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Sistema aislado y en reposo: el momento total antes vale cero, así que después también.\n\n$$m_{\\text{niño}} v_{\\text{niño}} = m_{\\text{carrito}} v_{\\text{carrito}}$$\n\n$$(30)(2) = m(12) \\;\\Rightarrow\\; m = \\frac{60}{12} = 5\\,\\text{kg}$$\n\nLos signos opuestos de las velocidades son justo lo que hace que la suma dé cero; por eso al despejar trabajas con las magnitudes. Si te dio $2.5$ kg dividiste entre $24$, o sea usaste la suma de las rapideces en vez de la del carrito."
           },
           {
             "id": 6,
@@ -98,7 +103,8 @@
               "C": "$T_K=T_C-273$",
               "D": "$T_K=1.8(T_C+273)$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las escalas Celsius y Kelvin tienen el mismo tamaño de grado; lo único que cambia es dónde ponen el cero. El cero absoluto está en $-273\\,°$C, así que para pasar a Kelvin solo recorres la escala $273$ unidades hacia arriba: $T_K = T_C + 273$.\n\nCompruébalo con el agua: hierve a $100\\,°$C, y $100 + 273 = 373$ K. La opción con $1.8$ y $32$ es la conversión Fahrenheit-Celsius, y no tiene nada que ver aquí."
           },
           {
             "id": 7,
@@ -111,7 +117,8 @@
               "C": "calor latente de vaporización.",
               "D": "capacidad térmica específica."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La definición que te dan —calor necesario **por gramo** y **por grado Celsius**— es exactamente la de la capacidad térmica específica, mejor conocida como calor específico. Su unidad lo delata: $\\frac{\\text{cal}}{\\text{g}\\cdot°\\text{C}}$.\n\nLa capacidad térmica a secas (opción A) es el calor que pide **todo** el cuerpo para subir un grado, sin dividir entre la masa: por eso depende de qué tan grande sea el objeto. Los calores latentes ni siquiera cambian la temperatura: son los del cambio de fase."
           },
           {
             "id": 8,
@@ -124,7 +131,8 @@
               "C": "que ambas ondas sean longitudinales.",
               "D": "que ambas ondas sean transversales."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La interferencia es consecuencia del **principio de superposición**: cuando dos ondas coinciden en el mismo punto, sus desplazamientos se suman algebraicamente. Si están en fase, las crestas se suman y la interferencia es constructiva; si están desfasadas media longitud de onda, cresta y valle se cancelan y es destructiva.\n\nLa amplitud (opción A) te dice qué tan grande resulta la onda combinada, pero no explica por qué se suman o se cancelan. Y ser longitudinales o transversales no importa: ambos tipos de onda interfieren."
           },
           {
             "id": 9,
@@ -137,7 +145,8 @@
               "C": "$\\dfrac{\\text{N}}{\\text{s}}$",
               "D": "$\\dfrac{\\text{J}}{\\text{s}}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El campo eléctrico se define como la fuerza por unidad de carga de prueba:\n\n$$E = \\frac{F}{q}$$\n\nAsí que sus unidades son newton entre coulomb, $\\frac{\\text{N}}{\\text{C}}$.\n\nOjo con $\\frac{\\text{N}}{\\text{kg}}$: esa es la del campo **gravitacional**, donde divides entre masa en vez de carga. Y $\\frac{\\text{J}}{\\text{s}}$ es el watt, unidad de potencia."
           },
           {
             "id": 10,
@@ -150,7 +159,8 @@
               "C": "la fuerza de empuje que hacia arriba recibe todo cuerpo que es sumergido total o parcialmente en un fluido.",
               "D": "que la presión que se aplica en un punto de un fluido y se distribuye uniformemente en todas direcciones."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Arquímedes es el del empuje: todo cuerpo sumergido total o parcialmente en un fluido recibe una fuerza hacia arriba igual al peso del fluido que desaloja. Por eso flotan los barcos y por eso te sientes ligero en la alberca.\n\nCuidado con confundir los tres principios de fluidos que suelen ir juntos: la opción de los émbolos es Pascal aplicado a la prensa hidráulica, la del fluido que se acelera al angostarse el conducto es Bernoulli, y la de la presión que se transmite igual en todas direcciones es el principio de Pascal."
           }
         ]
       },
@@ -169,7 +179,8 @@
               "C": "Entrada o lead.",
               "D": "Balazo o bajada."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "En la estructura de una nota periodística, la línea que va **debajo** del encabezado y en letra más chica —\"Las autoridades recomiendan a la población evitar las zonas afectadas\"— amplía o complementa el titular: eso es la bajada (o balazo, según el manual de estilo).\n\nDistínguelas por su lugar: el antetítulo va **arriba** del titular, el encabezado es el título en grande (\"ESTE MIÉRCOLES SE ESPERAN VARIAS MARCHAS...\"), y la entrada o lead es ya el primer párrafo de la nota, el que abre con \"Ciudad de México, México...\" y responde las preguntas básicas."
           },
           {
             "id": 12,
@@ -182,7 +193,8 @@
               "C": "actos y necesitar un narrador.",
               "D": "vestuario y personajes."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El texto dramático está escrito para ser representado, no leído por un narrador. Por eso la voz que en la novela contaría las cosas aquí desaparece: todo se sabe por lo que dicen los personajes, y lo que no se puede decir en diálogo va en las **acotaciones**, esas indicaciones entre paréntesis o en cursiva sobre gestos, entradas, salidas y escenografía.\n\nLa opción C se antoja porque los actos sí son parte de la obra dramática, pero la echa a perder \"necesitar un narrador\": es justo lo contrario."
           },
           {
             "id": 13,
@@ -195,7 +207,8 @@
               "C": "relata hechos en forma objetiva y con un mensaje sensible.",
               "D": "persuade al lector de tomar una actitud positiva."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Lo propio del texto poético es expresar el mundo interior —un sentimiento, una emoción, un pensamiento— y hacerlo con un lenguaje trabajado: metáforas, símiles, hipérboles, personificaciones, es decir, figuras retóricas.\n\nRelatar hechos de forma objetiva es lo del texto narrativo o periodístico, y persuadir al lector es función del texto argumentativo. En la poesía lo que importa no es informar, sino cómo está dicho."
           },
           {
             "id": 14,
@@ -208,7 +221,8 @@
               "C": "Decasílabo.",
               "D": "Heptasílabo."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Cuenta las sílabas del verso: Yo-sé-los-nom-bres-ex-tra-ños $=$ 8 sílabas.\n\nAhora aplica la regla del acento final: \"extraños\" es palabra grave, así que el conteo se queda igual (si terminara en aguda sumarías una, y en esdrújula restarías una). Ocho sílabas métricas: es un **octosílabo**, el metro clásico del romance y el que Martí usa en sus *Versos sencillos*.\n\nSi te salió heptasílabo, probablemente hiciste sinalefa donde no la hay: entre \"los\" y \"nombres\" no puede haber, porque la sinalefa solo une vocales."
           },
           {
             "id": 15,
@@ -221,7 +235,8 @@
               "C": "Dramático.",
               "D": "Narrativo."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El género épico narra hazañas de héroes que suelen inspirarse en figuras históricas o legendarias y que encarnan los valores de todo un pueblo: pensemos en la *Ilíada*, el *Cantar de mío Cid* o el *Poema de Gilgamesh*.\n\nEl lírico expresa sentimientos íntimos y el dramático está hecho para representarse en escena. La opción D, \"narrativo\", tienta porque la épica sí narra, pero la narrativa es la categoría amplia y moderna; lo que define lo heroico y colectivo del enunciado es la épica."
           },
           {
             "id": 16,
@@ -234,7 +249,8 @@
               "C": "Juan Valera.",
               "D": "Antonio Machado."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Juan Valera, autor de *Pepita Jiménez*, es una de las figuras del Realismo español del siglo XIX, junto con Galdós, Clarín y Pereda.\n\nLos otros tres son de otras épocas: Unamuno y Machado pertenecen a la Generación del 98 y del 27 respectivamente, ya en el siglo XX, y Camilo José Cela es de la posguerra —autor de *La familia de Pascual Duarte* y Premio Nobel en 1989."
           },
           {
             "id": 17,
@@ -247,7 +263,8 @@
               "C": "Jorge Ibargüengoitia y José Saramago.",
               "D": "Gustave Flaubert y Oscar Wilde."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La literatura contemporánea es la del siglo XX en adelante, y ahí caben los dos de la opción C: Jorge Ibargüengoitia (mexicano, *Los relámpagos de agosto*) y José Saramago (portugués, *Ensayo sobre la ceguera*, Nobel 1998).\n\nLas demás mezclan siglos: Calderón es del Barroco español y Sor Juana también; Mary Shelley y Flaubert son del XIX, igual que Dostoyevski y Wilde. La clave para descartar es que **los dos** autores tienen que ser contemporáneos, no solo uno."
           },
           {
             "id": 18,
@@ -260,7 +277,8 @@
               "C": "Ensayo.",
               "D": "Cuento."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El cuento es una narración breve, de pocos personajes y una sola línea de acción, en la que caben tanto lo real como lo fantástico: es el molde donde el ser humano ha dado forma a sus fantasías.\n\nLos otros no son narraciones de ficción breve: la crónica relata hechos reales en orden temporal, el ensayo expone y argumenta una idea del autor, y la comedia es una obra dramática, escrita para el escenario."
           },
           {
             "id": 19,
@@ -273,7 +291,8 @@
               "C": "dramático — verso — escueta",
               "D": "lírico — prosa — simple"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Arma la frase por partes. La novela **narra** una historia con narrador y personajes, así que su género es el narrativo. Está escrita en **prosa**, no en verso. Y a diferencia del cuento, su extensión le permite varias tramas, muchos personajes y saltos en el tiempo: una estructura **compleja**.\n\nLa opción B pega en \"compleja\", pero falla en dos: la épica clásica sí iba en verso, pero la novela moderna no."
           },
           {
             "id": 20,
@@ -286,7 +305,8 @@
               "C": "Lengua Española. Español IV. (2009). DOSAL, M. R. et al. p. 410. México: Publicaciones cultural.",
               "D": "M. R., Dosal Gómez, et al. Publicaciones cultural, Lengua Española. Español IV. pp. 410. México, 2009."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El formato APA sigue este orden: **autor, año entre paréntesis, título, editorial**. La opción B es la única que lo respeta: Dosal, Ma. Rosario. et al. (2009). *Lengua Española. Español IV*. Publicaciones cultural.\n\nLa opción A tiene los mismos datos pero con el año al final y el apellido en versalitas: ese es el estilo tradicional o MLA, no APA. Las otras dos revuelven el orden, poniendo el título o la editorial antes del autor."
           }
         ]
       },
@@ -305,7 +325,8 @@
               "C": "compuesto.",
               "D": "elemento."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El bronce es una **aleación** de cobre y estaño, y las aleaciones son mezclas: los metales conservan su identidad, no se combinan químicamente en proporciones fijas. Como no distingues sus componentes ni con microscopio —se ve una sola fase, del mismo color en todas partes—, es una mezcla **homogénea**.\n\nSi contestaste \"compuesto\" es porque le viste cara de sustancia única, pero para ser compuesto necesitarías enlaces químicos y una fórmula fija, y el bronce se puede preparar con distintas proporciones de cobre y estaño."
           },
           {
             "id": 22,
@@ -318,7 +339,8 @@
               "C": "Número atómico.",
               "D": "Punto de fusión."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Mendeleev acomodó los elementos en orden creciente de **masa atómica** (1869), y al hacerlo notó que las propiedades se repetían periódicamente. Con esa idea dejó huecos y hasta predijo las propiedades de elementos aún no descubiertos, como el germanio.\n\nEl número atómico se antoja porque es el criterio de la tabla que usas hoy, pero eso llegó después: fue Moseley, en 1913, quien lo midió y corrigió con él las pocas parejas que a Mendeleev le quedaban en desorden."
           },
           {
             "id": 23,
@@ -331,7 +353,8 @@
               "C": "Puente de hidrógeno.",
               "D": "Covalente no polar."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La diferencia de electronegatividad entre los dos átomos es lo que decide el tipo de enlace. Si esa diferencia es cero, ninguno jala más fuerte los electrones que el otro: el par compartido queda justo en medio y no se forman polos. Eso es un enlace **covalente no polar**, el de moléculas como $H_2$, $O_2$ o $Cl_2$.\n\nEl iónico está en el otro extremo (diferencia grande, arriba de $1.7$, y transferencia de electrones), y el puente de hidrógeno ni siquiera es un enlace entre átomos de una misma molécula, sino una atracción intermolecular."
           },
           {
             "id": 24,
@@ -344,7 +367,8 @@
               "C": "$FeO$",
               "D": "$CO_2$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La regla es: óxidos de **no metales** $+$ agua $\\rightarrow$ ácidos; óxidos de **metales** $+$ agua $\\rightarrow$ bases. El carbono es no metal, así que\n\n$$CO_2 + H_2O \\rightarrow H_2CO_3$$\n\nque es el ácido carbónico, el de los refrescos.\n\nLos otros tres son óxidos metálicos: $Na_2O$, $MgO$ y $FeO$ producen hidróxidos, o sea bases, como $NaOH$ o $Mg(OH)_2$. Con solo ver a qué lado de la tabla periódica cae el elemento ya puedes descartar."
           },
           {
             "id": 25,
@@ -357,7 +381,8 @@
               "C": "$75$",
               "D": "$0.075$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Primero saca la masa molar del $KCl$ sumando las masas atómicas: $K = 39$ y $Cl = 35.5$, así que $M = 74.5\\,\\frac{\\text{g}}{\\text{mol}}$.\n\nLuego usa $m = n \\times M$:\n\n$$m = (0.1\\,\\text{mol})\\left(74.5\\,\\frac{\\text{g}}{\\text{mol}}\\right) = 7.45 \\approx 7.5\\,\\text{g}$$\n\nSi te salió $0.75$ o $75$, el error fue de punto decimal: multiplicar por $0.1$ es correr el punto un lugar a la izquierda, no dos."
           },
           {
             "id": 26,
@@ -370,7 +395,8 @@
               "C": "puentes de hidrógeno y su polaridad.",
               "D": "electrones compartidos y distancia entre sus enlaces."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El agua disuelve tanto porque su molécula es **polar**: el oxígeno jala los electrones y queda con carga parcial negativa, mientras los hidrógenos quedan positivos. Ese dipolo rodea a los iones de un soluto y los separa. Además, las moléculas de agua forman **puentes de hidrógeno** entre sí y con muchos solutos, lo que le permite acomodar y estabilizar sustancias polares.\n\nLos electrones compartidos por sí solos no explican nada: cualquier molécula covalente los tiene, incluidas las que no disuelven casi nada, como el aceite."
           },
           {
             "id": 27,
@@ -383,7 +409,8 @@
               "C": "$8$",
               "D": "$13$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La escala de pH va al revés de lo que uno esperaría para los $OH^-$: entre más alto el pH, más básica es la disolución y por lo tanto **mayor** la concentración de iones hidroxilo. De $0$ a $7$ es ácida, $7$ es neutra y de $7$ a $14$ es básica.\n\nEntonces el valor más alto, $13$, es el de mayor $[OH^-]$. Si escogiste $2$, respondiste la pregunta de $H^+$: ese sí es el más ácido, el de mayor concentración de hidrógenos."
           },
           {
             "id": 28,
@@ -396,7 +423,8 @@
               "C": "C y N.",
               "D": "N y Pb."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Los contaminantes **primarios** son los que se emiten directamente a la atmósfera, sin transformarse antes. Los que salen de escapes, chimeneas y de cualquier combustión son sobre todo los óxidos de **carbono** ($CO$ y $CO_2$) y de **nitrógeno** ($NO$ y $NO_2$), además del $SO_2$.\n\nEl plomo y el mercurio son contaminantes, sí, pero se emiten como metales o partículas, no como los óxidos característicos de la quema de combustibles; y el calcio de la opción A no es contaminante atmosférico."
           },
           {
             "id": 29,
@@ -409,7 +437,8 @@
               "C": "$-COOH$",
               "D": "$-COR$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Todo aminoácido tiene dos grupos funcionales: un amino ($-NH_2$) y un **carboxilo** ($-COOH$). El enlace peptídico se forma justamente entre ellos, de aminoácidos distintos: el $-OH$ del carboxilo y un $H$ del amino se van juntos como una molécula de agua, y queda el enlace $-CO-NH-$.\n\nPor eso es una reacción de condensación o síntesis por deshidratación: por cada enlace peptídico formado, se libera un $H_2O$."
           },
           {
             "id": 30,
@@ -422,7 +451,8 @@
               "C": "$\\Delta H°=+52.5\\,\\dfrac{\\text{kJ}}{\\text{mol}}$",
               "D": "$\\Delta H°=-395.7\\,\\dfrac{\\text{kJ}}{\\text{mol}}$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El signo de $\\Delta H$ te dice la dirección de la energía: si es **negativo**, la reacción es exotérmica y desprende calor; si es positivo, es endotérmica y lo absorbe. Con eso ya descartas B y C.\n\nEntre las dos negativas, la que más energía libera es la de mayor valor absoluto: $-395.7$ desprende más que $-110.5\\,\\frac{\\text{kJ}}{\\text{mol}}$.\n\nEl truco está en no dejarse llevar por \"el número más grande\" viendo solo la cifra: $+52.5$ es el mayor de todos como número, pero significa energía absorbida, no desprendida."
           }
         ]
       },
@@ -441,7 +471,8 @@
               "C": "explicar la relación entre los elementos naturales y sociales del medio geográfico.",
               "D": "localizar los elementos naturales y sociales sobre la superficie terrestre."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La Geografía moderna ya no se conforma con decir dónde están las cosas: su objeto es **explicar la relación** entre los elementos naturales (relieve, clima, agua, vegetación) y los sociales (población, economía, cultura) que interactúan en un mismo espacio.\n\nLocalizar sobre la superficie terrestre (opción D) fue la finalidad de la geografía descriptiva de los primeros tiempos; hoy es apenas el punto de partida. Por eso la respuesta que integra ambos tipos de elementos es la que corresponde a la geografía actual."
           },
           {
             "id": 32,
@@ -454,7 +485,8 @@
               "C": "Cónica.",
               "D": "Azimutal."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Para México se usa la proyección **cónica**, porque es la que menos deforma en las latitudes medias, que es donde cae el país (entre los $14°$ y los $33°$ norte). Imagina un cono apoyado sobre el globo: toca la esfera a lo largo de un paralelo de esa zona y ahí la distorsión es mínima.\n\nLa cilíndrica (como la de Mercator) funciona mejor cerca del ecuador y exagera muchísimo las áreas hacia los polos; la polar y la azimutal se usan para las regiones polares o para mapas centrados en un punto."
           },
           {
             "id": 33,
@@ -467,7 +499,8 @@
               "C": "Tlaxcala y Oaxaca.",
               "D": "Oaxaca y Guerrero."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La Sierra Madre del Sur corre paralela a la costa del Pacífico, desde el sur de Jalisco y Michoacán hasta el Istmo de Tehuantepec, y su tramo principal atraviesa **Guerrero y Oaxaca**.\n\nNo la confundas con la Sierra Madre Oriental, que es la que baja por Veracruz y Tlaxcala del lado del Golfo, ni con la Sierra Madre de Chiapas, que ya está del otro lado del Istmo. El apellido \"del Sur\" se refiere al sur del Pacífico mexicano."
           },
           {
             "id": 34,
@@ -480,7 +513,8 @@
               "C": "cobre.",
               "D": "plata."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Sonora es, por mucho, el primer productor nacional de **cobre**: ahí está Cananea (Buenavista del Cobre), la mina a cielo abierto más grande del país, junto con La Caridad. Entre las dos aportan la mayor parte del cobre mexicano.\n\nEn plata el primer lugar lo pelean Zacatecas y Chihuahua, y en hierro destacan Michoacán y Colima. Si dudas, recuerda la asociación directa: Sonora - Cananea - cobre."
           },
           {
             "id": 35,
@@ -493,7 +527,8 @@
               "C": "norte de África y norte de Asia.",
               "D": "sur de América y norte de Oceanía."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La taiga o bosque boreal es el bioma de coníferas (pinos, abetos, alerces) que ocupa una franja continua en las latitudes altas del hemisferio norte: **norte de Europa** —Escandinavia, Finlandia, Rusia europea— y **norte de Asia**, es decir Siberia, además de Canadá y Alaska.\n\nDescarta rápido las otras: al sur de Europa hay bosque mediterráneo, al norte de África está el Sahara, y en el hemisferio sur no hay masas continentales suficientes en esas latitudes frías para que se forme taiga."
           },
           {
             "id": 36,
@@ -506,7 +541,8 @@
               "C": "Morelos y Baja California Sur.",
               "D": "Baja California Sur y Quintana Roo."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La densidad es habitantes entre superficie, así que los estados de baja densidad son los que tienen mucho territorio y poca gente. **Baja California Sur** es el caso extremo del país (alrededor de $10$ hab/km$^2$) y **Quintana Roo** también queda entre los más bajos, con su población concentrada en unos pocos puntos turísticos.\n\nMorelos es justo lo contrario: es de los estados más densos, por chiquito y poblado. Veracruz y Oaxaca tienen mucha población total, pero eso no es lo mismo que densidad: siempre divide entre la superficie."
           },
           {
             "id": 37,
@@ -519,7 +555,8 @@
               "C": "natalidad, alfabetización y acceso a internet.",
               "D": "mortalidad, nivel de inflación y servicios médicos."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El Índice de Desarrollo Humano del PNUD combina tres dimensiones, una por cada cosa que hace posible una vida digna: **salud**, medida con la esperanza de vida al nacer; **educación**, medida con alfabetismo y años de escolaridad; e **ingreso**, medido con el PIB o ingreso per cápita.\n\nLas otras opciones mezclan indicadores puramente económicos o financieros —deuda externa, inflación, inversión— que hablan de la economía de un país, pero no de las condiciones de vida de su gente, que es lo que el IDH quiere medir."
           },
           {
             "id": 38,
@@ -532,7 +569,8 @@
               "C": "emplea mayor número de personas.",
               "D": "está regulada por el gobierno."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El sector terciario es el de los servicios: comercio, transporte, turismo, banca, educación, salud, gobierno. En México **emplea a más de la mitad de la población ocupada** y aporta cerca de dos terceras partes del PIB; por eso es el más importante.\n\nLas otras opciones no explican esa importancia: requerir mano de obra calificada es falso para buena parte del sector (mucho del comercio y los servicios son de baja calificación, incluso informales), y estar regulado por el gobierno no lo vuelve más relevante económicamente."
           },
           {
             "id": 39,
@@ -545,7 +583,8 @@
               "C": "Noroeste — cereales",
               "D": "Balsas — pastos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La porcicultura se instala donde está su alimento, porque el cerdo se engorda con grano. El **Bajío** —Guanajuato, Jalisco, Michoacán, Querétaro— es la gran región productora de **cereales** del país (maíz, sorgo, trigo), y ahí mismo se concentra la crianza de cerdos; Jalisco y Guanajuato encabezan la producción nacional.\n\nLos forrajes y pastos de las otras opciones son alimento de ganado bovino, no porcino: la ganadería extensiva del norte es de reses, precisamente porque ahí lo que hay son pastizales."
           },
           {
             "id": 40,
@@ -558,7 +597,8 @@
               "C": "Sonda de Tuxpan.",
               "D": "Sonda de Campeche."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La **Sonda de Campeche** es la zona marina del sureste del Golfo de México donde se ubican los campos que producen la mayor parte del petróleo y el gas del país, entre ellos Cantarell y Ku-Maloob-Zaap.\n\nPoza Rica y Ciudad Madero son zonas petroleras, sí, pero terrestres, en Veracruz y Tamaulipas; la pregunta pide expresamente una zona **marítima**. Con ese filtro se descartan solas."
           }
         ]
       },
@@ -577,7 +617,8 @@
               "C": "$8.4$",
               "D": "$8.9$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Para promediar $8$ en cuatro parciales, la suma de las cuatro calificaciones debe ser al menos $8 \\times 4 = 32$. Suma lo que ya tiene: $7.2 + 8.5 + 7.9 = 23.6$. Lo que falta es\n\n$$32 - 23.6 = 8.4$$\n\nComprueba: $\\dfrac{7.2+8.5+7.9+8.4}{4} = \\dfrac{32}{4} = 8$. Justo el mínimo que pide."
           },
           {
             "id": 42,
@@ -590,7 +631,8 @@
               "C": "$4$",
               "D": "$2\\sqrt{2}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Multiplicar una raíz por sí misma la cancela: $(\\sqrt{2})(\\sqrt{2}) = \\sqrt{2 \\cdot 2} = \\sqrt{4} = 2$. Esa es precisamente la definición de raíz cuadrada: $\\sqrt{2}$ es el número que al elevarse al cuadrado da $2$.\n\nSi elegiste $2\\sqrt{2}$, sumaste los radicales en vez de multiplicarlos: $\\sqrt{2}+\\sqrt{2} = 2\\sqrt{2}$."
           },
           {
             "id": 43,
@@ -603,7 +645,8 @@
               "C": "$x^2-2xy+y^2$",
               "D": "$x^2+2xy+y^2$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El cuadrado de un binomio tiene tres términos, no dos: el cuadrado del primero, el doble producto y el cuadrado del segundo. Con resta en medio, el doble producto sale negativo:\n\n$$(x-y)^2 = x^2 - 2xy + y^2$$\n\nEl error clásico es $x^2 - y^2$: eso no es el cuadrado del binomio, es el producto de conjugados $(x+y)(x-y)$. Al elevar al cuadrado nunca se pierde el término $2xy$."
           },
           {
             "id": 44,
@@ -616,7 +659,8 @@
               "C": "$\\dfrac{x-2}{2a}$",
               "D": "$\\dfrac{(x-2)(x+3)}{2a}$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Factoriza arriba y abajo. El numerador es un trinomio: buscas dos números que multiplicados den $6$ y sumados $-5$, o sea $-2$ y $-3$: $x^2-5x+6 = (x-2)(x-3)$. En el denominador saca factor común $2a$: $2ax-6a = 2a(x-3)$. Ahora cancela el factor repetido $(x-3)$:\n\n$$\\frac{(x-2)(x-3)}{2a(x-3)} = \\frac{x-2}{2a}$$\n\nLa opción A es solo el numerador factorizado sin haber cancelado nada: ahí falta el paso final."
           },
           {
             "id": 45,
@@ -629,7 +673,8 @@
               "C": "$x=2$",
               "D": "$x=4$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Junta las $x$ de un lado y los números del otro. De $\\dfrac{x}{2}+5 = x+3$, resta $\\dfrac{x}{2}$ y resta $3$ en ambos lados:\n\n$$5-3 = x - \\frac{x}{2} \\quad\\Rightarrow\\quad 2 = \\frac{x}{2} \\quad\\Rightarrow\\quad x = 4$$\n\nComprueba: $\\dfrac{4}{2}+5 = 7$ y $4+3 = 7$. Si te dio $x=-4$, seguramente se te cruzó un signo al pasar términos de lado."
           },
           {
             "id": 46,
@@ -642,7 +687,8 @@
               "C": "$(-\\infty,-5]$",
               "D": "$(-5,\\infty)$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Para despejar $x$ de $-x \\geq 5$ multiplicas ambos lados por $-1$, y ahí está la trampa: al multiplicar una desigualdad por un negativo, el signo se invierte. Queda $x \\leq -5$. En notación de intervalo son todos los números desde $-\\infty$ hasta $-5$, incluyendo el $-5$ porque la desigualdad lleva \"igual\": $(-\\infty,-5]$.\n\nLa opción B, $(-\\infty,-5)$, se equivoca solo en el paréntesis: excluye el $-5$, que sí cumple ($-(-5) = 5 \\geq 5$)."
           },
           {
             "id": 47,
@@ -655,7 +701,8 @@
               "C": "\\$13",
               "D": "\\$12"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Llama $c$ al cuaderno y $l$ al lapicero: $5c+8l = 115$ y $3c+5l = 70$. Para eliminar $l$, multiplica la primera por $5$ y la segunda por $8$:\n\n$$25c + 40l = 575 \\qquad 24c + 40l = 560$$\n\nRéstalas: $c = 15$. Cada cuaderno cuesta \\$15 (y de ahí, cada lapicero \\$5: checa que $5(15)+8(5) = 75+40 = 115$)."
           },
           {
             "id": 48,
@@ -668,7 +715,8 @@
               "C": "$(-\\infty,\\infty)$",
               "D": "$(-1,\\infty)$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El dominio son todos los valores de $x$ que puedes meter a la función. En un polinomio solo hay sumas, restas y potencias de $x$: no hay divisiones que puedan dar cero abajo, ni raíces, ni logaritmos que restrinjan nada. Por eso **toda función polinomial tiene como dominio todos los reales**: $(-\\infty,\\infty)$. Esto vale para $x^3+2x^2-3x+1$ y para cualquier otro polinomio que te pongan."
           },
           {
             "id": 49,
@@ -681,7 +729,8 @@
               "C": "parábola.",
               "D": "hipérbola."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Reescribe la ecuación como $y = x^2 - 1$: es una $y$ despejada igual a una expresión cuadrática en $x$. Una sola variable al cuadrado y la otra lineal es la firma de la **parábola** (esta abre hacia arriba, con vértice en $(0,-1)$).\n\nPara que fuera circunferencia, elipse o hipérbola necesitarías las dos variables al cuadrado; para recta, ninguna."
           },
           {
             "id": 50,
@@ -694,7 +743,8 @@
               "C": "$\\dfrac{1}{x^2+5}$",
               "D": "$\\dfrac{1}{x^2+4x+3}$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La composición $(f\\circ g)(x)$ significa $f(g(x))$: metes $g$ adentro de $f$. Donde $f$ dice $x$, tú escribes $x+2$:\n\n$$f(x+2) = \\frac{1}{(x+2)^2+1}$$\n\nDesarrolla el binomio: $(x+2)^2 = x^2+4x+4$, y al sumar $1$ queda $x^2+4x+5$. Por eso el resultado es $\\dfrac{1}{x^2+4x+5}$.\n\nSi llegaste a $\\dfrac{1}{x^2+5}$, hiciste $(x+2)^2 = x^2+4$: te faltó el doble producto $4x$."
           },
           {
             "id": 51,
@@ -708,7 +758,8 @@
               "C": "$\\dfrac{5}{3}$",
               "D": "$\\dfrac{5}{4}$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En la figura el ángulo recto está en $Q$; el cateto vertical mide $3$ y la hipotenusa mide $5$. El seno de un ángulo es cateto **opuesto** entre hipotenusa. Visto desde $P$, el lado opuesto es justo el cateto de $3$ (el que no toca a $P$), así que\n\n$$\\mathrm{sen}\\,P = \\frac{\\text{opuesto}}{\\text{hipotenusa}} = \\frac{3}{5}$$\n\nSi contestaste $\\dfrac{4}{5}$, tomaste el cateto adyacente (que mide $4$, por Pitágoras): ese es el coseno de $P$, no el seno."
           },
           {
             "id": 52,
@@ -721,7 +772,8 @@
               "C": "$32$",
               "D": "$16$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La diagonal del rectángulo es la hipotenusa del triángulo rectángulo que forman los dos lados. Por el teorema de Pitágoras:\n\n$$d = \\sqrt{12^2 + 20^2} = \\sqrt{144+400} = \\sqrt{544}$$\n\nSi te dio $\\sqrt{32}$ o $32$, sumaste los lados ($12+20$) en lugar de sumar sus cuadrados: en Pitágoras se suman $12^2$ y $20^2$, no $12$ y $20$."
           },
           {
             "id": 53,
@@ -734,7 +786,8 @@
               "C": "$(-\\infty,2)$",
               "D": "$(-\\infty,2]$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El logaritmo solo acepta argumentos **estrictamente positivos**: no existe el logaritmo de cero ni de un negativo. Pides entonces $x-2 > 0$, es decir $x > 2$, que en notación de intervalo es $(2,\\infty)$.\n\nLa opción B, $[2,\\infty)$, incluye el $2$, pero ahí el argumento vale $0$ y $\\log(0)$ no está definido: el corchete es el error."
           },
           {
             "id": 54,
@@ -747,7 +800,8 @@
               "C": "$x=-3$",
               "D": "$y=3$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La función logaritmo tiene su asíntota vertical donde el argumento se hace cero, porque al acercarse a ese valor el logaritmo se va a $-\\infty$. Aquí el argumento es $x-3$, que se anula en $x = 3$: esa recta vertical es la asíntota. El $2$ que multiplica solo estira la gráfica, no mueve la asíntota.\n\nOjo con las opciones que empiezan con $y=$: esas son rectas horizontales, y el logaritmo no tiene asíntota horizontal."
           },
           {
             "id": 55,
@@ -760,7 +814,8 @@
               "C": "$2$",
               "D": "$4$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Aplica la fórmula de distancia entre dos puntos:\n\n$$d = \\sqrt{(x_2-x_1)^2+(y_2-y_1)^2} = \\sqrt{(-1-1)^2+(-1-1)^2} = \\sqrt{4+4} = \\sqrt{8}$$\n\nY $\\sqrt{8} = \\sqrt{4\\cdot 2} = 2\\sqrt{2}$. Si contestaste $4$, probablemente sumaste $2+2$ en lugar de sacar la raíz de la suma de cuadrados."
           },
           {
             "id": 56,
@@ -773,7 +828,8 @@
               "C": "$\\dfrac{3}{2}$",
               "D": "$2$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Despeja $y$ para llevar la recta a la forma $y = mx+b$, donde $m$ es la pendiente:\n\n$$2y = 4x - 3 \\quad\\Rightarrow\\quad y = 2x - \\frac{3}{2}$$\n\nEl coeficiente de $x$ es la pendiente: $m = 2$. Si contestaste $-2$, olvidaste que al pasar $-4x$ al otro lado cambia a $+4x$ antes de dividir entre $2$."
           },
           {
             "id": 57,
@@ -786,7 +842,8 @@
               "C": "$x^2+y^2-4=0$",
               "D": "$x^2+y^2+4=0$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Una circunferencia con centro en el origen tiene ecuación $x^2+y^2 = r^2$. Con radio $4$: $x^2+y^2 = 16$, y pasando todo a un lado, $x^2+y^2-16 = 0$.\n\nDos trampas comunes: la opción C usa el radio sin elevarlo al cuadrado ($4$ en vez de $16$), y las opciones con $+16$ o $+4$ tienen el signo mal: al pasar el $r^2$ restando, el término independiente debe quedar negativo."
           },
           {
             "id": 58,
@@ -799,7 +856,8 @@
               "C": "$C(-3,2);\\ r=6$",
               "D": "$C(-3,2);\\ r=36$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Compara con la forma canónica $(x-h)^2+(y-k)^2 = r^2$, donde el centro es $(h,k)$. Como la fórmula lleva **restas**, los signos se invierten al leer: $(x+3)^2$ es $(x-(-3))^2$, así que $h = -3$; y $(y-2)^2$ da $k = 2$. El centro es $C(-3,2)$. Para el radio, $r^2 = 36$, entonces $r = \\sqrt{36} = 6$.\n\nSi elegiste $r = 36$, olvidaste sacar la raíz: el $36$ es $r^2$, no $r$."
           },
           {
             "id": 59,
@@ -812,7 +870,8 @@
               "C": "$V(4,3);\\ F(4,6)$",
               "D": "$V(-3,-4);\\ F(-6,-4)$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Compara con la forma $(x-h)^2 = 4p(y-k)$, la parábola vertical con vértice $(h,k)$. Aquí $h = 4$ y $k = 3$, así que $V(4,3)$; los signos se leen al revés porque la fórmula lleva restas. Luego $4p = 12$, o sea $p = 3$. Como la parábola abre hacia arriba (el lado derecho es positivo), el foco está $p$ unidades arriba del vértice:\n\n$$F(4,\\ 3+3) = F(4,6)$$\n\nLa opción A invierte los signos del vértice: es el error de leer $(x-4)$ como si el vértice estuviera en $-4$."
           },
           {
             "id": 60,
@@ -825,7 +884,8 @@
               "C": "$F_1=(0,-\\sqrt{8});\\ F_2=(0,\\sqrt{8})$",
               "D": "$F_1=(0,-\\sqrt{10});\\ F_2=(0,\\sqrt{10})$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Divide todo entre $9$ para llevar la elipse a su forma canónica:\n\n$$\\frac{x^2}{1} + \\frac{y^2}{9} = 1$$\n\nEl denominador mayor está bajo $y^2$, así que el eje mayor es **vertical** y los focos van sobre el eje $y$. Con $a^2 = 9$ y $b^2 = 1$: $c = \\sqrt{a^2-b^2} = \\sqrt{9-1} = \\sqrt{8}$. Los focos son $(0,-\\sqrt{8})$ y $(0,\\sqrt{8})$.\n\nLa opción A tiene la $c$ correcta pero pone los focos en el eje $x$: es el error de no fijarse bajo cuál variable está el denominador grande."
           },
           {
             "id": 61,
@@ -838,7 +898,8 @@
               "C": "suma de sus distancias a dos puntos fijos es un valor constante.",
               "D": "diferencia de sus distancias a dos puntos fijos es un valor variable."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La hipérbola se define con la **diferencia** de distancias a los dos focos, y esa diferencia debe ser **constante**: cada punto de la curva cumple que la distancia al foco lejano menos la distancia al foco cercano da siempre el mismo valor.\n\nEl distractor fuerte es la opción C: \"suma constante\", pero esa es la definición de la **elipse**. La clave para no confundirlas: elipse suma, hipérbola resta."
           },
           {
             "id": 62,
@@ -851,7 +912,8 @@
               "C": "$(x+2)^2+(y-4)^2=36$",
               "D": "$(x-2)^2+(y+4)^2=36$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La circunferencia original es $x^2+y^2 = 36$: centro en el origen y radio $6$. Trasladarla al centro $C(-2,4)$ solo cambia el centro en la forma canónica $(x-h)^2+(y-k)^2 = r^2$, con $h = -2$ y $k = 4$:\n\n$$(x-(-2))^2+(y-4)^2 = 36 \\quad\\Rightarrow\\quad (x+2)^2+(y-4)^2 = 36$$\n\nLa opción D invierte los signos: recuerda que la fórmula ya trae restas, así que un centro negativo produce un signo más dentro del paréntesis."
           }
         ]
       },
@@ -870,7 +932,8 @@
               "C": "Hoy llueve mucho, y parecería que están lavando el mundo.",
               "D": "Los maleantes fueron repelidos por otra lluvia de piedras."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La función referencial (o informativa) transmite datos objetivos sobre la realidad, sin opiniones ni emociones del hablante. \"Seguirán las lluvias en el noreste del país\" es un enunciado de ese tipo: informa un hecho verificable, como en un noticiero.\n\nLa opción A es función emotiva (expresa la molestia de quien habla) y la C tiene un giro poético (\"parecería que están lavando el mundo\"): en ambas el hablante se mete en el mensaje, cosa que la referencial evita."
           },
           {
             "id": 64,
@@ -883,7 +946,8 @@
               "C": "Poética.",
               "D": "Fática."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El fragmento no busca principalmente informar ni ordenar algo: está trabajado para que el lenguaje mismo luzca. Tiene metáfora (\"la lengua del amor\"), exclamación literaria, ritmo y una comparación musical (\"tiene pausas de música suave\"). Cuando el mensaje llama la atención sobre su propia forma —cómo está dicho más que qué dice—, la función es la **poética**.\n\nNo es metalingüística: aunque hable de \"la lengua\", no explica gramática ni define palabras; usa \"lengua del amor\" como imagen."
           },
           {
             "id": 65,
@@ -896,7 +960,8 @@
               "C": "Explicativa.",
               "D": "Argumentativa."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El fragmento pinta con palabras cómo es el personaje: su edad, su complexión \"fuerte y un tanto hercúlea\", su cabello y barba rubios, su porte arrogante. Enumerar rasgos y cualidades para que el lector se imagine a alguien o algo es la marca del discurso **descriptivo**: aquí no pasa nada (no hay acciones que avancen), solo se retrata.\n\nSería narrativo si contara hechos sucediendo en el tiempo; aquí el tiempo está detenido mientras se detalla al joven."
           },
           {
             "id": 66,
@@ -909,7 +974,8 @@
               "C": "Expositiva.",
               "D": "Argumentativa."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El fragmento cuenta hechos encadenados en el tiempo: Cortés ordenó traer frailes, estos llegaron, fundaron conventos, compartieron el trabajo de evangelizar. Hay acciones en pasado, actores y una secuencia temporal (\"Después de la Conquista..., hacia 1529...\"): eso es discurso **narrativo**.\n\nSe antoja \"expositiva\" porque el tema es histórico, pero fíjate en el criterio: si predomina el relato de sucesos ordenados en el tiempo, es narración; la exposición organiza información por temas, no por acontecimientos."
           },
           {
             "id": 67,
@@ -923,7 +989,8 @@
               "D": "planteamiento, tesis, desarrollo y conclusión."
             },
             "answer": "B",
-            "context": "**La mente colectiva**\n\nEn su famosa novela *Más que humano* (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del *Homo sapiens*: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá inspirándose en ellas, muchos otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia.\n\nFuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros —y con nuestras crías— a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral.\n\nDiversas innovaciones tecnológicas —alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet— han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia, comparadas con las de otros organismos... y nos dan también un poder de destrucción que nunca había existido sobre el planeta.\n\nEl lenguaje, junto con otros inventos culturales —la educación, la discusión y el debate, la democracia—, ha permitido que los humanos comencemos a funcionar como una verdadera comunidad de organismos que podemos (al menos en teoría) tomar decisiones colectivamente, con miras al bien común.\n\nHoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad.\n\nConectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\n*Martín Bonfil Olivera*"
+            "context": "**La mente colectiva**\n\nEn su famosa novela *Más que humano* (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del *Homo sapiens*: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá inspirándose en ellas, muchos otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia.\n\nFuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros —y con nuestras crías— a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral.\n\nDiversas innovaciones tecnológicas —alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet— han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia, comparadas con las de otros organismos... y nos dan también un poder de destrucción que nunca había existido sobre el planeta.\n\nEl lenguaje, junto con otros inventos culturales —la educación, la discusión y el debate, la democracia—, ha permitido que los humanos comencemos a funcionar como una verdadera comunidad de organismos que podemos (al menos en teoría) tomar decisiones colectivamente, con miras al bien común.\n\nHoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad.\n\nConectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\n*Martín Bonfil Olivera*",
+            "explanation": "El texto de Bonfil es argumentativo, y sigue la estructura clásica de ese tipo de texto: una **introducción** (la novela de Sturgeon y los organismos colectivos, que preparan el tema), una **tesis** (la humanidad ya dio el paso para ser más que un conjunto de individuos, gracias al lenguaje), los **argumentos** que la sostienen (la cultura como información compartida, las tecnologías como \"prótesis\" mentales) y una **conclusión** (la discusión en red como embrión de la verdadera \"telepatía\" humana).\n\nLas otras opciones mezclan piezas sueltas (\"opinión\", \"planteamiento\") que no forman la secuencia canónica del texto argumentativo."
           },
           {
             "id": 68,
@@ -937,7 +1004,8 @@
               "D": "Las hormigas y abejas son \"organismos colectivos\"."
             },
             "answer": "A",
-            "context": "**La mente colectiva**\n\nEn su famosa novela *Más que humano* (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del *Homo sapiens*: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá inspirándose en ellas, muchos otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia.\n\nFuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros —y con nuestras crías— a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral.\n\nDiversas innovaciones tecnológicas —alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet— han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia, comparadas con las de otros organismos... y nos dan también un poder de destrucción que nunca había existido sobre el planeta.\n\nEl lenguaje, junto con otros inventos culturales —la educación, la discusión y el debate, la democracia—, ha permitido que los humanos comencemos a funcionar como una verdadera comunidad de organismos que podemos (al menos en teoría) tomar decisiones colectivamente, con miras al bien común.\n\nHoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad.\n\nConectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\n*Martín Bonfil Olivera*"
+            "context": "**La mente colectiva**\n\nEn su famosa novela *Más que humano* (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del *Homo sapiens*: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá inspirándose en ellas, muchos otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia.\n\nFuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros —y con nuestras crías— a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral.\n\nDiversas innovaciones tecnológicas —alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet— han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia, comparadas con las de otros organismos... y nos dan también un poder de destrucción que nunca había existido sobre el planeta.\n\nEl lenguaje, junto con otros inventos culturales —la educación, la discusión y el debate, la democracia—, ha permitido que los humanos comencemos a funcionar como una verdadera comunidad de organismos que podemos (al menos en teoría) tomar decisiones colectivamente, con miras al bien común.\n\nHoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad.\n\nConectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\n*Martín Bonfil Olivera*",
+            "explanation": "El segundo párrafo abre afirmando: \"En la naturaleza existen realmente estos 'organismos colectivos', como las colonias de hormigas o de abejas...\". Esa es la idea principal; todo lo demás del párrafo la desarrolla: las hormigas y abejas son el ejemplo, y los escritores de ciencia ficción inspirados en ellas son una consecuencia.\n\nLa opción D se antoja, pero es solo el ejemplo que ilustra la idea, no la idea misma: el párrafo no trata de hormigas, trata de que los organismos colectivos existen de verdad."
           },
           {
             "id": 69,
@@ -951,7 +1019,8 @@
               "D": "han sido creadas por el hombre, como una extensión de sus capacidades comunicativas, para vivir mejor."
             },
             "answer": "D",
-            "context": "**La mente colectiva**\n\nEn su famosa novela *Más que humano* (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del *Homo sapiens*: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá inspirándose en ellas, muchos otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia.\n\nFuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros —y con nuestras crías— a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral.\n\nDiversas innovaciones tecnológicas —alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet— han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia, comparadas con las de otros organismos... y nos dan también un poder de destrucción que nunca había existido sobre el planeta.\n\nEl lenguaje, junto con otros inventos culturales —la educación, la discusión y el debate, la democracia—, ha permitido que los humanos comencemos a funcionar como una verdadera comunidad de organismos que podemos (al menos en teoría) tomar decisiones colectivamente, con miras al bien común.\n\nHoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad.\n\nConectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\n*Martín Bonfil Olivera*"
+            "context": "**La mente colectiva**\n\nEn su famosa novela *Más que humano* (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del *Homo sapiens*: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá inspirándose en ellas, muchos otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia.\n\nFuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros —y con nuestras crías— a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral.\n\nDiversas innovaciones tecnológicas —alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet— han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia, comparadas con las de otros organismos... y nos dan también un poder de destrucción que nunca había existido sobre el planeta.\n\nEl lenguaje, junto con otros inventos culturales —la educación, la discusión y el debate, la democracia—, ha permitido que los humanos comencemos a funcionar como una verdadera comunidad de organismos que podemos (al menos en teoría) tomar decisiones colectivamente, con miras al bien común.\n\nHoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad.\n\nConectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\n*Martín Bonfil Olivera*",
+            "explanation": "Una prótesis es algo creado para extender o suplir una capacidad del cuerpo. Al llamar \"prótesis mentales y culturales\" al alfabeto, los libros, las computadoras o internet, el autor dice que son creaciones humanas que **extienden** nuestras capacidades de comunicación —el texto mismo lo indica: \"al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia\". Eso es justo lo que enuncia la opción D: extensiones de las capacidades comunicativas creadas por el hombre para vivir mejor.\n\nLa opción C toma la parte del \"poder de destrucción\", pero esa es una consecuencia lateral que menciona el autor, no lo que implica la metáfora de la prótesis."
           },
           {
             "id": 70,
@@ -965,7 +1034,8 @@
               "D": "Organismos colectivos, computadoras y productos culturales."
             },
             "answer": "B",
-            "context": "**La mente colectiva**\n\nEn su famosa novela *Más que humano* (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del *Homo sapiens*: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá inspirándose en ellas, muchos otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia.\n\nFuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros —y con nuestras crías— a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral.\n\nDiversas innovaciones tecnológicas —alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet— han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia, comparadas con las de otros organismos... y nos dan también un poder de destrucción que nunca había existido sobre el planeta.\n\nEl lenguaje, junto con otros inventos culturales —la educación, la discusión y el debate, la democracia—, ha permitido que los humanos comencemos a funcionar como una verdadera comunidad de organismos que podemos (al menos en teoría) tomar decisiones colectivamente, con miras al bien común.\n\nHoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad.\n\nConectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\n*Martín Bonfil Olivera*"
+            "context": "**La mente colectiva**\n\nEn su famosa novela *Más que humano* (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del *Homo sapiens*: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá inspirándose en ellas, muchos otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia.\n\nFuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros —y con nuestras crías— a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral.\n\nDiversas innovaciones tecnológicas —alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet— han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia, comparadas con las de otros organismos... y nos dan también un poder de destrucción que nunca había existido sobre el planeta.\n\nEl lenguaje, junto con otros inventos culturales —la educación, la discusión y el debate, la democracia—, ha permitido que los humanos comencemos a funcionar como una verdadera comunidad de organismos que podemos (al menos en teoría) tomar decisiones colectivamente, con miras al bien común.\n\nHoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad.\n\nConectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\n*Martín Bonfil Olivera*",
+            "explanation": "Recorre los hilos que atraviesan todo el texto: el **lenguaje** (la \"telepatía rudimentaria\" que sostiene la cultura), los **productos culturales** (fuego, agricultura, escritura, gobierno, educación, arte...) y la **tecnología** (alfabeto, imprenta, computadoras, internet, redes sociales). Esos tres temas aparecen de principio a fin y sostienen el argumento.\n\nLas otras opciones cuelan elementos que solo son menciones de paso: la literatura de ficción es apenas el arranque (Sturgeon) y las hormigas un ejemplo puntual, no temas que el autor desarrolle."
           },
           {
             "id": 71,
@@ -979,7 +1049,8 @@
               "D": "describir aspectos del pensamiento colectivo."
             },
             "answer": "C",
-            "context": "**La mente colectiva**\n\nEn su famosa novela *Más que humano* (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del *Homo sapiens*: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá inspirándose en ellas, muchos otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia.\n\nFuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros —y con nuestras crías— a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral.\n\nDiversas innovaciones tecnológicas —alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet— han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia, comparadas con las de otros organismos... y nos dan también un poder de destrucción que nunca había existido sobre el planeta.\n\nEl lenguaje, junto con otros inventos culturales —la educación, la discusión y el debate, la democracia—, ha permitido que los humanos comencemos a funcionar como una verdadera comunidad de organismos que podemos (al menos en teoría) tomar decisiones colectivamente, con miras al bien común.\n\nHoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad.\n\nConectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\n*Martín Bonfil Olivera*"
+            "context": "**La mente colectiva**\n\nEn su famosa novela *Más que humano* (1953), el escritor estadounidense Theodore Sturgeon plantea el surgimiento del siguiente paso evolutivo del *Homo sapiens*: un colectivo de seis individuos con distintas capacidades que, unidos por telepatía, conforman un organismo múltiple en el que cada uno colabora por el bien de todos.\n\nEn la naturaleza existen realmente estos \"organismos colectivos\", como las colonias de hormigas o de abejas, constituidos por muchos cuerpos con un genoma compartido que trabajan por el bienestar común. Quizá inspirándose en ellas, muchos otros escritores de ciencia ficción han soñado que la humanidad, a través de múltiples mentes conectadas mediante algo semejante a la telepatía, podría llegar a formar un \"superorganismo\".\n\nDesgraciadamente, la transmisión de pensamiento no pasa de ser una fantasía: no hay ningún mecanismo físico o fisiológico que pudiera darle sustento. Sin embargo quizá la humanidad, en cierta forma, ha dado ya el paso para convertirse en algo más que un simple conjunto de individuos.\n\nEn efecto: desde que nuestra especie desarrolló un lenguaje, y con él una cultura, los humanos comenzamos a intercambiar información cultural que no forma parte de nuestro acervo genético, pero que también aumenta nuestra adaptación al medio y favorece así nuestra supervivencia.\n\nFuego, agricultura, escritura, gobierno, arquitectura e ingeniería, educación, industria, ciencia y tecnología, arte... todos son productos culturales que los humanos compartimos unos con otros —y con nuestras crías— a través de la comunicación. El lenguaje es una especie de \"telepatía\" rudimentaria que nos permite mantener un acervo compartido en los cerebros de toda la población: una cultura. Y la escritura es, asimismo, una forma tosca de \"memoria\" extracerebral.\n\nDiversas innovaciones tecnológicas —alfabeto, papel, libros, imprenta, bibliotecas, y más recientemente computadoras e internet— han sido \"prótesis\" mentales y culturales que, al potenciar la comunicación, aumentan nuestras posibilidades de acción y supervivencia, comparadas con las de otros organismos... y nos dan también un poder de destrucción que nunca había existido sobre el planeta.\n\nEl lenguaje, junto con otros inventos culturales —la educación, la discusión y el debate, la democracia—, ha permitido que los humanos comencemos a funcionar como una verdadera comunidad de organismos que podemos (al menos en teoría) tomar decisiones colectivamente, con miras al bien común.\n\nHoy es en las redes sociales donde se lleva a cabo, de manera cada vez más amplia e intensa, esta constante discusión comunitaria. Y ya está teniendo impacto en las decisiones que tomamos como sociedad.\n\nConectados mediante la red estamos pensando colectivamente, como sociedad, más intensamente que nunca. Y lo hacemos no mediante la transmisión del pensamiento, sino mediante la discusión. Quizá éste sea el embrión de la verdadera \"telepatía\" humana.\n\n*Martín Bonfil Olivera*",
+            "explanation": "El autor no se limita a informar ni a describir: defiende una postura. Plantea una tesis —la humanidad ya piensa colectivamente gracias al lenguaje y la cultura— y la va sosteniendo con razones y ejemplos hasta cerrar con su conclusión: \"Conectados mediante la red estamos pensando colectivamente... Quizá éste sea el embrión de la verdadera 'telepatía' humana\". Cuando hay tesis más razones que la respaldan, la intención es **argumentar**.\n\nLa opción B tienta porque el texto trae mucha información, pero esa información está al servicio de convencerte de la tesis, no es el fin en sí."
           },
           {
             "id": 72,
@@ -992,7 +1063,8 @@
               "C": "Los restos.",
               "D": "El dinosaurio."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El sujeto es quien realiza la acción del verbo. Pregúntale al verbo: ¿quiénes hallaron? **Los científicos**. Todo lo demás —los huesos, el dinosaurio, los restos— es lo hallado, o sea el complemento directo del predicado.\n\nUna prueba rápida: cambia el sujeto de número y el verbo debe cambiar con él (\"El científico halló...\"); si cambias \"los huesos\" a singular, el verbo ni se inmuta, señal de que no son el sujeto."
           },
           {
             "id": 73,
@@ -1005,7 +1077,8 @@
               "C": "Hoy, mañana y siempre.",
               "D": "Las cuentas del gran capitán."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El objeto directo es lo que recibe directamente la acción del verbo. En \"Compró la computadora\" hay verbo transitivo (compró) y aquello que fue comprado: **la computadora**. Prueba de la sustitución: \"La compró\" — si puedes reemplazar por *la/lo*, es objeto directo.\n\nLas otras opciones ni siquiera tienen verbo: son puras frases nominales (\"Las pirámides de Teotihuacán\") o de tiempo (\"Hoy, mañana y siempre\"), y sin verbo no puede haber objeto directo."
           },
           {
             "id": 74,
@@ -1018,7 +1091,8 @@
               "C": "En la reunión se abordarán tres asuntos: diseñar un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; y buscar proveedores más cumplidos. También se harán propuestas para abrir nuevas sucursales.",
               "D": "En la reunión se abordarán tres asuntos: cómo diseñar un manual de operaciones; el seguimiento a los pedidos de los nuevos clientes; la búsqueda de proveedores más cumplidos. Finalmente, se harán propuestas para abrir nuevas sucursales."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El párrafo anuncia \"tres asuntos\", así que la enumeración debe traer exactamente tres elementos **paralelos** (con la misma forma gramatical) y lo demás fuera de la lista. La opción B lo cumple: tres sustantivos coordinados —el diseño..., el seguimiento..., y la búsqueda...— y las propuestas de sucursales en oración aparte, porque no eran uno de los tres asuntos.\n\nLas otras rompen el paralelismo mezclando sustantivos con infinitivos (\"diseñar\", \"buscar\", \"cómo diseñar\") o cuelan un cuarto elemento dentro de la enumeración, contradiciendo el \"tres asuntos\" del inicio."
           },
           {
             "id": 75,
@@ -1031,7 +1105,8 @@
               "C": "más — en conclusión — con",
               "D": "pero — en consecuencia — con"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Analiza qué pide cada hueco. El primero necesita un adversativo (querían algo, **pero** no cumplían los requisitos). El segundo, un conector de consecuencia: **en consecuencia**, tuvieron que resignarse. Y el verbo cierra con su preposición: resignarse **con** algo. La secuencia \"pero — en consecuencia — con\" arma el párrafo con lógica y cohesión.\n\nLa opción C cae por el primer hueco: \"más\" con tilde es de cantidad; el adversativo se escribe \"mas\", sin tilde."
           },
           {
             "id": 76,
@@ -1044,7 +1119,8 @@
               "C": "Todo fue puesto por nuestro señor Inkarrí: las montañas, los animales, la nube, la lluvia. Él creó todo lo que existe para nosotros. Formó a Womani, nuestro segundo dios, que habita en las montañas. Inkarrí formó la pampa, hirvió el vino, la chicha, el aguardiente.",
               "D": "La carretera convirtió a Puquio, de una pequeña ciudad de terratenientes e indios, en un centro comercial activo. Las antiguas normas están siendo rotas con rapidez."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La opción C es la única que combina puntuación completa, oraciones bien delimitadas y unidad temática: todas sus oraciones desarrollan la misma idea (Inkarrí como creador) en orden lógico y sin cabos sueltos.\n\nLa A es la falla evidente: es una tira de oraciones sin ningún signo de puntuación. La B mezcla registros descuidados y saltos de idea (\"su cuerpecito está allí resucitando hacia abajo\") que rompen la coherencia, y la D junta dos ideas sin conexión entre sí (la carretera y las normas) sin desarrollar ninguna."
           },
           {
             "id": 77,
@@ -1057,7 +1133,8 @@
               "C": "Claridad.",
               "D": "Diáfano."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Un destello es una emisión breve e intensa de luz, y **fulgor** nombra exactamente eso: un resplandor, un brillo vivo. Además coinciden en categoría gramatical: ambos son sustantivos, condición necesaria para ser sinónimos.\n\n\"Luminoso\" y \"diáfano\" se antojan por el campo de la luz, pero son adjetivos: describen cualidades, no nombran el fenómeno. Y \"claridad\" es luz continua y difusa, no el brillo súbito del destello."
           },
           {
             "id": 78,
@@ -1070,7 +1147,8 @@
               "C": "Diseminado.",
               "D": "Mezclado."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Disperso significa separado, desparramado en distintas direcciones. Su antónimo debe expresar lo contrario: reunido, junto — es decir, **agrupado**.\n\nCuidado con \"esparcido\" y \"diseminado\": esos son *sinónimos* de disperso, y son el tropiezo clásico cuando se lee rápido y se contesta el sinónimo en un reactivo que pedía antónimo."
           },
           {
             "id": 79,
@@ -1083,7 +1161,8 @@
               "C": "Pronto adquirió la costumbre de desvelarse.",
               "D": "El muchacho vivía cómo un salvaje en la soledad."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La opción A está impecable: \"extraño\" se escribe con **x** y \"beso\" con **b**, dos palabras que suelen escribirse mal por su sonido.\n\nEl error más claro entre las variantes está en la D: \"cómo\" solo lleva tilde cuando es interrogativo o exclamativo; en \"vivía como un salvaje\" es comparativo y va sin tilde."
           },
           {
             "id": 80,
@@ -1096,7 +1175,8 @@
               "C": "El Coronel Juan Morales se apodera de un cañón montado en uno de los ángulos y aprovechándose de la confusión de los defensores, introduce a la fortaleza un buen número de soldados. Vuelve los cañones hacia el interior y empieza a disparar. Los tejanos se retiran al convento y a la iglesia, protegiéndose en barricadas de sacos de arena.",
               "D": "El Coronel Juan Morales se apodera de un cañón montado en uno de los ángulos y aprovechándose de la confusión de los defensores. Introduce a la fortaleza un buen número de soldados. Vuelve los cañones hacia el interior y empieza a disparar. Los tejanos se retiran al convento y a la iglesia. Protegiéndose en barricadas de sacos de arena."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La opción C delimita bien cada oración: el coronel se apodera del cañón e introduce **un buen número de soldados** a la fortaleza (ese complemento pertenece a esa oración); luego, en oración aparte, vuelve los cañones y dispara; y el gerundio \"protegiéndose...\" queda unido con coma a la oración de los tejanos, porque los que se protegen son ellos.\n\nLa B cambia el sentido con un punto mal puesto: hace que sean los soldados quienes vuelven los cañones. Y la A y la D dejan fragmentos sueltos que no son oraciones completas (\"Y empieza a disparar.\", \"Protegiéndose en barricadas...\"): un punto nunca debe dejar un pedazo sin verbo conjugado propio."
           }
         ]
       },
@@ -1115,7 +1195,8 @@
               "C": "Lisosoma.",
               "D": "Ribosoma."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El **ribosoma** es la maquinaria que traduce el ARN mensajero: va leyendo los codones y enlazando los aminoácidos correspondientes hasta armar la cadena polipeptídica. Por eso se dice que la síntesis de proteínas ocurre *en* los ribosomas, ya sea libres en el citoplasma o pegados al retículo endoplásmico rugoso.\n\nEl aparato de Golgi se antoja porque también trabaja con proteínas, pero él no las fabrica: las recibe ya hechas, las modifica (glucosilación) y las empaca para su destino final."
           },
           {
             "id": 82,
@@ -1128,7 +1209,8 @@
               "C": "Vitaminas.",
               "D": "Carbohidratos."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "\"Biocatalizador\" es la palabra clave: un catalizador acelera una reacción bajando su energía de activación sin consumirse, y en los seres vivos ese papel lo cumplen las **enzimas**, que son proteínas con un sitio activo específico para su sustrato.\n\nLas vitaminas son el distractor fuerte, pero varias solo funcionan como *coenzimas*: ayudan a la enzima, no catalizan por sí solas. Los lípidos y los carbohidratos son reserva de energía y estructura, no catálisis."
           },
           {
             "id": 83,
@@ -1141,7 +1223,8 @@
               "C": "Xilobiosa.",
               "D": "Almidón."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La fase oscura (ciclo de Calvin) usa el ATP y el NADPH que produjo la fase luminosa para fijar el $\\mathrm{CO}_2$ y armar azúcares. El producto que sale del ciclo es un azúcar sencillo, la **glucosa**, de fórmula $\\mathrm{C}_6\\mathrm{H}_{12}\\mathrm{O}_6$.\n\nAlmidón y celulosa se antojan, pero son *polisacáridos*: se forman después, uniendo muchas glucosas para almacenar (almidón) o para dar estructura a la pared celular (celulosa). La pregunta pide un monosacárido, y eso descarta las tres restantes."
           },
           {
             "id": 84,
@@ -1154,7 +1237,8 @@
               "C": "minúsculas y mayúsculas (bB).",
               "D": "minúsculas, mayúsculas y minúsculas (bBb)."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Mendel usó una convención muy simple: la misma letra para el par de alelos de un carácter, **mayúscula para el dominante y minúscula para el recesivo**. Así, $B$ es el alelo dominante y $b$ el recesivo.\n\nLas otras opciones no representan un carácter recesivo, sino genotipos completos: $Bb$ es un heterocigoto (y ahí el recesivo queda oculto). Un individuo recesivo se escribe $bb$, pero el *carácter* recesivo, como pide la pregunta, se simboliza con la letra minúscula."
           },
           {
             "id": 85,
@@ -1167,7 +1251,8 @@
               "C": "fenotipo.",
               "D": "cariotipo."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El **genotipo** es justamente el conjunto de información hereditaria codificada en el ADN de un organismo: los alelos que trae escritos, se expresen o no.\n\nEl fenotipo es el distractor obvio, pero ése es lo que sí se ve: el resultado de que el genotipo se exprese en un ambiente concreto (estatura, color de ojos). El cariotipo es solo el retrato del número y forma de los cromosomas, y el gameto es una célula sexual."
           },
           {
             "id": 86,
@@ -1180,7 +1265,8 @@
               "C": "Hemofilia.",
               "D": "Alemorfia."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La **hemofilia** es el ejemplo clásico de herencia ligada al sexo: el gen que codifica el factor de coagulación está en el cromosoma X y el alelo defectuoso es recesivo. Por eso los hombres ($XY$), que solo tienen una copia de X, la padecen mucho más, y las mujeres ($XX$) suelen ser portadoras sanas.\n\nLas ataxias y discinesias son trastornos neurológicos que en general se heredan por autosomas; \"alemorfia\" no corresponde a ninguna enfermedad."
           },
           {
             "id": 87,
@@ -1193,7 +1279,8 @@
               "C": "originan variabilidad fenotípica en los individuos menos aptos.",
               "D": "se producen en los individuos menos aptos."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las mutaciones son cambios al azar en el ADN y su papel evolutivo es ser la **fuente original de variabilidad**: sin ellas no habría diferencias heredables entre individuos y la selección natural no tendría nada sobre lo cual actuar. Primero surge la variación (al azar), después el ambiente favorece a los portadores más aptos.\n\nLas opciones C y D se antojan porque mencionan variabilidad, pero cometen el mismo error: las mutaciones no distinguen entre aptos y menos aptos, ocurren en cualquier individuo. Y eliminar a los débiles no es tarea de la mutación, sino de la selección."
           },
           {
             "id": 88,
@@ -1206,7 +1293,8 @@
               "C": "Insulina.",
               "D": "Miosina."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La **insulina humana** fue el primer producto comercial de la ingeniería genética: se inserta el gen humano de la insulina en un plásmido, se introduce en bacterias (o levaduras) y éstas la producen en cultivo. Antes se extraía de páncreas de cerdo o res.\n\nEl hierro se descarta de inmediato porque no es una proteína, sino un elemento. Hemoglobina y miosina sí son proteínas, pero no son las que se producen industrialmente con ADN recombinante para uso médico masivo."
           },
           {
             "id": 89,
@@ -1219,7 +1307,8 @@
               "C": "Levadura.",
               "D": "Esponja."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El reino protista agrupa organismos eucariontes que no encajan en animales, plantas ni hongos, y ahí entran las **algas** (unicelulares y varias pluricelulares como las algas verdes y las rojas), junto con protozoarios y mohos mucilaginosos.\n\nCuidado con los otros tres: el helecho es una planta vascular, la levadura es un hongo unicelular y la esponja, aunque parezca poca cosa, es un animal (reino Animalia)."
           },
           {
             "id": 90,
@@ -1232,7 +1321,8 @@
               "C": "Bioma.",
               "D": "Comunidad."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La definición pide tres cosas: misma especie, misma área geográfica y que se reproduzcan entre sí. Eso es exactamente una **población**.\n\nLa comunidad es el distractor que más se antoja, pero ahí conviven poblaciones de *especies distintas*; si le sumas el medio físico (suelo, agua, clima) tienes un ecosistema, y si hablas de una región enorme con clima y vegetación característicos, un bioma. La pista está en \"misma especie\": eso baja el nivel a población."
           }
         ]
       },
@@ -1251,7 +1341,8 @@
               "C": "Sociología.",
               "D": "Filosofía."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La **Historia** es la disciplina que investiga, ordena y explica los hechos del pasado humano, y lo hace precisamente para entender cómo llegamos al presente: no es un catálogo de fechas, sino una explicación de procesos.\n\nLa sociología también estudia lo social, pero se centra en la sociedad actual y en sus estructuras, no en la sistematización del pasado; la antropología estudia al ser humano y su cultura, y la filosofía reflexiona sobre problemas generales del pensamiento y la existencia."
           },
           {
             "id": 92,
@@ -1264,7 +1355,8 @@
               "C": "el triunfo en la Guerra de Siete Años.",
               "D": "el diseñó y construyó el ferrocarril."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La Revolución Industrial arrancó en Inglaterra por la **industria textil**: fue ahí donde se aplicaron las primeras máquinas (la spinning jenny, el telar mecánico, la máquina de vapor aplicada a las hilanderías), gracias a la lana y al algodón que llegaba de las colonias y a la demanda de un mercado en crecimiento.\n\nEl ferrocarril se antoja, pero es consecuencia, no causa: aparece hacia 1825, cuando la industrialización ya estaba en marcha, y sirvió para acelerarla."
           },
           {
             "id": 93,
@@ -1277,7 +1369,8 @@
               "C": "Napoleón III — Inglaterra",
               "D": "Carlos X — Francia"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El enemigo de la unificación italiana fue **Austria**, que dominaba Lombardía y el Véneto y sostenía a los príncipes de la península; contra ella pelearon los reyes de Piamonte-Cerdeña y también **Garibaldi**, cuya campaña de los Camisas Rojas en el sur permitió que Víctor Manuel II fuera proclamado rey de Italia en 1861.\n\nOjo con la opción A: Carlos Alberto sí encabezó la primera guerra (1848), pero contra Austria, no contra Prusia; en cuanto lees \"Prusia\" queda descartada, porque ése es el pleito de la unificación *alemana*."
           },
           {
             "id": 94,
@@ -1290,7 +1383,8 @@
               "C": "la Revolución Industrial.",
               "D": "la Revolución Agrícola."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Las potencias industriales del siglo XIX necesitaban dos cosas que ya no encontraban en Europa: materias primas baratas (caucho, algodón, minerales) y mercados nuevos donde vender su producción excedente. Esa doble necesidad las llevó a repartirse África y Asia, es decir, al **imperialismo europeo**, formalizado en la Conferencia de Berlín (1884-1885).\n\nLa Revolución Industrial se antoja, pero es la causa previa: fue ella la que generó esa necesidad de materias primas y mercados, no el resultado de ella."
           },
           {
             "id": 95,
@@ -1303,7 +1397,8 @@
               "C": "la invasión alemana a Francia.",
               "D": "la crisis de 1929."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El detonante fue el **asesinato del archiduque Francisco Fernando**, heredero del trono austro-húngaro, en Sarajevo, el 28 de junio de 1914, a manos de un nacionalista serbio. Austria-Hungría le dio un ultimátum a Serbia y, por el juego de alianzas, en semanas media Europa estaba en guerra.\n\nLa Triple Alianza no es el incidente sino el sistema de alianzas que ya existía desde 1882 y que convirtió un pleito local en guerra mundial. La crisis de 1929 ni entra: es quince años posterior."
           },
           {
             "id": 96,
@@ -1316,7 +1411,8 @@
               "C": "la rivalidad con Alemania.",
               "D": "el surgimiento del fascismo."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La crisis se desató con el desplome de la **Bolsa de Nueva York** en octubre de 1929 (el \"jueves negro\" y el \"martes negro\"): años de especulación con acciones compradas a crédito reventaron, las acciones se volvieron papel sin valor, quebraron bancos y con ellos el crédito, el consumo y el empleo.\n\nEl keynesianismo es el distractor de tiempo: no causó la crisis, fue la respuesta a ella; las políticas de gasto público del New Deal se inspiran en Keynes y vienen *después* de 1929."
           },
           {
             "id": 97,
@@ -1329,7 +1425,8 @@
               "C": "la Unión Soviética.",
               "D": "Estados Unidos."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Esas tres operaciones son alemanas: la invasión de Polonia (septiembre de 1939), la ocupación de Dinamarca y Noruega (1940) y la Operación Barbarroja, el ataque a la Unión Soviética (junio de 1941). Alemania actuaba como cabeza del bloque **Eje Berlín-Roma-Tokio**, junto con la Italia de Mussolini y el Japón imperial.\n\nLa Triple Alianza es la trampa: ese nombre corresponde al bloque de la Primera Guerra Mundial (1882), no a la Segunda. Y la URSS no fue el agresor aquí, fue la víctima de Barbarroja."
           },
           {
             "id": 98,
@@ -1342,7 +1439,8 @@
               "C": "de los Seis Días.",
               "D": "Fría."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La **Guerra Fría** (1947-1991) se llama así justamente porque las dos superpotencias nunca se enfrentaron de manera directa: competían con carrera armamentista, espionaje, propaganda, ayuda económica y guerras por interpósita persona (Corea, Vietnam, Afganistán), cada una defendiendo su modelo político y económico.\n\nLas otras tres opciones son conflictos concretos y localizados en el Medio Oriente, con ejércitos peleando de frente; varios ocurrieron *dentro* de la Guerra Fría, pero ninguno es el nombre del enfrentamiento global."
           },
           {
             "id": 99,
@@ -1355,7 +1453,8 @@
               "C": "Dictadura de Duvalier.",
               "D": "Iniciativa de Defensa Estratégica."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En octubre de 1962, aviones espía estadounidenses detectaron que la URSS estaba instalando en Cuba misiles nucleares de alcance medio, además del armamento y las embarcaciones que ya había desembarcado. Eso desató la **Crisis de los Misiles**: Kennedy bloqueó la isla, hubo trece días al filo de la guerra nuclear y se resolvió con el retiro de los misiles soviéticos a cambio de no invadir Cuba y de sacar los cohetes estadounidenses de Turquía.\n\nLa Revolución Sandinista es de Nicaragua y ocurre en 1979; la Iniciativa de Defensa Estratégica (\"guerra de las galaxias\") es de Reagan, en los años ochenta."
           },
           {
             "id": 100,
@@ -1368,7 +1467,8 @@
               "C": "Globalización.",
               "D": "Comunismo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Los tres rasgos apuntan al mismo fenómeno: la **globalización**. Facilita el comercio mundial porque abarata transporte y comunicaciones y abre fronteras a mercancías y capitales; vuelve las crisis contagiosas, porque al estar todo interconectado un desplome en un país arrastra a los demás (1994, 2008); y homogeneiza consumos y costumbres, esa \"cultura unificada\" de las mismas marcas y series en todo el planeta.\n\nEl neoliberalismo se antoja mucho, pero es la *política económica* (privatizar, desregular, abrir mercados) que impulsó el proceso; la globalización es el proceso mismo, y su rasgo cultural no lo explica el neoliberalismo."
           }
         ]
       },
@@ -1387,7 +1487,8 @@
               "C": "agricultura.",
               "D": "recolección."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Mesoamérica se define, entre otras cosas, por ser un área de pueblos **agrícolas** sedentarios: el cultivo del maíz —junto con frijol, calabaza y chile— sostuvo a la población, permitió excedentes y con ellos ciudades, templos, comercio y una clase gobernante. De ahí técnicas como la milpa y las chinampas.\n\nCaza, pesca y recolección son las actividades de los pueblos nómadas, anteriores a la revolución agrícola (o de Aridoamérica); en Mesoamérica siguieron existiendo, pero solo como complemento de la agricultura."
           },
           {
             "id": 102,
@@ -1400,7 +1501,8 @@
               "C": "Consolidación de Vales Reales.",
               "D": "Adopción de las ideas de la Ilustración."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "\"Causa interna\" significa que ocurrió dentro de la Nueva España, y ésa es la **Consolidación de Vales Reales** (1804): la Corona ordenó que la Iglesia recogiera de golpe los capitales que tenía prestados a hacendados y comerciantes criollos, para pagar sus guerras en Europa. El resultado fue la ruina de muchas familias criollas y un enojo profundo contra el gobierno español.\n\nLas otras tres son causas *externas*: la invasión napoleónica a España y la independencia de las Trece Colonias pasaron fuera, y la Ilustración fue una corriente de ideas llegada de Europa."
           },
           {
             "id": 103,
@@ -1413,7 +1515,8 @@
               "C": "Guerra de los pasteles.",
               "D": "Guerra de Texas."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El primer conflicto con el exterior que le tocó ya como presidente a Santa Anna fue la **Guerra de Texas** (1835-1836): los colonos angloamericanos se levantaron, él marchó al norte, ganó en El Álamo y perdió en San Jacinto, donde cayó prisionero y firmó los Tratados de Velasco.\n\nLa Guerra de los Pasteles se antoja, pero es posterior (1838), y la expedición española de Barradas fue en 1829, cuando Santa Anna todavía no gobernaba: la enfrentó como militar, bajo la presidencia de Vicente Guerrero. La venta de la Mesilla (1853) no fue una guerra."
           },
           {
             "id": 104,
@@ -1426,7 +1529,8 @@
               "C": "Constitución de 1822.",
               "D": "Constitución de 1814."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Es la **Constitución de 1857**, la obra de los liberales reunidos en el Congreso Constituyente: garantizó las libertades de enseñanza, imprenta, trabajo y asociación, incorporó la Ley Lerdo que prohibía a las corporaciones civiles y eclesiásticas poseer bienes raíces, y estableció una república representativa, democrática y federal.\n\nLa de 1824 es el distractor fuerte porque también fue federal y republicana, pero no tocó los bienes de la Iglesia: al contrario, declaró al catolicismo religión única del Estado. La de 1814 (Apatzingán) y la de 1822 corresponden a la etapa de la Independencia y el Imperio de Iturbide."
           },
           {
             "id": 105,
@@ -1439,7 +1543,8 @@
               "C": "la prohibición a la inversión privada.",
               "D": "las concesiones a los inversionistas extranjeros."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El modelo económico del Porfiriato se basó en atraer capital de fuera con **concesiones a los inversionistas extranjeros**: exenciones de impuestos, tierras, y subsuelo entregado a compañías inglesas y estadounidenses para ferrocarriles, minería y petróleo. Con eso hubo crecimiento y obra pública, pero también dependencia y una riqueza muy mal repartida.\n\nLa nacionalización de la minería y la prohibición a la inversión privada son justo lo contrario de lo que hizo Díaz; la nacionalización del petróleo llegaría hasta 1938, con Cárdenas."
           },
           {
             "id": 106,
@@ -1452,7 +1557,8 @@
               "C": "el Milagro Mexicano.",
               "D": "la Unidad Nacional."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Esas dos cosas —más de treinta años de reelecciones y la represión de obreros (Cananea 1906, Río Blanco 1907), campesinos e indígenas despojados de sus tierras— son las causas que detonaron la **Revolución Mexicana**, iniciada el 20 de noviembre de 1910 con el Plan de San Luis de Madero y su lema \"Sufragio efectivo, no reelección\".\n\nLas otras tres son etapas posteriores: el Maximato es el periodo en que Calles manda tras bambalinas (1928-1934), el Milagro Mexicano es el crecimiento económico de los años cuarenta a sesenta y la Unidad Nacional es la política de Ávila Camacho."
           },
           {
             "id": 107,
@@ -1465,7 +1571,8 @@
               "C": "Plutarco Elías Calles.",
               "D": "Venustiano Carranza."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Ambas cosas ocurrieron durante la presidencia de **Álvaro Obregón** (1920-1924): los Acuerdos de Bucareli (1923), con los que Estados Unidos reconoció a su gobierno a cambio de no aplicar retroactivamente el artículo 27 a las compañías petroleras, y la creación de la Secretaría de Educación Pública (1921), encargada a José Vasconcelos, con su campaña de alfabetización, misiones culturales y muralismo.\n\nCarranza se antoja porque es de la misma etapa, pero él cae en 1920, antes de las dos medidas; De la Huerta fue presidente interino solo unos meses de 1920 y Calles llega después, en 1924."
           },
           {
             "id": 108,
@@ -1478,7 +1585,8 @@
               "C": "Álvaro Obregón.",
               "D": "Lázaro Cárdenas."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Las cuatro son obra de **Lázaro Cárdenas** (1934-1940): llegó al poder con el Plan Sexenal trazado por el partido, fundó el Instituto Politécnico Nacional en 1936 para formar técnicos e ingenieros al servicio del país, repartió más de 18 millones de hectáreas en ejidos y el 18 de marzo de 1938 decretó la expropiación petrolera, de la que nació Pemex.\n\nPortes Gil y Ortiz Rubio se antojan por ser inmediatamente anteriores, pero son presidentes del Maximato, sometidos a Calles; Obregón es de la década de 1920."
           },
           {
             "id": 109,
@@ -1491,7 +1599,8 @@
               "C": "el equilibrio de la balanza comercial.",
               "D": "la expansión del mercado externo."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Ávila Camacho gobernó (1940-1946) en plena Segunda Guerra Mundial: como Europa y Estados Unidos dedicaban sus fábricas a la guerra y dejaron de vender manufacturas, México empezó a producir internamente lo que antes importaba. Ése es el modelo de **sustitución de importaciones**, con protección arancelaria e impulso a la industria nacional, que sería la base del llamado Milagro Mexicano.\n\nLa expansión del mercado externo se antoja porque en esos años sí se exportó mucha materia prima, pero eso fue una coyuntura de la guerra, no la característica del modelo; el apoyo a los reclamos sindicales tampoco, pues su política de \"unidad nacional\" pedía justo lo contrario: no hacer huelgas."
           },
           {
             "id": 110,
@@ -1504,7 +1613,8 @@
               "C": "Privatización de la educación.",
               "D": "Aumento de la participación de empresas privadas."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El Desarrollo Compartido de Echeverría (1970-1976) buscaba repartir mejor los frutos del crecimiento sin romper con el capital: el Estado creció mucho (compró y creó empresas paraestatales), pero al mismo tiempo se apoyó en la iniciativa privada con crédito, subsidios y protección, de modo que **aumentó la participación de las empresas privadas** en la economía.\n\nLas otras dos se descartan por fecha o por sentido: la nacionalización de la banca la decretó López Portillo en 1982, y las importaciones no bajaron en ese sexenio, crecieron, junto con la deuda externa y el déficit."
           }
         ]
       },
@@ -1523,7 +1633,8 @@
               "C": "Exclamativa.",
               "D": "Declarativa."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La función **directiva** (o apelativa) busca influir en la conducta del oyente: ordenar, pedir, aconsejar, prohibir. Aquí el \"No debes saquear, vender o maltratar...\" está dirigido a un tú y le indica cómo actuar; ni describe ni expresa sentimientos, manda.\n\nLa declarativa se antoja porque la oración está en forma enunciativa, pero una función declarativa (o referencial) informa sobre hechos que se pueden verificar como verdaderos o falsos; ésta no informa nada, exige una conducta."
           },
           {
             "id": 112,
@@ -1536,7 +1647,8 @@
               "C": "$(P\\to Q)\\cdot R$",
               "D": "$(Q\\lor R)\\cdot P$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Ordena la oración por partes: \"Si la llevo al cine\" es el antecedente, llámalo $P$; \"le pago el boleto\" es $Q$ y \"la llevo a su casa\" es $R$. El \"si..., entonces...\" es una implicación, y las dos consecuencias están unidas por \"y\", que es conjunción. Así que el consecuente es todo el bloque $Q\\\\cdot R$:\n\n$$P\\\\to (Q\\\\cdot R)$$\n\nOjo con la opción C, $(P\\\\to Q)\\\\cdot R$: ahí el paréntesis cambia el sentido, porque afirmaría $R$ por separado (\"la llevo a su casa\", pase lo que pase). Los paréntesis mandan: todo lo que sigue al \"entonces\" va junto dentro de ellos."
           },
           {
             "id": 113,
@@ -1549,7 +1661,8 @@
               "C": "Juan está enfermo de gripa y tos. Le comenté que se llevara un suéter y no me hizo caso, ahora por eso está enfermo.",
               "D": "La mayoría de los votantes en México ascienden a la edad de entre 18 y 30 años, por lo tanto, son los jóvenes los que eligieron este nuevo presidente."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En un razonamiento **deductivo** se parte de una premisa general y se aplica a un caso particular, de modo que si las premisas son verdaderas la conclusión se sigue con necesidad. La opción A hace exactamente eso: la premisa universal es \"todos los seres humanos requieren alimentos para vivir\" y de ahí se concluye lo que te pasará a *ti*, un caso particular.\n\nLas demás van al revés o fallan: B y D son inductivas, porque generalizan a partir de casos o de una mayoría (\"la mayoría de los votantes... por lo tanto los jóvenes eligieron\"), y C no es deducción sino una causa supuesta a partir de que un hecho ocurrió después de otro."
           },
           {
             "id": 114,
@@ -1562,7 +1675,8 @@
               "C": "IV y V",
               "D": "III y V"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Un acto moral necesita tres cosas: que sea libre, que se haga con conciencia de lo que se elige y que sus consecuencias **afecten a otros** conforme a valores como la justicia o el deber. Con ese filtro pasan **II y III**: iniciar un divorcio tras deliberar involucra a la pareja, a los hijos y compromisos asumidos; denunciar un ilícito \"por considerarlo justo\" es una elección hecha en nombre de un valor.\n\nI, IV y V son actos libres, pero moralmente indiferentes: escoger escultura o pintura es cuestión de gusto y espacio, la dieta es un asunto de conveniencia personal y fijar la fecha de un examen según el calendario es una decisión técnica o administrativa."
           },
           {
             "id": 115,
@@ -1575,7 +1689,8 @@
               "C": "Rocío decide limpiar su armario y sale a comprar cajas de cartón para guardar lo que desechará.",
               "D": "Pedro busca trabajo para sostener a su familia, se prepara para los exámenes, pero no consigue la plaza."
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Hay responsabilidad moral cuando el sujeto actúa con **libertad y conocimiento**, y su acción tiene consecuencias que le son imputables. El caso de **Pedro** cumple: nadie lo obliga, sabe lo que hace y asume el deber de sostener a su familia; que no consiga la plaza no le quita mérito, porque respondió con lo que estaba en sus manos.\n\nLos otros tres no califican: María se contagia sin elegirlo (no hay libertad), a Juan le toca el premio por azar y Rocío toma una decisión libre pero sin contenido moral alguno, pues limpiar el armario no afecta a nadie."
           },
           {
             "id": 116,
@@ -1588,7 +1703,8 @@
               "C": "Realizar la transfusión sanguínea para salvar la vida del paciente a pesar de las consecuencias.",
               "D": "No realizar la transfusión sanguínea para conservar su trabajo."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Actuar de manera **autónoma** significa darse la norma a uno mismo y obrar por convicción propia, no por presiones externas. De las cuatro opciones, solo la C tiene un motivo interno: el médico decide conforme al deber que él mismo reconoce —salvar la vida— y acepta cargar con las consecuencias.\n\nLas otras tres son ejemplos de **heteronomía**, aunque apunten a lados opuestos: no transfundir por miedo a un pleito legal o por conservar el empleo, y transfundir para que los colegas lo aplaudan. En los tres casos lo que decide no es la conciencia del médico, sino algo de fuera."
           },
           {
             "id": 117,
@@ -1601,7 +1717,8 @@
               "C": "Subjetivista.",
               "D": "Utilitarista."
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La postura **subjetivista** sostiene que los valores no existen en las cosas mismas, sino que dependen del sujeto que valora: valen porque alguien los aprecia. Fíjate en la frase \"el valor de la vida depende de quién está vivo\" y en el remate de que nadie puede juzgarla \"en los zapatos de los demás\": el valor queda amarrado a la vivencia de cada quien y por eso se niega todo juicio externo.\n\nLo contrario es el objetivismo, que afirma que el valor está en el objeto y es válido para todos, con independencia de lo que cada uno sienta. Pragmatismo (vale lo útil) y utilitarismo (vale lo que da mayor bienestar al mayor número) no aparecen en el texto: aquí no se mide utilidad ni consecuencias."
           },
           {
             "id": 118,
@@ -1614,7 +1731,8 @@
               "C": "Cómico.",
               "D": "Trágico."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Lo **sublime** es la categoría estética que nombra la mezcla de asombro y estremecimiento ante algo inmenso o desbordante, que nos rebasa y hasta nos amenaza, pero que podemos contemplar sin peligro. Una tormenta en el mar de noche, vista desde la seguridad de una ventana, es el ejemplo de manual: hay temor y a la vez placer, porque estás a salvo.\n\nLo bello es el distractor natural, pero lo bello supone armonía, proporción y agrado sereno; en la tormenta lo que impresiona es precisamente lo desmedido. Lo trágico exige un destino humano que se cumple y lo cómico, la ruptura que provoca risa: ninguna de las dos aparece aquí."
           },
           {
             "id": 119,
@@ -1627,7 +1745,8 @@
               "C": "axiológico.",
               "D": "político."
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El problema es **ontológico** porque Sartre no discute qué es bueno o malo, sino qué *es* el ser humano: al no haber Dios ni naturaleza humana dada de antemano, tampoco hay determinismo ni esencia previa. De ahí el remate \"el hombre es libre, el hombre es libertad\": la libertad no es un adorno del hombre, es su modo de ser, aquello en que consiste.\n\nLo axiológico se antoja por el \"todo está permitido\" y el tema de los valores, pero eso es consecuencia, no el centro: los valores quedan sin fundamento *porque* antes se afirmó que el hombre existe sin esencia previa."
           },
           {
             "id": 120,
@@ -1640,7 +1759,8 @@
               "C": "Ontología.",
               "D": "Metafísica."
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La **epistemología** (o teoría del conocimiento) estudia el conocimiento mismo: su origen, sus límites, sus condiciones de validez y cómo distinguirlo de la simple opinión.\n\nLa lógica se antoja, pero ella se ocupa de la *forma* del razonamiento válido, no del conocimiento en general. La ontología y la metafísica estudian el ser y la realidad, es decir, el *objeto* que se conoce, no el acto de conocerlo."
           }
         ]
       }
