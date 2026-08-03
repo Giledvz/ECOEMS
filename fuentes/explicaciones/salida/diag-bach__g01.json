@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "explanation": "Aquí no hay una sucesión, hay dos entreveradas. Toma los términos en posición impar: $60, 48, 36, \\ldots$, van bajando de 12 en 12, así que sigue $36-12=24$. Ahora los de posición par: $17, 14, 11, \\ldots$, bajan de 3 en 3, y sigue $11-3=8$.\n\nPor eso los que continúan son $24$ y $8$. Si pusiste 9 (opción C), le restaste 2 en lugar de 3 a la segunda sucesión."
+  },
+  {
+    "id": 2,
+    "explanation": "La regla alterna dos operaciones: sumar 3 y multiplicar por 3. Compruébalo: $2+3=5$, $5\\times 3=15$, $15+3=18$, $18\\times 3=54$, $54+3=57$. Como el último paso fue una suma, ahora toca multiplicar:\n\n$$57 \\times 3 = 171$$\n\nSi elegiste 60, seguiste sumando 3: se te pasó que las operaciones se van turnando."
+  },
+  {
+    "id": 3,
+    "explanation": "Otra vez son dos sucesiones entreveradas, y en las dos cada término es el doble del anterior. Los de posición impar: $5, 10, 20, \\ldots$, así que sigue $20\\times 2 = 40$. Los de posición par: $8, 16, 32, \\ldots$, y sigue $32\\times 2 = 64$.\n\nSi te dio 48 (opción B), sumaste 16 en vez de duplicar."
+  },
+  {
+    "id": 4,
+    "explanation": "Los números de la cadena son $7, 12, 10, 15, 13, 18, 16, \\ldots$ y la regla alterna $+5$ y $-2$. Revísalo paso a paso: $7+5=12$, $12-2=10$, $10+5=15$, $15-2=13$, $13+5=18$, $18-2=16$.\n\nComo el último movimiento fue restar 2, ahora toca sumar 5: $16+5=21$; y luego restar 2: $21-2=19$. Por eso van $21$ y $19$."
+  },
+  {
+    "id": 5,
+    "explanation": "Cuenta los cuadros negros de cada figura: 1, 2, 3 y 4. La que sigue debe traer 5, y acomodados como los viene poniendo la serie: primero se llena el renglón de abajo de izquierda a derecha y después se sube por la columna de la derecha. La cuarta figura ya tenía el renglón completo más uno arriba a la derecha, así que la quinta agrega otro encima de ese: queda una L.\n\nC no puede ser porque trae 6 cuadros, y B sube por la columna izquierda, del lado contrario.\nREVISAR: en el SVG, las opciones A y D dibujan exactamente la misma figura (renglón inferior completo más columna derecha), o sea que hay dos opciones gráficamente idénticas."
+  },
+  {
+    "id": 6,
+    "explanation": "Aquí hay que seguir dos cosas al mismo tiempo. El punto va recorriendo las esquinas en el sentido de las manecillas: arriba-izquierda, arriba-derecha, abajo-derecha... entonces le toca la de abajo-izquierda. Y el lado grueso hace exactamente lo mismo: izquierda, arriba, derecha... le toca el de abajo.\n\nLa figura correcta es la que mueve las dos cosas: punto en la esquina inferior izquierda y lado grueso abajo. Ojo con C, que pone bien el lado grueso pero deja el punto donde estaba, y con B, que mueve el punto pero deja el lado grueso sin girar."
+  },
+  {
+    "id": 7,
+    "explanation": "En cada figura se sombrea un sector más: 1, 2 y 3. La siguiente debe traer 4, así que B (3 sectores) y C (el círculo completo) quedan descartadas de entrada.\n\nEntre las dos que sí tienen 4, la buena es la que conserva el acomodo alternado que traía la serie: los sectores sombreados van por pares opuestos —cada uno tiene pintado también el de enfrente— y quedan libres el de arriba y el de abajo. La otra amontona los cuatro seguidos en un solo bloque, y eso rompe la simetría que se venía respetando."
+  },
+  {
+    "id": 8,
+    "explanation": "Míralo como dos figuras independientes. La de afuera va ganando un lado: cuadrado (4), pentágono (5), hexágono (6); sigue el heptágono (7). La de adentro siempre es la que era exterior en la figura anterior: triángulo, cuadrado, pentágono; ahora toca hexágono.\n\nEntonces la que sigue es un heptágono con un hexágono dentro. Si escogiste D, le atinaste al exterior pero dejaste el cuadrado adentro; B se pasó de lado (octágono)."
+  },
+  {
+    "id": 9,
+    "explanation": "Los vértices del triángulo chico son los puntos medios de los lados del grande, y esa construcción parte al triángulo grande en cuatro triangulitos iguales: los tres de las esquinas y el de en medio.\n\nA esos cuatro hay que sumarles el triángulo grande completo, que también es un triángulo: $4+1=5$.\n\nSi contestaste 4, solo contaste los pequeños y se te fue el original."
+  },
+  {
+    "id": 10,
+    "explanation": "Una raya vertical y una horizontal parten el rectángulo en 4 celdas. Cuenta por tamaños:\n\n- las 4 celdas chicas;\n- los 2 renglones completos (mitad de arriba y mitad de abajo);\n- las 2 columnas completas (mitad izquierda y mitad derecha);\n- el rectángulo grande.\n\n$4+2+2+1=9$. Si te dio 4, solo contaste las celdas; si te dio 8, se te olvidó el rectángulo completo."
+  },
+  {
+    "id": 11,
+    "explanation": "Girar 90° en el sentido de las manecillas es dar un cuarto de vuelta a la derecha: lo que estaba vertical se acuesta. La columna de tres cuadritos se convierte en una fila de tres, y el cuadrito que sobresalía en la base pasa a quedar pegado por el otro lado, formando el escalón de la figura acostada.\n\nEl truco es usar el punto negro como referencia: fíjate en qué extremo está antes de girar y síguelo durante el giro. Así distingues la figura girada de su reflejo, que es el error más común en este tipo de reactivos.\nREVISAR: el giro horario de la figura original (columna de 3 con un cuadro extra a la derecha en la base y el punto en el extremo superior) debería dar una fila de 3 con el cuadro extra debajo del extremo izquierdo y el punto en el extremo derecho, y ninguna opción del SVG muestra eso: A y C ponen el cuadro extra arriba del extremo izquierdo (con el punto en la esquina y en el cuadro extra, respectivamente), B lo pone arriba del extremo derecho y D es una columna de 3 con saliente en el centro."
+  },
+  {
+    "id": 12,
+    "explanation": "Girar 180° es poner la figura de cabeza: lo de arriba queda abajo y lo de la izquierda queda a la derecha. La fila de cuatro cuadros sigue siendo una fila de cuatro, pero el cuadro que sobresalía por arriba pasa a sobresalir por abajo, y el cuadro negro, que estaba en el extremo izquierdo, aparece en el extremo derecho.\n\nEse último detalle es el que decide: hay una opción con la figura bien girada pero con el cuadro negro todavía a la izquierda, como si la marca no hubiera girado con el resto."
+  },
+  {
+    "id": 13,
+    "explanation": "El número de en medio sale de los dos números de la base: se elevan al cuadrado y se suman. Verifícalo con los dos primeros triángulos:\n\n$$3^2+5^2=9+25=34, \\qquad 4^2+3^2=16+9=25$$\n\nAplica la misma regla al tercero, cuya base es 5 y 2:\n\n$$5^2+2^2=25+4=29$$\n\nSi te dio 38, sumaste también el cuadrado del número de arriba ($+3^2$), y ese no entra en la cuenta."
+  },
+  {
+    "id": 14,
+    "explanation": "Lee cada renglón como una sucesión tipo Fibonacci: cada número es la suma de los dos que están justo antes.\n\nPrimer renglón: $3+5=8$ y $5+8=13$. Segundo: $4+6=10$ y $6+10=16$. Tercero: $5+8=13$, así que el que falta es $8+13=21$.\n\nSi pusiste 18, sumaste el primero con el tercero ($5+13$) en lugar de los dos inmediatos anteriores."
+  },
+  {
+    "id": 15,
+    "explanation": "Llama $x$ al mayor y $y$ al menor. \"La mitad de su suma es 19\" quiere decir que la suma es $38$, y la diferencia te da la otra ecuación:\n\n$$x+y=38, \\qquad x-y=14$$\n\nSúmalas: $2x=52$, o sea $x=26$; y entonces $y=38-26=12$.\n\nCuidado con 25 y 13: también suman 38, pero su diferencia es 12, no 14. Siempre revisa que la pareja cumpla las dos condiciones."
+  },
+  {
+    "id": 16,
+    "explanation": "Trabaja con lo que llena cada manguera en una hora. La primera llena $\\frac{1}{6}$ del tanque y la segunda $\\frac{1}{3}$. Juntas, en una hora:\n\n$$\\frac{1}{6}+\\frac{1}{3}=\\frac{1}{6}+\\frac{2}{6}=\\frac{3}{6}=\\frac{1}{2}$$\n\nSi en una hora llenan medio tanque, el tanque completo les toma 2 horas.\n\n4.5 sale de promediar 6 y 3, y ni siquiera tiene sentido: trabajando juntas deben tardar menos que la más rápida sola, que ya lo hace en 3 horas."
+  },
+  {
+    "id": 77,
+    "explanation": "El texto empieza reconociendo que el agua es vital, pero el punto llega con el \"Sin embargo\": su distribución es desigual (inundaciones de un lado, sequías del otro) y el cambio climático \"ha agravado esta situación\". Esas dos ideas juntas son exactamente lo que dice B.\n\nD no puede ser: el texto no afirma que el agua siempre haya sido escasa; al contrario, habla de patrones que \"durante siglos fueron predecibles\"."
+  },
+  {
+    "id": 78,
+    "explanation": "El abuelo dice que las palabras son semillas y les traslada las cualidades de otra cosa: germinar en tierra fértil, dar fruto, perderse con el viento. Ese traslado de sentido de un terreno a otro es la metáfora.\n\nNo es personificación, porque no le atribuye rasgos humanos a un objeto, ni hipérbole, porque no exagera nada: solo cambia un concepto por otro para explicarlo."
+  },
+  {
+    "id": 79,
+    "explanation": "Las pistas están en los hechos, no en los adjetivos: \"llegaba siempre primero al taller y salía último\" describe a un trabajador; \"nunca pidió un aumento\" y \"sin él la fábrica no funcionaría\" describen a alguien comprometido, que cumple sin exigir nada a cambio.\n\nPor eso A queda fuera: quien nunca pide un aumento difícilmente se está retratando como ambicioso."
+  },
+  {
+    "id": 80,
+    "explanation": "La comparación con el ejercicio es solo el vehículo; el mensaje está en \"No basta con hacerlo una vez; la constancia es lo que transforma\" y en \"Un libro al año no hace lector\". El autor quiere convencerte de leer de manera constante.\n\nD confunde el ejemplo con el tema: el ejercicio aparece nada más como término de comparación, no como asunto del texto."
+  },
+  {
+    "id": 81,
+    "explanation": "El dato clave es la desproporción: \"más de la mitad de las especies del planeta en solo el 7% de la superficie terrestre\". Talar esos bosques no es perder cualquier terreno, es perder una concentración de vida enorme, incluso especies \"que ni siquiera hemos descubierto\".\n\nD está al revés justamente por esa última frase: el texto subraya que también desaparecen las especies desconocidas."
+  },
+  {
+    "id": 82,
+    "explanation": "Sigue la secuencia del párrafo: don Ramiro camina lento y con el ánimo caído, \"pero al llegar a la plaza, al escuchar las risas de sus nietos, algo en su rostro cambió\". El detonante son los nietos.\n\nD se antoja por la frase final, \"quien recuerda lo que importa\", pero esa es la forma de describir el brillo de sus ojos, no un pendiente que se le haya venido a la memoria."
+  },
+  {
+    "id": 83,
+    "explanation": "\"Hambre\" aquí no es literal: es una expresión figurada para nombrar un deseo muy intenso, en este caso el de ganar. El propio texto lo confirma cuando dice que era \"algo que no se mide en estadísticas\": se está hablando de actitud, no de comida ni de dinero."
+  },
+  {
+    "id": 84,
+    "explanation": "La relación es profesionista y el lugar donde ejerce su oficio: el médico trabaja en el hospital como el maestro trabaja en la escuela.\n\nA se antoja mucho, pero \"juicio\" no es un lugar sino la actividad en la que participa el abogado; para que la analogía funcionara tendría que decir \"abogado – juzgado\"."
+  },
+  {
+    "id": 85,
+    "explanation": "La relación es necesidad y la acción con la que se satisface: el hambre se quita comiendo, la sed se quita bebiendo. Además la correspondencia es exacta porque se queda en el mismo terreno, el de ingerir algo.\n\n\"Sueño – dormir\" también empareja necesidad con acción y por eso tienta, pero la pareja natural de hambre es sed. En cambio, temblar y gritar son reacciones involuntarias, no la solución del problema."
+  },
+  {
+    "id": 86,
+    "explanation": "El libro es la pieza y la biblioteca es el lugar donde se guarda, ordena y se pone a disposición del público una colección de ellos. Igualito la pintura y el museo.\n\nEn \"carta – correo\", el correo es el servicio que la traslada, no el sitio donde se conserva; y la televisión transmite películas, no las resguarda."
+  },
+  {
+    "id": 87,
+    "explanation": "Efímero es lo que dura muy poco, lo pasajero. Su contrario es lo que se queda: permanente.\n\nCuidado con \"breve\" y \"rápido\": son sinónimos de efímero, no antónimos. Es el error clásico cuando uno lee de prisa y busca la palabra que \"se parece\"."
+  },
+  {
+    "id": 88,
+    "explanation": "Júbilo es una alegría intensa, casi festiva; su opuesto es la tristeza.\n\n\"Alegría\" es la trampa: significa casi lo mismo que júbilo, y la pregunta pide lo contrario, no lo parecido. La indiferencia tampoco sirve: no es lo opuesto a la alegría, es la ausencia de emoción."
+  },
+  {
+    "id": 89,
+    "explanation": "Conciso es lo que dice mucho con pocas palabras, breve y al grano. Lo contrario es una respuesta extensa, larga.\n\n\"Confusa\" se antoja, pero es el antónimo de clara, no de concisa: una respuesta puede ser al mismo tiempo concisa y confusa."
+  },
+  {
+    "id": 90,
+    "explanation": "Vehemencia es hablar con fuerza, con ímpetu, con emoción intensa. De las opciones, la que expresa esa carga emocional es pasión.\n\nCalma, lentitud y prudencia apuntan justo en la dirección contraria: son lo que le falta a quien habla con vehemencia."
+  },
+  {
+    "id": 91,
+    "explanation": "Perspicaz es quien capta rápido lo que a los demás se les pasa, y la oración lo confirma: \"notaba los detalles más pequeños\". Esa agudeza mental es lo que nombra astuto.\n\nDistraído sería justo lo contrario, y nervioso o paciente hablan del temperamento, no de la capacidad de observación."
+  },
+  {
+    "id": 92,
+    "explanation": "Sinónimos son palabras de significado parecido. Próspero (al que le va bien, que prospera) y exitoso apuntan a lo mismo.\n\nLos otros tres pares son antónimos: audaz/cobarde, antiguo/moderno y abundante/escaso son opuestos. Ahí está la trampa del reactivo: hay que fijarse si piden sinónimos o antónimos antes de contestar."
+  },
+  {
+    "id": 17,
+    "explanation": "Hay seres vivos que no hacen fotosíntesis (todos los animales), que no se desplazan (las plantas) y que no tienen sistema nervioso (una bacteria, un hongo). Lo único que se cumple sin excepción es que todos están formados por células: una sola, como en las bacterias, o billones, como en ti.\n\nEse es justamente el punto de partida de la teoría celular: la célula es la unidad estructural de todo lo vivo."
+  },
+  {
+    "id": 18,
+    "explanation": "Megadiverso significa que el país concentra un porcentaje altísimo de las especies del planeta, y en México eso se explica por su relieve y su variedad de climas: desierto, selva húmeda, bosque de niebla, manglar, arrecife. Cada ambiente sostiene especies distintas, y por eso la suma es enorme.\n\nD es imposible por lógica: si el clima fuera uniforme en todo el territorio habría menos variedad de especies, no más."
+  },
+  {
+    "id": 19,
+    "explanation": "El desarrollo sustentable consiste en aprovechar los recursos hoy sin dejar sin ellos a las generaciones que vienen; junta lo económico, lo social y lo ambiental.\n\nB lo contradice, porque priorizar el corto plazo es exactamente lo contrario. Y C se va al otro extremo: no se trata de dejar de usar los recursos, sino de usarlos a un ritmo que permita que se renueven."
+  },
+  {
+    "id": 20,
+    "explanation": "Una vacuna se aplica antes de que la persona se enferme: entrena al sistema inmunológico para que reconozca al patógeno y responda rápido si algún día llega. Eso es prevención mediante inmunización.\n\nA describe lo que hacen los medicamentos curativos, y D los antibióticos, que se usan cuando la infección bacteriana ya está instalada."
+  },
+  {
+    "id": 21,
+    "explanation": "En la fotosíntesis la planta toma dióxido de carbono del aire y agua del suelo y, con la energía de la luz, fabrica glucosa; el oxígeno sale como producto de desecho.\n\nEntonces toma $\\mathrm{CO_2}$ y libera $\\mathrm{O_2}$. La opción A es exactamente al revés: eso es lo que hacemos nosotros al respirar."
+  },
+  {
+    "id": 22,
+    "explanation": "La respiración celular es el proceso con el que la célula obtiene energía (ATP) a partir de la glucosa, usando oxígeno y liberando $\\mathrm{CO_2}$ y agua.\n\nA y B describen la fotosíntesis, que es el proceso inverso: ahí se fabrica alimento y se produce oxígeno. Aquí se trata de gastar ese alimento para conseguir energía."
+  },
+  {
+    "id": 23,
+    "explanation": "El carbono entra a los seres vivos cuando las plantas y demás organismos fotosintéticos toman el $\\mathrm{CO_2}$ del aire y lo incorporan a moléculas orgánicas; de ahí pasa a los herbívoros y al resto de la cadena alimentaria.\n\nRespiración, combustión y descomposición hacen lo contrario: devuelven carbono a la atmósfera."
+  },
+  {
+    "id": 24,
+    "explanation": "El hierro es el componente central de la hemoglobina, la proteína de los glóbulos rojos que transporta el oxígeno. Si falta hierro se fabrica menos hemoglobina y aparece la anemia: cansancio, palidez, falta de aire.\n\nDiabetes, obesidad e hipertensión se relacionan con otros desequilibrios de la dieta (azúcares, exceso de energía, sodio), no con la falta de hierro."
+  }
+]

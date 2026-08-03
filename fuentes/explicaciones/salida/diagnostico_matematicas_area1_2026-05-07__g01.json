@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "Resuelve cada pieza por separado antes de sumar: $(-2)^3 = (-2)(-2)(-2) = -8$ (exponente impar con base negativa da negativo), y $\\sqrt{81} = 9$. Entonces:\n\n$$-8 + 9 - 5 = -4$$\n\nSi te dio $12$, seguramente tomaste $(-2)^3$ como $+8$: el signo se conserva cuando el exponente es impar."
+ },
+ {
+  "id": 2,
+  "explanation": "Multiplica como binomios y recuerda que $i^2 = -1$:\n\n$$(4 - 3i)(2 + 5i) = 8 + 20i - 6i - 15i^2 = 8 + 14i - 15(-1) = 23 + 14i$$\n\nEl paso clave es que $-15i^2$ se convierte en $+15$ y se suma a la parte real. Si te dio $8 + 14i$, olvidaste ese cambio de signo de $i^2$."
+ },
+ {
+  "id": 3,
+  "explanation": "Para sumar radicales primero simplifica cada uno sacando el cuadrado perfecto: $\\sqrt{50} = \\sqrt{25 \\cdot 2} = 5\\sqrt{2}$ y $\\sqrt{18} = \\sqrt{9 \\cdot 2} = 3\\sqrt{2}$. Como ya son radicales semejantes (ambos con $\\sqrt{2}$), se suman los coeficientes:\n\n$$5\\sqrt{2} + 3\\sqrt{2} = 8\\sqrt{2}$$\n\nSi elegiste $\\sqrt{68}$, sumaste los radicandos directamente: $\\sqrt{a} + \\sqrt{b}$ NO es $\\sqrt{a+b}$."
+ },
+ {
+  "id": 4,
+  "explanation": "Es un binomio al cuadrado: $(a - b)^2 = a^2 - 2ab + b^2$. Aquí $a = 2x$ y $b = 3$:\n\n$$(2x)^2 - 2(2x)(3) + 3^2 = 4x^2 - 12x + 9$$\n\nEl error típico es olvidar el doble producto y poner $-6x$ (opción C): recuerda que el término de en medio lleva el $2$ multiplicando."
+ },
+ {
+  "id": 5,
+  "explanation": "Buscas dos números que multiplicados den $+12$ y sumados den $-7$. Como el producto es positivo y la suma negativa, ambos son negativos: $-3$ y $-4$, porque $(-3)(-4) = 12$ y $-3 - 4 = -7$. Por eso:\n\n$$x^2 - 7x + 12 = (x - 3)(x - 4)$$\n\nComprueba desarrollando: $x^2 - 4x - 3x + 12 = x^2 - 7x + 12$. La opción A da $+7x$, no $-7x$."
+ },
+ {
+  "id": 6,
+  "explanation": "El numerador es una diferencia de cuadrados: $x^2 - 4 = (x + 2)(x - 2)$. Al dividir entre $x + 2$ se cancela ese factor:\n\n$$\\frac{(x + 2)(x - 2)}{x + 2} = x - 2$$\n\nLa condición $x \\neq -2$ está justo para poder hacer esa cancelación sin dividir entre cero."
+ },
+ {
+  "id": 7,
+  "explanation": "Distribuye en ambos lados: $4x - 4 = 2x + 6$. Pasa las $x$ a un lado y los números al otro: $4x - 2x = 6 + 4$, o sea $2x = 10$, y entonces $x = 5$.\n\nComprueba: $4(5-1) = 16$ y $2(5+3) = 16$. Si te dio $x = 3$, probablemente se te fue un signo al distribuir el $4(x-1)$."
+ },
+ {
+  "id": 8,
+  "explanation": "El número de soluciones reales lo dice el discriminante $\\Delta = b^2 - 4ac$. Aquí $a = 1$, $b = 4$, $c = 5$:\n\n$$\\Delta = 16 - 20 = -4$$\n\nComo $\\Delta < 0$, no hay soluciones reales (las dos raíces son complejas). No necesitas resolver la ecuación completa: con el signo del discriminante basta."
+ },
+ {
+  "id": 9,
+  "explanation": "Despeja como en una ecuación normal: resta $1$ en ambos lados, $2x \\leq 6$, y divide entre $2$: $x \\leq 3$. Como dividiste entre un número positivo, la desigualdad no se voltea.\n\nOjo con la opción A: el símbolo $\\leq$ incluye al $3$ (con $x = 3$ da $2(3)+1 = 7 \\leq 7$, que sí cumple), así que debe ser $\\leq$, no $<$."
+ },
+ {
+  "id": 10,
+  "explanation": "Suma las dos ecuaciones tal cual, porque las $y$ se eliminan solas:\n\n$$(3x + y) + (x - y) = 10 + 2 \\quad\\Rightarrow\\quad 4x = 12 \\quad\\Rightarrow\\quad x = 3$$\n\nSustituye en $x - y = 2$: $3 - y = 2$, así que $y = 1$. Comprueba en la primera: $3(3) + 1 = 10$. Correcto."
+ },
+ {
+  "id": 11,
+  "explanation": "Aquí hay un atajo: resta la segunda ecuación de la primera y se eliminan $x$ y $z$ de un jalón:\n\n$$(x + y + z) - (x - y + z) = 6 - 2 \\quad\\Rightarrow\\quad 2y = 4 \\quad\\Rightarrow\\quad y = 2$$\n\nNo hizo falta ni Cramer ni encontrar $x$ y $z$. En sistemas 3×3, antes de lanzarte al determinante fíjate si dos ecuaciones se parecen: muchas veces una resta te da la incógnita directa."
+ },
+ {
+  "id": 12,
+  "explanation": "Una raíz cuadrada solo acepta números no negativos adentro, así que necesitas $x - 3 \\geq 0$, es decir $x \\geq 3$.\n\nEl detalle está en el \"igual\": con $x = 3$ obtienes $\\sqrt{0} = 0$, que sí existe, por eso el $3$ se incluye y la opción A ($x > 3$) se queda corta."
+ },
+ {
+  "id": 13,
+  "explanation": "Usa la equivalencia $\\pi \\;\\mathrm{rad} = 180°$:\n\n$$\\frac{3\\pi}{4} = \\frac{3}{4}(180°) = 135°$$\n\nUn truco para no equivocarte: $\\frac{\\pi}{4} = 45°$, y tres cuartos de $\\pi$ son tres veces eso: $3 \\times 45° = 135°$."
+ },
+ {
+  "id": 14,
+  "explanation": "Si $\\tan\\alpha = \\frac{3}{4}$, dibuja el triángulo rectángulo: cateto opuesto $3$, cateto adyacente $4$. La hipotenusa sale con Pitágoras:\n\n$$h = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5$$\n\nEs el famoso triángulo 3-4-5. Entonces $\\mathrm{sen}\\,\\alpha = \\frac{\\text{opuesto}}{\\text{hipotenusa}} = \\frac{3}{5}$. Si contestaste $\\frac{4}{5}$, calculaste el coseno."
+ },
+ {
+  "id": 15,
+  "explanation": "Ley de cosenos: $c^2 = a^2 + b^2 - 2ab\\cos C$. Con $\\cos 120° = -\\frac{1}{2}$:\n\n$$c^2 = 25 + 9 - 2(5)(3)\\left(-\\tfrac{1}{2}\\right) = 34 + 15 = 49$$\n\nAsí que $c = 7$. El punto fino es el signo: como el coseno de $120°$ es negativo, el término $-2ab\\cos C$ se vuelve positivo y SUMA. Si te dio $\\sqrt{34}$, ignoraste por completo el término del coseno."
+ },
+ {
+  "id": 16,
+  "explanation": "El ángulo $360° - \\theta$ cae en el cuarto cuadrante, donde el coseno es positivo. Además, restar de $360°$ es lo mismo que medir $-\\theta$, y el coseno es función par: $\\cos(-\\theta) = \\cos\\theta$. Por eso:\n\n$$\\cos(360° - \\theta) = \\cos\\theta$$\n\nLa que sí cambia de signo en el cuarto cuadrante es $\\mathrm{sen}(360° - \\theta) = -\\mathrm{sen}\\,\\theta$; no las confundas."
+ },
+ {
+  "id": 17,
+  "explanation": "Para $f(x) = \\mathrm{sen}(Bx)$ el periodo es $\\frac{2\\pi}{B}$. Aquí $B = 2$:\n\n$$T = \\frac{2\\pi}{2} = \\pi$$\n\nEl $2$ dentro del argumento comprime la onda: el seno normal tarda $2\\pi$ en completar un ciclo, pero $\\mathrm{sen}(2x)$ lo hace al doble de velocidad, en la mitad del tiempo. Si contestaste $2\\pi$, diste el periodo del seno sin modificar."
+ },
+ {
+  "id": 18,
+  "explanation": "La pregunta del logaritmo es: ¿a qué exponente hay que elevar el $3$ para obtener $81$? Ve multiplicando: $3^2 = 9$, $3^3 = 27$, $3^4 = 81$. Entonces:\n\n$$\\log_3 81 = 4$$\n\nSi elegiste $27$, dividiste $81 \\div 3$; el logaritmo no es una división, es buscar el exponente."
+ },
+ {
+  "id": 19,
+  "explanation": "Usa la forma punto-pendiente: $y - y_1 = m(x - x_1)$. Con $m = -2$ y el punto $(1, 3)$:\n\n$$y - 3 = -2(x - 1) \\quad\\Rightarrow\\quad y = -2x + 2 + 3 = -2x + 5$$\n\nComprueba con el punto: $y = -2(1) + 5 = 3$. Sí pasa por $(1,3)$. La opción D ($y = -2x + 3$) es la trampa clásica: usa el $3$ del punto como ordenada al origen, pero el punto no está sobre el eje $y$."
+ },
+ {
+  "id": 20,
+  "explanation": "Aplica la fórmula de distancia de punto a recta:\n\n$$d = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}} = \\frac{|3(7) + 4(1) - 10|}{\\sqrt{3^2 + 4^2}} = \\frac{|21 + 4 - 10|}{5} = \\frac{15}{5} = 3$$\n\nNota que el denominador $\\sqrt{9 + 16} = 5$ sale del clásico 3-4-5. Sustituye el punto completo en el numerador, incluido el $-10$: olvidarlo es el error más común aquí."
+ },
+ {
+  "id": 21,
+  "explanation": "La forma ordinaria de la circunferencia es $(x - h)^2 + (y - k)^2 = r^2$: el número de la derecha es el radio AL CUADRADO. Aquí $r^2 = 16$, así que:\n\n$$r = \\sqrt{16} = 4$$\n\nSi contestaste $16$, te quedaste con $r^2$ sin sacar la raíz; es el distractor pensado justo para eso."
+ },
+ {
+  "id": 22,
+  "explanation": "Compara con la forma canónica $y^2 = 4px$, que es una parábola horizontal con vértice en el origen que abre hacia la derecha. Igualando: $4p = 12$, o sea $p = 3$. El foco está sobre el eje $x$, a distancia $p$ del vértice:\n\n$$F = (p, 0) = (3, 0)$$\n\nSi elegiste $(0, 3)$, intercambiaste los ejes: como la $y$ es la que está al cuadrado, la parábola abre en dirección de $x$, no de $y$."
+ },
+ {
+  "id": 23,
+  "explanation": "En la elipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ con $a^2 = 25$ y $b^2 = 16$, el eje mayor va sobre el eje $x$ (porque el denominador mayor está bajo $x^2$). Los focos cumplen:\n\n$$c^2 = a^2 - b^2 = 25 - 16 = 9 \\quad\\Rightarrow\\quad c = 3$$\n\nAsí que los focos están en $(\\pm 3, 0)$. Ojo: en la elipse es RESTA, $c^2 = a^2 - b^2$. La opción A, $(\\pm 4, 0)$, confunde $c$ con $b$."
+ },
+ {
+  "id": 24,
+  "explanation": "Al sustituir $x = 2$ directo sale $\\frac{0}{0}$, una indeterminación, pero eso no significa que el límite no exista: hay que factorizar primero.\n\n$$\\lim_{x \\to 2} \\frac{(x+2)(x-2)}{x - 2} = \\lim_{x \\to 2} (x + 2) = 4$$\n\nEl factor $(x-2)$ se cancela porque en el límite $x$ se acerca a $2$ sin llegar a valer $2$. Si contestaste \"no existe\", te detuviste en el $\\frac{0}{0}$ sin factorizar."
+ },
+ {
+  "id": 25,
+  "explanation": "Regla de la cadena: deriva la potencia por fuera y luego multiplica por la derivada de lo de adentro.\n\n$$f'(x) = 3(5x - 2)^2 \\cdot \\underbrace{5}_{\\text{derivada de } 5x-2} = 15(5x - 2)^2$$\n\nLa opción A, $3(5x-2)^2$, es el error clásico: aplicar solo la regla de la potencia y olvidar multiplicar por la derivada interna."
+ },
+ {
+  "id": 26,
+  "explanation": "Integra término a término con la regla $\\int x^n\\,dx = \\frac{x^{n+1}}{n+1}$:\n\n$$\\int 4x^3\\,dx = \\frac{4x^4}{4} = x^4, \\qquad \\int 6x\\,dx = \\frac{6x^2}{2} = 3x^2$$\n\nJuntando: $x^4 - 3x^2 + C$. La opción B, $12x^2 - 6$, es la DERIVADA de la expresión, no la integral: cuídate de no ir en sentido contrario."
+ },
+ {
+  "id": 27,
+  "explanation": "Por el teorema del residuo, el residuo de dividir $P(x)$ entre $(x - 2)$ es simplemente $P(2)$:\n\n$$P(2) = 2^3 - 2(2^2) + 5(2) - 6 = 8 - 8 + 10 - 6 = 4$$\n\nNo necesitas hacer toda la división sintética si solo piden el residuo: evaluar el polinomio en $x = 2$ te lo da de inmediato. Y como $P(2) \\neq 0$, de paso sabes que $(x-2)$ no es factor del polinomio."
+ },
+ {
+  "id": 28,
+  "explanation": "La diferencia común es $d = 7 - 3 = 4$. El término general de una sucesión aritmética es $a_n = a_1 + (n-1)d$:\n\n$$a_{20} = 3 + (20 - 1)(4) = 3 + 76 = 79$$\n\nSi te dio $83$, usaste $n$ en vez de $n - 1$ (calculaste un término de más); si te dio $75$, calculaste $a_{19}$."
+ },
+ {
+  "id": 29,
+  "explanation": "En una sucesión geométrica, la razón común se obtiene dividiendo cualquier término entre el anterior:\n\n$$r = \\frac{6}{2} = \\frac{18}{6} = \\frac{54}{18} = 3$$\n\nQue salga lo mismo en las tres divisiones confirma que es geométrica. Si contestaste $4$, calculaste la diferencia $6 - 2$: eso sería para una sucesión aritmética, no geométrica."
+ },
+ {
+  "id": 30,
+  "explanation": "Para invertir una función, escribe $y = 2x + 3$, despeja $x$ y al final intercambia los papeles: $y - 3 = 2x$, entonces $x = \\frac{y - 3}{2}$. Intercambiando variables:\n\n$$f^{-1}(x) = \\frac{x - 3}{2}$$\n\nLa idea es deshacer las operaciones en orden inverso: $f$ multiplica por 2 y luego suma 3, así que la inversa primero resta 3 y luego divide entre 2. Comprueba: $f^{-1}(f(x)) = \\frac{(2x+3)-3}{2} = x$."
+ },
+ {
+  "id": 31,
+  "explanation": "$(f \\circ g)(x)$ significa $f(g(x))$: metes $g$ adentro de $f$. Como $f$ eleva al cuadrado y suma 1, sustituyes $g(x) = 2x - 1$ en lugar de la $x$:\n\n$$f(2x - 1) = (2x - 1)^2 + 1 = 4x^2 - 4x + 1 + 1 = 4x^2 - 4x + 2$$\n\nNo olvides el doble producto al desarrollar $(2x-1)^2$. La opción A, $2x^2 + 1$, viene de componer al revés o de elevar mal el binomio."
+ },
+ {
+  "id": 32,
+  "explanation": "Usa la identidad pitagórica $\\mathrm{sen}^2\\theta + \\cos^2\\theta = 1$:\n\n$$\\cos^2\\theta = 1 - \\left(\\frac{3}{5}\\right)^2 = 1 - \\frac{9}{25} = \\frac{16}{25} \\quad\\Rightarrow\\quad \\cos\\theta = \\frac{4}{5}$$\n\nSe toma la raíz positiva porque en el primer cuadrante el coseno es positivo. Otra vez el triángulo 3-4-5: si el opuesto es 3 y la hipotenusa 5, el adyacente es 4."
+ },
+ {
+  "id": 33,
+  "explanation": "Ley de senos: $\\dfrac{a}{\\mathrm{sen}\\,A} = \\dfrac{b}{\\mathrm{sen}\\,B}$. Despeja $b$:\n\n$$b = \\frac{a\\,\\mathrm{sen}\\,B}{\\mathrm{sen}\\,A} = \\frac{10 \\cdot \\mathrm{sen}\\,45°}{\\mathrm{sen}\\,30°} = \\frac{10 \\cdot \\frac{\\sqrt{2}}{2}}{\\frac{1}{2}} = 10\\sqrt{2}$$\n\nEl truco aritmético: dividir entre $\\frac{1}{2}$ es multiplicar por 2, y eso cancela el 2 del denominador de $\\frac{\\sqrt{2}}{2}$. Si te dio $5\\sqrt{2}$, invertiste los senos en la fórmula."
+ },
+ {
+  "id": 34,
+  "explanation": "La pendiente es el cambio en $y$ entre el cambio en $x$:\n\n$$m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{6 - (-2)}{7 - 3} = \\frac{8}{4} = 2$$\n\nEl detalle a cuidar es el doble signo: $6 - (-2) = 8$, no $4$. Si te dio $\\frac{1}{2}$, dividiste al revés ($\\Delta x$ entre $\\Delta y$)."
+ },
+ {
+  "id": 35,
+  "explanation": "Dos rectas son perpendiculares cuando el producto de sus pendientes es $-1$; es decir, la pendiente de una es el recíproco negativo de la otra. La recta dada tiene $m = 3$, así que la perpendicular necesita:\n\n$$m' = -\\frac{1}{3}$$\n\nY esa es la de la opción C. Cuidado con $y = -3x + 5$: cambiar solo el signo NO basta, también hay que invertir la fracción."
+ },
+ {
+  "id": 36,
+  "explanation": "La forma $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$ (el término positivo es el de $x^2$) es una hipérbola horizontal: sus vértices están sobre el eje $x$, a distancia $a$ del centro. Con $a^2 = 16$, $a = 4$:\n\n$$V = (\\pm 4, 0)$$\n\nLa opción A, $(\\pm 3, 0)$, usa $b = 3$, pero $b$ define el eje conjugado (las asíntotas), no los vértices."
+ },
+ {
+  "id": 37,
+  "explanation": "Para que sea continua en $x = 2$, los dos pedazos deben empatar ahí. Por la izquierda: $\\lim_{x \\to 2^-} (x^2 + 1) = 4 + 1 = 5$. Por la derecha, el valor es $k(2) - 1 = 2k - 1$. Iguala:\n\n$$2k - 1 = 5 \\quad\\Rightarrow\\quad k = 3$$\n\nComprueba: con $k = 3$, ambos pedazos valen $5$ en $x = 2$ y la gráfica no da brinco."
+ },
+ {
+  "id": 38,
+  "explanation": "Deriva e iguala a cero para hallar los puntos críticos:\n\n$$f'(x) = 3x^2 - 6x = 3x(x - 2) = 0 \\quad\\Rightarrow\\quad x = 0 \\;\\text{o}\\; x = 2$$\n\nPara clasificarlos usa la segunda derivada, $f''(x) = 6x - 6$: en $x = 0$, $f''(0) = -6 < 0$, cóncava hacia abajo, así que ahí hay un MÁXIMO local. Si contestaste $x = 2$, ese es el otro punto crítico, pero $f''(2) = 6 > 0$: es el mínimo."
+ },
+ {
+  "id": 39,
+  "explanation": "Es una integral por sustitución hecha a la medida: toma $u = x^2$, entonces $du = 2x\\,dx$, que es exactamente el otro factor del integrando. La integral se convierte en:\n\n$$\\int \\cos u\\,du = \\mathrm{sen}\\,u + C = \\mathrm{sen}(x^2) + C$$\n\nPuedes verificar derivando: $\\frac{d}{dx}\\,\\mathrm{sen}(x^2) = \\cos(x^2) \\cdot 2x$, que es el integrando original. Si elegiste $-\\mathrm{sen}(x^2)$, confundiste el sentido: la derivada del coseno es $-\\mathrm{sen}$, pero aquí integras coseno, no lo derivas."
+ },
+ {
+  "id": 40,
+  "explanation": "El área bajo la curva es la integral definida:\n\n$$\\int_0^3 x^2\\,dx = \\left[\\frac{x^3}{3}\\right]_0^3 = \\frac{27}{3} - 0 = 9$$\n\nPrimero sube el exponente y divide ($\\frac{x^3}{3}$), luego evalúa en los extremos y resta. Si te dio $27$, evaluaste $x^3$ en $3$ pero olvidaste dividir entre $3$."
+ }
+]

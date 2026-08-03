@@ -38,7 +38,8 @@
               "C": "24, 9",
               "D": "24, 7"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Aquí no hay una sucesión, hay dos entreveradas. Toma los términos en posición impar: $60, 48, 36, \\ldots$, van bajando de 12 en 12, así que sigue $36-12=24$. Ahora los de posición par: $17, 14, 11, \\ldots$, bajan de 3 en 3, y sigue $11-3=8$.\n\nPor eso los que continúan son $24$ y $8$. Si pusiste 9 (opción C), le restaste 2 en lugar de 3 a la segunda sucesión."
           },
           {
             "id": 2,
@@ -51,7 +52,8 @@
               "C": "114",
               "D": "174"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La regla alterna dos operaciones: sumar 3 y multiplicar por 3. Compruébalo: $2+3=5$, $5\\times 3=15$, $15+3=18$, $18\\times 3=54$, $54+3=57$. Como el último paso fue una suma, ahora toca multiplicar:\n\n$$57 \\times 3 = 171$$\n\nSi elegiste 60, seguiste sumando 3: se te pasó que las operaciones se van turnando."
           },
           {
             "id": 3,
@@ -64,7 +66,8 @@
               "C": "44, 64",
               "D": "36, 64"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Otra vez son dos sucesiones entreveradas, y en las dos cada término es el doble del anterior. Los de posición impar: $5, 10, 20, \\ldots$, así que sigue $20\\times 2 = 40$. Los de posición par: $8, 16, 32, \\ldots$, y sigue $32\\times 2 = 64$.\n\nSi te dio 48 (opción B), sumaste 16 en vez de duplicar."
           },
           {
             "id": 4,
@@ -78,7 +81,8 @@
               "C": "21, 18",
               "D": "20, 18"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los números de la cadena son $7, 12, 10, 15, 13, 18, 16, \\ldots$ y la regla alterna $+5$ y $-2$. Revísalo paso a paso: $7+5=12$, $12-2=10$, $10+5=15$, $15-2=13$, $13+5=18$, $18-2=16$.\n\nComo el último movimiento fue restar 2, ahora toca sumar 5: $16+5=21$; y luego restar 2: $21-2=19$. Por eso van $21$ y $19$."
           },
           {
             "id": 5,
@@ -92,7 +96,8 @@
               "C": "",
               "D": ""
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Cuenta los cuadros negros de cada figura: 1, 2, 3 y 4. La que sigue debe traer 5, y acomodados como los viene poniendo la serie: primero se llena el renglón de abajo de izquierda a derecha y después se sube por la columna de la derecha. La cuarta figura ya tenía el renglón completo más uno arriba a la derecha, así que la quinta agrega otro encima de ese: queda una L.\n\nC no puede ser porque trae 6 cuadros, y B sube por la columna izquierda, del lado contrario."
           },
           {
             "id": 6,
@@ -106,7 +111,8 @@
               "C": "",
               "D": ""
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Aquí hay que seguir dos cosas al mismo tiempo. El punto va recorriendo las esquinas en el sentido de las manecillas: arriba-izquierda, arriba-derecha, abajo-derecha... entonces le toca la de abajo-izquierda. Y el lado grueso hace exactamente lo mismo: izquierda, arriba, derecha... le toca el de abajo.\n\nLa figura correcta es la que mueve las dos cosas: punto en la esquina inferior izquierda y lado grueso abajo. Ojo con C, que pone bien el lado grueso pero deja el punto donde estaba, y con B, que mueve el punto pero deja el lado grueso sin girar."
           },
           {
             "id": 7,
@@ -120,7 +126,8 @@
               "C": "",
               "D": ""
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "En cada figura se sombrea un sector más: 1, 2 y 3. La siguiente debe traer 4, así que B (3 sectores) y C (el círculo completo) quedan descartadas de entrada.\n\nEntre las dos que sí tienen 4, la buena es la que conserva el acomodo alternado que traía la serie: los sectores sombreados van por pares opuestos —cada uno tiene pintado también el de enfrente— y quedan libres el de arriba y el de abajo. La otra amontona los cuatro seguidos en un solo bloque, y eso rompe la simetría que se venía respetando."
           },
           {
             "id": 8,
@@ -134,7 +141,8 @@
               "C": "",
               "D": ""
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Míralo como dos figuras independientes. La de afuera va ganando un lado: cuadrado (4), pentágono (5), hexágono (6); sigue el heptágono (7). La de adentro siempre es la que era exterior en la figura anterior: triángulo, cuadrado, pentágono; ahora toca hexágono.\n\nEntonces la que sigue es un heptágono con un hexágono dentro. Si escogiste D, le atinaste al exterior pero dejaste el cuadrado adentro; B se pasó de lado (octágono)."
           },
           {
             "id": 9,
@@ -148,7 +156,8 @@
               "C": "7",
               "D": "8"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los vértices del triángulo chico son los puntos medios de los lados del grande, y esa construcción parte al triángulo grande en cuatro triangulitos iguales: los tres de las esquinas y el de en medio.\n\nA esos cuatro hay que sumarles el triángulo grande completo, que también es un triángulo: $4+1=5$.\n\nSi contestaste 4, solo contaste los pequeños y se te fue el original."
           },
           {
             "id": 10,
@@ -162,7 +171,8 @@
               "C": "9",
               "D": "10"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Una raya vertical y una horizontal parten el rectángulo en 4 celdas. Cuenta por tamaños:\n\n- las 4 celdas chicas;\n- los 2 renglones completos (mitad de arriba y mitad de abajo);\n- las 2 columnas completas (mitad izquierda y mitad derecha);\n- el rectángulo grande.\n\n$4+2+2+1=9$. Si te dio 4, solo contaste las celdas; si te dio 8, se te olvidó el rectángulo completo."
           },
           {
             "id": 11,
@@ -176,7 +186,8 @@
               "C": "",
               "D": ""
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Girar 90° en el sentido de las manecillas es dar un cuarto de vuelta a la derecha: lo que estaba vertical se acuesta. La columna de tres cuadritos se convierte en una fila de tres, y el cuadrito que sobresalía en la base pasa a quedar pegado por el otro lado, formando el escalón de la figura acostada.\n\nEl truco es usar el punto negro como referencia: fíjate en qué extremo está antes de girar y síguelo durante el giro. Así distingues la figura girada de su reflejo, que es el error más común en este tipo de reactivos."
           },
           {
             "id": 12,
@@ -190,7 +201,8 @@
               "C": "",
               "D": ""
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Girar 180° es poner la figura de cabeza: lo de arriba queda abajo y lo de la izquierda queda a la derecha. La fila de cuatro cuadros sigue siendo una fila de cuatro, pero el cuadro que sobresalía por arriba pasa a sobresalir por abajo, y el cuadro negro, que estaba en el extremo izquierdo, aparece en el extremo derecho.\n\nEse último detalle es el que decide: hay una opción con la figura bien girada pero con el cuadro negro todavía a la izquierda, como si la marca no hubiera girado con el resto."
           },
           {
             "id": 13,
@@ -204,7 +216,8 @@
               "C": "30",
               "D": "34"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El número de en medio sale de los dos números de la base: se elevan al cuadrado y se suman. Verifícalo con los dos primeros triángulos:\n\n$$3^2+5^2=9+25=34, \\qquad 4^2+3^2=16+9=25$$\n\nAplica la misma regla al tercero, cuya base es 5 y 2:\n\n$$5^2+2^2=25+4=29$$\n\nSi te dio 38, sumaste también el cuadrado del número de arriba ($+3^2$), y ese no entra en la cuenta."
           },
           {
             "id": 14,
@@ -218,7 +231,8 @@
               "C": "26",
               "D": "34"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Lee cada renglón como una sucesión tipo Fibonacci: cada número es la suma de los dos que están justo antes.\n\nPrimer renglón: $3+5=8$ y $5+8=13$. Segundo: $4+6=10$ y $6+10=16$. Tercero: $5+8=13$, así que el que falta es $8+13=21$.\n\nSi pusiste 18, sumaste el primero con el tercero ($5+13$) en lugar de los dos inmediatos anteriores."
           },
           {
             "id": 15,
@@ -231,7 +245,8 @@
               "C": "24 y 14",
               "D": "33 y 5"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Llama $x$ al mayor y $y$ al menor. \"La mitad de su suma es 19\" quiere decir que la suma es $38$, y la diferencia te da la otra ecuación:\n\n$$x+y=38, \\qquad x-y=14$$\n\nSúmalas: $2x=52$, o sea $x=26$; y entonces $y=38-26=12$.\n\nCuidado con 25 y 13: también suman 38, pero su diferencia es 12, no 14. Siempre revisa que la pareja cumpla las dos condiciones."
           },
           {
             "id": 16,
@@ -244,7 +259,8 @@
               "C": "4.5",
               "D": "3"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Trabaja con lo que llena cada manguera en una hora. La primera llena $\\frac{1}{6}$ del tanque y la segunda $\\frac{1}{3}$. Juntas, en una hora:\n\n$$\\frac{1}{6}+\\frac{1}{3}=\\frac{1}{6}+\\frac{2}{6}=\\frac{3}{6}=\\frac{1}{2}$$\n\nSi en una hora llenan medio tanque, el tanque completo les toma 2 horas.\n\n4.5 sale de promediar 6 y 3, y ni siquiera tiene sentido: trabajando juntas deben tardar menos que la más rápida sola, que ya lo hace en 3 horas."
           }
         ]
       },
@@ -263,7 +279,8 @@
               "C": "El cambio climático solo afecta los patrones de lluvia",
               "D": "El agua es un recurso que siempre ha sido escaso"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El texto empieza reconociendo que el agua es vital, pero el punto llega con el \"Sin embargo\": su distribución es desigual (inundaciones de un lado, sequías del otro) y el cambio climático \"ha agravado esta situación\". Esas dos ideas juntas son exactamente lo que dice B.\n\nD no puede ser: el texto no afirma que el agua siempre haya sido escasa; al contrario, habla de patrones que \"durante siglos fueron predecibles\"."
           },
           {
             "id": 78,
@@ -276,7 +293,8 @@
               "C": "Metáfora",
               "D": "Ironía"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El abuelo dice que las palabras son semillas y les traslada las cualidades de otra cosa: germinar en tierra fértil, dar fruto, perderse con el viento. Ese traslado de sentido de un terreno a otro es la metáfora.\n\nNo es personificación, porque no le atribuye rasgos humanos a un objeto, ni hipérbole, porque no exagera nada: solo cambia un concepto por otro para explicarlo."
           },
           {
             "id": 79,
@@ -289,7 +307,8 @@
               "C": "Irresponsable pero hábil",
               "D": "Trabajador y comprometido"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Las pistas están en los hechos, no en los adjetivos: \"llegaba siempre primero al taller y salía último\" describe a un trabajador; \"nunca pidió un aumento\" y \"sin él la fábrica no funcionaría\" describen a alguien comprometido, que cumple sin exigir nada a cambio.\n\nPor eso A queda fuera: quien nunca pide un aumento difícilmente se está retratando como ambicioso."
           },
           {
             "id": 80,
@@ -302,7 +321,8 @@
               "C": "Destacar la importancia de la lectura constante",
               "D": "Explicar los beneficios del ejercicio físico"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La comparación con el ejercicio es solo el vehículo; el mensaje está en \"No basta con hacerlo una vez; la constancia es lo que transforma\" y en \"Un libro al año no hace lector\". El autor quiere convencerte de leer de manera constante.\n\nD confunde el ejemplo con el tema: el ejercicio aparece nada más como término de comparación, no como asunto del texto."
           },
           {
             "id": 81,
@@ -315,7 +335,8 @@
               "C": "Impide que los científicos trabajen en los bosques",
               "D": "Solo afecta a las especies ya conocidas"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El dato clave es la desproporción: \"más de la mitad de las especies del planeta en solo el 7% de la superficie terrestre\". Talar esos bosques no es perder cualquier terreno, es perder una concentración de vida enorme, incluso especies \"que ni siquiera hemos descubierto\".\n\nD está al revés justamente por esa última frase: el texto subraya que también desaparecen las especies desconocidas."
           },
           {
             "id": 82,
@@ -328,7 +349,8 @@
               "C": "Que la presencia de sus nietos le devolvió la alegría",
               "D": "Que recordó algo importante que tenía pendiente"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Sigue la secuencia del párrafo: don Ramiro camina lento y con el ánimo caído, \"pero al llegar a la plaza, al escuchar las risas de sus nietos, algo en su rostro cambió\". El detonante son los nietos.\n\nD se antoja por la frase final, \"quien recuerda lo que importa\", pero esa es la forma de describir el brillo de sus ojos, no un pendiente que se le haya venido a la memoria."
           },
           {
             "id": 83,
@@ -341,7 +363,8 @@
               "C": "El deseo intenso de obtener la victoria",
               "D": "La falta de experiencia en competencias"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "\"Hambre\" aquí no es literal: es una expresión figurada para nombrar un deseo muy intenso, en este caso el de ganar. El propio texto lo confirma cuando dice que era \"algo que no se mide en estadísticas\": se está hablando de actitud, no de comida ni de dinero."
           },
           {
             "id": 84,
@@ -354,7 +377,8 @@
               "C": "enfermo – cama",
               "D": "juez – delito"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La relación es profesionista y el lugar donde ejerce su oficio: el médico trabaja en el hospital como el maestro trabaja en la escuela.\n\nA se antoja mucho, pero \"juicio\" no es un lugar sino la actividad en la que participa el abogado; para que la analogía funcionara tendría que decir \"abogado – juzgado\"."
           },
           {
             "id": 85,
@@ -367,7 +391,8 @@
               "C": "sueño – dormir",
               "D": "dolor – gritar"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La relación es necesidad y la acción con la que se satisface: el hambre se quita comiendo, la sed se quita bebiendo. Además la correspondencia es exacta porque se queda en el mismo terreno, el de ingerir algo.\n\n\"Sueño – dormir\" también empareja necesidad con acción y por eso tienta, pero la pareja natural de hambre es sed. En cambio, temblar y gritar son reacciones involuntarias, no la solución del problema."
           },
           {
             "id": 86,
@@ -380,7 +405,8 @@
               "C": "película – televisión",
               "D": "disco – tienda"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El libro es la pieza y la biblioteca es el lugar donde se guarda, ordena y se pone a disposición del público una colección de ellos. Igualito la pintura y el museo.\n\nEn \"carta – correo\", el correo es el servicio que la traslada, no el sitio donde se conserva; y la televisión transmite películas, no las resguarda."
           },
           {
             "id": 87,
@@ -393,7 +419,8 @@
               "C": "Rápido",
               "D": "Frágil"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Efímero es lo que dura muy poco, lo pasajero. Su contrario es lo que se queda: permanente.\n\nCuidado con \"breve\" y \"rápido\": son sinónimos de efímero, no antónimos. Es el error clásico cuando uno lee de prisa y busca la palabra que \"se parece\"."
           },
           {
             "id": 88,
@@ -406,7 +433,8 @@
               "C": "Indiferencia",
               "D": "Sorpresa"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Júbilo es una alegría intensa, casi festiva; su opuesto es la tristeza.\n\n\"Alegría\" es la trampa: significa casi lo mismo que júbilo, y la pregunta pide lo contrario, no lo parecido. La indiferencia tampoco sirve: no es lo opuesto a la alegría, es la ausencia de emoción."
           },
           {
             "id": 89,
@@ -419,7 +447,8 @@
               "C": "Extensa",
               "D": "Confusa"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Conciso es lo que dice mucho con pocas palabras, breve y al grano. Lo contrario es una respuesta extensa, larga.\n\n\"Confusa\" se antoja, pero es el antónimo de clara, no de concisa: una respuesta puede ser al mismo tiempo concisa y confusa."
           },
           {
             "id": 90,
@@ -432,7 +461,8 @@
               "C": "Lentitud",
               "D": "Prudencia"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Vehemencia es hablar con fuerza, con ímpetu, con emoción intensa. De las opciones, la que expresa esa carga emocional es pasión.\n\nCalma, lentitud y prudencia apuntan justo en la dirección contraria: son lo que le falta a quien habla con vehemencia."
           },
           {
             "id": 91,
@@ -445,7 +475,8 @@
               "C": "Nervioso",
               "D": "Paciente"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Perspicaz es quien capta rápido lo que a los demás se les pasa, y la oración lo confirma: \"notaba los detalles más pequeños\". Esa agudeza mental es lo que nombra astuto.\n\nDistraído sería justo lo contrario, y nervioso o paciente hablan del temperamento, no de la capacidad de observación."
           },
           {
             "id": 92,
@@ -458,7 +489,8 @@
               "C": "Antiguo – moderno",
               "D": "Abundante – escaso"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Sinónimos son palabras de significado parecido. Próspero (al que le va bien, que prospera) y exitoso apuntan a lo mismo.\n\nLos otros tres pares son antónimos: audaz/cobarde, antiguo/moderno y abundante/escaso son opuestos. Ahí está la trampa del reactivo: hay que fijarse si piden sinónimos o antónimos antes de contestar."
           }
         ]
       },
@@ -477,7 +509,8 @@
               "C": "Están formados por células",
               "D": "Tienen sistema nervioso"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Hay seres vivos que no hacen fotosíntesis (todos los animales), que no se desplazan (las plantas) y que no tienen sistema nervioso (una bacteria, un hongo). Lo único que se cumple sin excepción es que todos están formados por células: una sola, como en las bacterias, o billones, como en ti.\n\nEse es justamente el punto de partida de la teoría celular: la célula es la unidad estructural de todo lo vivo."
           },
           {
             "id": 18,
@@ -490,7 +523,8 @@
               "C": "Concentra la mayor parte de sus especies en una sola región del país",
               "D": "Sus condiciones climáticas son uniformes en todo el territorio"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Megadiverso significa que el país concentra un porcentaje altísimo de las especies del planeta, y en México eso se explica por su relieve y su variedad de climas: desierto, selva húmeda, bosque de niebla, manglar, arrecife. Cada ambiente sostiene especies distintas, y por eso la suma es enorme.\n\nD es imposible por lógica: si el clima fuera uniforme en todo el territorio habría menos variedad de especies, no más."
           },
           {
             "id": 19,
@@ -503,7 +537,8 @@
               "C": "Conservar los recursos naturales restringiendo su aprovechamiento productivo",
               "D": "Garantizar el acceso equitativo a los recursos sin considerar el impacto ambiental"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El desarrollo sustentable consiste en aprovechar los recursos hoy sin dejar sin ellos a las generaciones que vienen; junta lo económico, lo social y lo ambiental.\n\nB lo contradice, porque priorizar el corto plazo es exactamente lo contrario. Y C se va al otro extremo: no se trata de dejar de usar los recursos, sino de usarlos a un ritmo que permita que se renueven."
           },
           {
             "id": 20,
@@ -516,7 +551,8 @@
               "C": "La prevención de enfermedades infecciosas mediante la inmunización",
               "D": "El desarrollo de antibióticos contra infecciones bacterianas"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Una vacuna se aplica antes de que la persona se enferme: entrena al sistema inmunológico para que reconozca al patógeno y responda rápido si algún día llega. Eso es prevención mediante inmunización.\n\nA describe lo que hacen los medicamentos curativos, y D los antibióticos, que se usan cuando la infección bacteriana ya está instalada."
           },
           {
             "id": 21,
@@ -529,7 +565,8 @@
               "C": "agua – dióxido de carbono",
               "D": "dióxido de carbono – vapor de agua"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En la fotosíntesis la planta toma dióxido de carbono del aire y agua del suelo y, con la energía de la luz, fabrica glucosa; el oxígeno sale como producto de desecho.\n\nEntonces toma $\\mathrm{CO_2}$ y libera $\\mathrm{O_2}$. La opción A es exactamente al revés: eso es lo que hacemos nosotros al respirar."
           },
           {
             "id": 22,
@@ -542,7 +579,8 @@
               "C": "Obtienen energía a partir de la glucosa",
               "D": "Sintetizan proteínas a partir de aminoácidos"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La respiración celular es el proceso con el que la célula obtiene energía (ATP) a partir de la glucosa, usando oxígeno y liberando $\\mathrm{CO_2}$ y agua.\n\nA y B describen la fotosíntesis, que es el proceso inverso: ahí se fabrica alimento y se produce oxígeno. Aquí se trata de gastar ese alimento para conseguir energía."
           },
           {
             "id": 23,
@@ -555,7 +593,8 @@
               "C": "La combustión",
               "D": "La descomposición"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El carbono entra a los seres vivos cuando las plantas y demás organismos fotosintéticos toman el $\\mathrm{CO_2}$ del aire y lo incorporan a moléculas orgánicas; de ahí pasa a los herbívoros y al resto de la cadena alimentaria.\n\nRespiración, combustión y descomposición hacen lo contrario: devuelven carbono a la atmósfera."
           },
           {
             "id": 24,
@@ -568,7 +607,8 @@
               "C": "Anemia",
               "D": "Hipertensión"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El hierro es el componente central de la hemoglobina, la proteína de los glóbulos rojos que transporta el oxígeno. Si falta hierro se fabrica menos hemoglobina y aparece la anemia: cansancio, palidez, falta de aire.\n\nDiabetes, obesidad e hipertensión se relacionan con otros desequilibrios de la dieta (azúcares, exceso de energía, sodio), no con la falta de hierro."
           },
           {
             "id": 25,
@@ -581,7 +621,8 @@
               "C": "Permanecer en espacios cerrados con poca ventilación durante el día",
               "D": "Cubrirse boca y nariz solo cuando ya se presentan síntomas"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La prevención de enfermedades respiratorias consiste en **reducir la exposición** a lo que irrita o infecta las vías aéreas: humo, polvo, ozono, partículas suspendidas. Por eso evitar lugares con alta concentración de contaminantes es la acción preventiva directa.\n\nLa opción B se antoja porque el ejercicio es saludable, pero hacerlo al aire libre en hora pico te hace respirar mucho más aire contaminado: el beneficio se te voltea en contra. Y cubrirse boca y nariz (D) solo cuando ya hay síntomas ya no es prevenir, es contener."
           },
           {
             "id": 26,
@@ -594,7 +635,8 @@
               "C": "La variabilidad genética en las poblaciones",
               "D": "La independencia de otro organismo para reproducirse"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En la reproducción sexual se combinan los gametos de dos progenitores, así que cada descendiente recibe una mezcla nueva de genes; súmale la recombinación durante la meiosis y el resultado es **variabilidad genética** en la población, materia prima de la adaptación y la evolución.\n\nLas otras tres son ventajas de la reproducción *asexual*: es más rápida (A), produce hijos genéticamente idénticos al progenitor (B) y no necesita otro organismo (D)."
           },
           {
             "id": 27,
@@ -607,7 +649,8 @@
               "C": "Enfermedades que solo se transmiten por contacto sanguíneo",
               "D": "Infecciones que se curan con antibióticos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Lo que comparten es doble: los dos son **virus** (no bacterias) y los dos se contagian principalmente por vía sexual, es decir son infecciones de transmisión sexual.\n\nDe ahí se cae el resto: los antibióticos solo actúan contra bacterias, así que no los curan (D), y aunque el VIH sí puede transmitirse por sangre, el VPH se transmite por contacto de piel y mucosas, no solo por sangre (C)."
           },
           {
             "id": 28,
@@ -620,7 +663,8 @@
               "C": "Proteínas",
               "D": "Ribosomas"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El **gen** es el fragmento de ADN que guarda la información de una característica y se hereda de padres a hijos; los genes están alineados a lo largo de los cromosomas, tal como dice el enunciado.\n\nCuidado con la escala: la célula es la estructura completa que contiene el núcleo y los cromosomas, y las proteínas y los ribosomas son el *producto* y la *maquinaria* de la expresión de los genes, no la unidad hereditaria."
           }
         ]
       },
@@ -639,7 +683,8 @@
               "C": "Evaluar la calidad literaria de una obra",
               "D": "Comparar diferentes ediciones de un mismo texto"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La ficha bibliográfica es una tarjeta de **identificación de la fuente**: autor, título, editorial, lugar y año, número de edición. Sirve para poder localizar otra vez el material y para citarlo correctamente.\n\nSi lo que hace es resumir el contenido, ya es una ficha de resumen (B); si opina sobre la obra, es una ficha de comentario o una reseña (C). La bibliográfica solo registra los datos."
           },
           {
             "id": 30,
@@ -652,7 +697,8 @@
               "C": "Sustituir al texto principal",
               "D": "Decorar la publicación"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Subtítulos, índices e ilustraciones son **recursos gráficos de apoyo**: dividen el texto en bloques temáticos, te dicen en qué página está cada asunto y traducen a imagen lo que en palabras sería largo. En una frase: organizan la información y te ayudan a encontrarla rápido.\n\nNo sustituyen al texto principal (C) ni están de adorno (D): son parte de la estructura con la que el autor guía tu lectura."
           },
           {
             "id": 31,
@@ -665,7 +711,8 @@
               "C": "Párrafo de introducción",
               "D": "Párrafo de transición"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En la estructura clásica introducción–desarrollo–conclusión, el **párrafo de introducción** es el que presenta el tema y anuncia la idea general que se va a explicar; funciona como puerta de entrada al texto.\n\nLos de desarrollo amplían con datos y ejemplos, el de cierre recapitula y el de transición solo enlaza dos partes. Si contestaste B, fíjate en las palabras \"presenta el tema\": eso ocurre al principio, no al desarrollar."
           },
           {
             "id": 32,
@@ -678,7 +725,8 @@
               "C": "Llegó tarde, sin embargo no se disculpó",
               "D": "Estudió mucho, por lo tanto aprobó el examen"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Los nexos que introducen ejemplos son *por ejemplo*, *como*, *tal como*, *a saber*, *pongamos por caso*. En A, \"por ejemplo el delfín\" presenta un caso particular de los mamíferos: es ejemplificación.\n\nLos otros nexos hacen otro trabajo: *porque* indica causa (B), *sin embargo* marca oposición (C) y *por lo tanto* introduce una consecuencia (D)."
           },
           {
             "id": 33,
@@ -691,7 +739,8 @@
               "C": "Llegó temprano porque quería un buen lugar",
               "D": "Tanto María como Pedro asistieron al evento"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Adversativo significa que contrapone, que niega o limita lo que se acaba de decir: *pero*, *sin embargo*, *aunque*, *no obstante*, *mas*. En \"Es muy inteligente, **pero** no se esfuerza\" la segunda parte contradice la expectativa que creó la primera.\n\n*Y* y *tanto... como* son copulativos, suman (A y D), y *porque* es causal (C). Ninguno pone en contraste las dos ideas."
           },
           {
             "id": 34,
@@ -704,7 +753,8 @@
               "C": "Llueve y hace frío al mismo tiempo",
               "D": "Iré al cine o al teatro este fin de semana"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Jerarquizar es ordenar por importancia. En B, la expresión \"el factor **más importante**\" coloca a la constancia por encima de los demás factores: eso es exactamente establecer una jerarquía.\n\nLas otras tres ponen los elementos al mismo nivel: *tanto... como* equipara (A), *y* suma hechos simultáneos (C) y *o* presenta alternativas sin preferir ninguna (D)."
           },
           {
             "id": 35,
@@ -717,7 +767,8 @@
               "C": "Introducir una cita textual",
               "D": "Indicar una pausa final"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "\"Unos preferían el campo; otros, la ciudad\" son dos oraciones con sentido completo, paralelas y estrechamente relacionadas; el punto y coma las separa con una pausa mayor que la coma pero sin cortar la unidad de la idea. Nota además la coma de elipsis en \"otros, la ciudad\", que sustituye al verbo *preferían*.\n\nNo es A porque una enumeración simple se separa con comas; el punto y coma en enumeraciones se reserva para elementos que ya llevan comas dentro."
           },
           {
             "id": 36,
@@ -730,7 +781,8 @@
               "C": "Separa un vocativo",
               "D": "Marca una pausa entre sujeto y predicado"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En \"Pedro, ven a cenar\", *Pedro* no es el sujeto de *ven*: es la persona a quien se llama, un **vocativo**, y el vocativo siempre se separa con coma (al inicio, al final o entre comas si va en medio).\n\nOjo con D: entre sujeto y predicado no se pone coma. Justamente porque *Pedro* es vocativo y no sujeto, la coma es correcta aquí."
           },
           {
             "id": 37,
@@ -743,7 +795,8 @@
               "C": "Argumentativo",
               "D": "Informativo"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El propósito manda: si el texto expone razones a favor y en contra para **convencer** al lector de una postura, es **argumentativo**. Su estructura típica es tesis, argumentos, contraargumentos y conclusión.\n\nEl informativo se parece porque también da datos, pero busca solo dar a conocer, sin persuadir ni tomar partido; el narrativo cuenta hechos y el descriptivo caracteriza personas, objetos o lugares."
           },
           {
             "id": 38,
@@ -756,7 +809,8 @@
               "C": "Aposición",
               "D": "Complemento directo"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "\"Conocido en todo el pueblo por su generosidad\" va entre comas, se puede quitar sin que la oración se rompa y aclara quién es *el anciano sabio*: es una **aposición** explicativa, un modificador del núcleo del sujeto.\n\nEl sujeto completo es \"el anciano sabio, conocido en todo el pueblo por su generosidad\", y el predicado es \"caminaba lentamente por la plaza\"; por eso no es A ni B. Complemento directo tampoco, porque *caminar* es intransitivo y no lo admite."
           },
           {
             "id": 39,
@@ -769,7 +823,8 @@
               "C": "pronunció – escuchaban",
               "D": "pronunciaría – escucharían"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El texto narra un hecho ya ocurrido, así que los dos verbos deben ir en pasado y además concordar entre sí. El pretérito **pronunció** presenta la acción como puntual y terminada, y el copretérito **escuchaban** describe lo que pasaba al mismo tiempo, como fondo de esa acción: es la combinación natural en español.\n\nB y A son coherentes gramaticalmente pero mueven todo al presente o al futuro; D pone los dos verbos en condicional, que expresa algo hipotético, no un discurso que de veras se pronunció."
           },
           {
             "id": 40,
@@ -782,7 +837,8 @@
               "C": "\"Abierto de lunes a sábado, de 9 a 6\"",
               "D": "\"Producto 100% mexicano\""
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La exageración publicitaria (hipérbole) afirma una superioridad enorme e imposible de comprobar. \"El mejor café del **universo**\" es justo eso: nadie puede medirlo ni demostrarlo, solo busca impresionar.\n\nLas otras tres dan información verificable: el material del producto, el horario, el origen. Si el dato se puede comprobar, es información; si no se puede, es exageración."
           }
         ]
       },
@@ -801,7 +857,8 @@
               "C": "En el cambio físico se necesita mayor temperatura",
               "D": "En el cambio químico no se libera ni absorbe energía"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La diferencia está en la **composición**: en un cambio físico la sustancia sigue siendo la misma y solo varía su estado, forma o tamaño; en un cambio químico los átomos se reorganizan y aparecen **sustancias nuevas con propiedades distintas** de las iniciales.\n\nLa opción A dice exactamente lo contrario (el que cambia de composición es el químico). Y no es cuestión de temperatura ni de energía: ambos tipos de cambio pueden absorber o liberar energía, así que C y D tampoco distinguen nada."
           },
           {
             "id": 42,
@@ -814,7 +871,8 @@
               "C": "químicas – física",
               "D": "físicas – química"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Las propiedades **extensivas** dependen de la cantidad de materia: si partes un bloque en dos, cada mitad tiene menos masa y menos volumen. Las **intensivas** no dependen de la cantidad: la densidad de un bloque de hierro y de una limadura del mismo hierro es la misma, porque es un cociente,\n\n$$d = \\frac{m}{V},$$\n\ny al dividir dos extensivas la dependencia de la cantidad se cancela.\n\nLa opción B es la respuesta correcta al revés; C y D confunden esta clasificación con la de propiedades físicas y químicas, que es otra cosa."
           },
           {
             "id": 43,
@@ -827,7 +885,8 @@
               "C": "Siempre se produce un gas como producto",
               "D": "Los átomos cambian de un elemento a otro"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En una reacción química los átomos no se crean ni se destruyen, solo se reacomodan al romperse y formarse enlaces. Como los átomos son los mismos, la **masa total de los reactivos es igual a la masa total de los productos**: por eso balanceamos las ecuaciones.\n\nD contradice justamente el principio: para que un elemento se convierta en otro tendría que cambiar el núcleo, y eso es una reacción nuclear, no química."
           },
           {
             "id": 44,
@@ -840,7 +899,8 @@
               "C": "Evaporación",
               "D": "Decantación"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En el agua de mar la sal está **disuelta**, no en trozos suspendidos, y el agua y la sal tienen puntos de ebullición muy distintos. Al calentar, el agua se evapora y la sal queda en el recipiente: eso es la **evaporación** (así se produce la sal en las salinas).\n\nLa filtración se antoja, pero un filtro solo detiene partículas que no se disolvieron, y en una mezcla homogénea el soluto atraviesa el papel. La decantación exige dos fases separadas y la imantación solo sirve para materiales magnéticos."
           },
           {
             "id": 45,
@@ -853,7 +913,8 @@
               "C": "Iones",
               "D": "Protones"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "En el átomo, el núcleo concentra los **protones** (carga positiva, $+1$ cada uno) y los neutrones (sin carga); los electrones, negativos, están alrededor en la nube electrónica.\n\nEntonces: electrones, negativos y fuera del núcleo (A); neutrones, en el núcleo pero neutros (B); y un ion no es una partícula subatómica, es un átomo que ganó o perdió electrones (C)."
           },
           {
             "id": 46,
@@ -866,7 +927,8 @@
               "C": "18",
               "D": "52"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El número atómico $Z$ cuenta los protones y el número de masa $A$ cuenta protones más neutrones. Entonces despejas:\n\n$$n = A - Z = 35 - 17 = 18$$\n\nEl cloro-35 tiene 17 protones y **18 neutrones**.\n\nSi contestaste 17, te quedaste con el número de protones; si contestaste 52, sumaste $35 + 17$ en lugar de restar."
           },
           {
             "id": 47,
@@ -879,7 +941,8 @@
               "C": "Los electrones de valencia",
               "D": "Los neutrones y protones"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La estructura de Lewis representa el símbolo del elemento rodeado de puntos, y cada punto es un **electrón de valencia**, o sea uno de los del último nivel de energía. Se dibujan solo esos porque son los que participan en los enlaces.\n\nPor eso no es A: los electrones internos no se representan. Y el núcleo (protones y neutrones) queda resumido en el símbolo, no se dibuja."
           },
           {
             "id": 48,
@@ -892,7 +955,8 @@
               "C": "La misma masa atómica",
               "D": "El mismo número de protones"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los grupos son las **columnas** de la tabla periódica, y los elementos de una misma columna tienen el mismo número de **electrones de valencia**; de ahí que se parezcan en su comportamiento químico (por ejemplo, todos los del grupo 1 tienen un electrón de valencia y reaccionan de forma parecida).\n\nD no puede ser: el número de protones es el número atómico y es distinto para cada elemento, si coincidiera serían el mismo elemento. La masa atómica también cambia de uno a otro."
           },
           {
             "id": 49,
@@ -905,7 +969,8 @@
               "C": "Comparten electrones de manera desigual",
               "D": "Se unen por fuerzas magnéticas"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En el enlace iónico hay una diferencia grande de electronegatividad: un átomo metálico **cede** electrones y se vuelve catión ($+$), el no metálico los **acepta** y se vuelve anión ($-$), y la unión es la atracción eléctrica entre esas cargas. Ejemplo típico: $\\mathrm{Na}^+$ y $\\mathrm{Cl}^-$ en la sal.\n\nCompartir electrones, por igual (A) o de manera desigual (C), describe al enlace covalente puro y al covalente polar. Y no intervienen fuerzas magnéticas, sino eléctricas (D)."
           },
           {
             "id": 50,
@@ -918,7 +983,8 @@
               "C": "Cortar una hoja de papel en pedazos",
               "D": "Derretir un cubo de hielo"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Cuando el hierro se oxida ya no tienes hierro: se forma **óxido de hierro**, una sustancia nueva, de otro color, quebradiza y con propiedades distintas. Aparecer una sustancia nueva es la marca del cambio químico, y aquí además es irreversible por medios físicos.\n\nHervir agua, cortar papel y derretir hielo son cambios físicos: cambia el estado o el tamaño, pero la sustancia sigue siendo agua o papel. Que el hielo derretido se pueda volver a congelar te confirma que ahí no hubo reacción."
           },
           {
             "id": 51,
@@ -931,7 +997,8 @@
               "C": "Los reactivos",
               "D": "Los residuos"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En una ecuación química la flecha se lee \"produce\" o \"se transforma en\": lo que está **antes** de la flecha son los **reactivos**, las sustancias que se combinan, y lo que está después son los productos. Aquí $\\mathrm{H}_2$ y $\\mathrm{O}_2$ son los reactivos y el agua es el producto.\n\nSi pusiste A, invertiste la lectura de la flecha. Y los catalizadores, cuando se anotan, van encima de la flecha, no como reactivos, porque no se consumen."
           },
           {
             "id": 52,
@@ -944,7 +1011,8 @@
               "C": "Salina",
               "D": "Ácida"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La escala de pH va de 0 a 14: por debajo de 7 la sustancia es **ácida**, en 7 es neutra y arriba de 7 es básica o alcalina. Un pH de 2 está muy abajo, así que el jugo de limón es bastante ácido; de hecho su sabor agrio se debe al ácido cítrico.\n\nOjo con la dirección de la escala: mientras más *pequeño* el número, más ácido. Si escogiste \"básica\", la leíste al revés."
           }
         ]
       },
@@ -963,7 +1031,8 @@
               "C": "Permitió a los europeos controlar directamente las especias del Mediterráneo",
               "D": "Aseguró el dominio cristiano sobre el comercio en el mar Rojo"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Al tomar Constantinopla, los turcos otomanos quedaron dueños del paso entre Europa y Asia y encarecieron o cerraron las rutas terrestres por las que llegaban las especias y la seda. Como el comercio con Oriente era demasiado valioso para perderlo, portugueses y españoles se lanzaron a buscar **rutas marítimas** alternas: rodeando África y, en el caso de Colón, navegando hacia el oeste.\n\nLa opción A dice lo contrario de lo que pasó: las rutas terrestres no se abrieron, se bloquearon. Ahí está el punto de todo el episodio."
           },
           {
             "id": 54,
@@ -976,7 +1045,8 @@
               "C": "Se redujeron las jornadas laborales y mejoraron las condiciones de los obreros",
               "D": "Se debilitó el comercio entre las potencias europeas y sus colonias"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El cambio de fondo fue tecnológico y de organización del trabajo: la **máquina de vapor** permitió producir con energía mecánica en gran escala, y la producción se trasladó del taller artesanal a la **fábrica**. De ahí se derivan el crecimiento de las ciudades, el proletariado industrial y la burguesía industrial.\n\nC es tentadora porque suena a progreso, pero al principio pasó justo lo contrario: jornadas larguísimas, salarios bajos y trabajo infantil. Las mejoras llegaron después, y gracias a la lucha obrera."
           },
           {
             "id": 55,
@@ -989,7 +1059,8 @@
               "C": "La invasión alemana a Polonia en septiembre de 1939",
               "D": "La crisis económica del crack de 1929 en Estados Unidos"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El **asesinato del archiduque Francisco Fernando** en Sarajevo, en junio de 1914, fue la chispa: Austria-Hungría le dio un ultimátum a Serbia y el sistema de alianzas arrastró en cadena a Rusia, Alemania, Francia y Gran Bretaña. Las causas de fondo eran otras (nacionalismos, imperialismo, carrera armamentista), pero el detonante directo fue ese.\n\nCuidado con las fechas de los distractores: el Tratado de Versalles (1919) es la *consecuencia* de esta guerra, y la invasión de Polonia (1939) y el crack de 1929 pertenecen ya al camino de la Segunda."
           },
           {
             "id": 56,
@@ -1002,7 +1073,8 @@
               "C": "El predominio del poder religioso sobre las decisiones del Estado",
               "D": "La organización política basada en consejos obreros y campesinos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El fascismo italiano se define por un Estado **nacionalista, autoritario y de partido único**: culto al líder (*il Duce*), militarismo, supresión de partidos, sindicatos libres y prensa opositora, y subordinación del individuo a la nación.\n\nA es lo opuesto (el fascismo era centralista y excluyente), y D describe a los sóviets, es decir el modelo comunista, precisamente el enemigo al que Mussolini combatía."
           },
           {
             "id": 57,
@@ -1015,7 +1087,8 @@
               "C": "Significó la rendición inmediata de las tropas alemanas en Francia",
               "D": "Fue la operación que liberó completamente a la Unión Soviética del avance nazi"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Antes de junio de 1944 Alemania peleaba sobre todo en el este, contra la URSS. El desembarco en Normandía abrió un **frente occidental** en Francia, y con eso los alemanes tuvieron que dividir tropas y recursos en dos direcciones: su defensa se debilitó y comenzó la liberación de Europa occidental.\n\nNo es A porque Estados Unidos ya estaba en la guerra desde diciembre de 1941, y no es C porque la rendición alemana llegó casi un año después, en mayo de 1945, no de inmediato."
           },
           {
             "id": 58,
@@ -1028,7 +1101,8 @@
               "C": "El fin de la Guerra Fría y la división entre capitalismo y socialismo",
               "D": "La reunificación política de toda la región de los Balcanes"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El Muro dividía Berlín desde 1961 y era la imagen más clara del mundo partido en dos bloques: capitalista al oeste, socialista al este. Su caída en noviembre de 1989 se volvió el símbolo del **fin de la Guerra Fría** y de esa división; enseguida vinieron la reunificación alemana (1990) y la disolución de la URSS (1991).\n\nB confunde el símbolo con el trámite: el Pacto de Varsovia se disolvió formalmente en 1991, no ese mismo año. Y la OTAN se fundó cuarenta años antes, en 1949."
           },
           {
             "id": 59,
@@ -1041,7 +1115,8 @@
               "C": "El Consejo de Indias",
               "D": "La Real Audiencia"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La **Real Audiencia** era el tribunal superior de la Nueva España: impartía justicia en nombre del rey, vigilaba al virrey, lo asesoraba y llegaba a gobernar en su ausencia. Justicia más asesoría es la combinación que pide el reactivo.\n\nEl Consejo de Indias se antoja, pero legislaba y gobernaba las colonias **desde España**, no al lado del virrey. El Cabildo era el gobierno de la ciudad y la encomienda no era un órgano de justicia, sino un reparto de trabajo indígena."
           },
           {
             "id": 60,
@@ -1054,7 +1129,8 @@
               "C": "Unió los intereses de criollos, españoles e insurgentes con tres garantías",
               "D": "Garantizó la repartición inmediata de las tierras a los pueblos indígenas"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La fuerza del Plan de Iguala (1821) estuvo en **conciliar intereses opuestos** con sus tres garantías: religión católica única (tranquilizó al clero y a los españoles), independencia (lo que querían los insurgentes) y unión de todos los habitantes sin distinción de origen (aseguró a los criollos y peninsulares). Ese acuerdo permitió el Ejército Trigarante y la entrada a la Ciudad de México en septiembre de 1821.\n\nA no puede ser: el plan hacía lo contrario, consagraba a la Iglesia católica. Y aunque el plan ofrecía el trono a Fernando VII, eso no era reconocer su autoridad sobre un territorio independiente (B), sino invitarlo a reinar en una monarquía mexicana separada de España."
           },
           {
             "id": 61,
@@ -1067,7 +1143,8 @@
               "C": "Venustiano Carranza",
               "D": "Emiliano Zapata"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Porfirio Díaz llevaba más de treinta años en el poder reeligiéndose una y otra vez, con elecciones simuladas. Contra eso Madero levantó el lema **\"Sufragio efectivo, no reelección\"**: voto que de verdad cuente y prohibición de repetir en el cargo. Con esa bandera publicó *La sucesión presidencial en 1910* y luego el Plan de San Luis, que inició la Revolución.\n\nCarranza y Zapata son de la etapa revolucionaria posterior, ya con Díaz derrocado. Y lo curioso es que la frase la había usado antes el propio Díaz, cuando él era el opositor."
           },
           {
             "id": 62,
@@ -1080,7 +1157,8 @@
               "C": "La crisis económica mundial",
               "D": "Las leyes que limitaban la participación de la Iglesia en la vida pública"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El conflicto estalló por la aplicación de las **leyes que restringían la presencia pública de la Iglesia**: los artículos anticlericales de la Constitución de 1917 y, sobre todo, la Ley Calles de 1926, que limitaba el número de sacerdotes, el culto externo y la educación religiosa. Grupos católicos del centro-occidente se levantaron en armas al grito de \"¡Viva Cristo Rey!\" hasta los acuerdos de 1929.\n\nNo fue un pleito por tierras (A) ni una invasión (B): el eje del conflicto fue la relación entre el Estado y la Iglesia."
           },
           {
             "id": 63,
@@ -1093,7 +1171,8 @@
               "C": "Literatura",
               "D": "Medicina"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Octavio Paz recibió el Premio Nobel de **Literatura** en 1990, por una obra que abarca poesía (*Piedra de sol*, *Libertad bajo palabra*) y ensayo, entre ellos *El laberinto de la soledad*, su indagación sobre la identidad mexicana.\n\nEl distractor \"Paz\" es una trampa con su apellido: ese premio, en el caso de México, lo recibió Alfonso García Robles en 1982 por su labor en el desarme nuclear."
           },
           {
             "id": 64,
@@ -1106,7 +1185,8 @@
               "C": "Neoliberalismo",
               "D": "Proteccionismo"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Vender empresas del Estado a particulares, abrir la economía al exterior, desregular y reducir el gasto público son los rasgos del **neoliberalismo**, el modelo que México adoptó desde los años ochenta (Teléfonos de México y los bancos son los casos más citados) y que culminó con el TLC en 1994.\n\nEl proteccionismo es justo el modelo anterior, el de sustitución de importaciones, con aranceles altos y muchas empresas estatales; y el socialismo va en la dirección opuesta, hacia más propiedad del Estado, no menos."
           }
         ]
       },
@@ -1125,7 +1205,8 @@
               "C": "$$46$$",
               "D": "$$-16$$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Resuélvelo de izquierda a derecha con cuidado en los signos. Primero $(-15) + (-8) = -23$: sumar dos negativos junta sus valores. Luego viene $-(-23)$, y restar un negativo equivale a sumar: $-23 + 23 = 0$.\n\nSi te dio $-46$ (opción B), trataste el $-(-23)$ como si fuera restar 23 en vez de sumarlo: el clásico despiste con el doble signo."
           },
           {
             "id": 66,
@@ -1138,7 +1219,8 @@
               "C": "$685",
               "D": "$120"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El descuento es el 15% de \\$800: $800 \\times 0.15 = 120$ pesos. Ese es lo que te rebajan, no lo que pagas, así que el precio final es $800 - 120 = 680$ pesos.\n\nUn atajo útil: si te descuentan 15%, pagas el 85%, o sea $800 \\times 0.85 = 680$. La opción D (\\$120) es solo el descuento; la pregunta pide el precio ya rebajado."
           },
           {
             "id": 67,
@@ -1151,7 +1233,8 @@
               "C": "$$\\frac{1}{2}$$",
               "D": "$$\\frac{2}{7}$$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Suma primero lo que gasta. Con denominador común 12: $\\frac{1}{4} = \\frac{3}{12}$ y $\\frac{1}{3} = \\frac{4}{12}$, así que gasta $\\frac{3}{12} + \\frac{4}{12} = \\frac{7}{12}$ de su sueldo. Lo que le queda es el resto:\n\n$$1 - \\frac{7}{12} = \\frac{5}{12}$$\n\nSi elegiste $\\frac{7}{12}$ (opción B), calculaste lo que gasta, no lo que le queda: leíste bien las fracciones pero te faltó el último paso."
           },
           {
             "id": 68,
@@ -1164,7 +1247,8 @@
               "C": "$$8x + 14$$",
               "D": "$$4x + 12$$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Distribuye cada número sobre su paréntesis, con ojo en el signo del segundo: $3(2x+4) = 6x + 12$ y $-2(x-1) = -2x + 2$ (menos por menos da más). Juntando términos semejantes:\n\n$$6x + 12 - 2x + 2 = 4x + 14$$\n\nSi te dio $4x + 10$ (opción B), el error estuvo en $-2(-1)$: te salió $-2$ en vez de $+2$."
           },
           {
             "id": 69,
@@ -1177,7 +1261,8 @@
               "C": "$$15$$",
               "D": "$$9$$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Junta las $x$ de un lado y los números del otro. Resta $2x$ en ambos lados: $3x - 3 = 12$. Suma 3: $3x = 15$. Divide entre 3:\n\n$$x = 5$$\n\nComprueba: $5(5) - 3 = 22$ y $2(5) + 12 = 22$. Sí cuadra. Si elegiste 15 (opción C), llegaste a $3x = 15$ y se te olvidó dividir entre 3."
           },
           {
             "id": 70,
@@ -1190,7 +1275,8 @@
               "C": "$$x^2 + 7x + 49$$",
               "D": "$$2x^2 + 14x + 49$$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Es un binomio al cuadrado, y la regla dice: cuadrado del primero, más el doble producto de ambos, más cuadrado del segundo:\n\n$$(x+7)^2 = x^2 + 2(7)(x) + 7^2 = x^2 + 14x + 49$$\n\nSi elegiste $x^2 + 49$ (opción A), caíste en el error más famoso del álgebra: elevar cada término por separado y olvidar el doble producto $14x$."
           },
           {
             "id": 71,
@@ -1203,7 +1289,8 @@
               "C": "$192",
               "D": "$160"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Es proporcionalidad directa: primero saca el precio de un kilogramo, $120 \\div 5 = 24$ pesos. Luego multiplica por los kilos que quieres:\n\n$$8 \\times 24 = 192 \\text{ pesos}$$\n\nTambién puedes plantearlo como regla de tres: $\\frac{120}{5} = \\frac{x}{8}$, de donde $x = \\frac{120 \\times 8}{5} = 192$."
           },
           {
             "id": 72,
@@ -1216,7 +1303,8 @@
               "C": "7 y 8",
               "D": "7.6"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La moda es el valor que más se repite. Cuenta cada calificación: el 6 aparece 2 veces, el 7 aparece 3 veces, el 8 aparece 3 veces, el 9 una y el 10 una. Hay empate en la frecuencia máxima: tanto 7 como 8 aparecen tres veces, así que la distribución es bimodal y la moda es **7 y 8**.\n\nSi elegiste 7.6 (opción D), calculaste el promedio: esa es la media, no la moda."
           },
           {
             "id": 73,
@@ -1229,7 +1317,8 @@
               "C": "$$\\frac{2}{3}$$",
               "D": "$$\\frac{1}{6}$$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "\"Mayor que 4\" significa estrictamente mayor: solo el 5 y el 6 cumplen. Son 2 casos favorables de 6 posibles:\n\n$$P = \\frac{2}{6} = \\frac{1}{3}$$\n\nSi elegiste $\\frac{1}{2}$ (opción A), seguramente contaste también el 4, pero \"mayor que 4\" no incluye al 4; eso sería \"mayor o igual que 4\"."
           },
           {
             "id": 74,
@@ -1242,7 +1331,8 @@
               "C": "Isósceles",
               "D": "Obtusángulo"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Cuando conoces los tres lados, prueba el teorema de Pitágoras: si el cuadrado del lado mayor es igual a la suma de los cuadrados de los otros dos, el triángulo es rectángulo.\n\n$$5^2 + 12^2 = 25 + 144 = 169 = 13^2$$\n\nSe cumple, así que hay un ángulo recto: es un triángulo **rectángulo**. De hecho, 5-12-13 es una terna pitagórica famosa que conviene reconocer de memoria. No es isósceles ni equilátero porque los tres lados son distintos."
           },
           {
             "id": 75,
@@ -1255,7 +1345,8 @@
               "C": "17 cm",
               "D": "24 cm"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El perímetro es el contorno completo: dos bases y dos alturas.\n\n$$P = 2(12) + 2(5) = 24 + 10 = 34 \\text{ cm}$$\n\nSi te dio 60 (opción A), multiplicaste $12 \\times 5$: eso es el área, no el perímetro. Y 17 (opción C) es solo un largo más un ancho: te faltó el otro par de lados."
           },
           {
             "id": 76,
@@ -1268,7 +1359,8 @@
               "C": "$$30 \\text{ cm}^2$$",
               "D": "$$32 \\text{ cm}^2$$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El área de un triángulo es base por altura entre dos:\n\n$$A = \\frac{b \\times h}{2} = \\frac{10 \\times 6}{2} = \\frac{60}{2} = 30 \\text{ cm}^2$$\n\nEl \"entre dos\" viene de que un triángulo es la mitad de un rectángulo con la misma base y altura. Si te dio 60 (opción A), olvidaste dividir entre 2: calculaste el rectángulo completo."
           }
         ]
       },
@@ -1287,7 +1379,8 @@
               "C": "Conserva la forma esférica de la Tierra sin deformar las proporciones",
               "D": "Representa con más claridad las fronteras políticas actuales"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La Tierra es (casi) una esfera, y el globo terráqueo también lo es: por eso conserva las formas, tamaños y distancias en su proporción real. Un mapa plano, en cambio, tiene que \"aplanar\" la esfera con una proyección, y toda proyección deforma algo: áreas, formas o distancias.\n\nLa opción A tienta porque el globo trae coordenadas, pero un mapa también las tiene; la ventaja exclusiva del globo es no deformar."
           },
           {
             "id": 94,
@@ -1300,7 +1393,8 @@
               "C": "Anticipar terremotos y erupciones volcánicas",
               "D": "Determinar la ubicación exacta de un punto en la superficie terrestre"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "El GPS es una red de satélites que, midiendo el tiempo que tardan sus señales en llegar a tu receptor, calcula tus coordenadas: latitud, longitud y altitud. Su función es esa, **ubicar con exactitud un punto sobre la superficie terrestre**; de ahí que lo usen los celulares, los navegadores de los coches y los barcos.\n\nNo predice sismos ni analiza suelos: para eso hay otras tecnologías, como los sismógrafos o los sensores remotos."
           },
           {
             "id": 95,
@@ -1313,7 +1407,8 @@
               "C": "La existencia de las distintas zonas climáticas",
               "D": "La duración de un año en 365 días"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La rotación es el giro de la Tierra sobre su propio eje, que tarda 24 horas. Como el Sol solo ilumina la mitad del planeta a la vez, ese giro hace que cada zona pase alternadamente de la luz a la oscuridad: eso es la sucesión del **día y la noche**.\n\nSi elegiste las estaciones (opción A), confundiste rotación con traslación: las estaciones se deben al viaje anual de la Tierra alrededor del Sol combinado con la inclinación del eje."
           },
           {
             "id": 96,
@@ -1326,7 +1421,8 @@
               "C": "Una región volcánica que dejó de estar activa hace siglos",
               "D": "El borde de una placa que se desplaza muy lentamente"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "México está en una zona donde interactúan varias placas tectónicas: la Norteamericana, la de Cocos, la del Pacífico, la de Rivera y la del Caribe. En la costa del Pacífico, la placa de Cocos se hunde bajo la Norteamericana (subducción), y ese roce constante libera energía en forma de sismos. Por eso los temblores fuertes suelen originarse en Guerrero, Oaxaca o Michoacán.\n\nUn interior de placa estable (opción A) es justo lo contrario: ahí casi no tiembla."
           },
           {
             "id": 97,
@@ -1339,7 +1435,8 @@
               "C": "Temperatura y humedad",
               "D": "Vegetación y tipo de suelo"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Los dos grandes factores son la **latitud** (qué tan lejos del ecuador estás: determina cuánta radiación solar recibe una zona, por eso hace más calor en los trópicos que en los polos) y la **altitud** (a mayor altura sobre el nivel del mar, menor temperatura; por eso puede nevar en montañas tropicales).\n\nLa opción B tienta por sonar simétrica, pero la longitud no influye en el clima: moverte de este a oeste sobre el mismo paralelo no te cambia la radiación solar. Y temperatura y humedad (opción C) no son factores, son elementos del clima: son lo que resulta, no lo que lo causa."
           },
           {
             "id": 98,
@@ -1352,7 +1449,8 @@
               "C": "Acceso garantizado a transporte público y vialidades",
               "D": "Construcción de viviendas con permisos y títulos de propiedad"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los asentamientos irregulares surgen sin planeación: la gente ocupa terrenos (a veces de riesgo, como laderas o barrancas) sin permisos ni títulos de propiedad. Como no fueron urbanizados formalmente, carecen de la infraestructura básica: drenaje, agua entubada, pavimentación, alumbrado. Esa **falta de servicios básicos** es su problema característico.\n\nFíjate que las otras tres opciones describen lo contrario de un asentamiento irregular: orden, permisos y servicios garantizados."
           },
           {
             "id": 99,
@@ -1365,7 +1463,8 @@
               "C": "Recursos forestales de pino y encino",
               "D": "Generación de energía hidroeléctrica a gran escala"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En la Llanura Costera del Golfo —sobre todo en Veracruz, Tabasco y Campeche— se concentran los grandes yacimientos de **petróleo y gas natural** de México, tanto en tierra como en la plataforma marina (ahí está, por ejemplo, la zona de Cantarell). Esa región es el corazón de la industria petrolera nacional.\n\nLos minerales como plata y cobre (opción A) se asocian más bien a las sierras del norte y centro del país, no a esta llanura costera."
           },
           {
             "id": 100,
@@ -1378,7 +1477,8 @@
               "C": "Las costas del Océano Pacífico",
               "D": "Las costas del Golfo de California"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Los tres están en el litoral del **Pacífico**: Acapulco en Guerrero, Puerto Vallarta en Jalisco y Huatulco en Oaxaca, todos estados de la vertiente occidental del país.\n\nSi pensaste en el Caribe (opción B), probablemente los asociaste con Cancún o Playa del Carmen, que sí están en esa costa, pero en Quintana Roo, del otro lado del país."
           },
           {
             "id": 101,
@@ -1391,7 +1491,8 @@
               "C": "Mantienen aranceles elevados al comercio entre ellos",
               "D": "Limitan los acuerdos exclusivamente al sector agrícola"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Lo que distingue a la Unión Europea es su **grado de integración**, el más profundo entre los bloques económicos del mundo: buena parte de sus miembros comparte una moneda (el euro), hay libre circulación de personas y mercancías, y existen instituciones y políticas comunes (parlamento, banco central, normas compartidas). Otros bloques, como el T-MEC, se quedan en acuerdos comerciales sin moneda ni gobierno común.\n\nLa opción A es falsa de entrada: en la UE se hablan más de 20 idiomas oficiales."
           },
           {
             "id": 102,
@@ -1404,7 +1505,8 @@
               "C": "La adopción de costumbres provenientes únicamente del extranjero",
               "D": "El predominio de las prácticas culturales de la capital del país"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La diversidad cultural de México se manifiesta en hechos concretos y verificables: se hablan más de 60 lenguas indígenas (náhuatl, maya, zapoteco, mixteco...), y cada región tiene sus propias tradiciones, fiestas y gastronomía. Eso es exactamente lo que describe la opción B.\n\nLas otras tres opciones niegan la diversidad en lugar de mostrarla: hablan de una sola tradición, de puras costumbres extranjeras o del predominio de la capital."
           },
           {
             "id": 103,
@@ -1417,7 +1519,8 @@
               "C": "la fusión de tradiciones – el respeto a una sola identidad",
               "D": "la pluralidad de costumbres – la unificación lingüística forzada"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La **multiculturalidad** describe un hecho: en un mismo territorio coexisten varias culturas, aunque cada una viva por su lado. La **interculturalidad** va un paso más allá: implica que esas culturas dialoguen, se relacionen y convivan en igualdad, intercambiando y enriqueciéndose mutuamente. Por eso la B es la buena: coexistencia por un lado, diálogo y convivencia por el otro.\n\nUna forma de recordarlo: \"multi\" = muchas juntas; \"inter\" = entre ellas, o sea, en relación."
           },
           {
             "id": 104,
@@ -1430,7 +1533,8 @@
               "C": "Portugal",
               "D": "España"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Cataluña es una comunidad autónoma de **España**, en el noreste de la península ibérica, con Barcelona como capital. Tiene lengua propia (el catalán) y una identidad histórica fuerte, y desde hace años una parte de su población impulsa la independencia, lo que ha generado tensiones con el gobierno español, como el referéndum de 2017.\n\nSi dudaste con Francia, quizá fue porque Cataluña colinda con ella por los Pirineos, pero el conflicto es interno de España."
           }
         ]
       },
@@ -1449,7 +1553,8 @@
               "C": "Una línea recta ascendente",
               "D": "Una línea descendente"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Velocidad constante significa que en cada segundo el auto recorre la misma distancia: la distancia crece de manera uniforme con el tiempo. En una gráfica distancia-tiempo eso se dibuja como una **línea recta ascendente**, cuya pendiente es precisamente la velocidad.\n\nSi elegiste la línea horizontal (opción B), ojo: esa representa un objeto detenido (la distancia no cambia aunque pase el tiempo). Y una curva ascendente (opción A) correspondería a un objeto que acelera."
           },
           {
             "id": 106,
@@ -1462,7 +1567,8 @@
               "C": "30 m/s",
               "D": "40 m/s"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "En caída libre desde el reposo, la velocidad se calcula con $v = g \\cdot t$: cada segundo el objeto gana 10 m/s de velocidad.\n\n$$v = 10 \\text{ m/s}^2 \\times 3 \\text{ s} = 30 \\text{ m/s}$$\n\nPuedes verlo segundo a segundo: al primer segundo va a 10 m/s, al segundo a 20 m/s, al tercero a 30 m/s. La aceleración es justamente eso: cuánta velocidad se gana en cada segundo."
           },
           {
             "id": 107,
@@ -1475,7 +1581,8 @@
               "C": "Se encuentre en el vacío",
               "D": "Esté en contacto con otro objeto"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La Primera Ley de Newton, o ley de la inercia, dice que un cuerpo mantiene su estado —reposo o movimiento rectilíneo uniforme— mientras nada lo obligue a cambiarlo. Y lo único que puede obligarlo es una **fuerza externa** neta actuando sobre él: un empujón, la fricción, la gravedad.\n\nLa masa (opción A) no impide el cambio, solo lo hace más difícil: esa idea de \"resistencia al cambio\" es la inercia, pero el cuerpo igual se mueve si la fuerza actúa."
           },
           {
             "id": 108,
@@ -1488,7 +1595,8 @@
               "C": "4800 N",
               "D": "400 N"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El peso depende de la gravedad del lugar: $P = mg$. La masa del astronauta no cambia al viajar, pero en la Luna la gravedad es la sexta parte de la terrestre, así que su peso también se reduce a la sexta parte:\n\n$$P_{Luna} = \\frac{800}{6} \\approx 133 \\text{ N}$$\n\nSi elegiste 800 N (opción A), confundiste peso con masa: la masa sí es la misma en todos lados, pero el peso es la fuerza con que te jala el astro donde estás parado."
           },
           {
             "id": 109,
@@ -1501,7 +1609,8 @@
               "C": "Responde a la fuerza de gravedad",
               "D": "Señala siempre hacia el Sol"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La Tierra se comporta como un imán gigante, con su propio campo magnético. La aguja de la brújula es un pequeño imán que, al poder girar libremente, se alinea con ese campo y **apunta hacia el polo norte magnético** del planeta. Por eso sirve para orientarse: sin importar dónde estés, la aguja te marca una referencia fija.\n\nNo tiene nada que ver con la gravedad ni con el Sol: funciona igual de día, de noche y bajo techo."
           },
           {
             "id": 110,
@@ -1514,7 +1623,8 @@
               "C": "Las partículas se compactan",
               "D": "El número de partículas aumenta"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Según el modelo cinético, un gas está formado por partículas en movimiento constante, y la temperatura es una medida de qué tan rápido se mueven. Al calentar el gas le das energía a sus partículas: se mueven **más rápido**, chocan con más fuerza y tienden a **separarse más** (por eso los gases se expanden al calentarse).\n\nLa opción D es un error común: calentar no crea partículas nuevas, el número de moléculas no cambia; lo que cambia es su energía de movimiento."
           },
           {
             "id": 111,
@@ -1527,7 +1637,8 @@
               "C": "La temperatura del ambiente exterior",
               "D": "La forma del recipiente"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las moléculas de un gas se mueven sin parar en todas direcciones y chocan continuamente contra las paredes del recipiente. Cada choque empuja un poquito la pared, y la suma de millones de esos choques por segundo es lo que percibimos como **presión**. Por eso, si calientas el gas (choques más rápidos y frecuentes) o metes más gas en el mismo espacio, la presión sube.\n\nEl peso del recipiente o su forma no tienen nada que ver: la presión viene de adentro, del bombardeo molecular."
           },
           {
             "id": 112,
@@ -1540,7 +1651,8 @@
               "C": "Un ventilador eléctrico",
               "D": "Una balanza de platillos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El principio de Pascal dice que la presión aplicada a un fluido encerrado se transmite íntegra a todos sus puntos. El **gato hidráulico** lo aprovecha: aplicas una fuerza pequeña sobre un pistón chico, la presión se transmite por el líquido, y sobre un pistón grande esa misma presión produce una fuerza mucho mayor, suficiente para levantar un coche. Es el mismo principio de los frenos hidráulicos y las prensas.\n\nEl termómetro de mercurio (opción A) funciona por dilatación térmica, no por transmisión de presión."
           },
           {
             "id": 113,
@@ -1553,7 +1665,8 @@
               "C": "Son brillantes y duros",
               "D": "Resisten altas temperaturas sin derretirse"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En los metales, los electrones más externos de los átomos no están amarrados a un átomo en particular: forman una especie de \"mar de electrones libres\" que puede desplazarse por todo el material. Cuando conectas un voltaje, esos electrones fluyen con facilidad, y ese flujo es la corriente eléctrica. Por eso cobre y aluminio se usan en cables.\n\nEl brillo, la dureza o el peso (las otras opciones) son propiedades de los metales, sí, pero no son la causa de que conduzcan electricidad."
           },
           {
             "id": 114,
@@ -1566,7 +1679,8 @@
               "C": "El punto de equilibrio y la cresta",
               "D": "Dos puntos cualesquiera de la onda"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La longitud de onda ($\\lambda$) es la distancia que ocupa un ciclo completo de la onda, y la forma estándar de medirla es entre **dos crestas consecutivas** (o dos valles consecutivos, que da lo mismo).\n\nLa opción B tienta, pero de una cresta al valle siguiente solo hay medio ciclo: media longitud de onda. Y la C (del equilibrio a la cresta) describe la amplitud, que es otra cosa: qué tan \"alta\" es la onda, no qué tan larga."
           },
           {
             "id": 115,
@@ -1579,7 +1693,8 @@
               "C": "Obtener imágenes del interior del cuerpo humano",
               "D": "Generar energía eléctrica"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Los rayos X son radiación electromagnética muy energética que atraviesa los tejidos blandos del cuerpo pero es absorbida por los huesos y estructuras densas. Esa diferencia es la que forma la imagen: las **radiografías** con que un médico revisa fracturas, o los escáneres de equipaje en los aeropuertos.\n\nCalentar alimentos (opción A) es cosa de las microondas y transmitir señales (opción B) de las ondas de radio: son otras zonas del espectro electromagnético, con mucha menos energía."
           },
           {
             "id": 116,
@@ -1592,7 +1707,8 @@
               "C": "descomposición por refracción",
               "D": "polarización"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La luz blanca del Sol es en realidad una mezcla de colores. Al entrar en una gota de agua, la luz se refracta (cambia de dirección al pasar de un medio a otro), y como cada color se desvía en un ángulo ligeramente distinto, la luz blanca se **descompone por refracción** en la franja de colores que vemos: el arcoíris. Es el mismo fenómeno que produce un prisma.\n\nLa reflexión sola (opción B) no separa los colores: rebotaría la luz blanca tal cual, sin abrirla en su espectro."
           }
         ]
       },
@@ -1611,7 +1727,8 @@
               "C": "Elegir lo que la mayoría del grupo considera adecuado",
               "D": "Optar por la alternativa que más nos beneficie a corto plazo"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Una decisión responsable tiene dos ingredientes: **reflexionar antes** sobre las consecuencias posibles de cada opción, y **asumir después** los resultados de lo que elegiste, sin echar culpas. Eso es exactamente lo que dice la opción B: la responsabilidad une libertad de elegir con hacerse cargo.\n\nSeguir a la mayoría (opción C) es justo lo contrario: delegar tu decisión en otros. Y elegir lo que más te conviene a corto plazo (opción D) ignora las consecuencias, que es el corazón del asunto."
           },
           {
             "id": 118,
@@ -1624,7 +1741,8 @@
               "C": "Estético, porque busca la armonía en las relaciones humanas",
               "D": "Utilitario, porque facilita la cooperación entre individuos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El respeto pertenece a los valores **morales**: los que orientan qué es correcto o incorrecto en nuestro trato con los demás, junto con la honestidad, la justicia o la solidaridad. El enunciado habla precisamente de cómo debemos comportarnos con otras personas para convivir bien.\n\nLos valores vitales (opción A) se refieren a la salud y la vida; los estéticos (opción C), a la belleza; los utilitarios (opción D), a lo práctico y provechoso. El respeto no encaja ahí: es una norma de conducta hacia los otros."
           },
           {
             "id": 119,
@@ -1637,7 +1755,8 @@
               "C": "Por la imitación de modelos presentes en medios y redes sociales",
               "D": "Por la pertenencia exclusiva a un grupo cultural o lugar de origen"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La identidad personal no viene dada de fábrica ni la dicta un solo factor: se **construye** a lo largo de la vida combinando tus experiencias, tus vínculos con familia y amigos, y la reflexión sobre quién eres y quién quieres ser. Es un proceso dinámico donde lo social y lo personal se entrelazan; por eso la B es la respuesta completa.\n\nLas otras opciones reducen la identidad a un solo ingrediente —los genes, los medios o el grupo de origen— y ninguno alcanza por sí solo para explicar quién eres."
           },
           {
             "id": 120,
@@ -1650,7 +1769,8 @@
               "C": "Sociales, porque expresan la necesidad de pertenencia y vinculación con los pares",
               "D": "Cognitivos, porque dependen del desarrollo del pensamiento lógico"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La clave está en qué expresan esos cambios: la música que oyes, cómo te vistes y con quién te juntas son formas de buscar **pertenencia**, de identificarte con tus pares y diferenciarte a la vez. Eso es la dimensión **social** de la adolescencia: la relación con los grupos cobra un peso enorme.\n\nLa opción A tienta porque la ropa \"se ve\", pero los cambios físicos son los del cuerpo (estatura, voz, desarrollo); vestirte de cierta forma es una elección social, no un cambio corporal."
           },
           {
             "id": 121,
@@ -1663,7 +1783,8 @@
               "C": "Hostigamiento, porque genera un ambiente intimidatorio sin contacto directo",
               "D": "Discriminación, porque trata a la víctima con desprecio por una característica personal"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Lo que define este caso es que las conductas invaden la esfera **sexual** de la persona sin su consentimiento: el contacto físico no consentido y la exposición forzada a contenido sexual son formas de **abuso sexual**, porque vulneran la integridad y la libertad de la víctima en ese ámbito.\n\nEl acoso escolar (opción A) tienta si el hecho ocurre en la escuela, pero ese término describe agresiones reiteradas en general; cuando la agresión es de naturaleza sexual y sin consentimiento, el nombre correcto es abuso sexual."
           },
           {
             "id": 122,
@@ -1676,7 +1797,8 @@
               "C": "Un acto cívico simbólico sin implicaciones prácticas",
               "D": "Una obligación administrativa impuesta por el Estado"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Tramitar tu credencial y acudir a votar son actos que nadie te obliga a hacer: los realizas porque asumes tu papel en la vida democrática. Eso es **responsabilidad ciudadana**: participar voluntariamente en los asuntos públicos que nos afectan a todos.\n\nLa opción A tienta porque votar sí es un derecho político, pero fíjate en lo que describe el enunciado: no el derecho en abstracto, sino el acto de ejercerlo; obtener la credencial y participar es la conducta responsable del ciudadano, no la garantía constitucional."
           },
           {
             "id": 123,
@@ -1689,7 +1811,8 @@
               "C": "Identidad nacional, cultura y tradiciones compartidas",
               "D": "Economía, instituciones políticas y orden jurídico"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La teoría clásica del Estado señala tres elementos que no pueden faltar: la **población** (la gente), el **territorio** (el espacio donde vive) y el **gobierno con soberanía** (la autoridad que organiza y decide sin subordinarse a otro poder). Si falta cualquiera de los tres, no hay Estado.\n\nLa opción B suena bien porque menciona cosas valiosas —Constitución, división de poderes, derechos humanos—, pero esas son características de cómo se organiza un Estado democrático, no los elementos que lo constituyen."
           },
           {
             "id": 124,
@@ -1702,7 +1825,8 @@
               "C": "Asistencialismo, porque depende de que la autoridad resuelva el problema",
               "D": "Acción comunitaria privada, porque no involucra al gobierno"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Cuando los ciudadanos se organizan por iniciativa propia para atender o exigir solución a un asunto que afecta a la comunidad —como el alumbrado público—, eso es **participación ciudadana**: la comunidad incide en los asuntos públicos en lugar de esperar pasivamente.\n\nNo es asistencialismo (opción C): los vecinos no esperan sentados a que les resuelvan, se movilizan. Y no es acción privada (opción D): el alumbrado es un asunto público y la gestión se dirige a la autoridad."
           },
           {
             "id": 125,
@@ -1715,7 +1839,8 @@
               "C": "No se puedan manipular los conteos electorales",
               "D": "Cada ciudadano vote una sola vez"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "El secreto del voto protege la **libertad** del votante: si nadie puede saber por quién votaste, nadie puede presionarte, comprarte el voto ni castigarte por tu decisión. Esa es su razón de ser democrática: garantizar que votes según tu conciencia, sin miedo a coacción ni represalias.\n\nLa opción B tienta porque suena parecida, pero se queda corta: el secreto no es solo privacidad como gusto personal, es un blindaje contra la presión externa. Y el conteo limpio o el \"un ciudadano, un voto\" se garantizan con otros mecanismos, no con el secreto."
           },
           {
             "id": 126,
@@ -1728,7 +1853,8 @@
               "C": "Difunden únicamente noticias positivas para evitar la desinformación",
               "D": "Priorizan los temas que generan mayor consenso social"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La función social de los medios tiene dos pilares: **informar con veracidad** (contar los hechos como son, verificados) y **formar ciudadanía crítica** (dar elementos para que la gente analice y se forme su propia opinión). Eso describe la opción B.\n\nOjo con la C: difundir solo noticias positivas no evita la desinformación, la produce, porque oculta parte de la realidad. Y reflejar solo lo que la audiencia quiere oír (opción A) es buscar rating, no servir a la sociedad."
           },
           {
             "id": 127,
@@ -1741,7 +1867,8 @@
               "C": "Reducir el gasto familiar en servicios públicos",
               "D": "Mostrar a la comunidad un comportamiento ejemplar"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Las tres acciones apuntan a lo mismo: usar los recursos naturales de manera responsable para que alcancen hoy y sigan existiendo mañana. Eso es la **sustentabilidad**: satisfacer nuestras necesidades sin comprometer las de las generaciones futuras.\n\nLa opción B tienta porque esas acciones pueden coincidir con reglamentos, pero fíjate en la palabra \"principalmente\": el propósito de fondo es cuidar el ambiente, no cumplir un trámite. Ahorrar dinero (opción C) puede ser un efecto secundario, no el objetivo."
           },
           {
             "id": 128,
@@ -1754,7 +1881,8 @@
               "C": "Acudir a una autoridad para que decida quién tiene la razón",
               "D": "Defender la propia postura con argumentos sólidos y firmes"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La resolución constructiva de un conflicto busca que ambas partes ganen, y eso solo se logra con **diálogo**: escuchar activamente al otro (entender su punto de vista, no solo esperar tu turno de hablar) y buscar acuerdos que satisfagan a los dos.\n\nLa opción D tienta porque argumentar no es malo, pero si solo defiendes tu postura conviertes el conflicto en competencia: alguien tiene que perder. Y acudir a una autoridad (opción C) resuelve el pleito, pero por imposición, sin que las partes construyan el acuerdo."
           }
         ]
       }
