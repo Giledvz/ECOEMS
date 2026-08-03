@@ -1,0 +1,162 @@
+[
+ {
+  "id": 1,
+  "explanation": "A velocidad constante la distancia es simplemente velocidad por tiempo: $d = vt$. Sustituyes: $d = 25 \\times 8 = 200$ m.\n\nSi te dio 33 m (opción B), sumaste $25 + 8$: en el MRU la velocidad y el tiempo se multiplican, no se suman."
+ },
+ {
+  "id": 2,
+  "explanation": "Como parte del reposo, la velocidad inicial es cero y la fórmula $v = v_0 + at$ se reduce a $v = at$. Sustituyes: $v = 3 \\times 6 = 18$ m/s.\n\nSi te dio 9 m/s (opción B), sumaste $3 + 6$; y 54 (opción D) sale de multiplicar por $t^2$ como si fuera distancia."
+ },
+ {
+  "id": 3,
+  "explanation": "La segunda ley de Newton dice $F = ma$, así que la aceleración es $a = F/m$. Sustituyes: $a = 45 \\div 9 = 5$ m/s².\n\nSi te dio 405 (opción A), multiplicaste en vez de dividir; y 0.2 (opción B) es la división al revés, $m/F$."
+ },
+ {
+  "id": 4,
+  "explanation": "La energía cinética es $E_c = \\frac{1}{2}mv^2$. Ojo con el orden: primero elevas al cuadrado la velocidad y luego multiplicas.\n\n$$E_c = \\frac{1}{2}(4)(10)^2 = \\frac{1}{2}(4)(100) = 200 \\text{ J}$$\n\nSi te dio 400 J (opción B), olvidaste el $\\frac{1}{2}$; si te dio 40 J (opción A), no elevaste la velocidad al cuadrado."
+ },
+ {
+  "id": 5,
+  "explanation": "Toda la energía potencial se convierte en cinética: $mgh = \\frac{1}{2}mv^2$. La masa se cancela y queda $v = \\sqrt{2gh}$.\n\n$$v = \\sqrt{2(10)(20)} = \\sqrt{400} = 20 \\text{ m/s}$$\n\nSi elegiste 400 (opción D), te quedaste con $v^2$: faltó sacar la raíz cuadrada. Y fíjate que la masa de 2 kg no influye: todos los cuerpos caen igual sin fricción."
+ },
+ {
+  "id": 6,
+  "explanation": "Según la teoría cinética, las moléculas de un gas están en movimiento constante, y la temperatura absoluta (en kelvin) es directamente proporcional a la energía cinética promedio de traslación de esas moléculas: a mayor temperatura, más rápido se mueven en promedio.\n\nLa presión (opción A) es un efecto de los choques de las moléculas contra las paredes, pero no es lo que mide la temperatura."
+ },
+ {
+  "id": 7,
+  "explanation": "Una onda avanza una longitud de onda $\\lambda$ en cada ciclo, y hace $f$ ciclos por segundo. Entonces la distancia que recorre por segundo —su velocidad— es:\n\n$$v = f \\cdot \\lambda$$\n\nPuedes verificar con unidades: ciclos/s por metros/ciclo da metros/s, justo una velocidad. Las opciones con división (A y D) no dan unidades de velocidad."
+ },
+ {
+  "id": 8,
+  "explanation": "Por la ley de Ohm, $V = IR$, así que la corriente es $I = V/R$. Sustituyes:\n\n$$I = \\frac{18}{6} = 3 \\text{ A}$$\n\nSi te dio 108 A (opción A), multiplicaste $V \\times R$: la corriente sale de dividir el voltaje entre la resistencia."
+ },
+ {
+  "id": 9,
+  "explanation": "La potencia eléctrica es el producto del voltaje por la corriente: $P = VI$. Sustituyes:\n\n$$P = 110 \\times 5 = 550 \\text{ W}$$\n\nCuidado con la opción D (500 W): está puesta para atrapar a quien redondea de más; la multiplicación exacta da 550."
+ },
+ {
+  "id": 10,
+  "explanation": "El principio de Arquímedes dice que todo cuerpo sumergido (total o parcialmente) en un fluido recibe un empuje hacia **arriba** igual al **peso del fluido que desplaza**. Por eso flotan los barcos: desplazan agua cuyo peso iguala al suyo.\n\nLa opción A confunde el empuje con el peso del propio cuerpo; el empuje depende del fluido desplazado, no del objeto."
+ },
+ {
+  "id": 11,
+  "explanation": "Al entrar a un medio más denso (ópticamente), la luz **disminuye** su velocidad. Ese cambio de velocidad es justo lo que provoca la refracción: el rayo se desvía acercándose a la normal. El índice de refracción lo resume: $n = c/v$, y a mayor $n$, menor $v$.\n\nNo se hace cero (opción D): la luz sigue propagándose dentro del medio, solo que más despacio."
+ },
+ {
+  "id": 12,
+  "explanation": "Una partícula con dos protones y dos neutrones es un núcleo de helio, y esa es precisamente la partícula **alfa** ($\\alpha$). Cuando un núcleo la emite, pierde 2 unidades de número atómico y 4 de masa.\n\nLa desintegración beta (opción A) emite un electrón (o positrón), y la gamma (opción B) no emite partículas con masa, sino radiación electromagnética."
+ },
+ {
+  "id": 13,
+  "explanation": "Ve de adentro hacia afuera. Primero el paréntesis: $2(x - 4) = 2x - 8$. Entonces el corchete queda $[3 - 2x + 8] = 11 - 2x$. Ahora sí:\n\n$$5x - (11 - 2x) = 5x - 11 + 2x = 7x - 11$$\n\nSi te dio $3x - 11$ (opción B), al quitar el corchete no cambiaste el signo del $-2x$: el signo menos de afuera afecta a los dos términos."
+ },
+ {
+  "id": 14,
+  "explanation": "Un exponente fraccionario se lee así: el denominador es raíz y el numerador es potencia. Entonces $27^{2/3} = \\left(\\sqrt[3]{27}\\right)^2$. Como $\\sqrt[3]{27} = 3$, queda $3^2 = 9$.\n\nSi contestaste 3 (opción A), solo sacaste la raíz cúbica y olvidaste elevar al cuadrado."
+ },
+ {
+  "id": 15,
+  "explanation": "Es un producto de conjugados: $(a + bi)(a - bi) = a^2 + b^2$. Con $a = 2$ y $b = 3$:\n\n$$(2 + 3i)(2 - 3i) = 4 - 9i^2 = 4 - 9(-1) = 4 + 9 = 13$$\n\nLa clave está en que $i^2 = -1$, así que el signo se voltea. Si te dio $-5$ (opción C), tomaste $i^2 = +1$ y restaste $4 - 9$."
+ },
+ {
+  "id": 16,
+  "explanation": "Buscas dos números que multiplicados den $+6$ y sumados den $-5$. Como el producto es positivo y la suma negativa, ambos son negativos: $-2$ y $-3$.\n\n$$x^2 - 5x + 6 = (x - 2)(x - 3)$$\n\nComprueba desarrollando: $x^2 - 3x - 2x + 6 = x^2 - 5x + 6$. La opción A da $+5x$, no $-5x$: cuida los signos."
+ },
+ {
+  "id": 17,
+  "explanation": "En el desarrollo de $(x + 2)^5$, el término con $x^3$ es el que toma el 2 elevado al cuadrado:\n\n$$\\binom{5}{2} x^3 \\cdot 2^2 = 10 \\cdot x^3 \\cdot 4 = 40x^3$$\n\nEl coeficiente es $10 \\times 4 = 40$. Si contestaste 10 (opción A), te quedaste con el coeficiente binomial y olvidaste multiplicarlo por $2^2$."
+ },
+ {
+  "id": 18,
+  "explanation": "El teorema del residuo te ahorra la división completa: el residuo de dividir $P(x)$ entre $(x - 2)$ es simplemente $P(2)$.\n\n$$P(2) = 2^3 - 3(2)^2 + 2 - 2 = 8 - 12 + 2 - 2 = -4$$\n\nSi te dio 4 (opción D), seguro fue un signo en el $-3x^2$: al evaluar da $-12$, no $+12$."
+ },
+ {
+  "id": 19,
+  "explanation": "Desarrolla los dos lados: $6x - 3 = 2x + 10 + 7$, o sea $6x - 3 = 2x + 17$. Pasas términos: $6x - 2x = 17 + 3$, es decir $4x = 20$, y por tanto $x = 5$.\n\nComprueba: $3(10 - 1) = 27$ y $2(5 + 5) + 7 = 27$. Coincide."
+ },
+ {
+  "id": 20,
+  "explanation": "Factoriza: buscas dos números que multiplicados den $12$ y sumados den $7$; son $3$ y $4$. Entonces $x^2 - 7x + 12 = (x - 3)(x - 4) = 0$, y las raíces son $x = 3$ y $x = 4$.\n\nOjo con la opción B: $-3$ y $-4$ sí multiplican $12$, pero suman $-7$, y en la fórmula factorizada las raíces salen con signo contrario al que aparece en el paréntesis."
+ },
+ {
+  "id": 21,
+  "explanation": "Resuélvela como una ecuación, juntando las $x$ de un lado: $2x - x < 3 + 7$, es decir $x < 10$.\n\nComo solo restaste (no multiplicaste ni dividiste entre un negativo), el sentido de la desigualdad no cambia. Verifica con $x = 0$: $-7 < 3$, cierto; y con $x = 10$: $13 < 13$, falso. Encaja con $x < 10$."
+ },
+ {
+  "id": 22,
+  "explanation": "Suma las dos ecuaciones para eliminar $y$: $(2x + y) + (x - y) = 7 + 2$, o sea $3x = 9$, entonces $x = 3$. Sustituyes en la segunda: $3 - y = 2$, así que $y = 1$.\n\nComprueba en la primera: $2(3) + 1 = 7$. Correcto: $x = 3$, $y = 1$."
+ },
+ {
+  "id": 23,
+  "explanation": "Para que la raíz cuadrada exista (en los reales), lo de adentro no puede ser negativo: $9 - x^2 \\geq 0$, es decir $x^2 \\leq 9$, que equivale a $-3 \\leq x \\leq 3$. En notación de intervalo: $[-3, 3]$.\n\nLos corchetes importan: en $x = \\pm 3$ el radicando vale 0 y $\\sqrt{0} = 0$ sí está definida, así que los extremos se incluyen. Por eso no es la opción B."
+ },
+ {
+  "id": 24,
+  "explanation": "La conversión base es $180° = \\pi$ radianes. Entonces:\n\n$$270° = \\frac{270}{180}\\,\\pi = \\frac{3}{2}\\pi = \\frac{3\\pi}{2}$$\n\nTambién lo ves geométricamente: 270° son tres cuartos de vuelta, y una vuelta completa es $2\\pi$, así que $\\frac{3}{4}(2\\pi) = \\frac{3\\pi}{2}$."
+ },
+ {
+  "id": 25,
+  "explanation": "El seno es cateto opuesto entre hipotenusa:\n\n$$\\mathrm{sen}\\,\\theta = \\frac{\\text{opuesto}}{\\text{hipotenusa}} = \\frac{6}{10} = \\frac{3}{5}$$\n\nSi contestaste $\\frac{4}{5}$ (opción B), calculaste el coseno: el otro cateto mide 8 (por Pitágoras) y $\\frac{8}{10} = \\frac{4}{5}$."
+ },
+ {
+  "id": 26,
+  "explanation": "Usa la identidad pitagórica $\\mathrm{sen}^2\\theta + \\cos^2\\theta = 1$. Despejas:\n\n$$\\mathrm{sen}^2\\theta = 1 - \\cos^2\\theta = 1 - \\left(\\frac{3}{5}\\right)^2 = 1 - \\frac{9}{25} = \\frac{16}{25}$$\n\nSi elegiste $\\frac{9}{25}$ (opción C), diste el valor de $\\cos^2\\theta$, no el de $\\mathrm{sen}^2\\theta$."
+ },
+ {
+  "id": 27,
+  "explanation": "Preguntarte $\\log_2 32$ es preguntarte: ¿a qué exponente hay que elevar 2 para obtener 32? Como $2^5 = 32$ (ve duplicando: 2, 4, 8, 16, 32), el resultado es 5.\n\nSi contestaste 4 (opción A), te detuviste en $2^4 = 16$: un paso antes."
+ },
+ {
+  "id": 28,
+  "explanation": "Aplica la fórmula de distancia entre dos puntos:\n\n$$d = \\sqrt{(4-1)^2 + (6-2)^2} = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$$\n\nEs el clásico triángulo 3-4-5. Si contestaste 7 (opción D), sumaste las diferencias ($3 + 4$) en lugar de aplicar Pitágoras."
+ },
+ {
+  "id": 29,
+  "explanation": "La pendiente es el cambio en $y$ entre el cambio en $x$:\n\n$$m = \\frac{11 - 3}{6 - 2} = \\frac{8}{4} = 2$$\n\nSi te dio $\\frac{1}{2}$ (opción A), pusiste la fracción al revés: las $x$ arriba y las $y$ abajo. La pendiente siempre lleva las $y$ en el numerador."
+ },
+ {
+  "id": 30,
+  "explanation": "Completa cuadrados agrupando: $(x^2 - 4x) + (y^2 + 6y) = 12$. Sumas $4$ y $9$ a ambos lados:\n\n$$(x - 2)^2 + (y + 3)^2 = 12 + 4 + 9 = 25$$\n\nEl 25 es $r^2$, así que el radio es $r = \\sqrt{25} = 5$. Si contestaste 25 (opción D), te quedaste con $r^2$ sin sacar la raíz."
+ },
+ {
+  "id": 31,
+  "explanation": "El foco está en $(0, 3)$: sobre el eje $y$ y arriba del vértice, así que la parábola abre hacia arriba y su forma es $x^2 = 4py$, con $p = 3$ (la distancia del vértice al foco). Entonces:\n\n$$x^2 = 4(3)y = 12y$$\n\nLas opciones con $y^2$ (A y D) son parábolas horizontales, que tendrían el foco sobre el eje $x$; y la C abre hacia abajo, con foco en $(0, -3)$."
+ },
+ {
+  "id": 32,
+  "explanation": "En la forma $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$, el semieje mayor es $a$, la raíz del denominador **más grande**. Aquí el mayor es 25, así que $a = \\sqrt{25} = 5$.\n\nSi contestaste 4 (opción A), tomaste $\\sqrt{16}$, que es el semieje **menor**; y 25 (opción D) es $a^2$, no $a$."
+ },
+ {
+  "id": 33,
+  "explanation": "Para la hipérbola $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$, las asíntotas son $y = \\pm\\frac{b}{a}x$. Aquí $a^2 = 9$ y $b^2 = 16$, o sea $a = 3$ y $b = 4$:\n\n$$m = \\pm\\frac{b}{a} = \\pm\\frac{4}{3}$$\n\nSi contestaste $\\pm\\frac{3}{4}$ (opción A), invertiste la fracción: en la hipérbola horizontal, el que va abajo es el $a$ (el del término con $x$)."
+ },
+ {
+  "id": 34,
+  "explanation": "Al sustituir directo obtienes $\\frac{0}{0}$, una indeterminación, pero eso no significa que el límite no exista. Factoriza el numerador como diferencia de cuadrados:\n\n$$\\frac{x^2 - 4}{x - 2} = \\frac{(x-2)(x+2)}{x - 2} = x + 2$$\n\nYa sin el factor problemático, el límite es $2 + 2 = 4$. La opción D (indefinido) es la trampa para quien se queda en el $\\frac{0}{0}$ sin factorizar."
+ },
+ {
+  "id": 35,
+  "explanation": "Deriva término por término con la regla de la potencia, $\\frac{d}{dx}x^n = nx^{n-1}$:\n\n$$f'(x) = 12x^3 - 10x + 2$$\n\nEl $-7$ desaparece porque la derivada de una constante es cero. Si elegiste la B ($-5x$), olvidaste multiplicar el 5 por el exponente 2; si elegiste la D, te faltó derivar el $2x$, que aporta el $+2$."
+ },
+ {
+  "id": 36,
+  "explanation": "Integra término por término subiendo el exponente y dividiendo entre el nuevo:\n\n$$\\int 4x^3\\,dx = \\frac{4x^4}{4} = x^4, \\qquad \\int 6x\\,dx = \\frac{6x^2}{2} = 3x^2$$\n\nEntonces $\\int(4x^3 - 6x)\\,dx = x^4 - 3x^2 + C$. Verifica derivando: $(x^4 - 3x^2)' = 4x^3 - 6x$. La opción A es la **derivada** del integrando, no su integral: cuidado con confundir las dos operaciones."
+ },
+ {
+  "id": 37,
+  "explanation": "La configuración electrónica del cloro ($Z = 17$) es $1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^5$. La capa de valencia es la más externa, la 3, y ahí tiene $2 + 5 = 7$ electrones.\n\nTambién lo ves en la tabla periódica: el cloro está en el grupo de los halógenos (VIIA), y todos ellos tienen 7 electrones de valencia; por eso les falta uno para completar el octeto y son tan reactivos."
+ },
+ {
+  "id": 38,
+  "explanation": "La electronegatividad —la capacidad de un átomo para atraer electrones en un enlace— aumenta hacia la **derecha** en un periodo (el núcleo gana carga y jala más) y hacia **arriba** en un grupo (los electrones están más cerca del núcleo). Por eso el flúor, arriba a la derecha, es el elemento más electronegativo.\n\nLa opción C dice lo contrario en los grupos: hacia abajo la electronegatividad disminuye, porque los electrones externos quedan más lejos del núcleo."
+ },
+ {
+  "id": 39,
+  "explanation": "Un mol contiene el número de Avogadro de partículas, $6.022 \\times 10^{23}$. Para 2 moles de átomos de oxígeno:\n\n$$2 \\times 6.022 \\times 10^{23} = 12.044 \\times 10^{23} = 1.204 \\times 10^{24} \\text{ átomos}$$\n\nSi elegiste la A, diste el contenido de 1 mol; si elegiste la C, dividiste entre 2 en lugar de multiplicar."
+ },
+ {
+  "id": 40,
+  "explanation": "La escala de pH va de 0 a 14: menor que 7 es ácido, igual a 7 es neutro y mayor que 7 es básico. Un pH de 3 está claramente del lado ácido; de hecho indica una concentración alta de iones $H^+$ ($10^{-3}$ mol/L), comparable a la del jugo de limón o el vinagre.\n\nRecuerda: entre más bajo el pH, más ácida la solución, no al revés."
+ }
+]

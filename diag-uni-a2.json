@@ -31,7 +31,8 @@
               "C": "17 m",
               "D": "125 m"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "A velocidad constante la distancia es simplemente velocidad por tiempo: $d = vt$. Sustituyes: $d = 25 \\times 8 = 200$ m.\n\nSi te dio 33 m (opción B), sumaste $25 + 8$: en el MRU la velocidad y el tiempo se multiplican, no se suman."
           },
           {
             "id": 2,
@@ -44,7 +45,8 @@
               "C": "18 m/s",
               "D": "54 m/s"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Como parte del reposo, la velocidad inicial es cero y la fórmula $v = v_0 + at$ se reduce a $v = at$. Sustituyes: $v = 3 \\times 6 = 18$ m/s.\n\nSi te dio 9 m/s (opción B), sumaste $3 + 6$; y 54 (opción D) sale de multiplicar por $t^2$ como si fuera distancia."
           },
           {
             "id": 3,
@@ -57,7 +59,8 @@
               "C": "5 m/s²",
               "D": "54 m/s²"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La segunda ley de Newton dice $F = ma$, así que la aceleración es $a = F/m$. Sustituyes: $a = 45 \\div 9 = 5$ m/s².\n\nSi te dio 405 (opción A), multiplicaste en vez de dividir; y 0.2 (opción B) es la división al revés, $m/F$."
           },
           {
             "id": 4,
@@ -70,7 +73,8 @@
               "C": "200 J",
               "D": "20 J"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La energía cinética es $E_c = \\frac{1}{2}mv^2$. Ojo con el orden: primero elevas al cuadrado la velocidad y luego multiplicas.\n\n$$E_c = \\frac{1}{2}(4)(10)^2 = \\frac{1}{2}(4)(100) = 200 \\text{ J}$$\n\nSi te dio 400 J (opción B), olvidaste el $\\frac{1}{2}$; si te dio 40 J (opción A), no elevaste la velocidad al cuadrado."
           },
           {
             "id": 5,
@@ -83,7 +87,8 @@
               "C": "200 m/s",
               "D": "400 m/s"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Toda la energía potencial se convierte en cinética: $mgh = \\frac{1}{2}mv^2$. La masa se cancela y queda $v = \\sqrt{2gh}$.\n\n$$v = \\sqrt{2(10)(20)} = \\sqrt{400} = 20 \\text{ m/s}$$\n\nSi elegiste 400 (opción D), te quedaste con $v^2$: faltó sacar la raíz cuadrada. Y fíjate que la masa de 2 kg no influye: todos los cuerpos caen igual sin fricción."
           },
           {
             "id": 6,
@@ -96,7 +101,8 @@
               "C": "El número de moléculas presentes en el gas",
               "D": "El volumen que ocupa el gas a presión constante"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Según la teoría cinética, las moléculas de un gas están en movimiento constante, y la temperatura absoluta (en kelvin) es directamente proporcional a la energía cinética promedio de traslación de esas moléculas: a mayor temperatura, más rápido se mueven en promedio.\n\nLa presión (opción A) es un efecto de los choques de las moléculas contra las paredes, pero no es lo que mide la temperatura."
           },
           {
             "id": 7,
@@ -109,7 +115,8 @@
               "C": "$$v = f \\cdot \\lambda$$",
               "D": "$$v = \\dfrac{\\lambda}{f}$$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Una onda avanza una longitud de onda $\\lambda$ en cada ciclo, y hace $f$ ciclos por segundo. Entonces la distancia que recorre por segundo —su velocidad— es:\n\n$$v = f \\cdot \\lambda$$\n\nPuedes verificar con unidades: ciclos/s por metros/ciclo da metros/s, justo una velocidad. Las opciones con división (A y D) no dan unidades de velocidad."
           },
           {
             "id": 8,
@@ -122,7 +129,8 @@
               "C": "12 A",
               "D": "3 A"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Por la ley de Ohm, $V = IR$, así que la corriente es $I = V/R$. Sustituyes:\n\n$$I = \\frac{18}{6} = 3 \\text{ A}$$\n\nSi te dio 108 A (opción A), multiplicaste $V \\times R$: la corriente sale de dividir el voltaje entre la resistencia."
           },
           {
             "id": 9,
@@ -135,7 +143,8 @@
               "C": "550 W",
               "D": "500 W"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La potencia eléctrica es el producto del voltaje por la corriente: $P = VI$. Sustituyes:\n\n$$P = 110 \\times 5 = 550 \\text{ W}$$\n\nCuidado con la opción D (500 W): está puesta para atrapar a quien redondea de más; la multiplicación exacta da 550."
           },
           {
             "id": 10,
@@ -148,7 +157,8 @@
               "C": "Una presión igual a la presión atmosférica",
               "D": "Una fuerza lateral igual a la presión hidrostática"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El principio de Arquímedes dice que todo cuerpo sumergido (total o parcialmente) en un fluido recibe un empuje hacia **arriba** igual al **peso del fluido que desplaza**. Por eso flotan los barcos: desplazan agua cuyo peso iguala al suyo.\n\nLa opción A confunde el empuje con el peso del propio cuerpo; el empuje depende del fluido desplazado, no del objeto."
           },
           {
             "id": 11,
@@ -161,7 +171,8 @@
               "C": "Disminuye",
               "D": "Se hace cero"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Al entrar a un medio más denso (ópticamente), la luz **disminuye** su velocidad. Ese cambio de velocidad es justo lo que provoca la refracción: el rayo se desvía acercándose a la normal. El índice de refracción lo resume: $n = c/v$, y a mayor $n$, menor $v$.\n\nNo se hace cero (opción D): la luz sigue propagándose dentro del medio, solo que más despacio."
           },
           {
             "id": 12,
@@ -174,7 +185,8 @@
               "C": "Alfa",
               "D": "Neutrónica"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Una partícula con dos protones y dos neutrones es un núcleo de helio, y esa es precisamente la partícula **alfa** ($\\alpha$). Cuando un núcleo la emite, pierde 2 unidades de número atómico y 4 de masa.\n\nLa desintegración beta (opción A) emite un electrón (o positrón), y la gamma (opción B) no emite partículas con masa, sino radiación electromagnética."
           }
         ]
       },
@@ -193,7 +205,8 @@
               "C": "$$7x + 5$$",
               "D": "$$7x - 5$$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Ve de adentro hacia afuera. Primero el paréntesis: $2(x - 4) = 2x - 8$. Entonces el corchete queda $[3 - 2x + 8] = 11 - 2x$. Ahora sí:\n\n$$5x - (11 - 2x) = 5x - 11 + 2x = 7x - 11$$\n\nSi te dio $3x - 11$ (opción B), al quitar el corchete no cambiaste el signo del $-2x$: el signo menos de afuera afecta a los dos términos."
           },
           {
             "id": 14,
@@ -206,7 +219,8 @@
               "C": "9",
               "D": "18"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Un exponente fraccionario se lee así: el denominador es raíz y el numerador es potencia. Entonces $27^{2/3} = \\left(\\sqrt[3]{27}\\right)^2$. Como $\\sqrt[3]{27} = 3$, queda $3^2 = 9$.\n\nSi contestaste 3 (opción A), solo sacaste la raíz cúbica y olvidaste elevar al cuadrado."
           },
           {
             "id": 15,
@@ -219,7 +233,8 @@
               "C": "$$-5$$",
               "D": "$$4 - 9i$$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Es un producto de conjugados: $(a + bi)(a - bi) = a^2 + b^2$. Con $a = 2$ y $b = 3$:\n\n$$(2 + 3i)(2 - 3i) = 4 - 9i^2 = 4 - 9(-1) = 4 + 9 = 13$$\n\nLa clave está en que $i^2 = -1$, así que el signo se voltea. Si te dio $-5$ (opción C), tomaste $i^2 = +1$ y restaste $4 - 9$."
           },
           {
             "id": 16,
@@ -232,7 +247,8 @@
               "C": "$$(x - 2)(x - 3)$$",
               "D": "$$(x + 2)(x - 3)$$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Buscas dos números que multiplicados den $+6$ y sumados den $-5$. Como el producto es positivo y la suma negativa, ambos son negativos: $-2$ y $-3$.\n\n$$x^2 - 5x + 6 = (x - 2)(x - 3)$$\n\nComprueba desarrollando: $x^2 - 3x - 2x + 6 = x^2 - 5x + 6$. La opción A da $+5x$, no $-5x$: cuida los signos."
           },
           {
             "id": 17,
@@ -245,7 +261,8 @@
               "C": "80",
               "D": "20"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En el desarrollo de $(x + 2)^5$, el término con $x^3$ es el que toma el 2 elevado al cuadrado:\n\n$$\\binom{5}{2} x^3 \\cdot 2^2 = 10 \\cdot x^3 \\cdot 4 = 40x^3$$\n\nEl coeficiente es $10 \\times 4 = 40$. Si contestaste 10 (opción A), te quedaste con el coeficiente binomial y olvidaste multiplicarlo por $2^2$."
           },
           {
             "id": 18,
@@ -258,7 +275,8 @@
               "C": "$$-4$$",
               "D": "4"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El teorema del residuo te ahorra la división completa: el residuo de dividir $P(x)$ entre $(x - 2)$ es simplemente $P(2)$.\n\n$$P(2) = 2^3 - 3(2)^2 + 2 - 2 = 8 - 12 + 2 - 2 = -4$$\n\nSi te dio 4 (opción D), seguro fue un signo en el $-3x^2$: al evaluar da $-12$, no $+12$."
           },
           {
             "id": 19,
@@ -271,7 +289,8 @@
               "C": "$$x = 4$$",
               "D": "$$x = 5$$"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Desarrolla los dos lados: $6x - 3 = 2x + 10 + 7$, o sea $6x - 3 = 2x + 17$. Pasas términos: $6x - 2x = 17 + 3$, es decir $4x = 20$, y por tanto $x = 5$.\n\nComprueba: $3(10 - 1) = 27$ y $2(5 + 5) + 7 = 27$. Coincide."
           },
           {
             "id": 20,
@@ -284,7 +303,8 @@
               "C": "$$x = 3$$ y $$x = 4$$",
               "D": "$$x = 1$$ y $$x = 12$$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Factoriza: buscas dos números que multiplicados den $12$ y sumados den $7$; son $3$ y $4$. Entonces $x^2 - 7x + 12 = (x - 3)(x - 4) = 0$, y las raíces son $x = 3$ y $x = 4$.\n\nOjo con la opción B: $-3$ y $-4$ sí multiplican $12$, pero suman $-7$, y en la fórmula factorizada las raíces salen con signo contrario al que aparece en el paréntesis."
           },
           {
             "id": 21,
@@ -297,7 +317,8 @@
               "C": "$$x > -10$$",
               "D": "$$x < -10$$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Resuélvela como una ecuación, juntando las $x$ de un lado: $2x - x < 3 + 7$, es decir $x < 10$.\n\nComo solo restaste (no multiplicaste ni dividiste entre un negativo), el sentido de la desigualdad no cambia. Verifica con $x = 0$: $-7 < 3$, cierto; y con $x = 10$: $13 < 13$, falso. Encaja con $x < 10$."
           },
           {
             "id": 22,
@@ -310,7 +331,8 @@
               "C": "$$x = 1,\\ y = 5$$",
               "D": "$$x = 4,\\ y = -1$$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Suma las dos ecuaciones para eliminar $y$: $(2x + y) + (x - y) = 7 + 2$, o sea $3x = 9$, entonces $x = 3$. Sustituyes en la segunda: $3 - y = 2$, así que $y = 1$.\n\nComprueba en la primera: $2(3) + 1 = 7$. Correcto: $x = 3$, $y = 1$."
           },
           {
             "id": 23,
@@ -323,7 +345,8 @@
               "C": "$$[0, 3]$$",
               "D": "$$(-\\infty, 3]$$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Para que la raíz cuadrada exista (en los reales), lo de adentro no puede ser negativo: $9 - x^2 \\geq 0$, es decir $x^2 \\leq 9$, que equivale a $-3 \\leq x \\leq 3$. En notación de intervalo: $[-3, 3]$.\n\nLos corchetes importan: en $x = \\pm 3$ el radicando vale 0 y $\\sqrt{0} = 0$ sí está definida, así que los extremos se incluyen. Por eso no es la opción B."
           },
           {
             "id": 24,
@@ -336,7 +359,8 @@
               "C": "$$\\frac{3\\pi}{2}$$",
               "D": "$$2\\pi$$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La conversión base es $180° = \\pi$ radianes. Entonces:\n\n$$270° = \\frac{270}{180}\\,\\pi = \\frac{3}{2}\\pi = \\frac{3\\pi}{2}$$\n\nTambién lo ves geométricamente: 270° son tres cuartos de vuelta, y una vuelta completa es $2\\pi$, así que $\\frac{3}{4}(2\\pi) = \\frac{3\\pi}{2}$."
           },
           {
             "id": 25,
@@ -349,7 +373,8 @@
               "C": "$$\\frac{3}{5}$$",
               "D": "$$\\frac{4}{3}$$"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El seno es cateto opuesto entre hipotenusa:\n\n$$\\mathrm{sen}\\,\\theta = \\frac{\\text{opuesto}}{\\text{hipotenusa}} = \\frac{6}{10} = \\frac{3}{5}$$\n\nSi contestaste $\\frac{4}{5}$ (opción B), calculaste el coseno: el otro cateto mide 8 (por Pitágoras) y $\\frac{8}{10} = \\frac{4}{5}$."
           },
           {
             "id": 26,
@@ -362,7 +387,8 @@
               "C": "$$\\frac{9}{25}$$",
               "D": "$$\\frac{7}{25}$$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Usa la identidad pitagórica $\\mathrm{sen}^2\\theta + \\cos^2\\theta = 1$. Despejas:\n\n$$\\mathrm{sen}^2\\theta = 1 - \\cos^2\\theta = 1 - \\left(\\frac{3}{5}\\right)^2 = 1 - \\frac{9}{25} = \\frac{16}{25}$$\n\nSi elegiste $\\frac{9}{25}$ (opción C), diste el valor de $\\cos^2\\theta$, no el de $\\mathrm{sen}^2\\theta$."
           },
           {
             "id": 27,
@@ -375,7 +401,8 @@
               "C": "6",
               "D": "5"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Preguntarte $\\log_2 32$ es preguntarte: ¿a qué exponente hay que elevar 2 para obtener 32? Como $2^5 = 32$ (ve duplicando: 2, 4, 8, 16, 32), el resultado es 5.\n\nSi contestaste 4 (opción A), te detuviste en $2^4 = 16$: un paso antes."
           },
           {
             "id": 28,
@@ -388,7 +415,8 @@
               "C": "5",
               "D": "7"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Aplica la fórmula de distancia entre dos puntos:\n\n$$d = \\sqrt{(4-1)^2 + (6-2)^2} = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$$\n\nEs el clásico triángulo 3-4-5. Si contestaste 7 (opción D), sumaste las diferencias ($3 + 4$) en lugar de aplicar Pitágoras."
           },
           {
             "id": 29,
@@ -401,7 +429,8 @@
               "C": "4",
               "D": "8"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La pendiente es el cambio en $y$ entre el cambio en $x$:\n\n$$m = \\frac{11 - 3}{6 - 2} = \\frac{8}{4} = 2$$\n\nSi te dio $\\frac{1}{2}$ (opción A), pusiste la fracción al revés: las $x$ arriba y las $y$ abajo. La pendiente siempre lleva las $y$ en el numerador."
           },
           {
             "id": 30,
@@ -414,7 +443,8 @@
               "C": "5",
               "D": "25"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Completa cuadrados agrupando: $(x^2 - 4x) + (y^2 + 6y) = 12$. Sumas $4$ y $9$ a ambos lados:\n\n$$(x - 2)^2 + (y + 3)^2 = 12 + 4 + 9 = 25$$\n\nEl 25 es $r^2$, así que el radio es $r = \\sqrt{25} = 5$. Si contestaste 25 (opción D), te quedaste con $r^2$ sin sacar la raíz."
           },
           {
             "id": 31,
@@ -427,7 +457,8 @@
               "C": "$$x^2 = -12y$$",
               "D": "$$y^2 = -12x$$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El foco está en $(0, 3)$: sobre el eje $y$ y arriba del vértice, así que la parábola abre hacia arriba y su forma es $x^2 = 4py$, con $p = 3$ (la distancia del vértice al foco). Entonces:\n\n$$x^2 = 4(3)y = 12y$$\n\nLas opciones con $y^2$ (A y D) son parábolas horizontales, que tendrían el foco sobre el eje $x$; y la C abre hacia abajo, con foco en $(0, -3)$."
           },
           {
             "id": 32,
@@ -440,7 +471,8 @@
               "C": "9",
               "D": "16"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En la forma $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$, el semieje mayor es $a$, la raíz del denominador **más grande**. Aquí el mayor es 25, así que $a = \\sqrt{25} = 5$.\n\nSi contestaste 4 (opción A), tomaste $\\sqrt{16}$, que es el semieje **menor**; y 25 (opción D) es $a^2$, no $a$."
           },
           {
             "id": 33,
@@ -453,7 +485,8 @@
               "C": "$$\\pm 3$$",
               "D": "$$\\pm 4$$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Para la hipérbola $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$, las asíntotas son $y = \\pm\\frac{b}{a}x$. Aquí $a^2 = 9$ y $b^2 = 16$, o sea $a = 3$ y $b = 4$:\n\n$$m = \\pm\\frac{b}{a} = \\pm\\frac{4}{3}$$\n\nSi contestaste $\\pm\\frac{3}{4}$ (opción A), invertiste la fracción: en la hipérbola horizontal, el que va abajo es el $a$ (el del término con $x$)."
           },
           {
             "id": 34,
@@ -466,7 +499,8 @@
               "C": "4",
               "D": "Indefinido"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Al sustituir directo obtienes $\\frac{0}{0}$, una indeterminación, pero eso no significa que el límite no exista. Factoriza el numerador como diferencia de cuadrados:\n\n$$\\frac{x^2 - 4}{x - 2} = \\frac{(x-2)(x+2)}{x - 2} = x + 2$$\n\nYa sin el factor problemático, el límite es $2 + 2 = 4$. La opción D (indefinido) es la trampa para quien se queda en el $\\frac{0}{0}$ sin factorizar."
           },
           {
             "id": 35,
@@ -479,7 +513,8 @@
               "C": "$$12x^4 - 10x + 2$$",
               "D": "$$12x^3 - 10x$$"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Deriva término por término con la regla de la potencia, $\\frac{d}{dx}x^n = nx^{n-1}$:\n\n$$f'(x) = 12x^3 - 10x + 2$$\n\nEl $-7$ desaparece porque la derivada de una constante es cero. Si elegiste la B ($-5x$), olvidaste multiplicar el 5 por el exponente 2; si elegiste la D, te faltó derivar el $2x$, que aporta el $+2$."
           },
           {
             "id": 36,
@@ -492,7 +527,8 @@
               "C": "$$4x^4 - 6x^2 + C$$",
               "D": "$$x^4 - 3x + C$$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Integra término por término subiendo el exponente y dividiendo entre el nuevo:\n\n$$\\int 4x^3\\,dx = \\frac{4x^4}{4} = x^4, \\qquad \\int 6x\\,dx = \\frac{6x^2}{2} = 3x^2$$\n\nEntonces $\\int(4x^3 - 6x)\\,dx = x^4 - 3x^2 + C$. Verifica derivando: $(x^4 - 3x^2)' = 4x^3 - 6x$. La opción A es la **derivada** del integrando, no su integral: cuidado con confundir las dos operaciones."
           }
         ]
       },
@@ -511,7 +547,8 @@
               "C": "7",
               "D": "8"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La configuración electrónica del cloro ($Z = 17$) es $1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^5$. La capa de valencia es la más externa, la 3, y ahí tiene $2 + 5 = 7$ electrones.\n\nTambién lo ves en la tabla periódica: el cloro está en el grupo de los halógenos (VIIA), y todos ellos tienen 7 electrones de valencia; por eso les falta uno para completar el octeto y son tan reactivos."
           },
           {
             "id": 38,
@@ -524,7 +561,8 @@
               "C": "Aumentar de arriba hacia abajo en un grupo",
               "D": "Permanecer constante dentro de un mismo periodo"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La electronegatividad —la capacidad de un átomo para atraer electrones en un enlace— aumenta hacia la **derecha** en un periodo (el núcleo gana carga y jala más) y hacia **arriba** en un grupo (los electrones están más cerca del núcleo). Por eso el flúor, arriba a la derecha, es el elemento más electronegativo.\n\nLa opción C dice lo contrario en los grupos: hacia abajo la electronegatividad disminuye, porque los electrones externos quedan más lejos del núcleo."
           },
           {
             "id": 39,
@@ -537,7 +575,8 @@
               "C": "$$3.011 \\times 10^{23}$$",
               "D": "$$2.408 \\times 10^{24}$$"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Un mol contiene el número de Avogadro de partículas, $6.022 \\times 10^{23}$. Para 2 moles de átomos de oxígeno:\n\n$$2 \\times 6.022 \\times 10^{23} = 12.044 \\times 10^{23} = 1.204 \\times 10^{24} \\text{ átomos}$$\n\nSi elegiste la A, diste el contenido de 1 mol; si elegiste la C, dividiste entre 2 en lugar de multiplicar."
           },
           {
             "id": 40,
@@ -550,7 +589,8 @@
               "C": "Ácida",
               "D": "Básica fuerte"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La escala de pH va de 0 a 14: menor que 7 es ácido, igual a 7 es neutro y mayor que 7 es básico. Un pH de 3 está claramente del lado ácido; de hecho indica una concentración alta de iones $H^+$ ($10^{-3}$ mol/L), comparable a la del jugo de limón o el vinagre.\n\nRecuerda: entre más bajo el pH, más ácida la solución, no al revés."
           },
           {
             "id": 41,
@@ -563,7 +603,8 @@
               "C": "Covalente polar",
               "D": "Covalente apolar"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El oxígeno y el hidrógeno son ambos no metales, así que comparten electrones: el enlace es **covalente**. Pero no lo comparten en partes iguales, porque el oxígeno es mucho más electronegativo ($3.5$ frente a $2.1$): jala la nube electrónica hacia sí y deja al oxígeno con carga parcial negativa y a los hidrógenos con carga parcial positiva. Eso lo vuelve **covalente polar**, y esa polaridad, junto con la forma angular de la molécula, es la que explica que el agua sea el disolvente universal.\n\nApolar (D) sería si la diferencia de electronegatividad fuera casi nula, como en $\\mathrm{H_2}$ o $\\mathrm{Cl_2}$; iónico (A) requeriría transferencia total de electrones entre un metal y un no metal."
           },
           {
             "id": 42,
@@ -576,7 +617,8 @@
               "C": "2 mol/L",
               "D": "6 mol/L"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La molaridad es moles de soluto entre litros de **solución**:\n\n$$M = \\frac{n}{V} = \\frac{4\\ \\text{mol}}{2\\ \\text{L}} = 2\\ \\text{mol/L}$$\n\nSustituir y dividir, nada más. Si te dio $8$ multiplicaste en lugar de dividir, y si te dio $0.5$ invertiste la fracción ($2 \\div 4$): fíjate siempre en qué unidad queda arriba, porque \"mol/L\" te dice cuál va en el numerador."
           },
           {
             "id": 43,
@@ -589,7 +631,8 @@
               "C": "Óxido ácido (anhídrido)",
               "D": "Hidrácido"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El $\\mathrm{SO_3}$ es la combinación de un **no metal** (azufre) con oxígeno, y ese es justo el criterio: no metal + oxígeno da un **óxido ácido**, también llamado anhídrido. Se le dice así porque al reaccionar con agua produce un ácido: $\\mathrm{SO_3 + H_2O \\rightarrow H_2SO_4}$.\n\nÓxido básico (A) sería metal + oxígeno, como $\\mathrm{CaO}$; un hidrácido (D) no lleva oxígeno, es hidrógeno + no metal, como el $\\mathrm{HCl}$."
           },
           {
             "id": 44,
@@ -602,7 +645,8 @@
               "C": "Exotérmica",
               "D": "Anabólica"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Fíjate en el prefijo: *exo-* es \"hacia fuera\", así que una reacción **exotérmica** manda calor hacia el ambiente y su entalpía es negativa ($\\Delta H < 0$). Las combustiones son el ejemplo típico: el recipiente se calienta.\n\nEndotérmica (A) es lo contrario, *endo-* = hacia dentro: la reacción absorbe calor y el recipiente se siente frío. Ojo con \"endergónica\", que se refiere a energía libre y no específicamente a calor."
           },
           {
             "id": 45,
@@ -615,7 +659,8 @@
               "C": "Se desplaza hacia los productos",
               "D": "Libera calor sin cambio de posición"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El principio de Le Chatelier dice que si perturbas un sistema en equilibrio, este se reacomoda para **contrarrestar** la perturbación. Si agregas reactivo, sobra reactivo; la forma de consumir ese exceso es que la reacción avance hacia la derecha, o sea que el equilibrio **se desplace hacia los productos** hasta que la razón de concentraciones vuelva a valer $K$.\n\nLa opción B es la trampa: uno piensa \"hay más reactivo, entonces se va hacia los reactivos\". Es al revés; el sistema se mueve para *gastar* lo que le pusiste de más."
           },
           {
             "id": 46,
@@ -628,7 +673,8 @@
               "C": "Aromáticos",
               "D": "Alcanos"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "En los hidrocarburos, el tipo de enlace entre carbonos define la familia: enlace simple $\\mathrm{C-C}$ son **alcanos**, doble $\\mathrm{C=C}$ son alquenos y triple $\\mathrm{C \\equiv C}$ son alquinos. Como aquí solo hay enlaces simples, son alcanos (metano, etano, propano...), y por eso se les llama saturados: cada carbono ya tiene el máximo de hidrógenos posible, con fórmula general $\\mathrm{C_nH_{2n+2}}$.\n\nLos aromáticos (C) tampoco son, porque tienen el anillo con enlaces deslocalizados del benceno."
           },
           {
             "id": 47,
@@ -641,7 +687,8 @@
               "C": "Cetonas",
               "D": "Ácidos carboxílicos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El grupo $-\\mathrm{OH}$ unido a un carbono es el **hidroxilo**, y define a los **alcoholes**: metanol $\\mathrm{CH_3OH}$, etanol $\\mathrm{CH_3CH_2OH}$. Su terminación en la nomenclatura es *-ol*.\n\nCuidado con los ácidos carboxílicos (D): sí contienen un $\\mathrm{OH}$, pero pegado a un carbonilo, así que su grupo completo es $-\\mathrm{COOH}$, no solo $-\\mathrm{OH}$. Los aldehídos y las cetonas llevan $\\mathrm{C=O}$ sin hidroxilo."
           },
           {
             "id": 48,
@@ -654,7 +701,8 @@
               "C": "Su estructura lineal",
               "D": "La alta electronegatividad del hidrógeno"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Compara al agua con moléculas de masa parecida: el metano ($16$ g/mol) hierve a $-161\\,^\\circ$C y el agua ($18$ g/mol) a $100\\,^\\circ$C. Con masas casi iguales, la masa no puede ser la explicación. Lo que hace la diferencia son los **puentes de hidrógeno**: como el hidrógeno está unido a un oxígeno muy electronegativo, cada molécula de agua se enlaza con las vecinas por atracciones fuertes, y hervir exige romper toda esa red. De ahí el punto de ebullición tan alto.\n\nLa opción D suena bien pero está al revés: el hidrógeno es de baja electronegatividad; el electronegativo es el oxígeno."
           },
           {
             "id": 49,
@@ -667,7 +715,8 @@
               "C": "Actúa como agente oxidante",
               "D": "No experimenta cambio en su estado de oxidación"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Sigue los números de oxidación. El zinc entra como metal libre, $\\mathrm{Zn^0}$, y sale como parte del sulfato, $\\mathrm{Zn^{2+}}$: pasó de $0$ a $+2$, es decir **perdió dos electrones**. Perder electrones es oxidarse:\n\n$$\\mathrm{Zn^0 \\rightarrow Zn^{2+} + 2e^-}$$\n\nEsos electrones se los queda el cobre, que va de $\\mathrm{Cu^{2+}}$ a $\\mathrm{Cu^0}$: él se reduce.\n\nLa opción C confunde los papeles: el que se oxida es el agente **reductor**, porque es el que entrega los electrones que reducen al otro. Aquí el oxidante es el $\\mathrm{Cu^{2+}}$."
           }
         ]
       },
@@ -686,7 +735,8 @@
               "C": "Los tejidos son la unidad mínima de vida",
               "D": "Las células se originan por síntesis química espontánea"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "La Teoría Celular se resume en tres postulados: **todos los seres vivos están formados por células**, la célula es la unidad estructural y funcional de la vida, y toda célula proviene de otra célula preexistente (*omnis cellula e cellula*).\n\nLa opción D es justo lo que la Teoría Celular **niega**: la generación espontánea quedó descartada con los experimentos de Pasteur. Y la unidad mínima de vida es la célula, no el tejido."
           },
           {
             "id": 51,
@@ -699,7 +749,8 @@
               "C": "No poseen membrana nuclear",
               "D": "Carecen de pared celular"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La palabra misma lo dice: *pro-carion* es \"antes del núcleo\". Las procariotas tienen su ADN suelto en el citoplasma, en una región llamada nucleoide, porque **no tienen membrana nuclear** que lo envuelva. Tampoco tienen otros organelos membranosos como mitocondrias o retículo.\n\nSí tienen ribosomas (por eso los antibióticos que los atacan funcionan), sí tienen ADN y ARN, y las bacterias sí tienen pared celular: por eso A, B y D no sirven como diferencia."
           },
           {
             "id": 52,
@@ -712,7 +763,8 @@
               "C": "La fijación de CO₂ para producir glucosa",
               "D": "La liberación de O₂"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La fase oscura, o ciclo de Calvin, ocurre en el estroma del cloroplasto y no necesita luz directa: usa el ATP y el NADPH que fabricó la fase luminosa para **fijar el $\\mathrm{CO_2}$** y armar con él moléculas orgánicas, hasta llegar a glucosa.\n\nLas otras tres opciones son de la fase **luminosa**: ahí se rompe el agua (fotólisis), se libera $\\mathrm{O_2}$ y se produce el ATP. Recuérdalo así: la luz aporta la energía, la oscuridad usa esa energía para construir el azúcar."
           },
           {
             "id": 53,
@@ -725,7 +777,8 @@
               "C": "Cloroplasto",
               "D": "Citoplasma"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La glucólisis parte una molécula de glucosa en dos de piruvato y ocurre en el **citoplasma** (citosol). Justo por eso puede darse sin oxígeno y la comparten organismos aerobios y anaerobios: no depende de ningún organelo.\n\nLa mitocondria (B) es la trampa natural, porque uno asocia \"respiración celular\" con mitocondria. Ahí ocurren las etapas *siguientes*: el ciclo de Krebs y la cadena respiratoria, a las que entra el piruvato después."
           },
           {
             "id": 54,
@@ -738,7 +791,8 @@
               "C": "La separación de los cromosomas",
               "D": "El crecimiento celular inicial"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La interfase se divide en $G_1$, $S$ y $G_2$. La **S** es de *síntesis*: ahí se **replica el ADN**, de modo que cada cromosoma queda con dos cromátidas hermanas idénticas y la célula duplica su material genético antes de dividirse.\n\nEl crecimiento inicial es $G_1$, y la división del núcleo y la separación de cromosomas pasan en la mitosis, ya fuera de la interfase."
           },
           {
             "id": 55,
@@ -751,7 +805,8 @@
               "C": "Dos células diploides idénticas",
               "D": "Células somáticas únicamente"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La meiosis hace dos divisiones seguidas a partir de una célula diploide: en la meiosis I se separan los cromosomas homólogos (ahí se reduce el número a la mitad) y en la meiosis II se separan las cromátidas. El resultado son **cuatro células haploides** ($n$) y además genéticamente distintas, gracias al entrecruzamiento.\n\nLas opciones A y C describen la **mitosis**: dos células diploides idénticas a la madre. Y D está al revés: la meiosis produce gametos, no células somáticas."
           },
           {
             "id": 56,
@@ -764,7 +819,8 @@
               "C": "1:2:1",
               "D": "2:1"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Arma el cuadro de Punnett de $Aa \\times Aa$: los genotipos salen $AA$, $Aa$, $Aa$, $aa$, es decir $1:2:1$. Pero la pregunta pide **fenotipos**, y como $A$ es dominante, $AA$ y $Aa$ se ven igual:\n\n$$1\\,AA + 2\\,Aa = 3\\ \\text{dominantes} \\quad ; \\quad 1\\,aa = 1\\ \\text{recesivo}$$\n\nAsí que la proporción fenotípica es **3:1**.\n\nSi elegiste $1:2:1$ (opción C) contestaste la proporción **genotípica**: el dato es correcto, pero no es lo que se preguntó."
           },
           {
             "id": 57,
@@ -777,7 +833,8 @@
               "C": "Enlaces iónicos entre los grupos fosfato",
               "D": "Puentes disulfuro entre cadenas de desoxirribosa"
             },
-            "answer": "A"
+            "answer": "A",
+            "explanation": "Hay que distinguir los dos tipos de unión en el ADN. A lo largo de **cada** cadena, los nucleótidos se unen por enlaces fosfodiéster (esa es la opción B, cierta pero no responde). Lo que mantiene juntas **las dos** cadenas de la doble hélice son los **puentes de hidrógeno** entre bases complementarias: dos entre A y T, tres entre G y C.\n\nSon uniones débiles individualmente, y eso es una ventaja: permiten que la hélice se abra sin romper el esqueleto cuando toca replicar o transcribir."
           },
           {
             "id": 58,
@@ -790,7 +847,8 @@
               "C": "Selección natural",
               "D": "Equilibrio genético en las poblaciones"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Darwin y Wallace propusieron la **selección natural**: dentro de una población hay variación heredable, los recursos son limitados y los individuos con las variantes más ventajosas en ese ambiente dejan más descendencia, así que esas características se hacen frecuentes con las generaciones.\n\nLa opción A es de **Lamarck** (la herencia de los caracteres adquiridos), y la D corresponde al equilibrio de Hardy-Weinberg, que es genética de poblaciones posterior. Ojo también con B: para Darwin la variación no la dirige el ambiente; el ambiente solo selecciona entre variaciones que ya existían."
           },
           {
             "id": 59,
@@ -803,7 +861,8 @@
               "C": "Consumidores secundarios",
               "D": "Productores"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Los **productores** o autótrofos son el primer nivel trófico: plantas, algas y cianobacterias que capturan la energía solar por fotosíntesis y con ella fabrican su propio alimento. Toda la energía que después circula por la cadena entra por ahí.\n\nLos consumidores primarios (A) son los herbívoros, que se comen a los productores pero no producen su alimento, y los descomponedores cierran el ciclo devolviendo la materia al suelo."
           },
           {
             "id": 60,
@@ -816,7 +875,8 @@
               "C": "Es la principal molécula transportadora de energía química",
               "D": "Forma parte de la estructura de la membrana plasmática"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El ATP funciona como la \"moneda energética\" de la célula: al romperse el enlace de su tercer grupo fosfato ($\\mathrm{ATP \\rightarrow ADP + P_i}$) libera energía justo donde se necesita, y así **transporta energía química** desde las reacciones que la producen (respiración, fotosíntesis) hasta las que la consumen (síntesis de proteínas, transporte activo, contracción muscular).\n\nNo guarda información genética —eso es el ADN— ni es un catalizador: los catalizadores biológicos son las enzimas, y el ATP es el que las alimenta, no el que acelera la reacción."
           },
           {
             "id": 61,
@@ -829,7 +889,8 @@
               "C": "Se corrige automáticamente durante la replicación del ADN",
               "D": "Puede heredarse a la descendencia"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Las células germinales son las que dan origen a los gametos, o sea a óvulos y espermatozoides. Si la mutación está ahí, viaja en el gameto que forma el nuevo individuo y por eso **puede heredarse a la descendencia**. Esa es la diferencia clave con las mutaciones somáticas, que se quedan en el cuerpo del individuo y mueren con él.\n\nOjo con A: el que sea dominante o recesivo cambia si la mutación *se manifiesta*, pero no si se hereda; una mutación recesiva se transmite igual aunque no se vea."
           },
           {
             "id": 62,
@@ -842,7 +903,8 @@
               "C": "Solo pueden reproducirse dentro de células hospedadoras",
               "D": "Poseen metabolismo autónomo basado en enzimas propias"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Los virus sí tienen material genético (ADN o ARN) y proteínas, pero no tienen metabolismo, ni ribosomas, ni maquinaria para hacer copias de sí mismos. Por eso son parásitos obligados: **solo se reproducen dentro de una célula hospedadora**, secuestrando su maquinaria. Esa dependencia total es la razón por la que muchos biólogos no los cuentan como seres vivos.\n\nLas opciones A, B y D describen justo lo contrario de lo que ocurre: material genético sí tienen, y ni división celular propia ni metabolismo autónomo."
           }
         ]
       },
@@ -861,7 +923,8 @@
               "C": "Emotiva",
               "D": "Apelativa"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La función **apelativa** (o conativa) se centra en el receptor: el hablante quiere provocar una reacción en él. Sus marcas típicas son el imperativo, el vocativo y la interrogación: \"cierra la puerta\", \"Ana, ven\", \"¿me ayudas?\". Órdenes, ruegos y preguntas caen todas ahí.\n\nLa referencial (A) se centra en el mensaje sobre la realidad y la emotiva (C) en el emisor y lo que siente. La pista está en a quién apunta el enunciado: si busca mover al otro, es apelativa."
           },
           {
             "id": 64,
@@ -874,7 +937,8 @@
               "C": "Convencer al lector de adoptar un punto de vista",
               "D": "Informar sobre hechos de manera objetiva"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El texto argumentativo defiende una **tesis**: parte de una postura y encadena razones y pruebas para **convencer** al lector de adoptarla o de cambiar de opinión. Su intención es persuasiva, no neutral.\n\nCuidado con D: informar de manera objetiva es lo propio del texto **expositivo**, que explica sin tomar partido. Describir es descriptivo y narrar en orden cronológico es narrativo."
           },
           {
             "id": 65,
@@ -887,7 +951,8 @@
               "C": "La proposición que expresa el tema central y lo que se dice de él",
               "D": "El argumento con el que se sustenta la conclusión"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La idea principal es la afirmación que sostiene todo el texto: una **proposición** que dice de qué se habla (el tema) y qué se afirma de ello. Por eso se enuncia como oración completa y no como una palabra suelta: si la quitaras, el texto se quedaría sin su núcleo, y las demás ideas están ahí para apoyarla.\n\nLa opción D describe un argumento, que es una idea *secundaria* al servicio de la principal; y no tiene que aparecer al cierre ni ser una opinión personal."
           },
           {
             "id": 66,
@@ -900,7 +965,8 @@
               "C": "aprobaron el examen",
               "D": "el examen final"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El sujeto es todo el grupo nominal que concuerda con el verbo, no nada más el núcleo. Pregúntale al verbo *¿quiénes aprobaron?*: \"los estudiantes de la preparatoria\". Su núcleo es *estudiantes* y \"de la preparatoria\" es un complemento del nombre que dice cuáles estudiantes; entra en el sujeto porque forma parte de la misma frase.\n\nSi marcaste A, te quedaste con el núcleo y dejaste fuera el modificador. Las opciones C y D son predicado."
           },
           {
             "id": 67,
@@ -913,7 +979,8 @@
               "C": "Esporádico",
               "D": "Intermitente"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "*Efímero* significa que dura muy poco tiempo, que pasa pronto. **Transitorio** es exactamente eso: pasajero, de duración breve. La coincidencia es en el eje del *tiempo*.\n\n*Frágil* habla de resistencia, no de duración; y *esporádico* e *intermitente* hablan de **frecuencia**: algo que ocurre de vez en cuando o a intervalos, que no es lo mismo que algo que dura poco. Un relámpago es efímero; una gotera es intermitente."
           },
           {
             "id": 68,
@@ -926,7 +993,8 @@
               "C": "Escuela",
               "D": "Ciencia"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Primero define la relación del par base: el médico es el profesional y el hospital es el **lugar donde ejerce**. Ahora aplica la misma relación al segundo par: el maestro ejerce en la **escuela**. La analogía se resuelve conservando el tipo de vínculo, no el tema.\n\n\"Alumno\" se antoja mucho, pero cambiaría la relación a profesional–destinatario (el equivalente sería *paciente*, no *hospital*). \"Ciencia\" daría profesional–campo de conocimiento."
           },
           {
             "id": 69,
@@ -939,7 +1007,8 @@
               "C": "La adecuación del registro al tipo de receptor",
               "D": "La estructura formal de introducción, desarrollo y cierre"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La **coherencia** es asunto de contenido: que el texto trate de un mismo tema, que las ideas no se contradigan y que se ordenen con lógica, de modo que el conjunto tenga sentido como unidad.\n\nNo la confundas con la **cohesión**, que es la opción A: los nexos, los pronombres y los conectores que amarran gramaticalmente unas oraciones con otras. La cohesión es la costura visible; la coherencia es que lo dicho tenga sentido. Y la opción C es adecuación."
           },
           {
             "id": 70,
@@ -952,7 +1021,8 @@
               "C": "Meticuloso",
               "D": "Negligente"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "*Diligente* es quien hace las cosas con prontitud, cuidado y esmero. Su contrario es **negligente**: descuidado, que desatiende sus obligaciones. Fíjate además en el prefijo *neg-*, que ya te avisa de la negación.\n\nLas otras tres son **sinónimos** o cuasi sinónimos (prudente, perseverante, meticuloso van en la misma dirección de cuidado y constancia); un error común es leer rápido y escoger la que \"suena distinta\" sin revisar si de veras se opone."
           },
           {
             "id": 71,
@@ -965,7 +1035,8 @@
               "C": "Expositiva",
               "D": "Argumentativa"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "Tesis, argumentos y conclusión es exactamente la estructura del discurso **argumentativo**: se plantea una postura, se sostiene con razones y pruebas, y se cierra reafirmándola.\n\nEl expositivo (C) es la trampa, porque también organiza ideas de forma ordenada, pero su estructura es introducción, desarrollo y conclusión, sin tesis que defender: informa en lugar de persuadir. La palabra clave que decide aquí es **tesis**."
           },
           {
             "id": 72,
@@ -979,7 +1050,8 @@
               "D": "Los glaciares contienen la mayor parte del agua dulce de la Tierra"
             },
             "answer": "B",
-            "context": "\"El agua dulce representa apenas el 2.5% del total de agua en el planeta. De ese porcentaje, casi el 70% se encuentra atrapada en glaciares y casquetes polares, mientras que el agua subterránea constituye alrededor del 30%. Solo el 0.3% del agua dulce es accesible en ríos, lagos y embalses superficiales. A pesar de su aparente abundancia, la distribución del agua dulce es profundamente desigual: mientras que Brasil, Canadá y Rusia concentran cerca de la mitad de las reservas mundiales, regiones enteras de África subsahariana, Medio Oriente y el sur de Asia enfrentan escasez crónica que afecta a cientos de millones de personas. El crecimiento demográfico, la expansión agrícola —que consume aproximadamente el 70% del agua dulce extraída en el mundo— y la contaminación de fuentes hídricas agravan esta crisis. Organismos internacionales advierten que, de no adoptarse políticas sostenibles de gestión hídrica, para 2050 más de cinco mil millones de personas podrían vivir en zonas con acceso deficiente al agua potable.\""
+            "context": "\"El agua dulce representa apenas el 2.5% del total de agua en el planeta. De ese porcentaje, casi el 70% se encuentra atrapada en glaciares y casquetes polares, mientras que el agua subterránea constituye alrededor del 30%. Solo el 0.3% del agua dulce es accesible en ríos, lagos y embalses superficiales. A pesar de su aparente abundancia, la distribución del agua dulce es profundamente desigual: mientras que Brasil, Canadá y Rusia concentran cerca de la mitad de las reservas mundiales, regiones enteras de África subsahariana, Medio Oriente y el sur de Asia enfrentan escasez crónica que afecta a cientos de millones de personas. El crecimiento demográfico, la expansión agrícola —que consume aproximadamente el 70% del agua dulce extraída en el mundo— y la contaminación de fuentes hídricas agravan esta crisis. Organismos internacionales advierten que, de no adoptarse políticas sostenibles de gestión hídrica, para 2050 más de cinco mil millones de personas podrían vivir en zonas con acceso deficiente al agua potable.\"",
+            "explanation": "Revisa el recorrido del texto: primero da las cifras de lo poco accesible que es el agua dulce ($2.5\\%$ del total y solo $0.3\\%$ de eso en ríos y lagos), luego dedica la parte central a la **desigualdad** en su distribución (\"profundamente desigual\": tres países con media reserva mundial frente a regiones con escasez crónica) y cierra con la advertencia de los organismos internacionales sobre 2050 \"de no adoptarse políticas sostenibles de gestión hídrica\". Escasez, mala distribución y advertencia: eso es la opción B.\n\nA, C y D sí aparecen en el texto, pero son **datos de apoyo**. La idea principal tiene que cubrir todo el texto, no solo un renglón de él."
           },
           {
             "id": 73,
@@ -993,7 +1065,8 @@
               "D": "El derretimiento de glaciares resolverá el problema de la escasez hídrica mundial"
             },
             "answer": "B",
-            "context": "\"El agua dulce representa apenas el 2.5% del total de agua en el planeta. De ese porcentaje, casi el 70% se encuentra atrapada en glaciares y casquetes polares, mientras que el agua subterránea constituye alrededor del 30%. Solo el 0.3% del agua dulce es accesible en ríos, lagos y embalses superficiales. A pesar de su aparente abundancia, la distribución del agua dulce es profundamente desigual: mientras que Brasil, Canadá y Rusia concentran cerca de la mitad de las reservas mundiales, regiones enteras de África subsahariana, Medio Oriente y el sur de Asia enfrentan escasez crónica que afecta a cientos de millones de personas. El crecimiento demográfico, la expansión agrícola —que consume aproximadamente el 70% del agua dulce extraída en el mundo— y la contaminación de fuentes hídricas agravan esta crisis. Organismos internacionales advierten que, de no adoptarse políticas sostenibles de gestión hídrica, para 2050 más de cinco mil millones de personas podrían vivir en zonas con acceso deficiente al agua potable.\""
+            "context": "\"El agua dulce representa apenas el 2.5% del total de agua en el planeta. De ese porcentaje, casi el 70% se encuentra atrapada en glaciares y casquetes polares, mientras que el agua subterránea constituye alrededor del 30%. Solo el 0.3% del agua dulce es accesible en ríos, lagos y embalses superficiales. A pesar de su aparente abundancia, la distribución del agua dulce es profundamente desigual: mientras que Brasil, Canadá y Rusia concentran cerca de la mitad de las reservas mundiales, regiones enteras de África subsahariana, Medio Oriente y el sur de Asia enfrentan escasez crónica que afecta a cientos de millones de personas. El crecimiento demográfico, la expansión agrícola —que consume aproximadamente el 70% del agua dulce extraída en el mundo— y la contaminación de fuentes hídricas agravan esta crisis. Organismos internacionales advierten que, de no adoptarse políticas sostenibles de gestión hídrica, para 2050 más de cinco mil millones de personas podrían vivir en zonas con acceso deficiente al agua potable.\"",
+            "explanation": "El texto dice que la agricultura \"consume aproximadamente el $70\\%$ del agua dulce extraída en el mundo\". Si un solo uso se lleva siete de cada diez litros extraídos, entonces recortar ahí libera mucha más agua que recortar en cualquier otro rubro: de ese dato **se infiere** que reducir el consumo agrícola tendría un impacto significativo. Es una inferencia legítima porque el texto no lo dice con esas palabras, pero la cifra lo sostiene.\n\nA se contradice con el $0.3\\%$ accesible; C nunca se afirma (el texto no limita la contaminación a ciertos países) y D es un disparate que el texto no insinúa."
           },
           {
             "id": 74,
@@ -1007,7 +1080,8 @@
               "D": "Describir los procesos físicos del ciclo del agua en la naturaleza"
             },
             "answer": "C",
-            "context": "\"El agua dulce representa apenas el 2.5% del total de agua en el planeta. De ese porcentaje, casi el 70% se encuentra atrapada en glaciares y casquetes polares, mientras que el agua subterránea constituye alrededor del 30%. Solo el 0.3% del agua dulce es accesible en ríos, lagos y embalses superficiales. A pesar de su aparente abundancia, la distribución del agua dulce es profundamente desigual: mientras que Brasil, Canadá y Rusia concentran cerca de la mitad de las reservas mundiales, regiones enteras de África subsahariana, Medio Oriente y el sur de Asia enfrentan escasez crónica que afecta a cientos de millones de personas. El crecimiento demográfico, la expansión agrícola —que consume aproximadamente el 70% del agua dulce extraída en el mundo— y la contaminación de fuentes hídricas agravan esta crisis. Organismos internacionales advierten que, de no adoptarse políticas sostenibles de gestión hídrica, para 2050 más de cinco mil millones de personas podrían vivir en zonas con acceso deficiente al agua potable.\""
+            "context": "\"El agua dulce representa apenas el 2.5% del total de agua en el planeta. De ese porcentaje, casi el 70% se encuentra atrapada en glaciares y casquetes polares, mientras que el agua subterránea constituye alrededor del 30%. Solo el 0.3% del agua dulce es accesible en ríos, lagos y embalses superficiales. A pesar de su aparente abundancia, la distribución del agua dulce es profundamente desigual: mientras que Brasil, Canadá y Rusia concentran cerca de la mitad de las reservas mundiales, regiones enteras de África subsahariana, Medio Oriente y el sur de Asia enfrentan escasez crónica que afecta a cientos de millones de personas. El crecimiento demográfico, la expansión agrícola —que consume aproximadamente el 70% del agua dulce extraída en el mundo— y la contaminación de fuentes hídricas agravan esta crisis. Organismos internacionales advierten que, de no adoptarse políticas sostenibles de gestión hídrica, para 2050 más de cinco mil millones de personas podrían vivir en zonas con acceso deficiente al agua potable.\"",
+            "explanation": "Fíjate en dos cosas del texto: casi todo son **datos** presentados sin tomar partido (porcentajes, países, proyecciones) y el cierre es una **advertencia** —\"para 2050 más de cinco mil millones de personas podrían vivir en zonas con acceso deficiente al agua potable\"—. Informar sobre la distribución desigual y alertar de la crisis futura: esa es la opción C.\n\nLa A se antoja por el tono de alarma, pero el texto en ningún momento le pide al lector dejar de consumir productos agrícolas: menciona la agricultura como dato de consumo, no como una acción que exija al lector. Y no narra ni describe procesos físicos."
           },
           {
             "id": 75,
@@ -1020,7 +1094,8 @@
               "C": "Ambiciosa y motivada por el reconocimiento social",
               "D": "Tímida pero hábil en su oficio"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Toma los hechos del fragmento y traduce cada uno a un rasgo. Llega antes que nadie y prepara máquinas, hilos y telas: eso es **responsabilidad**. Ayuda a las compañeras \"sin que se lo pidieran\" y no se va hasta resolver el problema: eso es **generosidad** y paciencia. Da clases gratuitas a jóvenes del barrio que no pueden pagar un curso: eso es **compromiso con su comunidad**. Los tres rasgos de la opción B están sostenidos en el texto.\n\nLa opción C es la que hay que descartar con cuidado: sí hay reconocimiento (los vecinos la llaman \"la maestra\"), pero ella lo rechaza —\"insistía en que solo era alguien que no sabía quedarse con los brazos cruzados\"—, así que no la mueve el reconocimiento. Y revisar las máquinas es preparar su trabajo, no desconfiar del de las demás."
           },
           {
             "id": 76,
@@ -1033,7 +1108,8 @@
               "C": "Referencial",
               "D": "Metalingüística"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La función **referencial** (también llamada informativa o denotativa) se centra en el referente, es decir en la realidad de la que se habla. Transmite información objetiva y verificable, con verbos en indicativo y en tercera persona: \"el agua hierve a $100\\,^\\circ$C\", una noticia, un texto científico.\n\nLa metalingüística (D) también parece objetiva, pero solo se usa cuando el lenguaje habla **de sí mismo** (\"*casa* es un sustantivo\"). Si el mensaje informa del mundo, es referencial."
           },
           {
             "id": 77,
@@ -1046,7 +1122,8 @@
               "C": "El presidente resibió al embajador en su despacho",
               "D": "El precidente recibió al enbajador en su despacho"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Revisa palabra por palabra. *Recibió* va con **b**, porque los verbos terminados en *-cibir* (recibir, concebir, percibir) se escriben con b: eso descarta \"recivió\" y \"resibió\". Y en la D hay dos faltas: *presidente* con s y *embajador* con **m**, porque antes de b y p siempre va m, nunca n.\n\nLa B es la única sin ningún error: \"El presidente recibió al embajador en su despacho\"."
           },
           {
             "id": 78,
@@ -1059,7 +1136,8 @@
               "C": "brújula",
               "D": "volúmen"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Esdrújula es la palabra que carga la voz en la **antepenúltima** sílaba, y todas se acentúan sin excepción. Separa: *brú-ju-la*, la fuerza cae en *brú*, tercera sílaba contando desde el final. Es esdrújula y su tilde es obligatoria: **brújula**.\n\nLas otras tres están mal escritas. *Examen*, *imagen* y *volumen* son graves terminadas en n, y las graves solo llevan tilde si acaban en consonante distinta de n o s: van sin tilde. La tilde aparece apenas en el plural, cuando la sílaba tónica pasa a ser antepenúltima: *exámenes*, *imágenes*, *volúmenes*."
           },
           {
             "id": 79,
@@ -1072,7 +1150,8 @@
               "C": "Indicar una enumeración",
               "D": "Señalar una pausa breve"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Cuando los dos puntos van después de un verbo de habla —*dijo*, *afirmó*, *preguntó*— anuncian que lo que sigue son las palabras exactas de alguien. Por eso van seguidos de las comillas: su función es **introducir una cita textual**.\n\nLos dos puntos también sirven para abrir enumeraciones (opción C), pero aquí no hay lista que enumerar; y una pausa breve la marca la coma, no los dos puntos."
           },
           {
             "id": 80,
@@ -1085,7 +1164,8 @@
               "C": "presentaron el examen ayer",
               "D": "el examen ayer"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Localiza primero el verbo: *presentaron*. El predicado es el verbo con todo lo que lo acompaña, así que va de ahí hasta el final: **\"presentaron el examen ayer\"**, donde *el examen* es el objeto directo y *ayer* un complemento circunstancial de tiempo.\n\nLa opción A es el sujeto completo, y la D deja fuera al verbo, que es precisamente el núcleo del predicado: sin él no hay predicado."
           }
         ]
       },
@@ -1104,7 +1184,8 @@
               "C": "Persuadir al lector sobre una postura determinada",
               "D": "Describir detalladamente objetos y espacios"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Lo que define al texto narrativo es que *cuenta una historia*: hay hechos que suceden, personajes que los viven y conflictos que se desarrollan a lo largo del tiempo. Ese eje temporal —un antes, un durante y un después— es su rasgo esencial.\n\nExpresar sentimientos de manera lírica (opción A) es lo propio del género lírico, no del narrativo; ahí está la confusión más común."
           },
           {
             "id": 82,
@@ -1117,7 +1198,8 @@
               "C": "Épico",
               "D": "Poético"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El género **épico** narra las hazañas de héroes y grandes acontecimientos: la epopeya (como la *Ilíada* o la *Odisea*) es su forma clásica, y la novela de aventuras es su heredera moderna, porque también relata acciones y peripecias de un protagonista.\n\nNo es lírico (A): ese género expresa sentimientos, no cuenta hazañas. Y \"poético\" (D) no es un género en la clasificación tradicional, es un anzuelo."
           },
           {
             "id": 83,
@@ -1130,7 +1212,8 @@
               "C": "Antítesis",
               "D": "Personificación"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La **metáfora** identifica directamente una cosa con otra por su parecido, sin usar \"como\": aquí los dientes *son* perlas, por su blancura y brillo. Se sustituye el término real por el imaginario.\n\nNo es hipérbole (A) porque no hay exageración, y no es personificación (D) porque no se le dan cualidades humanas a un objeto. Si dijera \"sus dientes son *como* perlas\", sería símil o comparación."
           },
           {
             "id": 84,
@@ -1143,7 +1226,8 @@
               "C": "Conoce los pensamientos y sentimientos de todos los personajes",
               "D": "Interviene directamente en la trama"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "\"Omnisciente\" viene del latín: *omni* (todo) + *sciens* (que sabe). Es el narrador que lo sabe todo: entra en la mente de cualquier personaje, conoce sus pensamientos, sentimientos e incluso su pasado y su futuro. Narra en tercera persona desde una perspectiva total.\n\nEl que solo narra lo que percibe desde fuera (opción A) es el narrador testigo u objetivo: ve las acciones, pero no puede entrar en las mentes."
           },
           {
             "id": 85,
@@ -1156,7 +1240,8 @@
               "C": "La exaltación de los sentimientos y la naturaleza",
               "D": "El uso de símbolos y lenguaje hermético"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El Realismo del siglo XIX (Balzac, Flaubert, Galdós) nació como reacción contra el Romanticismo: en lugar de idealizar, busca retratar la sociedad tal como es, con observación minuciosa y objetiva de la vida cotidiana, los ambientes y los problemas sociales.\n\nLa exaltación de los sentimientos y la naturaleza (opción C) es justamente el Romanticismo, la corriente a la que el Realismo se opuso."
           },
           {
             "id": 86,
@@ -1169,7 +1254,8 @@
               "C": "Organizarse mediante tesis y argumentos",
               "D": "Centrarse en la expresión subjetiva del autor"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El texto dramático está escrito **para representarse en un escenario**: por eso se estructura en diálogos y acotaciones, sin narrador. La historia no se cuenta, se *muestra* a través de lo que los personajes dicen y hacen frente al público.\n\nSi hay un narrador que describe los hechos (opción A), estás ante un texto narrativo: esa es precisamente la diferencia clave entre ambos géneros."
           },
           {
             "id": 87,
@@ -1182,7 +1268,8 @@
               "C": "Libre, porque no sigue un patrón definido",
               "D": "Pareada, porque riman versos consecutivos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La rima **consonante** repite *todos* los sonidos —vocales y consonantes— a partir de la última vocal acentuada. En el soneto de Garcilaso, \"azucena\" rima con \"serena\": desde la vocal tónica coincide todo, **-ena** con **-ena**.\n\nSi solo coincidieran las vocales (por ejemplo \"azucena\" con \"tristeza\": e-a con e-a), sería asonante, que es la opción A. La pista está en el propio enunciado: \"coinciden vocales y consonantes desde la vocal acentuada\" es la definición exacta de consonante."
           },
           {
             "id": 88,
@@ -1195,7 +1282,8 @@
               "C": "Romanticismo",
               "D": "Modernismo"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El **realismo mágico** es la corriente hispanoamericana del siglo XX que presenta lo extraordinario —levitaciones, lluvias de años, muertos que conviven con vivos— como parte natural de la vida cotidiana, sin asombro. *Cien años de soledad* de García Márquez es su obra emblemática: en Macondo lo fantástico se narra con la misma naturalidad que lo real.\n\nEl Naturalismo (A) va en sentido contrario: busca explicar la realidad con rigor casi científico, sin nada de fantasía."
           },
           {
             "id": 89,
@@ -1208,7 +1296,8 @@
               "C": "Se caracteriza por su brevedad y unidad de efecto",
               "D": "Prescinde de personajes y diálogos"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El cuento se define por su **brevedad** y por lo que Poe llamó la *unidad de efecto*: una sola historia, pocos personajes, un conflicto central, todo concentrado para producir una impresión única que se lee de una sentada. La novela, en cambio, es extensa y puede desarrollar varias tramas y muchos personajes.\n\nOjo con la B: desarrollar múltiples líneas argumentales es característica de la novela, no del cuento; es la opción al revés."
           },
           {
             "id": 90,
@@ -1221,7 +1310,8 @@
               "C": "Resumir un texto eliminando las ideas secundarias",
               "D": "Comentar críticamente la postura de un autor"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Parafrasear es decir **con tus propias palabras** lo que otro autor expresó, conservando el sentido original. Es lo que haces cuando explicas una idea de un libro sin copiarla textualmente.\n\nCopiar textualmente entre comillas (opción A) es la *cita textual*, y reducir el texto quitando ideas secundarias (opción C) es el *resumen*: en la paráfrasis no recortas, reformulas."
           }
         ]
       },
@@ -1240,7 +1330,8 @@
               "C": "El retorno a la tradición clásica grecolatina",
               "D": "El rechazo a toda forma de autoridad política"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La Ilustración fue el \"Siglo de las Luces\": sus pensadores (Voltaire, Rousseau, Montesquieu, Diderot) sostenían que la **razón** —y no la tradición o la fe— debía guiar al ser humano, y confiaban en que la ciencia y la educación traerían el progreso de la humanidad. De ahí salieron las ideas que alimentaron la Revolución Francesa.\n\nLa opción A es justo lo contrario: los ilustrados criticaron el absolutismo; a lo más que llegaron algunos fue al \"despotismo ilustrado\", pero no lo proponían como ideal."
           },
           {
             "id": 92,
@@ -1253,7 +1344,8 @@
               "C": "La Independencia de las Trece Colonias",
               "D": "Las Guerras Napoleónicas"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La Declaración fue aprobada por la Asamblea Nacional francesa en agosto de **1789**, apenas semanas después de la toma de la Bastilla: es el documento fundacional de la Revolución Francesa, donde se proclaman la libertad, la igualdad ante la ley y la soberanía de la nación.\n\nLa Independencia de las Trece Colonias (opción C) produjo su propia declaración en 1776 y sí influyó en la francesa, pero el documento de 1789 salió directamente de la Revolución Francesa. El año es tu mejor pista."
           },
           {
             "id": 93,
@@ -1266,7 +1358,8 @@
               "C": "Estados Unidos",
               "D": "Inglaterra"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "La Revolución Industrial arrancó en **Inglaterra** a mediados del siglo XVIII, y no por casualidad: tenía carbón y hierro abundantes, capital acumulado por el comercio, mano de obra disponible y un mercado colonial enorme. Ahí nacieron la máquina de vapor y las primeras fábricas textiles.\n\nFrancia, Alemania y Estados Unidos se industrializaron después, ya en el siglo XIX, siguiendo el modelo inglés."
           },
           {
             "id": 94,
@@ -1279,7 +1372,8 @@
               "C": "La integración política de las colonias como provincias",
               "D": "El fomento del desarrollo industrial en los territorios ocupados"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "A finales del siglo XIX las potencias europeas se lanzaron al **reparto colonial de Asia y África**: buscaban materias primas, mercados para sus productos y prestigio nacional. En la Conferencia de Berlín (1884-1885) llegaron a repartirse África literalmente con reglas sobre el mapa.\n\nLa opción D es un distractor tramposo: las potencias no fomentaron la industria en sus colonias; al contrario, las mantuvieron como proveedoras de materias primas y compradoras de manufacturas."
           },
           {
             "id": 95,
@@ -1292,7 +1386,8 @@
               "C": "La Revolución Rusa de 1917",
               "D": "La crisis económica de 1907"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El 28 de junio de 1914, el archiduque **Francisco Fernando**, heredero del trono austrohúngaro, fue asesinado en Sarajevo por un nacionalista serbio. Austria-Hungría le declaró la guerra a Serbia y el sistema de alianzas arrastró en cadena a las demás potencias: ese atentado fue la chispa que encendió la guerra.\n\nLa invasión de Polonia (opción A) es el detonante de la *Segunda* Guerra Mundial, en 1939: es la confusión clásica entre ambas guerras."
           },
           {
             "id": 96,
@@ -1305,7 +1400,8 @@
               "C": "Vladímir Lenin",
               "D": "José Stalin"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "**Lenin**, líder del partido bolchevique, encabezó la revolución de octubre de 1917 que derrocó al gobierno provisional ruso y llevó a los soviets al poder, con su consigna de \"paz, pan y tierra\".\n\nKérenski (B) era justamente el jefe del gobierno provisional que los bolcheviques derrocaron; Trotsky (A) fue un organizador clave de la insurrección, pero el líder del movimiento era Lenin; y Stalin (D) tomó el poder años después, tras la muerte de Lenin."
           },
           {
             "id": 97,
@@ -1318,7 +1414,8 @@
               "C": "La sobreproducción agrícola en América Latina",
               "D": "La disolución del patrón oro en Gran Bretaña"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La Gran Depresión estalló con el **crac de la Bolsa de Nueva York** en octubre de 1929: el famoso \"jueves negro\" (24 de octubre), cuando el desplome de las acciones arruinó a miles de inversionistas y arrastró a bancos, empresas y empleos, primero en Estados Unidos y luego en todo el mundo.\n\nLa quiebra de bancos europeos (opción A) fue una *consecuencia* posterior de la crisis, no su inicio: el orden de los hechos es lo que decide la respuesta."
           },
           {
             "id": 98,
@@ -1331,7 +1428,8 @@
               "C": "Pogromo",
               "D": "Holocausto"
             },
-            "answer": "D"
+            "answer": "D",
+            "explanation": "**Holocausto** (también llamado *Shoá*) es el nombre que recibe el exterminio sistemático de unos seis millones de judíos, además de gitanos, personas con discapacidad y otras minorías, planificado por el régimen nazi en campos como Auschwitz.\n\nNo lo confundas con el Gulag (A), que era el sistema de campos de trabajo forzado de la URSS, ni con el pogromo (C), que designa ataques violentos contra comunidades judías, sobre todo en la Rusia zarista, pero no un plan de exterminio total."
           },
           {
             "id": 99,
@@ -1344,7 +1442,8 @@
               "C": "Alemania Occidental y Alemania Oriental",
               "D": "Los países de la OTAN y los no alineados"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La Guerra Fría (aprox. 1947-1991) fue el enfrentamiento entre **Estados Unidos** (bloque capitalista) y la **Unión Soviética** (bloque socialista): nunca chocaron directamente en el campo de batalla —por eso \"fría\"—, pero compitieron con la carrera armamentista, la carrera espacial, el espionaje y guerras en terceros países como Corea y Vietnam.\n\nLa división de las dos Alemanias (opción C) fue un *escenario* de esa tensión, no el conflicto en sí: eran piezas de cada bloque, no las potencias enfrentadas."
           },
           {
             "id": 100,
@@ -1357,7 +1456,8 @@
               "C": "La creación del Pacto de Varsovia",
               "D": "El inicio del Plan Marshall"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El Muro de Berlín dividía desde 1961 la ciudad en zona occidental (capitalista) y oriental (socialista), y era el símbolo físico de la \"cortina de hierro\". Su caída el 9 de noviembre de 1989 marcó el **derrumbe de los regímenes socialistas de Europa del Este**: en cadena cayeron los gobiernos del bloque soviético y dos años después se disolvió la propia URSS.\n\nLa opción A no tiene sentido histórico: la URSS no se \"reunificó\", se desintegró; la que se reunificó fue Alemania, en 1990."
           }
         ]
       },
@@ -1376,7 +1476,8 @@
               "C": "Controlaban las rutas comerciales con los mayas del sur",
               "D": "Dominaban los recursos de oro de la región"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Tlaxcala era un señorío independiente y **enemigo histórico de los mexicas**, que lo tenían cercado y le imponían las \"guerras floridas\". Cuando Cortés llegó en 1519, los tlaxcaltecas —tras combatirlo primero— vieron en los españoles la oportunidad de derrotar a Tenochtitlan y aportaron miles de guerreros. Sin esos aliados indígenas, unos cuantos cientos de españoles jamás habrían podido sitiar y tomar la capital mexica.\n\nLas otras opciones fallan en los hechos: Tlaxcala no controlaba rutas mayas ni tenía yacimientos de oro; su valor fue militar y político."
           },
           {
             "id": 102,
@@ -1389,7 +1490,8 @@
               "C": "Impulsar la evangelización de los pueblos indígenas",
               "D": "Establecer el libre comercio con otras potencias europeas"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "En el siglo XVIII los Borbones (sobre todo Carlos III) rediseñaron la administración del imperio para **recuperar el control y aumentar los ingresos de la Corona**: crearon las intendencias, desplazaron a los criollos de los cargos importantes en favor de peninsulares, reorganizaron los impuestos y hasta expulsaron a los jesuitas (1767).\n\nLa opción A es exactamente lo contrario: las reformas *quitaron* poder a los criollos, y ese resentimiento fue uno de los motores de la independencia décadas después."
           },
           {
             "id": 103,
@@ -1402,7 +1504,8 @@
               "C": "Federalismo, soberanía y constitución",
               "D": "Igualdad, justicia y territorio"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las Tres Garantías del Plan de Iguala (1821) eran: **Religión** (la católica como única), **Independencia** (de España) y **Unión** (entre americanos y europeos, es decir, sin represalias contra los peninsulares). De ahí el nombre del Ejército Trigarante y los tres colores de su bandera.\n\n\"Libertad, igualdad y fraternidad\" (opción A) es el lema de la Revolución Francesa: es el distractor clásico en esta pregunta, no te lo lleves."
           },
           {
             "id": 104,
@@ -1415,7 +1518,8 @@
               "C": "Benito Juárez",
               "D": "Sebastián Lerdo de Tejada"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La Constitución de 1857, de corte liberal, fue jurada y promulgada el 5 de febrero de 1857 siendo presidente **Ignacio Comonfort**. Irónicamente, el propio Comonfort la desconoció meses después al sumarse al Plan de Tacubaya, lo que desató la Guerra de Reforma.\n\nJuárez (opción C) es el distractor natural porque su nombre va pegado a esa época, pero en 1857 era presidente de la Suprema Corte; asumió la presidencia del país hasta 1858, precisamente por la crisis que siguió."
           },
           {
             "id": 105,
@@ -1428,7 +1532,8 @@
               "C": "La nacionalización de los ferrocarriles mexicanos",
               "D": "La creación del ejército federal permanente"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Las Leyes de Reforma (1859-1860) establecieron la **separación entre la Iglesia y el Estado**: nacionalizaron los bienes eclesiásticos, crearon el registro civil (nacimientos, matrimonios y defunciones dejaron de ser asunto de la Iglesia), secularizaron los cementerios y proclamaron la libertad de cultos. El objetivo era quitarle a la Iglesia su enorme poder económico y político.\n\nLa nacionalización de los ferrocarriles (opción C) ocurrió mucho después, en el siglo XX: cuidado con mezclar épocas."
           },
           {
             "id": 106,
@@ -1441,7 +1546,8 @@
               "C": "Crecimiento económico con fuerte desigualdad social",
               "D": "La consolidación del federalismo y la democracia electoral"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El Porfiriato trajo modernización real: ferrocarriles, minería, inversión extranjera, estabilidad y crecimiento económico sostenido. Pero ese progreso se concentró en unos cuantos: los campesinos perdieron tierras a manos de las haciendas, los obreros trabajaban sin derechos (recuerda Cananea y Río Blanco) y no había democracia. Esa combinación de **crecimiento con desigualdad** es justo lo que estalló en 1910.\n\nLa opción B falla por la mitad: hubo dictadura, sí, pero no estancamiento; la economía creció, el problema fue cómo se repartió."
           },
           {
             "id": 107,
@@ -1454,7 +1560,8 @@
               "C": "La creación de un partido político opositor al Porfiriato",
               "D": "El reconocimiento de los acuerdos de paz con Estados Unidos"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Madero redactó el Plan de San Luis tras escapar de la cárcel en 1910, después del fraude electoral con que Díaz se reeligió. El plan declaraba nulas las elecciones, desconocía al gobierno y **convocaba al levantamiento armado el 20 de noviembre de 1910**: es el documento que inicia la Revolución Mexicana.\n\nLa opción C confunde los tiempos: el partido opositor (el Antirreeleccionista) Madero ya lo había fundado *antes*, para competir en las elecciones; el plan vino cuando la vía electoral fracasó. Y aunque el plan tocaba el tema de las tierras, no ordenaba un reparto agrario inmediato (opción A): esa fue la bandera de Zapata."
           },
           {
             "id": 108,
@@ -1467,7 +1574,8 @@
               "C": "Emiliano Zapata",
               "D": "Plutarco Elías Calles"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "**Venustiano Carranza**, como Primer Jefe del Ejército Constitucionalista, convocó al Congreso Constituyente de Querétaro, que promulgó la Constitución el 5 de febrero de 1917. Por eso a su movimiento se le llama \"constitucionalista\": su bandera era restaurar y renovar el orden constitucional roto por Victoriano Huerta.\n\nObregón (A) y Calles (D) fueron presidentes *después*, ya bajo esa Constitución; y Zapata (C) nunca fue presidente: combatía contra Carranza en esos años."
           },
           {
             "id": 109,
@@ -1480,7 +1588,8 @@
               "C": "La firma del Tratado de Libre Comercio con Estados Unidos",
               "D": "El establecimiento del sistema de partido único"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "El 18 de marzo de 1938, Lázaro Cárdenas decretó la **expropiación petrolera**: ante la negativa de las compañías extranjeras a acatar un fallo de la Suprema Corte a favor de los trabajadores, nacionalizó la industria del petróleo, de donde nació Pemex. Es el acto más recordado de su sexenio, junto con el reparto agrario masivo.\n\nLa opción A va en sentido contrario al cardenismo, que nacionalizaba, no privatizaba; y el TLC (opción C) se firmó hasta los años noventa."
           },
           {
             "id": 110,
@@ -1493,7 +1602,8 @@
               "C": "La apertura al libre comercio internacional",
               "D": "El endeudamiento externo como motor del desarrollo"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Al periodo 1952-1970 se le llama \"milagro mexicano\" o *desarrollo estabilizador* porque la economía creció a tasas de alrededor del 6% anual con inflación baja y un tipo de cambio fijo ($12.50$ pesos por dólar durante más de veinte años). El motor fue la industrialización por sustitución de importaciones.\n\nLa opción C describe lo opuesto: el modelo era proteccionista, cerrado al exterior; la apertura comercial llegó hasta los años ochenta. Y el endeudamiento como motor (D) corresponde a los setenta, cuando el milagro ya se había acabado."
           }
         ]
       },
@@ -1512,7 +1622,8 @@
               "C": "Latitud y altitud",
               "D": "Meridiano y paralelo"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Para ubicar un punto en la superficie terrestre necesitas dos datos: la **latitud** (distancia angular al norte o sur del ecuador) y la **longitud** (distancia angular al este u oeste del meridiano de Greenwich). Con ese par de coordenadas queda fijo cualquier lugar del planeta.\n\nLa opción D confunde la coordenada con la línea: los paralelos y meridianos son las *líneas* imaginarias sobre las que se miden la latitud y la longitud, no las coordenadas mismas. Y la altitud (A y C) mide la altura sobre el nivel del mar: te dice qué tan arriba estás, no *dónde* estás en el mapa."
           },
           {
             "id": 112,
@@ -1525,7 +1636,8 @@
               "C": "La distribución de sismos, volcanes y la formación de montañas",
               "D": "La composición química del núcleo terrestre"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "La tectónica de placas sostiene que la corteza terrestre está dividida en placas rígidas que se mueven sobre el manto. En sus bordes, donde chocan, se separan o se deslizan una contra otra, es donde ocurre casi toda la actividad geológica: **sismos, vulcanismo y formación de cordilleras** (como los Andes o el Himalaya, levantados por choques de placas). Por eso los mapas de sismos y volcanes coinciden con los límites de placas.\n\nLas corrientes oceánicas (A) las explican los vientos y las diferencias de temperatura y salinidad, no el movimiento de las placas."
           },
           {
             "id": 113,
@@ -1538,7 +1650,8 @@
               "C": "Gases como el CO₂ y el metano que retienen el calor solar",
               "D": "Aerosoles y partículas de origen industrial"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El efecto invernadero funciona así: la radiación solar entra a la atmósfera y calienta la superficie; la Tierra devuelve ese calor como radiación infrarroja, pero gases como el **dióxido de carbono ($CO_2$) y el metano** la atrapan e impiden que escape al espacio, igual que el vidrio de un invernadero. La acumulación de estos gases por quema de combustibles fósiles intensifica el fenómeno y provoca el calentamiento global.\n\nEl nitrógeno y el oxígeno (opción B) son los gases más abundantes de la atmósfera, pero no retienen calor: abundancia no es lo mismo que efecto invernadero."
           },
           {
             "id": 114,
@@ -1551,7 +1664,8 @@
               "C": "Urbanización",
               "D": "Densidad poblacional"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "**Urbanización** es el proceso por el cual una proporción creciente de la población pasa a vivir en ciudades, con el consecuente crecimiento de estas. Es uno de los fenómenos demográficos dominantes desde la Revolución Industrial.\n\nLa conurbación (A) es otra cosa: ocurre cuando dos o más ciudades crecen hasta unirse físicamente (como la Ciudad de México con los municipios del Estado de México). Y la migración rural (B) es una de las *causas* de la urbanización, no el nombre del fenómeno."
           },
           {
             "id": 115,
@@ -1564,7 +1678,8 @@
               "C": "Reciben financiamiento de organismos internacionales",
               "D": "Producen exclusivamente para el mercado interno de su país sede"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Una empresa trasnacional tiene su matriz en un país pero **opera en muchos otros**: instala fábricas, filiales y cadenas de distribución alrededor del mundo, y toma sus decisiones con una lógica global (producir donde es más barato, vender donde hay mercado). Piensa en Coca-Cola, Toyota o Walmart. El propio nombre lo dice: *trans* = más allá de las naciones.\n\nLa opción D es su antónimo exacto: una empresa que produce solo para su mercado interno es precisamente lo contrario de una trasnacional."
           },
           {
             "id": 116,
@@ -1577,7 +1692,8 @@
               "C": "Cloro y compuestos fluorados",
               "D": "Polvo volcánico y partículas suspendidas"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "La lluvia ácida se forma cuando los **óxidos de nitrógeno ($NO_x$) y el dióxido de azufre ($SO_2$)** —emitidos por la quema de combustibles fósiles en industrias y vehículos— reaccionan con el vapor de agua de la atmósfera y producen ácido nítrico y ácido sulfúrico, que caen con la lluvia dañando bosques, lagos y edificios.\n\nEl $CO_2$ y el metano (opción A) son los gases del *efecto invernadero*: es el cruce de conceptos que esta pregunta quiere cazar. El $CO_2$ apenas acidifica la lluvia de forma natural; los responsables del problema son los óxidos de azufre y nitrógeno."
           },
           {
             "id": 117,
@@ -1590,7 +1706,8 @@
               "C": "La Sonda de Campeche y el Golfo de México",
               "D": "La costa del Pacífico y la región norte del país"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "El petróleo mexicano está sobre todo en el sureste, en la vertiente del Golfo: la **Sonda de Campeche** —donde está Cantarell, que llegó a ser uno de los yacimientos más productivos del mundo— y las cuencas del Golfo de México, tanto marinas como en Tabasco, Veracruz y Tamaulipas.\n\nEl Bajío, el Altiplano y la costa del Pacífico no son zonas petroleras: la geología del país concentró los hidrocarburos del lado del Golfo."
           },
           {
             "id": 118,
@@ -1603,7 +1720,8 @@
               "C": "32 estados federales de igual jerarquía",
               "D": "29 estados y 3 territorios"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "México es una federación integrada por **31 estados más la Ciudad de México**, que desde la reforma de 2016 dejó de ser Distrito Federal y se convirtió en una entidad federativa con constitución propia, aunque con un régimen especial por ser la capital. En total son 32 entidades federativas.\n\nLa opción C tropieza en el detalle: son 32 *entidades*, pero no todas son estados; la Ciudad de México es entidad federativa sin ser formalmente un estado."
           },
           {
             "id": 119,
@@ -1616,7 +1734,8 @@
               "C": "El Mar Caribe únicamente",
               "D": "El Golfo de México exclusivamente"
             },
-            "answer": "B"
+            "answer": "B",
+            "explanation": "Los ciclones que golpean el Golfo de México y la península de Yucatán nacen como depresiones tropicales en el **Atlántico tropical y el Mar de las Antillas (Caribe)**, donde el agua cálida les da energía; de ahí viajan hacia el oeste y el noroeste hasta tocar las costas mexicanas.\n\nLas opciones C y D pecan de exclusivas: algunos ciclones sí se forman dentro del Caribe o del propio Golfo, pero muchos vienen desde el Atlántico abierto (incluso desde cerca de África), así que limitarlo a un solo mar es incorrecto. Y el Pacífico norte (A) genera los ciclones que pegan en la *otra* costa."
           },
           {
             "id": 120,
@@ -1629,7 +1748,8 @@
               "C": "Se agotan o tardan millones de años en formarse",
               "D": "Requieren tecnología avanzada para su extracción"
             },
-            "answer": "C"
+            "answer": "C",
+            "explanation": "Un recurso no renovable es el que **se agota al consumirse**, porque su formación tomó millones de años y no se repone a escala humana: petróleo, carbón, gas natural, minerales. Una vez extraídos y usados, no hay ciclo natural que los regenere en un plazo útil.\n\nLa opción A describe justo lo contrario, los recursos *renovables* (bosques, pesca), y la D es un anzuelo: que algo requiera tecnología avanzada para extraerse no dice nada sobre si se regenera o no. El criterio es el tiempo de formación, no la dificultad de extracción."
           }
         ]
       }

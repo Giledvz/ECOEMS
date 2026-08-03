@@ -1,0 +1,162 @@
+[
+ {
+  "id": 41,
+  "explanation": "En la ecuación $\\frac{x^2}{25} + \\frac{y^2}{16} = 1$ el denominador mayor está bajo $x^2$, así que el eje mayor es horizontal y los focos están sobre el eje $x$. Con $a^2 = 25$ y $b^2 = 16$, la distancia del centro a cada foco sale de $c^2 = a^2 - b^2 = 25 - 16 = 9$, es decir $c = 3$. Los focos quedan en $(\\pm 3, 0)$.\n\nSi elegiste $(\\pm 5, 0)$, esos son los vértices ($a = 5$), no los focos; y $(\\pm 4, 0)$ confunde $b$ con $c$."
+ },
+ {
+  "id": 42,
+  "explanation": "Si sustituyes $x = 2$ directo obtienes $\\frac{0}{0}$, una indeterminación: eso no significa que el límite no exista, significa que hay que simplificar. Factoriza el numerador como diferencia de cuadrados:\n\n$$\\frac{x^2 - 4}{x - 2} = \\frac{(x-2)(x+2)}{x-2} = x + 2$$\n\nYa sin el factor problemático, el límite es $2 + 2 = 4$.\n\nSi contestaste \"no existe\", te quedaste en el $\\frac{0}{0}$: la indeterminación es una señal de trabajar más, no una respuesta."
+ },
+ {
+  "id": 43,
+  "explanation": "Es una función compuesta: algo elevado al cubo, donde ese \"algo\" es $5x - 2$. La regla de la cadena dice: deriva la potencia y multiplica por la derivada de lo de adentro:\n\n$$f'(x) = 3(5x - 2)^2 \\cdot 5 = 15(5x - 2)^2$$\n\nSi te quedó $3(5x-2)^2$ (opción A), olvidaste multiplicar por la derivada interna, el 5: ese es justo el error que la regla de la cadena viene a corregir."
+ },
+ {
+  "id": 44,
+  "explanation": "Integra término a término con la regla de la potencia $\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + C$:\n\n$$\\int 4x^3\\,dx = 4 \\cdot \\frac{x^4}{4} = x^4, \\qquad \\int 6x\\,dx = 6 \\cdot \\frac{x^2}{2} = 3x^2$$\n\nJuntando: $x^4 - 3x^2 + C$. Puedes comprobar derivando el resultado: $(x^4 - 3x^2)' = 4x^3 - 6x$, que es justo el integrando.\n\nSi elegiste $12x^2 - 6 + C$, derivaste en lugar de integrar: son operaciones inversas."
+ },
+ {
+  "id": 45,
+  "explanation": "A velocidad constante aplica la relación del MRU: $d = vt$, de donde\n\n$$t = \\frac{d}{v} = \\frac{450\\text{ m}}{30\\text{ m/s}} = 15\\text{ s}$$\n\nUn buen chequeo mental: en 10 s recorre 300 m, en 5 s más recorre otros 150 m; total 450 m. Cuadra.\n\nSi te dio 13\\,500 o algo parecido a la opción B, multiplicaste en vez de dividir."
+ },
+ {
+  "id": 46,
+  "explanation": "Parte del reposo ($v_0 = 0$) con aceleración constante, así que la distancia es\n\n$$d = \\frac{1}{2}at^2 = \\frac{1}{2}(4)(5)^2 = \\frac{1}{2}(4)(25) = 50\\text{ m}$$\n\nSi te dio 100 m (opción C), olvidaste el $\\frac{1}{2}$ de la fórmula; si te dio 20 m, usaste $d = at$ como si fuera velocidad constante."
+ },
+ {
+  "id": 47,
+  "explanation": "Como las dos fuerzas van en la misma dirección, se suman: $F = 20 + 10 = 30$ N. Sin fricción, esa es la fuerza neta, y la segunda ley de Newton da\n\n$$a = \\frac{F}{m} = \\frac{30\\text{ N}}{5\\text{ kg}} = 6\\text{ m/s}^2$$\n\nSi obtuviste $2\\text{ m/s}^2$, restaste las fuerzas como si fueran opuestas: el enunciado dice que actúan en la misma dirección."
+ },
+ {
+  "id": 48,
+  "explanation": "En equilibrio rotacional, las torcas a ambos lados del fulcro deben ser iguales: $F_1 d_1 = F_2 d_2$. De un lado tienes $40\\text{ N} \\times 0.5\\text{ m} = 20\\text{ N·m}$; del otro, la fuerza actúa a 1 m:\n\n$$F = \\frac{20\\text{ N·m}}{1\\text{ m}} = 20\\text{ N}$$\n\nComo el brazo de palanca es el doble, basta la mitad de la fuerza. Si contestaste 80 N, invertiste la proporción: a mayor distancia del fulcro se necesita *menos* fuerza, no más."
+ },
+ {
+  "id": 49,
+  "explanation": "La ley de Hooke dice que la fuerza del resorte es proporcional a su estiramiento: $F = kx$. Sustituyendo:\n\n$$F = (200\\text{ N/m})(0.15\\text{ m}) = 30\\text{ N}$$\n\nSi te dio $1\\,333$ N, dividiste $200 \\div 0.15$: la fuerza se obtiene multiplicando la constante por la deformación, no dividiendo."
+ },
+ {
+  "id": 50,
+  "explanation": "La ley de gravitación universal es una ley del inverso del cuadrado:\n\n$$F = G\\frac{m_1 m_2}{r^2}$$\n\nLa distancia aparece elevada al cuadrado en el denominador. Si $r$ se duplica, el denominador se hace $(2r)^2 = 4r^2$, es decir cuatro veces más grande, y la fuerza se reduce a la cuarta parte.\n\n\"Se reduce a la mitad\" es el distractor natural: sería cierto si la fuerza dependiera de $r$ y no de $r^2$."
+ },
+ {
+  "id": 51,
+  "explanation": "Cuando la fuerza va en la misma dirección que el desplazamiento, el trabajo es simplemente fuerza por distancia:\n\n$$W = Fd = (50\\text{ N})(8\\text{ m}) = 400\\text{ J}$$\n\nSi te dio 58 J, sumaste los números; y 6.25 sale de dividir $50 \\div 8$. El trabajo mecánico se calcula multiplicando."
+ },
+ {
+  "id": 52,
+  "explanation": "Antes del empujón el sistema está en reposo, así que el ímpetu total es cero y debe seguir siéndolo: lo que gana uno en cantidad de movimiento lo gana el otro en sentido contrario. Igualando magnitudes:\n\n$$m_1 v_1 = m_2 v_2 \\;\\Rightarrow\\; (60)(2) = (40)v_2 \\;\\Rightarrow\\; v_2 = \\frac{120}{40} = 3\\text{ m/s}$$\n\nEl más ligero sale más rápido, lo cual tiene sentido físico. Si contestaste 2 m/s, supusiste que ambos se mueven igual, pero eso solo pasaría si tuvieran la misma masa."
+ },
+ {
+  "id": 53,
+  "explanation": "A presión constante aplica la ley de Charles: el volumen es directamente proporcional a la temperatura absoluta, $\\frac{V_1}{T_1} = \\frac{V_2}{T_2}$. Como la temperatura pasa de 300 K a 600 K (se duplica), el volumen también se duplica:\n\n$$V_2 = 3\\text{ L} \\times \\frac{600}{300} = 6\\text{ L}$$\n\nSi elegiste 1.5 L, invertiste la proporción: a más temperatura el gas se expande, no se comprime."
+ },
+ {
+  "id": 54,
+  "explanation": "Cuando dos ondas coinciden \"en fase\" —cresta con cresta— sus amplitudes se suman y la onda resultante es más grande que cada una por separado: eso es interferencia **constructiva**, porque las ondas se refuerzan (construyen) entre sí.\n\nLa destructiva es justo lo contrario: cresta con valle, las amplitudes se cancelan. Refracción y difracción ni siquiera son tipos de interferencia: son otros fenómenos ondulatorios."
+ },
+ {
+  "id": 55,
+  "explanation": "La ley de Coulomb también es de inverso del cuadrado: $F = k\\frac{q_1 q_2}{r^2}$. La distancia pasa de 3 m a 1 m, o sea se reduce a la tercera parte. Como aparece al cuadrado en el denominador:\n\n$$\\frac{F_2}{F_1} = \\left(\\frac{r_1}{r_2}\\right)^2 = \\left(\\frac{3}{1}\\right)^2 = 9$$\n\nLa fuerza se multiplica por 9. \"Se triplica\" es el distractor de quien olvida el cuadrado y piensa que la fuerza depende de $r$ en lugar de $r^2$."
+ },
+ {
+  "id": 56,
+  "explanation": "Ley de Ohm: $V = IR$, y despejando la corriente,\n\n$$I = \\frac{V}{R} = \\frac{12\\text{ V}}{4\\text{ Ω}} = 3\\text{ A}$$\n\nSi te dio 48 A, multiplicaste $V \\times R$; si te dio 0.33 A, dividiste al revés ($R/V$). Recuerda: la corriente es voltaje entre resistencia."
+ },
+ {
+  "id": 57,
+  "explanation": "La ley de Faraday dice que la fem inducida es proporcional a la rapidez con que *cambia* el flujo magnético a través de la espira: $\\varepsilon = -\\frac{\\Delta\\Phi}{\\Delta t}$. La palabra clave es **cambio**: si el flujo no varía, no se induce nada.\n\nPor eso las otras opciones fallan: una espira en reposo dentro de un campo estático, o un campo uniforme y constante, tienen flujo fijo y por lo tanto fem cero. Solo la variación del flujo induce corriente."
+ },
+ {
+  "id": 58,
+  "explanation": "La ecuación de Bernoulli establece que, a lo largo de un tubo horizontal, la suma $P + \\frac{1}{2}\\rho v^2$ se mantiene constante. Es un intercambio: si el término de velocidad crece, el de presión tiene que decrecer para que la suma no cambie. Por eso donde el fluido va más rápido, la presión **disminuye**.\n\nEs el mismo principio que sostiene un avión: el aire más veloz sobre el ala ejerce menos presión. La intuición de \"más rápido = más presión\" es el distractor clásico, pero Bernoulli dice exactamente lo contrario."
+ },
+ {
+  "id": 59,
+  "explanation": "Usa la ecuación de las lentes delgadas:\n\n$$\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i} \\;\\Rightarrow\\; \\frac{1}{15} = \\frac{1}{30} + \\frac{1}{d_i}$$\n\nDespejando: $\\frac{1}{d_i} = \\frac{1}{15} - \\frac{1}{30} = \\frac{2-1}{30} = \\frac{1}{30}$, así que $d_i = 30$ cm.\n\nEs el caso especial famoso: cuando el objeto está a $2f$, la imagen se forma también a $2f$, del mismo tamaño e invertida. Si contestaste 15 cm, pusiste la imagen en el foco, pero eso solo ocurre cuando el objeto está muy lejos (en el infinito)."
+ },
+ {
+  "id": 60,
+  "explanation": "Fue **Bohr** quien propuso, en 1913, que el electrón solo puede ocupar ciertas órbitas permitidas con energías cuantizadas, y que al saltar entre ellas emite o absorbe luz. Esa es la marca del modelo: la palabra \"cuantizado\" te lleva directo a Bohr.\n\nRutherford es el distractor cercano: descubrió el núcleo, pero en su modelo el electrón giraba sin restricción de órbitas. Thomson propuso el \"budín de pasas\" y Dalton ni siquiera consideraba partes internas del átomo."
+ },
+ {
+  "id": 61,
+  "explanation": "La **adecuación** es la propiedad por la que un texto se ajusta a su situación comunicativa: quién habla, a quién, en qué contexto y con qué propósito. No hablas igual en una solicitud de beca que en un mensaje a un amigo: eso es adecuar el lenguaje.\n\nNo la confundas con la cohesión (los conectores y referencias que enlazan las oraciones) ni con la coherencia (que las ideas tengan unidad y sentido global): esas miran hacia adentro del texto; la adecuación mira hacia afuera, al contexto."
+ },
+ {
+  "id": 62,
+  "explanation": "La nota informativa se construye sobre las llamadas preguntas básicas del periodismo: **qué** ocurrió, **quién** participó, **cuándo** y **dónde** sucedió y **por qué**. Con eso el lector queda informado del hecho de manera objetiva, sin opiniones.\n\nLas opciones que hablan de opinión editorial o de tesis y argumentos corresponden a otros géneros periodísticos —el editorial y el artículo de opinión—, no a la nota informativa, cuya esencia es informar, no opinar."
+ },
+ {
+  "id": 63,
+  "explanation": "Las **acotaciones** son las indicaciones que el dramaturgo escribe fuera del diálogo —normalmente entre paréntesis o en cursivas— para describir el escenario, el vestuario, los gestos y movimientos de los actores. No se pronuncian en escena: son instrucciones para el montaje.\n\nEl distractor tentador es \"apartes\", pero esos sí se dicen en voz alta: son parlamentos que un personaje dirige al público fingiendo que los demás no lo escuchan."
+ },
+ {
+  "id": 64,
+  "explanation": "El corazón de la tragedia griega es el héroe enfrentado a un **destino adverso e inevitable**: por más que luche (piensa en Edipo), el desenlace fatal ya está marcado por el hado o los dioses. De ese choque entre la voluntad humana y lo inevitable nace el efecto trágico.\n\nEl personaje que provoca risa con sus errores pertenece a la comedia, el género hermano y opuesto; y un final feliz es precisamente lo que la tragedia nunca concede."
+ },
+ {
+  "id": 65,
+  "explanation": "Cuando desde la última vocal acentuada coinciden **todos** los sonidos —vocales y consonantes—, la rima es **consonante**: *corazón / canción*, *viento / lamento*.\n\nEl distractor es \"asonante\", que exige menos: solo coinciden las vocales (*luna / cuna* riman en consonante, pero *luna / fruta* solo en asonante, porque comparten u-a). La clave está en la palabra \"todos los sonidos\" del enunciado: eso es rima consonante o perfecta."
+ },
+ {
+  "id": 66,
+  "explanation": "Es una **metáfora**: identifica directamente una cosa con otra por su semejanza —los ojos *son* luceros por su brillo— sin usar nexo comparativo. Si dijera \"tus ojos son *como* dos luceros\" sería símil; al afirmar la identidad sin el \"como\", es metáfora.\n\nNo es hipérbole porque no exagera una cantidad o cualidad, y la onomatopeya y la aliteración juegan con sonidos, no con significados."
+ },
+ {
+  "id": 67,
+  "explanation": "El género **dramático** es el que se escribe en forma de diálogo entre personajes y está pensado para representarse en un escenario, ante un público. El texto no cuenta con un narrador que relate: los hechos avanzan por lo que los personajes dicen y hacen.\n\nEl lírico expresa emociones (generalmente en verso), y el épico o narrativo cuenta historias a través de un narrador: en ninguno de los dos la representación escénica es el destino natural del texto."
+ },
+ {
+  "id": 68,
+  "explanation": "El **realismo** (siglo XIX) se propuso retratar la sociedad tal como es: personajes comunes, ambientes cotidianos, problemas sociales, descripción minuciosa y objetiva. Autores como Balzac o Galdós son su estampa.\n\nEl romanticismo es casi su contrario —idealiza, exalta la emoción y la subjetividad—, y el surrealismo huye de la realidad hacia el sueño y el inconsciente. La frase clave del enunciado, \"sin idealizarla\", descarta de entrada al romanticismo."
+ },
+ {
+  "id": 69,
+  "explanation": "La diferencia esencial es de extensión y concentración: el **cuento es breve** y condensa la acción en torno a un solo conflicto central, con pocos personajes, buscando un efecto único en el lector. La novela, más extensa, puede desplegar varias tramas, muchos personajes y tiempos largos.\n\nLas demás opciones son falsas de plano: el cuento sí tiene personajes, la novela sí tiene narrador, y la novela puede ser de cualquier tema, no solo ficción histórica."
+ },
+ {
+  "id": 70,
+  "explanation": "La **paráfrasis** consiste en reformular un texto con tus propias palabras conservando fielmente su sentido original. No lo copias (eso sería cita textual) ni lo condensas quitando información (eso sería resumen) ni le agregas tu opinión (eso sería comentario): lo dices de otro modo, completo y fiel.\n\nEl distractor fuerte es \"resumen\", pero el resumen implica reducir; la paráfrasis puede ser igual de larga que el original, lo que cambia es la formulación."
+ },
+ {
+  "id": 71,
+  "explanation": "Los **meridianos** son los semicírculos imaginarios que van de polo a polo; a partir del meridiano de Greenwich (0°) se mide la **longitud**, hacia el este o el oeste.\n\nEl distractor clásico son los paralelos, pero esos son los círculos horizontales, paralelos al ecuador, y sirven para medir la latitud. Un truco para no confundirte: los meridianos son verticales como los husos horarios que definen; los paralelos son horizontales como el ecuador."
+ },
+ {
+  "id": 72,
+  "explanation": "México se asienta sobre el **límite de varias placas tectónicas**: la Norteamericana, la del Pacífico, la de Cocos y la de Rivera, entre otras. En esos bordes las placas chocan o se deslizan una bajo otra (subducción), y la energía acumulada se libera en forma de sismos; por eso el país pertenece al Cinturón de Fuego del Pacífico.\n\nSi el país estuviera en el centro de una sola placa estable —como dicen los distractores— la sismicidad sería baja: los sismos abundan justamente en las fronteras entre placas, no en sus interiores."
+ },
+ {
+  "id": 73,
+  "explanation": "El ciclo hidrológico es la **circulación continua del agua** entre los distintos ámbitos del planeta: se evapora de mares y suelos, forma nubes en la atmósfera, se precipita como lluvia o nieve, escurre por ríos o se infiltra en el subsuelo, y vuelve a empezar. Involucra atmósfera, litósfera e hidrósfera en un circuito cerrado y permanente.\n\nLas otras opciones describen apenas fragmentos del ciclo (solo la evaporación, solo el escurrimiento de ríos): el concepto abarca el recorrido completo."
+ },
+ {
+  "id": 74,
+  "explanation": "Una región natural se delimita por sus componentes físicos y bióticos: el **clima** determina qué **vegetación** puede crecer, y esta a su vez qué **fauna** puede habitarla. Por eso hablamos de selva, desierto, bosque templado o tundra: cada una es una combinación característica de esos tres elementos.\n\nIdioma, religión, economía o densidad de población definen regiones *culturales* o *económicas*, criterios humanos que no intervienen en la delimitación de regiones naturales."
+ },
+ {
+  "id": 75,
+  "explanation": "El efecto invernadero es la **retención de calor en la atmósfera** por gases como el dióxido de carbono, el metano y el vapor de agua: dejan pasar la radiación solar, pero atrapan parte del calor que la Tierra devuelve, como el vidrio de un invernadero. Es un fenómeno natural que mantiene al planeta habitable; el problema actual es su intensificación por las emisiones humanas.\n\nEl distractor común es la capa de ozono: su destrucción es otro problema ambiental distinto, relacionado con la radiación ultravioleta, no con la retención de calor."
+ },
+ {
+  "id": 76,
+  "explanation": "La explosión demográfica del siglo XX se explica sobre todo por el **descenso de la mortalidad**: vacunas, antibióticos, higiene y mejoras sanitarias hicieron que muchas más personas —sobre todo niños— sobrevivieran, mientras la natalidad seguía alta. Población que nace igual pero muere mucho menos: crecimiento acelerado.\n\nLa disminución de la natalidad (opción C) frenaría el crecimiento, no lo aceleraría; y la migración campo-ciudad redistribuye a la gente dentro de un país, pero no aumenta el total."
+ },
+ {
+  "id": 77,
+  "explanation": "El motor principal de la migración internacional sur-norte es la **desigualdad económica**: la gente se desplaza de países con bajos salarios, desempleo y pocas oportunidades (factores de expulsión) hacia países desarrollados con mejores condiciones de vida y demanda de mano de obra (factores de atracción).\n\nLos factores climáticos o culturales pueden influir en casos concretos, pero no explican el patrón general; y las \"fronteras abiertas\" son justo lo contrario de la realidad: los países receptores suelen endurecer sus fronteras."
+ },
+ {
+  "id": 78,
+  "explanation": "La globalización económica se caracteriza por la **interdependencia entre países**: las economías se entrelazan mediante comercio internacional, cadenas de producción repartidas por el mundo, flujos de capital y empresas multinacionales. Lo que pasa en una economía repercute en las demás.\n\nLas otras opciones dicen lo contrario de lo que ocurre: la globalización reduce el aislamiento comercial y multiplica —no desaparece— a las multinacionales; y aunque genera riqueza, no ha eliminado la pobreza."
+ },
+ {
+  "id": 79,
+  "explanation": "Al desintegrarse la URSS en 1991 y disolverse el bloque socialista, **surgieron nuevos Estados independientes**: las quince repúblicas exsoviéticas (Ucrania, las bálticas, etc.), la separación de Checoslovaquia y la fragmentación de Yugoslavia redibujaron el mapa político de Europa.\n\nLas demás opciones contradicen los hechos: la Unión Europea no desapareció —al contrario, se amplió hacia el este incorporando a varios de esos nuevos países—, y lejos de unificarse, Europa se fragmentó en más Estados."
+ },
+ {
+  "id": 80,
+  "explanation": "La industria mexicana se concentra en la **región centro y norte**: el centro por el enorme mercado del Valle de México, la infraestructura y la mano de obra (Ciudad de México, Estado de México, Querétaro, Guanajuato); el norte por la cercanía con Estados Unidos, que favoreció la industria maquiladora y automotriz en ciudades como Monterrey, Tijuana y Ciudad Juárez.\n\nYucatán, Chiapas y el Pacífico sur, en cambio, tienen una economía más orientada al turismo y a las actividades primarias, con escaso desarrollo industrial."
+ }
+]
