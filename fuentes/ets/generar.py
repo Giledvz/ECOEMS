@@ -37,6 +37,11 @@ def gms(grados):
         m = 0; g += 1
     return f"{g}^\\circ {m}' {s}''"
 
+def var(lista, i):
+    """Rota entre varias redacciones del mismo tipo de problema. Enunciados
+    idénticos en serie cansan y hacen que el alumno deje de leer."""
+    return lista[i % len(lista)]
+
 def ej(enunciado, pasos, respuesta, figura=None):
     return {'enunciado': enunciado, 'pasos': pasos, 'respuesta': respuesta,
             'figura': figura}
@@ -220,7 +225,7 @@ def bloque_D():
 # ── figuras ─────────────────────────────────────────────────────────────────
 FONT = "'Latin Modern Roman', Georgia, serif"
 
-def svg_paralelas(rotA, rotB, tipo):
+def svg_paralelas(rotA, rotB, tipo, forma=0):
     """Dos paralelas cortadas por una secante, con dos ángulos rotulados.
 
     Cada rótulo va DENTRO de su ángulo y lejos de los trazos: los cortes de la
@@ -229,8 +234,9 @@ def svg_paralelas(rotA, rotB, tipo):
     """
     W, H = 462, 250
     xi, xd = 22, 424                     # extremos de las paralelas
-    y1, y2 = 74, 176                     # las dos paralelas
-    p1x, p2x = 152, 274                  # dónde las corta la secante
+    # Varias inclinaciones, para que los doce del bloque no salgan calcados.
+    y1, y2, p1x, p2x = [(74, 176, 152, 274), (68, 182, 162, 262),
+                        (78, 170, 150, 292), (72, 180, 168, 266)][forma % 4]
     m = (y2 - y1) / (p2x - p1x)          # pendiente de la secante
     sec = math.degrees(math.atan2(y2 - y1, p2x - p1x))   # ángulo en pantalla (y hacia abajo)
 
@@ -279,32 +285,51 @@ def svg_paralelas(rotA, rotB, tipo):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" '
             f'height="{H}" fill="currentColor" font-family="{FONT}">' + ''.join(c) + '</svg>')
 
-def svg_tales(ad, db, ae, ec, inc):
-    """inc: fracción del lado donde cae D (y E), tomada de la proporción del dato."""
-    """Triángulo ABC con DE paralelo a BC. inc dice qué segmento es la incógnita."""
-    W, H = 320, 240
-    A, B, C = (56, 216), (284, 216), (128, 34)
+# Cuatro triángulos distintos para que los ocho ejercicios del bloque no se vean
+# calcados. La base AB va siempre horizontal (ahí caen AD y DB); lo que cambia es
+# el ancho y dónde queda el vértice C.
+FORMAS_TALES = [((56, 216), (284, 216), (128, 34)),
+                ((46, 216), (300, 216), (206, 30)),
+                ((60, 220), (292, 220), (98, 48)),
+                ((50, 214), (286, 214), (240, 40))]
+
+def svg_tales(ad, db, ae, ec, inc, forma=0):
+    """inc: fracción del lado donde cae D (y E), tomada de la proporción del dato.
+    forma: cuál de los triángulos de FORMAS_TALES se dibuja."""
+    W, H = 330, 250
+    A, B, C = FORMAS_TALES[forma % len(FORMAS_TALES)]
     # El enunciado nombra AD y DB (sobre el lado AB) y AE y EC (sobre el AC), así
-    # que D tiene que caer sobre AB y E sobre AC. Estaban al revés.
-    # La posición sigue la proporción real del dato: si AD=5 y DB=3, la D va al 62%
-    # del lado, no siempre a la mitad. Y como DE ∥ BC, E va en la misma fracción.
+    # que D cae sobre AB y E sobre AC. Como DE ∥ BC, van en la misma fracción.
     t = inc
     D = (A[0] + (B[0]-A[0])*t, A[1] + (B[1]-A[1])*t)
     E = (A[0] + (C[0]-A[0])*t, A[1] + (C[1]-A[1])*t)
     et = {'AD': ad, 'DB': db, 'AE': ae, 'EC': ec}
+
+    def fuera(p, q, tercero, d=19):
+        """Desplazamiento perpendicular al lado pq, hacia el lado contrario al
+        tercer vértice. Así el rótulo nunca cae dentro del triángulo, sea cual
+        sea la forma."""
+        vx, vy = q[0]-p[0], q[1]-p[1]
+        L = math.hypot(vx, vy) or 1
+        nx, ny = -vy/L, vx/L
+        mx, my = (p[0]+q[0])/2, (p[1]+q[1])/2
+        if (tercero[0]-mx)*nx + (tercero[1]-my)*ny > 0:      # apunta al interior
+            nx, ny = -nx, -ny
+        return mx + nx*d, my + ny*d + 5
+
     c = [f'<path d="M {A[0]} {A[1]} L {B[0]} {B[1]} L {C[0]} {C[1]} Z" fill="currentColor" '
          f'fill-opacity="0.07" stroke="currentColor" stroke-width="2"/>',
          f'<line x1="{D[0]:.0f}" y1="{D[1]:.0f}" x2="{E[0]:.0f}" y2="{E[1]:.0f}" '
          f'stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/>']
-    for p, t_, dx, dy in ((A, 'A', -14, 8), (B, 'B', 14, 8), (C, 'C', 0, -12),
-                          (D, 'D', 0, 20), (E, 'E', -16, 2)):
-        c.append(f'<text x="{p[0]+dx:.0f}" y="{p[1]+dy:.0f}" font-size="16" '
+    for p, t_ in ((A, 'A'), (B, 'B'), (C, 'C'), (D, 'D'), (E, 'E')):
+        dx, dy = ((-15, 8) if t_ == 'A' else (15, 8) if t_ == 'B' else
+                  (0, -12) if t_ == 'C' else (0, 20) if t_ == 'D' else (-16, 2))
+        c.append(f'<text x="{p[0]+dx:.0f}" y="{p[1]+dy:.0f}" font-size="17" '
                  f'font-style="italic" text-anchor="middle">{t_}</text>')
-    # rótulos de los cuatro segmentos, a media distancia
-    for (p, q), k, dx, dy in (((A, D), 'AD', 0, 20), ((D, B), 'DB', 0, 20),
-                              ((A, E), 'AE', -20, 4), ((E, C), 'EC', -20, 4)):
-        mx, my = (p[0]+q[0])/2, (p[1]+q[1])/2
-        c.append(f'<text x="{mx+dx:.0f}" y="{my+dy:.0f}" font-size="14" '
+    for (p, q), k, tercero in (((A, D), 'AD', C), ((D, B), 'DB', C),
+                               ((A, E), 'AE', B), ((E, C), 'EC', B)):
+        lx, ly = fuera(p, q, tercero)
+        c.append(f'<text x="{lx:.0f}" y="{ly:.0f}" font-size="16" '
                  f'text-anchor="middle">{et[k]}</text>')
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" '
             f'height="{H}" fill="currentColor" font-family="{FONT}">' + ''.join(c) + '</svg>')
@@ -321,11 +346,11 @@ E_COLAT = [('colaterales', 5, 10, 4, 35), ('colaterales', 7, -5, 8, 22)]
 
 def bloque_E():
     out = []
-    for tipo, a, b, c_, d in E_PARS:
+    for i, (tipo, a, b, c_, d) in enumerate(E_PARS):
         x = (d - b) / (a - c_)                 # iguales
         ang = a * x + b
         sup = 180 - ang
-        fig = svg_paralelas(f'A = {lin(a, b)}', f'B = {lin(c_, d)}', tipo)
+        fig = svg_paralelas(f'A = {lin(a, b)}', f'B = {lin(c_, d)}', tipo, i)
         pasos = [
             f'Los ángulos {tipo} entre paralelas son **iguales**, así que iguala las '
             'dos expresiones:',
@@ -336,16 +361,27 @@ def bloque_E():
             f'El **suplementario** es lo que le falta para $180^\\circ$: '
             f'$180^\\circ - {num(ang, 2)}^\\circ = {num(sup, 2)}^\\circ$.',
         ]
-        out.append(ej(f'Dos rectas paralelas cortadas por una secante forman los ángulos '
-                      f'{tipo} $A = {lin(a, b)}$ y $B = {lin(c_, d)}$. Determina el valor '
-                      f'de $x$, cuánto mide cada ángulo y cuánto mide el suplementario '
-                      f'de $A$.', pasos,
+        REDACCIONES = [
+            f'Dos rectas paralelas cortadas por una secante forman los ángulos {tipo} '
+            f'$A = {lin(a, b)}$ y $B = {lin(c_, d)}$. Determina el valor de $x$, cuánto '
+            f'mide cada ángulo y cuánto mide el suplementario de $A$.',
+            f'En la figura, $m \\parallel n$ y una transversal las corta generando los '
+            f'ángulos {tipo} $A = {lin(a, b)}$ y $B = {lin(c_, d)}$. Halla $x$, la medida '
+            f'de cada ángulo y el suplemento de $A$.',
+            f'Dos avenidas paralelas son cruzadas por una calle diagonal. Los ángulos '
+            f'{tipo} que se forman miden $A = {lin(a, b)}$ y $B = {lin(c_, d)}$. Obtén '
+            f'$x$, cuánto mide cada ángulo y el suplementario de $A$.',
+            f'Los travesaños de una reja son paralelos y un tirante los cruza en '
+            f'diagonal, formando los ángulos {tipo} $A = {lin(a, b)}$ y '
+            f'$B = {lin(c_, d)}$. Determina $x$, ambos ángulos y el suplemento de $A$.',
+        ]
+        out.append(ej(var(REDACCIONES, i), pasos,
                       f'$x = {num(x, 4)}$, $A = B = {num(ang, 2)}^\\circ$, '
                       f'suplementario $= {num(sup, 2)}^\\circ$', fig))
-    for tipo, a, b, c_, d in E_COLAT:
+    for k_, (tipo, a, b, c_, d) in enumerate(E_COLAT):
         x = (180 - b - d) / (a + c_)           # suman 180
         ang1, ang2 = a * x + b, c_ * x + d
-        fig = svg_paralelas(f'A = {lin(a, b)}', f'B = {lin(c_, d)}', tipo)
+        fig = svg_paralelas(f'A = {lin(a, b)}', f'B = {lin(c_, d)}', tipo, k_ + 2)
         pasos = [
             'Los ángulos **colaterales** (del mismo lado de la secante) son '
             'suplementarios: suman $180^\\circ$.',
@@ -369,7 +405,7 @@ F_EXT = [(2, 10, 3, -14, 2, 0), (5, 8, 4, 22, 3, -6), (7, -10, 6, 15, 4, 5),
 
 def bloque_F():
     out = []
-    for a1, b1, a2, b2, a3, b3 in F_INT:
+    for i, (a1, b1, a2, b2, a3, b3) in enumerate(F_INT):
         x = (180 - b1 - b2 - b3) / (a1 + a2 + a3)
         A, B, C = a1*x + b1, a2*x + b2, a3*x + b3
         pasos = [
@@ -379,9 +415,19 @@ def bloque_F():
             f'$A = {num(A, 2)}^\\circ$, $B = {num(B, 2)}^\\circ$, $C = {num(C, 2)}^\\circ$. '
             f'Comprueba que sumen $180^\\circ$. ✓',
         ]
-        out.append(ej(f'Los ángulos internos de un triángulo miden $A = {lin(a1, b1)}$, '
-                      f'$B = {lin(a2, b2)}$ y $C = {lin(a3, b3)}$. Obtén el valor '
-                      f'numérico de los tres ángulos.', pasos,
+        REDACCIONES = [
+            f'Los ángulos internos de un triángulo miden $A = {lin(a1, b1)}$, '
+            f'$B = {lin(a2, b2)}$ y $C = {lin(a3, b3)}$. Obtén el valor numérico de los '
+            f'tres ángulos.',
+            f'Un terreno triangular tiene ángulos interiores de ${lin(a1, b1)}$, '
+            f'${lin(a2, b2)}$ y ${lin(a3, b3)}$. Determina cuánto mide cada uno.',
+            f'En un triángulo, los tres ángulos interiores están dados por '
+            f'${lin(a1, b1)}$, ${lin(a2, b2)}$ y ${lin(a3, b3)}$. Calcula $x$ y el valor '
+            f'de cada ángulo.',
+            f'Una escuadra triangular tiene ángulos de ${lin(a1, b1)}$, ${lin(a2, b2)}$ y '
+            f'${lin(a3, b3)}$. Halla el valor numérico de los tres.',
+        ]
+        out.append(ej(var(REDACCIONES, i), pasos,
                       f'$x = {num(x, 4)}$; $A = {num(A, 2)}^\\circ$, $B = {num(B, 2)}^\\circ$, '
                       f'$C = {num(C, 2)}^\\circ$'))
     for ae, be, a2, b2, a3, b3 in F_EXT:
@@ -417,7 +463,7 @@ G_PARS = [(0, 7, 13), (-2, 3, 25), (1, -1, 10), (-6, -5, 5), (-4, -6, 10),
 
 def bloque_G():
     out = []
-    for a, b, h in G_PARS:
+    for i, (a, b, h) in enumerate(G_PARS):
         A_, B_, C_ = 2, 2*(a+b), a*a + b*b - h*h
         d = B_*B_ - 4*A_*C_
         x = (-B_ + math.sqrt(d)) / (2*A_)
@@ -436,9 +482,24 @@ def bloque_G():
             f'Los catetos miden ${num(c1)}$ y ${num(c2)}$, así que el perímetro es '
             f'${num(c1)} + {num(c2)} + {h} = {num(per)}$.',
         ]
-        out.append(ej(f'Un triángulo rectángulo tiene por catetos ${lin(1, a)}$ y '
-                      f'${lin(1, b)}$, y por hipotenusa $h = {h}$. Determina el valor '
-                      f'numérico del perímetro.', pasos,
+        REDACCIONES = [
+            f'Un triángulo rectángulo tiene por catetos ${lin(1, a)}$ y ${lin(1, b)}$, y '
+            f'por hipotenusa $h = {h}$. Determina el valor numérico del perímetro.',
+            f'Un terreno con forma de triángulo rectángulo tiene catetos que miden '
+            f'${lin(1, a)}$ y ${lin(1, b)}$ metros, y una hipotenusa de ${h}$ m. ¿Cuántos '
+            f'metros de malla se necesitan para cercarlo?',
+            f'La vela triangular de un barco es un triángulo rectángulo de catetos '
+            f'${lin(1, a)}$ y ${lin(1, b)}$, con hipotenusa ${h}$. Determina su perímetro.',
+            f'Una rampa forma un triángulo rectángulo cuyos catetos miden ${lin(1, a)}$ y '
+            f'${lin(1, b)}$, y cuya hipotenusa mide ${h}$. Halla el valor numérico del '
+            f'perímetro.',
+            f'Una escuadra de dibujo tiene catetos de ${lin(1, a)}$ y ${lin(1, b)}$ cm y '
+            f'una hipotenusa de ${h}$ cm. ¿Cuál es su perímetro?',
+            f'Un tirante sostiene un poste formando un triángulo rectángulo con el suelo. '
+            f'Los catetos miden ${lin(1, a)}$ y ${lin(1, b)}$, y el tirante (la '
+            f'hipotenusa) mide ${h}$. Determina el perímetro del triángulo.',
+        ]
+        out.append(ej(var(REDACCIONES, i), pasos,
                       f'$x = {num(x)}$; catetos ${num(c1)}$ y ${num(c2)}$; '
                       f'perímetro $= {num(per)}$'))
     return out
@@ -491,10 +552,10 @@ I_PARS = [(4, 6, 6, None), (5, 3, 10, None), (3, 9, 4, None), (6, 4, 9, None),
 
 def bloque_I():
     out = []
-    for ad, db, ae, _ in I_PARS:
+    for i, (ad, db, ae, _) in enumerate(I_PARS):
         ec = ae * db / ad
         fig = svg_tales(f'{num(ad)}', f'{num(db)}', f'{num(ae)}', 'x',
-                        min(0.72, max(0.28, ad / (ad + db))))
+                        min(0.72, max(0.28, ad / (ad + db))), i)
         pasos = [
             'Como $DE \\parallel BC$, el triángulo $ADE$ es semejante al $ABC$ '
             '(teorema de Tales), así que los segmentos que quedan sobre los dos lados '
@@ -505,9 +566,20 @@ def bloque_I():
             f'{num(db*ae)}$$',
             f'$$x = {num(ec, 3)}$$',
         ]
-        out.append(ej(f'En el triángulo $ABC$ el segmento $DE$ es paralelo a $BC$. Si '
-                      f'$AD = {num(ad)}$, $DB = {num(db)}$ y $AE = {num(ae)}$, determina '
-                      f'el valor de $x = EC$.', pasos, f'$x = {num(ec, 3)}$', fig))
+        REDACCIONES = [
+            f'En el triángulo $ABC$ el segmento $DE$ es paralelo a $BC$. Si '
+            f'$AD = {num(ad)}$, $DB = {num(db)}$ y $AE = {num(ae)}$, determina el valor '
+            f'de $x = EC$.',
+            f'En la figura, $DE \\parallel BC$. Con $AD = {num(ad)}$, $DB = {num(db)}$ y '
+            f'$AE = {num(ae)}$, halla $x$.',
+            f'Un corte paralelo al lado $BC$ divide al triángulo $ABC$. Si '
+            f'$AD = {num(ad)}$, $DB = {num(db)}$ y $AE = {num(ae)}$, ¿cuánto mide '
+            f'$x = EC$?',
+            f'Sobre los lados $AB$ y $AC$ del triángulo $ABC$ se marcan $D$ y $E$ de modo '
+            f'que $DE \\parallel BC$. Con $AD = {num(ad)}$, $DB = {num(db)}$ y '
+            f'$AE = {num(ae)}$, determina $x = EC$.',
+        ]
+        out.append(ej(var(REDACCIONES, i), pasos, f'$x = {num(ec, 3)}$', fig))
     return out
 
 # ── J. Polígonos regulares ──────────────────────────────────────────────────
@@ -671,7 +743,7 @@ M_PARS = [(30, 45, 50), (25, 40, 80), (32, 58, 45), (20, 35, 120),
 
 def bloque_M():
     out = []
-    for a1, a2, d in M_PARS:
+    for i, (a1, a2, d) in enumerate(M_PARS):
         t1, t2 = math.tan(math.radians(a1)), math.tan(math.radians(a2))
         # h = d / (1/t1 - 1/t2)
         x = d * t1 / (t2 - t1)          # distancia que le falta desde el 2º punto
@@ -687,10 +759,31 @@ def bloque_M():
             f'\\quad\\Rightarrow\\quad x = {num(x, 3)}$$',
             f'Y la altura: $h = {num(x, 3)} \\tan {a2}^\\circ = {num(h, 3)}$.',
         ]
-        out.append(ej(f'Una persona observa la punta de una torre con un ángulo de '
-                      f'elevación de ${a1}^\\circ$; se acerca {d} m hacia la torre y ahora '
-                      f'la observa con ${a2}^\\circ$. Determina la altura de la torre y la '
-                      f'distancia que le faltaría caminar para llegar a la base.', pasos,
+        REDACCIONES = [
+            f'Una persona observa la punta de una torre con un ángulo de elevación de '
+            f'${a1}^\\circ$; se acerca {d} m hacia la torre y ahora la observa con '
+            f'${a2}^\\circ$. Determina la altura de la torre y la distancia que le '
+            f'faltaría caminar para llegar a la base.',
+            f'Desde un punto de la carretera, un globo aerostático se ve con un ángulo de '
+            f'elevación de ${a1}^\\circ$. Tras avanzar {d} m en línea recta hacia él, el '
+            f'ángulo sube a ${a2}^\\circ$. ¿A qué altura está el globo y cuánto falta '
+            f'para quedar justo debajo?',
+            f'Un topógrafo mide el ángulo de elevación a la punta de un cerro y obtiene '
+            f'${a1}^\\circ$. Camina {d} m hacia el cerro y vuelve a medir: ahora es '
+            f'${a2}^\\circ$. Calcula la altura del cerro y lo que le falta para llegar '
+            f'al pie.',
+            f'Desde la cubierta de un barco, el faro se ve con un ángulo de elevación de '
+            f'${a1}^\\circ$. El barco navega {d} m hacia el faro y el ángulo pasa a '
+            f'${a2}^\\circ$. ¿Qué altura tiene el faro y a qué distancia quedó el barco?',
+            f'Un dron se observa desde el suelo con un ángulo de elevación de '
+            f'${a1}^\\circ$. El observador avanza {d} m hacia el punto bajo el dron y el '
+            f'ángulo llega a ${a2}^\\circ$. Determina la altura del dron y cuánto le '
+            f'falta caminar.',
+            f'Desde una esquina, la punta de una antena se ve a ${a1}^\\circ$ de '
+            f'elevación. Recorriendo {d} m de banqueta hacia ella, el ángulo se vuelve '
+            f'${a2}^\\circ$. Halla la altura de la antena y la distancia que resta.',
+        ]
+        out.append(ej(var(REDACCIONES, i), pasos,
                       f'falta caminar ${num(x, 3)}$ m; altura $= {num(h, 3)}$ m'))
     return out
 
@@ -700,7 +793,7 @@ N_PARS = [(8, 50, 70), (15, 42, 76), (24, 35, 65), (12, 105, 30),
 
 def bloque_N():
     out = []
-    for a, B, C in N_PARS:
+    for i, (a, B, C) in enumerate(N_PARS):
         A = 180 - B - C
         b = a * math.sin(math.radians(B)) / math.sin(math.radians(A))
         c = a * math.sin(math.radians(C)) / math.sin(math.radians(A))
@@ -716,9 +809,20 @@ def bloque_N():
             f'= {num(b, 3)}$$',
             f'$$c = \\frac{{a\\,\\mathrm{{sen}}\\,C}}{{\\mathrm{{sen}}\\,A}} = {num(c, 3)}$$',
         ]
-        out.append(ej(f'En un triángulo se sabe que $a = {num(a)}$, $B = {B}^\\circ$ y '
-                      f'$C = {C}^\\circ$. Determina el ángulo $A$ y los lados $b$ y $c$.',
-                      pasos, f'$A = {num(A)}^\\circ$, $b = {num(b, 3)}$, $c = {num(c, 3)}$'))
+        REDACCIONES = [
+            f'En un triángulo se sabe que $a = {num(a)}$, $B = {B}^\\circ$ y '
+            f'$C = {C}^\\circ$. Determina el ángulo $A$ y los lados $b$ y $c$.',
+            f'Un terreno triangular tiene un lado de ${num(a)}$ m y los ángulos '
+            f'$B = {B}^\\circ$ y $C = {C}^\\circ$. Calcula el ángulo restante y los '
+            f'otros dos lados.',
+            f'Tres estacas forman un triángulo. El lado $a$ mide ${num(a)}$ m y los '
+            f'ángulos en las otras dos estacas son ${B}^\\circ$ y ${C}^\\circ$. '
+            f'Determina $A$, $b$ y $c$.',
+            f'Para medir un tramo inaccesible se toma una base $a$ de ${num(a)}$ m y se '
+            f'miden los ángulos $B = {B}^\\circ$ y $C = {C}^\\circ$ desde sus extremos. '
+            f'Halla el ángulo $A$ y los lados $b$ y $c$.',
+        ]
+        out.append(ej(var(REDACCIONES, i), pasos, f'$A = {num(A)}^\\circ$, $b = {num(b, 3)}$, $c = {num(c, 3)}$'))
     return out
 
 # ── O. Ley de cosenos ───────────────────────────────────────────────────────
@@ -750,7 +854,7 @@ def bloque_O():
             f'$$a = {num(a, 3)}$$',
         ]
         out.append(ej(txt, pasos, f'${num(a, 3)}$'))
-    for a, b, c in O_ANG:
+    for j, (a, b, c) in enumerate(O_ANG):
         cosA = (b*b + c*c - a*a) / (2*b*c)
         A = math.degrees(math.acos(cosA))
         pasos = [
@@ -763,9 +867,22 @@ def bloque_O():
             f'En sistema circular: $A = {num(A, 2)}^\\circ \\times '
             f'\\dfrac{{\\pi}}{{180^\\circ}} = {num(math.radians(A), 4)}$ rad.',
         ]
-        out.append(ej(f'Un triángulo oblicuángulo tiene lados $a = {num(a)}$, '
-                      f'$b = {num(b)}$ y $c = {num(c)}$. Calcula el ángulo $A$ (el opuesto '
-                      f'al lado $a$) en grados y en radianes.', pasos,
+        REDACCIONES = [
+            f'Un triángulo oblicuángulo tiene lados $a = {num(a)}$, $b = {num(b)}$ y '
+            f'$c = {num(c)}$. Calcula el ángulo $A$ (el opuesto al lado $a$) en grados y '
+            f'en radianes.',
+            f'Tres aldeas están separadas: la primera de la segunda ${num(c)}$ m, la '
+            f'segunda de la tercera ${num(a)}$ m y la tercera de la primera ${num(b)}$ m. '
+            f'Calcula el ángulo del vértice opuesto al lado de ${num(a)}$ m, en grados y '
+            f'en radianes.',
+            f'Un terreno triangular mide ${num(a)}$, ${num(b)}$ y ${num(c)}$ metros por '
+            f'lado. Determina el ángulo opuesto al lado de ${num(a)}$ m, en grados y en '
+            f'radianes.',
+            f'Tres boyas forman un triángulo de lados ${num(a)}$, ${num(b)}$ y ${num(c)}$ '
+            f'km. Halla el ángulo opuesto al lado de ${num(a)}$ km, en grados y en '
+            f'radianes.',
+        ]
+        out.append(ej(var(REDACCIONES, j), pasos,
                       f'$A = {num(A, 2)}^\\circ = {num(math.radians(A), 4)}$ rad'))
     return out
 
@@ -776,7 +893,7 @@ P_PARS = [('sen', 2, 3), ('sen', 0.13, 1), ('cos', 5, 13), ('sen', 3, 5),
 
 def bloque_P():
     out = []
-    for f, p, q in P_PARS:
+    for i, (f, p, q) in enumerate(P_PARS):
         v = p / q
         if f == 'sen':
             sen = v; cos = math.sqrt(1 - v*v)
@@ -800,9 +917,20 @@ def bloque_P():
             f'El ángulo sale con la inversa: $\\alpha = \\mathrm{{sen}}^{{-1}}'
             f'({num(sen, 4)}) = {num(ang, 2)}^\\circ = {gms(ang)}$.',
         ]
-        out.append(ej(f'Sabiendo que ${nombre}\\,\\alpha = {dado}$ y que $\\alpha$ es un '
-                      f'ángulo agudo, calcula las cinco funciones trigonométricas '
-                      f'restantes y el valor del ángulo.', pasos,
+        REDACCIONES = [
+            f'Sabiendo que ${nombre}\\,\\alpha = {dado}$ y que $\\alpha$ es un ángulo '
+            f'agudo, calcula las cinco funciones trigonométricas restantes y el valor del '
+            f'ángulo.',
+            f'En un triángulo rectángulo se sabe que ${nombre}\\,\\alpha = {dado}$. '
+            f'Obtén las otras cinco razones trigonométricas de $\\alpha$ y cuánto mide '
+            f'el ángulo.',
+            f'Un ángulo agudo $\\alpha$ cumple ${nombre}\\,\\alpha = {dado}$. '
+            f'Determina las cinco funciones trigonométricas que faltan y el valor de '
+            f'$\\alpha$.',
+            f'Dada la función trigonométrica ${nombre}\\,\\alpha = {dado}$, con '
+            f'$\\alpha$ agudo, encuentra las funciones restantes y el valor de su ángulo.',
+        ]
+        out.append(ej(var(REDACCIONES, i), pasos,
                       f'$\\mathrm{{sen}} = {num(sen, 4)}$, $\\cos = {num(cos, 4)}$, '
                       f'$\\tan = {num(tan, 4)}$, $\\csc = {num(1/sen, 4)}$, '
                       f'$\\sec = {num(1/cos, 4)}$, $\\cot = {num(1/tan, 4)}$; '
