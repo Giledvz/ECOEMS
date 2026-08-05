@@ -4,6 +4,7 @@
 // "ver respuesta →" de cada ejercicio funciona con clic en cualquier lector.
 const puppeteer = require('puppeteer');
 const path = require('path');
+const fs = require('fs');
 
 const RAIZ = '/Users/giledvz/Documents/ECOEMS';
 const ENTRADA = path.join(RAIZ, 'fuentes/ets/cuadernillo.html');
@@ -50,5 +51,13 @@ const SALIDA = path.join(RAIZ, 'ETS-Geometria-y-Trigonometria-practica.pdf');
   });
 
   await browser.close();
-  console.log(JSON.stringify({ salida: SALIDA, ...stats, errores }, null, 1));
+
+  // Copia servida, para poder abrirlo desde el navegador sin buscar el archivo.
+  // public/_pdf/ va en .gitignore: el PDF bueno es el de la raíz del repo.
+  const publico = path.join(RAIZ, 'public/_pdf', path.basename(SALIDA));
+  fs.mkdirSync(path.dirname(publico), { recursive: true });
+  fs.copyFileSync(SALIDA, publico);
+  const url = 'http://localhost:3000/_pdf/' + encodeURIComponent(path.basename(SALIDA));
+
+  console.log(JSON.stringify({ salida: SALIDA, url, ...stats, errores }, null, 1));
 })();
