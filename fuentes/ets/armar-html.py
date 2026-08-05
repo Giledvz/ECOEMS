@@ -87,7 +87,7 @@ h1,h2,h3{font-weight:600; line-height:1.2}
 .ej figure svg{max-width:78mm; height:auto}
 .ver{
   display:inline-block; margin-top:1.5mm; font-size:8.5pt; color:var(--terracota);
-  text-decoration:none; border-bottom:.5pt dotted var(--terracota);
+  text-decoration:none;
 }
 .ver.pegado{margin-top:0; margin-left:2.5mm; white-space:nowrap}
 
