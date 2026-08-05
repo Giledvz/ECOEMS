@@ -84,7 +84,7 @@ h1,h2,h3{font-weight:600; line-height:1.2}
 }
 .ej .cuerpo{flex:1; min-width:0}
 .ej figure{margin:3mm 0 0; text-align:center}
-.ej figure svg{max-width:78mm; height:auto}
+.ej figure svg{max-width:95mm; height:auto}
 .ver{
   display:inline-block; margin-top:1.5mm; font-size:8.5pt; color:var(--terracota);
   text-decoration:none;

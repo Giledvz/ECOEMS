@@ -222,24 +222,60 @@ FONT = "'Latin Modern Roman', Georgia, serif"
 
 def svg_paralelas(rotA, rotB, tipo):
     """Dos paralelas cortadas por una secante, con dos ángulos rotulados.
-    tipo dice en qué posición va cada rótulo."""
-    W, H = 340, 210
-    y1, y2 = 62, 148
-    # la secante cruza inclinada
-    x1, x2 = 96, 244
-    pos = {                       # (punto de corte, desplazamiento del rótulo)
-        'alternos internos':  ((x1, y1, 30, 26), (x2, y2, -34, -12)),
-        'alternos externos':  ((x1, y1, -34, -12), (x2, y2, 30, 26)),
-        'correspondientes':   ((x1, y1, 30, -12), (x2, y2, 30, -12)),
-        'colaterales':        ((x1, y1, 30, 26), (x2, y2, 30, -12)),
+
+    Cada rótulo va DENTRO de su ángulo y lejos de los trazos: los cortes de la
+    secante se separan a propósito para que quepa el texto sin cruzar ninguna recta.
+    El arquito indica de qué ángulo se está hablando.
+    """
+    W, H = 462, 250
+    xi, xd = 22, 424                     # extremos de las paralelas
+    y1, y2 = 74, 176                     # las dos paralelas
+    p1x, p2x = 152, 274                  # dónde las corta la secante
+    m = (y2 - y1) / (p2x - p1x)          # pendiente de la secante
+    sec = math.degrees(math.atan2(y2 - y1, p2x - p1x))   # ángulo en pantalla (y hacia abajo)
+
+    # (desplazamiento del rótulo desde el corte, anclaje) para cada intersección
+    # El desplazamiento tiene que superar el radio del arco (20), o el rótulo se le
+    # encima; y hay que medirlo contra la secante, que a esa altura ya se corrió.
+    COLOC = {
+        # alternos internos: los dos por dentro, en lados opuestos de la secante
+        'alternos internos':  ((-34, 31, 'end'),   (34, -18, 'start')),
+        # alternos externos: los dos por fuera, en lados opuestos
+        'alternos externos':  ((34, -18, 'start'), (-34, 33, 'end')),
+        # correspondientes: misma posición relativa en los dos cortes
+        'correspondientes':   ((34, -18, 'start'), (34, -18, 'start')),
+        # colaterales internos: los dos por dentro, del MISMO lado
+        'colaterales':        ((-34, 31, 'end'),   (-50, -18, 'end')),
     }[tipo]
-    c = [f'<line x1="24" y1="{y1}" x2="{W-24}" y2="{y1}" stroke="currentColor" stroke-width="2"/>',
-         f'<line x1="24" y1="{y2}" x2="{W-24}" y2="{y2}" stroke="currentColor" stroke-width="2"/>',
-         f'<line x1="{x1-52}" y1="{y1-32}" x2="{x2+52}" y2="{y2+32}" stroke="currentColor" stroke-width="2"/>']
-    for (px, py, dx, dy), rot in zip(pos, (rotA, rotB)):
-        c.append(f'<text x="{px+dx}" y="{py+dy}" font-size="15" text-anchor="middle">{rot}</text>')
-    c.append(f'<text x="{W-18}" y="{y1-8}" font-size="13" font-style="italic">m</text>')
-    c.append(f'<text x="{W-18}" y="{y2-8}" font-size="13" font-style="italic">n</text>')
+
+    c = [f'<line x1="{xi}" y1="{y1}" x2="{xd}" y2="{y1}" stroke="currentColor" stroke-width="1.8"/>',
+         f'<line x1="{xi}" y1="{y2}" x2="{xd}" y2="{y2}" stroke="currentColor" stroke-width="1.8"/>',
+         f'<line x1="{p1x - 46/m:.0f}" y1="{y1-46:.0f}" x2="{p2x + 46/m:.0f}" y2="{y2+46:.0f}" '
+         f'stroke="currentColor" stroke-width="1.8"/>']
+
+    # fronteras de los cuatro sectores que forman la paralela y la secante
+    bordes = sorted(a % 360 for a in (0, 180, sec, sec + 180))
+
+    for (px, py), (dx, dy, anc), rot in zip(((p1x, y1), (p2x, y2)), COLOC, (rotA, rotB)):
+        ang = math.degrees(math.atan2(dy, dx)) % 360
+        # el sector que contiene al rótulo, para dibujarle su arco
+        for i, b in enumerate(bordes):
+            a1, a2 = b, bordes[(i + 1) % len(bordes)]
+            span = (a2 - a1) % 360
+            if (ang - a1) % 360 <= span:
+                r = 20
+                q1 = (px + r*math.cos(math.radians(a1)), py + r*math.sin(math.radians(a1)))
+                q2 = (px + r*math.cos(math.radians(a2)), py + r*math.sin(math.radians(a2)))
+                c.append(f'<path d="M {q1[0]:.1f} {q1[1]:.1f} A {r} {r} 0 0 1 '
+                         f'{q2[0]:.1f} {q2[1]:.1f}" fill="none" stroke="currentColor" '
+                         f'stroke-width="1.2" stroke-opacity="0.65"/>')
+                break
+        c.append(f'<text x="{px+dx}" y="{py+dy}" font-size="17" text-anchor="{anc}">{rot}</text>')
+
+    c.append(f'<text x="{xd-4}" y="{y1-9}" font-size="16" font-style="italic" '
+             f'text-anchor="end">m</text>')
+    c.append(f'<text x="{xd-4}" y="{y2-9}" font-size="16" font-style="italic" '
+             f'text-anchor="end">n</text>')
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" '
             f'height="{H}" fill="currentColor" font-family="{FONT}">' + ''.join(c) + '</svg>')
 
