@@ -244,24 +244,29 @@ def svg_paralelas(rotA, rotB, tipo):
             f'height="{H}" fill="currentColor" font-family="{FONT}">' + ''.join(c) + '</svg>')
 
 def svg_tales(ad, db, ae, ec, inc):
+    """inc: fracción del lado donde cae D (y E), tomada de la proporción del dato."""
     """Triángulo ABC con DE paralelo a BC. inc dice qué segmento es la incógnita."""
     W, H = 320, 240
     A, B, C = (56, 216), (284, 216), (128, 34)
-    t = 0.46                                   # dónde cae D sobre AB… (visual)
-    D = (A[0] + (C[0]-A[0])*t, A[1] + (C[1]-A[1])*t)
-    E = (A[0] + (B[0]-A[0])*t, A[1] + (B[1]-A[1])*t)
+    # El enunciado nombra AD y DB (sobre el lado AB) y AE y EC (sobre el AC), así
+    # que D tiene que caer sobre AB y E sobre AC. Estaban al revés.
+    # La posición sigue la proporción real del dato: si AD=5 y DB=3, la D va al 62%
+    # del lado, no siempre a la mitad. Y como DE ∥ BC, E va en la misma fracción.
+    t = inc
+    D = (A[0] + (B[0]-A[0])*t, A[1] + (B[1]-A[1])*t)
+    E = (A[0] + (C[0]-A[0])*t, A[1] + (C[1]-A[1])*t)
     et = {'AD': ad, 'DB': db, 'AE': ae, 'EC': ec}
     c = [f'<path d="M {A[0]} {A[1]} L {B[0]} {B[1]} L {C[0]} {C[1]} Z" fill="currentColor" '
          f'fill-opacity="0.07" stroke="currentColor" stroke-width="2"/>',
          f'<line x1="{D[0]:.0f}" y1="{D[1]:.0f}" x2="{E[0]:.0f}" y2="{E[1]:.0f}" '
          f'stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/>']
-    for p, t_, dx, dy in ((A, 'A', -14, 8), (B, 'B', 14, 8), (C, 'C', -6, -12),
-                          (D, 'D', -16, 0), (E, 'E', 16, 6)):
+    for p, t_, dx, dy in ((A, 'A', -14, 8), (B, 'B', 14, 8), (C, 'C', 0, -12),
+                          (D, 'D', 0, 20), (E, 'E', -16, 2)):
         c.append(f'<text x="{p[0]+dx:.0f}" y="{p[1]+dy:.0f}" font-size="16" '
                  f'font-style="italic" text-anchor="middle">{t_}</text>')
     # rótulos de los cuatro segmentos, a media distancia
-    for (p, q), k, dx, dy in (((A, D), 'AD', -22, 4), ((D, C), 'DB', -22, 4),
-                              ((A, E), 'AE', 6, 20), ((E, B), 'EC', 6, 20)):
+    for (p, q), k, dx, dy in (((A, D), 'AD', 0, 20), ((D, B), 'DB', 0, 20),
+                              ((A, E), 'AE', -20, 4), ((E, C), 'EC', -20, 4)):
         mx, my = (p[0]+q[0])/2, (p[1]+q[1])/2
         c.append(f'<text x="{mx+dx:.0f}" y="{my+dy:.0f}" font-size="14" '
                  f'text-anchor="middle">{et[k]}</text>')
@@ -452,7 +457,8 @@ def bloque_I():
     out = []
     for ad, db, ae, _ in I_PARS:
         ec = ae * db / ad
-        fig = svg_tales(f'{num(ad)}', f'{num(db)}', f'{num(ae)}', 'x', 'EC')
+        fig = svg_tales(f'{num(ad)}', f'{num(db)}', f'{num(ae)}', 'x',
+                        min(0.72, max(0.28, ad / (ad + db))))
         pasos = [
             'Como $DE \\parallel BC$, el triángulo $ADE$ es semejante al $ABC$ '
             '(teorema de Tales), así que los segmentos que quedan sobre los dos lados '

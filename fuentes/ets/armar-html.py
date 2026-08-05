@@ -7,6 +7,12 @@ import html, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from generar import construir, BLOQUES
 
+# El enlace "ver respuesta" va pegado al final del enunciado. Solo ahorra donde el
+# enunciado termina en texto (117 de los 184): si termina en fórmula centrada o en
+# figura, ésas ya son bloques y el enlace baja de renglón igual. Medido: 5 páginas
+# menos de 96. Con VER_INLINE=0 vuelve a su propio renglón.
+INLINE = os.environ.get('VER_INLINE', '1') != '0'
+
 RAIZ = '/Users/giledvz/Documents/ECOEMS'
 KATEX = f'file://{RAIZ}/node_modules/katex/dist'
 
@@ -83,6 +89,7 @@ h1,h2,h3{font-weight:600; line-height:1.2}
   display:inline-block; margin-top:1.5mm; font-size:8.5pt; color:var(--terracota);
   text-decoration:none; border-bottom:.5pt dotted var(--terracota);
 }
+.ver.pegado{margin-top:0; margin-left:2.5mm; white-space:nowrap}
 
 /* respuestas */
 .respuestas{page-break-before:always}
@@ -118,7 +125,7 @@ h1,h2,h3{font-weight:600; line-height:1.2}
 }
 /* barra discreta bajo el título de cada bloque */
 .migas{
-  display:flex; gap:4mm; font-size:8.5pt; color:var(--ink-300); margin:-1mm 0 4mm;
+  display:flex; gap:4mm; font-size:8.5pt; color:var(--ink-300); margin:3mm 0 4.5mm;
 }
 .migas a{color:var(--ink-600); text-decoration:none;
   border-bottom:.5pt dotted var(--ink-300);}
@@ -185,12 +192,18 @@ def main():
         o.append(f'<p class="intro">{md(html.escape(b["intro"]))}</p>')
         for i, e in enumerate(b['ejercicios'], 1):
             eid = f'{b["clave"]}{i}'
+            enlace = f'<a class="ver{" pegado" if INLINE else ""}" href="#r-{eid}">' \
+                     f'ver respuesta →</a>'
             o.append(f'<div class="ej" id="e-{eid}"><div class="n">{eid}</div>'
-                     f'<div class="cuerpo"><div>{md(e["enunciado"])}</div>')
-            if e['figura']:
-                o.append(f'<figure>{e["figura"]}</figure>')
-            o.append(f'<a class="ver" href="#r-{eid}">ver respuesta →</a>'
-                     f'</div></div>')
+                     f'<div class="cuerpo">')
+            if INLINE and not e['figura']:
+                o.append(f'<div>{md(e["enunciado"])}{enlace}</div>')
+            else:
+                o.append(f'<div>{md(e["enunciado"])}</div>')
+                if e['figura']:
+                    o.append(f'<figure>{e["figura"]}</figure>')
+                o.append(enlace)
+            o.append('</div></div>')
         o.append('</section>')
 
     # ── respuestas ──
