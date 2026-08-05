@@ -115,20 +115,19 @@ h1,h2,h3{font-weight:600; line-height:1.2}
   color:var(--ink-600); display:block; margin-bottom:.8mm}
 .volver{
   display:inline-block; margin-top:1.5mm; font-size:8.5pt; color:var(--terracota);
-  text-decoration:none; border-bottom:.5pt dotted var(--terracota);
+  text-decoration:none;
 }
 /* encabezado de cada sección de respuestas, con su regreso al bloque */
 .respuestas h3{display:flex; align-items:baseline; justify-content:space-between; gap:4mm}
 .alBloque{
   font-size:8.5pt; font-weight:400; color:var(--ink-600); text-decoration:none;
-  white-space:nowrap; border-bottom:.5pt dotted var(--ink-300);
+  white-space:nowrap;
 }
 /* barra discreta bajo el título de cada bloque */
 .migas{
   display:flex; gap:4mm; font-size:8.5pt; color:var(--ink-300); margin:3mm 0 4.5mm;
 }
-.migas a{color:var(--ink-600); text-decoration:none;
-  border-bottom:.5pt dotted var(--ink-300);}
+.migas a{color:var(--ink-600); text-decoration:none;}
 .katex{font-size:1.02em}
 .katex-display{margin:2mm 0}
 strong{font-weight:600}
