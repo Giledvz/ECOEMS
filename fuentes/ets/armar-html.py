@@ -107,9 +107,21 @@ h1,h2,h3{font-weight:600; line-height:1.2}
 .resp .final b{font-size:8.5pt; letter-spacing:.08em; text-transform:uppercase;
   color:var(--ink-600); display:block; margin-bottom:.8mm}
 .volver{
-  font-size:8.5pt; color:var(--ink-300); text-decoration:none; margin-left:2mm;
-  border-bottom:.5pt dotted var(--ink-300);
+  display:inline-block; margin-top:1.5mm; font-size:8.5pt; color:var(--terracota);
+  text-decoration:none; border-bottom:.5pt dotted var(--terracota);
 }
+/* encabezado de cada sección de respuestas, con su regreso al bloque */
+.respuestas h3{display:flex; align-items:baseline; justify-content:space-between; gap:4mm}
+.alBloque{
+  font-size:8.5pt; font-weight:400; color:var(--ink-600); text-decoration:none;
+  white-space:nowrap; border-bottom:.5pt dotted var(--ink-300);
+}
+/* barra discreta bajo el título de cada bloque */
+.migas{
+  display:flex; gap:4mm; font-size:8.5pt; color:var(--ink-300); margin:-1mm 0 4mm;
+}
+.migas a{color:var(--ink-600); text-decoration:none;
+  border-bottom:.5pt dotted var(--ink-300);}
 .katex{font-size:1.02em}
 .katex-display{margin:2mm 0}
 strong{font-weight:600}
@@ -151,7 +163,7 @@ def main():
     </section>''')
 
     # ── índice ──
-    o.append('<section class="indice"><h2 style="font-size:18pt;margin:0 0 1mm;'
+    o.append('<section class="indice" id="contenido"><h2 style="font-size:18pt;margin:0 0 1mm;'
              'border-bottom:2pt solid var(--ink-900);padding-bottom:2.5mm">Contenido</h2>')
     o.append('<ol>')
     for b in datos:
@@ -167,6 +179,9 @@ def main():
     for b in datos:
         o.append(f'<section class="bloque" id="b-{b["clave"]}">')
         o.append(f'<h2><span class="cv">{b["clave"]}</span>{html.escape(b["titulo"])}</h2>')
+        o.append(f'<div class="migas"><a href="#contenido">↑ Contenido</a>'
+                 f'<a href="#respuestas">Respuestas del cuadernillo →</a>'
+                 f'<a href="#rb-{b["clave"]}">Respuestas de este bloque →</a></div>')
         o.append(f'<p class="intro">{md(html.escape(b["intro"]))}</p>')
         for i, e in enumerate(b['ejercicios'], 1):
             eid = f'{b["clave"]}{i}'
@@ -184,15 +199,19 @@ def main():
              'resultado: en el ETS te califican el desarrollo, así que acostúmbrate a '
              'escribirlo completo.</p>')
     for b in datos:
-        o.append(f'<h3>{b["clave"]}. {html.escape(b["titulo"])}</h3>')
+        o.append(f'<h3 id="rb-{b["clave"]}"><span>{b["clave"]}. '
+                 f'{html.escape(b["titulo"])}</span>'
+                 f'<a class="alBloque" href="#b-{b["clave"]}">← volver a las preguntas '
+                 f'del bloque {b["clave"]}</a></h3>')
         for i, e in enumerate(b['ejercicios'], 1):
             eid = f'{b["clave"]}{i}'
-            o.append(f'<div class="resp" id="r-{eid}"><div class="n">{eid}'
-                     f'<a class="volver" href="#e-{eid}">↑</a></div><div class="cuerpo">')
+            o.append(f'<div class="resp" id="r-{eid}"><div class="n">{eid}</div>'
+                     f'<div class="cuerpo">')
             for p in e['pasos']:
                 o.append(f'<div class="paso">{md(p)}</div>')
             if e['respuesta'] != 'Ver el desarrollo.':
                 o.append(f'<div class="final"><b>Respuesta</b>{md(e["respuesta"])}</div>')
+            o.append(f'<a class="volver" href="#e-{eid}">← volver a la pregunta {eid}</a>')
             o.append('</div></div>')
     o.append('</section>')
 
