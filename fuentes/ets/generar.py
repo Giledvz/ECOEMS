@@ -337,9 +337,13 @@ def svg_tales(ad, db, ae, ec, inc, forma=0):
 
     c = [f'<path d="M {A[0]} {A[1]} L {B[0]} {B[1]} L {C[0]} {C[1]} Z" fill="{TERRA}" '
          f'fill-opacity="0.07" stroke="{INK}" stroke-width="2"/>',
-         # el corte paralelo va en terracota: es lo que hace al problema
+         # El corte paralelo va en terracota: es lo que hace al problema. Guiones
+         # grandes y trazo grueso a propósito: con el punteado fino, al reducir el
+         # PDF los huecos caían por debajo de un pixel y el visor los fundía en una
+         # línea oscura continua, como si hubiera un trazo negro debajo.
          f'<line x1="{D[0]:.0f}" y1="{D[1]:.0f}" x2="{E[0]:.0f}" y2="{E[1]:.0f}" '
-         f'stroke="{TERRA}" stroke-width="2.2" stroke-dasharray="6 4"/>']
+         f'stroke="{TERRA}" stroke-width="2.8" stroke-dasharray="11 7" '
+         f'stroke-linecap="round"/>']
     for p, t_ in ((A, 'A'), (B, 'B'), (C, 'C'), (D, 'D'), (E, 'E')):
         dx, dy = ((-15, 8) if t_ == 'A' else (15, 8) if t_ == 'B' else
                   (0, -12) if t_ == 'C' else (0, 20) if t_ == 'D' else (-16, 2))
