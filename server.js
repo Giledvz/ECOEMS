@@ -1,3 +1,29 @@
+// Servidor de la plataforma ECOEMS: aplica exámenes en tiempo real a un grupo de
+// alumnos conectados desde su celular.
+//
+// Corre como servicio de macOS (com.giledvz.ecoems-server) en el puerto 3000.
+// Reiniciar:  launchctl kickstart -k gui/$(id -u)/com.giledvz.ecoems-server
+//
+// LAS SALAS VIVEN EN MEMORIA. Reiniciar las borra todas, así que antes hay que
+// bajar los CSV de las que tengan alumnos: /api/download-csv y /api/download-key
+// escriben el archivo en disco además de devolverlo.
+//
+// Una sala se crea subiendo un JSON de examen a /api/upload-exam y pasa por las
+// fases:  waiting → active → finished → closed.  Las salas de práctica guiada
+// (x-mode: practice) usan además 'answering' y 'revealed', porque ahí el profesor
+// lleva el ritmo pregunta por pregunta.
+//
+// A CADA ALUMNO SE LE BARAJAN LAS MATERIAS Y LAS OPCIONES. Es a propósito: dos
+// alumnos sentados juntos no ven el mismo orden. Por eso el CSV de respuestas se
+// arma contra el orden original, no contra el que vio cada quien.
+//
+// El estado va por socket.io: el alumno emite joinRoom/joinExam/answer/submitExam
+// y el profesor escucha studentsUpdate mientras avanza el grupo. El listado
+// completo de eventos está en README.md.
+//
+// Además genera, con Puppeteer y KaTeX, el comprobante en PDF de cada alumno y la
+// clave del profesor.
+
 const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');

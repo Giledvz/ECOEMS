@@ -1,6 +1,8 @@
-# Origen de los exámenes ECOEMS
+# Origen de los exámenes
 
-Referencia rápida del origen de cada examen `ecoems-N.json` del repositorio.
+De dónde salió cada examen del repositorio. La primera parte cubre los
+`ecoems-N.json` (ingreso a bachillerato); al final está el resto del catálogo:
+universidad, IPN y diagnósticos.
 
 Esta tabla evita que tengamos que rastrear el origen a través de `git log --follow`
 cada vez que olvidamos de dónde salió un examen.
@@ -59,3 +61,45 @@ const d = JSON.parse(require('fs').readFileSync('ecoems-4.json','utf8'));
 (d.exam?.sections || []).forEach(s => console.log(s.subject, '→', (s.questions || []).length));
 "
 ```
+
+---
+
+# Universidad
+
+## UNAM
+
+Veinte exámenes, cuatro áreas por cinco aplicaciones:
+
+| Archivo | Origen |
+|---|---|
+| `unam-a{N}-1` … `unam-a{N}-4` | Guías UNAM de años anteriores |
+| `unam-a{N}-5` | **Examen muestra de la Guía UNAM 2025**, transcrito y validado contra la clave oficial del propio PDF. Ver [fuentes/unam-2025/](fuentes/unam-2025/README.md) |
+| `unam-especial` | Aplicación especial |
+
+Las áreas son las de la UNAM: 1 Ciencias Físico Matemáticas y de las Ingenierías,
+2 Ciencias Biológicas Químicas y de la Salud, 3 Ciencias Sociales, 4 Humanidades y
+Artes.
+
+Los cuatro exámenes 2025 tienen la misma distribución por materia que el examen
+muestra de la guía 2026 de su área — se usó como comprobación de fidelidad de la
+transcripción.
+
+## IPN
+
+Tres, uno por rama: `ipn-iycfm-1` (Ingeniería y Ciencias Físico Matemáticas),
+`ipn-cmb-1` (Ciencias Médico Biológicas) y `ipn-csya-1` (Ciencias Sociales y
+Administrativas), de 140 reactivos cada uno.
+
+A diferencia de la UNAM, **la guía del IPN no trae un examen muestra**: es un
+banco de reactivos, así que hubo que seleccionar y balancear. Ver
+[fuentes/ipn/](fuentes/ipn/README.md).
+
+## Diagnósticos
+
+| Archivo | Qué es |
+|---|---|
+| `diag-uni-a1`, `diag-uni-a2` | Diagnóstico de entrada, universidad, áreas 1 y 2 |
+| `diagnostico-a1` | Diagnóstico de área 1 |
+| `diagnostico_matematicas_area1_2026-05-07` | Diagnóstico corto, solo matemáticas |
+| `diag-bach` | Diagnóstico de ingreso a bachillerato |
+| `eval_matfis_2026-04-23/24` | Evaluaciones de matemáticas y física |

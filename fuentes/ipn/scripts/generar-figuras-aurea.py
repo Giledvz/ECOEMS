@@ -1,3 +1,11 @@
+# Figuras de la lectura sobre la proporción áurea (ipn-iycfm-1).
+#
+# La lectura viene ilustrada en la guía y sin esas figuras no se entiende: se
+# redibujan como SVG para que se adapten al tema claro/oscuro de la plataforma.
+#
+#   python3 fuentes/ipn/scripts/generar-figuras-aurea.py
+#
+# Escribe en public/imagenes_ipn-iycfm-1/.
 import math, os
 
 OUT = '/Users/giledvz/Documents/ECOEMS/public/imagenes_ipn-iycfm-1'
