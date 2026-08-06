@@ -63,11 +63,13 @@ la diagonal equivocada.
 
 ## Las guías oficiales tienen erratas
 
-No son pocas: hay 90 reactivos marcados en
+No son pocas: hay 87 reactivos marcados en
 [fuentes/explicaciones/revisar.md](fuentes/explicaciones/revisar.md) donde el
 modelo no coincidió con la clave. Algunos son de verdad errores de la guía.
 
-Cuando haya que corregir una clave, va con su motivo escrito en
+Lo ya revisado y corregido está en [CORRECCIONES.md](CORRECCIONES.md).
+
+Para los exámenes que arma un script, la corrección va con su motivo escrito en
 `fuentes/unam-2025/claves/correcciones.json`, nunca suelta en el JSON del examen:
 así rearmar no la borra y siempre se puede auditar. El id 2 del Área 1 es el
 ejemplo a seguir.

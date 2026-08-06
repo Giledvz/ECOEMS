@@ -759,12 +759,17 @@
             "text": "Selecciona la expresión que corresponde a una ecuación.",
             "options": {
               "A": "$\\operatorname{sen}(x) = \\frac{1}{2}$",
-              "B": "$\\operatorname{sen}(x) = \\frac{1}{2}x$",
+              "B": "$1 + \\cot^2(x) = \\csc^2(x)$",
               "C": "$\\operatorname{sen}^2(x) + \\cos^2(x) = 1$",
               "D": "$\\sec^2(x) - \\tan^2(x) = 1$"
             },
             "answer": "A",
-            "explanation": "La distinción clave es ecuación contra identidad: una **ecuación** es una igualdad que solo se cumple para ciertos valores de la incógnita; una **identidad** se cumple para todos. Las opciones C y D son las identidades pitagóricas: $\\mathrm{sen}^2(x) + \\cos^2(x) = 1$ vale para cualquier $x$ (y dividiéndola entre $\\cos^2(x)$ obtienes la D), así que ahí no hay nada que resolver. En cambio, $\\mathrm{sen}(x) = \\frac{1}{2}$ solo es cierta para valores particulares ($x = 30°$, $x = 150°$ y sus vueltas completas): plantea la pregunta “¿qué $x$ la cumple?”, y eso es exactamente una ecuación."
+            "_correccion": {
+              "opcion_cambiada": "B",
+              "antes": "$\\operatorname{sen}(x) = \\frac{1}{2}x$",
+              "motivo": "El reactivo pide «la expresión que corresponde a una ecuación» y tenía DOS: la clave A (sen x = 1/2) y la opción B (sen x = ½x), que también es una igualdad condicional. Se sustituyó B por una identidad pitagórica para que quede una sola respuesta correcta. Óscar y Dana eligieron B y se les contó como error."
+            },
+            "explanation": "La diferencia clave está en para cuántos valores se cumple la igualdad. Una **identidad** es cierta para *todo* valor de $x$ donde las funciones existen; una **ecuación** solo se cumple para ciertos valores, y por eso tiene sentido \"resolverla\". Las opciones B, C y D son las identidades pitagóricas de siempre: $\\operatorname{sen}^2(x) + \\cos^2(x) = 1$, $1 + \\cot^2(x) = \\csc^2(x)$ y $\\sec^2(x) - \\tan^2(x) = 1$ valen para cualquier ángulo, no hay nada que resolver. En cambio, $\\operatorname{sen}(x) = \\frac{1}{2}$ solo se cumple para valores particulares, como $x = 30°$ o $x = 150°$: eso es una ecuación (trigonométrica)."
           },
           {
             "id": 52,

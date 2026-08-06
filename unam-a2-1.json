@@ -1045,8 +1045,13 @@
               "C": "$FADH_2$",
               "D": "ácido oxalacético"
             },
-            "answer": "D",
-            "explanation": "El ácido pirúvico no entra tal cual al ciclo de Krebs. Primero cruza a la matriz mitocondrial y ahí se le retira un carbono en forma de $CO_2$ mientras se une a la coenzima A, con lo que se obtiene un fragmento de dos carbonos activado. Ese fragmento se condensa con el **ácido oxalacético**, de cuatro carbonos, y de esa unión nace el ácido cítrico, el primer compuesto del ciclo. El oxalacético se regenera al final de cada vuelta, listo para recibir al siguiente.\n\nNADH y $FADH_2$ (B y C) no son puntos de entrada: son los transportadores de electrones que el ciclo va produciendo."
+            "answer": "A",
+            "_correccion": {
+              "answer": "A",
+              "oficial": "D",
+              "motivo": "El ácido pirúvico se transforma en acetil-CoA por descarboxilación oxidativa antes de entrar al ciclo de Krebs (opción A). El ácido oxalacético es el aceptor de cuatro carbonos que ya circula dentro del ciclo y se condensa con el acetil-CoA para formar citrato; no proviene del piruvato en ese paso. La clave oficial D es errata."
+            },
+            "explanation": "El piruvato no entra tal cual al ciclo de Krebs: primero pasa a la matriz mitocondrial y ahí el complejo piruvato deshidrogenasa lo **descarboxila oxidativamente**. Le quita un carbono (que sale como $CO_2$), lo oxida (reduciendo $NAD^+$ a $NADH$) y pega el fragmento de dos carbonos que queda a la coenzima A. El producto es **acetil CoA**, y ese es el que se combina con el oxalacetato para formar citrato y arrancar el ciclo. Como de la glucólisis salen 2 piruvatos, se forman 2 acetil CoA, o sea dos vueltas del ciclo por cada glucosa.\n\nEl ácido oxalacético se antoja porque sí es la molécula que recibe al acetil CoA, pero no es en lo que se transforma el piruvato: el oxalacético ya está dentro del ciclo y se regenera al final de cada vuelta. Y $NADH$ y $FADH_2$ no son formas del piruvato, son los transportadores de electrones que se producen durante la oxidación."
           },
           {
             "id": 72,

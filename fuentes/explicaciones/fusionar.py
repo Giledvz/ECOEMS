@@ -44,11 +44,38 @@ def parte_revisar(t):
     limpio = '\n'.join(l for l in lineas if not l.strip().upper().startswith('REVISAR:'))
     return limpio.strip(), notas
 
+def corregidos():
+    """Reactivos cuya clave (u opción) ya se corrigió a conciencia.
+
+    Sus notas REVISAR quedaron resueltas: dejarlas en revisar.md haría que se
+    revisaran para siempre, y encima citando la clave vieja."""
+    hechos = set()
+    for f in glob.glob(os.path.join(RAIZ, '*.json')):
+        try:
+            d = json.load(open(f, encoding='utf-8'))
+        except Exception:
+            continue
+        if 'exam' not in d:
+            continue
+        nombre = os.path.basename(f)
+        for sec in d['exam']['sections']:
+            for q in sec['questions']:
+                if '_correccion' in q:
+                    hechos.add((nombre, q['id']))
+    return hechos
+
 def main(dry):
     porExamen = collections.defaultdict(dict)   # examen -> {id: explicación}
     esperado_por_examen = {}                    # examen -> {ids que deben quedar}
     revisar, problemas, faltantes = [], [], []
-    lotes = sorted(glob.glob(os.path.join(LOTES, '*.json')))
+    # Los lotes de corrección van AL FINAL: cuando se corrige una clave se reescribe
+    # la explicación en un lote aparte, y si se aplicara en orden alfabético el lote
+    # original la volvería a pisar con la que explicaba la clave equivocada.
+    lotes = sorted(glob.glob(os.path.join(LOTES, '*.json')),
+                   key=lambda p: (os.path.basename(p).startswith('correcciones-'),
+                                  os.path.basename(p)))
+
+    yaCorregidos = corregidos()
 
     for lp in lotes:
         nombre = os.path.basename(lp)[:-5]
@@ -78,6 +105,8 @@ def main(dry):
             for p in revisa_texto(limpio):
                 problemas.append(f'{nombre} id {qid}: {p}')
             for n in notas:
+                if (lote['examen'], qid) in yaCorregidos:
+                    continue          # esa duda ya se resolvió; ver CORRECCIONES.md
                 revisar.append({'examen': lote['examen'], 'id': qid, 'materia': lote['materia'],
                                 'clave': clave[qid], 'nota': n})
             porExamen[lote['examen']][qid] = limpio

@@ -159,6 +159,13 @@ Nunca, por ningún motivo:
 Las guías oficiales en PDF tampoco: pesan demasiado para GitHub. Viven en disco y
 cada carpeta documenta de dónde bajarlas.
 
+## Correcciones a las guías
+
+Las guías oficiales traen erratas. Las que ya revisamos y decidimos corregir
+están en [CORRECCIONES.md](CORRECCIONES.md), cada una con su motivo. Las que
+faltan por revisar, en
+[fuentes/explicaciones/revisar.md](fuentes/explicaciones/revisar.md).
+
 ## Convenciones
 
 Las de autoría y diseño de los exámenes están en
