@@ -238,9 +238,11 @@ def svg_paralelas(rotA, rotB, tipo, forma=0):
     """
     W, H = 462, 250
     xi, xd = 22, 424                     # extremos de las paralelas
-    # Varias inclinaciones, para que los doce del bloque no salgan calcados.
-    y1, y2, p1x, p2x = [(74, 176, 152, 274), (68, 182, 162, 262),
-                        (78, 170, 150, 292), (72, 180, 168, 266)][forma % 4]
+    # Varias inclinaciones, para que los doce del bloque no salgan calcados. Cuando
+    # p2x < p1x la secante SUBE de izquierda a derecha, que también hay que saber leer.
+    FORMAS = [(74, 176, 152, 274), (68, 182, 162, 262), (74, 176, 274, 152),
+              (78, 170, 150, 292), (68, 182, 262, 162), (78, 170, 292, 150)]
+    y1, y2, p1x, p2x = FORMAS[forma % len(FORMAS)]
     m = (y2 - y1) / (p2x - p1x)          # pendiente de la secante
     sec = math.degrees(math.atan2(y2 - y1, p2x - p1x))   # ángulo en pantalla (y hacia abajo)
 
@@ -257,6 +259,13 @@ def svg_paralelas(rotA, rotB, tipo, forma=0):
         # colaterales internos: los dos por dentro, del MISMO lado
         'colaterales':        ((-34, 31, 'end'),   (-50, -18, 'end')),
     }[tipo]
+
+    # Si la secante sube en vez de bajar, la figura es la reflejada: basta espejear el
+    # desplazamiento horizontal del rótulo y su anclaje. El tipo de ángulo se conserva
+    # bajo reflexión, así que "alternos internos" sigue siendo lo mismo.
+    if p2x < p1x:
+        volteo = {'start': 'end', 'end': 'start', 'middle': 'middle'}
+        COLOC = tuple((-dx, dy, volteo[anc]) for dx, dy, anc in COLOC)
 
     c = [f'<line x1="{xi}" y1="{y1}" x2="{xd}" y2="{y1}" stroke="{INK}" stroke-width="1.8"/>',
          f'<line x1="{xi}" y1="{y2}" x2="{xd}" y2="{y2}" stroke="{INK}" stroke-width="1.8"/>',
