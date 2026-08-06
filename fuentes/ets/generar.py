@@ -224,6 +224,10 @@ def bloque_D():
 
 # ── figuras ─────────────────────────────────────────────────────────────────
 FONT = "'Latin Modern Roman', Georgia, serif"
+# Paleta tercial. En los exámenes las figuras van en currentColor para adaptarse al
+# tema claro/oscuro, pero aquí el destino es un PDF impreso: el color es fijo y sí
+# conviene usarlo para separar lo que se sabe de lo que se busca.
+INK, INK_600, TERRA, CREMA = '#1f1a16', '#5b504a', '#c2410c', '#f2ece0'
 
 def svg_paralelas(rotA, rotB, tipo, forma=0):
     """Dos paralelas cortadas por una secante, con dos ángulos rotulados.
@@ -254,10 +258,11 @@ def svg_paralelas(rotA, rotB, tipo, forma=0):
         'colaterales':        ((-34, 31, 'end'),   (-50, -18, 'end')),
     }[tipo]
 
-    c = [f'<line x1="{xi}" y1="{y1}" x2="{xd}" y2="{y1}" stroke="currentColor" stroke-width="1.8"/>',
-         f'<line x1="{xi}" y1="{y2}" x2="{xd}" y2="{y2}" stroke="currentColor" stroke-width="1.8"/>',
+    c = [f'<line x1="{xi}" y1="{y1}" x2="{xd}" y2="{y1}" stroke="{INK}" stroke-width="1.8"/>',
+         f'<line x1="{xi}" y1="{y2}" x2="{xd}" y2="{y2}" stroke="{INK}" stroke-width="1.8"/>',
+         # la secante en terracota: es la que genera los ángulos del problema
          f'<line x1="{p1x - 46/m:.0f}" y1="{y1-46:.0f}" x2="{p2x + 46/m:.0f}" y2="{y2+46:.0f}" '
-         f'stroke="currentColor" stroke-width="1.8"/>']
+         f'stroke="{TERRA}" stroke-width="1.8"/>']
 
     # fronteras de los cuatro sectores que forman la paralela y la secante
     bordes = sorted(a % 360 for a in (0, 180, sec, sec + 180))
@@ -272,16 +277,20 @@ def svg_paralelas(rotA, rotB, tipo, forma=0):
                 r = 20
                 q1 = (px + r*math.cos(math.radians(a1)), py + r*math.sin(math.radians(a1)))
                 q2 = (px + r*math.cos(math.radians(a2)), py + r*math.sin(math.radians(a2)))
+                # sector tintado + arco, para que se vea de cuál ángulo se habla
+                c.append(f'<path d="M {px} {py} L {q1[0]:.1f} {q1[1]:.1f} A {r} {r} 0 0 1 '
+                         f'{q2[0]:.1f} {q2[1]:.1f} Z" fill="{TERRA}" fill-opacity="0.13" '
+                         f'stroke="none"/>')
                 c.append(f'<path d="M {q1[0]:.1f} {q1[1]:.1f} A {r} {r} 0 0 1 '
-                         f'{q2[0]:.1f} {q2[1]:.1f}" fill="none" stroke="currentColor" '
-                         f'stroke-width="1.2" stroke-opacity="0.65"/>')
+                         f'{q2[0]:.1f} {q2[1]:.1f}" fill="none" stroke="{TERRA}" '
+                         f'stroke-width="1.3"/>')
                 break
-        c.append(f'<text x="{px+dx}" y="{py+dy}" font-size="17" text-anchor="{anc}">{rot}</text>')
+        c.append(f'<text x="{px+dx}" y="{py+dy}" font-size="17" fill="{INK}" '
+                 f'text-anchor="{anc}">{rot}</text>')
 
-    c.append(f'<text x="{xd-4}" y="{y1-9}" font-size="16" font-style="italic" '
-             f'text-anchor="end">m</text>')
-    c.append(f'<text x="{xd-4}" y="{y2-9}" font-size="16" font-style="italic" '
-             f'text-anchor="end">n</text>')
+    for y, nom in ((y1, 'm'), (y2, 'n')):
+        c.append(f'<text x="{xd-4}" y="{y-9}" font-size="16" font-style="italic" '
+                 f'fill="{INK_600}" text-anchor="end">{nom}</text>')
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" '
             f'height="{H}" fill="currentColor" font-family="{FONT}">' + ''.join(c) + '</svg>')
 
@@ -317,19 +326,26 @@ def svg_tales(ad, db, ae, ec, inc, forma=0):
             nx, ny = -nx, -ny
         return mx + nx*d, my + ny*d + 5
 
-    c = [f'<path d="M {A[0]} {A[1]} L {B[0]} {B[1]} L {C[0]} {C[1]} Z" fill="currentColor" '
-         f'fill-opacity="0.07" stroke="currentColor" stroke-width="2"/>',
+    c = [f'<path d="M {A[0]} {A[1]} L {B[0]} {B[1]} L {C[0]} {C[1]} Z" fill="{TERRA}" '
+         f'fill-opacity="0.07" stroke="{INK}" stroke-width="2"/>',
+         # el corte paralelo va en terracota: es lo que hace al problema
          f'<line x1="{D[0]:.0f}" y1="{D[1]:.0f}" x2="{E[0]:.0f}" y2="{E[1]:.0f}" '
-         f'stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/>']
+         f'stroke="{TERRA}" stroke-width="2.2" stroke-dasharray="6 4"/>']
     for p, t_ in ((A, 'A'), (B, 'B'), (C, 'C'), (D, 'D'), (E, 'E')):
         dx, dy = ((-15, 8) if t_ == 'A' else (15, 8) if t_ == 'B' else
                   (0, -12) if t_ == 'C' else (0, 20) if t_ == 'D' else (-16, 2))
-        c.append(f'<text x="{p[0]+dx:.0f}" y="{p[1]+dy:.0f}" font-size="17" '
+        # D y E, los puntos del corte, comparten el color del corte
+        col = TERRA if t_ in 'DE' else INK
+        c.append(f'<text x="{p[0]+dx:.0f}" y="{p[1]+dy:.0f}" font-size="17" fill="{col}" '
                  f'font-style="italic" text-anchor="middle">{t_}</text>')
     for (p, q), k, tercero in (((A, D), 'AD', C), ((D, B), 'DB', C),
                                ((A, E), 'AE', B), ((E, C), 'EC', B)):
         lx, ly = fuera(p, q, tercero)
+        # la incógnita en terracota, los datos en tinta: se distingue de un vistazo
+        esX = et[k] == 'x'
+        peso = ' font-weight="600"' if esX else ''
         c.append(f'<text x="{lx:.0f}" y="{ly:.0f}" font-size="16" '
+                 f'fill="{TERRA if esX else INK_600}"{peso} '
                  f'text-anchor="middle">{et[k]}</text>')
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" '
             f'height="{H}" fill="currentColor" font-family="{FONT}">' + ''.join(c) + '</svg>')
