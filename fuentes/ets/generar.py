@@ -267,11 +267,11 @@ def svg_paralelas(rotA, rotB, tipo, forma=0):
         volteo = {'start': 'end', 'end': 'start', 'middle': 'middle'}
         COLOC = tuple((-dx, dy, volteo[anc]) for dx, dy, anc in COLOC)
 
-    c = [f'<line x1="{xi}" y1="{y1}" x2="{xd}" y2="{y1}" stroke="{INK}" stroke-width="1.8"/>',
-         f'<line x1="{xi}" y1="{y2}" x2="{xd}" y2="{y2}" stroke="{INK}" stroke-width="1.8"/>',
+    c = [f'<line x1="{xi}" y1="{y1}" x2="{xd}" y2="{y1}" fill="none" stroke="{INK}" stroke-width="1.8"/>',
+         f'<line x1="{xi}" y1="{y2}" x2="{xd}" y2="{y2}" fill="none" stroke="{INK}" stroke-width="1.8"/>',
          # la secante en terracota: es la que genera los ángulos del problema
          f'<line x1="{p1x - 46/m:.0f}" y1="{y1-46:.0f}" x2="{p2x + 46/m:.0f}" y2="{y2+46:.0f}" '
-         f'stroke="{TERRA}" stroke-width="1.8"/>']
+         f'fill="none" stroke="{TERRA}" stroke-width="1.8"/>']
 
     # fronteras de los cuatro sectores que forman la paralela y la secante
     bordes = sorted(a % 360 for a in (0, 180, sec, sec + 180))
@@ -301,7 +301,7 @@ def svg_paralelas(rotA, rotB, tipo, forma=0):
         c.append(f'<text x="{xd-4}" y="{y-9}" font-size="16" font-style="italic" '
                  f'fill="{INK_600}" text-anchor="end">{nom}</text>')
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" '
-            f'height="{H}" fill="currentColor" font-family="{FONT}">' + ''.join(c) + '</svg>')
+            f'height="{H}" fill="none" font-family="{FONT}">' + ''.join(c) + '</svg>')
 
 # Cuatro triángulos distintos para que los ocho ejercicios del bloque no se vean
 # calcados. La base AB va siempre horizontal (ahí caen AD y DB); lo que cambia es
@@ -341,7 +341,7 @@ def svg_tales(ad, db, ae, ec, inc, forma=0):
          # grandes y trazo grueso a propósito: con el punteado fino, al reducir el
          # PDF los huecos caían por debajo de un pixel y el visor los fundía en una
          # línea oscura continua, como si hubiera un trazo negro debajo.
-         f'<line x1="{D[0]:.0f}" y1="{D[1]:.0f}" x2="{E[0]:.0f}" y2="{E[1]:.0f}" '
+         f'<line x1="{D[0]:.0f}" y1="{D[1]:.0f}" x2="{E[0]:.0f}" y2="{E[1]:.0f}" fill="none" '
          f'stroke="{TERRA}" stroke-width="2.8" stroke-dasharray="11 7" '
          f'stroke-linecap="round"/>']
     for p, t_ in ((A, 'A'), (B, 'B'), (C, 'C'), (D, 'D'), (E, 'E')):
@@ -361,7 +361,7 @@ def svg_tales(ad, db, ae, ec, inc, forma=0):
                  f'fill="{TERRA if esX else INK_600}"{peso} '
                  f'text-anchor="middle">{et[k]}</text>')
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" '
-            f'height="{H}" fill="currentColor" font-family="{FONT}">' + ''.join(c) + '</svg>')
+            f'height="{H}" fill="none" font-family="{FONT}">' + ''.join(c) + '</svg>')
 
 # ── E. Ángulos entre paralelas cortadas por una secante ─────────────────────
 E_PARS = [
